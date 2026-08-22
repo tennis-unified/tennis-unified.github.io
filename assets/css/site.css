@@ -1,0 +1,180 @@
+/* Site CSS -- rewritten from scratch (2026-08-16), replacing the previous
+   7-file stack (style.css, extra.css, enhancements.css, phase5.css,
+   tfl-theme.css, henryphamduc-theme.css, typography-v3.css) which had
+   accumulated conflicting width/font rules across sessions. This is the
+   ONLY custom stylesheet now. Philosophy: make the smallest number of
+   overrides possible and let mkdocs-material's own responsive grid do
+   its job -- the same approach used by tennisknowledgebase.github.io,
+   which reads correctly on phones with almost no custom CSS. */
+
+/* Slightly larger base font for readability (audience skews 50+).
+   --tp-font-scale is set/adjusted at runtime by the A-/A/A+ control in
+   extra.js and persisted via localStorage, so calc() here lets the user
+   scale text up or down on top of this baseline. */
+html {
+  font-size: calc(118% * var(--tp-font-scale, 1));
+}
+
+.md-typeset {
+  font-size: 0.8rem;
+  line-height: 1.65;
+}
+
+.md-typeset h1 { font-size: 1.9rem; }
+.md-typeset h2 { font-size: 1.5rem; }
+.md-typeset h3 { font-size: 1.25rem; }
+
+@media screen and (max-width: 480px) {
+  html { font-size: calc(125% * var(--tp-font-scale, 1)); }
+}
+
+/* Floating A- / A / A+ text-size control, injected by extra.js.
+   Fixed to the bottom-right corner, stays out of the way of content and
+   the prev/home/next nav, and is legible against the dark Material theme
+   on any device. */
+.tp-font-control {
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  z-index: 20;
+  display: flex;
+  gap: 4px;
+  background: var(--md-default-bg-color, #fff);
+  border: 1px solid var(--md-default-fg-color--lightest, #ccc);
+  border-radius: 999px;
+  padding: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.tp-font-control button {
+  font-family: inherit;
+  font-size: 0.8rem;
+  line-height: 1;
+  border: none;
+  background: transparent;
+  color: var(--md-default-fg-color, #333);
+  padding: 8px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.tp-font-control button:hover {
+  background: var(--md-default-fg-color--lightest, rgba(0, 0, 0, 0.08));
+}
+
+/* Do not force any fixed pixel width on the content column -- let
+   Material's own .md-grid / .md-content flex rules size it. This file
+   intentionally contains no `max-width` or `width` rules on those
+   elements so nothing here can re-introduce the "page width stuck"
+   bug from the old stylesheet stack. */
+
+/* Hide the secondary (right-hand "on this page") TOC sidebar below
+   Material's desktop breakpoint so it can't squeeze the content column
+   on tablets/phones. Material normally toggles this via a JS-driven
+   `hidden` attribute; this unconditional override doesn't depend on
+   that mechanism firing correctly. */
+@media screen and (max-width: 76.25em) {
+  .md-sidebar--secondary {
+    display: none !important;
+  }
+  .md-content__inner {
+    margin-right: 0 !important;
+  }
+}
+
+/* Images never overflow their column on any screen size. */
+.md-typeset img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tables scroll horizontally instead of squeezing text unreadably small. */
+.md-typeset table:not([class]) {
+  display: block;
+  overflow-x: auto;
+}
+
+/* Hide the language dropdown in the header (carried over from the old
+   hide-language-toggle.css). */
+.md-header__option .md-select[data-md-component="language"] {
+  display: none;
+}
+
+/* ============================================
+   Theme Enhancements (Matching Tennis WIKI / tennis-wiki/vi)
+   ============================================ */
+
+/* Headings with accent lines matching green theme */
+.md-typeset h1 {
+  font-size: 1.9rem;
+  border-bottom: 2px solid var(--md-primary-fg-color, #4caf50);
+  padding-bottom: 0.3em;
+  margin-bottom: 0.8em;
+}
+
+.md-typeset h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest, #e0e0e0);
+  padding-bottom: 0.2em;
+  margin-top: 1.6em;
+}
+
+.md-typeset h3 {
+  font-size: 1.25rem;
+  color: var(--md-primary-fg-color, #2e7d32);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h3 {
+  color: var(--md-primary-fg-color--light, #81c784);
+}
+
+/* Blockquotes styling */
+.md-typeset blockquote {
+  border-left: 4px solid var(--md-primary-fg-color, #4caf50);
+  background-color: var(--md-primary-fg-color--lightest, rgba(76, 175, 80, 0.05));
+  border-radius: 0 6px 6px 0;
+  padding: 12px 18px;
+  color: var(--md-default-fg-color--light, #555);
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  color: var(--md-default-fg-color--light, #ccc);
+  background-color: rgba(76, 175, 80, 0.08);
+}
+
+/* Table header & row styling */
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color, #4caf50);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: var(--md-default-fg-color--lightest, rgba(0, 0, 0, 0.02));
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+/* Card components (for index & grid feature sections) */
+.card {
+  background-color: var(--md-default-bg-color, #ffffff);
+  border: 1px solid var(--md-default-fg-color--lightest, #e0e0e0);
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+.card h3 {
+  color: var(--md-primary-fg-color, #4caf50);
+  margin-top: 0;
+}
+

@@ -1,0 +1,8587 @@
+
+<!doctype html>
+<html lang="vi" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Comprehensive unified tennis knowledge base — Fundamentals, Stroke Analysis, Reference Library, and more">
+      
+      
+        <meta name="author" content="Henry Pham">
+      
+      
+      
+        <link rel="prev" href="../tennis-cs-chuong1-structural-frame/">
+      
+      
+        <link rel="next" href="../tennis-cs-chuong3-cascade-motor-chain/">
+      
+      
+        
+          <link rel="alternate" href="../../../../reference-library/tfl-manuals/tennis-cs-chuong2-pid-control/" hreflang="en">
+        
+          <link rel="alternate" href="./" hreflang="vi">
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Tennis CS Chuong 2 - PID Control - Tennis Unified Library</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/css/site.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tennis-cs-chuong-2-pid-control" class="md-skip">
+          Bỏ qua
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Đầu trang">
+    <a href="../../../" title="Tennis Unified Library" class="md-header__button md-logo" aria-label="Tennis Unified Library" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 15a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2M6.05 14.54s1.41-1.42 1.42-4.24c-.36-2.19.5-4.76 2.47-6.72C12.87.65 17.14.17 19.5 2.5c2.33 2.36 1.85 6.63-1.08 9.56-1.96 1.97-4.53 2.83-6.72 2.47-2.82.01-4.24 1.42-4.24 1.42l-4.24 4.24-1.41-1.41zM18.07 3.93C16.5 2.37 13.5 2.84 11.35 5c-2.14 2.14-2.62 5.15-1.06 6.71 1.57 1.56 4.57 1.08 6.71-1.06 2.16-2.15 2.63-5.15 1.07-6.72"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tennis Unified Library
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tennis CS Chuong 2 - PID Control
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="lime"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="lime"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Chọn ngôn ngữ">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../../reference-library/tfl-manuals/tennis-cs-chuong2-pid-control/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="vi" class="md-select__link">
+              Tiếng Việt
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Trang Chủ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../foundation/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Nền Tảng
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../advanced/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Cấp Độ Cao Cấp
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../elite/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Tinh Hoa
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../coach-video-library/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Thư Viện Video HLV
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../fundamentals/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  TP-Archive
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Kho Tennis
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Thanh điều hướng" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../" title="Tennis Unified Library" class="md-nav__button md-logo" aria-label="Tennis Unified Library" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 15a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2M6.05 14.54s1.41-1.42 1.42-4.24c-.36-2.19.5-4.76 2.47-6.72C12.87.65 17.14.17 19.5 2.5c2.33 2.36 1.85 6.63-1.08 9.56-1.96 1.97-4.53 2.83-6.72 2.47-2.82.01-4.24 1.42-4.24 1.42l-4.24 4.24-1.41-1.41zM18.07 3.93C16.5 2.37 13.5 2.84 11.35 5c-2.14 2.14-2.62 5.15-1.06 6.71 1.57 1.56 4.57 1.08 6.71-1.06 2.16-2.15 2.63-5.15 1.07-6.72"/></svg>
+
+    </a>
+    Tennis Unified Library
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trang Chủ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../foundation/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nền Tảng
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../advanced/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cấp Độ Cao Cấp
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../elite/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tinh Hoa
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../coach-video-library/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thư Viện Video HLV
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../fundamentals/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TP-Archive
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../doubles/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kho Tennis
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Kho Tennis
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thư Viện Tham Khảo
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_1" id="__nav_7_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Thư Viện Tham Khảo
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../coauthored-books/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sách Đồng Tác Giả
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../player-profiles/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Player Profiles
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rivalry-analyses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rivalry Analyses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../technical-reference/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technical Reference
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../tennis-books/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tennis Books
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../tennis-lexicon/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Từ Điển Tennis
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_1_8" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TFL Manuals
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_1_8" id="__nav_7_1_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_1_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7_1_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    TFL Manuals
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../alcaraz-tennis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alcaraz Tennis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cam-giac-chan-proprioception-tennis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cam Giac Chan Proprioception Tennis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cam-nang-dao-tao-tennis-50-plus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cam Nang Dao Tao Tennis 50 Plus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cam-nang-tennis-2026-congthucdongian/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cam Nang Tennis 2026 Cong Thuc Don Gian
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cam-nang-tennis-2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cam Nang Tennis 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cam-nang-tennis-hien-dai-2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cam Nang Tennis Hien Dai 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cam-nang-tennis-hien-dai-full-formula-2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cam Nang Tennis Hien Dai Full Formula 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../camnang-volley-toandien-2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CamNang_Volley_ToanDien_2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../camnangtennis2026-henrypham/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CamNangTennis2026 HenryPham
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chuoi-dong-luc-trong-tennis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chuỗi Động Lực Trong Tennis Hiện Đại: Từ Ghi Chú Sân Tập Đến Nền Tảng Sinh Cơ Học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../co-sinh-hoc-tennis-hien-dai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Co Sinh Hoc Tennis Hien Dai
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../complete-tennis-handbook-3-0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complete Tennis Handbook 3.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../complete-volley-manual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complete Volley Manual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cu-trai-tay-mot-tay/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cu Trai Tay Mot Tay
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dong-luc-hoc-khong-gian-trong-tennis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ĐỘNG LỰC HỌC KHÔNG GIAN TRONG TENNIS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../federer-code-book/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Federer Code Book
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../federer-tennis-handbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Federer Tennis Handbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footwork-analysis-tennisfuturelab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Footwork & Tư Thế Chân — Open · Square · Closed Stance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gi-o-tr-nh-tennis-to-n-di-n-cho-ng-i-ch-i-trung-ni-n-40-65-tu-i/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GIÁO_TRÌNH_TENNIS_TOÀN_DIỆN_CHO_NGƯỜI_CHƠI_TRUNG_NIÊN_(40-65_TUỔI)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../giao-trinh-tennis-level-3-5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Giao Trinh Tennis Level 3.5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../giao-trinh-tennis-toan-dien/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Giao_Trinh_Tennis_Toan_Dien
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../goat-tennis-giao-trinh-tieng-viet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GOAT Tennis Giao Trinh Tieng Viet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grip-contact-point-research-paper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Grip Contact Point Research Paper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ha-trong-tam-tu-goi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ha Trong Tam Tu Goi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hand-eyes-foot-coordination/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hand Eyes Foot Coordination
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../he-song-trong-tennis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    He Song Trong Tennis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../he-thong-tennis-cap-cao-20-chuong/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    He Thong Tennis Cap Cao 20 Chuong
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hip-bump-tennis-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hip Bump Tennis Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ips-tennis-10-chuong/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IPS Tennis 10 Chuong
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ky-thuat-chan-tennis-10-chuong/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ky Thuat Chan Tennis 10 Chuong
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ky-thuat-chan-tennis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ky Thuat Chan Tennis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ky-thuat-giao-bong/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ky-thuat-giao-bong
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kythuat-traitay-mottay-10chuong/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ky Thuat Traitay Mot Tay 10 Chuong
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lai-cam-xuc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lai Cam Xuc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mental-game-system-10-chuong/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mental Game System 10 Chuong
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modern-forehand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modern Forehand
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modern-tennis-handbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modern Tennis Handbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nadal-tennis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nadal Tennis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ngh-thu-t-chuy-n-h-ng-c-c-nguy-n-l-th-i-c-c-quy-n-trong-c-volley-tennis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nghệ Thuật Chuyển Hướng Các Nguyên Lý Thái Cực Quyền Trong Cú Volley
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nghe-thuat-bo-chan-tennis-chitiet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nghe_Thuat_Bo_Chan_Tennis_ChiTiet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nghe-thuat-forehand-tennis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nghe Thuat Forehand Tennis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nghe-thuat-giao-bong-tennis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nghe Thuat Giao Bong Tennis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nghe-thuat-thich-nghi-federer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nghe Thuat Thich Nghi Federer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nghien-cuu-sinh-co-hoc-giao-bong-tennis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nghien Cuu Sinh Co Hoc Giao Bong Tennis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ok-grip-drill-bilingual-article/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The OK Grip Drill: Rewiring the Kinetic Chain Through Constraint-Based Coaching
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../one-handed-backhand-mastery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    One Handed Backhand Mastery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phan-tich-footwork-tennis-toan-tap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phan Tich Footwork Tennis Toan Tap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phan-tich-forehand-rublev-sinner-alcaraz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phan_tich_Forehand_Rublev_Sinner_Alcaraz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phan-tich-ky-thuat-giao-bong-wta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phan Tich WTA Serve
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phan-tich-serve-full-shelton-djokovic-trophy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phan_tich_Serve_Full_Shelton_Djokovic_Trophy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phan-tich-sinh-co-hoc-tennis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phan_tich_Sinh_Co_Hoc_Tennis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phat-kinh-song-luc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phat Kinh Song Luc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../qu-n-l-p-l-c-ch-a-kh-a-hi-u-su-t-n-nh-trong-tennis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quản_Lý_Áp_Lực_Chìa_Khóa_Để_Hiệu_Suất_Ổn_Định_Trong_Tennis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quiet-eye-va-narrow-focus-trong-tennis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quiet Eye va Narrow Focus trong Tennis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../racket-face-angle-research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    racket_face_angle_research
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s-c-m-nh-tinh-th-n-y-u-t-ph-n-bi-t-gi-a-c-u-th-gi-i-v-xu-t-s-c/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sức_Mạnh_Tinh_Thần_Yếu_Tố_Phân_Biệt_Giữa_Cầu_Thủ_Giỏi_Và_Xuất_Sắc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sinh-co-hoc-tennis-hien-dai-10-chuong/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sinh Co Hoc Tennis Hien Dai 10 Chuong
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sinner-tennis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sinner Tennis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../so-tay-huan-luyen-tennis-drf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    So Tay Huan Luyen Tennis DRF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../soma-hoc-kiem-soat-van-dong-vi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Soma Hoc Kiem Soat Van Dong VI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../song-trong-tennis-manual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Song Trong Tennis Manual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spacing-training-manual-vi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spacing Training Manual VI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../split-step-mastery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Split Step Mastery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../t-o-s-ng-trong-tennis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T O S Ng Trong Tennis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tai-lieu-dao-tao-bien-dang-vat-lon-thanh-nang-suat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tai Lieu Dao Tao Bien Dang Vat Lon Thanh Nang Suat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tai-lieu-huan-luyen-sinh-co-hoc-tennis-2026-v2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tai Lieu Huan Luyen Sinh Co Hoc Tennis 2026 v2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tay-kh-ng-thu-n-non-dorminant-arm-in-forehand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tay Khong Thuan Non Dominant Arm
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-ballet-20-chuong/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tennis Ballet 20 Chuong
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-biomechanics-5-0-complete/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tennis Biomechanics 5.0 Complete
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-coaching-nguoi-nghiep-du/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tennis Coaching Nguoi Nghiep Du
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-control-system-manual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tennis Control System Manual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-crosstraining/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tennis Crosstraining
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-cs-chuong1-structural-frame/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tennis CS Chuong 1 - Structural Frame
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tennis CS Chuong 2 - PID Control
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-cs-chuong3-cascade-motor-chain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tennis CS Chuong 3 - Cascade Motor Chain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-cs-chuong4-mpc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tennis CS Chuong 4 - MPC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-cs-chuong5-fuzzy-entropy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tennis CS Chuong 5 - Fuzzy Entropy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-cs-chuong6-instinct-layer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tennis CS Chuong 6 - Instinct Layer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-dang-cap-cao-20-chuong/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tennis Dang Cap Cao 20 Chuong
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-elite-analysis-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phân Tích Elite Tennis Players
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-future-lab-t-i-li-u-h-ng-d-n-h-c-tennis-cho-h-c-vi-n-c-p-3-0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TENNIS FUTURE LAB: TÀI LIỆU HƯỚNG DẪN HỌC TENNIS CHO HỌC VIÊN CẤP 3.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-game-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tennis Game Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-handbook-2026-vietnamese/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tennis Handbook 2026 Vietnamese
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-mastery-20-chapters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tennis Mastery 20 Chapters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-mastery-complete/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tennis Mastery Complete
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-mastery-guide-tieng-viet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    tennis_mastery_guide_tieng_viet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-serve-110-principles-vi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tennis Serve — 110 Nguyên Tắc Bảo Vệ Đầu Gối
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-serve-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tennis Serve Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-suc-ben-20-chuong/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tennis Suc Ben 20 Chuong
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tennis-tinh-khi-than/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tennis Tinh Khi Than
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tfl-tennis-3-0-scaffold/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TFL Tennis 3.0 Scaffold
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../than-kinh-hoc-tennis-full/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Than Kinh Hoc Tennis Full
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the-art-of-modern-tennis-polished/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Art of Modern Tennis Polished
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the-art-of-redirection-taichi-principles-in-the-tennis-volley/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The_Art_of_Redirection_Taichi_Principles_in_the_Tennis_Volley
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the-ky-thuat-tennis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The_ky_thuat_tennis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the-neurological-edge-book-plan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Neurological Edge Book Plan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the-neurological-edge-professional-manual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Neurological Edge Professional Manual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tinhkhithan-tennis-5-0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TinhKhiThan Tennis 5.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unified-power-model-20-chapters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unified Power Model 20 Chapters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vi-nhan-thuc-co-the-tennis-20-chuong/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vi Nhan Thuc Co The Tennis 20 Chuong
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wave-transmission-research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wave Transmission Research
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../training-programs/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chương Trình Huấn Luyện
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visual-library/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Library
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../volley/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Đánh Bóng Bổng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../tennis-wiki-reference/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tham Khảo Tennis Wiki
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_2" id="__nav_7_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tham Khảo Tennis Wiki
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../tennis-wiki-reference/backhand/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cú Trái Tay
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../tennis-wiki-reference/biomechanics/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cơ Sinh Học
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../tennis-wiki-reference/fitness/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fitness
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../tennis-wiki-reference/footwork/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Di Chuyển Chân
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../tennis-wiki-reference/forehand/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cú Thuận Tay
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../tennis-wiki-reference/grip/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cầm Vợt
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../tennis-wiki-reference/handbooks/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Handbooks
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../tennis-wiki-reference/lob-overhead/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bóng Bổng & Bóng Cao
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../tennis-wiki-reference/players/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Players
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../tennis-wiki-reference/pressure-neurology/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Áp Lực & Thần Kinh Học
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../tennis-wiki-reference/psychology/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Psychology
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../tennis-wiki-reference/reference-en/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../tennis-wiki-reference/return/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Đỡ Giao Bóng
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../tennis-wiki-reference/serve/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Giao Bóng
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../tennis-wiki-reference/system/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../tennis-wiki-reference/tactics/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chiến Thuật
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../tennis-wiki-reference/technique/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technique
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../tennis-wiki-reference/volley/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Đánh Bóng Bổng
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../specialty-shots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cú Đánh Chuyên Biệt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../biomechanics-neurology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cơ Sinh Học & Thần Kinh Học
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tenniskb-legacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy Archive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../blog/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Mục lục">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Thanh điều hướng" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../../" class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Trang Chủ
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Kho Tennis
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Thư Viện Tham Khảo
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    TFL Manuals
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="tennis-cs-chuong-2-pid-control">Tennis CS Chuong 2 - PID Control<a class="headerlink" href="#tennis-cs-chuong-2-pid-control" title="Permanent link">&para;</a></h1>
+<p>Source: Tennis_CS_Chuong2_PID_Control.docx</p>
+<p>TENNIS CONTROL SYSTEM</p>
+<p>COACHING CURRICULUM</p>
+<p>Level 3.5 → 5.0  |  12-Week Periodized Program</p>
+<p>CHƯƠNG 2</p>
+<p>Tầng 2 — PID Real-time Error Correction</p>
+<p>Hệ thống tự hiệu chỉnh trong thời gian thực</p>
+<p>Phiên bản 1.0  |  2026</p>
+<p>Mục Lục</p>
+<ol>
+<li>
+<p>Giới thiệu — Tại sao PID là tầng sống còn .......................................  3</p>
+</li>
+<li>
+<p>PID trong tennis — Tổng quan ba thành phần .....................................  3</p>
+</li>
+<li>
+<p>P — Proportional: Phản ứng tức thời với lỗi hiện tại ..........................  4</p>
+</li>
+<li>
+<p>I — Integral: Tích lũy và bù lỗi hệ thống .....................................  5</p>
+</li>
+<li>
+<p>D — Derivative: Giảm chấn và dự đoán xu hướng .................................  6</p>
+</li>
+<li>
+<p>Tuning PID — Cân bằng ba thành phần theo tình huống ...........................  7</p>
+</li>
+<li>
+<p>PID và áp lực tâm lý — Khi hệ thống bị nhiễu ..................................  8</p>
+</li>
+<li>
+<p>Liên hệ Thái Cực Quyền — Thính Kình (聽勁) và Đổng Kình (懂勁) ...............  9</p>
+</li>
+<li>
+<p>Cảm giác đúng — Hướng dẫn thực hành PID .......................................  9</p>
+</li>
+<li>
+<p>Bài tập và KPI — Đánh giá Tầng 2 ............................................  10</p>
+</li>
+<li>
+<p>Giới Thiệu — Tại Sao PID Là Tầng Sống Còn</p>
+</li>
+</ol>
+<p>Một cây vợt đánh bóng hoàn hảo trong điều kiện lý tưởng — bóng đến đúng điểm, đúng tốc độ, sân phẳng, không gió — không phải là chuẩn mực của tennis thực tế. Tennis thực sự là môn thể thao của sai số và hiệu chỉnh liên tục. Mỗi bóng đến khác nhau, mỗi điều kiện thay đổi, và cơ thể của người chơi không bao giờ ở trạng thái chính xác như buổi tập trước.</p>
+<p>Điều phân biệt người chơi 4.0 và 5.0 không phải là kỹ thuật &quot;chuẩn hơn&quot; — mà là hệ thống hiệu chỉnh lỗi hiệu quả hơn. Người chơi đỉnh cao không bao giờ đánh bóng hoàn hảo, nhưng họ sai ít hơn và sửa nhanh hơn. Đây chính xác là những gì Tầng 2 — PID Control — mô tả.</p>
+<p>🎯 Định nghĩa Tầng 2</p>
+<p>PID (Proportional-Integral-Derivative) là hệ thống tự hiệu chỉnh lỗi trong thời gian thực. Trong tennis, đây là cơ chế não và cơ thể liên tục đo lường sai lệch giữa kết quả thực tế và kết quả mong muốn, sau đó tự điều chỉnh mà không cần sự can thiệp có ý thức của người chơi.</p>
+<p>Điều quan trọng cần hiểu ngay từ đầu: PID không phải là thứ người chơi &quot;nghĩ đến&quot; khi đánh bóng. Nó là hệ thống vô thức hoạt động bên dưới ngưỡng ý thức. Nhiệm vụ của HLV là thiết kế các drill tạo điều kiện cho hệ thống PID này được &quot;tinh chỉnh&quot; (tuned) một cách tối ưu.</p>
+<ol>
+<li>PID Trong Tennis — Tổng Quan Ba Thành Phần</li>
+</ol>
+<p>Trong kỹ thuật điều khiển, bộ điều khiển PID đo lường lỗi (error) — khoảng cách giữa setpoint (trạng thái mong muốn) và process variable (trạng thái thực tế) — và tính toán correction dựa trên ba yếu tố: lỗi hiện tại (P), lịch sử lỗi (I), và tốc độ thay đổi của lỗi (D). Trong tennis, ba thành phần này ánh xạ trực tiếp vào cơ chế hoạt động của hệ thần kinh-cơ.</p>
+<p>Thành phần</p>
+<p>Tên đầy đủ</p>
+<p>Chức năng điều khiển</p>
+<p>Ví dụ tennis</p>
+<p>Lỗi khi mất cân bằng</p>
+<p>P</p>
+<p>Proportional</p>
+<p>Phản ứng tức thời với lỗi hiện tại</p>
+<p>Tay vươn ra khi bóng xa</p>
+<p>Phản ứng cứng, giật cục</p>
+<p>I</p>
+<p>Integral</p>
+<p>Tích lũy &amp; bù lỗi hệ thống</p>
+<p>Điều chỉnh spin cho sân đất</p>
+<p>Drift, lệch mục tiêu mãn tính</p>
+<p>D</p>
+<p>Derivative</p>
+<p>Giảm chấn, dự đoán xu hướng lỗi</p>
+<p>Phanh tay trước contact</p>
+<p>Overshoot, vung quá đà</p>
+<p>Ba thành phần này không hoạt động tuần tự — chúng hoạt động song song, liên tục, và được &quot;trọng số hóa&quot; (weighted) khác nhau tùy theo tình huống. Một người chơi giỏi không phải là người có P, I, D cao nhất — mà là người có khả năng tự động điều chỉnh trọng số của từng thành phần cho phù hợp với từng tình huống trong trận đấu.</p>
+<p>🎯 Setpoint trong tennis là gì?</p>
+<p>Setpoint không phải là một điểm cố định. Nó thay đổi theo từng shot: &quot;bóng vào góc trái sâu 1m cách đường baseline&quot; là một setpoint. &quot;Bóng cross-court với topspin vừa&quot; là một setpoint khác. Não liên tục tạo ra setpoint mới và PID liên tục cố gắng đạt đến nó.</p>
+<ol>
+<li>P — Proportional: Phản Ứng Tức Thời Với Lỗi Hiện Tại</li>
+</ol>
+<p>Thành phần P (Proportional) là phản ứng tỷ lệ thuận với lỗi hiện tại. Lỗi càng lớn, phản ứng càng mạnh. Trong tennis, đây là cơ chế phản xạ tức thì — cơ thể tự điều chỉnh ngay lập tức khi phát hiện bóng không đến đúng dự đoán.</p>
+<p>3.1  P-component trong thực tế tennis</p>
+<p>Hãy tưởng tượng người chơi đang chờ forehand ở vị trí baseline. Não dự đoán bóng sẽ đến ở điểm A, nhưng bóng thực tế đến ở điểm B — cách nhau 30cm. Thành phần P kích hoạt ngay lập tức: tay vươn thêm 30cm, bước chân điều chỉnh, vai xoay thêm. Mọi thứ xảy ra trong chưa đầy 100ms — nhanh hơn khả năng phân tích có ý thức của não bộ.</p>
+<p>Đây không phải &quot;quyết định&quot; — đây là reflex được lập trình qua hàng nghìn giờ luyện tập. Người chơi không nghĩ &quot;bóng lệch, tôi cần vươn tay&quot; — hệ thống P làm điều đó tự động.</p>
+<p>3.2  P-gain — Độ nhạy của phản ứng</p>
+<p>Trong kỹ thuật, &quot;gain&quot; của thành phần P xác định mức độ mạnh của phản ứng với một lượng lỗi nhất định. P-gain cao → phản ứng mạnh với lỗi nhỏ. P-gain thấp → phản ứng yếu, cần lỗi lớn mới kích hoạt. Trong tennis, P-gain cần được điều chỉnh tự động theo tình huống:</p>
+<p>Kịch bản</p>
+<p>P-gain tối ưu</p>
+<p>Biểu hiện đúng</p>
+<p>Lỗi nếu sai</p>
+<p>Volley tốc độ cao</p>
+<p>Thấp – phản ứng nhỏ, chuẩn xác</p>
+<p>Chỉ block, không swing thêm</p>
+<p>P quá cao → vung tay thừa</p>
+<p>Groundstroke dài</p>
+<p>Trung bình – vươn tay đủ</p>
+<p>Swing hoàn chỉnh, đủ lực</p>
+<p>P quá thấp → bóng chết</p>
+<p>Emergency (bóng ở chân)</p>
+<p>Cao – phản ứng cực nhanh</p>
+<p>Reflex tức thì, không nghĩ</p>
+<p>P quá thấp → không kịp</p>
+<p>Return of serve nhanh</p>
+<p>Cao nhưng compact</p>
+<p>Block + redirect, không backswing</p>
+<p>P quá cao → mất cấu trúc</p>
+<p>3.3  Lỗi P-gain không phù hợp</p>
+<p>P-gain quá cao (over-responsive): Người chơi phản ứng quá mức với mỗi biến động nhỏ. Biểu hiện: chạy nhiều hơn cần thiết, swing thay đổi liên tục, không nhất quán. Thường gặp ở người chơi lo âu hoặc mệt mỏi.</p>
+<p>P-gain quá thấp (under-responsive): Không phản ứng đủ nhanh với bóng khó. Biểu hiện: thường xuyên không đến kịp bóng rộng, contact trễ, bóng vào lưới do không điều chỉnh góc mặt vợt.</p>
+<p>P-gain không đồng đều (inconsistent): Phản ứng tốt với một loại lỗi nhưng kém với loại khác. Phổ biến nhất: phản ứng tốt với bóng ngang nhưng kém với bóng thấp.</p>
+<p>🎯 Drill tối ưu hóa P-gain</p>
+<p>Random ball feed: coach feed bóng ngẫu nhiên sang các vị trí khác nhau mà người chơi không biết trước. Mục tiêu không phải đánh mạnh — mà là tiếp xúc được bóng ở điểm contact đúng nhất có thể. Đây là drill calibrate P-gain hiệu quả nhất.</p>
+<ol>
+<li>I — Integral: Tích Lũy và Bù Lỗi Hệ Thống</li>
+</ol>
+<p>Thành phần I (Integral) là yếu tố tinh tế nhất trong ba thành phần PID, và cũng là thứ phân biệt rõ nhất giữa người chơi chiến thuật và người chơi kỹ thuật thuần túy. I không phản ứng với một lỗi đơn lẻ — nó theo dõi lịch sử lỗi và điều chỉnh dựa trên pattern tích lũy.</p>
+<p>4.1  Cơ chế tích lũy trong trận đấu</p>
+<p>Trong công nghiệp, thành phần I được thiết kế để loại bỏ &quot;steady-state error&quot; — lỗi nhỏ và nhất quán tồn tại liên tục mà P không thể sửa vì nó quá nhỏ để kích hoạt đủ phản ứng. Trong tennis, đây là những lỗi hệ thống tồn tại suốt một buổi đấu:</p>
+<p>Loại lỗi tích lũy (I)</p>
+<p>Biểu hiện trong trận đấu</p>
+<p>Cơ chế điều chỉnh</p>
+<p>Sân đất sét (bóng nảy cao hơn)</p>
+<p>Liên tục đánh vào lưới hoặc quá dài</p>
+<p>Tự động nâng góc mặt vợt sau 3-5 bóng</p>
+<p>Gió ngang sân</p>
+<p>Bóng drift sang một bên</p>
+<p>Dần dần aim lệch ngược chiều gió</p>
+<p>Grip mỏi / bàn tay ướt</p>
+<p>Mặt vợt xoay nhẹ tại contact</p>
+<p>Tăng dần grip tension hoặc đổi grip</p>
+<p>Đối thủ có spin lạ (heavy topspin)</p>
+<p>Bóng nảy cao hơn dự kiến</p>
+<p>Nâng điểm contact, điều chỉnh stance</p>
+<p>4.2  Tích lũy theo thời gian — Thích ứng với đối thủ</p>
+<p>Một trong những biểu hiện đẹp nhất của thành phần I trong tennis là cách các tay vợt đẳng cấp thích ứng với đối thủ trong suốt trận đấu. Set 1 thường là giai đoạn thu thập dữ liệu — não đang &quot;tích phân&quot; (integrate) thông tin về serve của đối thủ, pattern movement, điểm yếu tâm lý. Set 2 trở đi, những điều chỉnh này được áp dụng tự động.</p>
+<p>Đây là lý do nhiều tay vợt đẳng cấp chơi tốt hơn ở set 3 hơn set 1 trong các trận dài — hệ thống I của họ đã tích lũy đủ dữ liệu để điều chỉnh tối ưu. Ngược lại, người chơi thiếu kinh nghiệm thường cải thiện ít theo thời gian vì hệ thống I không được &quot;lập trình&quot; để học từ dữ liệu pattern.</p>
+<p>4.3  Integral windup — Mối nguy hiểm của tích lũy quá mức</p>
+<p>Trong kỹ thuật điều khiển, &quot;integral windup&quot; là hiện tượng hệ thống I tích lũy quá nhiều correction đến mức gây ra dao động lớn khi điều kiện thay đổi đột ngột. Trong tennis, đây xảy ra khi người chơi &quot;over-adapt&quot; — thích ứng quá mức với một điều kiện cụ thể đến mức không thể điều chỉnh nhanh khi điều kiện đó đổi.</p>
+<p>Ví dụ: người chơi đã thích ứng hoàn hảo với heavy topspin của đối thủ trong 8 game. Đối thủ đột ngột chuyển sang slice thấp. Hệ thống I vẫn đang &quot;cộng dồn&quot; correction cho topspin — kết quả là người chơi đánh quá cao với slice. Đây là lý do cần &quot;reset&quot; tư duy tâm lý sau mỗi điểm, sau mỗi game — để tránh integral windup.</p>
+<p>🎯 Tư duy reset (anti-windup)</p>
+<p>Djokovic nổi tiếng với &quot;bounce, bounce&quot; — gõ bóng nhiều lần trước khi serve. Đây không chỉ là ritual — đây là cơ chế reset hệ thống I, xóa bộ nhớ tích lũy của điểm trước và bắt đầu tích lũy mới. Hãy dạy học viên có ritual reset có ý thức giữa các điểm.</p>
+<ol>
+<li>D — Derivative: Giảm Chấn và Dự Đoán Xu Hướng</li>
+</ol>
+<p>Thành phần D (Derivative) là phức tạp nhất để giải thích nhưng dễ quan sát nhất trong tennis. Nó không phản ứng với lỗi hiện tại (P) hay lịch sử lỗi (I) — mà phản ứng với tốc độ thay đổi của lỗi. Nói đơn giản: D dự đoán lỗi sẽ tệ hơn hay tốt hơn, và hành động theo xu hướng đó.</p>
+<p>5.1  D-component như cơ chế giảm chấn</p>
+<p>Trong cơ học, giảm chấn (damping) là lực cản ngăn hệ thống dao động quá mức. Xe hơi không có giảm chấn sẽ nảy lên nảy xuống mãi sau khi gặp ổ gà. Cơ thể người chơi tennis không có D-component đủ mạnh sẽ &quot;nảy&quot; — phản ứng quá mức, rồi sửa quá mức, rồi lại sai theo hướng ngược lại.</p>
+<p>Biểu hiện thực tế của D-component tốt trong tennis: người chơi &quot;phanh&quot; chuyển động của tay ngay trước khi tiếp xúc bóng, cho phép mặt vợt ổn định tại điểm contact. Đây là chi tiết thường bị bỏ qua trong dạy học nhưng là thứ tạo ra sự khác biệt lớn về consistency.</p>
+<p>5.2  D-component như hệ thống dự đoán</p>
+<p>Nhưng D không chỉ là &quot;phanh&quot; — nó còn là hệ thống dự đoán xu hướng. Khi D nhận thấy lỗi đang tăng nhanh (bóng đang bay ra ngoài dự đoán với gia tốc cao), nó kích hoạt correction mạnh hơn ngay cả khi lỗi hiện tại còn nhỏ. Khi D nhận thấy lỗi đang giảm (cơ thể đang tự điều chỉnh đúng hướng), nó giảm correction để tránh overshoot.</p>
+<p>Trong ngôn ngữ tennis, đây là cảm giác &quot;tracking bóng&quot; — không chỉ nhìn vị trí bóng hiện tại, mà đọc được trajectory của bóng và dự đoán điểm đến. Người chơi có D-component tốt luôn có vẻ &quot;không vội&quot; dù đang chơi nhanh — vì họ bắt đầu movement sớm hơn, dựa trên dự đoán xu hướng.</p>
+<p>5.3  Derivative kick — Nguy hiểm của D quá mạnh</p>
+<p>&quot;Derivative kick&quot; là hiện tượng D-component phản ứng quá mạnh với setpoint thay đổi đột ngột. Trong tennis: bóng đến có spin lạ, thay đổi hướng đột ngột sau khi nảy — D-component kích hoạt correction cực mạnh ngay lập tức, gây ra movement không kiểm soát được.</p>
+<p>Biểu hiện: người chơi &quot;giật tay&quot; một cách không cần thiết khi bóng có spin, hoặc có những movement vội vàng không cần thiết khi đọc sai trajectory ban đầu. Cách sửa là luyện tập với bóng spin không đều để D-component học cách filter noise trước khi phản ứng.</p>
+<p>🎯 Hình ảnh D-component</p>
+<p>Nghĩ về một người đang nắm bắt một quả bóng bay đến. Tay không chỉ di chuyển đến nơi bóng đang ở — tay di chuyển đến nơi bóng sẽ ở. Đó là D-component. Trong tennis, mọi movement đến contact point đều phải là chuyển động đến nơi bóng sẽ đến, không phải nơi bóng đang ở.</p>
+<ol>
+<li>Tuning PID — Cân Bằng Ba Thành Phần Theo Tình Huống</li>
+</ol>
+<p>Một hệ thống PID hoạt động tốt không phải là hệ thống có P, I, D cao nhất — mà là hệ thống có trọng số phù hợp với đặc tính của &quot;plant&quot; (cơ thể người chơi) và môi trường (sân, đối thủ, điều kiện). Quá trình tối ưu hóa các trọng số này được gọi là tuning.</p>
+<p>6.1  Tuning theo loại cú đánh</p>
+<p>Volley: P cao (phản ứng nhanh), I thấp (ít thích ứng cần thiết), D cao (giảm chấn mạnh để không vung thừa).</p>
+<p>Groundstroke: P trung bình, I cao (thích ứng với spin và bounce của đối thủ), D trung bình.</p>
+<p>Return of serve: P rất cao (reflex tức thì), I thấp (không đủ thời gian tích lũy), D cao (phanh trước contact).</p>
+<p>Serve: P thấp (ít điều chỉnh theo môi trường), I trung bình (thích ứng với gió), D rất thấp (không cần giảm chấn nhiều).</p>
+<p>6.2  Tuning theo điều kiện thi đấu</p>
+<p>Sân đất sét: Bóng chậm hơn và nảy cao hơn → tăng I (thời gian thích ứng nhiều hơn), giảm P (ít cần reflex tức thì), tăng D (tracking dài hơn).</p>
+<p>Sân cỏ: Bóng nhanh và thấp → tăng P (phản xạ nhanh hơn), giảm I (ít thời gian học), giảm D (không có thời gian phanh dài).</p>
+<p>Gió mạnh: Bóng trajectory không đoán được → tăng D (tracking xu hướng), tăng I (bù lệch gió tích lũy), giảm P (tránh over-react với mỗi biến động gió).</p>
+<p>Thi đấu dưới áp lực (match point): Hệ thống PID thường bị &quot;detuned&quot; bởi cortisol — P tăng bất thường (jittery), D giảm (ít giảm chấn), I tích lũy sai (lo âu, không đọc pattern đúng). HLV cần chuẩn bị drill áp lực để train PID dưới stress.</p>
+<p>6.3  Auto-tuning — Khi hệ thống tự học</p>
+<p>Mục tiêu cuối cùng của quá trình tập luyện là đạt được &quot;auto-tuning&quot; — hệ thống PID tự điều chỉnh trọng số theo từng tình huống mà không cần người chơi can thiệp có ý thức. Đây là dấu hiệu của trình độ 4.5+ trong tennis. Người chơi không nghĩ &quot;tôi cần tăng P bây giờ&quot; — hệ thống làm điều đó tự động.</p>
+<p>🎯 Nguyên tắc tuning cho HLV</p>
+<p>Khi học viên đánh không nhất quán, đừng sửa kỹ thuật ngay. Hãy xác định: lỗi từ P (phản ứng sai), I (không thích nghi), hay D (không giảm chấn)? Mỗi loại cần drill khác nhau. Sửa nhầm component là cách nhanh nhất để tạo ra confusion thay vì improvement.</p>
+<ol>
+<li>PID và Áp Lực Tâm Lý — Khi Hệ Thống Bị Nhiễu</li>
+</ol>
+<p>Không có yếu tố nào phá vỡ hệ thống PID hiệu quả hơn áp lực tâm lý. Đây là lý do tại sao người chơi có kỹ thuật tốt trong tập luyện lại sụp đổ trong trận đấu — không phải vì kỹ thuật xấu, mà vì hệ thống điều khiển bị nhiễu.</p>
+<p>7.1  Cortisol và PID detuning</p>
+<p>Khi cơ thể phản ứng với áp lực, cortisol và adrenaline được giải phóng. Những hormone này thay đổi hành vi của hệ thống PID theo những cách rất cụ thể và có thể dự đoán:</p>
+<p>P-gain tăng đột ngột: Người chơi trở nên over-reactive. Mọi bóng khó đều được phản ứng với cường độ tối đa, ngay cả khi không cần thiết. Swing trở nên jittery, inconsistent.</p>
+<p>D-component suy yếu: Khả năng &quot;phanh&quot; trước contact giảm. Người chơi vung qua điểm contact, mặt vợt không ổn định, bóng bay không kiểm soát. Đây là nguyên nhân chính của unforced errors dưới áp lực.</p>
+<p>I-component sai hướng: Thay vì tích lũy dữ liệu thực tế, hệ thống I bắt đầu tích lũy &quot;fear data&quot; — não nhớ các điểm thua trước đó và hệ thống điều chỉnh theo memory tiêu cực thay vì thực tế hiện tại.</p>
+<p>7.2  Choking — Khi ý thức can thiệp vào PID</p>
+<p>&quot;Choking&quot; trong tennis — đánh kém đột ngột dưới áp lực — thường được giải thích bằng tâm lý. Thực ra, có một cơ chế điều khiển rõ ràng: ý thức bắt đầu can thiệp vào hệ thống PID tự động.</p>
+<p>Khi người chơi bắt đầu nghĩ &quot;đặt chân đúng chỗ&quot; hay &quot;giữ khuỷu tay đúng&quot; trong khi đánh, họ đang chuyển quá trình xử lý từ hệ thống PID tự động (nhanh, chính xác) sang cortex frontal (chậm, serial). Kết quả là hệ thống bị lag, timing bị phá vỡ, coordination mất đi.</p>
+<p>Nghiên cứu cho thấy chỉ cần một thought có ý thức về kỹ thuật trong khi đánh có thể làm giảm tốc độ phản ứng lên đến 30%. Đây là lý do các HLV đỉnh cao tránh cho cue kỹ thuật trong match play — thay vào đó họ cue process (&quot;thở&quot;, &quot;một điểm một lúc&quot;) để giải phóng hệ thống tự động.</p>
+<p>🎯 Stress inoculation training</p>
+<p>Cách duy nhất để train PID dưới áp lực là tập luyện dưới áp lực thực sự. Thiết kế drill có hậu quả (người thua phải làm gì đó không thích), thêm audience, thêm time pressure. Hệ thống PID sẽ dần học cách hoạt động ổn định dưới cortisol — đây là training thực sự cho match play.</p>
+<ol>
+<li>Liên Hệ Thái Cực Quyền — Thính Kình (聽勁) và Đổng Kình (懂勁)</li>
+</ol>
+<p>8.1  Thính Kình (聽勁) — Lắng nghe lực</p>
+<p>Thính Kình (聽勁) — nghĩa đen là &quot;lắng nghe lực&quot; — là khái niệm mô tả khả năng cảm nhận ý định và lực của đối thủ thông qua tiếp xúc vật lý. Trong push hands (Thôi Thủ), đây là kỹ năng cao nhất: không nhìn mà biết, không suy nghĩ mà phản ứng.</p>
+<p>Trong tennis, Thính Kình tương đương với hệ thống P và D ở mức cao nhất: không cần xử lý thị giác có ý thức, cơ thể tự cảm nhận và phản ứng. Federer nói anh ta &quot;cảm nhận&quot; bóng qua cây vợt trước khi anh ta &quot;nhìn&quot; nó. Đây không phải thơ ca — đây là thông tin proprioceptive từ bàn tay và cánh tay được xử lý nhanh hơn thông tin thị giác.</p>
+<p>8.2  Đổng Kình (懂勁) — Hiểu lực</p>
+<p>Đổng Kình (懂勁) — &quot;hiểu lực&quot; — là tầng cao hơn: không chỉ cảm nhận mà còn hiểu pattern, dự đoán ý định. Đây là thành phần I và D ở đỉnh cao: hệ thống đã tích lũy đủ dữ liệu để nhận ra pattern và dự đoán trước khi lỗi xảy ra.</p>
+<p>Người chơi đạt Đổng Kình trong tennis đọc được serve trước khi bóng tossed, biết đối thủ sẽ down-the-line trước khi họ swing, cảm nhận được momentum của rally và hành động trước. Đây là PID không còn là hệ thống phản ứng — nó trở thành hệ thống dự đoán.</p>
+<p>🎯 Con đường từ Thính đến Đổng</p>
+<p>Thính Kình = hệ thống PID phản ứng tốt (cảm nhận và sửa lỗi). Đổng Kình = hệ thống PID + MPC (cảm nhận, hiểu pattern, dự đoán). Curriculum 12 tuần này xây dựng Thính Kình trước (Chương 1-4), sau đó tích hợp MPC layer để đạt Đổng Kình (Chương 5-8).</p>
+<ol>
+<li>Cảm Giác Đúng — Hướng Dẫn Thực Hành PID</li>
+</ol>
+<p>Phần này dịch framework PID thành những cảm giác cụ thể mà người chơi có thể tìm kiếm và nhận ra trong quá trình tập luyện.</p>
+<p>9.1  Cảm giác của P-component đúng</p>
+<p>Tay di chuyển &quot;trước khi bạn quyết định di chuyển&quot; — phản xạ xuất hiện trước ý thức.</p>
+<p>Không có cảm giác &quot;gấp&quot; hay &quot;không kịp&quot; — chỉ có cảm giác tự nhiên điều chỉnh.</p>
+<p>Sau khi đánh bóng khó, không nhớ mình đã làm gì — hệ thống hoạt động dưới ngưỡng ý thức.</p>
+<p>9.2  Cảm giác của I-component đúng</p>
+<p>Sau 5-10 phút rally, bóng bắt đầu &quot;quen thuộc&quot; hơn — não đang tích lũy dữ liệu.</p>
+<p>Cảm giác &quot;biết&quot; bóng này sẽ đến đâu dù không thể giải thích tại sao.</p>
+<p>Adaptation với spin lạ hoặc bounce lạ xảy ra tự nhiên mà không cần nhắc nhở.</p>
+<p>9.3  Cảm giác của D-component đúng</p>
+<p>Mặt vợt cảm thấy &quot;ổn định&quot; ngay trước và tại contact point — không rung, không xoay.</p>
+<p>Không có cảm giác &quot;vung quá&quot; hay phải kéo lại sau khi đánh.</p>
+<p>Bóng rời mặt vợt với cảm giác &quot;clean&quot; — không phải &quot;đập&quot; mà là &quot;release&quot;.</p>
+<p>🎯 Test PID tổng hợp</p>
+<p>Drill: 10 bóng feed liên tiếp, mỗi bóng đến vị trí khác nhau và với spin khác nhau (coach không báo trước). Sau drill, hỏi người chơi: &quot;Bạn có nhớ bạn đã điều chỉnh thế nào không?&quot; Câu trả lời lý tưởng là &quot;Không&quot; — hệ thống PID đang hoạt động tự động đúng cách.</p>
+<ol>
+<li>Bài Tập và KPI — Đánh Giá Tầng 2</li>
+</ol>
+<p>Các drill cho Tầng 2 được thiết kế để &quot;stress test&quot; từng thành phần của hệ thống PID, giúp người chơi nhận ra và tối ưu hóa từng component. Không drill nào chỉ test một component — nhưng mỗi drill nhấn mạnh vào một component chính.</p>
+<p>10.1  Drill progression</p>
+<p>Drill 1 — Random Feed Reflex (P-component, Tuần 3)</p>
+<p>Coach feed bóng ngẫu nhiên vào 5 zone khác nhau trên sân, không theo thứ tự.</p>
+<p>Người chơi chỉ cần đưa bóng qua lưới — không cần nhắm mục tiêu cụ thể.</p>
+<p>Tốc độ feed tăng dần từ trung bình đến nhanh.</p>
+<p>KPI: contact rate &gt; 80% sau 20 bóng, không có pattern &quot;bỏ cuộc&quot; với bóng khó.</p>
+<p>Drill 2 — Spin Adaptation Rally (I-component, Tuần 3-4)</p>
+<p>Rally liên tục với đối tác dùng nhiều loại spin khác nhau (flat, topspin, slice).</p>
+<p>Mỗi 5 phút, đối tác chuyển sang một loại spin mới không báo trước.</p>
+<p>Người chơi không được nói chuyện — chỉ rally và thích ứng.</p>
+<p>KPI: sau 3 phút với mỗi loại spin mới, accuracy trở về baseline (đo bằng court target markers).</p>
+<p>Drill 3 — Slow Motion Contact Freeze (D-component, Tuần 3-4)</p>
+<p>Swing với tốc độ 50%, dừng hoàn toàn tại điểm contact trong 2 giây.</p>
+<p>Coach quan sát: mặt vợt có ổn định hoàn toàn không?</p>
+<p>Sau khi master ở 50%, tăng dần lên 70%, 85%, và cuối cùng 100%.</p>
+<p>KPI: mặt vợt giữ góc ổn định ± 5° tại contact point ở tốc độ 85%.</p>
+<p>Drill 4 — Pressure Rally (Full PID, Tuần 4)</p>
+<p>Rally cross-court, người đầu tiên đánh ra ngoài hoặc vào lưới phải làm 5 burpees.</p>
+<p>Sau 10 điểm, đổi sang down-the-line.</p>
+<p>Coach quan sát: technique có thay đổi dưới áp lực không?</p>
+<p>KPI: unforced error rate dưới áp lực không cao hơn 20% so với không áp lực.</p>
+<p>Drill 5 — Serve Return Chaos (Full PID, Tuần 4-5)</p>
+<p>Đứng ở return position, coach serve từ các vị trí T, Body, và Wide ngẫu nhiên.</p>
+<p>Mục tiêu return: vào sân, không cần mục tiêu cụ thể.</p>
+<p>Tốc độ serve: 60-70% của tốc độ đầy đủ để đảm bảo safety.</p>
+<p>KPI: return in-court rate &gt; 70%, không có khoảng không phản ứng &gt; 200ms sau khi bóng nảy.</p>
+<p>10.2  KPI tổng kết Tầng 2</p>
+<p>Tiêu chí đánh giá KPI</p>
+<p>Ngưỡng pass</p>
+<p>Ngưỡng tốt</p>
+<p>Ngưỡng elite</p>
+<p>Thích nghi góc mặt vợt sau 5 bóng lỗi liên tiếp</p>
+<p>3/5 balls</p>
+<p>4/5 balls</p>
+<p>5/5 balls</p>
+<p>Split-step timing (trước khi đối thủ contact)</p>
+<p>&gt; 50% lần</p>
+<p>&gt; 70% lần</p>
+<p>&gt; 90% lần</p>
+<p>Điều chỉnh bóng gió ngang (5 bóng liên tiếp)</p>
+<p>3 trong lưới sân</p>
+<p>2 vào target</p>
+<p>4+ vào target</p>
+<p>Phanh swing trước contact (D-component)</p>
+<p>Cảm nhận được</p>
+<p>Nhất quán 7/10</p>
+<p>Tự động 9/10</p>
+<p>Không thay đổi P-gain khi bị break (áp lực)</p>
+<p>Nhận ra sau trận</p>
+<p>Điều chỉnh trong set</p>
+<p>Không bị ảnh hưởng</p>
+<p>🎯 Nguyên tắc chuyển Tầng 3</p>
+<p>Tầng 3 (Cascade Motor Chain) chỉ được giới thiệu khi học viên đạt 4/5 KPI ở ngưỡng &quot;tốt&quot; trong hai buổi liên tiếp, và khi hệ thống PID hoạt động ổn định dưới áp lực drill Pressure Rally. Lý do: Cascade Chain đòi hỏi upper và lower body phải có hệ thống error correction riêng và phối hợp được với nhau — nếu PID chưa ổn định, cascade sẽ khuếch đại lỗi thay vì giảm thiểu.</p>
+<p>— Kết thúc Chương 2 —</p>
+<p>Chương 3: Tầng 3 — Cascade Motor Chain (Chuỗi Động Học Phân Tầng)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Trở lại mục lục
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Chân trang" >
+        
+          
+          <a href="../tennis-cs-chuong1-structural-frame/" class="md-footer__link md-footer__link--prev" aria-label="Trước: Tennis CS Chuong 1 - Structural Frame">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Trước
+              </span>
+              <div class="md-ellipsis">
+                Tennis CS Chuong 1 - Structural Frame
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../tennis-cs-chuong3-cascade-motor-chain/" class="md-footer__link md-footer__link--next" aria-label="Sau: Tennis CS Chuong 3 - Cascade Motor Chain">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Sau
+              </span>
+              <div class="md-ellipsis">
+                Tennis CS Chuong 3 - Cascade Motor Chain
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.
+    </div>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.path", "navigation.expand", "navigation.indexes", "navigation.prune", "navigation.prev_next", "navigation.footer", "navigation.tracking", "toc.follow", "search.highlight", "search.suggest", "search.share", "content.code.copy", "content.tabs.link", "content.tooltips", "alternate"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0110\u00e3 sao ch\u00e9p", "clipboard.copy": "Sao ch\u00e9p v\u00e0o b\u1ed9 nh\u1edb t\u1ea1m", "search.result.more.one": "1 t\u1eeb kh\u00e1c trong trang", "search.result.more.other": "# t\u1eeb kh\u00e1c trong trang", "search.result.none": "Kh\u00f4ng t\u00ecm th\u1ea5y t\u00e0i li\u1ec7u li\u00ean quan", "search.result.one": "1 t\u00e0i li\u1ec7u li\u00ean quan", "search.result.other": "# t\u00e0i li\u1ec7u li\u00ean quan", "search.result.placeholder": "Nh\u1eadp \u0111\u1ec3 b\u1eaft \u0111\u1ea7u t\u00ecm ki\u1ebfm", "search.result.term.missing": "Kh\u00f4ng", "select.version": "Ch\u1ecdn phi\u00ean b\u1ea3n"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../../assets/js/extra.js"></script>
+      
+    
+  </body>
+</html>
