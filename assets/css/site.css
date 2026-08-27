@@ -407,6 +407,67 @@ a, button, .md-nav__link, .md-tabs__link, .page-nav a, .lang-card, .book-card, .
     font-size: 16px !important;
   }
   .md-typeset table:not([class]) td {
-    font-size: 18px !important;
+      font-size: 18px !important;
+    }
+  }
+
+/* ============================================================
+   Full-width responsive layout — override Material's 61rem (~976px)
+   and .md-main's constrained layout so content fills 100% of the
+   screen on every viewport size.
+   ============================================================ */
+.md-grid,
+.md-content,
+.md-content__inner,
+.md-typeset,
+.md-main,
+.md-main__inner,
+.md-container,
+.md-typeset__inner {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* Material sidebar pulls content right when a left-nav exists.
+   Push the main content area to use the full grid even with sidebar. */
+@media screen and (min-width: 60em) {
+  .md-content {
+    margin-left: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .md-main__inner {
+    display: block !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+  .md-sidebar--primary,
+  .md-sidebar--secondary {
+    display: none !important; /* Hide left nav so content can use full width */
+  }
+}
+
+.md-sidebar,
+.md-nav {
+  max-width: 100% !important;
+}
+
+/* PDF Book Viewer — full page width with responsive height */
+iframe.pdf-viewer {
+  display: block;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: min(85vh, 1200px) !important;
+  min-height: 700px !important;
+  border: 1px solid var(--divider, #e8d3b3) !important;
+  border-radius: 8px !important;
+  box-shadow: var(--md-shadow-z2, 0 6px 16px rgba(42, 31, 20, 0.10)) !important;
+  background-color: #1a130c !important;
+  margin: 1em 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+  iframe.pdf-viewer {
+    height: min(75vh, 900px) !important;
+    min-height: 600px !important;
   }
 }
