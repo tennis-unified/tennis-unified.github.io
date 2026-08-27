@@ -1,0 +1,1414 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <meta name="description" content="First-ever study of actual spin rates in pro tennis, the methodology, and what the results showed.">
+
+
+        <meta name="author" content="Henry Pham">
+
+
+
+
+
+
+
+          <link rel="alternate" href="./" hreflang="en">
+
+          <link rel="alternate" href="../../../vi/stroke-analysis/the-heavy-ball/ball-spin-in-pro-tennis-part-1/" hreflang="vi">
+
+
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+
+
+        <title>Ball Spin in Pro Tennis – Part 1 - Tennis Unified Library</title>
+
+
+    <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+
+
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+
+
+
+
+
+
+
+
+
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
+
+
+    <link rel="stylesheet" href="../../../assets/css/book-theme.css">
+<link rel="stylesheet" href="../../../assets/css/site.css">
+
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+
+
+
+
+  </head>
+
+
+
+
+
+
+
+
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+
+
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+
+
+        <a href="#ball-spin-in-pro-tennis-part-1" class="md-skip">
+          Skip to content
+        </a>
+
+    </div>
+    <div data-md-component="announce">
+
+
+    </div>
+
+
+
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Tennis Unified Library" class="md-header__button md-logo" aria-label="Tennis Unified Library" data-md-component="logo">
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            Tennis Unified Library
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            Ball Spin in Pro Tennis — Part 1
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6 5.5 0 0 1 16 9.5c0 1.61-.59 3.09 9.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="off-1">
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+
+      <div class="md-search__suggest" data-md-component="search-suggest"></div>
+    </form>
+    <div class="md-search__output" data-md-component="search-output">
+      <div class="md-search__output__wrapper">
+        <div class="md-search__scrollwrap" tabindex="0" role="region" aria-label="Search results">
+          <div class="md-search__content" role="status" aria-live="polite" id="__search">
+            <ul class="md-search__list" role="list">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="md-header__option">
+      <div class="md-select">
+
+
+        <button class="md-header__button md-icon" aria-label="Select language">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+        </button>
+
+        <div class="md-select__inner">
+          <ul class="md-select__list">
+            <li class="md-select__item">
+              <a href="/" hreflang="en" class="md-select__link">
+                English
+              </a>
+            </li>
+            <li class="md-select__item">
+              <a href="/vi/" hreflang="vi" class="md-select__link">
+                Tiếng Việt
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="md-tabs" aria-label="Tabs">
+    <ul class="md-tabs__list">
+        <li class="md-tabs__item">
+          <a href="../.." class="md-tabs__link">
+            Home
+          </a>
+        </li>
+        <li class="md-tabs__item">
+          <a href="../../../fundamentals/" class="md-tabs__link">
+            Foundation
+          </a>
+        </li>
+        <li class="md-tabs__item">
+          <a href="../../../advanced/" class="md-tabs__link">
+            Advanced
+          </a>
+        </li>
+        <li class="md-tabs__item">
+          <a href="../../../elite/" class="md-tabs__link">
+            Elite
+          </a>
+        </li>
+        <li class="md-tabs__item">
+          <a href="../../../tennis-wiki-reference/" class="md-tabs__link">
+            Tennis Wiki Reference
+          </a>
+        </li>
+        <li class="md-tabs__item">
+          <a href="../../../coach-video-library/" class="md-tabs__link">
+            Coach Video Library
+          </a>
+        </li>
+    </ul>
+  </nav>
+</header>
+
+
+    <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+
+
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Tennis Unified Library" class="md-nav__button md-logo" aria-label="Tennis Unified Library" data-md-component="logo">
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Tennis Unified Library
+  </label>
+
+  <ul class="md-nav__list" data-md-scrollfix>
+
+
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+
+    Home
+
+
+  </span>
+
+
+      </a>
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+
+
+  <a href="../../../coach-video-library/" class="md-nav__link">
+
+
+  <span class="md-ellipsis">
+
+    Coach Video Library
+
+
+  </span>
+
+
+        <span class="md-nav__icon md-icon"></span>
+
+
+    </a>
+
+
+    </li>
+
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+
+
+
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+
+    </ul>
+  </nav>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="md-content" data-md-component="content">
+                  <article class="md-content__inner md-typeset">
+
+<h1 id="ball-spin-in-pro-tennis-part-1">Ball Spin in Pro Tennis – Part 1<a class="headerlink" href="#ball-spin-in-pro-tennis-part-1" title="Permanent link">&para;</a></h1>
+
+<p><strong>First-ever study of actual spin rates in pro tennis, the methodology, and what the results showed.</strong></p>
+
+<h3 id="ball-spin-in-pro-tennis-part-1-ball-spin-in-pro-tennis-part-1">Ball Spin in Pro Tennis – Part 1<a class="headerlink" href="#ball-spin-in-pro-tennis-part-1-ball-spin-in-pro-tennis-part-1" title="Permanent link">&para;</a></h3>
+
+<h3 id="ball-spin-in-pro-tennis-part-1-by-john-yandell">By John Yandell<a class="headerlink" href="#ball-spin-in-pro-tennis-part-1-by-john-yandell" title="Permanent link">&para;</a></h3>
+
+<p>The two primary characteristics of the shots hit in professional tennis are that they are hit with great velocity and heavy spin. Because of the radar guns on the serve, at least something was known quantitatively about the velocity of the ball.</p>
+
+<p>The study of ball speed conducted by Advanced Tennis researchers showed that the radar guns told only the first part of the story about ball speed in pro tennis. We found that the ball slows down dramatically on the serve from the initial velocity recorded by the radar gun, both before and after the bounce, and did the same on the other shots as well.</p>
+
+<video controls preload="metadata" playsinline width="100%" style="border-radius:8px; box-shadow: 0 4px 16px rgba(0,0,0,.15); margin: 1.5rem 0;"><source src="../../../assets/images/ball-spin-in-pro-tennis-–-part-1__image1.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+
+<p>The first ever study of spin levels in professional tennis yielded many surprising results.</p>
+
+<p>Questions Regarding Spin</p>
+
+<p>A first serve might be traveling 120mph when it left the racket, but how fast was that serve spinning? How much more spin was there on a &quot;spin&quot; second serve compared to a first serve? What about the heavy topspin forehands of the European players? How did this compare with players with a more classic style? How &quot;flat&quot; was a flat ball? How &quot;heavy&quot; was heavy or exaggerated spin? Did balls hit with underspin spin more or less than topspin? What about volleys and dropshots?</p>
+
+<p>In 1997, we got the chance to answer some of these questions. Working with a team of other researchers from Cislunar Aerospace, and USTA Sports Science, we had th e unique opportunity to film U.S. Open on Arthur Ashe Stadium court.</p>
+
+<p>During 4 days of filming, we were lucky to capture enough footage to measure the spin rates on almost twenty of the top players in the world, both men and women. From the raw data, we were able to analyze the spin on over 700 individual shots, including 1st and 2nd serves, groundstrokes hit with both topspin and underspin, return of serves, volleys, overheads and drop shots.</p>
+
+<p>That data documents the amazing spin rates generated by the top players for the first time, including the substantial amount of spin generated by those players generally described as hitting the ball &quot;flat.&quot;</p>
+
+<p>In fact the analysis showed that in pro matches there is virtually no such thing as a completely &quot;flat&quot; shot, or a ball hit with no visible spin. In hundreds of incidents, there were less than a half dozen shots that had no discernable rotation, most of which were miss hits.</p>
+
+<p>The answers we discovered to our questions regarding spin surprised even some very experienced observers of the game. Even so-called flat groundstrokes were spinning at 1000rpm and up, and the forehands of some of the European and South American players could exceed 3000rpm. First serves could reach 2500rpm and above. Second serves were easily the faster spinning of all, reaching over 5000rpm. It was also fascinating to see where the game&#x27;s top stars fell in the range of spin measured on center court.</p>
+
+<video controls preload="metadata" playsinline width="100%" style="border-radius:8px; box-shadow: 0 4px 16px rgba(0,0,0,.15); margin: 1.5rem 0;"><source src="../../../assets/images/ball-spin-in-pro-tennis-–-part-1__image2.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+
+<p>We found there is no such thing as a &quot;flat&quot; pro forehand--spin rates were measured in thousands of rpms.</p>
+
+<p>Spin and Technical Style</p>
+
+<p>With a few exceptions, our findings matched the perception of expert observers concerning the relative amount of spin hit by the players, for example, that Sergi Bruguera hit more topspin than Pete Sampras. What surprised us most was the amount of spin hit by all the players, even among the more &quot;classical&quot; players. Of the players studied, American Mary Jo Fernandez, with her minimalistic, classic strokes, hit the &quot;flatest&quot; forehand. But her ball was still spinning on average in excess of 1000rpm! (To be precise, her average was 1068rpm on 12 forehands.)</p>
+
+<p>At the other end of the spectrum was the Spanish player Sergi Bruguera, who generated topspin at an incredible rate that averaged over 3300rpm, more than 3 times as much spin of Mary Jo. Bruguera&#x27; also recorded the single fastest spinning forehand, an amazing 3751rpms in a match against Marcelo Rios.</p>
+
+<p>In men&#x27;s pro tennis it normally takes around a second for the ball to travel from one player&#x27;s racket to the other in a baseline exchange. In the case of Sergi Bruguera&#x27;s forehand, this means the ball is turning over itself 70 to 80 times as it travels to his opponent! Try visualizing a tennis ball turning over 80 times in one second as it travels from baseline to baseline, if you want to get a sense of what this is really like!</p>
+
+<p><img alt="Figure from Ball Spin in Pro Tennis – Part 1" src="../../../assets/images/ball-spin-in-pro-tennis-–-part-1__image3.FH" style="max-width:100%; height:auto; border-radius:8px; box-shadow: 0 4px 16px rgba(0,0,0,.15); margin: 1.5rem 0;" /></p>
+
+<p>Sampras had more spin on his forehand than the other classical players, and slightly more than Andre Agassi as well.</p>
+
+<p>These extremes--from Fernandez to Bruguera--defined the parameters of spin on the forehand in pro tennis, roughly from about 1000rpm to over 3000rpm, a range of more than 2000rpm, depending on the player and the type of forehand.</p>
+
+<p>Men&#x27;s Topspin Forehands</p>
+
+<p>On the men&#x27;s side, the players with the classical grips averaged roughly 1300 to 1800rpm. This included players such as Petr Korda and Tim Henman, known as compact technical players, and also Todd Martin. Interestingly Pete Sampras hit the most spin on the forehand among players with classical style, an average of 1842rpm. Andre Agassi&#x27;s forehand actually measured slightly less spin than Sampras, despite his semi-western grip, averaging 1718rpm.</p>
+
+<p>The highest spin measured on a groundstroke was Bruguera&#x27;s forehand at over 3700rpm.</p>
+
+<p>Men players with the more extreme western grips all hit with substantially more average topspin, with the averages starting well above 2000rpm. This range began with Michael Chang at 2334rpm, Marcelo Rios at 2647rpm, and Tomas Muster at 2882rpm. Sergi Bruguera, who observers agree has the most extreme western motion in tennis, was at a level by himself, the only player averaging well in excess of 3000rpm.</p>
+
+<p>Topspin Men&#x27;s Forehands</p>
+
+<p>Player:</p>
+
+<p>No. of Forehands:</p>
+
+<p>RPM Range:</p>
+
+<p>Avg RPM:</p>
+
+<p>Sergi Bruguera</p>
+
+<p>9</p>
+
+<p>2941-3751rpm</p>
+
+<p>3331rpm</p>
+
+<p>Tomas Muster</p>
+
+<p>22</p>
+
+<p>1500-3750rpm</p>
+
+<p>2882rpm</p>
+
+<p>Marcelo Rios</p>
+
+<p>13</p>
+
+<p>1875-3750rpm</p>
+
+<p>2647rpm</p>
+
+<p>Mark Philippousis</p>
+
+<p>8</p>
+
+<p>2143-2727rpm</p>
+
+<p>2546rpm</p>
+
+<p>Jim Courier</p>
+
+<p>12</p>
+
+<p>938-3264rpm</p>
+
+<p>2527rpm</p>
+
+<p>Michael Chang</p>
+
+<p>17</p>
+
+<p>1271-3192rpm</p>
+
+<p>2334rpm</p>
+
+<p>Pete Sampras</p>
+
+<p>17</p>
+
+<p>1000-3409rpm</p>
+
+<p>1842rpm</p>
+
+<p>Andre Agassi</p>
+
+<p>19</p>
+
+<p>1154-3333rpm</p>
+
+<p>1718rpm</p>
+
+<p>Todd Martin</p>
+
+<p>5</p>
+
+<p>1154-2308rpm</p>
+
+<p>1659rpm</p>
+
+<p>Tim Henman</p>
+
+<p>7</p>
+
+<p>833-2000rpm</p>
+
+<p>1288rpm</p>
+
+<p>Petr Korda</p>
+
+<p>15</p>
+
+<p>968-2500rpm</p>
+
+<p>1333rpm</p>
+
+<p>Women&#x27;s Topspin Forehands</p>
+
+<p><img alt="Figure from Ball Spin in Pro Tennis – Part 1" src="../../../assets/images/ball-spin-in-pro-tennis-–-part-1__image4.FH" style="max-width:100%; height:auto; border-radius:8px; box-shadow: 0 4px 16px rgba(0,0,0,.15); margin: 1.5rem 0;" /></p>
+
+<p>Venus Williams was the only woman to top 2000rpm on her forehand.</p>
+
+<p>The range between the high and low on the women&#x27;s side was less extreme, but still in excess of 1000rpm. Mary Jo Fernandez, as noted, was at the low end at 1068rpm. Venus Williams was the only player to average in excess of 2000rpm, averaging 2154rpm.</p>
+
+<p>The players with classical grips such as Jana Novotna and Lindsey Davenport were in the same range as their male counterparts between 1000rpm and 2000rpm, with Davenport at 1346rpm and Novotna at 1673rpm. Players with the more extreme grips such as Mary Pierce and Arantxa Sanchez-Vicario averaged around1900rpm, 1941 and 1916rpm respectively.</p>
+
+<p>Despite a semi-western grip world #1 Martina Hingis hit less spin than every player other than Fernandez, averaging 1147rpm. Another interesting result was that Monica Seles, who hits her forehand with two-hands, had one of the relatively &quot;flatest&quot; forehands at an average of 1215rpm.</p>
+
+<p>Topspin Women&#x27;s Forehands</p>
+
+<p>Player:</p>
+
+<p>No. of Forehands:</p>
+
+<p>RPM Range:</p>
+
+<p>Avg RPM:</p>
+
+<p>Venus Williams</p>
+
+<p>16</p>
+
+<p>1071-3488rpm</p>
+
+<p>2154rpm</p>
+
+<p>Mary Pierce</p>
+
+<p>5</p>
+
+<p>1667-2500rpm</p>
+
+<p>1941rpm</p>
+
+<p>Arantxa Sanchez-V.</p>
+
+<p>3</p>
+
+<p>1875-2000rpm</p>
+
+<p>1916rpm</p>
+
+<p>Anna Kournikova</p>
+
+<p>16</p>
+
+<p>1154-2143rpm</p>
+
+<p>1713rpm</p>
+
+<p>Jana Novotna</p>
+
+<p>5</p>
+
+<p>1500-1875rpm</p>
+
+<p>1673rpm</p>
+
+<p>Lindsay Davenport</p>
+
+<p>13</p>
+
+<p>1271-3192rpm</p>
+
+<p>1346rpm</p>
+
+<p>Monica Seles (2H)</p>
+
+<p>12</p>
+
+<p>790-1829rpm</p>
+
+<p>1215rpm</p>
+
+<p>Martina Hingis</p>
+
+<p>15</p>
+
+<p>600-2143rpm</p>
+
+<p>1147rpm</p>
+
+<p>Mary Jo Fernandez</p>
+
+<p>12</p>
+
+<p>417-1500rpm</p>
+
+<p>1068rpm</p>
+
+<p>Spin on The Backhand</p>
+
+<p>In general the top players hit their backhands with significantly less topspin compared to their forehands with some interesting exceptions, including Pete Sampras as noted below.</p>
+
+<p>As with the forehand, on the men&#x27;s side Sergi Bruguera was the king of topspin on the backhand with his 2-handed shot. His average was 2382rpm, but this was still almost 1000rpm, or 30% less than his topspin forehand.</p>
+
+<video controls preload="metadata" playsinline width="100%" style="border-radius:8px; box-shadow: 0 4px 16px rgba(0,0,0,.15); margin: 1.5rem 0;"><source src="../../../assets/images/ball-spin-in-pro-tennis-–-part-1__image5.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+
+<p>Among the men, Agassi&#x27;s spin rates were balanced on both sides.</p>
+
+<p>Interestingly among the men, 3 of the 4 highest spin rates were players who hit with 1-hand rather than 2. This was surprising because it is widely considered more difficult to generate topspin with a one-handed shot. Tomas Muster, for example, averaged 2264rpm with his one-handed shot, second only to BrugueraUs two hander. Still, this was 20% less topspin than his forehand.</p>
+
+<p>Pete Sampras was unique among all the players, both men and women, in that he hit significantly more topspin on his backhand drive compared to his forehand. His average of 2204rpm was the third highest we recorded, and 20% higher than his forehand topspin average of 1842rpm. Although not among the leaders in spin rate, Petr Korda, known for his exceptional 1-handed backhand, averaged 1553rpm on that shot, a little more than 10% more topspin than his forehand.</p>
+
+<p>Andre Agassi was an exception among the players because of the even balance between sides, hitting the ball with virtually identical amounts of topspin on the backhand as the forehand. Agassi averaged 1754rpm on the backhand, compared to 1718rpm on the forehand.</p>
+
+<p>Men&#x27;s Topspin Backhands</p>
+
+<p>Player:</p>
+
+<p>Type</p>
+
+<p>No. of Backhand</p>
+
+<p>RPM Range:</p>
+
+<p>Avg RPM:</p>
+
+<p>Sergi Bruguera</p>
+
+<p>2H</p>
+
+<p>6</p>
+
+<p>1667-3000rpm</p>
+
+<p>2382rpm</p>
+
+<p>Tomas Muster</p>
+
+<p>1H</p>
+
+<p>6</p>
+
+<p>1500-3333rpm</p>
+
+<p>2264rpm</p>
+
+<p>Pete Sampras</p>
+
+<p>1H</p>
+
+<p>8</p>
+
+<p>1875-2830rpm</p>
+
+<p>2204rpm</p>
+
+<p>Mark Philippousis</p>
+
+<p>1H</p>
+
+<p>3</p>
+
+<p>1667-2419rpm</p>
+
+<p>2029rpm</p>
+
+<p>Andre Agassi</p>
+
+<p>2H</p>
+
+<p>14</p>
+
+<p>790-2500rpm</p>
+
+<p>1754rpm</p>
+
+<p>Jim Courier</p>
+
+<p>2H</p>
+
+<p>4</p>
+
+<p>1000-2143rpm</p>
+
+<p>1606rpm</p>
+
+<p>Petr Korda</p>
+
+<p>1H</p>
+
+<p>9</p>
+
+<p>833-2727rpm</p>
+
+<p>1553rpm</p>
+
+<p>Michael Chang</p>
+
+<p>2H</p>
+
+<p>11</p>
+
+<p>1154-2055rpm</p>
+
+<p>1437rpm</p>
+
+<p>Todd Martin</p>
+
+<p>2H</p>
+
+<p>1</p>
+
+<p>1304rpm</p>
+
+<p>1304rpm</p>
+
+<p>Marcelo Rios</p>
+
+<p>2H</p>
+
+<p>2</p>
+
+<p>833-1765rpm</p>
+
+<p>1299rpm</p>
+
+<p>Tim Henman</p>
+
+<p>1H</p>
+
+<p>1</p>
+
+<p>1250rpm</p>
+
+<p>1250rpm</p>
+
+<video controls preload="metadata" playsinline width="100%" style="border-radius:8px; box-shadow: 0 4px 16px rgba(0,0,0,.15); margin: 1.5rem 0;"><source src="../../../assets/images/ball-spin-in-pro-tennis-–-part-1__image6.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+
+<p>Like Agassi, Hingis had balanced spins on both sides, but lower total rates than most other women.</p>
+
+<p>Women&#x27;s Backhands</p>
+
+<p>Many women also showed substantial decreases in the amount of topspin hit on the backhand, compared to the forehand. Venus Williams hit the most spin of the women studied, at 1429rpm, but this was also significantly less, about a third less spin, than on her forehand. Anna Kournikova was even more extreme. Her backhands averaged 999rpm, about 60% less spin than her forehand at 1713rpm.</p>
+
+<p>On the women&#x27;s side, however, there were more players with equal spin rates on both sides. Lindsay Davenport averaged 1332rpm on the backhand, versus 1346rpm on the forehand. Monica Seles was only slightly higher on the backhand at 1321rpm compared to her forehand at 1215rpm. Martina Hingis backhand averaged 1147rpm, which exactly equalled her forehand statistical average.</p>
+
+<p>Women&#x27;s Topspin Backhands</p>
+
+<p>Player:</p>
+
+<p>Type</p>
+
+<p>No. of Backhand</p>
+
+<p>RPM Range:</p>
+
+<p>Avg RPM:</p>
+
+<p>Venus Williams</p>
+
+<p>2H</p>
+
+<p>8</p>
+
+<p>1000-1875rpm</p>
+
+<p>1429rpm</p>
+
+<p>Lindsay Davenport</p>
+
+<p>2H</p>
+
+<p>5</p>
+
+<p>882-1875rpm</p>
+
+<p>1332rpm</p>
+
+<p>Monica Seles</p>
+
+<p>2H</p>
+
+<p>9</p>
+
+<p>938-2143rpm</p>
+
+<p>1321rpm</p>
+
+<p>Mary Pierce</p>
+
+<p>2H</p>
+
+<p>4</p>
+
+<p>938-1875rpm</p>
+
+<p>1316rpm</p>
+
+<p>Arantxa Sanchez-V.</p>
+
+<p>2H</p>
+
+<p>2</p>
+
+<p>938-1500rpm</p>
+
+<p>1219rpm</p>
+
+<p>Martina Hingis</p>
+
+<p>2H</p>
+
+<p>15</p>
+
+<p>600-1667rpm</p>
+
+<p>1147rpm</p>
+
+<p>Anna Kournikova</p>
+
+<p>2H</p>
+
+<p>8</p>
+
+<p>535-1500rpm</p>
+
+<p>999rpm</p>
+
+<p>Mary Jo Fernandez</p>
+
+<p>2H</p>
+
+<p>10</p>
+
+<p>375-1304rpm</p>
+
+<p>790rpm</p>
+
+<video controls preload="metadata" playsinline width="100%" style="border-radius:8px; box-shadow: 0 4px 16px rgba(0,0,0,.15); margin: 1.5rem 0;"><source src="../../../assets/images/ball-spin-in-pro-tennis-–-part-1__image7.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+
+<p>The spin rates on underspin backhands were generally higher than the topspin versions.</p>
+
+<p>Underspin Backhands</p>
+
+<p>Most of the top players we filmed, both men and women, drove the ball with topspin on their backhands whenever possible. However, players employed slice or underspin in various situations, for defense, or for approach shots to keep the ball low when going to the net.</p>
+
+<p>Physicist Howard Brody has pointed out that generating slice requires only about half the racket head speed compared to hitting topspin, because the player is not required to change the direction in which the ball is spinning. The oncoming ball bounces off the court with topspin, spinning from top to bottom as it comes toward the player. When a player returns the ball with a slice shot the direction in which the ball spins around the axis of rotation is maintained. The direction of the shot changes, but the ball continues to spin from top to bottom, from the player&#x27;s perspective as it moves away from the player.</p>
+
+<p>For this reason, it was not surprising to find that in general players hit their slice backhands with more outgoing spin than their topspin backhands. The topspin range for the men&#x27;s players was 1250rpm to 2382rpm, while the slice shots for 10 different players averaged from 2127rpm to 3244rpm.</p>
+
+<p>On the men&#x27;s side, Jim Courier for example, hit 2 slice shots that averaged 3244rpm, more than twice the spin of his 2-handed topspin, which averaged 1606rpm. Michael Chang was a similar case. We measured 3 Chang slice backhands that averaged 2813rpm, again roughly twice the spin as on his two-handed topspin shot.</p>
+
+<p>Men&#x27;s Underspin Backhands</p>
+
+<p>Player:</p>
+
+<p>No. of Backhand</p>
+
+<p>RPM Range:</p>
+
+<p>Avg RPM:</p>
+
+<p>Jim Courier</p>
+
+<p>2</p>
+
+<p>3000-3488rpm</p>
+
+<p>3244rpm</p>
+
+<p>Michael Chang</p>
+
+<p>3</p>
+
+<p>2586-3125rpm</p>
+
+<p>2813rpm</p>
+
+<p>Todd Martin</p>
+
+<p>2</p>
+
+<p>2500-3000rpm</p>
+
+<p>2750rpm</p>
+
+<p>Andre Agassi</p>
+
+<p>1</p>
+
+<p>2727rpm</p>
+
+<p>2727rpm</p>
+
+<p>Sergi Bruguera</p>
+
+<p>1</p>
+
+<p>2726rpm</p>
+
+<p>2726rpm</p>
+
+<p>Mark Philippousis</p>
+
+<p>3</p>
+
+<p>2143-3333rpm</p>
+
+<p>2659rpm</p>
+
+<p>Tim Henman</p>
+
+<p>6</p>
+
+<p>1579-3000rpm</p>
+
+<p>2398rpm</p>
+
+<p>Tomas Muster</p>
+
+<p>2</p>
+
+<p>1875-2830rpm</p>
+
+<p>2353rpm</p>
+
+<p>Petr Korda</p>
+
+<p>7</p>
+
+<p>2143-2500rpm</p>
+
+<p>2320rpm</p>
+
+<p>Pete Sampras</p>
+
+<p>3</p>
+
+<p>1500-2500rpm</p>
+
+<p>2127rpm</p>
+
+<p>On the women&#x27;s side we were able to record fewer examples, but the results were consistent with the men&#x27;s. Possibly because of the reduced racket head speed required, the women seemed capable of generating as much slice as the men players. Jana Novotna, known for her one-handed slice backhand, recorded the highest underspin rate of any player, with two hits that averaged 3375rpm. 3 other slice backhands recorded by 3 different players averaged 2298rpm. This was more than a third more spin than the topspin backhands hit by Venus Williams, who led the women with an average of 1429rpm when she hit with topspin.</p>
+
+<p>Women&#x27;s Underspin Backhands</p>
+
+<p>Player:</p>
+
+<p>No. of Backhand</p>
+
+<p>RPM Range:</p>
+
+<p>Avg RPM:</p>
+
+<p>Jana Novotna</p>
+
+<p>2</p>
+
+<p>3000-3750rpm</p>
+
+<p>3375rpm</p>
+
+<p>Irena Spirlea</p>
+
+<p>1</p>
+
+<p>2727rpm</p>
+
+<p>2727rpm</p>
+
+<p>Monica Seles</p>
+
+<p>1 (2H)</p>
+
+<p>2500rpm</p>
+
+<p>2500rpm</p>
+
+<p>Mary Jo Fernandez</p>
+
+<p>1</p>
+
+<p>1667rpm</p>
+
+<p>1667rpm</p>
+
+<video controls preload="metadata" playsinline width="100%" style="border-radius:8px; box-shadow: 0 4px 16px rgba(0,0,0,.15); margin: 1.5rem 0;"><source src="../../../assets/images/ball-spin-in-pro-tennis-–-part-1__image8.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+
+<p>Sampras had the highest combination of speed and spin--around 120mph and over 2500rpm.</p>
+
+<p>The Men&#x27;s Serve</p>
+
+<p>Even more than the groundstrokes, the serve is often described in terms of spin as being hit &quot;flat&quot; or with &quot;topspin&quot; or &quot;slice&quot;. Our study shows that the only meaningful use of these terms is a relative one. There is no such thing as a &quot;flat serve&quot; in tennis. On the first serve, most players that we studied generated more spin than on either of their groundstrokes, and the second serve yielded the highest spin rates in the game.</p>
+
+<p>The lowest average spin rates on the first serve were 1600-1700rpm. Michael Chang, for example, hit 7 first serves with an average speed of 112mph and and an average spin rate of 1677rpm. 8 of the 10 men studied averaged well spin of well over 2000rpm on their first serves.</p>
+
+<p>Pete Sampras, known for having one of the best serves in pro tennis, hit 11 first serves with an average radar gun velocity of 120mph and and an average spin rate of 2699rpm, easily the highest combination of ball spin and ball speed tested.</p>
+
+<p>Men&#x27;s First Serve</p>
+
+<p>Player:</p>
+
+<p>No. of Serves:</p>
+
+<p>Avg MPH:</p>
+
+<p>RPM Range:</p>
+
+<p>Avg RPM:</p>
+
+<p>Marcelo Rios</p>
+
+<p>2</p>
+
+<p>92mph</p>
+
+<p>3000-3333rpm</p>
+
+<p>3167rpm</p>
+
+<p>Jim Courier</p>
+
+<p>6</p>
+
+<p>108mph</p>
+
+<p>2500-4054rpm</p>
+
+<p>2842rpm</p>
+
+<p>Todd Martin</p>
+
+<p>7</p>
+
+<p>98mph</p>
+
+<p>1667-3947rpm</p>
+
+<p>2798rpm</p>
+
+<p>Tomas Muster</p>
+
+<p>8</p>
+
+<p>105mph</p>
+
+<p>1667-4284rpm</p>
+
+<p>2754rpm</p>
+
+<p>Pete Sampras</p>
+
+<p>11</p>
+
+<p>120mph</p>
+
+<p>2100-4260rpm</p>
+
+<p>2699rpm</p>
+
+<p>Petr Korda</p>
+
+<p>7</p>
+
+<p>101mph</p>
+
+<p>1579-3750rpm</p>
+
+<p>2688rpm</p>
+
+<p>Andre Agassi</p>
+
+<p>9</p>
+
+<p>102mph</p>
+
+<p>1200-4284rpm</p>
+
+<p>2449rpm</p>
+
+<p>Mark Philippousis</p>
+
+<p>3</p>
+
+<p>123mph</p>
+
+<p>1765-2830rpm</p>
+
+<p>2198rpm</p>
+
+<p>Michael Chang</p>
+
+<p>7</p>
+
+<p>112mph</p>
+
+<p>1000-3750rpm</p>
+
+<p>1677rpm</p>
+
+<p>Tim Henman</p>
+
+<p>2</p>
+
+<p>120mph</p>
+
+<p>1429-1667rpm</p>
+
+<p>1548rpm</p>
+
+<p>The Combination of Speed and Spin</p>
+
+<p>We determined from our ball speed study that on a serve hit at 120mph, it takes roughly 2/3&#x27;s of a second for the ball to travel from the server&#x27;s racket to the racket of the returner. This means that a typical Sampras serve turned over about 30 times in the fraction of a second it takes to travel across the length of the court!</p>
+
+<p>Sampras&#x27;s ability to generate both velocity and spin on his first serve may explain his ability to serve with such great consistency and effectiveness, particularly under pressure. (See the Sampras Serve series. Click Here.)</p>
+
+<p>Petr Korda and Tomas Muster, for example, generated averaged roughly the same amount of spin as Sampras on their first serves, ie, 2600 to 2700rpm, but each averaged speeds of only slightly more than 100mph. In our data, Michael Chang&#x27;s personal highest first serve velocity was 122mph, but the spin rate on this serve was only 1071rpm, well less than half of the spin Sampras achieved on serves of similar speed. Andre Agassi&#x27;s fastest recorded serve was 121mph and this serve came the closest to flat of any serve studied spinning at less than 300rpms.</p>
+
+<p>Spin on the Second Serve</p>
+
+<p>The fastest spinning shot in pro tennis was the second serve. Average spin rates on the second serves among the men all exceeded even the average spin rate of Sergi Bruguera&#x27;s forehand (3351rpm), ranging from a low of 3370rpm for Todd Martin to a high of 4650rpm for Andre Agassi.</p>
+
+<p>Sampras Second Serve</p>
+
+<p>Sampras&#x27;s average second serve spin rate (4623rpm) was nearly identical to Agassi&#x27;s. However, he achieved more than 10mph in additional second serve velocity, averaging 85mph, compared to Agassi&#x27;s 74mph. As with his first serve, Sampras&#x27;s ability to generate both spin and speed on the second serve is a probable key in understanding his overall serving effectiveness.</p>
+
+<video controls preload="metadata" playsinline width="100%" style="border-radius:8px; box-shadow: 0 4px 16px rgba(0,0,0,.15); margin: 1.5rem 0;"><source src="../../../assets/images/ball-spin-in-pro-tennis-–-part-1__image9.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+
+<p>Men&#x27;s Second Serve</p>
+
+<p>Player:</p>
+
+<p>No. of Serves:</p>
+
+<p>Avg MPH:</p>
+
+<p>RPM Range:</p>
+
+<p>Avg RPM:</p>
+
+<p>Andre Agassi</p>
+
+<p>9</p>
+
+<p>74mph</p>
+
+<p>4054-4998rpm</p>
+
+<p>4650rpm</p>
+
+<p>Tim Henman</p>
+
+<p>2</p>
+
+<p>85mph</p>
+
+<p>4284-4998rpm</p>
+
+<p>4641rpm</p>
+
+<p>Pete Sampras</p>
+
+<p>4</p>
+
+<p>85mph</p>
+
+<p>3900-5357rpm</p>
+
+<p>4623rpm</p>
+
+<p>Tomas Muster</p>
+
+<p>2</p>
+
+<p>71mph</p>
+
+<p>3750-4998rpm</p>
+
+<p>4374rpm</p>
+
+<p>Mark Philippousis</p>
+
+<p>4</p>
+
+<p>99mph</p>
+
+<p>2830-4546rpm</p>
+
+<p>4018rpm</p>
+
+<p>Petr Korda</p>
+
+<p>3</p>
+
+<p>88mph</p>
+
+<p>3750-4284rpm</p>
+
+<p>4017rpm</p>
+
+<p>Michael Chang</p>
+
+<p>10</p>
+
+<p>77mph</p>
+
+<p>3125-4284rpm</p>
+
+<p>3928rpm</p>
+
+<p>Jim Courier</p>
+
+<p>4</p>
+
+<p>91mph</p>
+
+<p>3571-4167rpm</p>
+
+<p>3810rpm</p>
+
+<p>Todd Martin</p>
+
+<p>10</p>
+
+<p>89mph</p>
+
+<p>3000-4284rpm</p>
+
+<p>3370rpm</p>
+
+<p>Spin on Women&#x27;s Serves</p>
+
+<p>On the women&#x27;s side, the overall picture was quite similar to the men. Of the 6 players studied, all but Mary Jo Fernandez averaged more spin on the first serve than on the forehand. Lindsay Davenport was the highest at 2678rpm averaged over 9 first serves, about twice the amount of spin as on her forehand. Venus Williams, known for having the most powerful first serve in women&#x27;s tennis, averaged virtually the same spin rate as Davenport, 2598rpm, but also averaged slightly more velocity--94mph versus Davenport&#x27;s average of 90mph.</p>
+
+<p>Women&#x27;s First Serve</p>
+
+<p>Player:</p>
+
+<p>No. of Serves:</p>
+
+<p>Avg MPH:</p>
+
+<p>RPM Range:</p>
+
+<p>Avg RPM:</p>
+
+<p>Lindsay Davenport</p>
+
+<p>9</p>
+
+<p>90mph</p>
+
+<p>1875-3488rpm</p>
+
+<p>2678rpm</p>
+
+<p>Venus Williams</p>
+
+<p>8</p>
+
+<p>94mph</p>
+
+<p>624-3750rpm</p>
+
+<p>2598rpm</p>
+
+<p>Anna Kournikova</p>
+
+<p>12</p>
+
+<p>91mph</p>
+
+<p>1250-3061rpm</p>
+
+<p>2250rpm</p>
+
+<p>Martina Hingis</p>
+
+<p>5</p>
+
+<p>---</p>
+
+<p>1000-3947rpm</p>
+
+<p>2103rpm</p>
+
+<p>Monica Seles</p>
+
+<p>9</p>
+
+<p>95mph</p>
+
+<p>455-1579rpm</p>
+
+<p>1287rpm</p>
+
+<p>Mary Jo Fernandez</p>
+
+<p>9</p>
+
+<p>86mph</p>
+
+<p>357-1579rpm</p>
+
+<p>601rpm</p>
+
+<p>On the second serve, 5 of the 7 women studied averaged over 3000rpm. Like the men, the second serve is the fastest spinning shot in the women&#x27;s game. Venus Williams recorded the single fastest spinning serve at 4284rpm, averaging over 3600rpm for 8 serves, with an average radar gun reading of 79mph. Martina Hingis was close in terms of spin at an average of 3500rpm, but her second serves had less velocity, averaging 73mph over 7 deliveries.</p>
+
+<p>Women&#x27;s Second Serve</p>
+
+<p>Player:</p>
+
+<p>No. of Serves:</p>
+
+<p>Avg MPH:</p>
+
+<p>RPM Range:</p>
+
+<p>Avg RPM:</p>
+
+<p>Jana Novotna</p>
+
+<p>1</p>
+
+<p>---</p>
+
+<p>3750rpm</p>
+
+<p>2678rpm</p>
+
+<p>Venus Williams</p>
+
+<p>8</p>
+
+<p>79mph</p>
+
+<p>3000-4284rpm</p>
+
+<p>3621rpm</p>
+
+<p>Martina Hingis</p>
+
+<p>7</p>
+
+<p>73mph</p>
+
+<p>3192-3750rpm</p>
+
+<p>3500rpm</p>
+
+<p>Arantxa Sanchez-V.</p>
+
+<p>1</p>
+
+<p>---</p>
+
+<p>3333rpm</p>
+
+<p>3333rpm</p>
+
+<p>Mary Pierce</p>
+
+<p>3</p>
+
+<p>---</p>
+
+<p>3000rpm</p>
+
+<p>3000rpm</p>
+
+<p>Monica Seles</p>
+
+<p>12</p>
+
+<p>77mph</p>
+
+<p>1250-2727pm</p>
+
+<p>2303rpm</p>
+
+<p>Mary Jo Fernandez</p>
+
+<p>5</p>
+
+<p>74mph</p>
+
+<p>882-1250rpm</p>
+
+<p>1059rpm</p>
+
+<p>In Part Two of this article we&#x27;ll look at the rest of the shots in this first ever study: the return of serve, the volley, overhead and the drop shot. This seminal study was the groundwork for additional studies completed by Advanced Tennis researchers. Stay tuned for more of the story.</p>
+
+<p><img alt="Figure from Ball Spin in Pro Tennis – Part 1" src="../../../assets/images/ball-spin-in-pro-tennis-–-part-1__image10.jpeg" style="max-width:100%; height:auto; border-radius:8px; box-shadow: 0 4px 16px rgba(0,0,0,.15); margin: 1.5rem 0;" /></p>
+
+<p>John Yandell is widely acknowledged as one of the leading videographers and students of the modern game of professional tennis. His high speed filming for Advanced Tennis and Tennisplayer have provided new visual resources that have changed the way the game is studied and understood by both players and coaches. He has done personal video analysis for hundreds of high level competitive players, including Justine Henin-Hardenne, Taylor Dent and John McEnroe, among others.</p>
+
+<p>In addition to his role as Editor of Tennisplayer he is the author of the critically acclaimed book Visual Tennis. The John Yandell Tennis School is located in San Francisco, California.</p>
+
+<hr />
+
+<p><em>Source: <a href="https://www.tennisplayer.net/">tennisplayer.net</a> archive — <strong>Ball Spin in Pro Tennis – Part 1.docx</strong> (John Yandell teaching library, 2002-2022). Extracted and rendered as HTML for Tennis Future Lab.</em></p>
+
+                </article>
+              </div><script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+
+        </div>
+
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+
+      </main>
+
+
+      <footer class="md-footer">
+
+
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+
+
+    <div class="md-copyright__highlight">
+      © 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.
+    </div>
+
+
+  </div>
+
+
+  </div>
+</div>
+</footer>
+
+
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+
+        <script src="../../../assets/js/extra.js"></script>
+
+
+  </body>
+</html>
