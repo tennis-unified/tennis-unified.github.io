@@ -208,11 +208,15 @@ def process_topic(topic, chapters_plan):
         prev_link = safe_link(prev_ch["slug"], "&laquo; " + prev_ch["title"]) if prev_ch else ""
         next_link = safe_link(next_ch["slug"], next_ch["title"] + " &raquo;") if next_ch else ""
         chapter_html = body[c_start:c_end].rstrip()
-        # Rewrite image/script paths from ../../assets -> /assets
-        # (absolute-from-site-root works regardless of folder depth on
-        # GitHub Pages, so this is more robust than counting ../ segments).
-        chapter_html = re.sub(r'(\.{2}/){2}assets/', r'/assets/', chapter_html)
-        chapter_html = re.sub(r'(\.{2}/){2}assets/', r'/assets/', chapter_html)  # double-pass: ../../assets/ -> /assets/
+        # Rewrite relative paths so chapter pages (depth 3 from site root)
+        # can still find their CSS/JS/images at the site root:
+        #   ../../assets/  -> /assets/
+        #   ../../vi/      -> /vi/
+        chapter_html = re.sub(r'(href|src)="(\.\./){2}assets/', r'\1="/assets/', chapter_html)
+        chapter_html = re.sub(r'(href|src)="(\.\./){2}vi/', r'\1="/vi/', chapter_html)
+        # Also: rewrite any leftover ../../assets or ../../vi (defensive).
+        chapter_html = re.sub(r'(\.\./){2}assets/', r'/assets/', chapter_html)
+        chapter_html = re.sub(r'(\.\./){2}vi/', r'/vi/', chapter_html)
         page_html = compose_chapter_page(
             head_text, tail_text, chapter_html, ch["title"],
             prev_link, next_link, breadcrumb_label,
