@@ -442,7 +442,8 @@ a, button, .md-nav__link, .md-tabs__link, .page-nav a, .lang-card, .book-card, .
 }
 
 /* PDF Book Viewer — full page width */
-iframe.pdf-viewer {
+iframe.pdf-viewer,
+object.pdf-viewer {
   display: block;
   width: 100% !important;
   max-width: 100% !important;
@@ -524,6 +525,59 @@ iframe.pdf-viewer {
 }
 
 /* ============================================================
+   Mobile Reading Mode: Hide Left & Right Menus & Maximize Text Size
+   ============================================================ */
+@media screen and (max-width: 1024px) {
+  /* Completely hide the Right Menu (TOC / Secondary Sidebar) */
+  .md-sidebar--secondary,
+  [data-md-component="toc"],
+  [data-md-component="sidebar"][data-md-type="toc"],
+  .md-nav--secondary {
+    display: none !important;
+    width: 0 !important;
+    max-width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  /* Keep Left Menu strictly as a slide-out overlay drawer (0px in-flow width) */
+  .md-main__inner {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    box-sizing: border-box !important;
+  }
+
+  .md-sidebar--primary:not([data-md-state="open"]) {
+    width: 0 !important;
+    max-width: 0 !important;
+  }
+
+  .md-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0 !important;
+  }
+
+  .md-content__inner {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 1.2rem 0 3rem !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* ============================================================
    Mobile & Android Optimization — 20px Base Font Size
    ============================================================ */
 @media screen and (max-width: 768px) {
@@ -545,8 +599,8 @@ iframe.pdf-viewer {
   .md-grid,
   .md-header__inner,
   .md-tabs__inner {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
   }
   .md-nav__link {
     font-size: 18px !important;
@@ -590,7 +644,8 @@ iframe.pdf-viewer {
   .md-typeset table:not([class]) td {
     font-size: 18px !important;
   }
-  iframe.pdf-viewer {
+  iframe.pdf-viewer,
+  object.pdf-viewer {
     height: min(75vh, 900px) !important;
     min-height: 600px !important;
   }
