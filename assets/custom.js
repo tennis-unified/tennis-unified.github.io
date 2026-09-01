@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const path = window.location.pathname;
     const segments = path.split('/').filter(s => s && s !== 'tennisknowledgebase');
     
-    if (segments.length === 0) return; // Home page, no breadcrumbs needed
-    
     // Create breadcrumbs container
     const container = document.createElement('div');
     container.id = 'breadcrumbs-container';
@@ -14,53 +12,68 @@ document.addEventListener('DOMContentLoaded', function() {
     nav.setAttribute('aria-label', 'breadcrumb');
     
     const ol = document.createElement('ol');
-    ol.style.cssText = 'list-style: none; padding: 0.75rem 1rem; margin: 0; background: #f8f9fa; border-radius: 4px; border: 1px solid #e0e0e0; display: flex; flex-wrap: wrap; gap: 0.5rem;';
+    ol.className = 'tu-breadcrumbs';
     
     // Home link
     const homeLi = document.createElement('li');
-    homeLi.style.display = 'inline';
-    homeLi.innerHTML = '<a href="/tennisknowledgebase/" style="color: #306998; text-decoration: none; font-weight: 500;">🏠 Home</a>';
+    homeLi.className = 'tu-breadcrumbs__item';
+    if (segments.length === 0) {
+        // On home page - show as current
+        const homeSpan = document.createElement('span');
+        homeSpan.className = 'tu-breadcrumbs__current';
+        homeSpan.textContent = '🏠 Home';
+        homeLi.appendChild(homeSpan);
+    } else {
+        const homeLink = document.createElement('a');
+        homeLink.href = '/';
+        homeLink.className = 'tu-breadcrumbs__link';
+        homeLink.textContent = '🏠 Home';
+        homeLi.appendChild(homeLink);
+    }
     ol.appendChild(homeLi);
     
     // Build breadcrumb trail from path segments
-    let buildPath = '';
-    for (let i = 0; i < segments.length - 1; i++) {
-        const segment = decodeURIComponent(segments[i]);
-        buildPath += segment + '/';
+    if (segments.length > 0) {
+        let buildPath = '';
+        for (let i = 0; i < segments.length - 1; i++) {
+            const segment = decodeURIComponent(segments[i]);
+            buildPath += segment + '/';
+            
+            const li = document.createElement('li');
+            li.className = 'tu-breadcrumbs__item';
+            
+            const separator = document.createElement('span');
+            separator.className = 'tu-breadcrumbs__separator';
+            separator.textContent = '›';
+            li.appendChild(separator);
+            
+            const link = document.createElement('a');
+            link.href = '/' + buildPath;
+            link.className = 'tu-breadcrumbs__link';
+            link.textContent = segment;
+            li.appendChild(link);
+            
+            ol.appendChild(li);
+        }
         
-        const li = document.createElement('li');
-        li.style.display = 'inline';
+        // Current page (last segment, not a link)
+        const currentPage = decodeURIComponent(segments[segments.length - 1]) || 'Home';
+        const currentLi = document.createElement('li');
+        currentLi.className = 'tu-breadcrumbs__item';
         
         const separator = document.createElement('span');
-        separator.style.cssText = 'color: #6c757d; margin: 0 0.25rem;';
+        separator.className = 'tu-breadcrumbs__separator';
         separator.textContent = '›';
-        li.appendChild(separator);
+        currentLi.appendChild(separator);
         
-        const link = document.createElement('a');
-        link.href = '/tennisknowledgebase/' + buildPath;
-        link.style.cssText = 'color: #306998; text-decoration: none; font-weight: 500;';
-        link.textContent = segment;
-        li.appendChild(link);
+        const currentSpan = document.createElement('span');
+        currentSpan.className = 'tu-breadcrumbs__current';
+        currentSpan.textContent = currentPage;
+        currentLi.appendChild(currentSpan);
         
-        ol.appendChild(li);
+        ol.appendChild(currentLi);
     }
     
-    // Current page (last segment, not a link)
-    const currentPage = decodeURIComponent(segments[segments.length - 1]) || 'Home';
-    const currentLi = document.createElement('li');
-    currentLi.style.display = 'inline';
-    
-    const separator = document.createElement('span');
-    separator.style.cssText = 'color: #6c757d; margin: 0 0.25rem;';
-    separator.textContent = '›';
-    currentLi.appendChild(separator);
-    
-    const currentSpan = document.createElement('span');
-    currentSpan.style.cssText = 'color: #6c757d;';
-    currentSpan.textContent = currentPage;
-    currentLi.appendChild(currentSpan);
-    
-    ol.appendChild(currentLi);
     nav.appendChild(ol);
     container.appendChild(nav);
     
@@ -68,5 +81,51 @@ document.addEventListener('DOMContentLoaded', function() {
     const mainContent = document.querySelector('main') || document.querySelector('[role="main"]');
     if (mainContent) {
         mainContent.parentElement.insertBefore(container, mainContent);
+    }
+});
+
+// Footer Prev/Next navigation enhancement
+document.addEventListener('DOMContentLoaded', function() {
+    const footer = document.querySelector('.md-footer__inner.md-grid');
+    if (!footer) return;
+    
+    // Check if we have both prev and next links
+    const prevLink = document.querySelector('.md-footer__link--prev');
+    const nextLink = document.querySelector('.md-footer__link--next');
+    
+    if (prevLink || nextLink) {
+        // Create our own styled footer nav
+        const navContainer = document.createElement('div');
+        navContainer.className = 'tu-footer-nav';
+        
+        const navList = document.createElement('ul');
+        navList.className = 'tu-footer-nav__list';
+        
+        if (prevLink) {
+            const prevLi = document.createElement('li');
+            prevLi.className = 'tu-footer-nav__item tu-footer-nav__item--prev';
+            const prevLinkClone = prevLink.cloneNode(true);
+            // Clean up classes
+            prevLinkClone.className = 'tu-footer-nav__link';
+            prevLi.appendChild(prevLinkClone);
+            navList.appendChild(prevLi);
+        }
+        
+        if (nextLink) {
+            const nextLi = document.createElement('li');
+            nextLi.className = 'tu-footer-nav__item tu-footer-nav__item--next';
+            const nextLinkClone = nextLink.cloneNode(true);
+            nextLinkClone.className = 'tu-footer-nav__link';
+            nextLi.appendChild(nextLinkClone);
+            navList.appendChild(nextLi);
+        }
+        
+        navContainer.appendChild(navList);
+        
+        // Insert before the copyright section
+        const footerMeta = document.querySelector('.md-footer-meta');
+        if (footerMeta) {
+            footerMeta.parentElement.insertBefore(navContainer, footerMeta);
+        }
     }
 });
