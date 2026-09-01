@@ -1,0 +1,436 @@
+/* =========================================================================
+   Accessibility Gadget — Tennis Unified
+   Pure CSS, no external dependencies. Toggled via classes on <html> by
+   a11y-gadget.js. Persists user choices in localStorage.
+   ========================================================================= */
+
+/* === Gadget panel (fixed bottom-right) =================================== */
+
+#a11y-gadget {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 99999;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.35;
+  color: #222;
+}
+
+#a11y-gadget *,
+#a11y-gadget *::before,
+#a11y-gadget *::after {
+  box-sizing: border-box;
+}
+
+/* Toggle button (always visible) */
+#a11y-gadget .a11y-toggle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+#a11y-gadget .a11y-toggle:hover,
+#a11y-gadget .a11y-toggle:focus-visible {
+  background: #1557b0;
+  outline: 3px solid #ffd400;
+  outline-offset: 2px;
+  transform: scale(1.05);
+}
+
+#a11y-gadget .a11y-toggle:focus-visible {
+  outline: 3px solid #ffd400;
+}
+
+/* The accessibility icon (simple SVG-ish figure, ASCII fallback) */
+#a11y-gadget .a11y-toggle::before {
+  content: "\267F"; /* ♿ wheelchair symbol */
+  font-size: 24px;
+  line-height: 1;
+}
+
+/* Panel that opens from the button */
+#a11y-gadget .a11y-panel {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  width: 320px;
+  max-width: calc(100vw - 36px);
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.22);
+  padding: 16px;
+  display: none;
+  /* High contrast default border */
+}
+
+#a11y-gadget.is-open .a11y-panel {
+  display: block;
+}
+
+#a11y-gadget .a11y-panel h2 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a73e8;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#a11y-gadget .a11y-panel h2::before {
+  content: "\267F";
+}
+
+#a11y-gadget .a11y-panel p.a11y-intro {
+  margin: 0 0 12px;
+  font-size: 12px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Control rows */
+#a11y-gadget .a11y-row {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+#a11y-gadget .a11y-row:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#a11y-gadget .a11y-row .a11y-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+#a11y-gadget .a11y-row .a11y-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+#a11y-gadget .a11y-btn {
+  background: #f1f3f4;
+  border: 1px solid #dadce0;
+  color: #1a73e8;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+  min-width: 36px;
+  transition: background 0.1s ease;
+}
+
+#a11y-gadget .a11y-btn:hover {
+  background: #e8eaed;
+}
+
+#a11y-gadget .a11y-btn:focus-visible {
+  outline: 2px solid #1a73e8;
+  outline-offset: 2px;
+}
+
+#a11y-gadget .a11y-btn[aria-pressed="true"] {
+  background: #1a73e8;
+  color: #ffffff;
+  border-color: #1a73e8;
+}
+
+/* Toggle (checkbox-style) row */
+#a11y-gadget .a11y-toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+#a11y-gadget .a11y-switch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+#a11y-gadget .a11y-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+#a11y-gadget .a11y-switch .a11y-slider {
+  position: absolute;
+  inset: 0;
+  background: #ccc;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#a11y-gadget .a11y-switch .a11y-slider::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 3px;
+  top: 3px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+#a11y-gadget .a11y-switch input:checked + .a11y-slider {
+  background: #1a73e8;
+}
+
+#a11y-gadget .a11y-switch input:checked + .a11y-slider::before {
+  transform: translateX(16px);
+}
+
+#a11y-gadget .a11y-switch input:focus-visible + .a11y-slider {
+  outline: 3px solid #ffd400;
+  outline-offset: 2px;
+}
+
+/* Reset button */
+#a11y-gadget .a11y-reset {
+  width: 100%;
+  margin-top: 6px;
+  padding: 8px;
+  background: #fee;
+  border: 1px solid #fcc;
+  color: #c00;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+#a11y-gadget .a11y-reset:hover {
+  background: #fdd;
+}
+
+#a11y-gadget .a11y-reset:focus-visible {
+  outline: 2px solid #c00;
+  outline-offset: 2px;
+}
+
+/* Skip-to-content link (also part of gadget) */
+.a11y-skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 8px;
+  z-index: 100000;
+  padding: 8px 14px;
+  background: #1a73e8;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.a11y-skip-link:focus {
+  left: 8px;
+}
+
+/* === State-driven body classes (applied to <html> by JS) ================= */
+
+/* --- Font size --------------------------------------------------------- */
+
+html.a11y-fontsize-1 { font-size: 87.5%; }
+html.a11y-fontsize-2 { font-size: 100%; }
+html.a11y-fontsize-3 { font-size: 112.5%; }
+html.a11y-fontsize-4 { font-size: 125%; }
+
+/* --- High contrast ----------------------------------------------------- */
+
+html.a11y-contrast-high {
+  background: #000000 !important;
+  color: #ffff00 !important;
+}
+
+html.a11y-contrast-high body,
+html.a11y-contrast-high .md-content,
+html.a11y-contrast-high .md-typeset,
+html.a11y-contrast-high .md-typeset p,
+html.a11y-contrast-high .md-typeset li,
+html.a11y-contrast-high .md-typeset td,
+html.a11y-contrast-high .md-typeset h1,
+html.a11y-contrast-high .md-typeset h2,
+html.a11y-contrast-high .md-typeset h3,
+html.a11y-contrast-high .md-typeset h4,
+html.a11y-contrast-high .md-typeset h5,
+html.a11y-contrast-high .md-typeset h6 {
+  background: #000000 !important;
+  color: #ffff00 !important;
+  border-color: #ffff00 !important;
+}
+
+html.a11y-contrast-high a,
+html.a11y-contrast-high a:visited,
+html.a11y-contrast-high a:hover {
+  color: #00ffff !important;
+  text-decoration: underline !important;
+}
+
+html.a11y-contrast-high img,
+html.a11y-contrast-high svg {
+  filter: grayscale(1) contrast(1.4) brightness(1.1);
+}
+
+/* --- Dark/inverted contrast ------------------------------------------- */
+
+html.a11y-contrast-dark {
+  background: #111111 !important;
+  color: #e8e8e8 !important;
+}
+
+html.a11y-contrast-dark body,
+html.a11y-contrast-dark .md-content,
+html.a11y-contrast-dark .md-typeset,
+html.a11y-contrast-dark .md-typeset p,
+html.a11y-contrast-dark .md-typeset li,
+html.a11y-contrast-dark .md-typeset td,
+html.a11y-contrast-dark .md-typeset h1,
+html.a11y-contrast-dark .md-typeset h2,
+html.a11y-contrast-dark .md-typeset h3,
+html.a11y-contrast-dark .md-typeset h4,
+html.a11y-contrast-dark .md-typeset h5,
+html.a11y-contrast-dark .md-typeset h6 {
+  background: #1a1a1a !important;
+  color: #e8e8e8 !important;
+}
+
+html.a11y-contrast-dark a,
+html.a11y-contrast-dark a:visited {
+  color: #6cb6ff !important;
+}
+
+html.a11y-contrast-dark img,
+html.a11y-contrast-dark svg {
+  filter: brightness(0.85) contrast(1.1);
+}
+
+/* --- Sepia contrast --------------------------------------------------- */
+
+html.a11y-contrast-sepia {
+  background: #f4ecd8 !important;
+  color: #5b4636 !important;
+}
+
+html.a11y-contrast-sepia body,
+html.a11y-contrast-sepia .md-content,
+html.a11y-contrast-sepia .md-typeset,
+html.a11y-contrast-sepia .md-typeset p,
+html.a11y-contrast-sepia .md-typeset li,
+html.a11y-contrast-sepia .md-typeset td,
+html.a11y-contrast-sepia .md-typeset h1,
+html.a11y-contrast-sepia .md-typeset h2,
+html.a11y-contrast-sepia .md-typeset h3,
+html.a11y-contrast-sepia .md-typeset h4,
+html.a11y-contrast-sepia .md-typeset h5,
+html.a11y-contrast-sepia .md-typeset h6 {
+  background: #faf3e0 !important;
+  color: #5b4636 !important;
+}
+
+html.a11y-contrast-sepia a,
+html.a11y-contrast-sepia a:visited {
+  color: #8b4513 !important;
+}
+
+/* --- Underline links --------------------------------------------------- */
+
+html.a11y-underline-links a,
+html.a11y-underline-links .md-typeset a {
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
+
+/* --- Highlight headings ------------------------------------------------ */
+
+html.a11y-highlight-headings .md-typeset h1,
+html.a11y-highlight-headings .md-typeset h2,
+html.a11y-highlight-headings .md-typeset h3,
+html.a11y-highlight-headings .md-typeset h4,
+html.a11y-highlight-headings .md-typeset h5,
+html.a11y-highlight-headings .md-typeset h6,
+html.a11y-highlight-headings h1,
+html.a11y-highlight-headings h2,
+html.a11y-highlight-headings h3,
+html.a11y-highlight-headings h4,
+html.a11y-highlight-headings h5,
+html.a11y-highlight-headings h6 {
+  background: rgba(255, 235, 59, 0.35) !important;
+  padding: 2px 6px !important;
+  border-left: 4px solid #ff9800 !important;
+  border-radius: 2px;
+}
+
+/* --- Reduced motion --------------------------------------------------- */
+
+@media (prefers-reduced-motion: no-preference) {
+  /* intentionally empty — this media query is used to detect motion support */
+}
+
+html.a11y-reduce-motion *,
+html.a11y-reduce-motion *::before,
+html.a11y-reduce-motion *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* --- Mobile tweaks ---------------------------------------------------- */
+
+@media (max-width: 480px) {
+  #a11y-gadget {
+    right: 10px;
+    bottom: 10px;
+  }
+  #a11y-gadget .a11y-panel {
+    width: calc(100vw - 60px);
+    bottom: 56px;
+    padding: 12px;
+  }
+}
+
+/* --- High contrast mode: panel border becomes thicker ---------------- */
+
+html.a11y-contrast-high #a11y-gadget .a11y-panel,
+html.a11y-contrast-dark #a11y-gadget .a11y-panel,
+html.a11y-contrast-sepia #a11y-gadget .a11y-panel {
+  border-width: 3px;
+}
+
+html.a11y-contrast-high #a11y-gadget .a11y-btn,
+html.a11y-contrast-dark #a11y-gadget .a11y-btn,
+html.a11y-contrast-sepia #a11y-gadget .a11y-btn {
+  border-width: 2px;
+  font-weight: 700;
+}
