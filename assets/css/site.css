@@ -637,3 +637,87 @@ svg {
   height: 1em !important;
   vertical-align: -0.15em;
 }
+
+
+/* === Video players (LARGE SIZE) ===================================== */
+/* 16:9 aspect ratio, max 100% width, large responsive height */
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  background: #000;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.video-container iframe,
+.video-container video,
+.video-container embed {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  border: 0;
+  display: block;
+}
+
+/* Bare iframes outside video-container (fallback) */
+.md-content iframe,
+.tu-main iframe,
+main iframe {
+  display: block;
+  width: 100% !important;
+  max-width: 1200px !important;
+  height: 65vh !important;
+  min-height: 480px !important;
+  max-height: 900px !important;
+  margin: 1.5rem auto !important;
+  border: 0;
+  border-radius: 12px;
+  background: #000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  aspect-ratio: 16 / 9;
+}
+
+/* YouTube and Vimeo iframes - extra explicit sizing */
+iframe[src*="youtube"],
+iframe[src*="youtube-nocookie"],
+iframe[src*="vimeo"],
+iframe.tu-video-iframe {
+  display: block !important;
+  width: 100% !important;
+  max-width: 1200px !important;
+  min-height: 540px !important;
+  height: min(70vh, 800px) !important;
+  max-height: 800px !important;
+  margin: 1.5rem auto !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: #000 !important;
+  aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 768px) {
+  iframe[src*="youtube"],
+  iframe[src*="youtube-nocookie"],
+  iframe[src*="vimeo"],
+  .video-container,
+  .md-content iframe,
+  .tu-main iframe,
+  main iframe,
+  iframe.tu-video-iframe {
+    min-height: 260px !important;
+    height: 50vh !important;
+    max-height: 500px !important;
+    border-radius: 8px !important;
+    margin: 1rem auto !important;
+  }
+}
