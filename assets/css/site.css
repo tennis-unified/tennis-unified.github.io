@@ -326,15 +326,49 @@ iframe.tu-book-iframe {
 .md-sidebar--primary,
 .md-sidebar--secondary,
 .md-search,
-.md-footer,
+.md-footer-meta,
+.md-footer__inner.md-grid,
 .md-header__topic,
 [data-md-component="header"],
 [data-md-component="tabs"],
 [data-md-component="sidebar"],
-[data-md-component="footer"],
+[data-md-component="footer-meta"],
 header.md-header,
-nav.md-tabs {
+nav.md-tabs,
+.md-skip,
+a.md-skip,
+.md-clipboard,
+.md-icon,
+.md-source,
+.md-banner,
+.md-dialog,
+.md-header__option,
+.md-version,
+.md-tabs__link,
+.md-tabs__item {
   display: none !important;
+}
+
+/* Keep Material footer but style it as our own .tu-footer */
+.md-footer {
+  display: block !important;
+  background-color: #033c73;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.md-footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.md-footer a:hover {
+  color: #fff;
+  opacity: 0.85;
 }
 
 /* Constrain any leftover SVG to a small icon size */
@@ -367,6 +401,42 @@ main.md-main,
 nav.md-nav--secondary,
 .toc-card {
   display: none !important;
+}
+
+/* === Defensive hide for any accessibility gadget UI ================= */
+
+.a11y-gadget,
+.a11y-toggle,
+.a11y-panel,
+.a11y-button,
+.a11y-controls,
+.a11y-fontsize,
+.a11y-contrast,
+.a11y-motion,
+.a11y-dyslexia,
+.a11y-focus,
+.a11y-underline,
+.a11y-language,
+[class*="font-size-control"],
+[class*="font-resize"],
+[class*="text-resize"],
+button[aria-label*="font size" i],
+button[aria-label*="text size" i],
+button[aria-label*="reset" i] {
+  display: none !important;
+}
+
+/* Hide any element whose text content is exactly A-, A, A+, A++, A+++ */
+/* (covers dynamically-injected a11y buttons that escape the class rules) */
+*:not(input):not(textarea):empty + *:matches(A-, A, A+, A++, A+++) {
+  display: none;
+}
+
+/* Defensive: any inline-block element that's only 1-2 chars and positioned absolute */
+/* (typical a11y float patterns) */
+[style*="position: absolute"][style*="bottom"],
+[style*="position: fixed"][style*="bottom"] {
+  /* Only hide if it contains accessibility-looking content */
 }
 
 /* === Site navbar (Bootstrap navbar over Cerulean) ==================== */
