@@ -151,113 +151,6 @@ table th, table td { padding: 0.75em 1em; border: 1px solid var(--border); text-
 table th { background: var(--card); font-weight: 600; }
 table tr:nth-child(even) td { background: rgba(0, 0, 0, 0.02); }
 
-/* === Top navigation (taichinow-style topnav) ========================== */
-
-.tu-navbar {
-  display: block !important;
-  background: var(--card);
-  border-bottom: 1px solid var(--border);
-  padding: 0 1.25rem;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: var(--shadow);
-  overflow-x: auto;
-}
-
-.tu-navbar__inner {
-  max-width: 1400px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 52px;
-}
-
-.tu-navbar__brand {
-  color: var(--accent-dark) !important;
-  font-weight: 700;
-  font-size: 1.2rem;
-  text-decoration: none;
-  padding: 0.5rem 0.85rem;
-  border-radius: var(--radius-sm);
-  white-space: nowrap;
-  letter-spacing: 0.005em;
-  flex-shrink: 0;
-}
-.tu-navbar__brand:hover {
-  background: var(--bg);
-  color: var(--accent) !important;
-  text-decoration: none;
-}
-
-.tu-navbar__list {
-  list-style: none;
-  display: flex;
-  gap: 4px;
-  margin: 0;
-  padding: 4px 0;
-  align-items: center;
-  overflow-x: auto;
-  flex: 1;
-}
-
-.tu-navbar__item { margin: 0; flex-shrink: 0; }
-
-.tu-navbar__link {
-  color: var(--muted) !important;
-  font-weight: 500;
-  padding: 12px 14px;
-  font-size: 0.88rem;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.15s ease;
-  white-space: nowrap;
-  border-bottom: 3px solid transparent;
-}
-.tu-navbar__link:hover,
-.tu-navbar__link:focus {
-  color: var(--accent) !important;
-  border-bottom-color: var(--accent);
-  text-decoration: none;
-}
-.tu-navbar__link.active {
-  color: var(--accent-dark) !important;
-  border-bottom-color: var(--accent-dark);
-}
-
-/* Language toggle as 11th nav item */
-.tu-navbar__lang {
-  margin-left: 0.75rem;
-  padding: 0.4rem 0.9rem;
-  background: var(--accent);
-  color: #fff !important;
-  border: none;
-  border-radius: var(--radius-sm);
-  font-weight: 600;
-  font-size: 0.85rem;
-  text-decoration: none;
-  letter-spacing: 0.06em;
-  transition: background 0.15s ease;
-  white-space: nowrap;
-  cursor: pointer;
-  flex-shrink: 0;
-}
-.tu-navbar__lang:hover, .tu-navbar__lang:focus {
-  background: var(--accent-dark);
-  color: #fff !important;
-  text-decoration: none;
-}
-
-@media (max-width: 992px) {
-  .tu-navbar { padding: 0 0.5rem; }
-  .tu-navbar__inner { flex-wrap: wrap; min-height: auto; padding: 0.5rem 0; }
-  .tu-navbar__brand { flex: 0 0 auto; }
-  .tu-navbar__list { flex: 1 1 100%; justify-content: center; padding: 0.25rem 0; }
-  .tu-navbar__link { padding: 8px 10px; font-size: 0.85rem; }
-  .tu-navbar__lang { margin: 0.5rem 0 0; align-self: center; }
-}
-
 /* === Breadcrumb (top of chapter pages) ============================= */
 
 .tu-breadcrumb {
@@ -267,6 +160,7 @@ table tr:nth-child(even) td { background: rgba(0, 0, 0, 0.02); }
   font-size: 0.9rem;
   color: var(--muted);
 }
+
 .tu-breadcrumb__list {
   list-style: none;
   display: flex;
@@ -414,6 +308,78 @@ table tr:nth-child(even) td { background: rgba(0, 0, 0, 0.02); }
   background: var(--accent-light);
   text-decoration: none;
 }
+
+
+
+/* === Material MkDocs Chrome Removal ======================================= */
+.md-logo { display: none !important; }
+.md-skip { display: none !important; }
+.md-clipboard { display: none !important; }
+
+/* === Top navigation (taichinow-style flattened) ========================== */
+
+.tu-topnav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  padding: 0.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: var(--shadow);
+}
+
+.tu-nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.4rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transition: transform 0.2s ease, background 0.2s ease;
+  color: var(--muted);
+}
+
+.tu-nav-item:hover, .tu-nav-item:focus {
+  transform: scale(1.15);
+  background: var(--accent-light);
+  color: var(--accent-dark);
+}
+
+.tu-nav-item.active {
+  color: var(--accent);
+  background: var(--accent-light);
+}
+
+.tu-nav-darkmode {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transition: transform 0.2s ease, background 0.2s ease;
+  color: var(--muted);
+}
+
+.tu-nav-darkmode:hover {
+  background: var(--accent-light);
+  color: var(--accent-dark);
+}
+
+.tu-nav-darkmode.active {
+  color: var(--accent);
+  background: var(--accent-light);
+}
+
+/* Hide old dropdown navbar */
+.tu-navbar { display: none !important; }
 
 /* === Footer ============================================================= */
 
