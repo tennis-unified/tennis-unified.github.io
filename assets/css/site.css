@@ -546,21 +546,29 @@ button[aria-label*="reset" i] {
 .tp-video-embed video,
 .tp-video-embed iframe,
 .video-container {
+  position: relative;
   width: 100% !important;
-  max-width: 100%;
-  min-width: 600px;
-  height: auto;
-  border-radius: 8px;
+  max-width: 1200px;
+  aspect-ratio: 16 / 9;
+  margin: 1.5rem auto;
+  overflow: hidden;
+  background: #000;
+  border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
-.tp-video-embed video {
-  aspect-ratio: 16/9;
-  max-height: 720px;
-}
-
-.tp-video-embed iframe {
-  min-height: 450px;
+.tp-video-embed iframe,
+.tp-video-embed video,
+.video-container iframe,
+.video-container video,
+.video-container embed {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;
+  display: block;
 }
 
 /* Responsive: scale down on small screens */
@@ -568,8 +576,8 @@ button[aria-label*="reset" i] {
   .tp-video-embed video,
   .tp-video-embed iframe,
   .video-container {
-    min-width: 100%;
-    min-height: 300px;
+    max-width: 100%;
+    border-radius: 8px;
   }
 }
 
@@ -741,9 +749,8 @@ svg {
   position: relative;
   width: 100%;
   max-width: 1200px;
+  aspect-ratio: 16 / 9;
   margin: 1.5rem auto;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
   overflow: hidden;
   background: #000;
   border-radius: 12px;
@@ -758,8 +765,6 @@ svg {
   left: 0;
   width: 100% !important;
   height: 100% !important;
-  max-width: 100% !important;
-  max-height: 100% !important;
   border: 0;
   display: block;
 }
@@ -782,7 +787,7 @@ main iframe {
   aspect-ratio: 16 / 9;
 }
 
-/* YouTube and Vimeo iframes - extra explicit sizing */
+/* YouTube and Vimeo iframes - proportional 16:9 sizing */
 iframe[src*="youtube"],
 iframe[src*="youtube-nocookie"],
 iframe[src*="vimeo"],
@@ -790,14 +795,12 @@ iframe.tu-video-iframe {
   display: block !important;
   width: 100% !important;
   max-width: 1200px !important;
-  min-height: 540px !important;
-  height: min(70vh, 800px) !important;
-  max-height: 800px !important;
+  aspect-ratio: 16 / 9 !important;
+  height: auto !important;
   margin: 1.5rem auto !important;
   border: 0 !important;
   border-radius: 12px !important;
   background: #000 !important;
-  aspect-ratio: 16 / 9;
 }
 
 @media (max-width: 768px) {
@@ -809,9 +812,6 @@ iframe.tu-video-iframe {
   .tu-main iframe,
   main iframe,
   iframe.tu-video-iframe {
-    min-height: 260px !important;
-    height: 50vh !important;
-    max-height: 500px !important;
     border-radius: 8px !important;
     margin: 1rem auto !important;
   }
