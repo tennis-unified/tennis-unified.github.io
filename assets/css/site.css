@@ -697,13 +697,13 @@ button[aria-label*="reset" i] {
 .video-container video,
 .video-container embed {
   position: absolute !important;
-  top: 0;
-  left: 0;
+  top: 0 !important;
+  left: 0 !important;
   width: 100% !important;
   height: 100% !important;
-  border: 0;
-  display: block;
-  object-fit: contain;
+  border: 0 !important;
+  display: block !important;
+  object-fit: contain !important;
 }
 
 /* Responsive: scale down on small screens */
@@ -929,6 +929,13 @@ main iframe {
   aspect-ratio: 16 / 9;
 }
 
+/* Iframes inside video-container: let the container handle aspect ratio */
+.video-container iframe,
+.video-container video,
+.video-container embed {
+  aspect-ratio: auto !important;
+}
+
 /* YouTube and Vimeo iframes - proportional 16:9 sizing */
 iframe[src*="youtube"],
 iframe[src*="youtube-nocookie"],
@@ -943,6 +950,19 @@ iframe.tu-video-iframe {
   border: 0 !important;
   border-radius: 12px !important;
   background: #000 !important;
+}
+
+/* Iframes inside video-container: let the container handle aspect ratio (override above) */
+.video-container iframe[src*="youtube"],
+.video-container iframe[src*="youtube-nocookie"],
+.video-container iframe[src*="vimeo"],
+.video-container iframe {
+  aspect-ratio: auto !important;
+  height: 100% !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  margin: 0 !important;
 }
 
 @media (max-width: 768px) {
