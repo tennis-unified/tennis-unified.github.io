@@ -1,9 +1,12 @@
 /* =========================================================================
-   Tennis Unified — Dark Mode Toggle
-   - Reads saved preference from localStorage
-   - Falls back to prefers-color-scheme: dark for first-time visitors
-   - Toggles data-theme on <html> + data-md-color-scheme on <body>
-   - Updates button label/emoji to reflect current state
+   Tennis Unified & TNKBGAP — Universal Dark Mode Toggle
+   - Synchronizes:
+     1. documentElement[data-theme="dark"]
+     2. body[data-md-color-scheme="slate" | "default"]
+     3. .tu-nav-darkmode buttons (☀️ Light Mode / 🌙 Dark Mode)
+     4. MkDocs Material header palette toggle inputs & labels
+     5. localStorage 'tu-darkmode'
+     6. prefers-color-scheme media query
    ========================================================================= */
 
 (function () {
@@ -15,7 +18,7 @@
     try {
       var saved = localStorage.getItem(STORAGE_KEY);
       if (saved === 'dark' || saved === 'light') return saved;
-    } catch (e) { /* localStorage may be blocked */ }
+    } catch (e) {}
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       return 'dark';
     }
@@ -29,57 +32,105 @@
     } else {
       html.removeAttribute('data-theme');
     }
-    // Material's color scheme attribute is set on <body> after DOM is ready.
+
     var body = document.body;
     if (body) {
       body.setAttribute('data-md-color-scheme', theme === 'dark' ? 'slate' : 'default');
     }
+
+    syncMaterialPalette(theme);
+  }
+
+  function syncMaterialPalette(theme) {
+    var p0 = document.getElementById('__palette_0'); // light input
+    var p1 = document.getElementById('__palette_1'); // dark input
+    if (p0 && p1) {
+      if (theme === 'dark') {
+        p1.checked = true;
+        p0.checked = false;
+      } else {
+        p0.checked = true;
+        p1.checked = false;
+      }
+    }
+    var l0 = document.querySelector('label[for="__palette_0"]'); // Switch to light
+    var l1 = document.querySelector('label[for="__palette_1"]'); // Switch to dark
+    if (l0 && l1) {
+      if (theme === 'dark') {
+        l0.removeAttribute('hidden');
+        l0.style.display = 'inline-block';
+        l1.setAttribute('hidden', '');
+        l1.style.display = 'none';
+      } else {
+        l1.removeAttribute('hidden');
+        l1.style.display = 'inline-block';
+        l0.setAttribute('hidden', '');
+        l0.style.display = 'none';
+      }
+    }
   }
 
   function updateButton(theme) {
-    var btn = document.querySelector('.tu-nav-darkmode');
-    if (!btn) return;
-    var emoji = btn.querySelector('.tu-nav-emoji');
-    var text = btn.querySelector('.tu-nav-text');
-    if (theme === 'dark') {
-      btn.classList.add('active');
-      btn.setAttribute('aria-pressed', 'true');
-      btn.setAttribute('title', 'Light Mode');
-      if (emoji) emoji.textContent = '☀️';
-      if (text) text.textContent = 'Light Mode';
-    } else {
-      btn.classList.remove('active');
-      btn.setAttribute('aria-pressed', 'false');
-      btn.setAttribute('title', 'Dark Mode');
-      if (emoji) emoji.textContent = '🌙';
-      if (text) text.textContent = 'Dark Mode';
-    }
+    var btns = document.querySelectorAll('.tu-nav-darkmode');
+    btns.forEach(function (btn) {
+      var emoji = btn.querySelector('.tu-nav-emoji');
+      var text = btn.querySelector('.tu-nav-text');
+      if (theme === 'dark') {
+        btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
+        btn.setAttribute('title', 'Light Mode');
+        if (emoji) emoji.textContent = '☀️';
+        if (text) text.textContent = 'Light Mode';
+      } else {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-pressed', 'false');
+        btn.setAttribute('title', 'Dark Mode');
+        if (emoji) emoji.textContent = '🌙';
+        if (text) text.textContent = 'Dark Mode';
+      }
+    });
   }
 
-  // PRE-PAINT: this runs immediately when the script loads. If the script
-  // is placed in <head> BEFORE the <link rel="stylesheet"> tags, this
-  // sets data-theme before any body content paints, preventing flash.
+  // PRE-PAINT: set data-theme immediately on script load to prevent flash
   var initialTheme = getInitialTheme();
   applyTheme(initialTheme);
 
-  // Click handler + button state — runs after DOM is parsed so the button exists.
+  function toggleTheme() {
+    var current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+    var next = current === 'dark' ? 'light' : 'dark';
+    try { localStorage.setItem(STORAGE_KEY, next); } catch (e) {}
+    applyTheme(next);
+    updateButton(next);
+  }
+
   function init() {
-    // Re-apply on body now that it exists (handles Material's data-md-color-scheme)
     applyTheme(initialTheme);
     updateButton(initialTheme);
 
-    var btn = document.querySelector('.tu-nav-darkmode');
-    if (btn) {
-      btn.addEventListener('click', function () {
-        var current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
-        var next = current === 'dark' ? 'light' : 'dark';
-        try { localStorage.setItem(STORAGE_KEY, next); } catch (e) { /* ignore */ }
-        applyTheme(next);
-        updateButton(next);
-      });
-    }
+    // Event delegation for .tu-nav-darkmode click
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest('.tu-nav-darkmode');
+      if (btn) {
+        e.preventDefault();
+        toggleTheme();
+      }
+    });
 
-    // Track system preference changes for users who haven't picked manually
+    // Sync with Material palette icon clicks
+    document.addEventListener('click', function (e) {
+      var lbl = e.target.closest('label[for^="__palette_"]');
+      if (lbl) {
+        setTimeout(function () {
+          var p1 = document.getElementById('__palette_1');
+          var next = (p1 && p1.checked) ? 'dark' : 'light';
+          try { localStorage.setItem(STORAGE_KEY, next); } catch (err) {}
+          applyTheme(next);
+          updateButton(next);
+        }, 20);
+      }
+    });
+
+    // Track system preference changes
     if (window.matchMedia) {
       var mq = window.matchMedia('(prefers-color-scheme: dark)');
       var mqHandler = function (e) {
@@ -92,7 +143,7 @@
         }
       };
       if (mq.addEventListener) mq.addEventListener('change', mqHandler);
-      else if (mq.addListener) mq.addListener(mqHandler); // older Safari
+      else if (mq.addListener) mq.addListener(mqHandler);
     }
   }
 
