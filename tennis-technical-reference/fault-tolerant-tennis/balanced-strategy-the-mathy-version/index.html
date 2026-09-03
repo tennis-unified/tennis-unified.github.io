@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="For every probabilistic decision in a non-cooperative game, there exists a balanced ( typically mixed ) strategy which creates indifference in the opponent &#82">
+    <meta name="author" content="Fault Tolerant Tennis">
+    <link rel="icon" href="/assets/images/favicon.png">
+    <title>Balanced Strategy – The Mathy Version - Fault Tolerant Tennis - Tennis Unified Library</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+    <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
+    <link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <script src="/assets/javascripts/lang-toggle.js" defer></script>
+    <script src="/assets/javascripts/darkmode.js" defer></script>
+  </head>
+  <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="lime">
+<!-- FLATTENED-TOP-NAV-START -->
+<div class="tu-topnav">
+  <a href="/" class="tu-nav-item" title="Home"><span class="tu-nav-emoji">🏠</span><span class="tu-nav-text">Home</span></a>
+  <a href="/fundamentals/" class="tu-nav-item" title="Fundamentals"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Fundamentals</span></a>
+  <a href="/stroke-analysis/" class="tu-nav-item" title="Stroke Analysis"><span class="tu-nav-emoji">🧠</span><span class="tu-nav-text">Stroke Analysis</span></a>
+  <a href="/coach-video-library/" class="tu-nav-item" title="Coach Library"><span class="tu-nav-emoji">🎓</span><span class="tu-nav-text">Coach Library</span></a>
+  <a href="/tennis-video-library/" class="tu-nav-item" title="Video Library"><span class="tu-nav-emoji">🎬</span><span class="tu-nav-text">Video Library</span></a>
+  <a href="/tennis-technical-reference/" class="tu-nav-item active" title="Technical Reference"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Technical Reference</span></a>
+  <a href="/fundamentals/tennis-evolution/" class="tu-nav-item" title="Tennis Evolution"><span class="tu-nav-emoji">⚡</span><span class="tu-nav-text">Tennis Evolution</span></a>
+  <a href="/blog/" class="tu-nav-item" title="Blog"><span class="tu-nav-emoji">📝</span><span class="tu-nav-text">Blog</span></a>
+  <a href="/tnkbgap/book/" class="tu-nav-item" title="Master Book"><span class="tu-nav-emoji">📕</span><span class="tu-nav-text">Master Book</span></a>
+  <a href="/tnkbgap/" class="tu-nav-item" title="Gap Analysis"><span class="tu-nav-emoji">📊</span><span class="tu-nav-text">Gap Analysis</span></a>
+  <a href="/tnkbgap/books/" class="tu-nav-item" title="Books Coverage"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Books Coverage</span></a>
+  <button class="tu-nav-item tu-nav-darkmode" title="Dark Mode" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button>
+</div>
+<!-- FLATTENED-TOP-NAV-END -->
+
+<nav class="tu-breadcrumb" aria-label="Breadcrumb">
+  <ol class="tu-breadcrumb__list">
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/">Home</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/tennis-technical-reference/">Technical Reference</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/tennis-technical-reference/fault-tolerant-tennis/">Fault Tolerant Tennis</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item tu-breadcrumb__current" aria-current="page">Balanced Strategy – The Mathy Version</li>
+  </ol>
+</nav>
+
+<div class="md-container" data-md-component="container">
+  <main class="md-main" data-md-component="main">
+    <div class="md-main__inner md-grid">
+      <div class="md-content" data-md-component="content">
+        <article class="md-content__inner md-typeset">
+          <h1 id="balanced-strategy-the-mathy-version">Balanced Strategy – The Mathy Version<a class="headerlink" href="#balanced-strategy-the-mathy-version" title="Permanent link"></a></h1>
+          <p style="color:var(--ink-muted, #666); font-size:0.95rem; margin-top:-0.5rem; margin-bottom:1.5rem;">
+            By <strong>Fault Tolerant Tennis</strong> · <em>Kinetic & Biomechanical Reference (2021-01-20)</em> · <a href="https://faulttoleranttennis.com/balanced-strategy-the-mathy-version/" target="_blank" rel="noopener noreferrer">Original Article ↗</a>
+          </p>
+          <hr />
+          <div class="article-content" style="font-size:1.05rem; line-height:1.8; margin-top:1.5rem;">
+            
+<p class="wp-block-paragraph">For every probabilistic decision in a non-cooperative game, there exists a balanced (<a href="https://faulttoleranttennis.com/mixed-strategy-an-antidote-to-guessing/">typically mixed</a>) strategy which creates indifference in the opponent &#8211; it doesn&#8217;t matter how the opponent defends, their equity will be the same.</p>
+
+
+
+<p class="wp-block-paragraph">As <a href="https://faulttoleranttennis.com/tennis-is-random/">a probabilistic game</a> itself, tennis is no different.</p>
+
+
+
+<p class="wp-block-paragraph">We&#8217;re going to do a quick example where we derive a mathematically unexploitable forehand approach shot strategy.  </p>
+
+
+
+<p class="wp-block-paragraph">Before we move on, understand that knowing how to actually calculate the game theoretical equilibrium for a particular situation is obviously not essential to playing correct tennis strategy &#8211; it&#8217;s not like we&#8217;re out there crunching numbers on the court.</p>
+
+
+
+<p class="wp-block-paragraph">However, the math is still instructive, if for no other reason than to both prove that there&#8217;s more than just gut feel behind correct strategy, and to examine the implications of the results.</p>
+
+
+
+<h2 class="wp-block-heading">Our Example &#8211; A Forehand Approach Shot</h2>
+
+
+
+<p class="wp-block-paragraph">The attacker is hitting an approach shot.  They will hit it either inside-out or cross-court.  The defender is going to guess one way or another as the attacker swings.  This attacker can hit both directions well, while the defender defends far better out of the forehand corner than the backhand corner (and both players are right handed).</p>
+
+
+
+<p class="wp-block-paragraph">Before any strategic adjustment, the attacker&#8217;s highest equity shot is the approach shot into the defender&#8217;s weaker backhand. As such, the attacker&#8217;s <a href="https://faulttoleranttennis.com/highest-equity-shot-before-adjustment-hesba/">HESBA</a> is the inside-out forehand.  </p>
+
+
+
+<p class="wp-block-paragraph">Here&#8217;s how often the attacker wins the point, given the defender&#8217;s guess.</p>
+
+
+
+<p class="wp-block-paragraph">The attacker hits inside-out, and wins:</p>
+
+
+
+<ul class="wp-block-list"><li>75% of points when the defender guesses inside-out</li><li>100% of points when the defender guesses cross-court</li></ul>
+
+
+
+<p class="wp-block-paragraph">The attacker hits cross-court, and wins:</p>
+
+
+
+<ul class="wp-block-list"><li>100% of points when the defender guesses inside-out</li><li>50% of points when the defender guesses cross-court</li></ul>
+
+
+
+<div class="wp-block-image is-style-default"><figure class="aligncenter size-large is-resized"><img data-recalc-dims="1" loading="lazy" decoding="async" src="https://i0.wp.com/faulttoleranttennis.com/wp-content/uploads/2021/01/balanced-strategy-payoff-matrix.png?resize=615%2C312" alt="" class="wp-image-564" width="615" height="312" srcset="https://i0.wp.com/faulttoleranttennis.com/wp-content/uploads/2021/01/balanced-strategy-payoff-matrix.png?w=745&amp;ssl=1 745w, https://i0.wp.com/faulttoleranttennis.com/wp-content/uploads/2021/01/balanced-strategy-payoff-matrix.png?resize=300%2C152&amp;ssl=1 300w" sizes="auto, (max-width: 615px) 100vw, 615px" / style="max-width:100%; height:auto; border-radius:8px; margin:1.25rem 0; box-shadow: 0 4px 16px rgba(0,0,0,.12);"><figcaption><em>The payoff matrix for our two players in this approach shot situation; each box contains the attacker&#8217;s win percentage after the approach shot has been struck, and the defender&#8217;s guess made.</em></figcaption></figure></div>
+
+
+
+<p class="wp-block-paragraph">A few things to note.</p>
+
+
+
+<ol class="wp-block-list"><li>When the defender guesses wrong, he loses 100% of the points.  (We&#8217;re not modelling in the few approach shot misses here).  This means that defensive strategies like &#8220;always guess cross-court&#8221; are easily exploitable by always hitting the opposite way.</li><li>Note the effect of the attacker&#8217;s HESBA. Even when the defender guesses correctly to the backhand side, he still only has 25% equity in the point, while the attacker has 75%.  On his forehand side, where he defends well, a correct guess yields 50% equity, despite the defensive situation.</li></ol>
+
+
+
+<p class="wp-block-paragraph">Before we move on, I&#8217;m going to spoil the solution for you so that you have a reference as we discuss various strategies for the attacker moving forward &#8211; the attacker can guarantee an 83.3% winrate if he uses an accurate strategy.  The proof of that will come later.</p>
+
+
+
+<h2 class="wp-block-heading">A Simple, Exploitable Strategy</h2>
+
+
+
+<p class="wp-block-paragraph">First, we&#8217;re going to analyze an obviously exploitable strategy for the attacker &#8211; 100% inside-out forehand.  This is the <a href="https://faulttoleranttennis.com/the-optimal-frequency-is-often-100/">optimal strategy</a> against an opponent who isn&#8217;t willing to guess &#8211; if it wins 75% against an opponent who <em>guesses </em>that way, it probably wins over 90% against an opponent who isn&#8217;t guessing &#8211; but against this defender, it&#8217;s leaving points on the table.</p>
+
+
+
+<p class="wp-block-paragraph">The defender, to exploit this, will choose a 100% guess backhand side strategy.  </p>
+
+
+
+<p class="wp-block-paragraph">The result &#8211; Attacker 75%, Defender 25%.  Not as good as the 83.3% I promised we could get.</p>
+
+
+
+<h4 class="wp-block-heading">So how can we do better?</h4>
+
+
+
+<p class="wp-block-paragraph">Well, the defender&#8217;s &#8220;100% guess the backhand side&#8221; strategy leaves the forehand side wide open.  When the defender guesses backhand, and we hit to the forehand, we win 100% of the points.  We&#8217;d love to utilize that fact, but not so much that the defender can start profitably guessing that way instead.</p>
+
+
+
+<p class="wp-block-paragraph">Let&#8217;s have the attacker try throwing in just a few cross-court forehands and see if it improves their equity. Their new strategy:</p>
+
+
+
+<ul class="wp-block-list"><li>80% inside-out</li><li>20% cross-court</li></ul>
+
+
+
+<p class="wp-block-paragraph">Now, if the defender employs his same &#8220;always guess backhand side&#8221; strategy, the attacker wins 20%*(1) + 80%*(.75) = 80% of points.  That&#8217;s 5% better than the 75% from before, but still 3.3% worse than the optimal 83.3%.</p>
+
+
+
+<h2 class="wp-block-heading">The Nash Equilibrium</h2>
+
+
+
+<p class="wp-block-paragraph">We can do even better.  There exists a point in every non-cooperative game called a Nash Equilibrium &#8211; the point at which neither player can improve their performance by altering their strategy.  This point is reached when both players are playing their respective unexploitable strategies.  </p>
+
+
+
+<p class="wp-block-paragraph">In tennis, our unexploitable strategy (as an attacker) is the mix of frequencies such that our opponent&#8217;s decision is indifferent &#8211; it doesn&#8217;t matter how they defend, they can&#8217;t improve their equity in the point.  They could always guess one way, always guess the other way, or mix the frequencies of their guesses however they wished, and their win percentage would be the same.  (The principles for a defender making their attacker indifferent are the same, but we&#8217;re sticking with the attacker&#8217;s perspective for this article.)</p>
+
+
+
+<p class="wp-block-paragraph">Our goal is to find this mix of frequencies.</p>
+
+
+
+<p class="wp-block-paragraph">At Fault Tolerant Tennis, we routinely refer to a strategy using these frequencies as a &#8220;balanced strategy,&#8221; a &#8220;balanced mixed strategy,&#8221; or an &#8220;unexploitable strategy.&#8221;  Note that a balanced strategy is not always optimal &#8211; if your opponent is playing a clearly exploitable strategy, using an exploitative strategy will yield better results than using a balanced strategy, but balanced strategies are far more stable, and <a href="/">better under pressure</a>, so we strongly prefer them.</p>
+
+
+
+<h2 class="wp-block-heading">Our Attacker&#8217;s Unexploitable Strategy</h2>
+
+
+
+<p class="wp-block-paragraph">To solve for our attacker&#8217;s unexploitable mix of frequencies, we find the frequencies such that all defensive strategies for our opponent produce identical results.  </p>
+
+
+
+<p class="wp-block-paragraph">Here are the possible defensive positions, and how many points the attacker wins against each.</p>
+
+
+
+<h4 class="wp-block-heading">Defender Defends Inside-Out</h4>
+
+
+
+<ul class="wp-block-list"><li>Attacker wins: 75%*(frequency hitting inside-out) + 100%*(frequency hitting cross-court)</li></ul>
+
+
+
+<h4 class="wp-block-heading">Defender Defends Cross-Court </h4>
+
+
+
+<ul class="wp-block-list"><li>Attacker wins: 100%*(frequency hitting inside-out) + 50%*(frequency hitting cross-court)</li></ul>
+
+
+
+<p class="wp-block-paragraph">Now, we need to set these expressions equal to each other &#8211; we need to find the frequencies such that our defender is indifferent; whether he defends inside-out or cross-court, (or, by extension, any mix between the two), his win percentage will be the same.</p>
+
+
+
+<p class="wp-block-paragraph">Let&#8217;s call our frequency cross-court &#8220;Fc&#8221; and our frequency inside-out &#8220;Fi&#8221;.  </p>
+
+
+
+<p class="wp-block-paragraph">75Fi + 100Fc = 100Fi + 50Fc</p>
+
+
+
+<p class="wp-block-paragraph">50Fc = 25Fi</p>
+
+
+
+<p class="wp-block-paragraph">2Fc = Fi</p>
+
+
+
+<p class="wp-block-paragraph">And, since these are frequencies, they must sum to 100%.</p>
+
+
+
+<p class="wp-block-paragraph">Fi + Fc = 1.</p>
+
+
+
+<p class="wp-block-paragraph">Solving this system, we see Fi = 2/3 and Fc = 1/3.  </p>
+
+
+
+<p class="wp-block-paragraph">Our unexploitable strategy is:</p>
+
+
+
+<ul class="wp-block-list"><li>2/3 inside-out</li><li>1/3 cross-court</li></ul>
+
+
+
+<h2 class="wp-block-heading">The Attacker&#8217;s Unexploitable Win Percentage</h2>
+
+
+
+<p class="wp-block-paragraph">When the defender guesses inside-out, the attacker wins:</p>
+
+
+
+<p class="wp-block-paragraph">(2/3)*(75%) + (1/3)*(100%) = 5/6 = 83.3% of rallies</p>
+
+
+
+<p class="wp-block-paragraph">When the defender guesses cross-court, the attacker wins:</p>
+
+
+
+<p class="wp-block-paragraph">(2/3)*(100%) + (1/3)*(50%) = 5/6 = 83.3% </p>
+
+
+
+<p class="wp-block-paragraph">It&#8217;s the same!  </p>
+
+
+
+<p class="wp-block-paragraph">It doesn&#8217;t matter how the defender defends. If the attacker uses 2/3 inside-out and 1/3 cross-court, they will always win 83.3% of the rallies <em>regardless of the defender&#8217;s guess.</em></p>
+
+
+
+<h2 class="wp-block-heading">In Defense of Balanced Strategy</h2>
+
+
+
+<p class="wp-block-paragraph">The above analysis means that, as our attacker steps up in the court and prepares for an approach shot forehand, he has 83.3% equity in the point.  If the attacker adopts the balanced strategy above, that equity is a mathematical guarantee; there&#8217;s nothing the defender can do about it.   Notice that the attacker has a significant <a href="https://faulttoleranttennis.com/basic-strategy-wheres-my-edge/">edge</a> here &#8211; 83.3% is high, because the attacker is in a very good spot, and according to the numbers in our example, quite effective at converting short balls.</p>
+
+
+
+<p class="wp-block-paragraph">Trying to win to win more than 83.3%, by trying to exploit an apparent suboptimal defensive strategy from the defender, constitutes a risk.  It might work, perhaps the defender really is defending incorrectly, and the attacker can abuse that and win 90% of these points, but there&#8217;s no guarantee.</p>
+
+
+
+<p class="wp-block-paragraph">In general, exploitative strategies are better when you&#8217;re worse.  If your guaranteed equity isn&#8217;t enough to win the match, you need to hope your opponent makes strategic mistakes, and then attempt to exploit those mistakes.  Once your opponent catches onto your exploit, of course, they&#8217;ll exploit you back, and then you&#8217;ll have to adjust again.  The <a href="https://faulttoleranttennis.com/mixed-strategy-an-antidote-to-guessing/">game of chicken</a> begins.  If you&#8217;re the worse player in the match &#8211; if your equity with a balanced strategy is simply too low to compete &#8211;  you may not have a choice but to try and win it.  </p>
+
+
+
+<p class="wp-block-paragraph">On the contrary, if you&#8217;re the better, then simply play an accurate balanced strategy, and you can&#8217;t lose.</p>
+
+
+<div class="convertful-103487"></div>
+
+          </div>
+          <!-- BOTTOM-NAV-START -->
+<hr style="margin:2.5rem 0 1.5rem; border:0; border-top:1px solid var(--border, #e7e5e4);" />
+<nav class="tu-bottom-nav" aria-label="Page navigation" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin:1.5rem 0 2rem; padding:1rem 1.25rem; background:var(--card, #fff); border:1px solid var(--border, #e7e5e4); border-radius:12px; box-shadow:var(--shadow, 0 1px 3px rgba(0,0,0,.06));">
+  <div class="tu-bottom-nav__prev" style="flex:1; min-width:140px; text-align:left;">
+    <a href="../mixed-strategy-an-antidote-to-guessing/" style="color:var(--accent-dark, #047857); text-decoration:none; font-weight:600; font-size:0.92rem; display:inline-block;">
+      ← Prev
+      <span style="font-size:0.82rem; font-weight:400; color:var(--ink-muted, #666); display:block; max-width:200px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Mixed Strategy – An Antidote to Guessing</span>
+    </a>
+  </div>
+  <div class="tu-bottom-nav__home" style="display:flex; gap:0.6rem; align-items:center; justify-content:center; padding:0 0.5rem; font-weight:600;">
+    <a href="/" style="color:var(--ink-muted, #555); text-decoration:none; padding:0.35rem 0.65rem; border-radius:6px; background:var(--bg, #f3f4f6); font-size:0.9rem;">🏠 Home</a>
+    <a href="/tennis-technical-reference/fault-tolerant-tennis/" style="color:var(--accent-dark, #047857); text-decoration:none; padding:0.35rem 0.65rem; border-radius:6px; background:var(--accent-light, #d1fae5); font-size:0.9rem;">📚 Fault Tolerant Tennis</a>
+  </div>
+  <div class="tu-bottom-nav__next" style="flex:1; min-width:140px; text-align:right;">
+    <a href="../a-hesba-example-the-inside-out-approach/" style="color:var(--accent-dark, #047857); text-decoration:none; font-weight:600; font-size:0.92rem; display:inline-block;">
+      Next →
+      <span style="font-size:0.82rem; font-weight:400; color:var(--ink-muted, #666); display:block; max-width:200px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">A Common HESBA – The Inside-Out Approach</span>
+    </a>
+  </div>
+</nav>
+<!-- BOTTOM-NAV-END -->
+        </article>
+      </div>
+    </div>
+  </main>
+  <footer class="tu-footer">
+    <p>© 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.</p>
+  </footer>
+</div>
+  </body>
+</html>
