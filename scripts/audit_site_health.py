@@ -112,6 +112,9 @@ core_destinations = [
     '/books/',
     '/gemini-notebooks/',
     '/tennis-technical-reference/authoritative-sources/',
+    '/drills/',
+    '/vi/drills/',
+    '/books/read/',
     '/vi/book/',
     '/vi/tennis-technical-reference/authoritative-sources/'
 ]

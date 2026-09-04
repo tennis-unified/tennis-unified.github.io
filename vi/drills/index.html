@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="vi" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Xưởng Bài Tập Quần Vợt Tương Tác & Lập Kế Hoạch Tập Luyện - Tennis Unified</title>
+    <meta name="description" content="Công cụ tìm kiếm bài tập tennis tương tác, bộ lọc trình độ NTRP, bộ xây dựng giáo án tập luyện và đồng hồ bấm giờ rally dành cho huấn luyện viên và người chơi.">
+    <link rel="canonical" href="https://tennis-unified.github.io/drills/">
+    <link rel="alternate" href="/drills/" hreflang="en">
+    <link rel="alternate" href="/vi/drills/" hreflang="vi">
+    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <style>
+      .drill-hero {
+        background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        color: #f8fafc;
+        border-radius: 16px;
+        padding: 2.5rem 2rem;
+        margin: 1.5rem 0 2rem;
+        border: 1px solid rgba(255,255,255,0.08);
+      }
+      .drill-hero h1 { margin: 0 0 0.5rem; font-size: 2.1rem; color: #38bdf8; }
+      .drill-hero p { margin: 0; color: #cbd5e1; font-size: 1.05rem; line-height: 1.6; }
+      
+      .filter-panel {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+      }
+      .search-box {
+        width: 100%;
+        padding: 0.85rem 1.25rem;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        background: var(--bg);
+        color: var(--ink);
+        font-size: 1rem;
+        margin-bottom: 1.25rem;
+        box-sizing: border-box;
+      }
+      .filter-group {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .filter-label {
+        font-weight: 700;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--ink-muted);
+        min-width: 90px;
+      }
+      .filter-pill {
+        padding: 0.4rem 0.85rem;
+        border-radius: 20px;
+        border: 1px solid var(--border);
+        background: var(--bg);
+        color: var(--ink);
+        font-size: 0.88rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .filter-pill:hover, .filter-pill.active {
+        background: #0284c7;
+        color: #ffffff;
+        border-color: #0284c7;
+      }
+      
+      .studio-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+      }
+      @media (max-width: 992px) {
+        .studio-layout { grid-template-columns: 1fr; }
+      }
+      
+      .drill-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .drill-card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1.5rem;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+      }
+      .drill-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      }
+      .drill-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 0.75rem;
+      }
+      .drill-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin: 0;
+        color: #0284c7;
+      }
+      .drill-badges {
+        display: flex;
+        gap: 0.4rem;
+        flex-wrap: wrap;
+      }
+      .drill-badge {
+        font-size: 0.75rem;
+        font-weight: 600;
+        padding: 0.2rem 0.5rem;
+        border-radius: 6px;
+        background: rgba(2, 132, 199, 0.1);
+        color: #0284c7;
+      }
+      .drill-meta {
+        font-size: 0.9rem;
+        color: var(--ink-muted);
+        margin-bottom: 1rem;
+        display: flex;
+        gap: 1.2rem;
+      }
+      .drill-desc {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+      .drill-steps {
+        background: var(--bg);
+        border-radius: 8px;
+        padding: 0.85rem 1.25rem;
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+      }
+      .drill-steps ol { margin: 0; padding-left: 1.2rem; }
+      .drill-steps li { margin-bottom: 0.35rem; }
+      .drill-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .btn-add-routine {
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        border: none;
+        background: #10b981;
+        color: #ffffff;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      .btn-add-routine:hover { background: #059669; }
+      .btn-add-routine.added {
+        background: #64748b;
+      }
+      
+      .routine-sidebar {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 1.5rem;
+        position: sticky;
+        top: 2rem;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+      }
+      .routine-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin: 0 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .routine-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1.25rem;
+        max-height: 320px;
+        overflow-y: auto;
+      }
+      .routine-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.6rem 0;
+        border-bottom: 1px solid var(--border);
+        font-size: 0.9rem;
+      }
+      .routine-item-name { font-weight: 600; }
+      .routine-item-time { color: var(--ink-muted); font-size: 0.82rem; }
+      .routine-item-remove {
+        color: #ef4444;
+        cursor: pointer;
+        font-weight: 700;
+        margin-left: 0.5rem;
+      }
+      
+      .timer-box {
+        background: #0f172a;
+        color: #f8fafc;
+        border-radius: 12px;
+        padding: 1.25rem;
+        text-align: center;
+        margin-top: 1.5rem;
+      }
+      .timer-display {
+        font-size: 2.4rem;
+        font-weight: 700;
+        font-family: monospace;
+        color: #38bdf8;
+        margin: 0.5rem 0;
+      }
+      .timer-btn {
+        padding: 0.4rem 0.85rem;
+        border-radius: 6px;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+        margin: 0 0.25rem;
+      }
+      .timer-btn-primary { background: #38bdf8; color: #0f172a; }
+      .timer-btn-secondary { background: #475569; color: #ffffff; }
+    </style>
+  </head>
+  <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+    <!-- FLATTENED-TOP-NAV-START -->
+<div class="tu-topnav">
+  <a href="/vi/" class="tu-nav-item" title="Home"><span class="tu-nav-emoji">🏠</span><span class="tu-nav-text">Home</span></a>
+  <a href="/vi/fundamentals/" class="tu-nav-item" title="Fundamentals"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Fundamentals</span></a>
+  <a href="/vi/stroke-analysis/" class="tu-nav-item" title="Stroke Analysis"><span class="tu-nav-emoji">🧠</span><span class="tu-nav-text">Stroke Analysis</span></a>
+  <a href="/vi/coach-video-library/" class="tu-nav-item" title="Coach Library"><span class="tu-nav-emoji">🎓</span><span class="tu-nav-text">Coach Library</span></a>
+  <a href="/vi/tennis-video-library/" class="tu-nav-item" title="Video Library"><span class="tu-nav-emoji">🎬</span><span class="tu-nav-text">Video Library</span></a>
+  <a href="/vi/tennis-technical-reference/" class="tu-nav-item" title="Technical Reference"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Technical Reference</span></a>
+  <a href="/vi/tennis-evolution/" class="tu-nav-item" title="Tennis Evolution"><span class="tu-nav-emoji">⚡</span><span class="tu-nav-text">Tennis Evolution</span></a>
+  <a href="/vi/drills/" class="tu-nav-item" title="Bài Tập"><span class="tu-nav-emoji">🎯</span><span class="tu-nav-text">Bài Tập</span></a>
+  <a href="/vi/blog/" class="tu-nav-item" title="Blog"><span class="tu-nav-emoji">📝</span><span class="tu-nav-text">Blog</span></a>
+  <a href="/vi/book/" class="tu-nav-item" title="Master Book"><span class="tu-nav-emoji">📕</span><span class="tu-nav-text">Master Book</span></a>
+  <a href="/books/" class="tu-nav-item" title="Books Catalog"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Books Catalog</span></a>
+  <a href="/gemini-notebooks/" class="tu-nav-item" title="Gemini Notebooks"><span class="tu-nav-emoji">🧬</span><span class="tu-nav-text">Notebooks</span></a>
+  <a href="/drills/" class="tu-nav-item tu-nav-lang" data-lang-toggle title="Switch to English"><span class="tu-nav-emoji">🌐</span><span class="tu-nav-text">English</span></a>
+  <button class="tu-nav-item tu-nav-darkmode" title="Dark Mode" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button>
+</div>
+<!-- FLATTENED-TOP-NAV-END -->
+    <div class="tu-topnav">
+      <a href="/" class="tu-nav-item" title="Home"><span class="tu-nav-emoji">🏠</span><span class="tu-nav-text">Home</span></a>
+      <a href="/fundamentals/" class="tu-nav-item" title="Fundamentals"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Fundamentals</span></a>
+      <a href="/stroke-analysis/" class="tu-nav-item" title="Stroke Analysis"><span class="tu-nav-emoji">🧠</span><span class="tu-nav-text">Stroke Analysis</span></a>
+      <a href="/coach-video-library/" class="tu-nav-item" title="Coach Library"><span class="tu-nav-emoji">🎓</span><span class="tu-nav-text">Coach Library</span></a>
+      <a href="/tennis-video-library/" class="tu-nav-item" title="Video Library"><span class="tu-nav-emoji">🎬</span><span class="tu-nav-text">Video Library</span></a>
+      <a href="/tennis-technical-reference/" class="tu-nav-item" title="Technical Reference"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Technical Reference</span></a>
+      <a href="/tennis-evolution/" class="tu-nav-item" title="Tennis Evolution"><span class="tu-nav-emoji">⚡</span><span class="tu-nav-text">Tennis Evolution</span></a>
+      <a href="/drills/" class="tu-nav-item" title="Interactive Drills"><span class="tu-nav-emoji">🎯</span><span class="tu-nav-text">Drills</span></a>
+      <a href="/blog/" class="tu-nav-item" title="Blog"><span class="tu-nav-emoji">📝</span><span class="tu-nav-text">Blog</span></a>
+      <a href="/book/" class="tu-nav-item" title="Master Book"><span class="tu-nav-emoji">📕</span><span class="tu-nav-text">Master Book</span></a>
+      <a href="/books/" class="tu-nav-item" title="Books Catalog"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Books Catalog</span></a>
+      <a href="/gemini-notebooks/" class="tu-nav-item" title="Gemini Notebooks"><span class="tu-nav-emoji">🧬</span><span class="tu-nav-text">Notebooks</span></a>
+      <a href="/vi/drills/" class="tu-nav-item tu-nav-lang" data-lang-toggle title="Chuyển sang Tiếng Việt"><span class="tu-nav-emoji">🌐</span><span class="tu-nav-text">Tiếng Việt</span></a>
+      <button class="tu-nav-item tu-nav-darkmode" title="Dark Mode" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button>
+    </div>
+    <!-- FLATTENED-TOP-NAV-END -->
+
+    <nav class="tu-breadcrumb" aria-label="Breadcrumb">
+      <ol class="tu-breadcrumb__list">
+        <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/vi/">Trang Chủ</a></li>
+        <li class="tu-breadcrumb__sep">›</li>
+        <li class="tu-breadcrumb__item tu-breadcrumb__current" aria-current="page">Xưởng Bài Tập Quần Vợt Tương Tác</li>
+      </ol>
+    </nav>
+
+    <main class="md-main">
+      <div class="md-main__inner md-grid">
+        <div class="md-content">
+          <div class="drill-hero">
+            <h1>🎾 Xưởng Bài Tập Quần Vợt Tương Tác & Giáo Án Thực Chiến</h1>
+            <p>Lọc bài tập theo cơ sinh học từng cú đánh, trình độ NTRP và hình thức tập. Lắp ghép giáo án buổi tập tính giờ và bấm nhịp rally với đồng hồ âm thanh tích hợp.</p>
+          </div>
+
+          <div class="filter-panel">
+            <input type="text" id="drillSearch" class="search-box" placeholder="🔍 Tìm bài tập theo cú đánh, cơ chế chuyển động hoặc mục tiêu chiến thuật...">
+            
+            <div class="filter-group">
+              <span class="filter-label">Cú Đánh:</span>
+              <button class="filter-pill active" data-filter="stroke" data-val="all">All</button>
+              <button class="filter-pill" data-filter="stroke" data-val="forehand">Thuận Tay</button>
+              <button class="filter-pill" data-filter="stroke" data-val="backhand">Trái Tay</button>
+              <button class="filter-pill" data-filter="stroke" data-val="serve">Giao & Trả Bóng</button>
+              <button class="filter-pill" data-filter="stroke" data-val="volley">Vô-lê & Lưới</button>
+              <button class="filter-pill" data-filter="stroke" data-val="footwork">Bộ Chân Di Chuyển</button>
+            </div>
+
+            <div class="filter-group">
+              <span class="filter-label">Trình Độ:</span>
+              <button class="filter-pill active" data-filter="level" data-val="all">Tất Cả Trình Độ</button>
+              <button class="filter-pill" data-filter="level" data-val="intermediate">Trung Cấp (3.0–3.5)</button>
+              <button class="filter-pill" data-filter="level" data-val="advanced">Nâng Cao (4.0–4.5)</button>
+              <button class="filter-pill" data-filter="level" data-val="elite">Đỉnh Cao (5.0+)</button>
+            </div>
+
+            <div class="filter-group">
+              <span class="filter-label">Hình Thức:</span>
+              <button class="filter-pill active" data-filter="format" data-val="all">Tất Cả</button>
+              <button class="filter-pill" data-filter="format" data-val="partner">Đấu Tập Đối Kháng</button>
+              <button class="filter-pill" data-filter="format" data-val="solo">Một Mình / Đánh Tường</button>
+              <button class="filter-pill" data-filter="format" data-val="feeding">HLV Ném Bóng Rổ</button>
+            </div>
+          </div>
+
+          <div class="studio-layout">
+            <div>
+              <div class="drill-grid" id="drillContainer">
+                <!-- Drills injected via JS -->
+              </div>
+            </div>
+
+            <div>
+              <div class="routine-sidebar">
+                <div class="routine-title">
+                  <span>📋 Giáo Án Buổi Tập</span>
+                  <span id="totalDuration" style="font-size:0.9rem;color:#0284c7;">0 min</span>
+                </div>
+                <ul class="routine-list" id="routineItems">
+                  <li style="color:var(--ink-muted);font-style:italic;padding:0.5rem 0;">Chưa chọn bài tập nào. Bấm "+ Thêm vào Giáo án" ở bài tập bất kỳ.</li>
+                </ul>
+                <button id="btnCopyRoutine" class="btn-add-routine" style="width:100%;margin-bottom:0.75rem;">📋 Sao Chép Giáo Án Ra Bộ Nhớ</button>
+                <button id="btnClearRoutine" style="width:100%;background:none;border:1px solid var(--border);color:var(--ink-muted);padding:0.4rem;border-radius:6px;cursor:pointer;">Xóa Hết</button>
+
+                <div class="timer-box">
+                  <div style="font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;color:#94a3b8;">Đồng Hồ Bấm Giờ Rally</div>
+                  <div class="timer-display" id="timerDisplay">01:00</div>
+                  <div>
+                    <button class="timer-btn timer-btn-primary" id="btnTimerStart">Bắt Đầu</button>
+                    <button class="timer-btn timer-btn-secondary" id="btnTimerReset">Đặt Lại</button>
+                    <button class="timer-btn timer-btn-secondary" id="btnTimerPreset45">45s</button>
+                    <button class="timer-btn timer-btn-secondary" id="btnTimerPreset90">90s</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="tu-footer" style="background: var(--card); border-top: 1px solid var(--border); color: var(--ink-muted); padding: 1.5rem 1rem; text-align: center; font-size: 0.92rem; margin-top: 3rem;">
+      <div style="font-size: 0.85rem; color: var(--accent-dark);">Tennis Unified Interactive Drill Studio & Routine Planner · Built for players & coaches</div>
+    </footer>
+
+    <script>
+      const DRILLS_DATA = [
+        {
+          id: 'es-crosscourt',
+          title: 'Spanish Crosscourt Topspin Grinder',
+          stroke: 'forehand',
+          level: 'advanced',
+          format: 'partner',
+          duration: 15,
+          desc: 'Rally crosscourt beyond the baseline service line extension with minimum 4 feet net clearance. Develops relentless RPM, high safety margins, and deep depth.',
+          steps: [
+            'Place target cones 3 feet inside the baseline and singles sideline.',
+            'Continuous crosscourt exchange; every ball landing short of the service line loses a point.',
+            'Focus on aggressive vertical brushing from below the ball to produce 2500+ RPM shape.'
+          ],
+          tags: ['Topspin Depth', 'Spanish Method', 'Rally Tolerance']
+        },
+        {
+          id: 'slot-l-angle',
+          title: 'Forehand L-Angle Slot & Lag Isolation',
+          stroke: 'forehand',
+          level: 'intermediate',
+          format: 'solo',
+          duration: 12,
+          desc: 'Solo wall or hand-feed progression isolating the lag phase into contact without premature wrist rollover.',
+          steps: [
+            'Drop feed the ball from hip height.',
+            'Hold the 90-degree L-Angle between racquet shaft and forearm until after impact.',
+            'Execute 20 consecutive reps driving through the ball into a high over-the-shoulder or reverse finish.'
+          ],
+          tags: ['Biomechanical Slot', 'Clean Contact', 'Lag & Release']
+        },
+        {
+          id: 'two-hand-nd-drive',
+          title: 'Two-Handed Non-Dominant Drive Groover',
+          stroke: 'backhand',
+          level: 'intermediate',
+          format: 'feeding',
+          duration: 15,
+          desc: 'Develop authentic non-dominant arm leadership in the two-handed backhand by hitting solo non-dominant forehands.',
+          steps: [
+            'Remove dominant hand entirely; grip racquet with non-dominant hand in Eastern forehand.',
+            'Hit 25 feeds emphasizing ground reaction force and full torso rotation.',
+            'Re-attach dominant hand lightly (20% pressure) and mirror the exact same swing path.'
+          ],
+          tags: ['Non-Dominant Power', 'Kinetic Sequencing', 'Two-Handed Stability']
+        },
+        {
+          id: 'one-hand-contact-lock',
+          title: 'One-Handed Backhand Contact Point Anchor',
+          stroke: 'backhand',
+          level: 'advanced',
+          format: 'partner',
+          duration: 15,
+          desc: 'Locking shoulder sideways and extending non-dominant arm backward at contact to neutralize rotational leaks.',
+          steps: [
+            'Rally deep backhand-to-backhand with a partner.',
+            'At impact, lock eyes on the contact point for an extra split-second (Quiet Eye).',
+            'Throw the non-dominant hand backward simultaneously to counteract body opening.'
+          ],
+          tags: ['One-Hander', 'Shoulder Turn', 'Quiet Eye']
+        },
+        {
+          id: 'kick-serve-brush',
+          title: '7-to-1 O'Clock Kick Serve Pronation Arc',
+          stroke: 'serve',
+          level: 'advanced',
+          format: 'solo',
+          duration: 20,
+          desc: 'Isolating upward leg drive and severe outward pronation across the back of the ball for high-bouncing kick serves.',
+          steps: [
+            'Toss ball at 11:30 to 12:00 directly above or slightly behind the forehead.',
+            'Drive racquet up from 7 o\'clock to 1 o\'clock across the seam of the ball.',
+            'Target deep ad-court service box bouncing above the returner\'s shoulder height.'
+          ],
+          tags: ['Kick Serve', 'Pronation Physics', 'Shoulder Health']
+        },
+        {
+          id: 'block-stick-volley',
+          title: 'Compact Block & Stick Punch Volleys',
+          stroke: 'volley',
+          level: 'intermediate',
+          format: 'partner',
+          duration: 10,
+          desc: 'Eliminating the backswing on volleys. Power generated strictly through chest stability and forward diagonal footwork.',
+          steps: [
+            'Stand inside the service line, racquet up in the V-shape ready position.',
+            'Partner hits firm groundstrokes directly at you.',
+            'Catch the ball in front with zero backswing, squeezing the grip at impact (grip pulse).'
+          ],
+          tags: ['Punch Volley', 'Grip Pulse', 'Net Control']
+        },
+        {
+          id: 'fig8-split-step',
+          title: 'Figure-8 Split-Step Calibration Drill',
+          stroke: 'footwork',
+          level: 'elite',
+          format: 'feeding',
+          duration: 15,
+          desc: 'High-speed footwork drill training the exact pre-impact split-step timing and elastic stretch-shortening recoil.',
+          steps: [
+            'Set two cones 8 feet apart behind the baseline.',
+            'Coach feeds rapid alternating wide balls to both wings.',
+            'Player weaves through cones in a figure-8, synchronizing airborne split-step with coach impact.'
+          ],
+          tags: ['Elastic SSC', 'Agility', 'Footwork Calibration']
+        },
+        {
+          id: 'serve-plus-one',
+          title: 'Serve + 1 Aggressive Forehand Pattern',
+          stroke: 'serve',
+          level: 'elite',
+          format: 'partner',
+          duration: 20,
+          desc: 'The defining tactic of modern tennis: serve to the weaker wing and immediately step around to attack with forehand.',
+          steps: [
+            'Serve out wide to pull the receiver off court.',
+            'Anticipate weak center return; take immediate split-step forward.',
+            'Run around and execute heavy inside-out or inside-in forehand to open court.'
+          ],
+          tags: ['Plus-One Principle', 'Tactical Patterns', 'First Strike']
+        }
+      ];
+
+      let selectedFilters = { stroke: 'all', level: 'all', format: 'all' };
+      let myRoutine = [];
+
+      function renderDrills() {
+        const container = document.getElementById('drillContainer');
+        const query = document.getElementById('drillSearch').value.toLowerCase().trim();
+        
+        const filtered = DRILLS_DATA.filter(d => {
+          if (selectedFilters.stroke !== 'all' && d.stroke !== selectedFilters.stroke) return false;
+          if (selectedFilters.level !== 'all' && d.level !== selectedFilters.level) return false;
+          if (selectedFilters.format !== 'all' && d.format !== selectedFilters.format) return false;
+          if (query) {
+            const fullText = (d.title + ' ' + d.desc + ' ' + d.tags.join(' ')).toLowerCase();
+            if (!fullText.includes(query)) return false;
+          }
+          return true;
+        });
+
+        if (filtered.length === 0) {
+          container.innerHTML = '<div style="text-align:center;padding:3rem 1rem;color:var(--ink-muted);">No drills found matching your filters. Try selecting "All" or clearing the search.</div>';
+          return;
+        }
+
+        container.innerHTML = filtered.map(d => {
+          const isAdded = myRoutine.some(item => item.id === d.id);
+          return `
+            <div class="drill-card">
+              <div class="drill-header">
+                <h3 class="drill-title">${d.title}</h3>
+                <div class="drill-badges">
+                  <span class="drill-badge">${d.level.toUpperCase()}</span>
+                  <span class="drill-badge">⏱️ ${d.duration} MIN</span>
+                </div>
+              </div>
+              <div class="drill-meta">
+                <span>🎾 <strong>Stroke:</strong> ${d.stroke.charAt(0).toUpperCase() + d.stroke.slice(1)}</span>
+                <span>🏟️ <strong>Setup:</strong> ${d.format.charAt(0).toUpperCase() + d.format.slice(1)}</span>
+              </div>
+              <div class="drill-desc">${d.desc}</div>
+              <div class="drill-steps">
+                <ol>
+                  ${d.steps.map(s => `<li>${s}</li>`).join('')}
+                </ol>
+              </div>
+              <div class="drill-actions">
+                <div style="display:flex;gap:0.4rem;">
+                  ${d.tags.map(t => `<span style="font-size:0.75rem;background:var(--border);padding:0.2rem 0.5rem;border-radius:4px;">#${t}</span>`).join('')}
+                </div>
+                <button class="btn-add-routine ${isAdded ? 'added' : ''}" onclick="toggleRoutine('${d.id}')">
+                  ${isAdded ? '✓ Added' : '+ Add to Routine'}
+                </button>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      function toggleRoutine(drillId) {
+        const drill = DRILLS_DATA.find(d => d.id === drillId);
+        if (!drill) return;
+        const idx = myRoutine.findIndex(item => item.id === drillId);
+        if (idx >= 0) {
+          myRoutine.splice(idx, 1);
+        } else {
+          myRoutine.push(drill);
+        }
+        updateRoutineUI();
+        renderDrills();
+      }
+
+      function updateRoutineUI() {
+        const list = document.getElementById('routineItems');
+        const durationEl = document.getElementById('totalDuration');
+        if (myRoutine.length === 0) {
+          list.innerHTML = '<li style="color:var(--ink-muted);font-style:italic;padding:0.5rem 0;">Chưa chọn bài tập nào. Bấm "+ Thêm vào Giáo án" ở bài tập bất kỳ.</li>';
+          durationEl.textContent = '0 min';
+          return;
+        }
+
+        const totalTime = myRoutine.reduce((sum, d) => sum + d.duration, 0);
+        durationEl.textContent = totalTime + ' min';
+
+        list.innerHTML = myRoutine.map(d => `
+          <li class="routine-item">
+            <div>
+              <div class="routine-item-name">${d.title}</div>
+              <div class="routine-item-time">${d.duration} mins · ${d.stroke}</div>
+            </div>
+            <span class="routine-item-remove" onclick="toggleRoutine('${d.id}')">✕</span>
+          </li>
+        `).join('');
+      }
+
+      document.querySelectorAll('.filter-pill').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const group = btn.dataset.filter;
+          document.querySelectorAll(`.filter-pill[data-filter="${group}"]`).forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          selectedFilters[group] = btn.dataset.val;
+          renderDrills();
+        });
+      });
+
+      document.getElementById('drillSearch').addEventListener('input', renderDrills);
+
+      document.getElementById('btnClearRoutine').addEventListener('click', () => {
+        myRoutine = [];
+        updateRoutineUI();
+        renderDrills();
+      });
+
+      document.getElementById('btnCopyRoutine').addEventListener('click', () => {
+        if (myRoutine.length === 0) {
+          alert('Add at least one drill to your session routine before copying!');
+          return;
+        }
+        let text = '🎾 TENNIS UNIFIED PRACTICE SESSION PLAN\n';
+        text += 'Total Duration: ' + myRoutine.reduce((s, d) => s + d.duration, 0) + ' minutes\n\n';
+        myRoutine.forEach((d, idx) => {
+          text += `${idx + 1}. ${d.title} (${d.duration} min)\n`;
+          text += `   - Stroke: ${d.stroke} | Level: ${d.level}\n`;
+          d.steps.forEach(s => text += `   • ${s}\n`);
+          text += '\n';
+        });
+        text += 'Generated from https://tennis-unified.github.io/drills/';
+        navigator.clipboard.writeText(text).then(() => {
+          alert('✅ Practice Routine copied to clipboard!');
+        });
+      });
+
+      // Simple Acoustic Interval Timer
+      let timerSeconds = 60;
+      let timerRemaining = 60;
+      let timerInterval = null;
+
+      function updateTimerDisplay() {
+        const m = Math.floor(timerRemaining / 60).toString().padStart(2, '0');
+        const s = (timerRemaining % 60).toString().padStart(2, '0');
+        document.getElementById('timerDisplay').textContent = `${m}:${s}`;
+      }
+
+      function beep() {
+        try {
+          const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'sine';
+          osc.frequency.value = 880;
+          gain.gain.setValueAtTime(0.2, audioCtx.currentTime);
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start();
+          osc.stop(audioCtx.currentTime + 0.3);
+        } catch(e) {}
+      }
+
+      document.getElementById('btnTimerStart').addEventListener('click', function() {
+        if (timerInterval) {
+          clearInterval(timerInterval);
+          timerInterval = null;
+          this.textContent = 'Start';
+        } else {
+          this.textContent = 'Pause';
+          timerInterval = setInterval(() => {
+            if (timerRemaining > 0) {
+              timerRemaining--;
+              updateTimerDisplay();
+              if (timerRemaining === 0) {
+                beep();
+                clearInterval(timerInterval);
+                timerInterval = null;
+                document.getElementById('btnTimerStart').textContent = 'Start';
+              }
+            }
+          }, 1000);
+        }
+      });
+
+      document.getElementById('btnTimerReset').addEventListener('click', () => {
+        clearInterval(timerInterval);
+        timerInterval = null;
+        timerRemaining = timerSeconds;
+        document.getElementById('btnTimerStart').textContent = 'Start';
+        updateTimerDisplay();
+      });
+
+      document.getElementById('btnTimerPreset45').addEventListener('click', () => {
+        clearInterval(timerInterval);
+        timerInterval = null;
+        timerSeconds = 45;
+        timerRemaining = 45;
+        document.getElementById('btnTimerStart').textContent = 'Start';
+        updateTimerDisplay();
+      });
+
+      document.getElementById('btnTimerPreset90').addEventListener('click', () => {
+        clearInterval(timerInterval);
+        timerInterval = null;
+        timerSeconds = 90;
+        timerRemaining = 90;
+        document.getElementById('btnTimerStart').textContent = 'Start';
+        updateTimerDisplay();
+      });
+
+      renderDrills();
+    </script>
+  </body>
+</html>
