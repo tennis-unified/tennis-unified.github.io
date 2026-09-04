@@ -116,7 +116,11 @@ core_destinations = [
     '/vi/drills/',
     '/books/read/',
     '/vi/book/',
-    '/vi/tennis-technical-reference/authoritative-sources/'
+    '/vi/tennis-technical-reference/authoritative-sources/',
+    '/tennis-technical-reference/hugh-clarke/',
+    '/vi/tennis-technical-reference/hugh-clarke/',
+    '/vi/tennis-technical-reference/hi-tech-tennis-archive/',
+    '/vi/tennis-technical-reference/the-racquet/'
 ]
 
 all_dest_valid = True
