@@ -1,0 +1,37 @@
+---
+title: "Absolute Tennis"
+description: "Marty Smith's foundational text including the famous Ch. 12 'Future Strokes' (Overlapping Dual Forehand, Reverse Serve, Volleyball Serve, Hybrid Backhand)."
+---
+
+# Absolute Tennis
+
+**Author:** Marty Smith, 2017 · **Domain:** Strokes
+
+Marty Smith's foundational text including the famous Ch. 12 'Future Strokes' (Overlapping Dual Forehand, Reverse Serve, Volleyball Serve, Hybrid Backhand).
+
+!!! tip "Reading controls"
+    Use the toolbar at the top of the PDF (or right-click the iframe) to zoom, navigate pages, search inside the book, or download. **Ctrl+F** searches within the current book. The page is rendered at **100 % width** — use the browser zoom (Ctrl++) to enlarge text further.
+
+---
+
+## Read the book
+
+<iframe class="pdf-viewer" src="../../absolute-tennis.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Absolute Tennis">
+  Your browser does not support inline PDF viewing. <a href="../../absolute-tennis.pdf">Download the PDF</a> instead.
+</iframe>
+
+[Download the PDF ↗](../../absolute-tennis.pdf) · [Open in new tab ↗](../../absolute-tennis.pdf)
+
+---
+
+## Quick reference
+
+!!! info "Why this book matters"
+    Marty Smith's foundational text including the famous Ch. 12 'Future Strokes' (Overlapping Dual Forehand, Reverse Serve, Volleyball Serve, Hybrid Backhand).
+
+!!! note "Pipeline context"
+    This book is part of the [Tennis Knowledge Gap Intranet](../..). It was identified as gap-evidence by the 92-concept diff between the tennis-unified repo and the Tennis Books library, then supplemented with web-research 2024–2026 sources.
+
+---
+
+[← Back to all books](../../) · [Gap reports](../../#latest-synthesis)
