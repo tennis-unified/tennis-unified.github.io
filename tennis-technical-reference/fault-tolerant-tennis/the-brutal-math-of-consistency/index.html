@@ -29,6 +29,7 @@
   <a href="/tnkbgap/book/" class="tu-nav-item" title="Master Book"><span class="tu-nav-emoji">📕</span><span class="tu-nav-text">Master Book</span></a>
   <a href="/tnkbgap/" class="tu-nav-item" title="Gap Analysis"><span class="tu-nav-emoji">📊</span><span class="tu-nav-text">Gap Analysis</span></a>
   <a href="/tnkbgap/books/" class="tu-nav-item" title="Books Coverage"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Books Coverage</span></a>
+  <a href="/vi/" class="tu-nav-item tu-nav-lang" data-lang-toggle title="Chuyển sang Tiếng Việt"><span class="tu-nav-emoji">🌐</span><span class="tu-nav-text">Tiếng Việt</span></a>
   <button class="tu-nav-item tu-nav-darkmode" title="Dark Mode" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button>
 </div>
 <!-- FLATTENED-TOP-NAV-END -->
@@ -79,477 +80,948 @@
 
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tennis Simulator</title>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
-
-<style>
-  .invalid-input {
-    border: 1px solid red !important;
-  }
-.plotly .modebar {
-  display: none !important;
-}
-.error-tooltip i {
-  	color: red;
-}
-	.input-box {
-  width: 110px;
-}
-
-	.tooltip {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    margin-left: 5px;
-  }
-
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 200px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%; /* Position the tooltip above the icon */
-    left: 50%;
-    margin-left: -100px; /* Center the tooltip */
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  .fas.fa-question-circle {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f059";
-  }
-	
-.spinner {
-  border: 3.6px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 3.6px solid #3498db;
-  width: 23px;
-  height: 23px;
-  
-  -webkit-animation: spin 2s linear infinite; /* Safari */
-  animation: spin 2s linear infinite;
-  opacity: 0;
-  transition: opacity 0.2s;
-  position: relative;
-  margin-left: 10px;
-}
-
-/* Popup styles */
-.popup {
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.popup-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close-popup {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.close-popup:hover, .close-popup:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-	
-  .spinner-visible {
-  opacity: 1;
-}
-
-/* Safari */
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-	
-.chart-container {
-  width: 100%;
-  overflow-x: auto;
-  min-width: 600px;
-}
-/* Add this to your existing styles */
-@media screen and (max-width: 649px) {
-  .desktop-chart-container {
-    display: none;
-  }
-}
-@media screen and (min-width: 650px) {
-  #view-results-btn {
-    display: none;
-  }
-}
-
-</style>
-
-<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 1rem;">
-  <div style="margin-bottom: 1rem;">
-    <label for="p1-success-rate">P1 Success Rate:</label>
-<input type="text" id="p1-success-rate" name="p1-success-rate" inputmode="decimal" pattern="\\d*\\.?\\d+" onblur="validateInput(this, 'rate')" class="input-box">
-    <span class="tooltip question-tooltip">
-      <i class="fas fa-question-circle"></i>
-      <span class="tooltiptext">How often P1's shot goes in, between 0 (never) and 1 (always).</span>
-    </span>
-    <span class="tooltip error-tooltip" style="display: none;">
-      <i class="fas fa-exclamation-circle"></i>
-      <span class="tooltiptext">Success rate must be between 0-1 or 0-100%.</span>
-    </span>
-  </div>
-  <div style="margin-bottom: 1rem;">
-    <label for="p2-success-rate">P2 Success Rate:</label>
-<input type="text" id="p2-success-rate" name="p2-success-rate" inputmode="decimal" pattern="\\d*\\.?\\d+" onblur="validateInput(this, 'rate')" class="input-box">
-    <span class="tooltip question-tooltip">
-      <i class="fas fa-question-circle"></i>
-      <span class="tooltiptext">How often the P2's shot goes in, between 0 (never) and 1 (always).</span>
-    </span>
-    <span class="tooltip error-tooltip" style="display: none;">
-      <i class="fas fa-exclamation-circle"></i>
-      <span class="tooltiptext">Success rate must be between 0-1 or 0-100%.</span>
-    </span>
-  </div>
-  <div style="margin-bottom: 1rem;">
-    <label for="number-of-sets">Number of Sets:</label>
-    <input type="number" id="number-of-sets" name="number-of-sets" min="100" max="10000" step="100" onBlur="validateInput(this, 'sets')" class="input-box">
-    <span class="tooltip question-tooltip">
-      <i class="fas fa-question-circle"></i>
-      <span class="tooltiptext">The number of sets to simulate.</span>
-    </span>
-	  <span class="tooltip error-tooltip" style="display: none;">
-      <i class="fas fa-exclamation-circle"></i>
-      <span class="tooltiptext">A number between 100 and 10000.</span>
-    </span>
-  </div>
-	
-	<div id="button-container" style="display: inline-flex; align-items: center;">
-	  <button id="simulate_sets_button" onClick="validateAndSimulateSets()">Simulate Sets</button>
-	  <span id="spinner" class="spinner"></span>
-	<button id="view-results-btn" style="display: none;">View Results</button>
-	</div>
-
-<!-- Popup -->
-<div id="popup-container" class="popup" style="display: none;">
-  <div class="popup-content" id="popup-content">
-    <span id="close-popup" class="close-popup" onClick="closePopup()">&times;</span>
-    <div class="chart-container mobile-chart-container">
-      <div id="popup-chart"></div>
-    </div>
-  </div>
-</div>
-
-<div id="chart-container" class="desktop-chart-container chart-container">
-  <div id="chart"></div>
-</div>
-
-
-</div>
-	
-
-
-  <script>
-
-function closePopup(){
-	document.getElementById('popup-container').style.display = 'none';
-}
-function successRateIsInvalid(rate){
-	return isNaN(rate) || rate < 0 || rate > 1
-}
-	  
-function setsNumberIsInvalid(sets){
-	return isNaN(sets) || sets < 100 || sets > 10000
-}
-
-function convertSuccessRate(inputValue) {
-  if (typeof inputValue === 'string') {
-    // Check if the input is a percentage
-    if (inputValue.endsWith('%')) {
-      // Remove the '%' sign and divide by 100
-      inputValue = parseFloat(inputValue.slice(0, -1)) / 100;
-    } else {
-      // Parse the input as a float
-      inputValue = parseFloat(inputValue);
-    }
-  }
-
-  // If the parsed value is greater than 1, consider it as percentage
-  if (inputValue > 1) {
-    inputValue /= 100;
-  }
-	
-  return inputValue;
-}
-
-
-function validateInput(input, type) {
-  const questionTooltip = input.parentElement.querySelector('.question-tooltip');
-  const errorTooltip = input.parentElement.querySelector('.error-tooltip');
-  
-  if ((type == 'rate' && successRateIsInvalid(convertSuccessRate(input.value))) || (type == 'sets' && setsNumberIsInvalid(input.value))) {
-    input.classList.add('invalid-input');
-    questionTooltip.style.display = 'none';
-    errorTooltip.style.display = 'inline-block';
-  } else {
-    input.classList.remove('invalid-input');
-    input.title = '';
-    questionTooltip.style.display = 'inline-block';
-    errorTooltip.style.display = 'none';
-  }
-}
-
-
-
-
-    const exampleData = {
-      "6-0": { p1: 4, p2: 3 },
-      "6-1": { p1: 7, p2: 6 },
-      "6-2": { p1: 10, p2: 8 },
-      "6-3": { p1: 12, p2: 9 },
-      "6-4": { p1: 35, p2: 11 },
-      "7-5": { p1: 8, p2: 7 },
-      "7-6": { p1: 6, p2: 5 }
-    };
-
-
-
-function displayChart(data_from_response, chartElementId='chart') {
-  var data = data_from_response.results
-  var p1SuccessRate = data_from_response.inputs.p1_success_rate
-  var p2SuccessRate = data_from_response.inputs.p2_success_rate
-
-  const totalP1Wins = Object.values(data).reduce((acc, obj) => acc + obj.p1, 0);
-  const totalP2Wins = Object.values(data).reduce((acc, obj) => acc + obj.p2, 0);
-  const totalSets = totalP1Wins + totalP2Wins;
-
-
-  const chart_info = [
-    {
-      x: Object.keys(data),
-      y: Object.values(data).map(obj => (obj.p1 / totalSets) * 100),
-      name: 'P1 Wins',
-      type: 'bar',
-      width: 0.3,
-      marker: { color: 'red' },
-      hovertemplate: '%{y:.1f}%<br>%{text} Wins<extra></extra>',
-      text: Object.values(data).map(obj => obj.p1)
-    },
-    {
-      x: Object.keys(data),
-      y: Object.values(data).map(obj => (obj.p2 / totalSets) * 100),
-      name: 'P2 Wins',
-      type: 'bar',
-      width: 0.3,
-      marker: { color: 'blue' },
-      xaxis: 'x2',
-      hovertemplate: '%{y:.1f}%<br>%{text} Wins<extra></extra>',
-      text: Object.values(data).map(obj => obj.p2)
-    },
-  ];
-
-const p1WinRate = Math.round((totalP1Wins / totalSets) * 100);
-const p2WinRate = Math.round((totalP2Wins / totalSets) * 100);
-
-const layout = {
-title: {
-           text: `P1 Success Rate: ${p1SuccessRate} | P2 Success Rate: ${p2SuccessRate}`,
-	font: { size: 16 },
-    pad: { t: 0, b: 0 },
-  },
-  grid: { rows: 1, columns: 2, pattern: 'independent' },
-  xaxis: {
-    domain: [0, 0.48],
-    font: { size: 14 },
-    title: { text: `P1 Wins ${p1WinRate}%`, font: { size: 14 } },
-  },
-  xaxis2: {
-    domain: [0.52, 1],
-    font: { size: 14 },
-    anchor: 'y',
-    title: { text: `P2 Wins ${p2WinRate}%`, font: { size: 14 } },
-  },
-  yaxis: {
-    title: {
-      text: 'Frequency',
-      font: { size: 14 },
-      standoff: 100,
-    },
-    tickformat: '.0f',
-    tickprefix: '',
-    ticksuffix: '%',
-  },
-  showlegend: false,
-  autosize: true,
-  margin: { t: 100, b: 50, l: 60, r: 50 },
-  dragmode: false
-};
-
-  Plotly.newPlot(chartElementId, chart_info, layout, { 
-	  responsive: true,
-	  displayModeBar: false,
-  });
-
-	// If displaying the chart in a popup, adjust the popup dimensions
-  if (chartElementId === 'popup-chart') {
-  const chartElement = document.getElementById(chartElementId);
-  const popupContent = document.getElementById('popup-content');
-  const closePopup = document.getElementById('close-popup');
-
-  const paddingTop = 0; // Adjust this value according to your preference
-  const paddingRight = 20; // Adjust this value according to your preference
-  const paddingLeft = 20; // Adjust this value according to your preference
-  const paddingBottom = 80; // Adjust this value according to your preference
-
-  // Wait for the chart to be drawn, then get its dimensions
-  setTimeout(() => {
-    const chartWidth = chartElement.clientWidth;
-    const chartHeight = chartElement.clientHeight;
-
-    // Set the popup content dimensions based on the chart dimensions
-    popupContent.style.width = chartWidth + paddingLeft + paddingRight + 'px';
-    popupContent.style.height = chartHeight + paddingTop + paddingBottom + 'px';
-
-    // Position the close button
-    closePopup.style.top = paddingTop / 2 + 'px';
-    closePopup.style.right = paddingRight / 2 + 'px';
-  }, 100);
-}
-
-}
-	  
-
-
-const SIMULATE_SETS_ENDPOINT = "https://ytrgr0x6sg.execute-api.us-east-1.amazonaws.com/dev/simulate-sets";
-
-async function validateAndSimulateSets() {
-	
-  document.getElementById("simulate_sets_button").blur();	
-  document.getElementById("view-results-btn").style.display = 'none';
-  const p1SuccessRateInput = document.getElementById("p1-success-rate");
-  const p2SuccessRateInput = document.getElementById("p2-success-rate");
-  const numSetsInput = document.getElementById("number-of-sets");
-
-  const errors = [];
-
-  if (successRateIsInvalid(convertSuccessRate(p1SuccessRateInput.value))) {
-    errors.push("P1 Success Rate must be between 0-1 or 0%-100%.");
-  }
-
-  if (successRateIsInvalid(convertSuccessRate(p2SuccessRateInput.value))) {
-    errors.push("P2 Success Rate must be between 0-1 or 0%-100%.");
-  }
-
-  if (setsNumberIsInvalid(parseInt(numSetsInput.value))) {
-    errors.push("Number of Sets must be between 100-10000.");
-  }
-
-  if (errors.length > 0) {
-    alert(`We've gotta fix a few things before simulating:\n- ${errors.join('\n- ')}`);
-    return;
-  }
-  const postData = {
-    num_sets: parseInt(numSetsInput.value),
-    p1_success_rate: convertSuccessRate(p1SuccessRateInput.value),
-    p2_success_rate: convertSuccessRate(p2SuccessRateInput.value),
-  };
-
-  const requestOptions = {
-    method: "POST",
-    headers: { "Content-Type": "application/json",
-			 },
-    body: JSON.stringify(postData),
-  };
-	
-  // Create the spinner element
-  const spinner = document.getElementById("spinner");
-  spinner.classList.add("spinner-visible");
-	
-  try {
-    const response = await fetch(
-      SIMULATE_SETS_ENDPOINT,
-      requestOptions
-    );
-    const responseData = await response.json()
-	// Remove the spinner
-    spinner.classList.remove("spinner-visible");
-    if (!response.ok) {
-      console.error("Error: ", responseData);
-	  alert("Sorry, the simulation ran into an issue. Please email faulttoleranttennis@gmail.com so we can fix it!");
-    } else {
-      console.log("Success: ", responseData);
-      
-	  // Show the View Results button if the screen width is less than or equal to 649px
-      const viewResultsBtn = document.getElementById("view-results-btn");
-      if (window.innerWidth <= 649) {
-        viewResultsBtn.style.display = "block";
-		document.getElementById('view-results-btn').addEventListener('click', function() {
-  		// Call displayChart function with the same data for the popup chart
-  		document.getElementById('popup-container').style.display = 'block';
-  		displayChart(responseData, 'popup-chart');
-});
-      } else {
-        viewResultsBtn.style.display = "none";
-      }
-	   displayChart(responseData);
-    }
-  } catch (error) {
-    console.error("Error: ", error);
-	// Remove the spinner
-    spinner.classList.remove("spinner-visible");
-  }
-}
-	  
-// document.addEventListener('DOMContentLoaded', () => {
-//   const simulateSetsButton = document.getElementById('simulate_sets_button');
-//   simulateSetsButton.addEventListener('click', validateAndSimulateSets);
-// });
-
-document.addEventListener('DOMContentLoaded', () => {
-  //create a POST request using num_sets = 100, p1_success_rate = .6, p2_success_rate = .5
-  //store the post body resopnse in data
-  //displayChart(data);
-  return
-});  </script>
-</html>
-
-
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tennis Simulator</title>
+
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+
+
+<style>
+
+  .invalid-input {
+
+    border: 1px solid red !important;
+
+  }
+
+.plotly .modebar {
+
+  display: none !important;
+
+}
+
+.error-tooltip i {
+
+  	color: red;
+
+}
+
+	.input-box {
+
+  width: 110px;
+
+}
+
+
+
+	.tooltip {
+
+    position: relative;
+
+    display: inline-block;
+
+    cursor: pointer;
+
+    margin-left: 5px;
+
+  }
+
+
+
+  .tooltip .tooltiptext {
+
+    visibility: hidden;
+
+    width: 200px;
+
+    background-color: #555;
+
+    color: #fff;
+
+    text-align: center;
+
+    border-radius: 6px;
+
+    padding: 5px;
+
+    position: absolute;
+
+    z-index: 1;
+
+    bottom: 125%; /* Position the tooltip above the icon */
+
+    left: 50%;
+
+    margin-left: -100px; /* Center the tooltip */
+
+    opacity: 0;
+
+    transition: opacity 0.3s;
+
+  }
+
+
+
+  .tooltip:hover .tooltiptext {
+
+    visibility: visible;
+
+    opacity: 1;
+
+  }
+
+
+
+  .fas.fa-question-circle {
+
+    font-family: "Font Awesome 5 Free";
+
+    font-weight: 900;
+
+    content: "\f059";
+
+  }
+
+	
+
+.spinner {
+
+  border: 3.6px solid #f3f3f3;
+
+  border-radius: 50%;
+
+  border-top: 3.6px solid #3498db;
+
+  width: 23px;
+
+  height: 23px;
+
+  
+
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+
+  animation: spin 2s linear infinite;
+
+  opacity: 0;
+
+  transition: opacity 0.2s;
+
+  position: relative;
+
+  margin-left: 10px;
+
+}
+
+
+
+/* Popup styles */
+
+.popup {
+
+  position: fixed;
+
+  z-index: 1;
+
+  left: 0;
+
+  top: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  overflow: auto;
+
+  background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+
+
+.popup-content {
+
+  background-color: #fefefe;
+
+  margin: 15% auto;
+
+  padding: 20px;
+
+  border: 1px solid #888;
+
+  width: 80%;
+
+}
+
+
+
+.close-popup {
+
+  color: #aaaaaa;
+
+  float: right;
+
+  font-size: 28px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+}
+
+
+
+.close-popup:hover, .close-popup:focus {
+
+  color: #000;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+}
+
+
+
+	
+
+  .spinner-visible {
+
+  opacity: 1;
+
+}
+
+
+
+/* Safari */
+
+@-webkit-keyframes spin {
+
+  0% { -webkit-transform: rotate(0deg); }
+
+  100% { -webkit-transform: rotate(360deg); }
+
+}
+
+
+
+@keyframes spin {
+
+  0% { transform: rotate(0deg); }
+
+  100% { transform: rotate(360deg); }
+
+}
+
+	
+
+.chart-container {
+
+  width: 100%;
+
+  overflow-x: auto;
+
+  min-width: 600px;
+
+}
+
+/* Add this to your existing styles */
+
+@media screen and (max-width: 649px) {
+
+  .desktop-chart-container {
+
+    display: none;
+
+  }
+
+}
+
+@media screen and (min-width: 650px) {
+
+  #view-results-btn {
+
+    display: none;
+
+  }
+
+}
+
+
+
+</style>
+
+
+
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 1rem;">
+
+  <div style="margin-bottom: 1rem;">
+
+    <label for="p1-success-rate">P1 Success Rate:</label>
+
+<input type="text" id="p1-success-rate" name="p1-success-rate" inputmode="decimal" pattern="\\d*\\.?\\d+" onblur="validateInput(this, 'rate')" class="input-box">
+
+    <span class="tooltip question-tooltip">
+
+      <i class="fas fa-question-circle"></i>
+
+      <span class="tooltiptext">How often P1's shot goes in, between 0 (never) and 1 (always).</span>
+
+    </span>
+
+    <span class="tooltip error-tooltip" style="display: none;">
+
+      <i class="fas fa-exclamation-circle"></i>
+
+      <span class="tooltiptext">Success rate must be between 0-1 or 0-100%.</span>
+
+    </span>
+
+  </div>
+
+  <div style="margin-bottom: 1rem;">
+
+    <label for="p2-success-rate">P2 Success Rate:</label>
+
+<input type="text" id="p2-success-rate" name="p2-success-rate" inputmode="decimal" pattern="\\d*\\.?\\d+" onblur="validateInput(this, 'rate')" class="input-box">
+
+    <span class="tooltip question-tooltip">
+
+      <i class="fas fa-question-circle"></i>
+
+      <span class="tooltiptext">How often the P2's shot goes in, between 0 (never) and 1 (always).</span>
+
+    </span>
+
+    <span class="tooltip error-tooltip" style="display: none;">
+
+      <i class="fas fa-exclamation-circle"></i>
+
+      <span class="tooltiptext">Success rate must be between 0-1 or 0-100%.</span>
+
+    </span>
+
+  </div>
+
+  <div style="margin-bottom: 1rem;">
+
+    <label for="number-of-sets">Number of Sets:</label>
+
+    <input type="number" id="number-of-sets" name="number-of-sets" min="100" max="10000" step="100" onBlur="validateInput(this, 'sets')" class="input-box">
+
+    <span class="tooltip question-tooltip">
+
+      <i class="fas fa-question-circle"></i>
+
+      <span class="tooltiptext">The number of sets to simulate.</span>
+
+    </span>
+
+	  <span class="tooltip error-tooltip" style="display: none;">
+
+      <i class="fas fa-exclamation-circle"></i>
+
+      <span class="tooltiptext">A number between 100 and 10000.</span>
+
+    </span>
+
+  </div>
+
+	
+
+	<div id="button-container" style="display: inline-flex; align-items: center;">
+
+	  <button id="simulate_sets_button" onClick="validateAndSimulateSets()">Simulate Sets</button>
+
+	  <span id="spinner" class="spinner"></span>
+
+	<button id="view-results-btn" style="display: none;">View Results</button>
+
+	</div>
+
+
+
+<!-- Popup -->
+
+<div id="popup-container" class="popup" style="display: none;">
+
+  <div class="popup-content" id="popup-content">
+
+    <span id="close-popup" class="close-popup" onClick="closePopup()">&times;</span>
+
+    <div class="chart-container mobile-chart-container">
+
+      <div id="popup-chart"></div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<div id="chart-container" class="desktop-chart-container chart-container">
+
+  <div id="chart"></div>
+
+</div>
+
+
+
+
+
+</div>
+
+	
+
+
+
+
+
+  <script>
+
+
+
+function closePopup(){
+
+	document.getElementById('popup-container').style.display = 'none';
+
+}
+
+function successRateIsInvalid(rate){
+
+	return isNaN(rate) || rate < 0 || rate > 1
+
+}
+
+	  
+
+function setsNumberIsInvalid(sets){
+
+	return isNaN(sets) || sets < 100 || sets > 10000
+
+}
+
+
+
+function convertSuccessRate(inputValue) {
+
+  if (typeof inputValue === 'string') {
+
+    // Check if the input is a percentage
+
+    if (inputValue.endsWith('%')) {
+
+      // Remove the '%' sign and divide by 100
+
+      inputValue = parseFloat(inputValue.slice(0, -1)) / 100;
+
+    } else {
+
+      // Parse the input as a float
+
+      inputValue = parseFloat(inputValue);
+
+    }
+
+  }
+
+
+
+  // If the parsed value is greater than 1, consider it as percentage
+
+  if (inputValue > 1) {
+
+    inputValue /= 100;
+
+  }
+
+	
+
+  return inputValue;
+
+}
+
+
+
+
+
+function validateInput(input, type) {
+
+  const questionTooltip = input.parentElement.querySelector('.question-tooltip');
+
+  const errorTooltip = input.parentElement.querySelector('.error-tooltip');
+
+  
+
+  if ((type == 'rate' && successRateIsInvalid(convertSuccessRate(input.value))) || (type == 'sets' && setsNumberIsInvalid(input.value))) {
+
+    input.classList.add('invalid-input');
+
+    questionTooltip.style.display = 'none';
+
+    errorTooltip.style.display = 'inline-block';
+
+  } else {
+
+    input.classList.remove('invalid-input');
+
+    input.title = '';
+
+    questionTooltip.style.display = 'inline-block';
+
+    errorTooltip.style.display = 'none';
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+    const exampleData = {
+
+      "6-0": { p1: 4, p2: 3 },
+
+      "6-1": { p1: 7, p2: 6 },
+
+      "6-2": { p1: 10, p2: 8 },
+
+      "6-3": { p1: 12, p2: 9 },
+
+      "6-4": { p1: 35, p2: 11 },
+
+      "7-5": { p1: 8, p2: 7 },
+
+      "7-6": { p1: 6, p2: 5 }
+
+    };
+
+
+
+
+
+
+
+function displayChart(data_from_response, chartElementId='chart') {
+
+  var data = data_from_response.results
+
+  var p1SuccessRate = data_from_response.inputs.p1_success_rate
+
+  var p2SuccessRate = data_from_response.inputs.p2_success_rate
+
+
+
+  const totalP1Wins = Object.values(data).reduce((acc, obj) => acc + obj.p1, 0);
+
+  const totalP2Wins = Object.values(data).reduce((acc, obj) => acc + obj.p2, 0);
+
+  const totalSets = totalP1Wins + totalP2Wins;
+
+
+
+
+
+  const chart_info = [
+
+    {
+
+      x: Object.keys(data),
+
+      y: Object.values(data).map(obj => (obj.p1 / totalSets) * 100),
+
+      name: 'P1 Wins',
+
+      type: 'bar',
+
+      width: 0.3,
+
+      marker: { color: 'red' },
+
+      hovertemplate: '%{y:.1f}%<br>%{text} Wins<extra></extra>',
+
+      text: Object.values(data).map(obj => obj.p1)
+
+    },
+
+    {
+
+      x: Object.keys(data),
+
+      y: Object.values(data).map(obj => (obj.p2 / totalSets) * 100),
+
+      name: 'P2 Wins',
+
+      type: 'bar',
+
+      width: 0.3,
+
+      marker: { color: 'blue' },
+
+      xaxis: 'x2',
+
+      hovertemplate: '%{y:.1f}%<br>%{text} Wins<extra></extra>',
+
+      text: Object.values(data).map(obj => obj.p2)
+
+    },
+
+  ];
+
+
+
+const p1WinRate = Math.round((totalP1Wins / totalSets) * 100);
+
+const p2WinRate = Math.round((totalP2Wins / totalSets) * 100);
+
+
+
+const layout = {
+
+title: {
+
+           text: `P1 Success Rate: ${p1SuccessRate} | P2 Success Rate: ${p2SuccessRate}`,
+
+	font: { size: 16 },
+
+    pad: { t: 0, b: 0 },
+
+  },
+
+  grid: { rows: 1, columns: 2, pattern: 'independent' },
+
+  xaxis: {
+
+    domain: [0, 0.48],
+
+    font: { size: 14 },
+
+    title: { text: `P1 Wins ${p1WinRate}%`, font: { size: 14 } },
+
+  },
+
+  xaxis2: {
+
+    domain: [0.52, 1],
+
+    font: { size: 14 },
+
+    anchor: 'y',
+
+    title: { text: `P2 Wins ${p2WinRate}%`, font: { size: 14 } },
+
+  },
+
+  yaxis: {
+
+    title: {
+
+      text: 'Frequency',
+
+      font: { size: 14 },
+
+      standoff: 100,
+
+    },
+
+    tickformat: '.0f',
+
+    tickprefix: '',
+
+    ticksuffix: '%',
+
+  },
+
+  showlegend: false,
+
+  autosize: true,
+
+  margin: { t: 100, b: 50, l: 60, r: 50 },
+
+  dragmode: false
+
+};
+
+
+
+  Plotly.newPlot(chartElementId, chart_info, layout, { 
+
+	  responsive: true,
+
+	  displayModeBar: false,
+
+  });
+
+
+
+	// If displaying the chart in a popup, adjust the popup dimensions
+
+  if (chartElementId === 'popup-chart') {
+
+  const chartElement = document.getElementById(chartElementId);
+
+  const popupContent = document.getElementById('popup-content');
+
+  const closePopup = document.getElementById('close-popup');
+
+
+
+  const paddingTop = 0; // Adjust this value according to your preference
+
+  const paddingRight = 20; // Adjust this value according to your preference
+
+  const paddingLeft = 20; // Adjust this value according to your preference
+
+  const paddingBottom = 80; // Adjust this value according to your preference
+
+
+
+  // Wait for the chart to be drawn, then get its dimensions
+
+  setTimeout(() => {
+
+    const chartWidth = chartElement.clientWidth;
+
+    const chartHeight = chartElement.clientHeight;
+
+
+
+    // Set the popup content dimensions based on the chart dimensions
+
+    popupContent.style.width = chartWidth + paddingLeft + paddingRight + 'px';
+
+    popupContent.style.height = chartHeight + paddingTop + paddingBottom + 'px';
+
+
+
+    // Position the close button
+
+    closePopup.style.top = paddingTop / 2 + 'px';
+
+    closePopup.style.right = paddingRight / 2 + 'px';
+
+  }, 100);
+
+}
+
+
+
+}
+
+	  
+
+
+
+
+
+const SIMULATE_SETS_ENDPOINT = "https://ytrgr0x6sg.execute-api.us-east-1.amazonaws.com/dev/simulate-sets";
+
+
+
+async function validateAndSimulateSets() {
+
+	
+
+  document.getElementById("simulate_sets_button").blur();	
+
+  document.getElementById("view-results-btn").style.display = 'none';
+
+  const p1SuccessRateInput = document.getElementById("p1-success-rate");
+
+  const p2SuccessRateInput = document.getElementById("p2-success-rate");
+
+  const numSetsInput = document.getElementById("number-of-sets");
+
+
+
+  const errors = [];
+
+
+
+  if (successRateIsInvalid(convertSuccessRate(p1SuccessRateInput.value))) {
+
+    errors.push("P1 Success Rate must be between 0-1 or 0%-100%.");
+
+  }
+
+
+
+  if (successRateIsInvalid(convertSuccessRate(p2SuccessRateInput.value))) {
+
+    errors.push("P2 Success Rate must be between 0-1 or 0%-100%.");
+
+  }
+
+
+
+  if (setsNumberIsInvalid(parseInt(numSetsInput.value))) {
+
+    errors.push("Number of Sets must be between 100-10000.");
+
+  }
+
+
+
+  if (errors.length > 0) {
+
+    alert(`We've gotta fix a few things before simulating:\n- ${errors.join('\n- ')}`);
+
+    return;
+
+  }
+
+  const postData = {
+
+    num_sets: parseInt(numSetsInput.value),
+
+    p1_success_rate: convertSuccessRate(p1SuccessRateInput.value),
+
+    p2_success_rate: convertSuccessRate(p2SuccessRateInput.value),
+
+  };
+
+
+
+  const requestOptions = {
+
+    method: "POST",
+
+    headers: { "Content-Type": "application/json",
+
+			 },
+
+    body: JSON.stringify(postData),
+
+  };
+
+	
+
+  // Create the spinner element
+
+  const spinner = document.getElementById("spinner");
+
+  spinner.classList.add("spinner-visible");
+
+	
+
+  try {
+
+    const response = await fetch(
+
+      SIMULATE_SETS_ENDPOINT,
+
+      requestOptions
+
+    );
+
+    const responseData = await response.json()
+
+	// Remove the spinner
+
+    spinner.classList.remove("spinner-visible");
+
+    if (!response.ok) {
+
+      console.error("Error: ", responseData);
+
+	  alert("Sorry, the simulation ran into an issue. Please email faulttoleranttennis@gmail.com so we can fix it!");
+
+    } else {
+
+      console.log("Success: ", responseData);
+
+      
+
+	  // Show the View Results button if the screen width is less than or equal to 649px
+
+      const viewResultsBtn = document.getElementById("view-results-btn");
+
+      if (window.innerWidth <= 649) {
+
+        viewResultsBtn.style.display = "block";
+
+		document.getElementById('view-results-btn').addEventListener('click', function() {
+
+  		// Call displayChart function with the same data for the popup chart
+
+  		document.getElementById('popup-container').style.display = 'block';
+
+  		displayChart(responseData, 'popup-chart');
+
+});
+
+      } else {
+
+        viewResultsBtn.style.display = "none";
+
+      }
+
+	   displayChart(responseData);
+
+    }
+
+  } catch (error) {
+
+    console.error("Error: ", error);
+
+	// Remove the spinner
+
+    spinner.classList.remove("spinner-visible");
+
+  }
+
+}
+
+	  
+
+// document.addEventListener('DOMContentLoaded', () => {
+
+//   const simulateSetsButton = document.getElementById('simulate_sets_button');
+
+//   simulateSetsButton.addEventListener('click', validateAndSimulateSets);
+
+// });
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  //create a POST request using num_sets = 100, p1_success_rate = .6, p2_success_rate = .5
+
+  //store the post body resopnse in data
+
+  //displayChart(data);
+
+  return
+
+});  </script>
+
+</html>
+
+
+
+
+
 
 
 
