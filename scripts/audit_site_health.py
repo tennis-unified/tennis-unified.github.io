@@ -23,60 +23,57 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 ROOT = Path(__file__).resolve().parent.parent
 
-print("=" * 70)
-print(f"🎾 TENNIS UNIFIED SITE HEALTH AUDIT")
-print(f"Directory: {ROOT}")
-print(f"Time: {time.strftime('%Y-%m-%d %H:%M:%S')}")
-print("=" * 70)
+print("=" * 70, flush=True)
+print(f"🎾 TENNIS UNIFIED SITE HEALTH AUDIT", flush=True)
+print(f"Directory: {ROOT}", flush=True)
+print(f"Time: {time.strftime('%Y-%m-%d %H:%M:%S')}", flush=True)
+print("=" * 70, flush=True)
 
-all_html = list(ROOT.glob("**/*.html"))
+all_html = [f for f in ROOT.rglob("*.html") if ".git" not in f.parts]
 en_html = [f for f in all_html if not f.is_relative_to(ROOT / "vi")]
 vi_html = [f for f in all_html if f.is_relative_to(ROOT / "vi")]
 
-print(f"Found {len(all_html)} total HTML pages:")
-print(f"  - English pages: {len(en_html)}")
-print(f"  - Vietnamese pages: {len(vi_html)}")
-print("-" * 70)
+print(f"Found {len(all_html)} total HTML pages:", flush=True)
+print(f"  - English pages: {len(en_html)}", flush=True)
+print(f"  - Vietnamese pages: {len(vi_html)}", flush=True)
+print("-" * 70, flush=True)
 
-# Check 1: Topnav & Language Toggle
-print("[1/4] Checking Cross-Language Top Navigation & Toggles...")
+# Single-pass checks: Topnav, Language Toggle, and Path Leaks
+print("[1/4] Checking Cross-Language Top Navigation & Toggles...", flush=True)
 missing_toggle_en = 0
 missing_toggle_vi = 0
 vi_topnav_unlocalized = 0
-
-for f in en_html:
-    txt = f.read_text(encoding='utf-8')
-    if 'tu-topnav' in txt and 'data-lang-toggle' not in txt:
-        missing_toggle_en += 1
-
-for f in vi_html:
-    txt = f.read_text(encoding='utf-8')
-    if 'tu-topnav' in txt:
-        if 'data-lang-toggle' not in txt:
-            missing_toggle_vi += 1
-        # Check if topnav still points to unlocalized English root
-        topnav_match = re.search(r'<!-- FLATTENED-TOP-NAV-START -->.*?<!-- FLATTENED-TOP-NAV-END -->', txt, flags=re.DOTALL)
-        if topnav_match and 'href="/fundamentals/"' in topnav_match.group(0):
-            vi_topnav_unlocalized += 1
-
-print(f"  EN pages with topnav missing toggle: {missing_toggle_en}")
-print(f"  VI pages with topnav missing toggle: {missing_toggle_vi}")
-print(f"  VI pages with unlocalized topnav links: {vi_topnav_unlocalized}")
-
-# Check 2: Local Path Leaks
-print("\n[2/4] Checking for Local Path Leaks (e.g. C:\\Users, d:\\Github)...")
 path_leaks = []
 leak_pattern = re.compile(r'(?:[a-zA-Z]:[/\\](?:Users|Github|Projects)[/\\][^\s"\'<>]+)', flags=re.I)
 
 for f in all_html:
-    txt = f.read_text(encoding='utf-8')
+    txt = f.read_text(encoding='utf-8', errors='ignore')
+    is_vi = f.is_relative_to(ROOT / "vi")
+    
+    if 'tu-topnav' in txt:
+        if 'data-lang-toggle' not in txt:
+            if is_vi:
+                missing_toggle_vi += 1
+            else:
+                missing_toggle_en += 1
+        if is_vi:
+            topnav_match = re.search(r'<!-- FLATTENED-TOP-NAV-START -->.*?<!-- FLATTENED-TOP-NAV-END -->', txt, flags=re.DOTALL)
+            if topnav_match and 'href="/fundamentals/"' in topnav_match.group(0):
+                vi_topnav_unlocalized += 1
+
     leaks = leak_pattern.findall(txt)
     if leaks:
         path_leaks.append((f.relative_to(ROOT), leaks[0]))
 
-print(f"  Files with local path leaks: {len(path_leaks)}")
+print(f"  EN pages with topnav missing toggle: {missing_toggle_en}", flush=True)
+print(f"  VI pages with topnav missing toggle: {missing_toggle_vi}", flush=True)
+print(f"  VI pages with unlocalized topnav links: {vi_topnav_unlocalized}", flush=True)
+
+# Check 2: Local Path Leaks
+print("\n[2/4] Checking for Local Path Leaks (e.g. C:\\Users, d:\\Github)...", flush=True)
+print(f"  Files with local path leaks: {len(path_leaks)}", flush=True)
 for p, l in path_leaks[:5]:
-    print(f"    ⚠️  {p}: {l}")
+    print(f"    ⚠️  {p}: {l}", flush=True)
 
 # Check 3: Image Responsiveness
 print("\n[3/4] Checking Image Tags & Responsive Styling...")
@@ -114,9 +111,9 @@ core_destinations = [
     '/book/',
     '/books/',
     '/gemini-notebooks/',
-    '/research/authoritative-sources/',
+    '/tennis-technical-reference/authoritative-sources/',
     '/vi/book/',
-    '/vi/research/authoritative-sources/'
+    '/vi/tennis-technical-reference/authoritative-sources/'
 ]
 
 all_dest_valid = True
