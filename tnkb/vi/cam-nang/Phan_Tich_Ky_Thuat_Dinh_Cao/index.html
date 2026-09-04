@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Phân Tích Kỹ Thuật Đỉnh Cao: So Sánh Cơ Sinh Học ATP</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+  --ink: #0d0d0d;
+  --paper: #f5f0e8;
+  --accent: #c8401a;
+  --green: #1a6b3c;
+  --gold: #c4952a;
+  --muted: #6b6255;
+  --divider: #d4cbbf;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+}
+.masthead {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 64px 40px 48px;
+  position: relative;
+  overflow: hidden;
+}
+.masthead::before {
+  content: '';
+  position: absolute;
+  top: -60px; right: -80px;
+  width: 420px; height: 420px;
+  border: 60px solid rgba(200,64,26,0.18);
+  border-radius: 50%;
+}
+.masthead::after {
+  content: '';
+  position: absolute;
+  bottom: -100px; left: -40px;
+  width: 280px; height: 280px;
+  border: 40px solid rgba(196,149,42,0.15);
+  border-radius: 50%;
+}
+.tag {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: inline-block;
+  margin-bottom: 20px;
+  position: relative;
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  line-height: 1.1;
+  max-width: 700px;
+  margin-bottom: 24px;
+  position: relative;
+}
+.subtitle {
+  font-size: 18px;
+  color: rgba(245,240,232,0.7);
+  max-width: 560px;
+  font-weight: 300;
+  position: relative;
+}
+.content-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.lead {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--ink);
+  padding: 52px 0 20px;
+  border-bottom: 2px solid var(--ink);
+  margin-bottom: 52px;
+}
+.section-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+.chapter { padding: 44px 0 8px; border-top: 1px solid var(--divider); }
+.chapter:first-of-type { border-top: none; }
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  margin: 32px 0 12px;
+  color: var(--accent);
+}
+h4 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.02rem;
+  margin: 24px 0 10px;
+  color: var(--ink);
+}
+p { margin-bottom: 18px; color: #2a2520; }
+strong { color: var(--ink); }
+.pullquote {
+  border-left: 5px solid var(--accent);
+  padding: 20px 28px;
+  margin: 32px 0;
+  background: rgba(200,64,26,0.05);
+}
+.pullquote p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 0;
+  color: var(--ink);
+}
+.warning {
+  background: rgba(200,64,26,0.08);
+  border: 1.5px solid rgba(200,64,26,0.25);
+  padding: 22px 28px;
+  margin: 32px 0;
+  border-radius: 4px;
+}
+.warning p { margin: 0; font-size: 15px; }
+.warning .badge {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 8px;
+}
+.styled-list { margin: 12px 0 24px; padding-left: 28px; }
+.styled-list li { margin-bottom: 8px; line-height: 1.7; }
+table { width: 100%; border-collapse: collapse; margin: 28px 0; font-size: 15px; }
+th, td { border: 1px solid var(--divider); padding: 10px 14px; text-align: left; vertical-align: top; }
+th { font-family: 'Space Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); background: rgba(200,64,26,0.05); }
+hr { border: none; border-top: 1px solid var(--divider); margin: 32px 0; }
+.page-nav { display: flex; justify-content: space-between; gap: 12px; margin: 56px 0 24px; flex-wrap: wrap; }
+.nav-btn { font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--ink); text-decoration: none; border: 1.5px solid var(--divider); padding: 10px 16px; border-radius: 3px; }
+.nav-btn:hover { border-color: var(--accent); color: var(--accent); }
+footer {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 24px;
+  margin-top: 80px;
+  text-align: center;
+  font-size: 13px;
+  font-family: 'Space Mono', monospace;
+  letter-spacing: 1px;
+  border-top: 1px solid rgba(245,240,232,0.2);
+}
+footer strong { color: var(--gold); }
+footer a { color: var(--gold); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+footer .credit-label { color: var(--gold); }
+@media (max-width: 600px) {
+  .masthead { padding: 44px 24px 36px; }
+  .content-wrap { padding: 0 16px; }
+}
+</style>  <link rel="icon" type="image/svg+xml" href="../../../assets/images/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="../../../assets/images/favicon.png">
+</head><body>
+
+<div class="masthead">
+  <span class="tag">Kiến Trúc Cơ-Thần Kinh Của Tennis Đỉnh Cao</span>
+  <h1>Phân Tích Kỹ Thuật Đỉnh Cao: So Sánh Cơ Sinh Học ATP</h1>
+  <p class="subtitle">Phân Tích Đa Hệ Thống Về Sự Hoàn Thiện Trong Thi Đấu</p>
+</div>
+
+<div class="content-wrap">
+<p class="lead">Phân tích cơ sinh học và thần kinh-vận động so sánh về kỹ thuật ATP đỉnh cao &mdash; lực phản hồi mặt đất, trình tự động học, quản lý trương lực nội tại, và sự tiến hóa trong trận đấu.</p>
+
+<div class="chapter"><p class="section-label">MỤC LỤC</p><h2>Nội Dung</h2><ul class="styled-list"><li><a href="Phan_Tich_Ky_Thuat_Dinh_Cao_Introduction.html">Giới Thiệu: Giới Thiệu</a></li><li><a href="Phan_Tich_Ky_Thuat_Dinh_Cao_Chapter_01.html">Chương 1: Khung Võ-Trí (Martial-Agentic Framework) và Sự Tối Giản Cấu Trúc</a></li><li><a href="Phan_Tich_Ky_Thuat_Dinh_Cao_Chapter_02.html">Chương 2: Vật Lý Của Sức Mạnh: Lực Phản Hồi Mặt Đất và Trình Tự Động Học</a></li><li><a href="Phan_Tich_Ky_Thuat_Dinh_Cao_Chapter_03.html">Chương 3: Động Cơ Nội Tại: Trương Lực Cơ và Kình (Jin)</a></li><li><a href="Phan_Tich_Ky_Thuat_Dinh_Cao_Chapter_04.html">Chương 4: Quản Trị Cơ-Thần Kinh: Thị Giác và Hệ Thống Tiền Đình</a></li><li><a href="Phan_Tich_Ky_Thuat_Dinh_Cao_Chapter_05.html">Chương 5: Cơ Sinh Học So Sánh Của Cú Thuận Tay ATP: Nadal, Djokovic, và Alcaraz</a></li><li><a href="Phan_Tich_Ky_Thuat_Dinh_Cao_Chapter_06.html">Chương 6: Kỹ Thuật Trái Tay và Vật Lý Của Đòn Bẩy</a></li><li><a href="Phan_Tich_Ky_Thuat_Dinh_Cao_Chapter_07.html">Chương 7: Hình Học Chiến Thuật và Sự Ổn Định Hệ Thống</a></li><li><a href="Phan_Tich_Ky_Thuat_Dinh_Cao_Chapter_08.html">Chương 8: Sự Tiến Hóa Trong Trận Đấu: Bốn Giai Đoạn Sụp Đổ Thần Kinh Sinh Học</a></li><li><a href="Phan_Tich_Ky_Thuat_Dinh_Cao_Chapter_09.html">Chương 9: Sức Bền Sinh Lý: Tái Thiết Đan Điền và Trạng Thái Biểu Diễn Lý Tưởng (IPS)</a></li><li><a href="Phan_Tich_Ky_Thuat_Dinh_Cao_Chapter_10.html">Chương 10: 10 Câu Hỏi Thiết Yếu Cho Sự Thành Thục Kỹ Thuật và Chiến Thuật</a></li><li><a href="Phan_Tich_Ky_Thuat_Dinh_Cao_Chapter_11.html">Chương 11: Tổng Hợp: Mô Hình Thống Nhất Của Hiệu Suất Đỉnh Cao</a></li><li><a href="Phan_Tich_Ky_Thuat_Dinh_Cao_Chapter_12.html">Chương 12: Bản Thiết Kế Cú Giao Bóng: Vật Lý Đa Đoạn Của Vũ Khí Tối Thượng</a></li><li><a href="Phan_Tich_Ky_Thuat_Dinh_Cao_Chapter_13.html">Chương 13: Khoảng Trống Kỹ Thuật và Biên Giới Của Nghiên Cứu Tennis Đỉnh Cao</a></li></ul></div>
+
+</div>
+
+
+    <div class="external-resources" style="margin: 48px auto; max-width: 800px;">
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--ink, #1a1a1a); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid var(--accent, #c8401a);">📚 Thư Viện Tennis Mở Rộng (External Resources)</h2>
+        <p style="color: var(--muted, #6b7280); margin-bottom: 20px; font-size: 15px;">Các nguồn tài liệu tennis bổ sung từ hệ sinh thái Tennis Future Lab:</p>
+
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 12px; padding: 12px; background: #faf8f4; border-left: 3px solid var(--accent, #c8401a); border-radius: 4px;">
+                <a href="https://henryphamduc.github.io/tennis-wiki-vi/cam-nang/ebook/" target="_blank" rel="noopener" style="color: var(--accent, #c8401a); font-weight: 600; text-decoration: none; font-size: 16px;">📖 Thư Viện Tennis Hoàn Chỉnh (35+ Tài Liệu)</a>
+                <p style="margin: 4px 0 0 0; color: var(--muted, #6b7280); font-size: 14px;">Bộ sưu tập 35+ tài liệu tennis từ cơ bản đến nâng cao.</p>
+            </li>
+            <li style="margin-bottom: 12px; padding: 12px; background: #faf8f4; border-left: 3px solid var(--accent, #c8401a); border-radius: 4px;">
+                <a href="https://henryphamduc.github.io/tennis-biomechanics/" target="_blank" rel="noopener" style="color: var(--accent, #c8401a); font-weight: 600; text-decoration: none; font-size: 16px;">🦴 Sinh Cơ Học Tennis - Cẩm Nang 2026</a>
+                <p style="margin: 4px 0 0 0; color: var(--muted, #6b7280); font-size: 14px;">Cẩm nang sinh cơ học tennis ứng dụng cho vận động viên và HLV.</p>
+            </li>
+            <li style="margin-bottom: 12px; padding: 12px; background: #faf8f4; border-left: 3px solid var(--accent, #c8401a); border-radius: 4px;">
+                <a href="https://henryphamduc.github.io/tennis-guide/" target="_blank" rel="noopener" style="color: var(--accent, #c8401a); font-weight: 600; text-decoration: none; font-size: 16px;">🎾 Tennis Control System Interactive Guide</a>
+                <p style="margin: 4px 0 0 0; color: var(--muted, #6b7280); font-size: 14px;">Hướng dẫn tương tác về hệ thống kiểm soát tennis.</p>
+            </li>
+            <li style="margin-bottom: 12px; padding: 12px; background: #faf8f4; border-left: 3px solid var(--accent, #c8401a); border-radius: 4px;">
+                <a href="https://henryphamduc.github.io/tennis-wiki/en/manual/absolute-tennis/index.html" target="_blank" rel="noopener" style="color: var(--accent, #c8401a); font-weight: 600; text-decoration: none; font-size: 16px;">🏆 ABSOLUTE TENNIS Manual - Tennis Knowledge Base</a>
+                <p style="margin: 4px 0 0 0; color: var(--muted, #6b7280); font-size: 14px;">Cơ sở tri thức tennis toàn diện — cẩm nang tham khảo cho mọi trình độ.</p>
+            </li>
+        </ul>
+    </div>
+
+<footer>
+  <p style="margin: 4px 0;"><span class="credit-label">Created by</span> <strong>Henry Pham, Tennis Future Lab</strong> under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank">Creative Commons BY-NC-SA 4.0</a>.</p>
+</footer>
+</body></html>

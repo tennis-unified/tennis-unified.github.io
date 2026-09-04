@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Advanced Tennis Training Manual — Chapter-by-Chapter Edition</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+    --ink: #0d0d0d;
+    --paper: #fafaf7;
+    --accent: #c8401a;
+    --green: #1a6b3c;
+    --gold: #c4952a;
+    --muted: #6b7280;
+    --divider: #e5e7eb;
+    --bg-card: #ffffff;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+.layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    max-width: 1280px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+.sidebar {
+    background: white;
+    border-right: 1px solid var(--divider);
+    padding: 32px 24px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+.sidebar-brand {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+}
+.sidebar-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+.sidebar-back {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 32px;
+    display: inline-block;
+    text-decoration: none;
+}
+.sidebar-back:hover { color: var(--accent); }
+.sidebar-section { margin-bottom: 28px; }
+.sidebar-section-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+    padding: 4px 10px;
+    background: rgba(200,64,26,0.08);
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+.sidebar-chapter-list { list-style: none; padding: 0; }
+.sidebar-chapter-list li { margin-bottom: 4px; }
+.sidebar-chapter-list a {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 8px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--ink);
+    font-size: 13.5px;
+    line-height: 1.4;
+    transition: background 0.15s;
+}
+.sidebar-chapter-list a:hover { background: var(--paper); }
+.sidebar-chapter-list .num {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    flex-shrink: 0;
+    min-width: 22px;
+    padding-top: 1px;
+}
+.main {
+    padding: 56px 64px;
+    max-width: 760px;
+}
+.main-header {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 28px;
+    margin-bottom: 48px;
+}
+.crumbs {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 16px;
+}
+.crumbs a { color: var(--accent); text-decoration: none; }
+.crumbs a:hover { text-decoration: underline; }
+.main h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 2.6rem);
+    line-height: 1.15;
+    margin-bottom: 16px;
+    color: var(--ink);
+}
+.main .lead {
+    font-size: 17px;
+    color: var(--muted);
+    max-width: 640px;
+}
+.section-block { margin-bottom: 56px; }
+.section-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+    padding: 4px 12px;
+    background: rgba(200,64,26,0.08);
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.chapter-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 18px 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--divider);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: var(--ink);
+    transition: border-color 0.15s, transform 0.15s;
+}
+.chapter-card:hover {
+    border-color: var(--accent);
+    transform: translateX(4px);
+}
+.chapter-card .num {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+    min-width: 32px;
+    flex-shrink: 0;
+    padding-top: 2px;
+}
+.chapter-card .body { flex: 1; min-width: 0; }
+.chapter-card .ch-title {
+    font-weight: 600;
+    font-size: 15.5px;
+    color: var(--ink);
+    margin-bottom: 4px;
+}
+.chapter-card .ch-desc {
+    font-size: 13.5px;
+    color: var(--muted);
+    line-height: 1.5;
+}
+.chapter-card .arrow {
+    color: var(--accent);
+    font-size: 14px;
+    padding-top: 2px;
+    flex-shrink: 0;
+}
+footer {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.75;
+    text-align: center;
+    padding: 32px;
+    margin-top: 80px;
+}
+.cc-license {
+    font-size: 12px;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    background: var(--ink);
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+.cc-license a { color: var(--gold); }
+@media (max-width: 900px) {
+    .layout { grid-template-columns: 1fr; }
+    .sidebar { position: relative; height: auto; max-height: 50vh; }
+    .main { padding: 40px 24px; }
+}
+
+.footer-divider {
+    border: none;
+    border-top: 2px solid var(--ink);
+    margin: 48px auto 0 auto;
+    max-width: 900px;
+    width: 100%;
+}
+</style>
+<style id="tfl-theme-system">
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --ink: #0d0d0d;
+    --paper: #fafaf7;
+    --accent: #c8401a;
+    --green: #1a6b3c;
+    --gold: #c4952a;
+    --muted: #6b7280;
+    --divider: #e5e7eb;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.masthead {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 64px 40px 48px;
+    position: relative;
+    overflow: hidden;
+}
+
+.masthead .tag {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    line-height: 1.15;
+    max-width: 800px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.masthead .subtitle {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 600px;
+    font-weight: 300;
+}
+
+.content-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    color: var(--ink);
+    line-height: 1.25;
+}
+
+h1 { font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: 24px; }
+h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); margin: 48px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--ink); }
+h3 { font-size: 1.3rem; margin: 32px 0 12px; }
+h4 { font-size: 1.1rem; margin: 24px 0 8px; font-weight: 700; }
+
+p { margin-bottom: 16px; }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.styled-list { padding-left: 24px; margin: 16px 0; }
+.styled-list li { margin-bottom: 8px; }
+
+.page-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 24px 0;
+    margin-top: 48px;
+    border-top: 1.5px solid var(--divider);
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 1px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 16px;
+    border: 1px solid var(--divider);
+    border-radius: 4px;
+    background: white;
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 240px;
+    text-align: center;
+}
+
+.page-nav a:hover {
+    background: var(--accent);
+    color: #ffffff;
+    border-color: var(--accent);
+}
+
+footer {
+    margin-top: 80px;
+    padding: 40px 24px;
+    background: var(--ink);
+    color: #ffffff;
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.75;
+}
+</style>
+<link rel="stylesheet" href="../../../assets/css/book-theme.css">
+  <link rel="icon" type="image/svg+xml" href="../../../assets/images/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="../../../assets/images/favicon.png">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+        <div class="sidebar-brand">Tennis Future Lab</div>
+        <h2>Advanced Tennis Training Manual</h2>
+        <a href="../../../en/handbooks/The_Art_of_Modern_Tennis_Complete/index.html" class="sidebar-back">← Quay lại Handbooks</a>
+        <div class="sidebar-section">
+            <div class="sidebar-section-label">11 Chương — Advanced Manual</div>
+            <ul class="sidebar-chapter-list">
+                <li><a href="#ch-01"><span class="num">01</span><span class="title">Chapter 1: The Kinetic Chain & Biomechanical Foundations</span></a></li>
+                <li><a href="#ch-02"><span class="num">02</span><span class="title">Chapter 2: The Core, Torque & Rotational Power</span></a></li>
+                <li><a href="#ch-03"><span class="num">03</span><span class="title">Chapter 3: Movement Science: The Tennis Athlete in Motion</span></a></li>
+                <li><a href="#ch-04"><span class="num">04</span><span class="title">Chapter 4: The Eight-Stage Serve Model</span></a></li>
+                <li><a href="#ch-05"><span class="num">05</span><span class="title">Chapter 5: The Forehand - Modern Mechanics and Tactical Application</span></a></li>
+                <li><a href="#ch-06"><span class="num">06</span><span class="title">Chapter 6: The Backhand - One-Handed and Two-Handed Mechanics</span></a></li>
+                <li><a href="#ch-07"><span class="num">07</span><span class="title">Chapter 7: Volley, Half-Volley and Overhead Mechanics</span></a></li>
+                <li><a href="#ch-08"><span class="num">08</span><span class="title">Chapter 8: Return of Serve and Service Game Tactics</span></a></li>
+                <li><a href="#ch-09"><span class="num">09</span><span class="title">Chapter 9: Singles Tactics, Doubles Formations and Court Positioning</span></a></li>
+                <li><a href="#ch-10"><span class="num">10</span><span class="title">Chapter 10: Periodization, Injury Prevention and Recovery Science</span></a></li>
+                <li><a href="#ch-11"><span class="num">11</span><span class="title">Chapter 11: Mental Toughness and Competitive Performance</span></a></li>
+            </ul>
+        </div>
+    </aside>
+    <main class="main">
+        <div class="crumbs"><a href="../../../en/handbooks/The_Art_of_Modern_Tennis_Complete/index.html">← Handbooks</a></div>
+        <div class="main-header">
+            <h1>Advanced Tennis Training Manual — Chapter-by-Chapter Edition</h1>
+            <p class="lead">Phiên bản tiếng Việt của Advanced Tennis Training Manual — 11 chương cốt lõi về biomechanics, tactics và mental game.</p>
+        </div>
+        <div class="section-block">
+            <div class="section-label">11 Chương — Advanced Manual</div>
+            <a href="Advanced_Tennis_Training_Manual_Chapter_01.html" id="ch-01" class="chapter-card">
+                <span class="num">01</span>
+                <div class="body">
+                    <div class="ch-title">Chương 01</div>
+                    <div class="ch-desc">Chapter 01 — kinetic chain, biomechanics, mental game.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Advanced_Tennis_Training_Manual_Chapter_02.html" id="ch-02" class="chapter-card">
+                <span class="num">02</span>
+                <div class="body">
+                    <div class="ch-title">Chương 02</div>
+                    <div class="ch-desc">Chapter 02 — kinetic chain, biomechanics, mental game.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Advanced_Tennis_Training_Manual_Chapter_03.html" id="ch-03" class="chapter-card">
+                <span class="num">03</span>
+                <div class="body">
+                    <div class="ch-title">Chương 03</div>
+                    <div class="ch-desc">Chapter 03 — kinetic chain, biomechanics, mental game.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Advanced_Tennis_Training_Manual_Chapter_04.html" id="ch-04" class="chapter-card">
+                <span class="num">04</span>
+                <div class="body">
+                    <div class="ch-title">Chương 04</div>
+                    <div class="ch-desc">Chapter 04 — kinetic chain, biomechanics, mental game.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Advanced_Tennis_Training_Manual_Chapter_05.html" id="ch-05" class="chapter-card">
+                <span class="num">05</span>
+                <div class="body">
+                    <div class="ch-title">Chương 05</div>
+                    <div class="ch-desc">Chapter 05 — kinetic chain, biomechanics, mental game.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Advanced_Tennis_Training_Manual_Chapter_06.html" id="ch-06" class="chapter-card">
+                <span class="num">06</span>
+                <div class="body">
+                    <div class="ch-title">Chương 06</div>
+                    <div class="ch-desc">Chapter 06 — kinetic chain, biomechanics, mental game.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Advanced_Tennis_Training_Manual_Chapter_07.html" id="ch-07" class="chapter-card">
+                <span class="num">07</span>
+                <div class="body">
+                    <div class="ch-title">Chương 07</div>
+                    <div class="ch-desc">Chapter 07 — kinetic chain, biomechanics, mental game.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Advanced_Tennis_Training_Manual_Chapter_08.html" id="ch-08" class="chapter-card">
+                <span class="num">08</span>
+                <div class="body">
+                    <div class="ch-title">Chương 08</div>
+                    <div class="ch-desc">Chapter 08 — kinetic chain, biomechanics, mental game.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Advanced_Tennis_Training_Manual_Chapter_09.html" id="ch-09" class="chapter-card">
+                <span class="num">09</span>
+                <div class="body">
+                    <div class="ch-title">Chương 09</div>
+                    <div class="ch-desc">Chapter 09 — kinetic chain, biomechanics, mental game.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Advanced_Tennis_Training_Manual_Chapter_10.html" id="ch-10" class="chapter-card">
+                <span class="num">10</span>
+                <div class="body">
+                    <div class="ch-title">Chương 10</div>
+                    <div class="ch-desc">Chapter 10 — kinetic chain, biomechanics, mental game.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="Advanced_Tennis_Training_Manual_Chapter_11.html" id="ch-11" class="chapter-card">
+                <span class="num">11</span>
+                <div class="body">
+                    <div class="ch-title">Chương 11</div>
+                    <div class="ch-desc">Chapter 11 — kinetic chain, biomechanics, mental game.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+    </main>
+</div>
+
+    <hr class="footer-divider">
+
+    <footer>© 2026 Henry Pham Duc · Tennis Future Lab · All contents are for educational purposes only.</footer>
+
+</body>
+</html>

@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hướng Dẫn Quần Vợt Toàn Diện — Mục Lục</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+    --ink: #0d0d0d;
+    --paper: #fafaf7;
+    --accent: #c8401a;
+    --green: #1a6b3c;
+    --gold: #c4952a;
+    --muted: #6b7280;
+    --divider: #e5e7eb;
+    --bg-card: #ffffff;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+.layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    max-width: 1280px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+.sidebar {
+    background: white;
+    border-right: 1px solid var(--divider);
+    padding: 32px 24px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+.sidebar-brand {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+}
+.sidebar-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+.sidebar-back {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 32px;
+    display: inline-block;
+    text-decoration: none;
+}
+.sidebar-back:hover { color: var(--accent); }
+.sidebar-section { margin-bottom: 28px; }
+.sidebar-section-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+    padding: 4px 10px;
+    background: rgba(200,64,26,0.08);
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+.sidebar-chapter-list { list-style: none; padding: 0; }
+.sidebar-chapter-list li { margin-bottom: 4px; }
+.sidebar-chapter-list a {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 8px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--ink);
+    font-size: 13.5px;
+    line-height: 1.4;
+    transition: background 0.15s;
+}
+.sidebar-chapter-list a:hover { background: var(--paper); }
+.sidebar-chapter-list .num {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    flex-shrink: 0;
+    min-width: 22px;
+    padding-top: 1px;
+}
+.main {
+    padding: 56px 64px;
+    max-width: 760px;
+}
+.main-header {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 28px;
+    margin-bottom: 48px;
+}
+.crumbs {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 16px;
+}
+.crumbs a { color: var(--accent); text-decoration: none; }
+.crumbs a:hover { text-decoration: underline; }
+.main h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 2.6rem);
+    line-height: 1.15;
+    margin-bottom: 16px;
+    color: var(--ink);
+}
+.main .lead {
+    font-size: 17px;
+    color: var(--muted);
+    max-width: 640px;
+}
+.section-block { margin-bottom: 56px; }
+.section-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+    padding: 4px 12px;
+    background: rgba(200,64,26,0.08);
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.chapter-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 18px 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--divider);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: var(--ink);
+    transition: border-color 0.15s, transform 0.15s;
+}
+.chapter-card:hover {
+    border-color: var(--accent);
+    transform: translateX(4px);
+}
+.chapter-card .num {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+    min-width: 32px;
+    flex-shrink: 0;
+    padding-top: 2px;
+}
+.chapter-card .body { flex: 1; min-width: 0; }
+.chapter-card .ch-title {
+    font-weight: 600;
+    font-size: 15.5px;
+    color: var(--ink);
+    margin-bottom: 4px;
+}
+.chapter-card .ch-desc {
+    font-size: 13.5px;
+    color: var(--muted);
+    line-height: 1.5;
+}
+.chapter-card .arrow {
+    color: var(--accent);
+    font-size: 14px;
+    padding-top: 2px;
+    flex-shrink: 0;
+}
+footer {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.75;
+    text-align: center;
+    padding: 32px;
+    margin-top: 80px;
+}
+.cc-license {
+    font-size: 12px;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    background: var(--ink);
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+.cc-license a { color: var(--gold); }
+@media (max-width: 900px) {
+    .layout { grid-template-columns: 1fr; }
+    .sidebar { position: relative; height: auto; max-height: 50vh; }
+    .main { padding: 40px 24px; }
+}
+
+.footer-divider {
+    border: none;
+    border-top: 2px solid var(--ink);
+    margin: 48px auto 0 auto;
+    max-width: 900px;
+    width: 100%;
+}
+</style>
+<style id="tfl-theme-system">
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --ink: #0d0d0d;
+    --paper: #fafaf7;
+    --accent: #c8401a;
+    --green: #1a6b3c;
+    --gold: #c4952a;
+    --muted: #6b7280;
+    --divider: #e5e7eb;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.masthead {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 64px 40px 48px;
+    position: relative;
+    overflow: hidden;
+}
+
+.masthead .tag {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    line-height: 1.15;
+    max-width: 800px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.masthead .subtitle {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 600px;
+    font-weight: 300;
+}
+
+.content-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    color: var(--ink);
+    line-height: 1.25;
+}
+
+h1 { font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: 24px; }
+h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); margin: 48px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--ink); }
+h3 { font-size: 1.3rem; margin: 32px 0 12px; }
+h4 { font-size: 1.1rem; margin: 24px 0 8px; font-weight: 700; }
+
+p { margin-bottom: 16px; }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.styled-list { padding-left: 24px; margin: 16px 0; }
+.styled-list li { margin-bottom: 8px; }
+
+.page-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 24px 0;
+    margin-top: 48px;
+    border-top: 1.5px solid var(--divider);
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 1px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 16px;
+    border: 1px solid var(--divider);
+    border-radius: 4px;
+    background: white;
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 240px;
+    text-align: center;
+}
+
+.page-nav a:hover {
+    background: var(--accent);
+    color: #ffffff;
+    border-color: var(--accent);
+}
+
+footer {
+    margin-top: 80px;
+    padding: 40px 24px;
+    background: var(--ink);
+    color: #ffffff;
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.75;
+}
+</style>
+<link rel="stylesheet" href="../../../assets/css/book-theme.css">
+  <link rel="icon" type="image/svg+xml" href="../../../assets/images/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="../../../assets/images/favicon.png">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+        <div class="sidebar-brand">Tennis Future Lab</div>
+        <h2>Hướng Dẫn Quần Vợt Toàn Diện ()</h2>
+        <a href="../The_Art_of_Modern_Tennis_Complete/index.html" class="sidebar-back">← Quay lại Handbooks</a>
+        <div class="sidebar-section">
+            <div class="sidebar-section-label">47 Chương — Bản Mở Rộng ()</div>
+            <ul class="sidebar-chapter-list">
+                <li><a href="#ch-01"><span class="num">01</span><span class="title">Chương 01</span></a></li>
+                <li><a href="#ch-02"><span class="num">02</span><span class="title">Chương 02</span></a></li>
+                <li><a href="#ch-03"><span class="num">03</span><span class="title">Chương 03</span></a></li>
+                <li><a href="#ch-04"><span class="num">04</span><span class="title">Chương 04</span></a></li>
+                <li><a href="#ch-05"><span class="num">05</span><span class="title">Chương 05</span></a></li>
+                <li><a href="#ch-06"><span class="num">06</span><span class="title">Chương 06</span></a></li>
+                <li><a href="#ch-07"><span class="num">07</span><span class="title">Chương 07</span></a></li>
+                <li><a href="#ch-08"><span class="num">08</span><span class="title">Chương 08</span></a></li>
+                <li><a href="#ch-09"><span class="num">09</span><span class="title">Chương 09</span></a></li>
+                <li><a href="#ch-10"><span class="num">10</span><span class="title">Chương 10</span></a></li>
+                <li><a href="#ch-11"><span class="num">11</span><span class="title">Chương 11</span></a></li>
+                <li><a href="#ch-12"><span class="num">12</span><span class="title">Chương 12</span></a></li>
+                <li><a href="#ch-13"><span class="num">13</span><span class="title">Chương 13</span></a></li>
+                <li><a href="#ch-14"><span class="num">14</span><span class="title">Chương 14</span></a></li>
+                <li><a href="#ch-15"><span class="num">15</span><span class="title">Chương 15</span></a></li>
+                <li><a href="#ch-16"><span class="num">16</span><span class="title">Chương 16</span></a></li>
+                <li><a href="#ch-17"><span class="num">17</span><span class="title">Chương 17</span></a></li>
+                <li><a href="#ch-18"><span class="num">18</span><span class="title">Chương 18</span></a></li>
+                <li><a href="#ch-19"><span class="num">19</span><span class="title">Chương 19</span></a></li>
+                <li><a href="#ch-20"><span class="num">20</span><span class="title">Chương 20</span></a></li>
+                <li><a href="#ch-21"><span class="num">21</span><span class="title">Chương 21</span></a></li>
+                <li><a href="#ch-22"><span class="num">22</span><span class="title">Chương 22</span></a></li>
+                <li><a href="#ch-23"><span class="num">23</span><span class="title">Chương 23</span></a></li>
+                <li><a href="#ch-24"><span class="num">24</span><span class="title">Chương 24</span></a></li>
+                <li><a href="#ch-25"><span class="num">25</span><span class="title">Chương 25</span></a></li>
+                <li><a href="#ch-26"><span class="num">26</span><span class="title">Chương 26</span></a></li>
+                <li><a href="#ch-27"><span class="num">27</span><span class="title">Chương 27</span></a></li>
+                <li><a href="#ch-28"><span class="num">28</span><span class="title">Chương 28</span></a></li>
+                <li><a href="#ch-29"><span class="num">29</span><span class="title">Chương 29</span></a></li>
+                <li><a href="#ch-30"><span class="num">30</span><span class="title">Chương 30</span></a></li>
+                <li><a href="#ch-31"><span class="num">31</span><span class="title">Chương 31</span></a></li>
+                <li><a href="#ch-32"><span class="num">32</span><span class="title">Chương 32</span></a></li>
+                <li><a href="#ch-33"><span class="num">33</span><span class="title">Chương 33</span></a></li>
+                <li><a href="#ch-34"><span class="num">34</span><span class="title">Chương 34</span></a></li>
+                <li><a href="#ch-35"><span class="num">35</span><span class="title">Chương 35</span></a></li>
+                <li><a href="#ch-36"><span class="num">36</span><span class="title">Chương 36</span></a></li>
+                <li><a href="#ch-37"><span class="num">37</span><span class="title">Chương 37</span></a></li>
+                <li><a href="#ch-38"><span class="num">38</span><span class="title">Chương 38</span></a></li>
+                <li><a href="#ch-39"><span class="num">39</span><span class="title">Chương 39</span></a></li>
+                <li><a href="#ch-40"><span class="num">40</span><span class="title">Chương 40</span></a></li>
+                <li><a href="#ch-41"><span class="num">41</span><span class="title">Chương 41</span></a></li>
+                <li><a href="#ch-42"><span class="num">42</span><span class="title">Chương 42</span></a></li>
+                <li><a href="#ch-43"><span class="num">43</span><span class="title">Chương 43</span></a></li>
+                <li><a href="#ch-44"><span class="num">44</span><span class="title">Chương 44</span></a></li>
+                <li><a href="#ch-45"><span class="num">45</span><span class="title">Chương 45</span></a></li>
+                <li><a href="#ch-46"><span class="num">46</span><span class="title">Chương 46</span></a></li>
+                <li><a href="#ch-47"><span class="num">47</span><span class="title">Chương 47</span></a></li>
+            </ul>
+        </div>
+    </aside>
+    <main class="main">
+        <div class="crumbs"><a href="../The_Art_of_Modern_Tennis_Complete/index.html">← Handbooks</a></div>
+        <div class="main-header">
+            <h1>Hướng Dẫn Quần Vợt Toàn Diện — Mục Lục</h1>
+            <p class="lead">Phiên bản mở rộng 47 chương — đồng tác giả. Hệ thống Q-V-ROOT-8-45-Impulse-Kình từ nguyên lý đầu tiên đến thi đấu thực tế.</p>
+        </div>
+        <div class="section-block">
+            <div class="section-label">47 Chương — Bản Mở Rộng ()</div>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_01.html" id="ch-01" class="chapter-card">
+                <span class="num">01</span>
+                <div class="body">
+                    <div class="ch-title">Chương 01: SỨC MẠNH ĐẾN TỪ MẶT ĐẤT</div>
+                    <div class="ch-desc">Chương 01 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_02.html" id="ch-02" class="chapter-card">
+                <span class="num">02</span>
+                <div class="body">
+                    <div class="ch-title">Chương 02: Hông, VAI VÀ BÍ MẬT CỦA X-FACTOR</div>
+                    <div class="ch-desc">Chương 02 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_03.html" id="ch-03" class="chapter-card">
+                <span class="num">03</span>
+                <div class="body">
+                    <div class="ch-title">Chương 03: DI CHUYỂN CHÂN — NỀN TẢNG CỦA MỌI CÚ ĐÁNH</div>
+                    <div class="ch-desc">Chương 03 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_04.html" id="ch-04" class="chapter-card">
+                <span class="num">04</span>
+                <div class="body">
+                    <div class="ch-title">Chương 04: FOREHAND — CÚ ĐÁNH CHỦ LỰC CỦA TENNIS HIỆN ĐẠI</div>
+                    <div class="ch-desc">Chương 04 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_05.html" id="ch-05" class="chapter-card">
+                <span class="num">05</span>
+                <div class="body">
+                    <div class="ch-title">Chương 05: BACKHAND — TỪ ĐIỂM YẾU ĐẾN VŨ KHÍ</div>
+                    <div class="ch-desc">Chương 05 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_06.html" id="ch-06" class="chapter-card">
+                <span class="num">06</span>
+                <div class="body">
+                    <div class="ch-title">Chương 06: SERVE — VŨ KHÍ SỐ MỘT TRONG TENNIS</div>
+                    <div class="ch-desc">Chương 06 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_07.html" id="ch-07" class="chapter-card">
+                <span class="num">07</span>
+                <div class="body">
+                    <div class="ch-title">Chương 07: RETURN OF SERVE — BIẾN PHÒNG THỦ THÀNH TẤN CÔNG</div>
+                    <div class="ch-desc">Chương 07 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_08.html" id="ch-08" class="chapter-card">
+                <span class="num">08</span>
+                <div class="body">
+                    <div class="ch-title">Chương 08: VOLLEY VÀ NET PLAY — NGHỆ THUẬT KẾT THÚC ĐIỂM</div>
+                    <div class="ch-desc">Chương 08 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_09.html" id="ch-09" class="chapter-card">
+                <span class="num">09</span>
+                <div class="body">
+                    <div class="ch-title">Chương 09: SLICE, DROP SHOT VÀ LOB — NGHỆ THUẬT CỦA TOUCH VÀ DECEPTION</div>
+                    <div class="ch-desc">Chương 09 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_10.html" id="ch-10" class="chapter-card">
+                <span class="num">10</span>
+                <div class="body">
+                    <div class="ch-title">Chương 10: SERVE TACTICS, RETURN PATTERNS VÀ GAME MANAGEMENT</div>
+                    <div class="ch-desc">Chương 10 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_11.html" id="ch-11" class="chapter-card">
+                <span class="num">11</span>
+                <div class="body">
+                    <div class="ch-title">Chương 11: FOREHAND NÂNG CAO — SPIN, POWER VÀ TACTICAL MASTERY</div>
+                    <div class="ch-desc">Chương 11 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_12.html" id="ch-12" class="chapter-card">
+                <span class="num">12</span>
+                <div class="body">
+                    <div class="ch-title">Chương 12: BACKHAND NÂNG CAO — TWO-HANDED MASTERY VÀ ONE-HANDED ELEGANCE</div>
+                    <div class="ch-desc">Chương 12 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_13.html" id="ch-13" class="chapter-card">
+                <span class="num">13</span>
+                <div class="body">
+                    <div class="ch-title">Chương 13: SERVE NÂNG CAO — SPIN MASTERY, PLACEMENT VÀ SERVE TACTICS</div>
+                    <div class="ch-desc">Chương 13 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_14.html" id="ch-14" class="chapter-card">
+                <span class="num">14</span>
+                <div class="body">
+                    <div class="ch-title">Chương 14: RETURN OF SERVE NÂNG CAO — READING, REACTING VÀ ATTACKING</div>
+                    <div class="ch-desc">Chương 14 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_15.html" id="ch-15" class="chapter-card">
+                <span class="num">15</span>
+                <div class="body">
+                    <div class="ch-title">Chương 15: VOLLEY NÂNG CAO VÀ NET PLAY HIỆN ĐẠI</div>
+                    <div class="ch-desc">Chương 15 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_16.html" id="ch-16" class="chapter-card">
+                <span class="num">16</span>
+                <div class="body">
+                    <div class="ch-title">Chương 16: TACTICAL PATTERNS VÀ POINT CONSTRUCTION</div>
+                    <div class="ch-desc">Chương 16 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_17.html" id="ch-17" class="chapter-card">
+                <span class="num">17</span>
+                <div class="body">
+                    <div class="ch-title">Chương 17: SERVE TACTICS VÀ GAME MANAGEMENT</div>
+                    <div class="ch-desc">Chương 17 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_18.html" id="ch-18" class="chapter-card">
+                <span class="num">18</span>
+                <div class="body">
+                    <div class="ch-title">Chương 18: MENTAL GAME — NỀN TẢNG CỦA CHAMPION</div>
+                    <div class="ch-desc">Chương 18 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_19.html" id="ch-19" class="chapter-card">
+                <span class="num">19</span>
+                <div class="body">
+                    <div class="ch-title">Chương 19: THI ĐẤU THÔNG MINH — PSYCHOLOGICAL EDGE</div>
+                    <div class="ch-desc">Chương 19 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_20.html" id="ch-20" class="chapter-card">
+                <span class="num">20</span>
+                <div class="body">
+                    <div class="ch-title">Chương 20: THỂ LỰC VÀ CONDITIONING — NỀN TẢNG VẬT LÝ</div>
+                    <div class="ch-desc">Chương 20 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_21.html" id="ch-21" class="chapter-card">
+                <span class="num">21</span>
+                <div class="body">
+                    <div class="ch-title">Chương 21: PHỤC HỒI VÀ QUẢN LÝ CHẤN THƯƠNG</div>
+                    <div class="ch-desc">Chương 21 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_22.html" id="ch-22" class="chapter-card">
+                <span class="num">22</span>
+                <div class="body">
+                    <div class="ch-title">Chương 22: KỸ THUẬT SERVE NÂNG CAO — DISGUISE, PLACEMENT, VÀ PATTERNS</div>
+                    <div class="ch-desc">Chương 22 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_23.html" id="ch-23" class="chapter-card">
+                <span class="num">23</span>
+                <div class="body">
+                    <div class="ch-title">Chương 23: RETURN OF SERVE NÂNG CAO — READING, POSITIONING, VÀ ATTACKING</div>
+                    <div class="ch-desc">Chương 23 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_24.html" id="ch-24" class="chapter-card">
+                <span class="num">24</span>
+                <div class="body">
+                    <div class="ch-title">Chương 24: NET GAME NÂNG CAO — VOLLEY, OVERHEAD, VÀ NET APPROACH STRATEGY</div>
+                    <div class="ch-desc">Chương 24 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_25.html" id="ch-25" class="chapter-card">
+                <span class="num">25</span>
+                <div class="body">
+                    <div class="ch-title">Chương 25: SLICE, DROP SHOT, VÀ LOB NÂNG CAO</div>
+                    <div class="ch-desc">Chương 25 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_26.html" id="ch-26" class="chapter-card">
+                <span class="num">26</span>
+                <div class="body">
+                    <div class="ch-title">Chương 26: ĐỌC ĐỐI THỦ — SCOUTING, PATTERN RECOGNITION, VÀ TACTICAL ADAPTATION</div>
+                    <div class="ch-desc">Chương 26 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_27.html" id="ch-27" class="chapter-card">
+                <span class="num">27</span>
+                <div class="body">
+                    <div class="ch-title">Chương 27: SINGLES TACTICS NÂNG CAO — COURT GEOMETRY, ANGLE CREATION, VÀ POINT CONSTRUCTION</div>
+                    <div class="ch-desc">Chương 27 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_28.html" id="ch-28" class="chapter-card">
+                <span class="num">28</span>
+                <div class="body">
+                    <div class="ch-title">Chương 28: DOUBLES TACTICS NÂNG CAO — FORMATIONS, COMMUNICATION, VÀ WINNING AS A TEAM</div>
+                    <div class="ch-desc">Chương 28 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_29.html" id="ch-29" class="chapter-card">
+                <span class="num">29</span>
+                <div class="body">
+                    <div class="ch-title">Chương 29: MENTAL GAME NÂNG CAO — PRESSURE MANAGEMENT, MOMENTUM CONTROL, VÀ THE PSYCHOLOGY OF WINNING CLOSE MATCHES</div>
+                    <div class="ch-desc">Chương 29 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_30.html" id="ch-30" class="chapter-card">
+                <span class="num">30</span>
+                <div class="body">
+                    <div class="ch-title">Chương 30: PHÁT TRIỂN GAME — TỪ COMFORTABLE ZONE ĐẾN BREAKTHROUGH</div>
+                    <div class="ch-desc">Chương 30 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_31.html" id="ch-31" class="chapter-card">
+                <span class="num">31</span>
+                <div class="body">
+                    <div class="ch-title">Chương 31: HỆ THỐNG NĂNG LƯỢNG TRONG TENNIS — ATP-PC, GLYCOLYSIS, VÀ AEROBIC</div>
+                    <div class="ch-desc">Chương 31 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_32.html" id="ch-32" class="chapter-card">
+                <span class="num">32</span>
+                <div class="body">
+                    <div class="ch-title">Chương 32: STRENGTH AND POWER TRAINING CHO TENNIS</div>
+                    <div class="ch-desc">Chương 32 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_33.html" id="ch-33" class="chapter-card">
+                <span class="num">33</span>
+                <div class="body">
+                    <div class="ch-title">Chương 33: SPEED, AGILITY, VÀ COURT MOVEMENT</div>
+                    <div class="ch-desc">Chương 33 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_34.html" id="ch-34" class="chapter-card">
+                <span class="num">34</span>
+                <div class="body">
+                    <div class="ch-title">Chương 34: MENTAL TOUGHNESS VÀ PSYCHOLOGY TRONG TENNIS</div>
+                    <div class="ch-desc">Chương 34 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_35.html" id="ch-35" class="chapter-card">
+                <span class="num">35</span>
+                <div class="body">
+                    <div class="ch-title">Chương 35: MATCH STRATEGY VÀ TACTICS</div>
+                    <div class="ch-desc">Chương 35 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_36.html" id="ch-36" class="chapter-card">
+                <span class="num">36</span>
+                <div class="body">
+                    <div class="ch-title">Chương 36: DELIBERATE PRACTICE VÀ HOW TO IMPROVE</div>
+                    <div class="ch-desc">Chương 36 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_37.html" id="ch-37" class="chapter-card">
+                <span class="num">37</span>
+                <div class="body">
+                    <div class="ch-title">Chương 37: RECOVERY VÀ LONGEVITY</div>
+                    <div class="ch-desc">Chương 37 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_38.html" id="ch-38" class="chapter-card">
+                <span class="num">38</span>
+                <div class="body">
+                    <div class="ch-title">Chương 38: EQUIPMENT VÀ TECHNOLOGY</div>
+                    <div class="ch-desc">Chương 38 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_39.html" id="ch-39" class="chapter-card">
+                <span class="num">39</span>
+                <div class="body">
+                    <div class="ch-title">Chương 39: THE JOURNEY OF A TENNIS PLAYER</div>
+                    <div class="ch-desc">Chương 39 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_40.html" id="ch-40" class="chapter-card">
+                <span class="num">40</span>
+                <div class="body">
+                    <div class="ch-title">Chương 40: PHẦN IV: COACHING VÀ PHÁT TRIỂN</div>
+                    <div class="ch-desc">Chương 40 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_41.html" id="ch-41" class="chapter-card">
+                <span class="num">41</span>
+                <div class="body">
+                    <div class="ch-title">Chương 41: COACHING THE TECHNICAL GAME</div>
+                    <div class="ch-desc">Chương 41 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_42.html" id="ch-42" class="chapter-card">
+                <span class="num">42</span>
+                <div class="body">
+                    <div class="ch-title">Chương 42: COACHING TACTICS AND MATCH PLAY</div>
+                    <div class="ch-desc">Chương 42 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_43.html" id="ch-43" class="chapter-card">
+                <span class="num">43</span>
+                <div class="body">
+                    <div class="ch-title">Chương 43: COACHING THE MENTAL GAME</div>
+                    <div class="ch-desc">Chương 43 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_44.html" id="ch-44" class="chapter-card">
+                <span class="num">44</span>
+                <div class="body">
+                    <div class="ch-title">Chương 44: DESIGNING A COACHING PROGRAM</div>
+                    <div class="ch-desc">Chương 44 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_45.html" id="ch-45" class="chapter-card">
+                <span class="num">45</span>
+                <div class="body">
+                    <div class="ch-title">Chương 45: THE BUSINESS OF TENNIS</div>
+                    <div class="ch-desc">Chương 45 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_46.html" id="ch-46" class="chapter-card">
+                <span class="num">46</span>
+                <div class="body">
+                    <div class="ch-title">Chương 46: TENNIS CULTURE AND HISTORY</div>
+                    <div class="ch-desc">Chương 46 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Huong_Dan_Quan_Vot_Toan_Dien_Claude_Chuong_47.html" id="ch-47" class="chapter-card">
+                <span class="num">47</span>
+                <div class="body">
+                    <div class="ch-title">Chương 47: A LOVE LETTER TO TENNIS</div>
+                    <div class="ch-desc">Chương 47 (bản ) — quần vợt toàn diện mở rộng.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+    </main>
+</div>
+
+    
+    <div class="external-resources" style="margin: 48px auto; max-width: 800px;">
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--ink, #1a1a1a); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid var(--accent, #c8401a);">📚 Thư Viện Tennis Mở Rộng (External Resources)</h2>
+        <p style="color: var(--muted, #6b7280); margin-bottom: 20px; font-size: 15px;">Các nguồn tài liệu tennis bổ sung từ hệ sinh thái Tennis Future Lab:</p>
+
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 12px; padding: 12px; background: #faf8f4; border-left: 3px solid var(--accent, #c8401a); border-radius: 4px;">
+                <a href="https://henryphamduc.github.io/tennis-wiki-vi/cam-nang/ebook/" target="_blank" rel="noopener" style="color: var(--accent, #c8401a); font-weight: 600; text-decoration: none; font-size: 16px;">📖 Thư Viện Tennis Hoàn Chỉnh (35+ Tài Liệu)</a>
+                <p style="margin: 4px 0 0 0; color: var(--muted, #6b7280); font-size: 14px;">Bộ sưu tập 35+ tài liệu tennis từ cơ bản đến nâng cao.</p>
+            </li>
+            <li style="margin-bottom: 12px; padding: 12px; background: #faf8f4; border-left: 3px solid var(--accent, #c8401a); border-radius: 4px;">
+                <a href="https://henryphamduc.github.io/tennis-biomechanics/" target="_blank" rel="noopener" style="color: var(--accent, #c8401a); font-weight: 600; text-decoration: none; font-size: 16px;">🦴 Sinh Cơ Học Tennis - Cẩm Nang 2026</a>
+                <p style="margin: 4px 0 0 0; color: var(--muted, #6b7280); font-size: 14px;">Cẩm nang sinh cơ học tennis ứng dụng cho vận động viên và HLV.</p>
+            </li>
+            <li style="margin-bottom: 12px; padding: 12px; background: #faf8f4; border-left: 3px solid var(--accent, #c8401a); border-radius: 4px;">
+                <a href="https://henryphamduc.github.io/tennis-guide/" target="_blank" rel="noopener" style="color: var(--accent, #c8401a); font-weight: 600; text-decoration: none; font-size: 16px;">🎾 Tennis Control System Interactive Guide</a>
+                <p style="margin: 4px 0 0 0; color: var(--muted, #6b7280); font-size: 14px;">Hướng dẫn tương tác về hệ thống kiểm soát tennis.</p>
+            </li>
+            <li style="margin-bottom: 12px; padding: 12px; background: #faf8f4; border-left: 3px solid var(--accent, #c8401a); border-radius: 4px;">
+                <a href="https://henryphamduc.github.io/tennis-wiki/en/manual/absolute-tennis/index.html" target="_blank" rel="noopener" style="color: var(--accent, #c8401a); font-weight: 600; text-decoration: none; font-size: 16px;">🏆 ABSOLUTE TENNIS Manual - Tennis Knowledge Base</a>
+                <p style="margin: 4px 0 0 0; color: var(--muted, #6b7280); font-size: 14px;">Cơ sở tri thức tennis toàn diện — cẩm nang tham khảo cho mọi trình độ.</p>
+            </li>
+        </ul>
+    </div>
+
+<hr class="footer-divider">
+
+    <footer>© 2026 Henry Pham Duc · Tennis Future Lab · All contents are for educational purposes only.</footer>
+
+</body>
+</html>

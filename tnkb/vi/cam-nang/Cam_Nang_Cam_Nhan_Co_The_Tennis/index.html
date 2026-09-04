@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cảm Nhận Cơ Thể Trong Tennis — Mục Lục</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+    --ink: #0d0d0d;
+    --paper: #fafaf7;
+    --accent: #c8401a;
+    --green: #1a6b3c;
+    --gold: #c4952a;
+    --muted: #6b7280;
+    --divider: #e5e7eb;
+    --bg-card: #ffffff;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+.layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    max-width: 1280px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+.sidebar {
+    background: white;
+    border-right: 1px solid var(--divider);
+    padding: 32px 24px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+.sidebar-brand {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+}
+.sidebar-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+.sidebar-back {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 32px;
+    display: inline-block;
+    text-decoration: none;
+}
+.sidebar-back:hover { color: var(--accent); }
+.sidebar-section { margin-bottom: 28px; }
+.sidebar-section-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+    padding: 4px 10px;
+    background: rgba(200,64,26,0.08);
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+.sidebar-chapter-list { list-style: none; padding: 0; }
+.sidebar-chapter-list li { margin-bottom: 4px; }
+.sidebar-chapter-list a {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 8px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--ink);
+    font-size: 13.5px;
+    line-height: 1.4;
+    transition: background 0.15s;
+}
+.sidebar-chapter-list a:hover { background: var(--paper); }
+.sidebar-chapter-list .num {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    flex-shrink: 0;
+    min-width: 22px;
+    padding-top: 1px;
+}
+.main {
+    padding: 56px 64px;
+    max-width: 760px;
+}
+.main-header {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 28px;
+    margin-bottom: 48px;
+}
+.crumbs {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 16px;
+}
+.crumbs a { color: var(--accent); text-decoration: none; }
+.crumbs a:hover { text-decoration: underline; }
+.main h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 2.6rem);
+    line-height: 1.15;
+    margin-bottom: 16px;
+    color: var(--ink);
+}
+.main .lead {
+    font-size: 17px;
+    color: var(--muted);
+    max-width: 640px;
+}
+.section-block { margin-bottom: 56px; }
+.section-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+    padding: 4px 12px;
+    background: rgba(200,64,26,0.08);
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.chapter-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 18px 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--divider);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: var(--ink);
+    transition: border-color 0.15s, transform 0.15s;
+}
+.chapter-card:hover {
+    border-color: var(--accent);
+    transform: translateX(4px);
+}
+.chapter-card .num {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+    min-width: 32px;
+    flex-shrink: 0;
+    padding-top: 2px;
+}
+.chapter-card .body { flex: 1; min-width: 0; }
+.chapter-card .ch-title {
+    font-weight: 600;
+    font-size: 15.5px;
+    color: var(--ink);
+    margin-bottom: 4px;
+}
+.chapter-card .ch-desc {
+    font-size: 13.5px;
+    color: var(--muted);
+    line-height: 1.5;
+}
+.chapter-card .arrow {
+    color: var(--accent);
+    font-size: 14px;
+    padding-top: 2px;
+    flex-shrink: 0;
+}
+footer {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.75;
+    text-align: center;
+    padding: 32px;
+    margin-top: 80px;
+}
+.cc-license {
+    font-size: 12px;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    background: var(--ink);
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+.cc-license a { color: var(--gold); }
+@media (max-width: 900px) {
+    .layout { grid-template-columns: 1fr; }
+    .sidebar { position: relative; height: auto; max-height: 50vh; }
+    .main { padding: 40px 24px; }
+}
+
+.footer-divider {
+    border: none;
+    border-top: 2px solid var(--ink);
+    margin: 48px auto 0 auto;
+    max-width: 900px;
+    width: 100%;
+}
+</style>
+<style id="tfl-theme-system">
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --ink: #0d0d0d;
+    --paper: #fafaf7;
+    --accent: #c8401a;
+    --green: #1a6b3c;
+    --gold: #c4952a;
+    --muted: #6b7280;
+    --divider: #e5e7eb;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.masthead {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 64px 40px 48px;
+    position: relative;
+    overflow: hidden;
+}
+
+.masthead .tag {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    line-height: 1.15;
+    max-width: 800px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.masthead .subtitle {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 600px;
+    font-weight: 300;
+}
+
+.content-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    color: var(--ink);
+    line-height: 1.25;
+}
+
+h1 { font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: 24px; }
+h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); margin: 48px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--ink); }
+h3 { font-size: 1.3rem; margin: 32px 0 12px; }
+h4 { font-size: 1.1rem; margin: 24px 0 8px; font-weight: 700; }
+
+p { margin-bottom: 16px; }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.styled-list { padding-left: 24px; margin: 16px 0; }
+.styled-list li { margin-bottom: 8px; }
+
+.page-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 24px 0;
+    margin-top: 48px;
+    border-top: 1.5px solid var(--divider);
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 1px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 16px;
+    border: 1px solid var(--divider);
+    border-radius: 4px;
+    background: white;
+    transition: all 0.2s ease;
+    flex: 1;
+    max-width: 240px;
+    text-align: center;
+}
+
+.page-nav a:hover {
+    background: var(--accent);
+    color: #ffffff;
+    border-color: var(--accent);
+}
+
+footer {
+    margin-top: 80px;
+    padding: 40px 24px;
+    background: var(--ink);
+    color: #ffffff;
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.75;
+}
+</style>
+<link rel="stylesheet" href="../../../assets/css/book-theme.css">
+  <link rel="icon" type="image/svg+xml" href="../../../assets/images/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="../../../assets/images/favicon.png">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+        <div class="sidebar-brand">Tennis Future Lab</div>
+        <h2>Cảm Nhận Cơ Thể Tennis</h2>
+        <a href="../../en/handbooks/The_Art_of_Modern_Tennis_Complete/index.html" class="sidebar-back">← Quay lại Handbooks</a>
+        <div class="sidebar-section">
+            <div class="sidebar-section-label">20 Chương — Cảm Nhận Cơ Thể</div>
+            <ul class="sidebar-chapter-list">
+                <li><a href="#ch-01"><span class="num">01</span><span class="title">Chương 01</span></a></li>
+                <li><a href="#ch-02"><span class="num">02</span><span class="title">Chương 02</span></a></li>
+                <li><a href="#ch-03"><span class="num">03</span><span class="title">Chương 03</span></a></li>
+                <li><a href="#ch-04"><span class="num">04</span><span class="title">Chương 04</span></a></li>
+                <li><a href="#ch-05"><span class="num">05</span><span class="title">Chương 05</span></a></li>
+                <li><a href="#ch-06"><span class="num">06</span><span class="title">Chương 06</span></a></li>
+                <li><a href="#ch-07"><span class="num">07</span><span class="title">Chương 07</span></a></li>
+                <li><a href="#ch-08"><span class="num">08</span><span class="title">Chương 08</span></a></li>
+                <li><a href="#ch-09"><span class="num">09</span><span class="title">Chương 09</span></a></li>
+                <li><a href="#ch-10"><span class="num">10</span><span class="title">Chương 10</span></a></li>
+                <li><a href="#ch-11"><span class="num">11</span><span class="title">Chương 11</span></a></li>
+                <li><a href="#ch-12"><span class="num">12</span><span class="title">Chương 12</span></a></li>
+                <li><a href="#ch-13"><span class="num">13</span><span class="title">Chương 13</span></a></li>
+                <li><a href="#ch-14"><span class="num">14</span><span class="title">Chương 14</span></a></li>
+                <li><a href="#ch-15"><span class="num">15</span><span class="title">Chương 15</span></a></li>
+                <li><a href="#ch-16"><span class="num">16</span><span class="title">Chương 16</span></a></li>
+                <li><a href="#ch-17"><span class="num">17</span><span class="title">Chương 17</span></a></li>
+                <li><a href="#ch-18"><span class="num">18</span><span class="title">Chương 18</span></a></li>
+                <li><a href="#ch-19"><span class="num">19</span><span class="title">Chương 19</span></a></li>
+                <li><a href="#ch-20"><span class="num">20</span><span class="title">Chương 20</span></a></li>
+            </ul>
+        </div>
+    </aside>
+    <main class="main">
+        <div class="crumbs"><a href="../../en/handbooks/The_Art_of_Modern_Tennis_Complete/index.html">← Handbooks</a></div>
+        <div class="main-header">
+            <h1>Cảm Nhận Cơ Thể Trong Tennis — Mục Lục</h1>
+            <p class="lead">Cẩm nang về cảm nhận cơ thể trong tennis — 20 chương chuyên sâu về proprioception, kiểm soát thần kinh-cơ, và nhận thức trong thi đấu.</p>
+        </div>
+        <div class="section-block">
+            <div class="section-label">20 Chương — Cảm Nhận Cơ Thể</div>
+            <a href="./Cam_Nang_Cam_Nhan_Co_The_Tennis_Chuong_01.html" id="ch-01" class="chapter-card">
+                <span class="num">01</span>
+                <div class="body">
+                    <div class="ch-title">Chương 01</div>
+                    <div class="ch-desc">Chương 01 — nhận thức cơ thể trong tennis.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Cam_Nang_Cam_Nhan_Co_The_Tennis_Chuong_02.html" id="ch-02" class="chapter-card">
+                <span class="num">02</span>
+                <div class="body">
+                    <div class="ch-title">Chương 02</div>
+                    <div class="ch-desc">Chương 02 — nhận thức cơ thể trong tennis.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Cam_Nang_Cam_Nhan_Co_The_Tennis_Chuong_03.html" id="ch-03" class="chapter-card">
+                <span class="num">03</span>
+                <div class="body">
+                    <div class="ch-title">Chương 03</div>
+                    <div class="ch-desc">Chương 03 — nhận thức cơ thể trong tennis.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Cam_Nang_Cam_Nhan_Co_The_Tennis_Chuong_04.html" id="ch-04" class="chapter-card">
+                <span class="num">04</span>
+                <div class="body">
+                    <div class="ch-title">Chương 04</div>
+                    <div class="ch-desc">Chương 04 — nhận thức cơ thể trong tennis.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Cam_Nang_Cam_Nhan_Co_The_Tennis_Chuong_05.html" id="ch-05" class="chapter-card">
+                <span class="num">05</span>
+                <div class="body">
+                    <div class="ch-title">Chương 05</div>
+                    <div class="ch-desc">Chương 05 — nhận thức cơ thể trong tennis.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Cam_Nang_Cam_Nhan_Co_The_Tennis_Chuong_06.html" id="ch-06" class="chapter-card">
+                <span class="num">06</span>
+                <div class="body">
+                    <div class="ch-title">Chương 06</div>
+                    <div class="ch-desc">Chương 06 — nhận thức cơ thể trong tennis.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Cam_Nang_Cam_Nhan_Co_The_Tennis_Chuong_07.html" id="ch-07" class="chapter-card">
+                <span class="num">07</span>
+                <div class="body">
+                    <div class="ch-title">Chương 07</div>
+                    <div class="ch-desc">Chương 07 — nhận thức cơ thể trong tennis.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Cam_Nang_Cam_Nhan_Co_The_Tennis_Chuong_08.html" id="ch-08" class="chapter-card">
+                <span class="num">08</span>
+                <div class="body">
+                    <div class="ch-title">Chương 08</div>
+                    <div class="ch-desc">Chương 08 — nhận thức cơ thể trong tennis.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Cam_Nang_Cam_Nhan_Co_The_Tennis_Chuong_09.html" id="ch-09" class="chapter-card">
+                <span class="num">09</span>
+                <div class="body">
+                    <div class="ch-title">Chương 09</div>
+                    <div class="ch-desc">Chương 09 — nhận thức cơ thể trong tennis.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Cam_Nang_Cam_Nhan_Co_The_Tennis_Chuong_10.html" id="ch-10" class="chapter-card">
+                <span class="num">10</span>
+                <div class="body">
+                    <div class="ch-title">Chương 10</div>
+                    <div class="ch-desc">Chương 10 — nhận thức cơ thể trong tennis.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Cam_Nang_Cam_Nhan_Co_The_Tennis_Chuong_11.html" id="ch-11" class="chapter-card">
+                <span class="num">11</span>
+                <div class="body">
+                    <div class="ch-title">Chương 11</div>
+                    <div class="ch-desc">Chương 11 — nhận thức cơ thể trong tennis.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Cam_Nang_Cam_Nhan_Co_The_Tennis_Chuong_12.html" id="ch-12" class="chapter-card">
+                <span class="num">12</span>
+                <div class="body">
+                    <div class="ch-title">Chương 12</div>
+                    <div class="ch-desc">Chương 12 — nhận thức cơ thể trong tennis.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Cam_Nang_Cam_Nhan_Co_The_Tennis_Chuong_13.html" id="ch-13" class="chapter-card">
+                <span class="num">13</span>
+                <div class="body">
+                    <div class="ch-title">Chương 13</div>
+                    <div class="ch-desc">Chương 13 — nhận thức cơ thể trong tennis.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Cam_Nang_Cam_Nhan_Co_The_Tennis_Chuong_14.html" id="ch-14" class="chapter-card">
+                <span class="num">14</span>
+                <div class="body">
+                    <div class="ch-title">Chương 14</div>
+                    <div class="ch-desc">Chương 14 — nhận thức cơ thể trong tennis.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Cam_Nang_Cam_Nhan_Co_The_Tennis_Chuong_15.html" id="ch-15" class="chapter-card">
+                <span class="num">15</span>
+                <div class="body">
+                    <div class="ch-title">Chương 15</div>
+                    <div class="ch-desc">Chương 15 — nhận thức cơ thể trong tennis.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Cam_Nang_Cam_Nhan_Co_The_Tennis_Chuong_16.html" id="ch-16" class="chapter-card">
+                <span class="num">16</span>
+                <div class="body">
+                    <div class="ch-title">Chương 16</div>
+                    <div class="ch-desc">Chương 16 — nhận thức cơ thể trong tennis.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Cam_Nang_Cam_Nhan_Co_The_Tennis_Chuong_17.html" id="ch-17" class="chapter-card">
+                <span class="num">17</span>
+                <div class="body">
+                    <div class="ch-title">Chương 17</div>
+                    <div class="ch-desc">Chương 17 — nhận thức cơ thể trong tennis.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Cam_Nang_Cam_Nhan_Co_The_Tennis_Chuong_18.html" id="ch-18" class="chapter-card">
+                <span class="num">18</span>
+                <div class="body">
+                    <div class="ch-title">Chương 18</div>
+                    <div class="ch-desc">Chương 18 — nhận thức cơ thể trong tennis.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Cam_Nang_Cam_Nhan_Co_The_Tennis_Chuong_19.html" id="ch-19" class="chapter-card">
+                <span class="num">19</span>
+                <div class="body">
+                    <div class="ch-title">Chương 19</div>
+                    <div class="ch-desc">Chương 19 — nhận thức cơ thể trong tennis.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a href="./Cam_Nang_Cam_Nhan_Co_The_Tennis_Chuong_20.html" id="ch-20" class="chapter-card">
+                <span class="num">20</span>
+                <div class="body">
+                    <div class="ch-title">Chương 20</div>
+                    <div class="ch-desc">Chương 20 — nhận thức cơ thể trong tennis.</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+    </main>
+</div>
+
+    
+    <div class="external-resources" style="margin: 48px auto; max-width: 800px;">
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--ink, #1a1a1a); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid var(--accent, #c8401a);">📚 Thư Viện Tennis Mở Rộng (External Resources)</h2>
+        <p style="color: var(--muted, #6b7280); margin-bottom: 20px; font-size: 15px;">Các nguồn tài liệu tennis bổ sung từ hệ sinh thái Tennis Future Lab:</p>
+
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 12px; padding: 12px; background: #faf8f4; border-left: 3px solid var(--accent, #c8401a); border-radius: 4px;">
+                <a href="https://henryphamduc.github.io/tennis-wiki-vi/cam-nang/ebook/" target="_blank" rel="noopener" style="color: var(--accent, #c8401a); font-weight: 600; text-decoration: none; font-size: 16px;">📖 Thư Viện Tennis Hoàn Chỉnh (35+ Tài Liệu)</a>
+                <p style="margin: 4px 0 0 0; color: var(--muted, #6b7280); font-size: 14px;">Bộ sưu tập 35+ tài liệu tennis từ cơ bản đến nâng cao.</p>
+            </li>
+            <li style="margin-bottom: 12px; padding: 12px; background: #faf8f4; border-left: 3px solid var(--accent, #c8401a); border-radius: 4px;">
+                <a href="https://henryphamduc.github.io/tennis-biomechanics/" target="_blank" rel="noopener" style="color: var(--accent, #c8401a); font-weight: 600; text-decoration: none; font-size: 16px;">🦴 Sinh Cơ Học Tennis - Cẩm Nang 2026</a>
+                <p style="margin: 4px 0 0 0; color: var(--muted, #6b7280); font-size: 14px;">Cẩm nang sinh cơ học tennis ứng dụng cho vận động viên và HLV.</p>
+            </li>
+            <li style="margin-bottom: 12px; padding: 12px; background: #faf8f4; border-left: 3px solid var(--accent, #c8401a); border-radius: 4px;">
+                <a href="https://henryphamduc.github.io/tennis-guide/" target="_blank" rel="noopener" style="color: var(--accent, #c8401a); font-weight: 600; text-decoration: none; font-size: 16px;">🎾 Tennis Control System Interactive Guide</a>
+                <p style="margin: 4px 0 0 0; color: var(--muted, #6b7280); font-size: 14px;">Hướng dẫn tương tác về hệ thống kiểm soát tennis.</p>
+            </li>
+            <li style="margin-bottom: 12px; padding: 12px; background: #faf8f4; border-left: 3px solid var(--accent, #c8401a); border-radius: 4px;">
+                <a href="https://henryphamduc.github.io/tennis-wiki/en/manual/absolute-tennis/index.html" target="_blank" rel="noopener" style="color: var(--accent, #c8401a); font-weight: 600; text-decoration: none; font-size: 16px;">🏆 ABSOLUTE TENNIS Manual - Tennis Knowledge Base</a>
+                <p style="margin: 4px 0 0 0; color: var(--muted, #6b7280); font-size: 14px;">Cơ sở tri thức tennis toàn diện — cẩm nang tham khảo cho mọi trình độ.</p>
+            </li>
+        </ul>
+    </div>
+
+<hr class="footer-divider">
+
+    <footer>© 2026 Henry Pham Duc · Tennis Future Lab · All contents are for educational purposes only.</footer>
+
+</body>
+</html>
