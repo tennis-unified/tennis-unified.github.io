@@ -95,6 +95,10 @@ print("\n[4/4] Checking Core Navigation Targets...")
 core_destinations = [
     '/',
     '/fundamentals/',
+    '/tennis-evolution/',
+    '/vi/tennis-evolution/',
+    '/lexicon/',
+    '/vi/lexicon/',
     '/stroke-analysis/',
     '/coach-video-library/',
     '/tennis-video-library/',
