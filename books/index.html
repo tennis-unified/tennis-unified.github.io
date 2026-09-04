@@ -52,7 +52,7 @@
     
   
 <link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
-<link rel="stylesheet" href="/assets/css/site.css"></head>
+<link rel="stylesheet" href="/assets/css/site.css"><script src="/assets/javascripts/darkmode.js" defer></script></head>
   
   
     
@@ -20383,5 +20383,97 @@
       
     
   <script src="/assets/javascripts/lang-toggle.js" defer></script>
+  <script>
+  (function() {
+    var input = document.getElementById('books-search');
+    var countEl = document.getElementById('books-count');
+    var tagsContainer = document.getElementById('books-tags');
+    var cards = Array.from(document.querySelectorAll('.book-card'));
+    if (!input || !cards.length) return;
+
+    var activeDomain = 'all';
+
+    // Extract unique domains and their book counts
+    var domainCounts = {};
+    cards.forEach(function(card) {
+      var d = (card.getAttribute('data-domain') || '').trim();
+      if (d) {
+        domainCounts[d] = (domainCounts[d] || 0) + 1;
+      }
+    });
+
+    // Render filter tag buttons
+    if (tagsContainer) {
+      var allBtn = document.createElement('button');
+      allBtn.type = 'button';
+      allBtn.className = 'books-tag-btn active';
+      allBtn.textContent = 'All (' + cards.length + ')';
+      allBtn.addEventListener('click', function() {
+        activeDomain = 'all';
+        updateTagButtons();
+        filterBooks();
+      });
+      tagsContainer.appendChild(allBtn);
+
+      var sortedDomains = Object.keys(domainCounts).sort();
+      sortedDomains.forEach(function(dom) {
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'books-tag-btn';
+        var label = dom.charAt(0).toUpperCase() + dom.slice(1);
+        btn.textContent = label + ' (' + domainCounts[dom] + ')';
+        btn.setAttribute('data-domain-tag', dom);
+        btn.addEventListener('click', function() {
+          activeDomain = (activeDomain === dom) ? 'all' : dom;
+          updateTagButtons();
+          filterBooks();
+        });
+        tagsContainer.appendChild(btn);
+      });
+    }
+
+    function updateTagButtons() {
+      if (!tagsContainer) return;
+      var btns = tagsContainer.querySelectorAll('.books-tag-btn');
+      btns.forEach(function(b) {
+        var d = b.getAttribute('data-domain-tag');
+        if (!d && activeDomain === 'all') {
+          b.classList.add('active');
+        } else if (d === activeDomain) {
+          b.classList.add('active');
+        } else {
+          b.classList.remove('active');
+        }
+      });
+    }
+
+    function filterBooks() {
+      var q = input.value.trim().toLowerCase();
+      var visible = 0;
+
+      cards.forEach(function(card) {
+        var cardDomain = (card.getAttribute('data-domain') || '').toLowerCase();
+        var cardTitle = (card.getAttribute('data-title') || '').toLowerCase();
+        var cardText = (card.textContent || '').toLowerCase();
+
+        var matchesDomain = (activeDomain === 'all' || cardDomain === activeDomain.toLowerCase());
+        var matchesQuery = !q || cardTitle.indexOf(q) !== -1 || cardText.indexOf(q) !== -1;
+
+        if (matchesDomain && matchesQuery) {
+          card.style.display = '';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      if (countEl) {
+        countEl.textContent = visible;
+      }
+    }
+
+    input.addEventListener('input', filterBooks);
+  })();
+  </script>
 </body>
 </html>
