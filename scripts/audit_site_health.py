@@ -106,7 +106,13 @@ core_destinations = [
     '/vi/coach-video-library/',
     '/vi/tennis-video-library/',
     '/vi/tennis-technical-reference/',
-    '/vi/blog/'
+    '/vi/blog/',
+    '/book/',
+    '/books/',
+    '/gemini-notebooks/',
+    '/research/authoritative-sources/',
+    '/vi/book/',
+    '/vi/research/authoritative-sources/'
 ]
 
 all_dest_valid = True
