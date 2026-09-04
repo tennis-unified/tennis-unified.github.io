@@ -120,7 +120,9 @@ core_destinations = [
     '/tennis-technical-reference/hugh-clarke/',
     '/vi/tennis-technical-reference/hugh-clarke/',
     '/vi/tennis-technical-reference/hi-tech-tennis-archive/',
-    '/vi/tennis-technical-reference/the-racquet/'
+    '/vi/tennis-technical-reference/the-racquet/',
+    '/tennis-technical-reference/gemini-notebooks/',
+    '/vi/tennis-technical-reference/gemini-notebooks/'
 ]
 
 all_dest_valid = True
