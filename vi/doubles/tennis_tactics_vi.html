@@ -1,0 +1,2503 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiến thuật Tennis: Đánh đơn và Đánh đôi - William F. Talbert & Bruce S. Old</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300..800;1,7..72,300..800&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* === CSS RESET & GLOBAL VARIABLES === */
+        :root {
+            --primary: #0f3d2e;
+            --primary-light: #1b5e20;
+            --primary-accent: #2e7d32;
+            --secondary: #b8860b;
+            --secondary-light: #d4af37;
+            --dark: #1a1a1a;
+            --gray-dark: #334155;
+            --gray-med: #64748b;
+            --gray-light: #f8fafc;
+            --card-bg: #ffffff;
+            --card-border: #e2e8f0;
+            --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            --font-serif: 'Literata', Georgia, serif;
+            --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-serif);
+            color: var(--dark);
+            background-color: #f1f5f9;
+            line-height: 1.7;
+            font-size: 15px;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* === WEBSHOP & SCREEN READER WRAPPER === */
+        .reader-wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+            background: #ffffff;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+            min-height: 100vh;
+        }
+
+        /* === TOP NAVIGATION BAR === */
+        .reader-nav {
+            position: sticky;
+            top: 0;
+            background: rgba(15, 61, 46, 0.95);
+            backdrop-filter: blur(8px);
+            color: #ffffff;
+            padding: 12px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+
+        .reader-nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-family: var(--font-sans);
+            font-size: 13px;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .reader-nav a:hover {
+            color: var(--secondary-light);
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .nav-badge {
+            background: var(--secondary);
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 18px;
+        }
+
+        /* === BOOK COVER PAGE === */
+        .book-cover-page {
+            position: relative;
+            background: #0d2818;
+            color: #ffffff;
+            padding: 40px 24px;
+            text-align: center;
+            page-break-after: always;
+        }
+
+        .cover-image-container {
+            max-width: 480px;
+            margin: 0 auto 30px auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .book-cover-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .cover-badge {
+            display: inline-block;
+            background: var(--secondary);
+            color: #ffffff;
+            font-family: var(--font-sans);
+            font-size: 12px;
+            font-weight: 700;
+            padding: 6px 16px;
+            border-radius: 20px;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+
+        .cover-main-title {
+            font-family: var(--font-sans);
+            font-size: 38px;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.2;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .cover-sub-title {
+            font-family: var(--font-sans);
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--secondary-light);
+            margin-bottom: 12px;
+        }
+
+        .cover-orig-title {
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 16px;
+            color: #cbd5e1;
+            margin-bottom: 24px;
+        }
+
+        .cover-authors {
+            border-top: 1px solid rgba(255,255,255,0.2);
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding: 16px 0;
+            margin-bottom: 24px;
+            font-family: var(--font-sans);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .cover-publisher-tag {
+            font-family: var(--font-sans);
+            font-size: 12px;
+            color: #94a3b8;
+            letter-spacing: 1px;
+        }
+
+        /* === PAGES & EDITORIAL LAYOUT === */
+        .frontmatter-page, .chapter-page {
+            padding: 40px 48px;
+        }
+
+        .section-header, .chapter-header {
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 16px;
+        }
+
+        .chapter-number {
+            font-family: var(--font-sans);
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--secondary);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .chapter-title, .section-header .chapter-title {
+            font-family: var(--font-sans);
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1.3;
+        }
+
+        .chapter-subtitle, .section-header .byline {
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 15px;
+            color: var(--gray-med);
+            margin-top: 6px;
+        }
+
+        .editorial-body p {
+            margin-bottom: 16px;
+            text-align: justify;
+        }
+
+        .lead-paragraph {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #0f172a;
+        }
+
+        .dropcap {
+            float: left;
+            font-family: var(--font-sans);
+            font-size: 52px;
+            line-height: 42px;
+            padding-top: 4px;
+            padding-right: 10px;
+            padding-bottom: 2px;
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        h3 {
+            font-family: var(--font-sans);
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary-accent);
+            margin: 32px 0 16px 0;
+            border-left: 4px solid var(--secondary);
+            padding-left: 12px;
+        }
+
+        h4 {
+            font-family: var(--font-sans);
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 16px 0 8px 0;
+        }
+
+        /* === TACTICAL FIGURE CARDS === */
+        .tactical-figure-card {
+            background: #ffffff;
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            margin: 28px 0;
+            box-shadow: var(--card-shadow);
+            overflow: hidden;
+        }
+
+        .figure-card-header {
+            background: #f8fafc;
+            border-bottom: 1px solid var(--card-border);
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .fig-badge {
+            background: var(--primary);
+            color: #ffffff;
+            font-family: var(--font-sans);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+
+        .fig-title {
+            font-family: var(--font-sans);
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .figure-content-grid {
+            display: flex;
+            flex-direction: row;
+            padding: 18px 20px;
+            gap: 24px;
+        }
+
+        .figure-image-col {
+            flex: 0 0 45%;
+            text-align: center;
+            background: #fdfdfd;
+            border: 1px solid #f1f5f9;
+            border-radius: 6px;
+            padding: 10px;
+        }
+
+        .tactical-court-img {
+            max-width: 100%;
+            height: auto;
+            max-height: 120mm;
+            display: block;
+            margin: 0 auto;
+            border-radius: 4px;
+        }
+
+        .fig-caption-tag {
+            font-family: var(--font-sans);
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--gray-med);
+            margin-top: 8px;
+        }
+
+        .figure-analysis-col {
+            flex: 1;
+        }
+
+        .figure-analysis-col p {
+            font-size: 14px;
+            line-height: 1.65;
+            margin-bottom: 12px;
+        }
+
+        .tactical-takeaway {
+            background: #f0fdf4;
+            border-left: 4px solid var(--primary-accent);
+            padding: 10px 14px;
+            font-size: 13.5px;
+            color: #14532d;
+            border-radius: 0 4px 4px 0;
+            margin-top: 12px;
+        }
+
+        /* === DATA TABLES === */
+        .table-container {
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        .table-title {
+            font-family: var(--font-sans);
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13.5px;
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+        }
+
+        .data-table th {
+            background: #0f3d2e;
+            color: #ffffff;
+            font-family: var(--font-sans);
+            font-weight: 600;
+            text-align: left;
+            padding: 10px 12px;
+            border: 1px solid #0f3d2e;
+        }
+
+        .data-table td {
+            padding: 8px 12px;
+            border: 1px solid #e2e8f0;
+            vertical-align: top;
+        }
+
+        .data-table tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        /* === TOC STYLING === */
+        .toc-container {
+            margin: 20px 0;
+        }
+
+        .toc-item {
+            margin-bottom: 14px;
+        }
+
+        .toc-line {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+
+        .toc-title a {
+            font-family: var(--font-sans);
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .toc-title a:hover {
+            color: var(--secondary);
+            text-decoration: underline;
+        }
+
+        .toc-dots {
+            flex: 1;
+            border-bottom: 1px dotted #cbd5e1;
+            margin: 0 10px;
+        }
+
+        .toc-page {
+            font-family: var(--font-sans);
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--gray-med);
+        }
+
+        .toc-sub {
+            font-size: 13px;
+            color: var(--gray-med);
+            margin-top: 2px;
+            padding-left: 12px;
+        }
+
+        /* === COMPARISON GRID & LISTS === */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .comp-card {
+            border-radius: 8px;
+            padding: 16px 20px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .singles-card {
+            background: #f0fdf4;
+            border-left: 4px solid var(--primary-accent);
+        }
+
+        .doubles-card {
+            background: #fefce8;
+            border-left: 4px solid var(--secondary);
+        }
+
+        .comp-card h4 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .comp-card ul {
+            padding-left: 18px;
+            font-size: 13.5px;
+            line-height: 1.6;
+        }
+
+        .comp-card li {
+            margin-bottom: 6px;
+        }
+
+        .tactical-bullets {
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        .tactical-bullets li {
+            margin-bottom: 8px;
+        }
+
+        .step-analysis-list {
+            padding-left: 20px;
+            font-size: 13.5px;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .step-analysis-list li {
+            margin-bottom: 8px;
+        }
+
+        .legend-list {
+            list-style: none;
+            padding: 0;
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+
+        .legend-list li {
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .legend-dot {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            font-family: var(--font-sans);
+            font-size: 11px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .player-a { background: #b91c1c; }
+        .player-b { background: #1d4ed8; }
+
+        .legend-line {
+            font-family: monospace;
+            font-weight: bold;
+        }
+
+        .solid-line { color: #047857; }
+        .dashed-line { color: #64748b; }
+
+        .card-divider {
+            border: 0;
+            border-top: 1px dashed #e2e8f0;
+            margin: 12px 0;
+        }
+
+        .historical-quote, .concluding-quote {
+            background: #f8fafc;
+            border-left: 4px solid var(--secondary);
+            padding: 16px 20px;
+            font-style: italic;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .quote-author, .quote-signature {
+            font-family: var(--font-sans);
+            font-style: normal;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 8px;
+            text-align: right;
+        }
+
+        .signature-block {
+            margin-top: 24px;
+            text-align: right;
+        }
+
+        .sig-name {
+            font-family: var(--font-sans);
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .sig-title {
+            font-size: 13px;
+            color: var(--gray-med);
+        }
+
+        .summary-principles-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .principle-card {
+            background: #ffffff;
+            border: 1px solid var(--card-border);
+            padding: 16px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+
+        .principle-card h4 {
+            color: var(--primary-accent);
+            margin-top: 0;
+            margin-bottom: 6px;
+        }
+
+        .principle-card p {
+            font-size: 13px;
+            margin-bottom: 0;
+            line-height: 1.5;
+        }
+
+        .authors-bio-block {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 24px 0;
+        }
+
+        .bio-card {
+            background: #f8fafc;
+            padding: 16px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .bio-card h4 {
+            margin-top: 0;
+        }
+
+        .bio-card p {
+            font-size: 13px;
+            margin-bottom: 0;
+            line-height: 1.5;
+        }
+
+        .series-title {
+            font-family: var(--font-sans);
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--secondary);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .book-title {
+            font-family: var(--font-sans);
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1.2;
+            margin-bottom: 6px;
+        }
+
+        .book-subtitle {
+            font-family: var(--font-sans);
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--primary-accent);
+            margin-bottom: 20px;
+        }
+
+        .original-meta {
+            font-size: 13.5px;
+            color: var(--gray-dark);
+            margin-bottom: 20px;
+        }
+
+        .original-meta p {
+            margin-bottom: 4px;
+        }
+
+        .separator-ornament {
+            border: 0;
+            border-top: 1px solid #cbd5e1;
+            margin: 20px 0;
+        }
+
+        .translation-credits {
+            font-size: 12.5px;
+            color: var(--gray-med);
+            border-top: 1px solid #e2e8f0;
+            padding-top: 16px;
+            margin-top: 20px;
+        }
+
+        .translation-credits p {
+            margin-bottom: 4px;
+        }
+
+        /* === CSS PAGED MEDIA (WEASYPRINT) === */
+        @page {
+            size: 170mm 245mm;
+            margin: 16mm 14mm 18mm 14mm;
+            @bottom-center {
+                content: counter(page);
+                font-family: var(--font-sans);
+                font-size: 8.5pt;
+                color: #64748b;
+            }
+        }
+
+        @page :first {
+            margin: 0;
+            @bottom-center {
+                content: normal;
+            }
+        }
+
+        .page-break-after {
+            page-break-after: always;
+        }
+
+        @media print {
+            body {
+                background: #ffffff;
+                font-size: 10.5pt;
+                line-height: 1.5;
+            }
+            .reader-wrapper {
+                max-width: none;
+                box-shadow: none;
+            }
+            .reader-nav {
+                display: none;
+            }
+            .frontmatter-page, .chapter-page {
+                padding: 0;
+            }
+            .tactical-figure-card {
+                box-shadow: none;
+                border: 1px solid #cbd5e1;
+                margin: 16px 0;
+            }
+            .tactical-court-img {
+                max-height: 80mm;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .frontmatter-page, .chapter-page {
+                padding: 24px 16px;
+            }
+            .figure-content-grid {
+                flex-direction: column;
+            }
+            .figure-image-col {
+                flex: none;
+                width: 100%;
+            }
+            .comparison-grid, .summary-principles-grid, .authors-bio-block {
+                grid-template-columns: 1fr;
+            }
+            .cover-main-title {
+                font-size: 28px;
+            }
+            .cover-sub-title {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="reader-wrapper">
+        <!-- NAVIGATION BAR FOR WEB READING -->
+        <nav class="reader-nav">
+            <div class="nav-brand">
+                <span class="nav-badge">TENNIS UNIFIED</span>
+                <a href="#cover"><strong>CHIẾN THUẬT TENNIS: ĐƠN &amp; ĐÔI</strong></a>
+            </div>
+            <div class="nav-links">
+                <a href="#toc">Mục lục</a>
+                <a href="#chapter-1">Chương 1</a>
+                <a href="#chapter-4">Giao bóng</a>
+                <a href="#chapter-6">Trên lưới</a>
+                <a href="#chapter-7">Cuối sân</a>
+                <a href="#chapter-8">Tổng kết</a>
+            </div>
+        </nav>
+
+        
+    <!-- FRONT COVER -->
+    <section class="book-cover-page" id="cover">
+        <div class="cover-image-container">
+            <img src="tactics_assets/cover.jpg" alt="Bìa sách Tennis Tactics: Singles and Doubles" class="book-cover-img">
+        </div>
+        <div class="cover-overlay-title">
+            <div class="cover-badge">TUYỆT PHẨM KINH ĐIỂN TENNIS CHIẾN THUẬT (1983)</div>
+            <h1 class="cover-main-title">CHIẾN THUẬT TENNIS</h1>
+            <h2 class="cover-sub-title">ĐÁNH ĐƠN VÀ ĐÁNH ĐÔI</h2>
+            <div class="cover-orig-title">TENNIS TACTICS: SINGLES AND DOUBLES</div>
+            <div class="cover-authors">
+                <p class="author-name"><strong>WILLIAM F. TALBERT</strong> &amp; <strong>BRUCE S. OLD</strong></p>
+                <p class="illustrator-name">Minh họa sơ đồ chiến thuật: <strong>KATHARINE D. OLD</strong></p>
+                <p class="special-contributors">Lời tựa: <strong>ARTHUR R. ASHE</strong> &bull; Lời nói đầu: <strong>CHRIS EVERT LLOYD</strong></p>
+            </div>
+            <div class="cover-publisher-tag">BẢN DỊCH TIẾNG VIỆT ẤN HÀNH BỞI TENNIS UNIFIED &bull; 2026</div>
+        </div>
+    </section>
+
+    <!-- TITLE & COPYRIGHT PAGE -->
+    <section class="frontmatter-page page-break-after" id="title-page">
+        <div class="title-page-content">
+            <div class="series-title">TỦ SÁCH DI SẢN CHIẾN THUẬT TENNIS QUỐC TẾ</div>
+            <h1 class="book-title">CHIẾN THUẬT TENNIS</h1>
+            <h2 class="book-subtitle">CẨM NANG TOÀN DIỆN VỀ CHIẾN THUẬT ĐÁNH ĐƠN VÀ ĐÁNH ĐÔI</h2>
+            <div class="original-meta">
+                <p>Nguyên tác: <em>Tennis Tactics: Singles and Doubles</em></p>
+                <p>Xuất bản lần đầu năm 1983 bởi Nhà xuất bản <strong>Harper &amp; Row, Publishers, New York</strong></p>
+                <p>Bản quyền nguyên tác &copy; 1983 bởi William F. Talbert và Bruce S. Old</p>
+            </div>
+            <hr class="separator-ornament">
+            <div class="authors-bio-block">
+                <div class="bio-card">
+                    <h4>William F. Talbert (1918–1999)</h4>
+                    <p>Huyền thoại Quần vợt Mỹ, thành viên Đại sảnh Danh vọng Quần vợt Quốc tế (International Tennis Hall of Fame). Ông từng giành 9 danh hiệu Grand Slam đôi nam và đôi nam nữ, 4 lần lọt vào chung kết đơn US Championships, đồng thời là đội trưởng kiêm huấn luyện viên tuyển Davis Cup Hoa Kỳ vô địch thế giới nhiều năm liền.</p>
+                </div>
+                <div class="bio-card">
+                    <h4>Bruce S. Old (1913–2000)</h4>
+                    <p>Tiến sĩ Luyện kim từ Học viện Công nghệ Massachusetts (MIT), nhà khoa học lỗi lạc, thành viên Viện Hàn lâm Kỹ thuật Quốc gia Hoa Kỳ, đồng thời là tay vợt nghiên cứu chiến thuật kỳ cựu. Ông cùng Bill Talbert tạo nên bộ đôi tác giả kinh điển trong nền văn hiến phân tích chiến thuật quần vợt thế giới.</p>
+                </div>
+            </div>
+            <div class="translation-credits">
+                <p><strong>Hiệu đính &amp; Chuyển ngữ tiếng Việt:</strong> Ban Chuyên môn Tennis Unified</p>
+                <p><strong>Công nghệ xuất bản:</strong> Vector CSS Paged Media &bull; WeasyPrint Engine &bull; Xuất bản kỹ thuật số 2026</p>
+                <p>Ấn bản phục vụ mục đích nghiên cứu, học tập chiến thuật phi thương mại cho cộng đồng yêu quần vợt Việt Nam.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOREWORD BY ARTHUR ASHE -->
+    <section class="frontmatter-page page-break-after" id="foreword">
+        <div class="section-header">
+            <div class="kicker">LỜI TỰA ĐẶC BIỆT</div>
+            <h2 class="chapter-title">LỜI TỰA CỦA ARTHUR R. ASHE</h2>
+            <div class="byline">Huyền thoại 3 danh hiệu Grand Slam đơn, 2 Grand Slam đôi &bull; Cựu số 1 thế giới</div>
+        </div>
+        <div class="editorial-body">
+            <p class="lead-paragraph"><span class="dropcap">T</span>hật vô cùng thích hợp khi Bill Talbert và Bruce Old tiếp tục cho ra mắt một cuốn sách hướng dẫn quần vợt mới &mdash; lần này tập trung chuyên sâu vào đề tài <em>Chiến thuật Tennis (Tennis Tactics)</em>. Tác phẩm trước đây của họ về đánh đôi (<em>The Game of Doubles in Tennis</em>) cho đến nay vẫn là công trình mang tính kinh điển và chuẩn mực nhất về lĩnh vực này.</p>
+            <p>Cuốn sách <em>Chiến thuật Tennis</em> này mang trong mình giá trị thực tiễn cho mọi đối tượng. Không một ai có thể đọc hết toàn bộ cuốn sách này chỉ trong một lần; nhưng cuốn sách hay đến mức niềm thôi thúc muốn nghiền ngẫm, khám phá nó một cách tường tận sẽ là điều vô cùng khó cưỡng lại đối với bất kỳ người yêu tennis chân chính nào.</p>
+            <p>Phần lớn các cuốn sách dạy tennis từ trước đến nay đều chỉ tập trung vào việc tạo lập động tác kỹ thuật (stroke production). Trong bối cảnh hiện nay có hơn 30 triệu người chơi tennis trên toàn cầu, đa số mọi người dường như đều đã biết cách đánh một quả thuận tay hay trái tay, nhưng lại có rất ít người thực sự thấu hiểu cái &ldquo;nguyên cớ&rdquo; và &ldquo;lý do cốt lõi&rdquo; (the why and wherefores) phía sau từng quyết định đường bóng.</p>
+            <p>Tôi muốn gợi ý một phương pháp thú vị để bạn thưởng thức và khai thác cuốn sách này: Trước hết, hãy đọc kỹ một vài phần mà bạn cảm thấy hứng thú nhất. Sau đó, hãy ngồi xuống và theo dõi một giải đấu quần vợt truyền hình trực tiếp tiếp theo &mdash; chẳng hạn như US Open &mdash; rồi thử liên hệ những gì bạn đã thẩm thấu từ <em>Chiến thuật Tennis</em> với những gì các tay vợt chuyên nghiệp hàng đầu thế giới đang phô diễn trên sân. Bạn sẽ phải kinh ngạc trước sự tương đồng đáng kinh ngạc; hoặc thậm chí tốt hơn nữa, bạn sẽ hiểu được tại sao có một số tay vợt chuyên nghiệp đáng lẽ nên dành thời gian đọc cuốn <em>Chiến thuật Tennis</em> này cho chính bản thân họ.</p>
+            <p>Dành cho người mới bắt đầu đang khao khát nắm vững chiến lược trong tầm tay, cho đến những tay vợt nâng cao đang tìm kiếm một lợi thế vượt trội trên sân đấu, <em>Chiến thuật Tennis</em> giải đáp thỏa đáng những câu hỏi hóc búa nhất.</p>
+            <p>Một lời nhắn nhủ cuối cùng: Cả <em>Chiến thuật Tennis</em> lẫn bất kỳ cuốn sách nào khác đều không thể thay thế hoàn toàn những buổi tập trực tiếp với các huấn luyện viên chuyên nghiệp dày dạn kinh nghiệm trên sân thực tế. Trong lúc này, hãy mở vợt ra sau thật sớm, vung vợt theo đà dứt điểm chuẩn xác, và tận hưởng trọn vẹn những giờ phút tuyệt vời trên sân đấu!</p>
+            <div class="signature-block">
+                <p class="sig-name"><strong>ARTHUR R. ASHE</strong></p>
+                <p class="sig-title">New York, 1983</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREFACE BY CHRIS EVERT LLOYD -->
+    <section class="frontmatter-page page-break-after" id="preface">
+        <div class="section-header">
+            <div class="kicker">LỜI NÓI ĐẦU ĐẶC BIỆT</div>
+            <h2 class="chapter-title">LỜI NÓI ĐẦU CỦA CHRIS EVERT LLOYD</h2>
+            <div class="byline">Nhà vô địch 18 danh hiệu Grand Slam đơn &bull; Cựu số 1 thế giới huyền thoại</div>
+        </div>
+        <div class="editorial-body">
+            <p class="lead-paragraph"><span class="dropcap">M</span>ôn thể thao quần vợt đòi hỏi một sự phối hợp chuẩn xác tuyệt đối giữa trí tuệ thông minh, sự tự tin bản lĩnh và kỹ năng điêu luyện. Hai thể thức thi đấu &mdash; đánh đơn và đánh đôi &mdash; đòi hỏi những chiến thuật hoàn toàn khác biệt nhau.</p>
+            <p>Cuốn sách nền tảng này của Bill Talbert và Bruce Old lần đầu tiên mang đến cho người đọc, gói gọn trọn vẹn trong một tác phẩm duy nhất, những chỉ dẫn vô giá về các chiến lược độc đáo áp dụng cho cả nội dung đánh đơn lẫn đánh đôi. Tôi tin tưởng sâu sắc rằng tác phẩm này sẽ là một cẩm nang tham khảo có giá trị thực tiễn vô cùng to lớn xuyên suốt toàn bộ sự nghiệp chơi tennis của bạn.</p>
+            <p>Tôi trân trọng giới thiệu cuốn sách này để bạn nghiên cứu, nghiền ngẫm lặp đi lặp lại nhiều lần!</p>
+            <div class="signature-block">
+                <p class="sig-name"><strong>CHRIS EVERT LLOYD</strong></p>
+                <p class="sig-title">Fort Lauderdale, Florida, 1983</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TABLE OF CONTENTS (MỤC LỤC CHI TIẾT) -->
+    <section class="frontmatter-page page-break-after" id="toc">
+        <div class="section-header">
+            <div class="kicker">HỆ THỐNG NỘI DUNG TÁC PHẨM</div>
+            <h2 class="chapter-title">MỤC LỤC TỔNG QUAN</h2>
+            <div class="byline">Tennis Tactics: Singles and Doubles &bull; Khảo cứu chiến thuật toàn diện</div>
+        </div>
+        <div class="toc-container">
+            <div class="toc-item">
+                <div class="toc-line">
+                    <span class="toc-title"><a href="#foreword">Lời tựa của Arthur R. Ashe (Foreword)</a></span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">Trang 7</span>
+                </div>
+            </div>
+            <div class="toc-item">
+                <div class="toc-line">
+                    <span class="toc-title"><a href="#preface">Lời nói đầu của Chris Evert Lloyd (Preface)</a></span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">Trang 9</span>
+                </div>
+            </div>
+            <div class="toc-item">
+                <div class="toc-line">
+                    <span class="toc-title"><a href="#chapter-1">Chương 1: Giới thiệu chung (Introduction)</a></span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">Trang 11</span>
+                </div>
+                <div class="toc-sub">Phương pháp đọc sơ đồ chiến thuật (Hình 1) &bull; Bản chất của phản xạ chiến thuật dưới nửa giây</div>
+            </div>
+            <div class="toc-item">
+                <div class="toc-line">
+                    <span class="toc-title"><a href="#chapter-2">Chương 2: Lược sử quần vợt (Brief History)</a></span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">Trang 15</span>
+                </div>
+                <div class="toc-sub">Từ Thiếu tá Wingfield (1873) đến Kỷ nguyên Mở &bull; Bảng 1&ndash;5: Các huyền thoại Đơn, Đôi, Nam Nữ 1940&ndash;1983</div>
+            </div>
+            <div class="toc-item">
+                <div class="toc-line">
+                    <span class="toc-title"><a href="#chapter-3">Chương 3: Bản chất các thể thức thi đấu (The Games)</a></span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">Trang 21</span>
+                </div>
+                <div class="toc-sub">Thể lực trong đánh đơn vs. Phối hợp đồng đội trong đánh đôi &bull; Bảng 6&ndash;8: Thống kê hiệu suất &bull; Kỹ thuật cầm vợt (Hình 2&ndash;4) &bull; Cú Forehand Drive (Hình 5)</div>
+            </div>
+            <div class="toc-item">
+                <div class="toc-line">
+                    <span class="toc-title"><a href="#chapter-4">Chương 4: Cú giao bóng (The Serve)</a></span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">Trang 31</span>
+                </div>
+                <div class="toc-sub">3 kiểu giao bóng căn bản (Hình 6) &bull; Điểm ngắm giao bóng Đơn &amp; Đôi (Hình 7, 9) &bull; Bảng 9 &bull; Đội hình dị biệt (Hình 13)</div>
+            </div>
+            <div class="toc-item">
+                <div class="toc-line">
+                    <span class="toc-title"><a href="#chapter-5">Chương 5: Trả giao bóng (Return of Service)</a></span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">Trang 45</span>
+                </div>
+                <div class="toc-sub">Vị trí đón bóng &bull; Hóa giải máy giao bóng lên lưới &bull; Trả giao bóng Đôi &bull; Đè bẹp đội hình dị biệt (Hình 14&ndash;21)</div>
+            </div>
+            <div class="toc-item">
+                <div class="toc-line">
+                    <span class="toc-title"><a href="#chapter-6">Chương 6: Chiến thuật trên lưới (Net Play)</a></span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">Trang 57</span>
+                </div>
+                <div class="toc-sub">Bức tường vô-lê lòng chảo (Hình 22) &bull; 4 cách lên lưới (Hình 23&ndash;26) &bull; Cú vô-lê đầu tiên, sâu, góc, đập smash, bỏ nhỏ, bắt bài poach, drift, draw play (Hình 27&ndash;49)</div>
+            </div>
+            <div class="toc-item">
+                <div class="toc-line">
+                    <span class="toc-title"><a href="#chapter-7">Chương 7: Chiến thuật cuối sân (Base-Line Play)</a></span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">Trang 95</span>
+                </div>
+                <div class="toc-sub">Đòn ép sân, passing shot, lốp bóng &bull; Chiến thuật cuối sân đánh đôi: đòn dink, xé toạc trung lộ, lốp tấn công, phòng thủ đồng đội (Hình 50&ndash;65)</div>
+            </div>
+            <div class="toc-item">
+                <div class="toc-line">
+                    <span class="toc-title"><a href="#chapter-8">Chương 8: Tổng kết chiến thuật &amp; Lời nhắn gửi (Summary)</a></span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page">Trang 119</span>
+                </div>
+                <div class="toc-sub">Nguyên lý chung &bull; Tổng kết chiến thuật Đơn &bull; Tổng kết chiến thuật Đôi &bull; Lời khuyên cuối cùng</div>
+            </div>
+        </div>
+    </section>
+    
+        
+    <!-- CHAPTER 1: INTRODUCTION -->
+    <section class="chapter-page page-break-after" id="chapter-1">
+        <div class="chapter-header">
+            <div class="chapter-number">CHƯƠNG 1</div>
+            <h2 class="chapter-title">GIỚI THIỆU CHUNG</h2>
+            <div class="chapter-subtitle">Triết lý chiến thuật đồng nhất cho cả Đánh đơn và Đánh đôi</div>
+        </div>
+
+        <div class="editorial-body">
+            <p class="lead-paragraph"><span class="dropcap">C</span>uốn sách này mang trong mình một mục tiêu độc nhất vô nhị. Khác biệt với bất kỳ công trình nào từng được viết về quần vợt trong lịch sử, tác phẩm này được dành trọn vẹn để trình bày &mdash; trong cùng một tập sách duy nhất &mdash; một khảo cứu tường tận, chi tiết về các chiến thuật nền tảng được vận dụng để giành chiến thắng trong cả hai thể thức: <strong>Đánh đơn (Singles)</strong> và <strong>Đánh đôi (Doubles)</strong>.</p>
+            
+            <p>Phương pháp diễn đạt được thiết kế giản dị, khúc chiết nhưng mang tính chuẩn mực và uy quyền chuyên môn cao nhất. Tác phẩm hướng đến mọi đối tượng: từ các tay vợt thi đấu giải đỉnh cao cho đến những người mới bước vào sân tập, từ thanh thiếu niên đến bậc lão tướng, cho cả nam lẫn nữ. Để lĩnh hội trọn vẹn giá trị, người đọc không cần phải là một vận động viên siêu đẳng, nhưng một hiểu biết căn bản về cách thức tạo lập các cú đánh và các luật lệ thi đấu quần vợt sẽ giúp ích rất nhiều.</p>
+
+            <p>Trong quần vợt, chiến thuật chính là <em>nghệ thuật và khoa học của việc triển khai, điều động các nguồn lực trên sân nhằm đánh bại đối phương</em>. Trước mỗi một cú đánh của đối thủ đang bay tới, não bộ của một tay vợt phải phân tích và giải quyết hàng loạt biến số phức tạp trong khoảng thời gian thường <strong>chưa đầy nửa giây (0.5 giây)</strong>:</p>
+
+            <ul class="tactical-bullets">
+                <li><strong>Quỹ đạo và tốc độ:</strong> Quả bóng đang lao tới với vận tốc bao nhiêu, độ xoáy gì (cắt, cuộn topspin, hay phẳng), và sẽ nảy lên ở độ cao nào?</li>
+                <li><strong>Vị trí của bản thân:</strong> Mình phải di chuyển đến tọa độ nào trên mặt sân để tiếp xúc bóng ở điểm tối ưu nhất trong tầm với?</li>
+                <li><strong>Vị trí và điểm yếu của đối thủ:</strong> Đối thủ đang đứng lệch về góc nào, đang băng lên lưới hay cố thủ ở vạch cuối sân? Hông đối thủ đang hở ở mạn nào?</li>
+                <li><strong>Lựa chọn đòn đáp trả:</strong> Mình nên đánh thẳng dọc dây (down the line), ép chéo sân (crosscourt), lốp bóng qua đầu (lob) hay bỏ nhỏ (drop shot)? Dùng độ xoáy nào và với lực bao nhiêu?</li>
+                <li><strong>Vị trí hồi phục ngay sau đó:</strong> Ngay sau khi vung vợt xong, mình phải lập tức phục hồi về vị trí nào để đón cú đánh trả tiếp theo của đối phương?</li>
+            </ul>
+
+            <p>Rõ ràng, việc ra quyết định chiến thuật trong quần vợt diễn ra tức thời đến mức người chơi buộc phải rèn luyện để biến các nguyên lý chiến thuật thành <strong>bản năng tự nhiên</strong>. Cuốn sách này được biên soạn chính là để trang bị cho bạn bản năng chiến thuật sắc bén đó.</p>
+
+            <!-- FIGURE 1: DIAGRAM METHOD -->
+            <div class="tactical-figure-card" id="fig-01">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 1 &bull; FIGURE 1</span>
+                    <h3 class="fig-title">PHƯƠNG PHÁP ĐỌC SƠ ĐỒ CHIẾN THUẬT (DIAGRAM METHOD)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_01.jpg" alt="Hình 1: Phương pháp đọc sơ đồ chiến thuật" class="tactical-court-img">
+                        <div class="fig-caption-tag">Sơ đồ minh họa nguyên lý phân tích điểm số</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Quy ước ký hiệu trên sân:</h4>
+                        <ul class="legend-list">
+                            <li><span class="legend-dot player-a">A</span> <strong>Người chơi A:</strong> Đang ở vị trí giao bóng cuối sân.</li>
+                            <li><span class="legend-dot player-b">B</span> <strong>Người chơi B:</strong> Đang ở vị trí đón giao bóng.</li>
+                            <li><span class="legend-line solid-line">&mdash;&mdash;</span> <strong>Đường nét liền:</strong> Đường bay của quả bóng (flight of the ball). Kèm số thứ tự cú đánh (1, 2, 3...).</li>
+                            <li><span class="legend-line dashed-line">- - - -</span> <strong>Đường nét đứt:</strong> Đường di chuyển của người chơi (movement of players).</li>
+                        </ul>
+                        <hr class="card-divider">
+                        <h4>Phân tích diễn biến điểm số mẫu:</h4>
+                        <p>Sơ đồ này minh họa phương pháp trực quan được áp dụng xuyên suốt toàn bộ tác phẩm. Nó cũng đồng thời vạch trần cách thức mà <strong>hai sai lầm chiến thuật liên tiếp</strong> của tay vợt A đã khiến anh ta đánh mất điểm số này:</p>
+                        <ol class="step-analysis-list">
+                            <li><strong>Cú đánh (1):</strong> Tay vợt A giao bóng sâu vào góc trái tay của tay vợt B, sau đó lập tức lao lên lưới (rush to net) để tìm kiếm cú vô-lê dứt điểm.</li>
+                            <li><strong>Cú đánh (2):</strong> Người đón bóng B tung ra cú trả giao bóng chéo sân (crosscourt return) bằng quả trái tay.</li>
+                            <li><strong>Cú đánh (3) &mdash; Sai lầm chiến thuật thứ nhất:</strong> Tay vợt A thực hiện cú vô-lê đón trả bóng. Tuy nhiên, anh ta mắc sai lầm nghiêm trọng khi <em>vô-lê bóng trở lại chính mạn sân mà tay vợt B vừa thực hiện cú trả giao bóng</em>, thay vì mở rộng góc đánh sang phần sân trống đối diện! Sai lầm này cho phép B tiếp cận bóng mà không phải di chuyển nhiều.</li>
+                            <li><strong>Cú đánh (4):</strong> Người đón bóng B di chuyển nhẹ sang ngang và tung ra một cú đánh dọc dây (down the line).</li>
+                            <li><strong>Sai lầm chiến thuật thứ hai:</strong> Sau cú vô-lê (3), tay vợt A đã di chuyển lệch quá nhiều sang bên phải sân của mình, để lại một khoảng trống mênh mông dọc dây bên trái. Cú đánh (4) của B bay vút qua người A để ghi điểm thắng trực tiếp (clean passing winner)!</li>
+                        </ol>
+                        <div class="tactical-takeaway">
+                            <strong>Bài học cốt lõi:</strong> Không bao giờ được đánh bóng trở lại góc mà đối thủ đang đứng chờ sẵn khi bạn đang ở trên lưới, trừ phi bạn thực hiện một cú vô-lê góc cực ngắn hoặc ép đối thủ vào thế mất thăng bằng hoàn toàn.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHAPTER 2: BRIEF HISTORY -->
+    <section class="chapter-page page-break-after" id="chapter-2">
+        <div class="chapter-header">
+            <div class="chapter-number">CHƯƠNG 2</div>
+            <h2 class="chapter-title">LƯỢC SỬ QUẦN VỢT</h2>
+            <div class="chapter-subtitle">Từ bãi cỏ Nantclwyd (1873) đến kỷ nguyên chuyên nghiệp toàn cầu</div>
+        </div>
+
+        <div class="editorial-body">
+            <p class="lead-paragraph"><span class="dropcap">Q</span>uần vợt sân cỏ hiện đại bắt đầu xuất hiện tại nước Anh vào năm 1873 với phát minh của <strong>Thiếu tá Walter Clopton Wingfield</strong>. Bản mô tả đầu tiên về trò chơi được ông ghi lại trong cuốn cẩm nang nhỏ mang tên <em>The Major's Game of Lawn Tennis</em>, đề tặng bữa tiệc họp mặt tại tư dinh Nantclwyd vào tháng 12 năm 1873.</p>
+
+            <p>Thiếu tá Wingfield đã không thể cưỡng lại việc đưa ra những lời khuyên chiến thuật đầu tiên trong lịch sử quần vợt:</p>
+
+            <blockquote class="historical-quote">
+                &ldquo;Hãy đánh bóng nhẹ nhàng, và quan sát thật kỹ trước khi vung vợt, cốt sao cho bóng rơi vào góc sân xa nhất so với đối thủ của bạn. Một lượng xoáy cạnh rất lớn có thể được truyền vào bóng bằng một cảm giác chạm vợt tinh tế; điều này kết hợp với sự ước lượng lực chuẩn xác sẽ gia tăng đáng kể độ tinh xảo và tính khoa học của trò chơi.&rdquo;
+                <div class="quote-author">&mdash; Thiếu tá Walter Clopton Wingfield (1873)</div>
+            </blockquote>
+
+            <p>Trải qua hơn một thế kỷ, kích thước sân bãi, chiều cao của lưới và hệ thống tính điểm dần được chuẩn hóa. Giải Vô địch Wimbledon đầu tiên ra đời năm 1877, tiếp theo là Giải Vô địch Quốc gia Hoa Kỳ (nay là US Open) năm 1881. Từ lối chơi ban đầu chủ yếu là đánh qua lại nhẹ nhàng từ vạch cuối sân, các trường phái chiến thuật bắt đầu phân hóa mạnh mẽ: từ lối chơi bám biên cuối sân của trường phái Anh-Mỹ sơ khai, đến cuộc cách mạng giao bóng lên lưới sấm sét của <strong>Maurice McLoughlin</strong> (&ldquo;Sao chổi California&rdquo;), sự hoàn hảo đến tột đỉnh của <strong>Bill Tilden</strong> và <strong>Don Budge</strong>, cho đến kỷ nguyên phục hưng của các huyền thoại Úc thời hậu chiến (Rod Laver, Ken Rosewall, John Newcombe) và kỷ nguyên mở hiện đại.</p>
+
+            <!-- HISTORICAL CHAMPIONS TABLES -->
+            <div class="table-container">
+                <div class="table-title">BẢNG 1: CÁC TAY VỢT ĐƠN NAM XUẤT SẮC NHẤT (1940 ĐẾN 1983)</div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Tên &amp; Quốc tịch</th>
+                            <th>Wimbledon</th>
+                            <th>Giải Vô địch Hoa Kỳ (US Open)</th>
+                            <th>Thành tích Chuyên nghiệp (Pro Tour)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>John A. Kramer (Mỹ)</strong></td><td>1947</td><td>1946, 1947</td><td>Vô địch Pro 1948, 1949, 1950, 1951, 1952</td></tr>
+                        <tr><td><strong>Richard A. Gonzalez (Mỹ)</strong></td><td>&mdash;</td><td>1948, 1949</td><td>Thống trị Pro: 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961</td></tr>
+                        <tr><td><strong>Rodney Laver (Úc)</strong></td><td>1961, 1962, 1968, 1969</td><td>1962, 1969</td><td>Vô địch Pro 1965, 1966, 1967; Cú đúp Grand Slam năm 1962 &amp; 1969</td></tr>
+                        <tr><td><strong>John Newcombe (Úc)</strong></td><td>1967, 1970, 1971</td><td>1967, 1973</td><td>Huyền thoại giao bóng lên lưới thế giới</td></tr>
+                        <tr><td><strong>Bj&ouml;rn Borg (Thụy Điển)</strong></td><td>1976, 1977, 1978, 1979, 1980</td><td>&mdash;</td><td>6 Roland Garros, 5 Wimbledon liên tiếp</td></tr>
+                        <tr><td><strong>John McEnroe (Mỹ)</strong></td><td>1981, 1983</td><td>1979, 1980, 1981</td><td>Thiên tài cảm giác bóng và vô-lê đỉnh cao</td></tr>
+                        <tr><td><strong>Jimmy Connors (Mỹ)</strong></td><td>1974, 1982</td><td>1974, 1976, 1978, 1982, 1983</td><td>Vua trả giao bóng và bền bỉ vạch cuối sân</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-container">
+                <div class="table-title">BẢNG 2: CÁC ĐÔI NAM XUẤT SẮC NHẤT (1940 ĐẾN 1983)</div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Cặp Vận động viên &amp; Quốc tịch</th>
+                            <th>Wimbledon</th>
+                            <th>Giải Vô địch Hoa Kỳ (US Open)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Jack Kramer &amp; Ted Schroeder (Mỹ)</strong></td><td>1946</td><td>1940, 1941, 1947</td></tr>
+                        <tr><td><strong>William F. Talbert &amp; Gardnar Mulloy (Mỹ)</strong></td><td>&mdash;</td><td>1942, 1945, 1946, 1948 (Kỷ lục 4 lần US Doubles)</td></tr>
+                        <tr><td><strong>Ken Rosewall &amp; Rex Hartwig / Lew Hoad (Úc)</strong></td><td>1953, 1956</td><td>1956</td></tr>
+                        <tr><td><strong>John Newcombe &amp; Tony Roche (Úc)</strong></td><td>1965, 1968, 1969, 1970, 1974</td><td>1967</td></tr>
+                        <tr><td><strong>Stan Smith &amp; Bob Lutz (Mỹ)</strong></td><td>&mdash;</td><td>1968, 1974, 1978, 1980</td></tr>
+                        <tr><td><strong>John McEnroe &amp; Peter Fleming (Mỹ)</strong></td><td>1979, 1981, 1983</td><td>1979, 1981, 1983</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-container">
+                <div class="table-title">BẢNG 3: CÁC TAY VỢT ĐƠN NỮ XUẤT SẮC NHẤT (1940 ĐẾN 1983)</div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Tên &amp; Quốc tịch</th>
+                            <th>Wimbledon</th>
+                            <th>Giải Vô địch Hoa Kỳ (US Open)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Margaret Osborne duPont (Mỹ)</strong></td><td>1947</td><td>1948, 1949, 1950</td></tr>
+                        <tr><td><strong>Maureen Connolly (Mỹ)</strong></td><td>1952, 1953, 1954</td><td>1951, 1952, 1953 (Grand Slam năm 1953)</td></tr>
+                        <tr><td><strong>Althea Gibson (Mỹ)</strong></td><td>1957, 1958</td><td>1957, 1958</td></tr>
+                        <tr><td><strong>Maria Bueno (Brazil)</strong></td><td>1959, 1960, 1964</td><td>1959, 1963, 1964, 1966</td></tr>
+                        <tr><td><strong>Margaret Smith Court (Úc)</strong></td><td>1963, 1965, 1970</td><td>1962, 1965, 1969, 1970, 1973 (Grand Slam 1970)</td></tr>
+                        <tr><td><strong>Billie Jean King (Mỹ)</strong></td><td>1966, 1967, 1968, 1972, 1973, 1975</td><td>1967, 1971, 1972, 1974</td></tr>
+                        <tr><td><strong>Chris Evert Lloyd (Mỹ)</strong></td><td>1974, 1976, 1981</td><td>1975, 1976, 1977, 1978, 1980, 1982</td></tr>
+                        <tr><td><strong>Martina Navratilova (Mỹ)</strong></td><td>1978, 1979, 1982, 1983</td><td>1983</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHAPTER 3: THE GAMES -->
+    <section class="chapter-page page-break-after" id="chapter-3">
+        <div class="chapter-header">
+            <div class="chapter-number">CHƯƠNG 3</div>
+            <h2 class="chapter-title">BẢN CHẤT CÁC THỂ THỨC THI ĐẤU</h2>
+            <div class="chapter-subtitle">So sánh Đơn vs. Đôi &bull; Thống kê tần suất &bull; Nền tảng kỹ thuật động tác</div>
+        </div>
+
+        <div class="editorial-body">
+            <p class="lead-paragraph"><span class="dropcap">T</span>hi đấu đơn và thi đấu đôi trong quần vợt có những nét tương đồng về mặt luật lệ và kỹ thuật cơ bản, nhưng lại là <strong>hai thế giới chiến thuật hoàn toàn khác biệt</strong>. Để chơi tốt, người chơi bắt buộc phải thấu hiểu sự phân hóa sâu sắc giữa hai thể thức này.</p>
+
+            <h3>1. Sự khác biệt cốt lõi giữa Đánh đơn và Đánh đôi</h3>
+            <div class="comparison-grid">
+                <div class="comp-card singles-card">
+                    <h4>Nội dung Đánh đơn (Singles)</h4>
+                    <ul>
+                        <li><strong>Diện tích bao quát:</strong> Một người phải chịu trách nhiệm bao quát toàn bộ mặt sân rộng 8.23m (27 feet).</li>
+                        <li><strong>Đòi hỏi thể lực phi thường:</strong> Tần suất di chuyển đổi hướng liên tục đòi hỏi sức bền tim mạch và tốc độ bứt phá tột độ.</li>
+                        <li><strong>Chiến thuật đa dạng:</strong> Cho phép nhiều trường phái thành công: bám biên cuối sân (baseline grinder), giao bóng lên lưới (serve &amp; volley), hoặc toàn diện (all-court).</li>
+                        <li><strong>Cuộc chiến tâm lý đơn độc:</strong> Người chơi hoàn toàn tự chịu trách nhiệm, không có ai để chia sẻ gánh nặng tinh thần trên sân.</li>
+                    </ul>
+                </div>
+                <div class="comp-card doubles-card">
+                    <h4>Nội dung Đánh đôi (Doubles)</h4>
+                    <ul>
+                        <li><strong>Diện tích bao quát:</strong> Hai người phối hợp trên mặt sân rộng 10.97m (36 feet) &mdash; mỗi người chỉ phải chịu trách nhiệm trung bình 5.48m.</li>
+                        <li><strong>Đòi hỏi tốc độ phản xạ &amp; phối hợp:</strong> Điểm số diễn ra chớp nhoáng, bóng bay ở cự ly gần; sức mạnh tập thể và sự ăn ý vượt lên trên sức bền chạy bộ.</li>
+                        <li><strong>Quy luật độc tôn:</strong> Chiếm lĩnh vị trí trên lưới là con đường duy nhất để áp đảo; hầu như không có đất diễn cho lối chơi phòng ngự thụ động cuối sân.</li>
+                        <li><strong>Sức mạnh đồng đội:</strong> Sự thấu hiểu, động viên và bọc lót lẫn nhau giữa hai đối tác quyết định hơn 50% thắng bại.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- STATISTICAL ANALYSIS TABLES 6, 7, 8 -->
+            <h3>2. Khảo sát thống kê tần suất cú đánh và cơ hội ghi điểm</h3>
+            <p>Để xây dựng một hệ thống chiến thuật thực sự khoa học, Talbert và Bruce Old đã tiến hành nghiên cứu định lượng quy mô lớn trên hàng ngàn điểm số đỉnh cao. Kết quả được đúc kết trong các bảng dưới đây:</p>
+
+            <div class="table-container">
+                <div class="table-title">BẢNG 6: TẦN SUẤT SỬ DỤNG VÀ TỶ LỆ GHI ĐIỂM CÁC CÚ ĐÁNH TRONG ĐƠN NAM (%)</div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Loại cú đánh</th>
+                            <th>Tần suất sử dụng (Sân nhanh)</th>
+                            <th>Điểm thắng trực tiếp (Sân nhanh)</th>
+                            <th>Tần suất sử dụng (Sân chậm)</th>
+                            <th>Điểm thắng trực tiếp (Sân chậm)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Giao bóng 1 (First Serve)</td><td>24.5%</td><td>18.0%</td><td>23.0%</td><td>6.0%</td></tr>
+                        <tr><td>Giao bóng 2 (Second Serve)</td><td>13.0%</td><td>2.0%</td><td>14.0%</td><td>0.5%</td></tr>
+                        <tr><td>Trả giao bóng (Return)</td><td>25.0%</td><td>7.0%</td><td>26.0%</td><td>4.0%</td></tr>
+                        <tr><td>Cú vô-lê đầu tiên (First Volley)</td><td>18.0%</td><td>15.0%</td><td>7.0%</td><td>5.0%</td></tr>
+                        <tr><td>Vô-lê sau đó (Later Volley)</td><td>7.0%</td><td>8.0%</td><td>3.0%</td><td>3.5%</td></tr>
+                        <tr><td>Đập bóng trên đầu (Overhead Smash)</td><td>1.0%</td><td>2.0%</td><td>1.0%</td><td>2.0%</td></tr>
+                        <tr><td>Cú đánh passing shot</td><td>9.0%</td><td>8.0%</td><td>10.0%</td><td>9.0%</td></tr>
+                        <tr><td>Giằng co cuối sân (Baseline Rally)</td><td>2.0%</td><td>1.0%</td><td>15.0%</td><td>12.0%</td></tr>
+                        <tr><td>Lốp bóng (Lob)</td><td>0.5%</td><td>0.0%</td><td>1.0%</td><td>1.0%</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-container">
+                <div class="table-title">BẢNG 7: TẦN SUẤT SỬ DỤNG VÀ TỶ LỆ GHI ĐIỂM TRONG ĐÔI NAM (%)</div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Loại cú đánh</th>
+                            <th>Tần suất sử dụng</th>
+                            <th>Tỷ lệ ghi điểm thắng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Giao bóng 1 &amp; 2 (Serve)</td><td>30.0%</td><td>15.0%</td></tr>
+                        <tr><td>Trả giao bóng (Return of Service)</td><td>25.0%</td><td>8.0%</td></tr>
+                        <tr><td>Cú vô-lê trên lưới (All Volleys)</td><td>33.0%</td><td>28.0%</td></tr>
+                        <tr><td>Đập bóng trên đầu (Overhead Smash)</td><td>3.0%</td><td>5.0%</td></tr>
+                        <tr><td>Passing shot &amp; bóng cuối sân</td><td>8.0%</td><td>6.0%</td></tr>
+                        <tr><td>Lốp bóng (Lob)</td><td>1.0%</td><td>1.0%</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-container">
+                <div class="table-title">BẢNG 8: XÁC SUẤT TƯƠNG ĐỐI THẮNG ĐIỂM THEO TỪNG VỊ TRÍ TRÊN SÂN</div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Vị trí thi đấu</th>
+                            <th>Xác suất thắng điểm trong Đánh đơn</th>
+                            <th>Xác suất thắng điểm trong Đánh đôi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Chiếm lĩnh trên lưới (Net Position)</strong></td><td><strong>63.5%</strong></td><td><strong>74.0%</strong></td></tr>
+                        <tr><td>Khu vực trung lộ / lấp lửng (No-man's Land)</td><td>28.0%</td><td>18.0%</td></tr>
+                        <tr><td>Vạch cuối sân (Base-line Position)</td><td>36.5%</td><td>26.0%</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tactical-takeaway">
+                <strong>Đúc kết mang tính quy luật:</strong> Bảng 8 chứng minh một chân lý thép: dù ở đánh đơn hay đánh đôi, <em>khu vực trên lưới luôn là vùng đất tấn công màu mỡ nhất</em>. Cặp đôi nào chiếm được lưới trước sẽ nắm giữ tới 74% cơ hội kết thúc điểm số thắng lợi!
+            </div>
+
+            <!-- STROKE PRODUCTION FUNDAMENTALS -->
+            <h3>3. Nền tảng kỹ thuật tạo lập động tác (Figures 2–5)</h3>
+            <p>Chiến thuật dù tinh tế đến đâu cũng không thể vận hành nếu thiếu đi một nền tảng kỹ thuật vững chắc. Dưới đây là khảo cứu về các kiểu cầm vợt chuẩn mực của các bậc thầy thế giới:</p>
+
+            <!-- FIGURE 2: EASTERN GRIP -->
+            <div class="tactical-figure-card" id="fig-02">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 2 &bull; FIGURE 2</span>
+                    <h3 class="fig-title">KIỂU CẦM VỢT EASTERN TAY PHẢI (EASTERN GRIP)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_02.jpg" alt="Hình 2: Cầm vợt Eastern" class="tactical-court-img">
+                        <div class="fig-caption-tag">Kiểu cầm vợt kinh điển của Bill Tilden và Don Budge</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích kỹ thuật cầm vợt:</h4>
+                        <p>Kiểu cầm vợt thuận tay Eastern (Eastern Forehand) thường được ví như hành động <em>&ldquo;bắt tay với cây vợt&rdquo; (shaking hands with the racket)</em>. Lòng bàn tay áp sát phẳng vào mặt phẳng thẳng đứng của cán vợt, đốt ngón trỏ đặt tựa vào cạnh vát số 3.</p>
+                        <p>Đây là kiểu cầm vợt vô cùng vững chắc (strong grip), cho phép người chơi dễ dàng chống lại áp lực đẩy từ đầu vợt. Nó tạo ra quỹ đạo bóng phẳng, uy lực mạnh mẽ và kiểm soát tuyệt vời trên mặt sân có độ nảy tầm trung bình đến cao. Với quả trái tay Eastern (Eastern Backhand), bàn tay xoay nhẹ ngược chiều kim đồng hồ khoảng một phần tư vòng, ngón tay cái tựa chéo dọc theo sống sau của cán vợt để tạo điểm tựa trợ lực vững chãi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIGURE 3: CONTINENTAL GRIP -->
+            <div class="tactical-figure-card" id="fig-03">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 3 &bull; FIGURE 3</span>
+                    <h3 class="fig-title">KIỂU CẦM VỢT CONTINENTAL TAY TRÁI (CONTINENTAL GRIP)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_03.jpg" alt="Hình 3: Cầm vợt Continental Rod Laver" class="tactical-court-img">
+                        <div class="fig-caption-tag">Kiểu cầm vợt vạn năng của Rod Laver và John McEnroe</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích kỹ thuật cầm vợt:</h4>
+                        <p>Hình 3 minh họa kiểu cầm Continental tay trái trứ danh của huyền thoại <strong>Rod Laver</strong>. Điểm mạnh vượt trội của Continental là tính vạn năng: người chơi có thể đánh quả thuận tay, trái tay, giao bóng, đập bóng smash và thực hiện toàn bộ các quả vô-lê trên lưới <em>mà không cần phải xoay chuyển cách cầm vợt</em>.</p>
+                        <p>Đặc tính này cực kỳ quý giá trong các pha giao tranh tốc độ cao trên lưới trong đánh đôi, nơi người chơi không có đủ tích tắc thời gian để xoay cán vợt. Tuy nhiên, nó đòi hỏi cổ tay phải rất dẻo dai và khỏe để xử lý các quả bóng nảy cao trên vai.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIGURE 4: TWO-HANDED BACKHAND -->
+            <div class="tactical-figure-card" id="fig-04">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 4 &bull; FIGURE 4</span>
+                    <h3 class="fig-title">KIỂU CẦM VỢT TRÁI TAY HAI TAY (TWO-HANDED BACKHAND)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_04.jpg" alt="Hình 4: Trái tay hai tay Chris Evert" class="tactical-court-img">
+                        <div class="fig-caption-tag">Vũ khí kiểm soát trứ danh của Chris Evert Lloyd</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích kỹ thuật cầm vợt:</h4>
+                        <p>Cú trái tay hai tay được đại diện xuất sắc bởi <strong>Chris Evert Lloyd</strong>. Về bản chất, nó được cấu thành từ hai kiểu cầm Eastern thuận tay: tay dưới giữ chắc cán vợt làm trục, tay trên đóng vai trò dẫn hướng và truyền lực xoáy cuộn topspin.</p>
+                        <p>Ưu thế chiến thuật to lớn nhất của cú hai tay là <strong>tính ngụy trang khó đoán (deception)</strong>: người chơi có thể giữ nguyên tư thế vung vợt đến tích tắc cuối cùng trước khi quyết định bắn bóng dọc dây, ép chéo sân, hoặc bất ngờ mở mặt vợt bỏ nhỏ mà đối thủ không thể phán đoán trước hướng bay!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIGURE 5: THE FOREHAND DRIVE -->
+            <div class="tactical-figure-card" id="fig-05">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 5 &bull; FIGURE 5</span>
+                    <h3 class="fig-title">CHUỖI ĐỘNG TÁC CÚ THUẬN TAY TẤN CÔNG (THE FOREHAND DRIVE)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_05.jpg" alt="Hình 5: Chuỗi động tác thuận tay Drive" class="tactical-court-img">
+                        <div class="fig-caption-tag">Cơ chế phát lực khí động học của cú đánh cơ bản</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Nguyên lý chuyển động động học:</h4>
+                        <p>Hình 5 trình bày toàn bộ chuỗi chuyển động liên hoàn của cú thuận tay chuẩn mực:</p>
+                        <ol class="step-analysis-list">
+                            <li><strong>Giai đoạn chuẩn bị:</strong> Xoay hông và vai sớm, đưa vợt ra sau theo hình vòng cung nhịp nhàng.</li>
+                            <li><strong>Hạ đầu vợt:</strong> Đầu vợt chúc xuống thấp hơn điểm tiếp xúc bóng dự kiến để sẵn sàng quét lên tạo xoáy.</li>
+                            <li><strong>Tiếp xúc bóng (Impact):</strong> Đón bóng ngang hông phía trước mũi chân trụ, mặt vợt vuông góc với hướng đánh.</li>
+                            <li><strong>Vung vợt theo đà (Follow-through):</strong> Kéo vợt vươn dài ra phía trước theo hướng bóng mục tiêu rồi cuốn tự nhiên qua vai đối diện.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        
+    <!-- CHAPTER 4: THE SERVE -->
+    <section class="chapter-page page-break-after" id="chapter-4">
+        <div class="chapter-header">
+            <div class="chapter-number">CHƯƠNG 4</div>
+            <h2 class="chapter-title">CÚ GIAO BÓNG (THE SERVE)</h2>
+            <div class="chapter-subtitle">Vũ khí tấn công khởi đầu trận đấu &bull; Hình 6 đến Hình 13 &bull; Bảng 9</div>
+        </div>
+
+        <div class="editorial-body">
+            <p class="lead-paragraph"><span class="dropcap">C</span>ú giao bóng là cú đánh quan trọng bậc nhất trong môn quần vợt vì hai lý do nền tảng. Thứ nhất, nó là cú đánh có tần suất xuất hiện cao nhất: chiếm tới <strong>37.5% tổng số cú đánh trong đánh đơn</strong> (Bảng 6) và <strong>30.0% trong đánh đôi</strong> (Bảng 7). Thứ hai, đây là cú đánh duy nhất trong trận đấu mà đối thủ hoàn toàn không thể can thiệp vào hành động của bạn &mdash; bạn tự tung bóng, tự quyết định thời điểm, tốc độ, độ xoáy và vị trí điểm rơi.</p>
+
+            <div class="table-container">
+                <div class="table-title">BẢNG 9: ẢNH HƯỞNG CỦA CÚ GIAO BÓNG ĐẾN KẾT QUẢ ĐIỂM SỐ TRONG ĐÁNH ĐƠN (%)</div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Tình huống giao bóng</th>
+                            <th>Tỷ lệ giao bóng vào sân</th>
+                            <th>Xác suất thắng điểm của người giao</th>
+                            <th>Tỷ lệ đối thủ mắc lỗi trả bóng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Giao bóng 1 (First Serve) &mdash; Uy lực &amp; Chuẩn xác</strong></td><td>60% &ndash; 70%</td><td><strong>68% &ndash; 78%</strong></td><td>28% &ndash; 35%</td></tr>
+                        <tr><td>Giao bóng 2 (Second Serve) &mdash; An toàn &amp; Giảm lực</td><td>85% &ndash; 95%</td><td>45% &ndash; 52%</td><td>8% &ndash; 12%</td></tr>
+                        <tr><td>Giao bóng hỏng cả hai quả (Double Fault)</td><td>&mdash;</td><td>0.0% (Mất điểm ngay)</td><td>&mdash;</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- FIGURE 6: THE THREE BASIC SERVES -->
+            <div class="tactical-figure-card" id="fig-06">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 6 &bull; FIGURE 6</span>
+                    <h3 class="fig-title">BA KIỂU GIAO BÓNG CƠ BẢN (THE THREE BASIC SERVES)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_06.jpg" alt="Hình 6: Ba kiểu giao bóng cơ bản" class="tactical-court-img">
+                        <div class="fig-caption-tag">Cú phẳng (Flat), Cắt xoáy ngang (Slice), và Xoáy cống (Twist/Kick)</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích 3 quỹ đạo khí động học:</h4>
+                        <ul class="tactical-bullets">
+                            <li><strong>1. Cú giao bóng phẳng (Flat Serve):</strong> Bóng được tung thẳng ngay trên đầu, mặt vợt tiếp xúc trực diện vuông góc từ phía sau tâm bóng. Quỹ đạo bay căng, vận tốc tối đa, độ nảy thấp và lao thẳng vào người đón bóng. Thường dùng làm đòn dứt điểm ăn điểm trực tiếp (Ace) ở quả giao bóng 1.</li>
+                            <li><strong>2. Cú giao bóng cắt xoáy ngang (Slice Serve):</strong> Tung bóng chếch nhẹ sang bên phải, mặt vợt miết vòng quanh sườn phải của quả bóng từ ngoài vào trong. Cú đánh tạo xoáy ngang (sidespin) khiến bóng cuộn vòng cung và khi chạm đất sẽ trượt dạt cực mạnh sang phía tay thuận của đối thủ, kéo họ ra xa khỏi mép sân.</li>
+                            <li><strong>3. Cú giao bóng xoáy cống (Twist / American Twist / Kick Serve):</strong> Tung bóng hơi lệch về phía sau đầu mạn bên trái, mặt vợt quét xéo từ dưới lên trên và chếch ra ngoài qua đỉnh quả bóng. Độ xoáy cống tạo hiệu ứng Magnus khiến bóng bay vồng cao qua lưới an toàn và khi nảy lên sẽ giật nảy ngược lên vai trái tay của người đón, gây cực kỳ nhiều khó khăn khi trả bóng.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIGURE 7: AIM POINTS IN SINGLES -->
+            <div class="tactical-figure-card" id="fig-07">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 7 &bull; FIGURE 7</span>
+                    <h3 class="fig-title">CÁC ĐIỂM NGẮM GIAO BÓNG TRONG ĐÁNH ĐƠN (AIM POINTS IN SINGLES)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_07.jpg" alt="Hình 7: Điểm ngắm giao bóng Đơn" class="tactical-court-img">
+                        <div class="fig-caption-tag">Điểm ngắm quả 1 (Hình 7A) và quả 2 an toàn (Hình 7B)</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Nguyên lý lựa chọn mục tiêu:</h4>
+                        <p><strong>Hình 7A (Giao bóng 1):</strong> Phân bổ khoảng 50% số cú giao bóng vào góc chữ T trung lộ (Khu vực 1) để triệt tiêu góc đánh trả của đối thủ, 35% giao bóng mở rộng góc ra biên ngoài (Khu vực 2) nhằm kéo đối thủ bung ra khỏi sân, và 15% giao thẳng trực diện vào thân người (Body serve) để khóa chặt đà vung tay của họ.</p>
+                        <p><strong>Hình 7B (Giao bóng 2):</strong> Khu vực an toàn dịch chuyển sâu vào giữa ô giao bóng, duy trì độ xoáy kick serve cao để ép bóng rơi sâu sát vạch giao bóng mà không mạo hiểm đánh sát các mép vạch trắng.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIGURE 8: POSITIONS IN DOUBLES -->
+            <div class="tactical-figure-card" id="fig-08">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 8 &bull; FIGURE 8</span>
+                    <h3 class="fig-title">VỊ TRÍ ĐỨNG CỦA HAI ĐỘI TRONG ĐÁNH ĐÔI (TEAM POSITIONS IN DOUBLES)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_08.jpg" alt="Hình 8: Vị trí đứng trong đánh đôi" class="tactical-court-img">
+                        <div class="fig-caption-tag">Bố trí đội hình chuẩn mực của Server B, Netman A, Receiver M, Partner N</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích hình học vị trí:</h4>
+                        <p><strong>Người giao bóng B:</strong> Đứng ở khoảng giữa vạch trung tâm và vạch biên đơn (cách vạch giữa khoảng 2m đến 2.5m). Vị trí này mở ra cự ly chạy lên lưới ngắn nhất và cân bằng nhất về mặt hình học để bao quát toàn bộ nửa sân của mình.</p>
+                        <p><strong>Đồng đội đứng lưới A:</strong> Đứng cách lưới khoảng 2m đến 2.5m, lệch về phía vạch biên đôi khoảng 1.5m so với tâm ô giao bóng. Vị trí này vừa bịt chặt hành lang dọc dây (alley), vừa sẵn sàng bắt bài (poach) vào giữa.</p>
+                        <p><strong>Người đón bóng M:</strong> Đứng trên đường phân giác góc giao bóng, cách vạch cuối sân 0.5m đến 1m tùy theo uy lực giao bóng của B.</p>
+                        <p><strong>Đồng đội người đón N:</strong> Đứng ở vị trí lưới biến đổi (Modified Net Position) gần vạch giao bóng T.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIGURE 9: AIM POINTS IN DOUBLES -->
+            <div class="tactical-figure-card" id="fig-09">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 9 &bull; FIGURE 9</span>
+                    <h3 class="fig-title">ĐIỂM NGẮM GIAO BÓNG TRONG ĐÁNH ĐÔI (AIM POINTS IN DOUBLES)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_09.jpg" alt="Hình 9: Điểm ngắm giao bóng Đôi" class="tactical-court-img">
+                        <div class="fig-caption-tag">Quy luật 80% vào góc chữ T trung tâm</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Chân lý chiến thuật đánh đôi:</h4>
+                        <p>Trong đánh đôi, <strong>khoảng 80% quả giao bóng 1 phải được hướng vào Khu vực 1 (góc chữ T trung lộ)</strong>. Lý do:</p>
+                        <ul class="tactical-bullets">
+                            <li>Giao bóng vào chữ T làm hẹp tối đa góc đánh trả của người đón bóng M.</li>
+                            <li>Bóng bay vào giữa giúp người đứng lưới A dễ dàng phán đoán và thực hiện cú bắt bài cướp lưới (poach).</li>
+                            <li>Người giao bóng B khi lao lên lưới chỉ cần di chuyển theo một đường thẳng trực diện để che chắn mạn sân của mình mà không sợ bị khoét vào nách sân.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIGURES 10 & 11: EFFECT OF PLACEMENT ON ANGLES -->
+            <div class="tactical-figure-card" id="fig-10">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 10 &bull; FIGURE 10</span>
+                    <h3 class="fig-title">ẢNH HƯỞNG CỦA ĐIỂM RƠI GIAO BÓNG ĐẾN GÓC TRẢ (EFFECT OF PLACEMENT: CENTER T)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_10.jpg" alt="Hình 10: Giao bóng vào chữ T thu hẹp góc trả" class="tactical-court-img">
+                        <div class="fig-caption-tag">Giao bóng sâu vào chữ T triệt tiêu góc mở của đối thủ</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích nón góc trả bóng:</h4>
+                        <p>Khi Server B đưa bóng sâu vào chữ T (Khu vực 1), &ldquo;nón góc đánh trả&rdquo; khả thi của Receiver M bị bóp nghẹt lại trong một góc hẹp chưa đầy 25 độ. Góc đánh chéo sân cực hiểm bị loại trừ hoàn toàn bởi vì mép lưới cao và khoảng cách hình học không cho phép. Người đứng lưới A chỉ cần nhích nhẹ một bước là có thể vồ gọn cú trả bóng lỏng lẻo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tactical-figure-card" id="fig-11">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 11 &bull; FIGURE 11</span>
+                    <h3 class="fig-title">ẢNH HƯỞNG CỦA GIAO BÓNG MỞ RỘNG RA BIÊN (EFFECT OF PLACEMENT: WIDE SERVE)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_11.jpg" alt="Hình 11: Giao bóng rộng mở toang góc trả" class="tactical-court-img">
+                        <div class="fig-caption-tag">Con dao hai lưỡi: Mở toang hành lang chéo sân cực đại</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Mối hiểm họa khi giao bóng ra biên ngoài:</h4>
+                        <p>Giao bóng slice xé ra biên ngoài (Khu vực 2) kéo Receiver M ra khỏi mép sân đôi. Tuy nhiên, nếu cú giao bóng thiếu tốc độ hoặc thiếu độ xoáy sắc bén, nó sẽ mở toang một góc đánh trả chéo sân cực rộng (lên tới hơn 40 độ), cho phép M bắn bóng vòng qua tầm với của người đứng lưới A hoặc đánh bóng sạt vào chân người giao bóng B đang trên đà lao lên!</p>
+                        <div class="tactical-takeaway">
+                            <strong>Khuyến cáo:</strong> Chỉ dùng giao bóng mở rộng góc ra biên ngoài như một đòn đánh bất ngờ (surprise ploy) để phá vỡ nhịp điệu của đối thủ, không dùng làm chiến thuật chủ đạo thường xuyên.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIGURE 12: HAZARDS OF SHALLOW SERVE -->
+            <div class="tactical-figure-card" id="fig-12">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 12 &bull; FIGURE 12</span>
+                    <h3 class="fig-title">HIỂM HỌA TỪ QUẢ GIAO BÓNG NGẮN (THE HAZARDS OF THE SHALLOW SERVE)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_12.jpg" alt="Hình 12: Hiểm họa từ quả giao bóng ngắn" class="tactical-court-img">
+                        <div class="fig-caption-tag">Quả giao bóng ngắn dâng quyền tấn công cho đối thủ</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Thảm họa chiến thuật:</h4>
+                        <p>Một quả giao bóng rơi nông ở giữa ô giao bóng là một tai họa thực sự. Nó cho phép Receiver M bước vào trong sân cả mét, tiếp xúc bóng ở tầm cao ngang ngực khi bóng đang ở đỉnh nảy. M có thể dễ dàng:</p>
+                        <ol class="step-analysis-list">
+                            <li>Bắn thẳng một cú búa bổ vào thắt lưng hoặc ngực của người đứng lưới A (biến A thành mục tiêu sống).</li>
+                            <li>Bắn quả passing sạt vạch biên dọc dây (down the alley) mà A không kịp trở tay.</li>
+                            <li>Đánh bóng gắt chéo sân chìm xuống dưới mép lưới ngay mũi giày của Server B.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIGURE 13: UNCONVENTIONAL SERVING FORMATIONS -->
+            <div class="tactical-figure-card" id="fig-13">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 13 &bull; FIGURE 13</span>
+                    <h3 class="fig-title">CÁC ĐỘI HÌNH GIAO BÓNG DỊ BIỆT (UNCONVENTIONAL SERVING FORMATIONS)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_13.jpg" alt="Hình 13: Đội hình giao bóng dị biệt" class="tactical-court-img">
+                        <div class="fig-caption-tag">Đội hình Úc (Australian Formation, 13A) và Đội hình chữ I (I-Formation, 13B)</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Đội hình kiểu Úc (Hình 13A):</h4>
+                        <p>Cả người giao bóng B và người đứng lưới A đều đứng cùng trên <strong>một nửa phần sân</strong>. Chiến thuật này triệt tiêu hoàn toàn cú trả giao bóng chéo sân sở trường của đối thủ (đặc biệt khi đối thủ có cú trái tay chéo sân quá hiểm). Nếu đối thủ muốn đánh chéo sân, quả bóng sẽ bay thẳng vào vợt của người đứng lưới A!</p>
+                        <h4>Đội hình chữ I (Hình 13B):</h4>
+                        <p>Người đứng lưới A ngồi xổm hoặc cúi thấp người ngay sát tâm lưới trên vạch chữ T. Khi B giao bóng qua đầu A, A sẽ bất ngờ bật dậy di chuyển sang trái hoặc sang phải theo tín hiệu ám hiệu tay đã thống nhất trước, khiến người đón bóng hoàn toàn mất phương hướng phán đoán.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHAPTER 5: RETURN OF SERVICE -->
+    <section class="chapter-page page-break-after" id="chapter-5">
+        <div class="chapter-header">
+            <div class="chapter-number">CHƯƠNG 5</div>
+            <h2 class="chapter-title">TRẢ GIAO BÓNG (RETURN OF SERVICE)</h2>
+            <div class="chapter-subtitle">Nghệ thuật vô hiệu hóa quả giao bóng &bull; Hình 14 đến Hình 21</div>
+        </div>
+
+        <div class="editorial-body">
+            <p class="lead-paragraph"><span class="dropcap">M</span>ột cú trả giao bóng chuẩn mực, ổn định và có chiều sâu chính là chìa khóa mở ra cánh cửa vĩ đại trong cả đánh đơn lẫn đánh đôi. Đây là một trong những cú đánh khó làm chủ nhất trong quần vợt bởi người chơi phải xử lý một quả bóng có vận tốc xé gió, biến hóa độ xoáy khôn lường và chỉ có vỏn vẹn dưới nửa giây để phản xạ.</p>
+
+            <!-- FIGURE 14: BASIC RECEIVING POSITIONS IN SINGLES -->
+            <div class="tactical-figure-card" id="fig-14">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 14 &bull; FIGURE 14</span>
+                    <h3 class="fig-title">VỊ TRÍ ĐÓN GIAO BÓNG TRONG ĐÁNH ĐƠN (BASIC RECEIVING POSITIONS)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_14.jpg" alt="Hình 14: Vị trí đón bóng trong đánh đơn" class="tactical-court-img">
+                        <div class="fig-caption-tag">Tọa độ F1 đối phó bóng phẳng/slice, F2 đối phó bóng twist</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Nguyên lý chia đôi góc hình học:</h4>
+                        <p>Vị trí đón bóng tối ưu luôn nằm trên <strong>đường phân giác của góc tạo bởi hai đường giới hạn biên giao bóng</strong> của đối thủ. Vị trí F1 dành cho đón cú giao bóng phẳng hoặc slice (đứng cách vạch cuối sân khoảng 0.5m). Vị trí F2 lùi sâu hơn và chếch sang trái để đón cú xoáy cống (twist serve) nảy vọt lên cao.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIGURE 15: RETURNS AGAINST NET-RUSHING SERVER -->
+            <div class="tactical-figure-card" id="fig-15">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 15 &bull; FIGURE 15</span>
+                    <h3 class="fig-title">HÓA GIẢI MÁY GIAO BÓNG LÊN LƯỚI TRONG ĐÁNH ĐƠN (RETURNS VS. NET-RUSHER)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_15.jpg" alt="Hình 15: Trả bóng đối phó giao bóng lên lưới" class="tactical-court-img">
+                        <div class="fig-caption-tag">Phân bố xác suất thành công của các hướng trả bóng</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Ma trận chiến thuật:</h4>
+                        <ul class="tactical-bullets">
+                            <li><strong>Trả bóng chìm vào chân (At the feet &mdash; 50% số lần):</strong> Lựa chọn hiệu quả số 1. Ép người giao bóng đang lao lên phải bắt vô-lê dưới mép lưới (low volley), tạo cơ hội dứt điểm ở cú đánh kế tiếp.</li>
+                            <li><strong>Bắn dọc dây (Down the Line &mdash; 25% số lần):</strong> Cú đánh có độ rủi ro cao hơn nhưng ăn điểm trực tiếp nếu đối thủ chậm chân.</li>
+                            <li><strong>Ép chéo sân sắc bén (Cross Court &mdash; 25% số lần):</strong> Buộc đối thủ phải rướn người cứu bóng mạn sườn.</li>
+                        </ul>
+                        <div class="tactical-takeaway">
+                            <strong>Khu vực nguy hiểm (Danger Area):</strong> Đánh bóng bổng lơ lửng ngang tầm ngực ở giữa sân sẽ khiến bạn thua điểm 7 đến 8 lần trong 10 tình huống!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIGURE 16: RETURNS AGAINST BASELINE SERVER -->
+            <div class="tactical-figure-card" id="fig-16">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 16 &bull; FIGURE 16</span>
+                    <h3 class="fig-title">ĐỐI PHÓ ĐỐI THỦ CỐ THỦ CUỐI SÂN (RETURNS VS. BASELINE SERVER)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_16.jpg" alt="Hình 16: Trả bóng đối phó đối thủ bám cuối sân" class="tactical-court-img">
+                        <div class="fig-caption-tag">Độ sâu và độ xoáy cồng đè bẹp đối thủ</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Quy tắc chiều sâu tuyệt đối:</h4>
+                        <p>Trái ngược với việc trả bóng chìm thấp khi đối thủ lên lưới, khi đối thủ ở lại vạch cuối sân, mục tiêu tối thượng là <strong>độ sâu (depth)</strong>. Trả bóng rơi sâu trong vòng 1.5m trước vạch cuối sân, nảy cao để ghim chặt đối thủ ra sau, tước đoạt hoàn toàn cơ hội tấn công của họ.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIGURE 17: RETURNS OF DEEP SERVES IN DOUBLES -->
+            <div class="tactical-figure-card" id="fig-17">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 17 &bull; FIGURE 17</span>
+                    <h3 class="fig-title">TRẢ QUẢ GIAO BÓNG SÂU TRONG ĐÁNH ĐÔI (RETURNS OF DEEP SERVES)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_17.jpg" alt="Hình 17: Trả quả giao bóng sâu trong đánh đôi" class="tactical-court-img">
+                        <div class="fig-caption-tag">Nguyên lý an toàn: Luôn trả chéo sân né người đứng lưới</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Chiến thuật vàng trong đánh đôi:</h4>
+                        <p>Khi đối thủ giao một quả bóng sâu và hiểm hóc, <strong>90% số cú trả giao bóng phải được hướng chéo sân (crosscourt)</strong> chìm xuống chân người giao bóng B đang lao lên. Tuyệt đối không được đánh lỏng lẻo vào giữa hoặc hấp tấp đánh dọc dây vì người đứng lưới A của đối phương đang rình rập để đập bóng kết thúc điểm ngay lập tức.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIGURE 18: RETURNS OF SHALLOW SERVES IN DOUBLES -->
+            <div class="tactical-figure-card" id="fig-18">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 18 &bull; FIGURE 18</span>
+                    <h3 class="fig-title">TRỪNG PHẠT QUẢ GIAO BÓNG NGẮN TRONG ĐÁNH ĐÔI (RETURNS OF SHALLOW SERVES)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_18.jpg" alt="Hình 18: Trừng phạt quả giao bóng ngắn" class="tactical-court-img">
+                        <div class="fig-caption-tag">Tấn công trực diện người đứng lưới hoặc khoét hành lang biên</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Quyền chủ động tấn công thuộc về bạn:</h4>
+                        <p>Bóng giao ngắn là món quà vô giá cho người đón bóng. Hãy dấn thân vào sân và tung ra một trong ba đòn trừng phạt:</p>
+                        <ol class="step-analysis-list">
+                            <li><strong>Bắn thẳng vào ngực/thắt lưng người đứng lưới A:</strong> Ở cự ly cực gần, đối thủ không có thời gian phản xạ.</li>
+                            <li><strong>Xé toạc hành lang biên dọc dây (Down the alley):</strong> Đòn dứt điểm lạnh lùng khi A có xu hướng nghiêng người vào giữa.</li>
+                            <li><strong>Góc chéo sân cực gắt (Sharp crosscourt):</strong> Đưa bóng rơi chìm vào mang cá.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIGURES 19 & 20: MODIFIED NET PLAY -->
+            <div class="tactical-figure-card" id="fig-19">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 19 &bull; FIGURE 19</span>
+                    <h3 class="fig-title">CHIẾN THUẬT LƯỚI BIẾN ĐỔI TẤN CÔNG (OFFENSIVE MODIFIED NET PLAY)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_19.jpg" alt="Hình 19: Lưới biến đổi tấn công" class="tactical-court-img">
+                        <div class="fig-caption-tag">Đồng đội N lập tức áp sát lưới khi cú trả bóng đi chìm hiểm</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phối hợp nhịp nhàng:</h4>
+                        <p>Tại sao các đôi hàng đầu luôn xếp đồng đội người đón bóng N ở vị trí &ldquo;Lưới biến đổi&rdquo; (gần vạch T giao bóng)? Bởi vì nếu M tung ra một cú trả giao bóng chìm thấp hiểm hóc khiến Server B phải cúi người múc bóng lên, N sẽ <strong>lập tức dâng nhanh 2&ndash;3 bước áp sát mép lưới</strong> để đón quả bóng nảy bổng đó và vồ gọn điểm số bằng một cú smash hoặc vô-lê cắm thẳng xuống đất!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tactical-figure-card" id="fig-20">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 20 &bull; FIGURE 20</span>
+                    <h3 class="fig-title">CHIẾN THUẬT LƯỚI BIẾN ĐỔI PHÒNG NGỰ (DEFENSIVE MODIFIED NET PLAY)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_20.jpg" alt="Hình 20: Lưới biến đổi phòng ngự" class="tactical-court-img">
+                        <div class="fig-caption-tag">Đồng đội N chủ động lùi bước bảo vệ khi cú trả bóng hỏng</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Bảo toàn tính mạng và thế trận:</h4>
+                        <p>Ngược lại với Hình 19, nếu M trả bóng lỗi khiến quả bóng bay bổng lơ lửng ngay tầm vợt của người đứng lưới đối phương A, N đứng ở vạch T sẽ có đủ thời gian và cự ly để <strong>lùi nhanh 2 bước về phía vạch cuối sân</strong>, thủ thế phòng ngự thấp trọng tâm để đỡ cú smash đập sấm sét của A thay vì bị biến thành mục tiêu bắn phá nếu đứng quá gần lưới.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIGURE 21: RETURNS VS UNCONVENTIONAL FORMATIONS -->
+            <div class="tactical-figure-card" id="fig-21">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 21 &bull; FIGURE 21</span>
+                    <h3 class="fig-title">BẺ GÃY CÁC ĐỘI HÌNH GIAO BÓNG DỊ BIỆT (RETURNS VS. UNCONVENTIONAL FORMATIONS)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_21.jpg" alt="Hình 21: Bẻ gãy đội hình dị biệt" class="tactical-court-img">
+                        <div class="fig-caption-tag">Chiến thuật tấn công hành lang mở và đòn lốp bổng</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phương án hóa giải:</h4>
+                        <p>Khi đối phương sử dụng Đội hình Úc hoặc Chữ I (cả hai người cùng che chắn mạn chéo sân), họ buộc phải <strong>bỏ trống toàn bộ hành lang thẳng dọc dây (open down-the-line alley)</strong>. Phương án tối ưu:</p>
+                        <ul class="tactical-bullets">
+                            <li><strong>Đòn 1: Bắn thẳng dọc dây:</strong> Cú trả bóng sạt vạch biên dọc dây thẳng vào góc sân trống buộc người giao bóng phải chạy cắt ngang sân trong tuyệt vọng.</li>
+                            <li><strong>Đòn 2: Lốp bóng qua đầu (Offensive Lob):</strong> Đưa bóng bổng vồng qua đầu người đứng lưới đang ngồi xổm hoặc rình rập, ghim chặt họ về cuối sân.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        
+    <!-- CHAPTER 6: NET PLAY -->
+    <section class="chapter-page page-break-after" id="chapter-6">
+        <div class="chapter-header">
+            <div class="chapter-number">CHƯƠNG 6</div>
+            <h2 class="chapter-title">CHIẾN THUẬT TRÊN LƯỚI (NET PLAY)</h2>
+            <div class="chapter-subtitle">Nghệ thuật chiếm lĩnh và làm chủ không gian trên lưới &bull; Hình 22 đến Hình 49</div>
+        </div>
+
+        <div class="editorial-body">
+            <p class="lead-paragraph"><span class="dropcap">K</span>hả năng tác chiến trên lưới là điều kiện tiên quyết mang tính sống còn đối với một lối chơi quần vợt toàn diện (all-court game). Trong cả đánh đơn lẫn đánh đôi, <strong>quyền kiểm soát lưới đại diện cho vị trí tấn công tối thượng</strong>. Như đã được chứng minh qua số liệu thực nghiệm ở Bảng 8, đội nào chiếm lĩnh được lưới sẽ nắm trong tay tới 74% cơ hội đoạt điểm trong đánh đôi và 63.5% trong đánh đơn.</p>
+            <p>Để trở thành một bậc thầy trên lưới, người chơi không chỉ cần kỹ thuật vô-lê và đập bóng smash thuần thục, mà quan trọng hơn cả là phải nắm vững <strong>khoa học hình học của sự di chuyển</strong>, khả năng phán đoán đường bóng trước khi đối thủ vung vợt, và nghệ thuật phối hợp đồng đội nhịp nhàng như một khối thống nhất.</p>
+    
+            <div class="tactical-figure-card" id="fig-22">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 22 &bull; FIGURE 22</span>
+                    <h3 class="fig-title">BỨC TƯỜNG VÔ-LÊ LÒNG CHẢO (THE CONCAVE VOLLEY WALL)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_22.jpg" alt="Hình 22: BỨC TƯỜNG VÔ-LÊ LÒNG CHẢO (THE CONCAVE VOLLEY WALL)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Cơ chế che chắn tối ưu góc đánh của đối thủ</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Khi bóng đang ở phần sân bên mạn trái của đối thủ, người đứng lưới cùng phía với bóng (Player A) sẽ <strong>dâng cao áp sát mép lưới hơn</strong> (cách lưới khoảng 2m) để sẵn sàng bắt quả bóng bay chéo sân hoặc dọc dây ngắn. Đồng đội (Player B) ở mạn đối diện sẽ <strong>lùi sâu hơn một chút</strong> (cách lưới khoảng 3m đến 3.5m) để che chắn đường bóng lốp chéo sân và phản công nhanh.</p>
+         <p>Hai người chơi tạo thành một mặt cong hướng lõm về phía quả bóng của đối thủ &mdash; được gọi là <em>&ldquo;Bức tường lòng chảo&rdquo; (Concave Volley Wall)</em>. Khi bóng dịch chuyển sang góc đối diện, vị trí của hai người lập tức đảo chiều nhịp nhàng như hai đầu của chiếc bập bênh.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-23">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 23 &bull; FIGURE 23</span>
+                    <h3 class="fig-title">TIẾN LÊN LƯỚI SAU CÚ GIAO BÓNG (CAPTURING THE NET BEHIND SERVE)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_23.jpg" alt="Hình 23: TIẾN LÊN LƯỚI SAU CÚ GIAO BÓNG (CAPTURING THE NET BEHIND SERVE)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Hai lộ trình tiếp cận chuẩn mực: Hình 23A và Hình 23B</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p><strong>Hình 23A:</strong> Tiếp cận lưới trực diện khi giao bóng sâu vào góc chữ T trung lộ. Đây là lộ trình ngắn nhất, giúp người giao bóng nhanh chóng đạt được vị trí cân bằng trên vạch giao bóng T ngay khi đối thủ chạm vợt.</p>
+         <p><strong>Hình 23B:</strong> Tiếp cận lưới theo hình vòng cung nhẹ khi giao bóng mở rộng ra biên ngoài. Người giao bóng phải hơi chếch đường chạy theo hướng bóng để khép chặt góc đánh dọc dây phản công của người đón bóng.</p>
+         <div class="tactical-takeaway"><strong>Bước tách chân (Split-step):</strong> Tuyệt đối không được vừa chạy vừa vung vợt đánh vô-lê! Khi đối thủ bắt đầu vung vợt tiếp xúc bóng, người lao lên phải thực hiện một bước tách chân nhún hai chân để cân bằng trọng tâm, sau đó mới bứt phá đón bóng.</div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-24">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 24 &bull; FIGURE 24</span>
+                    <h3 class="fig-title">TIẾN LÊN LƯỚI SAU CÚ TRẢ GIAO BÓNG (NET BEHIND RETURN OF SERVICE)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_24.jpg" alt="Hình 24: TIẾN LÊN LƯỚI SAU CÚ TRẢ GIAO BÓNG (NET BEHIND RETURN OF SERVICE)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Đòn phản công chớp nhoáng (Chip and Charge)</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Khi đối thủ giao một quả bóng 2 nhẹ hoặc bóng nảy lơ lửng, Receiver B lập tức bước vào trong sân, tung ra cú cắt bóng chìm hiểm hóc (chip) vào góc sân trống hoặc thẳng vào chân người giao bóng, rồi <strong>lập tức phi thân lên lưới</strong>. Đòn đánh này biến người đón bóng thành kẻ tấn công chủ động, cướp đoạt hoàn toàn thế trận trên lưới của đối phương.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-25">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 25 &bull; FIGURE 25</span>
+                    <h3 class="fig-title">TIẾN LÊN LƯỚI SAU CÚ TIẾP CẬN CUỐI SÂN (APPROACH SHOT)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_25.jpg" alt="Hình 25: TIẾN LÊN LƯỚI SAU CÚ TIẾP CẬN CUỐI SÂN (APPROACH SHOT)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Quy luật vàng: Luôn tiếp cận theo hướng bóng dọc dây</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Cú đánh tiếp cận (Approach shot) phải được đánh sâu vào góc sân đối phương, và người chơi phải <strong>di chuyển theo chính đường bóng của mình</strong>. Đánh bóng dọc dây và chạy theo đường thẳng lên lưới sẽ thu hẹp tối đa quãng đường chạy và bịt kín góc passing shot nguy hiểm nhất của đối thủ.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-26">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 26 &bull; FIGURE 26</span>
+                    <h3 class="fig-title">TIẾN LÊN LƯỚI SAU CÚ LỐP BÓNG TẤN CÔNG (NET BEHIND A LOB)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_26.jpg" alt="Hình 26: TIẾN LÊN LƯỚI SAU CÚ LỐP BÓNG TẤN CÔNG (NET BEHIND A LOB)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Chuyển bại thành thắng: Lật ngược thế trận phòng ngự</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Khi bị đối phương dồn ép trên lưới, bạn tung ra một cú lốp bóng xoáy cuộn (topspin lob) qua đầu đối thủ rơi sâu sát vạch cuối sân. Ngay khi bóng bay qua khỏi tầm với của họ, bạn và đồng đội phải <strong>lập tức dâng nhanh lên chiếm giữ mép lưới</strong>. Đối thủ phải quay lưng đuổi theo bóng về cuối sân và chỉ có thể cứu bóng trong thế bị động, dâng cơ hội vô-lê kết liễu cho bạn.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-27">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 27 &bull; FIGURE 27</span>
+                    <h3 class="fig-title">NGHỆ THUẬT PHÁN ĐOÁN ĐƯỜNG BÓNG (ANTICIPATION IN ACTION)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_27.jpg" alt="Hình 27: NGHỆ THUẬT PHÁN ĐOÁN ĐƯỜNG BÓNG (ANTICIPATION IN ACTION)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Đọc ý đồ đối thủ qua vai, hông và mặt vợt</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Phán đoán không phải là sự suy đoán vu vơ, mà là việc <em>đọc các tín hiệu cơ thể của đối thủ</em> trước thời điểm tiếp xúc bóng: góc mở của vai, vị trí chân trụ, độ cao của điểm chạm bóng và quán tính vung vợt. Người đứng lưới xuất sắc bắt đầu di chuyển một phần mười giây trước khi bóng rời mặt vợt đối thủ.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-28">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 28 &bull; FIGURE 28</span>
+                    <h3 class="fig-title">BẢN ĐỒ TỔNG HỢP CÚ VÔ-LÊ ĐẦU TIÊN (COMPOSITE FIRST-VOLLEY TACTICS)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_28.jpg" alt="Hình 28: BẢN ĐỒ TỔNG HỢP CÚ VÔ-LÊ ĐẦU TIÊN (COMPOSITE FIRST-VOLLEY TACTICS)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Lựa chọn mục tiêu vô-lê khi giao bóng sang ô thuận tay</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Cú vô-lê đầu tiên (First Volley) thường được thực hiện ở vị trí lân cận vạch giao bóng T. Đây <strong>hiếm khi là cú đánh ăn điểm ngay</strong>, mà là cú đánh thiết lập thế trận: đẩy bóng sâu vào góc yếu của đối thủ, hoặc vô-lê chìm thấp để buộc đối thủ phải đánh ngửa bóng lên, tạo điều kiện cho cú vô-lê thứ hai áp sát lưới dứt điểm.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-29">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 29 &bull; FIGURE 29</span>
+                    <h3 class="fig-title">NGHỆ THUẬT ĐIỀU HƯỚNG CÚ VÔ-LÊ (PLACING THE VOLLEY)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_29.jpg" alt="Hình 29: NGHỆ THUẬT ĐIỀU HƯỚNG CÚ VÔ-LÊ (PLACING THE VOLLEY)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Chọn điểm rơi chuẩn xác thay vì dùng sức mạnh bừa bãi</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Khi bóng đến ở tầm cao trên lưới: tấn công mạnh mẽ vào khoảng trống xa nhất của đối phương. Khi bóng đến ở tầm thấp dưới mép lưới: mềm mại đẩy bóng sâu vào chân đối thủ hoặc thả góc ngắn chìm xuống mang cá.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-30">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 30 &bull; FIGURE 30</span>
+                    <h3 class="fig-title">VỊ TRÍ ĐỨNG LƯỚI VÀ DỊCH CHUYỂN ĐỒNG BỘ (NET POSITION & ADJUSTMENTS)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_30.jpg" alt="Hình 30: VỊ TRÍ ĐỨNG LƯỚI VÀ DỊCH CHUYỂN ĐỒNG BỘ (NET POSITION & ADJUSTMENTS)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Sự đồng bộ hóa vị trí của hai tay vợt đánh đôi</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Hai người chơi đứng lưới phải luôn cảm giác như có <strong>một sợi dây thừng dài khoảng 3 mét nối giữa hai người</strong>. Khi một người dạt sang trái, người kia phải bị kéo theo sang trái; khi một người tiến lên, người kia bọc lót phía sau. Tuyệt đối không để xảy ra khoảng hở lớn ở trung lộ.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-31">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 31 &bull; FIGURE 31</span>
+                    <h3 class="fig-title">ĐIỂM NGẮM CHO CÚ VÔ-LÊ ĐẦU TIÊN (AIM POINTS FOR FIRST VOLLEYS)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_31.jpg" alt="Hình 31: ĐIỂM NGẮM CHO CÚ VÔ-LÊ ĐẦU TIÊN (AIM POINTS FOR FIRST VOLLEYS)" class="tactical-court-img">
+                        <div class="fig-caption-tag">3 vùng mục tiêu an toàn và hiệu quả cao nhất</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Vùng 1: Giữa sân sâu sát vạch cuối sân (khoét vào khoảng trống giữa hai đối thủ). Vùng 2: Góc sân mạn trái tay của người đón bóng. Vùng 3: Thả bóng ngắn chéo góc khi đối thủ đứng lùi quá sâu.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-32">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 32 &bull; FIGURE 32</span>
+                    <h3 class="fig-title">CÚ VÔ-LÊ SÂU XUYÊN THỦNG TRUNG LỘ (DEEP VOLLEY THROUGH THE MIDDLE)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_32.jpg" alt="Hình 32: CÚ VÔ-LÊ SÂU XUYÊN THỦNG TRUNG LỘ (DEEP VOLLEY THROUGH THE MIDDLE)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Đánh vào ranh giới trách nhiệm giữa hai đối thủ</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Vô-lê bóng sâu vào chính giữa sân giữa hai đối thủ gây ra sự do dự: &ldquo;Của anh hay của tôi?&rdquo;. Trong tích tắc chần chừ đó, quả bóng bay sát vạch cuối sân và khiến cả hai đối thủ va vợt vào nhau hoặc để bóng trôi qua.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-33">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 33 &bull; FIGURE 33</span>
+                    <h3 class="fig-title">CÚ VÔ-LÊ SÂU ÉP VÀO GÓC TRÁI TAY (DEEP VOLLEY TO THE BACKHAND CORNER)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_33.jpg" alt="Hình 33: CÚ VÔ-LÊ SÂU ÉP VÀO GÓC TRÁI TAY (DEEP VOLLEY TO THE BACKHAND CORNER)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Khoét sâu vào tử huyệt phòng ngự</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Hầu hết các tay vợt phong trào và bán chuyên đều gặp khó khăn lớn khi phải thực hiện cú đánh cứu bóng phòng ngự bằng quả trái tay ở vị trí lùi sâu sát hàng rào. Cú vô-lê sâu xoáy trượt này buộc đối thủ chỉ có thể lốp bóng bổng cầu may.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-34">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 34 &bull; FIGURE 34</span>
+                    <h3 class="fig-title">CÚ VÔ-LÊ SÂU ĐỔI HƯỚNG DỌC DÂY (DEEP DOWN-THE-LINE VOLLEY)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_34.jpg" alt="Hình 34: CÚ VÔ-LÊ SÂU ĐỔI HƯỚNG DỌC DÂY (DEEP DOWN-THE-LINE VOLLEY)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Chuyển hướng đột ngột trừng phạt đối thủ di chuyển hớ hênh</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Khi đối thủ phán đoán bạn sẽ vô-lê chéo sân và bắt đầu nghiêng người chạy sang ngang, hãy mở mặt vợt nhẹ và đẩy quả vô-lê thẳng dọc dây ngược hướng di chuyển của họ. Đây là cú đánh ghi điểm dứt khoát.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-35">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 35 &bull; FIGURE 35</span>
+                    <h3 class="fig-title">CÚ VÔ-LÊ SÂU KHÓA CHẶT ĐỐI THỦ LÙI XA (DEEP PINNING VOLLEY)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_35.jpg" alt="Hình 35: CÚ VÔ-LÊ SÂU KHÓA CHẶT ĐỐI THỦ LÙI XA (DEEP PINNING VOLLEY)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Duy trì quyền kiểm soát trận địa trên lưới</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Khi chưa có góc thuận lợi để dứt điểm, hãy kiên nhẫn tung ra cú vô-lê sâu rơi sát vạch cuối sân để ghì chặt cả hai đối thủ ở xa lưới, chờ đợi một cơ hội bóng nảy bổng thuận lợi hơn ở nhịp sau.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-36">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 36 &bull; FIGURE 36</span>
+                    <h3 class="fig-title">CÚ VÔ-LÊ GÓC NGẮN CHÉO SÂN (THE CROSSCOURT ANGLE VOLLEY)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_36.jpg" alt="Hình 36: CÚ VÔ-LÊ GÓC NGẮN CHÉO SÂN (THE CROSSCOURT ANGLE VOLLEY)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Mở góc cực gắt đưa bóng ra ngoài tầm với</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Tiếp xúc bóng nhẹ nhàng phía trên mép lưới, góc vợt hơi chéo để gạt bóng lăn sang mép vạch biên ngang gần lưới. Quả bóng nảy thấp và trôi thẳng ra ngoài hàng rào sân, khiến đối thủ hoàn toàn bất lực dù có tốc độ chạy nhanh đến đâu.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-37">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 37 &bull; FIGURE 37</span>
+                    <h3 class="fig-title">CÚ VÔ-LÊ GÓC NGẮN TẠO XOÁY CẮT (THE SHARP SLICE ANGLE VOLLEY)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_37.jpg" alt="Hình 37: CÚ VÔ-LÊ GÓC NGẮN TẠO XOÁY CẮT (THE SHARP SLICE ANGLE VOLLEY)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Gia tăng độ trượt ngang của điểm nảy</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Bằng cách miết mặt vợt từ trong ra ngoài kết hợp góc cắt, bóng khi chạm đất sẽ rẽ ngoặt theo hướng vuông góc với đường bay ban đầu, triệt tiêu hoàn toàn khả năng vớt bóng của đối phương.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-38">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 38 &bull; FIGURE 38</span>
+                    <h3 class="fig-title">QUYẾT ĐỊNH BỎ QUA CÚ VÔ-LÊ ĐẦU TIÊN (ELECTING NOT TO PLAY THE FIRST VOLLEY)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_38.jpg" alt="Hình 38: QUYẾT ĐỊNH BỎ QUA CÚ VÔ-LÊ ĐẦU TIÊN (ELECTING NOT TO PLAY THE FIRST VOLLEY)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Bản lĩnh chiến thuật: Để bóng bay ra ngoài hoặc lùi lại xử lý</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Một sai lầm rất phổ biến của người mới chơi là <em>cố chạm vợt vào mọi quả bóng bay qua lưới</em>. Nếu cú đánh của đối phương đi quá cao và có lực bay xé gió, việc bạn giơ vợt ra với chạm bóng thường chỉ dẫn đến quả vô-lê hỏng rúc lưới hoặc bồng bềnh ra ngoài. Hãy bình tĩnh né người để bóng tự bay ra ngoài biên (Out)!</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-39">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 39 &bull; FIGURE 39</span>
+                    <h3 class="fig-title">CÚ ĐẬP BÓNG TRÊN ĐẦU DỨT ĐIỂM (OVERHEAD SMASH WINNER)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_39.jpg" alt="Hình 39: CÚ ĐẬP BÓNG TRÊN ĐẦU DỨT ĐIỂM (OVERHEAD SMASH WINNER)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Đòn kết liễu tối thượng trước quả lốp ngắn</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>1. Nghiêng vai ngay lập tức, tay không cầm vợt chỉ thẳng lên quả bóng trên không để đo cự ly. 2. Di chuyển lùi bằng các bước chân ngang (side-steps) sao cho bóng luôn ở phía trước trán. 3. Vung vợt đập bóng ở điểm cao nhất có thể, gập cổ tay dứt khoát đưa bóng cắm xuống sân đối phương.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-40">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 40 &bull; FIGURE 40</span>
+                    <h3 class="fig-title">CÚ SMASH CHIẾN THUẬT AN TOÀN (TACTICAL OVERHEAD PLACEMENT)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_40.jpg" alt="Hình 40: CÚ SMASH CHIẾN THUẬT AN TOÀN (TACTICAL OVERHEAD PLACEMENT)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Đập bóng sâu có kiểm soát khi phải lùi xa vạch T</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Khi quả lốp của đối phương rơi sâu gần vạch giao bóng, đừng cố gắng đập dứt điểm ăn điểm ngay với 100% lực vì rủi ro rúc lưới là rất lớn. Hãy thực hiện một cú đập bóng có xoáy slice sâu về góc xa với 75% lực để giữ vững thế trận tấn công.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-41">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 41 &bull; FIGURE 41</span>
+                    <h3 class="fig-title">CÚ VÔ-LÊ ÊM HÃM LỰC (THE SOFT VOLLEY)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_41.jpg" alt="Hình 41: CÚ VÔ-LÊ ÊM HÃM LỰC (THE SOFT VOLLEY)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Thả lỏng cổ tay đón nhận và triệt tiêu xung lực của bóng</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Khi đối phương tung cú passing shot như búa bổ, bạn không được đẩy vợt tới trước. Hãy thả lỏng cổ tay và hơi thu vợt về sau một chút ngay tại thời điểm bóng chạm mặt vợt để hấp thụ toàn bộ lực nén, khiến bóng rụng êm như chiếc lá ngay sau mép lưới.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-42">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 42 &bull; FIGURE 42</span>
+                    <h3 class="fig-title">CÚ BỎ NHỎ VÔ-LÊ SÁT LƯỚI (THE DROP VOLLEY)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_42.jpg" alt="Hình 42: CÚ BỎ NHỎ VÔ-LÊ SÁT LƯỚI (THE DROP VOLLEY)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Đòn bất ngờ kết liễu khi đối thủ đứng lùi quá sâu</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Mặt vợt ngửa ra phía sau và kéo xiên từ trên xuống dưới đáy quả bóng để tạo độ xoáy ngược (backspin). Bóng chỉ vừa qua mép lưới vài centimet và nảy giật lùi lại, hoàn toàn không cho đối thủ cơ hội chạm vợt.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-43">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 43 &bull; FIGURE 43</span>
+                    <h3 class="fig-title">CÚ LỐP BÓNG VÔ-LÊ QUA ĐẦU (THE LOB VOLLEY)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_43.jpg" alt="Hình 43: CÚ LỐP BÓNG VÔ-LÊ QUA ĐẦU (THE LOB VOLLEY)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Tuyệt kỹ hóa giải khi cả 4 người cùng áp sát lưới</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Khi đối thủ áp sát rạt mép lưới để đè bẹp bạn, thay vì đánh trả bóng thấp, hãy mở mặt vợt đẩy nhẹ một cú vô-lê hình cầu vồng bổng qua tầm với đầu của họ. Bóng rơi sâu sau lưng đối thủ khiến họ trở tay không kịp.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-44">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 44 &bull; FIGURE 44</span>
+                    <h3 class="fig-title">CÚ ĐÁNH BÓNG CHẠM ĐẤT CẬN LƯỚI (FORECOURT GROUND STROKES)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_44.jpg" alt="Hình 44: CÚ ĐÁNH BÓNG CHẠM ĐẤT CẬN LƯỚI (FORECOURT GROUND STROKES)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Xử lý bóng nảy ở khu vực nửa sân (No-man's land)</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Nếu bóng rơi chạm đất ngay trước vạch giao bóng T, bạn không cần bắt vô-lê mà có thể vung vợt thực hiện một cú drive ngắn dứt khoát với độ xoáy cuộn chìm nhanh xuống chân đối thủ.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-45">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 45 &bull; FIGURE 45</span>
+                    <h3 class="fig-title">CHIẾN THUẬT BẮT BÀI CƯỚP LƯỚI (THE POACH)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_45.jpg" alt="Hình 45: CHIẾN THUẬT BẮT BÀI CƯỚP LƯỚI (THE POACH)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Đòn đánh ăn điểm kinh điển nhất trong đánh đôi đỉnh cao</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Ngay khi người đón bóng đối phương bắt đầu vung vợt để thực hiện cú trả giao bóng chéo sân theo thói quen, người đứng lưới A lập tức <strong>lao chéo về phía trước sang mạn sân bên kia</strong> ở góc khoảng 45 độ, cắt ngang đường bay của bóng và vung vợt vô-lê cắm thẳng vào khoảng trống giữa hai đối thủ.</p>
+         <div class="tactical-takeaway"><strong>Quy tắc thành công:</strong> Không bao giờ được di chuyển quá sớm trước khi đối thủ vào đà vung vợt, vì nếu di chuyển sớm, đối thủ sẽ dễ dàng bắn bóng dọc dây vào hành lang trống bạn vừa bỏ lại.</div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-46">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 46 &bull; FIGURE 46</span>
+                    <h3 class="fig-title">CÚ BẮT BÀI PHÒNG NGỰ THẦN SẦU (A FANTASTIC DEFENSIVE POACH)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_46.jpg" alt="Hình 46: CÚ BẮT BÀI PHÒNG NGỰ THẦN SẦU (A FANTASTIC DEFENSIVE POACH)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Giải cứu đồng đội khi bị đối thủ dồn ép vào góc chết</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Đồng đội của bạn bị đối thủ ép sâu ra ngoài góc sân và chỉ có thể trả bóng với chất lượng trung bình. Nhận thấy đối thủ đang dồn toàn bộ chú ý để chuẩn bị tung cú dứt điểm chéo sân, bạn bất ngờ bay người cắt ngang mặt lưới để chặn đứng đường bóng, biến bàn thua mười mươi thành điểm thắng ngoạn mục.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-47">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 47 &bull; FIGURE 47</span>
+                    <h3 class="fig-title">CHIẾN THUẬT DẠT VỊ TRÍ CỦA ĐỘI GIAO BÓNG (THE SERVING TEAM DRIFT)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_47.jpg" alt="Hình 47: CHIẾN THUẬT DẠT VỊ TRÍ CỦA ĐỘI GIAO BÓNG (THE SERVING TEAM DRIFT)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Dịch chuyển toàn bộ khối đội hình theo nón góc trả bóng</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Khi Server B giao bóng ép góc ra biên ngoài, cả Server B và Netman A cùng <strong>dạt nhẹ sang bên phải khoảng 1 đến 1.5 mét</strong> để bọc lót hoàn hảo cho góc đánh trả khả thi của đối thủ. Sự dịch chuyển đồng bộ này bịt kín mọi lối thoát của đối phương.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-48">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 48 &bull; FIGURE 48</span>
+                    <h3 class="fig-title">CHIẾN THUẬT DẠT VỊ TRÍ CỦA ĐỘI ĐÓN BÓNG (THE RECEIVING TEAM DRIFT)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_48.jpg" alt="Hình 48: CHIẾN THUẬT DẠT VỊ TRÍ CỦA ĐỘI ĐÓN BÓNG (THE RECEIVING TEAM DRIFT)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Bịt kín góc tấn công vô-lê của đội giao bóng</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Khi Receiver M thực hiện cú trả bóng chéo sân sâu, đồng đội N đứng lưới lập tức dạt nhẹ về phía trung tâm để bịt kín góc vô-lê phản công của đối phương, sẵn sàng vồ bóng nếu đối thủ vô-lê thiếu lực.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-49">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 49 &bull; FIGURE 49</span>
+                    <h3 class="fig-title">ĐÒN DỤ KÉO ĐỐI THỦ (THE DRAW PLAY)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_49.jpg" alt="Hình 49: ĐÒN DỤ KÉO ĐỐI THỦ (THE DRAW PLAY)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Nghệ thuật bẫy đối thủ đánh vào cái bẫy giăng sẵn</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Người đứng lưới cố tình đứng hơi lệch sang một bên, giả vờ để lộ một khoảng trống dọc dây rất hấp dẫn. Khi đối thủ nhìn thấy khoảng trống và hào hứng vung vợt bắn bóng dọc dây, người đứng lưới đã tính toán trước bước chân và lập tức bật sang đón lõng, đập nát quả bóng ghi điểm kết thúc ván đấu!</p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+    
+        
+    <!-- CHAPTER 7: BASE-LINE PLAY -->
+    <section class="chapter-page page-break-after" id="chapter-7">
+        <div class="chapter-header">
+            <div class="chapter-number">CHƯƠNG 7</div>
+            <h2 class="chapter-title">CHIẾN THUẬT CUỐI SÂN (BASE-LINE PLAY)</h2>
+            <div class="chapter-subtitle">Nền tảng của các loạt bóng bền &bull; Hình 50 đến Hình 65</div>
+        </div>
+
+        <div class="editorial-body">
+            <p class="lead-paragraph"><span class="dropcap">N</span>goại trừ cú giao bóng và cú trả giao bóng đã được khảo cứu chuyên sâu ở các chương trước, toàn bộ các pha xử lý bóng từ vạch cuối sân tạo nên linh hồn của các loạt bóng bền (rallies). Ở đẳng cấp cao, tầm quan trọng của lối chơi cuối sân có sự phân hóa rõ rệt tùy thuộc vào mặt sân thi đấu: trên sân cỏ và sân cứng nhanh, lối chơi cuối sân mang tính bàn đạp để tiến lên lưới; trong khi trên sân đất nện chậm, nó chính là đấu trường quyết định sự sống còn của cả trận đấu.</p>
+    
+            <div class="tactical-figure-card" id="fig-50">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 50 &bull; FIGURE 50</span>
+                    <h3 class="fig-title">CÚ ĐÁNH ÉP SÂN KINH ĐIỂN (CLASSICAL FORCING SHOTS)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_50.jpg" alt="Hình 50: CÚ ĐÁNH ÉP SÂN KINH ĐIỂN (CLASSICAL FORCING SHOTS)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Chuỗi đòn ép bóng trái tay kinh điển trên sân đất nện</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Trên mặt sân đất nện (clay court), các loạt bóng bền có thể kéo dài hàng chục cú đánh. Sơ đồ minh họa chuỗi đòn ép sâu từ mạn trái tay được các bậc thầy đất nện thi triển: bóng được ghim sâu sát vạch cuối sân với quỹ đạo xoáy cuộn topspin nảy cao, bào mòn thể lực và đẩy dần đối thủ ra xa khỏi sân đấu trước khi tung đòn quyết định.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-51">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 51 &bull; FIGURE 51</span>
+                    <h3 class="fig-title">ÉP ĐỐI THỦ CHẠY GÓC NÀY SANG GÓC KHÁC (FORCING CORNER TO CORNER)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_51.jpg" alt="Hình 51: ÉP ĐỐI THỦ CHẠY GÓC NÀY SANG GÓC KHÁC (FORCING CORNER TO CORNER)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Đòn tra tấn thể lực bắt đối thủ con thoi từ biên sang biên</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Một chiến thuật yêu thích khác trong đánh đơn là chuỗi đòn ép góc liên hoàn: Tay vợt A bắn một cú thuận tay chéo sân ép sát vạch biên phải, khi đối thủ B vất vả trượt chân sang đỡ bóng trả về, A lập tức tung cú trái tay dọc dây sấm sét sang góc đối diện. Đối thủ bị kéo căng hết chiều ngang sân đấu và nhanh chóng kiệt sức hoặc đánh bóng hỏng.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-52">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 52 &bull; FIGURE 52</span>
+                    <h3 class="fig-title">LAO LÊN LƯỚI SAU CÚ ÉP SÂN (FOLLOWING A FORCING SHOT TO NET)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_52.jpg" alt="Hình 52: LAO LÊN LƯỚI SAU CÚ ÉP SÂN (FOLLOWING A FORCING SHOT TO NET)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Tận dụng lợi thế khi đối thủ bị kéo bung ra ngoài sân</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Cú giao bóng mở rộng của Server A đã kéo Receiver B văng ra khỏi sân và buộc phải trả bóng ngắn lơ lửng vào giữa. Chiến thuật đúng đắn là <strong>không được chần chừ lùi lại</strong>: hãy lao tới trước, tung cú ép sân dọc dây uy lực và lập tức phi thân lên lưới chiếm giữ vị trí vô-lê dứt điểm.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-53">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 53 &bull; FIGURE 53</span>
+                    <h3 class="fig-title">CÁC ĐÒN ÉP CHIẾN THUẬT NHẮM VÀO ĐIỂM YẾU (TACTICAL FORCING SHOTS)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_53.jpg" alt="Hình 53: CÁC ĐÒN ÉP CHIẾN THUẬT NHẮM VÀO ĐIỂM YẾU (TACTICAL FORCING SHOTS)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Khoét sâu vào mắt xích yếu nhất trong kỹ thuật của đối thủ</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Nhận diện điểm yếu của đối thủ (ví dụ cú trái tay phòng ngự tầm cao nảy bổng), Player A liên tục nhồi bóng với độ xoáy cồng vào đúng góc đó. Khi đối thủ bị ức chế tâm lý và chỉ có thể trả bóng thiếu lực, A lập tức bước vào trong sân chuyển đổi thành đòn tấn công kết liễu.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-54">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 54 &bull; FIGURE 54</span>
+                    <h3 class="fig-title">CÚ BỎ NHỎ BẤT NGỜ TỪ VẠCH CUỐI SÂN (THE DROP SHOT)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_54.jpg" alt="Hình 54: CÚ BỎ NHỎ BẤT NGỜ TỪ VẠCH CUỐI SÂN (THE DROP SHOT)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Đòn trừng phạt chết chóc khi đối thủ cố thủ lùi sâu</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Khi đối thủ bị dồn ép và có thói quen lùi sâu 2&ndash;3 mét sau vạch cuối sân để chờ bóng nảy, Player A giữ nguyên tư thế vung vợt thuận tay mạnh mẽ như sắp tung cú búa bổ, nhưng ở tích tắc chạm bóng lại bất ngờ thả lỏng cổ tay, mở mặt vợt miết xoáy ngược để thả bóng rụng sát mép lưới đối phương. Đối thủ dù có ba chân bốn cẳng cũng không thể cứu bóng kịp.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-55">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 55 &bull; FIGURE 55</span>
+                    <h3 class="fig-title">CHIẾN THUẬT PASSING SHOT KINH ĐIỂN (CLASSICAL PASSING TACTICS)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_55.jpg" alt="Hình 55: CHIẾN THUẬT PASSING SHOT KINH ĐIỂN (CLASSICAL PASSING TACTICS)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Hóa giải đối thủ đang lao lên lưới</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Khi đối thủ lao lên lưới, người đứng cuối sân có 3 lựa chọn passing shot: 1. Bắn dọc dây sạt vạch biên; 2. Ép chéo sân sắc bén qua mép lưới thấp nhất; 3. Bắn thẳng chìm vào chân người đang lao lên. Sự đa dạng hóa điểm bắn khiến người lên lưới không thể bắt bài.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-56">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 56 &bull; FIGURE 56</span>
+                    <h3 class="fig-title">PASSING SHOT TRỪNG PHẠT SAI LẦM CHIẾN THUẬT (PASSING AFTER TACTICAL ERRORS)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_56.jpg" alt="Hình 56: PASSING SHOT TRỪNG PHẠT SAI LẦM CHIẾN THUẬT (PASSING AFTER TACTICAL ERRORS)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Khai thác cú đánh tiếp cận thiếu chiều sâu của đối thủ</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Nếu đối thủ lao lên lưới nhưng cú tiếp cận (approach shot) của anh ta rơi nông ở giữa sân, bạn có thừa thời gian để căn chỉnh bước chân và tung ra cú passing shot dứt khoát đưa bóng vượt qua tầm với của anh ta một cách dễ dàng.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-57">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 57 &bull; FIGURE 57</span>
+                    <h3 class="fig-title">CÚ LỐP BÓNG BỔNG PHÒNG NGỰ (HIGH DEFENSIVE LOB)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_57.jpg" alt="Hình 57: CÚ LỐP BÓNG BỔNG PHÒNG NGỰ (HIGH DEFENSIVE LOB)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Chiếc phao cứu sinh đảo ngược thời gian và không gian</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Khi bị đối thủ dồn ép vào góc sân hiểm nghèo và không còn góc để passing, hãy tung ra một cú lốp bóng hình cầu vồng cực cao lên trời rơi sâu sát vạch cuối sân đối diện. Thời gian bóng bay bổng trên không (từ 3 đến 4 giây) cho phép bạn có đủ thời gian để hồi phục lại vị trí trung tâm sân và sẵn sàng cho loạt bóng mới.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-58">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 58 &bull; FIGURE 58</span>
+                    <h3 class="fig-title">ĐÒN DINK ĐÔI TIẾP CẬN LƯỚI (THE DOUBLE DINK APPROACH)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_58.jpg" alt="Hình 58: ĐÒN DINK ĐÔI TIẾP CẬN LƯỚI (THE DOUBLE DINK APPROACH)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Nghệ thuật tiếp cận lưới mềm mại trong đánh đôi</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Cả hai tay vợt đều đang ở cuối sân đối đầu với hai đối thủ trên lưới. Thay vì cố gắng đánh mạnh ăn thua đủ, hai tay vợt thực hiện chuỗi cú đánh dink (cắt bóng mềm mại chìm thấp) qua mép lưới rơi xuống chân đối thủ, từ từ thu hẹp cự ly và đồng bộ tiến lên chiếm lĩnh lưới.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-59">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 59 &bull; FIGURE 59</span>
+                    <h3 class="fig-title">CÚ ĐÁNH DINK TIẾP CẬN ĐƠN LẺ (THE DINK APPROACH SHOT)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_59.jpg" alt="Hình 59: CÚ ĐÁNH DINK TIẾP CẬN ĐƠN LẺ (THE DINK APPROACH SHOT)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Đưa bóng chìm dưới mép lưới mở đường lên lưới</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Một cú dink ngắn chéo sân chạm đất nảy thấp ép người đứng lưới đối phương phải cúi gập người vớt bóng lên từ dưới chân. Ngay khi bóng rời vợt, người thực hiện cú dink lập tức dâng lên lưới để đón quả bóng nảy bổng đó.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-60">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 60 &bull; FIGURE 60</span>
+                    <h3 class="fig-title">CÚ DRIVE XÉ TOẠC TRUNG LỘ (DRIVING THROUGH THE MIDDLE)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_60.jpg" alt="Hình 60: CÚ DRIVE XÉ TOẠC TRUNG LỘ (DRIVING THROUGH THE MIDDLE)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Đòn tấn công vào trung tâm hỗn loạn của cặp đôi đối thủ</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Trong đánh đôi, khi bị hai đối thủ giăng hàng ngang trên lưới, con đường an toàn và chết chóc nhất là tung cú drive phẳng hoặc xoáy xé toạc thẳng vào khe hở giữa hai người họ. Cú đánh này loại trừ nguy cơ đánh bóng ra ngoài biên và gây ra sự va chạm vợt giữa hai đối tác.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-61">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 61 &bull; FIGURE 61</span>
+                    <h3 class="fig-title">CÚ DRIVE XOÁY CUỘN TOPSPIN CHÌM (TOP-SPIN DRIVE)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_61.jpg" alt="Hình 61: CÚ DRIVE XOÁY CUỘN TOPSPIN CHÌM (TOP-SPIN DRIVE)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Bóng cắm nhanh xuống mũi giày người đứng lưới</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Cú đánh thuận tay xoáy cuộn topspin cực mạnh tạo độ cong khí động học khiến bóng bay vút qua lưới rồi đột ngột cắm thẳng xuống chân người đứng lưới đối phương, tước đoạt hoàn toàn cơ hội vô-lê tấn công của họ.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-62">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 62 &bull; FIGURE 62</span>
+                    <h3 class="fig-title">KHOÉT VÀO ĐƯỜNG CHÉO MỞ TOANG (THE OPEN DIAGONAL)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_62.jpg" alt="Hình 62: KHOÉT VÀO ĐƯỜNG CHÉO MỞ TOANG (THE OPEN DIAGONAL)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Tận dụng khoảng trống chéo sân khi đối thủ dịch chuyển lệch</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Khi một đối thủ đứng lưới nghiêng người quá nhiều sang mạn dọc dây để che chắn hành lang biên, toàn bộ đường chéo sân (diagonal) sẽ mở toang. Một cú drive chéo góc sắc bén sẽ đưa bóng vào khoảng trống mênh mông không người bảo vệ.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-63">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 63 &bull; FIGURE 63</span>
+                    <h3 class="fig-title">CÚ LỐP BÓNG TẤN CÔNG TRONG ĐÁNH ĐÔI (THE OFFENSIVE LOB)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_63.jpg" alt="Hình 63: CÚ LỐP BÓNG TẤN CÔNG TRONG ĐÁNH ĐÔI (THE OFFENSIVE LOB)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Vũ khí chiến lược lật đổ sự thống trị trên lưới</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Khi hai đối thủ đứng lưới dâng quá sát mép lưới để đè bẹp bạn, hãy ngụy trang động tác như chuẩn bị drive mạnh rồi bất ngờ vung vợt cuộn một cú lốp bóng xoáy topspin bay vừa đủ cao qua đầu họ. Bóng rơi nhanh và nảy vọt ra xa sau lưng khiến họ không thể quay đầu cứu kịp.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-64">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 64 &bull; FIGURE 64</span>
+                    <h3 class="fig-title">CÚ LỐP BÓNG PHÒNG THỦ TRONG ĐÁNH ĐÔI (THE DEFENSIVE LOB)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_64.jpg" alt="Hình 64: CÚ LỐP BÓNG PHÒNG THỦ TRONG ĐÁNH ĐÔI (THE DEFENSIVE LOB)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Cứu nguy thế trận khi bị dồn ép nghẹt thở</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Một cú lốp bóng phòng ngự cao vút đưa bóng bay bổng lên không trung, ép hai đối thủ trên lưới phải lùi sâu về tận vạch cuối sân để xử lý, đưa trận đấu trở lại vạch xuất phát bình đẳng.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tactical-figure-card" id="fig-65">
+                <div class="figure-card-header">
+                    <span class="fig-badge">HÌNH 65 &bull; FIGURE 65</span>
+                    <h3 class="fig-title">PHỐI HỢP PHÒNG NGỰ ĐỒNG ĐỘI KIÊN CỐ (GOOD DEFENSIVE TEAM PLAY)</h3>
+                </div>
+                <div class="figure-content-grid">
+                    <div class="figure-image-col">
+                        <img src="tactics_assets/fig_65.jpg" alt="Hình 65: PHỐI HỢP PHÒNG NGỰ ĐỒNG ĐỘI KIÊN CỐ (GOOD DEFENSIVE TEAM PLAY)" class="tactical-court-img">
+                        <div class="fig-caption-tag">Bọc lót hoàn hảo &mdash; bức tường thép bất khả xâm phạm</div>
+                    </div>
+                    <div class="figure-analysis-col">
+                        <h4>Phân tích chiến thuật chuyên sâu:</h4>
+                        <p>Hình 65 đúc kết tinh hoa của sự phối hợp đồng đội: Khi Player B bị đối thủ lốp bóng qua đầu phải chạy lùi về cứu bóng, đồng đội A lập tức <strong>hoán đổi vị trí (switch)</strong> di chuyển chéo sang bao quát phần sân đối diện. Hai người liên tục bọc lót cho nhau, không để lại bất kỳ khoảng trống chết nào trên sân.</p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- CHAPTER 8: SUMMARY & PARTING WORDS -->
+    <section class="chapter-page page-break-after" id="chapter-8">
+        <div class="chapter-header">
+            <div class="chapter-number">CHƯƠNG 8</div>
+            <h2 class="chapter-title">TỔNG KẾT CHIẾN THUẬT &amp; LỜI NHẮN GỬI</h2>
+            <div class="chapter-subtitle">Hệ thống nguyên lý bất biến cho Đánh đơn và Đánh đôi</div>
+        </div>
+
+        <div class="editorial-body">
+            <p class="lead-paragraph"><span class="dropcap">M</span>ục tiêu tối thượng của cuốn sách này là gia tăng niềm vui, sự thấu hiểu sâu sắc và sự thỏa nguyện của bạn khi tham gia vào môn thể thao kỳ diệu này &mdash; dù bạn là một nhà vô địch giải đấu, một người mới bước vào sân tập, hay một khán giả say mê theo dõi trên khán đài.</p>
+
+            <h3>1. Những nguyên lý chiến thuật chung bất biến</h3>
+            <div class="summary-principles-grid">
+                <div class="principle-card">
+                    <h4>1. Thể lực và Sự kiên định</h4>
+                    <p>Quần vợt là một môn thể thao đòi hỏi sức bền thể lực phi thường kết hợp với độ tập trung cao độ. Không bao giờ được phép mất bình tĩnh hay buông xuôi bất kỳ một điểm số nào dù tỷ số đang là bao nhiêu.</p>
+                </div>
+                <div class="principle-card">
+                    <h4>2. Tầm quan trọng của Cú giao bóng 1</h4>
+                    <p>Hãy duy trì tỷ lệ giao bóng 1 vào sân tối thiểu 65% đến 70%. Một cú giao bóng 1 hiểm hóc và có kiểm soát mang lại lợi thế áp đảo lớn hơn nhiều so với một cú giao bóng phẳng hết lực nhưng tỷ lệ hỏng quá cao.</p>
+                </div>
+                <div class="principle-card">
+                    <h4>3. Chiếm lĩnh Lưới là Chìa khóa</h4>
+                    <p>Cả trong đánh đơn lẫn đánh đôi, khu vực trên lưới luôn là vị trí ghi điểm màu mỡ nhất. Hãy tích cực hoàn thiện kỹ năng tiếp cận lưới và vô-lê dứt điểm.</p>
+                </div>
+                <div class="principle-card">
+                    <h4>4. Độ sâu vượt lên trên Uy lực</h4>
+                    <p>Một cú đánh sâu rơi trong vòng 1 mét trước vạch cuối sân của đối thủ có giá trị chiến thuật lớn hơn nhiều so với một cú đập bóng cực mạnh nhưng rơi nông ở giữa sân.</p>
+                </div>
+            </div>
+
+            <h3>2. Lời khuyên chia tay của Bill Talbert và Bruce Old</h3>
+            <blockquote class="concluding-quote">
+                <p>&ldquo;Chiến thuật không phải là những công thức cứng nhắc trên trang giấy, mà là nghệ thuật tư duy sống động trên từng mét vuông sân đấu. Hãy luôn tôn trọng đối thủ, tôn trọng trọng tài và khán giả, và trên hết &mdash; hãy chơi thứ quần vợt thông minh, quả cảm và đầy ắp niềm vui!&rdquo;</p>
+                <div class="quote-signature">
+                    <strong>WILLIAM F. TALBERT</strong> &amp; <strong>BRUCE S. OLD</strong><br>
+                    New York, 1983
+                </div>
+            </blockquote>
+        </div>
+    </section>
+    
+    </div>
+</body>
+</html>
