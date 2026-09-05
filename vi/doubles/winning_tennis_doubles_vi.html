@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chiến Thuật Đánh Đôi Chiến Thắng — Cynthia & Peter Doerner</title>
+    <style>
+
+@page {
+    size: 170mm 245mm;
+    margin-top: 22mm;
+    margin-bottom: 20mm;
+    margin-left: 20mm;
+    margin-right: 20mm;
+    
+    @bottom-center {
+        content: counter(page);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 9pt;
+        color: #666;
+    }
+}
+
+@page:left {
+    @top-left {
+        content: "CHIẾN THUẬT ĐÁNH ĐÔI CHIẾN THẮNG — CYNTHIA & PETER DOERNER";
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 7.5pt;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #777;
+    }
+}
+
+@page:right {
+    @top-right {
+        content: string(chapter-title);
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 7.5pt;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #777;
+    }
+}
+
+@page :first {
+    margin: 0;
+    @top-left { content: none; }
+    @top-right { content: none; }
+    @bottom-center { content: none; }
+}
+
+@page cover-page {
+    margin: 0;
+    @top-left { content: none; }
+    @top-right { content: none; }
+    @bottom-center { content: none; }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Palatino Linotype", "Book Antiqua", Times, serif;
+    font-size: 10.5pt;
+    line-height: 1.58;
+    color: #1a1a1a;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.page-break {
+    page-break-before: always;
+    break-before: page;
+}
+
+/* Cover Styling */
+.front-cover {
+    page: cover-page;
+    width: 170mm;
+    height: 245mm;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.cover-image-container {
+    width: 100%;
+    height: 100%;
+}
+
+.cover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Half Title Page */
+.half-title-page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60mm;
+}
+
+.book-main-title {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 25pt;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: #111;
+    margin: 0;
+    line-height: 1.25;
+}
+
+.half-title-divider {
+    width: 60mm;
+    height: 2px;
+    background: #1e3a8a;
+    margin: 15px auto;
+}
+
+.book-sub-title {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12pt;
+    color: #555;
+    margin: 0;
+}
+
+/* Title Page */
+.title-page-content {
+    text-align: center;
+    padding-top: 25mm;
+}
+
+.book-title {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 26pt;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    color: #111;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.book-subtitle {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12pt;
+    color: #444;
+    font-weight: normal;
+    margin-bottom: 25mm;
+}
+
+.author-block {
+    margin-bottom: 20mm;
+}
+
+.author-name {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 16pt;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #1a1a1a;
+    margin: 0 0 5px 0;
+}
+
+.author-desc {
+    font-size: 9.5pt;
+    color: #666;
+    margin: 0;
+}
+
+.illustrator-block {
+    margin-bottom: 30mm;
+    font-size: 9pt;
+    color: #555;
+    line-height: 1.6;
+}
+
+.publisher-block {
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    width: 80mm;
+    margin: 0 auto;
+}
+
+.publisher-name {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 10pt;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #222;
+    margin: 0 0 4px 0;
+}
+
+.publisher-detail {
+    font-size: 8pt;
+    color: #777;
+    margin: 0;
+}
+
+/* Copyright Page */
+.copyright-page {
+    font-size: 8.5pt;
+    line-height: 1.6;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10mm;
+    height: 100%;
+}
+
+.copyright-divider {
+    height: 1px;
+    background: #e0e0e0;
+    margin: 15px 0;
+}
+
+.cataloging-block {
+    background: #fbfbfb;
+    border: 1px solid #e5e5e5;
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+/* Acknowledgments */
+.acknowledgments-page .section-title {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 18pt;
+    font-weight: 700;
+    margin-top: 20mm;
+    margin-bottom: 20px;
+    color: #111;
+    border-bottom: 2px solid #1e3a8a;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+.author-signature {
+    margin-top: 30px;
+    text-align: right;
+    font-size: 12pt;
+}
+
+/* Table of Contents */
+.toc-page .section-title {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 20pt;
+    font-weight: 700;
+    margin-top: 15mm;
+    margin-bottom: 25px;
+    color: #111;
+    border-bottom: 2px solid #1e3a8a;
+    padding-bottom: 8px;
+}
+
+.toc-list {
+    margin-top: 15px;
+}
+
+.toc-item {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+    font-size: 10pt;
+}
+
+.toc-title {
+    font-weight: 600;
+    color: #222;
+}
+
+.toc-dots {
+    flex-grow: 1;
+    border-bottom: 1px dotted #888;
+    margin: 0 10px;
+    height: 1px;
+}
+
+.toc-page-num {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Chapters */
+.chapter-wrapper {
+    margin-top: 5mm;
+}
+
+.chapter-header {
+    text-align: center;
+    margin-bottom: 22px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.chapter-number {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 11pt;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: #1e3a8a;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+}
+
+.chapter-title {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 18pt;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #111;
+    margin: 0;
+    string-set: chapter-title content();
+}
+
+.chapter-body p {
+    text-align: justify;
+    text-indent: 1.5em;
+    margin: 0 0 10px 0;
+}
+
+.chapter-body p:first-of-type,
+.chapter-body h2 + p,
+.chapter-body h3 + p,
+.chapter-body figure + p {
+    text-indent: 0;
+}
+
+.sub-heading {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 12.5pt;
+    font-weight: 700;
+    color: #0f172a;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #e2e8f0;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+.minor-heading {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 11pt;
+    font-weight: 700;
+    color: #1d4ed8;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* Quote Box */
+.quote-box {
+    background: #f8fafc;
+    border-left: 3.5px solid #1e3a8a;
+    padding: 10px 16px;
+    margin: 14px 0;
+    font-style: italic;
+    border-radius: 0 4px 4px 0;
+}
+
+.quote-box p {
+    text-indent: 0 !important;
+    margin: 0;
+}
+
+/* Figures & Sequence Photos */
+.book-figure {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin: 14px 0;
+    padding: 8px;
+    background-color: #fdfdfd;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.figure-img-wrapper {
+    text-align: center;
+    background-color: #000;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.figure-img {
+    max-width: 98%;
+    max-height: 118mm;
+    height: auto;
+    display: inline-block;
+    object-fit: contain;
+}
+
+.figure-caption {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 8.5pt;
+    line-height: 1.45;
+    color: #334155;
+    margin-top: 8px;
+    text-align: justify;
+    padding: 0 6px;
+}
+
+.figure-caption strong {
+    color: #1e3a8a;
+}
+
+/* Lists */
+.chapter-body ul, .chapter-body ol {
+    margin: 10px 0 14px 18px;
+    padding-left: 14px;
+}
+
+.chapter-body li {
+    margin-bottom: 6px;
+    text-align: justify;
+}
+
+/* Index / Glossary */
+.index-intro {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.index-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.index-column {
+    width: 48%;
+}
+
+.index-letter {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 12pt;
+    font-weight: 700;
+    color: #1e3a8a;
+    border-bottom: 1.5px solid #1e3a8a;
+    padding-bottom: 2px;
+    margin-top: 14px;
+    margin-bottom: 8px;
+}
+
+.index-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.index-list li {
+    font-size: 8.5pt;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="front-cover page-break">
+    <div class="cover-image-container">
+        <img src="doerner_assets/cover.jpg" alt="Bìa Sách Chiến Thuật Đánh Đôi Chiến Thắng" class="cover-img" />
+    </div>
+</div>
+
+<div class="half-title-page page-break">
+    <div class="half-title-content">
+        <h1 class="book-main-title">CHIẾN THUẬT ĐÁNH ĐÔI CHIẾN THẮNG</h1>
+        <div class="half-title-divider"></div>
+        <p class="book-sub-title">Winning Tennis Doubles — Nghệ Thuật Phối Hợp và Khái Niệm Tam Giác Ma Thuật</p>
+    </div>
+</div>
+
+<div class="title-page page-break">
+    <div class="title-page-content">
+        <h1 class="book-title">CHIẾN THUẬT ĐÁNH ĐÔI CHIẾN THẮNG</h1>
+        <h2 class="book-subtitle">Cẩm Nang Toàn Diện Về Di Chuyển, Vị Trí và Chiến Lược Đánh Đôi Đỉnh Cao</h2>
+        <div class="author-block">
+            <p class="author-name">CYNTHIA DOERNER &amp; PETER DOERNER</p>
+            <p class="author-desc">Với sự cộng tác của <strong>Dan Ozier</strong></p>
+        </div>
+        <div class="illustrator-block">
+            <p class="illustrator-text">Hệ thống ảnh chụp thực địa từ trên cao thể hiện các chuỗi tình huống thực chiến của <strong>Player A, B, C, D</strong></p>
+        </div>
+        <div class="publisher-block">
+            <p class="publisher-name">NHÀ XUẤT BẢN THỂ DỤC THỂ THAO</p>
+            <p class="publisher-detail">Bản dịch tiếng Việt chuyên nghiệp — Tủ sách Quần vợt Đỉnh cao</p>
+        </div>
+    </div>
+</div>
+
+<div class="copyright-page page-break">
+    <div class="copyright-content">
+        <p><strong>CHIẾN THUẬT ĐÁNH ĐÔI CHIẾN THẮNG (WINNING TENNIS DOUBLES)</strong></p>
+        <p>Nguyên tác: <em>Winning Tennis Doubles</em> (1980)</p>
+        <p>Tác giả: Cynthia Doerner, Peter Doerner, Dan Ozier</p>
+        <p>Bản quyền nguyên tác &copy; 1980 thuộc về Cynthia Doerner, Peter Doerner và Dan Ozier. Xuất bản lần đầu bởi Contemporary Books, Inc., Chicago.</p>
+        <div class="copyright-divider"></div>
+        <p>Bản dịch tiếng Việt được biên soạn và số hóa phục vụ mục đích nghiên cứu, học thuật và phát triển phong trào quần vợt Việt Nam. Toàn bộ 40 bức ảnh chụp chiến thuật từ trên cao (aerial tactical photography) đã được số hóa ở độ phân giải cao và chuẩn hóa thuật ngữ quần vợt quốc tế hiện đại.</p>
+        <p class="cataloging-block">
+            <strong>Thông tin thư mục xuất bản:</strong><br/>
+            Doerner, Peter &amp; Cynthia Doerner.<br/>
+            Chiến thuật đánh đôi chiến thắng / Cynthia Doerner, Peter Doerner, Dan Ozier.<br/>
+            1. Quần vợt đánh đôi — Kỹ thuật, Chiến thuật và Bài tập. 2. Đánh đôi nam nữ (Mixed Doubles).<br/>
+            Mã phân loại thư viện Quốc hội Mỹ: GV1002 .D63 1980 / 796.342'2
+        </p>
+    </div>
+</div>
+
+<div class="acknowledgments-page page-break">
+    <h2 class="section-title">Lời Cảm Ơn</h2>
+    <div class="prose-content">
+        <p>Chúng tôi xin gửi lời cảm ơn chân thành và sâu sắc nhất tới Jim Demas, Bob Cherry, Danny Krebs, John Williamson, Lynn Blumberg và Dan Ozier vì đã trực tiếp tham gia đóng vai các đấu sĩ (Player A, B, C, D) trong hàng loạt buổi chụp ảnh chiến thuật thực nghiệm từ trên cao trên sân quần vợt.</p>
+        <p>Sự kiên nhẫn, lòng nhiệt tình và những pha phối hợp bóng chuẩn xác đến từng centimet của các bạn dưới cái nắng gay gắt đã tạo nên linh hồn cho hệ thống sơ đồ hình ảnh thực tế độc nhất vô nhị trong cuốn sách này.</p>
+        <div class="author-signature">
+            <p class="sig-name"><strong>Cynthia &amp; Peter Doerner</strong></p>
+        </div>
+    </div>
+</div>
+
+<div class="toc-page page-break">
+    <h2 class="section-title">Mục Lục</h2>
+    <div class="toc-list">
+        <div class="toc-item"><span class="toc-title">Lời Cảm Ơn</span><span class="toc-dots"></span><span class="toc-page-num">5</span></div>
+        <div class="toc-item"><span class="toc-title">Lời Giới Thiệu: Khái Niệm Tam Giác Ma Thuật</span><span class="toc-dots"></span><span class="toc-page-num">7</span></div>
+        <div class="toc-item"><span class="toc-title">Chương 1: Người Giao Bóng (The Server)</span><span class="toc-dots"></span><span class="toc-page-num">11</span></div>
+        <div class="toc-item"><span class="toc-title">Chương 2: Người Đứng Lưới Tấn Công (The Offensive Netman)</span><span class="toc-dots"></span><span class="toc-page-num">29</span></div>
+        <div class="toc-item"><span class="toc-title">Chương 3: Đón Trả Giao Bóng (Receiving Serve)</span><span class="toc-dots"></span><span class="toc-page-num">45</span></div>
+        <div class="toc-item"><span class="toc-title">Chương 4: Người Đứng Lưới Phòng Thủ (The Defensive Netman)</span><span class="toc-dots"></span><span class="toc-page-num">61</span></div>
+        <div class="toc-item"><span class="toc-title">Chương 5: Đánh Đôi Nam Nữ (Mixed Doubles)</span><span class="toc-dots"></span><span class="toc-page-num">77</span></div>
+        <div class="toc-item"><span class="toc-title">Chương 6: Đấu Thủ Thuận Tay Trái (Lefties)</span><span class="toc-dots"></span><span class="toc-page-num">87</span></div>
+        <div class="toc-item"><span class="toc-title">Chương 7: Quần Vợt Đánh Đôi Cho Người Cao Tuổi (Seniors)</span><span class="toc-dots"></span><span class="toc-page-num">93</span></div>
+        <div class="toc-item"><span class="toc-title">Chương 8: Quần Vợt Đánh Đôi Cho Lứa Tuổi Trẻ (Juniors)</span><span class="toc-dots"></span><span class="toc-page-num">97</span></div>
+        <div class="toc-item"><span class="toc-title">Chương 9: Các Yếu Tố Tự Nhiên — Gió, Nắng, Mặt Sân</span><span class="toc-dots"></span><span class="toc-page-num">101</span></div>
+        <div class="toc-item"><span class="toc-title">Chương 10: Các Bài Tập Chiến Thuật (Drills)</span><span class="toc-dots"></span><span class="toc-page-num">107</span></div>
+        <div class="toc-item"><span class="toc-title">Chương 11: Rèn Luyện Thể Lực Chuyên Biệt (Exercises)</span><span class="toc-dots"></span><span class="toc-page-num">113</span></div>
+        <div class="toc-item"><span class="toc-title">Chương 12: Mẹo và Bí Quyết Chiến Thuật Đỉnh Cao</span><span class="toc-dots"></span><span class="toc-page-num">117</span></div>
+        <div class="toc-item"><span class="toc-title">Phụ Lục: Bảng Tra Cứu Thuật Ngữ &amp; Chỉ Mục</span><span class="toc-dots"></span><span class="toc-page-num">123</span></div>
+    </div>
+</div>
+
+<div class="intro-page page-break" id="introduction">
+    <div class="chapter-header">
+        <p class="chapter-number">LỜI GIỚI THIỆU</p>
+        <h1 class="chapter-title">Khái Niệm Tam Giác Ma Thuật<br/>(The Magic Triangle)</h1>
+    </div>
+    <div class="chapter-body">
+        <p>Quần vợt đánh đôi, dù từng bị xem như 'đứa con riêng' đứng nép sau hào quang của đánh đơn, lại là một môn thể thao đồng đội đầy mê hoặc, có khả năng kích hoạt những phản ứng cảm xúc cuồng nhiệt nhất nơi khán giả. Năng lượng bùng nổ, những pha đôi công cận chiến tóe lửa tại lưới và tốc độ phản xạ đến nghẹt thở tạo nên một bầu không khí rực điện lôi cuốn người xem nhập cuộc vào từng đường bóng.</p>
+        <p>Khi diện tích sân bãi ngày càng trở nên khan hiếm và ngày càng có nhiều tay vợt lẫn người hâm mộ học được cách thưởng thức vẻ đẹp tinh tế của đánh đôi — sự uyển chuyển của từng bước chạy nhịp nhàng, những kỹ năng đón chặn chuyên biệt và sự đồng điệu tuyệt đối trong suy nghĩ lẫn hành động giữa hai cá nhân — vai trò của đánh đôi sẽ ngày càng tỏa sáng trên bản đồ quần vợt toàn cầu.</p>
+        <p>Cuốn sách này được thiết kế dành riêng cho những tay vợt đã nắm vững các kỹ thuật cơ bản của quần vợt và khao khát nâng tầm tư duy chiến thuật đánh đôi lên mức chuyên nghiệp. Đồng thời, đây cũng là cẩm nang giảng dạy thiết yếu cho các huấn luyện viên và giáo viên thể chất ở mọi cấp độ đào tạo.</p>
+        <p>Ý đồ của chúng tôi là mang đến cho bạn một hệ thống lý luận hoàn chỉnh nhất: <em>Không chỉ dạy bạn PHẢI ĐÁNH BÓNG ĐI ĐÂU VÀ KHI NÀO, mà quan trọng hơn cả là TẠI SAO BẠN PHẢI ĐÁNH VÀO ĐÓ!</em> Mọi tay vợt nhà nghề đỉnh cao đều biết rõ lý do tại sao họ nhắm bóng vào vị trí đó và biết chính xác điều gì sẽ xảy ra tiếp theo sau khi bóng rời mặt vợt. <strong>Ở đâu (Where), Khi nào (When) và Tại sao (Why)</strong> chính là trái tim và khối óc của cuốn sách này.</p>
+        
+        <h2 class="sub-heading">Tam Giác Ma Thuật (The Magic Triangle)</h2>
+        <p>Xuyên suốt cuốn sách này, bạn sẽ liên tục được thử thách vận dụng một khái niệm tối thượng mang tên <strong>'Tam Giác Ma Thuật'</strong>. Chúng tôi gọi nó là ma thuật, nhưng trên thực tế, đó là một nguyên lý hình học bắt rễ sâu xa từ bản chất của mọi trò chơi dùng bóng trên mặt phẳng hình chữ nhật. Một sự thấu hiểu tường tận về các góc độ là điều kiện tiên quyết để tạo nên một cặp đôi chiến thắng.</p>
+        <p>Trong đánh đôi, tư duy cốt lõi là <strong>luôn định vị bản thân và đồng đội trên sân như hai điểm đáy của một hình tam giác, với quả bóng đóng vai trò là đỉnh thứ ba</strong>. Dù bạn đang ở thế tấn công hay phòng thủ, việc liên tục duy trì cấu trúc tam giác sẽ tự động đưa đội của bạn vào vị trí bao quát sân hoàn hảo nhất.</p>
+        <p>Khi quả bóng bay sang góc trái của đối thủ, đáy tam giác của bạn phải trượt đồng bộ sang trái. Khi bóng bay sang góc phải, đáy tam giác lập tức trượt sang phải. Hai đồng đội phải di chuyển gắn kết như thể được nối với nhau bằng một thanh xà vô hình dài khoảng 3 mét. Hãy nghiền ngẫm kỹ lưỡng từng sơ đồ và lời giải thích trong cuốn sách. Bạn sẽ nhận ra sức mạnh ma thuật thực sự của Tam Giác khi bước ra sân thi đấu thực tế!</p>
+    </div>
+</div>
+
+
+<div class="chapter-wrapper page-break" id="chapter-1">
+    <div class="chapter-header">
+        <p class="chapter-number">CHƯƠNG 1</p>
+        <h1 class="chapter-title">Người Giao Bóng<br/>(The Server)</h1>
+    </div>
+    
+    <div class="chapter-body">
+        <p>Trò chơi đánh đôi diễn ra trên một mặt sân đơn được mở rộng thêm hai dải hành lang dài 4,5 feet ở mỗi bên. Khoảng không gian cộng thêm này mang lại cho các tay vợt cơ hội tuyệt vời để triển khai những pha phối hợp chiến thuật phức tạp và mãn nhãn. Để giành chiến thắng trong đánh đôi, bạn bắt buộc phải thấu hiểu trọn vẹn từng vai trò chuyên biệt trên sân. Và mắt xích khởi đầu cho mọi cuộc tấn công chính là <strong>Người Giao Bóng (The Server — Player A)</strong>.</p>
+
+        <h2 class="sub-heading">Vị Trí Xuất Phát Tiêu Chuẩn và Triết Lý Giao Bóng</h2>
+
+        <p>Trước khi bắt đầu một điểm số, cả bốn đấu sĩ trên sân phải ổn định tại những vị trí tối ưu về mặt hình học (xem <strong>Hình 18</strong>):</p>
+        <ul>
+            <li><strong>Người giao bóng (Player A):</strong> Đứng ở vạch cuối sân bên ô phải, cách điểm trung tâm (center mark) khoảng 2 đến 3 feet để có góc giao thuận lợi nhất.</li>
+            <li><strong>Người đứng lưới bên giao (Player B):</strong> Đứng án ngữ tại ô sân bên trái, cách mép lưới khoảng 2 mét và cách đường biên dọc khoảng 1,5 mét.</li>
+            <li><strong>Người nhận bóng (Player C):</strong> Chuẩn bị đón bóng tại góc sân cuối ô chéo cánh.</li>
+            <li><strong>Người đứng lưới bên nhận (Player D):</strong> Đứng lơ lửng tại khu vực giữa ô giao bóng bên phải để quan sát và bảo vệ phần sân của mình.</li>
+        </ul>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p018.jpg" alt="Tình huống P.18: Vị Trí Xuất Phát Tiêu Chuẩn Khi Giao Bóng" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 18. Vị Trí Xuất Phát Tiêu Chuẩn Khi Giao Bóng</strong> — Cả bốn tay vợt ở vị trí chuẩn mực: Người giao bóng A đứng sau vạch cuối sân bên ô phải; Người đứng lưới bên giao B án ngữ trên lưới bên trái; Người nhận C chuẩn bị đón bóng ở cuối sân chéo cánh; Người đứng lưới bên nhận D đứng quan sát tại lưới bên phải. Người chơi A giao bóng sâu và hiểm vào điểm yếu trái tay của C.
+        </figcaption>
+    </figure>
+    
+
+        <h3 class="minor-heading">Quy Tắc Vàng: Bớt 1/4 Tốc Độ Để Lấy Điểm Rơi và Thời Gian</h3>
+        <p>Nếu bạn sở hữu một cú giao bóng phẳng sấm sét với tốc độ 160 km/h, xin hãy giữ lại thứ vũ khí đó cho những trận đánh đơn! Trong đánh đôi, cú giao bóng quá nhanh sẽ là một thảm họa cho chính bạn: quả bóng bay sang sân đối phương quá nhanh khiến bạn không có đủ thời gian để chạy lên lưới thiết lập thế trận cùng đồng đội. Bạn sẽ bị đối thủ trả bóng vào ngay mũi giày khi đang chạy lỡ dở ở giữa sân.</p>
+        <p>Hãy <strong>giảm bớt khoảng 25% tốc độ</strong> của cú giao bóng một. Thay vào đó, hãy tập trung 100% tâm trí vào độ xoáy (xoáy cắt slice hoặc xoáy cầu topspin/twist) và hướng bóng đi sâu cắm thẳng vào <strong>điểm yếu trái tay (backhand) của người nhận C trong 80% đến 90% số lần giao bóng!</strong></p>
+
+        <h2 class="sub-heading">Chuỗi Chiến Thuật Mẫu 1: Giao Bóng Trái Tay — Volley Trung Lộ</h2>
+
+        <p>Hãy theo dõi chuỗi tình huống kinh điển từ <strong>Hình 18</strong> đến <strong>Hình 21</strong>:</p>
+        <p>Sau khi Player A giao bóng sâu vào góc trái tay của C, C buộc phải vung vợt với tư thế với và trả bóng chéo sân ra ngoài tầm can thiệp của người đứng lưới B (xem <strong>Hình 20</strong>). A chủ động di chuyển theo đường bóng lao nhanh lên lưới, đón quả bóng ở tầm ngang vai.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p020.jpg" alt="Tình huống P.20: Người Nhận Trả Bóng Chéo Sân — Người Giao Tiến Lên Lưới" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 20. Người Nhận Trả Bóng Chéo Sân — Người Giao Tiến Lên Lưới</strong> — Người chơi A giao bóng vào phía trái tay của C. C tung cú trả bóng chéo sân vượt khỏi tầm với của người đứng lưới B. Người chơi A di chuyển thanh thoát theo bóng lên lưới, chuẩn bị thực hiện quả volley thuận tay tầm ngang vai.
+        </figcaption>
+    </figure>
+    
+
+        <p>Tại <strong>Hình 21</strong>, Player A không ngần ngại tung quả volley thuận tay đè bóng cắm thẳng vào trung lộ giữa C và D. Cả C lẫn D đều bị kẹt cứng ở thế bị động. Quả bóng chạm đất ghi điểm winner trực tiếp. Cùng lúc đó, B áp sát mép lưới, cùng A tạo nên hai điểm đáy của <em>Tam Giác Ma Thuật</em> song song vững chãi.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p021.jpg" alt="Tình huống P.21: Quả Volley Xé Trung Lộ Ăn Điểm Winner — Thiết Lập Tam Giác Ma Thuật" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 21. Quả Volley Xé Trung Lộ Ăn Điểm Winner — Thiết Lập Tam Giác Ma Thuật</strong> — Người chơi A ập vào đón quả trả bóng và tung cú volley dứt khoát xé thẳng vào trung lộ giữa hai đối thủ ghi điểm trực tiếp. B tiến sát lưới khép góc. C và D rơi vào thế bẫy. A và B hoàn tất thế trận 'Tam giác ma thuật' (The Magic Triangle).
+        </figcaption>
+    </figure>
+    
+
+        <h2 class="sub-heading">Chuỗi Chiến Thuật Mẫu 2: Tấn Công Volley Chéo Sân Trước Mặt Đối Thủ</h2>
+
+        <p>Trong <strong>Hình 24</strong>, Player A di chuyển vào vị trí hoàn hảo để chuẩn bị cho quả volley tiếp theo. Nhận thấy quả trả bóng của C bay hơi bồng bềnh, A lập tức chủ động tăng tốc bước chân, <em>chặn cắt quả bóng ở tầm cao ngay trước khi nó kịp chìm xuống</em> (xem <strong>Hình 25</strong>).</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p024.jpg" alt="Tình huống P.24: Di Chuyển Đón Quả Trả Giao Bóng" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 24. Di Chuyển Đón Quả Trả Giao Bóng</strong> — Người chơi A di chuyển vào vị trí hoàn hảo trên đường tiến lên lưới để đón quả trả bóng. B và D đồng thời điều chỉnh bước chân tương ứng với quỹ đạo bay của quả bóng.
+        </figcaption>
+    </figure>
+    
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p025.jpg" alt="Tình huống P.25: Tấn Công Cắt Bóng Trước Khi Rơi — Volley Chéo Sân Dứt Điểm" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 25. Tấn Công Cắt Bóng Trước Khi Rơi — Volley Chéo Sân Dứt Điểm</strong> — Người chơi A chủ động tấn công, đón cắt quả bóng trước khi bóng kịp chìm xuống và tung cú volley chéo sân hiểm hóc ngay trước mặt D. A và B cùng kết thúc pha bóng sát cánh bên nhau tại lưới.
+        </figcaption>
+    </figure>
+    
+
+        <p>Cú volley chéo sân sắc bén cắt ngang mặt người đứng lưới đối phương D, không cho đối thủ bất kỳ cơ hội phản ứng nào. A và B hoàn tất pha bóng sát cánh bên nhau tại lưới.</p>
+
+        <h2 class="sub-heading">Chuỗi Chiến Thuật Mẫu 3: Xử Lý Bóng Chìm và Bắn Dọc Hành Lang (Down The Alley)</h2>
+
+        <p>Khi người nhận C tung ra một cú trả bóng chìm sát mép lưới, Player A không được phép hoảng hốt vung mạnh. Hãy hạ thấp gối, cúi mình xúc quả volley thuận tay từ dưới tầm lưới hất thấp sang sân đối phương (xem <strong>Hình 26</strong>).</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p026.jpg" alt="Tình huống P.26: Xử Lý Quả Trả Bóng Chìm Dưới Tầm Lưới" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 26. Xử Lý Quả Trả Bóng Chìm Dưới Tầm Lưới</strong> — C thực hiện cú trả bóng chéo sân tốc độ trung bình đi chìm sát mép lưới. Người chơi A hạ thấp trọng tâm, khụy gối múc quả volley thuận tay từ dưới tầm lưới đi thấp sang phần sân đối phương.
+        </figcaption>
+    </figure>
+    
+
+        <p>Ngay pha bóng tiếp theo (xem <strong>Hình 27</strong>), nhận thấy người đứng lưới D có xu hướng lấn sang giữa sân để bắt bài, A lập tức tung cú bạt volley dọc hành lang đánh đôi (down the alley) ghi điểm winner giòn giã. D bị chôn chân tại chỗ.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p027.jpg" alt="Tình huống P.27: Volley Bạt Dọc Hành Lang Đánh Đôi Ghi Điểm Trực Tiếp" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 27. Volley Bạt Dọc Hành Lang Đánh Đôi Ghi Điểm Trực Tiếp</strong> — Người chơi A đón bóng và tung cú bạt volley dọc hành lang đánh đôi (Down the alley) ghi điểm winner ngoạn mục. D không kịp trở tay. A và B hoàn tất pha bóng song song bên nhau tại lưới.
+        </figcaption>
+    </figure>
+    
+
+        <h2 class="sub-heading">Chuỗi Chiến Thuật Mẫu 4: Hóa Giải Cú Lốp Bóng — Smash Đập Nát Trung Lộ</h2>
+
+        <p>Nếu đối thủ C tung một cú lốp bóng (lob) bổng qua đầu A khi A đang trên đà lao lên (xem <strong>Hình 28</strong>), sự ăn ý giữa hai đồng đội sẽ lập tức được kích hoạt. B không đứng nhìn mà chủ động lùi nhanh về sau để cùng A tái thiết lập đáy tam giác phòng ngự.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p028.jpg" alt="Tình huống P.28: Cú Lốp Bóng Qua Đầu Người Giao Đang Lên Lưới" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 28. Cú Lốp Bóng Qua Đầu Người Giao Đang Lên Lưới</strong> — C tung cú lốp bóng bổng qua đầu A khi A đang trên đà lao lên lưới. B lập tức nhận biết tình huống và lùi sâu về sau để cùng A thiết lập lại cấu trúc phòng thủ tam giác.
+        </figcaption>
+    </figure>
+    
+
+        <p>Tại <strong>Hình 29</strong>, Player A bật nhảy dũng mãnh thực hiện cú smash trên đầu (overhead smash) xé toang khoảng trống giữa C và D. Hai đối thủ bị găm chặt ở vạch giao bóng và bất lực nhìn quả bóng nảy ra ngoài tầm với.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p029.jpg" alt="Tình huống P.29: Bật Nhảy Đập Smash Overhead Phối Hợp Tam Giác" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 29. Bật Nhảy Đập Smash Overhead Phối Hợp Tam Giác</strong> — Người chơi A bật nhảy thực hiện cú smash đập bóng trên đầu uy lực trong khi B lùi lại tạo thành đáy của tam giác phòng ngự. C và D bị kẹt cứng ở vạch giao bóng khi quả bóng cắm thẳng vào khoảng trống giữa họ.
+        </figcaption>
+    </figure>
+    
+
+        <h2 class="sub-heading">Chuỗi Chiến Thuật Mẫu 5 &amp; 6: Trừng Phạt Quả Trả Trung Lộ và Cú Bỏ Nhỏ Tinh Tế</h2>
+
+        <p>Trong <strong>Hình 32 &amp; 33</strong>, khi C trả bóng vào giữa sân, A nhanh chóng điều chỉnh sải chân, vung quả volley trái tay găm thẳng vào góc chân của D, kết liễu pha bóng với tư thế áp đảo tuyệt đối.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p032.jpg" alt="Tình huống P.32: Đổi Hướng Đón Quả Trả Bóng Vào Trung Lộ" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 32. Đổi Hướng Đón Quả Trả Bóng Vào Trung Lộ</strong> — C trả quả giao bóng thẳng vào trung tâm sân. Người chơi A nhanh chóng chỉnh hướng di chuyển đón bóng. B dạt sang giữa sân trong khi D di chuyển hỗ trợ đồng đội.
+        </figcaption>
+    </figure>
+    
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p033.jpg" alt="Tình huống P.33: Volley Trái Tay Xuyên Qua Trung Lộ Kết Thúc Điểm Số" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 33. Volley Trái Tay Xuyên Qua Trung Lộ Kết Thúc Điểm Số</strong> — Người chơi A ập vào chớp nhoáng, tung cú volley trái tay uy lực đè bóng vào giữa sân ngay trước mặt D, kết thúc điểm số với A và B đứng song song ở vị trí áp đảo nhất trên lưới.
+        </figcaption>
+    </figure>
+    
+
+        <p>Đặc biệt, trong <strong>Hình 34 &amp; 35</strong>, khi nhận thấy C và D cùng lùi sâu hoặc chạy theo đà bóng chéo sân, Player A đã trình diễn một tuyệt kỹ đỉnh cao: <strong>cú bỏ nhỏ drop-volley mềm mại vào góc hành lang đánh đôi</strong>. Quả bóng rơi khẽ khàng sát mép lưới, chấm dứt hoàn toàn hy vọng cứu bóng của đối thủ.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p034.jpg" alt="Tình huống P.34: Người Nhận Trả Bóng Chéo Sân Và Tiến Lên Lưới" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 34. Người Nhận Trả Bóng Chéo Sân Và Tiến Lên Lưới</strong> — C tung cú trả bóng chéo sân tốc độ vừa phải và chủ động chạy theo đường bóng để tiến lên chiếm lưới. Người chơi A hạ thấp người chuẩn bị cho pha xử lý bóng tinh tế.
+        </figcaption>
+    </figure>
+    
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p035.jpg" alt="Tình huống P.35: Cú Bỏ Nhỏ Volley Chéo Sân Vào Góc Hành Lang" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 35. Cú Bỏ Nhỏ Volley Chéo Sân Vào Góc Hành Lang</strong> — Người chơi A thực hiện một cú bỏ nhỏ drop-volley mềm mại đưa bóng rơi nhẹ vào góc hành lang chéo sân. B di chuyển bao quát phần sân trung tâm, hoàn tất cấu trúc tấn công hoàn hảo.
+        </figcaption>
+    </figure>
+    
+
+        <h2 class="sub-heading">Bảo Vệ Người Đồng Đội Trên Lưới: Đừng Biến Bạn Mình Thành Tấm Bia!</h2>
+
+        <p>Lời khuyên sâu sắc nhất dành cho người giao bóng: <strong>Hãy luôn giữ cho người đồng đội đứng lưới của bạn 'sống sót và khỏe mạnh'!</strong> Nếu bạn giao một quả bóng một phẳng quá cẩu thả bay vào tầm thuận tay sở trường của đối thủ, đối thủ sẽ tung một cú bạt bóng sấm sét nhắm thẳng vào mặt đồng đội B của bạn. Đừng bao giờ đẩy bạn mình vào hiểm cảnh. Hãy giao bóng có độ xoáy, sâu và cắm vào điểm yếu đối phương để đồng đội của bạn có thể thoải mái săn bàn trên lưới!</p>
+    </div>
+</div>
+
+
+<div class="chapter-wrapper page-break" id="chapter-2">
+    <div class="chapter-header">
+        <p class="chapter-number">CHƯƠNG 2</p>
+        <h1 class="chapter-title">Người Đứng Lưới Tấn Công<br/>(The Offensive Netman)</h1>
+    </div>
+    
+    <div class="chapter-body">
+        <p>Nếu người giao bóng (Player A) là người khởi xướng đòn tấn công thì <strong>Người Đứng Lưới Tấn Công (The Offensive Netman — Player B)</strong> chính là 'tay súng bắn tỉa' chịu trách nhiệm kết liễu điểm số. Khi đứng trên lưới cùng người giao bóng, bạn đang nắm giữ lợi thế chiến thuật to lớn nhất trong môn quần vợt. Nhiệm vụ của bạn không phải là đứng yên thụ động như một pho tượng để bảo vệ góc sân của mình, mà là một kẻ đi săn đích thực: rình rập, gây sức ép tâm lý nghẹt thở lên người nhận bóng và chớp thời cơ băng cắt bắt bài (poach) kết liễu pha bóng.</p>
+
+        <h2 class="sub-heading">Vị Trí Đứng Chuẩn Mực và Tư Thế Sẵn Sàng</h2>
+
+        <p>Vị trí lý tưởng của Player B khi người đồng đội A chuẩn bị giao bóng là <strong>cách mép lưới khoảng 2 mét và nằm chính giữa đường giao bóng trung tâm với đường biên dọc</strong>. Từ cự ly này, bạn chỉ cách lưới một bước chân cộng với tầm với của cây vợt — vừa đủ gần để đè bẹp mọi quả bóng trên mép lưới, vừa đủ sâu để không bị đối thủ lốp bóng qua đầu một cách dễ dàng.</p>
+        <p>Hãy duy trì tư thế chùng gối, nhón gót chân, giữ đầu vợt luôn hướng lên cao ngang ngực. Đừng bao giờ hạ thấp đầu vợt xuống hông. Tại lưới, thời gian để bạn nâng một cây vợt từ dưới hông lên đỡ bóng thường dài gấp ba lần thời gian bóng bay tới!</p>
+
+        <h2 class="sub-heading">Chuỗi Chiến Thuật Mẫu 7: Cướp Quả Trả Trung Lộ — Bẻ Góc Vào Hành Lang</h2>
+
+        <p>Hãy quan sát tình huống thực tế trong <strong>Hình 42 &amp; 43</strong>: Khi đối thủ C cố gắng tránh né tầm vợt của A bằng cách đè bóng vào giữa sân, Player B đã nhanh nhạy đọc được ý đồ từ bước vung vợt của C. B lập tức bước xốc vào trung tâm sân đón đầu quả bóng.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p042.jpg" alt="Tình huống P.42: Người Đứng Lưới B Bắt Bài Cướp Quả Trả Bóng Trung Lộ" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 42. Người Đứng Lưới B Bắt Bài Cướp Quả Trả Bóng Trung Lộ</strong> — C cố gắng trả quả giao bóng vào giữa sân, nhưng người đứng lưới bên giao B đã đọc bài từ trước, bước nhanh vào trung lộ đón đầu quả bóng.
+        </figcaption>
+    </figure>
+    
+
+        <p>Tại <strong>Hình 43</strong>, thay vì đẩy bóng đơn giản về cuối sân, B tung một cú volley cổ tay sắc lẹm, bẻ gập góc đánh găm thẳng quả bóng vào góc hành lang đánh đôi bên kia lưới. Quả bóng đi ra xa khỏi tầm với của cả hai đối thủ. Cú dứt điểm mẫu mực này cho thấy uy lực của sự chủ động tại lưới.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p043.jpg" alt="Tình huống P.43: Cú Volley Bẻ Góc Sắc Ra Hành Lang Ghi Điểm" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 43. Cú Volley Bẻ Góc Sắc Ra Hành Lang Ghi Điểm</strong> — B thực hiện cú đè volley góc sắc bén găm thẳng quả bóng vào góc hành lang đánh đôi ghi điểm trực tiếp. Người chơi A sẵn sàng tiếp ứng phía sau, khép lại pha phối hợp mẫu mực.
+        </figcaption>
+    </figure>
+    
+
+        <h2 class="sub-heading">Chuỗi Chiến Thuật Mẫu 8: Trừng Phạt Quả Trả Bồng Bềnh và Xử Lý Cú Lốp</h2>
+
+        <p>Trong <strong>Hình 44</strong>, người nhận C trả quả giao bóng đi hơi cao và trôi vào giữa sân — đây là 'món quà trời cho' mà bất kỳ tay lưới cừ khôi nào cũng mong đợi. B lập tức bước lên chuẩn bị kết liễu.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p044.jpg" alt="Tình huống P.44: Rình Rập Đón Lỏng Quả Trả Bóng Non" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 44. Rình Rập Đón Lỏng Quả Trả Bóng Non</strong> — C trả bóng thiếu lực vào giữa sân đúng nơi B đang chực chờ sẵn. B bước xốc vào trung tâm đè bóng từ trên cao xuống.
+        </figcaption>
+    </figure>
+    
+
+        <p>Tuy nhiên, nếu đối thủ tinh quái tung cú lốp bóng (lob) qua đầu B (xem <strong>Hình 46</strong>), B không bao giờ được quay lưng chạy hoảng loạn. Hãy giương cao vợt, bước lùi có kiểm soát bằng các bước trượt ngang (side-steps) hoặc bước lùi chéo chân (crossover steps) để luôn giữ mắt khóa chặt vào quả bóng trên không.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p046.jpg" alt="Tình huống P.46: Bọc Lót Lùi Sâu Khi Đối Thủ Lốp Bóng" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 46. Bọc Lót Lùi Sâu Khi Đối Thủ Lốp Bóng</strong> — Người đứng lưới B lùi nhanh về sau để đón quả lốp bóng trong khi C và D cùng tràn lên lưới. A hãm đà tiến và chuyển sang tư thế hỗ trợ đồng đội.
+        </figcaption>
+    </figure>
+    
+
+        <p>Tại <strong>Hình 47</strong>, khi quả bóng đạt điểm rơi hoàn hảo, B bật nhảy dũng mãnh và tung cú <strong>smash overhead sấm sét cắm thẳng vào khe hở giữa C và D</strong>. Đòn đánh uy lực này xé toang hàng phòng ngự đối phương, mang về điểm winner thuyết phục.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p047.jpg" alt="Tình huống P.47: Cú Smash Xuyên Qua Khe Hở Giữa Hai Đối Thủ" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 47. Cú Smash Xuyên Qua Khe Hở Giữa Hai Đối Thủ</strong> — B tung cú smash đập bóng uy lực cắm thẳng vào khe hở giữa C và D ghi điểm winner. A và B cùng di chuyển tiếp cận lưới theo sau cú đập bóng.
+        </figcaption>
+    </figure>
+    
+
+        <h2 class="sub-heading">Chuỗi Chiến Thuật Mẫu 9: Cú Bỏ Nhỏ Chạm Lưới Đầy Tinh Tế</h2>
+
+        <p>Đôi khi, sự tàn nhẫn nhất trong quần vợt lại được thể hiện qua một cú chạm bóng êm ái như nhung. Trong <strong>Hình 50 &amp; 51</strong>, nhận thấy cả C và D đều đang lùi sâu chuẩn bị đỡ một cú smash uy lực của B, B đã bất ngờ thay đổi quyết định vào tích tắc cuối cùng:</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p050.jpg" alt="Tình huống P.50: Trừng Phạt Quả Trả Bóng Bồng Bềnh Vào Trung Tâm" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 50. Trừng Phạt Quả Trả Bóng Bồng Bềnh Vào Trung Tâm</strong> — C trả quả giao bóng quá cao vào giữa sân ngay trước mũi vợt của B. B không bỏ lỡ cơ hội, bước tới đập dập đường bóng.
+        </figcaption>
+    </figure>
+    
+
+        <p>B chỉ hãm nhẹ mặt vợt, đón quả bóng rơi và thả một cú drop-volley mềm mại bay khẽ qua mép lưới rơi gọn ghẽ vào góc hành lang đánh đôi (xem <strong>Hình 51</strong>). Cả hai đối thủ đều chôn chân đứng nhìn trong sự bất lực hoàn toàn.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p051.jpg" alt="Tình huống P.51: Cú Chạm Bóng Tinh Tế Rơi Sát Lưới Vào Hành Lang" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 51. Cú Chạm Bóng Tinh Tế Rơi Sát Lưới Vào Hành Lang</strong> — B hãm lực nhẹ nhàng thả quả bóng rơi ngay sau mép lưới vào góc hành lang đánh đôi, khiến cả C lẫn D đều hoàn toàn bất lực.
+        </figcaption>
+    </figure>
+    
+
+        <h2 class="sub-heading">Các Nguyên Tắc Bất Di Bất Dịch Cho Người Đứng Lưới Tấn Công</h2>
+
+        <ol>
+            <li><strong>Bắt bài (Poach) ở mọi thời điểm thuận lợi:</strong> Hãy nhớ rằng việc bạn thường xuyên di chuyển bắt bài sẽ gieo rắc sự sợ hãi tột độ vào tâm trí người nhận bóng. Ngay cả khi bạn bắt bài hỏng một vài quả, áp lực vô hình bạn tạo ra sẽ ép đối thủ phải cố gượng ép đánh bóng sát dây và tự mắc lỗi đánh hỏng.</li>
+            <li><strong>Khóa chặt khu vực trung tâm:</strong> Hơn 80% các pha bóng giằng co trong đánh đôi đi qua vùng trung tâm sân. Người đứng lưới phải luôn có ý thức 'lấn sân' (crowd the middle) để che chắn khoảng trống giữa hai đồng đội.</li>
+            <li><strong>Luôn ngẩng cao đầu và theo dõi bóng:</strong> Tuyệt đối không bao giờ quay đầu lại nhìn đồng đội giao bóng. Hãy tin tưởng đồng đội và tập trung 100% thị giác vào mặt vợt của người nhận bóng đối diện!</li>
+        </ol>
+    </div>
+</div>
+
+
+<div class="chapter-wrapper page-break" id="chapter-3">
+    <div class="chapter-header">
+        <p class="chapter-number">CHƯƠNG 3</p>
+        <h1 class="chapter-title">Đón Trả Giao Bóng<br/>(Receiving Serve)</h1>
+    </div>
+    
+    <div class="chapter-body">
+        <p>Cú trả giao bóng là phát súng mở màn thiết lập cục diện cho toàn bộ loạt đánh giằng co. Trong đánh đôi, đội giao bóng nắm giữ thế chủ động ban đầu, nhưng chính <strong>Người Đón Trả Giao Bóng (The Receiver — Player C)</strong> mới là người có quyền định đoạt xem lợi thế đó sẽ được duy trì hay bị bẻ gãy ngay từ phát chạm bóng đầu tiên. Một cú trả giao bóng xuất sắc sẽ ngay lập tức tước đoạt thế công của đối thủ và đưa đội nhận bóng vươn lên làm chủ cuộc chơi.</p>
+
+        <h2 class="sub-heading">Bốn Phương Án Trả Giao Bóng Chiến Lược</h2>
+
+        <p>Trước mỗi quả giao bóng của đối thủ, bạn có 4 phương án trả bóng căn bản tùy thuộc vào vị trí và thói quen của người giao bóng:</p>
+        <ol>
+            <li><strong>Cú trả chéo sân tốc độ trung bình vào chân người giao:</strong> Đây là lựa chọn an toàn và hiệu quả nhất trong 80% trường hợp, buộc đối thủ phải volley từ dưới tầm lưới hất lên.</li>
+            <li><strong>Cú đè bóng sâu vào trung lộ:</strong> Khoét sâu vào khoảng trống giữa hai đối thủ, hạn chế tối đa góc đánh phản công của họ.</li>
+            <li><strong>Cú bạt bóng dọc hành lang (Down the alley):</strong> Đòn trừng phạt thích đáng khi người đứng lưới bên giao di chuyển quá đà sang giữa sân để bắt bài.</li>
+            <li><strong>Cú lốp bóng bổng qua đầu người đứng lưới:</strong> Giải pháp hoàn hảo khi đối phương ập sát lưới quá đà, buộc họ phải quay lưng tháo chạy về cuối sân.</li>
+        </ol>
+
+        <h2 class="sub-heading">Chuỗi Chiến Thuật Mẫu 10: Ép Người Giao Volley Dưới Lưới — Phản Công Drive-Volley</h2>
+
+        <p>Trong <strong>Hình 56</strong>, người nhận C thực hiện một cú trả bóng chìm cực kỳ hiểm hóc. Người giao bóng A dù vươn người đón bóng ở phía trước nhưng buộc phải thực hiện quả volley khó khăn từ dưới tầm mép lưới hất lên.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p056.jpg" alt="Tình huống P.56: Ép Người Giao Phải Volley Từ Dưới Tầm Lưới" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 56. Ép Người Giao Phải Volley Từ Dưới Tầm Lưới</strong> — Người nhận bóng C tung cú trả bóng hiểm hóc buộc người giao A phải thực hiện quả volley khó khăn từ dưới tầm mép lưới hất lên.
+        </figcaption>
+    </figure>
+    
+
+        <p>Ngay khi quả bóng bồng bềnh bay qua lưới (xem <strong>Hình 57</strong>), C không hề chần chừ: anh lao nhanh vào sân tung cú <strong>drive-volley thuận tay sấm sét cắm thẳng vào trung lộ</strong>. Cùng lúc đó, người đồng đội đứng lưới D tiến sát lưới khép góc, hoàn tất <em>Tam Giác Ma Thuật</em> tấn công bóp nghẹt đối phương.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p057.jpg" alt="Tình huống P.57: Cú Drive-Volley Thuận Tay Dũng Mãnh Của Người Nhận" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 57. Cú Drive-Volley Thuận Tay Dũng Mãnh Của Người Nhận</strong> — C chớp thời cơ bóng bồng bềnh tung cú drive-volley thuận tay sấm sét xuyên thẳng vào trung lộ. D tiến lên khép góc hoàn thành tam giác tấn công.
+        </figcaption>
+    </figure>
+    
+
+        <h2 class="sub-heading">Chuỗi Chiến Thuật Mẫu 11: Đánh Lừa Hướng Di Chuyển Của Đối Thủ</h2>
+
+        <p>Tại <strong>Hình 58</strong>, người giao A bị ép phải hất quả bóng bổng từ tận vạch giao bóng sang sân đối phương. Nhận thấy A đang nỗ lực dạt sang giữa sân để bao quát trung lộ, C đã có một pha xử lý bậc thầy (xem <strong>Hình 59</strong>):</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p058.jpg" alt="Tình huống P.58: Người Giao Hất Bóng Bổng Từ Vạch Giao Bóng" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 58. Người Giao Hất Bóng Bổng Từ Vạch Giao Bóng</strong> — Bị ép vào thế khó, A buộc phải hất quả bóng bổng từ vạch giao bóng sang sân đối phương trong khi C và D cùng ập vào lưới giăng bẫy.
+        </figcaption>
+    </figure>
+    
+
+        <p>C khéo léo bẻ cổ tay, volley quả bóng ngược hướng vào khoảng trống mênh mông sau lưng A vừa bỏ lại. C và D hoàn toàn làm chủ mặt lưới và ghi điểm winner ngoạn mục.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p059.jpg" alt="Tình huống P.59: Volley Bẻ Hướng Ngược Sau Lưng Đối Thủ" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 59. Volley Bẻ Hướng Ngược Sau Lưng Đối Thủ</strong> — C tinh quái volley bóng bẻ hướng ngược về khoảng trống sau lưng A khi A đang lao sang bao quát trung lộ. C và D hoàn toàn làm chủ lưới.
+        </figcaption>
+    </figure>
+    
+
+        <h2 class="sub-heading">Chuỗi Chiến Thuật Mẫu 12 &amp; 13: Cắt Bóng Tầm Cao và Bắt Bài Quả Smash</h2>
+
+        <p>Trong <strong>Hình 62 &amp; 63</strong>, khi A bị ép phải volley yếu ớt từ giữa sân, C lập tức bước xốc vào trong, đón quả bóng ở tầm cao ngay trước khi nó rơi xuống và bẻ góc sắc lẹm ngay trước mũi vợt của B.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p062.jpg" alt="Tình huống P.62: Tận Dụng Quả Volley Yếu Ớt Từ Giữa Sân" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 62. Tận Dụng Quả Volley Yếu Ớt Từ Giữa Sân</strong> — Người giao A chỉ có thể đẩy quả volley từ giữa sân đi thấp và thiếu lực. C và D lập tức trừng phạt pha bóng non này để giành quyền kiểm soát.
+        </figcaption>
+    </figure>
+    
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p063.jpg" alt="Tình huống P.63: Cắt Quả Volley Tầm Cao Bẻ Góc Trước Mặt B" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 63. Cắt Quả Volley Tầm Cao Bẻ Góc Trước Mặt B</strong> — C lao vào đón quả bóng trên tầm cao và thực hiện cú bẻ góc hiểm hóc ngay trước mặt người đứng lưới B ghi điểm winner.
+        </figcaption>
+    </figure>
+    
+
+        <p>Đặc biệt, trong <strong>Hình 64 &amp; 65</strong>, sau một cú lốp bóng giải tỏa của bên nhận, khi người đứng lưới B chuẩn bị bật nhảy đập quả smash, C đã thể hiện khả năng phán đoán phi thường: <strong>anh băng cắt ngang sân đón đầu đường đập bóng và tung cú volley trái tay bẻ góc dứt điểm không thể cản phá!</strong></p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p064.jpg" alt="Tình huống P.64: Đón Quả Lốp Của Bên Nhận Bằng Cú Đập Overhead" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 64. Đón Quả Lốp Của Bên Nhận Bằng Cú Đập Overhead</strong> — B lùi lại định vị quả lốp bóng trả giao trong khi C và D tràn lên chiếm thế trận tấn công tại lưới. A lùi về hỗ trợ.
+        </figcaption>
+    </figure>
+    
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p065.jpg" alt="Tình huống P.65: Bắt Bài Cắt Đường Smash Bằng Quả Volley Trái Tay Sắc Bén" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 65. Bắt Bài Cắt Đường Smash Bằng Quả Volley Trái Tay Sắc Bén</strong> — C phán đoán chính xác hướng đập smash và băng cắt ngang sân, dùng cú volley trái tay bẻ góc găm bóng thẳng vào khoảng trống ghi điểm ngoạn mục.
+        </figcaption>
+    </figure>
+    
+
+        <h2 class="sub-heading">Chuỗi Chiến Thuật Mẫu 14: Đón Bóng Khi Bóng Đang Lên — Bạt Dọc Dây Sấm Sét</h2>
+
+        <p>Một trong những đòn đánh mãn nhãn nhất của người nhận C được thể hiện trong <strong>Hình 68 &amp; 69</strong>:</p>
+        <p>Thay vì đứng lùi sâu ra sau vạch cuối sân, C chủ động bước chân vào trong sân, <strong>đón bóng sớm ngay khi vừa nảy lên khỏi mặt đất (take the ball on the rise)</strong> (xem <strong>Hình 68</strong>). Việc đón bóng sớm tước đoạt hoàn toàn thời gian chuẩn bị của người đứng lưới B.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p068.jpg" alt="Tình huống P.68: Đón Bóng Khi Bóng Đang Lên — Chuẩn Bị Tấn Công Dọc Dây" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 68. Đón Bóng Khi Bóng Đang Lên — Chuẩn Bị Tấn Công Dọc Dây</strong> — Người chơi A giao bóng đến C. C dũng cảm bước vào trong sân đón bóng sớm khi bóng đang lên (on the rise) trong khi D di chuyển thu hút sự chú ý ở trung lộ.
+        </figcaption>
+    </figure>
+    
+
+        <p>Tại <strong>Hình 69</strong>, dồn toàn bộ trọng lượng cơ thể đang lao tới vào cú vung vợt, C tung một cú bạt bóng dọc đường biên dọc (down the line) với tốc độ tên lửa, xuyên thủng hàng phòng ngự của đối phương trước sự ngỡ ngàng của cả sân đấu!</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p069.jpg" alt="Tình huống P.69: Cú Bạt Bóng Dọc Dây Sấm Sét Của Người Nhận (Down the Line Winner)" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 69. Cú Bạt Bóng Dọc Dây Sấm Sét Của Người Nhận (Down the Line Winner)</strong> — Dồn toàn bộ trọng lượng cơ thể vào cú đánh, C bạt quả bóng sấm sét dọc theo đường biên dọc qua tầm với của người đứng lưới B ghi điểm trực tiếp.
+        </figcaption>
+    </figure>
+    
+    </div>
+</div>
+
+
+<div class="chapter-wrapper page-break" id="chapter-4">
+    <div class="chapter-header">
+        <p class="chapter-number">CHƯƠNG 4</p>
+        <h1 class="chapter-title">Người Đứng Lưới Phòng Thủ<br/>(The Defensive Netman)</h1>
+    </div>
+    
+    <div class="chapter-body">
+        <p>Vị trí của <strong>Người Đứng Lưới Bên Nhận (The Defensive Netman — Player D)</strong> thường là vị trí bị hiểu sai và đánh giá thấp nhất trong quần vợt đánh đôi. Nhiều người chơi lầm tưởng rằng vì đối thủ đang nắm quyền giao bóng nên Player D chỉ có nhiệm vụ 'đứng ngó' hoặc phòng ngự lùi sâu. Đó là một sai lầm chết người! Trên thực tế, Player D là một 'lò xo nén' đầy hiểm họa: ở trạng thái chờ đợi, bạn quan sát và bọc lót; nhưng chỉ cần quả trả bóng của đồng đội C ép đối phương rơi vào thế bị động, bạn sẽ lập tức bung ra để trở thành kẻ săn bàn tàn nhẫn nhất trên sân.</p>
+
+        <h2 class="sub-heading">Vị Trí Xuất Phát và Trách Nhiệm Quan Sát</h2>
+
+        <p>Player D đứng ở khoảng giữa vạch giao bóng và mép lưới, chếch sang phần sân của mình. Trách nhiệm đầu tiên của bạn là <strong>hỗ trợ quan sát vạch giao bóng</strong> để hô 'Out' dứt khoát nếu quả giao bóng của A ra ngoài. Trách nhiệm thứ hai — quan trọng hơn cả — là <strong>đọc phản xạ của người giao bóng A</strong> ngay khoảnh khắc quả bóng trả của C bay qua lưới.</p>
+
+        <h2 class="sub-heading">Chuỗi Chiến Thuật Mẫu 15: Trừng Phạt Quả Half-Volley Non Của Đối Phương</h2>
+
+        <p>Trong <strong>Hình 74</strong>, cú trả giao bóng xuất sắc của C đã ép người giao A phải thực hiện quả half-volley gượng gạo ở tầm thấp, đưa quả bóng bồng bềnh qua giữa lưới.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p074.jpg" alt="Tình huống P.74: Cú Half-Volley Rủi Ro Qua Giữa Lưới" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 74. Cú Half-Volley Rủi Ro Qua Giữa Lưới</strong> — Người giao A bị ép phải thực hiện cú half-volley gượng gạo đưa quả bóng bồng bềnh qua giữa lưới — một 'món mồi ngon' cho hàng lưới đối phương.
+        </figcaption>
+    </figure>
+    
+
+        <p>Không bỏ lỡ một phần mười giây quý giá, tại <strong>Hình 75</strong>, Người chơi D lập tức bước xốc vào trung lộ, vung vợt đè quả volley từ trên cao cắm thẳng vào trung tâm sân ghi điểm winner dứt khoát. Cú đánh này chuyển hóa hoàn toàn thế trận từ phòng ngự sang chiến thắng áp đảo.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p075.jpg" alt="Tình huống P.75: Người Đứng Lưới Bên Nhận D Ập Vào Dứt Điểm Trung Lộ" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 75. Người Đứng Lưới Bên Nhận D Ập Vào Dứt Điểm Trung Lộ</strong> — Người đứng lưới bên nhận D phản xạ nhanh như chớp, bước tới đập quả volley vào trung lộ ghi điểm kết liễu trong khi C bảo vệ góc sân phía sau.
+        </figcaption>
+    </figure>
+    
+
+        <h2 class="sub-heading">Chuỗi Chiến Thuật Mẫu 16: Cắt Quả Volley Từ Xa Bằng Cú Bẻ Góc Chéo Sân Ngắn</h2>
+
+        <p>Khi người giao A bị ép phải volley từ tận vạch giao bóng (xem <strong>Hình 76</strong>), đường bóng của anh ta sẽ bay chậm và có quỹ đạo vòng cung.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p076.jpg" alt="Tình huống P.76: Bị Ép Volley Sâu Quanh Vạch Giao Bóng" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 76. Bị Ép Volley Sâu Quanh Vạch Giao Bóng</strong> — Người giao A buộc phải chạm bóng từ quá xa ngoài vạch giao bóng, không thể tạo được độ cắm cần thiết cho quả bóng.
+        </figcaption>
+    </figure>
+    
+
+        <p>Tại <strong>Hình 77</strong>, Player D băng cắt ngang quỹ đạo bay của quả bóng và thực hiện một <strong>cú volley bẻ góc chéo sân ngắn (short-angled crosscourt volley)</strong> cực kỳ sắc bén. Quả bóng cắm sát mép lưới và trôi ra ngoài biên khiến cả A lẫn B đều chỉ biết chôn chân đứng nhìn.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p077.jpg" alt="Tình huống P.77: Cú Cắt Bóng Volley Chéo Sân Ngắn Cực Hiểm Của D" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 77. Cú Cắt Bóng Volley Chéo Sân Ngắn Cực Hiểm Của D</strong> — D bước xốc tới trước, cắt ngang quỹ đạo bóng và tung cú volley chéo sân ngắn cắm thẳng ra mang cá khiến cả A lẫn B đều chôn chân đứng nhìn.
+        </figcaption>
+    </figure>
+    
+
+        <h2 class="sub-heading">Chuỗi Chiến Thuật Mẫu 17 &amp; 18: Đóng Đinh Vào Khoảng Trống Giữa Sân và Khóa Chặt Hành Lang</h2>
+
+        <p>Trong <strong>Hình 80 &amp; 81</strong>, cú trả bóng của C kéo A dạt ra tít ngoài biên dọc. Nhận thấy khoảng trống chết mênh mông lộ ra ở trung tâm, D lập tức bước vào đè cú volley trái tay uy lực xuyên thẳng vào khoảng trống giữa A và B.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p080.jpg" alt="Tình huống P.80: Cố Gắng Cứu Bóng Ngoài Biên Rộng" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 80. Cố Gắng Cứu Bóng Ngoài Biên Rộng</strong> — Cú trả bóng sắc sảo của C kéo người giao A dạt ra tít ngoài biên dọc. Khoảng trống trung lộ lộ ra mênh mông.
+        </figcaption>
+    </figure>
+    
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p081.jpg" alt="Tình huống P.81: Cú Volley Trái Tay Đóng Đinh Vào Khoảng Trống Giữa Sân" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 81. Cú Volley Trái Tay Đóng Đinh Vào Khoảng Trống Giữa Sân</strong> — D băng vào đè cú volley trái tay uy lực xuyên thẳng vào khoảng trống giữa A và B, minh họa rõ nét bài học: ai để lộ trung lộ sẽ phải trả giá đắt.
+        </figcaption>
+    </figure>
+    
+
+        <p>Trong <strong>Hình 82 &amp; 83</strong>, khi A cố gắng thử thách D bằng cách hất quả bóng bổng hướng về phía hành lang của D, D đã không hề bối rối. Anh bước ngang sang bắt bài gọn gàng và bạt quả bóng dọc theo đường biên dọc ghi điểm thuyết phục.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p082.jpg" alt="Tình huống P.82: Thử Thách Lại Người Đứng Lưới D" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 82. Thử Thách Lại Người Đứng Lưới D</strong> — Người giao A cố gắng cứu bóng bằng cách hất quả bóng bổng lên cao hướng về phía hành lang của D.
+        </figcaption>
+    </figure>
+    
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p083.jpg" alt="Tình huống P.83: D Bắt Bài Bắt Chết Quả Bóng Dọc Biên" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 83. D Bắt Bài Bắt Chết Quả Bóng Dọc Biên</strong> — D bước ngang sang bắt bài gọn gàng và đập quả bóng dọc theo đường biên dọc ghi điểm winner thuyết phục.
+        </figcaption>
+    </figure>
+    
+
+        <h2 class="sub-heading">Chuỗi Chiến Thuật Mẫu 19: Tấn Công Trực Diện Ngay Khi Bóng Vừa Qua Lưới</h2>
+
+        <p>Khi người đứng lưới B của đối phương phải lùi sâu về sau để cứu một quả lốp bóng (xem <strong>Hình 86</strong>), hàng phòng ngự của đối thủ bị kéo giãn tối đa.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p086.jpg" alt="Tình huống P.86: B Lùi Lại Cứu Quả Lốp Trả Giao — C và D Áp Sát Lưới" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 86. B Lùi Lại Cứu Quả Lốp Trả Giao — C và D Áp Sát Lưới</strong> — B lùi sâu về sau cứu quả lốp bóng trả giao trong khi A cũng lùi lại phối hợp. C và D chớp thời cơ tràn lên làm chủ hoàn toàn mặt lưới.
+        </figcaption>
+    </figure>
+    
+
+        <p>Tại <strong>Hình 87</strong>, ngay khoảnh khắc quả bóng vừa vượt qua mép lưới, Player D ập vào như một cơn lốc, tung cú volley sấm sét vào ngay trung tâm sân, ấn định chiến thắng cho một pha đôi công kinh điển.</p>
+
+        
+    <figure class="book-figure">
+        <div class="figure-img-wrapper">
+            <img src="doerner_assets/seq_p087.jpg" alt="Tình huống P.87: D Tấn Công Quả Trả Bóng Ngay Khi Qua Lưới" class="figure-img" />
+        </div>
+        <figcaption class="figure-caption">
+            <strong>Hình 87. D Tấn Công Quả Trả Bóng Ngay Khi Qua Lưới</strong> — Ngay khoảnh khắc quả bóng vừa vượt qua mép lưới, D ập vào tung cú volley sấm sét vào trung tâm sân, dứt điểm trọn vẹn pha đôi công mẫu mực.
+        </figcaption>
+    </figure>
+    
+    </div>
+</div>
+
+
+<div class="chapter-wrapper page-break" id="chapter-5">
+    <div class="chapter-header">
+        <p class="chapter-number">CHƯƠNG 5</p>
+        <h1 class="chapter-title">Đánh Đôi Nam Nữ<br/>(Mixed Doubles)</h1>
+    </div>
+    
+    <div class="chapter-body">
+        <p>Đánh đôi nam nữ (Mixed Doubles) là một trong những nội dung thi đấu thú vị, phức tạp và đòi hỏi tư duy chiến thuật tinh vi nhất trong thế giới quần vợt. Đây không đơn thuần là một trận đấu quần vợt thông thường, mà là một ván cờ tâm lý và hình học đỉnh cao, nơi sự chênh lệch về thể lực, tốc độ và tầm với giữa nam và nữ buộc các cặp đôi phải áp dụng những nguyên lý chiến thuật hoàn toàn đặc thù để giành chiến thắng.</p>
+
+        <h2 class="sub-heading">Phân Chia Sân Đấu: Tại Sao Nam Luôn Đứng Ô Trái (Ad Court)?</h2>
+
+        <p>Trong hơn 95% các cặp đôi nam nữ chuyên nghiệp, <strong>đấu thủ nam luôn đảm nhận ô bên trái (Odd court / Ad court), trong khi đấu thủ nữ đứng ở ô bên phải (Even court / Deuce court)</strong>. Quyết định chiến lược này xuất phát từ hai nguyên nhân mang tính sống còn:</p>
+        <ol>
+            <li><strong>Bao quát trung lộ và quả đập Smash:</strong> Khi đứng ở ô bên trái, tay vợt nam thuận tay phải sẽ có cú thuận tay (forehand) hướng vào trung tâm sân. Vị trí này cho phép anh ta bao quát toàn bộ khu vực giữa sân để tung ra những quả volley và đập smash trên đầu uy lực nhất.</li>
+            <li><strong>Gánh vác các điểm số quyết định:</strong> Tất cả các điểm số sinh tử — Game Point, Break Point, ván đấu quyết định — đều diễn ra tại ô bên trái. Đấu thủ nam với lợi thế thể lực và tốc độ giao bóng/trả bóng sẽ chịu trách nhiệm giải tỏa áp lực tâm lý cho cả đội.</li>
+        </ol>
+
+        <h2 class="sub-heading">Triết Lý Chiến Thuật Thực Chiến: 'Tiêu Điểm Duy Nhất'</h2>
+
+        <p>Dưới góc nhìn của Cynthia Doerner (tay vợt nữ đẳng cấp thế giới) và Peter Doerner, chiến thuật đánh đôi nam nữ đỉnh cao được tóm gọn qua một nguyên tắc thực tế đến lạnh lùng:</p>
+        
+        <div class="quote-box">
+            <p><em>'Cả hai chúng tôi khi bước vào sân đều có chung một tiêu điểm duy nhất: <strong>ĐÁNH VÀO TAY VỢT NỮ ĐỐI PHƯƠNG!</strong> Điều này hoàn toàn không phải vì ác ý hay thiếu tinh thần thể thao, mà là hình học chiến thuật thuần túy. Tay vợt nữ đối phương biết rõ cô ấy là mục tiêu phòng thủ, và nhiệm vụ của chúng tôi là khai thác triệt để vị trí đó.'</em></p>
+        </div>
+
+        <p><strong>1. Trừng phạt quả giao bóng hai của nam:</strong> Nếu bạn là đấu thủ nữ hoặc nam đón quả giao bóng hai thiếu lực của tay vợt nam đối phương, đừng đánh bóng trả lại cho anh ta! Hãy bắn một cú bạt bóng sấm sét nhắm thẳng vào tay vợt nữ đang đứng trên lưới. Điều này tước đoạt toàn bộ thời gian phản xạ của cô ấy và mang về điểm số trực tiếp.</p>
+
+        <p><strong>2. Tuyệt đối không lốp bóng qua đầu đấu thủ nam:</strong> Một quy tắc vàng bất di bất dịch: <em>Không bao giờ lốp bóng qua đầu đấu thủ nam nếu bạn còn sự lựa chọn khác!</em> Với tầm với cao và sức bật mạnh mẽ, tay vợt nam đối phương sẽ dễ dàng bật nhảy và tung cú smash kết liễu. Ngược lại, khi tay vợt nữ đối phương áp sát lưới quá đà, một cú lốp bóng điểm rơi qua đầu cô ấy sẽ đẩy đội bạn vào thế phòng thủ bị động hoàn toàn.</p>
+
+        <p><strong>3. Đấu thủ nam phải bắt bài cướp lưới quyết liệt (Poaching):</strong> Trong đánh đôi nam nữ, người nam không được phép 'lười biếng' đứng chôn chân bên phần sân của mình. Anh ta phải liên tục di chuyển rình rập, sẵn sàng băng cắt ngang sân để đè bẹp mọi quả bóng bồng bềnh của đối phương, che chở cho người đồng đội nữ và làm chủ hoàn toàn mặt lưới.</p>
+
+        <h2 class="sub-heading">Sự Tôn Trọng và Động Viên Tinh Thần</h2>
+
+        <p>Điều tối kỵ nhất làm tan vỡ một cặp đôi nam nữ là sự nóng giận, chỉ trích hoặc coi thường đồng đội. Người nam tuyệt đối không được tỏ thái độ thất vọng khi người nữ đánh hỏng, và người nữ cần hiểu rằng sự xông xáo cướp bóng của người nam là vì mục tiêu chung của đội. Một sự thấu cảm, khích lệ chân thành sau mỗi pha bóng hỏng chính là chất keo dính kết tạo nên một đôi nam nữ bất khả chiến bại.</p>
+    </div>
+</div>
+
+
+<div class="chapter-wrapper page-break" id="chapter-6">
+    <div class="chapter-header">
+        <p class="chapter-number">CHƯƠNG 6</p>
+        <h1 class="chapter-title">Đấu Thủ Thuận Tay Trái<br/>(Lefties)</h1>
+    </div>
+    <div class="chapter-body">
+        <p>Không có điều gì khiến một người nhận bóng bối rối và hoang mang bằng việc phải đối đầu với một cú giao bóng nhanh, xoáy của một tay vợt thuận tay trái (Lefty). Quỹ đạo bay uốn cong ngược chiều hoàn toàn so với thông thường: bóng lượn vòng từ trái sang phải và nảy giật bạt ra ngoài hàng rào bên ô chéo cánh, kéo người nhận trôi dạt ra xa khỏi sân đấu.</p>
+        
+        <h2 class="sub-heading">Lợi Thế Khi Đánh Cùng Một Tay Vợt Thuận Tay Trái</h2>
+        <p>Khi bạn kết hợp với một đồng đội thuận tay trái (một người thuận tay phải, một người thuận tay trái), đội của bạn sẽ sở hữu một vũ khí chiến lược đáng sợ nhất trong quần vợt: <strong>Cấu hình Hai Thuận Tay Ở Giữa Sân (Two Forehands in the Middle)</strong>.</p>
+        <p>Nếu tay vợt thuận tay phải đứng ở ô bên trái (Ad court) và tay vợt thuận tay trái đứng ở ô bên phải (Deuce court), cả hai cú thuận tay uy lực nhất của hai bạn sẽ cùng hướng vào trung tâm sân. Khoảng trống chết giữa sân — vốn là tử huyệt của hầu hết các cặp đôi — nay được khóa chặt bởi hai khẩu đại bác thuận tay! Bất kỳ đường bóng nào của đối thủ lọt vào trung lộ đều sẽ bị đè bẹp ngay lập tức.</p>
+
+        <h2 class="sub-heading">Chiến Thuật Hóa Giải Khi Đối Đầu Với Tay Vợt Thuận Tay Trái</h2>
+        <p>Khi đối đầu với một 'kèo trái', bạn phải ngay lập tức tái lập trình lại thói quen thị giác và phản xạ của mình:</p>
+        <ul>
+            <li><strong>Điều chỉnh vị trí đón bóng:</strong> Bước chếch sang bên trái nhiều hơn ở ô Deuce để đề phòng quả giao bóng slice xé mang cá của họ.</li>
+            <li><strong>Tấn công vào cú trái tay của họ:</strong> Cú trái tay của đa số tay vợt thuận tay trái thường dễ bị khai thác hơn dưới áp lực bóng sâu và bóng cao.</li>
+            <li><strong>Cảnh giác với cú smash:</strong> Góc đập bóng trên đầu của người thuận tay trái có hướng bay ngược chiều, đòi hỏi bạn phải di chuyển đón bóng sớm hơn thường lệ.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="chapter-wrapper page-break" id="chapter-7">
+    <div class="chapter-header">
+        <p class="chapter-number">CHƯƠNG 7</p>
+        <h1 class="chapter-title">Quần Vợt Đánh Đôi Cho Người Cao Tuổi<br/>(Seniors)</h1>
+    </div>
+    <div class="chapter-body">
+        <p>Nếu bạn là một tay vợt lớn tuổi đang muốn bắt đầu chơi quần vợt hoặc quay trở lại sân đấu sau nhiều năm bận rộn, đánh đôi chính là món quà tuyệt vời nhất dành cho bạn. Khác với đánh đơn đòi hỏi thể lực cuồn cuộn và những pha chạy nước rút bào mòn thể xác, đánh đôi là một môn thể thao của <strong>trí tuệ, sự khôn ngoan và nghệ thuật tiết kiệm năng lượng</strong>.</p>
+
+        <h2 class="sub-heading">Bí Quyết Kéo Dài Tuổi Thọ Quần Vợt Của Các Bậc Cao Niên</h2>
+        <ol>
+            <li><strong>Dùng sự phán đoán thay cho đôi chân:</strong> Người chơi cao tuổi không cần phải chạy thục mạng khắp sân. Hãy học cách đọc hướng vung vợt của đối thủ để di chuyển sớm trước một nhịp. Một bước chân đúng hướng từ trước có giá trị hơn năm bước chạy nước rút muộn màng.</li>
+            <li><strong>Khai thác triệt để cú lốp bóng (Lob):</strong> Cú lốp bóng là người bạn thân thiết nhất của người cao tuổi. Khi bị đối thủ trẻ tuổi dồn ép tại lưới, một cú lốp bổng sâu về góc sân cuối sẽ giải tỏa toàn bộ áp lực và đảo ngược tình thế.</li>
+            <li><strong>Ưu tiên độ sâu và điểm rơi hơn là sức mạnh:</strong> Đừng cố đập bóng búa bổ. Những cú đẩy bóng mềm mại vào góc chết, những quả volley gài sát mép lưới và cú giao bóng xoáy có kiểm soát sẽ mang lại hiệu quả ăn điểm cao hơn nhiều mà không gây quá tải cho khớp vai và cột sống.</li>
+        </ol>
+    </div>
+</div>
+
+<div class="chapter-wrapper page-break" id="chapter-8">
+    <div class="chapter-header">
+        <p class="chapter-number">CHƯƠNG 8</p>
+        <h1 class="chapter-title">Quần Vợt Đánh Đôi Cho Lứa Tuổi Trẻ<br/>(Juniors)</h1>
+    </div>
+    <div class="chapter-body">
+        <p>Rất nhiều huấn luyện viên và phụ huynh thường mắc sai lầm nghiêm trọng khi chỉ cho các tay vợt trẻ tập trung vào đánh đơn mà xem nhẹ đánh đôi. Trên thực tế, đánh đôi là trường học tốt nhất để tôi luyện một tay vợt toàn diện:</p>
+        <ul>
+            <li><strong>Rèn luyện phản xạ lưới thần tốc:</strong> Không có bài tập đánh đơn nào có thể mang lại tốc độ phản xạ và cảm giác chạm bóng tại lưới tinh tế bằng những loạt đôi công nghẹt thở trong đánh đôi.</li>
+            <li><strong>Học cách chịu trách nhiệm và làm việc nhóm:</strong> Đánh đôi dạy cho các em tinh thần đồng đội, cách vượt qua cái tôi cá nhân, cách động viên bạn bè khi gặp khó khăn và xây dựng bản lĩnh tâm lý vững vàng trước áp lực.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="chapter-wrapper page-break" id="chapter-9">
+    <div class="chapter-header">
+        <p class="chapter-number">CHƯƠNG 9</p>
+        <h1 class="chapter-title">Các Yếu Tố Tự Nhiên:<br/>Gió, Nắng và Mặt Sân</h1>
+    </div>
+    <div class="chapter-body">
+        <p>Một trận đấu đánh đôi ngoài trời không chỉ diễn ra giữa bốn tay vợt, mà còn là cuộc chiến thích nghi với các điều kiện tự nhiên xung quanh: nắng, gió và đặc tính mặt sân.</p>
+
+        <h2 class="sub-heading">1. Thi Đấu Dưới Điều Kiện Có Gió</h2>
+        <p><strong>Khi chơi ngược gió (Upwind):</strong> Gió thổi ngược vào mặt bạn sẽ hãm tốc độ của quả bóng. Bạn có thể vung vợt mạnh hơn, đánh phẳng hơn mà không sợ bóng bay ra ngoài. Đây là thời cơ hoàn hảo để chủ động tràn lên chiếm lưới, vì quả bóng của đối phương khi xuôi gió sẽ có xu hướng bay bổng và dễ ra ngoài biên.</p>
+        <p><strong>Khi chơi xuôi gió (Downwind):</strong> Gió thổi từ sau lưng bạn sẽ đẩy quả bóng đi xa hơn. Hãy tăng thêm độ xoáy lên (topspin) để ép quả bóng chúi xuống sân, cẩn trọng tối đa với các cú lốp bóng và chủ động lùi sâu hơn một bước khi đón đỡ quả giao bóng của đối thủ.</p>
+
+        <h2 class="sub-heading">2. Tận Dụng Ánh Nắng Mặt Trời</h2>
+        <p>Nếu đối thủ phải đối diện trực tiếp với ánh nắng chói chang, vũ khí hủy diệt số một của bạn chính là <strong>những cú lốp bóng bổng hướng thẳng vào mặt trời!</strong> Khi đối thủ giương vợt đập bóng trên đầu, ánh nắng sẽ làm lóa mắt họ hoàn toàn, dẫn đến những cú đánh hụt bóng hoặc đập bóng rúc lưới đầy cay đắng.</p>
+
+        <h2 class="sub-heading">3. Thích Nghi Với Từng Mặt Sân</h2>
+        <p>Mặt sân cứng (hard court) mang lại độ nảy chuẩn xác và tốc độ nhanh. Mặt sân đất nện (clay court) đòi hỏi sự kiên nhẫn, những cú trượt dài và những cú bỏ nhỏ tinh tế. Trong khi mặt sân cỏ (grass) hoặc thảm trong nhà đòi hỏi lối chơi giao bóng lên lưới (serve-and-volley) chớp nhoáng vì bóng trượt rất thấp.</p>
+    </div>
+</div>
+
+<div class="chapter-wrapper page-break" id="chapter-10">
+    <div class="chapter-header">
+        <p class="chapter-number">CHƯƠNG 10</p>
+        <h1 class="chapter-title">Các Bài Tập Chiến Thuật Thực Chiến<br/>(Drills)</h1>
+    </div>
+    <div class="chapter-body">
+        <p>Để biến những lý thuyết chiến thuật thành phản xạ tự nhiên của cơ bắp, bạn và đồng đội cần thường xuyên thực hành 3 bài tập drill chuyên biệt sau:</p>
+
+        <h2 class="sub-heading">Bài Tập 1: Hai Trên Lưới vs Hai Dưới Đáy (2 Up vs 2 Back)</h2>
+        <p>Cặp đôi A-B đứng sát lưới, cặp đôi C-D đứng sau vạch cuối sân. C-D liên tục tung ra những cú đánh bạt bóng sâu và các cú lốp bóng nhằm vượt qua hàng lưới, trong khi A-B phải phối hợp di chuyển theo <em>Tam Giác Ma Thuật</em> để đè bẹp quả bóng. Bài tập này rèn luyện khả năng duy trì thế công và phản xạ tại lưới.</p>
+
+        <h2 class="sub-heading">Bài Tập 2: Bắt Bài Cướp Lưới Liên Tục (Poaching Drill)</h2>
+        <p>Người giao bóng liên tục giao bóng vào ô sân, người nhận bóng chỉ được phép trả bóng chéo sân. Người đứng lưới phải rèn luyện thói quen di chuyển bắt bài trong ít nhất 7 trên 10 quả bóng. Bài tập giúp xóa tan sự do dự và xây dựng sự tự tin tuyệt đối khi băng cắt ngang sân.</p>
+
+        <h2 class="sub-heading">Bài Tập 3: Chuyển Đổi Phòng Thủ — Tấn Công Qua Cú Lốp (Lob-Smash Transition)</h2>
+        <p>Một người chơi liên tục lốp bóng sâu qua đầu hai tay lưới. Cả hai phải đồng bộ lùi lại thực hiện cú smash đập bóng sau khi bóng nảy, sau đó lập tức tràn lên tái chiếm lĩnh mép lưới.</p>
+    </div>
+</div>
+
+<div class="chapter-wrapper page-break" id="chapter-11">
+    <div class="chapter-header">
+        <p class="chapter-number">CHƯƠNG 11</p>
+        <h1 class="chapter-title">Rèn Luyện Thể Lực Chuyên Biệt Cho Đánh Đôi<br/>(Exercises)</h1>
+    </div>
+    <div class="chapter-body">
+        <p>Mặc dù đánh đôi ít đòi hỏi sức bền chạy đường dài như đánh đơn, nhưng nó đòi hỏi <strong>sức mạnh bùng nổ của cổ chân, sự linh hoạt của khớp vai và sức mạnh cốt lõi của vùng bụng (core strength)</strong>:</p>
+        <ul>
+            <li><strong>Bài tập cơ bắp chân và gân Achilles:</strong> Nhảy dây tốc độ cao và các bài tập nhảy bật tách chân (split-step jumps) giúp bạn có những pha bứt tốc đầu tiên sắc bén tại lưới.</li>
+            <li><strong>Độ dẻo dai của khớp vai và cơ xoay (Rotator Cuff):</strong> Tập luyện với dây kháng lực cao su để bảo vệ khớp vai khỏi chấn thương sau hàng trăm cú đập smash overhead và giao bóng mỗi tuần.</li>
+            <li><strong>Sức mạnh vùng bụng và lưng dưới:</strong> Các bài tập plank và gập bụng xoay người (Russian twists) giúp giữ vững trục cơ thể trên không trung khi bạn phải rướn người thực hiện những cú volley ở tư thế khó.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="chapter-wrapper page-break" id="chapter-12">
+    <div class="chapter-header">
+        <p class="chapter-number">CHƯƠNG 12</p>
+        <h1 class="chapter-title">12 Bí Quyết Chiến Thuật Đỉnh Cao<br/>(Tips on Tactics)</h1>
+    </div>
+    <div class="chapter-body">
+        <p>Để đúc kết lại toàn bộ cẩm nang chiến thuật của cuốn sách, hãy luôn khắc sâu trong tâm trí <strong>12 nguyên tắc vàng</strong> của nghệ thuật đánh đôi đỉnh cao:</p>
+        <ol>
+            <li><strong>Đưa quả giao bóng một vào sân:</strong> Giảm 25% tốc độ, tăng độ xoáy và nhắm vào điểm yếu trái tay của đối thủ.</li>
+            <li><strong>Lao lên lưới ngay sau quả giao bóng:</strong> Đừng bao giờ đứng kẹt lại ở vạch cuối sân tạo ra sai lầm chia đôi đội hình (team-splitting).</li>
+            <li><strong>Thiết lập Tam Giác Ma Thuật:</strong> Luôn di chuyển đồng bộ cùng đồng đội, duy trì cấu trúc hai điểm đáy tam giác với quả bóng là đỉnh thứ ba.</li>
+            <li><strong>Cắt ngắn đường bóng bay:</strong> Đón bóng sớm khi bóng đang nảy lên (on the rise) để tước đoạt thời gian phản xạ của đối thủ.</li>
+            <li><strong>Trả giao bóng thấp vào chân người giao:</strong> Ép đối thủ phải volley từ dưới tầm mép lưới hất lên.</li>
+            <li><strong>Bắt bài cướp lưới (Poach) dũng cảm:</strong> Sự xông xáo của người đứng lưới là nguồn áp lực tâm lý khủng khiếp nhất trong đánh đôi.</li>
+            <li><strong>Đánh bóng vào khoảng trống giữa hai người:</strong> Khi do dự, hãy luôn nhớ quy tắc bất hủ: <em>ĐÁNH VÀO GIỮA SÂN!</em></li>
+            <li><strong>Bảo vệ hành lang đánh đôi:</strong> Đừng để lộ khoảng trống dọc dây khi người đứng lưới đối phương đã bắt đầu di chuyển bắt bài.</li>
+            <li><strong>Sử dụng cú lốp bóng thông minh:</strong> Lốp bóng sâu qua đầu người đứng lưới để giải tỏa áp lực và đảo ngược cục diện.</li>
+            <li><strong>Không bao giờ ngoái đầu nhìn đồng đội:</strong> Giữ tầm mắt 180 độ phía trước mặt bằng cách kích hoạt tầm nhìn ngoại vi.</li>
+            <li><strong>Khẩu lệnh dứt khoát:</strong> 'CỦA TÔI!', 'CỦA BẠN!', 'ĐỔI BÊN!' để loại bỏ mọi sự chần chừ tai hại.</li>
+            <li><strong>Tuyệt đối khích lệ và đồng hành cùng đồng đội:</strong> Một cái chạm vợt động viên sau pha bóng hỏng có giá trị gấp trăm lần một ánh mắt thở dài trách móc.</li>
+        </ol>
+    </div>
+</div>
+
+
+<div class="chapter-wrapper page-break" id="index-section">
+    <div class="chapter-header">
+        <p class="chapter-number">PHỤ LỤC</p>
+        <h1 class="chapter-title">Bảng Tra Cứu Thuật Ngữ &amp; Chỉ Mục</h1>
+    </div>
+    
+    <div class="chapter-body">
+        <p class="index-intro">Hệ thống thuật ngữ chuyên môn song ngữ Anh – Việt và chỉ mục đối chiếu giúp bạn đọc nhanh chóng tra cứu các khái niệm, kỹ thuật đánh bóng và các tình huống chiến thuật xuất hiện trong sách.</p>
+        
+        <div class="index-grid">
+            <div class="index-column">
+                <h3 class="index-letter">A — C</h3>
+                <ul class="index-list">
+                    <li><strong>Alley (Hành lang đánh đôi):</strong> Dải sân rộng 4,5 feet ở mỗi bên biên dọc — <em>Chương 1 (Hình 27, 35)</em></li>
+                    <li><strong>Anticipation (Sự phán đoán trước):</strong> Đọc hướng vung vợt của đối thủ để di chuyển sớm — <em>Chương 2, 7</em></li>
+                    <li><strong>Approach Volley (Quả volley tiếp cận):</strong> Quả volley đầu tiên sau giao bóng nhằm ép bóng thấp sang chân đối phương — <em>Chương 1 (Hình 20, 24)</em></li>
+                    <li><strong>Australian Formation (Đội hình kiểu Úc):</strong> Người đứng lưới bên giao đứng cùng phía với người giao — <em>Chương 1, 12</em></li>
+                    <li><strong>Backhand (Cú trái tay):</strong> Điểm yếu phổ biến cần tập trung giao bóng và trả bóng vào — <em>Chương 1, 3 (Hình 18, 33)</em></li>
+                    <li><strong>Chip Return (Cú đè bóng cắt):</strong> Kỹ thuật trả giao bóng chìm thấp bằng động tác compact underspin — <em>Chương 3</em></li>
+                    <li><strong>Crosscourt (Chéo sân):</strong> Đường bóng an toàn nhất bay qua phần lưới thấp nhất — <em>Chương 1, 3 (Hình 20, 25)</em></li>
+                </ul>
+
+                <h3 class="index-letter">D — L</h3>
+                <ul class="index-list">
+                    <li><strong>Defensive Netman (Người đứng lưới phòng thủ — Player D):</strong> Người đồng đội của người nhận bóng án ngữ trên lưới — <em>Chương 4 (Hình 74–87)</em></li>
+                    <li><strong>Down the Alley (Bắn dọc hành lang):</strong> Cú bạt bóng dọc biên trừng phạt người đứng lưới đối phương — <em>Chương 1, 3 (Hình 27, 69)</em></li>
+                    <li><strong>Drive-Volley (Cú drive-volley):</strong> Quả volley vung đà mạnh kết liễu bóng bồng bềnh — <em>Chương 3 (Hình 57)</em></li>
+                    <li><strong>Drop-Volley (Cú bỏ nhỏ volley):</strong> Cú hãm lực thả bóng khẽ khàng rơi sát mép lưới — <em>Chương 1, 2 (Hình 35, 51)</em></li>
+                    <li><strong>Half-Volley (Cú half-volley):</strong> Cú chạm bóng gượng gạo ngay khi bóng vừa chạm đất nảy lên — <em>Chương 4 (Hình 74)</em></li>
+                    <li><strong>Lefties (Đấu thủ thuận tay trái):</strong> Lợi thế đặc biệt với cấu hình hai thuận tay ở giữa sân — <em>Chương 6</em></li>
+                    <li><strong>Lob (Cú lốp bóng):</strong> Đường bóng bổng qua đầu đối thủ giải tỏa áp lực và chiếm lưới — <em>Chương 1, 2 (Hình 28, 46)</em></li>
+                </ul>
+            </div>
+
+            <div class="index-column">
+                <h3 class="index-letter">M — S</h3>
+                <ul class="index-list">
+                    <li><strong>Magic Triangle (Tam Giác Ma Thuật):</strong> Nguyên lý hình học cốt lõi với hai người chơi là đáy tam giác, bóng là đỉnh — <em>Lời Giới Thiệu, Chương 1, 2, 3, 4</em></li>
+                    <li><strong>Mixed Doubles (Đánh đôi nam nữ):</strong> Nghệ thuật chiến thuật đặc thù với tiêu điểm nhắm vào tay vợt nữ — <em>Chương 5</em></li>
+                    <li><strong>Offensive Netman (Người đứng lưới tấn công — Player B):</strong> Người đồng đội của người giao bóng án ngữ trên lưới — <em>Chương 2 (Hình 42–51)</em></li>
+                    <li><strong>Overhead / Smash (Cú đập trên đầu):</strong> Đòn trừng phạt uy lực dứt điểm các quả lốp bóng non — <em>Chương 1, 2 (Hình 29, 47)</em></li>
+                    <li><strong>Poaching (Bắt bài cướp lưới):</strong> Băng cắt ngang sân đè bẹp quả trả bóng của đối thủ — <em>Chương 2, 4 (Hình 42, 75)</em></li>
+                    <li><strong>Receiver (Người nhận bóng — Player C):</strong> Tay vợt đón trả giao bóng thiết lập thế trận — <em>Chương 3 (Hình 56–69)</em></li>
+                    <li><strong>Server (Người giao bóng — Player A):</strong> Tay vợt khởi xướng đòn tấn công trong đánh đôi — <em>Chương 1 (Hình 18–35)</em></li>
+                    <li><strong>Split-Step (Bước dừng tách chân):</strong> Bước nhảy nhẹ hạ thấp trọng tâm giữ thăng bằng trước khi chạm bóng — <em>Chương 1, 11</em></li>
+                </ul>
+
+                <h3 class="index-letter">T — W</h3>
+                <ul class="index-list">
+                    <li><strong>Take on the Rise (Đón bóng khi đang lên):</strong> Bước vào sân đón bóng sớm rút ngắn thời gian bay của bóng — <em>Chương 3 (Hình 68)</em></li>
+                    <li><strong>Team-Splitting (Chia đôi đội hình):</strong> Sai lầm chí mạng một người đứng lưới, một người ở đáy sân — <em>Chương 1, 12</em></li>
+                    <li><strong>Up the Middle (Xé thẳng vào trung lộ):</strong> Quy tắc vàng dứt điểm bóng vào khoảng trống giữa hai đối thủ — <em>Chương 1, 2, 4 (Hình 21, 81)</em></li>
+                    <li><strong>Wind Strategy (Chiến thuật theo gió):</strong> Điều chỉnh lực và độ xoáy khi chơi xuôi gió hoặc ngược gió — <em>Chương 9</em></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
