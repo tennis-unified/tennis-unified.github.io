@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="vi" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Thư viện sách tennis kinh điển tiếng Việt - Đọc trực tuyến và tải trọn bộ PDF bản dịch xuất bản chuẩn mực quốc tế.">
+  <meta name="author" content="Tennis Unified">
+  <link rel="icon" href="/assets/images/favicon.png">
+  <title>Thư Viện Sách Quần Vợt Tiếng Việt - Tennis Unified</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300..800;1,7..72,300..800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script src="/assets/javascripts/darkmode.js" defer></script>
+
+  <style>
+    :root {
+      --primary: #0f3d2e;
+      --primary-light: #1b5e20;
+      --secondary: #b8860b;
+      --secondary-light: #d4af37;
+      --dark: #0f172a;
+      --gray-light: #f8fafc;
+      --border-color: #e2e8f0;
+      --card-bg: #ffffff;
+      --font-body: 'Literata', Georgia, serif;
+      --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--dark);
+      background-color: #f1f5f9;
+      line-height: 1.65;
+    }
+
+    .books-hero {
+      background: linear-gradient(135deg, #0f3d2e 0%, #1b5e20 50%, #064e3b 100%);
+      color: #ffffff;
+      padding: 50px 24px 40px 24px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+
+    .books-hero-badge {
+      display: inline-block;
+      background: var(--secondary);
+      color: #ffffff;
+      font-family: var(--font-heading);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 20px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .books-hero h1 {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+    }
+
+    .books-hero p {
+      font-size: 1.1rem;
+      color: #e2e8f0;
+      max-width: 780px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .books-container {
+      max-width: 1140px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section-divider-title {
+      font-family: var(--font-heading);
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 40px 0 20px 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 2px solid #cbd5e1;
+      padding-bottom: 10px;
+    }
+
+    .section-divider-title span.badge {
+      background: var(--primary);
+      color: #ffffff;
+      font-size: 0.75rem;
+      padding: 3px 9px;
+      border-radius: 4px;
+    }
+
+    .book-card-horizontal {
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      align-items: flex-start;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .book-card-horizontal:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    .book-cover-col {
+      flex: 0 0 150px;
+      max-width: 160px;
+    }
+
+    .book-cover-col img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+      border: 1px solid rgba(0,0,0,0.08);
+      display: block;
+    }
+
+    .book-info-col {
+      flex: 1;
+    }
+
+    .book-meta-tag {
+      font-family: var(--font-heading);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary);
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .book-card-title {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.3;
+      margin: 0 0 8px 0;
+    }
+
+    .book-card-authors {
+      font-size: 0.92rem;
+      color: #475569;
+      margin-bottom: 12px;
+    }
+
+    .book-card-desc {
+      font-size: 0.93rem;
+      color: #334155;
+      line-height: 1.6;
+      margin-bottom: 18px;
+      text-align: justify;
+    }
+
+    .book-actions-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .btn-reader {
+      background: var(--primary);
+      color: #ffffff !important;
+      text-decoration: none;
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 2px 6px rgba(15,61,46,0.3);
+      transition: background 0.2s;
+    }
+
+    .btn-reader:hover {
+      background: var(--primary-light);
+    }
+
+    .btn-pdf-vi {
+      background: var(--secondary);
+      color: #ffffff !important;
+      text-decoration: none;
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 2px 6px rgba(184,134,11,0.3);
+      transition: background 0.2s;
+    }
+
+    .btn-pdf-vi:hover {
+      background: #9a7009;
+    }
+
+    .btn-pdf-en {
+      background: #475569;
+      color: #ffffff !important;
+      text-decoration: none;
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.2s;
+    }
+
+    .btn-pdf-en:hover {
+      background: #334155;
+    }
+
+    @media (max-width: 768px) {
+      .book-card-horizontal {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .book-cover-col {
+        max-width: 140px;
+      }
+      .book-card-desc {
+        text-align: left;
+      }
+      .book-actions-row {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+
+<!-- FLATTENED-TOP-NAV-START -->
+<div class="tu-topnav">
+  <a href="/vi/" class="tu-nav-item" title="Home"><span class="tu-nav-emoji">🏠</span><span class="tu-nav-text">Home</span></a>
+  <a href="/vi/fundamentals/" class="tu-nav-item" title="Fundamentals"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Fundamentals</span></a>
+  <a href="/vi/doubles/" class="tu-nav-item" title="Đánh Đôi"><span class="tu-nav-emoji">👥</span><span class="tu-nav-text">Đánh Đôi</span></a>
+  <a href="/vi/stroke-analysis/" class="tu-nav-item" title="Stroke Analysis"><span class="tu-nav-emoji">🧠</span><span class="tu-nav-text">Stroke Analysis</span></a>
+  <a href="/vi/coach-video-library/" class="tu-nav-item" title="Coach Library"><span class="tu-nav-emoji">🎓</span><span class="tu-nav-text">Coach Library</span></a>
+  <a href="/vi/tennis-video-library/" class="tu-nav-item" title="Video Library"><span class="tu-nav-emoji">🎬</span><span class="tu-nav-text">Video Library</span></a>
+  <a href="/vi/tennis-technical-reference/" class="tu-nav-item" title="Technical Reference"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Technical Reference</span></a>
+  <a href="/tnkb/vi/" class="tu-nav-item" title="Kho Tri Thức"><span class="tu-nav-emoji">💡</span><span class="tu-nav-text">Kho Tri Thức</span></a>
+  <a href="/vi/tennis-evolution/" class="tu-nav-item" title="Tennis Evolution"><span class="tu-nav-emoji">⚡</span><span class="tu-nav-text">Tennis Evolution</span></a>
+  <a href="/vi/blog/" class="tu-nav-item" title="Blog"><span class="tu-nav-emoji">📝</span><span class="tu-nav-text">Blog</span></a>
+  <a href="/vi/book/" class="tu-nav-item" title="Master Book"><span class="tu-nav-emoji">📕</span><span class="tu-nav-text">Master Book</span></a>
+  <a href="/vi/books/" class="tu-nav-item" title="Tủ Sách Tennis"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Tủ Sách Tennis</span></a>
+  <a href="/books/" class="tu-nav-item tu-nav-lang" data-lang-toggle title="Switch to English"><span class="tu-nav-emoji">🌐</span><span class="tu-nav-text">English</span></a>
+  <button class="tu-nav-item tu-nav-darkmode" title="Dark Mode" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button>
+</div>
+<!-- FLATTENED-TOP-NAV-END -->
+
+<header class="books-hero">
+  <div class="books-hero-badge">DI SẢN CHIẾN THUẬT QUẦN VỢT THẾ GIỚI</div>
+  <h1>Thư Viện Sách Quần Vợt Tiếng Việt</h1>
+  <p>Tuyển tập các tác phẩm kinh điển về kỹ thuật, chiến thuật Đánh Đơn và Đánh Đôi được chuyển ngữ sang tiếng Việt với tiêu chuẩn xuất bản quốc tế. Hỗ trợ đọc tương tác trực tuyến và tải về trọn bộ PDF vector chất lượng cao.</p>
+</header>
+
+<main class="books-container">
+
+  <!-- SECTION 1: CHIẾN THUẬT ĐỒNG NHẤT ĐƠN & ĐÔI -->
+  <h2 class="section-divider-title">
+    <span>🏆 Chiến Thuật Toàn Diện: Đánh Đơn &amp; Đánh Đôi</span>
+    <span class="badge">Đỉnh Cao</span>
+  </h2>
+
+  <!-- BOOK: TENNIS TACTICS (TALBERT & OLD) -->
+  <article class="book-card-horizontal">
+    <div class="book-cover-col">
+      <a href="../doubles/tennis_tactics_vi.html">
+        <img src="../doubles/tactics_assets/cover.jpg" alt="Bìa sách Tennis Tactics: Singles and Doubles">
+      </a>
+    </div>
+    <div class="book-info-col">
+      <span class="book-meta-tag">Tuyệt Phẩm Chiến Thuật Kinh Điển (1983) · 65 Sơ Đồ Toàn Diện · 9 Bảng Thống Kê</span>
+      <h3 class="book-card-title">Chiến Thuật Tennis: Đánh Đơn và Đánh Đôi (Tennis Tactics)</h3>
+      <div class="book-card-authors">
+        <strong>Tác giả: William F. Talbert &amp; Bruce S. Old</strong> · Minh họa bởi <strong>Katharine D. Old</strong> · Lời tựa bởi <strong>Arthur R. Ashe</strong> · Lời nói đầu bởi <strong>Chris Evert Lloyd</strong>.
+      </div>
+      <p class="book-card-desc">
+        Công trình độc nhất vô nhị hệ thống hóa toàn diện các chiến lược đỉnh cao cho cả hai thể thức Đơn và Đôi. Khảo cứu sâu sắc 65 sơ đồ tác chiến, bức tường lòng chảo trên lưới, 4 cách tiếp cận lưới, nghệ thuật phán đoán dưới nửa giây, các cú vô-lê dứt điểm và đòn bẫy đối thủ kinh điển.
+      </p>
+      <div class="book-actions-row">
+        <a href="../doubles/tennis_tactics_vi.html" class="btn-reader">📖 Đọc Trực Tuyến Bản Dịch</a>
+        <a href="../doubles/Tennis_Tactics_Vietnamese_Final.pdf" target="_blank" class="btn-pdf-vi">📥 Tải PDF Tiếng Việt (92 Trang, 6.1 MB)</a>
+        <a href="../../doubles/Tennis_tactics__singles_and_doubles.pdf" target="_blank" class="btn-pdf-en">📄 Bản Gốc Tiếng Anh (26 MB)</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- SECTION 2: CHIẾN THUẬT ĐÁNH ĐÔI ĐỈNH CAO -->
+  <h2 class="section-divider-title">
+    <span>👥 Tủ Sách Chiến Thuật Đánh Đôi Đỉnh Cao (Doubles Strategy)</span>
+    <span class="badge">Chuyên Sâu</span>
+  </h2>
+
+  <!-- BOOK: WINNING DOUBLES (SCOTT PERLSTEIN) -->
+  <article class="book-card-horizontal">
+    <div class="book-cover-col">
+      <a href="../doubles/winning_doubles_vi.html">
+        <img src="../doubles/perlstein_assets/cover.jpg" alt="Bìa sách Winning Doubles Scott Perlstein">
+      </a>
+    </div>
+    <div class="book-info-col">
+      <span class="book-meta-tag">Sổ Tay Thực Chiến 64 Nước Biến (1995) · Hệ Thống Bức Tường Trên Lưới</span>
+      <h3 class="book-card-title">Chiến Thuật Đánh Đôi Đỉnh Cao (Winning Doubles)</h3>
+      <div class="book-card-authors">
+        <strong>Tác giả: Scott Perlstein</strong> · Lời tựa bởi <strong>Richey Reneberg</strong> (Cựu Số 1 Thế Giới ATP Doubles, Vô Địch Wimbledon &amp; US Open).
+      </div>
+      <p class="book-card-desc">
+        Sổ tay chiến thuật tình huống hoàn chỉnh bậc nhất với 64 bài bản thực chiến (Shot-by-Shot Playbook) kèm ảnh chụp hiện trường chi tiết. Phân tích cặn kẽ nghệ thuật thiết lập bức tường lưới, kỹ năng bắt bài (poaching), phản xạ đè bóng và phối hợp ăn ý giữa hai đối tác.
+      </p>
+      <div class="book-actions-row">
+        <a href="../doubles/winning_doubles_vi.html" class="btn-reader">📖 Đọc Trực Tuyến Bản Dịch</a>
+        <a href="../doubles/Winning_Doubles_Vietnamese_Final.pdf" target="_blank" class="btn-pdf-vi">📥 Tải PDF Tiếng Việt (83 Trang, 23.6 MB)</a>
+        <a href="../../doubles/Winning_doubles.pdf" target="_blank" class="btn-pdf-en">📄 Bản Gốc Tiếng Anh (46 MB)</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- BOOK: THE GAME OF DOUBLES IN TENNIS (TALBERT & OLD) -->
+  <article class="book-card-horizontal">
+    <div class="book-cover-col">
+      <a href="../doubles/the_game_of_doubles_vi.html">
+        <img src="../doubles/talbert_assets/cover.jpg" alt="Bìa sách The Game of Doubles in Tennis">
+      </a>
+    </div>
+    <div class="book-info-col">
+      <span class="book-meta-tag">Bản Đồ Chiến Thuật 112 Tình Huống (1956) · Chuẩn Mực Học Thuật Toàn Cầu</span>
+      <h3 class="book-card-title">Nghệ Thuật Đánh Đôi Trong Quần Vợt (The Game of Doubles in Tennis)</h3>
+      <div class="book-card-authors">
+        <strong>Tác giả: William F. Talbert &amp; Bruce S. Old</strong> · 112 Sơ đồ sân đấu chi tiết.
+      </div>
+      <p class="book-card-desc">
+        Tác phẩm được Arthur Ashe vinh danh là công trình chuẩn mực và định hình toàn bộ nền chiến thuật đánh đôi hiện đại. Khảo cứu 112 sơ đồ diễn biến đường bóng từ giao bóng, trả bóng, lưới đối đầu đến bọc lót đồng đội.
+      </p>
+      <div class="book-actions-row">
+        <a href="../doubles/the_game_of_doubles_vi.html" class="btn-reader">📖 Đọc Trực Tuyến Bản Dịch</a>
+        <a href="../doubles/The_Game_of_Doubles_Vietnamese_Final.pdf" target="_blank" class="btn-pdf-vi">📥 Tải PDF Tiếng Việt (128 Trang, 34.8 MB)</a>
+        <a href="../../doubles/The_game_of_doubles_in_tennis.pdf" target="_blank" class="btn-pdf-en">📄 Bản Gốc Tiếng Anh</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- BOOK: WINNING TENNIS DOUBLES (NORMA DOERNER) -->
+  <article class="book-card-horizontal">
+    <div class="book-cover-col">
+      <a href="../doubles/winning_tennis_doubles_vi.html">
+        <img src="../doubles/doerner_assets/cover.jpg" alt="Bìa sách Winning Tennis Doubles Norma Doerner">
+      </a>
+    </div>
+    <div class="book-info-col">
+      <span class="book-meta-tag">Cẩm Nang Kỹ Thuật Động Tác Đánh Đôi (1989) · 45 Chuỗi Ảnh Động Học</span>
+      <h3 class="book-card-title">Bí Quyết Chiến Thắng Trong Đánh Đôi (Winning Tennis Doubles)</h3>
+      <div class="book-card-authors">
+        <strong>Tác giả: Norma Doerner</strong> · Hệ thống hóa kỹ thuật cơ sinh học đánh đôi.
+      </div>
+      <p class="book-card-desc">
+        Cung cấp 45 chuỗi hình ảnh liên hoàn phân tích góc mở vợt, điểm tiếp xúc bóng, vị trí đặt chân và kỹ năng di chuyển đồng bộ trong đánh đôi.
+      </p>
+      <div class="book-actions-row">
+        <a href="../doubles/winning_tennis_doubles_vi.html" class="btn-reader">📖 Đọc Trực Tuyến Bản Dịch</a>
+        <a href="../doubles/Winning_Tennis_Doubles_Vietnamese_Final.pdf" target="_blank" class="btn-pdf-vi">📥 Tải PDF Tiếng Việt (37.4 MB)</a>
+        <a href="../../doubles/Winning_tennis_doubles.pdf" target="_blank" class="btn-pdf-en">📄 Bản Gốc Tiếng Anh</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- BOOK: DOUBLES STRATEGY (FRANCOISE DURR) -->
+  <article class="book-card-horizontal">
+    <div class="book-cover-col">
+      <a href="../doubles/durr_doubles_strategy_vi.html">
+        <img src="../doubles/durr_assets/cover.png" alt="Bìa sách Doubles Strategy Francoise Durr">
+      </a>
+    </div>
+    <div class="book-info-col">
+      <span class="book-meta-tag">Tâm Lý Chiến &amp; Chiến Lược Tiếp Cận Sáng Tạo (1978) · 43 Sơ Đồ</span>
+      <h3 class="book-card-title">Chiến Lược Đánh Đôi: Cẩm Nang Học Viên &amp; Huấn Luyện Viên (Doubles Strategy)</h3>
+      <div class="book-card-authors">
+        <strong>Tác giả: Françoise Dürr</strong> (Huyền thoại 12 danh hiệu Grand Slam).
+      </div>
+      <p class="book-card-desc">
+        Tác phẩm đi sâu vào khía cạnh tâm lý đồng đội, hóa giải áp lực, kỹ năng đọc trận đấu và nghệ thuật tận dụng góc mở sân độc đáo của một trong những nữ tay vợt đánh đôi vĩ đại nhất lịch sử.
+      </p>
+      <div class="book-actions-row">
+        <a href="../doubles/durr_doubles_strategy_vi.html" class="btn-reader">📖 Đọc Trực Tuyến Bản Dịch</a>
+        <a href="../doubles/Doubles_Strategy_Vietnamese_Final.pdf" target="_blank" class="btn-pdf-vi">📥 Tải PDF Tiếng Việt (59.1 MB)</a>
+        <a href="../../doubles/Doubles_strategy__a_creative_and_psychological_approach_to_tennis.pdf" target="_blank" class="btn-pdf-en">📄 Bản Gốc Tiếng Anh</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- BOOK: TENNIS DOUBLES: TACTICS & FORMATIONS (STAN SMITH) -->
+  <article class="book-card-horizontal">
+    <div class="book-cover-col">
+      <a href="../doubles/tennis_doubles_vi.html">
+        <img src="../doubles/book_assets/cover.png" alt="Bìa sách Tennis Doubles: Tactics and Formations">
+      </a>
+    </div>
+    <div class="book-info-col">
+      <span class="book-meta-tag">Đội Hình &amp; Chiến Thuật Hiện Đại (2004) · 48 Sơ Đồ &amp; Đội Hình Úc / Chữ I</span>
+      <h3 class="book-card-title">Chiến Thuật &amp; Đội Hình Đánh Đôi (Tennis Doubles: Tactics and Formations)</h3>
+      <div class="book-card-authors">
+        <strong>Tác giả: Stan Smith &amp; Justin Gimelstob</strong> · Minh họa bởi Brenda Schultz-McCarthy.
+      </div>
+      <p class="book-card-desc">
+        Hệ thống hóa toàn bộ các đội hình đánh đôi hiện đại: Đội hình chuẩn, Đội hình Úc (Australian Formation), Đội hình chữ I (I-Formation), chiến thuật giao bóng bắt lưới và đè bẹp các đối thủ giao bóng uy lực.
+      </p>
+      <div class="book-actions-row">
+        <a href="../doubles/tennis_doubles_vi.html" class="btn-reader">📖 Đọc Trực Tuyến Bản Dịch</a>
+        <a href="../doubles/Tennis_Doubles_Vietnamese_Final.pdf" target="_blank" class="btn-pdf-vi">📥 Tải PDF Tiếng Việt (90.9 MB)</a>
+        <a href="../../doubles/Tennis_doubles__tactics_and_formations.pdf" target="_blank" class="btn-pdf-en">📄 Bản Gốc Tiếng Anh</a>
+      </div>
+    </div>
+  </article>
+
+</main>
+
+<footer style="background: #0f172a; color: #94a3b8; padding: 40px 20px; text-align: center; font-size: 0.9rem; margin-top: 60px;">
+  <p style="margin-bottom: 8px;"><strong>Tennis Unified</strong> &bull; Nền tảng tri thức và văn hiến quần vợt chuyên sâu.</p>
+  <p style="margin: 0;">Bản dịch phục vụ mục đích học tập, nghiên cứu phi thương mại cho cộng đồng yêu tennis Việt Nam.</p>
+</footer>
+
+</body>
+</html>
