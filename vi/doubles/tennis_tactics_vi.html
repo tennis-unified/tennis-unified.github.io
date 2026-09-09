@@ -3,832 +3,904 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chiến thuật Tennis: Đánh đơn và Đánh đôi - William F. Talbert & Bruce S. Old</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300..800;1,7..72,300..800&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        /* === CSS RESET & GLOBAL VARIABLES === */
+    <title>Chiến Thuật Tennis: Đánh Đơn và Đánh Đôi — William F. Talbert & Bruce S. Old | Bản Dịch Tiếng Việt</title>
+    <meta name="description" content="Cẩm nang toàn diện về chiến thuật đánh đơn và đánh đôi. Lời tựa bởi Arthur Ashe và Chris Evert Lloyd.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+
+
         :root {
-            --primary: #0f3d2e;
-            --primary-light: #1b5e20;
-            --primary-accent: #2e7d32;
-            --secondary: #b8860b;
-            --secondary-light: #d4af37;
-            --dark: #1a1a1a;
-            --gray-dark: #334155;
-            --gray-med: #64748b;
-            --gray-light: #f8fafc;
-            --card-bg: #ffffff;
-            --card-border: #e2e8f0;
-            --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            --font-serif: 'Literata', Georgia, serif;
-            --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+
+            --primary: #15803d;
+
+            --primary-dark: #166534;
+
+            --primary-light: #22c55e;
+
+            --accent: #eab308;
+
+            --bg-page: #f8fafc;
+
+            --bg-card: #ffffff;
+
+            --text-main: #1e293b;
+
+            --text-muted: #64748b;
+
+            --border: #e2e8f0;
+
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+            --header-bg: #0f172a;
+
         }
+
+
+
+        body.dark-mode {
+
+            --bg-page: #0f172a;
+
+            --bg-card: #1e293b;
+
+            --text-main: #f1f5f9;
+
+            --text-muted: #94a3b8;
+
+            --border: #334155;
+
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+
+            --header-bg: #020617;
+
+        }
+
+
 
         * {
+
             box-sizing: border-box;
+
             margin: 0;
+
             padding: 0;
+
         }
+
+
 
         body {
-            font-family: var(--font-serif);
-            color: var(--dark);
-            background-color: #f1f5f9;
-            line-height: 1.7;
-            font-size: 15px;
-            text-rendering: optimizeLegibility;
-            -webkit-font-smoothing: antialiased;
+
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+            background-color: var(--bg-page);
+
+            color: var(--text-main);
+
+            line-height: 2.0;
+
+            transition: background-color 0.3s, color 0.3s;
+
         }
 
-        /* === WEBSHOP & SCREEN READER WRAPPER === */
-        .reader-wrapper {
-            max-width: 960px;
-            margin: 0 auto;
-            background: #ffffff;
-            box-shadow: 0 0 30px rgba(0,0,0,0.1);
-            min-height: 100vh;
-        }
 
-        /* === TOP NAVIGATION BAR === */
-        .reader-nav {
-            position: sticky;
-            top: 0;
-            background: rgba(15, 61, 46, 0.95);
-            backdrop-filter: blur(8px);
-            color: #ffffff;
-            padding: 12px 24px;
+
+        /* Standard Topnav */
+
+        .tu-topnav {
+
+            background: var(--header-bg);
+
+            color: #fff;
+
+            padding: 0.75rem 1.5rem;
+
             display: flex;
+
+            align-items: center;
+
             justify-content: space-between;
-            align-items: center;
+
+            position: sticky;
+
+            top: 0;
+
             z-index: 1000;
+
             box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+
         }
 
-        .reader-nav a {
-            color: #ffffff;
-            text-decoration: none;
-            font-family: var(--font-sans);
-            font-size: 13px;
-            font-weight: 600;
-            transition: color 0.2s;
-        }
 
-        .reader-nav a:hover {
-            color: var(--secondary-light);
-        }
 
-        .nav-brand {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
+        .tu-topnav .brand {
 
-        .nav-badge {
-            background: var(--secondary);
-            color: #ffffff;
-            font-size: 11px;
             font-weight: 700;
-            padding: 3px 8px;
-            border-radius: 4px;
-            letter-spacing: 0.5px;
-        }
 
-        .nav-links {
+            font-size: 1.15rem;
+
+            color: #fff;
+
+            text-decoration: none;
+
             display: flex;
-            gap: 18px;
+
+            align-items: center;
+
+            gap: 0.5rem;
+
         }
 
-        /* === BOOK COVER PAGE === */
-        .book-cover-page {
-            position: relative;
-            background: #0d2818;
-            color: #ffffff;
-            padding: 40px 24px;
+
+
+        .tu-topnav .brand span {
+
+            color: #22c55e;
+
+        }
+
+
+
+        .tu-topnav .nav-links {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 1.25rem;
+
+            list-style: none;
+
+        }
+
+
+
+        .tu-topnav .nav-links a {
+
+            color: #cbd5e1;
+
+            text-decoration: none;
+
+            font-size: 0.95rem;
+
+            transition: color 0.2s;
+
+        }
+
+
+
+        .tu-topnav .nav-links a:hover {
+
+            color: #fff;
+
+        }
+
+
+
+        .tu-topnav .controls {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 0.75rem;
+
+        }
+
+
+
+        .theme-toggle-btn {
+
+            background: #334155;
+
+            border: none;
+
+            color: #f8fafc;
+
+            padding: 0.4rem 0.8rem;
+
+            border-radius: 9999px;
+
+            cursor: pointer;
+
+            font-size: 0.9rem;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 0.4rem;
+
+        }
+
+
+
+        /* Progress Bar */
+
+        .reading-progress-bar {
+
+            position: fixed;
+
+            top: 55px;
+
+            left: 0;
+
+            height: 4px;
+
+            background: linear-gradient(90deg, #15803d, #22c55e);
+
+            width: 0%;
+
+            z-index: 999;
+
+            transition: width 0.1s ease-out;
+
+        }
+
+
+
+        /* Hero Header */
+
+        .hero {
+
+            background: linear-gradient(135deg, #166534 0%, #15803d 50%, #14532d 100%);
+
+            color: white;
+
+            padding: 3.5rem 1.5rem 3rem;
+
             text-align: center;
-            page-break-after: always;
+
+            position: relative;
+
         }
 
-        .cover-image-container {
-            max-width: 480px;
-            margin: 0 auto 30px auto;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+
+
+        .hero-badge {
+
+            display: inline-block;
+
+            background: rgba(255, 255, 255, 0.2);
+
+            backdrop-filter: blur(8px);
+
+            padding: 0.4rem 1.25rem;
+
+            border-radius: 9999px;
+
+            font-size: 0.85rem;
+
+            font-weight: 600;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 1.25rem;
+
+            border: 1px solid rgba(255, 255, 255, 0.3);
+
         }
+
+
+
+        .hero h1 {
+
+            font-size: 2.4rem;
+
+            font-weight: 800;
+
+            line-height: 1.25;
+
+            margin-bottom: 0.75rem;
+
+        }
+
+
+
+        .hero p.subtitle {
+
+            font-size: 1.25rem;
+
+            opacity: 0.9;
+
+            max-width: 800px;
+
+            margin: 0 auto 1.5rem;
+
+            font-weight: 300;
+
+        }
+
+
+
+        .hero-meta {
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 1.5rem;
+
+            font-size: 0.95rem;
+
+            opacity: 0.9;
+
+        }
+
+
+
+        .hero-meta span {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 0.4rem;
+
+        }
+
+
+
+        /* Download Section */
+
+        .download-banner {
+
+            max-width: 900px;
+
+            margin: -1.75rem auto 2rem;
+
+            background: var(--bg-card);
+
+            border: 1px solid var(--border);
+
+            border-radius: 16px;
+
+            padding: 1.25rem 2rem;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            box-shadow: var(--card-shadow);
+
+            position: relative;
+
+            z-index: 10;
+
+        }
+
+
+
+        .download-info {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 1.25rem;
+
+        }
+
+
+
+        .pdf-badge {
+
+            background: #ef4444;
+
+            color: white;
+
+            font-size: 1.5rem;
+
+            width: 48px;
+
+            height: 48px;
+
+            border-radius: 10px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+        }
+
+
+
+        .download-btn {
+
+            background: #15803d;
+
+            color: white;
+
+            padding: 0.75rem 1.5rem;
+
+            border-radius: 8px;
+
+            text-decoration: none;
+
+            font-weight: 600;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 0.5rem;
+
+            transition: background 0.2s, transform 0.1s;
+
+        }
+
+
+
+        .download-btn:hover {
+
+            background: #166534;
+
+            transform: translateY(-2px);
+
+        }
+
+
+
+        /* Container Layout */
+
+        .main-container {
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+
+            padding: 1rem 1.5rem 4rem;
+
+            display: grid;
+
+            grid-template-columns: 280px 1fr;
+
+            gap: 2.5rem;
+
+        }
+
+
+
+        /* Sticky Sidebar */
+
+        .sidebar {
+
+            position: sticky;
+
+            top: 75px;
+
+            height: calc(100vh - 90px);
+
+            overflow-y: auto;
+
+            padding-right: 0.5rem;
+
+        }
+
+
+
+        .toc-card {
+
+            background: var(--bg-card);
+
+            border: 1px solid var(--border);
+
+            border-radius: 12px;
+
+            padding: 1.25rem;
+
+            box-shadow: var(--card-shadow);
+
+        }
+
+
+
+        .toc-card h3 {
+
+            font-size: 1.05rem;
+
+            font-weight: 700;
+
+            margin-bottom: 1rem;
+
+            padding-bottom: 0.5rem;
+
+            border-bottom: 2px solid var(--primary);
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 0.5rem;
+
+        }
+
+
+
+        .toc-list {
+
+            list-style: none;
+
+            font-size: 0.9rem;
+
+        }
+
+
+
+        .toc-list li {
+
+            margin-bottom: 0.5rem;
+
+        }
+
+
+
+        .toc-list a {
+
+            color: var(--text-muted);
+
+            text-decoration: none;
+
+            display: block;
+
+            padding: 0.35rem 0.5rem;
+
+            border-radius: 6px;
+
+            transition: all 0.2s;
+
+        }
+
+
+
+        .toc-list a:hover {
+
+            color: var(--primary);
+
+            background: rgba(21, 128, 61, 0.1);
+
+        }
+
+
+
+        /* Content Area */
+
+        .content-area {
+
+            background: var(--bg-card);
+
+            border: 1px solid var(--border);
+
+            border-radius: 16px;
+
+            padding: 3rem;
+
+            box-shadow: var(--card-shadow);
+
+        }
+
+
+
+        .book-cover-wrap {
+
+            text-align: center;
+
+            margin-bottom: 3rem;
+
+            padding-bottom: 2rem;
+
+            border-bottom: 1px solid var(--border);
+
+        }
+
+
 
         .book-cover-img {
+
+            max-width: 320px;
+
             width: 100%;
-            height: auto;
-            display: block;
+
+            border-radius: 12px;
+
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.25);
+
+            border: 1px solid var(--border);
+
         }
 
-        .cover-badge {
-            display: inline-block;
-            background: var(--secondary);
-            color: #ffffff;
-            font-family: var(--font-sans);
-            font-size: 12px;
+
+
+        .chapter-box {
+
+            margin-bottom: 3.5rem;
+
+            scroll-margin-top: 80px;
+
+        }
+
+
+
+        .part-header {
+
+            background: linear-gradient(90deg, var(--primary) 0%, var(--primary-dark) 100%);
+
+            color: white;
+
+            padding: 1rem 1.5rem;
+
+            border-radius: 10px;
+
+            margin-bottom: 2rem;
+
+            font-size: 1.4rem;
+
             font-weight: 700;
-            padding: 6px 16px;
-            border-radius: 20px;
-            letter-spacing: 1px;
-            margin-bottom: 16px;
+
         }
 
-        .cover-main-title {
-            font-family: var(--font-sans);
-            font-size: 38px;
+
+
+        .chapter-title {
+
+            font-size: 1.75rem;
+
             font-weight: 800;
-            color: #ffffff;
-            line-height: 1.2;
-            letter-spacing: 0.5px;
-            margin-bottom: 8px;
+
+            color: var(--primary-dark);
+
+            margin-bottom: 0.35rem;
+
+            border-bottom: 2px solid var(--primary-light);
+
+            padding-bottom: 0.5rem;
+
         }
 
-        .cover-sub-title {
-            font-family: var(--font-sans);
-            font-size: 24px;
-            font-weight: 600;
-            color: var(--secondary-light);
-            margin-bottom: 12px;
+
+
+        body.dark-mode .chapter-title {
+
+            color: #4ade80;
+
         }
 
-        .cover-orig-title {
-            font-family: var(--font-serif);
+
+
+        .chapter-sub {
+
+            font-size: 1.05rem;
+
+            color: var(--text-muted);
+
             font-style: italic;
-            font-size: 16px;
-            color: #cbd5e1;
-            margin-bottom: 24px;
+
+            margin-bottom: 1.5rem;
+
         }
 
-        .cover-authors {
-            border-top: 1px solid rgba(255,255,255,0.2);
-            border-bottom: 1px solid rgba(255,255,255,0.2);
-            padding: 16px 0;
-            margin-bottom: 24px;
-            font-family: var(--font-sans);
-            font-size: 14px;
-            line-height: 1.6;
+
+
+        .section-item {
+
+            margin-bottom: 2rem;
+
         }
 
-        .cover-publisher-tag {
-            font-family: var(--font-sans);
-            font-size: 12px;
-            color: #94a3b8;
-            letter-spacing: 1px;
-        }
 
-        /* === PAGES & EDITORIAL LAYOUT === */
-        .frontmatter-page, .chapter-page {
-            padding: 40px 48px;
-        }
 
-        .section-header, .chapter-header {
-            margin-bottom: 30px;
-            border-bottom: 2px solid var(--primary);
-            padding-bottom: 16px;
-        }
+        .section-heading {
 
-        .chapter-number {
-            font-family: var(--font-sans);
-            font-size: 14px;
+            font-size: 1.25rem;
+
             font-weight: 700;
-            color: var(--secondary);
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            margin-bottom: 4px;
-        }
 
-        .chapter-title, .section-header .chapter-title {
-            font-family: var(--font-sans);
-            font-size: 28px;
-            font-weight: 800;
-            color: var(--primary);
-            line-height: 1.3;
-        }
+            color: var(--text-main);
 
-        .chapter-subtitle, .section-header .byline {
-            font-family: var(--font-serif);
-            font-style: italic;
-            font-size: 15px;
-            color: var(--gray-med);
-            margin-top: 6px;
-        }
+            margin-bottom: 0.75rem;
 
-        .editorial-body p {
-            margin-bottom: 16px;
-            text-align: justify;
-        }
-
-        .lead-paragraph {
-            font-size: 16px;
-            line-height: 1.8;
-            color: #0f172a;
-        }
-
-        .dropcap {
-            float: left;
-            font-family: var(--font-sans);
-            font-size: 52px;
-            line-height: 42px;
-            padding-top: 4px;
-            padding-right: 10px;
-            padding-bottom: 2px;
-            color: var(--primary);
-            font-weight: 800;
-        }
-
-        h3 {
-            font-family: var(--font-sans);
-            font-size: 20px;
-            font-weight: 700;
-            color: var(--primary-accent);
-            margin: 32px 0 16px 0;
-            border-left: 4px solid var(--secondary);
-            padding-left: 12px;
-        }
-
-        h4 {
-            font-family: var(--font-sans);
-            font-size: 16px;
-            font-weight: 700;
-            color: var(--primary);
-            margin: 16px 0 8px 0;
-        }
-
-        /* === TACTICAL FIGURE CARDS === */
-        .tactical-figure-card {
-            background: #ffffff;
-            border: 1px solid var(--card-border);
-            border-radius: 8px;
-            margin: 28px 0;
-            box-shadow: var(--card-shadow);
-            overflow: hidden;
-        }
-
-        .figure-card-header {
-            background: #f8fafc;
-            border-bottom: 1px solid var(--card-border);
-            padding: 12px 20px;
             display: flex;
+
             align-items: center;
-            gap: 14px;
+
+            gap: 0.5rem;
+
         }
 
-        .fig-badge {
-            background: var(--primary);
-            color: #ffffff;
-            font-family: var(--font-sans);
-            font-size: 11px;
-            font-weight: 700;
-            padding: 4px 10px;
-            border-radius: 4px;
-            letter-spacing: 0.5px;
-            white-space: nowrap;
-        }
 
-        .fig-title {
-            font-family: var(--font-sans);
-            font-size: 15px;
-            font-weight: 700;
+
+        .section-heading i {
+
             color: var(--primary);
-            margin: 0;
-            line-height: 1.4;
+
+            font-size: 0.95rem;
+
         }
 
-        .figure-content-grid {
-            display: flex;
-            flex-direction: row;
-            padding: 18px 20px;
-            gap: 24px;
+
+
+        .section-text {
+            font-size: 1.05rem;
+            line-height: 2.0;
+            color: var(--text-main);
         }
 
-        .figure-image-col {
-            flex: 0 0 45%;
+
+
+        .figure-wrap {
+
+            margin: 2.25rem 0;
+
             text-align: center;
-            background: #fdfdfd;
-            border: 1px solid #f1f5f9;
-            border-radius: 6px;
-            padding: 10px;
+
+            background: rgba(0,0,0,0.02);
+
+            padding: 1.25rem;
+
+            border-radius: 12px;
+
+            border: 1px solid var(--border);
+
         }
 
-        .tactical-court-img {
+
+
+        .figure-img {
+
             max-width: 100%;
+
             height: auto;
-            max-height: 120mm;
-            display: block;
-            margin: 0 auto;
-            border-radius: 4px;
-        }
 
-        .fig-caption-tag {
-            font-family: var(--font-sans);
-            font-size: 11px;
-            font-weight: 600;
-            color: var(--gray-med);
-            margin-top: 8px;
-        }
-
-        .figure-analysis-col {
-            flex: 1;
-        }
-
-        .figure-analysis-col p {
-            font-size: 14px;
-            line-height: 1.65;
-            margin-bottom: 12px;
-        }
-
-        .tactical-takeaway {
-            background: #f0fdf4;
-            border-left: 4px solid var(--primary-accent);
-            padding: 10px 14px;
-            font-size: 13.5px;
-            color: #14532d;
-            border-radius: 0 4px 4px 0;
-            margin-top: 12px;
-        }
-
-        /* === DATA TABLES === */
-        .table-container {
-            margin: 24px 0;
-            overflow-x: auto;
-        }
-
-        .table-title {
-            font-family: var(--font-sans);
-            font-size: 13px;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 8px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .data-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 13.5px;
-            background: #ffffff;
-            border: 1px solid #cbd5e1;
-        }
-
-        .data-table th {
-            background: #0f3d2e;
-            color: #ffffff;
-            font-family: var(--font-sans);
-            font-weight: 600;
-            text-align: left;
-            padding: 10px 12px;
-            border: 1px solid #0f3d2e;
-        }
-
-        .data-table td {
-            padding: 8px 12px;
-            border: 1px solid #e2e8f0;
-            vertical-align: top;
-        }
-
-        .data-table tr:nth-child(even) {
-            background: #f8fafc;
-        }
-
-        /* === TOC STYLING === */
-        .toc-container {
-            margin: 20px 0;
-        }
-
-        .toc-item {
-            margin-bottom: 14px;
-        }
-
-        .toc-line {
-            display: flex;
-            align-items: baseline;
-            justify-content: space-between;
-        }
-
-        .toc-title a {
-            font-family: var(--font-sans);
-            font-size: 15px;
-            font-weight: 700;
-            color: var(--primary);
-            text-decoration: none;
-        }
-
-        .toc-title a:hover {
-            color: var(--secondary);
-            text-decoration: underline;
-        }
-
-        .toc-dots {
-            flex: 1;
-            border-bottom: 1px dotted #cbd5e1;
-            margin: 0 10px;
-        }
-
-        .toc-page {
-            font-family: var(--font-sans);
-            font-size: 13px;
-            font-weight: 600;
-            color: var(--gray-med);
-        }
-
-        .toc-sub {
-            font-size: 13px;
-            color: var(--gray-med);
-            margin-top: 2px;
-            padding-left: 12px;
-        }
-
-        /* === COMPARISON GRID & LISTS === */
-        .comparison-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin: 20px 0;
-        }
-
-        .comp-card {
             border-radius: 8px;
-            padding: 16px 20px;
-            border: 1px solid #e2e8f0;
+
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
         }
 
-        .singles-card {
-            background: #f0fdf4;
-            border-left: 4px solid var(--primary-accent);
-        }
 
-        .doubles-card {
-            background: #fefce8;
-            border-left: 4px solid var(--secondary);
-        }
 
-        .comp-card h4 {
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
+        .figure-caption {
 
-        .comp-card ul {
-            padding-left: 18px;
-            font-size: 13.5px;
-            line-height: 1.6;
-        }
+            font-size: 0.9rem;
 
-        .comp-card li {
-            margin-bottom: 6px;
-        }
+            color: var(--text-muted);
 
-        .tactical-bullets {
-            padding-left: 20px;
-            margin-bottom: 16px;
-        }
+            margin-top: 0.75rem;
 
-        .tactical-bullets li {
-            margin-bottom: 8px;
-        }
-
-        .step-analysis-list {
-            padding-left: 20px;
-            font-size: 13.5px;
-            line-height: 1.6;
-            margin-bottom: 12px;
-        }
-
-        .step-analysis-list li {
-            margin-bottom: 8px;
-        }
-
-        .legend-list {
-            list-style: none;
-            padding: 0;
-            font-size: 13px;
-            margin-bottom: 12px;
-        }
-
-        .legend-list li {
-            margin-bottom: 6px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .legend-dot {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            font-family: var(--font-sans);
-            font-size: 11px;
-            font-weight: 700;
-            color: #ffffff;
-        }
-
-        .player-a { background: #b91c1c; }
-        .player-b { background: #1d4ed8; }
-
-        .legend-line {
-            font-family: monospace;
-            font-weight: bold;
-        }
-
-        .solid-line { color: #047857; }
-        .dashed-line { color: #64748b; }
-
-        .card-divider {
-            border: 0;
-            border-top: 1px dashed #e2e8f0;
-            margin: 12px 0;
-        }
-
-        .historical-quote, .concluding-quote {
-            background: #f8fafc;
-            border-left: 4px solid var(--secondary);
-            padding: 16px 20px;
-            font-style: italic;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .quote-author, .quote-signature {
-            font-family: var(--font-sans);
-            font-style: normal;
-            font-size: 13px;
-            font-weight: 700;
-            color: var(--primary);
-            margin-top: 8px;
-            text-align: right;
-        }
-
-        .signature-block {
-            margin-top: 24px;
-            text-align: right;
-        }
-
-        .sig-name {
-            font-family: var(--font-sans);
-            font-weight: 700;
-            color: var(--primary);
-        }
-
-        .sig-title {
-            font-size: 13px;
-            color: var(--gray-med);
-        }
-
-        .summary-principles-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-            margin: 20px 0;
-        }
-
-        .principle-card {
-            background: #ffffff;
-            border: 1px solid var(--card-border);
-            padding: 16px;
-            border-radius: 6px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-        }
-
-        .principle-card h4 {
-            color: var(--primary-accent);
-            margin-top: 0;
-            margin-bottom: 6px;
-        }
-
-        .principle-card p {
-            font-size: 13px;
-            margin-bottom: 0;
-            line-height: 1.5;
-        }
-
-        .authors-bio-block {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin: 24px 0;
-        }
-
-        .bio-card {
-            background: #f8fafc;
-            padding: 16px;
-            border-radius: 6px;
-            border: 1px solid #e2e8f0;
-        }
-
-        .bio-card h4 {
-            margin-top: 0;
-        }
-
-        .bio-card p {
-            font-size: 13px;
-            margin-bottom: 0;
-            line-height: 1.5;
-        }
-
-        .series-title {
-            font-family: var(--font-sans);
-            font-size: 12px;
-            font-weight: 700;
-            color: var(--secondary);
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-        }
-
-        .book-title {
-            font-family: var(--font-sans);
-            font-size: 32px;
-            font-weight: 800;
-            color: var(--primary);
-            line-height: 1.2;
-            margin-bottom: 6px;
-        }
-
-        .book-subtitle {
-            font-family: var(--font-sans);
-            font-size: 18px;
             font-weight: 600;
-            color: var(--primary-accent);
-            margin-bottom: 20px;
+
         }
 
-        .original-meta {
-            font-size: 13.5px;
-            color: var(--gray-dark);
-            margin-bottom: 20px;
+
+
+        .quote-box {
+
+            background: rgba(21, 128, 61, 0.08);
+
+            border-left: 4px solid var(--primary);
+
+            padding: 1.25rem 1.5rem;
+
+            border-radius: 0 10px 10px 0;
+
+            margin: 1.5rem 0;
+
+            font-style: italic;
+
         }
 
-        .original-meta p {
-            margin-bottom: 4px;
-        }
 
-        .separator-ornament {
-            border: 0;
-            border-top: 1px solid #cbd5e1;
-            margin: 20px 0;
-        }
 
-        .translation-credits {
-            font-size: 12.5px;
-            color: var(--gray-med);
-            border-top: 1px solid #e2e8f0;
-            padding-top: 16px;
-            margin-top: 20px;
-        }
+        /* Responsive */
 
-        .translation-credits p {
-            margin-bottom: 4px;
-        }
+        @media (max-width: 992px) {
 
-        /* === CSS PAGED MEDIA (WEASYPRINT) === */
-        @page {
-            size: 170mm 245mm;
-            margin: 16mm 14mm 18mm 14mm;
-            @bottom-center {
-                content: counter(page);
-                font-family: var(--font-sans);
-                font-size: 8.5pt;
-                color: #64748b;
-            }
-        }
+            .main-container {
 
-        @page :first {
-            margin: 0;
-            @bottom-center {
-                content: normal;
-            }
-        }
-
-        .page-break-after {
-            page-break-after: always;
-        }
-
-        @media print {
-            body {
-                background: #ffffff;
-                font-size: 10.5pt;
-                line-height: 1.5;
-            }
-            .reader-wrapper {
-                max-width: none;
-                box-shadow: none;
-            }
-            .reader-nav {
-                display: none;
-            }
-            .frontmatter-page, .chapter-page {
-                padding: 0;
-            }
-            .tactical-figure-card {
-                box-shadow: none;
-                border: 1px solid #cbd5e1;
-                margin: 16px 0;
-            }
-            .tactical-court-img {
-                max-height: 80mm;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .frontmatter-page, .chapter-page {
-                padding: 24px 16px;
-            }
-            .figure-content-grid {
-                flex-direction: column;
-            }
-            .figure-image-col {
-                flex: none;
-                width: 100%;
-            }
-            .comparison-grid, .summary-principles-grid, .authors-bio-block {
                 grid-template-columns: 1fr;
+
             }
-            .cover-main-title {
-                font-size: 28px;
+
+            .sidebar {
+
+                display: none;
+
             }
-            .cover-sub-title {
-                font-size: 18px;
+
+            .content-area {
+
+                padding: 1.75rem;
+
             }
+
+            .hero h1 {
+
+                font-size: 1.85rem;
+
+            }
+
         }
+
+    
     </style>
 </head>
 <body>
-    <div class="reader-wrapper">
-        <!-- NAVIGATION BAR FOR WEB READING -->
-        <nav class="reader-nav">
-            <div class="nav-brand">
-                <span class="nav-badge">TENNIS UNIFIED</span>
-                <a href="#cover"><strong>CHIẾN THUẬT TENNIS: ĐƠN &amp; ĐÔI</strong></a>
-            </div>
-            <div class="nav-links">
-                <a href="#toc">Mục lục</a>
-                <a href="#chapter-1">Chương 1</a>
-                <a href="#chapter-4">Giao bóng</a>
-                <a href="#chapter-6">Trên lưới</a>
-                <a href="#chapter-7">Cuối sân</a>
-                <a href="#chapter-8">Tổng kết</a>
-            </div>
-        </nav>
 
-        
-    <!-- FRONT COVER -->
-    <section class="book-cover-page" id="cover">
-        <div class="cover-image-container">
-            <img src="tactics_assets/cover.jpg" alt="Bìa sách Tennis Tactics: Singles and Doubles" class="book-cover-img">
+    <!-- Language & Navigation Topbar -->
+<nav class="tu-topnav">
+        <a href="/vi/books/" class="brand">
+            <i class="fa-solid fa-tennis-ball"></i>
+            <span>Tennis Unified</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="/vi/books/">Thư Viện Sách</a></li>
+            <li><a href="/vi/fundamentals/">Nền Tảng</a></li>
+            <li><a href="/vi/stroke-analysis/">Phân Tích Động Tác</a></li>
+            <li><a href="/vi/drills/">Bài Tập & Giáo Án</a></li>
+            <li><a href="/books/" data-lang-toggle="en"><i class="fa-solid fa-globe"></i> English</a></li>
+        </ul>
+        <div class="controls">
+            <button class="theme-toggle-btn" id="themeToggleBtn" onclick="toggleTheme()">
+                <i class="fa-solid fa-moon"></i> Giao Diện Tối
+            </button>
         </div>
-        <div class="cover-overlay-title">
-            <div class="cover-badge">TUYỆT PHẨM KINH ĐIỂN TENNIS CHIẾN THUẬT (1983)</div>
-            <h1 class="cover-main-title">CHIẾN THUẬT TENNIS</h1>
-            <h2 class="cover-sub-title">ĐÁNH ĐƠN VÀ ĐÁNH ĐÔI</h2>
-            <div class="cover-orig-title">TENNIS TACTICS: SINGLES AND DOUBLES</div>
-            <div class="cover-authors">
-                <p class="author-name"><strong>WILLIAM F. TALBERT</strong> &amp; <strong>BRUCE S. OLD</strong></p>
-                <p class="illustrator-name">Minh họa sơ đồ chiến thuật: <strong>KATHARINE D. OLD</strong></p>
-                <p class="special-contributors">Lời tựa: <strong>ARTHUR R. ASHE</strong> &bull; Lời nói đầu: <strong>CHRIS EVERT LLOYD</strong></p>
-            </div>
-            <div class="cover-publisher-tag">BẢN DỊCH TIẾNG VIỆT ẤN HÀNH BỞI TENNIS UNIFIED &bull; 2026</div>
-        </div>
-    </section>
+    </nav>
 
-    <!-- TITLE & COPYRIGHT PAGE -->
-    <section class="frontmatter-page page-break-after" id="title-page">
-        <div class="title-page-content">
-            <div class="series-title">TỦ SÁCH DI SẢN CHIẾN THUẬT TENNIS QUỐC TẾ</div>
-            <h1 class="book-title">CHIẾN THUẬT TENNIS</h1>
-            <h2 class="book-subtitle">CẨM NANG TOÀN DIỆN VỀ CHIẾN THUẬT ĐÁNH ĐƠN VÀ ĐÁNH ĐÔI</h2>
-            <div class="original-meta">
-                <p>Nguyên tác: <em>Tennis Tactics: Singles and Doubles</em></p>
-                <p>Xuất bản lần đầu năm 1983 bởi Nhà xuất bản <strong>Harper &amp; Row, Publishers, New York</strong></p>
-                <p>Bản quyền nguyên tác &copy; 1983 bởi William F. Talbert và Bruce S. Old</p>
-            </div>
-            <hr class="separator-ornament">
-            <div class="authors-bio-block">
-                <div class="bio-card">
-                    <h4>William F. Talbert (1918–1999)</h4>
-                    <p>Huyền thoại Quần vợt Mỹ, thành viên Đại sảnh Danh vọng Quần vợt Quốc tế (International Tennis Hall of Fame). Ông từng giành 9 danh hiệu Grand Slam đôi nam và đôi nam nữ, 4 lần lọt vào chung kết đơn US Championships, đồng thời là đội trưởng kiêm huấn luyện viên tuyển Davis Cup Hoa Kỳ vô địch thế giới nhiều năm liền.</p>
-                </div>
-                <div class="bio-card">
-                    <h4>Bruce S. Old (1913–2000)</h4>
-                    <p>Tiến sĩ Luyện kim từ Học viện Công nghệ Massachusetts (MIT), nhà khoa học lỗi lạc, thành viên Viện Hàn lâm Kỹ thuật Quốc gia Hoa Kỳ, đồng thời là tay vợt nghiên cứu chiến thuật kỳ cựu. Ông cùng Bill Talbert tạo nên bộ đôi tác giả kinh điển trong nền văn hiến phân tích chiến thuật quần vợt thế giới.</p>
-                </div>
-            </div>
-            <div class="translation-credits">
-                <p><strong>Hiệu đính &amp; Chuyển ngữ tiếng Việt:</strong> Ban Chuyên môn Tennis Unified</p>
-                <p><strong>Công nghệ xuất bản:</strong> Vector CSS Paged Media &bull; WeasyPrint Engine &bull; Xuất bản kỹ thuật số 2026</p>
-                <p>Ấn bản phục vụ mục đích nghiên cứu, học tập chiến thuật phi thương mại cho cộng đồng yêu quần vợt Việt Nam.</p>
-            </div>
-        </div>
-    </section>
+<div class="reading-progress-bar" id="progressBar">
 
-    <!-- FOREWORD BY ARTHUR ASHE -->
-    <section class="frontmatter-page page-break-after" id="foreword">
+    <!-- Hero Header -->
+    <header class="hero">
+        <div class="hero-badge"><i class="fa-solid fa-medal"></i> Cẩm Nang Toàn Diện Về Chiến Thuật Đánh Đơn và Đánh Đôi</div>
+        <h1>Chiến Thuật Tennis: Đánh Đơn và Đánh Đôi</h1>
+        <p class="subtitle">Tennis Tactics &bull; William F. Talbert &amp; Bruce S. Old</p>
+        <div class="hero-meta">
+            <span><i class="fa-solid fa-user-tie"></i> Tác giả: William F. Talbert &amp; Bruce S. Old</span>
+            <span><i class="fa-solid fa-trophy"></i> Lời tựa bởi Arthur Ashe &amp; Chris Evert Lloyd</span>
+            <span><i class="fa-solid fa-book-open"></i> 8 Chương</span>
+            <span><i class="fa-solid fa-language"></i> Bản dịch tiếng Việt chuyên sâu</span>
+        </div>
+    </header>
+
+
+    <!-- Layout -->
+    <div class="main-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="toc-card">
+                <h3><i class="fa-solid fa-list-ul"></i> Mục Lục Sách</h3>
+                <ul class="toc-list">
+                    <li><a href="#front-matter">Lời Tựa &amp; Lời Nói Đầu</a></li>
+                    <li><a href="#chapter-1">GIỚI THIỆU CHUNG</a></li>
+                    <li><a href="#chapter-2">LƯỢC SỬ QUẦN VỢT</a></li>
+                    <li><a href="#chapter-3">BẢN CHẤT CÁC THỂ THỨC THI ĐẤU</a></li>
+                    <li><a href="#chapter-4">CÚ GIAO BÓNG (THE SERVE)</a></li>
+                    <li><a href="#chapter-5">TRẢ GIAO BÓNG (RETURN OF SERVICE)</a></li>
+                    <li><a href="#chapter-6">CHIẾN THUẬT TRÊN LƯỚI (NET PLAY)</a></li>
+                    <li><a href="#chapter-7">CHIẾN THUẬT CUỐI SÂN (BASE-LINE PLAY)</a></li>
+                    <li><a href="#chapter-8">TỔNG KẾT CHIẾN THUẬT &amp; LỜI NHẮN GỬI</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content-area">
+            <div class="book-cover-wrap">
+                <img src="tennis_tactics_assets/cover.jpg" alt="Bìa sách Chiến Thuật Tennis" class="book-cover-img">
+                <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.95rem;">Tác phẩm của William F. Talbert &amp; Bruce S. Old</p>
+            </div>
+
+            <!-- Front Matter -->
+            <section class="chapter-box" id="front-matter">
+                <h2 class="chapter-title">Lời Tựa &amp; Lời Nói Đầu</h2>
+                <div class="section-text">
         <div class="section-header">
             <div class="kicker">LỜI TỰA ĐẶC BIỆT</div>
             <h2 class="chapter-title">LỜI TỰA CỦA ARTHUR R. ASHE</h2>
@@ -846,10 +918,6 @@
                 <p class="sig-title">New York, 1983</p>
             </div>
         </div>
-    </section>
-
-    <!-- PREFACE BY CHRIS EVERT LLOYD -->
-    <section class="frontmatter-page page-break-after" id="preface">
         <div class="section-header">
             <div class="kicker">LỜI NÓI ĐẦU ĐẶC BIỆT</div>
             <h2 class="chapter-title">LỜI NÓI ĐẦU CỦA CHRIS EVERT LLOYD</h2>
@@ -864,10 +932,6 @@
                 <p class="sig-title">Fort Lauderdale, Florida, 1983</p>
             </div>
         </div>
-    </section>
-
-    <!-- TABLE OF CONTENTS (MỤC LỤC CHI TIẾT) -->
-    <section class="frontmatter-page page-break-after" id="toc">
         <div class="section-header">
             <div class="kicker">HỆ THỐNG NỘI DUNG TÁC PHẨM</div>
             <h2 class="chapter-title">MỤC LỤC TỔNG QUAN</h2>
@@ -953,14 +1017,16 @@
                 <div class="toc-sub">Nguyên lý chung &bull; Tổng kết chiến thuật Đơn &bull; Tổng kết chiến thuật Đôi &bull; Lời khuyên cuối cùng</div>
             </div>
         </div>
-    </section>
-    
-        
-    <!-- CHAPTER 1: INTRODUCTION -->
-    <section class="chapter-page page-break-after" id="chapter-1">
-        <div class="chapter-header">
+
+                </div>
+            </section>
+            <!-- GIỚI THIỆU CHUNG -->
+            <section class="chapter-box" id="chapter-1">
+                <h2 class="chapter-title">GIỚI THIỆU CHUNG</h2>
+                <div class="section-text">
+                    <div class="chapter-header">
             <div class="chapter-number">CHƯƠNG 1</div>
-            <h2 class="chapter-title">GIỚI THIỆU CHUNG</h2>
+            
             <div class="chapter-subtitle">Triết lý chiến thuật đồng nhất cho cả Đánh đơn và Đánh đôi</div>
         </div>
 
@@ -1017,13 +1083,15 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- CHAPTER 2: BRIEF HISTORY -->
-    <section class="chapter-page page-break-after" id="chapter-2">
-        <div class="chapter-header">
+                </div>
+            </section>
+            <!-- LƯỢC SỬ QUẦN VỢT -->
+            <section class="chapter-box" id="chapter-2">
+                <h2 class="chapter-title">LƯỢC SỬ QUẦN VỢT</h2>
+                <div class="section-text">
+                    <div class="chapter-header">
             <div class="chapter-number">CHƯƠNG 2</div>
-            <h2 class="chapter-title">LƯỢC SỬ QUẦN VỢT</h2>
+            
             <div class="chapter-subtitle">Từ bãi cỏ Nantclwyd (1873) đến kỷ nguyên chuyên nghiệp toàn cầu</div>
         </div>
 
@@ -1107,13 +1175,15 @@
                 </table>
             </div>
         </div>
-    </section>
-
-    <!-- CHAPTER 3: THE GAMES -->
-    <section class="chapter-page page-break-after" id="chapter-3">
-        <div class="chapter-header">
+                </div>
+            </section>
+            <!-- BẢN CHẤT CÁC THỂ THỨC THI ĐẤU -->
+            <section class="chapter-box" id="chapter-3">
+                <h2 class="chapter-title">BẢN CHẤT CÁC THỂ THỨC THI ĐẤU</h2>
+                <div class="section-text">
+                    <div class="chapter-header">
             <div class="chapter-number">CHƯƠNG 3</div>
-            <h2 class="chapter-title">BẢN CHẤT CÁC THỂ THỨC THI ĐẤU</h2>
+            
             <div class="chapter-subtitle">So sánh Đơn vs. Đôi &bull; Thống kê tần suất &bull; Nền tảng kỹ thuật động tác</div>
         </div>
 
@@ -1300,14 +1370,15 @@
                 </div>
             </div>
         </div>
-    </section>
-    
-        
-    <!-- CHAPTER 4: THE SERVE -->
-    <section class="chapter-page page-break-after" id="chapter-4">
-        <div class="chapter-header">
+                </div>
+            </section>
+            <!-- CÚ GIAO BÓNG (THE SERVE) -->
+            <section class="chapter-box" id="chapter-4">
+                <h2 class="chapter-title">CÚ GIAO BÓNG (THE SERVE)</h2>
+                <div class="section-text">
+                    <div class="chapter-header">
             <div class="chapter-number">CHƯƠNG 4</div>
-            <h2 class="chapter-title">CÚ GIAO BÓNG (THE SERVE)</h2>
+            
             <div class="chapter-subtitle">Vũ khí tấn công khởi đầu trận đấu &bull; Hình 6 đến Hình 13 &bull; Bảng 9</div>
         </div>
 
@@ -1499,13 +1570,15 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- CHAPTER 5: RETURN OF SERVICE -->
-    <section class="chapter-page page-break-after" id="chapter-5">
-        <div class="chapter-header">
+                </div>
+            </section>
+            <!-- TRẢ GIAO BÓNG (RETURN OF SERVICE) -->
+            <section class="chapter-box" id="chapter-5">
+                <h2 class="chapter-title">TRẢ GIAO BÓNG (RETURN OF SERVICE)</h2>
+                <div class="section-text">
+                    <div class="chapter-header">
             <div class="chapter-number">CHƯƠNG 5</div>
-            <h2 class="chapter-title">TRẢ GIAO BÓNG (RETURN OF SERVICE)</h2>
+            
             <div class="chapter-subtitle">Nghệ thuật vô hiệu hóa quả giao bóng &bull; Hình 14 đến Hình 21</div>
         </div>
 
@@ -1671,14 +1744,15 @@
                 </div>
             </div>
         </div>
-    </section>
-    
-        
-    <!-- CHAPTER 6: NET PLAY -->
-    <section class="chapter-page page-break-after" id="chapter-6">
-        <div class="chapter-header">
+                </div>
+            </section>
+            <!-- CHIẾN THUẬT TRÊN LƯỚI (NET PLAY) -->
+            <section class="chapter-box" id="chapter-6">
+                <h2 class="chapter-title">CHIẾN THUẬT TRÊN LƯỚI (NET PLAY)</h2>
+                <div class="section-text">
+                    <div class="chapter-header">
             <div class="chapter-number">CHƯƠNG 6</div>
-            <h2 class="chapter-title">CHIẾN THUẬT TRÊN LƯỚI (NET PLAY)</h2>
+            
             <div class="chapter-subtitle">Nghệ thuật chiếm lĩnh và làm chủ không gian trên lưới &bull; Hình 22 đến Hình 49</div>
         </div>
 
@@ -2167,14 +2241,15 @@
             </div>
         
         </div>
-    </section>
-    
-        
-    <!-- CHAPTER 7: BASE-LINE PLAY -->
-    <section class="chapter-page page-break-after" id="chapter-7">
-        <div class="chapter-header">
+                </div>
+            </section>
+            <!-- CHIẾN THUẬT CUỐI SÂN (BASE-LINE PLAY) -->
+            <section class="chapter-box" id="chapter-7">
+                <h2 class="chapter-title">CHIẾN THUẬT CUỐI SÂN (BASE-LINE PLAY)</h2>
+                <div class="section-text">
+                    <div class="chapter-header">
             <div class="chapter-number">CHƯƠNG 7</div>
-            <h2 class="chapter-title">CHIẾN THUẬT CUỐI SÂN (BASE-LINE PLAY)</h2>
+            
             <div class="chapter-subtitle">Nền tảng của các loạt bóng bền &bull; Hình 50 đến Hình 65</div>
         </div>
 
@@ -2454,13 +2529,15 @@
             </div>
         
         </div>
-    </section>
-
-    <!-- CHAPTER 8: SUMMARY & PARTING WORDS -->
-    <section class="chapter-page page-break-after" id="chapter-8">
-        <div class="chapter-header">
+                </div>
+            </section>
+            <!-- TỔNG KẾT CHIẾN THUẬT &amp; LỜI NHẮN GỬI -->
+            <section class="chapter-box" id="chapter-8">
+                <h2 class="chapter-title">TỔNG KẾT CHIẾN THUẬT &amp; LỜI NHẮN GỬI</h2>
+                <div class="section-text">
+                    <div class="chapter-header">
             <div class="chapter-number">CHƯƠNG 8</div>
-            <h2 class="chapter-title">TỔNG KẾT CHIẾN THUẬT &amp; LỜI NHẮN GỬI</h2>
+            
             <div class="chapter-subtitle">Hệ thống nguyên lý bất biến cho Đánh đơn và Đánh đôi</div>
         </div>
 
@@ -2496,8 +2573,32 @@
                 </div>
             </blockquote>
         </div>
-    </section>
-    
+                </div>
+            </section>
+
+        </main>
     </div>
+
+<script>
+        // Reading Progress
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+
+        // Dark Mode Toggle
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            const isDark = document.body.classList.contains('dark-mode');
+            const btn = document.getElementById('themeToggleBtn');
+            if (isDark) {
+                btn.innerHTML = '<i class="fa-solid fa-sun"></i> Giao Diện Sáng';
+            } else {
+                btn.innerHTML = '<i class="fa-solid fa-moon"></i> Giao Diện Tối';
+            }
+        }
+    </script>
 </body>
 </html>
