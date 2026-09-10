@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quần Vợt Đánh Đôi Thông Minh (Intelligent Doubles) - Skip Singleton | Bản Dịch Tiếng Việt</title>
+    <meta name="description" content="Bản dịch tiếng Việt trọn vẹn tác phẩm kinh điển Intelligent Doubles của chuyên gia Skip Singleton (USPTA) với lời tựa của huyền thoại Rod Laver. Cẩm nang toàn diện về vị trí đứng mặt lưới, kiểm soát khu vực giữa sân, nghệ thuật cắt bóng và tâm lý học đồng đội đỉnh cao.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0284c7;
+            --primary-dark: #0369a1;
+            --primary-light: #38bdf8;
+            --accent: #f59e0b;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --header-bg: #0f172a;
+        }
+
+        body.dark-mode {
+            --bg-page: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --border: #334155;
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+            --header-bg: #020617;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.8;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Standard Topnav */
+        .tu-topnav {
+            background: var(--header-bg);
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+
+        .tu-topnav .brand {
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .tu-topnav .brand span {
+            color: #38bdf8;
+        }
+
+        .tu-topnav .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            list-style: none;
+        }
+
+        .tu-topnav .nav-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .tu-topnav .nav-links a:hover {
+            color: #fff;
+        }
+
+        .tu-topnav .controls {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .theme-toggle-btn {
+            background: #334155;
+            border: none;
+            color: #f8fafc;
+            padding: 0.4rem 0.8rem;
+            border-radius: 9999px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        /* Progress Bar */
+        .reading-progress-bar {
+            position: fixed;
+            top: 55px;
+            left: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #0284c7, #38bdf8);
+            width: 0%;
+            z-index: 999;
+            transition: width 0.1s ease-out;
+        }
+
+        /* Hero Header */
+        .hero {
+            background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 50%, #0284c7 100%);
+            color: white;
+            padding: 3.5rem 1.5rem 3rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            padding: 0.4rem 1.25rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 1.25rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero p.subtitle {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+            font-weight: 300;
+        }
+
+        .hero-meta {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .hero-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        /* Download Section */
+        .download-banner {
+            max-width: 900px;
+            margin: -1.75rem auto 2rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.25rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: var(--card-shadow);
+            position: relative;
+            z-index: 10;
+        }
+
+        .download-info {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+        }
+
+        .pdf-badge {
+            background: #ef4444;
+            color: white;
+            font-size: 1.5rem;
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .download-btn {
+            background: #0284c7;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background 0.2s, transform 0.1s;
+        }
+
+        .download-btn:hover {
+            background: #0369a1;
+            transform: translateY(-2px);
+        }
+
+        /* Container Layout */
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem 4rem;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 2.5rem;
+        }
+
+        /* Sticky Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 75px;
+            height: calc(100vh - 90px);
+            overflow-y: auto;
+            padding-right: 0.5rem;
+        }
+
+        .toc-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        .toc-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .toc-list {
+            list-style: none;
+            font-size: 0.9rem;
+        }
+
+        .toc-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc-list a {
+            color: var(--text-muted);
+            text-decoration: none;
+            display: block;
+            padding: 0.35rem 0.5rem;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .toc-list a:hover {
+            color: var(--primary);
+            background: rgba(2, 132, 199, 0.1);
+        }
+
+        /* Content Area */
+        .content-area {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 3rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        .book-cover-wrap {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .book-cover-img {
+            max-width: 320px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.25);
+            border: 1px solid var(--border);
+        }
+
+        .chapter-box {
+            margin-bottom: 3.5rem;
+            scroll-margin-top: 80px;
+        }
+
+        .chapter-title {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            margin-bottom: 0.35rem;
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 0.5rem;
+        }
+
+        body.dark-mode .chapter-title {
+            color: #38bdf8;
+        }
+
+        .chapter-body h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin: 1.75rem 0 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .chapter-body p {
+            margin-bottom: 1.1rem;
+        }
+
+        .chapter-body ul, .chapter-body ol {
+            margin: 0.75rem 0 1.25rem 1.5rem;
+        }
+
+        .chapter-body li {
+            margin-bottom: 0.5rem;
+        }
+
+        .figure-wrap {
+            margin: 2.25rem 0;
+            text-align: center;
+            background: rgba(0,0,0,0.02);
+            padding: 1.25rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .figure-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .figure-caption {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 0.75rem;
+            font-weight: 600;
+        }
+
+        .callout {
+            border-left: 4px solid var(--primary);
+            background: rgba(2, 132, 199, 0.08);
+            padding: 1.25rem 1.5rem;
+            border-radius: 0 10px 10px 0;
+            margin: 1.5rem 0;
+        }
+
+        .callout h4 {
+            margin-bottom: 0.5rem;
+            color: var(--primary-dark);
+        }
+
+        body.dark-mode .callout h4 {
+            color: #38bdf8;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+            margin: 1.5rem 0;
+        }
+
+        .feature-box {
+            background: var(--bg-page);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.25rem;
+        }
+
+        .feature-box h4 {
+            margin-bottom: 0.5rem;
+            color: var(--primary-dark);
+        }
+
+        body.dark-mode .feature-box h4 {
+            color: #38bdf8;
+        }
+
+        .highlight-box {
+            background: rgba(245, 158, 11, 0.1);
+            border-left: 4px solid var(--accent);
+            padding: 1.25rem 1.5rem;
+            border-radius: 0 10px 10px 0;
+            margin: 1.5rem 0;
+        }
+
+        .highlight-box h4 {
+            color: #b45309;
+            margin-bottom: 0.5rem;
+        }
+
+        body.dark-mode .highlight-box h4 {
+            color: #fbbf24;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        .tu-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        .tu-table th, .tu-table td {
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border);
+            text-align: left;
+        }
+
+        .tu-table thead {
+            background: var(--primary);
+            color: white;
+        }
+
+        .tu-table tr:nth-child(even) {
+            background: rgba(0,0,0,0.02);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                display: none;
+            }
+            .content-area {
+                padding: 1.75rem;
+            }
+            .hero h1 {
+                font-size: 1.85rem;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            .download-banner {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            .download-info {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Language & Navigation Topbar -->
+    <nav class="tu-topnav">
+        <a href="/vi/books/" class="brand">
+            <i class="fa-solid fa-tennis-ball"></i>
+            <span>Tennis Unified</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="/vi/books/">Thư Viện Sách</a></li>
+            <li><a href="/vi/fundamentals/">Nền Tảng</a></li>
+            <li><a href="/vi/stroke-analysis/">Phân Tích Động Tác</a></li>
+            <li><a href="/vi/drills/">Bài Tập & Giáo Án</a></li>
+            <li><a href="/books/" data-lang-toggle="en"><i class="fa-solid fa-globe"></i> English</a></li>
+        </ul>
+        <div class="controls">
+            <button class="theme-toggle-btn" id="themeToggleBtn" onclick="toggleTheme()">
+                <i class="fa-solid fa-moon"></i> Giao Diện Tối
+            </button>
+        </div>
+    </nav>
+
+    <div class="reading-progress-bar" id="progressBar"></div>
+
+    <!-- Hero Header -->
+    <header class="hero">
+        <div class="hero-badge"><i class="fa-solid fa-trophy"></i> Tuyệt Phẩm Chiến Thuật Đánh Đôi Hiện Đại</div>
+        <h1>Quần Vợt Đánh Đôi Thông Minh</h1>
+        <p class="subtitle">Intelligent Doubles: A Sensible Approach to Better Doubles Play &bull; Skip Singleton &bull; Lời Tựa bởi Rod Laver</p>
+        <div class="hero-meta">
+            <span><i class="fa-solid fa-user-tie"></i> Tác giả: Skip Singleton (USPTA)</span>
+            <span><i class="fa-solid fa-star"></i> Lời tựa: Rod Laver</span>
+            <span><i class="fa-solid fa-book-open"></i> 11 Chương Thực Chiến</span>
+            <span><i class="fa-solid fa-language"></i> Bản dịch tiếng Việt chuẩn mực</span>
+        </div>
+    </header>
+
+    <!-- Download PDF Section -->
+    <div class="download-banner">
+        <div class="download-info">
+            <div class="pdf-badge"><i class="fa-solid fa-file-pdf"></i></div>
+            <div>
+                <h4 style="margin-bottom: 0.25rem;">Tải Bản PDF Vector In Ấn</h4>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">Phiên bản sách điện tử chất lượng cao với đầy đủ sơ đồ chiến thuật và hướng dẫn trực quan</p>
+            </div>
+        </div>
+        <a href="Intelligent_Doubles_Vietnamese_Final.pdf" class="download-btn" download>
+            <i class="fa-solid fa-download"></i> Tải PDF (Bản Đẹp)
+        </a>
+    </div>
+
+    <!-- Layout -->
+    <div class="main-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="toc-card">
+                <h3><i class="fa-solid fa-list-ul"></i> Mục Lục Sách</h3>
+                <ul class="toc-list">
+                    <li><a href="#foreword">Lời Tựa Của Rod Laver</a></li>
+                    <li><a href="#chapter-1">Chương 1: Sự Khác Biệt Của Đánh Đôi</a></li>
+                    <li><a href="#chapter-2">Chương 2: Phát Triển Một Đội Toàn Diện</a></li>
+                    <li><a href="#chapter-3">Chương 3: Kiểm Soát Cuộc Chơi</a></li>
+                    <li><a href="#chapter-4">Chương 4: Bố Trí Vị Trí Để Chiến Thắng</a></li>
+                    <li><a href="#chapter-5">Chương 5: Đạt Kết Quả Ổn Định</a></li>
+                    <li><a href="#chapter-6">Chương 6: Lợi Thế Giữa Sân</a></li>
+                    <li><a href="#chapter-7">Chương 7: Cú Lốp Bóng Đáng Sợ</a></li>
+                    <li><a href="#chapter-8">Chương 8: Những Tay Săn Bàn Lưới</a></li>
+                    <li><a href="#chapter-9">Chương 9: Thăng Tiến Qua Các Cấp Độ</a></li>
+                    <li><a href="#chapter-10">Chương 10: Quần Vợt "Tòa Án Ly Hôn"</a></li>
+                    <li><a href="#chapter-11">Chương 11: Nhân Đôi Niềm Vui</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content-area">
+            <div class="book-cover-wrap">
+                <img src="intelligent_assets/cover.jpg" alt="Bìa sách Quần Vợt Đánh Đôi Thông Minh" class="book-cover-img">
+                <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.95rem;">Cẩm nang chiến thuật đánh đôi kinh điển của chuyên gia Skip Singleton với lời tựa của huyền thoại Rod Laver</p>
+            </div>
+
+
+<section id="foreword" class="chapter-box">
+    <h2 class="chapter-title">Lời Tựa Của Huyền Thoại Rod Laver</h2>
+    <div class="chapter-body">
+        <p><em>Intelligent Doubles</em> mang đến một cách tiếp cận hết sức thẳng thắn, thực tế và sâu sắc để nâng tầm trình độ đánh đôi của bạn. Tác phẩm cung cấp những góc nhìn tuyệt vời và vô số lời khuyên thực chiến quý báu giúp người chơi ở mọi cấp độ — từ phong trào giao lưu đến thi đấu tranh cúp đỉnh cao — tìm thấy niềm hứng khởi trọn vẹn trên sân đấu.</p>
+        
+        <p>Hầu hết các tay vợt phong trào đều yêu thích nội dung đánh đôi nhưng lại chưa dành đủ thời gian tập luyện để đạt được tính ổn định cần thiết. Để chơi tốt nội dung này đòi hỏi bạn phải có khả năng kiểm soát bóng xuất sắc, phản xạ bắt lưới nhạy bén và trên hết là một tư duy chiến thuật thấu đáo. Tác giả Skip Singleton đã làm sáng tỏ những nguyên lý này một cách vô cùng sinh động, dễ hiểu và truyền cảm hứng mạnh mẽ.</p>
+
+        <div class="callout callout-info">
+            <h4><i class="fa-solid fa-quote-left"></i> Nhận Định Của Huyền Thoại Evonne Goolagong-Cawley</h4>
+            <p>"Skip đã nắm bắt trọn vẹn mọi nguyên lý nền tảng của môn quần vợt đánh đôi — một bộ môn vừa đầy thử thách vừa tràn ngập niềm vui mà tôi đã gắn bó suốt sự nghiệp thi đấu. Sau khi đọc cuốn sách này, tôi tin chắc bạn sẽ biết cách khai thác tối đa tiềm năng bản thân trên sân đôi. Tôi thực sự yêu thích từng chương sách!"</p>
+            <p><em>— Evonne Goolagong-Cawley, chủ nhân 92 danh hiệu quốc tế, 14 danh hiệu Grand Slam.</em></p>
+        </div>
+    </div>
+</section>
+
+<section id="chapter-1" class="chapter-box">
+    <h2 class="chapter-title">Chương 1: Sự Khác Biệt Của Đánh Đôi (The Doubles Difference)</h2>
+    <div class="chapter-body">
+        <h3>1. Đánh Đôi: Hình Thái Nghệ Thuật Của Quần Vợt</h3>
+        <p>Huyền thoại Bill Talbert từng khẳng định một câu nói bất hủ: <em>"Đánh đôi thực sự là một môn thể thao tuyệt vời hơn đánh đơn hay bất kỳ bộ môn thể thao nào khác mà bạn có thể kể tên"</em>. Đánh đôi thường được xưng tụng là "hình thái nghệ thuật" của quần vợt bởi sự hòa quyện đỉnh cao giữa sự nhanh nhạy cơ thể, tính toán hình học không gian và sự kết nối tinh tế giữa con người với con người.</p>
+        
+        <p>Vậy điều gì đã tạo nên sức hút mãnh liệt khiến đông đảo tay vợt từ nghiệp dư đến chuyên nghiệp say mê đánh đôi?</p>
+        <ul>
+            <li><strong>Tính giao lưu và kết nối xã hội:</strong> Trong khi đánh đơn mang tính đối đầu cô độc và căng thẳng, đánh đôi là một hoạt động tập thể nơi bốn người cùng chia sẻ tiếng cười, những pha bóng ngoạn mục và những câu chuyện thú vị sau giờ thi đấu.</li>
+            <li><strong>Sự bền bỉ theo năm tháng:</strong> Đánh đôi đòi hỏi quãng đường di chuyển ngắn hơn đánh đơn, dựa vào vị trí đứng và phản xạ đón đầu thay vì sự bứt tốc cơ bắp thuần túy. Nhờ đó, bạn có thể tiếp tục thi đấu và thăng hoa trên sân đôi cho đến tuổi 60, 70 hay thậm chí 80 tuổi.</li>
+            <li><strong>Chiều sâu chiến thuật vô tận:</strong> Mỗi pha bóng trên sân đôi là một bài toán phối hợp biến hóa khôn lường giữa bốn khối óc đang vận hành cùng lúc.</li>
+        </ul>
+
+        <h3>2. Bản Chất: Ván Cờ Thế Tốc Độ Cao</h3>
+        <p>Một quan niệm sai lầm kinh điển là coi đánh đôi như hai trận đánh đơn thu nhỏ diễn ra song song trên cùng một sân. Trong đánh đơn, bạn có thể ung dung đứng sau vạch cuối sân để kiên nhẫn bạt bóng qua lại 20 lần nhằm vắt kiệt thể lực đối phương. Nhưng trong đánh đôi, sự hiện diện của hai tay vợt đứng lưới đối phương sẽ lập tức trừng phạt bất kỳ đường bóng nào thiếu sắc sảo.</p>
+        
+        <p>Đánh đôi là môn thể thao của cự ly gần, của những góc đánh chéo sân hiểm hóc, những cú bắt volley chúc xuống dưới chân và những pha di chuyển bọc lót đồng bộ. Để chiến thắng, bạn không cần phải là người chạy nhanh nhất hay đập bóng mạnh nhất, bạn phải là người biết <strong>tư duy thông minh hơn</strong>.</p>
+    </div>
+</section>
+
+<section id="chapter-2" class="chapter-box">
+    <h2 class="chapter-title">Chương 2: Phát Triển Thành Một Đội Toàn Diện (Developing as a Team)</h2>
+    <div class="chapter-body">
+        <h3>1. "Hiểu Rõ Bản Thân Và Hiểu Rõ Bạn Cặp" (Know Thyselves)</h3>
+        <p>Bí quyết đầu tiên để xây dựng một cặp đôi bất khả chiến bại bắt đầu từ việc thấu hiểu sâu sắc bản thân và người đồng đội. Không có hai tay vợt nào hoàn toàn giống nhau về kỹ thuật, thể lực và tâm lý thi đấu. Một đội đôi mạnh là đội biết cách ghép nối những mảnh ghép bù trừ cho nhau một cách hài hòa:</p>
+        
+        <div class="feature-grid">
+            <div class="feature-box">
+                <h4><i class="fa-solid fa-fire"></i> Tay Vợt Tấn Công (The Aggressor)</h4>
+                <p>Thích giao bóng mạnh, thích lao lên áp sát lưới, thích tung những cú đập smash dứt điểm đầy uy lực. Nhược điểm: Dễ nóng vội, thiếu kiên nhẫn khi đối thủ chơi bóng bền phòng ngự.</p>
+            </div>
+            <div class="feature-box">
+                <h4><i class="fa-solid fa-shield"></i> Tay Vợt Ổn Định (The Steady Anchor)</h4>
+                <p>Kiên nhẫn bám vạch cuối sân, ít khi tự đánh hỏng, có khả năng lốp bóng phòng thủ bền bỉ và nhắm vào chân đối thủ chuẩn xác. Nhược điểm: Đôi khi quá an toàn, bỏ lỡ cơ hội kết liễu.</p>
+            </div>
+        </div>
+
+        <p>Sự kết hợp hoàn hảo nhất trong lịch sử đánh đôi thường là sự giao thoa giữa một "ngọn lửa" tấn công mãnh liệt và một "tảng băng" phòng ngự kiên cố. Hai phong cách này sẽ nương tựa vào nhau để vượt qua mọi biến động của trận đấu.</p>
+
+        <h3>2. Nghệ Thuật Đồng Hành & Giao Tiếp Xây Dựng</h3>
+        <p>Khi bạn cặp đánh hỏng một quả bóng dễ ngay trước mặt lưới, bạn sẽ phản ứng như thế nào? Cách bạn cư xử trong 3 giây tiếp theo sẽ quyết định thắng bại của cả trận đấu:</p>
+        <ul>
+            <li><strong>Nguyên tắc vàng: Không bao giờ truyền năng lượng tiêu cực:</strong> Cúi đầu, chống tay vào hông, thở dài thườn thượt hay nhìn lên trời với vẻ chán nản là những mũi tên độc làm tê liệt sự tự tin của bạn cặp.</li>
+            <li><strong>Hành vi củng cố tích cực:</strong> Lập tức tiến lại gần, vỗ tay hoặc chạm vợt và nói lời động viên ấm áp: "Cú vung vợt vừa rồi rất quyết đoán, cứ tự tin đón bóng như thế ở pha sau nhé!".</li>
+            <li><strong>Giao tiếp thống nhất chiến thuật:</strong> Luôn trao đổi ngắn gọn trước mỗi lượt giao bóng hoặc trả giao bóng: "Pha này con sẽ giao bóng rộng ra mang sườn để chú vồ bóng trung lộ nhé!".</li>
+        </ul>
+    </div>
+</section>
+
+<section id="chapter-3" class="chapter-box">
+    <h2 class="chapter-title">Chương 3: Làm Chủ Cuộc Chơi Trong Sự Kiểm Soát (Playing the Game in Control)</h2>
+    <div class="chapter-body">
+        <h3>1. Kiểm Soát Tâm Trí Bản Thân Trước Khi Kiểm Soát Quả Bóng</h3>
+        <p>Sự mất kiểm soát trên sân quần vợt thường bắt nguồn từ bên trong tâm lý của chính bạn trước khi biểu hiện ra thành những cú đánh hỏng bên ngoài. Khi bạn cảm thấy tức giận vì một quyết định bắt bóng của đối thủ, hoặc hoảng loạn vì bị dẫn trước 0-40, nhịp tim bạn sẽ tăng vọt, cơ bắp vai và cổ tay sẽ co cứng lại, tước đoạt hoàn toàn cảm giác bóng êm ái.</p>
+        
+        <p>Để duy trì trạng thái kiểm soát đỉnh cao (In Control), Skip Singleton khuyến nghị thực hành quy trình 3 bước hồi tâm giữa các điểm số:</p>
+        <ol>
+            <li><strong>Thả lỏng cơ học (Physical Release):</strong> Quay lưng lại phía lưới, thả lỏng hai vai, hít một hơi thật sâu bằng mũi và thở ra chậm rãi bằng miệng để đưa nhịp tim trở lại ngưỡng bình tĩnh.</li>
+            <li><strong>Định tâm (Reset):</strong> Dùng tay vuốt lại các dây cước trên mặt vợt hoặc chỉnh lại dây giày. Hành động tập trung vào chi tiết nhỏ này giúp cắt đứt hoàn toàn dòng suy nghĩ tiêu cực vừa xảy ra.</li>
+            <li><strong>Thiết lập mục tiêu mới (Refocus):</strong> Hướng mắt về phía sân đối phương và hình dung rõ ràng điểm rơi quả bóng tiếp theo bạn muốn đánh trước khi bước vào vị trí giao bóng hoặc đỡ bóng.</li>
+        </ol>
+
+        <h3>2. Kiểm Soát Nhịp Độ Trận Đấu (Controlling the Tempo)</h3>
+        <p>Đội bóng làm chủ được nhịp độ trận đấu sẽ là đội giành chiến thắng chung cuộc. Hãy học cách điều chỉnh tốc độ trận đấu có lợi cho mình:</p>
+        <ul>
+            <li>Khi đội bạn đang nắm giữ chuỗi lên điểm hưng phấn, hãy giữ nhịp độ nhanh gọn, tiếp tục giao bóng dứt khoát để duy trì áp lực nghẹt thở lên đối phương.</li>
+            <li>Khi đội bạn đang bị cuốn vào vòng xoáy đánh hỏng liên tiếp, hãy chủ động làm chậm nhịp độ trận đấu: Bước đi chậm rãi nhặt bóng, lau mồ hôi, trao đổi đôi câu với bạn cặp để phá vỡ sự hưng phấn của đối thủ.</li>
+        </ul>
+    </div>
+</section>
+
+
+<section id="chapter-4" class="chapter-box">
+    <h2 class="chapter-title">Chương 4: Bố Trí Vị Trí Để Chiến Thắng (Positioning for Success)</h2>
+    <div class="chapter-body">
+        <h3>1. Khai Thác Sức Mạnh Tối Thượng Của Mặt Lưới</h3>
+        <p>Trong quần vợt đánh đôi, mọi chiến lược đều xoay quanh một mục tiêu cốt lõi: <em>Chiếm lĩnh và kiểm soát mặt lưới</em>. Đội nào có mặt trước trên lưới và giữ vững được cự ly sẽ là đội nắm giữ quyền sinh sát điểm số. Khi đứng trên lưới, bạn rút ngắn khoảng cách với đối phương, thu hẹp thời gian phản xạ của họ và tạo ra những góc đánh hiểm hóc mà một tay vợt đứng cuối sân không bao giờ có thể tạo ra được.</p>
+        
+        <div class="figure-wrap">
+            <img src="intelligent_assets/diag_4_1_positioning.jpg" alt="Sơ đồ bố trí vị trí chuẩn mực trong đánh đôi" class="figure-img">
+            <p class="figure-caption"><strong>Hình 4.1:</strong> Bố trí vị trí xuất phát chuẩn mực của bốn tay vợt trên sân: Người giao bóng, người đỡ bóng và hai người bạn cặp trên lưới.</p>
+        </div>
+
+        <h3>2. Vị Trí Đứng Khởi Đầu Của Bốn Tay Vợt</h3>
+        <div class="table-responsive">
+            <table class="tu-table">
+                <thead>
+                    <tr>
+                        <th>Vai Trò Trên Sân</th>
+                        <th>Vị Trí Đứng Tối Ưu</th>
+                        <th>Nhiệm Vụ Trọng Tâm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Người Giao Bóng (Server)</strong></td>
+                        <td>Đứng ở khoảng 1/3 cự ly từ vạch mốc trung tâm ra vạch biên đơn.</td>
+                        <td>Giao bóng xoáy sâu kiểm soát và lập tức dâng lên lưới để hoàn tất bức tường kép.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bạn Cặp Người Giao Bóng</strong></td>
+                        <td>Đứng ở trung tâm ô giao bóng của mình, cách lưới khoảng 2 mét.</td>
+                        <td>Chủ động rình rập, sẵn sàng cắt ngang (poach) để kết liễu các đường trả bóng non.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Người Đỡ Bóng (Receiver)</strong></td>
+                        <td>Đứng gần góc giao điểm vạch cuối sân và vạch biên đơn.</td>
+                        <td>Đưa quả trả bóng chéo sân an toàn rơi thấp vào chân người giao bóng đang lao lên.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bạn Cặp Người Đỡ Bóng</strong></td>
+                        <td>Đứng gần vạch giao bóng (service line) ở phần sân của mình.</td>
+                        <td>Quan sát chất lượng quả trả giao bóng; nếu tốt thì lao lên lưới, nếu hỏng thì lùi về phòng thủ.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="figure-wrap">
+            <img src="intelligent_assets/diag_4_2_net_coverage.jpg" alt="Phạm vi bao quát mặt lưới và di chuyển đồng bộ" class="figure-img">
+            <p class="figure-caption"><strong>Hình 4.2:</strong> Phạm vi bao quát góc sân: Sự di chuyển bọc lót đồng bộ giữa hai người chơi ngăn chặn các đường bóng xuyên phá.</p>
+        </div>
+
+        <h3>3. Nguyên Lý Di Chuyển Đồng Bộ (Tandem Movement)</h3>
+        <p>Sai lầm tệ hại nhất của người chơi phong trào là thói quen "cắm trại" một chỗ (camping out) — đứng chết trân ở một vị trí bất kể quả bóng đang bay về đâu. Skip Singleton nhấn mạnh nguyên lý di chuyển song hành như chiếc xe hai bánh:</p>
+        <ul>
+            <li><strong>Di chuyển theo chiều ngang:</strong> Khi đối thủ bị đẩy dạt sang góc xa bên trái sân họ, cả hai bạn phải đồng bộ trượt sang bên phải sân mình để khép kín góc đánh dọc dây nguy hiểm nhất và góc đánh chéo sân sắc bén.</li>
+            <li><strong>Di chuyển theo chiều dọc:</strong> Khi đội bạn tung ra cú lốp bóng sâu đẩy lùi đối thủ, cả hai người phải đồng loạt dâng cao áp sát lưới. Ngược lại, khi đối phương chuẩn bị tung cú đập smash từ trên cao, cả hai phải đồng loạt lùi bước về phía sau để tăng thời gian phản xạ.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="chapter-5" class="chapter-box">
+    <h2 class="chapter-title">Chương 5: Đạt Được Kết Quả Ổn Định (Achieving Consistent Results)</h2>
+    <div class="chapter-body">
+        <h3>1. Định Luật Xác Suất Trong Đánh Đôi Cơ Bản (The Percentages)</h3>
+        <p>Các nghiên cứu thống kê trên toàn cầu đã chỉ ra một sự thật kinh ngạc: <em>Hơn 80% điểm số trong các trận đánh đôi phong trào kết thúc không phải do một cú đánh ghi điểm trực tiếp tuyệt hảo (winner), mà do một lỗi tự đánh hỏng ngớ ngẩn (unforced error)</em>. Đội nào đưa bóng qua lưới nhiều hơn đối phương một lần sẽ là đội nâng cao chiếc cúp vô địch.</p>
+        
+        <p>Để trở thành một tay vợt đánh đôi thông minh, bạn phải luôn thi đấu theo định luật xác suất an toàn:</p>
+        <ul>
+            <li><strong>Biên độ an toàn qua mép lưới:</strong> Không bao giờ cố tình cạo bóng sát mép lưới từ vạch cuối sân. Hãy duy trì độ cao qua lưới từ 30 đến 50 cm với độ xoáy cuộn cống (topspin). Biên độ an toàn này giúp bạn triệt tiêu hoàn toàn nguy cơ rúc lưới.</li>
+            <li><strong>Biên độ an toàn vạch kẻ sân:</strong> Nhắm đích rơi của bóng cách các vạch biên và vạch cuối sân tối thiểu 1 mét. Đừng cố tình đưa bóng liếm mép vạch trắng trong các tình huống bóng giằng co thông thường.</li>
+            <li><strong>Ưu tiên đường chéo sân:</strong> Đường chéo sân có chiều dài 82.5 feet (dài hơn đường dọc dây gần 4.5 feet) và đi qua phần võng thấp nhất của lưới (3 feet ở giữa so với 3.5 feet ở hai cột biên). Đánh chéo sân luôn mang lại tỷ lệ an toàn cao nhất.</li>
+        </ul>
+
+        <div class="figure-wrap">
+            <img src="intelligent_assets/diag_4_3_angles.jpg" alt="Quy luật góc đánh hình học và biên độ an toàn" class="figure-img">
+            <p class="figure-caption"><strong>Hình 5.1:</strong> Góc đánh hình học: Tận dụng góc chéo sân rộng mở để tạo biên độ an toàn lớn nhất cho từng pha xử lý.</p>
+        </div>
+
+        <h3>2. Loại Bỏ Lối Chơi "Lúc Nóng Lúc Lạnh" (Hot/Cold Play)</h3>
+        <p>Rất nhiều tay vợt có lối chơi thất thường: Game này đánh những cú bóng xuất thần như Roger Federer, nhưng game sau lại liên tiếp đánh bóng hỏng như một người mới tập chơi. Lối chơi này gây hoang mang tột độ cho người bạn cặp và phá hủy tính liên tục của đội.</p>
+        
+        <p>Để đạt được sự ổn định bền vững, hãy thay thế tâm lý "tìm kiếm cú đánh để đời" bằng tư duy "xây dựng thế trận từng bước":</p>
+        <ul>
+            <li>Chấp nhận những pha bóng bền kiên nhẫn thay vì nôn nóng dứt điểm ngay từ chạm đầu tiên.</li>
+            <li>Đánh bóng với 75% đến 80% sức mạnh có kiểm soát, tập trung vào độ sâu và độ xoáy thay vì tốc độ bạt bóng mù quáng.</li>
+            <li>Chỉ tung đòn dứt điểm ăn điểm trực tiếp khi bóng đã rơi bổng ngay trước mặt bạn bên trên mép lưới.</li>
+        </ul>
+    </div>
+</section>
+
+
+<section id="chapter-6" class="chapter-box">
+    <h2 class="chapter-title">Chương 6: Lợi Thế Khu Vực Giữa Sân (The Midcourt Advantage)</h2>
+    <div class="chapter-body">
+        <h3>1. Làm Chủ Khu Vực Chuyển Tiếp (Transition Zone)</h3>
+        <p>Trong các lớp học quần vợt nhập môn, huấn luyện viên thường cảnh báo học viên rằng khu vực giữa sân (khoảng không gian nằm giữa vạch giao bóng và vạch cuối sân) là "vùng đất chết" (No-Man's Land) và bạn không bao giờ được phép đứng ở đó. Lời khuyên này hoàn toàn đúng nếu bạn có ý định "cắm trại" đứng yên ở đó để đánh bóng. Tuy nhiên, đối với một tay vợt đánh đôi thông minh, khu vực giữa sân chính là <strong>vùng chuyển tiếp vàng</strong> để đoạt quyền chủ động mặt lưới.</p>
+        
+        <div class="figure-wrap">
+            <img src="intelligent_assets/diag_6_midcourt.jpg" alt="Sơ đồ xử lý khu vực giữa sân và dâng lên lưới" class="figure-img">
+            <p class="figure-caption"><strong>Hình 6.1:</strong> Khu vực chuyển tiếp giữa sân: Bộ ba cú đánh hoàn hảo từ vạch cuối sân lên đến mặt lưới dứt điểm.</p>
+        </div>
+
+        <h3>2. Chuỗi Ba Cú Đánh Tiếp Cận Mặt Lưới Chuẩn Mực</h3>
+        <p>Để di chuyển từ vạch cuối sân lên tới vị trí áp sát lưới ghi điểm, bạn thường phải trải qua chuỗi 3 cú đánh phối hợp liên hoàn:</p>
+        <ol>
+            <li><strong>Cú đánh tiếp cận (Approach Shot):</strong> Thực hiện từ cuối sân, đưa quả bóng đi sâu vào góc yếu của đối phương hoặc đánh bóng xoáy cắm chân người đối diện để buộc họ phải phòng thủ bị động.</li>
+            <li><strong>Cú volley chuyển tiếp hoặc half-volley (Transition Volley):</strong> Thực hiện tại khu vực giữa sân. Đây là cú đánh khó nhất đòi hỏi bạn phải hãm đà di chuyển, thực hiện bước tách chân (split-step) để giữ thân người thăng bằng tuyệt đối, bắt quả volley ở tầm thấp đưa bóng đi sâu sát vạch cuối sân đối phương.</li>
+            <li><strong>Cú volley dứt điểm (Put-Away Volley):</strong> Sau cú đánh chuyển tiếp thành công, bạn bước thêm 2 bước lớn để áp sát mép lưới, đón quả bóng bay bổng của đối phương và đập chém bóng chúc xuống sân ăn điểm trực tiếp.</li>
+        </ol>
+
+        <div class="callout callout-info">
+            <h4><i class="fa-solid fa-anchor"></i> Nguyên Tắc Vàng: Đứng Yên Khi Tiếp Xúc Bóng</h4>
+            <p>Nguyên nhân hàng đầu khiến các tay vợt đánh hỏng quả volley chuyển tiếp ở giữa sân là thói quen vừa chạy vừa vung vợt đánh bóng. Hãy ghi nhớ: <em>Trước khi vợt chạm vào bóng nửa giây, bạn phải hãm đà dừng hẳn đôi chân, giữ đầu và thân người tĩnh lặng tuyệt đối cho đến khi quả bóng rời khỏi mặt vợt</em>. Sau đó bạn mới tiếp tục bước đà dâng lên.</p>
+        </div>
+    </div>
+</section>
+
+<section id="chapter-7" class="chapter-box">
+    <h2 class="chapter-title">Chương 7: Rắc Rối Nhân Đôi: Cú Lốp Bóng Đáng Sợ (Double Trouble: The Dreaded Lob)</h2>
+    <div class="chapter-body">
+        <h3>1. Tại Sao Cú Lốp Bóng Lại Là Nỗi Ám Ảnh Lớn Nhất?</h3>
+        <p>Không có cú đánh nào có khả năng phá vỡ cấu trúc trận đấu, bẻ gãy nhịp độ thi đấu và đảo lộn hoàn toàn tâm lý của đối thủ nhanh chóng như một quả lốp bóng bổng chuẩn xác. Rất nhiều tay vợt phong trào coi cú lốp bóng là "cơn ác mộng tồi tệ nhất" trên sân đôi bởi các lý do sau:</p>
+        <ul>
+            <li>Nó tước đoạt ngay lập tức lợi thế mặt lưới mà bạn vừa dày công thiết lập, buộc bạn phải quay lưng tháo chạy về phía vạch cuối sân trong sự hoảng loạn.</li>
+            <li>Nó đảo ngược thế cờ: Đội đang tấn công bỗng chốc bị biến thành đội phòng ngự, trong khi đội tung cú lốp bóng lập tức dâng lên chiếm lĩnh mặt lưới.</li>
+            <li>Nó thử thách độ dẻo dai của cơ bắp cổ và khả năng thăng bằng không gian của bạn dưới ánh nắng chói chang.</li>
+        </ul>
+
+        <h3>2. Kỹ Thuật Bộ Chân "Pat and Mike" Hóa Giải Quả Lốp</h3>
+        <p>Khi đối phương tung cú lốp bóng qua đầu, phản xạ tự nhiên nhưng sai lầm chết người của người chơi là ngửa cổ chạy lùi thẳng ra sau. Điều này khiến bạn mất thăng bằng, rất dễ vấp ngã và thường chỉ vung vợt trúng gió.</p>
+        
+        <p>Quy trình di chuyển chuẩn mực để đập smash quả lốp:</p>
+        <ul>
+            <li><strong>Xoay vai lập tức (Turn the Shoulders):</strong> Ngay khoảnh khắc bóng rời vợt đối phương theo phương thẳng đứng, lập tức xoay nghiêng người sang một bên như tư thế bắn cung.</li>
+            <li><strong>Bộ chân bước trượt nghiêng (Side-Shuffle):</strong> Sử dụng bộ chân trượt nghiêng chéo bước để lùi về sau thật nhanh trong khi vẫn luôn hướng mắt về phía quả bóng trên không.</li>
+            <li><strong>Tay không thuận chỉ thẳng lên trời:</strong> Giơ cánh tay trái chỉ vào quả bóng để định vị không gian và nâng cao vai phải cầm vợt sẵn sàng phát lực đập smash.</li>
+            <li><strong>Quyết định đập trên không hay để bóng nảy:</strong> Nếu quả bóng lốp bay quá sâu sát vạch cuối sân, hãy khôn ngoan để bóng nảy xuống đất một nhịp rồi mới tung cú đánh bạt xoáy sâu thay vì cố nhảy với đập smash trong tư thế với bóng rủi ro.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="chapter-8" class="chapter-box">
+    <h2 class="chapter-title">Chương 8: Những Tay Săn Bàn Lưới: Nghệ Thuật Cắt Bóng (Movers, Poachers, and Shakers)</h2>
+    <div class="chapter-body">
+        <h3>1. Người Đứng Lưới Làm Chủ Điểm Số Dù Không Chạm Bóng</h3>
+        <p>Nhiều tay vợt lầm tưởng rằng người đứng lưới chỉ có ích khi quả bóng bay thẳng vào vợt của mình. Skip Singleton chỉ ra rằng: <em>Một người đứng lưới đẳng cấp luôn kiểm soát toàn bộ diễn biến của điểm số ngay cả khi anh ta không hề chạm vào quả bóng</em>.</p>
+        
+        <p>Bằng sự chuyển động linh hoạt, dập dờn trên mũi bàn chân và những bước nhấp giả đe dọa, bạn đang gửi một thông điệp đanh thép tới người đỡ bóng đối phương: "Tôi đang rình rập ở đây, nếu bạn đánh bóng lỏng tay, tôi sẽ vồ lấy nó ngay lập tức!". Nỗi sợ hãi vô hình này sẽ khiến người đỡ bóng đối phương mất tập trung, cố tình đánh bóng quá sát mép dây hành lang và tự động mắc lỗi đánh bóng ra ngoài.</p>
+
+        <div class="figure-wrap">
+            <img src="intelligent_assets/diag_8_poaching.jpg" alt="Thời điểm vàng và góc di chuyển cắt bóng lưới" class="figure-img">
+            <p class="figure-caption"><strong>Hình 8.1:</strong> Nghệ thuật cắt bóng lưới (Poaching): Đọc tín hiệu bóng nổi lơ lửng và bước chéo góc 45 độ dứt điểm gọn gàng.</p>
+        </div>
+
+        <h3>2. Tín Hiệu Nhận Diện "Thời Điểm Vàng" Để Cắt Bóng (Poaching)</h3>
+        <p>Tuyệt đối không cắt bóng lưới một cách mù quáng theo kiểu may rủi. Hãy chỉ xuất phát lao cắt khi xuất hiện các tín hiệu nhận diện sau từ đối thủ:</p>
+        <ul>
+            <li><strong>Đối thủ tiếp xúc bóng ở tầm dưới đầu gối:</strong> Khi đối phương phải cúi gập người cứu một quả bóng rơi cắm chân dưới mép lưới, về mặt sinh cơ học họ buộc phải ngửa mặt vợt đánh bóng bay bổng lên cao. Đây là tín hiệu bật đèn xanh để bạn lập tức lao sang trung lộ vồ bóng.</li>
+            <li><strong>Quả bóng trả lại bay bồng bềnh thiếu tốc độ:</strong> Quả bóng bay lơ lửng cho bạn thừa thời gian di chuyển 2 đến 3 bước chân thoải mái để đón đầu điểm rơi.</li>
+            <li><strong>Đối phương bị mất thăng bằng hoặc bị dạt xa ra ngoài sân:</strong> Đối thủ không có điểm tựa cơ thể để tung cú đánh dọc dây hiểm hóc, 90% bóng sẽ bay chéo sân an toàn và đi thẳng vào tầm đón của bạn.</li>
+        </ul>
+    </div>
+</section>
+
+
+<section id="chapter-9" class="chapter-box">
+    <h2 class="chapter-title">Chương 9: Thăng Tiến Qua Các Cấp Độ Kỹ Năng (Advancing Through the Levels)</h2>
+    <div class="chapter-body">
+        <h3>1. Bậc Thang Tiến Bộ Trong Quần Vợt Đánh Đôi</h3>
+        <p>Mỗi tay vợt đều khao khát nâng tầm thứ hạng và trình độ thi đấu của mình từ các giải đấu phong trào câu lạc bộ lên đến các đấu trường mở rộng đỉnh cao. Tuy nhiên, sự tiến bộ trong đánh đôi không chỉ đơn thuần là việc bạn vung vợt mạnh hơn, mà là sự trưởng thành về nhận thức chiến thuật và độ nhạy bén không gian:</p>
+        
+        <div class="table-responsive">
+            <table class="tu-table">
+                <thead>
+                    <tr>
+                        <th>Trình Độ NTRP</th>
+                        <th>Đặc Điểm Thi Đấu Đặc Trưng</th>
+                        <th>Yêu Cầu Chiến Thuật Then Chốt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cấp Độ 2.5 - 3.0 (Khởi Đầu)</strong></td>
+                        <td>Các pha bóng kết thúc chủ yếu do lỗi tự đánh hỏng. Thường đứng sau vạch cuối sân và sợ lên lưới.</td>
+                        <td>Tập trung đưa bóng qua lưới an toàn, rèn luyện thói quen dâng lên lưới khi đối phương đánh bóng ngắn.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cấp Độ 3.5 - 4.0 (Trung Cấp)</strong></td>
+                        <td>Đã làm chủ kỹ thuật giao bóng lên lưới, bắt volley định hướng và sử dụng cú lốp bóng có ý thức.</td>
+                        <td>Học cách bẻ giao bóng bằng cú trả bóng chìm cắm chân, khai thác triệt để điểm yếu của đối thủ và bọc lót đồng bộ.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cấp Độ 4.5 - 5.0+ (Đỉnh Cao)</strong></td>
+                        <td>Tốc độ bóng và độ xoáy cực lớn. Phản xạ cận chiến trên lưới diễn ra dưới nửa giây.</td>
+                        <td>Sử dụng đội hình biến hóa (đội hình Úc, đội hình chữ I), ra dấu tay sau lưng và kiểm soát tuyệt đối nhịp độ trận đấu.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>2. Nghệ Thuật Khảo Sát & Giải Mã Đối Thủ (Scouting)</h3>
+        <p>Trước khi trận đấu bắt đầu (đặc biệt là trong 5 đến 10 phút khởi động trên sân), một cặp đôi thông minh sẽ kín đáo quan sát và thu thập thông tin tình báo quý giá về hai đối thủ bên kia lưới:</p>
+        <ul>
+            <li><strong>Ai là người có tâm lý thi đấu yếu hơn?</strong> Hãy quan sát ngôn ngữ cơ thể của hai đối thủ khi đánh hỏng; người nào hay thở dài, bực bội hoặc cúi đầu sẽ là mục tiêu chiến thuật cần gây áp lực liên tục ở các điểm số then chốt.</li>
+            <li><strong>Ai có cú trái tay kém hơn?</strong> Hầu hết các tay vợt phong trào đều có cú trái tay yếu hơn thuận tay. Hãy thống nhất giao bóng sâu vào góc trái của họ và ép họ phải đánh trái tay trong tư thế bị động.</li>
+            <li><strong>Đối thủ thích tốc độ bóng như thế nào?</strong> Nếu đối phương thích đánh bóng nhanh có lực, hãy hóa giải bằng những đường bóng cắt chìm lững lờ đổi nhịp. Nếu họ thích bóng chậm bồng bềnh, hãy chủ động tăng tốc độ và lao lên chiếm lưới.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="chapter-10" class="chapter-box">
+    <h2 class="chapter-title">Chương 10: Tâm Lý Học "Tòa Án Ly Hôn" Trên Sân Đôi (Divorce Court Doubles)</h2>
+    <div class="chapter-body">
+        <h3>1. Hiện Tượng Căng Thẳng Giữa Vợ Chồng & Bạn Đời</h3>
+        <p>Trong giới quần vợt phong trào, thể thức thi đấu đôi nam nữ giữa các cặp vợ chồng hoặc người yêu thường được gọi vui nhưng đầy chua chát là "Quần vợt Tòa án Ly hôn" (Divorce Court Doubles). Rất nhiều cặp đôi vốn sống hòa thuận trong gia đình nhưng vừa bước chân vào sân quần vợt là bắt đầu xảy ra to tiếng, trách móc và giận dỗi nhau gay gắt.</p>
+        
+        <p>Căn nguyên tâm lý sâu xa của hiện tượng này bắt nguồn từ:</p>
+        <ul>
+            <li><strong>Kỳ vọng quá phi thực tế:</strong> Chúng ta thường bao dung và lịch sự với một người bạn lạ cùng chơi, nhưng lại đòi hỏi người bạn đời của mình phải hoàn hảo và không được phép mắc bất kỳ sai lầm nào.</li>
+            <li><strong>Hội chứng "thầy giáo khó tính":</strong> Người có trình độ chơi tốt hơn thường có xu hướng đứng trên sân liên tục lên lớp, chỉ trích động tác và dạy bảo người kia ngay giữa trận đấu, làm tổn thương lòng tự trọng của đối phương.</li>
+            <li><strong>Chuyển hóa căng thẳng thường nhật:</strong> Những ức chế âm ỉ trong công việc hay đời sống gia đình vô tình bị kích hoạt và bùng nổ trên sân đấu khi gặp áp lực điểm số thua cuộc.</li>
+        </ul>
+
+        <h3>2. Bí Quyết Đồng Hành Hạnh Phúc & Gắn Kết Yêu Thương</h3>
+        <p>Skip Singleton đưa ra những nguyên tắc vàng để biến sân quần vợt thành nơi vun đắp tình cảm lãng mạn thay vì bãi chiến trường:</p>
+        <div class="highlight-box">
+            <h4><i class="fa-solid fa-heart"></i> Ba Thỏa Thuận Bất Biến Trước Khi Bước Vào Sân</h4>
+            <ol>
+                <li><strong>Thỏa thuận 1: Tuyệt đối không dạy bảo kỹ thuật khi đang thi đấu:</strong> Khi trận đấu đang diễn ra, bạn là bạn cặp đồng đẳng, không phải là huấn luyện viên. Mọi lời góp ý kỹ thuật đều phải gác lại sau giờ thi đấu.</li>
+                <li><strong>Thỏa thuận 2: Mọi lỗi đánh hỏng đều là của tập thể:</strong> Dù người bạn đời có đánh bóng rúc lưới, hãy luôn mỉm cười chạm vợt và nói: "Không sao đâu em/anh, quả sau mình làm lại nhé!".</li>
+                <li><strong>Thỏa thuận 3: Niềm vui bên nhau quan trọng hơn chiếc cúp:</strong> Dù thắng hay thua, hãy cùng nhau đi thưởng thức một bữa ăn ngon hoặc một ly cà phê sau trận đấu, cùng cười vui về những pha bóng ngộ nghĩnh trên sân.</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+<section id="chapter-11" class="chapter-box">
+    <h2 class="chapter-title">Chương 11: Nhân Đôi Niềm Vui & Tình Bạn Quần Vợt (Double the Fun)</h2>
+    <div class="chapter-body">
+        <h3>1. Tái Định Vị Ý Nghĩa Của Trò Chơi</h3>
+        <p>Tại sao bạn lại cầm cây vợt ra sân vào mỗi buổi sáng sớm hay chiều muộn sau những giờ làm việc mệt mỏi? Có phải chỉ để đếm xem mình thắng được mấy game, hay là để tìm kiếm sức khỏe dồi dào, giải tỏa căng thẳng trí não và tận hưởng những giây phút sảng khoái bên những người bạn tâm giao?</p>
+        
+        <p>Chiến thắng lớn nhất trong quần vợt không nằm ở việc đánh bại đối thủ, mà là việc bạn rời khỏi sân đấu với một nụ cười rạng rỡ trên môi, cảm nhận từng tế bào trong cơ thể tràn đầy năng lượng sống và nóng lòng chờ đợi đến buổi tập tiếp theo. Đánh đôi là một món quà tuyệt diệu của cuộc sống — hãy trân trọng từng đường bóng và nhân đôi niềm vui cùng những người bạn đồng hành.</p>
+
+        <div class="callout callout-info">
+            <h4><i class="fa-solid fa-user-check"></i> Đôi Nét Về Tác Giả Skip Singleton</h4>
+            <p><strong>Skip Singleton</strong> là chuyên gia huấn luyện hàng đầu của Hiệp hội Huấn luyện viên Quần vợt Chuyên nghiệp Hoa Kỳ (USPTA) và là Giám đốc Quần vợt kỳ cựu tại Bluewater Bay Resort, Florida — khu nghỉ dưỡng quần vợt danh tiếng từng được Hiệp hội Quần vợt Florida vinh danh là "Câu Lạc Bộ Của Năm". Ông là tác giả của nhiều công trình kinh điển về tâm lý học và chiến thuật thực chiến trong quần vợt hiện đại.</p>
+        </div>
+    </div>
+</section>
+
+
+        </main>
+    </div>
+
+    <script>
+        // Reading Progress
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+
+        // Dark Mode Toggle
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            const isDark = document.body.classList.contains('dark-mode');
+            const btn = document.getElementById('themeToggleBtn');
+            if (isDark) {
+                btn.innerHTML = '<i class="fa-solid fa-sun"></i> Giao Diện Sáng';
+            } else {
+                btn.innerHTML = '<i class="fa-solid fa-moon"></i> Giao Diện Tối';
+            }
+        }
+    </script>
+</body>
+</html>

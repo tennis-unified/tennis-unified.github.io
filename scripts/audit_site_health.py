@@ -46,7 +46,9 @@ vi_topnav_unlocalized = 0
 path_leaks = []
 leak_pattern = re.compile(r'(?:[a-zA-Z]:[/\\](?:Users|Github|Projects)[/\\][^\s"\'<>]+)', flags=re.I)
 
-for f in all_html:
+for idx, f in enumerate(all_html):
+    if idx > 0 and idx % 1000 == 0:
+        print(f"  ... audited {idx}/{len(all_html)} pages", flush=True)
     txt = f.read_text(encoding='utf-8', errors='ignore')
     is_vi = f.is_relative_to(ROOT / "vi")
     
@@ -76,7 +78,7 @@ for p, l in path_leaks[:5]:
     print(f"    ⚠️  {p}: {l}", flush=True)
 
 # Check 3: Image Responsiveness
-print("\n[3/4] Checking Image Tags & Responsive Styling...")
+print("\n[3/4] Checking Image Tags & Responsive Styling...", flush=True)
 img_without_src = 0
 for f in all_html[:200]:  # Sample first 200
     txt = f.read_text(encoding='utf-8')
@@ -85,10 +87,10 @@ for f in all_html[:200]:  # Sample first 200
         if 'src=' not in attrs:
             img_without_src += 1
 
-print(f"  Sampled images missing src: {img_without_src}")
+print(f"  Sampled images missing src: {img_without_src}", flush=True)
 
 # Check 4: Topnav Core Destination Integrity
-print("\n[4/4] Checking Core Navigation Targets...")
+print("\n[4/4] Checking Core Navigation Targets...", flush=True)
 core_destinations = [
     '/',
     '/fundamentals/',
@@ -131,14 +133,14 @@ all_dest_valid = True
 for dest in core_destinations:
     target_path = ROOT / dest.strip('/')
     if not (target_path / "index.html").exists() and not (ROOT / (dest.strip('/') + ".html")).exists() and dest != '/':
-        print(f"  ❌ Missing destination: {dest}")
+        print(f"  ❌ Missing destination: {dest}", flush=True)
         all_dest_valid = False
     else:
-        print(f"  ✅ Verified destination: {dest}")
+        print(f"  ✅ Verified destination: {dest}", flush=True)
 
-print("=" * 70)
+print("=" * 70, flush=True)
 if missing_toggle_en == 0 and missing_toggle_vi == 0 and len(path_leaks) == 0 and all_dest_valid:
-    print("🎉 ALL SITE HEALTH CHECKS PASSED PERFECTLY (100% HEALTHY)!")
+    print("🎉 ALL SITE HEALTH CHECKS PASSED PERFECTLY (100% HEALTHY)!", flush=True)
 else:
-    print("⚠️  Some issues require review.")
-print("=" * 70)
+    print("⚠️  Some issues require review.", flush=True)
+print("=" * 70, flush=True)
