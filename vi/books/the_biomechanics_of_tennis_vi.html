@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cơ Sinh Học Quần Vợt: Nghiên Cứu Chuyển Động & Hồ Sơ Thực Chiến (The Biomechanics of Tennis) - Brad Langevad | Bản Dịch Tiếng Việt</title>
+    <meta name="description" content="Bản dịch tiếng Việt trọn vẹn công trình cơ sinh học kinh điển The Biomechanics of Tennis của Brad Langevad với lời tựa của nhà vô địch Wimbledon Pat Cash. Phân tích chuyên sâu chuỗi động học liên hoàn, hồ sơ kỹ thuật của Federer, Nadal, Djokovic, Roddick và cẩm nang phòng ngừa chấn thương thể thao đỉnh cao.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #15803d;
+            --primary-dark: #166534;
+            --primary-light: #22c55e;
+            --accent: #eab308;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --header-bg: #0f172a;
+        }
+
+        body.dark-mode {
+            --bg-page: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --border: #334155;
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+            --header-bg: #020617;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.8;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Standard Topnav */
+        .tu-topnav {
+            background: var(--header-bg);
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+
+        .tu-topnav .brand {
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .tu-topnav .brand span {
+            color: #22c55e;
+        }
+
+        .tu-topnav .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            list-style: none;
+        }
+
+        .tu-topnav .nav-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .tu-topnav .nav-links a:hover {
+            color: #fff;
+        }
+
+        .tu-topnav .controls {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .theme-toggle-btn {
+            background: #334155;
+            border: none;
+            color: #f8fafc;
+            padding: 0.4rem 0.8rem;
+            border-radius: 9999px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        /* Progress Bar */
+        .reading-progress-bar {
+            position: fixed;
+            top: 55px;
+            left: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #15803d, #22c55e);
+            width: 0%;
+            z-index: 999;
+            transition: width 0.1s ease-out;
+        }
+
+        /* Hero Header */
+        .hero {
+            background: linear-gradient(135deg, #166534 0%, #15803d 50%, #14532d 100%);
+            color: white;
+            padding: 3.5rem 1.5rem 3rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            padding: 0.4rem 1.25rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 1.25rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .hero h1 {
+            font-size: 2.3rem;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero p.subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+            font-weight: 300;
+        }
+
+        .hero-meta {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .hero-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        /* Download Section */
+        .download-banner {
+            max-width: 900px;
+            margin: -1.75rem auto 2rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.25rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: var(--card-shadow);
+            position: relative;
+            z-index: 10;
+        }
+
+        .download-info {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+        }
+
+        .pdf-badge {
+            background: #ef4444;
+            color: white;
+            font-size: 1.5rem;
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .download-btn {
+            background: #15803d;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background 0.2s, transform 0.1s;
+        }
+
+        .download-btn:hover {
+            background: #166534;
+            transform: translateY(-2px);
+        }
+
+        /* Container Layout */
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem 4rem;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 2.5rem;
+        }
+
+        /* Sticky Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 75px;
+            height: calc(100vh - 90px);
+            overflow-y: auto;
+            padding-right: 0.5rem;
+        }
+
+        .toc-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        .toc-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .toc-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .toc-list li a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.88rem;
+            line-height: 1.4;
+            display: block;
+            padding: 0.35rem 0.5rem;
+            border-radius: 6px;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .toc-list li a:hover {
+            background: rgba(21, 128, 61, 0.1);
+            color: var(--primary);
+        }
+
+        /* Content Area */
+        .content-area {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 3rem;
+            box-shadow: var(--card-shadow);
+            min-width: 0;
+        }
+
+        .book-cover-wrap {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .book-cover-img {
+            max-width: 320px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.25);
+            border: 1px solid var(--border);
+        }
+
+        .chapter-box {
+            margin-bottom: 3.5rem;
+            scroll-margin-top: 80px;
+        }
+
+        .chapter-title {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            margin-bottom: 0.35rem;
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 0.5rem;
+        }
+
+        body.dark-mode .chapter-title {
+            color: #4ade80;
+        }
+
+        .chapter-sub {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-item {
+            margin-bottom: 2rem;
+        }
+
+        .section-heading {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-heading i {
+            color: var(--primary);
+            font-size: 0.95rem;
+        }
+
+        .section-text {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            white-space: pre-line;
+            color: var(--text-main);
+        }
+
+        .figure-wrap {
+            margin: 2.25rem 0;
+            text-align: center;
+            background: rgba(0,0,0,0.02);
+            padding: 1.25rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        body.dark-mode .figure-wrap {
+            background: rgba(255,255,255,0.02);
+        }
+
+        .figure-img {
+            max-width: 100%;
+            height: auto;
+            max-height: 520px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border: 1px solid var(--border);
+        }
+
+        .figure-caption {
+            margin-top: 0.85rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--header-bg);
+            color: #94a3b8;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+
+        footer a {
+            color: #22c55e;
+            text-decoration: none;
+        }
+
+        @media (max-width: 900px) {
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                display: none;
+            }
+            .content-area {
+                padding: 1.75rem;
+            }
+            .hero h1 {
+                font-size: 1.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Language & Navigation Topbar -->
+    <nav class="tu-topnav">
+        <a href="/vi/books/" class="brand">
+            <i class="fa-solid fa-tennis-ball"></i>
+            <span>Tennis Unified</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="/vi/books/">Thư Viện Sách</a></li>
+            <li><a href="/vi/fundamentals/">Nền Tảng</a></li>
+            <li><a href="/vi/stroke-analysis/">Phân Tích Động Tác</a></li>
+            <li><a href="/vi/drills/">Bài Tập & Giáo Án</a></li>
+            <li><a href="/books/" data-lang-toggle="en"><i class="fa-solid fa-globe"></i> English</a></li>
+        </ul>
+        <div class="controls">
+            <button class="theme-toggle-btn" id="themeToggleBtn" onclick="toggleTheme()">
+                <i class="fa-solid fa-moon"></i> Giao Diện Tối
+            </button>
+        </div>
+    </nav>
+
+    <div class="reading-progress-bar" id="progressBar"></div>
+
+    <!-- Hero Header -->
+    <header class="hero">
+        <div class="hero-badge"><i class="fa-solid fa-microscope"></i> Công Trình Cơ Sinh Học Đột Phá Bậc Nhất</div>
+        <h1>Cơ Sinh Học Quần Vợt: Nghiên Cứu Chuyển Động & Hồ Sơ Thực Chiến</h1>
+        <p class="subtitle">The Biomechanics of Tennis &bull; Brad Langevad &bull; Lời Tựa Của Nhà Vô Địch Wimbledon Pat Cash</p>
+        <div class="hero-meta">
+            <span><i class="fa-solid fa-user-tie"></i> Tác giả: Brad Langevad</span>
+            <span><i class="fa-solid fa-trophy"></i> Lời tựa: Pat Cash (Vô địch Wimbledon)</span>
+            <span><i class="fa-solid fa-book-open"></i> Phân Tích Thực Tế 15 Huyền Thoại ATP/WTA</span>
+            <span><i class="fa-solid fa-language"></i> Bản dịch tiếng Việt chuẩn mực</span>
+        </div>
+    </header>
+
+    <!-- Download PDF Section -->
+    <div class="download-banner">
+        <div class="download-info">
+            <div class="pdf-badge"><i class="fa-solid fa-file-pdf"></i></div>
+            <div>
+                <h4 style="margin-bottom: 0.25rem;">Tải Bản PDF Vector In Ấn</h4>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">Phiên bản sách điện tử chất lượng cao với đầy đủ 7 sơ đồ phân tích động lực học và hồ sơ cơ sinh học của các nhà vô địch</p>
+            </div>
+        </div>
+        <a href="The_Biomechanics_of_Tennis_Vietnamese_Final.pdf" class="download-btn" download>
+            <i class="fa-solid fa-download"></i> Tải PDF (Bản Đẹp)
+        </a>
+    </div>
+
+    <!-- Layout -->
+    <div class="main-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="toc-card">
+                <h3><i class="fa-solid fa-list-ul"></i> Mục Lục Sách</h3>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Lời Tựa Pat Cash & Mở Đầu</a></li>
+                    <li><a href="#principles">Chương 1: Nguyên Lý Cơ Sinh Học</a></li>
+                    <li><a href="#forehand-base">Chương 2: Thuận Tay Nền Tảng</a></li>
+                    <li><a href="#forehand-champions">Chương 3: Thuận Tay Các Nhà Vô Địch</a></li>
+                    <li><a href="#serve-biomechanics">Chương 4: Cơ Sinh Học Giao Bóng</a></li>
+                    <li><a href="#backhand-volley">Chương 5: Trái Tay & Volley</a></li>
+                    <li><a href="#injury-prevention">Chương 6: Mô Hình & Chấn Thương</a></li>
+                    <li><a href="#manifesto-faq">Tuyên Ngôn & Giải Đáp Thắc Mắc</a></li>
+                    <li><a href="#about-author">Về Tác Giả & Pat Cash</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content-area">
+            <div class="book-cover-wrap">
+                <img src="langevad_biomechanics_assets/cover.jpg" alt="Bìa sách The Biomechanics of Tennis Brad Langevad Pat Cash" class="book-cover-img">
+                <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.95rem;">Công trình nghiên cứu cơ sinh học và phân tích động lực học đỉnh cao của chuyên gia Brad Langevad</p>
+            </div>
+
+
+<!-- LỜI TỰA PAT CASH & LỜI MỞ ĐẦU -->
+<section id="introduction" class="chapter-box">
+    <h2 class="chapter-title">Lời Tựa Của Pat Cash & Lời Mở Đầu</h2>
+    <p class="chapter-sub">Introduction by Wimbledon Champion Pat Cash & Author's Preface</p>
+
+    <div class="section-item">
+        <h3 class="section-heading"><i class="fa-solid fa-medal"></i> Pat Cash: Quyết Định Sáng Suốt Nhất Trong Sự Nghiệp Đỉnh Cao</h3>
+        <p class="section-text">
+Tôi bắt đầu làm việc với Brad Langevad cách đây hơn 20 năm. Thành thật mà nói, đó là quyết định đúng đắn nhất mà tôi từng đưa ra trong cuộc đời quần vợt của mình. Nhờ Brad, tôi đã thấu hiểu những nguyên lý vận động mà trước đây tôi chưa từng nghe thấy ở bất kỳ huấn luyện viên nào. Ông đã giúp tôi sửa chữa triệt để hai điểm yếu cố hữu lớn nhất trong lối chơi của mình: Cú thuận tay và cú giao bóng.
+
+Tôi chỉ ước rằng mình đã được tiếp cận những kiến thức khoa học này sớm hơn trong sự nghiệp thi đấu chuyên nghiệp tại ATP Tour. Những hiểu biết cơ sinh học của Brad không chỉ giúp tôi hồi phục thần kỳ sau những chấn thương tưởng chừng phải giải nghệ, mà còn gia tăng đáng kể sức mạnh và tính ổn định phi thường cho từng đường bóng. Điều đó đã giúp tôi duy trì phong độ đỉnh cao để tiếp tục tranh tài sòng phẳng tại Champions Tour trước những đối thủ ngày càng trẻ hơn. Trong công tác huấn luyện của chính mình hiện nay, tôi luôn áp dụng triệt để các nguyên lý của Brad. Hãy lắng nghe và học hỏi, bởi đây chính là tương lai của bộ môn quần vợt.
+        </p>
+    </div>
+
+    <div class="section-item">
+        <h3 class="section-heading"><i class="fa-solid fa-microscope"></i> Cơ Sinh Học Đích Thực: Khoa Học Vận Động Tự Nhiên</h3>
+        <p class="section-text">
+Cơ sinh học (Biomechanics) không phải là một ngành khoa học biến con người thành những người máy cứng nhắc. Cơ sinh học là phương pháp nghiên cứu mang tính quy luật tự nhiên, khảo sát các chuyển động cơ thể trong không gian để tinh chỉnh chúng hướng tới hiệu suất vận động cao nhất và triệt tiêu nguy cơ chấn thương.
+
+Một nghịch lý đau xót trong thế giới quần vợt hiện nay là: Không được huấn luyện đôi khi còn tốt hơn rất nhiều so với việc bị huấn luyện bởi một huấn luyện viên tồi. Những chuyển động xuất chúng nhất của các nhà vô địch thế giới thường là những chuyển động được phát triển hết sức tự nhiên theo bản năng cơ thể, trước khi bị bóp méo bởi những giáo điều sai lệch của những người thầy thiếu hiểu biết khoa học.
+        </p>
+    </div>
+</section>
+
+<!-- CHƯƠNG 1: NGUYÊN LÝ CƠ SINH HỌC -->
+<section id="principles" class="chapter-box">
+    <h2 class="chapter-title">Chương 1: Các Nguyên Lý Cơ Sinh Học Nền Tảng</h2>
+    <p class="chapter-sub">Chapter 1: Fundamental Biomechanical Principles & Bias of Movement</p>
+
+    <div class="section-item">
+        <h3 class="section-heading"><i class="fa-solid fa-arrows-split-up-and-left"></i> Thiên Kiến Chuyển Động (Bias of Movement) Và Rào Cản Thói Quen</h3>
+        <p class="section-text">
+Mỗi vận động viên khi bước vào tập luyện đều mang trong mình một "Thiên kiến chuyển động" (Bias of Movement). Đây là xu hướng vô thức lặp lại những chuyển động quen thuộc của hệ thần kinh cơ, ngay cả khi chuyển động đó hoàn toàn phản tác dụng về mặt cơ học.
+
+Khoa học chân chính đòi hỏi sự hoài nghi lành mạnh và tính minh bạch tuyệt đối. Trong giới huấn luyện, chỉ cần một nhân vật có danh tiếng phong trào truyền dạy một lỗi kỹ thuật sai lệch, hàng ngàn người sẽ mù quáng làm theo. Hậu quả trực tiếp là sự bế tắc về phong độ và những chấn thương mãn tính xuất hiện ở khớp vai, khuỷu tay và cột sống thắt lưng.
+        </p>
+    </div>
+
+    <div class="figure-wrap">
+        <img src="langevad_biomechanics_assets/diag_biomechanical_bias.jpg" alt="Sơ đồ 1: Thiên Kiến Chuyển Động Trong Cơ Sinh Học Quần Vợt" class="figure-img">
+        <p class="figure-caption">Sơ đồ 1: Thiên Kiến Chuyển Động (Bias of Movement) — Phân tích sự xung đột giữa phản xạ tự nhiên của cơ thể và các thói quen vận động sai lệch do huấn luyện cơ học cứng nhắc.</p>
+    </div>
+
+    <div class="section-item">
+        <h3 class="section-heading"><i class="fa-solid fa-atom"></i> Chuỗi Động Lực Học Liên Hoàn (Kinetic Chain)</h3>
+        <p class="section-text">
+Lực đánh bóng trong quần vợt không bao giờ được sinh ra đơn độc từ cơ bắp cánh tay. Sức mạnh bùng nổ là kết quả của một Chuỗi Động Lực Học (Kinetic Chain) liên tục, bắt đầu từ lực phản hồi của mặt đất qua bàn chân, truyền lên khớp gối, xoay quanh trục hông, vặn xoắn thân trên và vai, rồi phóng thích qua cánh tay đòn và cổ tay vào mặt vợt.
+
+Nếu một mắt xích trong chuỗi liên hoàn này bị nghẽn (ví dụ chân không chùng hoặc hông bị khóa cứng), vận động viên sẽ buộc phải dùng lực cơ bắp cục bộ của cánh tay để bù đắp, dẫn đến việc mất kiểm soát quỹ đạo bóng và gây quá tải nghiêm trọng cho khớp vai và khuỷu tay.
+        </p>
+    </div>
+</section>
+
+<!-- CHƯƠNG 2: MÔ HÌNH THUẬN TAY NỀN TẢNG -->
+<section id="forehand-base" class="chapter-box">
+    <h2 class="chapter-title">Chương 2: Cơ Sinh Học Cú Thuận Tay - Mô Hình Nền Tảng</h2>
+    <p class="chapter-sub">Chapter 2: Forehand Biomechanics — Pat Cash and Andre Agassi Studies</p>
+
+    <div class="section-item">
+        <h3 class="section-heading"><i class="fa-solid fa-person-burst"></i> So Sánh Cơ Học Cú Thuận Tay Của Pat Cash Và Andre Agassi</h3>
+        <p class="section-text">
+Qua hàng ngàn giờ phân tích hình ảnh chuyển động siêu chậm (high-speed camera), mô hình thuận tay của Andre Agassi và Pat Cash cung cấp những bài học vô giá về sự truyền lực tối ưu:
+
+Ở giai đoạn chuẩn bị, Agassi duy trì một cấu trúc cánh tay đòn vô cùng ổn định với cổ tay ngửa tự nhiên (wrist extension), tạo điều kiện cho đầu vợt rơi xuống đáy quỹ đạo một cách hoàn toàn tự do dưới tác động của trọng lực.
+
+Pha tiếp xúc bóng của cả hai huyền thoại đều diễn ra khi mặt phẳng ngực đã mở hướng về phía mục tiêu, nhưng đầu và mắt vẫn giữ cố định tuyệt đối tại điểm chạm bóng. Việc không vội vàng quay đầu nhìn theo bóng là yếu tố sinh tử giúp bảo toàn sự thăng bằng của trục cột sống.
+        </p>
+    </div>
+
+    <div class="figure-wrap">
+        <img src="langevad_biomechanics_assets/diag_forehand_biomechanics.jpg" alt="Sơ đồ 2: Cơ Sinh Học Cú Thuận Tay Chuẩn Mực" class="figure-img">
+        <p class="figure-caption">Sơ đồ 2: Cơ Sinh Học Thuận Tay Nền Tảng — Mô hình phân tích chuyển động góc xoay của khớp vai, vị trí cánh tay đòn và điểm tiếp xúc bóng phía trước thân người.</p>
+    </div>
+</section>
+
+
+<!-- CHƯƠNG 3: CÁC NHÀ VÔ ĐỊCH -->
+<section id="forehand-champions" class="chapter-box">
+    <h2 class="chapter-title">Chương 3: Hồ Sơ Cơ Sinh Học Cú Thuận Tay Của Các Nhà Vô Địch</h2>
+    <p class="chapter-sub">Chapter 3: Forehand Case Studies of Champions — Federer, Nadal, and Djokovic</p>
+
+    <div class="section-item">
+        <h3 class="section-heading"><i class="fa-solid fa-crown"></i> Roger Federer: Cánh Tay Đòn Thẳng Và Trục Đầu Cổ Bất Biến</h3>
+        <p class="section-text">
+Cú thuận tay của Roger Federer được xem là một trong những kiệt tác cơ sinh học vĩ đại nhất trong lịch sử thể thao. Khác với đại đa số tay vợt hiện đại sử dụng cánh tay gập khuỷu (Double-bend), Federer thi đấu với cấu trúc cánh tay đòn gần như thẳng tuyệt đối (Straight-arm forehand) tại thời điểm tiếp xúc bóng.
+
+Cánh tay thẳng tạo ra bán kính đòn bẩy dài nhất có thể, tối đa hóa vận tốc góc ở đầu vợt. Tuy nhiên, điều kỳ diệu nhất trong cơ học của Federer nằm ở trục đầu cổ: Trong khi toàn bộ cơ thể xoay với tốc độ kinh hoàng, đầu của anh vẫn giữ nguyên một góc cố định, ánh mắt dán chặt vào điểm bóng chạm mặt dây trong suốt vài phần nghìn giây sau khi bóng đã rời đi. Sự ổn định thị giác tuyệt đối này ngăn ngừa hoàn toàn hiện tượng lệch trục quán tính của thân trên.
+        </p>
+    </div>
+
+    <div class="figure-wrap">
+        <img src="langevad_biomechanics_assets/diag_federer_forehand.jpg" alt="Sơ đồ 3: Cơ Sinh Học Cú Thuận Tay Roger Federer" class="figure-img">
+        <p class="figure-caption">Sơ đồ 3: Cú Thuận Tay Roger Federer — Cấu trúc cánh tay đòn thẳng hoàn hảo, vị trí đầu cổ khóa cố định tại điểm tiếp xúc và sự giải phóng năng lượng mượt mà qua vai.</p>
+    </div>
+
+    <div class="section-item">
+        <h3 class="section-heading"><i class="fa-solid fa-bullhorn"></i> Rafael Nadal: Động Tác Quất Vợt Ngược (Buggy Whip) Và Độ Xoáy Hủy Diệt</h3>
+        <p class="section-text">
+Cú thuận tay của Rafael Nadal đại diện cho một trường phái cơ sinh học đối nghịch nhưng đạt hiệu suất khủng khiếp. Khi bị dồn ép ra góc sân hoặc cần tạo ra góc đánh siêu hẹp, Nadal không vung vợt qua vai đối diện theo lối truyền thống mà giật ngược vợt lên trên đầu (Reverse follow-through hay Buggy Whip).
+
+Động tác này đẩy tốc độ góc theo phương thẳng đứng lên tới mức cực hạn, tạo ra vòng quay của quả bóng vượt mốc 3.500 đến 4.000 vòng/phút (RPM). Tuy nhiên, cơ sinh học của Brad Langevad cảnh báo rằng: Kỹ thuật quất vợt ngược đòi hỏi sức mạnh phi thường của cơ lưng xô và cơ nhị đầu cánh tay. Người chơi phong trào nếu sao chép động tác này một cách máy móc mà không có nền tảng thể lực tương xứng sẽ rất dễ gặp phải chấn thương rách gân chóp xoay khớp vai.
+        </p>
+    </div>
+
+    <div class="figure-wrap">
+        <img src="langevad_biomechanics_assets/diag_nadal_forehand.jpg" alt="Sơ đồ 4: Cơ Sinh Học Cú Thuận Tay Rafael Nadal" class="figure-img">
+        <p class="figure-caption">Sơ đồ 4: Cú Thuận Tay Rafael Nadal — Cơ chế quất vợt ngược qua đầu (Buggy Whip), độ xoáy cuộn topspin cực đại và tải trọng cơ học lên khớp vai.</p>
+    </div>
+
+    <div class="section-item">
+        <h3 class="section-heading"><i class="fa-solid fa-bolt"></i> Novak Djokovic: Tính Đàn Hồi Của Khung Chậu Và Bộ Chân Mở</h3>
+        <p class="section-text">
+Novak Djokovic là hình mẫu tối thượng về khả năng chuyển đổi lực trong tư thế chân mở hoàn toàn (Open Stance). Nhờ độ dẻo dai phi thường của các nhóm cơ khép háng và khớp hông, Djokovic có thể trượt dài trên mặt sân cứng mà vẫn duy trì được góc nghiêng lý tưởng của xương chậu.
+
+Cú thuận tay của anh hấp thụ toàn bộ động lượng từ cú đánh uy lực của đối phương, biến nó thành lực đàn hồi tích lũy ở vùng cơ lõi bụng lưng rồi phóng thích trở lại thành một đường phản công chéo sân với độ chính xác đến từng milimet.
+        </p>
+    </div>
+</section>
+
+
+<!-- CHƯƠNG 4: CƠ SINH HỌC CÚ GIAO BÓNG -->
+<section id="serve-biomechanics" class="chapter-box">
+    <h2 class="chapter-title">Chương 4: Cơ Sinh Học Cú Giao Bóng Tốc Độ Cao</h2>
+    <p class="chapter-sub">Chapter 4: High-Velocity Service Biomechanics — Federer, Roddick, and Williams</p>
+
+    <div class="section-item">
+        <h3 class="section-heading"><i class="fa-solid fa-wind"></i> Roger Federer: Sự Thanh Thoát Và Khả Năng Ngụy Trang Tuyệt Đối</h3>
+        <p class="section-text">
+Cú giao bóng của Roger Federer không phải là cú giao bóng nhanh nhất thế giới về mặt vận tốc đo bằng máy đo radar, nhưng nó là một trong những quả giao bóng khó đỡ nhất lịch sử. Nghiên cứu của Brad Langevad chỉ ra rằng: Federer duy trì một điểm tung bóng duy nhất cho cả ba biến thể giao bóng phẳng, slice và kick.
+
+Chuyển động của Federer vận hành với sự thả lỏng thần kỳ của cơ bắp. Cánh tay đòn của anh chuyển động như một ngọn roi mềm mại: Từ tư thế cúp chiến lợi phẩm hoàn hảo, đầu vợt rơi tự do xuống sâu phía sau lưng rồi vút lên cao tiếp xúc bóng ở góc vươn thẳng nhất. Cơ chế xoay cẳng tay (internal shoulder rotation & pronation) diễn ra tự nhiên mà không hề có bất kỳ sự gồng cứng cơ học nào.
+        </p>
+    </div>
+
+    <div class="figure-wrap">
+        <img src="langevad_biomechanics_assets/diag_federer_serve.jpg" alt="Sơ đồ 5: Cơ Sinh Học Cú Giao Bóng Roger Federer" class="figure-img">
+        <p class="figure-caption">Sơ đồ 5: Cú Giao Bóng Roger Federer — Phân tích sự cân bằng trọng tâm, góc nghiêng vai hoàn hảo và cơ chế ngụy trang điểm rơi bóng độc nhất vô nhị.</p>
+    </div>
+
+    <div class="section-item">
+        <h3 class="section-heading"><i class="fa-solid fa-gauge-high"></i> Andy Roddick: Động Tác Thu Gọn Đà Và Sức Bùng Nổ Cơ Bắp</h3>
+        <p class="section-text">
+Ngược lại với sự uyển chuyển của Federer, Andy Roddick là biểu tượng của sức mạnh bùng nổ cơ khí. Roddick loại bỏ hoàn toàn giai đoạn đưa vợt dài xuống dưới chân bằng một động tác thu gọn đà vung (Abbreviated backswing): Vợt được đưa thẳng lên tư thế Trophy Pose ngay khi bóng rời tay tung.
+
+Để tạo ra những quả giao bóng vượt mốc 240 km/h, Roddick chùng sâu hai đầu gối tạo thành góc nén lò xo cực đại từ mặt đất. Khi bật nhảy lên không trung, lưng của anh ưỡn cong tạo thành một cánh cung tích trữ năng lượng khổng lồ. Tuy nhiên, Langevad chỉ ra rằng: Lối giao bóng này tạo ra một áp lực nén khủng khiếp lên các đĩa đệm cột sống thắt lưng L4-L5, đòi hỏi chế độ tập luyện bảo vệ cơ lưng đặc biệt nghiêm ngặt.
+        </p>
+    </div>
+
+    <div class="figure-wrap">
+        <img src="langevad_biomechanics_assets/diag_roddick_serve.jpg" alt="Sơ đồ 6: Cơ Sinh Học Cú Giao Bóng Sấm Sét Andy Roddick" class="figure-img">
+        <p class="figure-caption">Sơ đồ 6: Cú Giao Bóng Andy Roddick — Phân tích góc nén của đầu gối, pha nạp lực lò xo của cột sống và lực quất cẳng tay tạo vận tốc kỷ lục.</p>
+    </div>
+</section>
+
+<!-- CHƯƠNG 5: TRÁI TAY & VOLLEY -->
+<section id="backhand-volley" class="chapter-box">
+    <h2 class="chapter-title">Chương 5: Cơ Sinh Học Cú Trái Tay & Cú Volley</h2>
+    <p class="chapter-sub">Chapter 5: Backhand and Volley Biomechanics — Gasquet, Henin, and Net Play</p>
+
+    <div class="section-item">
+        <h3 class="section-heading"><i class="fa-solid fa-feather"></i> Richard Gasquet: Biên Độ Vung Vợt Ngoạn Mục Của Cú Trái Một Tay</h3>
+        <p class="section-text">
+Cú trái tay một tay của Richard Gasquet là một kỳ quan về biên độ chuyển động. Nhờ khớp vai có độ linh hoạt đặc biệt, Gasquet đưa vợt ra sau lưng sâu hơn bất kỳ tay vợt nào khác trên thế giới.
+
+Khi tiếp xúc bóng, cánh tay của anh mở rộng tạo thành một đòn bẩy vĩ đại, kết thúc bằng một cú bung tay qua vai với biên độ vòng cung khổng lồ. Quá trình này tạo ra độ xoáy topspin cực kỳ hiểm hóc, biến một cú đánh phòng thủ thành một đòn dứt điểm uy lực xuyên thủng hàng phòng ngự đối phương.
+        </p>
+    </div>
+
+    <div class="figure-wrap">
+        <img src="langevad_biomechanics_assets/diag_gasquet_backhand.jpg" alt="Sơ đồ 7: Cơ Sinh Học Cú Trái Tay Richard Gasquet" class="figure-img">
+        <p class="figure-caption">Sơ đồ 7: Cú Trái Tay Richard Gasquet — Phân tích góc xoay vai cực đại, độ rơi đầu vợt và pha bung cánh tay đòn tạo xoáy topspin uy lực.</p>
+    </div>
+</section>
+
+
+<!-- CHƯƠNG 6: MÔ HÌNH CHUYỂN ĐỘNG & CHẤN THƯƠNG -->
+<section id="injury-prevention" class="chapter-box">
+    <h2 class="chapter-title">Chương 6: Mô Hình Chuyển Động & Phòng Ngừa Chấn Thương</h2>
+    <p class="chapter-sub">Chapter 6: Movement Models and Preventing Biomechanical Injuries</p>
+
+    <div class="section-item">
+        <h3 class="section-heading"><i class="fa-solid fa-shield-heart"></i> Bảo Vệ Chóp Xoay Khớp Vai Và Cột Sống Thắt Lưng</h3>
+        <p class="section-text">
+Chấn thương trong quần vợt không phải là một rủi ro ngẫu nhiên mà là kết quả tất yếu của các chuyển động sai lệch về mặt cơ học được lặp đi lặp lại hàng vạn lần:
+
+Bảo Vệ Khớp Vai: Khớp vai là khớp có biên độ vận động lớn nhất nhưng cũng kém vững chắc nhất trên cơ thể. Lỗi kỹ thuật nguy hiểm nhất là việc cố gắng tạo lực giao bóng hoặc thuận tay bằng cách gồng cứng cơ vai mà không xoay thân người. Để bảo vệ gân cơ trên gai (Supraspinatus tendon), vận động viên phải luôn khởi động kỹ chuỗi cơ xoay trong/xoay ngoài và đảm bảo rằng góc nâng của cánh tay luôn nằm trong mặt phẳng xương bả vai (Scapular plane).
+
+Giải Tỏa Áp Lực Cột Sống: Chuyển động xoay vặn thân người khi tiếp xúc bóng phải được bắt đầu từ trục xoay của hai khớp háng chứ không phải từ sự vặn xoắn cục bộ của cột sống thắt lưng. Khi háng mở tự do, lực xoay sẽ phân bổ đều lên toàn bộ cơ thể, ngăn ngừa hiện tượng thoái hóa đĩa đệm và rách bao xơ thắt lưng.
+        </p>
+    </div>
+
+    <div class="section-item">
+        <h3 class="section-heading"><i class="fa-solid fa-triangle-exclamation"></i> Nguy Hại Của Việc Bẻ Cổ Tay Đột Ngột</h3>
+        <p class="section-text">
+Nhiều huấn luyện viên phong trào thường dạy học viên "quất mạnh cổ tay" khi đánh bóng thuận tay để tạo xoáy. Đây là một quan niệm sai lầm chết người về mặt giải phẫu học.
+
+Cổ tay của con người không được thiết kế để chịu tải trọng va đập lớn ở tư thế gập duỗi tự do. Trong các cú đánh của Federer hay Agassi, cổ tay được giữ ở trạng thái ngửa vững chãi (Wrist extension) và chuyển động quất bóng thực chất là kết quả của sự xoay cẳng tay quanh trục quay sấp (Pronation) kết hợp với quán tính tự nhiên của đầu vợt. Việc cố tình gập cổ tay chủ động sẽ nhanh chóng dẫn đến viêm bao gân và rách sụn chêm cổ tay (TFCC tear).
+        </p>
+    </div>
+</section>
+
+<!-- TUYÊN NGÔN CƠ SINH HỌC & FAQ -->
+<section id="manifesto-faq" class="chapter-box">
+    <h2 class="chapter-title">Tuyên Ngôn Cơ Sinh Học & Giải Đáp Thắc Mắc</h2>
+    <p class="chapter-sub">Brad Langevad's Manifesto on Tennis Coaching & Frequently Asked Questions</p>
+
+    <div class="section-item">
+        <h3 class="section-heading"><i class="fa-solid fa-scroll"></i> Tuyên Ngôn: Hãy Chấm Dứt Thói Huấn Luyện Sao Chép Ảnh Tĩnh</h3>
+        <p class="section-text">
+Sai lầm nghiêm trọng nhất của nền huấn luyện truyền thống là nhìn vào một bức ảnh chụp tĩnh của một nhà vô địch rồi yêu cầu học viên bắt chước tư thế đó.
+
+Một cú đánh quần vợt là một dòng chảy động học liên tục (Dynamic Flow), trong đó mỗi khoảnh khắc đều là hệ quả của khoảnh khắc trước đó và là nguyên nhân của khoảnh khắc tiếp theo. Khi bạn cố gắng gượng ép cơ thể vào một tư thế tĩnh định sẵn, bạn đang làm gãy vụn dòng chảy năng lượng tự nhiên của cơ thể. Hãy tập trung vào việc tạo ra một chuyển động trơn tru, thả lỏng và để cơ thể tự tìm thấy điểm tiếp xúc tối ưu theo quy luật vật lý.
+        </p>
+    </div>
+
+    <div class="section-item">
+        <h3 class="section-heading"><i class="fa-solid fa-circle-question"></i> Giải Đáp Các Câu Hỏi Cơ Sinh Học Trọng Yếu</h3>
+        <p class="section-text">
+Hỏi: Làm thế nào để biết một cú đánh có đúng cơ sinh học hay không?
+Đáp: Một cú đánh chuẩn xác về mặt cơ sinh học luôn mang lại cảm giác nhẹ nhàng, không tốn sức, tạo ra âm thanh va chạm thanh thoát và hoàn toàn không để lại bất kỳ sự đau nhức nào ở các khớp xương sau buổi tập.
+
+Hỏi: Có nên thay đổi toàn bộ kỹ thuật của một tay vợt trưởng thành?
+Đáp: Không bao giờ đập bỏ toàn bộ lối đánh vốn có. Một nhà cơ sinh học giỏi sẽ tìm ra mắt xích gây tắc nghẽn lực lớn nhất hoặc điểm gây nguy cơ chấn thương cao nhất để can thiệp tinh chỉnh, giúp vận động viên giải phóng toàn bộ tiềm năng sẵn có của mình.
+        </p>
+    </div>
+</section>
+
+<!-- VỀ TÁC GIẢ -->
+<section id="about-author" class="chapter-box">
+    <h2 class="chapter-title">Về Tác Giả Brad Langevad & Pat Cash</h2>
+    <p class="chapter-sub">About the Author: Brad Langevad & Pat Cash</p>
+
+    <div class="section-item">
+        <h3 class="section-heading"><i class="fa-solid fa-user-doctor"></i> Brad Langevad: Nhà Khoa Học Tiên Phong Của Quần Vợt Hiện Đại</h3>
+        <p class="section-text">
+Brad Langevad là chuyên gia cơ sinh học thể thao hàng đầu nước Úc, người đã dành hơn ba thập kỷ nghiên cứu chuyên sâu về phân tích chuyển động con người và tối ưu hóa hiệu suất thể thao đỉnh cao. Hệ thống phân tích hình ảnh tốc độ cao và các mô hình toán học của ông đã trở thành kim chỉ nam giúp hàng loạt nhà vô địch thế giới — tiêu biểu là nhà vô địch Wimbledon Pat Cash — vượt qua khủng hoảng chấn thương và nâng tầm phong độ thi đấu.
+
+Tác phẩm "The Biomechanics of Tennis: Body Movement Studies with Case Histories" là công trình đúc kết độc nhất vô nhị, mang đến cho độc giả cái nhìn chân thực, khoa học và không khoan nhượng về những bí mật vận động cơ học đằng sau những cú đánh vĩ đại nhất của làng quần vợt thế giới.
+        </p>
+    </div>
+</section>
+
+        </main>
+    </div>
+
+    <footer>
+        <p style="margin-bottom: 0.5rem;">Dự Án Thư Viện Sách Quần Vợt Đỉnh Cao &bull; <a href="/vi/books/">Tennis Unified Library</a></p>
+        <p style="font-size: 0.85rem;">Bản dịch tiếng Việt chuyên nghiệp phục vụ cộng đồng quần vợt Việt Nam</p>
+    </footer>
+
+    <script>
+        // Reading progress bar
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        };
+
+        // Dark mode toggle
+        function toggleTheme() {
+            document.body.classList.toggle("dark-mode");
+            let btn = document.getElementById("themeToggleBtn");
+            if (document.body.classList.contains("dark-mode")) {
+                btn.innerHTML = '<i class="fa-solid fa-sun"></i> Giao Diện Sáng';
+            } else {
+                btn.innerHTML = '<i class="fa-solid fa-moon"></i> Giao Diện Tối';
+            }
+        }
+    </script>
+</body>
+</html>
