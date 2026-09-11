@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chơi Thứ Quần Vợt Xuất Sắc Nhất Của Bạn — Jack Kramer | Tennis Unified</title>
+    <meta name="description" content="Bản dịch tiếng Việt chuyên sâu cuốn sách How to Play Your Best Tennis All the Time của huyền thoại Grand Slam Jack Kramer & Larry Sheehan. Tuyệt phẩm về Percentage Tennis, chuẩn hóa điểm đón bóng, cơ học cú đánh chạm đất, quả giao bóng xoáy slice và triết lý tấn công The Big Game.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-dark: #172554;
+            --primary-light: #3b82f6;
+            --accent: #d97706;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --sidebar-width: 290px;
+        }
+
+        [data-theme="dark"] {
+            --primary: #60a5fa;
+            --primary-dark: #3b82f6;
+            --primary-light: #93c5fd;
+            --accent: #fbbf24;
+            --bg-page: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --border: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.7;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #reading-progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+            width: 0%;
+            z-index: 9999;
+            transition: width 0.1s ease;
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            background-color: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-logo {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .header-nav a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .header-nav a:hover {
+            color: var(--primary);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .btn-lang {
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .btn-lang:hover {
+            background-color: var(--primary);
+            color: #ffffff;
+        }
+
+        .btn-icon {
+            background: none;
+            border: none;
+            color: var(--text-main);
+            font-size: 1.1rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 6px;
+            transition: color 0.2s;
+        }
+
+        .btn-icon:hover {
+            color: var(--primary);
+        }
+
+        .reader-layout {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            position: relative;
+        }
+
+        .sidebar {
+            width: var(--sidebar-width);
+            height: calc(100vh - 60px);
+            position: sticky;
+            top: 60px;
+            border-right: 1px solid var(--border);
+            padding: 1.5rem;
+            overflow-y: auto;
+            flex-shrink: 0;
+            background-color: var(--bg-card);
+        }
+
+        .sidebar-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .toc-menu {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .toc-item a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            display: block;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            transition: all 0.2s;
+            line-height: 1.4;
+        }
+
+        .toc-item a:hover,
+        .toc-item.active a {
+            color: var(--primary);
+            background-color: rgba(30, 58, 138, 0.08);
+            font-weight: 600;
+        }
+
+        .sidebar-download {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .btn-download-pdf {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background-color: var(--primary);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            box-shadow: 0 2px 4px rgba(30, 58, 138, 0.2);
+            transition: all 0.2s;
+        }
+
+        .btn-download-pdf:hover {
+            background-color: var(--primary-dark);
+            box-shadow: 0 4px 8px rgba(30, 58, 138, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .main-article {
+            flex: 1;
+            max-width: 900px;
+            padding: 2.5rem 3rem;
+            background-color: var(--bg-card);
+            min-height: calc(100vh - 60px);
+            border-right: 1px solid var(--border);
+        }
+
+        .hero-banner {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(30, 58, 138, 0.1);
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+        }
+
+        .hero-title {
+            font-size: 2.3rem;
+            font-weight: 800;
+            line-height: 1.25;
+            color: var(--text-main);
+            margin-bottom: 1rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .hero-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .book-part {
+            margin-bottom: 4rem;
+            padding-top: 1rem;
+        }
+
+        .part-header {
+            margin-bottom: 2rem;
+        }
+
+        .part-tag {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .part-header h2 {
+            font-size: 1.85rem;
+            font-weight: 800;
+            line-height: 1.3;
+            color: var(--text-main);
+            margin-bottom: 0.75rem;
+        }
+
+        .part-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .part-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .figure-box {
+            margin: 2rem 0;
+            background-color: var(--bg-page);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .figure-box img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .figure-caption {
+            display: block;
+            padding: 0.8rem 1.2rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-style: italic;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            background-color: var(--bg-card);
+        }
+
+        .content-body h3 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .content-body p {
+            font-size: 1.02rem;
+            margin-bottom: 1.25rem;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        .content-body ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .content-body li {
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-main);
+        }
+
+        .pro-tip {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            border-left: 4px solid var(--primary);
+            background: rgba(30, 58, 138, 0.05);
+            border-radius: 0 10px 10px 0;
+        }
+
+        .pro-tip-title {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.05rem;
+        }
+
+        .pro-tip p {
+            margin-bottom: 0;
+            font-size: 0.98rem;
+        }
+
+        @media (max-width: 1024px) {
+            .sidebar {
+                display: none;
+            }
+            .main-article {
+                padding: 2rem 1.5rem;
+                max-width: 100%;
+                border-right: none;
+            }
+            .hero-title {
+                font-size: 1.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="reading-progress-bar"></div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="/vi/books/" class="header-logo"><i class="fa-solid fa-book-open"></i> Tennis Unified Books</a>
+            <nav class="header-nav">
+                <a href="/vi/books/">Tủ Sách</a>
+                <a href="/vi/fundamentals/">Nền Tảng</a>
+                <a href="/vi/stroke-analysis/">Phân Tích Cú Đánh</a>
+                <a href="/vi/drills/">Bài Tập</a>
+            </nav>
+            <div class="header-actions">
+                <a href="/books/" data-lang-toggle="en" class="btn-lang"><i class="fa-solid fa-globe"></i> English</a>
+                <button id="theme-toggle" class="btn-icon" aria-label="Đổi giao diện sáng/tối"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="reader-layout">
+        <aside class="sidebar">
+            <div class="sidebar-title">Mục Lục Cuốn Sách</div>
+            <ul class="toc-menu">
+                <li class="toc-item active"><a href="#part1"><i class="fa-solid fa-trophy"></i> Phần 1: Percentage Tennis & Vùng Đón Bóng</a></li>
+                <li class="toc-item"><a href="#part2"><i class="fa-solid fa-arrows-up-down"></i> Phần 2: Cú Chạm Đất & Hai Hằng Số</a></li>
+                <li class="toc-item"><a href="#part3"><i class="fa-solid fa-bolt-lightning"></i> Phần 3: Giao Bóng Lớn & Trả Giao Bóng</a></li>
+                <li class="toc-item"><a href="#part4"><i class="fa-solid fa-fire"></i> Phần 4: The Big Game & Điểm Quyết Định</a></li>
+            </ul>
+
+            <div class="sidebar-download">
+                <a href="How_To_Play_Your_Best_Tennis_All_The_Time_Vietnamese_Final.pdf" target="_blank" class="btn-download-pdf">
+                    <i class="fa-solid fa-file-pdf"></i> Tải PDF Tiếng Việt
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-article">
+            <div class="hero-banner">
+                <span class="hero-badge">Tuyệt Phẩm Chiến Thuật &amp; Tấn Công</span>
+                <h1 class="hero-title">How to Play Your Best Tennis All the Time</h1>
+                <p class="hero-subtitle">Bản dịch tiếng Việt chuyên sâu cuốn sách How to Play Your Best Tennis All the Time của huyền thoại Grand Slam Jack Kramer &amp; Larry Sheehan (Andre Deutsch, London). Tuyệt tác về triết lý Percentage Tennis, chuẩn hóa điểm đón bóng, quả giao bóng xoáy slice hiểm hóc và khai sinh lối chơi tấn công The Big Game.</p>
+                <div class="hero-meta">
+                    <span><i class="fa-solid fa-medal"></i> Tác giả: Jack Kramer (Wimbledon &amp; US Open Champion)</span>
+                    <span><i class="fa-solid fa-pen-nib"></i> Đồng tác giả: Larry Sheehan • Minh họa: Ray Caram</span>
+                    <span><i class="fa-solid fa-language"></i> Bản dịch: Tennis Unified</span>
+                </div>
+            </div>
+
+            
+<section id="part1" class="book-part">
+  <div class="part-header">
+    <span class="part-tag">Phần 1: Khởi Nguồn &amp; Quần Vợt Xác Suất</span>
+    <h2>Triết Lý Đánh Theo Tỷ Lệ Phần Trăm &amp; Chuẩn Hóa Điểm Đón Bóng</h2>
+    <div class="part-meta">
+      <span><i class="fa-solid fa-trophy"></i> Tác giả: Jack Kramer (Huyền thoại Grand Slam)</span>
+      <span><i class="fa-solid fa-pen-nib"></i> Đồng tác giả: Larry Sheehan • Minh họa: Ray Caram</span>
+      <span><i class="fa-solid fa-clock"></i> Thời gian đọc: 22 phút</span>
+    </div>
+  </div>
+
+  <div class="figure-box">
+    <img src="jack_kramer_tennis_assets/fig1_percentage_tennis.jpg" alt="Jack Kramer và triết lý Percentage Tennis của kỹ sư Cliff Roche">
+    <span class="figure-caption">Hình 1.1: Khởi nguồn cuộc cách mạng "Percentage Tennis": Jack Kramer cùng người thầy Cliff Roche đặt nền móng toán học xác suất cho quần vợt đỉnh cao.</span>
+  </div>
+
+  <div class="content-body">
+    <h3>1. Cuộc Cách Mạng "Percentage Tennis" Của Jack Kramer</h3>
+    <p>
+      Jack Kramer là một trong những tượng đài vĩ đại nhất của lịch sử quần vợt thế giới – nhà vô địch Wimbledon, US Open, Davis Cup và là người khai sinh ra kỷ nguyên quần vợt chuyên nghiệp hiện đại. Tuy nhiên, di sản lớn nhất mà Jack Kramer để lại cho các thế hệ tay vợt chính là triết lý thi đấu mang tên "Percentage Tennis" (Quần vợt theo tỷ lệ phần trăm).
+    </p>
+    <p>
+      Người có ảnh hưởng lớn nhất đến sự nghiệp của Kramer là huấn luyện viên Cliff Roche – một kỹ sư công nghiệp xuất chúng. Chính "Coach" Roche đã dạy Kramer phân tích môn thể thao này dưới lăng kính của xác suất thống kê và hình học cơ học. Thay vì cố gắng tạo ra những cú đánh phép màu có tỷ lệ thành công 1/10, người chiến thắng bền vững là người kiên trì tung ra những cú đánh có xác suất thành công 9/10, ép đối thủ phải tự mắc sai lầm trước áp lực liên hồi.
+    </p>
+
+    <h3>2. Tám Sai Lầm Kinh Điển Khiến Người Chơi Nghiệp Dư Luôn Thất Bại</h3>
+    <p>
+      Theo quan sát của Jack Kramer tại các câu lạc bộ quần vợt phong trào, những thất bại cay đắng hầu như luôn bắt nguồn từ 8 lỗi cơ bản:
+    </p>
+    <ul>
+      <li><strong>Cách cầm vợt sai lệch (Faulty grips):</strong> Cầm vợt không khít hoặc trượt cán khi tiếp xúc bóng.</li>
+      <li><strong>Hỏng hóc cơ học trong chu kỳ vung vợt:</strong> Vung vợt giật cục, mở mặt vợt quá sớm hoặc rút ngắn đà kết thúc.</li>
+      <li><strong>Chọn lối chơi không phù hợp với thể hình và tâm lý:</strong> Cố gắng bắt chước phong cách hoa mỹ của các ngôi sao trong khi thể lực và cảm giác bóng chưa cho phép.</li>
+      <li><strong>Cố đánh cú đánh quá hiểm từ vị trí quá sâu:</strong> Đứng cách vạch cuối sân 3 mét nhưng lại cố đánh bóng cắm sát mép lưới hoặc sát mép cọc biên.</li>
+      <li><strong>Đánh bóng quá sức (Overhitting):</strong> Luôn dồn 100% lực cơ bắp vào mọi đường bóng thay vì duy trì độ sâu ổn định ở mức 75% lực.</li>
+      <li><strong>Chọn sai cú đánh ở các điểm then chốt:</strong> Cố gắng bỏ nhỏ (drop shot) mạo hiểm ở điểm Break point.</li>
+      <li><strong>Tự sáng tạo ra cú đánh lạ lẫm:</strong> Thay vì trung thành với các cú đánh cơ bản đã được kiểm chứng qua thời gian.</li>
+      <li><strong>Thiếu khả năng thích nghi với điều kiện sân bãi và gió:</strong> Không điều chỉnh lực đánh khi ngược gió hoặc khi mặt sân trơn trượt.</li>
+    </ul>
+
+    <div class="figure-box">
+      <img src="jack_kramer_tennis_assets/fig2_strike_zone_grips.jpg" alt="Chuẩn hóa vùng đón bóng strike zone và cách cầm vợt như găng tay">
+      <span class="figure-caption">Hình 1.2: Chuẩn hóa vùng đón bóng (Standardize Your Strike Zone): Luôn di chuyển đôi chân để đón bóng ở khoảng cách lý tưởng ngang thắt lưng.</span>
+    </div>
+
+    <h3>3. Chuẩn Hóa Vùng Đón Bóng (Standardize Your Strike Zone)</h3>
+    <p>
+      Một tay vợt vĩ đại luôn đánh quả bóng ở cùng một độ cao lý tưởng: ngang giữa thắt lưng và đầu gối. Nếu bóng bay tới quá cao, họ lùi lại một bước; nếu bóng rơi quá ngắn, họ bước tiến lên phía trước một bước. Bằng cách di chuyển đôi chân chủ động, họ luôn đưa quả bóng vào "Vùng đón bóng chuẩn hóa" (Strike Zone), biến mọi đường bóng phức tạp thành một cú đánh quen thuộc.
+    </p>
+
+    <div class="pro-tip">
+      <div class="pro-tip-title"><i class="fa-solid fa-lightbulb"></i> Châm Ngôn Bất Hủ Của Jack Kramer</div>
+      <p>
+        Hãy cầm cây vợt vừa khít như một chiếc găng tay da quen thuộc. Bạn không bao giờ được phép đổ lỗi cho cây vợt; cây vợt chỉ là công cụ phản chiếu sự thăng bằng của cơ thể và sự sáng suốt của tư duy bạn.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section id="part2" class="book-part">
+  <div class="part-header">
+    <span class="part-tag">Phần 2: Nền Tảng Cú Chạm Đất</span>
+    <h2>Nền Tảng Cú Chạm Đất: Vung Vợt Dưới-Lên &amp; Hai Hằng Số</h2>
+    <div class="part-meta">
+      <span><i class="fa-solid fa-arrows-up-down"></i> Cơ học: Quỹ đạo vung vợt Low-to-High tạo Topspin</span>
+      <span><i class="fa-solid fa-anchor"></i> Cốt lõi: Hai hằng số của lối chơi thượng thừa</span>
+      <span><i class="fa-solid fa-clock"></i> Thời gian đọc: 22 phút</span>
+    </div>
+  </div>
+
+  <div class="figure-box">
+    <img src="jack_kramer_tennis_assets/fig3_groundstroke_mechanics.jpg" alt="Cơ học cú đánh chạm đất vung vợt từ thấp lên cao và chuyển trọng tâm">
+    <span class="figure-caption">Hình 2.1: Cơ học cú chạm đất: Hạ đầu vợt thấp hơn bóng từ 20 cm, vung miết lên trên tạo xoáy cuộn cắm sâu vào vạch cuối sân.</span>
+  </div>
+
+  <div class="content-body">
+    <h3>1. Quỹ Đạo Vung Vợt Từ Thấp Lên Cao (Low-To-High Swing)</h3>
+    <p>
+      Nguyên lý khí động học căn bản của cú đánh chạm đất hiện đại được Jack Kramer đúc kết qua công thức "Low-to-High":
+    </p>
+    <p>
+      Để quả bóng có thể vượt qua mép lưới với độ an toàn cao (cách lưới từ 0.5 đến 1 mét) nhưng vẫn cắm xuống sâu trước vạch cuối sân đối phương, cây vợt bắt buộc phải di chuyển theo quỹ đạo từ dưới lên trên. Khi mặt vợt miết vào nửa sau của quả bóng theo hướng đi lên, lực ma sát tạo ra độ xoáy cuộn (Topspin). Hiệu ứng Magnus làm cho áp suất không khí phía trên quả bóng cao hơn phía dưới, kéo quả bóng cắm chúi xuống mặt sân một cách kỳ diệu.
+    </p>
+
+    <h3>2. Hai Hằng Số Của Lối Chơi Thượng Thừa (Two Constants of Superior Play)</h3>
+    <p>
+      Bất kể phong cách hay kiểu cầm vợt của bạn là gì, Jack Kramer chỉ ra hai nguyên lý cơ học bất biến mà mọi nhà vô địch đều tuân thủ nghiêm ngặt:
+    </p>
+    <ul>
+      <li><strong>Hằng số 1 – Giữ đầu và mắt cố định tại điểm tiếp xúc (Head still at impact):</strong> Đầu con người nặng trung bình từ 4.5 đến 5 kg. Nếu bạn ngước đầu lên nhìn theo hướng bóng quá sớm, toàn bộ trục cột sống và khung vai sẽ bị giật lệch, làm thay đổi góc mặt vợt tại tích tắc chạm bóng. Hãy giữ đầu đứng yên, nhìn thấy bóng rời mặt dây vợt rồi mới từ từ xoay mắt nhìn sang sân đối phương.</li>
+      <li><strong>Hằng số 2 – Chuyển dịch toàn bộ trọng lượng cơ thể qua bóng (Weight transfer through the ball):</strong> Cú đánh uy lực không đến từ việc dùng cánh tay phang mạnh. Lực đánh xuất phát từ bàn chân sau đẩy mạnh xuống mặt sân, xoay hông và dồn toàn bộ trọng lượng cơ thể bước xuyên qua điểm tiếp xúc bóng. Trọng lượng cơ thể di chuyển về phía trước là thứ tạo nên "sức nặng" đè bẹp đối thủ.</li>
+    </ul>
+
+    <h3>3. Cú Trái Tay Vững Vàng: Giải Phóng Sức Mạnh Từ Khung Vai</h3>
+    <p>
+      Nhiều người chơi sợ cú trái tay vì họ cố gắng dùng cổ tay để kéo bóng. Hãy chuyển sang tư duy đòn bẩy:
+    </p>
+    <ul>
+      <li>Xoay khung vai sâu đến mức lưng hướng về phía lưới.</li>
+      <li>Khóa cứng góc cổ tay phải ở tư thế vuông góc với cẳng tay.</li>
+      <li>Vung toàn bộ cánh tay từ khớp vai như một chiếc compa vững chắc, tiếp xúc bóng xa phía trước mũi chân trước.</li>
+    </ul>
+
+    <div class="pro-tip">
+      <div class="pro-tip-title"><i class="fa-solid fa-triangle-exclamation"></i> Lời Khuyên Của Jack Kramer</div>
+      <p>
+        Đừng tìm kiếm sức mạnh từ sự gồng cứng cơ bắp. Sức mạnh thực sự trong quần vợt là một dòng chảy động năng mượt mà: từ mặt đất, qua khớp gối, khớp háng, xoay thân trên và giải phóng qua đầu vợt.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section id="part3" class="book-part">
+  <div class="part-header">
+    <span class="part-tag">Phần 3: Giao Bóng &amp; Trả Giao Bóng</span>
+    <h2>Quả Giao Bóng Lớn &amp; Nghệ Thuật Trả Giao Bóng Thực Chiến</h2>
+    <div class="part-meta">
+      <span><i class="fa-solid fa-bolt-lightning"></i> Giao bóng: Tại sao quả Slice Serve là vũ khí tối thượng</span>
+      <span><i class="fa-solid fa-shield"></i> Trả giao bóng: Bước tiến vào sân &amp; Chặn góc đánh</span>
+      <span><i class="fa-solid fa-clock"></i> Thời gian đọc: 22 phút</span>
+    </div>
+  </div>
+
+  <div class="figure-box">
+    <img src="jack_kramer_tennis_assets/fig4_slice_serve_motion.jpg" alt="Cơ học quả giao bóng xoáy slice của Jack Kramer">
+    <span class="figure-caption">Hình 3.1: Quả giao bóng xoáy Slice (Slice Serve): Mặt vợt chém xéo qua mép phải quả bóng, tạo độ cuộn dạt biên cực kỳ khó chịu.</span>
+  </div>
+
+  <div class="content-body">
+    <h3>1. Tại Sao Quả Giao Bóng Xoáy Slice Là Vũ Khí Tối Thượng?</h3>
+    <p>
+      Nhiều người chơi phong trào luôn khao khát quả giao bóng phẳng (Flat serve) sấm sét như đại bác. Nhưng Jack Kramer – người sở hữu quả giao bóng uy lực bậc nhất lịch sử – lại khuyên bạn nên làm chủ quả giao bóng xoáy Slice trước tiên:
+    </p>
+    <ul>
+      <li><strong>Tỷ lệ bóng vào sân cực cao (High percentage):</strong> Độ xoáy ngang và xoáy lướt của quả slice giúp bóng uốn cong hình cánh cung qua lưới, triệt tiêu gần như hoàn toàn nguy cơ mắc lỗi giao bóng kép (double faults).</li>
+      <li><strong>Kéo đối thủ dạt ra ngoài vạch biên:</strong> Ở ô giao bóng bên phải (Deuce court), quả slice xoáy dạt bóng văng xa sang bên phải, buộc đối thủ phải chạy vượt ra ngoài vạch biên đôi để đón bóng, để lộ ra hơn 70% diện tích sân trống cho cú đánh tiếp theo của bạn.</li>
+      <li><strong>Bóng nảy chìm sát mặt sân:</strong> Không nảy tưng lên như quả xoáy kick, quả slice nảy trượt là là mặt sân khiến người trả giao bóng không thể vung hết biên độ tay.</li>
+    </ul>
+
+    <div class="figure-box">
+      <img src="jack_kramer_tennis_assets/fig5_return_of_serve.jpg" alt="Vị trí đứng và kỹ thuật trả giao bóng tấn công">
+      <span class="figure-caption">Hình 3.2: Trả giao bóng tấn công: Bước tiến vào sân đón bóng sớm, triệt tiêu thời gian phản ứng của đối thủ giao bóng.</span>
+    </div>
+
+    <h3>2. Nhịp Tung Bóng Nhạy Cảm &amp; Phát Lực Đồng Bộ</h3>
+    <p>
+      Độ chuẩn xác của quả giao bóng bắt đầu từ tư thế đứng và cánh tay tung bóng:
+    </p>
+    <ul>
+      <li><strong>Tung bóng như đặt vật quý lên kệ cao:</strong> Dùng toàn bộ cánh tay trái nâng bóng lên, thả bóng nhẹ nhàng ở ngang tầm mắt mà không để bóng xoay tròn. Điểm rơi bóng nằm phía trước mũi chân trước chừng một gang tay.</li>
+      <li><strong>Uốn cong đầu gối và vươn người đón bóng:</strong> Khuỵu sâu hai đầu gối nén lực xuống mặt sân, sau đó bật vươn người lên cao đón bóng ở điểm cao nhất có thể.</li>
+    </ul>
+
+    <h3>3. Nghệ Thuật Trả Giao Bóng Thực Chiến</h3>
+    <p>
+      Nguyên tắc cốt tử khi trả giao bóng theo Jack Kramer:
+    </p>
+    <ul>
+      <li><strong>Bước tiến vào sân (Step into the court):</strong> Đừng bao giờ lùi ra xa phía sau vạch cuối sân khi đối thủ giao bóng hai. Hãy bước chân tiến vào trong sân, cắt ngắn góc mở của bóng và đón bóng khi bóng vừa nảy lên từ mặt sân.</li>
+      <li><strong>Động tác vung vợt ngắn gọn:</strong> Giữ mặt vợt vững chắc, sử dụng chính tốc độ giao bóng của đối phương để chặn bóng sâu vào chân đối thủ đang dâng lên lưới.</li>
+    </ul>
+
+    <div class="pro-tip">
+      <div class="pro-tip-title"><i class="fa-solid fa-circle-check"></i> Bí Quyết Giao Bóng Của Nhà Vô Địch</div>
+      <p>
+        Trong thi đấu, quả giao bóng một có tốc độ 80% nhưng chính xác vào điểm yếu đối thủ luôn mang lại hiệu quả gấp mười lần một quả giao bóng 100% lực nhưng chỉ vào sân với tỷ lệ 30%.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section id="part4" class="book-part">
+  <div class="part-header">
+    <span class="part-tag">Phần 4: Lối Chơi Lớn &amp; Bản Lĩnh Thép</span>
+    <h2>"The Big Game", Tấn Công Trên Lưới &amp; Bản Lĩnh Thép</h2>
+    <div class="part-meta">
+      <span><i class="fa-solid fa-fire"></i> Lối chơi: Khai sinh triết lý tấn công "The Big Game"</span>
+      <span><i class="fa-solid fa-trophy"></i> Bản lĩnh: Chiến thuật điểm lớn (Big Points) &amp; Tâm lý thắng lợi</span>
+      <span><i class="fa-solid fa-clock"></i> Thời gian đọc: 24 phút</span>
+    </div>
+  </div>
+
+  <div class="figure-box">
+    <img src="jack_kramer_tennis_assets/fig6_attacking_net_volley.jpg" alt="Lối chơi tấn công áp sát lưới của Jack Kramer">
+    <span class="figure-caption">Hình 4.1: Triết lý "The Big Game": Giao bóng uy lực, lập tức lao lên áp sát lưới để bắt quả volley dứt điểm gọn gàng.</span>
+  </div>
+
+  <div class="content-body">
+    <h3>1. Triết Lý "The Big Game": Cuộc Tấn Công Bất Tận</h3>
+    <p>
+      Jack Kramer đã làm rung chuyển thế giới quần vợt vào thập niên 1940 khi sáng tạo ra "The Big Game" – lối chơi giao bóng và lên lưới tấn công (Serve-and-Volley) biến mọi trận đấu thành cuộc vây hãm tốc độ cao:
+    </p>
+    <ul>
+      <li><strong>Tấn công liên tục để rút ngắn thời gian thở của đối thủ:</strong> Không bao giờ cho đối thủ thời gian đứng yên ở vạch cuối sân để ngắm nghía và vung vợt thoải mái. Luôn tạo áp lực bằng những cú đánh tiếp cận sâu và tiến thẳng lên lưới.</li>
+      <li><strong>Cú đấm Volley gọn gàng (Punch Volley):</strong> Khi đứng trên lưới, cây vợt không bao giờ được phép lùi ra sau vai bạn. Hãy bước chân trước dứt khoát vào bóng và đấm nhẹ mặt vợt xuyên qua quả bóng, hướng bóng vào góc sân xa nhất hoặc chìm sát chân đối thủ.</li>
+    </ul>
+
+    <div class="figure-box">
+      <img src="jack_kramer_tennis_assets/fig7_overhead_putaway.jpg" alt="Cú đập overhead dứt điểm ăn điểm trực tiếp">
+      <span class="figure-caption">Hình 4.2: Cú đập Overhead kết liễu: Xoay nghiêng người đón bóng rơi, vươn thẳng người đập bóng cắm sàn không cho đối thủ cơ hội cứu nguy.</span>
+    </div>
+
+    <h3>2. Cú Đập Overhead Dứt Điểm Sạch Sẽ</h3>
+    <p>
+      Một tay vợt theo đuổi lối chơi "The Big Game" không bao giờ bỏ lỡ cơ hội đập smash khi đối thủ lốp bóng:
+    </p>
+    <ul>
+      <li><strong>Không lùi giật lùi:</strong> Luôn xoay người sang một bên và dùng bước chạy nghiêng để di chuyển.</li>
+      <li><strong>Điểm tiếp xúc phía trước trán:</strong> Đón bóng ở tầm cao nhất phía trước mắt, đánh gập nhẹ cổ tay đưa bóng cắm thẳng xuống mặt sân đối diện với lực nảy bật cao ra ngoài hàng rào.</li>
+    </ul>
+
+    <div class="figure-box">
+      <img src="jack_kramer_tennis_assets/fig8_playing_to_win.jpg" alt="Bản lĩnh thi đấu điểm lớn và triết lý chơi để thắng">
+      <span class="figure-caption">Hình 4.3: Bản lĩnh nhà vô địch (Playing to Win): Kiểm soát hoàn toàn các điểm số then chốt 30-30, Deuce và Break point bằng tỷ lệ an toàn cao.</span>
+    </div>
+
+    <h3>3. Chiến Thuật Điểm Lớn: Chơi Để Thắng (Playing to Win)</h3>
+    <p>
+      Sự khác biệt giữa kẻ thất bại và nhà vô địch nằm ở cách họ thi đấu tại các "Điểm lớn" (Big points: 30-30, 40-40, Break point và Tiebreak):
+    </p>
+    <ul>
+      <li><strong>Không tự hủy bằng những cú đánh kỳ quặc:</strong> Ở điểm 30-30, người chơi yếu bóng vía thường cố gắng tung ra một cú đánh winner không tưởng sát vạch biên và tự đánh hỏng. Nhà vô địch chọn phương án an toàn nhất: giao bóng một chắc chắn vào ô sân và đánh bóng sâu qua giữa sân đối phương, ép đối thủ phải chịu đựng sức ép tâm lý nghẹt thở.</li>
+      <li><strong>Chơi để thắng chứ không phải chơi để không thua (Play to win, not not-to-lose):</strong> Chơi thụ động sợ mắc lỗi chỉ dẫn tới thất bại. Hãy duy trì sự chủ động, bước chân tiến vào sân và kết liễu trận đấu bằng những cú đánh sở trường mà bạn tin tưởng nhất.</li>
+    </ul>
+
+    <div class="pro-tip">
+      <div class="pro-tip-title"><i class="fa-solid fa-trophy"></i> Lời Kết Từ Huyền Thoại Jack Kramer</div>
+      <p>
+        Quần vợt đỉnh cao là sự kết hợp hoàn hảo giữa toán học xác suất lạnh lùng và ngọn lửa đam mê rực cháy trong tim. Hãy tin tưởng vào hệ thống của bạn, thi đấu với lòng quả cảm và luôn chơi thứ quần vợt tốt nhất của bạn trong mọi khoảnh khắc!
+      </p>
+    </div>
+  </div>
+</section>
+
+        </main>
+    </div>
+
+    <script>
+        // Reading progress bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('reading-progress-bar').style.width = scrolled + '%';
+        });
+
+        // Theme toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = themeToggle.querySelector('i');
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        if (currentTheme === 'dark') {
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme');
+            const target = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', target);
+            localStorage.setItem('theme', target);
+            if (target === 'dark') {
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            }
+        });
+
+        // Active TOC scroll spy
+        const sections = document.querySelectorAll('.book-part');
+        const navLinks = document.querySelectorAll('.toc-item');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.querySelector('a').getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
