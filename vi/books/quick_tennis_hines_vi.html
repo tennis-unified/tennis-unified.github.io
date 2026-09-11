@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Tennis: Bộ Chân Điền Kinh & Tốc Độ Di Chuyển — Henry Hines & Arthur Ashe | Tennis Unified</title>
+    <meta name="description" content="Bản dịch tiếng Việt chuyên sâu cuốn sách Quick Tennis của Henry Hines & Carol Morgenstern, lời tựa Arthur Ashe. Phương pháp cách mạng hóa bộ chân quần vợt, mô thức sải chân điền kinh, và giáo án rèn luyện thể lực giúp Arthur Ashe vô địch Wimbledon 1975.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0284c7;
+            --primary-dark: #0369a1;
+            --primary-light: #38bdf8;
+            --accent: #f59e0b;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --sidebar-width: 290px;
+        }
+
+        [data-theme="dark"] {
+            --primary: #38bdf8;
+            --primary-dark: #0284c7;
+            --primary-light: #7dd3fc;
+            --accent: #fbbf24;
+            --bg-page: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --border: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.7;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #reading-progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #0284c7, #38bdf8);
+            width: 0%;
+            z-index: 9999;
+            transition: width 0.1s ease;
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            background-color: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-logo {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .header-nav a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .header-nav a:hover {
+            color: var(--primary);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .btn-lang {
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .btn-lang:hover {
+            background-color: var(--primary);
+            color: #ffffff;
+        }
+
+        .btn-icon {
+            background: none;
+            border: none;
+            color: var(--text-main);
+            font-size: 1.1rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 6px;
+            transition: color 0.2s;
+        }
+
+        .btn-icon:hover {
+            color: var(--primary);
+        }
+
+        .reader-layout {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            position: relative;
+        }
+
+        .sidebar {
+            width: var(--sidebar-width);
+            height: calc(100vh - 60px);
+            position: sticky;
+            top: 60px;
+            border-right: 1px solid var(--border);
+            padding: 1.5rem;
+            overflow-y: auto;
+            flex-shrink: 0;
+            background-color: var(--bg-card);
+        }
+
+        .sidebar-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .toc-menu {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .toc-item a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            display: block;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            transition: all 0.2s;
+            line-height: 1.4;
+        }
+
+        .toc-item a:hover,
+        .toc-item.active a {
+            color: var(--primary);
+            background-color: rgba(2, 132, 199, 0.08);
+            font-weight: 600;
+        }
+
+        .sidebar-download {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .btn-download-pdf {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background-color: var(--primary);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            box-shadow: 0 2px 4px rgba(2, 132, 199, 0.2);
+            transition: all 0.2s;
+        }
+
+        .btn-download-pdf:hover {
+            background-color: var(--primary-dark);
+            box-shadow: 0 4px 8px rgba(2, 132, 199, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .main-article {
+            flex: 1;
+            max-width: 900px;
+            padding: 2.5rem 3rem;
+            background-color: var(--bg-card);
+            min-height: calc(100vh - 60px);
+            border-right: 1px solid var(--border);
+        }
+
+        .hero-banner {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(2, 132, 199, 0.1);
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+        }
+
+        .hero-title {
+            font-size: 2.4rem;
+            font-weight: 800;
+            line-height: 1.25;
+            color: var(--text-main);
+            margin-bottom: 1rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .hero-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .book-part {
+            margin-bottom: 4rem;
+            padding-top: 1rem;
+        }
+
+        .part-header {
+            margin-bottom: 2rem;
+        }
+
+        .part-tag {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .part-header h2 {
+            font-size: 1.85rem;
+            font-weight: 800;
+            line-height: 1.3;
+            color: var(--text-main);
+            margin-bottom: 0.75rem;
+        }
+
+        .part-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .part-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .figure-box {
+            margin: 2rem 0;
+            background-color: var(--bg-page);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .figure-box img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .figure-caption {
+            display: block;
+            padding: 0.8rem 1.2rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-style: italic;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            background-color: var(--bg-card);
+        }
+
+        .content-body h3 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .content-body p {
+            font-size: 1.02rem;
+            margin-bottom: 1.25rem;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        .content-body ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .content-body li {
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-main);
+        }
+
+        .pro-tip {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            border-left: 4px solid var(--primary);
+            background: rgba(2, 132, 199, 0.05);
+            border-radius: 0 10px 10px 0;
+        }
+
+        .pro-tip-title {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.05rem;
+        }
+
+        .pro-tip p {
+            margin-bottom: 0;
+            font-size: 0.98rem;
+        }
+
+        @media (max-width: 1024px) {
+            .sidebar {
+                display: none;
+            }
+            .main-article {
+                padding: 2rem 1.5rem;
+                max-width: 100%;
+                border-right: none;
+            }
+            .hero-title {
+                font-size: 1.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="reading-progress-bar"></div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="/vi/books/" class="header-logo"><i class="fa-solid fa-book-open"></i> Tennis Unified Books</a>
+            <nav class="header-nav">
+                <a href="/vi/books/">Tủ Sách</a>
+                <a href="/vi/fundamentals/">Nền Tảng</a>
+                <a href="/vi/stroke-analysis/">Phân Tích Cú Đánh</a>
+                <a href="/vi/drills/">Bài Tập</a>
+            </nav>
+            <div class="header-actions">
+                <a href="/books/" data-lang-toggle="en" class="btn-lang"><i class="fa-solid fa-globe"></i> English</a>
+                <button id="theme-toggle" class="btn-icon" aria-label="Đổi giao diện sáng/tối"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="reader-layout">
+        <aside class="sidebar">
+            <div class="sidebar-title">Mục Lục Cuốn Sách</div>
+            <ul class="toc-menu">
+                <li class="toc-item active"><a href="#part1"><i class="fa-solid fa-running"></i> Phần 1: Arthur Ashe & Quần Vợt Đôi Chân</a></li>
+                <li class="toc-item"><a href="#part2"><i class="fa-solid fa-bolt"></i> Phần 2: Tư Thế Sẵn Sàng & Sải Chân</a></li>
+                <li class="toc-item"><a href="#part3"><i class="fa-solid fa-arrows-split-up-and-left"></i> Phần 3: Bóng Ngoài & Bóng Trong Thân</a></li>
+                <li class="toc-item"><a href="#part4"><i class="fa-solid fa-stopwatch"></i> Phần 4: Giáo Án & Bài Tập Tốc Độ</a></li>
+            </ul>
+
+            <div class="sidebar-download">
+                <a href="Quick_Tennis_Hines_Vietnamese_Final.pdf" target="_blank" class="btn-download-pdf">
+                    <i class="fa-solid fa-file-pdf"></i> Tải PDF Tiếng Việt
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-article">
+            <div class="hero-banner">
+                <span class="hero-badge">Cẩm Nang Huấn Luyện Bộ Chân &amp; Thể Lực</span>
+                <h1 class="hero-title">Quick Tennis: Bộ Chân Điền Kinh &amp; Tốc Độ Di Chuyển</h1>
+                <p class="hero-subtitle">Bản dịch tiếng Việt chuyên sâu cuốn sách Quick Tennis của Henry Hines &amp; Carol Morgenstern — Với lời tựa lịch sử từ nhà vô địch Wimbledon Arthur Ashe. Phương pháp cách mạng hóa đôi chân, mô thức sải chân điền kinh và hệ thống bài tập bứt tốc nâng tầm mọi tay vợt.</p>
+                <div class="hero-meta">
+                    <span><i class="fa-solid fa-user"></i> Tác giả: Henry Hines with Carol Morgenstern</span>
+                    <span><i class="fa-solid fa-trophy"></i> Lời tựa: Arthur Ashe (Vô địch Wimbledon 1975)</span>
+                    <span><i class="fa-solid fa-language"></i> Bản dịch: Tennis Unified</span>
+                </div>
+            </div>
+
+            
+<section id="part1" class="book-part">
+  <div class="part-header">
+    <span class="part-tag">Phần 1: Khởi Nguồn &amp; Triết Lý Vận Động</span>
+    <h2>Lời Tựa Của Arthur Ashe &amp; Quần Vợt Là Môn Thể Thao Của Đôi Chân</h2>
+    <div class="part-meta">
+      <span><i class="fa-solid fa-user-pen"></i> Tác giả: Henry Hines &amp; Carol Morgenstern</span>
+      <span><i class="fa-solid fa-medal"></i> Lời tựa: Huyền thoại Arthur Ashe</span>
+      <span><i class="fa-solid fa-clock"></i> Thời gian đọc: 18 phút</span>
+    </div>
+  </div>
+
+  <div class="figure-box">
+    <img src="quick_tennis_assets/fig1_arthur_ashe_foreword.jpg" alt="Arthur Ashe và Henry Hines trên sân tập">
+    <span class="figure-caption">Hình 1.1: Huyền thoại Arthur Ashe cùng huấn luyện viên thể lực và chuyên gia điền kinh thế giới Henry Hines trong đợt huấn luyện tái định hình bộ chân di chuyển.</span>
+  </div>
+
+  <div class="content-body">
+    <h3>1. Lời Mở Đầu Của Arthur Ashe: Cuộc Cách Mạng Về Bộ Chân</h3>
+    <p>
+      Lần đầu tiên tôi gặp Henry Hines là vài năm trước tại Tokyo, khi tôi và Roscoe Tanner quyết định tới xem một giải thi đấu điền kinh chuyên nghiệp. Chúng tôi lúc đó đang thi đấu một giải quần vợt cách sân vận động điền kinh chỉ chừng 200 mét. Là một cựu sinh viên Đại học UCLA, tôi luôn theo dõi sát sao những ngôi sao điền kinh của vùng Nam California, do đó cái tên Henry Hines – nhà vô địch nhảy xa cự ly đỉnh cao của NCAA – không hề xa lạ với tôi. Tại nhà thi đấu, Henry nhận ra chúng tôi ở hành lang và mời chúng tôi bước lên đường chạy.
+    </p>
+    <p>
+      Cách anh ấy bước lên đó khiến chúng tôi sững sờ. Đứng bên ngoài rào chắn, anh ấy chỉ cần nhún nhẹ một bước và bật người bay bổng nhẹ nhàng qua hàng rào cao hơn một mét rưỡi như một cánh chim, tiếp đất không hề phát ra một tiếng động nhỏ. Sau đó, Henry quan sát chúng tôi và nói một câu làm thay đổi vĩnh viễn tư duy thi đấu của tôi: "Các anh có kỹ thuật vung vợt rất hoàn hảo, nhưng các anh di chuyển trên sân thì quá tệ."
+    </p>
+    <p>
+      Chưa từng có một ai dám nói với chúng tôi những lời thẳng thắn như thế. Nhưng sau khi tận mắt chứng kiến một vận động viên điền kinh thế giới di chuyển thanh thoát và bùng nổ đến mức nào, chúng tôi không thể phủ nhận nhận xét đó. Vào cuối năm đó, để chuẩn bị cho mùa giải 1975, nhóm tay vợt người Mỹ chúng tôi đã mời Henry bay tới Puerto Rico để huấn luyện thể lực và bộ chân.
+    </p>
+    <p>
+      Anh ấy đã bắt chúng tôi tập luyện đến mức kiệt sức suốt bốn ngày ròng rã. Nhưng khi những cơn đau nhức cơ bắp qua đi, tất cả chúng tôi đều đạt tới trạng thái thể lực phi thường chưa từng thấy. Chúng tôi thấu hiểu sâu sắc cách làm thế nào để đôi chân lướt đi trên sân một cách hiệu quả nhất, tiết kiệm năng lượng nhất mà vẫn đạt tốc độ cực đại tới từng quả bóng. Năm 1975 ấy, tôi đã bước lên đỉnh cao vinh quang bằng việc giành chức vô địch giải đấu danh giá nhất thế giới tại Wimbledon. Cuốn sách này kết tinh toàn bộ hệ thống huấn luyện di chuyển mà Henry đã trao cho chúng tôi.
+    </p>
+
+    <div class="pro-tip">
+      <div class="pro-tip-title"><i class="fa-solid fa-lightbulb"></i> Lời Khuyên Của Arthur Ashe Về Bộ Chân</div>
+      <p>
+        Trong quần vợt hiện đại, tay vợt nào cũng có thể học cách vung vợt đẹp mắt khi đứng yên một chỗ. Tuy nhiên, sự khác biệt giữa nhà vô địch Grand Slam và một người chơi trung bình nằm ở chỗ: ai đưa được cơ thể vào vị trí hoàn hảo sớm hơn nửa giây trước khi tiếp xúc bóng. Bộ chân là nền móng của mọi cú đánh uy lực.
+      </p>
+    </div>
+
+    <div class="figure-box">
+      <img src="quick_tennis_assets/fig2_running_game.jpg" alt="Phân tích cơ chế chạy và phanh hãm trong quần vợt">
+      <span class="figure-caption">Hình 1.2: Chu kỳ di chuyển trong quần vợt gồm tăng tốc cự ly ngắn (acceleration), hãm đà (deceleration) và thiết lập bệ phóng thăng bằng trước khi vung vợt.</span>
+    </div>
+
+    <h3>2. Bản Chất: Quần Vợt Là Môn Thể Thao Của Đôi Chân (A Running Game)</h3>
+    <p>
+      Hầu hết các huấn luyện viên truyền thống dành tới 90% thời lượng để chỉnh sửa góc mở mặt vợt, cách cầm cán vợt hay đường vòng cung dẫn vợt. Điều đó không sai, nhưng hoàn toàn đảo lộn thứ tự ưu tiên cơ sinh học. Một cú đánh thuận tay (forehand) hay trái tay (backhand) dù hoàn hảo đến đâu trong bài tập ném bóng tại chỗ cũng sẽ vỡ vụn khi bạn phải chạy hết tốc lực sang hai góc sân.
+    </p>
+    <p>
+      Quần vợt không phải là một môn chạy đường trường với nhịp bước đều đặn. Quần vợt là sự tập hợp của hàng trăm đợt bứt tốc cự ly cực ngắn (từ 2 đến 6 mét), xen kẽ bởi những pha phanh hãm đột ngột, đổi hướng trọng tâm và phục hồi vị trí ngay lập tức. Nếu đôi chân của bạn chậm trễ chỉ 0.2 giây, điểm tiếp xúc bóng sẽ bị trôi ra phía sau thân người, buộc cổ tay và cánh tay phải gồng cứng để bù đắp, dẫn tới sai hỏng kỹ thuật và chấn thương.
+    </p>
+
+    <h3>3. Khởi Động Động Học: Đánh Thức Hệ Thần Kinh Cơ Bắp</h3>
+    <p>
+      Nhiều người chơi phong trào bước ra sân và bắt đầu bằng các động tác ép dẻo tĩnh (static stretching) như cúi gập người giữ yên 30 giây. Khoa học vận động hiện đại chứng minh rằng ép dẻo tĩnh trước khi vận động cường độ cao làm giảm sức bật bùng nổ của sợi cơ và tăng nguy cơ rách cơ.
+    </p>
+    <p>
+      Quy trình khởi động động học (dynamic warm-up) chuẩn điền kinh của Henry Hines được thiết kế để kích hoạt các khớp xương chủ chốt:
+    </p>
+    <ul>
+      <li><strong>Chạy nâng cao đùi nhẹ nhàng kết hợp xoay khớp háng (Hip circles):</strong> Giải phóng áp lực vùng chậu và tăng biên độ xoay thân trên.</li>
+      <li><strong>Bước gập gối kéo giãn động (Walking lunges with torso twist):</strong> Kích hoạt cơ đùi trước (quadriceps), cơ mông (glutes) và nhóm cơ lõi (core muscles).</li>
+      <li><strong>Bật nhảy nhịp điệu trên mũi bàn chân (Ankle hops):</strong> Đánh thức gân Achilles và hệ thần kinh phản xạ nhanh ở mắt cá chân.</li>
+      <li><strong>Chạy bước ngang vắt chéo (Carioca / Grapevine):</strong> Kéo giãn cơ khép đùi (adductors) và chuẩn bị cho các pha đổi hướng cắt ngang sân đấu.</li>
+    </ul>
+    <p>
+      Chỉ khi cơ thể đã toát một lớp mồ hôi mỏng và nhịp tim được nâng lên ngưỡng kích hoạt, đôi chân mới sẵn sàng thực hiện những bước di chuyển bùng nổ mà không sợ quá tải cơ bắp.
+    </p>
+  </div>
+</section>
+
+
+<section id="part2" class="book-part">
+  <div class="part-header">
+    <span class="part-tag">Phần 2: Trọng Tâm &amp; Mô Thức Sải Chân</span>
+    <h2>Tư Thế Sẵn Sàng Vượt Trội &amp; Mô Thức Sải Chân Đỉnh Cao</h2>
+    <div class="part-meta">
+      <span><i class="fa-solid fa-bolt"></i> Cơ chế: Trọng tâm thấp &amp; Phản xạ xuất phát</span>
+      <span><i class="fa-solid fa-layer-group"></i> Thích ứng: Sân cứng, đất nện, sân cỏ</span>
+      <span><i class="fa-solid fa-clock"></i> Thời gian đọc: 20 phút</span>
+    </div>
+  </div>
+
+  <div class="figure-box">
+    <img src="quick_tennis_assets/fig3_ready_position.jpg" alt="Tư thế sẵn sàng điền kinh trên sân quần vợt">
+    <span class="figure-caption">Hình 2.1: Tư thế sẵn sàng điền kinh chuẩn mực (Athletic ready position) với trọng lượng dồn đều vào đệm ức bàn chân và khớp gối gập tự nhiên.</span>
+  </div>
+
+  <div class="content-body">
+    <h3>1. Tư Thế Sẵn Sàng Điền Kinh: Nền Tảng Phản Xạ Bùng Nổ</h3>
+    <p>
+      Phần lớn người chơi quần vợt mắc một sai lầm chết người ngay trước khi bóng rời mặt vợt đối phương: họ đứng với tư thế quá thẳng lưng và dồn trọng lượng cơ thể lên gót chân. Khi gót chân chạm đất, cơ thể bạn rơi vào trạng thái "khóa cơ học" (locked joints). Để bắt đầu di chuyển, bạn phải mất thêm một nhịp chuyển trọng tâm về phía trước, tiêu tốn mất 0.2 đến 0.3 giây vàng ngọc.
+    </p>
+    <p>
+      Tư thế sẵn sàng kiểu điền kinh của Henry Hines đòi hỏi những tiêu chuẩn hình học khắt khe:
+    </p>
+    <ul>
+      <li><strong>Khoảng cách hai bàn chân:</strong> Rộng hơn bề ngang của hai vai từ 10 đến 15 cm, tạo thành một bệ đỡ hình thang vững chắc.</li>
+      <li><strong>Phân bố trọng lượng:</strong> Toàn bộ sức nặng cơ thể được đặt trên phần đệm ức bàn chân (balls of the feet), gót chân hơi nhấc nhẹ cách mặt sân chừng vài milimet.</li>
+      <li><strong>Góc gập ba khớp (Triple flexion):</strong> Khớp cổ chân, khớp gối và khớp hông đều gập ở góc nghiêng lý tưởng khoảng 110 đến 120 độ, nén căng nhóm cơ đùi như một chiếc lò xo sẵn sàng giải phóng năng lượng.</li>
+      <li><strong>Lưng thẳng và ngực mở:</strong> Thân trên hơi đổ nhẹ về phía trước từ khớp háng, mắt nhìn thẳng vào điểm tiếp xúc bóng của đối thủ qua phần đầu vợt được nâng cao trước ngực.</li>
+    </ul>
+
+    <div class="figure-box">
+      <img src="quick_tennis_assets/fig4_stride_pattern.jpg" alt="Mô thức sải chân và chuỗi bước giảm tốc">
+      <span class="figure-caption">Hình 2.2: Mô thức sải chân gồm bước xuất phát bùng nổ, các bước chạy gia tốc dài và chuỗi bước dặm nhỏ (stutter steps) để định vị bệ phóng.</span>
+    </div>
+
+    <h3>2. Mô Thức Sải Chân (Stride Pattern Mechanics)</h3>
+    <p>
+      Làm thế nào để một tay vợt có thể di chuyển từ giữa sân ra góc sân chỉ trong 3 bước mà vẫn giữ được sự thăng bằng tuyệt đối khi vung vợt? Bí quyết nằm ở "Mô thức sải chân có kiểm soát":
+    </p>
+    <ul>
+      <li><strong>Bước 1 – Bước xoay trục bùng nổ (Gravity step / Drop step):</strong> Khi xác định hướng bóng, bàn chân phía cùng hướng bóng lập tức xoay mở góc 45 độ, đồng thời hạ thấp trọng tâm để cơ thể tự đổ về hướng bóng nhờ trọng lực. Đây là bước quan trọng nhất quyết định tốc độ xuất phát.</li>
+      <li><strong>Bước 2 – Bước bứt tốc vắt chéo (Crossover acceleration stride):</strong> Chân phía đối diện vắt chéo qua phía trước thân người, tạo ra một sải chân dài đầy uy lực để rút ngắn tối đa khoảng cách tới bóng.</li>
+      <li><strong>Bước 3 – Các bước dặm nhỏ căn chỉnh (Adjustment / Stutter steps):</strong> Khi còn cách bóng khoảng 1 mét, người chơi chuyển từ sải chân dài sang chuỗi các bước dặm nhỏ, nhanh và linh hoạt. Những bước này giúp tinh chỉnh khoảng cách tiếp xúc bóng chính xác tới từng centimet.</li>
+      <li><strong>Bước 4 – Bước phanh hãm và thiết lập bệ đỡ (Braking and planting stride):</strong> Bàn chân trụ bước rộng ra ngoài, tiếp đất bằng cả bàn chân nghiêng nhẹ để hấp thụ quán tính chạy, biến động năng tịnh tiến thành đòn bẩy xoay hông khi tiếp xúc bóng.</li>
+    </ul>
+
+    <div class="pro-tip">
+      <div class="pro-tip-title"><i class="fa-solid fa-triangle-exclamation"></i> Lỗi Thường Gặp Về Sải Chân</div>
+      <p>
+        Nhiều người chơi dùng sải chân dài cho tới tận khi chạm bóng. Hậu quả là quán tính lao về phía trước quá mạnh khiến họ không thể hãm phanh, dẫn tới việc vung vợt trong tư thế chới với và không thể phục hồi vị trí kịp thời cho quả bóng tiếp theo. Hãy nhớ nguyên tắc: "Bước dài để bứt tốc, bước ngắn để căn cự ly."
+      </p>
+    </div>
+
+    <h3>3. Thích Ứng Bộ Chân Trên Các Mặt Sân Khác Nhau</h3>
+    <p>
+      Mỗi mặt sân quần vợt đòi hỏi một chiến lược tiếp đất và ma sát hoàn toàn riêng biệt:
+    </p>
+    <ul>
+      <li><strong>Sân cứng (Hard court):</strong> Độ bám ma sát rất cao đòi hỏi đôi giày phải có đệm giảm chấn tốt. Người chơi phải hạ thấp trọng tâm sâu hơn khi phanh để tránh chấn thương khớp gối và lật cổ chân. Tuyệt đối không được cố trượt trên sân cứng nếu chưa làm chủ kỹ thuật mở cổ chân của các tay vợt chuyên nghiệp.</li>
+      <li><strong>Sân đất nện (Clay court):</strong> Bề mặt bột gạch cho phép người chơi thực hiện kỹ thuật trượt dài (clay slide). Điểm mấu chốt là phải bắt đầu động tác trượt trước khi tiếp xúc bóng từ 0.5 mét, giữ cho bàn chân trượt phẳng hoàn toàn trên mặt sân để duy trì sự ổn định tối đa.</li>
+      <li><strong>Sân cỏ (Grass court):</strong> Độ nảy của bóng trên sân cỏ rất thấp và trơn trượt. Người chơi phải duy trì tư thế hạ trọng tâm cực thấp trong suốt trận đấu, bước chân ngắn hơn và nhanh hơn để không bị trượt ngã khi đổi hướng đột ngột.</li>
+    </ul>
+  </div>
+</section>
+
+
+<section id="part3" class="book-part">
+  <div class="part-header">
+    <span class="part-tag">Phần 3: Kỹ Thuật Xử Lý Tình Huống</span>
+    <h2>Bộ Chân Cho Bóng Ngoài &amp; Bóng Trong Thân Người</h2>
+    <div class="part-meta">
+      <span><i class="fa-solid fa-arrows-split-up-and-left"></i> Phân loại: Outer Ball &amp; Inner Ball</span>
+      <span><i class="fa-solid fa-person-running"></i> Chuyển đổi: Lên lưới &amp; Lùi phòng thủ</span>
+      <span><i class="fa-solid fa-clock"></i> Thời gian đọc: 22 phút</span>
+    </div>
+  </div>
+
+  <div class="figure-box">
+    <img src="quick_tennis_assets/fig5_inner_outer_ball.jpg" alt="Phân biệt bộ chân xử lý bóng ngoài và bóng trong">
+    <span class="figure-caption">Hình 3.1: Cơ chế xử lý bóng ngoài (Outer Ball - đòi hỏi sải chân rướn dài) đối lập với bóng trong (Inner Ball - đòi hỏi bước lùi mở hông thoát người).</span>
+  </div>
+
+  <div class="content-body">
+    <h3>1. Giải Mã "Bóng Ngoài" (Outer Ball): Làm Chủ Cự Ly Rộng</h3>
+    <p>
+      Khái niệm "Bóng ngoài" (Outer Ball) trong học thuyết của Henry Hines chỉ những đường bóng được đối thủ kéo rộng ra hai góc biên hoặc sâu vào góc sân, buộc bạn phải bứt phá hết tầm với của cơ thể. Để xử lý thành công một quả bóng ngoài mà không bị đối thủ trừng phạt ở cú đánh tiếp theo, bạn cần thực hiện chuẩn xác chuỗi động tác sau:
+    </p>
+    <ul>
+      <li><strong>Bước rướn sải chân mở (Wide open-stance lunge):</strong> Thay vì bước chân vào đóng kín thân người (closed stance), hãy sải chân ngoài ra xa để tạo điểm tựa mở. Khớp gối ngoài gập sâu để chịu toàn bộ lực nén khi tiếp bóng.</li>
+      <li><strong>Giữ trục thân người thẳng đứng:</strong> Sai lầm phổ biến nhất là nghiêng cả đầu và thân trên ra ngoài để với bóng, khiến bạn mất thăng bằng hoàn toàn. Hãy giữ trục cột sống thẳng đứng, chỉ mở rộng cánh tay và khớp háng.</li>
+      <li><strong>Bước vắt chéo hồi quy (Crossover recovery step):</strong> Ngay sau khi chạm bóng, thay vì bước lùi chậm chạp bằng các bước trượt ngang (side shuffle), hãy dồn lực đẩy mạnh từ chân ngoài để tung một bước chân trong vắt chéo qua thân người về phía trung tâm sân. Bước vắt chéo này giúp bạn thu hồi được 2 mét chỉ trong một tích tắc.</li>
+    </ul>
+
+    <div class="figure-box">
+      <img src="quick_tennis_assets/fig6_putting_together.jpg" alt="Bộ chân liên hoàn chuyển tiếp sân đấu">
+      <span class="figure-caption">Hình 3.2: Bộ chân liên hoàn kết nối các khu vực: từ vạch cuối sân bứt tốc lên lưới áp sát, chuyển đổi sang bước xẻ chéo đón bóng bổng (smash).</span>
+    </div>
+
+    <h3>2. Khống Chế "Bóng Trong" (Inner Ball): Nghệ Thuật Mở Rộng Không Gian</h3>
+    <p>
+      Trái ngược với bóng ngoài, "Bóng trong" (Inner Ball) là đường bóng đối thủ đánh thẳng vào vị trí bạn đang đứng hoặc ép sâu vào hông. Đây là tình huống khiến nhiều người chơi lúng túng nhất vì họ có cảm giác bị bóng "nuốt chửng", dẫn tới việc co tay gập khuỷu và đánh bóng hỏng.
+    </p>
+    <p>
+      Cách xử lý điền kinh chuẩn xác cho bóng trong gồm ba nguyên tắc cốt lõi:
+    </p>
+    <ul>
+      <li><strong>Bước lùi mở hông (Drop step / Space-creating step):</strong> Ngay khi nhận thấy bóng bay thẳng vào người, bàn chân sau lập tức bước lùi chéo một góc 45 độ về phía sau. Động tác này mở rộng khung chậu và tạo ra khoảng trống tối thiểu 60 cm để cánh tay vung vợt trọn vẹn.</li>
+      <li><strong>Hạ thấp trọng tâm lùi:</strong> Tuyệt đối không đứng thẳng lưng ngửa ra sau. Cơ thể vẫn giữ xu hướng hơi đổ về phía trước, trọng lượng dồn lên chân sau gập cong để giữ sự ổn định cho cú đánh.</li>
+      <li><strong>Chuyển trọng tâm xuyên qua bóng:</strong> Dù đang ở tư thế lùi, tại thời điểm tiếp xúc bóng, bạn vẫn phải truyền động lực từ chân sau đẩy nhẹ về phía trước để bóng có chiều sâu sang sân đối phương.</li>
+    </ul>
+
+    <div class="pro-tip">
+      <div class="pro-tip-title"><i class="fa-solid fa-circle-check"></i> Nguyên Tắc Vàng Của Henry Hines</div>
+      <p>
+        Bóng ngoài cần tốc độ rướn và khả năng phanh hãm thăng bằng. Bóng trong cần sự nhanh nhạy của khớp háng và bước lùi dứt khoát. Người chơi làm chủ được cả hai thái cực này sẽ biến mọi đường bóng khó của đối phương thành cơ hội phản công uy lực.
+      </p>
+    </div>
+
+    <h3>3. Phối Hợp Liên Hoàn: Di Chuyển Lên Lưới &amp; Đón Bóng Bổng</h3>
+    <p>
+      Bộ chân hiện đại không chỉ di chuyển theo phương ngang mà còn đòi hỏi sự chuyển tiếp mượt mà theo phương dọc:
+    </p>
+    <ul>
+      <li><strong>Di chuyển tiếp cận lưới (Approach footwork):</strong> Khi tấn công bóng ngắn, hãy sử dụng các bước chạy liên tục xuyên qua điểm tiếp xúc bóng mà không dừng hẳn lại. Quán tính lao về phía trước sẽ tiếp thêm sức nặng cho quả bóng và đưa bạn áp sát lưới chỉ trong hai sải chân tiếp theo.</li>
+      <li><strong>Bộ chân lùi đón bóng bổng (Overhead smash tracking):</strong> Khi bị đối thủ lốp bóng qua đầu, không bao giờ được lùi thẳng lưng giật lùi (backpedaling) vì rất dễ ngã ngửa và mất lực. Thay vào đó, hãy xoay vai nghiêng 90 độ ngay lập tức và dùng các bước chạy nghiêng đan chéo chân (crossover side run) để lùi sâu đón bóng ở vị trí cao nhất.</li>
+    </ul>
+  </div>
+</section>
+
+
+<section id="part4" class="book-part">
+  <div class="part-header">
+    <span class="part-tag">Phần 4: Giáo Án &amp; Bài Tập Rèn Luyện</span>
+    <h2>Hệ Thống Bài Tập Tốc Độ &amp; Giáo Án Thể Lực Hines</h2>
+    <div class="part-meta">
+      <span><i class="fa-solid fa-stopwatch"></i> Phương pháp: Bài tập cọc tiêu &amp; Plyometrics</span>
+      <span><i class="fa-solid fa-calendar-check"></i> Giáo án: 4 tuần nâng cấp thể lực</span>
+      <span><i class="fa-solid fa-clock"></i> Thời gian đọc: 24 phút</span>
+    </div>
+  </div>
+
+  <div class="figure-box">
+    <img src="quick_tennis_assets/fig7_running_drills.jpg" alt="Các bài tập di chuyển tốc độ với cọc tiêu trên sân">
+    <span class="figure-caption">Hình 4.1: Sơ đồ các bài tập chạy cọc tiêu (cone agility drills) mô phỏng các quỹ đạo di chuyển thực chiến trên sân quần vợt.</span>
+  </div>
+
+  <div class="content-body">
+    <h3>1. Bộ Bài Tập Chạy Cọc Tiêu Đặc Biệt Của Henry Hines</h3>
+    <p>
+      Hệ thống bài tập di chuyển nhanh trên sân (on-court running drills) của Henry Hines được thiết kế để rèn luyện khả năng tăng tốc đột ngột, phanh hãm thăng bằng và phục hồi vị trí nhanh như chớp. Dưới đây là ba bài tập kinh điển nhất:
+    </p>
+    <ul>
+      <li><strong>Bài tập chạy quạt bốn góc (Four-Corner Fan Drill):</strong> Đặt bốn cọc tiêu tại hai góc vạch cuối sân và hai góc giao bóng sát lưới. Người chơi xuất phát từ điểm giữa vạch cuối sân, lần lượt bứt tốc chạm từng cọc tiêu và lùi vắt chéo chân về vị trí trung tâm. Bài tập này rèn luyện sự chuyển đổi linh hoạt giữa chạy tiến, chạy ngang và chạy lùi.</li>
+      <li><strong>Bài tập con thoi chữ Z (Z-Pattern Lateral Drill):</strong> Di chuyển zíc-zắc qua lại giữa các cọc tiêu đặt chéo nhau dọc theo hai bên vạch biên đôi. Người chơi phải hạ thấp trọng tâm tối đa ở mỗi điểm chuyển hướng, chạm tay vào đỉnh cọc tiêu trước khi bứt tốc sang cọc tiếp theo.</li>
+      <li><strong>Bài tập bóng gương mô phỏng (Shadow Footwork Mirror):</strong> Hai người chơi đứng đối diện nhau qua lưới. Một người làm người dẫn dắt di chuyển tự do sang trái, phải, tiến, lùi; người kia phải lập tức phản xạ sao chép chính xác từng bước chân trong vòng 45 giây liên tục.</li>
+    </ul>
+
+    <div class="figure-box">
+      <img src="quick_tennis_assets/fig8_workouts.jpg" alt="Giáo án rèn luyện thể lực và sức bật bùng nổ">
+      <span class="figure-caption">Hình 4.2: Giáo án rèn luyện sức bật bùng nổ (plyometric training) với các bài tập nhảy hộp và bật lò xo tăng cường sức mạnh gân cốt.</span>
+    </div>
+
+    <h3>2. Huấn Luyện Sức Bật Bùng Nổ &amp; Sức Bền Kỵ Khí</h3>
+    <p>
+      Để duy trì tốc độ di chuyển thanh thoát ở set đấu thứ ba nghẹt thở, người chơi cần xây dựng nền tảng thể lực kỵ khí (anaerobic fitness) vững chắc thông qua các bài tập plyometrics:
+    </p>
+    <ul>
+      <li><strong>Bật nhảy hộp bùng nổ (Box jumps):</strong> Thực hiện các chuỗi bật nhảy lên bục cao từ 40 đến 60 cm, tiếp đất mềm mại trên ức bàn chân và bật ngược lại ngay lập tức. Động tác này tăng cường sức mạnh bộc phát cho nhóm cơ bắp chuối và cơ đùi trước.</li>
+      <li><strong>Nhảy lò xo đơn chân (Single-leg bounds):</strong> Bật nhảy tiến về phía trước trên từng chân một, rèn luyện tính thăng bằng độc lập và độ vững chắc của khớp cổ chân.</li>
+      <li><strong>Chạy nước rút ngắt quãng cường độ cao (HIIT Court Sprints):</strong> Thực hiện 10 đợt chạy nước rút từ vạch cuối sân lên lưới rồi giật lùi về, mỗi đợt kéo dài 15 giây với thời gian nghỉ tích cực 30 giây giữa các đợt.</li>
+    </ul>
+
+    <div class="pro-tip">
+      <div class="pro-tip-title"><i class="fa-solid fa-medal"></i> Bí Quyết Của Nhà Vô Địch</div>
+      <p>
+        Sức bền trong quần vợt không phải là khả năng chạy bộ 10 cây số với tốc độ đều đặn. Sức bền quần vợt là khả năng thực hiện cú nước rút thứ 150 trong trận đấu với cùng một tốc độ bùng nổ như cú nước rút đầu tiên. Hãy rèn luyện đôi chân với tâm thế của một vận động viên chạy cự ly ngắn.
+      </p>
+    </div>
+
+    <h3>3. Giáo Án 4 Tuần Nâng Cấp Tốc Độ Cho Người Chơi</h3>
+    <p>
+      Lộ trình áp dụng thực chiến được Henry Hines khuyến nghị cho người chơi quần vợt phong trào và bán chuyên:
+    </p>
+    <ul>
+      <li><strong>Tuần 1 – Tái lập nền tảng trọng tâm:</strong> Tập trung vào tư thế sẵn sàng điền kinh, bước xoay trục (gravity step) và các bài khởi động động học trước mọi buổi chơi bóng.</li>
+      <li><strong>Tuần 2 – Làm chủ mô thức sải chân:</strong> Thực hành phân biệt sải chân dài bứt tốc và bước dặm ngắn căn cự ly trong các pha bóng sang hai biên.</li>
+      <li><strong>Tuần 3 – Tối ưu hóa bóng ngoài &amp; bóng trong:</strong> Rèn luyện bước vắt chéo hồi quy (crossover recovery) sau khi đánh bóng rộng và bước lùi mở hông (drop step) khi bị bóng ép người.</li>
+      <li><strong>Tuần 4 – Tích hợp bài tập cọc tiêu &amp; mô phỏng thi đấu:</strong> Đưa các bài tập chạy cọc tiêu cường độ cao vào đầu mỗi buổi tập và áp dụng trực tiếp vào các trận đánh tập tính điểm.</li>
+    </ul>
+  </div>
+</section>
+
+        </main>
+    </div>
+
+    <script>
+        // Reading progress bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('reading-progress-bar').style.width = scrolled + '%';
+        });
+
+        // Theme toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = themeToggle.querySelector('i');
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        if (currentTheme === 'dark') {
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme');
+            const target = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', target);
+            localStorage.setItem('theme', target);
+            if (target === 'dark') {
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            }
+        });
+
+        // Active TOC scroll spy
+        const sections = document.querySelectorAll('.book-part');
+        const navLinks = document.querySelectorAll('.toc-item');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.querySelector('a').getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
