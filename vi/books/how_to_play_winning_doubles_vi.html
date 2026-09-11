@@ -7,864 +7,532 @@
     <meta name="description" content="Bản dịch tiếng Việt trọn vẹn tác phẩm kinh điển How to Play Winning Doubles của huyền thoại George Lott và Jeffrey Bairstow. Đúc kết tư duy chiến thuật đỉnh cao, nghệ thuật giao bóng, bắt lưới, lốp bóng và phối hợp đồng đội vô song.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-
-
-
-
-
         :root {
-
-            --primary: #15803d;
-
-            --primary-dark: #166534;
-
-            --primary-light: #22c55e;
-
-            --accent: #eab308;
-
+            --primary: #1d4ed8;
+            --primary-dark: #1e40af;
+            --primary-light: #60a5fa;
+            --accent: #f59e0b;
             --bg-page: #f8fafc;
-
             --bg-card: #ffffff;
-
             --text-main: #1e293b;
-
             --text-muted: #64748b;
-
             --border: #e2e8f0;
-
             --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-
             --header-bg: #0f172a;
-
         }
-
-
 
         body.dark-mode {
-
             --bg-page: #0f172a;
-
             --bg-card: #1e293b;
-
             --text-main: #f1f5f9;
-
             --text-muted: #94a3b8;
-
             --border: #334155;
-
             --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-
             --header-bg: #020617;
-
         }
-
-
 
         * {
-
             box-sizing: border-box;
-
             margin: 0;
-
             padding: 0;
-
         }
-
-
 
         body {
-
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-
             background-color: var(--bg-page);
-
             color: var(--text-main);
-
-            line-height: 2.0;
-
+            line-height: 1.75;
             transition: background-color 0.3s, color 0.3s;
-
         }
 
-
-
-        /* Standard Topnav */
-
-        .tu-topnav {
-
-            background: var(--header-bg);
-
-            color: #fff;
-
-            padding: 0.75rem 1.5rem;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: space-between;
-
-            position: sticky;
-
-            top: 0;
-
-            z-index: 1000;
-
-            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-
-        }
-
-
-
-        .tu-topnav .brand {
-
-            font-weight: 700;
-
-            font-size: 1.15rem;
-
-            color: #fff;
-
-            text-decoration: none;
-
-            display: flex;
-
-            align-items: center;
-
-            gap: 0.5rem;
-
-        }
-
-
-
-        .tu-topnav .brand span {
-
-            color: #22c55e;
-
-        }
-
-
-
-        .tu-topnav .nav-links {
-
-            display: flex;
-
-            align-items: center;
-
-            gap: 1.25rem;
-
-            list-style: none;
-
-        }
-
-
-
-        .tu-topnav .nav-links a {
-
-            color: #cbd5e1;
-
-            text-decoration: none;
-
-            font-size: 0.95rem;
-
-            transition: color 0.2s;
-
-        }
-
-
-
-        .tu-topnav .nav-links a:hover {
-
-            color: #fff;
-
-        }
-
-
-
-        .tu-topnav .controls {
-
-            display: flex;
-
-            align-items: center;
-
-            gap: 0.75rem;
-
-        }
-
-
-
-        .theme-toggle-btn {
-
-            background: #334155;
-
-            border: none;
-
-            color: #f8fafc;
-
-            padding: 0.4rem 0.8rem;
-
-            border-radius: 9999px;
-
-            cursor: pointer;
-
-            font-size: 0.9rem;
-
-            display: flex;
-
-            align-items: center;
-
-            gap: 0.4rem;
-
-        }
-
-
-
-        /* Progress Bar */
-
-        .reading-progress-bar {
-
+        /* Reading Progress Bar */
+        #progress-container {
             position: fixed;
-
-            top: 55px;
-
+            top: 0;
             left: 0;
-
+            width: 100%;
             height: 4px;
+            background: transparent;
+            z-index: 1001;
+        }
 
-            background: linear-gradient(90deg, #15803d, #22c55e);
-
+        #progress-bar {
+            height: 100%;
             width: 0%;
-
-            z-index: 999;
-
-            transition: width 0.1s ease-out;
-
+            background: linear-gradient(90deg, #3b82f6, #f59e0b);
+            transition: width 0.1s ease;
         }
 
-
-
-        /* Hero Header */
-
-        .hero {
-
-            background: linear-gradient(135deg, #166534 0%, #15803d 50%, #14532d 100%);
-
-            color: white;
-
-            padding: 3.5rem 1.5rem 3rem;
-
-            text-align: center;
-
-            position: relative;
-
-        }
-
-
-
-        .hero-badge {
-
-            display: inline-block;
-
-            background: rgba(255, 255, 255, 0.2);
-
-            backdrop-filter: blur(8px);
-
-            padding: 0.4rem 1.25rem;
-
-            border-radius: 9999px;
-
-            font-size: 0.85rem;
-
-            font-weight: 600;
-
-            letter-spacing: 1px;
-
-            text-transform: uppercase;
-
-            margin-bottom: 1.25rem;
-
-            border: 1px solid rgba(255, 255, 255, 0.3);
-
-        }
-
-
-
-        .hero h1 {
-
-            font-size: 2.4rem;
-
-            font-weight: 800;
-
-            line-height: 1.25;
-
-            margin-bottom: 0.75rem;
-
-        }
-
-
-
-        .hero p.subtitle {
-
-            font-size: 1.25rem;
-
-            opacity: 0.9;
-
-            max-width: 800px;
-
-            margin: 0 auto 1.5rem;
-
-            font-weight: 300;
-
-        }
-
-
-
-        .hero-meta {
-
+        /* Standard Reader Topnav */
+        .reader-topnav {
+            background: var(--header-bg);
+            color: #fff;
+            padding: 0.75rem 1.5rem;
             display: flex;
-
-            justify-content: center;
-
-            flex-wrap: wrap;
-
-            gap: 1.5rem;
-
-            font-size: 0.95rem;
-
-            opacity: 0.9;
-
-        }
-
-
-
-        .hero-meta span {
-
-            display: flex;
-
             align-items: center;
-
-            gap: 0.4rem;
-
-        }
-
-
-
-        /* Download Section */
-
-        .download-banner {
-
-            max-width: 900px;
-
-            margin: -1.75rem auto 2rem;
-
-            background: var(--bg-card);
-
-            border: 1px solid var(--border);
-
-            border-radius: 16px;
-
-            padding: 1.25rem 2rem;
-
-            display: flex;
-
-            align-items: center;
-
             justify-content: space-between;
-
-            box-shadow: var(--card-shadow);
-
-            position: relative;
-
-            z-index: 10;
-
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
         }
 
-
-
-        .download-info {
-
+        .reader-brand {
             display: flex;
-
             align-items: center;
-
-            gap: 1.25rem;
-
+            gap: 0.5rem;
+            font-size: 0.95rem;
+            font-weight: 500;
         }
 
-
-
-        .pdf-badge {
-
-            background: #ef4444;
-
-            color: white;
-
-            font-size: 1.5rem;
-
-            width: 48px;
-
-            height: 48px;
-
-            border-radius: 10px;
-
+        .reader-brand a {
+            color: #f1f5f9;
+            text-decoration: none;
             display: flex;
-
             align-items: center;
+            gap: 0.4rem;
+            transition: color 0.2s;
+        }
 
+        .reader-brand a:hover {
+            color: #60a5fa;
+        }
+
+        .reader-brand .sep {
+            color: #93c5fd;
+            font-size: 0.8rem;
+        }
+
+        .reader-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .icon-btn {
+            background: rgba(255,255,255,0.12);
+            border: none;
+            color: #fff;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
             justify-content: center;
-
+            transition: background 0.2s, transform 0.2s;
         }
 
-
+        .icon-btn:hover {
+            background: rgba(255,255,255,0.22);
+            transform: scale(1.05);
+        }
 
         .download-btn {
-
-            background: #15803d;
-
-            color: white;
-
-            padding: 0.75rem 1.5rem;
-
-            border-radius: 8px;
-
-            text-decoration: none;
-
+            background: #2563eb;
+            color: #fff;
+            padding: 0.45rem 0.9rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
             font-weight: 600;
-
-            display: flex;
-
+            text-decoration: none;
+            display: inline-flex;
             align-items: center;
-
-            gap: 0.5rem;
-
-            transition: background 0.2s, transform 0.1s;
-
+            gap: 0.4rem;
+            transition: background 0.2s;
         }
-
-
 
         .download-btn:hover {
-
-            background: #166534;
-
-            transform: translateY(-2px);
-
+            background: #1d4ed8;
         }
 
+        /* Hero Header */
+        .book-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
+            color: #ffffff;
+            padding: 3.5rem 1.5rem 2.5rem;
+            text-align: center;
+            position: relative;
+        }
 
+        .book-hero-inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .book-badge {
+            display: inline-block;
+            background: rgba(59, 130, 246, 0.25);
+            border: 1px solid rgba(147, 197, 253, 0.4);
+            color: #bfdbfe;
+            padding: 0.35rem 0.9rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        .book-hero h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 0.75rem;
+            color: #ffffff;
+        }
+
+        .book-hero .subtitle {
+            font-size: 1.15rem;
+            color: #dbeafe;
+            margin-bottom: 1.25rem;
+            font-weight: 400;
+        }
+
+        .book-meta-strip {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.25rem;
+            font-size: 0.9rem;
+            color: #bfdbfe;
+        }
+
+        .book-meta-strip span {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
 
         /* Container Layout */
-
-        .main-container {
-
+        .page-container {
             max-width: 1200px;
-
-            margin: 0 auto;
-
-            padding: 1rem 1.5rem 4rem;
-
+            margin: 2rem auto;
+            padding: 0 1rem;
             display: grid;
-
             grid-template-columns: 280px 1fr;
-
-            gap: 2.5rem;
-
+            gap: 2rem;
+            align-items: start;
         }
 
+        @media (max-width: 900px) {
+            .page-container {
+                grid-template-columns: 1fr;
+            }
+        }
 
-
-        /* Sticky Sidebar */
-
-        .sidebar {
-
+        /* Sticky Sidebar TOC */
+        .toc-sidebar {
             position: sticky;
-
-            top: 75px;
-
-            height: calc(100vh - 90px);
-
-            overflow-y: auto;
-
-            padding-right: 0.5rem;
-
-        }
-
-
-
-        .toc-card {
-
+            top: 4.5rem;
             background: var(--bg-card);
-
             border: 1px solid var(--border);
-
             border-radius: 12px;
-
             padding: 1.25rem;
-
             box-shadow: var(--card-shadow);
-
+            max-height: calc(100vh - 6rem);
+            overflow-y: auto;
         }
 
-
-
-        .toc-card h3 {
-
-            font-size: 1.05rem;
-
+        .toc-title {
+            font-size: 1rem;
             font-weight: 700;
-
-            margin-bottom: 1rem;
-
+            margin-bottom: 0.75rem;
             padding-bottom: 0.5rem;
-
             border-bottom: 2px solid var(--primary);
-
             display: flex;
-
             align-items: center;
-
             gap: 0.5rem;
-
+            color: var(--text-main);
         }
-
-
 
         .toc-list {
-
             list-style: none;
-
-            font-size: 0.9rem;
-
         }
-
-
 
         .toc-list li {
-
-            margin-bottom: 0.5rem;
-
+            margin-bottom: 0.4rem;
         }
-
-
 
         .toc-list a {
-
             color: var(--text-muted);
-
             text-decoration: none;
-
+            font-size: 0.85rem;
             display: block;
-
-            padding: 0.35rem 0.5rem;
-
+            padding: 0.35rem 0.6rem;
             border-radius: 6px;
-
-            transition: all 0.2s;
-
-                    white-space: nowrap;
+            transition: all 0.2s ease;
+            line-height: 1.35;
         }
-
-
 
         .toc-list a:hover {
-
             color: var(--primary);
-
-            background: rgba(21, 128, 61, 0.1);
-
+            background: rgba(37, 99, 235, 0.1);
         }
 
-
-
-        /* Content Area */
-
-        .content-area {
-
-            background: var(--bg-card);
-
-            border: 1px solid var(--border);
-
-            border-radius: 16px;
-
-            padding: 3rem;
-
-            box-shadow: var(--card-shadow);
-
+        .toc-list a.active {
+            color: #fff;
+            background: var(--primary);
+            font-weight: 600;
         }
 
-
-
-        .book-cover-wrap {
-
-            text-align: center;
-
-            margin-bottom: 3rem;
-
-            padding-bottom: 2rem;
-
-            border-bottom: 1px solid var(--border);
-
+        /* Search Box in Sidebar */
+        .search-box {
+            position: relative;
+            margin-bottom: 1rem;
         }
 
-
-
-        .book-cover-img {
-
-            max-width: 320px;
-
+        .search-box input {
             width: 100%;
-
-            border-radius: 12px;
-
-            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.25);
-
+            padding: 0.5rem 0.75rem 0.5rem 2rem;
+            border-radius: 8px;
             border: 1px solid var(--border);
-
+            background: var(--bg-page);
+            color: var(--text-main);
+            font-size: 0.85rem;
+            outline: none;
+            transition: border-color 0.2s;
         }
 
-
-
-        .chapter-box {
-
-            margin-bottom: 3.5rem;
-
-            scroll-margin-top: 80px;
-
+        .search-box input:focus {
+            border-color: var(--primary);
         }
 
+        .search-box i {
+            position: absolute;
+            left: 0.7rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
 
+        /* Main Content */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
 
-        .part-header {
+        .chapter-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: var(--card-shadow);
+        }
 
-            background: linear-gradient(90deg, var(--primary) 0%, var(--primary-dark) 100%);
+        .chapter-header {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
 
-            color: white;
-
-            padding: 1rem 1.5rem;
-
-            border-radius: 10px;
-
-            margin-bottom: 2rem;
-
-            font-size: 1.4rem;
-
+        .chapter-number {
+            display: inline-block;
+            background: rgba(37, 99, 235, 0.15);
+            color: var(--primary);
             font-weight: 700;
-
+            font-size: 0.8rem;
+            padding: 0.25rem 0.65rem;
+            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.4rem;
         }
-
-
 
         .chapter-title {
-
-            font-size: 1.75rem;
-
+            font-size: 1.6rem;
             font-weight: 800;
-
-            color: var(--primary-dark);
-
-            margin-bottom: 0.35rem;
-
-            border-bottom: 2px solid var(--primary-light);
-
-            padding-bottom: 0.5rem;
-
+            color: var(--text-main);
+            line-height: 1.3;
         }
 
-
-
-        body.dark-mode .chapter-title {
-
-            color: #4ade80;
-
-        }
-
-
-
-        .chapter-sub {
-
-            font-size: 1.05rem;
-
-            color: var(--text-muted);
-
-            font-style: italic;
-
-            margin-bottom: 1.5rem;
-
-        }
-
-
-
-        .section-item {
-
-            margin-bottom: 2rem;
-
-        }
-
-
-
-        .section-heading {
-
+        .chapter-body h3 {
             font-size: 1.25rem;
-
             font-weight: 700;
-
+            margin: 1.75rem 0 0.75rem;
             color: var(--text-main);
-
-            margin-bottom: 0.75rem;
-
             display: flex;
-
             align-items: center;
-
             gap: 0.5rem;
-
         }
 
-
-
-        .section-heading i {
-
-            color: var(--primary);
-
-            font-size: 0.95rem;
-
+        .chapter-body p {
+            margin-bottom: 1rem;
+            color: var(--text-main);
+            font-size: 0.98rem;
         }
 
-
-
-        .section-text {
-            font-size: 1.05rem;
-            line-height: 2.0;
+        .chapter-body ul, .chapter-body ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.25rem;
             color: var(--text-main);
         }
 
+        .chapter-body li {
+            margin-bottom: 0.5rem;
+            font-size: 0.96rem;
+        }
 
-
-        .figure-wrap {
-
-            margin: 2.25rem 0;
-
-            text-align: center;
-
-            background: rgba(0,0,0,0.02);
-
+        /* Highlight Callouts */
+        .callout {
+            border-left: 4px solid var(--primary);
+            background: rgba(37, 99, 235, 0.07);
             padding: 1.25rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1.5rem 0;
+        }
 
-            border-radius: 12px;
+        .callout-info {
+            border-left-color: #0284c7;
+            background: rgba(2, 132, 199, 0.07);
+        }
 
+        .callout h4 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        /* Feature Grids */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.25rem;
+            margin: 1.5rem 0;
+        }
+
+        .feature-box {
+            background: var(--bg-page);
             border: 1px solid var(--border);
-
-        }
-
-
-
-        .figure-img {
-
-            max-width: 100%;
-
-            height: auto;
-
             border-radius: 8px;
-
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-
+            padding: 1.25rem;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
 
+        .feature-box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+        }
 
+        .feature-box h4 {
+            font-size: 0.98rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .feature-box p {
+            font-size: 0.88rem;
+            line-height: 1.55;
+            color: var(--text-muted);
+            margin-bottom: 0;
+        }
+
+        /* Figures */
+        .figure-container {
+            margin: 2rem 0;
+            text-align: center;
+            background: var(--bg-page);
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
 
         .figure-caption {
-
-            font-size: 0.9rem;
-
-            color: var(--text-muted);
-
             margin-top: 0.75rem;
-
-            font-weight: 600;
-
-        }
-
-
-
-        .quote-box {
-
-            background: rgba(21, 128, 61, 0.08);
-
-            border-left: 4px solid var(--primary);
-
-            padding: 1.25rem 1.5rem;
-
-            border-radius: 0 10px 10px 0;
-
-            margin: 1.5rem 0;
-
+            font-size: 0.85rem;
+            color: var(--text-muted);
             font-style: italic;
-
         }
 
-
-
-        /* Responsive */
-
-        @media (max-width: 992px) {
-
-            .main-container {
-
-                grid-template-columns: 1fr;
-
-            }
-
-            .sidebar {
-
-                display: none;
-
-            }
-
-            .content-area {
-
-                padding: 1.75rem;
-
-            }
-
-            .hero h1 {
-
-                font-size: 1.85rem;
-
-            }
-
+        /* Tables */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 1.5rem 0;
         }
 
-    
-    
-</style>
+        .tu-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+            text-align: left;
+        }
+
+        .tu-table th {
+            background: rgba(37, 99, 235, 0.12);
+            color: var(--primary-dark);
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border);
+            font-weight: 700;
+        }
+
+        .tu-table td {
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+
+        .tu-table tr:nth-child(even) td {
+            background: rgba(0,0,0,0.02);
+        }
+
+        /* Footer */
+        .site-footer {
+            background: var(--header-bg);
+            color: #dbeafe;
+            padding: 2.5rem 1.5rem;
+            margin-top: 4rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .site-footer a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <div id="progressBar"></div>
+    <div id="progress-container"><div id="progress-bar"></div></div>
 
-    <nav class="tu-topnav">
-        <a href="/vi/books/" class="brand">
-            <i class="fa-solid fa-tennis-ball"></i>
-            <span>Tennis Unified</span>
-        </a>
-        <ul class="nav-links">
-            <li><a href="/vi/books/">Thư Viện Sách</a></li>
-            <li><a href="/vi/fundamentals/">Nền Tảng</a></li>
-            <li><a href="/vi/stroke-analysis/">Phân Tích Động Tác</a></li>
-            <li><a href="/vi/drills/">Bài Tập & Giáo Án</a></li>
-            <li><a href="/books/" data-lang-toggle="en"><i class="fa-solid fa-globe"></i> English</a></li>
-        </ul>
-        <div class="controls">
-            <button class="theme-toggle-btn" id="themeToggleBtn" onclick="toggleTheme()">
-                <i class="fa-solid fa-moon"></i> Giao Diện Tối
-            </button>
+    <nav class="reader-topnav">
+        <div class="reader-brand">
+            <a href="/vi/"><i class="fa-solid fa-arrow-left"></i> Tennis Unified</a>
+            <span class="sep">/</span>
+            <a href="/vi/books/">Tủ Sách Quần Vợt</a>
+        </div>
+        <div class="reader-actions">
+            <button id="themeToggle" class="icon-btn" title="Chuyển chế độ sáng/tối"><i class="fa-solid fa-moon"></i></button>
+            <a href="How_to_Play_Winning_Doubles_Vietnamese_Final.pdf" class="download-btn" download><i class="fa-solid fa-file-pdf"></i> Tải PDF</a>
         </div>
     </nav>
 
-    <header class="hero">
-        <div >
-            <span class="hero-badge"><i class="fa-solid fa-trophy"></i> Tuyệt Phẩm Chiến Thuật Đánh Đôi Bất Hủ</span>
+    <header class="book-hero">
+        <div class="book-hero-inner">
+            <span class="book-badge"><i class="fa-solid fa-trophy"></i> Tuyệt Phẩm Chiến Thuật Đánh Đôi Bất Hủ</span>
             <h1>Bí Quyết Đánh Đôi Chiến Thắng</h1>
             <p class="subtitle">How to Play Winning Doubles • George Lott & Jeffrey Bairstow</p>
-            <div class="hero-meta">
+            <div class="book-meta-strip">
                 <span><i class="fa-solid fa-user-tie"></i> Huyền Thoại George Lott</span>
                 <span><i class="fa-solid fa-pen-nib"></i> Jeffrey Bairstow & Laura Duggan</span>
                 <span><i class="fa-solid fa-book-open"></i> 10 Chương Toàn Diện & Lời Tựa</span>
@@ -873,13 +541,13 @@
         </div>
     </header>
 
-    <div class="main-container">
-        <aside class="sidebar">
+    <div class="page-container">
+        <aside class="toc-sidebar">
             <div class="search-box">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="text" id="searchInput" placeholder="Tìm kiếm nội dung...">
             </div>
-            <h3 ><i class="fa-solid fa-list-ul"></i> Mục Lục Sách</h3>
+            <h3 class="toc-title"><i class="fa-solid fa-list-ul"></i> Mục Lục Sách</h3>
             <ul class="toc-list" id="tocList">
                 <li><a href="#foreword">Lời Tựa & Tiểu Sử George Lott</a></li>
                 <li><a href="#chapter-1">Chương 1: Trò Chơi Của Tư Duy</a></li>
@@ -895,22 +563,19 @@
             </ul>
         </aside>
 
-        <main class="content-area" id="mainContent">
-            <div class="book-cover-wrap">
-                <img src="lott_assets/cover.jpg" alt="How to Play Winning Doubles - Bìa sách" class="book-cover-img" loading="lazy">
-            </div>
+        <main class="main-content" id="mainContent">
             
-<section id="foreword" class="chapter-box">
-    <div >
+<section id="foreword" class="chapter-card">
+    <div class="chapter-header">
         <span class="chapter-number">Lời Tựa</span>
         <h2 class="chapter-title">Huyền Thoại George Lott — Bộ Óc Chiến Thuật Đánh Đôi Vĩ Đại Nhất Lịch Sử</h2>
     </div>
-    <div class="section-text">
+    <div class="chapter-body">
         <p>Vào cuối thập niên 1920 và đầu thập niên 1930, vị thế của George Lott trong nội dung đánh đôi quần vợt thế giới cũng giống hệt như Bill Tilden trong nội dung đánh đơn — một tượng đài vô song và là tay vợt xuất sắc nhất hành tinh. Ông từng 5 lần vô địch giải Vô địch Quốc gia Hoa Kỳ (nay là US Open) với 3 người bạn cặp hoàn toàn khác nhau. Ông vô địch Roland Garros và hai lần bước lên đỉnh vinh quang tại Wimbledon. Trong màu áo đội tuyển Davis Cup Hoa Kỳ từ năm 1928 đến 1934, ông gần như bất khả chiến bại ở các trận then chốt.</p>
         
         <p>Điều làm nên sự vĩ đại của George Lott không chỉ nằm ở kỹ thuật hoàn hảo, mà trên hết là tư duy chiến thuật siêu phàm. Sau khi giải nghệ đỉnh cao, ông trở thành huấn luyện viên huyền thoại tại Đại học DePaul và là cây bút chiến thuật sắc sảo hàng đầu của tạp chí Tennis Magazine. Cuốn sách này đúc kết toàn bộ tinh hoa của một đời thi đấu và huấn luyện, vén màn những bí mật hình học sân đấu, tâm lý đồng đội và nghệ thuật kiểm soát nhịp độ trận đấu.</p>
 
-        <div class="quote-box">
+        <div class="callout callout-info">
             <h4><i class="fa-solid fa-medal"></i> Bảng Vàng Kỷ Lục Sự Nghiệp Của George Lott</h4>
             <ul>
                 <li><strong>5 Lần Vô Địch US Open Đôi Nam:</strong> Năm 1928 (với John Hennessey), 1929 và 1930 (với John Doeg), 1933 và 1934 (với Les Stoefen).</li>
@@ -923,19 +588,19 @@
     </div>
 </section>
 
-<section id="chapter-1" class="chapter-box">
-    <div >
+<section id="chapter-1" class="chapter-card">
+    <div class="chapter-header">
         <span class="chapter-number">Chương 1</span>
         <h2 class="chapter-title">Trò Chơi Của Những Vận Động Viên Biết Tư Duy (The Thinking Player's Game)</h2>
     </div>
-    <div class="section-text">
+    <div class="chapter-body">
         <h3>1. Sự Khác Biệt Căn Bản Giữa Đánh Đơn Và Đánh Đôi</h3>
         <p>Sai lầm nghiêm trọng nhất mà phần lớn các tay vợt phong trào mắc phải là mang nguyên vẹn tư duy đánh đơn vào sân đánh đôi. Trong đánh đơn, bạn là một đấu sĩ cô độc, dựa vào sức mạnh cơ bắp, tốc độ chạy bao sân và những cú bạt bóng uy lực từ vạch cuối sân để khuất phục đối thủ. Nhưng trên sân đôi, mặt sân chỉ mở rộng thêm 9 feet (mỗi bên hành lang rộng 4.5 feet), trong khi số lượng người phòng thủ lại tăng gấp đôi từ hai lên bốn người.</p>
         
         <p>Điều này đồng nghĩa với việc không gian mở trên sân bị thu hẹp đáng kể. Những cú đánh bạt bóng sấm sét từ vạch cuối sân vốn rất lợi hại trong đánh đơn sẽ trở thành miếng mồi ngon cho những tay bắt lưới đối phương đang chờ sẵn. Đánh đôi không phải là cuộc thi xem ai đánh mạnh hơn, mà là một ván cờ thế tốc độ cao, đòi hỏi sự tinh tế, khả năng luồn lách qua các khe hở và nghệ thuật phối hợp nhịp nhàng giữa hai khối óc.</p>
 
-        <div class="figure-wrap">
-            <img src="lott_assets/diag_court_geometry.jpg" alt="Hình học sân đôi và góc bao quát mặt lưới" class="figure-img">
+        <div class="figure-container">
+            <img src="lott_assets/diag_court_geometry.jpg" alt="Hình học sân đôi và góc bao quát mặt lưới" class="responsive-img">
             <p class="figure-caption"><strong>Hình 1.1:</strong> Hình học sân đôi: Độ mở góc đánh và sự tương quan giữa vị trí đứng của người phát bóng và người bắt lưới.</p>
         </div>
 
@@ -959,17 +624,17 @@
     </div>
 </section>
 
-<section id="chapter-2" class="chapter-box">
-    <div >
+<section id="chapter-2" class="chapter-card">
+    <div class="chapter-header">
         <span class="chapter-number">Chương 2</span>
         <h2 class="chapter-title">Các Cú Đánh Dành Riêng Cho Đánh Đôi Đỉnh Cao (Strokes for Better Doubles)</h2>
     </div>
-    <div class="section-text">
+    <div class="chapter-body">
         <h3>1. Cú Đánh Chéo Sân Thấp Vào Hành Lang (Crosscourt Dink)</h3>
         <p>Vũ khí lợi hại nhất trong kho tàng chiến thuật của George Lott chính là cú đánh bóng xoáy trượt ngắn chéo sân đưa bóng rơi cắm ngay vào khu vực giao điểm giữa vạch giao bóng và hành lang đánh đôi của đối thủ. Đây là đường bóng khiến đối phương bất lực dù họ có chọn phương án lao lên lưới hay trụ lại cuối sân:</p>
         
-        <div class="figure-wrap">
-            <img src="lott_assets/diag_2_2_crosscourt_return.jpg" alt="Sơ đồ cú đánh trả giao bóng ngắn chéo sân vào hành lang" class="figure-img">
+        <div class="figure-container">
+            <img src="lott_assets/diag_2_2_crosscourt_return.jpg" alt="Sơ đồ cú đánh trả giao bóng ngắn chéo sân vào hành lang" class="responsive-img">
             <p class="figure-caption"><strong>Hình 2.1:</strong> Cú đánh chéo sân ngắn cắm vào hành lang khiến người giao bóng đối phương rơi vào thế bị động hoàn toàn, buộc phải cứu bóng dưới mép lưới.</p>
         </div>
 
@@ -1002,12 +667,12 @@
 </section>
 
 
-<section id="chapter-3" class="chapter-box">
-    <div >
+<section id="chapter-3" class="chapter-card">
+    <div class="chapter-header">
         <span class="chapter-number">Chương 3</span>
         <h2 class="chapter-title">Nghệ Thuật Giao Bóng Trong Đánh Đôi (The Serve)</h2>
     </div>
-    <div class="section-text">
+    <div class="chapter-body">
         <h3>1. Triết Lý Giao Bóng: Tỷ Lệ Bóng Vào Sân Quan Trọng Hơn Tốc Độ</h3>
         <p>Trong đánh đơn, một quả giao bóng sấm sét ghi điểm trực tiếp (ace) là điều tuyệt vời. Nhưng trong đánh đôi, nếu bạn tung hết sức bạt một quả giao bóng thứ nhất cực mạnh rồi để bóng rúc lưới, bạn đang đẩy người bạn cặp trên lưới của mình vào "vạc dầu sôi". Quả giao bóng thứ hai nảy hiền lành sẽ lập tức bị đối phương tấn công tàn bạo, nhắm thẳng vào ngực hoặc chân người đứng lưới của bạn.</p>
         
@@ -1018,25 +683,30 @@
             <li>Tạo cơ hội tối đa cho người bạn cặp rình rập trên lưới tung ra cú cắt bóng (poach) kết liễu điểm số ngay từ chạm thứ hai.</li>
         </ul>
 
-        <div class="figure-wrap">
-            <img src="lott_assets/diag_3_serve_target.jpg" alt="Ba vị trí điểm rơi giao bóng chiến lược trong đánh đôi" class="figure-img">
+        <div class="figure-container">
+            <img src="lott_assets/diag_3_serve_target.jpg" alt="Ba vị trí điểm rơi giao bóng chiến lược trong đánh đôi" class="responsive-img">
             <p class="figure-caption"><strong>Hình 3.1:</strong> Ba điểm rơi giao bóng chiến thuật: Ra mang sườn kéo dạt đối thủ, đâm thẳng vào người gây kẹt tay, và cắm góc chữ T khép góc đánh trả.</p>
+        </div>
+
+        <div class="figure-container">
+            <img src="lott_assets/diag_3_1_serve_grips.jpg" alt="Kỹ thuật cầm vợt giao bóng thuận tay và trái tay trong đánh đôi" class="responsive-img">
+            <p class="figure-caption"><strong>Hình 3.2:</strong> Kỹ thuật cầm vợt giao bóng: Người mới thường dùng kiểu cầm Forehand (trên), nhưng để tạo xoáy hiểm và độ cắm bóng trong đánh đôi đỉnh cao, bắt buộc phải chuyển sang kiểu cầm Continental/Backhand (dưới).</p>
         </div>
 
         <h3>2. Vị Trí Đứng Giao Bóng & Ba Điểm Rơi Sát Thủ</h3>
         <p>Khác với đánh đơn khi người giao bóng thường đứng sát vạch mốc giữa sân (center mark), trong đánh đôi vị trí đứng tối ưu nằm ở khoảng giữa vạch mốc trung tâm và đường biên đơn (cách vạch biên đơn khoảng 2 đến 3 mét). Vị trí này giúp bạn bao quát toàn diện góc sân của mình và rút ngắn cự ly di chuyển lao lên lưới theo một đường thẳng an toàn.</p>
         
         <p>Ba điểm rơi giao bóng chiến lược cần phối hợp linh hoạt:</p>
-        <div >
-            <div >
+        <div class="feature-grid">
+            <div class="feature-box">
                 <h4><i class="fa-solid fa-crosshairs"></i> 1. Giao Bóng Vào Người (Body Serve)</h4>
                 <p>Nhắm thẳng quả bóng có độ xoáy nảy vào hông hoặc vai cầm vợt của đối phương. Đòn đánh này khiến đối thủ bị kẹt cánh tay, không kịp mở biên độ vung vợt và thường trả lại một quả bóng lơ lửng giữa sân.</p>
             </div>
-            <div >
+            <div class="feature-box">
                 <h4><i class="fa-solid fa-arrows-split-up-and-left"></i> 2. Giao Bóng Ra Mang Sườn (Wide Serve)</h4>
                 <p>Sử dụng cú giao bóng xoáy trượt (slice) ở ô bên phải hoặc xoáy nảy (kick) ở ô bên trái để kéo đối thủ dạt hẳn ra ngoài hàng rào sân, mở toang toàn bộ khoảng trống trung lộ cho người bạn cặp trên lưới trừng phạt.</p>
             </div>
-            <div >
+            <div class="feature-box">
                 <h4><i class="fa-solid fa-t"></i> 3. Giao Bóng Vào Chữ T (Center 'T' Serve)</h4>
                 <p>Quả bóng đi thẳng vào góc chữ T là phương án an toàn nhất khi người giao bóng muốn lao lên lưới. Đường bóng này tước đoạt góc đánh chéo sân hiểm hóc của đối phương và buộc họ phải trả bóng về phía người giao bóng đang dâng lên.</p>
             </div>
@@ -1052,12 +722,12 @@
     </div>
 </section>
 
-<section id="chapter-4" class="chapter-box">
-    <div >
+<section id="chapter-4" class="chapter-card">
+    <div class="chapter-header">
         <span class="chapter-number">Chương 4</span>
         <h2 class="chapter-title">Kỹ Thuật Đỡ Giao Bóng Đoạt Quyền Chủ Động (Return of Serve)</h2>
     </div>
-    <div class="section-text">
+    <div class="chapter-body">
         <h3>1. Mục Tiêu Chiến Lược: Bẻ Game Giao Bóng (Break of Serve)</h3>
         <p>Nếu muốn chiến thắng một trận đấu đôi, giữ vững game giao bóng của mình mới chỉ là điều kiện cần; bẻ gãy game giao bóng của đối thủ mới là điều kiện đủ. Ở các trận đấu đỉnh cao, chỉ cần một lần bẻ game giao bóng duy nhất là đủ để định đoạt số phận của cả set đấu. Vì vậy, quả trả giao bóng chính là cú đánh quan trọng nhất quyết định bạn sẽ làm chủ thế trận hay bị đè bẹp.</p>
         
@@ -1071,9 +741,14 @@
             <li>Đây là giải pháp triệt tiêu hoàn toàn ưu thế tấn công ban đầu của đối phương và lật ngược tình thế chỉ sau một chạm.</li>
         </ul>
 
-        <div class="figure-wrap">
-            <img src="lott_assets/diag_4_15_lob_recovery.jpg" alt="Cú lốp bóng giải vây khi bị kéo dạt góc sườn" class="figure-img">
+        <div class="figure-container">
+            <img src="lott_assets/diag_4_15_lob_recovery.jpg" alt="Cú lốp bóng giải vây khi bị kéo dạt góc sườn" class="responsive-img">
             <p class="figure-caption"><strong>Hình 4.1:</strong> Khi bị quả giao bóng xoáy hiểm kéo dạt xa ra ngoài biên, cú lốp bóng phòng thủ bổng sâu là giải pháp tối ưu giúp bạn có đủ thời gian quay lại vị trí trung tâm.</p>
+        </div>
+
+        <div class="figure-container">
+            <img src="lott_assets/diag_4_8_crosscourt_alley.jpg" alt="Cú trả bóng chéo sân vào góc hành lang đánh đôi" class="responsive-img">
+            <p class="figure-caption"><strong>Hình 4.2:</strong> Cú trả bóng chéo sân vào góc hành lang (Diagram 4-8): Khi bị quả giao bóng góc rộng kéo ra biên, cú trả bóng cắm vào góc hành lang đối diện khiến người giao bóng đang lao lên không thể với tới.</p>
         </div>
 
         <h3>3. Cú Lốp Bóng Phòng Thủ Giải Vây (Defensive Lob Return)</h3>
@@ -1091,12 +766,12 @@
 </section>
 
 
-<section id="chapter-5" class="chapter-box">
-    <div >
+<section id="chapter-5" class="chapter-card">
+    <div class="chapter-header">
         <span class="chapter-number">Chương 5</span>
         <h2 class="chapter-title">Kỹ Năng Thống Trị Mặt Lưới (Net Play)</h2>
     </div>
-    <div class="section-text">
+    <div class="chapter-body">
         <h3>1. Vị Trí Đứng Lưới Chuẩn Mực</h3>
         <p>Trong đánh đôi, mặt lưới là lãnh địa quyết định quyền lực tối cao: Đội nào chiếm lĩnh được mặt lưới trước và duy trì được thế công sẽ nắm giữ hơn 80% cơ hội chiến thắng điểm số. Tuy nhiên, đứng ở đâu trên lưới để vừa có thể đập tan những pha bóng ngang mép lưới, vừa không bị biến thành nạn nhân của những cú đánh lốp qua đầu lại là một nghệ thuật tinh vi.</p>
         
@@ -1107,9 +782,24 @@
             <li><strong>Tư thế sẵn sàng chủ động:</strong> Trọng tâm dồn về nửa trước bàn chân, đầu gối chùng sâu, hai tay giữ vợt nâng cao ngang tầm mắt với đầu vợt hướng thẳng lên trời. Tuyệt đối không bao giờ buông thõng đầu vợt xuống đất khi đứng lưới.</li>
         </ul>
 
-        <div class="figure-wrap">
-            <img src="lott_assets/diag_5_10_volley_hole.jpg" alt="Tấn công vào lỗ hổng giữa hai đối thủ" class="figure-img">
+        <div class="figure-container">
+            <img src="lott_assets/diag_5_10_volley_hole.jpg" alt="Tấn công vào lỗ hổng giữa hai đối thủ" class="responsive-img">
             <p class="figure-caption"><strong>Hình 5.1:</strong> Bất cứ khi nào xuất hiện khoảng trống giữa hai đối thủ, hãy tung ra một cú volley uy lực đâm thẳng vào tử huyệt đó.</p>
+        </div>
+
+        <div class="figure-container">
+            <img src="lott_assets/diag_5_2_split_step_approach.jpg" alt="Bước dừng quan sát Check-step trên đường tràn lưới" class="responsive-img">
+            <p class="figure-caption"><strong>Hình 5.2:</strong> Bước dừng quan sát (Check-Step - Diagram 5-2): Trên đường dâng lên lưới, người giao bóng khựng dừng chân ngay trước khoảnh khắc người trả bóng chạm vợt để phán đoán và chuyển hướng đón bóng.</p>
+        </div>
+
+        <div class="figure-container">
+            <img src="lott_assets/diag_5_16_classic_poach.jpg" alt="Pha cắt bóng lưới kinh điển và bọc lót sân trống" class="responsive-img">
+            <p class="figure-caption"><strong>Hình 5.3:</strong> Pha cắt bóng lưới kinh điển (Classic Poach - Diagram 5-16): Người đứng lưới băng ngang đón bắt cú trả bóng chéo sân, đồng thời người giao bóng phía sau lập tức di chuyển bọc lót khoảng sân trống.</p>
+        </div>
+
+        <div class="figure-container">
+            <img src="lott_assets/diag_5_17_fake_poach.jpg" alt="Đòn nghi binh giả vờ bắt lưới Fake Poach" class="responsive-img">
+            <p class="figure-caption"><strong>Hình 5.4:</strong> Đòn nghi binh giả vờ bắt lưới (Fake Poach - Diagram 5-17): Nhấp chân sang trung lộ ép đối thủ trả bóng dọc dây rồi lập tức giật về vị trí cũ để tung cú volley kết liễu.</p>
         </div>
 
         <h3>2. Tấn Công Xuyên Thủng "Lỗ Hổng Tử Huyệt" (The Middle Hole)</h3>
@@ -1132,12 +822,12 @@
     </div>
 </section>
 
-<section id="chapter-6" class="chapter-box">
-    <div >
+<section id="chapter-6" class="chapter-card">
+    <div class="chapter-header">
         <span class="chapter-number">Chương 6</span>
         <h2 class="chapter-title">Lối Chơi Cuối Sân Trong Đánh Đôi (Baseline Play)</h2>
     </div>
-    <div class="section-text">
+    <div class="chapter-body">
         <h3>1. Khi Nào Nên Trụ Lại Vạch Cuối Sân?</h3>
         <p>Mặc dù chiếm lưới là mục tiêu tối thượng trong đánh đôi, nhưng việc mù quáng lao lên lưới trong mọi tình huống khi chưa có sự chuẩn bị kỹ thuật sẽ biến bạn thành mục tiêu bị bắn phá tan nát. George Lott khuyến nghị những tình huống nên kiên nhẫn trụ lại cuối sân (Stay back):</p>
         <ul>
@@ -1166,27 +856,32 @@
 </section>
 
 
-<section id="chapter-7" class="chapter-box">
-    <div >
+<section id="chapter-7" class="chapter-card">
+    <div class="chapter-header">
         <span class="chapter-number">Chương 7</span>
         <h2 class="chapter-title">Cú Lốp Bóng Và Cú Đập Bóng Trên Cao (Lobs and Overheads)</h2>
     </div>
-    <div class="section-text">
+    <div class="chapter-body">
         <h3>1. Nghệ Thuật Lốp Bóng: Phòng Thủ Và Tấn Công</h3>
         <p>Cú lốp bóng trong đánh đôi thường bị các tay vợt phong trào đánh giá thấp và coi như một giải pháp bất đắc dĩ khi bị dồn vào chân tường. Tuy nhiên, trong triết lý của George Lott, cú lốp bóng là một vũ khí chiến thuật sắc bén bậc nhất có khả năng đảo ngược hoàn toàn cục diện trận đấu:</p>
         
-        <div class="figure-wrap">
-            <img src="lott_assets/diag_7_2_offensive_lob.jpg" alt="Cú lốp bóng tấn công ép đối phương rời khỏi mặt lưới" class="figure-img">
+        <div class="figure-container">
+            <img src="lott_assets/diag_7_2_offensive_lob.jpg" alt="Cú lốp bóng tấn công ép đối phương rời khỏi mặt lưới" class="responsive-img">
             <p class="figure-caption"><strong>Hình 7.1:</strong> Cú lốp bóng tấn công: Sử dụng quỹ đạo bóng thấp vừa đủ qua tầm với của người đứng lưới để đẩy lùi cặp đôi đối phương về vạch cuối sân.</p>
         </div>
 
-        <div >
-            <div >
+        <div class="figure-container">
+            <img src="lott_assets/diag_7_3_topspin_lob_winner.jpg" alt="Cú lốp bóng Topspin Kicking Winner" class="responsive-img">
+            <p class="figure-caption"><strong>Hình 7.2:</strong> Cú lốp bóng Topspin Kicking Winner (Diagram 7-3): Quỹ đạo xoáy cuộn cắm xuống mặt sân rồi bật vọt nhanh ra xa ngoài tầm với, biến cú lốp thành đòn ghi điểm dứt khoát.</p>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature-box">
                 <h4><i class="fa-solid fa-shield-halved"></i> Lốp Bóng Phòng Thủ (Defensive Lob)</h4>
                 <p><strong>Đặc điểm:</strong> Quỹ đạo bóng bay vút lên thật cao (từ 6 đến 9 mét) và rơi sâu sát vạch cuối sân.<br>
                 <strong>Mục đích:</strong> Giúp bạn kéo dài thời gian bay của bóng để hồi phục vị trí sau khi bị kéo dạt góc sườn, đồng thời ép đối thủ phải lùi xa khỏi mặt lưới để cứu bóng.</p>
             </div>
-            <div >
+            <div class="feature-box">
                 <h4><i class="fa-solid fa-bolt"></i> Lốp Bóng Tấn Công (Offensive Lob)</h4>
                 <p><strong>Đặc điểm:</strong> Quỹ đạo bóng bay thấp hơn, bất ngờ và mang độ xoáy cuộn cống (topspin) cuộn nhanh.<br>
                 <strong>Mục đích:</strong> Tung ra khi người đứng lưới đối phương áp sát lưới quá mức. Quả bóng bay lướt qua đầu họ chỉ vài gang tay rồi cuộn nhanh chạm đất và nảy vút về phía sau, khiến họ hoàn toàn bất lực.</p>
@@ -1212,12 +907,12 @@
     </div>
 </section>
 
-<section id="chapter-8" class="chapter-box">
-    <div >
+<section id="chapter-8" class="chapter-card">
+    <div class="chapter-header">
         <span class="chapter-number">Chương 8</span>
         <h2 class="chapter-title">Thích Ứng Với Các Điều Kiện Thi Đấu (Playing Conditions)</h2>
     </div>
-    <div class="section-text">
+    <div class="chapter-body">
         <h3>1. Chiến Thuật Thi Đấu Dưới Gió Mạnh</h3>
         <p>Gió là yếu tố ngoại cảnh gây biến động lớn nhất trên sân quần vợt. Một tay vợt biết tư duy chiến thuật sẽ biến ngọn gió thành người đồng minh đắc lực của mình thay vì bực bội phàn nàn:</p>
         <ul>
@@ -1228,8 +923,8 @@
 
         <h3>2. Chiến Thuật Thích Ứng Với Từng Loại Mặt Sân</h3>
         <p>Mỗi loại bề mặt sân mang lại đặc tính nảy và tốc độ bóng hoàn toàn khác biệt, đòi hỏi sự điều chỉnh chiến thuật linh hoạt:</p>
-        <div >
-            <table >
+        <div class="table-responsive">
+            <table class="tu-table">
                 <thead>
                     <tr>
                         <th>Loại Mặt Sân</th>
@@ -1259,12 +954,12 @@
     </div>
 </section>
 
-<section id="chapter-9" class="chapter-box">
-    <div >
+<section id="chapter-9" class="chapter-card">
+    <div class="chapter-header">
         <span class="chapter-number">Chương 9</span>
         <h2 class="chapter-title">Nghệ Thuật Đánh Đôi Nam Nữ (Mixed Doubles)</h2>
     </div>
-    <div class="section-text">
+    <div class="chapter-body">
         <h3>1. Vẻ Đẹp & Tâm Lý Của Đánh Đôi Nam Nữ</h3>
         <p>Đánh đôi nam nữ là một trong những thể thức thể thao độc đáo và giàu tính giao lưu văn minh nhất hành tinh. Tuy nhiên, nó cũng đòi hỏi một sự nhạy cảm tâm lý và nghệ thuật ứng xử đặc biệt giữa hai người bạn cặp khác giới:</p>
         <ul>
@@ -1282,33 +977,33 @@
     </div>
 </section>
 
-<section id="chapter-10" class="chapter-box">
-    <div >
+<section id="chapter-10" class="chapter-card">
+    <div class="chapter-header">
         <span class="chapter-number">Chương 10</span>
         <h2 class="chapter-title">Giáo Án Luyện Tập Thực Chiến Của George Lott (Practice)</h2>
     </div>
-    <div class="section-text">
+    <div class="chapter-body">
         <h3>1. Phương Pháp Luyện Tập Có Chủ Đích (Deliberate Practice)</h3>
         <p>Hầu hết các tay vợt phong trào dành hàng giờ ra sân để đánh bóng qua lại tự do mà không hề có bất kỳ sự tiến bộ nào về mặt chiến thuật. George Lott khẳng định: <em>Một giờ tập luyện có mục tiêu cụ thể có giá trị hơn một tháng thi đấu giao lưu vô định</em>. Mỗi buổi tập đôi phải tập trung vào việc giải quyết một bài toán chiến thuật duy nhất.</p>
 
         <h3>2. Các Bài Tập Đôi Kinh Điển Của George Lott</h3>
-        <div >
-            <div >
+        <div class="feature-grid">
+            <div class="feature-box">
                 <h4><i class="fa-solid fa-users"></i> Bài Tập 1: Hai Đấu Một (Two-on-One Drill)</h4>
                 <p><strong>Mục tiêu:</strong> Rèn luyện phản xạ cực hạn và khả năng chống trả áp lực.<br>
                 <strong>Cách thực hiện:</strong> Một tay vợt đứng một mình đối đầu với hai tay vợt đứng trên lưới bên kia sân. Người đứng một mình phải liên tục tung ra các đường bóng lốp sâu, bóng cắm chân và bóng dọc dây để đối phó với cặp lưới.</p>
             </div>
-            <div >
+            <div class="feature-box">
                 <h4><i class="fa-solid fa-person-running"></i> Bài Tập 2: Giao Bóng & Bắt Volley Bước Một</h4>
                 <p><strong>Mục tiêu:</strong> Rèn luyện phản xạ bước tách chân (split-step) khi lao lên lưới.<br>
                 <strong>Cách thực hiện:</strong> Người giao bóng phát bóng xoáy vào góc chữ T, lao lên 3 bước, thực hiện bước tách chân ngay khi người trả bóng chạm bóng và bắt quả low-volley bước một đưa bóng chìm sâu vào góc sân.</p>
             </div>
-            <div >
+            <div class="feature-box">
                 <h4><i class="fa-solid fa-arrows-to-eye"></i> Bài Tập 3: Đối Công Volley Cận Chiến (Rapid-Fire Volleys)</h4>
                 <p><strong>Mục tiêu:</strong> Nâng cao tốc độ phản xạ của cổ tay và mắt nhìn bóng.<br>
                 <strong>Cách thực hiện:</strong> Bốn tay vợt cùng đứng trên lưới cách nhau chỉ 3 mét và liên tục bắt quả volley qua lại ở tốc độ cao mà không để bóng chạm đất. Đội nào giữ được bóng lâu nhất sẽ thắng.</p>
             </div>
-            <div >
+            <div class="feature-box">
                 <h4><i class="fa-solid fa-crosshairs"></i> Bài Tập 4: Cắt Bóng Lưới Rình Rập (The Poaching Game)</h4>
                 <p><strong>Mục tiêu:</strong> Hoàn thiện thời điểm xuất phát và bước di chuyển chéo góc 45 độ.<br>
                 <strong>Cách thực hiện:</strong> Người đứng lưới bắt buộc phải thực hiện pha cắt bóng lưới ở mọi lượt trả bóng thứ hai của đối phương để tôi luyện sự quyết đoán và dũng cảm.</p>
@@ -1320,14 +1015,14 @@
         </main>
     </div>
 
-    <footer >
+    <footer class="site-footer">
         <p>&copy; 2026 Tennis Unified. Bản dịch tiếng Việt tác phẩm <em>How to Play Winning Doubles</em> (George Lott & Jeffrey Bairstow).</p>
         <p>Phục vụ mục đích học tập, nghiên cứu và phát triển chiến thuật đánh đôi quần vợt Việt Nam.</p>
     </footer>
 
     <script>
         // Dark mode toggle
-        const themeToggle = document.getElementById('themeToggleBtn');
+        const themeToggle = document.getElementById('themeToggle');
         const body = document.body;
         const icon = themeToggle.querySelector('i');
 
@@ -1352,14 +1047,14 @@
             const winScroll = document.documentElement.scrollTop;
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             const scrolled = (winScroll / height) * 100;
-            document.getElementById('progressBar').style.width = scrolled + '%';
+            document.getElementById('progress-bar').style.width = scrolled + '%';
         });
 
         // Search Filter
         const searchInput = document.getElementById('searchInput');
         searchInput.addEventListener('input', (e) => {
             const q = e.target.value.toLowerCase().trim();
-            const cards = document.querySelectorAll('.chapter-box');
+            const cards = document.querySelectorAll('.chapter-card');
             cards.forEach(card => {
                 const text = card.textContent.toLowerCase();
                 if (!q || text.includes(q)) {
@@ -1374,7 +1069,7 @@
         const tocLinks = document.querySelectorAll('.toc-list a');
         window.addEventListener('scroll', () => {
             let current = '';
-            const sections = document.querySelectorAll('.chapter-box');
+            const sections = document.querySelectorAll('.chapter-card');
             sections.forEach(sec => {
                 const top = sec.offsetTop - 120;
                 if (pageYOffset >= top) {
