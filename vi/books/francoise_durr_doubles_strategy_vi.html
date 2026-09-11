@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiến Lược Đánh Đôi (Doubles Strategy) — Françoise Dürr | Tennis Unified</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #831843;
+            --primary-dark: #500724;
+            --secondary: #be185d;
+            --accent: #f472b6;
+            --bg-page: #fdf2f8;
+            --bg-card: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border-color: #fbcfe8;
+            --highlight: #fce7f3;
+            --highlight-border: #f9a8d4;
+        }
+
+        [data-theme="dark"] {
+            --primary: #f472b6;
+            --primary-dark: #0f172a;
+            --secondary: #ec4899;
+            --accent: #fbcfe8;
+            --bg-page: #11050c;
+            --bg-card: #1f0b18;
+            --text-main: #f8fafc;
+            --text-muted: #cbd5e1;
+            --border-color: #3b112c;
+            --highlight: #2e0d24;
+            --highlight-border: #831843;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.7;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .brand-logo i {
+            color: #f472b6;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #f472b6;
+        }
+
+        .btn-lang {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff !important;
+        }
+
+        .btn-theme {
+            background: transparent;
+            border: none;
+            color: #cbd5e1;
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 6px;
+        }
+
+        .progress-bar-container {
+            position: fixed;
+            top: 57px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: transparent;
+            z-index: 999;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #f472b6, #be185d);
+            transition: width 0.1s ease;
+        }
+
+        .book-hero {
+            background: linear-gradient(135deg, #831843 0%, #500724 50%, #1e1b4b 100%);
+            color: #ffffff;
+            padding: 48px 24px;
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(244, 114, 182, 0.2);
+            color: #fbcfe8;
+            border: 1px solid rgba(244, 114, 182, 0.4);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+            color: #fbcfe8;
+            font-style: italic;
+        }
+
+        .hero-meta {
+            font-size: 0.95rem;
+            color: #e2e8f0;
+            margin-bottom: 24px;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background: #be185d;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #9d174d;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .reader-layout {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 40px;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 80px;
+            height: fit-content;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .toc-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .toc-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .toc-list a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s, padding-left 0.2s;
+            display: block;
+            padding: 4px 0;
+        }
+
+        .toc-list a:hover {
+            color: var(--secondary);
+            padding-left: 6px;
+        }
+
+        .reader-content {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .chapter-block {
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .chapter-block:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .chapter-header {
+            margin-bottom: 24px;
+        }
+
+        .chapter-badge {
+            display: inline-block;
+            background: var(--highlight);
+            color: var(--secondary);
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            border: 1px solid var(--highlight-border);
+        }
+
+        .chapter-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--text-main);
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+
+        .chapter-intro {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        .content-body h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin: 28px 0 14px 0;
+            color: var(--primary);
+        }
+
+        .content-body h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 18px 0 10px 0;
+        }
+
+        .content-body p {
+            margin-bottom: 16px;
+            font-size: 1rem;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        .content-body ul, .content-body ol {
+            margin: 12px 0 20px 24px;
+        }
+
+        .content-body li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: var(--highlight);
+            border-left: 4px solid var(--secondary);
+            border-radius: 0 8px 8px 0;
+            padding: 20px;
+            margin: 24px 0;
+        }
+
+        .highlight-box h4 {
+            color: var(--secondary);
+            margin-top: 0;
+        }
+
+        .figure-box {
+            margin: 32px 0;
+            text-align: center;
+        }
+
+        .figure-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .figure-caption {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        @media (max-width: 900px) {
+            .reader-layout {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                display: none;
+            }
+            .reader-content {
+                padding: 24px;
+            }
+            .hero-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="/vi/books/" class="brand-logo">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Tennis Unified Books</span>
+            </a>
+            <nav class="nav-links">
+                <a href="/vi/fundamentals/">Căn Bản</a>
+                <a href="/vi/stroke-analysis/">Phân Tích Cú Đánh</a>
+                <a href="/vi/drills/">Bài Tập</a>
+                <a href="/vi/books/">Tủ Sách</a>
+                <a href="/books/" data-lang-toggle="en" class="btn-lang"><i class="fa-solid fa-globe"></i> English</a>
+                <button class="btn-theme" id="themeToggle" aria-label="Đổi giao diện"><i class="fa-solid fa-moon"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <section class="book-hero">
+        <div class="hero-container">
+            <span class="hero-badge">Chiến Thuật &amp; Tâm Lý Đánh Đôi • David McKay Company</span>
+            <h1 class="hero-title">CHIẾN LƯỢC ĐÁNH ĐÔI</h1>
+            <p class="hero-subtitle">Doubles Strategy: A Creative and Psychological Approach to Tennis — Françoise Dürr with Don Coughlan</p>
+            <p class="hero-meta">Bản dịch tiếng Việt chuyên sâu • Tác phẩm kinh điển từ huyền thoại 12 danh hiệu Grand Slam Françoise Dürr</p>
+            <div class="hero-actions">
+                <a href="#part1" class="btn-action btn-primary"><i class="fa-solid fa-book-reader"></i> Đọc Ngay</a>
+                <a href="Doubles_Strategy_Francoise_Durr_Vietnamese_Final.pdf" target="_blank" class="btn-action btn-outline"><i class="fa-solid fa-file-pdf"></i> Tải Bản PDF Tiếng Việt</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="reader-layout">
+        <aside class="sidebar">
+            <div class="toc-title"><i class="fa-solid fa-list-ul"></i> Mục Lục Bản Dịch</div>
+            <ul class="toc-list">
+                <li><a href="#part1">Phần 1: Sân Đôi vs. Sân Đơn &amp; Hiệu Ứng Hành Lang</a></li>
+                <li><a href="#part2">Phần 2: Chiến Thuật Đôi &amp; Nghệ Thuật Giao Bóng</a></li>
+                <li><a href="#part3">Phần 3: Trả Giao Bóng &amp; Thống Trị Khu Vực Lưới</a></li>
+                <li><a href="#part4">Phần 4: Khối Xây Dựng Đôi, Tâm Lý &amp; Sáng Tạo</a></li>
+            </ul>
+        </aside>
+
+        <main class="reader-content">
+            
+<section class="chapter-block" id="part1">
+    <div class="chapter-header">
+        <span class="chapter-badge">Phần 1 · Cẩm Nang Chiến Thuật Françoise Dürr</span>
+        <h2 class="chapter-title">Sân Đánh Đôi vs. Sân Đánh Đơn &amp; Hiệu Ứng Hành Lang</h2>
+        <p class="chapter-intro">Nghiên cứu sự khác biệt căn bản về hình học giữa sân đánh đơn và sân đánh đôi. Phân tích tác động của hành lang đôi (alley) đối với diện tích bảo vệ, góc mở đường bóng và thời gian bóng bay (flight time) theo phân tích của nhà vô địch Grand Slam Françoise Dürr.</p>
+    </div>
+
+    <div class="content-body">
+        <h3>1. Sự Trỗi Dậy Của Quần Vợt Đánh Đôi Hiện Đại</h3>
+        <p>Trong nhiều thập kỷ, nội dung đánh đơn luôn thống trị sự chú ý của giới truyền thông và người hâm mộ quần vợt thế giới. Tuy nhiên, đánh đôi thực sự là một môn thể thao hoàn toàn khác biệt với những quy luật chiến thuật, tốc độ phản xạ và sự phối hợp đồng đội tinh vi hơn rất nhiều.</p>
+        <p>Françoise Dürr — tay vợt từng đoạt 12 danh hiệu Grand Slam và được vinh danh tại Ngôi Đền Huyền Thoại Quần Vợt Quốc Tế (International Tennis Hall of Fame) — khẳng định rằng đánh đôi đòi hỏi một tư duy sáng tạo độc lập. Bạn không thể mang nguyên xi thói quen thi đấu đơn vào sân đôi và hy vọng giành chiến thắng.</p>
+
+        <div class="figure-box">
+            <img src="doubles_strategy_assets/fig1_doubles_court_dimensions.jpg" alt="Sơ đồ kích thước hình học sân đánh đôi và hành lang đôi">
+            <span class="figure-caption">Hình 1 (Diagram 1): Phân tích kích thước hình học sân đánh đôi. Hành lang đôi rộng 4.5 feet (khoảng 1.37 mét) ở mỗi bên làm tăng chiều rộng sân từ 27 feet (sân đơn) lên 36 feet (sân đôi), tạo ra sự thay đổi mang tính cách mạng về mặt góc độ và không gian thi đấu.</span>
+        </div>
+
+        <h3>2. Hiệu Ứng Hành Lang Đôi (The Effects of the Alley)</h3>
+        <p>Sự khác biệt hiển nhiên nhất giữa sân đơn và sân đôi là sự xuất hiện của hai dải hành lang đôi (alleys). Việc mở rộng thêm 9 feet tổng cộng (mỗi bên 4.5 feet) thoạt nhìn có vẻ không quá lớn, nhưng trong động lực học quần vợt, nó làm thay đổi hoàn toàn ba thông số cốt tử:</p>
+        <ol>
+            <li><strong>Góc mở đường bóng (Angle of Departure):</strong> Khi sân mở rộng thêm về hai bên, góc đánh chéo sân cực đại tăng lên rõ rệt. Đối thủ có thể thực hiện những cú vuốt bóng với góc thoát hiểm hóc hơn rất nhiều so với sân đơn, kéo bạn văng hoàn toàn ra khỏi ranh giới sân thi đấu.</li>
+            <li><strong>Thời gian bóng bay (Increased Flight Time):</strong> Vì chiều rộng sân lớn hơn và các đường bóng chéo sân có cự ly dài hơn, thời gian bóng bay trong không khí cũng tăng lên. Điều này vừa mang lại cho bạn thêm thời gian di chuyển, nhưng đồng thời cũng cho phép đối thủ có thêm thời gian để lao lên khép góc lưới.</li>
+            <li><strong>Quy tắc đón bóng trước khi chạm đất:</strong> Trong quần vợt, không có luật nào bắt buộc bạn phải để bóng chạm đất mới được đánh, ngoại trừ quả đỡ giao bóng. Hiệu ứng hành lang buộc người chơi đôi phải chủ động bắt vô-lê trên không sớm nhất có thể nhằm cắt ngắn thời gian phản ứng của đối phương.</li>
+        </ol>
+
+        <div class="figure-box">
+            <img src="doubles_strategy_assets/fig2_singles_vs_doubles_angles.jpg" alt="Sơ đồ so sánh góc thoát bóng giữa sân đơn và sân đôi">
+            <span class="figure-caption">Hình 2 (Diagram 2): So sánh góc mở giữa sân đơn (Singles) và sân đôi (Doubles). Điểm xuất phát bóng từ hành lang đôi tạo ra góc đánh chết người, mở toang toàn bộ phần sân đối diện nếu người đứng lưới không kịp thời di chuyển khép góc.</span>
+        </div>
+
+        <h3>3. Nguyên Tắc Phân Chia Trách Nhiệm Sân Đấu</h3>
+        <p>Một sai lầm sơ đẳng của các cặp đôi mới ghép là chia đôi sân bằng một đường thẳng tưởng tượng từ giữa lưới xuống vạch đáy và mỗi người chỉ chịu trách nhiệm nửa sân của mình. Françoise Dürr gọi đây là "lối chơi chia đất tĩnh" hoàn toàn thất bại.</p>
+        <div class="highlight-box">
+            <h4>Quy Tắc Động Lực Học Của Françoise Dürr</h4>
+            <p>Trách nhiệm trên sân đôi phải di chuyển linh hoạt theo vị trí của quả bóng. Khi bóng dịch chuyển sang góc sân bên phải của đối thủ, toàn bộ hai người chơi của đội bạn phải dịch chuyển đồng bộ sang bên phải để phong tỏa góc đánh gần nhất, chấp nhận để hở góc xa đối diện vì đó là cú đánh có độ khó cao nhất và thời gian bóng bay lâu nhất.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="chapter-block" id="part2">
+    <div class="chapter-header">
+        <span class="chapter-badge">Phần 2 · Cẩm Nang Chiến Thuật Françoise Dürr</span>
+        <h2 class="chapter-title">Chiến Thuật Đôi vs. Chiến Thuật Đơn &amp; Nghệ Thuật Giao Bóng</h2>
+        <p class="chapter-intro">So sánh bản chất chiến lược giữa đánh đơn và đánh đôi: từ lối chơi kiên nhẫn bào mòn thể lực sang cuộc đấu tốc độ phản xạ và chiếm lĩnh cự ly gần. Phân tích nghệ thuật quả giao bóng đôi, tầm quan trọng của độ xoáy và chiến thuật tạo tiền đề cho quả vô-lê bước một (first volley).</p>
+    </div>
+
+    <div class="content-body">
+        <h3>1. Khác Biệt Cốt Lõi Giữa Chiến Thuật Đơn Và Chiến Thuật Đôi</h3>
+        <p>Trong trận đấu đơn, mục tiêu chiến thuật chính là di chuyển đối thủ trên khắp mặt sân, khai thác điểm yếu thể lực hoặc nhắm vào bên cánh yếu hơn (thường là cú trái tay). Ngược lại, trong trận đấu đôi, mục tiêu chiến thuật tối thượng là kiểm soát lưới và triệt tiêu thời gian phản ứng của đối phương.</p>
+        <ul>
+            <li><strong>Không gian đánh bóng bị thu hẹp:</strong> Dù sân đôi rộng hơn, sự xuất hiện của hai người phòng thủ trên lưới khiến các khoảng trống ghi điểm thực tế trở nên cực kỳ khan hiếm. Mọi đường bóng bổng hoặc bay chậm đều bị đối thủ dứt điểm ngay lập tức.</li>
+            <li><strong>Chuyển dịch trọng tâm sang độ cao của bóng:</strong> Trong đánh đơn, bạn quan tâm nhiều đến độ sâu (depth) sát vạch đáy. Trong đánh đôi, yếu tố quyết định là độ cao của bóng khi bay qua mép lưới. Bất kỳ quả bóng nào bay cao hơn đầu lưới đều mang lại lợi thế tấn công cho đối phương, trong khi bóng bay thấp dưới mép lưới sẽ ép đối thủ phải đánh quả vô-lê phòng thủ từ dưới thấp lên.</li>
+        </ul>
+
+        <div class="figure-box">
+            <img src="doubles_strategy_assets/fig3_serve_placement_spin.jpg" alt="Sơ đồ điểm rơi giao bóng và độ xoáy trong đánh đôi">
+            <span class="figure-caption">Hình 3: Nghệ thuật điều phối điểm rơi giao bóng trong đánh đôi. Quả giao bóng xoáy cồng (topspin kick) hoặc xoáy ngang (slice) găm vào vạch chữ T giúp giảm thiểu góc trả bóng và tạo cơ hội hoàn hảo cho đồng đội đứng lưới băng cắt can thiệp.</span>
+        </div>
+
+        <h3>2. Nghệ Thuật Giao Bóng Trong Đánh Đôi (The Doubles Serve)</h3>
+        <p>Françoise Dürr nhấn mạnh rằng quả giao bóng trong đánh đôi không phải là một phát súng đơn độc tìm kiếm điểm ace chớp nhoáng. Đó là một đòn mồi chiến thuật phục vụ cho hai mục đích đồng bộ:</p>
+        <ol>
+            <li><strong>Hạn chế tối đa góc đánh của người trả bóng:</strong> Giao bóng dọc vạch trung tâm (Center T) là phương án an toàn và hiệu quả nhất, khiến người trả bóng không thể tạo ra những góc vuốt bóng chéo sân nguy hiểm.</li>
+            <li><strong>Mua thời gian để người giao bóng lao lên lưới:</strong> Một quả giao bóng có tốc độ quá nhanh nhưng thẳng tắp sẽ bay ngược trở lại chân bạn trước khi bạn kịp hoàn thành bước nhảy dừng thăng bằng (split-step). Một quả giao bóng xoáy cồng vồng cao sẽ cho bạn đủ 1.5 đến 2 giây để tiến sát vào ô giao bóng và chuẩn bị cho cú vô-lê đầu tiên.</li>
+        </ol>
+
+        <div class="highlight-box">
+            <h4>Bí Quyết Vô-Lê Bước Một (The First Volley)</h4>
+            <p>Đừng cố gắng tung ra một cú vô-lê ăn điểm ngay từ bước một khi bạn vừa lao lên từ vạch cuối sân. Cú vô-lê bước một (first volley) được thực hiện ở vị trí cách lưới khoảng 4 đến 5 mét, thường ngang tầm đầu gối. Mục tiêu của cú đánh này là kiểm soát bóng chắc chắn, hướng bóng sâu về phía chân của đối thủ ở cuối sân, sau đó tiếp tục bước thêm hai bước để áp sát lưới ở cự ly vàng 2 mét nhằm tung đòn kết liễu ở quả vô-lê thứ hai.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="chapter-block" id="part3">
+    <div class="chapter-header">
+        <span class="chapter-badge">Phần 3 · Cẩm Nang Chiến Thuật Françoise Dürr</span>
+        <h2 class="chapter-title">Kỹ Năng Trả Giao Bóng &amp; Thống Trị Khu Vực Lưới</h2>
+        <p class="chapter-intro">Làm chủ kỹ thuật trả giao bóng để vô hiệu hóa áp lực giao bóng lên lưới của đối thủ. Phân tích nghệ thuật kiểm soát khu vực lưới, phản xạ bắt vô-lê cận chiến, kỹ năng băng cắt can thiệp (poaching) và phối hợp hình học di chuyển đôi trên lưới.</p>
+    </div>
+
+    <div class="content-body">
+        <h3>1. Nghệ Thuật Trả Giao Bóng Đánh Đôi (The Return of Serve)</h3>
+        <p>Nếu quả giao bóng là mũi giáp công mở màn của đối thủ, thì cú trả giao bóng chính là lá chắn thép định hình toàn bộ cơ hội thắng điểm của cặp đôi nhận bóng. Trong đánh đôi, cú trả giao bóng tốt không nhất thiết phải là một cú đánh bão táp ăn điểm trực tiếp (winner).</p>
+        <p>Mục tiêu tối thượng của quả trả bóng là đưa bóng vào cuộc an toàn và ép người giao bóng đang lao lên phải chơi bóng từ vị trí dưới mép lưới. Françoise Dürr chỉ ra ba nguyên tắc cốt tử:</p>
+        <ul>
+            <li><strong>Rút ngắn đà vung vợt (Compact Backswing):</strong> Vì bóng giao đến với tốc độ cao, đà vung vợt dài kiểu đánh đơn từ cuối sân sẽ khiến bạn bị trễ nhịp tiếp xúc. Hãy chuẩn bị vợt thật gọn gàng, dùng lực chuyển trọng tâm thân người về phía trước để chặn bóng.</li>
+            <li><strong>Nhắm vào điểm rơi dưới chân người giao bóng:</strong> Quả bóng chìm sát chân (dipping return) buộc người giao bóng phải gập gối xúc bóng lên, tạo cơ hội cho đồng đội đứng lưới của bạn dứt điểm quả bóng bổng tiếp theo.</li>
+            <li><strong>Hạn chế tối đa việc đánh bóng vào tầm với của người đứng lưới đối phương:</strong> Đường bóng trả chéo sân an toàn phải duy trì quỹ đạo cách xa tầm với của người đứng lưới đối diện ít nhất 1.5 mét.</li>
+        </ul>
+
+        <div class="figure-box">
+            <img src="doubles_strategy_assets/fig4_return_tactics_angles.jpg" alt="Sơ đồ các góc trả giao bóng chiến lược trong đánh đôi">
+            <span class="figure-caption">Hình 4: Các góc trả giao bóng chiến lược. Đánh chéo sân sâu vào chân người giao bóng là phương án an toàn nhất; cú bạt dọc dây (down-the-line) chỉ nên sử dụng như đòn trừng phạt bất ngờ khi người đứng lưới đối phương di chuyển can thiệp quá sớm.</span>
+        </div>
+
+        <h3>2. Thống Trị Khu Vực Lưới (Dominating the Net)</h3>
+        <p>Khu vực lưới là nơi định đoạt hơn 75% số điểm thắng trong quần vợt đôi hiện đại. Người chơi thống trị được khu vực này không phải là người có cú đập mạnh nhất, mà là người sở hữu vị trí đứng thông minh và phản xạ nhạy bén nhất.</p>
+
+        <div class="figure-box">
+            <img src="doubles_strategy_assets/fig5_net_positioning_synergy.jpg" alt="Sơ đồ phối hợp vị trí và khoảng cách giữa hai người chơi trên lưới">
+            <span class="figure-caption">Hình 5: Phối hợp vị trí ăn ý trên lưới (Net Synergy). Hai người chơi di chuyển nhịp nhàng như một thể thống nhất, che chắn toàn bộ góc đánh trung lộ và sẵn sàng hoán đổi vị trí khi đối thủ lốp bóng phòng thủ.</span>
+        </div>
+
+        <h3>3. Nghệ Thuật Băng Cắt Can Thiệp (The Poach)</h3>
+        <p>Cú băng cắt can thiệp (poach) là một trong những vũ khí tấn công gây phấn khích nhất trong đánh đôi. Tuy nhiên, poach thành công không dựa vào sự liều lĩnh mù quáng mà đòi hỏi sự chuẩn bị chiến thuật kỹ lưỡng:</p>
+        <div class="highlight-box">
+            <h4>Ba Yếu Tố Quyết Định Thành Công Của Cú Poach</h4>
+            <ol>
+                <li><strong>Thời điểm xuất phát hoàn hảo:</strong> Bạn chỉ được phép bắt đầu bước chân can thiệp vào khoảnh khắc người trả bóng của đối phương vừa hoàn thành đà vung vợt về sau và bắt đầu đưa vợt về phía trước để tiếp xúc bóng. Nếu di chuyển quá sớm, đối thủ sẽ nhìn thấy và dễ dàng đẩy bóng dọc dây vào phần sân trống.</li>
+                <li><strong>Góc di chuyển tiến chéo về phía trước:</strong> Đừng chạy ngang song song với lưới. Bạn phải lao chéo về phía trước theo góc 45 độ để đón bóng ở tầm cao nhất và gần mép lưới nhất có thể.</li>
+                <li><strong>Dứt điểm dứt khoát vào khoảng trống:</strong> Hướng quả vô-lê chém cắt vào chân người đứng lưới đối phương hoặc vào góc trung lộ sâu giữa hai người chơi.</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+
+<section class="chapter-block" id="part4">
+    <div class="chapter-header">
+        <span class="chapter-badge">Phần 4 · Cẩm Nang Chiến Thuật Françoise Dürr</span>
+        <h2 class="chapter-title">Khối Xây Dựng Đôi, Tâm Lý Đồng Đội &amp; Tư Duy Sáng Tạo</h2>
+        <p class="chapter-intro">Xây dựng nền tảng tâm lý vững chắc giữa hai người bạn cùng thi đấu. Phân tích nghệ thuật giao tiếp phi ngôn ngữ, cách vượt qua các thời khắc khủng hoảng áp lực điểm số và ứng dụng tư duy sáng tạo để giải mã những cặp đối thủ khó nhằn nhất theo triết lý của Françoise Dürr.</p>
+    </div>
+
+    <div class="content-body">
+        <h3>1. Khối Xây Dựng Cặp Đôi Hoàn Hảo (Building Blocks for Doubles)</h3>
+        <p>Một cặp đôi chiến thắng không đơn giản là phép cộng cơ học giữa hai cá nhân xuất sắc. Lịch sử quần vợt đã chứng kiến vô số trường hợp hai siêu sao đánh đơn hàng đầu thế giới khi ghép đôi lại thất bại trước một cặp chuyên đánh đôi có kỹ thuật cá nhân khiêm tốn hơn nhưng hiểu nhau như ruột thịt.</p>
+        <p>Françoise Dürr đưa ra ba "khối xây dựng" nền tảng để tạo nên một đội hình bất khả chiến bại:</p>
+        <ul>
+            <li><strong>Sự bù trừ về phong cách thi đấu:</strong> Một cặp đôi lý tưởng thường có sự kết hợp hài hòa: một người chơi bền bỉ, kiên nhẫn từ cuối sân kết hợp với một người chơi dũng mãnh, phản xạ nhanh nhạy trên lưới; hoặc một tay vợt thuận tay phải kết hợp với một tay vợt thuận tay trái để cả hai cùng kiểm soát trung lộ bằng cú thuận tay uy lực.</li>
+            <li><strong>Sự tương đồng về triết lý và mục tiêu:</strong> Cả hai người chơi phải thống nhất về kế hoạch thi đấu trước khi bước ra sân. Nếu một người muốn chơi tấn công mạo hiểm còn người kia muốn phòng ngự cù cưa, sự bất đồng sẽ làm sụp đổ toàn bộ chiến thuật thi đấu.</li>
+            <li><strong>Sự tin tưởng tuyệt đối:</strong> Khi bạn bước lên lưới can thiệp, bạn phải hoàn toàn tin rằng đồng đội sẽ bọc lót phía sau nếu cú đánh không thành công; và ngược lại, người ở sân sau phải luôn ủng hộ mọi quyết định băng cắt của đồng đội trên lưới.</li>
+        </ul>
+
+        <h3>2. Tâm Lý Học Đồng Đội &amp; Giao Tiếp Trên Sân Đấu</h3>
+        <p>Yếu tố tâm lý đóng vai trò quyết định trong việc duy trì năng lượng và sự tự tin của cả hai tay vợt:</p>
+        <div class="highlight-box">
+            <h4>Nguyên Tắc Giao Tiếp Vàng Của Françoise Dürr</h4>
+            <p>Tuyệt đối không bao giờ thể hiện thái độ thất vọng, thở dài, lắc đầu hoặc trách móc khi đồng đội phạm sai lầm. Trong đánh đôi, sai lầm của đồng đội cũng chính là sai lầm của bạn. Hãy luôn bước lại gần nhau sau mỗi pha bóng, chạm tay (high-five), nhìn thẳng vào mắt nhau và đưa ra những lời động viên tích cực. Một cái chạm tay ngắn ngủi có sức mạnh giải tỏa áp lực tâm lý to lớn hơn bất kỳ bài thuyết giảng chiến thuật nào.</p>
+        </div>
+
+        <h3>3. Quản Lý Khủng Hoảng Điểm Số (Match Crisis Management)</h3>
+        <p>Khi đội của bạn đang bị dẫn trước 0-4 hoặc đối mặt với các điểm break-point nghẹt thở, sự hoảng loạn là kẻ thù số một. Françoise Dürr khuyên người chơi áp dụng quy trình kiểm soát khủng hoảng ba bước:</p>
+        <ol>
+            <li><strong>Làm chậm nhịp độ trận đấu:</strong> Tận dụng tối đa khoảng thời gian 25 giây giữa các điểm số để hít thở sâu, lau mồ hôi và trao đổi ngắn với đồng đội về chiến thuật của điểm tiếp theo.</li>
+            <li><strong>Đơn giản hóa kế hoạch thi đấu:</strong> Loại bỏ ngay các cú đánh hoa mỹ hoặc mạo hiểm sát vạch vôi. Quay trở lại những cú đánh căn bản: giao bóng an toàn vào trung lộ, trả bóng sâu vào giữa sân đối thủ và buộc đối phương phải đánh bóng thêm một nhịp.</li>
+            <li><strong>Thay đổi sơ đồ đội hình để phá vỡ nhịp điệu:</strong> Nếu đối thủ đang trả bóng quá quen tay, hãy chuyển sang đội hình Tandem (Australian Formation) hoặc áp dụng chiến thuật I-Formation để tạo sự bối rối về thị giác cho đối phương.</li>
+        </ol>
+
+        <div class="highlight-box">
+            <h4>Bảng Tổng Kết Chiến Lược Đánh Đôi Toàn Diện Françoise Dürr</h4>
+            <table style="width:100%; border-collapse: collapse; margin-top: 10px;">
+                <thead>
+                    <tr style="background:#e0e7ff; color:#1e1b4b;">
+                        <th style="padding: 8px; border: 1px solid #cbd5e1;">Hạng Mục Chiến Thuật</th>
+                        <th style="padding: 8px; border: 1px solid #cbd5e1;">Mục Tiêu Trọng Tâm</th>
+                        <th style="padding: 8px; border: 1px solid #cbd5e1;">Hành Động Khuyến Nghị Của Françoise Dürr</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;"><strong>Bảo vệ hành lang đôi (Alley)</strong></td>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;">Khép góc mở cực đại</td>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;">Di chuyển đồng bộ theo hướng bóng; ưu tiên bịt kín trung lộ trước khi lo vạch biên</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;"><strong>Giao bóng trong đánh đôi</strong></td>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;">Hạn chế góc trả &amp; mua thời gian</td>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;">Giao xoáy kick/slice vào chữ T; thực hiện split-step vững vàng trước quả first volley</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;"><strong>Trả giao bóng</strong></td>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;">Đè bóng thấp dưới chân đối thủ</td>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;">Đà vung vợt ngắn gọn, chặn bóng sớm trên đà nảy (rising ball) và ép bóng chìm</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;"><strong>Tâm lý đồng đội</strong></td>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;">Gắn kết và giải tỏa áp lực</td>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;">Chạm tay sau mỗi điểm số, luôn khích lệ đồng đội và chủ động thay đổi đội hình khi bị dẫn</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+        </main>
+    </div>
+
+    <script>
+        const themeBtn = document.getElementById('themeToggle');
+        themeBtn.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            themeBtn.innerHTML = newTheme === 'dark' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+        });
+
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+    </script>
+</body>
+</html>
