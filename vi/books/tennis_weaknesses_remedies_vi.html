@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Điểm Yếu & Giải Pháp Trong Môn Quần Vợt | Tennis Unified</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #d97706;
+            --primary-dark: #b45309;
+            --secondary: #f59e0b;
+            --accent: #fbbf24;
+            --bg-page: #fffbeb;
+            --bg-card: #ffffff;
+            --text-main: #1c1917;
+            --text-muted: #78716c;
+            --border-color: #fef3c7;
+            --highlight: #fef9c3;
+            --highlight-border: #fde047;
+        }
+
+        [data-theme="dark"] {
+            --primary: #fbbf24;
+            --primary-dark: #1e1b4b;
+            --secondary: #f59e0b;
+            --accent: #fde68a;
+            --bg-page: #18181b;
+            --bg-card: #27272a;
+            --text-main: #f4f4f5;
+            --text-muted: #a1a1aa;
+            --border-color: #3f3f46;
+            --highlight: #292524;
+            --highlight-border: #d97706;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.75;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(15, 23, 42, 0.96);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .brand-logo i {
+            color: #fbbf24;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: #fbbf24;
+        }
+
+        .btn-lang {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff !important;
+        }
+
+        .btn-theme {
+            background: transparent;
+            border: none;
+            color: #cbd5e1;
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 6px;
+        }
+
+        .progress-bar-container {
+            position: fixed;
+            top: 57px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: transparent;
+            z-index: 999;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #fbbf24, #d97706);
+            transition: width 0.1s ease;
+        }
+
+        .book-hero {
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);
+            color: #ffffff;
+            padding: 48px 24px;
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(251, 191, 36, 0.2);
+            color: #fde68a;
+            border: 1px solid rgba(251, 191, 36, 0.4);
+            padding: 5px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-title {
+            font-size: 2.3rem;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            opacity: 0.95;
+            margin-bottom: 20px;
+            color: #fef3c7;
+            font-style: italic;
+        }
+
+        .hero-meta {
+            font-size: 0.95rem;
+            color: #fde68a;
+            margin-bottom: 24px;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 11px 22px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background: #d97706;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #b45309;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.12);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.22);
+            transform: translateY(-2px);
+        }
+
+        .reader-layout {
+            max-width: 1240px;
+            margin: 40px auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 290px 1fr;
+            gap: 40px;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 80px;
+            height: fit-content;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+        }
+
+        .toc-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-item {
+            margin-bottom: 12px;
+        }
+
+        .toc-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: block;
+            padding: 6px 10px;
+            border-radius: 6px;
+            transition: all 0.2s;
+            line-height: 1.4;
+        }
+
+        .toc-link:hover, .toc-link.active {
+            color: var(--primary);
+            background: var(--highlight);
+            font-weight: 600;
+        }
+
+        .reader-content {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 48px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .book-part {
+            margin-bottom: 60px;
+            scroll-margin-top: 80px;
+        }
+
+        .reader-content h1 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 24px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 12px;
+        }
+
+        .reader-content h2 {
+            font-size: 1.45rem;
+            margin: 32px 0 16px 0;
+            color: var(--primary-dark);
+        }
+
+        [data-theme="dark"] .reader-content h2 {
+            color: #fbbf24;
+        }
+
+        .reader-content h3 {
+            font-size: 1.2rem;
+            margin: 24px 0 12px 0;
+            color: var(--text-main);
+        }
+
+        .reader-content p {
+            margin-bottom: 18px;
+            font-size: 1.05rem;
+            color: var(--text-main);
+        }
+
+        .reader-content ul, .reader-content ol {
+            margin-bottom: 20px;
+            padding-left: 28px;
+        }
+
+        .reader-content li {
+            margin-bottom: 8px;
+            font-size: 1.02rem;
+        }
+
+        .diagram-figure {
+            margin: 36px 0;
+            text-align: center;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+        }
+
+        .diagram-figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .diagram-figure figcaption {
+            margin-top: 14px;
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        .quote-box {
+            background: var(--highlight);
+            border-left: 4px solid var(--primary);
+            padding: 18px 24px;
+            margin: 24px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--text-main);
+        }
+
+        .key-takeaway {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            padding: 18px 22px;
+            border-radius: 8px;
+            margin: 24px 0;
+            color: #92400e;
+        }
+
+        [data-theme="dark"] .key-takeaway {
+            background: #292524;
+            border-color: #d97706;
+            color: #fde68a;
+        }
+
+        @media (max-width: 900px) {
+            .reader-layout {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                display: none;
+            }
+            .reader-content {
+                padding: 24px;
+            }
+            .hero-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="/vi/" class="brand-logo">
+                <i class="fa-solid fa-tennis-ball"></i>
+                <span>Tennis Unified</span>
+            </a>
+            <nav class="nav-links">
+                <a href="/vi/"><i class="fa-solid fa-house"></i> Trang Chủ</a>
+                <a href="/vi/books/" class="active"><i class="fa-solid fa-book"></i> Tủ Sách</a>
+                <a href="/vi/fundamentals/"><i class="fa-solid fa-graduation-cap"></i> Căn Bản</a>
+                <a href="/vi/stroke-analysis/"><i class="fa-solid fa-chart-line"></i> Phân Tích</a>
+                <a href="/vi/drills/"><i class="fa-solid fa-person-running"></i> Bài Tập</a>
+                <a href="/books/" data-lang-toggle="en" class="btn-lang"><i class="fa-solid fa-globe"></i> English</a>
+                <button id="theme-toggle" class="btn-theme" title="Chuyển chế độ sáng/tối"><i class="fa-solid fa-moon"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="progress-bar-container">
+        <div id="reading-progress" class="progress-bar"></div>
+    </div>
+
+    <section class="book-hero">
+        <div class="hero-container">
+            <span class="hero-badge">Sterling Sports Classics • Master Guide</span>
+            <h1 class="hero-title">ĐIỂM YẾU & GIẢI PHÁP TRONG MÔN QUẦN VỢT</h1>
+            <p class="hero-subtitle">Tennis Weaknesses & Remedies — Chẩn Đoán & Khắc Phục Lỗi Kỹ Thuật, Chiến Thuật & Tâm Lý</p>
+            <p class="hero-meta">Tác giả: <strong>Paul Metzler</strong> | Sterling Publishing Co., New York | 11 Chương Chuyên Sâu</p>
+            <div class="hero-actions">
+                <a href="#part1" class="btn-action btn-primary"><i class="fa-solid fa-book-open"></i> Đọc Toàn Bộ Sách</a>
+                <a href="Tennis_Weaknesses_Remedies_Vietnamese_Final.pdf" class="btn-action btn-outline" download><i class="fa-solid fa-file-pdf"></i> Tải PDF In Ấn</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="reader-layout">
+        <aside class="sidebar">
+            <h3 class="toc-title"><i class="fa-solid fa-list-ol"></i> Mục Lục Cẩm Nang</h3>
+            <ul class="toc-list">
+                <li class="toc-item"><a href="#part1" class="toc-link"><strong>Phần 1:</strong> Khắc Phục Điểm Yếu Forehand & Backhand (Chương 1 - 3)</a></li>
+                <li class="toc-item"><a href="#part2" class="toc-link"><strong>Phần 2:</strong> Giải Mã Giao Bóng, Lưới & Cận Chiến (Chương 4 - 6)</a></li>
+                <li class="toc-item"><a href="#part3" class="toc-link"><strong>Phần 3:</strong> Khoa Học Xoáy Bóng & Nghệ Thuật Đọc Đối Thủ (Chương 7 - 8)</a></li>
+                <li class="toc-item"><a href="#part4" class="toc-link"><strong>Phần 4:</strong> Chiến Thuật Đơn - Đôi & Cạm Bẫy Tâm Lý (Chương 9 - 11)</a></li>
+            </ul>
+        </aside>
+
+        <main class="reader-content">
+            <section id="part1" class="book-part">
+                
+<h1>PHẦN 1: KHẮC PHỤC ĐIỂM YẾU FOREHAND & BACKHAND</h1>
+
+<div class="quote-box">
+  "Bạn đã chơi quần vợt một thời gian khá dài, thậm chí rất nhiều năm, nhưng luôn có một hoặc hai điểm yếu cố hữu kìm hãm bước tiến của bạn. Những mắt xích yếu này tước đoạt sự tự tin toàn diện và khiến bạn luôn lo lắng trước mỗi trận đấu. Mục tiêu của cuốn sách này là chỉ ra chính xác căn nguyên cơ học và đưa ra giải pháp khắc phục triệt để từng điểm yếu."
+  <br><strong>— Paul Metzler (Tennis Weaknesses & Remedies)</strong>
+</div>
+
+<h2 class="section-title">Lời Mở Đầu: Chẩn Đoán Những Mắt Xích Kìm Hãm Tiềm Năng</h2>
+
+<p>
+  Phần lớn người chơi phong trào và bán chuyên thường chấp nhận sống chung với điểm yếu. Người thì sợ cú trái tay (backhand), người thì run rẩy mỗi khi giao bóng hai, người lại bất lực khi bị đối thủ kéo lên lưới đánh volley. Khi bước vào một trận đấu căng thẳng, đối thủ thông minh sẽ nhanh chóng phát hiện ra mắt xích yếu nhất này và liên tục khoét sâu vào đó cho đến khi bạn sụp đổ.
+</p>
+
+<p>
+  Tuy nhiên, trong quần vợt, không có điểm yếu nào là "bẩm sinh" hay không thể sửa đổi. Mọi cú đánh hỏng lặp đi lặp lại đều bắt nguồn từ một lỗi sai cơ học căn bản: có thể là do tay cầm vợt không phù hợp với tầm đón bóng, cổ tay bị lỏng lẻo ở thời điểm va chạm, hoặc bộ chân không tạo được nền tảng vững chắc để chuyển trọng tâm. Khi bạn hiểu rõ nguyên nhân gốc rễ, việc khắc phục sẽ trở nên vô cùng rõ ràng và có phương pháp.
+</p>
+
+<h2 class="section-title">Chương 1: Tay Cầm Vợt Forehand (The Forehand Grip)</h2>
+
+<p>
+  Trong quá khứ, nhiều huấn luyện viên thường nói rằng "bất kỳ kiểu cầm vợt nào tạo cảm giác thoải mái đều là đúng." Quan điểm này đã lỗi thời và gây ra vô số hiểu lầm tai hại. Cầm vợt thoải mái khi đứng yên không có nghĩa là nó sẽ hoạt động hiệu quả khi bạn phải đối mặt với một đường bóng xoáy nặng và tốc độ cao.
+</p>
+
+<p>
+  Lý do cốt lõi khiến các tay vợt sử dụng các kiểu grip khác nhau là: <strong>mỗi kiểu grip quy định một điểm tiếp xúc bóng tự nhiên khác nhau trong tương quan với cơ thể</strong>. Hãy cầm vợt lên và đứng nghiêng người so với lưới (vai trái hướng về phía lưới đối với người thuận tay phải):
+</p>
+
+<figure class="diagram-figure">
+  <img src="tennis_weaknesses_assets/illus_orthodox_eastern_grip.png" alt="Kiểu Cầm Vợt Eastern Forehand Truyền Thống" />
+  <figcaption>Hình 1: Kiểu cầm vợt Eastern Forehand truyền thống (Orthodox Eastern). Lòng bàn tay và cổ tay nằm vững chắc ngay phía sau cán vợt, khớp gốc ngón trỏ áp sát vào mặt phẳng sau của cán, mang lại sự ổn định và điểm tiếp xúc lý tưởng ngang hông trước.</figcaption>
+</figure>
+
+<h3>1. Kiểu Cầm Western Forehand (Cầm Vợt Phương Tây)</h3>
+<p>
+  Lòng bàn tay nằm chủ yếu bên dưới cán vợt và cổ tay nằm phía sau. Chữ "V" tạo bởi ngón cái và ngón trỏ nằm trên vát chéo phía trên bên phải hoặc thậm chí áp sát vào mặt đáy. Kiểu cầm này đòi hỏi bạn phải đón bóng ở vị trí rất xa về phía trước (cách hông trái từ 30 đến 45 cm) và ở tầm bóng ngang ngực. Điểm yếu chết người của Western grip là cực kỳ lúng túng khi xử lý các đường bóng thấp, bóng slice sát mặt đất hoặc bóng ngắn lướt nhanh.
+</p>
+
+<h3>2. Kiểu Cầm Extreme Eastern Forehand</h3>
+<p>
+  Khớp gốc ngón trỏ nằm ở vát chéo phía dưới, mang lại độ bám vững chắc để tạo xoáy topspin mạnh mẽ trong khi vẫn cho phép xử lý các đường bóng tầm trung một cách thoải mái. Điểm tiếp xúc nằm ở phía trước hông trước khoảng 20-30 cm.
+</p>
+
+<h3>3. Kiểu Cầm Orthodox Eastern Forehand (Eastern Truyền Thống)</h3>
+<p>
+  Đây là kiểu cầm kinh điển và linh hoạt nhất trong lịch sử quần vợt. Lòng bàn tay nằm trọn vẹn phía sau cán vợt. Mặt vợt vuông góc tự nhiên với đường bay của bóng khi tiếp xúc ở vị trí cách hông trước khoảng 15-20 cm. Điểm mạnh vượt trội của Eastern là sự ổn định cơ học tuyệt đối và khả năng chuyển đổi linh hoạt giữa đánh bóng bạt (flat) và đánh bóng xoáy (topspin).
+</p>
+
+<h3>4. Kiểu Cầm Continental Forehand</h3>
+<p>
+  Chữ "V" nằm ở đỉnh cán vợt hoặc hơi lệch sang trái. Điểm tiếp xúc tự nhiên nằm ngang hông hoặc hơi lùi về phía sau. Trong quần vợt hiện đại, Continental không còn phù hợp cho các cú đánh cuối sân (groundstrokes) vì không thể tạo đủ topspin để giữ bóng trong sân ở tốc độ cao, nhưng lại là kiểu cầm tối thượng bắt buộc phải dùng cho Serve, Volley và Overhead Smash.
+</p>
+
+<div class="key-takeaway">
+  <strong>Giải pháp khắc phục điểm yếu Forehand Grip:</strong> Nếu cú forehand của bạn thường xuyên bay ra ngoài vạch cuối sân (long) do mặt vợt bị mở ngửa, bạn đang tiếp xúc bóng quá muộn so với kiểu grip hiện tại. Hãy chủ động bước chân đón bóng sớm hơn ở phía trước hông, hoặc điều chỉnh grip xoay nhẹ nửa nấc về phía Eastern để mặt vợt tự động vuông góc khi chạm bóng.
+</div>
+
+<h2 class="section-title">Chương 2: Độ Vững Chắc Của Forehand (Forehand Firmness)</h2>
+
+<p>
+  Một trong những căn bệnh phổ biến nhất của người chơi phong trào là "cổ tay lỏng lẻo" (wrist wobble) tại thời điểm va chạm. Người chơi thường nhầm lẫn giữa việc "thả lỏng cánh tay khi lấy đà" với việc "lỏng cổ tay khi chạm bóng."
+</p>
+
+<figure class="diagram-figure">
+  <img src="tennis_weaknesses_assets/illus_forehand_firmness.png" alt="Độ Vững Chắc Của Khớp Cổ Tay và Điểm Tiếp Xúc Bóng" />
+  <figcaption>Hình 2: Trạng thái khóa cứng cổ tay (Firm Wrist) tại thời điểm tiếp xúc bóng. Khớp cổ tay phải được giữ ở góc ngửa tự nhiên (laid-back), tạo thành một cấu trúc chịu tải vững chãi với cẳng tay.</figcaption>
+</figure>
+
+<p>
+  Khi bóng chạm vào mặt lưới với vận tốc lớn, nếu khớp cổ tay không được giữ vững chắc, phản lực từ quả bóng sẽ làm vặn xoắn mặt vợt. Kết quả là đường bóng bay đi thiếu lực, không kiểm soát được phương hướng và người chơi nhanh chóng bị đau khớp cổ tay.
+</p>
+
+<h3>Phương Thuốc Khắc Phục (The Remedies):</h3>
+<ul>
+  <li><strong>Quy tắc "Cổ tay ngửa ra sau" (Laid-back wrist):</strong> Trong suốt quá trình hạ vợt lấy đà, cổ tay phải được giữ ở trạng thái ngửa ra phía sau một cách tự nhiên. Góc ngửa này phải được duy trì cố định xuyên suốt khoảnh khắc tiếp xúc bóng.</li>
+  <li><strong>Siết lực đúng thời điểm (Contact Pinch):</strong> Cầm vợt lỏng ở mức 3/10 khi chuẩn bị, nhưng siết chặt lên mức 7-8/10 ngay 5 mili-giây trước khi chạm bóng để chống lại xung lực va chạm.</li>
+  <li><strong>Đạp chân chuyển trọng tâm:</strong> Đừng bao giờ đánh bóng chỉ bằng cánh tay trong khi trọng tâm cơ thể ngả ra sau (falling back). Hãy đảm bảo trọng lượng cơ thể chuyển từ chân sau sang chân trước theo hướng bóng đi.</li>
+</ul>
+
+<h2 class="section-title">Chương 3: Hoàn Thiện Backhand (Backhand Adequacy)</h2>
+
+<p>
+  "Nỗi sợ cú trái tay" là hội chứng tâm lý phổ biến nhất trên sân quần vợt. Nhiều người chơi sẵn sàng chạy vòng quanh cả sân chỉ để né cú backhand và đánh một cú forehand gượng gạo. Hành động này mở toang toàn bộ khoảng sân trống cho đối thủ khai thác.
+</p>
+
+<figure class="diagram-figure">
+  <img src="tennis_weaknesses_assets/illus_backhand_grip.png" alt="Kỹ Thuật Cầm Vợt Backhand và Khóa Cổ Tay Trước Hông Dẫn" />
+  <figcaption>Hình 3: Cấu trúc cầm vợt Backhand tiêu chuẩn. Ngón tay cái áp chéo lên mặt phẳng sau của cán vợt tạo thành điểm tựa vững chắc, điểm tiếp xúc nằm vững vàng ở phía trước hông phải.</figcaption>
+</figure>
+
+<h3>Ba Sai Lầm Cốt Lõi Khiến Cú Backhand Yếu Ớt:</h3>
+<ol>
+  <li><strong>Không chịu đổi grip từ Forehand sang Backhand:</strong> Sử dụng luôn grip forehand để đánh trái tay khiến mặt vợt bị mở ngửa lên trời hoặc cổ tay bị bẻ gập ở tư thế cực kỳ yếu ớt. Bạn bắt buộc phải xoay cán vợt 1/4 vòng về phía bên trái (đối với người thuận tay phải) để đưa khớp ngón trỏ lên đỉnh vát.</li>
+  <li><strong>Điểm chạm bóng quá trễ ngang người:</strong> Trong khi cú forehand có thể tha thứ cho việc chạm bóng ngang hông, cú backhand đòi hỏi bạn phải đón bóng <em>ở phía trước hông dẫn từ 20 đến 35 cm</em>. Chạm bóng trễ ở cú backhand đồng nghĩa với việc bóng sẽ rúc lưới hoặc bay bạt ra ngoài hàng rào.</li>
+  <li><strong>Mở vai quá sớm:</strong> Nhiều tay vợt có thói quen xoay cả ngực về phía lưới trước khi chạm bóng. Đối với cú backhand (đặc biệt là cú trái một tay), vai phải giữ nghiêng vuông góc với lưới cho đến khi bóng rời khỏi mặt vợt hoàn toàn.</li>
+</ol>
+
+            </section>
+            
+            <section id="part2" class="book-part">
+                
+<h1>PHẦN 2: GIẢI MÃ GIAO BÓNG, LƯỚI & CẬN CHIẾN</h1>
+
+<div class="quote-box">
+  "Giao bóng là cú đánh duy nhất trong quần vợt mà bạn có toàn quyền kiểm soát tuyệt đối: không ai ép bạn phải đánh quả bóng đang bay tới ở tốc độ 100 km/h. Thế nhưng, đây lại là cú đánh khiến nhiều người run rẩy nhất. Lý do là phần lớn người chơi không nắm vững cơ học đường đạn và cố gắng đập quả bóng xuống đất bằng sức mạnh cơ bắp thay vì vươn cao đón điểm rơi tối ưu."
+  <br><strong>— Paul Metzler (Tennis Weaknesses & Remedies)</strong>
+</div>
+
+<h2 class="section-title">Chương 4: Triết Lý Giao Bóng (Service Concepts)</h2>
+
+<p>
+  Điểm yếu phổ biến nhất trong cú giao bóng của người chơi phong trào là tỷ lệ lỗi giao bóng một quá cao và cú giao bóng hai quá yếu ớt, dễ bị đối thủ tấn công đè bẹp ngay lập tức. Căn bệnh này bắt nguồn từ ba quan niệm sai lầm:
+</p>
+
+<ol>
+  <li><strong>Đặt quá nhiều kỳ vọng (thậm chí là sự tuyệt vọng) vào cú ăn điểm trực tiếp (Ace):</strong> Người chơi thường cố gắng giao bóng sấm sét ở quả thứ nhất với hy vọng ghi điểm ngay. Khi hỏng quả một, họ rơi vào trạng thái hoảng loạn và chỉ dám đẩy nhẹ quả bóng sang sân ở quả thứ hai.</li>
+  <li><strong>Không chấp nhận thực tế đường đạn (Ballistics fact):</strong> Để một quả bóng bay qua mép lưới cao 91.4 cm và cắm xuống ô giao bóng dài 6.4 m, điểm tiếp xúc bóng của bạn phải đủ cao. Nếu bạn để bóng rơi xuống thấp rồi mới đánh, góc bắn hình học sẽ khiến bóng hoặc rúc thẳng vào lưới, hoặc bay vọt ra ngoài ô giao bóng.</li>
+  <li><strong>Tung bóng thất thường (Inconsistent Toss):</strong> Quả bóng được tung ở các vị trí khác nhau trong mỗi lần giao, khiến cơ thể phải uốn éo điều chỉnh trong hoảng loạn.</li>
+</ol>
+
+<figure class="diagram-figure">
+  <img src="tennis_weaknesses_assets/illus_service_reach.png" alt="Độ Vươn Cao Cực Đại và Góc Bắn Hình Học Khi Giao Bóng" />
+  <figcaption>Hình 4: Tầm vươn cao tối đa của cánh tay và vợt khi tiếp xúc bóng giao bóng. Góc bắn hình học mở rộng tỷ lệ thuận với chiều cao của điểm tiếp xúc so với mép lưới.</figcaption>
+</figure>
+
+<h3>Phương Thuốc Khắc Phục Triệt Để (Service Remedies):</h3>
+<ul>
+  <li><strong>Thống nhất quỹ đạo tung bóng:</strong> Hãy luyện tập tung bóng mà không vung vợt. Đặt một chiếc nắp hộp hoặc một chiếc khăn nhỏ ở vị trí phía trước bàn chân trái khoảng 30 cm và hơi lệch sang phải. Quả bóng tung lên đỉnh phải rơi trúng vào mục tiêu đó khi bạn không đánh.</li>
+  <li><strong>Vươn người chạm bóng ở đỉnh cao nhất (Reach for the sky):</strong> Đừng bao giờ chờ quả bóng rơi xuống tầm mắt. Hãy vươn toàn bộ cơ thể, kiễng gót chân và đánh vào quả bóng ngay khi nó vừa dừng lại ở điểm cao nhất của quỹ đạo tung bóng.</li>
+  <li><strong>Áp dụng Spin vào cú giao bóng hai (Kick / Slice Serve):</strong> Loại bỏ hoàn toàn cú giao bóng đẩy bạt cầu may. Hãy dùng grip Continental, chém vợt từ dưới lên trên và từ trái sang phải để tạo xoáy topspin-slice, giúp bóng có độ cong an toàn qua lưới và cắm sâu vào ô giao bóng.</li>
+</ul>
+
+<h2 class="section-title">Chương 5: Cú Volley Trên Lưới (Volleying)</h2>
+
+<p>
+  Căn bệnh chí tử của hầu hết những người sợ lên lưới là: <strong>họ vung vợt lấy đà quá lớn như thể đang đứng ở vạch cuối sân</strong>. Ở cự ly cận chiến sát lưới, quả bóng từ đối thủ bay tới với tốc độ chớp nhoáng (chỉ khoảng 0.3 - 0.5 giây). Việc vung vợt ra sau lưng đồng nghĩa với việc bạn sẽ chạm bóng trễ phía sau người và hỏng bóng 100%.
+</p>
+
+<figure class="diagram-figure">
+  <img src="tennis_weaknesses_assets/illus_volley_punch.png" alt="Kỹ Thuật Đẩy Chặn (Punch) Trong Cú Volley Cận Chiến" />
+  <figcaption>Hình 5: Kỹ thuật đẩy chặn (Punch Volley). Mặt vợt luôn được giữ ở phía trước tầm mắt, hoàn toàn không có động tác lấy đà ra sau lưng, bước chân dẫn tiến lên để dồn trọng lượng cơ thể vào đường bóng.</figcaption>
+</figure>
+
+<h3>Nguyên Lý "Đẩy Chặn Thay Vì Vung Đập" (Punch, Do Not Swing):</h3>
+<ul>
+  <li><strong>Mặt vợt luôn nằm trong tầm mắt:</strong> Đầu vợt phải luôn nằm cao hơn cổ tay và ở phía trước cơ thể. Khi chuẩn bị đánh volley, bạn chỉ cần xoay vai nghiêng nhẹ, đưa mặt vợt ra đón đường bóng mà không được phép kéo vợt qua khỏi đường thẳng của vai.</li>
+  <li><strong>Bước chân tiếp lửa (Step into the ball):</strong> Sức mạnh của cú volley không đến từ cánh tay mà đến từ bước chân tiến tới. Đối với cú volley phải tay (forehand volley), hãy bước chân trái chéo lên phía trước đúng thời điểm tiếp xúc để mượn lực phản hồi từ đối thủ.</li>
+  <li><strong>Khóa cổ tay tuyệt đối (Solid wrist lock):</strong> Cổ tay lỏng lẻo ở trên lưới sẽ khiến mặt vợt bị bẻ gãy khi chạm bóng mạnh. Giữ grip Continental và siết chặt bàn tay cầm vợt tại khoảnh khắc va chạm.</li>
+</ul>
+
+<h2 class="section-title">Chương 6: Half-Volley, Lob, Smash & Đối Phó Thuận Tay Trái</h2>
+
+<p>
+  Đây là nhóm kỹ năng chuyên biệt nhưng thường xuyên xuất hiện trong các tình huống then chốt định đoạt ván đấu:
+</p>
+
+<h3>1. Kỹ Thuật Half-Volley (Bắt Bóng Nửa Nảy)</h3>
+<p>
+  Khi bạn đang trên đường tiến lên lưới và đối thủ đánh một đường bóng cắm thẳng vào chân bạn, bạn rơi vào "khu vực tử thần" (No Man's Land). Sai lầm phổ biến là cố gắng vung vợt ngửa lên trời. Giải pháp đúng đắn là hạ thấp hai đầu gối thật sâu, giữ đầu vợt thấp sát mặt đất và thực hiện động tác gạt bóng ngắn gọn ngay khi bóng vừa chạm đất nảy lên trong vòng 5-10 cm.
+</p>
+
+<h3>2. Cú Lob Tấn Công & Phòng Thủ (The Lob)</h3>
+<p>
+  Người chơi thường chỉ nhớ đến cú lob khi đã bị dồn vào góc cùng quẫn. Hãy biến cú lob thành vũ khí tấn công chủ động: khi đối thủ áp sát lưới quá gần, một cú lob topspin xoáy cuộn bay vượt qua tầm với của họ sẽ rơi cắm vào sân sau và biến thành điểm winner không thể cứu vãn.
+</p>
+
+<h3>3. Cú Đập Bóng Trên Cao (Overhead Smash)</h3>
+<p>
+  Điểm yếu của cú smash là phán đoán sai điểm rơi và để bóng bay ra sau lưng. Hãy nhớ quy tắc vàng: ngay khi nhận diện cú lob của đối thủ, lập tức xoay nghiêng người sang một bên, chỉ tay trái lên quả bóng trên trời để định vị không gian và lùi bước chân đuổi bóng (side-shuffle). Đừng bao giờ lùi thẳng lưng vì bạn sẽ rất dễ bị mất thăng bằng ngã ngửa.
+</p>
+
+<h3>4. Đối Phó Với Tay Vợt Thuận Tay Trái (Left-Handed Weaknesses)</h3>
+<p>
+  Tay vợt thuận tay trái (Southpaw) luôn mang lại sự ức chế tâm lý vì quỹ đạo bóng bị đảo ngược hoàn toàn. Cú giao bóng slice của họ sẽ xoáy xé bạn ra ngoài góc backhand bên ô lợi điểm (Ad court). Bí quyết để hóa giải họ là: luôn chủ động đứng lệch nửa bước sang bên trái khi trả giao bóng, và tập trung tấn công dồn dập vào cánh tay phải của họ (cú trái tay yếu hơn) thay vì đánh bóng theo quán tính vào góc phải thông thường.
+</p>
+
+            </section>
+            
+            <section id="part3" class="book-part">
+                
+<h1>PHẦN 3: KHOA HỌC XOÁY BÓNG & NGHỆ THUẬT ĐỌC ĐỐI THỦ</h1>
+
+<div class="quote-box">
+  "Quả bóng quần vợt không bay trong chân không; nó bay trong bầu khí quyển chịu sự chi phối chặt chẽ của các định luật khí động học. Người chơi không hiểu về xoáy bóng sẽ mãi mãi bị giam hãm trong sự bất an: họ đánh bóng mạnh thì sợ ra ngoài sân, đánh bóng nhẹ thì bị đối thủ đè bẹp. Khi bạn làm chủ được Spin, quả bóng sẽ tự động vâng lời bạn cắm xuống sân ở bất kỳ tốc độ nào."
+  <br><strong>— Paul Metzler (Tennis Weaknesses & Remedies)</strong>
+</div>
+
+<h2 class="section-title">Chương 7: Làm Chủ Khoa Học Xoáy Bóng (Spin Mastery)</h2>
+
+<p>
+  Xoáy bóng (Spin) không phải là một thủ thuật làm màu hay biểu diễn; nó là yếu tố cốt lõi quyết định biên độ an toàn (Margin of Safety) của mọi cú đánh đỉnh cao. Có ba loại xoáy căn bản mà người chơi bắt buộc phải thấu hiểu cơ chế khí động học:
+</p>
+
+<figure class="diagram-figure">
+  <img src="tennis_weaknesses_assets/illus_spin_aerodynamics.png" alt="Khí Động Học Của Xoáy Topspin và Underspin Trong Quần Vợt" />
+  <figcaption>Hình 6: Cơ chế khí động học hiệu ứng Magnus (Magnus Effect). Xoáy cuộn Topspin tạo ra chênh lệch áp suất ép bóng cắm nhanh xuống sân, trong khi Xoáy cắt Underspin tạo lực nâng khí động học giúp bóng lướt là là mặt đất.</figcaption>
+</figure>
+
+<h3>1. Xoáy Cuộn Trên (Topspin) — Vũ Khí Tấn Công Tối Thượng</h3>
+<p>
+  Khi mặt vợt quét từ dưới lên trên qua mặt sau của quả bóng, quả bóng sẽ quay tròn về phía trước theo chiều bay. Dưới tác động của hiệu ứng Magnus, luồng không khí ở phía trên đỉnh quả bóng di chuyển ngược chiều với chiều quay nên bị hãm lại, tạo ra vùng áp suất cao. Ngược lại, luồng không khí ở đáy quả bóng di chuyển cùng chiều nên vận tốc tăng lên, tạo ra vùng áp suất thấp.
+</p>
+<p>
+  Sự chênh lệch áp suất này sinh ra một lực hút kéo quả bóng cắm thẳng xuống đất nhanh hơn nhiều so với tác động của trọng lực đơn thuần. Nhờ đó, bạn có thể vung vợt với tốc độ tối đa qua mép lưới cao từ 1 đến 1.5 mét mà bóng vẫn rơi gọn gàng bên trong vạch cuối sân đối thủ. Sau khi chạm đất, bóng sẽ nảy vọt về phía trước với góc nảy cao, ép đối thủ phải lùi xa ra sau sân.
+</p>
+
+<h3>2. Xoáy Cắt Dưới (Underspin / Backspin / Slice) — Công Cụ Kiểm Soát Nhịp Độ</h3>
+<p>
+  Ngược lại với Topspin, cú Slice được thực hiện bằng cách chém vợt từ trên cao xuống thấp và hơi đẩy về phía trước. Chiều quay ngược của quả bóng tạo ra lực nâng khí động học, giúp đường bóng bay bổng lướt là là mặt lưới và duy trì quỹ đạo ngang ổn định.
+</p>
+<p>
+  Sau khi tiếp xúc mặt sân, quả bóng mang xoáy underspin sẽ "trượt" đi (skid) và nảy rất thấp, buộc đối thủ phải chùng chân cúi gập người xuống sát mặt đất để đánh bóng lên. Đây là vũ khí hoàn hảo để phá vỡ nhịp điệu của những tay vợt quen đánh bóng ngang ngực và dùng để phòng thủ kéo dài thời gian phục hồi vị trí.
+</p>
+
+<h3>3. Xoáy Ngang (Sidespin) — Quỹ Đạo Đổi Hướng Ma Quái</h3>
+<p>
+  Được tạo ra khi quét mặt vợt chéo quanh trục đứng của quả bóng. Sidespin thường được kết hợp trong cú giao bóng Slice Serve hoặc cú cắt bóng ngắn chéo sân (drop shot angle), khiến quả bóng sau khi chạm đất sẽ quẹo hẳn sang một bên, lôi kéo đối thủ văng ra khỏi đường biên hành lang sân đấu.
+</p>
+
+<h2 class="section-title">Chương 8: Vận Hành Lối Chơi & Nghệ Thuật Phán Đoán (Playing Your Game & Anticipation)</h2>
+
+<p>
+  Một điểm yếu tâm lý phổ biến của người chơi trung cấp là: <strong>họ luôn bị đối thủ điều khiển lối chơi</strong>. Khi đối phương đánh nhanh, họ cố đánh nhanh theo; khi đối phương đánh bóng đều, họ trở nên nôn nóng tự đánh hỏng. Họ hoàn toàn không có một bản sắc chiến thuật rõ ràng để làm chỗ dựa trong những thời khắc sinh tử.
+</p>
+
+<h3>Nghệ Thuật Đọc Vị Đối Thủ (The Art of Anticipation):</h3>
+<p>
+  Những tay vợt hàng đầu thế giới dường như "biết trước" quả bóng sẽ đi về đâu không phải vì họ có giác quan thứ sáu, mà vì họ có khả năng giải mã các tín hiệu chuyển động cơ học (Biomechanical Visual Cues) từ đối thủ trước khi quả bóng rời mặt vợt:
+</p>
+
+<ul>
+  <li><strong>Quan sát vị trí bàn chân và hông đối thủ:</strong> Nếu đối thủ bước chân mở rộng (Open stance) và ngả người ra sau khi đánh bóng tầm thấp, 90% khả năng họ chỉ có thể đánh quả bóng chéo sân (crosscourt) an toàn. Họ hoàn toàn không có cơ sở cơ học để kéo bóng dọc dây (down-the-line) mà không đánh hỏng.</li>
+  <li><strong>Quan sát độ cao của đầu vợt khi chuẩn bị:</strong> Nếu đầu vợt của đối thủ hạ xuống thấp hơn đầu gối rất sâu, họ chuẩn bị thực hiện cú giật topspin hoặc cú lob cứu bóng. Nếu đầu vợt nâng cao ngang tai, một cú chém slice hoặc cú drop shot chuẩn bị xuất hiện.</li>
+  <li><strong>Quan sát vị trí tung bóng khi giao bóng:</strong> Nếu bóng được tung lệch nhiều sang bên phải (đối với người thuận tay phải), đó là cú Slice serve xé góc. Nếu bóng được tung thẳng trên đỉnh đầu hoặc hơi lệch sang trái, đó là cú Kick serve cày sâu vào góc chữ T hoặc vào người.</li>
+</ul>
+
+<div class="key-takeaway">
+  <strong>Quy tắc vàng về nhịp độ:</strong> "Đừng bao giờ chơi trận đấu theo ý muốn của đối thủ. Nếu họ thích đánh bóng nhanh mạnh ở cuối sân, hãy kéo họ lên lưới bằng những đường bóng slice thấp hoặc drop shot ngắn. Nếu họ thích phòng thủ lỳ lợm, hãy bước chân vào sân nén thời gian và khai thác các góc sân ngắn."
+</div>
+
+            </section>
+            
+            <section id="part4" class="book-part">
+                
+<h1>PHẦN 4: CHIẾN THUẬT ĐƠN - ĐÔI & VƯỢT QUA CẠM BẪY TÂM LÝ THI ĐẤU</h1>
+
+<div class="quote-box">
+  "Trong một trận đấu quần vợt cân tài cân sức, người chiến thắng không phải là người đánh ra nhiều cú bóng ngoạn mục nhất, mà là người mắc ít sai lầm ngớ ngẩn nhất. Chiến thuật thông minh là nghệ thuật buộc đối thủ phải chơi ở những vị trí và tình huống mà họ ghét nhất, trong khi giữ cho bản thân luôn vận hành trong vùng an toàn kiểm soát."
+  <br><strong>— Paul Metzler (Tennis Weaknesses & Remedies)</strong>
+</div>
+
+<h2 class="section-title">Chương 9: Chiến Thuật Thực Chiến (Tactical Placement)</h2>
+
+<p>
+  Điểm yếu chiến thuật lớn nhất của người chơi phong trào là thói quen "đánh bóng về phía không người" (aiming for the empty court) một cách mù quáng ngay cả khi đang đứng ở vị trí bất lợi. Họ thường cố tung ra một cú đánh dọc dây hiểm hóc khi đang bị kéo dãn hết biên độ ở góc sân, và kết quả là 8/10 lần bóng bay rúc vào phần lưới cao ở cột hoặc trượt ra ngoài hành lang.
+</p>
+
+<figure class="diagram-figure">
+  <img src="tennis_weaknesses_assets/illus_tactical_placement.png" alt="Sơ Đồ Phân Bổ Chiến Thuật Đặt Bóng và Góc Mở Sân Đấu" />
+  <figcaption>Hình 7: Sơ đồ phân bổ góc đánh và mục tiêu chiến thuật. Đường chéo sân (Crosscourt) luôn mang lại chiều dài sân lớn nhất và mép lưới thấp nhất, là con đường an toàn tuyệt đối để xây dựng điểm số trước khi tung đòn dứt điểm.</figcaption>
+</figure>
+
+<h3>Ba Định Luật Chiến Thuật Bất Biến:</h3>
+<ol>
+  <li><strong>Định luật Chiều Sâu (The Law of Depth):</strong> Một quả bóng rơi sâu cách vạch cuối sân đối thủ trong vòng 1 mét luôn có giá trị chiến thuật cao hơn một cú đánh bóng cực mạnh nhưng rơi ở giữa sân. Bóng sâu ép đối thủ phải lùi xa, triệt tiêu mọi góc tấn công nguy hiểm của họ và cho phép bạn làm chủ thế trận.</li>
+  <li><strong>Định luật Đường Chéo Sân (Crosscourt Supremacy):</strong> Khoảng cách từ góc sân này sang góc sân kia theo đường chéo dài hơn đường thẳng gần 2 mét (25.1 m so với 23.77 m), và phần giữa lưới thấp hơn hai bên mép cột tới 15 cm. Đánh chéo sân mang lại biên độ an toàn cơ học cao nhất. Chỉ đánh dọc dây khi bạn đã bước chân vào trong sân và nhận được một quả bóng ngắn, nảy ngang tầm thắt lưng.</li>
+  <li><strong>Tấn công vào sự chuyển dịch trọng tâm:</strong> Đừng chỉ đánh bóng sang góc trống đối diện; hãy đánh bóng ngược lại hướng mà đối thủ vừa xuất phát chạy phục hồi (Behind the opponent). Khi đối thủ đang dồn toàn bộ đà chạy về giữa sân, việc phải phanh gấp và đổi hướng ngược lại sẽ khiến họ bị trượt chân hoặc đánh bóng với tư thế mất thăng bằng hoàn toàn.</li>
+</ol>
+
+<h2 class="section-title">Chương 10: Những Ngộ Nhận Trong Thi Đấu Giải (Match Play Fallacies)</h2>
+
+<p>
+  Tâm lý thi đấu là chiến trường vô hình nơi hầu hết các trận đấu bị đánh mất trước khi quả bóng cuối cùng chạm đất. Paul Metzler đã tổng kết bốn cạm bẫy tâm lý phổ biến nhất:
+</p>
+
+<ul>
+  <li><strong>Ngộ nhận "Phải đánh winner để thắng điểm":</strong> Thống kê ở mọi cấp độ từ nghiệp dư đến chuyên nghiệp đều chỉ ra rằng: trên 70% các điểm số kết thúc bằng lỗi đánh hỏng (Unforced Errors), không phải bằng cú đánh ghi điểm trực tiếp (Winner). Người chiến thắng là người có khả năng đưa thêm một quả bóng nữa qua lưới sang vị trí hiểm hóc.</li>
+  <li><strong>Hội chứng hoảng loạn khi dẫn điểm (Choking when ahead):</strong> Khi dẫn trước 5-2 hoặc 40-15, người chơi thường chuyển sang trạng thái sợ thua, rụt tay lại và chỉ dám đẩy bóng cầm chừng. Lối chơi rụt rè này lập tức trao quyền chủ động cho đối thủ vùng lên lội ngược dòng.</li>
+  <li><strong>Để một điểm số hỏng phá hỏng cả ván đấu:</strong> Quá dằn vặt về một cú smash hỏng hay một quyết định gây tranh cãi của trọng tài khiến bạn đánh mất sự tập trung ở 3-4 điểm tiếp theo. Hãy học cách "reset" bộ não ngay sau khi tiếng bóng kết thúc.</li>
+  <li><strong>Thay đổi lối chơi chiến thắng giữa chừng:</strong> Khi một chiến thuật đang hoạt động hiệu quả (ví dụ: liên tục ép bóng sâu vào cú trái tay của đối thủ), người chơi lại tự nhiên muốn thử nghiệm những cú đánh mạo hiểm mới lạ và tự phá vỡ đà thăng hoa của chính mình.</li>
+</ul>
+
+<h2 class="section-title">Chương 11: Điểm Yếu & Giải Pháp Khắc Phục Trong Đánh Đôi (Doubles Weaknesses & Remedies)</h2>
+
+<p>
+  Quần vợt đánh đôi không phải là trò chơi của hai người đánh đơn đứng cùng một bên sân; nó là một môn thể thao hoàn toàn khác biệt về hình học, cự ly và sự phối hợp đồng đội:
+</p>
+
+<h3>1. Căn Bệnh "Người Xem Lưới Thụ Động" (Statue at the Net)</h3>
+<p>
+  Nhiều người đứng lưới trong đánh đôi chỉ đứng yên như một bức tượng, quay đầu nhìn bóng bay qua lại và chỉ đánh khi bóng bay thẳng vào người mình. Giải pháp là: người đứng lưới phải liên tục di chuyển nhấp nhổm theo quả bóng, thực hiện động tác giả (fake move) và chủ động băng cắt bắt bóng (Poaching) ở khu vực giữa sân ngay khi đối thủ có dấu hiệu đánh bóng lỏng tay.
+</p>
+
+<h3>2. Bảo Vệ Hành Lang (Defending the Alley)</h3>
+<p>
+  Người đứng lưới thường quá sợ bị đối thủ đánh dọc dây (down the alley) nên đứng nép sát vào vạch biên ngoài cùng. Điều này mở ra một khoảng trống mênh mông ở trung lộ cho đối thủ thoải mái ghi điểm. Hãy nhớ rằng: khoảng cách dọc dây hẹp hơn và có rào cản lưới cao nhất ở cột. Hãy đứng cách vạch biên đôi khoảng 1 mét, sẵn sàng đón lõng trung lộ và chỉ bảo vệ hành lang khi đối thủ bị kéo ra ngoài sân có góc đánh thẳng.
+</p>
+
+<h3>3. Nguyên Lý "Đồng Bộ Di Chuyển Cặp Đôi" (The String Principle)</h3>
+<p>
+  Hãy tưởng tượng giữa bạn và người đồng đội có một sợi dây thừng căng dài 3 mét nối hai người lại với nhau. Khi người này di chuyển sang phải, người kia phải trượt sang phải theo để duy trì cự ly che chắn; khi người này tiến lên lưới, người kia cũng phải tiến lên theo để thu hẹp khoảng trống. Tuyệt đối tránh tình trạng một người đứng tít dưới đáy sân và một người đứng sát lưới tạo ra khoảng trống mênh mông ở giữa sân cho đối thủ khai thác.
+</p>
+
+<div class="key-takeaway">
+  <strong>Lời kết:</strong> "Sửa đổi điểm yếu đòi hỏi sự kiên nhẫn và kỷ luật thép. Nhưng phần thưởng nhận lại là vô giá: đó là cảm giác tự tin tuyệt đối khi bước ra sân, biết rằng không có bất kỳ cú đánh hay góc sân nào có thể khiến bạn khiếp sợ."
+</div>
+
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+        
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        root.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+
+        function updateThemeIcon(theme) {
+            const icon = themeToggle.querySelector('i');
+            if (theme === 'dark') {
+                icon.className = 'fa-solid fa-sun';
+            } else {
+                icon.className = 'fa-solid fa-moon';
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('reading-progress').style.width = scrolled + '%';
+        });
+    </script>
+</body>
+</html>
