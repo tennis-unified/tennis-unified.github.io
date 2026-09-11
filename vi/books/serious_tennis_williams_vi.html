@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serious Tennis: Cẩm Nang Quần Vợt Đỉnh Cao — Scott C. Williams | Tennis Unified</title>
+    <meta name="description" content="Bản dịch tiếng Việt chuyên sâu cuốn sách Serious Tennis của Scott C. Williams & Randy Petersen (Human Kinetics). Hệ thống Tennis SMARTS, tối ưu hóa cú đánh chạm đất, bộ ba vũ khí giao bóng, chiếm lĩnh khu vực lưới, và bí quyết biến áp lực thành lợi thế từ Tiến sĩ James Loehr.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #991b1b;
+            --primary-dark: #7f1d1d;
+            --primary-light: #ef4444;
+            --accent: #d97706;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --sidebar-width: 290px;
+        }
+
+        [data-theme="dark"] {
+            --primary: #f87171;
+            --primary-dark: #ef4444;
+            --primary-light: #fca5a5;
+            --accent: #fbbf24;
+            --bg-page: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --border: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.7;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #reading-progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #991b1b, #ef4444);
+            width: 0%;
+            z-index: 9999;
+            transition: width 0.1s ease;
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            background-color: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-logo {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .header-nav a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .header-nav a:hover {
+            color: var(--primary);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .btn-lang {
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .btn-lang:hover {
+            background-color: var(--primary);
+            color: #ffffff;
+        }
+
+        .btn-icon {
+            background: none;
+            border: none;
+            color: var(--text-main);
+            font-size: 1.1rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 6px;
+            transition: color 0.2s;
+        }
+
+        .btn-icon:hover {
+            color: var(--primary);
+        }
+
+        .reader-layout {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            position: relative;
+        }
+
+        .sidebar {
+            width: var(--sidebar-width);
+            height: calc(100vh - 60px);
+            position: sticky;
+            top: 60px;
+            border-right: 1px solid var(--border);
+            padding: 1.5rem;
+            overflow-y: auto;
+            flex-shrink: 0;
+            background-color: var(--bg-card);
+        }
+
+        .sidebar-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .toc-menu {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .toc-item a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            display: block;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            transition: all 0.2s;
+            line-height: 1.4;
+        }
+
+        .toc-item a:hover,
+        .toc-item.active a {
+            color: var(--primary);
+            background-color: rgba(153, 27, 27, 0.08);
+            font-weight: 600;
+        }
+
+        .sidebar-download {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .btn-download-pdf {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background-color: var(--primary);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            box-shadow: 0 2px 4px rgba(153, 27, 27, 0.2);
+            transition: all 0.2s;
+        }
+
+        .btn-download-pdf:hover {
+            background-color: var(--primary-dark);
+            box-shadow: 0 4px 8px rgba(153, 27, 27, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .main-article {
+            flex: 1;
+            max-width: 900px;
+            padding: 2.5rem 3rem;
+            background-color: var(--bg-card);
+            min-height: calc(100vh - 60px);
+            border-right: 1px solid var(--border);
+        }
+
+        .hero-banner {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(153, 27, 27, 0.1);
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+        }
+
+        .hero-title {
+            font-size: 2.3rem;
+            font-weight: 800;
+            line-height: 1.25;
+            color: var(--text-main);
+            margin-bottom: 1rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .hero-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .book-part {
+            margin-bottom: 4rem;
+            padding-top: 1rem;
+        }
+
+        .part-header {
+            margin-bottom: 2rem;
+        }
+
+        .part-tag {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .part-header h2 {
+            font-size: 1.85rem;
+            font-weight: 800;
+            line-height: 1.3;
+            color: var(--text-main);
+            margin-bottom: 0.75rem;
+        }
+
+        .part-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .part-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .figure-box {
+            margin: 2rem 0;
+            background-color: var(--bg-page);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .figure-box img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .figure-caption {
+            display: block;
+            padding: 0.8rem 1.2rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-style: italic;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            background-color: var(--bg-card);
+        }
+
+        .content-body h3 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .content-body p {
+            font-size: 1.02rem;
+            margin-bottom: 1.25rem;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        .content-body ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .content-body li {
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-main);
+        }
+
+        .pro-tip {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            border-left: 4px solid var(--primary);
+            background: rgba(153, 27, 27, 0.05);
+            border-radius: 0 10px 10px 0;
+        }
+
+        .pro-tip-title {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.05rem;
+        }
+
+        .pro-tip p {
+            margin-bottom: 0;
+            font-size: 0.98rem;
+        }
+
+        @media (max-width: 1024px) {
+            .sidebar {
+                display: none;
+            }
+            .main-article {
+                padding: 2rem 1.5rem;
+                max-width: 100%;
+                border-right: none;
+            }
+            .hero-title {
+                font-size: 1.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="reading-progress-bar"></div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="/vi/books/" class="header-logo"><i class="fa-solid fa-book-open"></i> Tennis Unified Books</a>
+            <nav class="header-nav">
+                <a href="/vi/books/">Tủ Sách</a>
+                <a href="/vi/fundamentals/">Nền Tảng</a>
+                <a href="/vi/stroke-analysis/">Phân Tích Cú Đánh</a>
+                <a href="/vi/drills/">Bài Tập</a>
+            </nav>
+            <div class="header-actions">
+                <a href="/books/" data-lang-toggle="en" class="btn-lang"><i class="fa-solid fa-globe"></i> English</a>
+                <button id="theme-toggle" class="btn-icon" aria-label="Đổi giao diện sáng/tối"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="reader-layout">
+        <aside class="sidebar">
+            <div class="sidebar-title">Mục Lục Cuốn Sách</div>
+            <ul class="toc-menu">
+                <li class="toc-item active"><a href="#part1"><i class="fa-solid fa-network-wired"></i> Phần 1: Tennis SMARTS & Cú Chạm Đất</a></li>
+                <li class="toc-item"><a href="#part2"><i class="fa-solid fa-bolt-lightning"></i> Phần 2: Giao Bóng & Trả Giao Bóng</a></li>
+                <li class="toc-item"><a href="#part3"><i class="fa-solid fa-hand-fist"></i> Phần 3: Thống Trị Khu Vực Lưới</a></li>
+                <li class="toc-item"><a href="#part4"><i class="fa-solid fa-brain"></i> Phần 4: Áp Lực & Kế Hoạch Trận Đấu</a></li>
+            </ul>
+
+            <div class="sidebar-download">
+                <a href="Serious_Tennis_Williams_Vietnamese_Final.pdf" target="_blank" class="btn-download-pdf">
+                    <i class="fa-solid fa-file-pdf"></i> Tải PDF Tiếng Việt
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-article">
+            <div class="hero-banner">
+                <span class="hero-badge">Cẩm Nang Quần Vợt Đỉnh Cao Chuyên Sâu</span>
+                <h1 class="hero-title">Serious Tennis: Cẩm Nang Quần Vợt Đỉnh Cao</h1>
+                <p class="hero-subtitle">Bản dịch tiếng Việt chuyên sâu cuốn sách Serious Tennis của chuyên gia Scott C. Williams &amp; Randy Petersen (Human Kinetics). Hệ thống vận động Tennis SMARTS, bộ ba vũ khí giao bóng, chiếm lĩnh khu vực lưới và phương pháp biến áp lực thành lợi thế từ Tiến sĩ James Loehr.</p>
+                <div class="hero-meta">
+                    <span><i class="fa-solid fa-user"></i> Tác giả: Scott C. Williams &amp; Randy Petersen</span>
+                    <span><i class="fa-solid fa-medal"></i> Khách mời: Dr. James Loehr (Chuyên gia tâm lý thể thao)</span>
+                    <span><i class="fa-solid fa-language"></i> Bản dịch: Tennis Unified</span>
+                </div>
+            </div>
+
+            
+<section id="part1" class="book-part">
+  <div class="part-header">
+    <span class="part-tag">Phần 1: Hệ Thống SMARTS &amp; Cú Chạm Đất</span>
+    <h2>Hệ Thống Tennis SMARTS &amp; Cú Đánh Chạm Đất Hiện Đại</h2>
+    <div class="part-meta">
+      <span><i class="fa-solid fa-graduation-cap"></i> Tác giả: Scott C. Williams (Human Kinetics)</span>
+      <span><i class="fa-solid fa-network-wired"></i> Mô hình: Tennis SMARTS Framework</span>
+      <span><i class="fa-solid fa-clock"></i> Thời gian đọc: 22 phút</span>
+    </div>
+  </div>
+
+  <div class="figure-box">
+    <img src="serious_tennis_assets/fig1_tennis_smarts.jpg" alt="Mô hình Tennis SMARTS trong Serious Tennis">
+    <span class="figure-caption">Hình 1.1: Mô hình Tennis SMARTS: Sáu mắt xích vận động cơ sinh học liên hoàn định hình mọi cú đánh đỉnh cao.</span>
+  </div>
+
+  <div class="content-body">
+    <h3>1. Hệ Thống Tennis SMARTS: Bộ Khung Chuẩn Mực Của Chuyên Gia</h3>
+    <p>
+      Trong cuốn sách kinh điển "Serious Tennis" do Human Kinetics xuất bản, chuyên gia Scott C. Williams đã đúc kết toàn bộ cơ chế thi đấu hiện đại thành một mô hình chuẩn mực mang tên "Tennis SMARTS". Sáu chữ cái đại diện cho sáu giai đoạn vận động không thể tách rời:
+    </p>
+    <ul>
+      <li><strong>S – Seeing (Quan sát nhạy bén):</strong> Nhận diện quỹ đạo bay, độ xoáy và điểm rơi của bóng ngay từ khi bóng rời mặt vợt đối phương. Khả năng đọc bóng sớm là điều kiện tiên quyết giúp cơ thể có thêm 0.3 giây vàng ngọc để chuẩn bị.</li>
+      <li><strong>M – Movement (Di chuyển linh hoạt):</strong> Thực hiện bước nhún tách chân (split step) bùng nổ, sau đó dùng các sải chân dài để rút ngắn cự ly tiếp cận khu vực bóng rơi.</li>
+      <li><strong>A – Adjusting (Căn chỉnh bước chân):</strong> Chuyển đổi từ sải chân dài sang các bước dặm nhỏ nhanh để tinh chỉnh khoảng cách tối ưu giữa thân người và tâm bóng.</li>
+      <li><strong>R – Rotation (Xoay thân tích lực):</strong> Xoay hông và khung vai để nén các nhóm cơ lõi (core) như một chiếc lò xo xoắn khổng lồ tích lũy thế năng đàn hồi.</li>
+      <li><strong>T – Transfer (Chuyển dịch trọng lượng):</strong> Đẩy mạnh từ chân sau, truyền động lực qua khớp gối và hông để dồn toàn bộ sức nặng cơ thể xuyên qua điểm tiếp xúc bóng.</li>
+      <li><strong>S – Swing (Vung vợt giải phóng):</strong> Thả lỏng cánh tay và cổ tay để đầu vợt xé gió vung theo quỹ đạo hình học chuẩn xác, kết thúc trọn vẹn qua vai đối diện.</li>
+    </ul>
+
+    <div class="figure-box">
+      <img src="serious_tennis_assets/fig2_groundstroke_power.jpg" alt="Cơ học cú thuận tay và trái tay gia tăng sức mạnh và độ xoáy">
+      <span class="figure-caption">Hình 1.2: Cơ học cú chạm đất: Tối ưu hóa độ mở của hông và gia tốc đầu vợt tạo lực xoáy cuộn topspin nặng cắm sâu vào sân.</span>
+    </div>
+
+    <h3>2. Tối Ưu Hóa Sức Mạnh &amp; Độ Xoáy Cú Chạm Đất</h3>
+    <p>
+      Để tạo ra những cú đánh chạm đất uy lực từ vạch cuối sân mà không tốn sức, người chơi cần nắm vững nguyên lý chuỗi động học (kinetic chain):
+    </p>
+    <ul>
+      <li><strong>Cú thuận tay thế mở hiện đại (Modern Open-Stance Forehand):</strong> Hai bàn chân mở rộng song song với vạch cuối sân, đầu gối phải khuỵu sâu nén lực. Động lực được giải phóng bằng việc bật xoay hông bùng nổ, kéo theo cánh tay quất mạnh đầu vợt từ dưới lên trên.</li>
+      <li><strong>Cú trái tay đầm chắc:</strong> Dù đánh một tay hay hai tay, vai trước phải dẫn đường và đóng vai trò như một điểm tựa đòn bẩy vững chắc. Điểm tiếp xúc bóng phải được duy trì kiên định ở phía trước thân người.</li>
+    </ul>
+
+    <div class="pro-tip">
+      <div class="pro-tip-title"><i class="fa-solid fa-lightbulb"></i> Lời Khuyên Của Scott Williams</div>
+      <p>
+        Nếu bạn thấy cú đánh của mình thiếu lực, đừng cố gồng cánh tay mạnh hơn. Hãy kiểm tra lại bước Chuyển dịch trọng tâm (Transfer) và Xoay thân (Rotation) trong mô hình SMARTS. Lực đánh đỉnh cao luôn bắt nguồn từ mặt đất và cơ lõi.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section id="part2" class="book-part">
+  <div class="part-header">
+    <span class="part-tag">Phần 2: Giao Bóng &amp; Trả Giao Bóng</span>
+    <h2>Vũ Khí Giao Bóng Uy Lực &amp; Chiến Thuật Trả Giao Bóng</h2>
+    <div class="part-meta">
+      <span><i class="fa-solid fa-bolt-lightning"></i> Giao bóng: Bộ ba vũ khí Flat, Slice &amp; Kick Serve</span>
+      <span><i class="fa-solid fa-shield-halved"></i> Trả bóng: Cắt góc nảy &amp; Tấn công quả hai</span>
+      <span><i class="fa-solid fa-clock"></i> Thời gian đọc: 22 phút</span>
+    </div>
+  </div>
+
+  <div class="figure-box">
+    <img src="serious_tennis_assets/fig3_serve_weapon.jpg" alt="Phân tích kỹ thuật phát lực bùng nổ của quả giao bóng">
+    <span class="figure-caption">Hình 2.1: Vũ khí giao bóng bùng nổ: Tích tụ động năng qua tư thế cúp đền (Trophy pose) và phát âm cổ tay cẳng tay cực mạnh.</span>
+  </div>
+
+  <div class="content-body">
+    <h3>1. Bộ Ba Vũ Khí Giao Bóng Của Tay Vợt Chuyên Nghiệp</h3>
+    <p>
+      Một tay vợt nghiêm túc (Serious Tennis Player) không bao giờ dựa dẫm vào duy nhất một kiểu giao bóng. Bạn phải làm chủ ba biến thể với cùng một động tác chuẩn bị nhằm đánh lừa đối thủ:
+    </p>
+    <ul>
+      <li><strong>Giao bóng phẳng sấm sét (Flat Serve):</strong> Đánh bóng trực diện từ đỉnh cao nhất với mặt vợt phẳng, dồn toàn bộ động năng vào tâm bóng để tạo tốc độ cực đại trên 180 km/h nhắm thẳng góc chữ T.</li>
+      <li><strong>Giao bóng xoáy dạt biên (Slice Serve):</strong> Tung bóng hơi lệch sang bên phải chừng 15 cm, chém mặt vợt quanh mép phải của quả bóng để tạo quỹ đạo uốn cong sang hai biên, kéo đối thủ chạy văng ra ngoài sân đấu.</li>
+      <li><strong>Giao bóng xoáy nảy bổng (Kick / Topspin Serve):</strong> Tung bóng hơi ra phía sau đầu, quất vợt từ vị trí 7 giờ lên vị trí 1 giờ xuyên qua lưng quả bóng. Khi tiếp đất, bóng nảy dựng đứng lên ngang vai hoặc đầu đối thủ, tước đoạt hoàn toàn khả năng tấn công của họ.</li>
+    </ul>
+
+    <div class="figure-box">
+      <img src="serious_tennis_assets/fig4_return_tactics.jpg" alt="Vị trí đứng đón bóng và chiến thuật trả giao bóng">
+      <span class="figure-caption">Hình 2.2: Trả giao bóng tấn công: Cắt góc nảy của bóng bằng cách bước tiến vào trong sân, rút ngắn biên độ vung vợt.</span>
+    </div>
+
+    <h3>2. Chiến Thuật Trả Giao Bóng Tấn Công</h3>
+    <p>
+      Trong quần vợt hiện đại, trả giao bóng là cú đánh quan trọng thứ hai chỉ sau quả phát bóng:
+    </p>
+    <ul>
+      <li><strong>Định vị vị trí theo thói quen của đối thủ:</strong> Quan sát xem đối thủ hay giao bóng vào góc nào ở những điểm nghẽn để di chuyển đón đầu trước một bước.</li>
+      <li><strong>Cắt góc nảy quả giao bóng hai:</strong> Khi đối thủ thực hiện quả giao bóng hai chậm hơn, hãy lập tức bước tiến vào trong sân từ 1 đến 1.5 mét, chặn bóng ở điểm cao nhất và tấn công bóng sâu về phía chân đối thủ.</li>
+    </ul>
+
+    <div class="pro-tip">
+      <div class="pro-tip-title"><i class="fa-solid fa-bullseye"></i> Nguyên Tắc Giao Bóng Của Scott Williams</div>
+      <p>
+        Tốc độ không thể bù đắp cho độ chính xác. Một quả giao bóng có vận tốc vừa phải nhưng cắm chính xác vào mắt cá chân hoặc trái tay đối thủ luôn nguy hiểm hơn một quả bóng cực mạnh nhưng bay thẳng vào tầm tay thuận của họ.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section id="part3" class="book-part">
+  <div class="part-header">
+    <span class="part-tag">Phần 3: Thống Trị Khu Vực Lưới</span>
+    <h2>Thống Trị Khu Vực Lưới: Volley Đấm Bóng, Smash &amp; Bỏ Nhỏ</h2>
+    <div class="part-meta">
+      <span><i class="fa-solid fa-hand-fist"></i> Lưới đấu: Bắt Volley đấm bóng &amp; Kiểm soát góc thấp</span>
+      <span><i class="fa-solid fa-feather"></i> Đòn cảm giác: Đập Overhead trừng phạt &amp; Drop Shot</span>
+      <span><i class="fa-solid fa-clock"></i> Thời gian đọc: 22 phút</span>
+    </div>
+  </div>
+
+  <div class="figure-box">
+    <img src="serious_tennis_assets/fig5_dominating_net.jpg" alt="Kỹ thuật chiếm lĩnh khu vực lưới và bắt volley dứt điểm">
+    <span class="figure-caption">Hình 3.1: Thống trị khu vực lưới (Net Domination): Bước chân trước khóa góc, cổ tay đầm chắc đón bóng trước tầm mắt.</span>
+  </div>
+
+  <div class="content-body">
+    <h3>1. Thống Trị Khu Vực Lưới: Tư Duy Của Kẻ Săn Mồi</h3>
+    <p>
+      Tiến lên lưới không phải là một hành động liều lĩnh; đó là giai đoạn dứt điểm tự nhiên sau khi bạn đã tạo ra một đường bóng ép sân hoàn hảo:
+    </p>
+    <ul>
+      <li><strong>Cú đấm Volley không vung vợt (Compact Punch Volley):</strong> Cố định góc cổ tay với kiểu cầm Continental duy nhất. Giữ mặt vợt luôn ở phía trước tầm nhìn và dùng bước chân trước tiến thẳng vào quả bóng để truyền động lượng.</li>
+      <li><strong>Xử lý bóng thấp dưới cọc lưới (Low Volley):</strong> Khi bóng chìm sâu xuống chân, hãy hạ thấp toàn bộ trọng tâm bằng cách gập sâu hai đầu gối, giữ đầu vợt cao hơn cổ tay và mở nhẹ mặt vợt để nâng bóng an toàn qua lưới.</li>
+      <li><strong>Volley góc rộng dứt điểm (Angled touch volley):</strong> Khi đối thủ bị dạt xa khỏi sân, chỉ cần thả lỏng nhẹ cổ tay và đổi góc tiếp xúc để bóng rơi trượt chéo sát mép cọc lưới ngoài tầm với.</li>
+    </ul>
+
+    <h3>2. Cú Đập Overhead Trừng Phạt &amp; Đòn Bỏ Nhỏ Bất Ngờ</h3>
+    <p>
+      Sự kết hợp giữa sức mạnh bạo liệt và cảm giác tinh tế:
+    </p>
+    <ul>
+      <li><strong>Overhead Smash dũng mãnh:</strong> Xoay nghiêng người 90 độ, tay trái giơ cao chỉ thẳng vào bóng ngắm bắn, vươn thẳng người đập bóng ở điểm tiếp xúc cao nhất phía trước trán.</li>
+      <li><strong>Cú bỏ nhỏ ngụy trang (Disguised Drop Shot):</strong> Làm bộ như đang chuẩn bị một cú thuận tay ném lực cực mạnh, vào khoảnh khắc tiếp xúc bóng thì thả lỏng bàn tay, hãm đầu vợt và gạt nhẹ vào đáy quả bóng tạo độ xoáy lùi rơi nhẹ sau mép lưới.</li>
+    </ul>
+
+    <div class="pro-tip">
+      <div class="pro-tip-title"><i class="fa-solid fa-crosshairs"></i> Chiến Thuật Bắt Volley Của Scott Williams</div>
+      <p>
+        Trong các tình huống giằng co trên lưới, hãy luôn ưu tiên bắt bóng vào chân đối thủ đang chạy tới. Quả bóng chạm vào mũi chân là quả bóng khó xử lý nhất trong mọi tình huống quần vợt.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section id="part4" class="book-part">
+  <div class="part-header">
+    <span class="part-tag">Phần 4: Bản Lĩnh Đấu Trí &amp; Chiến Lược</span>
+    <h2>Biến Áp Lực Thành Lợi Thế &amp; Thi Đấu Dưới Áp Lực Đỉnh Cao</h2>
+    <div class="part-meta">
+      <span><i class="fa-solid fa-brain"></i> Tâm lý học: Tiến sĩ James Loehr – Chào đón căng thẳng</span>
+      <span><i class="fa-solid fa-trophy"></i> Chiến lược: Kế hoạch thi đấu &amp; Phong thái đấu sĩ</span>
+      <span><i class="fa-solid fa-clock"></i> Thời gian đọc: 24 phút</span>
+    </div>
+  </div>
+
+  <div class="figure-box">
+    <img src="serious_tennis_assets/fig6_using_stress_advantage.jpg" alt="Tiến sĩ James Loehr và phương pháp biến căng thẳng thành lợi thế">
+    <span class="figure-caption">Hình 4.1: Biến áp lực thành lợi thế: Tiến sĩ James Loehr hướng dẫn cách tái định hình căng thẳng thành nguồn năng lượng bùng nổ.</span>
+  </div>
+
+  <div class="content-body">
+    <h3>1. Tiến Sĩ James Loehr: Chào Đón Căng Thẳng (Welcoming Stress)</h3>
+    <p>
+      Trong một chương đặc biệt đầy tính đột phá của cuốn sách, huyền thoại tâm lý học thể thao Tiến sĩ James Loehr chia sẻ triết lý then chốt:
+    </p>
+    <p>
+      Căng thẳng không phải là kẻ thù; căng thẳng là người bạn đồng hành của sự tiến bộ. Cơ bắp không thể phát triển nếu không chịu áp lực tạ nặng, và bản lĩnh tinh thần của bạn cũng không thể tôi luyện nếu không trải qua những thời khắc nghẹt thở ở điểm Break point. Khi bạn học cách "chào đón" căng thẳng với nụ cười tự tin, bạn kích hoạt trạng thái hưng phấn tối ưu của hệ thần kinh.
+    </p>
+
+    <div class="figure-box">
+      <img src="serious_tennis_assets/fig7_pressure_performance.jpg" alt="Thi đấu dưới áp lực và hòa nhập cú đánh ứng biến">
+      <span class="figure-caption">Hình 4.2: Thi đấu dưới áp lực: Hòa nhập các cú đánh bài bản thường ngày với trực giác ứng biến linh hoạt trong từng pha bóng.</span>
+    </div>
+
+    <h3>2. Thi Đấu Dưới Áp Lực: Hòa Nhập Cú Đánh Thói Quen &amp; Ứng Biến</h3>
+    <p>
+      Để không bị sụp đổ trong các thời khắc quyết định của trận chung kết:
+    </p>
+    <ul>
+      <li><strong>Quy trình 16 giây giữa các điểm số (The 16-Second Cure):</strong> Đi bộ thẳng lưng, mắt nhìn xa, thở sâu bằng cơ hoành, chạm vợt tích cực và lên kế hoạch rõ ràng cho điểm số tiếp theo.</li>
+      <li><strong>Tin tưởng vào các cú đánh thói quen:</strong> Ở điểm 30-30 hoặc deuce, tuyệt đối không thử nghiệm những cú đánh lạ lẫm. Hãy sử dụng cú đánh sở trường mà bạn đã thực hành hàng nghìn lần trong các buổi tập.</li>
+    </ul>
+
+    <div class="figure-box">
+      <img src="serious_tennis_assets/fig8_match_tactics.jpg" alt="Xây dựng kế hoạch trận đấu và đấu pháp đối đầu">
+      <span class="figure-caption">Hình 4.3: Kế hoạch trận đấu (Game Plan): Nhận diện điểm yếu của đối thủ và thiết lập lối chơi khắc chế từ ván đấu đầu tiên.</span>
+    </div>
+
+    <h3>3. Xây Dựng Kế Hoạch Trận Đấu (Game Plan)</h3>
+    <p>
+      Scott Williams nhấn mạnh rằng một tay vợt nghiêm túc không bao giờ bước vào sân mà không có một kế hoạch tác chiến rõ ràng:
+    </p>
+    <ul>
+      <li><strong>Thăm dò điểm yếu trong 3 ván đầu tiên:</strong> Quan sát xem đối thủ đánh trái tay bằng cú slice hay topspin, khả năng cứu bóng thấp trên lưới của họ ra sao và họ xử lý bóng nảy cao ngang vai như thế nào.</li>
+      <li><strong>Kiên định với kế hoạch tác chiến:</strong> Nếu đối thủ yếu quả trái tay, hãy kiên trì đánh 80% số bóng vào góc trái của họ cho tới khi họ mất bình tĩnh và tự sụp đổ.</li>
+    </ul>
+
+    <div class="pro-tip">
+      <div class="pro-tip-title"><i class="fa-solid fa-medal"></i> Thông Điệp Vàng Từ Scott Williams</div>
+      <p>
+        Hãy chơi quần vợt với niềm đam mê nghiêm túc nhất. Tôn trọng từng quả bóng, tôn trọng đối thủ và cống hiến 100% năng lượng trong từng giây phút hiện diện trên sân đấu!
+      </p>
+    </div>
+  </div>
+</section>
+
+        </main>
+    </div>
+
+    <script>
+        // Reading progress bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('reading-progress-bar').style.width = scrolled + '%';
+        });
+
+        // Theme toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = themeToggle.querySelector('i');
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        if (currentTheme === 'dark') {
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme');
+            const target = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', target);
+            localStorage.setItem('theme', target);
+            if (target === 'dark') {
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            }
+        });
+
+        // Active TOC scroll spy
+        const sections = document.querySelectorAll('.book-part');
+        const navLinks = document.querySelectorAll('.toc-item');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.querySelector('a').getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
