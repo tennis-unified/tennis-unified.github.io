@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Play Tennis: Nghệ Thuật Đánh Theo Mô Thức — R. Spencer Brent | Tennis Unified</title>
+    <meta name="description" content="Bản dịch tiếng Việt chuyên sâu cuốn sách Pattern Play Tennis của R. Spencer Brent (Doubleday & Co.). Phương pháp tư duy hình học và mô thức chiến thuật: chuỗi đòn tiếp cận lưới, giằng co chéo sân, chuyển hướng dọc dây, và mô thức giao bóng Serve-Plus-One.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4338ca;
+            --primary-dark: #3730a3;
+            --primary-light: #6366f1;
+            --accent: #f59e0b;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --sidebar-width: 290px;
+        }
+
+        [data-theme="dark"] {
+            --primary: #818cf8;
+            --primary-dark: #6366f1;
+            --primary-light: #a5b4fc;
+            --accent: #fbbf24;
+            --bg-page: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --border: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.7;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #reading-progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #4338ca, #6366f1);
+            width: 0%;
+            z-index: 9999;
+            transition: width 0.1s ease;
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            background-color: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-logo {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .header-nav a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .header-nav a:hover {
+            color: var(--primary);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .btn-lang {
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .btn-lang:hover {
+            background-color: var(--primary);
+            color: #ffffff;
+        }
+
+        .btn-icon {
+            background: none;
+            border: none;
+            color: var(--text-main);
+            font-size: 1.1rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 6px;
+            transition: color 0.2s;
+        }
+
+        .btn-icon:hover {
+            color: var(--primary);
+        }
+
+        .reader-layout {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            position: relative;
+        }
+
+        .sidebar {
+            width: var(--sidebar-width);
+            height: calc(100vh - 60px);
+            position: sticky;
+            top: 60px;
+            border-right: 1px solid var(--border);
+            padding: 1.5rem;
+            overflow-y: auto;
+            flex-shrink: 0;
+            background-color: var(--bg-card);
+        }
+
+        .sidebar-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .toc-menu {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .toc-item a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            display: block;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            transition: all 0.2s;
+            line-height: 1.4;
+        }
+
+        .toc-item a:hover,
+        .toc-item.active a {
+            color: var(--primary);
+            background-color: rgba(67, 56, 202, 0.08);
+            font-weight: 600;
+        }
+
+        .sidebar-download {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .btn-download-pdf {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background-color: var(--primary);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            box-shadow: 0 2px 4px rgba(67, 56, 202, 0.2);
+            transition: all 0.2s;
+        }
+
+        .btn-download-pdf:hover {
+            background-color: var(--primary-dark);
+            box-shadow: 0 4px 8px rgba(67, 56, 202, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .main-article {
+            flex: 1;
+            max-width: 900px;
+            padding: 2.5rem 3rem;
+            background-color: var(--bg-card);
+            min-height: calc(100vh - 60px);
+            border-right: 1px solid var(--border);
+        }
+
+        .hero-banner {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(67, 56, 202, 0.1);
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+        }
+
+        .hero-title {
+            font-size: 2.3rem;
+            font-weight: 800;
+            line-height: 1.25;
+            color: var(--text-main);
+            margin-bottom: 1rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .hero-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .book-part {
+            margin-bottom: 4rem;
+            padding-top: 1rem;
+        }
+
+        .part-header {
+            margin-bottom: 2rem;
+        }
+
+        .part-tag {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .part-header h2 {
+            font-size: 1.85rem;
+            font-weight: 800;
+            line-height: 1.3;
+            color: var(--text-main);
+            margin-bottom: 0.75rem;
+        }
+
+        .part-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .part-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .figure-box {
+            margin: 2rem 0;
+            background-color: var(--bg-page);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .figure-box img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .figure-caption {
+            display: block;
+            padding: 0.8rem 1.2rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-style: italic;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            background-color: var(--bg-card);
+        }
+
+        .content-body h3 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .content-body p {
+            font-size: 1.02rem;
+            margin-bottom: 1.25rem;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        .content-body ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .content-body li {
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-main);
+        }
+
+        .pro-tip {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            border-left: 4px solid var(--primary);
+            background: rgba(67, 56, 202, 0.05);
+            border-radius: 0 10px 10px 0;
+        }
+
+        .pro-tip-title {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.05rem;
+        }
+
+        .pro-tip p {
+            margin-bottom: 0;
+            font-size: 0.98rem;
+        }
+
+        @media (max-width: 1024px) {
+            .sidebar {
+                display: none;
+            }
+            .main-article {
+                padding: 2rem 1.5rem;
+                max-width: 100%;
+                border-right: none;
+            }
+            .hero-title {
+                font-size: 1.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="reading-progress-bar"></div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="/vi/books/" class="header-logo"><i class="fa-solid fa-book-open"></i> Tennis Unified Books</a>
+            <nav class="header-nav">
+                <a href="/vi/books/">Tủ Sách</a>
+                <a href="/vi/fundamentals/">Nền Tảng</a>
+                <a href="/vi/stroke-analysis/">Phân Tích Cú Đánh</a>
+                <a href="/vi/drills/">Bài Tập</a>
+            </nav>
+            <div class="header-actions">
+                <a href="/books/" data-lang-toggle="en" class="btn-lang"><i class="fa-solid fa-globe"></i> English</a>
+                <button id="theme-toggle" class="btn-icon" aria-label="Đổi giao diện sáng/tối"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="reader-layout">
+        <aside class="sidebar">
+            <div class="sidebar-title">Mục Lục Mô Thức Thi Đấu</div>
+            <ul class="toc-menu">
+                <li class="toc-item active"><a href="#part1"><i class="fa-solid fa-shapes"></i> Phần 1: Khái Niệm & Hình Học Sân Đấu</a></li>
+                <li class="toc-item"><a href="#part2"><i class="fa-solid fa-person-walking-arrow-right"></i> Phần 2: Mô Thức Lưới Đấu</a></li>
+                <li class="toc-item"><a href="#part3"><i class="fa-solid fa-arrows-turn-to-dots"></i> Phần 3: Mô Thức Cuối Sân</a></li>
+                <li class="toc-item"><a href="#part4"><i class="fa-solid fa-bolt"></i> Phần 4: Giao Bóng & Phá Vỡ Nhịp Độ</a></li>
+            </ul>
+
+            <div class="sidebar-download">
+                <a href="Pattern_Play_Tennis_Vietnamese_Final.pdf" target="_blank" class="btn-download-pdf">
+                    <i class="fa-solid fa-file-pdf"></i> Tải PDF Tiếng Việt
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-article">
+            <div class="hero-banner">
+                <span class="hero-badge">Chiến Thuật Hình Học &amp; Mô Thức Đỉnh Cao</span>
+                <h1 class="hero-title">Pattern Play Tennis: Nghệ Thuật Đánh Theo Mô Thức</h1>
+                <p class="hero-subtitle">Bản dịch tiếng Việt chuyên sâu cuốn sách Pattern Play Tennis của R. Spencer Brent (Doubleday &amp; Co.). Phương pháp tư duy hình học và mô thức chiến thuật xóa bỏ lối đánh ngẫu hứng tự sát: chuỗi đòn tiếp cận lưới, giằng co chéo sân, chuyển hướng dọc dây, và mô thức giao bóng Serve-Plus-One.</p>
+                <div class="hero-meta">
+                    <span><i class="fa-solid fa-user"></i> Tác giả: R. Spencer Brent</span>
+                    <span><i class="fa-solid fa-pen-nib"></i> Minh họa: George Janes (Doubleday)</span>
+                    <span><i class="fa-solid fa-language"></i> Bản dịch: Tennis Unified</span>
+                </div>
+            </div>
+
+            
+<section id="part1" class="book-part">
+  <div class="part-header">
+    <span class="part-tag">Phần 1: Khái Niệm &amp; Hình Học Sân Đấu</span>
+    <h2>Triết Lý Đánh Theo Mô Thức &amp; Hình Học Sân Đấu</h2>
+    <div class="part-meta">
+      <span><i class="fa-solid fa-chess"></i> Tác giả: R. Spencer Brent</span>
+      <span><i class="fa-solid fa-shapes"></i> Minh họa: George Janes (Doubleday)</span>
+      <span><i class="fa-solid fa-clock"></i> Thời gian đọc: 20 phút</span>
+    </div>
+  </div>
+
+  <div class="figure-box">
+    <img src="pattern_play_tennis_assets/fig1_pattern_concepts.jpg" alt="Khái niệm đánh theo mô thức Pattern Play trong quần vợt">
+    <span class="figure-caption">Hình 1.1: Khái niệm "Pattern Play": Chuyển đổi từ đánh bóng ngẫu nhiên sang xây dựng chuỗi đòn phối hợp hình học định trước.</span>
+  </div>
+
+  <div class="content-body">
+    <h3>1. Bản Chất Của "Pattern Play": Xóa Bỏ Lối Đánh Ngẫu Hứng</h3>
+    <p>
+      Sự khác biệt căn bản giữa một người chơi phong trào thất thường và một tay vợt đẳng cấp cao không nằm ở lực vung vợt, mà nằm ở tư duy chiến thuật. Người chơi nghiệp dư bước vào sân và đánh từng quả bóng một cách hoàn toàn ngẫu hứng: thấy bóng sang bên phải thì đánh đại sang trái, thấy bóng sang bên trái thì phang mạnh về góc sân đối diện mà không hề có kế hoạch cho quả bóng tiếp theo.
+    </p>
+    <p>
+      Học thuyết "Pattern Play" của R. Spencer Brent khẳng định rằng quần vợt là một trò chơi của các mô thức hình học có xác suất cao. Mỗi quả bóng bạn đánh đi sẽ thu hẹp hoặc mở rộng các góc trả bóng khả dĩ của đối thủ vào một chiếc "phễu hình học" (geometric funnel) hoàn toàn có thể dự đoán trước. Khi bạn nắm vững các mô thức này, bạn không còn phải chạy đuổi theo bóng một cách bị động; bạn đã đứng sẵn tại điểm rơi trước khi đối thủ chạm bóng.
+    </p>
+
+    <h3>2. Phễu Hình Học &amp; Góc Trả Bóng Khả Dĩ Của Đối Thủ</h3>
+    <p>
+      Quy luật bất biến của hình học sân quần vợt được thể hiện qua ba nguyên lý:
+    </p>
+    <ul>
+      <li><strong>Nguyên tắc đường phân giác (The bisector rule):</strong> Khi bạn đánh bóng sang một vị trí nhất định trên sân đối phương, đối thủ chỉ có thể trả bóng trong một góc mở hình nón nhất định. Vị trí phòng thủ hoàn hảo của bạn không phải là điểm chính giữa vạch cuối sân, mà là đường phân giác chia đôi góc mở hình nón đó.</li>
+      <li><strong>Mô thức đánh chéo sân (Crosscourt funnel):</strong> Đánh bóng chéo sân đi qua phần lưới thấp nhất (0.914 m ở giữa lưới) và đi qua đường chéo sân dài nhất (25.1 m), tạo ra biên độ an toàn cực lớn so với đánh dọc dây (23.77 m qua phần lưới cao 1.07 m).</li>
+      <li><strong>Mô thức hai đòn liên hoàn (Two-shot sequence):</strong> Luôn tư duy theo cặp đòn đánh: "Cú đánh hiện tại của mình sẽ ép đối thủ phải trả bóng về đâu, và mình sẽ tung đòn kết liễu bằng cú đánh nào tiếp theo?"</li>
+    </ul>
+
+    <div class="figure-box">
+      <img src="pattern_play_tennis_assets/fig2_volley_patterns.jpg" alt="Mô thức đón đầu và bắt volley chặn phễu hình học">
+      <span class="figure-caption">Hình 1.2: Vị trí đứng che chắn góc trả bóng: Người đứng lưới khép chặt góc dọc dây và bắt bài đường chéo sân theo quy tắc phân giác.</span>
+    </div>
+
+    <div class="pro-tip">
+      <div class="pro-tip-title"><i class="fa-solid fa-lightbulb"></i> Lời Khuyên Của R. Spencer Brent</div>
+      <p>
+        Đừng đánh một cú đánh chỉ để đưa bóng qua lưới. Hãy đánh cú đánh đó với mục đích duy nhất: tạo ra quả bóng yếu ớt tiếp theo của đối thủ để bạn dứt điểm. Đó là cốt lõi của tư duy Pattern Play.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section id="part2" class="book-part">
+  <div class="part-header">
+    <span class="part-tag">Phần 2: Mô Thức Lưới Đấu</span>
+    <h2>Mô Thức Lưới Đấu: Cú Tiếp Cận, Volley Đấm Bóng &amp; Smash</h2>
+    <div class="part-meta">
+      <span><i class="fa-solid fa-person-walking-arrow-right"></i> Chiến thuật: Chuỗi tiếp cận &amp; Quả volley đầu tiên</span>
+      <span><i class="fa-solid fa-hammer"></i> Dứt điểm: Volley kết liễu &amp; Overhead Smash</span>
+      <span><i class="fa-solid fa-clock"></i> Thời gian đọc: 22 phút</span>
+    </div>
+  </div>
+
+  <div class="content-body">
+    <h3>1. Mô Thức Tiếp Cận Lưới Chuẩn Mực: Tấn Công Dọc Dây</h3>
+    <p>
+      Quy tắc vàng số 1 của chiến thuật lên lưới trong Pattern Play: "Luôn tiếp cận lưới theo hướng bóng dọc dây (Down-the-line approach)."
+    </p>
+    <p>
+      Lý do hình học: Khi bạn đánh bóng dọc dây sâu vào góc sân đối thủ, đường bóng đi thẳng và nhanh nhất. Bạn chỉ cần di chuyển theo đường thẳng tiến lên phía trước để khép chặt góc trả bóng dọc dây của đối phương. Lúc này, đối thủ chỉ còn hai lựa chọn cực kỳ khó khăn:
+    </p>
+    <ul>
+      <li><strong>Cố gắng đánh bóng chéo sân (Crosscourt passing shot):</strong> Đây là cú đánh có độ rủi ro rất cao vì bóng phải bay qua phần lưới cao nhất ở hai bên mép cọc (1.07 m). Bạn chỉ cần tiến lên và bắt gọn quả bóng này bằng một cú volley chéo sân dứt điểm vào khoảng trống mênh mông còn lại.</li>
+      <li><strong>Buộc phải lốp bóng qua đầu (Defensive lob):</strong> Khi đối thủ bị dồn ép vào góc sân hẹp, cú lốp bóng của họ hầu như không thể đạt độ sâu lý tưởng, biến thành mồi ngon cho cú đập smash của bạn.</li>
+    </ul>
+
+    <div class="figure-box">
+      <img src="pattern_play_tennis_assets/fig3_overhead_patterns.jpg" alt="Mô thức đón đầu và kết liễu bằng cú đập overhead smash">
+      <span class="figure-caption">Hình 2.1: Mô thức kết liễu trên lưới: Cú volley đầu tiên ép đối thủ lốp bóng cưỡng bức, mở đường cho cú đập smash dứt điểm dũng mãnh.</span>
+    </div>
+
+    <h3>2. Cú Volley Đầu Tiên: Xây Dựng Bệ Phóng Kiểm Soát</h3>
+    <p>
+      Rất nhiều người chơi mắc sai lầm khi cố gắng dứt điểm ăn điểm trực tiếp (winner) ngay từ cú volley đầu tiên (first volley) khi còn đứng cách lưới tới 4 mét. Trong Pattern Play, quả volley đầu tiên mang tính chất chiến lược:
+    </p>
+    <ul>
+      <li><strong>Ưu tiên độ sâu thay vì góc hiểm:</strong> Bắt một quả volley sâu vào điểm giữa vạch cuối sân hoặc sâu vào góc yếu của đối thủ để ép họ tiếp tục lùi xa khỏi sân đấu.</li>
+      <li><strong>Tiếp tục lướt lên áp sát lưới (Closing in):</strong> Ngay sau khi thực hiện cú volley đầu tiên, lập tức bước thêm hai bước dài áp sát cách lưới 1.5 đến 2 mét. Ở khoảng cách gần này, góc bao quát của bạn tăng gấp đôi, cho phép bạn thực hiện cú volley thứ hai để kết liễu điểm số dễ dàng.</li>
+    </ul>
+
+    <h3>3. Mô Thức Đập Bóng Overhead Trừng Phạt</h3>
+    <p>
+      Khi đối thủ buộc phải lốp bóng trong thế bị động, hãy thiết lập mô thức di chuyển đón bóng trên đầu:
+    </p>
+    <ul>
+      <li><strong>Bước trượt nghiêng mở rộng (Lateral tracking):</strong> Giữ vai nghiêng vuông góc với hướng bóng bay tới, lùi các bước trượt nhanh để quả bóng luôn ở phía trước mặt.</li>
+      <li><strong>Đập bóng có định hướng theo mô thức:</strong> Nếu đối thủ đang đứng lệch sang bên trái để cứu bóng, hãy đập bóng dội sàn nảy sâu sang góc phải; nếu đối thủ đang đứng chôn chân giữa sân, hãy đập bóng chéo sân ra ngoài vạch biên đơn để bóng bay ra xa khỏi tầm với.</li>
+    </ul>
+
+    <div class="pro-tip">
+      <div class="pro-tip-title"><i class="fa-solid fa-shield-halved"></i> Quy Tắc An Toàn Trên Lưới</div>
+      <p>
+        Nếu quả volley đầu tiên của bạn bị với hoặc tiếp xúc dưới mép lưới, tuyệt đối không cố ép bóng sát biên. Hãy volley bổng nhẹ vào giữa sân đối phương để triệt tiêu góc đánh trả của họ, cho bạn thêm thời gian chuẩn bị cho cú đánh tiếp theo.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section id="part3" class="book-part">
+  <div class="part-header">
+    <span class="part-tag">Phần 3: Mô Thức Cuối Sân</span>
+    <h2>Mô Thức Đấu Cuối Sân: Giằng Co Chéo Sân &amp; Đột Phá Dọc Dây</h2>
+    <div class="part-meta">
+      <span><i class="fa-solid fa-arrows-turn-to-dots"></i> Giằng co: Mô thức chéo sân an toàn tuyệt đối</span>
+      <span><i class="fa-solid fa-arrow-trend-up"></i> Đột phá: Thời điểm chuyển hướng dọc dây ăn điểm</span>
+      <span><i class="fa-solid fa-clock"></i> Thời gian đọc: 22 phút</span>
+    </div>
+  </div>
+
+  <div class="figure-box">
+    <img src="pattern_play_tennis_assets/fig4_forehand_patterns.jpg" alt="Mô thức đánh thuận tay chéo sân và đổi hướng dọc dây">
+    <span class="figure-caption">Hình 3.1: Mô thức cú thuận tay: Đánh bóng chéo sân sâu để kéo giãn đối thủ, kiên nhẫn chờ đợi bóng ngắn để tấn công dọc dây.</span>
+  </div>
+
+  <div class="content-body">
+    <h3>1. Mô Thức Đấu Chéo Sân: Cột Trụ Của Mọi Chiến Thuật</h3>
+    <p>
+      Nếu có một nguyên tắc duy nhất cứu bạn khỏi 80% các lỗi tự đánh hỏng ở vạch cuối sân, đó là: "Khi đang giằng co ngang ngửa, luôn đánh chéo sân (Crosscourt)."
+    </p>
+    <p>
+      Cơ sở toán học và cơ sinh học của mô thức này:
+    </p>
+    <ul>
+      <li><strong>Khoảng cách sân dài hơn:</strong> Đường chéo sân dài hơn đường thẳng dọc dây gần 1.5 mét (25.1 m so với 23.77 m). Khoảng cách này cho phép bạn đánh bóng với tốc độ cao hơn và độ xoáy cuộn mạnh hơn mà bóng vẫn nằm gọn trong sân.</li>
+      <li><strong>Độ cao lưới thấp nhất:</strong> Quả bóng bay qua điểm giữa lưới, nơi có độ cao chỉ 0.914 m, thấp hơn đáng kể so với hai bên mép cọc lưới (1.07 m).</li>
+      <li><strong>Góc hồi quy tối ưu:</strong> Khi bạn đánh chéo sân, đối thủ trả bóng lại thì góc nón mở ra hướng về bạn hẹp hơn rất nhiều so với khi bạn đánh dọc dây. Bạn chỉ cần di chuyển 1 đến 2 bước là đã bao quát được toàn bộ các góc trả bóng của đối thủ.</li>
+    </ul>
+
+    <div class="figure-box">
+      <img src="pattern_play_tennis_assets/fig5_backhand_patterns.jpg" alt="Mô thức giằng co cú trái tay chéo sân">
+      <span class="figure-caption">Hình 3.2: Mô thức cú trái tay: Giữ bóng sâu chéo sân vào góc trái của đối thủ để vô hiệu hóa các cú đánh sở trường của họ.</span>
+    </div>
+
+    <h3>2. Khi Nào Được Phép Đổi Hướng Dọc Dây (Down-The-Line)?</h3>
+    <p>
+      Đổi hướng từ đường bóng chéo sân sang một cú đánh dọc dây là một trong những quyết định rủi ro nhất trong thi đấu. Bạn chỉ nên chuyển hướng khi hội đủ ba điều kiện tiên quyết sau:
+    </p>
+    <ul>
+      <li><strong>Bóng của đối thủ ngắn:</strong> Điểm rơi của bóng nằm bên trong vạch giao bóng (khu vực no-man's land), cho phép bạn bước chân tiến vào trong sân để đón bóng ở tầm cao ngang hông.</li>
+      <li><strong>Cơ thể ở trạng thái thăng bằng tuyệt đối:</strong> Bạn không bị rướn người, không phải chạy với bóng và có đủ thời gian để xoay vai thiết lập bệ đỡ vững chắc.</li>
+      <li><strong>Đối thủ bị kéo dạt ra ngoài vạch biên:</strong> Cú đánh trước đó của bạn đã ép đối thủ phải chạy vất vả ra ngoài sân, để lộ ra khoảng trống thênh thang dọc theo vạch biên đối diện.</li>
+    </ul>
+
+    <div class="figure-box">
+      <img src="pattern_play_tennis_assets/fig7_court_geometry.jpg" alt="Hình học sân đấu và quy tắc phân giác phục hồi vị trí">
+      <span class="figure-caption">Hình 3.3: Sơ đồ hình học phục hồi vị trí (Bisector recovery): Luôn di chuyển về trục chia đôi góc trả bóng khả dĩ của đối thủ.</span>
+    </div>
+
+    <h3>3. Hình Học Phục Hồi Vị Trí Sau Cú Đánh</h3>
+    <p>
+      Sau khi thực hiện một cú đánh, sai lầm lớn nhất của người chơi là đứng yên ngắm nhìn quỹ đạo bay của quả bóng. Quy tắc Pattern Play đòi hỏi bạn phải di chuyển hồi quy ngay lập tức:
+    </p>
+    <ul>
+      <li><strong>Nếu đánh bóng sang góc phải đối thủ:</strong> Vị trí phục hồi của bạn phải lệch nhẹ sang bên trái điểm giữa vạch cuối sân khoảng 0.5 mét để đón đường chéo sân hiểm hóc nhất của họ.</li>
+      <li><strong>Nếu đánh bóng dọc dây:</strong> Bạn phải di chuyển nhanh về gần trung tâm sân hơn vì đối thủ có góc chéo sân cực rộng để phản công.</li>
+    </ul>
+
+    <div class="pro-tip">
+      <div class="pro-tip-title"><i class="fa-solid fa-triangle-exclamation"></i> Lỗi Thường Gặp Về Chuyển Hướng</div>
+      <p>
+        Cố gắng đổi hướng bóng dọc dây khi đang chạy với bóng ở góc sâu sân là hành động tự sát về mặt chiến thuật. Tỷ lệ đánh bóng rúc lưới hoặc ra ngoài biên trong tình huống này lên tới 75%. Hãy trung thành với đường chéo sân an toàn cho tới khi cơ hội thực sự xuất hiện!
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section id="part4" class="book-part">
+  <div class="part-header">
+    <span class="part-tag">Phần 4: Giao Bóng &amp; Phá Vỡ Nhịp Độ</span>
+    <h2>Mô Thức Giao Bóng Phối Hợp Đòn Kế Tiếp &amp; Đọc Vị Đối Thủ</h2>
+    <div class="part-meta">
+      <span><i class="fa-solid fa-bolt"></i> Chiến lược: Mô thức Serve-Plus-One định đoạt thế trận</span>
+      <span><i class="fa-solid fa-eye"></i> Đọc trận đấu: Khai thác thói quen &amp; Bẻ gãy nhịp điệu</span>
+      <span><i class="fa-solid fa-clock"></i> Thời gian đọc: 24 phút</span>
+    </div>
+  </div>
+
+  <div class="figure-box">
+    <img src="pattern_play_tennis_assets/fig6_serve_patterns.jpg" alt="Mô thức giao bóng và cú đánh tiếp theo Serve-Plus-One">
+    <span class="figure-caption">Hình 4.1: Mô thức Giao bóng + 1: Giao bóng dạt biên mở rộng sân, bước vào sân thực hiện cú thuận tay dứt điểm vào khoảng trống.</span>
+  </div>
+
+  <div class="content-body">
+    <h3>1. Sức Mạnh Của Mô Thức "Serve-Plus-One" (Giao Bóng + 1)</h3>
+    <p>
+      Trong quần vợt hiện đại đỉnh cao, quả giao bóng không tồn tại như một cú đánh biệt lập. Mục tiêu tối thượng của quả giao bóng là thiết lập điều kiện hoàn hảo cho cú đánh thứ hai – thường là cú thuận tay sở trường của bạn. Hai mô thức "Serve-Plus-One" kinh điển nhất gồm:
+    </p>
+    <ul>
+      <li><strong>Mô thức Giao bóng dạt biên + Đánh vào góc trống (Wide Slice + Open Court Forehand):</strong> Giao bóng xoáy slice sang góc rộng ô giao bóng để kéo đối thủ chạy dạt ra ngoài vạch biên đôi. Quả trả giao bóng của đối thủ thường bay lửng lơ về giữa sân. Bạn chỉ cần bước chân vào trong sân và tung một cú thuận tay uy lực vào góc sân đối diện đang hoàn toàn bỏ trống.</li>
+      <li><strong>Mô thức Giao bóng chữ T + Bắt Volley ngắn (T-Serve + Short Volley):</strong> Giao bóng phẳng hoặc xoáy kick cắm thẳng vào góc chữ T giữa sân, tước đoạt góc đánh trả của đối thủ. Lập tức lao nhanh lên lưới để bắt quả volley ngắn chéo sân dứt điểm gọn gàng.</li>
+    </ul>
+
+    <div class="figure-box">
+      <img src="pattern_play_tennis_assets/fig8_match_patterns.jpg" alt="Phân tích mô thức thi đấu và bẻ gãy nhịp điệu đối thủ">
+      <span class="figure-caption">Hình 4.2: Đọc vị và bẻ gãy mô thức đối thủ: Nhận diện điểm yếu ưa thích và chuyển đổi nhịp độ để vô hiệu hóa lối chơi của đối phương.</span>
+    </div>
+
+    <h3>2. Trả Giao Bóng Định Hướng Theo Mô Thức</h3>
+    <p>
+      Khi đối đầu với những tay giao bóng nặng, bạn không thể phản ứng theo cảm tính. Hãy lập trình sẵn hai mô thức trả giao bóng:
+    </p>
+    <ul>
+      <li><strong>Mô thức trả giao bóng sâu giữa sân (Deep middle return):</strong> Đối với các quả giao bóng một sấm sét, hãy chỉ chặn mặt vợt đưa bóng sâu vào giữa sân đối diện (ngay dưới chân đối thủ). Đường bóng này xóa sổ hoàn toàn mọi góc mở mà đối thủ có thể tấn công ở cú đánh tiếp theo.</li>
+      <li><strong>Mô thức tấn công quả giao bóng hai (Attack the second serve):</strong> Ngay khi thấy đối thủ tung bóng cho quả giao bóng hai yếu ớt, hãy bước tiến vào trong sân một mét, đón bóng ở điểm cao nhất và tấn công bóng sâu chéo sân vào điểm yếu nhất của đối thủ.</li>
+    </ul>
+
+    <h3>3. Đọc Vị &amp; Bẻ Gãy Mô Thức Của Đối Thủ (Pattern Disruption)</h3>
+    <p>
+      Mọi tay vợt đều là tù nhân của những thói quen thi đấu vô thức. Sau 3 ván đấu đầu tiên, hãy giải mã các câu hỏi sau để bẻ gãy lối chơi của đối thủ:
+    </p>
+    <ul>
+      <li><strong>Họ thường đánh về đâu khi bị ép sâu?</strong> Đa phần người chơi phong trào luôn đánh bóng chéo sân theo phản xạ tự nhiên khi bị dồn ép. Hãy di chuyển sớm để bắt bài đường bóng này.</li>
+      <li><strong>Họ có thích lên lưới không?</strong> Nếu đối thủ là mẫu người chỉ thích đứng sau vạch cuối sân, hãy dùng những quả bỏ nhỏ (drop shot) ngắn để kéo họ lên lưới – nơi họ hoàn toàn bỡ ngỡ và vụng về.</li>
+      <li><strong>Phá vỡ nhịp độ bằng bóng bổng và cắt slice:</strong> Nếu đối thủ là một cỗ máy đánh bóng nặng từ cuối sân, việc giằng co đọ lực với họ là sai lầm. Hãy thay đổi độ cao của bóng bằng những quả bóng xoáy cuộn nảy cao ngang vai xen kẽ các cú cắt bóng chìm sát mặt sân để làm loạn nhịp chân của họ.</li>
+    </ul>
+
+    <div class="pro-tip">
+      <div class="pro-tip-title"><i class="fa-solid fa-trophy"></i> Tinh Thần Pattern Play</div>
+      <p>
+        Khi bạn làm chủ các mô thức thi đấu, bạn không chỉ kiểm soát cây vợt trong tay mình mà bạn đang gián tiếp điều khiển cả đôi chân và suy nghĩ của đối thủ bên kia lưới. Đó là đỉnh cao cao nhất của nghệ thuật đấu trí quần vợt.
+      </p>
+    </div>
+  </div>
+</section>
+
+        </main>
+    </div>
+
+    <script>
+        // Reading progress bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('reading-progress-bar').style.width = scrolled + '%';
+        });
+
+        // Theme toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = themeToggle.querySelector('i');
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        if (currentTheme === 'dark') {
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme');
+            const target = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', target);
+            localStorage.setItem('theme', target);
+            if (target === 'dark') {
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            }
+        });
+
+        // Active TOC scroll spy
+        const sections = document.querySelectorAll('.book-part');
+        const navLinks = document.querySelectorAll('.toc-item');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.querySelector('a').getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
