@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quần Vợt Sức Khỏe Toàn Diện | Tennis Unified</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0d9488;
+            --primary-dark: #115e59;
+            --secondary: #14b8a6;
+            --accent: #10b981;
+            --bg-page: #f0fdf4;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --border-color: #ccfbf1;
+            --highlight: #f0fdfa;
+            --highlight-border: #5eead4;
+        }
+
+        [data-theme="dark"] {
+            --primary: #2dd4bf;
+            --primary-dark: #042f2e;
+            --secondary: #14b8a6;
+            --accent: #34d399;
+            --bg-page: #18181b;
+            --bg-card: #27272a;
+            --text-main: #f4f4f5;
+            --text-muted: #a1a1aa;
+            --border-color: #3f3f46;
+            --highlight: #134e4a;
+            --highlight-border: #0d9488;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.75;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(15, 23, 42, 0.96);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .brand-logo i {
+            color: #2dd4bf;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: #2dd4bf;
+        }
+
+        .btn-lang {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff !important;
+        }
+
+        .btn-theme {
+            background: transparent;
+            border: none;
+            color: #cbd5e1;
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 6px;
+        }
+
+        .progress-bar-container {
+            position: fixed;
+            top: 57px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: transparent;
+            z-index: 999;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #2dd4bf, #0d9488);
+            transition: width 0.1s ease;
+        }
+
+        .book-hero {
+            background: linear-gradient(135deg, #042f2e 0%, #115e59 50%, #0d9488 100%);
+            color: #ffffff;
+            padding: 48px 24px;
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(45, 212, 191, 0.2);
+            color: #ccfbf1;
+            border: 1px solid rgba(45, 212, 191, 0.4);
+            padding: 5px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-title {
+            font-size: 2.3rem;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            opacity: 0.95;
+            margin-bottom: 20px;
+            color: #ccfbf1;
+            font-style: italic;
+        }
+
+        .hero-meta {
+            font-size: 0.95rem;
+            color: #a7f3d0;
+            margin-bottom: 24px;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 11px 22px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background: #0d9488;
+            color: white;
+            border: 1px solid #14b8a6;
+        }
+
+        .btn-primary:hover {
+            background: #115e59;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.12);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.22);
+            transform: translateY(-2px);
+        }
+
+        .reader-layout {
+            max-width: 1240px;
+            margin: 40px auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 290px 1fr;
+            gap: 40px;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 80px;
+            height: fit-content;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+        }
+
+        .toc-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-item {
+            margin-bottom: 12px;
+        }
+
+        .toc-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: block;
+            padding: 6px 10px;
+            border-radius: 6px;
+            transition: all 0.2s;
+            line-height: 1.4;
+        }
+
+        .toc-link:hover, .toc-link.active {
+            color: var(--primary);
+            background: var(--highlight);
+            font-weight: 600;
+        }
+
+        .reader-content {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 48px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .book-part {
+            margin-bottom: 60px;
+            scroll-margin-top: 80px;
+        }
+
+        .reader-content h1 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 24px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 12px;
+        }
+
+        .reader-content h2 {
+            font-size: 1.45rem;
+            margin: 32px 0 16px 0;
+            color: var(--primary-dark);
+        }
+
+        [data-theme="dark"] .reader-content h2 {
+            color: #2dd4bf;
+        }
+
+        .reader-content h3 {
+            font-size: 1.2rem;
+            margin: 24px 0 12px 0;
+            color: var(--text-main);
+        }
+
+        .reader-content p {
+            margin-bottom: 18px;
+            font-size: 1.05rem;
+            color: var(--text-main);
+        }
+
+        .reader-content ul, .reader-content ol {
+            margin-bottom: 20px;
+            padding-left: 28px;
+        }
+
+        .reader-content li {
+            margin-bottom: 8px;
+            font-size: 1.02rem;
+        }
+
+        .diagram-figure {
+            margin: 36px 0;
+            text-align: center;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+        }
+
+        .diagram-figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .diagram-figure figcaption {
+            margin-top: 14px;
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        .quote-box {
+            background: var(--highlight);
+            border-left: 4px solid var(--primary);
+            padding: 18px 24px;
+            margin: 24px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--text-main);
+        }
+
+        .key-takeaway {
+            background: #ccfbf1;
+            border: 1px solid #14b8a6;
+            padding: 18px 22px;
+            border-radius: 8px;
+            margin: 24px 0;
+            color: #0f766e;
+        }
+
+        [data-theme="dark"] .key-takeaway {
+            background: #134e4a;
+            border-color: #0d9488;
+            color: #99f6e4;
+        }
+
+        @media (max-width: 900px) {
+            .reader-layout {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                display: none;
+            }
+            .reader-content {
+                padding: 24px;
+            }
+            .hero-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="/vi/" class="brand-logo">
+                <i class="fa-solid fa-tennis-ball"></i>
+                <span>Tennis Unified</span>
+            </a>
+            <nav class="nav-links">
+                <a href="/vi/"><i class="fa-solid fa-house"></i> Trang Chủ</a>
+                <a href="/vi/books/" class="active"><i class="fa-solid fa-book"></i> Tủ Sách</a>
+                <a href="/vi/fundamentals/"><i class="fa-solid fa-graduation-cap"></i> Căn Bản</a>
+                <a href="/vi/stroke-analysis/"><i class="fa-solid fa-chart-line"></i> Phân Tích</a>
+                <a href="/vi/drills/"><i class="fa-solid fa-person-running"></i> Bài Tập</a>
+                <a href="/books/" data-lang-toggle="en" class="btn-lang"><i class="fa-solid fa-globe"></i> English</a>
+                <button id="theme-toggle" class="btn-theme" title="Chuyển chế độ sáng/tối"><i class="fa-solid fa-moon"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="progress-bar-container">
+        <div id="reading-progress" class="progress-bar"></div>
+    </div>
+
+    <section class="book-hero">
+        <div class="hero-container">
+            <span class="hero-badge">Whitmore Lifestyle Classics • Holistic Master Guide</span>
+            <h1 class="hero-title">QUẦN VỢT SỨC KHỎE TOÀN DIỆN</h1>
+            <p class="hero-subtitle">Total Health Tennis — Phương Pháp Tiếp Cận Lối Sống, Tích Hợp Thân Tâm &amp; Khởi Sắc Năng Lượng</p>
+            <p class="hero-meta">Tác giả: <strong>Craig R. Wilson</strong> | Whitmore Publishing Co., Pennsylvania | 17 Chương Chuyên Sâu</p>
+            <div class="hero-actions">
+                <a href="#part1" class="btn-action btn-primary"><i class="fa-solid fa-book-open"></i> Đọc Toàn Bộ Sách</a>
+                <a href="Total_Health_Tennis_Vietnamese_Final.pdf" class="btn-action btn-outline" download><i class="fa-solid fa-file-pdf"></i> Tải PDF In Ấn</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="reader-layout">
+        <aside class="sidebar">
+            <h3 class="toc-title"><i class="fa-solid fa-list-ol"></i> Mục Lục Cẩm Nang</h3>
+            <ul class="toc-list">
+                <li class="toc-item"><a href="#part1" class="toc-link"><strong>Phần 1:</strong> Triết Lý Sức Khỏe Toàn Diện &amp; Động Lực Nội Tại (Chương 1 - 2)</a></li>
+                <li class="toc-item"><a href="#part2" class="toc-link"><strong>Phần 2:</strong> Khoa Học Hình Dung Tâm Trí &amp; Vũ Đạo Chuyển Động (Chương 3 - 7)</a></li>
+                <li class="toc-item"><a href="#part3" class="toc-link"><strong>Phần 3:</strong> Kỹ Thuật Căn Bản Cho Người Trưởng Thành (Chương 8 - 11)</a></li>
+                <li class="toc-item"><a href="#part4" class="toc-link"><strong>Phần 4:</strong> Bậc Thầy Giao Bóng, Trả Giao &amp; Nghệ Thuật Tinh Tế (Chương 12 - 17)</a></li>
+            </ul>
+        </aside>
+
+        <main class="reader-content">
+            <section id="part1" class="book-part">
+                
+<h1>PHẦN 1: TRIẾT LÝ SỨC KHỎE TOÀN DIỆN & ĐỘNG LỰC NỘI TẠI</h1>
+
+<div class="quote-box">
+  "Thể thao không chỉ là một ẩn dụ của đời sống; thể thao ở cấp độ tinh tế nhất chính là nền tảng trực tiếp tạo dựng sức khỏe thể chất và tinh thần trọn vẹn. Quần vợt là một vũ điệu sinh học hoàn hảo, nơi từng cú vung vợt trở thành phương tiện xóa nhòa sự phân tách giữa Thân và Tâm, đưa con người chạm đến sự hài hòa tuyệt đối giữa bản thể hiện tại và tiềm năng tương lai."
+  <br><strong>— Craig R. Wilson (Total Health Tennis)</strong>
+</div>
+
+<h2 class="section-title">Lời Người Dịch: Quần Vợt Như Một Triết Lý Sống Toàn Diện</h2>
+
+<p>
+  Trong thế giới thể thao hiện đại, người ta thường nhìn nhận quần vợt dưới lăng kính của những cuộc tranh tài nảy lửa, những cú giao bóng sấm sét hay bảng xếp hạng danh vọng. Thế nhưng, đằng sau những tiếng hò reo trên khán đài, có một câu hỏi sâu xa hơn mà mỗi người cầm vợt sớm muộn gì cũng phải đối mặt: <em>Chúng ta thực sự tìm kiếm điều gì sau hàng ngàn giờ đổ mồ hôi trên sân banh nỉ?</em>
+</p>
+
+<p>
+  Craig R. Wilson — một huấn luyện viên, nhà giáo dục và học giả thể thao tiên phong — đã cống hiến trọn vẹn cuốn sách <em>Total Health Tennis: A Lifestyle Approach</em> để trả lời câu hỏi hiện sinh đó. Tác phẩm này vượt lên trên những giáo trình kỹ thuật khô khan thông thường, mở ra một chân trời mới: biến quần vợt thành một thực hành rèn luyện lối sống (lifestyle practice), kết hợp giữa y học vận động, tâm lý học hình dung và triết lý sống hợp trực (synergism).
+</p>
+
+<p>
+  Đối với người chơi phong trào, thanh thiếu niên cũng như các bậc cao niên, cuốn sách mang đến một bức thông điệp giải phóng: bạn không cần phải trở thành một vận động viên vô địch thế giới mới tận hưởng được sự kỳ diệu của quần vợt. Khi bạn tiếp cận môn chơi bằng tư duy Sức Khỏe Toàn Diện (Total Health), mỗi buổi ra sân sẽ trở thành một liều thuốc trẻ hóa tế bào, một buổi thiền động giải tỏa căng thẳng và một hành trình khám phá chính mình.
+</p>
+
+<h2 class="section-title">Chương 1: Sức Khỏe Toàn Diện Qua Môn Quần Vợt (Total Health Through Tennis)</h2>
+
+<p>
+  Khái niệm Sức Khỏe Toàn Diện (Total Health) mà Craig R. Wilson khởi xướng không đơn thuần là sự vắng bóng của bệnh tật cơ thể. Đó là một trạng thái sung mãn, tích cực và cân bằng giữa năng lượng thể chất, sự sáng suốt của trí tuệ và sự bình an trong tâm hồn.
+</p>
+
+<p>
+  Quần vợt sở hữu một sức hút phổ quát độc nhất vô nhị bởi vì nó đòi hỏi sự tham gia đồng thời của toàn bộ hệ thống sinh học con người:
+</p>
+
+<ul>
+  <li><strong>Hệ tim mạch và hô hấp:</strong> Nhịp điệu vận động ngắt quãng cường độ cao (HIIT tự nhiên) giúp rèn luyện cơ tim, tăng dung tích phổi và thanh lọc huyết quản.</li>
+  <li><strong>Hệ thần kinh và phản xạ vận động:</strong> Tốc độ bay của quả bóng buộc các synapse thần kinh phải xử lý thông tin và ra quyết định trong vài phần trăm giây, giữ cho não bộ luôn nhạy bén và ngăn ngừa thoái hóa thần kinh.</li>
+  <li><strong>Hệ cơ xương khớp và sự linh hoạt:</strong> Các động tác vặn xoắn thân trên, chùng chân và duỗi người kích hoạt chuỗi cơ cốt lõi (core muscles) và duy trì dịch bôi trơn tại các khớp nối.</li>
+</ul>
+
+<figure class="diagram-figure">
+  <img src="total_health_tennis_assets/total_health_synergism.png" alt="Mô Hình Quần Vợt Sức Khỏe Toàn Diện Total Health Tennis" />
+  <figcaption>Hình 1: Mô hình hợp trực Thân - Tâm trong Quần Vợt Sức Khỏe Toàn Diện. Bốn trụ cột liên kết hữu cơ giữa thể lực linh hoạt, hình dung tâm trí, cân bằng cảm xúc và phong cách sống trọn đời.</figcaption>
+</figure>
+
+<p>
+  Một trong những đóng góp triết học sâu sắc nhất của tác giả là việc chỉ ra và khắc phục <strong>sự nhị nguyên tai hại giữa Thân và Tâm (The Mind-Body Dualism)</strong>. Phần lớn người chơi thường để tâm trí đóng vai trò một kẻ phán xét nghiệt ngã đứng ngoài chỉ trích cơ thể: 'Tại sao tay lại cứng đờ thế?', 'Sao chân lại lười di chuyển thế?'. Sự phân liệt này tạo ra xung đột nội tâm, dẫn đến các hành vi tự triệt tiêu năng lượng (Self-Cancelling Behavior).
+</p>
+
+<p>
+  Trong trạng thái Sức Khỏe Toàn Diện, Thân và Tâm hợp nhất làm một. Tâm trí không ra lệnh bằng ngôn từ gắt gỏng mà dẫn dắt bằng hình ảnh và cảm giác trực giác; cơ thể không phục tùng trong sợ hãi mà phản ứng uyển chuyển trong niềm hân hoan vận động. Khoảnh khắc chạm bóng hoàn hảo chính là <strong>Điểm Hiệu Suất (The Point of Performance)</strong> — nơi bản thể hiện tại (Being) hòa quyện cùng quá trình tiến bộ không ngừng (Becoming).
+</p>
+
+<h2 class="section-title">Chương 2: Động Lực Nội Tại & Phân Khúc Người Chơi (The Private Motivation)</h2>
+
+<p>
+  Tại sao chúng ta lại chơi quần vợt? Động cơ thầm kín thúc đẩy bạn xỏ giày ra sân lúc sáng sớm hay sau những giờ làm việc mệt mỏi là gì? Craig R. Wilson đã tiến hành khảo sát và phân loại người chơi quần vợt thành năm nhóm động lực tâm lý đặc thù:
+</p>
+
+<ol>
+  <li><strong>Nhóm Bạn Chơi (The Playmates):</strong> Những người tìm kiếm niềm vui kết nối xã hội, tiếng cười sảng khoái và tình bằng hữu. Đối với họ, quần vợt là nhịp cầu giao tiếp và sự giải tỏa lành mạnh khỏi những lo toan đời thường.</li>
+  <li><strong>Nhóm Thăm Dò Giới Hạn (The Boundary Probers):</strong> Những người luôn tò mò muốn biết giới hạn thể lực và kỹ năng của bản thân nằm ở đâu. Họ thích đương đầu với những cú đánh khó và sẵn sàng thử nghiệm những kỹ thuật mới.</li>
+  <li><strong>Nhóm Tìm Kiếm Bản Ngã (The Self-Seekers):</strong> Những người coi sân đấu là nơi khẳng định giá trị bản thân, tìm kiếm sự công nhận và nâng cao lòng tự trọng thông qua sự tiến bộ kỹ thuật.</li>
+  <li><strong>Nhóm Chiến Lược Gia Sinh Tồn (The Survival Strategists):</strong> Những người xem việc chơi quần vợt như một phương thức bảo vệ sức khỏe thiết yếu để chống lại sự lão hóa, bệnh tật và áp lực công việc văn phòng.</li>
+  <li><strong>Nhóm Định Hình Phong Cách Sống (The Lifestylists):</strong> Tầng lớp người chơi đạt tới tầm nhìn cao nhất, xem quần vợt là một phần không thể tách rời trong lối sống cân bằng, thanh lịch và trường thọ.</li>
+</ol>
+
+<div class="key-takeaway">
+  <strong>Thời Đại Của Sự Quyết Đoán (The Age of Assertiveness):</strong> Craig R. Wilson nhấn mạnh rằng trong quần vợt cũng như trong cuộc sống, tính hung hăng mù quáng (aggression) cũng là một sai lầm tệ hại không kém gì sự thụ động nhút nhát (passivity). Phong cách của Total Health là sự quyết đoán điềm tĩnh (assertiveness): dám làm chủ không gian, chủ động tấn công khi có cơ hội, nhưng luôn giữ thái độ tôn trọng đối thủ và bình an trong nội tâm.
+</div>
+
+            </section>
+            
+            <section id="part2" class="book-part">
+                
+<h1>PHẦN 2: KHOA HỌC HÌNH DUNG TÂM TRÍ & VŨ ĐẠO CHUYỂN ĐỘNG</h1>
+
+<div class="quote-box">
+  "Bộ não con người suy nghĩ bằng hình ảnh và cảm giác chuyển động, chứ không phải bằng những câu mệnh lệnh ngữ pháp phức tạp. Càng cố dùng ngôn ngữ để điều khiển từng sợi cơ trong lúc bóng đang bay tới, bạn càng làm tê liệt phản xạ tự nhiên của cơ thể. Hãy học cách tin tưởng vào mắt nội tâm và trao quyền cho trực giác vận động."
+  <br><strong>— Craig R. Wilson (Total Health Tennis)</strong>
+</div>
+
+<h2 class="section-title">Chương 3: Khoa Học Hình Dung & Kỹ Thuật Quần Vợt (Visualization Technique)</h2>
+
+<p>
+  Một trong những phát hiện mang tính cách mạng nhất của tâm lý học thể thao trong thế kỷ hai mươi là <strong>mối quan hệ tỷ lệ nghịch giữa sự hình dung (visualization) và ngôn ngữ lời nói (verbal language)</strong>. Khi bạn đứng trên sân và liên tục tự nhủ trong đầu: 'Đưa vợt ra sau sớm, hạ đầu vợt xuống thấp, bước chân trái lên, xoay vai ba mươi độ', bạn đang ép bán cầu não trái (vốn xử lý ngôn ngữ một cách tuần tự và chậm chạp) phải gánh vác một công việc vốn thuộc về bán cầu não phải (nơi xử lý không gian, hình ảnh và nhịp điệu với tốc độ chớp nhoáng).
+</p>
+
+<p>
+  Hậu quả của việc 'nói quá nhiều trong đầu' là những động tác giật cục, thiếu tự nhiên và sự căng cứng cơ bắp ngoài ý muốn. Phương pháp Sức Khỏe Toàn Diện đảo ngược hoàn toàn quy trình này thông qua ba cấp độ hình dung không gian:
+</p>
+
+<ul>
+  <li><strong>Hình dung cây vợt như một phần kéo dài của cơ thể:</strong> Cây vợt không phải là một vật thể kim loại hay graphite xa lạ cầm trên tay, mà là sự mở rộng trực tiếp của bàn tay và cẳng tay. Mặt vợt chính là lòng bàn tay của bạn.</li>
+  <li><strong>Hình dung quả bóng trong quỹ đạo ba chiều:</strong> Nhìn thấy rõ ràng các đường rãnh nỉ của quả bóng đang xoay tròn trong không khí, cảm nhận được độ nén của quả bóng khi tiếp xúc vào mặt lưới và hướng bật ra của nó.</li>
+  <li><strong>Hình dung hình học sân đấu:</strong> Cảm nhận các đường biên dọc, biên ngang và mép lưới như một mạng lưới không gian sống động bao quanh bạn, giúp bạn định vị chính xác vị trí của mình mà không cần phải nhìn xuống chân.</li>
+</ul>
+
+<h2 class="section-title">Chương 4: Vũ Đạo Quần Vợt (Tennis Choreography)</h2>
+
+<p>
+  Craig R. Wilson so sánh việc di chuyển trên sân quần vợt với một màn trình diễn múa đương đại đỉnh cao. Một vũ công giỏi không bao giờ bước những bước nặng nề, thô kệch; họ lướt trên sàn diễn với sự nhẹ nhàng, cân bằng hoàn hảo và sự hòa hợp nhịp nhàng giữa hơi thở và động tác.
+</p>
+
+<figure class="diagram-figure">
+  <img src="total_health_tennis_assets/tennis_choreography_visualization.png" alt="Vũ Đạo Quần Vợt & Vòng Lặp Hình Dung Tâm Trí" />
+  <figcaption>Hình 2: Vũ đạo chuyển động và chu trình 4 bước đồng bộ hóa trực giác: Định hình tâm trí, Vũ đạo bộ chân, Điểm hiệu suất ngọt lịm và Tĩnh lặng hồi phục.</figcaption>
+</figure>
+
+<p>
+  Để rèn luyện vũ đạo bộ chân trong quần vợt, tác giả giới thiệu bài tập <strong>Sân Đấu Tưởng Tượng (The Imaginary Court)</strong>. Người tập đứng trong một không gian yên tĩnh, không cần bóng thật, bật một bản nhạc có tiết tấu du dương và bắt đầu thực hiện các chuỗi động tác di chuyển ngang, bước tách chân (split-step), chùng gối đón bóng và vung vợt theo nhịp điệu âm nhạc.
+</p>
+
+<p>
+  Khi đôi chân được giải phóng khỏi nỗi sợ đánh hỏng bóng thật, cơ thể sẽ tự động tìm thấy sự thăng bằng tối ưu và nhịp điệu sinh học mượt mà nhất. Khi bước vào trận đấu thực tế, nhịp điệu vũ đạo này sẽ tự động tái hiện, biến từng pha cứu bóng khó khăn thành một màn biểu diễn thanh lịch và không hề tốn sức.
+</p>
+
+<h2 class="section-title">Chương 5: Hình Dung Mục Tiêu & Điểm Số Chiến Thắng (Target Visualization)</h2>
+
+<p>
+  Hình dung mục tiêu (Target Visualization) là kỹ thuật khắc sâu điểm rơi mong muốn vào tâm trí trước khi thực hiện cú đánh. Thay vì tập trung nhìn vào mép lưới hay lo sợ đối thủ đánh trả, bạn phóng chiếu một mục tiêu vô hình rực sáng tại góc sân đối phương:
+</p>
+
+<ol>
+  <li><strong>Hình dung quả giao bóng (Service Vision):</strong> Nhìn thấy trước toàn bộ vòng cung của quả bóng bay vút qua mép lưới và cắm sâu vào góc chữ T hoặc góc rộng của ô giao bóng.</li>
+  <li><strong>Hình dung độ xoáy (Spin Visualization):</strong> Cảm nhận bằng xúc giác trước khi vung vợt: cảm giác chém bóng lướt ngang cho quả slice serve, hay cảm giác vuốt bóng từ dưới lên qua đỉnh đầu cho quả topspin và American twist.</li>
+  <li><strong>Hình dung cú dứt điểm thăng hoa (Winning Put-Away):</strong> Mắt nội tâm thấy trước khoảnh khắc quả volley đệm ngắn nằm ngoài tầm với của đối thủ, hay cú đập smash sấm sét chạm sân và nảy vọt ra ngoài hàng rào trong tiếng vỗ tay tán thưởng.</li>
+</ol>
+
+<div class="key-takeaway">
+  <strong>Khoảnh Khắc Va Chạm (Impact Visualization):</strong> Bí quyết tối thượng của sự ổn định nằm ở việc giữ cho đôi mắt và tâm trí hoàn toàn tĩnh lặng tại điểm va chạm giữa mặt vợt và quả bóng trong một phần mười giây sau khi bóng đã rời đi. Sự tĩnh lặng này ngăn chặn triệt để tật xấu ngẩng đầu quá sớm và bảo đảm điểm tiếp xúc luôn nằm chính xác tại điểm ngọt (sweet spot).
+</div>
+
+            </section>
+            
+            <section id="part3" class="book-part">
+                
+<h1>PHẦN 3: KỸ THUẬT CĂN BẢN CHO NGƯỜI TRƯỞNG THÀNH</h1>
+
+<div class="quote-box">
+  "Kỹ thuật chuẩn xác trong quần vợt không phải là một sự gò ép máy móc mang tính hình thức, mà là con đường duy nhất giúp giải phóng toàn bộ năng lượng sinh học tự nhiên và bảo vệ cơ thể bạn khỏi những chấn thương mãn tính. Khi bạn vung vợt đúng nguyên lý cơ học, cú đánh sẽ diễn ra dễ dàng và nhẹ nhàng như một hơi thở."
+  <br><strong>— Craig R. Wilson (Total Health Tennis)</strong>
+</div>
+
+<h2 class="section-title">Chương 8: Bộ Cầm Vợt & Tư Thế Sẵn Sàng (Proper Grips & Ready Position)</h2>
+
+<p>
+  Tư thế sẵn sàng (Ready Position) là cội nguồn của mọi chuyển động trên sân. Nhiều người chơi trưởng thành đứng đón bóng với tư thế buông thõng hai tay hoặc gù lưng mệt mỏi, khiến họ luôn bị động khi quả bóng bay tới.
+</p>
+
+<p>
+  Tư thế sẵn sàng chuẩn mực theo triết lý Sức Khỏe Toàn Diện đòi hỏi một sự tỉnh thức toàn thân nhưng hoàn toàn không gồng cứng:
+</p>
+
+<ul>
+  <li><strong>Trọng tâm chùng xuống:</strong> Hai chân mở rộng bằng vai, đầu gối hơi khuỵu, dồn trọng lượng đều lên phần ức bàn chân để sẵn sàng bật nhảy theo bất kỳ hướng nào.</li>
+  <li><strong>Vợt hướng về phía trước:</strong> Đầu vợt nâng cao ngang tầm ngực, tay không thuận đỡ nhẹ vào cổ vợt để chia sẻ sức nặng và hỗ trợ việc xoay chuyển cán vợt tức thì.</li>
+  <li><strong>Kiểu cầm vợt trung tính (Continental / Eastern):</strong> Giúp bạn nhanh chóng chuyển đổi linh hoạt sang bên thuận tay (forehand) hoặc trái tay (backhand) mà không làm trễ nhịp di chuyển.</li>
+</ul>
+
+<h2 class="section-title">Chương 9: Cú Volley & Nghệ Thuật Chiếm Lĩnh Mặt Lưới (The Volley)</h2>
+
+<p>
+  Khi tiến lên lưới, thời gian phản xạ bị thu hẹp lại chỉ còn một phần ba so với khi đứng ở vạch cuối sân. Sai lầm phổ biến nhất của người chơi phong trào là cố vung vợt ra sau thật xa như khi đánh bóng nảy đất. Động tác vung vợt này chắc chắn sẽ dẫn đến việc đánh bóng muộn và hỏng ăn.
+</p>
+
+<p>
+  Bí quyết thực hiện cú volley thanh thoát và an toàn của Craig R. Wilson bao gồm ba nguyên tắc cốt lõi:
+</p>
+
+<ol>
+  <li><strong>Không vung vợt ra sau (No Backswing):</strong> Hãy tưởng tượng mặt vợt của bạn là một chiếc khiên chắn. Bạn chỉ cần giơ khiên ra chặn đúng đường bay của quả bóng trước mặt cơ thể.</li>
+  <li><strong>Cú đẩy dứt khoát (Punch, Don't Swing):</strong> Dùng chuyển động đẩy nhẹ từ vai và bước chân tới để tạo lực, giữ cho cổ tay luôn khóa chặt và đầu vợt cao hơn cổ tay tại thời điểm tiếp xúc.</li>
+  <li><strong>Bước chân chuyển trọng tâm:</strong> Bước chân đối diện chéo về phía trước (chân trái bước lên đối với cú volley thuận tay của người thuận tay phải) để truyền toàn bộ trọng lượng cơ thể vào quả bóng.</li>
+</ol>
+
+<h2 class="section-title">Chương 10: Cú Đánh Nảy Forehand & Backhand (The Groundstrokes)</h2>
+
+<p>
+  Trong giảng dạy quần vợt truyền thống, người ta thường có xu hướng xem cú thuận tay và trái tay là hai thế giới tách biệt hoàn toàn. Thậm chí có ngụy biện cho rằng 'mỗi người có một kiểu đánh riêng biệt' để biện hộ cho những tư thế sai lệch gây tổn hại khớp xương.
+</p>
+
+<p>
+  Craig R. Wilson chỉ ra rằng: <strong>Cú Backhand thực chất chính là hình ảnh phản chiếu qua gương (mirror image) của cú Forehand</strong>. Khi bạn hiểu được tính đối xứng sinh học này, việc hoàn thiện cú trái tay sẽ trở nên vô cùng tự nhiên:
+</p>
+
+<ul>
+  <li><strong>Đường xoay hông đối xứng:</strong> Cú forehand xoay hông từ phải sang trái, trong khi cú backhand xoay hông từ trái sang phải. Việc tập luyện cả hai cú đánh đều đặn giúp phát triển đồng đều các nhóm cơ lưng, cơ bụng và giữ cho cột sống luôn thẳng hàng.</li>
+  <li><strong>Điểm tiếp xúc bóng phía trước:</strong> Dù đánh thuận tay hay trái tay, điểm chạm bóng lý tưởng luôn nằm ở phía trước hông trước khoảng hai mươi đến ba mươi phân.</li>
+  <li><strong>Follow-through trọn vẹn:</strong> Kết thúc cú vung vợt cao qua vai đối diện, giúp giảm tải chấn động lên khớp khuỷu tay và tạo độ xoáy cuộn bóng an toàn vào sân.</li>
+</ul>
+
+<h2 class="section-title">Chương 11: Cú Đập Smash Trên Đầu (The Overhead Smash)</h2>
+
+<p>
+  Nhiều người chơi cảm thấy hoảng sợ khi nhìn thấy quả bóng lốp bổng bay vút lên trời xanh. Họ lúng túng lùi bước, mất thăng bằng và thường đập bóng rúc lưới hoặc văng ra ngoài hàng rào.
+</p>
+
+<div class="key-takeaway">
+  <strong>Đơn Giản Như Ném Một Quả Bóng (As Easy As Throwing A Ball):</strong> Động tác đập smash về bản chất cơ học hoàn toàn tương đồng với động tác ném bóng chày qua đầu. Hãy giơ cánh tay không thuận chỉ thẳng lên quả bóng trên không để định vị mục tiêu và giữ thăng bằng cho lồng ngực. Sau đó, nghiêng người quay vai và vung vợt đón bóng ở điểm cao nhất có thể với một chuyển động gập cổ tay tự nhiên. Quả bóng sẽ cắm thẳng xuống phần sân đối phương với sức mạnh không thể cản phá.
+</div>
+
+            </section>
+            
+            <section id="part4" class="book-part">
+                
+<h1>PHẦN 4: BẬC THẦY GIAO BÓNG, TRẢ GIAO & NGHỆ THUẬT TINH TẾ</h1>
+
+<div class="quote-box">
+  "Giao bóng và trả giao bóng là hai cú đánh quyền lực nhất trên sân, định đoạt nhịp điệu của mọi điểm số. Khi bạn học được cách giao bóng bằng nhịp điệu uyển chuyển thay vì dùng sức mạnh cơ bắp thô thiển, bạn sẽ thấy cơ thể mình tràn ngập năng lượng tươi mới sau mỗi set đấu thay vì sự kiệt sức."
+  <br><strong>— Craig R. Wilson (Total Health Tennis)</strong>
+</div>
+
+<h2 class="section-title">Chương 12: Động Tác Giao Bóng - Chiếc Khay Bạc Sang Trọng (A Silver Platter Deluxe)</h2>
+
+<p>
+  Để giúp người chơi thoát khỏi sự gượng gạo khi giao bóng, Craig R. Wilson đưa ra một hình ảnh ẩn dụ tuyệt đẹp mang tên <strong>'Chiếc Khay Bạc Sang Trọng' (A Silver Platter Deluxe)</strong>.
+</p>
+
+<p>
+  Khi bạn bắt đầu vung vợt ra sau, hãy tưởng tượng bàn tay cầm vợt và mặt vợt của bạn đang nâng đỡ một chiếc khay bạc quý giá trên đó có những ly rượu pha lê. Động tác đưa vợt lên vị trí gãi lưng (scratching the back) phải diễn ra mềm mại, giữ cho mặt vợt hơi nghiêng mở như thể bạn không muốn làm đổ bất kỳ giọt rượu nào trên chiếc khay đó.
+</p>
+
+<p>
+  Hình ảnh trực quan này giúp thả lỏng hoàn toàn khớp vai, mở rộng lồng ngực và cho phép đầu vợt rơi tự do xuống phía sau lưng để tích lũy thế năng tối đa trước khi vút lên chạm bóng.
+</p>
+
+<h2 class="section-title">Chương 13: Chuyển Trọng Tâm & Nhịp Điệu Giao Bóng (Weight Transfer & Rhythm)</h2>
+
+<p>
+  Cú giao bóng chuẩn xác có nhịp điệu mượt mà đến mức tác giả khẳng định: 'Bạn hoàn toàn có thể giao bóng theo giai điệu của một bản nhạc waltz du dương'.
+</p>
+
+<p>
+  Quy trình chuyển dịch trọng lượng cơ thể diễn ra tuần tự theo ba giai đoạn hoàn hảo:
+</p>
+
+<ol>
+  <li><strong>Giai đoạn lùi trọng tâm:</strong> Dồn trọng lượng về gót chân sau trong khi hai tay cùng bắt đầu hạ xuống nhịp nhàng.</li>
+  <li><strong>Giai đoạn tích lũy động năng:</strong> Chuyển trọng tâm lên chân trước, khuỵu gối sâu và tung bóng lên không trung theo một đường thẳng đứng ổn định phía trước trán khoảng ba mươi phân.</li>
+  <li><strong>Giai đoạn bùng nổ lên cao:</strong> Đạp mạnh hai chân đẩy cơ thể bay vút lên đón bóng ở tầm cao tối đa, gập thân trên về phía trước và kết thúc bằng việc tiếp đất êm ái bằng chân trước bên trong vạch cuối sân.</li>
+</ol>
+
+<h2 class="section-title">Chương 14: Khoa Học Xoáy Bóng Khi Giao Bóng (Service Spins)</h2>
+
+<p>
+  Sự phong phú của quả giao bóng nằm ở khả năng tạo ra các quỹ đạo xoáy biến ảo, khiến đối thủ không thể phán đoán chính xác điểm nảy của bóng:
+</p>
+
+<ul>
+  <li><strong>Cú Giao Bóng Xoáy Chém (The Slice Serve):</strong> Mặt vợt chém lướt từ trái sang phải quanh mép ngoài của quả bóng, khiến bóng bay lượn vòng ra ngoài biên và nảy là là mặt sân kéo đối thủ ra khỏi sân đấu.</li>
+  <li><strong>Cú Giao Bóng Xoáy Cầu Vồng (The Topspin Serve):</strong> Vợt vuốt mạnh từ dưới lên trên qua đỉnh quả bóng, tạo lực ép khí động học giúp bóng bay vọt qua lưới an toàn và nảy bổng vượt quá tầm vai của đối thủ.</li>
+  <li><strong>Cú Giao Bóng Xoắn Đổi Hướng (The American Twist):</strong> Sự kết hợp tinh tế giữa độ xoáy topspin và sidespin, khiến quả bóng sau khi chạm đất sẽ bất ngờ nảy ngược hướng di chuyển tự nhiên, làm đối thủ hoàn toàn lúng túng.</li>
+</ul>
+
+<h2 class="section-title">Chương 15: Trả Giao Bóng - Cú Búng Cổ Tay Quyết Đoán (Return of Serve)</h2>
+
+<p>
+  Khi đứng đón quả giao bóng có tốc độ cao, bạn không có đủ thời gian để thực hiện một động tác vung vợt đầy đủ. Craig R. Wilson chỉ ra rằng bí quyết trả giao bóng thành công nằm ở <strong>'Cú búng cổ tay và chuyển hướng bóng' (A Snap of the Wrist)</strong>.
+</p>
+
+<p>
+  Hãy giữ động tác đưa vợt cực kỳ ngắn gọn, bước chân tới chặn quả bóng ngay khi nó vừa nảy lên từ mặt đất và sử dụng chính tốc độ của quả giao bóng đối phương để phản đòn sâu vào góc sân trống.
+</p>
+
+<h2 class="section-title">Chương 16 & 17: Nghệ Thuật Lốp Bóng & Đòn Bỏ Nhỏ Tinh Tế (Lob & Drop Shot)</h2>
+
+<p>
+  Một bộ kỹ năng hoàn chỉnh không thể thiếu hai vũ khí mang tính nghệ thuật và cảm giác bóng tinh tế nhất:
+</p>
+
+<ul>
+  <li><strong>Cú Lốp Bóng (The Art of Lobbing):</strong> Có hai dạng lốp bóng cơ bản: lốp phòng thủ (đưa bóng bổng lên trời cao để có thời gian phục hồi vị trí trung tâm) và lốp tấn công (tung ra bất ngờ khi đối thủ áp sát lưới với độ xoáy cuộn cắm sâu sát vạch cuối sân). Một cú lốp bóng hoàn hảo sẽ bẻ gãy hoàn toàn sự tự tin của đối thủ đang đứng lưới.</li>
+  <li><strong>Cú Bỏ Nhỏ Êm Ái & Hiểm Hóc (The Drop Shot):</strong> Động tác giả vờ như vung vợt đánh mạnh từ cuối sân nhưng vào khoảnh khắc chạm bóng, mặt vợt khẽ mở ra và trượt nhẹ dưới đáy quả bóng để hãm toàn bộ xung lực. Quả bóng bay qua mép lưới vài phân rồi rơi êm ái xuống mặt đất, buộc đối thủ phải chạy thục mạng trong sự bất lực.</li>
+</ul>
+
+<div class="key-takeaway">
+  <strong>Tầm Nhìn Trưởng Thành & Đỉnh Cao Total Health:</strong> Craig R. Wilson khép lại cuốn sách bằng lời nhắn nhủ rằng quần vợt đích thực không kết thúc khi trận đấu phân định thắng thua. Mục tiêu cao cả nhất là biến môn thể thao này thành người bạn đồng hành trọn đời, nuôi dưỡng một thân thể tráng kiện, một tâm trí thanh thản và một phong cách sống tích cực, chan hòa niềm vui qua từng năm tháng cuộc đời.
+</div>
+
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+        
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        root.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+
+        function updateThemeIcon(theme) {
+            const icon = themeToggle.querySelector('i');
+            if (theme === 'dark') {
+                icon.className = 'fa-solid fa-sun';
+            } else {
+                icon.className = 'fa-solid fa-moon';
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('reading-progress').style.width = scrolled + '%';
+        });
+    </script>
+</body>
+</html>
