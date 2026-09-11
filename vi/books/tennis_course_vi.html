@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giáo Trình Quần Vợt: Kỹ Thuật &amp; Chiến Thuật Chuẩn Đức | Tennis Unified</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #d97706;
+            --primary-dark: #92400e;
+            --secondary: #0f172a;
+            --accent: #f59e0b;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --highlight: #fffbeb;
+            --highlight-border: #fde68a;
+        }
+
+        [data-theme="dark"] {
+            --primary: #fbbf24;
+            --primary-dark: #451a03;
+            --secondary: #e2e8f0;
+            --accent: #f59e0b;
+            --bg-page: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+            --highlight: #451a03;
+            --highlight-border: #92400e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.75;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(15, 23, 42, 0.96);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .brand-logo i {
+            color: #fbbf24;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: #fbbf24;
+        }
+
+        .btn-lang {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff !important;
+        }
+
+        .btn-theme {
+            background: transparent;
+            border: none;
+            color: #cbd5e1;
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 6px;
+        }
+
+        .progress-bar-container {
+            position: fixed;
+            top: 57px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: transparent;
+            z-index: 999;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #fbbf24, #d97706);
+            transition: width 0.1s ease;
+        }
+
+        .book-hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #78350f 100%);
+            color: #ffffff;
+            padding: 48px 24px;
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(251, 191, 36, 0.2);
+            color: #fde68a;
+            border: 1px solid rgba(251, 191, 36, 0.4);
+            padding: 5px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .hero-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: #fef3c7;
+            margin-bottom: 8px;
+            font-weight: 400;
+        }
+
+        .hero-meta {
+            font-size: 0.9rem;
+            color: #fde68a;
+            margin-bottom: 24px;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: #ffffff;
+            color: #92400e;
+        }
+
+        .btn-primary:hover {
+            background: #fffbeb;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .reader-layout {
+            max-width: 1240px;
+            margin: 40px auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 80px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .toc-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-item {
+            margin-bottom: 12px;
+        }
+
+        .toc-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.88rem;
+            display: block;
+            padding: 6px 10px;
+            border-radius: 6px;
+            transition: all 0.2s;
+            line-height: 1.4;
+        }
+
+        .toc-link:hover {
+            background: var(--highlight);
+            color: var(--primary-dark);
+        }
+
+        .reader-content {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 48px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .book-part {
+            margin-bottom: 64px;
+            padding-bottom: 48px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .book-part:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        h1 {
+            font-size: 1.85rem;
+            color: var(--primary-dark);
+            margin-bottom: 24px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        h2.section-title {
+            font-size: 1.4rem;
+            color: var(--text-main);
+            margin: 32px 0 16px 0;
+            position: relative;
+            padding-left: 14px;
+        }
+
+        h2.section-title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 4px;
+            bottom: 4px;
+            width: 4px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        h3.subsection-title {
+            font-size: 1.15rem;
+            color: var(--text-main);
+            margin: 24px 0 12px 0;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-main);
+            font-size: 1.02rem;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin: 16px 0 20px 24px;
+            color: var(--text-main);
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding-left: 4px;
+        }
+
+        .quote-box {
+            background: var(--highlight);
+            border-left: 4px solid var(--primary);
+            padding: 20px 24px;
+            border-radius: 0 8px 8px 0;
+            margin: 24px 0;
+            font-style: italic;
+            color: var(--text-main);
+        }
+
+        .quote-box strong {
+            font-style: normal;
+            display: inline-block;
+            margin-top: 8px;
+            color: var(--primary-dark);
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            margin: 24px 0;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+        }
+
+        .comparison-table th {
+            background: var(--highlight);
+            color: var(--primary-dark);
+            padding: 12px 16px;
+            border: 1px solid var(--border-color);
+            text-align: left;
+            font-weight: 700;
+        }
+
+        .comparison-table td {
+            padding: 12px 16px;
+            border: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin: 28px 0;
+        }
+
+        .feature-card {
+            background: var(--highlight);
+            border: 1px solid var(--highlight-border);
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .card-icon {
+            font-size: 1.6rem;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+
+        .feature-card h4 {
+            font-size: 1.05rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        .feature-card p {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            margin-bottom: 0;
+            text-align: left;
+        }
+
+        .diagram-figure {
+            margin: 32px 0;
+            text-align: center;
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .diagram-figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        .diagram-figure figcaption {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 12px;
+            font-style: italic;
+        }
+
+        @media (max-width: 900px) {
+            .reader-layout {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                display: none;
+            }
+            .reader-content {
+                padding: 24px;
+            }
+            .hero-title {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="/vi/books/" class="brand-logo">
+                <i class="fa-solid fa-tennis-ball"></i>
+                <span>Tennis Unified</span>
+            </a>
+            <nav class="nav-links">
+                <a href="/vi/books/" class="active"><i class="fa-solid fa-book"></i> Tủ Sách</a>
+                <a href="/vi/fundamentals/"><i class="fa-solid fa-graduation-cap"></i> Nền Tảng</a>
+                <a href="/vi/stroke-analysis/"><i class="fa-solid fa-bolt"></i> Cú Đánh</a>
+                <a href="/vi/drills/"><i class="fa-solid fa-person-running"></i> Bài Tập</a>
+                <a href="/books/" data-lang-toggle="en" class="btn-lang"><i class="fa-solid fa-globe"></i> English</a>
+                <button id="theme-toggle" class="btn-theme" title="Chuyển chế độ sáng/tối"><i class="fa-solid fa-moon"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="progress-bar-container">
+        <div id="reading-progress" class="progress-bar"></div>
+    </div>
+
+    <section class="book-hero">
+        <div class="hero-container">
+            <span class="hero-badge">German Tennis Federation (DTB) • BLV / Barron's Official Curriculum</span>
+            <h1 class="hero-title">GIÁO TRÌNH QUẦN VỢT ĐỨC</h1>
+            <p class="hero-subtitle">Tennis Course: Volume 1 - Techniques and Tactics (Tennis Lehrplan)</p>
+            <p class="hero-meta">Tác giả: <strong>Peter Scholl &amp; Richard Schönborn</strong> | BLV München / Barron's, New York</p>
+            <div class="hero-actions">
+                <a href="#part1" class="btn-action btn-primary"><i class="fa-solid fa-book-open"></i> Đọc Toàn Bộ Sách</a>
+                <a href="Tennis_Course_Vietnamese_Final.pdf" class="btn-action btn-outline" download><i class="fa-solid fa-file-pdf"></i> Tải PDF In Ấn</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="reader-layout">
+        <aside class="sidebar">
+            <h3 class="toc-title"><i class="fa-solid fa-list-ol"></i> Mục Lục Cẩm Nang</h3>
+            <ul class="toc-list">
+                <li class="toc-item"><a href="#part1" class="toc-link"><strong>Phần 1:</strong> Lý Thuyết Vận Động &amp; Bộ Chân Chuyên Sâu (Chương 1 - 3)</a></li>
+                <li class="toc-item"><a href="#part2" class="toc-link"><strong>Phần 2:</strong> Cơ Học Va Chạm &amp; Đặc Tính Mặt Sân (Chương 4 - 6)</a></li>
+                <li class="toc-item"><a href="#part3" class="toc-link"><strong>Phần 3:</strong> Chiến Thuật Căn Bản &amp; Đánh Đôi Tiêu Chuẩn DTB (Chương 7 - 9)</a></li>
+                <li class="toc-item"><a href="#part4" class="toc-link"><strong>Phần 4:</strong> Cẩm Nang Kỹ Thuật &amp; Biến Thể Đỉnh Cao (Chương 10 - 12)</a></li>
+            </ul>
+        </aside>
+
+        <main class="reader-content">
+            <section id="part1" class="book-part">
+                
+<h1>PHẦN 1: LÝ THUYẾT VẬN ĐỘNG HỌC & KỸ THUẬT BỘ CHÂN CHUYÊN SÂU CỦA ĐỨC</h1>
+
+<div class="quote-box">
+  "Kỹ thuật trong quần vợt không phải là một khuôn mẫu hình thức để phô diễn vẻ đẹp cơ học; kỹ thuật là phương thức giải quyết tối ưu nhất cho một nhiệm vụ chiến thuật cụ thể dưới các định luật cơ sinh học chặt chẽ. Khi bạn hiểu được cấu trúc giải phẫu của từng chuyển động, bạn sẽ giải phóng cơ thể khỏi mọi sự gò bó và tạo ra những cú đánh có độ chính xác khoa học cao nhất."
+  <br><strong>— Peter Scholl & Richard Schönborn (Giáo Trình Chuẩn Liên Đoàn Quần Vợt Đức - DTB)</strong>
+</div>
+
+<h2 class="section-title">Lời Dẫn Nhập: Hệ Thống Huấn Luyện Quần Vợt Đức Đỉnh Cao</h2>
+
+<p>
+  Liên đoàn Quần vợt Đức (Deutscher Tennis Bund - DTB) là một trong những tổ chức thể thao danh giá và thành công nhất thế giới, nơi đã sản sinh ra những huyền thoại vĩ đại thống trị mọi mặt sân như Boris Becker, Steffi Graf và Michael Stich. Đứng sau những chiến tích phi thường đó là một hệ thống giáo trình huấn luyện khoa học, chuẩn hóa và bài bản bậc nhất hành tinh.
+</p>
+
+<p>
+  Tác phẩm <em>Tennis Course: Volume 1 - Techniques and Tactics</em> (nguyên tác tiếng Đức: <em>Tennis Lehrplan, Band 1: Technik & Taktik</em> do BLV Verlagsgesellschaft GmbH München xuất bản và được Barron's phát hành toàn cầu) là bộ cẩm nang chính thức của DTB. Được biên soạn bởi đội ngũ chuyên gia cơ sinh học hàng đầu — dẫn đầu bởi Trưởng ban huấn luyện Richard Schönborn và Tiến sĩ Peter Scholl — cuốn sách mang đến cái nhìn giải phẫu học chính xác đến từng chi tiết về mọi khía cạnh của môn thể thao này.
+</p>
+
+<h2 class="section-title">Chương 1: Phân Tích Vận Động Chức Năng (Functional Movement Analysis)</h2>
+
+<p>
+  Khác với các trường phái huấn luyện cảm tính, trường phái Đức tiếp cận kỹ thuật quần vợt thông qua <strong>Phương pháp phân tích vận động chức năng</strong>. Mọi cú đánh đều được giải phẫu thành 4 thành phần cấu trúc hữu cơ:
+</p>
+
+<div class="cards-grid">
+  <div class="feature-card">
+    <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
+    <h4>1. Mục Tiêu Vận Động (Movement Goals)</h4>
+    <p>
+      Xác định chính xác các thông số vật lý của quả bóng sau khi rời mặt vợt: vận tốc góc, chiều sâu điểm rơi, biên độ bay cao hơn lưới và độ dốc quỹ đạo khi cắm xuống mặt sân.
+    </p>
+  </div>
+
+  <div class="feature-card">
+    <div class="card-icon"><i class="fa-solid fa-person-running"></i></div>
+    <h4>2. Hành Động Hỗ Trợ (Supporting Actions)</h4>
+    <p>
+      Bao gồm việc định vị bộ chân, bước chia tách (split-step), hạ thấp trọng tâm và khóa chân trụ (anchor leg). Đây là bệ phóng truyền động năng bắt buộc cho cú đánh.
+    </p>
+  </div>
+
+  <div class="feature-card">
+    <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+    <h4>3. Hành Động Chính (Main Action)</h4>
+    <p>
+      Giai đoạn tăng tốc cuối cùng của đầu vợt hướng tới điểm tiếp xúc bóng, kiểm soát góc mặt vợt trong khoảng thời gian va chạm cực ngắn (4 đến 5 mili-giây).
+    </p>
+  </div>
+</div>
+
+<figure class="diagram-figure">
+  <img src="tennis_course_assets/german_movement_analysis.png" alt="Hệ Thống Phân Tích Vận Động Chức Năng Liên Đoàn Quần Vợt Đức" />
+  <figcaption>Hình 1: Chu trình phân tích vận động chức năng và chuỗi động học khép kín theo tiêu chuẩn của Liên đoàn Quần vợt Đức (DTB). Bốn giai đoạn tương tác chặt chẽ từ mục tiêu vận động, hành động hỗ trợ, hành động chính đến phân tán xung lực an toàn.</figcaption>
+</figure>
+
+<h2 class="section-title">Chương 2: Khoa Học Bộ Chân & Chân Trụ Trọng Lực (Footwork & Anchor Leg)</h2>
+
+<p>
+  Theo Richard Schönborn, hơn 70% các cú đánh hỏng trong quần vợt không bắt nguồn từ tay cầm vợt, mà bắt nguồn từ việc bộ chân không đưa được cơ thể vào vị trí tiếp xúc lý tưởng trước khi vung vợt.
+</p>
+
+<div class="table-responsive">
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>Thành Phần Bộ Chân</th>
+        <th>Phân Tích Cơ Sinh Học Của DTB</th>
+        <th>Tác Động Quyết Định Lên Cú Đánh</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Tư thế sẵn sàng & Bước chia tách (Split-Step)</strong></td>
+        <td>Bật nhẹ cả hai chân khi đối thủ chạm bóng, tiếp đất bằng nửa trước bàn chân với độ rộng hơn vai.</td>
+        <td>Khai thác phản xạ co giãn cơ bắp (Stretch-Shortening Cycle), cho phép bứt tốc về mọi hướng nhanh hơn 0.2 giây.</td>
+      </tr>
+      <tr>
+        <td><strong>Chân trụ nạp lực (Anchor Leg / Support Leg)</strong></td>
+        <td>Chân cùng phía với hướng bóng (chân phải cho cú thuận tay của người thuận tay phải) cắm vững chãi xuống mặt sân và khuỵu gối 110-120 độ.</td>
+        <td>Tích lũy thế năng đàn hồi từ phản lực mặt đất, làm trục xoay trung tâm để giải phóng lực hông và thân trên.</td>
+      </tr>
+      <tr>
+        <td><strong>Chân bật giải phóng (Jumping / Drive Leg)</strong></td>
+        <td>Đạp mạnh duỗi thẳng khớp gối và cổ chân ngay tại thời điểm bắt đầu vung vợt về phía trước.</td>
+        <td>Nâng toàn bộ khối lượng cơ thể bay lên và tiến về phía bóng, tạo ra độ nặng tối đa cho đường bóng.</td>
+      </tr>
+      <tr>
+        <td><strong>Bước điều chỉnh cự ly nhỏ (Adjustment Steps)</strong></td>
+        <td>Sử dụng các bước nhấp chân li ti tốc độ cao trong 0.5 mét cuối cùng trước bóng.</td>
+        <td>Triệt tiêu sai số cự ly, đảm bảo bóng luôn rơi vào đúng điểm ngọt của mặt phẳng tiếp xúc thẳng đứng.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 class="section-title">Chương 3: Nguyên Lý Cơ Sinh Học Chuyên Sâu Trong Huấn Luyện DTB</h2>
+
+<p>
+  Giáo trình của Đức định hình ba nguyên lý cơ học bất biến mà mọi vận động viên đỉnh cao đều phải tuân thủ:
+</p>
+
+<ol>
+  <li><strong>Nguyên lý gia tốc chuỗi liên hoàn (Kinetic Chain Principle):</strong> Lực đánh bóng phải được truyền tuần tự từ các nhóm cơ lớn và chậm (chân, hông) sang các nhóm cơ trung bình (lưng, ngực, vai) và kết thúc ở các nhóm cơ nhỏ và nhanh (cẳng tay, bàn tay). Mọi sự đứt gãy trong chuỗi truyền lực này đều làm suy giảm uy lực và gây chấn thương dây chằng.</li>
+  <li><strong>Nguyên lý bảo toàn xung lượng góc:</strong> Khi xoay hông và vai về phía trước, việc giữ cánh tay không thuận thu gọn gần ngực giúp tăng tốc độ góc của thân trên theo định luật bảo toàn mô-men động lượng.</li>
+  <li><strong>Nguyên lý mặt phẳng tiếp xúc tối ưu:</strong> Khoảng cách từ trục cơ thể tới điểm chạm bóng phải đảm bảo cánh tay không bị co rúm sát người (mất đòn bẩy) và cũng không bị với quá xa (mất sự thăng bằng trọng tâm).</li>
+</ol>
+
+            </section>
+            
+            <section id="part2" class="book-part">
+                
+<h1>PHẦN 2: CƠ HỌC VA CHẠM, ĐỘNG LỰC HỌC QUỸ ĐẠO & ĐẶC TÍNH MẶT SÂN</h1>
+
+<div class="quote-box">
+  "Khoảnh khắc va chạm giữa mặt vợt và quả bóng chỉ kéo dài vỏn vẹn 4 đến 5 mili-giây, trên một quãng đường dịch chuyển chưa đầy 2 centimet. Trong tích tắc ngắn ngủi hơn một cái chớp mắt đó, mọi thông số về tốc độ, góc thoát bóng và độ xoáy đã được định đoạt hoàn toàn. Hiểu được cơ học va chạm chính là chìa khóa để làm chủ quỹ đạo đường bóng trên mọi mặt sân thi đấu."
+  <br><strong>— Peter Scholl (Tennis Lehrplan)</strong>
+</div>
+
+<h2 class="section-title">Chương 4: Cơ Học Va Chạm Giữa Mặt Lưới & Quả Bóng (Racket-Ball Interaction)</h2>
+
+<p>
+  Dưới ống kính phân tích của các phòng thí nghiệm thể thao Đức, khoảnh khắc tiếp xúc bóng diễn ra theo các quy luật vật lý cực kỳ khắt khe:
+</p>
+
+<div class="cards-grid">
+  <div class="feature-card">
+    <div class="card-icon"><i class="fa-solid fa-stopwatch"></i></div>
+    <h4>Thời Gian Tiếp Xúc Cực Ngắn (4 - 5 ms)</h4>
+    <p>
+      Thời gian bóng nén vào mặt lưới ngắn đến mức não bộ con người hoàn toàn không thể đưa ra bất kỳ mệnh lệnh cơ học nào để thay đổi đường bóng trong lúc va chạm đang diễn ra. Mọi góc mặt vợt phải được cố định vững chắc từ trước đó.
+    </p>
+  </div>
+
+  <div class="feature-card">
+    <div class="card-icon"><i class="fa-solid fa-compress"></i></div>
+    <h4>Độ Biến Dạng Của Dây & Quả Bóng</h4>
+    <p>
+      Khi chạm bóng ở vận tốc cao, quả bóng nỉ bị nén bẹp tới một nửa đường kính của nó, đồng thời mặt lưới võng sâu ra sau. Độ căng của dây (String Tension) quyết định tỷ lệ giữa khả năng trợ lực và khả năng kiểm soát bóng.
+    </p>
+  </div>
+
+  <div class="feature-card">
+    <div class="card-icon"><i class="fa-solid fa-hand"></i></div>
+    <h4>Hành Động Khớp Cổ Tay Đúng Chuẩn</h4>
+    <p>
+      Cổ tay trong quần vợt không phải là một khớp gập tự do. Nó được giữ ở tư thế hơi ngửa về sau (Wrist Extension) và khóa cứng như bê tông tại thời điểm va chạm để chống lại mô-men xoắn của quả bóng bay tới.
+    </p>
+  </div>
+</div>
+
+<h2 class="section-title">Chương 5: Động Lực Học Quỹ Đạo Bay & Sự Tương Tác Mặt Sân</h2>
+
+<p>
+  Quả bóng sau khi rời mặt vợt chịu sự tác động đồng thời của ba lực cơ bản: trọng lực kéo bóng xuống, lực cản không khí làm chậm tốc độ, và lực nâng khí động học Magnus sinh ra từ độ xoáy của bóng:
+</p>
+
+<div class="table-responsive">
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>Loại Mặt Sân Thi Đấu</th>
+        <th>Hệ Số Ma Sát & Độ Nảy Của Bóng</th>
+        <th>Yêu Cầu Thích Ứng Kỹ Thuật Theo Chuẩn Đức</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Sân Đất Nện (Clay Courts)</strong></td>
+        <td>Hệ số ma sát rất cao, làm giảm 40% tốc độ bay ngang của bóng sau khi nảy, bóng nảy cao và cuộn mạnh.</td>
+        <td>Sử dụng thế đứng mở (Open Stance), đánh bóng với độ xoáy cuộn topspin cực lớn để đẩy đối thủ lùi xa, làm chủ kỹ thuật trượt (Sliding) vào bóng bằng chân trụ ngoài.</td>
+      </tr>
+      <tr>
+        <td><strong>Sân Cỏ (Grass Courts)</strong></td>
+        <td>Hệ số ma sát cực thấp, bóng trượt lướt sát mặt đất với góc nảy rất thấp và tốc độ giữ nguyên.</td>
+        <td>Hạ thấp trọng tâm tối đa bằng cách khuỵu sâu hai gối, sử dụng cú cắt bóng trượt (Slice) hiểm hóc và chiến thuật giao bóng lên lưới tấn công chớp nhoáng.</td>
+      </tr>
+      <tr>
+        <td><strong>Sân Cứng (Hard Courts)</strong></td>
+        <td>Độ nảy đều đặn, trung thực và phản ánh chính xác lực phát của tay vợt.</td>
+        <td>Phát huy lối đánh đôi công cuối sân hiện đại, kết hợp giữa những cú bạt phẳng uy lực và những đường bóng chéo sân xoáy sâu.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 class="section-title">Chương 6: Hệ Thống Cầm Vợt Tiêu Chuẩn Quốc Tế</h2>
+
+<p>
+  Giáo trình DTB tiêu chuẩn hóa các kiểu cầm vợt dựa trên vị trí của khớp đốt ngón trỏ và lòng bàn tay trên 8 cạnh của cán vợt bát giác:
+</p>
+
+<ul>
+  <li><strong>Cầm vợt kiểu Miền Đông (Eastern Forehand):</strong> Khớp ngón trỏ đặt tại cạnh số 3. Tạo sự ổn định cơ học tuyệt vời cho các cú đánh ngang hông và đòn bạt phẳng xuyên sân.</li>
+  <li><strong>Cầm vợt kiểu Bán Tây (Semi-Western):</strong> Khớp ngón trỏ nằm tại cạnh số 4. Là tiêu chuẩn vàng của quần vợt hiện đại, cho phép vung vợt với tốc độ đầu vợt cực lớn để tạo xoáy topspin nặng trên sân đất nện và sân cứng.</li>
+  <li><strong>Cầm vợt kiểu Continental (Cầm Búa):</strong> Khớp ngón trỏ đặt tại cạnh số 2. Kiểu cầm bắt buộc cho mọi cú giao bóng, cú bắt volley thuận/trái, cú đập bóng overhead và cú cắt bóng slice.</li>
+  <li><strong>Cầm vợt trái tay hai tay (Two-Handed Backhand Grip):</strong> Tay thuận cầm kiểu Continental hoặc Eastern trái tay ở đáy cán vợt, tay không thuận cầm kiểu Eastern hoặc Semi-Western thuận tay ở phía trên để làm động cơ chính đẩy bóng.</li>
+</ul>
+
+            </section>
+            
+            <section id="part3" class="book-part">
+                
+<h1>PHẦN 3: HỆ THỐNG CHIẾN THUẬT CĂN BẢN & MA TRẬN ĐÁNH ĐÔI TIÊU CHUẨN DTB</h1>
+
+<div class="quote-box">
+  "Chiến thuật không phải là điều gì đó diễn ra ngẫu nhiên hay phụ thuộc vào cảm hứng nhất thời; chiến thuật là một khoa học có cấu trúc logic chặt chẽ. Mỗi quyết định đánh bóng của bạn phải dựa trên ba tham số: vị trí của bạn trên sân, vị trí của đối thủ và đặc tính của quả bóng đang bay tới. Khi bạn làm chủ được 4 tình huống chiến thuật cơ bản, bạn sẽ luôn biết chính xác mình phải làm gì trong từng phần nghìn giây."
+  <br><strong>— Richard Schönborn (Trưởng Ban Huấn Luyện DTB)</strong>
+</div>
+
+<h2 class="section-title">Chương 7: Phân Biệt Chiến Lược & Chiến Thuật (Strategy vs. Tactics)</h2>
+
+<p>
+  Trong hệ thống lý luận của Liên đoàn Quần vợt Đức, sự phân định giữa Chiến lược và Chiến thuật được vạch ra vô cùng sáng rõ:
+</p>
+
+<ul>
+  <li><strong>Chiến Lược (Strategy):</strong> Là kế hoạch tổng thể dài hạn được vạch ra trước khi bước vào trận đấu, dựa trên việc phân tích điểm mạnh, điểm yếu, thể lực và tâm lý của đối thủ so với bản thân (Ví dụ: "Hôm nay tôi sẽ kiên trì khoét sâu vào cú trái tay của đối phương và kéo dài các loạt bóng bền để vắt kiệt thể lực của họ").</li>
+  <li><strong>Chiến Thuật (Tactics):</strong> Là các quyết định hành động cụ thể trong từng pha bóng để giải quyết một tình huống tức thời trên sân (Ví dụ: "Đối thủ vừa trả bóng ngắn, tôi lập tức thực hiện cú tiếp cận dọc dây và tiến lên chiếm lưới").</li>
+</ul>
+
+<h2 class="section-title">Chương 8: Bốn Tình Huống Chiến Thuật Cơ Bản Của DTB</h2>
+
+<p>
+  Toàn bộ các pha bóng trong quần vợt từ cấp độ phong trào đến Grand Slam đều có thể quy về 4 tình huống chiến thuật nền tảng:
+</p>
+
+<div class="cards-grid">
+  <div class="feature-card">
+    <div class="card-icon"><i class="fa-solid fa-play"></i></div>
+    <h4>1. Tình Huống Khởi Đầu (Serve & Return)</h4>
+    <p>
+      Giai đoạn thiết lập quyền kiểm soát điểm số. Người giao bóng tìm cách chiếm thế chủ động ngay từ cú chạm bóng đầu tiên; người trả giao bóng tập trung hóa giải uy lực và đưa điểm số về trạng thái trung lập.
+    </p>
+  </div>
+
+  <div class="feature-card">
+    <div class="card-icon"><i class="fa-solid fa-arrows-left-right"></i></div>
+    <h4>2. Tình Huống Đấu Bền Trung Lập (Neutral Rally)</h4>
+    <p>
+      Cả hai tay vợt đều đang đứng sau vạch baseline. Mục tiêu số một là duy trì chiều sâu của đường bóng cách vạch cuối sân 1 mét, kiểm soát nhịp độ an toàn và kiên nhẫn chờ đợi cơ hội đối thủ phạm sai lầm.
+    </p>
+  </div>
+
+  <div class="feature-card">
+    <div class="card-icon"><i class="fa-solid fa-forward"></i></div>
+    <h4>3. Tình Huống Tấn Công (Offensive Phase)</h4>
+    <p>
+      Xuất hiện ngay khi nhận diện được một quả bóng ngắn của đối phương. Bạn chủ động bước vào sân đón bóng sớm, tung cú tiếp cận sâu ép đối thủ lùi xa và tiến lên lưới dứt điểm điểm số.
+    </p>
+  </div>
+
+  <div class="feature-card">
+    <div class="card-icon"><i class="fa-solid fa-shield"></i></div>
+    <h4>4. Tình Huống Phòng Thủ (Defensive Phase)</h4>
+    <p>
+      Khi bạn bị đối phương đẩy ra xa khỏi sân hoặc dồn vào thế bí. Mục tiêu không phải là ghi điểm liều lĩnh, mà là dùng cú lốp bóng cao hoặc cắt bóng sâu để kéo dài thời gian bóng bay, giúp bạn kịp phục hồi vị trí trung tâm.
+    </p>
+  </div>
+</div>
+
+<figure class="diagram-figure">
+  <img src="tennis_course_assets/tactical_matrix_dtb.png" alt="Ma Trận 4 Tình Huống Chiến Thuật Cơ Bản Theo Chuẩn Liên Đoàn Đức" />
+  <figcaption>Hình 2: Ma trận 4 tình huống chiến thuật cơ bản theo chuẩn Liên đoàn Quần vợt Đức (DTB). Cấu trúc logic phân loại rõ ràng trạng thái thi đấu, giúp người chơi đưa ra quyết định chọn cú đánh tối ưu nhất theo xác suất toán học.</figcaption>
+</figure>
+
+<h2 class="section-title">Chương 9: Nghệ Thuật Đánh Đôi Tiêu Chuẩn Đức (DTB Doubles Tactics)</h2>
+
+<p>
+  Trong giáo trình đào tạo đội tuyển của Đức, đánh đôi được coi là đỉnh cao của sự phối hợp không gian hình học và tốc độ phản xạ:
+</p>
+
+<div class="table-responsive">
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>Chiến Thuật Đánh Đôi</th>
+        <th>Mô Tả Triển Khai Trên Sân</th>
+        <th>Mục Đích Tác Chiến Của Đội Tuyển Đức</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Chiếm lĩnh lưới song song (Parallel Net Control)</strong></td>
+        <td>Cả hai tay vợt nhanh chóng di chuyển lên lưới tạo thành một bức tường chắn cách lưới từ 2 đến 3 mét.</td>
+        <td>Bịt kín mọi góc đánh chéo sân, tạo áp lực thị giác nghẹt thở buộc đối thủ phải tung ra cú lốp bóng rủi ro cao.</td>
+      </tr>
+      <tr>
+        <td><strong>Đội hình chữ I (The I-Formation)</strong></td>
+        <td>Người đứng lưới cúi thấp người ngay trên vạch chữ T trung tâm, người giao bóng đứng sát chấm giữa baseline.</td>
+        <td>Gây rối loạn thị giác cho người trả giao bóng, che giấu hoàn toàn hướng di chuyển vồ bóng (Poach) của người đứng lưới.</td>
+      </tr>
+      <tr>
+        <td><strong>Tấn công vào trung lộ (Center T Attack)</strong></td>
+        <td>Mọi cú volley hoặc giao bóng đều nhắm vào chính giữa hai đối thủ.</td>
+        <td>Khai thác điểm mù giao tiếp giữa hai người, triệt tiêu góc đánh hiểm hóc và loại trừ nguy cơ bóng bị phản công dọc dây.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+            </section>
+            
+            <section id="part4" class="book-part">
+                
+<h1>PHẦN 4: CẨM NANG KỸ THUẬT TOÀN DIỆN & CÁC BIẾN THỂ ĐỈNH CAO</h1>
+
+<div class="quote-box">
+  "Một tay vợt vĩ đại không chỉ sở hữu những cú đánh cơ bản vững như bàn thạch, mà còn phải làm chủ toàn bộ kho vũ khí biến thể kỹ thuật phong phú: từ cú bỏ nhỏ êm ái như nhung, cú lốp bóng topspin cuộn cắm sâu, cho đến cú đập bóng bật nhảy (Jump Smash) sấm sét. Sự đa dạng kỹ thuật chính là vũ khí tối thượng để bẻ gãy mọi pháo đài phòng thủ."
+  <br><strong>— Peter Scholl & Jock Reetz</strong>
+</div>
+
+<h2 class="section-title">Chương 10: Đòn Đánh Nền Tảng: Forehand & Backhand Đỉnh Cao</h2>
+
+<p>
+  Giáo trình DTB phân tích chi tiết cơ cấu giải phẫu của hai đòn đánh quyết định từ vạch cuối sân:
+</p>
+
+<div class="cards-grid">
+  <div class="feature-card">
+    <div class="card-icon"><i class="fa-solid fa-hand-back-fist"></i></div>
+    <h4>Cú Thuận Tay Topspin Hiện Đại (Modern Forehand)</h4>
+    <p>
+      Sử dụng kiểu cầm Bán Tây (Semi-Western) kết hợp thế đứng mở (Open Stance). Đầu vợt hạ sâu dưới bóng, cánh tay vung từ trong ra ngoài và gạt vợt qua vai theo động tác "gạt nước kính ô tô" (Windshield Wiper) để tạo độ cuộn cực đại.
+    </p>
+  </div>
+
+  <div class="feature-card">
+    <div class="card-icon"><i class="fa-solid fa-people-robbery"></i></div>
+    <h4>Cú Trái Tay Hai Tay Uy Lực (Two-Handed Drive)</h4>
+    <p>
+      Tay không thuận đóng vai trò cánh tay phát lực chính, đẩy bóng xuyên suốt qua điểm tiếp xúc trước hông phải. Giữ thăng bằng trục cơ thể hoàn hảo và xoay vai trọn vẹn kết thúc sau gáy.
+    </p>
+  </div>
+
+  <div class="feature-card">
+    <div class="card-icon"><i class="fa-solid fa-feather"></i></div>
+    <h4>Cú Trái Tay Cắt Bóng Bám Sân (Backhand Slice)</h4>
+    <p>
+      Cầm kiểu Continental. Đưa vợt cao ngang vai, chém mặt vợt từ trên xuống dưới và trượt xuyên qua đáy quả bóng, tạo ra quỹ đạo bóng bay là là sát mép lưới và trượt cắm nhanh sau khi chạm đất.
+    </p>
+  </div>
+</div>
+
+<h2 class="section-title">Chương 11: Các Biến Thể Kỹ Thuật Đỉnh Cao Của Nhà Vô Địch</h2>
+
+<p>
+  Những pha bóng xuất sắc nhất tại các giải đấu Grand Slam thường được định đoạt bởi các đòn đánh biến thể tinh tế:
+</p>
+
+<div class="table-responsive">
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>Biến Thể Kỹ Thuật Đỉnh Cao</th>
+        <th>Cơ Chế Thực Hiện Cơ Sinh Học</th>
+        <th>Hiệu Quả Chiến Thuật Trên Sân</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Cú Bỏ Nhỏ Tinh Tế (The Drop Shot)</strong></td>
+        <td>Ngụy trang hoàn hảo động tác chuẩn bị giống hệt một cú bạt bóng uy lực, sau đó hãm đà đột ngột và đệm nhẹ vào đáy quả bóng với mặt vợt mở rộng.</td>
+        <td>Bóng rơi ngay sát chân lưới và chết đứng sau hai nhịp nảy ngắn, trừng phạt đối thủ đứng quá sâu sau vạch baseline.</td>
+      </tr>
+      <tr>
+        <td><strong>Cú Lốp Bóng Topspin (Topspin Lob)</strong></td>
+        <td>Khuỵu sâu gối đón bóng thấp, vuốt ngược đầu vợt lên trời với tốc độ cực lớn để tạo xoáy cuộn mãnh liệt.</td>
+        <td>Bóng bay vút qua tầm với của người đứng lưới, sau đó cắm chúc xuống mặt sân và nảy vọt ra xa về phía hàng rào.</td>
+      </tr>
+      <tr>
+        <td><strong>Cú Đập Bật Nhảy (Jump Smash / Boris Becker Style)</strong></td>
+        <td>Nhảy bật bằng cả hai chân lên không trung đón bóng ở điểm cao nhất, hoán đổi vị trí chân trên không và gập cổ tay cắm bóng.</td>
+        <td>Tạo góc cắm bóng dốc đứng và tốc độ kinh hoàng, không cho đối thủ bất kỳ cơ hội phòng thủ nào.</td>
+      </tr>
+      <tr>
+        <td><strong>Cú Giao Bóng Kick Serve (American Twist)</strong></td>
+        <td>Tung bóng hơi ra sau đầu góc 11 giờ, vung vợt chải từ góc 7 giờ lên góc 1 giờ trên mặt bóng khi tiếp xúc.</td>
+        <td>Bóng nảy vọt lên cao ngang vai hoặc mặt của đối thủ và giạt mạnh sang góc trái, vô hiệu hóa hoàn toàn cú trả giao bóng của họ.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 class="section-title">Chương 12: Cá Nhân Hóa Kỹ Thuật Trong Quần Vợt Đỉnh Cao</h2>
+
+<p>
+  Các tác giả của Liên đoàn Quần vợt Đức đúc kết rằng: mặc dù các nguyên lý cơ sinh học là phổ quát và bất biến, mỗi vận động viên vĩ đại đều có quyền phát triển những nét phong cách cá nhân độc đáo phù hợp với cấu trúc giải phẫu và cá tính của riêng mình.
+</p>
+
+<ol>
+  <li><strong>Tôn trọng cấu trúc cơ thể tự nhiên:</strong> Một tay vợt có chiều cao vượt trội như Boris Becker sẽ có chuỗi phát lực giao bóng khác với một tay vợt có đôi chân tốc độ phi thường như Steffi Graf.</li>
+  <li><strong>Tính hiệu quả là thước đo cao nhất:</strong> Một động tác kỹ thuật chỉ được coi là hoàn hảo khi nó mang lại tính ổn định cao nhất dưới áp lực thi đấu căng thẳng nhất và không gây tổn hại cho sức khỏe cơ xương khớp lâu dài.</li>
+  <li><strong>Học tập suốt đời:</strong> Quần vợt đỉnh cao liên tục biến đổi với sự phát triển của công nghệ vợt, dây và mặt sân. Người chơi thông thái luôn duy trì tinh thần cầu thị, liên tục tinh chỉnh kỹ thuật để giữ vững ngọn lửa đam mê và phong độ đỉnh cao.</li>
+</ol>
+
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+        
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        root.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+
+        function updateThemeIcon(theme) {
+            const icon = themeToggle.querySelector('i');
+            if (theme === 'dark') {
+                icon.className = 'fa-solid fa-sun';
+            } else {
+                icon.className = 'fa-solid fa-moon';
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('reading-progress').style.width = scrolled + '%';
+        });
+    </script>
+</body>
+</html>
