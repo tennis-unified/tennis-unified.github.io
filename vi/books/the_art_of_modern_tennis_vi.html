@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nghệ Thuật Quần Vợt Hiện Đại (The Art of Modern Tennis) — Tennis Future Lab | Tennis Unified</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0f766e;
+            --primary-dark: #134e4a;
+            --secondary: #0d9488;
+            --accent: #2dd4bf;
+            --bg-page: #f0fdfa;
+            --bg-card: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border-color: #ccfbf1;
+            --highlight: #e6fffa;
+            --highlight-border: #99f6e4;
+        }
+
+        [data-theme="dark"] {
+            --primary: #2dd4bf;
+            --primary-dark: #0f172a;
+            --secondary: #14b8a6;
+            --accent: #5eead4;
+            --bg-page: #042f2e;
+            --bg-card: #111e1d;
+            --text-main: #f8fafc;
+            --text-muted: #cbd5e1;
+            --border-color: #134e4a;
+            --highlight: #0d3835;
+            --highlight-border: #0f766e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.7;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .brand-logo i {
+            color: #2dd4bf;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #2dd4bf;
+        }
+
+        .btn-lang {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff !important;
+        }
+
+        .btn-theme {
+            background: transparent;
+            border: none;
+            color: #cbd5e1;
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 6px;
+        }
+
+        .progress-bar-container {
+            position: fixed;
+            top: 57px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: transparent;
+            z-index: 999;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #2dd4bf, #0d9488);
+            transition: width 0.1s ease;
+        }
+
+        .book-hero {
+            background: linear-gradient(135deg, #0f766e 0%, #134e4a 50%, #042f2e 100%);
+            color: #ffffff;
+            padding: 48px 24px;
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(45, 212, 191, 0.2);
+            color: #ccfbf1;
+            border: 1px solid rgba(45, 212, 191, 0.4);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+            color: #ccfbf1;
+            font-style: italic;
+        }
+
+        .hero-meta {
+            font-size: 0.95rem;
+            color: #e2e8f0;
+            margin-bottom: 24px;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background: #0d9488;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #0f766e;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .reader-layout {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 40px;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 80px;
+            height: fit-content;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .toc-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .toc-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .toc-list a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s, padding-left 0.2s;
+            display: block;
+            padding: 4px 0;
+        }
+
+        .toc-list a:hover {
+            color: var(--secondary);
+            padding-left: 6px;
+        }
+
+        .reader-content {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .chapter-block {
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .chapter-block:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .chapter-header {
+            margin-bottom: 24px;
+        }
+
+        .chapter-badge {
+            display: inline-block;
+            background: var(--highlight);
+            color: var(--secondary);
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            border: 1px solid var(--highlight-border);
+        }
+
+        .chapter-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--text-main);
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+
+        .chapter-intro {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        .content-body h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin: 28px 0 14px 0;
+            color: var(--primary);
+        }
+
+        .content-body h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 18px 0 10px 0;
+        }
+
+        .content-body p {
+            margin-bottom: 16px;
+            font-size: 1rem;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        .content-body ul, .content-body ol {
+            margin: 12px 0 20px 24px;
+        }
+
+        .content-body li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: var(--highlight);
+            border-left: 4px solid var(--secondary);
+            border-radius: 0 8px 8px 0;
+            padding: 20px;
+            margin: 24px 0;
+        }
+
+        .highlight-box h4 {
+            color: var(--secondary);
+            margin-top: 0;
+        }
+
+        .figure-box {
+            margin: 32px 0;
+            text-align: center;
+        }
+
+        .figure-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .figure-caption {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        @media (max-width: 900px) {
+            .reader-layout {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                display: none;
+            }
+            .reader-content {
+                padding: 24px;
+            }
+            .hero-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="/vi/books/" class="brand-logo">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Tennis Unified Books</span>
+            </a>
+            <nav class="nav-links">
+                <a href="/vi/fundamentals/">Căn Bản</a>
+                <a href="/vi/stroke-analysis/">Phân Tích Cú Đánh</a>
+                <a href="/vi/drills/">Bài Tập</a>
+                <a href="/vi/books/">Tủ Sách</a>
+                <a href="/books/" data-lang-toggle="en" class="btn-lang"><i class="fa-solid fa-globe"></i> English</a>
+                <button class="btn-theme" id="themeToggle" aria-label="Đổi giao diện"><i class="fa-solid fa-moon"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <section class="book-hero">
+        <div class="hero-container">
+            <span class="hero-badge">Cẩm Nang Huấn Luyện Đỉnh Cao • Tennis Future Lab</span>
+            <h1 class="hero-title">NGHỆ THUẬT QUẦN VỢT HIỆN ĐẠI</h1>
+            <p class="hero-subtitle">The Art of Modern Tennis: A Complete Reference Manual for Elite Players and Coaches</p>
+            <p class="hero-meta">Bản dịch tiếng Việt chuyên sâu • Sinh cơ học chuỗi động học, giao bóng 8 giai đoạn, phân tích dữ liệu 0-4 nhịp và trạng thái Satori</p>
+            <div class="hero-actions">
+                <a href="#part1" class="btn-action btn-primary"><i class="fa-solid fa-book-reader"></i> Đọc Ngay</a>
+                <a href="The_Art_of_Modern_Tennis_Vietnamese_Final.pdf" target="_blank" class="btn-action btn-outline"><i class="fa-solid fa-file-pdf"></i> Tải Bản PDF Tiếng Việt</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="reader-layout">
+        <aside class="sidebar">
+            <div class="toc-title"><i class="fa-solid fa-list-ul"></i> Mục Lục Bản Dịch</div>
+            <ul class="toc-list">
+                <li><a href="#part1">Phần 1: Chuỗi Động Học &amp; Momen Xoắn Vùng Lõi</a></li>
+                <li><a href="#part2">Phần 2: Giao Bóng 8 Giai Đoạn &amp; Cú Thuận Tay Sức Mạnh</a></li>
+                <li><a href="#part3">Phần 3: Cú Trái Tay, Vô-Lê &amp; Cắt Slice Đa Biến</a></li>
+                <li><a href="#part4">Phần 4: Chiến Thuật Dữ Liệu &amp; Trạng Thái Satori</a></li>
+            </ul>
+        </aside>
+
+        <main class="reader-content">
+            
+<section class="chapter-block" id="part1">
+    <div class="chapter-header">
+        <span class="chapter-badge">Phần 1 · Cẩm Nang Tham Chiếu Đỉnh Cao Tennis Future Lab</span>
+        <h2 class="chapter-title">Nền Tảng Sinh Cơ Học, Chuỗi Động Học &amp; Momen Xoắn Vùng Lõi</h2>
+        <p class="chapter-intro">Giải mã bản chất cơ sinh học của quần vợt hiện đại: từ lực phản hồi mặt đất (Ground Reaction Force), hiện tượng trễ nhịp có chủ đích (deliberate time-lag) trong chuỗi động học (kinetic chain), đến momen xoắn vùng lõi (core torque) và sự phân tách hông - vai (hip-shoulder separation) của thế hệ siêu sao Sinner - Alcaraz.</p>
+    </div>
+
+    <div class="content-body">
+        <h3>1. Nghệ Thuật Quần Vợt Hiện Đại: Sự Hợp Nhất Thân Thể &amp; Tâm Trí</h3>
+        <p>Quần vợt hiện đại của thập niên 2020 không còn là cuộc đối đầu đơn thuần giữa các kỹ thuật đơn lẻ. Một nhà vô địch tương lai được định nghĩa bởi sự tích hợp liền mạch giữa một thể xác võ thuật (the martial body) và một tâm trí tự chủ có khả năng phản ứng tốc độ cao (the agentic mind).</p>
+        <p>Để đạt đến trình độ đỉnh cao, mọi cú đánh đều phải bắt nguồn từ các định luật vật lý cơ bản: định luật bảo toàn động lượng, truyền dẫn lực qua chuỗi động học và tối ưu hóa thời gian phát lực.</p>
+
+        <div class="figure-box">
+            <img src="art_modern_tennis_assets/fig1_kinetic_chain_foundations.jpg" alt="Sơ đồ phân tích chuỗi động học và nền tảng cơ sinh học">
+            <span class="figure-caption">Hình 1 (Chapter 1): Nền tảng chuỗi động học (The Kinetic Chain). Sức mạnh không bao giờ được tạo ra từ cánh tay đơn độc; nó bắt đầu từ lực nén chân xuống mặt đất, truyền qua khớp gối, xoay khung chậu, vặn xoắn thân trên và bùng nổ qua đầu vợt tại thời điểm chạm bóng.</span>
+        </div>
+
+        <h3>2. Bản Chất Của Chuỗi Động Học: Hiện Tượng Trễ Nhịp Có Chủ Đích (Deliberate Time-Lag)</h3>
+        <p>Hiểu biết mang tính cách mạng nhất trong sinh cơ học thể thao hiện đại mà các phương pháp huấn luyện truyền thống thường bỏ sót chính là: <em>Chuỗi động học không vận hành bằng cách xoay đồng thời mọi bộ phận, mà bằng sự trễ nhịp có tính toán (deliberate time-lag).</em></p>
+        <p>Mỗi mắt xích trong chuỗi cơ thể (bàn chân &rarr; cẳng chân &rarr; đùi &rarr; khung chậu &rarr; thân trên &rarr; vai &rarr; cánh tay &rarr; cẳng tay &rarr; cổ tay) sẽ lần lượt tăng tốc đến vận tốc tối đa, sau đó phanh lại (deceleration) đột ngột để truyền toàn bộ động lượng sang mắt xích tiếp theo. Hiện tượng này tương tự như chuyển động của một chiếc roi da hoặc chiếc roi quất — năng lượng được dồn nén và gia tốc lũy tiến qua từng phân đoạn hẹp dần cho đến khi giải phóng vận tốc âm thanh ở đầu mút.</p>
+
+        <div class="highlight-box">
+            <h4>Khái Niệm Khớp 9 Bậc Tự Do (9 Degrees of Freedom)</h4>
+            <p>Cánh tay con người có đến 9 bậc tự do chỉ tính riêng ở khớp vai, khuỷu tay và cổ tay (chưa kể các khớp ngón tay). Điều này tạo ra vô số khả năng chuyển động nhưng cũng là nguồn gốc của sự thiếu ổn định. Một tay vợt đẳng cấp thế giới thành công trong việc "khóa cứng" các bậc tự do không cần thiết, biến cánh tay thành một đòn bẩy truyền lực đàn hồi tự động thay vì dùng cơ bắp cánh tay để gồng cứng đánh bóng.</p>
+        </div>
+
+        <div class="figure-box">
+            <img src="art_modern_tennis_assets/fig2_core_torque_rotational_power.jpg" alt="Sơ đồ momen xoắn vùng lõi và sức mạnh xoay trục">
+            <span class="figure-caption">Hình 2 (Chapter 2): Vùng lõi cơ thể, momen xoắn và sức mạnh xoay trục (Core, Torque &amp; Rotational Power). Phân tích chu kỳ kéo dãn - co ngắn (stretch-shortening cycle) của nhóm cơ chéo bụng và cơ lưng, tạo ra nguồn năng lượng bùng nổ cho các cú đánh hiện đại.</span>
+        </div>
+
+        <h3>3. Vùng Lõi Cơ Thể &amp; Sự Phân Tách Hông - Vai (Hip-Shoulder Separation)</h3>
+        <p>Các tay vợt ưu tú của kỷ nguyên mới như Jannik Sinner và Carlos Alcaraz không đơn thuần chỉ xoay vai ra sau hông trong giai đoạn mở vợt (unit turn). Đỉnh cao sinh cơ học của họ nằm ở giai đoạn khởi đầu chuyển động tiến về phía trước (forward swing):</p>
+        <ul>
+            <li><strong>Khung chậu xoay trước (Hips Initiate First):</strong> Khung chậu bắt đầu xoay về phía lưới khi vai vẫn còn đang ở vị trí xoắn cực đại ra sau. Sự chênh lệch góc giữa đường nối hai gai chậu và đường nối hai mỏm cùng vai được gọi là góc phân tách hông - vai (hip-shoulder separation angle).</li>
+            <li><strong>Tích trữ năng lượng đàn hồi (Elastic Storage):</strong> Sự phân tách này kéo căng toàn bộ hệ cơ chéo bụng (anterior/posterior oblique slings) và màng cân cơ lưng ngực như một dây cao su kéo căng hết cỡ.</li>
+            <li><strong>Bùng nổ thụ động (Passive Whip):</strong> Khi thân trên được giải phóng, vai và cánh tay giật mạnh về phía trước với vận tốc góc cực cao mà không cần tiêu tốn năng lượng co cơ chủ động từ bắp tay.</li>
+        </ul>
+
+        <h3>4. Bộ Chân Hiện Đại: Khai Thác Lực Phản Hồi Mặt Đất (Ground Reaction Force)</h3>
+        <p>Sức mạnh bắt đầu từ mặt đất. Nếu không có lực phản hồi mặt đất (GRF), cơ thể không thể tạo ra momen xoay. Bộ chân hiện đại không chỉ là việc chạy nhanh đến bóng, mà là kỹ thuật "cắm neo" (planting) và bật nhả (uncoiling):</p>
+        <ol>
+            <li><strong>Tư thế đứng mở (Open Stance) &amp; Bán mở (Semi-Open Stance):</strong> Cho phép tích nạp tải trọng tối đa lên chân sau (loading on outside leg), chuyển đổi 100% lực đẩy thẳng đứng thành momen quay của khung chậu.</li>
+            <li><strong>Nhảy thăng bằng (Split-Step Timing):</strong> Tiếp đất bằng nửa trước bàn chân đúng vào thời điểm đối thủ vừa chạm bóng 0.15 giây, kích hoạt phản xạ co cơ đàn hồi (stretch reflex) của gân gót Achilles giúp tay vợt lao đi theo mọi hướng với độ trễ phản xạ bằng không.</li>
+        </ol>
+    </div>
+</section>
+
+
+<section class="chapter-block" id="part2">
+    <div class="chapter-header">
+        <span class="chapter-badge">Phần 2 · Cẩm Nang Tham Chiếu Đỉnh Cao Tennis Future Lab</span>
+        <h2 class="chapter-title">Cơ Học Cú Đánh Hiện Đại: Giao Bóng 8 Giai Đoạn &amp; Thuận Tay Sức Mạnh</h2>
+        <p class="chapter-intro">Phân tích mô hình sinh cơ học giao bóng hiện đại 8 giai đoạn của Tiến sĩ Mark Kovacs và Todd Ellenbecker: từ tư thế cúp vàng (trophy pose), chuyển động vai chồng vai (shoulder-over-shoulder) đến sấp cẳng tay (pronation). Giải mã cú thuận tay xoay trục hiện đại với hiện tượng trễ cổ tay (wrist lag) và gạt nước kính chắn gió (windshield wiper finish).</p>
+    </div>
+
+    <div class="content-body">
+        <h3>1. Mô Hình Giao Bóng Hiện Đại 8 Giai Đoạn (The 8-Stage Serve Model)</h3>
+        <p>Quả giao bóng là cú đánh phức tạp nhất trong cơ sinh học thể thao. Không còn là một động tác ném bóng ngây thơ, cú giao bóng của các tay vợt đẳng cấp ATP/WTA là sự kích hoạt tuần tự của chuỗi 8 mắt xích động học khép kín:</p>
+        <ol>
+            <li><strong>Giai đoạn 1: Chuẩn bị xuất phát (Start / Stance):</strong> Cân bằng trọng tâm, đặt chân kiểu Platform Stance hoặc Pinpoint Stance, căn chỉnh góc mở bàn chân để tối ưu hóa góc xoay khung chậu.</li>
+            <li><strong>Giai đoạn 2: Nhả bóng và nạp tải (Release &amp; Loading):</strong> Cánh tay tung bóng nâng lên nhẹ nhàng không gập cổ tay; đồng thời hai đầu gối khuỵu sâu (knee flexion từ 110 đến 120 độ) để nạp thế năng đàn hồi vào cơ tứ đầu đùi và gân bánh chè.</li>
+            <li><strong>Giai đoạn 3: Tư thế cúp vàng (Trophy Position):</strong> Đỉnh cao của sự tích năng. Khuỷu tay thuận co 90 độ ngang vai, mặt phẳng hai vai nghiêng dốc so với phương ngang, đầu vợt hướng lên trời.</li>
+            <li><strong>Giai đoạn 4: Hạ vợt vào túi lưng (Racquet Drop):</strong> Chân bật bung từ mặt đất, đẩy hông về phía trước sân; đầu vợt rơi tự do xuống phía sau lưng sâu nhất có thể, kéo căng tối đa cơ ngực lớn và cơ lưng rộng.</li>
+            <li><strong>Giai đoạn 5: Tăng tốc tiến lên (Forward Acceleration):</strong> Khớp vai xoay kiểu "vai chồng vai" (shoulder-over-shoulder cartwheel rotation) thay vì chỉ xoay ngang, đưa khuỷu tay và cẳng tay lao thẳng đứng lên điểm chạm.</li>
+            <li><strong>Giai đoạn 6: Điểm chạm bóng đỉnh cao (Contact):</strong> Thân người duỗi thẳng hoàn toàn ở tầm cao tối đa; cánh tay vươn thẳng đứng với góc tiếp xúc bóng hơi chếch về phía trước đầu khoảng 15-20 cm.</li>
+            <li><strong>Giai đoạn 7: Sấp cẳng tay bùng nổ (Pronation &amp; Internal Rotation):</strong> Cẳng tay và bàn tay xoay sấp từ trong ra ngoài (internal shoulder rotation &amp; forearm pronation) với vận tốc góc vượt quá 2000 độ/giây, quất mặt vợt chém ngang quả bóng.</li>
+            <li><strong>Giai đoạn 8: Hoàn tất đà và hấp thụ lực (Deceleration &amp; Finish):</strong> Vợt quét chéo xuống sườn đối diện, chân trước tiếp đất êm ái bên trong vạch cuối sân để giảm xóc và chuẩn bị cho pha bóng tiếp theo.</li>
+        </ol>
+
+        <div class="figure-box">
+            <img src="art_modern_tennis_assets/fig3_modern_serve_mechanics.jpg" alt="Sơ đồ phân tích chuyển động và chuỗi động học giao bóng hiện đại">
+            <span class="figure-caption">Hình 3 (Chapter 4): Cơ học giao bóng hiện đại (The Modern Serve). Chuyển động xoay vai chồng vai (shoulder-over-shoulder) kết hợp với hiện tượng sấp cẳng tay (pronation) tạo nên sức mạnh và độ xoáy cực đại cho quả giao bóng đỉnh cao.</span>
+        </div>
+
+        <h3>2. Cú Thuận Tay Hiện Đại: Cơ Học Độ Trễ &amp; Tốc Độ Vòng Xoáy (RPM Dynamics)</h3>
+        <p>Cú thuận tay (forehand) của quần vợt thế kỷ 21 đã tiến hóa hoàn toàn xa rời cú bạt thẳng cánh phẳng (flat drive) của thời đại vợt gỗ. Ngày nay, các siêu sao thi đấu với độ xoáy trung bình từ 3000 đến 3800 vòng/phút (RPM), tạo ra quỹ đạo bóng vồng cao qua lưới nhưng cắm dốc xuống góc sân với độ nảy bùng nổ vượt tầm vai đối thủ.</p>
+
+        <div class="figure-box">
+            <img src="art_modern_tennis_assets/fig4_modern_forehand_biomechanics.jpg" alt="Sơ đồ cơ sinh học cú thuận tay hiện đại và chu kỳ xoay thân">
+            <span class="figure-caption">Hình 4 (Chapter 6): Cơ sinh học cú thuận tay hiện đại (The Modern Forehand). Giai đoạn hạ đầu vợt tạo độ trễ cổ tay (wrist lag), kéo đầu chuôi vợt (butt cap) hướng về phía bóng trước khi vung gạt chéo kính chắn gió (windshield wiper finish).</span>
+        </div>
+
+        <div class="highlight-box">
+            <h4>Bí Quyết Kỹ Thuật Độ Trễ Cổ Tay (Wrist Lag &amp; Butt Cap Lead)</h4>
+            <p>Để đạt được vận tốc đầu vợt siêu thanh, cổ tay không được chủ động gồng cứng vung vợt. Thay vào đó, khi thân người và cánh tay trên bắt đầu xoay về phía trước, quán tính của cây vợt sẽ tự nhiên kéo cổ tay ngửa ra sau (wrist extension/lag). Đáy chuôi vợt (butt cap) sẽ dẫn đường lao thẳng về phía quả bóng. Chỉ 0.05 giây trước khi tiếp xúc, toàn bộ năng lượng dồn nén được giải phóng, giật đầu vợt vút lên theo quỹ đạo từ dưới lên trên và quét vòng qua thân người theo kiểu cần gạt nước kính chắn gió (windshield wiper).</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="chapter-block" id="part3">
+    <div class="chapter-header">
+        <span class="chapter-badge">Phần 3 · Cẩm Nang Tham Chiếu Đỉnh Cao Tennis Future Lab</span>
+        <h2 class="chapter-title">Cú Trái Tay Đỉnh Cao, Kỹ Thuật Lưới &amp; Cắt Slice Đa Biến</h2>
+        <p class="chapter-intro">So sánh sinh cơ học giữa cú trái tay một tay (One-Handed) kinh điển và hai tay (Two-Handed) hiện đại. Phân tích nguyên lý cánh tay không thuận điều khiển lực phát, cơ học vô-lê giảm bớt bậc tự do trên lưới và nghệ thuật dùng cú cắt xoáy dưới (slice) để làm thay đổi độ cao, tốc độ trận đấu.</p>
+    </div>
+
+    <div class="content-body">
+        <h3>1. Cú Trái Tay Hai Tay Hiện Đại: Bản Chất Là Cú Thuận Tay Của Tay Không Thuận</h3>
+        <p>Hơn 85% các tay vợt hàng đầu trên các bảng xếp hạng ATP và WTA hiện nay sử dụng cú trái tay hai tay (two-handed backhand). Lý do thành công vượt trội của cú đánh này bắt nguồn từ sự ổn định hình học và khả năng xử lý các đường bóng nảy cao trên vai một cách áp đảo.</p>
+        <div class="highlight-box">
+            <h4>Bí Mật Cơ Học Của Cú Trái Hai Tay</h4>
+            <p>Bản chất cơ sinh học của cú trái tay hai tay thực chất là <em>cú thuận tay được thực hiện bởi cánh tay không thuận (non-dominant hand forehand)</em>. Bàn tay thuận bên dưới chỉ đóng vai trò làm điểm tựa dẫn hướng và giữ thăng bằng cho cổ tay, trong khi bàn tay không thuận ở phía trên (cầm cán vợt kiểu Eastern hoặc Semi-Western) sẽ cung cấp hơn 70% lực đẩy và lực tạo xoáy topspin cho quả bóng.</p>
+        </div>
+
+        <h3>2. Cú Trái Tay Một Tay: Sự Tinh Tế Của Chuỗi Cơ Lưng Và Điểm Tiếp Xúc Sớm</h3>
+        <p>Mặc dù đòi hỏi thời gian chuẩn bị khắt khe hơn, cú trái tay một tay (one-handed backhand) sở hữu một vẻ đẹp thẩm mỹ tuyệt đỉnh và tầm với tự nhiên dài hơn cú hai tay. Để thực hiện cú trái một tay uy lực mà không gây chấn thương khuỷu tay (tennis elbow), người chơi phải tuân thủ nghiêm ngặt:</p>
+        <ul>
+            <li><strong>Điểm chạm bóng cực sớm phía trước thân người (Early Contact Point):</strong> Điểm chạm phải nằm phía trước đầu gối chân trước ít nhất 30 đến 40 cm. Bất kỳ sự tiếp xúc nào ngang hông hoặc sau thân người đều sẽ dồn toàn bộ phản lực bóng vào cơ duỗi cổ tay gây rách vi thể.</li>
+            <li><strong>Mở ngực và cố định vai sau (Scapular Retraction):</strong> Vào thời điểm chạm bóng, cánh tay không thuận phải giật ngược ra sau theo hướng đối diện để giữ cho thân trên không bị xoay quá đà, tạo thành một trục thăng bằng chữ T hoàn mỹ.</li>
+        </ul>
+
+        <h3>3. Lối Chơi Trên Lưới &amp; Kỹ Năng Bắt Vô-Lê (Modern Net Play)</h3>
+        <p>Trên lưới, thời gian phản ứng bị rút ngắn xuống dưới 0.4 giây. Ở khoảng cách này, mọi đà vung vợt ra sau (backswing) đều là nguyên nhân dẫn đến đánh hỏng. Nguyên lý vô-lê hiện đại đòi hỏi:</p>
+        <ol>
+            <li><strong>Giảm thiểu các bậc tự do (Degree-of-Freedom Reduction):</strong> Khóa cứng cổ tay ở tư thế mở nhẹ (wrist extension), cố định khuỷu tay phía trước thân người và dùng toàn bộ khối thân trên để chặn bước tới (punch volley) thay vì vung cổ tay.</li>
+            <li><strong>Hạ thấp trọng tâm đầu gối:</strong> Đừng cúi gập lưng để đón bóng thấp; hãy khuỵu sâu khớp háng và đầu gối sao cho mắt ngang tầm với mép lưới để đọc quỹ đạo bóng với độ chính xác quang học cao nhất.</li>
+        </ol>
+
+        <h3>4. Cú Cắt Slice Đa Biến &amp; Nghệ Thuật Phá Vỡ Nhịp Điệu</h3>
+        <p>Cú cắt xoáy dưới (backspin slice) không chỉ là một đòn cứu bóng phòng ngự bị động. Trong tay các bậc thầy như Roger Federer hay Ashleigh Barty, cú slice là một vũ khí chiến thuật có tính hủy diệt cao:</p>
+        <ul>
+            <li><strong>Quỹ đạo bóng là là mặt sân (Skidding Trajectory):</strong> Xoáy ngược khiến quả bóng cắn vào mặt sân và trượt dài ở tầm thấp dưới đầu gối đối phương, tước đoạt hoàn toàn cơ hội vung vợt thuận tay xoay trục của đối thủ.</li>
+            <li><strong>Thay đổi thời gian phản xạ:</strong> Quả bóng slice bay chậm hơn bóng topspin trong không khí nhưng nảy trượt nhanh trên mặt sân, làm đảo lộn hoàn toàn thời gian căn nhịp bước chân (footwork timing) của đối phương.</li>
+        </ul>
+    </div>
+</section>
+
+
+<section class="chapter-block" id="part4">
+    <div class="chapter-header">
+        <span class="chapter-badge">Phần 4 · Cẩm Nang Tham Chiếu Đỉnh Cao Tennis Future Lab</span>
+        <h2 class="chapter-title">Chiến Thuật Dữ Liệu, Thể Lực Đỉnh Cao &amp; Trạng Thái Tâm Trí Satori</h2>
+        <p class="chapter-intro">Ứng dụng phân tích dữ liệu lớn vào chiến thuật thi đấu: quy luật 4 nhịp đầu tiên (The First 4 Shots Rule). Chương trình chu kỳ hóa thể lực chuyên sâu 12 tuần và bí quyết giải phóng tiềm năng vô thức thông qua trạng thái tâm trí thức tỉnh Satori (The Satori State) trong kỷ nguyên quần vợt 2026.</p>
+    </div>
+
+    <div class="content-body">
+        <h3>1. Chiến Thuật Dựa Trên Dữ Liệu: Quy Luật 4 Nhịp Đầu Tiên</h3>
+        <p>Phân tích thống kê từ hơn 100,000 điểm số tại các giải Grand Slam của chuyên gia chiến lược Craig O'Shannessy đã làm thay đổi hoàn toàn cách nhìn nhận về quần vợt:</p>
+        <ul>
+            <li><strong>Khoảng điểm 0-4 lần chạm bóng (The 0-4 Rally Length):</strong> Chiếm tới 70% tổng số điểm trong một trận đấu đỉnh cao. Phần lớn điểm số được định đoạt bởi bộ ba: Giao bóng &rarr; Trả bóng &rarr; Cú đánh tiếp theo (Serve + 1 hoặc Return + 1).</li>
+            <li><strong>Khoảng điểm 5-8 lần chạm bóng:</strong> Chiếm khoảng 20% tổng số điểm.</li>
+            <li><strong>Các loạt giằng co marathon trên 9 lần chạm bóng:</strong> Chỉ chiếm dưới 10% tổng số điểm thực tế của trận đấu.</li>
+        </ul>
+
+        <div class="figure-box">
+            <img src="art_modern_tennis_assets/fig5_data_driven_tactical_patterns.jpg" alt="Sơ đồ phân tích mô thức chiến thuật dựa trên dữ liệu thi đấu">
+            <span class="figure-caption">Hình 5 (Chapter 10): Các mô thức chiến thuật dựa trên dữ liệu (Data-Driven Tactical Patterns). Thay vì tập trung vào những pha bóng bền vu vơ, các tay vợt hàng đầu xây dựng các chuỗi kịch bản có sẵn cho quả đánh Serve + 1 và Return + 1 nhằm kết thúc điểm số trong 4 nhịp đầu tiên.</span>
+        </div>
+
+        <div class="highlight-box">
+            <h4>Chiến Lược Vũ Khí Tối Thượng: Cú Serve + 1</h4>
+            <p>Ngay sau khi tung ra quả giao bóng hiểm hóc, tay vợt phải chủ động dịch chuyển bước chân để đón đầu quả bóng trả về bằng cú thuận tay sở trường (Run-around Forehand) nhắm vào góc sân trống của đối phương. Đây là công thức ghi điểm có xác suất thành công cao nhất trong toàn bộ môn thể thao quần vợt hiện đại.</p>
+        </div>
+
+        <div class="figure-box">
+            <img src="art_modern_tennis_assets/fig6_mental_satori_state.jpg" alt="Sơ đồ phân tích trạng thái tâm trí đỉnh cao Satori trong quần vợt">
+            <span class="figure-caption">Hình 6 (Chapter 12): Trạng thái tâm trí Satori (The Mental Game &amp; The Satori State). Khi các kỹ thuật cơ sinh học đã được rèn luyện đến mức tự động hóa tuyệt đối, tâm trí ý thức lùi lại phía sau để cơ thể vận hành tự do trong dòng chảy tĩnh tại (state of flow).</span>
+        </div>
+
+        <h3>2. Trò Chơi Tâm Trí: Trạng Thái Satori (The Satori State)</h3>
+        <p>Khái niệm "trí nhớ cơ bắp" (muscle memory) thực chất chỉ là một sự ẩn dụ đơn giản hóa quá mức. Toàn bộ kỹ năng vận động phức tạp đều cư ngụ trong các mạng lưới nơ-ron thần kinh vận động của não bộ và tủy sống. Khi một tay vợt bước vào thời khắc quyết định của trận chung kết Grand Slam, kẻ thù lớn nhất không phải là đối thủ ở bên kia lưới, mà là sự can thiệp quá mức của phần não ý thức (conscious mind).</p>
+        <p>Trạng thái Satori (trạng thái thức tỉnh / dòng chảy tâm lý tối thượng) đạt được khi:</p>
+        <ol>
+            <li><strong>Giải phóng hoàn toàn sự kiểm soát cơ bắp:</strong> Người chơi không còn suy nghĩ về kỹ thuật đánh bóng (không nghĩ về góc mở vợt, vị trí cổ tay hay độ khuỵu gối). Cơ thể tự động thực hiện các chuỗi động học hoàn hảo theo phản xạ thị giác.</li>
+            <li><strong>Tĩnh lặng trong tâm bão:</strong> Giữa tiếng gầm rú của 20,000 khán giả, tay vợt cảm nhận thời gian như trôi chậm lại, quả bóng bay đến trông to hơn và rõ nét hơn bình thường.</li>
+            <li><strong>Chấp nhận và buông bỏ kết quả:</strong> Tập trung 100% vào quá trình thực thi từng điểm số đơn lẻ thay vì lo âu về viễn cảnh thắng thua hay chiếc cúp vô địch.</li>
+        </ol>
+
+        <div class="highlight-box">
+            <h4>Khung Chương Trình Huấn Luyện 12 Tuần Chu Kỳ Hóa (Periodization)</h4>
+            <table style="width:100%; border-collapse: collapse; margin-top: 10px;">
+                <thead>
+                    <tr style="background:#e0e7ff; color:#1e1b4b;">
+                        <th style="padding: 8px; border: 1px solid #cbd5e1;">Giai Đoạn (Chu Kỳ)</th>
+                        <th style="padding: 8px; border: 1px solid #cbd5e1;">Mục Tiêu Thể Lực &amp; Sinh Cơ Học</th>
+                        <th style="padding: 8px; border: 1px solid #cbd5e1;">Nội Dung Trọng Tâm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;"><strong>Tuần 1 - 4: Nền tảng thể lực</strong></td>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;">Sức bền yếm khí &amp; Độ linh hoạt khớp</td>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;">Tăng cường cơ vùng lõi (core), độ linh hoạt khớp háng và vai; chạy ngắt quãng</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;"><strong>Tuần 5 - 8: Sức mạnh bùng nổ</strong></td>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;">Plyometrics &amp; Momen xoắn cơ thể</td>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;">Ném bóng tạ (medicine ball rotators), nhảy bật bục, tốc độ xuất phát bước đầu</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;"><strong>Tuần 9 - 11: Tích hợp chiến thuật</strong></td>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;">Mô phỏng thi đấu &amp; Chuỗi 0-4 nhịp</td>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;">Khoan sâu bài tập Serve + 1, Return + 1; thi đấu giao hữu áp lực cao</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;"><strong>Tuần 12: Đạt đỉnh phong độ (Tapering)</strong></td>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;">Phục hồi thần kinh &amp; Trạng thái Satori</td>
+                        <td style="padding: 8px; border: 1px solid #cbd5e1;">Giảm 50% khối lượng tập, tập trung độ bén cảm giác bóng và quán tưởng tâm lý</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+        </main>
+    </div>
+
+    <script>
+        const themeBtn = document.getElementById('themeToggle');
+        themeBtn.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            themeBtn.innerHTML = newTheme === 'dark' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+        });
+
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+    </script>
+</body>
+</html>
