@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Sơ Tuyệt Mật Quần Vợt | Tennis Unified</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #15803d;
+            --primary-dark: #14532d;
+            --secondary: #16a34a;
+            --accent: #ca8a04;
+            --bg-page: #f0fdf4;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --border-color: #dcfce7;
+            --highlight: #fefce8;
+            --highlight-border: #fde047;
+        }
+
+        [data-theme="dark"] {
+            --primary: #4ade80;
+            --primary-dark: #052e16;
+            --secondary: #22c55e;
+            --accent: #facc15;
+            --bg-page: #18181b;
+            --bg-card: #27272a;
+            --text-main: #f4f4f5;
+            --text-muted: #a1a1aa;
+            --border-color: #3f3f46;
+            --highlight: #1c1917;
+            --highlight-border: #ca8a04;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.75;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(15, 23, 42, 0.96);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .brand-logo i {
+            color: #4ade80;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: #4ade80;
+        }
+
+        .btn-lang {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff !important;
+        }
+
+        .btn-theme {
+            background: transparent;
+            border: none;
+            color: #cbd5e1;
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 6px;
+        }
+
+        .progress-bar-container {
+            position: fixed;
+            top: 57px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: transparent;
+            z-index: 999;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #4ade80, #15803d);
+            transition: width 0.1s ease;
+        }
+
+        .book-hero {
+            background: linear-gradient(135deg, #052e16 0%, #14532d 50%, #15803d 100%);
+            color: #ffffff;
+            padding: 48px 24px;
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(74, 222, 128, 0.2);
+            color: #bbf7d0;
+            border: 1px solid rgba(74, 222, 128, 0.4);
+            padding: 5px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-title {
+            font-size: 2.3rem;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            opacity: 0.95;
+            margin-bottom: 20px;
+            color: #fef08a;
+            font-style: italic;
+        }
+
+        .hero-meta {
+            font-size: 0.95rem;
+            color: #bbf7d0;
+            margin-bottom: 24px;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 11px 22px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background: #15803d;
+            color: white;
+            border: 1px solid #16a34a;
+        }
+
+        .btn-primary:hover {
+            background: #14532d;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.12);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.22);
+            transform: translateY(-2px);
+        }
+
+        .reader-layout {
+            max-width: 1240px;
+            margin: 40px auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 290px 1fr;
+            gap: 40px;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 80px;
+            height: fit-content;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+        }
+
+        .toc-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-item {
+            margin-bottom: 12px;
+        }
+
+        .toc-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: block;
+            padding: 6px 10px;
+            border-radius: 6px;
+            transition: all 0.2s;
+            line-height: 1.4;
+        }
+
+        .toc-link:hover, .toc-link.active {
+            color: var(--primary);
+            background: var(--highlight);
+            font-weight: 600;
+        }
+
+        .reader-content {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 48px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .book-part {
+            margin-bottom: 60px;
+            scroll-margin-top: 80px;
+        }
+
+        .reader-content h1 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 24px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 12px;
+        }
+
+        .reader-content h2 {
+            font-size: 1.45rem;
+            margin: 32px 0 16px 0;
+            color: var(--primary-dark);
+        }
+
+        [data-theme="dark"] .reader-content h2 {
+            color: #4ade80;
+        }
+
+        .reader-content h3 {
+            font-size: 1.2rem;
+            margin: 24px 0 12px 0;
+            color: var(--text-main);
+        }
+
+        .reader-content p {
+            margin-bottom: 18px;
+            font-size: 1.05rem;
+            color: var(--text-main);
+        }
+
+        .reader-content ul, .reader-content ol {
+            margin-bottom: 20px;
+            padding-left: 28px;
+        }
+
+        .reader-content li {
+            margin-bottom: 8px;
+            font-size: 1.02rem;
+        }
+
+        .strategy-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: 0.95rem;
+        }
+
+        .strategy-table th, .strategy-table td {
+            padding: 12px 16px;
+            border: 1px solid var(--border-color);
+            text-align: left;
+        }
+
+        .strategy-table th {
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+
+        [data-theme="dark"] .strategy-table th {
+            background: #14532d;
+            color: #4ade80;
+        }
+
+        .strategy-table tr:nth-child(even) {
+            background: rgba(0, 0, 0, 0.02);
+        }
+
+        .diagram-figure {
+            margin: 36px 0;
+            text-align: center;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+        }
+
+        .diagram-figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .diagram-figure figcaption {
+            margin-top: 14px;
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        .quote-box {
+            background: var(--highlight);
+            border-left: 4px solid var(--accent);
+            padding: 18px 24px;
+            margin: 24px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--text-main);
+        }
+
+        .key-takeaway {
+            background: #dcfce7;
+            border: 1px solid #16a34a;
+            padding: 18px 22px;
+            border-radius: 8px;
+            margin: 24px 0;
+            color: #14532d;
+        }
+
+        [data-theme="dark"] .key-takeaway {
+            background: #052e16;
+            border-color: #22c55e;
+            color: #bbf7d0;
+        }
+
+        @media (max-width: 900px) {
+            .reader-layout {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                display: none;
+            }
+            .reader-content {
+                padding: 24px;
+            }
+            .hero-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="/vi/" class="brand-logo">
+                <i class="fa-solid fa-tennis-ball"></i>
+                <span>Tennis Unified</span>
+            </a>
+            <nav class="nav-links">
+                <a href="/vi/"><i class="fa-solid fa-house"></i> Trang Chủ</a>
+                <a href="/vi/books/" class="active"><i class="fa-solid fa-book"></i> Tủ Sách</a>
+                <a href="/vi/fundamentals/"><i class="fa-solid fa-graduation-cap"></i> Căn Bản</a>
+                <a href="/vi/stroke-analysis/"><i class="fa-solid fa-chart-line"></i> Phân Tích</a>
+                <a href="/vi/drills/"><i class="fa-solid fa-person-running"></i> Bài Tập</a>
+                <a href="/books/" data-lang-toggle="en" class="btn-lang"><i class="fa-solid fa-globe"></i> English</a>
+                <button id="theme-toggle" class="btn-theme" title="Chuyển chế độ sáng/tối"><i class="fa-solid fa-moon"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="progress-bar-container">
+        <div id="reading-progress" class="progress-bar"></div>
+    </div>
+
+    <section class="book-hero">
+        <div class="hero-container">
+            <span class="hero-badge">Brassey's Sports Classics • Investigative Masterpiece</span>
+            <h1 class="hero-title">HỒ SƠ TUYỆT MẬT QUẦN VỢT</h1>
+            <p class="hero-subtitle">Tennis Confidential — Ngôi Sao Lừng Danh, Trận Cầu Bất Hủ &amp; Những Góc Khuất Lịch Sử</p>
+            <p class="hero-meta">Tác giả: <strong>Paul Fein</strong> | Lời tựa: Bud Collins | Brassey's Sports, Washington D.C. | 49 Chương Chuyên Sâu</p>
+            <div class="hero-actions">
+                <a href="#part1" class="btn-action btn-primary"><i class="fa-solid fa-book-open"></i> Đọc Toàn Bộ Sách</a>
+                <a href="Tennis_Confidential_Vietnamese_Final.pdf" class="btn-action btn-outline" download><i class="fa-solid fa-file-pdf"></i> Tải PDF In Ấn</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="reader-layout">
+        <aside class="sidebar">
+            <h3 class="toc-title"><i class="fa-solid fa-list-ol"></i> Mục Lục Cẩm Nang</h3>
+            <ul class="toc-list">
+                <li class="toc-item"><a href="#part1" class="toc-link"><strong>Phần 1:</strong> Chân Dung Huyền Thoại &amp; Bản Lĩnh Nhà Vô Địch (Chương 1 - 4)</a></li>
+                <li class="toc-item"><a href="#part2" class="toc-link"><strong>Phần 2:</strong> Xu Hướng Nóng Bỏng &amp; Cuộc Cách Mạng Quần Vợt (Chương 5 - 7)</a></li>
+                <li class="toc-item"><a href="#part3" class="toc-link"><strong>Phần 3:</strong> Huấn Luyện Đỉnh Cao, Chiến Thuật &amp; Trận Địa Grand Slam (Chương 8 - 10)</a></li>
+                <li class="toc-item"><a href="#part4" class="toc-link"><strong>Phần 4:</strong> Mười Trận Cầu Kinh Điển Vĩ Đại Nhất Lịch Sử (Chương 11 - 14)</a></li>
+            </ul>
+        </aside>
+
+        <main class="reader-content">
+            <section id="part1" class="book-part">
+                
+<h1>PHẦN 1: CHÂN DUNG HUYỀN THOẠI & BẢN LĨNH NHÀ VÔ ĐỊCH</h1>
+
+<div class="quote-box">
+  "Quần vợt đỉnh cao là sân khấu khắc nghiệt nhất của thể thao cá nhân. Ở đó, bạn trơ trọi một mình giữa bốn góc sân, không có đồng đội để chuyền bóng, không có huấn luyện viên để chỉ đạo giữa trận, và không có nơi nào để trốn chạy khỏi chính sự sợ hãi của bản thân. Những nhà vô địch vĩ đại không phải là những người không biết sợ, mà là những người biết cách thi đấu rực rỡ nhất ngay giữa tâm bão của nỗi sợ hãi."
+  <br><strong>— Paul Fein (Tennis Confidential)</strong>
+</div>
+
+<h2 class="section-title">Lời Người Dịch: Giải Mã Bản Lĩnh & Góc Khuất Quần Vợt Đỉnh Cao</h2>
+
+<p>
+  Nhà báo thể thao kỳ cựu Paul Fein — cây bút từng đoạt vô số giải thưởng của Hiệp hội Nhà văn Thể thao Mỹ và là thành viên danh dự của Liên đoàn Quần vợt Quốc tế — đã dành trọn đời mình để quan sát, phỏng vấn và mổ xẻ thế giới quần vợt chuyên nghiệp. Cuốn sách <em>Tennis Confidential: Today's Greatest Players, Matches, and Controversies</em> được ví như một 'hồ sơ tuyệt mật' phơi bày mọi khía cạnh trần trụi và lộng lẫy nhất của môn thể thao quý tộc này.
+</p>
+
+<p>
+  Tác phẩm không chỉ kể lại những chiến tích hiển hách trên bảng vàng danh dự, mà còn đào sâu vào tâm lý học phức tạp của các siêu sao: từ những giọt nước mắt cô độc trong phòng thay đồ, mối quan hệ đầy sóng gió với các bậc phụ huynh kiêm huấn luyện viên độc đoán, cho đến cuộc chiến sinh tử giữa bản ngã và khát vọng bất tử trong lịch sử thể thao.
+</p>
+
+<figure class="diagram-figure">
+  <img src="tennis_confidential_assets/tennis_evolution_eras.png" alt="Sự Tiến Hóa Chiến Thuật & Các Kỷ Nguyên Quần Vợt" />
+  <figcaption>Hình 1: Tiến trình 4 kỷ nguyên tiến hóa của quần vợt thế giới: Từ lối đánh cổ điển sân cỏ đến cuộc cách mạng cuối sân, bùng nổ thể lực và kỷ nguyên toàn năng hiện đại.</figcaption>
+</figure>
+
+<h2 class="section-title">Chương 1: Chị Em Nhà Williams - Lọ Lem Ghetto & Kỷ Nguyên Sức Mạnh</h2>
+
+<p>
+  Câu chuyện về Venus và Serena Williams bước ra từ những sân tập đầy ổ gà và tiếng súng đạn tại khu ổ chuột Compton, California để bước lên đỉnh cao thế giới là một trong những bản hùng ca vĩ đại nhất của lịch sử thể thao hiện đại.
+</p>
+
+<p>
+  Paul Fein phân tích cách mà người cha Richard Williams đã xây dựng một bản kế hoạch chi tiết dài bảy mươi tám trang ngay từ trước khi hai cô con gái chào đời. Khác với những đứa trẻ nhà nòi được nuông chiều trong các học viện danh giá ở Florida, chị em nhà Williams mang lên sân đấu một nguồn năng lượng hoang dã, sự tự tin sắt đá và một nền tảng thể lực điền kinh chưa từng có trong lịch sử quần vợt nữ:
+</p>
+
+<ul>
+  <li><strong>Cú giao bóng xé toạc không gian:</strong> Venus và Serena đã nâng tốc độ giao bóng của nữ giới lên ngang ngửa với các tay vợt nam hàng đầu (vượt mốc hai trăm kilômét một giờ), biến quả giao bóng thành vũ khí kết liễu điểm số trực tiếp.</li>
+  <li><strong>Lối đánh tấn công mở (Open Stance Aggression):</strong> Thay vì bước chân vào sân theo lối cổ điển, họ sử dụng thế đứng mở hoàn toàn để xoay hông cực mạnh, tung ra những quả thuận tay sấm sét từ mọi góc sân.</li>
+  <li><strong>Ý chí chiến đấu bất khuất:</strong> Bản lĩnh được tôi luyện từ nghịch cảnh nghèo khó giúp họ không bao giờ nao núng khi bị dẫn điểm hay đối mặt với những định kiến chủng tộc nghiệt ngã.</li>
+</ul>
+
+<h2 class="section-title">Chương 2: Andre Agassi - Tàu Lượn Cảm Xúc & Sự Tái Sinh Kỳ Diệu</h2>
+
+<p>
+  Không có sự nghiệp của một vận động viên nào chứa đựng nhiều thăng trầm, nghịch lý và kịch tính như Andre Agassi. Từ một cậu bé nổi loạn với mái tóc nhuộm highlight, chiếc quần jean bò rách rưới và khẩu hiệu nổi tiếng 'Hình ảnh là tất cả' (Image is everything), Agassi từng rơi xuống vực thẳm vị trí một trăm bốn mươi mốt thế giới vào năm 1997 do chán nản và khủng hoảng hôn nhân.
+</p>
+
+<p>
+  Thế nhưng, sự tái sinh của Agassi ở tuổi gần ba mươi để giành trọn bộ Career Grand Slam là bài học mẫu mực về sự trưởng thành tâm lý. Paul Fein vạch rõ bí mật chuyên môn đã giúp Agassi thống trị mặt sân cuối sân:
+</p>
+
+<ol>
+  <li><strong>Phản xạ trả giao bóng nhanh nhất hành tinh:</strong> Đứng sát bên trong vạch cuối sân để đón đầu quả giao bóng của đối thủ ngay khi bóng vừa nảy lên (on the rise), cướp đi toàn bộ thời gian chuẩn bị của người đối diện.</li>
+  <li><strong>Kỹ năng điều bóng như máy đo đạc:</strong> Không cần vung vợt quá mạnh, Agassi điều phối đối thủ chạy mệt nhoài từ góc này sang góc kia bằng những đường bóng bám sát vạch vôi với độ chính xác đến từng centimet.</li>
+  <li><strong>Sự biến chuyển nội tâm:</strong> Từ việc chơi quần vợt vì sự áp đặt của người cha sang việc chơi bằng lòng biết ơn và sứ mệnh truyền cảm hứng cho cộng đồng.</li>
+</ol>
+
+<h2 class="section-title">Chương 3: Pete Sampras - Đỉnh Cao Cô Đơn & Nghệ Thuật Giao Bóng Lạnh Lùng</h2>
+
+<p>
+  Nếu Agassi là ngọn lửa cuồng nhiệt thì Pete Sampras chính là khối băng vĩnh cửu. Trái ngược với lối sống ồn ào của truyền thông, Sampras chỉ quan tâm đến một điều duy nhất: chiếc cúp vô địch Grand Slam.
+</p>
+
+<p>
+  Paul Fein ca ngợi cú giao bóng của 'Pistol Pete' là quả giao bóng hoàn hảo nhất từng được tạo ra trong lịch sử quần vợt:
+</p>
+
+<ul>
+  <li><strong>Động tác tung bóng độc nhất vô nhị (Disguised Toss):</strong> Sampras tung bóng ở cùng một vị trí chính xác cho mọi loại giao bóng: dù là giao bóng phẳng nổ tia chớp vào góc chữ T, chém xoáy mang bóng ra ngoài biên hay giao bóng xoáy nảy ngược qua đầu đối thủ. Người trả giao bóng hoàn toàn mù tịt về hướng bóng cho đến khi vợt tiếp xúc bóng.</li>
+  <li><strong>Cú đập smash nhảy lơ lửng (The Slam Dunk):</strong> Khả năng bật cao như một vận động viên bóng rổ NBA để đập nát những quả lốp bóng phòng thủ của đối phương.</li>
+  <li><strong>Tâm lý thi đấu lạnh như tiền:</strong> Khả năng tung ra quả ace thứ hai ở điểm break-point mà không hề run sợ trước bất kỳ áp lực nào.</li>
+</ul>
+
+<div class="key-takeaway">
+  <strong>Bài Học Về Nhân Cách Nhà Vô Địch:</strong> Sự vĩ đại không phụ thuộc vào việc bạn có được mọi người yêu mến hay không. Sự vĩ đại được xây dựng trên nền tảng của sự kỷ luật thép, sự tập trung tuyệt đối vào mục tiêu cốt lõi và khả năng thăng hoa ở những thời khắc sinh tử nhất của cuộc chiến.
+</div>
+
+            </section>
+            
+            <section id="part2" class="book-part">
+                
+<h1>PHẦN 2: XU HƯỚNG NÓNG BỎNG & CUỘC CÁCH MẠNG QUẦN VỢT</h1>
+
+<div class="quote-box">
+  "Một đứa trẻ được cha mẹ thúc ép tập luyện quần vợt từ năm bốn tuổi có thể trở thành một nhà vô địch Grand Slam ở tuổi mười bảy, nhưng cũng có thể trở thành một kẻ tàn phế về mặt cảm xúc ở tuổi hai mươi lăm. Sự thành công trong thể thao chuyên nghiệp thường phải trả bằng một cái giá đắt đỏ mà người ngoài cuộc hiếm khi nhìn thấu."
+  <br><strong>— Paul Fein (Tennis Confidential)</strong>
+</div>
+
+<h2 class="section-title">Chương 5: Vai Trò Của Các Ông Bố HLV - Vinh Quang & Ám Ảnh (Pushy Parents)</h2>
+
+<p>
+  Hiện tượng những người cha kiêm huấn luyện viên độc đoán (The Tennis Fathers) là một chủ đề gây tranh cãi gay gắt và dai dẳng nhất trong làng banh nỉ thế giới. Paul Fein đã dành nhiều năm điều tra để đưa ra một cái nhìn toàn diện và sâu sắc về góc khuất đầy nhức nhối này.
+</p>
+
+<p>
+  Lịch sử quần vợt ghi nhận vô số trường hợp những ông bố đầy tham vọng đã biến con cái mình thành những cỗ máy thi đấu ngay từ thuở ấu thơ:
+</p>
+
+<ul>
+  <li><strong>Mike Agassi:</strong> Người cha gốc Iran đã tự chế ra cỗ máy bắn bóng có biệt danh 'Con Rồng' (The Dragon), ép cậu bé Andre phải đánh hai ngàn quả bóng mỗi ngày với niềm tin tuyệt đối rằng 'nếu con đánh một triệu quả bóng một năm, con sẽ trở thành số một thế giới'.</li>
+  <li><strong>Jim Capriati:</strong> Người cha đã đẩy cô con gái Jennifer Capriati vào vòng xoáy chuyên nghiệp từ năm mười ba tuổi, để rồi chứng kiến cô bé sụp đổ trong trầm cảm, bị bắt vì ăn cắp vặt và nghiện ngập trước khi tìm lại chính mình.</li>
+  <li><strong>Damir Dokic và Peter Graf:</strong> Những tấm gương bi kịch về sự kiểm soát bạo lực, cuồng vọng tiền bạc và những hành vi hung hãn trên khán đài, gây chấn động dư luận quốc tế.</li>
+</ul>
+
+<p>
+  Tuy nhiên, Paul Fein cũng công bằng chỉ ra rằng: nếu không có sự hy sinh tột cùng, ý chí sắt đá và niềm tin mãnh liệt của những người cha như Richard Williams hay Toni Nadal, thế giới đã không thể có những tượng đài thể thao vĩ đại. Ranh giới giữa sự tận tụy bảo bọc và sự áp đặt hủy hoại tâm lý là vô cùng mong manh.
+</p>
+
+<h2 class="section-title">Chương 6: Từ Môn Thể Thao Quý Tộc Sang Đấu Trường Khốc Liệt</h2>
+
+<p>
+  Khởi nguồn từ những bãi cỏ xanh mướt của giới quý tộc Anh quốc vào thời Nữ hoàng Victoria, quần vợt từng là một trò tiêu khiển nhã nhặn, nơi các quý ông mặc quần dài trắng và các quý bà diện váy phồng uống trà giao lưu. Tinh thần hiệp sĩ (chivalry), sự lịch thiệp và tính phong nhã từng được coi trọng hơn cả tỷ số trận đấu.
+</p>
+
+<p>
+  Thế nhưng, bước vào kỷ nguyên Open Era (từ năm 1968) và sự bùng nổ của truyền hình cáp toàn cầu, quần vợt đã lột xác hoàn toàn để trở thành một đấu trường thể thao khốc liệt bậc nhất hành tinh:
+</p>
+
+<ol>
+  <li><strong>Tốc độ và sức mạnh thể lực điền kinh:</strong> Các tay vợt ngày nay không khác gì những vận động viên chạy nước rút phối hợp với đấu sĩ quyền anh. Các trận đấu kéo dài năm set trong điều kiện nhiệt độ bốn mươi độ C đòi hỏi một thể lực phi thường.</li>
+  <li><strong>Áp lực tài chính và thương mại hóa:</strong> Tiền thưởng hàng triệu đô la cùng các hợp đồng tài trợ khổng lồ đã biến mỗi điểm số thành một thương vụ kinh tế cân não, làm biến mất tính ngây thơ lãng mạn của quá khứ.</li>
+  <li><strong>Sự suy tàn của phong cách Serve & Volley:</strong> Sự biến mất dần của lối đánh giao bóng lên lưới hoa mỹ trước bức tường phòng thủ kiên cố của các tay vợt cuối sân hiện đại.</li>
+</ol>
+
+<h2 class="section-title">Chương 7: Cuộc Cách Mạng Vợt & Khí Động Học Dây Cước (The Gear Revolution)</h2>
+
+<p>
+  Paul Fein phân tích chi tiết sự tiến hóa công nghệ đã làm thay đổi vĩnh viễn bộ mặt của môn thể thao này. Trong suốt một thế kỷ, cây vợt gỗ với mặt vợt nhỏ bé sáu mươi lăm inch vuông đã giới hạn tốc độ vung tay và độ xoáy của bóng.
+</p>
+
+<div class="key-takeaway">
+  <strong>Cách Mạng Dây Polyester (The Poly String Revolution):</strong> Sự xuất hiện của dây cước polyester (điển hình là dòng cước Luxilon) vào cuối thập niên 1990 đã tạo nên một cơn địa chấn kỹ thuật. Dây cước trơn trượt cho phép các sợi dây dọc dạt sang bên khi chạm bóng rồi lập tức bật giật trở lại (snapback), tạo ra độ xoáy cuộn cực đại lên đến bốn ngàn vòng một phút (RPM). Nhờ đó, các tay vợt có thể vung vợt hết tốc lực mà bóng vẫn cắm ngoạn mục vào sân thay vì bay ra ngoài hàng rào.
+</div>
+
+            </section>
+            
+            <section id="part3" class="book-part">
+                
+<h1>PHẦN 3: HUẤN LUYỆN ĐỈNH CAO, CHIẾN THUẬT & TRẬN ĐỊA GRAND SLAM</h1>
+
+<div class="quote-box">
+  "Một huấn luyện viên vĩ đại không cố gắng biến học trò thành một bản sao của chính mình. Người thầy vĩ đại nhìn ra vũ khí thiên bẩm độc nhất của học trò, gọt giũa nó thành một mũi dao sắc bén vô địch, và quan trọng nhất: xây dựng cho học trò một bộ giáp tâm lý bất khả xâm phạm trước sự nghi ngờ của đám đông."
+  <br><strong>— Paul Fein (Tennis Confidential)</strong>
+</div>
+
+<h2 class="section-title">Chương 8: Nghệ Thuật Huấn Luyện Đỉnh Cao (Elite Coaching Insights)</h2>
+
+<p>
+  Đằng sau ánh hào quang của mỗi nhà vô địch Grand Slam luôn có bóng dáng của những bộ óc chiến thuật lỗi lạc. Paul Fein đã có cơ hội tiếp cận và đàm đạo với những huấn luyện viên danh tiếng nhất thế giới để đúc kết những bài học xương máu về nghệ thuật huấn luyện:
+</p>
+
+<ul>
+  <li><strong>Nick Bollettieri:</strong> Người sáng lập học viện quần vợt nội trú đầu tiên trên thế giới tại Bradenton, Florida. Triết lý của Nick là sự kỷ luật quân đội, biến các cú đánh thuận tay và giao bóng thành những đòn tấn công hủy diệt không khoan nhượng. Ông đã đào tạo nên mười tay vợt số một thế giới, bao gồm Agassi, Courier, Sampras, Seles và Sharapova.</li>
+  <li><strong>Brad Gilbert và triết lý 'Thắng Xấu Xí' (Winning Ugly):</strong> Brad Gilbert đã chứng minh rằng bạn không cần phải thi đấu đẹp mắt như một bức tranh nghệ thuật để trở thành nhà vô địch. Bằng việc phân tích tỉ mỉ điểm yếu của đối thủ và kiên quyết kéo đối thủ vào vũng lầy chiến thuật khó chịu nhất, Gilbert đã đưa Agassi trở lại đỉnh cao thế giới.</li>
+  <li><strong>Paul Annacone và Toni Nadal:</strong> Sự điềm tĩnh mẫu mực của Annacone giúp Pete Sampras và Roger Federer duy trì sự tập trung tối thượng, trong khi sự nghiêm khắc và khiêm nhường tuyệt đối của Chú Toni đã nhào nặn nên một chiến binh đất nện Rafael Nadal với ý chí quật cường vô song.</li>
+</ul>
+
+<h2 class="section-title">Chương 9: Cú Thuận Tay Hiện Đại & Những Độc Chiêu Huyền Thoại</h2>
+
+<p>
+  Quần vợt hiện đại được định hình bởi sự thống trị của cú đánh thuận tay (forehand). Đây là vũ khí ghi điểm chủ lực, cho phép các tay vợt kiểm soát toàn bộ không gian sân đấu.
+</p>
+
+<p>
+  Paul Fein phân tích những bước đột phá mang tính cách mạng của cú đánh thuận tay:
+</p>
+
+<ol>
+  <li><strong>Cú Forehand Inside-Out Của Jim Courier:</strong> Thay vì đánh bóng sang bên phải, Courier né người sang góc trái để tung ra cú thuận tay chéo sân cực nặng nhắm vào điểm yếu trái tay của đối phương. Đòn đánh này đã mở ra trào lưu né trái đánh phải thống trị quần vợt suốt ba thập kỷ qua.</li>
+  <li><strong>Độ Xoáy Cuộn Đất Nện Của Gustavo Kuerten:</strong> Với kiểu cầm vợt Western cực đoan và cánh tay dài thanh mảnh, 'Guga' Kuerten tạo ra những đường bóng lượn cong kỳ ảo rơi cắm sâu vào vạch cuối sân đất nện Roland Garros, khiến các chuyên gia đương thời phải kinh ngạc.</li>
+  <li><strong>Cú Smash Nhảy Lơ Lửng (Slam Dunk) Của Pete Sampras:</strong> Tận dụng sức bật cơ bắp và khả năng định vị không gian để đập bóng từ trên không, triệt tiêu hoàn toàn cơ hội thở dốc của đối thủ.</li>
+</ol>
+
+<h2 class="section-title">Chương 10: Bốn Thánh Địa Grand Slam & Khắc Nghiệt Mặt Sân</h2>
+
+<p>
+  Không có môn thể thao nào mà sự thay đổi của mặt sân lại làm biến đổi bản chất của cuộc đấu một cách toàn diện như quần vợt. Để chạm tay vào cúp vô địch Grand Slam, một tay vợt phải là bậc thầy của sự thích nghi:
+</p>
+
+<table class="strategy-table">
+  <thead>
+    <tr>
+      <th>Giải Grand Slam</th>
+      <th>Mặt Sân Đặc Trưng</th>
+      <th>Thách Thức Khắc Nghiệt Nhất</th>
+      <th>Phẩm Chất Quyết Định Thành Bại</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Australian Open</strong></td>
+      <td>Sân cứng Plexicushion</td>
+      <td>Cái nóng thiêu đốt lên tới bốn mươi lăm độ C tại Melbourne</td>
+      <td>Sức bền thể lực chịu nhiệt và khả năng phục hồi thần tốc</td>
+    </tr>
+    <tr>
+      <td><strong>Roland Garros</strong></td>
+      <td>Bụi đất nện nung đỏ (Clay)</td>
+      <td>Bóng bay chậm, nảy cao và các pha giằng co ba mươi lần chạm vợt</td>
+      <td>Tính kiên nhẫn sắt đá, độ xoáy topspin cực đại và đôi chân trượt điêu luyện</td>
+    </tr>
+    <tr>
+      <td><strong>Wimbledon</strong></td>
+      <td>Cỏ tự nhiên truyền thống (Grass)</td>
+      <td>Bóng trơn trượt nảy thấp, tốc độ chớp nhoáng và độ trượt thất thường</td>
+      <td>Cú giao bóng sắc lẹm, hạ trọng tâm cực thấp và phản xạ lưới nhạy bén</td>
+    </tr>
+    <tr>
+      <td><strong>US Open</strong></td>
+      <td>Sân cứng DecoTurf rực lửa</td>
+      <td>Ánh đèn đêm rực sáng, gió lộng Flushing Meadows và tiếng ồn náo nhiệt</td>
+      <td>Bản lĩnh sân khấu lớn, lối chơi bão táp và khả năng chịu đựng áp lực dư luận</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="key-takeaway">
+  <strong>Định Nghĩa Của Một Huyền Thoại Vĩ Đại:</strong> Một tay vợt giỏi có thể thống trị trên mặt sân sở trường của mình. Nhưng một huyền thoại bất tử là người có khả năng chinh phục cả bốn bề mặt sân khắc nghiệt nhất thế giới, vượt qua mọi rào cản thời tiết và địa lý để giương cao cúp bạc danh giá.
+</div>
+
+            </section>
+            
+            <section id="part4" class="book-part">
+                
+<h1>PHẦN 4: MƯỜI TRẬN CẦU KINH ĐIỂN VĨ ĐẠI NHẤT LỊCH SỬ</h1>
+
+<div class="quote-box">
+  "Có những trận đấu vượt lên trên ranh giới của một cuộc thi đấu thể thao thông thường; chúng trở thành những thiên sử thi về ý chí con người, nơi sự can trường, trí tuệ chiến thuật và sự nghiệt ngã của số phận hòa quyện làm một để tạo nên những huyền thoại bất tử trường tồn cùng thời gian."
+  <br><strong>— Paul Fein (Tennis Confidential)</strong>
+</div>
+
+<h2 class="section-title">Chương 11: Băng & Lửa - Borg vs. McEnroe (Chung Kết Wimbledon 1980)</h2>
+
+<p>
+  Trận chung kết đơn nam Wimbledon năm 1980 giữa ông hoàng người Thụy Điển Bjorn Borg và chàng trai ngỗ ngược thành New York John McEnroe được toàn thể giới chuyên môn đồng thuận tôn vinh là trận cầu kịch tính và tráng lệ bậc nhất thế kỷ hai mươi.
+</p>
+
+<p>
+  Đó là cuộc đụng độ đỉnh cao giữa hai thái cực nhân cách và hai triết lý thi đấu đối lập hoàn toàn:
+</p>
+
+<ul>
+  <li><strong>Bjorn Borg (Khối Băng Vĩnh Cửu):</strong> Điềm tĩnh tuyệt đối, nhịp tim nghỉ ngơi ở mức ba mươi lăm nhịp một phút, không bao giờ để lộ bất kỳ cảm xúc vui buồn nào trên khuôn mặt, thi đấu kiên nhẫn từ cuối sân với những cú bóng xoáy cuộn topspin nặng trĩu.</li>
+  <li><strong>John McEnroe (Ngọn Lửa Rực Cháy):</strong> Bốc đồng, thiên tài, đầy giận dữ và nghệ sĩ, sẵn sàng tranh cãi nảy lửa với trọng tài và liên tục tràn lên lưới bằng những cú volley chạm bóng tinh tế đến mức ma thuật.</li>
+</ul>
+
+<p>
+  Đỉnh điểm của tấn bi kịch diễn ra trong loạt tiebreak của set thứ tư. Trong suốt hai mươi phút nghẹt thở với ba mươi tư điểm số giằng co, McEnroe đã cứu sống liên tiếp năm match-point của Borg để giành chiến thắng trong loạt tiebreak với tỷ số mười tám - mười sáu (18-16).
+</p>
+
+<p>
+  Bất kỳ tay vợt bình thường nào cũng sẽ suy sụp hoàn toàn sau khi bỏ lỡ năm cơ hội nâng cúp vô địch như vậy. Thế nhưng, bản lĩnh phi thường của Borg đã bừng sáng ở set thứ năm quyết định. Ông thắng mười chín điểm liên tiếp trong các game giao bóng của mình và kết thúc trận đấu sau ba giờ năm mươi lăm phút với tỷ số 1-6, 7-5, 6-3, 6-7, 8-6 để lần thứ năm liên tiếp nâng cao chiếc cúp mạ vàng danh giá.
+</p>
+
+<figure class="diagram-figure">
+  <img src="tennis_confidential_assets/epic_matches_matrix.png" alt="Ma Trận 5 Trận Cầu Kinh Điển Vĩ Đại Nhất Lịch Sử" />
+  <figcaption>Hình 2: Ma trận phân tích chuyên sâu 5 trận cầu kinh điển vĩ đại nhất lịch sử quần vợt: Những bài học vô giá về chiến thuật, tâm lý và bản lĩnh thép.</figcaption>
+</figure>
+
+<h2 class="section-title">Chương 12: Đòn Mưu Lược Của Arthur Ashe Quật Ngã Jimmy Connors (1975)</h2>
+
+<p>
+  Trận chung kết Wimbledon năm 1975 là một trong những bất ngờ chiến thuật lớn nhất mọi thời đại. Jimmy Connors khi đó là một cỗ máy chiến thắng bất khả chiến bại, đương kim vô địch đang ở phong độ đỉnh cao với những cú vung vợt đại bác hủy diệt đối thủ. Trong khi đó, Arthur Ashe đã ba mươi mốt tuổi và bị đánh giá ở cửa dưới hoàn toàn.
+</p>
+
+<p>
+  Nhưng Ashe cùng người bạn chiến lược Dennis Ralston đã vạch ra một kế hoạch tác chiến vô tiền khoáng hậu: <strong>tuyệt đối không cung cấp lực đánh cho Connors</strong>:
+</p>
+
+<ol>
+  <li><strong>Chiến thuật bóng lờ đờ (Junk Balling):</strong> Thay vì đọ lực với Connors, Ashe chỉ tung ra những quả bóng cắt xoáy chìm nhẹ hều lơ lửng vào giữa sân, buộc Connors phải tự thân vận động tạo lực đánh từ vị trí thấp dưới đầu gối.</li>
+  <li><strong>Những cú lốp bóng và bỏ nhỏ hiểm hóc:</strong> Phá vỡ hoàn toàn nhịp điệu quen thuộc của Connors, biến cỗ máy bão táp thành một đấu sĩ mất phương hướng liên tục tự đánh hỏng.</li>
+  <li><strong>Giao bóng góc rộng thông minh:</strong> Đẩy Connors ra xa khỏi sân để mở toang góc dứt điểm dễ dàng tại lưới.</li>
+</ol>
+
+<p>
+  Chiến thắng 6-1, 6-1, 5-7, 6-4 của Arthur Ashe không chỉ đưa ông trở thành tay vợt da màu đầu tiên vô địch Wimbledon mà còn là minh chứng hùng hồn cho chân lý: trí tuệ mưu lược luôn có thể đánh bại sức mạnh cơ bắp thuần túy.
+</p>
+
+<h2 class="section-title">Chương 13: Đại Kình Địch Lịch Sử - Chris Evert vs. Martina Navratilova (1985)</h2>
+
+<p>
+  Với tám mươi lần đối đầu trực tiếp trong suốt mười sáu năm ròng rã, cuộc so tài giữa Chris Evert và Martina Navratilova là kỳ phùng địch thủ vĩ đại nhất trong toàn bộ lịch sử thể thao nhân loại.
+</p>
+
+<p>
+  Trận chung kết Roland Garros năm 1985 trên mặt sân đất nện Paris là đỉnh cao chói lọi của cuộc thư hùng này. Navratilova khi đó đã thắng Evert trong cả ba trận chung kết Grand Slam gần nhất và đang thống trị thế giới bằng lối chơi tràn lưới vũ bão.
+</p>
+
+<p>
+  Thế nhưng, Chris Evert — bằng sự kiên định lạnh lùng của một 'Băng Công Chúa' — đã thực hiện những cú passing shot dọc dây và chéo sân chính xác đến từng milimet, bẻ gãy mọi nỗ lực lên lưới của Navratilova để giành chiến thắng nghẹt thở 6-3, 6-7, 7-5. Sau cú đánh dứt điểm cuối cùng, cả hai huyền thoại đã ôm chầm lấy nhau trong nước mắt, để lại một hình ảnh tuyệt đẹp về tình bạn cao thượng và sự tôn trọng vượt lên trên mọi danh hiệu.
+</p>
+
+<div class="key-takeaway">
+  <strong>Khải Huyền Về Di Sản Quần Vợt:</strong> Paul Fein đúc kết rằng giá trị vĩnh cửu của những trận cầu kinh điển không nằm ở số tiền thưởng hay những chiếc cúp nằm im lìm trong tủ kính. Giá trị đích thực nằm ở cách mà những huyền thoại đó đã vượt qua giới hạn tột cùng của thể chất và tinh thần để cống hiến cho nhân loại những khoảnh khắc thăng hoa lay động trái tim triệu người.
+</div>
+
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+        
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        root.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = root.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+
+        function updateThemeIcon(theme) {
+            const icon = themeToggle.querySelector('i');
+            if (theme === 'dark') {
+                icon.className = 'fa-solid fa-sun';
+            } else {
+                icon.className = 'fa-solid fa-moon';
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('reading-progress').style.width = scrolled + '%';
+        });
+    </script>
+</body>
+</html>
