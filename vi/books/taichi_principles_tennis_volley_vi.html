@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyên Lý Thái Cực Quyền Trong Cú Volley Tennis | Tennis Unified</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #047857;
+            --primary-dark: #064e3b;
+            --secondary: #059669;
+            --accent: #34d399;
+            --bg-page: #f0fdf4;
+            --bg-card: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border-color: #d1fae5;
+            --highlight: #ecfdf5;
+            --highlight-border: #a7f3d0;
+        }
+
+        [data-theme="dark"] {
+            --primary: #34d399;
+            --primary-dark: #0f172a;
+            --secondary: #10b981;
+            --accent: #6ee7b7;
+            --bg-page: #022c22;
+            --bg-card: #0a3d31;
+            --text-main: #f8fafc;
+            --text-muted: #cbd5e1;
+            --border-color: #065f46;
+            --highlight: #064e3b;
+            --highlight-border: #047857;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.7;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .brand-logo i {
+            color: #34d399;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #34d399;
+        }
+
+        .btn-lang {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff !important;
+        }
+
+        .btn-theme {
+            background: transparent;
+            border: none;
+            color: #cbd5e1;
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 6px;
+        }
+
+        .progress-bar-container {
+            position: fixed;
+            top: 57px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: transparent;
+            z-index: 999;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #34d399, #059669);
+            transition: width 0.1s ease;
+        }
+
+        .book-hero {
+            background: linear-gradient(135deg, #047857 0%, #064e3b 50%, #022c22 100%);
+            color: #ffffff;
+            padding: 48px 24px;
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(52, 211, 153, 0.2);
+            color: #a7f3d0;
+            border: 1px solid rgba(52, 211, 153, 0.4);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+            color: #d1fae5;
+            font-style: italic;
+        }
+
+        .hero-meta {
+            font-size: 0.95rem;
+            color: #e2e8f0;
+            margin-bottom: 24px;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background: #059669;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #047857;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .reader-layout {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 40px;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 80px;
+            height: fit-content;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .toc-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .toc-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .toc-list a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s, padding-left 0.2s;
+            display: block;
+            padding: 4px 0;
+        }
+
+        .toc-list a:hover {
+            color: var(--secondary);
+            padding-left: 6px;
+        }
+
+        .reader-content {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .chapter-block {
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .chapter-block:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .chapter-header {
+            margin-bottom: 24px;
+        }
+
+        .chapter-badge {
+            display: inline-block;
+            background: var(--highlight);
+            color: var(--secondary);
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            border: 1px solid var(--highlight-border);
+        }
+
+        .chapter-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--text-main);
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+
+        .chapter-intro {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        .content-body h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin: 28px 0 14px 0;
+            color: var(--primary);
+        }
+
+        .content-body h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 18px 0 10px 0;
+        }
+
+        .content-body p {
+            margin-bottom: 16px;
+            font-size: 1rem;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        .content-body ul, .content-body ol {
+            margin: 12px 0 20px 24px;
+        }
+
+        .content-body li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: var(--highlight);
+            border-left: 4px solid var(--secondary);
+            border-radius: 0 8px 8px 0;
+            padding: 20px;
+            margin: 24px 0;
+        }
+
+        .highlight-box h4 {
+            color: var(--secondary);
+            margin-top: 0;
+        }
+
+        .figure-box {
+            margin: 32px 0;
+            text-align: center;
+        }
+
+        .figure-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .figure-caption {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        @media (max-width: 900px) {
+            .reader-layout {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                display: none;
+            }
+            .reader-content {
+                padding: 24px;
+            }
+            .hero-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="/vi/books/" class="brand-logo">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Tennis Unified Books</span>
+            </a>
+            <nav class="nav-links">
+                <a href="/vi/fundamentals/">Căn Bản</a>
+                <a href="/vi/stroke-analysis/">Phân Tích Cú Đánh</a>
+                <a href="/vi/drills/">Bài Tập</a>
+                <a href="/vi/books/">Tủ Sách</a>
+                <a href="/books/" data-lang-toggle="en" class="btn-lang"><i class="fa-solid fa-globe"></i> English</a>
+                <button class="btn-theme" id="themeToggle" aria-label="Đổi giao diện"><i class="fa-solid fa-moon"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <section class="book-hero">
+        <div class="hero-container">
+            <span class="hero-badge">Triết Đạo Vận Động • Thái Cực Quyền &amp; Quần Vợt Đỉnh Cao</span>
+            <h1 class="hero-title">NGUYÊN LÝ THÁI CỰC QUYỀN TRONG CÚ VOLLEY TENNIS</h1>
+            <p class="hero-subtitle">The Art of Redirection: Taichi Principles in the Tennis Volley — Tennis Future Lab</p>
+            <p class="hero-meta">Bản dịch tiếng Việt chuyên sâu • Triết lý mượn lực chuyển hướng, Phóng Tùng, Thính Kình, Khung Chữ U và Bước Chân Trọng Lực</p>
+            <div class="hero-actions">
+                <a href="#part1" class="btn-action btn-primary"><i class="fa-solid fa-book-reader"></i> Đọc Ngay</a>
+                <a href="Taichi_Principles_Tennis_Volley_Vietnamese_Final.pdf" target="_blank" class="btn-action btn-outline"><i class="fa-solid fa-file-pdf"></i> Tải Bản PDF Tiếng Việt</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="reader-layout">
+        <aside class="sidebar">
+            <div class="toc-title"><i class="fa-solid fa-list-ul"></i> Mục Lục Bản Dịch</div>
+            <ul class="toc-list">
+                <li><a href="#part1">Phần 1: Mượn Lực Chuyển Hướng, Phóng Tùng &amp; Thính Kình</a></li>
+                <li><a href="#part2">Phần 2: Khung Chữ U 'Ôm Trăng' &amp; Khóa Chữ L</a></li>
+                <li><a href="#part3">Phần 3: Bước Chân Trọng Lực &amp; Trọng Tâm Đan Điền</a></li>
+                <li><a href="#part4">Phần 4: Ứng Dụng Bát Kình (Lã, Bằng, Án) Trên Lưới</a></li>
+            </ul>
+        </aside>
+
+        <main class="reader-content">
+            
+<section class="chapter-block" id="part1">
+    <div class="chapter-header">
+        <span class="chapter-badge">Phần 1 · Triết Đạo Vận Động Tennis Future Lab</span>
+        <h2 class="chapter-title">Triết Lý Mượn Lực Chuyển Hướng, Phóng Tùng &amp; Thính Kình</h2>
+        <p class="chapter-intro">Khám phá sự tương đồng kỳ diệu giữa nghệ thuật chiến đấu của Thái Cực Quyền phương Đông và kỹ năng bắt vô-lê đỉnh cao trong quần vợt phương Tây. Giải mã nguyên lý "mượn lực đả lực" (Borrowing Force), trạng thái thả lỏng sâu Phóng Tùng (Sung) và năng lực cảm nhận trọng lượng bóng Thính Kình (Listening Energy).</p>
+    </div>
+
+    <div class="content-body">
+        <h3>1. Cú Volley Tennis: Nghệ Thuật Chuyển Hướng Thay Vì Đối Kháng Thô Bạo</h3>
+        <p>Trong quần vợt truyền thống, nhiều người chơi tiếp cận cú vô-lê trên lưới bằng một tâm thế đối kháng cơ bắp: cố tình gồng cứng cánh tay và chém mạnh vào quả bóng để tạo lực. Tuy nhiên, ở cự ly gần lưới, khi quả bóng bay tới với tốc độ trên 130 km/h, mọi hành động dùng sức thô thiển đều dẫn đến việc hỏng cú đánh hoặc làm bóng bay văng ra ngoài sân.</p>
+        <p>Cú vô-lê thực sự là một nghệ thuật <strong>chuyển hướng động lượng (redirection of momentum)</strong>. Điều này phản ánh hoàn hảo triết lý cốt lõi của Thái Cực Quyền: <em>"Tứ lạng bạt thiên cân" (Bốn lạng bạt ngàn cân)</em> — sử dụng một cấu trúc mềm mại nhưng vững chắc để chuyển hướng toàn bộ xung lực bão táp của đối thủ sang một quỹ đạo hiểm hóc khác mà không tiêu tốn sức lực của bản thân.</p>
+
+        <div class="figure-box">
+            <img src="taichi_volley_assets/fig1_intro_and_philosophy.jpg" alt="Sơ đồ triết lý chuyển hướng và sự tương đồng giữa Thái Cực Quyền và cú Volley">
+            <span class="figure-caption">Hình 1: Triết lý Chuyển Hướng (The Art of Redirection). Cú vô-lê hiện đại không tạo ra xung lực mới từ số không; nó hấp thụ, điều hướng và tái phân phối động năng sẵn có của quả bóng đối phương.</span>
+        </div>
+
+        <h3>2. Nguyên Lý Phóng Tùng (Sung / Deep Relaxation)</h3>
+        <p>Trong Thái Cực Quyền, "Phóng Tùng" (Sung) không phải là sự mềm yếu, buông thõng hay thiếu sức sống. Phóng Tùng là trạng thái <strong>giải tỏa toàn bộ sự căng thẳng cơ bắp không cần thiết trong khi vẫn duy trì sự toàn vẹn của khung xương</strong>.</p>
+        <p>Khi áp dụng vào cú vô-lê quần vợt, Phóng Tùng được thể hiện qua áp lực tay cầm vợt:</p>
+        <ul>
+            <li><strong>Áp lực cầm vợt chỉ từ 3 đến 4 trên thang điểm 10:</strong> Cầm vợt quá chặt (8-10/10) sẽ biến cánh tay thành một thanh gỗ cứng đờ, khiến bóng dội ngược ra ngoài như va vào tường đá. Một tay cầm thư giãn cho phép đầu vợt hơi nhường lại một vài milimet khi tiếp xúc, kéo dài thời gian tiếp xúc bóng trên mặt dây (dwell time) và tiêu hao tốc độ dư thừa của đối thủ.</li>
+            <li><strong>Hấp thụ chấn động:</strong> Cơ thể ở trạng thái Phóng Tùng đóng vai trò như một bộ giảm xóc thủy lực tự nhiên, triệt tiêu xung lực va đập cực mạnh và bảo vệ khuỷu tay khỏi nguy cơ chấn thương.</li>
+        </ul>
+
+        <div class="figure-box">
+            <img src="taichi_volley_assets/fig2_phong_tung_and_thinh_kinh.jpg" alt="Sơ đồ nguyên lý Phóng Tùng và Thính Kình trong tiếp xúc bóng">
+            <span class="figure-caption">Hình 2: Phóng Tùng và Thính Kình (Sung &amp; Ting Jin). Khả năng "lắng nghe" và đọc được độ nặng, độ xoáy của bóng thông qua các thụ thể thần kinh xúc giác tại lòng bàn tay.</span>
+        </div>
+
+        <h3>3. Thính Kình (Ting Jin / Listening Energy): Cảm Nhận Trọng Lượng Bóng</h3>
+        <p>Trong môn đẩy tay (Push Hands) của Thái Cực Quyền, "Thính Kình" là kỹ năng dùng da thịt và khớp xương để "lắng nghe" phương hướng, ý đồ và trọng lực của đối phương ngay khi vừa tiếp xúc. Trên lưới tennis, Thính Kình chính là <em>cảm giác bóng siêu việt (touch and feel)</em>:</p>
+        <div class="highlight-box">
+            <h4>Bí Mật Phân Chia Hai Nhóm Ngón Tay</h4>
+            <p>Bàn tay cầm vợt được chia thành hai phân vùng chức năng độc lập:</p>
+            <ul>
+                <li><strong>Nhóm ngón Cảm Giác (Sensory Fingers — Ngón Cái &amp; Ngón Trỏ):</strong> Giữ lỏng lẻo ở phần trên của cán vợt, đóng vai trò như hai cảm biến sinh học tinh vi. Chúng cung cấp phản hồi xúc giác tức thời về độ xoáy và điểm va chạm trên mặt dây, cho phép não bộ vi chỉnh góc mặt vợt trong phần nghìn giây.</li>
+                <li><strong>Nhóm ngón Cấu Trúc (Structural Fingers — Ngón Út, Áp Út &amp; Giữa):</strong> Ôm nhẹ nhàng quanh đáy chuôi vợt (butt cap), đóng vai trò như một chiếc neo giữ cho cây vợt không bị tuột khỏi tay mà không cản trở sự linh hoạt của cổ tay.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section class="chapter-block" id="part2">
+    <div class="chapter-header">
+        <span class="chapter-badge">Phần 2 · Triết Đạo Vận Động Tennis Future Lab</span>
+        <h2 class="chapter-title">Cấu Trúc Khung Chữ U 'Ôm Trăng' &amp; Khóa Cấu Trúc Chữ L</h2>
+        <p class="chapter-intro">Nghiên cứu hình học giải phẫu của cấu trúc bắt vô-lê đỉnh cao: sự tương đồng giữa thế đứng 'Ôm Trăng' (Embrace the Moon) trong Thái Cực Quyền và khung chữ U phía trước ngực. Giải mã cơ chế 'Khóa cấu trúc chữ L' (L-Shape Lock) giúp chống lại hiện tượng xoắn vợt trước các cú bắn bóng sấm sét.</p>
+    </div>
+
+    <div class="content-body">
+        <h3>1. Khung Chữ U: Tư Thế 'Ôm Trăng' (Embrace the Moon)</h3>
+        <p>Trong các bài quyền Thái Cực truyền thống, tư thế "Ôm Trăng" (Bão Nguyệt) yêu cầu hai cánh tay tạo thành một vòng cung tròn đàn hồi phía trước ngực, nách mở rộng như thể đang kẹp hai quả trứng gà, hai khuỷu tay chìm xuống và không bao giờ áp sát vào mạn sườn.</p>
+        <p>Trong quần vợt hiện đại, đây chính là <strong>Khung Chữ U (U-Shape Frame)</strong> của tư thế sẵn sàng đón vô-lê:</p>
+        <ul>
+            <li><strong>Giữ vợt luôn nằm trong trường thị giác:</strong> Hai bàn tay và cây vợt luôn nằm phía trước mặt phẳng thân người. Người chơi không bao giờ kéo vợt ra sau vai (zero backswing), loại bỏ hoàn toàn nguy cơ bị trễ bóng.</li>
+            <li><strong>Vòng cung đàn hồi chịu lực:</strong> Khung xương vòng tròn có khả năng phân tán xung lực va chạm về hai bên bả vai và cột sống, thay vì dồn toàn bộ áp lực vào khớp cổ tay đơn độc.</li>
+        </ul>
+
+        <div class="figure-box">
+            <img src="taichi_volley_assets/fig3_u_shape_embrace_the_moon.jpg" alt="Sơ đồ cấu trúc khung chữ U tương đồng với tư thế Ôm Trăng trong Thái Cực Quyền">
+            <span class="figure-caption">Hình 3: Cấu trúc Khung Chữ U (U-Shape Frame / Embrace the Moon). Hai khuỷu tay chìm về phía trước, giữ cây vợt luôn hiện diện trong tầm mắt và sẵn sàng chuyển hướng linh hoạt sang cả hai bên.</span>
+        </div>
+
+        <h3>2. Khóa Cấu Trúc Chữ L (The L-Shape Structural Lock)</h3>
+        <p>Để đối đầu với những cú bạt bóng có vận tốc trên 140 km/h từ vạch đáy sân của đối thủ, người chơi không thể dựa vào sức bóp cơ tay. Lực va chạm sẽ làm cổ tay bị bẻ gập ra sau và khiến mặt vợt bị vặn xoắn (racquet twist).</p>
+        <p>Giải pháp tối thượng là <strong>Khóa Cấu Trúc Chữ L (L-Shape Lock)</strong>:</p>
+
+        <div class="figure-box">
+            <img src="taichi_volley_assets/fig4_l_shape_structural_lock.jpg" alt="Sơ đồ Khóa cấu trúc chữ L giữa cẳng tay và thân vợt">
+            <span class="figure-caption">Hình 4: Khóa cấu trúc chữ L (L-Shape Structural Lock). Góc vuông 90 đến 100 độ giữa thân vợt và cẳng tay được giữ bất biến, căn chỉnh trọng tâm cây vợt trùng khớp với xương cẳng tay để hấp thụ lực va chạm hoàn hảo.</span>
+        </div>
+
+        <div class="highlight-box">
+            <h4>Ba Ưu Điểm Cơ Học Của Khóa Chữ L</h4>
+            <ol>
+                <li><strong>Đầu vợt luôn hướng lên trời:</strong> Khóa chữ L đảm bảo đầu vợt không bao giờ bị cụp xuống dưới cổ tay, duy trì vị trí mặt vợt luôn cao hơn mép lưới.</li>
+                <li><strong>Căn chỉnh trọng tâm với trục xương quay:</strong> Khi góc chữ L được xác lập, trọng tâm của cây vợt nằm thẳng hàng với trục xương cẳng tay. Phản lực của bóng sẽ truyền thẳng qua xương cánh tay vào thân người thay vì tạo ra momen vặn xoắn làm lật cổ tay.</li>
+                <li><strong>Chống rung chấn tốc độ cao:</strong> Khung chữ L biến cây vợt và cẳng tay thành một khối đòn bẩy duy nhất, triệt tiêu hoàn toàn sự rung lắc của mặt vợt tại thời điểm tiếp xúc lệch tâm (off-center hits).</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+
+<section class="chapter-block" id="part3">
+    <div class="chapter-header">
+        <span class="chapter-badge">Phần 3 · Triết Đạo Vận Động Tennis Future Lab</span>
+        <h2 class="chapter-title">Bộ Chân Bước Trọng Lực &amp; Trọng Tâm Đan Điền</h2>
+        <p class="chapter-intro">Vận dụng nguyên lý 'Chìm Khí Đan Điền' (Sinking Qi to Dan Tian) để hạ thấp khối tâm cơ thể khi xử lý các đường bóng vô-lê tầm thấp dưới mép lưới. Khám phá kỹ thuật 'Bước Chân Trọng Lực' (Gravity Step) giúp loại bỏ sai số thị giác quang học và giữ nguyên cấu trúc đòn bẩy vững chắc.</p>
+    </div>
+
+    <div class="content-body">
+        <h3>1. Trọng Tâm Đan Điền: Cội Nguồn Thăng Bằng Trên Lưới</h3>
+        <p>Trong triết lý võ học phương Đông, Đan Điền (nằm dưới rốn khoảng 3-4 cm) được coi là trọng tâm của cơ thể và là nguồn gốc của mọi sự chuyển hóa lực. Khi một võ sinh Thái Cực chuyển động, Đan Điền luôn là bộ phận dẫn hướng, trong khi tứ chi chỉ đóng vai trò tùy tùng.</p>
+        <p>Trên lưới quần vợt, sai lầm chết người của đa số người chơi là để trọng tâm nổi bồng bềnh ở vùng ngực và cổ. Khi đối thủ đánh một đường bóng chìm dưới mép lưới, phản xạ sai lầm là cúi gập lưng từ thắt lưng hoặc thả rơi đầu vợt xuống thấp. Hành động này làm gãy Khóa Chữ L, khiến đầu vợt bị chĩa xuống đất và dẫn đến cú vô-lê rúc lưới hoặc bay bổng lên trời cho đối thủ đập smash.</p>
+
+        <div class="figure-box">
+            <img src="taichi_volley_assets/fig5_gravity_step_mechanics.jpg" alt="Sơ đồ cơ chế Bước Chân Trọng Lực Gravity Step khi xử lý vô-lê thấp">
+            <span class="figure-caption">Hình 5: Bước Chân Trọng Lực (The Gravity Step). Thay vì cúi lưng, toàn bộ khung cơ thể được hạ thấp đồng bộ nhờ sự uốn cong của khớp háng và khớp gối, giữ cho mắt luôn ngang tầm với bóng và bảo toàn Khóa Chữ L.</span>
+        </div>
+
+        <h3>2. Kỹ Thuật Bước Chân Trọng Lực (The Gravity Step)</h3>
+        <p>Để bắt những quả vô-lê thấp ngang mắt cá chân một cách hoàn mỹ, người chơi chuyên nghiệp áp dụng kỹ thuật <strong>Bước Chân Trọng Lực (Gravity Step)</strong>:</p>
+        <ol>
+            <li><strong>Thả lỏng trọng lực rơi tự do:</strong> Thay vì dùng sức cơ bắp để nhảy với tới bóng, người chơi thả lỏng khớp háng bên chân trụ, cho phép trọng lực trái đất tự nhiên kéo Đan Điền chìm xuống đất một cách êm ái.</li>
+            <li><strong>Chân trước bước dài lướt ngang:</strong> Chân trước bước một bước dài và hạ thấp trọng tâm, góc gập đầu gối đạt từ 90 đến 100 độ, đưa toàn bộ thân trên, hai vai và cánh tay hạ thấp xuống ngang tầm bóng.</li>
+            <li><strong>Loại bỏ sai số thị giác quang học:</strong> Khi mắt được đưa xuống gần sát tầm cao của mép lưới, góc nhìn giữa mắt, quả bóng và mép lưới trở thành một đường thẳng quang học hoàn hảo. Bộ não không còn bị đánh lừa bởi góc nhìn từ trên cao xuống, cho phép căn chỉnh mặt vợt với độ chính xác đến từng milimet.</li>
+        </ol>
+
+        <div class="highlight-box">
+            <h4>Nguyên Tắc Bất Biến: Hạ Cơ Thể Thay Vì Hạ Vợt</h4>
+            <p>Trong mọi tình huống bóng thấp, hãy luôn ghi nhớ: <em>Không bao giờ được phá vỡ Khóa Cấu Trúc Chữ L bằng cách cụp cổ tay xuống</em>. Cổ tay và cẳng tay phải giữ nguyên góc vuông chữ L kiên cố. Toàn bộ độ cao tiếp xúc bóng được điều chỉnh hoàn toàn bằng độ chìm của hai đầu gối và bước chân trọng lực.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="chapter-block" id="part4">
+    <div class="chapter-header">
+        <span class="chapter-badge">Phần 4 · Triết Đạo Vận Động Tennis Future Lab</span>
+        <h2 class="chapter-title">Ứng Dụng Bát Kình (Lã Kình, Bằng Kình, Án Kình) Trong Vô-Lê Cận Chiến</h2>
+        <p class="chapter-intro">Vận dụng ba kình lực căn bản trong Bát Pháp Thái Cực Quyền vào các tình huống vô-lê cận chiến trên lưới tennis: Lã Kình (Dẫn Hóa &amp; Hấp Thụ) cho cú Drop Volley, Bằng Kình (Đàn Hồi Che Chắn) cho cú Block Volley và Án Kình (Dồn Lực Bùng Nổ) cho cú Punch Volley kết liễu.</p>
+    </div>
+
+    <div class="content-body">
+        <h3>1. Ba Kình Lực Cốt Lõi Của Thái Cực Quyền Ứng Dụng Trong Tennis</h3>
+        <p>Trong hệ thống võ thuật Thái Cực, năng lượng không được phát ra bằng sự gồng cứng cơ bắp thô thiển mà thông qua các dạng "Kình" (Jin) — những biểu hiện tinh vi của lực đàn hồi sinh học được điều khiển bởi ý thức. Ba kình lực có tính ứng dụng tuyệt đối trên lưới quần vợt bao gồm:</p>
+
+        <div class="figure-box">
+            <img src="taichi_volley_assets/fig6_la_kinh_redirection_summary.jpg" alt="Sơ đồ tổng kết ứng dụng Lã Kình và các nguyên lý Thái Cực trong cú Volley">
+            <span class="figure-caption">Hình 6: Ứng dụng Lã Kình trong Vô-lê Tennis (The Art of Redirection Summary). Cú vô-lê là biểu hiện sống động nhất của Lã Kình: không cần tạo ra sức mạnh mới từ số không mà mượn chính động năng của đối thủ để chuyển hướng ghi điểm.</span>
+        </div>
+
+        <ol>
+            <li><strong>Lã Kình (Lü Jin — Năng lượng Dẫn Hóa &amp; Hấp Thụ):</strong>
+                <p>Trong Thái Cực, Lã Kình là kỹ năng khi đối phương đấm tới thật mạnh, ta không đỡ thẳng mà thuận theo chiều lực đấm để kéo dài và làm chệch hướng đối thủ vào chỗ hư vô. Trong tennis, Lã Kình là linh hồn của <strong>Cú Bỏ Nhỏ Trên Lưới (Drop Volley / Stop Volley)</strong>. Bằng cách thả lỏng cổ tay và hơi kéo nhẹ đầu vợt về sau ngay tại khoảnh khắc bóng chạm mặt dây (give with the ball), toàn bộ động năng của cú đánh sấm sét từ đối thủ bị triệt tiêu 90%, khiến quả bóng rơi thỏ thẻ ngay sau mép lưới.</p>
+            </li>
+            <li><strong>Bằng Kình (Peng Jin — Năng lượng Đàn Hồi Che Chắn):</strong>
+                <p>Bằng Kình là trạng thái cơ thể giống như một quả bóng cao su căng tròn đầy khí: chạm vào thì êm ái đàn hồi nhưng ép vào thì sinh phản lực đẩy bật ra. Đây là kỹ thuật của <strong>Cú Vô-Lê Chặn Đứng (Block Volley)</strong>. Khi đối thủ bắn bóng thẳng vào người, vận động viên duy trì Khung Chữ U và Khóa Chữ L vững chắc, để mặt vợt tự nhiên bật quả bóng trở lại góc sâu sân đối phương mà không cần vung cánh tay.</p>
+            </li>
+            <li><strong>Án Kình (An Jin — Năng lượng Đẩy Dồn Bùng Nổ):</strong>
+                <p>Án Kình là kỹ thuật dùng trọng lượng toàn thân ép xuống Đan Điền và đẩy dồn tới trước như làn sóng ngầm vỗ bờ. Trong tennis, Án Kình được áp dụng cho <strong>Cú Vô-Lê Đục Sâu (Punch Volley)</strong>. Chân sau đạp tới, hông xoay nhẹ và cánh tay đấm dứt khoát một quãng ngắn 15-20 cm về phía trước, biến toàn bộ khối lượng cơ thể thành một bức tường thép đẩy quả bóng lao vút găm sâu vào góc sân.</p>
+            </li>
+        </ol>
+
+        <div class="highlight-box">
+            <h4>Bảng Tổng Kết Ứng Dụng Nguyên Lý Thái Cực Quyền Trong Kỹ Thuật Volley</h4>
+            <table style="width:100%; border-collapse: collapse; margin-top: 10px;">
+                <thead>
+                    <tr style="background:#bbf7d0; color:#14532d;">
+                        <th style="padding: 8px; border: 1px solid #bbf7d0;">Nguyên Lý Thái Cực</th>
+                        <th style="padding: 8px; border: 1px solid #bbf7d0;">Bản Chất Cơ Sinh Học</th>
+                        <th style="padding: 8px; border: 1px solid #bbf7d0;">Ứng Dụng Trong Cú Volley Tennis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #bbf7d0;"><strong>Phóng Tùng (Sung)</strong></td>
+                        <td style="padding: 8px; border: 1px solid #bbf7d0;">Thả lỏng sâu cơ bắp, áp lực tay cầm 3-4/10</td>
+                        <td style="padding: 8px; border: 1px solid #bbf7d0;">Kéo dài thời gian tiếp xúc bóng (dwell time), giảm rung chấn khuỷu tay</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #bbf7d0;"><strong>Thính Kình (Ting Jin)</strong></td>
+                        <td style="padding: 8px; border: 1px solid #bbf7d0;">Ngón cái và trỏ làm cảm biến xúc giác</td>
+                        <td style="padding: 8px; border: 1px solid #bbf7d0;">Cảm nhận độ nặng và xoáy của bóng để vi chỉnh mặt vợt trong tích tắc</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #bbf7d0;"><strong>Ôm Trăng (Embrace Moon)</strong></td>
+                        <td style="padding: 8px; border: 1px solid #bbf7d0;">Cấu trúc khung chữ U phía trước ngực</td>
+                        <td style="padding: 8px; border: 1px solid #bbf7d0;">Giữ vợt luôn trong tầm mắt quang học, triệt tiêu hoàn toàn đà vung ra sau</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #bbf7d0;"><strong>Khóa Chữ L (L-Lock)</strong></td>
+                        <td style="padding: 8px; border: 1px solid #bbf7d0;">Góc 90 độ giữa cẳng tay và thân vợt</td>
+                        <td style="padding: 8px; border: 1px solid #bbf7d0;">Căn chỉnh trọng tâm vợt với xương quay, chống lật cổ tay ở tốc độ cao</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #bbf7d0;"><strong>Chìm Khí Đan Điền</strong></td>
+                        <td style="padding: 8px; border: 1px solid #bbf7d0;">Bước chân trọng lực (Gravity Step) hạ thấp gối</td>
+                        <td style="padding: 8px; border: 1px solid #bbf7d0;">Xử lý bóng thấp bằng hạ toàn bộ cơ thể thay vì cúi lưng hay cụp đầu vợt</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+        </main>
+    </div>
+
+    <script>
+        const themeBtn = document.getElementById('themeToggle');
+        themeBtn.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            themeBtn.innerHTML = newTheme === 'dark' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+        });
+
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+    </script>
+</body>
+</html>
