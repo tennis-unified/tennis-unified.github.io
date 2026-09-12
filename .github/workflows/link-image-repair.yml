@@ -1,0 +1,33 @@
+name: Link and Image Audit
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '30 0 * * 0'
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install audit dependencies
+        run: python -m pip install requests
+
+      - name: Run link and image audit
+        run: python scripts/repair_links_and_images.py
+
+      - name: Upload audit report
+        uses: actions/upload-artifact@v4
+        with:
+          name: tennis-unified-link-image-audit
+          path: SITE_LINK_IMAGE_AUDIT.md
