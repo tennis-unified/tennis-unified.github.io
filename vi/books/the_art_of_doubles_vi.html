@@ -424,6 +424,7 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="court-diagram.css">
 </head>
 <body>
 
@@ -546,7 +547,7 @@ Sai lầm phổ biến nhất của người mới chơi đôi là tư duy đán
         <p class="section-text">
 Tìm kiếm một người bạn cặp lý tưởng là hành trình tìm kiếm sự tương thích sâu sắc về cả kỹ năng lẫn tâm lý thi đấu. Huyền thoại John Bromwich và các bậc thầy đánh đôi thế giới đã đúc kết bốn phẩm chất quyết định giá trị của một người đồng đội trong mơ:
 
-Thứ nhất là khả năng dự đoán tình huống vượt bậc. Điều phân định ranh giới giữa một tay vợt giỏi và một huyền thoại chính là trực giác nhạy bén trước từng đường bóng của đối phương. Khả năng dự đoán bao gồm việc đặt cú đánh của mình vào vị trí chiến lược để giới hạn góc trả bóng của đối thủ, đọc những chuyển động cơ thể sơ hở trước khi đối phương tiếp xúc bóng, và dịch chuyển nhịp nhàng cùng bạn cặp như hai bánh răng ăn khớp.
+Thứ nhất là khả năng Khả năng đoán trước (anticipation) vượt bậc. Điều phân định ranh giới giữa một tay vợt giỏi và một huyền thoại chính là trực giác nhạy bén trước từng đường bóng của đối phương. Khả năng dự đoán bao gồm việc đặt cú đánh của mình vào vị trí chiến lược để giới hạn góc trả bóng của đối thủ, đọc những chuyển động cơ thể sơ hở trước khi đối phương tiếp xúc bóng, và dịch chuyển nhịp nhàng cùng bạn cặp như hai bánh răng ăn khớp.
 
 Thứ hai là sự kiên định và tính kỷ luật sắt đá. Người bạn cặp hoàn hảo không cố gắng tìm kiếm điểm ace giao bóng ăn điểm trực tiếp một cách liều lĩnh, mà tập trung đưa quả giao bóng một vào sân với độ chính xác cao nhất. Trong các pha vô-lê, họ luôn ưu tiên bóng sâu xuống giữa sân đối phương thay vì mạo hiểm săn đuổi các đường biên dọc.
 
@@ -902,6 +903,137 @@ Tính linh hoạt đòi hỏi sự tự tin to lớn vào năng lực bản thâ
   </figcaption>
 </figure>
 
+<!--
+  Sơ đồ chiến thuật: THE ART OF DOUBLES (Pat Blaskower)
+  Chủ đề: Đội hình Australia (Australian Formation) & cắt lưới cướp điểm (poaching)
+  Nhúng vào the_art_of_doubles_vi.html.
+  Yêu cầu: đã nhúng court-diagram.css và court-diagram.js ở trang cha.
+-->
+<figure class="court-diagram-wrap">
+  <svg class="tennis-court-svg" viewBox="0 0 360 840" xmlns="http://www.w3.org/2000/svg" role="img"
+       aria-label="Sơ đồ đội hình Australia trong đánh đôi và đường cắt lưới cướp điểm">
+    <defs>
+      <marker id="arrow-aod" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0,0 L10,5 L0,10 z" fill="var(--cd-ball-path)"></path>
+      </marker>
+    </defs>
+
+    <rect class="court-surface" x="0" y="30" width="360" height="780"></rect>
+
+    <!-- Đường biên đôi (đầy đủ, vì đây là sơ đồ đánh đôi) -->
+    <line class="court-line" x1="0" y1="30" x2="0" y2="810"></line>
+    <line class="court-line" x1="360" y1="30" x2="360" y2="810"></line>
+    <line class="court-line-thin" x1="45" y1="30" x2="45" y2="810"></line>
+    <line class="court-line-thin" x1="315" y1="30" x2="315" y2="810"></line>
+
+    <line class="court-line" x1="0" y1="30" x2="360" y2="30"></line>
+    <line class="court-line" x1="0" y1="810" x2="360" y2="810"></line>
+
+    <line class="court-net" x1="0" y1="420" x2="360" y2="420"></line>
+
+    <line class="court-line" x1="45" y1="210" x2="315" y2="210"></line>
+    <line class="court-line" x1="45" y1="630" x2="315" y2="630"></line>
+    <line class="court-line" x1="180" y1="210" x2="180" y2="630"></line>
+
+    <line class="court-center-mark" x1="180" y1="30" x2="180" y2="38"></line>
+    <line class="court-center-mark" x1="180" y1="802" x2="180" y2="810"></line>
+
+    <!-- Vùng nguy hiểm cho người trả giao bóng: hành lang chéo sân bị đồng đội lưới án ngữ -->
+    <polygon class="zone-risk" points="180,420 315,420 315,720 240,720"></polygon>
+    <text class="zone-label" x="230" y="500">Hành lang bị đón lõng</text>
+
+    <!-- Vùng an toàn hơn cho người trả giao bóng: dọc dây -->
+    <polygon class="zone-safe" points="45,420 100,420 100,700 45,700"></polygon>
+    <text class="zone-label" x="48" y="600">Dọc dây (khó hơn nhưng thoáng)</text>
+
+    <!-- Người giao bóng -->
+    <g class="player-marker you" data-tt-title="Người giao bóng"
+       data-tt-note="Giao bóng từ ô bên phải (deuce court).">
+      <circle class="body" cx="270" cy="790" r="12"></circle>
+      <text class="label" x="270" y="816">Giao bóng</text>
+    </g>
+
+    <!-- Đồng đội đứng lưới trong đội hình Australia -->
+    <g class="player-marker you" data-tt-title="Đồng đội đứng lưới (đội hình Australia)"
+       data-tt-note="Đứng CÙNG bên với người giao bóng thay vì tách sang bên kia — đặc trưng của đội hình Australia, nhằm che hành lang chéo sân quen thuộc.">
+      <circle class="body" cx="220" cy="470" r="12"></circle>
+      <text class="label" x="220" y="452">Đồng đội (lưới)</text>
+    </g>
+
+    <!-- Người đỡ giao bóng -->
+    <g class="player-marker opponent" data-tt-title="Người đỡ giao bóng"
+       data-tt-note="Đứng ở vị trí đỡ giao bóng bình thường.">
+      <circle class="body" cx="90" cy="90" r="12"></circle>
+      <text class="label" x="90" y="72">Đỡ giao bóng</text>
+    </g>
+
+    <!-- Đồng đội của người đỡ giao bóng -->
+    <g class="player-marker opponent" data-tt-title="Đồng đội của người đỡ giao bóng"
+       data-tt-note="Giữ vị trí cuối sân bên kia, sẵn sàng xử lý bóng lốp hoặc bóng chuyền.">
+      <circle class="body" cx="270" cy="60" r="12"></circle>
+      <text class="label" x="270" y="42">Đồng đội</text>
+    </g>
+
+    <!-- Cú 1: giao bóng xuống chữ T -->
+    <path class="ball-path" marker-end="url(#arrow-aod)"
+          d="M270,790 Q230,420 135,95"
+          data-tt-title="Cú 1 — Giao bóng xuống chữ T"
+          data-tt-speed="~150 km/h"
+          data-tt-depth="Sâu, gần vạch giao bóng"
+          data-tt-angle="Thẳng, hướng vào trung tâm"
+          data-tt-note="Giao xuống chữ T thu hẹp góc trả bóng của đối thủ, hỗ trợ cho ý đồ đội hình Australia.">
+    </path>
+    <text class="ball-path-number" x="215" y="420">1</text>
+
+    <!-- Cú 2 (secondary, bị cắt): trả bóng chéo sân quen thuộc, bị đón lõng -->
+    <path class="ball-path secondary" marker-end="url(#arrow-aod)"
+          d="M90,90 Q160,300 218,462"
+          data-tt-title="Cú 2 — Trả bóng chéo sân (bản năng)"
+          data-tt-speed="~90 km/h"
+          data-tt-depth="Trung bình"
+          data-tt-angle="Chéo sân — hướng đi quen thuộc nhất của hầu hết người chơi"
+          data-tt-note="Đây chính là đường bóng mà đồng đội đứng lưới trong đội hình Australia được bố trí để đón lõng.">
+    </path>
+    <text class="ball-path-number" x="175" y="300">2</text>
+
+    <!-- Cú 3: vô-lê cắt lưới kết thúc điểm -->
+    <path class="ball-path" marker-end="url(#arrow-aod)"
+          d="M222,466 Q160,600 65,680"
+          data-tt-title="Cú 3 — Vô-lê cắt lưới (poach)"
+          data-tt-speed="~100 km/h"
+          data-tt-depth="Ngắn, góc hẹp"
+          data-tt-angle="Cắt góc, đưa bóng ra ngoài tầm với của cả hai đối thủ"
+          data-tt-note="Đồng đội đứng lưới di chuyển ngang để chặn và kết thúc điểm — yếu tố cốt lõi của chiến thuật poaching.">
+    </path>
+    <text class="ball-path-number" x="130" y="590">3</text>
+
+    <!-- Lựa chọn thay thế (mờ): dọc dây, khó hơn nhưng an toàn hơn -->
+    <path class="ball-path secondary" marker-end="url(#arrow-aod)" opacity="0.55"
+          d="M90,90 Q75,380 72,690"
+          data-tt-title="Lựa chọn thay thế — Dọc dây"
+          data-tt-speed="~85 km/h"
+          data-tt-depth="Sâu"
+          data-tt-angle="Song song đường biên, khó thực hiện chính xác hơn"
+          data-tt-note="Vì đội hình Australia dồn cả hai người bên phía giao bóng sang một bên, hành lang dọc dây phía bên kia thường bị bỏ trống — nhưng đòi hỏi kỹ thuật chính xác hơn để thực hiện.">
+    </path>
+  </svg>
+
+  <figcaption class="court-diagram-caption">
+    <strong>Đội hình Australia & cắt lưới cướp điểm</strong> — đội giao bóng cố tình đứng
+    lệch về cùng một bên (thay vì tách hai người ra hai nửa sân) để bịt kín hành lang chéo
+    sân quen thuộc của người trả giao bóng, buộc đối thủ phải chọn hướng khó hơn hoặc đánh
+    thẳng vào tầm đón lõng của đồng đội đứng lưới. Di chuột/Tab vào từng cầu thủ và đường
+    bóng để xem chi tiết.
+  </figcaption>
+  <div class="court-diagram-legend">
+    <span><i style="background: var(--cd-you)"></i> Đội giao bóng</span>
+    <span><i style="background: var(--cd-opponent)"></i> Đội đỡ giao bóng</span>
+    <span><i style="background: var(--cd-ball-path)"></i> Đường bóng thực hiện</span>
+  </div>
+</figure>
+
+
+
         <p class="section-text">
 Để phá vỡ nhịp điệu trả giao bóng của đối phương, các cặp đôi nhà nghề thường sử dụng hai trận địa biến ảo đặc biệt:
 
@@ -1107,5 +1239,6 @@ Tác phẩm "The Art of Doubles: Winning Tennis Strategies & Drills" được gi
             }
         }
     </script>
+    <script src="court-diagram.js"></script>
 </body>
 </html>

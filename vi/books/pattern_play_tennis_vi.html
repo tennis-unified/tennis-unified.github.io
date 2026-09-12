@@ -418,6 +418,7 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="court-diagram.css">
 </head>
 <body>
     <div id="reading-progress-bar"></div>
@@ -460,6 +461,123 @@
                 <span class="hero-badge">Chiến Thuật Hình Học &amp; Mô Thức Đỉnh Cao</span>
                 <h1 class="hero-title">Pattern Play Tennis: Nghệ Thuật Đánh Theo Mô Thức</h1>
                 <p class="hero-subtitle">Bản dịch tiếng Việt chuyên sâu cuốn sách Pattern Play Tennis của R. Spencer Brent (Doubleday &amp; Co.). Phương pháp tư duy hình học và mô thức chiến thuật xóa bỏ lối đánh ngẫu hứng tự sát: chuỗi đòn tiếp cận lưới, giằng co chéo sân, chuyển hướng dọc dây, và mô thức giao bóng Serve-Plus-One.</p>
+
+<!--
+  Sơ đồ chiến thuật: PATTERN PLAY TENNIS (Brent Abel)
+  Mẫu hình: "Giao bóng + 1" (Serve+1) — mở góc bằng giao bóng, kết thúc bằng cú đánh tiếp theo
+  Nhúng vào pattern_play_tennis_vi.html.
+  Yêu cầu: đã nhúng court-diagram.css và court-diagram.js ở trang cha.
+-->
+<figure class="court-diagram-wrap">
+  <svg class="tennis-court-svg" viewBox="0 0 360 840" xmlns="http://www.w3.org/2000/svg" role="img"
+       aria-label="Sơ đồ mẫu hình Giao bóng cộng Một: mở góc bằng giao bóng rồi kết thúc bằng cú đánh tiếp theo">
+    <defs>
+      <marker id="arrow-ppt" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0,0 L10,5 L0,10 z" fill="var(--cd-ball-path)"></path>
+      </marker>
+    </defs>
+
+    <rect class="court-surface" x="0" y="30" width="360" height="780"></rect>
+
+    <line class="court-line-thin" x1="0" y1="30" x2="0" y2="810"></line>
+    <line class="court-line-thin" x1="360" y1="30" x2="360" y2="810"></line>
+
+    <line class="court-line" x1="45" y1="30" x2="45" y2="810"></line>
+    <line class="court-line" x1="315" y1="30" x2="315" y2="810"></line>
+    <line class="court-line" x1="0" y1="30" x2="360" y2="30"></line>
+    <line class="court-line" x1="0" y1="810" x2="360" y2="810"></line>
+
+    <line class="court-net" x1="0" y1="420" x2="360" y2="420"></line>
+
+    <line class="court-line" x1="45" y1="210" x2="315" y2="210"></line>
+    <line class="court-line" x1="45" y1="630" x2="315" y2="630"></line>
+    <line class="court-line" x1="180" y1="210" x2="180" y2="630"></line>
+
+    <line class="court-center-mark" x1="180" y1="30" x2="180" y2="38"></line>
+    <line class="court-center-mark" x1="180" y1="802" x2="180" y2="810"></line>
+
+    <!-- Vùng mục tiêu giao bóng: góc mở rộng -->
+    <polygon class="zone-safe" points="45,30 100,30 90,110 45,110"></polygon>
+    <text class="zone-label" x="48" y="128">Góc giao bóng mở rộng</text>
+
+    <!-- Vùng khai thác sau khi đối thủ bị kéo lệch -->
+    <polygon class="zone-risk" points="230,30 315,30 315,130 250,90"></polygon>
+    <text class="zone-label" x="222" y="70" style="font-size:10px;">Khoảng trống dứt điểm</text>
+
+    <!-- Bạn: vị trí giao bóng -->
+    <g class="player-marker you" data-tt-title="Bạn (giao bóng)"
+       data-tt-note="Đứng gần đường biên dọc bên phải để tạo góc giao bóng rộng nhất.">
+      <circle class="body" cx="255" cy="790" r="12"></circle>
+      <text class="label" x="255" y="816">Bạn</text>
+    </g>
+
+    <!-- Đối thủ: vị trí đỡ giao bóng ban đầu -->
+    <g class="player-marker opponent" data-tt-title="Đối thủ"
+       data-tt-note="Đứng ở vị trí trung tâm chờ đỡ giao bóng.">
+      <circle class="body" cx="170" cy="70" r="12"></circle>
+      <text class="label" x="170" y="52">Đối thủ</text>
+    </g>
+
+    <!-- Cú 1: giao bóng mở góc -->
+    <path class="ball-path" marker-end="url(#arrow-ppt)"
+          d="M255,790 Q180,420 68,95"
+          data-tt-title="Cú 1 — Giao bóng mở góc"
+          data-tt-speed="~155 km/h"
+          data-tt-depth="Sâu, gần vạch giao bóng"
+          data-tt-angle="Rộng, kéo đối thủ ra ngoài đường biên đơn"
+          data-tt-note="Mục tiêu của cú giao bóng không phải ăn điểm trực tiếp mà là kéo đối thủ ra khỏi vị trí trung tâm.">
+    </path>
+    <text class="ball-path-number" x="150" y="420">1</text>
+
+    <!-- Đối thủ di chuyển ra đỡ giao bóng -->
+    <g class="player-marker opponent" data-tt-title="Đối thủ (bị kéo ra biên)"
+       data-tt-note="Buộc phải di chuyển ra ngoài đường biên đơn để đỡ giao bóng, khó hồi vị kịp.">
+      <circle class="body" cx="68" cy="95" r="10" opacity="0.9"></circle>
+    </g>
+
+    <!-- Cú 2: đối thủ trả bóng trung tính -->
+    <path class="ball-path secondary" marker-end="url(#arrow-ppt)"
+          d="M68,95 Q120,300 165,460"
+          data-tt-title="Cú 2 — Bóng trả trung tính"
+          data-tt-speed="~75 km/h"
+          data-tt-depth="Trung bình, giữa sân"
+          data-tt-angle="Gần như thẳng, thiếu góc do bị kéo lệch vị trí"
+          data-tt-note="Vì phải đỡ giao bóng ở vị trí bất lợi, đối thủ khó tạo được góc trả bóng nguy hiểm.">
+    </path>
+    <text class="ball-path-number" x="130" y="300">2</text>
+
+    <!-- Bạn: bước vào thực hiện cú +1 -->
+    <g class="player-marker you" data-tt-title="Bạn (+1)"
+       data-tt-note="Bước vào sân ngay sau cú giao bóng để chuẩn bị cú đánh tiếp theo ở vị trí thuận lợi.">
+      <circle class="body" cx="175" cy="490" r="10" opacity="0.9"></circle>
+    </g>
+
+    <!-- Cú 3: cú +1 kết thúc điểm -->
+    <path class="ball-path" marker-end="url(#arrow-ppt)"
+          d="M175,490 Q230,260 275,80"
+          data-tt-title="Cú 3 — Cú +1 kết thúc điểm"
+          data-tt-speed="~115 km/h"
+          data-tt-depth="Sâu, sát baseline"
+          data-tt-angle="Chéo sân, vào khoảng trống vừa mở ra ở phía đối diện"
+          data-tt-note="Đây là bản chất của 'Giao bóng + 1': hai cú đánh đầu tiên được lên kế hoạch như một chuỗi liên hoàn, không phải các cú đánh độc lập.">
+    </path>
+    <text class="ball-path-number" x="250" y="270">3</text>
+  </svg>
+
+  <figcaption class="court-diagram-caption">
+    <strong>Mẫu hình "Giao bóng + 1"</strong> — triết lý cốt lõi của <em>Pattern Play
+    Tennis</em>: coi giao bóng và cú đánh kế tiếp là MỘT chuỗi có chủ đích, không phải hai
+    tình huống tách biệt. Giao bóng mở góc (1) kéo đối thủ khỏi vị trí trung tâm, buộc trả
+    bóng trung tính (2), tạo điều kiện cho cú +1 kết thúc điểm vào khoảng trống vừa mở ra (3).
+  </figcaption>
+  <div class="court-diagram-legend">
+    <span><i style="background: var(--cd-you)"></i> Bạn</span>
+    <span><i style="background: var(--cd-opponent)"></i> Đối thủ</span>
+    <span><i style="background: var(--cd-ball-path)"></i> Trình tự đường bóng (1 → 2 → 3)</span>
+  </div>
+</figure>
+
+
                 <div class="hero-meta">
                     <span><i class="fa-solid fa-user"></i> Tác giả: R. Spencer Brent</span>
                     <span><i class="fa-solid fa-pen-nib"></i> Minh họa: George Janes (Doubleday)</span>
@@ -633,7 +751,7 @@
             <img src="pattern_play_assets/pattern_play_plate_08_overhead_smash_reach.jpg" alt="Vươn Cao Tối Đa Và Chuyển Trọng Lực Trong Cú Overhead Smash" style="max-width: 100%; height: auto; max-height: 520px; border-radius: 4px; display: block; margin: 0 auto;" />
             <div style="margin-top: 10px; font-size: 0.9em; color: #475569; text-align: left; line-height: 1.5; padding: 0 4px;">
                 <strong style="color: #0f172a; display: block; margin-bottom: 3px;">Hình 8: Vươn Cao Tối Đa Và Chuyển Trọng Lực Trong Cú Overhead Smash <span style="font-weight: normal; color: #64748b; font-style: italic;">(Overhead Smash Reach — High Point Contact and Forward Weight Drive)</span></strong>
-                <span>Điểm chạm bóng được thiết lập ở đỉnh cao nhất của sải tay, kết hợp bước lùi ngang trục (sideways cross) và dậm nhảy dứt khoát kết liễu đường bóng bổng.</span>
+                <span>Điểm tiếp xúc bóng được thiết lập ở đỉnh cao nhất của sải tay, kết hợp bước lùi ngang trục (sideways cross) và dậm nhảy dứt khoát kết liễu đường bóng bổng.</span>
             </div>
         </div>
     </div>
@@ -807,7 +925,7 @@
         <div style="display: inline-block; max-width: 100%; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
             <img src="pattern_play_assets/pattern_play_plate_12_serve_return_court_position.jpg" alt="Tư Thế Trả Giao Bóng Chủ Động — Đọc Hướng &amp; Khóa Góc Phản Công" style="max-width: 100%; height: auto; max-height: 520px; border-radius: 4px; display: block; margin: 0 auto;" />
             <div style="margin-top: 10px; font-size: 0.9em; color: #475569; text-align: left; line-height: 1.5; padding: 0 4px;">
-                <strong style="color: #0f172a; display: block; margin-bottom: 3px;">Hình 12: Tư Thế Trả Giao Bóng Chủ Động — Đọc Hướng &amp; Khóa Góc Phản Công <span style="font-weight: normal; color: #64748b; font-style: italic;">(Return of Serve Court Positioning — Neutralizing Server Advantage)</span></strong>
+                <strong style="color: #0f172a; display: block; margin-bottom: 3px;">Hình 12: Tư Thế Trả Giao Bóng tấn công — Đọc Hướng &amp; Khóa Góc Phản Công <span style="font-weight: normal; color: #64748b; font-style: italic;">(Return of Serve Court Positioning — Neutralizing Server Advantage)</span></strong>
                 <span>Cự ly đứng chuẩn xác, bước đệm chia chân (split-step) đồng bộ với quả tung của đối thủ và chuyển trọng tâm ra trước để bắt nhịp trả bóng vào phễu an toàn.</span>
             </div>
         </div>
@@ -893,5 +1011,6 @@
             });
         });
     </script>
+    <script src="court-diagram.js"></script>
 </body>
 </html>

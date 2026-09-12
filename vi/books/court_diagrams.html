@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sơ Đồ Chiến Thuật SVG Tương Tác — Tennis Unified</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="court-diagram.css">
+  <style>
+    :root {
+      --page-bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      --primary: #15803d;
+      --primary-dark: #166534;
+      --accent: #c98a2c;
+      --header-bg: #0f2438;
+      --header-text: #f6f4ee;
+    }
+    [data-theme="dark"], body.dark-mode {
+      --page-bg: #0b1620;
+      --card-bg: #101d29;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --border-color: #243447;
+      --header-bg: #07121b;
+      --header-text: #f1f5f9;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--page-bg);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      transition: background 0.25s ease, color 0.25s ease;
+      padding-bottom: 80px;
+    }
+    /* Header */
+    header.tu-header {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--header-bg);
+      color: var(--header-text);
+      padding: 14px 24px;
+      border-bottom: 3px solid var(--accent);
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .brand-wrap { display: flex; align-items: center; gap: 10px; }
+    .brand-title { font-size: 1.2rem; font-weight: 700; color: #fff; text-decoration: none; }
+    .brand-subtitle { font-size: 0.75rem; color: #e7b96a; display: block; }
+    .nav-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .nav-btn {
+      background: transparent; border: 1px solid rgba(246,244,238,0.3); color: #fff;
+      padding: 6px 14px; border-radius: 999px; font-size: 0.82rem; text-decoration: none;
+      transition: all 0.2s; cursor: pointer;
+    }
+    .nav-btn:hover { background: rgba(255,255,255,0.1); border-color: var(--accent); }
+    
+    /* Hero */
+    .hero-banner {
+      max-width: 960px; margin: 36px auto 24px; padding: 0 20px; text-align: center;
+    }
+    .hero-banner h1 { font-size: 2.1rem; font-weight: 800; margin-bottom: 8px; color: var(--text-main); }
+    .hero-banner p { font-size: 1.05rem; color: var(--text-muted); max-width: 750px; margin: 0 auto; }
+
+    /* Tab Controls */
+    .tab-bar {
+      max-width: 920px; margin: 24px auto; padding: 0 16px;
+      display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;
+    }
+    .tab-btn {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 10px 18px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex; align-items: center; gap: 8px;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+    }
+    .tab-btn:hover { color: var(--primary); border-color: var(--primary); }
+    .tab-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary-dark);
+      box-shadow: 0 4px 10px rgba(21, 128, 61, 0.3);
+    }
+
+    /* Diagram Panels */
+    .diagram-panel {
+      display: none;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 24px;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    }
+    .diagram-panel.active { display: block; animation: fadeIn 0.3s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+    .panel-meta {
+      display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 10px;
+      margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border-color);
+    }
+    .panel-meta h2 { font-size: 1.35rem; font-weight: 700; color: var(--text-main); }
+    .panel-meta span.author { font-size: 0.9rem; color: var(--accent); font-weight: 600; }
+    .panel-book-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 0.85rem; font-weight: 600; color: var(--primary);
+      text-decoration: none; padding: 4px 12px; border-radius: 6px;
+      background: rgba(21, 128, 61, 0.1); transition: background 0.2s;
+    }
+    .panel-book-link:hover { background: rgba(21, 128, 61, 0.2); }
+
+    .panel-analysis {
+      margin-top: 24px;
+      padding: 16px 20px;
+      background: rgba(0,0,0,0.02);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    [data-theme="dark"] .panel-analysis, body.dark-mode .panel-analysis {
+      background: rgba(255,255,255,0.03);
+    }
+  </style>
+</head>
+<body data-theme="light">
+  <header class="tu-header">
+    <div class="brand-wrap">
+      <i class="fa-solid fa-tennis-ball" style="color: #22c55e; font-size: 1.4rem;"></i>
+      <div>
+        <a href="index.html" class="brand-title">Tennis Unified</a>
+        <span class="brand-subtitle">Interactive Court Strategy Lab · Vector SVG W3C</span>
+      </div>
+    </div>
+    <div class="nav-actions">
+      <a href="index.html" class="nav-btn"><i class="fa-solid fa-book"></i> Thư Viện Sách</a>
+      <a href="glossary.html" class="nav-btn"><i class="fa-solid fa-spell-check"></i> Từ Điển Thuật Ngữ</a>
+      <button class="nav-btn" id="themeToggle" type="button"><i class="fa-solid fa-moon"></i> Chế độ tối</button>
+    </div>
+  </header>
+
+  <section class="hero-banner">
+    <h1>Sơ Đồ Chiến Thuật Sân Đấu SVG Tương Tác</h1>
+    <p>Bộ sơ đồ vector chuẩn W3C độ nét siêu cao, hỗ trợ Dark Mode và lớp đồ họa tọa độ tương tác. Di chuột hoặc chạm vào từng đường bóng và cầu thủ để xem thông số tốc độ, độ sâu và góc đánh.</p>
+  </section>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="showTab('tab-wu', this)"><i class="fa-solid fa-chess-knight"></i> 1. Winning Ugly (Brad Gilbert)</button>
+    <button class="tab-btn" onclick="showTab('tab-aod', this)"><i class="fa-solid fa-users"></i> 2. Đội Hình Australia (Art of Doubles)</button>
+    <button class="tab-btn" onclick="showTab('tab-ppt', this)"><i class="fa-solid fa-bolt"></i> 3. Mẫu Hình Giao Bóng + 1 (Pattern Play)</button>
+    <button class="tab-btn" onclick="showTab('tab-dir', this)"><i class="fa-solid fa-compass"></i> 4. Nguyên Lý Directionals (Tactics in Tennis)</button>
+  </div>
+
+  <main>
+    <!-- TAB 1: WINNING UGLY -->
+    <div id="tab-wu" class="diagram-panel active">
+      <div class="panel-meta">
+        <div>
+          <h2>Mẫu Hình "Mài Mòn Trái Tay Rồi Kết Thúc"</h2>
+          <span class="author">Brad Gilbert &bull; Winning Ugly</span>
+        </div>
+        <a href="tennis_tactics_vi.html#chuong-7" class="panel-book-link"><i class="fa-solid fa-book-open"></i> Đọc Chiến Thuật Cuối Sân</a>
+      </div>
+      <!--
+  Sơ đồ chiến thuật: WINNING UGLY (Brad Gilbert)
+  Mẫu hình: "Mài mòn trái tay, chờ bóng ngắn, kết thúc bằng forehand"
+  Nhúng trực tiếp đoạn này vào nội dung chương tương ứng trong winning_ugly_vi.html.
+  Yêu cầu: đã nhúng court-diagram.css và court-diagram.js ở trang cha.
+-->
+<figure class="court-diagram-wrap">
+  <svg class="tennis-court-svg" viewBox="0 0 360 840" xmlns="http://www.w3.org/2000/svg" role="img"
+       aria-label="Sơ đồ mẫu hình chiến thuật: mài mòn trái tay đối thủ rồi kết thúc bằng forehand xuyên góc">
+    <defs>
+      <marker id="arrow-wu" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0,0 L10,5 L0,10 z" fill="var(--cd-ball-path)"></path>
+      </marker>
+    </defs>
+
+    <!-- Mặt sân -->
+    <rect class="court-surface" x="0" y="30" width="360" height="780"></rect>
+
+    <!-- Hành lang đôi (mờ, chỉ để tham chiếu) -->
+    <line class="court-line-thin" x1="0" y1="30" x2="0" y2="810"></line>
+    <line class="court-line-thin" x1="360" y1="30" x2="360" y2="810"></line>
+
+    <!-- Đường biên đơn -->
+    <line class="court-line" x1="45" y1="30" x2="45" y2="810"></line>
+    <line class="court-line" x1="315" y1="30" x2="315" y2="810"></line>
+
+    <!-- Baseline -->
+    <line class="court-line" x1="0" y1="30" x2="360" y2="30"></line>
+    <line class="court-line" x1="0" y1="810" x2="360" y2="810"></line>
+
+    <!-- Lưới -->
+    <line class="court-net" x1="0" y1="420" x2="360" y2="420"></line>
+
+    <!-- Vạch giao bóng & giữa sân -->
+    <line class="court-line" x1="45" y1="210" x2="315" y2="210"></line>
+    <line class="court-line" x1="45" y1="630" x2="315" y2="630"></line>
+    <line class="court-line" x1="180" y1="210" x2="180" y2="630"></line>
+
+    <!-- Vạch tâm baseline -->
+    <line class="court-center-mark" x1="180" y1="30" x2="180" y2="38"></line>
+    <line class="court-center-mark" x1="180" y1="802" x2="180" y2="810"></line>
+
+    <!-- Vùng bị khai thác ở cú kết thúc (góc rộng bên forehand đối thủ) -->
+    <polygon class="zone-risk" points="230,30 315,30 315,140 230,90"></polygon>
+    <text class="zone-label" x="232" y="70">Khoảng trống mở ra</text>
+
+    <!-- Vùng mục tiêu ban đầu: trái tay đối thủ, sâu -->
+    <polygon class="zone-safe" points="45,30 130,30 110,110 45,110"></polygon>
+    <text class="zone-label" x="48" y="128">Trái tay đối thủ (mục tiêu mài mòn)</text>
+
+    <!-- Đường bóng 1: Bạn đánh sâu, xoáy cao vào trái tay đối thủ -->
+    <path class="ball-path" marker-end="url(#arrow-wu)"
+          d="M170,780 Q140,420 95,75"
+          data-tt-title="Cú 1 — Đánh sâu vào trái tay"
+          data-tt-speed="~95 km/h, xoáy lên cao"
+          data-tt-depth="Sâu, cách baseline khoảng 0.5–1m"
+          data-tt-angle="Chéo sân nhẹ, hướng thẳng vào trái tay"
+          data-tt-note="Mục tiêu: buộc đối thủ lùi sâu, không cho thời gian chuẩn bị.">
+    </path>
+    <text class="ball-path-number" x="130" y="430">1</text>
+
+    <!-- Cầu thủ: Bạn -->
+    <g class="player-marker you" data-tt-title="Bạn"
+       data-tt-note="Xuất phát từ giữa sân sau khi hồi vị.">
+      <circle class="body" cx="170" cy="780" r="12"></circle>
+      <text class="label" x="170" y="806">Bạn</text>
+    </g>
+
+    <!-- Cầu thủ: Đối thủ (bị đẩy lùi) -->
+    <g class="player-marker opponent" data-tt-title="Đối thủ"
+       data-tt-note="Bị đẩy lùi sâu, mất thăng bằng, buộc trả bóng ngắn hoặc yếu.">
+      <circle class="body" cx="95" cy="75" r="12"></circle>
+      <text class="label" x="95" y="20">Đối thủ</text>
+    </g>
+
+    <!-- Đường bóng 2: đối thủ trả bóng ngắn/yếu -->
+    <path class="ball-path secondary" marker-end="url(#arrow-wu)"
+          d="M95,75 Q120,300 155,470"
+          data-tt-title="Cú 2 — Bóng trả ngắn/yếu"
+          data-tt-speed="~60 km/h, ít xoáy"
+          data-tt-depth="Ngắn, rơi trong khu vực giữa sân"
+          data-tt-angle="Không góc rõ, gần như thẳng"
+          data-tt-note="Đây là tín hiệu để bước vào tấn công theo triết lý 'chờ bóng ngắn' của Brad Gilbert.">
+    </path>
+    <text class="ball-path-number" x="140" y="300">2</text>
+
+    <!-- Cầu thủ: Bạn bước vào tấn công -->
+    <g class="player-marker you" data-tt-title="Bạn (bước vào tấn công)"
+       data-tt-note="Di chuyển vào sân để xử lý bóng ngắn ở độ cao thuận lợi.">
+      <circle class="body" cx="160" cy="500" r="10" opacity="0.9"></circle>
+      <text class="label" x="160" y="522">Bạn</text>
+    </g>
+
+    <!-- Đường bóng 3: cú kết thúc inside-out vào khoảng trống -->
+    <path class="ball-path" marker-end="url(#arrow-wu)"
+          d="M160,500 Q220,260 270,80"
+          data-tt-title="Cú 3 — Kết thúc điểm (inside-out)"
+          data-tt-speed="~110 km/h"
+          data-tt-depth="Sâu, sát baseline"
+          data-tt-angle="Chéo sân rộng, vào khoảng trống vừa mở ra"
+          data-tt-note="Kết thúc điểm sau khi đối thủ đã bị kéo lệch vị trí từ hai cú trước.">
+    </path>
+    <text class="ball-path-number" x="245" y="270">3</text>
+  </svg>
+
+  <figcaption class="court-diagram-caption">
+    <strong>Mẫu hình "Mài mòn rồi kết thúc"</strong> — nền tảng chiến thuật cốt lõi trong
+    <em>Winning Ugly</em>: dồn ép liên tục vào trái tay đối thủ bằng bóng sâu, xoáy cao (1),
+    chờ thời điểm đối thủ trả bóng ngắn hoặc yếu (2), rồi bước vào kết thúc điểm vào khoảng
+    trống vừa mở ra (3). Di chuột hoặc dùng phím Tab vào từng đường bóng và cầu thủ để xem
+    chi tiết tốc độ, độ sâu và góc mở.
+  </figcaption>
+  <div class="court-diagram-legend">
+    <span><i style="background: var(--cd-you)"></i> Bạn</span>
+    <span><i style="background: var(--cd-opponent)"></i> Đối thủ</span>
+    <span><i style="background: var(--cd-ball-path)"></i> Đường bóng (số thứ tự = trình tự)</span>
+  </div>
+</figure>
+
+      <div class="panel-analysis">
+        <strong>Phân Tích Chiến Lược Cốt Lõi:</strong> Brad Gilbert nhấn mạnh rằng không cần phải đánh một cú giật winner sấm sét ngay từ vạch cuối sân. Hãy liên tục ép đối thủ vào phía trái tay bằng các đường bóng sâu có độ xoáy cao an toàn (1). Khi bị bào mòn thể lực và cảm giác thăng bằng, đối thủ chắc chắn sẽ trả lại một quả bóng ngắn yếu (2) — đây chính là thời điểm vàng để bạn bước vào sân, tấn công vào khoảng trống rộng mở (3).
+      </div>
+    </div>
+
+    <!-- TAB 2: ART OF DOUBLES -->
+    <div id="tab-aod" class="diagram-panel">
+      <div class="panel-meta">
+        <div>
+          <h2>Đội Hình Australia & Kỹ Thuật Poaching Cướp Điểm</h2>
+          <span class="author">Pat Blaskower &bull; The Art of Doubles</span>
+        </div>
+        <a href="the_art_of_doubles_vi.html" class="panel-book-link"><i class="fa-solid fa-book-open"></i> Đọc Nghệ Thuật Đánh Đôi</a>
+      </div>
+      <!--
+  Sơ đồ chiến thuật: THE ART OF DOUBLES (Pat Blaskower)
+  Chủ đề: Đội hình Australia (Australian Formation) & cắt lưới cướp điểm (poaching)
+  Nhúng vào the_art_of_doubles_vi.html.
+  Yêu cầu: đã nhúng court-diagram.css và court-diagram.js ở trang cha.
+-->
+<figure class="court-diagram-wrap">
+  <svg class="tennis-court-svg" viewBox="0 0 360 840" xmlns="http://www.w3.org/2000/svg" role="img"
+       aria-label="Sơ đồ đội hình Australia trong đánh đôi và đường cắt lưới cướp điểm">
+    <defs>
+      <marker id="arrow-aod" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0,0 L10,5 L0,10 z" fill="var(--cd-ball-path)"></path>
+      </marker>
+    </defs>
+
+    <rect class="court-surface" x="0" y="30" width="360" height="780"></rect>
+
+    <!-- Đường biên đôi (đầy đủ, vì đây là sơ đồ đánh đôi) -->
+    <line class="court-line" x1="0" y1="30" x2="0" y2="810"></line>
+    <line class="court-line" x1="360" y1="30" x2="360" y2="810"></line>
+    <line class="court-line-thin" x1="45" y1="30" x2="45" y2="810"></line>
+    <line class="court-line-thin" x1="315" y1="30" x2="315" y2="810"></line>
+
+    <line class="court-line" x1="0" y1="30" x2="360" y2="30"></line>
+    <line class="court-line" x1="0" y1="810" x2="360" y2="810"></line>
+
+    <line class="court-net" x1="0" y1="420" x2="360" y2="420"></line>
+
+    <line class="court-line" x1="45" y1="210" x2="315" y2="210"></line>
+    <line class="court-line" x1="45" y1="630" x2="315" y2="630"></line>
+    <line class="court-line" x1="180" y1="210" x2="180" y2="630"></line>
+
+    <line class="court-center-mark" x1="180" y1="30" x2="180" y2="38"></line>
+    <line class="court-center-mark" x1="180" y1="802" x2="180" y2="810"></line>
+
+    <!-- Vùng nguy hiểm cho người trả giao bóng: hành lang chéo sân bị đồng đội lưới án ngữ -->
+    <polygon class="zone-risk" points="180,420 315,420 315,720 240,720"></polygon>
+    <text class="zone-label" x="230" y="500">Hành lang bị đón lõng</text>
+
+    <!-- Vùng an toàn hơn cho người trả giao bóng: dọc dây -->
+    <polygon class="zone-safe" points="45,420 100,420 100,700 45,700"></polygon>
+    <text class="zone-label" x="48" y="600">Dọc dây (khó hơn nhưng thoáng)</text>
+
+    <!-- Người giao bóng -->
+    <g class="player-marker you" data-tt-title="Người giao bóng"
+       data-tt-note="Giao bóng từ ô bên phải (deuce court).">
+      <circle class="body" cx="270" cy="790" r="12"></circle>
+      <text class="label" x="270" y="816">Giao bóng</text>
+    </g>
+
+    <!-- Đồng đội đứng lưới trong đội hình Australia -->
+    <g class="player-marker you" data-tt-title="Đồng đội đứng lưới (đội hình Australia)"
+       data-tt-note="Đứng CÙNG bên với người giao bóng thay vì tách sang bên kia — đặc trưng của đội hình Australia, nhằm che hành lang chéo sân quen thuộc.">
+      <circle class="body" cx="220" cy="470" r="12"></circle>
+      <text class="label" x="220" y="452">Đồng đội (lưới)</text>
+    </g>
+
+    <!-- Người đỡ giao bóng -->
+    <g class="player-marker opponent" data-tt-title="Người đỡ giao bóng"
+       data-tt-note="Đứng ở vị trí đỡ giao bóng bình thường.">
+      <circle class="body" cx="90" cy="90" r="12"></circle>
+      <text class="label" x="90" y="72">Đỡ giao bóng</text>
+    </g>
+
+    <!-- Đồng đội của người đỡ giao bóng -->
+    <g class="player-marker opponent" data-tt-title="Đồng đội của người đỡ giao bóng"
+       data-tt-note="Giữ vị trí cuối sân bên kia, sẵn sàng xử lý bóng lốp hoặc bóng chuyền.">
+      <circle class="body" cx="270" cy="60" r="12"></circle>
+      <text class="label" x="270" y="42">Đồng đội</text>
+    </g>
+
+    <!-- Cú 1: giao bóng xuống chữ T -->
+    <path class="ball-path" marker-end="url(#arrow-aod)"
+          d="M270,790 Q230,420 135,95"
+          data-tt-title="Cú 1 — Giao bóng xuống chữ T"
+          data-tt-speed="~150 km/h"
+          data-tt-depth="Sâu, gần vạch giao bóng"
+          data-tt-angle="Thẳng, hướng vào trung tâm"
+          data-tt-note="Giao xuống chữ T thu hẹp góc trả bóng của đối thủ, hỗ trợ cho ý đồ đội hình Australia.">
+    </path>
+    <text class="ball-path-number" x="215" y="420">1</text>
+
+    <!-- Cú 2 (secondary, bị cắt): trả bóng chéo sân quen thuộc, bị đón lõng -->
+    <path class="ball-path secondary" marker-end="url(#arrow-aod)"
+          d="M90,90 Q160,300 218,462"
+          data-tt-title="Cú 2 — Trả bóng chéo sân (bản năng)"
+          data-tt-speed="~90 km/h"
+          data-tt-depth="Trung bình"
+          data-tt-angle="Chéo sân — hướng đi quen thuộc nhất của hầu hết người chơi"
+          data-tt-note="Đây chính là đường bóng mà đồng đội đứng lưới trong đội hình Australia được bố trí để đón lõng.">
+    </path>
+    <text class="ball-path-number" x="175" y="300">2</text>
+
+    <!-- Cú 3: vô-lê cắt lưới kết thúc điểm -->
+    <path class="ball-path" marker-end="url(#arrow-aod)"
+          d="M222,466 Q160,600 65,680"
+          data-tt-title="Cú 3 — Vô-lê cắt lưới (poach)"
+          data-tt-speed="~100 km/h"
+          data-tt-depth="Ngắn, góc hẹp"
+          data-tt-angle="Cắt góc, đưa bóng ra ngoài tầm với của cả hai đối thủ"
+          data-tt-note="Đồng đội đứng lưới di chuyển ngang để chặn và kết thúc điểm — yếu tố cốt lõi của chiến thuật poaching.">
+    </path>
+    <text class="ball-path-number" x="130" y="590">3</text>
+
+    <!-- Lựa chọn thay thế (mờ): dọc dây, khó hơn nhưng an toàn hơn -->
+    <path class="ball-path secondary" marker-end="url(#arrow-aod)" opacity="0.55"
+          d="M90,90 Q75,380 72,690"
+          data-tt-title="Lựa chọn thay thế — Dọc dây"
+          data-tt-speed="~85 km/h"
+          data-tt-depth="Sâu"
+          data-tt-angle="Song song đường biên, khó thực hiện chính xác hơn"
+          data-tt-note="Vì đội hình Australia dồn cả hai người bên phía giao bóng sang một bên, hành lang dọc dây phía bên kia thường bị bỏ trống — nhưng đòi hỏi kỹ thuật chính xác hơn để thực hiện.">
+    </path>
+  </svg>
+
+  <figcaption class="court-diagram-caption">
+    <strong>Đội hình Australia & cắt lưới cướp điểm</strong> — đội giao bóng cố tình đứng
+    lệch về cùng một bên (thay vì tách hai người ra hai nửa sân) để bịt kín hành lang chéo
+    sân quen thuộc của người trả giao bóng, buộc đối thủ phải chọn hướng khó hơn hoặc đánh
+    thẳng vào tầm đón lõng của đồng đội đứng lưới. Di chuột/Tab vào từng cầu thủ và đường
+    bóng để xem chi tiết.
+  </figcaption>
+  <div class="court-diagram-legend">
+    <span><i style="background: var(--cd-you)"></i> Đội giao bóng</span>
+    <span><i style="background: var(--cd-opponent)"></i> Đội đỡ giao bóng</span>
+    <span><i style="background: var(--cd-ball-path)"></i> Đường bóng thực hiện</span>
+  </div>
+</figure>
+
+      <div class="panel-analysis">
+        <strong>Phân Tích Chiến Lược Cốt Lõi:</strong> Đội hình Australia (Australian Formation) hóa giải triệt để thói quen trả giao bóng chéo sân quen thuộc của đối thủ. Bằng cách để người đứng lưới đứng cùng nửa sân với người giao bóng, góc đánh chéo sân hoàn toàn bị bịt kín. Người đỡ bóng bị ép phải mạo hiểm đánh dọc dây qua phần lưới cao nhất, tạo cơ hội cho người đứng lưới bắt bài và vồ lưới (poaching) dứt điểm dứt khoát.
+      </div>
+    </div>
+
+    <!-- TAB 3: PATTERN PLAY -->
+    <div id="tab-ppt" class="diagram-panel">
+      <div class="panel-meta">
+        <div>
+          <h2>Mẫu Hình Tấn Công "Giao Bóng + 1" (Serve + 1)</h2>
+          <span class="author">Brent Abel &bull; Pattern Play Tennis</span>
+        </div>
+        <a href="pattern_play_tennis_vi.html" class="panel-book-link"><i class="fa-solid fa-book-open"></i> Đọc Pattern Play Tennis</a>
+      </div>
+      <!--
+  Sơ đồ chiến thuật: PATTERN PLAY TENNIS (Brent Abel)
+  Mẫu hình: "Giao bóng + 1" (Serve+1) — mở góc bằng giao bóng, kết thúc bằng cú đánh tiếp theo
+  Nhúng vào pattern_play_tennis_vi.html.
+  Yêu cầu: đã nhúng court-diagram.css và court-diagram.js ở trang cha.
+-->
+<figure class="court-diagram-wrap">
+  <svg class="tennis-court-svg" viewBox="0 0 360 840" xmlns="http://www.w3.org/2000/svg" role="img"
+       aria-label="Sơ đồ mẫu hình Giao bóng cộng Một: mở góc bằng giao bóng rồi kết thúc bằng cú đánh tiếp theo">
+    <defs>
+      <marker id="arrow-ppt" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0,0 L10,5 L0,10 z" fill="var(--cd-ball-path)"></path>
+      </marker>
+    </defs>
+
+    <rect class="court-surface" x="0" y="30" width="360" height="780"></rect>
+
+    <line class="court-line-thin" x1="0" y1="30" x2="0" y2="810"></line>
+    <line class="court-line-thin" x1="360" y1="30" x2="360" y2="810"></line>
+
+    <line class="court-line" x1="45" y1="30" x2="45" y2="810"></line>
+    <line class="court-line" x1="315" y1="30" x2="315" y2="810"></line>
+    <line class="court-line" x1="0" y1="30" x2="360" y2="30"></line>
+    <line class="court-line" x1="0" y1="810" x2="360" y2="810"></line>
+
+    <line class="court-net" x1="0" y1="420" x2="360" y2="420"></line>
+
+    <line class="court-line" x1="45" y1="210" x2="315" y2="210"></line>
+    <line class="court-line" x1="45" y1="630" x2="315" y2="630"></line>
+    <line class="court-line" x1="180" y1="210" x2="180" y2="630"></line>
+
+    <line class="court-center-mark" x1="180" y1="30" x2="180" y2="38"></line>
+    <line class="court-center-mark" x1="180" y1="802" x2="180" y2="810"></line>
+
+    <!-- Vùng mục tiêu giao bóng: góc mở rộng -->
+    <polygon class="zone-safe" points="45,30 100,30 90,110 45,110"></polygon>
+    <text class="zone-label" x="48" y="128">Góc giao bóng mở rộng</text>
+
+    <!-- Vùng khai thác sau khi đối thủ bị kéo lệch -->
+    <polygon class="zone-risk" points="230,30 315,30 315,130 250,90"></polygon>
+    <text class="zone-label" x="222" y="70" style="font-size:10px;">Khoảng trống dứt điểm</text>
+
+    <!-- Bạn: vị trí giao bóng -->
+    <g class="player-marker you" data-tt-title="Bạn (giao bóng)"
+       data-tt-note="Đứng gần đường biên dọc bên phải để tạo góc giao bóng rộng nhất.">
+      <circle class="body" cx="255" cy="790" r="12"></circle>
+      <text class="label" x="255" y="816">Bạn</text>
+    </g>
+
+    <!-- Đối thủ: vị trí đỡ giao bóng ban đầu -->
+    <g class="player-marker opponent" data-tt-title="Đối thủ"
+       data-tt-note="Đứng ở vị trí trung tâm chờ đỡ giao bóng.">
+      <circle class="body" cx="170" cy="70" r="12"></circle>
+      <text class="label" x="170" y="52">Đối thủ</text>
+    </g>
+
+    <!-- Cú 1: giao bóng mở góc -->
+    <path class="ball-path" marker-end="url(#arrow-ppt)"
+          d="M255,790 Q180,420 68,95"
+          data-tt-title="Cú 1 — Giao bóng mở góc"
+          data-tt-speed="~155 km/h"
+          data-tt-depth="Sâu, gần vạch giao bóng"
+          data-tt-angle="Rộng, kéo đối thủ ra ngoài đường biên đơn"
+          data-tt-note="Mục tiêu của cú giao bóng không phải ăn điểm trực tiếp mà là kéo đối thủ ra khỏi vị trí trung tâm.">
+    </path>
+    <text class="ball-path-number" x="150" y="420">1</text>
+
+    <!-- Đối thủ di chuyển ra đỡ giao bóng -->
+    <g class="player-marker opponent" data-tt-title="Đối thủ (bị kéo ra biên)"
+       data-tt-note="Buộc phải di chuyển ra ngoài đường biên đơn để đỡ giao bóng, khó hồi vị kịp.">
+      <circle class="body" cx="68" cy="95" r="10" opacity="0.9"></circle>
+    </g>
+
+    <!-- Cú 2: đối thủ trả bóng trung tính -->
+    <path class="ball-path secondary" marker-end="url(#arrow-ppt)"
+          d="M68,95 Q120,300 165,460"
+          data-tt-title="Cú 2 — Bóng trả trung tính"
+          data-tt-speed="~75 km/h"
+          data-tt-depth="Trung bình, giữa sân"
+          data-tt-angle="Gần như thẳng, thiếu góc do bị kéo lệch vị trí"
+          data-tt-note="Vì phải đỡ giao bóng ở vị trí bất lợi, đối thủ khó tạo được góc trả bóng nguy hiểm.">
+    </path>
+    <text class="ball-path-number" x="130" y="300">2</text>
+
+    <!-- Bạn: bước vào thực hiện cú +1 -->
+    <g class="player-marker you" data-tt-title="Bạn (+1)"
+       data-tt-note="Bước vào sân ngay sau cú giao bóng để chuẩn bị cú đánh tiếp theo ở vị trí thuận lợi.">
+      <circle class="body" cx="175" cy="490" r="10" opacity="0.9"></circle>
+    </g>
+
+    <!-- Cú 3: cú +1 kết thúc điểm -->
+    <path class="ball-path" marker-end="url(#arrow-ppt)"
+          d="M175,490 Q230,260 275,80"
+          data-tt-title="Cú 3 — Cú +1 kết thúc điểm"
+          data-tt-speed="~115 km/h"
+          data-tt-depth="Sâu, sát baseline"
+          data-tt-angle="Chéo sân, vào khoảng trống vừa mở ra ở phía đối diện"
+          data-tt-note="Đây là bản chất của 'Giao bóng + 1': hai cú đánh đầu tiên được lên kế hoạch như một chuỗi liên hoàn, không phải các cú đánh độc lập.">
+    </path>
+    <text class="ball-path-number" x="250" y="270">3</text>
+  </svg>
+
+  <figcaption class="court-diagram-caption">
+    <strong>Mẫu hình "Giao bóng + 1"</strong> — triết lý cốt lõi của <em>Pattern Play
+    Tennis</em>: coi giao bóng và cú đánh kế tiếp là MỘT chuỗi có chủ đích, không phải hai
+    tình huống tách biệt. Giao bóng mở góc (1) kéo đối thủ khỏi vị trí trung tâm, buộc trả
+    bóng trung tính (2), tạo điều kiện cho cú +1 kết thúc điểm vào khoảng trống vừa mở ra (3).
+  </figcaption>
+  <div class="court-diagram-legend">
+    <span><i style="background: var(--cd-you)"></i> Bạn</span>
+    <span><i style="background: var(--cd-opponent)"></i> Đối thủ</span>
+    <span><i style="background: var(--cd-ball-path)"></i> Trình tự đường bóng (1 → 2 → 3)</span>
+  </div>
+</figure>
+
+      <div class="panel-analysis">
+        <strong>Phân Tích Chiến Lược Cốt Lõi:</strong> Trong quần vợt hiện đại, điểm số không kết thúc bằng quả giao bóng ace mà được định đoạt ở cú đánh ngay sau giao bóng (Serve + 1). Cú giao bóng góc rộng (1) kéo đối thủ ra xa khỏi mép sân. Ngay khi đối thủ chới với trả bóng qua lưới, bạn đã chủ động bước vào sân và dứt điểm thuận tay (Forehand) vào khoảng trống mênh mông ở góc đối diện (2).
+      </div>
+    </div>
+
+    <!-- TAB 4: DIRECTIONALS -->
+    <div id="tab-dir" class="diagram-panel">
+      <div class="panel-meta">
+        <div>
+          <h2>Nguyên Lý Điểm Cắt Lưới & Hướng Đánh (Directionals)</h2>
+          <span class="author">Paul Wardlaw &bull; Tactics in Tennis</span>
+        </div>
+        <a href="tennis_tactics_vi.html" class="panel-book-link"><i class="fa-solid fa-book-open"></i> Đọc Tennis Tactics</a>
+      </div>
+      <!--
+  Sơ đồ chiến thuật: TACTICS IN TENNIS (Paul Wardlaw) — "Directionals"
+  Nguyên lý: điểm bóng cắt qua lưới quyết định hướng đánh an toàn (chéo sân so với dọc dây).
+  Nhúng vào tactics_in_tennis_vi.html.
+  Yêu cầu: đã nhúng court-diagram.css và court-diagram.js ở trang cha.
+-->
+<figure class="court-diagram-wrap">
+  <svg class="tennis-court-svg" viewBox="0 0 360 840" xmlns="http://www.w3.org/2000/svg" role="img"
+       aria-label="Sơ đồ nguyên lý Directionals: vùng nên đánh chéo sân so với vùng có thể đánh dọc dây, dựa trên điểm bóng cắt qua lưới">
+    <defs>
+      <marker id="arrow-dir" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0,0 L10,5 L0,10 z" fill="var(--cd-ball-path)"></path>
+      </marker>
+    </defs>
+
+    <rect class="court-surface" x="0" y="30" width="360" height="780"></rect>
+
+    <line class="court-line-thin" x1="0" y1="30" x2="0" y2="810"></line>
+    <line class="court-line-thin" x1="360" y1="30" x2="360" y2="810"></line>
+
+    <line class="court-line" x1="45" y1="30" x2="45" y2="810"></line>
+    <line class="court-line" x1="315" y1="30" x2="315" y2="810"></line>
+    <line class="court-line" x1="0" y1="30" x2="360" y2="30"></line>
+    <line class="court-line" x1="0" y1="810" x2="360" y2="810"></line>
+
+    <line class="court-net" x1="0" y1="420" x2="360" y2="420"></line>
+
+    <line class="court-line" x1="45" y1="210" x2="315" y2="210"></line>
+    <line class="court-line" x1="45" y1="630" x2="315" y2="630"></line>
+    <line class="court-line" x1="180" y1="210" x2="180" y2="630"></line>
+
+    <line class="court-center-mark" x1="180" y1="30" x2="180" y2="38"></line>
+    <line class="court-center-mark" x1="180" y1="802" x2="180" y2="810"></line>
+
+    <!-- Hai đường chéo hướng dẫn (Directional guide lines): nối 4 góc baseline qua điểm giữa lưới -->
+    <line class="court-line-thin" stroke-dasharray="5 5" x1="45" y1="30" x2="315" y2="810"></line>
+    <line class="court-line-thin" stroke-dasharray="5 5" x1="315" y1="30" x2="45" y2="810"></line>
+
+    <!-- Vùng nửa sân dưới (sân của bạn), chia theo 2 đường chéo -->
+    <!-- Vùng ngoài (gần biên dọc khi bóng cắt lưới): nên đánh chéo sân -->
+    <polygon class="zone-safe" points="45,810 45,630 180,420 45,630"></polygon>
+    <polygon class="zone-safe" points="315,810 315,630 180,420 315,630"></polygon>
+    <text class="zone-label" x="48" y="700">Chéo sân an toàn hơn</text>
+    <text class="zone-label" x="230" y="700">Chéo sân an toàn hơn</text>
+
+    <!-- Vùng trung tâm (gần điểm cắt lưới trung tâm): dọc dây khả thi -->
+    <polygon class="zone-risk" points="90,810 270,810 180,420"></polygon>
+    <text class="zone-label" x="140" y="770">Dọc dây khả thi</text>
+
+    <!-- Điểm chạm A: gần biên dọc -->
+    <g class="player-marker you" data-tt-title="Điểm chạm A — gần đường biên dọc"
+       data-tt-note="Bóng cắt qua lưới gần đường biên dọc → nên chọn chéo sân: mặt lưới thấp hơn, biên độ an toàn (margin) lớn hơn, ít rủi ro đánh ra ngoài.">
+      <circle class="body" cx="80" cy="770" r="11"></circle>
+      <text class="label" x="80" y="794">A</text>
+    </g>
+    <path class="ball-path" marker-end="url(#arrow-dir)"
+          d="M80,770 Q60,430 55,90"
+          data-tt-title="Lựa chọn tại A — Chéo sân"
+          data-tt-speed="~90 km/h"
+          data-tt-depth="Sâu"
+          data-tt-angle="Chéo sân — tận dụng phần lưới thấp hơn ở giữa và chiều dài đường chéo dài hơn"
+          data-tt-note="Vì điểm chạm nằm ngoài vùng trung tâm, dọc dây sẽ phải vượt qua phần lưới cao hơn với biên độ hẹp hơn nhiều — rủi ro cao.">
+    </path>
+
+    <!-- Điểm chạm B: gần trung tâm -->
+    <g class="player-marker opponent" data-tt-title="Điểm chạm B — gần trung tâm"
+       data-tt-note="Bóng cắt qua lưới gần điểm giữa (center strap) → cả hai hướng đều khả thi; dọc dây trở thành lựa chọn hợp lý vì góc và khoảng cách tương đương chéo sân.">
+      <circle class="body" cx="200" cy="750" r="11"></circle>
+      <text class="label" x="200" y="774">B</text>
+    </g>
+    <path class="ball-path secondary" marker-end="url(#arrow-dir)"
+          d="M200,750 Q210,420 225,90"
+          data-tt-title="Lựa chọn tại B — Dọc dây"
+          data-tt-speed="~95 km/h"
+          data-tt-depth="Sâu"
+          data-tt-angle="Dọc dây — khả thi vì điểm chạm gần trung tâm, không mất nhiều biên độ an toàn so với chéo sân"
+          data-tt-note="Nguyên lý Directionals: vị trí bóng cắt qua lưới — chứ không phải vị trí đứng trên sân — mới là yếu tố quyết định hướng đánh an toàn.">
+    </path>
+  </svg>
+
+  <figcaption class="court-diagram-caption">
+    <strong>Nguyên lý Directionals (Paul Wardlaw)</strong> — hai đường chéo dẫn hướng nối các
+    góc baseline qua điểm giữa lưới chia sân thành các vùng quyết định. Tại điểm chạm
+    <strong>A</strong> (gần đường biên dọc khi bóng cắt qua lưới), chéo sân là lựa chọn an
+    toàn hơn rõ rệt. Tại điểm chạm <strong>B</strong> (gần trung tâm), dọc dây trở thành một
+    lựa chọn khả thi tương đương. Nguyên lý này giúp loại bỏ phỏng đoán cảm tính khỏi quyết
+    định chọn hướng đánh.
+  </figcaption>
+  <div class="court-diagram-legend">
+    <span><i style="background: var(--cd-you)"></i> Điểm chạm A (ngoài biên)</span>
+    <span><i style="background: var(--cd-opponent)"></i> Điểm chạm B (trung tâm)</span>
+    <span><i style="background: var(--cd-ball-path)"></i> Hướng đánh được khuyến nghị</span>
+  </div>
+</figure>
+
+      <div class="panel-analysis">
+        <strong>Phân Tích Chiến Lược Cốt Lõi:</strong> Quy tắc Wardlaw Directionals quy định: khi bóng từ đối thủ đi chéo sân, hướng đánh an toàn nhất và có tỷ lệ thành công cao nhất luôn là đánh trả lại chéo sân (băng qua phần lưới thấp nhất và khoảng sân dài nhất). Chỉ nên đổi hướng đánh dọc dây khi bạn ở trong tư thế cân bằng hoàn hảo và bóng đã bay qua vị trí giữa lưới sang phần sân của bạn.
+      </div>
+    </div>
+  </main>
+
+  <script src="court-diagram.js"></script>
+  <script>
+    function showTab(tabId, btn) {
+      document.querySelectorAll('.diagram-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      btn.classList.add('active');
+    }
+
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+      const isDark = document.body.getAttribute('data-theme') === 'dark' || document.body.classList.contains('dark-mode');
+      if (isDark) {
+        document.body.removeAttribute('data-theme');
+        document.body.classList.remove('dark-mode');
+        themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i> Chế độ tối';
+      } else {
+        document.body.setAttribute('data-theme', 'dark');
+        document.body.classList.add('dark-mode');
+        themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i> Chế độ sáng';
+      }
+    });
+  </script>
+</body>
+</html>

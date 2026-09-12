@@ -1,0 +1,167 @@
+/* =========================================================================
+   court-diagram.css
+   Stylesheet dùng chung cho toàn bộ sơ đồ chiến thuật SVG tương tác.
+   Dùng cho: Winning Ugly, The Art of Doubles, Pattern Play Tennis,
+             Tactics in Tennis (Directionals).
+
+   Cách nhúng: <link rel="stylesheet" href="/assets/css/court-diagram.css">
+   (điều chỉnh đường dẫn cho khớp cấu trúc repo — ví dụ nếu đặt trong
+   vi/books/assets/ thì dùng href="assets/court-diagram.css")
+   ========================================================================= */
+
+:root{
+  --cd-court-clay:#a6532e;      /* không dùng làm nền trang, chỉ để tham chiếu nếu cần */
+  --cd-court-fill: #1c4f66;
+  --cd-court-fill-alt: #164056;
+  --cd-line: #f5f2ea;
+  --cd-net: #2b2b2b;
+  --cd-bg: transparent;
+  --cd-text: #16232c;
+  --cd-text-dim: #55636c;
+  --cd-you: #c98a2c;         /* người chơi / đội chính */
+  --cd-you-fill: #f0c583;
+  --cd-opponent: #2f5f8a;    /* đối thủ */
+  --cd-opponent-fill: #a9c6de;
+  --cd-ball-path: #d94f30;
+  --cd-zone-safe: rgba(58, 138, 92, 0.22);
+  --cd-zone-risk: rgba(217, 79, 48, 0.18);
+  --cd-tooltip-bg: #16232c;
+  --cd-tooltip-text: #f5f2ea;
+  --cd-focus: #e7b96a;
+}
+[data-theme="dark"], body.dark-mode{
+  --cd-court-fill: #0f2e3d;
+  --cd-court-fill-alt: #0a2330;
+  --cd-line: #eef3f7;
+  --cd-net: #d8dee3;
+  --cd-text: #eef3f7;
+  --cd-text-dim: #93a4b2;
+  --cd-you: #e7b455;
+  --cd-you-fill: #6b4c1c;
+  --cd-opponent: #7fb0dd;
+  --cd-opponent-fill: #1c3a56;
+  --cd-ball-path: #ff8064;
+  --cd-zone-safe: rgba(58, 138, 92, 0.28);
+  --cd-zone-risk: rgba(217, 79, 48, 0.24);
+  --cd-tooltip-bg: #eef3f7;
+  --cd-tooltip-text: #16232c;
+}
+
+.court-diagram-wrap{
+  max-width: 620px;
+  margin: 28px auto;
+  font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: var(--cd-text);
+}
+.court-diagram-caption{
+  font-size: .85rem;
+  color: var(--cd-text-dim);
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+.court-diagram-legend{
+  display:flex; gap:16px; flex-wrap:wrap; justify-content:center;
+  font-size:.78rem; color: var(--cd-text-dim); margin-top:8px;
+}
+.court-diagram-legend span{ display:inline-flex; align-items:center; gap:6px; }
+.court-diagram-legend i{
+  width:10px; height:10px; border-radius:50%; display:inline-block;
+}
+
+.tennis-court-svg{
+  width: 100%;
+  height: auto;
+  display: block;
+  background: var(--cd-bg);
+}
+
+/* --- Sân & vạch kẻ --- */
+.court-surface{ fill: var(--cd-court-fill); }
+.court-surface-alt{ fill: var(--cd-court-fill-alt); }
+.court-line{ stroke: var(--cd-line); stroke-width: 2.4; fill: none; }
+.court-line-thin{ stroke: var(--cd-line); stroke-width: 1.4; fill: none; opacity:.85; }
+.court-net{ stroke: var(--cd-net); stroke-width: 4; stroke-dasharray: 2 4; }
+.court-center-mark{ stroke: var(--cd-line); stroke-width: 2.4; }
+
+/* --- Vùng chiến thuật (tô nền) --- */
+.zone-safe{ fill: var(--cd-zone-safe); stroke: none; }
+.zone-risk{ fill: var(--cd-zone-risk); stroke: none; }
+.zone-label{
+  fill: var(--cd-text-dim);
+  font-size: 11px;
+  font-style: italic;
+}
+
+/* --- Cầu thủ --- */
+.player-marker{ cursor: pointer; }
+.player-marker circle.body{
+  stroke: var(--cd-line);
+  stroke-width: 2;
+  transition: r .15s ease;
+}
+.player-marker.you circle.body{ fill: var(--cd-you-fill); stroke: var(--cd-you); }
+.player-marker.opponent circle.body{ fill: var(--cd-opponent-fill); stroke: var(--cd-opponent); }
+.player-marker:hover circle.body,
+.player-marker:focus circle.body{ r: 15; }
+.player-marker text.label{
+  fill: var(--cd-text);
+  font-size: 11px;
+  font-weight: 600;
+  text-anchor: middle;
+  pointer-events: none;
+}
+.player-marker:focus{ outline: none; }
+.player-marker:focus circle.body{ stroke: var(--cd-focus); stroke-width: 3; }
+
+/* --- Đường bóng --- */
+.ball-path{
+  stroke: var(--cd-ball-path);
+  stroke-width: 3;
+  fill: none;
+  cursor: pointer;
+  transition: stroke-width .15s ease, opacity .15s ease;
+}
+.ball-path:hover, .ball-path:focus{
+  stroke-width: 5;
+}
+.ball-path.secondary{ stroke-dasharray: 6 5; opacity: .9; }
+.ball-path:focus{ outline: none; }
+
+.ball-path-number{
+  fill: var(--cd-ball-path);
+  font-size: 12px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+
+/* =========================================================================
+   Tooltip (HTML overlay, định vị bằng JS — xem court-diagram.js)
+   ========================================================================= */
+.cd-tooltip{
+  position: fixed;
+  z-index: 999;
+  max-width: 240px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--cd-tooltip-bg);
+  color: var(--cd-tooltip-text);
+  font-size: .78rem;
+  line-height: 1.5;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity .12s ease, transform .12s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,.25);
+}
+.cd-tooltip.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+.cd-tooltip strong{ display:block; margin-bottom: 2px; font-size:.8rem; }
+.cd-tooltip .cd-tooltip-row{ display:flex; justify-content:space-between; gap:12px; }
+.cd-tooltip .cd-tooltip-row span:last-child{ color: var(--cd-you); font-weight:600; }
+
+@media (prefers-reduced-motion: reduce){
+  .cd-tooltip, .player-marker circle.body, .ball-path{ transition: none; }
+}

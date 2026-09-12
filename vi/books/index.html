@@ -256,7 +256,33 @@
         justify-content: center;
       }
     }
-  </style>
+  
+    .tu-tag-chip {
+      background: rgba(0,0,0,0.04);
+      border: 1px solid #cbd5e1;
+      border-radius: 999px;
+      padding: 5px 12px;
+      font-size: 0.8rem;
+      color: #475569;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tu-tag-chip:hover {
+      background: #15803d;
+      color: #ffffff;
+      border-color: #15803d;
+    }
+    body.dark-mode .tu-tag-chip {
+      background: rgba(255,255,255,0.05);
+      border-color: #334155;
+      color: #cbd5e1;
+    }
+    body.dark-mode .tu-tag-chip:hover {
+      background: #15803d;
+      color: #ffffff;
+    }
+
+</style>
 </head>
 <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
 
@@ -277,6 +303,8 @@
   <a href="/books/" class="tu-nav-item tu-nav-lang" data-lang-toggle title="Switch to English"><span class="tu-nav-emoji">🌐</span><span class="tu-nav-text">English</span></a>
   <button class="tu-nav-item tu-nav-darkmode" title="Dark Mode" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button>
 </div>
+  <a href="glossary.html" class="tu-nav-item" title="Từ Điển Thuật Ngữ"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Từ Điển Thuật Ngữ</span></a>
+  <a href="court_diagrams.html" class="tu-nav-item" title="Sơ Đồ Chiến Thuật"><span class="tu-nav-emoji">🎯</span><span class="tu-nav-text">Sơ Đồ Chiến Thuật</span></a>
 <!-- FLATTENED-TOP-NAV-END -->
 
 <header class="books-hero">
@@ -284,6 +312,36 @@
   <h1>Thư Viện Sách Quần Vợt Tiếng Việt</h1>
   <p>Tuyển tập các tác phẩm kinh điển về kỹ thuật, chiến thuật Đánh Đơn và Đánh Đôi được chuyển ngữ sang tiếng Việt với tiêu chuẩn xuất bản quốc tế. Hỗ trợ đọc tương tác trực tuyến và tải về trọn bộ PDF vector chất lượng cao.</p>
 </header>
+
+
+<!-- INSTANT SEARCH & FILTER CONTROLS (H2 Client-Side Search Engine) -->
+<section class="tu-search-section" style="max-width: 1140px; margin: 0 auto 30px; padding: 0 20px;">
+  <div style="background: var(--bg-card, #ffffff); border: 1.5px solid #cbd5e1; border-radius: 16px; padding: 20px 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
+    <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+      <div style="position: relative; flex: 1 1 320px;">
+        <i class="fa-solid fa-magnifying-glass" style="position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: #64748b; font-size: 1.1rem;"></i>
+        <input type="text" id="tuBookSearchInput" placeholder="Tìm nhanh theo tên sách, tác giả, chiến thuật (vd: kick serve, chuỗi động học, đội hình australia)..." 
+               style="width: 100%; padding: 13px 42px 13px 44px; font-size: 1rem; border: 1.5px solid #cbd5e1; border-radius: 10px; outline: none; background: var(--bg-page, #f8fafc); color: var(--text-main, #0f172a); transition: border-color 0.2s;"
+               onfocus="this.style.borderColor='#15803d'" onblur="this.style.borderColor='#cbd5e1'">
+        <button type="button" id="tuClearSearchBtn" style="display: none; position: absolute; right: 14px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #94a3b8; font-size: 1.1rem; cursor: pointer;">✕</button>
+      </div>
+      <div style="display: flex; gap: 8px; align-items: center;">
+        <span id="tuSearchCounter" style="font-size: 0.88rem; font-weight: 700; color: #15803d; white-space: nowrap; background: rgba(21, 128, 61, 0.1); padding: 8px 16px; border-radius: 999px;">96 / 96 tác phẩm</span>
+      </div>
+    </div>
+    <!-- Quick filter tag chips -->
+    <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; align-items: center;">
+      <span style="font-size: 0.8rem; font-weight: 600; color: #64748b; margin-right: 4px;">Gợi ý từ khóa:</span>
+      <button type="button" class="tu-tag-chip" onclick="applySearchTag('Kick Serve')">🎾 Kick Serve</button>
+      <button type="button" class="tu-tag-chip" onclick="applySearchTag('Chuỗi động học')">⚡ Chuỗi Động Học</button>
+      <button type="button" class="tu-tag-chip" onclick="applySearchTag('Đội hình Australia')">👥 Đội Hình Australia</button>
+      <button type="button" class="tu-tag-chip" onclick="applySearchTag('Tâm lý')">🧠 Tâm Lý Thi Đấu</button>
+      <button type="button" class="tu-tag-chip" onclick="applySearchTag('Bài tập')">📋 Bài Tập &amp; Drills</button>
+      <button type="button" class="tu-tag-chip" onclick="applySearchTag('Rod Laver')">🏆 Rod Laver</button>
+      <button type="button" class="tu-tag-chip" onclick="applySearchTag('Arthur Ashe')">🌟 Arthur Ashe</button>
+    </div>
+  </div>
+</section>
 
 <main class="books-container">
 
@@ -445,7 +503,7 @@
         <strong>Tác giả: USTA &amp; TS. Ron Woods</strong> · Lời tựa bởi <strong>Stan Smith</strong>.
       </div>
       <p class="book-card-desc">
-        Tác phẩm cẩm nang huấn luyện chuẩn mực của Hiệp hội Quần vợt Hoa Kỳ (USTA) và TS. Ron Woods. Hệ thống hóa toàn diện triết lý sư phạm, chuỗi động lực học các cú đánh, chiến thuật thi đấu đơn theo tỷ lệ xác suất, sơ đồ đánh đôi hiện đại, mẫu báo cáo trinh sát và quản lý đội tuyển học đường.
+        Tác phẩm cẩm nang huấn luyện chuẩn mực của Hiệp hội Quần vợt Hoa Kỳ (USTA) và TS. Ron Woods. Hệ thống hóa toàn diện triết lý sư phạm, Chuỗi động học liên hoàn học các cú đánh, chiến thuật thi đấu đơn theo tỷ lệ xác suất, sơ đồ đánh đôi hiện đại, mẫu báo cáo trinh sát và quản lý đội tuyển học đường.
       </p>
       <div class="book-actions-row">
         <a href="coaching_tennis_successfully_vi.html" class="btn-reader">📖 Đọc Trực Tuyến Bản Dịch</a>
@@ -1181,7 +1239,7 @@
         <strong>Hiệp Hội USPTA</strong> (Jack Kramer, Paul Xanthos, Bill Tym, Nick Bollettieri) • Kodansha / Harper &amp; Row
       </div>
       <p class="book-card-desc">
-        Tuyển tập giáo khoa chính thức của Hiệp hội Huấn luyện viên Quần vợt Chuyên nghiệp Hoa Kỳ (USPTA). Phân tích đột phá về cơ sinh học chuỗi động lực của TS. Jack Groppel, đòn bẩy cú đánh của Paul Xanthos, chiến thuật đơn hiện đại của Bill Tym, nghệ thuật đánh đôi thống trị trung lộ của bộ đôi 17 Grand Slam Rod Laver &amp; Roy Emerson, huấn luyện tâm lý của Steve Wilkinson và y học phòng chống chấn thương của BS. Robert Nirschl.
+        Tuyển tập giáo khoa chính thức của Hiệp hội Huấn luyện viên Quần vợt Chuyên nghiệp Hoa Kỳ (USPTA). Phân tích đột phá về cơ sinh học Chuỗi động học liên hoàn của TS. Jack Groppel, đòn bẩy cú đánh của Paul Xanthos, chiến thuật đơn hiện đại của Bill Tym, nghệ thuật đánh đôi thống trị trung lộ của bộ đôi 17 Grand Slam Rod Laver &amp; Roy Emerson, huấn luyện tâm lý của Steve Wilkinson và y học phòng chống chấn thương của BS. Robert Nirschl.
       </p>
       <div class="book-actions-row">
         <a href="uspta_guide_vi.html" class="btn-reader">📖 Đọc Trực Tuyến Bản Dịch</a>
@@ -1572,7 +1630,7 @@
         <strong>Tác giả: USTA, TS. Paul Roetert &amp; BS. Todd Ellenbecker</strong>.
       </div>
       <p class="book-card-desc">
-        Cẩm nang khoa học thể thao chuẩn mực của USTA. Cung cấp 17 bài kiểm tra thể lực, hơn 50 bài tập sức mạnh chuỗi động lực học, phác đồ bảo vệ khớp vai chóp xoay, bài tập tốc độ nhanh nhẹn (Spider run, Hexagon), và giáo án phân kỳ mùa giải đỉnh cao.
+        Cẩm nang khoa học thể thao chuẩn mực của USTA. Cung cấp 17 bài kiểm tra thể lực, hơn 50 bài tập sức mạnh Chuỗi động học liên hoàn học, phác đồ bảo vệ khớp vai chóp xoay, bài tập tốc độ nhanh nhẹn (Spider run, Hexagon), và giáo án phân kỳ mùa giải đỉnh cao.
       </p>
       <div class="book-actions-row">
         <a href="complete_conditioning_for_tennis_vi.html" class="btn-reader">📖 Đọc Trực Tuyến Bản Dịch</a>
@@ -2119,7 +2177,7 @@
         <strong>Tác giả: Vic Braden &amp; Bill Bruns</strong> · Tiên phong sinh cơ học thể thao, Trưởng phòng nghiên cứu Coto Research Center.
       </div>
       <p class="book-card-desc">
-        Công trình tiên phong làm thay đổi hoàn toàn diện mạo quần vợt thế giới. Huyền thoại Vic Braden kết hợp cùng các nhà vật lý học chứng minh sự vượt trội của cú vung vợt hình vòng cung Loop Swing (tích lũy gia tốc trọng trường miễn phí), phát hiện chấn động về chuyển động xoay sấp cẳng tay Forearm Pronation thay cho gập cổ tay trong cú giao bóng, cùng chiến thuật đánh đôi đỉnh cao mang tên Bánh Kẹp Nỉ.
+        Công trình tiên phong làm thay đổi hoàn toàn diện mạo quần vợt thế giới. Huyền thoại Vic Braden kết hợp cùng các nhà vật lý học chứng minh sự vượt trội của cú vung vợt hình vòng cung Loop Swing (tích lũy gia tốc trọng trường miễn phí), phát hiện chấn động về chuyển động xoay sấp cẳng tay Forearm Pronation thay cho Động tác sấp cổ tay / xoay trong cẳng tay trong cú giao bóng, cùng chiến thuật đánh đôi đỉnh cao mang tên Bánh Kẹp Nỉ.
       </p>
       <div class="book-actions-row">
         <a href="vic_braden_tennis_for_the_future_vi.html" class="btn-reader">📖 Đọc Trực Tuyến Bản Dịch</a>
@@ -2525,6 +2583,94 @@
   <p style="margin-bottom: 8px;"><strong>Tennis Unified</strong> &bull; Nền tảng tri thức và văn hiến quần vợt chuyên sâu.</p>
   <p style="margin: 0;">Bản dịch phục vụ mục đích học tập, nghiên cứu phi thương mại cho cộng đồng yêu tennis Việt Nam.</p>
 </footer>
+
+
+<script>
+function removeVietnameseTones(str) {
+    if (!str) return "";
+    str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
+    str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
+    str = str.replace(/ì|í|ị|ỉ|ĩ/g, "i");
+    str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, "o");
+    str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u");
+    str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y");
+    str = str.replace(/đ/g, "d");
+    str = str.replace(/À|Á|Ạ|Ả|Ã|Â|Ầ|Ấ|Ậ|Ẩ|Ẫ|Ă|Ằ|Ắ|Ặ|Ẳ|Ẵ/g, "A");
+    str = str.replace(/È|É|Ẹ|Ẻ|Ẽ|Ê|Ề|Ế|Ệ|Ể|Ễ/g, "E");
+    str = str.replace(/Ì|Í|Ị|Ỉ|Ĩ/g, "I");
+    str = str.replace(/Ò|Ó|Ọ|Ỏ|Õ|Ô|Ồ|Ố|Ộ|Ổ|Ỗ|Ơ|Ờ|Ớ|Ợ|Ở|Ỡ/g, "O");
+    str = str.replace(/Ù|Ú|Ụ|Ủ|Ũ|Ư|Ừ|Ứ|Ự|Ử|Ữ/g, "U");
+    str = str.replace(/Ỳ|Ý|Ỵ|Ỷ|Ỹ/g, "Y");
+    str = str.replace(/Đ/g, "D");
+    return str.toLowerCase().trim();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const input = document.getElementById('tuBookSearchInput');
+    const counter = document.getElementById('tuSearchCounter');
+    const clearBtn = document.getElementById('tuClearSearchBtn');
+    const cards = document.querySelectorAll('article.book-card-horizontal');
+    const sectionTitles = document.querySelectorAll('h2.section-divider-title');
+    const totalCount = cards.length;
+
+    function doSearch() {
+        const rawQuery = input ? input.value.trim() : "";
+        const q = removeVietnameseTones(rawQuery);
+        if (clearBtn) clearBtn.style.display = rawQuery ? 'block' : 'none';
+
+        let visibleCount = 0;
+        cards.forEach(card => {
+            if (!q) {
+                card.style.display = '';
+                visibleCount++;
+                return;
+            }
+            const text = removeVietnameseTones(card.innerText || '');
+            if (text.includes(q)) {
+                card.style.display = '';
+                visibleCount++;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        sectionTitles.forEach(title => {
+            if (!q) {
+                title.style.display = '';
+                return;
+            }
+            let next = title.nextElementSibling;
+            let hasVisible = false;
+            while (next && !next.matches('h2.section-divider-title')) {
+                if (next.matches('article.book-card-horizontal') && next.style.display !== 'none') {
+                    hasVisible = true;
+                    break;
+                }
+                next = next.nextElementSibling;
+            }
+            title.style.display = hasVisible ? '' : 'none';
+        });
+
+        if (counter) counter.textContent = visibleCount + ' / ' + totalCount + ' tác phẩm';
+    }
+
+    if (input) input.addEventListener('input', doSearch);
+    if (clearBtn) {
+        clearBtn.addEventListener('click', function() {
+            input.value = '';
+            doSearch();
+            input.focus();
+        });
+    }
+
+    window.applySearchTag = function(tag) {
+        if (!input) return;
+        input.value = tag;
+        doSearch();
+        input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    };
+});
+</script>
 
 </body>
 </html>
