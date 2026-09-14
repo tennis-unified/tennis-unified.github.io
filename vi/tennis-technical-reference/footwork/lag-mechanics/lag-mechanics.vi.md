@@ -1,73 +1,64 @@
-# Racquet Lag (Độ Trễ Vợt) trong Quần Vợt Hiện Đại
+# Racquet Lag Trong Quần Vợt Hiện Đại | Racquet Lag in Modern Tennis
 
-Racquet lag là sự chậm trễ của đầu vợt so với bàn tay trong pha swing về phía trước, được tạo ra bởi cổ tay và cẳng tay thư giãn kết hợp với chuỗi động học phù hợp. Độ trễ này hoạt động như một chiếc roi, xây dựng tốc độ tại thời điểm tiếp xúc. Việc cong cổ tay ép buộc là cách sai để tạo ra độ trễ — nó phải đến từ chuỗi động học phù hợp.
+`Racquet lag` là sự chậm trễ của racquet head so với bàn tay trong `forward swing`, được tạo ra bởi cổ tay và cán tay thả lỏng kết hợp với `sequencing` đúng cách. Độ trễ này hoạt động như một chiếc roi, tích tụ tốc độ tại thời điểm tiếp xúc. Cúi cổ tay cưỡng bức là cách sai để tạo ra `lag`—nó phải đến từ `kinetic chain sequencing` đúng.
 
----
+## Related Concepts
 
-## Cơ Chế Cốt Lợi
-
-### Hiệu ứng Roi (Whip Effect)
-Khi cán tay và cổ tay được thư giãn đúng cách, đầu vợt tự nhiên "rơi lại" phía sau trong pha backswing. Trong pha swing về phía trước, lực tâm ly tâm kéo đầu vợt về phía trước, tạo ra tốc độ đầu vợt cao hơn nhiều so với chỉ dùng cơ tay.
-
-### Sự Phối Hợp Thời Gian (Sequencing)
-Racquet lag xuất hiện khi chuỗi động học hoạt động đúng thứ tự — chân → hông → thân → vai → khuỷu tay → cổ tay → đầu vợt. Mỗi đốt chuyển động kết thúc trước khi đốt tiếp theo bắt đầu, tạo ra "sự truyền năng lượng" hiệu quả từ mặt đất đến điểm tiếp xúc.
-
-### Vai Trò của Cổ Tay Thư Giãn
-Cổ tay phải giữ trạng thái thư giãn — không chủ động cong hay duỗi thẳng. Độ trễ xuất hiện tự nhiên khi cơ thể xoay và cán tay di chuyển về phía trước nhanh hơn đầu vợt (do khối lượng và moment quán tính).
+- The Kinetic Chain in Tennis
+- Pat the Dog — Forehand Slot Position
+- Rhythm and Relaxation
+- The Windshield Wiper Forehand
 
 ---
 
-## Cách KHÔNG Tạo Racquet Lag
+**Nguồn cảm hứng:** tennisplayer.net teaching library (John Yandell, 2002-2022) — *không phải trích dẫn nguyên văn, đây là synthesis gốc*
 
-- **Cong cổ tay ép buộc:** Chủ động gập hoặc duỗi cổ tay tạo ra sức cơ thay vì năng lượng đàn hồi. Điều này làm giảm tốc độ và gây mỏi cổ tay.
-- **Cầm vợt quá chặt:** Lực căng trong cẳng tay cản trở sự di chuyển tự nhiên của đầu vợt. Grip tension thấp hơn trong pha backswing cho phép lag tự nhiên hình thành.
-- **Swing quá sớm:** Bắt đầu swing khi bóng còn quá xa khiến lag biến mất trước khi tiếp xúc.
+<div class="video-embed-card" style="margin:2.25rem 0;padding:1.25rem;background:var(--card,#fff);border:1px solid var(--border,#e7e5e4);border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,.08);">
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.75rem;flex-wrap:wrap;gap:0.5rem;">
+    <span style="font-size:0.75rem;font-weight:700;color:var(--accent-dark,#047857);text-transform:uppercase;background:var(--card-hover,#f4fdf7);padding:0.25rem 0.6rem;border-radius:4px;border:1px solid var(--border,#e7e5e4);">BATCH 5 · FOOTWORK MASTERCLASS</span>
+    <span style="font-size:0.8rem;color:var(--muted,#78716c);">Paul Gold</span>
+  </div>
+  <h4 style="margin:0 0 0.75rem;font-size:1.1rem;line-height:1.4;color:var(--ink,#1c1917);">Tennis Footwork - Essential Court Movement</h4>
+  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:6px;box-shadow:0 2px 10px rgba(0,0,0,.15);">
+    <iframe src="https://www.youtube.com/embed/PksAwQ7gG7A?rel=0&modestbranding=1" title="Tennis Footwork - Essential Court Movement" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen loading="lazy" height="100%"></iframe>
+  </div>
+</div>
 
----
+<nav class="tu-chapter-nav" aria-label="Bottom Page Navigation" style="margin:3rem 0 1.5rem;padding-top:1.5rem;border-top:1px solid var(--border,#e7e5e4);">
+  <div class="tu-chapter-nav__inner" style="display:flex;justify-content:space-between;align-items:stretch;gap:0.75rem;flex-wrap:wrap;">
+    <a class="tu-chapter-nav__link tu-chapter-nav__link--prev" href="../internal-shoulder-rotation-(isr)/" style="flex:1 1 30%;padding:0.85rem 1.15rem;border:1px solid var(--border,#e7e5e4);border-radius:8px;background:var(--card,#fff);text-decoration:none;display:flex;flex-direction:column;gap:0.25rem;">
+  <span class="tu-chapter-nav__direction" style="font-size:0.78rem;font-weight:700;color:var(--accent-dark,#047857);text-transform:uppercase;letter-spacing:0.06em;">← Previous</span>
+  <span class="tu-chapter-nav__title" style="font-size:0.98rem;font-weight:500;color:var(--ink,#1c1917);">Internal Shoulder Rotation (Isr)</span>
+</a>
+    <a class="tu-chapter-nav__link tu-chapter-nav__link--home" href="../" style="flex:0 1 auto;padding:0.85rem 1.25rem;border:1px solid var(--border,#e7e5e4);border-radius:8px;background:var(--card,#fff);text-decoration:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.25rem;">
+  <span class="tu-chapter-nav__direction" style="font-size:0.78rem;font-weight:700;color:var(--accent-dark,#047857);text-transform:uppercase;letter-spacing:0.06em;">🏠 Index / Home</span>
+  <span class="tu-chapter-nav__title" style="font-size:0.98rem;font-weight:500;color:var(--ink,#1c1917);">Footwork</span>
+</a>
+    <a class="tu-chapter-nav__link tu-chapter-nav__link--next" href="../lasso-finish/" style="flex:1 1 30%;padding:0.85rem 1.15rem;border:1px solid var(--border,#e7e5e4);border-radius:8px;background:var(--card,#fff);text-decoration:none;display:flex;flex-direction:column;align-items:flex-end;gap:0.25rem;text-align:right;">
+  <span class="tu-chapter-nav__direction" style="font-size:0.78rem;font-weight:700;color:var(--accent-dark,#047857);text-transform:uppercase;letter-spacing:0.06em;">Next →</span>
+  <span class="tu-chapter-nav__title" style="font-size:0.98rem;font-weight:500;color:var(--ink,#1c1917);">Lasso Finish</span>
+</a>
+  </div>
+</nav>
 
-## Huấn Luyện
-
-### 1. Kiểm tra Thư Giãn (Relaxation Check)
-- Trong pha backswing, cổ tay phải thoải mái đến mức ai đó có thể kéo vợt ra khỏi tay một cách dễ dàng.
-- Nếu cảm thấy căng cổ tay trong pha backswing → thư giãn grip.
-
-### 2. "Pat the Dog" Drill
-- Thực hiện tư thế slot (vị trí "vỗ chó") — vợt ở phía sau, cán tay song song mặt đất.
-- Từ vị trí này, chỉ xoay thân để swing — không chủ động đẩy cổ tay.
-- Đầu vợt sẽ tự di chuyển về phía trước do sự phối hợp thân-hông.
-
-### 3. Shadow Swing với Kiểm Soát Thời Gian
-- Chậm backswing, dừng 1 giây ở điểm cao nhất.
-- Từ từ xoay thân về phía trước và để đầu vợt "rơi" theo — cảm nhận sự trễ tự nhiên.
-
-### 4. Dùng Vợt Nặng Hơn (Oversize/Training Racquet)
-- Vợt nặng hơn khiến lag rõ ràng hơn vì khối lượng đầu vợt tăng moment quán tính.
-- Luyện tập với vợt nặng, sau đó chuyển về vợt bình thường — cảm giác lag sẽ rõ rệt hơn.
-
----
-
-## Các Lỗi Phổ Biến
-
-| Lỗi | Dấu Hiệu | Cách Sửa |
-|-----|----------|----------|
-| Cổ tay cứng cỏng | Đầu vợt đi trước bàn tay trong swing | Thư giãn grip, xoay thân trước |
-| Cong cổ tay ép buộc | Viêm cổ tay, tốc độ đầu vợt thấp | Luyện shadow swing chậm |
-| Swing quá sớm | Lag biến mất trước khi tiếp xúc | Chờ bóng đến gần hơn |
-| Grip quá chặt | Đầu vợt không tự do | Giảm grip tension trong backswing |
-
----
-
-## Các Khái Niệm Liên Quan
-
-- Chuỗi Động Học (Kinetic Chain)
-- Pat the Dog — Vị Trí Slot Cú Thuận Tay
-- Nhịp Điệu và Thư Giãn (Rhythm and Relaxation)
-- Cú Thuận Tay Gạt Nước (Windshield Wiper Forehand)
-- Lực Phản ứng Mặt Đất (Ground Reaction Force)
-- Chu Kỳ Co Giãn (Stretch Shortening Cycle)
-
----
-
-**Nguồn cảm hứng:** tennisplayer.net (John Yandell, 2002-2022) — *đây là tổng hợp gốc, không phải dịch nguyên văn*
-
-**Nguồn:** Footwork Technical Reference — Tennis Unified Library
+<!-- BOTTOM-NAV-START -->
+<hr style="margin:2.5rem 0 1.5rem; border:0; border-top:1px solid var(--border, #e7e5e4);" />
+<nav class="tu-bottom-nav" aria-label="Page navigation" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin:1.5rem 0 2rem; padding:1rem 1.25rem; background:var(--card, #fff); border:1px solid var(--border, #e7e5e4); border-radius:12px; box-shadow:var(--shadow, 0 1px 3px rgba(0,0,0,.06));">
+  <div class="tu-bottom-nav__prev" style="flex:1; min-width:140px; text-align:left;">
+    <a href="/tennis-technical-reference/footwork/internal-shoulder-rotation-(isr)/" style="color:var(--accent-dark, #047857); text-decoration:none; font-weight:600; font-size:0.92rem; display:inline-block;">
+      ← Prev
+      <span style="font-size:0.82rem; font-weight:400; color:var(--ink-muted, #666); display:block; max-width:200px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Internal Shoulder Rotation (Isr)</span>
+    </a>
+  </div>
+  <div class="tu-bottom-nav__home" style="display:flex; gap:0.6rem; align-items:center; justify-content:center; padding:0 0.5rem; font-weight:600;">
+    <a href="/" style="color:var(--ink-muted, #555); text-decoration:none; padding:0.35rem 0.65rem; border-radius:6px; background:var(--bg, #f3f4f6); font-size:0.9rem;">🏠 Home</a>
+    <a href="/tennis-technical-reference/footwork/" style="color:var(--accent-dark, #047857); text-decoration:none; padding:0.35rem 0.65rem; border-radius:6px; background:var(--accent-light, #d1fae5); font-size:0.9rem;">📚 Footwork</a>
+  </div>
+  <div class="tu-bottom-nav__next" style="flex:1; min-width:140px; text-align:right;">
+    <a href="/tennis-technical-reference/footwork/lasso-finish/" style="color:var(--accent-dark, #047857); text-decoration:none; font-weight:600; font-size:0.92rem; display:inline-block;">
+      Next →
+      <span style="font-size:0.82rem; font-weight:400; color:var(--ink-muted, #666); display:block; max-width:200px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Lasso Finish</span>
+    </a>
+  </div>
+</nav>
+<!-- BOTTOM-NAV-END -->
