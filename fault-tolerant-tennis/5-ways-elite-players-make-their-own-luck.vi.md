@@ -1,57 +1,4 @@
-<!doctype html>
-<html lang="vi" class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Many events in tennis appear lucky. The ball dribbles over the net for a winner. Someone hits a second serve ace on the line. A forehand is shanked high and dee">
-    <meta name="author" content="Fault Tolerant Tennis">
-    <link rel="icon" href="/assets/images/favicon.png">
-    <title>5 Ways Elite Players Make Their Own Luck - Fault Tolerant Tennis - Tennis Unified Library</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-    <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
-    <link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
-    <link rel="stylesheet" href="/assets/css/site.css">
-    <script src="/assets/javascripts/lang-toggle.js" defer></script>
-    <script src="/assets/javascripts/darkmode.js" defer></script>
-  </head>
-  <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="lime">
-<!-- FLATTENED-TOP-NAV-START -->
-<div class="tu-topnav">
-  <a href="/" class="tu-nav-item" title="Home"><span class="tu-nav-emoji">🏠</span><span class="tu-nav-text">Home</span></a>
-  <a href="/fundamentals/" class="tu-nav-item" title="Fundamentals"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Fundamentals</span></a>
-  <a href="/doubles/" class="tu-nav-item" title="Doubles"><span class="tu-nav-emoji">👥</span><span class="tu-nav-text">Doubles</span></a>
-  <a href="/stroke-analysis/" class="tu-nav-item" title="Stroke Analysis"><span class="tu-nav-emoji">🧠</span><span class="tu-nav-text">Stroke Analysis</span></a>
-  <a href="/coach-video-library/" class="tu-nav-item" title="Coach Library"><span class="tu-nav-emoji">🎓</span><span class="tu-nav-text">Coach Library</span></a>
-  <a href="/tennis-video-library/" class="tu-nav-item" title="Video Library"><span class="tu-nav-emoji">🎬</span><span class="tu-nav-text">Video Library</span></a>
-  <a href="/tennis-technical-reference/" class="tu-nav-item active" title="Technical Reference"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Technical Reference</span></a>
-  <a href="/tnkb/" class="tu-nav-item" title="Knowledgebase"><span class="tu-nav-emoji">💡</span><span class="tu-nav-text">Knowledgebase</span></a>
-  <a href="/tennis-evolution/" class="tu-nav-item" title="Tennis Evolution"><span class="tu-nav-emoji">⚡</span><span class="tu-nav-text">Tennis Evolution</span></a>
-  <a href="/blog/" class="tu-nav-item" title="Blog"><span class="tu-nav-emoji">📝</span><span class="tu-nav-text">Blog</span></a>
-  <a href="/book/" class="tu-nav-item" title="Master Book"><span class="tu-nav-emoji">📕</span><span class="tu-nav-text">Master Book</span></a>
-  <a href="/books/" class="tu-nav-item" title="Books Catalog"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Books Catalog</span></a>
-  <a href="/vi/" class="tu-nav-item tu-nav-lang" data-lang-toggle title="Chuyển sang Tiếng Việt"><span class="tu-nav-emoji">🌐</span><span class="tu-nav-text">Tiếng Việt</span></a>
-  <button class="tu-nav-item tu-nav-darkmode" title="Dark Mode" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button>
-</div>
-<!-- FLATTENED-TOP-NAV-END -->
-
-<nav class="tu-breadcrumb" aria-label="Breadcrumb">
-  <ol class="tu-breadcrumb__list">
-    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/">Home</a></li>
-    <li class="tu-breadcrumb__sep">›</li>
-    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/tennis-technical-reference/">Technical Reference</a></li>
-    <li class="tu-breadcrumb__sep">›</li>
-    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/tennis-technical-reference/fault-tolerant-tennis/">Fault Tolerant Tennis</a></li>
-    <li class="tu-breadcrumb__sep">›</li>
-    <li class="tu-breadcrumb__item tu-breadcrumb__current" aria-current="page">5 Ways Elite Players Make Their Own Luck</li>
-  </ol>
-</nav>
-
-<div class="md-container" data-md-component="container">
-  <main class="md-main" data-md-component="main">
-    <div class="md-main__inner md-grid">
-      <div class="md-content" data-md-component="content">
-        # 5 Cách Người chơi Elite Tạo ra Vận may của Mình
+# 5 Cách Người chơi Elite Tạo ra Vận may của Mình
 
 **Nguồn:** Fault Tolerant Tennis · *Kinetic & Biomechanical Reference* (2020-12-30) · [Bài gốc ↗](https://faulttoleranttennis.com/5-ways-elite-players-make-their-own-luck/)
 
@@ -124,13 +71,3 @@ Hãy xem xét tình huống trong đó Player A có 10% cơ hội đánh winner,
 "Lucky" là một thuậngữ rất không chính xác. Người chơi elite tạo ra vận may của mình bằng cách thường xuyên đặt mình vào các vị trí dễ gặp may, trong khi đồng thời tránh các vị trí dễ gặp xui. Họ khiêm tốn quan sát kết quả của các cú đánh đã cố gắng và đặt mình vào các vị trí mà những kết quả đó tạo ra lợi ích tối đa.
 
 Và trong trường hợp hiếm họ thắng một điểm quan trọng trên net dribbler hoặc mishit winner, họ đơn giản giơ lên racket trong một (giả vờ) xin lỗi và tiếp tục trận đấu không bị làm phiền, vì, sau tất cả, người chơi elite thực sự, thực sự muốn thắng.
-
-      </div>
-    </div>
-  </main>
-  <footer class="tu-footer">
-    <p>© 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.</p>
-  </footer>
-</div>
-  </body>
-</html>

@@ -1,57 +1,4 @@
-<!doctype html>
-<html lang="vi" class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Tennis not best understood as a single, uniform skill. Rather, tennis exists as an interconnected set of different, related skills. For any given tennis skill, ">
-    <meta name="author" content="Fault Tolerant Tennis">
-    <link rel="icon" href="/assets/images/favicon.png">
-    <title>Anatomy of a Tennis Mini-Game - Fault Tolerant Tennis - Tennis Unified Library</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-    <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
-    <link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
-    <link rel="stylesheet" href="/assets/css/site.css">
-    <script src="/assets/javascripts/lang-toggle.js" defer></script>
-    <script src="/assets/javascripts/darkmode.js" defer></script>
-  </head>
-  <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="lime">
-<!-- FLATTENED-TOP-NAV-START -->
-<div class="tu-topnav">
-  <a href="/" class="tu-nav-item" title="Home"><span class="tu-nav-emoji">🏠</span><span class="tu-nav-text">Home</span></a>
-  <a href="/fundamentals/" class="tu-nav-item" title="Fundamentals"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Fundamentals</span></a>
-  <a href="/doubles/" class="tu-nav-item" title="Doubles"><span class="tu-nav-emoji">👥</span><span class="tu-nav-text">Doubles</span></a>
-  <a href="/stroke-analysis/" class="tu-nav-item" title="Stroke Analysis"><span class="tu-nav-emoji">🧠</span><span class="tu-nav-text">Stroke Analysis</span></a>
-  <a href="/coach-video-library/" class="tu-nav-item" title="Coach Library"><span class="tu-nav-emoji">🎓</span><span class="tu-nav-text">Coach Library</span></a>
-  <a href="/tennis-video-library/" class="tu-nav-item" title="Video Library"><span class="tu-nav-emoji">🎬</span><span class="tu-nav-text">Video Library</span></a>
-  <a href="/tennis-technical-reference/" class="tu-nav-item active" title="Technical Reference"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Technical Reference</span></a>
-  <a href="/tnkb/" class="tu-nav-item" title="Knowledgebase"><span class="tu-nav-emoji">💡</span><span class="tu-nav-text">Knowledgebase</span></a>
-  <a href="/tennis-evolution/" class="tu-nav-item" title="Tennis Evolution"><span class="tu-nav-emoji">⚡</span><span class="tu-nav-text">Tennis Evolution</span></a>
-  <a href="/blog/" class="tu-nav-item" title="Blog"><span class="tu-nav-emoji">📝</span><span class="tu-nav-text">Blog</span></a>
-  <a href="/book/" class="tu-nav-item" title="Master Book"><span class="tu-nav-emoji">📕</span><span class="tu-nav-text">Master Book</span></a>
-  <a href="/books/" class="tu-nav-item" title="Books Catalog"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Books Catalog</span></a>
-  <a href="/vi/" class="tu-nav-item tu-nav-lang" data-lang-toggle title="Chuyển sang Tiếng Việt"><span class="tu-nav-emoji">🌐</span><span class="tu-nav-text">Tiếng Việt</span></a>
-  <button class="tu-nav-item tu-nav-darkmode" title="Dark Mode" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button>
-</div>
-<!-- FLATTENED-TOP-NAV-END -->
-
-<nav class="tu-breadcrumb" aria-label="Breadcrumb">
-  <ol class="tu-breadcrumb__list">
-    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/">Home</a></li>
-    <li class="tu-breadcrumb__sep">›</li>
-    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/tennis-technical-reference/">Technical Reference</a></li>
-    <li class="tu-breadcrumb__sep">›</li>
-    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/tennis-technical-reference/fault-tolerant-tennis/">Fault Tolerant Tennis</a></li>
-    <li class="tu-breadcrumb__sep">›</li>
-    <li class="tu-breadcrumb__item tu-breadcrumb__current" aria-current="page">Anatomy of a Tennis Mini-Game</li>
-  </ol>
-</nav>
-
-<div class="md-container" data-md-component="container">
-  <main class="md-main" data-md-component="main">
-    <div class="md-main__inner md-grid">
-      <div class="md-content" data-md-component="content">
-        # Anatomy of a Tennis Mini-Game | Cấu Trúc Một Tennis Mini-Game
+# Anatomy of a Tennis Mini-Game | Cấu Trúc Một Tennis Mini-Game
 
 Quần vợt không được hiểu tốt nhất như một kỹ năng đơn nhất, đồng nhất. Thay vào đó, quần vợt tồn tại như một tập hợp liên kết của các kỹ năng khác nhau, có liên quan. Đối với bất kỳ kỹ năng quần vợt nào, một khi đạt đến mức độ nhất định, tập luyện bóng sống hiệu quả hơn nhiều so với tập luyện bóng chết.
 
@@ -130,13 +77,3 @@ Kỳ vọng thành công của bạn đơn giản là sai lệch.
 Đây là điều: sau khi chơi mini-game 100 lần, bạn *sẽ không* bực mình nữa, vì bạn sẽ *nhận thức nhiều hơn* về sự tinh tế của tình huống đang bực mình. Sau 100 game, nó sẽ rõ ràng với bạn tại sao bạn trượt, và tần suất trượt. Sẽ *không có* sự không khớp giữa thực tế và kỳ vọng nữa, vì 100 lần chạy game của bạn sẽ đóng đinh kỳ vọng của bạn vào thực tế, cũng như giúp bạn tốt hơn.
 
 **Nguồn:** Fault Tolerant Tennis – *Kinetic & Biomechanical Reference* (2022-09-09)
-
-      </div>
-    </div>
-  </main>
-  <footer class="tu-footer">
-    <p>© 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.</p>
-  </footer>
-</div>
-  </body>
-</html>
