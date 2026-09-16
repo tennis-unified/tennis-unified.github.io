@@ -8,7 +8,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Từ điển tennis và sinh học thể thao: 125 thuật ngữ được giải thích với ví dụ từ các bài viết kỹ thuật.">
+        <meta name="description" content="Bilingual Tennis Lexicon: 125 standardized tennis and sports science terms across biomechanics, grip bevels, spins, footwork, tactics, and string physics. Each term includes definitions with Vietnamese explanations and direct source links to originating articles.">>
       
       
         <meta name="author" content="Henry Pham">
@@ -18,7 +18,7 @@
       
       
         
-          <link rel="alternate" href="../../fundamentals/" hreflang="en">
+          <link rel="alternate" href="../../biomechanics-neurology/" hreflang="en">
         
           <link rel="alternate" href="./" hreflang="vi">
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Từ Điển Tennis - Tennis Unified Library</title>
+        <title>Bilingual Tennis Lexicon (125 terms) - Tennis Unified Library</title>
       
       
 
@@ -54,7 +54,60 @@
     
   
 <link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
-<link rel="stylesheet" href="/assets/css/site.css"><script src="/assets/javascripts/lang-toggle.js" defer></script><script src="/assets/javascripts/darkmode.js" defer></script></head>
+<link rel="stylesheet" href="/assets/css/site.css"><script src="/assets/javascripts/lang-toggle.js" defer></script><script src="/assets/javascripts/darkmode.js" defer></script>
+<style>
+.lexicon-toolbar { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin: 1.5rem 0; padding: 1rem; background: var(--md-default-fg-color--lightest, #f5f5f5); border-radius: 6px; }
+#lexicon-search { flex: 1 1 250px; padding: 0.5rem 0.75rem; font-size: 1rem; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 4px; background: white; color: var(--md-default-fg-color); }
+#lexicon-filter { padding: 0.5rem 0.75rem; font-size: 0.95rem; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 4px; background: white; color: var(--md-default-fg-color); }
+.lexicon-counter { font-size: 0.85rem; color: var(--md-default-fg-color--light); }
+.lexicon-toc { background: var(--md-default-fg-color--lightest, #f5f5f5); padding: 1rem 1.25rem; border-radius: 6px; margin: 1rem 0 1.5rem 0; }
+.lexicon-toc ul { margin: 0.5rem 0 0 0; padding-left: 1.5rem; }
+.lexicon-toc li { margin: 0.3rem 0; }
+.lexicon-toc small { color: var(--md-default-fg-color--light); }
+.lexicon-count { font-size: 0.7em; color: var(--md-default-fg-color--light); font-weight: normal; margin-left: 0.3rem; }
+.lexicon-term { margin: 0.4rem 0; padding: 0.6rem 0.8rem; border-left: 3px solid var(--md-primary-fg-color, #1976d2); background: rgba(0,0,0,0.02); border-radius: 0 4px 4px 0; transition: all 0.2s; }
+.lexicon-term:hover { background: rgba(25,118,210,0.05); }
+.lexicon-term summary { cursor: pointer; padding: 0.2rem 0; font-size: 1rem; }
+.lexicon-term summary:hover { color: var(--md-primary-fg-color, #1976d2); }
+.lexicon-cat-badge { font-size: 0.7rem; padding: 0.15rem 0.5rem; background: var(--md-primary-fg-color, #1976d2); color: white; border-radius: 3px; margin-left: 0.5rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.03em; }
+.lexicon-source { font-size: 0.85rem; margin: 0.4rem 0 0 0; color: var(--md-default-fg-color--light); }
+.lexicon-source a { color: var(--md-primary-fg-color, #1976d2); word-break: break-all; }
+.lexicon-stats { color: var(--md-default-fg-color--light); text-align: center; padding: 1rem 0; font-size: 0.9rem; }
+.lexicon-term.hidden { display: none; }
+.lexicon-term mark { background: rgba(255, 235, 59, 0.4); color: inherit; padding: 0 2px; border-radius: 2px; }
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('lexicon-search');
+  const filterSelect = document.getElementById('lexicon-filter');
+  const counter = document.getElementById('lexicon-count');
+  const allTerms = document.querySelectorAll('.lexicon-term');
+  const allCats = document.querySelectorAll('h2[data-cat]');
+  const totalTerms = allTerms.length;
+  function applyFilters() {
+    const query = (searchInput.value || '').toLowerCase().trim();
+    const category = filterSelect.value;
+    let visible = 0;
+    allTerms.forEach(term => {
+      const matchesSearch = !query || term.dataset.term.indexOf(query) >= 0;
+      const matchesCategory = category === 'all' || term.dataset.cat === category;
+      const isVisible = matchesSearch && matchesCategory;
+      term.classList.toggle('hidden', !isVisible);
+      if (isVisible) visible++;
+    });
+    allCats.forEach(cat => {
+      const catId = cat.dataset.cat;
+      const anyVisible = Array.from(document.querySelectorAll('.lexicon-term[data-cat="' + catId + '"]'))
+        .some(function(t) { return !t.classList.contains('hidden'); });
+      cat.style.display = anyVisible ? '' : 'none';
+    });
+    counter.textContent = 'Showing ' + visible + ' / ' + totalTerms + ' terms';
+  }
+  searchInput.addEventListener('input', applyFilters);
+  filterSelect.addEventListener('change', applyFilters);
+});
+</script>
+</head>
   
   
     
@@ -87,7 +140,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fundamentals-tpa" class="md-skip">
+        <a href="#biomechanics-neurology-the-science-of-tennis-performance" class="md-skip">
           Bỏ qua
         </a>
       
@@ -121,7 +174,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Fundamentals
+              Biomechanics & Neurology
             
           </span>
         </div>
@@ -142,7 +195,7 @@
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="../../fundamentals/" hreflang="en" class="md-select__link">
+            <a href="../../biomechanics-neurology/" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
@@ -364,10 +417,387 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sections" class="md-nav__link">
+  <a href="#the-3-layer-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Sections
+        The 3-Layer Model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-1-foundation-geometry-of-every-stroke" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chapter 1 — Foundation: Geometry of Every Stroke
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 1 — Foundation: Geometry of Every Stroke">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-6-critical-angles-at-contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The 6 Critical Angles at Contact
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-kinetic-chain-force-travels-from-ground-to-ball" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Kinetic Chain — Force Travels from Ground to Ball
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-footwork-phases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Footwork Phases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-cheetah-vs-alcaraz-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Cheetah vs Alcaraz Principle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-45-contact-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The 45° Contact Rule
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-2-structure-the-joint-chain-dd2dd7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chapter 2 — Structure: The Joint Chain (DD2–DD7)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 2 — Structure: The Joint Chain (DD2–DD7)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dd2-shoulders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DD2 — Shoulders
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dd3-arms-wrists-hands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DD3 — Arms, Wrists &amp; Hands
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dd4-trunk-spine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DD4 — Trunk &amp; Spine
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dd5-hips-thighs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DD5 — Hips &amp; Thighs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dd6-knees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DD6 — Knees
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dd7-ankles-feet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DD7 — Ankles &amp; Feet
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-3-control-system-vision-vestibular-proprioception-auditory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chapter 3 — Control System: Vision, Vestibular, Proprioception, Auditory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 3 — Control System: Vision, Vestibular, Proprioception, Auditory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-4-control-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The 4 Control Systems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Hierarchy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-5-phase-visual-cycle-how-pros-read-the-ball" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The 5-Phase Visual Cycle (How Pros Read the Ball)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-4-motor-learning-myelination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chapter 4 — Motor Learning &amp; Myelination
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 4 — Motor Learning &amp; Myelination">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-3-stages-of-motor-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The 3 Stages of Motor Learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#myelination-why-repetition-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Myelination — Why Repetition Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-5-pressure-inoculation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chapter 5 — Pressure Inoculation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 5 — Pressure Inoculation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-3-pressure-inoculation-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The 3 Pressure Inoculation Techniques
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-stress-performance-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Stress-Performance Curve
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-50-longevity-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The 50+ Longevity Path
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-6-the-4-tennis-specific-control-drills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chapter 6 — The 4 Tennis-Specific Control Drills
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 6 — The 4 Tennis-Specific Control Drills">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#drill-1-quiet-eye-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drill 1 — Quiet Eye Training
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drill-2-balance-recovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drill 2 — Balance Recovery
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drill-3-reaction-ball" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drill 3 — Reaction Ball
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drill-4-vor-gaze-stabilization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drill 4 — VOR Gaze Stabilization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tai-chi-parallels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tai Chi Parallels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Content
       
     </span>
   </a>
@@ -393,1179 +823,709 @@
 
 
               
-              <article class="md-content__inner md-typeset">
-# Từ Điển Tennis
-
-Tra cứu nhanh các thuật ngữ tennis và sinh học thể thao được sử dụng trong các bài viết kỹ thuật. Tất cả định nghĩa được trích xuất tự động từ các bài viết VI trong thư viện.
-
-**Tổng cộng:** 125 thuật ngữ trong 12 danh mục
-**Định nghĩa tiếng Việt:** 29 thuật ngữ
-**Dẫn xuất từ:** 2,647 bài viết VI
-
-## Sinh học Cơ học (Biomechanics) {#cat-Biomechanics}
-
-*28 thuật ngữ*
-
-### angular momentum
-
-**Definition:** com - Lesson 6: Rhythm and Timing - Gravity and Angular Momentum 39 - Modern Forehand - From hi-techtennis
-
-<small>📖 Nguồn: [`/vi/blog`](https://tennis-unified.github.io/vi/blog/)</small>
-
----
-
-### biomechanical
-
-**Định nghĩa:** 84 - Cơ Sinh Học trong giao bóng và đỡ giao bóng Download the presentation file from: Biomechanical in Serve and Return of Serve
-
-**Giải thích bằng tiếng Việt:**
-
-84 - Cơ Sinh Học trong giao bóng và đỡ giao bóng Download the presentation file from: Biomechanical in Serve and Return of Serve
-
-<small>📖 Nguồn: [`/vi/blog/84-co-sinh-hoc-trong-giao-bong-va-o`](https://tennis-unified.github.io/vi/blog/84-co-sinh-hoc-trong-giao-bong-va-o/)</small>
-
----
-
-### biomechanics
-
-**Definition:** The biomechanics, the felt sense, the body-mechanics behind every stroke that separates a 3
-
-<small>📖 Nguồn: [`/vi/advanced`](https://tennis-unified.github.io/vi/advanced/)</small>
-
----
-
-### centrifugal force
-
-**Definition:** Kinetic Chain The Kinetic Chain is the sequential movement of linked body parts when swinging a racquet around an axis (the body) creating centrifugal force
-
-<small>📖 Nguồn: [`/vi/fundamentals/footwork/the-hitting-stance`](https://tennis-unified.github.io/vi/fundamentals/footwork/the-hitting-stance/)</small>
-
----
-
-### core stability
-
-**Definition:** Trunk rotation without adequate core stability is the common thread
-
-<small>📖 Nguồn: [`/vi/foundation/basics/Injury-Prevention-and-Joint-Health-Coaching-Guide`](https://tennis-unified.github.io/vi/foundation/basics/Injury-Prevention-and-Joint-Health-Coaching-Guide/)</small>
-
----
-
-### elastic energy
-
-**Definition:** When a muscle-tendon unit is rapidly stretched (loaded) and then immediately shortens (contracts), it produces more force than a contraction from a dead stop — elastic energy stored in the tendon during the stretch is returned during the shortening phase
-
-<small>📖 Nguồn: [`/vi/advanced/deep-dives/Reactive-Strength-and-the-Stretch-Shortening-Cycle-for-the-Split-Step`](https://tennis-unified.github.io/vi/advanced/deep-dives/Reactive-Strength-and-the-Stretch-Shortening-Cycle-for-the-Split-Step/)</small>
-
----
-
-### force production
-
-**Definition:** After that point, the chest takes over the stroke’s force production, pressing the racket through the ball
-
-<small>📖 Nguồn: [`/vi/blog/the-forehand-press-slot-from-fault`](https://tennis-unified.github.io/vi/blog/the-forehand-press-slot-from-fault/)</small>
-
----
-
-### force transfer
-
-**Definition:** One-Handed Backhand Counter-Balance The one-handed backhand counter-balance is the violent backward extension of the non-dominant arm at the moment of contact - the braking mechanism that locks the shoulders sideways, enables linear force transfer, and prevents the chest from opening to the net
-
-<small>📖 Nguồn: [`/vi/tennis-technical-reference/forehand/one-handed-backhand-counter-balance`](https://tennis-unified.github.io/vi/tennis-technical-reference/forehand/one-handed-backhand-counter-balance/)</small>
-
----
-
-### ground reaction force
-
-**Definition:** It is important that you at least understand the concept that the most powerful tennis strokes (serves and ground strokes) begin with a leg drive that generates ground reaction forces that can be transferred up the segments of the kinetic chain to the racquet
-
-<small>📖 Nguồn: [`/vi/fundamentals/famous-coaches/optimize-your-technique-part-1`](https://tennis-unified.github.io/vi/fundamentals/famous-coaches/optimize-your-technique-part-1/)</small>
-
----
-
-### hip rotation
-
-**Definition:** Backhand Hip Rotation and Recovery Footwork Pattern Watch on YouTube ↗ 4
-
-<small>📖 Nguồn: [`/vi/coach-video-library/sly-black`](https://tennis-unified.github.io/vi/coach-video-library/sly-black/)</small>
-
----
-
-### kinesthetic
-
-**Definition:** Players learn verbally, visually, and kinesthetically
-
-<small>📖 Nguồn: [`/vi/fundamentals/classic-lessons/the-keys-to-great-lessons`](https://tennis-unified.github.io/vi/fundamentals/classic-lessons/the-keys-to-great-lessons/)</small>
-
----
-
-### kinetic chain
-
-**Definition:** Every forehand, every serve, every split-step is a kinetic chain: ground &gt; feet &gt; knees &gt; hips &gt; trunk &gt; shoulders &gt; arm &gt; racquet &gt; ball
-
-<small>📖 Nguồn: [`/vi/biomechanics-neurology`](https://tennis-unified.github.io/vi/biomechanics-neurology/)</small>
-
----
-
-### kinetic energy
-
-**Definition:** A whip isn’t just thrown hard at the target, it’s momentum is violently halted mid-flight in order to transfer all of its kinetic energy into its tip
-
-<small>📖 Nguồn: [`/vi/tennis-technical-reference/fault-tolerant-tennis`](https://tennis-unified.github.io/vi/tennis-technical-reference/fault-tolerant-tennis/)</small>
-
----
-
-### leverage
-
-**Definition:** com - Lesson 2: Find the Ball and Lift the Ball - Find the Ball With &quot;Leverage&quot; 23 - Modern Forehand - From hi-techtennis
-
-<small>📖 Nguồn: [`/vi/blog`](https://tennis-unified.github.io/vi/blog/)</small>
-
----
-
-### momentum
-
-**Definition:** Score management in a tiebreak means treating the first two points as disproportionately important (they set the mini-momentum), being extra conservative on serve to avoid a cheap double fault, and knowing the mini-changeover pattern (serve two, change, etc
-
-<small>📖 Nguồn: [`/vi/advanced/basics/Score-Management-Clutch-Points-and-Tiebreaks-Coaching-Guide`](https://tennis-unified.github.io/vi/advanced/basics/Score-Management-Clutch-Points-and-Tiebreaks-Coaching-Guide/)</small>
-
----
-
-### potential energy
-
-**Definition:** Feel the potential energy being created
-
-<small>📖 Nguồn: [`/vi/blog/48-serve-from-hi-techtenniscom-lesson-2`](https://tennis-unified.github.io/vi/blog/48-serve-from-hi-techtenniscom-lesson-2/)</small>
-
----
-
-### pronation
-
-**Definition:** com - Lesson 5: Pronation - The Big &#x27;L&#x27; and Pronation&#x27; 52 - The Serve - From hi-techtennis
-
-<small>📖 Nguồn: [`/vi/blog`](https://tennis-unified.github.io/vi/blog/)</small>
-
----
-
-### proprioception
-
-**Definition:** Without that horizon, your brain quietly down-weights vision and up-weights proprioception instead, and the result is that your brain locks your knees for safety
-
-<small>📖 Nguồn: [`/vi/advanced/deep-dives/Head Position & Vestibular`](https://tennis-unified.github.io/vi/advanced/deep-dives/Head Position & Vestibular/)</small>
-
----
-
-### shoulder rotation
-
-**Definition:** In the image below, see how Marty Fish gets into this fully supinated position: Click &#x27;Play&#x27; to see Supination and Internal Shoulder Rotation
-
-<small>📖 Nguồn: [`/vi/blog/42-serve-from-hi-techtenniscom_17`](https://tennis-unified.github.io/vi/blog/42-serve-from-hi-techtenniscom_17/)</small>
-
----
-
-### shoulder-hip separation
-
-**Definition:** Extreme Torso Coiling &amp;amp; Shoulder-Hip Separation Wawrinka turns his back almost completely to the net during preparation (115° shoulder rotation vs
-
-<small>📖 Nguồn: [`/vi/tennis-technical-reference/gemini-notebooks/one-handed-backhand-stan-wawrinka-rotational-violence`](https://tennis-unified.github.io/vi/tennis-technical-reference/gemini-notebooks/one-handed-backhand-stan-wawrinka-rotational-violence/)</small>
-
----
-
-### SSC
-
-**Definition:** A pattern is a 2-3 shot sequence you can execute on command: for example, deep crosscourt forehand &gt; short ball response &gt; inside-out forehand winner
-
-<small>📖 Nguồn: [`/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection`](https://tennis-unified.github.io/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection/)</small>
-
----
-
-### stretch reflex
-
-**Definition:** You might wonder, why not? Wouldn’t we benefit from a stretch reflex of the pectoral muscles? Yes… kind of
-
-<small>📖 Nguồn: [`/vi/tennis-technical-reference/fault-tolerant-tennis`](https://tennis-unified.github.io/vi/tennis-technical-reference/fault-tolerant-tennis/)</small>
-
----
-
-### stretch-shortening cycle
-
-**Definition:** Reactive Strength &amp;amp; the Stretch-Shortening Cycle for the Split-Step Why two players with identical reaction times can still explode off the split step at very different speeds
-
-<small>📖 Nguồn: [`/vi/advanced/deep-dives/Reactive-Strength-and-the-Stretch-Shortening-Cycle-for-the-Split-Step`](https://tennis-unified.github.io/vi/advanced/deep-dives/Reactive-Strength-and-the-Stretch-Shortening-Cycle-for-the-Split-Step/)</small>
-
----
-
-### supination
-
-**Definition:** com - Introduction: The Key to Pro Power: Supinate, then Pronate Introduction: The Key to Pro Power: Supinate, then Pronate I have had many, many people send me videos of their serve, and the one piece that I almost always see missing is the supination in the full racket drop
-
-<small>📖 Nguồn: [`/vi/blog/42-serve-from-hi-techtenniscom_17`](https://tennis-unified.github.io/vi/blog/42-serve-from-hi-techtenniscom_17/)</small>
-
----
-
-### torque
-
-**Definition:** This big &quot;L&quot; position allows you to twist (rotate) the hand and arm (while leveling the wrist with the forearm) to generate a powerful torque into the ball
-
-<small>📖 Nguồn: [`/vi/blog/51-serve-from-hi-techtenniscom-lesson-5`](https://tennis-unified.github.io/vi/blog/51-serve-from-hi-techtenniscom-lesson-5/)</small>
-
----
-
-### trunk rotation
-
-**Definition:** Power doesn&#x27;t come from the arm; it comes from trunk rotation transmitted up through the kinetic chain
-
-<small>📖 Nguồn: [`/vi/biomechanics-neurology`](https://tennis-unified.github.io/vi/biomechanics-neurology/)</small>
-
----
-
-### X-factor
-
-**Definition:** Got a power issue? X-Factor or Two Engines
-
-<small>📖 Nguồn: [`/vi/advanced`](https://tennis-unified.github.io/vi/advanced/)</small>
-
----
-
-### X-factor stretch
-
-**Định nghĩa:** Nguồn lực: Gần như hoàn toàn angular momentum — torque xoay từ X-Factor stretch và corkscrew hip swivel
-
-**Giải thích bằng tiếng Việt:**
-
-Nguồn lực: Gần như hoàn toàn angular momentum — torque xoay từ X-Factor stretch và corkscrew hip swivel
-
-<small>📖 Nguồn: [`/vi/tennis-technical-reference/footwork/forehand-stance-selection`](https://tennis-unified.github.io/vi/tennis-technical-reference/footwork/forehand-stance-selection/)</small>
-
----
-
-## Giải phẫu học {#cat-Anatomy}
-
-*20 thuật ngữ*
-
-### agonist
-
-**Definition:** Shaking fists at opponents: boorish, antagonistic, wrong
-
-<small>📖 Nguồn: [`/vi/fundamentals/mental-game/breaking-down-your-opponent-with-attitude`](https://tennis-unified.github.io/vi/fundamentals/mental-game/breaking-down-your-opponent-with-attitude/)</small>
-
----
-
-### ankle
-
-**Definition:** Action Steps Introduce basic plyometric progressions (ankle hops, low box jumps with a fast ground-contact cue) 1-2x/week, focused explicitly on minimizing ground-contact time, not maximizing jump height
-
-<small>📖 Nguồn: [`/vi/advanced/deep-dives/Reactive-Strength-and-the-Stretch-Shortening-Cycle-for-the-Split-Step`](https://tennis-unified.github.io/vi/advanced/deep-dives/Reactive-Strength-and-the-Stretch-Shortening-Cycle-for-the-Split-Step/)</small>
-
----
-
-### antagonist
-
-**Definition:** Shaking fists at opponents: boorish, antagonistic, wrong
-
-<small>📖 Nguồn: [`/vi/fundamentals/mental-game/breaking-down-your-opponent-with-attitude`](https://tennis-unified.github.io/vi/fundamentals/mental-game/breaking-down-your-opponent-with-attitude/)</small>
-
----
-
-### core
-
-**Definition:** Core Concepts Signals that a plan has stopped working
-
-<small>📖 Nguồn: [`/vi/advanced/basics/In-Match-Tactical-Adaptation-Coaching-Guide`](https://tennis-unified.github.io/vi/advanced/basics/In-Match-Tactical-Adaptation-Coaching-Guide/)</small>
-
----
-
-### deltoid
-
-**Definition:** Your deltoid and rotator cuff muscles should stay relaxed — they&#x27;re holding your arm in position, not pushing anything
-
-<small>📖 Nguồn: [`/vi/foundation/basics/Forehand/Khoa Vai Thuc Hu Axis`](https://tennis-unified.github.io/vi/foundation/basics/Forehand/Khoa Vai Thuc Hu Axis/)</small>
-
----
-
-### elbow
-
-**Definition:** It is transmitted through the body: Ground &gt; Feet &gt; Knees &gt; Hips &gt; Trunk &gt; Shoulders &gt; Elbow &gt; Wrist &gt; Racquet &gt; Ball Each link adds speed (the summation of speeds principle )
-
-<small>📖 Nguồn: [`/vi/biomechanics-neurology`](https://tennis-unified.github.io/vi/biomechanics-neurology/)</small>
-
----
-
-### gluteal
-
-**Definition:** Different lateral movements are facilitated by different individual gluteal muscles, but each is involved in some sort of straightening at the hip
-
-<small>📖 Nguồn: [`/vi/tennis-technical-reference/fault-tolerant-tennis`](https://tennis-unified.github.io/vi/tennis-technical-reference/fault-tolerant-tennis/)</small>
-
----
-
-### hamstring
-
-**Definition:** The athlete is slightly bent over via hinging at the the hips, and the posterior chain muscles (the glutes, hamstrings, and lower back) are lightly loaded and ready to facilitate explosive movements in any direction
-
-<small>📖 Nguồn: [`/vi/blog/63-know-this-myth-series-bronze-bend`](https://tennis-unified.github.io/vi/blog/63-know-this-myth-series-bronze-bend/)</small>
-
----
-
-### hip
-
-**Definition:** Every forehand, every serve, every split-step is a kinetic chain: ground &gt; feet &gt; knees &gt; hips &gt; trunk &gt; shoulders &gt; arm &gt; racquet &gt; ball
-
-<small>📖 Nguồn: [`/vi/biomechanics-neurology`](https://tennis-unified.github.io/vi/biomechanics-neurology/)</small>
-
----
-
-### knee
-
-**Definition:** They&#x27;re the very first sensors to fire the instant you tilt, turn, or move, and everything downstream of that — your eyes, your brain&#x27;s whole sense of where your body is in space, even whether your knees bend or lock — depends on what these sensors report
-
-<small>📖 Nguồn: [`/vi/advanced/deep-dives/Head Position & Vestibular`](https://tennis-unified.github.io/vi/advanced/deep-dives/Head Position & Vestibular/)</small>
-
----
-
-### latissimus
-
-**Definition:** EMG (% MVIC): pectoralis major 115% , subscapularis 113% , latissimus dorsi 57% , serratus anterior 74% 6
-
-<small>📖 Nguồn: [`/vi/reports/tier-1-high-value-gaps`](https://tennis-unified.github.io/vi/reports/tier-1-high-value-gaps/)</small>
-
----
-
-### lumbar
-
-**Definition:** When most coaches say “bend your knees,” they are trying to cue their student into some form of the basic athletic position: the hips are low and back while the lumbar spine is neutral
-
-<small>📖 Nguồn: [`/vi/blog/63-know-this-myth-series-bronze-bend`](https://tennis-unified.github.io/vi/blog/63-know-this-myth-series-bronze-bend/)</small>
-
----
-
-### pectoralis
-
-**Definition:** EMG (% MVIC): pectoralis major 115% , subscapularis 113% , latissimus dorsi 57% , serratus anterior 74% 6
-
-<small>📖 Nguồn: [`/vi/reports/tier-1-high-value-gaps`](https://tennis-unified.github.io/vi/reports/tier-1-high-value-gaps/)</small>
-
----
-
-### rotator cuff
-
-**Định nghĩa:** Khớp vai (Glenohumeral) - Cần Mobility &amp;amp; Stability: Vai cần linh hoạt tối đa để thực hiện cú giao bóng (serve) overhead, nhưng cũng cần sự ổn định từ các nhóm cơ xoay (rotator cuff) để bảo vệ khớp khi vung vợt với tốc độ cao
-
-**Giải thích bằng tiếng Việt:**
-
-Khớp vai (Glenohumeral) - Cần Mobility &amp;amp; Stability: Vai cần linh hoạt tối đa để thực hiện cú giao bóng (serve) overhead, nhưng cũng cần sự ổn định từ các nhóm cơ xoay (rotator cuff) để bảo vệ khớp khi vung vợt với tốc độ cao
-
-<small>📖 Nguồn: [`/vi/blog/80-cach-su-dung-cac-khop-trong-co-khi`](https://tennis-unified.github.io/vi/blog/80-cach-su-dung-cac-khop-trong-co-khi/)</small>
-
----
-
-### scapula
-
-**Definition:** Scapula Stability Provides a stable base for the shoulder
-
-<small>📖 Nguồn: [`/vi/blog/80-cach-su-dung-cac-khop-trong-co-khi`](https://tennis-unified.github.io/vi/blog/80-cach-su-dung-cac-khop-trong-co-khi/)</small>
-
----
-
-### scapular
-
-**Definition:** Overuse from serving with poor scapular loading, or from compensating for a weak kinetic chain by muscling the ball with the shoulder alone
-
-<small>📖 Nguồn: [`/vi/foundation/basics/Injury-Prevention-and-Joint-Health-Coaching-Guide`](https://tennis-unified.github.io/vi/foundation/basics/Injury-Prevention-and-Joint-Health-Coaching-Guide/)</small>
-
----
-
-### shoulder
-
-**Definition:** A neutral position — ears stacked over shoulders, nose level — keeps the whole vestibular system quiet; your otoliths simply report &quot;up is up,&quot; your eye-stabilizing reflex runs at normal gain, and This genuinely your best balance state
-
-<small>📖 Nguồn: [`/vi/advanced/deep-dives/Head Position & Vestibular`](https://tennis-unified.github.io/vi/advanced/deep-dives/Head Position & Vestibular/)</small>
-
----
-
-### stabilizer
-
-**Definition:** Thumb (the side of the thumb): the STABILIZER
-
-<small>📖 Nguồn: [`/vi/foundation/basics/Continental Grip`](https://tennis-unified.github.io/vi/foundation/basics/Continental Grip/)</small>
-
----
-
-### trapezius
-
-**Định nghĩa:** Chuỗi Vai-Khuyu (Shoulder-Elbow Chain) Chuỗi này chạy từ mặt ngoài cẳng tay đến khuyu và tiếp tục đến mặt ngoài cánh tay trên với septa bên quan trọng kết nối với fascia cơ delta, kéo dài từ phần trên của cơ thang (trapezius) đến cổ
-
-**Giải thích bằng tiếng Việt:**
-
-Chuỗi Vai-Khuyu (Shoulder-Elbow Chain) Chuỗi này chạy từ mặt ngoài cẳng tay đến khuyu và tiếp tục đến mặt ngoài cánh tay trên với septa bên quan trọng kết nối với fascia cơ delta, kéo dài từ phần trên của cơ thang (trapezius) đến cổ
-
-<small>📖 Nguồn: [`/vi/tennis-technical-reference/fitness/fascia-chains-and-anatomy-slings-in-tennis`](https://tennis-unified.github.io/vi/tennis-technical-reference/fitness/fascia-chains-and-anatomy-slings-in-tennis/)</small>
-
----
-
-### wrist
-
-**Definition:** Shoulders, arms/wrists/hands, trunk/spine, hips/thighs, knees, ankles/feet
-
-<small>📖 Nguồn: [`/vi/biomechanics-neurology`](https://tennis-unified.github.io/vi/biomechanics-neurology/)</small>
-
----
-
-## Cú đánh {#cat-Strokes}
-
-*16 thuật ngữ*
-
-### approach shot
-
-**Định nghĩa:** , từ cơ bản tới nâng cao như slde, kick serve, approach shot, offensive lob, half-volley, outside-in groundstroke, drop shot, angled passing shot, skyhook, và kèm theo nhiều hình vẽ
-
-**Giải thích bằng tiếng Việt:**
-
-, từ cơ bản tới nâng cao như slde, kick serve, approach shot, offensive lob, half-volley, outside-in groundstroke, drop shot, angled passing shot, skyhook, và kèm theo nhiều hình vẽ
-
-<small>📖 Nguồn: [`/vi/blog/7-gioi-thieu-sach-hay-nhung-cuon-sach`](https://tennis-unified.github.io/vi/blog/7-gioi-thieu-sach-hay-nhung-cuon-sach/)</small>
-
----
-
-### backhand
-
-**Definition:** If the data says their backhand return is the pattern to attack, commit to it even if it means playing a style you don&#x27;t love — a game plan you execute beats a game plan you merely prefer
-
-<small>📖 Nguồn: [`/vi/advanced/basics/Scouting-and-Reading-the-Opponent-Coaching-Guide`](https://tennis-unified.github.io/vi/advanced/basics/Scouting-and-Reading-the-Opponent-Coaching-Guide/)</small>
-
----
-
-### drop shot
-
-**Định nghĩa:** Chẳng hạn bạn không giỏi cú volley mà đối phương luôn đánh cú bỏ nhỏ (drop shot) bắt bạn phải chạy lên lưới rồi gài bóng vào chân bạn hay tiếp tục một cú đánh bổng (lob) ra sau lưng bạn
-
-**Giải thích bằng tiếng Việt:**
-
-Chẳng hạn bạn không giỏi cú volley mà đối phương luôn đánh cú bỏ nhỏ (drop shot) bắt bạn phải chạy lên lưới rồi gài bóng vào chân bạn hay tiếp tục một cú đánh bổng (lob) ra sau lưng bạn
-
-<small>📖 Nguồn: [`/vi/blog/5-chien-thuat-tactic-trong-mot-cuoc`](https://tennis-unified.github.io/vi/blog/5-chien-thuat-tactic-trong-mot-cuoc/)</small>
-
----
-
-### first serve
-
-**Definition:** On break points as the server, many players benefit from prioritizing a reliable, high-percentage first serve placement over a low-percentage big first serve — the value of simply starting the point in control outweighs the marginal benefit of an ace attempt
-
-<small>📖 Nguồn: [`/vi/advanced/basics/Score-Management-Clutch-Points-and-Tiebreaks-Coaching-Guide`](https://tennis-unified.github.io/vi/advanced/basics/Score-Management-Clutch-Points-and-Tiebreaks-Coaching-Guide/)</small>
-
----
-
-### forehand
-
-**Definition:** A pattern is a 2-3 shot sequence you can execute on command: for example, deep crosscourt forehand &gt; short ball response &gt; inside-out forehand winner
-
-<small>📖 Nguồn: [`/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection`](https://tennis-unified.github.io/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection/)</small>
-
----
-
-### half-volley
-
-**Định nghĩa:** , từ cơ bản tới nâng cao như slde, kick serve, approach shot, offensive lob, half-volley, outside-in groundstroke, drop shot, angled passing shot, skyhook, và kèm theo nhiều hình vẽ
-
-**Giải thích bằng tiếng Việt:**
-
-, từ cơ bản tới nâng cao như slde, kick serve, approach shot, offensive lob, half-volley, outside-in groundstroke, drop shot, angled passing shot, skyhook, và kèm theo nhiều hình vẽ
-
-<small>📖 Nguồn: [`/vi/blog/7-gioi-thieu-sach-hay-nhung-cuon-sach`](https://tennis-unified.github.io/vi/blog/7-gioi-thieu-sach-hay-nhung-cuon-sach/)</small>
-
----
-
-### kick serve
-
-**Definition:** Why This Matters You&#x27;ve probably had the experience of returning a moderate-speed kick serve worse than a serve that was objectively faster
-
-<small>📖 Nguồn: [`/vi/advanced/deep-dives/Returning-Heavy-Spin-and-Fast-Serves-Saccadic-Blindness`](https://tennis-unified.github.io/vi/advanced/deep-dives/Returning-Heavy-Spin-and-Fast-Serves-Saccadic-Blindness/)</small>
-
----
-
-### lob
-
-**Định nghĩa:** Chẳng hạn bạn không giỏi cú volley mà đối phương luôn đánh cú bỏ nhỏ (drop shot) bắt bạn phải chạy lên lưới rồi gài bóng vào chân bạn hay tiếp tục một cú đánh bổng (lob) ra sau lưng bạn
-
-**Giải thích bằng tiếng Việt:**
-
-Chẳng hạn bạn không giỏi cú volley mà đối phương luôn đánh cú bỏ nhỏ (drop shot) bắt bạn phải chạy lên lưới rồi gài bóng vào chân bạn hay tiếp tục một cú đánh bổng (lob) ra sau lưng bạn
-
-<small>📖 Nguồn: [`/vi/blog/5-chien-thuat-tactic-trong-mot-cuoc`](https://tennis-unified.github.io/vi/blog/5-chien-thuat-tactic-trong-mot-cuoc/)</small>
-
----
-
-### one-handed backhand
-
-**Definition:** These differences are especially important to understand for players who hit the one-handed backhand drive
-
-<small>📖 Nguồn: [`/vi/blog/67-fundamental-1-2-rhythm-backhand`](https://tennis-unified.github.io/vi/blog/67-fundamental-1-2-rhythm-backhand/)</small>
-
----
-
-### overhead
-
-**Definition:** A backward tilt — chin up, nose toward the sky — tells your otoliths you&#x27;re pitching backward and shifts your visual field skyward; it&#x27;s rare but it matters on high balls and overheads
-
-<small>📖 Nguồn: [`/vi/advanced/deep-dives/Head Position & Vestibular`](https://tennis-unified.github.io/vi/advanced/deep-dives/Head Position & Vestibular/)</small>
-
----
-
-### return of serve
-
-**Định nghĩa:** 84 - Cơ Sinh Học trong giao bóng và đỡ giao bóng Download the presentation file from: Biomechanical in Serve and Return of Serve
-
-**Giải thích bằng tiếng Việt:**
-
-84 - Cơ Sinh Học trong giao bóng và đỡ giao bóng Download the presentation file from: Biomechanical in Serve and Return of Serve
-
-<small>📖 Nguồn: [`/vi/blog/84-co-sinh-hoc-trong-giao-bong-va-o`](https://tennis-unified.github.io/vi/blog/84-co-sinh-hoc-trong-giao-bong-va-o/)</small>
-
----
-
-### second serve
-
-**Definition:** Before or early in a match, identify one clear weakness (weak second serve, poor movement to the ad-side backhand corner, discomfort at net) and build your shot selection around exploiting it consistently, rather than playing &quot;your game&quot; regardless of opponent
-
-<small>📖 Nguồn: [`/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection`](https://tennis-unified.github.io/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection/)</small>
-
----
-
-### serve
-
-**Definition:** On break points as the server, many players benefit from prioritizing a reliable, high-percentage first serve placement over a low-percentage big first serve — the value of simply starting the point in control outweighs the marginal benefit of an ace attempt
-
-<small>📖 Nguồn: [`/vi/advanced/basics/Score-Management-Clutch-Points-and-Tiebreaks-Coaching-Guide`](https://tennis-unified.github.io/vi/advanced/basics/Score-Management-Clutch-Points-and-Tiebreaks-Coaching-Guide/)</small>
-
----
-
-### slice serve
-
-**Định nghĩa:** Về cơ bản thì cú đập banh từ trên cao giống với cú giao bóng xoáy (slice serve), bạn sẽ đánh vào banh với thân người nghiêng về bên bóng rơi xuống, thí dụ bên phải khi banh rơi xuống phía tay phải của bạn
-
-**Giải thích bằng tiếng Việt:**
-
-Về cơ bản thì cú đập banh từ trên cao giống với cú giao bóng xoáy (slice serve), bạn sẽ đánh vào banh với thân người nghiêng về bên bóng rơi xuống, thí dụ bên phải khi banh rơi xuống phía tay phải của bạn
-
-<small>📖 Nguồn: [`/vi/blog/13-bi-quyet-anh-cu-ap-banh-tu-tren-cao`](https://tennis-unified.github.io/vi/blog/13-bi-quyet-anh-cu-ap-banh-tu-tren-cao/)</small>
-
----
-
-### two-handed backhand
-
-**Definition:** 1-2 Rhythm The Single-Handed Backhand Nick Wheatley In the first two articles in this series we have looked at a timing concept called 1-2 Rhythm, first for the forehand and then for the two-handed backhand
-
-<small>📖 Nguồn: [`/vi/blog/69-fundamental-1-2-rhythm-single-handed`](https://tennis-unified.github.io/vi/blog/69-fundamental-1-2-rhythm-single-handed/)</small>
-
----
-
-### volley
-
-**Định nghĩa:** Bí quyết đánh cú volley và trả giao bóng, sao cho banh đi căng, ngọt và không rúc lưới hay bay ra ngoài sân 13
-
-**Giải thích bằng tiếng Việt:**
-
-Bí quyết đánh cú volley và trả giao bóng, sao cho banh đi căng, ngọt và không rúc lưới hay bay ra ngoài sân 13
-
-<small>📖 Nguồn: [`/vi/blog`](https://tennis-unified.github.io/vi/blog/)</small>
-
----
-
-## Kỹ thuật {#cat-Technique}
-
-*9 thuật ngữ*
-
-### backspin
-
-**Định nghĩa:** Đánh thẳng qua tâm trái banh thì sẽ khiến trái banh bay thẳng và đánh xiên thì sẽ tạo ra trái banh bay xoáy, tùy theo góc mà sẽ có nhiều kiểu đánh khác nhau như đánh xoáy lên thật nặng (heay topspin - banh còng), bạt ngang (topspin drive), đánh xoáy xuống (backspin slide), xoáy ngang (sidespin), v
-
-**Giải thích bằng tiếng Việt:**
-
-Đánh thẳng qua tâm trái banh thì sẽ khiến trái banh bay thẳng và đánh xiên thì sẽ tạo ra trái banh bay xoáy, tùy theo góc mà sẽ có nhiều kiểu đánh khác nhau như đánh xoáy lên thật nặng (heay topspin - banh còng), bạt ngang (topspin drive), đánh xoáy xuống (backspin slide), xoáy ngang (sidespin), v
-
-<small>📖 Nguồn: [`/vi/blog/1-mot-cu-anh-banh-se-bao-gom-nhung-yeu`](https://tennis-unified.github.io/vi/blog/1-mot-cu-anh-banh-se-bao-gom-nhung-yeu/)</small>
-
----
-
-### backswing
-
-**Định nghĩa:** Nhiều bạn sử dụng phần tay quá nhiều trong khi dùng vai quá ít, lúc đó khi bạn thực hiện động tác quay người về sau đề tạo động tác quay vợt ra sau (backswing) rất cứng nhắc và không nhịp nhàng
-
-**Giải thích bằng tiếng Việt:**
-
-Nhiều bạn sử dụng phần tay quá nhiều trong khi dùng vai quá ít, lúc đó khi bạn thực hiện động tác quay người về sau đề tạo động tác quay vợt ra sau (backswing) rất cứng nhắc và không nhịp nhàng
-
-<small>📖 Nguồn: [`/vi/blog/cach-khac-phuc-cac-loi-co-ban-trong`](https://tennis-unified.github.io/vi/blog/cach-khac-phuc-cac-loi-co-ban-trong/)</small>
-
----
-
-### contact point
-
-**Definition:** You focus on staying still on the contact point for as long as possible after contact
-
-<small>📖 Nguồn: [`/vi/biomechanics-neurology`](https://tennis-unified.github.io/vi/biomechanics-neurology/)</small>
-
----
-
-### flat shot
-
-**Definition:** The will to strike a high velocity flat shot or a superior rpm topspin shot is also a mental thing
-
-<small>📖 Nguồn: [`/vi/fundamentals/classic-lessons/weaponize-your-one-handed-backhand`](https://tennis-unified.github.io/vi/fundamentals/classic-lessons/weaponize-your-one-handed-backhand/)</small>
-
----
-
-### follow-through
-
-**Definition:** With this explosive downward swing path, the racket head can stay below the hand for the entire course of the follow-through with the racket tip actually pointing straight down at the court at some point in the swing
-
-<small>📖 Nguồn: [`/vi/blog/67-fundamental-1-2-rhythm-backhand`](https://tennis-unified.github.io/vi/blog/67-fundamental-1-2-rhythm-backhand/)</small>
-
----
-
-### preparation
-
-**Definition:** Watch the continued path of the racket in the preparation and then the path of the forward swing
-
-<small>📖 Nguồn: [`/vi/blog/67-fundamental-1-2-rhythm-backhand`](https://tennis-unified.github.io/vi/blog/67-fundamental-1-2-rhythm-backhand/)</small>
-
----
-
-### slice
-
-**Định nghĩa:** Cách dễ dàng nhất để trả bóng xoáy lên là dùng một cú cắt xoáy đi từ trên xuống (slice) và đẩy ra phía trước về chính điểm trái banh xuất phát, nghĩa là nơi đối thủ đứng giao bóng
-
-**Giải thích bằng tiếng Việt:**
-
-Cách dễ dàng nhất để trả bóng xoáy lên là dùng một cú cắt xoáy đi từ trên xuống (slice) và đẩy ra phía trước về chính điểm trái banh xuất phát, nghĩa là nơi đối thủ đứng giao bóng
-
-<small>📖 Nguồn: [`/vi/blog/1-mot-cu-anh-banh-se-bao-gom-nhung-yeu`](https://tennis-unified.github.io/vi/blog/1-mot-cu-anh-banh-se-bao-gom-nhung-yeu/)</small>
-
----
-
-### takeback
-
-**Definition:** First, notice Todd&#x27;s unusual takeback style
-
-<small>📖 Nguồn: [`/vi/blog/47-serve-from-hi-techtenniscom-lesson-1`](https://tennis-unified.github.io/vi/blog/47-serve-from-hi-techtenniscom-lesson-1/)</small>
-
----
-
-### topspin
-
-**Definition:** A serve with heavy topspin or kick changes trajectory and bounce angle abruptly right around the point where your eyes are most likely mid-saccade after tracking the toss and contact
-
-<small>📖 Nguồn: [`/vi/advanced/deep-dives/Returning-Heavy-Spin-and-Fast-Serves-Saccadic-Blindness`](https://tennis-unified.github.io/vi/advanced/deep-dives/Returning-Heavy-Spin-and-Fast-Serves-Saccadic-Blindness/)</small>
-
----
-
-## Cách cầm vợt (Grip) {#cat-Grip}
-
-*5 thuật ngữ*
-
-### Continental grip
-
-**Definition:** Tennis Volley Grip When transitioning up to net you will want to grasp the Continental grip
-
-<small>📖 Nguồn: [`/vi/blog/76-ultimate-tennis-volley-guide-from`](https://tennis-unified.github.io/vi/blog/76-ultimate-tennis-volley-guide-from/)</small>
-
----
-
-### Eastern grip
-
-**Definition:** Instead of an eastern grip (or continental) which puts the hand behind the handle, the modern grips put the handle more under the handle so you can get a powerful upward thrust of the arm
-
-<small>📖 Nguồn: [`/vi/blog/modern-forehand-from-hi-techtenniscom_73`](https://tennis-unified.github.io/vi/blog/modern-forehand-from-hi-techtenniscom_73/)</small>
-
----
-
-### grip
-
-**Định nghĩa:** Open · Mở 🤚Grip · Cách cầm vợt 4 cards — slingshot, grip types vs shot quality, OK grip drill, palm direction
-
-**Giải thích bằng tiếng Việt:**
-
-Open · Mở 🤚Grip · Cách cầm vợt 4 cards — slingshot, grip types vs shot quality, OK grip drill, palm direction
-
-<small>📖 Nguồn: [`/vi/blog/104-thu-vien-hinh-anh-huan-luyen`](https://tennis-unified.github.io/vi/blog/104-thu-vien-hinh-anh-huan-luyen/)</small>
-
----
-
-### Semi-Western grip
-
-**Definition:** A semi-Western grip is based upon leverage and spring from the body while a Continental grip is based upon swing of the racquet and a steady body
-
-<small>📖 Nguồn: [`/vi/blog/modern-forehand-from-hi-techtenniscom_76`](https://tennis-unified.github.io/vi/blog/modern-forehand-from-hi-techtenniscom_76/)</small>
-
----
-
-### Western grip
-
-**Definition:** Palm more under the handle and forearm rotated backwards a bit (aided by the semi-western/western grip)
-
-<small>📖 Nguồn: [`/vi/blog/modern-forehand-from-hi-techtenniscom_69`](https://tennis-unified.github.io/vi/blog/modern-forehand-from-hi-techtenniscom_69/)</small>
-
----
-
-## Di chuyển (Footwork) {#cat-Footwork}
-
-*3 thuật ngữ*
-
-### ready position
-
-**Definition:** Tennis Backhand Volley: Returning the Ball Hit at Your Body From the ready position you will bring your hitting elbow up away from your body so that your racquet face is facing the net and out in front of your body’s mid section
-
-<small>📖 Nguồn: [`/vi/blog/77-tennis-backhand-volley-ultimate`](https://tennis-unified.github.io/vi/blog/77-tennis-backhand-volley-ultimate/)</small>
-
----
-
-### recovery
-
-**Definition:** Hit to both wings and to the body during warm-up and note which shots produce hesitation or poor recovery, not just which look &quot;weaker
-
-<small>📖 Nguồn: [`/vi/advanced/basics/Scouting-and-Reading-the-Opponent-Coaching-Guide`](https://tennis-unified.github.io/vi/advanced/basics/Scouting-and-Reading-the-Opponent-Coaching-Guide/)</small>
-
----
-
-### split-step
-
-**Definition:** Reactive Strength &amp;amp; the Stretch-Shortening Cycle for the Split-Step Why two players with identical reaction times can still explode off the split step at very different speeds
-
-<small>📖 Nguồn: [`/vi/advanced/deep-dives/Reactive-Strength-and-the-Stretch-Shortening-Cycle-for-the-Split-Step`](https://tennis-unified.github.io/vi/advanced/deep-dives/Reactive-Strength-and-the-Stretch-Shortening-Cycle-for-the-Split-Step/)</small>
-
----
-
-## Chiến thuật {#cat-Strategy}
-
-*12 thuật ngữ*
-
-### aggression
-
-**Definition:** Standing slightly further back against unfamiliar heavy kick serves gives your visual system more time to complete a second saccade and correct, at the cost of some aggression on the return
-
-<small>📖 Nguồn: [`/vi/advanced/deep-dives/Returning-Heavy-Spin-and-Fast-Serves-Saccadic-Blindness`](https://tennis-unified.github.io/vi/advanced/deep-dives/Returning-Heavy-Spin-and-Fast-Serves-Saccadic-Blindness/)</small>
-
----
-
-### consistency
-
-**Definition:** Neutral — both players are in position; patience and consistency dictate
-
-<small>📖 Nguồn: [`/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection`](https://tennis-unified.github.io/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection/)</small>
-
----
-
-### cross-court
-
-**Definition:** Compare your recorded rep against a pro reference at the same phase of the swing, at a similar shot type and situation (a pro&#x27;s cross-court rally forehand, not their inside-out winner) — an apples-to-apples comparison is far more useful than comparing your rally shot to a highlight-reel winner
-
-<small>📖 Nguồn: [`/vi/elite/basics/Video-and-Self-Analysis-Methodology-Coaching-Guide`](https://tennis-unified.github.io/vi/elite/basics/Video-and-Self-Analysis-Methodology-Coaching-Guide/)</small>
-
----
-
-### defensive
-
-**Definition:** Common Mistakes Going for winners from neutral or defensive positions because the shot &quot;felt good,&quot; not because the phase called for it
-
-<small>📖 Nguồn: [`/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection`](https://tennis-unified.github.io/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection/)</small>
-
----
-
-### down-the-line
-
-**Định nghĩa:** Sau khi bạn đã bị kéo ra rộng và mất vị trí bởi cú chéo sân, người thuận tay trái có một đường trống để đánh dọc dây (down-the-line) ghi điểm gọn gàng
-
-**Giải thích bằng tiếng Việt:**
-
-Sau khi bạn đã bị kéo ra rộng và mất vị trí bởi cú chéo sân, người thuận tay trái có một đường trống để đánh dọc dây (down-the-line) ghi điểm gọn gàng
-
-<small>📖 Nguồn: [`/vi/book/chapter-06-the-iron-gate`](https://tennis-unified.github.io/vi/book/chapter-06-the-iron-gate/)</small>
-
----
-
-### inside-in
-
-**Definition:** Then switch this to an inside-in on the next ball
-
-<small>📖 Nguồn: [`/vi/fundamentals/strategy/pro-patterns-serve-and-return-diagonals`](https://tennis-unified.github.io/vi/fundamentals/strategy/pro-patterns-serve-and-return-diagonals/)</small>
-
----
-
-### inside-out
-
-**Định nghĩa:** - Chạy vòng qua bên trái rồi đánh trái banh bay vào phía tay phải của mình bằng một cú bạt hay một cú xoáy lên đánh banh còng (topspin inside-out)
-
-**Giải thích bằng tiếng Việt:**
-
-- Chạy vòng qua bên trái rồi đánh trái banh bay vào phía tay phải của mình bằng một cú bạt hay một cú xoáy lên đánh banh còng (topspin inside-out)
-
-<small>📖 Nguồn: [`/vi/blog/2-e-tao-luc-va-truyen-luc-co-hieu-qua`](https://tennis-unified.github.io/vi/blog/2-e-tao-luc-va-truyen-luc-co-hieu-qua/)</small>
-
----
-
-### patterns of play
-
-**Definition:** For coaches, analytics will be used more prominently in working with players and helping them master their best patterns of play on the practice court and at tournaments
-
-<small>📖 Nguồn: [`/vi/fundamentals/classic-lessons/future-trends-in-tennis-part-3`](https://tennis-unified.github.io/vi/fundamentals/classic-lessons/future-trends-in-tennis-part-3/)</small>
-
----
-
-### point construction
-
-**Definition:** &quot; Tactical Identity Has Changed Shape Traditional players used to be known for one way of playing - elegant point construction, grinding topspin, whatever their signature was
-
-<small>📖 Nguồn: [`/vi/tennis-technical-reference/reference-en/tactics/Agentic Strategy`](https://tennis-unified.github.io/vi/tennis-technical-reference/reference-en/tactics/Agentic Strategy/)</small>
-
----
-
-### pressure
-
-**Definition:** Wholesale changes under pressure tend to produce worse tennis, not better
-
-<small>📖 Nguồn: [`/vi/advanced/basics/In-Match-Tactical-Adaptation-Coaching-Guide`](https://tennis-unified.github.io/vi/advanced/basics/In-Match-Tactical-Adaptation-Coaching-Guide/)</small>
-
----
-
-### strategy
-
-**Định nghĩa:** Chiến thuật (tactic) trong một cuộc chơi tennis và chiến lược (strategy) để chiến thắng trong một giải tennis và trong suốt quá trình chơi tennis lâu dài
-
-**Giải thích bằng tiếng Việt:**
-
-Chiến thuật (tactic) trong một cuộc chơi tennis và chiến lược (strategy) để chiến thắng trong một giải tennis và trong suốt quá trình chơi tennis lâu dài
-
-<small>📖 Nguồn: [`/vi/blog`](https://tennis-unified.github.io/vi/blog/)</small>
-
----
-
-### tactical
-
-**Definition:** In-Match Tactical Adaptation Coaching Guide The follow-up skill to Scouting: what to do when your pre-match plan stops working
-
-<small>📖 Nguồn: [`/vi/advanced/basics/In-Match-Tactical-Adaptation-Coaching-Guide`](https://tennis-unified.github.io/vi/advanced/basics/In-Match-Tactical-Adaptation-Coaching-Guide/)</small>
-
----
-
-## Tâm lý {#cat-Mental}
-
-*7 thuật ngữ*
-
-### between points
-
-**Định nghĩa:** How the three fit together between points: in the first ten seconds, run your Kình check
-
-**Giải thích bằng tiếng Việt:**
-
-How the three fit together between points: in the first ten seconds, run your Kình check
-
-<small>📖 Nguồn: [`/vi/elite/deep-dives/Choking & Amygdala`](https://tennis-unified.github.io/vi/elite/deep-dives/Choking & Amygdala/)</small>
-
----
-
-### concentration
-
-**Definition:** Concentrating harder isn&#x27;t actually the answer once you&#x27;re trained enough — concentration becomes the problem when it starts overriding training that&#x27;s already good
-
-<small>📖 Nguồn: [`/vi/elite/basics/Elite Manual`](https://tennis-unified.github.io/vi/elite/basics/Elite Manual/)</small>
-
----
-
-### focus
-
-**Definition:** Advanced Deep Dives Focused exploration of specific advanced topics
-
-<small>📖 Nguồn: [`/vi/advanced/deep-dives`](https://tennis-unified.github.io/vi/advanced/deep-dives/)</small>
-
----
-
-### mental toughness
-
-**Definition:** Insights on Modern Tennis, Technique, and Mental Toughness Watch on YouTube ↗ 5
-
-<small>📖 Nguồn: [`/vi/coach-video-library/casey-curtis`](https://tennis-unified.github.io/vi/coach-video-library/casey-curtis/)</small>
-
----
-
-### pre-match routine
-
-**Định nghĩa:** Pre-Match Routine (Routine Trước Trận): Routine 30 phút trước trận → warm-up, visualization, cue word → não &quot;biết&quot; pattern
-
-**Giải thích bằng tiếng Việt:**
-
-Pre-Match Routine (Routine Trước Trận): Routine 30 phút trước trận → warm-up, visualization, cue word → não &quot;biết&quot; pattern
-
-<small>📖 Nguồn: [`/vi/tennis-technical-reference/fault-tolerant-tennis/the-anxiety-secret-never-choke-again`](https://tennis-unified.github.io/vi/tennis-technical-reference/fault-tolerant-tennis/the-anxiety-secret-never-choke-again/)</small>
-
----
-
-### rituals
-
-**Definition:** Phase 1 begins after these rituals are complete
-
-<small>📖 Nguồn: [`/vi/fundamentals/classic-lessons/1-2-rhythm-the-serve`](https://tennis-unified.github.io/vi/fundamentals/classic-lessons/1-2-rhythm-the-serve/)</small>
-
----
-
-### visualization
-
-**Định nghĩa:** Chúng ta sẽ đi sâu vào các nguyên lý cốt lõi của Trực quan hóa (Visualization), Cơ chế Định hình trước (Pre-shaping Mechanics) và Thực thi cú đánh (Stroke Execution)
-
-**Giải thích bằng tiếng Việt:**
-
-Chúng ta sẽ đi sâu vào các nguyên lý cốt lõi của Trực quan hóa (Visualization), Cơ chế Định hình trước (Pre-shaping Mechanics) và Thực thi cú đánh (Stroke Execution)
-
-<small>📖 Nguồn: [`/vi/blog/94-mang-luoi-kien-thuc-tennis-tennis`](https://tennis-unified.github.io/vi/blog/94-mang-luoi-kien-thuc-tennis-tennis/)</small>
-
----
-
-## Trang thiết bị {#cat-Equipment}
-
-*4 thuật ngữ*
-
-### head size
-
-**Definition:** Read Whitepaper The Wood-to-Graphite Evolutionary Revolution Head size expansion (65 to 100 sq in), polar MOI tripling, and the birth of the modern topspin open stance
-
-<small>📖 Nguồn: [`/vi/tennis-technical-reference/gemini-notebooks`](https://tennis-unified.github.io/vi/tennis-technical-reference/gemini-notebooks/)</small>
-
----
-
-### racket
-
-**Definition:** Fix your gaze slightly earlier than feels natural — on the toss and racket-to-ball contact zone — rather than trying to visually follow the whole flight, which is where saccadic gaps cost you the most information
-
-<small>📖 Nguồn: [`/vi/advanced/deep-dives/Returning-Heavy-Spin-and-Fast-Serves-Saccadic-Blindness`](https://tennis-unified.github.io/vi/advanced/deep-dives/Returning-Heavy-Spin-and-Fast-Serves-Saccadic-Blindness/)</small>
-
----
-
-### string
-
-**Definition:** Cue : &quot;See the ball hit the strings; don&#x27;t look up until the ball bounces on the other side
-
-<small>📖 Nguồn: [`/vi/biomechanics-neurology`](https://tennis-unified.github.io/vi/biomechanics-neurology/)</small>
-
----
-
-### string tension
-
-**Definition:** String Tension Based on Gender Watch on YouTube ↗ 16
-
-<small>📖 Nguồn: [`/vi/coach-video-library/tennis-lab-by-dr-lyon-krause`](https://tennis-unified.github.io/vi/coach-video-library/tennis-lab-by-dr-lyon-krause/)</small>
-
----
-
-## Sân và Mặt sân {#cat-Court}
-
-*7 thuật ngữ*
-
-### baseline
-
-**Definition:** And using your phone or a laptop while lying in bed compounds the problem over time — eight hours of chronic forward tilt overnight genuinely rewires your baseline posture, making the whole forward-head pattern harder to unlearn during the day
-
-<small>📖 Nguồn: [`/vi/advanced/deep-dives/Head Position & Vestibular`](https://tennis-unified.github.io/vi/advanced/deep-dives/Head Position & Vestibular/)</small>
-
----
-
-### clay court
-
-**Definition:** Other more aggressive approaches would teach a go-for-broke on the run style, but for slow clay court play, high spin is the right shot on the run
-
-<small>📖 Nguồn: [`/vi/fundamentals/classic-lessons/building-the-spanish-forehand-stroke-shaping-and-hand-feeding`](https://tennis-unified.github.io/vi/fundamentals/classic-lessons/building-the-spanish-forehand-stroke-shaping-and-hand-feeding/)</small>
-
----
-
-### grass court
-
-**Definition:** That&amp;#x27;s different than on a grass court or a slick hard court where the ball shoots through the bounce must faster
-
-<small>📖 Nguồn: [`/vi/fundamentals/classic-lessons/keys-to-the-kick-serve`](https://tennis-unified.github.io/vi/fundamentals/classic-lessons/keys-to-the-kick-serve/)</small>
-
----
-
-### hard court
-
-**Định nghĩa:** Sân cứng (hard court) nằm ở giữa
-
-**Giải thích bằng tiếng Việt:**
-
-Sân cứng (hard court) nằm ở giữa
-
-<small>📖 Nguồn: [`/vi/book/chapter-12-velvet-destruction`](https://tennis-unified.github.io/vi/book/chapter-12-velvet-destruction/)</small>
-
----
-
-### no man's land
-
-**Định nghĩa:** Thực tế, split step ở no man&#x27;s land (vùng giữa baseline và đường dịch vụ) cũng được, miễn là bạn tiến lên đánh volley trước đường dịch vụ
-
-**Giải thích bằng tiếng Việt:**
-
-Thực tế, split step ở no man&#x27;s land (vùng giữa baseline và đường dịch vụ) cũng được, miễn là bạn tiến lên đánh volley trước đường dịch vụ
-
-<small>📖 Nguồn: [`/vi/tennis-technical-reference/serve-and-volley/2-is-it-worth-it`](https://tennis-unified.github.io/vi/tennis-technical-reference/serve-and-volley/2-is-it-worth-it/)</small>
-
----
-
-### service line
-
-**Định nghĩa:** Họ nhắm khoảng tám mươi phần trăm cú trả giao đối với những cú giao bóng thứ nhất mạnh vào sâu giữa sân, vào hành lang giữa các vạch service line
-
-**Giải thích bằng tiếng Việt:**
-
-Họ nhắm khoảng tám mươi phần trăm cú trả giao đối với những cú giao bóng thứ nhất mạnh vào sâu giữa sân, vào hành lang giữa các vạch service line
-
-<small>📖 Nguồn: [`/vi/book/chapter-04-blitz-chess-on-concrete`](https://tennis-unified.github.io/vi/book/chapter-04-blitz-chess-on-concrete/)</small>
-
----
-
-### transition zone
-
-**Definition:** Court Positioning Baseline, transition zone, net positioning, and geometric court coverage
-
-<small>📖 Nguồn: [`/vi/fundamentals/court-positioning`](https://tennis-unified.github.io/vi/fundamentals/court-positioning/)</small>
-
----
-
-## Tính điểm {#cat-Scoring}
-
-*12 thuật ngữ*
-
-### ace
-
-**Definition:** replace(target + search + hash); return; } if (path
-
-<small>📖 Nguồn: [`/vi/404`](https://tennis-unified.github.io/vi/404/)</small>
-
----
-
-### advantage
-
-**Definition:** Build — a neutral rally ball; your job is to construct advantage, not force a winner
-
-<small>📖 Nguồn: [`/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection`](https://tennis-unified.github.io/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection/)</small>
-
----
-
-### break point
-
-**Definition:** Break points, 30-30/deuce points, and the first point of a new game carry disproportionate weight relative to their single-point value — statistically and psychologically
-
-<small>📖 Nguồn: [`/vi/advanced/basics/Score-Management-Clutch-Points-and-Tiebreaks-Coaching-Guide`](https://tennis-unified.github.io/vi/advanced/basics/Score-Management-Clutch-Points-and-Tiebreaks-Coaching-Guide/)</small>
-
----
-
-### deuce
-
-**Định nghĩa:** Hãy quan sát Carlos Alcaraz, hay Roger Federer thời đỉnh cao, giao bóng rộng ra ô deuce
-
-**Giải thích bằng tiếng Việt:**
-
-Hãy quan sát Carlos Alcaraz, hay Roger Federer thời đỉnh cao, giao bóng rộng ra ô deuce
-
-<small>📖 Nguồn: [`/vi/book/chapter-04-blitz-chess-on-concrete`](https://tennis-unified.github.io/vi/book/chapter-04-blitz-chess-on-concrete/)</small>
-
----
-
-### double fault
-
-**Định nghĩa:** Điều đó có nghĩa là trọng tâm của bạn ở những điểm mở đầu không nên là sự phô diễn, mà là kỷ luật: giữ tỷ lệ giao bóng thứ nhất vào sân cao, tránh double fault, và nhắm vào người cùng chữ T thay vì mạo hiểm đánh vào đường biên mà hôm đó bạn chưa chắc đã có phong độ tốt
-
-**Giải thích bằng tiếng Việt:**
-
-Điều đó có nghĩa là trọng tâm của bạn ở những điểm mở đầu không nên là sự phô diễn, mà là kỷ luật: giữ tỷ lệ giao bóng thứ nhất vào sân cao, tránh double fault, và nhắm vào người cùng chữ T thay vì mạo hiểm đánh vào đường biên mà hôm đó bạn chưa chắc đã có phong độ tốt
-
-<small>📖 Nguồn: [`/vi/book/chapter-16-the-synchronized-mind`](https://tennis-unified.github.io/vi/book/chapter-16-the-synchronized-mind/)</small>
-
----
-
-### love
-
-**Definition:** If the data says their backhand return is the pattern to attack, commit to it even if it means playing a style you don&#x27;t love — a game plan you execute beats a game plan you merely prefer
-
-<small>📖 Nguồn: [`/vi/advanced/basics/Scouting-and-Reading-the-Opponent-Coaching-Guide`](https://tennis-unified.github.io/vi/advanced/basics/Scouting-and-Reading-the-Opponent-Coaching-Guide/)</small>
-
----
-
-### match point
-
-**Định nghĩa:** Một kỹ năng quan trọng là luôn tập trung vào trái banh và vào thời điểm hiện tại, thay vì nhìn vào người đối thủ và nghĩ về những cú đánh hỏng đã qua trong quá khứ, tự trách mình quá nhiều hay nghĩ về việc thắng trận này trước khi điểm thắng cuộc (match point) diễn ra vào tương lai
-
-**Giải thích bằng tiếng Việt:**
-
-Một kỹ năng quan trọng là luôn tập trung vào trái banh và vào thời điểm hiện tại, thay vì nhìn vào người đối thủ và nghĩ về những cú đánh hỏng đã qua trong quá khứ, tự trách mình quá nhiều hay nghĩ về việc thắng trận này trước khi điểm thắng cuộc (match point) diễn ra vào tương lai
-
-<small>📖 Nguồn: [`/vi/blog/4-tam-ly-tennis-psychology-va-cac-yeu`](https://tennis-unified.github.io/vi/blog/4-tam-ly-tennis-psychology-va-cac-yeu/)</small>
-
----
-
-### rally
-
-**Definition:** Build — a neutral rally ball; your job is to construct advantage, not force a winner
-
-<small>📖 Nguồn: [`/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection`](https://tennis-unified.github.io/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection/)</small>
-
----
-
-### set point
-
-**Definition:** Down there, choking usually means missing an easy ball at set point
-
-<small>📖 Nguồn: [`/vi/elite/basics/Elite Manual`](https://tennis-unified.github.io/vi/elite/basics/Elite Manual/)</small>
-
----
-
-### tiebreak
-
-**Definition:** Score Management, Clutch Points &amp;amp; Tiebreaks Coaching Guide A tactical companion to Mental Game and Pressure Inoculation — those train your nervous system, this trains your decision-making on the scoreboard
-
-<small>📖 Nguồn: [`/vi/advanced/basics/Score-Management-Clutch-Points-and-Tiebreaks-Coaching-Guide`](https://tennis-unified.github.io/vi/advanced/basics/Score-Management-Clutch-Points-and-Tiebreaks-Coaching-Guide/)</small>
-
----
-
-### unforced error
-
-**Định nghĩa:** * * 1) Tránh mắc nhiều lỗi (unforced errors) thay vì chơi mạo hiểm để ăn điểm ở những cú đánh khó
-
-**Giải thích bằng tiếng Việt:**
-
-* * 1) Tránh mắc nhiều lỗi (unforced errors) thay vì chơi mạo hiểm để ăn điểm ở những cú đánh khó
-
-<small>📖 Nguồn: [`/vi/blog/cach-khac-phuc-cac-loi-co-ban-trong`](https://tennis-unified.github.io/vi/blog/cach-khac-phuc-cac-loi-co-ban-trong/)</small>
-
----
-
-### winner
-
-**Definition:** Build — a neutral rally ball; your job is to construct advantage, not force a winner
-
-<small>📖 Nguồn: [`/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection`](https://tennis-unified.github.io/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection/)</small>
-
----
-
-## Huấn luyện thể chất {#cat-Training}
-
-*2 thuật ngữ*
-
-### flexibility
-
-**Definition:** Power will be generated from flexibility, from one movement leading effortlessly into the next, and from releasing all this stored up energy in the form of pronation, which we will learn about
-
-<small>📖 Nguồn: [`/vi/blog/42-serve-from-hi-techtenniscom`](https://tennis-unified.github.io/vi/blog/42-serve-from-hi-techtenniscom/)</small>
-
----
-
-### mobility
-
-**Định nghĩa:** Trong ngành nghiên cứu cơ năng học (kinesiology), &quot;stability&quot; và &quot;mobility&quot; có nghĩa như
-
-**Giải thích bằng tiếng Việt:**
-
-Trong ngành nghiên cứu cơ năng học (kinesiology), &quot;stability&quot; và &quot;mobility&quot; có nghĩa như
-
-<small>📖 Nguồn: [`/vi/blog/80-cach-su-dung-cac-khop-trong-co-khi`](https://tennis-unified.github.io/vi/blog/80-cach-su-dung-cac-khop-trong-co-khi/)</small>
-
----
-
+              <article class="md-content__inner md-typeset lexicon-page">
+<h1 id="bilingual-tennis-lexicon">Bilingual Tennis Lexicon (English ↔ Tiếng Việt)</h1>
+
+<p><strong>125 standardized tennis and sports science terms</strong> across biomechanics, grip bevels, spins, footwork, tactics, and string physics — extracted from the library's 2,647 Vietnamese articles. Each term includes definitions and a direct source link to the originating article.</p>
+
+<div class="lexicon-toolbar">
+  <input type="text" id="lexicon-search" placeholder="🔍 Tìm kiếm / Search terms..." autocomplete="off">
+  <select id="lexicon-filter">
+    <option value="all">Tất cả danh mục / All categories</option>
+    <option value="cat-biomechanics">Biomechanics — Sinh học Cơ học</option>
+    <option value="cat-anatomy">Anatomy — Giải phẫu học</option>
+    <option value="cat-strokes">Strokes — Cú đánh</option>
+    <option value="cat-technique">Technique — Kỹ thuật</option>
+    <option value="cat-grip--bevels">Grip & Bevels — Cách cầm vợt</option>
+    <option value="cat-footwork">Footwork — Di chuyển</option>
+    <option value="cat-strategy">Strategy — Chiến thuật</option>
+    <option value="cat-mental-game">Mental Game — Tâm lý</option>
+    <option value="cat-equipment">Equipment — Trang thiết bị</option>
+    <option value="cat-court--surface">Court & Surface — Sân</option>
+    <option value="cat-scoring">Scoring — Tính điểm</option>
+    <option value="cat-training">Training — Huấn luyện</option>
+  </select>
+  <span id="lexicon-count" class="lexicon-counter">Showing 125 / 125 terms</span>
+</div>
+
+<div class="lexicon-toc"><strong>Danh mục / Categories:</strong><ul>
+  <li><a href="#cat-biomechanics" data-cat="cat-biomechanics">Biomechanics <small>(Sinh học Cơ học)</small></a> — <span class="term-count">28</span></li>
+  <li><a href="#cat-anatomy" data-cat="cat-anatomy">Anatomy <small>(Giải phẫu học)</small></a> — <span class="term-count">20</span></li>
+  <li><a href="#cat-strokes" data-cat="cat-strokes">Strokes <small>(Cú đánh)</small></a> — <span class="term-count">16</span></li>
+  <li><a href="#cat-technique" data-cat="cat-technique">Technique <small>(Kỹ thuật)</small></a> — <span class="term-count">9</span></li>
+  <li><a href="#cat-grip--bevels" data-cat="cat-grip--bevels">Grip & Bevels <small>(Cách cầm vợt)</small></a> — <span class="term-count">5</span></li>
+  <li><a href="#cat-footwork" data-cat="cat-footwork">Footwork <small>(Di chuyển)</small></a> — <span class="term-count">3</span></li>
+  <li><a href="#cat-strategy" data-cat="cat-strategy">Strategy <small>(Chiến thuật)</small></a> — <span class="term-count">12</span></li>
+  <li><a href="#cat-mental-game" data-cat="cat-mental-game">Mental Game <small>(Tâm lý)</small></a> — <span class="term-count">7</span></li>
+  <li><a href="#cat-equipment" data-cat="cat-equipment">Equipment <small>(Trang thiết bị)</small></a> — <span class="term-count">4</span></li>
+  <li><a href="#cat-court--surface" data-cat="cat-court--surface">Court & Surface <small>(Sân)</small></a> — <span class="term-count">7</span></li>
+  <li><a href="#cat-scoring" data-cat="cat-scoring">Scoring <small>(Tính điểm)</small></a> — <span class="term-count">12</span></li>
+  <li><a href="#cat-training" data-cat="cat-training">Training <small>(Huấn luyện)</small></a> — <span class="term-count">2</span></li>
+</ul></div>
+
+<h2 id="cat-biomechanics" data-cat="cat-biomechanics">Biomechanics — Sinh học Cơ học <span class="lexicon-count">(28 terms)</span></h2>
+
+<details class="lexicon-term" data-term="angular momentum" data-cat="cat-biomechanics">
+  <summary><strong>angular momentum</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Mô men động lượng góc (L = I×ω) là đặc trưng cho chuyển động quay, phụ thuộc vào mô men quán tính và vận tốc góc của vợt khi swing</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/">vi/blog</a></p>
+</details>
+<details class="lexicon-term" data-term="biomechanical" data-cat="cat-biomechanics">
+  <summary><strong>biomechanical</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> 84 - Cơ Sinh Học trong giao bóng và đỡ giao bóng Download the presentation file from: Biomechanical in Serve and Return of Serve</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/84-co-sinh-hoc-trong-giao-bong-va-o/">vi/blog/84-co-sinh-hoc-trong-giao-bong-va-o</a></p>
+</details>
+<details class="lexicon-term" data-term="biomechanics" data-cat="cat-biomechanics">
+  <summary><strong>biomechanics</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Cơ sinh học (biomechanics) là ngành khoa học ứng dụng nguyên lý cơ học vào hệ thống sinh học - trong tennis, nghiên cứu cách cơ thể tạo lực và truyền lực trong cú đánh</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/">vi/advanced</a></p>
+</details>
+<details class="lexicon-term" data-term="centrifugal force" data-cat="cat-biomechanics">
+  <summary><strong>centrifugal force</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Lực ly tâm là lực xuất hiện khi vợt chuyển động theo quỹ đạo tròn, đẩy vợt ra ngoài và tăng tốc độ đầu vợt</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/fundamentals/footwork/the-hitting-stance/">vi/fundamentals/footwork/the-hitting-stance</a></p>
+</details>
+<details class="lexicon-term" data-term="core stability" data-cat="cat-biomechanics">
+  <summary><strong>core stability</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Sự ổn định phần lõi (core stability) là khả năng kiểm soát và ổn định vùng thân mình (bụng, lưng dưới, hông) trong mọi chuyển động tennis</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/foundation/basics/Injury-Prevention-and-Joint-Health-Coaching-Guide/">vi/foundation/basics/Injury-Prevention-and-Joint-Health-Coaching-Guide</a></p>
+</details>
+<details class="lexicon-term" data-term="elastic energy" data-cat="cat-biomechanics">
+  <summary><strong>elastic energy</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Năng lượng đàn hồi là năng lượng được lưu trữ trong gân cơ khi bị kéo giãn, được giải phóng trong pha co rút để tạo lực đánh mạnh hơn</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/deep-dives/Reactive-Strength-and-the-Stretch-Shortening-Cycle-for-the-Split-Step/">vi/advanced/deep-dives/Reactive-Strength-and-the-Stretch-Shortening-Cycle-for-the-Split-Step</a></p>
+</details>
+<details class="lexicon-term" data-term="force production" data-cat="cat-biomechanics">
+  <summary><strong>force production</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Sản sinh lực là quá trình tạo lực thông qua chuỗi động học từ chân lên vai đến cánh tay - khởi đầu từ lực phản ứng mặt đất</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/the-forehand-press-slot-from-fault/">vi/blog/the-forehand-press-slot-from-fault</a></p>
+</details>
+<details class="lexicon-term" data-term="force transfer" data-cat="cat-biomechanics">
+  <summary><strong>force transfer</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Truyền lực là quá trình lực truyền qua các khớp xương theo chuỗi động học - cho phép cú đánh mạnh hơn so với lực của riêng cánh tay</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/tennis-technical-reference/forehand/one-handed-backhand-counter-balance/">vi/tennis-technical-reference/forehand/one-handed-backhand-counter-balance</a></p>
+</details>
+<details class="lexicon-term" data-term="ground reaction force" data-cat="cat-biomechanics">
+  <summary><strong>ground reaction force</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Lực phản ứng mặt đất (GRF) là lực do mặt sân tác dụng lên chân người chơi khi đẩy xuống - nguồn lực khởi đầu của cú đánh mạnh</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/fundamentals/famous-coaches/optimize-your-technique-part-1/">vi/fundamentals/famous-coaches/optimize-your-technique-part-1</a></p>
+</details>
+<details class="lexicon-term" data-term="hip rotation" data-cat="cat-biomechanics">
+  <summary><strong>hip rotation</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Xoay hông là chuyển động xoay của phần hông, nguồn năng lượng chính trong cú đánh tennis mạnh mẽ</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/coach-video-library/sly-black/">vi/coach-video-library/sly-black</a></p>
+</details>
+<details class="lexicon-term" data-term="kinesthetic" data-cat="cat-biomechanics">
+  <summary><strong>kinesthetic</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Definition:</strong> Players learn verbally, visually, and kinesthetically</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/fundamentals/classic-lessons/the-keys-to-great-lessons/">vi/fundamentals/classic-lessons/the-keys-to-great-lessons</a></p>
+</details>
+<details class="lexicon-term" data-term="kinetic chain" data-cat="cat-biomechanics">
+  <summary><strong>kinetic chain</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Chuỗi động học là chuỗi liên kết các bộ phận cơ thể truyền lực từ chân lên cánh tay trong cú đánh: chân → đầu gối → hông → thân → vai → cánh tay → vợt → bóng</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/biomechanics-neurology/">vi/biomechanics-neurology</a></p>
+</details>
+<details class="lexicon-term" data-term="kinetic energy" data-cat="cat-biomechanics">
+  <summary><strong>kinetic energy</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Động năng là năng lượng của chuyển động - phụ thuộc vào khối lượng và bình phương vận tốc của vợt khi tiếp xúc bóng (vợt nhẹ di chuyển nhanh = động năng cao)</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/tennis-technical-reference/fault-tolerant-tennis/">vi/tennis-technical-reference/fault-tolerant-tennis</a></p>
+</details>
+<details class="lexicon-term" data-term="leverage" data-cat="cat-biomechanics">
+  <summary><strong>leverage</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Đòn bẩy là lợi thế cơ học khi sử dụng chiều dài cánh tay đòn và điểm tựa để tạo lực đánh mạnh hơn với cùng lượng năng lượng</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/">vi/blog</a></p>
+</details>
+<details class="lexicon-term" data-term="momentum" data-cat="cat-biomechanics">
+  <summary><strong>momentum</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Động lượng (p = m×v) là tích khối lượng và vận tốc - trong tennis, động lượng của vợt tại contact point quyết định lực đánh và độ sâu bóng</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/basics/Score-Management-Clutch-Points-and-Tiebreaks-Coaching-Guide/">vi/advanced/basics/Score-Management-Clutch-Points-and-Tiebreaks-Coaching-Guide</a></p>
+</details>
+<details class="lexicon-term" data-term="potential energy" data-cat="cat-biomechanics">
+  <summary><strong>potential energy</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Thế năng là năng lượng được lưu trữ - như vợt được nâng lên cao ở vị trí chuẩn bị, sẵn sàng chuyển thành động năng khi vung xuống</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/48-serve-from-hi-techtenniscom-lesson-2/">vi/blog/48-serve-from-hi-techtenniscom-lesson-2</a></p>
+</details>
+<details class="lexicon-term" data-term="pronation" data-cat="cat-biomechanics">
+  <summary><strong>pronation</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Xoay trong (pronation) là chuyển động xoay cẳng tay vào trong khi tiếp xúc bóng, tạo topspin và lực đánh mạnh</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/">vi/blog</a></p>
+</details>
+<details class="lexicon-term" data-term="proprioception" data-cat="cat-biomechanics">
+  <summary><strong>proprioception</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Cảm giác sâu (proprioception) là khả năng cơ thể nhận biết vị trí và trạng thái của các bộ phận mà không cần nhìn - rất quan trọng cho việc điều chỉnh vị trí trong split-step và recovery</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/deep-dives/Head Position &amp; Vestibular/">vi/advanced/deep-dives/Head Position &amp; Vestibular</a></p>
+</details>
+<details class="lexicon-term" data-term="shoulder rotation" data-cat="cat-biomechanics">
+  <summary><strong>shoulder rotation</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Xoay vai là chuyển động xoay của vai trong cú đánh, tạo năng lượng xoáy và truyền lực qua cánh tay</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/42-serve-from-hi-techtenniscom_17/">vi/blog/42-serve-from-hi-techtenniscom_17</a></p>
+</details>
+<details class="lexicon-term" data-term="shoulder-hip separation" data-cat="cat-biomechanics">
+  <summary><strong>shoulder-hip separation</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Tách vai-hông là góc xoay giữa vai và hông trong giai đoạn chuẩn bị, tạo năng lượng xoáy được truyền qua chuỗi động học</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/tennis-technical-reference/gemini-notebooks/one-handed-backhand-stan-wawrinka-rotational-violence/">vi/tennis-technical-reference/gemini-notebooks/one-handed-backhand-stan-wawrinka-rotational-violence</a></p>
+</details>
+<details class="lexicon-term" data-term="ssc" data-cat="cat-biomechanics">
+  <summary><strong>SSC</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> SSC viết tắt của Stretch-Shortening Cycle - chu kỳ co-giãn, cơ chế quan trọng trong split-step và phát lực</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection/">vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection</a></p>
+</details>
+<details class="lexicon-term" data-term="stretch reflex" data-cat="cat-biomechanics">
+  <summary><strong>stretch reflex</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Phản xạ kéo giãn (stretch reflex) là cơ chế cơ bắt tự co lại khi bị kéo giãn nhanh, giúp tận dụng năng lượng đàn hồi để tạo lực đánh mạnh hơn</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/tennis-technical-reference/fault-tolerant-tennis/">vi/tennis-technical-reference/fault-tolerant-tennis</a></p>
+</details>
+<details class="lexicon-term" data-term="stretch-shortening cycle" data-cat="cat-biomechanics">
+  <summary><strong>stretch-shortening cycle</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Chu kỳ co-giãn (SSC) là cơ chế gân-cơ được kéo giãn nhanh rồi co ngắn ngay, tận dụng năng lượng đàn hồi để tạo lực đánh mạnh hơn co thường</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/deep-dives/Reactive-Strength-and-the-Stretch-Shortening-Cycle-for-the-Split-Step/">vi/advanced/deep-dives/Reactive-Strength-and-the-Stretch-Shortening-Cycle-for-the-Split-Step</a></p>
+</details>
+<details class="lexicon-term" data-term="supination" data-cat="cat-biomechanics">
+  <summary><strong>supination</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Xoay ngoài (supination) là chuyển động xoay cẳng tay ra ngoài, tạo slice hoặc tăng lực trong cú serve và overhead</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/42-serve-from-hi-techtenniscom_17/">vi/blog/42-serve-from-hi-techtenniscom_17</a></p>
+</details>
+<details class="lexicon-term" data-term="torque" data-cat="cat-biomechanics">
+  <summary><strong>torque</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Mô men lực (torque = F×r) là lực xoắn tạo chuyển động quay - ví dụ lực xoay cẳng tay khi pronation tạo topspin</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/51-serve-from-hi-techtenniscom-lesson-5/">vi/blog/51-serve-from-hi-techtenniscom-lesson-5</a></p>
+</details>
+<details class="lexicon-term" data-term="trunk rotation" data-cat="cat-biomechanics">
+  <summary><strong>trunk rotation</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> Xoay thân là chuyển động xoay của phần thân giữa, truyền lực từ hông lên vai và cánh tay trong cú đánh</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/biomechanics-neurology/">vi/biomechanics-neurology</a></p>
+</details>
+<details class="lexicon-term" data-term="x-factor" data-cat="cat-biomechanics">
+  <summary><strong>X-factor</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> X-Factor là góc xoay giữa đường vai và đường hông khi chuẩn bị - góc càng lớn càng nhiều năng lượng xoáy được tạo ra</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/">vi/advanced</a></p>
+</details>
+<details class="lexicon-term" data-term="x-factor stretch" data-cat="cat-biomechanics">
+  <summary><strong>X-factor stretch</strong> <span class="lexicon-cat-badge">Biomechanics</span></summary>
+  <p><strong>Định nghĩa:</strong> X-Factor stretch là sự xoay ngược giữa vai và hông trong giai đoạn chuẩn bị, tạo góc xoắn tích lũy năng lượng đàn hồi cho cú đánh mạnh</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/tennis-technical-reference/footwork/forehand-stance-selection/">vi/tennis-technical-reference/footwork/forehand-stance-selection</a></p>
+</details>
+
+<h2 id="cat-anatomy" data-cat="cat-anatomy">Anatomy — Giải phẫu học <span class="lexicon-count">(20 terms)</span></h2>
+
+<details class="lexicon-term" data-term="agonist" data-cat="cat-anatomy">
+  <summary><strong>agonist</strong> <span class="lexicon-cat-badge">Anatomy</span></summary>
+  <p><strong>Definition:</strong> Shaking fists at opponents: boorish, antagonistic, wrong</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/fundamentals/mental-game/breaking-down-your-opponent-with-attitude/">vi/fundamentals/mental-game/breaking-down-your-opponent-with-attitude</a></p>
+</details>
+<details class="lexicon-term" data-term="ankle" data-cat="cat-anatomy">
+  <summary><strong>ankle</strong> <span class="lexicon-cat-badge">Anatomy</span></summary>
+  <p><strong>Definition:</strong> Action Steps Introduce basic plyometric progressions (ankle hops, low box jumps with a fast ground-contact cue) 1-2x/week, focused explicitly on minimizing ground-contact time, not maximizing jump height</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/deep-dives/Reactive-Strength-and-the-Stretch-Shortening-Cycle-for-the-Split-Step/">vi/advanced/deep-dives/Reactive-Strength-and-the-Stretch-Shortening-Cycle-for-the-Split-Step</a></p>
+</details>
+<details class="lexicon-term" data-term="antagonist" data-cat="cat-anatomy">
+  <summary><strong>antagonist</strong> <span class="lexicon-cat-badge">Anatomy</span></summary>
+  <p><strong>Definition:</strong> Shaking fists at opponents: boorish, antagonistic, wrong</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/fundamentals/mental-game/breaking-down-your-opponent-with-attitude/">vi/fundamentals/mental-game/breaking-down-your-opponent-with-attitude</a></p>
+</details>
+<details class="lexicon-term" data-term="core" data-cat="cat-anatomy">
+  <summary><strong>core</strong> <span class="lexicon-cat-badge">Anatomy</span></summary>
+  <p><strong>Definition:</strong> Core Concepts Signals that a plan has stopped working</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/basics/In-Match-Tactical-Adaptation-Coaching-Guide/">vi/advanced/basics/In-Match-Tactical-Adaptation-Coaching-Guide</a></p>
+</details>
+<details class="lexicon-term" data-term="deltoid" data-cat="cat-anatomy">
+  <summary><strong>deltoid</strong> <span class="lexicon-cat-badge">Anatomy</span></summary>
+  <p><strong>Definition:</strong> Your deltoid and rotator cuff muscles should stay relaxed — they&#x27;re holding your arm in position, not pushing anything</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/foundation/basics/Forehand/Khoa Vai Thuc Hu Axis/">vi/foundation/basics/Forehand/Khoa Vai Thuc Hu Axis</a></p>
+</details>
+<details class="lexicon-term" data-term="elbow" data-cat="cat-anatomy">
+  <summary><strong>elbow</strong> <span class="lexicon-cat-badge">Anatomy</span></summary>
+  <p><strong>Definition:</strong> It is transmitted through the body: Ground &gt; Feet &gt; Knees &gt; Hips &gt; Trunk &gt; Shoulders &gt; Elbow &gt; Wrist &gt; Racquet &gt; Ball Each link adds speed (the summation of speeds principle )</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/biomechanics-neurology/">vi/biomechanics-neurology</a></p>
+</details>
+<details class="lexicon-term" data-term="gluteal" data-cat="cat-anatomy">
+  <summary><strong>gluteal</strong> <span class="lexicon-cat-badge">Anatomy</span></summary>
+  <p><strong>Definition:</strong> Different lateral movements are facilitated by different individual gluteal muscles, but each is involved in some sort of straightening at the hip</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/tennis-technical-reference/fault-tolerant-tennis/">vi/tennis-technical-reference/fault-tolerant-tennis</a></p>
+</details>
+<details class="lexicon-term" data-term="hamstring" data-cat="cat-anatomy">
+  <summary><strong>hamstring</strong> <span class="lexicon-cat-badge">Anatomy</span></summary>
+  <p><strong>Definition:</strong> The athlete is slightly bent over via hinging at the the hips, and the posterior chain muscles (the glutes, hamstrings, and lower back) are lightly loaded and ready to facilitate explosive movements in any direction</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/63-know-this-myth-series-bronze-bend/">vi/blog/63-know-this-myth-series-bronze-bend</a></p>
+</details>
+<details class="lexicon-term" data-term="hip" data-cat="cat-anatomy">
+  <summary><strong>hip</strong> <span class="lexicon-cat-badge">Anatomy</span></summary>
+  <p><strong>Definition:</strong> Every forehand, every serve, every split-step is a kinetic chain: ground &gt; feet &gt; knees &gt; hips &gt; trunk &gt; shoulders &gt; arm &gt; racquet &gt; ball</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/biomechanics-neurology/">vi/biomechanics-neurology</a></p>
+</details>
+<details class="lexicon-term" data-term="knee" data-cat="cat-anatomy">
+  <summary><strong>knee</strong> <span class="lexicon-cat-badge">Anatomy</span></summary>
+  <p><strong>Definition:</strong> They&#x27;re the very first sensors to fire the instant you tilt, turn, or move, and everything downstream of that — your eyes, your brain&#x27;s whole sense of where your body is in space, even whether your knees bend or lock — depends on what these sensors report</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/deep-dives/Head Position &amp; Vestibular/">vi/advanced/deep-dives/Head Position &amp; Vestibular</a></p>
+</details>
+<details class="lexicon-term" data-term="latissimus" data-cat="cat-anatomy">
+  <summary><strong>latissimus</strong> <span class="lexicon-cat-badge">Anatomy</span></summary>
+  <p><strong>Definition:</strong> EMG (% MVIC): pectoralis major 115% , subscapularis 113% , latissimus dorsi 57% , serratus anterior 74% 6</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/reports/tier-1-high-value-gaps/">vi/reports/tier-1-high-value-gaps</a></p>
+</details>
+<details class="lexicon-term" data-term="lumbar" data-cat="cat-anatomy">
+  <summary><strong>lumbar</strong> <span class="lexicon-cat-badge">Anatomy</span></summary>
+  <p><strong>Definition:</strong> When most coaches say “bend your knees,” they are trying to cue their student into some form of the basic athletic position: the hips are low and back while the lumbar spine is neutral</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/63-know-this-myth-series-bronze-bend/">vi/blog/63-know-this-myth-series-bronze-bend</a></p>
+</details>
+<details class="lexicon-term" data-term="pectoralis" data-cat="cat-anatomy">
+  <summary><strong>pectoralis</strong> <span class="lexicon-cat-badge">Anatomy</span></summary>
+  <p><strong>Definition:</strong> EMG (% MVIC): pectoralis major 115% , subscapularis 113% , latissimus dorsi 57% , serratus anterior 74% 6</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/reports/tier-1-high-value-gaps/">vi/reports/tier-1-high-value-gaps</a></p>
+</details>
+<details class="lexicon-term" data-term="rotator cuff" data-cat="cat-anatomy">
+  <summary><strong>rotator cuff</strong> <span class="lexicon-cat-badge">Anatomy</span></summary>
+  <p><strong>Định nghĩa:</strong> Vòng xoay (rotator cuff) là nhóm 4 gân cơ ở vai (supraspinatus, infraspinatus, teres minor, subscapularis) giúp ổn định và xoay khớp vai, rất quan trọng cho serve và overhead</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/80-cach-su-dung-cac-khop-trong-co-khi/">vi/blog/80-cach-su-dung-cac-khop-trong-co-khi</a></p>
+</details>
+<details class="lexicon-term" data-term="scapula" data-cat="cat-anatomy">
+  <summary><strong>scapula</strong> <span class="lexicon-cat-badge">Anatomy</span></summary>
+  <p><strong>Definition:</strong> Scapula Stability Provides a stable base for the shoulder</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/80-cach-su-dung-cac-khop-trong-co-khi/">vi/blog/80-cach-su-dung-cac-khop-trong-co-khi</a></p>
+</details>
+<details class="lexicon-term" data-term="scapular" data-cat="cat-anatomy">
+  <summary><strong>scapular</strong> <span class="lexicon-cat-badge">Anatomy</span></summary>
+  <p><strong>Definition:</strong> Overuse from serving with poor scapular loading, or from compensating for a weak kinetic chain by muscling the ball with the shoulder alone</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/foundation/basics/Injury-Prevention-and-Joint-Health-Coaching-Guide/">vi/foundation/basics/Injury-Prevention-and-Joint-Health-Coaching-Guide</a></p>
+</details>
+<details class="lexicon-term" data-term="shoulder" data-cat="cat-anatomy">
+  <summary><strong>shoulder</strong> <span class="lexicon-cat-badge">Anatomy</span></summary>
+  <p><strong>Definition:</strong> A neutral position — ears stacked over shoulders, nose level — keeps the whole vestibular system quiet; your otoliths simply report &quot;up is up,&quot; your eye-stabilizing reflex runs at normal gain, and This genuinely your best balance state</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/deep-dives/Head Position &amp; Vestibular/">vi/advanced/deep-dives/Head Position &amp; Vestibular</a></p>
+</details>
+<details class="lexicon-term" data-term="stabilizer" data-cat="cat-anatomy">
+  <summary><strong>stabilizer</strong> <span class="lexicon-cat-badge">Anatomy</span></summary>
+  <p><strong>Definition:</strong> Thumb (the side of the thumb): the STABILIZER</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/foundation/basics/Continental Grip/">vi/foundation/basics/Continental Grip</a></p>
+</details>
+<details class="lexicon-term" data-term="trapezius" data-cat="cat-anatomy">
+  <summary><strong>trapezius</strong> <span class="lexicon-cat-badge">Anatomy</span></summary>
+  <p><strong>Định nghĩa:</strong> Chuỗi Vai-Khuyu (Shoulder-Elbow Chain) Chuỗi này chạy từ mặt ngoài cẳng tay đến khuyu và tiếp tục đến mặt ngoài cánh tay trên với septa bên quan trọng kết nối với fascia cơ delta, kéo dài từ phần trên của cơ thang (trapezius) đến cổ</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/tennis-technical-reference/fitness/fascia-chains-and-anatomy-slings-in-tennis/">vi/tennis-technical-reference/fitness/fascia-chains-and-anatomy-slings-in-tennis</a></p>
+</details>
+<details class="lexicon-term" data-term="wrist" data-cat="cat-anatomy">
+  <summary><strong>wrist</strong> <span class="lexicon-cat-badge">Anatomy</span></summary>
+  <p><strong>Definition:</strong> Shoulders, arms/wrists/hands, trunk/spine, hips/thighs, knees, ankles/feet</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/biomechanics-neurology/">vi/biomechanics-neurology</a></p>
+</details>
+
+<h2 id="cat-strokes" data-cat="cat-strokes">Strokes — Cú đánh <span class="lexicon-count">(16 terms)</span></h2>
+
+<details class="lexicon-term" data-term="approach shot" data-cat="cat-strokes">
+  <summary><strong>approach shot</strong> <span class="lexicon-cat-badge">Strokes</span></summary>
+  <p><strong>Định nghĩa:</strong> , từ cơ bản tới nâng cao như slde, kick serve, approach shot, offensive lob, half-volley, outside-in groundstroke, drop shot, angled passing shot, skyhook, và kèm theo nhiều hình vẽ</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/7-gioi-thieu-sach-hay-nhung-cuon-sach/">vi/blog/7-gioi-thieu-sach-hay-nhung-cuon-sach</a></p>
+</details>
+<details class="lexicon-term" data-term="backhand" data-cat="cat-strokes">
+  <summary><strong>backhand</strong> <span class="lexicon-cat-badge">Strokes</span></summary>
+  <p><strong>Định nghĩa:</strong> Backhand (trái tay) là cú đánh ở phía trái của người thuận tay, có thể đánh một tay hoặc hai tay, mỗi kiểu có ưu nhược điểm riêng</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/basics/Scouting-and-Reading-the-Opponent-Coaching-Guide/">vi/advanced/basics/Scouting-and-Reading-the-Opponent-Coaching-Guide</a></p>
+</details>
+<details class="lexicon-term" data-term="drop shot" data-cat="cat-strokes">
+  <summary><strong>drop shot</strong> <span class="lexicon-cat-badge">Strokes</span></summary>
+  <p><strong>Định nghĩa:</strong> Chẳng hạn bạn không giỏi cú volley mà đối phương luôn đánh cú bỏ nhỏ (drop shot) bắt bạn phải chạy lên lưới rồi gài bóng vào chân bạn hay tiếp tục một cú đánh bổng (lob) ra sau lưng bạn</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/5-chien-thuat-tactic-trong-mot-cuoc/">vi/blog/5-chien-thuat-tactic-trong-mot-cuoc</a></p>
+</details>
+<details class="lexicon-term" data-term="first serve" data-cat="cat-strokes">
+  <summary><strong>first serve</strong> <span class="lexicon-cat-badge">Strokes</span></summary>
+  <p><strong>Definition:</strong> On break points as the server, many players benefit from prioritizing a reliable, high-percentage first serve placement over a low-percentage big first serve — the value of simply starting the point in control outweighs the marginal benefit of an ace attempt</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/basics/Score-Management-Clutch-Points-and-Tiebreaks-Coaching-Guide/">vi/advanced/basics/Score-Management-Clutch-Points-and-Tiebreaks-Coaching-Guide</a></p>
+</details>
+<details class="lexicon-term" data-term="forehand" data-cat="cat-strokes">
+  <summary><strong>forehand</strong> <span class="lexicon-cat-badge">Strokes</span></summary>
+  <p><strong>Định nghĩa:</strong> Forehand (thuận tay) là cú đánh chính ở phía thuận của người chơi, thường là cú đánh mạnh nhất và được sử dụng nhiều nhất</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection/">vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection</a></p>
+</details>
+<details class="lexicon-term" data-term="half-volley" data-cat="cat-strokes">
+  <summary><strong>half-volley</strong> <span class="lexicon-cat-badge">Strokes</span></summary>
+  <p><strong>Định nghĩa:</strong> , từ cơ bản tới nâng cao như slde, kick serve, approach shot, offensive lob, half-volley, outside-in groundstroke, drop shot, angled passing shot, skyhook, và kèm theo nhiều hình vẽ</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/7-gioi-thieu-sach-hay-nhung-cuon-sach/">vi/blog/7-gioi-thieu-sach-hay-nhung-cuon-sach</a></p>
+</details>
+<details class="lexicon-term" data-term="kick serve" data-cat="cat-strokes">
+  <summary><strong>kick serve</strong> <span class="lexicon-cat-badge">Strokes</span></summary>
+  <p><strong>Definition:</strong> Why This Matters You&#x27;ve probably had the experience of returning a moderate-speed kick serve worse than a serve that was objectively faster</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/deep-dives/Returning-Heavy-Spin-and-Fast-Serves-Saccadic-Blindness/">vi/advanced/deep-dives/Returning-Heavy-Spin-and-Fast-Serves-Saccadic-Blindness</a></p>
+</details>
+<details class="lexicon-term" data-term="lob" data-cat="cat-strokes">
+  <summary><strong>lob</strong> <span class="lexicon-cat-badge">Strokes</span></summary>
+  <p><strong>Định nghĩa:</strong> Chẳng hạn bạn không giỏi cú volley mà đối phương luôn đánh cú bỏ nhỏ (drop shot) bắt bạn phải chạy lên lưới rồi gài bóng vào chân bạn hay tiếp tục một cú đánh bổng (lob) ra sau lưng bạn</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/5-chien-thuat-tactic-trong-mot-cuoc/">vi/blog/5-chien-thuat-tactic-trong-mot-cuoc</a></p>
+</details>
+<details class="lexicon-term" data-term="one-handed backhand" data-cat="cat-strokes">
+  <summary><strong>one-handed backhand</strong> <span class="lexicon-cat-badge">Strokes</span></summary>
+  <p><strong>Definition:</strong> These differences are especially important to understand for players who hit the one-handed backhand drive</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/67-fundamental-1-2-rhythm-backhand/">vi/blog/67-fundamental-1-2-rhythm-backhand</a></p>
+</details>
+<details class="lexicon-term" data-term="overhead" data-cat="cat-strokes">
+  <summary><strong>overhead</strong> <span class="lexicon-cat-badge">Strokes</span></summary>
+  <p><strong>Definition:</strong> A backward tilt — chin up, nose toward the sky — tells your otoliths you&#x27;re pitching backward and shifts your visual field skyward; it&#x27;s rare but it matters on high balls and overheads</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/deep-dives/Head Position &amp; Vestibular/">vi/advanced/deep-dives/Head Position &amp; Vestibular</a></p>
+</details>
+<details class="lexicon-term" data-term="return of serve" data-cat="cat-strokes">
+  <summary><strong>return of serve</strong> <span class="lexicon-cat-badge">Strokes</span></summary>
+  <p><strong>Định nghĩa:</strong> 84 - Cơ Sinh Học trong giao bóng và đỡ giao bóng Download the presentation file from: Biomechanical in Serve and Return of Serve</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/84-co-sinh-hoc-trong-giao-bong-va-o/">vi/blog/84-co-sinh-hoc-trong-giao-bong-va-o</a></p>
+</details>
+<details class="lexicon-term" data-term="second serve" data-cat="cat-strokes">
+  <summary><strong>second serve</strong> <span class="lexicon-cat-badge">Strokes</span></summary>
+  <p><strong>Definition:</strong> Before or early in a match, identify one clear weakness (weak second serve, poor movement to the ad-side backhand corner, discomfort at net) and build your shot selection around exploiting it consistently, rather than playing &quot;your game&quot; regardless of opponent</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection/">vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection</a></p>
+</details>
+<details class="lexicon-term" data-term="serve" data-cat="cat-strokes">
+  <summary><strong>serve</strong> <span class="lexicon-cat-badge">Strokes</span></summary>
+  <p><strong>Definition:</strong> On break points as the server, many players benefit from prioritizing a reliable, high-percentage first serve placement over a low-percentage big first serve — the value of simply starting the point in control outweighs the marginal benefit of an ace attempt</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/basics/Score-Management-Clutch-Points-and-Tiebreaks-Coaching-Guide/">vi/advanced/basics/Score-Management-Clutch-Points-and-Tiebreaks-Coaching-Guide</a></p>
+</details>
+<details class="lexicon-term" data-term="slice serve" data-cat="cat-strokes">
+  <summary><strong>slice serve</strong> <span class="lexicon-cat-badge">Strokes</span></summary>
+  <p><strong>Định nghĩa:</strong> Về cơ bản thì cú đập banh từ trên cao giống với cú giao bóng xoáy (slice serve), bạn sẽ đánh vào banh với thân người nghiêng về bên bóng rơi xuống, thí dụ bên phải khi banh rơi xuống phía tay phải của bạn</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/13-bi-quyet-anh-cu-ap-banh-tu-tren-cao/">vi/blog/13-bi-quyet-anh-cu-ap-banh-tu-tren-cao</a></p>
+</details>
+<details class="lexicon-term" data-term="two-handed backhand" data-cat="cat-strokes">
+  <summary><strong>two-handed backhand</strong> <span class="lexicon-cat-badge">Strokes</span></summary>
+  <p><strong>Definition:</strong> 1-2 Rhythm The Single-Handed Backhand Nick Wheatley In the first two articles in this series we have looked at a timing concept called 1-2 Rhythm, first for the forehand and then for the two-handed backhand</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/69-fundamental-1-2-rhythm-single-handed/">vi/blog/69-fundamental-1-2-rhythm-single-handed</a></p>
+</details>
+<details class="lexicon-term" data-term="volley" data-cat="cat-strokes">
+  <summary><strong>volley</strong> <span class="lexicon-cat-badge">Strokes</span></summary>
+  <p><strong>Định nghĩa:</strong> Bí quyết đánh cú volley và trả giao bóng, sao cho banh đi căng, ngọt và không rúc lưới hay bay ra ngoài sân 13</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/">vi/blog</a></p>
+</details>
+
+<h2 id="cat-technique" data-cat="cat-technique">Technique — Kỹ thuật <span class="lexicon-count">(9 terms)</span></h2>
+
+<details class="lexicon-term" data-term="backspin" data-cat="cat-technique">
+  <summary><strong>backspin</strong> <span class="lexicon-cat-badge">Technique</span></summary>
+  <p><strong>Định nghĩa:</strong> Đánh thẳng qua tâm trái banh thì sẽ khiến trái banh bay thẳng và đánh xiên thì sẽ tạo ra trái banh bay xoáy, tùy theo góc mà sẽ có nhiều kiểu đánh khác nhau như đánh xoáy lên thật nặng (heay topspin - banh còng), bạt ngang (topspin drive), đánh xoáy xuống (backspin slide), xoáy ngang (sidespin), v</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/1-mot-cu-anh-banh-se-bao-gom-nhung-yeu/">vi/blog/1-mot-cu-anh-banh-se-bao-gom-nhung-yeu</a></p>
+</details>
+<details class="lexicon-term" data-term="backswing" data-cat="cat-technique">
+  <summary><strong>backswing</strong> <span class="lexicon-cat-badge">Technique</span></summary>
+  <p><strong>Định nghĩa:</strong> Nhiều bạn sử dụng phần tay quá nhiều trong khi dùng vai quá ít, lúc đó khi bạn thực hiện động tác quay người về sau đề tạo động tác quay vợt ra sau (backswing) rất cứng nhắc và không nhịp nhàng</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/cach-khac-phuc-cac-loi-co-ban-trong/">vi/blog/cach-khac-phuc-cac-loi-co-ban-trong</a></p>
+</details>
+<details class="lexicon-term" data-term="contact point" data-cat="cat-technique">
+  <summary><strong>contact point</strong> <span class="lexicon-cat-badge">Technique</span></summary>
+  <p><strong>Definition:</strong> You focus on staying still on the contact point for as long as possible after contact</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/biomechanics-neurology/">vi/biomechanics-neurology</a></p>
+</details>
+<details class="lexicon-term" data-term="flat shot" data-cat="cat-technique">
+  <summary><strong>flat shot</strong> <span class="lexicon-cat-badge">Technique</span></summary>
+  <p><strong>Definition:</strong> The will to strike a high velocity flat shot or a superior rpm topspin shot is also a mental thing</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/fundamentals/classic-lessons/weaponize-your-one-handed-backhand/">vi/fundamentals/classic-lessons/weaponize-your-one-handed-backhand</a></p>
+</details>
+<details class="lexicon-term" data-term="follow-through" data-cat="cat-technique">
+  <summary><strong>follow-through</strong> <span class="lexicon-cat-badge">Technique</span></summary>
+  <p><strong>Definition:</strong> With this explosive downward swing path, the racket head can stay below the hand for the entire course of the follow-through with the racket tip actually pointing straight down at the court at some point in the swing</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/67-fundamental-1-2-rhythm-backhand/">vi/blog/67-fundamental-1-2-rhythm-backhand</a></p>
+</details>
+<details class="lexicon-term" data-term="preparation" data-cat="cat-technique">
+  <summary><strong>preparation</strong> <span class="lexicon-cat-badge">Technique</span></summary>
+  <p><strong>Definition:</strong> Watch the continued path of the racket in the preparation and then the path of the forward swing</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/67-fundamental-1-2-rhythm-backhand/">vi/blog/67-fundamental-1-2-rhythm-backhand</a></p>
+</details>
+<details class="lexicon-term" data-term="slice" data-cat="cat-technique">
+  <summary><strong>slice</strong> <span class="lexicon-cat-badge">Technique</span></summary>
+  <p><strong>Định nghĩa:</strong> Cách dễ dàng nhất để trả bóng xoáy lên là dùng một cú cắt xoáy đi từ trên xuống (slice) và đẩy ra phía trước về chính điểm trái banh xuất phát, nghĩa là nơi đối thủ đứng giao bóng</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/1-mot-cu-anh-banh-se-bao-gom-nhung-yeu/">vi/blog/1-mot-cu-anh-banh-se-bao-gom-nhung-yeu</a></p>
+</details>
+<details class="lexicon-term" data-term="takeback" data-cat="cat-technique">
+  <summary><strong>takeback</strong> <span class="lexicon-cat-badge">Technique</span></summary>
+  <p><strong>Definition:</strong> First, notice Todd&#x27;s unusual takeback style</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/47-serve-from-hi-techtenniscom-lesson-1/">vi/blog/47-serve-from-hi-techtenniscom-lesson-1</a></p>
+</details>
+<details class="lexicon-term" data-term="topspin" data-cat="cat-technique">
+  <summary><strong>topspin</strong> <span class="lexicon-cat-badge">Technique</span></summary>
+  <p><strong>Definition:</strong> A serve with heavy topspin or kick changes trajectory and bounce angle abruptly right around the point where your eyes are most likely mid-saccade after tracking the toss and contact</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/deep-dives/Returning-Heavy-Spin-and-Fast-Serves-Saccadic-Blindness/">vi/advanced/deep-dives/Returning-Heavy-Spin-and-Fast-Serves-Saccadic-Blindness</a></p>
+</details>
+
+<h2 id="cat-grip--bevels" data-cat="cat-grip--bevels">Grip & Bevels — Cách cầm vợt <span class="lexicon-count">(5 terms)</span></h2>
+
+<details class="lexicon-term" data-term="continental grip" data-cat="cat-grip--bevels">
+  <summary><strong>Continental grip</strong> <span class="lexicon-cat-badge">Grip &amp; Bevels</span></summary>
+  <p><strong>Definition:</strong> Tennis Volley Grip When transitioning up to net you will want to grasp the Continental grip</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/76-ultimate-tennis-volley-guide-from/">vi/blog/76-ultimate-tennis-volley-guide-from</a></p>
+</details>
+<details class="lexicon-term" data-term="eastern grip" data-cat="cat-grip--bevels">
+  <summary><strong>Eastern grip</strong> <span class="lexicon-cat-badge">Grip &amp; Bevels</span></summary>
+  <p><strong>Definition:</strong> Instead of an eastern grip (or continental) which puts the hand behind the handle, the modern grips put the handle more under the handle so you can get a powerful upward thrust of the arm</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/modern-forehand-from-hi-techtenniscom_73/">vi/blog/modern-forehand-from-hi-techtenniscom_73</a></p>
+</details>
+<details class="lexicon-term" data-term="grip" data-cat="cat-grip--bevels">
+  <summary><strong>grip</strong> <span class="lexicon-cat-badge">Grip &amp; Bevels</span></summary>
+  <p><strong>Định nghĩa:</strong> Open · Mở 🤚Grip · Cách cầm vợt 4 cards — slingshot, grip types vs shot quality, OK grip drill, palm direction</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/104-thu-vien-hinh-anh-huan-luyen/">vi/blog/104-thu-vien-hinh-anh-huan-luyen</a></p>
+</details>
+<details class="lexicon-term" data-term="semi-western grip" data-cat="cat-grip--bevels">
+  <summary><strong>Semi-Western grip</strong> <span class="lexicon-cat-badge">Grip &amp; Bevels</span></summary>
+  <p><strong>Definition:</strong> A semi-Western grip is based upon leverage and spring from the body while a Continental grip is based upon swing of the racquet and a steady body</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/modern-forehand-from-hi-techtenniscom_76/">vi/blog/modern-forehand-from-hi-techtenniscom_76</a></p>
+</details>
+<details class="lexicon-term" data-term="western grip" data-cat="cat-grip--bevels">
+  <summary><strong>Western grip</strong> <span class="lexicon-cat-badge">Grip &amp; Bevels</span></summary>
+  <p><strong>Definition:</strong> Palm more under the handle and forearm rotated backwards a bit (aided by the semi-western/western grip)</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/modern-forehand-from-hi-techtenniscom_69/">vi/blog/modern-forehand-from-hi-techtenniscom_69</a></p>
+</details>
+
+<h2 id="cat-footwork" data-cat="cat-footwork">Footwork — Di chuyển <span class="lexicon-count">(3 terms)</span></h2>
+
+<details class="lexicon-term" data-term="ready position" data-cat="cat-footwork">
+  <summary><strong>ready position</strong> <span class="lexicon-cat-badge">Footwork</span></summary>
+  <p><strong>Definition:</strong> Tennis Backhand Volley: Returning the Ball Hit at Your Body From the ready position you will bring your hitting elbow up away from your body so that your racquet face is facing the net and out in front of your body’s mid section</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/77-tennis-backhand-volley-ultimate/">vi/blog/77-tennis-backhand-volley-ultimate</a></p>
+</details>
+<details class="lexicon-term" data-term="recovery" data-cat="cat-footwork">
+  <summary><strong>recovery</strong> <span class="lexicon-cat-badge">Footwork</span></summary>
+  <p><strong>Definition:</strong> Hit to both wings and to the body during warm-up and note which shots produce hesitation or poor recovery, not just which look &quot;weaker</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/basics/Scouting-and-Reading-the-Opponent-Coaching-Guide/">vi/advanced/basics/Scouting-and-Reading-the-Opponent-Coaching-Guide</a></p>
+</details>
+<details class="lexicon-term" data-term="split-step" data-cat="cat-footwork">
+  <summary><strong>split-step</strong> <span class="lexicon-cat-badge">Footwork</span></summary>
+  <p><strong>Definition:</strong> Reactive Strength &amp;amp; the Stretch-Shortening Cycle for the Split-Step Why two players with identical reaction times can still explode off the split step at very different speeds</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/deep-dives/Reactive-Strength-and-the-Stretch-Shortening-Cycle-for-the-Split-Step/">vi/advanced/deep-dives/Reactive-Strength-and-the-Stretch-Shortening-Cycle-for-the-Split-Step</a></p>
+</details>
+
+<h2 id="cat-strategy" data-cat="cat-strategy">Strategy — Chiến thuật <span class="lexicon-count">(12 terms)</span></h2>
+
+<details class="lexicon-term" data-term="aggression" data-cat="cat-strategy">
+  <summary><strong>aggression</strong> <span class="lexicon-cat-badge">Strategy</span></summary>
+  <p><strong>Definition:</strong> Standing slightly further back against unfamiliar heavy kick serves gives your visual system more time to complete a second saccade and correct, at the cost of some aggression on the return</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/deep-dives/Returning-Heavy-Spin-and-Fast-Serves-Saccadic-Blindness/">vi/advanced/deep-dives/Returning-Heavy-Spin-and-Fast-Serves-Saccadic-Blindness</a></p>
+</details>
+<details class="lexicon-term" data-term="consistency" data-cat="cat-strategy">
+  <summary><strong>consistency</strong> <span class="lexicon-cat-badge">Strategy</span></summary>
+  <p><strong>Definition:</strong> Neutral — both players are in position; patience and consistency dictate</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection/">vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection</a></p>
+</details>
+<details class="lexicon-term" data-term="cross-court" data-cat="cat-strategy">
+  <summary><strong>cross-court</strong> <span class="lexicon-cat-badge">Strategy</span></summary>
+  <p><strong>Definition:</strong> Compare your recorded rep against a pro reference at the same phase of the swing, at a similar shot type and situation (a pro&#x27;s cross-court rally forehand, not their inside-out winner) — an apples-to-apples comparison is far more useful than comparing your rally shot to a highlight-reel winner</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/elite/basics/Video-and-Self-Analysis-Methodology-Coaching-Guide/">vi/elite/basics/Video-and-Self-Analysis-Methodology-Coaching-Guide</a></p>
+</details>
+<details class="lexicon-term" data-term="defensive" data-cat="cat-strategy">
+  <summary><strong>defensive</strong> <span class="lexicon-cat-badge">Strategy</span></summary>
+  <p><strong>Definition:</strong> Common Mistakes Going for winners from neutral or defensive positions because the shot &quot;felt good,&quot; not because the phase called for it</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection/">vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection</a></p>
+</details>
+<details class="lexicon-term" data-term="down-the-line" data-cat="cat-strategy">
+  <summary><strong>down-the-line</strong> <span class="lexicon-cat-badge">Strategy</span></summary>
+  <p><strong>Định nghĩa:</strong> Sau khi bạn đã bị kéo ra rộng và mất vị trí bởi cú chéo sân, người thuận tay trái có một đường trống để đánh dọc dây (down-the-line) ghi điểm gọn gàng</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/book/chapter-06-the-iron-gate/">vi/book/chapter-06-the-iron-gate</a></p>
+</details>
+<details class="lexicon-term" data-term="inside-in" data-cat="cat-strategy">
+  <summary><strong>inside-in</strong> <span class="lexicon-cat-badge">Strategy</span></summary>
+  <p><strong>Definition:</strong> Then switch this to an inside-in on the next ball</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/fundamentals/strategy/pro-patterns-serve-and-return-diagonals/">vi/fundamentals/strategy/pro-patterns-serve-and-return-diagonals</a></p>
+</details>
+<details class="lexicon-term" data-term="inside-out" data-cat="cat-strategy">
+  <summary><strong>inside-out</strong> <span class="lexicon-cat-badge">Strategy</span></summary>
+  <p><strong>Định nghĩa:</strong> - Chạy vòng qua bên trái rồi đánh trái banh bay vào phía tay phải của mình bằng một cú bạt hay một cú xoáy lên đánh banh còng (topspin inside-out)</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/2-e-tao-luc-va-truyen-luc-co-hieu-qua/">vi/blog/2-e-tao-luc-va-truyen-luc-co-hieu-qua</a></p>
+</details>
+<details class="lexicon-term" data-term="patterns of play" data-cat="cat-strategy">
+  <summary><strong>patterns of play</strong> <span class="lexicon-cat-badge">Strategy</span></summary>
+  <p><strong>Definition:</strong> For coaches, analytics will be used more prominently in working with players and helping them master their best patterns of play on the practice court and at tournaments</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/fundamentals/classic-lessons/future-trends-in-tennis-part-3/">vi/fundamentals/classic-lessons/future-trends-in-tennis-part-3</a></p>
+</details>
+<details class="lexicon-term" data-term="point construction" data-cat="cat-strategy">
+  <summary><strong>point construction</strong> <span class="lexicon-cat-badge">Strategy</span></summary>
+  <p><strong>Definition:</strong> &quot; Tactical Identity Has Changed Shape Traditional players used to be known for one way of playing - elegant point construction, grinding topspin, whatever their signature was</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/tennis-technical-reference/reference-en/tactics/Agentic Strategy/">vi/tennis-technical-reference/reference-en/tactics/Agentic Strategy</a></p>
+</details>
+<details class="lexicon-term" data-term="pressure" data-cat="cat-strategy">
+  <summary><strong>pressure</strong> <span class="lexicon-cat-badge">Strategy</span></summary>
+  <p><strong>Definition:</strong> Wholesale changes under pressure tend to produce worse tennis, not better</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/basics/In-Match-Tactical-Adaptation-Coaching-Guide/">vi/advanced/basics/In-Match-Tactical-Adaptation-Coaching-Guide</a></p>
+</details>
+<details class="lexicon-term" data-term="strategy" data-cat="cat-strategy">
+  <summary><strong>strategy</strong> <span class="lexicon-cat-badge">Strategy</span></summary>
+  <p><strong>Định nghĩa:</strong> Chiến thuật (tactic) trong một cuộc chơi tennis và chiến lược (strategy) để chiến thắng trong một giải tennis và trong suốt quá trình chơi tennis lâu dài</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/">vi/blog</a></p>
+</details>
+<details class="lexicon-term" data-term="tactical" data-cat="cat-strategy">
+  <summary><strong>tactical</strong> <span class="lexicon-cat-badge">Strategy</span></summary>
+  <p><strong>Definition:</strong> In-Match Tactical Adaptation Coaching Guide The follow-up skill to Scouting: what to do when your pre-match plan stops working</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/basics/In-Match-Tactical-Adaptation-Coaching-Guide/">vi/advanced/basics/In-Match-Tactical-Adaptation-Coaching-Guide</a></p>
+</details>
+
+<h2 id="cat-mental-game" data-cat="cat-mental-game">Mental Game — Tâm lý <span class="lexicon-count">(7 terms)</span></h2>
+
+<details class="lexicon-term" data-term="between points" data-cat="cat-mental-game">
+  <summary><strong>between points</strong> <span class="lexicon-cat-badge">Mental Game</span></summary>
+  <p><strong>Định nghĩa:</strong> How the three fit together between points: in the first ten seconds, run your Kình check</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/elite/deep-dives/Choking &amp; Amygdala/">vi/elite/deep-dives/Choking &amp; Amygdala</a></p>
+</details>
+<details class="lexicon-term" data-term="concentration" data-cat="cat-mental-game">
+  <summary><strong>concentration</strong> <span class="lexicon-cat-badge">Mental Game</span></summary>
+  <p><strong>Definition:</strong> Concentrating harder isn&#x27;t actually the answer once you&#x27;re trained enough — concentration becomes the problem when it starts overriding training that&#x27;s already good</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/elite/basics/Elite Manual/">vi/elite/basics/Elite Manual</a></p>
+</details>
+<details class="lexicon-term" data-term="focus" data-cat="cat-mental-game">
+  <summary><strong>focus</strong> <span class="lexicon-cat-badge">Mental Game</span></summary>
+  <p><strong>Definition:</strong> Advanced Deep Dives Focused exploration of specific advanced topics</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/deep-dives/">vi/advanced/deep-dives</a></p>
+</details>
+<details class="lexicon-term" data-term="mental toughness" data-cat="cat-mental-game">
+  <summary><strong>mental toughness</strong> <span class="lexicon-cat-badge">Mental Game</span></summary>
+  <p><strong>Definition:</strong> Insights on Modern Tennis, Technique, and Mental Toughness Watch on YouTube ↗ 5</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/coach-video-library/casey-curtis/">vi/coach-video-library/casey-curtis</a></p>
+</details>
+<details class="lexicon-term" data-term="pre-match routine" data-cat="cat-mental-game">
+  <summary><strong>pre-match routine</strong> <span class="lexicon-cat-badge">Mental Game</span></summary>
+  <p><strong>Định nghĩa:</strong> Pre-Match Routine (Routine Trước Trận): Routine 30 phút trước trận → warm-up, visualization, cue word → não &quot;biết&quot; pattern</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/tennis-technical-reference/fault-tolerant-tennis/the-anxiety-secret-never-choke-again/">vi/tennis-technical-reference/fault-tolerant-tennis/the-anxiety-secret-never-choke-again</a></p>
+</details>
+<details class="lexicon-term" data-term="rituals" data-cat="cat-mental-game">
+  <summary><strong>rituals</strong> <span class="lexicon-cat-badge">Mental Game</span></summary>
+  <p><strong>Definition:</strong> Phase 1 begins after these rituals are complete</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/fundamentals/classic-lessons/1-2-rhythm-the-serve/">vi/fundamentals/classic-lessons/1-2-rhythm-the-serve</a></p>
+</details>
+<details class="lexicon-term" data-term="visualization" data-cat="cat-mental-game">
+  <summary><strong>visualization</strong> <span class="lexicon-cat-badge">Mental Game</span></summary>
+  <p><strong>Định nghĩa:</strong> Chúng ta sẽ đi sâu vào các nguyên lý cốt lõi của Trực quan hóa (Visualization), Cơ chế Định hình trước (Pre-shaping Mechanics) và Thực thi cú đánh (Stroke Execution)</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/94-mang-luoi-kien-thuc-tennis-tennis/">vi/blog/94-mang-luoi-kien-thuc-tennis-tennis</a></p>
+</details>
+
+<h2 id="cat-equipment" data-cat="cat-equipment">Equipment — Trang thiết bị <span class="lexicon-count">(4 terms)</span></h2>
+
+<details class="lexicon-term" data-term="head size" data-cat="cat-equipment">
+  <summary><strong>head size</strong> <span class="lexicon-cat-badge">Equipment</span></summary>
+  <p><strong>Definition:</strong> Read Whitepaper The Wood-to-Graphite Evolutionary Revolution Head size expansion (65 to 100 sq in), polar MOI tripling, and the birth of the modern topspin open stance</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/tennis-technical-reference/gemini-notebooks/">vi/tennis-technical-reference/gemini-notebooks</a></p>
+</details>
+<details class="lexicon-term" data-term="racket" data-cat="cat-equipment">
+  <summary><strong>racket</strong> <span class="lexicon-cat-badge">Equipment</span></summary>
+  <p><strong>Definition:</strong> Fix your gaze slightly earlier than feels natural — on the toss and racket-to-ball contact zone — rather than trying to visually follow the whole flight, which is where saccadic gaps cost you the most information</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/deep-dives/Returning-Heavy-Spin-and-Fast-Serves-Saccadic-Blindness/">vi/advanced/deep-dives/Returning-Heavy-Spin-and-Fast-Serves-Saccadic-Blindness</a></p>
+</details>
+<details class="lexicon-term" data-term="string" data-cat="cat-equipment">
+  <summary><strong>string</strong> <span class="lexicon-cat-badge">Equipment</span></summary>
+  <p><strong>Definition:</strong> Cue : &quot;See the ball hit the strings; don&#x27;t look up until the ball bounces on the other side</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/biomechanics-neurology/">vi/biomechanics-neurology</a></p>
+</details>
+<details class="lexicon-term" data-term="string tension" data-cat="cat-equipment">
+  <summary><strong>string tension</strong> <span class="lexicon-cat-badge">Equipment</span></summary>
+  <p><strong>Definition:</strong> String Tension Based on Gender Watch on YouTube ↗ 16</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/coach-video-library/tennis-lab-by-dr-lyon-krause/">vi/coach-video-library/tennis-lab-by-dr-lyon-krause</a></p>
+</details>
+
+<h2 id="cat-court--surface" data-cat="cat-court--surface">Court & Surface — Sân <span class="lexicon-count">(7 terms)</span></h2>
+
+<details class="lexicon-term" data-term="baseline" data-cat="cat-court--surface">
+  <summary><strong>baseline</strong> <span class="lexicon-cat-badge">Court &amp; Surface</span></summary>
+  <p><strong>Definition:</strong> And using your phone or a laptop while lying in bed compounds the problem over time — eight hours of chronic forward tilt overnight genuinely rewires your baseline posture, making the whole forward-head pattern harder to unlearn during the day</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/deep-dives/Head Position &amp; Vestibular/">vi/advanced/deep-dives/Head Position &amp; Vestibular</a></p>
+</details>
+<details class="lexicon-term" data-term="clay court" data-cat="cat-court--surface">
+  <summary><strong>clay court</strong> <span class="lexicon-cat-badge">Court &amp; Surface</span></summary>
+  <p><strong>Definition:</strong> Other more aggressive approaches would teach a go-for-broke on the run style, but for slow clay court play, high spin is the right shot on the run</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/fundamentals/classic-lessons/building-the-spanish-forehand-stroke-shaping-and-hand-feeding/">vi/fundamentals/classic-lessons/building-the-spanish-forehand-stroke-shaping-and-hand-feeding</a></p>
+</details>
+<details class="lexicon-term" data-term="grass court" data-cat="cat-court--surface">
+  <summary><strong>grass court</strong> <span class="lexicon-cat-badge">Court &amp; Surface</span></summary>
+  <p><strong>Definition:</strong> That&amp;#x27;s different than on a grass court or a slick hard court where the ball shoots through the bounce must faster</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/fundamentals/classic-lessons/keys-to-the-kick-serve/">vi/fundamentals/classic-lessons/keys-to-the-kick-serve</a></p>
+</details>
+<details class="lexicon-term" data-term="hard court" data-cat="cat-court--surface">
+  <summary><strong>hard court</strong> <span class="lexicon-cat-badge">Court &amp; Surface</span></summary>
+  <p><strong>Định nghĩa:</strong> Sân cứng (hard court) nằm ở giữa</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/book/chapter-12-velvet-destruction/">vi/book/chapter-12-velvet-destruction</a></p>
+</details>
+<details class="lexicon-term" data-term="no man&#x27;s land" data-cat="cat-court--surface">
+  <summary><strong>no man&#x27;s land</strong> <span class="lexicon-cat-badge">Court &amp; Surface</span></summary>
+  <p><strong>Định nghĩa:</strong> Thực tế, split step ở no man&#x27;s land (vùng giữa baseline và đường dịch vụ) cũng được, miễn là bạn tiến lên đánh volley trước đường dịch vụ</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/tennis-technical-reference/serve-and-volley/2-is-it-worth-it/">vi/tennis-technical-reference/serve-and-volley/2-is-it-worth-it</a></p>
+</details>
+<details class="lexicon-term" data-term="service line" data-cat="cat-court--surface">
+  <summary><strong>service line</strong> <span class="lexicon-cat-badge">Court &amp; Surface</span></summary>
+  <p><strong>Định nghĩa:</strong> Họ nhắm khoảng tám mươi phần trăm cú trả giao đối với những cú giao bóng thứ nhất mạnh vào sâu giữa sân, vào hành lang giữa các vạch service line</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/book/chapter-04-blitz-chess-on-concrete/">vi/book/chapter-04-blitz-chess-on-concrete</a></p>
+</details>
+<details class="lexicon-term" data-term="transition zone" data-cat="cat-court--surface">
+  <summary><strong>transition zone</strong> <span class="lexicon-cat-badge">Court &amp; Surface</span></summary>
+  <p><strong>Definition:</strong> Court Positioning Baseline, transition zone, net positioning, and geometric court coverage</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/fundamentals/court-positioning/">vi/fundamentals/court-positioning</a></p>
+</details>
+
+<h2 id="cat-scoring" data-cat="cat-scoring">Scoring — Tính điểm <span class="lexicon-count">(12 terms)</span></h2>
+
+<details class="lexicon-term" data-term="ace" data-cat="cat-scoring">
+  <summary><strong>ace</strong> <span class="lexicon-cat-badge">Scoring</span></summary>
+  <p><strong>Definition:</strong> replace(target + search + hash); return; } if (path</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/404/">vi/404</a></p>
+</details>
+<details class="lexicon-term" data-term="advantage" data-cat="cat-scoring">
+  <summary><strong>advantage</strong> <span class="lexicon-cat-badge">Scoring</span></summary>
+  <p><strong>Definition:</strong> Build — a neutral rally ball; your job is to construct advantage, not force a winner</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection/">vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection</a></p>
+</details>
+<details class="lexicon-term" data-term="break point" data-cat="cat-scoring">
+  <summary><strong>break point</strong> <span class="lexicon-cat-badge">Scoring</span></summary>
+  <p><strong>Definition:</strong> Break points, 30-30/deuce points, and the first point of a new game carry disproportionate weight relative to their single-point value — statistically and psychologically</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/basics/Score-Management-Clutch-Points-and-Tiebreaks-Coaching-Guide/">vi/advanced/basics/Score-Management-Clutch-Points-and-Tiebreaks-Coaching-Guide</a></p>
+</details>
+<details class="lexicon-term" data-term="deuce" data-cat="cat-scoring">
+  <summary><strong>deuce</strong> <span class="lexicon-cat-badge">Scoring</span></summary>
+  <p><strong>Định nghĩa:</strong> Hãy quan sát Carlos Alcaraz, hay Roger Federer thời đỉnh cao, giao bóng rộng ra ô deuce</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/book/chapter-04-blitz-chess-on-concrete/">vi/book/chapter-04-blitz-chess-on-concrete</a></p>
+</details>
+<details class="lexicon-term" data-term="double fault" data-cat="cat-scoring">
+  <summary><strong>double fault</strong> <span class="lexicon-cat-badge">Scoring</span></summary>
+  <p><strong>Định nghĩa:</strong> Điều đó có nghĩa là trọng tâm của bạn ở những điểm mở đầu không nên là sự phô diễn, mà là kỷ luật: giữ tỷ lệ giao bóng thứ nhất vào sân cao, tránh double fault, và nhắm vào người cùng chữ T thay vì mạo hiểm đánh vào đường biên mà hôm đó bạn chưa chắc đã có phong độ tốt</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/book/chapter-16-the-synchronized-mind/">vi/book/chapter-16-the-synchronized-mind</a></p>
+</details>
+<details class="lexicon-term" data-term="love" data-cat="cat-scoring">
+  <summary><strong>love</strong> <span class="lexicon-cat-badge">Scoring</span></summary>
+  <p><strong>Definition:</strong> If the data says their backhand return is the pattern to attack, commit to it even if it means playing a style you don&#x27;t love — a game plan you execute beats a game plan you merely prefer</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/basics/Scouting-and-Reading-the-Opponent-Coaching-Guide/">vi/advanced/basics/Scouting-and-Reading-the-Opponent-Coaching-Guide</a></p>
+</details>
+<details class="lexicon-term" data-term="match point" data-cat="cat-scoring">
+  <summary><strong>match point</strong> <span class="lexicon-cat-badge">Scoring</span></summary>
+  <p><strong>Định nghĩa:</strong> Một kỹ năng quan trọng là luôn tập trung vào trái banh và vào thời điểm hiện tại, thay vì nhìn vào người đối thủ và nghĩ về những cú đánh hỏng đã qua trong quá khứ, tự trách mình quá nhiều hay nghĩ về việc thắng trận này trước khi điểm thắng cuộc (match point) diễn ra vào tương lai</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/4-tam-ly-tennis-psychology-va-cac-yeu/">vi/blog/4-tam-ly-tennis-psychology-va-cac-yeu</a></p>
+</details>
+<details class="lexicon-term" data-term="rally" data-cat="cat-scoring">
+  <summary><strong>rally</strong> <span class="lexicon-cat-badge">Scoring</span></summary>
+  <p><strong>Definition:</strong> Build — a neutral rally ball; your job is to construct advantage, not force a winner</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection/">vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection</a></p>
+</details>
+<details class="lexicon-term" data-term="set point" data-cat="cat-scoring">
+  <summary><strong>set point</strong> <span class="lexicon-cat-badge">Scoring</span></summary>
+  <p><strong>Definition:</strong> Down there, choking usually means missing an easy ball at set point</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/elite/basics/Elite Manual/">vi/elite/basics/Elite Manual</a></p>
+</details>
+<details class="lexicon-term" data-term="tiebreak" data-cat="cat-scoring">
+  <summary><strong>tiebreak</strong> <span class="lexicon-cat-badge">Scoring</span></summary>
+  <p><strong>Definition:</strong> Score Management, Clutch Points &amp;amp; Tiebreaks Coaching Guide A tactical companion to Mental Game and Pressure Inoculation — those train your nervous system, this trains your decision-making on the scoreboard</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/basics/Score-Management-Clutch-Points-and-Tiebreaks-Coaching-Guide/">vi/advanced/basics/Score-Management-Clutch-Points-and-Tiebreaks-Coaching-Guide</a></p>
+</details>
+<details class="lexicon-term" data-term="unforced error" data-cat="cat-scoring">
+  <summary><strong>unforced error</strong> <span class="lexicon-cat-badge">Scoring</span></summary>
+  <p><strong>Định nghĩa:</strong> * * 1) Tránh mắc nhiều lỗi (unforced errors) thay vì chơi mạo hiểm để ăn điểm ở những cú đánh khó</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/cach-khac-phuc-cac-loi-co-ban-trong/">vi/blog/cach-khac-phuc-cac-loi-co-ban-trong</a></p>
+</details>
+<details class="lexicon-term" data-term="winner" data-cat="cat-scoring">
+  <summary><strong>winner</strong> <span class="lexicon-cat-badge">Scoring</span></summary>
+  <p><strong>Definition:</strong> Build — a neutral rally ball; your job is to construct advantage, not force a winner</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection/">vi/advanced/basics/Singles-Tactical-Patterns-and-Shot-Selection</a></p>
+</details>
+
+<h2 id="cat-training" data-cat="cat-training">Training — Huấn luyện <span class="lexicon-count">(2 terms)</span></h2>
+
+<details class="lexicon-term" data-term="flexibility" data-cat="cat-training">
+  <summary><strong>flexibility</strong> <span class="lexicon-cat-badge">Training</span></summary>
+  <p><strong>Definition:</strong> Power will be generated from flexibility, from one movement leading effortlessly into the next, and from releasing all this stored up energy in the form of pronation, which we will learn about</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/42-serve-from-hi-techtenniscom/">vi/blog/42-serve-from-hi-techtenniscom</a></p>
+</details>
+<details class="lexicon-term" data-term="mobility" data-cat="cat-training">
+  <summary><strong>mobility</strong> <span class="lexicon-cat-badge">Training</span></summary>
+  <p><strong>Định nghĩa:</strong> Trong ngành nghiên cứu cơ năng học (kinesiology), &quot;stability&quot; và &quot;mobility&quot; có nghĩa như</p>
+  <p class="lexicon-source">📖 <a href="https://tennis-unified.github.io/vi/blog/80-cach-su-dung-cac-khop-trong-co-khi/">vi/blog/80-cach-su-dung-cac-khop-trong-co-khi</a></p>
+</details>
+
+<hr>
+<p class="lexicon-stats"><small>📚 Total: <strong>125</strong> terms across <strong>12</strong> categories. Vietnamese definitions: <strong>56</strong>. Sourced from 2,647 VI articles.</small></p>
 </article>
             </div>
           
