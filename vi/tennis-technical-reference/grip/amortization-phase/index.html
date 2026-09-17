@@ -29,7 +29,7 @@
     
     
       
-        <title>Amortization Phase - Tennis Unified Library</title>
+        <title>Giai đoạn Amortization — Tham Khảo Kỹ Thuật - Thư Viện Tennis Unified</title>
       
       
 
@@ -438,6 +438,514 @@
             
           
           
+            <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="amortization-phase">Giai đoạn Amortization<a class="headerlink" href="#amortization-phase" title="Permanent link"></a></h1>
+<p>Giai đoạn Amortization l&agrave; cửa sổ chuyển tiếp ngắn giữa giai đoạn tải lệch t&acirc;m (hạ c&aacute;nh/n&eacute;n) v&agrave; giai đoạn giải ph&oacute;ng đồng t&acirc;m (bật/ngảm) của <a href="../stretch-shortening-cycle-(ssc)/">Chu kỳ K&eacute;o D&atilde;n (SSC)</a>. Đ&acirc;y l&agrave; khoảnh khắc cơ thể đ&atilde; được n&eacute;n ho&agrave;n to&agrave;n v&agrave; chưa bắt đầu bật.</p>
+<p>Giai đoạn Amortization l&agrave; biến số thời gian quan trọng nhất trong chuyển động tennis. Qu&aacute; d&agrave;i, năng lượng đ&agrave;n hồi được lưu trữ sẽ tan ra th&agrave;nh nhiệt. Qu&aacute; ngắn, khớp chưa tải ho&agrave;n to&agrave;n. C&aacute;c tay vợt ưu t&uacute; mục ti&ecirc;u <strong>&lt; 150ms</strong>.</p>
+<hr />
+<h2 id="why-it-matters">Tại Sao N&oacute; Quan Trọng<a class="headerlink" href="#why-it-matters" title="Permanent link"></a></h2>
+<p>G&acirc;n lưu trữ năng lượng tiềm năng đ&agrave;n hồi khi bị k&eacute;o gi&atilde;n dưới tải trong giai đoạn lệch t&acirc;m. Nhưng năng lượng n&agrave;y kh&ocirc;ng được lưu trữ v&ocirc; thời hạn — n&oacute; suy giảm nhanh ch&oacute;ng th&agrave;nh nhiệt nếu sự chuyển tiếp sang giải ph&oacute;ng bật bị tr&igrave; ho&atilde;n. Cửa sổ sinh học cho việc trả lại năng lượng hiệu quả l&agrave; xấp xỉ <strong>150ms</strong>.</p>
+<p>Quy tắc 150ms n&agrave;y chi phối đồng thời nhiều sự kiện chuyển động:
+- Thời gian tiếp x&uacute;c mặt đất khi split-step (hạ c&aacute;nh &gt; bước đầu ti&ecirc;n)
+- Thời gian ph&aacute;t động giao bao (gấp đầu gối đỉnh &gt; cất b&oacute;ng)
+- Chuyển tiếpượt ngang (hấp thụ &gt; chống/bật)</p>
+<p>Bối cảnh mặt s&acirc;n điều chỉnh mục ti&ecirc;u một ch&uacute;t:</p>
+<table>
+<thead>
+<tr>
+<th>Bề mặt</th>
+<th>Ti&ecirc;u chuẩn Amortization Ưu t&uacute;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S&acirc;n cứng</td>
+<td>&lt; 180ms</td></tr>
+<tr>
+<td>S&acirc;n đất</td>
+<td>&lt; 250ms (do khoảng c&aacute;chượt)</td></tr>
+</tbody>
+</table>
+<p>S&acirc;n đất cho ph&eacute;p amortization d&agrave;i hơn v&igrave; ch&iacute;nh thao t&aacute;cượt k&eacute;o d&agrave;i cửa sổ tải. S&acirc;n cứng đ&ograve;i hỏi chuyển tiếp nhanh hơn v&igrave; hệ số ma s&aacute;t cao tạo ra giảm tốc đột ngột.</p>
+<hr />
+<h2 id="neural-pre-tensioning-and-the-amortization-window">Căng Trước Thần Kinh v&agrave; Cửa Sổ Amortization<a class="headerlink" href="#neural-pre-tensioning-and-the-amortization-window" title="Permanent link"></a></h2>
+<p>Trước khi b&agrave;n ch&acirc;n chạm đất, tiểu n&atilde;o gửi <strong>t&iacute;n hiệu feed-forward</strong> để căng trước c&aacute;c khớp mắt c&aacute; ch&acirc;n v&agrave; đầu gối. Việc Căng Trước n&agrave;y r&uacute;t ngắn giai đoạn amortization hiệu quả v&igrave; c&aacute;c khớp đến tiếp x&uacute;c mặt đất đ&atilde; ở Độ Cứng Ch&acirc;n tối ưu — ch&uacute;ng kh&ocirc;ng cần thời gian để &quot;thiết lập&quot; dưới tải.</p>
+<p>Nếu việc căng trước thất bại hoặc kh&ocirc;ng đ&uacute;ng thời điểm, c&aacute;c khớp phải căng phản ứng sau khi tiếp x&uacute;c — th&ecirc;m v&agrave;o v&agrave;i mili-gi&acirc;y v&agrave;o giai đoạn amortization v&agrave; đẩy sự chuyển tiếp vượt qua cửa sổ năng lượng đ&agrave;n hồi 150ms.</p>
+<hr />
+<h2 id="amortization-in-the-serve">Amortization Trong Giao Bao<a class="headerlink" href="#amortization-in-the-serve" title="Permanent link"></a></h2>
+<p>Trong giao bao, Giai đoạn Amortization chỉ cụ thể khoảng thời gian giữa gấp đầu gối đỉnh (Triple Flexion tối đa trong tư thế loading trophy) v&agrave; cất b&oacute;ng. Mục ti&ecirc;u ở đ&acirc;y cũng l&agrave; <strong>&lt; 150ms</strong>. Một thao t&aacute;c khoằng đứng-chậm-dậy d&agrave;i, chậm hủy SSC v&agrave; buộc giao bao phụ thuộc v&agrave;o co cơ đơn thuần — giảm tốc độ đầu vợt đ&aacute;ng kể.</p>
+<p>Sự kh&aacute;c biệt giữa giao bao &quot;Chuyển Trọng Lượng&quot; (m&ocirc; h&igrave;nh cũ) v&agrave; giao bao &quot;Th&uacute;ac Thẳng Đứng&quot; (m&ocirc; h&igrave;nh 2026) chủ yếu l&agrave; sự ph&acirc;n biệt Giai đoạn Amortization: m&ocirc; h&igrave;nh cũ cho ph&eacute;p chuyển giao d&agrave;i, chủ đ&iacute;ch; m&ocirc; h&igrave;nh mới đ&ograve;i hỏi đảo ngược đ&agrave;n hồi nhanh ch&oacute;ng.</p>
+<hr />
+<h2 id="failure-modes">C&aacute;c Dạng Lỗi<a class="headerlink" href="#failure-modes" title="Permanent link"></a></h2>
+<p><strong>Dừng Ở Đ&aacute;y</strong>: Một tay vợt &quot;định&quot; v&agrave;o tỳ split-step hoặc tư thế trophy trước khi bật l&ecirc;n hoặc sang ngang l&agrave; cho ph&eacute;p năng lượng đ&agrave;n hồi tan ra. C&oacute; thể quan s&aacute;t như sự do dự hoặc nặng nề trong chuyển động d&ugrave; c&oacute; vẻ đ&atilde; chuẩn bị vật l&iacute; đầy đủ.</p>
+<p><strong>Căng Trước Muộn</strong>: C&aacute;c khớp kh&ocirc;ng được căng trước khi tiếp x&uacute;c mặt đất. Giai đoạn amortization k&eacute;o d&agrave;i khi hệ thần kinh-cơ phản ứng thay v&igrave; dự đo&aacute;n trước.</p>
+<p><strong>Ướt Qu&aacute; D&agrave;i (S&acirc;n Cứng)</strong>: Tr&ecirc;n s&acirc;n cứng, cố gắngượt chậm giống tr&ecirc;n s&acirc;n đất đẩy amortization vượt qua 180ms, khiến tay vợt &quot;d&iacute;nh&quot; thay v&igrave; nảy.</p>
+<p><strong>Điều Chỉnh Sai Bề Mặt</strong>: Chuyển từ s&acirc;n đất sang s&acirc;n cứng m&agrave; kh&ocirc;ng hiệu chỉnh lại mục ti&ecirc;u amortization của tiểu n&atilde;o dẫn đến c&aacute;c chuyển tiếp sai thời điểm — tay vợt d&ugrave;ng thời gian của s&acirc;n đất (l&ecirc;n đến 250ms) tr&ecirc;n s&acirc;n cứng v&agrave; đến muộn mỗi quả b&oacute;ng.</p>
+<hr />
+<h2 id="training">Huấn Luyện<a class="headerlink" href="#training" title="Permanent link"></a></h2>
+<p><strong>C&aacute;c b&agrave;i plyometric</strong> nhấn mạnh thời gian tiếp x&uacute;c mặt đất tối thiểu huấn luyện giai đoạn amortization trực tiếp. Mục ti&ecirc;u kh&ocirc;ng chỉ l&agrave; hạ c&aacute;nh v&agrave; nhảy — m&agrave; l&agrave; r&uacute;t ngắn thời gian giữa hai thao t&aacute;c.</p>
+<p><strong>C&aacute;c b&agrave;i huấn luyện thời gian split-step</strong> với đồng hồ bấm giờ hoặc phản hứng lực cho tay vợt dữ liệu kh&aacute;ch quan về thời gian tiếp x&uacute;c mặt đất, gi&uacute;p họ x&aacute;c định v&agrave; giảm độ d&agrave;i Giai đoạn Amortization.</p>
+<hr />
+<h2 id="related-concepts">C&aacute;c Kh&aacute;i Niệm Li&ecirc;n Quan<a class="headerlink" href="#related-concepts" title="Permanent link"></a></h2>
+<ul>
+<li><a href="../stretch-shortening-cycle-(ssc)/">Chu kỳ K&eacute;o D&atilde;n (SSC)</a></li>
+<li>Triple Flexion</li>
+<li>Triple Extension</li>
+<li>Độ Cứng Ch&acirc;n</li>
+<li>Căng Trước</li>
+<li>Hiệu Chỉnh Split-Step</li>
+<li><a href="../gravity-step/">Gravity Step</a></li>
+<li>Ướt S&acirc;n Cứng</li>
+<li><a href="../eccentric-loading/">Tải Lệch T&acirc;m</a></li>
+</ul>
+<hr />
+<blockquote>
+<p><strong><a href="../../../en/tennis-technical-reference/grip/amortization-phase/">Read in English</a></strong> — Phi&ecirc;n bản Tiếng Anh của wiki n&agrave;y</p>
+</blockquote>
+</article>e html>
+<html lang="vi" class="no-js">
+  <head>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Comprehensive unified tennis knowledge base - Fundamentals, Stroke Analysis, Reference Library, and more">
+      
+      
+        <meta name="author" content="Henry Pham">
+      
+      
+      
+      
+      
+        
+          <link rel="alternate" href="../../../../tennis-technical-reference/grip/amortization-phase/" hreflang="en">
+        
+          <link rel="alternate" href="./" hreflang="vi">
+        
+      
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Amortization Phase - Tennis Unified Library</title>
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+<link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
+<link rel="stylesheet" href="/assets/css/site.css"><script src="/assets/javascripts/lang-toggle.js" defer></script><script src="/assets/javascripts/darkmode.js" defer></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<!-- FLATTENED-TOP-NAV-START -->
+<div class="tu-topnav">
+  <a href="/vi/" class="tu-nav-item" title="Home"><span class="tu-nav-emoji">🏠</span><span class="tu-nav-text">Home</span></a>
+  <a href="/vi/fundamentals/" class="tu-nav-item" title="Fundamentals"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Fundamentals</span></a>
+  <a href="/vi/doubles/" class="tu-nav-item" title="Đánh Đôi"><span class="tu-nav-emoji">👥</span><span class="tu-nav-text">Đánh Đôi</span></a>
+  <a href="/vi/stroke-analysis/" class="tu-nav-item" title="Stroke Analysis"><span class="tu-nav-emoji">🧠</span><span class="tu-nav-text">Stroke Analysis</span></a>
+  <a href="/vi/coach-video-library/" class="tu-nav-item" title="Coach Library"><span class="tu-nav-emoji">🎓</span><span class="tu-nav-text">Coach Library</span></a>
+  <a href="/vi/tennis-video-library/" class="tu-nav-item" title="Video Library"><span class="tu-nav-emoji">🎬</span><span class="tu-nav-text">Video Library</span></a>
+  <a href="/vi/tennis-technical-reference/" class="tu-nav-item" title="Technical Reference"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Technical Reference</span></a>
+  <a href="/vi/tnkb/vi/" class="tu-nav-item" title="Kho Tri Thức"><span class="tu-nav-emoji">💡</span><span class="tu-nav-text">Kho Tri Thức</span></a>
+  <a href="/vi/tennis-evolution/" class="tu-nav-item" title="Tennis Evolution"><span class="tu-nav-emoji">⚡</span><span class="tu-nav-text">Tennis Evolution</span></a>
+  <a href="/vi/blog/" class="tu-nav-item" title="Blog"><span class="tu-nav-emoji">📝</span><span class="tu-nav-text">Blog</span></a>
+  <a href="/vi/book/" class="tu-nav-item" title="Master Book"><span class="tu-nav-emoji">📕</span><span class="tu-nav-text">Master Book</span></a>
+  <a href="/vi/books/" class="tu-nav-item" title="Tủ Sách Tennis"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Tủ Sách Tennis</span></a>
+  <a href="/vi/books/" class="tu-nav-item tu-nav-lang" data-lang-toggle title="Switch to English"><span class="tu-nav-emoji">🌐</span><span class="tu-nav-text">English</span></a>
+  <button class="tu-nav-item tu-nav-darkmode" title="Dark Mode" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button>
+</div>
+<!-- FLATTENED-TOP-NAV-END -->
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#amortization-phase" class="md-skip">
+          Bỏ qua
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Đầu trang">
+    <a href="../../" title="Tennis Unified Library" class="md-header__button md-logo" aria-label="Tennis Unified Library" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tennis Unified Library
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Amortization Phase
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Chọn ngôn ngữ">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../../tennis-technical-reference/grip/amortization-phase/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="vi" class="md-select__link">
+              Tiếng Việt
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Thanh điều hướng" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../" title="Tennis Unified Library" class="md-nav__button md-logo" aria-label="Tennis Unified Library" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Tennis Unified Library
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trang Chủ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../coach-video-library/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thư Viện Video HLV
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Mục lục">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Mục lục
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-it-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why It Matters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#neural-pre-tensioning-and-the-amortization-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Neural Pre-Tensioning and the Amortization Window
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amortization-in-the-serve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Amortization in the Serve
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#failure-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Failure Modes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Training
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Concepts
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
             <div class="md-content" data-md-component="content">
               
                 
@@ -448,124 +956,137 @@
 
 
               
-              <article class="md-content__inner md-typeset">
-                
-                  
+              # Giai Đoạn Pha Hóa (Amortization Phase)
 
+Giai Đoạn Pha Hóa là cửa sổ chuyển tiếp ngắn giữa giai đoạn tải lệch tâm (tiếp đất/nén) và giai đoạn giải phóng đồng tâm (bùng nổ/đẩy) của [Chuỗi Giãn-Rút Ngắn (Stretch-Shortening Cycle - SSC)](../stretch-shortening-cycle-(ssc)/). Đây là khoảnh khắc cơ thể đã được nén hoàn toàn nhưng chưa bắt đầu bùng nổ.
 
+Giai Đoạn Pha Hóa là biến số thời gian quan trọng nhất trong chuyển động tennis. Quá dài, năng lượng đàn hồi được lưu trữ sẽ tiêu tán thành nhiệt. Quá ngắn, khớp chưa tải đầy đủ. Tầng lớp ưu tú nhắm tới **< 150ms**.
 
-<h1 id="amortization-phase">Amortization Phase<a class="headerlink" href="#amortization-phase" title="Permanent link"></a></h1>
-<p>The Amortization Phase is the brief transition window between the eccentric loading phase (landing/compression) and the concentric release phase (explosion/push-off) of the <a href="../stretch-shortening-cycle-(ssc)/">Stretch-Shortening Cycle (SSC)</a>. It is the moment the body is fully compressed and has not yet begun to explode.</p>
-<p>The Amortization Phase is the most critical timing variable in tennis movement. Too long, and stored elastic energy dissipates as heat. Too short, and the joint hasn't fully loaded. Elites target <strong>&lt; 150ms</strong>.</p>
-<hr />
-<h2 id="why-it-matters">Why It Matters<a class="headerlink" href="#why-it-matters" title="Permanent link"></a></h2>
-<p>Tendons store elastic potential energy when stretched under load during the eccentric phase. But this energy is not stored indefinitely - it decays rapidly as heat if the transition to explosive release is delayed. The biological window for efficient energy return is approximately <strong>150ms</strong>.</p>
-<p>This 150ms rule governs multiple movement events simultaneously:
-- Split-step ground contact time (landing > first step)
-- Serve launch time (peak knee flexion > takeoff)
-- Lateral slide transition (absorption > bracing/push-off)</p>
-<p>Surface context adjusts the target slightly:</p>
-<table>
-<thead>
-<tr>
-<th>Surface</th>
-<th>Elite Amortization Standard</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Hard court</td>
-<td>&lt; 180ms</td>
-</tr>
-<tr>
-<td>Clay court</td>
-<td>&lt; 250ms (due to sliding translation distance)</td>
-</tr>
-</tbody>
-</table>
-<p>Clay allows a longer amortization because the slide itself extends the loading window. Hard court demands faster transition because the higher friction coefficient creates abrupt deceleration.</p>
-<hr />
-<h2 id="neural-pre-tensioning-and-the-amortization-window">Neural Pre-Tensioning and the Amortization Window<a class="headerlink" href="#neural-pre-tensioning-and-the-amortization-window" title="Permanent link"></a></h2>
-<p>Before the foot even touches the ground, the cerebellum sends a <strong>feed-forward signal</strong> to pre-stiffen the ankle and knee joints. This Pre-Stiffening shortens the effective amortization phase because the joints arrive at ground contact already at optimal Leg Stiffness - they don't need time to "set up" under load.</p>
-<p>If pre-tensioning fails or is mistimed, the joints must stiffen reactively after contact - adding milliseconds to the amortization phase and pushing the transition beyond the 150ms elastic energy window.</p>
-<hr />
-<h2 id="amortization-in-the-serve">Amortization in the Serve<a class="headerlink" href="#amortization-in-the-serve" title="Permanent link"></a></h2>
-<p>In the serve, the Amortization Phase refers specifically to the time between peak knee flexion (maximum Triple Flexion depth during the loading trophy pose) and takeoff. The target here is also <strong>&lt; 150ms</strong>. A long, slow crouch-and-rise destroys the SSC and forces the serve to rely on muscular contraction alone - reducing racket-head speed significantly.</p>
-<p>The distinction between a "Weight Shift" serve (old model) and a "Vertical Impulse" serve (2026 model) is largely an Amortization Phase distinction: the old model allowed a long, deliberate transfer; the new model requires a rapid elastic reversal.</p>
-<hr />
-<h2 id="failure-modes">Failure Modes<a class="headerlink" href="#failure-modes" title="Permanent link"></a></h2>
-<p><strong>Pausing at the Bottom</strong>: A player who "settles" into their split-step crouch or trophy position before exploding upward or laterally is allowing elastic energy to dissipate. Observable as a hesitation or heaviness in movement despite apparent physical preparation.</p>
-<p><strong>Late Pre-Tensioning</strong>: Joints are not stiffened before ground contact. The amortization phase becomes extended as the neuromuscular system reacts rather than anticipates.</p>
-<p><strong>Over-Long Slide (Hard Court)</strong>: On hard courts, attempting the same slow slide used on clay pushes the amortization beyond 180ms, causing the player to "stick" rather than rebound.</p>
-<p><strong>Surface Miscalibration</strong>: Moving from clay to hard court without cerebellar recalibration of the amortization target leads to mistimed transitions - the player uses clay-court timing (up to 250ms) on hard court and arrives late to every ball.</p>
-<hr />
-<h2 id="training">Training<a class="headerlink" href="#training" title="Permanent link"></a></h2>
-<p><strong>Plyometric drills</strong> that emphasize minimal ground contact time train the amortization phase directly. The goal is not just to land and jump - it is to shorten the time between the two.</p>
-<p><strong>Split-step timing drills</strong> with stopwatch or force-plate feedback give players objective data on their ground contact times, enabling them to identify and reduce Amortization Phase length.</p>
-<hr />
-<h2 id="related-concepts">Related Concepts<a class="headerlink" href="#related-concepts" title="Permanent link"></a></h2>
-<ul>
-<li><a href="../stretch-shortening-cycle-(ssc)/">Stretch-Shortening Cycle (SSC)</a></li>
-<li>Triple Flexion</li>
-<li>Triple Extension</li>
-<li>Leg Stiffness</li>
-<li>Pre-Stiffening</li>
-<li>Split-Step Calibration</li>
-<li><a href="../gravity-step/">Gravity Step</a></li>
-<li>Hard-Court Slide</li>
-<li><a href="../eccentric-loading/">Eccentric Loading</a></li>
-</ul>
-<hr />
-<blockquote>
-<p><strong><a href="./">Read in Tiếng Việt</a></strong> - Vietnamese version of this wiki</p>
-</blockquote>
+---
 
+## Tại Sao Nó Quan Trọng
 
+Gân chứa năng lượng tiềm năng đàn hồi khi bị giãn dưới tải trong giai đoạn lệch tâm. Nhưng năng lượng này không được lưu trữ vô thời hạn — nó suy giảm nhanh chóng thành nhiệt nếu sự chuyển tiếp sang giải phóng bùng nổ bị trì hoãn. Cửa sổ sinh học để hoàn trả năng lượng hiệu quả là khoảng **150ms**.
 
+Quy tắc 150ms này chi phối đồng thời nhiều sự kiện chuyển động:
+- Thời gian tiếp đất bước chuyển (tiếp đất > bước đầu tiên)
+- Thời gian phóng serve (ngã gối tối đa > nhảy)
+- Sự chuyển tiết trượt ngang (thụ nước > neo/đẩy)
 
+Bối cảnh mặt sân điều chỉnh mục tiêu một chút:
 
+| Bề mặt sân | Tiêu chuẩn Pha Hóa Ưu tú |
+|---|---|
+| Sân cứng | < 180ms |
+| Sân đất | < 250ms (do khoảng cách trượt chuyển tiếp) |
 
+Sân đất cho phép pha hóa dài hơn vì chính vế trượt mở rộng cửa sổ tải. Sân cứng đòi hỏi chuyển tiếp nhanh hơn vì hệ số ma sát cao tạo ra sự giảm tốc đột ngột.
 
-  
-  
+---
 
+## Căng Thẩm Tiền Thần Kinh Và Cửa Sổ Pha Hóa
 
+Trước khi bàn tay chạm đất, tiểu não gửi một **tín hiệu tiếp liệu** để căng trước các khớp mắt cá chân và đầu gối. Sự Căng Trước này rút ngắn giai đoạn pha hóa hiệu quả vì các khớp đến điểm tiếp đất đã ở Độ Cứng Chân Phù Hợp — chúng không cần thời gian để "thiết lập" dưới tải.
 
+Nếu căng tiền thất bại hoặc sai thời gian, các khớp phải căng phản ứng sau khi tiếp xúc — thêm mili-giây vào giai đoạn pha hóa và đẩy sự chuyển tiếp vượt qua cửa sổ năng lượng đàn hồi 150ms.
 
+---
 
+## Pha Hóa Trong Serve
 
-                
-              
+Trong serve, Giai Đoạn Pha Hóa đề cập cụ thể đến khoảng thời gian giữa ngã gối tối đa (độ sâu Ba Khớp Cong tối đa trong tư thế tải trophy pose) và nhảy. Mục tiêu ở đây cũng là **< 150ms**. Một cái cúi-chậm-rồi-đứng-chậm-dài hủy hoại SSC và ép serve phụ thuộc vào co cơ bắp thuần túy — làm giảm đáng kể tốc độ đầu vợt.
+
+Sự phân biệt giữa serve "Dịch Chuyển Trọng Lượng" (mô hình cũ) và serve "Xung Lực Thẳng Đứng" (mô hình 2026) phần lớn là sự phân biệt Giai Đoạn Pha Hóa: mô hình cũ cho phép dịch chuyển dài, có chủ đích; mô hình mới đòi hỏi sự đảo ngược đàn hồi nhanh chóng.
+
+---
+
+## Các Dạng Hỏng
+
+**Dừng lại ở Đáy**: Người chơi "an định" vào tư thế cúi split-step hoặc trophy trước khi bùng nổ lên hoặc ngang là đang cho phép năng lượng đàn hồi tiêu tán. Có thể quan sát thấy như một sự do dự hoặc nặng nề trong chuyển động dù có sự chuẩn bị thể chất rõ ràng.
+
+**Căng Tiền Muộn**: Các khớp không được căng trước khi tiếp xúc đất. Giai đoạn pha hóa trở nên kéo dài khi hệ thần kinh cơ phản ứng thay vì dự đoán.
+
+**Trượt Quá Dài (Sân Cứng)**: Trên sân cứng, cố gắng trượt chậm giống như trên sân đất đẩy giai đoạn pha hóa vượt quá 180ms, khiến người chơi "dính" thay vì nảy lại.
+
+**Hiệu Chuẩn Sai Bề Mặt Sân**: Chuyển từ sân đất sang sân cứng mà không hiệu chỉnh lại tiểu não cho mục tiêu pha hóa dẫn đến các chuyển tiếp sai thời điểm — người chơi dùng thời gian sân đất (đến 250ms) trên sân cứng và đến muộn với mỗi quả bóng.
+
+---
+
+## Huấn Luyện
+
+**Bài tập plyometric** nhấn mạnh thời gian tiếp đất tối thiểu huấn luyện giai đoạn pha hóa trực tiếp. Mục tiêu không chỉ là tiếp đất và nhảy — mà là rút ngắn thời gian giữa hai hành động.
+
+**Bài tập thời gian split-step** với đồng hồ bấm giờ hoặc phản hồi từ tấm lực cho người chơi dữ liệu khách quan về thời gian tiếp đất, cho phép họ xác định và giảm độ dài Giai Đoạn Pha Hóa.
+
+---
+
+## Các Khái Niệm Liên Quan
+
+- [Chuỗi Giãn-Rút Ngắn (SSC)](../stretch-shortening-cycle-(ssc)/)
+- Ba Khớp Cong
+- Ba Khớp Dãn
+- Độ Cứng Chân
+- Căng Trước
+- Hiệu Chuẩn Split-Step
+- [Bước Gravity Step](../gravity-step/)
+- Trượt Sân Cứng
+- [Tải Lệch Tâm](../eccentric-loading/)
+
+---
+
+> **Đọc bản tiếng Anh:** [Amortization Phase](../../../tennis-technical-reference/grip/amortization-phase/)
+
 
 <div class="video-embed-card" style="margin:2.25rem 0;padding:1.25rem;background:var(--card,#fff);border:1px solid var(--border,#e7e5e4);border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,.08);">
   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.75rem;flex-wrap:wrap;gap:0.5rem;">
-    <span style="font-size:0.75rem;font-weight:700;color:var(--accent-dark,#047857);text-transform:uppercase;background:var(--card-hover,#f4fdf7);padding:0.25rem 0.6rem;border-radius:4px;border:1px solid var(--border,#e7e5e4);">BATCH 7 &middot; TECHNIQUE MASTERCLASS</span>
+    <span style="font-size:0.75rem;font-weight:700;color:var(--accent-dark,#047857);text-transform:uppercase;background:var(--card-hover,#f4fdf7);padding:0.25rem 0.6rem;border-radius:4px;border:1px solid var(--border,#e7e5e4);">BATCH 7 · LỚP CHUYÊN GIA KỸ THUẬT</span>
     <span style="font-size:0.8rem;color:var(--muted,#78716c);">Top Tennis Training - Pro Tennis Lessons</span>
   </div>
-  <h4 style="margin:0 0 0.75rem;font-size:1.1rem;line-height:1.4;color:var(--ink,#1c1917);">The Secret Behind Sinner’s Insane Forehand Power (The Whip Forehand Explained)</h4>
+  <h4 style="margin:0 0 0.75rem;font-size:1.1rem;line-height:1.4;color:var(--ink,#1c1917);">Bí Mật Đằng Sau Sức Mạnh Kinh Khủng Của Cú Forehand Của Sinner (Giải Thích Cú Forehand Quất)</h4>
   <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:6px;box-shadow:0 2px 10px rgba(0,0,0,.15);">
-    <iframe src="https://www.youtube.com/embed/AWgTZBADqoo?rel=0&modestbranding=1" title="The Secret Behind Sinner’s Insane Forehand Power (The Whip Forehand Explained)" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen loading="lazy"></iframe>
+    <iframe src="https://www.youtube.com/embed/AWgTZBADqoo?rel=0&modestbranding=1" title="The Secret Behind Sinner's Insane Forehand Power (The Whip Forehand Explained)" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen loading="lazy" height="100%"></iframe>
   </div>
 </div>
 
 <nav class="tu-chapter-nav" aria-label="Bottom Page Navigation" style="margin:3rem 0 1.5rem;padding-top:1.5rem;border-top:1px solid var(--border,#e7e5e4);">
   <div class="tu-chapter-nav__inner" style="display:flex;justify-content:space-between;align-items:stretch;gap:0.75rem;flex-wrap:wrap;">
     <a class="tu-chapter-nav__link tu-chapter-nav__link--prev" href="../advanced-split-step/" style="flex:1 1 30%;padding:0.85rem 1.15rem;border:1px solid var(--border,#e7e5e4);border-radius:8px;background:var(--card,#fff);text-decoration:none;display:flex;flex-direction:column;gap:0.25rem;">
-  <span class="tu-chapter-nav__direction" style="font-size:0.78rem;font-weight:700;color:var(--accent-dark,#047857);text-transform:uppercase;letter-spacing:0.06em;">← Trang trước</span>
-  <span class="tu-chapter-nav__title" style="font-size:0.98rem;font-weight:500;color:var(--ink,#1c1917);">Advanced Split-Step</span>
+  <span class="tu-chapter-nav__direction" style="font-size:0.78rem;font-weight:700;color:var(--accent-dark,#047857);text-transform:uppercase;letter-spacing:0.06em;">← Bài trướcious</span>
+  <span class="tu-chapter-nav__title" style="font-size:0.98rem;font-weight:500;color:var(--ink,#1c1917);">Split-Step Nâng Cao</span>
 </a>
     <a class="tu-chapter-nav__link tu-chapter-nav__link--home" href="../" style="flex:0 1 auto;padding:0.85rem 1.25rem;border:1px solid var(--border,#e7e5e4);border-radius:8px;background:var(--card,#fff);text-decoration:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.25rem;">
-  <span class="tu-chapter-nav__direction" style="font-size:0.78rem;font-weight:700;color:var(--accent-dark,#047857);text-transform:uppercase;letter-spacing:0.06em;">🏠 Mục lục / Trang chủ</span>
+  <span class="tu-chapter-nav__direction" style="font-size:0.78rem;font-weight:700;color:var(--accent-dark,#047857);text-transform:uppercase;letter-spacing:0.06em;">🏠 Index / Home</span>
   <span class="tu-chapter-nav__title" style="font-size:0.98rem;font-weight:500;color:var(--ink,#1c1917);">Grip</span>
 </a>
     <a class="tu-chapter-nav__link tu-chapter-nav__link--next" href="../amygdala-hijack/" style="flex:1 1 30%;padding:0.85rem 1.15rem;border:1px solid var(--border,#e7e5e4);border-radius:8px;background:var(--card,#fff);text-decoration:none;display:flex;flex-direction:column;align-items:flex-end;gap:0.25rem;text-align:right;">
-  <span class="tu-chapter-nav__direction" style="font-size:0.78rem;font-weight:700;color:var(--accent-dark,#047857);text-transform:uppercase;letter-spacing:0.06em;">Trang tiếp →</span>
-  <span class="tu-chapter-nav__title" style="font-size:0.98rem;font-weight:500;color:var(--ink,#1c1917);">Amygdala Hijack</span>
+  <span class="tu-chapter-nav__direction" style="font-size:0.78rem;font-weight:700;color:var(--accent-dark,#047857);text-transform:uppercase;letter-spacing:0.06em;">Bài tiếp →</span>
+  <span class="tu-chapter-nav__title" style="font-size:0.98rem;font-weight:500;color:var(--ink,#1c1917);">Amygdala Chiếm Quyền</span>
 </a>
   </div>
 </nav>
 
-</article>
+<!-- BOTTOM-NAV-START -->
+<hr style="margin:2.5rem 0 1.5rem; border:0; border-top:1px solid var(--border, #e7e5e4);" />
+<nav class="tu-bottom-nav" aria-label="Page navigation" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin:1.5rem 0 2rem; padding:1rem 1.25rem; background:var(--card, #fff); border:1px solid var(--border, #e7e5e4); border-radius:12px; box-shadow:var(--shadow, 0 1px 3px rgba(0,0,0,.06));">
+  <div class="tu-bottom-nav__prev" style="flex:1; min-width:140px; text-align:left;">
+    <a href="/vi/tennis-technical-reference/grip/advanced-split-step/" style="color:var(--accent-dark, #047857); text-decoration:none; font-weight:600; font-size:0.92rem; display:inline-block;">
+      ← Bài trước
+      <span style="font-size:0.82rem; font-weight:400; color:var(--ink-muted, #666); display:block; max-width:200px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Split-Step Nâng Cao</span>
+    </a>
+  </div>
+  <div class="tu-bottom-nav__home" style="display:flex; gap:0.6rem; align-items:center; justify-content:center; padding:0 0.5rem; font-weight:600;">
+    <a href="/vi/" style="color:var(--ink-muted, #555); text-decoration:none; padding:0.35rem 0.65rem; border-radius:6px; background:var(--bg, #f3f4f6); font-size:0.9rem;">🏠 Trang chủ</a>
+    <a href="/vi/tennis-technical-reference/grip/" style="color:var(--accent-dark, #047857); text-decoration:none; padding:0.35rem 0.65rem; border-radius:6px; background:var(--accent-light, #d1fae5); font-size:0.9rem;">📚 Grip</a>
+  </div>
+  <div class="tu-bottom-nav__next" style="flex:1; min-width:140px; text-align:right;">
+    <a href="/vi/tennis-technical-reference/grip/amygdala-hijack/" style="color:var(--accent-dark, #047857); text-decoration:none; font-weight:600; font-size:0.92rem; display:inline-block;">
+      Bài tiếp →
+      <span style="font-size:0.82rem; font-weight:400; color:var(--ink-muted, #666); display:block; max-width:200px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Amygdala Chiếm Quyền</span>
+    </a>
+  </div>
+</nav>
+<!-- BOTTOM-NAV-END -->
+
             </div>
           
           
