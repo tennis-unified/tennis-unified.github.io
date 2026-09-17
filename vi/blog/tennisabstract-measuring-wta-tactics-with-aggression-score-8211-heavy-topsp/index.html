@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<!doctype html>
+<html lang="vi" class="no-js">
+  <head>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Bài viết kỹ thuật tennis từ Thư viện Tennis Unified.">
+      
+      
+        <meta name="author" content="Henry Pham">
+      
+      
+      
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+          
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Đo lường chiến thuật WTA bằng Điểm số Tấn công (Aggression Score) – Heavy Topspin - Thư viện Tennis Unified</title>
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}
+      .article-content img {
+        max-width: 100% !important;
+        height: auto !important;
+        display: block !important;
+        margin: 1.5rem auto !important;
+        border-radius: 8px !important;
+      }
+      .separator {
+        text-align: center !important;
+        clear: both !important;
+        margin: 1.5rem 0 !important;
+      }
+      .separator a {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        display: block !important;
+      }
+    </style>
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+<link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
+<link rel="stylesheet" href="/assets/css/site.css"><script src="/assets/javascripts/lang-toggle.js" defer></script><script src="/assets/javascripts/darkmode.js" defer></script></head>
+<body>
+<h1>Measuring WTA Tactics With Aggression Score &#8211; Heavy Topspin</h1>
+<hr />
+<p><img alt="Measuring WTA Tactics With Aggression Score &#8211; Heavy Topspin" src="https://159.203.141.169/tennisabstract/blog/wp-content/uploads/2015/08/Figure2.jpeg" style="max-width: 100%; height: auto; display: block; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,.12);" /></p>
+<p><img alt="Measuring WTA Tactics With Aggression Score &#8211; Heavy Topspin" src="https://159.203.141.169/tennisabstract/blog/wp-content/uploads/2015/08/Figure3.jpeg" style="max-width: 100%; height: auto; display: block; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,.12);" /></p>
+<p><img alt="Measuring WTA Tactics With Aggression Score &#8211; Heavy Topspin" src="https://159.203.141.169/tennisabstract/blog/wp-content/uploads/2015/08/Figure4.jpeg" style="max-width: 100%; height: auto; display: block; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,.12);" /></p>
+
+<div class="article-content" style="font-size:1.05rem; line-height:1.8; margin-top:1.5rem;">
+<p>Lời nhắn từ biên tập viên: Chào mừng khách mời Lowell! Anh ấy là một cộng tác viên tích cực của Dự án Match Charting (Match Charting Project) và là tác giả của bài viết khách mời đầu tiên trên blog này. Vấn đề: Việc định lượng sự tấn công trong quần vợt là một bài toán khó đối với người ngoài cuộc. Một cú đánh tấn công và một cú đánh phòng thủ có thể xảy ra trên cùng một đường bóng, tại cùng một vị trí trên sân và trong cùng một pha bóng bền (rally). Để biết liệu một cú đánh có tính tấn công hay không, chúng ta cần thông tin về vị trí trên sân và tốc độ bóng, không chỉ của cú đánh hiện tại mà còn của các cú đánh trước đó. Vì dữ liệu này chỉ tồn tại ở một phần nhỏ các trận đấu tennis (thông qua Hawkeye) và không công khai, nên việc sử dụng các cú đánh tấn công làm thước đo là không khả thi cho công chúng. Trong một thời đại khác, số điểm lên lưới có thể là một thước đo phù hợp, nhưng hầu hết quần vợt hiện đại, đặc biệt là quần vợt nữ, đều xoay quanh lối chơi cuối sân. Các điểm lên lưới cũng có thể mang tính ngẫu nhiên và không thực sự phản ánh sự tấn công. Elina Svitolina, theo dữ liệu từ Dự án Match Charting, đã có 41 điểm lên lưới trong trận đấu với Yulia Putintseva tại Roland Garros năm nay. Tuy nhiên, đây không phải là chỉ số cho thấy lối chơi tấn công của Svitolina mà chủ yếu do Putintseva đã thực hiện tới 51 cú bỏ nhỏ (drop shot) trong trận đấu đó. Tuy nhiên, Dự án Match Charting cung cấp một số dữ liệu để giải quyết vấn đề này. Chúng ta có thể sử dụng dữ liệu để xác định độ dài của các pha bóng bền và liệu một tay vợt có kết thúc điểm số đó hay không, ví dụ: họ đánh một cú winner, lỗi tự đánh hỏng (unforced error) hoặc đối thủ mắc lỗi buộc phải đánh hỏng (forced error). Nếu chúng ta giả định rằng một tay vợt tấn công sẽ có nhiều khả năng kết thúc điểm số hơn và có xu hướng muốn kết thúc điểm số sớm hơn trong một pha bóng bền, chúng ta có thể xây dựng một thước đo.</p>
+
+<p>Thước đo: Để tính toán sự tấn công bằng các giả định này, chúng ta cần biết tần suất một tay vợt kết thúc điểm số và số cơ hội họ có để kết thúc điểm số đó, tức là số lần họ có bóng trong cuộc ở phần sân của mình. Để đo lường số lần một tay vợt kết thúc điểm số, chúng ta cộng tổng các điểm mà họ đánh winner, lỗi tự đánh hỏng hoặc đối thủ mắc lỗi buộc phải đánh hỏng. Tóm lại, tôi sẽ gọi đây là “Điểm số trên vợt” (Points on Racquet). Để đo lường số cơ hội một tay vợt có để kết thúc điểm số, chúng ta tính số lần bóng trong cuộc ở mỗi bên sân của tay vợt. Đối với các điểm giao bóng, chúng ta cộng 1 vào độ dài của mỗi pha bóng bền và chia cho 2, làm tròn lên nếu kết quả không phải là số nguyên. Đối với các điểm trả giao bóng, chúng ta chia mỗi pha bóng bền cho 2, làm tròn lên nếu kết quả không phải là số nguyên. Những điều chỉnh này cho phép chúng ta đếm chính xác tần suất một tay vợt có bóng trong cuộc ở phần sân của mình. Tóm lại, tôi sẽ gọi các giá trị này là “Cơ hội đánh bóng” (Shot Opportunities). Nếu chúng ta chia Điểm số trên vợt cho Cơ hội đánh bóng, chúng ta sẽ nhận được một giá trị từ 0 đến 1. Nếu một tay vợt có giá trị bằng 0, họ không bao giờ kết thúc điểm số khi bóng ở phần sân của mình. Nếu tay vợt có giá trị bằng 1, họ chỉ thực hiện các cú đánh kết thúc điểm số. Khi giá trị càng tăng, tay vợt đó được coi là càng tấn công. Tóm lại, tôi sẽ gọi thước đo này là “Điểm số Tấn công” (Aggression Score).</p>
+
+<p>Dữ liệu: Lấy dữ liệu từ bản cập nhật mới nhất của Dự án Match Charting, tôi đã tìm thấy các tay vợt nữ có từ 2000 điểm số hoàn thành trở lên trong cơ sở dữ liệu (tức là tất cả các điểm không phải là phạt điểm hoặc điểm bị bỏ lỡ). Mười tám tay vợt phù hợp với các tiêu chí này. Vì Dự án Match Charting, thật không may, là một mẫu trận đấu không ngẫu nhiên, tôi cảm thấy không thoải mái khi đưa ra đánh giá dưới một số lượng dữ liệu rất lớn. Tuy nhiên, khi sử dụng từ 2000 điểm dữ liệu trở lên, một lượng dữ liệu áp đảo sẽ cần thiết để vượt qua các đánh giá này, mang lại sự tự tin rằng, mặc dù vẫn tồn tại sai số, chúng ta đang tiến gần đến các giá trị tấn công thực tế.</p>
+
+<p>Kết quả: Dưới đây là kết quả từ phân tích. Bảng 1-3 cung cấp Điểm số Tấn công cho từng tay vợt tổng thể, được chia nhỏ thành điểm số khi giao bóng và trả giao bóng, và chia nhỏ hơn nữa thành giao bóng 1 và giao bóng 2. Chúng cũng cung cấp sự khác biệt giữa nơi chúng ta mong đợi tay vợt tấn công nhiều hơn (Giao bóng so với Trả giao bóng, Giao bóng 1 so với Giao bóng 2 và Trả giao bóng 2 so với Trả giao bóng 1).</p>
+
+<p>Bảng 1: Điểm số Tấn công</p>
+<p>Tên | Tổng thể | Khi giao bóng | Khi trả giao bóng | Chênh lệch G-T</p>
+<p>S Williams 0.281 0.3114 0.2476 0.0638</p>
+<p>S Halep 0.1818 0.2058 0.1537 0.0521</p>
+<p>M Sharapova 0.2421 0.2471 0.2358 0.0113</p>
+<p>C Wozniacki 0.1526 0.1788 0.1185 0.0603</p>
+<p>P Kvitova 0.3306 0.347 0.309 0.038</p>
+<p>L Safarova 0.2475 0.2694 0.2182 0.0512</p>
+<p>A Ivanovic 0.2413 0.247 0.2335 0.0135</p>
+<p>Ka Pliskova 0.256 0.2898 0.2095 0.0803</p>
+<p>G Muguruza 0.231 0.238 0.2214 0.0166</p>
+<p>A Kerber 0.1766 0.2044 0.1433 0.0611</p>
+<p>B Bencic 0.1742 0.1784 0.1687 0.0097</p>
+<p>A Radwanska 0.1473 0.1688 0.1207 0.0481</p>
+<p>S Errani 0.1232 0.1184 0.1297 -0.0113</p>
+<p>E Svitolina 0.1654 0.1769 0.1511 0.0258</p>
+<p>M Keys 0.3017 0.3284 0.2677 0.0607</p>
+<p>V Azarenka 0.1892 0.1988 0.1762 0.0226</p>
+<p>V Williams 0.2251 0.247 0.1944 0.0526</p>
+<p>E Bouchard 0.2458 0.2695 0.2157 0.0538</p>
+<p>WTA Tour 0.209 0.2254 0.1877 0.0377</p>
+
+<p>Bảng 2: Điểm số Tấn công khi Giao bóng</p>
+<p>Tên | Giao bóng | Giao bóng 1 | Giao bóng 2 | Chênh lệch 1-2</p>
+<p>S Williams 0.3114</p>
+</div>
+          <!-- BOTTOM-NAV-START -->
+<hr style="margin:2.5rem 0 1.5rem; border:0; border-top:1px solid var(--border, #e7e5e4);" />
+<nav class="tu-bottom-nav" aria-label="Page navigation" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin:1.5rem 0 2rem; padding:1rem 1.25rem; background:var(--card, #fff); border:1px solid var(--border, #e7e5e4); border-radius:12px; box-shadow:var(--shadow, 0 1px 3px rgba(0,0,0,.06));">
+  <div class="tu-bottom-nav__prev" style="flex:1; min-width:140px; text-align:left;">
+    <a href="../tennisabstract-match-charting-project-serve-stats-glossary-8211-heavy-topsp/" style="color:var(--accent-dark, #047857); text-decoration:none; font-weight:600; font-size:0.92rem; display:inline-block;">
+      ← Bài trước
+      <span style="font-size:0.82rem; font-weight:400; color:var(--ink-muted, #666); display:block; max-width:200px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Match Charting Project Serve Stats: Glossary &#8211; Heavy Topspin</span>
+    </a>
+  </div>
+  <div class="tu-bottom-nav__home" style="display:flex; gap:0.6rem; align-items:center; justify-content:center; padding:0 0.5rem; font-weight:600;">
+    <a href="/vi/" style="color:var(--ink-muted, #555); text-decoration:none; padding:0.35rem 0.65rem; border-radius:6px; background:var(--bg, #f3f4f6); font-size:0.9rem;">🏠 Trang chủ</a>
+    <a href="/vi/blog/" style="color:var(--accent-dark, #047857); text-decoration:none; padding:0.35rem 0.65rem; border-radius:6px; background:var(--accent-light, #d1fae5); font-size:0.9rem;">📝 Mục lục Blog</a>
+  </div>
+  <div class="tu-bottom-nav__next" style="flex:1; min-width:140px; text-align:right;">
+    <a href="../tennisabstract-novak-djokovic-and-neutralizing-the-second-serve-8211-heavy-/" style="color:var(--accent-dark, #047857); text-decoration:none; font-weight:600; font-size:0.92rem; display:inline-block;">
+      Bài tiếp →
+      <span style="font-size:0.82rem; font-weight:400; color:var(--ink-muted, #666); display:block; max-width:200px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Novak Djokovic and Neutralizing the Second Serve &#8211; Heavy Topspin</span>
+    </a>
+  </div>
+</nav>
+<!-- BOTTOM-NAV-END -->
+</article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.
+    </div>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.path", "navigation.expand", "navigation.indexes", "navigation.prune", "navigation.prev_next", "navigation.footer", "search.highlight", "search.suggest", "alternate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      
+        <script src="../../assets/js/extra.js"></script>
+      
+    
+  
+<footer class="tu-footer" style="background: var(--card); border-top: 1px solid var(--border); color: var(--ink-muted); padding: 1.5rem 1rem; text-align: center; font-size: 0.92rem; margin-top: 3rem;">
+<div style="font-size: 0.85rem; color: var(--accent-dark);">Trang web này được xây dựng với ❤️ cho cộng đồng quần vợt Việt Nam 🎾 by Henry Phạm</div>
+</footer>
+</body>
+</html>
+</body>
+</html>

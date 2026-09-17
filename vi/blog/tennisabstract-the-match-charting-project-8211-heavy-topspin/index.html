@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<!doctype html>
+<html lang="vi" class="no-js">
+  <head>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Bài viết kỹ thuật về thống kê tennis từ Thư viện Tennis Unified.">
+      
+      
+        <meta name="author" content="Henry Pham">
+      
+      
+      
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+          
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Dự án Thống kê Trận đấu (Match Charting Project) &#8211; Bóng nặng (Heavy Topspin) - Thư viện Tennis Unified</title>
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}
+      .article-content img {
+        max-width: 100% !important;
+        height: auto !important;
+        display: block !important;
+        margin: 1.5rem auto !important;
+        border-radius: 8px !important;
+      }
+      .separator {
+        text-align: center !important;
+        clear: both !important;
+        margin: 1.5rem 0 !important;
+      }
+      .separator a {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        display: block !important;
+      }
+    </style>
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+<link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
+<link rel="stylesheet" href="/assets/css/site.css"><script src="/assets/javascripts/lang-toggle.js" defer></script><script src="/assets/javascripts/darkmode.js" defer></script></head>
+<body>
+<h1>The Match Charting Project &#8211; Heavy Topspin</h1>
+<hr />
+
+<div class="article-content" style="font-size:1.05rem; line-height:1.8; margin-top:1.5rem;">
+<p>Tennis cần những số liệu thống kê tốt hơn. Và giờ đây, bạn có thể góp sức. Kể từ giải US Open, tôi đã phát triển một hệ thống để thống kê các trận đấu. Chỉ cần luyện tập một chút, bất kỳ ai cũng có thể sử dụng hệ thống này để ghi lại loại hình và hướng đi của mọi cú đánh trong một trận đấu&#8211;hướng giao bóng, hướng và độ sâu của cú trả giao bóng, các mô hình cú đánh, loại lỗi, hướng lỗi, và nhiều thông tin khác. Một trận đấu được thống kê đơn lẻ tạo ra một lượng dữ liệu khổng lồ. Tiềm năng thực sự của việc thống kê trận đấu nằm ở bức tranh toàn cảnh. Cho đến nay, chúng tôi đã có gần 50 trận đấu trong kho dữ liệu&#8211;chủ yếu từ các sự kiện ATP vào mùa thu này. Ngay cả với tập hợp dữ liệu tương đối nhỏ này, tôi đã có thể thực hiện một số nghiên cứu thú vị, chẳng hạn như phân tích tốc độ Novak Djokovic hóa giải lợi thế của người giao bóng, và đánh giá tính hiệu quả của cú bỏ nhỏ (drop shot). Càng nhiều trận đấu, càng nhiều tay vợt, càng nhiều mặt sân, thì kết quả càng chính xác. Bạn muốn tham gia cùng chúng tôi không? Tôi rất hy vọng bạn sẽ tham gia, và giai đoạn nghỉ giữa mùa giải là thời điểm tuyệt vời để bắt đầu. Bạn sẽ mất vài trận đấu để làm quen với hệ thống, vì vậy việc thống kê các trận đấu đã được ghi hình, với khả năng tua lại và xem đi xem lại các pha bóng, là cách tốt nhất để bắt đầu. Có hàng trăm, nếu không muốn nói là hàng nghìn trận đấu trên YouTube, cùng với nhiều nguồn khác như ESPN3 và TennisTV.</p>
+
+<p>Tôi đã tạo một bảng tính tương tác để giúp quá trình này trở nên dễ dàng nhất có thể. Tải xuống tại đây. Các ô được tô màu vàng là dành cho bạn. Những hàng đầu tiên là thông tin chung về trận đấu. Khi bạn thống kê từng pha bóng, bảng tính sẽ tự động cập nhật tỷ số và tạo thêm một hàng cho pha bóng tiếp theo. Sau khi tải xuống và mở bảng tính, hãy nhấp vào tab &#8220;Instructions&#8221; (Hướng dẫn). Ở đó, bạn sẽ tìm thấy hướng dẫn chi tiết về quy trình. Sẽ mất một chút thời gian để hiểu tất cả các chi tiết về cách hệ thống hoạt động, và sau đó bạn sẽ mất một hoặc hai trận đấu để thành thạo việc nhập dữ liệu. Chẳng bao lâu nữa, bạn sẽ thấy mình có thể thống kê các pha bóng theo thời gian thực một cách thoải mái. Trong một hoặc hai tuần tới, tôi sẽ cố gắng tổng hợp thêm một số tài liệu đào tạo bổ sung. Tuy nhiên, nếu bạn muốn bắt đầu ngay lập tức, không có gì ngăn cản bạn cả. Sau khi thống kê xong một trận đấu, hãy gửi lại bảng tính đã hoàn thành cho tôi (địa chỉ email của tôi nằm trong bảng tính), và tôi sẽ chạy nó qua chương trình của mình để tạo ra các số liệu thống kê chi tiết cho trận đấu đó.</p>
+
+<p>Ngoài bảng tính tương tác, bạn có thể thấy hữu ích khi xem một vài trận đấu đã được thống kê hoàn chỉnh, có lẽ là vừa theo dõi vừa đối chiếu: Serena Williams vs Jelena Jankovic, chung kết Charleston: bảng tính hoàn chỉnh | video YouTube; John Isner vs Rafael Nadal, chung kết Cincinnati: bảng tính hoàn chỉnh | video YouTube (các tay vợt thuận tay trái cũng khó thống kê như khi đối đầu với họ trên sân vậy&#8211;tôi khuyên bạn nên thống kê một vài trận đấu giữa hai tay vợt thuận tay phải trước khi thử sức với một tay vợt thuận tay trái). (Rất tiếc, hai video Youtube đó đã bị xóa do khiếu nại bản quyền. Bạn vẫn có thể tải xuống các bảng tính đã hoàn thành. Tại một thời điểm nào đó, tôi sẽ cố gắng tìm các trận đấu đã được thống kê có video Youtube ít có khả năng bị gỡ bỏ và đăng chúng ở đây thay thế.)</p>
+
+<p>Điều tôi yêu thích ở dự án này là chúng ta không cần hàng nghìn trận đấu để mọi thứ trở nên xứng đáng. (Mặc dù tôi sẽ không phàn nàn khi chúng ta tích lũy được hàng nghìn trận đấu!) Mỗi trận đấu được thống kê mà chúng ta có thể thêm vào cơ sở dữ liệu đều góp phần vào sự hiểu biết của chúng ta về hai tay vợt đó và quần vợt chuyên nghiệp nói chung. Tôi chân thành hy vọng bạn sẽ đóng góp. Cập nhật: Tôi đã đăng một vài bản cập nhật, mẹo và công cụ tại đây. Liên quan</p>
+</div>
+          <!-- BOTTOM-NAV-START -->
+<hr style="margin:2.5rem 0 1.5rem; border:0; border-top:1px solid var(--border, #e7e5e4);" />
+<nav class="tu-bottom-nav" aria-label="Page navigation" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin:1.5rem 0 2rem; padding:1rem 1.25rem; background:var(--card, #fff); border:1px solid var(--border, #e7e5e4); border-radius:12px; box-shadow:var(--shadow, 0 1px 3px rgba(0,0,0,.06));">
+  <div class="tu-bottom-nav__prev" style="flex:1; min-width:140px; text-align:left;">
+    <a href="../tennisabstract-the-grass-is-slowing-another-look-at-surface-speed-convergen/" style="color:var(--accent-dark, #047857); text-decoration:none; font-weight:600; font-size:0.92rem; display:inline-block;">
+      ← Bài trước
+      <span style="font-size:0.82rem; font-weight:400; color:var(--ink-muted, #666); display:block; max-width:200px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">The Grass is Slowing: Another Look at Surface Speed Convergence &#8211; Heavy Topspin</span>
+    </a>
+  </div>
+  <div class="tu-bottom-nav__home" style="display:flex; gap:0.6rem; align-items:center; justify-content:center; padding:0 0.5rem; font-weight:600;">
+    <a href="/vi/" style="color:var(--ink-muted, #555); text-decoration:none; padding:0.35rem 0.65rem; border-radius:6px; background:var(--bg, #f3f4f6); font-size:0.9rem;">🏠 Trang chủ</a>
+    <a href="/vi/blog/" style="color:var(--accent-dark, #047857); text-decoration:none; padding:0.35rem 0.65rem; border-radius:6px; background:var(--accent-light, #d1fae5); font-size:0.9rem;">📝 Mục lục Blog</a>
+  </div>
+  <div class="tu-bottom-nav__next" style="flex:1; min-width:140px; text-align:right;">
+    <a href="../tennisabstract-the-match-charting-project-quick-start-guide-8211-heavy-tops/" style="color:var(--accent-dark, #047857); text-decoration:none; font-weight:600; font-size:0.92rem; display:inline-block;">
+      Bài tiếp →
+      <span style="font-size:0.82rem; font-weight:400; color:var(--ink-muted, #666); display:block; max-width:200px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">The Match Charting Project: Quick Start Guide &#8211; Heavy Topspin</span>
+    </a>
+  </div>
+</nav>
+<!-- BOTTOM-NAV-END -->
+</article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.
+    </div>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.path", "navigation.expand", "navigation.indexes", "navigation.prune", "navigation.prev_next", "navigation.footer", "search.highlight", "search.suggest", "alternate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      
+        <script src="../../assets/js/extra.js"></script>
+      
+    
+  
+<footer class="tu-footer" style="background: var(--card); border-top: 1px solid var(--border); color: var(--ink-muted); padding: 1.5rem 1rem; text-align: center; font-size: 0.92rem; margin-top: 3rem;">
+<div style="font-size: 0.85rem; color: var(--accent-dark);">Trang web này được xây dựng với ❤️ cho cộng đồng quần vợt Việt Nam 🎾 by Henry Phạm</div>
+</footer>
+</body>
+</html>
+</body>
+</html>

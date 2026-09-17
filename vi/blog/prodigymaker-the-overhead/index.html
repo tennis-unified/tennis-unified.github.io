@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="vi" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Trong bài viết này, Chris chia sẻ những chi tiết kỹ thuật về cú overhead (đập bóng trên cao).">
+    <meta name="author" content="Chris Lewit">
+    <link rel="icon" href="/assets/images/favicon.png">
+    <title>Cú Overhead - Người Kiến Tạo Thần Đồng - Tennis Unified</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+    <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
+    <link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <style>
+      .article-content img {
+        max-width: 100% !important;
+        height: auto !important;
+        display: block !important;
+        margin: 1.5rem auto !important;
+        border-radius: 8px !important;
+      }
+      .wp-block-image {
+        margin: 1.5rem 0 !important;
+        text-align: center !important;
+      }
+      .wp-block-image figcaption {
+        font-size: 0.85rem;
+        color: var(--ink-muted, #64748b);
+        margin-top: 0.5rem;
+      }
+    </style>
+    <script src="/assets/javascripts/lang-toggle.js" defer></script>
+    <script src="/assets/javascripts/darkmode.js" defer></script>
+  </head>
+  <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="lime">
+<!-- FLATTENED-TOP-NAV-START -->
+<div class="tu-topnav">
+  <a href="/vi/" class="tu-nav-item" title="Home"><span class="tu-nav-emoji">🏠</span><span class="tu-nav-text">Trang chủ</span></a>
+  <a href="/vi/fundamentals/" class="tu-nav-item" title="Fundamentals"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Fundamentals</span></a>
+  <a href="/vi/doubles/" class="tu-nav-item" title="Doubles"><span class="tu-nav-emoji">👥</span><span class="tu-nav-text">Doubles</span></a>
+  <a href="/vi/stroke-analysis/" class="tu-nav-item" title="Stroke Analysis"><span class="tu-nav-emoji">🧠</span><span class="tu-nav-text">Stroke Analysis</span></a>
+  <a href="/vi/coach-video-library/" class="tu-nav-item" title="Coach Library"><span class="tu-nav-emoji">🎓</span><span class="tu-nav-text">Coach Library</span></a>
+  <a href="/vi/tennis-video-library/" class="tu-nav-item" title="Video Library"><span class="tu-nav-emoji">🎬</span><span class="tu-nav-text">Video Library</span></a>
+  <a href="/vi/tennis-technical-reference/" class="tu-nav-item" title="Technical Reference"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Technical Reference</span></a>
+  <a href="/vi/tnkb/" class="tu-nav-item" title="Knowledgebase"><span class="tu-nav-emoji">💡</span><span class="tu-nav-text">Knowledgebase</span></a>
+  <a href="/vi/tennis-evolution/" class="tu-nav-item" title="Tennis Evolution"><span class="tu-nav-emoji">⚡</span><span class="tu-nav-text">Tennis Evolution</span></a>
+  <a href="/vi/blog/" class="tu-nav-item" title="Blog"><span class="tu-nav-emoji">📝</span><span class="tu-nav-text">Blog</span></a>
+  <a href="/vi/book/" class="tu-nav-item" title="Master Book"><span class="tu-nav-emoji">📕</span><span class="tu-nav-text">Master Book</span></a>
+  <a href="/vi/books/" class="tu-nav-item" title="Books Catalog"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Books Catalog</span></a>
+  <a href="/blog/prodigymaker-the-overhead/" class="tu-nav-item tu-nav-lang" data-lang-toggle title="Switch to English"><span class="tu-nav-emoji">🌐</span><span class="tu-nav-text">English</span></a>
+  <button class="tu-nav-item tu-nav-darkmode" title="Dark Mode" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button>
+</div>
+<!-- FLATTENED-TOP-NAV-END -->
+
+<nav class="tu-breadcrumb" aria-label="Breadcrumb">
+  <ol class="tu-breadcrumb__list">
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/vi/">Trang chủ</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/vi/blog/">Blog</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/blog/#prodigy-maker-chris-lewit">The Prodigy Maker</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item tu-breadcrumb__current" aria-current="page">Cú Overhead - Người Kiến Tạo Thần Đồng</li>
+  </ol>
+</nav>
+
+<div class="md-container" data-md-component="container">
+  <main class="md-main" data-md-component="main">
+    <div class="md-main__inner md-grid">
+      <div class="md-content" data-md-component="content">
+        <article class="md-content__inner md-typeset">
+          <h1 id="prodigymaker-the-overhead">Cú Overhead - Người Kiến Tạo Thần Đồng<a class="headerlink" href="#prodigymaker-the-overhead" title="Permanent link"></a></h1>
+          <p style="color:var(--ink-muted, #666); font-size:0.95rem; margin-top:-0.5rem; margin-bottom:1.5rem;">
+            By <strong>Chris Lewit</strong> · <em>The Prodigy Maker (2020-05-03)</em> · <a href="https://prodigymaker.com/index.php/2020/05/03/the-overhead/" target="_blank" rel="noopener noreferrer">Original Article ↗</a>
+          </p>
+          <hr />
+          
+          <div class="article-content" style="font-size:1.05rem; line-height:1.8; margin-top:1.5rem;">
+<hr class="wp-block-separator is-style-wide"/>
+
+
+
+<p class="wp-block-paragraph">Tôi thường nói với các học viên của mình rằng một cú overhead tuyệt vời là yếu tố thiết yếu để phát triển lối chơi tấn công đẳng cấp thế giới. Tại sao? Bởi vì bất kỳ tay vợt trình độ cao nào cũng sẽ tìm cách hóa giải đối thủ tấn công bằng những cú lốp bóng cao và thử thách khả năng thực hiện cú smash (đập bóng trên cao) của họ.</p>
+
+
+
+<p class="wp-block-paragraph">Thật không may, cú overhead thường ít được tập luyện. Trong bài viết này, tôi sẽ chia sẻ triết lý của mình về cú overhead và một số chi tiết kỹ thuật quan trọng. Lần tới khi John và tôi quay phim, tôi sẽ bổ sung thêm một số bài tập overhead yêu thích của mình.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Chốt chặn quan trọng</strong></p>
+
+
+
+<p class="wp-block-paragraph">Mặc dù cú overhead không được thực hiện thường xuyên như các cú đánh cuối sân hay giao bóng, nhưng các cú smash thường xuất hiện ở những thời điểm quan trọng trong trận đấu, làm tăng tầm quan trọng của chúng. Ngoài ra, nếu mục tiêu là xây dựng một lối chơi toàn diện trên mọi mặt sân, thì cú overhead chính là chốt chặn, là chất keo gắn kết lối chơi toàn diện đó lại với nhau.</p>
+
+
+
+<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile"><figure class="wp-block-media-text__media"><video controls src="http://prodigymaker.com/wp-content/uploads/2020/05/video1-13.mp4"></video></figure><div class="wp-block-media-text__content">
+<p class="has-text-align-center has-small-font-size wp-block-paragraph"><em>Một cú overhead tuyệt vời là chốt chặn của một lối chơi tấn công xuất sắc.</em></p>
+</div></div>
+
+
+
+<p class="wp-block-paragraph">Sự thành công của một tay vợt trên lưới chỉ mạnh bằng mắt xích yếu nhất của họ. Trong trường hợp này, đó thường là cú overhead vì nó được tập luyện kém và không thường xuyên. Việc các tay vợt dành nhiều thời gian cho kỹ năng volley nhưng lại bỏ bê cú smash là điều phổ biến, mặc dù một số tay vợt thậm chí không dành chút thời gian nào cho các kỹ năng trên lưới.</p>
+
+
+
+<p class="wp-block-paragraph">Sai lầm lớn. Một cú smash tồi sẽ làm giảm sự tự tin của bạn khi lên lưới và kết thúc các pha bóng một cách quyết liệt. Pete Sampras, có lẽ là tay vợt tấn công thuần túy vĩ đại nhất trong lịch sử, cũng có thể là người sở hữu cú smash vĩ đại nhất.</p>
+
+
+
+<p class="wp-block-paragraph">Kỹ năng overhead thành thạo cũng rất quan trọng để thành công trong đánh đôi, điều này quan trọng ở cả cấp độ câu lạc bộ giải trí và quần vợt đại học. Đừng bỏ bê cú smash.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Hãy khiến đối thủ sợ cú smash</strong></p>
+
+
+
+<p class="wp-block-paragraph">Điều rất quan trọng là đối thủ phải tôn trọng và sợ hãi cú smash của bạn. Gần đây tôi có nói với một tay vợt trẻ xếp hạng quốc gia rằng việc sở hữu một cú overhead smash tuyệt vời có thể cải thiện đáng kể tỷ lệ thành công khi cậu ấy lên lưới. Tại sao? Bởi vì nếu đối thủ tôn trọng và sợ cú smash của cậu ấy, họ sẽ tránh lốp bóng và cố gắng đánh bóng vượt qua cậu ấy sang trái hoặc phải—chứ không bao giờ là qua đầu.</p>
+
+
+
+<div class="wp-block-media-text alignwide is-stacked-on-mobile"><figure class="wp-block-media-text__media"><video controls src="http://prodigymaker.com/wp-content/uploads/2020/05/video1-14.mp4"></video></figure><div class="wp-block-media-text__content">
+<p class="has-text-align-center has-small-font-size wp-block-paragraph"><em>Mọi tay vợt nên nỗ lực để biến cú smash thành một mắt xích mạnh mẽ.</em></p>
+</div></div>
+
+
+
+<p class="wp-block-paragraph">Điều này cải thiện cơ hội dự đoán hoặc đoán đúng hướng trên lưới. Đối thủ bị giới hạn trong hai lựa chọn cho cú đánh vượt qua thay vì ba. Vì vậy, tôi tin rằng việc có một cú smash tuyệt vời thường sẽ cải thiện tỷ lệ thành công thống kê của một tay vợt khi lên lưới.</p>
+
+
+
+<p class="wp-block-paragraph">Việc tạo ra nỗi sợ hãi về cú smash là rất quan trọng ngay từ đầu trận đấu—và nó bắt đầu từ lúc khởi động. Một huấn luyện viên thông thái từng nói với tôi rằng khi đối thủ lốp bóng cho tôi trong lúc khởi động, hãy smash quả bóng đó với toàn bộ sức mạnh và sự quyết liệt. Tại sao? Để khẳng định: “Đừng lốp bóng cho tôi, người anh em, nếu không tôi sẽ smash quả bóng đó thẳng vào mặt bạn!”</p>
+
+
+
+<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile"><figure class="wp-block-media-text__media"><video controls src="http://prodigymaker.com/wp-content/uploads/2020/05/video1-15.mp4"></video></figure><div class="wp-block-media-text__content">
+<p class="has-text-align-center has-small-font-size wp-block-paragraph"><em>Hãy gieo rắc nỗi sợ hãi về cú smash của bạn vào đối thủ ngay từ lúc khởi động và những giai đoạn đầu trận đấu.</em></p>
+</div></div>
+
+
+
+<p class="wp-block-paragraph">Việc khắc sâu nỗi sợ hãi đó vào đối thủ ngay từ những giai đoạn đầu của trận đấu cũng rất quan trọng. Nếu cú smash bị hỏng trong vài lần đầu tiên khi vào điểm, điều này sẽ khiến đối thủ tự tin lốp bóng nhiều hơn, điều có thể trở thành một cơn đau đầu. Nếu bạn giành được sự tôn trọng của đối thủ, họ sẽ thận trọng và ngần ngại hơn khi thực hiện cú lốp bóng trong những thời điểm quan trọng, và điều này có thể cải thiện cơ hội đoán đúng hướng và thực hiện một cú volley ghi điểm của bạn.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Đừng bao giờ bỏ lỡ một cú smash</strong></p>
+
+
+
+<p class="wp-block-paragraph">Tôi nhớ cú smash của Andre Agassi. Nó thật tuyệt vời. Mọi người luôn nói về các cú đánh cuối sân của anh ấy, nhưng tôi cũng luôn bị ấn tượng bởi cú overhead của anh ấy. Andre gần như không bao giờ bỏ lỡ một cú smash, đặc biệt là khi đó là một thời điểm quan trọng.</p>
+
+
+
+<p class="wp-block-paragraph">Điều này cho phép anh ấy tấn công quyết liệt và lên lưới mà không phải lo ngại. Tất cả các tay vợt nên noi gương sự làm chủ cú smash này để họ có thể tự tin lên lưới.</p>
+
+
+
+<div class="wp-block-media-text alignwide is-stacked-on-mobile"><figure class="wp-block-media-text__media"><video controls src="http://prodigymaker.com/wp-content/uploads/2020/05/video1-16.mp4"></video></figure><div class="wp-block-media-text__content">
+<p class="has-small-font-size wp-block-paragraph"><em>Andre gần như không bao giờ bỏ lỡ một cú smash.</em></p>
+</div></div>
+
+
+
+<p class="wp-block-paragraph">Một tay vợt tấn công vĩ đại khác với cú overhead đáng kinh ngạc là John McEnroe. Khi John thực hiện một cú smash, đó là một pha ghi điểm. Và tất cả các tay vợt hàng đầu—từ các tay vợt trẻ ưu tú đến chuyên nghiệp—đều có sự làm chủ cú overhead tương tự. Các cú smash của họ luôn được căn chỉnh, sẵn sàng và chuẩn xác.</p>
+
+
+
+<p class="wp-block-paragraph">Nhưng không gì có thể ngăn cản một tay vợt tấn công lưới hơn là sự thiếu tự tin vào cú smash. Và việc có một cú smash tồi thường buộc các tay vợt phải cố gắng quá sức trong pha tiếp cận hoặc cú volley đầu tiên, dẫn đến những lỗi không đáng có.</p>
+
+
+
+<p class="wp-block-paragraph">Nếu bạn là một huấn luyện viên đang đọc bài viết này, điều rất quan trọng là phải giải thích các khái niệm triết học được trình bày ở trên và thuyết phục học viên của bạn về giá trị của việc tập luyện và phát triển một cú smash tuyệt vời—bởi vì nhiều đứa trẻ không hiểu tại sao chúng nên tập luyện các cú smash. Đây sẽ là một bài toán khó đối với những tay vợt chỉ thích đánh cuối sân—nhưng bạn có thể làm được.</p>
+
+
+
+<p class="has-normal-font-size wp-block-paragraph"><strong>Bộ chân (Footwork)</strong></p>
+
+
+
+<p class="wp-block-paragraph">Động tác drop-step cùng với các bước di chuyển chéo (crossover steps) mạnh mẽ và nhanh nhẹn là chìa khóa để lùi lại đón những cú lốp bóng khó. Các tay vợt cũng có thể di chuyển ngang lùi về phía sau đối với những cú lốp bóng dễ hơn trong tầm với.</p>
+
+
+
+<div class="wp-block-media-text alignwide is-stacked-on-mobile"><figure class="wp-block-media-text__media"><video controls src="http://prodigymaker.com/wp-content/uploads/2020/05/video1-17.mp4"></video></figure><div class="wp-block-media-text__content">
+<p class="has-small-font-size wp-block-paragraph"><em>Các bước di chuyển chéo là chìa khóa để lùi lại đón những cú lốp bóng sâu.</em></p>
+</div></div>
+
+
+
+<p class="has-normal-font-size wp-block-paragraph"><strong>Chuẩn bị</strong></p>
+
+
+
+<p class="wp-block-paragraph">Kiểu chuẩn bị đầu tiên mà tôi dạy là hai tay kết nối với vợt trong suốt chuyển động đầu tiên. Kiểu chuẩn bị thứ hai có thể chấp nhận được là hai tay tách ra sớm hơn giống như bắt đầu một cú giao bóng. Tuy nhiên, ở kiểu này, động tác đưa vợt lên thường được rút gọn và hiếm khi các tay vợt thực hiện các vòng vung vợt đầy đủ như khi giao bóng.</p>
+
+
+
+<div class="wp-block-media-text alignwide is-stacked-on-mobile"><figure class="wp-block-media-text__media"><video controls src="http://prodigymaker.com/wp-content/uploads/2020/05/video1-18.mp4"></video></figure><div class="wp-block-media-text__content">
+<p class="has-small-font-size wp-block-paragraph"><em>Hai tay có thể giữ kết nối trong quá trình chuẩn bị, hoặc tách ra sớm hơn như trong cú giao bóng.</em></p>
+</div></div>
+
+
+
+<p class="has-normal-font-size wp-block-paragraph"><strong>Có nên nhảy hay không?</strong></p>
+
+
+
+<p class="wp-block-paragraph">Một số huấn luyện viên dạy cú overhead theo cách đứng yên với đôi chân bám chặt xuống mặt sân. Họ tin rằng điều này mang lại sự đơn giản và ổn định.</p>
+
+
+
+<p class="wp-block-paragraph">Dạy cú smash theo cách này cũng tốt, và thực tế, đôi khi tôi sẽ yêu cầu học viên của mình đánh với đôi chân bám trụ để cải thiện sự cân bằng và vị trí. Tuy nhiên, các cú overhead chuyên nghiệp hiện đại mang tính động và tôi thích khuyến khích học viên của mình nhảy một cách có kiểm soát, rời khỏi mặt sân khi thực hiện cú smash.</p>
+
+
+
+<div class="wp-block-media-text alignwide is-stacked-on-mobile"><figure class="wp-block-media-text__media"><video controls src="http://prodigymaker.com/wp-content/uploads/2020/05/video1-19.mp4"></video></figure><div class="wp-block-media-text__content">
+<p class="has-small-font-size wp-block-paragraph"><em>Học cú overhead với đôi chân bám trụ có thể mang lại sự đơn giản và ổn định.</em></p>
+</div></div>
+
+
+
+<p class="has-normal-font-size wp-block-paragraph"><strong>Xoay trong khớp vai (Internal Shoulder Rotation)</strong></p>
+
+
+
+<p class="wp-block-paragraph">Tôi dạy học viên của mình thực hiện động tác bung cổ tay xuống dưới một cách cực đoan để học cách đưa bóng xuống sân và cách làm cho bóng nảy cao qua đầu đối thủ hoặc hàng rào. Sự xoay trong khớp vai là chìa khóa. Một điểm tham chiếu mà tôi sử dụng là kết thúc với đầu vợt ở trung tâm cơ thể, giữ khuỷu tay cao.</p>
+
+
+
+<div class="wp-block-media-text alignwide is-stacked-on-mobile"><figure class="wp-block-media-text__media"><video controls src="http://prodigymaker.com/wp-content/uploads/2020/05/video1-20.mp4"></video></figure><div class="wp-block-media-text__content">
+<p class="has-small-font-size wp-block-paragraph"><em>Xoay cánh tay trong khớp vai vào trong là chìa khóa.</em></p>
+</div></div>
+
+
+
+<p class="has-normal-font-size wp-block-paragraph"><strong>Cú nhảy cắt kéo (Scissor Kick)</strong></p>
+
+
+
+<p class="wp-block-paragraph">Khi cú lốp bóng bắt đầu bay qua đầu tay vợt, một kỹ thuật phổ biến là sử dụng bộ chân nhảy cắt kéo để cho phép cơ thể nhảy lùi lại một cách bùng nổ nhằm tiếp cận bóng nhưng vẫn tiếp đất với sự cân bằng.</p>
+
+
+
+<div class="wp-block-media-text alignwide is-stacked-on-mobile"><figure class="wp-block-media-text__media"><video controls src="http://prodigymaker.com/wp-content/uploads/2020/05/video1-21.mp4"></video></figure><div class="wp-block-media-text__content">
+<p class="has-small-font-size wp-block-paragraph"><em>Sử dụng cú nhảy cắt kéo khi bóng có nguy cơ bay qua đầu bạn.</em></p>
+</div></div>
+
+
+
+<p class="has-normal-font-size wp-block-paragraph"><strong>Cắt (Slice), Xoáy lên (Kick), hay Phẳng (Flat)?</strong></p>
+
+
+
+<p class="wp-block-paragraph">Nhìn chung, các tay vợt nên thực hiện cú overhead một cách mạnh mẽ và phẳng hơn, hoặc với một chút xoáy cắt (slice). Một số trẻ sẽ đánh vào cạnh trong của bóng và thực hiện động tác sấp cổ tay quá mức (over pronation). Huấn luyện viên cũ của tôi, Gilad Bloom, luôn bảo học viên của mình “hơi cắt nhẹ” để giúp sửa loại động tác sấp cổ tay quá mức này.</p>
+
+
+
+<p class="wp-block-paragraph">Khi một cú lốp bóng bay rộng sang phía thuận tay, việc thực hiện một cú overhead cắt góc, cắt vào cạnh ngoài của bóng là điều phổ biến. Điều này có hành động cổ tay sắc bén hơn và tăng tốc trên cạnh bóng. Và tay vợt giữ tư thế nghiêng người nhiều hơn trong suốt cú đánh so với một cú smash mạnh từ giữa sân.</p>
+
+
+
+<p class="wp-block-paragraph">Khi cú lốp bóng bay qua đầu tay vợt với bóng đi sâu, tôi dạy học viên của mình thực hiện cú overhead xoáy lên (kick) mang tính phòng thủ, tạo sự an toàn và xoáy lên cho cú đánh, nhằm hóa giải cú lốp bóng khó. Đây là một cú đánh phòng thủ hơn là một cú đánh ghi điểm.</p>
+
+
+
+<div class="wp-block-media-text alignwide is-stacked-on-mobile"><figure class="wp-block-media-text__media"><video controls src="http://prodigymaker.com/wp-content/uploads/2020/05/video1-22.mp4"></video></figure><div class="wp-block-media-text__content">
+<p class="has-small-font-size wp-block-paragraph"><em>Khi bóng bay rộng sang phía thuận tay, hãy thực hiện cú overhead cắt góc.</em></p>
+</div></div>
+
+
+
+<p class="has-normal-font-size wp-block-paragraph"><strong>Cú Overhead trái tay (Backhand Overhead)</strong></p>
+
+
+
+<p class="wp-block-paragraph">Hiếm khi được thực hiện hoặc tập luyện, cú overhead trái tay là một loại hình nghệ thuật đã bị lãng quên. Nhưng đó là một vũ khí tuyệt vời để có khi bạn không thể vào vị trí để thực hiện một cú overhead bình thường.</p>
+
+
+
+<p class="wp-block-paragraph">Khuỷu tay cao và lưng quay về phía lưới. Sự mở rộng cực độ của cổ tay là chìa khóa để tạo ra sức mạnh và sự an toàn. Nhưng đây thường là một cú đánh khó đối với trẻ nhỏ để làm chủ.</p>
+
+
+
+<div class="wp-block-media-text alignwide is-stacked-on-mobile"><figure class="wp-block-media-text__media"><video controls src="http://prodigymaker.com/wp-content/uploads/2020/05/video1-23.mp4"></video></figure><div class="wp-block-media-text__content">
+<p class="has-small-font-size wp-block-paragraph"><em>Hãy học cách thực hiện cú overhead trái tay trong tình huống phù hợp.</em></p>
+</div></div>
+
+
+
+<p class="has-normal-font-size wp-block-paragraph"><strong>Tập luyện cú Smash</strong></p>
+
+
+
+<p class="wp-block-paragraph">Khi tập luyện, hãy cố gắng kết hợp các cú smash với các cú volley, và các cú smash với các pha tiếp cận và volley, để có tính thực tế hơn và cải thiện sự làm chủ. Bắt đầu với các bài tập smash đơn lẻ và sau đó tiến tới các bài tập kết hợp smash/volley và tiếp cận/volley/smash. Để đạt hiệu quả tối đa, hãy kết hợp lối chơi cuối sân với tiếp cận, volley và smash—tất cả trong một bài tập.</p>
+
+
+
+<div class="wp-block-media-text alignwide is-stacked-on-mobile"><figure class="wp-block-media-text__media"><video controls src="http://prodigymaker.com/wp-content/uploads/2020/05/video1-24.mp4"></video></figure><div class="wp-block-media-text__content">
+<p class="has-small-font-size wp-block-paragraph"><em>Để tạo tính thực tế, các cú smash nên được kết hợp với các pha tiếp cận và volley.</em></p>
+</div></div>
+
+
+
+<p class="wp-block-paragraph">Bây giờ hãy đi tập luyện đi! Vamos!</p>
+
+
+
+<hr class="wp-block-separator is-style-wide"/>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="2415" data-permalink="https://prodigymaker.com/index.php/2020/05/01/wisdom-of-toni-nadal-trust/chris1-5/" data-orig-file="https://i0.wp.com/prodigymaker.com/wp-content/uploads/2020/05/chris1.jpg?fit=664%2C760&amp;ssl=1" data-orig-size="664,760" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1587845758&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="chris1" data-image-description="" data-image-caption="&lt;p&gt;Chris Lewit, the Prodigy Maker&lt;/p&gt;
+" data-large-file="https://i0.wp.com/prodigymaker.com/wp-content/uploads/2020/05/chris1.jpg?fit=664%2C760&amp;ssl=1" src="https://i0.wp.com/prodigymaker.com/wp-content/uploads/2020/05/chris1.jpg?resize=190%2C218" alt="" class="wp-image-2415" srcset="https://i0.wp.com/prodigymaker.com/wp-content/uploads/2020/05/chris1.jpg?w=664&amp;ssl=1 664w, https://i0.wp.com/prodigymaker.com/wp-content/uploads/2020/05/chris1.jpg?resize=262%2C300&amp;ssl=1 262w" sizes="auto, (max-width: 190px) 100vw, 190px" style="max-width: 100%; height: auto; display: block; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.12);" /><figcaption>Chris Lewit, Người Kiến Tạo Thần Đồng</figcaption></figure>
+
+
+
+<p class="wp-block-paragraph">Theo dõi Chris tại các trang web và liên kết mạng xã hội sau:</p>
+
+
+
+<p class="wp-block-paragraph">Website: www.chrislewit.com<br>Blog: www.ProdigyMaker.com<br>Facebook: www.facebook.com/ChrisLewitTennisAcademy<br>Twitter: www.twitter.com/chrislewit<br>LinkedIn: www.linkedin.com/company/chris-lewit-tennis-academy<br>Instagram: www.instagram.com/chrislewittennis/<br>YouTube: www.youtube.com/ChrisLewit<br>iTunes: https://podcasts.apple.com/us/podcast/the-prodigy-maker-tennis-show/</p>
+</div>
+          <!-- BOTTOM-NAV-START -->
+<hr style="margin:2.5rem 0 1.5rem; border:0; border-top:1px solid var(--border, #e7e5e4);" />
+<nav class="tu-bottom-nav" aria-label="Page navigation" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin:1.5rem 0 2rem; padding:1rem 1.25rem; background:var(--card, #fff); border:1px solid var(--border, #e7e5e4); border-radius:12px; box-shadow:var(--shadow, 0 1px 3px rgba(0,0,0,.06));">
+  <div class="tu-bottom-nav__prev" style="flex:1; min-width:140px; text-align:left;">
+    <a href="../prodigymaker-building-invincible-volleys-part-2-two-primary-styles/" style="color:var(--accent-dark, #047857); text-decoration:none; font-weight:600; font-size:0.92rem; display:inline-block;">
+      ← Bài trước
+      <span style="font-size:0.82rem; font-weight:400; color:var(--ink-muted, #666); display:block; max-width:200px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Building Invincible Volleys Part 2: Two Primary Styles</span>
+    </a>
+  </div>
+  <div class="tu-bottom-nav__home" style="display:flex; gap:0.6rem; align-items:center; justify-content:center; padding:0 0.5rem; font-weight:600;">
+    <a href="/vi/" style="color:var(--ink-muted, #555); text-decoration:none; padding:0.35rem 0.65rem; border-radius:6px; background:var(--bg, #f3f4f6); font-size:0.9rem;">🏠 Trang chủ</a>
+    <a href="/vi/blog/" style="color:var(--accent-dark, #047857); text-decoration:none; padding:0.35rem 0.65rem; border-radius:6px; background:var(--accent-light, #d1fae5); font-size:0.9rem;">📝 Mục lục Blog</a>
+  </div>
+  <div class="tu-bottom-nav__next" style="flex:1; min-width:140px; text-align:right;">
+    <a href="../prodigymaker-wisdom-of-toni-nadal-first-long-then-in/" style="color:var(--accent-dark, #047857); text-decoration:none; font-weight:600; font-size:0.92rem; display:inline-block;">
+      Bài tiếp →
+      <span style="font-size:0.82rem; font-weight:400; color:var(--ink-muted, #666); display:block; max-width:200px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Wisdom of Toni Nadal: First long, Then IN</span>
+    </a>
+  </div>
+</nav>
+<!-- BOTTOM-NAV-END -->
+        </article>
+      </div>
+    </div>
+  </main>
+  <footer class="tu-footer">
+    <p>© 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.</p>
+  </footer>
+</div>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="vi" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Thân gửi các bạn đồng nghiệp và những bộ óc đam mê quần vợt, Dưới đây là bài đọc giải trí nhẹ nhàng cuối tuần về thống kê và các lỗi ngụy biện logic. Rất đáng đọc cho tất cả các huấn luyện viên quan tâm đến phương pháp huấn luyện dựa trên dữ liệu ————— Mối quan hệ...">
+    <meta name="author" content="Chris Lewit">
+    <link rel="icon" href="/assets/images/favicon.png">
+    <title>Ngụy biện tương quan - The Prodigy Maker - Tennis Unified</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+    <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
+    <link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <style>
+      .article-content img {
+        max-width: 100% !important;
+        height: auto !important;
+        display: block !important;
+        margin: 1.5rem auto !important;
+        border-radius: 8px !important;
+      }
+      .wp-block-image {
+        margin: 1.5rem 0 !important;
+        text-align: center !important;
+      }
+      .wp-block-image figcaption {
+        font-size: 0.85rem;
+        color: var(--ink-muted, #64748b);
+        margin-top: 0.5rem;
+      }
+    </style>
+    <script src="/assets/javascripts/lang-toggle.js" defer></script>
+    <script src="/assets/javascripts/darkmode.js" defer></script>
+  </head>
+  <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="lime">
+<!-- FLATTENED-TOP-NAV-START -->
+<div class="tu-topnav">
+  <a href="/vi/" class="tu-nav-item" title="Home"><span class="tu-nav-emoji">🏠</span><span class="tu-nav-text">Trang chủ</span></a>
+  <a href="/vi/fundamentals/" class="tu-nav-item" title="Fundamentals"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Fundamentals</span></a>
+  <a href="/vi/doubles/" class="tu-nav-item" title="Doubles"><span class="tu-nav-emoji">👥</span><span class="tu-nav-text">Doubles</span></a>
+  <a href="/vi/stroke-analysis/" class="tu-nav-item" title="Stroke Analysis"><span class="tu-nav-emoji">🧠</span><span class="tu-nav-text">Stroke Analysis</span></a>
+  <a href="/vi/coach-video-library/" class="tu-nav-item" title="Coach Library"><span class="tu-nav-emoji">🎓</span><span class="tu-nav-text">Coach Library</span></a>
+  <a href="/vi/tennis-video-library/" class="tu-nav-item" title="Video Library"><span class="tu-nav-emoji">🎬</span><span class="tu-nav-text">Video Library</span></a>
+  <a href="/vi/tennis-technical-reference/" class="tu-nav-item" title="Technical Reference"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Technical Reference</span></a>
+  <a href="/vi/tnkb/" class="tu-nav-item" title="Knowledgebase"><span class="tu-nav-emoji">💡</span><span class="tu-nav-text">Knowledgebase</span></a>
+  <a href="/vi/tennis-evolution/" class="tu-nav-item" title="Tennis Evolution"><span class="tu-nav-emoji">⚡</span><span class="tu-nav-text">Tennis Evolution</span></a>
+  <a href="/vi/blog/" class="tu-nav-item" title="Blog"><span class="tu-nav-emoji">📝</span><span class="tu-nav-text">Blog</span></a>
+  <a href="/vi/book/" class="tu-nav-item" title="Master Book"><span class="tu-nav-emoji">📕</span><span class="tu-nav-text">Master Book</span></a>
+  <a href="/vi/books/" class="tu-nav-item" title="Books Catalog"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Books Catalog</span></a>
+  <a href="/blog/prodigymaker-the-correlation-fallacy/" class="tu-nav-item tu-nav-lang" data-lang-toggle title="Switch to English"><span class="tu-nav-emoji">🌐</span><span class="tu-nav-text">English</span></a>
+  <button class="tu-nav-item tu-nav-darkmode" title="Dark Mode" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button>
+</div>
+<!-- FLATTENED-TOP-NAV-END -->
+
+<nav class="tu-breadcrumb" aria-label="Breadcrumb">
+  <ol class="tu-breadcrumb__list">
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/vi/">Trang chủ</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/vi/blog/">Blog</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/blog/#prodigy-maker-chris-lewit">The Prodigy Maker</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item tu-breadcrumb__current" aria-current="page">Ngụy biện tương quan trong huấn luyện quần vợt</li>
+  </ol>
+</nav>
+
+<div class="md-container" data-md-component="container">
+  <main class="md-main" data-md-component="main">
+    <div class="md-main__inner md-grid">
+      <div class="md-content" data-md-component="content">
+        <article class="md-content__inner md-typeset">
+          <h1 id="prodigymaker-the-correlation-fallacy">Ngụy biện tương quan trong huấn luyện quần vợt<a class="headerlink" href="#prodigymaker-the-correlation-fallacy" title="Permanent link"></a></h1>
+          <p style="color:var(--ink-muted, #666); font-size:0.95rem; margin-top:-0.5rem; margin-bottom:1.5rem;">
+            By <strong>Chris Lewit</strong> · <em>The Prodigy Maker (2019-03-30)</em> · <a href="https://prodigymaker.com/index.php/2019/03/30/the-correlation-fallacy/" target="_blank" rel="noopener noreferrer">Original Article ↗</a>
+          </p>
+          <hr />
+          
+          <div class="article-content" style="font-size:1.05rem; line-height:1.8; margin-top:1.5rem;">
+<p>Thân gửi các bạn đồng nghiệp và những bộ óc đam mê quần vợt,</p>
+<p>Dưới đây là bài đọc giải trí nhẹ nhàng cuối tuần về thống kê và các lỗi ngụy biện logic.</p>
+<p>Rất đáng đọc cho tất cả các huấn luyện viên quan tâm đến phương pháp huấn luyện dựa trên dữ liệu</p>
+<p>—————</p>
+<p>Ngụy biện tương quan</p>
+<p>Đừng nhầm lẫn giữa tương quan và nhân quả!</p>
+<p>Tương quan không đồng nghĩa với nhân quả</p>
+<p>Không nên nhầm lẫn với tương quan ảo tưởng.</p>
+<p>Trong thống kê, nhiều phép kiểm định thống kê tính toán mối tương quan giữa các biến và khi phát hiện thấy hai biến có tương quan, người ta rất dễ mặc định rằng điều này chứng minh biến này gây ra biến kia.[1][2]</p>
+<p>Quan điểm cho rằng &#8220;tương quan chứng minh nhân quả&#8221; được coi là một lỗi ngụy biện về nguyên nhân khi hai sự kiện xảy ra cùng lúc bị coi là đã xác lập một mối quan hệ nhân-quả. Lỗi ngụy biện này còn được gọi trong tiếng Latin là cum hoc ergo propter hoc, nghĩa là &#8220;với điều này, do đó vì điều này&#8221;, và &#8220;nguyên nhân giả&#8221;. Một lỗi ngụy biện tương tự, rằng một sự kiện nối tiếp sự kiện khác thì ắt hẳn phải là hệ quả của sự kiện đầu tiên, chính là ngụy biện post hoc ergo propter hoc (tiếng Latin có nghĩa là &#8220;sau điều này, do đó vì điều này.&#8221;)</p>
+<p>Ví dụ, trong một trường hợp được nghiên cứu rộng rãi, nhiều nghiên cứu dịch tễ học đã chỉ ra rằng phụ nữ sử dụng liệu pháp thay thế hormone kết hợp (HRT) cũng có tỷ lệ mắc bệnh mạch vành (CHD) thấp hơn mức trung bình, khiến các bác sĩ đưa ra giả thuyết rằng HRT có tác dụng bảo vệ chống lại bệnh mạch vành. Nhưng các thử nghiệm có đối chứng ngẫu nhiên lại chỉ ra rằng HRT làm tăng một lượng nhỏ nhưng có ý nghĩa thống kê về nguy cơ mắc bệnh mạch vành. Việc phân tích lại dữ liệu từ các nghiên cứu dịch tễ học cho thấy những phụ nữ sử dụng HRT có nhiều khả năng thuộc các nhóm kinh tế - xã hội cao hơn (ABC1), có chế độ ăn uống và tập luyện tốt hơn mức trung bình. Việc sử dụng HRT và tỷ lệ mắc bệnh mạch vành giảm là những hiệu ứng trùng hợp của một nguyên nhân chung (tức là những lợi ích đi kèm với địa vị kinh tế - xã hội cao hơn), chứ không phải là quan hệ nhân quả trực tiếp như đã từng lầm tưởng.[3]</p>
+<p>Giống như bất kỳ lỗi ngụy biện logic nào, việc nhận ra lý luận đằng sau một lập luận là có sơ hở không có nghĩa là kết luận rút ra là sai. Trong trường hợp trên, nếu các thử nghiệm phát hiện ra rằng liệu pháp thay thế hormone thực sự có tác động tiêu cực đến xác suất mắc bệnh mạch vành thì giả định về nhân quả sẽ đúng, mặc dù logic đằng sau giả định đó vẫn có sơ hở. Thậm chí, một số ít người còn tiến xa hơn, sử dụng tương quan làm cơ sở để kiểm định một giả thuyết nhằm thiết lập mối quan hệ nhân quả thực sự; ví dụ như kiểm định nhân quả Granger, phép đối chiếu chéo hội tụ, và dòng thông tin Liang-Kleeman[4].[cần làm rõ]</p>
+<p>Ví dụ về việc suy diễn nhân quả một cách phi logic từ mối tương quan</p>
+<p>B gây ra A (nhân quả đảo ngược hoặc quan hệ nhân quả ngược chiều)</p>
+<p>Nhân quả đảo ngược, quan hệ nhân quả ngược chiều hoặc sai hướng là một lỗi ngụy biện không chính thức về nguyên nhân đáng ngờ, trong đó nguyên nhân và kết quả bị hoán đổi cho nhau. Nguyên nhân bị cho là kết quả và ngược lại.</p>
+<p>Ví dụ 1</p>
+<p>Cối xay gió được quan sát thấy quay càng nhanh thì gió được quan sát thấy càng lớn.</p>
+<p>Do đó gió được tạo ra bởi sự quay của cối xay gió. (Hoặc, nói một cách đơn giản: cối xay gió, đúng như tên gọi của chúng, là những cỗ máy dùng để tạo ra gió.)</p>
+<p>Trong ví dụ này, sự tương quan (tính đồng thời) giữa hoạt động của cối xay gió và vận tốc gió không có nghĩa là gió do cối xay gió tạo ra. Mà thực tế là theo chiều ngược lại, được minh chứng bằng việc gió không cần cối xay gió để tồn tại, trong khi cối xay gió lại cần có gió để quay. Gió có thể được quan sát thấy ở những nơi không có cối xay gió hoặc cối xay gió không quay — và có đầy đủ lý do để tin rằng gió đã tồn tại trước khi cối xay gió phát minh.</p>
+<p>Ví dụ 2</p>
+<p>Khi nợ công của một quốc gia vượt quá 90% GDP, tăng trưởng sẽ chậm lại.</p>
+<p>Do đó, nợ cao gây ra tăng trưởng chậm.</p>
+<p>Lập luận này của Carmen Reinhart và Kenneth Rogoff đã bị Paul Krugman bác bỏ với lý do họ đã đảo ngược chiều nhân quả: trên thực tế, tăng trưởng chậm mới là nguyên nhân làm tăng nợ công.[5]</p>
+<p>Ví dụ 3</p>
+<p>Trong các trường hợp khác, việc cái nào là nguyên nhân và cái nào là kết quả có thể không rõ ràng. Ví dụ:</p>
+<p>Những đứa trẻ xem TV nhiều là những đứa trẻ bạo lực nhất. Rõ ràng, TV khiến trẻ em trở nên bạo lực hơn.</p>
+<p>Điều này hoàn toàn có thể theo chiều ngược lại; nghĩa là, những đứa trẻ có tính bạo lực thích xem TV nhiều hơn những đứa trẻ ít bạo lực hơn.</p>
+<p>Ví dụ 4</p>
+<p>Mối tương quan giữa việc sử dụng chất kích thích giải trí và các rối loạn tâm thần có thể theo bất kỳ chiều hướng nào: có lẽ các chất kích thích gây ra rối loạn, hoặc có lẽ mọi người sử dụng chất kích thích để tự điều trị các vấn đề tâm lý có từ trước. Thuyết cửa ngõ (gateway drug theory) có thể lập luận rằng việc sử dụng cần sa dẫn đến việc sử dụng các loại ma túy nặng hơn, nhưng việc sử dụng ma túy nặng cũng có thể dẫn đến việc sử dụng cần sa (xem thêm sự nhầm lẫn về nghịch đảo). Thật vậy, trong khoa học xã hội, nơi các thí nghiệm có kiểm soát thường không thể được sử dụng để phân định hướng nhân quả, lỗi ngụy biện này có thể thúc đẩy các tranh cãi khoa học kéo dài. Một ví dụ như vậy có thể tìm thấy trong kinh tế học giáo dục, giữa mô hình sàng lọc/tín hiệu và mô hình vốn con người: có thể là do năng lực bẩm sinh giúp một người hoàn thành việc học, hoặc chính việc hoàn thành giáo dục đã xây dựng nên năng lực của một người.</p>
+<p>Example 5</p>
+<p>Một ví dụ lịch sử về điều này là người châu Âu vào thời Trung cổ tin rằng chấy rận có lợi cho sức khỏe của bạn, vì hiếm khi thấy có con chấy nào trên người ốm. Lập luận đưa ra là mọi người bị ốm là vì chấy đã bò đi mất. Tuy nhiên, lý do thực sự là chấy cực kỳ nhạy cảm với nhiệt độ cơ thể. Một sự gia tăng nhỏ về nhiệt độ cơ thể, chẳng hạn như khi bị sốt, sẽ khiến chấy tìm kiếm vật chủ khác. Nhiệt kế y tế vẫn chưa được phát minh ra, vì vậy sự gia tăng nhiệt độ này hiếm khi được chú ý đến. Các triệu chứng dễ nhận thấy xuất hiện sau đó, tạo ấn tượng rằng chấy đã bỏ đi trước khi con người bị ốm.[6]</p>
+<p>Trong các trường hợp khác, hai hiện tượng có thể là nguyên nhân một phần cho hiện tượng kia; hãy xem xét sự nghèo đói và thiếu giáo dục, hoặc sự trì hoãn và lòng tự trọng kém. Tuy nhiên, một người đưa ra lập luận dựa trên hai hiện tượng này phải cẩn thận để tránh lỗi ngụy biện nguyên nhân và hệ quả tuần hoàn. Nghèo đói là nguyên nhân dẫn đến thiếu giáo dục, nhưng đó không phải là nguyên nhân duy nhất, và ngược lại.</p>
+<p>Yếu tố thứ ba C (biến nguyên nhân chung) gây ra cả A và B</p>
+<p>Bài chính: Mối quan hệ giả mạo (Spurious relationship)</p>
+<p>Lỗi ngụy biện nguyên nhân thứ ba (còn được gọi là phớt lờ nguyên nhân chung[7] hoặc nguyên nhân đáng ngờ[7]) là một lỗi ngụy biện logic trong đó một mối quan hệ giả mạo bị nhầm lẫn với quan hệ nhân quả. Nó khẳng định rằng X gây ra Y trong khi trên thực tế, cả X và Y đều do Z gây ra. Đây là một biến thể của lỗi ngụy biện post hoc ergo propter hoc và là thành viên của nhóm ngụy biện nguyên nhân đáng ngờ.</p>
+<p>Tất cả các ví dụ này đều đề cập đến một biến ẩn (lurking variable), đây đơn giản là một biến thứ ba ẩn giấu ảnh hưởng đến cả hai nguyên nhân của mối tương quan. Một khó khăn thường nảy sinh khi yếu tố thứ ba, mặc dù hoàn toàn khác biệt với A và B, lại có mối liên hệ quá chặt chẽ với A và/hoặc B đến mức bị nhầm lẫn với chúng hoặc rất khó tách bạch chúng về mặt khoa học (xem Ví dụ 4).</p>
+<p>Ví dụ 1</p>
+<p>Đi giày đi ngủ có mối tương quan mạnh mẽ với việc thức dậy bị đau đầu.</p>
+<p>Do đó, đi giày đi ngủ gây ra đau đầu.</p>
+<p>Ví dụ trên đã mắc phải lỗi ngụy biện tương quan-ngụ-ý-nhân-quả, khi kết luận một cách vội vàng rằng đi giày đi ngủ gây đau đầu. Lời giải thích hợp lý hơn là cả hai đều do một yếu tố thứ ba gây ra, trong trường hợp này là đi ngủ trong trạng thái say rượu, từ đó tạo ra mối tương quan. Vì vậy kết luận là sai.</p>
+<p>Ví dụ 2</p>
+<p>Trẻ nhỏ ngủ bật đèn có khả năng bị cận thị cao hơn rất nhiều trong những năm tháng sau này.</p>
+<p>Do đó, ngủ bật đèn gây ra cận thị.</p>
+<p>Đây là một ví dụ khoa học bắt nguồn từ một nghiên cứu tại Trung tâm Y tế Đại học Pennsylvania. Được công bố trên số ra ngày 13 tháng 5 năm 1999 của tạp chí Nature,[8] nghiên cứu này đã nhận được nhiều sự đưa tin vào thời điểm đó trên báo chí đại chúng.[9] Tuy nhiên, một nghiên cứu sau đó tại Đại học Tiểu bang Ohio không phát hiện ra việc trẻ sơ sinh ngủ bật đèn gây ra sự phát triển cận thị. Nghiên cứu này thực sự tìm thấy mối liên hệ mạnh mẽ giữa cận thị của cha mẹ và sự phát triển cận thị của con cái, đồng thời lưu ý rằng các bậc cha mẹ bị cận thị có nhiều khả năng để đèn trong phòng ngủ của con cái họ hơn.[10][11][12][13] Trong trường hợp này, nguyên nhân của cả hai tình trạng là do cận thị của cha mẹ, và kết luận nêu trên là sai.</p>
+<p>Ví dụ 3</p>
+<p>Khi doanh số bán kem tăng lên, tỷ lệ tử vong do đuối nước cũng tăng vọt.</p>
+<p>Do đó, việc tiêu thụ kem gây ra đuối nước.</p>
+<p>Ví dụ này đã không nhận ra tầm quan trọng của thời điểm trong năm và nhiệt độ đối với doanh số bán kem. Kem được bán vào những tháng mùa hè nóng bức với tốc độ lớn hơn nhiều so với thời điểm lạnh hơn, và chính trong những tháng mùa hè nóng bức này, mọi người có nhiều khả năng tham gia các hoạt động liên quan đến nước, chẳng hạn như bơi lội. Các trường hợp tử vong do đuối nước gia tăng đơn giản là do tiếp xúc nhiều hơn với các hoạt động dưới nước chứ không phải do kem. Kết luận đã nêu là sai.</p>
+<p>Ví dụ 4</p>
+<p>Một nghiên cứu giả định cho thấy mối quan hệ giữa điểm số lo âu khi kiểm tra và điểm số nhút nhát, với giá trị r thống kê (độ mạnh của tương quan) là +.59.[14]</p>
+<p>Do đó, có thể đơn giản kết luận rằng tính nhút nhát, phần nào đó, có ảnh hưởng nhân quả đến sự lo âu khi kiểm tra.</p>
+<p>Tuy nhiên, như đã gặp trong nhiều nghiên cứu tâm lý học, một biến khác, gọi là &#8220;điểm số tự ý thức&#8221;, được phát hiện có mối tương quan chặt chẽ hơn (+.73) với tính nhút nhát. Điều này cho thấy một vấn đề tiềm ẩn về &#8220;biến thứ ba&#8221;, tuy nhiên, khi tìm thấy ba thước đo có mối liên hệ chặt chẽ như vậy, nó còn gợi ý thêm rằng mỗi thước đo có thể có xu hướng hai chiều (xem &#8220;biến hai chiều&#8221;, ở trên), là một cụm các giá trị tương quan mà mỗi giá trị ảnh hưởng lẫn nhau ở một mức độ nào đó. Do đó, kết luận đơn giản ở trên có thể là sai.</p>
+<p>Ví dụ 5</p>
+<p>Kể từ những năm 1950, cả nồng độ CO2 trong khí quyển và mức độ béo phì đều tăng vọt.</p>
+<p>Do đó, CO2 trong khí quyển gây ra béo phì.</p>
+<p>Các quần thể giàu có hơn có xu hướng ăn nhiều thức ăn hơn và sản xuất ra nhiều CO2 hơn.</p>
+<p>Ví dụ 6</p>
+<p>Cholesterol HDL (&#8220;tốt&#8221;) có mối tương quan nghịch với tỷ lệ mắc cơn đau tim.</p>
+<p>Do đó, dùng thuốc để làm tăng HDL sẽ làm giảm cơ hội bị đau tim.</p>
+<p>Nghiên cứu sâu hơn[15] đã đặt dấu hỏi về kết luận này. Thay vào đó, có thể là các yếu tố cơ bản khác, như gen, chế độ ăn uống và tập luyện, ảnh hưởng đến cả mức độ HDL và khả năng bị đau tim; hoàn toàn có thể là thuốc có tác động đến yếu tố đo lường trực tiếp là mức độ HDL, mà không hề ảnh hưởng đến cơ hội bị đau tim.</p>
+<p>Nhân quả hai chiều: A gây ra B, và B gây ra A</p>
+<p>Nhân quả không nhất thiết phải là một chiều; trong mối quan hệ giữa động vật ăn thịt và con mồi, số lượng động vật ăn thịt ảnh hưởng đến số lượng con mồi, nhưng số lượng con mồi, tức nguồn thức ăn, cũng ảnh hưởng đến số lượng động vật ăn thịt. Một ví dụ nổi tiếng khác là những người đi xe đạp có Chỉ số khối cơ thể (BMI) thấp hơn những người không đi xe đạp. Điều này thường được giải thích bằng cách giả định rằng việc đi xe đạp làm tăng mức độ hoạt động thể chất và do đó làm giảm BMI. Do kết quả từ các nghiên cứu tiến cứu trên những người tăng cường sử dụng xe đạp cho thấy tác động nhỏ hơn đối với BMI so với các nghiên cứu cắt ngang, nên cũng có thể có một số nguyên nhân nhân quả ngược chiều (tức là những người có BMI thấp hơn có xu hướng đi xe đạp nhiều hơn). [16]</p>
+<p>Mối quan hệ giữa A và B chỉ là sự trùng hợp ngẫu nhiên</p>
+<p>Bài chính: Mối quan hệ giả mạo (Spurious relationship)</p>
+<p>Hai biến hoàn toàn không liên quan gì đến nhau, nhưng tương quan với nhau một cách tình cờ. Càng kiểm tra nhiều thứ, thì khả năng hai biến không liên quan xuất hiện vẻ như có liên quan càng cao. Ví dụ:</p>
+<p>Kết quả trận đấu sân nhà cuối cùng của đội Washington Redskins trước cuộc bầu cử tổng thống đã dự đoán chính xác kết quả của mọi cuộc bầu cử tổng thống từ năm 1936 đến năm 2000, mặc dù thực tế là kết quả của các trận đấu bóng đá không liên quan gì đến kết quả của cuộc bầu cử phổ thông. Chuỗi thành tích này cuối cùng đã bị phá vỡ vào năm 2004 (hoặc năm 2012 nếu sử dụng một công thức thay thế của quy luật ban đầu).</p>
+<p>Định luật Mierscheid, tương quan tỷ lệ phiếu bầu phổ thông của Đảng Dân chủ Xã hội Đức với quy mô sản xuất thép thô ở Tây Đức.</p>
+<p>Lãnh đạo Nga hói – có tóc xen kẽ nhau: Một nhà lãnh đạo nhà nước Nga bị hói (hoặc rõ ràng là đang hói) đã kế nhiệm một nhà lãnh đạo không hói (có &#8220;tóc&#8221;), và ngược lại, trong gần 200 năm.</p>
+<p>Sử dụng tương quan làm bằng chứng khoa học</p>
+<p>Phần lớn bằng chứng khoa học dựa trên mối tương quan của các biến[22] – chúng được quan sát thấy xảy ra cùng nhau. Các nhà khoa học luôn cẩn trọng chỉ ra rằng tương quan không nhất thiết có nghĩa là nhân quả. Giả định rằng A gây ra B chỉ đơn giản vì A tương quan với B thường không được chấp nhận như một hình thức lập luận hợp pháp.</p>
+<p>Tuy nhiên, đôi khi mọi người lại mắc phải lỗi ngụy biện ngược lại – bác bỏ hoàn toàn tương quan. Điều này sẽ bác bỏ một mảng lớn các bằng chứng khoa học quan trọng.[22] Vì việc thực hiện các nghiên cứu mù đôi có kiểm soát có thể khó khăn hoặc bất khả thi về mặt đạo đức, bằng chứng tương quan từ nhiều góc độ khác nhau có thể hữu ích cho việc dự đoán mặc dù không cung cấp được bằng chứng về nhân quả. Ví dụ, các nhân viên xã hội có thể quan tâm đến việc biết bạo hành trẻ em có mối liên hệ như thế nào với thành tích học tập. Mặc dù việc tiến hành một thí nghiệm trong đó trẻ em được phân ngẫu nhiên để chịu hoặc không chịu bạo hành là phi đạo đức, các nhà nghiên cứu có thể xem xét các nhóm hiện có bằng cách sử dụng thiết kế tương quan phi thực nghiệm. Nếu trên thực tế tồn tại mối tương quan nghịch giữa bạo hành và thành tích học tập, các nhà nghiên cứu có thể sử dụng kiến thức về mối tương quan thống kê này để đưa ra dự đoán về những đứa trẻ ngoài nghiên cứu từng trải qua bạo hành, ngay cả khi nghiên cứu không cung cấp được bằng chứng nhân quả rằng bạo hành làm giảm thành tích học tập.[23] Sự kết hợp giữa các phương pháp luận có sẵn hạn chế với lỗi ngụy biện bác bỏ tương quan đôi khi đã được sử dụng để chống lại một phát hiện khoa học. Ví dụ, ngành công nghiệp thuốc lá trong lịch sử đã dựa vào việc bác bỏ bằng chứng tương quan để từ chối mối liên hệ giữa thuốc lá và ung thư phổi,[24] nhà sinh học kiêm nhà thống kê Ronald Fisher cũng vậy.[25][26][27][28][29][30][31]</p>
+<p>Tương quan là một loại bằng chứng khoa học có giá trị trong các lĩnh vực như y học, tâm lý học và xã hội học. Nhưng trước tiên, các mối tương quan phải được xác nhận là có thật, và sau đó mọi mối quan hệ nhân quả có thể phải được khảo sát một cách có hệ thống. Cuối cùng, chỉ riêng tương quan không thể được sử dụng làm bằng chứng cho mối quan hệ nhân quả giữa một phương pháp điều trị và lợi ích, một yếu tố nguy cơ và một căn bệnh, hoặc một yếu tố xã hội hay kinh tế với các kết quả khác nhau.</p>
+<p>Đây là một trong những loại bằng chứng bị lạm dụng nhiều nhất, bởi vì việc đi đến những kết luận vội vàng dựa trên vẻ ngoài sơ khai của một mối tương quan là điều rất dễ dàng và thậm chí rất cám dỗ.</p>
+<figure><a href="chrislewit.com"><img data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="1144" data-permalink="https://prodigymaker.com/img_2901-png/" data-orig-file="https://i0.wp.com/prodigymaker.com/wp-content/uploads/2019/03/img_2901.png?fit=356%2C267&amp;ssl=1" data-orig-size="356,267" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="img_2901.png" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/prodigymaker.com/wp-content/uploads/2019/03/img_2901.png?fit=356%2C267&amp;ssl=1" src="https://i0.wp.com/prodigymaker.com/wp-content/uploads/2019/03/img_2901.png?resize=356%2C267&#038;ssl=1" class="alignleft size-thumbnail wp-image-1144" alt="Correlation fallacy in tennis" srcset="https://i0.wp.com/prodigymaker.com/wp-content/uploads/2019/03/img_2901.png?w=356&amp;ssl=1 356w, https://i0.wp.com/prodigymaker.com/wp-content/uploads/2019/03/img_2901.png?resize=300%2C225&amp;ssl=1 300w" sizes="auto, (max-width: 356px) 100vw, 356px" style="max-width: 100%; height: auto; display: block; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.12);" /></a></figure>
+<p>Chris Lewit, Prodigy Maker</p>
+<h4><a href="https://prodigymaker.com/index.php/2019/03/07/wisdom-from-uncle-toni/">Trí tuệ từ Chú Toni</a></h4>
+</div>
+          <!-- BOTTOM-NAV-START -->
+<hr style="margin:2.5rem 0 1.5rem; border:0; border-top:1px solid var(--border, #e7e5e4);" />
+<nav class="tu-bottom-nav" aria-label="Page navigation" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin:1.5rem 0 2rem; padding:1rem 1.25rem; background:var(--card, #fff); border:1px solid var(--border, #e7e5e4); border-radius:12px; box-shadow:var(--shadow, 0 1px 3px rgba(0,0,0,.06));">
+  <div class="tu-bottom-nav__prev" style="flex:1; min-width:140px; text-align:left;">
+    <a href="../prodigymaker-symmetrical-tennis/" style="color:var(--accent-dark, #047857); text-decoration:none; font-weight:600; font-size:0.92rem; display:inline-block;">
+      ← Bài trước
+      <span style="font-size:0.82rem; font-weight:400; color:var(--ink-muted, #666); display:block; max-width:200px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Symmetrical Tennis</span>
+    </a>
+  </div>
+  <div class="tu-bottom-nav__home" style="display:flex; gap:0.6rem; align-items:center; justify-content:center; padding:0 0.5rem; font-weight:600;">
+    <a href="/vi/" style="color:var(--ink-muted, #555); text-decoration:none; padding:0.35rem 0.65rem; border-radius:6px; background:var(--bg, #f3f4f6); font-size:0.9rem;">🏠 Trang chủ</a>
+    <a href="/vi/blog/" style="color:var(--accent-dark, #047857); text-decoration:none; padding:0.35rem 0.65rem; border-radius:6px; background:var(--accent-light, #d1fae5); font-size:0.9rem;">📝 Mục lục Blog</a>
+  </div>
+  <div class="tu-bottom-nav__next" style="flex:1; min-width:140px; text-align:right;">
+    <a href="../prodigymaker-drop-shot-wisdom-3/" style="color:var(--accent-dark, #047857); text-decoration:none; font-weight:600; font-size:0.92rem; display:inline-block;">
+      Bài tiếp →
+      <span style="font-size:0.82rem; font-weight:400; color:var(--ink-muted, #666); display:block; max-width:200px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Drop Shot Wisdom #3 by Chris Lewit</span>
+    </a>
+  </div>
+</nav>
+<!-- BOTTOM-NAV-END -->
+        </article>
+      </div>
+    </div>
+  </main>
+  <footer class="tu-footer">
+    <p>© 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.</p>
+  </footer>
+</div>
+  </body>
+</html>
