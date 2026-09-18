@@ -9,11 +9,6 @@ description: "The tennis handbook. Curated from the Tennis Books library."
 
 The tennis handbook. Curated from the Tennis Books library.
 
-!!! tip "Reading controls"
-    Use the toolbar at the top of the PDF (or right-click the iframe) to zoom, navigate pages, search inside the book, or download. **Ctrl+F** searches within the current book. The page is rendered at **100 % width** — use the browser zoom (Ctrl++) to enlarge text further.
-
----
-
 ## Read the book
 
 <div class="reader-container" style="position: relative; width: 100%; height: 750px; border-radius: 8px; overflow: hidden; border: 1px solid var(--md-default-fg-color--lightest, #e2e8f0); margin: 1.5em 0; box-shadow: 0 4px 16px rgba(0,0,0,0.08); background: #1a1a1a;">

@@ -9,11 +9,6 @@ description: "Arthur Ashe on tennis  strokes, strategy, traditions, players, psy
 
 Arthur Ashe on tennis  strokes, strategy, traditions, players, psychology, and wisdom. Curated from the Tennis Books library.
 
-!!! tip "Reading controls"
-    Use the toolbar at the top of the PDF (or right-click the iframe) to zoom, navigate pages, search inside the book, or download. **Ctrl+F** searches within the current book. The page is rendered at **100 % width** — use the browser zoom (Ctrl++) to enlarge text further.
-
----
-
 ## Read the book
 
 !!! success "📖 Full Interactive Edition Available"

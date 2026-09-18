@@ -9,11 +9,6 @@ description: "The ME / DE / Reps template. Max Effort, Dynamic Effort, Repetitio
 
 The ME / DE / Reps template. Max Effort, Dynamic Effort, Repetition methods. Conjugate system.
 
-!!! tip "Reading controls"
-    Use the toolbar at the top of the PDF (or right-click the iframe) to zoom, navigate pages, search inside the book, or download. **Ctrl+F** searches within the current book. The page is rendered at **100 % width** — use the browser zoom (Ctrl++) to enlarge text further.
-
----
-
 ## Read the book
 
 !!! info "📚 Reference Volume & Research Dossier"
