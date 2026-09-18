@@ -16,11 +16,10 @@ Born to Walk Myofascial Efficiency and the Body in Movement. Curated from the Te
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Born%20to%20Walk%20Myofascial%20Efficiency%20and%20the%20Body%20in%20Movement.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Born to Walk Myofascial Efficiency and the Body in Movement">
-  Your browser does not support inline PDF viewing. <a href="../../Born%20to%20Walk%20Myofascial%20Efficiency%20and%20the%20Body%20in%20Movement.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Born%20to%20Walk%20Myofascial%20Efficiency%20and%20the%20Body%20in%20Movement.pdf) · [Open in new tab ↗](../../Born%20to%20Walk%20Myofascial%20Efficiency%20and%20the%20Body%20in%20Movement.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Born+to+Walk+Myofascial+Efficiency+and+the+Body+in+Movement+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Born+to+Walk+Myofascial+Efficiency+and+the+Body+in+Movement+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Born+to+Walk+Myofascial+Efficiency+and+the+Body+in+Movement+tennis)
 
 ---
 

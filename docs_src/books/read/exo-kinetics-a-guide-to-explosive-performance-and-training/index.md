@@ -16,11 +16,10 @@ Guide to explosive performance and training.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../EXO-Kinetics%20-%20A%20Guide%20to%20Explosive%20Performance%20and%20Training%20.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="EXO-Kinetics">
-  Your browser does not support inline PDF viewing. <a href="../../EXO-Kinetics%20-%20A%20Guide%20to%20Explosive%20Performance%20and%20Training%20.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../EXO-Kinetics%20-%20A%20Guide%20to%20Explosive%20Performance%20and%20Training%20.pdf) · [Open in new tab ↗](../../EXO-Kinetics%20-%20A%20Guide%20to%20Explosive%20Performance%20and%20Training%20.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=EXO-Kinetics+Explosive+performance+guide+%C2%B7+%2A%2ADomain%3A%2A%2A+Training+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=EXO-Kinetics+Explosive+performance+guide+%C2%B7+%2A%2ADomain%3A%2A%2A+Training+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=EXO-Kinetics+Explosive+performance+guide+%C2%B7+%2A%2ADomain%3A%2A%2A+Training+tennis)
 
 ---
 

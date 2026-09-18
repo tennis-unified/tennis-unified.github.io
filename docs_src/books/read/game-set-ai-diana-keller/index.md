@@ -16,11 +16,15 @@ Game Set AI   Diana Keller. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Game_Set_AI_-_Diana_Keller.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Game Set AI   Diana Keller">
-  Your browser does not support inline PDF viewing. <a href="../../Game_Set_AI_-_Diana_Keller.pdf">Download the PDF</a> instead.
-</iframe>
+!!! success "📖 Full Interactive Edition Available"
+    This classic tennis volume is fully digitized in our library with complete chapters, technical stroke analyses, court diagrams, and bilingual study notes.
 
-[Download the PDF ↗](../../Game_Set_AI_-_Diana_Keller.pdf) · [Open in new tab ↗](../../Game_Set_AI_-_Diana_Keller.pdf)
+    [📖 Open Interactive Book Reader](/vi/books/game_set_ai_diana_keller_vi.html) • [📄 View Full PDF Edition](/vi/books/Game_Set_AI_Vietnamese_Final.pdf)
+
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
+
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Game+Set+AI+++Diana+Keller+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Game+Set+AI+++Diana+Keller+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Game+Set+AI+++Diana+Keller+tennis)
 
 ---
 

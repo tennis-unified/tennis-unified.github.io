@@ -16,11 +16,10 @@ Physical Conditioning for Rugby. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Physical-Conditioning-for-Rugby.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Physical Conditioning for Rugby">
-  Your browser does not support inline PDF viewing. <a href="../../Physical-Conditioning-for-Rugby.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Physical-Conditioning-for-Rugby.pdf) · [Open in new tab ↗](../../Physical-Conditioning-for-Rugby.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Physical+Conditioning+for+Rugby+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Physical+Conditioning+for+Rugby+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Physical+Conditioning+for+Rugby+tennis)
 
 ---
 

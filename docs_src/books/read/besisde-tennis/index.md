@@ -16,11 +16,10 @@ Besisde tennis. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Besisde_tennis.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Besisde tennis">
-  Your browser does not support inline PDF viewing. <a href="../../Besisde_tennis.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Besisde_tennis.pdf) · [Open in new tab ↗](../../Besisde_tennis.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Besisde+tennis+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Besisde+tennis+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Besisde+tennis+tennis)
 
 ---
 

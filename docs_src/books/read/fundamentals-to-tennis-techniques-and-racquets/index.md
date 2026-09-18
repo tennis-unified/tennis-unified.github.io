@@ -16,11 +16,10 @@ Fundamentals to tennis techniques and racquets. Curated from the Tennis Books li
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Fundamentals%20to%20tennis%20techniques%20and%20racquets.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Fundamentals to tennis techniques and racquets">
-  Your browser does not support inline PDF viewing. <a href="../../Fundamentals%20to%20tennis%20techniques%20and%20racquets.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Fundamentals%20to%20tennis%20techniques%20and%20racquets.pdf) · [Open in new tab ↗](../../Fundamentals%20to%20tennis%20techniques%20and%20racquets.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Fundamentals+to+tennis+techniques+and+racquets+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Fundamentals+to+tennis+techniques+and+racquets+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Fundamentals+to+tennis+techniques+and+racquets+tennis)
 
 ---
 

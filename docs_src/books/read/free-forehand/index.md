@@ -16,11 +16,10 @@ Forehand technique and where on the racket to strike for maximum power.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Free-Forehand.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Free Forehand">
-  Your browser does not support inline PDF viewing. <a href="../../Free-Forehand.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Free-Forehand.pdf) · [Open in new tab ↗](../../Free-Forehand.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Free+Forehand+Revolution+Tennis+%C2%B7+%2A%2ADomain%3A%2A%2A+Forehand+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Free+Forehand+Revolution+Tennis+%C2%B7+%2A%2ADomain%3A%2A%2A+Forehand+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Free+Forehand+Revolution+Tennis+%C2%B7+%2A%2ADomain%3A%2A%2A+Forehand+tennis)
 
 ---
 

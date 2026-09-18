@@ -16,11 +16,15 @@ klaus m geske jens mueller table tennis tactics your path to success 2010. Curat
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../klaus-m-geske-jens-mueller-table-tennis-tactics-your-path-to-success-2010.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="klaus m geske jens mueller table tennis tactics your path to success 2010">
-  Your browser does not support inline PDF viewing. <a href="../../klaus-m-geske-jens-mueller-table-tennis-tactics-your-path-to-success-2010.pdf">Download the PDF</a> instead.
-</iframe>
+!!! success "📖 Full Interactive Edition Available"
+    This classic tennis volume is fully digitized in our library with complete chapters, technical stroke analyses, court diagrams, and bilingual study notes.
 
-[Download the PDF ↗](../../klaus-m-geske-jens-mueller-table-tennis-tactics-your-path-to-success-2010.pdf) · [Open in new tab ↗](../../klaus-m-geske-jens-mueller-table-tennis-tactics-your-path-to-success-2010.pdf)
+    [📖 Open Interactive Book Reader](/vi/books/tennis_tactics_vi.html) • [📄 View Full PDF Edition](/vi/books/Tennis_Tactics_Vietnamese_Final.pdf)
+
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
+
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=klaus+m+geske+jens+mueller+table+tennis+tactics+your+path+to+success+2010+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=klaus+m+geske+jens+mueller+table+tennis+tactics+your+path+to+success+2010+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=klaus+m+geske+jens+mueller+table+tennis+tactics+your+path+to+success+2010+tennis)
 
 ---
 

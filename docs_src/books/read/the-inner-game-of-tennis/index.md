@@ -16,11 +16,15 @@ The classic mental-game book. Inner Game #1.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../the-inner-game-of-tennis.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="The Inner Game of Tennis">
-  Your browser does not support inline PDF viewing. <a href="../../the-inner-game-of-tennis.pdf">Download the PDF</a> instead.
-</iframe>
+!!! success "📖 Full Interactive Edition Available"
+    This classic tennis volume is fully digitized in our library with complete chapters, technical stroke analyses, court diagrams, and bilingual study notes.
 
-[Download the PDF ↗](../../the-inner-game-of-tennis.pdf) · [Open in new tab ↗](../../the-inner-game-of-tennis.pdf)
+    [📖 Open Interactive Book Reader](/vi/books/the_inner_game_of_tennis_vi.html) • [📄 View Full PDF Edition](/vi/books/The_Inner_Game_of_Tennis_Vietnamese_Final.pdf)
+
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
+
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=The+Inner+Game+of+Tennis+Timothy+Gallwey+%C2%B7+%2A%2ADomain%3A%2A%2A+Mental+Game+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=The+Inner+Game+of+Tennis+Timothy+Gallwey+%C2%B7+%2A%2ADomain%3A%2A%2A+Mental+Game+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=The+Inner+Game+of+Tennis+Timothy+Gallwey+%C2%B7+%2A%2ADomain%3A%2A%2A+Mental+Game+tennis)
 
 ---
 

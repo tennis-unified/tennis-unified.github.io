@@ -16,11 +16,15 @@ Teaching Tennis Volume 1   Martin van Daalen. Curated from the Tennis Books libr
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Teaching_Tennis_Volume_1_-_Martin_van_Daalen.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Teaching Tennis Volume 1   Martin van Daalen">
-  Your browser does not support inline PDF viewing. <a href="../../Teaching_Tennis_Volume_1_-_Martin_van_Daalen.pdf">Download the PDF</a> instead.
-</iframe>
+!!! success "📖 Full Interactive Edition Available"
+    This classic tennis volume is fully digitized in our library with complete chapters, technical stroke analyses, court diagrams, and bilingual study notes.
 
-[Download the PDF ↗](../../Teaching_Tennis_Volume_1_-_Martin_van_Daalen.pdf) · [Open in new tab ↗](../../Teaching_Tennis_Volume_1_-_Martin_van_Daalen.pdf)
+    [📖 Open Interactive Book Reader](/vi/books/teaching_tennis_volume_1_vi.html) • [📄 View Full PDF Edition](/vi/books/Teaching_Tennis_Volume_1_Vietnamese_Final.pdf)
+
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
+
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Teaching+Tennis+Volume+1+++Martin+van+Daalen+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Teaching+Tennis+Volume+1+++Martin+van+Daalen+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Teaching+Tennis+Volume+1+++Martin+van+Daalen+tennis)
 
 ---
 

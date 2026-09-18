@@ -16,11 +16,10 @@ Serve technique from FTPTennis.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../TEC%20130%20-%20THE%20SERVE%20from%20FTPTennis.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="TEC 130 — The Serve (FTPTennis)">
-  Your browser does not support inline PDF viewing. <a href="../../TEC%20130%20-%20THE%20SERVE%20from%20FTPTennis.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../TEC%20130%20-%20THE%20SERVE%20from%20FTPTennis.pdf) · [Open in new tab ↗](../../TEC%20130%20-%20THE%20SERVE%20from%20FTPTennis.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=TEC+130+%E2%80%94+The+Serve+%28FTPTennis%29+FTPTennis+%C2%B7+%2A%2ADomain%3A%2A%2A+Serve+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=TEC+130+%E2%80%94+The+Serve+%28FTPTennis%29+FTPTennis+%C2%B7+%2A%2ADomain%3A%2A%2A+Serve+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=TEC+130+%E2%80%94+The+Serve+%28FTPTennis%29+FTPTennis+%C2%B7+%2A%2ADomain%3A%2A%2A+Serve+tennis)
 
 ---
 

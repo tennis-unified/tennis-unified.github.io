@@ -16,11 +16,10 @@ Release Your Kinetic Chain  Exercises For the Shoulder to Hand  Activating Your 
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Release_Your_Kinetic_Chain__Exercises_For_the_Shoulder_to_Hand__Activating_Your_Arm%27s_Kinetic_Chain%21.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Release Your Kinetic Chain  Exercises For the Shoulder to Hand  Activating Your Arm's Kinetic Chain!">
-  Your browser does not support inline PDF viewing. <a href="../../Release_Your_Kinetic_Chain__Exercises_For_the_Shoulder_to_Hand__Activating_Your_Arm%27s_Kinetic_Chain%21.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Release_Your_Kinetic_Chain__Exercises_For_the_Shoulder_to_Hand__Activating_Your_Arm%27s_Kinetic_Chain%21.pdf) · [Open in new tab ↗](../../Release_Your_Kinetic_Chain__Exercises_For_the_Shoulder_to_Hand__Activating_Your_Arm%27s_Kinetic_Chain%21.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Release+Your+Kinetic+Chain++Exercises+For+the+Shoulder+to+Hand++Activating+Your+Arm%27s+Kinetic+Chain%21+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Release+Your+Kinetic+Chain++Exercises+For+the+Shoulder+to+Hand++Activating+Your+Arm%27s+Kinetic+Chain%21+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Release+Your+Kinetic+Chain++Exercises+For+the+Shoulder+to+Hand++Activating+Your+Arm%27s+Kinetic+Chain%21+tennis)
 
 ---
 

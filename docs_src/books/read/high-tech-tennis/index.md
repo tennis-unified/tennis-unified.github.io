@@ -16,11 +16,15 @@ High tech tennis. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../High_tech_tennis.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="High tech tennis">
-  Your browser does not support inline PDF viewing. <a href="../../High_tech_tennis.pdf">Download the PDF</a> instead.
-</iframe>
+!!! success "📖 Full Interactive Edition Available"
+    This classic tennis volume is fully digitized in our library with complete chapters, technical stroke analyses, court diagrams, and bilingual study notes.
 
-[Download the PDF ↗](../../High_tech_tennis.pdf) · [Open in new tab ↗](../../High_tech_tennis.pdf)
+    [📖 Open Interactive Book Reader](/vi/books/high_tech_tennis_vi.html) • [📄 View Full PDF Edition](/vi/books/High_Tech_Tennis_Vietnamese_Final.pdf)
+
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
+
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=High+tech+tennis+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=High+tech+tennis+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=High+tech+tennis+tennis)
 
 ---
 

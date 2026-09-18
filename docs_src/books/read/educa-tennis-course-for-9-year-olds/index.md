@@ -16,11 +16,15 @@ EDUCA Tennis Course for 9 Year Olds. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../EDUCA-Tennis-Course-for-9-Year-Olds.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="EDUCA Tennis Course for 9 Year Olds">
-  Your browser does not support inline PDF viewing. <a href="../../EDUCA-Tennis-Course-for-9-Year-Olds.pdf">Download the PDF</a> instead.
-</iframe>
+!!! success "📖 Full Interactive Edition Available"
+    This classic tennis volume is fully digitized in our library with complete chapters, technical stroke analyses, court diagrams, and bilingual study notes.
 
-[Download the PDF ↗](../../EDUCA-Tennis-Course-for-9-Year-Olds.pdf) · [Open in new tab ↗](../../EDUCA-Tennis-Course-for-9-Year-Olds.pdf)
+    [📖 Open Interactive Book Reader](/vi/books/tennis_course_vi.html) • [📄 View Full PDF Edition](/vi/books/Tennis_Course_Vietnamese_Final.pdf)
+
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
+
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=EDUCA+Tennis+Course+for+9+Year+Olds+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=EDUCA+Tennis+Course+for+9+Year+Olds+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=EDUCA+Tennis+Course+for+9+Year+Olds+tennis)
 
 ---
 

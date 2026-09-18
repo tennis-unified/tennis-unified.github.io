@@ -16,11 +16,10 @@ Routledge Handbook of Strength and Conditioning Sport Specific Programming for H
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Routledge%20Handbook%20of%20Strength%20and%20Conditioning%20Sport-Specific%20Programming%20for%20High%20Performance%20%28%20PDFDrive%20%29.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Routledge Handbook of Strength and Conditioning Sport Specific Programming for High Performance ( PDFDrive )">
-  Your browser does not support inline PDF viewing. <a href="../../Routledge%20Handbook%20of%20Strength%20and%20Conditioning%20Sport-Specific%20Programming%20for%20High%20Performance%20%28%20PDFDrive%20%29.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Routledge%20Handbook%20of%20Strength%20and%20Conditioning%20Sport-Specific%20Programming%20for%20High%20Performance%20%28%20PDFDrive%20%29.pdf) · [Open in new tab ↗](../../Routledge%20Handbook%20of%20Strength%20and%20Conditioning%20Sport-Specific%20Programming%20for%20High%20Performance%20%28%20PDFDrive%20%29.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Routledge+Handbook+of+Strength+and+Conditioning+Sport+Specific+Programming+for+High+Performance+%28+PDFDrive+%29+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Routledge+Handbook+of+Strength+and+Conditioning+Sport+Specific+Programming+for+High+Performance+%28+PDFDrive+%29+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Routledge+Handbook+of+Strength+and+Conditioning+Sport+Specific+Programming+for+High+Performance+%28+PDFDrive+%29+tennis)
 
 ---
 

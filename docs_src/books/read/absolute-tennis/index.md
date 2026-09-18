@@ -16,11 +16,10 @@ Marty Smith's foundational text including the famous Ch. 12 'Future Strokes' (Ov
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../absolute-tennis.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Absolute Tennis">
-  Your browser does not support inline PDF viewing. <a href="../../absolute-tennis.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../absolute-tennis.pdf) · [Open in new tab ↗](../../absolute-tennis.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Absolute+Tennis+Marty+Smith%2C+2017+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Absolute+Tennis+Marty+Smith%2C+2017+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Absolute+Tennis+Marty+Smith%2C+2017+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis)
 
 ---
 

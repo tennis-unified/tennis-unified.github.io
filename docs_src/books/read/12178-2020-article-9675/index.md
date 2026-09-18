@@ -16,11 +16,10 @@ description: "12178 2020 Article 9675. Curated from the Tennis Books library."
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../12178_2020_Article_9675.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="12178 2020 Article 9675">
-  Your browser does not support inline PDF viewing. <a href="../../12178_2020_Article_9675.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../12178_2020_Article_9675.pdf) · [Open in new tab ↗](../../12178_2020_Article_9675.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=12178+2020+Article+9675+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=12178+2020+Article+9675+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=12178+2020+Article+9675+tennis)
 
 ---
 

@@ -16,11 +16,10 @@ description: "8 tactics for forcing opponent errors."
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../How-to-Outsmart-Your-Opponent-and-Force-an-Error_-8-Tactics-You-Need-to-be-Using-2.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="How to Outsmart Your Opponent">
-  Your browser does not support inline PDF viewing. <a href="../../How-to-Outsmart-Your-Opponent-and-Force-an-Error_-8-Tactics-You-Need-to-be-Using-2.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../How-to-Outsmart-Your-Opponent-and-Force-an-Error_-8-Tactics-You-Need-to-be-Using-2.pdf) · [Open in new tab ↗](../../How-to-Outsmart-Your-Opponent-and-Force-an-Error_-8-Tactics-You-Need-to-be-Using-2.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=How+to+Outsmart+Your+Opponent+Tactical+play+%C2%B7+%2A%2ADomain%3A%2A%2A+Tactics+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=How+to+Outsmart+Your+Opponent+Tactical+play+%C2%B7+%2A%2ADomain%3A%2A%2A+Tactics+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=How+to+Outsmart+Your+Opponent+Tactical+play+%C2%B7+%2A%2ADomain%3A%2A%2A+Tactics+tennis)
 
 ---
 

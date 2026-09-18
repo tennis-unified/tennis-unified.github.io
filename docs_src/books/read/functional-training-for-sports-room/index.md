@@ -16,11 +16,10 @@ Functional Training for Sports Room. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Functional-Training-for-Sports-Room.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Functional Training for Sports Room">
-  Your browser does not support inline PDF viewing. <a href="../../Functional-Training-for-Sports-Room.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Functional-Training-for-Sports-Room.pdf) · [Open in new tab ↗](../../Functional-Training-for-Sports-Room.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Functional+Training+for+Sports+Room+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Functional+Training+for+Sports+Room+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Functional+Training+for+Sports+Room+tennis)
 
 ---
 

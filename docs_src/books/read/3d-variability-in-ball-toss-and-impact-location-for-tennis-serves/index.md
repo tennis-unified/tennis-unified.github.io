@@ -16,11 +16,10 @@ description: "3D variability in ball toss and impact location for tennis serves.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../3D%20variability%20in%20ball%20toss%20and%20impact%20location%20for%20tennis%20serves.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="3D variability in ball toss and impact location for tennis serves">
-  Your browser does not support inline PDF viewing. <a href="../../3D%20variability%20in%20ball%20toss%20and%20impact%20location%20for%20tennis%20serves.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../3D%20variability%20in%20ball%20toss%20and%20impact%20location%20for%20tennis%20serves.pdf) · [Open in new tab ↗](../../3D%20variability%20in%20ball%20toss%20and%20impact%20location%20for%20tennis%20serves.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=3D+variability+in+ball+toss+and+impact+location+for+tennis+serves+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=3D+variability+in+ball+toss+and+impact+location+for+tennis+serves+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=3D+variability+in+ball+toss+and+impact+location+for+tennis+serves+tennis)
 
 ---
 

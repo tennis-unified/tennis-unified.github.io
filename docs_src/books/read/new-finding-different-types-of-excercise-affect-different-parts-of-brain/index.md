@@ -16,11 +16,10 @@ New Finding   Different types of excercise affect different parts of brain. Cura
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../New%20Finding%20-%20Different%20types%20of%20excercise%20affect%20different%20parts%20of%20brain.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="New Finding   Different types of excercise affect different parts of brain">
-  Your browser does not support inline PDF viewing. <a href="../../New%20Finding%20-%20Different%20types%20of%20excercise%20affect%20different%20parts%20of%20brain.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../New%20Finding%20-%20Different%20types%20of%20excercise%20affect%20different%20parts%20of%20brain.pdf) · [Open in new tab ↗](../../New%20Finding%20-%20Different%20types%20of%20excercise%20affect%20different%20parts%20of%20brain.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=New+Finding+++Different+types+of+excercise+affect+different+parts+of+brain+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=New+Finding+++Different+types+of+excercise+affect+different+parts+of+brain+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=New+Finding+++Different+types+of+excercise+affect+different+parts+of+brain+tennis)
 
 ---
 

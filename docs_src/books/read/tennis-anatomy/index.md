@@ -16,11 +16,15 @@ Tennis-specific anatomy and injury prevention.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Tennis-anatomy.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Tennis Anatomy">
-  Your browser does not support inline PDF viewing. <a href="../../Tennis-anatomy.pdf">Download the PDF</a> instead.
-</iframe>
+!!! success "📖 Full Interactive Edition Available"
+    This classic tennis volume is fully digitized in our library with complete chapters, technical stroke analyses, court diagrams, and bilingual study notes.
 
-[Download the PDF ↗](../../Tennis-anatomy.pdf) · [Open in new tab ↗](../../Tennis-anatomy.pdf)
+    [📖 Open Interactive Book Reader](/vi/books/tennis_anatomy_roetert_kovacs_vi.html) • [📄 View Full PDF Edition](/vi/books/Tennis_Anatomy_Vietnamese_Final.pdf)
+
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
+
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Tennis+Anatomy+Anatomy+reference+%C2%B7+%2A%2ADomain%3A%2A%2A+Medical+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Tennis+Anatomy+Anatomy+reference+%C2%B7+%2A%2ADomain%3A%2A%2A+Medical+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Tennis+Anatomy+Anatomy+reference+%C2%B7+%2A%2ADomain%3A%2A%2A+Medical+tennis)
 
 ---
 

@@ -16,11 +16,10 @@ Serve to Win  The 14 Day Gluten Free Plan for Physical and Mental Excellence. Cu
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Serve%20to%20Win_%20The%2014-Day%20Gluten-Free%20Plan%20for%20Physical%20and%20Mental%20Excellence.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Serve to Win  The 14 Day Gluten Free Plan for Physical and Mental Excellence">
-  Your browser does not support inline PDF viewing. <a href="../../Serve%20to%20Win_%20The%2014-Day%20Gluten-Free%20Plan%20for%20Physical%20and%20Mental%20Excellence.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Serve%20to%20Win_%20The%2014-Day%20Gluten-Free%20Plan%20for%20Physical%20and%20Mental%20Excellence.pdf) · [Open in new tab ↗](../../Serve%20to%20Win_%20The%2014-Day%20Gluten-Free%20Plan%20for%20Physical%20and%20Mental%20Excellence.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Serve+to+Win++The+14+Day+Gluten+Free+Plan+for+Physical+and+Mental+Excellence+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Serve+to+Win++The+14+Day+Gluten+Free+Plan+for+Physical+and+Mental+Excellence+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Serve+to+Win++The+14+Day+Gluten+Free+Plan+for+Physical+and+Mental+Excellence+tennis)
 
 ---
 

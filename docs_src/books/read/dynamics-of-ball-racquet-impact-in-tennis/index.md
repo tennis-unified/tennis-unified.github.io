@@ -16,11 +16,10 @@ Dynamics of Ball   Racquet Impact in Tennis. Curated from the Tennis Books libra
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Dynamics%20of%20Ball%20-%20Racquet%20Impact%20in%20Tennis.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Dynamics of Ball   Racquet Impact in Tennis">
-  Your browser does not support inline PDF viewing. <a href="../../Dynamics%20of%20Ball%20-%20Racquet%20Impact%20in%20Tennis.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Dynamics%20of%20Ball%20-%20Racquet%20Impact%20in%20Tennis.pdf) · [Open in new tab ↗](../../Dynamics%20of%20Ball%20-%20Racquet%20Impact%20in%20Tennis.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Dynamics+of+Ball+++Racquet+Impact+in+Tennis+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Dynamics+of+Ball+++Racquet+Impact+in+Tennis+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Dynamics+of+Ball+++Racquet+Impact+in+Tennis+tennis)
 
 ---
 

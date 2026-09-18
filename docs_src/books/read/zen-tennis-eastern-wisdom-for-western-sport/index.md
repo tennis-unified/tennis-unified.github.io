@@ -16,11 +16,10 @@ Zen tennis  eastern wisdom for western sport. Curated from the Tennis Books libr
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Zen_tennis__eastern_wisdom_for_western_sport.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Zen tennis  eastern wisdom for western sport">
-  Your browser does not support inline PDF viewing. <a href="../../Zen_tennis__eastern_wisdom_for_western_sport.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Zen_tennis__eastern_wisdom_for_western_sport.pdf) · [Open in new tab ↗](../../Zen_tennis__eastern_wisdom_for_western_sport.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Zen+tennis++eastern+wisdom+for+western+sport+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Zen+tennis++eastern+wisdom+for+western+sport+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Zen+tennis++eastern+wisdom+for+western+sport+tennis)
 
 ---
 

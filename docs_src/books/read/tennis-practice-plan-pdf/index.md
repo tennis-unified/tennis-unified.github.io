@@ -16,11 +16,10 @@ TENNIS practice Plan pdf. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../TENNIS-practice-Plan-pdf.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="TENNIS practice Plan pdf">
-  Your browser does not support inline PDF viewing. <a href="../../TENNIS-practice-Plan-pdf.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../TENNIS-practice-Plan-pdf.pdf) · [Open in new tab ↗](../../TENNIS-practice-Plan-pdf.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=TENNIS+practice+Plan+pdf+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=TENNIS+practice+Plan+pdf+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=TENNIS+practice+Plan+pdf+tennis)
 
 ---
 

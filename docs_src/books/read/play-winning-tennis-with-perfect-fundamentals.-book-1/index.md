@@ -16,11 +16,10 @@ Play winning tennis with perfect fundamentals. Book 1. Curated from the Tennis B
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Play_winning_tennis_with_perfect_fundamentals._Book_1.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Play winning tennis with perfect fundamentals. Book 1">
-  Your browser does not support inline PDF viewing. <a href="../../Play_winning_tennis_with_perfect_fundamentals._Book_1.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Play_winning_tennis_with_perfect_fundamentals._Book_1.pdf) · [Open in new tab ↗](../../Play_winning_tennis_with_perfect_fundamentals._Book_1.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Play+winning+tennis+with+perfect+fundamentals.+Book+1+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Play+winning+tennis+with+perfect+fundamentals.+Book+1+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Play+winning+tennis+with+perfect+fundamentals.+Book+1+tennis)
 
 ---
 

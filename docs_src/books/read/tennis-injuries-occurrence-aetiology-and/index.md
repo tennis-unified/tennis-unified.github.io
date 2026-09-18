@@ -16,11 +16,10 @@ Tennis injuries occurrence aetiology and. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Tennis_injuries_occurrence_aetiology_and.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Tennis injuries occurrence aetiology and">
-  Your browser does not support inline PDF viewing. <a href="../../Tennis_injuries_occurrence_aetiology_and.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Tennis_injuries_occurrence_aetiology_and.pdf) · [Open in new tab ↗](../../Tennis_injuries_occurrence_aetiology_and.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Tennis+injuries+occurrence+aetiology+and+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Tennis+injuries+occurrence+aetiology+and+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Tennis+injuries+occurrence+aetiology+and+tennis)
 
 ---
 

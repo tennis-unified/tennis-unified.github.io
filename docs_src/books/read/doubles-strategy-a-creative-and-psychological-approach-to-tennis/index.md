@@ -16,11 +16,10 @@ Doubles strategy  a creative and psychological approach to tennis. Curated from 
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Doubles_strategy__a_creative_and_psychological_approach_to_tennis.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Doubles strategy  a creative and psychological approach to tennis">
-  Your browser does not support inline PDF viewing. <a href="../../Doubles_strategy__a_creative_and_psychological_approach_to_tennis.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Doubles_strategy__a_creative_and_psychological_approach_to_tennis.pdf) · [Open in new tab ↗](../../Doubles_strategy__a_creative_and_psychological_approach_to_tennis.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Doubles+strategy++a+creative+and+psychological+approach+to+tennis+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Doubles+strategy++a+creative+and+psychological+approach+to+tennis+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Doubles+strategy++a+creative+and+psychological+approach+to+tennis+tennis)
 
 ---
 

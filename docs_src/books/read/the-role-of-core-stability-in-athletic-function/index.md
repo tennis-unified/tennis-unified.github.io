@@ -16,11 +16,10 @@ Core stability for athletic performance.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../The%20Role%20of%20Core%20Stability%20in%20Athletic%20Function.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Core Stability in Athletic Function">
-  Your browser does not support inline PDF viewing. <a href="../../The%20Role%20of%20Core%20Stability%20in%20Athletic%20Function.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../The%20Role%20of%20Core%20Stability%20in%20Athletic%20Function.pdf) · [Open in new tab ↗](../../The%20Role%20of%20Core%20Stability%20in%20Athletic%20Function.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Core+Stability+in+Athletic+Function+Core+conditioning+%C2%B7+%2A%2ADomain%3A%2A%2A+Training+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Core+Stability+in+Athletic+Function+Core+conditioning+%C2%B7+%2A%2ADomain%3A%2A%2A+Training+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Core+Stability+in+Athletic+Function+Core+conditioning+%C2%B7+%2A%2ADomain%3A%2A%2A+Training+tennis)
 
 ---
 

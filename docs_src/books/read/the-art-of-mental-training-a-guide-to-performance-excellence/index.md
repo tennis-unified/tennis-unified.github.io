@@ -16,11 +16,10 @@ The Art of Mental Training  A Guide to Performance Excellence. Curated from the 
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../The%20Art%20of%20Mental%20Training_%20A%20Guide%20to%20Performance%20Excellence.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="The Art of Mental Training  A Guide to Performance Excellence">
-  Your browser does not support inline PDF viewing. <a href="../../The%20Art%20of%20Mental%20Training_%20A%20Guide%20to%20Performance%20Excellence.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../The%20Art%20of%20Mental%20Training_%20A%20Guide%20to%20Performance%20Excellence.pdf) · [Open in new tab ↗](../../The%20Art%20of%20Mental%20Training_%20A%20Guide%20to%20Performance%20Excellence.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=The+Art+of+Mental+Training++A+Guide+to+Performance+Excellence+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=The+Art+of+Mental+Training++A+Guide+to+Performance+Excellence+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=The+Art+of+Mental+Training++A+Guide+to+Performance+Excellence+tennis)
 
 ---
 

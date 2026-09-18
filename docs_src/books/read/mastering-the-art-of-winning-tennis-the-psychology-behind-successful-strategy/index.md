@@ -16,11 +16,10 @@ Mastering the art of winning tennis  the psychology behind successful strategy. 
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Mastering_the_art_of_winning_tennis__the_psychology_behind_successful_strategy.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Mastering the art of winning tennis  the psychology behind successful strategy">
-  Your browser does not support inline PDF viewing. <a href="../../Mastering_the_art_of_winning_tennis__the_psychology_behind_successful_strategy.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Mastering_the_art_of_winning_tennis__the_psychology_behind_successful_strategy.pdf) · [Open in new tab ↗](../../Mastering_the_art_of_winning_tennis__the_psychology_behind_successful_strategy.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Mastering+the+art+of+winning+tennis++the+psychology+behind+successful+strategy+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Mastering+the+art+of+winning+tennis++the+psychology+behind+successful+strategy+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Mastering+the+art+of+winning+tennis++the+psychology+behind+successful+strategy+tennis)
 
 ---
 

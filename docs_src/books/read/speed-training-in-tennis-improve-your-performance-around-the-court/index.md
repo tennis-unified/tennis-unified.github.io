@@ -16,11 +16,10 @@ Speed training in tennis improve your performance around the court. Curated from
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Speed%20training%20in%20tennis%20improve%20your%20performance%20around%20the%20court.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Speed training in tennis improve your performance around the court">
-  Your browser does not support inline PDF viewing. <a href="../../Speed%20training%20in%20tennis%20improve%20your%20performance%20around%20the%20court.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Speed%20training%20in%20tennis%20improve%20your%20performance%20around%20the%20court.pdf) · [Open in new tab ↗](../../Speed%20training%20in%20tennis%20improve%20your%20performance%20around%20the%20court.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Speed+training+in+tennis+improve+your+performance+around+the+court+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Speed+training+in+tennis+improve+your+performance+around+the+court+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Speed+training+in+tennis+improve+your+performance+around+the+court+tennis)
 
 ---
 

@@ -16,11 +16,10 @@ The fundamentals and Psycholoy of Tennis. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../The%20fundamentals%20and%20Psycholoy%20of%20Tennis.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="The fundamentals and Psycholoy of Tennis">
-  Your browser does not support inline PDF viewing. <a href="../../The%20fundamentals%20and%20Psycholoy%20of%20Tennis.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../The%20fundamentals%20and%20Psycholoy%20of%20Tennis.pdf) · [Open in new tab ↗](../../The%20fundamentals%20and%20Psycholoy%20of%20Tennis.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=The+fundamentals+and+Psycholoy+of+Tennis+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=The+fundamentals+and+Psycholoy+of+Tennis+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=The+fundamentals+and+Psycholoy+of+Tennis+tennis)
 
 ---
 

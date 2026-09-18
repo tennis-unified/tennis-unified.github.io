@@ -16,11 +16,10 @@ fphys 10 00536. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../fphys-10-00536.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="fphys 10 00536">
-  Your browser does not support inline PDF viewing. <a href="../../fphys-10-00536.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../fphys-10-00536.pdf) · [Open in new tab ↗](../../fphys-10-00536.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=fphys+10+00536+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=fphys+10+00536+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=fphys+10+00536+tennis)
 
 ---
 

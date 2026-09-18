@@ -16,11 +16,10 @@ Open An Autobiography. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Open%20An%20Autobiography.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Open An Autobiography">
-  Your browser does not support inline PDF viewing. <a href="../../Open%20An%20Autobiography.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Open%20An%20Autobiography.pdf) · [Open in new tab ↗](../../Open%20An%20Autobiography.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Open+An+Autobiography+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Open+An+Autobiography+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Open+An+Autobiography+tennis)
 
 ---
 

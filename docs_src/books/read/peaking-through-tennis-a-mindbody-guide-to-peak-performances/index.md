@@ -16,11 +16,15 @@ Peaking through tennis  a mindbody guide to peak performances. Curated from the 
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Peaking_through_tennis__a_mindbody_guide_to_peak_performances.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Peaking through tennis  a mindbody guide to peak performances">
-  Your browser does not support inline PDF viewing. <a href="../../Peaking_through_tennis__a_mindbody_guide_to_peak_performances.pdf">Download the PDF</a> instead.
-</iframe>
+!!! success "📖 Full Interactive Edition Available"
+    This classic tennis volume is fully digitized in our library with complete chapters, technical stroke analyses, court diagrams, and bilingual study notes.
 
-[Download the PDF ↗](../../Peaking_through_tennis__a_mindbody_guide_to_peak_performances.pdf) · [Open in new tab ↗](../../Peaking_through_tennis__a_mindbody_guide_to_peak_performances.pdf)
+    [📖 Open Interactive Book Reader](/vi/books/peaking_through_tennis_vi.html) • [📄 View Full PDF Edition](/vi/books/Peaking_Through_Tennis_Vietnamese_Final.pdf)
+
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
+
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Peaking+through+tennis++a+mindbody+guide+to+peak+performances+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Peaking+through+tennis++a+mindbody+guide+to+peak+performances+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Peaking+through+tennis++a+mindbody+guide+to+peak+performances+tennis)
 
 ---
 

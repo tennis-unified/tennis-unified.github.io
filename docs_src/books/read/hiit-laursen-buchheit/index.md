@@ -16,11 +16,10 @@ Comprehensive HIIT reference. Concrete protocols: 20s/10s, 30s/30s, 60s/60s. Spo
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../HIIT-Laursen-Buchheit.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Science & Application of HIIT">
-  Your browser does not support inline PDF viewing. <a href="../../HIIT-Laursen-Buchheit.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../HIIT-Laursen-Buchheit.pdf) · [Open in new tab ↗](../../HIIT-Laursen-Buchheit.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Science+%26+Application+of+HIIT+Laursen+%26+Buchheit%2C+2019+%C2%B7+%2A%2ADomain%3A%2A%2A+Training+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Science+%26+Application+of+HIIT+Laursen+%26+Buchheit%2C+2019+%C2%B7+%2A%2ADomain%3A%2A%2A+Training+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Science+%26+Application+of+HIIT+Laursen+%26+Buchheit%2C+2019+%C2%B7+%2A%2ADomain%3A%2A%2A+Training+tennis)
 
 ---
 

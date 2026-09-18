@@ -16,11 +16,15 @@ Quick Tennis. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Quick_Tennis.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Quick Tennis">
-  Your browser does not support inline PDF viewing. <a href="../../Quick_Tennis.pdf">Download the PDF</a> instead.
-</iframe>
+!!! success "📖 Full Interactive Edition Available"
+    This classic tennis volume is fully digitized in our library with complete chapters, technical stroke analyses, court diagrams, and bilingual study notes.
 
-[Download the PDF ↗](../../Quick_Tennis.pdf) · [Open in new tab ↗](../../Quick_Tennis.pdf)
+    [📖 Open Interactive Book Reader](/vi/books/quick_tennis_hines_vi.html) • [📄 View Full PDF Edition](/vi/books/Quick_Tennis_Hines_Vietnamese_Final.pdf)
+
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
+
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Quick+Tennis+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Quick+Tennis+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Quick+Tennis+tennis)
 
 ---
 

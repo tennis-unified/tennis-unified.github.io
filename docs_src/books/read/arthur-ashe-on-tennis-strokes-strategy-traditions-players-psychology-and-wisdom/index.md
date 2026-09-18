@@ -16,11 +16,15 @@ Arthur Ashe on tennis  strokes, strategy, traditions, players, psychology, and w
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Arthur_Ashe_on_tennis__strokes%2C_strategy%2C_traditions%2C_players%2C_psychology%2C_and_wisdom.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Arthur Ashe on tennis  strokes, strategy, traditions, players, psychology, and wisdom">
-  Your browser does not support inline PDF viewing. <a href="../../Arthur_Ashe_on_tennis__strokes%2C_strategy%2C_traditions%2C_players%2C_psychology%2C_and_wisdom.pdf">Download the PDF</a> instead.
-</iframe>
+!!! success "📖 Full Interactive Edition Available"
+    This classic tennis volume is fully digitized in our library with complete chapters, technical stroke analyses, court diagrams, and bilingual study notes.
 
-[Download the PDF ↗](../../Arthur_Ashe_on_tennis__strokes%2C_strategy%2C_traditions%2C_players%2C_psychology%2C_and_wisdom.pdf) · [Open in new tab ↗](../../Arthur_Ashe_on_tennis__strokes%2C_strategy%2C_traditions%2C_players%2C_psychology%2C_and_wisdom.pdf)
+    [📖 Open Interactive Book Reader](/vi/books/arthur_ashe_on_tennis_vi.html) • [📄 View Full PDF Edition](/vi/books/Arthur_Ashe_on_Tennis_Vietnamese_Final.pdf)
+
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
+
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Arthur+Ashe+on+tennis++strokes%2C+strategy%2C+traditions%2C+players%2C+psychology%2C+and+wisdom+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Arthur+Ashe+on+tennis++strokes%2C+strategy%2C+traditions%2C+players%2C+psychology%2C+and+wisdom+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Arthur+Ashe+on+tennis++strokes%2C+strategy%2C+traditions%2C+players%2C+psychology%2C+and+wisdom+tennis)
 
 ---
 

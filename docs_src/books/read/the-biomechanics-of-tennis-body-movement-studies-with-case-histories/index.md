@@ -16,11 +16,15 @@ The biomechanics of tennis  body movement studies with case histories. Curated f
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../The_biomechanics_of_tennis__body_movement_studies_with_case_histories.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="The biomechanics of tennis  body movement studies with case histories">
-  Your browser does not support inline PDF viewing. <a href="../../The_biomechanics_of_tennis__body_movement_studies_with_case_histories.pdf">Download the PDF</a> instead.
-</iframe>
+!!! success "📖 Full Interactive Edition Available"
+    This classic tennis volume is fully digitized in our library with complete chapters, technical stroke analyses, court diagrams, and bilingual study notes.
 
-[Download the PDF ↗](../../The_biomechanics_of_tennis__body_movement_studies_with_case_histories.pdf) · [Open in new tab ↗](../../The_biomechanics_of_tennis__body_movement_studies_with_case_histories.pdf)
+    [📖 Open Interactive Book Reader](/vi/books/the_biomechanics_of_tennis_vi.html) • [📄 View Full PDF Edition](/vi/books/The_Biomechanics_of_Tennis_Vietnamese_Final.pdf)
+
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
+
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=The+biomechanics+of+tennis++body+movement+studies+with+case+histories+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=The+biomechanics+of+tennis++body+movement+studies+with+case+histories+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=The+biomechanics+of+tennis++body+movement+studies+with+case+histories+tennis)
 
 ---
 

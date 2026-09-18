@@ -16,11 +16,10 @@ Read Distance Learning Online. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Read%20Distance%20Learning%20Online.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Read Distance Learning Online">
-  Your browser does not support inline PDF viewing. <a href="../../Read%20Distance%20Learning%20Online.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Read%20Distance%20Learning%20Online.pdf) · [Open in new tab ↗](../../Read%20Distance%20Learning%20Online.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Read+Distance+Learning+Online+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Read+Distance+Learning+Online+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Read+Distance+Learning+Online+tennis)
 
 ---
 

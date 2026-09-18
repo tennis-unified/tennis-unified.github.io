@@ -16,11 +16,10 @@ Constraints-led coaching replaces techniques-first pedagogy.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../LEARN%20TENNIS%20AS%20AN%20OPEN%20SKILL%20SPORT-%20Wayne%20Elderton.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Learn Tennis as an Open Skill Sport">
-  Your browser does not support inline PDF viewing. <a href="../../LEARN%20TENNIS%20AS%20AN%20OPEN%20SKILL%20SPORT-%20Wayne%20Elderton.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../LEARN%20TENNIS%20AS%20AN%20OPEN%20SKILL%20SPORT-%20Wayne%20Elderton.pdf) · [Open in new tab ↗](../../LEARN%20TENNIS%20AS%20AN%20OPEN%20SKILL%20SPORT-%20Wayne%20Elderton.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Learn+Tennis+as+an+Open+Skill+Sport+Wayne+Elderton+%C2%B7+%2A%2ADomain%3A%2A%2A+Coaching+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Learn+Tennis+as+an+Open+Skill+Sport+Wayne+Elderton+%C2%B7+%2A%2ADomain%3A%2A%2A+Coaching+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Learn+Tennis+as+an+Open+Skill+Sport+Wayne+Elderton+%C2%B7+%2A%2ADomain%3A%2A%2A+Coaching+tennis)
 
 ---
 

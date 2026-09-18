@@ -16,11 +16,10 @@ Peer-reviewed research on racket design's contribution to serve speed.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Kotzeetal.2001Theroleoftheracketinhigh-speedserves.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Role of the Racket in High-Speed Serves">
-  Your browser does not support inline PDF viewing. <a href="../../Kotzeetal.2001Theroleoftheracketinhigh-speedserves.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Kotzeetal.2001Theroleoftheracketinhigh-speedserves.pdf) · [Open in new tab ↗](../../Kotzeetal.2001Theroleoftheracketinhigh-speedserves.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Role+of+the+Racket+in+High-Speed+Serves+Kotze+et+al.%2C+2001+%C2%B7+%2A%2ADomain%3A%2A%2A+Equipment+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Role+of+the+Racket+in+High-Speed+Serves+Kotze+et+al.%2C+2001+%C2%B7+%2A%2ADomain%3A%2A%2A+Equipment+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Role+of+the+Racket+in+High-Speed+Serves+Kotze+et+al.%2C+2001+%C2%B7+%2A%2ADomain%3A%2A%2A+Equipment+tennis)
 
 ---
 

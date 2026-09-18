@@ -16,11 +16,10 @@ Stan Smith's six tennis basics. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Stan_Smith%27s_six_tennis_basics.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Stan Smith's six tennis basics">
-  Your browser does not support inline PDF viewing. <a href="../../Stan_Smith%27s_six_tennis_basics.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Stan_Smith%27s_six_tennis_basics.pdf) · [Open in new tab ↗](../../Stan_Smith%27s_six_tennis_basics.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Stan+Smith%27s+six+tennis+basics+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Stan+Smith%27s+six+tennis+basics+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Stan+Smith%27s+six+tennis+basics+tennis)
 
 ---
 

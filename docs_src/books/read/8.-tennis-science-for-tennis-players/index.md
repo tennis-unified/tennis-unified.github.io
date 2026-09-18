@@ -16,11 +16,10 @@ University research compiled for the serious player.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../8.%20Tennis%20science%20for%20tennis%20players.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Tennis Science for Tennis Players">
-  Your browser does not support inline PDF viewing. <a href="../../8.%20Tennis%20science%20for%20tennis%20players.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../8.%20Tennis%20science%20for%20tennis%20players.pdf) · [Open in new tab ↗](../../8.%20Tennis%20science%20for%20tennis%20players.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Tennis+Science+for+Tennis+Players+University+research+compilation+%C2%B7+%2A%2ADomain%3A%2A%2A+Biomechanics+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Tennis+Science+for+Tennis+Players+University+research+compilation+%C2%B7+%2A%2ADomain%3A%2A%2A+Biomechanics+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Tennis+Science+for+Tennis+Players+University+research+compilation+%C2%B7+%2A%2ADomain%3A%2A%2A+Biomechanics+tennis)
 
 ---
 

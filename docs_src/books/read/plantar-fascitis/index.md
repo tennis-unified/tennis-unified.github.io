@@ -16,11 +16,10 @@ Tennis-specific cause and prevention of plantar fasciitis.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Plantar%20Fascitis.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Plantar Fasciitis in Tennis">
-  Your browser does not support inline PDF viewing. <a href="../../Plantar%20Fascitis.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Plantar%20Fascitis.pdf) · [Open in new tab ↗](../../Plantar%20Fascitis.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Plantar+Fasciitis+in+Tennis+Medical+reference+%C2%B7+%2A%2ADomain%3A%2A%2A+Medical+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Plantar+Fasciitis+in+Tennis+Medical+reference+%C2%B7+%2A%2ADomain%3A%2A%2A+Medical+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Plantar+Fasciitis+in+Tennis+Medical+reference+%C2%B7+%2A%2ADomain%3A%2A%2A+Medical+tennis)
 
 ---
 

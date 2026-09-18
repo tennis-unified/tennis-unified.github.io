@@ -16,11 +16,10 @@ Analysis of Nick Kyrgios's topspin serve technique.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Nick%20Kyrgio%20Debunk%20Topspin%20Serve.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Kyrgios Topspin Serve Debunk">
-  Your browser does not support inline PDF viewing. <a href="../../Nick%20Kyrgio%20Debunk%20Topspin%20Serve.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Nick%20Kyrgio%20Debunk%20Topspin%20Serve.pdf) · [Open in new tab ↗](../../Nick%20Kyrgio%20Debunk%20Topspin%20Serve.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Kyrgios+Topspin+Serve+Debunk+Kyrgios+serve+analysis+%C2%B7+%2A%2ADomain%3A%2A%2A+Serve+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Kyrgios+Topspin+Serve+Debunk+Kyrgios+serve+analysis+%C2%B7+%2A%2ADomain%3A%2A%2A+Serve+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Kyrgios+Topspin+Serve+Debunk+Kyrgios+serve+analysis+%C2%B7+%2A%2ADomain%3A%2A%2A+Serve+tennis)
 
 ---
 

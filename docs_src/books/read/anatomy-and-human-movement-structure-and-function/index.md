@@ -16,11 +16,10 @@ Anatomy and human movement structure and function. Curated from the Tennis Books
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Anatomy%20and%20human%20movement%20structure%20and%20function.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Anatomy and human movement structure and function">
-  Your browser does not support inline PDF viewing. <a href="../../Anatomy%20and%20human%20movement%20structure%20and%20function.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Anatomy%20and%20human%20movement%20structure%20and%20function.pdf) · [Open in new tab ↗](../../Anatomy%20and%20human%20movement%20structure%20and%20function.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Anatomy+and+human+movement+structure+and+function+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Anatomy+and+human+movement+structure+and+function+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Anatomy+and+human+movement+structure+and+function+tennis)
 
 ---
 

@@ -16,11 +16,10 @@ Comparison of platform vs pinpoint serve stance.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Platform%20and%20pinpoint%20serve%20stance%20variations.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Platform and Pinpoint Serve Stance">
-  Your browser does not support inline PDF viewing. <a href="../../Platform%20and%20pinpoint%20serve%20stance%20variations.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Platform%20and%20pinpoint%20serve%20stance%20variations.pdf) · [Open in new tab ↗](../../Platform%20and%20pinpoint%20serve%20stance%20variations.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Platform+and+Pinpoint+Serve+Stance+Serve+technique+%C2%B7+%2A%2ADomain%3A%2A%2A+Serve+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Platform+and+Pinpoint+Serve+Stance+Serve+technique+%C2%B7+%2A%2ADomain%3A%2A%2A+Serve+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Platform+and+Pinpoint+Serve+Stance+Serve+technique+%C2%B7+%2A%2ADomain%3A%2A%2A+Serve+tennis)
 
 ---
 

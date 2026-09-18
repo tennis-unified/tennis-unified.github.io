@@ -16,11 +16,10 @@ The Circuit A Tennis Odyssey   Rowan Ricardo Phillips. Curated from the Tennis B
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../The_Circuit_A_Tennis_Odyssey_-_Rowan_Ricardo_Phillips.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="The Circuit A Tennis Odyssey   Rowan Ricardo Phillips">
-  Your browser does not support inline PDF viewing. <a href="../../The_Circuit_A_Tennis_Odyssey_-_Rowan_Ricardo_Phillips.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../The_Circuit_A_Tennis_Odyssey_-_Rowan_Ricardo_Phillips.pdf) · [Open in new tab ↗](../../The_Circuit_A_Tennis_Odyssey_-_Rowan_Ricardo_Phillips.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=The+Circuit+A+Tennis+Odyssey+++Rowan+Ricardo+Phillips+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=The+Circuit+A+Tennis+Odyssey+++Rowan+Ricardo+Phillips+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=The+Circuit+A+Tennis+Odyssey+++Rowan+Ricardo+Phillips+tennis)
 
 ---
 

@@ -16,11 +16,10 @@ Serena Williams Tennis Superstar   Meghan Engsberg Cunningham. Curated from the 
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Serena_Williams_Tennis_Superstar_-_Meghan_Engsberg_Cunningham.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Serena Williams Tennis Superstar   Meghan Engsberg Cunningham">
-  Your browser does not support inline PDF viewing. <a href="../../Serena_Williams_Tennis_Superstar_-_Meghan_Engsberg_Cunningham.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Serena_Williams_Tennis_Superstar_-_Meghan_Engsberg_Cunningham.pdf) · [Open in new tab ↗](../../Serena_Williams_Tennis_Superstar_-_Meghan_Engsberg_Cunningham.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Serena+Williams+Tennis+Superstar+++Meghan+Engsberg+Cunningham+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Serena+Williams+Tennis+Superstar+++Meghan+Engsberg+Cunningham+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Serena+Williams+Tennis+Superstar+++Meghan+Engsberg+Cunningham+tennis)
 
 ---
 

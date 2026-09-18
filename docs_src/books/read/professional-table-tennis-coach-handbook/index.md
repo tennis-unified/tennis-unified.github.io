@@ -16,11 +16,10 @@ Professional table tennis coach handbook. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Professional%20table%20tennis%20coach%20handbook.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Professional table tennis coach handbook">
-  Your browser does not support inline PDF viewing. <a href="../../Professional%20table%20tennis%20coach%20handbook.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Professional%20table%20tennis%20coach%20handbook.pdf) · [Open in new tab ↗](../../Professional%20table%20tennis%20coach%20handbook.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Professional+table+tennis+coach+handbook+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Professional+table+tennis+coach+handbook+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Professional+table+tennis+coach+handbook+tennis)
 
 ---
 

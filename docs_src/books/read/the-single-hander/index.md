@@ -16,11 +16,10 @@ One-handed backhand technique reference.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../The%20single%20hander.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="The Single Hander">
-  Your browser does not support inline PDF viewing. <a href="../../The%20single%20hander.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../The%20single%20hander.pdf) · [Open in new tab ↗](../../The%20single%20hander.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=The+Single+Hander+One-handed+backhand+reference+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=The+Single+Hander+One-handed+backhand+reference+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=The+Single+Hander+One-handed+backhand+reference+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis)
 
 ---
 

@@ -16,11 +16,10 @@ Shoe Dog. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Shoe%20Dog.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Shoe Dog">
-  Your browser does not support inline PDF viewing. <a href="../../Shoe%20Dog.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Shoe%20Dog.pdf) · [Open in new tab ↗](../../Shoe%20Dog.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Shoe+Dog+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Shoe+Dog+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Shoe+Dog+tennis)
 
 ---
 

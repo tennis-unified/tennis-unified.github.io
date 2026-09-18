@@ -16,11 +16,15 @@ Tennis Fundamentals. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Tennis_Fundamentals.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Tennis Fundamentals">
-  Your browser does not support inline PDF viewing. <a href="../../Tennis_Fundamentals.pdf">Download the PDF</a> instead.
-</iframe>
+!!! success "📖 Full Interactive Edition Available"
+    This classic tennis volume is fully digitized in our library with complete chapters, technical stroke analyses, court diagrams, and bilingual study notes.
 
-[Download the PDF ↗](../../Tennis_Fundamentals.pdf) · [Open in new tab ↗](../../Tennis_Fundamentals.pdf)
+    [📖 Open Interactive Book Reader](/vi/books/tennis_fundamentals_vi.html) • [📄 View Full PDF Edition](/vi/books/Tennis_Fundamentals_Vietnamese_Final.pdf)
+
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
+
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Tennis+Fundamentals+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Tennis+Fundamentals+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Tennis+Fundamentals+tennis)
 
 ---
 

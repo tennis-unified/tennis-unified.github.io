@@ -16,11 +16,10 @@ The canonical 8-stage tennis serve biomechanics framework with measured joint an
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../An%208-Stage%20Model%20for%20Evaluating%20the%20Tennis%20Serve.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="An 8-Stage Model for Evaluating the Tennis Serve">
-  Your browser does not support inline PDF viewing. <a href="../../An%208-Stage%20Model%20for%20Evaluating%20the%20Tennis%20Serve.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../An%208-Stage%20Model%20for%20Evaluating%20the%20Tennis%20Serve.pdf) · [Open in new tab ↗](../../An%208-Stage%20Model%20for%20Evaluating%20the%20Tennis%20Serve.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=An+8-Stage+Model+for+Evaluating+the+Tennis+Serve+Kovacs+%26+Ellenbecker%2C+2011+%C2%B7+%2A%2ADomain%3A%2A%2A+Serve+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=An+8-Stage+Model+for+Evaluating+the+Tennis+Serve+Kovacs+%26+Ellenbecker%2C+2011+%C2%B7+%2A%2ADomain%3A%2A%2A+Serve+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=An+8-Stage+Model+for+Evaluating+the+Tennis+Serve+Kovacs+%26+Ellenbecker%2C+2011+%C2%B7+%2A%2ADomain%3A%2A%2A+Serve+tennis)
 
 ---
 

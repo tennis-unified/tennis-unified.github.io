@@ -16,11 +16,10 @@ USPTA coaching article on footwork in modern tennis.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../USPTA_high_performance_Vol._2_No_4.2005_footwork_in_modern_tennis.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Footwork in Modern Tennis (USPTA)">
-  Your browser does not support inline PDF viewing. <a href="../../USPTA_high_performance_Vol._2_No_4.2005_footwork_in_modern_tennis.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../USPTA_high_performance_Vol._2_No_4.2005_footwork_in_modern_tennis.pdf) · [Open in new tab ↗](../../USPTA_high_performance_Vol._2_No_4.2005_footwork_in_modern_tennis.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Footwork+in+Modern+Tennis+%28USPTA%29+USPTA+%C2%B7+%2A%2ADomain%3A%2A%2A+Footwork+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Footwork+in+Modern+Tennis+%28USPTA%29+USPTA+%C2%B7+%2A%2ADomain%3A%2A%2A+Footwork+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Footwork+in+Modern+Tennis+%28USPTA%29+USPTA+%C2%B7+%2A%2ADomain%3A%2A%2A+Footwork+tennis)
 
 ---
 

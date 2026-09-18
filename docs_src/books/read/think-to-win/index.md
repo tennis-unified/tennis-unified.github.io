@@ -16,11 +16,15 @@ Think to Win. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Think%20to%20Win.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Think to Win">
-  Your browser does not support inline PDF viewing. <a href="../../Think%20to%20Win.pdf">Download the PDF</a> instead.
-</iframe>
+!!! success "📖 Full Interactive Edition Available"
+    This classic tennis volume is fully digitized in our library with complete chapters, technical stroke analyses, court diagrams, and bilingual study notes.
 
-[Download the PDF ↗](../../Think%20to%20Win.pdf) · [Open in new tab ↗](../../Think%20to%20Win.pdf)
+    [📖 Open Interactive Book Reader](/vi/books/think_to_win_vi.html) • [📄 View Full PDF Edition](/vi/books/Think_to_Win_Vietnamese_Final.pdf)
+
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
+
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Think+to+Win+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Think+to+Win+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Think+to+Win+tennis)
 
 ---
 

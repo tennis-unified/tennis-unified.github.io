@@ -16,11 +16,10 @@ Performance Factors Related to the Different Tennis Backhand Groundstrokes. Cura
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Performance%20Factors%20Related%20to%20the%20Different%20Tennis%20Backhand%20Groundstrokes.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Performance Factors Related to the Different Tennis Backhand Groundstrokes">
-  Your browser does not support inline PDF viewing. <a href="../../Performance%20Factors%20Related%20to%20the%20Different%20Tennis%20Backhand%20Groundstrokes.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Performance%20Factors%20Related%20to%20the%20Different%20Tennis%20Backhand%20Groundstrokes.pdf) · [Open in new tab ↗](../../Performance%20Factors%20Related%20to%20the%20Different%20Tennis%20Backhand%20Groundstrokes.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Performance+Factors+Related+to+the+Different+Tennis+Backhand+Groundstrokes+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Performance+Factors+Related+to+the+Different+Tennis+Backhand+Groundstrokes+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Performance+Factors+Related+to+the+Different+Tennis+Backhand+Groundstrokes+tennis)
 
 ---
 

@@ -16,11 +16,10 @@ Book  Anatomy and Physiology (OpenStax). Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Book%20_Anatomy_and_Physiology_%28OpenStax%29.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Book  Anatomy and Physiology (OpenStax)">
-  Your browser does not support inline PDF viewing. <a href="../../Book%20_Anatomy_and_Physiology_%28OpenStax%29.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Book%20_Anatomy_and_Physiology_%28OpenStax%29.pdf) · [Open in new tab ↗](../../Book%20_Anatomy_and_Physiology_%28OpenStax%29.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Book++Anatomy+and+Physiology+%28OpenStax%29+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Book++Anatomy+and+Physiology+%28OpenStax%29+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Book++Anatomy+and+Physiology+%28OpenStax%29+tennis)
 
 ---
 

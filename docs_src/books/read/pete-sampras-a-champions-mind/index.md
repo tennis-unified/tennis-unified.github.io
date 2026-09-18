@@ -16,11 +16,10 @@ Pete Sampras a Champions Mind. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Pete%20Sampras%20a%20Champions%20Mind.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Pete Sampras a Champions Mind">
-  Your browser does not support inline PDF viewing. <a href="../../Pete%20Sampras%20a%20Champions%20Mind.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Pete%20Sampras%20a%20Champions%20Mind.pdf) · [Open in new tab ↗](../../Pete%20Sampras%20a%20Champions%20Mind.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Pete+Sampras+a+Champions+Mind+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Pete+Sampras+a+Champions+Mind+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Pete+Sampras+a+Champions+Mind+tennis)
 
 ---
 

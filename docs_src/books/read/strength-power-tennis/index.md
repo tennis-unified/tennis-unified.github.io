@@ -16,11 +16,10 @@ Strength and power training for tennis players.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Strength-Power-Tennis.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Strength & Power for Tennis">
-  Your browser does not support inline PDF viewing. <a href="../../Strength-Power-Tennis.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Strength-Power-Tennis.pdf) · [Open in new tab ↗](../../Strength-Power-Tennis.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Strength+%26+Power+for+Tennis+S%26C+reference+%C2%B7+%2A%2ADomain%3A%2A%2A+Training+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Strength+%26+Power+for+Tennis+S%26C+reference+%C2%B7+%2A%2ADomain%3A%2A%2A+Training+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Strength+%26+Power+for+Tennis+S%26C+reference+%C2%B7+%2A%2ADomain%3A%2A%2A+Training+tennis)
 
 ---
 

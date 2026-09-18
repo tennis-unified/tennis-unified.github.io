@@ -16,11 +16,10 @@ Fascial Release for Structural Balance, Revised Edition. Curated from the Tennis
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Fascial%20Release%20for%20Structural%20Balance%2C%20Revised%20Edition.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Fascial Release for Structural Balance, Revised Edition">
-  Your browser does not support inline PDF viewing. <a href="../../Fascial%20Release%20for%20Structural%20Balance%2C%20Revised%20Edition.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Fascial%20Release%20for%20Structural%20Balance%2C%20Revised%20Edition.pdf) · [Open in new tab ↗](../../Fascial%20Release%20for%20Structural%20Balance%2C%20Revised%20Edition.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Fascial+Release+for+Structural+Balance%2C+Revised+Edition+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Fascial+Release+for+Structural+Balance%2C+Revised+Edition+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Fascial+Release+for+Structural+Balance%2C+Revised+Edition+tennis)
 
 ---
 

@@ -16,11 +16,10 @@ Tennis Training Enhancing On court Performance. Curated from the Tennis Books li
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Tennis%20Training%20Enhancing%20On-court%20Performance.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Tennis Training Enhancing On court Performance">
-  Your browser does not support inline PDF viewing. <a href="../../Tennis%20Training%20Enhancing%20On-court%20Performance.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Tennis%20Training%20Enhancing%20On-court%20Performance.pdf) · [Open in new tab ↗](../../Tennis%20Training%20Enhancing%20On-court%20Performance.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Tennis+Training+Enhancing+On+court+Performance+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Tennis+Training+Enhancing+On+court+Performance+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Tennis+Training+Enhancing+On+court+Performance+tennis)
 
 ---
 

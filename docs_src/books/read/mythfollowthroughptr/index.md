@@ -16,11 +16,10 @@ MythFollowThroughPTR. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../MythFollowThroughPTR.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="MythFollowThroughPTR">
-  Your browser does not support inline PDF viewing. <a href="../../MythFollowThroughPTR.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../MythFollowThroughPTR.pdf) · [Open in new tab ↗](../../MythFollowThroughPTR.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=MythFollowThroughPTR+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=MythFollowThroughPTR+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=MythFollowThroughPTR+tennis)
 
 ---
 

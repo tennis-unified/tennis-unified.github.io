@@ -16,11 +16,10 @@ Insider Tennis Strategies. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Insider-Tennis-Strategies.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Insider Tennis Strategies">
-  Your browser does not support inline PDF viewing. <a href="../../Insider-Tennis-Strategies.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Insider-Tennis-Strategies.pdf) · [Open in new tab ↗](../../Insider-Tennis-Strategies.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Insider+Tennis+Strategies+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Insider+Tennis+Strategies+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Insider+Tennis+Strategies+tennis)
 
 ---
 

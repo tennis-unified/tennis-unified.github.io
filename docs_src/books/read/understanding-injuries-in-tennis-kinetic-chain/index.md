@@ -16,11 +16,10 @@ Understanding Injuries in tennis   Kinetic chain. Curated from the Tennis Books 
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Understanding%20Injuries%20in%20tennis%20-%20Kinetic%20chain.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Understanding Injuries in tennis   Kinetic chain">
-  Your browser does not support inline PDF viewing. <a href="../../Understanding%20Injuries%20in%20tennis%20-%20Kinetic%20chain.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Understanding%20Injuries%20in%20tennis%20-%20Kinetic%20chain.pdf) · [Open in new tab ↗](../../Understanding%20Injuries%20in%20tennis%20-%20Kinetic%20chain.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Understanding+Injuries+in+tennis+++Kinetic+chain+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Understanding+Injuries+in+tennis+++Kinetic+chain+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Understanding+Injuries+in+tennis+++Kinetic+chain+tennis)
 
 ---
 

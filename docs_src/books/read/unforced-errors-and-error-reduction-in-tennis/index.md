@@ -16,11 +16,10 @@ Unforced errors and error reduction in tennis. Curated from the Tennis Books lib
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Unforced%20errors%20and%20error%20reduction%20in%20tennis.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Unforced errors and error reduction in tennis">
-  Your browser does not support inline PDF viewing. <a href="../../Unforced%20errors%20and%20error%20reduction%20in%20tennis.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Unforced%20errors%20and%20error%20reduction%20in%20tennis.pdf) · [Open in new tab ↗](../../Unforced%20errors%20and%20error%20reduction%20in%20tennis.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Unforced+errors+and+error+reduction+in+tennis+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Unforced+errors+and+error+reduction+in+tennis+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Unforced+errors+and+error+reduction+in+tennis+tennis)
 
 ---
 

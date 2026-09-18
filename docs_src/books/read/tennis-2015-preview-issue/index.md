@@ -16,11 +16,10 @@ Tennis 2015 Preview Issue. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Tennis%202015%20Preview%20Issue.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Tennis 2015 Preview Issue">
-  Your browser does not support inline PDF viewing. <a href="../../Tennis%202015%20Preview%20Issue.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Tennis%202015%20Preview%20Issue.pdf) · [Open in new tab ↗](../../Tennis%202015%20Preview%20Issue.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Tennis+2015+Preview+Issue+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Tennis+2015+Preview+Issue+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Tennis+2015+Preview+Issue+tennis)
 
 ---
 

@@ -16,11 +16,10 @@ description: "10 speed and agility drills. Curated from the Tennis Books library
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../10%20speed%20and%20agility%20drills.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="10 speed and agility drills">
-  Your browser does not support inline PDF viewing. <a href="../../10%20speed%20and%20agility%20drills.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../10%20speed%20and%20agility%20drills.pdf) · [Open in new tab ↗](../../10%20speed%20and%20agility%20drills.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=10+speed+and+agility+drills+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=10+speed+and+agility+drills+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=10+speed+and+agility+drills+tennis)
 
 ---
 

@@ -16,11 +16,10 @@ Coaching methodology for technical and tactical skills.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Coaching%20Tennis%20Technical%20and%20Tactical%20Skills.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Coaching Tennis: Technical and Tactical Skills">
-  Your browser does not support inline PDF viewing. <a href="../../Coaching%20Tennis%20Technical%20and%20Tactical%20Skills.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Coaching%20Tennis%20Technical%20and%20Tactical%20Skills.pdf) · [Open in new tab ↗](../../Coaching%20Tennis%20Technical%20and%20Tactical%20Skills.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Coaching+Tennis%3A+Technical+and+Tactical+Skills+Coaching+reference+%C2%B7+%2A%2ADomain%3A%2A%2A+Coaching+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Coaching+Tennis%3A+Technical+and+Tactical+Skills+Coaching+reference+%C2%B7+%2A%2ADomain%3A%2A%2A+Coaching+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Coaching+Tennis%3A+Technical+and+Tactical+Skills+Coaching+reference+%C2%B7+%2A%2ADomain%3A%2A%2A+Coaching+tennis)
 
 ---
 

@@ -16,11 +16,10 @@ Basic Rules of Tennis and misc information. Curated from the Tennis Books librar
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Basic%20Rules%20of%20Tennis%20and%20misc%20information.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Basic Rules of Tennis and misc information">
-  Your browser does not support inline PDF viewing. <a href="../../Basic%20Rules%20of%20Tennis%20and%20misc%20information.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Basic%20Rules%20of%20Tennis%20and%20misc%20information.pdf) · [Open in new tab ↗](../../Basic%20Rules%20of%20Tennis%20and%20misc%20information.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Basic+Rules+of+Tennis+and+misc+information+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Basic+Rules+of+Tennis+and+misc+information+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Basic+Rules+of+Tennis+and+misc+information+tennis)
 
 ---
 

@@ -16,11 +16,10 @@ Coaching Lesson 2 Slides. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Coaching%20Lesson%202%20Slides.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Coaching Lesson 2 Slides">
-  Your browser does not support inline PDF viewing. <a href="../../Coaching%20Lesson%202%20Slides.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Coaching%20Lesson%202%20Slides.pdf) · [Open in new tab ↗](../../Coaching%20Lesson%202%20Slides.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Coaching+Lesson+2+Slides+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Coaching+Lesson+2+Slides+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Coaching+Lesson+2+Slides+tennis)
 
 ---
 

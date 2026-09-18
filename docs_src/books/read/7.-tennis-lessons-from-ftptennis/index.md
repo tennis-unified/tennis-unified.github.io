@@ -16,11 +16,10 @@ Lessons compiled from FTPTennis.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../7.%20Tennis%20Lessons%20from%20FTPTennis.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Tennis Lessons from FTPTennis">
-  Your browser does not support inline PDF viewing. <a href="../../7.%20Tennis%20Lessons%20from%20FTPTennis.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../7.%20Tennis%20Lessons%20from%20FTPTennis.pdf) · [Open in new tab ↗](../../7.%20Tennis%20Lessons%20from%20FTPTennis.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Tennis+Lessons+from+FTPTennis+FTP+compilation+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Tennis+Lessons+from+FTPTennis+FTP+compilation+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Tennis+Lessons+from+FTPTennis+FTP+compilation+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis)
 
 ---
 

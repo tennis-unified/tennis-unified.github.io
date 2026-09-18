@@ -16,11 +16,10 @@ String Theory   David Foster Wallace. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../String_Theory_-_David_Foster_Wallace.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="String Theory   David Foster Wallace">
-  Your browser does not support inline PDF viewing. <a href="../../String_Theory_-_David_Foster_Wallace.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../String_Theory_-_David_Foster_Wallace.pdf) · [Open in new tab ↗](../../String_Theory_-_David_Foster_Wallace.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=String+Theory+++David+Foster+Wallace+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=String+Theory+++David+Foster+Wallace+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=String+Theory+++David+Foster+Wallace+tennis)
 
 ---
 

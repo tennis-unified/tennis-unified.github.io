@@ -16,11 +16,10 @@ Salisbury Soccer Strength and Conditioning. Curated from the Tennis Books librar
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Salisbury-Soccer-Strength-and-Conditioning.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Salisbury Soccer Strength and Conditioning">
-  Your browser does not support inline PDF viewing. <a href="../../Salisbury-Soccer-Strength-and-Conditioning.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Salisbury-Soccer-Strength-and-Conditioning.pdf) · [Open in new tab ↗](../../Salisbury-Soccer-Strength-and-Conditioning.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Salisbury+Soccer+Strength+and+Conditioning+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Salisbury+Soccer+Strength+and+Conditioning+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Salisbury+Soccer+Strength+and+Conditioning+tennis)
 
 ---
 

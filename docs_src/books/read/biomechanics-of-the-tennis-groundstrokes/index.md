@@ -16,11 +16,10 @@ Research article on the biomechanics of forehand and backhand groundstrokes.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Biomechanics-of-the-Tennis-Groundstrokes.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Biomechanics of the Tennis Groundstrokes">
-  Your browser does not support inline PDF viewing. <a href="../../Biomechanics-of-the-Tennis-Groundstrokes.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Biomechanics-of-the-Tennis-Groundstrokes.pdf) · [Open in new tab ↗](../../Biomechanics-of-the-Tennis-Groundstrokes.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Biomechanics+of+the+Tennis+Groundstrokes+Elliott+%28research%29+%C2%B7+%2A%2ADomain%3A%2A%2A+Biomechanics+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Biomechanics+of+the+Tennis+Groundstrokes+Elliott+%28research%29+%C2%B7+%2A%2ADomain%3A%2A%2A+Biomechanics+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Biomechanics+of+the+Tennis+Groundstrokes+Elliott+%28research%29+%C2%B7+%2A%2ADomain%3A%2A%2A+Biomechanics+tennis)
 
 ---
 

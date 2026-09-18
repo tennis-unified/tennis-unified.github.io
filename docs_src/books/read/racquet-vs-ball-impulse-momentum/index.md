@@ -16,11 +16,10 @@ Impulse-momentum analysis of racquet-ball impact.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Racquet%20vs%20Ball%20Impulse%20-%20Momentum.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Racquet vs Ball — Impulse & Momentum">
-  Your browser does not support inline PDF viewing. <a href="../../Racquet%20vs%20Ball%20Impulse%20-%20Momentum.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Racquet%20vs%20Ball%20Impulse%20-%20Momentum.pdf) · [Open in new tab ↗](../../Racquet%20vs%20Ball%20Impulse%20-%20Momentum.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Racquet+vs+Ball+%E2%80%94+Impulse+%26+Momentum+Physics+%C2%B7+%2A%2ADomain%3A%2A%2A+Biomechanics+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Racquet+vs+Ball+%E2%80%94+Impulse+%26+Momentum+Physics+%C2%B7+%2A%2ADomain%3A%2A%2A+Biomechanics+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Racquet+vs+Ball+%E2%80%94+Impulse+%26+Momentum+Physics+%C2%B7+%2A%2ADomain%3A%2A%2A+Biomechanics+tennis)
 
 ---
 

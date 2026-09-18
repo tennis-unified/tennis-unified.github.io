@@ -16,11 +16,11 @@ Speed and agility training for tennis.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="https://archive.org/download/sgng.18221-effects-of-proprioceptive-training-program-ptp-on-the-selected-ph/sgng.18221-effects-of-proprioceptive-training-program-ptp-on-the-selected-ph.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Speed Training for Tennis">
-  Your browser does not support inline PDF viewing. <a href="https://archive.org/download/sgng.18221-effects-of-proprioceptive-training-program-ptp-on-the-selected-ph/sgng.18221-effects-of-proprioceptive-training-program-ptp-on-the-selected-ph.pdf">Download the PDF</a> instead.
-</iframe>
+<div class="reader-container" style="position: relative; width: 100%; height: 750px; border-radius: 8px; overflow: hidden; border: 1px solid var(--md-default-fg-color--lightest, #e2e8f0); margin: 1.5em 0; box-shadow: 0 4px 16px rgba(0,0,0,0.08); background: #1a1a1a;">
+  <iframe src="https://archive.org/embed/sgng.18221-effects-of-proprioceptive-training-program-ptp-on-the-selected-ph" width="100%" height="100%" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen style="border:0; width: 100%; height: 100%;"></iframe>
+</div>
 
-[Download the PDF ↗](https://archive.org/download/sgng.18221-effects-of-proprioceptive-training-program-ptp-on-the-selected-ph/sgng.18221-effects-of-proprioceptive-training-program-ptp-on-the-selected-ph.pdf) · [Open in new tab ↗](https://archive.org/download/sgng.18221-effects-of-proprioceptive-training-program-ptp-on-the-selected-ph/sgng.18221-effects-of-proprioceptive-training-program-ptp-on-the-selected-ph.pdf)
+[📖 Open Fullscreen on Internet Archive](https://archive.org/details/sgng.18221-effects-of-proprioceptive-training-program-ptp-on-the-selected-ph) • [⬇ Download PDF from Archive.org](https://archive.org/download/sgng.18221-effects-of-proprioceptive-training-program-ptp-on-the-selected-ph/sgng.18221-effects-of-proprioceptive-training-program-ptp-on-the-selected-ph.pdf)
 
 ---
 

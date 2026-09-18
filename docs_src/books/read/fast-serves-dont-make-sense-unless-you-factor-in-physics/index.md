@@ -16,11 +16,10 @@ Fast Serves dont make sense unless you factor in physics. Curated from the Tenni
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Fast%20Serves%20dont%20make%20sense%20unless%20you%20factor%20in%20physics.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Fast Serves dont make sense unless you factor in physics">
-  Your browser does not support inline PDF viewing. <a href="../../Fast%20Serves%20dont%20make%20sense%20unless%20you%20factor%20in%20physics.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Fast%20Serves%20dont%20make%20sense%20unless%20you%20factor%20in%20physics.pdf) · [Open in new tab ↗](../../Fast%20Serves%20dont%20make%20sense%20unless%20you%20factor%20in%20physics.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Fast+Serves+dont+make+sense+unless+you+factor+in+physics+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Fast+Serves+dont+make+sense+unless+you+factor+in+physics+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Fast+Serves+dont+make+sense+unless+you+factor+in+physics+tennis)
 
 ---
 

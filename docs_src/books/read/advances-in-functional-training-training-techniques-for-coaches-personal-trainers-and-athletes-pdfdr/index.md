@@ -16,11 +16,10 @@ Advances in Functional Training Training Techniques for Coaches, Personal Traine
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Advances%20in%20Functional%20Training%20Training%20Techniques%20for%20Coaches%2C%20Personal%20Trainers%20and%20Athletes%20%28%20PDFDrive%20%29.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Advances in Functional Training Training Techniques for Coaches, Personal Trainers and Athletes ( PDFDrive )">
-  Your browser does not support inline PDF viewing. <a href="../../Advances%20in%20Functional%20Training%20Training%20Techniques%20for%20Coaches%2C%20Personal%20Trainers%20and%20Athletes%20%28%20PDFDrive%20%29.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Advances%20in%20Functional%20Training%20Training%20Techniques%20for%20Coaches%2C%20Personal%20Trainers%20and%20Athletes%20%28%20PDFDrive%20%29.pdf) · [Open in new tab ↗](../../Advances%20in%20Functional%20Training%20Training%20Techniques%20for%20Coaches%2C%20Personal%20Trainers%20and%20Athletes%20%28%20PDFDrive%20%29.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Advances+in+Functional+Training+Training+Techniques+for+Coaches%2C+Personal+Trainers+and+Athletes+%28+PDFDrive+%29+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Advances+in+Functional+Training+Training+Techniques+for+Coaches%2C+Personal+Trainers+and+Athletes+%28+PDFDrive+%29+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Advances+in+Functional+Training+Training+Techniques+for+Coaches%2C+Personal+Trainers+and+Athletes+%28+PDFDrive+%29+tennis)
 
 ---
 

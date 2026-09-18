@@ -16,11 +16,10 @@ Sweet spot and center of percussion physics for tennis rackets.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Sweet-Spot.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Sweet Spot Physics">
-  Your browser does not support inline PDF viewing. <a href="../../Sweet-Spot.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Sweet-Spot.pdf) · [Open in new tab ↗](../../Sweet-Spot.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Sweet+Spot+Physics+Equipment+physics+reference+%C2%B7+%2A%2ADomain%3A%2A%2A+Equipment+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Sweet+Spot+Physics+Equipment+physics+reference+%C2%B7+%2A%2ADomain%3A%2A%2A+Equipment+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Sweet+Spot+Physics+Equipment+physics+reference+%C2%B7+%2A%2ADomain%3A%2A%2A+Equipment+tennis)
 
 ---
 

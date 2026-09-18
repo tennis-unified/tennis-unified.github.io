@@ -16,11 +16,10 @@ Formal ITF Level 2 coaching competency framework.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../ITF%20Level%202%20Coaching%20Cirriculum.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="ITF Level 2 Coaching Curriculum">
-  Your browser does not support inline PDF viewing. <a href="../../ITF%20Level%202%20Coaching%20Cirriculum.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../ITF%20Level%202%20Coaching%20Cirriculum.pdf) · [Open in new tab ↗](../../ITF%20Level%202%20Coaching%20Cirriculum.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=ITF+Level+2+Coaching+Curriculum+ITF+%C2%B7+%2A%2ADomain%3A%2A%2A+Coaching+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=ITF+Level+2+Coaching+Curriculum+ITF+%C2%B7+%2A%2ADomain%3A%2A%2A+Coaching+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=ITF+Level+2+Coaching+Curriculum+ITF+%C2%B7+%2A%2ADomain%3A%2A%2A+Coaching+tennis)
 
 ---
 

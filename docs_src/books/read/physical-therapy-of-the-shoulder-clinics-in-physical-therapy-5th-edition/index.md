@@ -16,11 +16,10 @@ Physical Therapy of the Shoulder (Clinics in Physical Therapy), 5th Edition. Cur
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Physical%20Therapy%20of%20the%20Shoulder%20%28Clinics%20in%20Physical%20Therapy%29%2C%205th%20Edition.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Physical Therapy of the Shoulder (Clinics in Physical Therapy), 5th Edition">
-  Your browser does not support inline PDF viewing. <a href="../../Physical%20Therapy%20of%20the%20Shoulder%20%28Clinics%20in%20Physical%20Therapy%29%2C%205th%20Edition.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Physical%20Therapy%20of%20the%20Shoulder%20%28Clinics%20in%20Physical%20Therapy%29%2C%205th%20Edition.pdf) · [Open in new tab ↗](../../Physical%20Therapy%20of%20the%20Shoulder%20%28Clinics%20in%20Physical%20Therapy%29%2C%205th%20Edition.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Physical+Therapy+of+the+Shoulder+%28Clinics+in+Physical+Therapy%29%2C+5th+Edition+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Physical+Therapy+of+the+Shoulder+%28Clinics+in+Physical+Therapy%29%2C+5th+Edition+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Physical+Therapy+of+the+Shoulder+%28Clinics+in+Physical+Therapy%29%2C+5th+Edition+tennis)
 
 ---
 

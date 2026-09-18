@@ -16,11 +16,10 @@ Novak Djokovic and the Rise of Sebia  The Sporting Statesman. Curated from the T
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Novak%20Djokovic%20and%20the%20Rise%20of%20Sebia_%20The%20Sporting%20Statesman.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Novak Djokovic and the Rise of Sebia  The Sporting Statesman">
-  Your browser does not support inline PDF viewing. <a href="../../Novak%20Djokovic%20and%20the%20Rise%20of%20Sebia_%20The%20Sporting%20Statesman.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Novak%20Djokovic%20and%20the%20Rise%20of%20Sebia_%20The%20Sporting%20Statesman.pdf) · [Open in new tab ↗](../../Novak%20Djokovic%20and%20the%20Rise%20of%20Sebia_%20The%20Sporting%20Statesman.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Novak+Djokovic+and+the+Rise+of+Sebia++The+Sporting+Statesman+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Novak+Djokovic+and+the+Rise+of+Sebia++The+Sporting+Statesman+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Novak+Djokovic+and+the+Rise+of+Sebia++The+Sporting+Statesman+tennis)
 
 ---
 

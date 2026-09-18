@@ -16,11 +16,10 @@ Chasing Points A Season on the Pro Tennis   Gregory Howe. Curated from the Tenni
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Chasing_Points_A_Season_on_the_Pro_Tennis_-_Gregory_Howe.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Chasing Points A Season on the Pro Tennis   Gregory Howe">
-  Your browser does not support inline PDF viewing. <a href="../../Chasing_Points_A_Season_on_the_Pro_Tennis_-_Gregory_Howe.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Chasing_Points_A_Season_on_the_Pro_Tennis_-_Gregory_Howe.pdf) · [Open in new tab ↗](../../Chasing_Points_A_Season_on_the_Pro_Tennis_-_Gregory_Howe.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Chasing+Points+A+Season+on+the+Pro+Tennis+++Gregory+Howe+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Chasing+Points+A+Season+on+the+Pro+Tennis+++Gregory+Howe+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Chasing+Points+A+Season+on+the+Pro+Tennis+++Gregory+Howe+tennis)
 
 ---
 

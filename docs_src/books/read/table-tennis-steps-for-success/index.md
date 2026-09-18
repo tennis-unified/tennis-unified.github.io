@@ -16,11 +16,10 @@ Table tennis  steps for success. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Table%20tennis%20-steps%20for%20success.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Table tennis  steps for success">
-  Your browser does not support inline PDF viewing. <a href="../../Table%20tennis%20-steps%20for%20success.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Table%20tennis%20-steps%20for%20success.pdf) · [Open in new tab ↗](../../Table%20tennis%20-steps%20for%20success.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Table+tennis++steps+for+success+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Table+tennis++steps+for+success+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Table+tennis++steps+for+success+tennis)
 
 ---
 

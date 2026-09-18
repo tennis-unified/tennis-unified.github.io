@@ -16,11 +16,10 @@ Ultimate tennis. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Ultimate_tennis.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Ultimate tennis">
-  Your browser does not support inline PDF viewing. <a href="../../Ultimate_tennis.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Ultimate_tennis.pdf) · [Open in new tab ↗](../../Ultimate_tennis.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Ultimate+tennis+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Ultimate+tennis+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Ultimate+tennis+tennis)
 
 ---
 

@@ -16,11 +16,10 @@ The Talent Code  chapter 1. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../The-Talent-Code_-chapter-1.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="The Talent Code  chapter 1">
-  Your browser does not support inline PDF viewing. <a href="../../The-Talent-Code_-chapter-1.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../The-Talent-Code_-chapter-1.pdf) · [Open in new tab ↗](../../The-Talent-Code_-chapter-1.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=The+Talent+Code++chapter+1+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=The+Talent+Code++chapter+1+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=The+Talent+Code++chapter+1+tennis)
 
 ---
 

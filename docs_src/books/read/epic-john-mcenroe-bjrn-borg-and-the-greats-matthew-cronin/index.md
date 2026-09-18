@@ -16,11 +16,10 @@ Epic  John McEnroe Bjrn Borg and the Greats  Matthew Cronin. Curated from the Te
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Epic__John_McEnroe_Bjrn_Borg_and_the_Greats-_Matthew_Cronin.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Epic  John McEnroe Bjrn Borg and the Greats  Matthew Cronin">
-  Your browser does not support inline PDF viewing. <a href="../../Epic__John_McEnroe_Bjrn_Borg_and_the_Greats-_Matthew_Cronin.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Epic__John_McEnroe_Bjrn_Borg_and_the_Greats-_Matthew_Cronin.pdf) · [Open in new tab ↗](../../Epic__John_McEnroe_Bjrn_Borg_and_the_Greats-_Matthew_Cronin.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Epic++John+McEnroe+Bjrn+Borg+and+the+Greats++Matthew+Cronin+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Epic++John+McEnroe+Bjrn+Borg+and+the+Greats++Matthew+Cronin+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Epic++John+McEnroe+Bjrn+Borg+and+the+Greats++Matthew+Cronin+tennis)
 
 ---
 

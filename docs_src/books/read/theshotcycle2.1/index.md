@@ -16,11 +16,10 @@ Shot cycle analysis and reference.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../TheShotCycle2.1.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="The Shot Cycle 2.1">
-  Your browser does not support inline PDF viewing. <a href="../../TheShotCycle2.1.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../TheShotCycle2.1.pdf) · [Open in new tab ↗](../../TheShotCycle2.1.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=The+Shot+Cycle+2.1+Shot+analysis+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=The+Shot+Cycle+2.1+Shot+analysis+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=The+Shot+Cycle+2.1+Shot+analysis+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis)
 
 ---
 

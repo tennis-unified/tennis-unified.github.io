@@ -16,11 +16,15 @@ Paradigm Shift for Future Tennis The Art of Tennis Physiology, Biomechanics and 
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Paradigm%20Shift%20for%20Future%20Tennis%20The%20Art%20of%20Tennis%20Physiology%2C%20Biomechanics%20and%20Psychology.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Paradigm Shift for Future Tennis The Art of Tennis Physiology, Biomechanics and Psychology">
-  Your browser does not support inline PDF viewing. <a href="../../Paradigm%20Shift%20for%20Future%20Tennis%20The%20Art%20of%20Tennis%20Physiology%2C%20Biomechanics%20and%20Psychology.pdf">Download the PDF</a> instead.
-</iframe>
+!!! success "📖 Full Interactive Edition Available"
+    This classic tennis volume is fully digitized in our library with complete chapters, technical stroke analyses, court diagrams, and bilingual study notes.
 
-[Download the PDF ↗](../../Paradigm%20Shift%20for%20Future%20Tennis%20The%20Art%20of%20Tennis%20Physiology%2C%20Biomechanics%20and%20Psychology.pdf) · [Open in new tab ↗](../../Paradigm%20Shift%20for%20Future%20Tennis%20The%20Art%20of%20Tennis%20Physiology%2C%20Biomechanics%20and%20Psychology.pdf)
+    [📖 Open Interactive Book Reader](/vi/books/paradigm_shift_for_future_tennis_vi.html) • [📄 View Full PDF Edition](/vi/books/Paradigm_Shift_for_Future_Tennis_Vietnamese_Final.pdf)
+
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
+
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Paradigm+Shift+for+Future+Tennis+The+Art+of+Tennis+Physiology%2C+Biomechanics+and+Psychology+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Paradigm+Shift+for+Future+Tennis+The+Art+of+Tennis+Physiology%2C+Biomechanics+and+Psychology+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Paradigm+Shift+for+Future+Tennis+The+Art+of+Tennis+Physiology%2C+Biomechanics+and+Psychology+tennis)
 
 ---
 

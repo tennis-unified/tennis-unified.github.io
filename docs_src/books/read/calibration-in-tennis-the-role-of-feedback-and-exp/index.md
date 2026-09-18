@@ -16,11 +16,10 @@ Calibration in tennis The role of feedback and exp. Curated from the Tennis Book
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Calibration_in_tennis_The_role_of_feedback_and_exp.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Calibration in tennis The role of feedback and exp">
-  Your browser does not support inline PDF viewing. <a href="../../Calibration_in_tennis_The_role_of_feedback_and_exp.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Calibration_in_tennis_The_role_of_feedback_and_exp.pdf) · [Open in new tab ↗](../../Calibration_in_tennis_The_role_of_feedback_and_exp.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Calibration+in+tennis+The+role+of+feedback+and+exp+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Calibration+in+tennis+The+role+of+feedback+and+exp+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Calibration+in+tennis+The+role+of+feedback+and+exp+tennis)
 
 ---
 

@@ -16,11 +16,10 @@ Roger Federer and Rafael Nadal   Sebastian Fest. Curated from the Tennis Books l
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Roger_Federer_and_Rafael_Nadal_-_Sebastian_Fest.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Roger Federer and Rafael Nadal   Sebastian Fest">
-  Your browser does not support inline PDF viewing. <a href="../../Roger_Federer_and_Rafael_Nadal_-_Sebastian_Fest.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Roger_Federer_and_Rafael_Nadal_-_Sebastian_Fest.pdf) · [Open in new tab ↗](../../Roger_Federer_and_Rafael_Nadal_-_Sebastian_Fest.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Roger+Federer+and+Rafael+Nadal+++Sebastian+Fest+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Roger+Federer+and+Rafael+Nadal+++Sebastian+Fest+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Roger+Federer+and+Rafael+Nadal+++Sebastian+Fest+tennis)
 
 ---
 

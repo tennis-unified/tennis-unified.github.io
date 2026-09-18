@@ -16,11 +16,15 @@ Learn tennis in a weekend. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Learn_tennis_in_a_weekend.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Learn tennis in a weekend">
-  Your browser does not support inline PDF viewing. <a href="../../Learn_tennis_in_a_weekend.pdf">Download the PDF</a> instead.
-</iframe>
+!!! success "📖 Full Interactive Edition Available"
+    This classic tennis volume is fully digitized in our library with complete chapters, technical stroke analyses, court diagrams, and bilingual study notes.
 
-[Download the PDF ↗](../../Learn_tennis_in_a_weekend.pdf) · [Open in new tab ↗](../../Learn_tennis_in_a_weekend.pdf)
+    [📖 Open Interactive Book Reader](/vi/books/learn_tennis_in_a_weekend_vi.html) • [📄 View Full PDF Edition](/vi/books/Learn_Tennis_in_a_Weekend_Vietnamese_Final.pdf)
+
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
+
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Learn+tennis+in+a+weekend+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Learn+tennis+in+a+weekend+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Learn+tennis+in+a+weekend+tennis)
 
 ---
 

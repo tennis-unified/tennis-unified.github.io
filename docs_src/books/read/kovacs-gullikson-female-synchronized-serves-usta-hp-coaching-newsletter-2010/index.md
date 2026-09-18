@@ -16,11 +16,10 @@ USTA HP coaching newsletter on female synchronized serves.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Kovacs%20Gullikson%20female%20synchronized%20serves%20USTA%20HP%20Coaching%20Newsletter%202010.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Female Synchronized Serves">
-  Your browser does not support inline PDF viewing. <a href="../../Kovacs%20Gullikson%20female%20synchronized%20serves%20USTA%20HP%20Coaching%20Newsletter%202010.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Kovacs%20Gullikson%20female%20synchronized%20serves%20USTA%20HP%20Coaching%20Newsletter%202010.pdf) · [Open in new tab ↗](../../Kovacs%20Gullikson%20female%20synchronized%20serves%20USTA%20HP%20Coaching%20Newsletter%202010.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Female+Synchronized+Serves+Kovacs+%26+Gullikson%2C+2010+%C2%B7+%2A%2ADomain%3A%2A%2A+Serve+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Female+Synchronized+Serves+Kovacs+%26+Gullikson%2C+2010+%C2%B7+%2A%2ADomain%3A%2A%2A+Serve+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Female+Synchronized+Serves+Kovacs+%26+Gullikson%2C+2010+%C2%B7+%2A%2ADomain%3A%2A%2A+Serve+tennis)
 
 ---
 

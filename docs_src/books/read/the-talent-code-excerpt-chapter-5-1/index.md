@@ -16,11 +16,10 @@ THE TALENT CODE Excerpt Chapter 5 1. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../THE-TALENT-CODE-Excerpt-Chapter-5-1.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="THE TALENT CODE Excerpt Chapter 5 1">
-  Your browser does not support inline PDF viewing. <a href="../../THE-TALENT-CODE-Excerpt-Chapter-5-1.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../THE-TALENT-CODE-Excerpt-Chapter-5-1.pdf) · [Open in new tab ↗](../../THE-TALENT-CODE-Excerpt-Chapter-5-1.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=THE+TALENT+CODE+Excerpt+Chapter+5+1+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=THE+TALENT+CODE+Excerpt+Chapter+5+1+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=THE+TALENT+CODE+Excerpt+Chapter+5+1+tennis)
 
 ---
 

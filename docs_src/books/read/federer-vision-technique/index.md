@@ -16,11 +16,10 @@ Federer's vision and technique analysis.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Federer%20Vision%20Technique.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Federer Vision & Technique">
-  Your browser does not support inline PDF viewing. <a href="../../Federer%20Vision%20Technique.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Federer%20Vision%20Technique.pdf) · [Open in new tab ↗](../../Federer%20Vision%20Technique.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Federer+Vision+%26+Technique+Federer+analysis+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Federer+Vision+%26+Technique+Federer+analysis+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Federer+Vision+%26+Technique+Federer+analysis+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis)
 
 ---
 

@@ -16,11 +16,10 @@ The Stretching Bible The Ultimate Guide to Improving Fitness and Flexibility. Cu
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../The%20Stretching%20Bible%20The%20Ultimate%20Guide%20to%20Improving%20Fitness%20and%20Flexibility.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="The Stretching Bible The Ultimate Guide to Improving Fitness and Flexibility">
-  Your browser does not support inline PDF viewing. <a href="../../The%20Stretching%20Bible%20The%20Ultimate%20Guide%20to%20Improving%20Fitness%20and%20Flexibility.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../The%20Stretching%20Bible%20The%20Ultimate%20Guide%20to%20Improving%20Fitness%20and%20Flexibility.pdf) · [Open in new tab ↗](../../The%20Stretching%20Bible%20The%20Ultimate%20Guide%20to%20Improving%20Fitness%20and%20Flexibility.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=The+Stretching+Bible+The+Ultimate+Guide+to+Improving+Fitness+and+Flexibility+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=The+Stretching+Bible+The+Ultimate+Guide+to+Improving+Fitness+and+Flexibility+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=The+Stretching+Bible+The+Ultimate+Guide+to+Improving+Fitness+and+Flexibility+tennis)
 
 ---
 

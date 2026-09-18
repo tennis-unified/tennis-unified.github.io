@@ -16,11 +16,10 @@ Comprehensive strokes and tactics reference.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Tennis%20Strokes%20and%20Tactics.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Tennis Strokes and Tactics">
-  Your browser does not support inline PDF viewing. <a href="../../Tennis%20Strokes%20and%20Tactics.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Tennis%20Strokes%20and%20Tactics.pdf) · [Open in new tab ↗](../../Tennis%20Strokes%20and%20Tactics.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Tennis+Strokes+and+Tactics+Strokes+and+tactics+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Tennis+Strokes+and+Tactics+Strokes+and+tactics+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Tennis+Strokes+and+Tactics+Strokes+and+tactics+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis)
 
 ---
 

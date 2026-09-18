@@ -16,11 +16,10 @@ Playing Tennis Like a Pro. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Playing%20Tennis%20Like%20a%20Pro.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Playing Tennis Like a Pro">
-  Your browser does not support inline PDF viewing. <a href="../../Playing%20Tennis%20Like%20a%20Pro.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Playing%20Tennis%20Like%20a%20Pro.pdf) · [Open in new tab ↗](../../Playing%20Tennis%20Like%20a%20Pro.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Playing+Tennis+Like+a+Pro+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Playing+Tennis+Like+a+Pro+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Playing+Tennis+Like+a+Pro+tennis)
 
 ---
 

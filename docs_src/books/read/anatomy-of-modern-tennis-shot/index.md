@@ -16,11 +16,10 @@ Anatomical breakdown of the modern tennis shot.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Anatomy-of-Modern-Tennis-Shot.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Anatomy of the Modern Tennis Shot">
-  Your browser does not support inline PDF viewing. <a href="../../Anatomy-of-Modern-Tennis-Shot.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Anatomy-of-Modern-Tennis-Shot.pdf) · [Open in new tab ↗](../../Anatomy-of-Modern-Tennis-Shot.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Anatomy+of+the+Modern+Tennis+Shot+USPTA+High+Performance+Vol.+3+No.+1+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Anatomy+of+the+Modern+Tennis+Shot+USPTA+High+Performance+Vol.+3+No.+1+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Anatomy+of+the+Modern+Tennis+Shot+USPTA+High+Performance+Vol.+3+No.+1+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis)
 
 ---
 

@@ -16,11 +16,15 @@ How To Play Your Best Tennis All The Time. Curated from the Tennis Books library
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../How%20To%20Play%20Your%20Best%20Tennis%20All%20The%20Time.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="How To Play Your Best Tennis All The Time">
-  Your browser does not support inline PDF viewing. <a href="../../How%20To%20Play%20Your%20Best%20Tennis%20All%20The%20Time.pdf">Download the PDF</a> instead.
-</iframe>
+!!! success "📖 Full Interactive Edition Available"
+    This classic tennis volume is fully digitized in our library with complete chapters, technical stroke analyses, court diagrams, and bilingual study notes.
 
-[Download the PDF ↗](../../How%20To%20Play%20Your%20Best%20Tennis%20All%20The%20Time.pdf) · [Open in new tab ↗](../../How%20To%20Play%20Your%20Best%20Tennis%20All%20The%20Time.pdf)
+    [📖 Open Interactive Book Reader](/vi/books/how_to_play_your_best_tennis_all_the_time_vi.html) • [📄 View Full PDF Edition](/vi/books/How_To_Play_Your_Best_Tennis_All_The_Time_Vietnamese_Final.pdf)
+
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
+
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=How+To+Play+Your+Best+Tennis+All+The+Time+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=How+To+Play+Your+Best+Tennis+All+The+Time+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=How+To+Play+Your+Best+Tennis+All+The+Time+tennis)
 
 ---
 

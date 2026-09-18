@@ -16,11 +16,10 @@ Federer's three forehand variations dissected at high-speed video.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../USTA-high-performance-vol-6-no-4-2004-federer-3-forehands.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Federer's Three Forehands">
-  Your browser does not support inline PDF viewing. <a href="../../USTA-high-performance-vol-6-no-4-2004-federer-3-forehands.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../USTA-high-performance-vol-6-no-4-2004-federer-3-forehands.pdf) · [Open in new tab ↗](../../USTA-high-performance-vol-6-no-4-2004-federer-3-forehands.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Federer%27s+Three+Forehands+USTA+High+Performance+Vol.+6+No.+4+%282004%29+%C2%B7+%2A%2ADomain%3A%2A%2A+Forehand+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Federer%27s+Three+Forehands+USTA+High+Performance+Vol.+6+No.+4+%282004%29+%C2%B7+%2A%2ADomain%3A%2A%2A+Forehand+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Federer%27s+Three+Forehands+USTA+High+Performance+Vol.+6+No.+4+%282004%29+%C2%B7+%2A%2ADomain%3A%2A%2A+Forehand+tennis)
 
 ---
 

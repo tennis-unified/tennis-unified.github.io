@@ -16,11 +16,10 @@ The Roger Federer Story. Quest for Perfection. Curated from the Tennis Books lib
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../The%20Roger%20Federer%20Story.%20Quest%20for%20Perfection.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="The Roger Federer Story. Quest for Perfection">
-  Your browser does not support inline PDF viewing. <a href="../../The%20Roger%20Federer%20Story.%20Quest%20for%20Perfection.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../The%20Roger%20Federer%20Story.%20Quest%20for%20Perfection.pdf) · [Open in new tab ↗](../../The%20Roger%20Federer%20Story.%20Quest%20for%20Perfection.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=The+Roger+Federer+Story.+Quest+for+Perfection+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=The+Roger+Federer+Story.+Quest+for+Perfection+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=The+Roger+Federer+Story.+Quest+for+Perfection+tennis)
 
 ---
 

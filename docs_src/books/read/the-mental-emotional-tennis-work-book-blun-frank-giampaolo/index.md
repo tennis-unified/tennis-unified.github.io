@@ -16,11 +16,15 @@ The Mental Emotional Tennis Work Book Blun   Frank Giampaolo. Curated from the T
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../The_Mental_Emotional_Tennis_Work_Book-Blun_-_Frank_Giampaolo.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="The Mental Emotional Tennis Work Book Blun   Frank Giampaolo">
-  Your browser does not support inline PDF viewing. <a href="../../The_Mental_Emotional_Tennis_Work_Book-Blun_-_Frank_Giampaolo.pdf">Download the PDF</a> instead.
-</iframe>
+!!! success "📖 Full Interactive Edition Available"
+    This classic tennis volume is fully digitized in our library with complete chapters, technical stroke analyses, court diagrams, and bilingual study notes.
 
-[Download the PDF ↗](../../The_Mental_Emotional_Tennis_Work_Book-Blun_-_Frank_Giampaolo.pdf) · [Open in new tab ↗](../../The_Mental_Emotional_Tennis_Work_Book-Blun_-_Frank_Giampaolo.pdf)
+    [📖 Open Interactive Book Reader](/vi/books/the_mental_emotional_tennis_workbook_vi.html) • [📄 View Full PDF Edition](/vi/books/The_Mental_Emotional_Tennis_Workbook_Vietnamese_Final.pdf)
+
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
+
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=The+Mental+Emotional+Tennis+Work+Book+Blun+++Frank+Giampaolo+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=The+Mental+Emotional+Tennis+Work+Book+Blun+++Frank+Giampaolo+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=The+Mental+Emotional+Tennis+Work+Book+Blun+++Frank+Giampaolo+tennis)
 
 ---
 

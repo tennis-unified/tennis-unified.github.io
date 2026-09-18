@@ -16,11 +16,10 @@ Sports science view of serves, nerves, and on-court dominance.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Tennisology-Inside-the-Science-of-Serves-Nerves-and-On-Court-Dominance-pdf.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Tennisology — Inside the Science">
-  Your browser does not support inline PDF viewing. <a href="../../Tennisology-Inside-the-Science-of-Serves-Nerves-and-On-Court-Dominance-pdf.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Tennisology-Inside-the-Science-of-Serves-Nerves-and-On-Court-Dominance-pdf.pdf) · [Open in new tab ↗](../../Tennisology-Inside-the-Science-of-Serves-Nerves-and-On-Court-Dominance-pdf.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Tennisology+%E2%80%94+Inside+the+Science+Sports+science+compilation+%C2%B7+%2A%2ADomain%3A%2A%2A+Mental+Game+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Tennisology+%E2%80%94+Inside+the+Science+Sports+science+compilation+%C2%B7+%2A%2ADomain%3A%2A%2A+Mental+Game+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Tennisology+%E2%80%94+Inside+the+Science+Sports+science+compilation+%C2%B7+%2A%2ADomain%3A%2A%2A+Mental+Game+tennis)
 
 ---
 

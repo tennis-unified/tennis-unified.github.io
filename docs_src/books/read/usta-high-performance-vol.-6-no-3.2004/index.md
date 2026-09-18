@@ -16,11 +16,10 @@ USTA high performance coaching article.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../USTA_high_performance_vol._6_no_3.2004.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="USTA High Performance Vol. 6 No. 3">
-  Your browser does not support inline PDF viewing. <a href="../../USTA_high_performance_vol._6_no_3.2004.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../USTA_high_performance_vol._6_no_3.2004.pdf) · [Open in new tab ↗](../../USTA_high_performance_vol._6_no_3.2004.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=USTA+High+Performance+Vol.+6+No.+3+USTA+HP+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=USTA+High+Performance+Vol.+6+No.+3+USTA+HP+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=USTA+High+Performance+Vol.+6+No.+3+USTA+HP+%C2%B7+%2A%2ADomain%3A%2A%2A+Strokes+tennis)
 
 ---
 

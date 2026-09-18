@@ -16,11 +16,10 @@ Text Books for Coaching JuniorTennis Players   AngeloRossetti. Curated from the 
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Text%20Books%20for%20Coaching%20JuniorTennis%20Players%20-%20AngeloRossetti.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Text Books for Coaching JuniorTennis Players   AngeloRossetti">
-  Your browser does not support inline PDF viewing. <a href="../../Text%20Books%20for%20Coaching%20JuniorTennis%20Players%20-%20AngeloRossetti.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Text%20Books%20for%20Coaching%20JuniorTennis%20Players%20-%20AngeloRossetti.pdf) · [Open in new tab ↗](../../Text%20Books%20for%20Coaching%20JuniorTennis%20Players%20-%20AngeloRossetti.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Text+Books+for+Coaching+JuniorTennis+Players+++AngeloRossetti+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Text+Books+for+Coaching+JuniorTennis+Players+++AngeloRossetti+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Text+Books+for+Coaching+JuniorTennis+Players+++AngeloRossetti+tennis)
 
 ---
 

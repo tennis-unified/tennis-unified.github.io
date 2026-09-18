@@ -16,11 +16,10 @@ The kick serve spin axis is tilted, not vertical. Mostly sidespin. Racket head t
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Physics%20of%20the%20tennis%20kick%20serve.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Physics of the Tennis Kick Serve">
-  Your browser does not support inline PDF viewing. <a href="../../Physics%20of%20the%20tennis%20kick%20serve.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Physics%20of%20the%20tennis%20kick%20serve.pdf) · [Open in new tab ↗](../../Physics%20of%20the%20tennis%20kick%20serve.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Physics+of+the+Tennis+Kick+Serve+Rod+Cross+%C2%B7+%2A%2ADomain%3A%2A%2A+Serve+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Physics+of+the+Tennis+Kick+Serve+Rod+Cross+%C2%B7+%2A%2ADomain%3A%2A%2A+Serve+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Physics+of+the+Tennis+Kick+Serve+Rod+Cross+%C2%B7+%2A%2ADomain%3A%2A%2A+Serve+tennis)
 
 ---
 

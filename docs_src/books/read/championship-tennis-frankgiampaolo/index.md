@@ -16,11 +16,10 @@ Championship Tennis FrankGiampaolo. Curated from the Tennis Books library.
 
 ## Read the book
 
-<iframe class="pdf-viewer" src="../../Championship%20Tennis-FrankGiampaolo.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH" title="Championship Tennis FrankGiampaolo">
-  Your browser does not support inline PDF viewing. <a href="../../Championship%20Tennis-FrankGiampaolo.pdf">Download the PDF</a> instead.
-</iframe>
+!!! info "📚 Reference Volume & Research Dossier"
+    This volume is curated in the **Tennis Knowledge Gap Intranet** as primary technical reference material. Use the verified digital library portals below to explore digitized editions, academic citations, and previews across open repositories.
 
-[Download the PDF ↗](../../Championship%20Tennis-FrankGiampaolo.pdf) · [Open in new tab ↗](../../Championship%20Tennis-FrankGiampaolo.pdf)
+[🌐 Search on Internet Archive](https://archive.org/search.php?query=Championship+Tennis+FrankGiampaolo+tennis) • [📚 Search on Google Books](https://www.google.com/search?tbm=bks&q=Championship+Tennis+FrankGiampaolo+tennis) • [🏛 WorldCat Library Catalog](https://www.worldcat.org/search?q=Championship+Tennis+FrankGiampaolo+tennis)
 
 ---
 
