@@ -89,37 +89,285 @@
 
 <h1 id="content">Ball Collision Hydrodynamics and Coefficient of Restitution</h1>
 
-<h2>Trạng Thái: Bản Nền Tảng</h2>
-<p>Bài viết thuộc <strong>TennisKB 200-Article Knowledge Base</strong> — Trụ cột Cơ Sinh Học Ứng Dụng & Động Học. Nguồn: <a href="https://notebook.google.com/notebook/b05f3704-2ce7-43c7-b4a8-fb7abd0b7ef8">Kho dữ liệu Tennis Fundamentals</a> (276 nguồn cơ sinh học & chiến thuật). Bản full-depth đang được mở rộng; cấu trúc 10 mục dưới đây là khung cuối cùng.</p>
-<h2>1. Tóm Tắt Điều Hành & Ý Đồ Thể Thao</h2>
-<p><em>Bản full-depth đang được triển khai — xem blueprint trụ cột.</em></p>
-
-<h2>2. Nền Tảng Cơ Sinh Học / Thần Kinh Học</h2>
-<p><em>Bản full-depth đang được triển khai — xem blueprint trụ cột.</em></p>
-
-<h2>3. Trình Tự Thực Thi Kỹ Thuật</h2>
-<p><em>Bản full-depth đang được triển khai — xem blueprint trụ cột.</em></p>
-
-<h2>4. Chỉ Số Hiệu Suất & Liều Lượng</h2>
-<p><em>Bản full-depth đang được triển khai — xem blueprint trụ cột.</em></p>
-
-<h2>5. Lỗi, Nguyên Nhân & Khắc Phục</h2>
-<p><em>Bản full-depth đang được triển khai — xem blueprint trụ cột.</em></p>
-
-<h2>6. Sơ Đồ Chẩn Đoán</h2>
-<p><em>Bản full-depth đang được triển khai — xem blueprint trụ cột.</em></p>
-
-<h2>7. Video Minh Họa</h2>
-<p><em>Bản full-depth đang được triển khai — xem blueprint trụ cột.</em></p>
-
-<h2>8. Ứng Dụng Liên Ngành</h2>
-<p><em>Bản full-depth đang được triển khai — xem blueprint trụ cột.</em></p>
-
-<h2>9. Bảng Tự Đánh Giá</h2>
-<p><em>Bản full-depth đang được triển khai — xem blueprint trụ cột.</em></p>
-
-<h2>10. Thẻ Thực Hành In Sổ Tay</h2>
-<p><em>Bản full-depth đang được triển khai — xem blueprint trụ cột.</em></p>
+<blockquote>
+<p><strong>CÂU LỆNH CHUYÊN GIA (PRO CUE):</strong> Quả bóng không phải một vật thể bay thụ động — nó là một viên nang năng lượng được bơm căng, biến dạng được, thứ "ăn cắp" 40–50% mỗi joule mà bạn truyền vào nó. Sức mạnh đỉnh cao đến từ việc hiểu chính xác năng lượng đó đi đâu trong 5 mili-giây va chạm, và làm thế nào để thu hoạch phần phục hồi mà luật chơi cho phép bạn.</p>
+</blockquote>
+<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;"><iframe src="https://www.youtube-nocookie.com/embed/kzJ480muh4U" title="The Physics of Bouncing a Ball | Science Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<p><em>Video: The Physics of Bouncing a Ball | Science Project (Science Buddies).</em></p>
+<p>&nbsp;</p>
+<h2>1. Nền Tảng Cơ Học: Va Chạm Như Một Sự Kiện Thủy Động Lực</h2>
+<p>Mọi cú đánh trong quần vợt đều kết thúc bằng một cuộc va chạm dữ dội, dưới 10 mili-giây, giữa một vỏ cao su bơm căng và một lưới dây căng (hoặc chính mặt sân). Ở tốc độ va chạm trên 30 m/s, quả bóng không còn hành xử như một hình cầu cứng — nó dẹt thành một đĩa ép dẹt, cột khí bên trong nén lại như một piston, và màng cao su của nó giãn ra rồi bật trả như một màng chất lỏng chịu áp lực. Đây là lý do các nhà khoa học nghiên cứu va chạm mô tả quả quần vợt bằng một <strong>mô hình thủy động lực</strong>: một bình áp lực mà năng lượng tích trữ của nó đồng thời chịu sự chi phối của nhiệt động lực học khí, độ đàn hồi của màng, và sự tiêu tán nhớt.</p>
+<p>&nbsp;</p>
+<p>Trong suốt cuộc va chạm, động năng của bóng phân chia vào bốn kho chứa tạm thời:</p>
+<p>&nbsp;</p>
+<ol>
+<li><strong>Năng lượng khí nén được ($E_{gas}$):</strong> Khí nén bên trong (chừng 2 atmosphế áp suất dư trong một quả bóng mới) bị nén khi vỏ dẹt đi, tích trữ năng lượng theo cơ chế nhiệt động và trả lại phần lớn trong giai đoạn giãn nở.</li>
+<li><strong>Năng lượng biến dạng màng ($E_{membrane}$):</strong> Vỏ cao su tích trữ biến dạng đàn hồi khi nó uốn, giãn và trượt quanh vùng va chạm. Cao su là chất nhớt đàn hồi (viscoelastic), nên một phần đáng kể biến dạng này <em>không bao giờ</em> được trả lại.</li>
+<li><strong>Năng lượng biến dạng mặt dây ($E_{strings}$):</strong> Khi đối tác va chạm là cây vợt, lưới dây giãn ra và tích trữ năng lượng với độ trễ (hysteresis) cực thấp — trả lại chừng 95% những gì nó hấp thụ.</li>
+<li><strong>Năng lượng nhiệt và âm thanh tiêu tán ($E_{loss}$):</strong> Phần còn lại rời khỏi hệ dưới dạng nhiệt (đo được qua mức tăng 1–2 °C nhiệt độ của bóng), âm thanh, và ma sát nội tại.</li>
+</ol>
+<p>&nbsp;</p>
+<p>Nguyên lý chi phối toàn bộ bài viết này là <strong>hệ số phục hồi năng lượng (coefficient of restitution — COR)</strong> — đại lượng vô hướng duy nhất nén toàn bộ sổ cái năng lượng thủy động này thành một con số, và con số cuối cùng đặt trần cho tốc độ bóng của bạn.</p>
+<p>&nbsp;</p>
+<blockquote>
+<p><strong>CẢNH BÁO LỖI CƠ HỌC:</strong> Những người chơi "cưỡng ép" các cú đánh phẳng, nén chặt bằng lực nắm vợt tối đa không hề cộng thêm năng lượng vào cuộc va chạm — họ chỉ kéo dài pha giảm tốc của vợt và làm cứng bề mặt tiếp xúc nơi bóng phải biến dạng. Va chạm sai thời điểm làm lãng phí phục hồi năng lượng; chúng không tạo ra sức mạnh.</p>
+</blockquote>
+<p>&nbsp;</p>
+<h2>2. Hệ Số Phục Hồi Năng Lượng: Định Nghĩa, Phương Trình &amp; Chuẩn Hiệu Chỉnh ITF</h2>
+<p>Hệ số phục hồi năng lượng $e$ được định nghĩa là tỉ số giữa vận tốc tách ra và vận tốc tiến vào dọc theo phương tuyến va chạm:</p>
+<p>&nbsp;</p>
+<p>$$e = \frac{v_{\text{after}} - v_{\text{racket,after}}}{v_{\text{racket,before}} - v_{\text{before}}}$$</p>
+<p>&nbsp;</p>
+<p>Với phép thử thả rơi thẳng đứng đơn giản lên bề mặt cứng, công thức này rút gọn thành căn bậc hai của tỉ số độ cao bật lại trên độ cao thả:</p>
+<p>&nbsp;</p>
+<p>$$e = \sqrt{\frac{h_{\text{rebound}}}{h_{\text{drop}}}}$$</p>
+<p>&nbsp;</p>
+<p>Vì động năng tỉ lệ với bình phương vận tốc, phần năng lượng <em>được giữ lại</em> qua va chạm là $e^2$, và phần <em>bị phá hủy</em> là $1 - e^2$. Quan hệ bậc hai này là con số quan trọng nhất trong vật lý các môn thể thao dùng vợt: một quả bóng với $e = 0.75$ chỉ giữ lại $0.75^2 = 56\%$ năng lượng va chạm thẳng đứng và mất 44% vào các tổn thất thủy động bên trong.</p>
+<p>&nbsp;</p>
+<p>Liên Đoàn Quần Vợt Quốc Tế (ITF) hiệu chỉnh mọi quả bóng hợp lệ bằng một phép thử thả rơi chuẩn hóa:</p>
+<p>&nbsp;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tham Số Quy Chuẩn Bóng ITF</th>
+<th style="text-align: left;">Giá Trị Yêu Cầu</th>
+<th style="text-align: left;">Hàm Ý Về Phục Hồi Năng Lượng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Độ cao thả (lên tấm bê tông)</td>
+<td style="text-align: left;">254 cm (100 in)</td>
+<td style="text-align: left;">Vận tốc tới chuẩn hóa ≈ 7.0 m/s</td>
+</tr>
+<tr>
+<td style="text-align: left;">Khoảng bật lại hợp lệ</td>
+<td style="text-align: left;">135 – 147 cm (53 – 58 in)</td>
+<td style="text-align: left;">Tương ứng $e = 0.729 – 0.761$</td>
+</tr>
+<tr>
+<td style="text-align: left;">Khối lượng</td>
+<td style="text-align: left;">56.0 – 59.4 g</td>
+<td style="text-align: left;">Đặt động lượng ($m \cdot v$) truyền vào mỗi lần va chạm</td>
+</tr>
+<tr>
+<td style="text-align: left;">Đường kính (Loại 2)</td>
+<td style="text-align: left;">6.54 – 6.86 cm</td>
+<td style="text-align: left;">Cố định diện tích bề mặt vỏ và thể tích khí</td>
+</tr>
+<tr>
+<td style="text-align: left;">Biến dạng theo phương trước (tải 8.2 kg)</td>
+<td style="text-align: left;">5.6 – 7.4 mm</td>
+<td style="text-align: left;">Chỉ số độ cứng vỏ và áp suất nội tại</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>Khoảng bật lại được cố ý siết hẹp. Bóng thi đấu phải nằm trong khoảng $e \approx 0.73 – 0.76$, điều này bảo đảm rằng chừng <strong>42–47% năng lượng va chạm luôn luôn bị phá hủy ngay bên trong quả bóng</strong> — trước khi dây vợt hay mặt sân kịp lấy phần của chúng. Không công nghệ vợt nào, thiết lập dây nào, hay cơ chế vung nào có thể thu hồi phần tổn thất này; nó bị niêm phong nhiệt động bên trong lớp cao su.</p>
+<p>&nbsp;</p>
+<h2>3. Thủy Động Lực Học Nội Tại: Nén Khí, Độ Trễ Cao Su &amp; Sổ Cái Năng Lượng</h2>
+<p>44% còn thiếu đi đúng nơi đâu? Các nghiên cứu nội tại tốc độ cao về nén bóng (dẹt tới 30% ở tốc độ va chạm chuyên nghiệp) phân rã tổn thất thành ba thành phần:</p>
+<p>&nbsp;</p>
+<ol>
+<li><strong>Tổn thất nhiệt động của khí (≈5–10% năng lượng tới).</strong> Cột khí nén nóng lên khi bị nén và không thể giãn nở đẳng entropy hoàn toàn trong vài mili-giây tiếp xúc. Một phần công của khí được dẫn vào lớp cao su dưới dạng nhiệt thay vì được trả lại dưới dạng áp suất.</li>
+<li><strong>Độ trễ nhớt đàn hồi trong vỏ cao su (≈25–35%).</strong> Vòng stress–biến dạng của cao su không khép kín: đường cong ứng suất khi nạp nằm trên đường cong khi xả, và diện tích giữa chúng chính là nhiệt. Đây là bể tiêu tán lớn nhất trong cuộc va chạm. Nó giải thích vì sao một quả bóng bị đánh liên tục ở tốc độ cao nóng lên đo được, và vì sao những quả bóng "chết" mất độ cao bật lại từ lâu trước khi mất áp suất.</li>
+<li><strong>Tổn thất sóng màng và dao động (≈5%).</strong> Va chạm kích các sóng đàn hồi lan rung quanh vỏ và suy giảm trước khi kịp đóng góp vào vận tốc bật lại.</li>
+</ol>
+<p>&nbsp;</p>
+<h3>Sổ Cái Năng Lượng Thủy Động (Thả Rơi Thẳng Đứng, $e = 0.75$)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Con Đường Năng Lượng</th>
+<th style="text-align: left;">Tỉ Phần Năng Lượng Tới</th>
+<th style="text-align: left;">Thu Hồi Được?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Nén khí &amp; giãn nở trở lại</td>
+<td style="text-align: left;">~15% tích trữ</td>
+<td style="text-align: left;">Phần lớn có (gần như đàn hồi)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Biến dạng màng cao su</td>
+<td style="text-align: left;">~30% tích trữ</td>
+<td style="text-align: left;">~50% được trả lại; phần còn lại là nhiệt độ trễ</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tích trữ đàn hồi dây/sân</td>
+<td style="text-align: left;">Tính riêng</td>
+<td style="text-align: left;">Dây ≈ 95% trả lại; sân ≈ 60–70%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Độ trễ + âm thanh + tổn thất sóng</td>
+<td style="text-align: left;">~40–47% bị phá hủy</td>
+<td style="text-align: left;"><strong>Không — tổn thất vĩnh viễn</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Tổng năng lượng bật lại ($e^2$)</strong></td>
+<td style="text-align: left;"><strong>~53–58%</strong></td>
+<td style="text-align: left;">Xác định khoảng COR hợp lệ</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>Một nhận định thủy động then chốt theo sau: vì áp suất khí đóng góp con đường tích trữ <em>đàn hồi nhất</em> (ít tổn thất nhất), <strong>một quả bóng căng đủ áp ở 23 °C bật lại cao hơn đo được so với cùng quả bóng ở 10 °C</strong>, còn một quả bóng không áp (pressureless) — nơi tích trữ năng lượng gần như hoàn toàn trong lớp cao su dày, nhiều độ trễ — nằm ở đầu thấp của khoảng COR ngay từ thiết kế.</p>
+<p>&nbsp;</p>
+<h2>4. Hệ Thống Phục Hồi Ghép Cặp: Bóng × Mặt Dây</h2>
+<p>Khi đối tác va chạm là cây vợt thay vì mặt sân, hai hệ thống phục hồi ghép nối nối tiếp với nhau. Mặt dây hoạt động như một lò xo có độ trễ thấp, chia sẻ tải biến dạng với quả bóng: với cùng vận tốc khép lại, mặt dây mềm hơn cho phép <em>dây</em> biến dạng nhiều hơn và <em>bóng</em> biến dạng ít hơn. Vì dây chỉ mất ~5% năng lượng tích trữ trong khi cao su mất ~45%, <strong>chuyển dịch biến dạng từ bóng sang dây là khoản lợi sức mạnh hợp lệ duy nhất và lớn nhất có sẵn trong thiết lập trang bị</strong>.</p>
+<p>&nbsp;</p>
+<p>Cú bật lại kết hợp tuân theo phương trình phục hồi hai vật thể. Coi vợt là khối lượng $M$ với một khối lượng hiệu lực tại điểm tiếp xúc $M_{\text{eff}}$ (thường 0.12–0.17 kg với cú đánh sàn ở giữa mặt vợt, vì vợt bật ra và xoay quanh cổ tay), tốc độ bóng đi ra là:</p>
+<p>&nbsp;</p>
+<p>$$v_{\text{out}} = \frac{(1+e)\,M_{\text{eff}}\,v_{\text{racket}} + (m - e\,M_{\text{eff}})\,v_{\text{in}}}{m + M_{\text{eff}}}$$</p>
+<p>&nbsp;</p>
+<h3>Ví Dụ Tính Toán: Cú Đánh Sàn Trong Tập Trận Đỉnh Cao</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tham Số</th>
+<th style="text-align: left;">Giá Trị</th>
+<th style="text-align: left;">Ghi Chú</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tốc độ vợt tại tiếp xúc ($v_{\text{racket}}$)</td>
+<td style="text-align: left;">30 m/s (108 km/h)</td>
+<td style="text-align: left;">Đầu ra đỉnh của chuỗi động học (Bài 008, 019)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tốc độ bóng tới ($v_{\text{in}}$)</td>
+<td style="text-align: left;">−27 m/s</td>
+<td style="text-align: left;">Dấu ngược: va chạm khép lại</td>
+</tr>
+<tr>
+<td style="text-align: left;">Khối lượng hiệu lực vợt ($M_{\text{eff}}$)</td>
+<td style="text-align: left;">0.15 kg</td>
+<td style="text-align: left;">Tiếp xúc giữa mặt vợt, cổ tay thả lỏng</td>
+</tr>
+<tr>
+<td style="text-align: left;">Khối lượng bóng ($m$)</td>
+<td style="text-align: left;">0.058 kg</td>
+<td style="text-align: left;">Trong khoảng hợp lệ ITF</td>
+</tr>
+<tr>
+<td style="text-align: left;">COR kết hợp ($e$)</td>
+<td style="text-align: left;">0.75</td>
+<td style="text-align: left;">Bóng (0.73–0.76) điều chỉnh bởi mặt dây</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Tốc độ bóng đi ra</strong></td>
+<td style="text-align: left;"><strong>≈ 45 m/s (162 km/h)</strong></td>
+<td style="text-align: left;">Trước các tổn hao do xoáy và lực cản khí</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>Công thức bộc lộ ba đòn bẩy, theo thứ tự mức kiểm soát của người chơi giảm dần:</p>
+<p>&nbsp;</p>
+<ol>
+<li><strong>$v_{\text{racket}}$ chi phối.</strong> Tốc độ đầu vợt được nhân với $(1+e) \approx 1.75$ — lý do vật lý khiến toàn bộ chuỗi động học của Trụ Cột I tồn tại.</li>
+<li><strong>$M_{\text{eff}}$ có thể chỉnh qua hình học tiếp xúc và cách cầm vợt.</strong> Một cú đánh tại điểm nút gần cổ vợt, một cái nắm "siết chết", hay một cổ tay lơi lỏng đều rút cạn khối lượng hiệu lực và làm rò rỉ cuộc va chạm (Bài 007, 012, 021).</li>
+<li><strong>$e$ gần như cố định</strong> bởi luật bóng ITF — nhưng <em>độ ổn định</em> của nó thì không. Căng dây, cỡ dây, và nhiệt độ dịch chuyển nó trong một dải sử dụng được — chủ đề của Mục 7 và 8.</li>
+</ol>
+<p>&nbsp;</p>
+<blockquote>
+<p><strong>CẢNH BÁO LỖI CƠ HỌC:</strong> Các cú đánh lệch tâm (ngoài "thung lũng sức mạnh" 15 cm quanh điểm nút của mặt dây) không chỉ mất sức mạnh — chúng cộng thêm mô-men xoay vào vợt, rút cạn $M_{\text{eff}}$, và gây tải sốc cho cánh tay (Bài 020, 021). Va chạm chỉ đạt hiệu suất thủy động bên trong vùng ngọt (sweet zone).</p>
+</blockquote>
+<p>&nbsp;</p>
+<h2>5. Áp Dụng Trên Sân: Hướng Vector Va Chạm và Kinh Tế Năng Lượng</h2>
+<p>&nbsp;</p>
+<h3>5.1 Phân Rã Pháp Tuyến / Tiếp Tuyến</h3>
+<p>Cuộc va chạm nén-dẹt mô tả ở trên là thành phần pháp tuyến (vuông góc mặt dây). Thành phần tiếp tuyến — ma sát bóng–dây tạo xoáy và "bật snapback" của dây dọc — vận hành trên cùng cửa sổ 5 mili-giây nhưng tuân theo sổ cái năng lượng riêng. Người chơi đỉnh cao tối ưu cả hai: pháp tuyến cho tốc độ, tiếp tuyến cho xoáy.</p>
+<p>&nbsp;</p>
+<h3>5.2 Vai Trò Nhiệt Độ Trong Thi Đấu</h3>
+<p>Vì độ trễ cao su chi phối sổ cái năng lượng, nhiệt độ bóng là biến số chiến thuật thực sự: bóng mới lấy từ hộp (lạnh) nằm ở đáy khoảng COR; sau 8–10 pha đánh bóng mạnh, bóng đạt điểm cân bằng nhiệt và bật ổn định hơn 3–5%. Các tay nghề cao điều chỉnh điểm ngắm cao hơn một chút với bóng lạnh, không đổi cơ chế vung.</p>
+<p>&nbsp;</p>
+<h3>5.3 Đọc Bóng "Chết"</h3>
+<p>Áp suất giảm làm tăng phần biến dạng dập vỏ (nén phẳng hơn ở cùng vận tốc tới), kéo dài thời gian tiếp xúc và đẩy COR xuống đáy khoảng hợp lệ ngay cả khi bóng vẫn qua phép thử ITF. Dấu hiệu nhận biết trên sân: âm thanh va chạm trầm hơn, quỹ đạo bật sân thấp và ngắn hơn — tín hiệu để rút ngắn chuỗi vung và đánh sớm hơn.</p>
+<p>&nbsp;</p>
+<h2>6. Ma Trận Thực Thi Định Lượng</h2>
+<p>&nbsp;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Biến Số</th>
+<th style="text-align: left;">Dải Đỉnh Cao</th>
+<th style="text-align: left;">Ảnh Hưởng Tới COR Kết Hợp</th>
+<th style="text-align: left;">Mức Kiểm Soát Của Người Chơi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tốc độ đầu vợt</td>
+<td style="text-align: left;">28–34 m/s</td>
+<td style="text-align: left;">Nhân ×(1+e) ≈ ×1.75</td>
+<td style="text-align: left;">Rất cao (chuỗi động học)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Điểm tiếp xúc</td>
+<td style="text-align: left;">Vùng ngọt ±5 cm từ nút</td>
+<td style="text-align: left;">Bảo toàn $M_{\text{eff}}$ tối đa</td>
+<td style="text-align: left;">Cao (can thiệp thị giác–vung tay)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Áp lực nắm vợt</td>
+<td style="text-align: left;">30–50% tối đa</td>
+<td style="text-align: left;">Bảo toàn khớp nối cứng vừa phải</td>
+<td style="text-align: left;">Cao</td>
+</tr>
+<tr>
+<td style="text-align: left;">Căng dây</td>
+<td style="text-align: left;">22–27 kg</td>
+<td style="text-align: left;">Dây mềm → dội trampoline lớn hơn</td>
+<td style="text-align: left;">Trung bình (thiết lập)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nhiệt độ bóng</td>
+<td style="text-align: left;">≥ 20 °C</td>
+<td style="text-align: left;">Cao điểm khoảng COR</td>
+<td style="text-align: left;">Thấp (chiến thuật chọn bóng)</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h2>7. Chuỗi Động Học Từng Bước: Xây Dựng Cho Sự Kiện 5 Mili-Giây</h2>
+<p>&nbsp;</p>
+<ol>
+<li><strong>Tải nền (0.4–0.6 s trước tiếp xúc):</strong> Đạp phân lực GRF và xoay hông–vai để tích trữ năng lượng chuỗi động học — nguồn duy nhất của $v_{\text{racket}}$ trong phương trình.</li>
+<li><strong>Tách khớp mu bàn tay–cổ tay:</strong> Giữ cổ tay thả lỏng để vợt đạt đỉnh tốc độ; cổ tay cứng làm giảm $M_{\text{eff}}$ ở thời điểm quyết định.</li>
+<li><strong>Cân bằng sớm:</strong> Ra quyết định và chỉnh vị trí trước pha vung tới; va chạm không cho phép hiệu chỉnh trong 5 ms.</li>
+<li><strong>Định hướng mặt vợt:</strong> Cố định góc mặt vợt ở vùng 20–10 cm trước tiếp xúc; chỉ còn điều chỉnh vi mô trong 10 cm cuối.</li>
+<li><strong>Tiếp xúc trong vùng ngọt:</strong> Ngắm điểm nút của mặt dây; mỗi cm lệch tâm lấy đi cả tốc độ lẫn ổn định.</li>
+<li><strong>Tiếp tục vung qua va chạm:</strong> Duy trì xung lực qua pha tiếp xúc; vung "chặn" làm rò rỉ năng lượng qua pha giảm tốc.</li>
+</ol>
+<p>&nbsp;</p>
+<h2>8. Thư Viện Lỗi Cơ Học: Cách Người Chơi Phá Hỏng Cuộc Va Chạm</h2>
+<p>&nbsp;</p>
+<ul>
+<li><strong>Siết cổ tay "hứng bóng":</strong> Nén khớp nối cứng → biến dạng dồn hết về bóng → mất trực tiếp vào độ trễ cao su.</li>
+<li><strong>Đánh lệch tâm kéo dài:</strong> Thêm mô-men xoay, rung vợt, rút cạn $M_{\text{eff}}$ (Bài 020, 021).</li>
+<li><strong>Vung dừng tại tiếp xúc:</strong> Động lượng không truyền đủ; $v_{\text{racket}}$ lúc va chạm thấp hơn đỉnh 15–20%.</li>
+<li><strong>Dùng bóng lạnh/chết:</strong> Chấp nhận đáy khoảng COR trước khi pha giao bóng bắt đầu — lỗi chiến thuật vô hình nhưng tốn 3–5% tốc độ bóng.</li>
+<li><strong>Lựa chọn căng dây quá cao:</strong> Giảm dội trampoline của mặt dây, đẩy phần biến dạng về phía bóng — chọn độ kiểm soát bằng cách trả giá bằng năng lượng.</li>
+</ul>
+<p>&nbsp;</p>
+<h2>9. Giao Thức Huấn Luyện: Điều Kiện Hóa Cho Va Chạm Thủy Động</h2>
+<p>&nbsp;</p>
+<h3>9.1 Huấn Luyện Tiếp Xúc Thả Lỏng</h3>
+<p>Đánh bóng bằng 30–40% áp lực nắm vợt, tập trung cảm nhận bóng "ở lại" trên mặt dây. Mục tiêu: tách cảm giác biến dạng bóng khỏi biến dạng dây.</p>
+<h3>9.2 Bài Tập Nhiệt Độ Bóng</h3>
+<p>Đánh bóng mới lấy từ hộp rồi bóng đã đánh 10 phút; ghi nhận khác biệt độ cao bật sân và điều chỉnh điểm ngắm — xây dựng thư viện cảm giác theo trạng thái bóng.</p>
+<h3>9.3 Hiệu Chỉnh Điểm Tiếp Xúc</h3>
+<p>Phun bụi hoặc dán sticker trên mặt dây để bản đồ hóa vùng tiếp xúc thực tế qua 50 cú đánh; mục tiêu: ≥80% trong vòng ±5 cm quanh điểm nút.</p>
+<h3>9.4 Kháng Chị Lệch Tâm</h3>
+<p>Chuỗi đánh có chủ đích lệch tâm (dưới sự giám sát) với cường độ thấp để củng cố cấu trúc cổ tay–cẳng tay trước tải sốc, không nhằm "học" đánh lệch tâm.</p>
+<p>&nbsp;</p>
+<h2>10. Tổng Hợp và Liên Kết Chéo</h2>
+<p>&nbsp;</p>
+<p>Va chạm bóng–dây là sự kiện thủy động trong đó 42–47% năng lượng bị niêm phong vĩnh viễn bên trong quả bóng bởi nhiệt động lực khí, độ trễ nhớt đàn hồi của cao su, và tổn thất sóng màng. Hai đòn bẩy còn lại thuộc về người chơi: <strong>tốc độ đầu vợt</strong> (được nhân ×1.75 bởi hệ số phục hồi) và <strong>bảo toàn khối lượng hiệu lực</strong> qua điểm tiếp xúc trung tâm, cổ tay thả lỏng, và thiết lập mặt dây mềm. Chuyển dịch biến dạng từ cao su bóng sang lưới dây — nơi tổn thất chỉ chừng 5% — là khoản lợi năng lượng hợp lệ lớn nhất mà luật thi đấu cho phép.</p>
+<p><strong>Liên kết chéo:</strong> Bài 007 (mô-men quán tính và swingweight), Bài 008 (tăng tốc tuyến tính và tốc độ đầu vợt), Bài 009 (xung lực và thời gian va chạm), Bài 012 (áp lực nắm vợt đẳng Trạng thái), Bài 019 (tổng vận tốc theo đoạn của chuỗi động học), Bài 020 (tiêu tán sốc va chạm), Bài 021 (động học khớp cổ tay dưới va chạm lệch tâm), Bài 032 (mặt dây như băng chuyền trampoline — Trụ Cột I).</p>
 
 <!-- TP-NAV-START -->
 
