@@ -89,37 +89,346 @@
 
 <h1 id="content">Moment of Inertia: Racket Swing Weight Physics</h1>
 
-<h2>Series Status: Foundation Edition</h2>
-<p>This article belongs to the <strong>TennisKB 200-Article Knowledge Base</strong> — Pillar Applied Biomechanics & Kinetics. Grounded in the <a href="https://notebook.google.com/notebook/b05f3704-2ce7-43c7-b4a8-fb7abd0b7ef8">Tennis Fundamentals vault</a> (276 biomechanical & tactical sources). The full-depth technical edition is being expanded; the section architecture below is final.</p>
-<h2>1. Executive Summary & Athletic Intent</h2>
-<p><em>Full-depth expansion scheduled — see the pillar blueprint.</em></p>
-
+<blockquote>
+<p><strong>PRO CUE:</strong> The racket is not a tool you push; it is a rotating body you accelerate. Its swing weight is the tax every rotation must pay — and the treasure every well-timed impact collects. Match the inertia to the player's torque engine, and the racket disappears from the hands; mismatch it, and the player fights an invisible brake on every ball.</p>
+</blockquote>
+<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;"><iframe src="https://www.youtube-nocookie.com/embed/LAd-HO5Q4IE" title="Overview of Adding Weight to a Tennis Racket" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<p><em>Video: Overview of Adding Weight to a Tennis Racket (Pro Shop Academy).</em></p>
+<h2>Video Analysis</h2>
+<p><strong>Instructional Video:</strong> [LAd-HO5Q4IE]</p>
+<hr />
+<h2>1. Executive Summary &amp; Athletic Intent</h2>
+<p>Moment of inertia is the rotational analogue of mass. While static mass tells you how hard a racket is to push, the moment of inertia ($I_{racket}$) tells you how hard it is to <strong>rotate</strong> — and tennis is overwhelmingly a rotational sport. The racket is spun up around the wrist axis, the elbow axis, the shoulder axis, and finally rotated about its own long axis for spin production. Every one of these rotations pays an inertia tax that scales with the square of the distance between each unit of racket mass and the axis of rotation:</p>
+<p>$$I = \sum m_i \cdot d_i^2$$</p>
+<p>The industry metric derived from this law is <strong>swing weight</strong>, measured in $\text{kg·cm}^2$ on a Babolat RDC or identical pendulum machine, referenced to an axis 10 cm from the butt cap. Typical stock rackets fall between 280 and 340 $\text{kg·cm}^2$. Two rackets with identical static weight (300 g) can differ by 40 or more swing weight points — and on the court, they feel like completely different instruments. The 280-point frame whips up effortlessly but is flicked around by off-center contact; the 340-point frame buries the ball with plow-through stability but punishes a lazy kinetic chain.</p>
+<p>The athletic intent of this article is threefold:</p>
+<ol>
+<li><strong>Physics literacy:</strong> Give the player and coach a working model of rotational inertia — the parallel axis theorem, the 10 cm axis convention, polar (twist) weight, and recoil weight — so equipment decisions stop being folklore and become engineering.</li>
+<li><strong>Matching discipline:</strong> Establish the rule that swing weight must be matched to the player's torque engine (torque supply from the kinetic chain) and swing tempo, not copied from a tour professional's broadcast-quoted spec.</li>
+<li><strong>Customization protocol:</strong> Deliver a safe, quantified customization method using lead tape and balance-point math, with verification testing at each step.</li>
+</ol>
+<p>A player who understands $I$ stops asking "is this racket good?" and starts asking the only question that matters: <strong>"does this racket's inertia let my kinetic chain express its torque inside my timing window?"</strong></p>
 <h2>2. Biomechanical / Cognitive Foundation</h2>
-<p><em>Full-depth expansion scheduled — see the pillar blueprint.</em></p>
-
+<h3>2.1 The Governing Equations</h3>
+<p>Rotational acceleration obeys the rotational analogue of Newton's Second Law:</p>
+<p>$$\tau = I \cdot \alpha \quad \Rightarrow \quad \alpha = \frac{\tau}{I}$$</p>
+<p>where $\tau$ is the torque delivered by the player's kinetic chain, $I$ is the moment of inertia of the racket-plus-hand system about the rotation axis, and $\alpha$ is the resulting angular acceleration. The immediate coaching consequence: <strong>for a fixed torque supply, angular acceleration falls in direct proportion to swing weight.</strong> A frame 10% heavier in swing weight spins up 10% more slowly from the same effort — the swing feels "stuck," the contact point arrives late, and the compensations begin.</p>
+<p>The second governing law is the <strong>parallel axis theorem</strong>:</p>
+<p>$$I_{new\ axis} = I_{cm} + m \cdot d^2$$</p>
+<p>This explains everything counterintuitive about racket feel. Two grams of lead at 12 o'clock (roughly 60 cm from the swing weight axis) adds $0.002 \times 60^2 = 7.2 \ \text{kg·cm}^2$ — the same inertia change as roughly 9 grams added at the throat, or 40+ grams at the handle. Mass at the tip is amortized by distance squared; mass near the axis is nearly free. This is why 1.5 grams of lead tape at the tip can visibly slow a player's whip, while a leather grip replacement — up to 10 grams heavier — changes acceleration almost not at all.</p>
+<h3>2.2 Swing Weight, Polar Weight, Recoil Weight: Three Different Inertias</h3>
+<p>Rotational resistance is axis-dependent, and the three marketing terms describe three distinct inertias:</p>
+<ul>
+<li><strong>Swing weight</strong> ($I_{swing}$): resistance to rotation about an axis through the hand, referenced 10 cm from the butt cap. Governs spin-up speed during the forward swing and plow-through at contact.</li>
+<li><strong>Polar / twist weight</strong> ($I_{twist}$): resistance to rotation about the racket's <strong>long</strong> axis. Governs how much the head twists on off-center hits. A higher twist weight frame — typically wider, hoop-weighted bodies — turns a mishit 15 cm off-center into a modest direction deviation instead of a disaster.</li>
+<li><strong>Recoil weight</strong> ($I_{recoil}$): resistance to backward rotation about an axis through the impact point on the forward swing axis. It can be estimated as $\frac{I_{swing}}{d^2}$ relative to balance geometry. High recoil weight means the racket "pushes back" against the ball — the sensation professionals call plow-through — while low recoil weight frames get shoved backward and dump energy into vibration.</li>
+</ul>
+<p>The practical hierarchy for stroke production: swing weight governs <strong>timing and pace</strong>, twist weight governs <strong>forgiveness</strong>, recoil weight governs <strong>weight of shot</strong>. A customization program must track all three, because adding mass at the tip raises all of them simultaneously — which is both the benefit and the risk of tip weighting.</p>
+<h3>2.3 The Kinetic-Chain Interface: Torque Supply vs. Inertia Demand</h3>
+<p>Swing weight is meaningless in isolation; it acquires meaning only against a torque budget. The proximal-to-distal cascade described in Articles 003 and 019 delivers torque in tiers: leg drive and pelvic rotation (high torque, low angular velocity), thoracic rotation (moderate torque), humeral internal rotation, and finally the radiocarpal snap (low torque, high velocity). Each tier multiplies velocity only if it can accelerate its own distal load — and the racket is the terminal load of the entire chain.</p>
+<ul>
+<li>A player with a <strong>high-torque, slower-tempo engine</strong> (heavy leg drive, full unit turn, long swing path) can finance a 335–350 $\text{kg·cm}^2$ frame and collect the plow-through dividend.</li>
+<li>A player with a <strong>low-torque, fast-tempo engine</strong> (compact takeback, wrist-dominant acceleration, on-the-rise timing) needs 300–320 $\text{kg·cm}^2$ or the terminal snap arrives late and flatten-out compensations appear.</li>
+<li><strong>Juniors and developing players</strong> have small torque budgets relative to full-length adult frames; choking up on the grip shortens the lever, lowers $I$ about the wrist axis by the parallel axis theorem, and restores accelerability without changing equipment.</li>
+</ul>
+<p>The cognitive dimension matters equally. Swing weight alters the <strong>feel of the timing window</strong>: heavier frames slow the racket through the slot, widening the perceived window for a player whose tempo is naturally leisurely, while crushing the timing of a player built for speed. Motor-learning studies of equipment changes show 2–4 weeks of recalibration before automated stroke timing adapts to a swing weight change of more than ~15 points — a fact that makes mid-season customization a genuine performance risk.</p>
+<h3>2.4 Impact Physics: What Higher Inertia Buys</h3>
+<p>At contact, momentum transfer dominates. For the collision, the racket acts as a rotating body with effective mass concentrated near the impact point; higher swing weight with adequate recoil weight means the racket loses less velocity through the collision and delivers more ball speed and spin for the same incoming head speed. Higher twist weight reduces post-impact head rotation on off-center contact, preserving both the shot line and the stringbed's snapback spin contribution. The ball, in return, taxes the frame with ~30–50 ms of contact force; a low-inertia frame yields to that force (frame deflection, vibration transmission up Article 020's shock-dissipation chain), while a high-inertia frame resists it and keeps the hand quieter.</p>
 <h2>3. Step-by-Step Technical Execution</h2>
-<p><em>Full-depth expansion scheduled — see the pillar blueprint.</em></p>
-
-<h2>4. Performance Metrics & Dosage</h2>
-<p><em>Full-depth expansion scheduled — see the pillar blueprint.</em></p>
-
-<h2>5. Errors, Causes & Corrections</h2>
-<p><em>Full-depth expansion scheduled — see the pillar blueprint.</em></p>
-
+<p>The following protocol treats swing weight as a tuning discipline across four stages: audit, match, customize, verify.</p>
+<h3>Stage A — Audit the Current Inertia State</h3>
+<ol>
+<li><strong>Measure or look up the swing weight</strong> of the current frame (manufacturer spec, Babolat RDC, or an app-based pendulum measurement). Record static weight, balance point, and swing weight as the baseline triad.</li>
+<li><strong>Film a face-on and rear-view swing</strong> at match tempo. Mark the frame position at 100 ms before contact. A player whose racket stalls or decelerates in the final 100 ms is carrying an inertia demand their torque engine cannot pay.</li>
+<li><strong>Listen to the mishits.</strong> Frames that twist violently on off-center contact flag low twist weight; frames that feel "dead" on the same mishits flag low recoil weight.</li>
+</ol>
+<h3>Stage B — Match the Frame to the Engine</h3>
+<ol>
+<li><strong>Classify the torque engine</strong> using the Article 026 force-velocity profile: high-force/slow-tempo, balanced, or speed/tempo-dominant.</li>
+<li><strong>Apply the matching bands:</strong> tempo-dominant players 295–315 $\text{kg·cm}^2$; balanced players 315–330; force-dominant, full-swing players 330–350. Juniors under full-length frames should test the same frame choked up 2–3 cm before rejecting it — the parallel axis theorem often solves the "racket is too heavy" problem without a purchase.</li>
+<li><strong>Respect the conversion rule:</strong> switch string setups and swing weight changes in separate weeks, never together, so the player's recalibration is attributable to one variable.</li>
+</ol>
+<h3>Stage C — Customize with Quantified Lead Tape</h3>
+<ol>
+<li><strong>Place, don't guess.</strong> Use the parallel axis theorem to compute the addition before taping:</li>
+<li>At 12 o'clock (~58–60 cm from the swing weight axis): each 1 g adds ≈ 3.4–3.6 $\text{kg·cm}^2$.</li>
+<li>At 3 and 9 o'clock (hoop sides, ~50 cm): each 1 g adds ≈ 2.5 $\text{kg·cm}^2$ <strong>and</strong> raises twist weight most efficiently — the correct location when the complaint is mishit twisting.</li>
+<li>At the throat (~30 cm): each 1 g adds ≈ 0.9 $\text{kg·cm}^2$ — a gentle nudge.</li>
+<li>Under the grip at the butt (~0–5 cm): negligible swing weight change; raises static weight only, the tool for players who want heft without slowing the whip.</li>
+<li><strong>Apply in increments no larger than 5 $\text{kg·cm}^2$ per session.</strong> Tape symmetrically to avoid introducing balance-plane wobble; seal edges so tape does not migrate.</li>
+<li><strong>Re-measure balance</strong> after each increment. Every tip-weighting session moves the balance point toward the head; when the balance passes ~33 cm (roughly 6–7 points head-light threshold for a standard frame), redistribute to the hoop sides instead of continuing at the tip.</li>
+</ol>
+<h3>Stage D — Verify Under Live Conditions</h3>
+<ol>
+<li><strong>Run the three-ball verification battery:</strong> (a) 20 topspin drives cross-court at match tempo — check contact timing unchanged; (b) 10 returns against a firm serve — check the racket still gets to the slot; (c) 10 deliberate off-center contacts — check twist behavior improved.</li>
+<li><strong>Hold the 2-week recalibration window</strong> before any match-use commitment. Track perceived timing in a training log; if timing degrades at day 10, roll back one increment — inertia that the engine cannot finance is negative equity, whatever the spec sheet says.</li>
+<li><strong>Recheck monthly</strong> for tape loss, especially on frames strung at high tension where frame flex near the tip loosens adhesion.</li>
+</ol>
+<h2>4. Performance Metrics &amp; Dosage</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: left;">Instrument</th>
+<th style="text-align: left;">Baseline Standard</th>
+<th style="text-align: left;">Progression Target</th>
+<th style="text-align: left;">Testing Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Swing weight ($I_{swing}$)</td>
+<td style="text-align: left;">Babolat RDC / pendulum app</td>
+<td style="text-align: left;">280–340 $\text{kg·cm}^2$ stock</td>
+<td style="text-align: left;">±15 $\text{kg·cm}^2$ matched to engine class</td>
+<td style="text-align: left;">Per change</td>
+</tr>
+<tr>
+<td style="text-align: left;">Twist weight ($I_{twist}$)</td>
+<td style="text-align: left;">RDC-style transverse swing / spec sheet</td>
+<td style="text-align: left;">12–16 $\text{kg·cm}^2$</td>
+<td style="text-align: left;">+1–2 for mishit-prone players</td>
+<td style="text-align: left;">Per change</td>
+</tr>
+<tr>
+<td style="text-align: left;">Static weight</td>
+<td style="text-align: left;">Scale (0.1 g resolution)</td>
+<td style="text-align: left;">280–320 g strung</td>
+<td style="text-align: left;">±10 g via handle for heft</td>
+<td style="text-align: left;">Per change</td>
+</tr>
+<tr>
+<td style="text-align: left;">Balance point</td>
+<td style="text-align: left;">Balance board / knife-edge</td>
+<td style="text-align: left;">31–33 cm</td>
+<td style="text-align: left;">Keep ≤ 33 cm when tip-loading</td>
+<td style="text-align: left;">Per change</td>
+</tr>
+<tr>
+<td style="text-align: left;">Terminal 100 ms velocity continuity</td>
+<td style="text-align: left;">Face-on 240 fps video</td>
+<td style="text-align: left;">No stall in last 100 ms</td>
+<td style="text-align: left;">Smooth monotonic acceleration</td>
+<td style="text-align: left;">Bi-weekly during tuning</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mishit directional deviation</td>
+<td style="text-align: left;">Target-zone test, 10 off-center feeds</td>
+<td style="text-align: left;">≤ 2 m deviation</td>
+<td style="text-align: left;">≤ 1 m after twist-weight increase</td>
+<td style="text-align: left;">Per change</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timing recalibration window</td>
+<td style="text-align: left;">Training log, subjective timing score 1–10</td>
+<td style="text-align: left;">Return to baseline ≤ 14 days</td>
+<td style="text-align: left;">Score ≥ baseline by day 14</td>
+<td style="text-align: left;">Daily during recalibration</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Dosage rules:</strong></p>
+<ul>
+<li><strong>Maximum safe tip loading:</strong> 6 g of added tip mass per customization cycle (≈ 20–22 $\text{kg·cm}^2$). Beyond this, the acceleration tax begins to degrade the terminal snap of Article 014's long-axis rotation in most club-level engines.</li>
+<li><strong>Increment size:</strong> 2–5 $\text{kg·cm}^2$ per adjustment; one adjustment per week.</li>
+<li><strong>Recalibration volume:</strong> minimum 800–1,000 balls of rally-level hitting before the modified frame is trusted in match play.</li>
+<li><strong>Anti-pattern:</strong> never chase a professional's quoted swing weight (frequently 350+ with custom handles) without the professional's torque supply and weekly volume. Inertia debt is repaid in timing errors and elbow load.</li>
+</ul>
+<blockquote>
+<p><strong>MECHANICAL DEFECT WARNING:</strong> A swing weight increase that the kinetic chain cannot finance does not produce slower balls first — it produces late contacts first. Late contact forces the wrist to manufacture the missing snap, loading the extensor tendons along the Article 021 pathway. Elbow pain after a customization is a timing warning before it is a medical one.</p>
+</blockquote>
+<h2>5. Errors, Causes &amp; Corrections</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Symptom / Error</th>
+<th style="text-align: left;">Root Cause</th>
+<th style="text-align: left;">Biomechanical Consequence</th>
+<th style="text-align: left;">Corrective Strategy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">"Racket feels dead / sluggish" on drives</td>
+<td style="text-align: left;">Swing weight exceeds the player's torque budget</td>
+<td style="text-align: left;">Angular acceleration ($\alpha = \tau/I$) collapses in the final 100 ms; late contact</td>
+<td style="text-align: left;">Roll back 10–15 $\text{kg·cm}^2$; or choke up 1–2 cm as a live test before modifying</td>
+</tr>
+<tr>
+<td style="text-align: left;">Violent twist on off-center hits</td>
+<td style="text-align: left;">Twist weight too low for the player's miss pattern</td>
+<td style="text-align: left;">Frame rotates about long axis; ball sprays; grip squeezes harder (Article 012 pressure spike)</td>
+<td style="text-align: left;">Add 2–3 g per side at 3 &amp; 9 o'clock; grip pressure stays low through impact</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ball has pace but no weight / plow-through</td>
+<td style="text-align: left;">Recoil weight too low; frame yields at impact</td>
+<td style="text-align: left;">Energy lost to frame deflection and vibration; shallow depth</td>
+<td style="text-align: left;">Increase tip or hoop mass moderately; verify balance stays ≤ 33 cm</td>
+</tr>
+<tr>
+<td style="text-align: left;">Timing degrades 1–2 weeks after customization</td>
+<td style="text-align: left;">Recalibration window not respected; automated stroke timing still adapting to new inertia</td>
+<td style="text-align: left;">Compensatory wrist snap; extensor tendon overload</td>
+<td style="text-align: left;">Isolate the change, reduce to practice-only use, complete 1,000-ball recalibration before match play</td>
+</tr>
+<tr>
+<td style="text-align: left;">Player copied a pro's swing weight spec</td>
+<td style="text-align: left;">Spec quoted from a customized tour frame with unknown torque supply</td>
+<td style="text-align: left;">Inertia debt: delayed slot arrival, flattened strokes, elbow load</td>
+<td style="text-align: left;">Match to own force-velocity profile (Article 026), not to a broadcast number</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tape added asymmetrically (one side only)</td>
+<td style="text-align: left;">Uninformed customization</td>
+<td style="text-align: left;">Balance-plane wobble; feel instability; inconsistent contact</td>
+<td style="text-align: left;">Remove and reapply symmetrically; re-measure balance and swing weight</td>
+</tr>
+<tr>
+<td style="text-align: left;">Junior "can't swing" a full frame</td>
+<td style="text-align: left;">Lever length inflates $I$ about the wrist axis beyond the junior's torque budget</td>
+<td style="text-align: left;">Arming the ball; elbow flexor strain</td>
+<td style="text-align: left;">Choke up 2–3 cm (parallel axis theorem lowers $I$) before purchasing lighter frames</td>
+</tr>
+</tbody>
+</table>
 <h2>6. Diagnostic Diagram</h2>
-<p><em>Full-depth expansion scheduled — see the pillar blueprint.</em></p>
+<pre><code class="language-text">        SWING WEIGHT MAP — WHERE THE MASS SITS DECIDES HOW IT PLAYS
 
+                  12 o'clock  (+1 g ≈ +3.5 kg·cm²)
+                      ██
+                    ██████          TIP MASS: max inertia gain,
+                   █      █         max timing cost
+                  █        █
+       3 &amp; 9 o'clock  +1 g ≈ +2.5 kg·cm² + max TWIST weight gain
+                  █        █
+                   █      █
+                    ██████
+                      ██
+        throat  (+1 g ≈ +0.9 kg·cm²)
+        ─────────────────────────────────────────────
+        ║ handle  (+10 g ≈ +0.2 kg·cm², heft only) ║
+        ─────────────────────────────────────────────
+        │←─ swing weight axis (10 cm from butt) ──→│
+
+        ACCELERATION LAW:   α = τ / I     (torque you supply / inertia you carry)
+        PARALLEL AXIS LAW:  I = I_cm + m·d²   (tip mass is squared-distance expensive)
+
+        ENGINE MATCHING BANDS (kg·cm²):
+        ┌───────────────────────┬───────────────────────┬───────────────────────┐
+        │  295 – 315            │  315 – 330            │  330 – 350            │
+        │  Tempo-dominant       │  Balanced engine      │  Force-dominant       │
+        │  compact, fast swing  │  mixed tempo          │  full unit turn drive │
+        └───────────────────────┴───────────────────────┴───────────────────────┘
+
+        RED LINE: balance &gt; 33 cm with tip loading  →  redistribute to 3 &amp; 9 o'clock
+</code></pre>
 <h2>7. Video Demonstration</h2>
-<p><em>Full-depth expansion scheduled — see the pillar blueprint.</em></p>
-
+<p><strong>Instructional Video:</strong> [LAd-HO5Q4IE]</p>
 <h2>8. Cross-Domain Synergy</h2>
-<p><em>Full-depth expansion scheduled — see the pillar blueprint.</em></p>
-
+<ul>
+<li><strong>Article 006 / 021 (Angular Momentum):</strong> Swing weight is the inertia side of the angular momentum equation ($L = I\omega$). Higher inertia means more angular momentum banked at a given speed — and more momentum that must be eccentrically absorbed in the follow-through. Customization changes the deceleration load as much as the acceleration load.</li>
+<li><strong>Article 008 (Linear vs. Angular Engines):</strong> Linear translation is nearly indifferent to swing weight; rotation pays the full tax. A player re-weighting their engine mix should retest swing weight tolerance afterward — rotation-dominant patterns typically finance 20–30 more $\text{kg·cm}^2$ than linear-push patterns.</li>
+<li><strong>Article 012 (Grip Pressure):</strong> Low twist weight provokes reflexive grip squeezing on mishits, injecting arm tension that destroys the distal relaxation required for the whip. Twist-weight customization is, indirectly, a grip-pressure intervention.</li>
+<li><strong>Article 014 (Humeral Long-Axis Rotation):</strong> The ISR multiplier acts on the racket as its terminal load. Every point of swing weight slows the ISR phase; the terminal snap is the first casualty of over-weighting.</li>
+<li><strong>Article 020 / 028 (Impact Shock &amp; Collision Physics):</strong> Recoil weight and twist weight determine how much impact energy returns to the hand as shock versus continuing into the ball. Higher well-placed inertia protects the radiocarpal and elbow chain on off-center contact.</li>
+<li><strong>Article 026 (Force-Velocity Profiling):</strong> The player's force-velocity profile is the torque budget that swing weight must be matched against; the two articles form one assessment-and-equipment pair.</li>
+<li><strong>Article 032 (Torsional Rigidity &amp; Energy Return):</strong> Frame stiffness interacts with inertia — stiff, low-inertia frames transmit mishit shock sharply; flexible high-inertia frames absorb but slow the snapback. Customization should be planned against the stiffness class of the frame.</li>
+<li><strong>Pillar V (Load Management):</strong> Every swing weight point adds eccentric braking demand at follow-through across a 1,000-ball practice day. Inertia increases should be phased like load increases in Article 161's periodization logic, not applied overnight.</li>
+</ul>
 <h2>9. Self-Assessment Matrix</h2>
-<p><em>Full-depth expansion scheduled — see the pillar blueprint.</em></p>
-
+<p>Score each item 1 (rarely true) to 5 (consistently true). Total interpretation below.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">#</th>
+<th style="text-align: left;">Assessment Item</th>
+<th style="text-align: left;">Score (1–5)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">I know my racket's measured swing weight, static weight, and balance point — not just the model name.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">My racket reaches the contact slot without stalling in the final 100 ms at match tempo.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Off-center hits deviate less than ~2 m from target on both wings.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">My grip pressure stays light through impact; mishits do not trigger reflexive squeezing.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Any equipment change I have made in the past year came with a 2-week, 1,000-ball recalibration window.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">I can explain why tip mass costs more acceleration than throat mass (parallel axis theorem).</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">My swing weight matches my force-velocity profile, not a professional's quoted spec.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">After a full practice session, my elbow and wrist feel unloaded — no cumulative strain from frame inertia.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">My customizations are symmetric and re-measured after each change.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">I have tested my frame choked up vs. full length and can articulate which serves my timing better.</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Interpretation:</strong> 40–50 — inertia literate; the racket is engineered to your chain. 28–39 — functional gaps in matching or verification; target the lowest-scoring items with Sections 3–4. Below 28 — treat equipment as an uncontrolled variable; complete the Stage A audit before any further training block.</p>
 <h2>10. Printable Practice Card</h2>
-<p><em>Full-depth expansion scheduled — see the pillar blueprint.</em></p>
+<pre><code class="language-text">╔══════════════════════════════════════════════════════════════════╗
+║  ARTICLE 007 — SWING WEIGHT TUNING CARD                          ║
+╠══════════════════════════════════════════════════════════════════╣
+║  WEEKLY AUDIT (5 min, once per week)                             ║
+║  □ Swing weight ______ kg·cm²   Static wt ______ g               ║
+║  □ Balance ______ cm            Twist weight ______ kg·cm²       ║
+║  □ Check tape edges intact, symmetric                            ║
+║                                                                  ║
+║  TERMINAL-100ms TEST (bi-weekly, 20 balls)                       ║
+║  □ Film face-on at 240 fps at match tempo                        ║
+║  □ Verify: no stall in final 100 ms before contact               ║
+║  □ If stall → reduce swing weight 10–15 kg·cm² OR choke up 2 cm  ║
+║                                                                  ║
+║  MISHIT-FORGIVENESS TEST (10 deliberate off-center feeds)        ║
+║  □ Deviation ≤ 2 m both wings?                                   ║
+║  □ If twist violent → +2–3 g per side at 3 &amp; 9 o'clock           ║
+║                                                                  ║
+║  CUSTOMIZATION RULES                                             ║
+║  □ Max +5 kg·cm² per change, one change per week                 ║
+║  □ Max 6 g tip mass per cycle                                    ║
+║  □ Balance stays ≤ 33 cm; else move mass to 3 &amp; 9 o'clock        ║
+║  □ 1,000-ball recalibration before match use                     ║
+║  □ Never change strings + swing weight in the same week          ║
+║                                                                  ║
+║  CUE:  &quot;HEAVY THROUGH THE BALL, LIGHT THROUGH THE SLOT.&quot;         ║
+╚══════════════════════════════════════════════════════════════════╝
+</code></pre>
+<p><strong>Cross-references:</strong> Article 003 (kinetic chain energy leaks), Article 006 (angular momentum conservation), Article 008 (linear vs. angular engines), Article 012 (grip pressure dynamics), Article 014 (humeral long-axis rotation), Article 020 (impact shock dissipation), Article 021 (angular momentum in the racket path), Article 026 (force-velocity profiling), Article 028 (collision physics), Article 032 (torsional rigidity and energy return).</p>
 
 <!-- TP-NAV-START -->
 
