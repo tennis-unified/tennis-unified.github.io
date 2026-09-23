@@ -1,0 +1,203 @@
+<blockquote>
+<p><strong>PRO CUE:</strong> The racket isn't a fixed weight — it's a variable inertia tool. Elite players shorten the radius when they need speed, lengthen it when they need control. The adjustment happens in the 100 ms before contact.</p>
+</blockquote>
+<h2>1. Executive Summary & Athletic Intent</h2>
+<p>The moment of inertia (<em>I</em>) of the racket-arm system is not constant. By changing the distance of the racket head from the rotation axis (shoulder → elbow → wrist), the player alters <em>I</em> by up to 40% during the forward swing. This <strong>mid-swing inertia adjustment</strong> is the hidden gear shift: a compact swing (low <em>I</em>) accelerates faster for late adjustments; an extended swing (high <em>I</em>) stores more angular momentum for power. This article defines the physics, the tracking demands, and the audit for real-time inertia management.</p>
+<p>The athletic intent is threefold: first, to make <strong>inertia a controllable variable</strong> — not a fixed equipment spec. Second, to define the <strong>tracking-inertia coupling</strong> — the player who tracks the ball late <em>must</em> shorten the radius to catch up; the player who tracks early <em>can</em> extend for power. Third, to audit the <strong>"stuck inertia" leak</strong> — players who use one swing radius regardless of ball speed, spin, or court position.</p>
+
+<h2>2. Biomechanical Foundation</h2>
+<h3>2.1 Moment of Inertia in the Tennis Swing</h3>
+<p>The racket-arm system rotates primarily around three serial axes:</p>
+<ol>
+<li><strong>Shoulder (GH joint):</strong> Whole arm + racket, <em>I</em><sub>shoulder</sub> ≈ 0.8–1.2 kg·m² (extended) vs. 0.4–0.6 kg·m² (compact).</li>
+<li><strong>Elbow:</strong> Forearm + racket, <em>I</em><sub>elbow</sub> ≈ 0.15–0.25 kg·m².</li>
+<li><strong>Wrist:</strong> Racket only, <em>I</em><sub>wrist</sub> = swingweight / 1000 ≈ 0.03–0.04 kg·m².</li>
+</ol>
+<p>The total effective inertia depends on the <strong>radius of gyration</strong> (<em>k</em>) from each axis: <em>I</em> = <em>m</em><em>k</em>². By flexing the elbow (shortening <em>k</em> from shoulder) or abducting/adducting the wrist (changing <em>k</em> from elbow), the player changes <em>I</em> in real time.</p>
+
+<h3>2.2 The Inertia-Tracking Trade-off</h3>
+<p><strong>Early tracking (ball recognized >1.5 s before contact):</strong> Player has time to extend the radius — long lever, high <em>I</em>, maximum angular momentum storage. Used for: rally balls, attacking opportunities, first serves.</p>
+<p><strong>Late tracking (ball recognized <0.8 s before contact):</strong> Player must shorten the radius — compact swing, low <em>I</em>, faster angular acceleration. Used for: return of serve, half-volleys, defensive stretches, surprise pace changes.</p>
+<p>The transition is governed by the <strong>angular acceleration equation</strong>: <em>α</em> = <em>τ</em>/<em>I</em>. For a given muscular torque <em>τ</em>, halving <em>I</em> doubles <em>α</em>. The elite player <strong>automatically</em> selects the radius that allows the racket to reach the required contact velocity within the available time.</p>
+
+<h3>2.3 Mid-Swing Adjustment Mechanics</h3>
+<p>The adjustment occurs in the <strong>100 ms window before contact</strong>:</p>
+<ul>
+<li><strong>Elbow flexion/extension:</strong> ±15° change alters shoulder-radius <em>k</em> by ~15%.</li>
+<li><strong>Wrist radial/ulnar deviation:</strong> ±20° changes racket orientation and effective length.</li>
+<li><strong>Forearm pronation/supination:</strong> Reorients the racket face without changing <em>I</em> significantly.</li>
+</ul>
+<p>The adjustment is <strong>feedforward</strong> (planned from tracking) not feedback (reactive to error). The brain predicts the required contact velocity from the ball's trajectory and pre-sets the swing radius.</p>
+
+<h2>3. Step-by-Step Technical Execution</h2>
+<h3>Audit 1 — Swing Radius Measurement</h3>
+<p><strong>Test:</strong> High-speed video (240+ fps) from side. Track shoulder, elbow, wrist, racket tip markers. Compute radius of gyration from shoulder at 3 timepoints: max backswing, 100 ms pre-contact, contact.</p>
+<ul>
+<li><strong>Pass:</strong> Radius changes appropriately for ball type: extended (≥0.85 m) for rally balls, compact (≤0.70 m) for returns/defense.</li>
+<li><strong>Leak:</strong> Radius fixed (variation <5%) across all ball types — stuck inertia.</li>
+</ul>
+
+<h3>Audit 2 — Tracking-to-Radius Latency</h3>
+<p><strong>Test:</strong> Same video. Mark frame of ball recognition (quiet eye fixation or saccade to contact zone). Mark frame of radius change initiation (elbow/wrist movement).</p>
+<ul>
+<li><strong>Pass:</strong> Radius change begins within 50 ms of tracking decision.</li>
+<li><strong>Leak:</strong> >100 ms delay — reactive, not predictive adjustment.</li>
+</ul>
+
+<h3>Audit 3 — Contact Velocity Consistency</h3>
+<p><strong>Test:</strong> Radar gun on 10 shots each: rally pace (80 mph), fast rally (100 mph), return (120 mph serve). Measure racket head speed at contact.</p>
+<ul>
+<li><strong>Pass:</strong> Racket speed within 10% across conditions (inertia adjusted to maintain output).</li>
+<li><strong>Leak:</strong> Racket speed drops >20% on fast balls — inertia not shortened, couldn't accelerate in time.</li>
+</ul>
+
+<h2>4. Performance Metrics & Dosage</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: left;">Developing</th>
+<th style="text-align: left;">Competent</th>
+<th style="text-align: left;">Advanced</th>
+<th style="text-align: left;">Elite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Radius range (extended → compact)</td>
+<td style="text-align: left;"><10% change</td>
+<td style="text-align: left;">10–20% change</td>
+<td style="text-align: left;">20–30% change</td>
+<td style="text-align: left;">30–40% change, automatic</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tracking-to-adjustment latency</td>
+<td style="text-align: left;">>200 ms</td>
+<td style="text-align: left;">100–200 ms</td>
+<td style="text-align: left;">50–100 ms</td>
+<td style="text-align: left;"><50 ms, feedforward</td>
+</tr>
+<tr>
+<td style="text-align: left;">Racket speed consistency (3 ball speeds)</td>
+<td style="text-align: left;">>30% drop</td>
+<td style="text-align: left;">20–30% drop</td>
+<td style="text-align: left;">10–20% drop</td>
+<td style="text-align: left;"><10% drop</td>
+</tr>
+<tr>
+<td style="text-align: left;">Compact swing control (half-volley)</td>
+<td style="text-align: left;">Uncontrolled</td>
+<td style="text-align: left;">Consistent direction</td>
+<td style="text-align: left;">Depth + direction</td>
+<td style="text-align: left;">Offensive placement</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Inertia Adjustment Drills</h3>
+<ul>
+<li><strong>Variable-radius shadow:</strong> Coach calls "long" or "short" — player extends or compacts mid-swing. 3×20.</li>
+<li><strong>Pace-ladder rally:</strong> Feed: slow, medium, fast, slow — player must adjust radius each ball. 20 balls.</li>
+<li><strong>Return simulation:</strong> Machine at 110–130 mph — forces compact radius. 2×20 returns.</li>
+<li><strong>Weighted racket (±50 g):</strong> Feel the inertia change; train the adjustment under load.</li>
+<li><strong>Frequency:</strong> 2×/week. Full audit monthly.</li>
+</ul>
+
+<h2>5. Errors, Causes & Corrections</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Observable Error</th>
+<th style="text-align: left;">Root Cause</th>
+<th style="text-align: left;">Correction Protocol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">One swing radius for all balls</td>
+<td style="text-align: left;">No awareness of inertia as variable; grooved single pattern</td>
+<td style="text-align: left;">Variable-radius shadow; pace-ladder; explicit "shorten for speed, lengthen for power" education</td>
+</tr>
+<tr>
+<td style="text-align: left;">Late on fast balls, early on slow</td>
+<td style="text-align: left;">Tracking-inertia coupling broken; radius change reactive</td>
+<td style="text-align: left;">Quiet eye training (Article 041) + forced early radius decision at split-step</td>
+</tr>
+<tr>
+<td style="text-align: left;">Racket head wobbles at contact</td>
+<td style="text-align: left;">Wrist adjusting inertia too late (feedback not feedforward)</td>
+<td style="text-align: left;">Lock wrist angle at 100 ms pre-contact; all adjustment at elbow</td>
+</tr>
+<tr>
+<td style="text-align: left;">Can't generate power on easy balls</td>
+<td style="text-align: left;">Defaulting to compact (safe) radius</td>
+<td style="text-align: left;">"Extend for the gift balls." Deliberate long-lever drilling on slow feeds</td>
+</tr>
+<tr>
+<td style="text-align: left;">Elbow flares/locks unpredictably</td>
+<td style="text-align: left;">No proximal stability; inertia change destabilizes shoulder</td>
+<td style="text-align: left;">Scapular stabilization (Article 018); core stiffness pulse (Article 017) prerequisite</td>
+</tr>
+</tbody>
+</table>
+
+<h2>6. Cross-Domain Synergy</h2>
+<p><strong>With Moment of Inertia (Article 007):</strong> Swingweight is the <em>baseline</em> inertia. Mid-swing adjustment is the <em>dynamic range</em> around that baseline.</p>
+<p><strong>With Quiet Eye (Article 041):</strong> The tracking decision (when/where to fixate) drives the inertia pre-selection. Late QE = forced compact swing.</p>
+<p><strong>With SSC (Article 002):</strong> Compact swing = shorter amortization window. The SSC must be faster to match the reduced radius.</p>
+<p><strong>With Skill Acquisition:</strong> Variable-radius training is the definition of <strong>differential learning</strong> — practicing the same task with varying constraints to build adaptable attractors.</p>
+
+<h2>7. Video Demonstration</h2>
+<pre><code class="language-html"><div class="video-container" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+  <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID_PLACEHOLDER"
+          style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          title="Rotational Inertia Adjustment during Mid-Swing Tracking — Technical Demonstration"></iframe>
+</div>
+</code></pre>
+<p>Recommended demonstration: motion capture overlay showing radius of gyration changing in real time; split-screen fast vs. slow ball comparison.</p>
+
+<h2>8. Self-Assessment Matrix</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Checkpoint</th>
+<th style="text-align: left;">Level 1</th>
+<th style="text-align: left;">Level 2</th>
+<th style="text-align: left;">Level 3</th>
+<th style="text-align: left;">Level 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Radius adaptability</td>
+<td style="text-align: left;">Fixed radius</td>
+<td style="text-align: left;">Aware but manual</td>
+<td style="text-align: left;">Automatic on pace change</td>
+<td style="text-align: left;">Subconscious, optimal</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tracking-adjustment sync</td>
+<td style="text-align: left;">>200 ms lag</td>
+<td style="text-align: left;">100–200 ms</td>
+<td style="text-align: left;">50–100 ms</td>
+<td style="text-align: left;"><50 ms, predictive</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fast-ball racket speed</td>
+<td style="text-align: left;">Collapses</td>
+<td style="text-align: left;">Maintains 70%</td>
+<td style="text-align: left;">Maintains 85%</td>
+<td style="text-align: left;">Maintains 95%+</td>
+</tr>
+<tr>
+<td style="text-align: left;">Easy-ball power</td>
+<td style="text-align: left;">Under-hits</td>
+<td style="text-align: left;">Moderate</td>
+<td style="text-align: left;">Full extension used</td>
+<td style="text-align: left;">Maximum, controlled</td>
+</tr>
+</tbody>
+</table>
+<p>Scoring: 4–7 = inertia audit fail. 8–11 = stuck radius. 12–14 = adjusting, refine speed. 15–16 = inertia mastery.</p>
