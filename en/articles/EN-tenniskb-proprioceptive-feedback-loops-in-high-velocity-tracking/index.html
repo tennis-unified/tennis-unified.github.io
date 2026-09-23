@@ -1,46 +1,444 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Proprioceptive Feedback Loops in High-Velocity Tracking</title>
-  <link rel="stylesheet" href="/assets/styles.css">
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <link rel="alternate" hreflang="en" href="/en/articles/EN-tenniskb-proprioceptive-feedback-loops-in-high-velocity-tracking/">
-  <link rel="alternate" hreflang="vi" href="/vi/articles/VI-tenniskb-proprioceptive-feedback-loops-in-high-velocity-tracking/">
-  <link rel="alternate" hreflang="x-default" href="/en/articles/EN-tenniskb-proprioceptive-feedback-loops-in-high-velocity-tracking/">
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <meta name="description" content="TennisKB — Proprioceptive Feedback Loops in High-Velocity Tracking | Tennis Future Lab">
+
+        <meta name="author" content="Henry Pham">
+
+          <link rel="alternate" href="/en/articles/EN-tenniskb-proprioceptive-feedback-loops-in-high-velocity-tracking/" hreflang="en">
+
+          <link rel="alternate" href="/vi/articles/VI-tenniskb-proprioceptive-feedback-loops-in-high-velocity-tracking/" hreflang="vi">
+
+      <link rel="icon" href="/assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+
+        <title>Proprioceptive Feedback Loops in High-Velocity Tracking - Tennis Unified Library</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
+
+<script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+
+
+<link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
+<link rel="stylesheet" href="/assets/css/site.css"><script src="/assets/javascripts/lang-toggle.js" defer></script><script src="/assets/javascripts/darkmode.js" defer></script><script id="MathJax" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script>window.MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"]],processEscapes:true,processEnvironments:true},loader:{lineWidth:128}};</script>
 </head>
-<body>
-<header class="site-header">
-  <nav class="top-nav" aria-label="Main navigation">
-    <a class="brand" href="/en/">Tennis Future Lab</a>
-    <ul class="nav-links">
-      <li><a href="/en/">Home</a></li>
-      <li><a href="/en/articles/">Articles 200</a></li>
-      <li><a href="/en/about/">About</a></li>
-      <li><a href="/en/contact/">Contact</a></li>
-    </ul>
-    <button class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<!-- FLATTENED-TOP-NAV-START -->
+<div class="tu-topnav">
+  <a href="/" class="tu-nav-item" title="Home"><span class="tu-nav-emoji">🏠</span><span class="tu-nav-text">Home</span></a>
+  <a href="/fundamentals/" class="tu-nav-item" title="Fundamentals"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Fundamentals</span></a>
+  <a href="/doubles/" class="tu-nav-item" title="Doubles"><span class="tu-nav-emoji">👥</span><span class="tu-nav-text">Doubles</span></a>
+  <a href="/stroke-analysis/" class="tu-nav-item" title="Stroke Analysis"><span class="tu-nav-emoji">🧠</span><span class="tu-nav-text">Stroke Analysis</span></a>
+  <a href="/coach-video-library/" class="tu-nav-item" title="Coach Library"><span class="tu-nav-emoji">🎓</span><span class="tu-nav-text">Coach Library</span></a>
+  <a href="/tennis-video-library/" class="tu-nav-item" title="Video Library"><span class="tu-nav-emoji">🎬</span><span class="tu-nav-text">Video Library</span></a>
+  <a href="/tennis-technical-reference/" class="tu-nav-item" title="Technical Reference"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Technical Reference</span></a>
+  <a href="/tnkb/" class="tu-nav-item" title="Knowledgebase"><span class="tu-nav-emoji">💡</span><span class="tu-nav-text">Knowledgebase</span></a>
+  <a href="/tennis-evolution/" class="tu-nav-item" title="Tennis Evolution"><span class="tu-nav-emoji">⚡</span><span class="tu-nav-text">Tennis Evolution</span></a>
+  <a href="/blog/" class="tu-nav-item" title="Blog"><span class="tu-nav-emoji">📝</span><span class="tu-nav-text">Blog</span></a>
+  <a href="/book/" class="tu-nav-item" title="Master Book"><span class="tu-nav-emoji">📕</span><span class="tu-nav-text">Master Book</span></a>
+  <a href="/books/" class="tu-nav-item" title="Books Catalog"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Books Catalog</span></a>
+  <a href="/en/articles/" class="tu-nav-item" title="Tennis Fundamentals"><span class="tu-nav-emoji">🎯</span><span class="tu-nav-text">Tennis Fundamentals</span></a>
+  <a href="/vi/" class="tu-nav-item tu-nav-lang" data-lang-toggle title="Switch to Vietnamese"><span class="tu-nav-emoji">🌐</span><span class="tu-nav-text">VI</span></a>
+  <button class="tu-nav-item tu-nav-darkmode" title="Dark Mode" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button>
+</div>
+<!-- FLATTENED-TOP-NAV-END -->
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+
+        <a href="#content" class="md-skip">
+          Skip to content
+        </a>
+
+    </div>
+    <div data-md-component="announce">
+
+    </div>
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="/" title="Tennis Unified Library" class="md-header__button md-logo" aria-label="Tennis Unified Library" data-md-component="logo">
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
   </nav>
 </header>
-<main class="container">
-  <article class="article-page">
-    <h1 id="content">Proprioceptive Feedback Loops in High-Velocity Tracking</h1>
-    <p class="article-meta">Article 043 | Pillar Neurology</p>
-    <div class="article-content">
-      <p>This article is a stub. Full content coming soon.</p>
+
+<div class="md-container" data-md-component="container">
+
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+
+<!-- TP-BREADCRUMB-START -->
+
+<p><a href="/">🏠 Home</a> &nbsp;›&nbsp; <a href="/en/articles/">Tennis Fundamentals</a> &nbsp;›&nbsp; <a href="/en/articles/neurology/">Applied Biomechanics &amp; Kinetics</a> &nbsp;›&nbsp; Proprioceptive Feedback Loops in High-Velocity Tracking</p>
+<hr />
+<!-- TP-NAV-END -->
+
+<h1 id="content">Proprioceptive Feedback Loops in High-Velocity Tracking</h1>
+
+<blockquote>
+<p><strong>PRO CUE:</strong> You don't feel the ball — you feel your joints. The spindle tells you where the racket is; the GTO tells you if you're crushing it. Trust the hardware; the software is already written.</p>
+</blockquote>
+<h2>1. Executive Summary & Athletic Intent</h2>
+<p><strong>Proprioception</strong> — the sense of limb position, velocity, and force — is the only sensory system fast enough to guide a 300-ms tennis stroke. Visual latency (>100 ms) and auditory latency (>50 ms) are too slow for contact manipulation. This article maps the <strong>proprioceptive hardware</strong> (muscle spindles, Golgi tendon organs, joint receptors), the <strong>gamma-loop tuning</strong> that sets spindle sensitivity, the <strong>four tonal phases</strong> of the stroke, and the audit protocol for detecting proprioceptive degradation under high-velocity load.</p>
+<p>The athletic intent is threefold: first, to make <strong>proprioceptive fidelity a trainable quality</strong> — not a fixed trait. Second, to define the <strong>tonal shifting sequence</strong> (supportive → elastic → expressive → release) as the proprioceptive signature of an efficient stroke. Third, to expose the <strong>"grip blindness" leak</strong> — where the player loses racket-face awareness because grip pressure is too high (spindle saturation) or too low (signal-to-noise loss).</p>
+
+<h2>2. Neuro-Biomechanical Foundation</h2>
+<h3>2.1 The Proprioceptive Hardware</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Receptor</th>
+<th style="text-align: left;">Location</th>
+<th style="text-align: left;">Signal</th>
+<th style="text-align: left;">Latency</th>
+<th style="text-align: left;">Tennis Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Muscle Spindle (Ia)</td>
+<td style="text-align: left;">Muscle belly (intrafusal fibers)</td>
+<td style="text-align: left;">Length + velocity of stretch</td>
+<td style="text-align: left;">~30 ms to cortex</td>
+<td style="text-align: left;">Limb position, movement speed, SSC timing</td>
+</tr>
+<tr>
+<td style="text-align: left;">Muscle Spindle (II)</td>
+<td style="text-align: left;">Muscle belly</td>
+<td style="text-align: left;">Static length</td>
+<td style="text-align: left;">~30 ms</td>
+<td style="text-align: left;">Joint angle at contact, racket face angle</td>
+</tr>
+<tr>
+<td style="text-align: left;">Golgi Tendon Organ (Ib)</td>
+<td style="text-align: left;">Muscle-tendon junction</td>
+<td style="text-align: left;">Force (tension)</td>
+<td style="text-align: left;">~30 ms</td>
+<td style="text-align: left;">Grip pressure, impact force, overload protection</td>
+</tr>
+<tr>
+<td style="text-align: left;">Joint Receptors (Ruffini, Pacini)</td>
+<td style="text-align: left;">Capsules, ligaments</td>
+<td style="text-align: left;">Joint angle, acceleration, end-range</td>
+<td style="text-align: left;">~20 ms</td>
+<td style="text-align: left;">Ligamentous lock detection (Article 037), end-range safety</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cutaneous (Meissner, Merkel)</td>
+<td style="text-align: left;">Skin (palm, fingers)</td>
+<td style="text-align: left;">Pressure, shear, vibration</td>
+<td style="text-align: left;">~20 ms</td>
+<td style="text-align: left;">Racket bevel feel, ball impact location, string vibration</td>
+</tr>
+</tbody>
+</table>
+
+<h3>2.2 The Gamma-Loop: Spindle Sensitivity Tuning</h3>
+<p>The muscle spindle's sensitivity is set by the <strong>fusimotor (gamma) drive</strong> — a separate neural signal that contracts the intrafusal fibers, "pre-loading" the spindle. This is the <strong>proprioceptive gain control</strong>:</p>
+<ul>
+<li><strong>High gamma drive (supportive/expressive tone):</strong> Spindle taut, high sensitivity to micro-stretch. Used for: ready position, contact stiffening, precision volleys.</li>
+<li><strong>Low gamma drive (elastic tone):</strong> Slack spindle, low sensitivity. Allows large, fast stretches without triggering stretch reflex. Used for: backswing loading, SSC amortization.</li>
+<li><strong>Gamma dysregulation:</strong> High gamma during backswing = premature stiffening (co-contraction brake). Low gamma at contact = no impact stabilization (flail).</li>
+</ul>
+
+<h3>2.3 The Four Tonal Phases (Proprioceptive Signature)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Phase</th>
+<th style="text-align: left;">Stroke Window</th>
+<th style="text-align: left;">Gamma Drive</th>
+<th style="text-align: left;">Spindle State</th>
+<th style="text-align: left;">GTO Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1. Supportive Tone</td>
+<td style="text-align: left;">Ready → Split-step landing</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Taut, high gain</td>
+<td style="text-align: left;">Monitoring postural load</td>
+</tr>
+<tr>
+<td style="text-align: left;">2. Elastic Tone</td>
+<td style="text-align: left;">Backswing → Max load</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Slack, allows stretch</td>
+<td style="text-align: left;">Silent (no overload)</td>
+</tr>
+<tr>
+<td style="text-align: left;">3. Expressive Tone</td>
+<td style="text-align: left;">Forward swing → Contact</td>
+<td style="text-align: left;">High (pulse)</td>
+<td style="text-align: left;">Taut, locks position</td>
+<td style="text-align: left;">Spikes at impact (protection)</td>
+</tr>
+<tr>
+<td style="text-align: left;">4. Rapid Release</td>
+<td style="text-align: left;">Post-contact → Recovery</td>
+<td style="text-align: left;">Off</td>
+<td style="text-align: left;">Reset</td>
+<td style="text-align: left;">Inhibits over-shortening</td>
+</tr>
+</tbody>
+</table>
+
+<h2>3. Step-by-Step Technical Execution</h2>
+<h3>Audit 1 — Tonal Phase Sequencing (Video + EMG Proxy)</h3>
+<p><strong>Test:</strong> High-speed video + surface EMG (if available) or kinematic proxies. Identify the four phases by joint motion character:</p>
+<ul>
+<li><strong>Supportive:</strong> Split-step — joints stiff, small amplitude.</li>
+<li><strong>Elastic:</strong> Backswing — large amplitude, fluid, "whip" quality.</li>
+<li><strong>Expressive:</strong> Contact zone — sudden stiffening, reduced amplitude.</li>
+<li><strong>Release:</strong> Follow-through — rapid relaxation, large amplitude decay.</li>
+</ul>
+<p><strong>Pass:</strong> Clear four-phase distinction; elastic phase shows large joint ranges; expressive phase shows <50 ms stiffening pulse.</p>
+<p><strong>Leak:</strong> Phases blurred (no clear elastic → expressive transition), or expressive phase >100 ms (chronic tension), or supportive phase missing (unstable base).</p>
+
+<h3>Audit 2 — Grip Pressure Fidelity (The "Bevel Test")</h3>
+<p><strong>Test:</strong> Player closes eyes. Coach rotates racket in hand to random bevel. Player identifies bevel (1–8) by feel alone. 10 trials.</p>
+<ul>
+<li><strong>Pass:</strong> ≥9/10 correct at 3/10 swing pressure; ≥7/10 at 8/10 pressure.</li>
+<li><strong>Leak:</strong> <7/10 at 3/10 (signal loss) or <5/10 at 8/10 (saturation) — grip blindness.</li>
+</ul>
+
+<h3>Audit 3 — Contact Point Proprioception</h3>
+<p><strong>Test:</strong> Player hits 10 balls with eyes closed (coach feeds predictable drops). After each, player marks perceived contact point on stringbed diagram (center, 3, 6, 9, 12 o'clock, tip, throat).</p>
+<ul>
+<li><strong>Pass:</strong> ≥8/10 within 1 zone of actual contact.</li>
+<li><strong>Leak:</strong> <6/10 accurate — impact location awareness degraded.</li>
+</ul>
+
+<h3>Audit 4 — Gamma-Loop Dysregulation Screen</h3>
+<p><strong>Test:</strong> Rapid alternating movement: wrist flexion/extension at max speed for 10 s. Observe for tremor, clamping, or rhythm breakdown.</p>
+<ul>
+<li><strong>Pass:</strong> Smooth, rhythmic, ≥180°/s peak velocity maintained.</li>
+<li><strong>Leak:</strong> Clamping (co-contraction), tremor, velocity decay >20% — gamma drive stuck high.</li>
+</ul>
+
+<h2>4. Performance Metrics & Dosage</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: left;">Developing</th>
+<th style="text-align: left;">Competent</th>
+<th style="text-align: left;">Advanced</th>
+<th style="text-align: left;">Elite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tonal phase clarity</td>
+<td style="text-align: left;">Blurred, 2 phases visible</td>
+<td style="text-align: left;">3 phases visible</td>
+<td style="text-align: left;">4 phases distinct</td>
+<td style="text-align: left;">4 phases, expressive <50 ms</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bevel test (3/10 pressure)</td>
+<td style="text-align: left;"><5/10</td>
+<td style="text-align: left;">5–7/10</td>
+<td style="text-align: left;">8–9/10</td>
+<td style="text-align: left;">10/10, instant</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bevel test (8/10 pressure)</td>
+<td style="text-align: left;"><3/10 (saturation)</td>
+<td style="text-align: left;">4–5/10</td>
+<td style="text-align: left;">6–7/10</td>
+<td style="text-align: left;">≥8/10 (no saturation)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Eyes-closed contact ID</td>
+<td style="text-align: left;"><4/10</td>
+<td style="text-align: left;">4–6/10</td>
+<td style="text-align: left;">7–8/10</td>
+<td style="text-align: left;">≥9/10, precise zone</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rapid alternation (10 s)</td>
+<td style="text-align: left;">Clamps, tremors</td>
+<td style="text-align: left;">Breaks down at 6 s</td>
+<td style="text-align: left;">Holds 10 s, minor decay</td>
+<td style="text-align: left;">10 s, stable velocity</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Proprioceptive Training Drills</h3>
+<ul>
+<li><strong>Gamma-ladder:</strong> Shadow swings at 10%, 30%, 50%, 80%, 3/10 grip pressure — feel the spindle gain change. 5 min daily.</li>
+<li><strong>Bevel blindness cure:</strong> Eyes closed, coach changes grip bevel every 3 swings. Player adjusts without looking. 20 swings.</li>
+<li><strong>Impact location training:</strong> Target zones taped on strings (center, 3, 9, 12). Player calls zone before opening eyes. 20 balls.</li>
+<li><strong>Cutaneous amplification:</strong> Overgrip with raised ridges; bare-hand shadow swings — heightens cutaneous input.</li>
+<li><strong>Perturbation training:</strong> Coach lightly taps racket frame mid-swing — player must maintain face angle (spindle/GTO reflex). 15 swings.</li>
+<li><strong>Frequency:</strong> Daily 5-min proprio block. Full audit biweekly.</li>
+</ul>
+
+<h2>5. Errors, Causes & Corrections</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Observable Error</th>
+<th style="text-align: left;">Root Cause</th>
+<th style="text-align: left;">Correction Protocol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Can't feel racket face angle</td>
+<td style="text-align: left;">Grip pressure too high (spindle saturation) or too low (noise)</td>
+<td style="text-align: left;">Bevel test to find optimal pressure (usually 3–4/10 swing, 8–9/10 contact)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Stiff, jerky backswing</td>
+<td style="text-align: left;">Gamma drive high during elastic phase (no stretch allowed)</td>
+<td style="text-align: left;">"Heavy racket, light hands." Slow-motion backswing with 2/10 grip; gamma-ladder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Flailing follow-through</td>
+<td style="text-align: left;">No expressive tone pulse; release phase starts early</td>
+<td style="text-align: left;">Contact freeze drills; "snap the wrist at contact, then let go"</td>
+</tr>
+<tr>
+<td style="text-align: left;">Misses contact point consistently</td>
+<td style="text-align: left;">Cutaneous/spindle signal degraded; no eyes-closed training</td>
+<td style="text-align: left;">Eyes-closed drop-feeds; impact zone tape; bevel test</td>
+</tr>
+<tr>
+<td style="text-align: left;">Grip pressure spikes randomly</td>
+<td style="text-align: left;">Gamma dysregulation; anxiety → fusimotor drive</td>
+<td style="text-align: left;">Vagal breathing (Article 074); pressure biofeedback (grip sensor)</td>
+</tr>
+</tbody>
+</table>
+
+<h2>6. Cross-Domain Synergy</h2>
+<p><strong>With QE (Article 041):</strong> QE provides the visual anchor; proprioception provides the body anchor. Both must agree on the contact window. Mismatch = spatial error.</p>
+<p><strong>With VOR (Article 042):</strong> Head stabilization preserves the vestibular contribution to proprioception (head-on-trunk position). VOR failure = proprioceptive reference frame drift.</p>
+<p><strong>With SSC (Article 002):</strong> The elastic tone phase <em>is</em> the SSC loading window. Gamma-low = spindle allows stretch. Gamma-high = spindle triggers premature reflex = SSC broken.</p>
+<p><strong>With Ligamentous Locks (Article 037):</strong> Joint receptors signal end-range lock. If player doesn't reach the lock, joint receptors silent, muscles must brace = active tension leak.</p>
+<p><strong>With Injury:</strong> Chronic grip pressure >6/10 swing = spindle saturation = loss of face control = off-center hits = tennis elbow. Proprioceptive audit prevents the cascade.</p>
+
+<h2>7. Video Demonstration</h2>
+<pre><code class="language-html"><div class="video-container" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+  <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID_PLACEHOLDER"
+          style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          title="Proprioceptive Feedback Loops in High-Velocity Tracking — Technical Demonstration"></iframe>
+</div>
+</code></pre>
+<p>Recommended demonstration: EMG + kinematic overlay showing four tonal phases; bevel test protocol; eyes-closed contact accuracy comparison.</p>
+
+<h2>8. Self-Assessment Matrix</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Checkpoint</th>
+<th style="text-align: left;">Level 1</th>
+<th style="text-align: left;">Level 2</th>
+<th style="text-align: left;">Level 3</th>
+<th style="text-align: left;">Level 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tonal phases</td>
+<td style="text-align: left;">One speed, one tone</td>
+<td style="text-align: left;">Two phases visible</td>
+<td style="text-align: left;">Three phases clear</td>
+<td style="text-align: left;">Four phases, expressive <50 ms</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bevel ID (light grip)</td>
+<td style="text-align: left;"><5/10</td>
+<td style="text-align: left;">5–7/10</td>
+<td style="text-align: left;">8–9/10</td>
+<td style="text-align: left;">10/10, instant</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bevel ID (firm grip)</td>
+<td style="text-align: left;"><3/10</td>
+<td style="text-align: left;">4–5/10</td>
+<td style="text-align: left;">6–7/10</td>
+<td style="text-align: left;">≥8/10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Eyes-closed contact</td>
+<td style="text-align: left;"><4/10</td>
+<td style="text-align: left;">4–6/10</td>
+<td style="text-align: left;">7–8/10</td>
+<td style="text-align: left;">≥9/10, zone-accurate</td>
+</tr>
+</tbody>
+</table>
+<p>Scoring: 4–7 = proprio audit fail. 8–11 = grip blindness or tonal leak. 12–14 = functional, refine pressure. 15–16 = proprioceptive mastery.</p>
+
+<!-- TP-NAV-START -->
+
+<p class="article-nav" style="margin-top:2rem;font-size:0.95rem"><a href="/en/articles/EN-tenniskb-vestibular-ocular-reflex-vor-and-head-stabilization/">← Previous</a> &nbsp;|&nbsp; <a href="/en/articles/">🏠 Home</a> &nbsp;|&nbsp; <a href="/en/articles/EN-tenniskb-amygdala-hijack-mitigation-under-match-pressure/">Next →</a></p>
+<!-- TP-NAV-END -->
+
+</article>
+
+          </div>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+
+      </main>
+
+        <footer class="md-footer">
+
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+
+    <div class="md-copyright__highlight">
+      © 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.
     </div>
-    <nav class="article-nav" aria-label="Article navigation">
-      <a class="prev" href="/en/articles/EN-tenniskb-vestibular-ocular-reflex-vor-and-head-stabilization/">← Prev</a>
-      <a class="home" href="/en/articles/">Home</a>
-      <a class="next" href="/en/articles/EN-tenniskb-amygdala-hijack-mitigation-under-match-pressure/">Next →</a>
-    </nav>
-  </article>
-</main>
-<footer class="site-footer">
-  <p>Trang web này được xây dựng với ❤️ cho cộng đồng quần vợt Việt Nam 🎾 by Henry Phạm</p>
+
+</div>
+
+    </div>
+  </div>
 </footer>
-<script src="/search/main.js"></script>
+
+      </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+
+      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.path", "navigation.expand", "navigation.indexes", "navigation.prune", "navigation.prev_next", "navigation.footer", "search.highlight", "search.suggest", "alternate"], "search": "/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+
+        <script src="/assets/js/extra.js"></script>
+
+<footer class="tu-footer" style="background: var(--card); border-top: 1px solid var(--border); color: var(--ink-muted); padding: 1.5rem 1rem; text-align: center; font-size: 0.92rem; margin-top: 3rem;">
+<div style="font-size: 0.85rem; color: var(--accent-dark);">Trang web này được xây dựng với ❤️ cho cộng đồng quần vợt Việt Nam 🎾 by Henry Phạm</div>
+</footer>
 </body>
 </html>
