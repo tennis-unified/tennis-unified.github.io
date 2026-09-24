@@ -15,16 +15,43 @@
     return document.querySelectorAll('[data-lang-toggle]');
   }
 
+  function getAlternateUrl(targetLang) {
+    var link = document.querySelector('link[rel="alternate"][hreflang="' + targetLang + '"]');
+    if (link) {
+      var href = link.getAttribute('href');
+      if (href) return href;
+    }
+    return null;
+  }
+
   function buildTargetUrl(currentPath) {
-    // Strip leading slash for consistency
+    var isVi = /^\/?vi(\/|$)/.test(currentPath);
+    var targetLang = isVi ? 'en' : 'vi';
+
+    // 1. Authoritative check from <link rel="alternate">
+    var alt = getAlternateUrl(targetLang);
+    if (alt) {
+      return alt;
+    }
+
+    // 2. Specific routes and fallbacks
     var path = currentPath.replace(/^\//, '');
 
-    if (/^vi(\/|$)/.test(path)) {
-      // Currently on VI page -> switch to EN (strip /vi/)
+    if (isVi) {
+      // Currently on VI page -> switch to EN
+      if (/^vi\/articles(\/.*)?$/.test(path)) {
+        return '/' + path.replace(/^vi\/articles/, 'en/articles');
+      }
       var enPath = path.replace(/^vi\/?/, '');
-      return '/' + enPath;
+      return '/' + (enPath || '');
     } else {
       // Currently on EN page -> switch to VI
+      if (/^en\/articles(\/.*)?$/.test(path)) {
+        return '/' + path.replace(/^en\/articles/, 'vi/articles');
+      }
+      if (/^articles(\/.*)?$/.test(path)) {
+        return '/vi/' + path;
+      }
       if (path === '' || path === '/') {
         return '/vi/';
       }
@@ -37,8 +64,8 @@
     if (!toggles || toggles.length === 0) return;
 
     var currentPath = window.location.pathname;
+    var isVi = /^\/?vi(\/|$)/.test(currentPath);
     var target = buildTargetUrl(currentPath);
-    var isVi = /^vi(\/|$)/.test(currentPath.replace(/^\//, ''));
 
     toggles.forEach(function (toggle) {
       toggle.setAttribute('href', target);
