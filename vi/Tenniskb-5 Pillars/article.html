@@ -162,6 +162,18 @@ function preprocessMarkdown(md) {
   return md;
 }
 
+function updateLanguageToggles(p) {
+  var enFile = p.replace(/_VN\.md$/i, '_EN.md');
+  var enTarget = '/Tenniskb-5 Pillars/article.html?p=' + encodeURIComponent(enFile) + '&lang=en';
+  var altEn = document.querySelector('link[rel="alternate"][hreflang="en"]');
+  if (altEn) altEn.setAttribute('href', enTarget);
+  var toggles = document.querySelectorAll('[data-lang-toggle], .md-select__link[hreflang="en"]');
+  toggles.forEach(function(t){ t.setAttribute('href', enTarget); });
+}
+
+var initialP = getParam('p') || ARTS[0].file;
+updateLanguageToggles(initialP);
+
 function renderArticle() {
   var p = getParam("p") || ARTS[0].file;
   document.getElementById("header-title").textContent = p;
@@ -179,10 +191,7 @@ function renderArticle() {
       if (window.MathJax && window.MathJax.typesetPromise) {
         window.MathJax.typesetPromise([document.getElementById("article-body")]).catch(function(e){});
       }
-      var enFile = p.replace('_VN.md', '_EN.md');
-      var enTarget = '/Tenniskb-5 Pillars/article.html?p=' + encodeURIComponent(enFile) + '&lang=en';
-      var toggles = document.querySelectorAll('[data-lang-toggle], .md-select__link[hreflang="en"]');
-      toggles.forEach(function(t){ t.setAttribute('href', enTarget); });
+      updateLanguageToggles(p);
       renderNav();
     })
     .catch(e => {
