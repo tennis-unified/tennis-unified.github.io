@@ -19,7 +19,7 @@ Khi người chơi đẩy bàn chân ngoài xuống mặt sân, các cơ bị k�
 Năng lượng tích trữ ở chân ngoài không được giải phóng theo đường thẳng; nó được chuyển đổi thành chuyển động xoay thông qua **Hệ Cơ Mạc Chéo Trước (Anterior Oblique Sling - AOS)**.
 
 ### Chuỗi Chuyển Đổi:
-> **Nạp lực chân ngoài** → **Ổn định cơ mông** → **Xoay xương chậu** → **Mô-men xoắn vùng lõi** → **Gia tốc vợt**
+Nạp lực chân ngoài → Ổn định cơ mông → Xoay xương chậu → Mô-men xoắn vùng lõi → Gia tốc vợt
 
 Khi vận động viên đẩy mạnh từ chân ngoài, xương chậu bị buộc phải xoay. Vì thân trên vẫn đang ở trạng thái cuộn (X-Factor), năng lượng tích trữ ở chân sẽ "giật" xương chậu về phía trước, tạo ra sự gia tăng đột biến về vận tốc góc.
 
@@ -32,7 +32,7 @@ Người chơi đặt chân nhưng không đẩy mạnh xuống mặt sân.
 
 ### 2. Nạp Lực Quá Sâu (The "Deep Hole")
 Hạ thấp trọng tâm quá mức qua việc gập gối sâu.
-*   **Kết quả:** Pha chuyển tiếp (amortization) trở nên quá dài ($> 0.05\text{ giây}$), và năng lượng tích trữ bị thất thoát dưới dạng nhiệt.
+*   **Kết quả:** Pha chuyển tiếp (amortization) trở nên quá dài (> 0.05 giây), và năng lượng tích trữ bị thất thoát dưới dạng nhiệt.
 *   **Quan sát:** Người chơi trông như bị "mắc kẹt" dưới đất trong một khoảnh khắc ngắn trước khi đánh.
 
 ## Ứng Dụng Thực Tế & Bài Tập

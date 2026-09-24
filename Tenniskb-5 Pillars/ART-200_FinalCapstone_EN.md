@@ -155,4 +155,4 @@ The 5-Pillar system is not five subjects — it is one athlete viewed from five 
 
 ---
 
-*End of the Tennis Gemini Knowledgebase — 200 Articles, 5 Pillars, 1 Complete System*
+*End of the Tennis Knowledgebase — 200 Articles, 5 Pillars, 1 Complete System*

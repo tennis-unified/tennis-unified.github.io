@@ -9,7 +9,7 @@ Proximal-to-distal sequencing is the fundamental law of momentum transfer in the
 The kinetic chain operates as a series of linked pendulums. Each segment must reach its peak velocity and then decelerate, transferring its momentum to the next, smaller segment in the chain.
 
 **The Sequence:**
-> **Feet/Legs** → **Pelvis** → **Core/Trunk** → **Shoulder/Scapula** → **Upper Arm** → **Forearm** → **Wrist** → **Racket**
+Feet/Legs → Pelvis → Core/Trunk → Shoulder/Scapula → Upper Arm → Forearm → Wrist → Racket
 
 ### Why the Sequence Matters (The Amplifier Effect)
 If the sequence is maintained, the velocity increases at each step. For example:

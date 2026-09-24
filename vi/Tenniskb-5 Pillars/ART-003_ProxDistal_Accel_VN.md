@@ -9,7 +9,7 @@ Trình tự từ cơ tủy ra ngoại vi (Proximal-to-distal sequencing) là quy
 Chuỗi động học hoạt động như một chuỗi các con lắc liên kết với nhau. Mỗi phân đoạn phải đạt đến vận tốc đỉnh và sau đó giảm tốc, chuyển động lượng của nó sang phân đoạn tiếp theo, nhỏ hơn trong chuỗi.
 
 **Trình tự truyền dẫn:**
-> **Bàn chân/Chân** → **Xương chậu/Hông** → **Lõi/Thân** → **Vai/Xương bả vai** → **Cánh tay trên** → **Cẳng tay** → **Cổ tay** → **Vợt**
+Bàn chân/Chân → Xương chậu/Hông → Lõi/Thân → Vai/Xương bả vai → Cánh tay trên → Cẳng tay → Cổ tay → Vợt
 
 ### Tại Sao Trình Tự Lại Quan Trọng (Hiệu Ứng Khuếch Đại)
 Nếu trình tự được duy trì, vận tốc sẽ tăng lên ở mỗi bước. Ví dụ:

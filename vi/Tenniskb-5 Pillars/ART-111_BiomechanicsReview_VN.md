@@ -12,7 +12,7 @@ Bài viết này tổng hợp các nguyên lý sinh cơ học được trình b�
 
 ### 2. Trình Tự Chuỗi Động Học
 1.  **Bàn Chân/Cổ Chân:** Ứng dụng lực ban đầu và kiểm soát hướng.
-2.  **Đầu Gối/Hông:** Khuếch đại lực thông qua sự伸 giãn ba khớp (triple extension).
+2.  **Đầu Gối/Hông:** Khuếch đại lực thông qua sự duỗi giãn ba khớp (triple extension).
 3.  **Xương Hông:** Động cơ xoay (Pelvic Snap) chuyển động lượng tuyến tính thành góc.
 4.  **Ngực/Đốt Sống Thắt Lưng:** Độ tách thoraco-lumbar (Hệ Số X) lưu trữ năng lượng đàn hồi.
 5.  **Xương Bả Vai/Vai:** Tách rời xương bả vai cho phép cánh tay gia tốc độc lập.
