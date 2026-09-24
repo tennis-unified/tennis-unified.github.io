@@ -53,7 +53,37 @@
     var isVi = /^\/?vi(\/|$)/i.test(decodedPath);
     var targetLang = isVi ? 'en' : 'vi';
 
-    // 1. DYNAMIC ARTICLE RENDERER (Tenniskb-5 Pillars/article.html?p=...)
+    // 1A. DYNAMIC ARTICLE RENDERER (Tenniskb-10 Pillars)
+    if (decodedPath.indexOf('Tenniskb-10 Pillars') !== -1) {
+      var alt10 = getAlternateUrl(targetLang);
+      if (alt10) {
+        return alt10;
+      }
+      var params10 = new URLSearchParams(search);
+      var p10 = params10.get('p');
+      if (p10) {
+        if (isVi) {
+          return '/Tenniskb-10 Pillars/article.html?p=' + encodeURIComponent(p10) + '&lang=en';
+        } else {
+          return '/vi/Tenniskb-10 Pillars/article.html?p=' + encodeURIComponent(p10) + '&lang=vi';
+        }
+      }
+      if (/article\.html$/i.test(decodedPath)) {
+        if (isVi) {
+          return '/Tenniskb-10 Pillars/article.html?p=ART-001-ground-reaction-force-vectors-tennis-movement.md&lang=en';
+        } else {
+          return '/vi/Tenniskb-10 Pillars/article.html?p=ART-001_VN.md&lang=vi';
+        }
+      }
+      if (/^\/?(en\/)?Tenniskb-10 Pillars\/?$/i.test(decodedPath)) {
+        return '/vi/Tenniskb-10 Pillars/';
+      }
+      if (/^\/?vi\/Tenniskb-10 Pillars\/?$/i.test(decodedPath)) {
+        return '/Tenniskb-10 Pillars/';
+      }
+    }
+
+    // 1B. DYNAMIC ARTICLE RENDERER (Tenniskb-5 Pillars/article.html?p=...)
     if (decodedPath.indexOf('Tenniskb-5 Pillars') !== -1 || decodedPath.indexOf('article.html') !== -1) {
       var params = new URLSearchParams(search);
       var p = params.get('p');
