@@ -9,7 +9,7 @@ Trình tự từ cơ tủy ra ngoại vi (Proximal-to-distal sequencing) là quy
 Chuỗi động học hoạt động như một chuỗi các con lắc liên kết với nhau. Mỗi phân đoạn phải đạt đến vận tốc đỉnh và sau đó giảm tốc, chuyển động lượng của nó sang phân đoạn tiếp theo, nhỏ hơn trong chuỗi.
 
 **Trình tự truyền dẫn:**
-$$\text{Bàn chân/Chân} \rightarrow \text{Xương chậu/Hông} \rightarrow \text{Lõi/Thân} \rightarrow \text{Vai/Xương bả vai} \rightarrow \text{Cánh tay trên} \rightarrow \text{Cẳng tay} \rightarrow \text{Cổ tay} \rightarrow \text{Vợt}$$
+> **Bàn chân/Chân** → **Xương chậu/Hông** → **Lõi/Thân** → **Vai/Xương bả vai** → **Cánh tay trên** → **Cẳng tay** → **Cổ tay** → **Vợt**
 
 ### Tại Sao Trình Tự Lại Quan Trọng (Hiệu Ứng Khuếch Đại)
 Nếu trình tự được duy trì, vận tốc sẽ tăng lên ở mỗi bước. Ví dụ:
@@ -44,6 +44,6 @@ Không tách rời được chuyển động của vai khỏi chuyển động x
 
 ## Triết Lý Huấn Luyện: "Từ Chậm Đến Nhanh"
 Để làm chủ điều này, người chơi phải huấn luyện bộ não nhận diện **Cảm Giác Về Thứ Tự**.
-*   **Cấp độ 1:** Phóng đại trình tự. Di chuyển chân $\rightarrow$ dừng $\rightarrow$ di chuyển hông $\rightarrow$ dừng $\rightarrow$ vung tay.
+*   **Cấp độ 1:** Phóng đại trình tự. Di chuyển chân → dừng → di chuyển hông → dừng → vung tay.
 *   **Cấp độ 2:** Làm mượt các bước chuyển tiếp.
 *   **Cấp độ 3:** Tích hợp vào các cú đánh ở tốc độ thực tế.

@@ -35,6 +35,6 @@ Khi hông xoay mở, cơ thể chịu những lực xoay dữ dội. Neo giữ �
 
 ## Huấn Luyện Thực Tế: Bóng Ma Trên "Thanh Thăng Bằng"
 1.  Dán một miếng băng keo hoặc chọn một đường kẻ trên sân (mô phỏng thanh thăng bằng).
-2.  Thực hiện toàn bộ trình tự đánh bóng (Split step $\rightarrow$ Nạp lực $\rightarrow$ Đánh $\rightarrow$ Phục hồi) trong khi giữ cả hai chân trên hoặc dọc theo đường kẻ.
+2.  Thực hiện toàn bộ trình tự đánh bóng (Split step → Nạp lực → Đánh → Phục hồi) trong khi giữ cả hai chân trên hoặc dọc theo đường kẻ.
 3.  Tập trung giữ xương ức (đường dọi) nằm chính giữa đường kẻ.
 4.  Tăng tốc độ dần dần, đảm bảo "điểm neo" vẫn ổn định.

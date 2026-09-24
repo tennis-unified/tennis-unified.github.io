@@ -19,7 +19,7 @@ Phần quan trọng nhất của cú giật là sự dừng lại đột ngột.
 *   **Điểm mấu chốt lâm sàng:** Nếu không có điểm khựng vi mô, năng lượng sẽ ở lại thân dưới, và người chơi bị "xoay hở" mà không truyền được sức mạnh đến vợt.
 
 ## Tích Hợp Động Học
-$$\text{GRF (Chân ngoài)} \rightarrow \text{Gia tốc xương chậu} \rightarrow \text{Điểm khựng vi mô} \rightarrow \text{Mở thân trên}$$
+> **GRF (Chân ngoài)** → **Gia tốc xương chậu** → **Điểm khựng vi mô** → **Mở thân trên**
 
 ## Ma Trận Chẩn Đoán & Huấn Luyện
 

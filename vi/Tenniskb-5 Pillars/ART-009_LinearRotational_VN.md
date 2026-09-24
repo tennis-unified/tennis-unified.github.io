@@ -6,7 +6,7 @@ Sức mạnh trong tennis được tạo ra bởi hai "động cơ" sinh cơ h�
 ## 1. Động Cơ Tuyến Tính (Chuyển Trọng Tâm - Weight Transfer)
 Động cơ tuyến tính là động lực chính trong các cú đánh cơ bản tư thế đóng và các cú đánh tiếp cận.
 *   **Cơ chế:** Gia tốc về phía trước của trọng tâm (COM). Năng lượng chảy từ chân sau sang chân trước, đẩy cơ thể về phía mục tiêu.
-*   **Vật lý:** Sử dụng vector Trước-Sau ($F_y$). Sức mạnh là kết quả của $Khối\ lượng \times Gia\ tốc$.
+*   **Vật lý:** Sử dụng vector Trước-Sau ($F_y$). Sức mạnh là kết quả của Khối lượng × Gia tốc.
 *   **Ứng dụng:** Thiết yếu để tạo ra sự "xuyên thấu" trong cú đánh, đảm bảo bóng đi sâu.
 *   **Rủi ro:** Quá phụ thuộc vào động cơ tuyến tính mà không có xoay sẽ dẫn đến việc "đẩy" bóng, khiến bóng thiếu độ xoáy và tốc độ.
 
@@ -38,5 +38,5 @@ Những người chơi đẳng cấp không chọn một trong hai động cơ; 
 ## Bài Tập Thực Hành: Chuyển Tiếp "Tuyến Tính sang Xoay"
 1.  **Pha Tuyến Tính:** Bắt đầu ở tư thế đóng. Bước một bước về phía trước và "đẩy" trọng lượng về phía mục tiêu.
 2.  **Pha Xoay:** Ngay khi đặt chân, thực hiện một cú giật hông mãnh liệt và xoay thân trên.
-3.  **Tích Hợp:** Kết hợp cả hai: Bước tới $\rightarrow$ Đặt chân $\rightarrow$ Xoay $\rightarrow$ Vung vợt.
+3.  **Tích Hợp:** Kết hợp cả hai: Bước tới → Đặt chân → Xoay → Vung vợt.
 4.  Tập trung vào cảm giác động lượng tuyến tính "tiếp nhiên liệu" cho chuyển động xoay.

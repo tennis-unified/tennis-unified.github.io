@@ -27,7 +27,7 @@ Khác với cột sống ngực, cột sống thắt lưng được thiết kế
 
 | Quan Sát | Lỗi Sinh Cơ Học | Kết Quả | Chiến Lược Khắc Phục |
 | :--- | :--- | :--- | :--- |
-| Xoay kiểu "Khối" | Thiếu độ tách trục | Tốc độ vợt thấp; thiếu hiệu ứng "quất roi". | **Bài tập Xoay Phân Đoạn:** Xoay hông trước $\rightarrow$ dừng $\rightarrow$ xoay vai. |
+| Xoay kiểu "Khối" | Thiếu độ tách trục | Tốc độ vợt thấp; thiếu hiệu ứng "quất roi". | **Bài tập Xoay Phân Đoạn:** Xoay hông trước → dừng → xoay vai. |
 | Đau thắt lưng | Xoay thắt lưng | Năng lượng được tạo ra bằng cách vặn cột sống thắt lưng. | **Tập linh hoạt ngực:** Dùng foam roller cho lưng trên; bài tập "Cat-Cow". |
 | Mở vợt hạn chế | Cột sống ngực bị cứng | Không thể tích trữ năng lượng đàn hồi. | **Bài tập Open-Book:** Nằm nghiêng và xoay cánh tay mở ra. |
 

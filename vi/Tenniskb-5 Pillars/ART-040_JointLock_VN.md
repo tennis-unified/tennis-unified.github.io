@@ -24,7 +24,7 @@ Xung Lực (Impulsive Force - F) được tối đa hóa khi khung cấu trúc c
 
 ### Trình Tự Căn Chỉnh Để Đạt Xung Lực Tối Đa
 Để đạt xung lực tối đa, các khớp phải khóa theo trình tự:
-**Khóa Lõi $\rightarrow$ Khóa Vai $\rightarrow$ Khóa Khuỷu Tay $\rightarrow$ Khóa Cổ Tay**
+**Khóa Lõi → Khóa Vai → Khóa Khuỷu Tay → Khóa Cổ Tay**
 Trình tự này đảm bảo năng lượng chảy từ khối lượng lớn nhất đến liên kết nhỏ nhất mà không bị gián đoạn.
 
 ## Biểu Hiện Lâm Sàng Của Thất Bại Khóa Khớp

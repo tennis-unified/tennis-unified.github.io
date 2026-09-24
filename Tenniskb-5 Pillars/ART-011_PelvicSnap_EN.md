@@ -19,7 +19,7 @@ The most critical part of the snap is the sudden stop. The pelvis does not spin 
 *   **Clinical Key:** Without the micro-stop, the energy remains in the lower body, and the player "spins out" without transferring power to the racket.
 
 ## The Kinetic Integration
-$$\text{GRF (Outside Leg)} \rightarrow \text{Pelvic Acceleration} \rightarrow \text{Micro-Stop} \rightarrow \text{Torso Uncoiling}$$
+> **GRF (Outside Leg)** → **Pelvic Acceleration** → **Micro-Stop** → **Torso Uncoiling**
 
 ## Diagnostic & Training Matrix
 

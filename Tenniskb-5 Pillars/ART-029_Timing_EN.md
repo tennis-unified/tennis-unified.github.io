@@ -26,7 +26,7 @@ The brain must manage this sequence in roughly 0.2 seconds.
 
 | Observation | Timing Failure | Result | Corrective Strategy |
 | :--- | :--- | :--- | :--- |
-| "Heavy" but slow ball | Spikes are too far apart | Lack of exponential acceleration. | **Metronome Drills:** Use a beat to synchronize the "Legs $\rightarrow$ Hips $\rightarrow$ Arm" sequence. |
+| "Heavy" but slow ball | Spikes are too far apart | Lack of exponential acceleration. | **Metronome Drills:** Use a beat to synchronize the "Legs → Hips → Arm" sequence. |
 | Inconsistent power | Poor Neuro-Fusion | Some shots "click," others "clunk." | **Slow-to-Fast Integration:** Perform the sequence at 10%, 50%, then 100% speed. |
 | "Fighting" the ball | Timing mismatch | Racket face is not square at the peak of the chain. | **Video Analysis:** Use high-frame-rate video to find the "gap" in the sequence. |
 

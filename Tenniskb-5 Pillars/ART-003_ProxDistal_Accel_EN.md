@@ -9,7 +9,7 @@ Proximal-to-distal sequencing is the fundamental law of momentum transfer in the
 The kinetic chain operates as a series of linked pendulums. Each segment must reach its peak velocity and then decelerate, transferring its momentum to the next, smaller segment in the chain.
 
 **The Sequence:**
-$$\text{Feet/Legs} \rightarrow \text{Pelvis} \rightarrow \text{Core/Trunk} \rightarrow \text{Shoulder/Scapula} \rightarrow \text{Upper Arm} \rightarrow \text{Forearm} \rightarrow \text{Wrist} \rightarrow \text{Racket}$$
+> **Feet/Legs** → **Pelvis** → **Core/Trunk** → **Shoulder/Scapula** → **Upper Arm** → **Forearm** → **Wrist** → **Racket**
 
 ### Why the Sequence Matters (The Amplifier Effect)
 If the sequence is maintained, the velocity increases at each step. For example:
@@ -44,6 +44,6 @@ Failure to decouple the shoulder from the torso rotation.
 
 ## Training Philosophy: "Slow to Fast"
 To master this, players must train the brain to recognize the **Sensation of Order**.
-*   **Level 1:** Exaggerate the sequence. Move legs $\rightarrow$ pause $\rightarrow$ move hips $\rightarrow$ pause $\rightarrow$ swing arm.
+*   **Level 1:** Exaggerate the sequence. Move legs → pause → move hips → pause → swing arm.
 *   **Level 2:** Smooth the transitions.
 *   **Level 3:** Integrate into full-speed strokes.

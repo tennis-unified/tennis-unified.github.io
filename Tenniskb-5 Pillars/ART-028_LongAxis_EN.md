@@ -12,7 +12,7 @@ ISR is the movement where the humerus rotates inward, bringing the racket head f
 
 ### 2. The Pronation Link
 Following ISR, the forearm executes **pronation** (rotating the palm outward/downward).
-*   **The Sequence:** ISR $\rightarrow$ Forearm Pronation.
+*   **The Sequence:** ISR → Forearm Pronation.
 *   **The Result:** This combined rotation allows the racket to "snap" through the contact zone, maximizing the impulse delivered to the ball.
 
 ## The "Whip" vs. The "Push"

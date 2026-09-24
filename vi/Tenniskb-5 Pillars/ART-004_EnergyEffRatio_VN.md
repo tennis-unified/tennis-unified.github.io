@@ -37,7 +37,7 @@ Khi khoảng cách giữa vận tốc đỉnh của phân đoạn này và phân
 
 ## Cải Thiện Tỷ Hiệu Hiệu Suất
 
-### 1. Chuyển Đổi Trương Lực (Thư giãn $\rightarrow$ Chắc chắn)
+### 1. Chuyển Đổi Trương Lực (Thư giãn → Chắc chắn)
 Những người chơi hiệu quả nhất chuyển từ trạng thái "trương lực thấp" (thư giãn) trong khi nạp lực sang trạng thái "trương lực cao" (cứng vững) chỉ trong một mili giây tiếp xúc. Điều này ngăn năng lượng bị cơ bắp hấp thụ trong pha gia tốc.
 
 ### 2. Tối Ưu Hóa Độ "Trễ" (Lag)

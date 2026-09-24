@@ -26,7 +26,7 @@ Não bộ phải quản lý trình tự này trong khoảng 0,2 giây.
 
 | Quan Sát | Lỗi Timing | Kết Quả | Chiến Lược Khắc Phục |
 | :--- | :--- | :--- | :--- |
-| Bóng "nặng" nhưng chậm | Các đỉnh quá xa nhau | Thiếu gia tốc theo cấp số nhân. | **Bài tập Metronome:** Sử dụng nhịp điệu để đồng bộ trình tự "Chân $\rightarrow$ Hông $\rightarrow$ Tay". |
+| Bóng "nặng" nhưng chậm | Các đỉnh quá xa nhau | Thiếu gia tốc theo cấp số nhân. | **Bài tập Metronome:** Sử dụng nhịp điệu để đồng bộ trình tự "Chân → Hông → Tay". |
 | Sức mạnh không nhất quán | Tích hợp thần kinh kém | Một số cú đánh "khớp", số khác thì không. | **Tích hợp Chậm-đến-Nhanh:** Thực hiện trình tự ở mức 10%, 50% rồi 100% tốc độ. |
 | "Đấu" với quả bóng | Sai lệch timing | Mặt vợt không vuông góc tại đỉnh của chuỗi. | **Phân tích Video:** Sử dụng video tốc độ khung hình cao để tìm "khoảng trống" trong trình tự. |
 

@@ -18,7 +18,7 @@
 ## Đường Cong Hiệu Suất X-Factor
 Sức mạnh không chỉ nằm ở *mức độ* tách trục, mà còn ở *thời điểm* đóng trục.
 
-*   **Đường cong lý tưởng:** Tách trục tối đa $\rightarrow$ Đóng hông nhanh $\rightarrow$ Đóng vai trễ nhịp.
+*   **Đường cong lý tưởng:** Tách trục tối đa → Đóng hông nhanh → Đóng vai trễ nhịp.
 *   **Đường cong thất bại:** Hông và vai đóng cùng lúc. Đây là "Xoay kiểu Khối", điều này triệt tiêu hoàn toàn X-Factor.
 
 ## Chẩn Đoán Lâm Sàng & Khắc Phục

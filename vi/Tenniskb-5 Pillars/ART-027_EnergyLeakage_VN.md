@@ -32,8 +32,8 @@ Năng lượng bị mất ở mắt xích cuối cùng.
 
 ## Kiểm Toán Hiệu Suất
 Để chẩn đoán rò rỉ, HLV tìm kiếm **"Điểm Ngắt Kết Nối"**.
-*   Nếu chân bùng nổ nhưng bóng đi chậm $\rightarrow$ Kiểm tra rò rỉ tại Xương Chậu/Vùng Lõi.
-*   Nếu xoay mãnh liệt nhưng vợt chậm $\rightarrow$ Kiểm tra rò rỉ tại Vai/Ngoại Vi.
+*   Nếu chân bùng nổ nhưng bóng đi chậm → Kiểm tra rò rỉ tại Xương Chậu/Vùng Lõi.
+*   Nếu xoay mãnh liệt nhưng vợt chậm → Kiểm tra rò rỉ tại Vai/Ngoại Vi.
 
 ## Ma Trận Chẩn Đoán & Huấn Luyện
 

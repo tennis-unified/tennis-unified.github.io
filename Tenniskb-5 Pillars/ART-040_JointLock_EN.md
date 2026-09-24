@@ -24,7 +24,7 @@ Impulsive Force (F) is maximized when the structural frame is rigid.
 
 ### The Alignment Sequence
 To achieve maximum impulse, the joints must lock in sequence:
-**Lock Core $\rightarrow$ Lock Shoulder $\rightarrow$ Lock Elbow $\rightarrow$ Lock Wrist**
+**Lock Core → Lock Shoulder → Lock Elbow → Lock Wrist**
 This sequence ensures that the energy flows from the largest mass to the smallest link without interruption.
 
 ## Clinical Manifestation of Joint Lock Failure

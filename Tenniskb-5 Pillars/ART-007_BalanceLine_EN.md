@@ -35,6 +35,6 @@ As the hips uncoil, the body undergoes intense rotational forces. Dynamic anchor
 
 ## Practical Training: The "Balance Beam" Shadow
 1.  Place a piece of tape or a line on the court (simulating a balance beam).
-2.  Perform the entire stroke sequence (Split step $\rightarrow$ Load $\rightarrow$ Hit $\rightarrow$ Recovery) while keeping both feet on or flanking the line.
+2.  Perform the entire stroke sequence (Split step → Load → Hit → Recovery) while keeping both feet on or flanking the line.
 3.  Focus on keeping the sternum (the plumb line) centered over the line.
 4.  Increase speed gradually, ensuring the "anchor" remains stable.

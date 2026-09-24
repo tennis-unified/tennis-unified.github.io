@@ -12,7 +12,7 @@ The serve is the most complex biomechanical sequence in tennis, integrating the 
 
 ### 2. The Uncoiling Phase (The Drive)
 The kinetic chain releases in a precise sequence:
-**Legs $\rightarrow$ Hips $\rightarrow$ Core $\rightarrow$ Shoulder $\rightarrow$ Elbow $\rightarrow$ Wrist $\rightarrow$ Racket**
+**Legs → Hips → Core → Shoulder → Elbow → Wrist → Racket**
 *   **The Leg Drive:** The triple extension provides the vertical and linear momentum.
 *   **The Hip Rotation:** The pelvis rotates violently, transferring energy to the core.
 *   **The Core Transmission:** The core acts as a rigid bridge, transmitting the rotational energy to the shoulder.
@@ -24,7 +24,7 @@ The kinetic chain releases in a precise sequence:
 *   **Racket Path:** The racket moves upward and forward, with the face angled to impart the desired spin (flat, slice, or topspin).
 
 ### 4. The Follow-Through (The Deceleration)
-*   **Deceleration Chain:** The kinetic chain decelerates in reverse order: Racket $\rightarrow$ Wrist $\rightarrow$ Elbow $\rightarrow$ Shoulder $\rightarrow$ Core $\rightarrow$ Hips $\rightarrow$ Legs.
+*   **Deceleration Chain:** The kinetic chain decelerates in reverse order: Racket → Wrist → Elbow → Shoulder → Core → Hips → Legs.
 *   **Protection:** The deceleration absorbs the kinetic energy safely, preventing shoulder and elbow injuries.
 
 ## The Timing of the Sequence

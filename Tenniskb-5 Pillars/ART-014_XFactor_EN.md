@@ -18,7 +18,7 @@ This is the measure of separation *during the movement*.
 ## The "X-Factor" Efficiency Curve
 Power is not just about the *amount* of separation, but the *timing* of the closure.
 
-*   **The Ideal Curve:** Max separation $\rightarrow$ Rapid hip closure $\rightarrow$ Delayed shoulder closure.
+*   **The Ideal Curve:** Max separation → Rapid hip closure → Delayed shoulder closure.
 *   **The Failed Curve:** Simultaneous hip and shoulder closure. This is "Block Rotation," which eliminates the X-Factor entirely.
 
 ## Clinical Diagnostic & Correction

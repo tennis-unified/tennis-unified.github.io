@@ -19,7 +19,7 @@ As the player drives the outside foot into the court, the muscles are stretched 
 The energy stored in the outside leg is not released linearly; it is converted into rotation through the **Anterior Oblique Sling (AOS)**.
 
 ### The Chain of Conversion:
-$$\text{Outside Leg Load} \rightarrow \text{Gluteal Stability} \rightarrow \text{Pelvic Rotation} \rightarrow \text{Core Torque} \rightarrow \text{Racket Acceleration}$$
+> **Outside Leg Load** → **Gluteal Stability** → **Pelvic Rotation** → **Core Torque** → **Racket Acceleration**
 
 When the athlete drives off the outside leg, the pelvis is forced to rotate. Because the upper body is still coiled (X-Factor), the energy stored in the leg "snaps" the pelvis forward, creating a massive increase in angular velocity.
 
@@ -27,7 +27,7 @@ When the athlete drives off the outside leg, the pelvis is forced to rotate. Bec
 
 ### 1. The "Soft" Plant
 The player plants the foot but fails to drive into the ground. 
-*   **Result:** No pre-stretch $\rightarrow$ No elastic energy $\rightarrow$ Power must come from the arm.
+*   **Result:** No pre-stretch → No elastic energy → Power must come from the arm.
 *   **Observation:** The outside foot looks "flat" or "passive" during the shot.
 
 ### 2. Over-Loading (The "Deep Hole")

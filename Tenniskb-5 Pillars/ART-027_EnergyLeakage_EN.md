@@ -32,8 +32,8 @@ Energy is lost at the final link.
 
 ## The Efficiency Audit
 To diagnose a leak, a coach looks for the **"Point of Disconnection."**
-*   If the legs are explosive but the ball is slow $\rightarrow$ Check the Pelvic/Core leak.
-*   If the rotation is violent but the racket is slow $\rightarrow$ Check the Shoulder/Distal leak.
+*   If the legs are explosive but the ball is slow → Check the Pelvic/Core leak.
+*   If the rotation is violent but the racket is slow → Check the Shoulder/Distal leak.
 
 ## Diagnostic & Training Matrix
 

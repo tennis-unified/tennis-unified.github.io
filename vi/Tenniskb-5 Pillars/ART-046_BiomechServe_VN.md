@@ -12,7 +12,7 @@ Cú giao bóng là trình tự sinh cơ học phức tạp nhất trong tennis, 
 
 ### 2. Pha Mở (The Drive)
 Chuỗi động học giải phóng theo một trình tự chính xác:
-**Chân $\rightarrow$ Hông $\rightarrow$ Vùng Lõi $\rightarrow$ Vai $\rightarrow$ Khuỷu Tay $\rightarrow$ Cổ Tay $\rightarrow$ Vợt**
+**Chân → Hông → Vùng Lõi → Vai → Khuỷu Tay → Cổ Tay → Vợt**
 *   **Lực Đẩy Chân:** Duỗi ba khớp cung cấp động lượng dọc và tuyến tính.
 *   **Xoay Hông:** Xương chậu xoay mãnh liệt, truyền năng lượng đến vùng lõi.
 *   **Truyền Động Vùng Lõi:** Vùng lõi hoạt động như một cầu cứng, truyền mô-men xoắn đến vai.
@@ -24,7 +24,7 @@ Chuỗi động học giải phóng theo một trình tự chính xác:
 *   **Quỹ Đạo Vợt:** Vợt di chuyển lên và về phía trước, với mặt vợt được căn chỉnh để tạo ra độ xoáy mong muốn (phẳng, cắt hoặc xoáy lên).
 
 ### 4. Pha Kết Thúc (The Follow-Through)
-*   **Chuỗi Giảm Tốc:** Chuỗi động học giảm tốc theo thứ tự ngược lại: Vợt $\rightarrow$ Cổ Tay $\rightarrow$ Khuỷu Tay $\rightarrow$ Vai $\rightarrow$ Vùng Lõi $\rightarrow$ Hông $\rightarrow$ Chân.
+*   **Chuỗi Giảm Tốc:** Chuỗi động học giảm tốc theo thứ tự ngược lại: Vợt → Cổ Tay → Khuỷu Tay → Vai → Vùng Lõi → Hông → Chân.
 *   **Bảo Vệ:** Quá trình giảm tốc hấp thụ động năng một cách an toàn, bảo vệ vai và khuỷu tay.
 
 ## Thời Điểm Của Trình Tự

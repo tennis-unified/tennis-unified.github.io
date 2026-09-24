@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="../../assets/css/book-theme.css">
     <link rel="stylesheet" href="../../assets/css/site.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$']] }, options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] } };</script>
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
   <link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
 <script src="/assets/javascripts/lang-toggle.js" defer></script>
@@ -150,13 +152,23 @@ function stripFrontMatter(md) {
   return md.replace(/^---\n[\s\S]*?---\n/, "");
 }
 
+function preprocessMarkdown(md) {
+  md = stripFrontMatter(md);
+  md = md.replace(/\$\s*\\rightarrow\s*\$/g, "→");
+  md = md.replace(/\$\s*\\to\s*\$/g, "→");
+  md = md.replace(/\$\s*\\leftarrow\s*\$/g, "←");
+  md = md.replace(/\\rightarrow/g, "→");
+  md = md.replace(/\\leftarrow/g, "←");
+  return md;
+}
+
 function renderArticle() {
   var p = getParam("p") || ARTS[0].file;
   document.getElementById("header-title").textContent = p;
   fetch(p)
     .then(r => r.text())
     .then(md => {
-      md = stripFrontMatter(md);
+      md = preprocessMarkdown(md);
       document.getElementById("article-body").innerHTML = marked.parse(md);
       // Update header title from h1
       var h1 = document.getElementById("article-body").querySelector("h1");
@@ -164,7 +176,10 @@ function renderArticle() {
         document.getElementById("header-title").textContent = h1.textContent;
         document.title = h1.textContent + " - Tenniskb-5 Pillars";
       }
-            var enFile = p.replace('_VN.md', '_EN.md');
+      if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([document.getElementById("article-body")]).catch(function(e){});
+      }
+      var enFile = p.replace('_VN.md', '_EN.md');
       var enTarget = '/Tenniskb-5 Pillars/article.html?p=' + encodeURIComponent(enFile) + '&lang=en';
       var toggles = document.querySelectorAll('[data-lang-toggle], .md-select__link[hreflang="en"]');
       toggles.forEach(function(t){ t.setAttribute('href', enTarget); });

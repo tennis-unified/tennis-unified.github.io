@@ -27,7 +27,7 @@ Axial separation is the angular difference between the hips and the shoulders.
 
 | Observation | Biomechanical Failure | Result | Corrective Strategy |
 | :--- | :--- | :--- | :--- |
-| "Block" rotation | Lack of axial separation | Low racket speed; lack of "whip". | **Segmented Rotation Drill:** Rotate hips first $\rightarrow$ pause $\rightarrow$ rotate shoulders. |
+| "Block" rotation | Lack of axial separation | Low racket speed; lack of "whip". | **Segmented Rotation Drill:** Rotate hips first → pause → rotate shoulders. |
 | Lower back pain | Lumbar rotation | Energy is created by twisting the lower spine. | **Thoracic Mobility Work:** Foam rolling the upper back; "Cat-Cow" stretches. |
 | Limited backswing | Stiff thoracic spine | Inability to store elastic energy. | **Open-Book Stretch:** Lying on side and rotating the arm open. |
 

@@ -12,7 +12,7 @@ ISR là chuyển động mà xương cánh tay xoay vào trong, đưa đầu v�
 
 ### 2. Liên Kết Sấp Cẳng Tay
 Theo sau ISR, cẳng tay thực hiện động tác **sấp** (xoay lòng bàn tay ra ngoài/xuống dưới).
-*   **Trình tự:** ISR $\rightarrow$ Sấp cẳng tay.
+*   **Trình tự:** ISR → Sấp cẳng tay.
 *   **Kết quả:** Sự xoay kết hợp này cho phép vợt "quất" xuyên qua vùng tiếp xúc, tối đa hóa xung lực truyền vào quả bóng.
 
 ## "Quất Roi" So Với "Đẩy"
