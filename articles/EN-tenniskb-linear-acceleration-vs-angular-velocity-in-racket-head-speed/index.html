@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <meta name="description" content="TennisKB — Linear Acceleration vs. Angular Velocity in Racket-Head Speed | Tennis Future Lab">
+
+        <meta name="author" content="Henry Pham">
+
+          <link rel="canonical" href="https://tennis-unified.github.io/en/articles/EN-tenniskb-linear-acceleration-vs-angular-velocity-in-racket-head-speed/">
+    <link rel="alternate" href="/en/articles/EN-tenniskb-linear-acceleration-vs-angular-velocity-in-racket-head-speed/" hreflang="en">
+
+          <link rel="alternate" href="/vi/articles/VI-tenniskb-linear-acceleration-vs-angular-velocity-in-racket-head-speed/" hreflang="vi">
+
+      <link rel="icon" href="/assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+
+        <title>Linear Acceleration vs. Angular Velocity in Racket-Head Speed - Tennis Unified Library</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
+
+<script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+
+
+<link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
+<link rel="stylesheet" href="/assets/css/site.css"><script src="/assets/javascripts/lang-toggle.js" defer></script><script src="/assets/javascripts/darkmode.js" defer></script><script id="MathJax" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script>window.MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"]],processEscapes:true,processEnvironments:true},loader:{lineWidth:128}};</script>
+</head>
+
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<!-- FLATTENED-TOP-NAV-START -->
+<div class="tu-topnav">
+  <a href="/" class="tu-nav-item" title="Home"><span class="tu-nav-emoji">🏠</span><span class="tu-nav-text">Home</span></a>
+  <a href="/fundamentals/" class="tu-nav-item" title="Fundamentals"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Fundamentals</span></a>
+  <a href="/doubles/" class="tu-nav-item" title="Doubles"><span class="tu-nav-emoji">👥</span><span class="tu-nav-text">Doubles</span></a>
+  <a href="/stroke-analysis/" class="tu-nav-item" title="Stroke Analysis"><span class="tu-nav-emoji">🧠</span><span class="tu-nav-text">Stroke Analysis</span></a>
+  <a href="/coach-video-library/" class="tu-nav-item" title="Coach Library"><span class="tu-nav-emoji">🎓</span><span class="tu-nav-text">Coach Library</span></a>
+  <a href="/tennis-video-library/" class="tu-nav-item" title="Video Library"><span class="tu-nav-emoji">🎬</span><span class="tu-nav-text">Video Library</span></a>
+  <a href="/tennis-technical-reference/" class="tu-nav-item" title="Technical Reference"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Technical Reference</span></a>
+  <a href="/tnkb/" class="tu-nav-item" title="Knowledgebase"><span class="tu-nav-emoji">💡</span><span class="tu-nav-text">Knowledgebase</span></a>
+  <a href="/tennis-evolution/" class="tu-nav-item" title="Tennis Evolution"><span class="tu-nav-emoji">⚡</span><span class="tu-nav-text">Tennis Evolution</span></a>
+  <a href="/blog/" class="tu-nav-item" title="Blog"><span class="tu-nav-emoji">📝</span><span class="tu-nav-text">Blog</span></a>
+  <a href="/book/" class="tu-nav-item" title="Master Book"><span class="tu-nav-emoji">📕</span><span class="tu-nav-text">Master Book</span></a>
+  <a href="/books/" class="tu-nav-item" title="Books Catalog"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Books Catalog</span></a>
+  <a href="/en/articles/" class="tu-nav-item" title="Tennis Fundamentals"><span class="tu-nav-emoji">🎯</span><span class="tu-nav-text">Tennis Fundamentals</span></a>
+  <a href="/Tenniskb-5 Pillars/" class="tu-nav-item" title="5 Pillars"><span class="tu-nav-emoji">🏛️</span><span class="tu-nav-text">5 Pillars</span></a>
+  <a href="/vi/" class="tu-nav-item tu-nav-lang" data-lang-toggle title="Switch to Vietnamese"><span class="tu-nav-emoji">🌐</span><span class="tu-nav-text">VI</span></a>
+  <button class="tu-nav-item tu-nav-darkmode" title="Dark Mode" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button>
+</div>
+<!-- FLATTENED-TOP-NAV-END -->
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+
+        <a href="#content" class="md-skip">
+          Skip to content
+        </a>
+
+    </div>
+    <div data-md-component="announce">
+
+    </div>
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="/" title="Tennis Unified Library" class="md-header__button md-logo" aria-label="Tennis Unified Library" data-md-component="logo">
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+  </nav>
+</header>
+
+<div class="md-container" data-md-component="container">
+
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+
+<!-- TP-BREADCRUMB-START -->
+<p><a href="/">🏠 Home</a> &nbsp;›&nbsp; <a href="/en/articles/">Tennis Fundamentals</a> &nbsp;›&nbsp; <a href="/en/articles/biomechanics/">Applied Biomechanics & Kinetics</a> &nbsp;›&nbsp; Linear Acceleration vs. Angular Velocity in Racket-Head Speed</p>
+<hr />
+<!-- TP-NAV-END -->
+
+<h1 id="content">Linear Acceleration vs. Angular Velocity in Racket-Head Speed</h1>
+
+
+
+<blockquote>
+<p><strong>PRO CUE:</strong> Racket-head speed is a hybrid currency. It is minted twice — once in linear translation of the body mass toward the ball, and once in angular whip around rotating axes. The player who owns only one engine plays with half a swing.</p>
+</blockquote>
+<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;"><iframe src="https://www.youtube-nocookie.com/embed/cMvjChV4I-g" title="Maximize Your Forehand Power | Physics of Tennis Podcast Clip" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<p><em>Video: Maximize Your Forehand Power | Physics of Tennis Podcast Clip (Chris Lewit).</em></p>
+<h2>Video Analysis</h2>
+<p><strong>Instructional Video:</strong> [cMvjChV4I-g]</p>
+<hr />
+<h2>1. Executive Overview</h2>
+<p>Every high-velocity stroke in tennis is the arithmetic sum of two distinct motion engines operating on the same racket. The first engine is <strong>linear</strong>: the forward and upward translation of the player's mass and the hitting arm along the ball's flight path, governed by force applied over distance ($F = m \cdot a$ in its simplest reading). The second engine is <strong>angular</strong>: the rotation of the pelvis, thorax, shoulder, forearm, and hand around successive axes, governed by torque applied against rotational inertia ($\tau = I \cdot \alpha$). The racket head's terminal velocity is the vector composition of both.</p>
+<p>The practical stakes of this article are enormous. Players who over-rely on the linear engine produce heavy but slow, predictable strokes — "arming" the ball with push-driven pace that plateaus early. Players who over-rely on the angular engine produce whippy, inconsistent swings whose timing window collapses under pressure. Elite stroke production is not a choice between the two engines; it is the precisely sequenced superposition of both, with each engine dominating a different phase of the swing and each feeding the other through the kinetic chain.</p>
+<p>This article establishes the physical vocabulary of the two engines, quantifies their respective contributions to racket-head speed, maps them onto the stroke timeline, and provides the diagnostic matrix and training protocols needed to balance them.</p>
+<h2>2. Physical Foundations: Two Kinds of Motion, Two Kinds of Force</h2>
+<h3>2.1 Linear Acceleration</h3>
+<p>Linear (translational) motion describes movement along a straight path. Newton's Second Law defines its engine:</p>
+<p>$$F_{net} = m \cdot a_{linear}$$</p>
+<p>In tennis terms, when the player drives off the ground and pushes the hitting-side hip, shoulder, and hand toward the contact point, the body's Ground Reaction Force ($GRF$) is converted into forward momentum that the racket inherits. The linear contribution to racket-head speed is approximately the speed of the hand at the moment of impact. A hand moving at $4\text{–}6 \text{ m/s}$ forward injects that entire velocity directly into the frame.</p>
+<p>Linear motion also determines <strong>contact depth geometry</strong>: translating the racket through the ball rather than merely swinging across it extends the effective "push window," which stabilizes trajectory and adds penetration to the ball flight.</p>
+<h3>2.2 Angular Velocity</h3>
+<p>Angular (rotational) motion describes movement around an axis, quantified in degrees or radians per second. Its engine is torque:</p>
+<p>$$\tau = I \cdot \alpha \quad \Rightarrow \quad \alpha = \frac{\tau}{I}$$</p>
+<p>where $I$ is the moment of inertia — the rotational resistance of the segment-plus-racket system. The critical insight is the arc-to-speed conversion:</p>
+<p>$$v = \omega \cdot r$$</p>
+<p>A modest angular velocity ($\omega$) acting at a long radius ($r$) from the axis produces a large tangential speed at the racket head. With the hand as pivot at roughly $r \approx 0.6\text{–}0.7 \text{ m}$ (hand to racket-head center), a hand rotation of only $30 \text{ rad/s}$ (~1,700°/s) already generates $18\text{–}21 \text{ m/s}$ of tangential racket-head speed — several times the linear hand speed itself. This is why rotation, not push, is the dominant source of elite racket-head velocity.</p>
+<h3>2.3 The Superposition Principle</h3>
+<p>At impact, the racket head's velocity is the vector sum:</p>
+<p>$$\vec{v}<em>{racket} = \vec{v}</em>{hand,linear} + (\vec{\omega} \times \vec{r}_{hand \to head})$$</p>
+<p>The two engines are not additive scalars; they add as vectors. Their alignment matters. When the tangential velocity vector of the rotating system points through the contact zone at the same instant the linear vector does, the sum is maximized. When they are misaligned — rotation peaking too early, or linear drive finishing late — the vector sum shrinks even though both engines individually "fired."</p>
+<h3>2.4 The Historical Debate: From Linear Dogma to Rotational Science</h3>
+<p>The tension between the two engines has a documented coaching history. Classical tennis instruction of the mid-twentieth century treated the linear engine as the whole story: "step into the ball, transfer your weight, hit through the line." That model produced mechanically honest but speed-capped strokes, because it treated the body as a translating cart rather than a rotating machine. The modern performance era — driven by 3D motion capture of elite professionals — inverted the hierarchy: high-speed forehands and serves were shown to derive their dominant share of racket-head velocity from serial rotations, with weight transfer repositioned as a <em>delivery platform</em> rather than the propulsion source itself.</p>
+<p>The scientific resolution is neither camp's victory but their superposition. Force-plate and marker-based kinematic studies of professional groundstrokes consistently show that the linear center-of-mass drive establishes the platform and the depth of the contact window, while the rotational cascade — pelvic rotation, thoracic rotation, humeral internal rotation — supplies the terminal velocity magnitude. Coaches who teach one engine as "the truth" produce players who plateau; coaches who teach the <em>sequencing</em> between the engines produce players who keep compounding speed for years.</p>
+<h3>2.5 The Vector Problem: Why More Force Does Not Always Mean More Speed</h3>
+<p>Because the two velocity contributions add as vectors, raw engine output is not the performance variable — the <em>angle between the engines at the contact instant</em> is. Consider a hand translating forward at $5 \text{ m/s}$ while the wrist-driven tangential velocity of the racket head is $20 \text{ m/s}$:</p>
+<ul>
+<li><strong>Perfectly aligned</strong> (tangential vector pointing through the contact zone along the target line): the head speed approaches $25 \text{ m/s}$ in the intended direction.</li>
+<li><strong>Misaligned by 60°:</strong> the resultant magnitude drops to roughly $22 \text{ m/s}$, and — more damaging — about $10 \text{ m/s}$ of it points off the target line, degrading both pace and placement.</li>
+<li><strong>Misaligned by 90°:</strong> the linear contribution adds nothing to impact speed; it merely drags the contact point sideways through the ball.</li>
+</ul>
+<p>This is the mathematical root of the "hit through the ball" instruction: it is a vector-alignment cue, not a force cue. The alignment requirement explains why elite players protect their contact point geometry so fiercely — a late or drifting contact point does not merely shorten the lever (Section 5.1), it rotates the entire tangential vector away from the target line.</p>
+<h2>3. The Twin Engines: How Each Engine Actually Works</h2>
+<h3>3.1 The Linear Engine: Mass Delivery</h3>
+<p>The linear engine is a whole-body event:</p>
+<ol>
+<li><strong>Ground Drive:</strong> The legs push against the court; $GRF_{vertical}$ of $1.5\text{–}2.5\times$ body weight launches the mass up-and-forward.</li>
+<li><strong>Momentum Transfer:</strong> The pelvis and trunk translate the launched mass along the target line, converting leg extension into center-of-mass (COM) displacement of $15\text{–}40 \text{ cm}$ toward contact.</li>
+<li><strong>Hand Inheritance:</strong> The hitting arm, acting as a semi-rigid link, inherits a fraction of COM velocity; the hand arrives at the contact zone already moving $3\text{–}6 \text{ m/s}$.</li>
+</ol>
+<p>The linear engine's strengths: it is rhythmically stable, tolerant of timing error, robust under fatigue, and directly controls shot depth and weight-of-shot. Its ceiling, however, is low — human translation speed is limited by leg drive, and no player pushes their hand to $30 \text{ m/s}$.</p>
+<h3>3.2 The Angular Engine: The Rotational Multiplier</h3>
+<p>The angular engine is a cascade of rotations across four principal axes, each accelerating the next:</p>
+<ol>
+<li><strong>Pelvic Axis (vertical):</strong> Hip rotation reaching $400\text{–}600 \text{ °/s}$, then decelerating (micro-stop) to pass angular momentum upward.</li>
+<li><strong>Thoracic Axis (vertical/spiral):</strong> Shoulder-line rotation at $600\text{–}900 \text{ °/s}$, fed by the pelvic stop through the stretched oblique slings.</li>
+<li><strong>Humeral Long Axis:</strong> Internal rotation of the upper arm exceeding $1,500\text{–}3,000 \text{ °/s}$ — the single largest velocity multiplier in the serve and modern forehand.</li>
+<li><strong>Forearm/Hand Axis:</strong> Pronation, ulnar deviation release, and radiocarpal flexion in the final $50 \text{ ms}$, adding the terminal snap.</li>
+</ol>
+<p>Each successive axis is lighter and spins faster than the last — the classic proximal-to-distal velocity summation described in Article 019. Because each rotation happens at an ever-longer effective radius from the body's center (pelvis → shoulder → hand → racket head), each converts its angular velocity into progressively larger tangential speeds at the impact point.</p>
+<h3>3.4 A Worked Numerical Example: Composing a 30 m/s Forehand</h3>
+<p>Assembling the engines quantitatively shows how elite pace is actually manufactured. Take a professional forehand with a target racket-head speed of $30 \text{ m/s}$ (~108 km/h at the head — producing roughly 120+ km/h of ball speed after stringbed restitution):</p>
+<ol>
+<li><strong>Linear inheritance:</strong> COM translation of $0.30 \text{ m}$ over the final $0.25 \text{ s}$ delivers a hand speed of $4.5 \text{ m/s}$ into the contact zone. Direct contribution: $4.5 \text{ m/s}$ (15%).</li>
+<li><strong>Pelvic tier:</strong> hip rotation of $500 \text{ °/s}$ at an effective radius of $0.15 \text{ m}$ (axis to hitting-side hip) contributes tangential velocity that the trunk carries upward; its compounded effect on shoulder-line speed is worth $\approx 4 \text{ m/s}$ of head speed (13%).</li>
+<li><strong>Thoracic tier:</strong> shoulder-line rotation of $800 \text{ °/s}$ at a radius of $0.45 \text{ m}$ (axis to hand) yields tangential hand speed of $\approx 6.3 \text{ m/s}$, adding $\approx 7 \text{ m/s}$ of compounded head velocity (23%).</li>
+<li><strong>Humeral internal rotation tier:</strong> ISR at $2{,}500 \text{ °/s}$ ($\approx 43.6 \text{ rad/s}$) acting at the $0.65 \text{ m}$ hand-to-head radius produces the terminal surge: $\approx 14 \text{ m/s}$ (47%).</li>
+</ol>
+<p>Total: $4.5 + 4 + 7 + 14 \approx 29.5 \text{ m/s}$. The distribution confirms the dominance of the distal rotational tiers — and explains why a player with a mediocre linear drive but a superb ISR snap can out-pace a strong "pusher" by a wide margin, and why the same player loses almost everything when the wrist locks and ISR is suppressed.</p>
+<h3>3.3 Why Rotation Wins on Ceiling</h3>
+<p>The tangential-speed law $v = \omega r$ explains the asymmetry. Rotation is cheap to accelerate (small distal masses have small $I$), scales brutally (doubling $\omega$ doubles tangential speed at fixed radius), and can be multiplied through serial axes. Linear translation cannot be multiplied — there is only one body mass and one ground. Hence elite forehands derive roughly $70\text{–}80\%$ of impact speed from rotational sources and $20\text{–}30\%$ from linear translation, with the exact ratio varying by stance, ball height, and tactical intent.</p>
+<h2>4. Segmental Contribution Matrix</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Kinetic Segment</th>
+<th style="text-align: left;">Motion Engine</th>
+<th style="text-align: left;">Biomechanical Action</th>
+<th style="text-align: left;">Approx. Contribution to Racket-Head Speed</th>
+<th style="text-align: left;">Peak Phase Window</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Legs / GRF</strong></td>
+<td style="text-align: left;">Linear (primary) + Angular (feed)</td>
+<td style="text-align: left;">Vertical &amp; lateral drive; $F_z$ launch</td>
+<td style="text-align: left;">15% – 20%</td>
+<td style="text-align: left;">$t_0 \to t_1$ (Loading → Drive)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pelvis</strong></td>
+<td style="text-align: left;">Angular</td>
+<td style="text-align: left;">Hip rotation 400–600 °/s + micro-stop</td>
+<td style="text-align: left;">15% – 20%</td>
+<td style="text-align: left;">$t_1 \to t_2$ (Uncoiling)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Trunk / Thorax</strong></td>
+<td style="text-align: left;">Angular</td>
+<td style="text-align: left;">Shoulder-line rotation 600–900 °/s</td>
+<td style="text-align: left;">15% – 20%</td>
+<td style="text-align: left;">$t_2 \to t_3$ (X-Factor release)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Shoulder / Humerus</strong></td>
+<td style="text-align: left;">Angular (dominant)</td>
+<td style="text-align: left;">Internal rotation 1,500–3,000 °/s</td>
+<td style="text-align: left;">25% – 35%</td>
+<td style="text-align: left;">$t_3 \to t_4$ (Acceleration)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Forearm / Hand</strong></td>
+<td style="text-align: left;">Angular + Linear</td>
+<td style="text-align: left;">Pronation, radiocarpal snap; hand translation</td>
+<td style="text-align: left;">5% – 10%</td>
+<td style="text-align: left;">$t_4 \to$ Impact (Terminal)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Whole-body translation</strong></td>
+<td style="text-align: left;">Linear</td>
+<td style="text-align: left;">COM drive toward contact; depth &amp; penetration</td>
+<td style="text-align: left;">20% – 30% (vector-mixed throughout)</td>
+<td style="text-align: left;">$t_1 \to$ Impact</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>MECHANICAL DEFECT WARNING:</strong> The percentages are vector contributions, not independent bonuses. A rotational engine fired on a static, non-translating base loses tangential accuracy at the contact point; a linear drive fired without rotation produces flat, slow pace. Both engines must share the same contact instant.</p>
+</blockquote>
+<h2>5. Velocity Mathematics: Radius, Inertia, and the Whip Effect</h2>
+<h3>5.1 Radius of Gyration Management</h3>
+<p>Because $v = \omega r$, the effective radius from each rotation axis to the racket head is a performance variable in its own right:</p>
+<ul>
+<li><strong>Extended hit structure:</strong> A long, extended arm at contact places the racket head far from the shoulder axis ($r_{max}$), converting the same angular velocity into greater tangential speed. Late, collapsed contact shortens $r$ and silently bleeds speed even when rotation timing is perfect.</li>
+<li><strong>Double-pendulum whip:</strong> The arm-plus-racket system behaves as a double pendulum. When the proximal link (upper arm) decelerates abruptly, conservation of angular momentum forces the distal link (racket) to accelerate — the whip effect quantified in Article 021's radius-shortening analysis. Racket-head speed can momentarily exceed hand speed by a factor of $3\text{–}5\times$.</li>
+</ul>
+<h3>5.2 Moment of Inertia: The Acceleration Tax</h3>
+<p>Rotational acceleration is inversely proportional to moment of inertia ($\alpha = \tau / I$):</p>
+<ul>
+<li><strong>Bent-elbow takeback</strong> (low $I$): the arm-racket system spins up fast — high accelerability, but a shorter lever at contact.</li>
+<li><strong>Straight-arm modern takeback</strong> (higher $I$): slower to spin up, but once rotating, stores more angular momentum and delivers a longer-radius, heavier ball at contact.</li>
+</ul>
+<p>This is the mechanical trade-off behind the Nadaral-style straight-arm forehand versus the compact double-bend forehand: peak accelerability versus peak terminal radius.</p>
+<h3>5.3 Stance Modulates the Engine Mix</h3>
+<ul>
+<li><strong>Open stance:</strong> Maximizes the angular engine (pelvic and thoracic rotation around the vertical axis) but limits linear drive; compensation comes from lateral $GRF$ ($F_x$) loading the outside leg as a rotational anchor.</li>
+<li><strong>Closed/neutral stance:</strong> Maximizes the linear engine ($F_y$ anterior-posterior drive along the target line) with rotation still supplying the multiplier.</li>
+<li><strong>Defensive positions:</strong> When the base is compromised, the player consciously shifts toward linear push-plus-shoulder-rotation to preserve depth, sacrificing peak speed for contact reliability.</li>
+</ul>
+<h2>6. Stroke Phase Timeline: When Each Engine Dominates</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Phase</th>
+<th style="text-align: left;">Time Window (typical forehand)</th>
+<th style="text-align: left;">Dominant Engine</th>
+<th style="text-align: left;">Key Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Load / Unit Turn</strong></td>
+<td style="text-align: left;">$-500 \to -300 \text{ ms}$</td>
+<td style="text-align: left;">Neither (storage)</td>
+<td style="text-align: left;">Coiling; elastic energy stored; COM loads outside leg</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Drive Initiation</strong></td>
+<td style="text-align: left;">$-300 \to -150 \text{ ms}$</td>
+<td style="text-align: left;">Linear</td>
+<td style="text-align: left;">Leg extension; COM translates toward contact; pelvis begins uncoiling</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pelvic Snap &amp; Micro-Stop</strong></td>
+<td style="text-align: left;">$-150 \to -80 \text{ ms}$</td>
+<td style="text-align: left;">Angular (proximal)</td>
+<td style="text-align: left;">Pelvis peaks and brakes; momentum passes to thorax</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Thoracic Release</strong></td>
+<td style="text-align: left;">$-100 \to -40 \text{ ms}$</td>
+<td style="text-align: left;">Angular</td>
+<td style="text-align: left;">Shoulder line accelerates; arm lags into the slot</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Humeral ISR Snap</strong></td>
+<td style="text-align: left;">$-50 \to 0 \text{ ms}$</td>
+<td style="text-align: left;">Angular (distal)</td>
+<td style="text-align: left;">Internal rotation peaks ~50 ms pre-impact; racket head whips</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Impact</strong></td>
+<td style="text-align: left;">$0 \text{ ms}$</td>
+<td style="text-align: left;">Both (superposed)</td>
+<td style="text-align: left;">Vector sum through contact; core isometric brace locks the frame</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Follow-Through Deceleration</strong></td>
+<td style="text-align: left;">$0 \to +150 \text{ ms}$</td>
+<td style="text-align: left;">Eccentric braking</td>
+<td style="text-align: left;">Angular momentum absorbed; pronation acts as passive decelerator</td>
+</tr>
+</tbody>
+</table>
+<p>The timeline reveals the core coaching truth: <strong>linear first, angular last</strong>. Translation sets the stage and the geometry; rotation supplies the terminal explosion. Players who invert this order — spinning first, translating during the swing — arrive at contact with rotation already spent and the contact point drifting.</p>
+<h3>6.1 Stance-Specific Timelines</h3>
+<p>The general timeline above bends with stance. In a <strong>neutral/closed stance</strong>, the linear drive phase lengthens — the anterior-posterior $F_y$ push has a longer runway — and translation contributes up to $30\text{–}35\%$ of head speed, which is why weight-transfer teaching worked acceptably in the classic era's predominantly square stances. In the <strong>modern open stance</strong>, the linear runway collapses to a lateral brace: translation's contribution drops toward $15\text{–}20\%$, almost all of it vertical (lift from leg extension), while the angular tiers expand to compensate. This is not a loss but a trade — the open stance buys earlier pelvic ignition (rotation can begin before the ball arrives) and superior recovery geometry, at the cost of demanding a more perfectly executed rotational cascade.</p>
+<p>In <strong>defensive and on-the-run contacts</strong>, both engines degrade, but not equally. Linear drive survives relatively well (the player can still push), while the rotational cascade loses its proximal anchor — an unstable base cannot transmit pelvic torque without leaking. Elite defenders therefore consciously revert to a linear-dominant "lift-and-extend" pattern with high net clearance, accepting reduced pace to preserve depth and court position.</p>
+<h2>7. Clinical Diagnostic Matrix</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Mechanical Breakdown</th>
+<th style="text-align: left;">Biomechanical Cause</th>
+<th style="text-align: left;">Clinical Manifestation</th>
+<th style="text-align: left;">Corrective Strategy &amp; Drill</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Push-Only Stroke (linear-dominant)</strong></td>
+<td style="text-align: left;">No pelvic/torso separation; arm translation substitutes for rotation</td>
+<td style="text-align: left;">Heavy but slow ball; plateaued pace; elbow flexor strain</td>
+<td style="text-align: left;"><strong>Wall-Angle Rotation Drill:</strong> Hit from a fixed open stance emphasizing hip-shoulder separation while the arm stays passive</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Spin-Only Stroke (angular-dominant, no drive)</strong></td>
+<td style="text-align: left;">No COM translation; rotation fired on a static base</td>
+<td style="text-align: left;">Whippy, inconsistent depth; contact point drifting behind</td>
+<td style="text-align: left;"><strong>Step-In Countdown Drill:</strong> Force a lateral step into every feed before the swing begins</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Early Rotation (engine order inverted)</strong></td>
+<td style="text-align: left;">Pelvis spins fully open before the arm lags; micro-stop missing</td>
+<td style="text-align: left;">Ball spraying long/wide; lost X-Factor stretch</td>
+<td style="text-align: left;"><strong>45° Checkpoint Drill:</strong> Cone limits pelvic rotation at contact to 45°</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collapsed Hit Structure (radius loss)</strong></td>
+<td style="text-align: left;">Elbow tucked, bent wrist at contact; $r$ shortened</td>
+<td style="text-align: left;">Speed dies despite good body rotation</td>
+<td style="text-align: left;"><strong>Long-Lever Extension Drill:</strong> Shadow swings with conscious arm extension through the contact zone</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Late Linear Drive</strong></td>
+<td style="text-align: left;">Legs finish extending after impact</td>
+<td style="text-align: left;">Ball lacks penetration; player finishes off-balance</td>
+<td style="text-align: left;"><strong>Drive-Then-Hit Drill:</strong> Count "drive" aloud at leg push, 200 ms before ball contact</td>
+</tr>
+</tbody>
+</table>
+<h2>8. Training Protocols for Engine Balance</h2>
+<ol>
+<li><strong>Shadow Sequencing with Temporal Cues:</strong> Perform shadow strokes with a three-beat count — "load (1), drive (2), snap (3)" — enforcing the linear-before-angular order at match swing speed. 3 sets × 10 reps per stroke.</li>
+<li><strong>Resisted Linear Drive:</strong> Sprint-launch lateral movements with a resistance band anchored behind the player, exaggerating COM translation so the linear engine's contribution becomes proprioceptively loud.</li>
+<li><strong>Medicine-Ball Rotational Throws (2–3 kg):</strong> Side-on chest-pass throws and open-stance rotary throws train the pelvic-to-thoracic momentum handoff — the angular engine's ignition sequence — without racket-specific timing demands.</li>
+<li><strong>Short-Lever / Long-Lever Contrast Swings:</strong> Alternate swings gripping the throat (short radius, high $\omega$ demand) with swings gripping the butt cap with full extension (long radius). This calibrates the player's feel for the $v = \omega r$ trade-off.</li>
+<li><strong>Constraint-Ladder Feeds:</strong> Coach feeds alternate open-stance (angular-biased) and closed-stance (linear-biased) balls at identical depth, forcing the player to consciously re-weight the two engines mid-rally.</li>
+<li><strong>Slow-Motion Whip Repetitions:</strong> 25% speed swings filmed from face-on and rear views, verifying that hip rotation peaks before shoulder rotation and shoulder rotation before humeral internal rotation — the summation timing audit of Article 039.</li>
+<li><strong>Flywheel and Cable Rotational Overload:</strong> Rotational flywheel devices and cable chops with abrupt eccentric stops overload the micro-stop deceleration event itself — the moment that transfers pelvic momentum to the thorax. 4 sets × 6 explosive reps with maximal braking intent.</li>
+<li><strong>Metronome-Timed Rally Blocks:</strong> Rally at 60 balls/minute with a metronome, forcing the player to compress the full engine sequence into a fixed tempo; tempo pressure exposes which engine the player defaults to under time stress.</li>
+</ol>
+<h3>8.1 Progression and Testing Benchmarks</h3>
+<p>Engine balance should be measured, not assumed. A practical quarterly test battery:</p>
+<ul>
+<li><strong>Linear benchmark:</strong> shadow COM drive measured by a phone accelerometer taped to the hip — target peak forward acceleration of $6\text{–}10 \text{ m/s}^2$ without arm involvement.</li>
+<li><strong>Angular benchmark:</strong> maximal-effort shadow ISR speed measured by a wrist-worn IMU — target $\geq 2{,}000 \text{ °/s}$ for developed juniors and professionals.</li>
+<li><strong>Integration benchmark:</strong> radar or app-measured ball speed on a standardized feed, compared across open- and closed-stance blocks; a gap greater than $15\%$ between stances flags an under-developed engine in the weaker stance.</li>
+</ul>
+<h2>9. Equipment Interaction: Swingweight, Length, and the Engine Mix</h2>
+<p>Racket physics interact asymmetrically with the two engines:</p>
+<ul>
+<li><strong>Swingweight (rebound weight / polar inertia $I_{racket}$):</strong> A higher swingweight resists the angular engine directly (slower spin-up, $\alpha = \tau/I$) but rewards it — once rotating, the higher-inertia frame transfers more momentum at impact. Linear translation is nearly indifferent to swingweight; a push moves any frame.</li>
+<li><strong>Length and balance:</strong> A longer or head-light lever extends $r$ (rewarding angular players with more tangential speed at matched $\omega$), while head-heavy balances tax the angular engine and slightly assist the linear push feel.</li>
+<li><strong>Grip position (choke up vs. butt cap):</strong> Choking up shortens the lever, lowers $I$, and raises accelerability — the child's and junior's natural solution; full-length grip maximizes terminal radius for the developed angular engine.</li>
+<li><strong>Practical calibration:</strong> Players re-engineering their strokes should retest swingweight after mechanic changes — a rotation-dominant pattern typically tolerates $+20\text{–}30 \text{ kg·cm}^2$ more swingweight than a linear-push pattern before timing degrades.</li>
+</ul>
+<h2>10. Integration: The Unified Speed Equation and Cross-References</h2>
+<p>Racket-head speed is not a single technique but a superposition discipline:</p>
+<p>$$v_{impact} = \underbrace{\vec{v}<em>{COM \to hand}}</em>{\text{Linear engine}} \; + \; \underbrace{\omega_{pelvis} r_{pelvis} + \omega_{thorax} r_{thorax} + \omega_{humerus} r_{humerus} + \omega_{hand} r_{hand}}_{\text{Angular cascade (serial multipliers)}}$$</p>
+<p>The coaching mandate is sequencing discipline: <strong>the linear engine opens the window; the angular cascade fills it.</strong> Linear translation fixes the contact geometry and depth; the rotational cascade — timed by the micro-stop handoffs of Article 004/012 and multiplied by the long-axis snap of Article 014 — delivers terminal velocity into that window.</p>
+<h3>10.1 The Engine-Balance Audit Checklist</h3>
+<p>A five-point checklist for any stroke re-engineering project:</p>
+<ol>
+<li><strong>Does the linear phase complete before the angular cascade ignites?</strong> (Video: COM peak velocity should occur at or before pelvic peak rotation.)</li>
+<li><strong>Is the contact radius maximized?</strong> (Video from the rear: elbow extension and wrist structure at impact.)</li>
+<li><strong>Are the micro-stops present?</strong> (Pelvic and thoracic deceleration events visible — no continuous spinning through contact.)</li>
+<li><strong>Is the vector aligned?</strong> (Face-on video: racket-head path passes through the contact zone along the intended ball line, not across it.)</li>
+<li><strong>Do both engines fire inside the same 10 ms window at impact?</strong> (High-frame-rate film of the final 100 ms.)</li>
+</ol>
+<p>Players who pass all five checks own the full speed equation; players who fail two or more should target the specific engine deficit identified in Sections 7–8 rather than adding generic "swing faster" volume.</p>
+<p><strong>Cross-references:</strong> Article 003 (kinetic chain energy leaks), Article 006 (angular momentum conservation in follow-through), Article 007 (swingweight physics), Article 014 (humeral long-axis rotation), Article 019 (segmental velocity summation), Article 021 (angular momentum and radius shortening), Article 024 (torso stiffness pulse at contact), Article 035 (torque vectors in open vs. closed stances).</p>
+<blockquote>
+<p><strong>MECHANICAL DEFECT WARNING:</strong> Chasing one engine to the exclusion of the other is the most common long-term developmental fault. A linear-only stroke caps out at club pace; an angular-only stroke disintegrates under pressure. Balance is audited, not assumed — film, count the phase windows, and verify both engines fire inside the same 10 milliseconds at impact.</p>
+</blockquote>
+
+
+
+
+
+<!-- TP-NAV-START -->
+<p class="article-nav" style="margin-top:2rem;font-size:0.95rem"><a href="/en/articles/EN-tenniskb-moment-of-inertia-racket-swing-weight-physics/">← Previous</a> &nbsp;|&nbsp; <a href="/en/articles/">🏠 Home</a> &nbsp;|&nbsp; <a href="/en/articles/EN-tenniskb-impulsive-force-and-impact-duration-the-1-inch-pulse/">Next →</a></p>
+<!-- TP-NAV-END -->
+
+</article>
+
+
+
+          </div>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+
+      </main>
+
+        <footer class="md-footer">
+
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+
+    <div class="md-copyright__highlight">
+      © 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.
+    </div>
+
+</div>
+
+    </div>
+  </div>
+</footer>
+
+      </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+
+      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.path", "navigation.expand", "navigation.indexes", "navigation.prune", "navigation.prev_next", "navigation.footer", "search.highlight", "search.suggest", "alternate"], "search": "/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+
+        <script src="/assets/js/extra.js"></script>
+
+<footer class="tu-footer" style="background: var(--card); border-top: 1px solid var(--border); color: var(--ink-muted); padding: 1.5rem 1rem; text-align: center; font-size: 0.92rem; margin-top: 3rem;">
+<div style="font-size: 0.85rem; color: var(--accent-dark);">Trang web này được xây dựng với ❤️ cho cộng đồng quần vợt Việt Nam 🎾 by Henry Phạm</div>
+</footer>
+</body>
+</html>

@@ -1,46 +1,429 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Quiet Eye (QE): Fixing Visual Anchors Before Impact</title>
-  <link rel="stylesheet" href="/assets/styles.css">
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <link rel="alternate" hreflang="en" href="/en/articles/EN-tenniskb-quiet-eye-qe-fixing-visual-anchors-before-impact/">
-  <link rel="alternate" hreflang="vi" href="/vi/articles/VI-tenniskb-quiet-eye-qe-fixing-visual-anchors-before-impact/">
-  <link rel="alternate" hreflang="x-default" href="/en/articles/EN-tenniskb-quiet-eye-qe-fixing-visual-anchors-before-impact/">
+<!doctype html>
+<html lang="vi" class="no-js">
+  <head>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <meta name="description" content="TennisKB — Bài viết 001: Quiet Eye (QE): Fixing Visual Anchors Before Impact | Tennis Future Lab">
+
+        <meta name="author" content="Henry Pham">
+
+          <link rel="alternate" href="/en/articles/EN-tenniskb-quiet-eye-qe-fixing-visual-anchors-before-impact/" hreflang="en">
+
+          <link rel="alternate" href="/vi/articles/VI-tenniskb-quiet-eye-qe-fixing-visual-anchors-before-impact/" hreflang="vi">
+
+      <link rel="icon" href="/assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+
+        <title>Bài viết 001: Quiet Eye (QE): Fixing Visual Anchors Before Impact - Tennis Unified Library</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
+
+<script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+
+
+<link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
+<link rel="stylesheet" href="/assets/css/site.css"><script src="/assets/javascripts/lang-toggle.js" defer></script><script src="/assets/javascripts/darkmode.js" defer></script><script id="MathJax" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script>window.MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"]],processEscapes:true,processEnvironments:true},loader:{lineWidth:128}};</script>
 </head>
-<body>
-<header class="site-header">
-  <nav class="top-nav" aria-label="Main navigation">
-    <a class="brand" href="/vi/">Tennis Future Lab</a>
-    <ul class="nav-links">
-      <li><a href="/vi/">Home</a></li>
-      <li><a href="/vi/articles/">Articles 200</a></li>
-      <li><a href="/vi/about/">About</a></li>
-      <li><a href="/vi/contact/">Contact</a></li>
-    </ul>
-    <button class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<!-- FLATTENED-TOP-NAV-START -->
+<div class="tu-topnav">
+  <a href="/" class="tu-nav-item" title="Home"><span class="tu-nav-emoji">🏠</span><span class="tu-nav-text">Home</span></a>
+  <a href="/fundamentals/" class="tu-nav-item" title="Fundamentals"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Fundamentals</span></a>
+  <a href="/doubles/" class="tu-nav-item" title="Doubles"><span class="tu-nav-emoji">👥</span><span class="tu-nav-text">Doubles</span></a>
+  <a href="/stroke-analysis/" class="tu-nav-item" title="Stroke Analysis"><span class="tu-nav-emoji">🧠</span><span class="tu-nav-text">Stroke Analysis</span></a>
+  <a href="/coach-video-library/" class="tu-nav-item" title="Coach Library"><span class="tu-nav-emoji">🎓</span><span class="tu-nav-text">Coach Library</span></a>
+  <a href="/tennis-video-library/" class="tu-nav-item" title="Video Library"><span class="tu-nav-emoji">🎬</span><span class="tu-nav-text">Video Library</span></a>
+  <a href="/tennis-technical-reference/" class="tu-nav-item" title="Technical Reference"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Technical Reference</span></a>
+  <a href="/tnkb/" class="tu-nav-item" title="Knowledgebase"><span class="tu-nav-emoji">💡</span><span class="tu-nav-text">Knowledgebase</span></a>
+  <a href="/tennis-evolution/" class="tu-nav-item" title="Tennis Evolution"><span class="tu-nav-emoji">⚡</span><span class="tu-nav-text">Tennis Evolution</span></a>
+  <a href="/blog/" class="tu-nav-item" title="Blog"><span class="tu-nav-emoji">📝</span><span class="tu-nav-text">Blog</span></a>
+  <a href="/book/" class="tu-nav-item" title="Master Book"><span class="tu-nav-emoji">📕</span><span class="tu-nav-text">Master Book</span></a>
+  <a href="/books/" class="tu-nav-item" title="Books Catalog"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Books Catalog</span></a>
+  <a href="/vi/articles/" class="tu-nav-item" title="Tennis Fundamentals"><span class="tu-nav-emoji">🎯</span><span class="tu-nav-text">Tennis Fundamentals</span></a>
+  <a href="/vi/Tenniskb-5 Pillars/" class="tu-nav-item" title="5 Trụ Cột"><span class="tu-nav-emoji">🏛️</span><span class="tu-nav-text">5 Trụ Cột</span></a>
+  <a href="/vi/" class="tu-nav-item tu-nav-lang" data-lang-toggle title="Switch to Vietnamese"><span class="tu-nav-emoji">🌐</span><span class="tu-nav-text">VI</span></a>
+  <button class="tu-nav-item tu-nav-darkmode" title="Dark Mode" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button>
+</div>
+<!-- FLATTENED-TOP-NAV-END -->
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+
+        <a href="#content" class="md-skip">
+          Skip to content
+        </a>
+
+    </div>
+    <div data-md-component="announce">
+
+    </div>
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="/" title="Tennis Unified Library" class="md-header__button md-logo" aria-label="Tennis Unified Library" data-md-component="logo">
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
   </nav>
 </header>
-<main class="container">
-  <article class="article-page">
-    <h1 id="content">Quiet Eye (QE): Fixing Visual Anchors Before Impact</h1>
-    <p class="article-meta">Article 041 | Pillar Neurology</p>
-    <div class="article-content">
-      <p>This article is a stub. Full content coming soon.</p>
+
+<div class="md-container" data-md-component="container">
+
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+
+<!-- TP-BREADCRUMB-START -->
+<p><a href="/">🏠 Home</a> &nbsp;›&nbsp; <a href="/vi/articles/">Tennis Fundamentals</a> &nbsp;›&nbsp; <a href="/vi/articles/than-kinh/">Thần Kinh Thể Thao & Nhận Thức</a> &nbsp;›&nbsp; Quiet Eye (QE): Fixing Visual Anchors Before Impact</p>
+<hr />
+<!-- TP-NAV-END -->
+
+<h1 id="content">Quiet Eye (QE): Fixing Visual Anchors Before Impact</h1>
+
+
+<blockquote>
+<p><strong>CUE CHUYÊN GIA:</strong> Quả bóng không đập vào dây — ánh mắt bạn mới đập. Cố định cửa sổ neo; vợt sẽ tìm nó. Giữ 100 ms sau va chạm là dấu hiệu Quiet Eye.</p>
+</blockquote>
+
+<h2>1. Tóm Tắt Điều Hành & Ý Đồ Thể Thao</h2>
+
+<p><strong>Quiet Eye (QE)</strong> là một sự cố định cuối cùng trên một vị trí không gian cụ thể — vùng tiếp xúc dự đoán — bắt đầu trước swing về trước và giữ qua va chạm ~100 ms sau bóng rời. Được phát triển bởi TS. Joan Vickers, QE loại bỏ sự ức chế nhãn cầu (mù thị giác do chuyển động mắt nhanh) trong 5 feet quan trọng bay bóng trước tiếp xúc. Bài viết này định nghĩa giao thức QE, vật lý thị giác làm nó cần thiết, tiêu chí đo lường, và tiến trình huấn luyện từ phòng thí nghiệm đến trận đấu.</p>
+
+<p>Ý định thể thao ba khía cạnh: thứ nhất, làm <strong>hành vi nhìn thành kỹ năng có thể huấn luyện</strong> — không phải thiên phú bẩm sinh. Thứ hai, định nghĩa <strong>cửa sổ không gian cố định</strong> (vùng đường kính 10–15 cm tại độ cao tiếp xúc) làm đích QE. Thứ ba, liên kết thời gian khởi động và kéo dài QE với <strong>chỉ số nhất quán tiếp xúc</strong> (CV radar tốc độ, trải điểm tiếp xúc, tỷ lệ lỗi không cưỡng).</p>
+
+<h2>2. Vật Lý Thị Giác: Tại Sao QE Cần Thiết</h2>
+
+<h3>2.1 Cái Bẫy Độ Trễ</h3>
+
+<ul>
+<li><strong>Thời gian va chạm bóng-vợt:</strong> 4–5 ms (0.004–0.005 s)</li>
+<li><strong>Chuyển hóa + truyền đến V1 thị giác:</strong> 70–100 ms</li>
+<li><strong>Nhận thức có ý thức:</strong> >100 ms</li>
+</ul>
+
+<p><strong>Kết luận:</strong> Kiểm soát tiếp xúc bằng thị giác có ý thức là bất khả thi về sinh lý. Não phải dùng <strong>neo không gian dự báo</strong> — cố định QE — để hướng dẫn mẫu vận động lập trình sẵn.</p>
+
+<h3>2.2 Ức Chế Nhãn Cầu: Cửa Sổ Mù</h3>
+
+<p>Khi mắt làm nhãn cầu (nhảy nhanh), não ức chế đầu vào thị giác để tránh mờ chuyển động. Sự ức chế này kéo dài ~50–100 ms. Vận động viên theo dõi bóng bằng duy truy đến khoảnh khắc cuối, rồi nhãn cầu đến điểm tiếp xúc, là <strong>mù trong 50–100 ms cuối</strong> — chính lúc bóng đi 1–2 mét cuối. QE tránh điều này bằng <strong>ngừng duy truy sớm (5–6 feet ra) và cố định cửa sổ không gian</strong> — không nhãn cầu, không ức chế.</p>
+
+<h3>2.3 Dòng Thời Gian QE</h3>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Pha</th>
+<th style="text-align: left;">Thời Gian</th>
+<th style="text-align: left;">Hành Vi Nhìn</th>
+<th style="text-align: left;">Chức Năng</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">Duy Truy Sớm</td>
+<td style="text-align: left;">Đối thủ tiếp xúc → 5–6 feet ra</td>
+<td style="text-align: left;">Duy truy trơn tru theo bóng</td>
+<td style="text-align: left;">Tính tốc độ/quỹ đạo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ngừng Theo Dõi</td>
+<td style="text-align: left;">5–6 feet trước tiếp xúc</td>
+<td style="text-align: left;">Theo dõi chủ động <strong>DỪNG</strong></td>
+<td style="text-align: left;">Ngăn ức chế nhãn cầu</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cố Định Không Gian</td>
+<td style="text-align: left;">Ngừng theo dõi → tiếp xúc</td>
+<td style="text-align: left;">Hành tâm khóa cửa sổ tiếp xúc</td>
+<td style="text-align: left;">Hướng dẫn chương trình vận động</td>
+</tr>
+<tr>
+<td style="text-align: left;">Giữ Sau Va Chạm</td>
+<td style="text-align: left;">Tiếp xúc → +100 ms</td>
+<td style="text-align: left;">Cố định giữ</td>
+<td style="text-align: left;">Ổn định đầu/thân; phản hồi</td>
+</tr>
+</tbody></table>
+
+<h2>3. Trình Tự Thực Thi Kỹ Thuật (Checkpoints)</h2>
+
+<h3>Kiểm Toán 1 — Định Thời Khởi Động QE</h3>
+
+<p><strong>Kiểm tra:</strong> Eye-tracker di động (Pupil Labs, Tobii) hoặc video tốc độ cao (240 fps) mắt + bóng. Đánh dấu khung ngừng theo dõi (duy truy dừng, cố định bắt đầu). Đánh dấu khung tiếp xúc.</p>
+
+<ul>
+<li><strong>Đỗ:</strong> Khởi động cố định ≥150 ms trước tiếp xúc (≥36 khung ở 240 fps).</li>
+<li><strong>Rò rỉ:</strong> Khởi động cố định <100 ms trước tiếp xúc — neo muộn, duy truy quá lâu.</li>
+</ul>
+
+<h3>Kiểm Toán 2 — Kéo Dài & Ổn Định Cố Định</h3>
+
+<p><strong>Kiểm tra:</strong> Cùng dữ liệu. Đo kéo dài cố định (khởi động → 100 ms sau tiếp xúc). Theo dõi ổn định cố định (biến thiên vị trí nhìn).</p>
+
+<ul>
+<li><strong>Đỗ:</strong> Cố định giữ ≥200 ms tổng (100 ms trước + 100 ms sau). Biến thiên <2° góc nhìn.</li>
+<li><strong>Rò rỉ:</strong> Cố định gãy trước tiếp xúc, hoặc biến thiên >3° — neo không ổn định.</li>
+</ul>
+
+<h3>Kiểm Toán 3 — Chính Xác Cửa Sổ Không Gian</h3>
+
+<p><strong>Kiểm tra:</strong> Lớp phủ con trỏ nhìn trên video. Đo khoảng cách giữa điểm cố định và điểm tiếp xúc thực.</p>
+
+<ul>
+<li><strong>Đỗ:</strong> Cố định trong 5 cm điểm tiếp xúc (cửa sổ không gian căn giữa).</li>
+<li><strong>Rò rỉ:</strong> Cố định >10 cm từ tiếp xúc — dự báo sai, chương trình vận động bị lệch.</li>
+</ul>
+
+<h2>4. Chỉ Số Hiệu Suất & Liều Lượng Huấn Luyện</h2>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Chỉ Số</th>
+<th style="text-align: left;">Đang Phát Triển</th>
+<th style="text-align: left;">Đạt Chuẩn</th>
+<th style="text-align: left;">Nâng Cao</th>
+<th style="text-align: left;">Đẳng Cấp</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">Khởi động QE (trước tiếp xúc)</td>
+<td style="text-align: left;"><100 ms</td>
+<td style="text-align: left;">100–150 ms</td>
+<td style="text-align: left;">150–200 ms</td>
+<td style="text-align: left;">≥200 ms, nhất quán</td>
+</tr>
+<tr>
+<td style="text-align: left;">Kéo dài cố định (tổng)</td>
+<td style="text-align: left;"><150 ms</td>
+<td style="text-align: left;">150–200 ms</td>
+<td style="text-align: left;">200–250 ms</td>
+<td style="text-align: left;">≥250 ms (Federer: ~300 ms)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Giữ sau va chạm</td>
+<td style="text-align: left;">0 ms (nhìn đi)</td>
+<td style="text-align: left;">50 ms</td>
+<td style="text-align: left;">80–100 ms</td>
+<td style="text-align: left;">≥100 ms, chắc như đá</td>
+</tr>
+<tr>
+<td style="text-align: left;">Chính xác không gian</td>
+<td style="text-align: left;">>15 cm sai</td>
+<td style="text-align: left;">10–15 cm</td>
+<td style="text-align: left;">5–10 cm</td>
+<td style="text-align: left;">≤5 cm, mọi cú</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nhất quán tiếp xúc (CV radar)</td>
+<td style="text-align: left;">>10%</td>
+<td style="text-align: left;">7–10%</td>
+<td style="text-align: left;">4–7%</td>
+<td style="text-align: left;"><4%</td>
+</tr>
+</tbody></table>
+
+<h3>Tiến Trình Huấn Luyện QE</h3>
+
+<p>1. <strong>Cố định tĩnh:</strong> Nhìn chăm chú dấu vùng tiếp xúc trên tường, shadow swing. 3×30 giây.</p>
+<p>2. <strong>QE drop-feed:</strong> HLV thả bóng; vận động viên cố định cửa sổ không gian (đánh dấu trên sân), đánh. 20 quả.</p>
+<p>3. <strong>QE ném bóng (giao bóng):</strong> Vận động viên ném, cố định cửa sổ tiếp xúc, giao bóng. Không nhìn bóng sau ném. 15 quả.</p>
+<p>4. <strong>QE bóng sống:</strong> Rally — vận động viên gọi "cố định" lúc ngừng theo dõi. HLV xác minh video.</p>
+<p>5. <strong>QE áp lực:</strong> Mô phỏng tiebreak — giao thức QE bắt buộc mọi điểm.</p>
+<p>6. <strong>Tần suất:</strong> Khối QE 10 phút/ngày. Kiểm toán đầy đủ hàng tuần.</p>
+
+<h2>5. Lỗi Thường Gặp, Nguyên Nhân & Giao Thức Khắc Phục</h2>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Lỗi Quan Sát</th>
+<th style="text-align: left;">Nguyên Nhân Gốc</th>
+<th style="text-align: left;">Giao Thức Khắc Phục</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">Theo dõi bóng đến tận dây</td>
+<td style="text-align: left;">Thói "nhìn bóng" HLV; không nhận thức QE</td>
+<td style="text-align: left;">"Dừng nhìn ở 5 feet." Dấu cửa sổ không gian trên sân; drop-feed ép ngừng theo dõi</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mắt nhảy (nhãn cầu) lúc tiếp xúc</td>
+<td style="text-align: left;">Ngừng theo dõi muộn; não cố gắng đuổi kịp</td>
+<td style="text-align: left;">Cue ngừng sớm hơn; "mắt chờ ở cửa sổ"</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cố định gãy lúc va chạm</td>
+<td style="text-align: left;">Không thói giữ sau va chạm; đầu rút sớm</td>
+<td style="text-align: left;">"Giữ mắt 100 ms sau." Bài đóng băng; đếm "một-nghìn-một" lúc tiếp xúc</td>
+</tr>
+<tr>
+<td style="text-align: left;">Điểm cố định sai (bỏ lỡ tiếp xúc)</td>
+<td style="text-align: left;">Dự báo quỹ đạo kém; không có cue dự báo</td>
+<td style="text-align: left;">Huấn luyện cue dự báo (hông xoay, độ sâu ra sau — Bài 044); bài dự báo</td>
+</tr>
+<tr>
+<td style="text-align: left;">QE tập tốt, thi đấu thất bại</td>
+<td style="text-align: left;">Amygdala hẹp nhìn; lo âu gãy cố định</td>
+<td style="text-align: left;">Thở miễn dịch (Bài 074); neo nghi thức trước điểm; mô phỏng áp lực</td>
+</tr>
+</tbody></table>
+
+<h2>6. Sơ Đồ Chẩn Đoán & Ra Quyết Định</h2>
+
+<p><strong>Với VOR (Bài 042):</strong> QE đòi hỏi đầu ổn định — VOR giữ trường thị giác ổn định khi thân xoay. Không VOR = đầu chuyển = cố định rung.</p>
+
+<p><strong>Với Cảm Nhận Bản Thân (Bài 043):</strong> Cửa sổ không gian định nghĩa trong tọa độ cơ thể. Chính xác cảm nhận bản thân quyết định "cửa sổ" có ánh xạ đến điểm tiếp xúc thực không.</p>
+
+<p><strong>Với Cue Dự Báo (Bài 044):</strong> Định thời ngừng QE được kích hoạt bởi cue động học đối thủ (xoay hông, độ sâu ra sau). Đọc tốt hơn = QE sớm, chính xác hơn.</p>
+
+<p><strong>Với Học Vận Động:</strong> QE là <strong>neo tập trung ngoài cùng</strong> — tập trung ngoài cùng. Nó làm yên Tự 1 (can thiệp vỏ não) bằng cách cho mắt việc vỏ não không thể vi quản lý.</p>
+
+<p><strong>Với Mỏi:</strong> Kéo dài QE ngắn lại dưới mỏi (cạn kiệt nguồn vỏ não). Huấn luyện bền QE = huấn luyện bền nhận thức.</p>
+
+<h2>7. Video Minh Họa & Phân Tích Kỹ Thuật</h2>
+
+<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin: 1.5rem 0;">
+  <iframe src="https://www.youtube-nocookie.com/embed/SwLx2q6qc3I" title="Quiet Eye Technique: Fixing Visual Anchors Before Ball Impact" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
+<p><p><em>Video: Quiet Eye Technique: Fixing Visual Anchors Before Ball Impact (Tennis Hacker).</em></p></p>
+
+<h2>8. Ứng Dụng Liên Ngành & Phối Hợp Đa Trụ Cột</h2>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Điểm Kiểm</th>
+<th style="text-align: left;">Mức 1</th>
+<th style="text-align: left;">Mức 2</th>
+<th style="text-align: left;">Mức 3</th>
+<th style="text-align: left;">Mức 4</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">Định thời ngừng theo dõi</td>
+<td style="text-align: left;">Theo dõi đến tiếp xúc</td>
+<td style="text-align: left;">Dừng 2–3 feet ra</td>
+<td style="text-align: left;">Dừng 5–6 feet ra</td>
+<td style="text-align: left;">Dừng 6+ feet, tự động</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ổn định cố định</td>
+<td style="text-align: left;">Rung, gãy</td>
+<td style="text-align: left;">Giữ đến tiếp xúc</td>
+<td style="text-align: left;">Giữ +50 ms sau</td>
+<td style="text-align: left;">Giữ +100 ms, chắc như đá</td>
+</tr>
+<tr>
+<td style="text-align: left;">Chính xác không gian</td>
+<td style="text-align: left;">>15 cm lệch</td>
+<td style="text-align: left;">10–15 cm</td>
+<td style="text-align: left;">5–10 cm</td>
+<td style="text-align: left;">≤5 cm, mọi cú</td>
+</tr>
+<tr>
+<td style="text-align: left;">Khả năng chịu áp lực</td>
+<td style="text-align: left;">QE thất bại trận đấu</td>
+<td style="text-align: left;">QE hoạt động thấp stress</td>
+<td style="text-align: left;">QE hoạt động cao stress</td>
+<td style="text-align: left;">QE không thể rung, tiebreak</td>
+</tr>
+</tbody></table>
+
+<p>Chấm điểm: 4–7 = kiểm toán QE trượt. 8–11 = rò rỉ định thời/chính xác. 12–14 = QE chức năng, kiểm tra áp lực. 15–16 = thạo thị giác.</p>
+
+<h2>9. Bảng Tự Đánh Giá (Rubric Đa Cấp Độ)</h2>
+
+<p><strong>MỤC TIÊU BUỔI:</strong> QE tự động, ổn định, chính xác dưới áp lực.</p>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Khối</th>
+<th style="text-align: left;">Bài Tập</th>
+<th style="text-align: left;">Liều Lượng</th>
+<th style="text-align: left;">Cue</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">A — Khởi Động (5')</td>
+<td style="text-align: left;">Nhìn chăm chú dấu vùng tiếp xúc tường, shadow swing</td>
+<td style="text-align: left;">3×30 giây</td>
+<td style="text-align: left;">"Mắt chăm, đầu yên"</td>
+</tr>
+<tr>
+<td style="text-align: left;">B — Mẫu Hình (10')</td>
+<td style="text-align: left;">QE drop-feed: HLV thả, cố định cửa sổ, đánh</td>
+<td style="text-align: left;">20 quả (10 FH/10 BH)</td>
+<td style="text-align: left;">"Dừng nhìn 5 feet, chờ tại cửa sổ"</td>
+</tr>
+<tr>
+<td style="text-align: left;">C — Chuyển Giao (10')</td>
+<td style="text-align: left;">Rally, gọi to "CỐ ĐỊNH" lúc ngừng theo dõi</td>
+<td style="text-align: left;">10 phút</td>
+<td style="text-align: left;">"Nghe tiếng mình nói cue"</td>
+</tr>
+<tr>
+<td style="text-align: left;">D — Kiểm Toán (5')</td>
+<td style="text-align: left;">Video mắt: đo khởi động, kéo dài, chính xác, giữ sau</td>
+<td style="text-align: left;">2 clip</td>
+<td style="text-align: left;">"Khởi động ≥150ms? Giữ +100ms? ≤5cm?"</td>
+</tr>
+</tbody></table>
+
+<p><strong>Tần suất:</strong> 10 phút/ngày. <strong>Cổng:</strong> Video cho thấy QE hoàn chỉnh ≥80% cú đánh rally.</p>
+
+<hr />
+
+<p><em>Tham chiếu chéo: Bài 042, 043, 044. Trụ II: Thần Kinh Thể Thao & Kỹ Thuật — TennisKB 200 Bài.</em></p>
+
+<!-- TP-NAV-START -->
+<p class="article-nav" style="margin-top:2rem;font-size:0.95rem"><a href="/vi/articles/VI-tenniskb-biomechanical-efficiency-audits-for-stroke-longevity/">← Trước</a> &nbsp;|&nbsp; <a href="/vi/articles/">🏠 Trang chủ</a> &nbsp;|&nbsp; <a href="/vi/articles/VI-tenniskb-vestibular-ocular-reflex-vor-and-head-stabilization/">Sau →</a></p>
+<!-- TP-NAV-END -->
+
+</article>
+
+
+
+          </div>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+
+      </main>
+
+        <footer class="md-footer">
+
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+
+    <div class="md-copyright__highlight">
+      © 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.
     </div>
-    <nav class="article-nav" aria-label="Article navigation">
-      <a class="prev" href="/vi/articles/VI-tenniskb-biomechanical-efficiency-audits-for-stroke-longevity/">← Prev</a>
-      <a class="home" href="/vi/articles/">Home</a>
-      <a class="next" href="/vi/articles/VI-tenniskb-vestibular-ocular-reflex-vor-and-head-stabilization/">Next →</a>
-    </nav>
-  </article>
-</main>
-<footer class="site-footer">
-  <p>Trang web này được xây dựng với ❤️ cho cộng đồng quần vợt Việt Nam 🎾 by Henry Phạm</p>
+
+</div>
+
+    </div>
+  </div>
 </footer>
-<script src="/search/main.js"></script>
+
+      </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+
+      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.path", "navigation.expand", "navigation.indexes", "navigation.prune", "navigation.prev_next", "navigation.footer", "search.highlight", "search.suggest", "alternate"], "search": "/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+
+        <script src="/assets/js/extra.js"></script>
+
+<footer class="tu-footer" style="background: var(--card); border-top: 1px solid var(--border); color: var(--ink-muted); padding: 1.5rem 1rem; text-align: center; font-size: 0.92rem; margin-top: 3rem;">
+<div style="font-size: 0.85rem; color: var(--accent-dark);">Trang web này được xây dựng với ❤️ cho cộng đồng quần vợt Việt Nam 🎾 by Henry Phạm</div>
+</footer>
 </body>
 </html>

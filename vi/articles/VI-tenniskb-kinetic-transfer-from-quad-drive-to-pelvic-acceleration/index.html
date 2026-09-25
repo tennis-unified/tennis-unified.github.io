@@ -1,46 +1,380 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kinetic Transfer from Quad Drive to Pelvic Acceleration</title>
-  <link rel="stylesheet" href="/assets/styles.css">
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <link rel="alternate" hreflang="en" href="/en/articles/EN-tenniskb-kinetic-transfer-from-quad-drive-to-pelvic-acceleration/">
-  <link rel="alternate" hreflang="vi" href="/vi/articles/VI-tenniskb-kinetic-transfer-from-quad-drive-to-pelvic-acceleration/">
-  <link rel="alternate" hreflang="x-default" href="/en/articles/EN-tenniskb-kinetic-transfer-from-quad-drive-to-pelvic-acceleration/">
+<!doctype html>
+<html lang="vi" class="no-js">
+  <head>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <meta name="description" content="TennisKB — Bài viết 001: Kinetic Transfer from Quad Drive to Pelvic Acceleration | Tennis Future Lab">
+
+        <meta name="author" content="Henry Pham">
+
+          <link rel="alternate" href="/en/articles/EN-tenniskb-kinetic-transfer-from-quad-drive-to-pelvic-acceleration/" hreflang="en">
+
+          <link rel="alternate" href="/vi/articles/VI-tenniskb-kinetic-transfer-from-quad-drive-to-pelvic-acceleration/" hreflang="vi">
+
+      <link rel="icon" href="/assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+
+        <title>Bài viết 001: Kinetic Transfer from Quad Drive to Pelvic Acceleration - Tennis Unified Library</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
+
+<script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+
+
+<link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
+<link rel="stylesheet" href="/assets/css/site.css"><script src="/assets/javascripts/lang-toggle.js" defer></script><script src="/assets/javascripts/darkmode.js" defer></script><script id="MathJax" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script>window.MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"]],processEscapes:true,processEnvironments:true},loader:{lineWidth:128}};</script>
 </head>
-<body>
-<header class="site-header">
-  <nav class="top-nav" aria-label="Main navigation">
-    <a class="brand" href="/vi/">Tennis Future Lab</a>
-    <ul class="nav-links">
-      <li><a href="/vi/">Home</a></li>
-      <li><a href="/vi/articles/">Articles 200</a></li>
-      <li><a href="/vi/about/">About</a></li>
-      <li><a href="/vi/contact/">Contact</a></li>
-    </ul>
-    <button class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<!-- FLATTENED-TOP-NAV-START -->
+<div class="tu-topnav">
+  <a href="/" class="tu-nav-item" title="Home"><span class="tu-nav-emoji">🏠</span><span class="tu-nav-text">Home</span></a>
+  <a href="/fundamentals/" class="tu-nav-item" title="Fundamentals"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Fundamentals</span></a>
+  <a href="/doubles/" class="tu-nav-item" title="Doubles"><span class="tu-nav-emoji">👥</span><span class="tu-nav-text">Doubles</span></a>
+  <a href="/stroke-analysis/" class="tu-nav-item" title="Stroke Analysis"><span class="tu-nav-emoji">🧠</span><span class="tu-nav-text">Stroke Analysis</span></a>
+  <a href="/coach-video-library/" class="tu-nav-item" title="Coach Library"><span class="tu-nav-emoji">🎓</span><span class="tu-nav-text">Coach Library</span></a>
+  <a href="/tennis-video-library/" class="tu-nav-item" title="Video Library"><span class="tu-nav-emoji">🎬</span><span class="tu-nav-text">Video Library</span></a>
+  <a href="/tennis-technical-reference/" class="tu-nav-item" title="Technical Reference"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Technical Reference</span></a>
+  <a href="/tnkb/" class="tu-nav-item" title="Knowledgebase"><span class="tu-nav-emoji">💡</span><span class="tu-nav-text">Knowledgebase</span></a>
+  <a href="/tennis-evolution/" class="tu-nav-item" title="Tennis Evolution"><span class="tu-nav-emoji">⚡</span><span class="tu-nav-text">Tennis Evolution</span></a>
+  <a href="/blog/" class="tu-nav-item" title="Blog"><span class="tu-nav-emoji">📝</span><span class="tu-nav-text">Blog</span></a>
+  <a href="/book/" class="tu-nav-item" title="Master Book"><span class="tu-nav-emoji">📕</span><span class="tu-nav-text">Master Book</span></a>
+  <a href="/books/" class="tu-nav-item" title="Books Catalog"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Books Catalog</span></a>
+  <a href="/vi/articles/" class="tu-nav-item" title="Tennis Fundamentals"><span class="tu-nav-emoji">🎯</span><span class="tu-nav-text">Tennis Fundamentals</span></a>
+  <a href="/vi/Tenniskb-5 Pillars/" class="tu-nav-item" title="5 Trụ Cột"><span class="tu-nav-emoji">🏛️</span><span class="tu-nav-text">5 Trụ Cột</span></a>
+  <a href="/vi/" class="tu-nav-item tu-nav-lang" data-lang-toggle title="Switch to Vietnamese"><span class="tu-nav-emoji">🌐</span><span class="tu-nav-text">VI</span></a>
+  <button class="tu-nav-item tu-nav-darkmode" title="Dark Mode" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button>
+</div>
+<!-- FLATTENED-TOP-NAV-END -->
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+
+        <a href="#content" class="md-skip">
+          Skip to content
+        </a>
+
+    </div>
+    <div data-md-component="announce">
+
+    </div>
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="/" title="Tennis Unified Library" class="md-header__button md-logo" aria-label="Tennis Unified Library" data-md-component="logo">
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
   </nav>
 </header>
-<main class="container">
-  <article class="article-page">
-    <h1 id="content">Kinetic Transfer from Quad Drive to Pelvic Acceleration</h1>
-    <p class="article-meta">Article 034 | Pillar Biomechanics</p>
-    <div class="article-content">
-      <p>This article is a stub. Full content coming soon.</p>
+
+<div class="md-container" data-md-component="container">
+
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+
+<!-- TP-BREADCRUMB-START -->
+<p><a href="/">🏠 Home</a> &nbsp;›&nbsp; <a href="/vi/articles/">Tennis Fundamentals</a> &nbsp;›&nbsp; <a href="/vi/articles/co-sinh-hoc/">Cơ Sinh Học Ứng Dụng & Động Lực Học</a> &nbsp;›&nbsp; Kinetic Transfer from Quad Drive to Pelvic Acceleration</p>
+<hr />
+<!-- TP-NAV-END -->
+
+<h1 id="content">Kinetic Transfer from Quad Drive to Pelvic Acceleration</h1>
+
+
+<blockquote>
+<p><strong>CUE CHUYÊN GIA:</strong> Tứ đầu không đẩy quả bóng — chúng đẩy mặt đất. Khung chậu là nơi đầu tiên nhận được cú đẩy đó. Nếu cú đạp tứ đầu không đến được khung chậu, năng lượng đã tan biến ở khớp hông.</p>
+</blockquote>
+
+<h2>1. Tóm Tắt Điều Hành & Ý Đồ Thể Thao</h2>
+
+<p>Nhóm cơ tứ đầu là bộ máy tạo lực chính cho thành phần dọc và trước-sau của lực phản hồi mặt sân (GRF). Tuy nhiên, lực tạo ra ở cơ khớp gối không tự động xuất hiện ở khung chậu. Giữa gân tứ đầu và vành khung chậu nằm khớp hông — một khớp cầu-khuy có thể hấp thụ, chuyển hướng, hoặc rò rỉ xung lực. Bài viết này định nghĩa các yêu cầu cơ học cho việc truyền năng lượng không mất mát: duỗi đồng thời hông-gối-cổ chân, một bao khớp hông ổn định, và một phân đoạn khung chậu nhận xung lực như một khối cứng chứ không phải khối dễ biến dạng.</p>
+
+<p>Ý định thể thao gồm ba khía cạnh: thứ nhất, cung cấp cho HLV một <strong>điểm kiểm soát giao tiếp tứ đầu-khung chậu</strong> — rò rỉ thầm lặng phổ biến nhất trong chuỗi dưới. Thứ hai, định nghĩa <strong>cửa sổ đồng bộ ba khớp</strong> (≤30 ms giữa đỉnh tốc độ duỗi cổ chân, gối, và hông) làm tiêu chí đỗ/trượt có thể đo lường. Thứ ba, cung cấp một bài kiểm tra bên sân — cú nhảy ngược theo dõi chiều cao hông — để phơi bày xem lực tứ đầu có đến khung chậu hay chết ở khớp hông.</p>
+
+<h2>2. Nền Tảng Cơ Sinh Học & Thần Kinh Học</h2>
+
+<h3>2.1 Cú Đạp Tứ Đầu Là Máy Tạo GRF</h3>
+
+<p>Nhóm cơ tứ đầu (đại cơ rộng bên, đại cơ rộng trong, đại cơ rộng giữa, cơ thẳng đùi) tạo mô-men duỗi gối. Khi bàn chân cố định trên mặt sân, mô-men này đẩy trọng tâm lên và về trước. Thành phần dọc GRF (F<sub>z</sub>) tương quan trực tiếp với xung lực tứ đầu; thành phần trước-sau (F<sub>y</sub>) phụ thuộc vào góc cẳng chân tại thời điểm tác dụng lực.</p>
+
+<p>Thông tin then chốt: cơ thẳng đùi đi qua cả hông và gối. Trong pha đạp, nó đóng vai <strong>cơ gấp hông</strong> trong khi các cơ rộng duỗi gối. Hành động hai khớp này tạo một cầu nối căng có thể truyền lực lên khung chậu (nếu hông đang duỗi) hoặc tiêu tán nó (nếu hông đang gấp). Các vận động viên giao bóng đẳng cấp và forehand tư thế mở cực đoan cho thấy hoạt động cơ thẳng đùi <strong>giảm</strong> khi hông duỗi — cơ nhường vai gấp hông cho cơ mông lớn và cơ gân kheo, trở thành bộ truyền lực thuần túy.</p>
+
+<h3>2.2 Khớp Hông Là Cổng Truyền</h3>
+
+<p>Khớp hông không phải khớp gập đơn giản. Hình học cầu-khuy cho ba độ tự do xoay. Để cú đạp tứ đầu đến khung chậu:</p>
+
+<ul>
+<li>Đầu xương đùi phải ở trung tâm khung khớp (không tịnh tiến trước).</li>
+<li>Hông phải đang duỗi (không gấp) lúc đỉnh lực tứ đầu.</li>
+<li>Phân đoạn khung chậu phải được cứng hóa bởi lõi — nếu không xung lực sẽ làm khung chậu xoay trước (nghiêng trước) thay vì gia tốc nó như một đơn vị.</li>
+</ul>
+
+<p>Chế độ thất bại: <strong>trượt trước đầu xương đùi</strong> (lỏng bao khớp hoặc chuỗi sau yếu) hấp thụ xung lực dưới dạng tịnh tiến khớp; <strong>hông gấp trong pha đạp</strong> (kích hoạt mông muộn) biến cơ thẳng đùi thành hố năng lượng; <strong>khung chậu dễ biến dạng</strong> (lõi mềm) để xung lực nghiêng khung chậu thay vì gia tốc nó.</p>
+
+<h3>2.3 Cửa Sổ Đồng Bộ: Quy Tắc ≤30 ms</h3>
+
+<p>Dữ liệu quay phim chuyển động phòng thí nghiệm (Kovacs & Ellenbecker; Fleisig et al.) cho thấy ở giao bóng và forehand đẳng cấp, đỉnh tốc độ duỗi của cổ chân, gối, và hông xảy ra trong một <strong>cửa sổ 30 mili-giây</strong>. Gối thường đỉnh trước, theo sau hông (+10–15 ms) và cổ chân (+5–10 ms). Khoảng cách >30 ms cho thấy duỗi lần lượt thay vì đồng thời — chuỗi đang rò rỉ tại các chuyển tiếp.</p>
+
+<p><strong>Giao tiếp tứ đầu-khung chậu</strong> là chuyển tiếp gối-hông. Nếu hông đỉnh >30 ms sau gối, xung lực tứ đầu đã suy giảm trước khi hông kịp truyền nó lên trên.</p>
+
+<h2>3. Trình Tự Thực Thi Kỹ Thuật (Checkpoints)</h2>
+
+<h3>Điểm Kiểm 1 — Xác Minh Đạp Cố Định Bàn Chân</h3>
+
+<p><strong>Kiểm tra:</strong> Quay từ phía bên ở 240 fps. Tại thời điểm gối uốn tối đa, đánh dấu khớp cổ chân. Tại tiếp xúc, đánh dấu lại. Cổ chân không được tịnh tiến ngang >2 cm — nếu trượt, bàn chân đã trượt và GRF không được thu hoạch trọn vẹn.</p>
+
+<p><strong>Đỗ:</strong> Cổ chân đứng yên, thấy rõ dấu hiệu hông nâng lên.</p>
+
+<p><strong>Rò rỉ:</strong> Bàn chân trượt lùi (mất lực do ma sát), hoặc cổ chân duỗi bàn chân trước khi gối duỗi (bắp chân cướp cú đạp).</p>
+
+<h3>Điểm Kiểm 2 — Đồng Bộ Ba Khớp</h3>
+
+<p><strong>Kiểm tra:</strong> Cùng video. Xác định khung hình tốc độ duỗi gối đỉnh (thay đổi khung-hình về góc gối lớn nhất). Đếm khung hình đến đỉnh tốc độ duỗi hông và đỉnh tốc độ duỗi cổ chân.</p>
+
+<p><strong>Đỗ:</strong> Ba đỉnh trong 7 khung hình ở 240 fps (≤29 ms).</p>
+
+<p><strong>Rò rỉ:</strong> Đỉnh hông >7 khung hình sau gối — cú đạp tứ đầu đã suy giảm trước khi hông truyền.</p>
+
+<h3>Điểm Kiểm 3 — Cứng Khung Chậu Tại Tiếp Xúc</h3>
+
+<p><strong>Kiểm tra:</strong> Video từ sau. Vẽ đường qua dấu hiệu ASIS tại gối uốn tối đa và lại tại tiếp xúc. Đường phải ngang (không nghiêng trước) và khung chậu phải tịnh tiến về trước/lên, không xoay mở sớm.</p>
+
+<p><strong>Đỗ:</strong> Khung chậu tịnh tiến như khối cứng; đường ASIS giữ ngang.</p>
+
+<p><strong>Rò rỉ:</strong> Nghiêng trước khung chậu tăng >5° giữa nạp và tiếp xúc — lõi không cứng hóa, xung lực rò rỉ vào nghiêng.</p>
+
+<h2>4. Chỉ Số Hiệu Suất & Liều Lượng Huấn Luyện</h2>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Chỉ Số</th>
+<th style="text-align: left;">Mục Tiêu Câu Lạc Bộ</th>
+<th style="text-align: left;">Mục Tiêu Đại Học</th>
+<th style="text-align: left;">Mục Tiêu Chuyên Nghiệp</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">Khoảng đồng bộ ba khớp</td>
+<td style="text-align: left;">≤50 ms</td>
+<td style="text-align: left;">≤35 ms</td>
+<td style="text-align: left;">≤25 ms</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nâng cao hông (nạp → tiếp xúc)</td>
+<td style="text-align: left;">≥8 cm</td>
+<td style="text-align: left;">≥12 cm</td>
+<td style="text-align: left;">≥15 cm</td>
+</tr>
+<tr>
+<td style="text-align: left;">Thay đổi nghiêng trước khung chậu</td>
+<td style="text-align: left;">≤8°</td>
+<td style="text-align: left;">≤5°</td>
+<td style="text-align: left;">≤3°</td>
+</tr>
+<tr>
+<td style="text-align: left;">Chiều cao nhảy ngược (đeo tay trên hông)</td>
+<td style="text-align: left;">35–45 cm</td>
+<td style="text-align: left;">45–55 cm</td>
+<td style="text-align: left;">55–65 cm</td>
+</tr>
+</tbody></table>
+
+<h3>Liều Lượng Khắc Phục</h3>
+
+<ul>
+<li><strong>Cầu mông + duỗi gối kết hợp:</strong> 3×8, giữ đỉnh 2 giây — dạy duỗi hông đồng thời với đạp gối.</li>
+<li><strong>Nhảy ngược kháng dây:</strong> Dây nhẹ (10–15% TC) quanh eo, kéo xuống — ép duỗi hông sớm hơn để thắng kháng.</li>
+<li><strong>Đứng một chân lên hộp (giãn chậm):</strong> 3×6/mỗi bên — cô lập truyền tứ đầu-hông mà không che giấu bằng động lượng.</li>
+<li><strong>Tần suất:</strong> 2×/tuần giai đoạn chuẩn bị, 1×/tuần giai đoạn thi đấu. Kiểm tra lại đồng bộ 3 tuần/lần.</li>
+</ul>
+
+<h2>5. Lỗi Thường Gặp, Nguyên Nhân & Giao Thức Khắc Phục</h2>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Lỗi Quan Sát</th>
+<th style="text-align: left;">Nguyên Nhân Gốc</th>
+<th style="text-align: left;">Giao Thức Khắc Phục</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">Hông nâng muộn, gối đỉnh sớm</td>
+<td style="text-align: left;">Độ trễ kích hoạt mông; cơ duỗi hông bắn sau tứ đầu</td>
+<td style="text-align: left;">Bài kích hoạt mông trước (clamshell, bước dây) ngay trước khi đánh; cue "nén mông vào đất"</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nghiêng trước khung chậu lúc tiếp xúc</td>
+<td style="text-align: left;">Lõi mềm; cơ bụng không cứng lúc truyền</td>
+<td style="text-align: left;">Giữ tĩnh Pallof (3×10 giây) + cue "kéo xương sườn đến khung chậu" lúc khởi động đạp</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bàn chân trượt lùi khi đạp</td>
+<td style="text-align: left;">Ma sát không đủ hoặc chân quá rộng</td>
+<td style="text-align: left;">Thu hẹp chân 5 cm; kiểm tra ma sát giày sân; cue "vặn bàn chân vào đất" hướng ngoài</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rúnt/đau cơ thẳng đùi</td>
+<td style="text-align: left;">Cơ cố gắng vừa gấp hông vừa duỗi gối</td>
+<td style="text-align: left;">Giãn cơ gấp hông + tăng lực mông; dạy mẫu "hông duỗi, thẳng đùi buông lỏng"</td>
+</tr>
+</tbody></table>
+
+<h2>6. Sơ Đồ Chẩn Đoán & Ra Quyết Định</h2>
+
+<p><strong>Với SSC (Bài 002):</strong> Pha amortization tại hông phải <0.05 s. Nếu hông dừng ở gấp trong khi gối duỗi, chu kỳ co-giãn bị gãy tại hông — năng lượng đàn hồi lưu trong cơ thẳng đùi và bao khớp hông tan thành nhiệt.</p>
+
+<p><strong>Với Cú Giật Hông (Bài 004):</strong> Cú giật hông <strong>là</strong> cú đạp tứ đầu đến khung chậu cứng. Không truyền tứ đầu-khung chậu = không cú giật hông. Cú dừng vi mô (Bài 012) đòi hỏi khung chậu đã nhận xung lực trước.</p>
+
+<p><strong>Với Phòng Chấn Thương:</strong> Trượt trước đầu xương đùi mãn tính (thất bại truyền) tương quan với rách khớp chụm và va chạm đùi-khung (FAI). Kiểm toán tứ đầu-khung chậu cũng là màn lọc sức khỏe hông.</p>
+
+<h2>7. Video Minh Họa & Phân Tích Kỹ Thuật</h2>
+
+<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin: 1.5rem 0;">
+  <iframe src="https://www.youtube-nocookie.com/embed/4vHqJC4JJVM" title="Leg Drive and Quad Transfer into Shot Production" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
+<p><p><em>Video: Leg Drive and Quad Transfer into Shot Production (Top Tennis Training).</em></p></p>
+
+<h2>8. Ứng Dụng Liên Ngành & Phối Hợp Đa Trụ Cột</h2>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Điểm Kiểm</th>
+<th style="text-align: left;">Mức 1 (Đang Phát Triển)</th>
+<th style="text-align: left;">Mức 2 (Đạt Chuẩn)</th>
+<th style="text-align: left;">Mức 3 (Nâng Cao)</th>
+<th style="text-align: left;">Mức 4 (Đẳng Cấp)</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">Ổn định bàn chân</td>
+<td style="text-align: left;">Trượt mọi cú đạp</td>
+<td style="text-align: left;">Ổn định bóng dễ</td>
+<td style="text-align: left;">Ổn định dưới áp lực</td>
+<td style="text-align: left;">Cơ sở bất động tại nỗ lực tối đa</td>
+</tr>
+<tr>
+<td style="text-align: left;">Đồng bộ ba khớp</td>
+<td style="text-align: left;">Khoảng >80 ms</td>
+<td style="text-align: left;">Khoảng 40–60 ms</td>
+<td style="text-align: left;">Khoảng 25–35 ms</td>
+<td style="text-align: left;">Khoảng ≤20 ms</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cứng khung chậu</td>
+<td style="text-align: left;">Nghiêng trước >10°</td>
+<td style="text-align: left;">Nghiêng 5–8°</td>
+<td style="text-align: left;">Nghiêng 2–4°</td>
+<td style="text-align: left;">Nghiêng ≤2°, tịnh tiến như khối</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nâng cao hông</td>
+<td style="text-align: left;"><5 cm</td>
+<td style="text-align: left;">6–10 cm</td>
+<td style="text-align: left;">11–14 cm</td>
+<td style="text-align: left;">≥15 cm</td>
+</tr>
+</tbody></table>
+
+<p>Chấm điểm: Tổng mức (4–16). 4–7: kiểm toán toàn diện + khối tập trung tứ đầu-khung chậu. 8–11: một rò rỉ cấu trúc (thường là timing mông hoặc cứng lõi). 12–14: duy trì, kiểm tra rút gọn hàng tuần. 15–16: mẫu đẳng cấp ổn định.</p>
+
+<h2>9. Bảng Tự Đánh Giá (Rubric Đa Cấp Độ)</h2>
+
+<p><strong>MỤC TIÊU BUỔI:</strong> Truyền lực tứ đầu → khung chậu không mất mát.</p>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Khối</th>
+<th style="text-align: left;">Bài Tập</th>
+<th style="text-align: left;">Liều Lượng</th>
+<th style="text-align: left;">Cue</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">A — Khởi Động (5')</td>
+<td style="text-align: left;">Cầu mông một chân + duỗi gối</td>
+<td style="text-align: left;">2×10/mỗi bên</td>
+<td style="text-align: left;">"Hông duỗi, gối theo"</td>
+</tr>
+<tr>
+<td style="text-align: left;">B — Mẫu Hình (10')</td>
+<td style="text-align: left;">Shadow: nén gối → giữ 1 giây → đạp bùng nổ</td>
+<td style="text-align: left;">3×8</td>
+<td style="text-align: left;">"Nén... BÂY GIỜ"</td>
+</tr>
+<tr>
+<td style="text-align: left;">C — Chuyển Giao (15')</td>
+<td style="text-align: left;">Basket feed, ép nâng hông ≥12 cm</td>
+<td style="text-align: left;">3×10 bóng</td>
+<td style="text-align: left;">"Đạp đất, hông bay lên"</td>
+</tr>
+<tr>
+<td style="text-align: left;">D — Kiểm Toán (5')</td>
+<td style="text-align: left;">Quay video: kiểm tra trượt cổ chân, nâng hông, nghiêng khung chậu</td>
+<td style="text-align: left;">2 clip</td>
+<td style="text-align: left;">"Cổ chân yên, hông lên, khung chậu ngang"</td>
+</tr>
+</tbody></table>
+
+<p><strong>Tần suất tuần:</strong> 2 buổi kỹ thuật + 1 buổi sức mạnh. <strong>Cổng tiến trình:</strong> Không tăng cường độ cho đến khi video cho thấy nâng hông ≥12 cm và nghiêng ≤5° trên 8/10 cú đánh.</p>
+
+<hr />
+
+<p><em>Tham chiếu chéo: Bài 002, 004, 012, 037. Trụ I: Cơ Sinh Học Ứng Dụng & Động Học — TennisKB 200 Bài Kiến Thức.</em></p>
+
+<!-- TP-NAV-START -->
+<p class="article-nav" style="margin-top:2rem;font-size:0.95rem"><a href="/vi/articles/VI-tenniskb-forearm-flexor-pronator-mass-activation-profiles/">← Trước</a> &nbsp;|&nbsp; <a href="/vi/articles/">🏠 Trang chủ</a> &nbsp;|&nbsp; <a href="/vi/articles/VI-tenniskb-torque-vector-generation-in-open-vs-closed-stances/">Sau →</a></p>
+<!-- TP-NAV-END -->
+
+</article>
+
+
+
+          </div>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+
+      </main>
+
+        <footer class="md-footer">
+
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+
+    <div class="md-copyright__highlight">
+      © 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.
     </div>
-    <nav class="article-nav" aria-label="Article navigation">
-      <a class="prev" href="/vi/articles/VI-tenniskb-kinetic-transfer-from-quad-drive-to-pelvic-acceleration/">← Prev</a>
-      <a class="home" href="/vi/articles/">Home</a>
-      <a class="next" href="/vi/articles/VI-tenniskb-torque-vector-generation-in-open-vs-closed-stances/">Next →</a>
-    </nav>
-  </article>
-</main>
-<footer class="site-footer">
-  <p>Trang web này được xây dựng với ❤️ cho cộng đồng quần vợt Việt Nam 🎾 by Henry Phạm</p>
+
+</div>
+
+    </div>
+  </div>
 </footer>
-<script src="/search/main.js"></script>
+
+      </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+
+      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.path", "navigation.expand", "navigation.indexes", "navigation.prune", "navigation.prev_next", "navigation.footer", "search.highlight", "search.suggest", "alternate"], "search": "/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+
+        <script src="/assets/js/extra.js"></script>
+
+<footer class="tu-footer" style="background: var(--card); border-top: 1px solid var(--border); color: var(--ink-muted); padding: 1.5rem 1rem; text-align: center; font-size: 0.92rem; margin-top: 3rem;">
+<div style="font-size: 0.85rem; color: var(--accent-dark);">Trang web này được xây dựng với ❤️ cho cộng đồng quần vợt Việt Nam 🎾 by Henry Phạm</div>
+</footer>
 </body>
 </html>

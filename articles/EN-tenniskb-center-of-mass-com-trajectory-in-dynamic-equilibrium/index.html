@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <meta name="description" content="TennisKB — Center of Mass (COM) Trajectory in Dynamic Equilibrium | Tennis Future Lab">
+
+        <meta name="author" content="Henry Pham">
+
+          <link rel="canonical" href="https://tennis-unified.github.io/en/articles/EN-tenniskb-center-of-mass-com-trajectory-in-dynamic-equilibrium/">
+    <link rel="alternate" href="/en/articles/EN-tenniskb-center-of-mass-com-trajectory-in-dynamic-equilibrium/" hreflang="en">
+
+          <link rel="alternate" href="/vi/articles/VI-tenniskb-center-of-mass-com-trajectory-in-dynamic-equilibrium/" hreflang="vi">
+
+      <link rel="icon" href="/assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+
+        <title>Center of Mass (COM) Trajectory in Dynamic Equilibrium - Tennis Unified Library</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
+
+<script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+
+
+<link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
+<link rel="stylesheet" href="/assets/css/site.css"><script src="/assets/javascripts/lang-toggle.js" defer></script><script src="/assets/javascripts/darkmode.js" defer></script><script id="MathJax" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script>window.MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"]],processEscapes:true,processEnvironments:true},loader:{lineWidth:128}};</script>
+</head>
+
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<!-- FLATTENED-TOP-NAV-START -->
+<div class="tu-topnav">
+  <a href="/" class="tu-nav-item" title="Home"><span class="tu-nav-emoji">🏠</span><span class="tu-nav-text">Home</span></a>
+  <a href="/fundamentals/" class="tu-nav-item" title="Fundamentals"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Fundamentals</span></a>
+  <a href="/doubles/" class="tu-nav-item" title="Doubles"><span class="tu-nav-emoji">👥</span><span class="tu-nav-text">Doubles</span></a>
+  <a href="/stroke-analysis/" class="tu-nav-item" title="Stroke Analysis"><span class="tu-nav-emoji">🧠</span><span class="tu-nav-text">Stroke Analysis</span></a>
+  <a href="/coach-video-library/" class="tu-nav-item" title="Coach Library"><span class="tu-nav-emoji">🎓</span><span class="tu-nav-text">Coach Library</span></a>
+  <a href="/tennis-video-library/" class="tu-nav-item" title="Video Library"><span class="tu-nav-emoji">🎬</span><span class="tu-nav-text">Video Library</span></a>
+  <a href="/tennis-technical-reference/" class="tu-nav-item" title="Technical Reference"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Technical Reference</span></a>
+  <a href="/tnkb/" class="tu-nav-item" title="Knowledgebase"><span class="tu-nav-emoji">💡</span><span class="tu-nav-text">Knowledgebase</span></a>
+  <a href="/tennis-evolution/" class="tu-nav-item" title="Tennis Evolution"><span class="tu-nav-emoji">⚡</span><span class="tu-nav-text">Tennis Evolution</span></a>
+  <a href="/blog/" class="tu-nav-item" title="Blog"><span class="tu-nav-emoji">📝</span><span class="tu-nav-text">Blog</span></a>
+  <a href="/book/" class="tu-nav-item" title="Master Book"><span class="tu-nav-emoji">📕</span><span class="tu-nav-text">Master Book</span></a>
+  <a href="/books/" class="tu-nav-item" title="Books Catalog"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Books Catalog</span></a>
+  <a href="/en/articles/" class="tu-nav-item" title="Tennis Fundamentals"><span class="tu-nav-emoji">🎯</span><span class="tu-nav-text">Tennis Fundamentals</span></a>
+  <a href="/Tenniskb-5 Pillars/" class="tu-nav-item" title="5 Pillars"><span class="tu-nav-emoji">🏛️</span><span class="tu-nav-text">5 Pillars</span></a>
+  <a href="/vi/" class="tu-nav-item tu-nav-lang" data-lang-toggle title="Switch to Vietnamese"><span class="tu-nav-emoji">🌐</span><span class="tu-nav-text">VI</span></a>
+  <button class="tu-nav-item tu-nav-darkmode" title="Dark Mode" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button>
+</div>
+<!-- FLATTENED-TOP-NAV-END -->
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+
+        <a href="#content" class="md-skip">
+          Skip to content
+        </a>
+
+    </div>
+    <div data-md-component="announce">
+
+    </div>
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="/" title="Tennis Unified Library" class="md-header__button md-logo" aria-label="Tennis Unified Library" data-md-component="logo">
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+  </nav>
+</header>
+
+<div class="md-container" data-md-component="container">
+
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+
+<!-- TP-BREADCRUMB-START -->
+<p><a href="/">🏠 Home</a> &nbsp;›&nbsp; <a href="/en/articles/">Tennis Fundamentals</a> &nbsp;›&nbsp; <a href="/en/articles/biomechanics/">Applied Biomechanics & Kinetics</a> &nbsp;›&nbsp; Center of Mass (COM) Trajectory in Dynamic Equilibrium</p>
+<hr />
+<!-- TP-NAV-END -->
+
+<h1 id="content">Center of Mass (COM) Trajectory in Dynamic Equilibrium</h1>
+
+
+
+<blockquote>
+<p><strong>PRO CUE:</strong> You do not hit the ball with your racket; you hit it with your center of mass. The racket is merely the last 70 centimeters of a moving body. Every elite rally ball is a negotiation between gravity, ground reaction, and momentum — and the player who manages the <em>path</em> of their center of mass, not the position of their feet, is the player who arrives on time, hits heavy, and recovers before the ball comes back.</p>
+</blockquote>
+<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;"><iframe src="https://www.youtube-nocookie.com/embed/4vHqJC4JJVM" title="How To Perfect Your Footwork in 3 Steps - Perfect Tennis (Episode 10)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<p><em>Video: How To Perfect Your Footwork in 3 Steps - Perfect Tennis (Episode 10) (Top Tennis Training - Pro Tennis Lessons).</em></p>
+<p>&nbsp;</p>
+<h2><strong>1. Executive Summary &amp; Athletic Intent</strong></h2>
+<p>The center of mass (COM) is the single point at which the entire body's mass can be considered concentrated — the weighted average position of every segment, from the trailing heel to the fingertips of the follow-through. In static standing it sits roughly at 55–57% of stature, just anterior to the second sacral vertebra. But tennis is not a static sport. Every split step, every loading drop, every rotational strike, and every recovery push is an exercise in <strong>dynamic equilibrium</strong>: the controlled manipulation of a moving COM under continuously changing external forces.</p>
+<p>&nbsp;</p>
+<p>The athletic intent of this article is to replace the vague coaching vocabulary of "balance" and "staying down" with a mechanical model the eye can actually audit. Balance is not a feeling; it is a statement about the relative position of two points — the COM and the <strong>base of support (BOS)</strong> — under the influence of gravity and ground reaction force. When the COM's horizontal projection sits inside the BOS, the player is stable. When it approaches the boundary, stability erodes. When it crosses the boundary, a step — or a fall — must occur. Elite tennis is played almost entirely in the narrow band where the COM rides near the edge of the base <em>without falling out of it</em>: close enough to the edge to accelerate, far enough inside to strike with a braced structure.</p>
+<p>&nbsp;</p>
+<p>Three headline takeaways govern everything that follows:</p>
+<p>&nbsp;</p>
+<ol>
+<li><strong>The COM is the currency of movement.</strong> Ground reaction forces accelerate the COM; the COM's momentum is what gets transferred into the ball. A shot hit with a stationary, "quiet" COM borrows only rotational energy; a shot hit with a properly sequenced COM drop-and-drive adds the full translational momentum of the body (Article 009's impulse equation applied to whole-body momentum).</li>
+<li><strong>Dynamic equilibrium is an oscillation, not a hold.</strong> The elite COM trajectory is a repeating wave: drop (load) → drive (translate) → arrest (brake) → recover (re-center). Players who try to "stay balanced" by freezing the COM produce exactly the stalled, arm-dominant strokes this knowledge base exists to eliminate.</li>
+<li><strong>Every classic fault is a COM-path fault.</strong> "Sitting back," "falling off the shot," "hitting off the back foot," "getting jammed," and "late recovery" are all, in first analysis, failures of COM trajectory management — diagnosable on ordinary video by tracking one point: the pelvis.</li>
+</ol>
+<p>&nbsp;</p>
+<p>The article dissects the physics of the moving COM, prescribes stroke-by-stroke COM trajectory templates, quantifies displacement benchmarks, tabulates error-correction, and closes with diagnostics, video references, cross-domain transfers, a self-assessment matrix, and a printable practice card.</p>
+<p>&nbsp;</p>
+<h2><strong>2. Biomechanical / Cognitive Foundation</strong></h2>
+<h3><strong>2.1 The Physics of the Moving Center of Mass</strong></h3>
+<p>The COM obeys a single, uncompromising law: its acceleration is determined exclusively by external forces. Internal muscle forces — the twist of the trunk, the snap of the shoulder — can rearrange segments around the COM but cannot move the COM itself. Only two external agents can accelerate it: <strong>gravity</strong> (fixed, vertical, 9.81 m/s² downward) and the <strong>ground reaction force (GRF)</strong>, which the player sculpting through foot pressure can point almost anywhere within the friction cone of the shoe-court interface.</p>
+<p>&nbsp;</p>
+<p>This gives the Newtonian statement of dynamic equilibrium:</p>
+<p>&nbsp;</p>
+<p>$$\vec{F}<em>{GRF} + m\vec{g} = m\vec{a}</em>{COM}$$</p>
+<p>&nbsp;</p>
+<p>"Being in balance" therefore does not mean $a_{COM} = 0$. It means the COM's acceleration is <em>chosen</em> — deliberately produced by a GRF vector the player has commanded, rather than accidentally imposed by an uncontrolled toppling moment. A player lunging wide and braking to a stop before contact is out of equilibrium in the textbook sense but in perfect control in the athletic sense: the deceleration is the plan. Conversely, a player standing still whose COM is drifting over the toes because the trunk has pitched forward is "in balance" by position but out of control by trajectory. The audit tool is always the same question: <strong>is the COM going where the player intends?</strong></p>
+<p>&nbsp;</p>
+<p>A second consequence follows directly from the equation. Because the horizontal GRF is limited by friction ($F_{horizontal} \le \mu \cdot F_{vertical}$), the rate at which the COM can be started, steered, or stopped is capped by how much vertical force the player simultaneously applies. This is why braking <em>into</em> a shot — planting with a firm vertical force and then striking — produces cleaner contact than braking <em>through</em> a shot: the vertical plant buys the friction budget that makes the horizontal stop possible. The split step (Article 008) exists precisely to pre-position the COM for this transaction.</p>
+<p>&nbsp;</p>
+<h3><strong>2.2 The Geometry: COM, Base of Support, and the Inverted Pendulum</strong></h3>
+<p>The human body standing on the court is mechanically an <strong>inverted pendulum</strong>: a mass (the trunk-plus-head assembly) balanced above a pivot (the feet). Inverted pendulums are inherently unstable — any horizontal offset between the COM's projection and the pivot produces a toppling moment that grows the offset. Walking, running, and every tennis movement pattern are therefore continuous sequences of <em>controlled falls</em> and <em>catches</em>:</p>
+<p>&nbsp;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Phase of Tennis Movement</th>
+<th style="text-align: left;">COM Behavior</th>
+<th style="text-align: left;">GRF Vector</th>
+<th style="text-align: left;">Control Task</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Split step</strong></td>
+<td style="text-align: left;">Brief vertical drop (2–6 cm), COM centered between feet</td>
+<td style="text-align: left;">Vertical, slightly braking</td>
+<td style="text-align: left;">Time the drop to the opponent's contact</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First step / drive</strong></td>
+<td style="text-align: left;">COM accelerated toward the ball</td>
+<td style="text-align: left;">Horizontal push from the back foot</td>
+<td style="text-align: left;">Convert drop into directional momentum</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Approach / loading</strong></td>
+<td style="text-align: left;">COM decelerating, dropping toward the loading hip</td>
+<td style="text-align: left;">Braking vector along the direction of travel</td>
+<td style="text-align: left;">Spend momentum into a braced leg, not into the ball</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Strike window</strong></td>
+<td style="text-align: left;">COM low, projection inside the front half of the BOS, nearly stationary horizontally</td>
+<td style="text-align: left;">Vertical-dominant, large</td>
+<td style="text-align: left;">Stable platform: 30–60 ms of horizontal COM quiescence at contact</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Recovery</strong></td>
+<td style="text-align: left;">COM re-accelerated toward court center</td>
+<td style="text-align: left;">Diagonal push-and-step</td>
+<td style="text-align: left;">Reset the wave before the ball returns</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>The quantified target that separates elite movement from club movement is the <strong>contact window</strong>: measured on high-speed video, elite players hold horizontal COM velocity below roughly 0.3 m/s for 30–60 ms around impact, while club players typically contact the ball with the COM still traveling at 1.0–1.5 m/s. The consequence is not merely positional — a moving COM at contact means a moving racket face anchoring structure, and the 4-millisecond impulse event (Article 009) amplifies every centimeter of unwanted translation into degrees of unwanted face rotation.</p>
+<p>&nbsp;</p>
+<h3><strong>2.3 The Momentum Ledger: How COM Motion Becomes Ball Speed</strong></h3>
+<p>The translational momentum of the body is a real and trainable contributor to shot velocity. A 75 kg player whose COM is moving toward the target at 1.5 m/s at contact carries 112.5 kg·m/s of linear momentum — a reservoir the stroke can partially transfer through the braced kinetic chain into the ball. The mechanics are identical in principle to the "block and pulse" of the return of serve: a stiff link between COM and racket converts body translation into ball exit velocity; a soft link dissipates it into tissue.</p>
+<p>&nbsp;</p>
+<p>The vertical dimension matters equally. The <strong>drop-and-drive</strong> pattern — COM sinking 8–15 cm during loading, then driven upward through triple extension — harvests vertical GRF (Article 001's $F_z$) that peaks at 1.8–2.4× body weight in elite groundstrokes. The upward COM surge at contact is what players describe as "hitting through the ball with the legs" and what radar guns register as heavier ball speed on short balls, where the vertical drive has room to express itself.</p>
+<p>&nbsp;</p>
+<p>But the ledger has a debit column: <strong>momentum you cannot stop, you cannot use.</strong> Arriving at the ball with a full sprint and no braking plan converts the strike into a collision — the COM sails past the contact zone, weight falls onto the hitting side, and the shot is hit <em>while falling out of it</em>. Elite mechanics therefore treat the final two steps before contact as a braking system first and a positioning system second: decelerate the COM to the quiescence window, <em>then</em> add the rotational and vertical contributions on top of a stationary translational base.</p>
+<p>&nbsp;</p>
+<h3><strong>2.4 The Cognitive Model: Drive the Pelvis, Not the Feet</strong></h3>
+<p>Players cannot monitor a weighted average of 100 body segments in real time — but they do not need to. The pelvis is a reliable physical proxy for the COM: the trunk and head contribute roughly 60–70% of total body mass, and their position relative to the legs places the COM within a few centimeters of the sacrum in every stroke posture. The trainable cognitive model is therefore <strong>pelvic-path imagery</strong>:</p>
+<p>&nbsp;</p>
+<ul>
+<li>"<strong>Ride the pelvis down, then throw it through</strong>" — the loading drop and forward drive as one continuous COM arc, not two poses.</li>
+<li>"<strong>Finish with your belt buckle past the ball</strong>" — a horizontal COM translation intention that prevents the classic pull-off and fall-away.</li>
+<li>"<strong>Land the weight, then hit</strong>" — sequencing cue separating the braking plant (COM arrested) from the strike (rotation released on top).</li>
+<li>"<strong>Recover to the shadow</strong>" — the recovery target is not the court's centerline but the projected midpoint of the opponent's next shot; the COM recovery path is aimed, not merely returned.</li>
+</ul>
+<p>&nbsp;</p>
+<p>External, trajectory-based cues of this kind consistently outperform internal cues ("bend your knees," "stay low") because they instruct the outcome of the COM path rather than the shape of the limbs. The limbs will organize themselves around a clear pelvic intention; they cannot organize around a vague feeling of balance.</p>
+<p>&nbsp;</p>
+<h2><strong>3. Step-by-Step Technical Execution</strong></h2>
+<h3><strong>3.1 The Rally Groundstroke: The Master COM Wave</strong></h3>
+<p>The canonical COM trajectory for a modern open-stance rally forehand or backhand unfolds as a five-phase wave:</p>
+<p>&nbsp;</p>
+<ol>
+<li><strong>Split &amp; Sink (t ≈ −600 to −450 ms from the player's contact):</strong> The split step lands with the COM centered and dropped 2–6 cm. Simultaneously the unit turn begins; the COM stays <em>between</em> the feet — this is the difference between a split that feeds the stroke and a split that merely interrupts it.</li>
+<li><strong>Load &amp; Drop (t ≈ −450 to −250 ms):</strong> The outside leg accepts the weight; the COM drops another 8–15 cm and shifts laterally toward the loading hip. In an open stance the COM's horizontal projection moves toward the <em>back corner</em> of the base — deliberately approaching the boundary to load the lateral GRF ($F_x$) of Article 005.</li>
+<li><strong>Drive &amp; Translate (t ≈ −250 to −100 ms):</strong> The loaded leg extends; the COM drives forward-upward toward the contact zone. Horizontal velocity rises to 0.8–1.5 m/s in neutral stances (translational momentum contribution) or stays lower in extreme open stances (rotational-dominant contribution). The chest and hips begin uncoiling while the COM is still <em>moving toward</em> the ball — this overlap is the dynamic X-Factor of Article 005/014.</li>
+<li><strong>Arrest &amp; Strike (t ≈ −80 ms to contact):</strong> The front leg plants as a brake post; horizontal COM velocity is crushed from its drive value to below 0.3 m/s while the rotational engine fires. The strike is executed on a <em>stationary translational platform with a spinning superstructure</em>: the COM holds, the trunk and arm rotate through.</li>
+<li><strong>Redirect &amp; Recover (t = contact onward):</strong> The residual COM momentum, no longer needed by the ball, is immediately re-aimed by the recovery step: a shuffle or crossover aimed at the bisector of the opponent's probable reply (Article's recovery geometry). The wave repeats.</li>
+</ol>
+<p>&nbsp;</p>
+<p>For timing calibration, the braking plant must be complete no later than ~80 ms before contact — the minimum time the postural system needs to stabilize the trunk on a newly arrested base. A player whose plant lands within 40 ms of contact is striking on a still-moving platform no matter how clean the arm looks.</p>
+<p>&nbsp;</p>
+<h3><strong>3.2 Stance-Specific COM Trajectories</strong></h3>
+<p>&nbsp;</p>
+<ul>
+<li><strong>Open stance forehand:</strong> The COM travels a lateral arc — dropping toward the outside-back corner of the base, then rotating <em>around</em> the braced outside leg rather than through it. Horizontal translation along the target line is minimal; angular momentum around the anchored leg is maximal. The recovery starts with a hop that re-centers the COM before the leg crossover.</li>
+<li><strong>Neutral/closed stance:</strong> The COM travels a linear diagonal — back foot to front foot, along the target line. The step forward is a <em>fall interrupted</em>: the player deliberately lets the COM pass outside the old base, catches it with the new front-foot plant, and strikes on the catch. Momentum transfer into the ball is highest here; recovery complexity is also highest because the COM has traveled further from center.</li>
+<li><strong>Defensive wide slide/lunge:</strong> The COM is deliberately allowed to exit the base — a controlled fall caught by the far leg in a deep flexed position. The strike is a COM-conservation shot: minimal drive, maximum blocking structure, with the non-hitting arm and the free leg used as counterweights to keep the COM's projection inside the extended base for the contact instant. The recovery plan (push back, crossover, or slide) must be chosen <em>before</em> the lunge, because the COM exit trajectory determines which return path is available.</li>
+<li><strong>Low ball / half-volley:</strong> The COM drops deeper (15–25 cm) but the horizontal quiescence window must be <em>longer</em>, because the falling ball plus low contact leaves less tolerance for face wobble. Cue: "sit, strike, rise" — the COM's vertical motion is finished before the racket moves forward.</li>
+</ul>
+<p>&nbsp;</p>
+<h3><strong>3.3 The Serve: Vertical COM Management</strong></h3>
+<p>The serve is the only stroke in which the COM's primary excursion is vertical. The back-swing load sinks the COM 10–20 cm; the leg drive launches it upward at contact (elite servers leave the ground with the COM rising at 0.3–0.5 m/s); and the landing is a controlled two-foot arrest that must re-establish the base <em>before</em> the follow-through's momentum pulls the trunk forward. The serve's COM discipline is therefore symmetrical to the groundstroke's: a drop, a drive, and an arrest — executed entirely in the vertical axis, with the horizontal axis held deliberately quiet.</p>
+<p>&nbsp;</p>
+<h3><strong>3.4 Common Execution Constants (All Strokes)</strong></h3>
+<p>&nbsp;</p>
+<ul>
+<li>The head is a COM stabilizer, not a passenger: head translation roughly double the COM's in amplitude destabilizes the visual-vestibular platform (Article 007's balance line). Keep the head's horizontal excursion small even when the pelvis travels.</li>
+<li>The non-hitting arm and the free leg are <strong>counterweight systems</strong>: their extended positions push the COM's effective projection back inside the base during wide or low contacts.</li>
+<li>Breathing: sharp exhalation at the arrest-and-strike instant — it is the respiratory signature of a braced, controlled COM rather than a colliding one.</li>
+<li>Every shot is hit <em>on the way up or at the crest</em> of the COM wave, never on the way down: a COM still descending at contact (late load, late plant) produces the classic thin, decelerating ball flight.</li>
+</ul>
+<p>&nbsp;</p>
+<h2><strong>4. Performance Metrics &amp; Dosage</strong></h2>
+<h3><strong>4.1 Key Performance Indicators</strong></h3>
+<p>&nbsp;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: left;">Recreational Benchmark</th>
+<th style="text-align: left;">Collegiate Benchmark</th>
+<th style="text-align: left;">Elite/Pro Benchmark</th>
+<th style="text-align: left;">Measurement Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Horizontal COM velocity at contact</td>
+<td style="text-align: left;">0.8–1.5 m/s</td>
+<td style="text-align: left;">0.4–0.8 m/s</td>
+<td style="text-align: left;">&lt; 0.3 m/s</td>
+<td style="text-align: left;">Pelvis tracking on ≥240 fps video; force plate</td>
+</tr>
+<tr>
+<td style="text-align: left;">COM drop during loading phase</td>
+<td style="text-align: left;">3–6 cm</td>
+<td style="text-align: left;">8–12 cm</td>
+<td style="text-align: left;">10–15 cm</td>
+<td style="text-align: left;">Video, pelvis-to-knee reference</td>
+</tr>
+<tr>
+<td style="text-align: left;">Peak vertical GRF at drive</td>
+<td style="text-align: left;">1.2–1.5× BW</td>
+<td style="text-align: left;">1.6–2.0× BW</td>
+<td style="text-align: left;">1.8–2.4× BW</td>
+<td style="text-align: left;">Force plate / jump-mat estimate</td>
+</tr>
+<tr>
+<td style="text-align: left;">Braking plant completion before contact</td>
+<td style="text-align: left;">0–20 ms</td>
+<td style="text-align: left;">40–60 ms</td>
+<td style="text-align: left;">60–100 ms</td>
+<td style="text-align: left;">Frame-count from plant to contact</td>
+</tr>
+<tr>
+<td style="text-align: left;">Split-step COM drop timing error</td>
+<td style="text-align: left;">±80 ms vs. opponent contact</td>
+<td style="text-align: left;">±40 ms</td>
+<td style="text-align: left;">±20 ms</td>
+<td style="text-align: left;">High-speed video of opponent + player</td>
+</tr>
+<tr>
+<td style="text-align: left;">Recovery COM re-centering time</td>
+<td style="text-align: left;">1.2–1.5 s</td>
+<td style="text-align: left;">0.9–1.1 s</td>
+<td style="text-align: left;">0.7–0.9 s</td>
+<td style="text-align: left;">Stopwatch / video, shot to ready position</td>
+</tr>
+<tr>
+<td style="text-align: left;">Post-contact COM fall-away frequency</td>
+<td style="text-align: left;">&gt; 30% of shots</td>
+<td style="text-align: left;">10–20%</td>
+<td style="text-align: left;">&lt; 5%</td>
+<td style="text-align: left;">Video audit, rear view, 20-shot sample</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h3><strong>4.2 Training Dosage</strong></h3>
+<p>&nbsp;</p>
+<p><strong>COM wave shadow drill:</strong> 3 sets × 10 strokes per side, daily or per session. Execute the full split-drop-drive-arrest-recover wave without a ball, palms as pelvis markers. Intent: build the wave's motor program before adding ball-flight variables.</p>
+<p>&nbsp;</p>
+<p><strong>Brake-plant ladder feeds:</strong> Coach feeds alternating short/wide balls; the player must achieve visible plant-and-arrest (front foot stamped, pelvis stops) before every contact. 4 × 8 balls, 2–3 sessions/week. Success criterion: contact occurs after the plant, verified by freeze-frame.</p>
+<p>&nbsp;</p>
+<p><strong>Momentum transfer med-ball drives:</strong> 3 kg ball, thrown forehand-pattern against a wall while stepping through: 3 sets × 8, 2 sessions/week. Intent: feel the translational contribution of a moving COM through a braced link.</p>
+<p>&nbsp;</p>
+<p><strong>Lunge-and-hold contacts:</strong> Partner drops balls wide; player lunges, catches the COM in the deep flexed position, strikes from the hold, recovers. 3 × 10, 2 sessions/week. Intent: COM-conservation striking and counterweight control.</p>
+<p>&nbsp;</p>
+<p><strong>Split-step timing metronome:</strong> Feeds delivered at fixed interval; player times the split to the audible cue. Progressively randomize the interval to train anticipatory COM preparation. 5 min per session, every session.</p>
+<p>&nbsp;</p>
+<p><strong>Dosage ceiling:</strong> COM-drop loading at maximum depth is eccentric-heavy on the knee and hip extensors; beyond ~150 maximal-depth loading repetitions per week, add surface variety and reduce depth rather than volume to protect the patellar tendon.</p>
+<p>&nbsp;</p>
+<h2><strong>5. Errors, Causes &amp; Corrections</strong></h2>
+<p>&nbsp;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Observed Error</th>
+<th style="text-align: left;">Root Biomechanical Cause</th>
+<th style="text-align: left;">Performance Consequence</th>
+<th style="text-align: left;">Corrective Strategy &amp; Drill</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>"Sitting back" / weight on rear foot at contact</strong></td>
+<td style="text-align: left;">COM never driven forward from the loading hip; arrest happens before the drive instead of after it</td>
+<td style="text-align: left;">Thin ball flight, lost momentum contribution, "pushed" shots</td>
+<td style="text-align: left;"><strong>Belt-buckle target drill:</strong> cone placed 30 cm in front of the contact zone; contact must finish with the pelvis past the cone; 3 × 12</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Falling off the shot (COM exits the hitting-side boundary)</strong></td>
+<td style="text-align: left;">Trunk rotation unopposed by a braced front leg; counterweight arm pulled in early</td>
+<td style="text-align: left;">Loss of face control late in the swing, pulled or weakly countered balls</td>
+<td style="text-align: left;"><strong>Front-post isometric drill:</strong> strike with the front leg explicitly held as a brake post against partner resistance; 3 × 8</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Running through the ball (no arrest)</strong></td>
+<td style="text-align: left;">Braking steps never planned; COM carried at full speed into contact</td>
+<td style="text-align: left;">Contact on a moving platform; erratic depth; overruns wide balls</td>
+<td style="text-align: left;"><strong>Brake-plant ladder feeds</strong> (Section 4.2); success = freeze-frame shows planted foot before contact</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>COM too high / no loading drop</strong></td>
+<td style="text-align: left;">Habitual upright play; fear of the extra drop cost</td>
+<td style="text-align: left;">No vertical GRF harvest; flat trajectory tolerance poor on low balls</td>
+<td style="text-align: left;"><strong>Drop-depth marker drill:</strong> video with a horizontal reference line at standing hip height; require visible 10 cm drop on every drive; 20 strokes/session</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Late split, COM unprepared</strong></td>
+<td style="text-align: left;">Split timed to the ball's bounce instead of the opponent's contact</td>
+<td style="text-align: left;">First step reactive rather than predictive; chronic lateness</td>
+<td style="text-align: left;"><strong>Opponent-contact metronome:</strong> split on the <em>hit</em>, not the bounce; partner calls "now" at their contact; 5 min/session</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Recovery drift (COM never re-centered)</strong></td>
+<td style="text-align: left;">Recovery steps underpowered; COM momentum from the shot never redirected</td>
+<td style="text-align: left;">Progressive court-position erosion across a rally</td>
+<td style="text-align: left;"><strong>Two-touch recovery rule:</strong> every rally ball requires the COM to pass through the ready-position mark before the partner's next contact; rally audit</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Head-driven imbalance</strong></td>
+<td style="text-align: left;">Head travels with (or ahead of) the pelvis, destabilizing the vestibular platform</td>
+<td style="text-align: left;">Wobbling contact height perception; net-clearance inconsistency</td>
+<td style="text-align: left;"><strong>Head-spot drill:</strong> film from the front; coach checks head horizontal excursion stays &lt;50% of pelvic excursion; shadow + feeds</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h2><strong>6. Diagnostic Diagram</strong></h2>
+<pre><code>       COM TRAJECTORY WAVE — OPEN-STANCE FOREHAND (SIDE VIEW, T-0 = CONTACT)
+
+  ms before contact   600        400        200        100    0       +200
+                      |----------|----------|----------|------|---------|
+  Phase:              SPLIT   LOAD &amp; DROP   DRIVE     ARREST  STRIKE  RECOVER
+  COM height:         ▔▔▔      ▁▁▁ (−10cm)  ▄▄▄ rising  ▄▄▄    ▅▅▅     ▔▔▔
+  COM horiz. vel.:    0.0      0.3     →    1.2 m/s  → 0.2    0.2     ↑ 1.5 m/s
+                                                          ▲
+                                              quiescence window (~50 ms)
+
+  TOP-DOWN VIEW — COM PROJECTION vs BASE OF SUPPORT:
+        outside/back              contact instant            recovery
+        ┌─────────┐              ┌─────────┐              ┌─────────┐
+        │ ●COM    │ load edge    │   ●COM  │ inside,      │  ●COM   │ re-centered
+        │ ▲   ▲   │ (deliberate) │  ▲   ▲  │ front half   │  ▲   ▲  │ to ready mark
+        └─────────┘              └─────────┘              └─────────┘
+
+  FAULT MAP:
+    No drop ────► no vertical GRF ────► flat, thin ball flight
+    No arrest ──► moving platform ────► face chaos, depth scatter
+    Fall-away ──► COM exits base ────► pulled shots, late recovery
+    No re-center► COM drift ─────────► court position erosion
+</code></pre>
+<p>&nbsp;</p>
+<h2><strong>7. Video Demonstration</strong></h2>
+<p><strong>Video ID:</strong> 4vHqJC4JJVM</p>
+<p>&nbsp;</p>
+<p><em>(Placeholder — will embed a slow-motion breakdown of an elite open-stance forehand synchronized with the COM wave in Section 6: split at −600 ms, load-drop peak at −300 ms, drive at −200 ms, arrest-plant at −80 ms, contact on the quiescence window, and the recovery re-centering hop at +150 ms, with a pelvis-tracking overlay.)</em></p>
+<p>&nbsp;</p>
+<h2><strong>8. Cross-Domain Synergy</strong></h2>
+<p>&nbsp;</p>
+<ul>
+<li><strong>Sprinting &amp; team-sport change of direction:</strong> The brake-plant-strike sequence is the tennis application of deceleration mechanics trained in field sports; the research on force-plate braking asymmetries maps directly onto the wide-ball plant.</li>
+<li><strong>Alpine skiing &amp; skateboarding:</strong> Both sports institutionalize "dynamic equilibrium over a moving base" — the skier's COM discipline down a slope is the closest continuous analog to tennis's oscillating wave, and ski-instructor COM cueing ("drive the hips down the hill") transfers verbally.</li>
+<li><strong>Martial arts (Tai Chi, judo):</strong> Rooting practice (Article 018's lineage) is COM management under an external force; judo's kuzushi — deliberately destroying the opponent's COM-base relationship — even previews the tactical dimension: hitting behind a runner is a kuzushi act.</li>
+<li><strong>Dance &amp; gymnastics landing mechanics:</strong> The controlled two-foot landing of the serve, with the COM arrested before the trunk's momentum is spent, is taught explicitly in gymnastics as "stick the landing" — an entire pedagogy of arrest mechanics available to borrow.</li>
+<li><strong>Within this knowledge base:</strong> Article 001 (GRF vectors feeding the COM), Article 005 (eccentric lateral loading), Article 007 (static vs. dynamic balance line and head stabilization), Article 008 (split-step timing window), Article 009 (impulse and momentum transfer), Article 023 (hip hinge as the COM's loading engine), and Article 032 (impulsive force at the 4-ms window) form the direct technical cluster.</li>
+</ul>
+<p>&nbsp;</p>
+<h2><strong>9. Self-Assessment Matrix</strong></h2>
+<p>Rate each item 1 (never/absent) to 5 (always/automatic). Re-score every 4 weeks.</p>
+<p>&nbsp;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">#</th>
+<th style="text-align: left;">Competency</th>
+<th style="text-align: left;">1–5</th>
+<th style="text-align: left;">Evidence Standard for a "5"</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">My split step drops the COM on time, every time</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Split lands within ±40 ms of opponent's contact on video</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">I drop the COM visibly (≥10 cm) into every rally drive</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Pelvis-reference video shows the drop on 9 of 10 strokes</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">My front leg plants as a brake post before I swing</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Freeze-frame shows planted foot ≥60 ms before contact</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">My contact happens with the COM horizontally quiet</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Pelvis tracking shows &lt;0.3 m/s drift in the contact frames</td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">I finish shots with my weight inside the base, not falling away</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Rear-view audit: fall-away on &lt;1 of 10 shots</td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">I harvest vertical drive on short balls</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Radar/feel benchmark: short-ball speed ≥ rally-ball speed</td>
+</tr>
+<tr>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">My recovery re-centers the COM before the opponent hits</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Two-touch rule passes in live rally audit</td>
+</tr>
+<tr>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">My head stays inside the pelvic path (no head-led imbalance)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Front-view video: head excursion &lt;50% of pelvic excursion</td>
+</tr>
+<tr>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">I manage wide balls as controlled COM falls with a planned recovery</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Lunge shots recovered within 1 s, exit strategy pre-chosen</td>
+</tr>
+<tr>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">I can hold the quiescence window under pressure</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Point-play footage, not just feeds, shows planted contact</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><strong>Interpretation:</strong> 42–50 — elite COM governance; 33–41 — sound wave, targeted repairs; 25–32 — significant leakage, prioritize rows 2, 3, 5; below 25 — return to Section 3 execution stages and shadow-work before any speed or rally integration.</p>
+<p>&nbsp;</p>
+<h2><strong>10. Printable Practice Card</strong></h2>
+<pre><code>╔══════════════════════════════════════════════════════════════════╗
+║  ART-025 PRACTICE CARD — COM TRAJECTORY IN DYNAMIC EQUILIBRIUM    ║
+║  &quot;Drive the pelvis, arrest, strike, re-center.&quot; (Pillar I·20 min) ║
+╠══════════════════════════════════════════════════════════════════╣
+║ BLOCK 1 — WAVE PRIMER (3 min)                                     ║
+║  • COM wave shadow: split-drop-drive-arrest-recover 3 × 10/side   ║
+║  • Cue aloud each phase: &quot;split — sit — throw — plant — reset&quot;    ║
+╠══════════════════════════════════════════════════════════════════╣
+║ BLOCK 2 — ARREST CALIBRATION (5 min)                              ║
+║  • Brake-plant ladder feeds 4 × 8 (plant visible before contact)  ║
+║  • Belt-buckle cone drill 3 × 12 (pelvis past cone at finish)     ║
+║  • Front-post isometric strikes 3 × 8 vs. light resistance        ║
+╠══════════════════════════════════════════════════════════════════╣
+║ BLOCK 3 — ON-COURT APPLICATION (10 min)                           ║
+║  • Rally with two-touch recovery rule: 10 min continuous          ║
+║  • Wide-ball lunge-and-hold: 3 × 10 with planned exit path        ║
+║  • Short balls: vertical drive intent, 20 balls, COM up at hit    ║
+╠══════════════════════════════════════════════════════════════════╣
+║ BLOCK 4 — AUDIT &amp; PROTECT (2 min)                                 ║
+║  • Rear-view phone video: 10 strokes, check drop + plant + finish ║
+║  • Drop-depth spot check: ≥10 cm on every drive                   ║
+╠══════════════════════════════════════════════════════════════════╣
+║ WEEKLY DOSAGE: 3–4 sessions  ·  ≤150 max-depth loading reps/week  ║
+║ RED FLAGS: knee/front-foot ache after loading volume, shot speed  ║
+║            drop in set 3, recovery drift on film → review S5      ║
+╚══════════════════════════════════════════════════════════════════╝
+</code></pre>
+<p>&nbsp;</p>
+<blockquote>
+<p><strong>MECHANICAL DEFECT WARNING:</strong> A stroke built on a wandering COM is a bet against physics. Every centimeter of unplanned COM translation at contact is amplified through the 4-millisecond impulse window into unwanted racket-face rotation, and every rally played without COM re-centering is a slow-motion surrender of court position. The pelvis is the tell: if it is not where you intended, three frames before contact, the shot was never under your command.</p>
+</blockquote>
+
+
+
+
+
+<!-- TP-NAV-START -->
+<p class="article-nav" style="margin-top:2rem;font-size:0.95rem"><a href="/en/articles/EN-tenniskb-torso-stiffness-pulse-at-point-of-ball-contact/">← Previous</a> &nbsp;|&nbsp; <a href="/en/articles/">🏠 Home</a> &nbsp;|&nbsp; <a href="/en/articles/EN-tenniskb-force-velocity-profiling-in-elite-groundstrokes/">Next →</a></p>
+<!-- TP-NAV-END -->
+
+</article>
+
+
+
+          </div>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+
+      </main>
+
+        <footer class="md-footer">
+
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+
+    <div class="md-copyright__highlight">
+      © 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.
+    </div>
+
+</div>
+
+    </div>
+  </div>
+</footer>
+
+      </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+
+      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.path", "navigation.expand", "navigation.indexes", "navigation.prune", "navigation.prev_next", "navigation.footer", "search.highlight", "search.suggest", "alternate"], "search": "/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+
+        <script src="/assets/js/extra.js"></script>
+
+<footer class="tu-footer" style="background: var(--card); border-top: 1px solid var(--border); color: var(--ink-muted); padding: 1.5rem 1rem; text-align: center; font-size: 0.92rem; margin-top: 3rem;">
+<div style="font-size: 0.85rem; color: var(--accent-dark);">Trang web này được xây dựng với ❤️ cho cộng đồng quần vợt Việt Nam 🎾 by Henry Phạm</div>
+</footer>
+</body>
+</html>

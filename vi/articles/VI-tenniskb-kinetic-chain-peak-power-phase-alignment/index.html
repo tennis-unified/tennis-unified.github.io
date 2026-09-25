@@ -1,46 +1,436 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kinetic Chain Peak Power Phase Alignment</title>
-  <link rel="stylesheet" href="/assets/styles.css">
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <link rel="alternate" hreflang="en" href="/en/articles/EN-tenniskb-kinetic-chain-peak-power-phase-alignment/">
-  <link rel="alternate" hreflang="vi" href="/vi/articles/VI-tenniskb-kinetic-chain-peak-power-phase-alignment/">
-  <link rel="alternate" hreflang="x-default" href="/en/articles/EN-tenniskb-kinetic-chain-peak-power-phase-alignment/">
+<!doctype html>
+<html lang="vi" class="no-js">
+  <head>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <meta name="description" content="TennisKB — Bài viết 001: Kinetic Chain Peak Power Phase Alignment | Tennis Future Lab">
+
+        <meta name="author" content="Henry Pham">
+
+          <link rel="alternate" href="/en/articles/EN-tenniskb-kinetic-chain-peak-power-phase-alignment/" hreflang="en">
+
+          <link rel="alternate" href="/vi/articles/VI-tenniskb-kinetic-chain-peak-power-phase-alignment/" hreflang="vi">
+
+      <link rel="icon" href="/assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+
+        <title>Bài viết 001: Kinetic Chain Peak Power Phase Alignment - Tennis Unified Library</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
+
+<script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+
+
+<link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
+<link rel="stylesheet" href="/assets/css/site.css"><script src="/assets/javascripts/lang-toggle.js" defer></script><script src="/assets/javascripts/darkmode.js" defer></script><script id="MathJax" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script>window.MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"]],processEscapes:true,processEnvironments:true},loader:{lineWidth:128}};</script>
 </head>
-<body>
-<header class="site-header">
-  <nav class="top-nav" aria-label="Main navigation">
-    <a class="brand" href="/vi/">Tennis Future Lab</a>
-    <ul class="nav-links">
-      <li><a href="/vi/">Home</a></li>
-      <li><a href="/vi/articles/">Articles 200</a></li>
-      <li><a href="/vi/about/">About</a></li>
-      <li><a href="/vi/contact/">Contact</a></li>
-    </ul>
-    <button class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<!-- FLATTENED-TOP-NAV-START -->
+<div class="tu-topnav">
+  <a href="/" class="tu-nav-item" title="Home"><span class="tu-nav-emoji">🏠</span><span class="tu-nav-text">Home</span></a>
+  <a href="/fundamentals/" class="tu-nav-item" title="Fundamentals"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Fundamentals</span></a>
+  <a href="/doubles/" class="tu-nav-item" title="Doubles"><span class="tu-nav-emoji">👥</span><span class="tu-nav-text">Doubles</span></a>
+  <a href="/stroke-analysis/" class="tu-nav-item" title="Stroke Analysis"><span class="tu-nav-emoji">🧠</span><span class="tu-nav-text">Stroke Analysis</span></a>
+  <a href="/coach-video-library/" class="tu-nav-item" title="Coach Library"><span class="tu-nav-emoji">🎓</span><span class="tu-nav-text">Coach Library</span></a>
+  <a href="/tennis-video-library/" class="tu-nav-item" title="Video Library"><span class="tu-nav-emoji">🎬</span><span class="tu-nav-text">Video Library</span></a>
+  <a href="/tennis-technical-reference/" class="tu-nav-item" title="Technical Reference"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Technical Reference</span></a>
+  <a href="/tnkb/" class="tu-nav-item" title="Knowledgebase"><span class="tu-nav-emoji">💡</span><span class="tu-nav-text">Knowledgebase</span></a>
+  <a href="/tennis-evolution/" class="tu-nav-item" title="Tennis Evolution"><span class="tu-nav-emoji">⚡</span><span class="tu-nav-text">Tennis Evolution</span></a>
+  <a href="/blog/" class="tu-nav-item" title="Blog"><span class="tu-nav-emoji">📝</span><span class="tu-nav-text">Blog</span></a>
+  <a href="/book/" class="tu-nav-item" title="Master Book"><span class="tu-nav-emoji">📕</span><span class="tu-nav-text">Master Book</span></a>
+  <a href="/books/" class="tu-nav-item" title="Books Catalog"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Books Catalog</span></a>
+  <a href="/vi/articles/" class="tu-nav-item" title="Tennis Fundamentals"><span class="tu-nav-emoji">🎯</span><span class="tu-nav-text">Tennis Fundamentals</span></a>
+  <a href="/vi/Tenniskb-5 Pillars/" class="tu-nav-item" title="5 Trụ Cột"><span class="tu-nav-emoji">🏛️</span><span class="tu-nav-text">5 Trụ Cột</span></a>
+  <a href="/vi/" class="tu-nav-item tu-nav-lang" data-lang-toggle title="Switch to Vietnamese"><span class="tu-nav-emoji">🌐</span><span class="tu-nav-text">VI</span></a>
+  <button class="tu-nav-item tu-nav-darkmode" title="Dark Mode" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button>
+</div>
+<!-- FLATTENED-TOP-NAV-END -->
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+
+        <a href="#content" class="md-skip">
+          Skip to content
+        </a>
+
+    </div>
+    <div data-md-component="announce">
+
+    </div>
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="/" title="Tennis Unified Library" class="md-header__button md-logo" aria-label="Tennis Unified Library" data-md-component="logo">
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
   </nav>
 </header>
-<main class="container">
-  <article class="article-page">
-    <h1 id="content">Kinetic Chain Peak Power Phase Alignment</h1>
-    <p class="article-meta">Article 039 | Pillar Biomechanics</p>
-    <div class="article-content">
-      <p>This article is a stub. Full content coming soon.</p>
+
+<div class="md-container" data-md-component="container">
+
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+
+<!-- TP-BREADCRUMB-START -->
+<p><a href="/">🏠 Home</a> &nbsp;›&nbsp; <a href="/vi/articles/">Tennis Fundamentals</a> &nbsp;›&nbsp; <a href="/vi/articles/co-sinh-hoc/">Cơ Sinh Học Ứng Dụng & Động Lực Học</a> &nbsp;›&nbsp; Kinetic Chain Peak Power Phase Alignment</p>
+<hr />
+<!-- TP-NAV-END -->
+
+<h1 id="content">Kinetic Chain Peak Power Phase Alignment</h1>
+
+
+<blockquote>
+<p><strong>CUE CHUYÊN GIA:</strong> Sức mạnh không phải tổng tốc độ phân đoạn — đó là căn chỉnh đỉnh của chúng. Khi khung chậu, thân, cánh tay, và vợt đỉnh theo trình tự trong 50 ms, bóng nhảy. Khi rải rác, bóng chết.</p>
+</blockquote>
+
+<h2>1. Tóm Tắt Điều Hành & Ý Đồ Thể Thao</h2>
+
+<p>Chuỗi động học tạo đỉnh sức mạnh chỉ khi tốc độ góc tối đa của mỗi phân đoạn xảy ra đúng thứ tự, với khoảng thời gian đúng. <strong>Căn chỉnh pha đỉnh sức mạnh</strong> là dấu hiệu thời gian của cú đánh hiệu quả: khung chậu đỉnh trước, thân theo (+10–20 ms), xoay trong cánh tay trên (+20–40 ms), đỉnh đầu vợt cuối cùng (+10–25 ms trước va chạm). Bài viết này định nghĩa cửa sổ căn chỉnh, giao thức đo lường, và đường khắc phục cho đỉnh rải rác.</p>
+
+<p>Ý định thể thao ba khía cạnh: thứ nhất, thay thế lời "định thời" mơ hồ bằng <strong>trình tự đỉnh chính xác mili-giây</strong>. Thứ hai, xác định <strong>rò rỉ nén</strong> — nơi đỉnh chen chúc (khóa xoay) hoặc đảo ngược (ngoài vi dẫn trước trong). Thứ ba, cung cấp <strong>thang huấn luyện đặc thù pha</strong> mở rộng cửa sổ căn chỉnh từ gốc lên.</p>
+
+<h2>2. Nền Tảng Cơ Sinh Học & Thần Kinh Học</h2>
+
+<h3>2.1 Trình Tự Đỉnh Gần-Đến-Xa</h3>
+
+<p>Dữ liệu phòng thí nghiệm (Fleisig, Kovacs, Elliott) về giao bóng và forehand đẳng cấp cho thấy thứ tự thời gian nhất quán:</p>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Phân Đoạn</th>
+<th style="text-align: left;">Đỉnh Tốc Độ Góc</th>
+<th style="text-align: left;">Thời Gian Tương Đối Tiếp Xúc</th>
+<th style="text-align: left;">Khoảng Điển Hình Tới Kế</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">Khung chậu</td>
+<td style="text-align: left;">400–600°/s</td>
+<td style="text-align: left;">−80 đến −100 ms</td>
+<td style="text-align: left;">+10–20 ms</td>
+</tr>
+<tr>
+<td style="text-align: left;">Thân (ngực)</td>
+<td style="text-align: left;">800–1000°/s</td>
+<td style="text-align: left;">−60 đến −80 ms</td>
+<td style="text-align: left;">+20–40 ms</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cánh tay trên (XN huyết)</td>
+<td style="text-align: left;">2000–2500°/s</td>
+<td style="text-align: left;">−30 đến −50 ms</td>
+<td style="text-align: left;">+10–25 ms</td>
+</tr>
+<tr>
+<td style="text-align: left;">Đầu vợt</td>
+<td style="text-align: left;">1500–2000°/s</td>
+<td style="text-align: left;">−10 đến −25 ms</td>
+<td style="text-align: left;">—</td>
+</tr>
+</tbody></table>
+
+<p><strong>Cửa sổ trình tự tổng</strong> từ đỉnh khung chậu đến đỉnh vợt là ~60–80 ms. Mỗi khoảng đại diện cho <strong>sự kiện truyền mô-men</strong> — phân đoạn gần giảm tốc, truyền mô-men góc đến phân đoạn xa qua liên kết cứng.</p>
+
+<h3>2.2 Chế Độ Thất Bại Căn Chỉnh</h3>
+
+<ul>
+<li><strong>Xoay khóa (đỉnh nén):</strong> Khung chậu và thân đỉnh trong <5 ms. Hông và vai xoay như một khối — không giãn X-Factor, không lưu năng lượng đàn hồi. Phổ biến ở người được dạy "xoay mọi thứ cùng lúc".</li>
+<li><strong>Trình tự đảo (ngoài vi dẫn trước):</strong> Cánh tay hoặc vợt đỉnh trước thân. Phân đoạn xa tạo tốc độ một mình, tải khuỷu/vai. Phổ biến người chơi dùng cánh tay chủ đạo.</li>
+<li><strong>Đỉnh rải rác (khoảng quá rộng):</strong> Khung chậu đỉnh, nghỉ dài, thân đỉnh. Năng lượng tan nhiệt trong lúc nghỉ. Phổ biến người cứng lõi yếu hoặc không nhận thức tách phân đoạn.</li>
+<li><strong>Đỉnh vợt sớm:</strong> Vợt đỉnh >40 ms trước tiếp xúc. Vợt giảm tốc vào bóng — rò rỉ "phanh gấp".</li>
+</ul>
+
+<h3>2.3 Chỉ Số Căn Chỉnh: Chỉ Số Kohérence Pha (PCI)</h3>
+
+<p><strong>PCI = 1 − (Σ|khoảng_thực_tế − khoảng_lý_tưởng| / tổng_cửa_sổ)</strong></p>
+
+<ul>
+<li>PCI ≥ 0.85: Căn chỉnh đẳng cấp</li>
+<li>PCI 0.70–0.85: Chức năng, rò rỉ nhỏ</li>
+<li>PCI 0.50–0.70: Sai lệch đáng kể</li>
+<li>PCI < 0.50: Sụp đổ trình tự</li>
+</ul>
+
+<h2>3. Trình Tự Thực Thi Kỹ Thuật (Checkpoints)</h2>
+
+<h3>Kiểm Toán 1 — Ánh Xạ Đỉnh Tốc Độ Cao</h3>
+
+<p><strong>Kiểm tra:</strong> Video 480 fps (hoặc IMU đeo). Theo dõi tốc độ góc khung chậu, thân, cánh tay trên, đầu vợt. Xác định khung đỉnh cho mỗi.</p>
+
+<ul>
+<li><strong>Đỗ:</strong> Thứ tự đúng; khoảng trong phạm vi lý tưởng; PCI ≥ 0.70.</li>
+<li><strong>Rò rỉ:</strong> Vi phạm thứ tự, khoảng ngoài phạm vi, PCI < 0.70.</li>
+</ul>
+
+<h3>Kiểm Toán 2 — Người Thay Bóng Y Tế Trình Tự</h3>
+
+<p><strong>Kiểm tra:</strong> Vận động viên ném xoay bóng y tế 3 kg vào tường. Đo khoảng ném so với ném xoay ngược (không dẫn khung chậu).</p>
+
+<ul>
+<li><strong>Đỗ:</strong> Ném trình tự đúng ≥25% xa hơn ném khóa.</li>
+<li><strong>Rò rỉ:</strong> <15% chênh — trình tự không tạo lợi thế đàn hồi.</li>
+</ul>
+
+<h3>Kiểm Toán 3 — Mối Quan Hệ Âm Thanh & Bay Bóng</h3>
+
+<p><strong>Kiểm tra:</strong> 10 cú đánh tối đa. Ghi âm thanh tiếp xúc + radar tốc độ.</p>
+
+<ul>
+<li><strong>Đỗ:</strong> "Pop" sắc nét nhất quán; CV tốc độ <5%.</li>
+<li><strong>Rò rỉ:</strong> Âm thanh biến (pop/thud hỗn hợp); CV tốc độ >10% — căn chỉnh không nhất quán quả-cho-quả.</li>
+</ul>
+
+<h2>4. Chỉ Số Hiệu Suất & Liều Lượng Huấn Luyện</h2>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Chỉ Số</th>
+<th style="text-align: left;">Đang Phát Triển</th>
+<th style="text-align: left;">Đạt Chuẩn</th>
+<th style="text-align: left;">Nâng Cao</th>
+<th style="text-align: left;">Đẳng Cấp</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">Khoảng khung chậu→thân</td>
+<td style="text-align: left;"><5 ms hoặc >30 ms</td>
+<td style="text-align: left;">5–15 ms hoặc 20–30 ms</td>
+<td style="text-align: left;">10–20 ms</td>
+<td style="text-align: left;">12–18 ms, nhất quán</td>
+</tr>
+<tr>
+<td style="text-align: left;">Khoảng thân→XN cánh tay</td>
+<td style="text-align: left;"><10 ms hoặc >50 ms</td>
+<td style="text-align: left;">10–25 ms hoặc 40–50 ms</td>
+<td style="text-align: left;">20–40 ms</td>
+<td style="text-align: left;">25–35 ms, nhất quán</td>
+</tr>
+<tr>
+<td style="text-align: left;">Khoảng XN cánh tay→vợt</td>
+<td style="text-align: left;"><5 ms hoặc >40 ms</td>
+<td style="text-align: left;">5–15 ms hoặc 30–40 ms</td>
+<td style="text-align: left;">10–25 ms</td>
+<td style="text-align: left;">12–22 ms, nhất quán</td>
+</tr>
+<tr>
+<td style="text-align: left;">Điểm PCI</td>
+<td style="text-align: left;"><0.50</td>
+<td style="text-align: left;">0.50–0.70</td>
+<td style="text-align: left;">0.70–0.85</td>
+<td style="text-align: left;">≥0.85</td>
+</tr>
+</tbody></table>
+
+<h3>Bài Tập Căn Chỉnh Pha</h3>
+
+<ul>
+<li><strong>Ràng buộc khung chậu dẫn trước:</strong> Dây quanh hông, HLV kéo lùi lúc tiếp xúc — ép khung chậu dẫn trước. 3×10.</li>
+<li><strong>Thang nhịp:</strong> Metronome 60, 80, 100, 120 bpm — người chơi phải giữ trình tự mỗi nhịp. 4×15.</li>
+<li><strong>Cue giảm tốc:</strong> "Dừng hông, ném vai" — huấn luyện cú dừng vi mô tạo khoảng.</li>
+<li><strong>Tần suất:</strong> 2×/tuần. Kiểm tra lại PCI 4 tuần/lần.</li>
+</ul>
+
+<h2>5. Lỗi Thường Gặp, Nguyên Nhân & Giao Thức Khắc Phục</h2>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Lỗi Quan Sát</th>
+<th style="text-align: left;">Mẫu Đỉnh</th>
+<th style="text-align: left;">Nguyên Nhân Gốc</th>
+<th style="text-align: left;">Giao Thức Khắc Phục</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">Hông và vai xoay cùng lúc</td>
+<td style="text-align: left;">Xoay khóa (khung chậu≈thân)</td>
+<td style="text-align: left;">HLV "xoay đơn vị" không tách; hông XN cứng</td>
+<td style="text-align: left;">"Hông đi, vai chờ." Khả năng hông + shadow dừng ở tách</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cánh tay bắn trước thân</td>
+<td style="text-align: left;">Đảo (cánh tay dẫn thân)</td>
+<td style="text-align: left;">Lịch sử dùng cánh tay chủ đạo; feed giỏ sớm</td>
+<td style="text-align: left;">"Trễ tay." Tiến trình khăn ném; bài lag</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nghỉ dài giữa khung chậu và thân</td>
+<td style="text-align: left;">Rải rác (>30 ms khoảng)</td>
+<td style="text-align: left;">Lõi mềm; không xung cứng lúc truyền</td>
+<td style="text-align: left;">Bài cứng bóng y tế; Pallof; "giật râu khung chậu"</td>
+</tr>
+<tr>
+<td style="text-align: left;">Vợt chậm trước tiếp xúc</td>
+<td style="text-align: left;">Đỉnh vợt sớm (>40 ms trước)</td>
+<td style="text-align: left;">Thiếu kiên nhẫn; điểm tiếp xúc không kỷ luật</td>
+<td style="text-align: left;">Bài đóng băng tiếp xúc; "đóng băng điểm bắt"</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tốc độ bóng không đều quả-cho-quả</td>
+<td style="text-align: left;">PCI biến đổi</td>
+<td style="text-align: left;">Không mẫu vận động ổn định; đoán định thời</td>
+<td style="text-align: left;">Bài ràng buộc nhịp; metronome; cùng nhịp mọi quả</td>
+</tr>
+</tbody></table>
+
+<h2>6. Sơ Đồ Chẩn Đoán & Ra Quyết Định</h2>
+
+<p><strong>Với Rò Rỉ Năng Lượng (Bài 003):</strong> Căn chỉnh pha <strong>là</strong> chiều thời gian phòng rò rỉ năng lượng. Kiểm toán Bài 003 kiểm tra rò rỉ không gian; bài này kiểm tra rò rỉ thời gian.</p>
+
+<p><strong>Với X-Factor (Bài 014):</strong> Giãn X-Factor động <strong>tạo ra</strong> khoảng khung chậu→thân. Không giãn = đỉnh nén = xoay khóa.</p>
+
+<p><strong>Với SSC (Bài 002):</strong> Mỗi khoảng là cửa sổ amortization SSC. Quá ngắn = không lưu đàn hồi. Quá dài = năng lượng tan.</p>
+
+<p><strong>Với Mỏi:</strong> Sụp đổ căn chỉnh cuối trận: khoảng khung chậu→thân co trước (mỏi lõi), rồi thân→cánh tay. Theo dõi PCI qua trận dự đoán sụp kỹ thuật.</p>
+
+<h2>7. Video Minh Họa & Phân Tích Kỹ Thuật</h2>
+
+<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin: 1.5rem 0;">
+  <iframe src="https://www.youtube-nocookie.com/embed/ri2NoXCaKBw" title="Kinetic Chain Peak Power Phase Alignment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
+<p><p><em>Video: Kinetic Chain Peak Power Phase Alignment (One Minute Tennis).</em></p></p>
+
+<h2>8. Ứng Dụng Liên Ngành & Phối Hợp Đa Trụ Cột</h2>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Điểm Kiểm</th>
+<th style="text-align: left;">Mức 1</th>
+<th style="text-align: left;">Mức 2</th>
+<th style="text-align: left;">Mức 3</th>
+<th style="text-align: left;">Mức 4</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">Trình tự khung chậu→thân</td>
+<td style="text-align: left;">Khóa hoặc đảo</td>
+<td style="text-align: left;">Khoảng có nhưng biến</td>
+<td style="text-align: left;">10–20 ms nhất quán</td>
+<td style="text-align: left;">12–18 ms, tự động</td>
+</tr>
+<tr>
+<td style="text-align: left;">Trình tự thân→cánh tay</td>
+<td style="text-align: left;">Đảo hoặc >50 ms</td>
+<td style="text-align: left;">20–50 ms biến</td>
+<td style="text-align: left;">25–35 ms ổn định</td>
+<td style="text-align: left;">25–35 ms, chống mỏi</td>
+</tr>
+<tr>
+<td style="text-align: left;">Trình tự cánh tay→vợt</td>
+<td style="text-align: left;">Đỉnh sớm hoặc >40 ms</td>
+<td style="text-align: left;">10–30 ms biến</td>
+<td style="text-align: left;">12–22 ms nhất quán</td>
+<td style="text-align: left;">15–20 ms, chính xác</td>
+</tr>
+<tr>
+<td style="text-align: left;">PCI quả-cho-quả</td>
+<td style="text-align: left;"><0.50, loạn</td>
+<td style="text-align: left;">0.50–0.65</td>
+<td style="text-align: left;">0.70–0.80</td>
+<td style="text-align: left;">≥0.85, mọi cú</td>
+</tr>
+</tbody></table>
+
+<p>Chấm điểm: 4–7 = kiểm toán căn chỉnh pha trượt. 8–11 = một khoảng rò rỉ. 12–14 = đã căn chỉnh, cần nhất quán. 15–16 = thạo thời gian.</p>
+
+<h2>9. Bảng Tự Đánh Giá (Rubric Đa Cấp Độ)</h2>
+
+<p><strong>MỤC TIÊU BUỔI:</strong> Căn chỉnh đỉnh khung chậu→thân→cánh tay→vợt trong 60–80 ms.</p>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Khối</th>
+<th style="text-align: left;">Bài Tập</th>
+<th style="text-align: left;">Liều Lượng</th>
+<th style="text-align: left;">Cue</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">A — Khởi Động (5')</td>
+<td style="text-align: left;">Ném bóng y tế: trình tự đúng vs khóa</td>
+<td style="text-align: left;">2×6 mỗi loại</td>
+<td style="text-align: left;">"Cảm nhận chênh 25%+"</td>
+</tr>
+<tr>
+<td style="text-align: left;">B — Mẫu Hình (10')</td>
+<td style="text-align: left;">Metronome 60→120 bpm, giữ trình tự</td>
+<td style="text-align: left;">4×15</td>
+<td style="text-align: left;">"Nhịp 1: hông; Nhịp 2: vai; Nhịp 3: vợt"</td>
+</tr>
+<tr>
+<td style="text-align: left;">C — Chuyển Giao (15')</td>
+<td style="text-align: left;">Rally, cue "DỪNG HÔNG — NÉM VAI"</td>
+<td style="text-align: left;">20 quả</td>
+<td style="text-align: left;">"Cú dừng vi mô tạo khoảng"</td>
+</tr>
+<tr>
+<td style="text-align: left;">D — Kiểm Toán (5')</td>
+<td style="text-align: left;">Video 480fps: đo 3 khoảng, tính PCI</td>
+<td style="text-align: left;">2 clip</td>
+<td style="text-align: left;">"PCI ≥0.70?"</td>
+</tr>
+</tbody></table>
+
+<p><strong>Tần suất:</strong> 2×/tuần. <strong>Cổng:</strong> PCI ≥0.70 trên 8/10 cú đánh kiểm toán.</p>
+
+<hr />
+
+<p><em>Tham chiếu chéo: Bài 002, 003, 014. Trụ I: Cơ Sinh Học Ứng Dụng & Động Học — TennisKB 200 Bài.</em></p>
+
+<!-- TP-NAV-START -->
+<p class="article-nav" style="margin-top:2rem;font-size:0.95rem"><a href="/vi/articles/VI-tenniskb-rotational-inertia-adjustment-during-mid-swing-tracking/">← Trước</a> &nbsp;|&nbsp; <a href="/vi/articles/">🏠 Trang chủ</a> &nbsp;|&nbsp; <a href="/vi/articles/VI-tenniskb-biomechanical-efficiency-audits-for-stroke-longevity/">Sau →</a></p>
+<!-- TP-NAV-END -->
+
+</article>
+
+
+
+          </div>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+
+      </main>
+
+        <footer class="md-footer">
+
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+
+    <div class="md-copyright__highlight">
+      © 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.
     </div>
-    <nav class="article-nav" aria-label="Article navigation">
-      <a class="prev" href="/vi/articles/VI-tenniskb-rotational-inertia-adjustment-during-mid-swing-tracking/">← Prev</a>
-      <a class="home" href="/vi/articles/">Home</a>
-      <a class="next" href="/vi/articles/VI-tenniskb-biomechanical-efficiency-audits-for-stroke-longevity/">Next →</a>
-    </nav>
-  </article>
-</main>
-<footer class="site-footer">
-  <p>Trang web này được xây dựng với ❤️ cho cộng đồng quần vợt Việt Nam 🎾 by Henry Phạm</p>
+
+</div>
+
+    </div>
+  </div>
 </footer>
-<script src="/search/main.js"></script>
+
+      </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+
+      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.path", "navigation.expand", "navigation.indexes", "navigation.prune", "navigation.prev_next", "navigation.footer", "search.highlight", "search.suggest", "alternate"], "search": "/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+
+        <script src="/assets/js/extra.js"></script>
+
+<footer class="tu-footer" style="background: var(--card); border-top: 1px solid var(--border); color: var(--ink-muted); padding: 1.5rem 1rem; text-align: center; font-size: 0.92rem; margin-top: 3rem;">
+<div style="font-size: 0.85rem; color: var(--accent-dark);">Trang web này được xây dựng với ❤️ cho cộng đồng quần vợt Việt Nam 🎾 by Henry Phạm</div>
+</footer>
 </body>
 </html>

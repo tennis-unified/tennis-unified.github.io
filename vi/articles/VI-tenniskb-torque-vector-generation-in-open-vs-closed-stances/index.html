@@ -1,46 +1,423 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Torque Vector Generation in Open vs. Closed Stances</title>
-  <link rel="stylesheet" href="/assets/styles.css">
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <link rel="alternate" hreflang="en" href="/en/articles/EN-tenniskb-torque-vector-generation-in-open-vs-closed-stances/">
-  <link rel="alternate" hreflang="vi" href="/vi/articles/VI-tenniskb-torque-vector-generation-in-open-vs-closed-stances/">
-  <link rel="alternate" hreflang="x-default" href="/en/articles/EN-tenniskb-torque-vector-generation-in-open-vs-closed-stances/">
+<!doctype html>
+<html lang="vi" class="no-js">
+  <head>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <meta name="description" content="TennisKB — Bài viết 001: Torque Vector Generation in Open vs. Closed Stances | Tennis Future Lab">
+
+        <meta name="author" content="Henry Pham">
+
+          <link rel="alternate" href="/en/articles/EN-tenniskb-torque-vector-generation-in-open-vs-closed-stances/" hreflang="en">
+
+          <link rel="alternate" href="/vi/articles/VI-tenniskb-torque-vector-generation-in-open-vs-closed-stances/" hreflang="vi">
+
+      <link rel="icon" href="/assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+
+        <title>Bài viết 001: Torque Vector Generation in Open vs. Closed Stances - Tennis Unified Library</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
+
+<script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+
+
+<link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
+<link rel="stylesheet" href="/assets/css/site.css"><script src="/assets/javascripts/lang-toggle.js" defer></script><script src="/assets/javascripts/darkmode.js" defer></script><script id="MathJax" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script>window.MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"]],processEscapes:true,processEnvironments:true},loader:{lineWidth:128}};</script>
 </head>
-<body>
-<header class="site-header">
-  <nav class="top-nav" aria-label="Main navigation">
-    <a class="brand" href="/vi/">Tennis Future Lab</a>
-    <ul class="nav-links">
-      <li><a href="/vi/">Home</a></li>
-      <li><a href="/vi/articles/">Articles 200</a></li>
-      <li><a href="/vi/about/">About</a></li>
-      <li><a href="/vi/contact/">Contact</a></li>
-    </ul>
-    <button class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<!-- FLATTENED-TOP-NAV-START -->
+<div class="tu-topnav">
+  <a href="/" class="tu-nav-item" title="Home"><span class="tu-nav-emoji">🏠</span><span class="tu-nav-text">Home</span></a>
+  <a href="/fundamentals/" class="tu-nav-item" title="Fundamentals"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Fundamentals</span></a>
+  <a href="/doubles/" class="tu-nav-item" title="Doubles"><span class="tu-nav-emoji">👥</span><span class="tu-nav-text">Doubles</span></a>
+  <a href="/stroke-analysis/" class="tu-nav-item" title="Stroke Analysis"><span class="tu-nav-emoji">🧠</span><span class="tu-nav-text">Stroke Analysis</span></a>
+  <a href="/coach-video-library/" class="tu-nav-item" title="Coach Library"><span class="tu-nav-emoji">🎓</span><span class="tu-nav-text">Coach Library</span></a>
+  <a href="/tennis-video-library/" class="tu-nav-item" title="Video Library"><span class="tu-nav-emoji">🎬</span><span class="tu-nav-text">Video Library</span></a>
+  <a href="/tennis-technical-reference/" class="tu-nav-item" title="Technical Reference"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Technical Reference</span></a>
+  <a href="/tnkb/" class="tu-nav-item" title="Knowledgebase"><span class="tu-nav-emoji">💡</span><span class="tu-nav-text">Knowledgebase</span></a>
+  <a href="/tennis-evolution/" class="tu-nav-item" title="Tennis Evolution"><span class="tu-nav-emoji">⚡</span><span class="tu-nav-text">Tennis Evolution</span></a>
+  <a href="/blog/" class="tu-nav-item" title="Blog"><span class="tu-nav-emoji">📝</span><span class="tu-nav-text">Blog</span></a>
+  <a href="/book/" class="tu-nav-item" title="Master Book"><span class="tu-nav-emoji">📕</span><span class="tu-nav-text">Master Book</span></a>
+  <a href="/books/" class="tu-nav-item" title="Books Catalog"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Books Catalog</span></a>
+  <a href="/vi/articles/" class="tu-nav-item" title="Tennis Fundamentals"><span class="tu-nav-emoji">🎯</span><span class="tu-nav-text">Tennis Fundamentals</span></a>
+  <a href="/vi/Tenniskb-5 Pillars/" class="tu-nav-item" title="5 Trụ Cột"><span class="tu-nav-emoji">🏛️</span><span class="tu-nav-text">5 Trụ Cột</span></a>
+  <a href="/vi/" class="tu-nav-item tu-nav-lang" data-lang-toggle title="Switch to Vietnamese"><span class="tu-nav-emoji">🌐</span><span class="tu-nav-text">VI</span></a>
+  <button class="tu-nav-item tu-nav-darkmode" title="Dark Mode" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button>
+</div>
+<!-- FLATTENED-TOP-NAV-END -->
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+
+        <a href="#content" class="md-skip">
+          Skip to content
+        </a>
+
+    </div>
+    <div data-md-component="announce">
+
+    </div>
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="/" title="Tennis Unified Library" class="md-header__button md-logo" aria-label="Tennis Unified Library" data-md-component="logo">
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
   </nav>
 </header>
-<main class="container">
-  <article class="article-page">
-    <h1 id="content">Torque Vector Generation in Open vs. Closed Stances</h1>
-    <p class="article-meta">Article 035 | Pillar Biomechanics</p>
-    <div class="article-content">
-      <p>This article is a stub. Full content coming soon.</p>
+
+<div class="md-container" data-md-component="container">
+
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+
+<!-- TP-BREADCRUMB-START -->
+<p><a href="/">🏠 Home</a> &nbsp;›&nbsp; <a href="/vi/articles/">Tennis Fundamentals</a> &nbsp;›&nbsp; <a href="/vi/articles/co-sinh-hoc/">Cơ Sinh Học Ứng Dụng & Động Lực Học</a> &nbsp;›&nbsp; Torque Vector Generation in Open vs. Closed Stances</p>
+<hr />
+<!-- TP-NAV-END -->
+
+<h1 id="content">Torque Vector Generation in Open vs. Closed Stances</h1>
+
+
+<blockquote>
+<p><strong>CUE CHUYÊN GIA:</strong> Tư thế đóng = truyền động lượng tuyến tính. Tư thế mở = sinh mô-men xoay. Vector mô-men xoay 90° giữa chúng. Huấn luyện cả hai; đừng để một trở thành động cơ duy nhất.</p>
+</blockquote>
+
+<h2>1. Tóm Tắt Điều Hành & Ý Đồ Thể Thao</h2>
+
+<p>Lựa chọn tư thế căn bản định hướng lại vector mô-men xoay điều khiển vợt. Ở tư thế đóng (trung lập/vuông), vector mô-men chủ đạo là <strong>trước-sau (tuyến tính)</strong> — trọng tâm dịch chuyển về trước dọc đường mục tiêu, và GRF F<sub>y</sub> điều khiển tốc độ vợt qua chuyển trọng lượng. Ở tư thế mở, vector mô-men chủ đạo là <strong>trong-ngoài (xoay)</strong> — chân ngoài đạp ngang vào sân, thu hoạch GRF F<sub>x</sub> để tạo xung lực xoay quanh trục thẳng đứng. Bài viết này lập bản đồ toán học vector, hậu quả tải khớp, và ý nghĩa huấn luyện của kiến trúc mô-men xoay mỗi tư thế.</p>
+
+<p>Ý định thể thao ba khía cạnh: thứ nhất, làm <strong>vector mô-men nhìn thấy và đo được</strong> — HLV có thể xem vận động viên sinh xung tuyến tính hay xoay bằng cách quan sát chân trước và khung chậu. Thứ hai, định nghĩa <strong>vùng chuyển tiếp</strong> (tư thế bán mở) nơi cả hai vector đóng góp và chuỗi động học phải hòa trộn chúng mà không triệt tiêu. Thứ ba, cung cấp bài tập khắc phục theo tư thế để vận động viên phát triển cả hai động cơ thay vì mặc định một.</p>
+
+<h2>2. Nền Tảng Cơ Sinh Học & Thần Kinh Học</h2>
+
+<h3>2.1 Tư Thế Đóng: Động Cơ Tuyến Tính</h3>
+
+<p>Ở tư thế đóng, chân sau ở sau chân trước tương đối với mục tiêu. Trọng tâm (COM) đi về trước dọc đường mục tiêu. Trình tự động học:</p>
+
+<p>1. <strong>Đạp chân sau:</strong> GRF sau (F<sub>y</sub> âm) đẩy COM về trước.</p>
+<p>2. <strong>Chặn chân trước:</strong> GRF trước (F<sub>y</sub> dương) giảm tốc COM, tạo xung lực hướng trước.</p>
+<p>3. <strong>Chuyển trọng lượng:</strong> Xung lực lên chân trước, qua lõi cứng, vào thân xoay.</p>
+
+<p><strong>Vector mô-men:</strong> Chủ yếu trong mặt sagittal. Bánh xe đòn là khoảng cách thẳng đứng từ đường COM đến khớp vai. Tốc độ vợt đến từ <strong>chuyển đổi tuyến-tính-sang-xoay</strong> tại thân — thân đi về trước xoay quanh hông trước như trục.</p>
+
+<p><strong>Tải khớp:</strong> Gối trước chịu mô-men trước lớn; hông trước chịu nén lớn. Cột thắt lưng chịu giam trước trong pha chuyển trọng lượng.</p>
+
+<h3>2.2 Tư Thế Mở: Động Cơ Xoay</h3>
+
+<p>Ở tư thế mở, hai chân song song đường chạy (hoặc chân trước hơi mở). COM ở giữa hơn; đạp là ngang. Trình tự động học:</p>
+
+<p>1. <strong>Đạp chân ngoài:</strong> GRF trong (F<sub>x</sub> về trung tâm sân) đẩy khung chậu ngang.</p>
+<p>2. <strong>Cú giật hông:</strong> Xung lực ngang xoay khung chậu quanh trục thẳng đứng ("hông bump").</p>
+<p>3. <strong>Giãn hệ chéo trước:</strong> Khung chậu xoay giãn hệ chéo trước (cơ斜 ngoài + adductors đối bên), lưu năng lượng đàn hồi.</p>
+<p>4. <strong>Giải phóng thân:</strong> Các hệ giãn co lại, xoay thân nhanh hơn khung chậu.</p>
+
+<p><strong>Vector mô-men:</strong> Chủ yếu trong mặt ngang (trục thẳng đứng). Bánh xe đòn là khoảng cách ngang từ chân ngoài đến đường giữa thân. Tốc độ vợt đến từ <strong>tổng hợp mô-men xoay thuần túy</strong> — khung chậu → thân → cánh tay → vợt.</p>
+
+<p><strong>Tải khớp:</strong> Gối ngoài chịu mô-men valgus lớn; hông chịu giam xoay lớn; cột thắt lưng chịu xoay. Cổ chân ngoài chịu yêu cầu inversion/eversion.</p>
+
+<h3>2.3 Tư Thế Bán Mở: Vùng Lai</h3>
+
+<p>Hầu hết forehand hiện đại nằm giữa hai cực. Vector mô-men là <strong>hợp lực</strong> của thành phần F<sub>x</sub> và F<sub>y</sub>. Góc vector hợp lực (arctan F<sub>x</sub>/F<sub>y</sub>) quyết định phân loại tư thế:</p>
+
+<ul>
+<li><strong>0–20°:</strong> Đóng chủ đạo (động cơ tuyến tính chính)</li>
+<li><strong>20–70°:</strong> Lai thực sự (cả hai động cơ hoạt động)</li>
+<li><strong>70–90°:</strong> Mở chủ đạo (động cơ xoay chính)</li>
+</ul>
+
+<p>Vùng nguy hiểm: nếu vận động viên <strong>cue đạp tuyến tính trong tư thế mở</strong> (cố "bước vào" bóng khi chân song song), thành phần F<sub>y</sub> chống lại F<sub>x</sub>, khung chậu nhận tín hiệu xung đột, và vector mô-men sụp đổ. Đây là rò rỉ liên quan tư thế phổ biến nhất.</p>
+
+<h2>3. Trình Tự Thực Thi Kỹ Thuật (Checkpoints)</h2>
+
+<h3>Kiểm Toán Vector — Góc Nhìn Bên (Mặt Sagittal)</h3>
+
+<p><strong>Kiểm tra:</strong> Quay từ bên. Vẽ quỹ đạo COM từ nạp đến tiếp xúc. Đo vị trí ngang COM.</p>
+
+<ul>
+<li><strong>Tư thế đóng:</strong> Vị trí COM ≥30 cm về trước.</li>
+<li><strong>Tư thế mở:</strong> Vị trí COM <10 cm về trước (có thể lùi nhẹ khi xoay).</li>
+<li><strong>Lai:</strong> 10–30 cm về trước.</li>
+</ul>
+
+<h3>Kiểm Toán Vector — Góc Nhìn Trước (Mặt Ngang)</h3>
+
+<p><strong>Kiểm tra:</strong> Quay từ trước. Theo dõi dấu hiệu hông ngoài. Đo vị trí ngang về trung tâm sân trong pha đạp.</p>
+
+<ul>
+<li><strong>Tư thế mở:</strong> Hông ngoài dịch >15 cm ngang (về trung tâm).</li>
+<li><strong>Tư thế đóng:</strong> Hông ngoài dịch <5 cm ngang.</li>
+</ul>
+
+<h3>Vector Xoay Khung Chậu</h3>
+
+<p><strong>Kiểm tra:</strong> Góc nhìn sau. Đo góc xoay khung chậu lúc nạp vs. tiếp xúc.</p>
+
+<ul>
+<li><strong>Tư thế đóng:</strong> Khung chậu xoay 30–45° (do thân xoay điều khiển).</li>
+<li><strong>Tư thế mở:</strong> Khung chậu xoay 60–90° (do hông bump + hệ chéo).</li>
+</ul>
+
+<h2>4. Chỉ Số Hiệu Suất & Liều Lượng Huấn Luyện</h2>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Chỉ Số</th>
+<th style="text-align: left;">Mục Tiêu Tư Thế Đóng</th>
+<th style="text-align: left;">Mục Tiêu Tư Thế Mở</th>
+<th style="text-align: left;">Mục Tiêu Lai</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">Vị trí COM về trước</td>
+<td style="text-align: left;">≥30 cm</td>
+<td style="text-align: left;">≤10 cm</td>
+<td style="text-align: left;">15–25 cm</td>
+</tr>
+<tr>
+<td style="text-align: left;">Đạp ngang hông ngoài</td>
+<td style="text-align: left;">≤5 cm</td>
+<td style="text-align: left;">≥15 cm</td>
+<td style="text-align: left;">8–12 cm</td>
+</tr>
+<tr>
+<td style="text-align: left;">Xoay khung chậu (nạp→tiếp xúc)</td>
+<td style="text-align: left;">30–45°</td>
+<td style="text-align: left;">60–90°</td>
+<td style="text-align: left;">45–65°</td>
+</tr>
+<tr>
+<td style="text-align: left;">Góc vector mô-men (arctan Fx/Fy)</td>
+<td style="text-align: left;">0–20°</td>
+<td style="text-align: left;">70–90°</td>
+<td style="text-align: left;">20–70°</td>
+</tr>
+</tbody></table>
+
+<h3>Bài Tập Đặc Thù Tư Thế</h3>
+
+<h4>Động Cơ Tư Thé Đóng</h4>
+<ul>
+<li><strong>Tiến trình bước-đánh:</strong> Bắt đầu tư thế đóng phóng đại, bước về trước mạnh, đánh. Giảm bước 3 tuần.</li>
+<li><strong>Ném bóng y tế ngực (về trước):</strong> 3 kg, 3×8 — huấn luyện xung mặt sagittal.</li>
+<li><strong>Cue:</strong> "Đẩy đất sau lưng, cưỡi chân trước."</li>
+</ul>
+
+<h4>Động Cơ Tư Thé Mở</h4>
+<ul>
+<li><strong>Bật ngang + đánh:</strong> Bật ngang khỏi chân ngoài, đỗ, đánh. Nhấn mạnh thu hoạch F<sub>x</sub>.</li>
+<li><strong>Ném bóng y tế xoay (phía):</strong> 3 kg, 3×8/mỗi bên — huấn luyện xung mặt ngang.</li>
+<li><strong>Cue:</strong> "Đạp hông ngoài vào sân, giật râu khung chậu."</li>
+</ul>
+
+<h4>Tích Hợp Lai</h4>
+<ul>
+<li><strong>Rally luân phiên tư thế:</strong> 2 đóng, 2 mở, 2 bán mở — ép chuyển vector.</li>
+<li><strong>HLV cue tư thế ngẫu nhiên:</strong> Vận động viên phải điều chỉnh vector mô-men tức thì.</li>
+</ul>
+
+<h2>5. Lỗi Thường Gặp, Nguyên Nhân & Giao Thức Khắc Phục</h2>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Lỗi Quan Sát</th>
+<th style="text-align: left;">Tư Thế</th>
+<th style="text-align: left;">Nguyên Nhân Gốc</th>
+<th style="text-align: left;">Giao Thức Khắc Phục</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">"Bước vào" cú đánh tư thế mở</td>
+<td style="text-align: left;">Mở</td>
+<td style="text-align: left;">Cue tuyến tính áp dụng cho tư thế xoay</td>
+<td style="text-align: left;">"Đừng bước — hãy xoay." Bài xoay kháng dây; bỏ bước về trước hoàn toàn 2 tuần</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ngã lùi tư thế đóng</td>
+<td style="text-align: left;">Đóng</td>
+<td style="text-align: left;">Chuyển trọng lượng không xong; chân sau không buông</td>
+<td style="text-align: left;">"Kết thúc chỉ trên chân trước." Bài kéo chân sau; ép kết thúc chân trước</td>
+</tr>
+<tr>
+<td style="text-align: left;">Khung chậu xoay mà thân không theo</td>
+<td style="text-align: left;">Mở</td>
+<td style="text-align: left;">Hệ chéo không giãn / lõi mềm</td>
+<td style="text-align: left;">Pallof + ném y tế xoay; cue "hông đi, vai chờ"</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gối valgus sụp tư thế mở</td>
+<td style="text-align: left;">Mở</td>
+<td style="text-align: left;">Mông giữa yếu; hông không ổn định tải ngang</td>
+<td style="text-align: left;">Clamshell, bước ngang dây, RDL một chân; kiểm tra độ rộng chân</td>
+</tr>
+<tr>
+<td style="text-align: left;">Vector mô-men lật ngửa giữa swing</td>
+<td style="text-align: left;">Lai</td>
+<td style="text-align: left;">Không cam kết tư thế; do dự giữa động cơ</td>
+<td style="text-align: left;">Cam kết tư thế lúc split-step. "Chọn động cơ trước khi bóng chạm đất."</td>
+</tr>
+</tbody></table>
+
+<h2>6. Sơ Đồ Chẩn Đoán & Ra Quyết Định</h2>
+
+<p><strong>Với Vector GRF (Bài 001):</strong> Tư thế đóng = thống trị F<sub>y</sub>. Tư thế mở = thống trị F<sub>x</sub>. Kiểm toán vector mô-men là bài kiểm tra ứng dụng thu hoạch vector GRF.</p>
+
+<p><strong>Với Cú Giật Hông (Bài 004):</strong> Hông bump là biểu hiện cơ học đầu tiên của vector mô-men tư thế mở. Không đạp ngang = không hông bump.</p>
+
+<p><strong>Với X-Factor (Bài 014):</strong> Tư thế đóng xây X-Factor qua xoay vai đối kháng hông ổn định. Tư thế mở xây X-Factor động qua tách hông dẫn trước. Cả hai đòi hỏi định hướng vector mô-men đúng.</p>
+
+<p><strong>Với Phòng Chấn Thương:</strong> Mô-men valgus gối tư thế mở tương quan nguy cơ ACL/MCL. Giam trước gối tư thế đóng tương quan đau đùi-khớp gối. Tăng cường theo tư thế là phòng ngừa theo khớp.</p>
+
+<h2>7. Video Minh Họa & Phân Tích Kỹ Thuật</h2>
+
+<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin: 1.5rem 0;">
+  <iframe src="https://www.youtube-nocookie.com/embed/pbuUnesx7Ls" title="Open Stance Torque Generation vs Closed Stance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
+<p><p><em>Video: Open Stance Torque Generation vs Closed Stance (Tennis Hacker).</em></p></p>
+
+<h2>8. Ứng Dụng Liên Ngành & Phối Hợp Đa Trụ Cột</h2>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Điểm Kiểm</th>
+<th style="text-align: left;">Mức 1</th>
+<th style="text-align: left;">Mức 2</th>
+<th style="text-align: left;">Mức 3</th>
+<th style="text-align: left;">Mức 4</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">Đạp COM tư thế đóng</td>
+<td style="text-align: left;">Không dịch trước</td>
+<td style="text-align: left;">10–20 cm</td>
+<td style="text-align: left;">25–35 cm</td>
+<td style="text-align: left;">≥40 cm, truyền mượt</td>
+</tr>
+<tr>
+<td style="text-align: left;">Đạp ngang tư thế mở</td>
+<td style="text-align: left;">Không dịch hông ngang</td>
+<td style="text-align: left;">5–10 cm</td>
+<td style="text-align: left;">12–18 cm</td>
+<td style="text-align: left;">≥20 cm, bùng nổ</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cam kết vector</td>
+<td style="text-align: left;">Lật giữa swing</td>
+<td style="text-align: left;">Đảo lúc chuyển</td>
+<td style="text-align: left;">Ổn định sau split-step</td>
+<td style="text-align: left;">Chọn trước, không dao động</td>
+</tr>
+<tr>
+<td style="text-align: left;">Thạo lai</td>
+<td style="text-align: left;">Chỉ một tư thế hoạt động</td>
+<td style="text-align: left;">Hai tư thế hoạt động</td>
+<td style="text-align: left;">Ba tư thế, có ý định</td>
+<td style="text-align: left;">Linh hoạt, chọn theo chiến thuật</td>
+</tr>
+</tbody></table>
+
+<p>Chấm điểm: 4–7 = kiểm toán tư thế cần thiết. 8–11 = một động cơ yếu. 12–14 = cả hai hoạt động, cần tích hợp. 15–16 = thạo tư thế.</p>
+
+<h2>9. Bảng Tự Đánh Giá (Rubric Đa Cấp Độ)</h2>
+
+<p><strong>MỤC TIÊU BUỔI:</strong> Phát triển cả hai động cơ vector mô-men.</p>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Khối</th>
+<th style="text-align: left;">Bài Tập</th>
+<th style="text-align: left;">Liều Lượng</th>
+<th style="text-align: left;">Cue</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">A — Khởi Động (5')</td>
+<td style="text-align: left;">Bật ngang một chân + đứng yên</td>
+<td style="text-align: left;">3×5/mỗi bên</td>
+<td style="text-align: left;">"Đổ hông, đỗ cứng"</td>
+</tr>
+<tr>
+<td style="text-align: left;">B — Mẫu Hình (10')</td>
+<td style="text-align: left;">Shadow: 2 đóng → 2 mở → 2 bán mở</td>
+<td style="text-align: left;">3 vòng</td>
+<td style="text-align: left;">"Chọn vector trước split"</td>
+</tr>
+<tr>
+<td style="text-align: left;">C — Chuyển Giao (15')</td>
+<td style="text-align: left;">HLV gọi: "DỌC" (đóng) vs "XOAY" (mở)</td>
+<td style="text-align: left;">20 bóng</td>
+<td style="text-align: left;">"Phối chế vector theo lệnh"</td>
+</tr>
+<tr>
+<td style="text-align: left;">D — Kiểm Toán (5')</td>
+<td style="text-align: left;">Video: đo vị trí COM, dịch hông, xoay khung chậu</td>
+<td style="text-align: left;">2 clip</td>
+<td style="text-align: left;">"Vector đúng tư thế?"</td>
+</tr>
+</tbody></table>
+
+<p><strong>Tần suất:</strong> 2×/tuần. <strong>Cổng:</strong> Video cho thấy vector đúng tư thế ≥80% cú đánh.</p>
+
+<hr />
+
+<p><em>Tham chiếu chéo: Bài 001, 004, 014, 034. Trụ I: Cơ Sinh Học Ứng Dụng & Động Học — TennisKB 200 Bài.</em></p>
+
+<!-- TP-NAV-START -->
+<p class="article-nav" style="margin-top:2rem;font-size:0.95rem"><a href="/vi/articles/VI-tenniskb-kinetic-transfer-from-quad-drive-to-pelvic-acceleration/">← Trước</a> &nbsp;|&nbsp; <a href="/vi/articles/">🏠 Trang chủ</a> &nbsp;|&nbsp; <a href="/vi/articles/VI-tenniskb-gravitational-acceleration-utilization-in-drop-feeds/">Sau →</a></p>
+<!-- TP-NAV-END -->
+
+</article>
+
+
+
+          </div>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+
+      </main>
+
+        <footer class="md-footer">
+
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+
+    <div class="md-copyright__highlight">
+      © 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.
     </div>
-    <nav class="article-nav" aria-label="Article navigation">
-      <a class="prev" href="/vi/articles/VI-tenniskb-kinetic-transfer-from-quad-drive-to-pelvic-acceleration/">← Prev</a>
-      <a class="home" href="/vi/articles/">Home</a>
-      <a class="next" href="/vi/articles/VI-tenniskb-gravitational-acceleration-utilization-in-drop-feeds/">Next →</a>
-    </nav>
-  </article>
-</main>
-<footer class="site-footer">
-  <p>Trang web này được xây dựng với ❤️ cho cộng đồng quần vợt Việt Nam 🎾 by Henry Phạm</p>
+
+</div>
+
+    </div>
+  </div>
 </footer>
-<script src="/search/main.js"></script>
+
+      </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+
+      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.path", "navigation.expand", "navigation.indexes", "navigation.prune", "navigation.prev_next", "navigation.footer", "search.highlight", "search.suggest", "alternate"], "search": "/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+
+        <script src="/assets/js/extra.js"></script>
+
+<footer class="tu-footer" style="background: var(--card); border-top: 1px solid var(--border); color: var(--ink-muted); padding: 1.5rem 1rem; text-align: center; font-size: 0.92rem; margin-top: 3rem;">
+<div style="font-size: 0.85rem; color: var(--accent-dark);">Trang web này được xây dựng với ❤️ cho cộng đồng quần vợt Việt Nam 🎾 by Henry Phạm</div>
+</footer>
 </body>
 </html>

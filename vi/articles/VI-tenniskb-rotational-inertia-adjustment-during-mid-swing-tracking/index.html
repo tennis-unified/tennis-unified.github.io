@@ -1,46 +1,402 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rotational Inertia Adjustment during Mid-Swing Tracking</title>
-  <link rel="stylesheet" href="/assets/styles.css">
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <link rel="alternate" hreflang="en" href="/en/articles/EN-tenniskb-rotational-inertia-adjustment-during-mid-swing-tracking/">
-  <link rel="alternate" hreflang="vi" href="/vi/articles/VI-tenniskb-rotational-inertia-adjustment-during-mid-swing-tracking/">
-  <link rel="alternate" hreflang="x-default" href="/en/articles/EN-tenniskb-rotational-inertia-adjustment-during-mid-swing-tracking/">
+<!doctype html>
+<html lang="vi" class="no-js">
+  <head>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <meta name="description" content="TennisKB — Bài viết 001: Rotational Inertia Adjustment during Mid-Swing Tracking | Tennis Future Lab">
+
+        <meta name="author" content="Henry Pham">
+
+          <link rel="alternate" href="/en/articles/EN-tenniskb-rotational-inertia-adjustment-during-mid-swing-tracking/" hreflang="en">
+
+          <link rel="alternate" href="/vi/articles/VI-tenniskb-rotational-inertia-adjustment-during-mid-swing-tracking/" hreflang="vi">
+
+      <link rel="icon" href="/assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+
+        <title>Bài viết 001: Rotational Inertia Adjustment during Mid-Swing Tracking - Tennis Unified Library</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
+
+<script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+
+
+<link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
+<link rel="stylesheet" href="/assets/css/site.css"><script src="/assets/javascripts/lang-toggle.js" defer></script><script src="/assets/javascripts/darkmode.js" defer></script><script id="MathJax" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script>window.MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"]],processEscapes:true,processEnvironments:true},loader:{lineWidth:128}};</script>
 </head>
-<body>
-<header class="site-header">
-  <nav class="top-nav" aria-label="Main navigation">
-    <a class="brand" href="/vi/">Tennis Future Lab</a>
-    <ul class="nav-links">
-      <li><a href="/vi/">Home</a></li>
-      <li><a href="/vi/articles/">Articles 200</a></li>
-      <li><a href="/vi/about/">About</a></li>
-      <li><a href="/vi/contact/">Contact</a></li>
-    </ul>
-    <button class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<!-- FLATTENED-TOP-NAV-START -->
+<div class="tu-topnav">
+  <a href="/" class="tu-nav-item" title="Home"><span class="tu-nav-emoji">🏠</span><span class="tu-nav-text">Home</span></a>
+  <a href="/fundamentals/" class="tu-nav-item" title="Fundamentals"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Fundamentals</span></a>
+  <a href="/doubles/" class="tu-nav-item" title="Doubles"><span class="tu-nav-emoji">👥</span><span class="tu-nav-text">Doubles</span></a>
+  <a href="/stroke-analysis/" class="tu-nav-item" title="Stroke Analysis"><span class="tu-nav-emoji">🧠</span><span class="tu-nav-text">Stroke Analysis</span></a>
+  <a href="/coach-video-library/" class="tu-nav-item" title="Coach Library"><span class="tu-nav-emoji">🎓</span><span class="tu-nav-text">Coach Library</span></a>
+  <a href="/tennis-video-library/" class="tu-nav-item" title="Video Library"><span class="tu-nav-emoji">🎬</span><span class="tu-nav-text">Video Library</span></a>
+  <a href="/tennis-technical-reference/" class="tu-nav-item" title="Technical Reference"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Technical Reference</span></a>
+  <a href="/tnkb/" class="tu-nav-item" title="Knowledgebase"><span class="tu-nav-emoji">💡</span><span class="tu-nav-text">Knowledgebase</span></a>
+  <a href="/tennis-evolution/" class="tu-nav-item" title="Tennis Evolution"><span class="tu-nav-emoji">⚡</span><span class="tu-nav-text">Tennis Evolution</span></a>
+  <a href="/blog/" class="tu-nav-item" title="Blog"><span class="tu-nav-emoji">📝</span><span class="tu-nav-text">Blog</span></a>
+  <a href="/book/" class="tu-nav-item" title="Master Book"><span class="tu-nav-emoji">📕</span><span class="tu-nav-text">Master Book</span></a>
+  <a href="/books/" class="tu-nav-item" title="Books Catalog"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Books Catalog</span></a>
+  <a href="/vi/articles/" class="tu-nav-item" title="Tennis Fundamentals"><span class="tu-nav-emoji">🎯</span><span class="tu-nav-text">Tennis Fundamentals</span></a>
+  <a href="/vi/Tenniskb-5 Pillars/" class="tu-nav-item" title="5 Trụ Cột"><span class="tu-nav-emoji">🏛️</span><span class="tu-nav-text">5 Trụ Cột</span></a>
+  <a href="/vi/" class="tu-nav-item tu-nav-lang" data-lang-toggle title="Switch to Vietnamese"><span class="tu-nav-emoji">🌐</span><span class="tu-nav-text">VI</span></a>
+  <button class="tu-nav-item tu-nav-darkmode" title="Dark Mode" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button>
+</div>
+<!-- FLATTENED-TOP-NAV-END -->
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+
+        <a href="#content" class="md-skip">
+          Skip to content
+        </a>
+
+    </div>
+    <div data-md-component="announce">
+
+    </div>
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="/" title="Tennis Unified Library" class="md-header__button md-logo" aria-label="Tennis Unified Library" data-md-component="logo">
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
   </nav>
 </header>
-<main class="container">
-  <article class="article-page">
-    <h1 id="content">Rotational Inertia Adjustment during Mid-Swing Tracking</h1>
-    <p class="article-meta">Article 038 | Pillar Biomechanics</p>
-    <div class="article-content">
-      <p>This article is a stub. Full content coming soon.</p>
+
+<div class="md-container" data-md-component="container">
+
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+
+<!-- TP-BREADCRUMB-START -->
+<p><a href="/">🏠 Home</a> &nbsp;›&nbsp; <a href="/vi/articles/">Tennis Fundamentals</a> &nbsp;›&nbsp; <a href="/vi/articles/co-sinh-hoc/">Cơ Sinh Học Ứng Dụng & Động Lực Học</a> &nbsp;›&nbsp; Rotational Inertia Adjustment during Mid-Swing Tracking</p>
+<hr />
+<!-- TP-NAV-END -->
+
+<h1 id="content">Rotational Inertia Adjustment during Mid-Swing Tracking</h1>
+
+
+<blockquote>
+<p><strong>CUE CHUYÊN GIA:</strong> Vợt không phải trọng lượng cố định — nó là công cụ quán tính biến đổi. Vận động viên đẳng cấp rút gọn bán kính khi cần tốc độ, kéo dài khi cần kiểm soát. Điều chỉnh xảy ra trong 100 ms trước tiếp xúc.</p>
+</blockquote>
+
+<h2>1. Tóm Tắt Điều Hành & Ý Đồ Thể Thao</h2>
+
+<p>Mô-men quán tính (I) của hệ vợt-cánh tay không hằng số. Bằng thay đổi khoảng cách đầu vợt đến trục xoay (vai → khuỷu → cổ tay), vận động viên thay đổi I lên tới 40% trong swing về trước. <strong>Điều chỉnh quán tính giữa swing</strong> này là số biến ẩn: swing gọn (I thấp) gia tốc nhanh hơn cho điều chỉnh muộn; swing dài (I cao) lưu nhiều mô-men xoay cho sức mạnh. Bài viết này định nghĩa vật lý, yêu cầu theo dõi, và kiểm toán quản lý quán tính thời gian thực.</p>
+
+<p>Ý định thể thao ba khía cạnh: thứ nhất, làm <strong>quán tính thành biến số kiểm soát được</strong> — không phải thông số thiết bị cố định. Thứ hai, định nghĩa <strong>liên kết theo dõi-quán tính</strong> — người chơi theo dõi muộn <strong>bắt buộc</strong> rút gọn bán kính để kịp; người chơi theo dõi sớm <strong>có thể</strong> kéo dài cho sức mạnh. Thứ ba, kiểm toán rò rỉ <strong>"quán tính cứng"</strong> — người chơi dùng một bán kính swing bất kể tốc độ bóng, xoay, hoặc vị trí sân.</p>
+
+<h2>2. Nền Tảng Cơ Sinh Học & Thần Kinh Học</h2>
+
+<h3>2.1 Mô-Men Quán Tính Trong Swing Tennis</h3>
+
+<p>Hệ vợt-cánh tay xoay quanh ba trục nối tiếp:</p>
+
+<p>1. <strong>Vai (khớp GH):</strong> Cả cánh tay + vợt, I<sub>vai</sub> ≈ 0.8–1.2 kg·m² (kéo dài) vs. 0.4–0.6 kg·m² (gọn).</p>
+<p>2. <strong>Khuỷu:</strong> Cánh tay trước + vợt, I<sub>khuỷu</sub> ≈ 0.15–0.25 kg·m².</p>
+<p>3. <strong>Cổ tay:</strong> Chỉ vợt, I<sub>cổ tay</sub> = swingweight / 1000 ≈ 0.03–0.04 kg·m².</p>
+
+<p>Tổng quán tính hiệu dụng phụ thuộc vào <strong>bán kính quay</strong> (k) từ mỗi trục: I = m·k². Bằng uốn khuỷu (rút gọn k từ vai) hoặc adduct/abduct cổ tay (thay k từ khuỷu), người chơi thay đổi I thời gian thực.</p>
+
+<h3>2.2 Đối Chọi Theo Dõi-Quán Tính</h3>
+
+<p><strong>Theo dõi sớm (bóng nhận ra >1.5 s trước tiếp xúc):</strong> Người chơi có thời gian kéo dài bán kính — đòn bẩy dài, I cao, lưu tối đa mô-men xoay. Dùng cho: rally bóng, cơ hội tấn công, giao bóng đầu.</p>
+
+<p><strong>Theo dõi muộn (bóng nhận ra <0.8 s trước tiếp xúc):</strong> Người chơi <strong>bắt buộc</strong> rút gọn bán kính — swing gọn, I thấp, gia tốc góc nhanh hơn. Dùng cho: trả giao bóng, half-volley, phòng thủ căng, thay đổi tốc độ bất ngờ.</p>
+
+<p>Chuyển đổi được điều khiển bằng <strong>phương trình gia tốc góc</strong>: α = τ/I. Với mô-men xoay cơ τ cho trước, giảm I một nửaضاع gấp đôi α. Vận động viên đẳng cấp <strong>tự động</strong> chọn bán kính cho phép vợt đạt tốc độ tiếp xúc yêu cầu trong thời gian có sẵn.</p>
+
+<h3>2.3 Cơ Chế Điều Chỉnh Giữa Swing</h3>
+
+<p>Điều chỉnh xảy ra trong <strong>cửa sổ 100 ms trước tiếp xúc</strong>:</p>
+
+<ul>
+<li><strong>Uốn/duỗi khuỷu:</strong> ±15° thay đổi bán kính quay từ vai ~15%.</li>
+<li><strong>Chuyển/khuyết túc cổ tay:</strong> ±20° thay đổi hướng và chiều dài hiệu dụng vợt.</li>
+<li><strong>Xoay trong/ngoài cánh tay trước:</strong> Định hướng lại mặt vợt không thay đổi I đáng kể.</li>
+</ul>
+
+<p>Điều chỉnh là <strong>feedforward</strong> (dự báo từ theo dõi) không phải feedback (phản ứng lỗi). Não dự báo tốc độ tiếp xúc cần từ quỹ đạo bóng và đặt trước bán kính swing.</p>
+
+<h2>3. Trình Tự Thực Thi Kỹ Thuật (Checkpoints)</h2>
+
+<h3>Kiểm Toán 1 — Đo Bán Kính Swing</h3>
+
+<p><strong>Kiểm tra:</strong> Video tốc độ cao (240+ fps) từ bên. Theo dõi dấu hiệu vai, khuỷu, cổ tay, đỉnh vợt. Tính bán kính quay từ vai tại 3 mốc: đỉnh backswing, 100 ms trước tiếp xúc, tiếp xúc.</p>
+
+<ul>
+<li><strong>Đỗ:</strong> Bán kính thay đổi phù hợp loại bóng: kéo dài (≥0.85 m) bóng rally, gọn (≤0.70 m) trả/phòng thủ.</li>
+<li><strong>Rò rỉ:</strong> Bán kính cố định (biến thiên <5%) mọi loại bóng — quán tính cứng.</li>
+</ul>
+
+<h3>Kiểm Toán 2 — Độ Trễ Theo Dõi-Đến-Điều Chỉnh</h3>
+
+<p><strong>Kiểm tra:</strong> Cùng video. Đánh dấu khung nhận ra bóng (cố định Quiet Eye hoặc nhãn cầu đến vùng tiếp xúc). Đánh dấu khung bắt đầu thay đổi bán kính (chuyển động khuỷu/cổ tay).</p>
+
+<ul>
+<li><strong>Đỗ:</strong> Thay đổi bán kính bắt đầu trong 50 ms sau quyết định theo dõi.</li>
+<li><strong>Rò rỉ:</strong> >100 ms độ trễ — phản ứng, không phải dự báo điều chỉnh.</li>
+</ul>
+
+<h3>Kiểm Toán 3 — Nhất Quán Tốc Độ Tiếp Xúc</h3>
+
+<p><strong>Kiểm tra:</strong> Radar 10 quả mỗi: rally (80 mph), rally nhanh (100 mph), trả giao bóng (120 mph). Đo tốc độ đầu vợt lúc tiếp xúc.</p>
+
+<ul>
+<li><strong>Đỗ:</strong> Tốc độ vợt trong 10% mọi điều kiện (quán tính điều chỉnh duy trì đầu ra).</li>
+<li><strong>Rò rỉ:</strong> Tốc độ vợt giảm >20% bóng nhanh — quán tính không rút gọn, không kịp gia tốc kịp thời.</li>
+</ul>
+
+<h2>4. Chỉ Số Hiệu Suất & Liều Lượng Huấn Luyện</h2>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Chỉ Số</th>
+<th style="text-align: left;">Đang Phát Triển</th>
+<th style="text-align: left;">Đạt Chuẩn</th>
+<th style="text-align: left;">Nâng Cao</th>
+<th style="text-align: left;">Đẳng Cấp</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">Phạm vi bán kính (kéo dài → gọn)</td>
+<td style="text-align: left;"><10% thay đổi</td>
+<td style="text-align: left;">10–20%</td>
+<td style="text-align: left;">20–30%</td>
+<td style="text-align: left;">30–40%, tự động</td>
+</tr>
+<tr>
+<td style="text-align: left;">Độ trễ theo dõi-điều chỉnh</td>
+<td style="text-align: left;">>200 ms</td>
+<td style="text-align: left;">100–200 ms</td>
+<td style="text-align: left;">50–100 ms</td>
+<td style="text-align: left;"><50 ms, feedforward</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nhất quán tốc độ vợt (3 tốc độ bóng)</td>
+<td style="text-align: left;">>30% giảm</td>
+<td style="text-align: left;">20–30% giảm</td>
+<td style="text-align: left;">10–20% giảm</td>
+<td style="text-align: left;"><10% giảm</td>
+</tr>
+<tr>
+<td style="text-align: left;">Kiểm soát swing gọn (half-volley)</td>
+<td style="text-align: left;">Mất kiểm soát</td>
+<td style="text-align: left;">Hướng ổn định</td>
+<td style="text-align: left;">Độ sâu + hướng</td>
+<td style="text-align: left;">Đặt tấn công</td>
+</tr>
+</tbody></table>
+
+<h3>Bài Tập Điều Chỉnh Quán Tính</h3>
+
+<ul>
+<li><strong>Shadow bán kính biến đổi:</strong> HLV gọi "dài" hoặc "ngắn" — người chơi kéo dài hoặc gọn giữa swing. 3×20.</li>
+<li><strong>Rally thang tốc độ:</strong> Feed: chậm, trung bình, nhanh, chậm — người chơi phải điều chỉnh bán kính mỗi quả. 20 quả.</li>
+<li><strong>Mô phỏng trả giao bóng:</strong> Máy 110–130 mph — ép bán kính gọn. 2×20 trả.</li>
+<li><strong>Vợt có trọng lượng (±50 g):</strong> Cảm nhận thay đổi quán tính; huấn luyện điều chỉnh dưới tải.</li>
+<li><strong>Tần suất:</strong> 2×/tuần. Kiểm toán đầy đủ hàng tháng.</li>
+</ul>
+
+<h2>5. Lỗi Thường Gặp, Nguyên Nhân & Giao Thức Khắc Phục</h2>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Lỗi Quan Sát</th>
+<th style="text-align: left;">Nguyên Nhân Gốc</th>
+<th style="text-align: left;">Giao Thức Khắc Phục</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">Một bán kính swing mọi bóng</td>
+<td style="text-align: left;">Không nhận thức quán tính là biến; mẫu đơn lằn</td>
+<td style="text-align: left;">Shadow bán kính biến đổi; rally thang tốc độ; giáo dục rõ "rút gọn cho tốc độ, kéo dài cho sức mạnh"</td>
+</tr>
+<tr>
+<td style="text-align: left;">Trễ bóng nhanh, sớm bóng chậm</td>
+<td style="text-align: left;">Liên kết theo dõi-quán tính gãy; thay đổi bán kính phản ứng</td>
+<td style="text-align: left;">Huấn luyện Quiet Eye (Bài 041) + ép quyết định bán kính sớm lúc split-step</td>
+</tr>
+<tr>
+<td style="text-align: left;">Đầu vợt rung lúc tiếp xúc</td>
+<td style="text-align: left;">Cổ tay điều chỉnh quán tính quá muộn (feedback không feedforward)</td>
+<td style="text-align: left;">Khóa góc cổ tay tại 100 ms trước tiếp xúc; toàn bộ điều chỉnh ở khuỷu</td>
+</tr>
+<tr>
+<td style="text-align: left;">Không tạo sức mạnh bóng dễ</td>
+<td style="text-align: left;">Mặc định bán kính gọn (an toàn)</td>
+<td style="text-align: left;">"Kéo dài cho quả bóng quà." Bài đòn bẩy dài có ý thức feed chậm</td>
+</tr>
+<tr>
+<td style="text-align: left;">Khuỷu bay/khóa ngẫu nhiên</td>
+<td style="text-align: left;">Không ổn định gần; thay đổi quán tính làm mất ổn định vai</td>
+<td style="text-align: left;">Ổn định bả vai (Bài 018); xung cứng lõi (Bài 017) điều kiện tiên quyết</td>
+</tr>
+</tbody></table>
+
+<h2>6. Sơ Đồ Chẩn Đoán & Ra Quyết Định</h2>
+
+<p><strong>Với Mô-Men Quán Tính (Bài 007):</strong> Swingweight là quán tính <strong>cơ sở</strong>. Điều chỉnh giữa swing là <strong>phạm vi động</strong> quanh cơ sở đó.</p>
+
+<p><strong>Với Quiet Eye (Bài 041):</strong> Quyết định theo dõi (khi/đâu cố định) điều khiển chọn trước quán tính. QE muộn = ép swing gọn.</p>
+
+<p><strong>Với SSC (Bài 002):</strong> Swing gọn = cửa sổ amortization ngắn hơn. SSC phải nhanh hơn để khớp bán kính giảm.</p>
+
+<p><strong>Với Học Kỹ Năng:</strong> Huấn luyện bán kính biến đổi là định nghĩa <strong>học biệt biệt</strong> — luyện cùng nhiệm vụ với ràng buộc thay đổi để xây dựng hấp dẫn thích ứng.</p>
+
+<h2>7. Video Minh Họa & Phân Tích Kỹ Thuật</h2>
+
+<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin: 1.5rem 0;">
+  <iframe src="https://www.youtube-nocookie.com/embed/526H8zXwp2w" title="Rotational Inertia Adjustments During Mid-Swing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
+<p><p><em>Video: Rotational Inertia Adjustments During Mid-Swing (Essential Tennis).</em></p></p>
+
+<h2>8. Ứng Dụng Liên Ngành & Phối Hợp Đa Trụ Cột</h2>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Điểm Kiểm</th>
+<th style="text-align: left;">Mức 1</th>
+<th style="text-align: left;">Mức 2</th>
+<th style="text-align: left;">Mức 3</th>
+<th style="text-align: left;">Mức 4</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">Thích ứng bán kính</td>
+<td style="text-align: left;">Cố định bán kính</td>
+<td style="text-align: left;">Nhận thức nhưng thủ công</td>
+<td style="text-align: left;">Tự động khi đổi tốc độ</td>
+<td style="text-align: left;">Vô thức, tối ưu</td>
+</tr>
+<tr>
+<td style="text-align: left;">Đồng bộ theo dõi-điều chỉnh</td>
+<td style="text-align: left;">>200 ms trễ</td>
+<td style="text-align: left;">100–200 ms</td>
+<td style="text-align: left;">50–100 ms</td>
+<td style="text-align: left;"><50 ms, dự báo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tốc độ vợt bóng nhanh</td>
+<td style="text-align: left;">Sụp đổ</td>
+<td style="text-align: left;">Giữ 70%</td>
+<td style="text-align: left;">Giữ 85%</td>
+<td style="text-align: left;">Giữ 95%+</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sức mạnh bóng dễ</td>
+<td style="text-align: left;">Đánh hụt</td>
+<td style="text-align: left;">Trung bình</td>
+<td style="text-align: left;">Dùng đòn bẩy dài đầy đủ</td>
+<td style="text-align: left;">Tối đa, có kiểm soát</td>
+</tr>
+</tbody></table>
+
+<p>Chấm điểm: 4–7 = kiểm toán quán tính trượt. 8–11 = bán kính cứng. 12–14 = đang điều chỉnh, tinh chỉnh tốc độ. 15–16 = thạo quán tính.</p>
+
+<h2>9. Bảng Tự Đánh Giá (Rubric Đa Cấp Độ)</h2>
+
+<p><strong>MỤC TIÊU BUỔI:</strong> Điều chỉnh quán tính feedforward theo tốc độ bóng.</p>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Khối</th>
+<th style="text-align: left;">Bài Tập</th>
+<th style="text-align: left;">Liều Lượng</th>
+<th style="text-align: left;">Cue</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">A — Khởi Động (5')</td>
+<td style="text-align: left;">Shadow: HLV gọi "DÀI" / "NGẮN" giữa swing</td>
+<td style="text-align: left;">3×20</td>
+<td style="text-align: left;">"Khuỷu quyết định bán kính"</td>
+</tr>
+<tr>
+<td style="text-align: left;">B — Mẫu Hình (10')</td>
+<td style="text-align: left;">Rally thang: chậm → trung bình → nhanh → chậm</td>
+<td style="text-align: left;">20 quả</td>
+<td style="text-align: left;">"Bóng nhanh = rút gọn; bóng chậm = kéo dài"</td>
+</tr>
+<tr>
+<td style="text-align: left;">C — Chuyển Giao (10')</td>
+<td style="text-align: left;">Máy trả giao bóng 110+ mph</td>
+<td style="text-align: left;">2×20</td>
+<td style="text-align: left;">"Gọn, kịp thời, đừng vung dài"</td>
+</tr>
+<tr>
+<td style="text-align: left;">D — Kiểm Toán (5')</td>
+<td style="text-align: left;">Radar 3 tốc độ: kiểm tra nhất quán tốc độ vợt</td>
+<td style="text-align: left;">10 quả/tốc độ</td>
+<td style="text-align: left;">"Tốc độ vợt ±10%?"</td>
+</tr>
+</tbody></table>
+
+<p><strong>Tần suất:</strong> 2×/tuần. <strong>Cổng:</strong> Radar cho thấy nhất quán ≥90% qua 3 tốc độ.</p>
+
+<hr />
+
+<p><em>Tham chiếu chéo: Bài 002, 007, 041. Trụ I: Cơ Sinh Học Ứng Dụng & Động Học — TennisKB 200 Bài.</em></p>
+
+<!-- TP-NAV-START -->
+<p class="article-nav" style="margin-top:2rem;font-size:0.95rem"><a href="/vi/articles/VI-tenniskb-passive-ligamentous-locking-vs-active-muscle-tension/">← Trước</a> &nbsp;|&nbsp; <a href="/vi/articles/">🏠 Trang chủ</a> &nbsp;|&nbsp; <a href="/vi/articles/VI-tenniskb-kinetic-chain-peak-power-phase-alignment/">Sau →</a></p>
+<!-- TP-NAV-END -->
+
+</article>
+
+
+
+          </div>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+
+      </main>
+
+        <footer class="md-footer">
+
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+
+    <div class="md-copyright__highlight">
+      © 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.
     </div>
-    <nav class="article-nav" aria-label="Article navigation">
-      <a class="prev" href="/vi/articles/VI-tenniskb-passive-ligamentous-locking-vs-active-muscle-tension/">← Prev</a>
-      <a class="home" href="/vi/articles/">Home</a>
-      <a class="next" href="/vi/articles/VI-tenniskb-kinetic-chain-peak-power-phase-alignment/">Next →</a>
-    </nav>
-  </article>
-</main>
-<footer class="site-footer">
-  <p>Trang web này được xây dựng với ❤️ cho cộng đồng quần vợt Việt Nam 🎾 by Henry Phạm</p>
+
+</div>
+
+    </div>
+  </div>
 </footer>
-<script src="/search/main.js"></script>
+
+      </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+
+      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.path", "navigation.expand", "navigation.indexes", "navigation.prune", "navigation.prev_next", "navigation.footer", "search.highlight", "search.suggest", "alternate"], "search": "/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+
+        <script src="/assets/js/extra.js"></script>
+
+<footer class="tu-footer" style="background: var(--card); border-top: 1px solid var(--border); color: var(--ink-muted); padding: 1.5rem 1rem; text-align: center; font-size: 0.92rem; margin-top: 3rem;">
+<div style="font-size: 0.85rem; color: var(--accent-dark);">Trang web này được xây dựng với ❤️ cho cộng đồng quần vợt Việt Nam 🎾 by Henry Phạm</div>
+</footer>
 </body>
 </html>

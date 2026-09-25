@@ -1,46 +1,493 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Proprioceptive Feedback Loops in High-Velocity Tracking</title>
-  <link rel="stylesheet" href="/assets/styles.css">
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <link rel="alternate" hreflang="en" href="/en/articles/EN-tenniskb-proprioceptive-feedback-loops-in-high-velocity-tracking/">
-  <link rel="alternate" hreflang="vi" href="/vi/articles/VI-tenniskb-proprioceptive-feedback-loops-in-high-velocity-tracking/">
-  <link rel="alternate" hreflang="x-default" href="/en/articles/EN-tenniskb-proprioceptive-feedback-loops-in-high-velocity-tracking/">
+<!doctype html>
+<html lang="vi" class="no-js">
+  <head>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <meta name="description" content="TennisKB — Bài viết 001: Proprioceptive Feedback Loops in High-Velocity Tracking | Tennis Future Lab">
+
+        <meta name="author" content="Henry Pham">
+
+          <link rel="alternate" href="/en/articles/EN-tenniskb-proprioceptive-feedback-loops-in-high-velocity-tracking/" hreflang="en">
+
+          <link rel="alternate" href="/vi/articles/VI-tenniskb-proprioceptive-feedback-loops-in-high-velocity-tracking/" hreflang="vi">
+
+      <link rel="icon" href="/assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+
+        <title>Bài viết 001: Proprioceptive Feedback Loops in High-Velocity Tracking - Tennis Unified Library</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
+
+<script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+
+
+<link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
+<link rel="stylesheet" href="/assets/css/site.css"><script src="/assets/javascripts/lang-toggle.js" defer></script><script src="/assets/javascripts/darkmode.js" defer></script><script id="MathJax" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script>window.MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"]],processEscapes:true,processEnvironments:true},loader:{lineWidth:128}};</script>
 </head>
-<body>
-<header class="site-header">
-  <nav class="top-nav" aria-label="Main navigation">
-    <a class="brand" href="/vi/">Tennis Future Lab</a>
-    <ul class="nav-links">
-      <li><a href="/vi/">Home</a></li>
-      <li><a href="/vi/articles/">Articles 200</a></li>
-      <li><a href="/vi/about/">About</a></li>
-      <li><a href="/vi/contact/">Contact</a></li>
-    </ul>
-    <button class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<!-- FLATTENED-TOP-NAV-START -->
+<div class="tu-topnav">
+  <a href="/" class="tu-nav-item" title="Home"><span class="tu-nav-emoji">🏠</span><span class="tu-nav-text">Home</span></a>
+  <a href="/fundamentals/" class="tu-nav-item" title="Fundamentals"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Fundamentals</span></a>
+  <a href="/doubles/" class="tu-nav-item" title="Doubles"><span class="tu-nav-emoji">👥</span><span class="tu-nav-text">Doubles</span></a>
+  <a href="/stroke-analysis/" class="tu-nav-item" title="Stroke Analysis"><span class="tu-nav-emoji">🧠</span><span class="tu-nav-text">Stroke Analysis</span></a>
+  <a href="/coach-video-library/" class="tu-nav-item" title="Coach Library"><span class="tu-nav-emoji">🎓</span><span class="tu-nav-text">Coach Library</span></a>
+  <a href="/tennis-video-library/" class="tu-nav-item" title="Video Library"><span class="tu-nav-emoji">🎬</span><span class="tu-nav-text">Video Library</span></a>
+  <a href="/tennis-technical-reference/" class="tu-nav-item" title="Technical Reference"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Technical Reference</span></a>
+  <a href="/tnkb/" class="tu-nav-item" title="Knowledgebase"><span class="tu-nav-emoji">💡</span><span class="tu-nav-text">Knowledgebase</span></a>
+  <a href="/tennis-evolution/" class="tu-nav-item" title="Tennis Evolution"><span class="tu-nav-emoji">⚡</span><span class="tu-nav-text">Tennis Evolution</span></a>
+  <a href="/blog/" class="tu-nav-item" title="Blog"><span class="tu-nav-emoji">📝</span><span class="tu-nav-text">Blog</span></a>
+  <a href="/book/" class="tu-nav-item" title="Master Book"><span class="tu-nav-emoji">📕</span><span class="tu-nav-text">Master Book</span></a>
+  <a href="/books/" class="tu-nav-item" title="Books Catalog"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Books Catalog</span></a>
+  <a href="/vi/articles/" class="tu-nav-item" title="Tennis Fundamentals"><span class="tu-nav-emoji">🎯</span><span class="tu-nav-text">Tennis Fundamentals</span></a>
+  <a href="/vi/Tenniskb-5 Pillars/" class="tu-nav-item" title="5 Trụ Cột"><span class="tu-nav-emoji">🏛️</span><span class="tu-nav-text">5 Trụ Cột</span></a>
+  <a href="/vi/" class="tu-nav-item tu-nav-lang" data-lang-toggle title="Switch to Vietnamese"><span class="tu-nav-emoji">🌐</span><span class="tu-nav-text">VI</span></a>
+  <button class="tu-nav-item tu-nav-darkmode" title="Dark Mode" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button>
+</div>
+<!-- FLATTENED-TOP-NAV-END -->
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+
+        <a href="#content" class="md-skip">
+          Skip to content
+        </a>
+
+    </div>
+    <div data-md-component="announce">
+
+    </div>
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="/" title="Tennis Unified Library" class="md-header__button md-logo" aria-label="Tennis Unified Library" data-md-component="logo">
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
   </nav>
 </header>
-<main class="container">
-  <article class="article-page">
-    <h1 id="content">Proprioceptive Feedback Loops in High-Velocity Tracking</h1>
-    <p class="article-meta">Article 043 | Pillar Neurology</p>
-    <div class="article-content">
-      <p>This article is a stub. Full content coming soon.</p>
+
+<div class="md-container" data-md-component="container">
+
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+
+<!-- TP-BREADCRUMB-START -->
+<p><a href="/">🏠 Home</a> &nbsp;›&nbsp; <a href="/vi/articles/">Tennis Fundamentals</a> &nbsp;›&nbsp; <a href="/vi/articles/than-kinh/">Thần Kinh Thể Thao & Nhận Thức</a> &nbsp;›&nbsp; Proprioceptive Feedback Loops in High-Velocity Tracking</p>
+<hr />
+<!-- TP-NAV-END -->
+
+<h1 id="content">Proprioceptive Feedback Loops in High-Velocity Tracking</h1>
+
+
+<blockquote>
+<p><strong>CUE CHUYÊN GIA:</strong> Bạn không cảm nhận quả bóng — bạn cảm nhận khớp mình. Chùm cơ báo vị trí vợt; GTO báo bạn có đang nén nó. Tin vào phần cứng; phần mềm đã viết xong.</p>
+</blockquote>
+
+<h2>1. Tóm Tắt Điều Hành & Ý Đồ Thể Thao</h2>
+
+<p><strong>Cảm nhận bản thân</strong> — giác quan vị trí, tốc độ, và lực chi — là hệ cảm giác duy đủ nhanh để hướng dẫn cú đánh tennis 300 ms. Độ trễ thị giác (>100 ms) và thính giác (>50 ms) quá chậm để thao tác tiếp xúc. Bài viết này lập bản đồ <strong>phần cứng cảm nhận bản thân</strong> (chùm cơ, cơ quan Golgi, thụ thể khớp), <strong>điều khiển vòng gamma</strong> đặt độ nhạy chùm, <strong>bốn pha tông</strong> của cú đánh, và giao thức kiểm toán phát hiện suy giảm cảm nhận bản thân dưới tải tốc độ cao.</p>
+
+<p>Ý định thể thao ba khía cạnh: thứ nhất, làm <strong>độ trung thực cảm nhận bản thân thành chất lượng có thể huấn luyện</strong> — không phải đặc điểm cố định. Thứ hai, định nghĩa <strong>trình tự dịch tông</strong> (hỗ trợ → đàn hồi → biểu hiện → giải phóng) làm dấu hiệu cảm nhận bản thân của cú đánh hiệu quả. Thứ ba, phơi bày rò rỉ <strong>"mù cầm nắm"</strong> — nơi vận động viên mất nhận thức mặt vợt vì áp lực cầm quá cao (bão hòa chùm) hoặc quá thấp (mất tỷ số tín hiệu-nhiễu).</p>
+
+<h2>2. Cơ Sinh Học-Thần Kinh Nền Tảng</h2>
+
+<h3>2.1 Phần Cứng Cảm Nhận Bản Thân</h3>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Thụ Thể</th>
+<th style="text-align: left;">Vị Trí</th>
+<th style="text-align: left;">Tín Hiệu</th>
+<th style="text-align: left;">Độ Trễ</th>
+<th style="text-align: left;">Vai Trò Tennis</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">Chùm Cơ (Ia)</td>
+<td style="text-align: left;">Bụng cơ (sợi nội fu)</td>
+<td style="text-align: left;">Độ dài + tốc độ giãn</td>
+<td style="text-align: left;">~30 ms đến vỏ</td>
+<td style="text-align: left;">Vị trí chi, tốc độ chuyển động, định thời SSC</td>
+</tr>
+<tr>
+<td style="text-align: left;">Chùm Cơ (II)</td>
+<td style="text-align: left;">Bụng cơ</td>
+<td style="text-align: left;">Độ dài tĩnh</td>
+<td style="text-align: left;">~30 ms</td>
+<td style="text-align: left;">Góc khớp lúc tiếp xúc, góc mặt vợt</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cơ Quan Golgi (Ib)</td>
+<td style="text-align: left;">Gối cơ-gân</td>
+<td style="text-align: left;">Lực (căng)</td>
+<td style="text-align: left;">~30 ms</td>
+<td style="text-align: left;">Áp lực cầm, lực va chạm, bảo vệ quá tải</td>
+</tr>
+<tr>
+<td style="text-align: left;">Thụ Thể Khớp (Ruffini, Pacini)</td>
+<td style="text-align: left;">Bao, dây chằng</td>
+<td style="text-align: left;">Góc khớp, gia tốc, cuối miền</td>
+<td style="text-align: left;">~20 ms</td>
+<td style="text-align: left;">Phát hiện khóa dây chằng (Bài 037), an toàn cuối miền</td>
+</tr>
+<tr>
+<td style="text-align: left;">Da (Meissner, Merkel)</td>
+<td style="text-align: left;">Da (lòng bàn tay, ngón)</td>
+<td style="text-align: left;">Áp lực, giam, rung</td>
+<td style="text-align: left;">~20 ms</td>
+<td style="text-align: left;">Cảm nhận rãnh cầm, vị trí va chạm bóng, rung dây</td>
+</tr>
+</tbody></table>
+
+<h3>2.2 Vòng Gamma: Điều Khiển Độ Nhạy Chùm Cơ</h3>
+
+<p>Độ nhạy chùm cơ được đặt bởi <strong>xuất thần kinh gamma (fusimotor)</strong> — tín hiệu thần kinh riêng co sợi nội fu, "nạp trước" chùm. Đây là <strong>kiểm soát gain cảm nhận bản thân</strong>:</p>
+
+<ul>
+<li><strong>Xuất gamma cao (tông hỗ trợ/biểu hiện):</strong> Chùm căng, độ nhạy cao với vi-giãn. Dùng cho: tư thế chờ, cứng hóa tiếp xúc, volley chính xác.</li>
+<li><strong>Xuất gamma thấp (tông đàn hồi):</strong> Chùm lỏng, độ nhạy thấp. Cho phép giãn lớn, nhanh không kích hoạt phản xạ giãn. Dùng cho: nạp backswing, amortization SSC.</li>
+<li><strong>Rối loạn gamma:</strong> Gamma cao lúc backswing = cứng hóa sớm (phanh co-hủy). Gamma thấp lúc tiếp xúc = không ổn định va chạm (vung vung).</li>
+</ul>
+
+<h3>2.3 Bốn Pha Tông (Chữ Ký Cảm Nhận Bản Thân)</h3>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Pha</th>
+<th style="text-align: left;">Cửa Sổ Cú Đánh</th>
+<th style="text-align: left;">Xuất Gamma</th>
+<th style="text-align: left;">Trạng Thái Chùm</th>
+<th style="text-align: left;">Vai Trò GTO</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">1. Tông Hỗ Trợ</td>
+<td style="text-align: left;">Chờ → Đổ split-step</td>
+<td style="text-align: left;">Cao</td>
+<td style="text-align: left;">Căng, gain cao</td>
+<td style="text-align: left;">Theo dõi tải tư thế</td>
+</tr>
+<tr>
+<td style="text-align: left;">2. Tông Đàn Hồi</td>
+<td style="text-align: left;">Ra sau → Nạp tối đa</td>
+<td style="text-align: left;">Thấp</td>
+<td style="text-align: left;">Lỏng, cho giãn</td>
+<td style="text-align: left;">Im lặng (không quá tải)</td>
+</tr>
+<tr>
+<td style="text-align: left;">3. Tông Biểu Hiện</td>
+<td style="text-align: left;">Swing về trước → Tiếp xúc</td>
+<td style="text-align: left;">Cao (xung)</td>
+<td style="text-align: left;">Căng, khóa vị trí</td>
+<td style="text-align: left;">Đỉnh lúc va chạm (bảo vệ)</td>
+</tr>
+<tr>
+<td style="text-align: left;">4. Giải Phóng Nhanh</td>
+<td style="text-align: left;">Sau tiếp xúc → Phục hồi</td>
+<td style="text-align: left;">Tắt</td>
+<td style="text-align: left;">Reset</td>
+<td style="text-align: left;">Ức chế co quá mức</td>
+</tr>
+</tbody></table>
+
+<h2>3. Trình Tự Thực Thi Kỹ Thuật (Checkpoints)</h2>
+
+<h3>Kiểm Toán 1 — Trình Tự Pha Tông (Video + EMG Proxy)</h3>
+
+<p><strong>Kiểm tra:</strong> Video tốc độ cao + EMG bề mặt (nếu có) hoặc proxy động học. Xác định 4 pha bằng đặc điểm chuyển động khớp:</p>
+
+<ul>
+<li><strong>Hỗ trợ:</strong> Split-step — khớp cứng, biên độ nhỏ.</li>
+<li><strong>Đàn hồi:</strong> Ra sau — biên độ lớn, mượt, chất "roi".</li>
+<li><strong>Biểu hiện:</strong> Vùng tiếp xúc — cứng hóa đột ngột, biên độ giảm.</li>
+<li><strong>Giải phóng:</strong> Theo đuôi — thư giãn nhanh, suy giảm biên độ lớn.</li>
+</ul>
+
+<p><strong>Đỗ:</strong> Phân biệt 4 pha rõ rệt; pha đàn hồi cho thấy miền khớp lớn; pha biểu hiện cho thấy xung cứng <50 ms.</p>
+<p><strong>Rò rỉ:</strong> Pha mờ (không chuyển đổi rõ đàn hồi→biểu hiện), hoặc pha biểu hiện >100 ms (căng mãn), hoặc pha hỗ trợ thiếu (cơ sở không ổn định).</p>
+
+<h3>Kiểm Toán 2 — Độ Trung Thực Áp Lực Cầm (Bài Kiểm Tra "Rãnh")</h3>
+
+<p><strong>Kiểm tra:</strong> Vận động viên nhắm mắt. HLV xoay vợt trong tay đến rãnh ngẫu nhiên. Vận động viên nhận diện rãnh (1–8) chỉ bằng cảm giác. 10 lần.</p>
+
+<ul>
+<li><strong>Đỗ:</strong> ≥9/10 đúng ở áp lực 3/10 swing; ≥7/10 ở 8/10 áp lực.</li>
+<li><strong>Rò rỉ:</strong> <7/10 ở 3/10 (mất tín hiệu) hoặc <5/10 ở 8/10 (bão hòa) — mù cầm nắm.</li>
+</ul>
+
+<h3>Kiểm Toán 3 — Cảm Nhận Bản Thân Điểm Tiếp Xúc</h3>
+
+<p><strong>Kiểm tra:</strong> Vận động viên đánh 10 quả nhắm mắt (HLV feed drop có thể dự đoán). Sau mỗi quả, vận động viên đánh dấu điểm tiếp xúc cảm nhận trên sơ đồ dây (giữa, 3, 6, 9, 12 giờ, đầu, cổ).</p>
+
+<ul>
+<li><strong>Đỗ:</strong> ≥8/10 trong 1 vùng so với tiếp xúc thực.</li>
+<li><strong>Rò rỉ:</strong> <6/10 chính xác — nhận thức vị trí va chạm suy giảm.</li>
+</ul>
+
+<h3>Kiểm Toán 4 — Màn Lọc Rối Loạn Vòng Gamma</h3>
+
+<p><strong>Kiểm tra:</strong> Chuyển động luân phiên nhanh: uốn/duỗi cổ tay tốc độ tối đa 10 giây. Quan sát run, kẹt, hoặc sụp đổ nhịp.</p>
+
+<ul>
+<li><strong>Đỗ:</strong> Mượt, có nhịp, tốc độ đỉnh ≥180°/s duy trì.</li>
+<li><strong>Rò rỉ:</strong> Kẹt (co-hủy), run, suy giảm tốc độ >20% — xuất gamma kẹt cao.</li>
+</ul>
+
+<h2>4. Chỉ Số Hiệu Suất & Liều Lượng Huấn Luyện</h2>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Chỉ Số</th>
+<th style="text-align: left;">Đang Phát Triển</th>
+<th style="text-align: left;">Đạt Chuẩn</th>
+<th style="text-align: left;">Nâng Cao</th>
+<th style="text-align: left;">Đẳng Cấp</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">Độ rõ pha tông</td>
+<td style="text-align: left;">Mờ, 2 pha thấy</td>
+<td style="text-align: left;">3 pha thấy</td>
+<td style="text-align: left;">4 pha rõ rệt</td>
+<td style="text-align: left;">4 pha, biểu hiện <50 ms</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bài rãnh (áp lực 3/10)</td>
+<td style="text-align: left;"><5/10</td>
+<td style="text-align: left;">5–7/10</td>
+<td style="text-align: left;">8–9/10</td>
+<td style="text-align: left;">10/10, tức thì</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bài rãnh (áp lực 8/10)</td>
+<td style="text-align: left;"><3/10 (bão hòa)</td>
+<td style="text-align: left;">4–5/10</td>
+<td style="text-align: left;">6–7/10</td>
+<td style="text-align: left;">≥8/10 (không bão hòa)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nhận diện tiếp xúc nhắm mắt</td>
+<td style="text-align: left;"><4/10</td>
+<td style="text-align: left;">4–6/10</td>
+<td style="text-align: left;">7–8/10</td>
+<td style="text-align: left;">≥9/10, vùng chính xác</td>
+</tr>
+<tr>
+<td style="text-align: left;">Luân phiên nhanh (10 giây)</td>
+<td style="text-align: left;">Kẹt, run</td>
+<td style="text-align: left;">Gãy ở 6 giây</td>
+<td style="text-align: left;">Giữ 10 giây, suy giảm nhỏ</td>
+<td style="text-align: left;">10 giây, tốc độ ổn</td>
+</tr>
+</tbody></table>
+
+<h3>Bài Tập Huấn Luyện Cảm Nhận Bản Thân</h3>
+
+<ul>
+<li><strong>Thang gamma:</strong> Shadow swing 10%, 30%, 50%, 80%, áp lực cầm 3/10 — cảm nhận gain chùm thay đổi. 5 phút/ngày.</li>
+<li><strong>Chữa mù rãnh:</strong> Nhắm mắt, HLV đổi rãnh cầm mỗi 3 swing. Vận động viên điều chỉnh không nhìn. 20 swing.</li>
+<li><strong>Huấn luyện vị trí va chạm:</strong> Vùng đích dán trên dây (giữa, 3, 9, 12). Vận động viên gọi vùng trước khi mở mắt. 20 quả.</li>
+<li><strong>Khuếch đại da:</strong> Overgrip có rãnh nổi; shadow swing tay trần — tăng cường đầu vào da.</li>
+<li><strong>Huấn luyện nhiễu loạn:</strong> HLV gõ nhẹ khung vợt giữa swing — vận động viên phải giữ góc mặt (phản xạ chùm/GTO). 15 swing.</li>
+<li><strong>Tần suất:</strong> Khối cảm nhận bản thân 5 phút/ngày. Kiểm toán đầy đủ 2 tuần/lần.</li>
+</ul>
+
+<h2>5. Lỗi Thường Gặp, Nguyên Nhân & Giao Thức Khắc Phục</h2>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Lỗi Quan Sát</th>
+<th style="text-align: left;">Nguyên Nhân Gốc</th>
+<th style="text-align: left;">Giao Thức Khắc Phục</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">Không cảm nhận góc mặt vợt</td>
+<td style="text-align: left;">Áp lực cầm quá cao (bão hòa chùm) hoặc quá thấp (nhiễu)</td>
+<td style="text-align: left;">Bài rãnh tìm áp lực tối ưu (thường 3–4/10 swing, 8–9/10 tiếp xúc)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ra sau cứng, giật</td>
+<td style="text-align: left;">Xuất gamma cao lúc pha đàn hồi (không cho giãn)</td>
+<td style="text-align: left;">"Vợt nặng, tay nhẹ." Ra sau chậm 2/10 cầm; thang gamma</td>
+</tr>
+<tr>
+<td style="text-align: left;">Theo đuôi vung vung</td>
+<td style="text-align: left;">Không xung tông biểu hiện; pha giải phóng bắt đầu sớm</td>
+<td style="text-align: left;">Bài đóng băng tiếp xúc; "giật cổ tay lúc tiếp xúc, rồi buông"</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bỏ lỡ điểm tiếp xúc liên tục</td>
+<td style="text-align: left;">Tín hiệu da/chùm suy giảm; không huấn luyện nhắm mắt</td>
+<td style="text-align: left;">Drop-feed nhắm mắt; dán vùng đích; bài rãnh</td>
+</tr>
+<tr>
+<td style="text-align: left;">Áp lực cーム đột ngột ngẫu nhiên</td>
+<td style="text-align: left;">Rối loạn gamma; lo âu → xuất fusimotor</td>
+<td style="text-align: left;">Thở miễn dịch (Bài 074); biofeedback áp lực (cảm biến cầm)</td>
+</tr>
+</tbody></table>
+
+<h2>6. Sơ Đồ Chẩn Đoán & Ra Quyết Định</h2>
+
+<p><strong>Với QE (Bài 041):</strong> QE cung cấp neo thị giác; cảm nhận bản thân cung cấp neo cơ thể. Cả hai phải đồng ý cửa sổ tiếp xúc. Không khớp = lỗi không gian.</p>
+
+<p><strong>Với VOR (Bài 042):</strong> Ổn định đầu bảo toàn đóng góp tiền đình cho cảm nhận bản thân (vị trí đầu-trên-thân). Thất bại VOR = trôi khung tham chiếu cảm nhận bản thân.</p>
+
+<p><strong>Với SSC (Bài 002):</strong> Pha tông đàn hồi <strong>là</strong> cửa sổ nạp SSC. Gamma-thấp = chùm cho giãn. Gamma-cao = chùm kích hoạt phản xạ sớm = SSC gãy.</p>
+
+<p><strong>Với Khóa Dây Chằng (Bài 037):</strong> Thụ thể khớp báo khóa cuối miền. Nếu vận động viên không đến khóa, thụ thể khớp im lặng, cơ phải cứng = rò rỉ căng chủ động.</p>
+
+<p><strong>Với Chấn Thương:</strong> Áp lực cầm mãn tính >6/10 swing = bão hòa chùm = mất kiểm soát mặt = đánh lệch tâm = viêm khuỷu. Kiểm toán cảm nhận bản thân ngăn cascade.</p>
+
+<h2>7. Video Minh Họa & Phân Tích Kỹ Thuật</h2>
+
+<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin: 1.5rem 0;">
+  <iframe src="https://www.youtube-nocookie.com/embed/uRZJU2NCz9c" title="Proprioceptive Feedback Loops in High-Velocity Ball Tracking" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
+<p><p><em>Video: Proprioceptive Feedback Loops in High-Velocity Ball Tracking (Ramon Osa Tennis).</em></p></p>
+
+<h2>8. Ứng Dụng Liên Ngành & Phối Hợp Đa Trụ Cột</h2>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Điểm Kiểm</th>
+<th style="text-align: left;">Mức 1</th>
+<th style="text-align: left;">Mức 2</th>
+<th style="text-align: left;">Mức 3</th>
+<th style="text-align: left;">Mức 4</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">Pha tông</td>
+<td style="text-align: left;">Một tốc độ, một tông</td>
+<td style="text-align: left;">Hai pha thấy</td>
+<td style="text-align: left;">Ba pha rõ</td>
+<td style="text-align: left;">Bốn pha, biểu hiện <50 ms</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nhận diện rãnh (cầm nhẹ)</td>
+<td style="text-align: left;"><5/10</td>
+<td style="text-align: left;">5–7/10</td>
+<td style="text-align: left;">8–9/10</td>
+<td style="text-align: left;">10/10, tức thì</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nhận diện rãnh (cầm chắc)</td>
+<td style="text-align: left;"><3/10</td>
+<td style="text-align: left;">4–5/10</td>
+<td style="text-align: left;">6–7/10</td>
+<td style="text-align: left;">≥8/10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nhận diện tiếp xúc nhắm mắt</td>
+<td style="text-align: left;"><4/10</td>
+<td style="text-align: left;">4–6/10</td>
+<td style="text-align: left;">7–8/10</td>
+<td style="text-align: left;">≥9/10, chính xác vùng</td>
+</tr>
+</tbody></table>
+
+<p>Chấm điểm: 4–7 = kiểm toán cảm nhận bản thân trượt. 8–11 = mù cầm nắm hoặc rò rỉ tông. 12–14 = chức năng, tinh chỉnh áp lực. 15–16 = thạo cảm nhận bản thân.</p>
+
+<h2>9. Bảng Tự Đánh Giá (Rubric Đa Cấp Độ)</h2>
+
+<p><strong>MỤC TIÊU BUỔI:</strong> Cảm nhận bản thân chính xác, áp lực cầm tối ưu, 4 pha tông rõ rệt.</p>
+
+<table>
+<thead><tr>
+<th style="text-align: left;">Khối</th>
+<th style="text-align: left;">Bài Tập</th>
+<th style="text-align: left;">Liều Lượng</th>
+<th style="text-align: left;">Cue</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left;">A — Khởi Động (5')</td>
+<td style="text-align: left;">Thang gamma: shadow 10-30-50-80% cầm 3/10</td>
+<td style="text-align: left;">5 phút</td>
+<td style="text-align: left;">"Cảm nhận gain chùm thay đổi"</td>
+</tr>
+<tr>
+<td style="text-align: left;">B — Mẫu Hình (10')</td>
+<td style="text-align: left;">Chữa mù rãnh: nhắm mắt, HLV đổi rãnh 3 swing/lần</td>
+<td style="text-align: left;">20 swing</td>
+<td style="text-align: left;">"Điều chỉnh không nhìn"</td>
+</tr>
+<tr>
+<td style="text-align: left;">C — Chuyển Giao (10')</td>
+<td style="text-align: left;">Drop-feed nhắm mắt + dán vùng đích</td>
+<td style="text-align: left;">20 quả</td>
+<td style="text-align: left;">"Gọi vùng trước khi mở mắt"</td>
+</tr>
+<tr>
+<td style="text-align: left;">D — Kiểm Toán (5')</td>
+<td style="text-align: left;">Bài rãnh 2 áp lực + luân phiên nhanh 10 giây</td>
+<td style="text-align: left;">2 lượt</td>
+<td style="text-align: left;">"≥8/10 nhẹ? ≥7/10 chắc? 10s mượt?"</td>
+</tr>
+</tbody></table>
+
+<p><strong>Tần suất:</strong> 5 phút/ngày. <strong>Cổng:</strong> Bài rãnh ≥8/10 cả hai áp lực; 4 pha tông rõ rệt video; luân phiên nhanh 10s ổn định.</p>
+
+<hr />
+
+<p><em>Tham chiếu chéo: Bài 002, 037, 041, 042, 074. Trụ II: Thần Kinh Thể Thao & Kỹ Thuật — TennisKB 200 Bài.</em></p>
+
+<!-- TP-NAV-START -->
+<p class="article-nav" style="margin-top:2rem;font-size:0.95rem"><a href="/vi/articles/VI-tenniskb-vestibular-ocular-reflex-vor-and-head-stabilization/">← Trước</a> &nbsp;|&nbsp; <a href="/vi/articles/">🏠 Trang chủ</a> &nbsp;|&nbsp; <a href="/vi/articles/VI-tenniskb-amygdala-hijack-mitigation-under-match-pressure/">Sau →</a></p>
+<!-- TP-NAV-END -->
+
+</article>
+
+
+
+          </div>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+
+      </main>
+
+        <footer class="md-footer">
+
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+
+    <div class="md-copyright__highlight">
+      © 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.
     </div>
-    <nav class="article-nav" aria-label="Article navigation">
-      <a class="prev" href="/vi/articles/VI-tenniskb-vestibular-ocular-reflex-vor-and-head-stabilization/">← Prev</a>
-      <a class="home" href="/vi/articles/">Home</a>
-      <a class="next" href="/vi/articles/VI-tenniskb-backhand-slice-drive-chest-compression-and-scapular-retracti/">Next →</a>
-    </nav>
-  </article>
-</main>
-<footer class="site-footer">
-  <p>Trang web này được xây dựng với ❤️ cho cộng đồng quần vợt Việt Nam 🎾 by Henry Phạm</p>
+
+</div>
+
+    </div>
+  </div>
 </footer>
-<script src="/search/main.js"></script>
+
+      </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+
+      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.path", "navigation.expand", "navigation.indexes", "navigation.prune", "navigation.prev_next", "navigation.footer", "search.highlight", "search.suggest", "alternate"], "search": "/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+
+        <script src="/assets/js/extra.js"></script>
+
+<footer class="tu-footer" style="background: var(--card); border-top: 1px solid var(--border); color: var(--ink-muted); padding: 1.5rem 1rem; text-align: center; font-size: 0.92rem; margin-top: 3rem;">
+<div style="font-size: 0.85rem; color: var(--accent-dark);">Trang web này được xây dựng với ❤️ cho cộng đồng quần vợt Việt Nam 🎾 by Henry Phạm</div>
+</footer>
 </body>
 </html>
