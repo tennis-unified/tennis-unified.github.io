@@ -1,6 +1,6 @@
 ---
-title: "Bài viết 180: Plyometric Shock Training for Explosive Ground Force Reaction"
-description: "TennisKB - Bài viết 180: Plyometric Shock Training for Explosive Ground Force Reaction | Tennis Future Lab"
+title: "Bài viết 180: Huấn Luyện Bùng Nổ Va Đập Cho Phản Lực Mặt Sân Bùng Nổ"
+description: "TennisKB - Bài viết 180: Huấn Luyện Bùng Nổ Va Đập Cho Phản Lực Mặt Sân Bùng Nổ | Tennis Future Lab"
 author: "Henry Pham"
 date: 2025-01-15
 lang: vi
@@ -11,12 +11,12 @@ prev_article: "VI-tenniskb-foot-structure-rigidity-plantar-fascia-health-in-hard
 next_article: "VI-tenniskb-patellar-tendonitis-prevention-in-high-accelerationbraking"
 ---
 
-# Bài viết 180: Plyometric Shock Training for Explosive Ground Force Reaction
+# Bài viết 180: Huấn Luyện Bùng Nổ Va Đập Cho Phản Lực Mặt Sân Bùng Nổ
 
 > **CUE CHUYÊN GIA:** **huấn luyện bùng nổ va đập cho phản lực mặt sân** = một **hợp đồng liều - đáp ứng** với phục hồi ở mẫu số - hãy huấn luyện đúng phẩm chất mà trận đấu thực sự đòi hỏi, ở mức tải mà mô có thể hấp thụ, và kiểm chứng bằng chỉ số thay vì bằng cảm giác.
 
 <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin: 1.5rem 0;">
-  <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID_PLACEHOLDER" title="Plyometric Shock Training for Explosive Ground Force Reaction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID_PLACEHOLDER" title="Huấn Luyện Bùng Nổ Va Đập Cho Phản Lực Mặt Sân Bùng Nổ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
 </div>
 
 ## 1. Tóm Tắt Điều Hành & Ý Đồ Thể Thao
@@ -249,8 +249,8 @@ Hãy quan sát riêng khoảnh khắc **Số lần tiếp đất mỗi tuần** 
 
 Mẫu này không tồn tại độc lập; các bài viết sau cung cấp những ràng buộc mà nó phụ thuộc vào:
 
-- **Bài viết 181 - Patellar Tendonitis Prevention in High Acceleration/Braking**: định nghĩa dấu hiệu lực - thời gian mà mẫu này cuối cùng phụ thuộc vào.
-- **Bài viết 179 - Foot Structure Rigidity & Plantar Fascia Health in Hard-Court Play**: trình bày tín hiệu tri giác giúp rút ngắn độ trễ nhận diện trong tình huống này.
+- **Bài viết 181 - Phòng Ngừa Viêm Gân Bánh Chè Trong Tăng Tốc Và Hãm Tốc Cao**: định nghĩa dấu hiệu lực - thời gian mà mẫu này cuối cùng phụ thuộc vào.
+- **Bài viết 179 - Độ Cứng Cấu Trúc Bàn Chân Và Sức Khỏe Cân Gan Chân Trên Sân Cứng**: trình bày tín hiệu tri giác giúp rút ngắn độ trễ nhận diện trong tình huống này.
 - **Bài viết 182 - Giảm Thiểu Chấn Thương Cơ Thêm Cực Đoạn Trong Trượt Cởi Mở**: chi tiết quy tắc tăng tiến tải giúp thích nghi này không bị đình trệ.
 - **Bài viết 178 - Bài Tập Giải Áp Cột Sống Thắt Lưng Cho Phát Bóng Lượng Lớn**: giải thích bối cảnh trạng thái tỷ số làm thay đổi giá trị của mẫu này.
 - **Bài viết 183 - Phục Hồi Viêm Gân Cán Cung - Xoay Cổ Tay**: thiết lập ràng buộc giải phẫu giới hạn khối lượng có thể nạp cho mẫu này trong một buổi tập.
@@ -262,7 +262,7 @@ Mẫu này không tồn tại độc lập; các bài viết sau cung cấp nh�
 - **Bài viết 001 - Lực Phản Hồi Từ Mặt Sân (GRF) — Vector Dọc So Với Vector Ngang**: chi tiết quy tắc tăng tiến tải giúp thích nghi này không bị đình trệ.
 - **Bài viết 012 - Hãm Phanh Áp Lực Cầm Vợt Đẳng Tích So Với Động**: giải thích bối cảnh trạng thái tỷ số làm thay đổi giá trị của mẫu này.
 - **Bài viết 024 - Xung Lực Làm Cứng Thân Tại Điểm Tiếp Xúc Bóng**: thiết lập ràng buộc giải phẫu giới hạn khối lượng có thể nạp cho mẫu này trong một buổi tập.
-- **Bài viết 040 - Biomechanical Efficiency Audits for Stroke Longevity**: cung cấp phác đồ đo lường dùng để kiểm chứng các mục tiêu ở Mục 4.
+- **Bài viết 040 - Kiểm Toán Hiệu Suất Cơ Sinh Học Cho Tuổi Thọ Cú Đánh**: cung cấp phác đồ đo lường dùng để kiểm chứng các mục tiêu ở Mục 4.
 
 Đọc cùng các bài này, huấn luyện bùng nổ va đập cho phản lực mặt sân trở thành một **nút trong hệ thống** thay vì một bài tập tách rời: ràng buộc cơ sinh học, tín hiệu tri giác, quy tắc tải và giá trị theo trạng thái tỷ số đều phải đúng đồng thời thì mẫu mới tồn tại được dưới áp lực thi đấu.
 

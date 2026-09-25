@@ -261,7 +261,7 @@ Mẫu này không tồn tại độc lập; các bài viết sau cung cấp nh�
 - **Bài viết 001 - Lực Phản Hồi Từ Mặt Sân (GRF) — Vector Dọc So Với Vector Ngang**: thiết lập ràng buộc giải phẫu giới hạn khối lượng có thể nạp cho mẫu này trong một buổi tập.
 - **Bài viết 012 - Hãm Phanh Áp Lực Cầm Vợt Đẳng Tích So Với Động**: cung cấp phác đồ đo lường dùng để kiểm chứng các mục tiêu ở Mục 4.
 - **Bài viết 024 - Xung Lực Làm Cứng Thân Tại Điểm Tiếp Xúc Bóng**: ghi nhận kiểu thất bại thường bị nhầm với lỗi kỹ thuật ở đây.
-- **Bài viết 040 - Biomechanical Efficiency Audits for Stroke Longevity**: đưa ra logic cửa sổ phục hồi quyết định khoảng cách giữa các khối tập này.
+- **Bài viết 040 - Kiểm Toán Hiệu Suất Cơ Sinh Học Cho Tuổi Thọ Cú Đánh**: đưa ra logic cửa sổ phục hồi quyết định khoảng cách giữa các khối tập này.
 
 Đọc cùng các bài này, phác đồ thích nghi nóng cho các giải đấu mùa hè trở thành một **nút trong hệ thống** thay vì một bài tập tách rời: ràng buộc cơ sinh học, tín hiệu tri giác, quy tắc tải và giá trị theo trạng thái tỷ số đều phải đúng đồng thời thì mẫu mới tồn tại được dưới áp lực thi đấu.
 

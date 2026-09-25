@@ -255,7 +255,7 @@ Mẫu này không tồn tại độc lập; các bài viết sau cung cấp nh�
 - **Bài viết 159 - Mô Hình Quyết Định Cây Quyết Định Cho Tự Động Trong Trận**: cung cấp phác đồ đo lường dùng để kiểm chứng các mục tiêu ở Mục 4.
 - **Bài viết 162 - Phục Hồi Viêm Gân Khuỷu Tay Tennis Elbow**: ghi nhận kiểu thất bại thường bị nhầm với lỗi kỹ thuật ở đây.
 - **Bài viết 158 - Phân Tích Tennis Đánh Thẳng Vs. Chiến Tranh Thể Lực**: đưa ra logic cửa sổ phục hồi quyết định khoảng cách giữa các khối tập này.
-- **Bài viết 163 - Metabolic Work-to-Rest Ratio Optimization (1:3 vs. 1:5)**: định nghĩa dấu hiệu lực - thời gian mà mẫu này cuối cùng phụ thuộc vào.
+- **Bài viết 163 - Tối Ưu Tỷ Lệ Làm Việc Trên Nghỉ Chuyển Hóa (1:3 So Với 1:5)**: định nghĩa dấu hiệu lực - thời gian mà mẫu này cuối cùng phụ thuộc vào.
 - **Bài viết 157 - Bản Đồ Chiến Thuật Tiebreak: Quả Bóng Mở Rủi Ro 0**: trình bày tín hiệu tri giác giúp rút ngắn độ trễ nhận diện trong tình huống này.
 - **Bài viết 165 - Phác Đồ Khôi Phục Thần Kinh-Cơ Giữa Các Set**: chi tiết quy tắc tăng tiến tải giúp thích nghi này không bị đình trệ.
 - **Bài viết 155 - Phòng Thủ Đối Phó Topspin Mạnh Ép Buộc**: giải thích bối cảnh trạng thái tỷ số làm thay đổi giá trị của mẫu này.
@@ -264,7 +264,7 @@ Mẫu này không tồn tại độc lập; các bài viết sau cung cấp nh�
 - **Bài viết 001 - Lực Phản Hồi Từ Mặt Sân (GRF) — Vector Dọc So Với Vector Ngang**: ghi nhận kiểu thất bại thường bị nhầm với lỗi kỹ thuật ở đây.
 - **Bài viết 012 - Hãm Phanh Áp Lực Cầm Vợt Đẳng Tích So Với Động**: đưa ra logic cửa sổ phục hồi quyết định khoảng cách giữa các khối tập này.
 - **Bài viết 024 - Xung Lực Làm Cứng Thân Tại Điểm Tiếp Xúc Bóng**: định nghĩa dấu hiệu lực - thời gian mà mẫu này cuối cùng phụ thuộc vào.
-- **Bài viết 040 - Biomechanical Efficiency Audits for Stroke Longevity**: trình bày tín hiệu tri giác giúp rút ngắn độ trễ nhận diện trong tình huống này.
+- **Bài viết 040 - Kiểm Toán Hiệu Suất Cơ Sinh Học Cho Tuổi Thọ Cú Đánh**: trình bày tín hiệu tri giác giúp rút ngắn độ trễ nhận diện trong tình huống này.
 
 Đọc cùng các bài này, kiểm toán chiến lược trận đấu và phân tích sau trận trở thành một **nút trong hệ thống** thay vì một bài tập tách rời: ràng buộc cơ sinh học, tín hiệu tri giác, quy tắc tải và giá trị theo trạng thái tỷ số đều phải đúng đồng thời thì mẫu mới tồn tại được dưới áp lực thi đấu.
 

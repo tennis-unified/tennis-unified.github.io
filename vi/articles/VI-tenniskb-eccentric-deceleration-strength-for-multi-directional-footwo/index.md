@@ -1,6 +1,6 @@
 ---
-title: "Bài viết 171: Eccentric Deceleration Strength for Multi-Directional Footwork"
-description: "TennisKB - Bài viết 171: Eccentric Deceleration Strength for Multi-Directional Footwork | Tennis Future Lab"
+title: "Bài viết 171: Sức Mạnh Hãm Lệch Tâm Cho Bộ Pháp Đa Hướng"
+description: "TennisKB - Bài viết 171: Sức Mạnh Hãm Lệch Tâm Cho Bộ Pháp Đa Hướng | Tennis Future Lab"
 author: "Henry Pham"
 date: 2025-01-15
 lang: vi
@@ -11,12 +11,12 @@ prev_article: "VI-tenniskb-hydration-electrolyte-ratios-and-core-temp-regulation
 next_article: "VI-tenniskb-rotator-cuff-thermal-warm-up-scapular-y-t-w-protocols"
 ---
 
-# Bài viết 171: Eccentric Deceleration Strength for Multi-Directional Footwork
+# Bài viết 171: Sức Mạnh Hãm Lệch Tâm Cho Bộ Pháp Đa Hướng
 
 > **CUE CHUYÊN GIA:** **sức mạnh hãm lệch tâm cho bộ pháp đa hướng** = một **hợp đồng liều - đáp ứng** với phục hồi ở mẫu số - hãy huấn luyện đúng phẩm chất mà trận đấu thực sự đòi hỏi, ở mức tải mà mô có thể hấp thụ, và kiểm chứng bằng chỉ số thay vì bằng cảm giác.
 
 <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin: 1.5rem 0;">
-  <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID_PLACEHOLDER" title="Eccentric Deceleration Strength for Multi-Directional Footwork" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID_PLACEHOLDER" title="Sức Mạnh Hãm Lệch Tâm Cho Bộ Pháp Đa Hướng" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
 </div>
 
 ## 1. Tóm Tắt Điều Hành & Ý Đồ Thể Thao
@@ -258,12 +258,12 @@ Mẫu này không tồn tại độc lập; các bài viết sau cung cấp nh�
 - **Bài viết 168 - Theo Dõi Đường Huyết Liên Tục (CGM) Cho Năng Lượng Thi Đấu**: thiết lập ràng buộc giải phẫu giới hạn khối lượng có thể nạp cho mẫu này trong một buổi tập.
 - **Bài viết 176 - Điều Chỉnh Nhịp Sinh Học Cho Giải Đấu Quốc Tế**: cung cấp phác đồ đo lường dùng để kiểm chứng các mục tiêu ở Mục 4.
 - **Bài viết 166 - Kiến Trúc Giấc Ngủ Và Điều Chỉnh Đỉnh Hormone Tăng Trưởng**: ghi nhận kiểu thất bại thường bị nhầm với lỗi kỹ thuật ở đây.
-- **Bài viết 179 - Foot Structure Rigidity & Plantar Fascia Health in Hard-Court Play**: đưa ra logic cửa sổ phục hồi quyết định khoảng cách giữa các khối tập này.
-- **Bài viết 163 - Metabolic Work-to-Rest Ratio Optimization (1:3 vs. 1:5)**: định nghĩa dấu hiệu lực - thời gian mà mẫu này cuối cùng phụ thuộc vào.
+- **Bài viết 179 - Độ Cứng Cấu Trúc Bàn Chân Và Sức Khỏe Cân Gan Chân Trên Sân Cứng**: đưa ra logic cửa sổ phục hồi quyết định khoảng cách giữa các khối tập này.
+- **Bài viết 163 - Tối Ưu Tỷ Lệ Làm Việc Trên Nghỉ Chuyển Hóa (1:3 So Với 1:5)**: định nghĩa dấu hiệu lực - thời gian mà mẫu này cuối cùng phụ thuộc vào.
 - **Bài viết 001 - Lực Phản Hồi Từ Mặt Sân (GRF) — Vector Dọc So Với Vector Ngang**: trình bày tín hiệu tri giác giúp rút ngắn độ trễ nhận diện trong tình huống này.
 - **Bài viết 012 - Hãm Phanh Áp Lực Cầm Vợt Đẳng Tích So Với Động**: chi tiết quy tắc tăng tiến tải giúp thích nghi này không bị đình trệ.
 - **Bài viết 024 - Xung Lực Làm Cứng Thân Tại Điểm Tiếp Xúc Bóng**: giải thích bối cảnh trạng thái tỷ số làm thay đổi giá trị của mẫu này.
-- **Bài viết 040 - Biomechanical Efficiency Audits for Stroke Longevity**: thiết lập ràng buộc giải phẫu giới hạn khối lượng có thể nạp cho mẫu này trong một buổi tập.
+- **Bài viết 040 - Kiểm Toán Hiệu Suất Cơ Sinh Học Cho Tuổi Thọ Cú Đánh**: thiết lập ràng buộc giải phẫu giới hạn khối lượng có thể nạp cho mẫu này trong một buổi tập.
 
 Đọc cùng các bài này, sức mạnh hãm lệch tâm cho bộ pháp đa hướng trở thành một **nút trong hệ thống** thay vì một bài tập tách rời: ràng buộc cơ sinh học, tín hiệu tri giác, quy tắc tải và giá trị theo trạng thái tỷ số đều phải đúng đồng thời thì mẫu mới tồn tại được dưới áp lực thi đấu.
 

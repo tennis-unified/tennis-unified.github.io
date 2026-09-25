@@ -263,7 +263,7 @@ Mẫu này không tồn tại độc lập; các bài viết sau cung cấp nh�
 - **Bài viết 001 - Lực Phản Hồi Từ Mặt Sân (GRF) — Vector Dọc So Với Vector Ngang**: ghi nhận kiểu thất bại thường bị nhầm với lỗi kỹ thuật ở đây.
 - **Bài viết 012 - Hãm Phanh Áp Lực Cầm Vợt Đẳng Tích So Với Động**: đưa ra logic cửa sổ phục hồi quyết định khoảng cách giữa các khối tập này.
 - **Bài viết 024 - Xung Lực Làm Cứng Thân Tại Điểm Tiếp Xúc Bóng**: định nghĩa dấu hiệu lực - thời gian mà mẫu này cuối cùng phụ thuộc vào.
-- **Bài viết 040 - Biomechanical Efficiency Audits for Stroke Longevity**: trình bày tín hiệu tri giác giúp rút ngắn độ trễ nhận diện trong tình huống này.
+- **Bài viết 040 - Kiểm Toán Hiệu Suất Cơ Sinh Học Cho Tuổi Thọ Cú Đánh**: trình bày tín hiệu tri giác giúp rút ngắn độ trễ nhận diện trong tình huống này.
 
 Đọc cùng các bài này, liệu pháp ánh sáng hồng ngoại cho vi chấn thương khớp sâu trở thành một **nút trong hệ thống** thay vì một bài tập tách rời: ràng buộc cơ sinh học, tín hiệu tri giác, quy tắc tải và giá trị theo trạng thái tỷ số đều phải đúng đồng thời thì mẫu mới tồn tại được dưới áp lực thi đấu.
 

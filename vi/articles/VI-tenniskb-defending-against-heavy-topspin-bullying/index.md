@@ -257,12 +257,12 @@ Mẫu này không tồn tại độc lập; các bài viết sau cung cấp nh�
 - **Bài viết 152 - Cơ Học I-Formation Trong Đôi Cao Cấp**: thiết lập ràng buộc giải phẫu giới hạn khối lượng có thể nạp cho mẫu này trong một buổi tập.
 - **Bài viết 160 - Kiểm Toán Chiến Lược Trận Và Phác Đồ Phân Tích Sau Trận**: cung cấp phác đồ đo lường dùng để kiểm chứng các mục tiêu ở Mục 4.
 - **Bài viết 150 - Phá Vỡ Thời Gian Phi Tuyến Tính Trong Trao Đổi Đường Dài**: ghi nhận kiểu thất bại thường bị nhầm với lỗi kỹ thuật ở đây.
-- **Bài viết 163 - Metabolic Work-to-Rest Ratio Optimization (1:3 vs. 1:5)**: đưa ra logic cửa sổ phục hồi quyết định khoảng cách giữa các khối tập này.
+- **Bài viết 163 - Tối Ưu Tỷ Lệ Làm Việc Trên Nghỉ Chuyển Hóa (1:3 So Với 1:5)**: đưa ra logic cửa sổ phục hồi quyết định khoảng cách giữa các khối tập này.
 - **Bài viết 147 - Hình Học Sân Và Tạo Khoảng Cách Forehand Inside-Out**: định nghĩa dấu hiệu lực - thời gian mà mẫu này cuối cùng phụ thuộc vào.
 - **Bài viết 001 - Lực Phản Hồi Từ Mặt Sân (GRF) — Vector Dọc So Với Vector Ngang**: trình bày tín hiệu tri giác giúp rút ngắn độ trễ nhận diện trong tình huống này.
 - **Bài viết 012 - Hãm Phanh Áp Lực Cầm Vợt Đẳng Tích So Với Động**: chi tiết quy tắc tăng tiến tải giúp thích nghi này không bị đình trệ.
 - **Bài viết 024 - Xung Lực Làm Cứng Thân Tại Điểm Tiếp Xúc Bóng**: giải thích bối cảnh trạng thái tỷ số làm thay đổi giá trị của mẫu này.
-- **Bài viết 040 - Biomechanical Efficiency Audits for Stroke Longevity**: thiết lập ràng buộc giải phẫu giới hạn khối lượng có thể nạp cho mẫu này trong một buổi tập.
+- **Bài viết 040 - Kiểm Toán Hiệu Suất Cơ Sinh Học Cho Tuổi Thọ Cú Đánh**: thiết lập ràng buộc giải phẫu giới hạn khối lượng có thể nạp cho mẫu này trong một buổi tập.
 
 Đọc cùng các bài này, phòng thủ trước lối đánh topspin nặng áp đặt trở thành một **nút trong hệ thống** thay vì một bài tập tách rời: ràng buộc cơ sinh học, tín hiệu tri giác, quy tắc tải và giá trị theo trạng thái tỷ số đều phải đúng đồng thời thì mẫu mới tồn tại được dưới áp lực thi đấu.
 

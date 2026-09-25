@@ -252,7 +252,7 @@ Mẫu này không tồn tại độc lập; các bài viết sau cung cấp nh�
 - **Bài viết 166 - Kiến Trúc Giấc Ngủ Và Điều Chỉnh Đỉnh Hormone Tăng Trưởng**: trình bày tín hiệu tri giác giúp rút ngắn độ trễ nhận diện trong tình huống này.
 - **Bài viết 164 - Tải Hậu Chuỗi Và Tích Hợp Trung Tâm Truyền Lực**: chi tiết quy tắc tăng tiến tải giúp thích nghi này không bị đình trệ.
 - **Bài viết 167 - Theo Dõi Quỹ Đạo Phục Hồi Nhịp Tim (HRR)**: giải thích bối cảnh trạng thái tỷ số làm thay đổi giá trị của mẫu này.
-- **Bài viết 163 - Metabolic Work-to-Rest Ratio Optimization (1:3 vs. 1:5)**: thiết lập ràng buộc giải phẫu giới hạn khối lượng có thể nạp cho mẫu này trong một buổi tập.
+- **Bài viết 163 - Tối Ưu Tỷ Lệ Làm Việc Trên Nghỉ Chuyển Hóa (1:3 So Với 1:5)**: thiết lập ràng buộc giải phẫu giới hạn khối lượng có thể nạp cho mẫu này trong một buổi tập.
 - **Bài viết 168 - Theo Dõi Đường Huyết Liên Tục (CGM) Cho Năng Lượng Thi Đấu**: cung cấp phác đồ đo lường dùng để kiểm chứng các mục tiêu ở Mục 4.
 - **Bài viết 162 - Phục Hồi Viêm Gân Khuỷu Tay Tennis Elbow**: ghi nhận kiểu thất bại thường bị nhầm với lỗi kỹ thuật ở đây.
 - **Bài viết 170 - Bù Nước, Tỷ Lệ Electrolyte Và Điều Hồi Nhiệt Độ Cốt Lõi**: đưa ra logic cửa sổ phục hồi quyết định khoảng cách giữa các khối tập này.
@@ -262,7 +262,7 @@ Mẫu này không tồn tại độc lập; các bài viết sau cung cấp nh�
 - **Bài viết 001 - Lực Phản Hồi Từ Mặt Sân (GRF) — Vector Dọc So Với Vector Ngang**: giải thích bối cảnh trạng thái tỷ số làm thay đổi giá trị của mẫu này.
 - **Bài viết 012 - Hãm Phanh Áp Lực Cầm Vợt Đẳng Tích So Với Động**: thiết lập ràng buộc giải phẫu giới hạn khối lượng có thể nạp cho mẫu này trong một buổi tập.
 - **Bài viết 024 - Xung Lực Làm Cứng Thân Tại Điểm Tiếp Xúc Bóng**: cung cấp phác đồ đo lường dùng để kiểm chứng các mục tiêu ở Mục 4.
-- **Bài viết 040 - Biomechanical Efficiency Audits for Stroke Longevity**: ghi nhận kiểu thất bại thường bị nhầm với lỗi kỹ thuật ở đây.
+- **Bài viết 040 - Kiểm Toán Hiệu Suất Cơ Sinh Học Cho Tuổi Thọ Cú Đánh**: ghi nhận kiểu thất bại thường bị nhầm với lỗi kỹ thuật ở đây.
 
 Đọc cùng các bài này, phác đồ khôi phục thần kinh - cơ giữa các set trở thành một **nút trong hệ thống** thay vì một bài tập tách rời: ràng buộc cơ sinh học, tín hiệu tri giác, quy tắc tải và giá trị theo trạng thái tỷ số đều phải đúng đồng thời thì mẫu mới tồn tại được dưới áp lực thi đấu.
 

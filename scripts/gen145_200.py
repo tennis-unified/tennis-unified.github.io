@@ -24,6 +24,7 @@ SCRIPTS = BASE / "scripts"
 
 from gen145_200_pools_en import EN_POOL          # noqa: E402
 from gen145_200_pools_vi import VI_POOL          # noqa: E402
+from vi_title_overrides import VI_TITLE_OVERRIDE  # noqa: E402
 
 DATA = {}
 for mod_name in ("gen145_200_data_a", "gen145_200_data_b", "gen145_200_data_c",
@@ -189,6 +190,9 @@ def en_title_of(n):
 
 
 def vi_title_of(n):
+    """Vietnamese title for article n, overriding catalogue entries left in English."""
+    if n in VI_TITLE_OVERRIDE:
+        return VI_TITLE_OVERRIDE[n]
     return strip_prefix_title(CAT["vi"][n - 1]["title"], n)
 
 
@@ -508,7 +512,7 @@ def build_vi(num, meta, data):
     pillar = meta["pillar_slug"]
     pool = VI_POOL[pillar]
     topic = data["topic_vi"]
-    vi_title = strip_prefix_title(meta["title_vi"], num)
+    vi_title = VI_TITLE_OVERRIDE.get(num) or strip_prefix_title(meta["title_vi"], num)
     subs_u = data["subs"]
     steps_u, errs_u, drills_u = shape(data, 1)
     varrow = data["vars"]

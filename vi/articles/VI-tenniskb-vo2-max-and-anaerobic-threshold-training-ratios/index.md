@@ -258,11 +258,11 @@ Mẫu này không tồn tại độc lập; các bài viết sau cung cấp nh�
 - **Bài viết 192 - Liêu Pháp Ánh Sáng Hồng Ngoại Cho Vi Chấn Khớp Sâu**: cung cấp phác đồ đo lường dùng để kiểm chứng các mục tiêu ở Mục 4.
 - **Bài viết 182 - Giảm Thiểu Chấn Thương Cơ Thêm Cực Đoạn Trong Trượt Cởi Mở**: ghi nhận kiểu thất bại thường bị nhầm với lỗi kỹ thuật ở đây.
 - **Bài viết 195 - Huấn Luyện Sức Mạnh Micro-Dose Trong Lịch Thi Đấu Dày Đặc**: đưa ra logic cửa sổ phục hồi quyết định khoảng cách giữa các khối tập này.
-- **Bài viết 179 - Foot Structure Rigidity & Plantar Fascia Health in Hard-Court Play**: định nghĩa dấu hiệu lực - thời gian mà mẫu này cuối cùng phụ thuộc vào.
+- **Bài viết 179 - Độ Cứng Cấu Trúc Bàn Chân Và Sức Khỏe Cân Gan Chân Trên Sân Cứng**: định nghĩa dấu hiệu lực - thời gian mà mẫu này cuối cùng phụ thuộc vào.
 - **Bài viết 001 - Lực Phản Hồi Từ Mặt Sân (GRF) — Vector Dọc So Với Vector Ngang**: trình bày tín hiệu tri giác giúp rút ngắn độ trễ nhận diện trong tình huống này.
 - **Bài viết 012 - Hãm Phanh Áp Lực Cầm Vợt Đẳng Tích So Với Động**: chi tiết quy tắc tăng tiến tải giúp thích nghi này không bị đình trệ.
 - **Bài viết 024 - Xung Lực Làm Cứng Thân Tại Điểm Tiếp Xúc Bóng**: giải thích bối cảnh trạng thái tỷ số làm thay đổi giá trị của mẫu này.
-- **Bài viết 040 - Biomechanical Efficiency Audits for Stroke Longevity**: thiết lập ràng buộc giải phẫu giới hạn khối lượng có thể nạp cho mẫu này trong một buổi tập.
+- **Bài viết 040 - Kiểm Toán Hiệu Suất Cơ Sinh Học Cho Tuổi Thọ Cú Đánh**: thiết lập ràng buộc giải phẫu giới hạn khối lượng có thể nạp cho mẫu này trong một buổi tập.
 
 Đọc cùng các bài này, tỷ lệ huấn luyện VO2 max và ngưỡng yếm khí trở thành một **nút trong hệ thống** thay vì một bài tập tách rời: ràng buộc cơ sinh học, tín hiệu tri giác, quy tắc tải và giá trị theo trạng thái tỷ số đều phải đúng đồng thời thì mẫu mới tồn tại được dưới áp lực thi đấu.
 

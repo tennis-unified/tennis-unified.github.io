@@ -23,10 +23,22 @@ with open(SCRIPTS / "article_video_map_145_200.json", encoding="utf-8") as f:
 with open(SCRIPTS / "articles_200_data.json", encoding="utf-8") as f:
     CAT = json.load(f)
 
-TITLE_VI_REF = "Lực Phản Hồi Từ Mặt Sân (GRF) — Vector Dọc So Với Vector Ngang"
+from vi_title_overrides import VI_TITLE_OVERRIDE  # noqa: E402
+
+# The reference head carries the full "Bài viết 001: <title>" string; replace it whole
+# so the article number prefix is not left behind.
+TITLE_VI_REF = "Bài viết 001: Lực Phản Hồi Từ Mặt Sân (GRF) — Vector Dọc So Với Vector Ngang"
 TITLE_EN_REF = "Ground Reaction Forces (GRF): Vertical vs. Horizontal Vectors"
 SLUG_REF_EN = "EN-tenniskb-ground-reaction-forces-grf-vertical-vs-horizontal-vectors"
 SLUG_REF_VI = "VI-tenniskb-ground-reaction-forces-grf-vertical-vs-horizontal-vectors"
+
+
+def vi_title_of(num):
+    """Vietnamese title, preferring an override when the catalogue entry is English."""
+    if num in VI_TITLE_OVERRIDE:
+        return VI_TITLE_OVERRIDE[num]
+    t = html.unescape(META[str(num)]["title_vi"]).strip()
+    return re.sub(r"^\s*Bài\s*viết\s*%d\s*[:：]\s*" % num, "", t, flags=re.IGNORECASE)
 
 VI_DIR = BASE / "vi" / "articles"
 EN_DIR = BASE / "en" / "articles"
@@ -72,6 +84,7 @@ for num in range(145, 201):
     m_vi = CAT["vi"][num - 1]
     s_en, s_vi = meta["slug_en"], meta["slug_vi"]
     pillar = m_en.get("pillar_slug", "biomechanics")
+    vi_title_full = "Bài viết {0}: {1}".format(num, vi_title_of(num))
 
     prev_en = CAT["en"][num - 2]["slug"] if num > 1 else ""
     next_en = CAT["en"][num]["slug"] if num < 200 else ""
@@ -93,7 +106,7 @@ for num in range(145, 201):
     breadcrumb_vi = (
         '<!-- TP-BREADCRUMB-START -->\n'
         f'<p><a href="/">🏠 Home</a> &nbsp;›&nbsp; <a href="/vi/articles/">Tennis Fundamentals</a> '
-        f'&nbsp;›&nbsp; <a href="/vi/articles/{p_url_vi}/">{p_title_vi}</a> &nbsp;›&nbsp; {m_vi["title"]}</p>\n'
+        f'&nbsp;›&nbsp; <a href="/vi/articles/{p_url_vi}/">{p_title_vi}</a> &nbsp;›&nbsp; {vi_title_full}</p>\n'
         '<hr />\n<!-- TP-NAV-END -->'
     )
     prev_link_vi = f'<a href="/vi/articles/{prev_vi}/">← Trước</a>' if prev_vi else '<span style="opacity:0.5">← Trước</span>'
@@ -104,10 +117,10 @@ for num in range(145, 201):
         f'<a href="/vi/articles/">🏠 Trang chủ</a> &nbsp;|&nbsp; {next_link_vi}</p>\n'
         '<!-- TP-NAV-END -->'
     )
-    head_vi = (E.head_vi_raw.replace(TITLE_VI_REF, m_vi["title"])
+    head_vi = (E.head_vi_raw.replace(TITLE_VI_REF, vi_title_full)
                .replace(SLUG_REF_VI, s_vi).replace(SLUG_REF_EN, s_en))
     page_vi = (head_vi + '<article class="md-content__inner md-typeset">\n\n' + breadcrumb_vi + '\n\n'
-               + f'<h1 id="content">{m_vi["title"]}</h1>\n\n' + vi_body + '\n\n' + nav_vi + '\n\n'
+               + f'<h1 id="content">{vi_title_full}</h1>\n\n' + vi_body + '\n\n' + nav_vi + '\n\n'
                + '</article>\n' + E.foot_vi_raw)
     (VI_DIR / s_vi).mkdir(parents=True, exist_ok=True)
     (VI_DIR / s_vi / "index.html").write_text(page_vi, encoding="utf-8", newline="\n")

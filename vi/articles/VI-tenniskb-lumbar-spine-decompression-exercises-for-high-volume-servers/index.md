@@ -252,11 +252,11 @@ Hãy quan sát riêng khoảnh khắc **Ngưỡng khối lượng giao bóng** l
 
 Mẫu này không tồn tại độc lập; các bài viết sau cung cấp những ràng buộc mà nó phụ thuộc vào:
 
-- **Bài viết 179 - Foot Structure Rigidity & Plantar Fascia Health in Hard-Court Play**: ghi nhận kiểu thất bại thường bị nhầm với lỗi kỹ thuật ở đây.
+- **Bài viết 179 - Độ Cứng Cấu Trúc Bàn Chân Và Sức Khỏe Cân Gan Chân Trên Sân Cứng**: ghi nhận kiểu thất bại thường bị nhầm với lỗi kỹ thuật ở đây.
 - **Bài viết 177 - Liêu Liều Carbohydrate Và Axit Amin Trong Trận**: đưa ra logic cửa sổ phục hồi quyết định khoảng cách giữa các khối tập này.
-- **Bài viết 180 - Plyometric Shock Training for Explosive Ground Force Reaction**: định nghĩa dấu hiệu lực - thời gian mà mẫu này cuối cùng phụ thuộc vào.
+- **Bài viết 180 - Huấn Luyện Bùng Nổ Va Đập Cho Phản Lực Mặt Sân Bùng Nổ**: định nghĩa dấu hiệu lực - thời gian mà mẫu này cuối cùng phụ thuộc vào.
 - **Bài viết 176 - Điều Chỉnh Nhịp Sinh Học Cho Giải Đấu Quốc Tế**: trình bày tín hiệu tri giác giúp rút ngắn độ trễ nhận diện trong tình huống này.
-- **Bài viết 181 - Patellar Tendonitis Prevention in High Acceleration/Braking**: chi tiết quy tắc tăng tiến tải giúp thích nghi này không bị đình trệ.
+- **Bài viết 181 - Phòng Ngừa Viêm Gân Bánh Chè Trong Tăng Tốc Và Hãm Tốc Cao**: chi tiết quy tắc tăng tiến tải giúp thích nghi này không bị đình trệ.
 - **Bài viết 175 - Phác Đồ Ngâm Nước Lạnh So Với Liêu Pháp Đối Trạch**: giải thích bối cảnh trạng thái tỷ số làm thay đổi giá trị của mẫu này.
 - **Bài viết 183 - Phục Hồi Viêm Gân Cán Cung - Xoay Cổ Tay**: thiết lập ràng buộc giải phẫu giới hạn khối lượng có thể nạp cho mẫu này trong một buổi tập.
 - **Bài viết 173 - Sức Mạnh Chống Xoay Cốt Lõi Cho Ổn Định Đánh Nổ Lực**: cung cấp phác đồ đo lường dùng để kiểm chứng các mục tiêu ở Mục 4.
@@ -265,7 +265,7 @@ Mẫu này không tồn tại độc lập; các bài viết sau cung cấp nh�
 - **Bài viết 001 - Lực Phản Hồi Từ Mặt Sân (GRF) — Vector Dọc So Với Vector Ngang**: định nghĩa dấu hiệu lực - thời gian mà mẫu này cuối cùng phụ thuộc vào.
 - **Bài viết 012 - Hãm Phanh Áp Lực Cầm Vợt Đẳng Tích So Với Động**: trình bày tín hiệu tri giác giúp rút ngắn độ trễ nhận diện trong tình huống này.
 - **Bài viết 024 - Xung Lực Làm Cứng Thân Tại Điểm Tiếp Xúc Bóng**: chi tiết quy tắc tăng tiến tải giúp thích nghi này không bị đình trệ.
-- **Bài viết 040 - Biomechanical Efficiency Audits for Stroke Longevity**: giải thích bối cảnh trạng thái tỷ số làm thay đổi giá trị của mẫu này.
+- **Bài viết 040 - Kiểm Toán Hiệu Suất Cơ Sinh Học Cho Tuổi Thọ Cú Đánh**: giải thích bối cảnh trạng thái tỷ số làm thay đổi giá trị của mẫu này.
 
 Đọc cùng các bài này, giải áp cột sống thắt lưng cho người giao bóng khối lượng lớn trở thành một **nút trong hệ thống** thay vì một bài tập tách rời: ràng buộc cơ sinh học, tín hiệu tri giác, quy tắc tải và giá trị theo trạng thái tỷ số đều phải đúng đồng thời thì mẫu mới tồn tại được dưới áp lực thi đấu.
 

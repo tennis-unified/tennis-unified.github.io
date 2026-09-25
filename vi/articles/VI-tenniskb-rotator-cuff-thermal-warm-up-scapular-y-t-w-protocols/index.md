@@ -251,19 +251,19 @@ Hãy quan sát riêng khoảnh khắc **Thời lượng khởi động** lệch 
 Mẫu này không tồn tại độc lập; các bài viết sau cung cấp những ràng buộc mà nó phụ thuộc vào:
 
 - **Bài viết 173 - Sức Mạnh Chống Xoay Cốt Lõi Cho Ổn Định Đánh Nổ Lực**: định nghĩa dấu hiệu lực - thời gian mà mẫu này cuối cùng phụ thuộc vào.
-- **Bài viết 171 - Eccentric Deceleration Strength for Multi-Directional Footwork**: trình bày tín hiệu tri giác giúp rút ngắn độ trễ nhận diện trong tình huống này.
+- **Bài viết 171 - Sức Mạnh Hãm Lệch Tâm Cho Bộ Pháp Đa Hướng**: trình bày tín hiệu tri giác giúp rút ngắn độ trễ nhận diện trong tình huống này.
 - **Bài viết 174 - Giải Phóng Mô Sợi Và Bọc Tự Mô Sợi**: chi tiết quy tắc tăng tiến tải giúp thích nghi này không bị đình trệ.
 - **Bài viết 170 - Bù Nước, Tỷ Lệ Electrolyte Và Điều Hồi Nhiệt Độ Cốt Lõi**: giải thích bối cảnh trạng thái tỷ số làm thay đổi giá trị của mẫu này.
 - **Bài viết 175 - Phác Đồ Ngâm Nước Lạnh So Với Liêu Pháp Đối Trạch**: thiết lập ràng buộc giải phẫu giới hạn khối lượng có thể nạp cho mẫu này trong một buổi tập.
 - **Bài viết 169 - Chiến Lược Thải Lactate Qua Phục Hồi Aerobic Chủ Động**: cung cấp phác đồ đo lường dùng để kiểm chứng các mục tiêu ở Mục 4.
 - **Bài viết 177 - Liêu Liều Carbohydrate Và Axit Amin Trong Trận**: ghi nhận kiểu thất bại thường bị nhầm với lỗi kỹ thuật ở đây.
 - **Bài viết 167 - Theo Dõi Quỹ Đạo Phục Hồi Nhịp Tim (HRR)**: đưa ra logic cửa sổ phục hồi quyết định khoảng cách giữa các khối tập này.
-- **Bài viết 180 - Plyometric Shock Training for Explosive Ground Force Reaction**: định nghĩa dấu hiệu lực - thời gian mà mẫu này cuối cùng phụ thuộc vào.
+- **Bài viết 180 - Huấn Luyện Bùng Nổ Va Đập Cho Phản Lực Mặt Sân Bùng Nổ**: định nghĩa dấu hiệu lực - thời gian mà mẫu này cuối cùng phụ thuộc vào.
 - **Bài viết 164 - Tải Hậu Chuỗi Và Tích Hợp Trung Tâm Truyền Lực**: trình bày tín hiệu tri giác giúp rút ngắn độ trễ nhận diện trong tình huống này.
 - **Bài viết 001 - Lực Phản Hồi Từ Mặt Sân (GRF) — Vector Dọc So Với Vector Ngang**: chi tiết quy tắc tăng tiến tải giúp thích nghi này không bị đình trệ.
 - **Bài viết 012 - Hãm Phanh Áp Lực Cầm Vợt Đẳng Tích So Với Động**: giải thích bối cảnh trạng thái tỷ số làm thay đổi giá trị của mẫu này.
 - **Bài viết 024 - Xung Lực Làm Cứng Thân Tại Điểm Tiếp Xúc Bóng**: thiết lập ràng buộc giải phẫu giới hạn khối lượng có thể nạp cho mẫu này trong một buổi tập.
-- **Bài viết 040 - Biomechanical Efficiency Audits for Stroke Longevity**: cung cấp phác đồ đo lường dùng để kiểm chứng các mục tiêu ở Mục 4.
+- **Bài viết 040 - Kiểm Toán Hiệu Suất Cơ Sinh Học Cho Tuổi Thọ Cú Đánh**: cung cấp phác đồ đo lường dùng để kiểm chứng các mục tiêu ở Mục 4.
 
 Đọc cùng các bài này, phác đồ làm ấm rotator cuff và bài tập vai trở thành một **nút trong hệ thống** thay vì một bài tập tách rời: ràng buộc cơ sinh học, tín hiệu tri giác, quy tắc tải và giá trị theo trạng thái tỷ số đều phải đúng đồng thời thì mẫu mới tồn tại được dưới áp lực thi đấu.
 

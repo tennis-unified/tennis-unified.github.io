@@ -262,7 +262,7 @@ Mẫu này không tồn tại độc lập; các bài viết sau cung cấp nh�
 - **Bài viết 001 - Lực Phản Hồi Từ Mặt Sân (GRF) — Vector Dọc So Với Vector Ngang**: chi tiết quy tắc tăng tiến tải giúp thích nghi này không bị đình trệ.
 - **Bài viết 012 - Hãm Phanh Áp Lực Cầm Vợt Đẳng Tích So Với Động**: giải thích bối cảnh trạng thái tỷ số làm thay đổi giá trị của mẫu này.
 - **Bài viết 024 - Xung Lực Làm Cứng Thân Tại Điểm Tiếp Xúc Bóng**: thiết lập ràng buộc giải phẫu giới hạn khối lượng có thể nạp cho mẫu này trong một buổi tập.
-- **Bài viết 040 - Biomechanical Efficiency Audits for Stroke Longevity**: cung cấp phác đồ đo lường dùng để kiểm chứng các mục tiêu ở Mục 4.
+- **Bài viết 040 - Kiểm Toán Hiệu Suất Cơ Sinh Học Cho Tuổi Thọ Cú Đánh**: cung cấp phác đồ đo lường dùng để kiểm chứng các mục tiêu ở Mục 4.
 
 Đọc cùng các bài này, chiến lược bóng chèn phá vỡ trục cột sống trở thành một **nút trong hệ thống** thay vì một bài tập tách rời: ràng buộc cơ sinh học, tín hiệu tri giác, quy tắc tải và giá trị theo trạng thái tỷ số đều phải đúng đồng thời thì mẫu mới tồn tại được dưới áp lực thi đấu.
 

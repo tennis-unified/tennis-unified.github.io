@@ -255,14 +255,14 @@ Mẫu này không tồn tại độc lập; các bài viết sau cung cấp nh�
 - **Bài viết 173 - Sức Mạnh Chống Xoay Cốt Lõi Cho Ổn Định Đánh Nổ Lực**: ghi nhận kiểu thất bại thường bị nhầm với lỗi kỹ thuật ở đây.
 - **Bài viết 178 - Bài Tập Giải Áp Cột Sống Thắt Lưng Cho Phát Bóng Lượng Lớn**: đưa ra logic cửa sổ phục hồi quyết định khoảng cách giữa các khối tập này.
 - **Bài viết 172 - Phác Đồ Ấm Rotator Cuff Và Scapular Y-T-W**: định nghĩa dấu hiệu lực - thời gian mà mẫu này cuối cùng phụ thuộc vào.
-- **Bài viết 180 - Plyometric Shock Training for Explosive Ground Force Reaction**: trình bày tín hiệu tri giác giúp rút ngắn độ trễ nhận diện trong tình huống này.
+- **Bài viết 180 - Huấn Luyện Bùng Nổ Va Đập Cho Phản Lực Mặt Sân Bùng Nổ**: trình bày tín hiệu tri giác giúp rút ngắn độ trễ nhận diện trong tình huống này.
 - **Bài viết 170 - Bù Nước, Tỷ Lệ Electrolyte Và Điều Hồi Nhiệt Độ Cốt Lõi**: chi tiết quy tắc tăng tiến tải giúp thích nghi này không bị đình trệ.
 - **Bài viết 183 - Phục Hồi Viêm Gân Cán Cung - Xoay Cổ Tay**: giải thích bối cảnh trạng thái tỷ số làm thay đổi giá trị của mẫu này.
 - **Bài viết 167 - Theo Dõi Quỹ Đạo Phục Hồi Nhịp Tim (HRR)**: thiết lập ràng buộc giải phẫu giới hạn khối lượng có thể nạp cho mẫu này trong một buổi tập.
 - **Bài viết 001 - Lực Phản Hồi Từ Mặt Sân (GRF) — Vector Dọc So Với Vector Ngang**: cung cấp phác đồ đo lường dùng để kiểm chứng các mục tiêu ở Mục 4.
 - **Bài viết 012 - Hãm Phanh Áp Lực Cầm Vợt Đẳng Tích So Với Động**: ghi nhận kiểu thất bại thường bị nhầm với lỗi kỹ thuật ở đây.
 - **Bài viết 024 - Xung Lực Làm Cứng Thân Tại Điểm Tiếp Xúc Bóng**: đưa ra logic cửa sổ phục hồi quyết định khoảng cách giữa các khối tập này.
-- **Bài viết 040 - Biomechanical Efficiency Audits for Stroke Longevity**: định nghĩa dấu hiệu lực - thời gian mà mẫu này cuối cùng phụ thuộc vào.
+- **Bài viết 040 - Kiểm Toán Hiệu Suất Cơ Sinh Học Cho Tuổi Thọ Cú Đánh**: định nghĩa dấu hiệu lực - thời gian mà mẫu này cuối cùng phụ thuộc vào.
 
 Đọc cùng các bài này, ngâm nước lạnh so với liệu pháp đối trạch trở thành một **nút trong hệ thống** thay vì một bài tập tách rời: ràng buộc cơ sinh học, tín hiệu tri giác, quy tắc tải và giá trị theo trạng thái tỷ số đều phải đúng đồng thời thì mẫu mới tồn tại được dưới áp lực thi đấu.
 
