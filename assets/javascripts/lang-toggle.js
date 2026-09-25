@@ -1,193 +1,143 @@
-/**
- * Tennis Unified - Universal Language Toggle Script
- * Dynamically switches between English and Vietnamese for any page.
- * Supports:
- * - Dynamic article renderer (Tenniskb-5 Pillars/article.html?p=...)
- * - Landing pages (Tenniskb-5 Pillars/ <-> vi/Tenniskb-5 Pillars/)
- * - Subcategory pillars (/en/articles/pillar/ <-> /vi/articles/tru-cot/)
- * - Static articles (/en/articles/EN-.../ <-> /vi/articles/VI-.../)
- * - Canonical <link rel="alternate"> overrides
- * - Fallback path-based translation
- */
+/* =========================================================================
+   Tennis Unified & TennisKB — Dynamic Language Toggle Script
+   Switches dynamically between corresponding English and Vietnamese pages:
+   - Articles 1-200: /en/articles/EN-xxx <-> /vi/articles/VI-xxx
+   - Articles Index: /en/articles/ <-> /vi/articles/
+   - Category Pillars: /en/articles/biomechanics/ <-> /vi/articles/co-sinh-hoc/
+   - 5 & 10 Pillars: /Tenniskb-5 Pillars/ <-> /vi/Tenniskb-5 Pillars/ (including article.html?p=... params)
+   - Site-wide fallbacks: /vi/... <-> /...
+   ========================================================================= */
 
 (function () {
   'use strict';
 
-  var pillarMapEnToVi = {
-    'biomechanics': 'co-sinh-hoc',
-    'neuro-athletics': 'than-kinh',
-    'stroke-mechanics': 'cu-danh',
-    'tactics': 'chien-thuat',
-    'conditioning': 'the-luc'
-  };
-
-  var pillarMapViToEn = {
-    'co-sinh-hoc': 'biomechanics',
-    'than-kinh': 'neuro-athletics',
-    'cu-danh': 'stroke-mechanics',
-    'chien-thuat': 'tactics',
-    'the-luc': 'conditioning'
-  };
+  if (typeof window === 'undefined' || typeof document === 'undefined') return;
 
   function getLangToggles() {
-    return document.querySelectorAll('[data-lang-toggle]');
+    return document.querySelectorAll('[data-lang-toggle], a.tu-nav-lang');
   }
 
-  function getAlternateUrl(targetLang) {
-    var alt = document.querySelector('link[rel="alternate"][hreflang="' + targetLang + '"]');
-    if (alt && alt.getAttribute('href')) {
-      return alt.getAttribute('href');
+  function isVietnamesePage(path) {
+    var p = path || window.location.pathname;
+    return /^\/?vi(\/|$)/i.test(p) || (document.documentElement && document.documentElement.lang === 'vi');
+  }
+
+  function getAuthoritativeAlternate(isVi) {
+    var selector = isVi ? 'link[rel="alternate"][hreflang="en"]' : 'link[rel="alternate"][hreflang="vi"]';
+    var alt = document.querySelector(selector);
+    if (alt) {
+      var href = alt.getAttribute('href');
+      // Only trust root-relative or full http(s) URLs from <link rel="alternate">
+      if (href && (href.charAt(0) === '/' || /^https?:\/\//i.test(href))) {
+        return href.replace(/^https?:\/\/[^\/]+/i, '');
+      }
     }
     return null;
   }
 
-  function buildTargetUrl(currentPath) {
-    var rawPath = currentPath || window.location.pathname;
-    var decodedPath = '';
-    try {
-      decodedPath = decodeURIComponent(rawPath);
-    } catch (e) {
-      decodedPath = rawPath;
-    }
-    var search = window.location.search || '';
-    var isVi = /^\/?vi(\/|$)/i.test(decodedPath);
-    var targetLang = isVi ? 'en' : 'vi';
+  function buildTargetUrl(currentPath, currentSearch) {
+    currentPath = currentPath || window.location.pathname;
+    currentSearch = (currentSearch !== undefined) ? currentSearch : window.location.search;
+    var isVi = isVietnamesePage(currentPath);
 
-    // 1A. DYNAMIC ARTICLE RENDERER (Tenniskb-10 Pillars)
-    if (decodedPath.indexOf('Tenniskb-10 Pillars') !== -1) {
-      var alt10 = getAlternateUrl(targetLang);
-      if (alt10) {
-        return alt10;
-      }
-      var params10 = new URLSearchParams(search);
-      var p10 = params10.get('p');
-      if (p10) {
-        if (isVi) {
-          return '/Tenniskb-10 Pillars/article.html?p=' + encodeURIComponent(p10) + '&lang=en';
-        } else {
-          return '/vi/Tenniskb-10 Pillars/article.html?p=' + encodeURIComponent(p10) + '&lang=vi';
-        }
-      }
-      if (/article\.html$/i.test(decodedPath)) {
-        if (isVi) {
-          return '/Tenniskb-10 Pillars/article.html?p=ART-001-ground-reaction-force-vectors-tennis-movement.md&lang=en';
-        } else {
-          return '/vi/Tenniskb-10 Pillars/article.html?p=ART-001_VN.md&lang=vi';
-        }
-      }
-      if (/^\/?(en\/)?Tenniskb-10 Pillars\/?$/i.test(decodedPath)) {
-        return '/vi/Tenniskb-10 Pillars/';
-      }
-      if (/^\/?vi\/Tenniskb-10 Pillars\/?$/i.test(decodedPath)) {
-        return '/Tenniskb-10 Pillars/';
-      }
-    }
-
-    // 1B. DYNAMIC ARTICLE RENDERER (Tenniskb-5 Pillars/article.html?p=...)
-    if (decodedPath.indexOf('Tenniskb-5 Pillars') !== -1 || decodedPath.indexOf('article.html') !== -1) {
-      var params = new URLSearchParams(search);
-      var p = params.get('p');
-      if (p) {
-        if (isVi) {
-          // VI -> EN: ART-xxx_..._VN.md -> ART-xxx_..._EN.md
-          var enFile = p.replace(/_VN\.md$/i, '_EN.md').replace(/_vi\.md$/i, '_en.md');
-          return '/Tenniskb-5 Pillars/article.html?p=' + encodeURIComponent(enFile) + '&lang=en';
-        } else {
-          // EN -> VI: ART-xxx_..._EN.md -> ART-xxx_..._VN.md
-          var viFile = p.replace(/_EN\.md$/i, '_VN.md').replace(/_en\.md$/i, '_vi.md');
-          return '/vi/Tenniskb-5 Pillars/article.html?p=' + encodeURIComponent(viFile) + '&lang=vi';
-        }
-      }
-      // If on article.html without ?p=, default to ART-001
-      if (/article\.html$/i.test(decodedPath)) {
-        if (isVi) {
-          return '/Tenniskb-5 Pillars/article.html?p=ART-001_GRF_TriPlanar_EN.md&lang=en';
-        } else {
-          return '/vi/Tenniskb-5 Pillars/article.html?p=ART-001_GRF_TriPlanar_VN.md&lang=vi';
-        }
-      }
-      // Landing page of Tenniskb-5 Pillars
-      if (/^\/?(en\/)?Tenniskb-5 Pillars\/?$/i.test(decodedPath)) {
-        return '/vi/Tenniskb-5 Pillars/';
-      }
-      if (/^\/?vi\/Tenniskb-5 Pillars\/?$/i.test(decodedPath)) {
-        return '/Tenniskb-5 Pillars/';
-      }
-    }
-
-    // 2. PILLAR SUBCATEGORY MAPPING
-    var enPillarMatch = decodedPath.match(/^\/?en\/articles\/([a-z0-9-]+)\/?$/i);
-    if (enPillarMatch) {
-      var enPillar = enPillarMatch[1].toLowerCase();
-      if (pillarMapEnToVi[enPillar]) {
-        return '/vi/articles/' + pillarMapEnToVi[enPillar] + '/';
-      }
-    }
-    var viPillarMatch = decodedPath.match(/^\/?vi\/articles\/([a-z0-9-]+)\/?$/i);
-    if (viPillarMatch) {
-      var viPillar = viPillarMatch[1].toLowerCase();
-      if (pillarMapViToEn[viPillar]) {
-        return '/en/articles/' + pillarMapViToEn[viPillar] + '/';
-      }
-    }
-
-    // 3. STATIC ARTICLES MAPPING
-    var enArtMatch = decodedPath.match(/^\/?en\/articles\/(EN-[^\/]+)\/?$/i);
-    if (enArtMatch) {
-      var altSlug = enArtMatch[1].replace(/^EN-/i, 'VI-');
-      return '/vi/articles/' + altSlug + '/';
-    }
-    var viArtMatch = decodedPath.match(/^\/?vi\/articles\/(VI-[^\/]+)\/?$/i);
-    if (viArtMatch) {
-      var altSlug = viArtMatch[1].replace(/^VI-/i, 'EN-');
-      return '/en/articles/' + altSlug + '/';
-    }
-
-    // 4. CHECK <link rel="alternate"> (AUTHORITATIVE FOR STATIC PAGES)
-    var alt = getAlternateUrl(targetLang);
+    // 1. Authoritative <link rel="alternate"> if present on article pages
+    var alt = getAuthoritativeAlternate(isVi);
     if (alt) {
       return alt;
     }
 
-    // 5. GENERAL ROUTING FALLBACKS
-    var path = decodedPath.replace(/^\//, '');
+    // 2. Individual Article Pages (200 Articles): EN-xxx <-> VI-xxx
+    var mEn = currentPath.match(/^(?:\/en)?\/articles\/EN-(.*)$/i);
+    if (mEn) {
+      return '/vi/articles/VI-' + mEn[1];
+    }
+    var mVi = currentPath.match(/^\/vi\/articles\/VI-(.*)$/i);
+    if (mVi) {
+      return '/en/articles/EN-' + mVi[1];
+    }
 
-    if (isVi) {
-      var enPath = path.replace(/^vi\//i, '').replace(/^vi$/i, '');
-      return enPath ? '/' + enPath : '/';
+    // 3. Pillar Taxonomy Categories in Articles
+    var pillarEnToVi = {
+      'biomechanics': 'co-sinh-hoc',
+      'neuro-athletics': 'than-kinh',
+      'stroke-mechanics': 'cu-danh',
+      'tactics': 'chien-thuat',
+      'conditioning': 'the-luc'
+    };
+    var pillarViToEn = {
+      'co-sinh-hoc': 'biomechanics',
+      'than-kinh': 'neuro-athletics',
+      'cu-danh': 'stroke-mechanics',
+      'chien-thuat': 'tactics',
+      'the-luc': 'conditioning'
+    };
+
+    for (var pen in pillarEnToVi) {
+      if (currentPath.indexOf('/articles/' + pen) !== -1) {
+        return '/vi/articles/' + pillarEnToVi[pen] + '/';
+      }
+    }
+    for (var pvi in pillarViToEn) {
+      if (currentPath.indexOf('/vi/articles/' + pvi) !== -1) {
+        return '/en/articles/' + pillarViToEn[pvi] + '/';
+      }
+    }
+
+    // 4. Articles Catalog Main Index
+    if (/^\/(?:en\/)?articles\/?$/i.test(currentPath)) {
+      return '/vi/articles/';
+    }
+    if (/^\/vi\/articles\/?$/i.test(currentPath)) {
+      return '/en/articles/';
+    }
+
+    // 5. 5 Pillars & 10 Pillars Knowledge Bases
+    var pillars = ['Tenniskb-5 Pillars', 'Tenniskb-10 Pillars'];
+    for (var i = 0; i < pillars.length; i++) {
+      var pName = pillars[i];
+      if (currentPath.indexOf('/vi/' + pName) !== -1) {
+        var enPath = currentPath.replace('/vi/' + pName, '/' + pName);
+        var enSearch = currentSearch.replace(/_VN\.md/gi, '_EN.md').replace(/lang=vi/gi, 'lang=en');
+        return enPath + enSearch;
+      }
+      if (currentPath.indexOf('/' + pName) !== -1) {
+        var viPath = currentPath.replace('/' + pName, '/vi/' + pName);
+        var viSearch = currentSearch.replace(/_EN\.md/gi, '_VN.md').replace(/lang=en/gi, 'lang=vi');
+        return viPath + viSearch;
+      }
+    }
+
+    // 6. General Site Fallback
+    var path = currentPath.replace(/^\//, '');
+    if (/^vi(\/|$)/i.test(path)) {
+      var enFallback = path.replace(/^vi\/?/i, '');
+      return '/' + enFallback;
     } else {
-      if (path === '' || path === 'index.html') {
+      if (path === '' || path === '/') {
         return '/vi/';
       }
-      var cleanPath = path.replace(/^en\//i, '');
-      return '/vi/' + cleanPath;
+      return '/vi/' + path;
     }
   }
 
-  function attachToggle() {
-    var currentPath = window.location.pathname;
-    var decodedPath = '';
-    try {
-      decodedPath = decodeURIComponent(currentPath);
-    } catch(e) {
-      decodedPath = currentPath;
-    }
-    var isVi = /^\/?vi(\/|$)/i.test(decodedPath);
-    var target = buildTargetUrl(currentPath);
-
+  function updateToggleElements() {
     var toggles = getLangToggles();
-    if (toggles && toggles.length > 0) {
-      toggles.forEach(function (toggle) {
-        toggle.setAttribute('href', target);
-        var textEl = toggle.querySelector('.tu-nav-text');
-        if (textEl) {
-          textEl.textContent = isVi ? 'English' : 'Tiếng Việt';
-        }
-        toggle.setAttribute('title', isVi ? 'Switch to English' : 'Chuyển sang Tiếng Việt');
-      });
-    }
+    if (!toggles || toggles.length === 0) return;
 
-    // Also update any dropdown links with matching hreflang
+    var currentPath = window.location.pathname;
+    var target = buildTargetUrl(currentPath, window.location.search);
+    var isVi = isVietnamesePage(currentPath);
+
+    toggles.forEach(function (toggle) {
+      toggle.setAttribute('href', target);
+      var textEl = toggle.querySelector('.tu-nav-text');
+      if (textEl) {
+        textEl.textContent = isVi ? 'EN' : 'VI';
+      }
+      toggle.setAttribute('title', isVi ? 'Switch to English' : 'Chuyển sang Tiếng Việt');
+    });
+
+    // Also update any MkDocs header dropdown language links if present
     var targetLang = isVi ? 'en' : 'vi';
     var selectLinks = document.querySelectorAll('.md-select__link[hreflang="' + targetLang + '"]');
     selectLinks.forEach(function (link) {
@@ -195,21 +145,32 @@
     });
   }
 
-  // Intercept click on any language toggle link in capture phase to guarantee latest dynamic parameters
-  document.addEventListener('click', function (e) {
-    var toggle = e.target.closest('[data-lang-toggle], .md-select__link');
-    if (!toggle) return;
+  function init() {
+    updateToggleElements();
 
-    var currentPath = window.location.pathname;
-    var dynamicTarget = buildTargetUrl(currentPath);
-    if (dynamicTarget) {
-      toggle.setAttribute('href', dynamicTarget);
+    // Capture-phase click listener to guarantee latest dynamic target on click
+    document.addEventListener('click', function (e) {
+      var toggle = e.target && e.target.closest && e.target.closest('[data-lang-toggle], a.tu-nav-lang, .md-select__link');
+      if (toggle) {
+        var target = buildTargetUrl(window.location.pathname, window.location.search);
+        if (target) {
+          toggle.setAttribute('href', target);
+        }
+      }
+    }, true);
+
+    // Watch for dynamic head updates (e.g. single-page doc navigation)
+    if (window.MutationObserver && document.head) {
+      var observer = new MutationObserver(function () {
+        updateToggleElements();
+      });
+      observer.observe(document.head, { childList: true, subtree: true });
     }
-  }, true);
+  }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', attachToggle);
+    document.addEventListener('DOMContentLoaded', init);
   } else {
-    attachToggle();
+    init();
   }
 })();
