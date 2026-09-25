@@ -1,0 +1,180 @@
+# -*- coding: utf-8 -*-
+"""Per-article knowledge data, articles 193-197."""
+
+DATA = {
+    "193": {
+        "topic_en": "flow state induction protocols",
+        "topic_vi": "phác đồ dẫn dắt trạng thái dòng chảy",
+        "mech_en": "Flow is a **match between perceived challenge and perceived skill**, and it can be engineered through three controllable variables: attentional focus on process rather than outcome, a pre-point routine that is identical across score states, and a challenge level calibrated so that success probability sits near 60-70%. Too easy produces boredom, too hard produces anxiety; both remove flow.",
+        "mech_vi": "Dòng chảy là sự **khớp giữa thách thức cảm nhận và kỹ năng cảm nhận**, và có thể được thiết kế qua ba biến kiểm soát được: tập trung chú ý vào quá trình thay vì kết quả, một quy trình trước điểm giống hệt nhau qua mọi trạng thái tỷ số, và mức thách thức được hiệu chỉnh sao cho xác suất thành công nằm gần 60-70%. Quá dễ tạo ra sự nhàm chán, quá khó tạo ra lo lắng; cả hai đều phá hủy dòng chảy.",
+        "vars": [
+            ["Challenge-Skill Balance", "Cân bằng thách thức - kỹ năng", "60-70% success probability"],
+            ["Pre-Point Routine Duration", "Thời lượng quy trình trước điểm", "8-12 s"],
+            ["Attentional Focus Target", "Mục tiêu tập trung chú ý", "process cue, 1 item"],
+        ],
+        "subs": [
+            ["The Conditions That Produce Flow", "Các Điều Kiện Tạo Ra Dòng Chảy",
+             "Flow requires clear goals, immediate feedback, and a challenge-skill balance. Tennis supplies goals and feedback naturally, which means the controllable variable is the challenge level: choosing opponents and practice constraints that hold success probability near 60-70% rather than 95% or 30%.",
+             "Dòng chảy đòi hỏi mục tiêu rõ ràng, phản hồi tức thời, và cân bằng thách thức - kỹ năng. Tennis tự nhiên cung cấp mục tiêu và phản hồi, nghĩa là biến kiểm soát được là mức thách thức: chọn đối thủ và ràng buộc tập luyện giữ xác suất thành công gần 60-70% thay vì 95% hay 30%."],
+            ["Process Cues and the Single-Item Rule", "Tín Hiệu Quá Trình & Quy Tắc Một Mục",
+             "Attention is limited, and outcome thoughts consume the same capacity as process thoughts. Selecting one process cue per point - ball height, footwork rhythm, or contact point - and returning to it after every point reduces attentional drift and produces the subjective time distortion associated with flow.",
+             "Sự chú ý có giới hạn, và những suy nghĩ về kết quả tiêu tốn cùng năng lực như những suy nghĩ về quá trình. Chọn một tín hiệu quá trình cho mỗi điểm - độ cao bóng, nhịp bộ pháp, hoặc điểm tiếp xúc - và quay lại với nó sau mỗi điểm sẽ giảm sự trôi chú ý và tạo ra cảm giác biến dạng thời gian gắn với dòng chảy."],
+        ],
+        "steps": [
+            ["Set the Challenge Before the Session", "Choose the opponent or constraint so that success probability sits near 60-70%; this is the only variable that can be engineered before play."],
+            ["Return to One Cue After Every Point", "Fix a single process cue for the session and return to it after every point, regardless of the outcome of the previous point."],
+            ["Đặt Mức Thách Thức Trước Buổi Tập", "Chọn đối thủ hoặc ràng buộc sao cho xác suất thành công nằm gần 60-70%; đây là biến duy nhất có thể được thiết kế trước khi thi đấu."],
+            ["Quay Lại Một Tín Hiệu Sau Mỗi Điểm", "Cố định một tín hiệu quá trình cho cả buổi và quay lại với nó sau mỗi điểm, bất kể kết quả của điểm trước đó."],
+        ],
+        "errs": [
+            ["Chasing flow as an emotional state", "Flow is treated as something that happens rather than something engineered", "Attention goes to monitoring the state, which prevents it", "Engineer the three conditions and judge success by adherence to the routine rather than by how it felt",
+             "Đuổi theo dòng chảy như một trạng thái cảm xúc", "Dòng chảy được coi là điều xảy ra thay vì điều được thiết kế", "Sự chú ý chuyển sang theo dõi trạng thái, và điều đó ngăn nó xuất hiện", "Thiết kế ba điều kiện và đánh giá thành công bằng mức tuân thủ quy trình thay vì bằng cảm giác"],
+            ["Playing only opponents who are much weaker or stronger", "Comfort or challenge is prioritised over balance", "Boredom or anxiety replaces flow and learning stagnates", "Select practice opponents and constraints that hold success probability near 60-70%",
+             "Chỉ chơi với đối thủ yếu hơn hoặc mạnh hơn nhiều", "Sự thoải mái hoặc thách thức được ưu tiên hơn sự cân bằng", "Nhàm chán hoặc lo lắng thay thế dòng chảy và việc học bị đình trệ", "Chọn đối thủ tập và ràng buộc giữ xác suất thành công gần 60-70%"],
+        ],
+        "drills": [
+            ["Balanced Challenge Set", "Play a set with a constraint calibrated to 60-70% success", "Set Thách Thức Cân Bằng", "Chơi một set với ràng buộc được hiệu chỉnh tới 60-70% thành công"],
+            ["Single-Cue Rally", "Rally with one declared process cue, returning to it after each point", "Pha Bóng Một Tín Hiệu", "Đánh qua lại với một tín hiệu quá trình đã tuyên bố, quay lại với nó sau mỗi điểm"],
+        ],
+    },
+    "194": {
+        "topic_en": "wuji centering and dantian core activation cues",
+        "topic_vi": "định tâm wuji và tín hiệu kích hoạt cốt lõi đan điền",
+        "mech_en": "Wuji centering is a **postural and attentional preparation practice** drawn from internal martial arts: a neutral, vertically aligned stance with attention directed to the lower abdomen. Its tennis value is concrete - it reduces pre-point postural asymmetry, lowers respiratory rate, and provides a repeatable attentional anchor between points.",
+        "mech_vi": "Định tâm wuji là một **thực hành chuẩn bị về tư thế và chú ý** xuất phát từ võ thuật nội gia: một tư thế trung tính, thẳng đứng theo trục, với sự chú ý hướng về vùng bụng dưới. Giá trị của nó trong tennis rất cụ thể - nó giảm sự bất đối xứng tư thế trước điểm, hạ nhịp thở, và cung cấp một neo chú ý lặp lại được giữa các điểm.",
+        "vars": [
+            ["Centering Duration", "Thời lượng định tâm", "3-6 s"],
+            ["Pelvic Tilt Neutrality", "Tính trung tính của nghiêng khung chậu", "within 5 degrees"],
+            ["Respiratory Rate During Centering", "Nhịp thở khi định tâm", "6-8 breaths per minute"],
+        ],
+        "subs": [
+            ["Postural Neutrality and Its Measurable Effects", "Tính Trung Tính Tư Thế & Các Hiệu Ứng Đo Được",
+             "A neutral pelvis with the ribcage stacked over it reduces unnecessary paraspinal tone and allows the diaphragm to descend fully. In practice this shows as a lower resting respiratory rate between points and a more consistent split-step timing, both of which are measurable.",
+             "Một khung chậu trung tính với lồng ngực xếp trên nó làm giảm trương lực cạnh cột sống không cần thiết và cho phép cơ hoành hạ xuống hoàn toàn. Trong thực tiễn, điều này thể hiện ở nhịp thở nghỉ giữa các điểm thấp hơn và nhịp bước tách nhất quán hơn, cả hai đều đo được."],
+            ["Attentional Anchoring Between Points", "Neo Chú Ý Giữa Các Điểm",
+             "Directing attention to the lower abdomen gives the mind a single, low-arousal anchor that is always available and requires no equipment. The mechanism is attentional rather than energetic: a single anchor displaces rumination about the previous point and reduces the arousal spike that follows an error.",
+             "Hướng sự chú ý về vùng bụng dưới cho tâm trí một neo duy nhất, ít kích thích, luôn sẵn có và không cần thiết bị. Cơ chế mang tính chú ý hơn là mang tính năng lượng: một neo duy nhất thay thế sự suy nghĩ lặp lại về điểm trước và giảm mức kích thích tăng vọt sau một lỗi."],
+        ],
+        "steps": [
+            ["Rebuild the Stance Between Every Point", "Return to a neutral stance with the pelvis level before the next point; asymmetry accumulated over a set changes movement timing."],
+            ["Anchor Attention Low, Not on the Scoreboard", "Direct attention to the lower abdomen or to the breath rather than to the score; the score is not actionable between points."],
+            ["Xây Lại Tư Thế Giữa Mỗi Điểm", "Trở về tư thế trung tính với khung chậu cân bằng trước điểm kế tiếp; sự bất đối xứng tích lũy qua một set sẽ thay đổi nhịp di chuyển."],
+            ["Neo Chú Ý Ở Dưới, Không Ở Bảng Điểm", "Hướng chú ý về bụng dưới hoặc về hơi thở thay vì về tỷ số; tỷ số không phải điều có thể hành động giữa các điểm."],
+        ],
+        "errs": [
+            ["Treating centering as a mystical practice", "The method is dismissed or adopted without measurement", "No protocol is built and no benefit accrues", "Measure the concrete variables: pelvic neutrality, respiratory rate between points, and split-step timing consistency",
+             "Coi việc định tâm là một thực hành huyền bí", "Phương pháp bị bác bỏ hoặc được áp dụng mà không đo lường", "Không có phác đồ nào được xây dựng và không có lợi ích nào tích lũy", "Đo các biến cụ thể: tính trung tính của khung chậu, nhịp thở giữa các điểm, và tính nhất quán của nhịp bước tách"],
+            ["Using centering to avoid tactical engagement", "Low arousal is pursued as an end in itself", "Intensity falls below the level required for competitive execution", "Cap the centering routine at 3-6 s and keep the tactical intention declared before it begins",
+             "Dùng định tâm để tránh tham gia chiến thuật", "Mức kích thích thấp được theo đuổi như mục đích tự thân", "Cường độ giảm xuống dưới mức cần thiết cho việc thực thi thi đấu", "Giới hạn quy trình định tâm ở 3-6 giây và giữ ý định chiến thuật đã tuyên bố trước khi nó bắt đầu"],
+        ],
+        "drills": [
+            ["Wuji Standing", "3-6 s of neutral standing with attention at the lower abdomen at every point", "Đứng Wuji", "3-6 giây đứng trung tính với chú ý ở bụng dưới ở mọi điểm"],
+            ["Breath-and-Stance Reset", "Six slow breaths with pelvic alignment check at changeovers", "Khôi Phục Hơi Thở Và Tư Thế", "Sáu hơi thở chậm kèm kiểm tra căn chỉnh khung chậu ở các lần đổi sân"],
+        ],
+    },
+    "195": {
+        "topic_en": "micro-dosing strength training during heavy match calendars",
+        "topic_vi": "huấn luyện sức mạnh liều nhỏ trong lịch thi đấu dày đặc",
+        "mech_en": "Micro-dosing distributes strength work into **short, frequent, low-fatigue exposures** rather than long sessions, which preserves strength and power during competition periods without compromising match readiness. The physiological basis is that maintenance requires far less volume than acquisition.",
+        "mech_vi": "Liều nhỏ phân bổ bài tập sức mạnh thành những **lần tiếp xúc ngắn, thường xuyên, ít gây mệt** thay vì những buổi dài, điều này bảo tồn sức mạnh và công suất trong giai đoạn thi đấu mà không ảnh hưởng tới mức sẵn sàng thi đấu. Cơ sở sinh lý là việc duy trì đòi hỏi khối lượng ít hơn nhiều so với việc đạt được.",
+        "vars": [
+            ["Session Duration", "Thời lượng buổi", "12-20 min"],
+            ["Weekly Exposures", "Số lần mỗi tuần", "3-5"],
+            ["Intensity Retained", "Cường độ được giữ", "80-90% of 1RM"],
+        ],
+        "subs": [
+            ["Maintenance Dose Versus Acquisition Dose", "Liều Duy Trì So Với Liều Đạt Được",
+             "Once a strength base is established, as little as one-third of the acquisition volume maintains it for several weeks. Micro-dosing exploits this by concentrating intensity and minimising total sets, which keeps fatigue low enough for match play on the same or the following day.",
+             "Khi nền tảng sức mạnh đã được thiết lập, chỉ cần một phần ba khối lượng đạt được là đủ duy trì nó trong nhiều tuần. Liều nhỏ khai thác điều này bằng cách tập trung cường độ và giảm thiểu tổng số loạt, giữ mức mệt đủ thấp cho việc thi đấu trong cùng ngày hoặc ngày hôm sau."],
+            ["Programming Structure During Tournaments", "Cấu Trúc Lập Trình Trong Giải Đấu",
+             "A practical structure is 3-5 exposures per week of 12-20 minutes each, with one primary lift, one accessory movement, and one tendon-specific exercise. Sessions are placed after matches rather than before, and never on the day before a priority match.",
+             "Một cấu trúc thực tiễn là 3-5 lần mỗi tuần, mỗi lần 12-20 phút, với một bài chính, một bài phụ, và một bài dành riêng cho gân. Các buổi được đặt sau trận đấu thay vì trước, và không bao giờ vào ngày trước một trận ưu tiên."],
+        ],
+        "steps": [
+            ["Establish the Base Before Micro-Dosing", "Micro-dosing maintains strength; it does not build it from nothing. Complete a normal strength block first."],
+            ["Place Sessions After Matches", "Schedule the micro-dose after competition rather than before, so that match readiness is never compromised."],
+            ["Thiết Lập Nền Trước Khi Dùng Liều Nhỏ", "Liều nhỏ duy trì sức mạnh; nó không xây sức mạnh từ con số không. Hoàn thành một khối sức mạnh thông thường trước."],
+            ["Đặt Buổi Sau Trận Đấu", "Sắp liều nhỏ sau thi đấu thay vì trước, để mức sẵn sàng thi đấu không bao giờ bị ảnh hưởng."],
+        ],
+        "errs": [
+            ["Skipping strength entirely during competition blocks", "Match play is assumed to maintain all qualities", "Strength and power decline measurably within three to four weeks", "Maintain 3-5 micro-dose exposures per week at 80-90% intensity with minimal total sets",
+             "Bỏ hoàn toàn bài tập sức mạnh trong các khối thi đấu", "Thi đấu được giả định là duy trì mọi phẩm chất", "Sức mạnh và công suất suy giảm đo được trong vòng ba tới bốn tuần", "Duy trì 3-5 lần liều nhỏ mỗi tuần ở cường độ 80-90% với tổng số loạt tối thiểu"],
+            ["Scheduling strength before a priority match", "Convenience determines placement", "Match readiness is compromised by residual fatigue", "Place all micro-dose sessions after matches and never within 24 h before a priority match",
+             "Sắp bài tập sức mạnh trước một trận ưu tiên", "Sự tiện lợi quyết định vị trí", "Mức sẵn sàng thi đấu bị ảnh hưởng bởi mệt mỏi còn lại", "Đặt mọi buổi liều nhỏ sau trận đấu và không bao giờ trong vòng 24 giờ trước một trận ưu tiên"],
+        ],
+        "drills": [
+            ["Twelve-Minute Dose", "One primary lift, one accessory, one tendon exercise", "Liều Mười Hai Phút", "Một bài chính, một bài phụ, một bài gân"],
+            ["Travel Micro-Dose", "Bodyweight or band alternative for hotel rooms", "Liều Nhỏ Khi Di Chuyển", "Phương án trọng lượng cơ thể hoặc dây kháng lực cho phòng khách sạn"],
+        ],
+    },
+    "196": {
+        "topic_en": "bilateral asymmetry diagnostics and correction",
+        "topic_vi": "chẩn đoán và khắc phục bất đối xứng hai bên",
+        "mech_en": "Tennis is inherently asymmetric, and asymmetry becomes pathological when the **affected side falls below 90% of the contralateral side on strength, power, or hop measures**. Diagnosis requires testing multiple qualities, because asymmetry in one quality does not imply asymmetry in another.",
+        "mech_vi": "Tennis vốn bất đối xứng, và sự bất đối xứng trở nên bệnh lý khi **bên bị ảnh hưởng giảm xuống dưới 90% so với bên đối diện ở các chỉ số sức mạnh, công suất, hoặc nhảy**. Chẩn đoán đòi hỏi kiểm tra nhiều phẩm chất, vì bất đối xứng ở một phẩm chất không hàm ý bất đối xứng ở phẩm chất khác.",
+        "vars": [
+            ["Asymmetry Threshold", "Ngưỡng bất đối xứng", "over 10%"],
+            ["Qualities Tested", "Số phẩm chất được kiểm tra", "4-6"],
+            ["Re-Test Interval", "Khoảng thời gian kiểm tra lại", "every 6-8 weeks"],
+        ],
+        "subs": [
+            ["Which Asymmetries Matter", "Những Bất Đối Xứng Nào Quan Trọng",
+             "Asymmetry in single-leg hop distance, eccentric hamstring strength, and hip abduction strength is associated with injury risk; asymmetry in grip strength or forearm size is largely cosmetic in tennis. Testing the wrong qualities produces interventions that do not change risk.",
+             "Bất đối xứng ở quãng đường nhảy một chân, sức mạnh lệch tâm gân kheo, và sức mạnh dạng hông có liên quan tới nguy cơ chấn thương; bất đối xứng ở sức mạnh nắm hoặc kích thước cẳng tay phần lớn chỉ là hình thức trong tennis. Kiểm tra sai phẩm chất sẽ tạo ra các can thiệp không thay đổi nguy cơ."],
+            ["Correction Principles", "Các Nguyên Lý Khắc Phục",
+             "Correction uses unilateral loading on the deficient side with the strong side performing a reduced range or reduced load, plus single-leg balance and hop work. Bilateral training alone reduces the asymmetry slowly because the strong side continues to dominate the shared load.",
+             "Khắc phục sử dụng nạp tải một bên cho bên yếu trong khi bên mạnh thực hiện biên độ giảm hoặc tải giảm, kèm bài thăng bằng một chân và bài nhảy. Tập hai bên đơn thuần làm giảm bất đối xứng chậm vì bên mạnh tiếp tục chi phối tải chia sẻ."],
+        ],
+        "steps": [
+            ["Test the Right Qualities", "Measure single-leg hop, eccentric hamstring strength, hip abduction, and one power measure; avoid cosmetic measures."],
+            ["Load the Deficient Side Unilaterally", "Prescribe unilateral work for the weak side with the strong side performing fewer repetitions, not the same number."],
+            ["Kiểm Tra Đúng Phẩm Chất", "Đo nhảy một chân, sức mạnh lệch tâm gân kheo, dạng hông, và một chỉ số công suất; tránh các chỉ số hình thức."],
+            ["Nạp Tải Một Bên Cho Bên Yếu", "Chỉ định bài một bên cho bên yếu trong khi bên mạnh thực hiện ít lần lặp hơn, không phải cùng số lần."],
+        ],
+        "errs": [
+            ["Correcting asymmetry with bilateral training only", "The programme is symmetric by habit", "The strong side continues to dominate and the gap closes very slowly", "Prescribe unilateral loading for the deficient side and re-test every 6-8 weeks",
+             "Khắc phục bất đối xứng chỉ bằng bài tập hai bên", "Chương trình đối xứng theo thói quen", "Bên mạnh tiếp tục chi phối và khoảng cách thu hẹp rất chậm", "Chỉ định bài một bên cho bên yếu và kiểm tra lại mỗi 6-8 tuần"],
+            ["Measuring qualities that do not affect risk", "Convenient tests are used instead of relevant ones", "The programme targets cosmetic differences and injury risk is unchanged", "Test single-leg hop distance, eccentric hamstring strength, and hip abduction strength",
+             "Đo những phẩm chất không ảnh hưởng tới nguy cơ", "Các bài kiểm tra tiện lợi được dùng thay vì các bài liên quan", "Chương trình nhắm vào khác biệt hình thức và nguy cơ chấn thương không đổi", "Kiểm tra quãng đường nhảy một chân, sức mạnh lệch tâm gân kheo, và sức mạnh dạng hông"],
+        ],
+        "drills": [
+            ["Single-Leg Hop Battery", "Three hop tests per side, recorded as a percentage difference", "Bộ Bài Nhảy Một Chân", "Ba bài nhảy mỗi bên, ghi lại dưới dạng phần trăm chênh lệch"],
+            ["Unilateral Deficit Block", "3 x 8 on the weak side with 3 x 5 on the strong side", "Khối Bù Thiếu Hụt Một Bên", "3 x 8 cho bên yếu và 3 x 5 cho bên mạnh"],
+        ],
+    },
+    "197": {
+        "topic_en": "glenohumeral internal rotation deficit counter-measures",
+        "topic_vi": "biện pháp đối phó thiếu hụt xoay trong khớp vai",
+        "mech_en": "Repetitive serving produces **adaptive external rotation gain and internal rotation loss** in the dominant shoulder. When the deficit exceeds roughly 18-20 degrees or when total rotational range of motion on the dominant side falls more than 5 degrees below the non-dominant side, injury risk rises sharply and counter-measures are required.",
+        "mech_vi": "Giao bóng lặp lại tạo ra **tăng xoay ngoài thích nghi và mất xoay trong** ở vai thuận. Khi mức thiếu hụt vượt khoảng 18-20 độ hoặc khi tổng biên độ xoay ở bên thuận giảm hơn 5 độ so với bên không thuận, nguy cơ chấn thương tăng mạnh và cần có các biện pháp đối phó.",
+        "vars": [
+            ["Internal Rotation Deficit Threshold", "Ngưỡng thiếu hụt xoay trong", "over 18-20 degrees"],
+            ["Total Range of Motion Loss", "Mức mất tổng biên độ vận động", "over 5 degrees"],
+            ["Sleeper Stretch Duration", "Thời lượng bài giãn tư thế nằm nghiêng", "3 x 30 s"],
+        ],
+        "subs": [
+            ["Adaptation Versus Pathology", "Thích Nghi So Với Bệnh Lý",
+             "External rotation gain is a normal adaptation to the throwing motion and is not itself harmful. The pathological component is the loss of internal rotation and of total rotational range, which alters the position of the humeral head and increases load on the posterior capsule and the rotator cuff.",
+             "Tăng xoay ngoài là một thích nghi bình thường với động tác ném và tự nó không gây hại. Thành phần bệnh lý là mất xoay trong và mất tổng biên độ xoay, điều này làm thay đổi vị trí chỏm xương cánh tay và tăng tải lên bao sau và rotator cuff."],
+            ["Counter-Measure Programming", "Lập Trình Biện Pháp Đối Phó",
+             "The programme combines posterior capsule stretching, scapular control work, and eccentric external rotation loading. Stretching alone produces short-term range gains; the strength work is what prevents the deficit from returning within the same season.",
+             "Chương trình kết hợp giãn bao sau, bài kiểm soát xương bả vai, và nạp tải xoay ngoài lệch tâm. Giãn đơn thuần tạo ra lợi ích biên độ ngắn hạn; phần bài tập sức mạnh mới là thứ ngăn mức thiếu hụt quay trở lại trong cùng mùa giải."],
+        ],
+        "steps": [
+            ["Measure Both Shoulders, Not Just the Dominant One", "Record internal and external rotation on both sides; the deficit is defined by the comparison, not by an absolute value."],
+            ["Combine Stretching With Loading", "Pair every posterior capsule stretch with eccentric external rotation work; range gained without strength is range lost."],
+            ["Đo Cả Hai Vai, Không Chỉ Vai Thuận", "Ghi lại xoay trong và xoay ngoài ở cả hai bên; mức thiếu hụt được xác định bằng so sánh, không bằng giá trị tuyệt đối."],
+            ["Kết Hợp Giãn Với Nạp Tải", "Ghép mỗi lần giãn bao sau với bài xoay ngoài lệch tâm; biên độ giành được mà không có sức mạnh sẽ là biên độ bị mất."],
+        ],
+        "errs": [
+            ["Stretching aggressively to close the deficit quickly", "The deficit is treated as a flexibility problem only", "Acute posterior capsule irritation and a temporary loss of range", "Combine gentle sustained stretching with eccentric external rotation loading and progress over 8-12 weeks",
+             "Giãn mạnh để thu hẹp thiếu hụt nhanh chóng", "Mức thiếu hụt chỉ được coi là vấn đề dẻo dai", "Kích thích bao sau cấp tính và mất biên độ tạm thời", "Kết hợp giãn duy trì nhẹ nhàng với nạp tải xoay ngoài lệch tâm và tiến triển trong 8-12 tuần"],
+            ["Measuring only range of motion", "Total range is assumed to represent shoulder health", "Strength deficits remain undetected and the range gain is not retained", "Measure range, strength, and scapular control together every 6-8 weeks",
+             "Chỉ đo biên độ vận động", "Tổng biên độ được giả định đại diện cho sức khỏe vai", "Thiếu hụt sức mạnh không được phát hiện và lợi ích biên độ không được duy trì", "Đo biên độ, sức mạnh và kiểm soát xương bả vai cùng nhau mỗi 6-8 tuần"],
+        ],
+        "drills": [
+            ["Sleeper Stretch", "3 x 30 s per side at low intensity", "Giãn Tư Thế Nằm Nghiêng", "3 x 30 giây mỗi bên ở cường độ thấp"],
+            ["Eccentric External Rotation", "3 x 12 with a band, 3 s return phase", "Xoay Ngoài Lệch Tâm", "3 x 12 với dây kháng lực, pha về 3 giây"],
+        ],
+    },
+}
