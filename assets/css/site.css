@@ -1448,3 +1448,60 @@ body[data-md-color-scheme="slate"] .tu-formula-card ul li {
   color: #cbd5e1 !important;
 }
 
+
+/* ==========================================================================
+   tenniskb.github.io typography parity
+   --------------------------------------------------------------------------
+   tenniskb.github.io requests assets/stylesheets/main.ec1eaa64.min.css, but
+   that file is not present in the tenniskb repo (HTTP 404), so Material's
+   .md-typeset type scale never applies there. Article content therefore falls
+   back to the cerulean / site.css scale: html { font-size: 25px }, body text
+   25px, h1 2.5rem (62.5px), font-weight 500, line-height 1.2.
+   tennis-unified.github.io does ship that stylesheet, so Material shrank the
+   text to .8rem (20px) with h1 2em (40px) and weight 300 - that is the
+   font-size mismatch between the two sites.
+   The rules below re-assert the tenniskb (fallback) typography inside
+   .md-typeset so both sites render identically.
+   ========================================================================== */
+.md-typeset { font-size: 1rem; line-height: 1.65; }
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+.md-typeset h1 { font-size: 2.5rem; letter-spacing: -0.02em; }
+.md-typeset h2 { font-size: 2rem; }
+.md-typeset h3 { font-size: 1.75rem; }
+.md-typeset h4 { font-size: 1.5rem; }
+.md-typeset h5 { font-size: 1.25rem; text-transform: none; }
+.md-typeset h6 { font-size: 1rem; letter-spacing: 0.04em; }
+
+.md-typeset code,
+.md-typeset kbd { font-size: 1em; }
+
+.md-typeset table:not([class]),
+.md-typeset .admonition,
+.md-typeset details,
+.md-typeset .footnote,
+.md-typeset .tabbed-labels > label,
+.md-typeset .md-tag { font-size: 1rem; }
+
+.md-typeset .footnote-ref,
+.md-typeset .md-annotation-list li::before { font-size: 1em; }
+
+/* Match cerulean's fluid heading sizes below the xl breakpoint */
+@media (max-width: 1199.98px) {
+  .md-typeset h1 { font-size: calc(1.375rem + 1.5vw); }
+  .md-typeset h2 { font-size: calc(1.325rem + 0.9vw); }
+  .md-typeset h3 { font-size: calc(1.3rem + 0.6vw); }
+  .md-typeset h4 { font-size: calc(1.275rem + 0.3vw); }
+}
