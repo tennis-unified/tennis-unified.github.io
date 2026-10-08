@@ -1,0 +1,84 @@
+/* Custom dropdown styles for top navigation tabs */
+/* Elevated header z-index is only needed on desktop, where the tab dropdowns
+   render (see .md-tabs__nested below). On mobile this same rule was sitting
+   above the drawer's own stacking order, which made the hamburger menu look
+   like it did nothing when tapped. Scoping it to the desktop breakpoint used
+   elsewhere in this file (60em) fixes the drawer without touching the
+   dropdown behavior it was added for. */
+@media screen and (min-width: 60em) {
+  .md-header {
+    z-index: 100;
+  }
+}
+
+.md-tabs__item--nested {
+  position: relative;
+}
+
+.md-tabs__item--nested > .md-tabs__toggle {
+  display: none;
+}
+
+.md-tabs__item--nested > .md-tabs__link {
+  cursor: pointer;
+}
+
+.md-tabs__item--nested:hover > .md-tabs__nested,
+.md-tabs__item--nested:focus-within > .md-tabs__nested,
+.md-tabs__item--nested[open] > .md-tabs__nested {
+  display: flex;
+  flex-direction: column;
+}
+
+.md-tabs__nested {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0 0 0.1rem 0.1rem;
+  box-shadow: var(--md-shadow-z2);
+  z-index: 1000;
+  padding: 0.5rem 0;
+}
+
+.md-tabs__nested > .md-tabs__link {
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  color: var(--md-default-fg-color);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-tabs__nested > .md-tabs__link:last-child {
+  border-bottom: none;
+}
+
+.md-tabs__nested > .md-tabs__link:hover {
+  background: var(--md-accent-fg-color--transparent);
+  color: var(--md-accent-fg-color);
+}
+
+/* Keyboard accessibility */
+.md-tabs__item--nested > .md-tabs__link:focus + .md-tabs__nested,
+.md-tabs__item--nested:focus-within > .md-tabs__nested {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mobile support */
+@media screen and (max-width: 59.984375em) {
+  .md-tabs__nested {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: 100%;
+    border-radius: 0.1rem 0.1rem 0 0;
+    border-top: 1px solid var(--md-default-fg-color--lightest);
+    max-height: 50vh;
+    overflow-y: auto;
+  }
+}
