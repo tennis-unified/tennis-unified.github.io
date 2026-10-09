@@ -18,6 +18,9 @@
     try {
       var saved = localStorage.getItem(STORAGE_KEY);
       if (saved === 'dark' || saved === 'light') return saved;
+      // Legacy book/doubles pages stored their preference under the key 'theme'
+      var legacy = localStorage.getItem('theme');
+      if (legacy === 'dark' || legacy === 'light') return legacy;
     } catch (e) {}
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       return 'dark';
@@ -36,6 +39,9 @@
     var body = document.body;
     if (body) {
       body.setAttribute('data-md-color-scheme', theme === 'dark' ? 'slate' : 'default');
+      // Legacy book/doubles pages drive their own palette with body.dark-mode
+      if (theme === 'dark') body.classList.add('dark-mode');
+      else body.classList.remove('dark-mode');
     }
 
     syncMaterialPalette(theme);
