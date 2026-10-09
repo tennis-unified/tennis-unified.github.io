@@ -21,6 +21,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -38,3 +39,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          # The site tree is ~5-7 GB; Pages syncing routinely takes 5-15 min.
+          # The action's default 600000 ms (10 min) abort kills healthy deploys.
+          timeout: 1800000
+          error_count: 30
