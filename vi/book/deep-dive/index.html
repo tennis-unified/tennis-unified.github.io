@@ -113,7 +113,58 @@ html[data-theme="dark"] .link-ch{stroke:#33443c;}
 .mm-card li a:hover{color:var(--mm-accent);border-bottom-color:var(--mm-accent);}
 .mm-foot{text-align:center;margin-top:34px;color:var(--mm-mute);font-size:.83rem;}
 .mm-foot a{color:var(--mm-accent);}
+
+/* ---- new clean top nav: brand + "Main" dropdown + dark toggle (no icons) ---- */
+.mm-top{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:16px;
+  padding:10px 18px;background:var(--mm-panel);border-bottom:1px solid var(--mm-light);}
+.mm-brand{flex:0 0 auto;font-weight:800;font-size:1.02rem;letter-spacing:.01em;color:var(--mm-ink);
+  text-decoration:none;white-space:nowrap;}
+.mm-brand:hover{color:var(--mm-accent);}
+.mm-nav{flex:1 1 auto;display:flex;align-items:center;}
+.mm-dropdown{position:relative;}
+.mm-dropbtn{font:inherit;font-weight:600;font-size:.9rem;color:var(--mm-ink);background:transparent;
+  border:1px solid var(--mm-light);border-radius:9px;padding:8px 16px;cursor:pointer;
+  display:inline-flex;align-items:center;gap:7px;transition:.18s;}
+.mm-dropbtn:hover,.mm-dropdown.open .mm-dropbtn{border-color:var(--mm-accent);color:var(--mm-accent);}
+.mm-caret{font-size:.7rem;transition:transform .2s;}
+.mm-dropdown.open .mm-caret{transform:rotate(180deg);}
+.mm-dropmenu{position:absolute;top:calc(100% + 9px);left:0;min-width:260px;display:none;flex-direction:column;
+  background:var(--mm-panel);border:1px solid var(--mm-light);border-radius:12px;padding:8px;
+  box-shadow:0 18px 44px -22px rgba(0,0,0,.4);max-height:78vh;overflow:auto;z-index:60;}
+.mm-dropdown.open .mm-dropmenu{display:flex;}
+.mm-dropmenu a{display:block;padding:9px 13px;border-radius:8px;color:var(--mm-ink);text-decoration:none;
+  font-size:.9rem;transition:.14s;}
+.mm-dropmenu a:hover{background:var(--mm-light);color:var(--mm-accent);}
+.mm-dropmenu a.active{background:rgba(139,38,53,.10);color:var(--mm-accent);font-weight:700;}
+.mm-darkbtn{flex:0 0 auto;font:inherit;font-weight:600;font-size:.82rem;color:var(--mm-soft);
+  background:transparent;border:1px solid var(--mm-light);border-radius:9px;padding:8px 13px;cursor:pointer;transition:.18s;}
+.mm-darkbtn:hover{border-color:var(--mm-accent);color:var(--mm-accent);}
+.mm-darkbtn.active{background:rgba(139,38,53,.10);color:var(--mm-accent);border-color:var(--mm-accent);}
+
+/* ---- breadcrumbs under the nav ---- */
+.mm-crumbs{max-width:1360px;margin:0 auto;padding:12px 20px 0;font-size:.8rem;color:var(--mm-mute);}
+.mm-crumbs a{color:var(--mm-soft);text-decoration:none;}
+.mm-crumbs a:hover{color:var(--mm-accent);}
+.mm-crumbs .sep{margin:0 9px;color:var(--mm-light);}
+.mm-crumbs .cur{color:var(--mm-ink);font-weight:600;}
+
+/* ---- bottom Pre / Home / Next pager ---- */
+.mm-pn{display:flex;gap:12px;max-width:1360px;margin:38px auto 0;}
+.mm-pn a{flex:1 1 0;text-align:center;text-decoration:none;padding:15px 12px;border:1px solid var(--mm-light);
+  border-radius:13px;background:var(--mm-card);color:var(--mm-ink);transition:.18s;display:block;}
+.mm-pn a:hover{border-color:var(--mm-accent);color:var(--mm-accent);transform:translateY(-2px);}
+.mm-pn .lbl{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mm-mute);
+  font-weight:700;margin-bottom:3px;}
+.mm-pn .ttl{font-size:.98rem;font-weight:600;}
+.mm-pn a.home{background:var(--mm-accent);border-color:var(--mm-accent);color:#fff;}
+.mm-pn a.home .lbl{color:rgba(255,255,255,.72);}
+.mm-pn a.home:hover{color:#fff;filter:brightness(1.06);}
+
 @media(max-width:720px){
+  .mm-top{flex-wrap:wrap;gap:10px;}
+  .mm-brand{font-size:.92rem;}
+  .mm-pn{flex-direction:column;}
+}
   .mm-head h1{font-size:1.55rem;}
   .mm-stage{height:66vh;min-height:460px;}
   .mm-panel{padding:18px;}
@@ -121,24 +172,8 @@ html[data-theme="dark"] .link-ch{stroke:#33443c;}
 </style>
 </head>
 <body class="mm-body">
-<div class="tu-topnav">
-  <a href="/vi/" class="tu-nav-item" title="Trang chủ"><span class="tu-nav-emoji">🏠</span><span class="tu-nav-text">Trang chủ</span></a>
-  <a href="/vi/fundamentals/" class="tu-nav-item" title="Nền tảng"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Nền tảng</span></a>
-  <a href="/vi/doubles/" class="tu-nav-item" title="Đánh đôi"><span class="tu-nav-emoji">👥</span><span class="tu-nav-text">Đánh đôi</span></a>
-  <a href="/vi/stroke-analysis/" class="tu-nav-item" title="Phân tích cú đánh"><span class="tu-nav-emoji">🧠</span><span class="tu-nav-text">Phân tích cú đánh</span></a>
-  <a href="/vi/coach-video-library/" class="tu-nav-item" title="Thư viện HLV"><span class="tu-nav-emoji">🎓</span><span class="tu-nav-text">Thư viện HLV</span></a>
-  <a href="/vi/tennis-video-library/" class="tu-nav-item" title="Thư viện Video"><span class="tu-nav-emoji">🎬</span><span class="tu-nav-text">Thư viện Video</span></a>
-  <a href="/vi/tennis-technical-reference/" class="tu-nav-item" title="Tra cứu kỹ thuật"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Tra cứu kỹ thuật</span></a>
-  <a href="/tnkb/vi/" class="tu-nav-item" title="Kho tri thức"><span class="tu-nav-emoji">💡</span><span class="tu-nav-text">Kho tri thức</span></a>
-  <a href="/vi/tennis-evolution/" class="tu-nav-item" title="Tiến hóa quần vợt"><span class="tu-nav-emoji">⚡</span><span class="tu-nav-text">Tiến hóa quần vợt</span></a>
-  <a href="/vi/blog/" class="tu-nav-item" title="Bài viết"><span class="tu-nav-emoji">📝</span><span class="tu-nav-text">Bài viết</span></a>
-  <a href="/vi/book/" class="tu-nav-item" title="Sách Toàn diện"><span class="tu-nav-emoji">📕</span><span class="tu-nav-text">Sách Toàn diện</span></a>
-  <a href="/vi/books/" class="tu-nav-item" title="Tủ sách Tennis"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Tủ sách Tennis</span></a>
-  <a href="/vi/books/deep-dive/" class="tu-nav-item active" title="Bản đồ sách"><span class="tu-nav-emoji">🗺️</span><span class="tu-nav-text">Bản đồ sách</span></a>
-  <a href="/vi/books/glossary.html" class="tu-nav-item" title="Từ điển thuật ngữ"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Từ điển thuật ngữ</span></a>
-  <a href="/vi/books/court_diagrams.html" class="tu-nav-item" title="Sơ đồ chiến thuật"><span class="tu-nav-emoji">🎯</span><span class="tu-nav-text">Sơ đồ chiến thuật</span></a>
-  <button class="tu-nav-item tu-nav-darkmode" title="Chế độ tối" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Chế độ tối</span></button>
-</div>
+<header class="mm-top"><a class="mm-brand" href="/vi/">Sân Thống Nhất</a><nav class="mm-nav" aria-label="Sections"><div class="mm-dropdown"><button class="mm-dropbtn" type="button" aria-haspopup="true" aria-expanded="false">Chính <span class="mm-caret">&#9662;</span></button><div class="mm-dropmenu"><a href="/vi/">Trang chủ</a><a href="/vi/fundamentals/">Nền tảng</a><a href="/vi/doubles/">Đánh đôi</a><a href="/vi/stroke-analysis/">Phân tích cú đánh</a><a href="/vi/coach-video-library/">Thư viện HLV</a><a href="/vi/tennis-video-library/">Thư viện Video</a><a href="/vi/tennis-technical-reference/">Tra cứu kỹ thuật</a><a href="/tnkb/vi/">Kho tri thức</a><a href="/vi/tennis-evolution/">Tiến hóa quần vợt</a><a href="/vi/blog/">Bài viết</a><a href="/vi/book/" class="active">Sách Toàn diện</a><a href="/vi/books/">Tủ sách Tennis</a><a href="/vi/books/deep-dive/">Bản đồ sách</a><a href="/vi/books/glossary.html">Từ điển thuật ngữ</a><a href="/vi/books/court_diagrams.html">Sơ đồ chiến thuật</a></div></div></nav><button class="tu-nav-darkmode mm-darkbtn" type="button"><span class="tu-nav-text">Dark Mode</span></button></header>
+<nav class="mm-crumbs" aria-label="Breadcrumb"><a href="/vi/">Trang chủ</a><span class="sep">&#8250;</span><a href="/vi/book/">Sách Toàn diện</a><span class="sep">&#8250;</span><span class="cur">Bản đồ khái niệm</span></nav>
 
 <main>
 <div class="mm-wrap">
@@ -187,6 +222,7 @@ html[data-theme="dark"] .link-ch{stroke:#33443c;}
 
   <p class="mm-foot">Nguồn: <em>Sân Thống Nhất — Khoa Học Sống, Cơ Học Nội Tâm và Nghệ Thuật Đỉnh Cao Của Tennis Hiện Đại</em>.<br>Liên kết chéo tới Thư Viện Sách Tennis · <a href="/vi/book/" style="color:var(--mm-accent);">← Về trang sách</a></p>
 </div>
+<nav class="mm-pn" aria-label="Pagination"><a class="prev" href="/vi/books/deep-dive/"><span class="lbl">Trước</span><span class="ttl">&#8249; Bản đồ sách</span></a><a class="home" href="/vi/"><span class="lbl">Trang chủ</span><span class="ttl">&#8962; Trang chủ</span></a><a class="next" href="/vi/book/"><span class="lbl">Sau</span><span class="ttl">Sách Toàn diện &#8250;</span></a></nav>
 </main>
 
 <script>
@@ -650,6 +686,26 @@ document.getElementById('st-l').textContent = DATA.concepts.reduce((s,c)=>s+c.li
 
 setTimeout(home, 60);
 window.addEventListener('load', home);
+
+/* ---------- dropdown "Main" nav ---------- */
+(function(){
+  document.querySelectorAll('.mm-dropdown').forEach(function(d){
+    var btn = d.querySelector('.mm-dropbtn');
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var open = d.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+  document.addEventListener('click', function(e){
+    document.querySelectorAll('.mm-dropdown.open').forEach(function(d){
+      if(!d.contains(e.target)){
+        d.classList.remove('open');
+        var b = d.querySelector('.mm-dropbtn'); if(b) b.setAttribute('aria-expanded','false');
+      }
+    });
+  });
+})();
 </script>
 </body>
 </html>

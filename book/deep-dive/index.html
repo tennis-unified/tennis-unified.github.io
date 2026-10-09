@@ -113,7 +113,58 @@ html[data-theme="dark"] .link-ch{stroke:#33443c;}
 .mm-card li a:hover{color:var(--mm-accent);border-bottom-color:var(--mm-accent);}
 .mm-foot{text-align:center;margin-top:34px;color:var(--mm-mute);font-size:.83rem;}
 .mm-foot a{color:var(--mm-accent);}
+
+/* ---- new clean top nav: brand + "Main" dropdown + dark toggle (no icons) ---- */
+.mm-top{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:16px;
+  padding:10px 18px;background:var(--mm-panel);border-bottom:1px solid var(--mm-light);}
+.mm-brand{flex:0 0 auto;font-weight:800;font-size:1.02rem;letter-spacing:.01em;color:var(--mm-ink);
+  text-decoration:none;white-space:nowrap;}
+.mm-brand:hover{color:var(--mm-accent);}
+.mm-nav{flex:1 1 auto;display:flex;align-items:center;}
+.mm-dropdown{position:relative;}
+.mm-dropbtn{font:inherit;font-weight:600;font-size:.9rem;color:var(--mm-ink);background:transparent;
+  border:1px solid var(--mm-light);border-radius:9px;padding:8px 16px;cursor:pointer;
+  display:inline-flex;align-items:center;gap:7px;transition:.18s;}
+.mm-dropbtn:hover,.mm-dropdown.open .mm-dropbtn{border-color:var(--mm-accent);color:var(--mm-accent);}
+.mm-caret{font-size:.7rem;transition:transform .2s;}
+.mm-dropdown.open .mm-caret{transform:rotate(180deg);}
+.mm-dropmenu{position:absolute;top:calc(100% + 9px);left:0;min-width:260px;display:none;flex-direction:column;
+  background:var(--mm-panel);border:1px solid var(--mm-light);border-radius:12px;padding:8px;
+  box-shadow:0 18px 44px -22px rgba(0,0,0,.4);max-height:78vh;overflow:auto;z-index:60;}
+.mm-dropdown.open .mm-dropmenu{display:flex;}
+.mm-dropmenu a{display:block;padding:9px 13px;border-radius:8px;color:var(--mm-ink);text-decoration:none;
+  font-size:.9rem;transition:.14s;}
+.mm-dropmenu a:hover{background:var(--mm-light);color:var(--mm-accent);}
+.mm-dropmenu a.active{background:rgba(139,38,53,.10);color:var(--mm-accent);font-weight:700;}
+.mm-darkbtn{flex:0 0 auto;font:inherit;font-weight:600;font-size:.82rem;color:var(--mm-soft);
+  background:transparent;border:1px solid var(--mm-light);border-radius:9px;padding:8px 13px;cursor:pointer;transition:.18s;}
+.mm-darkbtn:hover{border-color:var(--mm-accent);color:var(--mm-accent);}
+.mm-darkbtn.active{background:rgba(139,38,53,.10);color:var(--mm-accent);border-color:var(--mm-accent);}
+
+/* ---- breadcrumbs under the nav ---- */
+.mm-crumbs{max-width:1360px;margin:0 auto;padding:12px 20px 0;font-size:.8rem;color:var(--mm-mute);}
+.mm-crumbs a{color:var(--mm-soft);text-decoration:none;}
+.mm-crumbs a:hover{color:var(--mm-accent);}
+.mm-crumbs .sep{margin:0 9px;color:var(--mm-light);}
+.mm-crumbs .cur{color:var(--mm-ink);font-weight:600;}
+
+/* ---- bottom Pre / Home / Next pager ---- */
+.mm-pn{display:flex;gap:12px;max-width:1360px;margin:38px auto 0;}
+.mm-pn a{flex:1 1 0;text-align:center;text-decoration:none;padding:15px 12px;border:1px solid var(--mm-light);
+  border-radius:13px;background:var(--mm-card);color:var(--mm-ink);transition:.18s;display:block;}
+.mm-pn a:hover{border-color:var(--mm-accent);color:var(--mm-accent);transform:translateY(-2px);}
+.mm-pn .lbl{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mm-mute);
+  font-weight:700;margin-bottom:3px;}
+.mm-pn .ttl{font-size:.98rem;font-weight:600;}
+.mm-pn a.home{background:var(--mm-accent);border-color:var(--mm-accent);color:#fff;}
+.mm-pn a.home .lbl{color:rgba(255,255,255,.72);}
+.mm-pn a.home:hover{color:#fff;filter:brightness(1.06);}
+
 @media(max-width:720px){
+  .mm-top{flex-wrap:wrap;gap:10px;}
+  .mm-brand{font-size:.92rem;}
+  .mm-pn{flex-direction:column;}
+}
   .mm-head h1{font-size:1.55rem;}
   .mm-stage{height:66vh;min-height:460px;}
   .mm-panel{padding:18px;}
@@ -121,23 +172,8 @@ html[data-theme="dark"] .link-ch{stroke:#33443c;}
 </style>
 </head>
 <body class="mm-body">
-<div class="tu-topnav">
-  <a href="/" class="tu-nav-item" title="Home"><span class="tu-nav-emoji">🏠</span><span class="tu-nav-text">Home</span></a>
-  <a href="/fundamentals/" class="tu-nav-item" title="Fundamentals"><span class="tu-nav-emoji">📖</span><span class="tu-nav-text">Fundamentals</span></a>
-  <a href="/stroke-analysis/" class="tu-nav-item" title="Stroke Analysis"><span class="tu-nav-emoji">🧠</span><span class="tu-nav-text">Stroke Analysis</span></a>
-  <a href="/coach-video-library/" class="tu-nav-item" title="Coach Library"><span class="tu-nav-emoji">🎓</span><span class="tu-nav-text">Coach Library</span></a>
-  <a href="/tennis-video-library/" class="tu-nav-item" title="Video Library"><span class="tu-nav-emoji">🎬</span><span class="tu-nav-text">Video Library</span></a>
-  <a href="/tennis-technical-reference/" class="tu-nav-item" title="Technical Reference"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Technical Reference</span></a>
-  <a href="/tnkb/" class="tu-nav-item" title="Knowledgebase"><span class="tu-nav-emoji">💡</span><span class="tu-nav-text">Knowledgebase</span></a>
-  <a href="/tennis-evolution/" class="tu-nav-item" title="Tennis Evolution"><span class="tu-nav-emoji">⚡</span><span class="tu-nav-text">Tennis Evolution</span></a>
-  <a href="/blog/" class="tu-nav-item" title="Blog"><span class="tu-nav-emoji">📝</span><span class="tu-nav-text">Blog</span></a>
-  <a href="/book/" class="tu-nav-item" title="Master Book"><span class="tu-nav-emoji">📕</span><span class="tu-nav-text">Master Book</span></a>
-  <a href="/books/" class="tu-nav-item" title="Books Catalog"><span class="tu-nav-emoji">📚</span><span class="tu-nav-text">Books Catalog</span></a>
-  <a href="/books/deep-dive/" class="tu-nav-item active" title="Deep Dive Map"><span class="tu-nav-emoji">🗺️</span><span class="tu-nav-text">Deep Dive Map</span></a>
-  <a href="/en/articles/" class="tu-nav-item" title="200 Articles"><span class="tu-nav-emoji">📝</span><span class="tu-nav-text">200 Articles</span></a>
-  <a href="/Tenniskb-5 Pillars/" class="tu-nav-item" title="5 Pillars"><span class="tu-nav-emoji">🏛️</span><span class="tu-nav-text">5 Pillars</span></a>
-  <button class="tu-nav-item tu-nav-darkmode" title="Dark Mode" type="button"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button>
-</div>
+<header class="mm-top"><a class="mm-brand" href="/">Tennis Unified</a><nav class="mm-nav" aria-label="Sections"><div class="mm-dropdown"><button class="mm-dropbtn" type="button" aria-haspopup="true" aria-expanded="false">Main <span class="mm-caret">&#9662;</span></button><div class="mm-dropmenu"><a href="/">Home</a><a href="/fundamentals/">Fundamentals</a><a href="/stroke-analysis/">Stroke Analysis</a><a href="/coach-video-library/">Coach Library</a><a href="/tennis-video-library/">Video Library</a><a href="/tennis-technical-reference/">Technical Reference</a><a href="/tnkb/">Knowledgebase</a><a href="/tennis-evolution/">Tennis Evolution</a><a href="/blog/">Blog</a><a href="/book/" class="active">Master Book</a><a href="/books/">Books Catalog</a><a href="/books/deep-dive/">Books Mind Map</a><a href="/en/articles/">200 Articles</a><a href="/Tenniskb-5 Pillars/">5 Pillars</a></div></div></nav><button class="tu-nav-darkmode mm-darkbtn" type="button"><span class="tu-nav-text">Dark Mode</span></button></header>
+<nav class="mm-crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">&#8250;</span><a href="/book/">Master Book</a><span class="sep">&#8250;</span><span class="cur">Concept Mind Map</span></nav>
 
 <main>
 <div class="mm-wrap">
@@ -186,6 +222,7 @@ html[data-theme="dark"] .link-ch{stroke:#33443c;}
 
   <p class="mm-foot">Source: <em>Sân Thống Nhất — Khoa Học Sống, Cơ Học Nội Tâm và Nghệ Thuật Đỉnh Cao Của Tennis Hiện Đại</em> (Tennis Unified Codex).<br>Cross-linked to the Tennis Books Library · <a href="/book/" style="color:var(--mm-accent);">← Back to the book</a></p>
 </div>
+<nav class="mm-pn" aria-label="Pagination"><a class="prev" href="/books/deep-dive/"><span class="lbl">Prev</span><span class="ttl">&#8249; Books Mind Map</span></a><a class="home" href="/"><span class="lbl">Home</span><span class="ttl">&#8962; Home</span></a><a class="next" href="/book/"><span class="lbl">Next</span><span class="ttl">Master Book &#8250;</span></a></nav>
 </main>
 
 <script>
@@ -649,6 +686,26 @@ document.getElementById('st-l').textContent = DATA.concepts.reduce((s,c)=>s+c.li
 
 setTimeout(home, 60);
 window.addEventListener('load', home);
+
+/* ---------- dropdown "Main" nav ---------- */
+(function(){
+  document.querySelectorAll('.mm-dropdown').forEach(function(d){
+    var btn = d.querySelector('.mm-dropbtn');
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var open = d.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+  document.addEventListener('click', function(e){
+    document.querySelectorAll('.mm-dropdown.open').forEach(function(d){
+      if(!d.contains(e.target)){
+        d.classList.remove('open');
+        var b = d.querySelector('.mm-dropbtn'); if(b) b.setAttribute('aria-expanded','false');
+      }
+    });
+  });
+})();
 </script>
 </body>
 </html>
