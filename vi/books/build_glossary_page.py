@@ -26,39 +26,35 @@ PAGE = u"""<!DOCTYPE html>
 <meta property="og:title" content="Từ Điển Thuật Ngữ Quần Vợt Hiện Đại — Tennis Unified">
 <meta property="og:description" content="%(N)d thuật ngữ và khái niệm quần vợt hiện đại, chuẩn hóa tiếng Việt, tổng hợp từ toàn bộ thư viện sách Tennis Unified.">
 <meta property="og:locale" content="vi_VN">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300..800;1,7..72,300..800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script src="/assets/javascripts/lang-toggle.js" defer></script>
+<script src="/assets/javascripts/darkmode.js" defer></script>
 <style>
+  /* Palette aliases -> the shared site tokens defined in /assets/css/site.css.
+     The glossary used to ship its own court/chalk/mustard look; pointing the
+     old names at the site tokens makes it follow the site theme (and the
+     site's dark mode) instead of standing apart. */
   :root{
-    --court-ink:#0f2438;
-    --court-ink-soft:#1c3a56;
-    --chalk:#f6f4ee;
-    --chalk-dim:#d9d4c6;
-    --line-white:#ffffff;
-    --mustard:#c98a2c;
-    --mustard-soft:#e7b96a;
-    --hairline: rgba(15,36,56,0.14);
-    --hairline-soft: rgba(15,36,56,0.07);
-    --card-bg: var(--line-white);
-    --page-bg: var(--chalk);
-    --text-main: var(--court-ink);
-    --text-dim: #52616f;
-    --serif: 'Iowan Old Style', 'Palatino Linotype', Georgia, 'Times New Roman', serif;
-    --grotesk: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-    --mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
-  }
-  [data-theme="dark"]{
-    --court-ink:#eef3f7;
-    --court-ink-soft:#c7d6e2;
-    --chalk:#0b1620;
-    --chalk-dim:#33424e;
-    --line-white:#101d29;
-    --mustard:#e7b455;
-    --mustard-soft:#a9752a;
-    --hairline: rgba(238,243,247,0.14);
-    --hairline-soft: rgba(238,243,247,0.07);
-    --card-bg: #101d29;
-    --page-bg: #0b1620;
-    --text-main: #eef3f7;
-    --text-dim: #93a4b2;
+    --court-ink: var(--ink);
+    --court-ink-soft: var(--ink-muted);
+    --chalk: var(--bg);
+    --chalk-dim: var(--border);
+    --line-white: var(--card);
+    --mustard: var(--accent);
+    --mustard-soft: var(--accent-dark);
+    --hairline: var(--border);
+    --hairline-soft: var(--border);
+    --card-bg: var(--card);
+    --page-bg: var(--bg);
+    --text-main: var(--ink);
+    --text-dim: var(--muted);
+    --serif: 'Literata', Georgia, 'Times New Roman', serif;
+    --grotesk: 'Montserrat', -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    --mono: 'Roboto Mono', 'SFMono-Regular', Consolas, monospace;
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
@@ -72,40 +68,18 @@ PAGE = u"""<!DOCTYPE html>
   }
   a{color:inherit;}
 
-  .court-lines{
-    position:sticky; top:0; z-index:20;
-    background: var(--court-ink);
-    color: var(--chalk);
-    border-bottom: 3px solid var(--mustard);
-  }
-  .court-lines-inner{
-    max-width:1120px; margin:0 auto; padding:18px 24px 16px;
-    display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap;
-  }
-  .brand{
-    font-family: var(--serif);
-    font-size: 1.5rem;
-    letter-spacing:.2px;
-  }
-  .brand small{
-    display:block; font-family: var(--grotesk); font-size:.72rem;
-    color: var(--mustard-soft); text-transform:none; margin-top:2px; letter-spacing:.3px;
-  }
-  .theme-toggle{
-    background:transparent; border:1px solid rgba(246,244,238,0.35);
-    color:var(--chalk); border-radius:999px; padding:6px 14px; font-size:.82rem;
-    cursor:pointer; font-family: var(--grotesk);
-  }
-  .theme-toggle:hover{ border-color: var(--mustard); }
-  .nav-pill{
-    text-decoration:none; font-size:0.85rem; padding:6px 14px;
-    border-radius:999px; white-space:nowrap;
-  }
-  .nav-pill.light{ color:var(--chalk); border:1px solid rgba(246,244,238,0.3); }
-  .nav-pill.gold{ color:var(--mustard-soft); border:1px solid rgba(201,138,44,0.4); }
-
   .toolbar{
     max-width:1120px; margin:0 auto; padding:20px 24px 0;
+  }
+  .glossary-hero{
+    max-width:1120px; margin:0 auto; padding:28px 24px 0;
+  }
+  .glossary-hero h1{
+    font-family: var(--grotesk); font-size:1.9rem; font-weight:700;
+    margin:0 0 6px; color:var(--text-main); line-height:1.2;
+  }
+  .glossary-hero p{
+    margin:0; color:var(--text-dim); font-size:.95rem;
   }
   .search-row{
     display:flex; gap:10px; flex-wrap:wrap; align-items:center;
@@ -230,12 +204,11 @@ PAGE = u"""<!DOCTYPE html>
   .top-link.show{ display:inline-flex; }
 
   @media (max-width:600px){
-    .court-lines-inner{ padding:14px 16px; }
     .toolbar, main{ padding-left:16px; padding-right:16px; }
     .term-vi{ font-size:1.08rem; }
   }
   @media print{
-    .court-lines, .toolbar, .top-link, .anchor, .term-sources{ display:none !important; }
+    .toolbar, .top-link, .anchor, .term-sources{ display:none !important; }
     body{ background:#fff; color:#000; }
     .term-card{ break-inside:avoid; border-bottom:1px solid #ddd; }
     .category-title{ border-bottom:2px solid #000; }
@@ -247,18 +220,41 @@ PAGE = u"""<!DOCTYPE html>
 </head>
 <body data-theme="light">
 
-  <header class="court-lines">
-    <div class="court-lines-inner">
-      <div class="brand">
-        <a href="index.html" style="text-decoration:none; color:inherit;">Từ Điển Thuật Ngữ Quần Vợt</a>
-        <small>Tennis Unified Vietnamese Digital Library — Nguồn thuật ngữ chuẩn hóa · %(N)d thuật ngữ · %(NC)d chủ đề</small>
-      </div>
-      <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
-        <a href="index.html" class="nav-pill light">← Về Thư Viện Sách</a>
-        <a href="court_diagrams.html" class="nav-pill gold">🎯 Sơ Đồ Chiến Thuật</a>
-        <button class="theme-toggle" id="themeToggle" type="button">Chế độ tối</button>
-      </div>
-    </div>
+<!-- FLATTENED-TOP-NAV-START -->
+<header class="mm-top"><a class="mm-brand" href="/vi/">Tennis Unified</a><nav class="mm-nav" aria-label="Sections"><div class="mm-dropdown"><button class="mm-dropbtn" type="button" aria-haspopup="true" aria-expanded="false">Main <span class="mm-caret">&#9662;</span></button><div class="mm-dropmenu">
+        <a href="/vi/">Trang chủ</a>
+        <a href="/vi/fundamentals/">Nền tảng</a>
+        <a href="/vi/doubles/">Đánh đôi</a>
+        <a href="/vi/stroke-analysis/">Phân tích cú đánh</a>
+        <a href="/vi/coach-video-library/">Thư viện HLV</a>
+        <a href="/vi/tennis-video-library/">Thư viện Video</a>
+        <a href="/vi/tennis-technical-reference/">Tra cứu kỹ thuật</a>
+        <a href="/tnkb/vi/">Kho tri thức</a>
+        <a href="/vi/tennis-evolution/">Tiến hóa quần vợt</a>
+        <a href="/vi/blog/">Bài viết</a>
+        <a href="/vi/book/">Sách Toàn diện</a>
+        <a href="/vi/books/">Tủ sách Tennis</a>
+        <a href="/vi/books/glossary.html" class="active">Từ điển thuật ngữ</a>
+        <a href="/vi/books/court_diagrams.html">Sơ đồ chiến thuật</a>
+        <a href="/vi/articles/">200 Bài Viết</a>
+        <a href="/vi/Tenniskb-5 Pillars/">5 Trụ Cột</a>
+        <a href="/vi/Tenniskb-10 Pillars/">10 Trụ Cột</a>
+      </div></div></nav><div class="mm-right"><a class="tu-nav-lang mm-langbtn" href="/books/glossary.html" title="Switch language">&#127760; EN</a><button class="tu-nav-darkmode mm-darkbtn" type="button" aria-pressed="false" title="Dark Mode"><span class="tu-nav-emoji">&#127769;</span><span class="tu-nav-text">Dark Mode</span></button></div></header>
+<!-- FLATTENED-TOP-NAV-END -->
+
+<nav class="tu-breadcrumb" aria-label="Breadcrumb">
+  <ol class="tu-breadcrumb__list">
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/vi/">Trang Chủ</a></li>
+    <li class="tu-breadcrumb__sep">&rsaquo;</li>
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/vi/books/">Tủ sách Tennis</a></li>
+    <li class="tu-breadcrumb__sep">&rsaquo;</li>
+    <li class="tu-breadcrumb__item tu-breadcrumb__current" aria-current="page">Từ điển thuật ngữ</li>
+  </ol>
+</nav>
+
+  <header class="glossary-hero">
+    <h1>Từ Điển Thuật Ngữ Quần Vợt</h1>
+    <p>Nguồn thuật ngữ chuẩn hóa &middot; %(N)d thuật ngữ &middot; %(NC)d chủ đề</p>
   </header>
 
   <div class="toolbar">
@@ -421,13 +417,6 @@ PAGE = u"""<!DOCTYPE html>
 
     searchEl.addEventListener('input', render);
 
-    document.getElementById('themeToggle').addEventListener('click', () => {
-      const body = document.body;
-      const isDark = body.getAttribute('data-theme') === 'dark';
-      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
-      document.getElementById('themeToggle').textContent = isDark ? 'Chế độ tối' : 'Chế độ sáng';
-    });
-
     window.addEventListener('scroll', () => {
       topLink.classList.toggle('show', window.scrollY > 600);
     });
@@ -488,6 +477,8 @@ out = PAGE % {
 }
 
 p = os.path.join(here, "glossary.html")
-with io.open(p, "w", encoding="utf-8", newline="\n") as f:
+# newline="\r\n" keeps the file CRLF like the rest of the repo; writing with
+# "\n" silently converted it to LF and made every line show as changed.
+with io.open(p, "w", encoding="utf-8", newline="\r\n") as f:
     f.write(out)
 print("wrote glossary.html", os.path.getsize(p), "bytes;", N, "terms")
