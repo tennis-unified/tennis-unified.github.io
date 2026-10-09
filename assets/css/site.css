@@ -696,49 +696,17 @@ button[aria-label*="reset" i] {
 
 /* === Video player styling =============================================== */
 
+/* The container is only a centring/spacing wrapper. The player inside is an
+   in-flow 16:9 block governed by the shared rules in "Video players (LARGE
+   SIZE)" further down this file.
+   It must NOT be absolutely positioned here: a stray `position: absolute`
+   from this block, combined with that later block's `height: auto`, left the
+   player offset inside -- and escaping -- its wrapper, so the video drew on
+   top of the surrounding text. The old `.video-container` rules that used to
+   live here are fully superseded by the "LARGE SIZE" section. */
 .tp-video-embed {
   margin: 1.5rem 0;
   text-align: center;
-}
-
-.tp-video-embed video,
-.tp-video-embed iframe,
-.video-container {
-  position: relative;
-  width: 100% !important;
-  max-width: 1200px;
-  aspect-ratio: 16 / 9;
-  height: auto;
-  margin: 1.5rem auto;
-  overflow: hidden;
-  background: #000;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-}
-
-.tp-video-embed iframe,
-.tp-video-embed video,
-.video-container iframe,
-.video-container video,
-.video-container embed {
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  border: 0 !important;
-  display: block !important;
-  object-fit: contain !important;
-}
-
-/* Responsive: scale down on small screens */
-@media (max-width: 600px) {
-  .tp-video-embed video,
-  .tp-video-embed iframe,
-  .video-container {
-    max-width: 100%;
-    border-radius: 8px;
-  }
 }
 
 /* === Responsive ======================================================= */
@@ -941,7 +909,9 @@ svg {
 /* Bare iframes outside video-container (fallback) */
 .md-content iframe,
 .tu-main iframe,
-main iframe {
+main iframe,
+.tp-video-embed iframe,
+.tp-video-embed video {
   display: block;
   width: 100% !important;
   max-width: 1200px !important;
