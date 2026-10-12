@@ -1,0 +1,26 @@
+name: Mirror to tennis-unified
+
+# tennis-unified/tennis-unified.github.io is a FORK of this repo, so syncing is
+# a server-side fast-forward: only new commits travel, never the 7 GB history.
+# (git push --mirror would re-upload everything and hit GitHub's 2 GB push cap.)
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: mirror-to-tennis-unified
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    name: Fast-forward the tennis-unified mirror
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync fork with upstream
+        env:
+          GH_TOKEN: ${{ secrets.DESTINATION_TOKEN }}
+        run: |
+          gh api -X POST repos/tennis-unified/tennis-unified.github.io/merge-upstream -f branch=main
