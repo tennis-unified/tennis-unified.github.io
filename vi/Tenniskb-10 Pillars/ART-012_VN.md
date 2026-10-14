@@ -17,7 +17,7 @@ Pha tải giao bóng tennis bao gồm toàn bộ trình tự từ tư thế tran
 ## Trình Tự Tải Giao Bóng
 
 ### Tư Thể Trang Trí (Trophy Position)
-Tải giao bóng bắt đầu ở tư thế trang trí — điểm cánh tay ném पूरी elevate, vợt rơi sau đầu, và cơ thể sẵn sàng cho đẩy chân. Tại vị trí này:
+Tải giao bóng bắt đầu ở tư thế trang trí — điểm cánh tay ném पर elevate, vợt rơi sau đầu, và cơ thể sẵn sàng cho đẩy chân. Tại vị trí này:
 - Gối cong xấp xỉ 70-90 độ
 - Thân xoay hơi ra khỏi mục tiêu (xoay trước)
 - Tâm khối đặt hơi sau giữa bàn chân
