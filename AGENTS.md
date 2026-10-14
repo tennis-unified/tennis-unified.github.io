@@ -59,3 +59,39 @@ Both `tennis-unified.github.io` and `tenniskb.github.io` are large production kn
 * **Patching generated HTML:** read and write bytes and preserve the file's existing EOL. If `git diff --stat` reports a whole file changed instead of only the intended lines, the edit converted CRLF to LF; revert with `git checkout -- <path>` and redo with EOL preservation.
 * **200-article knowledge base pipeline (articles 145-200):** `scripts/gen145_200.py` (with `gen145_200_data_*.py` and `gen145_200_pools_*.py`), `scripts/deploy_145_200.py`, `scripts/verify_145_200.py`, `scripts/audit_vi_leaks_145_200.py`, `scripts/vi_title_overrides.py`, `scripts/build_video_map_145_200.py`, `scripts/update_sitemap_145_200.py`. Titles come from `scripts/articles_200_data.json` and `scripts/articles_145_200_meta.json`; any catalogue VI title still written in English must be overridden through `vi_title_overrides.py` before rendering, and the same mapping must also be applied to the landing and pillar index pages.
 * **Mirroring content:** the two sites are separate repositories, not forks. A content change is complete only when it exists in both `main` (tennis-unified) and `main` (tenniskb). Article pages, the root `/articles/` mirror, `sitemap.xml` and `sitemap.xml.gz` must match in both.
+
+---
+
+## 5. Mandatory Dual-Footer Standard for All HTML Pages
+
+Every newly authored, migrated, or patched HTML page across both repositories **MUST ALWAYS** include both footer components before `</body>`:
+
+1. **Material Design Footer (`md-footer`):**
+```html
+  <footer class="md-footer">
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-copyright">
+          <div class="md-copyright__highlight">
+            © 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+```
+
+2. **Tennis Unified Custom Pill Footer (`tu-footer`):**
+```html
+<footer class="tu-footer" style="background: var(--card); border-top: 1px solid var(--border); color: var(--ink-muted); padding: 1.5rem 1rem; text-align: center; font-size: 0.92rem; margin-top: 3rem;">
+  <!-- For Vietnamese pages: -->
+  <div style="font-size: 0.85rem; color: var(--accent-dark);">Trang web này được xây dựng với ❤️ cho cộng đồng quần vợt Việt Nam 🎾 by Henry Phạm</div>
+  <!-- For English pages: -->
+  <!-- <div style="font-size: 0.85rem; color: var(--accent-dark);">Built with ❤️ for the Global & Vietnamese Tennis Community 🎾 by Henry Pham</div> -->
+</footer>
+</body>
+</html>
+```
+* **Strict Rule:** Never close `</body>` without both `md-footer` and `tu-footer`. This is required for visual consistency, copyright compliance, and layout balance across all viewports.
+
