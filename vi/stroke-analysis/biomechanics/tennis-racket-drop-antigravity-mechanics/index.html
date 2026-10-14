@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="vi" class="no-js">
+  <head>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="description" content="Nghiên Cứu Chuyên Sâu Sinh Cơ Học: Kỹ Thuật Rơi Vợt Tự Do (The Drop), Cơ Chế Triệt Tiêu Trọng Lượng (Hiệu Ứng Antigravity) & Quỹ Đạo C-Curve Mở Rộng">
+      <meta name="author" content="Henry Pham">
+      <link rel="alternate" href="./" hreflang="vi">
+      <link rel="alternate" href="../../../../stroke-analysis/biomechanics/tennis-racket-drop-antigravity-mechanics/" hreflang="en">
+      <link rel="canonical" href="https://tennis-unified.github.io/vi/stroke-analysis/biomechanics/tennis-racket-drop-antigravity-mechanics/">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <title>Sinh Cơ Học Rơi Vợt & Hiệu Ứng Antigravity: Quỹ Đạo C-Curve - Tennis Unified Library</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+      <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
+      <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+      <link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
+      <link rel="stylesheet" href="/assets/css/site.css">
+      <script src="/assets/javascripts/lang-toggle.js" defer></script>
+      <script src="/assets/javascripts/darkmode.js" defer></script>
+      <script id="MathJax" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script>window.MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"]],processEscapes:true,processEnvironments:true},loader:{lineWidth:128}};</script>
+      <style>
+        .video-card { margin: 2rem 0; border: 1px solid var(--border, #e5e7eb); border-radius: 12px; overflow: hidden; background: var(--card, #fff); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; }
+        .video-container iframe { position: absolute; top:0; left: 0; width: 100%; height: 100%; border: 0; }
+        .video-meta { padding: 1rem 1.25rem; font-size: 0.95rem; line-height: 1.5; }
+        .video-meta strong { color: var(--accent-dark, #047857); }
+        .artifact-image-card { margin: 2rem 0; text-align: center; border: 1px solid var(--border, #e5e7eb); border-radius: 12px; padding: 1.25rem; background: var(--card, #fff); box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
+        .artifact-image-card img { max-width: 100%; height: auto; border-radius: 8px; }
+        .artifact-image-card p { margin-top: 0.75rem; font-size: 0.9rem; color: var(--ink-muted, #64748b); font-style: italic; }
+        .callout-box { background: #f0fdf4; border-left: 4px solid #10b981; padding: 1.25rem 1.5rem; border-radius: 0 8px 8px 0; margin: 1.75rem 0; }
+        .callout-box p { margin: 0; color: #065f46; font-size: 1rem; line-height: 1.6; }
+        .callout-box strong { color: #047857; }
+        .formula-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem 1.5rem; margin: 1.5rem 0; text-align: center; }
+        .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #e5e7eb; padding: 0.75rem 1rem; text-align: left; }
+        th { background: #f8fafc; font-weight: 600; }
+      </style>
+  </head>
+  <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<!-- FLATTENED-TOP-NAV-START -->
+<header class="mm-top"><a class="mm-brand" href="/vi/">Tennis Unified</a><nav class="mm-nav" aria-label="Sections"><div class="mm-dropdown"><button class="mm-dropbtn" type="button" aria-haspopup="true" aria-expanded="false">Mục Lục <span class="mm-caret">&#9662;</span></button><div class="mm-dropmenu">
+        <a href="/vi/">Trang Chủ</a>
+        <a href="/vi/fundamentals/">Nền Tảng Căn Bản</a>
+        <a href="/vi/doubles/">Đánh Đôi</a>
+        <a href="/vi/stroke-analysis/" class="active">Phân Tích Cú Đánh</a>
+        <a href="/vi/coach-video-library/">Thư Viện HLV</a>
+        <a href="/vi/tennis-video-library/">Thư Viện Video</a>
+        <a href="/vi/tennis-technical-reference/">Tham Chiếu Kỹ Thuật</a>
+        <a href="/vi/tnkb/">Kho Tri Thức</a>
+        <a href="/vi/tennis-evolution/">Tiến Hóa Tennis</a>
+        <a href="/vi/blog/">Bài Viết Blog</a>
+        <a href="/vi/book/">Sách Chuyên Khảo</a>
+        <a href="/vi/books/">Danh Mục Sách</a>
+        <a href="/en/articles/">200 Bài Báo Căn Bản</a>
+        <a href="/vi/Tenniskb-5 Pillars/">5 Trụ Cột</a>
+        <a href="/vi/Tenniskb-10 Pillars/">10 Trụ Cột</a>
+      </div></div></nav><div class="mm-right"><a class="tu-nav-lang mm-langbtn" href="../../../../stroke-analysis/biomechanics/tennis-racket-drop-antigravity-mechanics/" title="Switch to English">🌐 EN</a><button class="tu-nav-darkmode mm-darkbtn" type="button" aria-pressed="false" title="Chế độ tối"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Chế độ tối</span></button></div></header>
+<!-- FLATTENED-TOP-NAV-END -->
+
+<nav class="tu-breadcrumb" aria-label="Breadcrumb">
+  <ol class="tu-breadcrumb__list">
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/vi/">Trang Chủ</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/vi/stroke-analysis/">Phân Tích Cú Đánh</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/vi/stroke-analysis/biomechanics/">Cơ Sinh Học</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item tu-breadcrumb__current" aria-current="page">Rơi Vợt & Hiệu Ứng Antigravity</li>
+  </ol>
+</nav>
+
+<div class="md-container" data-md-component="container">
+  <main class="md-main" data-md-component="main">
+    <div class="md-main__inner md-grid">
+      <div class="md-content" data-md-component="content">
+        <article class="md-content__inner md-typeset">
+
+<h1 id="racket-drop-antigravity-vi">Nghiên Cứu Chuyên Sâu Sinh Cơ Học: Kỹ Thuật Rơi Vợt Tự Do (The Drop), Cơ Chế Triệt Tiêu Trọng Lượng (Hiệu Ứng Antigravity) & Quỹ Đạo C-Curve Mở Rộng</h1>
+
+<div class="callout-box">
+  <p><strong>QUY LUẬT CƠ HỌC TRUNG TÂM:</strong> <em>"Nhịp rơi tự do rất nhỏ của cánh tay và cây vợt ngay trước khi vung tới có tác dụng kích hoạt hệ thống vận động = triệt tiêu trọng lượng (unweight) hoặc giải phóng lực hút trọng trường và sự tiếp xúc căng cứng giữa bàn tay với cán vợt = tạo ra trạng thái phi trọng lực (antigravity), cho phép cây vợt tự do tăng tốc một cách hoàn toàn thanh thoát và không tốn sức trên quỹ đạo vung ra phía trước."</em> — Bản ghi chép gốc từ hiện vật viết tay.</p>
+</div>
+
+<div class="artifact-image-card">
+  <img src="/assets/images/racket_drop_antigravity/photo7321466220530293787.jpeg" alt="Bản Thảo Ghi Chép Tay Kỹ Thuật Drop và Sinh Cơ Học Antigravity" />
+  <p><strong>Hình 1: Hiện Vật Bản Thảo Ghi Chép Tay Gốc</strong> — Ghi chép chi tiết nguyên lý "Drop" cánh tay, giải phóng trọng lực (antigravity), ba ứng dụng chính (Backhand Drop, Volley Drop, Forehand Drop) và quỹ đạo "Extend C-Curve".</p>
+</div>
+
+<hr />
+
+<h2>1. Cơ Sở Vật Lý & Giải Phẫu Học Của Nhịp Rơi Tự Do</h2>
+
+<h3>1.1 Chuyển Hóa Thế Năng Trọng Trường Thành Động Năng Quay</h3>
+<p>Trong quần vợt đỉnh cao hiện đại, tốc độ đầu vợt tối đa không đạt được bằng việc dùng cơ vai kéo vợt, mà bằng cách để trọng lực làm việc thay cho cơ bắp trong giai đoạn hạ vợt. Khi cây vợt được đưa lên cao trong giai đoạn mở vợt, nó tích lũy thế năng trọng trường:</p>
+
+<div class="formula-card">
+  $$E_p = m \cdot g \cdot \Delta h$$
+</div>
+
+<p>Trong đó $m$ là khối lượng hiệu dụng của cây vợt và cẳng tay ($\approx 2.1 - 2.5\text{ kg}$), $g = 9.81\text{ m/s}^2$, và $\Delta h \approx 0.35 - 0.50\text{ m}$ là độ sâu rơi vào rãnh đà. Khi người chơi chủ động <strong>thả lỏng cơ bắp</strong> thay vì dùng sức đè vợt, toàn bộ thế năng này chuyển hóa thành động năng quay:</p>
+
+<div class="formula-card">
+  $$E_k = \frac{1}{2} I \omega^2$$
+</div>
+
+<p>Người chơi đạt được vận tốc góc ban đầu $\omega$ cực lớn mà không tiêu tốn một calo năng lượng cơ bắp nào.</p>
+
+<h3>1.2 Hiệu Ứng "Antigravity": Cơ Chế Triệt Tiêu Trọng Lượng Bàn Tay</h3>
+<p>Khi người chơi nghiệp dư siết chặt cán vợt ($7 - 9 / 10$ lực siết), hiện tượng co cơ đồng vận sẽ khóa cứng cổ tay và tạo ra nội ma sát cơ bắp cản trở chuyển động. Kỹ thuật "Drop" thực hiện một thao tác giải phẫu gọi là **Unweighting (Triệt tiêu trọng lượng)**:</p>
+<ol>
+  <li>Lực nắm bàn tay lập tức hạ xuống mức êm dịu **$2 - 3 / 10$**.</li>
+  <li>Kháng lực căng cứng giữa bàn tay và cán vợt được giải phóng hoàn toàn.</li>
+  <li>Khi cây vợt rơi chạm đáy rãnh đà của đường cong chữ C, chuyển động xoay mở hông đột ngột kéo cây vợt đang trễ nhịp vút lên. Lực ly tâm và tính đàn hồi biến nhịp rơi thành một cú bật ngược mãnh liệt lên trên và ra trước. Cảm giác của người chơi là cây vợt **tự bay vút lên như không có trọng lực (Antigravity)**.</li>
+</ol>
+
+<h3>1.3 Chu Kỳ Kéo Giãn - Co Rút (Stretch-Shortening Cycle - SSC)</h3>
+<p>Sự chuyển tiếp mượt mà từ nhịp rơi trọng lực sang nhịp tăng tốc tới trước kích hoạt cơ chế sinh học **Chu Kỳ Kéo Giãn - Co Rút (SSC)**. Các bó gân cơ ngực lớn, cơ delta trước và nhóm cơ gấp cổ tay bị kéo căng thụ động như một chiếc dây chun. Khi thân người xoay mở, chiếc lò xo gân bật ngược lại, gia tăng thêm **$20 - 35\%$ tốc độ đầu vợt** so với việc cố dùng sức co cơ chủ động.</p>
+
+<hr />
+
+<h2>2. Ứng Dụng Trong 3 Cú Đánh: Forehand, Backhand & Volley Drops</h2>
+
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Cú Đánh</th>
+        <th>Cơ Chế Rơi Vợt</th>
+        <th>Quỹ Đạo Hình Học</th>
+        <th>Hiệu Quả Thực Chiến</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Forehand DROP</strong></td>
+        <td>Đầu vợt mở cao trên cạnh; rơi tự do xuống rãnh đà theo trọng lực</td>
+        <td><strong>Extend C-Curve:</strong> Nắp chuôi cán hướng vào bóng với độ trễ cổ tay thụ động tối đa</td>
+        <td>Tăng tốc tiếp tuyến bùng nổ ($v = \omega r$) và xoáy topspin cuộn cắm</td>
+      </tr>
+      <tr>
+        <td><strong>Backhand DROP</strong></td>
+        <td>Bàn tay hạ sâu 15–20 cm dưới tầm bóng với sự hỗ trợ của tay không thuận</td>
+        <td><strong>Inverted C-Curve:</strong> Cả khối vợt rơi sâu tạo chữ C ngược dưới mặt phẳng bóng</td>
+        <td>Tạo dốc vung dốc đứng WSWM ($25^\circ - 35^\circ$), sinh lực Magnus dìm bóng cắm sâu</td>
+      </tr>
+      <tr>
+        <td><strong>Volley DROP</strong></td>
+        <td>Nhịp rơi vi mô 3–5 cm của khối cổ tay và đầu vợt ngay trước khi đấm bóng</td>
+        <td><strong>Micro-Drop Prime:</strong> Thả lỏng lực siết, triệt tiêu căng cơ và nạp độ đàn hồi</td>
+        <td>Tạo độ nảy đầm (*pop*) và độ cắn bóng xoáy xiết mà không cần vung vợt ra sau</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr />
+
+<h2>3. Bảng So Sánh: Rơi Tự Do (Antigravity) vs. Dùng Sức Đè Vợt</h2>
+
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Tiêu Chí Sinh Cơ Học</th>
+        <th>Rơi Tự Do Quán Tính ("Antigravity")</th>
+        <th>Dùng Sức Đè / Kéo Vợt (Sai Lầm Nghiệp Dư)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Độ siết bàn tay</strong></td>
+        <td>Thả lỏng êm ái ($2 - 3 / 10$)</td>
+        <td>Bóp nghẹt cán vợt ($7 - 9 / 10$)</td>
+      </tr>
+      <tr>
+        <td><strong>Quỹ đạo chuyển động</strong></td>
+        <td>Đường cong C-Curve liên tục, mượt mà</td>
+        <td>Đường giật cục, gián đoạn hoặc đường thẳng bẹt</td>
+      </tr>
+      <tr>
+        <td><strong>Cơ chế kích hoạt lực</strong></td>
+        <td>Lực đàn hồi từ chu kỳ SSC & con lắc ngược</td>
+        <td>Co rút cơ chủ động cục bộ (đơn thuần dùng cơ)</td>
+      </tr>
+      <tr>
+        <td><strong>Điểm đạt vận tốc cực đại</strong></td>
+        <td>Gia tốc tăng đều và đạt đỉnh ngay tại điểm chạm</td>
+        <td>Đạt đỉnh quá sớm rồi giảm dần khi tiếp xúc bóng</td>
+      </tr>
+      <tr>
+        <td><strong>Độ an toàn cho tuổi 50+</strong></td>
+        <td><strong>Tuyệt đối an toàn, bảo vệ gân khớp trọn đời</strong></td>
+        <td>Nguy cơ cực cao: Viêm lồi cầu khuỷu tay và rách chóp xoay</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr />
+
+<h2>4. Tuyển Tập Video Hướng Dẫn Siêu Chậm (Super Slow-Motion)</h2>
+
+<div class="video-card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/stEhSvoou4g?rel=0" title="Roger Federer Forehand Slow Motion" allowfullscreen></iframe>
+  </div>
+  <div class="video-meta">
+    <strong>Video 1: Roger Federer Forehand Siêu Chậm — Đỉnh Cao Rơi Vợt C-Curve</strong><br />
+    Quan sát đầu vợt của Federer dựng cao rồi rơi hoàn toàn theo trọng lực xuống dưới hông. Cổ tay thả lỏng tuyệt đối, tạo độ trễ (lag) tự nhiên mà không hề dùng sức cơ bắp.
+  </div>
+</div>
+
+<div class="video-card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/xm2FC9-YZek?rel=0" title="Tennis Forehand Wrist Lag" allowfullscreen></iframe>
+  </div>
+  <div class="video-meta">
+    <strong>Video 2: Kỹ Thuật Tạo Độ Trễ Cổ Tay (Wrist Lag) Bằng Thả Lỏng</strong><br />
+    Phân tích chuyên sâu chỉ ra tại sao cố gập cổ tay lại làm mất lực, và tại sao thả lỏng cho vợt rơi tự do mới tạo ra độ trễ cực đại.
+  </div>
+</div>
+
+<div class="video-card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/vLLEbuEbaWg?rel=0" title="Get Forehand Power WITHOUT Swinging Harder" allowfullscreen></iframe>
+  </div>
+  <div class="video-meta">
+    <strong>Video 3: Phát Lực Khủng Khiếp Mà Không Cần Vung Mạnh (Feel Tennis)</strong><br />
+    Minh họa sống động nguyên lý "triệt tiêu trọng lượng" (unweighting) và để cây vợt tự do gia tốc theo quán tính con lắc.
+  </div>
+</div>
+
+<div class="video-card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/bNeN2XevGLM?rel=0" title="Pete Sampras 1-Handed Backhand Drop" allowfullscreen></iframe>
+  </div>
+  <div class="video-meta">
+    <strong>Video 4: Pete Sampras Backhand Drop Siêu Chậm</strong><br />
+    Sampras hạ sâu bàn tay để cây vợt nặng Pro Staff rơi tự do tạo chữ C ngược trước khi phóng vút lên tiếp xúc bóng.
+  </div>
+</div>
+
+<hr />
+
+<h2>5. Hệ Thống Bài Tập Cảm Nhận & Bảng Tự Kiểm Tra</h2>
+
+<h3>Bài Tập 1: Thả Rơi Tự Do Cảm Nhận "Antigravity"</h3>
+<p>Đứng ở tư thế mở vợt thuận tay, nâng vợt cao ngang tầm mắt. Nới lỏng bàn tay sao cho lực siết chỉ ở mức 1/10 (chỉ vừa đủ để vợt không tuột). Hoàn toàn buông lỏng cẳng tay: để đầu vợt rơi tự do theo trọng lực. Cảm nhận đầu vợt chạm đáy rồi tự động bật ngược lên. Lặp lại 15 lần mỗi ngày.</p>
+
+<h3>Bài Tập 2: Vung Chữ C Mở Rộng Liên Tục (Extend C-Curve)</h3>
+<p>Xoay vai 90 độ đưa vợt lên cao. Không dừng lại ở đỉnh, để đầu vợt vẽ một đường cong chữ C liên tục lướt mượt xuống rãnh đà. Cảm giác nhẹ bẫng không trọng lượng tại đáy chữ C khi hông bắt đầu xoay mở tới trước. Quất vợt lên cao kết thúc qua vai đối diện. Thực hiện 20 lần trước gương.</p>
+
+<h3>Bài Tập 3: Micro-Drop Kích Hoạt Volley Pop</h3>
+<p>Đứng ở vạch giao bóng trong tư thế thủ lưới, vợt ngang ngực. Khi bóng tới, nhẹ nhàng thả cổ tay hạ xuống 3–5 cm để nới lỏng lực siết. Lập tức bước chân đấm tới trước, siết nhẹ cán vợt lên mức 6/10 đúng tích tắc chạm bóng, cắt qua gáy bóng. Cảm nhận bóng bay thấp và cắn sân.</p>
+
+<h3>Bảng 5 Điểm Tự Kiểm Tra</h3>
+<ul>
+  <li>[ ] <strong>1. Độ lỏng bàn tay:</strong> Lực siết cán vợt có được duy trì ở mức êm dịu $2 - 3 / 10$ trong lúc vợt rơi không?</li>
+  <li>[ ] <strong>2. Quỹ đạo chữ C:</strong> Cây vợt có lướt thành một đường cong chữ C liên tục không, hay bị khựng lại giật cục ở rãnh đà?</li>
+  <li>[ ] <strong>3. Bản chất nhịp rơi:</strong> Cây vợt có đang rơi tự do theo trọng lực không, hay người chơi dùng cơ tay đè xuống?</li>
+  <li>[ ] <strong>4. Độ trễ nắp cán:</strong> Tại đáy rãnh đà, nắp chuôi cán có tự động hướng về phía bóng tới với cổ tay ngửa thụ động không?</li>
+  <li>[ ] <strong>5. Micro-Drop vô-lê:</strong> Trong cú bắt lưới, người chơi có dùng nhịp rơi vi mô 3–5 cm để kích hoạt lực đấm thay vì vung vợt ra sau vai không?</li>
+</ul>
+
+<hr />
+
+<h2>Kết Luận</h2>
+<p>Kỹ thuật **Rơi Vợt (The Drop)** kết hợp với cơ chế **Triệt tiêu trọng lượng (Unweighting)** chính là bí mật tối thượng đằng sau những cú đánh uy lực nhưng nhẹ nhàng như không của các huyền thoại tennis. Bằng cách để trọng lực làm việc thay cho cơ bắp, người chơi giải phóng hoàn toàn các áp lực phá hủy lên khớp vai và khuỷu tay, mở ra nguồn năng lượng vô tận của chuỗi động lực học tự nhiên để chơi thứ quần vợt thanh thoát, đỉnh cao và trường tồn.</p>
+
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="md-footer">
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-copyright">
+          <div class="md-copyright__highlight">
+            © 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<footer class="tu-footer" style="background: var(--card); border-top: 1px solid var(--border); color: var(--ink-muted); padding: 1.5rem 1rem; text-align: center; font-size: 0.92rem; margin-top: 3rem;">
+  <div style="font-size: 0.85rem; color: var(--accent-dark);">Trang web này được xây dựng với ❤️ cho cộng đồng quần vợt Việt Nam 🎾 by Henry Phạm</div>
+</footer>
+</body>
+</html>
