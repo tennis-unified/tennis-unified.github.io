@@ -113,7 +113,7 @@ SWINGING VOLLEY - CONDENSED 5-PHASE (Forehand Example):
 ### Giai Đoạn 2: Airborne Timing & Contact Geometry (Thời Gian Không Trung & Hình Học Contact)
 
 **Bài tập 4: "High Contact Gate" (Cổng Contact Cao)"
-- Dây/Chूng ngang tại **chiều cao vai** (swinging volley contact height).
+- Dây/Chng ngang tại **chiều cao vai** (swinging volley contact height).
 - Feed: Bóng cao, chậm (lob/float).
 - VĐV: **Contact PHẢI TRÊN dây** (chest-to-shoulder height).
 - Train: Contact geometry adaptation cho high balls.
