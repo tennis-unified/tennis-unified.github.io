@@ -3,7 +3,8 @@
 **Author:** Henry Pham  
 **Category:** Biomechanical Research & Kinetic Chain Optimization  
 **Canonical URL:** [https://tennis-unified.github.io/stroke-analysis/biomechanics/tennis-forehand-45-degree-plane-figure8/](https://tennis-unified.github.io/stroke-analysis/biomechanics/tennis-forehand-45-degree-plane-figure8/)  
-**Vietnamese Version:** [https://tennis-unified.github.io/vi/stroke-analysis/biomechanics/tennis-forehand-45-degree-plane-figure8/](https://tennis-unified.github.io/vi/stroke-analysis/biomechanics/tennis-forehand-45-degree-plane-figure8/)
+**Vietnamese Version:** [https://tennis-unified.github.io/vi/stroke-analysis/biomechanics/tennis-forehand-45-degree-plane-figure8/](https://tennis-unified.github.io/vi/stroke-analysis/biomechanics/tennis-forehand-45-degree-plane-figure8/)  
+**Interactive Dossier Application:** [interactive.html](./interactive.html)
 
 ---
 
