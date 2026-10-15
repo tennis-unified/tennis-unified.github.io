@@ -3,7 +3,8 @@
 **Tác giả:** Henry Pham  
 **Chuyên mục:** Nghiên cứu sinh cơ học & Tối ưu hóa chuỗi động học  
 **Link bài viết (Tiếng Việt):** [https://tennis-unified.github.io/vi/stroke-analysis/biomechanics/tennis-forehand-45-degree-plane-figure8/](https://tennis-unified.github.io/vi/stroke-analysis/biomechanics/tennis-forehand-45-degree-plane-figure8/)  
-**Phiên bản Tiếng Anh:** [https://tennis-unified.github.io/stroke-analysis/biomechanics/tennis-forehand-45-degree-plane-figure8/](https://tennis-unified.github.io/stroke-analysis/biomechanics/tennis-forehand-45-degree-plane-figure8/)
+**Phiên bản Tiếng Anh:** [https://tennis-unified.github.io/stroke-analysis/biomechanics/tennis-forehand-45-degree-plane-figure8/](https://tennis-unified.github.io/stroke-analysis/biomechanics/tennis-forehand-45-degree-plane-figure8/)  
+**Ứng dụng hồ sơ tương tác:** [interactive.html](./interactive.html)
 
 ---
 
