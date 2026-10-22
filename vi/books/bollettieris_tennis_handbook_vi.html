@@ -1262,7 +1262,75 @@ i.fa-solid, i.fa-regular, i.fa-brands, i.fa, i.fas, i.far, i.fab,
 .tu-breadcrumb { max-width: 1000px; margin: 0 auto; }
 
 </style>
-</head>
+<style id="tu-mobile-read">
+/* ==========================================================================
+Tennis Unified -- mobile reading layer (vi/books)
+Purpose: make body text reflow to the phone screen.  Without this, `body` is a
+column flex container (assets/css/site.css) so the layout wrapper sizes to its
+content (a fixed 900 px reading column) and the whole page is wider than the
+viewport: the text never reflows and the reader must scroll sideways.
+Appended last so it wins on equal specificity; `!important` beats the page's own
+inline-free rules.  Desktop (>860 px) is untouched.
+========================================================================== */
+@media (max-width: 860px) {
+  /* 1. stop Android's font boosting so text is the same size on every phone */
+  html { -webkit-text-size-adjust: 100% !important; text-size-adjust: 100% !important; }
+  /* 2. no sideways scrolling, ever */
+  html, body { overflow-x: clip !important; max-width: 100% !important; }
+  /* 3. the layout wrapper must size to the viewport, not to its content */
+  body { display: block !important; }
+  body * { min-width: 0 !important; }
+  /* 4. nothing may be wider than the screen (beats fixed width / min-width) */
+  body div, body main, body section, body article, body aside, body nav,
+  body header, body footer, body ul, body ol, body dl, body figure, body table,
+  body form, body details, body p, body h1, body h2, body h3, body h4, body h5,
+  body h6, body blockquote, body pre, body img, body picture, body video,
+  body iframe, body svg, body canvas {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  body .reader-layout, body .main-container, body .page-container,
+  body .book-wrapper, body .reader-container, body .book-container,
+  body .main-article, body .content-area, body .reader-content,
+  body .reader-main, body .book-content, body .content-body,
+  body .article-body, body .chapter-box, body .hero-banner {
+    width: auto !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  /* 5. fixed chrome (progress bar, controls) must not stick out */
+  body .progress-bar-wrap, body .progress-bar-container,
+  body #reading-progress-bar, body .reading-controls {
+    width: 100% !important;
+    max-width: 100% !important;
+    left: 0 !important;
+    right: auto !important;
+  }
+  /* 6. text wraps at word boundaries; tables fit */
+  body a, body li, body p, body h1, body h2, body h3, body h4, body summary,
+  body td, body th, body figcaption, body dt, body dd, body blockquote {
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    word-break: normal !important;
+  }
+  body table { table-layout: fixed !important; width: 100% !important; }
+  /* 7. toolbars wrap instead of running off the edge */
+  body nav, body .nav-links, body .header-actions, body .btn-group,
+  body .header-container, body .nav-container, body .book-toc ol,
+  body .toc-list, body .toc-card-top ul {
+    flex-wrap: wrap !important;
+  }
+  /* 8. stable, readable body type (inline styles keep their own size) */
+  body p:not([style]) {
+    font-size: 18px !important;
+    line-height: 1.75 !important;
+  }
+  body li:not([style]) { font-size: 17.5px !important; line-height: 1.7 !important; }
+}
+</style></head>
 <body>
 <button id="themeToggleBtn" type="button" style="display:none" aria-hidden="true"></button>
 
@@ -1406,7 +1474,7 @@ Trong suốt hơn bốn thập kỷ huấn luyện, tôi đã tiếp xúc với 
 Tôi tiếp tục thất vọng với bản thân vì đã không ghi nhật ký hàng ngày, một thứ giúp củng cố trí nhớ và ngăn chặn sự mất mát chi tiết không thể tránh khỏi theo thời gian.
 Vì vậy, trước khi bạn phải hối tiếc tương tự, hãy bắt đầu viết nhật ký ngay hôm nay.
 Nhật ký trở thành kho báu gợi lại những chi tiết vụn vặt của một sự kiện, những chi tiết khiến nó đáng được ghi nhớ ngay từ đầu.</p>
-        <p class="paragraph">xii Tôi rất hân hạnh được chứng kiến ​​sự biến đổi hoàn toàn của quần vợt.
+        <p class="paragraph">xii Tôi rất hân hạnh được chứng kiến sự biến đổi hoàn toàn của quần vợt.
 Với tư cách là huấn luyện viên, Ive phải thích nghi với phong cách chơi mới.
 Nếu tôi không điều chỉnh, học trò của tôi sẽ trở thành nạn nhân của sự phát triển về trang bị, chiến lược và chiến thuật.
 Tuy nhiên, xét cho cùng, làm việc chăm chỉ, cống hiến và sẵn sàng nhận trách nhiệm về thất bại luôn là nền tảng của một nhà vô địch.
@@ -1436,7 +1504,7 @@ Tay vợt của tôi sẽ là người phát ngôn của nó, bằng hành độ
 Anh ấy hoặc cô ấy sẽ là quảng cáo vĩnh viễn của trò chơi, nhưng sở thích và tính cách của người chơi của tôi sẽ vượt lên trên trò chơi.</p>
         <p class="paragraph">Vận động viên hoàn hảo của tôi sẽ nhớ cách trở thành một nhà vô địch thực sự và sẽ hành động như một nhà vô địch trong và ngoài sân chơi.
 Người chơi của tôi sẽ Sự tự tin nhưng không kiêu ngạo.
-Anh ấy hoặc cô ấy sẽ chia sẻ kiến ​​thức, kỹ thuật và hiểu biết sâu sắc với người khác.
+Anh ấy hoặc cô ấy sẽ chia sẻ kiến thức, kỹ thuật và hiểu biết sâu sắc với người khác.
 Tay vợt của tôi sẽ truyền cảm hứng và hướng dẫn cho thế hệ tiếp theo và tự động trở thành một hình mẫu.</p>
         <p class="paragraph">Vận động viên hoàn hảo của tôi có thể là nam hoặc nữ, cao hay thấp, da đen hoặc da trắng.
 Anh ấy hoặc cô ấy sẽ có rất nhiều Arthur Ashe bên trong, rất nhiều Wayne Gretzky, rất nhiều Bart Starr, rất nhiều Bill Bradley, rất nhiều Martina Navratilova.
@@ -1466,7 +1534,7 @@ Cảm ơn.</p>
         <p class="paragraph">Tôi muốn cảm ơn và ghi nhận Human Kinetics vì sự kiên nhẫn và cách tiếp cận chuyên nghiệp của họ trong việc sản xuất ấn bản cuốn sách này của tôi.
 Ngoài gia đình, tôi xin ghi nhận và bày tỏ lòng biết ơn chân thành tới tập thể của mình.
 Những người này đã dành hàng trăm giờ để biên tập ấn bản cuốn sách này của tôi: Pat Dougherty, Geoff Lance, Louise Luscombe và Peter McCraw.
-Xin gửi lời cảm ơn chân thành đến nhiều người khác đã cung cấp những ý kiến ​​đóng góp quý báu để hoàn thành tác phẩm này.</p>
+Xin gửi lời cảm ơn chân thành đến nhiều người khác đã cung cấp những ý kiến đóng góp quý báu để hoàn thành tác phẩm này.</p>
         <p class="paragraph">Sự hỗ trợ liên tục của những người và tổ chức sau đây cũng đã đóng góp to lớn: Fila Swiss Army Brands Oakley Volkl Penn Bill & Catharina Birchall Bob Davis Ông bà Oscar De La Renta Ông Bill Dennis Don Engel và gia đình Barry Gimelstob Ông Leland Hardy Monte Hurowitz và Bob Jellen cùng gia đình Terry Kennedy và gia đình Andy Krieger và Tiến sĩ Murf Klauber'^ Ryszard Krauze và gia đình Nate Landow và Dan
 Lufkin Louis Marx Jr.</p>
         <p class="paragraph">và gia đình Louis Marx III Marty Mulligan Tiến sĩ Glen & Marilyn Nelson và gia đình j Steve Owens Samuel Reid Charlie Reed Gary Scheck Bernie & Margot Richard Schutzman và gia đình Schmidt và gia đình Tom Seavey và gia đình Lenny Solomon Jack Schneider và gia đình Allen Wheat Richard Williams Marylou Whitney và gia đình và gia đình và John Hendrickson xvi Mike Callans Jerry Glauser Murray Evans và gia đình Mark Fisher và gia đình Terry Havens Fulton Liss gia đình Tiến sĩ Lawrence Lieberman Judge Robert
@@ -1615,7 +1683,7 @@ Các môn thể thao mới được giới thiệu sẽ bao gồm các chương 
         <p class="paragraph">Nick Bollettieri, IMG và nhóm Học viện IMG mong muốn tiếp tục thiết lập tiêu chuẩn để đánh giá tất cả những người khác trong ngành kinh doanh đào tạo nhiều môn thể thao, trong thế kỷ 21.
 Huấn luyện Chúng tôi tạo ra sự khác biệt lớn giữa giáo viên và huấn luyện viên.
 Chúng tôi là huấn luyện viên và nhà giáo dục.
-Huấn luyện bao gồm việc đặt ra các nhiệm vụ đầy thách thức để nâng cao kiến ​​thức, kỹ năng và thái độ của người chơi.
+Huấn luyện bao gồm việc đặt ra các nhiệm vụ đầy thách thức để nâng cao kiến thức, kỹ năng và thái độ của người chơi.
 Bí quyết của các huấn luyện viên của chúng tôi như sau: • Tổ chức và lập kế hoạch • Chỉ đạo, hướng dẫn và thử thách • Giám sát và đánh giá • Giao tiếp và động viên • Đặt mục tiêu và mục tiêu rõ ràng • Hy sinh và làm việc chăm chỉ • Đặt học sinh lên hàng đầu • Tiếp tục học tập • Trở thành người chơi trong nhóm và tôn trọng đồng nghiệp • Yêu thích công việc Huấn luyện Kỹ năng huấn luyện theo từng bước Huấn luyện là một quá trình.
 Hệ thống của chúng tôi chuyển từ bước này sang bước tiếp theo để việc thực hành có cấu trúc và tiến trình hợp lý.
 Không có sửa chữa nhanh chóng.
@@ -1624,7 +1692,7 @@ Hệ thống của chúng tôi là một quá trình giáo dục.</p>
         <p class="paragraph">Một số huấn luyện viên dạy từng cú đánh một lúc.
 Ví dụ, thuận tay là bài học đầu tiên, trái tay là bài học thứ hai, v.v.
 Nhưng người chơi sẽ không gặp phải chuỗi tình huống này trong trò chơi và học sinh sẽ không học được các kỹ năng vận động.
-Huấn luyện viên của chúng tôi có kiến ​​thức về các nguyên tắc và các bước giúp mọi người học các kỹ năng vận động.</p>
+Huấn luyện viên của chúng tôi có kiến thức về các nguyên tắc và các bước giúp mọi người học các kỹ năng vận động.</p>
         <p class="paragraph">Phương pháp Bollettieri dạy cho học sinh nhiều kỹ năng khác nhau chỉ trong một buổi học.
 Khi dạy các cú đánh, chúng tôi dạy học sinh cách xử lý bóng tùy theo vị trí của họ trên sân và chúng tôi huấn luyện họ cách xác định loại bóng mà họ đang nhận.
 Học sinh cũng đặt ra mục tiêu và nắm rõ mục đích của từng bài tập.</p>
@@ -1865,7 +1933,7 @@ Nhấn mạnh vào việc thay Đổi hướng bóng đi, phong cách chơi.
 • Phạm vi nhịp tim tổng thể = 130 đến 150 bpm.
 • Chạy bộ phục hồi và Giao bóng / Cú giao bóng 5 giờ-5 giờ 30 chiều.
 mỗi ngày.
-Trọng tâm luyện tập - bóng trực tiếp và được đưa bóng Trọng tâm thi đấu trận đấu • Chơi cố định - Thứ Hai và Thứ Năm • Kết hợp 2 đấu 1 • Điểm - giao bóng và vô-lê /kiểu • Tiếp cận/bóng vô-lê/chuyền/chơi trên cao • Trò ​​chơi 11 điểm - nhiệm vụ cụ thể • Giao bóng và trả lại Luân phiên hàng ngày - 75/60 ​​phút • 1:30-2:45 chiều</p>
+Trọng tâm luyện tập - bóng trực tiếp và được đưa bóng Trọng tâm thi đấu trận đấu • Chơi cố định - Thứ Hai và Thứ Năm • Kết hợp 2 đấu 1 • Điểm - giao bóng và vô-lê /kiểu • Tiếp cận/bóng vô-lê/chuyền/chơi trên cao • Trò chơi 11 điểm - nhiệm vụ cụ thể • Giao bóng và trả lại Luân phiên hàng ngày - 75/60 phút • 1:30-2:45 chiều</p>
         <p class="paragraph">• 2:45-4:00 chiều
 • 4:00-5:00 chiều
 (60 phút) Công việc hàng ngày • 5:00-5:30 chiều
@@ -2079,7 +2147,7 @@ Sau đó công việc bắt đầu.</p>
         <p class="paragraph">Khi chuông reo lúc 8 giờ sáng, mỗi huấn luyện viên bắt đầu công việc hàng ngày là biến các vị khách thành những tay vợt giỏi nhất mà họ có thể trở thành vào thứ Sáu.
 Các buổi sáng thứ Hai dành riêng cho các kỹ thuật của Cú thuận tay (forehand) Bollettieri Killer.
 Đồng thời, các học viên đang dần quen với cách huấn luyện viên của chúng tôi đưa bóng và ý nghĩa của biểu cảm của họ, những cụm từ như "Thấp đến cao bắt vợt ở phía trên" và "Tăng tốc đầu vợt".
-Chiều thứ Hai: Du khách thử nghiệm những kiến ​​thức mới tìm được bằng các trận đấu với các bạn trong nhóm.
+Chiều thứ Hai: Du khách thử nghiệm những kiến thức mới tìm được bằng các trận đấu với các bạn trong nhóm.
 Từ quan điểm cường độ, thứ Hai được chúng ta gọi là những ngày nặng vừa phải.</p>
         <p class="paragraph">Thứ Ba: Sáng Thứ Ba được dành để bao quát các kỹ thuật của Bollistic Backhand một tay, hai tay và hai tay bằng cách thực hiện theo bằng một tay.
 Cường độ giảm đi một chút so với thứ Hai đơn giản vì chúng tôi biết khách của mình đang mệt mỏi và hơi đau nhức do làm việc ngày hôm trước.
@@ -2355,8 +2423,8 @@ Cùng lúc đó Jimmy Evert đang dạy con gái mình, Chris, trái tay bằng 
         <p class="paragraph">Bốn mươi năm sau có một quan điểm hoàn toàn mới.
 Chương này sẽ cho bạn cái nhìn về những gì đang diễn ra ngày hôm nay.
 Mặc dù diện mạo đã thay đổi nhưng một số nguyên tắc cơ bản dường như vẫn tồn tại vĩnh viễn.
-Khi mới bắt đầu dạy chơi, kiến ​​thức của tôi còn hạn chế.
-Ngày nay, tôi nhận ra rằng việc thiếu kiến ​​thức kỹ thuật đã góp phần tạo nên cả thành công lẫn thất bại của tôi.</p>
+Khi mới bắt đầu dạy chơi, kiến thức của tôi còn hạn chế.
+Ngày nay, tôi nhận ra rằng việc thiếu kiến thức kỹ thuật đã góp phần tạo nên cả thành công lẫn thất bại của tôi.</p>
         <p class="paragraph">Tôi nhìn học sinh và để họ làm những gì tự nhiên.
 Tôi hầu như không biết gì về cú vô-lê, nhưng bằng cách nào đó Brian Gottfried, một trong những học trò của tôi vào đầu những năm 1960, đã trở thành một trong những tay vô-lê giỏi nhất môn thể thao này.
 Tai nạn xảy ra.
@@ -2427,12 +2495,12 @@ Thêm các vòng xoáy vào quả bóng có thể tạo ra một loại vũ khí
 Marcelo Rios chỉ cao 5 foot 9 nhưng anh ấy tạo ra sức mạnh to lớn trong các cú giao bóng và cú chạm đất.
 Sức mạnh này đến từ việc luyện tập rất nhiều, với thời gian và Tốc độ đầu vợt tăng lên là những yếu tố chính.</p>
         <p class="paragraph">Phát triển kỹ năng thể thao Trong thể thao, tất cả chúng ta đều mơ ước trở thành người giỏi nhất.
-Nhưng không ai mơ về sự chăm chỉ, cống hiến, kiến ​​thức và sự hy sinh để trở nên xuất sắc trong một môn thể thao.
+Nhưng không ai mơ về sự chăm chỉ, cống hiến, kiến thức và sự hy sinh để trở nên xuất sắc trong một môn thể thao.
 Cuộc sống không có nhiều khác biệt và hầu hết những người bạn gặp đều mong muốn thành công trong cuộc sống.
 Cũng như trong thể thao, thành công là vấn đề của sự cống hiến, hy sinh và nỗ lực.
 Nếu bạn muốn trở thành người bán hàng giỏi nhất thế giới, bạn cần phải biết nhiều hơn là cách gõ cửa từng nhà.
 Trước khi bạn có thể bán bất cứ thứ gì bạn phải hiểu nghệ thuật bán hàng.
-Để thành công, bạn phải hiểu rằng cần phải có kiến ​​thức, sự cống hiến và sự chăm chỉ.</p>
+Để thành công, bạn phải hiểu rằng cần phải có kiến thức, sự cống hiến và sự chăm chỉ.</p>
         <p class="paragraph">Cách hiểu tương tự cũng áp dụng cho những người chơi quần vợt, những người về cơ bản muốn đánh bóng qua lưới nhiều hơn đối thủ của họ một lần.
 Người chơi càng tìm hiểu nhiều về bóng trước khi tiếp xúc thì họ càng thành công trong việc kiểm soát quả trả bóng.
 Người chơi cần phải làm quen với các yếu tố trong môn thể thao của họ.</p>
@@ -2445,7 +2513,7 @@ Người chơi cần phải làm quen với các yếu tố trong môn thể tha
         <p class="paragraph">Tôi bắt đầu cho trẻ nhỏ tham gia bất kỳ môn thể thao nào bằng cách trước tiên cho phép chúng vui chơi trong khi chúng phát triển các kỹ năng vận động, Sự Sự tự tin và sự hiểu biết về cách thức và lý do bóng nảy.
 Theo một cách thú vị nào đó, tôi sẽ dạy họ cảm nhận và chuyển động của vật thể trong môn thể thao này, có thể là một quả bóng, một quả bóng, nước hay thậm chí là một con ngựa.
 Nhịp điệu này, ý tưởng hòa làm một với quả bóng, dạy tính kỷ luật cần thiết để thành công trong một trận đấu, một dự án hoặc một sự nghiệp.
-Trẻ em là những miếng bọt biển và tiếp thu hầu hết kiến ​​thức về cuộc sống trong ba năm đầu đời.</p>
+Trẻ em là những miếng bọt biển và tiếp thu hầu hết kiến thức về cuộc sống trong ba năm đầu đời.</p>
         <p class="paragraph">Theo đánh giá của tôi, trong thể thao nói chung và quần vợt nói riêng, những người mới bắt đầu và thậm chí cả những người chơi thành thạo đang thử nghiệm những cú đánh mới ban đầu không nên lo lắng rằng bóng của họ đang bắn tung tóe khắp sân.
 Thay vào đó, họ nên tìm hiểu cảm giác của quả bóng, cách nó nảy lên và những gì nó có thể làm.
 Mức độ hiểu biết rất đơn giản: 1. Biết điều gì đó về quả bóng 2. Biết cách sẵn sàng đón bóng và cách di chuyển về phía nó 3. Biết điều gì xảy ra khi tiếp xúc 4. Phối hợp vợt và cơ thể Sự đơn giản này thể hiện rõ ở những người mới bắt đầu và những người chơi nâng cao.
@@ -2600,7 +2668,7 @@ Hãy nhớ rằng nói quá nhiều hoặc chiến lược mang thai có thể g
 Người chơi có thể phụ thuộc quá nhiều vào lời khuyên thay vì Nếu bạn đối xử với người chơi của mình như tâm lý của chính họ.</p>
         <p class="paragraph">Trinh sát chơi một CIlBmpionS quan trọng, th6y II thực hiện chiến thắng.
 Nhà vô địch tương tự được chọn!
-Nhờ có kiến ​​thức chuyên môn, trinh sát có thể chuyển bại thành thắng.
+Nhờ có kiến thức chuyên môn, trinh sát có thể chuyển bại thành thắng.
 Theo dõi hầu hết các sự kiện thể thao, huấn luyện viên và người chơi có thể sử dụng các phiên băng video để cùng nhau xem những gì đã thành công, những gì cần phải loại bỏ và những điểm có thể thực hiện cải tiến.
 Trong nhiều trường hợp, các tay vợt không tin vào lời kể của huấn luyện viên về những gì họ vừa làm.</p>
         <p class="paragraph">Lấy lại cây vợt 1 đã làm việc với Marcelo Rios liên tục trong ba năm qua.
@@ -2717,7 +2785,7 @@ Tuy nhiên, thể lực của người chơi sẽ quyết định khả năng T�
 Điều quan trọng cần nhớ là những tay vợt giỏi nhất thế giới luôn giữ cổ tay tự do để di chuyển trên mặt phẳng thẳng đứng.</p>
         <p class="paragraph">Người chơi để cổ tay di chuyển theo chiều ngang sẽ phát triển cổ tay cẩu thả trước khi bạn có thể nói, "Pow!
 Bang!
-Bam!" Ồ Đúng vậy, và cuối cùng Sức mạnh Sức mạnh phải là sản phẩm cuối cùng, một khi kỹ thuật đã thảo luận trước đó đã thành thạo. Tôi thường thấy rằng những học viên đã nắm vững các kiến ​​thức cơ bản khác sẽ tự động đánh với nhiều sức mạnh hơn nhờ kỹ thuật hợp lý và Sự Sự tự tin. Sức mạnh bổ sung cũng sẽ đến thông qua sự phát triển thể chất bình thường và một chương trình rèn luyện thể chất có định hướng.</p>
+Bam!" Ồ Đúng vậy, và cuối cùng Sức mạnh Sức mạnh phải là sản phẩm cuối cùng, một khi kỹ thuật đã thảo luận trước đó đã thành thạo. Tôi thường thấy rằng những học viên đã nắm vững các kiến thức cơ bản khác sẽ tự động đánh với nhiều sức mạnh hơn nhờ kỹ thuật hợp lý và Sự Sự tự tin. Sức mạnh bổ sung cũng sẽ đến thông qua sự phát triển thể chất bình thường và một chương trình rèn luyện thể chất có định hướng.</p>
         <p class="paragraph">Cuối cùng, phần lớn người chơi cảm thấy họ có được nhiều sức mạnh hơn bằng cách sử dụng nhiều cơ thể hơn.
 Điều này không phải vậy!
 Họ nên vung vợt theo kiểu bình thường bằng cách sử dụng chân, khả năng tăng tốc của vợt và lực bóng của đối phương.
@@ -2802,7 +2870,7 @@ Họ là những hình mẫu tốt để sao chép.</p>
         <p class="paragraph">Yếu tố khác để củng cố cú đánh là giữ khuỷu tay và vợt gần cơ thể hơn một chút trong cú đánh sau.
 Sự mất kiểm soát xảy ra khi người chơi vung tay với cánh tay thẳng và khuỷu tay ra xa. Bây giờ, hãy để tôi hướng dẫn bạn một số bài tập đơn giản để giúp học viên của bạn phát triển một cú vung ngắn hơn và chắc chắn hơn.</p>
         <p class="paragraph">.
-Người chơi đứng bên trong đường cuối sân và đánh tất cả các cú đánh trên mặt đất từ ​​đó.
+Người chơi đứng bên trong đường cuối sân và đánh tất cả các cú đánh trên mặt đất từ đó.
 Người chơi đương nhiên sẽ xoay người nhanh hơn và vung vợt ngắn hơn để đánh bóng tốt.
 2. Yêu cầu một đối tác thực hành giao bóng từ vạch giao bóng khi người chơi đứng cách vạch cuối sân một vài feet để nhận giao bóng.
 Người chơi không có lựa chọn nào khác ngoài việc nhặt bóng sớm và rút ngắn thời gian Vung vợt ra sau (lấy đà).
@@ -3718,7 +3786,7 @@ Khi cánh tay tiếp tục vươn hết tầm theo hướng của mục tiêu tr
 Hành động Xoay thân mình vợt dừng hoàn toàn khi chuyển động về phía trước của vợt bắt đầu.
 Bằng cách dừng hành động xoay, năng lượng từ bệ được chuyển thành sức mạnh của hành trình.
 Cánh tay đối diện giữ Trọng tâm cơ thể cho vai, giữ chúng ngang bằng trong cú đánh và ngăn chúng xoay khi cú đánh bắt đầu.</p>
-        <p class="paragraph">Cú Cú trái tay (backhand) (backhand) bằng một tay hoạt động hiệu quả nhất từ ​​tư thế đánh trung lập cho phép lực truyền trọng lượng hoạt động theo cùng hướng với cú đánh.
+        <p class="paragraph">Cú Cú trái tay (backhand) (backhand) bằng một tay hoạt động hiệu quả nhất từ tư thế đánh trung lập cho phép lực truyền trọng lượng hoạt động theo cùng hướng với cú đánh.
 Tuy nhiên, những người chơi một tay cũng có ưu điểm là có hiệu quả từ thế đứng khép kín.
 Thế đứng mở (open stance) khó hơn một chút đối với những người chơi bằng một tay, mặc dù họ có thể sử dụng nó để trả bóng và trong các tình huống khác khi thời gian là những cú Cú trái tay (backhand) (backhand) limBoll-istic, dù có hay không.
 Bạn phải phát triển khả năng thực hiện bằng một hoặc hai tay để thực hiện từ tất cả các tư thế đánh này.</p>
@@ -4014,7 +4082,7 @@ Bài tập và bài tập Whoosh ở đâu?
 Chỉ cần lắng nghe âm thanh cú vung của bạn sẽ giúp bạn biết liệu bạn có đang điều khiển hành động ném và sức mạnh của mình theo đúng hướng hay không.
 Không sử dụng bóng, hãy thực hiện chuyển động giao bóng bình thường của bạn, vung ở tốc độ tối đa.</p>
         <p class="paragraph">Hãy lắng nghe âm thanh của vợt và cố gắng xác định nơi nào âm thanh vù vù lớn nhất.
-Nếu cú ​​vung mạnh nhất ở phía trước mặt bạn, qua nơi xảy ra tiếp xúc, bạn đang hướng hành động ném và sức mạnh của mình về phía trước chứ không phải hướng lên.
+Nếu cú vung mạnh nhất ở phía trước mặt bạn, qua nơi xảy ra tiếp xúc, bạn đang hướng hành động ném và sức mạnh của mình về phía trước chứ không phải hướng lên.
 Nếu bạn hướng nguồn điện của mình lên điểm tiếp xúc, âm thanh vù vù sẽ ở phía trên đầu bạn qua Vùng đánh bóng lý tưởng.
 Khi bạn thực hành cú giao bóng của mình, hãy làm những gì cần thiết để di chuyển âm thanh vù vù trước khi tiếp xúc.</p>
         <p class="paragraph">Làm chủ cú ném .
@@ -4518,7 +4586,7 @@ Bạn không cần phải đặt chân vào đá khi chia tay.
 Bạn muốn cơ thể có cảm giác nhẹ nhàng để có thể phản ứng nhanh chóng.
 Bạn chỉ muốn chân mình chạm nhẹ để có thể thực hiện bước tiếp theo.
 Bạn đã tiếp cận hàng dọc và bạn tách bước khi đối thủ đánh.
-Nếu cú ​​vô-lê đầu tiên của bạn ở dưới mức lưới, bạn có thể sẽ cần cú vô-lê thứ hai để khép lại điểm.
+Nếu cú vô-lê đầu tiên của bạn ở dưới mức lưới, bạn có thể sẽ cần cú vô-lê thứ hai để khép lại điểm.
 Trong trường hợp này, hãy sử dụng cú vô-lê đầu tiên như một cách tiếp cận khác, quay trở lại đường biên khi bạn tiến gần hơn đến lưới.
 Ở cú vô-lê thứ hai, bạn sẽ có cơ hội tốt hơn để đưa bóng đi theo hướng khác.
 Hãy nhớ sử dụng vị trí của mình để gây áp lực lên đối thủ và tạo ra một bức tường phòng thủ mà đối thủ không thể dễ dàng xuyên thủng.</p>
@@ -4636,7 +4704,7 @@ Bạn phải cho đối thủ thấy cách sử dụng xoáy xuống sâu giốn
 Bằng cách sử dụng cú cắt sâu thường xuyên, bạn sẽ ngụy trang cho cú cú bỏ nhỏ (drop shot) (drop shot).
 • Sự chuẩn bị.
 Người chơi dự đoán cú đánh mà bạn sẽ đánh chủ yếu dựa vào cách bạn chuẩn bị.</p>
-        <p class="paragraph">Nếu cú ​​giật lùi xuống của bạn, họ sẽ mong đợi một cú công bóng hoặc Xoáy lên.
+        <p class="paragraph">Nếu cú giật lùi xuống của bạn, họ sẽ mong đợi một cú công bóng hoặc Xoáy lên.
 Nếu vợt vẫn ở trạng thái Vung vợt ra sau (lấy đà), họ sẽ mong đợi xoáy xuống sâu hoặc ngắn.
 Việc chuẩn bị cho cú cú bỏ nhỏ (drop shot) (drop shot) sẽ giống như việc chuẩn bị cho cú đánh tiếp đất thông thường của bạn.
 • Xoay và thực hiện.
@@ -4719,7 +4787,7 @@ Bề mặt Sân Sân đất nện và cỏ thuận lợi cho những cú đánh 
         <p class="paragraph">Bạn phải đáp ứng các điều kiện và đối thủ của mình để xác định tần suất bạn sử dụng cú cú bỏ nhỏ (drop shot) (drop shot).
 Bạn cần mở rộng các giác quan của mình để nhận biết những gì xung quanh mình và cân nhắc mọi thứ - mặt trời ở đâu, gió thổi hướng nào và điều gì có tác dụng chống lại đối thủ của bạn.
 Chiến thắng với cú đánh thả Vì hình thức của cú đánh thả rất giống với hình dáng của những lát cắt sâu và khoai tây chiên, nên bạn có thể thực hiện các đối tác sâu với cú đánh thả.
-Ví dụ: nếu cú ​​Cú trái tay (backhand) (backhand) của bạn không đáng tin cậy, cú đánh thả của bạn sẽ kém hiệu quả hơn và ngược lại.
+Ví dụ: nếu cú Cú trái tay (backhand) (backhand) của bạn không đáng tin cậy, cú đánh thả của bạn sẽ kém hiệu quả hơn và ngược lại.
 Hy vọng rằng bạn đã học được cách tôn trọng việc sử dụng xoáy xuống đủ sâu để thực hiện những cú đánh này.
 Nếu bạn muốn phát huy hết tiềm năng của cú cú bỏ nhỏ (drop shot) (drop shot), bạn cần phải thành thạo các kỹ thuật tương ứng sâu với nó.</p>
         <p class="paragraph">Thông qua việc phát triển những kỹ năng này, bạn sẽ bắt đầu hiểu được cách bạn có thể cản trở khả năng đoán trước cả hướng và Độ sâu của bóng cú đánh của đối thủ.
@@ -5293,7 +5361,7 @@ Phần lớn thông tin trong những mô hình này và các mô hình khác v�
         <p class="paragraph">Platonov xác định sự cần thiết phải lập kế hoạch dài hạn trong bối cảnh chung (không liên quan đến thể thao).
 Ông bao gồm năm giai đoạn phát triển và cung cấp dữ liệu quy chuẩn về số giờ đào tạo và tỷ lệ phân bổ khối lượng đào tạo chung, bổ sung và cụ thể (bảng . 1).
 Balyi (1978) đã mô tả và phân tích các điều kiện kinh tế - xã hội cũng như các chính sách thể thao, văn hóa, giáo dục hỗ trợ phát triển vận động viên ở các nước cộng sản cũ cho Trường Đại học 1 Huấn luyện viên làm việc với các vận động viên đang phát triển có nhiều gánh nặng so với những người đào tạo người lớn.</p>
-        <p class="paragraph">Huấn luyện viên mong đợi biết các thông tin cơ bản về sự phát triển sinh học, sinh lý và tâm lý và biến kiến ​​thức này thành thực hành (Szmodisch 1992).
+        <p class="paragraph">Huấn luyện viên mong đợi biết các thông tin cơ bản về sự phát triển sinh học, sinh lý và tâm lý và biến kiến thức này thành thực hành (Szmodisch 1992).
 Trong một hệ thống hợp lý, các huấn luyện viên được đào tạo và giáo dục tốt nhất sẽ được tuyển dụng ở cấp độ phát triển.
 Điều kiện thể chất Bảng 11.1 Các giai đoạn chuẩn bị thể thao tổng quát Khối lượng tập luyện (o/o) Giai đoạn tập luyện hàng năm Tổng quát Bổ sung Giờ tải cụ thể Ban đầu 100-250 Cơ bản 350-500 Cơ sở cụ thể 600-800 Tối đa hóa 900-1.100 Duy trì 1.200-1.400 "Dự án phát triển tài năng" của Chicago^ Ông kết luận rằng ở các nước cộng sản, một chính sách phát triển vận động viên được điều phối và cấu trúc cẩn thận đã góp phần mang lại kết quả cao
 thành tích hoạt động (mặc dù thường phải trả giá bằng các lĩnh vực văn hóa và xã hội khác).</p>
@@ -5531,7 +5599,7 @@ Trẻ bắt đầu hiểu Trẻ có thể hiểu Sự tham gia và niềm vui đ
 hiểu sự cần thiết và chơi các quy tắc và cấu trúc trò chơi đơn giản.
 với các quy tắc và ý chí đơn giản Tập trung vào quá trình, có xu hướng đặt câu hỏi về các quy tắc chứ không phải kết quả [và mong đợi những câu trả lời chu đáo.</p>
         <p class="paragraph">có rất nhiều niềm vui!).
-Kết quả của những thay đổi này có thể góp phần đáng kể vào việc nâng cao trình độ kỹ năng, trình độ thể lực và nền tảng kiến ​​thức (năng lực phụ trợ) trong số các kỹ năng CƠ BẢN ở Bắc Mỹ sẽ luôn hữu ích cho các tay vợt trẻ nếu sau này họ quyết định theo đuổi các sở thích thể thao khác.
+Kết quả của những thay đổi này có thể góp phần đáng kể vào việc nâng cao trình độ kỹ năng, trình độ thể lực và nền tảng kiến thức (năng lực phụ trợ) trong số các kỹ năng CƠ BẢN ở Bắc Mỹ sẽ luôn hữu ích cho các tay vợt trẻ nếu sau này họ quyết định theo đuổi các sở thích thể thao khác.
 các tay vợt, cũng như tuổi thọ dài hơn trong sự nghiệp thể thao của họ.</p>
         <p class="paragraph">Hình 11.5 minh họa dưới dạng sơ đồ sự phân bố khối lượng tập luyện chung (không dành riêng cho môn thể thao) và môn thể thao cụ thể từ giai đoạn CƠ BẢN đến giai đoạn huấn luyện để giành chiến thắng.
 Hình 11. Sơ đồ minh họa sự tiến triển của tính đặc hiệu O Cụ thể B Đào tạo tổng quát - phát triển vận động viên dài hạn.
@@ -5880,7 +5948,7 @@ Tính linh hoạt Ngay sau khi tập luyện, khi cơ ấm lên, là thời đi�
 Có một số kiểu kéo giãn: cô lập tích cực, thư giãn hợp đồng, hỗ trợ hợp đồng, giữ tĩnh và các kiểu khác.
 Điều hòa thể chất Bất kể kỹ thuật bạn sử dụng, bạn nên kéo căng các cơ sau, thường bị căng ở những người chơi quần vợt: Bắp chân - chân cong, chân thẳng Cơ gấp hông Cơ gân kheo Cơ xoay hông Cơ Xoay thân mình Vai Cơ xoay trong Cơ tam đầu và cơ xoay dưới Cẳng tay Que Massage IPI đã phát hiện ra rằng thanh massage có thể là một công cụ tuyệt vời cho quá trình tái tạo.
 Mục đích của gậy massage là tăng tính linh hoạt, tăng cường lưu lượng máu đến vùng điều trị và phá vỡ các điểm kích hoạt (nút thắt trong cơ). Một mục đích khác là làm dịu sự căng cơ để các cơ bị căng hoặc các cơ đang bị co thắt có thể thư giãn.
-Quá trình massage bằng que rất nhanh chóng và dễ dàng và mất từ ​​6 đến 10 phút.
+Quá trình massage bằng que rất nhanh chóng và dễ dàng và mất từ 6 đến 10 phút.
 IPI khuyến nghị sử dụng thanh massage do RPI của Atlanta sản xuất (1-800-554-1501).</p>
         <p class="paragraph">Thủy liệu pháp Được sử dụng thường xuyên bởi các vận động viên IPI, thủy liệu pháp là một cách tuyệt vời để tạo điều kiện thuận lợi cho quá trình phục hồi.
 Sau khi Kết thúc cú đánh buổi tập và nhận được chế độ dinh dưỡng phù hợp, hãy đi thẳng đến hồ bơi.
@@ -5952,7 +6020,7 @@ Các hoạt động giải trí rất thú vị và tạo cơ hội để xả h
         <p class="paragraph">Nếu bạn dự định chơi một môn thể thao xuất sắc, bạn sẽ phải đáp ứng một số yêu cầu nhất định nếu muốn phát huy hết tiềm năng của mình.
 Điều tương tự cũng có thể nói về cuộc sống.
 Trong thể thao cũng như trong cuộc sống, thành công thường đòi hỏi một nhà giáo dục, sự sẵn sàng học hỏi và khả năng tập trung vào một nhiệm vụ.
-Đôi khi cha mẹ bạn sẽ hỏi bạn, đưa ra ý kiến ​​và tham gia một cách tích cực.
+Đôi khi cha mẹ bạn sẽ hỏi bạn, đưa ra ý kiến và tham gia một cách tích cực.
 Lời khuyên của tôi dành cho bạn rất đơn giản - hãy trung thực và cởi mở với cả phụ huynh và huấn luyện viên.
 Giao tiếp!</p>
         <p class="paragraph">Gửi tới Huấn luyện viên Dù chấp nhận hay không, những ngày dạy một giờ kiểu cũ cho mỗi học sinh đã qua rồi, và vì một lý do chính đáng.
@@ -6002,7 +6070,7 @@ Vì học sinh và huấn luyện viên thường thiết lập mối quan hệ 
         <p class="paragraph">Nhìn chung, mối quan hệ giữa học sinh và huấn luyện viên phải suôn sẻ, vui vẻ và thú vị đối với trẻ.
 Một đứa trẻ sẽ ngày càng yêu mến huấn luyện viên của mình và sẽ tin tưởng huấn luyện viên đó trong mọi vấn đề liên quan đến quần vợt.
 Một đứa trẻ sẽ coi huấn luyện viên là người có thẩm quyền cao nhất về quần vợt.
-Quan điểm này đôi khi có thể dẫn đến những vấn đề giữa phụ huynh và huấn luyện viên, đặc biệt nếu cha mẹ có ý kiến ​​rõ ràng về sự nghiệp quần vợt của con mình.</p>
+Quan điểm này đôi khi có thể dẫn đến những vấn đề giữa phụ huynh và huấn luyện viên, đặc biệt nếu cha mẹ có ý kiến rõ ràng về sự nghiệp quần vợt của con mình.</p>
         <p class="paragraph">Mối quan hệ giữa cha mẹ và huấn luyện viên Cha mẹ và huấn luyện viên phải tạo dựng mối quan hệ làm việc để mang lại lợi ích cho trẻ.
 Nếu không đến được với nhau thì học trò sẽ đau khổ.
 Sự kết hợp này thường phức tạp và gánh nặng với những xung đột bất thường.
@@ -6402,7 +6470,7 @@ Huấn luyện viên có thể xem xét các tình huống khác nhau và xem m�
 • Học sinh có hoặc chưa chuẩn bị tinh thần.
 • Học sinh có hoặc chưa chuẩn bị về mặt thể chất.
 • Học sinh thích hoặc sợ cạnh tranh.
-Tại thời điểm này, huấn luyện viên đã có nền tảng kiến ​​thức tốt về một học sinh cụ thể.
+Tại thời điểm này, huấn luyện viên đã có nền tảng kiến thức tốt về một học sinh cụ thể.
 Nhưng huấn luyện viên có thể cần xem xét các yếu tố khác về một cuộc thi cụ thể: • Huấn luyện viên đại học có thể xác định học bổng qua một sự kiện.</p>
         <p class="paragraph">• Đại lý có thể xác định trạng thái chuyên nghiệp hoặc cơ hội tại một sự kiện.
 • Phụ huynh có thể gọi học sinh và nói, 'Đây là vấn đề lớn.' Cách tiến hành các buổi tập trên sân cũng sẽ khác nhau tùy theo từng học sinh. Đây là cách tôi tiến hành luyện tập với một số học sinh của mình. • Andre Agassi — Andre đã bị đối xử như một chiếc F-18 Hornet với lượng nhiên liệu hạn chế trong bình xăng. Chúng tôi phải thay đổi các buổi tập để duy trì sự quan tâm của cậu ấy. Chúng tôi luôn phải cẩn thận khi nói với anh ấy rằng có điều gì đó không ổn, đặc biệt nếu có khán giả đang theo dõi. Chúng tôi phải điều chỉnh mà không nói cho anh ấy biết
@@ -6424,9 +6492,9 @@ Họ nên chuẩn bị cho kiểu huấn luyện của chúng tôi, có lẽ kh�
 Điều quan trọng nhất là họ phải tiếp thu những lời phê bình mang tính xây dựng, kỷ luật và những hạn chế về thời gian.
 Sống xa nhà lần đầu tiên có thể ảnh hưởng đến cuộc sống trong và ngoài sân đấu.</p>
         <p class="paragraph">Bên cạnh việc có khát khao thành công mãnh liệt, học sinh của chúng ta cần biết cách hòa hợp với các học sinh đến từ các nước khác.
-Họ phải để lại bất kỳ ý tưởng phân biệt chủng tộc hoặc thành kiến ​​nào ở nhà.
+Họ phải để lại bất kỳ ý tưởng phân biệt chủng tộc hoặc thành kiến nào ở nhà.
 Học viện quần vợt Bollettieri là ngôi nhà chung của các học viên từ khắp nơi trên thế giới và mỗi người trong số họ là một phần của gia đình chúng tôi.
-Một gia đình bị chia rẽ bởi những định kiến ​​nhỏ nhặt thì không thể thành công được.
+Một gia đình bị chia rẽ bởi những định kiến nhỏ nhặt thì không thể thành công được.
 Chúng tôi không yêu cầu học sinh phải yêu thương nhau nhưng chúng tôi mong đợi các em tôn trọng sự khác biệt của nhau.</p>
         <p class="paragraph">Lần đầu tiên xa nhà có thể là một thử thách và khó khăn về mặt cảm xúc.
 Học viên khi đến học tại học viện phải cam kết chấp hành nội quy, kỷ luật của học viện.
@@ -6622,7 +6690,7 @@ Xác định các lĩnh vực mà bạn cần phát triển.
 Liệt kê các nhu cầu phát triển của bạn trên mẫu hồ sơ cá nhân.</p>
         <p class="paragraph">Mẫu Hồ sơ Cá nhân Tên và ngày: Điểm mạnh hiện tại của tôi là như sau (nêu rõ các kỹ năng chơi quần vợt về thể chất và tinh thần, thể lực và thể trạng, kỹ năng sống hàng ngày): Nhu cầu phát triển hiện tại của tôi như sau (các kỹ năng thể chất và tinh thần cụ thể về quần vợt, thể lực và tình trạng thể chất, kỹ năng sống hàng ngày): Những hạn chế về rèn luyện tinh thần mà tôi cần giải quyết và khắc phục là như sau (kiến thức, kỹ năng, thái độ cụ thể);
 Tôi dự định thảo luận về hồ sơ của mình với Xác định và xác định những hạn chế cá nhân hiện tại của bạn.
-Kiểm tra bên ngoài về tính chính xác của ý kiến ​​​​của bạn.
+Kiểm tra bên ngoài về tính chính xác của ý kiến của bạn.
 Tuyên bố sứ mệnh cá nhân nêu rõ những gì bạn muốn làm với tư cách là một vận động viên quần vợt và một con người trong hai năm tới.</p>
         <p class="paragraph">Tuyên bố sứ mệnh của bạn phải có phạm vi rộng và rõ ràng.
 Nó không nên đề cập đến những thành tựu bên ngoài, ích kỷ.
@@ -6722,7 +6790,7 @@ Xác định yếu tố nào giúp bạn Sự tự tin hơn và yếu tố nào 
 Biết kỹ năng hiện tại của bạn.
 Bạn phải duy trì các kỹ năng bằng cách sử dụng các thói quen luyện tập nhất quán và có chất lượng cao.
 Tiến hành kiểm kê thường xuyên các kỹ năng của bạn.
-Nhận ý kiến ​​từ những người quan tâm đến sự phát triển của bạn.</p>
+Nhận ý kiến từ những người quan tâm đến sự phát triển của bạn.</p>
         <p class="paragraph">Kiểm tra trình độ kỹ năng của bạn.
 Đánh giá tình huống và kết quả của bạn một cách thực tế.
 Một mình bạn xác định cách bạn phản ứng và xem một tình huống cụ thể.
@@ -6842,7 +6910,7 @@ Bạn sẽ mong đợi một số phản hồi bạn nhận được;
 những bình luận khác có thể gây ngạc nhiên.
 Cách bạn chấp nhận phản hồi cá nhân từ người khác sẽ ảnh hưởng đến hiệu quả công việc trong tương lai và chất lượng các mối quan hệ của bạn.
 Chúng tôi khuyên bạn nên chấp nhận mọi lời chỉ trích về bản thân theo hướng tích cực.
-Bạn có thể lấy hoặc để lại ý kiến ​​về giá trị của nó, tùy thuộc vào độ tin cậy của nguồn.</p>
+Bạn có thể lấy hoặc để lại ý kiến về giá trị của nó, tùy thuộc vào độ tin cậy của nguồn.</p>
         <p class="paragraph">• Phản hồi có thể tích cực và được mong đợi.
 • Phản hồi có thể tích cực và bất ngờ.
 • Phản hồi có thể tiêu cực và được mong đợi.
@@ -6902,10 +6970,10 @@ Bằng cách không ngừng cải thiện các kỹ năng tinh thần, cảm xú
 Cam kết cải tiến liên tục sẽ giúp bạn tránh xa thái độ tự mãn và bất lực về mặt tâm lý.</p>
         <p class="paragraph">Phản hồi về tiến độ là thông tin cho biết sự tiến bộ hoặc tiến bộ của bạn từ thời điểm này sang thời điểm khác.
 Phản hồi về hiệu suất là dữ liệu cho biết kết quả chơi của bạn.
-Hãy yêu cầu huấn luyện viên của bạn đưa ra ý kiến ​​về mức độ tiến bộ của bạn trong lĩnh vực Sự tự tin khi thi đấu.
+Hãy yêu cầu huấn luyện viên của bạn đưa ra ý kiến về mức độ tiến bộ của bạn trong lĩnh vực Sự tự tin khi thi đấu.
 Rèn luyện tinh thần Xem băng video có thể giúp bạn so sánh hiệu suất hiện tại của mình với hiệu suất trước đó.
 Hãy thảo luận với chính mình về những điều bạn đang làm tốt.
-Ghi chú về những lĩnh vực mà bạn muốn ý kiến ​​của huấn luyện viên hoặc người khác.
+Ghi chú về những lĩnh vực mà bạn muốn ý kiến của huấn luyện viên hoặc người khác.
 Hãy xem xét những điều bạn cần cải thiện.
 Liệt kê các mục cụ thể từ cuộc thảo luận với chính bạn mà bạn muốn thảo luận với huấn luyện viên của mình.
 Để Kết thúc cú đánh cuộc họp, hãy tóm tắt những suy nghĩ và ấn tượng của bạn.</p>
@@ -6919,7 +6987,7 @@ Hãy tin tưởng vào bản thân mình một cách nhất quán hơn.
 Tận dụng Điểm lợi thế (advantage) hiệu quả tinh thần Cam kết tận dụng Điểm lợi thế (advantage) hiệu quả tinh thần của bạn có thể bắt đầu ngay bây giờ.
 Chương trình hiệu quả về tinh thần sẽ có lợi nhất khi bạn biến nó thành một phần thói quen hàng ngày của mình cả trong và ngoài sân đấu.
 Hãy lập một lịch trình ôn tập và học tập cho chính mình.
-Hỏi ý kiến ​​của huấn luyện viên, phụ huynh và những người khác quan tâm đến sự tiến bộ của bạn.</p>
+Hỏi ý kiến của huấn luyện viên, phụ huynh và những người khác quan tâm đến sự tiến bộ của bạn.</p>
         <p class="paragraph">Hiệu quả tinh thần}^ cũng có thể được xem xét từ góc độ nhóm.
 Bất kể quy mô của một nhóm, những người tham gia trong nhóm nên phối hợp các nỗ lực thể chất, cảm xúc chung, mục tiêu và kỹ năng tinh thần của họ.
 Một nhóm quần vợt có tinh thần hiệu quả có thể xác định được điểm mạnh, hạn chế và nhu cầu phát triển chung của mình.
@@ -6929,7 +6997,7 @@ Các cá nhân trong nhóm (đôi, đội quần vợt) đều có niềm tin ch
 Kỷ luật trong bối cảnh nhóm đề cập đến mức độ mà nhóm có thể xây dựng một kế hoạch trò chơi phối hợp - kế hoạch nhóm - vượt trội hơn bất kỳ kế hoạch cá nhân nào và sau đó thực hiện theo trong suốt cuộc thi.
 Một nhóm hiệu quả về mặt tinh thần có thể duy trì các mối quan hệ có chất lượng giữa các cá nhân giữa tất cả các thành viên trong nhóm, với tư cách là một nhóm và với những người bên ngoài nhóm.</p>
         <p class="paragraph">Các thành viên trong nhóm sử dụng phản hồi từ kết quả thực hiện của mình để xây dựng kế hoạch hành động cho sự phát triển của mình.
-Khi bạn tiếp tục tham gia vào chương trình hiệu quả tinh thần, bạn sẽ chứng kiến ​​những kết quả tích cực.
+Khi bạn tiếp tục tham gia vào chương trình hiệu quả tinh thần, bạn sẽ chứng kiến những kết quả tích cực.
 Kế hoạch Trò chơi và Chiến lược Trận đấu Bạn không bao giờ nên tham gia trận đấu Cũng như bạn sẽ không bao giờ tham gia một cuộc họp bán hàng mà không có kế hoạch, bạn không bao giờ nên tham gia trận đấu mà không có kế hoạch.
 Kế hoạch có thể đơn giản như việc tham gia một trận đấu mà không có kế hoạch.</p>
         <p class="paragraph">đánh mọi quả bóng về phía trái tay hoặc phức tạp như thực hiện cú giao bóng của bạn và tấn công một khu vực nhất định của sân.
@@ -7220,7 +7288,7 @@ Nếu thành công thì đừng đi chệch hướng, còn nếu là quả bom t
 Phân tích Thống kê* "Chúng ta có thể làm nó tốt hơn không?"
 là câu hỏi được đặt ra suốt nhiều năm qua trong giới thể thao.
 Việc đào tạo các vận động viên ưu tú để đạt được những thành tích mới đã trở thành một cuộc chạy đua về công nghệ.
-Theo bản chất, con người tìm kiếm kiến ​​thức.
+Theo bản chất, con người tìm kiếm kiến thức.
 Chiến binh cuối tuần tìm cách cải thiện.
 Người chơi muốn thấy sự cải thiện trong mọi lĩnh vực.
 Giáo viên quần vợt phải khai sáng cho các vận động viên cấp cao nhất, những người mới bắt đầu và những người ở giữa.
@@ -7297,7 +7365,7 @@ Người chơi giỏi giành được 40 phần trăm số điểm trò chơi.
 Các nhà vô địch thường giành được khoảng 60% số điểm trong trận đấu vì họ hiểu cách chơi và biết cách chịu đựng áp lực liên quan đến tỷ số.
 Những loại thống kê này cũng cung cấp cho nhà tâm lý học thể thao một số hiểu biết về hoạt động của trò chơi của một cá nhân.
 Sau đó, người chơi có thể điều chỉnh các nghi thức, củng cố tích cực hoặc thời gian.</p>
-        <p class="paragraph">Chỉ nhờ kiến ​​thức mà chúng ta tiến về phía trước.
+        <p class="paragraph">Chỉ nhờ kiến thức mà chúng ta tiến về phía trước.
 Chúng ta thực tập như thế nào?
 Chúng ta thể hiện như thế nào trong trận đấu?
 Bằng cách trả lời những câu hỏi này, người chơi có thể tiến về phía trước trong các bước nhảy theo cấp độ thay vì chờ đợi một tiết lộ duy nhất về nội dung của trò chơi.
@@ -7532,8 +7600,8 @@ Sự thất vọng xuất hiện và cuối cùng họ đã tự đánh bại m�
         <p class="paragraph">Ở thái cực ngược lại, người chơi có thể rơi vào bẫy tâm lý do dự.
 Dưới áp lực, kiểu tay vợt này sợ mắc lỗi và chỉ chơi để lấy lại bóng.
 Mặc dù những người chơi này có thể kiên định nhưng họ gặp khó khăn trong việc kiểm soát điểm và luôn ở chế độ phòng thủ.
-Người đẩy dự kiến ​​đấu tranh với khái niệm ép buộc hành động và Kết thúc cú đánh điểm.
-Trừ khi đối thủ mất kiên nhẫn với người đẩy dự kiến ​​và tự hủy, người đẩy dự kiến ​​sẽ gặp khó khăn trong việc giành điểm, đặc biệt là ở cấp độ kỹ năng cao hơn.</p>
+Người đẩy dự kiến đấu tranh với khái niệm ép buộc hành động và Kết thúc cú đánh điểm.
+Trừ khi đối thủ mất kiên nhẫn với người đẩy dự kiến và tự hủy, người đẩy dự kiến sẽ gặp khó khăn trong việc giành điểm, đặc biệt là ở cấp độ kỹ năng cao hơn.</p>
         <p class="paragraph">Điểm xây dựng là gì?
 Khái niệm xây dựng điểm bắt đầu bằng sự hiểu biết về cách các phần trong trò chơi của bạn đóng góp vào kế hoạch trò chơi.
 Ý tưởng là bắt đầu một điểm, thiết lập nó, tạo cơ hội và Kết thúc cú đánh điểm đó.
@@ -7803,7 +7871,7 @@ Không có công thức nào cả, nhưng có một điều bạn có thể làm
 Hãy rèn luyện bản thân thông qua các buổi luyện tập chất lượng và học cách chiến thắng khi dẫn trước.
 Hãy nhớ rằng, thực hành chất lượng sẽ tạo ra những trận đấu chất lượng.</p>
         <p class="paragraph">Cách chiến đấu với người chơi quyền lực Trong suốt lịch sử quần vợt, người chơi luôn bị đe dọa bởi những người chơi quyền lực hơn là những người chơi thuộc bất kỳ phong cách nào khác.
-Không có gì khó chịu hơn việc chứng kiến ​​đối thủ cú đập bóng smash qua mặt bạn.
+Không có gì khó chịu hơn việc chứng kiến đối thủ cú đập bóng smash qua mặt bạn.
 Mặc dù bạn có thể cảm thấy bất lực nhưng bạn vẫn có cách để tự vệ.
 Hoàn cảnh này là một trong những vấn đề lớn nhất mà các vận động viên phải đối mặt và chinh phục.
 Người chơi quần vợt có xu hướng tập trung vào kết quả hơn là quá trình làm thế nào để đạt được mục tiêu họ muốn.
@@ -7847,7 +7915,7 @@ Bây giờ chúng ta đã thiết lập được kế hoạch để chống lạ
 Hãy nhớ rằng, việc phát triển và thực hiện kế hoạch trò chơi sẽ dễ dàng hơn nếu bạn hiểu đối thủ đang cố gắng làm gì.
 Nếu bạn áp dụng những lời khuyên này mỗi ngày trong luyện tập, chiến thắng sẽ đến sớm hơn và thường xuyên hơn bạn nghĩ.</p>
         <p class="paragraph">Cách xử lý gian lận và tinh thần chơi game Trong hơn 40 năm dạy quần vợt, tôi chưa bao giờ thấy một trận đấu nào thắng hay thua chỉ dựa trên gian lận hoặc tinh thần chơi game.
-Nhưng tôi đã nhiều lần chứng kiến ​​những điểm và thậm chí cả những trận thắng bằng cách sử dụng những chiến thuật lôi kéo và phi đạo đức này.
+Nhưng tôi đã nhiều lần chứng kiến những điểm và thậm chí cả những trận thắng bằng cách sử dụng những chiến thuật lôi kéo và phi đạo đức này.
 Không giống như chơi gôn, việc đá bóng đến gần lỗ hơn hoặc không tính số cú đánh của bạn là gian lận không thể phủ nhận, quần vợt không xác định rõ ràng gian lận.</p>
         <p class="paragraph">Tuy nhiên, những hành động như đặt câu hỏi về mọi cuộc gọi, mất quá nhiều thời gian giữa các điểm và giao bóng nhanh đều là những chiến thuật thể hiện sự thiếu tôn trọng quần vợt và thiếu nghi thức cá nhân.
 Tuy nhiên, một số chiến thuật được sử dụng để phá vỡ động lực hoặc trò chơi của đối thủ đều có thể chấp nhận được.
@@ -7857,7 +7925,7 @@ Tôi vẫn khuyến khích các tay vợt của mình không nên vội kết lu
 Nhưng khi một tình huống phát sinh trong đó sự thiếu trung thực rõ ràng, người bào chữa nên hỏi đối thủ của bạn xem họ có chắc chắn về việc call hay không.
 Bạn không bao giờ được hét vào mặt đối thủ hoặc trọng tài hoặc buộc tội đối thủ chơi phạm lỗi.</p>
         <p class="paragraph">Nếu tiếp tục gian lận, hãy đứng bất động bên lưới và hỏi lại đối thủ xem họ có chắc chắn không.
-Theo ý kiến ​​của bạn, nếu đối thủ của bạn cần kiểm tra mắt, hãy đặt vợt của bạn xuống và yêu cầu một màn hình để theo dõi trận đấu.
+Theo ý kiến của bạn, nếu đối thủ của bạn cần kiểm tra mắt, hãy đặt vợt của bạn xuống và yêu cầu một màn hình để theo dõi trận đấu.
 Để vô hiệu hóa một đối thủ sử dụng kỹ năng chơi game, tôi khuyến khích các tay vợt của mình chú ý đến trò chơi của chính họ và không bị cuốn vào hành vi của đối thủ.</p>
         <p class="paragraph">Nếu Sự tập trung của bạn bắt đầu giảm sút, hãy tập trung vào những điều sau để lấy lại nó: • Thực hiện những cú giao bóng lớn.
 • Vào lưới.
@@ -7915,7 +7983,7 @@ Kiểu lịch trình này sẽ làm suy yếu điểm mạnh của bạn hơn l�
 Theo quan điểm của tôi, lẽ ra họ nên làm tốt hơn để phát huy điểm mạnh của mình.
 Vợt, dây và tay cầm Bằng sự hiểu biết Chương này đề cập đến nhu cầu về thiết bị của người chơi ở mọi cấp độ.
 Hãy nhớ rằng những nhu cầu về thiết bị cá nhân của bạn, các tuyên bố thường tập trung vào việc giúp tất cả người chơi tận dụng tối đa các sản phẩm vợt công nghệ cao, phức tạp ngày nay mà bạn sẽ luôn được hưởng lợi và giao bóng.
-Việc thử nghiệm kiến ​​thức này sẽ giúp bạn điều chỉnh nhu cầu thiết bị cụ thể của mình.</p>
+Việc thử nghiệm kiến thức này sẽ giúp bạn điều chỉnh nhu cầu thiết bị cụ thể của mình.</p>
         <p class="paragraph">khỏe mạnh hơn và thắng nhiều trận hơn.
 Hãy nhớ rằng, ngày nay không có cây vợt, dây hoặc sản phẩm tennis nào xấu được sản xuất, nhưng người chơi có thể đưa ra những lựa chọn tồi khi họ không hiểu rõ các thông số kỹ thuật và mục tiêu thiết kế của sản phẩm.
 Bằng cách hiểu nhu cầu giải trí cá nhân của bạn, bạn sẽ khỏe mạnh hơn và giành chiến thắng trong các trận đấu.</p>
@@ -8098,7 +8166,7 @@ Người sử dụng máy và việc hiệu chỉnh máy là hai yếu tố ản
 Loại dây được sử dụng Bạn đã học trong phần cấu trúc dây rằng các loại dây khác nhau có cảm giác khác nhau.
 Ngay cả ở cùng một độ căng tham chiếu (độ căng mà máy được đặt thành), các loại dây khác nhau sẽ có độ căng thực tế khác nhau (độ căng của dây khung sau khi xâu chuỗi).
 Một số biến số có thể gây ra sự khác biệt này: • Kích thước dây • Cấu trúc hoặc thành phần dây • Độ giãn dây • Độ đàn hồi dây (hoặc độ đàn hồi) Kết luận bạn có thể rút ra từ điều này là nếu bạn sử dụng một dây khác trong vợt, độ căng tham chiếu thông thường của bạn có thể mang lại cho bạn cảm giác rất khác.
-Bạn nên làm bài tập ở nhà hoặc tham khảo ý kiến ​​​​chuyên gia về sự khác biệt trước.</p>
+Bạn nên làm bài tập ở nhà hoặc tham khảo ý kiến chuyên gia về sự khác biệt trước.</p>
         <p class="paragraph">Mẫu dây vợt, dây và tay cầm của vợt Các cây vợt khác nhau có các mẫu dây khác nhau là có lý do (xem hình 14 . 1 ).
 Các kiểu dày đặc hơn (nhiều dây chính và dây chéo hơn) mang lại độ bền dây cao hơn và khả năng kiểm soát tốt hơn vì dây ít di chuyển hơn khi va chạm với bóng.
 Các kiểu dây mở có xu hướng tăng cường sức mạnh và độ xoáy của bóng khi đánh.
@@ -8241,7 +8309,7 @@ Những miếng đệm này bảo vệ dây khỏi bị đứt sớm bằng các
         <p class="paragraph">giảm bớt tình trạng gãy tuyệt đối hoặc vòng đệm.
 Các miếng đệm thường được sử dụng với dây ruột tự nhiên có độ căng cao hơn.
 Nếu bạn tiếp tục làm đứt dây ở khu vực gần khung và đã thử thay thế các vòng đệm, hãy thử lắp miếng đệm nguồn vào khu vực đó.
-Giống như tất cả các biến thể hoặc bổ sung thêm dây đặc biệt, trước tiên hãy tham khảo ý kiến ​​của kỹ thuật viên vợt chuyên nghiệp.</p>
+Giống như tất cả các biến thể hoặc bổ sung thêm dây đặc biệt, trước tiên hãy tham khảo ý kiến của kỹ thuật viên vợt chuyên nghiệp.</p>
         <p class="paragraph">Gắn khung Việc lắp vợt vào máy xâu dây đúng cách là điều cần thiết để duy trì tính toàn vẹn của khung (xem hình 14.3).
 Tránh mua một chiếc máy gia đình rẻ tiền vì bạn muốn tiết kiệm tiền mua dây.
 Tải trọng căng thẳng đặt lên một cây vợt tennis trong quá trình căng dây là mức căng thẳng và căng thẳng nhất mà nó từng trải qua.</p>
@@ -8271,7 +8339,7 @@ Nhiều người cố gắng phân biệt công việc của họ với công vi
 Thông thường các nút thắt sẽ ở một nơi khác.
 Người tạo dây có thể sử dụng các nút thắt sáng tạo hoặc thêm miếng đệm vào mỗi khung hình.
 Trong mọi trường hợp, miễn là các kỹ thuật chuyên dụng này không gây nguy hiểm cho tính toàn vẹn của khung hoặc chuỗi thì bạn không nên lo lắng.</p>
-        <p class="paragraph">Trong nhiều trường hợp, các kỹ thuật đặc biệt này xuất phát từ kiến ​​thức về cách các chuỗi nhất định phản ứng với các khung cụ thể và các kỹ thuật này có thể tạo ra sự khác biệt quan trọng.
+        <p class="paragraph">Trong nhiều trường hợp, các kỹ thuật đặc biệt này xuất phát từ kiến thức về cách các chuỗi nhất định phản ứng với các khung cụ thể và các kỹ thuật này có thể tạo ra sự khác biệt quan trọng.
 Hãy chắc chắn rằng trường hợp này xảy ra và người đánh vợt không sử dụng kỹ thuật "đặc biệt" chỉ vì họ không biết cách căng vợt thích hợp!</p>
         <p class="paragraph">Bảo trì và hiệu chỉnh máy Bất cứ ai sử dụng máy xâu chuỗi đều cần vệ sinh và hiệu chỉnh máy định kỳ.
 Nếu bạn di chuyển bằng máy, bạn phải kiểm tra và điều chỉnh hiệu chuẩn trước khi sử dụng.
@@ -8457,7 +8525,7 @@ Khung có độ cứng ít hơn sẽ ít gây sốc và rung hơn.
 Vợt mất độ cứng theo thời gian.
 Cho dù bạn có chăm sóc nó tốt đến đâu, bạn cũng không nên mong đợi một cây vợt sẽ tồn tại mãi mãi.
 Vợt mất đi độ cứng vì một số lý do: • Kỹ thuật căng dây không đúng (sai kiểu, căng không đều, v.v.) • Độ căng quá cao • Khung vợt bị căng quá mức • Đánh bóng quá mạnh • Tiếp xúc với nhiệt độ quá cao (đặc biệt là trong xe cộ) • Lạm dụng sân (ném, va vào dây lưới, nảy trên đầu vợt, v.v.) Nếu bạn mua khung mới và có thể kiểm tra độ cứng, hãy ghi lại số đo và theo dõi mỗi lần bạn khôi phục khung.
-Khi bạn đã mất từ ​​5 đến 10 phần trăm độ cứng ban đầu, hãy thay khung, bất kể nó trông đẹp đến đâu.
+Khi bạn đã mất từ 5 đến 10 phần trăm độ cứng ban đầu, hãy thay khung, bất kể nó trông đẹp đến đâu.
 Luôn thực hiện việc kiểm tra này ở trạng thái chưa được nối dây.</p>
         <p class="paragraph">Quán tính Quán tính (hoặc trọng lượng khi vung vợt) là cảm giác của vợt khi bạn vung vợt.
 Đây là cách quan trọng nhất để hiểu trọng lượng được phân bổ như thế nào trong vợt.
@@ -8478,7 +8546,7 @@ Khung nặng hơn ở phần đầu sẽ có nhiều sức mạnh và khả năn
         <p class="paragraph">Bạn có nhớ chiếc búa của thợ mộc thông thường ở phần cân nặng không?
 Bạn không chỉ cảm nhận được sự khác biệt trong việc phân bổ và cân bằng trọng lượng.
 Khi bạn cố gắng vung búa ở hai điều kiện khác nhau, bạn sẽ cảm thấy có sự khác biệt về quán tính.
-Với kiến ​​thức cơ bản, chúng ta có thể chuyển sang việc kết hợp một loại vợt với một phong cách chơi.
+Với kiến thức cơ bản, chúng ta có thể chuyển sang việc kết hợp một loại vợt với một phong cách chơi.
 Những ví dụ tổng quát này nhằm mục đích hướng dẫn những người chơi có phong cách nhất định sử dụng các loại vợt cụ thể.
 Một lần nữa, hãy nhớ rằng không có cây vợt xấu, chỉ có những lựa chọn vợt tồi!</p>
         <p class="paragraph">Vợt, dây và tay cầm Loại khung phù hợp với phong cách chơi Người chơi quần vợt có ba phong cách cơ bản - đường cơ bản, giao bóng và vô-lê, và tất cả các sân.
@@ -8515,7 +8583,7 @@ Hãy nhớ rằng kích thước này sẽ gần với kích thước thực t�
 Bạn sẽ cần đo đường kính bên trong của giường dây, cả theo chiều ngang và chiều dọc.</p>
         <p class="paragraph">3.14 + L + H Diện tích (inch vuông) = trong đó L là số đo chiều dài dọc bên trong từ đầu đến vùng họng của bệ dây và H là số đo chiều dài ngang bên trong của phần giữa giường dây.
 3,14 + 13,5 + 10,25 = 108,7 inch vuông Quyết định kích thước đầu hoàn hảo là một vấn đề phức tạp.
-Bạn cần sử dụng kiến ​​thức về 12 điều răn của khung để giúp trả lời các câu hỏi về kích thước đầu sau: Nếu tôi thấy rằng tôi nên thử cần nhiều lực hơn một kích thước đầu lớn hơn đánh sai nhiều quả bóng một kích thước đầu lớn hơn có quá nhiều lực một kích thước đầu nhỏ hơn (nếu sử dụng một cái lớn hơn) cảm thấy rằng cây vợt của tôi có kích thước đầu quá nhỏ (nếu sử dụng một cái lớn hơn) Đây chỉ là một vài ví dụ.
+Bạn cần sử dụng kiến thức về 12 điều răn của khung để giúp trả lời các câu hỏi về kích thước đầu sau: Nếu tôi thấy rằng tôi nên thử cần nhiều lực hơn một kích thước đầu lớn hơn đánh sai nhiều quả bóng một kích thước đầu lớn hơn có quá nhiều lực một kích thước đầu nhỏ hơn (nếu sử dụng một cái lớn hơn) cảm thấy rằng cây vợt của tôi có kích thước đầu quá nhỏ (nếu sử dụng một cái lớn hơn) Đây chỉ là một vài ví dụ.
 Hãy nhớ rằng trong số các cây vợt có kích cỡ đầu khác nhau, mọi kiểu khung được thảo luận trước đó (nặng đầu, nhẹ đầu và thậm chí cân bằng) đều có sẵn để đáp ứng phong cách chơi cụ thể của bạn.</p>
         <p class="paragraph">Việc thử nghiệm với các kích cỡ đầu khác nhau là rất quan trọng.
 Kích thước đầu khác nhau của cùng một mẫu vợt sẽ có cách chơi khác nhau.
@@ -8635,7 +8703,7 @@ Khi nào trọng lượng nhẹ hơn ảnh hưởng xấu đến trò chơi củ
 Hãy nhớ rằng quần vợt đã có từ rất lâu.
 Một số thay đổi đã được thực hiện về kích thước sân, thông số kỹ thuật của bóng hoặc cách chơi.
 Nếu kích thước của một sân tennis tăng lên cùng với công nghệ vợt, chúng ta sẽ chơi trận đấu trên một sân bóng đá có lưới ở vạch 50 yard.</p>
-        <p class="paragraph">Sử dụng kiến ​​thức trong chương này để tinh chỉnh trò chơi của bạn.
+        <p class="paragraph">Sử dụng kiến thức trong chương này để tinh chỉnh trò chơi của bạn.
 Hãy quên đi những gì bạn thấy người chơi quần vợt chuyên nghiệp yêu thích của mình đang sử dụng.
 Họ không chọn vợt bằng cách xem bạn chơi;
 bạn cũng không nên xem chúng!
@@ -8645,7 +8713,7 @@ Không phải lúc nào chúng ta cũng nghĩ mình có thể làm được đi�
 Chúng tôi cũng không nghĩ rằng chiếc Ford hay Chevy mà chúng tôi thấy trên đường đua đã có sẵn tại đại lý địa phương.</p>
         <p class="paragraph">Chúng ta không nên nghĩ như vậy khi mua một cây vợt tennis sao?
 Nếu các nhà sản xuất có thể tạo ra những cây vợt đáp ứng nhu cầu cụ thể của người chơi chuyên nghiệp yêu thích của bạn thì hãy yên tâm rằng họ có thể tạo ra những mẫu vợt phù hợp với nhu cầu của bạn.
-Thử nghiệm kết hợp với kiến ​​thức đúng đắn là con đường nhanh nhất dẫn đến thành công.
+Thử nghiệm kết hợp với kiến thức đúng đắn là con đường nhanh nhất dẫn đến thành công.
 Bằng cách giải quyết các nhu cầu cụ thể của mình, bạn sẽ chơi tennis vui hơn, khỏe mạnh hơn và thắng nhiều trận hơn.
 Đối với bất cứ điều gì quan trọng đối với bạn, hãy tìm kiếm lời khuyên chuyên nghiệp.</p>
         <p class="paragraph">Tùy chỉnh vợt Đây là phần phức tạp và quan trọng nhất của chương này.
@@ -8656,7 +8724,7 @@ Những nhu cầu này có thể đơn giản như được để lại Vợt, D
         <p class="paragraph">Đây là nơi các nhà máy rời bỏ chúng tôi và các kỹ thuật viên vợt tiếp quản.
 Kiến thức cần thiết để áp dụng tùy chỉnh theo yêu cầu cụ thể của từng người chơi khiến công việc của kỹ thuật viên trở thành một nghệ thuật.
 Những nghệ nhân này có thể điều chỉnh vợt, dây, v.v. để thiết bị hoạt động tối ưu và phù hợp hoàn hảo với nhu cầu của bạn.</p>
-        <p class="paragraph">Trong phần này tôi sẽ cố gắng cung cấp cho bạn một số kiến ​​thức về những gì xảy ra khi một cây vợt được tùy chỉnh.
+        <p class="paragraph">Trong phần này tôi sẽ cố gắng cung cấp cho bạn một số kiến thức về những gì xảy ra khi một cây vợt được tùy chỉnh.
 Tại sao băng chì được thêm vào?
 Làm thế nào để bạn biết nơi để thêm nó?
 Nên thêm bao nhiêu?
@@ -8801,7 +8869,7 @@ Florida.
 Colony Beach and Tennis Resort [tiếp tục] "Nhà xuất bản của tạp chí Tennis Magazine cho tôi biết rằng ông ấy biết tôi sắp phỏng vấn Nick Bollettieri và tôi chắc chắn không nên đưa Nick vào bảng lương. Một nhà văn quần vợt cho tờ C/?/ca5rorr//7ry/?e chỉ nói: 'Đừng thuê anh ta.' Sau đó, Isatin văn phòng của tôi làm việc với Nick trong một tiếng rưỡi, biết rằng anh ta sẽ là người phù hợp hoàn hảo với tôi và thuê anh ta ngay lập tức," Murf nói.</p>
         <p class="paragraph">"Tôi chưa bao giờ hối hận về điều đó."
 Nick Bollettieri đã mang đến những phẩm chất gì cho Thuộc địa?
-Murf nói: “Anh ấy có sự nhiệt tình to lớn, sức lôi cuốn đáng kinh ngạc, kiến ​​thức ấn tượng và sự cam kết với trò chơi cũng như một đội ngũ nhân viên có thể đáp ứng ngay lập tức nhu cầu của khách hàng”.
+Murf nói: “Anh ấy có sự nhiệt tình to lớn, sức lôi cuốn đáng kinh ngạc, kiến thức ấn tượng và sự cam kết với trò chơi cũng như một đội ngũ nhân viên có thể đáp ứng ngay lập tức nhu cầu của khách hàng”.
 "Và giống như tôi, anh ấy không bao giờ thích về đích thứ hai."
 Những ngày của Nick ở Colony tràn ngập những bài học và phòng khám dành cho khách.</p>
         <p class="paragraph">Ngoài ra, anh ấy còn bắt đầu tổ chức trại quần vợt cho đàn em.
@@ -8886,7 +8954,7 @@ Tại sao tiền của người nộp thuế nên được đầu tư vào các 
 Quận hoặc thành phố có đang quảng bá và phát triển các chương trình giải trí không?</p>
         <p class="paragraph">Nếu chúng ta tin rằng các hoạt động giải trí và thể thao góp phần đạt được các mục tiêu giáo dục, y tế và xã hội và đồng ý rằng những hoạt động đó là một phần cơ cấu của cuộc sống hàng ngày của chúng ta, thì chúng ta phải nói rằng thể thao và, trong trường hợp của chúng ta, quần vợt, là một vấn đề công cộng.
 Do đó, việc phát triển một cơ sở quần vợt không chỉ là vấn đề về khả năng chi trả mà còn về mục tiêu chính trị và nhu cầu của công chúng.
-Quần vợt trở thành hiện thực trong cộng đồng khi các lực lượng như hiệp hội quần vợt địa phương, tổ chức kinh doanh và công chúng nói chung nói lên ý kiến ​​của họ về dự án.</p>
+Quần vợt trở thành hiện thực trong cộng đồng khi các lực lượng như hiệp hội quần vợt địa phương, tổ chức kinh doanh và công chúng nói chung nói lên ý kiến của họ về dự án.</p>
         <p class="paragraph">Sự phổ biến của quần vợt và những tác động xã hội và giáo dục của nó mang lại cho xã hội chúng ta cảm giác trật tự và ổn định.
 Rất ít môn thể thao có tầm cỡ quốc tế như quần vợt.
 Người chơi của nó được chào đón ở bất cứ đâu trên thế giới.
@@ -8969,7 +9037,7 @@ Hôm nay, tôi không khuyên bạn nên nó.</p>
 Một lĩnh vực khác mà tôi quan tâm là ở cấp trung học.
 USTA và tôi vừa hợp lực thành lập một chương trình đội quần vợt ở trường trung học để giúp đỡ nhiều huấn luyện viên thiếu kinh nghiệm phụ trách.
 Thông qua gói tài liệu và video hướng dẫn, chúng tôi có thể giúp tăng cường nỗ lực của huấn luyện viên và cải thiện sự phát triển của từng tay vợt trong đội.
-Chúng tôi hy vọng sáng kiến ​​này sẽ xây dựng cơ sở người chơi tốt hơn ở Hoa Kỳ và tạo ra nhiều người chơi được nhận học bổng đại học hơn.</p>
+Chúng tôi hy vọng sáng kiến này sẽ xây dựng cơ sở người chơi tốt hơn ở Hoa Kỳ và tạo ra nhiều người chơi được nhận học bổng đại học hơn.</p>
         <p class="paragraph">Brad Gilbert (huấn luyện viên của Agassi) và Paul Annacone (huấn luyện viên của Sampras) đều đã nói với tôi nhiều lần rằng để bất kỳ một tay vợt nào vượt qua được, bạn phải có những tay vợt giỏi xung quanh hàng ngày để cạnh tranh đối đầu.
 Sức mạnh nằm ở những con số, để tạo nên một cá nhân hàng đầu.
 Có một xu hướng rõ ràng mà tôi đang thấy ở những tay vợt hàng đầu hiện nay.
