@@ -2150,7 +2150,11 @@
 
     if (location.hash) {
       const h = decodeURIComponent(location.hash.slice(1));
-      if (h.indexOf('tag=') === 0) activeTag = h.slice(4);
+      if (h.indexOf('tag=') === 0) {
+        activeTag = h.slice(4);
+        // mirror the tag onto the chip row so the active filter is visible
+        if (CATEGORY_LABELS[activeTag]) activeCategory = activeTag;
+      }
     }
 
     function counts(){
