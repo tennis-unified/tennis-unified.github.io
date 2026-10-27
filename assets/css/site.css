@@ -1507,10 +1507,10 @@ body[data-md-color-scheme="slate"] .tu-formula-card ul li {
 .mm-dropbtn:hover,.mm-dropdown.open .mm-dropbtn{border-color:var(--mm-accent);color:var(--mm-accent);}
 .mm-caret{font-size:.7rem;transition:transform .2s;}
 .mm-dropdown.open .mm-caret{transform:rotate(180deg);}
-.mm-dropmenu{position:absolute;top:calc(100% + 9px);left:0;min-width:260px;display:none;flex-direction:column;
+.mm-dropmenu{position:absolute;top:calc(100% + 9px);left:0;min-width:260px !important;display:none;flex-direction:column;
   background:var(--mm-panel);border:1px solid var(--mm-light);border-radius:12px;box-shadow:0 14px 40px rgba(15,23,42,.18);padding:8px;z-index:70;max-height:80vh;overflow:auto;}
 .mm-dropdown.open .mm-dropmenu{display:flex;}
-.mm-dropmenu a{display:block;padding:9px 13px;border-radius:8px;color:var(--mm-ink);text-decoration:none;font-size:.92rem;white-space:nowrap;}
+.mm-dropmenu a{display:block;padding:9px 13px;border-radius:8px;color:var(--mm-ink);text-decoration:none;font-size:.92rem;white-space:nowrap !important;}
 .mm-dropmenu a:hover{background:var(--mm-light);color:var(--mm-accent);}
 .mm-dropmenu a.active{background:rgba(139,38,53,.10);color:var(--mm-accent);font-weight:700;}
 .mm-right{margin-left:auto;display:flex;align-items:center;gap:10px;}
@@ -1535,3 +1535,20 @@ body[data-md-color-scheme="slate"] .tu-formula-card ul li {
 .mm-pn a.home .lbl{color:rgba(255,255,255,.72);}
 .mm-pn a.home:hover{color:#fff;filter:brightness(1.06);}
 @media(max-width:720px){.mm-top{flex-wrap:wrap;gap:10px;}.mm-brand{font-size:.92rem;}.mm-pn{flex-direction:column;}}
+
+/* ===== mobile dropdown: keep the "Main" menu at full width on phones =====
+   The vi/books pages carry an inline "tu-mobile-read" layer that sets
+   `body * { min-width: 0 !important }` and `max-width: 100% !important`
+   below 860px.  Those beat the .mm-dropmenu rules above (which had no
+   !important), so the dropdown collapsed to the width of its own button.
+   The !important below wins on specificity, and the menu is anchored to the
+   right so it can never run off the edge of the screen. */
+@media (max-width: 860px) {
+  .mm-dropmenu {
+    left: auto !important;
+    right: 0 !important;
+    min-width: 260px !important;
+    max-width: calc(100vw - 16px) !important;
+  }
+  .mm-dropmenu a { white-space: nowrap !important; }
+}
