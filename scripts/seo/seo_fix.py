@@ -3,8 +3,15 @@
 SEO host-policy tooling for the tennis-unified tree (deployed verbatim to both
 tenniskb.github.io and tennis-unified.github.io).
 
-Decision D1  : consolidate everything onto https://tennis-unified.github.io
-Decision D2  : the /articles/ mirror space is KEPT (still needed)
+Decision D1  : PER-HOST self-canonical. The same tree is mirrored verbatim to
+               tenniskb.github.io (upstream) and tennis-unified.github.io (fork),
+               so an absolute host baked into the tree is wrong on one of them.
+               Canonical + hreflang are therefore emitted ROOT-RELATIVE
+               ("/en/articles/<slug>/"), which resolves to whichever host serves
+               the page -- i.e. each host canonicalises to itself.
+Decision D2  : the /articles/ mirror space is RETIRED. Each page becomes a
+               one-line redirect stub (meta-refresh + noindex) to its
+               /en/articles/<slug>/ twin and is dropped from the sitemap.
 Decision D3  : the 17 extra-title blog copies are canonicalised (non-destructive)
 
 Three commands:
@@ -56,17 +63,20 @@ ALT_SINGLE_RE = re.compile(
     re.I,
 )
 
-# Pages whose <title> marks them as redirect stubs -> not content, keep out of sitemap
+# Pages whose <title> marks them as redirect stubs -> not content, keep out of sitemap.
+# NOTE: matched against get_title() output (inner text only, already stripped),
+# so the pattern must NOT include the <title> tag itself.
 STUB_TITLE_RE = re.compile(
-    r"<title>\s*(Redirecting|Chuy\u1ec3n h\u01b0\u1edbng)\b", re.IGNORECASE
+    r"^\s*(Redirecting|Chuy\u1ec3n h\u01b0\u1edbng)\b", re.IGNORECASE
 )
 
 # Spaces that hold real, indexable content and get a self-canonical.
+# D2: articles/ is retired into redirect stubs, so it is NOT a content space.
 # D3 scope note: the blog is deliberately NOT given blanket self-canonicals --
 # only the 17 extra-title duplicates are canonicalised to their primary slug
 # (see canonicalise_blog_variants). Adding a self-canonical to all 722 blog
 # pages was never part of the agreed change.
-CONTENT_PREFIXES = ("articles/", "en/articles/", "vi/articles/")
+CONTENT_PREFIXES = ("en/articles/", "vi/articles/")
 # Pages that get their relative hreflang absolutised without gaining a canonical.
 HREFLANG_ONLY_PREFIXES = ("blog/", "vi/blog/")
 
@@ -136,13 +146,17 @@ def get_hreflangs(html):
 
 
 def self_url(page_rel):
-    """Canonical absolute URL for a tree-relative page path."""
+    """Canonical URL for a tree-relative page path, emitted ROOT-RELATIVE so it
+    resolves to whichever host serves the page (D1 per-host self-canonical).
+    A relative canonical is resolved by Google against the document URL, so
+    '/en/articles/x/' on tenniskb.github.io -> tenniskb.github.io/en/articles/x/
+    and on tennis-unified.github.io -> tennis-unified.github.io/en/articles/x/."""
     p = page_rel
     if p.endswith("/index.html"):
         p = p[: -len("index.html")]
     elif p == "index.html":
         p = ""
-    return f"{CANON_HOST}/{p}"
+    return f"/{p}"
 
 
 # --------------------------------------------------------------------------- #
@@ -242,6 +256,7 @@ def absorb_html(page_rel, html, add_canonical=True):
     add_canonical=False  -> only absolutise hreflang (used for the blog, where we
     do not want to give 722 pages a blanket self-canonical)."""
     changed = False
+    orig = html
     self_u = self_url(page_rel)
 
     # --- canonical ------------------------------------------------------- #
@@ -253,11 +268,13 @@ def absorb_html(page_rel, html, add_canonical=True):
             ins = f'{anchor.group(1)}<link rel="canonical" href="{self_u}">\n{anchor.group(1)}'
             html = html[: anchor.start()] + ins + html[anchor.start():]
             changed = True
-    elif can is not None and not can.startswith("http"):
-        # relative canonical -> make it absolute + self-referential.
-        # An *absolute* canonical is left untouched on purpose: on the
-        # /articles/ mirror space the whole point of D1 is that it already
-        # points at the consolidated tennis-unified URL.
+    elif can is not None and can != self_u and (add_canonical or can.startswith("http")):
+        # D1 per-host: rewrite legacy absolute canonicals
+        # (https://tennis-unified.github.io/...) -- and any stale relative one --
+        # to the ROOT-RELATIVE self URL, so each host canonicalises to itself.
+        # On the blog (add_canonical=False) this only fires for a page that
+        # already carried an absolute canonical; D3 later re-points variants at
+        # their primary slug.
         m = re.search(r'<link\s+rel="canonical"\s+href="[^"]*"', html, re.I)
         if m:
             html = (html[: m.start()]
@@ -267,9 +284,11 @@ def absorb_html(page_rel, html, add_canonical=True):
 
     # --- hreflang -------------------------------------------------------- #
     def absify(href, base_rel):
-        """Resolve a possibly-relative href (./, ../, /abs) to an absolute URL."""
+        """Resolve a possibly-relative href (./, ../, /abs) to a ROOT-RELATIVE
+        path (per-host D1). An absolute href is stripped down to its path."""
         if href.startswith("http"):
-            return href
+            m = re.match(r"https?://[^/]+(/.*)?$", href)
+            return m.group(1) if (m and m.group(1)) else "/"
         if href.startswith("/"):
             path = href
         else:
@@ -283,7 +302,7 @@ def absorb_html(page_rel, html, add_canonical=True):
                 path = "/" + path
             if href.endswith("/") and not path.endswith("/"):
                 path += "/"
-        return CANON_HOST + path
+        return path
 
     def repl(m):
         nonlocal changed
@@ -300,13 +319,16 @@ def absorb_html(page_rel, html, add_canonical=True):
             f'{ind}<link rel="alternate" href="{abs_map[l]}" hreflang="{l}">'
             for l in order
         )
-        if "en" in abs_map and "x-default" not in abs_map:
-            block += f'\n{ind}<link rel="alternate" href="{abs_map["en"]}" hreflang="x-default">'
+        # NOTE: do NOT inject x-default here. The dedicated "pair present but no
+        # x-default" block below adds it exactly once when missing; injecting it
+        # here made the rewrite non-idempotent (each run stacked another
+        # x-default line, because a trailing x-default is not consumed by the
+        # 2-line ALT_BLOCK_RE match).
         return block
 
     html = ALT_BLOCK_RE.sub(repl, html)
 
-    # already-absolute en/vi pair but no x-default -> append one
+    # en/vi pair already present but no x-default -> append one (relative)
     if "x-default" not in get_hreflangs(html):
         alts = get_hreflangs(html)
         if "en" in alts and "vi" in alts:
@@ -315,7 +337,7 @@ def absorb_html(page_rel, html, add_canonical=True):
                 html, re.I)
             if m2:
                 ins = (f'\n{m2.group("indent")}<link rel="alternate" '
-                       f'href="{alts["en"]}" hreflang="x-default">')
+                       f'href="{absify(alts["en"], page_rel)}" hreflang="x-default">')
                 html = html[: m2.end()] + ins + html[m2.end():]
                 changed = True
 
@@ -332,7 +354,121 @@ def absorb_html(page_rel, html, add_canonical=True):
             return (f'{ind}<link rel="alternate" href="{h_abs}" '
                     f'hreflang="{m.group("l")}">')
         html = ALT_SINGLE_RE.sub(repl_single, html)
-    return html, changed
+
+    # --- safety: relativise any remaining absolute hreflang (per-host) ---- #
+    # Catches a third/fourth alternate line that the pair-block did not own.
+    def _rel_h(m):
+        nonlocal changed
+        h = m.group("h")
+        if h.startswith("http"):
+            mm = re.match(r"https?://[^/]+(/.*)?$", h)
+            nh = mm.group(1) if (mm and mm.group(1)) else "/"
+            changed = True
+            return (f'{m.group("indent")}<link rel="alternate" '
+                    f'href="{nh}" hreflang="{m.group("l")}">')
+        return m.group(0)
+    html = ALT_SINGLE_RE.sub(_rel_h, html)
+
+    # --- og:url (D1 per-host, the audit's fourth host-bearing field) ------ #
+    def _rel_og(m):
+        nonlocal changed
+        u = m.group("u")
+        if u.startswith("http"):
+            mm = re.match(r"https?://[^/]+(/.*)?$", u)
+            nu = mm.group(1) if (mm and mm.group(1)) else "/"
+            changed = True
+            return f'<meta property="og:url" content="{nu}"'
+        return m.group(0)
+    html = re.sub(r'<meta\s+property="og:url"\s+content="(?P<u>[^"]*)"',
+                  _rel_og, html, flags=re.I)
+
+    # --- dedupe hreflang lines -------------------------------------------- #
+    # The pair-rewrite above emits an x-default for the matched en/vi pair; if
+    # the source block already carried an x-default on its own line (which the
+    # 2-line ALT_BLOCK_RE does not consume) we would end with two. Keep the
+    # first occurrence of each hreflang value.
+    out_lines, seen_langs = [], set()
+    for ln in html.split("\n"):
+        mh = re.match(
+            r'^[ \t]*<link\s+rel="alternate"\s+href="[^"]*"\s+hreflang="([^"]*)"\s*/?>[ \t\r]*$',
+            ln, re.I)
+        if mh:
+            lg = mh.group(1)
+            if lg in seen_langs:
+                changed = True
+                continue
+            seen_langs.add(lg)
+        out_lines.append(ln)
+    html = "\n".join(out_lines)
+    # Truth source for "changed": an actual before/after comparison. The
+    # per-step flags can miss a silent rewrite (e.g. ALT_BLOCK_RE collapsing two
+    # identical-lang lines into one when both are already relative).
+    return html, (changed or html != orig)
+
+
+# --------------------------------------------------------------------------- #
+# D2 - retire the /articles/ mirror space as one-line redirect stubs
+# --------------------------------------------------------------------------- #
+ARTICLES_DIR = "articles"
+
+
+def make_redirect_stub(target):
+    """Minimal redirect stub. `target` is ROOT-RELATIVE (/en/articles/<slug>/),
+    so the stub redirects correctly on whichever host serves it (per-host)."""
+    return (
+        "<!DOCTYPE html>\n"
+        '<html lang="en">\n'
+        "<head>\n"
+        '<meta charset="utf-8">\n'
+        "<title>Redirecting\u2026</title>\n"
+        f'<link rel="canonical" href="{target}">\n'
+        f'<meta http-equiv="refresh" content="0; url={target}">\n'
+        '<meta name="robots" content="noindex">\n'
+        "</head>\n"
+        "<body>\n"
+        f'<p>This page has moved to <a href="{target}">{target}</a>.</p>\n'
+        "</body>\n"
+        "</html>\n"
+    )
+
+
+def retire_articles_stubs(root, dry):
+    """D2: replace each articles/<slug>/index.html with a redirect stub to its
+    /en/articles/<slug>/ twin. Only stub pages whose twin actually exists."""
+    base = os.path.join(root, ARTICLES_DIR)
+    if not os.path.isdir(base):
+        return 0, 0
+    done = skipped = 0
+    for slug in sorted(os.listdir(base)):
+        p = os.path.join(base, slug, "index.html")
+        if not os.path.isfile(p):
+            continue
+        target = f"/en/articles/{slug}/"
+        twin = os.path.join(root, "en", "articles", slug, "index.html")
+        if not os.path.isfile(twin):
+            skipped += 1
+            continue
+        stub = make_redirect_stub(target)
+        if read(p) != stub:
+            done += 1
+            if not dry:
+                write(p, stub)
+
+    # The /articles/ landing (articles/index.html) is already a redirect stub;
+    # normalise its canonical to the same ROOT-RELATIVE target (per-host).
+    lp = os.path.join(base, "index.html")
+    if os.path.isfile(lp):
+        lhtml = read(lp)
+        m = re.search(r'http-equiv="refresh"\s+content="0;\s*url=([^"]+)"', lhtml)
+        if m:
+            tgt = m.group(1).strip()
+            m2 = re.search(r'<link\s+rel="canonical"\s+href="[^"]*"', lhtml)
+            if m2 and m2.group(0) != f'<link rel="canonical" href="{tgt}"':
+                nl = lhtml[: m2.start()] + f'<link rel="canonical" href="{tgt}"' + lhtml[m2.end():]
+                done += 1
+                if not dry:
+                    write(lp, nl)
+    return done, skipped
 
 
 def rewrite_sitemap(root, dry):
@@ -354,6 +490,13 @@ def rewrite_sitemap(root, dry):
     # 3. drop redirect-stub URLs from the sitemap
     xml = re.sub(
         r"[ \t]*<url>\s*<loc>[^<]*/(?:gemini-notebooks|research/authoritative-sources)/[^<]*</loc>[\s\S]*?</url>\s*\n?",
+        "", xml,
+    )
+
+    # 3b. D2: drop the retired bare /articles/ space (now redirect stubs).
+    #     Match host + "/articles/" only -- never /en/articles/ or /vi/articles/.
+    xml = re.sub(
+        r"[ \t]*<url>\s*<loc>https?://[^/<]+/articles/[^<]*</loc>[\s\S]*?</url>\s*\n?",
         "", xml,
     )
 
@@ -456,7 +599,10 @@ def cmd_apply(root, dry):
     n_can_added = 0
     n_alt_abs = 0
 
-    # pass 1: content spaces -> canonical + absolute hreflang
+    # pass 0 (D2): retire /articles/ into one-line redirect stubs
+    n_stub, n_stub_skip = retire_articles_stubs(root, dry)
+
+    # pass 1: content spaces -> canonical + root-relative hreflang
     for path in walk_html(root):
         r = rel(root, path)
         if not r.startswith(CONTENT_PREFIXES):
@@ -493,11 +639,32 @@ def cmd_apply(root, dry):
     # pass 3 (D3): canonicalise extra-title blog duplicates
     n_var, pairs, skipped = canonicalise_blog_variants(root, dry)
 
+    # pass 4: any remaining absolute canonical on OUR OWN host -> root-relative
+    # (catches gemini-notebooks stubs etc. that are outside the managed spaces).
+    n_canon_rel = 0
+    for path in walk_html(root):
+        html = read(path)
+        can = get_canonical(html)
+        if can and can.startswith("http"):
+            host = re.match(r"(https?://[^/]+)", can).group(1)
+            if host == CANON_HOST or host in ALT_HOSTS:
+                m = re.search(r'<link\s+rel="canonical"\s+href="[^"]*"', html, re.I)
+                if m:
+                    pth = re.sub(r"^https?://[^/]+", "", can) or "/"
+                    new = (html[: m.start()]
+                           + f'<link rel="canonical" href="{pth}"'
+                           + html[m.end():])
+                    n_canon_rel += 1
+                    if not dry:
+                        write(path, new)
+
     sm_changed, removed = rewrite_sitemap(root, dry)
     rb_changed = rewrite_robots(root, dry)
     tag = "DRY-RUN" if dry else "APPLIED"
-    print(f"[{tag}] content-pages-changed={n_changed} canonical-added={n_can_added} "
-          f"hreflang-absolute={n_alt_abs} blog-hreflang-abs={n_blog_alt} "
+    print(f"[{tag}] articles-stubbed={n_stub} stub-skipped={n_stub_skip} "
+          f"content-pages-changed={n_changed} canonical-added={n_can_added} "
+          f"canonical-relativised={n_canon_rel} "
+          f"hreflang-relative={n_alt_abs} blog-hreflang-rel={n_blog_alt} "
           f"blog-variants-canonicalised={n_var} sitemap-changed={sm_changed} "
           f"sitemap-locs-removed={removed} robots-changed={rb_changed}")
     if skipped:
@@ -519,20 +686,37 @@ def cmd_verify(root):
     for path in walk_html(root):
         r = rel(root, path)
         html = read(path)
+        is_stub = bool(STUB_TITLE_RE.search(get_title(html)))
+        managed = (r.startswith(CONTENT_PREFIXES)
+                   or r.startswith(HREFLANG_ONLY_PREFIXES)
+                   or r.startswith(ARTICLES_DIR + "/"))
+
         can = get_canonical(html)
-        if can and not can.startswith("http"):
-            fails.append(f"relative canonical: {r} -> {can}")
-        if can and re.match(r"https?://", can):
-            host = re.match(r"(https?://[^/]+)", can).group(1)
-            if host != CANON_HOST:
-                fails.append(f"wrong-host canonical: {r} -> {can}")
+        # D1: managed canonicals must be ROOT-RELATIVE (per-host self-canonical)
+        if can and managed and not can.startswith("/"):
+            fails.append(f"non-root-relative canonical: {r} -> {can}")
+
+        # D2: every articles/<slug>/ page must be a redirect stub
+        if r.startswith(ARTICLES_DIR + "/") and r.endswith("/index.html"):
+            if not is_stub or 'http-equiv="refresh"' not in html:
+                fails.append(f"articles/ page is not a redirect stub: {r}")
+
         alts = get_hreflangs(html)
-        for lang, v in alts.items():
-            if not v.startswith("http"):
-                fails.append(f"relative hreflang[{lang}]: {r} -> {v}")
-        # x-default is required only where a real en/vi pair exists
-        if "en" in alts and "vi" in alts and "x-default" not in alts:
-            fails.append(f"hreflang without x-default: {r}")
+        if managed:
+            for lang, v in alts.items():
+                if not v.startswith("/"):
+                    fails.append(f"non-root-relative hreflang[{lang}]: {r} -> {v}")
+            # duplicate <link rel="alternate"> lines are a defect; count ONLY the
+            # head alternate links (body language-switcher <a hreflang> is legit).
+            for lg in ("en", "vi", "x-default"):
+                n = len(re.findall(
+                    rf'<link\s+rel="alternate"[^>]*hreflang="{re.escape(lg)}"',
+                    html, re.I))
+                if n > 1:
+                    fails.append(f"duplicate hreflang[{lg}]: {r}")
+            # x-default is required only where a real en/vi pair exists
+            if "en" in alts and "vi" in alts and "x-default" not in alts:
+                fails.append(f"hreflang without x-default: {r}")
 
     sp = os.path.join(root, "sitemap.xml")
     if os.path.isfile(sp):
@@ -545,6 +729,8 @@ def cmd_verify(root):
                 fails.append(f"sitemap malformed: {u}")
             if re.search(r"/(gemini-notebooks|research/authoritative-sources)/", u):
                 fails.append(f"sitemap lists stub: {u}")
+            if re.match(r"https?://[^/<]+/articles/", u):
+                fails.append(f"sitemap lists retired /articles/: {u}")
 
     rb = os.path.join(root, "robots.txt")
     if os.path.isfile(rb):
