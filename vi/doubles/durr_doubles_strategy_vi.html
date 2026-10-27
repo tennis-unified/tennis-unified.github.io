@@ -1143,6 +1143,35 @@ body.no-en #lang-toggle{display:none}
 /* bespoke tables colour their header <tr>; do not paint over it */
 .book-content table th { background: inherit; }
 </style>
+
+<style>
+/* ---------------------------------------------------------------------------
+   Single-column reading layout, matching the 82 standard vi/books readers.
+   The 320px table-of-contents sidebar (the old book-sidebar column) is removed,
+   so .book-wrapper no longer needs to be a flex row: .book-content is now its
+   only child and stays centred at the 880px reading measure. Injected last in
+   <head> so it wins on equal specificity.
+   --------------------------------------------------------------------------- */
+.book-wrapper { display: block; }
+.book-content { max-width: 880px; margin: 0 auto; }
+</style>
+<style>
+/* Floating chapter drawer */
+.chapter-fab{position:fixed;right:20px;bottom:20px;z-index:55;display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:none;border-radius:999px;background:var(--gold,#b8860b);color:#fff;font:600 .9rem/1 system-ui,sans-serif;box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer}
+.chapter-fab svg{width:16px;height:16px;fill:currentColor}
+.chapter-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:70;opacity:0;visibility:hidden;transition:opacity .2s}
+.chapter-backdrop.open{opacity:1;visibility:visible}
+.chapter-drawer{position:fixed;top:0;right:0;height:100%;width:330px;max-width:88vw;z-index:75;background:var(--bg-card,#fff);box-shadow:-8px 0 30px rgba(0,0,0,.18);transform:translateX(100%);transition:transform .25s ease;display:flex;flex-direction:column}
+.chapter-drawer.open{transform:translateX(0)}
+.cd-head{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid var(--rule,#e4ded2)}
+.cd-head h3{margin:0;font-size:1rem;font-family:var(--serif,Georgia,serif)}
+.cd-close{background:none;border:none;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--ink-muted,#555)}
+.cd-list{overflow-y:auto;padding:8px 0;flex:1}
+.cd-list a{display:block;padding:9px 18px;color:var(--ink-muted,#555);text-decoration:none;font-size:.92rem;line-height:1.4;border-left:3px solid transparent;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cd-list a:hover{background:rgba(0,0,0,.04)}
+.cd-list a.active{color:var(--ink,#111);font-weight:600;border-left-color:var(--gold,#b8860b);background:rgba(184,134,11,.08)}
+@media(max-width:560px){.chapter-drawer{width:100%;max-width:100%}}
+</style>
 </head>
 <body class="no-en">
 
@@ -1194,59 +1223,6 @@ body.no-en #lang-toggle{display:none}
 <div id="progress-container"><div id="progress-bar"></div></div>
 
 <div class="book-wrapper">
-<aside class="book-sidebar">
-    <div class="toc-title">Mục Lục Tác Phẩm</div>
-    <nav class="toc-nav">
-      <ul>
-<li><a href="#loi-cam-on">Lời Cảm Ơn</a></li>
-<li><a href="#chuong-1">Chương 1: Sức Hút Mới Của Quần Vợt Đánh Đôi</a></li>
-<li><a href="#ch01">1. Quần Vợt Đánh Đôi Từng Bị Lu Mờ</a></li>
-<li><a href="#ch02">2. Bước Ra Sân Khấu Trung Tâm</a></li>
-<li><a href="#chuong-2">Chương 2: Sân Đánh Đôi vs Sân Đánh Đơn: Tác Động Của Hành Lang</a></li>
-<li><a href="#ch03">1. Tác Động Theo Chiều Ngang: Mở Rộng Góc Đánh và Vùng Không Gian Xung Quanh Sân</a></li>
-<li><a href="#ch04">2. Tác Động Theo Chiều Dọc: Góc Nảy Tù Hơn và Quỹ Đạo Thấp Hơn</a></li>
-<li><a href="#ch05">3. Tác Động Theo Đường Chéo: Cú Đánh Chéo Sân Dài Hơn</a></li>
-<li><a href="#ch06">4. Tác Động Về Thời Gian: Rút Ngắn Thời Gian Bóng Bay Để Giành Thế Tấn Công</a></li>
-<li><a href="#chuong-3">Chương 3: Chiến Thuật Đánh Đôi vs Chiến Thuật Đánh Đơn</a></li>
-<li><a href="#ch07">1. Cú Giao Bóng (The Serve)</a></li>
-<li><a href="#ch08">2. Cú Trả Giao Bóng (The Return of Serve)</a></li>
-<li><a href="#ch09">3. Cú Lốp Bóng (The Lob)</a></li>
-<li><a href="#ch10">4. Cuộc Chiến Trên Lưới và Quả Volley</a></li>
-<li><a href="#ch11">5. Quả Đập Bóng Trên Đầu (The Overhead / Smash)</a></li>
-<li><a href="#ch12">6. Quả Half-Volley và Cú Bỏ Nhỏ (Drop Shot)</a></li>
-<li><a href="#chuong-4">Chương 4: Cú Giao Bóng Trong Đánh Đôi</a></li>
-<li><a href="#ch13">1. Ba Cú Giao Bóng Tiêu Chuẩn (The Standard Serves)</a></li>
-<li><a href="#ch14">2. Vị Trí Đứng Giao Bóng và Các Góc Giao Bóng</a></li>
-<li><a href="#ch15">3. Các Vùng Mục Tiêu Điểm Rơi Tiêu Chuẩn (Sơ đồ 18)</a></li>
-<li><a href="#ch16">4. Kỹ Thuật Tiến Lên Chiếm Lưới Của Người Giao Bóng</a></li>
-<li><a href="#ch17">5. Vai Trò Của Người Đứng Lưới Bên Giao</a></li>
-<li><a href="#chuong-5">Chương 5: Cú Trả Giao Bóng Trong Đánh Đôi</a></li>
-<li><a href="#ch18">1. Kích Thước Thể Chất và Tâm Lý Trong Quần Vợt (Sơ đồ 19)</a></li>
-<li><a href="#ch19">2. Chuẩn Bị Đón Trả Giao Bóng</a></li>
-<li><a href="#ch20">3. Kỹ Thuật Trả Giao Bóng: Cú Chip Return vs Cú Jab Return</a></li>
-<li><a href="#ch21">4. Tâm Lý Trả Quả Giao Bóng Một vs Quả Giao Bóng Hai</a></li>
-<li><a href="#ch22">5. Cú Trả Giao Bóng Chéo Sân — Vũ Khí Cốt Lõi (Sơ đồ 22 &amp; 23)</a></li>
-<li><a href="#ch23">6. Các Lựa Chọn Trả Giao Bóng Chiến Thuật Khác</a></li>
-<li><a href="#ch24">7. Đội Hình Phòng Thủ Khi Trả Giao Bóng (Sơ đồ 27)</a></li>
-<li><a href="#ch25">8. Hình Học Mặt Sân và Khái Niệm Sân Ngắn – Sân Dài (Sơ đồ 28 &amp; 29)</a></li>
-<li><a href="#chuong-6">Chương 6: Cuộc Chiến Trên Lưới</a></li>
-<li><a href="#ch26">1. Người Giao Bóng và Quả Volley Đầu Tiên (The First Volley)</a></li>
-<li><a href="#ch27">2. Vị Trí Đứng Lưới và Các Tuyến Bao Quát (Sơ đồ 31)</a></li>
-<li><a href="#ch28">3. Khái Niệm Chữ T và Tầm Nhìn Ngoại Vi (Sơ đồ 32)</a></li>
-<li><a href="#ch29">4. Xử Lý Quả Lốp Bóng và Cú Smash Đập Bóng Trên Đầu (Overhead)</a></li>
-<li><a href="#ch30">5. Chiến Thuật Bắt Bài Cướp Lưới (The Poach — Sơ đồ 36)</a></li>
-<li><a href="#ch31">6. Nguyên Tắc Vàng: &#x27;Nếu Do Dự, Hãy Đánh Vào Giữa Sân!&#x27;</a></li>
-<li><a href="#chuong-7">Chương 7: Nền Tảng Xây Dựng Đội Đôi Hoàn Hảo</a></li>
-<li><a href="#ch32">1. Giao Tiếp và Đồng Điệu Tâm Lý Với Đồng Đội</a></li>
-<li><a href="#ch33">2. Phân Chia Sân Đấu: Ô Phải (Deuce Court) vs Ô Trái (Ad Court)</a></li>
-<li><a href="#ch34">3. Bọc Lót Khi Đồng Đội Bắt Bài (Sơ đồ 37)</a></li>
-<li><a href="#ch35">4. Khi Người Đứng Lưới Bên Nhận Cướp Lưới Ghi Điểm (Sơ đồ 38)</a></li>
-<li><a href="#ch36">5. Các Phương Án Đối Phó Khi Đối Thủ Bắt Bài (Sơ đồ 39)</a></li>
-<li><a href="#ch37">6. Chiến Thuật Đỉnh Cao: Đội Hình Chữ I (The I-Formation — Sơ đồ 40)</a></li>
-<li><a href="#phu-luc-thuat-ngu">Phụ Lục: Bảng Tra Cứu Thuật Ngữ &amp; Chỉ Mục</a></li>
-</ul>
-    </nav>
-  </aside>
 
   <main class="book-content" id="book-content">
     <div class="book-hero">
@@ -1573,6 +1549,50 @@ window.addEventListener('scroll', function(){
     if (!overlay.classList.contains('open')) return;
     clearTimeout(rt); rt = setTimeout(refit, 220);
   });
+})();
+</script>
+
+<button class="chapter-fab" id="chapter-fab" aria-label="Mục lục chương"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h12v2H3zM3 11h12v2H3zM3 17h8v2H3zM17 9h4v2h-4zM17 15h4v2h-4z"/></svg><span>Chương</span></button>
+<div class="chapter-backdrop" id="chapter-backdrop"></div>
+<aside class="chapter-drawer" id="chapter-drawer" aria-label="Danh sách chương">
+  <div class="cd-head"><h3>Mục lục</h3><button class="cd-close" id="chapter-close" aria-label="Đóng">&times;</button></div>
+  <nav class="cd-list" id="chapter-list"></nav>
+</aside>
+<script>
+(function(){
+  var fab=document.getElementById('chapter-fab'),
+      drawer=document.getElementById('chapter-drawer'),
+      backdrop=document.getElementById('chapter-backdrop'),
+      list=document.getElementById('chapter-list'),
+      book=document.getElementById('book-content');
+  if(!book) return;
+  var heads=[].slice.call(book.querySelectorAll('h2[id]'));
+  if(!heads.length) return;
+  var links=[];
+  heads.forEach(function(h){
+    var a=document.createElement('a');
+    a.href='#'+h.id; a.textContent=h.textContent.trim();
+    a.addEventListener('click',function(){drawer.classList.remove('open');backdrop.classList.remove('open');});
+    list.appendChild(a); links.push(a);
+  });
+  function openD(){drawer.classList.add('open');backdrop.classList.add('open');}
+  function closeD(){drawer.classList.remove('open');backdrop.classList.remove('open');}
+  fab.addEventListener('click',openD);
+  backdrop.addEventListener('click',closeD);
+  document.getElementById('chapter-close').addEventListener('click',closeD);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeD();});
+  var ticking=false;
+  function spy(){
+    var cur=null, y=100;
+    for(var i=0;i<heads.length;i++){
+      if(heads[i].getBoundingClientRect().top<=y) cur=heads[i].id; else break;
+    }
+    if(cur) links.forEach(function(l){l.classList.toggle('active',l.getAttribute('href')==='#'+cur);});
+    ticking=false;
+  }
+  function onscroll(){ if(!ticking){ticking=true;requestAnimationFrame(spy);} }
+  window.addEventListener('scroll',onscroll,{passive:true});
+  spy();
 })();
 </script>
 </body>
