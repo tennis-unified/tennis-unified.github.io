@@ -70,12 +70,16 @@ STUB_TITLE_RE = re.compile(
 )
 
 # Spaces that hold real, indexable content and get a self-canonical.
-# D2: articles/ is retired into redirect stubs, so it is NOT a content space.
+# D2: in the fork articles/ is retired into redirect stubs, so it is NOT a
+# content space there. THIS tree keeps it (see RETIRE_ARTICLES), which makes the
+# bare /articles/ space real content here and therefore a content space -- it
+# needs the same root-relative hreflang treatment as en/articles and
+# vi/articles, or verify flags 3 absolute hreflang per page.
 # D3 scope note: the blog is deliberately NOT given blanket self-canonicals --
 # only the 17 extra-title duplicates are canonicalised to their primary slug
 # (see canonicalise_blog_variants). Adding a self-canonical to all 722 blog
 # pages was never part of the agreed change.
-CONTENT_PREFIXES = ("en/articles/", "vi/articles/")
+CONTENT_PREFIXES = ("articles/", "en/articles/", "vi/articles/")
 # Pages that get their relative hreflang absolutised without gaining a canonical.
 HREFLANG_ONLY_PREFIXES = ("blog/", "vi/blog/")
 
