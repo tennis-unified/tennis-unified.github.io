@@ -58,7 +58,40 @@ Both `tennis-unified.github.io` and `tenniskb.github.io` are large production kn
 * **Legacy-builder failure signature:** `status=errored`, `duration=0`, `error.message="Page build failed."` with no console output means the published site exceeded the legacy 1 GB limit / 10-minute timeout. That is an infrastructure symptom, never a content bug - keep the Actions workflow as the Pages source and do not delete content to "make the build fit".
 * **Patching generated HTML:** read and write bytes and preserve the file's existing EOL. If `git diff --stat` reports a whole file changed instead of only the intended lines, the edit converted CRLF to LF; revert with `git checkout -- <path>` and redo with EOL preservation.
 * **200-article knowledge base pipeline (articles 145-200):** `scripts/gen145_200.py` (with `gen145_200_data_*.py` and `gen145_200_pools_*.py`), `scripts/deploy_145_200.py`, `scripts/verify_145_200.py`, `scripts/audit_vi_leaks_145_200.py`, `scripts/vi_title_overrides.py`, `scripts/build_video_map_145_200.py`, `scripts/update_sitemap_145_200.py`. Titles come from `scripts/articles_200_data.json` and `scripts/articles_145_200_meta.json`; any catalogue VI title still written in English must be overridden through `vi_title_overrides.py` before rendering, and the same mapping must also be applied to the landing and pillar index pages.
-* **Mirroring content:** the two sites are separate repositories, not forks. A content change is complete only when it exists in both `main` (tennis-unified) and `main` (tenniskb). Article pages, the root `/articles/` mirror, `sitemap.xml` and `sitemap.xml.gz` must match in both.
+* **Mirroring content:** `tennis-unified/tennis-unified.github.io` is a **fork** of `tenniskb/tenniskb.github.io`, and the tree is mirrored to it verbatim by `.github/workflows/mirror.yml` (server-side `merge-upstream`). A content change is complete only when it exists in both `main` branches. **The one deliberate divergence is `/articles/`** - the fork retired it into redirect stubs (SEO decision D2), this repo keeps all 200 pages as real content. See section 6.
+
+---
+
+## 6. SEO Host Policy (decisions D1 / D2 / D3)
+
+The same bytes are served from two hosts, so any absolute host baked into a page is wrong on one of
+them. That is the whole reason for these decisions - read them before touching `<head>` metadata.
+
+* **D1 - per-host self-canonical.** `canonical`, `hreflang` and `og:url` are emitted **root-relative**
+  (`/en/articles/<slug>/`), which resolves to whichever host serves the page. Never write
+  `https://tenniskb.github.io/...` or `https://tennis-unified.github.io/...` into a page's canonical,
+  hreflang or `og:url`. `og:image` is the exception: it must stay absolute, because the URL is consumed
+  off-site by social crawlers.
+* **The one sanctioned absolute host:** a sitemap `<loc>` must be a full URL per sitemaps.org, so
+  `sitemap.xml` stays on `https://tennis-unified.github.io` and `robots.txt` advertises only that
+  sitemap, on both hosts. This is deliberate - do not "fix" it into a relative URL, and do not add the
+  second host back.
+* **D2 - `/articles/` is the fork's decision, not this repo's.** Here `RETIRE_ARTICLES = False` in
+  `scripts/seo/seo_fix.py`; `/articles/` holds 200 real pages, so it is a content space and gets the
+  same treatment as `en/articles/` and `vi/articles/`. If D2 is ever adopted here, flip that flag and
+  re-run `apply` + `verify` - it stubs all 200 pages at once.
+* **D3 - extra-title blog copies.** 17 blog pages exist under a second title; their canonical points at
+  the primary slug. The blog is otherwise **not** given blanket self-canonicals (722 pages) - that was
+  never part of the agreed change.
+* **Tooling.** `scripts/seo/seo_fix.py audit | apply [--dry-run] | verify` walks only
+  `CONTENT_PREFIXES` (`articles/`, `en/articles/`, `vi/articles/`). `verify` exits 1 on any failure and
+  is the gate - run it after every metadata change.
+* **Tree-wide sweep.** Pages outside those three prefixes are not covered by `seo_fix.py`. Use
+  `scripts/seo/d1_treewide.py` (`--write` to apply) to convert the remaining absolute canonicals and
+  `og:url` to root-relative, tree-wide. It never invents a target: a URL whose path does not resolve on
+  disk is reported, and a canonical whose declared target 404s is replaced with the page's own path
+  rather than left pointing at nothing.
+
 
 ---
 
