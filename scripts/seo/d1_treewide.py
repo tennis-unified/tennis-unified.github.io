@@ -16,8 +16,8 @@ left alone and reported.
 Excluded: books/ (the book readers are out of scope for this job).
 
 Usage:
-  python _tmp/d1_treewide.py            # dry run, report only
-  python _tmp/d1_treewide.py --write
+  python scripts/seo/d1_treewide.py            # dry run, report only
+  python scripts/seo/d1_treewide.py --write
 """
 import os
 import re
