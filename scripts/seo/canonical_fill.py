@@ -36,8 +36,22 @@ SKIP_DIRS = {".git", "node_modules", "_tmp", ".workbuddy-ai"}
 # Spaces with a standing reason to stay untouched (see module docstring).
 EXCLUDE_PREFIX = ("blog/", "vi/blog/", "books/", "tnkb/", "tenniskb/")
 
-CAN_RE = re.compile(r'<link\s+rel="canonical"', re.I)
-ALT_RE = re.compile(r'([ \t]*)<link\s+rel="alternate"', re.I)
+def _rel_value(v):
+    """Match rel=<v> in any attribute position and any quoting style.
+
+    A narrower '<link rel="canonical"' pattern (the obvious one) silently misses
+    both of the tree's other spellings:
+        <link href="..." rel="canonical">      # rel is not the first attribute
+        <link href=... rel=canonical>          # unquoted (legal HTML5)
+    Missing them makes the tool believe the page has no canonical and insert a
+    second one -- a duplicate-canonical defect that is worse than the gap it
+    was meant to fix.
+    """
+    return rf'rel\s*=\s*(?:"{v}"|\'{v}\'|{v}(?=[\s>/]))'
+
+
+CAN_RE = re.compile(rf'<link\b[^>]*\b{_rel_value("canonical")}[^>]*>', re.I)
+ALT_RE = re.compile(rf'([ \t]*)<link\b[^>]*\b{_rel_value("alternate")}[^>]*>', re.I)
 HEAD_END_RE = re.compile(r"</head>", re.I)
 
 
