@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Áp Lực Trong Tennis (Tennis Pressure Management) | Tennis Unified</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #9a3412;
+            --primary-dark: #7c2d12;
+            --secondary: #c2410c;
+            --accent: #f97316;
+            --bg-page: #fffaf5;
+            --bg-card: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border-color: #ffedd5;
+            --highlight: #fff7ed;
+            --highlight-border: #fed7aa;
+        }
+
+        [data-theme="dark"] {
+            --primary: #fb923c;
+            --primary-dark: #0f172a;
+            --secondary: #ea580c;
+            --accent: #fdba74;
+            --bg-page: #140803;
+            --bg-card: #200e05;
+            --text-main: #f8fafc;
+            --text-muted: #cbd5e1;
+            --border-color: #3b1606;
+            --highlight: #2f1205;
+            --highlight-border: #7c2d12;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.7;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .brand-logo i {
+            color: #f97316;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #f97316;
+        }
+
+        .btn-lang {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff !important;
+        }
+
+        .btn-theme {
+            background: transparent;
+            border: none;
+            color: #cbd5e1;
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 6px;
+        }
+
+        .progress-bar-container {
+            position: fixed;
+            top: 57px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: transparent;
+            z-index: 999;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #f97316, #c2410c);
+            transition: width 0.1s ease;
+        }
+
+        .book-hero {
+            background: linear-gradient(135deg, #9a3412 0%, #7c2d12 50%, #180902 100%);
+            color: #ffffff;
+            padding: 48px 24px;
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(249, 115, 22, 0.2);
+            color: #fed7aa;
+            border: 1px solid rgba(249, 115, 22, 0.4);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+            color: #ffedd5;
+            font-style: italic;
+        }
+
+        .hero-meta {
+            font-size: 0.95rem;
+            color: #e2e8f0;
+            margin-bottom: 24px;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background: #c2410c;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #9a3412;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .reader-layout {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 40px;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 80px;
+            height: fit-content;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .toc-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .toc-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .toc-list a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s, padding-left 0.2s;
+            display: block;
+            padding: 4px 0;
+        }
+
+        .toc-list a:hover {
+            color: var(--secondary);
+            padding-left: 6px;
+        }
+
+        .reader-content {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .chapter-block {
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .chapter-block:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .chapter-header {
+            margin-bottom: 24px;
+        }
+
+        .chapter-badge {
+            display: inline-block;
+            background: var(--highlight);
+            color: var(--secondary);
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            border: 1px solid var(--highlight-border);
+        }
+
+        .chapter-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--text-main);
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+
+        .chapter-intro {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        .content-body h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin: 28px 0 14px 0;
+            color: var(--primary);
+        }
+
+        .content-body h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 18px 0 10px 0;
+        }
+
+        .content-body p {
+            margin-bottom: 16px;
+            font-size: 1rem;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        .content-body ul, .content-body ol {
+            margin: 12px 0 20px 24px;
+        }
+
+        .content-body li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: var(--highlight);
+            border-left: 4px solid var(--secondary);
+            border-radius: 0 8px 8px 0;
+            padding: 20px;
+            margin: 24px 0;
+        }
+
+        .highlight-box h4 {
+            color: var(--secondary);
+            margin-top: 0;
+        }
+
+        .figure-box {
+            margin: 32px 0;
+            text-align: center;
+        }
+
+        .figure-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .figure-caption {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        @media (max-width: 900px) {
+            .reader-layout {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                display: none;
+            }
+            .reader-content {
+                padding: 24px;
+            }
+            .hero-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="/vi/books/" class="brand-logo">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Tennis Unified Books</span>
+            </a>
+            <nav class="nav-links">
+                <a href="/vi/fundamentals/">Căn Bản</a>
+                <a href="/vi/stroke-analysis/">Phân Tích Cú Đánh</a>
+                <a href="/vi/drills/">Bài Tập</a>
+                <a href="/vi/books/">Tủ Sách</a>
+                <a href="/books/" data-lang-toggle="en" class="btn-lang"><i class="fa-solid fa-globe"></i> English</a>
+                <button class="btn-theme" id="themeToggle" aria-label="Đổi giao diện"><i class="fa-solid fa-moon"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <section class="book-hero">
+        <div class="hero-container">
+            <span class="hero-badge">Tâm Lý Học Thể Thao Đỉnh Cao • Tennis Future Lab</span>
+            <h1 class="hero-title">QUẢN LÝ ÁP LỰC TRONG TENNIS</h1>
+            <p class="hero-subtitle">Tennis Pressure Management: Key to Consistent High Performance</p>
+            <p class="hero-meta">Bản dịch tiếng Việt chuyên sâu • Cơ chế thần kinh giao cảm, thở hộp 4-4-4, tái định khung tâm trí và giáo trình 7 ngày</p>
+            <div class="hero-actions">
+                <a href="#part1" class="btn-action btn-primary"><i class="fa-solid fa-book-reader"></i> Đọc Ngay</a>
+                <a href="Tennis_Pressure_Management_Vietnamese_Final.pdf" target="_blank" class="btn-action btn-outline"><i class="fa-solid fa-file-pdf"></i> Tải Bản PDF Tiếng Việt</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="reader-layout">
+        <aside class="sidebar">
+            <div class="toc-title"><i class="fa-solid fa-list-ul"></i> Mục Lục Bản Dịch</div>
+            <ul class="toc-list">
+                <li><a href="#part1">Phần 1: Bản Chất Áp Lực &amp; Hệ Thần Kinh Tự Chủ</a></li>
+                <li><a href="#part2">Phần 2: Bốn Vũ Khí Kiểm Soát Tâm Lý Thần Tốc</a></li>
+                <li><a href="#part3">Phần 3: Quy Trình Chuẩn Bị &amp; Cơ Sinh Học Cú Đánh</a></li>
+                <li><a href="#part4">Phần 4: Bài Học Từ Nadal, Djokovic &amp; Giáo Trình 7 Ngày</a></li>
+            </ul>
+        </aside>
+
+        <main class="reader-content">
+            
+<section class="chapter-block" id="part1">
+    <div class="chapter-header">
+        <span class="chapter-badge">Phần 1 · Tâm Lý Học Thể Thao Đỉnh Cao Tennis Future Lab</span>
+        <h2 class="chapter-title">Bản Chất Của Áp Lực &amp; Cơ Chế Thần Kinh Tự Chủ Trong Tennis</h2>
+        <p class="chapter-intro">Phân tích toàn diện nguồn gốc của áp lực trong thi đấu quần vợt: áp lực trận đấu (Match Pressure), áp lực đối thủ (Opponent Pressure) và áp lực cảm xúc cá nhân (Emotional Pressure). Giải mã cơ chế sinh lý học giữa Hệ Thần Kinh Giao Cảm (Chiến hoặc Biến) và Hệ Thần Kinh Phó Giao Cảm (Thư Giãn &amp; Phục Hồi).</p>
+    </div>
+
+    <div class="content-body">
+        <h3>1. Định Nghĩa &amp; Tầm Quan Trọng Của Quản Lý Áp Lực</h3>
+        <p>Quản lý áp lực (Pressure Management) là năng lực duy trì hiệu suất vận động và độ chính xác chiến thuật ở mức tối ưu khi đối mặt với những sức ép tâm lý dữ dội từ tính chất trận đấu, đối thủ, sự kỳ vọng của khán giả hoặc nỗi sợ thất bại của chính bản thân.</p>
+        <p>Trong quần vợt hiện đại, kỹ thuật cơ sinh học của các tay vợt chuyên nghiệp chênh lệch nhau không quá 5%. Điểm phân định giữa một vận động viên thường xuyên dừng bước ở vòng bảng và một nhà vô địch Grand Slam nằm ở khả năng "chơi thứ quần vợt tốt nhất của mình tại những thời khắc tồi tệ nhất".</p>
+
+        <div class="figure-box">
+            <img src="tennis_pressure_management_assets/fig1_definition_and_importance.jpg" alt="Sơ đồ định nghĩa và tầm quan trọng của quản lý áp lực trong tennis">
+            <span class="figure-caption">Hình 1: Tầm quan trọng của Quản lý Áp lực (Pressure Management). Áp lực không thể bị xóa bỏ hoàn toàn; người chiến thắng là người học được cách làm chủ và chuyển hóa áp lực thành nguồn năng lượng tập trung sắc bén.</span>
+        </div>
+
+        <h3>2. Ba Nguồn Gốc Áp Lực Chính Trong Trận Đấu Quần Vợt</h3>
+        <p>Tay vợt trên sân liên tục chịu sự tác động đồng thời của ba tầng áp lực:</p>
+        <ol>
+            <li><strong>Áp lực trận đấu (Match Pressure):</strong> Xuất hiện tại các thời điểm điểm số nhạy cảm như Break-point, Set-point, Match-point hoặc loạt Tie-break nghẹt thở. Nỗi sợ để vuột mất chiến thắng khiến người chơi có xu hướng co cụm, giảm tốc độ vung vợt và đánh bóng thiếu quyết đoán.</li>
+            <li><strong>Áp lực đối thủ (Opponent Pressure):</strong> Cảm giác bị áp đảo khi phải đối đầu với một đối thủ có đẳng cấp vượt trội (như Djokovic, Nadal, Federer) hoặc khi đối thủ đang dẫn trước 0-5 với phong độ hủy diệt. Áp lực này khiến người chơi cảm thấy bất lực và tự hoài nghi năng lực của chính mình.</li>
+            <li><strong>Áp lực cảm xúc nội tâm (Emotional Pressure):</strong> Cảm giác tức giận sau một quyết định gây tranh cãi của trọng tài, sự thất vọng khi mắc lỗi giao bóng kép liên tiếp, hoặc gánh nặng từ sự kỳ vọng quá lớn của gia đình và huấn luyện viên.</li>
+        </ol>
+
+        <div class="figure-box">
+            <img src="tennis_pressure_management_assets/fig2_autonomic_nervous_system.jpg" alt="Sơ đồ cơ chế sinh lý học hệ thần kinh giao cảm và phó giao cảm">
+            <span class="figure-caption">Hình 2: Cơ chế sinh lý học của áp lực. Hệ Thần Kinh Giao Cảm gây co thắt mạch máu và gồng cứng cơ bắp; trong khi Hệ Thần Kinh Phó Giao Cảm tái lập nhịp tim ổn định và độ mềm mại của cánh tay.</span>
+        </div>
+
+        <h3>3. Cơ Chế Sinh Lý Học: Cuộc Chiến Giữa Hai Hệ Thần Kinh</h3>
+        <p>Khi não bộ nhận diện tình huống nguy hiểm hoặc áp lực thi đấu cực độ, trung tâm hạnh nhân (amygdala) sẽ kích hoạt <strong>Hệ Thần Kinh Giao Cảm (Sympathetic Nervous System)</strong> theo phản xạ sinh tồn "Chiến hoặc Biến" (Fight or Flight):</p>
+
+        <div class="highlight-box">
+            <h4>Bảng So Sánh Tác Động Của Hai Trạng Thái Thần Kinh</h4>
+            <table style="width:100%; border-collapse: collapse; margin-top: 10px;">
+                <thead>
+                    <tr style="background:#fed7aa; color:#7c2d12;">
+                        <th style="padding: 8px; border: 1px solid #fed7aa;">Chỉ Số Sinh Lý</th>
+                        <th style="padding: 8px; border: 1px solid #fed7aa;">Hệ Thần Kinh Giao Cảm (Stress / Căng Thẳng)</th>
+                        <th style="padding: 8px; border: 1px solid #fed7aa;">Hệ Thần Kinh Phó Giao Cảm (Bình Tĩnh / Thư Giãn)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;"><strong>Nhịp tim &amp; Huyết áp</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">Tăng vọt đột ngột, thở nông và dồn dập</td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">Chậm lại, nhịp thở sâu và đều đặn</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;"><strong>Trạng thái cơ bắp</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">Gồng cứng, khớp cổ tay bị khóa, run tay nhẹ</td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">Thả lỏng đàn hồi, khớp cổ tay dẻo dai linh hoạt</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;"><strong>Tầm nhìn quang học</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">Tầm nhìn đường hầm hẹp (tunnel vision), phán đoán chậm</td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">Bao quát toàn cảnh sân đấu (peripheral vision), đọc bóng sớm</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;"><strong>Chất lượng cú đánh</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">Đánh bóng rụt rè, bóng bay cạn, dễ tự đánh hỏng</td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">Vung vợt hết biên độ, bóng đầm sâu và uy lực</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+
+<section class="chapter-block" id="part2">
+    <div class="chapter-header">
+        <span class="chapter-badge">Phần 2 · Tâm Lý Học Thể Thao Đỉnh Cao Tennis Future Lab</span>
+        <h2 class="chapter-title">Bốn Vũ Khí Kiểm Soát Tâm Lý Thần Tốc Dưới Áp Lực</h2>
+        <p class="chapter-intro">Trang bị bốn công cụ tâm lý học can thiệp thần tốc: phương pháp thở hộp 4-4-4 kích hoạt dây thần kinh phế vị (Vagus nerve), nghệ thuật tự đối thoại với các khẩu lệnh kích hoạt (cue words), kỹ thuật tái định khung thách thức (cognitive reframing) và quy trình quán tưởng thị giác trước điểm số.</p>
+    </div>
+
+    <div class="content-body">
+        <h3>1. Vũ Khí Số 1: Kỹ Thuật Thở Kích Hoạt Hệ Phó Giao Cảm</h3>
+        <p>Hơi thở là cầu nối sinh học duy nhất mà ý thức con người có thể chủ động điều khiển để tác động trực tiếp lên hệ thần kinh tự chủ. Khi bạn thở chậm và sâu, các thụ thể áp lực tại lồng ngực sẽ gửi tín hiệu kích hoạt dây thần kinh phế vị (vagus nerve), hạ nhịp tim xuống từ 10 đến 15 nhịp/phút chỉ trong vòng 30 giây.</p>
+
+        <div class="figure-box">
+            <img src="tennis_pressure_management_assets/fig3_breathing_box_technique.jpg" alt="Sơ đồ kỹ thuật thở hộp 4-4-4 kích hoạt hệ thần kinh phó giao cảm">
+            <span class="figure-caption">Hình 3: Phương pháp thở hộp 4-4-4 (Box Breathing). Bốn pha cân bằng: Hít vào 4 giây &rarr; Giữ hơi 4 giây &rarr; Thở ra 4 giây &rarr; Ngưng thở 4 giây. Thực hiện từ 3 đến 5 chu kỳ giữa các điểm số giúp xua tan cảm giác hoảng loạn.</span>
+        </div>
+
+        <div class="highlight-box">
+            <h4>Quy Trình Thở Khẩn Cấp Trong Khoảng Nghỉ 25 Giây</h4>
+            <ol>
+                <li><strong>Bước 1:</strong> Ngay sau khi kết thúc một pha bóng căng thẳng, quay lưng lại lưới và hít sâu vào bằng mũi trong 4 giây, cảm nhận khoang bụng phình to.</li>
+                <li><strong>Bước 2:</strong> Nín giữ hơi thở trong lồng ngực trong 4 giây để ổn định áp suất máu.</li>
+                <li><strong>Bước 3:</strong> Mở hé môi và thở từ từ ra ngoài trong 4 giây với cảm giác thả lỏng toàn bộ cơ bắp vùng vai và cánh tay.</li>
+                <li><strong>Bước 4:</strong> Ngưng thở tĩnh lặng trong 4 giây trước khi bước vào vạch giao bóng hoặc vị trí nhận giao bóng.</li>
+            </ol>
+        </div>
+
+        <div class="figure-box">
+            <img src="tennis_pressure_management_assets/fig4_pre_shot_routine_visualization.jpg" alt="Sơ đồ quy trình chuẩn bị trước cú đánh và quán tưởng thị giác">
+            <span class="figure-caption">Hình 4: Quy trình chuẩn bị trước cú đánh và quán tưởng (Routine &amp; Visualization). Hình dung rõ nét đường bóng bay và điểm rơi mục tiêu trước khi thực hiện giúp giải phóng phản xạ tự động của cơ thể.</span>
+        </div>
+
+        <h3>2. Vũ Khí Số 2: Tự Đối Thoại Tích Cực (Positive Self-Talk)</h3>
+        <p>Não bộ con người luôn có một cuộc độc thoại nội tâm liên tục diễn ra. Trong các thời khắc ngặt nghèo, giọng nói nội tâm tiêu cực thường thì thầm: "Đừng đánh rúc lưới nhé!", "Nếu mất điểm này là thua trận đấy!".</p>
+        <p>Tiến sĩ tâm lý thể thao nhấn mạnh rằng não bộ không thể xử lý mệnh lệnh mang tính phủ định (nếu bạn tự bảo mình "đừng đánh rúc lưới", hình ảnh lưới sẽ là thứ duy nhất xuất hiện trong tâm trí). Hãy thay thế bằng các khẩu lệnh hành động khẳng định (cue words):</p>
+        <ul>
+            <li><strong>"Thả lỏng cổ tay và vung hết đà"</strong> (thay vì "đừng đánh hỏng").</li>
+            <li><strong>"Nhìn rõ từng đường may của quả bóng"</strong> (thay vì "tập trung vào").</li>
+            <li><strong>"Chân di chuyển linh hoạt, đạp mạnh từ mặt đất"</strong> (thay vì "sao chân mình nặng thế").</li>
+        </ul>
+
+        <h3>3. Vũ Khí Số 3: Tái Định Khung Tâm Trí (Cognitive Reframing)</h3>
+        <p>Cảm giác lo âu (anxiety) và cảm giác phấn khích hưng phấn (excitement) thực chất có cùng một phản ứng sinh lý học: tim đập nhanh, đồng tử giãn nở và cơ thể tiết ra adrenaline. Điểm khác biệt duy nhất là cách vỏ não gán nhãn cho cảm xúc đó:</p>
+        <div class="highlight-box">
+            <h4>Nghệ Thuật Chuyển Hóa Của Các Nhà Vô Địch</h4>
+            <p>Thay vì tự nhủ: <em>"Tôi đang run sợ vì đối thủ giao bóng quá mạnh và sắp thắng tôi"</em>, hãy tái định khung lại trong tâm trí: <em>"Cơ thể tôi đang tràn ngập năng lượng adrenaline để chuẩn bị cho một cuộc lội ngược dòng vĩ đại. Đây chính là thời khắc thử thách bản lĩnh mà tôi đã khổ luyện suốt nhiều năm qua."</em></p>
+        </div>
+
+        <h3>4. Vũ Khí Số 4: Quán Tưởng Thị Giác Trước Điểm Số (Visualization)</h3>
+        <p>Trong 5 giây cuối cùng trước khi tung bóng giao hoặc sẵn sàng đón bóng, hãy chiếu một đoạn phim ngắn có độ phân giải cao trong tâm trí: thấy rõ quỹ đạo quả bóng bay qua lưới với độ cao an toàn, xoáy cắm dốc xuống góc chữ T và nảy bổng ra ngoài tầm với của đối thủ. Khi não bộ đã nhìn thấy thành công trước, các thớ cơ sẽ tự động thi hành với sự tự tin tuyệt đối.</p>
+    </div>
+</section>
+
+
+<section class="chapter-block" id="part3">
+    <div class="chapter-header">
+        <span class="chapter-badge">Phần 3 · Tâm Lý Học Thể Thao Đỉnh Cao Tennis Future Lab</span>
+        <h2 class="chapter-title">Quy Trình Chuẩn Bị &amp; Tác Động Lên Cơ Sinh Học Của Cú Đánh</h2>
+        <p class="chapter-intro">Nghiên cứu mối liên kết hữu cơ giữa trạng thái căng thẳng tâm lý và sự sụp đổ của chuỗi động học: hiện tượng rò rỉ lực phản hồi mặt đất (GRF leakage), khóa cứng khớp cổ tay và bước chân bị ì trệ. Thiết lập quy trình chuẩn bị trước cú đánh (Pre-shot Routine) chuẩn mực như một cái mỏ neo vững chãi.</p>
+    </div>
+
+    <div class="content-body">
+        <h3>1. Áp Lực Tâm Lý Phá Hủy Cơ Sinh Học Cú Đánh Như Thế Nào?</h3>
+        <p>Nhiều người chơi lầm tưởng tâm lý và kỹ thuật là hai phạm trù độc lập. Trong thực tế, tâm lý chính là hệ điều hành ra lệnh cho phần cứng cơ bắp. Khi áp lực tâm lý vượt quá ngưỡng chịu đựng, chuỗi động học bị phá vỡ theo ba cơ chế nguy hiểm:</p>
+
+        <div class="figure-box">
+            <img src="tennis_pressure_management_assets/fig5_pressure_vs_mechanics.jpg" alt="Sơ đồ tương quan giữa áp lực tâm lý và sự suy giảm cơ sinh học">
+            <span class="figure-caption">Hình 5: Áp lực và Cơ sinh học cú đánh. Khi áp lực tăng cao, vận động viên có xu hướng đứng thẳng lưng, không khuỵu gối, làm giảm 40% lực phản hồi mặt đất (GRF) và ép cánh tay phải gồng cứng đánh bóng đơn độc.</span>
+        </div>
+
+        <ul>
+            <li><strong>Mất mát lực phản hồi mặt đất (GRF Leakage):</strong> Khi sợ hãi, phản xạ tự nhiên của con người là co rút và đứng thẳng người lên thay vì khuỵu gối chìm trọng tâm. Hệ quả là bàn chân không cắm chặt xuống sân, tước đoạt toàn bộ lực đẩy từ mặt đất của chuỗi động học.</li>
+            <li><strong>Khóa cứng khớp cổ tay và khớp vai (Joint Freezing):</strong> Cơ thể gồng cứng các nhóm cơ đối kháng (co-contraction) nhằm tìm kiếm cảm giác "chắc chắn". Tuy nhiên, điều này triệt tiêu hoàn toàn độ trễ đàn hồi (lag) của đầu vợt, khiến bóng bay cạn và mất hết độ xoáy topspin an toàn.</li>
+            <li><strong>Bước chân bị tê liệt (Footwork Paralysis):</strong> Thay vì thực hiện hàng loạt bước căn chỉnh nhỏ (micro-adjustment steps), vận động viên rơi vào trạng thái đứng chôn chân nhìn bóng, dẫn đến điểm chạm bóng bị muộn sau thân người.</li>
+        </ul>
+
+        <h3>2. Quy Trình Chuẩn Bị Trước Cú Đánh (Pre-Shot Routine): Cái Mỏ Neo Tâm Trí</h3>
+        <p>Tại sao mọi nhà vô địch vĩ đại đều có những thói quen lặp đi lặp lại kỳ lạ trước khi giao bóng hoặc nhận bóng (như Nadal chỉnh trang phục và nhồi bóng đúng 5 lần, hay Djokovic nhồi bóng liên tục)? Đó không phải là mê tín dị đoan; đó là một <strong>quy trình chuẩn bị khoa học (Pre-Shot Routine)</strong> đóng vai trò như một mỏ neo tâm thần kinh:</p>
+
+        <div class="highlight-box">
+            <h4>Quy Trình 4 Bước Chuẩn Mực Trước Điểm Số Của Tennis Future Lab</h4>
+            <ol>
+                <li><strong>Bước 1: Tách rời thể lý (Physical Disconnection):</strong> Sau khi kết thúc điểm trước, quay lưng về phía lưới, lấy khăn lau mặt và điều chỉnh lại dây vợt để cắt đứt dòng suy nghĩ tiêu cực về pha bóng vừa qua.</li>
+                <li><strong>Bước 2: Điều hòa nhịp thở (Breathing Reset):</strong> Thực hiện 1-2 chu kỳ thở hộp 4-4-4, thả lỏng hai vai và lắc nhẹ cánh tay cầm vợt để kiểm tra độ mềm mại của cổ tay.</li>
+                <li><strong>Bước 3: Lập trình chiến thuật (Tactical Decision):</strong> Xác định rõ ràng vị trí sẽ nhắm tới: "Giao bóng xoáy kick vào góc chữ T", không lăn tăn hay nghi ngờ quyết định vừa đưa ra.</li>
+                <li><strong>Bước 4: Kích hoạt nhịp điệu (Rhythm Trigger):</strong> Bước vào vạch sân, nhồi bóng đúng số nhịp quy định (ví dụ: 3 nhịp dứt khoát), hít sâu một hơi và tung bóng thực thi cú đánh với sự thả lỏng tuyệt đối.</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+
+<section class="chapter-block" id="part4">
+    <div class="chapter-header">
+        <span class="chapter-badge">Phần 4 · Tâm Lý Học Thể Thao Đỉnh Cao Tennis Future Lab</span>
+        <h2 class="chapter-title">Bài Học Từ Các Huyền Thoại &amp; Giáo Trình Huấn Luyện Áp Lực 7 Ngày</h2>
+        <p class="chapter-intro">Phân tích bí quyết vượt qua thời khắc sinh tử của hai tượng đài vĩ đại nhất lịch sử: Rafael Nadal và Novak Djokovic. Thiết lập phương pháp mô phỏng áp lực thi đấu trong tập luyện hàng ngày (Pressure Simulation) và bản lộ trình rèn luyện bản lĩnh thi đấu chuyên sâu trong 7 ngày.</p>
+    </div>
+
+    <div class="content-body">
+        <h3>1. Bài Học Từ Các Bậc Thầy Quản Lý Áp Lực Lịch Sử</h3>
+        <p>Quan sát hai "ông vua thần kinh thép" của làng quần vợt thế giới cung cấp những bài học vô giá về cách kiểm soát tâm lý ở đẳng cấp cao nhất:</p>
+
+        <div class="figure-box">
+            <img src="tennis_pressure_management_assets/fig6_nadal_djokovic_case_studies.jpg" alt="Sơ đồ phân tích trường hợp thực tế của Rafael Nadal và Novak Djokovic">
+            <span class="figure-caption">Hình 6: Bài học thực tế từ Nadal và Djokovic. Sự kết hợp giữa quy trình chuẩn bị tỉ mỉ (routine) và khả năng chuyển hóa áp lực đối địch thành động lực thi đấu kiên cường.</span>
+        </div>
+
+        <ul>
+            <li><strong>Rafael Nadal: Tôn thờ quá trình, buông bỏ kết quả (Process over Outcome).</strong>
+                <p>Nadal đối mặt với những trận đấu chung kết Grand Slam kéo dài gần 6 tiếng đồng hồ dưới áp lực nghẹt thở của hàng triệu người hâm mộ. Bí quyết của anh là: không bao giờ nghĩ đến điểm số của set sau hay chiếc cúp vô địch. Anh quy đổi toàn bộ sự chú ý của tâm trí vào từng chi tiết cụ thể của hiện tại: xếp chai nước ngay ngắn, chỉnh dây vợt, lau mồ hôi và chiến đấu hết mình cho đúng một quả bóng trước mắt. Khi tâm trí bận rộn với hành động thực thi, nỗi sợ hãi không còn chỗ để tồn tại.</p>
+            </li>
+            <li><strong>Novak Djokovic: Nghệ thuật hấp thụ và chuyển hóa áp lực thù địch (Embracing Hostility).</strong>
+                <p>Trong trận chung kết Wimbledon 2019 huyền thoại, khi cả sân vận động gầm vang cổ vũ cho đối thủ, Djokovic đã chia sẻ kỹ thuật tái định khung tâm lý đỉnh cao: <em>"Khi cả khán đài hô vang 'Roger! Roger!', trong đầu tôi tự biến đổi âm thanh đó thành 'Novak! Novak!'."</em> Thay vì chống lại áp lực đám đông, anh hấp thụ năng lượng thù địch đó và biến nó thành nhiên liệu đốt cháy ý chí chiến đấu sắt đá.</p>
+            </li>
+        </ul>
+
+        <h3>2. Phương Pháp Mô Phỏng Áp Lực Trong Tập Luyện (Pressure Simulation)</h3>
+        <p>Bản lĩnh thi đấu không tự nhiên sinh ra trong ngày diễn ra giải đấu; nó phải được rèn luyện trong từng buổi tập hàng ngày. Huấn luyện viên và đấu thủ cần áp dụng các bài tập có hậu quả thực tế (consequence-based drills):</p>
+        <ol>
+            <li><strong>Bài tập Giao bóng tính phạt (Penalty Serve Drill):</strong> Phải giao thành công 5 quả giao bóng hai (second serve) liên tiếp vào ô hẹp; nếu hỏng một quả, phải chống đẩy 20 lần và làm lại từ đầu.</li>
+            <li><strong>Mô phỏng điểm số bất lợi (Handicap Match Play):</strong> Bắt đầu mỗi game đấu với tỷ số 0-30 hoặc 15-40 để não bộ làm quen với cảm giác áp lực nghẹt thở thường xuyên.</li>
+        </ol>
+
+        <div class="highlight-box">
+            <h4>Giáo Trình Huấn Luyện Quản Lý Áp Lực 7 Ngày Chuyên Sâu</h4>
+            <table style="width:100%; border-collapse: collapse; margin-top: 10px;">
+                <thead>
+                    <tr style="background:#fed7aa; color:#7c2d12;">
+                        <th style="padding: 8px; border: 1px solid #fed7aa;">Ngày Tập Luyện</th>
+                        <th style="padding: 8px; border: 1px solid #fed7aa;">Chủ Đề Trọng Tâm</th>
+                        <th style="padding: 8px; border: 1px solid #fed7aa;">Nội Dung Thực Hành &amp; Bài Tập Cụ Thể</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;"><strong>Ngày 1: Nhận diện phản ứng cơ thể</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">Ghi nhật ký cảm xúc &amp; Thần kinh giao cảm</td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">Ghi lại các dấu hiệu cơ thể khi lo âu (run tay, thở nông, vội vàng); đo nhịp tim</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;"><strong>Ngày 2: Làm chủ hơi thở</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">Kỹ thuật thở hộp 4-4-4 &amp; 4-7-8</td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">Thực hiện 10 chu kỳ thở hộp sau mỗi set tập thể lực để hạ nhịp tim cấp tốc</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;"><strong>Ngày 3: Tự đối thoại &amp; Khẩu lệnh</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">Xây dựng hệ thống Cue Words khẳng định</td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">Viết ra 3 câu khẩu lệnh tích cực dán lên cổ vợt; tập hô khẩu lệnh trước mỗi cú đánh</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;"><strong>Ngày 4: Tái định khung tâm trí</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">Chuyển hóa nỗi sợ thành sự phấn khích</td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">Thực hành tái định khung các tình huống bị dẫn trước 0-5 hoặc bóng bị xử ép</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;"><strong>Ngày 5: Chuẩn hóa Pre-Shot Routine</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">Cố định quy trình 4 bước trước điểm số</td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">Thực hành quy trình chuẩn bị đúng từng giây trước 50 quả giao bóng liên tiếp</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;"><strong>Ngày 6: Mô phỏng thi đấu áp lực cao</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">Match Play có gắn hình phạt</td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">Đánh trận giao hữu với luật điểm số 15-40, áp dụng toàn bộ 4 công cụ tâm lý</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;"><strong>Ngày 7: Tổng kết &amp; Trạng thái Satori</strong></td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">Đánh giá tiến bộ &amp; Thiền quán tưởng</td>
+                        <td style="padding: 8px; border: 1px solid #fed7aa;">20 phút thiền buông thư quán tưởng trận chung kết hoàn mỹ trong tĩnh lặng</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+        </main>
+    </div>
+
+    <script>
+        const themeBtn = document.getElementById('themeToggle');
+        themeBtn.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            themeBtn.innerHTML = newTheme === 'dark' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+        });
+
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+    </script>
+</body>
+</html>
