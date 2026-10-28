@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Volley Handbook</title>
+<meta name="description" content="Borrow the force, hold the frame and finish the point at the net">
+<meta name="author" content="Pham Duc Hai">
+<style>
+.tcq-book{
+  --tcq-paper:#faf9f5; --tcq-ink:#1a1c20; --tcq-ink-soft:#4a4e54;
+  --tcq-ink-faint:#8a8d93; --tcq-indigo:#1d5c63; --tcq-indigo-soft:#2f7d84;
+  --tcq-gold:#a8863c; --tcq-rule:#e2e1da; --tcq-panel:#ffffff;
+  background:var(--tcq-paper); color:var(--tcq-ink);
+  font-family:"Palatino Linotype","Book Antiqua",Cambria,"Times New Roman","Noto Serif",serif;
+  font-size:19px;line-height:1.78;-webkit-font-smoothing:antialiased;}
+.tcq-book .wrap{max-width:760px;margin:0 auto;padding:64px 28px 120px;}
+.tcq-book header.cover{text-align:center;padding:8px 0;}
+.tcq-book .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+.tcq-book header.cover .cover-art{width:100%;max-width:430px;margin:0 auto 30px;border-radius:10px;
+  box-shadow:0 14px 40px rgba(16,40,44,.28);display:block;}
+.tcq-book header.cover .kicker{letter-spacing:.28em;font-size:12px;text-transform:uppercase;
+  color:var(--tcq-indigo);font-weight:600;}
+.tcq-book header.cover h1{font-size:38px;line-height:1.16;margin:.4em 0 .12em;font-weight:600;
+  color:var(--tcq-ink);text-align:center;letter-spacing:0;}
+.tcq-book header.cover .sub{color:var(--tcq-ink-soft);font-size:20px;font-style:italic;}
+.tcq-book header.cover .blurb{color:var(--tcq-gold);font-size:16px;margin-top:.7em;
+  letter-spacing:.04em;}
+.tcq-book header.cover .by{margin-top:1.2em;color:var(--tcq-ink-faint);font-size:14px;
+  letter-spacing:.06em;}
+.tcq-book hr.lead{border:none;border-top:1px solid var(--tcq-rule);margin:36px 0;}
+.tcq-book .part-band{margin:88px 0 8px;padding:26px 0 22px;text-align:center;
+  border-top:1px solid var(--tcq-rule);border-bottom:1px solid var(--tcq-rule);}
+.tcq-book .part-band .part-kicker{letter-spacing:.3em;font-size:12px;text-transform:uppercase;
+  color:var(--tcq-gold);font-weight:600;}
+.tcq-book .part-band .part-name{font-size:23px;color:var(--tcq-indigo);margin-top:.5em;
+  font-style:italic;}
+.tcq-book .chapter{margin-top:56px;}
+.tcq-book h2.ch-title{font-size:29px;line-height:1.25;margin:0 0 .1em;font-weight:600;
+  color:var(--tcq-ink);letter-spacing:0;font-style:normal;
+  border-bottom:2px solid var(--tcq-indigo);padding-bottom:.25em;}
+.tcq-book h3{font-size:21px;margin:40px 0 12px;font-weight:600;color:var(--tcq-indigo);
+  font-style:normal;letter-spacing:0;}
+.tcq-book h4{font-size:18px;margin:30px 0 8px;font-weight:600;color:var(--tcq-gold);
+  font-style:normal;letter-spacing:.02em;}
+.tcq-book p{margin:0 0 1.15em;text-align:justify;hyphens:auto;color:var(--tcq-ink);}
+.tcq-book p.lead-p{font-size:21px;color:var(--tcq-ink-soft);}
+.tcq-book strong{color:var(--tcq-ink);}
+.tcq-book em{color:var(--tcq-ink-soft);}
+.tcq-book .toc{margin:44px auto 0;max-width:560px;background:var(--tcq-panel);
+  border:1px solid var(--tcq-rule);border-radius:8px;padding:26px 32px;}
+.tcq-book .toc-title{font-size:15px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--tcq-indigo);margin:0 0 .9em;font-weight:600;font-style:normal;}
+.tcq-book .toc-part{font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--tcq-gold);font-weight:600;margin:1.3em 0 .4em;}
+.tcq-book .toc-part:first-of-type{margin-top:.4em;}
+.tcq-book .toc ol{margin:0;padding-left:0;list-style:none;}
+.tcq-book .toc li{margin:.42em 0;font-size:16px;}
+.tcq-book .toc a{color:var(--tcq-ink);text-decoration:none;border-bottom:1px solid transparent;}
+.tcq-book .toc a:hover{border-bottom-color:var(--tcq-indigo);}
+.tcq-book dl.glossary{margin:0 0 1.2em;padding:0;}
+.tcq-book dl.glossary dt{font-weight:600;color:var(--tcq-indigo);margin:1.15em 0 .15em;
+  font-size:18px;}
+.tcq-book dl.glossary dd{margin:0 0 .3em;padding-left:1.4em;color:var(--tcq-ink-soft);
+  font-size:18px;line-height:1.7;text-align:justify;}
+.tcq-book footer.end{margin-top:90px;border-top:1px solid var(--tcq-rule);padding-top:26px;
+  color:var(--tcq-ink-faint);font-size:14px;text-align:center;line-height:1.9;}
+.tcq-book footer.end .sig{color:var(--tcq-indigo);font-size:15px;letter-spacing:.08em;}
+body.dark-mode .tcq-book{
+  --tcq-paper:#0f1416; --tcq-ink:#e6e7e3; --tcq-ink-soft:#b0b3af;
+  --tcq-ink-faint:#878b90; --tcq-indigo:#7fbfc4; --tcq-indigo-soft:#5fa3a9;
+  --tcq-gold:#c9a961; --tcq-rule:#283135; --tcq-panel:#161d20;}
+body.dark-mode .tcq-book p,
+body.dark-mode .tcq-book li,
+body.dark-mode .tcq-book dd,
+body.dark-mode .tcq-book div{color:var(--tcq-ink);}
+body.dark-mode .tcq-book p.lead-p,
+body.dark-mode .tcq-book em,
+body.dark-mode .tcq-book dl.glossary dd{color:var(--tcq-ink-soft);}
+body.dark-mode .tcq-book header.cover .by,
+body.dark-mode .tcq-book footer.end{color:var(--tcq-ink-faint);}
+body.dark-mode .tcq-book h2.ch-title,
+body.dark-mode .tcq-book header.cover h1{color:var(--tcq-ink) !important;}
+body.dark-mode .tcq-book h3,
+body.dark-mode .tcq-book dl.glossary dt,
+body.dark-mode .tcq-book header.cover .kicker,
+body.dark-mode .tcq-book .toc-title,
+body.dark-mode .tcq-book footer.end .sig,
+body.dark-mode .tcq-book .part-band .part-name{color:var(--tcq-indigo) !important;}
+body.dark-mode .tcq-book h4,
+body.dark-mode .tcq-book header.cover .blurb,
+body.dark-mode .tcq-book .toc-part,
+body.dark-mode .tcq-book .part-band .part-kicker{color:var(--tcq-gold) !important;}
+body.dark-mode .tcq-book .toc a{color:var(--tcq-ink);}
+body.dark-mode .tcq-book strong{color:var(--tcq-ink) !important;}
+@media (max-width:760px){
+  .tcq-book .wrap{padding:40px 20px 80px;}
+  .tcq-book header.cover h1{font-size:28px;}
+  .tcq-book header.cover .cover-art{max-width:320px;}
+  .tcq-book dl.glossary dd{padding-left:.8em;}
+  .tcq-book .part-band .part-name{font-size:19px;}
+}
+@media print{
+  .tcq-book .toc{break-after:page;}
+  .tcq-book .chapter{break-before:page;}
+  .tcq-book .part-band{break-before:page;break-after:avoid;}
+  .tcq-book dl.glossary dt{break-after:avoid;}
+}
+
+/* breadcrumb — sits above .tcq-book, so it carries its own palette.
+   Colours/scale mirror the reference TFL books (#2–#8): .9rem, muted
+   #5b6572 separator, the book's own accent for the root link. */
+.tu-breadcrumb{background:#faf9f5;padding:16px 0 4px;font-size:.9rem;color:#6b6f76;
+  font-family:"Palatino Linotype","Book Antiqua",Cambria,"Times New Roman","Noto Serif",serif;}
+.tu-breadcrumb__list{list-style:none;display:flex;flex-wrap:wrap;gap:2px 8px;
+  max-width:760px;margin:0 auto;padding:0 28px;align-items:center;}
+.tu-breadcrumb__item{margin:0;}
+.tu-breadcrumb__link{color:#1d5c63;text-decoration:none;}
+.tu-breadcrumb__link:hover{text-decoration:underline;}
+.tu-breadcrumb__sep{color:#5b6572;margin:0 2px;user-select:none;}
+.tu-breadcrumb__current{color:#1a1c20;font-weight:500;}
+</style>
+</head>
+<body>
+
+
+<nav class="tu-breadcrumb" aria-label="Breadcrumb">
+  <ol class="tu-breadcrumb__list">
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/books/">Tennis Book Library</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item tu-breadcrumb__current" aria-current="page">The Volley Handbook</li>
+  </ol>
+</nav>
+<div class="tcq-book">
+<div class="wrap">
+<header class="cover">
+  <img class="cover-art" src="11_volley_tennis_en_assets/cover.png" alt="Book cover of The Volley Handbook">
+  <h1 class="sr-only">The Volley Handbook</h1>
+  <div class="kicker">Tennis Future Lab · Monograph</div>
+  <div class="sub">Borrow the force, hold the frame and finish the point at the net</div>
+  <div class="by">Pham Duc Hai · Tennis Future Lab</div>
+</header>
+<hr class="lead">
+<nav class="toc" id="toc"><h2 class="toc-title">Table of Contents</h2>
+<div class="toc-part">PART ONE — Borrowing force</div>
+<ol>
+<li><a href="#ch01">On the grid, time is running out to edit</a></li>
+<li><a href="#ch02">Four ounces of thousands of pounds</a></li>
+<li><a href="#ch03">Relax but still have a frame</a></li>
+<li><a href="#ch04">Feel the weight of the ball</a></li>
+<li><a href="#ch05">U frame and L lock </a></li>
+<li><a href="#ch06">Gravity Footsteps</a></li>
+</ol>
+<div class="toc-part">PART TWO — Volley</div>
+<ol>
+<li><a href="#ch07">How to hold the racket at the net</a></li>
+<li><a href="#ch08">Waiting position</a></li>
+<li><a href="#ch09">The moment of touching the ball</a></li>
+<li><a href="#ch10">Smash</a></li>
+<li><a href="#ch11">Volley low, volley high, volley small</a></li>
+</ol>
+<div class="toc-part">PART THREE — On the net</div>
+<ol>
+<li><a href="#ch12">Net play: when and how</a></li>
+<li><a href="#ch13">Error Diagnosis</a></li>
+<li><a href="#ch14">Head in the grid</a></li>
+</ol>
+<div class="toc-part">PART FOUR — Exercises</div>
+<ol>
+<li><a href="#ch15">Ten exercises and a four-week calendar</a></li>
+</ol>
+</nav>
+<main>
+<div class="part-band"><div class="part-kicker">PART ONE</div><div class="part-name">Borrow force</div></div>
+<section class="chapter" id="ch01">
+<h2 class="ch-title">At the grid, time is running out to fix it</h2>
+<h3 id="n1-1">1.1 Three-tenths of a second</h3>
+
+<p>Standing at the net, you have about three-tenths of a second from the moment your opponent touches the ball to the moment it reaches your racket. During that time, there is no time to bring the racket back, no time to think about turning the hips, and certainly no time to correct a wrong decision.</p>
+
+<p>That's why everything at the net must be decided in advance. Not a second before, but before the opponent even hits the ball. You choose in advance where you will stand, how much the racket face will tilt, and if the ball comes to the left, what you will do. Once the ball has left your opponent's racket, all you have to do is take action.</p>
+
+<p>Amateur players often do the opposite. They wait with their minds blank, letting their natural reactions guide them, and the natural reaction of someone unfamiliar with the net is to panic and swing. Swing late, and late the ball goes into the net or flies out.</p>
+
+<h3 id="n1-2">1.2 Why does the racket swing fail at the net?</h3>
+
+<p>Swinging the racket is not wrong. It's just wrong at this distance. At the back of the court, you have more than a second to get the racket back and forth, and the swing is the most effective way to generate racket head speed. At the net, you have three-tenths of a second, and a complete swing requires at least four-tenths.</p>
+
+<p>When you try to swing for three-tenths of a second, three things happen at once. You shorten the movement back, so there's nothing to swing. You swing with your wrist instead of your shoulder, so the racket vibrates. And you're late, so you have to reach for it, and the contact point falls out of control.</p>
+
+<p>Those three things add up to a volley that looks strong but never puts the ball where it wants it. And that is volley for the majority of players below level 4.0.</p>
+
+<h3 id="n1-3">1.3 Placing, not hitting</h3>
+
+<p>Volley is a good put. You place a flat surface in the path of the ball, and the ball bounces off at the angle of reflection. The speed of the ball after it hits the racket comes largely from the speed of the ball before it hits the racket, not from you.</p>
+
+<p>This sounds like a lessening of responsibility, but it actually entails more. When you're not generating force, you have to be precise about the angle. A strong hit can hide a wrong angle; a putt is not. If the racket surface is five degrees off, the ball will miss a meter at the other end of the court.</p>
+
+<p>So at net, the question is not how hard to hit, but how much and at what height the racket face is tilted. Those are the only two things you can really control in three-tenths of a second.</p>
+
+<h3 id="n1-4">1.4 Three things must be decided first</h3>
+
+<p>First, standing position. Where you stand before your opponent hits the ball determines whether you have to move or not. Standing in the right place, the ball will come straight to the racket; If you stand wrong, every shot is a defense.</p>
+
+<p>Second, the height of the racket face. If you know your opponent is going to hit the ball low, you keep the racket face open. If they are going to hit the ball high, you keep the racket face more closed. No one can adjust in three-tenths of a second, so it must be available.</p>
+
+<p>Third, the direction you will hit. Not the direction you want to hit, but the direction you have chosen. For new players, choose the simplest direction: cross-court, because it has the most fields for the ball to fall on.</p>
+
+<p>These three decisions don't take time, because you make them while the ball is still on the other side. They just require you to get into the habit of deciding instead of waiting.</p>
+</section>
+<section class="chapter" id="ch02">
+<h2 class="ch-title">Four ounces of thousands of pounds</h2>
+<h3 id="n2-1">2.1 The saying and what it actually says</h3>
+
+<p>“Four taels are thousands of pounds” is a sentence in tai chi, and it is often quoted as a spirit mantra. But if read carefully, it is not about ingenuity. It's about something very specific in physics: if you're not resisting a large force, you don't need to create a large force to overcome it.</p>
+
+<p>An object in motion carries momentum. If you want to change its direction, you have two ways. The first way is to push it in a new direction with your own force. The second way is to place an inclined surface so that its own momentum pushes it in a new direction. The second way is much cheaper, and that's what the above statement is all about.</p>
+
+<p>At the net, the ball arrives with great momentum. If you counter it by swinging, you are choosing the first option and you will lose, because the ball is heavier than you think at that speed. If you put the racket face at the right angle, you choose the second method.</p>
+
+<h3 id="n2-2">2.2 Momentum is not created by itself</h3>
+
+<p>A tennis ball weighs about fifty-eight grams. At one hundred and thirty kilometers per hour, it carries a momentum that your arm cannot generate in three-tenths of a second. That's not a literary comparison; That's a number you can calculate, and it explains why the best volleys look so light.</p>
+
+<p>The practical consequence is: you don't need to increase your swing speed at the net. You need to increase the accuracy of the angle. If you increase the speed of your swing, you add a small amount of momentum to the already large amount, and in return you lose complete control of direction.</p>
+
+<p>This is why the best volley tennis players in the world look like they are catching the ball rather than hitting it. They are not weak. They are using the right source of energy.</p>
+
+<h3 id="n2-3">2.3 Borrowing force is different from pushing force</h3>
+
+<p>Pushing force is when you add energy to the system. Borrowing force is when you redirect existing energy. This difference sounds small but it completely changes the way you stand and the way you breathe.</p>
+
+<p>When pushing, your body tenses up to create force. Shoulders tense, hands clenched, breath held. When borrowing force, your body holds a structure and lets the force pass through. Shoulders relaxed, arms held comfortably, breathing even.</p>
+
+<p>Amateur players often push because that's what they learned at the back of the court. But at the net, pushing is the fastest way to get the ball out, because you're adding too much momentum to the remaining short distance.</p>
+
+<h3 id="n2-4">2.4 Things to learn from those who hit harder</h3>
+
+<p>The paradox at the net is: the harder your opponent hits, the easier it is for you to finish the point. The ball coming fast means you just need to set the racket and the ball has enough speed to go across the court to the other side.</p>
+
+<p>New players are often afraid of strong shots and back away. But backing up causes you to lose the angle and have to force yourself. Taking a step forward and placing the racket early is easier, even if it looks scarier.</p>
+
+<p>Try this during a practice session: have someone hit the ball hard at you at the net, and you can only set the racket, not swing. You will see the ball go much farther than if you tried to hit it. That feeling is something you need to remember, not an explanation.</p>
+</section>
+<section class="chapter" id="ch03">
+<h2 class="ch-title">Relaxed but still has a frame</h2>
+<h3 id="n3-1">3.1 Relaxation is not limpness</h3>
+
+<p>In tai chi, the state of deep relaxation has its own name and it is the most misunderstood. When a person first hears the word "loose", they let go, and their arm becomes a rope that cannot hold anything. That is not the required state. It's just a different type of strain, and it's worse than the strain caused by straining.</p>
+
+<p>The correct state is: unnecessary muscles relax, but the skeleton retains its shape. Shoulders are down, elbows are not locked but not bent, wrists are kept at a stable angle. If someone pushes your racket, it shouldn't move more than a centimeter, but it also shouldn't be as hard as a rock.</p>
+
+<p>The distinction is simple: if you strain, you get tired after thirty seconds. If you relax properly, you can keep it up all day. If your shoulders are tired after a series of volley, you're straining.</p>
+
+<h3 id="n3-2">3.2 Hand tension</h3>
+
+<p>The hand is the easiest place to check and also the easiest place to make mistakes. On a scale of ten, the correct tightening force when hitting volley is around three to four. That is enough so that the racket does not rotate in the hand when the ball hits off-center, and no more.</p>
+
+<p>At levels eight to ten, the arm becomes a wooden stick. The incoming ball will bounce back, and you lose the ability to adjust the angle in the moment of impact. In levels one to two, the racket rotates in the hand when the ball hits off-center, and the racket face opens unintentionally.</p>
+
+<p>Levels three to four have a little-known benefit: they give the racket head a few millimeters when it hits the ball. That yield lengthens the time the ball stays on the string, and longer time means you have more directional control, not less.</p>
+
+<p>Try it in one workout: do ten reps with a torque of seven, then ten reps with a torque of three. No need for anyone to tell you which is better. The ball will answer for itself.</p>
+
+<h3 id="n3-3">3.3 Shock absorption</h3>
+
+<p>A volley at high speed creates a large impulse that travels from the racket face into the arm. If the arm is stiff, all that momentum goes into the elbow and shoulder. If the arm is elastic, some of the impulse is dissipated into the soft tissue and never reaches the joint.</p>
+
+<p>This is why people who play volley a lot and still have no elbow pain often have a very relaxed appearance. It's not that they have stronger wrists; they let the body do the absorbing work instead of letting the joints take the brunt.</p>
+
+<p>And this is also the reason why players with elbow pain during volley often cannot fix it by resting. The pain goes away after taking a break from work, but when they come back they still fight with stiff arms, and the pain returns to the same place.</p>
+
+<h3 id="n3-4">3.4 Test before starting the test</h3>
+
+<p>Before every volley workout, do three things for thirty seconds. First, drop your shoulders and let them fall freely twice. Second, open your hand completely and then close it at level three. Third, shake your wrist five times on each side.</p>
+
+<p>These three things are not muscle warm-ups. They are so you remember the right feeling before you start, because the wrong feeling will return as soon as the ball comes quickly.</p>
+
+<p>If you remember just one sentence from this chapter, remember this one: in the net, what you need is not strength but a structure strong enough to not strain.</p>
+</section>
+<section class="chapter" id="ch04">
+<h2 class="ch-title">Feel the weight of the ball</h2>
+<h3 id="n4-1">4.1 Listen by hand</h3>
+
+<p>There's an ability that good volley tennis players have and that almost no one teaches: the ability to feel the weight of the ball as soon as it hits the racket. Not feeling it after the ball has gone, but feeling it in the moment of impact, early enough to adjust if necessary.</p>
+
+<p>New players often only feel two states: the ball goes well or the ball goes bad. Good players feel more: whether the ball is heavy or light, whether the ball is spinning or flat, whether the ball hits the center or off, and with what spin the ball comes. That information comes from the hands, not from the eyes.</p>
+
+<p>This sounds abstract, but it can be practiced, and it's what separates an average volley player from a good volley player.</p>
+
+<h3 id="n4-2">4.2 Three pressure levels</h3>
+
+<p>Imagine there are three different levels of pressure in your hands as the ball arrives. Level one is when the ball comes slowly and lightly, your hands can barely feel it, and you have to add a little more to get the ball going. Level two is when the ball comes just in, the hands feel a clear push but do not have to resist. Level three is when the ball comes heavy, your hands feel like they're being pushed back and you have to hold the frame to keep from spinning.</p>
+
+<p>These three levels require three different reactions. With level one, you must proactively push gently. With level two, you just need to hold. With level three, you have to absorb and redirect.</p>
+
+<p>Amateur players often use the same reaction for all three levels, and that's why they hit well with medium balls but completely fail with heavy balls.</p>
+
+<h3 id="n4-3">4.3 Practice feeling without the ball</h3>
+
+<p>You can practice feeling the weight without going on the field. Hold the racket in a waiting position, have someone push the racket with three different forces, and you try to guess which force is stronger. Do it twenty times, each time with a random force.</p>
+
+<p>This exercise sounds incredibly simple, but it trains you on exactly what you need: the ability to read power through the racket handle. People who do this test for two weeks often report that they begin to feel the ball's weight or lightness as soon as it leaves their opponent's racket, before it even passes the net.</p>
+
+<h3 id="n4-4">4.4 Feeling determines location</h3>
+
+<p>Once you feel the weight of the ball, you begin to adjust your standing position without thinking. If the ball is heavy, you take a half step back and hold the frame more firmly. If the ball is light, you take half a step forward and actively hit.</p>
+
+<p>These adjustments are so small that no one sees them, but they are the entire difference between a consistent volley player and an erratic volley player. And they only come from feeling, not from analysis.</p>
+
+<p>That's also why people who practice martial arts have an advantage at the net. Not because they have better technique, but because they are used to reading power through contact, a skill the sport often ignores.</p>
+</section>
+<section class="chapter" id="ch05">
+<h2 class="ch-title">U-shaped frame and L-shaped lock</h2>
+<h3 id="n5-1">5.1 Why is the frame more important?</h3>
+
+<p>In net, you don't have time to use your muscles. Muscles need time to contract, and that time doesn't last three-tenths of a second. What you can use is the skeleton: the shape of the arms, shoulders and torso, held together by connective tissue rather than by active muscle contraction.</p>
+
+<p>That's why the two poses below are more important than any strength exercise. They don't make you stronger. They keep your structure from collapsing when the ball hits.</p>
+
+<h3 id="n5-2">5.2 U-frame</h3>
+
+<p>Stand in a waiting position, holding the racket in front of your body with both hands, elbows slightly bent and pointing down. If viewed from above, the two arms and the racket surface form a U-shaped curve. That is a U-shaped frame.</p>
+
+<p>Its effect is to keep the distance between the elbows. When that distance is kept, the racket face does not rotate when the ball hits off-center, and you do not have to clench your hands to resist. If the elbows stick together, the racket surface becomes unstable. If they are too far apart, you lose the ability to make quick adjustments.</p>
+
+<p>With a volley forehand, the U-frame opens slightly: the left hand leaves the racket and extends it horizontally to maintain balance, the right hand remains curved. With volley backhand, both hands hold the frame until the racket has passed the ball.</p>
+
+<h3 id="n5-3">5.3 L-lock</h3>
+
+<p>The L-lock is the angle between the forearm and the racket face. In the correct position, this angle is about ninety degrees, and it should be maintained throughout the moment of impact. If this angle changes, the racket face rotates, and the ball goes in the wrong direction.</p>
+
+<p>The difficulty is keeping that angle without locking the wrist. Wrist locks make the arms stiff and lose elasticity. If not locked, the angle changes. The solution lies in using your forearm to hold the angle instead of your wrist: the forearm is a long bone, and if you keep it in line with the racket face, the angle will stabilize itself.</p>
+
+<p>One way to test: have someone push hard on the racket face in a direction that rotates it. If the L angle stays the same and only your shoulders rotate, you're doing it right. If the racket face rotates in front of the shoulder, you are lacking lock.</p>
+
+<h3 id="n5-4">5.4 What do these two things solve?</h3>
+
+<p>They solve exactly one problem: racket face instability when the ball arrives quickly. That is the cause of most of the volleys flying out, and also the cause of the majority of volleys falling into the net.</p>
+
+<p>It is worth noting that these two positions do not require strength. A fifty-pound player can still U-frame and L-lock a ball at a speed of one hundred and fifty kilometers, as long as the structure is correct. That's why smaller players can still volley very well.</p>
+
+<h3 id="n5-5">5.5 Exercises</h3>
+
+<p>Exercise one: stand in a waiting position and hold the U-shaped frame for thirty seconds. No need for balls. You'll notice your shoulders begin to tire — that's a sign you're bracing rather than holding the frame.</p>
+
+<p>Lesson two: ask someone to push the racket face in four different directions, five times each. You must only keep the L-shaped lock, do not tighten it further. If the racket face rotates, you know you need to make an adjustment.</p>
+
+<p>Lesson three: play volley with a ball thrown intentionally off-center of the racket. This exercise is annoying, but it teaches you that it's the frame, not the hands, that stabilizes the racket.</p>
+</section>
+<section class="chapter" id="ch06">
+<h2 class="ch-title">Gravity footsteps</h2>
+<h3 id="n6-1">6.1 Where is the focus?</h3>
+
+<p>In tai chi, the focus is placed about three fingers below the navel. It is not an anatomical position, but a reference point for balance. When you put your attention there, your body naturally lowers, your knees bend, and you stand more stable.</p>
+
+<p>In the grid, this has obvious practical value. A person standing with a high center of gravity will be pushed back when a heavy ball comes. A person standing with a low center of gravity will absorb that force with their legs instead of with their arms.</p>
+
+<p>This also explains why good volley players look like they're sitting on an invisible chair. Their knees are always slightly bent, and their weight is always on the front of their feet.</p>
+
+<h3 id="n6-2">6.2 Place your feet before moving</h3>
+
+<p>There is a very common mistake at the net: players step forward and hit the ball at the same time. When stepping and hitting at the same time, the weight is still moving when the racket hits the ball, and the racket surface is unstable.</p>
+
+<p>The correct way is to plant your feet first, then shift your weight. The legs are placed down like an anchor, then the body follows. The gap between the two is very short, but it exists, and it is what creates stability.</p>
+
+<p>You can feel this when walking down stairs: you put your foot on the step and then shift your weight. If you shift your weight before placing your foot, you will fall. On the grid, the mechanism is identical, just much faster.</p>
+
+<h3 id="n6-3">6.3 Horizontal step at net</h3>
+
+<p>At the net, side stepping is the dominant step. You rarely have to run, and almost never have to cross step. The reason is that the distance between two consecutive volley is usually only about a meter, and the diagonal step in that distance causes the shoulders to rotate in the wrong direction.</p>
+
+<p>A correct side step has three characteristics: the outside foot steps first, the inside foot follows, and the body remains facing the net. If you find your shoulders rotating as you move sideways, you're stepping wrong.</p>
+
+<p>A small but important detail: when stepping sideways, don't lift your feet too high. Lifting high makes you lose time and lose balance. At the net, the feet almost slide across the court.</p>
+
+<h3 id="n6-4">6.4 Step back and step in</h3>
+
+<p>There are two situations where you must break the side step rule. The first is when the ball is hit over your head: you have to step back, and when you step back, you have to step diagonally, because the side step is not fast enough. The second is when you decide to end the point: you have to step in, and when you step in, you have to take a long step.</p>
+
+<p>The important thing is that both are decisions, not reactions. You decide to retreat or to enter before the ball arrives, based on your opponent's shot. If you let your natural reaction decide, you'll do both wrong.</p>
+
+<h3 id="n6-5">6.5 Exercises</h3>
+
+<p>Exercise one: stand in a waiting position with a low center of gravity for thirty seconds, then stand upright for thirty seconds. Compare feelings. You will find that the lower position is more tiring in the thighs but more stable in the torso.</p>
+
+<p>Lesson two: ask someone to throw the ball to the sides and you can only move sideways, not run. Count the number of balls you hit that you didn't hit.</p>
+
+<p>Lesson three: place a ball where you need to step, and must step on it before hitting. This exercise teaches you to plant your feet first and then shift your weight.</p>
+</section>
+<div class="part-band"><div class="part-kicker">PART TWO</div><div class="part-name">Volley</div></div>
+<section class="chapter" id="ch07">
+<h2 class="ch-title">How to hold the racket at the net</h2>
+<h3 id="n7-1">7.1 One grip for both sides</h3>
+
+<p>At the end of the court, you change your grip depending on which side is playing. At the net, you don't have time to change. So volley uses a single grip for both the forehand and backhand, and that grip is the neutral grip.</p>
+
+<p>The neutral grip is characterized by: when you reach forward with the racket, the racket face is almost vertical and the palm is facing the ground. It is the midpoint between a flat grip and a spin grip, so it allows you to hit both sides without having to rotate the racket.</p>
+
+<p>This is why this grip is present in every volley in the world, from beginners to champions. It's not a stylistic choice; it is a consequence of lack of time.</p>
+
+<h3 id="n7-2">7.2 Hammer grip</h3>
+
+<p>Imagine you hold a hammer and intend to drive a nail at shoulder level. That's the grip you need at net: the racket handle lies diagonally in the palm of your hand, the index finger is separated from the other three fingers, and the thumb is wrapped around the handle.</p>
+
+<p>The important point is the index finger. When the index finger separates, it acts as a fulcrum, helping you feel how much the racket face is tilted. Many players hold all four fingers together and completely lose this feeling.</p>
+
+<p>One more detail: the racket handle is not deep in the palm of the hand but at the base of the fingers. Holding deeply causes the wrist to lock; A shallow grip causes the racket to rotate when the ball hits off-center.</p>
+
+<h3 id="n7-3">7.3 Racket face and height</h3>
+
+<p>With a neutral grip, the racket face is at rest almost vertical. From that state, you only need to tilt a few degrees to completely change the direction of the ball. That's the biggest advantage of this grip: it gives you a neutral starting point.</p>
+
+<p>If the racket face is tilted up about ten degrees, the ball goes higher and shorter. If tilted down about ten degrees, the ball goes lower and longer. Twenty degrees is the practical limit; If farther away, the ball will either hit the net or fly into the sky.</p>
+
+<p>This means that at net, you control the ball with very small changes in your wrist, not with large changes in your arm. And that's why hand feel is more important than strength.</p>
+
+<h3 id="n7-4">7.4 When to change</h3>
+
+<p>There are two situations where you can change your grip at the net. The first is when you have time: the ball comes slow and high, you can swing the racket to hit a stronger shot. The second is when you are very close to the net and need a small drop shot: then you open the racket face more than usual.</p>
+
+<p>Other than those two cases, don't change. Every time you change, you run the risk of holding it wrong and losing the shot. And at the net, a lost shot is a lost point.</p>
+
+<h3 id="n7-5">7.5 Exercises</h3>
+
+<p>Lesson one: hold the racket in a waiting position and ask someone to push the racket face from four directions. If the racket rotates in your hand, your grip is too shallow or the grip is too low.</p>
+
+<p>Lesson two: play ten volley forehands and ten backhands without rotating the racket in your hand. You'll see which side is harder, and that's the side you need to practice more.</p>
+
+<p>Lesson three: place the racket on the table and place your hand on the handle in the correct grip. Look from above and check if the racket face is vertical. This is the fastest way to correct a habitual incorrect grip.</p>
+</section>
+<section class="chapter" id="ch08">
+<h2 class="ch-title">Waiting position</h2>
+<h3 id="n8-1">8.1 The waiting position is the first shot</h3>
+
+<p>Before the ball comes, you stand in one position. That position determines whether you make it or not, and it's the only thing you have complete control over. A good waiting position can compensate for a slow reflex. Nothing can compensate for a bad waiting posture.</p>
+
+<p>Three factors create the waiting position: the height of the center of gravity, the position of the racket, and the direction of the shoulders. All three have a true value, and all three are made false in the same way — the player straightens up from fatigue.</p>
+
+<h3 id="n8-2">8.2 Where is the racket?</h3>
+
+<p>The racket should be in front of the body, at chest level, with both hands holding it or the non-dominant hand supporting the handle. Don't keep the racket low to your hips, because from there you have to lift the racket before hitting, which takes about a tenth of a second.</p>
+
+<p>Also do not keep the racket as high as your head. From there you have to lower the racket with low balls, and low balls are the most common type at the net.</p>
+
+<p>The chest-level position is the point of balance: it's roughly the same distance to every height you'll encounter, so it minimizes racket movement time.</p>
+
+<h3 id="n8-3">8.3 Shoulders and eye direction</h3>
+
+<p>Shoulders should be slightly closed forward, not extended. Closed shoulders help you maintain a U-frame and keep the racket in front of your body. Widened shoulders cause the racket to drift back and you lose the ability to hit the ball at your body.</p>
+
+<p>Eyes should look at the opponent's racket, not at the ball. At this distance, you won't have time to see the balloon; you just have time to read the racket. The direction of your opponent's racket tells you where the ball will go before it leaves the strings.</p>
+
+<p>And a detail that's easy to overlook: don't look down at your feet. New players often look at their feet to check position, and in the meantime the ball has passed.</p>
+
+<h3 id="n8-4">8.4 Breathing</h3>
+
+<p>At the net, most players hold their breath. They hold back from the moment the opponent prepares until the moment the ball passes. That increases body tension right when you need to relax the most.</p>
+
+<p>The fix is ​​simple: exhale when the ball leaves your opponent's racket. That sound is also a rhythm for you to synchronize your movements. You'll find yourself starting to move sooner without even trying.</p>
+
+<h3 id="n8-5">8.5 Waiting position according to each situation</h3>
+
+<p>When the opponent is at the back of the court and you are at the net, the waiting position is the standard position: low center of gravity, racket at chest level, shoulders closed.</p>
+
+<p>Once your opponent is inside the court and you are close to the net, your waiting position lowers even more, because the ball will come fast and low. The knees are bent more, the racket is a little lower.</p>
+
+<p>When you have just hit a shot and are in the middle of the court, the waiting position should be higher and the racket in the middle of the body, because you do not yet know where your opponent will hit. This is a transition position, and it should only last for a fraction of a second.</p>
+
+<h3 id="n8-6">8.6 Exercises</h3>
+
+<p>Exercise one: stand in a waiting position for thirty seconds, then check three points — is the center of gravity low, is the racket in front of the body, are the shoulders closed. Do it five times.</p>
+
+<p>Lesson two: have someone stand at the back of the court and fake swing the racket, without hitting the ball. You have to guess the direction from the racket face. Do it twenty times. This is a practice reading your opponent's racket.</p>
+
+<p>Exercise three: hit volley while counting and exhaling out loud. If you forget to breathe, you'll forget to count, and that's where you need to fix it.</p>
+</section>
+<section class="chapter" id="ch09">
+<h2 class="ch-title">The moment of touching the ball</h2>
+<h3 id="n9-1">9.1 Where to touch</h3>
+
+<p>The best contact point at the net is in front of the body, at chest level to hip level. That point gives you the most options: you can hit diagonally, hit straight, or hit your opponent's body.</p>
+
+<p>If you hit the ball at hip level or lower, your options narrow to up and cross shots. If you hit the ball at shoulder level or higher, you can hit it harder but have less control.</p>
+
+<p>This explains why standing position is so important: it determines the point of contact. You don't adjust the touch point manually; you adjust it with your foot, before the ball arrives.</p>
+
+<h3 id="n9-2">9.2 The height of the touch determines the type of shot</h3>
+
+<p>There is a simple rule that few people teach: the height at which you hit the ball determines your shot, not your will. If the ball is high, hit it down. If the ball is horizontal, hit it straight. If the ball is low, hit it up.</p>
+
+<p>Amateur players often try to hit the ball low, and the ball ends up in the net. They also tried to hit the ball high, and as a result the ball flew out. Both are strikes against geometry.</p>
+
+<p>If you accept this rule, you will find shot selection much simpler. You don't need to decide; you just need to look at the altitude.</p>
+
+<h3 id="n9-3">9.3 Don't swing, but do push</h3>
+
+<p>Saying “don't swing” doesn't mean the arm is completely immobile. There is a small movement, about ten to fifteen centimeters long, going in the same direction as the shadow. This movement does not create speed; it just ensures the racket stays with the ball long enough for the direction to be determined.</p>
+
+<p>That's the difference between a block and a put. When blocking, the ball bounces out at a reflex angle. The putt allows you to direct the ball as you wish.</p>
+
+<p>That fifteen centimeter distance is also your entire “finishing move” at the net. No big arc, no racket going over the head. If your racket ends up behind your shoulder, you've swung too much.</p>
+
+<h3 id="n9-4">9.4 Follow the ball with your body, not your hands</h3>
+
+<p>When you want the ball to go cross-court, don't use your wrist to steer. Turn your shoulders a little in that direction. When you want the ball to go straight, keep your shoulders perpendicular to the net.</p>
+
+<p>The principle is: the direction of the ball is determined by the direction of the shoulder, not by the wrist. The wrist only adjusts for height. If you use your wrist to steer, the racket face will open or close unintentionally, and the ball will go in the wrong direction and height.</p>
+
+<p>This is why good volley players look very static in their wrists but very flexible in their shoulders.</p>
+
+<h3 id="n9-5">9.5 Exercises</h3>
+
+<p>Lesson one: have someone throw the ball at three different heights and you must hit according to the rules — high is down, horizontal is straight, low is up. Don't care where the ball goes, only care if you follow the rules.</p>
+
+<p>Lesson two: play volley with only one rule — the racket cannot go over the shoulder. If the racket passes over the shoulder, the shot does not count.</p>
+
+<p>Exercise three: play volley cross-court and straight-court alternately, only changing shoulder direction. Keep your wrist still. You will see the direction of the ball change without you having to do anything with your hands.</p>
+</section>
+<section class="chapter" id="ch10">
+<h2 class="ch-title">Smash</h2>
+<h3 id="n10-1">10.1 When is there a ball to hit?</h3>
+
+<p>Smash is the only volley where you are allowed to apply force. The conditions for it are very clear: the ball must be above shoulder height, and you must stand in the court, close to the net, with time to prepare.</p>
+
+<p>If one of those three conditions is missing, smash becomes a high-risk, low-reward bet. Amateur players often hit the ball in inappropriate situations, and that's why they lose more points than they gain from this shot.</p>
+
+<p>The third most overlooked condition: time. If you have to reach, you won't have time, and the smash will fail. It's better to hit a solid volley than smash a ball into the net.</p>
+
+<h3 id="n10-2">10.2 Differences with volley</h3>
+
+<p>Volley is to set the plane. Hitting the ball is creating movement. Because the ball is already high in the air, you have a longer period of time and a longer racket path to accelerate.</p>
+
+<p>But even when smashing, you still don't swing like you do at the back of the court. The movement is a downward chop, about forty centimeters long, with the elbow leading and the wrist following. If you swing like a forehand at the back of the court, the ball will go long.</p>
+
+<p>The impact point of the blow is in front of the body and slightly above the head. It is the highest point you can reach and still maintain balance.</p>
+
+<h3 id="n10-3">10.3 Drop point</h3>
+
+<p>The effective Smash is not the strongest smash, but the one that hits where the opponent is not standing. At the amateur level, a moderate smash into the corner wins more points than a strong smash into the middle of the court.</p>
+
+<p>The two most valuable drops are: at the opponent's feet, and at the corner opposite the direction they are moving. Both do not require great force, just require you to see your opponent before hitting.</p>
+
+<p>The worst place to fall is in the middle of the field, at the opponent's hip level. That's the height and position they like best.</p>
+
+<h3 id="n10-4">10.4 Four common mistakes</h3>
+
+<p>The first mistake is hitting the ball when the ball is at shoulder level. At that time you don't have enough height to hit down, and the ball will go long.</p>
+
+<p>The second mistake is hitting the ball while backing up. When backing up, the weight goes backwards, and the shot loses all power. If you have to back up, hit a deep volley instead of smashing.</p>
+
+<p>The third mistake is hitting too close to the net. At a distance of less than one meter, you don't have enough distance for the ball to travel into the field. Use a small shot or a corner shot.</p>
+
+<p>The fourth mistake is hitting every ball high. Not every high ball is a ball to hit. If the ball is high but spins heavily and falls deep, you should hit a deep volley, not a smash.</p>
+
+<h3 id="n10-5">10.5 Exercises</h3>
+
+<p>Lesson one: ask someone to throw the ball high at you at the net. You can only hit when the ball is higher than your shoulder, otherwise you have to hit volley normally. Count the number of times you hit the wrong condition.</p>
+
+<p>Lesson two: hit the ball at two targets, two corners of the field, regardless of speed. You will find that you win more points when you hit slowly and in the right places.</p>
+
+<p>Lesson three: smashing the ball with one rule — if you have to step back to hit, it doesn't count. This lesson teaches you to recognize inappropriate situations before playing.</p>
+</section>
+<section class="chapter" id="ch11">
+<h2 class="ch-title">Volley low, volley high, volley small</h2>
+<h3 id="n11-1">11.1 Volley low</h3>
+
+<p>This is the most common volley and also the one that causes the most errors. The ball comes in below hip level, and you must hit it over the net while keeping it in the court.</p>
+
+<p>The core technique is to lower the body, not the racket. If you just lower the racket while still standing tall, you will have to reach, and the racket face will open unintentionally. Bend your knees so that the racket surface naturally falls to the height of the ball.</p>
+
+<p>The racket face is slightly open, and the movement goes from bottom to top in a short distance. Don't try to hit hard; The goal is for the ball to cross the net high enough to land on the court, and deep enough so that the opponent cannot net play get it.</p>
+
+<p>A note about the feet: with a low ball, the front foot should be placed close to the ball and the back foot should be the pivot. If you hit the ball low with both feet moving, you will almost certainly end up in the net.</p>
+
+<h3 id="n11-2">11.2 Volley bonus</h3>
+
+<p>When the ball comes above your shoulder but you don't have enough time or position to strike, volley high is the right choice. It's not an offensive shot; it's a shot to hold.</p>
+
+<p>The technique is to bring the racket up to the level of the ball with the racket face closed more than usual, and push the ball deep. The important point is depth, not speed. A deep volley forces your opponent back, and that gives you time to regain position.</p>
+
+<p>If you hit this shot short, your opponent will have a high ball to hit you with. That's why volley suddenly had to go about a meter deeper than usual.</p>
+
+<h3 id="n11-3">11.3 Volley omit</h3>
+
+<p>This is the hardest shot and also the one that causes the most frustration. You're very close to the net, your opponent is far away, and you just let the ball land right on the other side of the net. Sounds simple, but it requires very good hand feeling.</p>
+
+<p>Technique: open the racket face wide, and instead of pushing the ball, you absorb the force. The arm moves slightly back in the same direction as the ball during the moment of contact, like catching an egg. The ball leaves the racket with very little speed.</p>
+
+<p>Conditions for use: you must be on the court, no more than two meters from the net, and your opponent must be behind baseline. If the opponent is nearby, the small drop is a gift.</p>
+
+<p>And one very important thing: don't try to quit when you're out of balance. This shot requires very stable hands, and balance is the first condition.</p>
+
+<h3 id="n11-4">11.4 Which shot to choose?</h3>
+
+<p>The height of the ball is decided in advance. Low shadow means volley is low. The horizontal ball is volley normally. If the ball is high, volley bounces or hits.</p>
+
+<p>The opponent's position is decided later. If your opponent is far away and you are close to the net, a small drop shot may be a good choice. If your opponent is close, hit deep.</p>
+
+<p>And finally, your status decides again. If you're off balance or backing up, choose the simplest shot: deep into the middle of the court. It's not the best shot, but it keeps you in score.</p>
+
+<h3 id="n11-5">11.5 Exercises</h3>
+
+<p>Lesson one: have someone alternately throw the ball at three heights. You have to choose the right shot according to the height. Count the number of correct choices out of twenty.</p>
+
+<p>Lesson two: practice volley small drops from a distance of one and a half meters to the net, with the goal of the ball falling within one meter of the net. Twenty fruits. Less than ten hits on target means you need to practice more feeling.</p>
+
+<p>Lesson three: practice volley dribbling with the goal that the ball must fall in the last quarter of the court. This lesson teaches you that depth is more important than speed.</p>
+</section>
+<div class="part-band"><div class="part-kicker">PART THREE</div><div class="part-name">On the net</div></div>
+<section class="chapter" id="ch12">
+<h2 class="ch-title">Net play: when and how</h2>
+<h3 id="n12-1">12.1 Net play is a decision, not a reflex</h3>
+
+<p>Amateur players often net play because a short ball accidentally lands in the middle of the court. They run in, hit the ball, then stand there and get over their heads. That's not net play; that is being pushed net play.</p>
+
+<p>Net play is truly a three-part decision: you choose the opening shot, you choose the advance shot, and you choose first position at the net. All three are decided before you hit your opening shot.</p>
+
+<p>If any part is missing, you will net play in a passive state, and at levels below 4.5, passive net play is the fastest way to lose points.</p>
+
+<h3 id="n12-2">12.2 Opening shot</h3>
+
+<p>The best opening shot is a deep shot into the corner, forcing the opponent to hit back from the outside or from behind baseline. The goal is not to win points right away, but to buy time for you to get to position.</p>
+
+<p>Depth is more important than speed. A deep shot at seventy percent power gives you more time than a hard shot in the middle of the court. And the deep shot is much safer.</p>
+
+<p>The worst open shot is a short shot to midcourt. Your opponent can hit the ball at your feet, and you will have to volley from below with a heavy spin ball.</p>
+
+<h3 id="n12-3">12.3 Uplink</h3>
+
+<p>The uplink is not a straight line from baseline to the grid. You walk diagonally, towards the point where you want to stand. Diagonal gives you two benefits: it's shorter, and it keeps you in sight of the ball longer.</p>
+
+<p>It is important that you get into position before your opponent hits the ball. If you are still running when the ball has left your opponent's racket, you will be volley out of balance.</p>
+
+<p>A common mistake is stopping too soon, right after hitting the opening shot. Players stop to see where the ball goes, and in the process they take two steps. Move as soon as the racket passes the ball.</p>
+
+<h3 id="n12-4">12.4 First place</h3>
+
+<p>The first position at the net is not close to the net. That's about two to three meters from the net, at the point that bisects the angle where the opponent can hit. From there you can advance if your opponent's return is weak, or retreat if it is strong.</p>
+
+<p>Standing too close to the net the first time is the most common mistake made by beginners. You don't have time to react to the ball going over your head, and you don't have enough space to absorb a strong blow.</p>
+
+<p>Rule: the first time net play stand far away, and only move forward after you have hit a good volley.</p>
+
+<h3 id="n12-5">12.5 Exercises</h3>
+
+<p>Lesson one: hit a deep shot into the corner, then go diagonally to a position two and a half meters from the net. Do not hit the ball at the net. Just practice the route and stop locations.</p>
+
+<p>Lesson two: play a point with the rules — you only get net play after a deep shot over the service line. If the shot is short, you have to stay.</p>
+
+<p>Lesson three: have someone hit the ball over your head while you are at the net, and you must retreat to the correct defensive position. This lesson teaches you that the first position must be far enough away so that there is a way back.</p>
+</section>
+<section class="chapter" id="ch13">
+<h2 class="ch-title">Error diagnosis</h2>
+<h3 id="n13-1">13.1 The ball hits the net</h3>
+
+<p>This is the most common error at the net and it has three different causes, depending on where the ball is stuck.</p>
+
+<p>If the ball is stuck right under the strings, the cause is usually that the racket face is closed too much. You hit down with an already low ball. Solution: open the racket face another ten degrees and hit the ball up more clearly.</p>
+
+<p>If the ball hits the middle string, it's usually because you touched the ball too late, when the ball was below racket level. Solution: take half a step forward and touch the ball sooner.</p>
+
+<p>If the ball flies over the net but falls into your court, it is not a technical error but an error in estimating the height. You hit too lightly with a heavy ball. Solution: hold the frame more firmly and let the ball go on its own.</p>
+
+<h3 id="n13-2">13.2 Long balloons</h3>
+
+<p>The ball flying long beyond the back of the court at the net is almost always due to one of two reasons: the racket face is too open, or you have swung.</p>
+
+<p>The first cause is easy to fix: close the racket face a few degrees. The second reason is more difficult to fix because it is a habit. The fix is ​​to practice with the rule that the racket should not pass over the shoulder, and practice slowly until a new habit is formed.</p>
+
+<p>There is a third, less common cause: you hit the ball while moving forward at high speed. Body weight adds to the ball, and the ball goes long. How to fix: stop before hitting, following the principle of placing your feet and then shifting your weight.</p>
+
+<h3 id="n13-3">13.3 The ball always goes to the middle of the field</h3>
+
+<p>If all your volleys fall in the middle of the court, the problem is not technique but that you did not decide on the direction before hitting. When undecided, the body will choose the safest direction, and the safest direction is the middle of the field.</p>
+
+<p>The fix is ​​very specific: before each volley, choose one of two directions — diagonal or straight — and say it in your head. Don't choose between. After two weeks, you will see your drop point distribution completely change.</p>
+
+<p>This is the easiest error to fix on this list, and also the error that gives the most points when fixed.</p>
+
+<h3 id="n13-4">13.4 Elbow pain and shoulder pain</h3>
+
+<p>Elbow pain after volley is often due to stiff arms. The impulse from the ball goes straight into the joint because there is no soft tissue to absorb it. Fix: reduce the tightening force to level three and let the forearm hold the frame instead of the wrist.</p>
+
+<p>Shoulder pain is often caused by hitting the ball by rotating your shoulders too much for each shot. At net, the shoulders should only rotate a few degrees. If your shoulders rotate thirty degrees for a volley, you are using baseline stroke mechanics for a net shot.</p>
+
+<p>Both types of pain have one thing in common: they appear when you use the mechanics of the back of the court at the net. That is the general diagnosis, and it is correct in most cases.</p>
+
+<h3 id="n13-5">13.5 Exercises</h3>
+
+<p>Exercise one: play twenty volley and after each shot, state the mistake you think you just made. Then watch the video again and check. You will find your self-diagnosis improves faster than your technique.</p>
+
+<p>Lesson two: play volley with the sole goal of not getting caught in the net. Don't care where the ball goes. Just over the net. This article fixes the error by removing pressure.</p>
+
+<p>Lesson three: play volley with two targets in two corners and must choose before the ball arrives. Count the number of times you choose correctly.</p>
+</section>
+<section class="chapter" id="ch14">
+<h2 class="ch-title">The head is in the net</h2>
+<h3 id="n14-1">14.1 Fear is very real</h3>
+
+<p>A lot of players avoid net play, and the reason they give is technical. But the real reason is often fear. The ball comes fast, at close range, and it's aimed at you. The fear reaction is the correct reaction of a normal body.</p>
+
+<p>The problem is that fear creates exactly what you fear. When you're scared, you back away. When backing up, you lose the angle. When you lose a corner, your opponent has more options, and you are even more afraid. It's a loop, and it can only be broken by moving forward.</p>
+
+<p>What helps is not courage, but understanding. A ball at a speed of one hundred and thirty kilometers is not heavy enough to hurt you if you hit it properly. And you can only hit it properly if you stand in the right place, with the right frame.</p>
+
+<h3 id="n14-2">14.2 Span between points</h3>
+
+<p>At the net, the time between points is even more important than at the back of the court, as each point is often short and each foul is often obvious. You don't have much time to recover, so you have to recover quickly.</p>
+
+<p>A simple rhythm consists of three steps. Step one: after the point ends, turn around and go back to the position. Step two: exhale one long breath. Step three: pre-choose the first shot of the following point — where you will hit if the ball comes to your forehand.</p>
+
+<p>These three steps take about five seconds, and they prevent you from carrying over errors from the previous point to the next point. In nets, it is the most important skill after technique.</p>
+
+<h3 id="n14-3">14.3 When over the head</h3>
+
+<p>Having the ball hit over your head is normal, even for good players. What distinguishes good players is how they react. The poor player stands and watches the ball fly by and misses the point. The good player turns and runs back, as the ball may still be within reach.</p>
+
+<p>The rule is: never assume the ball is out. Run back until you see the ball hit the field. You will save more points than you think, and you will create a psychological pressure that your opponent does not like.</p>
+
+<p>The same is true the other way around: if you hit the ball over your opponent's head and see them standing there watching, don't rush to celebrate. The ball can still go in.</p>
+
+<h3 id="n14-4">14.4 Focus on the small things</h3>
+
+<p>On the grid, attention is easily scattered because there are so many things happening so quickly. One way to keep your attention is to choose a very small thing and pay attention to it only for a series of balls. For example, just pay attention to whether the racket face is open properly. Or just pay attention to whether you exhale or not.</p>
+
+<p>Choosing one small thing won't make you play better right away. It makes you think less about the results, and if you think less about the results, your body works more naturally.</p>
+
+<h3 id="n14-5">14.5 Exercises</h3>
+
+<p>Lesson one: play ten points at the net and perform a three-step rhythm between each point. Don't care about winning or losing.</p>
+
+<p>Lesson two: have someone hit the ball over your head five times, and you have to run back each time. Count the number of times you save the ball.</p>
+
+<p>Lesson three: choose a single small task for each series of ten results, and change that task after each series. You'll find you can pay attention longer when you only have one thing to pay attention to.</p>
+</section>
+<div class="part-band"><div class="part-kicker">PART FOUR</div><div class="part-name">Exercise</div></div>
+<section class="chapter" id="ch15">
+<h2 class="ch-title">Ten exercises and a four-week schedule</h2>
+<h3 id="n15-1">15.1 Ten exercises</h3>
+
+<p>Lesson one — placing the racket: have someone throw the ball at the racket from about four meters, you only place the racket face and do not swing. Twenty balls on each side. This is the foundation for everything else in this book.</p>
+
+<p>Exercise two — U-frame: hold the waiting position with the U-frame for thirty seconds, five times. No shine. The goal is feeling, not endurance.</p>
+
+<p>Exercise three — three levels of force: have someone push on the racket with three different forces and guess which one is stronger. Twenty times. This is a sensory exercise.</p>
+
+<p>Exercise four — side step: ask someone to throw the ball to the sides, you can only move by side step. Count the number of balls hit that are not hit.</p>
+
+<p>Lesson five — not over the shoulder: play volley with the rule that the racket cannot go over the shoulder. Thirty fruits. This is an article on correcting swinging habits.</p>
+
+<p>Lesson six — two goals: hit volley alternately in two corners, choosing the direction before the ball arrives. Twenty fruits.</p>
+
+<p>Lesson seven — off-center ball: have someone intentionally throw the ball off-center of the racket. This exercise is annoying but it teaches you that the frame holds the racket face steady, not the hands.</p>
+
+<p>Lesson eight — three heights: ask someone to throw the ball at three heights, you must choose the correct shot according to the height. Twenty fruits.</p>
+
+<p>Lesson nine — small drop: from a distance of one and a half meters to the net, letting the ball fall within one meter behind the net. Twenty fruits.</p>
+
+<p>Lesson ten — net play: hit a deep shot, go diagonally two and a half meters from the net, and stop. No polishing. Ten times.</p>
+
+<h3 id="n15-2">15.2 Four-week schedule</h3>
+
+<p>Week one: only lessons one and two. The goal is to feel the frame and the release. Don't care where the ball goes.</p>
+
+<p>Week two: add lessons three and four. Start paying attention to whether you can feel the weight of the ball.</p>
+
+<p>Week three: add lessons five and six. This is the week you will hit worse, because you are breaking the habit of swinging. That's a good sign.</p>
+
+<p>Week four: add lessons eight and nine. At the end of the week, go back to lesson one and compare with the first week.</p>
+
+<h3 id="n15-3">15.3 How to measure progress</h3>
+
+<p>Don't measure it by the number of points you win in a practice session. That number depends on the opponent, the weather, and luck.</p>
+
+<p>Let's measure it in three numbers. First, the number of times you have to reach in a series of twenty. Second, the number of balls that hit the net in a series of twenty. Third, the number of balls that land in the middle of the field in a series of twenty.</p>
+
+<p>All three of these numbers decrease as you progress, and all three are independent of the opponent. That's why they are more reliable than scores.</p>
+
+<p>And one last thing: if after four weeks none of your numbers have decreased, don't do more. Let's go back to lesson one and slow down even more. Almost always, the problem is that you're working too fast to feel what you're doing.</p>
+</section>
+</main>
+<footer class="end"><div class="sig">Tennis Future Lab</div><div>Pham Duc Hai · Tennis Future Lab</div><div>Vietnam Tennis Library.</div></footer>
+</div>
+</div>
+</body>
+</html>
