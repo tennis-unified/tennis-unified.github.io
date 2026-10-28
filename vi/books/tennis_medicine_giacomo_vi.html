@@ -264,6 +264,24 @@ body.no-en #lang-toggle{display:none}
 .book-wrapper { display: block; }
 .book-content { max-width: 880px; margin: 0 auto; }
 </style>
+
+<style>
+/* Floating chapter drawer (added by add_chapter_drawer.py) */
+.chapter-fab{position:fixed;right:20px;bottom:20px;z-index:55;display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:none;border-radius:999px;background:var(--gold,#b8860b);color:#fff;font:600 .9rem/1 system-ui,sans-serif;box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer}
+.chapter-fab svg{width:16px;height:16px;fill:currentColor}
+.chapter-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:110;opacity:0;visibility:hidden;transition:opacity .2s}
+.chapter-backdrop.open{opacity:1;visibility:visible}
+.chapter-drawer{position:fixed;top:0;right:0;height:100%;width:330px;max-width:88vw;z-index:120;background:var(--bg-card,#fff);box-shadow:-8px 0 30px rgba(0,0,0,.18);transform:translateX(100%);transition:transform .25s ease;display:flex;flex-direction:column}
+.chapter-drawer.open{transform:translateX(0)}
+.cd-head{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid var(--rule,#e4ded2)}
+.cd-head h3{margin:0;font-size:1rem;font-family:var(--serif,Georgia,serif)}
+.cd-close{background:none;border:none;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--ink-muted,#555)}
+.cd-list{overflow-y:auto;padding:8px 0;flex:1}
+.cd-list a{display:block;padding:9px 18px;color:var(--ink-muted,#555);text-decoration:none;font-size:.92rem;line-height:1.4;border-left:3px solid transparent;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cd-list a:hover{background:rgba(0,0,0,.04)}
+.cd-list a.active{color:var(--ink,#111);font-weight:600;border-left-color:var(--gold,#b8860b);background:rgba(184,134,11,.08)}
+@media(max-width:560px){.chapter-drawer{width:100%;max-width:100%}}
+</style>
 </head>
 <body class="no-en">
 <nav class="tu-breadcrumb" aria-label="Breadcrumb">
@@ -458,7 +476,7 @@ trong khi những người khác để chân sau ra sau cho đến khi bắt đ�
 Kỹ thuật đầu tiên được gọi là kỹ thuật “chân lên”, trong khi kỹ thuật thứ hai được gọi là kỹ thuật “chân sau”.
 Trong giải Pháp mở rộng 2007, sự phân bố của hai kỹ thuật lập trường đã được phân tích.
 Kết quả cho thấy 72,4% tay vợt sử dụng kỹ thuật giơ chân lên.
-Tuy nhiên, khi xem xét lựa chọn kỹ thuật theo phong cách trò chơi, chúng tôi nhận thấy tỷ lệ này thay đổi đáng kể (Bảng 1.4). Gần 50% tay vợt giao bóng và chuyền bóng thường xuyên hoặc thỉnh thoảng (đánh đôi hoặc tay vợt tấn công) sử dụng thế đứng bằng chân lùi khi giao bóng, so với chỉ một trong sáu tay vợt trong số những người không bao giờ di chuyển vào lưới sau khi giao bóng (Bảng 1.4).
+Tuy nhiên, khi xem xét lựa chọn kỹ thuật theo phong cách trò chơi, chúng tôi nhận thấy tỷ lệ này thay đổi đáng kể (Bảng 1.4). Gần 50% tay vợt giao bóng và đánh vô-lê thường xuyên hoặc thỉnh thoảng (đánh đôi hoặc tay vợt tấn công) sử dụng thế đứng bằng chân lùi khi giao bóng, so với chỉ một trong sáu tay vợt trong số những người không bao giờ di chuyển vào lưới sau khi giao bóng (Bảng 1.4).
 Ưu điểm và nhược điểm của từng kỹ thuật lập trường là gì?</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Một nghiên cứu gần đây đã chỉ ra rằng khi các tay vợt chuyên nghiệp sử dụng kỹ thuật đá chân lên, họ tạo ra vận tốc bóng trung bình cao hơn (173,2 km/h so với 166,3 km/h với kỹ thuật đá chân sau).
 Điều này thể hiện sự khác biệt trung bình là 7 km/h đối với kỹ thuật gác chân.
@@ -466,7 +484,7 @@ Chúng ta có thể giải thích kết quả này như thế nào?
 Được biết, cơ sở hỗ trợ càng lớn thì tay vợt càng cân bằng.
 Đó là điều xảy ra với kỹ thuật đá chân lùi, giúp tay vợt có sự ổn định tốt.
 Ngược lại, với kỹ thuật nhấc chân lên, khi cả hai chân tiến lại gần nhau cho đến khi chạm vào nhau và người giao bóng di chuyển về phía trước và đẩy khỏi mặt đất để đánh bóng, phần đế đỡ bị thu hẹp, nghĩa là tay vợt trở nên kém thăng bằng hơn.
-Phần thân của máy chủ bắt đầu quay về phía trước.
+Phần thân của người giao bóng bắt đầu quay về phía trước.
 Do sự cản trở chuyển động của một bộ phận cơ thể (trong trường hợp này là bàn chân), một lượng chuyển động xoay của cơ thể được tạo ra (cũng như trường hợp trong một chuyến đi hoặc nhào lộn). Mức độ xoay cơ thể về phía trước (được gọi là “động lượng góc” trong cơ sinh học) khi sử dụng kỹ thuật nhấc chân lên sẽ lớn hơn so với kỹ thuật đưa chân ra sau.
 Và chúng ta biết rằng tốc độ quay của cơ thể về phía trước càng lớn thì vận tốc bóng càng cao.
 Đó là lý do tại sao tư thế giơ chân lên cho phép tay vợt giao bóng mạnh hơn một chút.</p></div>
@@ -477,9 +495,9 @@ Như chúng ta đã biết, tác động của bóng càng cao thì độ hở c
 Người ta đã chứng minh rằng việc tăng độ cao tiếp xúc của bóng từ 2,60 lên 2,70 m cho phép tay vợt tiếp cận các vùng ngắn hơn 25–30 cm trong ô phát bóng.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">1.5.3 Ảnh hưởng của kỹ thuật thế đứng đến thời gian chạy lên lưới trong khi giao bóng và vô lê Một nghiên cứu khoa học đã tập trung vào ảnh hưởng của kỹ thuật thế đứng đối với thời gian chạy lên lưới của các tay vợt chuyên nghiệp (nam và nữ) trong khi giao bóng và vô lê.
 Kết quả cho thấy các tay vợt sử dụng kỹ thuật đá chân sau có thể tiếp cận đường giao bóng nhanh hơn so với những tay vợt sử dụng kỹ thuật đá chân lên (tương ứng là 1,49 giây so với 1,56 giây).
-Mặc dù sự khác biệt 70 ms giữa hai kỹ thuật thoạt nhìn có vẻ không đáng kể, nhưng trên thực tế, nó tạo ra sự khác biệt khá lớn so với một trong những thách thức lớn nhất của trò chơi giao bóng và chuyền bóng.
-Thật vậy, những tay vợt giao bóng và chuyền bóng tìm cách chạy càng nhanh càng tốt để thực hiện cú vô lê trong điều kiện tốt;
-điều này có thể đạt được bằng cách đến gần lưới nhất có thể. Ví dụ: trong trường hợp quả giao bóng trả lại ở tốc độ 140 km/h, chênh lệch thời gian 70 ms có nghĩa là người giao bóng và người chuyền bóng có thể tiến gần lưới hơn khoảng 2,4 m, do đó nâng cao đáng kể khả năng thực hiện cú vô lê đầu tiên thành công.
+Mặc dù sự khác biệt 70 ms giữa hai kỹ thuật thoạt nhìn có vẻ không đáng kể, nhưng trên thực tế, nó tạo ra sự khác biệt khá lớn so với một trong những thách thức lớn nhất của trò chơi giao bóng và đánh vô-lê.
+Thật vậy, những tay vợt giao bóng và đánh vô-lê tìm cách chạy càng nhanh càng tốt để thực hiện cú vô lê trong điều kiện tốt;
+điều này có thể đạt được bằng cách đến gần lưới nhất có thể. Ví dụ: trong trường hợp quả giao bóng trả lại ở tốc độ 140 km/h, chênh lệch thời gian 70 ms có nghĩa là người giao bóng và người đánh vô-lê có thể tiến gần lưới hơn khoảng 2,4 m, do đó nâng cao đáng kể khả năng thực hiện cú vô lê đầu tiên thành công.
 Làm thế nào có thể giải thích sự khác biệt như vậy giữa hai kỹ thuật lập trường?
 Theo kết quả nghiên cứu này, việc mất thời gian được ghi nhận với kỹ thuật nhấc chân xảy ra chủ yếu trong giai đoạn tiếp đất.
 Thời gian tiếp xúc với sàn bằng chân đầu tiên sau khi giao bóng được kéo dài trung bình thêm 20 ms với kỹ thuật nhấc chân lên.</p></div>
@@ -553,7 +571,7 @@ Kết quả là, hai nghiên cứu đã phân tích tác động cấp tính c�
 Trong nghiên cứu của Martin et al.
 , ROM xoay bên trong và bên ngoài thụ động của vai được đo trên 8 tay vợt nam trình độ cao trước đó, cứ sau 30 phút trong và ngay sau một trận đấu quần vợt kéo dài 3 giờ, trong đó tay vợt thực hiện khoảng 250 cú giao bóng và 547 cú đánh trên mặt đất.
 Trong nghiên cứu của Moore-Reed et al.
-, ROM xoay bên trong và bên ngoài thụ động của vai được đánh giá ở 79 tay vợt nữ chuyên nghiệp tại ba thời điểm khác nhau (TP): đường cơ sở trước khi thi đấu (TP1), ngay sau khi thi đấu (TP2) và 24 giờ sau đường cơ sở (TP3).
+, ROM xoay bên trong và bên ngoài thụ động của vai được đánh giá ở 79 tay vợt nữ chuyên nghiệp tại ba thời điểm khác nhau (TP): vạch cuối sân trước khi thi đấu (TP1), ngay sau khi thi đấu (TP2) và 24 giờ sau vạch cuối sân (TP3).
 Cả hai nghiên cứu đều chứng minh sự giảm đáng kể về khả năng xoay trong của vai và tổng ROM từ đầu đến cuối trận đấu (Hình 1.3 và 1.4). Hơn nữa, ROM bên trong vai tiếp tục giảm 24 giờ sau khi tiếp xúc với trận đấu cấp tính.
 Không có sự khác biệt có ý nghĩa thống kê được quan sát thấy đối với việc xoay vai ra ngoài sau trận đấu.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Theo Manske và cộng sự.
@@ -583,24 +601,24 @@ Do đó, người ta có thể lập luận rằng những thay đổi về ROM 
         <div id="sec-3" class="section-item">
           <h2 id="ch03">Cơ Sinh Học Cú Đánh Cuối Sân & Cú Bắt Lưới Biomechanics of Groundstrokes and Volleys (Genevieve K. R. Dumas & Bruce Elliott)</h2>
           <div class="section-body">
-            <div class="bilingual-block stanza"><p class="lang-vi">Các cú chạm đất phổ biến như thế nào trong trận đấu và tầm quan trọng của chúng đối với sự thành công của môn quần vợt?
+            <div class="bilingual-block stanza"><p class="lang-vi">Các cú đánh nền phổ biến như thế nào trong trận đấu và tầm quan trọng của chúng đối với sự thành công của môn quần vợt?
 Hawk-Eye, một sự phát triển kỹ thuật được giới thiệu để hỗ trợ điều hành trò chơi, đã mang đến cơ hội duy nhất để đánh giá đầy đủ cấu trúc của trò chơi chuyên nghiệp.
 Dữ liệu từ nguồn này sẽ mang lại lợi ích cho việc huấn luyện và giúp cải thiện hiệu suất cũng như giảm nguy cơ chấn thương.
 Hình 2.1 cung cấp dữ liệu Hawk-Eye được thu thập tại các giải Úc mở rộng 2012–2015.
 Rõ ràng là các cú đánh trên mặt đất cung cấp nền tảng cho quần vợt Grand Slam với số cú đánh được thực hiện ở bên thuận tay nhiều hơn một chút (≈38%) so với cú đánh trái tay (≈35%).
-Nói một cách tuyệt đối, phụ nữ đánh nhiều hơn 1–3 cú chạm đất mỗi trận so với nam giới, cho thấy rằng họ cần được tạo điều kiện để có số lần đánh cao hơn.
+Nói một cách tuyệt đối, phụ nữ đánh nhiều hơn 1–3 cú đánh nền mỗi trận so với nam giới, cho thấy rằng họ cần được tạo điều kiện để có số lần đánh cao hơn.
 Tuy nhiên, xét về mặt tích lũy, trong tuần đầu tiên của B. Elliott (*) Đại học Tây Úc, Perth, WA, Australia e-mail: Bruce.Elliott@uwa.edu.au M. Reid Tennis Australia và Liên đoàn quần vợt quốc tế, London, Vương quốc Anh e-mail: mreid@tennis.com.au D. Whiteside New York Yankees, New York, NY, USA e-mail: dwhiteside@yankees.comtennis.com.au Giải Úc mở rộng, một người đàn ông trung bình đánh nhiều hơn gần 800 cú đánh trong suốt cuộc thi so với đối thủ nữ.
 Về vấn đề này, có thể lập luận rằng nam giới dễ bị chấn thương do chạm đất liên quan đến cơ học hơn phụ nữ, đơn giản là do khối lượng bóng họ đánh vào trong khi thi đấu rất lớn (Bảng 2.1).</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Do đó, trong khi cú giao bóng được coi là cú đánh quan trọng nhất trong quần vợt và khi xem xét lực và khoảnh khắc khớp, cùng với sự kích hoạt của cơ, sẽ tạo tải trọng cho cơ thể nhiều hơn bất kỳ cú đánh nào khác, thì những cú đánh chạm đất thường xuyên hơn được cho là chìa khóa thành công của quần vợt.
-Phân tích ký hiệu của các giải Grand Slam đã chỉ ra rằng những cú đánh chạm đất phổ biến hơn 1,75 lần so với những cú giao bóng.
-Ngoài ra, trong khi tốc độ giao bóng trung bình của các vận động viên chuyên nghiệp thường lần lượt là 185 km/h và 155 km/h đối với tay vợt nam và nữ (chênh lệch 15–20% dường như đúng ở tất cả các cấp độ hiệu suất), vận tốc điển hình của các cú chạm đất nữ (~105 km/h), trong khi thấp hơn so với tốc độ được ghi nhận đối với các đối thủ nam (~110 km/h) từ góc độ thực tế, là sự khác biệt về vận tốc gần hơn (~5%) so với quan sát đối với cú giao bóng. Mặc dù cú thuận tay có liên quan đến số điểm giành được nhiều hơn và thường được đánh với vận tốc bóng cao hơn so với cú đánh trái tay, nhưng sự phát triển của cú đánh trái tay từ việc sử dụng một (1H) sang hai tay (2H) đại diện cho một trong những thay đổi cơ học lớn nhất trong trò chơi trong thời gian gần đây.
+            <div class="bilingual-block stanza"><p class="lang-vi">Do đó, trong khi cú giao bóng được coi là cú đánh quan trọng nhất trong quần vợt và khi xem xét lực và khoảnh khắc khớp, cùng với sự kích hoạt của cơ, sẽ tạo tải trọng cho cơ thể nhiều hơn bất kỳ cú đánh nào khác, thì những cú đánh nền thường xuyên hơn được cho là chìa khóa thành công của quần vợt.
+Phân tích ký hiệu của các giải Grand Slam đã chỉ ra rằng những cú đánh nền phổ biến hơn 1,75 lần so với những cú giao bóng.
+Ngoài ra, trong khi tốc độ giao bóng trung bình của các vận động viên chuyên nghiệp thường lần lượt là 185 km/h và 155 km/h đối với tay vợt nam và nữ (chênh lệch 15–20% dường như đúng ở tất cả các cấp độ hiệu suất), vận tốc điển hình của các cú đánh nền nữ (~105 km/h), trong khi thấp hơn so với tốc độ được ghi nhận đối với các đối thủ nam (~110 km/h) từ góc độ thực tế, là sự khác biệt về vận tốc gần hơn (~5%) so với quan sát đối với cú giao bóng. Mặc dù cú thuận tay có liên quan đến số điểm giành được nhiều hơn và thường được đánh với vận tốc bóng cao hơn so với cú đánh trái tay, nhưng sự phát triển của cú đánh trái tay từ việc sử dụng một (1H) sang hai tay (2H) đại diện cho một trong những thay đổi cơ học lớn nhất trong trò chơi trong thời gian gần đây.
 Phải nói rằng, nghiên cứu đã đưa ra kết luận không thuyết phục về Nam: trung bình (SD) Giao bóng lần đầu 278 (48) 433 (78) Giao bóng thứ hai 99 (19) 154 (34) Trả bóng thuận tay 145 (27) 203 (44) Trả bóng trái tay 164 (38) 271 (28) Cú chạm đất thuận tay Cú vô lê thuận tay 16 (5) 30 (10)
 Cú vô lê trái tay 14 (7) 28 (11) Đập 9 (5) 16 (6) Cú đánh 1496 (205) 2282 (507) là kết quả khi so sánh hai cách tiếp cận trái tay này về vận tốc vợt, vận tốc bóng và độ chính xác.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Ưu thế của các cú chạm đất trong trận đấu nhấn mạnh sự cần thiết phải học kỹ thuật chính xác ngay từ khi còn nhỏ, vì một nửa số chấn thương ở trẻ em chơi quần vợt đã được báo cáo là nằm ở chi trên.
+            <div class="bilingual-block stanza"><p class="lang-vi">Ưu thế của các cú đánh nền trong trận đấu nhấn mạnh sự cần thiết phải học kỹ thuật chính xác ngay từ khi còn nhỏ, vì một nửa số chấn thương ở trẻ em chơi quần vợt đã được báo cáo là nằm ở chi trên.
 Do đó, cơ sở cơ sinh học của những cú đánh này đều quan trọng như nhau, bất kể giới tính, nếu tay vợt muốn đạt được hiệu suất tối ưu và không bị chấn thương.
 Từ góc độ cơ sinh học, trong khi độ chính xác được quyết định bởi hướng vợt và quỹ đạo khi tiếp xúc, vận tốc bóng chủ yếu bị chi phối bởi hai yếu tố chính: • Vận tốc của quả bóng tới • Vận tốc vợt (hãy nhớ, vận tốc chỉ là tốc độ theo hướng, hoặc cách khác nếu bạn nói về tốc độ vợt hoặc vận tốc tổng hợp, bạn đang đề cập đến sự kết hợp của vận tốc ngang, vận tốc ngang và vận tốc dọc của vợt) Khoảng 25% vận tốc đánh được quyết định bởi vận tốc ngang của quả bóng tới. Vận tốc này, mặc dù một phần nằm ngoài tầm kiểm soát của bạn, nhưng lại bị ảnh hưởng bởi mặt sân (hãy xem xét vận tốc của bóng trên sân cỏ ở Wimbledon so với vận tốc của quả bóng trên sân đất nện ở Roland Garros).
 Tuy nhiên, 75% tốc độ cú đánh tiếp đất của bạn được xác định bởi tốc độ vợt của bạn khi chạm bóng.
-Mặc dù tầm quan trọng của vận tốc vợt là rõ ràng, nhưng người ta cũng có thể hỏi tầm quan trọng của thiết kế vợt và thành phần dây đối với thành công của cú chạm đất.
+Mặc dù tầm quan trọng của vận tốc vợt là rõ ràng, nhưng người ta cũng có thể hỏi tầm quan trọng của thiết kế vợt và thành phần dây đối với thành công của cú đánh nền.
 Điểm ngọt lớn hơn (khu vực đánh lớn hơn, nơi ghi lại tốc độ bật lại tối ưu và lực tác động ít hơn so với các tác động được ghi ở gần ngoại vi của dây) và thiết kế dây cải tiến của vợt hiện đại đã cho phép tay vợt vung mạnh hơn và đánh bóng ổn định với nhiều lực hơn. Cross, khi mô hình hóa sự đóng góp của các yếu tố cơ học khác nhau vào vận tốc đánh, đã nhấn mạnh tầm quan trọng của chuyển động của vợt bằng cách chỉ ra rằng tốc độ vợt tăng 20% sẽ dẫn đến tốc độ của quả bóng tăng khoảng 20%, tuy nhiên sự cải thiện tỷ lệ phần trăm tương tự trong thiết kế vợt và dây chỉ mang lại mức tăng 6%.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Do đó, cơ chế tiếp đất có mối liên hệ chặt chẽ với sự phát triển của vận tốc vợt, quỹ đạo và định hướng va chạm trong nhiều tình huống chiến thuật khác nhau.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Chương sau nên được đọc cùng với các ấn phẩm của ITF Cơ chế sinh học của phát triển kỹ thuật và quần vợt nâng cao trong sản xuất cú đánh quần vợt, cùng với Khoa học quần vợt: Tối ưu hóa hiệu suất trên sân, để hiểu đầy đủ về các khái niệm được trình bày.</p></div>
@@ -642,7 +660,7 @@ Tuy nhiên, thông thường hơn, khi quả bóng di chuyển nhanh, cần ph�
 Tay vợt/người trung bình có thể ‘saccade’ ba lần mỗi giây, trong khoảng từ 60 đến 100 mili giây, điều này hạn chế mức độ có thể xử lý thông tin có ý thức.
 Về bản chất, điều này có nghĩa là khi theo dõi quỹ đạo của quả bóng sắp tới, tay vợt sử dụng các cú giật để dự đoán hoặc đi trước đường bay của quả bóng để có thể tái thực hiện việc theo dõi việc theo đuổi (có thể phát hiện một cách có ý thức những thay đổi trong đường bay của quả bóng).</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Động tác bằng chân mà tay vợt sử dụng để thực hiện và sau đó phục hồi sau mỗi cú đánh có thể tạo thành cơ sở cho chương sách của chính nó, nếu không muốn nói là sách!
-Vì vậy, thay vì cố gắng bao hàm tất cả các sắc thái chuyển động ở đây và làm như vậy làm giảm tầm quan trọng của một phần không thể thiếu của trò chơi, chúng tôi sẽ nêu bật các khía cạnh chính của việc di chuyển đến và đi từ các cú chạm đất.
+Vì vậy, thay vì cố gắng bao hàm tất cả các sắc thái chuyển động ở đây và làm như vậy làm giảm tầm quan trọng của một phần không thể thiếu của trò chơi, chúng tôi sẽ nêu bật các khía cạnh chính của việc di chuyển đến và đi từ các cú đánh nền.
 Vì chúng ta đang thảo luận về cách mà bàn chân tương tác với mặt sân để tạo ra lực, nên việc giới thiệu vai trò của thế đứng trong việc tạo ra cú đánh là một điều trực quan.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Không có gì lạ khi nghe các chuyên gia cho rằng một tay vợt có khả năng giữ thăng bằng tốt và một tay vợt khác là người có khả năng giữ thăng bằng kém.
 Khi bị ép phải mở rộng, khả năng ổn định, giữ vững vị trí, giữ vững đôi chân hoặc giữ vị trí của tay vợt thường được đưa vào cuộc trò chuyện.
@@ -658,9 +676,9 @@ Bước tách bóng là một phản ứng kết hợp mang tính dự đoán-ch
 Người ta đã quan sát thấy sự khác biệt dựa trên kiến thức chuyên môn về đặc điểm thời gian của bước tách đôi, trong khi từ quan điểm cơ học, nó giãn lệch tâm và dự trữ năng lượng đàn hồi ở các nhóm cơ tứ đầu và cơ bụng chân để hỗ trợ bước đi đầu tiên của tay vợt.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">2.1.3.1 Đến và áp dụng thế đứng phù hợp Khi tay vợt tiếp cận bóng và/hoặc bóng đến gần tay vợt, nhiều quyết định khác nhau sẽ được cân nhắc—chơi cú đánh nào, đánh vào đâu, v.v.
 Là một phần của quá trình đó, tay vợt quyết định thế đứng phù hợp nhất với tình huống.
-Khi làm như vậy, họ xem xét áp lực thời gian mà họ đang phải chịu, cũng như mục đích chiến lược của mình—cả hai đều tác động đến cơ chế đột quỵ.</p></div>
+Khi làm như vậy, họ xem xét áp lực thời gian mà họ đang phải chịu, cũng như mục đích chiến lược của mình—cả hai đều tác động đến cơ chế cú đánh.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Mặc dù đúng là tay vợt có thể định hướng bàn chân của mình ở bất kỳ đâu trong không gian 360 độ bao quanh họ, nhưng việc chân của tay vợt bị dịch chuyển ở đâu đó trong vòng cung 135 độ sang phải hoặc sang trái là điều phổ biến hơn (Hình 2.2).
-Bốn điểm chung đặc trưng trong các cung này, cụ thể là: bàn chân dịch chuyển 30–45° về phía trước (b) –– Thế đứng vuông góc, trong đó bàn chân phía trong hoặc phía trước dịch chuyển vuông góc với đường cơ sở hoặc xoay 90° về phía trước (c) –– Thế đứng khép kín, trong đó bàn chân phía trong hoặc phía trước Trong khi tác động của thế đứng lên vận tốc cú đánh đã cho thấy những kết quả khác nhau trong tài liệu, các nhà nghiên cứu đã tiết lộ một số mối liên hệ nhất định với tải trọng khớp (xem Góc của bác sĩ lâm sàng).
+Bốn điểm chung đặc trưng trong các cung này, cụ thể là: bàn chân dịch chuyển 30–45° về phía trước (b) –– Thế đứng vuông góc, trong đó bàn chân phía trong hoặc phía trước dịch chuyển vuông góc với vạch cuối sân hoặc xoay 90° về phía trước (c) –– Thế đứng khép kín, trong đó bàn chân phía trong hoặc phía trước Trong khi tác động của thế đứng lên vận tốc cú đánh đã cho thấy những kết quả khác nhau trong tài liệu, các nhà nghiên cứu đã tiết lộ một số mối liên hệ nhất định với tải trọng khớp (xem Góc của bác sĩ lâm sàng).
 Khi khái quát hóa trong thực hành, người ta có thể coi thế đứng mở và thế đứng vuông góc tồn tại ở hai đầu đối lập của một phạm vi áp lực thời gian/không gian (cao, rộng mở; thấp, vuông vắn) và thế đứng bán mở tồn tại ở đâu đó ở giữa (Hình 2.3). Thế đứng khép kín là một trường hợp đặc biệt, thường được áp dụng trong những trường hợp cực đoan (tức là hồi phục ở cự ly cuối hoặc bóng nảy rất thấp).
 ipation chỉ thông báo phản ứng của tay vợt trong 6,1–13,4% các tình huống quần vợt, có xu hướng xảy ra với những tình huống khi đối thủ đang có lợi thế chiến thuật đáng chú ý.
 Điều này nhấn mạnh tầm quan trọng của bối cảnh chiến thuật trong việc phát triển các loại kỹ năng này, đặc biệt là ở những tay vợt trình độ cao.
@@ -700,24 +718,24 @@ Kết quả cho thấy sự kích hoạt nổi bật của các cơ duỗi cổ 
 Tuy nhiên, việc tạo ra cú đánh hiệu quả thường được đặc trưng bởi một cú đánh lùi có kiểm soát và kéo dài.
 Wu và cộng sự.
 đã chứng minh tầm quan trọng của cú backswing đủ dài ở chỗ điều này làm giảm tải trọng ở chi trên ít nhất là đối với cú đánh 1HB.
-Trong các cú chạm đất, điều này được đặc trưng bởi sự xoay của vai (sự thẳng hàng giữa hai khớp vai) nhiều hơn hông (đường nối hai khớp hông) tạo ra cái được gọi là góc tách biệt (Hình 2.4).
+Trong các cú đánh nền, điều này được đặc trưng bởi sự xoay của vai (sự thẳng hàng giữa hai khớp vai) nhiều hơn hông (đường nối hai khớp hông) tạo ra cái được gọi là góc tách biệt (Hình 2.4).
 Việc tạo ra góc này liên quan mật thiết đến giai đoạn kéo dãn của chu kỳ giãn-rút ngắn, nơi năng lượng đàn hồi được lưu trữ khi các cơ liên quan co lại một cách lệch lạc.
-Một phần năng lượng dự trữ này sau đó được sử dụng để hỗ trợ xây dựng vận tốc quay khi va chạm. aSự thẳng hàng với vai hoặc hông song song với đường cơ sở tương đương với 0 độ bVợt hướng một góc 90° so với đường cơ sở về phía đối thủ của bạn tương đương với 0° Các vị trí tuyệt đối khi hoàn thành các cú đánh thuận tay và trái tay được ghi lại trong Bảng 2.2 .</p></div>
+Một phần năng lượng dự trữ này sau đó được sử dụng để hỗ trợ xây dựng vận tốc quay khi va chạm. aSự thẳng hàng với vai hoặc hông song song với vạch cuối sân tương đương với 0 độ bVợt hướng một góc 90° so với vạch cuối sân về phía đối thủ của bạn tương đương với 0° Các vị trí tuyệt đối khi hoàn thành các cú đánh thuận tay và trái tay được ghi lại trong Bảng 2.2 .</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Mức độ xoay thân cây là tương tự đối với các cú đánh thuận tay và 1HB;
 tuy nhiên, chúng bị giảm đi trong 2HB, khi cả hai tay đều ở trên vợt.
 Những lần xoay này bị ảnh hưởng bởi tình huống chiến thuật, đặc biệt nếu bóng được hướng qua sân so với đường biên dọc.
 Elliott và Christmass còn báo cáo thêm rằng khả năng xoay vai của vai tăng lên so với các tác động ở độ cao ngang hông trong cú đánh trái tay 1H, cho thấy việc lựa chọn cú đánh và chiến thuật có liên quan chặt chẽ với nhau.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Độ xoắn thân cây 20–30° (góc tách— xem Hình 2.5a–c) là tương tự đối với tất cả các cú chạm đất.
+            <div class="bilingual-block stanza"><p class="lang-vi">Độ xoắn thân cây 20–30° (góc tách— xem Hình 2.5a–c) là tương tự đối với tất cả các cú đánh nền.
 Tuy nhiên, nữ giới có xu hướng có khoảng cách xa hơn ≈10% so với nam giới, điều này có thể liên quan đến cường độ quay thân cây ít hơn ≈20% được ghi nhận ở nữ giới ở phía trái tay.
 Để các cơ chế này hoạt động hiệu quả, điều quan trọng là phải giải quyết được khả năng di chuyển của cột sống, vì vùng thắt lưng dưới gần đạt đến phạm vi chuyển động cuối trong cả hai lần chạm đất.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Xoay thân cây cũng đóng một vai trò trong việc dịch chuyển vợt, cao nhất ở 1HB và tương tự ở các cú chạm đất khác.
+            <div class="bilingual-block stanza"><p class="lang-vi">Xoay thân cây cũng đóng một vai trò trong việc dịch chuyển vợt, cao nhất ở 1HB và tương tự ở các cú đánh nền khác.
 Nói chung, luôn luôn tốt nếu cánh tay trên và vai thẳng hàng trong cú đánh thuận tay (tức là cánh tay trên không vượt quá đường vai), như minh họa trong Hình 2.5a, để giảm tải cho vai.
 Thật không may, trong khi giao bóng, sự va chạm bên trong ở vai có thể không thể tránh khỏi do tính chất của chuyển động trên đầu.
-Hình 2.4 Góc tách là sự khác biệt về sự sắp xếp của vai và hông—được minh họa ở đây đối với chứng đau lưng dưới tái phát bằng thuận tay xoay ra ngoài phạm vi cuối thắt lưng của họ trong các cú chạm đất so với những người không bị chấn thương, nhấn mạnh sự cần thiết của kỹ thuật tốt liên quan đến việc chuẩn bị thể chất phù hợp.
-2. Những cú chạm đất ít gây tổn thương hơn cú giao bóng (theo nghĩa cấp tính) do cơ học, cường độ và chuyển động thay đổi nhiều hơn.
+Hình 2.4 Góc tách là sự khác biệt về sự sắp xếp của vai và hông—được minh họa ở đây đối với chứng đau lưng dưới tái phát bằng thuận tay xoay ra ngoài phạm vi cuối thắt lưng của họ trong các cú đánh nền so với những người không bị chấn thương, nhấn mạnh sự cần thiết của kỹ thuật tốt liên quan đến việc chuẩn bị thể chất phù hợp.
+2. Những cú đánh nền ít gây tổn thương hơn cú giao bóng (theo nghĩa cấp tính) do cơ học, cường độ và chuyển động thay đổi nhiều hơn.
 3. Lượng lực cần thiết để vung vợt có liên quan trực tiếp đến đặc tính quán tính của nó.
-Về vấn đề này, trọng lượng xoắn cao (tức là khối lượng được phân bổ ra xa đường giữa của vợt, ví dụ như ở hai bên đầu) đã được chứng minh là làm tăng tải trọng cho vai và khuỷu tay khi giao bóng.
-Do đó, thật hợp lý khi giả định rằng tải trọng của khớp chi trên sẽ tăng lên cùng với sự gia tăng mômen quán tính của vợt đối với các cú chạm đất.</p></div>
+Về vấn đề này, trọng lượng xoắn cao (tức là khối lượng được phân bổ ra xa đường giữa của vợt, ví dụ như ở hai bên đầu) đã được chứng minh làm tăng tải trọng cho vai và khuỷu tay khi giao bóng.
+Do đó, thật hợp lý khi giả định rằng tải trọng của khớp chi trên sẽ tăng lên cùng với sự gia tăng mômen quán tính của vợt đối với các cú đánh nền.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Tổng lực tác động từ chi dưới và sau đó là chuyển động xoay của thân và các phần của chi trên (cánh tay trên, cẳng tay và bàn tay) phải được phối hợp nếu tốc độ vợt tối ưu (vận tốc ngang, dọc và ngang) được tạo ra cho tác động.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">2.1.6.1 Động lực chi dưới và thân cây Chi dưới bên phải, đối với tay vợt thuận tay phải, chịu trách nhiệm 'kích hoạt' chuỗi động học (Kinetic Chain) ở tay thuận.
 Cụ thể, hông phải duỗi ra để bắt đầu xoay hông về phía trước (Hình 2.6a, b; . Trong khi hông trái (chân sau) duỗi ra có thể quan sát được trong 1HB, thì nó lớn hơn trong động tác 2H với đặc điểm là xoay xương chậu cao hơn. Điều này gợi ý một sự tương đồng nhất định giữa vai trò của chi dưới trong động tác xoay thân trong động tác 2HB và động tác thuận tay.</p></div>
@@ -725,14 +743,14 @@ Cụ thể, hông phải duỗi ra để bắt đầu xoay hông về phía trư
 Một số tay vợt nổi tiếng như Lleyton Hewitt, David Nalbandian và Tommy Haas được cho là đã nghỉ thi đấu vì tình trạng này trong thời gian gần đây.
 Ngoài ra, một nghiên cứu trên 148 tay vợt vị thành niên cho thấy 62% có biểu hiện hông có nguy cơ bị va chạm xương đùi.
 Người ta đã đề xuất rằng việc tham gia kéo dài các môn thể thao đòi hỏi vận động hông nhiều trong thời thơ ấu có thể kích thích sự thích nghi của xương đặc trưng cho tình trạng này. Trong khi điều này vẫn chưa được khám phá ở quần thể quần vợt trẻ, khái niệm về những thay đổi hình thái đặc trưng của quần vợt đã được thiết lập rõ ràng ở chi trên và do đó, xuất hiện một kịch bản hợp lý ở hông.
-Cuối cùng, cơn đau liên quan đến FAI bị kích động bởi sự xoay và/hoặc uốn cong bên trong tầm cuối ở hông—một tư thế là một phần của động tác tiếp theo trong quả giao bóng (Hình 2.7a) và động tác xoay thân trái tay có liên quan trực tiếp với vận tốc vợt về phía trước (Hình 2.8) trong cả hai cú chạm đất, bất kể tư thế hoặc cấp độ chơi.
-Xoay hông (xương chậu), thể hiện rõ ràng trong tất cả các động tác chạm đất, đặc biệt quan trọng trong 2HB.
+Cuối cùng, cơn đau liên quan đến FAI bị kích động bởi sự xoay và/hoặc uốn cong bên trong tầm cuối ở hông—một tư thế là một phần của động tác tiếp theo trong quả giao bóng (Hình 2.7a) và động tác xoay thân trái tay có liên quan trực tiếp với vận tốc vợt về phía trước (Hình 2.8) trong cả hai cú đánh nền, bất kể tư thế hoặc cấp độ chơi.
+Xoay hông (xương chậu), thể hiện rõ ràng trong tất cả các động tác đánh nền, đặc biệt quan trọng trong 2HB.
 Nghiên cứu đã chỉ ra rằng số vòng quay cao gấp đôi ở hành trình 2H (9,4 so với 5 rad/s) khi so sánh với hành trình 1H.
 Do đó, các cú đánh trái tay 1H và 2H bao gồm các chiến lược khác nhau để phát triển vận tốc vợt theo chiều ngang. Cú đánh 2H phụ thuộc nhiều hơn vào chuyển động xoay của thân cây (căn chỉnh của vai xoay ngoài hướng của hông khi va chạm), trong khi cú đánh trái tay 1H phụ thuộc nhiều hơn vào chuyển động tuyến tính, được tạo ra bởi các vòng quay lớn hơn của các đoạn của chi đánh.
 Tay vợt nữ cũng đã được chứng minh là xoay vai nhiều hơn nam giới trong động tác backswing và sau đó tăng mức độ xoay về phía trước khoảng 10%.
 Rõ ràng là từ sức mạnh của việc xoay thân cây mà chuyển động của xương bả vai đóng một vai trò không thể thiếu trong mối liên kết giữa thân và chi vợt.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Có vẻ như việc xoay thân cây gần như có mối liên hệ tuyến tính với sự phát triển vận tốc ở cú thuận tay, trong đó tốc độ bóng tăng gấp đôi đi kèm với việc tăng gấp đôi vận tốc quay của thân cây.
-Các tay vợt nam, sinh viên đại học đã tăng tốc độ xoay thân cây của họ khi họ được yêu cầu tăng tốc độ bóng từ chậm đến trung bình và sau đó là các cú chạm đất thuận tay nhanh.
+Các tay vợt nam, sinh viên đại học đã tăng tốc độ xoay thân cây của họ khi họ được yêu cầu tăng tốc độ bóng từ chậm đến trung bình và sau đó là các cú đánh nền thuận tay nhanh.
 Landlinger và cộng sự.
 minh họa thêm tầm quan trọng của cú đánh thuận tay khi họ so sánh các tay vợt đàn em có thành tích cao (≈16 tuổi) với các tay vợt nam xếp hạng ATP (≈23 tuổi).
 Vận tốc vợt cao hơn 2 m/s đối với tay vợt cao cấp có thể chủ yếu là do mức độ xoay thân cây.
@@ -741,9 +759,9 @@ Khi xem xét cơ chế của cú vung vợt trong việc tạo ra vận tốc v�
             <div class="bilingual-block stanza"><p class="lang-vi">Rõ ràng là từ sức mạnh của vòng quay này mà chuyển động của xương bả vai đóng một vai trò không thể thiếu trong mối liên kết giữa thân và chi vợt.
 Nhu cầu ổn định xương bả vai đã được thiết lập rõ ràng nếu người ta muốn có một phương pháp tiếp cận hiệu quả và không gây chấn thương để tạo ra cú đánh.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">2.1.6.2 Chuỗi động học hoặc chuỗi động học (Kinetic Chain) Lý thuyết đằng sau khái niệm này sẽ được thảo luận trong một phần khác của cuốn sách này, vì vậy chúng tôi sẽ trình bày ứng dụng thực tế của nó đối với các bước đột phá.
-Hình 2.7a–c trực quan hóa chuỗi động năng diễn ra như thế nào trong quá trình tạo ra cú chạm đất, trong khi chúng tôi mở rộng sự đóng góp của từng khớp riêng lẻ vào vận tốc vợt khi tiếp bóng bên dưới (xem những đóng góp thực tế về thuận tay): • Vai vợt: Rõ ràng là lực đẩy chi dưới và xoay thân sẽ di chuyển vai này theo hướng của cú đánh và do đó thêm vận tốc tuyến tính (theo hướng của mục tiêu) vào vợt trong cả hai cú đánh chạm đất bằng một tay (Hình 2.9a2, b2), nhiều hơn
+Hình 2.7a–c trực quan hóa chuỗi động năng diễn ra như thế nào trong quá trình tạo ra cú đánh nền, trong khi chúng tôi mở rộng sự đóng góp của từng khớp riêng lẻ vào vận tốc vợt khi tiếp bóng bên dưới (xem những đóng góp thực tế về thuận tay): • Vai vợt: Rõ ràng là lực đẩy chi dưới và xoay thân sẽ di chuyển vai này theo hướng của cú đánh và do đó thêm vận tốc tuyến tính (theo hướng của mục tiêu) vào vợt trong cả hai cú đánh nền bằng một tay (Hình 2.9a2, b2), nhiều hơn
 là trường hợp của hành trình 2H (Hình 2.9c2).
-• Chuyển động ngang của cánh tay trên ở vai: Hình 2.9a2–3, b1–2 và c1–2 cho thấy cách cánh tay trên uốn cong theo chiều ngang để góp phần tác động đến tốc độ vợt trong cả hai cú đánh chạm đất. Trong cú đánh 2H, bên chiếm ưu thế đóng vai trò ổn định chi không thuận, đây là yếu tố quan trọng góp phần vào vận tốc vợt ngang.
+• Chuyển động ngang của cánh tay trên ở vai: Hình 2.9a2–3, b1–2 và c1–2 cho thấy cách cánh tay trên uốn cong theo chiều ngang để góp phần tác động đến tốc độ vợt trong cả hai cú đánh nền. Trong cú đánh 2H, bên chiếm ưu thế đóng vai trò ổn định chi không thuận, đây là yếu tố quan trọng góp phần vào vận tốc vợt ngang.
 • Độ nghiêng và duỗi của cẳng tay ở khuỷu tay: Chỉ đóng vai trò thứ yếu trong việc tạo ra vận tốc vợt.
 Góc quay của cẳng tay thay đổi trong cú thuận tay;
 tuy nhiên điều này là do sự xoay vào trong của vai, trong khi độ bám và kiểu đánh sẽ quyết định sự đóng góp vào vận tốc vợt khi duỗi khuỷu tay.
@@ -751,9 +769,9 @@ Việc duỗi khuỷu tay lại đóng vai trò thứ yếu trong cả hai cú �
 • Xoay trong cánh tay trên ở vai trong cú đánh thuận tay (Hình 2.9a2–3): Điều này thay đổi tùy thuộc vào vận tốc của quả bóng tới và hướng phản ứng của tay vợt.
 Nó sẽ lớn hơn khi tạo ra sức mạnh, đặc biệt là khi hướng bóng chéo sân, hơn là khi hấp thụ và phản ứng với cú đánh mạnh của đối phương. Hãy nhớ rằng, bạn hầu như sẽ luôn có chuyển động xoay bên trong, như một đặc điểm chuyển động quan trọng và có thể quan sát được của quá trình theo dõi.
 Bahamonde và Knudson nhấn mạnh mô-men quay bên trong khớp vai xảy ra rất muộn trong cú vung thuận tay về phía trước, ngay trước khi va chạm.
-Rõ ràng việc xoay trong của vai không đóng vai trò tương tự đối với cú chạm đất trái tay;
+Rõ ràng việc xoay trong của vai không đóng vai trò tương tự đối với cú đánh nền trái tay;
 tuy nhiên, vai trò của chuyển động xoay ngoài và dang ngang ở tay thuận trong 1HB được chứng minh thông qua hoạt động cơ bắp.
-• Độ uốn của bàn tay: Chuyển động này đóng một vai trò quan trọng trong các cú chạm đất với các mức vận tốc hướng tâm và lòng bàn tay khác nhau tùy thuộc vào độ bám và độ xoáy đặt trên bóng (thuận tay: Hình 2.9a2–3).
+• Độ uốn của bàn tay: Chuyển động này đóng một vai trò quan trọng trong các cú đánh nền với các mức vận tốc hướng tâm và lòng bàn tay khác nhau tùy thuộc vào độ bám và độ xoáy đặt trên bóng (thuận tay: Hình 2.9a2–3).
 Góc cổ tay thường giảm từ vị trí được quan sát trong cú vung vợt sau đến giai đoạn vung vợt về phía trước muộn của cú đánh, khi vợt kéo theo chi chuyển động về phía trước (Hình 2.9a2). Việc uốn cong cổ tay, ở phía thuận tay, sau đó xảy ra để tăng tốc độ của vợt (vận tốc dọc, ngang và vận tốc ngang) khi va chạm (Hình 2.9a2–3).
 Seeley và cộng sự.
 đã báo cáo tốc độ uốn cong của bàn tay tăng lên trong cú công bóng thuận tay (vận tốc thấp, 460°/s; vận tốc trung bình, 780°/s; và vận tốc cao, 1070°/s) đi kèm với việc tăng vận tốc bóng từ thấp đến trung bình đến cao.
@@ -764,14 +782,14 @@ Trong hành trình 2H, độ gập cổ tay được quan sát từ Hình 2.9c1�
 Tuy nhiên, tay vợt có thể áp dụng cách tiếp cận cơ học khác với cách tiếp cận được sử dụng trong hành động 1H, để tạo ra vận tốc và quỹ đạo vợt khác nhau.
 Với cả hai tay trên vợt, có thể tạo ra một cặp lực, trong đó các tay hoạt động độc lập để nghiêng vợt về phía trước trong tình huống 'đẩy-kéo', như trong Hình 2.10, trong khi khi đánh xoáy lên, các tay có thể di chuyển theo hướng lên xuống nhiều hơn.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">• Như bạn có thể thấy, tất cả các cú đánh đều là sản phẩm của sự phối hợp hoạt động của một số bộ phận cơ thể.
-Mặc dù chúng tôi đã khám phá từng yếu tố đóng góp đó một cách riêng biệt, nhưng sự trình bày của chúng trong quá trình tạo đột quỵ rõ ràng là không độc lập.
+Mặc dù chúng tôi đã khám phá từng yếu tố đóng góp đó một cách riêng biệt, nhưng sự trình bày của chúng trong quá trình tạo cú đánh rõ ràng là không độc lập.
 Về vấn đề này, bằng chứng đã được đưa ra để chứng minh rằng dòng năng lượng qua chuỗi động năng của cú giao bóng hiệu quả hơn ở những tay vợt quần vợt không bị chấn thương so với những tay vợt bị chấn thương.
-Do đó, cái nhìn toàn diện về quá trình sản sinh đột quỵ cũng quan trọng đối với việc ngăn ngừa chấn thương cũng như việc bảo dưỡng tổng thể các bộ phận riêng lẻ của nó.
+Do đó, cái nhìn toàn diện về quá trình sản sinh cú đánh cũng quan trọng đối với việc ngăn ngừa chấn thương cũng như việc bảo dưỡng tổng thể các bộ phận riêng lẻ của nó.
 bề mặt cứng hơn so với đất sét khi chạy thuận tay, để phù hợp với độ cứng của mặt sân và giảm lực truyền đến cơ thể.
 2. Chi trên sẽ được tải thêm để đạt được kết quả tương tự nếu thân không tham gia tích cực vào chuỗi động học (Kinetic Chain).
 3. Cần chú ý nhiều hơn đến cột sống thắt lưng khi luyện tập ở động tác 2H, vì động tác xoay theo trục và uốn cong sang bên nhiều hơn trong động tác này.
-4. Cú thuận tay quần vợt có thể góp phần gây ra chứng rối loạn vận động xương bả vai (Scapular Dyskinesis), chủ yếu là do biên độ lớn hơn của độ nghiêng về phía trước của xương bả vai và xoay trong trong quá trình thực hiện theo, do đó nhấn mạnh sự cần thiết phải ổn định xương bả vai.
-5. Khi so sánh các nhóm bị đau và không đau ở vùng thắt lưng với các cú chạm đất, rõ ràng là phạm vi duỗi chủ động, xoay phải và gập bên trái lớn hơn đáng kể ở nhóm không bị đau.
+4. Cú thuận tay quần vợt có thể góp phần gây ra chứng rối loạn vận động xương bả vai (Scapular Dyskinesis), chủ yếu là do biên độ lớn hơn của độ nghiêng về phía trước của xương bả vai và xoay trong quá trình thực hiện theo, do đó nhấn mạnh sự cần thiết phải ổn định xương bả vai.
+5. Khi so sánh các nhóm bị đau và không đau ở vùng thắt lưng với các cú đánh nền, rõ ràng là phạm vi duỗi chủ động, xoay phải và gập bên trái lớn hơn đáng kể ở nhóm không bị đau.
 Phạm vi tăng lên này khiến nhóm bị đau thường đặt cột sống thắt lưng dưới của họ gần cuối phạm vi để gập và duỗi bên trái (Hình 2.11).</p></div>
           </div>
           <div class="figure-wrap">
@@ -824,7 +842,7 @@ Chuyển động giao bóng quần vợt có thể được đánh giá bằng c
 các nút này là phần mở rộng của những nút được trình bày bởi Lintner et al. và Kibler et al.
 và đã được Trung tâm Vai Kentucky và Hiệp hội Quần vợt Nữ (WTA) tinh chỉnh (Bảng 4.1).</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Phân tích bao gồm vị trí đặt bàn chân tối ưu, độ uốn cong đầu gối vừa đủ trong tư thế nghiêng tiến tới duỗi đầu gối khi va chạm với bóng, xoay hông ra khỏi sân vào tư thế nghiêng, nghiêng hông về phía sau trong tư thế nghiêng, không nghiêng về phía trước hông trong tư thế nghiêng, xoay hông/thân kết hợp với khoảng cách khoảng 30°, xoay thân và chuyển động kết hợp của cánh tay trong mặt phẳng xương bả vai.
-Phần lớn các nút đã được chứng minh là có độ tin cậy giữa các máy chủ quan sát trên mức đáng kể. Các nút này có thể được đánh giá bằng quan sát trực quan hoặc bằng Xấu: hông ở phía sau không xoay khỏi lưới Độ nghiêng và tải của hông sau Xấu: hông ở phía sau không hạ xuống đất và chân sau không được tải Nghiêng hông trước Tốt: hông ở phía sau thả xuống đất và chân sau được tải Xấu: hông ở phía trước nghiêng về phía trước về phía lưới Góc X Tốt: góc x mô tả mối quan hệ giữa vai và hông và phải xấp xỉ bằng
+Phần lớn các nút đã được chứng minh là có độ tin cậy giữa các người giao bóng quan sát trên mức đáng kể. Các nút này có thể được đánh giá bằng quan sát trực quan hoặc bằng Xấu: hông ở phía sau không xoay khỏi lưới Độ nghiêng và tải của hông sau Xấu: hông ở phía sau không hạ xuống đất và chân sau không được tải Nghiêng hông trước Tốt: hông ở phía sau thả xuống đất và chân sau được tải Xấu: hông ở phía trước nghiêng về phía trước về phía lưới Góc X Tốt: góc x mô tả mối quan hệ giữa vai và hông và phải xấp xỉ bằng
 30° Vai không xoay ra sau hông Xấu: góc x &gt;30° Xấu: góc x &lt;30° Xoay thân cây Xấu: quá nghiêng— vai phía sau mặt phẳng xương bả vai bị hạ thấp— vai ở phía trước mặt phẳng xương bả vai Chuyển động tổng hợp của chuỗi động học (Kinetic Chain) Xấu: sử dụng các cơ thân để kéo thân và cánh tay khỏi nghiêng thành quả bóng Tác động (chuyển động kéo) Tốt: sử dụng động tác gập đầu gối và truyền động chân sau để tối đa hóa lực phản ứng mặt đất đẩy cơ thể
 hướng lên từ vị trí nghiêng vào tác động của bóng (chuyển động đẩy) Lưu ý: Đánh giá các nút 1–8 ở điểm uốn cong đầu gối tối đa. Chuyển động tổng hợp của chuỗi động phải được đánh giá trong toàn bộ chuyển động Copyright © WTA Tour Inc., The Role Center of Kentucky.
 Ghi và phân tích video được bảo lưu mọi quyền.
@@ -851,7 +869,7 @@ Cơ tứ đầu không linh hoạt và sức mạnh lệch tâm giảm cũng có
             <div class="bilingual-block stanza"><p class="lang-vi">Điểm yếu hoặc căng cứng ở hông cũng có thể ảnh hưởng đến các bộ phận khác.
 Giảm độ linh hoạt của hông khi xoay hoặc sức mạnh khi dang (Trendelenburg dương tính) được thấy ở 49% vận động viên có vết rách môi sau trên được chứng minh qua nội soi khớp.
 Vad và các đồng nghiệp đã báo cáo tỷ lệ đau thắt lưng tăng 33% ở những tay vợt golf chuyên nghiệp có cơ hông săn chắc.
-Chuyển động của hông và thân bị thay đổi được cho là làm tăng tải trọng ở vai.
+Chuyển động của hông và thân bị thay đổi được cho làm tăng tải trọng ở vai.
 Những thay đổi về cơ xương có thể là do sự kém thích nghi của mô do tải trọng lặp đi lặp lại.
 Sự mất cân bằng sức mạnh xung quanh hông và cột sống thắt lưng đã được chứng minh bằng nhiều nghiên cứu, cho thấy những sự thiếu hụt này có thể đóng một vai trò trong sự rối loạn chức năng của chuỗi động học (Kinetic Chain).
 Những thay đổi này cũng có thể làm thay đổi ba nút xung quanh hông.
@@ -936,7 +954,7 @@ tuy nhiên, nó có thể xảy ra một cách riêng lẻ.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Những vết rách mãn tính, dày toàn bộ ở các vận động viên chạy trên cao thường được cho là bắt đầu từ những vết rách ở mặt khớp lan truyền hoàn toàn qua gân đến phía bao hoạt dịch.
 Thời gian để quá trình này xảy ra vẫn chưa được xác định và có thể thay đổi đáng kể tùy thuộc vào từng bệnh nhân, nhu cầu sinh lý, chất lượng của gân và các cấu trúc xung quanh.
 Nước mắt cấp tính, chấn thương, toàn bộ có thể xảy ra mới xuất hiện hoặc trong bối cảnh rách một phần mãn tính trước đó.
-Những chấn thương cấp tính này thường được xác định dựa trên tiền sử của bệnh nhân khi họ mô tả cơn đau khởi phát cấp tính và rối loạn chức năng sau một lần giao bóng hoặc đột quỵ.</p></div>
+Những chấn thương cấp tính này thường được xác định dựa trên tiền sử của bệnh nhân khi họ mô tả cơn đau khởi phát cấp tính và rối loạn chức năng sau một lần giao bóng hoặc cú đánh.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Rách gân chóp xoay (Rotator Cuff) ở tay vợt quần vợt có thể biểu hiện theo nhiều cách;
 tuy nhiên, các triệu chứng phổ biến nhất bao gồm đau, yếu, mỏi vai và giảm cử động.
 Các triệu chứng cụ thể hơn, tinh vi hơn có thể bao gồm giảm sức bền khi chơi, giảm tốc độ giao bóng và mất kiểm soát bóng.
@@ -1001,7 +1019,7 @@ Cũng phải chú ý đáng kể đến việc tăng cường và cân bằng qu
 Để khắc phục những thiếu sót này, độ giãn của tà vẹt và độ giãn theo chiều ngang được giới thiệu và tiến triển ở mức có thể chấp nhận được.
 Khi những thiếu sót về chuyển động quay này được giải quyết và chuỗi động học (Kinetic Chain) được ổn định, việc tăng cường vòng bít của vòng quay chuỗi kín sẽ được tiến hành.
 Khi các triệu chứng giảm bớt, sức mạnh và sự ổn định được cải thiện, các hoạt động thể thao cụ thể sẽ dần dần được giới thiệu.
-Nói chung, các vận động viên có thể bắt đầu với số lần thực hiện các động tác chạm đất và vô lê nhẹ nhàng.
+Nói chung, các vận động viên có thể bắt đầu với số lần thực hiện các động tác đánh nền và vô lê nhẹ nhàng.
 Khi những lần lặp lại này được tăng lên từ từ mà không có triệu chứng, thì việc giao bóng qua đầu tốc độ thấp sẽ được áp dụng.
 Khi bệnh nhân chịu đựng được, số lần giao bóng mỗi buổi và tốc độ giao bóng sẽ tăng dần.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">13.4.1.2 Điều trị bằng phẫu thuật Do nhu cầu đặc biệt của vai ở những vận động viên ở trên cao này, nên can thiệp phẫu thuật đối với vết rách dày một phần chỉ nên dành cho những trường hợp ngoan cố với một liệu trình điều trị không phẫu thuật toàn diện.
@@ -1105,7 +1123,7 @@ Sự dịch chuyển về phía trước của đầu xương cánh tay làm d�
 Mặc dù PII xảy ra ở vai khỏe mạnh nhưng nó có thể trở thành bệnh lý ở tay vợt quần vợt.
 PII được đặc trưng bởi cơn đau ở mặt sau của khớp gối của các vận động viên ném qua đầu trong giai đoạn cuối của cú ném, khi cánh tay ở tư thế xoay hoàn toàn ra bên ngoài và dang ra ngoài ít nhất 90°.
 Cơn đau là do sự chèn ép của các gân cơ trên gai và cơ dưới gai do củ lớn quay về phía sau của chỏm xương cánh tay đối với phần sau trên của ổ chảo.
-Điều này xảy ra khi trục xương cánh tay di chuyển về phía sau ra ngoài mặt phẳng của xương bả vai trong giai đoạn ném nghiêng. Trong giai đoạn này, nếu thân xương bả vai và trục xương cánh tay không nằm trên cùng một mặt phẳng chuyển động, thì các gân vòng bít xoay có thể vẫn nằm giữa đầu xương bả vai và vành ổ chảo gây ra PII.
+Điều này xảy ra khi trục xương cánh tay di chuyển về phía sau ra ngoài mặt phẳng của xương bả vai trong giai đoạn ném nghiêng. Trong giai đoạn này, nếu thân xương bả vai và trục xương cánh tay không nằm trên cùng một mặt phẳng chuyển động, thì các gân vòng bít xoay có thể vẫn nằm giữa đầu xương bả vai vành ổ chảo gây ra PII.
 Một phát hiện thường gặp khác ở những tay vợt quần vợt là sự thay đổi trong cung quay của vai.
 Thông thường, có sự gia tăng xoay ngoài và giảm xoay trong do co thắt bao khớp sau dưới.
 Có ý kiến cho rằng có mối liên quan giữa tình trạng thiếu hụt khả năng xoay trong của ổ khớp cánh tay (GIRD) với sự phát triển của chấn thương vai.
@@ -1344,14 +1362,14 @@ Với mục tiêu cải thiện độ tin cậy, một số tác giả đã đơ
             <div class="bilingual-block stanza"><p class="lang-vi">Uhl và cộng sự.
 đã thu gọn cả ba loại rối loạn vận động (loại I đến III) thành một loại duy nhất là có (kiểu rối loạn vận động bất thường) hoặc không (chuyển động xương bả vai bình thường).
 Họ nghiên cứu những bệnh nhân có và không có bệnh lý ở vai.
-Hệ thống phân loại có/không thể hiện độ tin cậy giữa các máy chủ ở mức vừa phải và thể hiện độ nhạy cao cũng như giá trị tiên đoán dương khi so sánh với tiêu chí 3D.
+Hệ thống phân loại có/không thể hiện độ tin cậy giữa các người giao bóng ở mức vừa phải và thể hiện độ nhạy cao cũng như giá trị tiên đoán dương khi so sánh với tiêu chí 3D.
 Ngoài ra, các đối tượng có triệu chứng (54%) có nhiều mặt phẳng bất đối xứng hơn khi gập người về phía trước so với các đối tượng không có triệu chứng (14%).
 Tuy nhiên, trong trường hợp scaption có sự phân bố đồng đều về sự bất đối xứng của nhiều mặt phẳng là 45% ở cả hai nhóm.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Thử nghiệm rối loạn vận động xương bả vai (Scapular Dyskinesis) (SDT) do McClure và cộng sự đưa ra.
 phân loại chuyển động xương bả vai với thang đánh giá ba mục.
 Các vận động viên trên cao của hạng I thực hiện động tác gập và dạng dạng vai bằng tạ và được phân loại là có biểu hiện (bất thường tinh tế hoặc rõ ràng) hoặc không có biểu hiện rối loạn vận động xương bả vai (Scapular Dyskinesis) (chuyển động bình thường).
 Rối loạn vận động được định nghĩa là sự hiện diện của rối loạn nhịp tim hoặc run rẩy.
-SDT tạo ra độ tin cậy của máy chủ liên quan cao hơn tất cả các xét nghiệm dựa trên trực quan khác về chứng rối loạn vận động ở xương bả vai.
+SDT tạo ra độ tin cậy của người giao bóng liên quan cao hơn tất cả các xét nghiệm dựa trên trực quan khác về chứng rối loạn vận động ở xương bả vai.
 Hệ thống này cũng cho thấy rằng các vận động viên ném trên cao được phân loại trực quan là mắc chứng rối loạn vận động xương bả vai (Scapular Dyskinesis) cho thấy khả năng xoay xương bả vai hướng lên trên giảm, độ nâng và độ co rút của xương đòn ít hơn khi được đo bằng tiêu chuẩn vàng về theo dõi chuyển động 3D.
 Những kết quả này cho thấy rằng các vận động viên có bất thường về thị giác trong chuyển động của xương bả vai trên thực tế đã chứng minh chuyển động bị thay đổi, đặc biệt là khi gập vai.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Thử nghiệm hỗ trợ xương bả vai (SAT) và thử nghiệm rút lại (hoặc đặt lại vị trí) xương bả vai (SRT) là các thủ thuật khắc phục có thể làm thay đổi các triệu chứng liên quan đến chấn thương và cung cấp thông tin về vai trò của rối loạn vận động xương bả vai (Scapular Dyskinesis) trong rối loạn chức năng đi kèm với chấn thương vai .
@@ -1360,11 +1378,11 @@ Trong kỳ thi SAT, giám khảo sẽ hỗ trợ cơ răng trước và cơ than
 Rabin và cộng sự.
 sau đó đã sửa đổi thử nghiệm này để kết hợp việc nghiêng xương bả vai ra sau.
 Việc giảm các triệu chứng đau cho thấy kết quả xét nghiệm dương tính trong quá trình thực hiện thủ thuật hỗ trợ.
-Bài kiểm tra đã được chứng minh là có độ tin cậy giữa các người đánh giá ở mức chấp nhận được. Thử nghiệm này đã được phát hiện là làm thay đổi chuyển động của xương bả vai bằng cách tăng độ nghiêng về phía sau của xương bả vai, do đó, kết quả xét nghiệm dương tính sẽ chỉ ra sự cần thiết của Thử nghiệm rút xương bả vai bao gồm việc định vị và ổn định toàn bộ bờ giữa của xương bả vai trên ngực bằng tay.
+Bài kiểm tra đã được chứng minh là có độ tin cậy giữa các người đánh giá ở mức chấp nhận được. Thử nghiệm này đã được phát hiện làm thay đổi chuyển động của xương bả vai bằng cách tăng độ nghiêng về phía sau của xương bả vai, do đó, kết quả xét nghiệm dương tính sẽ chỉ ra sự cần thiết của Thử nghiệm rút xương bả vai bao gồm việc định vị và ổn định toàn bộ bờ giữa của xương bả vai trên ngực bằng tay.
 Trong SRT, người kiểm tra chấm điểm sức mạnh cơ khi bắt cóc theo các quy trình kiểm tra cơ thủ công tiêu chuẩn hoặc bằng máy đo lực cầm tay hoặc đánh giá các triệu chứng ở môi ở những bệnh nhân có xét nghiệm cắt môi động biến đổi dương tính (M-DLS).
 Sau đó, người khám sẽ đặt và cố định xương bả vai ở vị trí rút lại theo cách thủ công (Hình 15.1).</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Thử nghiệm dương tính xảy ra khi lực dang được chứng minh tăng lên hoặc các triệu chứng của lực tác động bên trong trong chấn thương môi được giảm bớt ở vị trí co lại.
-Kết quả động học chính của thử nghiệm này là làm tăng độ xoay ngoài của xương bả vai và độ nghiêng ra sau, do đó, thử nghiệm dương tính sẽ chỉ ra rằng việc tăng cường sức mạnh cho gân chóp xoay (Rotator Cuff) là không cần thiết, và nên tập trung vào việc tăng cường sức mạnh của hình thoi và chức năng của răng cưa khi co rút.
+            <div class="bilingual-block stanza"><p class="lang-vi">Thử nghiệm dương tính xảy ra khi lực dang được chứng minh tăng lên hoặc các triệu chứng của lực tác động bên trong chấn thương môi được giảm bớt ở vị trí co lại.
+Kết quả động học chính của thử nghiệm này làm tăng độ xoay ngoài của xương bả vai và độ nghiêng ra sau, do đó, thử nghiệm dương tính sẽ chỉ ra rằng việc tăng cường sức mạnh cho gân chóp xoay (Rotator Cuff) là không cần thiết, và nên tập trung vào việc tăng cường sức mạnh của hình thoi và chức năng của răng cưa khi co rút.
 Thử nghiệm định vị lại xương bả vai là một sự sửa đổi của thử nghiệm rút xương bả vai và nhấn mạnh đến độ nghiêng về phía sau của xương bả vai và xoay ra ngoài.
 Tate và cộng sự.
 đã tiến hành một nghiên cứu để xác định xem liệu việc định vị lại xương bả vai bằng tay có làm giảm đau và tăng sức mạnh của vai trong một mẫu gồm 142 vận động viên ở trên cao hay không.
@@ -1488,7 +1506,7 @@ mô tả một số bài tập tốc độ và sự nhanh nhẹn có thể đư�
 Myers và cộng sự.
 đã phát triển một chương trình đào tạo ngắt quãng theo khối lượng ba giai đoạn dành riêng cho các cú đánh trên mặt đất và giao bóng cho những tay vợt quần vợt ở trình độ cao (Bảng 15.1).</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Tiến trình 21 bước có thể được kết hợp vào cách chơi thực hành trong đó tay vợt bắt chước các tình huống giống như trò chơi.
-Ví dụ: trong bước 10, tay vợt phải thực hiện 16 cú giao bóng và 28 cú chạm đất.
+Ví dụ: trong bước 10, tay vợt phải thực hiện 16 cú giao bóng và 28 cú đánh nền.
 Các đấu thủ sẽ thi đấu theo các cú đánh mặt đất mỗi trận 1 1 10 – – 10 2 10 2a 50 12 3 10 3a 50 13 4 12 4a 50 16 5 12 6a 50 18 2 6 14 8 60 22 2 6 2 7 7 18 10b 60 28
 8 22 12b 60 34 9 26 14b 60 40 10 28 16 60 44 4c 6 2 7 3 11 28 16 80 44 4c 6 2 7 12 42 24 80 66 6c 6 2 7 13 56 32 80
 88 8c 6 2 7 14 42 24 90 66 6c 6 2 7 15 56 32 90 88 8c 6 2 7 16 84 48 90 132 10c 10d 8e 18 56 32 100 88 8c 6 2 7 19
@@ -1565,7 +1583,7 @@ Dựa trên các bằng chứng sẵn có và kinh nghiệm lâm sàng, các t�
             <div class="bilingual-block stanza"><p class="lang-vi">Tỷ lệ cân bằng phù hợp về mặt lâm sàng Các bài tập đề xuất Pm SA Pm/SA Đứng đấm Serratus (Hình 16.15a) MT Pm/MT Độ cao với ER LT Pm/LT Độ cao với ER Rh Pm/Rh Độ cao với ER UT SA UT/SA Chống đẩy khuỷu tay (Hình 16.16) Serratus đấm nằm ngửa (Hình 16.15b) Độ cao với ER Trượt tường (Hình.
 16.17) MT hoặc LT UT/MT hoặc UT/LT Độ cao với ER Nằm nghiêng về phía trước (Hình 16.18) Xoay ngoài nằm nghiêng (Hình 16.1) Nằm sấp với ER (Hình 16.3) Nằm sấp (Hình 16.19) Nằm sấp ER ở 90° abd (Hình 16.20) RH UT/RH Độ cao với ER LS
 SA LS/SA Trượt tường UT LS/UT Nhún trên cao MT hoặc LT hoặc RH LS/MT hoặc LS/LT hoặc LS/RH Rút lại từ trên cao RH SA RH/SA Trượt tường Những vận động viên này được hưởng lợi từ các mô hình đường chéo trong các bài tập chuỗi kín cũng như trong các bài tập chuỗi mở. Nghiên cứu đã chỉ ra rằng thực hiện các bài tập vai đứng trên chân đối diện giúp tăng cường hoạt động của cơ bả vai và thực hiện duỗi chân đối diện trong một bài tập chuỗi khép kín (chống đẩy) làm tăng hoạt động ở bẫy giữa và dưới của vai liên quan .</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Việc sử dụng các bài tập này ở dạng sức đề kháng thấp/lặp lại cao được áp dụng để tăng cường kích hoạt tương đối của vòng bít xoay và cơ ổn định xương bả vai .</p></div>
+            <div class="bilingual-block stanza"><p class="lang-vi">Việc sử dụng các bài tập này ở dạng kháng lực thấp/lặp lại cao được áp dụng để tăng cường kích hoạt tương đối của vòng bít xoay và cơ ổn định xương bả vai .</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">16.3.3 Các khái niệm về phạm vi chuyển động và vận động để phục hồi vai của vận động viên quần vợt xuất sắc Việc sử dụng và áp dụng phạm vi chuyển động, kéo giãn và/hoặc huy động khớp ổ chảo được dựa trên sự hiểu biết rõ ràng về phạm vi chuyển động của mỗi tay vợt thu được trong quá trình đánh giá cơ xương khớp.
 Trong trường hợp tay vợt ghi nhận mất ROM xoay bên trong &lt;5–8° (so với chi không bị thương không thuận) mà không có tổng phạm vi chuyển động xoay hoặc tổng số vòng xoay của cánh tay thuận &lt;5–8°, việc kéo giãn và phạm vi chuyển động thường không phải là trọng tâm đáng kể trong chương trình phục hồi hoặc bảo trì.
 Những tay vợt bị mất ROM IR &gt;6–8° cùng với việc mất tổng ROM xoay từ 6–8° trở lên sẽ nhận được các khoảng thời gian kéo dài để tăng cường khả năng thu được ROM IR. Điểm cắt này cho phạm vi chuyển động dựa trên nhiều nghiên cứu mô tả từ những tay vợt quần vợt ưu tú có tính đến sự thích ứng ROM điển hình xảy ra ở những tay vợt ưu tú khỏe mạnh, không bị thương.
@@ -1592,7 +1610,7 @@ Các cú đánh trên mặt đất (thuận tay và trái tay) là các kiểu c
 Những cú đánh này sử dụng mức độ kích hoạt cơ bắp thấp hơn và các vị trí dưới 90° so với độ cao của vai và thường được dung nạp tốt hơn trong phần đầu của chương trình quần vợt.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Khám lâm sàng đạt yêu cầu và ROM hoàn toàn không đau (ROM thích hợp và cần thiết) Sức mạnh cơ bắp có thể chấp nhận được (đặc biệt là cơ gân chóp xoay (Rotator Cuff), cơ bả vai và cơ lõi) Các xét nghiệm đặc biệt với kết quả có thể chấp nhận được (kiểm tra chuyển vị trí bán trật, xét nghiệm SLAP) Sự chấp thuận của bác sĩ về việc bắt đầu chương trình quần vợt ngắt quãng Kiểm tra đẳng động đạt yêu cầu hoặc kiểm tra cơ bằng tay bằng máy đo lực kế cầm tay (a) Tỷ lệ xoay bên ngoài/bên trong • 66–75% (b) So sánh song phương • Xoay bên ngoài
 so sánh: 95% hoặc cao hơn • So sánh xoay vòng bên trong: 110–115% hoặc cao hơn (c) Tỷ lệ độ bền • Giảm 10–15% Mô-men xoắn cực đại cho ER và IR từ ba lần đầu tiên đến ba lần cuối Kiểm tra chức năng đạt yêu cầu • Ngồi xổm một chân, mười lần không mất thăng bằng (ngồi xổm đến 45–50°) • Nằm nghiêng và lật bóng trong 30 giây (số lượng vừa đủ và không đau)
-Việc ưa chuộng cú đánh chạm đất trái tay (sử dụng tỷ lệ tiếp đất/đánh 2:1) cũng được khuyến nghị đối với những tay vợt có cú đánh chạm đất bằng hai tay để cho phép đóng góp chuỗi động học (Kinetic Chain) lớn hơn vào cả việc giảm chấn động và phát triển lực trong giai đoạn đầu của chương trình. Tiếp theo là tăng dần âm lượng và cường độ bằng cách sử dụng tiến trình từng bước.</p></div>
+Việc ưa chuộng cú đánh nền trái tay (sử dụng tỷ lệ tiếp đất/đánh 2:1) cũng được khuyến nghị đối với những tay vợt có cú đánh nền bằng hai tay để cho phép đóng góp chuỗi động học (Kinetic Chain) lớn hơn vào cả việc giảm chấn động và phát triển lực trong giai đoạn đầu của chương trình. Tiếp theo là tăng dần âm lượng và cường độ bằng cách sử dụng tiến trình từng bước.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Ngoài việc lựa chọn cẩn thận kiểu đánh quần vợt ban đầu được sử dụng, một kiểu sử dụng bóng tennis cụ thể cũng được tuân theo.
 Đối với những lần thử nghiệm đầu tiên về các cú đánh trên mặt đất trong quần vợt, thường được thực hiện tại phòng khám dưới sự chỉ đạo của nhà vật lý trị liệu, người ta sử dụng bóng xốp.
 Những quả bóng này nhẹ hơn nhiều và tạo ra lực tác động thấp hơn đến các chi.
@@ -1739,7 +1757,7 @@ Thay vào đó, gân được đặc trưng bởi số lượng lớn nguyên b�
 Gân chính trong viêm mỏm lồi cầu ngoài cánh tay là cơ duỗi carpi radialis brevis.
 Khoảng một phần ba các trường hợp liên quan đến gân cơ duỗi.
 Cơ duỗi carpi radialis longus và cơ duỗi carpi ulnaris cũng có thể liên quan.
-Các vị trí chính của bệnh lý gân (Tendinopathy) mỏm lồi cầu trong trong là các gân gấp cổ tay quay, gân tròn quay sấp và gân cơ gấp cổ tay trụ.</p></div>
+Các vị trí chính của bệnh lý gân (Tendinopathy) mỏm lồi cầu trong là các gân gấp cổ tay quay, gân tròn quay sấp và gân cơ gấp cổ tay trụ.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Sự thích ứng xảy ra ở khuỷu tay của vận động viên trên cao về phạm vi chuyển động, độ lỏng và khả năng bù đắp của cơ.
 Việc so sánh với chi không thuận đối bên thường phức tạp do sự phát triển giải phẫu không đối xứng này.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Những tay vợt quần vợt ở trình độ cao có chuyển động xoay bên trong ít hơn đáng kể và không có sự khác biệt đáng kể về chuyển động xoay bên ngoài trên cánh tay thuận, cũng như tổng phạm vi chuyển động xoay trên cánh tay thuận giảm khoảng 10°.</p></div>
@@ -1792,7 +1810,7 @@ Sự va chạm giữa vợt và bóng tạo ra sự truyền chấn động từ
 Điều này có thể tăng lên trừ khi bóng được đánh chính xác vào điểm ngọt của vợt (trung tâm bộ gõ).
 Đây là khu vực của mặt vợt nơi xảy ra hiện tượng xoắn tối thiểu khi va chạm.
 Những cú va chạm bên ngoài vị trí này sẽ làm tăng độ xoắn cũng như các lực và rung động không mong muốn.
-Những điều này có thể không trực tiếp gây ra bệnh hội chứng hội chứng khuỷu tay tennis (Tennis Elbow) (Tennis Elbow) nhưng được coi là làm tình trạng này trở nên trầm trọng hơn khi được xác định.</p></div>
+Những điều này có thể không trực tiếp gây ra bệnh hội chứng hội chứng khuỷu tay tennis (Tennis Elbow) (Tennis Elbow) nhưng được coi làm tình trạng này trở nên trầm trọng hơn khi được xác định.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Việc điều trị phải tuân theo phản ứng chữa lành;
 điều này bao gồm ba giai đoạn: (1) giai đoạn viêm cấp tính, (2) giai đoạn sản xuất collagen và chất nền, và (3) giai đoạn trưởng thành và tái cấu trúc.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Dựa trên phản ứng chữa lành của gân người, một số giai đoạn cụ thể có thể được thực hiện trong quá trình điều trị không phẫu thuật gân khuỷu tay: chức năng được bảo vệ, sức mạnh tổng thể của cánh tay và hoạt động trở lại.
@@ -1919,14 +1937,14 @@ Cú giao bóng trên cao bao gồm các cú đánh lên, lên xuống và giảm
 Cú đánh tiếp đất bao gồm việc chuẩn bị vợt, tăng tốc và theo dõi.
 Mỗi giai đoạn yêu cầu năng lượng được tạo ra và truyền qua khuỷu tay.
 Sự tương tác phức tạp của quá trình truyền năng lượng này được hiểu trong khuôn khổ chuỗi động học (Kinetic Chain).</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Khuỷu tay hoạt động như một mắt xích trong chuỗi động học (Kinetic Chain) của cả cú đánh chạm đất và cú giao bóng (Hình 19.2) .
+            <div class="bilingual-block stanza"><p class="lang-vi">Khuỷu tay hoạt động như một mắt xích trong chuỗi động học (Kinetic Chain) của cả cú đánh nền và cú giao bóng (Hình 19.2) .
 Động năng được tạo ra và truyền tuần tự qua chuỗi.
 Khuỷu tay là mắt xích áp chót trong chuỗi này, tiếp nhận và sau đó bổ sung năng lượng và lực trước khi chuyển chúng sang cổ tay và vợt.
 Sự thiếu hiệu quả ở bất kỳ liên kết nào ở gần hơn sẽ gây ra cơ chế sinh học kém hiệu quả và có thể dẫn đến tăng nguy cơ chấn thương.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Chuyển động ở liên kết khuỷu tay bao gồm gập/duỗi và varus/valgus ở khuỷu tay và lật ngửa/lật sấp ở cẳng tay.
 Trong quá trình chuyển động giao bóng, khuỷu tay di chuyển từ góc gấp 116° sang góc gấp 20°, với tác động bóng ở góc 35°.
 Vòng cung uốn này xảy ra chỉ trong 0,21 giây.
-Vòng cung uốn cong/mở rộng nhỏ hơn nhiều với các cú đánh chạm đất, trung bình là 11° (46–35°) ở bên thuận tay và 18° (48–30°) ở bên trái tay.
+Vòng cung uốn cong/mở rộng nhỏ hơn nhiều với các cú đánh nền, trung bình là 11° (46–35°) ở bên thuận tay và 18° (48–30°) ở bên trái tay.
 Vận tốc góc của khuỷu tay mở rộng trong quá trình hoạt động trên cao được xác định là 982°/s.
 Dữ liệu của Kibler nêu bật những lực bất thường truyền qua khuỷu tay khi chơi quần vợt.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Các cơ và gân xung quanh khuỷu tay tích cực tạo ra năng lượng và lực cần thiết để cơ sinh học hoạt động hiệu quả.
@@ -2020,13 +2038,13 @@ Cơ chế của nó chưa được hiểu đầy đủ nhưng người ta tin r�
 Một tổng quan của Cochrane năm 2006 đã điều tra chín nghiên cứu.
 Trong khi năm nghiên cứu cho thấy ECSW vượt trội hơn liệu pháp giả dược, các tác giả không tìm thấy lợi ích tổng thể có ý nghĩa thống kê.
 Liệu pháp laser cường độ thấp có thể có lợi về mặt lâm sàng nếu sử dụng liều lượng và bước sóng tối ưu.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Mặc dù lợi ích lâu dài là không chắc chắn, châm cứu đã được chứng minh là làm giảm đau sau 2–8 tuần sau khi điều trị.
+            <div class="bilingual-block stanza"><p class="lang-vi">Mặc dù lợi ích lâu dài là không chắc chắn, châm cứu đã được chứng minh làm giảm đau sau 2–8 tuần sau khi điều trị.
 Độc tố botulinum có thể làm giảm đau trong thời gian ngắn nhưng có liên quan đến các tác dụng phụ, chẳng hạn như yếu khi duỗi ngón tay.
 Một nghiên cứu riêng biệt cho thấy không có sự khác biệt giữa tiêm botox và tiêm nước muối.
 Oxit nitric là một yếu tố quan trọng trong việc chữa lành gân.
 Không có gì đáng ngạc nhiên khi nitrat tại chỗ có tác dụng kích thích lưu lượng máu và có thể kích thích sản xuất collagen, đã được chứng minh là có hiệu quả trong việc giảm đau ở khuỷu tay do chơi quần vợt.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Máu tự thân và tiêm PRP đều đã được nghiên cứu.
-Máu tự thân đã được chứng minh là làm giảm đau ở bệnh nhân hội chứng hội chứng khuỷu tay tennis (Tennis Elbow) (Tennis Elbow).
+Máu tự thân đã được chứng minh làm giảm đau ở bệnh nhân hội chứng hội chứng khuỷu tay tennis (Tennis Elbow) (Tennis Elbow).
 Ngoài ra, trong một thử nghiệm ngẫu nhiên, có đối chứng, tiêm máu tự thân được cho là tốt hơn corticosteroid ở tuần thứ 4 và 8.
 Tuy nhiên, những nghiên cứu này đều có quy mô khá nhỏ và do đó rất khó để đưa ra kết luận về hiệu quả của nó.
 PRP là tập trung các tiểu cầu có chứa nồng độ cao các yếu tố tăng trưởng có thể giúp tăng cường quá trình lành gân.
@@ -2077,7 +2095,7 @@ Căng thẳng không ngừng thông qua các vết rách nhỏ ở nguồn gốc
 Tương tự như viêm mỏm lồi cầu ngoài, viêm mỏm lồi cầu trong bao gồm thoái hóa, thoái hóa gân nguyên bào sợi.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Đánh giá tình trạng đau khuỷu tay ở mặt trong của vận động viên phải bao gồm các bệnh lý như chèn ép dây thần kinh trụ, bệnh nội khớp hoặc chấn thương dây chằng bên trụ.
 Việc chẩn đoán là một thách thức, vì một thực thể bệnh lý không loại trừ, nhưng thường bao gồm một chẩn đoán khác.
-Trên thực tế, viêm dây thần kinh trụ được báo cáo là đi kèm với viêm mỏm lồi cầu trong trong 60% trường hợp.</p></div>
+Trên thực tế, viêm dây thần kinh trụ được báo cáo là đi kèm với viêm mỏm lồi cầu trong 60% trường hợp.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Cơn đau thường khởi phát âm ỉ và không có sự kiện kích động cụ thể.
 Cảm giác đau thường xuất hiện ở hoặc chỉ ở phần xa của gân chung cơ gấp-lúp.
 Việc gập cổ tay bị cản trở có thể gây đau.
@@ -2092,7 +2110,7 @@ Mặt khác, một số bệnh nhân có biểu hiện các vùng mỏng ở g�
             <div class="bilingual-block stanza"><p class="lang-vi">Điều trị viêm mỏm lồi cầu trong phần lớn phản ánh điều trị viêm mỏm lồi cầu bên với một số ngoại lệ.
 Các lựa chọn điều trị không phẫu thuật và phẫu thuật được nêu dưới đây.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Quản lý không phẫu thuật là phương pháp điều trị chính và nên bao gồm nghỉ ngơi tương đối, chườm đá, vật lý trị liệu và dùng thuốc không steroid hoặc acetaminophen để giảm đau.
-Việc xem xét lại cơ chế đột quỵ để giảm thiểu tình trạng quá tải cũng có thể hữu ích.
+Việc xem xét lại cơ chế cú đánh để giảm thiểu tình trạng quá tải cũng có thể hữu ích.
 Nẹp chống lực có hiệu quả ở một số bệnh nhân nhưng nên được sử dụng một cách thận trọng vì nó có thể làm trầm trọng thêm bệnh lý thần kinh chèn ép dây thần kinh trụ.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Tiêm corticosteroid tại chỗ mang lại kết quả tốt trong thời gian ngắn, nhưng không có lợi ích lâu dài so với điều trị bảo tồn đơn thuần.
 Stahl và cộng sự.
@@ -2179,7 +2197,7 @@ Vai trò của cả hai cấu trúc là đạt được sự truyền lực chí
 Chấn thương thường liên quan đến những thay đổi trong dòng năng lượng giữa các phân đoạn, chẳng hạn như nếu một phân đoạn bị loại bỏ khỏi chuỗi thì sẽ phải phụ thuộc nhiều hơn vào các phân đoạn khác để bù đắp cho sự mất mát này, điều này có thể dẫn đến tình trạng quá tải mô.
 Tải trọng của cơ thể trong môn quần vợt, để đạt được một cú đánh bóng mạnh, có được bằng cách tác dụng các ngoại lực và nội lực, nghĩa là phải có lực phản ứng mặt đất tốt cũng như lực và mô-men xoắn tốt của cơ. Theo Elliott trong chu kỳ kéo dài-rút ngắn, năng lượng đàn hồi được lưu trữ trong giai đoạn lệch tâm của hành động (độ giãn) được phục hồi một phần, sao cho giai đoạn đồng tâm (rút ngắn) được tăng cường.
 Điều này cũng được hỗ trợ bởi thực tế là hoạt động đồng tâm bắt đầu với các cơ thích hợp dưới sức căng cao hơn mức sẽ được tạo ra nếu chúng co hoàn toàn đồng tâm từ trạng thái nghỉ.
-Các bài báo đã chỉ ra rằng sự căng cơ là điều quan trọng nhất trong quần vợt để có được cú giao bóng và cú chạm đất mạnh mẽ.
+Các bài báo đã chỉ ra rằng sự căng cơ là điều quan trọng nhất trong quần vợt để có được cú giao bóng và cú đánh nền mạnh mẽ.
 Khi thực hiện, độ giãn lệch tâm và sự giả vờ của các cơ vai trước (đặc biệt là các cơ xoay trong) được tối đa hóa bằng lực đẩy chân mạnh mẽ giúp đặt vợt “xuống phía sau và cách xa lưng dưới” để chuẩn bị cho cú công bóng. Trong các cú đánh thuận tay, sự xoay của vai, lớn hơn hông (tạo ra một góc tách biệt) và vị trí của chi trên so với thân trong giai đoạn vung vợt sau của những cú đánh này, sẽ đặt các cơ thích hợp vào trạng thái căng.
 Đây là lý do tại sao trong cú đánh trái tay một góc tách biệt (30° bằng một tay; 20° bằng hai tay) được tạo ra trong động tác vung vợt ra sau để chuẩn bị cho cú vung vợt.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Chìa khóa để phục hồi năng lượng đàn hồi là thời gian giữa các pha kéo dài và rút ngắn của chuyển động.
@@ -2712,7 +2730,7 @@ Tuy nhiên chỉ có một số ít báo cáo các biện pháp thực hiện th
 Palmer và cộng sự.
 là những tác giả duy nhất theo hiểu biết của chúng tôi đã triển khai hai nhánh dành riêng cho thể thao Tác giả Người tham gia Biện pháp can thiệp Kết quả đo lường Kết quả Stanton và cộng sự.
 22 vận động viên nam Bài tập cốt lõi đã cải thiện đáng kể thời gian 50 m tự do và hiệu suất sức mạnh cơ cốt lõi so với đối chứng Sandry và cộng sự.
-13 vận động viên điền kinh Hiệu suất sức mạnh cơ cốt lõi Tốc độ đột quỵ Chiều dài cú đánh Chỉ số đột quỵ 50 m tự do Kiểm tra thăng bằng chuyển động ngôi sao (SEBT) Kiểm tra độ mỏi cơ bụng (AFT) Kiểm tra cơ duỗi lưng (BET) Kiểm tra cầu bên (SBT) Tác giả Người tham gia Đo lường kết quả can thiệp Kết quả Kim et al.
+13 vận động viên điền kinh Hiệu suất sức mạnh cơ cốt lõi Tốc độ cú đánh Chiều dài cú đánh Chỉ số cú đánh 50 m tự do Kiểm tra thăng bằng chuyển động ngôi sao (SEBT) Kiểm tra độ mỏi cơ bụng (AFT) Kiểm tra cơ duỗi lưng (BET) Kiểm tra cầu bên (SBT) Tác giả Người tham gia Đo lường kết quả can thiệp Kết quả Kim et al.
 16 nữ tay vợt bóng rổ Độ dịch chuyển góc của thân cây giảm theo cả hai hướng quay trong nhóm tập luyện cốt lõi Romero-Franco et al.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Sự ổn định trong mặt phẳng trung gian với mắt mở, trung tâm kiểm soát trọng lực ở hướng bên phải và hướng sau được cải thiện sau khi tập luyện bài tập cảm thụ cơ thể Filipa et al.
 20 tay vợt bóng đá nữ Kiểm tra độ ổn định với mắt mở và nhắm Ổn định tư thế Trung tâm kiểm soát trọng lực 6 tuần Chương trình tập thể dục kiểm soát hoặc cảm nhận bản thể bao gồm các bài tập ổn định cơ lõi SEBT Chương trình huấn luyện thần kinh cơ đã cải thiện đáng kể điểm tổng hợp SEBT trên cả hai chi so với nhóm đối chứng Lust et al.
@@ -3059,7 +3077,7 @@ Các bài tập đẳng cự nặng kéo dài đã được chứng minh là có
 Có thể giảm đau trong vài giờ sau 5 lần lặp lại bài tập cơ tứ đầu trong 45 giây (gập đầu gối khoảng 30° đến 60°) (tốt nhất là một chân) ở mức 70% mức co tự nguyện tối đa trên máy duỗi chân.
 Khi bị hạn chế hoặc không có khả năng tiếp cận với thiết bị tập thể dục, squat kiểu Tây Ban Nha là một cách thay thế trong đó có thể thực hiện động tác squat bằng hai chân (gập đầu gối khoảng 70–90°) với sự hỗ trợ của dây đeo cứng cố định ở cẳng chân.
 Cả hai bài tập này có thể được thực hiện trong quá trình tập luyện hoặc thi đấu trong mùa và có thể được thực hiện nhiều lần trong ngày để giảm đau và duy trì tải trọng cho đơn vị gân cơ.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Huấn luyện lập dị và huấn luyện sức đề kháng nặng đã được nghiên cứu trong phục hồi chức năng gân bánh chè.
+            <div class="bilingual-block stanza"><p class="lang-vi">Huấn luyện lập dị và huấn luyện kháng lực nặng đã được nghiên cứu trong phục hồi chức năng gân bánh chè.
 Chương trình tập thể dục đẳng trương, chậm và nặng đã được chứng minh là có tác dụng ngắn hạn và dài hạn trong việc giảm đau và chức năng, kèm theo sự cải thiện bệnh lý trên hình ảnh, tăng luân chuyển collagen và bình thường hóa hình thái sợi cơ.
 van Ark và cộng sự.
 (2015) đã báo cáo rằng các bài tập đẳng trương trong 4 tuần có thể làm giảm cơn đau ở các vận động viên bị viêm gân bánh chè đầu gối (Patellar Tendinopathy) trong mùa giải.
@@ -3107,7 +3125,7 @@ Cũng cần lưu ý rằng hiệu quả của phương pháp điều trị này 
 Loại bỏ cơn đau và cho phép vận động viên tiếp tục thi đấu có thể gây ra tải trọng tối đa lên gân bệnh lý.
 Điều này có thể dần dần làm gân bị quá tải và gây đứt gân.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Việc buộc dây hoặc nẹp cũng có thể được xem xét trong việc quản lý các vận động viên mắc bệnh viêm gân bánh chè đầu gối (Patellar Tendinopathy).
-Đai đã được chứng minh là làm giảm căng gân bánh chè bằng cách thay đổi góc của gân bánh chè mặc dù không tốt hơn băng giả dược.
+Đai đã được chứng minh làm giảm căng gân bánh chè bằng cách thay đổi góc của gân bánh chè mặc dù không tốt hơn băng giả dược.
 Nó cũng có thể được coi là một trong những phương pháp điều trị bổ trợ trong việc quản lý các vận động viên mắc bệnh viêm gân bánh chè đầu gối (Patellar Tendinopathy) trong mùa giải.
 Các kỹ thuật và vật liệu buộc dây khác nhau có thể được thử nghiệm để giúp tay vợt giảm đau và cảm thấy tự tin hơn ở chi bị ảnh hưởng.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Bệnh gân bánh chè thường thấy ở chi đối diện với cánh tay giao bóng, do sự hấp thụ lực của chân trước trong quá trình thực hiện cú giao bóng.
@@ -3264,7 +3282,7 @@ Những kỹ thuật này cũng được sử dụng ở vô số cơ sở đào
 Phần thảo luận sau đây kèm theo các bức ảnh liên quan được đưa vào để nhấn mạnh và trình bày rõ ràng nhiều kỹ thuật được sử dụng trong chuyến tham quan.
 Những kỹ thuật này cũng được sử dụng ở vô số cơ sở đào tạo trên khắp thế giới để điều trị cho các vận động viên phải di chuyển nhiều sang bên.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Q-Tip™ được sử dụng để phết Friar’s Balsam™ lên toàn bộ bàn chân trước từ gốc ngón chân đến giữa bàn chân (Hình 29.2).
-Điều quan trọng đầu tiên là làm cho da dính.
+Điều quan trọng đầu tiên làm cho da dính.
 Lớp da dính giúp lớp đệm giữ nguyên vị trí (xem Hình 29.26 bên dưới).</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Sau khi khô (và chỉ khi khô), nên phun Tuf-Skin™ lên các khu vực tương tự.
 Tuf- Skin™ cũng phải khô trước khi áp dụng lớp đệm (xem Hình 29.27 bên dưới).</p></div>
@@ -3341,7 +3359,7 @@ Do đó, nhu cầu năng lượng tổng thể của trận đấu quần vợt 
             <div class="bilingual-block stanza"><p class="lang-vi">Khi được tiến hành dưới áp lực nhiệt, hiệu suất tập thể dục theo nhịp độ kéo dài (ví dụ: đạp xe) đã được chứng minh là suy giảm dần dần (ví dụ: công suất đầu ra giảm) so với khi thực hiện trong điều kiện mát hơn .
 Sự suy giảm này được cho là xuất phát từ việc thu hẹp chênh lệch nhiệt độ từ lõi đến da theo phản xạ làm tăng lưu lượng máu qua da và từ sự gia tăng nhịp tim qua trung gian nhiệt độ lõi tăng cao và hoạt động thần kinh giao cảm.
 Sự tái phân phối điều hòa nhiệt độ của máu đến các mạch máu ngoại vi, kết hợp với phản ứng nhịp tim trầm trọng hơn, góp phần làm giảm thể tích máu trung tâm và làm ảnh hưởng đến việc duy trì cung lượng tim.
-Những điều chỉnh này đã được chứng minh là làm giảm VO2max, làm tăng cường độ tập luyện tương đối (tức là %VO2max) khi tập luyện với khối lượng công việc tuyệt đối nhất định hoặc giảm công suất phát ra bền vững trong quá trình nỗ lực theo nhịp độ riêng.</p></div>
+Những điều chỉnh này đã được chứng minh làm giảm VO2max, làm tăng cường độ tập luyện tương đối (tức là %VO2max) khi tập luyện với khối lượng công việc tuyệt đối nhất định hoặc giảm công suất phát ra bền vững trong quá trình nỗ lực theo nhịp độ riêng.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Thi đấu quần vợt trong điều kiện môi trường nóng bức gây ra sự gia tăng căng thẳng về nhiệt và sinh lý tương tự như khi tập thể dục nhịp điệu liên tục.
 Trong quần vợt, nhiệt độ cơ thể đã được chứng minh là tăng và ổn định ở khoảng 38,5 °C trong các trận đấu diễn ra trong phạm vi nhiệt độ không khí rộng (14,5–43,1 °C).
 Tuy nhiên, nhiệt độ lõi vượt quá 39,5 °C đã được báo cáo trong khi chơi.</p></div>
@@ -3350,7 +3368,7 @@ Tuy nhiên, nhiệt độ lõi vượt quá 39,5 °C đã được báo cáo tro
 Việc đạt được mức độ căng thẳng cao hơn đã được xác định là một thách thức đối với khả năng duy trì thành tích trong quá trình thi đấu quần vợt theo trận đấu.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Các đặc điểm trận đấu trong khi thi đấu trong tình trạng giảm nhiệt trong phạm vi rộng so với những đặc điểm được ghi lại trong ba hiệp đấu thực tế và mô phỏng trong các điều kiện môi trường khác nhau: thời lượng trận đấu (80–120 phút), thời lượng điểm (6–10 giây), thời lượng giữa các điểm (17–25 giây), tỷ lệ làm việc trên nghỉ ngơi (1:2–1:5) và tỷ lệ chơi hiệu quả (17–28%) .
 Tỷ lệ phần trăm chơi hiệu quả thể hiện thời gian có bóng trong cuộc so với tổng thời gian của trận đấu.
-Nó đã được chứng minh là làm giảm nhiệt và có liên quan chặt chẽ đến cảm giác nhiệt (tức là phản hồi hướng tâm về môi trường nhiệt).
+Nó đã được chứng minh làm giảm nhiệt và có liên quan chặt chẽ đến cảm giác nhiệt (tức là phản hồi hướng tâm về môi trường nhiệt).
 Thật vậy, Morante và cộng sự.
 gợi ý rằng hành vi điều chỉnh nhiệt độ xảy ra trong trận đấu quần vợt thông qua việc giảm thời lượng điểm trung bình khi điều kiện môi trường được đánh giá là nóng khó chịu (tức là cảm giác nhiệt được đánh giá cao). Từ đó người ta đã chứng minh rằng việc tăng thời gian giữa các điểm cũng góp phần bình thường hóa cảm giác nhiệt bằng cách giảm tỷ lệ chơi hiệu quả.
 Điều này thể hiện hai chiến lược mà theo đó những tay vợt cấp cao có thể giảm khối lượng công việc của họ một cách đồng thời tạo ra nhiệt trao đổi chất.</p></div>
@@ -3450,7 +3468,7 @@ Tuy nhiên, có vẻ như các trọng tài đôi khi tùy ý sử dụng như H
 được chứng minh trong một giải đấu quốc tế, với thời gian giữa các điểm tăng lên ~25 giây trong các trận đấu diễn ra ở nhiệt độ ~40 °C. Những quan sát này nêu bật Tổ chức WBGT (°C) Vận động viên có liên quan Khuyến nghị 32.2 ITF Tay vợt quần vợt xe lăn Đình chỉ trận đấu ngay lập tức 32.2 WTA Nữ Đình chỉ trận đấu ngay lập tức 30.1 ITF-WTA Thiếu niên và nữ Nghỉ giải lao 10 phút giữa set thứ hai và thứ ba 30.1 ITF Tay vợt quần vợt xe lăn Đình chỉ thi đấu khi kết thúc hiệp đấu đang diễn ra 28.0 ITF Tay vợt quần vợt xe lăn
 15 phút nghỉ giữa set thứ hai và thứ ba 28.0 Các tay vợt Úc mở rộng Nghỉ 10 phút giữa set thứ hai và thứ ba Liên đoàn quần vợt quốc tế ITF, Hiệp hội quần vợt nữ WTA http://www.itftennis.com/media/163398/163398.pdf, http://www.itftennis.com/media/166656/166656.pdf, http://www.
 wtatennis.com/SEWTATour-Archive/Archive/AboutTheTour/rules2014.pdf, http://www.ausopen.com/en_AU/event_guide/a_z_guide.html Bảng được sửa đổi với sự cho phép của Racinais et al. tầm quan trọng của việc cho phép tay vợt có cơ hội tự điều chỉnh nỗ lực của mình thông qua khoảng thời gian nghỉ ngơi hơi kéo dài giữa các điểm mà không ảnh hưởng đến tính liên tục của trận đấu, nhằm đảm bảo an toàn cho họ và tránh bệnh tật liên quan đến nhiệt.
-Việc ngắt 10 phút ở điều kiện WBGT ở mức 30,3 °C được chứng minh là làm giảm nhiệt độ lõi khoảng ~ 0,25 °C, trong khi ngắt 25 phút ở điều kiện WBGT là 34 °C đã dẫn đến nhiệt độ lõi giảm 0,4 °C.
+Việc ngắt 10 phút ở điều kiện WBGT ở mức 30,3 °C được chứng minh làm giảm nhiệt độ lõi khoảng ~ 0,25 °C, trong khi ngắt 25 phút ở điều kiện WBGT là 34 °C đã dẫn đến nhiệt độ lõi giảm 0,4 °C.
 Do đó, việc thực thi quy tắc điều kiện thời tiết khắc nghiệt của ITF-WTA trong đó cho phép nghỉ 10 phút giữa hiệp thứ hai và hiệp thứ ba trong thi đấu giải đấu, không chỉ ở cấp độ chuyên nghiệp mà cả đối với người nghiệp dư, có thể làm giảm hơn nữa nguy cơ say nắng và khuyến khích thành tích tối ưu (Bảng 35.2).</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Hầu hết các nghiên cứu liên quan đến trận đấu quần vợt, dù trong điều kiện nóng hay mát, đều được tiến hành trên các tay vợt nam nghiệp dư ưu tú hoặc cấp cao.
 Trong khi hầu hết các vận động viên có thể đối phó với các điều kiện môi trường khác nhau với điều kiện được cung cấp nước đầy đủ và lên lịch tập luyện và thi đấu phù hợp (bao gồm cả thời gian phục hồi), thì các vận động viên chuyên nghiệp thường có khả năng đối phó với nhiệt độ cơ thể cao hơn do mức độ thể chất tăng lên và sự thích nghi một phần với stress nhiệt.
@@ -3561,11 +3579,11 @@ Nó nêu bật một cách đơn giản để lên kế hoạch cho một tuần
 Độ bền dành riêng cho quần vợt (30-45 phút) UL Thân nhẹ (Huấn luyện sức mạnh) LH Thân dưới nặng (Huấn luyện sức mạnh) PHỤC HỒI Phục hồi có cấu trúc (Kéo dài, lăn bọt, tắm nước đá) UH Thân trên nặng (Huấn luyện sức mạnh) LL Thân nhẹ (Huấn luyện sức mạnh) Hầu hết các sách và bài viết về định kỳ sẽ cho bạn biết rằng một kế hoạch được thiết kế tốt nên bao gồm giai đoạn chuẩn bị, giai đoạn tiền thi đấu, giai đoạn cạnh tranh và giai đoạn nghỉ ngơi tích cực.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Trọng tâm của giai đoạn chuẩn bị là phát triển mức độ cơ bản về thể lực và sức mạnh, cái mà chúng ta gọi là khả năng điều hòa cơ bản và sức mạnh.
 ví dụ: 20–40 phút tập aerobic ở 70–85% nhịp tim tối đa 3–4 lần mỗi tuần.
-–– Thiết lập cơ sở sức mạnh, ví dụ: rèn luyện sức mạnh bằng bài tập có độ lặp lại cao (10–15 lần lặp lại mỗi hiệp trong 2–3 hiệp), chương trình rèn luyện sức đề kháng thấp.
+–– Thiết lập cơ sở sức mạnh, ví dụ: rèn luyện sức mạnh bằng bài tập có độ lặp lại cao (10–15 lần lặp lại mỗi hiệp trong 2–3 hiệp), chương trình rèn luyện kháng lực thấp.
 –– Bao gồm đào tạo kỹ thuật và chiến thuật, ví dụ: đào tạo trên sân kết hợp những thay đổi trong cơ chế đánh, phát triển các cú đánh mới, v.v. (điều chỉnh từ ).</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">40.2.1.1 Giai đoạn tiền thi đấu Giai đoạn tiền thi đấu là khoảng thời gian dẫn đến mùa giải thi đấu trong đó việc huấn luyện chuyển từ huấn luyện thông thường sang huấn luyện sức mạnh và các hoạt động liên quan chặt chẽ hơn đến nhu cầu của môn thể thao này.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Trong giai đoạn tiền thi đấu, mức cường độ tăng lên và chủ đề trở nên cụ thể hơn về quần vợt: ví dụ: các bài tập luyện trên sân, luyện tập xen kẽ bằng cách sử dụng các khoảng thời gian làm việc/nghỉ ngơi dành riêng cho môn quần vợt.
-–– Cải thiện tốc độ và sức mạnh, chẳng hạn như thực hiện 2–4 hiệp với 8–10 lần lặp lại, giảm khối lượng tập luyện và tăng cường độ của bài tập sức đề kháng.
+–– Cải thiện tốc độ và sức mạnh, chẳng hạn như thực hiện 2–4 hiệp với 8–10 lần lặp lại, giảm khối lượng tập luyện và tăng cường độ của bài tập kháng lực.
 –– Duy trì trạng thái hiếu khí, ví dụ: thực hiện bài tập thể dục nhịp điệu hai lần mỗi tuần trong 20–30 phút.
 –– Cải thiện kỹ năng dành riêng cho quần vợt, ví dụ: tập luyện trên sân tập trung vào các bài tập dành riêng cho quần vợt, các trận đấu tập và các điểm mô phỏng để chuẩn bị thi đấu (phỏng theo ).</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">40.2.1.2 Giai đoạn thi đấu Trong giai đoạn thi đấu, tay vợt tìm cách duy trì thể trạng và sức mạnh của mình trong một khoảng thời gian thi đấu hoặc đạt đỉnh cao trong một cuộc thi cụ thể.
@@ -3592,7 +3610,7 @@ Hãy nhớ rằng khi bạn không duy trì hoặc cải thiện thể lực ho�
             <div class="bilingual-block stanza"><p class="lang-vi">Nghỉ ngơi là điều quan trọng đối với bất kỳ tay vợt nào và điều quan trọng là phải kết hợp nó vào kế hoạch tập luyện của bạn.
 Những người tập luyện hoặc thi đấu ngày này qua ngày khác, không nghỉ ngơi, sẽ không cho cơ thể mình bất kỳ cơ hội nào để phục hồi, thích nghi hoặc phát triển.
 Chúng tôi thường khuyến nghị rằng trong một tuần tập luyện kéo dài 7 ngày, hãy dành một ngày để nghỉ ngơi hoàn toàn với ít hoặc không hoạt động thể chất cường độ cao và một ngày dành cho việc nghỉ ngơi tích cực.
-Nghỉ ngơi tích cực có nghĩa là làm việc gì đó ngoài quần vợt hoặc ngoài việc tập luyện quần vợt (trong phòng tập tạ, tập luyện trên sân, v.v.).
+Nghỉ ngơi tích cực có nghĩa làm việc gì đó ngoài quần vợt hoặc ngoài việc tập luyện quần vợt (trong phòng tập tạ, tập luyện trên sân, v.v.).
 Một ngày trong tuần, chúng tôi khuyên bạn nên đi xe đạp, chơi bóng đá, bơi lội và làm điều gì đó vẫn liên quan đến hoạt động nhưng giúp cơ thể giảm bớt những căng thẳng mà cơ thể gặp phải khi tập luyện quần vợt.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Ngoài ra, cần phải có một hoặc nhiều khoảng thời gian trong năm mà tay vợt phải dành thời gian để tập luyện quần vợt nghiêm túc.
 Một lần nữa, đây là thời gian để phục hồi sau nhu cầu của một mùa giải cạnh tranh, một giai đoạn tập luyện cường độ cao, v.v. Điều này không chỉ mang lại sự nghỉ ngơi về thể chất mà còn mang lại sự nghỉ ngơi về tinh thần, cho phép tay vợt sạc lại pin.</p></div>
@@ -3918,6 +3936,51 @@ window.addEventListener('scroll', function(){
     if (!overlay.classList.contains('open')) return;
     clearTimeout(rt); rt = setTimeout(refit, 220);
   });
+})();
+</script>
+
+<button class="chapter-fab" id="chapter-fab" aria-label="Mục lục chương"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h12v2H3zM3 11h12v2H3zM3 17h8v2H3zM17 9h4v2h-4zM17 15h4v2h-4z"/></svg><span>Chương</span></button>
+<div class="chapter-backdrop" id="chapter-backdrop"></div>
+<aside class="chapter-drawer" id="chapter-drawer" aria-label="Danh sách chương">
+  <div class="cd-head"><h3>Mục lục</h3><button class="cd-close" id="chapter-close" aria-label="Đóng">&times;</button></div>
+  <nav class="cd-list" id="chapter-list"></nav>
+</aside>
+<script>
+(function(){
+  var fab=document.getElementById('chapter-fab'),
+      drawer=document.getElementById('chapter-drawer'),
+      backdrop=document.getElementById('chapter-backdrop'),
+      list=document.getElementById('chapter-list'),
+      book=document.getElementById('book-content');
+  if(!book) return;
+  var heads=[].slice.call(book.querySelectorAll('h2[id]'));
+  if(!heads.length) heads=[].slice.call(book.querySelectorAll('h3[id]'));
+  if(!heads.length) return;
+  var links=[];
+  heads.forEach(function(h){
+    var a=document.createElement('a');
+    a.href='#'+h.id; a.textContent=h.textContent.trim();
+    a.addEventListener('click',function(){drawer.classList.remove('open');backdrop.classList.remove('open');});
+    list.appendChild(a); links.push(a);
+  });
+  function openD(){drawer.classList.add('open');backdrop.classList.add('open');}
+  function closeD(){drawer.classList.remove('open');backdrop.classList.remove('open');}
+  fab.addEventListener('click',openD);
+  backdrop.addEventListener('click',closeD);
+  document.getElementById('chapter-close').addEventListener('click',closeD);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeD();});
+  var ticking=false;
+  function spy(){
+    var cur=null, y=100;
+    for(var i=0;i<heads.length;i++){
+      if(heads[i].getBoundingClientRect().top<=y) cur=heads[i].id; else break;
+    }
+    if(cur) links.forEach(function(l){l.classList.toggle('active',l.getAttribute('href')==='#'+cur);});
+    ticking=false;
+  }
+  function onscroll(){ if(!ticking){ticking=true;requestAnimationFrame(spy);} }
+  window.addEventListener('scroll',onscroll,{passive:true});
+  spy();
 })();
 </script>
 </body>

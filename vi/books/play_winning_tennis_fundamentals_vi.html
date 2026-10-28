@@ -264,6 +264,24 @@ body.no-en #lang-toggle{display:none}
 .book-wrapper { display: block; }
 .book-content { max-width: 880px; margin: 0 auto; }
 </style>
+
+<style>
+/* Floating chapter drawer (added by add_chapter_drawer.py) */
+.chapter-fab{position:fixed;right:20px;bottom:20px;z-index:55;display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:none;border-radius:999px;background:var(--gold,#b8860b);color:#fff;font:600 .9rem/1 system-ui,sans-serif;box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer}
+.chapter-fab svg{width:16px;height:16px;fill:currentColor}
+.chapter-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:110;opacity:0;visibility:hidden;transition:opacity .2s}
+.chapter-backdrop.open{opacity:1;visibility:visible}
+.chapter-drawer{position:fixed;top:0;right:0;height:100%;width:330px;max-width:88vw;z-index:120;background:var(--bg-card,#fff);box-shadow:-8px 0 30px rgba(0,0,0,.18);transform:translateX(100%);transition:transform .25s ease;display:flex;flex-direction:column}
+.chapter-drawer.open{transform:translateX(0)}
+.cd-head{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid var(--rule,#e4ded2)}
+.cd-head h3{margin:0;font-size:1rem;font-family:var(--serif,Georgia,serif)}
+.cd-close{background:none;border:none;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--ink-muted,#555)}
+.cd-list{overflow-y:auto;padding:8px 0;flex:1}
+.cd-list a{display:block;padding:9px 18px;color:var(--ink-muted,#555);text-decoration:none;font-size:.92rem;line-height:1.4;border-left:3px solid transparent;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cd-list a:hover{background:rgba(0,0,0,.04)}
+.cd-list a.active{color:var(--ink,#111);font-weight:600;border-left-color:var(--gold,#b8860b);background:rgba(184,134,11,.08)}
+@media(max-width:560px){.chapter-drawer{width:100%;max-width:100%}}
+</style>
 </head>
 <body class="no-en">
 <nav class="tu-breadcrumb" aria-label="Breadcrumb">
@@ -330,7 +348,7 @@ body.no-en #lang-toggle{display:none}
     <div class="bilingual-block stanza"><p class="lang-vi">Play Winning Tennis with Perfect Fundamentals được thiết kế dành cho người học trực quan và người học lối chơi tìm kiếm sự đơn giản mà không cần cắt góc nhưng cũng không phải là hình ảnh hoàn hảo. Trong lối chơi luôn thay đổi này, nơi có nhiều thế đứng, nhiều cách lấy vợt, đánh bóng và theo sau, tôi không thể bao gồm mọi thứ. Đó là lý do tại sao tôi biên soạn cuốn sách này như một hướng dẫn để bạn có thể hiểu cơ chế sinh học hoạt động như thế nào trong quần vợt và với sự giúp đỡ của chuyên gia địa phương, tôi hy vọng bạn có thể cải thiện đáng kể khả năng chơi quần vợt của mình.</p></div>
     <div class="bilingual-block stanza"><p class="lang-vi">Mặc dù các bản vẽ và sơ đồ được hiển thị từ góc nhìn của người chơi thuận tay phải, nhưng bất kỳ người chơi thuận tay trái nào cũng có thể diễn giải chúng bằng cách sử dụng chế độ xem hình ảnh phản chiếu. Tôi đã bao gồm các chế độ xem bên và phía trước cho hầu hết các nét để việc chuyển đổi sẽ dễ dàng hơn. Ngoài ra, để hiểu rõ hơn về sơ đồ sân, hãy đặt mình vào đó hoặc tưởng tượng rằng bạn đang ở trên sân chơi theo kiểu cụ thể đó (thay vì chỉ nghĩ về người chơi A và người chơi B). Cuối cùng, khi sử dụng thuật ngữ “anh ấy” và “của anh ấy”, tôi hoàn toàn ngụ ý là “cô ấy” và “của cô ấy”.</p></div>
     <h2 id="ch03">Lời Cảm Ơn</h2>
-    <div class="bilingual-block stanza"><p class="lang-vi">Tôi phải đề cập rằng nếu không có sự giúp đỡ của nhiều người, tôi sẽ không trở thành con người và cầu thủ như ngày hôm nay. Tôi muốn cảm ơn những người cố vấn của tôi, Nick Bollettieri, Vic Braden và Dennis Van Der Meer, vì những đóng góp liên tục của họ cho môn thể thao này và cuộc đời quần vợt của tôi.</p></div>
+    <div class="bilingual-block stanza"><p class="lang-vi">Tôi phải đề cập rằng nếu không có sự giúp đỡ của nhiều người, tôi sẽ không trở thành con người và tay vợt như ngày hôm nay. Tôi muốn cảm ơn những người cố vấn của tôi, Nick Bollettieri, Vic Braden và Dennis Van Der Meer, vì những đóng góp liên tục của họ cho môn thể thao này và cuộc đời quần vợt của tôi.</p></div>
     <div class="bilingual-block stanza"><p class="lang-vi">Xin gửi lời cảm ơn đặc biệt tới Jack Groppel và Jim Loehr, những người đã khai sáng cho tôi lĩnh vực tâm lý thể thao và cơ chế sinh học (khi họ nói...tôi lắng nghe!). Tôi cũng xin gửi lời cảm ơn nồng nhiệt nhất tới huấn luyện viên đầu tiên của tôi Ron Steele, cựu huấn luyện viên trưởng đội tuyển Davis Cup Israel, vì đã che chở tôi khi tôi chưa là gì cả. Xin cảm ơn nhóm Chương trình Huấn luyện Hiệu suất Cao của USTA, đặc biệt là Nick Saviano và Paul Lubbers, vì đã nâng cao tầm quan trọng của hoạt động huấn luyện ở Mỹ. Xin gửi lời cảm ơn chân thành tới những người bạn John Lapham và Claudio Yamus của tôi...và tới tất cả học trò của tôi đã gắn bó với tôi suốt những năm qua...bạn là nguồn cảm hứng của tôi.</p></div>
     <div class="bilingual-block stanza"><p class="lang-vi">Cuối cùng, và quan trọng nhất, tôi xin cảm ơn gia đình tôi, đặc biệt là vợ tôi Maura và mẹ tôi Henche Silberstein, nếu không có sự đóng góp và hỗ trợ của họ thì cuốn sách này sẽ chỉ là một điều viển vông.</p></div>
     <h2 id="ch04">Về Cuốn Sách Này</h2>
@@ -358,7 +376,7 @@ body.no-en #lang-toggle{display:none}
         
       </div>
     </figure>
-    <div class="bilingual-block stanza"><p class="lang-vi">Mặc dù hầu hết người chơi chuyên nghiệp đều chọn tư thế mở (chủ yếu dành cho các cú thuận tay) vì tính chuẩn bị và phục hồi nhanh chóng của nó, nhưng bạn nên cân bằng các thông số kỹ thuật của từng thế đứng, thử nghiệm chúng và chọn tư thế của riêng mình. Hãy nhớ rằng một cầu thủ giỏi phải đủ linh hoạt để thích ứng với mọi tình huống chiến thuật và do đó, sự thành thạo trong mọi tư thế là một lợi thế.</p></div>
+    <div class="bilingual-block stanza"><p class="lang-vi">Mặc dù hầu hết người chơi chuyên nghiệp đều chọn tư thế mở (chủ yếu dành cho các cú thuận tay) vì tính chuẩn bị và phục hồi nhanh chóng của nó, nhưng bạn nên cân bằng các thông số kỹ thuật của từng thế đứng, thử nghiệm chúng và chọn tư thế của riêng mình. Hãy nhớ rằng một tay vợt giỏi phải đủ linh hoạt để thích ứng với mọi tình huống chiến thuật và do đó, sự thành thạo trong mọi tư thế là một lợi thế.</p></div>
     <h2 id="ch06">Chuỗi động học cơ thể</h2>
     <h2 id="ch07">Tất cả các cú đánh</h2>
     <div class="bilingual-block stanza"><p class="lang-vi">Chuỗi động năng của cơ thể đề cập đến các phân đoạn của cơ thể hoạt động như một chuỗi (liên kết cơ thể) để tạo ra năng lượng. Bắt đầu với động tác duỗi đầu gối, lực mặt đất được tạo ra (“đối với mọi hành động đều có phản lực bằng nhau và ngược chiều”) và chuyển thành công từ liên kết này sang liên kết khác cho đến khi chúng chạm tới bóng.</p></div>
@@ -418,7 +436,7 @@ body.no-en #lang-toggle{display:none}
     <h2 id="ch09">Thế đứng mở</h2>
     <h2 id="ch10">Ưu điểm:</h2>
     <ul>
-      <li>Chuẩn bị nhanh hơn (đối với các cú chạm đất và đặc biệt cần thiết để trả giao bóng nhanh).</li>
+      <li>Chuẩn bị nhanh hơn (đối với các cú đánh nền và đặc biệt cần thiết để trả giao bóng nhanh).</li>
       <li>Phục hồi nhanh hơn (chân sau sẵn sàng đẩy đến “Điểm hồi vị”).</li>
       <li>Bao quát sân tốt hơn.</li>
     </ul>
@@ -764,7 +782,7 @@ body.no-en #lang-toggle{display:none}
       <li>Ngoài ra, hãy lưu ý đến vị trí của đối thủ trên sân (cú đánh tiếp theo có thể xảy ra), manh mối từ cách cầm vợt, thế đứng, vung vợt sau và vị trí tung bóng khi giao bóng.</li>
     </ul>
     <h2 id="ch29">3. Phán đoán cú đánh tiếp theo</h2>
-    <div class="bilingual-block stanza"><p class="lang-vi">Hiểu được cú đánh tiếp theo có thể xảy ra sẽ không chỉ giúp bạn tiếp cận bóng sớm mà còn cho phép bạn chơi theo chế độ “thí điểm tự động”, do đó, sẽ dẫn bạn chơi trong “khu vực”. Chơi trong “khu vực” là cách diễn đạt mà các cầu thủ chuyên nghiệp sử dụng khi họ chơi trong vùng thoải mái (điểm tiếp xúc hoàn hảo), nơi mọi cú đánh đều hiệu quả, bộ chân nhanh và linh hoạt (nhẹ nhàng) và cảm giác tổng thể tốt. Lưu ý rằng tất cả các ví dụ đều có thể đảo ngược.</p></div>
+    <div class="bilingual-block stanza"><p class="lang-vi">Hiểu được cú đánh tiếp theo có thể xảy ra sẽ không chỉ giúp bạn tiếp cận bóng sớm mà còn cho phép bạn chơi theo chế độ “thí điểm tự động”, do đó, sẽ dẫn bạn chơi trong “khu vực”. Chơi trong “khu vực” là cách diễn đạt mà các tay vợt chuyên nghiệp sử dụng khi họ chơi trong vùng thoải mái (điểm tiếp xúc hoàn hảo), nơi mọi cú đánh đều hiệu quả, bộ chân nhanh và linh hoạt (nhẹ nhàng) và cảm giác tổng thể tốt. Lưu ý rằng tất cả các ví dụ đều có thể đảo ngược.</p></div>
     <figure class="book-figure" style="margin: 28px 0; text-align: center; clear: both;">
       <div style="display:inline-block; max-width:100%; background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:12px;">
         <img src="play_winning_fundamentals_assets/ill_p041_1.jpg" alt="Minh hoạ phán đoán và bộ chân (trang 41)" loading="lazy" style="max-width:100%; height:auto; border-radius:6px; display:block; margin:0 auto;" />
@@ -825,7 +843,7 @@ body.no-en #lang-toggle{display:none}
     </figure>
     <ul>
       <li>Bước nhún tạo nền tảng để phản ứng với quả bóng tiếp theo, đưa bạn từ vị trí cân bằng sang vị trí giống như lò xo. Phản ứng này sẽ diễn ra sau bước bùng nổ đầu tiên. Nó bắt đầu như một cú nhảy nhỏ trong không khí. Việc này nên được thực hiện mọi lúc trong thời điểm, ngay trước khi vợt của đối thủ tiếp xúc với bóng.</li>
-      <li>Thời gian là thành phần quan trọng nhất của bước phân tách. Khi bóng chạm dây vợt đối phương, bạn phải đứng trên mặt đất (1). Khi bạn tiếp đất (2), cơ thể bạn tích trữ năng lượng (và vào vị trí cân bằng) và do đó bạn có thể di chuyển nhanh chóng theo bất kỳ hướng nào, tùy theo cú đánh của đối thủ (bao gồm di chuyển lùi để thực hiện cú đánh qua đầu và tiến về phía trước để thực hiện cú vô-lê).</li>
+      <li>Thời gian là thành phần quan trọng nhất của bước phân tách. Khi bóng chạm dây vợt đối phương, bạn phải đứng trên mặt đất (1). Khi bạn tiếp đất (2), cơ thể bạn tích trữ năng lượng (vào vị trí cân bằng) và do đó bạn có thể di chuyển nhanh chóng theo bất kỳ hướng nào, tùy theo cú đánh của đối thủ (bao gồm di chuyển lùi để thực hiện cú đánh qua đầu và tiến về phía trước để thực hiện cú vô-lê).</li>
     </ul>
     <div class="bilingual-block stanza"><p class="lang-vi">Lưu ý: Đảm bảo không thực hiện bước nhún sau khi bóng rời khỏi dây vợt đối phương. Đó là lý do tại sao bạn nên thực hiện chia tách ngay trước điểm tiếp xúc thực sự của đối thủ.</p></div>
     <figure class="book-figure" style="margin: 28px 0; text-align: center; clear: both;">
@@ -865,7 +883,7 @@ body.no-en #lang-toggle{display:none}
         
       </div>
     </figure>
-    <div class="bilingual-block stanza"><p class="lang-vi">Trên sân đất nện, luôn có độ trượt nhất định. Nếu bạn chơi với tư thế vuông góc, thay vì bước về phía trước như khi chơi trên sân cứng, hãy trượt chân trước, từ đó tạo ra thế đứng ổn định hơn. Ngoài ra, trong các cú chạm đất, khi bạn đến gần bóng, hãy luôn thực hiện các bước điều chỉnh nhỏ để tinh chỉnh khoảng cách giữa bạn và bóng nhằm có điểm tiếp xúc nhất quán.</p></div>
+    <div class="bilingual-block stanza"><p class="lang-vi">Trên sân đất nện, luôn có độ trượt nhất định. Nếu bạn chơi với tư thế vuông góc, thay vì bước về phía trước như khi chơi trên sân cứng, hãy trượt chân trước, từ đó tạo ra thế đứng ổn định hơn. Ngoài ra, trong các cú đánh nền, khi bạn đến gần bóng, hãy luôn thực hiện các bước điều chỉnh nhỏ để tinh chỉnh khoảng cách giữa bạn và bóng nhằm có điểm tiếp xúc nhất quán.</p></div>
     <div class="bilingual-block stanza"><p class="lang-vi">Nếu bóng ở xa bạn, ngay sau bước nhún chân (1), trước tiên hãy xoay vai tương ứng bằng cách dồn trọng lượng lên chân bên ngoài hoặc phía bạn đang chạy tới (2), đồng thời trượt chân đó về phía giữa trọng lượng cơ thể của bạn (Bước thả).</p></div>
     <div class="bilingual-block stanza"><p class="lang-vi">Khi bạn sang ngang, sử dụng bước chéo, chạy tới bóng với các bước rộng, di chuyển cả hai tay để tăng tốc tới bóng (3). Sử dụng vợt để giữ thăng bằng khi bạn di chuyển tay. Sau khi bạn tiếp cận được quả bóng, cần phải thực hiện các bước tinh chỉnh nhỏ để tạo ra điểm tiếp xúc hoàn hảo. Mắt phải tập trung vào bóng và đầu giữ cố định trong suốt cú đánh.</p></div>
     <figure class="book-figure" style="margin: 28px 0; text-align: center; clear: both;">
@@ -1171,7 +1189,7 @@ body.no-en #lang-toggle{display:none}
       </div>
     </figure>
     <ul>
-      <li>Kẹt hoặc tránh xa đối thủ. Khi đánh một cú thuận tay xoáy ngang về phía bên phải của đối thủ (thuận tay), bạn có thể cản trở cầu thủ và khi đánh sang trái của anh ta (trái tay), bóng sẽ rời xa anh ta (áp dụng nguyên tắc tương tự khi đánh các cú trái tay xoáy ngang).</li>
+      <li>Kẹt hoặc tránh xa đối thủ. Khi đánh một cú thuận tay xoáy ngang về phía bên phải của đối thủ (thuận tay), bạn có thể cản trở tay vợt và khi đánh sang trái của anh ta (trái tay), bóng sẽ rời xa anh ta (áp dụng nguyên tắc tương tự khi đánh các cú trái tay xoáy ngang).</li>
       <li>Sử dụng hiệu quả cho các cú thuận tay từ trong ra ngoài.</li>
     </ul>
     <h2 id="ch67">Bóng phẳng (Nhìn ngang)</h2>
@@ -1452,7 +1470,7 @@ body.no-en #lang-toggle{display:none}
     </ul>
     <h2 id="ch111">Nhược điểm:</h2>
     <ul>
-      <li>Khó kiểm soát tốt mặt vợt khi thực hiện các cú chạm đất.</li>
+      <li>Khó kiểm soát tốt mặt vợt khi thực hiện các cú đánh nền.</li>
     </ul>
     <figure class="book-figure" style="margin: 28px 0; text-align: center; clear: both;">
       <div style="display:inline-block; max-width:100%; background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:12px;">
@@ -1901,6 +1919,51 @@ window.addEventListener('scroll', function(){
     if (!overlay.classList.contains('open')) return;
     clearTimeout(rt); rt = setTimeout(refit, 220);
   });
+})();
+</script>
+
+<button class="chapter-fab" id="chapter-fab" aria-label="Mục lục chương"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h12v2H3zM3 11h12v2H3zM3 17h8v2H3zM17 9h4v2h-4zM17 15h4v2h-4z"/></svg><span>Chương</span></button>
+<div class="chapter-backdrop" id="chapter-backdrop"></div>
+<aside class="chapter-drawer" id="chapter-drawer" aria-label="Danh sách chương">
+  <div class="cd-head"><h3>Mục lục</h3><button class="cd-close" id="chapter-close" aria-label="Đóng">&times;</button></div>
+  <nav class="cd-list" id="chapter-list"></nav>
+</aside>
+<script>
+(function(){
+  var fab=document.getElementById('chapter-fab'),
+      drawer=document.getElementById('chapter-drawer'),
+      backdrop=document.getElementById('chapter-backdrop'),
+      list=document.getElementById('chapter-list'),
+      book=document.getElementById('book-content');
+  if(!book) return;
+  var heads=[].slice.call(book.querySelectorAll('h2[id]'));
+  if(!heads.length) heads=[].slice.call(book.querySelectorAll('h3[id]'));
+  if(!heads.length) return;
+  var links=[];
+  heads.forEach(function(h){
+    var a=document.createElement('a');
+    a.href='#'+h.id; a.textContent=h.textContent.trim();
+    a.addEventListener('click',function(){drawer.classList.remove('open');backdrop.classList.remove('open');});
+    list.appendChild(a); links.push(a);
+  });
+  function openD(){drawer.classList.add('open');backdrop.classList.add('open');}
+  function closeD(){drawer.classList.remove('open');backdrop.classList.remove('open');}
+  fab.addEventListener('click',openD);
+  backdrop.addEventListener('click',closeD);
+  document.getElementById('chapter-close').addEventListener('click',closeD);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeD();});
+  var ticking=false;
+  function spy(){
+    var cur=null, y=100;
+    for(var i=0;i<heads.length;i++){
+      if(heads[i].getBoundingClientRect().top<=y) cur=heads[i].id; else break;
+    }
+    if(cur) links.forEach(function(l){l.classList.toggle('active',l.getAttribute('href')==='#'+cur);});
+    ticking=false;
+  }
+  function onscroll(){ if(!ticking){ticking=true;requestAnimationFrame(spy);} }
+  window.addEventListener('scroll',onscroll,{passive:true});
+  spy();
 })();
 </script>
 </body>

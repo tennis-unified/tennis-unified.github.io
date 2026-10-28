@@ -264,6 +264,24 @@ body.no-en #lang-toggle{display:none}
 .book-wrapper { display: block; }
 .book-content { max-width: 880px; margin: 0 auto; }
 </style>
+
+<style>
+/* Floating chapter drawer (added by add_chapter_drawer.py) */
+.chapter-fab{position:fixed;right:20px;bottom:20px;z-index:55;display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:none;border-radius:999px;background:var(--gold,#b8860b);color:#fff;font:600 .9rem/1 system-ui,sans-serif;box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer}
+.chapter-fab svg{width:16px;height:16px;fill:currentColor}
+.chapter-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:110;opacity:0;visibility:hidden;transition:opacity .2s}
+.chapter-backdrop.open{opacity:1;visibility:visible}
+.chapter-drawer{position:fixed;top:0;right:0;height:100%;width:330px;max-width:88vw;z-index:120;background:var(--bg-card,#fff);box-shadow:-8px 0 30px rgba(0,0,0,.18);transform:translateX(100%);transition:transform .25s ease;display:flex;flex-direction:column}
+.chapter-drawer.open{transform:translateX(0)}
+.cd-head{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid var(--rule,#e4ded2)}
+.cd-head h3{margin:0;font-size:1rem;font-family:var(--serif,Georgia,serif)}
+.cd-close{background:none;border:none;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--ink-muted,#555)}
+.cd-list{overflow-y:auto;padding:8px 0;flex:1}
+.cd-list a{display:block;padding:9px 18px;color:var(--ink-muted,#555);text-decoration:none;font-size:.92rem;line-height:1.4;border-left:3px solid transparent;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cd-list a:hover{background:rgba(0,0,0,.04)}
+.cd-list a.active{color:var(--ink,#111);font-weight:600;border-left-color:var(--gold,#b8860b);background:rgba(184,134,11,.08)}
+@media(max-width:560px){.chapter-drawer{width:100%;max-width:100%}}
+</style>
 </head>
 <body class="no-en">
 <nav class="tu-breadcrumb" aria-label="Breadcrumb">
@@ -358,7 +376,7 @@ chiến thuật, chiến lược và lựa chọn cú đánh, lùi lại hay và
 Các cuộc tập trận được đưa vào để giúp tay vợt đưa ra những quyết định như vậy một cách tự nhiên.
 Sau khi hiểu được những điều cơ bản về chiến thuật, người đọc sẽ chuyển sang các cách đánh khác nhau và cách nắm bắt các chi tiết như cách cầm vợt và thế đứng chính xác để cải thiện cách chơi cơ bản của trẻ.
 cú tiếp đất, cú vô lê, cú lốp bóng, cú sút xa và cú smash (overhead) cũng như cách thức và thời điểm sử dụng từng loại để phù hợp với chiến thuật đã học.
-động tác chạm đất cơ bản, cú vô lê và lốp bóng — để thực hiện, cũng như cách thực hiện cú cắt bóng và thảo luận về ưu và nhược điểm của việc sử dụng cú trái tay (backhand) hai tay.
+động tác đánh nền cơ bản, cú vô lê và lốp bóng — để thực hiện, cũng như cách thực hiện cú cắt bóng và thảo luận về ưu và nhược điểm của việc sử dụng cú trái tay (backhand) hai tay.
 trò chơi: sự khác biệt giữa đánh đơn và đánh đôi, hợp tác với đối tác và cách điều chỉnh các kỹ năng đã có được cho phù hợp.
 đàn em có thể sử dụng để cải thiện kỹ năng, khả năng phán đoán, phối hợp tay và mắt và mức độ thể lực chung.
 Cuối cùng, một Bài kiểm tra thú vị sẽ kiểm tra xem học sinh đã học được bao nhiêu.</p></div>
@@ -614,7 +632,7 @@ Nhược điểm chính của sân cứng là chúng có bề mặt không tho�
       <div class="bilingual-block stanza"><p class="lang-vi">SÂN ĐẤT SÉT Sân đất sét thường được làm từ cùng loại đất sét như gạch xây nhà.
 Chúng phổ biến ở các quốc gia có khí hậu nóng, nhưng vì chúng đòi hỏi rất nhiều kỹ năng để xây dựng và bảo trì nên chúng đắt tiền và thường chỉ được tìm thấy trong các câu lạc bộ độc quyền.
 Trong số tất cả các bề mặt sân tennis, mặt sân đất nện là mặt sân có tốc độ chậm nhất và do đó tay vợt có nhiều thời gian nhất để xếp hàng và đánh bóng.
-Rất khó để đánh bại những người chiến thắng hoàn toàn trên sân đất nện, và những tay vợt có thành tích tốt nhất trên mặt sân này là những vận động viên đánh cơ bản khỏe mạnh và thích những pha đánh bóng kéo dài.
+Rất khó để đánh bại những cú ghi điểm trực tiếp hoàn toàn trên sân đất nện, và những tay vợt có thành tích tốt nhất trên mặt sân này là những vận động viên đánh cơ bản khỏe mạnh và thích những pha đánh bóng kéo dài.
 Bí quyết là tay vợt tiếp tục gây áp lực lên đối thủ ngay từ đường cuối sân, chờ đợi thời điểm thích hợp trước khi lao vào tiêu diệt.
 Những cú đánh rơi đặc biệt hiệu quả trên sân đất nện vì đối thủ luôn ở cuối sân và bởi vì, với nhiều xoáy xuống, bóng sẽ nảy thấp hơn và mềm hơn nhiều so với trên các bề mặt khác.
 Những tay vợt sân đất nện thông thường phải tập luyện chăm chỉ để rèn luyện thể lực vì các trận đấu kéo dài hơn nhiều.
@@ -659,7 +677,7 @@ Nhưng sau một chút hướng dẫn, về nguyên tắc, trò chơi tennis r�
 Điểm là từ cha mẹ hoặc huấn luyện viên, hầu hết các tay vợt trẻ sớm nhận được điểm nhờ chiến thắng trong các pha giao bóng, bắt đầu khi một trong những người đánh cơ bản, tay vợt giao bóng cho người kia.
 Mỗi đấu thủ phải lần lượt đưa bóng qua lưới (trước khi bóng nảy hai lần) và sang phần sân đối phương.
 Tay vợt đầu tiên thất bại trong mục tiêu này sẽ mất điểm.
-Tay vợt được phép chuyền bóng hoặc để bóng nảy một lần, nhưng phải để quả giao bóng nảy một lần trước khi đánh bóng.
+Tay vợt được phép đánh vô-lê hoặc để bóng nảy một lần, nhưng phải để quả giao bóng nảy một lần trước khi đánh bóng.
 Điều này nghe có vẻ đơn giản nhưng có một số quy tắc chính làm phức tạp mọi thứ và tất cả tay vợt nên hiểu.
 TRANG THIẾT BỊ, TÒA ÁN VÀ Nghi thức</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi">WETHOGARTHER il</p></div>
@@ -716,7 +734,7 @@ Ngay cả ở những câu lạc bộ không có quy định nghiêm ngặt về
 Bộ đồ tốt giúp thể hiện hình ảnh của sự tự tin và năng lực, đồng thời nó cũng được coi là dấu hiệu tôn trọng đối thủ.
 KNOCK-UP Tất cả các trận đấu tennis phải được bắt đầu bằng một trận knock-out kéo dài 5 phút.
 Trong thời gian này, tay vợt thực hiện những cú đánh nhẹ nhàng để dễ dàng chơi trước khi bắt đầu ghi điểm.</p></div>
-      <div class="bilingual-block stanza"><p class="lang-vi">TRẢ LẠI BÓNG ĐI LẠI Việc đối phương gửi bóng lạc về đầu máy chủ giữa các điểm là lịch sự.
+      <div class="bilingual-block stanza"><p class="lang-vi">TRẢ LẠI BÓNG ĐI LẠI Việc đối phương gửi bóng lạc về đầu người giao bóng giữa các điểm là lịch sự.
 Tay vợt nên hét lên ‘bóng đang tới’ để cảnh báo người giao bóng (server) rằng bóng đang trên đường quay trở lại.
 Tuy nhiên, anh ta không nên gửi bóng trả lại trong một thời điểm.
 Ví dụ: nếu quả giao bóng đầu tiên không thành công, người trả giao bóng (receiver) phải đánh bóng trở lại lưới hoặc bắt bóng và bỏ vào túi của mình.
@@ -994,7 +1012,7 @@ Những người mới chơi sẽ thấy dễ dàng hơn khi bắt đầu giao b
       <div class="bilingual-block stanza"><p class="lang-vi">THE KNOCK-UP Sau khi các tay vợt đã khởi động và giãn cơ, thông thường sẽ có một cú knock-up trước khi trận đấu bắt đầu.
 Không có quy tắc cứng rắn và nhanh chóng nào cho những pha knock-out trong môn tennis trẻ, nhưng các tay vợt có xu hướng làm theo sự hướng dẫn của các chuyên gia.
 Trong tennis chuyên nghiệp, tay vợt có năm phút để khởi động tất cả các cú đánh của mình.
-Họ thường chia thời gian này thành ba phút để thực hành các cú chạm đất, vô lê và đập bóng và hai phút để thực hành giao bóng.</p></div>
+Họ thường chia thời gian này thành ba phút để thực hành các cú đánh nền, vô lê và đập bóng và hai phút để thực hành giao bóng.</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi">THỰC HÀNH PHÁT GIAO Hai phút cuối cùng nên được dành rõ ràng để thực hành giao bóng.
 Để tránh nguy cơ chấn thương, tốt nhất là chỉ nên giao bóng luân phiên cho các đấu thủ.
 Một đấu thủ giao bóng ở phần sân bên trái (deuce), sau đó người kia giao bóng vào phần sân bên phải (có lợi).
@@ -1064,7 +1082,7 @@ Hầu hết các cú giao bóng thứ hai đều được thực hiện với đ
 Không có đường tắt.
 Tay vợt chỉ cần dành thời gian luyện tập kỹ thuật của mình nhiều lần.
 Một rổ bóng và một sân trống là cách tốt để một tay vợt trau dồi khả năng giao bóng của mình cho đến khi nó trở thành bản chất thứ hai đối với anh ta.</p></div>
-      <div class="bilingual-block stanza"><p class="lang-vi">PHỤC VỤ MỤC TIÊU Lúc đầu, các tay vợt cấp dưới rất vui khi thực hiện được cú giao bóng của họ qua lưới và vào đúng ô giao bóng.
+      <div class="bilingual-block stanza"><p class="lang-vi">PHỤC VỤ MỤC TIÊU Lúc đầu, các tay vợt cấp dưới rất vui khi thực hiện được cú giao bóng của họ qua lưới vào đúng ô giao bóng.
 Nhưng khi tay vợt tiến bộ và giỏi hơn, họ sẽ muốn bắt đầu đặt cú giao bóng của mình vào các phần khác nhau của ô giao bóng.
 Có ba vị trí mà tay vợt nên nhắm tới: góc trên cùng bên trái của ô dịch vụ;
 góc trên bên phải;
@@ -1077,7 +1095,7 @@ bên trái, bên phải hoặc giữa hộp dịch vụ.
 Nếu đối thủ của anh ta yếu hơn về phía thuận tay thì anh ta nên giao bóng về phía thuận tay của mình, và nếu anh ta yếu hơn về phía trái tay thì anh ta nên giao bóng về phía này.
 Nếu một đấu thủ có một cú giao bóng cứng, anh ta có thể muốn giao bóng vào người đối thủ.
 Kỹ thuật này ngăn cản đối phương có thời gian và không gian để đưa tay cầm vợt vào đúng vị trí để đánh trả.</p></div>
-      <div class="bilingual-block stanza"><p class="lang-vi"><strong>BÀI TẬP GIAO BÓNG VÀ BÓNG CHUYỀN Mặc dù giao bóng và chuyền bóng là một chiến thuật nâng cao, nhưng tay vợt có thể muốn thử một số bài tập giao bóng và chuyền bóng.
+      <div class="bilingual-block stanza"><p class="lang-vi"><strong>BÀI TẬP GIAO BÓNG VÀ BÓNG CHUYỀN Mặc dù giao bóng và đánh vô-lê là một chiến thuật nâng cao, nhưng tay vợt có thể muốn thử một số bài tập giao bóng và đánh vô-lê.
 Tay vợt nên nhờ huấn luyện viên hoặc tay vợt có kinh nghiệm (nếu sẵn sàng và sẵn sàng) đứng bên kia lưới cho họ và trả giao bóng.
 Ngay sau khi giao bóng, tay vợt nên lao vào lưới và thực hiện cú vô lê.
 Đối tác cấp trên nên thay đổi cú trả bóng của mình - một số cao, một số thấp, một số ở giữa và một số ra ngoài - để đối tác cấp dưới phải tập trung thực hiện các cú vô lê.
@@ -1089,7 +1107,7 @@ Nếu một đấu thủ bị dẫn 0-40 và đây là lần giao bóng thứ ha
 Tuy nhiên, nếu tay vợt đang dẫn trước 40-0, thì anh ta có thể mạo hiểm và giành được quân át.
 Đó là lẽ thường tình, nhưng nó vẫn đáng được chỉ ra cho nhiều tay vợt cấp dưới.
 Ngay cả khi cú giao bóng của tay vợt không mạnh lắm, họ vẫn nên ném cú giao bóng tương đối nhanh, khó, chỉ để giữ đối thủ của họ cảnh giác.</p></div>
-      <div class="bilingual-block stanza"><p class="lang-vi">PHỤC VỤ VÀ BÓNG CHUYỆN HOẶC Ở LẠI Một lĩnh vực khác mà đàn em phải đối mặt với tình thế tiến thoái lưỡng nan, đó là nên giao bóng và chuyền bóng hay ở lại sau vạch cuối sân sau khi họ đã giao bóng.
+      <div class="bilingual-block stanza"><p class="lang-vi">PHỤC VỤ VÀ BÓNG CHUYỆN HOẶC Ở LẠI Một lĩnh vực khác mà đàn em phải đối mặt với tình thế tiến thoái lưỡng nan, đó là nên giao bóng và đánh vô-lê hay ở lại sau vạch cuối sân sau khi họ đã giao bóng.
 Câu trả lời sẽ phụ thuộc vào cách họ giao bóng, phong cách chơi chung của họ, cách đối thủ trả bóng và họ đang chơi trên mặt sân nào.
 Một tay vợt có cú giao bóng mạnh nên cân nhắc việc chơi kiểu giao bóng và vô lê, chắc chắn là sau cú giao bóng đầu tiên của anh ta, tất nhiên trừ khi anh ta chơi trên một mặt sân rất chậm, chẳng hạn như đất nện, điều này sẽ làm mất đi sức mạnh của cú giao bóng của anh ta.
 Tuy nhiên, nếu một đấu thủ có cú giao bóng yếu và đối thủ của anh ta có xu hướng trả giao bóng rất mạnh, thì anh ta nên nghĩ đến việc ở lại sau đường cuối sân sau khi giao bóng.
@@ -1124,7 +1142,7 @@ Mỗi khi họ nhận được một quả giao bóng, họ sẽ lùi một bư�
       <div class="bilingual-block stanza"><p class="lang-vi"><strong>DRILLS 2 và 2a 2 Giao bóng vào ô giao bóng, đấu thủ phải chỉ định mục tiêu trước mỗi lần giao bóng (xem hình minh họa phía sau).
 2a Giao bóng tới các khu vực của ô giao bóng, tay vợt chỉ định các khu vực trước khi giao bóng.
 Nếu anh ta chạm vào khu vực đó thì anh ta sẽ giành được điểm, nếu không anh ta sẽ mất điểm.</strong></p></div>
-      <div class="bilingual-block stanza"><p class="lang-vi">KHOAN Tay vợt đang chơi tính điểm, máy chủ sẽ mất điểm nếu họ không thực hiện cú đánh yêu thích của mình trong lần chạm đất đầu tiên.</p></div>
+      <div class="bilingual-block stanza"><p class="lang-vi">KHOAN Tay vợt đang chơi tính điểm, người giao bóng sẽ mất điểm nếu họ không thực hiện cú đánh yêu thích của mình trong lần chạm đất đầu tiên.</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi">PHỤC VỤ TOPSPIN |
 ©" PHỤC VỤ VÀ TRẢ LẠI Hầu hết các cú giao bóng thứ hai được thực hiện với độ xoáy nhiều hơn và tốc độ ít hơn để đảm bảo cú giao bóng diễn ra trên sân. Hình 1 cho thấy góc của vợt khi đánh quả giao bóng phẳng đầu tiên. So sánh điều này với hình 2 và 3 để thấy các góc khác nhau cần thiết cho cú giao bóng cắt và xoáy lên.</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi">PHỤC VỤ TRÁI Bạn có thể thấy dễ dàng hơn khi bắt đầu đặt bóng hơi xa phía vợt của cơ thể.
@@ -1160,7 +1178,7 @@ Tay vợt cũng phải đảm bảo rằng họ bao phủ cả hai mặt của �
 Họ sẽ có thể phản ứng nhanh hơn nhiều nếu họ kiễng chân và sẵn sàng di chuyển.
 Vợt phải được giơ ra phía trước, tay cầm vợt ở vị trí cầm vợt và tay còn lại đỡ vào cổ vợt nếu họ đánh trái tay bằng một tay hoặc bằng cả hai tay trên cán vợt ở tư thế sẵn sàng nếu họ đánh trái tay bằng hai tay.
 Đầu gối phải hơi cong và hai chân rộng bằng vai.
-Người nhận bây giờ có thể tập trung vào máy chủ.</p></div>
+Người nhận bây giờ có thể tập trung vào người giao bóng.</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi">LOẠI TRẢ LẠI NÀO Nếu đối phương giao bóng mạnh và nhanh, điều duy nhất mà một đấu thủ đối phương có thể làm là chặn bóng lại cho anh ta.
 Thay vì đánh đúng bằng một cú đánh thích hợp, tay vợt chỉ cần chặn bóng bằng vợt của mình để làm nó chậm lại và đưa bóng trở lại lưới.
 Một tay vợt thường sẽ quen với cú giao bóng mạnh của đối phương trong trận đấu, dần dần học cách trả bóng tốt nhất, cho đến khi anh ta có thể trả bóng nhanh chóng, thay vì chỉ đơn giản là trả bóng nhanh.</p></div>
@@ -1200,7 +1218,7 @@ Khi người nhận được cộng hoặc trừ 10, tay vợt sẽ thay đổi 
 Điều này giúp người nhận tập trung vào việc đưa ra quyết định về việc trả giao bóng.</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi">KHOAN Tay vợt tập luyện trên sân đơn.
 Người nhận bóng thực hành cú trả bóng của mình, sau đó hồi phục trên đường cuối sân (baseline) để sẵn sàng nhận cú đánh tiếp theo.</p></div>
-      <div class="bilingual-block stanza"><p class="lang-vi">KHOAN 4 Máy chủ nhận được một điểm cho mỗi cú giao bóng được thực hiện, trong khi người nhận nhận được một điểm cho mỗi lần trả bóng về phía trái tay của máy chủ.
+      <div class="bilingual-block stanza"><p class="lang-vi">KHOAN 4 Máy chủ nhận được một điểm cho mỗi cú giao bóng được thực hiện, trong khi người nhận nhận được một điểm cho mỗi lần trả bóng về phía trái tay của người giao bóng.
 Khi một trong các tay vợt đạt được 10 điểm, tay vợt sẽ đổi vai.</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi"><strong>DRILLS 5 và 5a 5 Người giao bóng giao bóng thứ hai về phía trái tay của người trả giao bóng (receiver), và người trả giao bóng (receiver) phải chạy vòng quanh bóng để thực hiện các cú đánh thuận tay luân phiên qua sân và dọc biên.
 5aNgười giao bóng giao bóng thứ hai đến phía trái tay của người nhận và người nhận phải chọn những quả giao bóng nào để chạy xung quanh để chơi thuận tay.</strong></p></div>
@@ -1213,7 +1231,7 @@ Sau khi có thể đưa bóng vào, bạn cần di chuyển đối thủ để g
 Đây là 'tennis gà'.
 Nếu đối phương đánh bóng ngắn chạm vạch giao bóng, tay vợt nên tận dụng cơ hội để tấn công vào lưới.
 Họ nên đưa bóng sâu vào góc và áp sát vào lưới để thực hiện cú vô lê tiếp theo.
-Rất ít tay vợt trẻ có thể đánh bại đối thủ trên lưới bằng một cú chuyền bóng, đặc biệt nếu nó ở phía trái tay của họ.
+Rất ít tay vợt trẻ có thể đánh bại đối thủ trên lưới bằng một cú vô-lê, đặc biệt nếu nó ở phía trái tay của họ.
 Thông thường, lựa chọn duy nhất của họ khi đối mặt với đối thủ trên lưới là thực hiện một cú lốp bóng.
 Trừ khi cú lốp bóng hoàn hảo, nếu không thì tay vợt vào lưới sẽ có thể lùi lại, đập bóng và giành được điểm.
 Trái: Nếu bóng chạm nửa sân, hãy tận dụng cơ hội để thực hiện một cú tấn công rồi tiến vào lưới để thực hiện cú vô lê.</p></div>
@@ -1247,7 +1265,7 @@ Tay vợt phải hồi phục trở lại qua các hình nón giữa mỗi cú �
       <div class="bilingual-block stanza"><p class="lang-vi">hãy học và thành thạo nó càng sớm càng tốt để có thể chơi các cuộc đánh cơ bản.
 Những cú thuận tay (forehand) có lẽ là những cú đánh dễ thực hiện nhất và những người trẻ nên mắc ít lỗi nhất với chúng.
 Cú thuận tay sẽ trở thành nền tảng và hy vọng là điểm mạnh trong toàn bộ trận đấu của đàn em.
-Có ba kiểu động tác chạm đất ở phía thuận tay: phẳng, xoáy lên và cắt lát.
+Có ba kiểu động tác đánh nền ở phía thuận tay: phẳng, xoáy lên và cắt lát.
 Cú đánh thuận tay khá hiếm và thường chỉ được sử dụng trên các bề mặt nhanh hơn, độ nảy thấp.
 Tốt hơn hết, những người trẻ nên tập trung vào các cú thuận tay (forehand) phẳng và xoáy lên, điều này sẽ được giải thích đầy đủ ở các trang sau.
 Ngược lại: Cú thuận tay của Martina Hingis của Thụy Sĩ là một trong những cú thuận tay (forehand) hay nhất trong trò chơi dành cho nữ.</p></div>
@@ -1281,7 +1299,7 @@ Nhiều chuyên gia hàng đầu lao vào lưới mỗi khi đối thủ chuyề
 Một tay vợt sẽ ở gần đối thủ hơn khi anh ta tung cú vô lê, nên sẽ dễ dàng thực hiện cú đánh thắng hơn.
 Từ lưới, tay vợt có thể thực hiện cú vô lê ở độ cao thấp so với mặt đất, sâu và ở một góc.
 Đối phương khó bắt được một quả vô-lê (volley) tốt và anh ta sẽ phải chịu thêm áp lực vì có ít thời gian để phản ứng hơn.
-Nếu anh ta không thể thực hiện một cú chuyền bóng tốt, anh ta sẽ buộc phải đưa bóng thẳng trở lại lưới cho người bắt vô lê, điều này có thể tạo ra một cú đánh thắng.
+Nếu anh ta không thể thực hiện một cú vô-lê tốt, anh ta sẽ buộc phải đưa bóng thẳng trở lại lưới cho người bắt vô lê, điều này có thể tạo ra một cú đánh thắng.
 Lựa chọn thay thế duy nhất của anh ấy là thực hiện một cú lốp bóng, có thể bị đập vỡ. Cú vô lê phải là một động tác đấm ngắn.
 Tất cả những cú vô lê tốt đều phải có những yếu tố chung.
 BD.</p></div>
@@ -1303,9 +1321,9 @@ THEO DÕI Quá trình theo dõi phải rất ngắn và chắc chắn và cho ph
       <div class="bilingual-block stanza"><p class="lang-vi">THE SMASH Cú đập là một cú đánh mạnh được thực hiện bằng cách đánh bóng trước khi nó nảy lên và trong khi nó vẫn ở trên đầu tay vợt.
 Nó thường được sử dụng khi đối phương đánh sai bóng và giật bóng lên không trung hoặc để đáp lại một cú lốp bóng đã định.
 Những tay vợt giỏi coi cú smash (overhead) như một điểm miễn phí.
-Với điều kiện bóng không quay trở lại sân quá xa khi nó bắt đầu rơi và sử dụng đúng kỹ thuật, ngay cả những tay vợt cấp dưới cũng có thể đưa bóng đi cho người chiến thắng một cách dễ dàng.
+Với điều kiện bóng không quay trở lại sân quá xa khi nó bắt đầu rơi và sử dụng đúng kỹ thuật, ngay cả những tay vợt cấp dưới cũng có thể đưa bóng đi cho cú ghi điểm trực tiếp một cách dễ dàng.
 Nhiều tay vợt bắt đầu hoảng sợ khi đối thủ thực hiện một cú lốp bóng dễ dàng, vì họ biết mình nên giết bóng.
-Sự bình tĩnh là điều cần thiết, vì vậy nếu tay vợt có bất kỳ nghi ngờ nào về việc thực hiện cú đập, họ nên chạy lùi, để bóng nảy lên và thực hiện một cú chạm đất bình thường.
+Sự bình tĩnh là điều cần thiết, vì vậy nếu tay vợt có bất kỳ nghi ngờ nào về việc thực hiện cú đập, họ nên chạy lùi, để bóng nảy lên và thực hiện một cú đánh nền bình thường.
 Họ có thể không giành được điểm bằng một cú sút sát thủ, nhưng họ cũng sẽ không làm hỏng nó.
 88,</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi">BACKSWING Khi bóng bắt đầu rơi, tay vợt nên chỉ vào nó bằng tay trái.
@@ -1333,7 +1351,7 @@ Giữ mắt cố định vào quả bóng khi nó di chuyển theo hướng củ
 Anh ta nên uốn cong đầu gối của mình nhiều hơn một chút so với cú đánh thuận tay thông thường;
 điều này sẽ giúp giữ bóng ở mức thấp nhất có thể.
 Lý tưởng nhất là bóng vừa đủ đi qua lưới.</p></div>
-      <div class="bilingual-block stanza"><p class="lang-vi">ƯU ĐÃI BÓNG Thay vì sử dụng động tác đấm, như thực hiện cú vô lê, hoặc chuyển động vung toàn bộ, như động tác chạm đất, đối với những tay vợt thả bóng, tay vợt nên vuốt bóng qua lưới.
+      <div class="bilingual-block stanza"><p class="lang-vi">ƯU ĐÃI BÓNG Thay vì sử dụng động tác đấm, như thực hiện cú vô lê, hoặc chuyển động vung toàn bộ, như động tác đánh nền, đối với những tay vợt thả bóng, tay vợt nên vuốt bóng qua lưới.
 Vợt phải được đưa ngay dưới quả bóng theo chuyển động cắt và sử dụng cổ tay để dẫn bóng nhẹ nhàng qua lưới.</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi">VÒNG NGƯỢC CỰC ĐỈNH Sau nhiều lần luyện tập về cú đánh rơi, tay vợt sẽ có thể đặt bóng xoáy xuống nhiều đến mức khi tiếp đất, nó sẽ nảy thẳng lên trên thay vì hướng về phía trước theo hướng đánh.
 Một số tay vợt thậm chí có thể làm cho quả bóng nảy trở lại theo hướng nó được đánh.
@@ -1369,7 +1387,7 @@ Những cú đập trái tay là những cú đánh khó thực hiện nhất tr
 Tay vợt nên nhắm đến mục tiêu mạnh như nhau ở cả hai bên, tuy nhiên, hầu hết tay vợt đều có bên mạnh hơn mà họ ưa thích.
 Các tay vợt trẻ không nên chạy vòng quanh quả bóng trái tay để đánh nó bằng cú đánh thuận tay, vì đây không phải là giải pháp lâu dài.
 Sớm hay muộn tay vợt sẽ phải sử dụng trái tay của mình, vì vậy tốt hơn hết bạn nên tập luyện nó khi còn trẻ.
-Có ba kiểu động tác chạm đất ở bên trái tay: phẳng, xoáy lên và cắt lát.
+Có ba kiểu động tác đánh nền ở bên trái tay: phẳng, xoáy lên và cắt lát.
 Các cú đánh trái tay phẳng và xoáy lên có thể được chơi bằng cách cầm vợt một tay hoặc hai tay.
 Tay vợt sử dụng trái tay hai tay sẽ thấy dễ dàng hơn khi đánh trái tay cắt lát bằng một tay.
 Hầu hết tay vợt trẻ tuổi sẽ thấy rằng việc chơi hai tay ở bên này sẽ dễ dàng hơn.
@@ -1413,7 +1431,7 @@ Thời gian theo dõi càng dài, cú đánh càng xoáy lên và cú đánh cà
       <div class="bilingual-block stanza"><p class="lang-vi">chiến thuật và kỹ năng cho trò chơi đánh đơn cơ bản.
 Điều đó cho thấy, nhiều tay vợt cảm thấy nó hoàn toàn thú vị và các kỹ thuật khác nhau được học thực sự cải thiện trò chơi đơn của họ.
 up: bạn sẽ thường thấy nhiều cú đánh phản xạ hơn trong tennis đôi.
-Chơi trên lưới là một khía cạnh quan trọng của hình thức tennis này và các cú chuyền bóng cần phải được đặt chính xác hơn nữa, đơn giản vì có hai người đang đợi ở bên kia lưới chứ không phải một.
+Chơi trên lưới là một khía cạnh quan trọng của hình thức tennis này và các cú vô-lê cần phải được đặt chính xác hơn nữa, đơn giản vì có hai người đang đợi ở bên kia lưới chứ không phải một.
 của bạn sẽ mang lại điểm mạnh và điểm yếu cho mối quan hệ hợp tác, và tốt hơn là tổng hợp các phần của nó.</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi">BÊN NÀO ĐỂ CHƠI Tay vợt nên làm quen với việc chơi cùng một bên mỗi khi họ đánh đôi.
 Trong một nhóm chơi cùng nhau thường xuyên, một người phải luôn chơi ở bên phải và một người phải luôn chơi ở bên trái.
@@ -1466,8 +1484,8 @@ Trước khi bắt đầu lượt chơi, các đấu thủ thống nhất xem ai
 Tay vợt trên lưới có thể dùng ngón tay chỉ ra sau lưng để bí mật chỉ đường mình sẽ vượt qua.
 Sau đó, người giao bóng (server) sẽ che nửa đối diện MỘT LÊN, MỘT Lùi Đây là đội hình đôi truyền thống.
 Người giao bóng phải đứng phía sau đường cuối sân (baseline), khoảng nửa đường giữa vạch trung tâm và đường xe điện xa nhất.
-Từ đây, nếu anh ta là người giao bóng (server) và vận động viên vô lê, anh ta có thể chạy thẳng đến vị trí chuyền bóng trung tâm sau khi giao bóng, hoặc nếu anh ta là người bắt bóng, anh ta có thể thực hiện cú trả bóng ở giữa hoặc ra ngoài biên.
-Đối tác của máy chủ phải ở vị trí lưới.
+Từ đây, nếu anh ta là người giao bóng (server) và vận động viên vô lê, anh ta có thể chạy thẳng đến vị trí đánh vô-lê trung tâm sau khi giao bóng, hoặc nếu anh ta là người bắt bóng, anh ta có thể thực hiện cú trả bóng ở giữa hoặc ra ngoài biên.
+Đối tác của người giao bóng phải ở vị trí lưới.
 Anh ta phải đứng trong ô giao bóng, ở giữa đường phân chia hai ô giao bóng (đường giữa) và đường biên gần nhất.
 Anh ta không nên ở quá gần lưới nếu không sẽ không có thời gian để phản ứng trước một cú vô lê.
 Khoảng nửa đường giữa mạng và đường dịch vụ là lý tưởng.
@@ -1482,7 +1500,7 @@ Quả giao bóng hướng xuống giữa, về phía chữ 'T' để người tr
 Trừ khi một đấu thủ có cú giao bóng thứ hai rất mạnh, các đội đánh đôi chỉ nên thực sự sử dụng đội hình 'I' trong lần giao bóng đầu tiên.</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi">ĐỘI HÌNH ÚC Nếu tay vợt nhận thấy rằng cú giao bóng của họ đang bị trừng phạt bằng những quả trả giao chéo góc cứng, họ có thể muốn thử đội hình rất khác thường của Úc.
 Đối tác của người giao bóng (server) đứng trên lưới cùng phía sân với người giao bóng (server), để thực hiện cú vô lê bất kỳ quả trả bóng chéo sân nào.
-Sau đó, máy chủ phải xử lý mọi khoản trả về sau này.
+Sau đó, người giao bóng phải xử lý mọi khoản trả về sau này.
 Vị trí này trông sẽ rất lạ vì khi bắt đầu lượt chơi cả hai đấu thủ đều ở cùng một phía sân.
 Giống như đội hình 'I', đội hình của người Úc hoạt động tốt nhất với những cú giao bóng nhanh và mạnh, vì vậy nó chỉ nên được sử dụng trong những cú giao bóng đầu tiên.
 Người giao bóng sẽ khó có thể chạy ngang qua để trả bóng rộng dọc theo đường xe điện, vì vậy anh ta nên cố gắng giao bóng ở giữa sân và buộc người nhận giao bóng phải quay trở lại giữa sân.</p></div>
@@ -1506,7 +1524,7 @@ Họ nên cố gắng sử dụng cách cầm vô-lê (volley) đúng cách và 
 Khi tay vợt tiến bộ hơn, họ có thể di chuyển đến gần bức tường hơn, từ đó giúp bản thân có ít thời gian phản ứng hơn.
 3 KHOẢI NÓNG Bài tập này cần ít nhất ba tay vợt.
 Các đấu thủ đứng thành một hàng, mỗi người cầm một cây vợt.
-Mục tiêu là cố gắng lấy bóng càng nhanh càng tốt từ đầu này sang đầu kia bằng cách chuyền bóng từ vợt này sang vợt khác mà không chạm vào bất kỳ tay nào trên đường đi.
+Mục tiêu là cố gắng lấy bóng càng nhanh càng tốt từ đầu này sang đầu kia bằng cách đánh vô-lê từ vợt này sang vợt khác mà không chạm vào bất kỳ tay nào trên đường đi.
 4 Cò Sự thăng bằng rất quan trọng đối với tay vợt tennis và những tay vợt tennis trẻ có thể cải thiện khả năng thăng bằng của mình bằng cách luyện tập cái được gọi là 'tư thế con cò'.
 Tay vợt đứng bằng một chân, dang tay và nhắm mắt, giữ thăng bằng.
 Khi loạng choạng xung quanh, anh ta phải cố gắng đứng vững.
@@ -1522,7 +1540,7 @@ Khi khỏe hơn, trẻ có thể thử đi bộ qua chướng ngại vật hoặ
 Có rất nhiều video huấn luyện trên thị trường, hầu hết đều chiếu cảnh các chuyên gia thực hiện các cú đánh đúng cách.
 Ngay cả việc xem các trận đấu tennis chuyên nghiệp cũng sẽ mang lại những gợi ý quý giá về kỹ thuật và chiến thuật.
 Video tennis và trò chơi máy tính cũng rất hữu ích.
-Trò chơi không giúp ích gì về kỹ thuật và cách chơi đột quỵ, nhưng chúng sẽ giúp phối hợp tay và mắt.
+Trò chơi không giúp ích gì về kỹ thuật và cách chơi cú đánh, nhưng chúng sẽ giúp phối hợp tay và mắt.
 NGOÀI TÒA</p></div>
     
   
@@ -1551,7 +1569,7 @@ Số lượng hình nón và khoảng cách giữa hai hình nón cuối cùng c
 Một biến thể hay của bài tập này là tay vợt đứng nghiêng và chạy qua các hình nón theo hình số tám.
 Tay vợt sử dụng các động tác chân nhỏ đi về phía trước, sang ngang, lùi lại rồi lại sang ngang để đến hết hàng nón.</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi">11 HÌNH TÁM Ném Các tay vợt bắt đầu bằng cách đứng quay mặt vào nhau khoảng 3m <strong>(10ft), cầm một quả bóng ở một trong hai tay.
-Trong một chuyển động liên tục, các đấu thủ ném bóng bằng tay phải, đồng thời chuyền bóng từ tay trái sang phải trước khi bắt bóng do đồng đội ném bằng tay trái.
+Trong một chuyển động liên tục, các đấu thủ ném bóng bằng tay phải, đồng thời đánh vô-lê từ tay trái sang phải trước khi bắt bóng do đồng đội ném bằng tay trái.
 Điều này sẽ mất một thời gian để làm quen, nhưng một khi đã chinh phục được nó sẽ giúp cải thiện khả năng phối hợp tay và mắt.
 Số lượng bóng sử dụng có thể tăng lên khi tay vợt thành thạo hơn.
 Tay vợt cũng có thể di chuyển sang một bên trong khi thực hiện bài tập này để phối hợp tốt hơn với bàn chân.
@@ -1601,7 +1619,7 @@ SET ở mức nào là cách tốt nhất để di chuyển vào vị trí cho m
 a Dọc, vung một b =©Một chuyển động đấm ngắn, mạnh c Qua chân a sải bước lớn d Buông vợt và quan sát nó theo bóng b Nhiều bước ngang ngắn c Bỏ qua Bạn nên làm gì với tay không chơi khi d Trồng cây chuối bạn đánh một cú đập?
 a Vẫy tay đối phương 26 Thuật ngữ dùng để chỉ khi chân bạn chạm điểm b Điểm ở đường cuối bóng trước khi bạn giao bóng là gì?
 c Giữ cổ vợt a Lỗi chân d Sơn móng tay b Lỗi giao bóng c Lỗi kép 22 Lựa chọn nào KHÔNG phải là lựa chọn tốt nếu đối thủ của bạn đang ở trên lưới?
-d Chân vào miệng a Lob anh b Thực hiện một cú chuyền bóng 27 Tên của đường ngắn dọc theo đường cuối sân là gì?
+d Chân vào miệng a Lob anh b Thực hiện một cú vô-lê 27 Tên của đường ngắn dọc theo đường cuối sân là gì?
 c Đánh bóng mạnh vào anh ta a Dấu giao bóng d Cú sút b Dấu chân c Dấu giữa 23 Nhược điểm chính của việc sử dụng trái tay hai tay là gì?
 d Deutschmark a Bạn có tầm với ít hơn b Bạn có ít sức mạnh hơn ¢ Cú đánh trái tay bằng hai tay là một cú đánh phạm lỗi d Bạn sẽ không thể vẫy tay với đối thủ</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi">Mặt nào sau đây KHÔNG phải là bề mặt sân tennis được công nhận?
@@ -1649,7 +1667,7 @@ Từ này có thể xuất phát từ từ tiếng Pháp 'l'oeuf', có nghĩa l�
 LTA Hiệp hội tennis sân cỏ.
 Cơ quan quản lý tennis ở Anh.
 Trận đấu Một trận đấu tennis mang tính cạnh tranh thường giành chiến thắng khi một tay vợt (hoặc đội đôi) giành chiến thắng tốt nhất trong ba hoặc năm Seis.
-Điểm trận đấu Điểm được tính khi một đấu thủ (hoặc điểm để thắng cả trận đấu. Đôi nam nữ bao gồm một đấu thủ nam và một đấu thủ nữ. Cú chuyền bóng Một cú đánh thấp và về phía đối phương khi đối phương đang đứng trên lưới. Tập hợp Một chuỗi các cú đánh được thực hiện giữa những tay vợt trong một điểm. Trọng tài Người đứng đầu giải đấu chịu trách nhiệm về tất cả các trọng tài và trọng tài biên. Hạt giống Các tay vợt hàng đầu trong một giải đấu, những người được trao các vị trí đặc biệt trong một trận hòa để đảm bảo họ không đấu với nhau sớm
+Điểm trận đấu Điểm được tính khi một đấu thủ (hoặc điểm để thắng cả trận đấu. Đôi nam nữ bao gồm một đấu thủ nam và một đấu thủ nữ. Cú đánh vô-lê Một cú đánh thấp và về phía đối phương khi đối phương đang đứng trên lưới. Tập hợp Một chuỗi các cú đánh được thực hiện giữa những tay vợt trong một điểm. Trọng tài Người đứng đầu giải đấu chịu trách nhiệm về tất cả các trọng tài và trọng tài biên. Hạt giống Các tay vợt hàng đầu trong một giải đấu, những người được trao các vị trí đặc biệt trong một trận hòa để đảm bảo họ không đấu với nhau sớm
 trong giải đấu.
 Cách cầm vợt kiểu bán phương Cách cầm vợt được sử dụng để đánh những quả bóng có độ nảy cao với nhiều xoáy lên.
 Kiểu cầm vợt này có tên từ Hoa Kỳ, nơi mặt sân ở bờ biển phía tây chủ yếu là cứng, yêu cầu cách cầm vợt cho phép tay vợt đạt được những cú đánh có độ nảy cao.
@@ -1932,6 +1950,51 @@ window.addEventListener('scroll', function(){
     if (!overlay.classList.contains('open')) return;
     clearTimeout(rt); rt = setTimeout(refit, 220);
   });
+})();
+</script>
+
+<button class="chapter-fab" id="chapter-fab" aria-label="Mục lục chương"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h12v2H3zM3 11h12v2H3zM3 17h8v2H3zM17 9h4v2h-4zM17 15h4v2h-4z"/></svg><span>Chương</span></button>
+<div class="chapter-backdrop" id="chapter-backdrop"></div>
+<aside class="chapter-drawer" id="chapter-drawer" aria-label="Danh sách chương">
+  <div class="cd-head"><h3>Mục lục</h3><button class="cd-close" id="chapter-close" aria-label="Đóng">&times;</button></div>
+  <nav class="cd-list" id="chapter-list"></nav>
+</aside>
+<script>
+(function(){
+  var fab=document.getElementById('chapter-fab'),
+      drawer=document.getElementById('chapter-drawer'),
+      backdrop=document.getElementById('chapter-backdrop'),
+      list=document.getElementById('chapter-list'),
+      book=document.getElementById('book-content');
+  if(!book) return;
+  var heads=[].slice.call(book.querySelectorAll('h2[id]'));
+  if(!heads.length) heads=[].slice.call(book.querySelectorAll('h3[id]'));
+  if(!heads.length) return;
+  var links=[];
+  heads.forEach(function(h){
+    var a=document.createElement('a');
+    a.href='#'+h.id; a.textContent=h.textContent.trim();
+    a.addEventListener('click',function(){drawer.classList.remove('open');backdrop.classList.remove('open');});
+    list.appendChild(a); links.push(a);
+  });
+  function openD(){drawer.classList.add('open');backdrop.classList.add('open');}
+  function closeD(){drawer.classList.remove('open');backdrop.classList.remove('open');}
+  fab.addEventListener('click',openD);
+  backdrop.addEventListener('click',closeD);
+  document.getElementById('chapter-close').addEventListener('click',closeD);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeD();});
+  var ticking=false;
+  function spy(){
+    var cur=null, y=100;
+    for(var i=0;i<heads.length;i++){
+      if(heads[i].getBoundingClientRect().top<=y) cur=heads[i].id; else break;
+    }
+    if(cur) links.forEach(function(l){l.classList.toggle('active',l.getAttribute('href')==='#'+cur);});
+    ticking=false;
+  }
+  function onscroll(){ if(!ticking){ticking=true;requestAnimationFrame(spy);} }
+  window.addEventListener('scroll',onscroll,{passive:true});
+  spy();
 })();
 </script>
 </body>

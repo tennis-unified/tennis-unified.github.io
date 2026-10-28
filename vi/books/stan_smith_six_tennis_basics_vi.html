@@ -264,6 +264,24 @@ body.no-en #lang-toggle{display:none}
 .book-wrapper { display: block; }
 .book-content { max-width: 880px; margin: 0 auto; }
 </style>
+
+<style>
+/* Floating chapter drawer (added by add_chapter_drawer.py) */
+.chapter-fab{position:fixed;right:20px;bottom:20px;z-index:55;display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:none;border-radius:999px;background:var(--gold,#b8860b);color:#fff;font:600 .9rem/1 system-ui,sans-serif;box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer}
+.chapter-fab svg{width:16px;height:16px;fill:currentColor}
+.chapter-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:110;opacity:0;visibility:hidden;transition:opacity .2s}
+.chapter-backdrop.open{opacity:1;visibility:visible}
+.chapter-drawer{position:fixed;top:0;right:0;height:100%;width:330px;max-width:88vw;z-index:120;background:var(--bg-card,#fff);box-shadow:-8px 0 30px rgba(0,0,0,.18);transform:translateX(100%);transition:transform .25s ease;display:flex;flex-direction:column}
+.chapter-drawer.open{transform:translateX(0)}
+.cd-head{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid var(--rule,#e4ded2)}
+.cd-head h3{margin:0;font-size:1rem;font-family:var(--serif,Georgia,serif)}
+.cd-close{background:none;border:none;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--ink-muted,#555)}
+.cd-list{overflow-y:auto;padding:8px 0;flex:1}
+.cd-list a{display:block;padding:9px 18px;color:var(--ink-muted,#555);text-decoration:none;font-size:.92rem;line-height:1.4;border-left:3px solid transparent;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cd-list a:hover{background:rgba(0,0,0,.04)}
+.cd-list a.active{color:var(--ink,#111);font-weight:600;border-left-color:var(--gold,#b8860b);background:rgba(184,134,11,.08)}
+@media(max-width:560px){.chapter-drawer{width:100%;max-width:100%}}
+</style>
 </head>
 <body>
 <nav class="tu-breadcrumb" aria-label="Breadcrumb">
@@ -499,7 +517,7 @@ Bằng cách tưởng tượng một tấm lưới như vậy hoặc bằng các
 Ở những cú đánh thấp, cơ thể phải cúi xuống càng xa càng tốt để mắt có thể nhìn thấy quả bóng trong mặt phẳng chuyển động của nó.
 Đây là lý do tại sao tay vợt bida cũng cúi xuống để nhìn rõ mục tiêu của mình.</p><p class="lang-en">You can’t watch the ball in tennis from a stifflegged stance. On low shots the body has to get down as far as possible to permit the eyes to see the ball in the plane of its movement. This is why billiards players crouch to sight their target properly, too.</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi">Tay còn lại là một thiết bị quan sát hữu ích, đặc biệt là ở phía thuận tay và phía trên đầu.
-Bàn tay chỉ vào quả bóng giúp bạn “đọc” vị trí của nó tốt hơn, giống như một tiền vệ có thể chuyền bóng chính xác hơn khi anh ta sử dụng tay không ném của mình để chọn ra một người nhận bóng ở phía dưới.</p><p class="lang-en">The free hand is a useful sighting device, particularly on the forehand and the overhead. The hand pointing at the ball helps you to “read” its position better, just as a quarterback is able to pass a football more accurately when he uses his non-throwing hand to single out a receiver downfield.</p></div>
+Bàn tay chỉ vào quả bóng giúp bạn “đọc” vị trí của nó tốt hơn, giống như một tiền vệ có thể đánh vô-lê chính xác hơn khi anh ta sử dụng tay không ném của mình để chọn ra một người nhận bóng ở phía dưới.</p><p class="lang-en">The free hand is a useful sighting device, particularly on the forehand and the overhead. The hand pointing at the ball helps you to “read” its position better, just as a quarterback is able to pass a football more accurately when he uses his non-throwing hand to single out a receiver downfield.</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi">Việc quan sát bóng là rất quan trọng để giao bóng nhịp nhàng.</p><p class="lang-en">Watching the ball is vital to serving rhythmically.</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi">Cú giao bóng chỉ ra mối quan hệ giữa sự tập trung thị giác và thời điểm tốt.
 Khi mắt của người giao bóng chuyển sớm khỏi quả bóng mà anh ta đã ném cao cho đối thủ trên sân giao bóng, cơ thể anh ta cũng sẽ thực hiện hành động đó theo bản năng.</p><p class="lang-en">The serve points up a relation between visual concentration and good timing. When a server’s eyes shift prematurely from the ball he has tossed aloft to his opponent on the service court, his body instinctively rushes its action, too.</p></div>
@@ -531,7 +549,7 @@ Nhưng với khả năng dự đoán tốt và động tác bằng chân, đây 
 Đi thẳng theo cách này sẽ làm mất đi cả lực và hướng của cú đánh.</p><p class="lang-en">Many amateur players have a tendency to straighten their bodies when they make contact with the ball. This occurs frequently on low shots because the player is unconsciously trying to “body-english” the ball over the net instead of letting his racquet do the work for him. Going upright in this manner robs the shot of both force and direction.</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi">Có một số cách để học cách đánh phía trước ổn định hơn.
 Có lẽ cách tốt nhất là sử dụng máy đánh bóng tự động nếu có một máy ở sân nơi bạn thi đấu hoặc nơi bạn đi nghỉ.
-Điều chỉnh máy để cung cấp các bức ảnh ở phía trước bạn ba hoặc bốn feet.
+Điều chỉnh máy để cung cấp các cú đánh ở phía trước bạn ba hoặc bốn feet.
 Sau khoảng 20 phút, bạn sẽ cảm thấy thích thú.
 Một đối tác luyện tập ổn định có thể giúp đỡ theo cách tương tự.
 Một cách vô thức, bạn cũng sẽ bắt đầu thực hiện hai hành động khác tốt hơn.
@@ -561,7 +579,7 @@ Bạn càng thực hiện cú đánh đầy đủ bao nhiêu thì khả năng ki
 Khi nào |
 tôi đang chơi tốt tôi
 cảm giác như quả bóng thực sự ở trên vợt của tôi trong một thời gian dài và điều này mang lại cho tôi sự tự tin và khả năng kiểm soát tuyệt vời.</span><span class="lang-en">A fallacy common among less experienced players is the belief that a long follow-through indicates wildness. In fact, just the opposite is true. The more fully you follow-through on a stroke, the more complete your control of the ball. This is because the longer follow-through permits you to keep the racquet strings on the ball that much longer. When I am playing well I feel like the ball really is staying on my racquet for a long period of time, and this gives me great confidence and control.</span></p></div>
-      <div class="bilingual-block stanza"><p class="lang-vi">Kiểm tra trình tự màu sắc của các cú chạm đất ở phần khác trong cuốn sách này và nghiên cứu các khung hình cuối cùng khi tay vợt ở trong “‘kết thúc hình ảnh” - vợt được giơ cao và cách xa cơ thể.</p><p class="lang-en">Check color sequences of the groundstrokes elsewhere in this book and study the final frames where the player is in his “picture finish” — racquet held high and away from the body.</p></div>
+      <div class="bilingual-block stanza"><p class="lang-vi">Kiểm tra trình tự màu sắc của các cú đánh nền ở phần khác trong cuốn sách này và nghiên cứu các khung hình cuối cùng khi tay vợt ở trong “‘kết thúc hình ảnh” - vợt được giơ cao và cách xa cơ thể.</p><p class="lang-en">Check color sequences of the groundstrokes elsewhere in this book and study the final frames where the player is in his “picture finish” — racquet held high and away from the body.</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi">Một số khán giả coi những vị trí như vậy chỉ là nghệ thuật biểu diễn thuần túy - cao, rộng và đẹp trai vì lợi ích của đám đông sân vận động.
 Trên thực tế, những tư thế kịch tính, đôi khi giống như khiêu vũ này là một phần đầy đủ chức năng của động tác tiếp đất vững chắc.</p><p class="lang-en">Some spectators regard such positions as pure showmanship — high, wide and handsome for the benefit of the stadium crowd. In fact these dramatic, sometimes dance-like postures are a fully functioning part of the solid groundstroke.</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi">Nếu các pha kết thúc của bạn không đầy đủ, điều đó có nghĩa là bạn không đạt được sức mạnh và khả năng kiểm soát tối đa trong trò chơi của mình.</p><p class="lang-en">If your finishes aren’t as full, it means you are not obtaining maximum power and control in your game.</p></div>
@@ -969,7 +987,7 @@ Tất cả điều này phụ thuộc vào sự hiểu biết nhạy cảm về 
 Đó là lý do tại sao việc thực hiện những quả giao bóng đầu tiên lại đặc biệt quan trọng - để ngăn chặn đối thủ của bạn tấn công.
 Đó cũng là lý do tại sao việc vào lưới nhanh chóng sau một cú giao bóng hoặc một cú đánh tiếp cận lại quan trọng.
 Càng ở gần lưới, bạn càng dễ dàng hạ gục đối thủ.</p><p class="lang-en">Your team’s main objective in doubles is to control the net. That’s why it’s especially important to get first serves in — to prevent your opponents from going on the offensive. That’s also why its vital to get to net quickly after a serve or an approach shot. The closer you are to net, the easier it will be to hit down on your opponents.</p></div>
-      <div class="bilingual-block stanza"><p class="lang-vi">Thật khó để đánh một người chiến thắng hoàn toàn trong nội dung đánh đôi vì có hai tay vợt che chắn phần sân đối diện, vì vậy mục tiêu của một đội đánh đôi giỏi trong suốt trận đấu là đặt bóng gần một trong các chân của đối phương và khiến anh ta phạm lỗi hoặc thực hiện cú trả bóng cao có thể bị cản phá ở một góc nhọn.</p><p class="lang-en">It is hard to hit an outright winner in doubles since there are two players covering the opposite court, so the goal of a good doubles team throughout a match should be to place the ball near one of the opponent's feet and cause him to make an error or produce a high volley return that can be put away at a sharp angle.</p></div>
+      <div class="bilingual-block stanza"><p class="lang-vi">Thật khó để đánh một cú ghi điểm trực tiếp hoàn toàn trong nội dung đánh đôi vì có hai tay vợt che chắn phần sân đối diện, vì vậy mục tiêu của một đội đánh đôi giỏi trong suốt trận đấu là đặt bóng gần một trong các chân của đối phương và khiến anh ta phạm lỗi hoặc thực hiện cú trả bóng cao có thể bị cản phá ở một góc nhọn.</p><p class="lang-en">It is hard to hit an outright winner in doubles since there are two players covering the opposite court, so the goal of a good doubles team throughout a match should be to place the ball near one of the opponent's feet and cause him to make an error or produce a high volley return that can be put away at a sharp angle.</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi">Khi trở lại giao bóng, mục tiêu của bạn cũng như vậy.</p><p class="lang-en">When returning service, your goal is the same.</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi">Khi thực hiện cú trả giao bóng trái tay, hãy cố gắng chọc vào chân Đối thủ khi anh ta lao vào phía sau cú giao bóng của mình.</p><p class="lang-en">On a backhand return, try to chip to the feet of your Opponent as he rushes in behind his serve.</p></div>
       <div class="bilingual-block stanza"><p class="lang-vi">Khi trả bóng thuận tay, hãy sử dụng nhiều xoáy lên để giữ bóng thấp và ngắn ở phần sân đối diện.</p><p class="lang-en">On a forehand return, employ a lot of topspin to keep the ball low and short in the opposite court.</p></div>
@@ -1322,6 +1340,51 @@ window.addEventListener('scroll', function(){
     if (!overlay.classList.contains('open')) return;
     clearTimeout(rt); rt = setTimeout(refit, 220);
   });
+})();
+</script>
+
+<button class="chapter-fab" id="chapter-fab" aria-label="Mục lục chương"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h12v2H3zM3 11h12v2H3zM3 17h8v2H3zM17 9h4v2h-4zM17 15h4v2h-4z"/></svg><span>Chương</span></button>
+<div class="chapter-backdrop" id="chapter-backdrop"></div>
+<aside class="chapter-drawer" id="chapter-drawer" aria-label="Danh sách chương">
+  <div class="cd-head"><h3>Mục lục</h3><button class="cd-close" id="chapter-close" aria-label="Đóng">&times;</button></div>
+  <nav class="cd-list" id="chapter-list"></nav>
+</aside>
+<script>
+(function(){
+  var fab=document.getElementById('chapter-fab'),
+      drawer=document.getElementById('chapter-drawer'),
+      backdrop=document.getElementById('chapter-backdrop'),
+      list=document.getElementById('chapter-list'),
+      book=document.getElementById('book-content');
+  if(!book) return;
+  var heads=[].slice.call(book.querySelectorAll('h2[id]'));
+  if(!heads.length) heads=[].slice.call(book.querySelectorAll('h3[id]'));
+  if(!heads.length) return;
+  var links=[];
+  heads.forEach(function(h){
+    var a=document.createElement('a');
+    a.href='#'+h.id; a.textContent=h.textContent.trim();
+    a.addEventListener('click',function(){drawer.classList.remove('open');backdrop.classList.remove('open');});
+    list.appendChild(a); links.push(a);
+  });
+  function openD(){drawer.classList.add('open');backdrop.classList.add('open');}
+  function closeD(){drawer.classList.remove('open');backdrop.classList.remove('open');}
+  fab.addEventListener('click',openD);
+  backdrop.addEventListener('click',closeD);
+  document.getElementById('chapter-close').addEventListener('click',closeD);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeD();});
+  var ticking=false;
+  function spy(){
+    var cur=null, y=100;
+    for(var i=0;i<heads.length;i++){
+      if(heads[i].getBoundingClientRect().top<=y) cur=heads[i].id; else break;
+    }
+    if(cur) links.forEach(function(l){l.classList.toggle('active',l.getAttribute('href')==='#'+cur);});
+    ticking=false;
+  }
+  function onscroll(){ if(!ticking){ticking=true;requestAnimationFrame(spy);} }
+  window.addEventListener('scroll',onscroll,{passive:true});
+  spy();
 })();
 </script>
 </body>

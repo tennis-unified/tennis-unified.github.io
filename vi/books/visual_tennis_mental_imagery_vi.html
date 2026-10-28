@@ -264,6 +264,24 @@ body.no-en #lang-toggle{display:none}
 .book-wrapper { display: block; }
 .book-content { max-width: 880px; margin: 0 auto; }
 </style>
+
+<style>
+/* Floating chapter drawer (added by add_chapter_drawer.py) */
+.chapter-fab{position:fixed;right:20px;bottom:20px;z-index:55;display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:none;border-radius:999px;background:var(--gold,#b8860b);color:#fff;font:600 .9rem/1 system-ui,sans-serif;box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer}
+.chapter-fab svg{width:16px;height:16px;fill:currentColor}
+.chapter-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:110;opacity:0;visibility:hidden;transition:opacity .2s}
+.chapter-backdrop.open{opacity:1;visibility:visible}
+.chapter-drawer{position:fixed;top:0;right:0;height:100%;width:330px;max-width:88vw;z-index:120;background:var(--bg-card,#fff);box-shadow:-8px 0 30px rgba(0,0,0,.18);transform:translateX(100%);transition:transform .25s ease;display:flex;flex-direction:column}
+.chapter-drawer.open{transform:translateX(0)}
+.cd-head{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid var(--rule,#e4ded2)}
+.cd-head h3{margin:0;font-size:1rem;font-family:var(--serif,Georgia,serif)}
+.cd-close{background:none;border:none;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--ink-muted,#555)}
+.cd-list{overflow-y:auto;padding:8px 0;flex:1}
+.cd-list a{display:block;padding:9px 18px;color:var(--ink-muted,#555);text-decoration:none;font-size:.92rem;line-height:1.4;border-left:3px solid transparent;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cd-list a:hover{background:rgba(0,0,0,.04)}
+.cd-list a.active{color:var(--ink,#111);font-weight:600;border-left-color:var(--gold,#b8860b);background:rgba(184,134,11,.08)}
+@media(max-width:560px){.chapter-drawer{width:100%;max-width:100%}}
+</style>
 </head>
 <body class="no-en">
 <nav class="tu-breadcrumb" aria-label="Breadcrumb">
@@ -373,7 +391,7 @@ Visual Tennis dựa trên cái nhìn sâu sắc, hiện đã được nghiên c�
 Những tay vợt quần vợt luôn học hỏi bằng cách xem những tay vợt giỏi hơn và thường chơi vượt xa trình độ bình thường của họ sau khi làm như vậy.
 Visual Tennis là một hệ thống giảng dạy hoàn chỉnh dựa trên các kỹ thuật trực quan.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Visual Tennis dạy bạn suy nghĩ về trận đấu của mình theo một phương tiện khác, bằng hình ảnh thay vì bằng lời nói.
-Trong từng chương riêng lẻ, Yandell cung cấp những mô hình trực quan chi tiết nhất từng được tạo ra cho tất cả các cú đánh cơ bản: cú chạm đất, cú vô lê và cú giao bóng.
+Trong từng chương riêng lẻ, Yandell cung cấp những mô hình trực quan chi tiết nhất từng được tạo ra cho tất cả các cú đánh cơ bản: cú đánh nền, cú vô lê và cú giao bóng.
 Mỗi nét vẽ được hiển thị đầy đủ từ cả mặt trước và mặt bên, sau đó được chia nhỏ thành các thành phần chính của nó.
 Bằng cách nắm vững các hình ảnh chính, học viên học cách tạo ra những nét vẽ vượt trội một cách dễ dàng và tự động.
 Không giống như nhiều sách hướng dẫn, Visual Tennis bao gồm các mô hình cho cả trái tay một tay và hai tay, đồng thời chỉ cho bạn cách quyết định cái nào phù hợp với mình.</p></div>
@@ -507,7 +525,7 @@ Họ cố gắng khắc phục điều này thông qua các bài học, nhưng, 
 Các bài học thường không tạo ra kỹ thuật đánh bóng tốt vì các trường dạy tennis chính không áp dụng quá trình học tập trực quan.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Đào tạo trực quan mang lại cho tay vợt quần vợt cơ hội học cách đánh bất kỳ cú đánh nào trong trò chơi với độ chính xác kỹ thuật cao và thực hiện điều đó một cách nhất quán dưới áp lực của cuộc chơi cạnh tranh.
 Cho đến khi bạn cảm thấy hài lòng khi đánh những quả bóng ngắn để giành chiến thắng một cách thường xuyên, hoặc chuyền xuống biên một cách nhất quán ở phía trái tay, hoặc kết hợp một loạt các điểm giao bóng và vô lê vượt trội, bạn không thể thực sự đánh giá cao sức mạnh và giá trị của việc rèn luyện trực quan.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Các chương tiếp theo phác thảo một cách tiếp cận để đánh tất cả các cú đánh cơ bản: các cú chạm đất, các cú vô lê và giao bóng.
+            <div class="bilingual-block stanza"><p class="lang-vi">Các chương tiếp theo phác thảo một cách tiếp cận để đánh tất cả các cú đánh cơ bản: các cú đánh nền, các cú vô lê và giao bóng.
 Trong chương trái tay, có các phần về cách đánh bằng một hoặc hai tay, cũng như thảo luận về cách xác định cú đánh nào bạn nên phát triển.
 Các chương được thiết kế để sử dụng cùng nhau hoặc độc lập để tay vợt có thể thực hiện một hoặc nhiều cú đánh riêng lẻ.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Mỗi chương bắt đầu bằng cách cung cấp cho tay vợt một cú đánh mẫu.
@@ -542,7 +560,7 @@ Nguyên tắc cơ bản của luyện tập trực quan là không thể học h
 Luyện tập có kiểm soát có nghĩa là tay vợt sử dụng đối tác, chuyên gia giảng dạy hoặc nếu có thể, kỹ năng chơi bóng.
 vị trí của người tượng vào đúng vị trí.
 quá trình chỉnh sửa là xem quần vợt của bạn trên video.
-Bạn có thể thực hiện điều này bằng cách sử dụng máy quay video tại nhà hoặc tốt hơn là làm việc với một chuyên gia sử dụng rộng rãi video trong quá trình giảng dạy của anh ấy.
+Bạn có thể thực hiện điều này bằng cách sử dụng máy quay video tại nhà hoặc tốt hơn làm việc với một chuyên gia sử dụng rộng rãi video trong quá trình giảng dạy của anh ấy.
 Không có mô tả bằng lời nói nào có thể thay thế được phản hồi trực tiếp bằng hình ảnh mà video cung cấp.
 Nó tạo ra sự rõ ràng mà không thể đạt được bằng bất kỳ cách nào khác.
 Nghiên cứu đã chỉ ra rằng hầu hết việc học thể thao đều tăng tốc nhanh chóng khi có thêm video. Đối với một số sinh viên, tôi thấy rằng việc xem video thường xuyên về bản thân họ là khía cạnh mạnh mẽ nhất trong toàn bộ quá trình đào tạo hình dung.</p></div>
@@ -554,7 +572,7 @@ Chìa khóa này cung cấp cho tay vợt một kế hoạch chi tiết trong đ
 Được phát triển đúng cách, hệ thống phím cung cấp cho tay vợt một phương pháp tự động, đáng tin cậy để thực hiện đúng mẫu cú đánh kỹ thuật.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Phím nét có thể là bất kỳ phần nào của hình ảnh của nét tổng thể.
 Nó có thể là hình ảnh của các trạm kiểm soát.
-Ví dụ, về các cú chạm đất, tôi nhận thấy rằng điểm mấu chốt hiệu quả nhất là một số biến thể của hình ảnh về tư thế kết thúc (Finish Position).
+Ví dụ, về các cú đánh nền, tôi nhận thấy rằng điểm mấu chốt hiệu quả nhất là một số biến thể của hình ảnh về tư thế kết thúc (Finish Position).
 Chìa khóa cũng có thể là một hình ảnh chuyển động, một loại phim nhỏ của toàn bộ nét vẽ.
 Trong các chương tiếp theo, bạn sẽ học cách phát triển và thử nghiệm các phím khác nhau, cách xác định phím nào hiệu quả hoặc “hoạt động” trong trò chơi của bạn.
 Phần cuối cùng hướng dẫn bạn cách tạo biểu đồ từ khóa kích hoạt cú đánh (Stroke Key) vẽ của riêng mình cho mỗi nét vẽ.
@@ -565,7 +583,7 @@ Nhưng hình ảnh thuần túy có thể chảy qua tâm trí với tốc độ
 Các phím đánh là phương tiện hoàn hảo để hướng dẫn sự tương tác phức tạp giữa tâm trí và cơ thể cần thiết để chơi quần vợt tuyệt vời.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Ngoài ra còn có một lợi ích bổ sung lớn liên quan.
 Việc phát triển và sử dụng hệ thống phím bấm cá nhân sẽ cung cấp liều thuốc giải độc cho hiện tượng “nghẹt thở” trong thể thao phổ biến.
-Phím đột quỵ có thể loại bỏ tình trạng nghẹt thở vì chúng giúp tay vợt giữ tâm trí tập trung ngay cả trong những tình huống rất căng thẳng.
+Phím cú đánh có thể loại bỏ tình trạng nghẹt thở vì chúng giúp tay vợt giữ tâm trí tập trung ngay cả trong những tình huống rất căng thẳng.
 Tập trung vào một phím bấm đang hoạt động sẽ ngăn chặn sự xâm nhập của những suy nghĩ xao lãng và nỗi sợ hãi.
 Sự xâm nhập vào cuộc đối thoại bằng lời nói nội bộ không mong muốn này là nguyên nhân gây ra những lỗi không thể thực hiện được trong những pha bóng dễ dàng.
 Thông thường, khi đối mặt với một cú đánh mở, một tay vợt tự nhủ điều gì đó như “Tôi phải thực hiện cú đánh này” hoặc “Những tay vợt giỏi luôn thực hiện những cú đánh này”, v.v. Trớ trêu thay, kiểu kỳ vọng này tạo ra quá nhiều áp lực đến mức nó gần như đảm bảo rằng tay vợt sẽ mắc phải lỗi mà anh ta hết sức muốn tránh.</p></div>
@@ -574,7 +592,7 @@ Rất nhiều tay vợt phủ nhận rằng họ sợ hãi và do đó không c�
 Điều quan trọng khi thi đấu mang tính cạnh tranh, bất kể ở cấp độ nào, phải chấp nhận nỗi sợ hãi tự nhiên đi kèm với áp lực và cho phép bản thân bỏ lỡ những cú đánh dễ dàng cho đến khi bạn cảm thấy thoải mái trong tình huống đó.
 Nếu bạn sẵn sàng làm điều này, nỗi sợ hãi sẽ giảm dần đến mức có thể kiểm soát được.
 |
-Ngoài việc phát triển các kiểu đột quỵ, điều chỉnh trí nhớ cơ bắp (Muscle Memory) và tạo hệ thống chìa khóa cá nhân của riêng bạn, khía cạnh cuối cùng của việc rèn luyện hình dung là thực hiện hệ thống thị giác.
+Ngoài việc phát triển các kiểu cú đánh, điều chỉnh trí nhớ cơ bắp (Muscle Memory) và tạo hệ thống chìa khóa cá nhân của riêng bạn, khía cạnh cuối cùng của việc rèn luyện hình dung là thực hiện hệ thống thị giác.
 công việc hóa ngoài sân đấu.
 Như đã lưu ý ở trên, các nghiên cứu đã chứng minh giá trị của hình thức luyện tập tinh thần này trong việc cải thiện thành tích thể thao.
 Trên thực tế, hình dung có tác dụng mạnh mẽ đến mức nó có thể cải thiện hiệu suất ngay cả khi không cần luyện tập thể chất. Tuy nhiên, lợi ích tối đa sẽ đạt được khi sử dụng kết hợp việc rèn luyện tinh thần và thể chất.</p></div>
@@ -606,7 +624,7 @@ Mặc dù cả cuốn sách và video đều được thiết kế để sử d�
 Một lần nữa, hãy sử dụng máy quay video tại nhà hoặc làm việc với chuyên gia của bạn để ghi lại một loạt các cú vung gậy thực hành hoàn hảo.
 Thực hiện một bức tượng ở cuối mỗi cú xoay để nhấn mạnh các điểm kiểm tra.
 Thực hiện đóng băng hoàn hảo các khung hình của từng khía cạnh của nét vẽ.
-Bây giờ hãy thực hành thực hiện các mô hình đánh bóng trong máy khoan có điều khiển, tốt nhất là với máy đánh bóng.</p></div>
+Bây giờ hãy thực hành thực hiện các mô hình đánh bóng trong bài tập có điều khiển, tốt nhất là với máy đánh bóng.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Một tay vợt trung bình nên luyện tập trực quan bao nhiêu khi rời khỏi sân?
 Đây là câu hỏi mà mỗi tay vợt phải tự trả lời dựa trên kinh nghiệm của bản thân.
 Nghiên cứu cho thấy rằng tỷ lệ tối ưu có thể lên tới một giờ hình dung cho mỗi ba giờ dành cho sân đấu.
@@ -653,7 +671,7 @@ Quần vợt châu lục rất phù hợp với mặt sân nhanh, đặc biệt 
 Phong cách phương Tây dựa vào các kiểu xoay giật lớn tạo ra xoáy lên quá mức.
 Nói chung, các tay vợt theo phong cách phương Tây cho phép bóng rơi xuống thấp hơn một chút so với đỉnh nảy trước khi tiếp xúc.
 Điều này cho phép họ có thêm thời gian cần thiết để thực hiện những cú xoay người quá mức về phía Tây.
-Nếu anh ta thực sự thành thạo phong cách xoáy lên nặng nề này, thì tay vợt phương Tây rất khó thực hiện cú đánh xa hơn, và những cú chạm đất của anh ta vượt trội hơn so với việc đánh những cú chuyền bóng vì hành động nhúng do thêm xoáy lên gây ra.</p></div>
+Nếu anh ta thực sự thành thạo phong cách xoáy lên nặng nề này, thì tay vợt phương Tây rất khó thực hiện cú đánh xa hơn, và những cú đánh nền của anh ta vượt trội hơn so với việc đánh những cú vô-lê vì hành động nhúng do thêm xoáy lên gây ra.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Bất chấp những thành công không thể phủ nhận được ghi lại bởi những tay vợt ở cả hai truyền thống kỹ thuật này, những khó khăn của phong cách phương Tây và lục địa vẫn ngăn cản phần lớn những tay vợt giải trí và thậm chí cả giải đấu.
 Do vai trò trung tâm của việc thả lỏng cổ tay nên việc chơi quần vợt châu Âu hoặc phương Tây giỏi đòi hỏi sự phối hợp tay mắt cực kỳ tốt.
 Nó cũng đòi hỏi phải thực hành nhiều hơn để phát triển và duy trì.
@@ -677,7 +695,7 @@ Ig và Wimbledon ba lần, danh hiệu Wimbledon cuối cùng đến vào năm 1
 Ngay sau Tilden là nhà vô địch cổ điển thống trị thứ hai, Ellsworth Vines, một tay vợt mạnh mẽ trên toàn sân, cũng là nhà vô địch tại Wimbledon và hai lần vô địch Hoa Kỳ vào năm 1931 và 1932. Sau đó đến Don Budge, một nhà tạo mẫu hoàn hảo và là tay vợt đã định nghĩa Grand Slam của quần vợt bằng cách giành các danh hiệu Wimbledon, Pháp, Mỹ và Úc trong một năm lần đầu tiên vào năm 1938. Nhà vô địch cổ điển vĩ đại tiếp theo là Jack Kramer, thế lực thống trị quần vợt vào những năm 1940, người cũng đã thiết lập chiến lược giao bóng và vô lê như một khía cạnh thường trực của trò chơi hiện đại.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Ken Rosewall, Tony Trabert và John Newcombe là một trong những tay vợt cổ điển xuất sắc khác đã tìm được chỗ đứng của mình trong lịch sử quần vợt.
 Rosewall, người đã giành được năm danh hiệu đánh đơn lớn, sở hữu một cú trái tay vốn là nguyên mẫu ảo của cú công bóng xoáy xuống bằng một tay.
-Trabert, người có lối chơi cổ điển toàn diện cực kỳ chắc chắn, đánh bóng có chiều sâu và độ xoáy cao hơn các tay vợt khác cùng thời với ông, và vào năm 1955, ông đã giành được 3 trong 4 chặng Grand Slam, chỉ thiếu chức vô địch Australia.
+Trabert, người có lối chơi cổ điển toàn diện cực kỳ chắc chắn, đánh bóng có chiều sâu và độ xoáy cao hơn các tay vợt khác cùng thời với ông, vào năm 1955, ông đã giành được 3 trong 4 chặng Grand Slam, chỉ thiếu chức vô địch Australia.
 Newcombe, người đã hai lần vô địch Hoa Kỳ và ba lần Wimbledon, đã sử dụng các cú đánh cổ điển để chơi một trò chơi giao bóng và vô lê cực kỳ quyết liệt.
 Cú thuận tay của anh ấy, với cú giật ngược, sử dụng tối thiểu cổ tay và độ dứt điểm cao mượt mà, vẫn là một trong những hình mẫu tốt nhất cho sự biến đổi của cú đánh đó.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Trong lịch sử môn thể thao nữ, sự thống trị của phong cách cổ điển (Classical Style) càng rõ rệt hơn.
@@ -687,7 +705,7 @@ Chỉ có Suzanne Lenglen, nhà vô địch thể thao người Pháp những n�
 Vẫn chưa có một nhà vô địch nữ giỏi nào với kiểu đánh phương Tây.
 một sự kết hợp của các chiến lược, cũng như các đồng nghiệp nam của họ.
 Vì vậy, Alice Marble, tay vợt giao bóng và vô lê vào những năm 1930, cũng như Margaret Court và Billie Jean King đều đã áp dụng kỹ thuật cổ điển vào phong cách tấn công.
-Mặt khác, Maureen Connolly và Helen Wills Moody đã đạt được thành công ngang nhau khi chơi quần vợt cổ điển từ đường cơ sở.</p></div>
+Mặt khác, Maureen Connolly và Helen Wills Moody đã đạt được thành công ngang nhau khi chơi quần vợt cổ điển từ vạch cuối sân.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Với sự khởi đầu của quần vợt chuyên nghiệp hiện đại, định nghĩa ai là tay vợt cổ điển trở nên phức tạp hơn vì nhiều lý do, bao gồm việc đưa trái tay bằng hai tay như một cú đánh chiếm ưu thế, sự ra đời của xoáy lên nặng hoặc cường điệu, và tốc độ đánh tăng lên đáng kể với sự phát triển của công nghệ vợt.
 Tuy nhiên, phần lớn các kỳ thủ vĩ đại trong những năm 1970 và 1980 vẫn có thể được nhận dạng rõ ràng bằng những cú đánh kỹ thuật cổ điển của họ.
 Danh sách này bao gồm những tay vợt nam hàng đầu như Stan Smith, Vitas Gerulaitis, Sandy Mayer và Brian Gottfried.
@@ -707,7 +725,7 @@ Agassi cũng hung hãn như Connors, nhưng đánh bóng với nhiều xoáy lê
 Những biến thể trong chiến lược chơi của họ chỉ thể hiện tính linh hoạt tối cao của việc tạo ra cú đánh cổ điển.
 Cách những tay vợt này tấn công bóng mang lại cho họ nhiều điểm chung hơn so với những tay vợt khác có thể chơi theo phong cách chiến lược tương tự.
 Như chúng ta vừa thấy, quần vợt cổ điển không được xác định bằng chiến lược.
-Nó cũng phù hợp như nhau với đường cơ sở hoặc trò chơi tấn công.
+Nó cũng phù hợp như nhau với vạch cuối sân hoặc trò chơi tấn công.
 Nó cũng không được xác định bởi tính chất và lượng xoáy mà tay vợt sử dụng.
 Tay vợt có thể đánh nhiều cú đánh khác nhau bằng xoáy lên, xoáy xuống hoặc đánh phẳng và vẫn chơi quần vợt cổ điển.
 Chơi theo phong cách cổ điển (Classical Style), bạn có thể đánh bóng phẳng như Connors, với mức độ xoáy lên vừa phải như Evert, Navratilova, Agassi và Graf, hoặc với độ xoáy lên cao hơn như Lendl. Hơn nữa, có thể chơi quần vợt cổ điển bằng trái tay một tay hoặc hai tay.</p></div>
@@ -719,7 +737,7 @@ Tất cả đều có phần lớn lòng bàn tay đặt vuông góc phía sau c
 Vai trò của cổ tay trong việc tạo ra cú đánh là trò chơi và là chủ đề của những lời khuyên trái ngược nhau.
 Một mẹo chơi tennis phổ biến khuyên mọi tay vợt nên “giữ vững cổ tay” ở cú thuận tay.
 Nhưng một trường phái tư tưởng phổ biến không kém cho rằng cổ tay nên được thả ra khi tiếp xúc để tạo thêm tốc độ đầu vợt.
-Như những bức ảnh trong chương về thuận tay chứng minh, cả hai quan điểm này đều là sự mô tả không chính xác về vị trí cổ tay của một cú thuận tay cổ điển tốt.
+Như những cú đánh trong chương về thuận tay chứng minh, cả hai quan điểm này đều là sự mô tả không chính xác về vị trí cổ tay của một cú thuận tay cổ điển tốt.
 Một trong những đặc điểm nổi bật Ở tư thế xoay thuận tay của mỗi đấu thủ được xác định ở trên, khuỷu tay hơi thu về phía thắt lưng và cổ tay tạo một góc với cẳng tay, ngửa ra sau sao cho vợt hướng thẳng đứng vào hàng rào phía sau của sân.
 Vị trí cánh tay này được gọi là vị trí uốn cong đôi. Cánh tay giữ nguyên tư thế uốn cong đôi này— khuỷu tay hướng vào trong, cổ tay ra sau—tại điểm tiếp xúc bóng (Contact Point), cho đến hết tư thế kết thúc (Finish Position).
 Vị trí cánh tay này tạo ra cái được gọi là kiểu xoay “nhỏ gọn”.
@@ -746,7 +764,7 @@ Với đường vung vợt thẳng đứng, tay vợt cổ điển có thể t�
             <div class="bilingual-block stanza"><p class="lang-vi">Một ưu điểm khác của phong cách cổ điển (Classical Style) là nó không chỉ cho phép tay vợt tạo ra xoáy lên tự nhiên mà còn cho phép anh ta thay đổi lượng xoáy lên mà không thay đổi cú đánh cơ bản của mình.
 Bằng cách tăng tốc vợt lên cao hơn khi tiếp xúc, tay vợt sẽ tăng hiệu ứng cọ vào mặt sau của quả bóng và điều này tạo ra độ xoáy bổ sung.
 Ngược lại, bằng cách di chuyển đầu vợt qua quả bóng theo đường thẳng hơn một chút, tay vợt có thể giảm độ xoáy, đánh bóng có quỹ đạo phẳng hơn.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Một khía cạnh quan trọng trong việc tạo ra xoáy lên tự nhiên này là khả năng chuyền bóng cao và đầy đủ.
+            <div class="bilingual-block stanza"><p class="lang-vi">Một khía cạnh quan trọng trong việc tạo ra xoáy lên tự nhiên này là khả năng đánh vô-lê cao và đầy đủ.
 Một câu hỏi hợp lý được học sinh đặt ra là: tại sao phải lo lắng về việc thực hiện tiếp theo khi bóng đã bay ra khỏi dây?
 Câu trả lời là cú đánh tiếp theo xác định cách vợt chuyển động khi tiếp xúc và là yếu tố quan trọng quyết định bản chất của cú đánh.
 Như đã thảo luận chi tiết trong các chương về cú đánh riêng lẻ, một cú đánh đầy đủ và có độ xoáy cao có nghĩa là vợt sẽ tăng tốc tại điểm tiếp xúc bóng (Contact Point), và gia tốc này là yếu tố tạo ra tốc độ cũng như xoáy lên.</p></div>
@@ -756,7 +774,7 @@ Câu trả lời của anh ấy là: &quot;Hãy quay vai lại.&quot;
 Nếu được phép nói thêm ba từ nữa, có lẽ anh ta sẽ nói thêm: “Hãy cuộn chân lại.”
 Vai và chân, chứ không phải một cú xoay người cường điệu, là chìa khóa để tối đa hóa sức mạnh trong quần vợt cổ điển.
 Vì vậy, trong quá trình chuẩn bị cho cú đánh, vị trí của cơ thể khi rẽ là rất quan trọng.
-Như chúng ta sẽ thấy trong các bức ảnh tiếp theo, vai phải xoay hoàn toàn sang một bên sao cho vuông góc với lưới.
+Như chúng ta sẽ thấy trong các cú đánh tiếp theo, vai phải xoay hoàn toàn sang một bên sao cho vuông góc với lưới.
 Tiếp theo, khi tay vợt bước vào cú đánh, đầu gối phải gập hoàn toàn ngay trước khi bắt đầu động tác đánh trước.
 Nếu vai xoay và đầu gối cuộn lại trước khi vợt bắt đầu về phía trước, tay vợt cổ điển sẽ tự động tạo ra đòn bẩy cơ thể lớn. Việc xoay vai và duỗi chân sẽ tạo ra gia tốc tăng lên cho đầu vợt khi nó di chuyển về phía bóng.
 Điều này sẽ được chuyển thành tốc độ bắn và xoáy lên.</p></div>
@@ -807,7 +825,7 @@ ote Paifacruititls.. Dore Hae playe Yad 8 tite &amp; ais evel a ley TP lancer fa
 ty ihe hominid, 1h ie cee fay ihe ty fom Te ah Trot perpen eliculer to Ais ek.
 od thewt te toiate te bart Pot et ee ee shad Es eary it ry ee ee “cd huế? ty yy tage trtt ahi Atte bye pe pert oul a ivy at i, “re eye eye Gee ATH tf Che wo Attic beaRty ye
 cuộc biểu tình: sự kiện ot huh foyele của 7BY Teta Lebenntivers Witidescs Rar palin tại Driglice 'haved hs atytridia tức là bg cand atk ih othe Kain wit ityaat fp nh a J atdkaoore tw the arin uti 4 wit i + eegtloes cle tht shast, This *Wears We Seba tn) Sona they i siete adi. Pai fe abr tree se Ay Wine wink iseeeitinngth phivets iho kaiky he thuận tay là cú đánh cơ bản nhất trong quần vợt và là cú đánh mà hầu hết tay vợt đều học đầu tiên.
-Thông thường, ít nhất nó sẽ trở nên nhất quán khá nhanh chóng và phát triển thành bức ảnh đẹp nhất của họ.
+Thông thường, ít nhất nó sẽ trở nên nhất quán khá nhanh chóng và phát triển thành cú đánh đẹp nhất của họ.
 Tuy nhiên, ở cấp độ chơi cao hơn, xu hướng này thường bị đảo ngược.
 Những tay vợt hàng đầu thường thiếu nhất quán ở phía thuận tay.
 Một nhà bình luận truyền hình nổi tiếng từng nhận xét rằng trên thế giới chỉ có bốn tay vợt có những cú thuận tay tốt.
@@ -917,7 +935,7 @@ Vợt vẫn di chuyển theo đường tròn, tăng thêm tốc độ đầu v�
             <div class="bilingual-block stanza"><p class="lang-vi">Với vòng lặp lớn, một số tay vợt, ngay cả ở trình độ giải trí, không thể đưa vợt đi xung quanh để tiếp xúc kịp thời, khiến cho cú thuận tay của họ bị hỏng trước những đối thủ mạnh.
 Với động tác backswing mặt đóng, tay vợt có thể tạo ra tốc độ đầu vợt bằng hoặc nhiều hơn so với khi thực hiện cú giật lớn, nhưng thực hiện điều đó trong thời gian ngắn hơn, đảm bảo tiếp xúc sớm.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Ưu điểm thứ ba của cú giật mặt vợt đóng (Closed Face) là tạo ra xoáy lên lớn hơn.
-Như các bức ảnh trình tự của động tác vung vợt sau này cho thấy, vị trí của vợt khi hoàn thành động tác vung vợt sau thấp hơn so với động tác vung vợt thẳng hoặc giật truyền thống.
+Như các cú đánh trình tự của động tác vung vợt sau này cho thấy, vị trí của vợt khi hoàn thành động tác vung vợt sau thấp hơn so với động tác vung vợt thẳng hoặc giật truyền thống.
 Điều này có nghĩa là khi vợt bắt đầu hướng về phía điểm tiếp xúc bóng (Contact Point), góc của mặt phẳng vung sẽ dốc hơn.
 Vì vợt đang di chuyển lên trên mạnh hơn tại điểm tiếp xúc bóng (Contact Point), hiệu ứng cọ vào mặt sau của bóng sẽ lớn hơn, và do đó, cú đánh sẽ làm tăng xoáy lên.
 Việc sử dụng cú backswing mặt vợt đóng (Closed Face) của Lendl đã tối đa hóa lượng xoáy lên có thể được tạo ra trong giới hạn kỹ thuật của phong cách cổ điển (Classical Style).</p></div>
@@ -1044,7 +1062,7 @@ Việc thực hành các cú vung vợt thường xuyên đặc biệt quan tr�
 Nguyên tắc cơ bản của việc luyện tập hình dung là không thể phát triển hoặc điều chỉnh một cú đánh bằng cách chơi trò chơi, hoặc thậm chí bằng cách đánh bóng.
 Để thực hiện quá trình này, bạn phải có các điều kiện được kiểm soát.
 Điều này có nghĩa là có cơ hội đánh một luồng bóng được đặt đúng vị trí, đến với tốc độ thấp đến trung bình.
-Ngoài ra, các quả bóng trong máy khoan có kiểm soát phải đến trực tiếp với bạn và không cần phải di chuyển nhiều bằng chân để tiếp cận và chuẩn bị.</p></div>
+Ngoài ra, các quả bóng trong bài tập có kiểm soát phải đến trực tiếp với bạn và không cần phải di chuyển nhiều bằng chân để tiếp cận và chuẩn bị.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Bạn có thể tạo bài tập có kiểm soát bằng cách làm việc với một đối tác thực hành hoặc với một chuyên gia giảng dạy, người cũng có thể giúp theo dõi tiến trình của bạn.
 Tuy nhiên, cách tốt nhất để tập luyện có kiểm soát là thuê máy đánh bóng ở câu lạc bộ hoặc trung tâm quần vợt công cộng.
 Ưu điểm của máy bóng là độ chính xác cao của vị trí bóng, điều này tạo điều kiện nhanh chóng cho sự phát triển trí nhớ của cơ.</p></div>
@@ -1152,7 +1170,7 @@ Bạn có thể sẽ nhìn thấy chính mình trong tâm trí từ phía trên 
 Do đó, hình ảnh của Vị trí Kết thúc, cũng như một số phím khác, được trình bày từ góc nhìn này.
 Khi bạn nhìn thấy hình ảnh hoàn thiện trong đầu, hãy cung cấp cho nó càng nhiều chi tiết càng tốt.
 Hình ảnh này bây giờ sẽ trở thành bản thiết kế để thực hiện nét vẽ chính xác.
-Bây giờ, hãy kiểm tra chìa khóa bằng cách làm việc trong máy khoan có kiểm soát. Khi quả bóng đang tới gần, hãy hình dung hình ảnh của bạn về Vị trí Kết thúc.
+Bây giờ, hãy kiểm tra chìa khóa bằng cách làm việc trong bài tập có kiểm soát. Khi quả bóng đang tới gần, hãy hình dung hình ảnh của bạn về Vị trí Kết thúc.
 Hãy giữ hình ảnh đó trong tâm trí bạn và khi bạn vung vợt, hãy làm cho vợt thật chồng lên hình ảnh.
 Bạn sẽ thấy rằng hình ảnh sẽ hoạt động như một nam châm, hút vợt về đúng Vị trí Kết thúc.
 Khi bạn đánh bóng, hãy cố gắng làm cho vợt và hình ảnh tương ứng chính xác nhất có thể.
@@ -1164,11 +1182,11 @@ Khi quả bóng đang tới gần, hãy hình dung hình ảnh chiếc chìa kh�
 Làm cho cánh tay, vợt, cổ tay thật của bạn, v.v. chồng lên hình ảnh.
 Làm điều này cho mười đến hai mươi quả bóng.
 Nếu kiểu nét được cải thiện thì phím này sẽ hoạt động cho bạn và bạn nên thêm nó vào biểu đồ từ khóa kích hoạt cú đánh (Stroke Key) của mình.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Như đã lưu ý trong phần giới thiệu, nguyên nhân chính thứ hai gây ra lỗi không thể thực hiện được trong bất kỳ cú đánh nào là xu hướng đánh bóng quá mạnh, thường là nhằm cố gắng đánh người chiến thắng.
+            <div class="bilingual-block stanza"><p class="lang-vi">Như đã lưu ý trong phần giới thiệu, nguyên nhân chính thứ hai gây ra lỗi không thể thực hiện được trong bất kỳ cú đánh nào là xu hướng đánh bóng quá mạnh, thường là nhằm cố gắng đánh cú ghi điểm trực tiếp.
 Khi hầu hết các tay vợt có sơ hở để giành được một điểm, họ thường cố gắng đánh bóng quá mạnh, thường mắc lỗi không đáng có.
 Điều này đặc biệt đúng ở cú thuận tay, thứ mà hầu hết tay vợt coi là vũ khí tốt nhất của họ.
 Xu hướng này có thể được cho là do sự phấn khích quá mức, nhưng cũng có thể là do sự sai lầm trong cách tay vợt nghĩ về cú đánh.
-Người ta thường cho rằng việc sử dụng nhiều cơ hơn sẽ dẫn đến vận tốc bóng nhiều hơn và do đó người ta tin rằng để đánh trúng người chiến thắng, bạn phải đánh bóng càng mạnh càng tốt.</p></div>
+Người ta thường cho rằng việc sử dụng nhiều cơ hơn sẽ dẫn đến vận tốc bóng nhiều hơn và do đó người ta tin rằng để đánh trúng cú ghi điểm trực tiếp, bạn phải đánh bóng càng mạnh càng tốt.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Xét về mặt vật lý của cú đánh, sự thật hoàn toàn ngược lại.
 Khi tay vợt đánh thuận tay quá mức, họ liên tưởng mức độ căng cơ cao hơn mà họ cảm thấy ở cánh tay với một cú đánh mạnh hơn.
 Nhưng nếu chúng ta kiểm tra điều gì đang xảy ra với vợt khi tiếp xúc, chúng ta có thể thấy điều này không đúng.
@@ -1229,7 +1247,7 @@ Quy trình học cách tạo các từ khóa kích hoạt cú đánh (Stroke Key
 Đầu tiên, thiết lập vị trí về mặt vật lý, tham khảo các điểm kiểm tra đi kèm với hình ảnh.
 Tiếp theo, nhắm mắt lại và tạo ra hình ảnh về vị trí đó trong tâm trí bạn, cung cấp cho nó càng nhiều chi tiết càng tốt.
 Hãy chú ý đến cảm giác về mặt thể chất của tư thế đó và làm cho hình ảnh và cảm giác đó tương ứng với nhau trong tâm trí bạn.
-Bây giờ hãy kiểm tra chìa khóa trong máy khoan có kiểm soát.
+Bây giờ hãy kiểm tra chìa khóa trong bài tập có kiểm soát.
 Khi quả bóng đến gần, hãy ghi nhớ hình ảnh chiếc chìa khóa;
 khi bạn vung vợt, hãy làm cho vợt, cánh tay đánh, vai, v.v. chồng lên hình ảnh của phím. Xác định xem phím có đang hoạt động hay không và nếu có, hãy thêm nó vào biểu đồ từ khóa kích hoạt cú đánh (Stroke Key) cá nhân của bạn.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Keying the thuận tay: Vị trí kết thúc từ góc nhìn của tay vợt OC FONG FOLO NOM RO.
@@ -1251,7 +1269,7 @@ Lưu ý rằng vai được xoay hoàn toàn.
 Thân vợt song song với mặt sân, mặt vợt vuông góc.
 Cánh tay ở tư thế uốn cong đôi.
 Thiết lập vị trí vật lý và tạo ra quán tưởng tâm trí (Mental Imagery).
-Bây giờ hãy kiểm tra chìa khóa trong máy khoan có kiểm soát.
+Bây giờ hãy kiểm tra chìa khóa trong bài tập có kiểm soát.
 Bấm phím thuận tay: Điểm tiếp xúc từ góc nhìn của tay vợt Tuy nhiên, nếu kết thúc đúng thường sẽ tạo ra Điểm tiếp xúc sớm, một số tay vợt nhận thấy rằng bản thân hình ảnh của điểm tiếp xúc bóng (Contact Point) là chìa khóa hiệu quả hơn cho cú thuận tay.
 Nếu có xu hướng liên lạc muộn, phím này sẽ sửa nó.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Tiếp xúc sớm đảm bảo rằng cú đánh sẽ có đòn bẩy cơ thể tối đa và do đó, tốc độ bắn.
@@ -1262,14 +1280,14 @@ Lưu ý các điểm kiểm tra.
 Cổ tay hơi ngả ra sau với khuỷu tay hướng về phía thắt lưng.
 Thân vợt nằm ngang, mặt vợt vuông góc với mặt sân.
 Thiết lập vị trí vật lý và sau đó tạo ra quán tưởng tâm trí (Mental Imagery).
-Kiểm tra chìa khóa trong máy khoan có điều khiển.</p></div>
+Kiểm tra chìa khóa trong bài tập có điều khiển.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Keying cú thuận tay: Lòng bàn tay là mặt của vợt. TRÌNH TỰ TRÊN HIỂN THỊ HÌNH ẢNH CỦA LÒNG TAY LÀ MẶT VỢI Ở VÒI LƯỢT, ĐIỂM TIẾP XÚC VÀ VỊ TRÍ CUỐI.
 O.. trong số các lỗi kỹ thuật phổ biến nhất trong cú thuận tay là thả cổ tay khi tiếp xúc.
 Xu hướng này làm tách đầu vợt ra khỏi thân vợt và phá hủy sức mạnh và tính nhất quán của cú đánh.
 Để khắc phục xu hướng này, hãy hình dung lòng bàn tay như mặt vợt.
 Điều này sẽ giữ cho cổ tay hơi ngả ra sau trong suốt cú swing.
 Thiết lập vị trí vật lý cho từng khung hình trong số ba khung hình trên, sau đó tạo hình ảnh trực quan.
-Kiểm tra phím trong máy khoan có kiểm soát bằng cách hiển thị hình ảnh tĩnh của lòng bàn tay ở một trong ba khung hình chính hoặc một đoạn phim nhỏ về toàn bộ chuyển động.</p></div>
+Kiểm tra phím trong bài tập có kiểm soát bằng cách hiển thị hình ảnh tĩnh của lòng bàn tay ở một trong ba khung hình chính hoặc một đoạn phim nhỏ về toàn bộ chuyển động.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Nắm bắt cú thuận tay: Sử dụng chân để tạo sức mạnh và xoáy lên NẾU bạn đã phát triển cú thuận tay của mình đúng cách, bạn hẳn đã nhận được đòn bẩy bằng chân trong cú đánh của mình.
 Chìa khóa này sẽ chỉ cho bạn cách phát huy hết tiềm năng của nó.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Cơ đùi trước, hay cơ tứ đầu, là cơ khỏe nhất trong cơ thể.
@@ -1281,14 +1299,14 @@ Kết quả là tốc độ và xoáy lên cao hơn.
 Cú đánh sẽ có cảm giác dễ dàng và cú xoay vẫn mượt mà và thoải mái, nhưng sẽ có vận tốc và độ xoay bóng cao hơn đáng kể.
 Tạo tư thế thể chất được hiển thị ở trên bằng cách tối đa hóa khả năng uốn cong đầu gối của bạn khi bước tới bóng.
 Sau đó tạo hình ảnh trực quan.
-Kiểm tra chìa khóa trong máy khoan có điều khiển.
+Kiểm tra chìa khóa trong bài tập có điều khiển.
 Điều chỉnh cú thuận tay: Đánh bóng lên để tạo xoáy lên Kiểu xoay thuận tay mà bạn đã phát triển được thiết kế để tạo ra xoáy lên một cách tự động. Nếu mặt vợt thẳng đứng với mặt sân khi tiếp xúc, các dây sẽ chạm vào mặt sau của quả bóng, khiến quả bóng tự xoay.
 Nhưng khả năng đánh bóng lên và do đó lượng xoáy lên được tạo ra có thể được tăng lên bằng cách sử dụng phím này.
 Khi bạn tiến bộ hơn và đối mặt với những tay vợt đánh với tốc độ nhanh hơn, bạn sẽ thấy mình cần thêm độ xoáy để kiểm soát bóng và giữ nó trong sân.
 Sự thay đổi duy nhất cần thiết để thay đổi lượng xoáy là tăng nhẹ độ dốc của mặt phẳng xoay.
 Mặt vợt phải giữ thẳng đứng nhưng di chuyển mạnh lên trên khi tiếp xúc, như các mũi tên chỉ ra.
 Thiết lập vị trí vật lý được hiển thị ở trên và tạo hình ảnh trực quan về cú đánh lên, với vợt sượt qua mặt bóng.
-Kiểm tra chìa khóa trong máy khoan có điều khiển.</p></div>
+Kiểm tra chìa khóa trong bài tập có điều khiển.</p></div>
           </div>
           <figure class="figure-wrap">
             <img src="yandell_visual_assets/yandell_visual_fh_still_frames.jpg" alt="Cấu trúc gập đôi cú thuận tay từ góc nhìn tay vợt" class="figure-img" loading="lazy">
@@ -1371,7 +1389,7 @@ Trên thực tế, không có sự khác biệt rõ rệt giữa điểm tiếp 
 Có lẽ quan niệm sai lầm lớn nhất về sức mạnh của một tay vợt bình thường là đánh bóng mạnh hơn sẽ cần nhiều cơ bắp hơn.
 Thay vào đó, sức mạnh đến từ khả năng tăng tốc đầu vợt liên tục và từ đòn bẩy cơ thể.
 Đòn bẩy cơ thể được tạo ra, như được giải thích trong các chương về cú đánh, bằng cách xoay vai, bằng cách duỗi chân và bằng cách tiếp xúc ở phía trước cơ thể. Khi điểm tiếp xúc bóng (Contact Point) ở phía trước cơ thể như được minh họa trong các mô hình, tay vợt đảm bảo rằng toàn bộ đòn bẩy do chuyển động tạo ra sẽ được chuyển vào cú đánh.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Do đó, khi bạn phát triển các kiểu đánh cho các cú chạm đất của mình, bạn nên cố gắng giữ nhịp điệu chuyển động của mình đều đặn.
+            <div class="bilingual-block stanza"><p class="lang-vi">Do đó, khi bạn phát triển các kiểu đánh cho các cú đánh nền của mình, bạn nên cố gắng giữ nhịp điệu chuyển động của mình đều đặn.
 Điều này có nghĩa là, cho dù trong cuộc tập trận có kiểm soát, cuộc tập hợp hay trận đấu, bạn nên để bóng quyết định tốc độ.
 Thay vì cố gắng tăng vận tốc bóng bằng cách vung nhanh hơn, bạn nên tưởng tượng mình đánh bóng trở lại với tốc độ nó đang lao tới.
 Nếu kỹ thuật thực hiện của bạn đúng, bạn sẽ tạo ra tốc độ một cách tự nhiên thông qua lực đòn bẩy của cơ thể từ vai và chân.</p></div>
@@ -1395,7 +1413,7 @@ Tiếp xúc ở phía trước, ít nhất là với các kiểu đánh cổ đi
 Do đó, có thể đánh bóng ở phía trước mà không cần đánh sớm.
 Ví dụ: tay vợt có thể để bóng rơi xuống dưới đỉnh của cú nảy và vẫn giữ vị trí của mình để đánh bóng bằng một điểm tiếp xúc bóng (Contact Point) ở phía trước cơ thể.
 Ngược lại, cũng có thể lấy bóng sớm hoặc đang trên cao mà không cần tiếp xúc ở phía trước cơ thể.
-Điều này đặc biệt đúng với các đột quỵ lục địa.
+Điều này đặc biệt đúng với các cú đánh lục địa.
 Vì có thể đánh thuận tay lục địa bằng chân sau một cách tốt như nhau, nên một tay vợt châu lục thực sự có thể tiếp xúc khi bóng đã đi qua mép trước của cơ thể anh ta. Tuy nhiên, anh ấy vẫn sẽ chọn vị trí để đánh bóng sớm.
 Quả bóng có thể ở phía sau chân trước của anh ta, nhưng anh ta vẫn sẽ đánh nó khi nó đang ở gần sân, trước khi nó chạm đến đỉnh của cú nảy.
 Trên thực tế, đây là một yêu cầu vì hầu như không thể thực hiện được một cú đánh lục địa chắc chắn trên một quả bóng cao.</p></div>
@@ -1482,7 +1500,7 @@ Do đó, tay vợt hai tay thường sẽ có tốc độ bóng ở phía trái 
 Điều này làm cho cú đánh trái tay bằng hai tay trở thành một cú đánh đáng gờm trong các pha đánh bóng cơ bản và khi trả giao bóng.
 Không có gì lạ khi cú trái tay trở thành mặt mạnh hơn đối với tay vợt hai tay, buộc đối thủ của anh ta phải chơi về phía thuận tay của anh ta.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Thứ hai, việc đánh cú đánh bằng hai tay với xoáy lên sẽ dễ dàng hơn và thay đổi mức độ xoáy lên.
-Sự dễ dàng tương đối trong việc tạo ra độ xoáy làm cho cú đánh bằng hai tay ít nhất ngang bằng với cú đánh bằng một tay về khả năng chuyền bóng.
+Sự dễ dàng tương đối trong việc tạo ra độ xoáy làm cho cú đánh bằng hai tay ít nhất ngang bằng với cú đánh bằng một tay về khả năng đánh vô-lê.
 Ngoài ra, vì cú đánh được tạo ra bằng cơ chế sinh học tương tự như cú đánh thuận tay, nên người đánh hai tay ít gặp vấn đề hơn nhiều khi đánh bóng cao.
 Với hai tay, tay vợt có thể đánh bóng cao một cách tương đối dễ dàng, tạo ra tốc độ tốt và xoáy lên mạnh.
 Để so sánh, tay vợt một tay buộc phải chơi hầu hết các đường bóng cao bằng lát cắt, và thường không thể tạo ra tốc độ giống như tay vợt hai tay trên một quả bóng tương đương, chưa nói đến việc tạo ra xoáy lên.
@@ -1552,7 +1570,7 @@ Ken Rosewall, người có một trong những cú trái tay đẹp nhất và h
 .</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Hầu hết những tay vợt bằng một tay sẽ cảm thấy thoải mái hơn với cú công bóng xoáy lên, và việc học điều này trước tiên có những lợi thế riêng.
 Đầu tiên, nó thường có thể được đánh với tốc độ nhanh hơn.
-Bởi vì nó cũng có thể bị đánh với các mức độ xoáy lên khác nhau, nên nó vượt trội hơn trong việc chuyền bóng và cũng vì tốc độ vượt trội, để buộc phải chơi trong các pha đánh bóng cơ bản.</p></div>
+Bởi vì nó cũng có thể bị đánh với các mức độ xoáy lên khác nhau, nên nó vượt trội hơn trong việc đánh vô-lê và cũng vì tốc độ vượt trội, để buộc phải chơi trong các pha đánh bóng cơ bản.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Quay lại với các mô hình bằng một tay, một số người học trò chơi sẽ nhận thấy rằng cả cú đánh xoáy lên và xoáy xuống được trình bày ở đây đều có cú đánh xoáy xuống thẳng.
 Có thể có sự phản đối rằng hầu hết những tay vợt có kinh nghiệm đều không sử dụng động tác backswing thẳng.
 Thay vào đó, họ uốn cong khuỷu tay lên khi bắt đầu thực hiện động tác vung vợt sau, nâng đầu vợt lên ngang tầm vai và chỉ hạ đầu vợt xuống khi vợt đến gần điểm tiếp xúc bóng (Contact Point).
@@ -1704,7 +1722,7 @@ Cuộc tập trận có kiểm soát có thể được sắp xếp bằng cách
 Bạn cũng có thể làm việc với một đối tác luyện tập, thay phiên nhau đưa bóng cho nhau.
 Hoặc bạn có thể làm việc với một chuyên gia giảng dạy, người không chỉ có thể cho bạn ăn bóng mà còn có thể giúp theo dõi sự tiến bộ của bạn.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Mục đích của việc tập luyện có kiểm soát là học cách đánh kiểu đánh một cách chính xác và chính xác, xây dựng trí nhớ và sự tự tin của cơ.
-Mục tiêu ban đầu là đánh được mười cú cú trái xoáy lên (Topspin Backhand) bằng một tay một cách chính xác theo mô hình.
+Mục tiêu ban đầu là đánh được mười cú trái xoáy lên (Topspin Backhand) bằng một tay một cách chính xác theo mô hình.
 Như được giải thích trong phần tiếp theo, việc điều chỉnh trí nhớ cơ bắp (Muscle Memory) sẽ giúp bạn theo dõi mức độ thành công của mình trong việc thực hiện cú đánh một cách chính xác.
 Ngay khi bạn có thể thực hiện được mười cú đánh, bạn có thể tăng dần tốc độ bóng bạn đánh và/hoặc số lần lặp lại.
 Bước tiếp theo trong bài tập có kiểm soát là thêm động tác bằng chân hoặc chuyển động vào bóng.
@@ -1734,7 +1752,7 @@ Bắt đầu ở tư thế sẵn sàng (Ready Position) và thực hiện cú vu
 Đảm bảo rằng bạn đi qua từng khung hình tĩnh (Still Frame) và các điểm kiểm tra là chính xác.
 Nếu bạn không chắc chắn, hãy dành thời gian dừng lại và so sánh chúng với các mô hình. Thực hiện mười cú vung hoàn hảo.
 Hãy cố gắng thực hiện điều này hàng ngày và thực hiện tối đa 25 hoặc thậm chí 50 cú xoay người.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Thành phần thứ hai của việc xây dựng trí nhớ cơ bắp (Muscle Memory) là luyện tập hình dung cú cú trái xoáy lên (Topspin Backhand) bằng một tay.
+            <div class="bilingual-block stanza"><p class="lang-vi">Thành phần thứ hai của việc xây dựng trí nhớ cơ bắp (Muscle Memory) là luyện tập hình dung cú trái xoáy lên (Topspin Backhand) bằng một tay.
 Để làm điều này, hãy lặp lại quá trình được mô tả ở trên một cách trực quan.
 Bắt đầu ở Vị trí Sẵn sàng và quan sát bản thân thực hiện cú vung thực hành.
 Một lần nữa, hãy đảm bảo rằng, trong tâm trí bạn, bạn thấy mình đi qua từng khung hình tĩnh (Still Frame) và các điểm kiểm tra là chính xác.
@@ -1746,11 +1764,11 @@ Bạn có thể làm điều này tại nơi làm việc hoặc ngay cả khi b�
 Bất kỳ khoảnh khắc rảnh rỗi nào cũng có thể được chuyển sang hoạt động bằng trái tay của bạn, ngay cả khi bạn không ở gần sân.
 Thành phần thứ hai của việc hình dung bên ngoài sân đấu là xem video về những cú đánh trái tay kỹ thuật tốt.
 Video Visual Tennis cung cấp cho bạn những hình ảnh này, cũng như The Winning Edge và các băng hướng dẫn khác.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Chỉnh sửa trí nhớ cơ bắp (Muscle Memory) A. với cú thuận tay, một khía cạnh trung tâm trong sự phát triển của cú cú trái xoáy lên (Topspin Backhand) bằng một tay là quá trình điều chỉnh trí nhớ cơ bắp (Muscle Memory).
+            <div class="bilingual-block stanza"><p class="lang-vi">Chỉnh sửa trí nhớ cơ bắp (Muscle Memory) A. với cú thuận tay, một khía cạnh trung tâm trong sự phát triển của cú trái xoáy lên (Topspin Backhand) bằng một tay là quá trình điều chỉnh trí nhớ cơ bắp (Muscle Memory).
 Việc điều chỉnh trí nhớ cơ bắp (Muscle Memory) phải là một phần thường xuyên trong công việc của bạn trong bài tập có kiểm soát.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Việc điều chỉnh trí nhớ cơ bắp (Muscle Memory) cho phép bạn nhận ra và sửa lỗi của mình khi chúng xảy ra, trước khi chúng có cơ hội lặp lại và trở thành thói quen.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Ở phía bên trái tay, hãy thực hiện các chỉnh sửa của bạn như sau: khi kết thúc cú đánh, dừng lại và cố định cơ thể của bạn ở vị trí thực hiện cú đánh tiếp theo.
-Theo nghĩa đen, cứng đơ như một bức tượng—không hồi phục sau cơn đột quỵ.
+Theo nghĩa đen, cứng đơ như một bức tượng—không hồi phục sau cơn cú đánh.
 Từ vị trí người tượng, so sánh kết thúc thực tế của bạn với các điểm kiểm tra để tìm Vị trí kết thúc chính xác.
 Kết thúc của bạn so sánh như thế nào?
 Lưu ý sự khác biệt.
@@ -1796,7 +1814,7 @@ Sau đó, bằng cách sử dụng hình ảnh chiếc chìa khóa trên sân, t
 Điều này mang lại cho tay vợt một phương pháp đáng tin cậy để đánh những cú đánh dễ dàng, vượt trội về mặt kỹ thuật trong trận đấu. Việc phát triển khóa là một quá trình cá nhân và phải được thực hiện bằng cách thử và sai theo thời gian.
 Về mặt lý thuyết, có hàng tá chìa khóa trở lên có thể có hiệu quả.
 Trên thực tế, mỗi cá nhân sẽ nhận thấy một số phím nhất định tạo ra nét gần giống như có phép thuật, trong khi những phím khác thì không.
-iy Đối với cú cú trái xoáy lên (Topspin Backhand) bằng một tay, phím hoạt động có thể là hình ảnh của bất kỳ một trong bốn khung hình tĩnh (Still Frame) hoặc hình ảnh của bất kỳ một trong các điểm kiểm tra.
+iy Đối với cú trái xoáy lên (Topspin Backhand) bằng một tay, phím hoạt động có thể là hình ảnh của bất kỳ một trong bốn khung hình tĩnh (Still Frame) hoặc hình ảnh của bất kỳ một trong các điểm kiểm tra.
 Tuy nhiên, cũng như với cú thuận tay, phím hiệu quả nhất thường là hình ảnh của Vị trí Kết thúc, vì bất kỳ cú đánh nào kết thúc chính xác, trong mọi khả năng, cũng đúng trên đường về đích.
 Để tạo phím kết thúc, hãy làm theo quy trình sau: thực hiện cú xoay người và đứng yên ở Vị trí Kết thúc, đảm bảo các điểm kiểm tra là chính xác.
 Bây giờ hãy nhắm mắt lại và hình dung mình ở vị trí đó.
@@ -1828,13 +1846,13 @@ Như đã nêu cho phím Vị trí Kết thúc ở trên, quy trình học để
 Đầu tiên, thiết lập vị trí về mặt vật lý, tham khảo các điểm kiểm tra đi kèm với hình ảnh.
 Tiếp theo, nhắm mắt lại và tạo ra hình ảnh về vị trí đó trong tâm trí bạn, cung cấp cho nó càng nhiều chi tiết càng tốt.
 Hãy chú ý đến cảm giác về mặt thể chất của tư thế đó và làm cho hình ảnh và cảm giác đó tương ứng với nhau trong tâm trí bạn.
-Sau đó kiểm tra chìa khóa trong máy khoan có kiểm soát. Khi quả bóng đến gần, hãy ghi nhớ hình ảnh của chìa khóa và khi bạn vung vợt, hãy làm cho vợt, cánh tay đánh, vai, v.v. của bạn chồng lên hình ảnh của chìa khóa.
+Sau đó kiểm tra chìa khóa trong bài tập có kiểm soát. Khi quả bóng đến gần, hãy ghi nhớ hình ảnh của chìa khóa và khi bạn vung vợt, hãy làm cho vợt, cánh tay đánh, vai, v.v. của bạn chồng lên hình ảnh của chìa khóa.
 Khi chìa khóa đã vững chắc trong bài tập có kiểm soát, bạn có thể chuyển sang các cuộc tập hợp và đấu trận.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Bước cuối cùng trong việc phát triển hệ thống chính của bạn là phân tích xu hướng.
 Mỗi đấu thủ nên hiểu những loại lỗi mình thường mắc phải và cách sửa chúng trên sân.
 Điều này có nghĩa là nhận ra phím nào có thể khắc phục các loại lỗi thường gặp nhất của bạn.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Khi bạn thử nghiệm phát triển và tinh chỉnh các phím của mình, hãy hệ thống hóa chúng thành biểu đồ từ khóa kích hoạt cú đánh (Stroke Key) của riêng bạn, như được giải thích trong phần cuối cùng.
-Biểu đồ có không gian để bạn xác định các phím hoạt động cho cú cú trái xoáy lên (Topspin Backhand) bằng một tay của bạn.
+Biểu đồ có không gian để bạn xác định các phím hoạt động cho cú trái xoáy lên (Topspin Backhand) bằng một tay của bạn.
 Nó cũng có không gian để lập biểu đồ các xu hướng cá nhân của bạn và các chìa khóa đối phó với từng xu hướng.
 Bạn có thể mang theo biểu đồ phím cú đánh trên sân và tham khảo nó trong các trận đấu khi thay đổi trận đấu.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Như đã đề cập trong chương thuận tay, một trong những vấn đề chính mà hầu hết tay vợt gặp phải trong các trận đấu là biết cách suy nghĩ trên sân, và đặc biệt là cách duy trì sự tập trung.
@@ -1844,7 +1862,7 @@ Các phím đánh cung cấp một phương pháp để duy trì sự tập trun
 Hãy thử nghiệm các phím được trình bày ở đây và tự mình phát triển các phím khác hoặc kết hợp với chuyên gia giảng dạy của bạn.
 Kiểm tra chúng trong các cuộc tập trận, các cuộc tập hợp và trong trận đấu có kiểm soát, đồng thời thêm chúng vào biểu đồ của bạn, cập nhật nó thường xuyên.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Vị trí kết thúc từ góc nhìn của tay vợt và điểm tiếp xúc bóng (Contact Point)?
-máy khoan.
+bài tập.
 Trái tay xoáy lên: Vị trí xoay từ góc nhìn của tay vợt hoặc 'xoay' không đầy đủ.
 Những điều này có thể được khắc phục bằng cách tạo khóa được hiển thị ở đây.
 Một lần nữa, hình ảnh này là từ góc nhìn của tay vợt—cách mà hầu hết tay vợt có xu hướng nhìn thấy chính mình trong con mắt tâm trí của họ.
@@ -1853,22 +1871,22 @@ Vai được xoay hoàn toàn.
 Vợt hướng về phía sau với cánh tay thẳng và tay cầm vợt ở giữa chân sau.
 Mặt vợt thẳng đứng so với mặt sân.
 Thiết lập vị trí vật lý và tạo ra quán tưởng tâm trí (Mental Imagery).
-Kiểm tra chìa khóa trong máy khoan có điều khiển.
-Khóa cú cú trái xoáy lên (Topspin Backhand) bằng một tay: Điểm tiếp xúc từ góc nhìn của tay vợt Hình ảnh này được thiết kế để tạo ra một chìa khóa cho Điểm tiếp xúc từ góc nhìn của tay vợt.
+Kiểm tra chìa khóa trong bài tập có điều khiển.
+Khóa cú trái xoáy lên (Topspin Backhand) bằng một tay: Điểm tiếp xúc từ góc nhìn của tay vợt Hình ảnh này được thiết kế để tạo ra một chìa khóa cho Điểm tiếp xúc từ góc nhìn của tay vợt.
 Mặc dù Vị trí Kết thúc chính xác thường dẫn đến tiếp xúc chính xác, nhưng nhiều tay vợt thấy việc nhấn vào hình ảnh của chính Điểm tiếp xúc sẽ rất hiệu quả.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Có một số điểm quan trọng cần lưu ý.
 Đầu tiên, khi tiếp xúc tốt ở phía trước chân trước thì lực đòn bẩy của cơ thể lên bóng được tối đa hóa.
 Thứ hai, cánh tay thẳng và vợt nằm ngang so với mặt sân.
 Từ quan điểm này, bạn cũng có thể thấy việc tiếp tục vung vợt hướng ra ngoài và hướng lên trên sẽ dẫn đến việc mặt vợt cọ vào bóng như thế nào, tạo ra xoáy lên.
 Thiết lập vị trí vật lý và tạo ra quán tưởng tâm trí (Mental Imagery).
-Kiểm tra chìa khóa trong máy khoan có điều khiển.</p></div>
+Kiểm tra chìa khóa trong bài tập có điều khiển.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Thực hiện cú đánh cú trái xoáy lên (Topspin Backhand) bằng một tay: Tay đánh thẳng trong suốt cú vung MŨI TÊN HIỂN THỊ CÁCH CÁNH TAY ĐÁNH THẲNG TẠI VÒNG QUAY, ĐIỂM TIẾP XÚC VÀ VỊ TRÍ CUỐI.
 Cánh tay đánh thẳng giúp loại bỏ nguy cơ bị cùi chỏ dẫn trước và đảm bảo rằng bạn đạt được lực đòn bẩy cơ thể tối đa lên bóng.
 Lưu ý rằng cánh tay đã thẳng ở chỗ rẽ.
 Từ đó chỉ còn vấn đề duy trì sự căn chỉnh chính xác tại Điểm tiếp xúc và tại Vị trí kết thúc.
 Thiết lập từng tư thế trong số ba tư thế thể hiện ở trên về mặt thể chất và tạo ra những hình ảnh trong tâm trí.
 Chìa khóa có thể là hình ảnh của cánh tay ở bất kỳ vị trí nào trong ba vị trí hoặc một đoạn phim nhỏ về toàn bộ chuyển động.
-Kiểm tra chìa khóa trong máy khoan có điều khiển.</p></div>
+Kiểm tra chìa khóa trong bài tập có điều khiển.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Thực hiện cú đánh cú trái xoáy lên (Topspin Backhand) bằng một tay: Sử dụng chân để có thêm sức mạnh và xoáy lên SO OLD ACN GOO SO) 50) (0) XO COW KC) .) (C) Ở BƯỚC BÓNG, TỐI ĐA HÓA GỠ ĐẦU GỐI CỦA BẠN ĐỂ TĂNG VẬN TỐC BÓNG VÀ VÒNG XOAY ĐÓ.
 NẾU bạn xem Ivan Lend] thực hiện những cú đánh cú trái xoáy lên (Topspin Backhand), bạn có thể đã bị ấn tượng bởi lực đòn bẩy cực lớn mà anh ấy có được từ đôi chân của mình.
 Anh ấy gập đầu gối rất nhiều, thỉnh thoảng anh ấy thực sự chạm đầu gối sau của mình xuống sân.
@@ -1876,7 +1894,7 @@ Rất ít tay vợt có đủ sức mạnh và sự linh hoạt để đi xa đ�
 Bằng cách hạ người xuống càng xa càng tốt và chuyển toàn bộ trọng lượng sang chân trước (phải), bạn sẽ tăng được khả năng duỗi chân vào bóng khi tiếp xúc.
 Điều này làm tăng thêm tốc độ đầu vợt và tăng hành động cọ xát tự nhiên của dây lên bóng.
 Kết quả là tốc độ bóng và độ xoáy lên được bổ sung đáng kể.
-Thiết lập vị trí vật lý và tạo ra quán tưởng tâm trí (Mental Imagery). Kiểm tra phím trong máy khoan có điều khiển.</p></div>
+Thiết lập vị trí vật lý và tạo ra quán tưởng tâm trí (Mental Imagery). Kiểm tra phím trong bài tập có điều khiển.</p></div>
           </div>
           <figure class="figure-wrap">
             <img src="yandell_visual_assets/yandell_visual_one_hand_bh_frames.jpg" alt="Phân tích kỹ thuật thực thi cú trái một tay" class="figure-img" loading="lazy">
@@ -1893,7 +1911,7 @@ Thiết lập vị trí vật lý và tạo ra quán tưởng tâm trí (Mental 
             <div class="bilingual-block stanza"><p class="lang-vi">Biến thể: Cú đánh trái tay lát cắt bằng một tay NHÌN MẶT 1 a a 3 4 5 Reapy PosirioN BẮT ĐẦU BƯỚC QUAY ĐẾN BẮT ĐẦU BÓNG CỦA kiểu cầm vợt: Cú đánh trái tay bằng một tay được đánh với kiểu cầm vợt phương Đông cổ điển tương tự như cú đánh xoáy lên.
 Một lần nữa, quá trình chuyển đổi tay cầm diễn ra ngay lập tức khi bắt đầu Lượt (Khung 2).
 Hãy tham khảo chương tay cầm nếu bạn không chắc mình đang sử dụng tay cầm đúng cách.
-Điểm tương đồng với cú cú trái xoáy lên (Topspin Backhand): Giống như phiên bản xoáy lên, cú đánh này được đánh với cánh tay thẳng và cổ tay bị khóa.
+Điểm tương đồng với cú trái xoáy lên (Topspin Backhand): Giống như phiên bản xoáy lên, cú đánh này được đánh với cánh tay thẳng và cổ tay bị khóa.
 Ngoài ra, vai đánh bên phải đã ở phía trước khi hoàn thành Lượt.
 Cánh tay và vợt giống như một cánh cổng liền khối đung đưa trên bản lề của vai (Khung 5 đến 9).
 Contact nằm ở phía trước chân trước (Khung 6).
@@ -1907,10 +1925,10 @@ Từ vị trí này, mặt vợt xuyên qua quả bóng theo một đường th�
 Hãy hình dung quả bóng như một quả cam và mặt vợt như một con dao.
 Bây giờ, dùng dao cắt một phần ba đường chéo phía dưới của quả bóng.
 Điều này sẽ làm cho các dây bị đứt khi chúng trượt dưới quả bóng, làm cho quả bóng quay ngược về phía dưới chính nó, tạo thành xoáy xuống hoặc cắt lát.
-Hành động cắt lát này có thể được thấy rõ ràng trong các Khung 5 đến 7. Không giống như một cú chạm đất xoáy lên, lát cắt không bị đánh bởi một mặt phẳng xoay thẳng đứng.
+Hành động cắt lát này có thể được thấy rõ ràng trong các Khung 5 đến 7. Không giống như một cú đánh nền xoáy lên, lát cắt không bị đánh bởi một mặt phẳng xoay thẳng đứng.
 Tuy nhiên, giống như cú thuận tay hoặc cú trái xoáy lên (Topspin Backhand), góc của mặt vợt so với mặt sân được xác định khi hoàn thành Cú xoay, và sau đó không thay đổi trong suốt quá trình vung vợt.
 So sánh điều này ở Điểm bắt đầu quay (Khung 2), với Vị trí kết thúc (Khung 9).
-Điều này mang lại cho bức ảnh nét đơn giản về mặt kỹ thuật, đặc trưng của phong cách cổ điển (Classical Style). Sức mạnh tự nhiên và độ xoáy: Khi mặt vợt được thiết lập đúng cách, xoáy xuống sẽ được tạo ra tự động trong quá trình vung vợt.
+Điều này mang lại cho cú đánh nét đơn giản về mặt kỹ thuật, đặc trưng của phong cách cổ điển (Classical Style). Sức mạnh tự nhiên và độ xoáy: Khi mặt vợt được thiết lập đúng cách, xoáy xuống sẽ được tạo ra tự động trong quá trình vung vợt.
 Tiếp xúc sớm đảm bảo rằng trọng lượng cơ thể được chuyển vào cú đánh một cách tự nhiên.
 Như với trường hợp của cú đánh cú trái xoáy lên (Topspin Backhand), việc duỗi chân sẽ tạo ra tốc độ đầu vợt bổ sung cũng như tốc độ quay và cú đánh bổ sung.
 Ở Step to Ball (Khung 4), các chân được cuộn hoàn toàn.
@@ -2039,7 +2057,7 @@ Bạn có thể thiết lập luyện tập có kiểm soát bằng cách thuê 
 Khi bạn có thể đánh mười cú đánh với độ chính xác thực sự trong bài tập có kiểm soát, bạn nên tăng tốc độ của quả bóng và số lần lặp lại.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Bước tiếp theo trong bài tập có kiểm soát là thêm động tác bằng chân hoặc chuyển động cho bóng.
 Mục tiêu của bạn khi di chuyển tới bóng là thiết lập như thể ngay từ đầu bóng đã bay thẳng đến bạn.
-Bởi vì rất khó để thực hiện cú đánh bằng hai tay với tư thế mở nên bước nhảy thậm chí còn quan trọng hơn so với các động tác chạm đất khác.
+Bởi vì rất khó để thực hiện cú đánh bằng hai tay với tư thế mở nên bước nhảy thậm chí còn quan trọng hơn so với các động tác đánh nền khác.
 Tại thời điểm phân chia giây của cú đánh, bạn nên ở tư thế chuẩn bị, dồn trọng lượng về phía trước ở bàn chân trước.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Hai yếu tố chính trong một thiết lập đúng cũng giống như đối với các biến thể thuận tay hoặc trái tay một tay.
 Đầu tiên là rẽ ngay lập tức.
@@ -2104,7 +2122,7 @@ Chỉnh sửa trí nhớ cơ bắp (Muscle Memory): Ba chuỗi theo dõi Biss th
 Điều này gây ra sự mất kiểm soát bóng do thiếu xoáy lên và tốc độ cũng bị giảm.
 Lỗi thứ hai, thả vợt bằng tay trái, làm mất đi lực đòn bẩy tự nhiên của cơ thể từ phía bên trái.
 Nó cũng sẽ khiến tay vợt thuận hai tay gặp khó khăn trong việc kiểm soát hướng, độ sâu cú đánh và mắc nhiều lỗi không đáng có.
-Lỗi thứ ba là làm gãy cổ tay khi tiếp xúc, khiến mặt vợt bị lật thay vì giữ thẳng đứng.
+Lỗi thứ ba làm gãy cổ tay khi tiếp xúc, khiến mặt vợt bị lật thay vì giữ thẳng đứng.
 Khi cổ tay bị gãy, tay vợt có xu hướng đánh bóng muộn, lại mất lực.
 Ngoài ra, sự thay đổi đột ngột về hướng của đầu vợt khiến cho việc kiểm soát độ xoáy và quỹ đạo của cú đánh trở nên khó khăn.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Mỗi vấn đề này có thể được khắc phục bằng cách điều chỉnh trí nhớ của cơ.
@@ -2116,7 +2134,7 @@ Lỗi này có thể là do bước tới bóng không chính xác hoặc do xoa
 Kết quả là điểm tiếp xúc bóng (Contact Point) bị trễ ở phía sau mép trước của thân máy. Điều này có nghĩa là mất đòn bẩy cơ thể, tốc độ bắn và khả năng kiểm soát bóng.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Để sửa lỗi này, hãy đóng băng ở tư thế tượng.
 Bây giờ, hãy tham khảo các điểm kiểm tra cho chân nếu cần thiết, hãy điều chỉnh về đúng vị trí.
-Đầu ngón chân của cả hai bàn chân phải song song dọc theo một đường thẳng, đầu gối hơi cong, như trong bức ảnh thứ hai.
+Đầu ngón chân của cả hai bàn chân phải song song dọc theo một đường thẳng, đầu gối hơi cong, như trong cú đánh thứ hai.
 TƯỢNG TƯỢNG \ ) |
 Thế mở Lyi : và Lỗi sửa: TẬP MỞ Ở VỊ TRÍ CUỐI ĐÃ ĐƯỢC SỬA CHỮA VỊ TRÍ CUỐI CÙNG [HE BACKHANDED HAI TAY nce bạn đã phát triển trí nhớ cơ bắp (Muscle Memory) bắp của mình và có thể đánh trái tay bằng hai tay trong bài tập có kiểm soát, bạn có thể tiến về phía trước và phát triển hệ thống các từ khóa kích hoạt cú đánh (Stroke Key) cá nhân của mình.
 ‘Mục đích của phím đánh là cho phép bạn đánh trái tay bằng hai tay một cách nhất quán trong trận đấu.
@@ -2130,7 +2148,7 @@ Một số tay vợt cũng có thể thấy rằng các phím này hiệu quả 
 Đầu tiên, thiết lập vị trí về mặt vật lý, tham khảo các điểm kiểm tra đi kèm với hình ảnh.
 Tiếp theo, nhắm mắt lại và tạo ra hình ảnh về vị trí đó trong tâm trí bạn, cung cấp cho nó càng nhiều chi tiết càng tốt.
 Hãy chú ý đến cảm giác về mặt thể chất của tư thế đó và làm cho hình ảnh và cảm giác đó tương ứng với nhau trong tâm trí bạn.
-Sau đó kiểm tra chìa khóa trong máy khoan có kiểm soát.
+Sau đó kiểm tra chìa khóa trong bài tập có kiểm soát.
 Khi quả bóng đến gần, hãy giữ hình ảnh của chiếc chìa khóa trong tâm trí và khi bạn vung vợt, hãy làm cho vợt, cánh tay đánh, vai, v.v. chồng lên hình ảnh của chiếc chìa khóa.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Nếu bạn hình dung rõ ràng phím, nó sẽ hoạt động như một nam châm, thu hút vợt và thân vợt của bạn đến đúng vị trí.
 Đánh từ 10 đến 20 quả bóng trong bài tập có kiểm soát.
@@ -2165,14 +2183,14 @@ Nếu bạn hình dung bản thân bằng con mắt tâm trí, bạn có thể s
 Lưu ý các điểm kiểm tra: cổ tay trái ngang tầm mắt, cánh tay vẫn ở tư thế gập đôi, vợt thẳng lên xuống.
 Mép trước vuông góc với lưới, mép sau vuông góc với vai phải.
 Thiết lập vị trí vật lý và tạo ra quán tưởng tâm trí (Mental Imagery).
-Kiểm tra chìa khóa trong máy khoan có điều khiển.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Điều chỉnh cú đánh trái tay bằng hai tay: Vị trí xoay từ góc nhìn của tay vợt Bỏ qua cú đánh là chính xác đối với cú đánh trái tay bằng hai tay, như với bất kỳ cú đánh chạm đất nào, sẽ không thể thực hiện được một cú đánh chắc chắn.
+Kiểm tra chìa khóa trong bài tập có điều khiển.</p></div>
+            <div class="bilingual-block stanza"><p class="lang-vi">Điều chỉnh cú đánh trái tay bằng hai tay: Vị trí xoay từ góc nhìn của tay vợt Bỏ qua cú đánh là chính xác đối với cú đánh trái tay bằng hai tay, như với bất kỳ cú đánh nền nào, sẽ không thể thực hiện được một cú đánh chắc chắn.
 Nếu bạn gặp vấn đề với việc chuẩn bị của mình, bạn nên làm việc chăm chỉ với phím này.
 Một lần nữa phím này được hiển thị từ góc nhìn của tay vợt.
 Lưu ý các điểm kiểm tra: tay đánh ở tư thế uốn cong đôi, cùi chỏ trái vào thắt lưng, đầu vợt hướng về phía hàng rào phía sau, mặt vợt vuông góc với sân.
 Vợt cũng ở dưới mức thắt lưng.
 Thiết lập vị trí vật lý và tạo ra quán tưởng tâm trí (Mental Imagery).
-Kiểm tra chìa khóa trong máy khoan có điều khiển.</p></div>
+Kiểm tra chìa khóa trong bài tập có điều khiển.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Khóa cú đánh trái tay bằng hai tay: Điểm tiếp xúc từ góc nhìn của tay vợt CRO] OFOVONO-O7GNO Hình ảnh này được thiết kế để giúp bạn tạo ra sự tiếp xúc sớm ở cú đánh trái tay bằng hai tay.
 Thông thường, việc hoàn thiện chính xác sẽ đảm bảo rằng điểm tiếp xúc bóng (Contact Point) cũng chính xác.
 Tuy nhiên, nhiều tay vợt nhận thấy rằng việc sử dụng hình ảnh của chính người liên hệ sẽ tích cực hơn.
@@ -2181,7 +2199,7 @@ Ngoài ra, những tay vợt muốn tăng lực đòn bẩy cơ thể và do đ�
 Phím này thể hiện rõ ràng các yếu tố sau: trục vợt nằm ngang, mặt vợt vuông góc với mặt sân.
 Vai trái phía sau đang xoay về phía trước, điều khiển cú đánh, với cánh tay trái, đánh ở tư thế gập đôi.
 Trọng lượng dồn về phía trước ở chân trước và tiếp xúc tốt ở phía trước chân. Thiết lập vị trí vật lý và tạo ra quán tưởng tâm trí (Mental Imagery).
-Kiểm tra chìa khóa trong máy khoan có điều khiển.</p></div>
+Kiểm tra chìa khóa trong bài tập có điều khiển.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Thực hiện cú đánh trái tay bằng hai tay: Sử dụng chân để có thêm sức mạnh và xoáy lên @ CONOMONG TOMO OT CPOMOVONGrO CVO) Cv ) Oo TẠI BƯỚC ĐỂ BÓNG, TỐI ĐA HÓA SỰ Uốn ĐẦU GỐI VÀ TRỌNG LƯỢNG CHUYỂN TRỌNG LƯỢNG ĐỂ TĂNG TỐC ĐỘ SÚC VÀ VÒNG XOAY TỐI ĐA.
 O.. đặc điểm của tất cả những tay vợt thuận tay hai tay là việc họ sử dụng chân khi thực hiện cú đánh.
 Jimmy Connors, Chris Evert, Bjorn Borg, Mats Wilander, và gần đây là Andre Agassi, tất cả đều tạo ra tốc độ cho các cú công bóng trái tay của họ phần lớn từ chân trở lên.
@@ -2190,7 +2208,7 @@ Khi chân duỗi ra, chúng tạo ra thêm tốc độ đầu vợt và đòn b�
 Điều này chuyển thành sức mạnh và cũng tăng độ xoáy lên.
 Việc sử dụng chân có thể tạo nên sự khác biệt giữa việc có một cú đánh chắc chắn, ổn định bằng hai tay và việc có thêm vận tốc biến cú đánh thành vũ khí. Khi bạn bước tới bóng, chuyển toàn bộ trọng lượng của bạn về phía bàn chân trước và hạ đầu gối xuống càng xa càng tốt.
 Thiết lập vị trí vật lý và tạo ra quán tưởng tâm trí (Mental Imagery).
-Kiểm tra chìa khóa trong máy khoan có điều khiển.</p></div>
+Kiểm tra chìa khóa trong bài tập có điều khiển.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Điều chỉnh cú đánh trái tay bằng hai tay: Đánh bóng lên để tạo xoáy lên khi tiếp xúc, MẶT VỢI PHẢI DỌC VÀ DI CHUYỂN MẠNH LÊN TRÊN ĐỂ TẠO RA BỔ SUNG VỢT ĐANG.
 NẾU bạn đánh bóng theo đúng kiểu xoay bằng hai tay, bạn sẽ tự động tạo ra xoáy lên.
 Với mặt vợt thẳng đứng khi tiếp xúc và tăng tốc hướng lên trên, các dây sẽ tự động chạm vào mặt sau của quả bóng và khiến nó tự xoay.
@@ -2198,7 +2216,7 @@ Khi bạn tiến bộ với tư cách là một tay vợt và đánh với tốc
 Topspin, bằng cách làm cho quả bóng di chuyển theo hình vòng cung, tạo ra khoảng trống bổ sung cho lưới, nhưng cũng làm cho quả bóng rơi mạnh hơn, do đó nó có thể được đánh với tốc độ và chiều sâu hơn mà không cần đi xa.
 Thiết lập chìa khóa về mặt vật lý và sau đó tạo ra quán tưởng tâm trí (Mental Imagery).
 Hình dung vợt đang di chuyển mạnh lên trên, với mặt vợt vẫn thẳng đứng, như được minh họa bằng các mũi tên.
-Kiểm tra chìa khóa trong máy khoan có điều khiển.</p></div>
+Kiểm tra chìa khóa trong bài tập có điều khiển.</p></div>
           </div>
         </div>
 
@@ -2219,45 +2237,45 @@ Nhưng ở một khía cạnh khác, cú vô lê là khó nhất.
 Điều này là do khi tay vợt ở trên lưới, anh ta chỉ cách đối thủ khoảng một nửa và do đó chỉ có một nửa thời gian để phản ứng và thực hiện cú đánh.
 Mặc dù cú vô lê có chuyển động ít phức tạp nhất nhưng nó thường khó thực hiện thành công nhất trong các trận đấu vì tay vợt có khoảng thời gian nghỉ ngắn như vậy.
 Chơi quần vợt giao bóng và cú bắt lưới hiệu quả là cách chiếm ưu thế nhất, nhanh nhất và có thể hài lòng nhất để giành chiến thắng trong các trận đấu.
-Tuy nhiên, những tay vợt giao bóng và chuyền bóng thuần túy có lẽ được sinh ra chứ không phải được rèn luyện.
+Tuy nhiên, những tay vợt giao bóng và đánh vô-lê thuần túy có lẽ được sinh ra chứ không phải được rèn luyện.
 Mức độ khó của việc chơi quần vợt giao bóng và cú bắt lưới cao hơn nhiều so với việc chơi ở sân sau, hoặc thậm chí chơi trò chơi toàn sân. Trong game chuyên nghiệp, chỉ có hai nhà vô địch vĩ đại trong thập kỷ qua, John McEnroe và Martina Navratilova, là những tay vợt thuần túy tấn công.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Rất ít tay vợt giải trí có thể thực hiện chiến lược giao bóng và vô lê trong trận đấu duy nhất của họ.
-Nhưng mọi tay vợt đều có thể học cách chuyền bóng một cách tự tin bằng cách sử dụng phương pháp trực quan và do đó, có thể học cách kết hợp lối chơi trên lưới vào chiến lược tổng thể của mình.
+Nhưng mọi tay vợt đều có thể học cách đánh vô-lê một cách tự tin bằng cách sử dụng phương pháp trực quan và do đó, có thể học cách kết hợp lối chơi trên lưới vào chiến lược tổng thể của mình.
 Điều này có nghĩa là học cách chơi trò chơi toàn sân: thực hiện những quả bóng ngắn khi thích hợp và phối hợp các điểm giao bóng và vô lê trước một số đối thủ nhất định.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Định nghĩa hay nhất mà tôi từng nghe về cú vô lê là nó giống như đặt một tấm gương trước tia laze.
 Mục đích là chuyển hướng chùm tia laze để tạo ra vị trí đặt bóng tốt hơn.
 Hiếm khi cần phải thay đổi tốc độ hoặc tăng thêm tốc độ cho quả bóng đang tới để thực hiện cú vô lê chiến thắng.
 Trên lưới, do bạn ở xa đối thủ một nửa nên góc giữa hai tay vợt sắc nét hơn rất nhiều.
-Một quả bóng được chuyền từ lưới sang đường biên sẽ buộc một tay vợt ở đường biên cuối sân phải rời sân rộng hơn nhiều so với một cú đánh chạm đất vào cùng một vị trí.
+Một quả bóng được chuyền từ lưới sang đường biên sẽ buộc một tay vợt ở đường biên cuối sân phải rời sân rộng hơn nhiều so với một cú đánh nền vào cùng một vị trí.
 Các góc triệt để hơn có thể thực hiện được trên lưới là chìa khóa để giành chiến thắng ở các vị trí.
 Để thực hiện một cú vô lê chiến thắng, tay vợt chỉ cần chuyển hướng các cú đánh của đối thủ để tận dụng lợi thế hình học vượt trội của vị trí của mình.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Nhiều tay vợt sợ mạng vì ở đó chơi nhanh hơn rất nhiều.
 Nỗi sợ hãi này khiến việc thực hiện cú đánh kém.
 Nhưng tình trạng này dù khá phổ biến nhưng không cần thiết và không thể tránh khỏi.
-Bất kỳ tay vợt nào cũng có thể học cách chuyền bóng thành thạo và mạnh mẽ nếu tiếp cận đúng cách.</p></div>
+Bất kỳ tay vợt nào cũng có thể học cách đánh vô-lê thành thạo và mạnh mẽ nếu tiếp cận đúng cách.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Yếu tố đầu tiên phát triển cú vô lê là nhận ra vai trò quan trọng của việc lấy nét bóng.
-Quan sát bóng khi đối phương thực hiện cú đánh của mình là điều kiện tiên quyết cho kỹ thuật chuyền bóng âm thanh.
+Quan sát bóng khi đối phương thực hiện cú đánh của mình là điều kiện tiên quyết cho kỹ thuật vô-lê âm thanh.
 Khi bạn học cú vô lê trong các phần sau, điều quan trọng là bạn phải học cách phản ứng với quả bóng ngay khi nó được đánh.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Đây chỉ là bước đầu tiên.
-Như đã nêu, cú vô lê đòi hỏi ít chuyển động hơn nhiều so với cú chạm đất hoặc cú giao bóng.
+Như đã nêu, cú vô lê đòi hỏi ít chuyển động hơn nhiều so với cú đánh nền hoặc cú giao bóng.
 Nhưng cú vô lê cũng khác với những cú đánh cơ bản khác ở một khía cạnh quan trọng khác – điểm tiếp xúc bóng (Contact Point) trước đó.
 Cú vô lê là một cú đánh phản ứng hoặc phản ứng sử dụng tốc độ của quả bóng đang tới.
 Tốc độ của cú vô lê đến từ thời gian và lực đòn bẩy cơ thể vượt trội.
-Do đó, để thực hiện cú vô lê với vận tốc tối đa, điểm tiếp xúc bóng (Contact Point) ở phía trước cơ thể phải xa hơn đáng kể so với khi thực hiện cú chạm đất.
+Do đó, để thực hiện cú vô lê với vận tốc tối đa, điểm tiếp xúc bóng (Contact Point) ở phía trước cơ thể phải xa hơn đáng kể so với khi thực hiện cú đánh nền.
 Đây là yếu tố mà phần lớn tay vợt giải trí không thể thiết lập được.
-Tốt nhất, họ nhận bóng ở mép trước của cơ thể, giống như động tác chạm đất.
+Tốt nhất, họ nhận bóng ở mép trước của cơ thể, giống như động tác đánh nền.
 Hoặc tệ hơn, họ thực hiện một cú backswing lớn và tiếp xúc phía sau mặt phẳng của vai, cố gắng bù đắp cho sự thiếu kỹ thuật của họ bằng cách vung vợt quá mức.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Trên thực tế, cú đánh trước của cú vô lê bắt đầu ở khoảng thời điểm mà vợt tiếp xúc với bóng trong một cú chạm đất tốt.
-Khi vợt di chuyển về phía trước, điểm tiếp xúc bóng (Contact Point) chính xác ở phía trước xa hơn cú chạm đất ít nhất một foot.
+            <div class="bilingual-block stanza"><p class="lang-vi">Trên thực tế, cú đánh trước của cú vô lê bắt đầu ở khoảng thời điểm mà vợt tiếp xúc với bóng trong một cú đánh nền tốt.
+Khi vợt di chuyển về phía trước, điểm tiếp xúc bóng (Contact Point) chính xác ở phía trước xa hơn cú đánh nền ít nhất một foot.
 Trong quần vợt chuyên nghiệp, những tay vô lê năng nổ và hiệu quả nhất, những tay vợt như McEnroe và Navratilova, cũng là những tay vợt thực hiện cú vô lê dễ dàng.
 Điều này là do thời gian của họ.
 Bằng cách đưa bóng đi xa hơn so với những tay vợt khác, những nhà vô địch vĩ đại này tạo ra đòn bẩy cơ thể vượt trội.
 Đòn bẩy cơ thể này có nghĩa là sức mạnh tự nhiên với nỗ lực tối thiểu, làm cho cú đánh trông dễ dàng.
-Đưa bóng sớm vào lưới là sự khác biệt giữa một vị trí tốt mà đối thủ có thể tiếp cận và đánh trả — có thể thực hiện một cú chuyền bóng — và một cú vô lê chiến thắng mà đối thủ không có cơ hội đánh trả.
+Đưa bóng sớm vào lưới là sự khác biệt giữa một vị trí tốt mà đối thủ có thể tiếp cận và đánh trả — có thể thực hiện một cú vô-lê — và một cú vô lê chiến thắng mà đối thủ không có cơ hội đánh trả.
 Trừ khi một tay vợt hiểu được những khác biệt này, anh ta sẽ không bao giờ phát triển được một cú vô lê ổn định và hiệu quả.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Chuyển sang bản thân các kiểu đánh, có hai lĩnh vực tranh chấp chính trong lý thuyết về cú vô lê cần được giải quyết.
 Đầu tiên là: tay vợt có nên thay đổi cách cầm vợt trên lưới không?
-Thứ hai là: người thuận tay trái hai tay nên chuyền bóng bằng một hay hai tay?</p></div>
+Thứ hai là: người thuận tay trái hai tay nên đánh vô-lê bằng một hay hai tay?</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Theo quan điểm của tôi, không có câu trả lời tuyệt đối cho câu hỏi đầu tiên về việc có nên thay tay cầm hay không.
 Jack Kramer gần như đã phát minh ra trò chơi giao bóng và vô lê, đồng thời anh ấy đã thay đổi cách cầm vợt.
 Nhưng Rod Laver và John McEnroe, hai tay vợt tấn công tàn khốc nhất theo sau Kramer, đã thực hiện tất cả các cú vô lê của họ với cùng một kiểu cầm vợt kiểu lục địa.
@@ -2266,7 +2284,7 @@ Với tốc độ bắn ngày càng tăng trong thời kỳ hiện đại, ở c
             <div class="bilingual-block stanza"><p class="lang-vi">Nhưng đối với hầu hết người mới bắt đầu và ngay cả đối với một số tay vợt có kinh nghiệm, kỹ thuật này sẽ khó thành thạo hơn nhiều.
 Do đó, các kiểu cú bắt lưới cơ bản được trình bày ở đây được thể hiện với cách cầm vợt theo hướng đông giống như các cú đánh tiếp đất.
 Có một lý do bổ sung cho việc này.
-Khi lần đầu tiên học các động tác chuyền bóng, tay vợt nên học cách đánh bóng phẳng, không xoáy xuống, tập trung vào cơ chế sinh học và thiết lập sự tiếp xúc chắc chắn.
+Khi lần đầu tiên học các động tác vô-lê, tay vợt nên học cách đánh bóng phẳng, không xoáy xuống, tập trung vào cơ chế sinh học và thiết lập sự tiếp xúc chắc chắn.
 Điều này sẽ xảy ra một cách tự nhiên bằng cách sử dụng tay nắm phía đông.
 tuy nhiên rất chắc chắn, tay vợt nên thử nghiệm cách cầm vợt kiểu lục địa.
 Ngoài việc loại bỏ thêm thời gian và chuyển động cần thiết cho việc dịch chuyển cách cầm, việc sử dụng kiểu cầm cú bắt lưới đơn giúp đánh bóng dễ dàng hơn với xoáy xuống, đặc biệt là ở phía thuận tay.
@@ -2279,25 +2297,25 @@ Một số tay vợt sẽ thực hiện cú vô lê cắt bóng với kiểu c�
 Những người khác, đôi khi ngay cả những tay vợt ở trình độ cạnh tranh cao hơn, không bao giờ có thể đánh cú một cách tự nhiên và tốt hơn hết là nên bám vào công tắc cầm vợt trên lưới.
 Nhưng tất cả các tay vợt, đặc biệt là những người thiên về phong cách tấn công, ít nhất nên kiểm tra cách cầm vợt châu lục để xem liệu nó có hiệu quả hơn với họ hay không.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Cũng giống như trường hợp của các kiểu bơi tiếp đất, tôi đã chọn thực hiện cú vô lê bằng một tay với một cú đánh thẳng về phía sau.
-Nếu bạn quan sát những tay vợt hàng đầu, bạn sẽ thấy rằng trong cú vô lê, cũng như những cú chạm đất, ban đầu họ uốn cong khuỷu tay và nâng đầu vợt lên khi quay về phía bóng.
+Nếu bạn quan sát những tay vợt hàng đầu, bạn sẽ thấy rằng trong cú vô lê, cũng như những cú đánh nền, ban đầu họ uốn cong khuỷu tay và nâng đầu vợt lên khi quay về phía bóng.
 Một lần nữa, đây có thể là một nguồn bổ sung cho nhịp điệu và tốc độ đầu vợt.
 Nhưng đối với tay vợt chỉ cố gắng phát triển cú đánh, nó có thể gây ra những khó khăn không thể vượt qua.
 Những tay vợt hàng đầu sử dụng cú giật mini này trong cú vô lê đều giữ phần trên cánh tay (từ khuỷu tay đến vai) bằng cả mép trước của vai.
-Sau đó, đầu vợt hướng về phía trước, thẳng hàng với cánh tay trên và khuỷu tay hơi duỗi thẳng sao cho điểm tiếp xúc bóng (Contact Point) ở phía trước cơ thể. Tuy nhiên, những người bắt đầu chơi cú bắt lưới cố gắng sao chép chuyển động này có xu hướng đưa toàn bộ cánh tay ra ngoài mặt phẳng của cơ thể, kết thúc bằng một cú đánh ngược gần với động tác chạm đất và quá lớn đối với một cú vô lê.
+Sau đó, đầu vợt hướng về phía trước, thẳng hàng với cánh tay trên và khuỷu tay hơi duỗi thẳng sao cho điểm tiếp xúc bóng (Contact Point) ở phía trước cơ thể. Tuy nhiên, những người bắt đầu chơi cú bắt lưới cố gắng sao chép chuyển động này có xu hướng đưa toàn bộ cánh tay ra ngoài mặt phẳng của cơ thể, kết thúc bằng một cú đánh ngược gần với động tác đánh nền và quá lớn đối với một cú vô lê.
 ‘Điều này dẫn đến việc tiếp xúc muộn, lỗi kỹ thuật phổ biến nhất trên mạng.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Điều quan trọng ban đầu là phát triển cảm giác tiếp xúc bóng sớm và chắc chắn trong cú vô lê.
 Điều này được thực hiện dễ dàng nhất theo các mô hình như được hiển thị.
-Sau khi điểm tiếp xúc bóng (Contact Point) chính xác được thiết lập, hầu hết tay vợt sẽ bắt đầu thêm một chút động tác backswing một cách tự nhiên, nhưng điều này sẽ bổ sung hơn là làm suy yếu các nguyên tắc cơ bản của cú đánh.
+Sau khi điểm tiếp xúc bóng (Contact Point) chính xác được thiết lập, hầu hết tay vợt sẽ bắt đầu thêm một chút động tác backswing một cách tự nhiên, nhưng điều này sẽ bổ sung hơn làm suy yếu các nguyên tắc cơ bản của cú đánh.
 Cố gắng tạo ra một cú giật lùi ngay từ đầu sẽ đảo ngược hiệu ứng này.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Đối với vấn đề chính thứ hai trong lý thuyết về cú vô lê, cuộc tranh luận bằng một tay và hai tay, tôi tin rằng hầu hết những vận động viên đánh bóng bằng hai tay cũng nên học cú bắt lưới bằng hai tay.
 Như đã lưu ý ở chương về phong cách kỹ thuật, có thể thực hiện cú vô lê bằng hai tay rất tốt.
 Tuy nhiên, điều quan trọng hơn là thực tế là đối với hầu hết những tay vợt bằng hai tay, việc học chơi cú bắt lưới bằng một tay thường cực kỳ khó khăn.
-Giống như trường hợp của các cú đánh chạm đất, cơ chế sinh học của các cú vô lê trái tay bằng một tay và hai tay hoàn toàn trái ngược nhau.
+Giống như trường hợp của các cú đánh nền, cơ chế sinh học của các cú vô lê trái tay bằng một tay và hai tay hoàn toàn trái ngược nhau.
 Một tay vợt chưa có kinh nghiệm đánh bóng bằng một tay trong các cú đánh tiếp đất của mình sẽ bắt đầu học cú vô lê mà hầu như không có trí nhớ cơ bắp (Muscle Memory) nếu anh ta cố gắng học bằng một tay.
 Làm cho nhiệm vụ trở nên khó khăn hơn, anh ta sẽ phải thay đổi cách cầm vợt lần đầu tiên trong đời, và hãy nhớ thực hiện việc này trên lưới thường xuyên, không có thói quen thực hiện ở sân sau. Mặt khác, nếu anh ta thành thạo cơ chế sinh học của cú đánh trái tay bằng hai tay, anh ta có thể nhanh chóng và tự nhiên phát huy khả năng này trong việc phát triển cú vô lê bằng hai tay.
 Anh ta đã phát triển kỹ năng cơ bản là đánh bằng cánh tay trái và vai trái sau.
-Sau đó, cú vô lê bằng hai tay có thể được phát triển nhanh chóng như cú đánh chạm đất bằng hai tay và sẽ mang lại kết quả xuất sắc trong các trận đấu đơn trên toàn sân cũng như cả ở nội dung đôi.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Như đã lưu ý trong chương về phong cách cổ điển (Classical Style), những tay vợt thuận tay hai tay có xu hướng chơi chủ yếu từ sân sau, và những tay vợt muốn chơi quần vợt tấn công có lẽ nên phát triển cả cú chạm đất trái tay và cú vô lê bằng một tay.
+Sau đó, cú vô lê bằng hai tay có thể được phát triển nhanh chóng như cú đánh nền bằng hai tay và sẽ mang lại kết quả xuất sắc trong các trận đấu đơn trên toàn sân cũng như cả ở nội dung đôi.</p></div>
+            <div class="bilingual-block stanza"><p class="lang-vi">Như đã lưu ý trong chương về phong cách cổ điển (Classical Style), những tay vợt thuận tay hai tay có xu hướng chơi chủ yếu từ sân sau, và những tay vợt muốn chơi quần vợt tấn công có lẽ nên phát triển cả cú đánh nền trái tay và cú vô lê bằng một tay.
 Đối với đại đa số tay vợt, sự liên tục trong cú trái tay giữa cơ chế sinh học của họ ở sân sau và trên lưới sẽ là cách tiếp cận tốt nhất.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Những quả cú bắt lưới được trình bày ở đây là những mẫu kỹ thuật cực kỳ nhỏ gọn.
 Chúng dựa trên việc xoay vai và tiếp xúc sớm, hầu như không có động tác xoay người ra sau và rất ít theo sau.
@@ -2305,13 +2323,13 @@ Vai trò của vai trong cú vô lê nói chung đã bị hiểu sai trong lý t
 Thông thường, cú vô lê được mô tả như một động tác đấm, ngụ ý rằng cánh tay mở rộng ra bên ngoài, di chuyển độc lập với vai và phần trên cơ thể.
 Tuy nhiên, nếu bạn quan sát những tay vô lê hàng đầu trong trò chơi—John McEnroe, Martina Navratilova, Stefan Edberg, Boris Becker—bạn sẽ thấy rằng nguồn gốc của chuyển động hướng tới quả bóng nằm ở chuyển động xoay của vai.
 Về mặt cơ học sinh học, đây là một điểm tương đồng với các bước đột phá.
-So với các động tác chạm đất, số lần quay giảm đi đáng kể nhưng nó vẫn là nguồn năng lượng chính và là chìa khóa để thực hiện nhất quán ở tốc độ cao của trận đấu. Như chúng ta sẽ thấy trong chính các mô hình, những cú vô lê kỹ thuật tốt hầu như không có chuyển động cánh tay độc lập.
+So với các động tác đánh nền, số lần quay giảm đi đáng kể nhưng nó vẫn là nguồn năng lượng chính và là chìa khóa để thực hiện nhất quán ở tốc độ cao của trận đấu. Như chúng ta sẽ thấy trong chính các mô hình, những cú vô lê kỹ thuật tốt hầu như không có chuyển động cánh tay độc lập.
 Thay vào đó, vợt có thể được định vị chính xác ở lượt đánh chỉ bằng cách xoay vai.
 Chuyển động về phía điểm tiếp xúc bóng (Contact Point) ban đầu được mô tả ở trên chỉ đơn giản là chuyển động xoay vai về vị trí ban đầu.
 Chuyển động xoay nhỏ gọn này giúp giảm thiểu lượng thời gian cần thiết để thực hiện cú vô lê và đó là điều có thể đạt được ngay cả trong những pha trao đổi nhanh nhất trên lưới.
 Ngược lại, tay vợt bắt đầu chuyển động vô lê của mình bằng cách đưa cánh tay ra sau và ra khỏi cơ thể hiếm khi hồi phục kịp thời để đạt được sự tiếp xúc sớm và dường như đang làm việc rất chăm chỉ hoặc thậm chí đập bóng mà không có hoặc có rất ít kết quả.
 Hãy chú ý đến vai trò của vai khi bạn phát triển cú đánh của mình và bạn sẽ thực hiện cú vô lê chắc chắn và mạnh mẽ với sự chuyển động và nỗ lực tiết kiệm.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">TẠO MẪU SWING BÓNG CHUYỀN THUẬN TIỆN o học cách đánh cú vô lê thuận tay, chúng ta sẽ sử dụng tiến trình tương tự như với các động tác chạm đất, bắt đầu với chuỗi ảnh tĩnh.
+            <div class="bilingual-block stanza"><p class="lang-vi">TẠO MẪU SWING BÓNG CHUYỀN THUẬN TIỆN o học cách đánh cú vô lê thuận tay, chúng ta sẽ sử dụng tiến trình tương tự như với các động tác đánh nền, bắt đầu với chuỗi ảnh tĩnh.
 Các trình tự sẽ đóng vai trò là bản thiết kế cho mô hình xoay của riêng bạn.
 Thông qua các kỹ thuật được trình bày, bạn sẽ sử dụng chúng để tạo ra một mô hình vật lý và hình ảnh chính xác của nét vẽ.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Đầu tiên, cú vô lê thuận tay được hiển thị từ góc nhìn phía trước và các đặc điểm kỹ thuật chung của cú đánh được phác thảo.
@@ -2322,16 +2340,16 @@ Trong phần tiếp theo, mỗi khung hình trong số bốn khung hình tĩnh (
 Bạn sẽ học cách tạo các khung hình tĩnh (Still Frame) về mặt vật lý cũng như tạo ra quán tưởng tâm trí (Mental Imagery) của chính bạn ở từng vị trí. Sau khi học xong từng khung hình tĩnh (Still Frame), bạn sẽ thấy cách kết hợp chúng lại với nhau thành kiểu cú đánh cú bắt lưới thuận tay.
 Phần sau đây trình bày cách thực hiện chỉnh sửa trí nhớ cơ bắp (Muscle Memory) đối với các lỗi phổ biến nhất.
 Cuối cùng, trong phần cuối cùng, bạn sẽ học cách tạo ra một hệ thống phím đánh để đánh những cú vô lê thuận tay đáng tin cậy dưới áp lực của trận đấu.
-it Zz VỊ TRÍ SẴN SÀNG BẮT ĐẦU QUAY Đặc điểm của cú vô lê thuận tay TẦM NHÌN TRƯỚC Cách cầm: Khi học cú vô lê thuận tay, bạn nên bắt đầu với cách cầm giống như khi thực hiện cú đánh chạm đất thuận tay.
+it Zz VỊ TRÍ SẴN SÀNG BẮT ĐẦU QUAY Đặc điểm của cú vô lê thuận tay TẦM NHÌN TRƯỚC Cách cầm: Khi học cú vô lê thuận tay, bạn nên bắt đầu với cách cầm giống như khi thực hiện cú đánh nền thuận tay.
 Các biến thể của cách cầm vợt thuận tay sẽ được thảo luận trong chương về cách cầm vợt.
 Tuy nhiên, nếu cách cầm bóng tiếp đất của bạn là một phiên bản cực đoan của kiểu miền Đông (Eastern) đã được sửa đổi, bạn có thể sẽ muốn bắt đầu với cách cầm cú bắt lưới ít nghiêm ngặt hơn.
 Trình tự này được thể hiện bằng cách cầm vợt kiểu miền Đông (Eastern) cổ điển, có thể thấy rõ trong Khung 3.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Vị trí sẵn sàng: Cú vô lê thuận tay bắt đầu bằng Vị trí sẵn sàng khác với các cú chạm đất ở một khía cạnh quan trọng—vị trí của đầu vợt.
-Khi thực hiện động tác chạm đất, vợt ở dưới thắt lưng và hướng thẳng vào lưới.
+            <div class="bilingual-block stanza"><p class="lang-vi">Vị trí sẵn sàng: Cú vô lê thuận tay bắt đầu bằng Vị trí sẵn sàng khác với các cú đánh nền ở một khía cạnh quan trọng—vị trí của đầu vợt.
+Khi thực hiện động tác đánh nền, vợt ở dưới thắt lưng và hướng thẳng vào lưới.
 Khi vô lê, đầu vợt cao.
 Đỉnh vợt phải xấp xỉ bằng đỉnh đầu (Khung 1).
 Điều này cho phép nó di chuyển trực tiếp đến Turn trên một đường thẳng (Khung 2 và 3), mà không lãng phí thời gian hay chuyển động.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Chuyển động nhỏ gọn: So với các cú chạm đất, kiểu xoay trên cú vô lê cực kỳ ngắn.
+            <div class="bilingual-block stanza"><p class="lang-vi">Chuyển động nhỏ gọn: So với các cú đánh nền, kiểu xoay trên cú vô lê cực kỳ ngắn.
 Không có backswing như vậy.
 Thay vào đó, thân và vợt được xoay đơn giản |
 .
@@ -2348,13 +2366,13 @@ Tại ngã rẽ, chúng đã quay sang một bên khoảng 45 độ (Khung 3).
 Điều này sẽ tự động định vị cánh tay và vợt một cách chính xác.
 Từ Lượt, vai xoay về phía trước, đẩy tay đánh và vợt đến Điểm tiếp xúc (Khung 5) và Về đích (Khung 6).
 Vòng quay này mang lại đòn bẩy cơ thể tự nhiên.
-Điểm tiếp xúc sớm: So với các cú chạm đất, Điểm tiếp xúc sớm hơn nhiều trong cú vô lê.
-Trên thực tế, vị trí của vợt tại Lượt (Khung 3) gần giống như vị trí tiếp xúc trong hầu hết các cú chạm đất.
+Điểm tiếp xúc sớm: So với các cú đánh nền, Điểm tiếp xúc sớm hơn nhiều trong cú vô lê.
+Trên thực tế, vị trí của vợt tại Lượt (Khung 3) gần giống như vị trí tiếp xúc trong hầu hết các cú đánh nền.
 Tuy nhiên, trong cú vô lê, vợt sau đó sẽ di chuyển về phía bóng, chạm bóng một foot hoặc hơn ở phía trước mép trước của cơ thể (Khung 5).
 Điều này, kết hợp với việc xoay vai, sẽ tối đa hóa sức mạnh tự nhiên của cú đánh. Tiếp xúc sớm là chìa khóa để thực hiện cú vô lê thuận tay một cách nhất quán và tạo ra vận tốc bóng mà không tốn nhiều sức lực.
 ne Cú vô lê thuận tay Bốn khung hình tĩnh (Still Frame) chính - XEM BÊN @QOL@7CO COO O7O2OO COO COOO@QOOOCO STILL FRAME #1 STILL FRAME #2 FES SNE SS SPA NES.
 VỊ TRÍ SẴN SÀNG BẮT ĐẦU LƯỢT LƯỢT Cú vô lê thuận tay Bốn khung hình tĩnh (Still Frame) chính - KHUNG HÌNH VẪN XEM TRƯỚC #1 KHUNG HÌNH VẪN #2 Reapy Postrion BẮT ĐẦU LƯỢT LƯỢT Khung hình tĩnh (Still Frame) 2 Vị trí xoay SPOO OC COOCOOO COC Điểm kiểm tra: iL.
-Vai: Vai đã xoay khoảng 45 độ, hoặc bằng một nửa so với khi thực hiện động tác chạm đất.
+Vai: Vai đã xoay khoảng 45 độ, hoặc bằng một nửa so với khi thực hiện động tác đánh nền.
 Lưu ý rằng vai, cánh tay và vợt đã di chuyển như một đơn vị.
 Cánh tay đánh: Cánh tay đánh vẫn ở tư thế uốn cong đôi, khuỷu tay hướng vào trong và cổ tay hơi ngửa ra sau.
 Nó đã xoay ở vị trí xoay vai.
@@ -2412,7 +2430,7 @@ Hình dung nét vẽ và thực hiện tối đa 10 lần lặp lại hình ản
 Thử nghiệm bằng cách hình dung các phím cụ thể khi bạn phát triển hệ thống phím của riêng mình cho ảnh.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Cuối cùng, bạn có thể thực hiện cú đánh của mình một cách trực quan bằng cách xem video về chính bạn hoặc những tay vợt khác đánh cú vô lê thuận tay chính xác.
 Bạn nên làm điều này bằng cách xem các băng hướng dẫn hiện có, các trận đấu chuyên nghiệp và cũng bằng cách quay video chính mình thực hiện những cú vung vợt thực hành hoàn hảo hoặc đánh cú đánh chính xác trong bài tập có kiểm soát.
-Điều chỉnh trí nhớ cơ bắp (Muscle Memory) Ci: với những cú chạm đất, khả năng thực hiện cú vô lê sẽ ít hơn rất nhiều.
+Điều chỉnh trí nhớ cơ bắp (Muscle Memory) Ci: với những cú đánh nền, khả năng thực hiện cú vô lê sẽ ít hơn rất nhiều.
 Khía cạnh quan trọng là điểm liên lạc sớm.
 Nếu tiếp xúc chính xác thì rất có khả năng cú đánh sẽ được thực hiện tốt.
 Bởi vì người ta ít chú trọng hơn nhiều đến vai trò của cú đánh theo sau trong cú vô lê, nên cũng ít chú trọng hơn đến việc điều chỉnh cú đánh theo cú đánh khi học đánh bóng.
@@ -2425,7 +2443,7 @@ Khi đó, cơ bắp của bạn sẽ cảm nhận được sự khác biệt gi�
 Dưới đây là hai loại lỗi phổ biến nhất khi kết thúc cú vô lê.
 Đó là những pha dứt điểm với đầu vợt sai vị trí, bằng cách thả cổ tay ra hoặc đánh bóng xuống quá mạnh và kết thúc cú đánh bằng động tác bằng chân không chính xác.
 Nếu bạn có một trong hai xu hướng này, việc sửa chữa sẽ loại chúng khỏi trò chơi trực tuyến của bạn.
-Thực hiện các chỉnh sửa bằng cách làm việc trong máy khoan có kiểm soát.
+Thực hiện các chỉnh sửa bằng cách làm việc trong bài tập có kiểm soát.
 Cứ khoảng năm quả bóng thì dừng lại và đánh giá kết quả của bạn theo các điểm kiểm tra.
 Bây giờ hãy thực hiện việc chỉnh sửa. Khi làm việc, bạn sẽ thấy rằng các chỉnh sửa của mình trở nên nhỏ hơn cho đến khi nét vẽ của bạn tự động tuân theo mô hình.
 Khi sửa lỗi, bạn nên sử dụng video thường xuyên.
@@ -2467,7 +2485,7 @@ Như đã giải thích, nó cho phép bạn thực hiện toàn bộ cú đánh
 Đầu tiên, thiết lập vị trí về mặt vật lý, tham khảo các điểm kiểm tra đi kèm với hình ảnh.
 Tiếp theo, nhắm mắt lại và tạo ra hình ảnh về vị trí đó trong tâm trí bạn, cung cấp cho nó càng nhiều chi tiết càng tốt.
 Hãy chú ý đến cảm giác về mặt thể chất của tư thế đó và làm cho hình ảnh và cảm giác đó tương ứng với nhau trong tâm trí bạn.
-Sau đó kiểm tra chìa khóa trong máy khoan có kiểm soát.
+Sau đó kiểm tra chìa khóa trong bài tập có kiểm soát.
 Khi quả bóng đến gần, hãy ghi nhớ hình ảnh chiếc chìa khóa.
 Khi bạn vung vợt, hãy làm cho vợt, cánh tay, vai và chân của bạn chồng lên hình ảnh.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Nếu bạn hình dung rõ ràng phím, nó sẽ hoạt động như một nam châm, thu hút vợt và thân vợt của bạn đến đúng vị trí.
@@ -2483,7 +2501,7 @@ Biên soạn biểu đồ từ khóa kích hoạt cú đánh (Stroke Key) của 
 Giống như những bước đột phá, điều này phải bao gồm việc phân tích xu hướng.
 Hãy so sánh các lỗi của bạn với các chìa khóa phản tác dụng và ghi lại chúng trên biểu đồ của bạn.
 Sau đó, bạn có thể mang theo biểu đồ trên sân và tham khảo nó trong các trận đấu nếu cần.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Giống như các động tác chạm đất, các phím cung cấp một phương pháp có hệ thống để tạo và duy trì sự tập trung tinh thần dưới áp lực của trận đấu.
+            <div class="bilingual-block stanza"><p class="lang-vi">Giống như các động tác đánh nền, các phím cung cấp một phương pháp có hệ thống để tạo và duy trì sự tập trung tinh thần dưới áp lực của trận đấu.
 Đặc biệt trên lưới, nơi mọi thứ diễn ra nhanh gấp đôi, sự lo lắng và sợ hãi của tay vợt có thể chi phối quá trình tinh thần của anh ta, khiến anh ta không thể tập trung.
 Bởi vì tay vợt có thể hình dung các hình ảnh quan trọng ngay cả ở tốc độ chơi trên lưới cao, hệ thống phím cho phép tay vợt tập trung và đạt được khả năng thực hiện nhất quán trên các cú vô lê của mình.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Thực hiện cú vô lê thuận tay: Điểm tiếp xúc từ góc nhìn của tay vợt Bek.
@@ -2495,20 +2513,20 @@ Cánh tay được giấu về phía thắt lưng ở khuỷu tay, cổ tay đ�
 Vai phải xoay về phía trước sao cho nằm vững chắc ở phía sau cú đánh.
 Cuối cùng, bản thân điểm tiếp xúc bóng (Contact Point) cách cơ thể khoảng một foot.
 Thiết lập vị trí vật lý và tạo ra quán tưởng tâm trí (Mental Imagery).
-Kiểm tra chìa khóa trong máy khoan có điều khiển.
+Kiểm tra chìa khóa trong bài tập có điều khiển.
 Thực hiện cú vô lê thuận tay: Xoay vai SẴN SÀNG ĐIỂM LIÊN HỆ Xoay vai là rất quan trọng trong cú vô lê thuận tay. Trừ khi cơ thể quay, nếu không sẽ có xu hướng đánh bóng bằng cánh tay, vung vợt quá mức và mất lực.
 Theo trình tự bên phải, chúng ta có thể thấy vai, cánh tay và vợt chuyển động như một đơn vị.
 Không có chuyển động độc lập.
 Thay vào đó, chỉ cần xoay vai, vợt sẽ được định vị chính xác.
 Lưu ý rằng tay đánh và vợt đã ở vị trí uốn cong đôi trong ảnh đầu tiên của Vị trí sẵn sàng.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Vị trí này được duy trì trong bức ảnh thứ hai.
+            <div class="bilingual-block stanza"><p class="lang-vi">Vị trí này được duy trì trong cú đánh thứ hai.
 Vai đã xoay 45 độ so với lưới, đặt vợt ở mép trước của cơ thể.
 Không có chuyển động cánh tay bổ sung.
-Trong bức ảnh thứ ba, vai bây giờ đã xoay về phía sau, đẩy cánh tay và vợt đến Điểm tiếp xúc.
+Trong cú đánh thứ ba, vai bây giờ đã xoay về phía sau, đẩy cánh tay và vợt đến Điểm tiếp xúc.
 Do đó, toàn bộ cú đánh có thể được thực hiện bằng cách xoay vai.
 Thiết lập từng tư thế trong số ba tư thế thể hiện ở trên về mặt thể chất và tạo ra một hình ảnh trong đầu.
 Chìa khóa có thể là bất kỳ hình ảnh nào trong ba hình ảnh hoặc một đoạn phim nhỏ về toàn bộ chuyển động của vai.
-Kiểm tra phím hoặc các phím trong máy khoan có kiểm soát.
+Kiểm tra phím hoặc các phím trong bài tập có kiểm soát.
 Thực hiện cú vô lê thuận tay: Bước chéo tới bóng Vị trí SẴN SÀNG BẮT ĐẦU CỦA Điểm tiếp xúc BƯỚC ngang Khi bạn đã nắm vững các yếu tố cơ bản của cú vô lê thuận tay, bạn có thể thực hiện toàn bộ cú đánh trên cái được gọi là bước chéo tới bóng.
 Đây thường là chìa khóa hiệu quả nhất để trận đấu có tốc độ cao. Sử dụng phím này, vai, vợt và bàn chân di chuyển như một đơn vị đến Điểm tiếp xúc.
 Như đã trình bày ở trên, nếu bước đi tới quả bóng đúng thì toàn bộ chuyển động cũng sẽ đúng.
@@ -2516,7 +2534,7 @@ Như đã trình bày ở trên, nếu bước đi tới quả bóng đúng thì
 Trong khung thứ hai, bạn có thể thấy rằng khi gắn vợt và chân, vai sẽ bắt đầu xoay và vợt sẽ tự động di chuyển về phía trước khi bước bắt đầu.
 Tại Điểm tiếp xúc, vai phải sẽ xoay về phía trước đẩy vợt đến điểm tiếp xúc bóng (Contact Point) sớm, như thể hiện trong khung thứ ba.
 Thực hành bước chéo đến điểm tiếp xúc bóng (Contact Point) và khi bạn thực hiện, hãy tạo ra hình ảnh của chuyển động và thanh thép nối bàn chân trái của bạn với mông vợt.
-Bây giờ hãy kiểm tra chìa khóa trong máy khoan có kiểm soát.</p></div>
+Bây giờ hãy kiểm tra chìa khóa trong bài tập có kiểm soát.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Biến thể: Cú vô lê thuận tay xoáy xuống ReEapy POOSITION BẮT ĐẦU CỦA TURN THE TURN Cách cầm: Sự khác biệt chính trong việc đánh cú vô lê thuận tay với kiểu cầm vợt xoáy xuống là sự thay đổi từ kiểu cầm thuận tay sang kiểu cầm vợt lục địa.
 Cách cầm vợt phải nằm giữa kiểu cầm vợt thuận tay phía Đông và kiểu cầm vợt trái tay phía Đông.
 Điều này có nghĩa là phần đệm gót chân của tay cầm vợt nằm ở góc xiên trên cùng của khung.
@@ -2527,7 +2545,7 @@ Bằng cách chuyển sang cách cầm vợt kiểu lục địa, mặt vợt s�
 Một khi góc của mặt vợt được thiết lập, nó sẽ không thay đổi trong suốt quá trình đánh.
 Do đó, mặt vợt vẫn mở ở Bước tới bóng (Khung 4), tại Điểm tiếp xúc (Khung 5), cho đến Vị trí kết thúc (Khung 6).
 Bằng cách di chuyển qua quả bóng ở góc này, các dây sẽ tự động trượt bên dưới quả bóng tạo ra xoáy xuống.
-Hãy tưởng tượng quả bóng như một quả cam, ĐIỂM CONrtTACT BƯỚC ĐẾN BÓNG VỊ TRÍ CUỐI CÙNG và mặt vợt như một con dao. Con dao phải cắt đứt một phần ba đường chéo phía sau của quả bóng khi tiếp xúc, giống như với cú chạm đất trái tay xoáy xuống.
+Hãy tưởng tượng quả bóng như một quả cam, ĐIỂM CONrtTACT BƯỚC ĐẾN BÓNG VỊ TRÍ CUỐI CÙNG và mặt vợt như một con dao. Con dao phải cắt đứt một phần ba đường chéo phía sau của quả bóng khi tiếp xúc, giống như với cú đánh nền trái tay xoáy xuống.
 Phát triển cú đánh: Bởi vì cơ chế sinh học của cú vô lê xoáy xuống tương tự như cú vô lê phẳng được trình bày ở trên, nên không cần phải lặp lại quá trình tiến triển thông qua các khung tĩnh và các điểm kiểm tra.
 Nếu bạn đã phát triển một cú vô lê cơ bản chắc chắn, bạn có thể thêm xoáy xuống chỉ bằng cách thay đổi cách cầm và góc của vợt khi thực hiện cú xoay.
 Đảm bảo rằng bạn cho phép mặt mở (một cách tự nhiên) khi bắt đầu lượt (Khung 2).
@@ -2544,19 +2562,19 @@ Trên thực tế, xoáy xuống được tạo ra bởi mặt mở di chuyển 
 Đánh xuống sẽ dẫn đến tiếp xúc muộn, mất tốc độ và kiểm soát bóng.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Thực hành chuyển động như hình trên, di chuyển qua ba khung hình.
 Khi bạn làm như vậy, hãy tạo ra một hình ảnh trong đầu hoặc một đoạn phim nhỏ về mặt vợt di chuyển qua điểm tiếp xúc bóng (Contact Point) trên một đường thẳng.
-Kiểm tra chìa khóa trong máy khoan có điều khiển.</p></div>
+Kiểm tra chìa khóa trong bài tập có điều khiển.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">TẠO MẪU ĐÁNH BÓNG TRÁI BẰNG MỘT TAY Khi học cú vô lê trái tay bằng một tay, bạn sẽ tuân theo các tiến trình hình dung quen thuộc, bắt đầu với chuỗi khung hình tĩnh (Still Frame) của cú đánh.
 Bằng cách sử dụng các trình tự, bạn sẽ học được mô hình vật lý và hình ảnh của cú đánh.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Các trình tự bắt đầu bằng cách thể hiện cú đánh từ góc nhìn phía trước và mô tả các đặc điểm kỹ thuật của cảnh quay.
 Sau đó, nét được hiển thị đồng thời từ phía trước và phía bên, do đó có thể xác định được bốn khung hình tĩnh (Still Frame) chính.
 Bốn khung này là: 4 Vị trí Kết thúc Như trường hợp của tất cả các nét, nếu chuyển động đúng ở các vị trí khung tĩnh chính này thì nó sẽ đúng trong suốt quá trình chuyển động.
-Giống như cú vô lê thuận tay, chuyển động của cú vô lê trái tay nhỏ gọn hơn nhiều so với cú đánh chạm đất trái tay, do đó hầu như không có gì có thể xảy ra sai sót ở giữa nếu các khung hình tĩnh (Still Frame) chính xác.
+Giống như cú vô lê thuận tay, chuyển động của cú vô lê trái tay nhỏ gọn hơn nhiều so với cú đánh nền trái tay, do đó hầu như không có gì có thể xảy ra sai sót ở giữa nếu các khung hình tĩnh (Still Frame) chính xác.
 Sau khi xác định được các khung hình tĩnh (Still Frame), mỗi khung hình sẽ được phân tích riêng lẻ và vạch ra các điểm kiểm tra của nó.
 Bằng cách sử dụng các điểm kiểm tra, bạn sẽ học cách thiết lập từng khung hình tĩnh (Still Frame) và sau đó ghép chúng lại với nhau thành một nét mượt mà.
 Các phần sau đây trình bày cách điều chỉnh trí nhớ cơ bắp (Muscle Memory) và cách tạo hệ thống phím gõ của riêng bạn. i 2 3 VỊ TRÍ SẴN SÀNG BẮT ĐẦU RÚT QUAY Đặc điểm của cú bắt lưới trái tay một tay XEM TRƯỚC Vị trí sẵn sàng: Vị trí sẵn sàng giống như đối với cú bắt lưới thuận tay.
 Điều này có nghĩa là đầu vợt hướng lên trên, sao cho đỉnh vợt gần như bằng với đỉnh đầu (Khung 1).
-Một lần nữa, điều này trái ngược với Vị trí sẵn sàng cho các cú chạm đất trong đó vợt thấp hơn nhiều và hướng thẳng vào lưới.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Cách cầm: Cú vô lê trái tay được đánh với cách cầm giống như cú đánh chạm đất trái tay.
+Một lần nữa, điều này trái ngược với Vị trí sẵn sàng cho các cú đánh nền trong đó vợt thấp hơn nhiều và hướng thẳng vào lưới.</p></div>
+            <div class="bilingual-block stanza"><p class="lang-vi">Cách cầm: Cú vô lê trái tay được đánh với cách cầm giống như cú đánh nền trái tay.
 Một lần nữa, hãy tham khảo chương cách cầm nếu bạn có thắc mắc.
 Ở Vị trí Sẵn sàng, bạn nên đợi với cách cầm vợt thuận tay, tay trái ôm lấy cổ vợt (Khung 1).
 Sự thay đổi độ bám xảy ra như một phần của chuyển động quay.
@@ -2589,14 +2607,14 @@ Vai trò của Vai: Một lần nữa, toàn bộ cú vô lê trái tay có th�
 Bước tới bóng (Khung 4) đặt trọng lượng vuông góc phía sau cú đánh, tạo đòn bẩy tự nhiên cho cơ thể.
 Sau đó, vai sẽ di chuyển cánh tay và vợt về phía Điểm tiếp xúc (Khung 5).
 Điểm tiếp xúc sớm: Giống như cú vô lê thuận tay, Điểm tiếp xúc trên cú vô lê trái tay ở phía trước cơ thể xa hơn đáng kể so với các cú đánh tiếp đất.
-Vị trí của vợt ở Lượt rẽ gần giống với Điểm tiếp xúc trong các cú chạm đất.
+Vị trí của vợt ở Lượt rẽ gần giống với Điểm tiếp xúc trong các cú đánh nền.
 Tuy nhiên, từ thời điểm này, vợt di chuyển về phía trước để gặp bóng.
 Điểm tiếp xúc trên cú vô lê cách xa hơn một đến hai feet ở phía trước mép cơ thể (Khung 5).
 Điểm tiếp xúc sớm này, kết hợp với lực đòn bẩy từ vai và chân, là bí quyết để thực hiện cú vô lê trái tay ổn định, dễ dàng.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Cú bắt lưới trái tay bằng một tay: Bốn khung hình tĩnh (Still Frame) chính - KHUNG HÌNH VẪN XEM SIDE #1 KHUNG VẪN #2 VỊ TRÍ SẴN SÀNG BẮT ĐẦU QUAY LƯỢT Cú đánh trái tay bằng một tay: Bốn khung hình tĩnh (Still Frame) chính - KHUNG HÌNH VẪN XEM TRƯỚC #1 KHUNG VẪN #2 ee RM, BRL ag.
 eo ee ReEapy PosItIon BẮT ĐẦU KHUNG VẪN VẪN QUAY #3 KHUNG STmLL #4 BƯỚC ĐẾN ĐIỂM LIÊN HỆ BÓNG VỊ TRÍ KẾT THÚC KHUNG VẪN #3 KHUNG VẪN #4 BƯỚC ĐẾN ĐIỂM TIẾP XÚC BÓNG KẾT THÚC Vị trí khung cố định 1 Điểm kiểm tra vị trí sẵn sàng: Vợt: Đầu vợt ngang bằng với đầu của tay vợt
 đầu.
-Giống như cú vô lê thuận tay, vị trí vợt cao hơn này là điểm khác biệt chính so với Vị trí sẵn sàng trong các cú chạm đất.
+Giống như cú vô lê thuận tay, vị trí vợt cao hơn này là điểm khác biệt chính so với Vị trí sẵn sàng trong các cú đánh nền.
 Vai: Vai song song với lưới.
 Phần thân trên thẳng lên xuống từ thắt lưng.
 Chỗ uốn cong ở đầu gối chứ không phải ở thắt lưng.
@@ -2609,7 +2627,7 @@ Thiết lập Vị trí Sẵn sàng về mặt vật lý bằng cách sử dụn
 Mặt trên của vợt vẫn ngang bằng với đỉnh đầu của tay vợt.
 Thân vợt nghiêng một góc khoảng 45 độ so với mặt sân.
 Mặt vợt thẳng đứng so với mặt sân.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Vai: Vai đã xoay khoảng 45 độ, hoặc khoảng một nửa so với khi thực hiện động tác chạm đất.
+            <div class="bilingual-block stanza"><p class="lang-vi">Vai: Vai đã xoay khoảng 45 độ, hoặc khoảng một nửa so với khi thực hiện động tác đánh nền.
 Vai, đánh Cánh tay đánh: Cánh tay đánh không di chuyển độc lập mà đã xoay vào vị trí khi xoay vai.
 Tay vợt đã chuyển sang cách cầm vợt trái tay.
 Cẳng tay nằm ngang với sân và cổ tay bị khóa.</p></div>
@@ -2674,7 +2692,7 @@ Bây giờ, di chuyển trực tiếp đến đúng vị trí.
 Hãy để cơ bắp của bạn cảm nhận được sự khác biệt so với những gì bạn thực sự đã làm và những gì bạn đang cố gắng làm. Điều này sẽ làm tăng khả năng lần chụp tiếp theo sẽ bám sát người mẫu hơn và theo thời gian, sẽ đưa cả hai vào hàng thẳng hàng.
 Hai loại lỗi phổ biến nhất được nêu dưới đây.
 Họ đang kết thúc cú đánh với đầu vợt sai vị trí và kết thúc cú đánh với tư thế cởi mở.
-Thực hiện các chỉnh sửa bằng cách làm việc trong máy khoan có kiểm soát.
+Thực hiện các chỉnh sửa bằng cách làm việc trong bài tập có kiểm soát.
 Cứ khoảng năm quả bóng thì dừng lại và đánh giá cũng như sửa lỗi kết thúc của bạn theo các điểm kiểm tra.
 Bạn sẽ thấy rằng lỗi của mình ngày càng nhỏ hơn cho đến khi nét vẽ của bạn tự động tuân theo mô hình.
 Khi sửa lỗi, bạn nên sử dụng video thường xuyên.
@@ -2700,7 +2718,7 @@ Kết quả sẽ là tạo ra đòn bẩy cho cơ thể và tiếp xúc sớm.
 TATUEMAN Thế mở và sửa lỗi: TẬP MỞ Ở CUỐI ĐÓNG VỊ TRÍ CUỐI CÙNG ĐƯỢC SỬA CHỮA Với cú vô lê thuận tay, bước tiếp theo sau khi phát triển trí nhớ cơ bắp (Muscle Memory) bắp của bạn là tạo ra một hệ thống phím cú đánh cá nhân.
 Các phím là hình ảnh của các phần tử cơ bản của nét vẽ.
 Bằng cách hình dung chúng, bạn kích hoạt toàn bộ kiểu đánh và sau đó có thể thực hiện cú đánh dưới áp lực của trận đấu.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Do vai trò của cú đánh theo sau bị giảm sút so với các cú chạm đất, điểm mấu chốt nhất của cú vô lê trái tay thường là hình ảnh của Điểm tiếp xúc.
+            <div class="bilingual-block stanza"><p class="lang-vi">Do vai trò của cú đánh theo sau bị giảm sút so với các cú đánh nền, điểm mấu chốt nhất của cú vô lê trái tay thường là hình ảnh của Điểm tiếp xúc.
 Tiếp xúc sớm cho phép bạn sử dụng tốc độ của quả bóng đang tới để tạo ra sức mạnh cho riêng mình và phát triển khả năng kiểm soát bóng chính xác.
 Vì vậy, hình ảnh của Contact Point và cách sử dụng nó là chìa khóa đầu tiên được trình bày trong phần này.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Bí quyết thứ hai là xoay vai.
@@ -2716,7 +2734,7 @@ Như đã được chứng minh, nó cho phép chân, vợt và cơ thể hoạt
 Đầu tiên, thiết lập vị trí về mặt vật lý, tham khảo các điểm kiểm tra đi kèm với hình ảnh.
 Tiếp theo, nhắm mắt lại và tạo ra hình ảnh về vị trí đó trong tâm trí bạn, cung cấp cho nó càng nhiều chi tiết càng tốt.
 Hãy chú ý đến cảm giác về mặt thể chất của tư thế đó và làm cho hình ảnh và cảm giác đó tương ứng với nhau trong tâm trí bạn.
-Sau đó kiểm tra chìa khóa trong máy khoan có kiểm soát.
+Sau đó kiểm tra chìa khóa trong bài tập có kiểm soát.
 Khi quả bóng đến gần, hãy ghi nhớ hình ảnh chiếc chìa khóa.
 Khi bạn vung vợt, hãy làm cho vợt, cánh tay, vai và chân của bạn chồng lên hình ảnh.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Nếu bạn hình dung rõ ràng phím, nó sẽ hoạt động như một nam châm, thu hút vợt và thân vợt của bạn đến đúng vị trí.
@@ -2743,7 +2761,7 @@ Mặt vợt vuông góc.
 Cẳng tay nằm ngang, khuỷu tay hơi cong và cổ tay bị khóa.
 Cuối cùng, điểm tiếp xúc bóng (Contact Point) với bóng cách vai phải ít nhất một foot.
 Thiết lập vị trí vật lý và tạo ra quán tưởng tâm trí (Mental Imagery).
-Kiểm tra chìa khóa trong máy khoan có điều khiển.
+Kiểm tra chìa khóa trong bài tập có điều khiển.
 Thực hiện cú vô lê trái tay bằng một tay: Xoay từ vai Một lỗi phổ biến trong cú vô lê trái tay là vung tay về phía sau bằng cánh tay và vợt, đưa chúng về phía sau mà không xoay.
 Như trình tự này cho thấy, cánh tay và vợt hầu như ở cùng một vị trí trong suốt chuyển động.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Ở Tư thế Sẵn sàng, khuỷu tay hướng về phía thắt lưng và cẳng tay nằm ngang hoặc song song với bề mặt sân.
@@ -2755,7 +2773,7 @@ Cánh tay đánh và vợt đã vung về phía trước như cánh cổng trên
 Không có bộ phận chuyển động độc lập.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Thực hiện chuyển động như trên bằng cách di chuyển vai, đánh cánh tay và vợt.
 Tạo một quán tưởng tâm trí (Mental Imagery) hoặc một đoạn phim nhỏ về chuyển động.
-Kiểm tra chìa khóa trong máy khoan có điều khiển.
+Kiểm tra chìa khóa trong bài tập có điều khiển.
 Thực hiện cú vô lê trái tay bằng một tay: Bước chéo đến vị trí sẵn sàng của bóng ° BẮT ĐẦU CỦA Hợp đồng BƯỚC chéo Điểm o.
 Bạn đã thành thạo các yếu tố của cú vô lê trái tay bằng một tay, bạn có thể thực hiện cú đánh theo bước chéo tới bóng.
 Đây thường là một phím hiệu quả ở tốc độ cao của trận đấu, nhưng nó cũng đòi hỏi bạn phải xây dựng trí nhớ cơ bắp (Muscle Memory) bắp mạnh mẽ trong bài tập có kiểm soát, để khi bạn thực hiện bước chéo, các yếu tố khác của chuyển động vẫn chính xác.
@@ -2773,7 +2791,7 @@ Vào thời điểm Lượt hoàn tất (Khung 3), mặt vợt được vát sao
 Khi góc của mặt vợt được thiết lập, nó sẽ không thay đổi trong suốt quá trình chuyển động còn lại.
 Do đó, mặt vợt vẫn hơi mở ở Bước tới bóng (Khung 4), tại Điểm tiếp xúc (Khung 5) và ở Vị trí kết thúc (Khung 6).
 Nó đã di chuyển thẳng theo chuyển động của đường đánh, thay vì đi xuống.
-Góc của mặt vợt trượt dưới bóng tự động tạo ra xoáy xuống, giống như trong một cú đánh chạm đất trái tay.</p></div>
+Góc của mặt vợt trượt dưới bóng tự động tạo ra xoáy xuống, giống như trong một cú đánh nền trái tay.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">BƯỚC ĐẾN ĐIỂM TIẾP XÚC BÓNG VỊ TRÍ KẾT THÚC Phát triển cú đánh: Cơ chế sinh học cơ bản của cú vô lê xoáy xuống giống hệt với cú vô lê phẳng được trình bày trước đó, ngoại trừ sự thay đổi cách cầm và góc mặt vợt.
 Do đó, ở đây không cần phải lặp lại tiến trình thông qua các khung hình tĩnh (Still Frame) và các điểm kiểm tra.
 Nếu bạn đã phát triển một cú vô lê phẳng chắc chắn, bạn có thể thêm xoáy xuống bằng cách thay đổi góc của mặt vợt khi bắt đầu Lượt.
@@ -2794,7 +2812,7 @@ Kết quả là tiếp xúc muộn, mất đòn bẩy cơ thể và do đó ki�
 Trong thực tế, góc của mặt vợt tạo ra độ xoáy chứ không phải góc hướng xuống của mặt phẳng vung.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Thực hành chuyển động như hình trên, di chuyển qua ba khung hình.
 Khi bạn làm như vậy, hãy tạo một hình ảnh trong đầu hoặc một đoạn phim nhỏ về mặt vợt mở di chuyển qua điểm tiếp xúc bóng (Contact Point) trên một đường thẳng.
-Kiểm tra chìa khóa trong máy khoan có điều khiển.</p></div>
+Kiểm tra chìa khóa trong bài tập có điều khiển.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">TẠO MẪU ĐÁNH BÓNG TRÁI HAI TAY Anh ấy tiến triển trong việc phát triển cú vô lê trái tay bằng hai tay dựa trên chuỗi ảnh tĩnh giống như các cú vô lê khác.
 Các trình tự này được sử dụng, cũng như các trình tự khác, để tạo ra mô hình vật lý và hình ảnh của mô hình xoay.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Quá trình bắt đầu bằng cách hiển thị cú vô lê trái tay bằng hai tay từ góc nhìn phía trước và giải thích các đặc điểm kỹ thuật chung của cú đánh.
@@ -2803,11 +2821,11 @@ Bốn khung hình tĩnh (Still Frame) là: 4 Vị trí Kết thúc Nếu cú vô
 Bởi vì chuyển động rất nhỏ gọn nên hầu như không có gì sai sót giữa các khung hình tĩnh (Still Frame) nếu mỗi khung hình đều đúng.
 Sau khi xác định được bốn khung hình tĩnh (Still Frame), mỗi khung hình sẽ được thể hiện riêng lẻ và các điểm kiểm tra sẽ được vạch ra.
 Bằng cách sử dụng các điểm kiểm tra, bạn sẽ học cách thiết lập các khung hình tĩnh (Still Frame) một cách vật lý, cách hình dung bản thân ở từng vị trí khung hình tĩnh (Still Frame) và sau đó, cách đặt các khung hình lại với nhau thành một kiểu nét tổng thể mượt mà. Hai phần sau đây trình bày cách điều chỉnh trí nhớ cơ bắp (Muscle Memory) đối với cú vô lê trái tay bằng hai tay và các phím đánh là cơ sở để thực hiện cú đánh nhất quán trong trận đấu.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">1 mắt 3 Vị trí sẵn sàng BẮT ĐẦU Rẽ Rẽ Đặc điểm của cú bắt lưới trái tay bằng hai tay NHÌN TRƯỚC Cách cầm: Cú vô lê trái tay bằng hai tay được đánh bằng hai cách cầm thuận tay, giống như với cú đánh chạm đất trái tay bằng hai tay.
+            <div class="bilingual-block stanza"><p class="lang-vi">1 mắt 3 Vị trí sẵn sàng BẮT ĐẦU Rẽ Rẽ Đặc điểm của cú bắt lưới trái tay bằng hai tay NHÌN TRƯỚC Cách cầm: Cú vô lê trái tay bằng hai tay được đánh bằng hai cách cầm thuận tay, giống như với cú đánh nền trái tay bằng hai tay.
 Cách cầm thuận tay phải được duy trì và cách cầm thuận tay thứ hai được thêm vào bằng tay trái.
 Hai tay đặt vào nhau, chạm vào nhau nhưng không chồng lên nhau trên cán vợt, như có thể thấy rõ trong Khung 2. Một lần nữa, nếu bạn chơi bằng hai tay, bạn nên đợi ở Vị trí Sẵn sàng với cách cầm vợt bằng hai tay.
 Đầu vợt hướng lên trên, đỉnh khung ngang bằng với đỉnh đầu, như trường hợp của cú vô lê thuận tay hoặc trái tay một tay.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Điểm tương đồng với động tác chạm đất bằng hai tay: Cơ chế sinh học của cú vô lê trái tay bằng hai tay tương tự như động tác chạm đất bằng hai tay ở một khía cạnh chính: cánh tay trái, cánh tay sau là cánh tay đánh.
+            <div class="bilingual-block stanza"><p class="lang-vi">Điểm tương đồng với động tác đánh nền bằng hai tay: Cơ chế sinh học của cú vô lê trái tay bằng hai tay tương tự như động tác đánh nền bằng hai tay ở một khía cạnh chính: cánh tay trái, cánh tay sau là cánh tay đánh.
 Cánh tay trái và vai trái tạo ra chuyển động, gần giống với cú vô lê thuận tay trái.
 Cánh tay phải bổ sung thêm nhưng hỗ trợ thứ yếu.
 Trong Khung 4 đến 6, bạn có thể thấy vai trái quay về phía trước và cánh tay trái đẩy vợt về phía Điểm tiếp xúc.</p></div>
@@ -2823,7 +2841,7 @@ Vai quay sang một bên lưới (Khung 3), và thao tác xoay này sẽ tự đ
 Từ vị trí này, vợt di chuyển về phía tiếp xúc và kết thúc, tổng cộng là khoảng 2 feet. Đường đi tiếp theo không bao giờ chuyển sang phía đối diện của cơ thể.
 Khi kết thúc cú đánh, mông vợt hướng về phía hông trước bên phải (Khung 6).
 Điểm tiếp xúc sớm: Một lần nữa, Điểm tiếp xúc sớm hơn so với các lần chạm đất.
-Khi hoàn thành Lượt quay, vợt nằm ở mép trước của thân, đây là Điểm tiếp xúc gần đúng trong các cú chạm đất.
+Khi hoàn thành Lượt quay, vợt nằm ở mép trước của thân, đây là Điểm tiếp xúc gần đúng trong các cú đánh nền.
 Từ thời điểm này vợt di chuyển về phía trước để tiếp xúc khoảng 1 foot ở phía trước cơ thể (Khung 5).
 Thời điểm sớm này tạo ra lực đòn bẩy cơ thể và tốc độ bắn tự nhiên.
 Đó là điều mang lại cho cú vô lê một cảm giác chắc chắn, dễ dàng.</p></div>
@@ -2887,7 +2905,7 @@ Mục tiêu của bạn là thực hiện chuyển động một cách chính x�
             <div class="bilingual-block stanza"><p class="lang-vi">Khía cạnh tiếp theo của việc xây dựng trí nhớ cơ bắp (Muscle Memory) bắp là đánh bóng trong bài tập có kiểm soát.
 Bắt đầu trên lưới ở vị trí sẵn sàng.
 Ban đầu, bạn nên đánh những quả bóng có tốc độ thấp đến trung bình và bóng đến thẳng với bạn ở độ cao ngang vai.
-Bạn có thể tạo máy khoan có điều khiển bằng máy bi, với bạn tập hoặc chuyên gia giảng dạy của bạn.
+Bạn có thể tạo bài tập có điều khiển bằng máy bi, với bạn tập hoặc chuyên gia giảng dạy của bạn.
 Công việc này sẽ giúp bạn cảm thấy thoải mái khi thực hiện cú đánh và sẽ xây dựng sự tự tin của bạn.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Khi bạn thực hiện bài tập có kiểm soát, hãy dừng năm đến mười quả bóng một lần và thực hiện điều chỉnh trí nhớ cơ bắp (Muscle Memory), như được minh họa trong phần tiếp theo.
 Giống như khi tập vung vợt, hãy luyện tập cho đến khi bạn có thể đánh được 10 cú đánh mà không cần hoặc ít phải chỉnh sửa.</p></div>
@@ -2911,7 +2929,7 @@ Tuy nhiên, việc sử dụng các hiệu chỉnh về trí nhớ cơ bắp (Mu
 Giữ vị trí này và so sánh kết quả thực tế của bạn với các điểm kiểm tra để có kết quả chính xác.
 Bây giờ hãy di chuyển trực tiếp từ vị trí thực tế của bạn đến vị trí chính xác.
 Quá trình này dạy cho cơ bắp của bạn cảm nhận được sự khác biệt giữa những gì bạn đang cố gắng làm và những gì bạn thực sự đã làm.
-Giống như các động tác chạm đất và các cú vô lê khác, việc thực hiện điều chỉnh trí nhớ cơ bắp (Muscle Memory) theo thời gian sẽ đưa cú đánh của bạn đến gần hơn với mô hình cho đến khi bạn thực hiện nó một cách chính xác và nhất quán.
+Giống như các động tác đánh nền và các cú vô lê khác, việc thực hiện điều chỉnh trí nhớ cơ bắp (Muscle Memory) theo thời gian sẽ đưa cú đánh của bạn đến gần hơn với mô hình cho đến khi bạn thực hiện nó một cách chính xác và nhất quán.
 Một lần nữa, khi sửa lỗi, bạn nên sử dụng video thường xuyên.
 Bằng cách xem video về quá trình tạo nét thực tế của bạn, bạn sẽ không chỉ thấy mình đang đi chệch khỏi mô hình của mình như thế nào mà còn phát triển một hình ảnh rõ ràng về chính nét vẽ của mô hình.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Chỉnh sửa trí nhớ cơ bắp (Muscle Memory): Vị trí vợt Hai chuỗi tiếp theo hiển thị hai lỗi phổ biến ở vị trí vợt khi kết thúc cú vô lê trái tay bằng hai tay.</p></div>
@@ -2924,7 +2942,7 @@ Kết quả là liên lạc muộn thường xuyên.
 Tay vợt gặp khó khăn trong việc kiểm soát các cú đánh theo tốc độ của mình và một lần nữa, anh ta lại mất kiểm soát bóng.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Để sửa những lỗi này, chỉ cần dừng lại ở vị trí của người tượng, sau đó, tham khảo các điểm kiểm tra nếu cần, đặt lại vị trí vợt vào đúng Vị trí kết thúc như được hiển thị.
 STATUEMAN Lỗi nhả và sửa cổ tay: NHẢ cổ tay ĐÃ CHỈNH SỬA VỊ TRÍ CUỐI CÙNG STATUEMAN Thả tay trái và sửa Lỗi: NHẢ TAY LEFr ĐÃ SỬA CHỮA CUỐI CÙNG PostITION Chỉnh sửa trí nhớ cơ bắp (Muscle Memory): Vị trí chân Trình tự này cho thấy một lỗi động tác chân điển hình trong cú vô lê trái tay bằng hai tay, kết thúc với tư thế mở.
-Tay vợt trong bức ảnh đầu tiên chưa bước tới trước quả bóng.
+Tay vợt trong cú đánh đầu tiên chưa bước tới trước quả bóng.
 Nếu không có bước tiếp bóng này, thế đứng sẽ mở ở Vị trí Kết thúc.
 Việc xoay vai sẽ không được trọn vẹn, hạn chế việc xoay cơ thể.
 Ngoài ra, trọng lượng cơ thể không thể chuyển vào cú đánh.
@@ -2946,7 +2964,7 @@ Nó cho phép tay vợt thực hiện những cú vô lê kỹ thuật chắc ch
 Đầu tiên, thiết lập vị trí về mặt vật lý, tham khảo các điểm kiểm tra đi kèm với hình ảnh.
 Tiếp theo, nhắm mắt lại và tạo ra hình ảnh về vị trí đó trong tâm trí bạn, cung cấp cho nó càng nhiều chi tiết càng tốt.
 Hãy chú ý đến cảm giác về mặt thể chất của tư thế đó và làm cho hình ảnh và cảm giác đó tương ứng với nhau trong tâm trí bạn.
-Sau đó kiểm tra chìa khóa trong máy khoan có kiểm soát.
+Sau đó kiểm tra chìa khóa trong bài tập có kiểm soát.
 Khi quả bóng đến gần, hãy ghi nhớ hình ảnh chiếc chìa khóa.
 Khi bạn vung vợt, hãy làm cho vợt, cánh tay, vai và chân của bạn chồng lên hình ảnh.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Nếu bạn hình dung rõ ràng phím, nó sẽ hoạt động như một nam châm, thu hút vợt và thân vợt của bạn đến đúng vị trí.
@@ -2971,7 +2989,7 @@ Trong hình ảnh thứ ba, vai đã quay về vị trí song song, đẩy cánh
 Kết quả là sự tiếp xúc sớm và sức mạnh tự nhiên.
 Thực hiện chuyển động nhiều lần như minh họa ở trên, nhấn mạnh vào vai trò của vai.
 Khi làm vậy, hãy tạo ra một hình ảnh trong đầu hoặc một đoạn phim nhỏ về chuyển động.
-Bây giờ hãy kiểm tra chìa khóa trong máy khoan có kiểm soát.
+Bây giờ hãy kiểm tra chìa khóa trong bài tập có kiểm soát.
 Thực hiện cú vô lê trái tay bằng hai tay: Bước chéo tới bóng Vị trí THẤP BẮT ĐẦU Hợp đồng BƯỚC chéo Điểm A, với tất cả các cú vô lê, cú vô lê trái tay bằng hai tay có thể được thực hiện trên bước chéo tới bóng.
 Phím này cho phép tay vợt thực hiện cú đánh một cách nhất quán trong các pha trao đổi tốc độ cao.
 Với bước đi, như trình tự cho thấy, vai, cánh tay và vợt đều chuyển động như một đơn vị theo bóng. Tuy nhiên, việc sử dụng phím này đòi hỏi phải nắm vững các yếu tố cơ bản khác và chỉ nên sử dụng khi trí nhớ cơ bắp (Muscle Memory) cho cú đánh đã được thiết lập vững chắc.</p></div>
@@ -2979,7 +2997,7 @@ Với bước đi, như trình tự cho thấy, vai, cánh tay và vợt đều 
 Trong khung thứ hai, bạn có thể thấy rằng khi gắn vợt và chân, vai sẽ bắt đầu xoay và vợt sẽ tự động di chuyển về phía trước khi bước bắt đầu.
 Tại Điểm tiếp xúc, vai sau bên trái đẩy tay đánh và vợt về phía trước để gặp bóng sớm, như trong khung thứ ba.
 Thực hành bước chéo đến điểm tiếp xúc bóng (Contact Point) và khi thực hiện, bạn tạo ra hình ảnh trong đầu về chuyển động và thanh thép nối bàn chân phải của bạn với mông vợt.
-Bây giờ hãy kiểm tra chìa khóa trong máy khoan có kiểm soát.</p></div>
+Bây giờ hãy kiểm tra chìa khóa trong bài tập có kiểm soát.</p></div>
           </div>
         </div>
 
@@ -3009,25 +3027,25 @@ Khi bạn giao bóng, bạn không đánh vào quả bóng đang tới.
 Thay vì phản ứng với một quả bóng bay quá tốc độ của đối thủ, bạn sẽ đánh một quả bóng không có vận tốc đang lao tới—nó gần như lơ lửng trên không trước mặt bạn.
 Vì người giao bóng bắt đầu điểm với quả bóng trong tay nên sẽ không có gì xảy ra cho đến khi anh ta tự mình thực hiện điều đó.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Tuy nhiên, hầu hết tay vợt không nhận ra việc không có vận tốc bóng đang tới có ý nghĩa gì về cơ chế sinh học của chuyển động.
-Trong trường hợp một cú chạm đất hoặc một cú vô lê, vận tốc tới của quả bóng có nghĩa là khi tiếp xúc, sẽ có một tác động đáng kể.
+Trong trường hợp một cú đánh nền hoặc một cú vô lê, vận tốc tới của quả bóng có nghĩa là khi tiếp xúc, sẽ có một tác động đáng kể.
 Mặc dù những cú đánh này phải mang lại cảm giác êm ái và thư giãn nhưng vẫn cần có một mức độ căng cơ nhất định để chịu được tác động.
 Nhưng không có sự va chạm tương tự giữa vợt và bóng khi giao bóng.
 Trong các cú đánh khác, phần lớn tốc độ của cú đánh đến từ lực sẵn có ở quả bóng đang tới.
 Với cú giao bóng, không có vận tốc tới.
 Thay vào đó, mục tiêu là tạo ra vận tốc ban đầu này thông qua chuyển động giao bóng.
-Để làm được điều này đòi hỏi khả năng tăng tốc đầu vợt lớn hơn so với các cú chạm đất hoặc cú bắt lưới.
+Để làm được điều này đòi hỏi khả năng tăng tốc đầu vợt lớn hơn so với các cú đánh nền hoặc cú bắt lưới.
 Và chìa khóa để tối đa hóa khả năng tăng tốc của đầu vợt khi giao bóng là chuyển động thoải mái, đầy đủ.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Thật không may, rất ít tay vợt giải trí tiếp cận phong trào giao bóng với những sự thật này.
-Họ đã quen với mức độ căng cơ cần thiết cho các cú chạm đất và chỉ đơn giản mang cảm giác này vào chuyển động giao bóng.
+Họ đã quen với mức độ căng cơ cần thiết cho các cú đánh nền và chỉ đơn giản mang cảm giác này vào chuyển động giao bóng.
 Hoặc tệ hơn, trong nỗ lực tăng tốc độ giao bóng, họ lại căng thẳng và ép bóng nhiều hơn.
 Kết quả là một chuyển động cứng, bị hạn chế và thực sự giảm tốc độ được tạo ra.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Nếu bạn nhìn vào đường đi của vợt khi giao bóng, bạn sẽ thấy rằng nó dài hơn gấp đôi so với cú vung vợt trong các cú chạm đất và mất ít nhất gấp đôi thời gian để thực hiện.
+            <div class="bilingual-block stanza"><p class="lang-vi">Nếu bạn nhìn vào đường đi của vợt khi giao bóng, bạn sẽ thấy rằng nó dài hơn gấp đôi so với cú vung vợt trong các cú đánh nền và mất ít nhất gấp đôi thời gian để thực hiện.
 Chuyển động dài và đầy đủ này tạo ra khả năng tăng tốc đầu vợt tối đa tại điểm tiếp xúc bóng (Contact Point) và là nguồn năng lượng chính cho cú giao bóng.
 Ngoài đường xoay, còn có hai nguồn lực bổ sung: chuyển động xoay của vai và cơ thể trong cú đánh và hành động duỗi chân.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Nguồn năng lượng thứ hai, xoay cơ thể, sẽ tự động diễn ra, miễn là tay vợt bắt đầu chuyển động với vai được đặt đúng vị trí.
 Như chuỗi ảnh sẽ minh họa, chuyển động nên bắt đầu bằng vai vuông góc với lưới.
 Điều này tương tự với vị trí chính xác của vai khi hoàn thành động tác Bật tiếp đất.
-Giống như các động tác chạm đất, việc xoay vai chính xác sau đó sẽ diễn ra một cách tự nhiên do kiểu xoay người.
+Giống như các động tác đánh nền, việc xoay vai chính xác sau đó sẽ diễn ra một cách tự nhiên do kiểu xoay người.
 Tuy nhiên, hầu hết tay vợt giải trí đều vô tình loại bỏ nguồn năng lượng tự động này khỏi trò chơi bằng cách đứng sai ở Vị trí sẵn sàng.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Có thể thấy toàn bộ giá trị của việc xoay vai như một nguồn năng lượng trong chuyển động giao bóng bằng cách kiểm tra cú giao bóng của John McEnroe.
 Mặc dù nhiều nhà quan sát cho rằng cú giao bóng của anh ấy là không chính thống, hoặc ít nhất là mang phong cách riêng, nhưng sự thật là nó thể hiện một bước tiến đáng kể về cơ chế sinh học của chuyển động.
@@ -3050,17 +3068,17 @@ Quan điểm cũ hơn, một tiêu chuẩn trong thư viện các mẹo chơi te
 Nó làm cho hông và vai không đồng bộ với vợt.
 Chúng xoay quá sớm, do đó vào thời điểm vợt chạm tới bóng, một lượng đáng kể lực đòn bẩy tiềm năng của cơ thể sẽ bị lãng phí.
 Ngoài ra, bước bước và xoay quá sớm khiến đầu gối không thể cuộn hoàn toàn, nguồn lực bổ sung thực sự cho cú giao bóng.
-Bước qua cú đánh khi giao bóng sẽ tương đương với việc bước qua các cú chạm đất bằng chân sau.
+Bước qua cú đánh khi giao bóng sẽ tương đương với việc bước qua các cú đánh nền bằng chân sau.
 Hãy tưởng tượng sự mất mát về thời gian và đòn bẩy cơ thể nếu bạn bước tới bóng bằng chân phải phía sau ở bên thuận tay!</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Toàn bộ ý tưởng đằng sau lý thuyết bước là đưa cơ thể vào cảnh quay.
 Trên thực tế, điều này chỉ có thể thực hiện được bằng cách dựa vào chân và đầu gối.
-Nguyên tắc cũng giống như đối với các động tác chạm đất: cuộn cơ tứ đầu bằng cách uốn cong đầu gối tối đa.
+Nguyên tắc cũng giống như đối với các động tác đánh nền: cuộn cơ tứ đầu bằng cách uốn cong đầu gối tối đa.
 Điều này cho phép họ thả bóng vào bóng như một hệ quả tự nhiên của cú xoay người.
 Một tay vợt sử dụng đầu gối của mình theo cách này sẽ tự động lao lên phía trên quả bóng.
 Khi đầu gối cuộn tròn đúng cách, thay vì bước chéo bằng chân sau, tay vợt sẽ tiếp đất bằng chân trước, còn chân sau sẽ đá ra xa cơ thể để giữ thăng bằng.
 Kiểu động tác bằng chân này đôi khi được gọi là lực đẩy hoặc bước nhảy.
 Nó dễ dàng là kỹ thuật chiếm ưu thế trong giải đấu chuyên nghiệp.
-Ví dụ về những tay vợt sử dụng nó bao gồm hầu hết các máy chủ tuyệt vời trong trò chơi: John McEnroe, Ivan Lendl, Stefan Edberg, Martina Navratilova và Steffi Graf, cùng những người khác.</p></div>
+Ví dụ về những tay vợt sử dụng nó bao gồm hầu hết các người giao bóng tuyệt vời trong trò chơi: John McEnroe, Ivan Lendl, Stefan Edberg, Martina Navratilova và Steffi Graf, cùng những người khác.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Một vấn đề gây tranh cãi khác trong lý thuyết giao bóng là việc ném bóng.
 Chủ đề này cũng đã bị hiểu lầm rộng rãi, gây thiệt hại lớn cho rất nhiều tay vợt giải trí.
 Theo lý thuyết mẹo tennis phổ biến, cú ném đúng phải thấp để tay vợt đánh bóng ở đầu lần ném, hoặc thậm chí trên đường lên.
@@ -3079,13 +3097,13 @@ Những yếu tố về sự thoải mái và thời gian này đã khiến Tann
             <div class="bilingual-block stanza"><p class="lang-vi">Theo lập luận ném bóng thấp, việc ném bóng cao hơn sẽ khó tính thời gian hơn nhiều.
 Điều này được cho là đúng bởi vì khi quả bóng bắt đầu rơi xuống, nó bắt đầu tăng tốc và sự thay đổi tốc độ này khiến cho việc xác định thời điểm tiếp xúc bóng (Contact Point) trở nên khó khăn.
 Nhưng đây là một tuyên bố vô lý.
-Tốc độ của quả bóng trong quá trình ném là một phần nhỏ của vận tốc của cú chạm đất sắp tới.
+Tốc độ của quả bóng trong quá trình ném là một phần nhỏ của vận tốc của cú đánh nền sắp tới.
 Một tay vợt đang gặp khó khăn trong việc tính thời gian giao bóng của mình vì cú ném thấp thường không gặp khó khăn gì trong việc tính toán các cú đánh sắp tới đang di chuyển với vận tốc lớn.
 Khi ném quả bóng đang chuyển động với tốc độ bằng một phần nhỏ tốc độ này.
 Bất kỳ tay vợt nào có khả năng tập hợp bóng ở tốc độ rất thấp đều có đủ sự phối hợp bằng mắt để tính toán tốc độ của bóng khi ném giao bóng.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Trên thực tế, một cú tung giao bóng cao thực sự dễ tính toán thời gian hơn nhiều.
 Vấn đề thực sự là có đủ thời gian để thực hiện chuyển động một cách trôi chảy và chính xác về mặt kỹ thuật.
-Một lần nữa, đường xoay khi giao bóng dài hơn gấp đôi chiều dài của cú chạm đất.
+Một lần nữa, đường xoay khi giao bóng dài hơn gấp đôi chiều dài của cú đánh nền.
 Để hoàn thành chuyển động một cách chính xác cần có thời gian và chính độ cao của cú ném giúp tay vợt có cơ hội thực hiện điều này.
 Vì vậy, tung bóng (Ball Toss) cao là chìa khóa chính để phát triển một cú giao bóng hiệu quả.
 Nếu bạn nghi ngờ điều này, hãy xem nhanh những pha ném bóng trong chuyến tham quan.
@@ -3138,7 +3156,7 @@ Cú xoáy tạo ra nhiều khoảng trống vào lưới hơn và hành động 
 Hơn nữa, độ nảy cao hơn sẽ tạo ra vấn đề cho đối thủ khi trả bóng.
 Với kiểu xoáy này, bóng có thể được đá lên ngang vai hoặc thậm chí cao hơn, buộc người quay lại phải đánh một cú trả cao, yếu.
 Cách phản công hiệu quả duy nhất của anh ấy là đưa bóng lên cao, trước khi nó có thể bay lên và đè lên anh ấy.
-Vì đây là một quá trình khó quay lại thời gian một cách nhất quán và cũng có thể là nguồn gây ra lỗi nên nó sẽ tạo ra điểm miễn phí cho máy chủ.</p></div>
+Vì đây là một quá trình khó quay lại thời gian một cách nhất quán và cũng có thể là nguồn gây ra lỗi nên nó sẽ tạo ra điểm miễn phí cho người giao bóng.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Với chuyển động cơ bản và cách sử dụng xoáy được mô tả trong chương này, sự khác biệt giữa quả giao bóng đầu tiên và quả giao bóng thứ hai chủ yếu là vấn đề mức độ.
 Quả bóng đầu tiên có thể được đánh phẳng hơn một chút và do đó có tốc độ nhanh hơn một chút.
 Quả bóng thứ hai nên xoay nhiều hơn - giúp tay vợt hoàn toàn tự tin vào khả năng đưa bóng vào vòng cấm, ngay cả khi chịu áp lực từ những điểm lớn.
@@ -3164,16 +3182,16 @@ Anh ta sẽ có thể thực hiện cú giao bóng đầu tiên khá phẳng và
 Ngoài ra, anh ta sẽ có thể đánh quả bóng thứ hai với tốc độ quay mạnh hơn.
 Độ xoáy nặng hơn này cũng có thể được kết hợp với hai loại còn lại trong quả giao bóng đầu tiên, để khiến đối thủ phải đoán và mất thăng bằng, hoặc nếu người giao bóng nhận thấy đối thủ của mình gặp khó khăn với độ nảy cao hơn. Trường hợp này sẽ xảy ra thường xuyên hơn hầu hết tay vợt nhận ra.
 Một số tay vợt sẽ đánh trả tốt hơn nhiều bằng những cú giao bóng thẳng và cứng.
-Trừ khi một máy chủ có thể tạo ra đủ vận tốc để áp đảo đối thủ của mình, việc giao bóng bằng phẳng thực sự có thể phản tác dụng.
+Trừ khi một người giao bóng có thể tạo ra đủ vận tốc để áp đảo đối thủ của mình, việc giao bóng bằng phẳng thực sự có thể phản tác dụng.
 Điều này đặc biệt đúng khi chơi quần vợt giao bóng và cú bắt lưới, khi những người giao bóng thường xuyên thấy mình cào viên đạn ra khỏi dây giày của họ trong trận đấu đầu tiên.
 Mặt khác, quả bóng có độ xoáy nặng hơn sẽ di chuyển chậm hơn một chút, do đó, nó cho phép người đánh lưới đến gần lưới nhanh hơn, cũng như buộc phải trả bóng cao hơn, nổi để dễ thực hiện cú vô lê hơn nhiều.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Trong chương này, quá trình học cách giao bóng với sự kết hợp hợp lý giữa sức mạnh, khả năng kiểm soát và độ xoáy được chia thành các giai đoạn.
-Đầu tiên là làm chủ được mô hình xoay.
-Điều này được trình bày trong các bức ảnh trình tự giao bóng cơ bản và tiến trình giảng dạy.
+Đầu tiên làm chủ được mô hình xoay.
+Điều này được trình bày trong các cú đánh trình tự giao bóng cơ bản và tiến trình giảng dạy.
 Bước thứ hai là phát triển khả năng đánh có độ xoáy vừa phải, nằm trong khuôn khổ chuyển động cơ bản.
 Điều này được trình bày dưới dạng một biến thể của chuỗi giao bóng cơ bản.
 Bước thứ ba là học cách đánh với chuyển động xoay bóng nặng hơn.
-Cuối cùng, bước thứ tư là bổ sung các động tác bằng chân nâng cao, lực đẩy bằng chân được mô tả ở trên và nguồn sức mạnh vượt trội của các máy chủ tuyệt vời trong trò chơi hiện đại.
+Cuối cùng, bước thứ tư là bổ sung các động tác bằng chân nâng cao, lực đẩy bằng chân được mô tả ở trên và nguồn sức mạnh vượt trội của các người giao bóng tuyệt vời trong trò chơi hiện đại.
 Điều này được thể hiện trong chuỗi ảnh tĩnh thứ hai.
 Theo sự tiến bộ, bất kỳ tay vợt nào cũng có thể nâng cú giao bóng của mình ngang bằng với các phần khác trong trò chơi của mình và học cách giành chiến thắng giao bóng một cách thường xuyên trong cả giải đấu và giải đấu.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">TẠO [MẪU SWING HE CHO ĐÓN GIAO CƠ BẢN Trong chương này, bạn sẽ sử dụng các nguyên tắc trực quan để tìm hiểu kiểu xoay cho cú giao bóng cơ bản.
@@ -3181,16 +3199,16 @@ Giống như tất cả các nét vẽ khác, bạn sẽ tìm hiểu mô hình v
 Ngược lại, mô hình này sẽ trở thành kế hoạch chi tiết cá nhân của bạn để phát triển một cú giao bóng chắc chắn và hiệu quả.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Đầu tiên, chuyển động được hiển thị từ góc nhìn phía trước, được chia thành các khung thành phần và các đặc tính kỹ thuật chung của nó được phác thảo.
 Sau đó nét vẽ được trình bày đồng thời từ mặt trước và mặt bên, đồng thời các khung hình tĩnh (Still Frame) chính được xác định.
-Do yêu cầu kiểu xoay dài hơn, phức tạp hơn nên có sáu khung tĩnh chính trong cú giao bóng, so với bốn khung tĩnh cho các cú chạm đất và cú bắt lưới.
+Do yêu cầu kiểu xoay dài hơn, phức tạp hơn nên có sáu khung tĩnh chính trong cú giao bóng, so với bốn khung tĩnh cho các cú đánh nền và cú bắt lưới.
 Những khung hình tĩnh (Still Frame) này là: 6. Vị trí Kết thúc Các khung hình tĩnh (Still Frame) là cơ sở để làm chủ các mô hình vật lý và hình ảnh.
-Lưu ý rằng, giống như các cú chạm đất và cú vô lê, nếu tay vợt đi qua từng khung hình tĩnh (Still Frame) một cách chính xác, điều này sẽ đảm bảo rằng toàn bộ kiểu xoay người cũng chính xác.
+Lưu ý rằng, giống như các cú đánh nền và cú vô lê, nếu tay vợt đi qua từng khung hình tĩnh (Still Frame) một cách chính xác, điều này sẽ đảm bảo rằng toàn bộ kiểu xoay người cũng chính xác.
 Phần tiếp theo chỉ cho bạn cách tìm hiểu từng khung trong số sáu khung hình tĩnh (Still Frame) cho cú giao bóng, bằng cách dạy cho bạn các điểm kiểm tra.
 Phần sau đây hướng dẫn bạn cách điều chỉnh trí nhớ cơ bắp (Muscle Memory) cho cú giao bóng. Phần chính hướng dẫn bạn cách phát triển hệ thống phím đánh của riêng bạn để tạo ra cú giao bóng nhất quán trong các pha đánh bóng và đấu đối kháng.
 Cuối cùng, cú giao bóng nâng cao, giúp tối đa hóa việc sử dụng chân để có thêm sức mạnh và độ xoáy, được trình bày dưới dạng một biến thể, cùng với các phím bổ sung cần thiết.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Vị trí sẵn sàng thả ARM Thả VỊ TRÍ BẮT ĐẦU BẮT ĐẦU VỢT Thả Đặc điểm của cách cầm giao bóng cơ bản TÌM HIỂU TRƯỚC: Để tìm hiểu chuyển động cơ bản, hãy bắt đầu với cách cầm vợt thuận tay của bạn, trừ khi đó là kiểu cầm vợt phương Đông được sửa đổi nghiêm ngặt, trong trường hợp đó có thể dễ dàng hơn để bắt đầu với cách cầm vợt gần với kiểu cầm vợt thuần túy phương đông hơn.
 Ngay sau khi tay vợt đã thành thạo cách xoay cơ bản và phát triển cảm giác tiếp xúc chắc chắn với cách cầm vợt thuận tay, anh ta nên tiến tới cách cầm vợt kiểu lục địa để phát triển độ xoáy, như được giải thích ở phần sau của chương này.
 Khả năng nắm bắt lục địa được thể hiện trong chương về khả năng nắm bắt.
-Chuyển động hoàn toàn: So với các cú chạm đất, kiểu xoay cơ bản trên cú giao bóng dài gấp đôi.
+Chuyển động hoàn toàn: So với các cú đánh nền, kiểu xoay cơ bản trên cú giao bóng dài gấp đôi.
 Nó bắt đầu với việc vợt hướng thẳng vào lưới (Khung 1).
 Hai cánh tay cùng thả xuống (Khung 2), rồi cùng nhau đi lên cho đến khi cánh tay đánh hoàn toàn thẳng và hướng thẳng vào hàng rào phía sau (Khung 3). Chuyển động của vợt tiếp tục đi lên cho đến khi nó hướng thẳng lên trên (Khung 4), rồi thả xuống hoàn toàn về phía sau (Khung 6).
 Từ đó, cánh tay đánh sẽ kéo vợt lên tới Điểm tiếp xúc ở độ mở rộng hoàn toàn (Khung 8).
@@ -3219,7 +3237,7 @@ Tay vợt đứng thẳng lên và hạ xuống từ thắt lưng.
 2. Tay đánh: Cánh tay đánh thẳng và buông thõng xuống từ vai sao cho thẳng hàng với chân trước. The Racket: Đầu vợt hướng thẳng vào lưới.
 Thân vợt song song với mặt sân, mặt vợt vuông góc.
 Tay trái tung bóng (Ball Toss) thẳng, bóng nằm trên mặt vợt.
-4, Chân: Bàn chân nằm ngang, song song với đường cơ sở, gót chân thẳng hàng.
+4, Chân: Bàn chân nằm ngang, song song với vạch cuối sân, gót chân thẳng hàng.
 Trọng lượng được phân bố đều trên cả hai chân và đầu gối hơi cong.
 Xác lập vị trí thực tế bằng cách sử dụng các điểm kiểm tra, sau đó tạo ra hình ảnh trong đầu.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Still Frame 2 The Toss re OrO'O 0,00 010 Điểm kiểm tra: 1. Vai: Vai run vuông góc với lưới.
@@ -3297,7 +3315,7 @@ Cánh tay tung bây giờ đã được mở rộng hoàn toàn.
 Thư giãn cánh tay và để nó thả xuống hết lưng.
 Từ đây cẳng tay sẽ kéo vợt lên hết mức.
 Điểm tiếp xúc cao, phía trên vai và hơi chếch sang phải, đồng thời hơi ở phía trước mặt phẳng của cơ thể.
-Cuối cùng, chuyển động kết thúc với việc tay đánh và vợt chạy dọc theo cơ thể. Toàn bộ chuyển động phải được thả lỏng và thực hiện chậm hơn nhiều và ít căng cơ hơn so với các động tác chạm đất hoặc vô lê.</p></div>
+Cuối cùng, chuyển động kết thúc với việc tay đánh và vợt chạy dọc theo cơ thể. Toàn bộ chuyển động phải được thả lỏng và thực hiện chậm hơn nhiều và ít căng cơ hơn so với các động tác đánh nền hoặc vô lê.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Bắt đầu phát triển trí nhớ cơ bắp (Muscle Memory) bắp của bạn bằng cách tập xoay người—thực hiện chuyển động mà không thực sự đánh bóng.
 Khi bạn xem từng khung hình tĩnh (Still Frame) riêng lẻ, hãy đảm bảo rằng mỗi điểm kiểm tra đều chính xác.
 Nếu bạn không chắc chắn, hãy dừng lại và xác minh các điểm kiểm tra cho khung hình tĩnh (Still Frame) cụ thể.
@@ -3337,7 +3355,7 @@ Nếu cơ chế sinh học được thiết lập thì việc đạt được đ
             <div class="bilingual-block stanza"><p class="lang-vi">Bước cuối cùng trong việc tối đa hóa tiềm năng của cú giao bóng là phát triển động tác bằng chân nâng cao.
 Điều này cho phép tay vợt tận dụng đôi chân, tăng thêm sức mạnh và độ xoáy cực lớn.
 Cú giao bóng nâng cao được trình bày dưới dạng một biến thể trong phần cuối của chương.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Chỉnh sửa trí nhớ cơ bắp (Muscle Memory) Đối với các cú vô lê, vai trò của việc điều chỉnh trí nhớ cơ bắp (Muscle Memory) ít quan trọng hơn trong việc phát triển cú giao bóng so với các cú chạm đất.
+            <div class="bilingual-block stanza"><p class="lang-vi">Chỉnh sửa trí nhớ cơ bắp (Muscle Memory) Đối với các cú vô lê, vai trò của việc điều chỉnh trí nhớ cơ bắp (Muscle Memory) ít quan trọng hơn trong việc phát triển cú giao bóng so với các cú đánh nền.
 Điều này là do vai trò quan trọng của Cú thả vợt và Điểm tiếp xúc.
 Tuy nhiên, có một số lỗi phổ biến có thể được loại bỏ nhanh chóng bằng cách sử dụng phương pháp điều chỉnh trí nhớ cơ bắp (Muscle Memory).
 Chúng được chứng minh dưới đây.</p></div>
@@ -3347,7 +3365,7 @@ Thay vì hồi phục, anh ấy dừng lại và so sánh vị trí thực tế 
 Tiếp theo, anh ta di chuyển trực tiếp từ bất cứ nơi nào anh ta thực sự ở đến nơi lẽ ra anh ta phải đến nếu anh ta làm theo đúng khuôn mẫu.
 Quá trình này dạy cho cơ bắp sự khác biệt giữa một lỗi và chuyển động kỹ thuật phù hợp, đồng thời tăng khả năng lần giao bóng tiếp theo sẽ diễn ra theo mô hình chính xác hơn.
 Theo thời gian, quá trình chỉnh sửa sẽ làm cho nét vẽ và mô hình trở nên thẳng hàng.
-Cũng như các động tác tiếp đất và chuyền bóng, bạn nên sử dụng video thường xuyên.
+Cũng như các động tác tiếp đất và đánh vô-lê, bạn nên sử dụng video thường xuyên.
 Bằng cách xem video về quá trình tạo nét thực tế của bạn, bạn sẽ không chỉ thấy mình đang đi chệch khỏi mô hình như thế nào mà còn phát triển hình ảnh rõ ràng nhất có thể về nét vẽ của mô hình.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Ba lỗi phổ biến nhất khi kết thúc cú giao bóng cơ bản là kết thúc với một cú thực hiện ngắn, bước qua bóng bằng chân sau và cúi người xuống trong quá trình chuyển động.
 Tất cả ba lỗi thường xảy ra do cố gắng tạo ra tốc độ bổ sung nhưng phải trả giá bằng kỹ thuật phù hợp.
@@ -3395,7 +3413,7 @@ Nó cho phép tay vợt tự tin rằng anh ta có thể thực hiện cú giao 
 Quy trình học cách tạo các từ khóa kích hoạt cú đánh (Stroke Key) của bạn giống hệt với quy trình học để làm chủ các khung hình tĩnh (Still Frame).
 Đầu tiên, thiết lập khóa về mặt vật lý, tham khảo các điểm kiểm tra đi kèm với hình ảnh.
 Tiếp theo, nhắm mắt lại và tạo ra hình ảnh chiếc chìa khóa trong tâm trí bạn, mang lại càng nhiều chi tiết càng tốt. Chú ý cảm giác về mặt thể chất và làm cho hình ảnh và cảm giác tương ứng trong tâm trí bạn.
-Sau đó kiểm tra chìa khóa trong máy khoan có kiểm soát.
+Sau đó kiểm tra chìa khóa trong bài tập có kiểm soát.
 Khi bạn bắt đầu chuyển động giao bóng, hãy giữ hình ảnh của chiếc chìa khóa trong tâm trí và làm cho chuyển động đó chồng lên hình ảnh.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Nếu bạn hình dung phím rõ ràng, nó sẽ dẫn đến việc thực hiện chính xác toàn bộ chuyển động giao bóng.
 Đánh mười hoặc hai mươi quả bóng trong bài tập có kiểm soát.
@@ -3430,7 +3448,7 @@ Nếu bạn cảm thấy vội vàng, hãy tăng độ cao của cú ném.
 Nếu bạn cảm thấy mình đang chờ đánh bóng thì hãy hạ thấp cú ném xuống một chút.
 Để tạo khóa này, hãy bắt đầu ở Vị trí sẵn sàng.
 Bây giờ hãy nhắm mắt lại và đếm cho chính mình. Khi bạn đếm, hãy hình dung mình đang thực hiện chuyển động giao bóng, đồng bộ với số đếm.
-Bây giờ hãy kiểm tra chìa khóa trong máy khoan có kiểm soát.</p></div>
+Bây giờ hãy kiểm tra chìa khóa trong bài tập có kiểm soát.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Thực hiện cú giao bóng cơ bản: Cú thả vợt Nguồn năng lượng chính cho chuyển động giao bóng là cú búng của vợt đến điểm tiếp xúc bóng (Contact Point) từ vị trí thả bóng.
 Tuy nhiên, nhiều tay vợt không đạt được mức giảm hoàn toàn, làm giảm vai trò của yếu tố cơ bản này.
 Như bất kỳ chuyên gia giảng dạy nào cũng biết, sự sụt giảm không hoàn toàn là một trong những sai sót khó sửa nhất.
@@ -3441,7 +3459,7 @@ Chìa khóa được thể hiện từ góc nhìn của tay vợt, góc độ m�
 Đầu vợt hướng xuống sân, khuỷu tay ở vị trí cao.
 Thiết lập Racket Drop về mặt vật lý.
 Bây giờ hãy tạo ra quán tưởng tâm trí (Mental Imagery).
-Kiểm tra chìa khóa trong máy khoan có điều khiển.
+Kiểm tra chìa khóa trong bài tập có điều khiển.
 Khóa cú giao bóng cơ bản: Điểm tiếp xúc từ góc nhìn của tay vợt là rất quan trọng đối với chuyển động giao bóng.
 Nó đảm bảo độ hở lưới tối đa;
 nó cũng truyền đạt quỹ đạo chính xác để bóng tiếp đất ổn định trong ô giao bóng.
@@ -3452,14 +3470,14 @@ Chìa khóa này, được trình bày từ góc nhìn của tay vợt, được
 nó ở ngay phía trên vai;
 và mặt vợt ở phía trước mặt phẳng của thân vợt, sao cho điểm tiếp xúc bóng (Contact Point) hơi hướng ra ngoài sân.
 Thiết lập vị trí vật lý và tạo ra quán tưởng tâm trí (Mental Imagery).</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Nắm bắt cú giao bóng cơ bản: Vị trí kết thúc từ góc nhìn của tay vợt A. với các cú đánh chạm đất, việc thực hiện theo cú giao bóng là chìa khóa chính để duy trì gia tốc đầu vợt trong suốt quá trình thực hiện cú đánh.
+            <div class="bilingual-block stanza"><p class="lang-vi">Nắm bắt cú giao bóng cơ bản: Vị trí kết thúc từ góc nhìn của tay vợt A. với các cú đánh nền, việc thực hiện theo cú giao bóng là chìa khóa chính để duy trì gia tốc đầu vợt trong suốt quá trình thực hiện cú đánh.
 Xu hướng phổ biến là đánh bóng quá mức bằng cách căng cơ cánh tay.
 Điều này dẫn đến thời gian theo dõi ngắn, bị hạn chế và mất tốc độ bắn thay vì tăng.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Nếu bạn thấy rằng quá trình theo dõi của bạn luôn ngắn thì đây sẽ là khóa chính dành cho bạn.
 Khi kết thúc chuyển động, tay cầm vợt của bạn phải chạm xuống chân trước bên trái của bạn, như hình trên.
 Sự hoàn thiện đầy đủ này sẽ cho phép bạn giữ cho cánh tay được thư giãn và cú xoay được trôi chảy.
 Thiết lập vị trí vật lý và tạo ra quán tưởng tâm trí (Mental Imagery).
-Bây giờ hãy kiểm tra chìa khóa trong máy khoan có kiểm soát.
+Bây giờ hãy kiểm tra chìa khóa trong bài tập có kiểm soát.
 Giữ hình ảnh ở tư thế kết thúc (Finish Position) chính xác và đặt tay và vợt của bạn chồng lên bản thiết kế này.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Thực hiện cú giao bóng cơ bản: Chuyển động tung trình tự NÀY HIỂN THỊ VỊ TRÍ CÁNH TAY THẲNG Ở VỊ TRÍ SẴN SÀNG, THẢ CÁNH TAY, THẢ BÓNG VÀ MỞ RỘNG CHUYỂN ĐỘNG.
 Nếu một tay vợt phát triển trí nhớ cơ bắp (Muscle Memory) ổn định cho chuyển động giao bóng, thì cú giao bóng của anh ta sẽ không hiệu quả nếu không có cú tung bóng (Ball Toss) đáng tin cậy.
@@ -3471,7 +3489,7 @@ Thay vì ném hoặc lật bóng, tay vợt chỉ cần mở tay ra, để bóng
 Vì vậy, việc tung bóng (Ball Toss) thực chất là một thao tác thả bóng hơn là tung hoặc ném.
 Thông thường, việc uốn cong ở khuỷu tay hoặc lật cổ tay gây ra sự không nhất quán trong vị trí tung bóng (Ball Toss). Thực hiện động tác tung người với cánh tay thẳng vài lần.
 Khi bạn làm vậy, hãy tạo ra một hình ảnh trong đầu.
-Bây giờ hãy kiểm tra chìa khóa trong máy khoan có kiểm soát.
+Bây giờ hãy kiểm tra chìa khóa trong bài tập có kiểm soát.
 Khi bạn bắt đầu chuyển động, hãy hình dung hình ảnh cánh tay của bạn di chuyển thẳng xuống và duỗi thẳng hoàn toàn.
 201 Phát triển Spin mà bạn tạo trong bài tập có kiểm soát.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">ĐỂ TẠO BÓNG XOAY » VỢT PHẢI ĐÁNH BÓNG TẠI ĐIỂM DƯỚI TRÁI CỦA TRUNG TÂM MẶT BÓNG VÀ DI CHUYỂN TRÊN CHÉO CHÉO TRÊN MẶT BÓNG.
@@ -3899,6 +3917,51 @@ window.addEventListener('scroll', function(){
     if (!overlay.classList.contains('open')) return;
     clearTimeout(rt); rt = setTimeout(refit, 220);
   });
+})();
+</script>
+
+<button class="chapter-fab" id="chapter-fab" aria-label="Mục lục chương"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h12v2H3zM3 11h12v2H3zM3 17h8v2H3zM17 9h4v2h-4zM17 15h4v2h-4z"/></svg><span>Chương</span></button>
+<div class="chapter-backdrop" id="chapter-backdrop"></div>
+<aside class="chapter-drawer" id="chapter-drawer" aria-label="Danh sách chương">
+  <div class="cd-head"><h3>Mục lục</h3><button class="cd-close" id="chapter-close" aria-label="Đóng">&times;</button></div>
+  <nav class="cd-list" id="chapter-list"></nav>
+</aside>
+<script>
+(function(){
+  var fab=document.getElementById('chapter-fab'),
+      drawer=document.getElementById('chapter-drawer'),
+      backdrop=document.getElementById('chapter-backdrop'),
+      list=document.getElementById('chapter-list'),
+      book=document.getElementById('book-content');
+  if(!book) return;
+  var heads=[].slice.call(book.querySelectorAll('h2[id]'));
+  if(!heads.length) heads=[].slice.call(book.querySelectorAll('h3[id]'));
+  if(!heads.length) return;
+  var links=[];
+  heads.forEach(function(h){
+    var a=document.createElement('a');
+    a.href='#'+h.id; a.textContent=h.textContent.trim();
+    a.addEventListener('click',function(){drawer.classList.remove('open');backdrop.classList.remove('open');});
+    list.appendChild(a); links.push(a);
+  });
+  function openD(){drawer.classList.add('open');backdrop.classList.add('open');}
+  function closeD(){drawer.classList.remove('open');backdrop.classList.remove('open');}
+  fab.addEventListener('click',openD);
+  backdrop.addEventListener('click',closeD);
+  document.getElementById('chapter-close').addEventListener('click',closeD);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeD();});
+  var ticking=false;
+  function spy(){
+    var cur=null, y=100;
+    for(var i=0;i<heads.length;i++){
+      if(heads[i].getBoundingClientRect().top<=y) cur=heads[i].id; else break;
+    }
+    if(cur) links.forEach(function(l){l.classList.toggle('active',l.getAttribute('href')==='#'+cur);});
+    ticking=false;
+  }
+  function onscroll(){ if(!ticking){ticking=true;requestAnimationFrame(spy);} }
+  window.addEventListener('scroll',onscroll,{passive:true});
+  spy();
 })();
 </script>
 </body>

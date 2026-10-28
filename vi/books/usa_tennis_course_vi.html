@@ -264,6 +264,23 @@ body.no-en #lang-toggle{display:none}
 .book-wrapper { display: block; }
 .book-content { max-width: 880px; margin: 0 auto; }
 </style>
+<style>
+/* Floating chapter drawer */
+.chapter-fab{position:fixed;right:20px;bottom:20px;z-index:55;display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:none;border-radius:999px;background:var(--gold,#b8860b);color:#fff;font:600 .9rem/1 system-ui,sans-serif;box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer}
+.chapter-fab svg{width:16px;height:16px;fill:currentColor}
+.chapter-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:110;opacity:0;visibility:hidden;transition:opacity .2s}
+.chapter-backdrop.open{opacity:1;visibility:visible}
+.chapter-drawer{position:fixed;top:0;right:0;height:100%;width:330px;max-width:88vw;z-index:120;background:var(--bg-card,#fff);box-shadow:-8px 0 30px rgba(0,0,0,.18);transform:translateX(100%);transition:transform .25s ease;display:flex;flex-direction:column}
+.chapter-drawer.open{transform:translateX(0)}
+.cd-head{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid var(--rule,#e4ded2)}
+.cd-head h3{margin:0;font-size:1rem;font-family:var(--serif,Georgia,serif)}
+.cd-close{background:none;border:none;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--ink-muted,#555)}
+.cd-list{overflow-y:auto;padding:8px 0;flex:1}
+.cd-list a{display:block;padding:9px 18px;color:var(--ink-muted,#555);text-decoration:none;font-size:.92rem;line-height:1.4;border-left:3px solid transparent;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cd-list a:hover{background:rgba(0,0,0,.04)}
+.cd-list a.active{color:var(--ink,#111);font-weight:600;border-left-color:var(--gold,#b8860b);background:rgba(184,134,11,.08)}
+@media(max-width:560px){.chapter-drawer{width:100%;max-width:100%}}
+</style>
 </head>
 <body class="no-en">
 <nav class="tu-breadcrumb" aria-label="Breadcrumb">
@@ -410,7 +427,7 @@ Khu vực đánh bóng của bạn là một mặt phẳng thẳng đứng tính
 Mọi cú vô lê, đánh đầu, giao bóng, trái tay và thuận tay đều phải được đánh trong khu vực này.
 Đánh tất cả các cú đánh thuận tay và trái tay trên cùng một mặt phẳng thẳng đứng Một ảo tưởng tồn tại ở nhiều người chơi quần vợt là họ chơi bóng ở phía trước nhiều hơn bình thường khi giao bóng, vô lê hoặc di chuyển vào để đánh một quả bóng chạm bóng ngắn trong sân của họ.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Điều đó không đúng.
-Khi các cầu thủ di chuyển vào bóng, họ sẽ nhận bóng sớm hơn, nhưng không nhiều hơn ở phía trước mình.
+Khi các tay vợt di chuyển vào bóng, họ sẽ nhận bóng sớm hơn, nhưng không nhiều hơn ở phía trước mình.
 Những người chơi giỏi cố gắng đặt cơ thể của họ theo cùng một mối quan hệ với quả bóng trong mỗi cú đánh trước khi họ đánh.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Động tác bằng chân được đơn giản hóa Khi thực hiện cú đánh, hãy nghĩ nhiều hơn về vị trí bạn muốn có liên quan đến quả bóng hơn là loại động tác bằng chân mà bạn sử dụng để đạt được điều đó.
 LƯU Ý ĐIỀU NÀY: Khi bạn ở vị trí đánh, cơ thể bạn phải luôn có mối quan hệ tương tự với bóng.
@@ -432,7 +449,7 @@ CÚ TAY TRÁI CAO</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">TRÊN BÓNG TRÊN ĐẦU RÚT vào Khu vực đánh bóng TRÊN BÓNG giao bóng được ném vào Khu vực đánh bóng Tay cầm thuận tay 3. Các cú giao bóng và cú đánh trên cao giống nhau.
 Sự khác biệt chính là khi giao bóng, bạn tung bóng lên không trung đến khu vực đánh của mình và ở trên cao bạn đợi bóng rơi vào nó.
 Nếu bạn gặp khó khăn trong việc phát triển các cú đánh, đó không phải là do bạn thiếu tài năng mà là do bạn chưa hiểu rõ cách thực hiện.
-Các bài học về đột quỵ sẽ làm sáng tỏ bất cứ điều gì bạn chưa hiểu.</p></div>
+Các bài học về cú đánh sẽ làm sáng tỏ bất cứ điều gì bạn chưa hiểu.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Grips Simplified Grips không có gì đáng để học cả.
 Dưới đây là ba cách cầm vợt cơ bản đã được các tay vợt đẳng cấp thế giới sử dụng qua nhiều thế hệ.
 Vấn đề chỉ là đặt mặt trong đốt ngón trỏ của bạn lên cán vợt ở các vị trí như trong hình minh họa.
@@ -573,7 +590,7 @@ Chỉ khi đó bạn mới có thể sửa chữa những sai lầm của mình.
                 <div class="bilingual-block stanza"><p class="lang-vi">NGƯỜI CHƠI TỐT NHẤT KHÔNG SUY NGHĨ KHI CHƠI?
 Có một quan niệm sai lầm phổ biến về mức độ “suy nghĩ” của người chơi khi họ chơi.
 Điều này là do hai câu nói thường xuyên xuất hiện trong các bài viết về quần vợt dưới dòng chữ của các chuyên gia và huấn luyện viên nổi tiếng.
-(1) “Những cầu thủ giỏi nhất không suy nghĩ khi họ chơi.”
+(1) “Những tay vợt giỏi nhất không suy nghĩ khi họ chơi.”
 (2) “Khi chơi, tốt nhất đừng suy nghĩ nhiều.”
 Những tuyên bố này là không chính xác.
 Nếu bạn không suy nghĩ, cơ thể bạn không thể hoạt động được.
@@ -650,7 +667,7 @@ Thời gian có hạn này khiến việc không lãng phí bất kỳ nỗ lự
 Hãy xem xét logic của nó: Quần vợt là một trò chơi đưa ra quyết định trong tích tắc, di chuyển và chiến thuật bao gồm tấn công, phòng thủ và tập hợp bóng.
 Tất cả điều này phải được thực hiện dưới áp lực của việc giành điểm.
 Việc luyện tập theo cách bạn phải chơi không có ý nghĩa gì sao?
-Có nhiều cầu thủ trông rất ổn khi tập luyện mà không bị áp lực nhưng lại thất bại khi nghe đến chữ “chơi”.
+Có nhiều tay vợt trông rất ổn khi tập luyện mà không bị áp lực nhưng lại thất bại khi nghe đến chữ “chơi”.
 Bạn càng quen với việc đánh những cú đánh quần vợt dưới áp lực thì khả năng chơi của bạn sẽ được cải thiện nhanh chóng hơn.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Trong quá trình luyện tập, bạn và đối tác của mình nên chơi mọi quả bóng như một điểm, trừ một ngoại lệ.
 ĐÁNH BÓNG LẠI LẠI NHAU.
@@ -684,7 +701,7 @@ Chơi một trò chơi mà bạn không làm gì khác ngoài việc lốp bóng
 Thực hiện mọi cú đánh về phía trái tay của đối thủ, bao gồm cả các cú giao bóng và trả giao bóng.
 .
 Chơi một trò chơi tấn công.
-Tấn công mọi đường bóng ngắn và vào lưới mọi cơ hội.
+Tấn công mọi đường bóng ngắn vào lưới mọi cơ hội.
 .
 Hãy để mỗi cú đánh thuận tay và trái tay giảm xuống điểm thấp nhất có thể trước khi đánh nó.
 Điều này sẽ dạy bạn tính kiên nhẫn, cải thiện thời gian và động tác bằng chân, đồng thời cho bạn thấy bạn có bao nhiêu thời gian để đến được bóng.</p></div>
@@ -703,7 +720,7 @@ Bạn càng suy nghĩ kỹ càng, càng phân tích và sửa chữa những vi�
 Cuộc thí nghiệm!
 Học cách trở nên linh hoạt.
 V. Khía cạnh tâm lý của trò chơi Lo lắng, ngập ngừng, căng thẳng, vội vã, sợ hãi Những cảm giác này đan xen với nhau đến mức khó xác định được nơi nào bắt đầu và nơi nào kết thúc.
-Cái này ăn vào cái kia và kết quả là làm hạn chế khả năng chơi quần vợt của bạn hơn bất kỳ thứ gì khác trong trò chơi.
+Cái này ăn vào cái kia và kết quả làm hạn chế khả năng chơi quần vợt của bạn hơn bất kỳ thứ gì khác trong trò chơi.
 Cảm giác lo lắng về việc bạn đang chơi với ai, sợ thua, lo lắng về cú đánh của mình và lo lắng về cách bạn sẽ trông như thế nào và chơi như thế nào sẽ tạo ra tính do dự, chặt chẽ và vội vàng.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Những kẻ thù này đôi khi không hoạt động, đôi khi còn sống, nhưng chúng luôn sẵn sàng tóm lấy và lay chuyển bạn.
 Chúng đánh cắp sự tập trung của bạn, hạn chế các cử động thể chất của bạn và nói chung là ức chế khả năng chơi của bạn.
@@ -745,7 +762,7 @@ Hãy luôn nhắc nhở bản thân rằng bạn có nhiều tài năng chơi đ
 Đừng chỉ lao về phía quả bóng mà không suy nghĩ.
 Những người chơi vội vã chạy tán loạn trên sân sẽ không đạt được nhiều thành tựu.
 Tất cả người chơi quần vợt đều có xu hướng vội vàng.
-Vấn đề nghiêm trọng nhất ở những cầu thủ kém hơn vì họ chưa biết còn bao nhiêu thời gian để có được một quả bóng.
+Vấn đề nghiêm trọng nhất ở những tay vợt kém hơn vì họ chưa biết còn bao nhiêu thời gian để có được một quả bóng.
 Kết quả là họ để tâm trí mình chạy nhanh hơn tốc độ của quả bóng.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">HÃY CHẬM HƠN QUÁ NHANH Điều này sẽ giúp bạn có cơ hội tốt hơn để căn thời gian bóng chính xác.
 Đánh giá quả bóng và đo đường đến đó.
@@ -780,7 +797,7 @@ Một khi cơ bắp của bạn đang hoạt động, bạn có thể siết ch�
 Để tránh bị căng ở chân, hãy tiếp tục di chuyển giữa các lần đánh!
 Bật nhẹ lên đầu bàn chân hoặc chuyển trọng lượng từ chân này sang chân kia—đặc biệt khi đối thủ đánh.
 Độ căng của cánh tay Nắm chặt cây vợt của bạn và làm cứng cánh tay của bạn.
-Cố gắng thực hiện một cú đột quỵ.</p></div>
+Cố gắng thực hiện một cú đánh.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Bạn sẽ thấy rằng sự bó chặt sẽ hạn chế việc sử dụng cánh tay của bạn.
 Giống như có một bức tường đá căng từ cánh tay của bạn xuống mặt đất.
 Cánh tay của bạn càng cứng thì bức tường càng chắc chắn và việc sử dụng cánh tay của bạn càng bị hạn chế.</p></div>
@@ -798,15 +815,15 @@ Trở thành một tay vợt giỏi cũng không có gì khác biệt.
 Hãy thực tế về sự tiến bộ của bạn.
 Khi bạn có một ngày tồi tệ hoặc suy sụp, đừng nản lòng.
 Nó xảy ra với những vận động viên vĩ đại nhất trên thế giới.
-Hãy nghĩ đến một vận động viên ném bóng ném không trúng đích một ngày nào đó và vài ngày sau đó bị loại khỏi vòng cấm ở hiệp thứ hai.</p></div>
+Hãy nghĩ đến một vận động viên ném bóng ném không trúng đích một ngày nào đó vài ngày sau đó bị loại khỏi vòng cấm ở hiệp thứ hai.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Những thăng trầm như vậy là một phần của mọi môn thể thao.
 Việc bỏ cuộc trong quần vợt xảy ra do người chơi kỳ vọng quá nhiều vào bản thân quá sớm.
 Một ngày tồi tệ hoặc sự suy sụp đôi khi có thể xảy ra khi bạn cảm thấy tuyệt vời và mọi thứ đều ổn với thế giới của bạn, hoặc bạn có thể có một ngày tuyệt vời khi thi đấu vào những lúc bạn cảm thấy tồi tệ và bạn ra sân tự hỏi làm cách nào để tìm thấy sức mạnh để thi đấu.
 Bất cứ điều gì diễn ra trong cơ thể chúng ta khiến điều này xảy ra đều là một điều bí ẩn.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Đôi khi nó cũng có thể thay đổi nhanh chóng.
-Ví dụ: bạn có thể chơi khủng khiếp vào đầu ngày và vài giờ sau lại chơi giật gân.
+Ví dụ: bạn có thể chơi khủng khiếp vào đầu ngày vài giờ sau lại chơi giật gân.
 Cách tốt nhất để giải quyết những khoảng thời gian này là chấp nhận tất cả chúng như một phần của trò chơi và vượt qua chúng.
-Bạn sẽ trở thành một cầu thủ giỏi hơn mỗi khi bạn làm điều đó.</p></div>
+Bạn sẽ trở thành một tay vợt giỏi hơn mỗi khi bạn làm điều đó.</p></div>
 
             
         
@@ -825,15 +842,15 @@ Bạn sẽ trở thành một cầu thủ giỏi hơn mỗi khi bạn làm đi�
                 </figure>
                 <div class="bilingual-block stanza"><p class="lang-vi">Không ai đủ giỏi để chơi trên sân theo cách nó được bố trí Để giữ cho các cú đánh quần vợt của bạn trên sân một cách nhất quán, bạn phải cho phép một mức sai số an toàn từ các đường kẻ.
 Không có cách nào khác để chơi quần vợt giỏi.
-Điều này đúng với bạn và đúng với những cầu thủ vĩ đại nhất thế giới.
+Điều này đúng với bạn và đúng với những tay vợt vĩ đại nhất thế giới.
 Tỷ lệ mắc lỗi Cho dù bạn bắn năm mươi, một trăm hay năm trăm phát về phía “X”, hầu hết sẽ rơi xung quanh nó theo mô hình vòng tròn.
 Mẫu này là “tỷ lệ mắc lỗi” của bạn.
 e LJ e ° Md e es * e ee ee ° e e Tỷ lệ mắc lỗi Tỷ lệ mắc lỗi của người chơi kém hơn của người chơi giỏi hơn Đánh trúng vạch và thua Khi các cú đánh nhằm vào đường biên hoặc đường biên, khoảng một nửa sẽ rơi ra ngoài vì một nửa tỷ lệ mắc lỗi là ở bên ngoài sân.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Khi các cú đánh hướng vào góc sân, khoảng 3/4 số cú đánh sẽ trúng đích, vì 3/4 số trường hợp phạm lỗi nằm ngoài sân.
-Điều này đúng cho dù bạn đánh chúng hay cầu thủ vĩ đại nhất thế giới đánh chúng.</p></div>
+Điều này đúng cho dù bạn đánh chúng hay tay vợt vĩ đại nhất thế giới đánh chúng.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Tỷ lệ mắc lỗi Tỷ lệ mắc lỗi của người chơi kém hơn của người chơi giỏi hơn Tỷ lệ mắc lỗi của người chơi kém hơn của người chơi giỏi hơn Mẹo chơi Bạn buộc phải đánh các cú đánh trực tiếp vào các đường của sân vì chúng luôn nằm trong tầm nhìn của bạn khi bạn chơi.
 Để chống lại nó, hãy buộc bản thân hình dung các đường đủ xa bên trong ranh giới của sân để phần lớn khả năng mắc lỗi của bạn nằm an toàn bên trong sân.</p></div>
-                <div class="bilingual-block stanza"><p class="lang-vi">Các cầu thủ giỏi nhắm đủ xa vào bên trong đường biên để phần lớn lỗi của họ nằm trong sân.
+                <div class="bilingual-block stanza"><p class="lang-vi">Các tay vợt giỏi nhắm đủ xa vào bên trong đường biên để phần lớn lỗi của họ nằm trong sân.
 Bạn cũng nên làm như vậy.
 Tỷ lệ mắc lỗi Tỷ lệ sai sót của người chơi giỏi hơn và tỷ lệ sai sót của người chơi kém hơn Hãy hình dung một sân tennis mà bạn có thể chơi an toàn. (Xem hình minh họa.) Vẽ các đường biên tưởng tượng dọc theo tâm của các sân giao bóng, ngăn chúng lại.
 cách vạch cuối sân (baseline) 6 ft và kết nối chúng ở đó với vạch cuối sân (baseline) tưởng tượng.</p></div>
@@ -847,7 +864,7 @@ Hai nguyên tắc cơ bản chi phối mức độ sai sót cho phép là: (1) B
                 <div class="bilingual-block stanza"><p class="lang-vi">Quá an toàn còn hơn là quá may rủi.
 Giống như bạn phải để lại một giới hạn an toàn cho lỗi từ đường dây, bạn cũng phải cho phép một giới hạn an toàn cho lỗi trên mạng.
 Khi đánh từ vạch cuối sân (baseline) này đến vạch cuối sân (baseline) khác, hãy nhắm mục tiêu qua lưới từ 3 đến 8 ft (hoặc hơn).
-Những cầu thủ hàng đầu cũng làm như vậy.
+Những tay vợt hàng đầu cũng làm như vậy.
 Hãy lưu ý điều đó vào lần tới khi bạn xem họ thi đấu.
 Biên độ an toàn cho lỗi qua mạng Điểm mục tiêu thấp hơn sẽ gây ra nhiều lỗi mạng hơn.
 Bất kỳ lỗi nào cũng tốt hơn lỗi mạng.
@@ -939,7 +956,7 @@ Buộc bản thân phải giữ mục tiêu mỗi khi bạn đánh bóng.
 Hãy để mắt đến quả bóng và tâm trí của bạn hướng vào mục tiêu.
 Hình dung vị trí trong sân tennis mà bạn muốn đánh.
 Khi bạn đánh, hãy nghĩ về nó và thầm nhủ: “Tôi muốn đến ĐÓ.”
-Nhiều cầu thủ nhắm bóng một cách bừa bãi.
+Nhiều tay vợt nhắm bóng một cách bừa bãi.
 Họ đổ lỗi cho các lỗi của mình do các cú đánh, động tác bằng chân và các phần khác của trận đấu trong khi nguyên nhân thường là do không nhắm bóng đúng cách.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Do đó, khi bạn bắn trượt, hãy tự hỏi bản thân xem liệu bạn có giữ được mục tiêu trong suốt cú đánh hay không trước khi tìm kiếm các nguyên nhân khác.
 Tìm phạm vi của sân là phần khó học nhất và mất nhiều thời gian nhất của trò chơi.
@@ -1003,8 +1020,8 @@ Bóng đánh thấp hơn lưới Mẹo chơi Đối với những cú vô lê ca
 Với những cú vô lê cao và bóng có độ nảy cao, hãy đưa vợt lên cao hơn bóng một foot hoặc hơn và đánh vào phần trên của bóng.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Chuyển động đi xuống tự nhiên của cánh tay bạn sẽ giữ nó ở trên sân.
 Xử lý lỗi lầm của bạn Hãy nhớ điều này về lỗi lầm của bạn và nó sẽ giúp ích cho bạn về mặt tâm lý khi bạn cảm thấy chán nản.
-Ngày nay, những cầu thủ giỏi nhất thế giới đều mắc những lỗi giống như ngày đầu tiên họ bắt đầu thi đấu – chỉ là không thường xuyên như vậy.
-Các cầu thủ bóng chày sút bóng, các cầu thủ bóng đá lóng ngóng đánh bóng, các cầu thủ bóng rổ ném trượt rổ, và các vận động viên quần vợt đánh bóng vào lưới.</p></div>
+Ngày nay, những tay vợt giỏi nhất thế giới đều mắc những lỗi giống như ngày đầu tiên họ bắt đầu thi đấu – chỉ là không thường xuyên như vậy.
+Các cầu thủ bóng chày sút bóng, các tay vợt bóng đá lóng ngóng đánh bóng, các tay vợt bóng rổ ném trượt rổ, và các vận động viên quần vợt đánh bóng vào lưới.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Khi mắc lỗi, hãy phân tích nguyên nhân.
 Chỉ nghĩ đến những gì bạn phải làm để sửa nó khi thực hiện cú đánh tiếp theo.
 Điều này sẽ thiết lập lại chương trình chính xác trong tâm trí bạn.
@@ -1218,7 +1235,7 @@ Khi bạn phạm sai lầm khi đang sải bước dài, bạn thường không 
 Di chuyển theo đường chéo để cắt các cú đánh ở một góc so với sân.
 Nếu bạn chạy sang một bên, khoảng cách đến bóng sẽ xa hơn.
 Cú đánh sẽ kéo bạn ngày càng xa hơn khi bóng di chuyển và rất có thể bạn sẽ không bao giờ đạt được nó.
-Hãy nhớ điều này khi thực hiện tất cả các cú đánh theo góc: Cho dù đó là cú chạm đất hay cú vô lê, hãy cắt bỏ góc!
+Hãy nhớ điều này khi thực hiện tất cả các cú đánh theo góc: Cho dù đó là cú đánh nền hay cú vô lê, hãy cắt bỏ góc!
 Góc đánh càng sắc nét thì chuyển động của bạn để chặn nó càng thẳng.
 a Và Y Cắt đứt khoảng cách dài hơn của bạn.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">attto the Ball oy I ~ a Cắt góc của quả cú vô-lê y) LY AAS Nw ae Off góc LONGER Khoảng cách tới bóng Cắt góc trên một quả bóng ngắn</p></div>
@@ -1283,7 +1300,7 @@ Không có gì giống như có kiến thức.
 Bạn nên chơi loại trò chơi nào?
 PHONG CÁCH CHƠI 1. Bạn có thể chơi từ đường cuối sân.
 2.</p></div>
-                <div class="bilingual-block stanza"><p class="lang-vi">Bạn có thể chơi từ đường cuối sân và vào lưới.
+                <div class="bilingual-block stanza"><p class="lang-vi">Bạn có thể chơi từ đường cuối sân vào lưới.
 3. Bạn có thể chơi trò chơi giao bóng và cú vô-lê hoặc kết hợp 2 và 3.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">wi.
 CÁCH CHỌN PHONG CÁCH CHƠI Hãy nói về tính cách của bạn và nó ảnh hưởng như thế nào đến loại trò chơi bạn nên chơi.
@@ -1300,7 +1317,7 @@ Xu hướng tự nhiên của bạn là hoàn thành mọi việc một cách nh
                 <div class="bilingual-block stanza"><p class="lang-vi">Sẽ hợp lý hơn nếu bạn làm những gì tự nhiên và học cách chơi tích cực.
 Học cách vào lưới ở mọi cơ hội cũng như cách giao bóng và vô lê.
 Đặt sự nhấn mạnh đặc biệt vào việc phát triển một cú giao bóng lớn, một cú vô lê mạnh, một cú đánh qua đầu lớn và một cú trả giao bóng mạnh.
-Để trở thành một cầu thủ đánh lưới giỏi sẽ mất nhiều thời gian hơn so với một cầu thủ ghi bàn giỏi vì bạn phải làm nhiều việc hơn với quả bóng.
+Để trở thành một tay vợt đánh lưới giỏi sẽ mất nhiều thời gian hơn so với một tay vợt ghi bàn giỏi vì bạn phải làm nhiều việc hơn với quả bóng.
 Có nhiều thứ để học và khó học hơn.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Chơi một trò chơi tấn công khiến việc căn thời gian trở nên khó khăn hơn.
 Việc tìm kiếm phạm vi của sân từ tất cả các vị trí khác nhau mà bạn phải thực hiện cú đánh mất rất nhiều thời gian và kinh nghiệm.
@@ -1373,7 +1390,7 @@ Bằng cách chơi theo cách này, bạn đang nói với đối thủ rằng: 
 Ném bóng trở lại Cố gắng thực hiện những cú đánh không có trong kho vũ khí của bạn là cách chắc chắn để thua.
 Đừng để mất điểm bằng cách cố gắng thực hiện những cú đánh có nhiều rủi ro.
 Đừng đánh bóng khi nó đang bay lên khỏi mặt đất trừ khi bạn đang ở vị trí đánh tốt và có lý do chính đáng để làm điều đó.</p></div>
-                <div class="bilingual-block stanza"><p class="lang-vi">Ngay cả những cầu thủ giỏi nhất thế giới cũng gặp khó khăn khi đánh bóng khi nó đang bay lên vì có quá ít thời gian để đánh giá nó khi nó cất cánh.
+                <div class="bilingual-block stanza"><p class="lang-vi">Ngay cả những tay vợt giỏi nhất thế giới cũng gặp khó khăn khi đánh bóng khi nó đang bay lên vì có quá ít thời gian để đánh giá nó khi nó cất cánh.
 Những cú đánh rủi ro lớn thường không mang lại kết quả.
 Làm cho đối thủ của bạn đánh bóng để kiếm điểm.
 TRÁNH NHỮNG ĐIỂM YẾU CỦA BẠN Nếu bạn thiếu sự nhanh nhẹn, hãy đánh những cú đánh sâu vào giữa vạch cuối sân (baseline) của đối thủ.
@@ -1400,7 +1417,7 @@ Khi đánh từ đường cuối sân, hãy nhắm cách lưới từ 3 đến 8
                 <div class="bilingual-block stanza"><p class="lang-vi">Đánh vào dưới mọi quả bóng chạm sâu vào sân của bạn, bất kể nó nảy cao hay thấp.
 Đừng cố gắng chơi vượt quá khả năng của bạn.
 Đó là một cách chắc chắn để thua.
-Đánh ở mức tối đa Cố gắng giành chiến thắng bằng cách luôn đánh bóng sẽ vô nghĩa như việc các cầu thủ bóng chày cố gắng thực hiện các đường chạy về nhà trên mọi sân hoặc các cầu thủ bóng rổ cố gắng ném rổ bất cứ khi nào họ có bóng, bất kể họ ở đâu trên sân, hoặc các tiền vệ luôn cố gắng thực hiện các đường chuyền dài 60 hoặc 70 yard để chạm bóng.</p></div>
+Đánh ở mức tối đa Cố gắng giành chiến thắng bằng cách luôn đánh bóng sẽ vô nghĩa như việc các cầu thủ bóng chày cố gắng thực hiện các đường chạy về nhà trên mọi sân hoặc các tay vợt bóng rổ cố gắng ném rổ bất cứ khi nào họ có bóng, bất kể họ ở đâu trên sân, hoặc các tiền vệ luôn cố gắng thực hiện các đường chuyền dài 60 hoặc 70 yard để chạm bóng.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Không có cách nào để giành chiến thắng theo cách này.
 Có đủ áp lực khi chơi mà không cần nỗ lực nhiều hơn bằng cách luôn cố gắng đánh mạnh.
 Bạn đang ở thời điểm khó khăn bất cứ khi nào bạn đạt mức tối đa.
@@ -1420,8 +1437,8 @@ Mỗi bước hoặc chuyển động mà bạn buộc đối thủ thực hiệ
 Không ai thích những quả bóng cao, sâu ở phía trái tay của mình.
 ¢ Đánh những cú đánh khiến đối thủ phải tập trung.
 Những cú đánh làm cản trở chuyển động của người chơi rất khó xử lý.
-Các đối thủ lớn đặc biệt không thích họ vì họ rất khó thoát ra khỏi đường bóng và vào vị trí để đánh.
-* Những cú đánh tầm thấp cũng gây khó khăn cho những cầu thủ to lớn vì họ khó có thể cúi xuống ở vị trí thấp và giữ nguyên tư thế đó khi thực hiện cú đánh.</p></div>
+Các đối thủ lớn đặc biệt không thích họ vì họ rất khó thoát ra khỏi đường bóng vào vị trí để đánh.
+* Những cú đánh tầm thấp cũng gây khó khăn cho những tay vợt to lớn vì họ khó có thể cúi xuống ở vị trí thấp và giữ nguyên tư thế đó khi thực hiện cú đánh.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">« Nếu đối thủ của bạn thiếu sức chịu đựng, hãy đánh những cú đánh buộc người chơi phải chạy nhiều nhất.
 Ném bóng chéo sân, ném bóng và đánh chip là những cú đánh nên chơi.
 « Nếu đối thủ của bạn không thể đánh đầu, hãy lốp bóng thường xuyên.
@@ -1478,7 +1495,7 @@ Về mặt chiến lược, có hàng trăm cú đánh và góc chéo sân có t
 Những cú đánh chéo sân</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Những cú đánh cận biên chỉ là những cú đánh thẳng, ngắn hoặc sâu.
 Ở phía dưới cũng có ít yếu tố rủi ro hơn khi thực hiện các cú đánh ngang sân vì sân dài hơn theo đường chéo và cú đánh đi qua phần dưới của lưới.
-Việc khiến đối thủ của bạn chạy dọc sân sẽ khiến họ mệt mỏi hơn và những cầu thủ mệt mỏi sẽ mắc nhiều lỗi hơn.
+Việc khiến đối thủ của bạn chạy dọc sân sẽ khiến họ mệt mỏi hơn và những tay vợt mệt mỏi sẽ mắc nhiều lỗi hơn.
 Hãy cẩn thận với sai lầm này Vô số lỗi được mắc phải bởi những người chơi trung bình, những người cố gắng thực hiện các cú đánh dọc biên từ một vị trí đánh mở.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Tỷ lệ mắc lỗi lớn Nếu vị trí đánh của bạn trống, hãy đánh bóng chéo sân.
 Tỷ lệ lỗi nhỏ hơn Nếu bạn nhấn xuống dòng, tỷ lệ lỗi sẽ lớn hơn / \ lớn hơn.
@@ -1502,7 +1519,7 @@ aT Chuẩn bị vợt cao hơn bóng Tiếp tục di chuyển qua quả bóng kh
 Khi bạn không giữ được điểm ngắm mạnh, chuyển động hướng xuống tự nhiên của cánh tay bạn sẽ khiến vợt đi xuống quá mạnh và đưa bóng vào lưới.
 BÓNG NẢY CAO GẦN ĐƯỜNG CHÂN Đừng đánh những cú đánh này giống như cách bạn đánh những quả bóng ngắn, có độ nảy cao.
 Hầu hết các cú đánh của bạn sẽ đi vào lưới hoặc sẽ ngắn nếu bạn làm vậy.</p></div>
-                <div class="bilingual-block stanza"><p class="lang-vi">Sử dụng các cú chạm đất thông thường của bạn, đánh dưới bóng và nhắm cao qua lưới để có được sự xuyên thủng trên sân.
+                <div class="bilingual-block stanza"><p class="lang-vi">Sử dụng các cú đánh nền thông thường của bạn, đánh dưới bóng và nhắm cao qua lưới để có được sự xuyên thủng trên sân.
 i Đánh dưới bóng CÁC SÚT RỘNG Bất cứ khi nào một cú đánh rộng buộc bạn phải chạy mạnh ra khỏi sân, không có cách nào để ngăn chặn động lực của bạn, đánh và quay lại vị trí để thực hiện cú đánh tiếp theo.
 Vì vậy, đây là cú đánh cuối cùng của bạn để ghi điểm, dù thắng hay thua.
 Điều duy nhất còn lại phải làm là ghi điểm bằng cách đưa bóng thật mạnh xuống vạch khi bạn chạy ra khỏi sân.</p></div>
@@ -1529,16 +1546,16 @@ Vì vậy, để giữ bóng trong sân, bạn phải nhắm mục tiêu thấp 
                 <div class="bilingual-block stanza"><p class="lang-vi">ty Đánh thấp qua lưới Đánh thấp qua lưới 2. Đánh thấp hơn sẽ tăng cơ hội ghi điểm vì bóng đến hoặc vượt qua đối thủ của bạn sớm hơn.
 Điều này khiến đối thủ của bạn có ít thời gian hơn để đọc, phản ứng và tiếp cận bóng.
 LƯU Ý Mặc dù việc đánh thấp hơn khiến đối thủ của bạn có ít thời gian hơn để đánh, nhưng nó cũng khiến bạn có ít thời gian hơn để vào vị trí để trả bóng.
-Các cú chuyền bóng Thực hiện cú sút chuyền bóng nếu đối phương dừng lại không gần lưới hơn giữa sân giao bóng.</p></div>
+Các cú vô-lê Thực hiện cú sút đánh vô-lê nếu đối phương dừng lại không gần lưới hơn giữa sân giao bóng.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Nhắm bóng thấp qua đối thủ.
 Không cần thiết phải làm nhiều hơn nữa.
 Đừng mạo hiểm mắc lỗi khi cố gắng tìm vạch cuối sân (baseline).
-Cú sút chuyền ngang từ vạch cuối sân (baseline) Nếu đối thủ ở gần lưới nhưng đánh bóng ngắn, bạn có thể di chuyển vào và thực hiện một cú chuyền bóng sang hai bên.
+Cú sút chuyền ngang từ vạch cuối sân (baseline) Nếu đối thủ ở gần lưới nhưng đánh bóng ngắn, bạn có thể di chuyển vào và thực hiện một cú vô-lê sang hai bên.
 Đừng vội vàng.
 Bạn nên vượt qua hầu hết thời gian.
 Cú sút chéo sân từ bên trong sân Nếu đối thủ của bạn đã đánh từ gần đường biên giao bóng của anh ta dọc theo đường biên đến góc cuối sân của bạn, sau đó quay người di chuyển về phía giữa lưới, đưa bóng lùi về phía sau anh ta ở mức thấp và mạnh theo đường biên.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">1 nghệ thuật Cú sút cận thành Bắn phía sau đối thủ</p></div>
-                <div class="bilingual-block stanza"><p class="lang-vi">Trong một pha đánh bóng cơ bản, khi đối thủ của bạn ở ngoài vị trí ở một bên sân, hãy thực hiện cú đánh chuyền bóng bằng cách đánh mạnh sang phía đối diện.
+                <div class="bilingual-block stanza"><p class="lang-vi">Trong một pha đánh bóng cơ bản, khi đối thủ của bạn ở ngoài vị trí ở một bên sân, hãy thực hiện cú đánh vô-lê bằng cách đánh mạnh sang phía đối diện.
 off Drive Passing Shot Hard Drop Shot Di chuyển vào bóng với vợt của bạn được chuẩn bị cao hơn bóng.
 Nhắm bóng, đánh nó với một chuyển động cắt tinh tế và di chuyển qua nó khi bạn đánh.
 Hãy nghĩ đến việc đánh bóng với tốc độ hai dặm một giờ tới điểm đích của bạn.
@@ -1548,7 +1565,7 @@ di— — fons a PS) > YoX SLICING Drop Shot Mẹo Mẹo có xu hướng lùi l�
 Di chuyển qua quả bóng một cách có thẩm quyền.
 Khi nào nên đánh ngắn Nếu bạn nhận được một quả bóng ngắn và đối thủ của bạn ở ngoài vị trí phía sau đường cuối sân, một cú chip hoặc một cú đánh rơi là một cách chơi hay.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Nếu đối thủ của bạn thực hiện một cú thả bóng và bóng rơi 'rất gần lưới, hãy thả cú đánh hoặc chip lại.
-Nếu bóng rơi sâu hơn vào phần sân giao bóng, hãy thực hiện cú đánh tiếp cận từ đường biên ngang hoặc đánh trúng người chiến thắng ở đường biên ngang.
+Nếu bóng rơi sâu hơn vào phần sân giao bóng, hãy thực hiện cú đánh tiếp cận từ đường biên ngang hoặc đánh trúng cú ghi điểm trực tiếp ở đường biên ngang.
 SSS SS SSS Cú đánh tiếp cận đường thẳng Bạn càng ở gần lưới khi bạn chip hoặc thả cú đánh thì càng tốt.
 Từ gần lưới, cú đánh của bạn không phải đi xa, do đó đối thủ của bạn có ít thời gian hơn để nhận ra và phản ứng.
 Sử dụng cú đánh rơi khi bạn cảm thấy đối thủ không mong đợi điều đó.</p></div>
@@ -1557,7 +1574,7 @@ Bạn cũng có thể đánh ngắn nếu đối thủ của bạn bị buộc p
 Sau đó đánh ngắn như một phần của vở kịch.
 Ví dụ _ Một cú đánh trái tay cao, sâu khiến đối thủ của bạn phải lùi lại và mất thăng bằng có nghĩa là cú trả bóng có thể sẽ yếu và ngắn.
 Di chuyển vào và đánh ngắn về phía đối diện, gần lưới.
-Nếu đối thủ cố gắng lao vào và trả bóng, hãy thực hiện một cú chuyền bóng hoặc lốp bóng sâu.</p></div>
+Nếu đối thủ cố gắng lao vào và trả bóng, hãy thực hiện một cú vô-lê hoặc lốp bóng sâu.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">là đối thủ mất cân bằng |
 3. Đánh cú sút góc ngắn 2. Di chuyển trong lốp bóng Mọi người nên cố gắng trở thành một vận động viên lốp bóng cừ khôi.
 Không có cú đánh nào có thể hữu ích hơn trong việc phòng thủ hoặc tấn công.
@@ -1569,7 +1586,7 @@ Nếu bạn làm vậy, đối thủ của bạn có xu hướng là suy nghĩ c
 ¢ Đánh phẳng để đánh một cú lốp bóng có độ xoáy tối thiểu.
 ¢ Vuốt bóng lên để đánh một cú lốp bóng xoáy lên.
 Hãy chắc chắn để vượt qua quả bóng bằng mọi giá!
-Đừng bao giờ ngừng đột quỵ của bạn!
+Đừng bao giờ ngừng cú đánh của bạn!
 Có quá nhiều cú ném bóng được thực hiện một cách bất cẩn mà không có mục tiêu hoặc phương hướng.
 Lob ở một độ cao xác định tới một mục tiêu xác định trên sân.
 Để nhắm một cú lốp bóng chính xác, hãy lốp bóng sao cho nó đạt đến đỉnh điểm ở giữa bạn và điểm ngắm của bạn.</p></div>
@@ -1581,7 +1598,7 @@ Nếu bạn lốp bóng phòng thủ (đặc biệt nếu bạn chạy rộng), 
                 <div class="bilingual-block stanza"><p class="lang-vi">Tất cả những gì bạn đang làm là cố gắng cho bản thân thời gian để vào vị trí cho cú đánh tiếp theo, và việc đánh trúng tâm sẽ mang lại cho bạn một biên độ an toàn rộng rãi cho cả hai bên.
 Đôi khi, khi bạn lốp bóng và đến trễ quả bóng, việc búng cổ tay và đánh một cú lốp bóng cắt lát có thể giúp bạn thoát khỏi tình trạng ùn tắc và cứu được điểm.
 Phòng thủ High Lob Down Center</p></div>
-                <div class="bilingual-block stanza"><p class="lang-vi">Nếu đối thủ của bạn sắp vào lưới, bạn có thể muốn thử một cú chuyền bóng bằng một cú lốp bóng tấn công.
+                <div class="bilingual-block stanza"><p class="lang-vi">Nếu đối thủ của bạn sắp vào lưới, bạn có thể muốn thử một cú vô-lê bằng một cú lốp bóng tấn công.
 Hãy thực hiện cú lốp bóng này ở quỹ đạo thấp hơn phía bên trái tay của đối phương, nhưng hãy chắc chắn rằng đối thủ của bạn đang tiến về phía trước khi bạn thực hiện nó.
 Nếu không, đối thủ sẽ có thể lùi lại và đánh một cú đánh từ trên cao do quỹ đạo thấp hơn.
 Cú lốp bóng xoáy lên là cú lốp bóng tấn công tốt nhất vì nó vượt qua đầu đối thủ của bạn một cách nhanh chóng, lao xuống mạnh và bỏ chạy sau khi bật lên.</p></div>
@@ -1595,7 +1612,7 @@ Khi ở ngoài trời, hãy chú ý đến vị trí của mặt trời và hư�
 Việc chống chọi với ánh nắng mặt trời luôn khó khăn và sẽ làm xáo trộn sự tập trung của đối thủ.
 CÁCH CHƠI TRONG GIÓ Nếu gió thổi khi bạn chuẩn bị giao bóng, hãy đợi hoặc nảy bóng thêm vài lần, và có thể gió sẽ ngừng hoạt động vào thời điểm bạn cần giao bóng.
 Nếu bạn phải giao bóng trong gió, hãy ném bóng thấp hơn bình thường và gió sẽ có ít thời gian hơn để di chuyển bóng.
-Theo gió, hãy đánh những cú chạm đất mạnh và thấp qua lưới.</p></div>
+Theo gió, hãy đánh những cú đánh nền mạnh và thấp qua lưới.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Ngược chiều gió, họ bay cao qua lưới tạo cơ hội cho gió di chuyển bóng thất thường và gây khó khăn cho việc phán đoán.
 Đừng lốp bóng theo chiều gió vì bóng có thể dễ dàng được thực hiện.
 Loy ngược chiều gió và đối thủ của bạn sẽ gặp khó khăn khi đánh giá nó khi gió thổi.
@@ -1669,10 +1686,10 @@ Nếu bóng rơi vào phần sân giao bóng của bạn gần đường biên, 
 B Cú đánh tiếp cận tuyến dưới</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">nếu Tiếp cận Bắn xuống Tâm Nếu bóng tiếp đất gần chữ “T”, hãy thực hiện tiếp cận sâu đến điểm chính giữa.
 Cú đánh tiếp cận hướng xuống trung tâm Cú đánh tiếp cận sân chéo Khi bạn tiếp cận bất kỳ quả bóng ngắn nào và cơ thể của bạn đang ở tư thế đánh mở, sẽ an toàn hơn nếu thực hiện cú đánh tiếp cận chéo sân.
-Vị trí đánh mở Cách tiếp cận Cú đánh Đánh ngắn Đánh cú tiếp cận ngắn đến đường biên sân giao bóng khi đối thủ của bạn ở ngoài vị trí sâu phía sau đường cuối sân.</p></div>
+Vị trí đánh mở Cách tiếp cận Cú đánh ngắn Đánh cú tiếp cận ngắn đến đường biên sân giao bóng khi đối thủ của bạn ở ngoài vị trí sâu phía sau đường cuối sân.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Chụp góc ngắn</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">ĐÂU ĐỂ DI CHUYỂN SAU KHI BẠN ĐÁNH ĐƯỢC TIẾP CẬN - SÚT Sau khi bạn thực hiện cú đánh tiếp cận, hãy đảm bảo di chuyển vào lưới để tránh sự trả bóng.
-Chiến thuật chuyền bóng Luôn cố gắng đến gần lưới nhất có thể và thực hiện cú vô lê khi bóng sắp tới.
+Chiến thuật đánh vô-lê Luôn cố gắng đến gần lưới nhất có thể và thực hiện cú vô lê khi bóng sắp tới.
 Đây là cú vô lê dễ thực hiện nhất và bạn có tất cả các loại mục tiêu để lựa chọn.
 Khi quả bóng bay tới bạn với tốc độ khủng khiếp, hãy tung cú vô lê lùi sâu.
 Thật quá cơ hội để cố gắng xoay chuyển nó và giữ nó trong sân.</p></div>
@@ -1696,7 +1713,7 @@ o Đánh với sự yêu thương dịu dàng Chăm sóc BÓNG RỘNG NẾU BÓN
                 <div class="bilingual-block stanza"><p class="lang-vi">Đánh tất cả các cú vô lê mà bạn căng ra hoặc vươn xa dọc biên.
 Cây vợt của bạn sẽ giữ bóng lâu hơn và bạn sẽ có cơ hội giữ cú đánh trên sân tốt hơn.
 Nếu bạn cố gắng đánh chéo sân, vợt của bạn có thể dễ dàng kéo bóng ra ngoài và cú đánh sẽ trượt rộng hoặc đi vào lưới.
-chuột Hậu quả của việc chọn sai cú vô lê u = Khi tiếp cận rộng, chuyền bóng dọc theo đường biên Boome, vị trí +0 quả bóng Khi bạn duỗi ra hoặc vươn xa dọc theo đường biên, bạn đang mất thăng bằng.</p></div>
+chuột Hậu quả của việc chọn sai cú vô lê u = Khi tiếp cận rộng, đánh vô-lê dọc theo đường biên Boome, vị trí +0 quả bóng Khi bạn duỗi ra hoặc vươn xa dọc theo đường biên, bạn đang mất thăng bằng.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Thường không có cách nào lùi lại để đánh trả.
 Vì vậy, đây là lần bắn cuối cùng của bạn về điểm đó.
 ĐI CHO NÓ!
@@ -1720,7 +1737,7 @@ Khi đánh một quả bóng nảy từ trên cao, xu hướng là đánh ngắn
 Hãy ghi nhớ vạch cuối sân (baseline) khi bạn đánh.
 Điều này sẽ buộc vợt của bạn phải đánh xuyên qua quả bóng.
 Tốt nhất là nhắm vào cú trái tay của đối thủ.
-Trực quan hóa Vạch cuối sân (baseline) và Đánh Đánh sâu trên đầu từ Vị trí này Nếu nó vẫn đi vào lưới hoặc tiếp đất ngắn, hãy nhắm quả tiếp theo vào hàng rào phía sau của đối thủ.
+Trực quan hóa Vạch cuối sân (baseline) và đánh sâu trên đầu từ Vị trí này Nếu nó vẫn đi vào lưới hoặc tiếp đất ngắn, hãy nhắm quả tiếp theo vào hàng rào phía sau của đối thủ.
 Đừng lo lắng, bóng sẽ hiếm khi đi ra ngoài mà chỉ rơi sâu vào phần sân đối phương.
 Lý do mà bạn không cần lo lắng về việc đánh vào hàng rào phía sau hoặc đánh bóng ra ngoài là vì hầu hết những người chơi trung bình đều thiếu khả năng đánh một cú từ trên cao quá xa mà không khiến bóng bật ra.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Bạn sẽ không va vào hàng rào 5% số lần.
@@ -1732,13 +1749,13 @@ Nếu đối thủ của bạn trả lại bóng, bạn đã làm sai điều g�
 Hoặc là bạn đặt bóng không chính xác hoặc bạn đánh bóng chưa đủ mạnh.
 Đối thủ của bạn sẽ không bao giờ có thể trả lại bóng.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Trò chơi giao bóng và cú vô-lê được đơn giản hóa ¢ Phạm vi phủ sóng ¢ Tung bóng ¢ Giao bóng * Chiến thuật cú vô-lê * Mẹo chiến thuật cú vô-lê</p></div>
-                <div class="bilingual-block stanza"><p class="lang-vi">Độ phủ lưới Nếu muốn trở thành một vận động viên giao bóng và chuyền bóng, bạn phải năng nổ, nhanh nhẹn và nhanh nhẹn.
-Những cú giao bóng, cú vô lê và cú đánh đầu mạnh mẽ là những công cụ thiết yếu của một người chơi giao bóng và chuyền bóng.
+                <div class="bilingual-block stanza"><p class="lang-vi">Độ phủ lưới Nếu muốn trở thành một vận động viên giao bóng và đánh vô-lê, bạn phải năng nổ, nhanh nhẹn và nhanh nhẹn.
+Những cú giao bóng, cú vô lê và cú đánh đầu mạnh mẽ là những công cụ thiết yếu của một người chơi giao bóng và đánh vô-lê.
 Bạn phải trở thành một chiến lược gia quần vợt rất sắc sảo.
 Bạn không thể bao phủ toàn bộ mạng.
 Trong hầu hết các trường hợp, bạn có thể thực hiện một vài bước ở bên phải hoặc bên trái vị trí lưới của mình.
 Do đó, điều quan trọng là phải biết đối thủ của bạn có nhiều khả năng đánh bóng ở đâu nhất và đặt mình vào trung tâm khu vực có thể trả bóng.</p></div>
-                <div class="bilingual-block stanza"><p class="lang-vi">CÁCH CHE KHU VỰC CÓ THỂ TRẢ LẠI Nếu bạn chuyền bóng sang góc cuối bên phải hoặc bên trái, hãy di chuyển đến giữa sân giao bóng và áp sát lưới để che chắn cho cú đánh trả.
+                <div class="bilingual-block stanza"><p class="lang-vi">CÁCH CHE KHU VỰC CÓ THỂ TRẢ LẠI Nếu bạn đánh vô-lê sang góc cuối bên phải hoặc bên trái, hãy di chuyển đến giữa sân giao bóng và áp sát lưới để che chắn cho cú đánh trả.
 Từ vị trí đó, bạn có thể thực hiện cú trả bóng ở đường dưới hoặc đường chéo sân.
 Bạn sẽ phải thực hiện một cú sút góc hoặc cú lốp bóng tuyệt vời.
 Di chuyển đến sân giữa sân—Gần lưới Cắt các cú đánh góc bằng cách di chuyển theo đường chéo về phía lưới.
@@ -1754,7 +1771,7 @@ Chúng là do con người tạo ra và đòi hỏi phải suy nghĩ thận tr�
 Việc gạt nó đi là điều đương nhiên.
 Bạn không cần phải nghĩ đến việc đánh.
 Bạn sẽ đánh khi đến lúc phải đánh.</p></div>
-                <div class="bilingual-block stanza"><p class="lang-vi">Nếu bạn chuyền bóng xuống giữa, hãy di chuyển đến giữa lưới ‘ để che chắn cho cú trả bóng.
+                <div class="bilingual-block stanza"><p class="lang-vi">Nếu bạn đánh vô-lê xuống giữa, hãy di chuyển đến giữa lưới ‘ để che chắn cho cú trả bóng.
 Di chuyển vào giữa lưới Dịch vụ tung bóng Tung bóng ra xa trước mặt bạn sao cho phù hợp với khả năng giao bóng hiệu quả của bạn.
 Bạn có thể ném bóng càng xa sân thì bạn sẽ càng tiến sâu vào sân sau khi giao bóng.
 Đây là một điểm cộng tuyệt vời để bạn tiến gần lưới hơn trong cú vô lê đầu tiên.
@@ -1769,15 +1786,15 @@ Giao bóng đến những nơi khác nhau trong sân giao bóng.
 Hãy thử bất kỳ cú giao bóng nào có trong kho vũ khí của bạn.
 Đừng giao bóng gần mức tối đa của bạn hơn mức cần thiết để mắc lỗi hoặc trả bóng phòng thủ mà bạn có thể thực hiện cú vô lê.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Di chuyển vào phía sau quả giao bóng của bạn và tạo một bệ đỡ khi quả giao bóng của bạn nảy lên trong phần giao bóng của đối phương.
-(Xem trang 95.) Chiến thuật cú vô-lê DỄ DÀNG HƠN Chiến thuật cú vô-lê TUYỆT VỜI [e} IU Khi với rộng, chuyền bóng xuống đường biên Cố gắng thực hiện mọi cú vô lê theo quỹ đạo hướng lên.
+(Xem trang 95.) Chiến thuật cú vô-lê DỄ DÀNG HƠN Chiến thuật cú vô-lê TUYỆT VỜI [e} IU Khi với rộng, đánh vô-lê xuống đường biên Cố gắng thực hiện mọi cú vô lê theo quỹ đạo hướng lên.
 Gặp quả bóng đang bay lên và càng gần lưới càng tốt.
 Góc mà bạn muốn đánh càng sắc nét thì bạn phải chuẩn bị vợt phía trên quả bóng càng cao.
 Khi dang rộng để lấy bóng, hãy nghĩ đến việc đánh vào mặt ngoài của quả bóng và tung cú vô lê dọc theo đường biên.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">(Xem trang 101.) Nếu bạn thực hiện cú vô lê đầu tiên gần chữ “T” và cơ thể của bạn ở tư thế mở, hãy thực hiện cú vô lê chéo sân đến các góc cuối sân.
 oe % LAN 7A Vị trí đánh mở— Cú vô-lê chéo sân</p></div>
-                <div class="bilingual-block stanza"><p class="lang-vi">oss-Court ciDown-the-Line Đừng chuyền bóng xuống vạch từ một vị trí trống.
+                <div class="bilingual-block stanza"><p class="lang-vi">oss-Court ciDown-the-Line Đừng đánh vô-lê xuống vạch từ một vị trí trống.
 Việc đánh bóng từ vị trí này sẽ làm tăng khả năng mắc lỗi của bạn vì vợt của bạn sẽ tiếp xúc với phần bên trong của quả bóng.
-Bạn sẽ chuyền bóng từ trong ra ngoài và bóng sẽ dễ trượt khỏi dây hơn và đưa bóng vào lưới hoặc ra ngoài đường biên.
+Bạn sẽ đánh vô-lê từ trong ra ngoài và bóng sẽ dễ trượt khỏi dây hơn và đưa bóng vào lưới hoặc ra ngoài đường biên.
 (Xem trang 82.) Ngay cả khi bạn thực hiện cú vô lê, nó sẽ không hiệu quả bằng cú vô lê chéo sân của bạn.
 Đó sẽ là một cú vô lê xoay chậm hơn, giúp đối thủ của bạn có nhiều thời gian hơn để tiếp cận nó.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Từ một vị trí thoáng, bạn có thể thực hiện cú vô lê chéo sân một cách tự nhiên và chắc chắn hơn là dọc biên.
@@ -1785,10 +1802,10 @@ Hãy thử nó.
 Đứng ở tư thế cởi mở và đưa tay ra ngang sân.
 Sau đó ấn tay xuống dòng.
 Bạn sẽ cảm nhận được sự khác biệt.
-Mẹo chiến thuật chuyền bóng 1. Đừng thực hiện cú vô lê từ trong ra ngoài trừ khi bạn thực hiện cú vô lê từ một vị trí có nhiều khoảng trống trên phần sân đối phương để sút vào.
+Mẹo chiến thuật đánh vô-lê 1. Đừng thực hiện cú vô lê từ trong ra ngoài trừ khi bạn thực hiện cú vô lê từ một vị trí có nhiều khoảng trống trên phần sân đối phương để sút vào.
 Chơi luôn với suy nghĩ bắt đối thủ phải đánh bóng để ghi điểm.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Đừng tặng điểm miễn phí khi mắc lỗi.
-2. Khi dang rộng để lấy bóng, hãy chuyền bóng dọc theo đường biên và nghĩ đến việc đánh vào bên ngoài quả bóng.
+2. Khi dang rộng để lấy bóng, hãy đánh vô-lê dọc theo đường biên và nghĩ đến việc đánh vào bên ngoài quả bóng.
 Nó sẽ khiến bạn phải duỗi người xa hơn để đón bóng và bạn sẽ giữ bóng tốt hơn.
 Điều này sẽ ngăn cản cú vô lê trượt ra khỏi đường biên.
 3. Cú vô lê góc cao.
@@ -1867,9 +1884,9 @@ Họ nên xếp hàng khoảng 3 feet về bên phải của vạch giữa và g
 Về cơ bản, những lý do này ngược lại với những lý do được đưa ra cho người giao bóng thuận tay phải.
 _————_ fet eacte ® ||
 ope ath a cw scm manoACA Giao bóng cho TÒA ÁN QUẢNG CÁO Giao bóng cho TÒA ÁN DEUCE</p></div>
-                <div class="bilingual-block stanza"><p class="lang-vi">Đơn giản hóa việc trả giao bóng ¢ Đưa quả giao bóng ra khỏi máy chủ ¢ Tự lập trình để trả giao bóng ¢ Sử dụng loại cú đánh nào ¢ Đứng ở đâu để trả giao bóng ¢ Phải làm gì khi người giao bóng thực hiện cú tung</p></div>
+                <div class="bilingual-block stanza"><p class="lang-vi">Đơn giản hóa việc trả giao bóng ¢ Đưa quả giao bóng ra khỏi người giao bóng ¢ Tự lập trình để trả giao bóng ¢ Sử dụng loại cú đánh nào ¢ Đứng ở đâu để trả giao bóng ¢ Phải làm gì khi người giao bóng thực hiện cú tung</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Hãy cho bản thân một cơ hội chơi tennis.
-Đừng tiếp tục loại bỏ lợi nhuận của bạn!
+Đừng tiếp tục loại bỏ lợi thế của bạn!
 Đưa quả giao bóng ra khỏi người giao bóng Chiến thuật tốt nhất khi trả giao bóng là đưa quả giao bóng ra khỏi người giao bóng bằng cách đánh lại bóng một cách an toàn.
 Một khi quả giao bóng đã được trả lại, lợi thế của việc giao bóng đã bị mất và lúc này bạn đang đánh điểm một cách đồng đều.
 Hãy nghĩ xem điều này tác động thế nào đến tâm lý đối thủ của bạn.
@@ -1883,16 +1900,16 @@ Việc hạ gục bằng cách cố gắng đánh người thắng cuộc sẽ k
 Nếu tâm trí của bạn luôn bị áp lực bởi những suy nghĩ về việc đưa ra quan điểm, thì bạn sẽ có quá ít sự tập trung vào việc đưa ra kết quả.
 Trả giao bóng với tốc độ mà bạn cảm thấy tự tin sẽ giữ bóng trong sân.
 Điều này sẽ gây thêm áp lực cho đối thủ của bạn, những người hiện phải chơi quần vợt để giành được điểm.
-Sự tự tin của bạn sẽ tăng lên khi bạn kiếm được nhiều lợi nhuận hơn và lợi nhuận của bạn sẽ ngày càng tốt hơn mà không cần phải nỗ lực thêm để cải thiện chúng.</p></div>
+Sự tự tin của bạn sẽ tăng lên khi bạn kiếm được nhiều lợi thế hơn và lợi thế của bạn sẽ ngày càng tốt hơn mà không cần phải nỗ lực thêm để cải thiện chúng.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Mặc dù bạn phải luôn cố gắng trả giao bóng một cách an toàn, nhưng điều này không có nghĩa là mang tính thăm dò.
 Hãy thật dứt khoát và có uy quyền bất cứ khi nào bạn vung vợt cho dù bạn đánh nhẹ hay mạnh đến đâu.
 Đừng bao giờ kéo (hạn chế) một cú đánh khi bạn đã quyết định vung vợt.
 Đánh xuyên qua bóng là nguyên nhân khiến dây tạo thành một túi giúp giữ bóng trên vợt lâu hơn.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Ví dụ (1) Nếu đối thủ của bạn giao bóng và giữ nguyên ở đường cuối sân, hãy nhắm bóng có biên độ an toàn tốt phía trên lưới tới một điểm sâu trong phần sân đối phương.
 ;
-Nhắm mục tiêu với Biên độ an toàn trên mạng * (2) Nếu máy chủ đang truy cập, đừng để nó thúc giục bạn.
+Nhắm mục tiêu với Biên độ an toàn trên mạng * (2) Nếu người giao bóng đang truy cập, đừng để nó thúc giục bạn.
 Hãy nhắm cú đánh của bạn thấp hơn trên lưới.
-Hãy dồn toàn bộ sự tập trung của bạn vào việc nhắm cú trả bóng vào chân đối thủ hoặc thực hiện một cú chuyền bóng.
+Hãy dồn toàn bộ sự tập trung của bạn vào việc nhắm cú trả bóng vào chân đối thủ hoặc thực hiện một cú vô-lê.
 Đừng quá cơ hội.
 Hãy thực hiện cú trả bóng mà bạn cảm thấy chắc chắn mình có thể thực hiện được.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Máy chủ sắp vào—Mục tiêu thấp (3) Cú đánh tốt nhất khi đối đầu với một người tung lưới, nếu bạn bị cú đánh, là một cú công bóng xoáy lên thấp.
@@ -1907,7 +1924,7 @@ Bạn nên suy nghĩ về điều đó trước khi thực hiện cú giao bóng
 j2 Lên dọc theo đường bên Góc bên ngoài Góc bên trong Xuống trung tâm</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">PHÁT PHÁP TRẢ LẠI ĐÁNH ĐẾN TÒA QUẢNG CÁO Trả bóng số 1 xuống đường biên tới góc.
 Bởi vì quả giao bóng đã kéo bạn ra quá xa khỏi sân nên rất có thể bạn sẽ không đứng đủ xa về phía sau quả bóng để đánh nó sang bên kia sân.
-Ngay cả khi bạn cố gắng đánh nó chéo sân, trừ khi bạn đánh được người chiến thắng, bạn đã để rộng bên thuận tay của mình và đối thủ của bạn có thể đưa bóng đi.
+Ngay cả khi bạn cố gắng đánh nó chéo sân, trừ khi bạn đánh được cú ghi điểm trực tiếp, bạn đã để rộng bên thuận tay của mình và đối thủ của bạn có thể đưa bóng đi.
 Trả giao bóng theo đường biên Trả bóng số 2 và số 3 bằng trái tay sâu vào giữa hoặc chéo sân.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Ưu điểm của việc lấy bóng số 3 bằng trái tay là khi bạn vung bóng, bạn sẽ di chuyển về phía trung tâm, nơi bạn muốn đến cho cú đánh tiếp theo.
 Tuy nhiên, nếu bạn không có khả năng thực hiện điều này vì cú trái tay yếu, thì bằng mọi cách hãy cầm bóng này bằng cú thuận tay của bạn.
@@ -1915,7 +1932,7 @@ Trả giao bóng ở trung tâm hoặc chéo sân Trả bóng số 4 bằng cú 
 Trả lại giao bóng ở trung tâm, xuyên sân hoặc dọc tuyến</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">PHÁT PHÁP TRẢ LẠI ĐÁNH ĐẾN DEUCE COURT Trả bóng số 1 theo đường biên tới góc.
 Bởi vì quả giao bóng đã kéo bạn ra khỏi sân nên rất có thể bạn sẽ không đứng đủ xa về phía sau quả bóng để đánh nó sang bên kia sân.
-Ngay cả khi bạn cố gắng đánh nó chéo sân, trừ khi bạn đánh được người chiến thắng, bạn đã để rộng mặt trái tay của mình và đối thủ của bạn có thể đưa bóng đi.
+Ngay cả khi bạn cố gắng đánh nó chéo sân, trừ khi bạn đánh được cú ghi điểm trực tiếp, bạn đã để rộng mặt trái tay của mình và đối thủ của bạn có thể đưa bóng đi.
 Trả lại cú giao bóng dọc biên Trả bóng số 2 và số 3 bằng cú thuận tay của bạn sâu xuống giữa sân hoặc chéo sân sâu đến đường biên.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Để lấy bóng số 3 bằng tay thuận, bạn có thể phải chạy vòng quanh nó.
 Ưu điểm của việc cầm quả bóng này bằng tay thuận là khi bạn vung bóng, bạn đang di chuyển về phía giữa sân, nơi bạn muốn đến để che chắn cho cú đánh tiếp theo.
@@ -1925,7 +1942,7 @@ Trả giao bóng ở trung tâm hoặc chéo sân Trả bóng số 4 bằng trá
                 <div class="bilingual-block stanza"><p class="lang-vi">Nên sử dụng loại cú đánh nào Hãy cố gắng sử dụng toàn bộ cú đánh của bạn để trả giao bóng.
 Nếu cú giao bóng thực sự là một quả bom hoặc bạn đánh giá nó muộn, hãy rút ngắn thời gian vung vợt ra sau để đón bóng.
 Nếu bạn có cú công bóng và cú cắt bóng ở cả hai bên, hãy đánh tất cả các cú giao bóng ở tốc độ mà bạn có thể xử lý được và cắt tất cả các cú giao bóng rắc rối.
-Nếu bạn không kiếm được lợi nhuận, lob.
+Nếu bạn không kiếm được lợi thế, lob.
 Cho dù bạn sử dụng cú đánh nào, hãy nhớ bước vào bóng và giữ mục tiêu của mình.
 Nếu không, dây vợt có thể không tạo thành một túi đủ lớn để giữ bóng tốt.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">.
@@ -2031,7 +2048,7 @@ Khi đối thủ của bạn đang giao bóng và chỉ cần đi bộ vài bư�
                 <div class="bilingual-block stanza"><p class="lang-vi">Tuy nhiên, nếu đối thủ của bạn phải đi bộ một quãng đường dài đến hai khu vực khác nhau của sân để lấy bóng, thì bạn có nhiều thời gian để lập trình lại bản thân.
 Phần khó nhất của việc lập trình lại bản thân là bạn phải nghĩ đi nghĩ lại về những điều giống nhau như một bản ghi âm bị hỏng.
 Đôi khi, bạn có thể nghe thấy một phát thanh viên truyền hình cho biết một tay vợt đã bị “hạ gục” sau một trận đấu khó khăn kéo dài 5 set vào ngày hôm trước.
-Nỗ lực thể chất không khiến các cầu thủ “hạ gục” người chơi mà chính sự căng thẳng để duy trì sự tập trung trong suốt trận đấu khiến họ kiệt sức.</p></div>
+Nỗ lực thể chất không khiến các tay vợt “hạ gục” người chơi mà chính sự căng thẳng để duy trì sự tập trung trong suốt trận đấu khiến họ kiệt sức.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Đừng nghĩ đến việc thắng trận đấu.
 Hãy tập trung cố gắng giành từng điểm một.
 (Điểm thắng ván, ván thắng set và set thắng trận.) Đừng lo lắng về đối thủ của bạn là ai.
@@ -2075,7 +2092,7 @@ Bạn không muốn rời trận đấu của mình trên khán đài.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Trận đấu đôi so với trận đấu đơn Tính đồng nhất (sameness) trong các trận đấu Chơi đôi thường được coi là một trò chơi hoàn toàn khác với đánh đơn.
 Đây là một cách giải thích không chính xác.
 Chúng ta hãy nhìn vào chiến thuật chơi của cả hai và so sánh chúng.
-Ví dụ 1_ Chơi chiến thuật—Đơn Khi trả giao bóng cho một cầu thủ giao bóng và chuyền bóng, bạn sẽ nhắm bóng thấp qua lưới hoặc lốp bóng.
+Ví dụ 1_ Chơi chiến thuật—Đơn Khi trả giao bóng cho một tay vợt giao bóng và đánh vô-lê, bạn sẽ nhắm bóng thấp qua lưới hoặc lốp bóng.
 Chiến thuật chơi giống nhau—Đôi Bạn sẽ trả giao bóng như thế nào trong cùng một tình huống chơi đánh đôi?</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Bạn sẽ hoàn trả theo cách tương tự.
 Ví dụ 2 Chơi chiến thuật—Đơn Nếu bạn trả giao bóng cho một đấu thủ ở đường cuối sân, bạn sẽ trả bóng ở độ cao tốt, an toàn qua lưới và nhắm sâu đến đường cuối sân.
@@ -2091,10 +2108,10 @@ Những cú đánh mà bạn thực hiện dưới lưới, bạn sẽ thực hi
 SSe— SSS Chiến thuật chơi tương tự— Đánh đôi Bạn sẽ xử lý những cú đánh tương tự này như thế nào nếu bạn chơi đánh đôi?
 Bạn sẽ xử lý chúng giống như cách bạn đã làm trong các trận đấu đơn.
 * Vượt qua phần sân của đối tác để đánh bóng.</p></div>
-                <div class="bilingual-block stanza"><p class="lang-vi">Ví dụ 5 Chiến thuật chơi giống nhau—Đơn và Đôi 1. Khi bạn đánh vào một cầu thủ ở đường cuối sân, bạn thường đánh những cú đánh cao qua lưới với biên độ an toàn lớn và đánh sâu đến đường cuối sân.
+                <div class="bilingual-block stanza"><p class="lang-vi">Ví dụ 5 Chiến thuật chơi giống nhau—Đơn và Đôi 1. Khi bạn đánh vào một tay vợt ở đường cuối sân, bạn thường đánh những cú đánh cao qua lưới với biên độ an toàn lớn và đánh sâu đến đường cuối sân.
 2. Nếu đối thủ của bạn ở ngoài vị trí, thì bạn sẽ đánh mạnh và thấp vào phần sân dành cho người chiến thắng.
 & A Double Singles : == & aes 3. Khi bạn ở vị trí đánh không thoải mái, bạn sẽ ném bóng lại.
-4. Khi đối mặt với những cầu thủ đang vào lưới, bạn sẽ đánh những quả bóng thấp.</p></div>
+4. Khi đối mặt với những tay vợt đang vào lưới, bạn sẽ đánh những quả bóng thấp.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">SR = DoublSingles —— nee SS 5. Khi bạn tiến tới để lấy một quả bóng ngắn và đối thủ của bạn đang ở trên lưới, bạn sẽ tung những cú sút thấp vào đối thủ, lốp bóng hoặc thực hiện một cú sút chuyền.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Đôi Đơn = 6. Nếu bạn ở trên lưới, bạn sẽ thực hiện cú vô lê nghiêng hoặc đánh sâu, tùy thuộc vào khả năng xử lý tốc độ cú sút của bạn.
 ee Đôi 7. Bạn sẽ đánh mạnh vào đầu để mở ra khoảng trống trên sân.
@@ -2113,11 +2130,11 @@ Chỉ có một nơi duy nhất ở sân tennis nơi bạn sẽ chơi.
 Vị trí đó là nơi bạn có thể chơi tốt nhất.
 Trên các sân tennis ở khắp mọi nơi, người ta có thể thấy người chơi đang chơi ở những vị trí mà họ không được trang bị đầy đủ để xử lý.
 Một ví dụ điển hình về điều này là quan sát một số vận động viên quần vợt đang chơi trên lưới hoặc từ các vị trí khác trong ô giao bóng.
-Hầu hết họ không có kỹ năng chuyền bóng hoặc đánh đầu.
+Hầu hết họ không có kỹ năng đánh vô-lê hoặc đánh đầu.
 Ngoài ra, họ không có sự nhanh nhẹn, phản xạ hay kiến thức về cách bảo vệ vị trí lưới của mình.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Họ hiếm khi thực hiện cú sút hoặc có được một quả mà họ có thể chơi.
 Sự tham gia của họ vào trò chơi là tương đối bằng không.
-Phần lớn thời gian, họ đứng và xem các cầu thủ khác đánh bóng.
+Phần lớn thời gian, họ đứng và xem các tay vợt khác đánh bóng.
 Kết quả là đối tác của họ hoặc chơi với cả hai đối thủ của họ hoặc chơi đơn với một trong số họ.
 Khi kết thúc mỗi điểm, họ chuyển sang phía đối diện của sân và lặp lại quá trình này cho đến khi trận đấu kết thúc.
 Nếu bạn là một trong những người chơi này, hãy thay đổi cách chơi của bạn.</p></div>
@@ -2152,39 +2169,39 @@ Nó không được phép xảy ra.
 Luôn bao phủ các khu vực trung tâm của sân.
 Điều này khiến đối thủ của bạn phải đánh qua những phần cao hơn của lưới và những phần nhỏ hơn còn lại dọc theo đường biên để sút.
 Đây là những cú đánh ngẫu hứng có tỷ lệ sai sót lớn.
-ins = SSS é '2 Một cú đánh cơ hội Bắt bóng sớm Nếu bạn chuyền bóng xuống giữa và kéo đối thủ về giữa, hãy chuyền bóng tiếp theo sang đường biên hoặc đảo ngược lối chơi bằng cách đánh trước vào đường biên, sau đó đánh xuống giữa.</p></div>
+ins = SSS é '2 Một cú đánh cơ hội Bắt bóng sớm Nếu bạn đánh vô-lê xuống giữa và kéo đối thủ về giữa, hãy đánh vô-lê tiếp theo sang đường biên hoặc đảo ngược lối chơi bằng cách đánh trước vào đường biên, sau đó đánh xuống giữa.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Nếu bạn đánh vào chân đối phương, đối thủ của bạn phải đánh bóng theo quỹ đạo hướng lên.
-Hãy chuẩn bị để tiến về phía trước và chuyền bóng khi nó sắp bay tới.
+Hãy chuẩn bị để tiến về phía trước và đánh vô-lê khi nó sắp bay tới.
 Đối tác của bạn trên lưới cũng có thể thấy đây là cơ hội để săn trộm.
 Bất cứ khi nào bạn hoặc đối tác của bạn thực hiện một cú đánh cưỡng bức*, hãy di chuyển đến gần lưới.
 *Một cú sút ép đối thủ của bạn.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Khi cả hai đội đều ở trên lưới, hãy thực hiện những cú sút chéo sân rất thấp.
 Tấn công tất cả các cú đánh bạn có thể thực hiện trên lưới.
-(fk Khi bạn đánh từ đường cuối sân vào một đội có một cầu thủ ở lưới và một cầu thủ ở cuối sân, đừng đánh vào cầu thủ trên lưới. Hậu quả của việc đánh vào người chơi trên lưới Khi bạn đánh một cú buộc đối thủ của bạn phải chạy lại để lấy bóng, hãy lao lên lưới như một con ngựa đua. Khi đối thủ của bạn chuẩn bị đánh, hãy tạo bệ, sau đó tung cú vô lê hoặc đánh qua đầu.</p></div>
+(fk Khi bạn đánh từ đường cuối sân vào một đội có một tay vợt ở lưới và một tay vợt ở cuối sân, đừng đánh vào tay vợt trên lưới. Hậu quả của việc đánh vào người chơi trên lưới Khi bạn đánh một cú buộc đối thủ của bạn phải chạy lại để lấy bóng, hãy lao lên lưới như một con ngựa đua. Khi đối thủ của bạn chuẩn bị đánh, hãy tạo bệ, sau đó tung cú vô lê hoặc đánh qua đầu.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Khi bạn nhận được một quả bóng ngắn, hãy di chuyển theo bóng và tiếp tục di chuyển khi bạn đánh và đi vào lưới.
-NMA Cách trả giao bóng Tiếp tục di chuyển khi bạn đánh Đánh giá trả giao bóng, trang 117-125.
-Khi trả giao bóng cho một cầu thủ giao bóng và chuyền bóng, hãy đánh quả trả giao bóng thấp và chéo sân.
+NMA Cách trả giao bóng Tiếp tục di chuyển khi bạn đánh giá trả giao bóng, trang 117-125.
+Khi trả giao bóng cho một tay vợt giao bóng và đánh vô-lê, hãy đánh quả trả giao bóng thấp và chéo sân.
 Trả cú giao bóng xuống vạch khi bạn được kéo ra xa.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Đừng vội trả lại dịch vụ mà hãy đến và nhận càng sớm càng tốt.
 Nếu bạn gặp khó khăn trong việc trả lại dịch vụ tốt, hãy trả lời nó.
 Cách giao bóng Đánh giá Chiến thuật giao bóng, trang 111—115, và Lỗi giao bóng, trang..182, Giao bóng từ vị trí nằm giữa điểm giữa và góc vạch cuối sân (baseline) đôi.
 LAR eTatN Giao bóng tới TÒA QUẢNG CÁO Giao bóng tới DEUCE COURT Yi drealinnti haa tara SN Việc giao bóng tới một trong các góc bên trong của sân giao bóng sẽ hạn chế góc trả giao bóng.</p></div>
-                <div class="bilingual-block stanza"><p class="lang-vi">Điều này giúp bạn dễ dàng hoàn trả giao bóng hơn và giảm cơ hội đánh người chiến thắng của đối thủ.
+                <div class="bilingual-block stanza"><p class="lang-vi">Điều này giúp bạn dễ dàng hoàn trả giao bóng hơn và giảm cơ hội đánh cú ghi điểm trực tiếp của đối thủ.
 ôi</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Một cú giao bóng vào cơ thể thường sẽ gây cản trở đối thủ của bạn và ' ngăn cản đòn trả đòn tấn công.
 Một cú giao bóng vào giữa sân giao bóng bên phải hoặc bên trái sẽ mang lại cú trả giao bóng chéo sân.
 Một quả giao bóng được giao rộng tới một trong hai sân giao bóng thường sẽ mang lại quả trả giao bóng ở đường biên.
 Lời khuyên nhân đôi Máy chủ mạnh hơn trong nhóm của bạn sẽ giao bóng trước.
-Nếu đội của bạn đang thi đấu theo đội hình lưới, người giao bóng sẽ giao bóng, chuyền bóng và vào lưới.
-Nếu đội của bạn đang chơi theo đội hình cơ bản, máy chủ sẽ ở ở vạch cuối sân (baseline).</p></div>
+Nếu đội của bạn đang thi đấu theo đội hình lưới, người giao bóng sẽ giao bóng, đánh vô-lê vào lưới.
+Nếu đội của bạn đang chơi theo đội hình cơ bản, người giao bóng sẽ ở ở vạch cuối sân (baseline).</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Các đội đánh đôi nên di chuyển cùng nhau: tiến, lùi, sang ngang để che sân.
 Thành viên chơi tốt hơn của đội đánh đôi nên bao quát phần sân bên trái hoặc phần sân quảng cáo.
-Sau đó, khi đội đối phương đang giao bóng, máy chủ sẽ phải đối mặt với việc giao bóng cho thành viên mạnh nhất trong đội của bạn ở hầu hết các điểm quan trọng của trò chơi.</p></div>
+Sau đó, khi đội đối phương đang giao bóng, người giao bóng sẽ phải đối mặt với việc giao bóng cho thành viên mạnh nhất trong đội của bạn ở hầu hết các điểm quan trọng của trò chơi.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Kích thước của sân đôi mà mỗi người chơi phải trải qua là 175!
 feet vuông nhỏ hơn sân đánh đơn.
 Điều này làm cho trò chơi đôi diễn ra nhanh hơn so với trò chơi đơn.
 Với ít sân hơn để che chắn, những người chơi đánh đôi tiếp cận bóng nhanh hơn và đánh nó sớm hơn những người chơi trong một trận đấu đơn.
-Khi cả hai đội ở trên lưới và chuyền bóng cho nhau, đòi hỏi phải có phản xạ và kinh nghiệm tốt để phán đoán bóng và phản ứng với nó.</p></div>
+Khi cả hai đội ở trên lưới và đánh vô-lê cho nhau, đòi hỏi phải có phản xạ và kinh nghiệm tốt để phán đoán bóng và phản ứng với nó.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Đừng cố gắng chơi vượt quá khả năng của mình.
 Cố gắng chơi trong một khuôn khổ cho phép bạn sử dụng các kỹ năng của mình một cách thoải mái và hiệu quả.
 Nếu bạn có một cú lốp bóng tốt, hãy sử dụng nó thường xuyên.
@@ -2209,14 +2226,14 @@ Hãy làm bất cứ điều gì bạn làm tốt nhất và bạn sẽ có đư
                 </figure>
                 <div class="bilingual-block stanza"><p class="lang-vi">CÚT THUẬN TAY bị chặn cú đánh teBACKHAND Cú đánh miễn phí Việc tạo ra cú đánh thuận tay gây ra nhiều đau khổ và chiếm nhiều thời gian của người chơi bình thường hơn bất kỳ phần nào khác của trò chơi.
 Một số người chơi hình dung ra rất nhiều khó khăn trong việc tạo ra các cú đánh đến mức gần như phải cần một số phép thuật tà thuật để tạo ra chúng một cách chính xác.
-Những khó khăn này được tạo ra bởi niềm tin sai lầm về đột quỵ.
+Những khó khăn này được tạo ra bởi niềm tin sai lầm về cú đánh.
 Thuận tay so với trái tay Người ta thường tin rằng cú đánh trái tay khó học và khó thực hiện hơn cú đánh thuận tay.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Điều này không đúng.
 Cú thuận tay khó hơn nhiều vì nó đòi hỏi cơ thể bạn phải điều chỉnh nhiều hơn.
 Khi xoay sang bên trong cú đánh thuận tay, cơ thể của bạn ở phía trước cú đánh, chặn cú xoay về phía trước.
 Nếu bạn nặng 165 pound, tức là 165 pound, bạn phải di chuyển ra ngoài để hoàn thành cú đánh thuận tay.
 Điều cần thiết là phải thường xuyên nhận thức được điều này bất cứ khi nào bạn sử dụng cú thuận tay của mình.
-Bạn phải đưa cơ thể ra khỏi đường đột quỵ của mình.</p></div>
+Bạn phải đưa cơ thể ra khỏi đường cú đánh của mình.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Vấn đề này không tồn tại ở cú đánh trái tay của bạn.
 Cơ thể của bạn ở phía sau cú đánh và không bị cản trở.
 Cánh tay của bạn được tự do thực hiện cú đánh.
@@ -2300,7 +2317,7 @@ Giữ một điểm ngắm mạnh để buộc cú đánh của bạn vung ra ng
                 <div class="bilingual-block stanza"><p class="lang-vi">Đơn giản hóa các giải pháp cho các vấn đề về thuận tay và trái tay ¢ Cầm vợt sai ¢ Giữ vợt quá chặt ¢ Sải cánh khi vung vợt sau ¢ Không thực hiện được cú rơi khi bóng thấp ¢ Cú đánh về phía trước đi xuống quá nhanh ¢ Quá nhiều chuyển động và nỗ lực ¢ Vị trí đánh kém ¢ Đánh cánh khi thực hiện cú đánh về phía trước ¢ Gãy cổ tay ¢ Không xoay được ¢ Xoay ngang người
 Thân quá sớm ¢ Không đánh xuyên qua bóng ¢ Không hoàn thành cú đánh</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Vợt được trả về tay khác Các vấn đề sau đây là nguyên nhân phổ biến của các cú đánh thuận tay và trái tay kém.
-Ghi nhớ chúng sẽ giúp bạn xác định và khắc phục nguyên nhân của hầu hết các vấn đề về đột quỵ và cũng ngăn ngừa được nhiều cảm giác thất vọng.
+Ghi nhớ chúng sẽ giúp bạn xác định và khắc phục nguyên nhân của hầu hết các vấn đề về cú đánh và cũng ngăn ngừa được nhiều cảm giác thất vọng.
 VẤN ĐỀ Tay cầm sai GIẢI PHÁP Tay cầm thường xuyên bị trượt.
 Kiểm tra độ bám của bạn và sửa nó giữa các điểm.
 Hãy chú ý đến cách cầm của bạn cho đến khi nó trở nên chắc chắn và tự nhiên.
@@ -2485,7 +2502,7 @@ Khi chân trước của bạn hạ xuống quá sớm, hãy bước về phía 
 Hãy hình dung việc lấy quả bóng khi nó đang lao tới và di chuyển theo đường chéo để cắt góc.
 Góc bắn càng sắc nét thì bạn càng phải di chuyển thẳng để chặn nó.
 Cắt góc có nghĩa là: 1. Khoảng cách đến bóng ngắn hơn.
-2. Cơ hội chuyền bóng sớm hơn.
+2. Cơ hội đánh vô-lê sớm hơn.
 3. Bạn đánh từ gần lưới hơn và có thể thực hiện những cú vô lê an toàn hơn.
 ‘ .
 Nhiều điểm mục tiêu hơn để lựa chọn.
@@ -2607,7 +2624,7 @@ Cố gắng đánh vào phần trên bên trong của quả bóng.
 Hãy thử nó, nó hoạt động!
 Cú giao bóng phẳng là cú giao bóng tích cực nhất và là vũ khí mạnh nhất trong trò chơi.
 Đây cũng là cú giao bóng khó giữ trên sân nhất vì thiếu độ xoáy và quỹ đạo qua lưới thấp.</p></div>
-                <div class="bilingual-block stanza"><p class="lang-vi">Quỹ đạo bóng thấp khiến cầu thủ thấp sử dụng cú giao bóng kém.
+                <div class="bilingual-block stanza"><p class="lang-vi">Quỹ đạo bóng thấp khiến tay vợt thấp sử dụng cú giao bóng kém.
 Cú giao bóng theo lát Để thực hiện một cú giao bóng theo lát, hãy tung quả bóng sang bên phải và gần đầu bạn hơn, đồng thời đánh bóng ra phía trên bên phải của quả bóng.
 Cánh tay của bạn sẽ có xu hướng di chuyển lên trên và ngang qua quả bóng một cách tự nhiên, tạo ra quỹ đạo cao hơn và độ xoáy nhiều hơn.
 Ưu điểm của cú giao bóng cắt là: 1. Cú xoáy mang lại nhiều khả năng kiểm soát hơn.
@@ -2633,7 +2650,7 @@ Hãy nghĩ xem nó cách bên phải và phía trên đầu bạn bao xa.
 Đó là nơi bạn nên ném bóng.
 Tung bóng để chơi ở vạch cuối sân (baseline) Tung bóng sao cho cú giao bóng không kéo bạn quá xa đường cuối sân khi bạn hoàn thành nó.
 Mỗi bước bạn phải thực hiện để trở lại vị trí sẵn sàng phía sau vạch cuối sân (baseline) sẽ khiến việc quay lại kịp thời để sẵn sàng cho cú giao bóng trở nên khó khăn hơn.
-Tung bóng để giao bóng và chơi chuyền bóng Tung bóng xa trước mặt bạn tùy theo khả năng giao bóng của bạn cho phép.</p></div>
+Tung bóng để giao bóng và chơi đánh vô-lê Tung bóng xa trước mặt bạn tùy theo khả năng giao bóng của bạn cho phép.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Bạn có thể ném bóng càng xa về phía trước thì bạn càng có thể tiến gần lưới hơn cho cú vô lê đầu tiên của mình.
 Tung bóng dưới ánh mặt trời Khi bạn quay mặt về phía mặt trời, bạn có thể không nhìn thấy quả bóng nếu ném nó vào vị trí thông thường.
 Hãy thử ném thử vài lần sang phải, trái hoặc gần đầu hơn cho đến khi bạn tìm thấy vị trí mà ánh nắng mặt trời ít gây khó chịu nhất.
@@ -2740,7 +2757,7 @@ Chân Phải đã di chuyển như vậy LƯU Ý Người chơi B đã di chuy�
                 <div class="bilingual-block stanza"><p class="lang-vi">Hãy thử cả hai tư thế!
 3. Tung bóng gần đầu bạn hơn hoặc ra sau một chút.
 Điều này sẽ khiến vợt của bạn chạm vào bóng nhiều hơn và đánh nó ở quỹ đạo cao hơn trên lưới.
-VẤN ĐỀ PHỤC VỤ ĐÁNH ĐÁNH NGOÀI SÂN GIAO DỊCH Vấn đề nằm ở điểm bắt đầu của cú vung về phía trước.
+VẤN ĐỀ PHỤC VỤ đánh NGOÀI SÂN GIAO DỊCH Vấn đề nằm ở điểm bắt đầu của cú vung về phía trước.
 Nếu bạn bắt đầu cú swing bằng cách giơ tay lên và sau đó vung vợt về phía trước, cây vợt sẽ không che được* (vượt qua) quả bóng đủ sớm để giữ nó ở sân giao bóng.
 GIẢI PHÁP Khi bạn quyết định vung vợt, hãy lăn vợt về phía trước ngay lập tức.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Bắt đầu cú vung vợt về phía trước bằng đốt ngón trỏ để lăn vợt qua đầu quả bóng.
@@ -2811,7 +2828,7 @@ Giữ mục tiêu của bạn khi bạn đánh.
 VẤN ĐỀ VỊ TRÍ ĐÁNH GIÁ Kém Việc đánh a kém là do bạn lo lắng khi đánh GIẢI PHÁP Hãy dành thời gian của bạn.
 Tiếp tục đánh giá bóng trong khi bạn di chuyển vào vị trí đánh thoải mái.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Khi bóng rơi vào khu vực đánh của bạn, hãy đo, nhắm và đánh.
-VẤN ĐỀ ĐÁNH ĐÁNH SAI Đánh sai là do tính toán sai thời điểm hoặc không để mắt đến bóng khi đánh.
+VẤN ĐỀ đánh SAI Đánh sai là do tính toán sai thời điểm hoặc không để mắt đến bóng khi đánh.
 GIẢI PHÁP Đánh giá quả bóng và nói “Đợi... NGAY BÂY GIỜ.”
 Khi bạn đánh, hãy tập trung mắt vào quả bóng và tâm trí vào mục tiêu.
 VẤN ĐỀ VỀ ĐẦU TRÊN ĐÁNH VÀO LƯỚI Các cú đánh từ trên cao vào lưới là do làm rơi điểm ngắm của bạn hoặc không thể xoay cơ thể của bạn ra khỏi đường thực hiện cú đánh.
@@ -2863,7 +2880,7 @@ Các nhạc sĩ luyện tập nhiều bài tập và nhịp điệu khác nhau c
                 <div class="bilingual-block stanza"><p class="lang-vi">Quần vợt cũng nên được luyện tập theo cách tương tự.
 Trong khi cố gắng thực hiện cú đánh, hãy chậm rãi và thận trọng nhất có thể.
 Bạn càng chậm thì bạn sẽ học càng nhanh vì bộ não của bạn có nhiều thời gian hơn để hiểu bạn đang cố gắng làm gì.
-Các cầu thủ đánh trượt bóng vì họ quá nhanh và háo hức đánh nó.
+Các tay vợt đánh trượt bóng vì họ quá nhanh và háo hức đánh nó.
 Một khi tâm trí của bạn đã được lập trình, bạn sẽ tạo ra bất cứ điều gì bạn đang cố gắng thực hiện một cách tự động.
 Lúc này, tất cả những gì bạn cần nghĩ đến là nhắm bóng.</p></div>
                 <div class="bilingual-block stanza"><p class="lang-vi">Khi bạn mắc lỗi, hãy nghĩ về phần cú đánh bị đứt và gây ra lỗi.
@@ -2912,7 +2929,7 @@ Máy bóng Máy bóng rất tuyệt vời để luyện tập nếu được s�
 1. Sử dụng những quả bóng tennis tốt.
 2. Không đứng một chỗ để đánh bóng ra khỏi máy.
 Cách tốt nhất để luyện tập là di chuyển tới bóng và đánh.</p></div>
-                <div class="bilingual-block stanza"><p class="lang-vi">3. Đối với các cú chạm đất, hãy đứng ở điểm chính giữa và đặt máy sao cho bóng được đưa đến bất kỳ khu vực nào mà bạn phải di chuyển tới chúng.
+                <div class="bilingual-block stanza"><p class="lang-vi">3. Đối với các cú đánh nền, hãy đứng ở điểm chính giữa và đặt máy sao cho bóng được đưa đến bất kỳ khu vực nào mà bạn phải di chuyển tới chúng.
 4. Mục đích của bạn là để xem bạn có thể vào vị trí, nhắm và thực hiện một cú đánh hoàn hảo đến mức nào.
 5. Chơi bóng như một điểm.
 Nếu bạn không đến được vị trí tốt để thực hiện cú đánh mà bạn đang luyện tập, hãy ném bóng lại.
@@ -2936,7 +2953,7 @@ Thực hành từng cú đánh một cho đến khi bạn có thể trả bóng 
                 <div class="bilingual-block stanza"><p class="lang-vi">Tiếp theo, luân phiên các cú thuận tay và trái tay.
 Tiếp theo, đánh ngày càng rộng hơn, buộc bản thân phải chạy theo bóng.
 Xoay hết cỡ qua quả bóng;
-không bao giờ ngừng đột quỵ.
+không bao giờ ngừng cú đánh.
 Bước vào khi bạn đánh.
 Nên chơi loại trận đấu nào Khi sắp xếp các trận đấu của bạn, đừng cố gắng chỉ chơi những người chơi giỏi hơn.
 Tốt nhất, bạn nên chơi với những người có trình độ thấp hơn mình để có thể luyện tập bất cứ điều gì mình chọn mà vẫn giành chiến thắng vì không có nhiều áp lực.
@@ -3227,6 +3244,51 @@ window.addEventListener('scroll', function(){
     if (!overlay.classList.contains('open')) return;
     clearTimeout(rt); rt = setTimeout(refit, 220);
   });
+})();
+</script>
+
+<button class="chapter-fab" id="chapter-fab" aria-label="Mục lục chương"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h12v2H3zM3 11h12v2H3zM3 17h8v2H3zM17 9h4v2h-4zM17 15h4v2h-4z"/></svg><span>Chương</span></button>
+<div class="chapter-backdrop" id="chapter-backdrop"></div>
+<aside class="chapter-drawer" id="chapter-drawer" aria-label="Danh sách chương">
+  <div class="cd-head"><h3>Mục lục</h3><button class="cd-close" id="chapter-close" aria-label="Đóng">&times;</button></div>
+  <nav class="cd-list" id="chapter-list"></nav>
+</aside>
+<script>
+(function(){
+  var fab=document.getElementById('chapter-fab'),
+      drawer=document.getElementById('chapter-drawer'),
+      backdrop=document.getElementById('chapter-backdrop'),
+      list=document.getElementById('chapter-list'),
+      book=document.getElementById('book-content');
+  if(!book) return;
+  var heads=[].slice.call(book.querySelectorAll('h2[id]'));
+  if(!heads.length) heads=[].slice.call(book.querySelectorAll('h3[id]'));
+  if(!heads.length) return;
+  var links=[];
+  heads.forEach(function(h){
+    var a=document.createElement('a');
+    a.href='#'+h.id; a.textContent=h.textContent.trim();
+    a.addEventListener('click',function(){drawer.classList.remove('open');backdrop.classList.remove('open');});
+    list.appendChild(a); links.push(a);
+  });
+  function openD(){drawer.classList.add('open');backdrop.classList.add('open');}
+  function closeD(){drawer.classList.remove('open');backdrop.classList.remove('open');}
+  fab.addEventListener('click',openD);
+  backdrop.addEventListener('click',closeD);
+  document.getElementById('chapter-close').addEventListener('click',closeD);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeD();});
+  var ticking=false;
+  function spy(){
+    var cur=null, y=100;
+    for(var i=0;i<heads.length;i++){
+      if(heads[i].getBoundingClientRect().top<=y) cur=heads[i].id; else break;
+    }
+    if(cur) links.forEach(function(l){l.classList.toggle('active',l.getAttribute('href')==='#'+cur);});
+    ticking=false;
+  }
+  function onscroll(){ if(!ticking){ticking=true;requestAnimationFrame(spy);} }
+  window.addEventListener('scroll',onscroll,{passive:true});
+  spy();
 })();
 </script>
 </body>

@@ -264,6 +264,24 @@ body.no-en #lang-toggle{display:none}
 .book-wrapper { display: block; }
 .book-content { max-width: 880px; margin: 0 auto; }
 </style>
+
+<style>
+/* Floating chapter drawer (added by add_chapter_drawer.py) */
+.chapter-fab{position:fixed;right:20px;bottom:20px;z-index:55;display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:none;border-radius:999px;background:var(--gold,#b8860b);color:#fff;font:600 .9rem/1 system-ui,sans-serif;box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer}
+.chapter-fab svg{width:16px;height:16px;fill:currentColor}
+.chapter-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:110;opacity:0;visibility:hidden;transition:opacity .2s}
+.chapter-backdrop.open{opacity:1;visibility:visible}
+.chapter-drawer{position:fixed;top:0;right:0;height:100%;width:330px;max-width:88vw;z-index:120;background:var(--bg-card,#fff);box-shadow:-8px 0 30px rgba(0,0,0,.18);transform:translateX(100%);transition:transform .25s ease;display:flex;flex-direction:column}
+.chapter-drawer.open{transform:translateX(0)}
+.cd-head{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid var(--rule,#e4ded2)}
+.cd-head h3{margin:0;font-size:1rem;font-family:var(--serif,Georgia,serif)}
+.cd-close{background:none;border:none;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--ink-muted,#555)}
+.cd-list{overflow-y:auto;padding:8px 0;flex:1}
+.cd-list a{display:block;padding:9px 18px;color:var(--ink-muted,#555);text-decoration:none;font-size:.92rem;line-height:1.4;border-left:3px solid transparent;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cd-list a:hover{background:rgba(0,0,0,.04)}
+.cd-list a.active{color:var(--ink,#111);font-weight:600;border-left-color:var(--gold,#b8860b);background:rgba(184,134,11,.08)}
+@media(max-width:560px){.chapter-drawer{width:100%;max-width:100%}}
+</style>
 </head>
 <body>
 <nav class="tu-breadcrumb" aria-label="Breadcrumb">
@@ -334,6 +352,13 @@ body.no-en #lang-toggle{display:none}
 <div class="en-heading">BLUNDER: Ignoring Your Brain and Body Type</div>
 <div class="bilingual-block stanza"><p class="lang-vi">Mỗi tay vợt đều có xu hướng di truyền để xuất sắc ở một phong cách quần vợt nhất định. Một sai lầm phổ biến là cho rằng bạn được "lắp mạch" giống cha mẹ, huấn luyện viên và/hoặc anh chị em của mình. Trí thông minh ưu tiên là cách chúng ta nhìn nhận thế giới và tại sao chúng ta có thể tiếp cận các công việc theo cách khác nhau.</p><p class="lang-en">Each player has a genetic predisposition to excel at a particular style of tennis. A common mistake is assuming that you are wired like your parents, coach and/or siblings. Preferred intelligence is how we see the world and why we may approach tasks differently.</p></div>
 <div class="bilingual-block stanza"><p class="lang-vi">Tôi nhận thấy rằng những tay vợt có kiểu não bộ, kiểu thể trạng và tính cách tương tự nhau thì có phong cách học ưu tiên tương tự — những trở ngại chung, kỹ năng, mức độ chịu đựng sự bực bội, phong cách chơi và khả năng ra quyết định. Bằng việc hiểu kiểu não bộ của mình, bạn có thể đẩy nhanh quá trình học với các bài tập được thiết kế riêng, đồng thời tiết kiệm hàng nghìn, hàng nghìn giờ, đô-la và những giọt nước mắt uổng phí. Để tìm hiểu sâu hơn về phân loại não bộ, tôi khuyên bạn truy cập trang web của người bạn John Niednagel: www.braintypes.com hoặc tìm cụm brain typing trên Google.</p><p class="lang-en">I’ve found that players with similar brain types, body types, and personality traits, have similar preferred learning styles- common obstacles, skills, frustration tolerance levels, styles of play and decision making abilities. By understanding your brain type you can accelerate learning with customized training drills, while saving thousands and thousands of hours, dollars and wasted tears. To dig deeper into brain typing I suggest you visit my friend John Niednagel’s site: www.braintypes.com or Google brain typing.</p></div>
+<figure class="instructional-figure">
+    <img src="giampaolo_workbook_assets/giampaolo_fig11_parent_coach_communication.jpg" alt="Hình 3.1: Frank Giampaolo · phụ huynh · huấn luyện viên · giao tiếp" loading="lazy" class="responsive-img">
+    <figcaption class="dual-caption">
+        <span class="caption-vi"><strong>Hình 3.1: Frank Giampaolo · phụ huynh · huấn luyện viên · giao tiếp</strong></span>
+        <span class="caption-en"><em>Figure 3.1: Frank Giampaolo parent coach communication</em></span>
+    </figcaption>
+</figure>
 <h3 class="part-title" id="sec002">CÁCH KHẮC PHỤC: Dành vài phút để xác định chính xác kiểu não bộ của bản thân và có lẽ</h3>
 <div class="en-heading">CURE: Take a few minutes to accurately brain type yourself and maybe</div>
 <div class="bilingual-block stanza"><p class="lang-vi">cả của một số thành viên trong gia đình. Hãy đảm bảo rằng đội ngũ phát triển của bạn cùng nhìn về một hướng. Đi sâu vào phong cách học ưu tiên của bạn sẽ phát huy tối đa tiềm năng của bạn với tốc độ nhanh hơn.</p><p class="lang-en">even some of your family members. Be sure your developmental team is on the same page. Digging into your preferred learning style will maximize your potential at a quicker rate.</p></div>
@@ -365,13 +390,55 @@ body.no-en #lang-toggle{display:none}
 <div class="en-heading">BLUNDER: Focusing Only on Strokes</div>
 <div class="bilingual-block stanza"><p class="lang-vi">Biết cách thực hiện các cú đánh và biết cách chiến thắng dưới áp lực là hai chuyện hoàn toàn khác nhau. Nhận xét số 1 tôi nghe hàng ngày là "Tôi có cú đánh hay hơn, tại sao tôi không thắng?"</p><p class="lang-en">Knowing how to hit strokes and knowing how to win under stress are two different animals. The #1 comment I hear daily is “I have better strokes, why don’t I win?”</p></div>
 <div class="bilingual-block stanza"><p class="lang-vi">Giải pháp nằm ở phương pháp giảng dạy theo mô hình trường học. Ở mỗi khối lớp, học sinh được dạy hàng ngày để chuyển sự chú ý từ toán sang khoa học, từ tiếng Anh sang lịch sử, v.v. Sai lầm phổ biến trong phát triển quần vợt là chỉ tập trung vào một chủ đề duy nhất (thực hiện các cú đánh cơ bản) tuần này qua tuần khác, năm này qua năm khác.</p><p class="lang-en">The solution lies in the school methodology of teaching. In every grade, students are taught daily to shift their focus from math to science, from English to history, etc. The common blunder in tennis development is only focusing on a singular subject (fundamental stroke production) week after week, year after year.</p></div>
+<figure class="instructional-figure">
+    <img src="giampaolo_workbook_assets/giampaolo_fig10_adversity_reset_ritual.jpg" alt="Hình 11.1: Frank Giampaolo · nghịch cảnh · thiết lập lại · nghi thức" loading="lazy" class="responsive-img">
+    <figcaption class="dual-caption">
+        <span class="caption-vi"><strong>Hình 11.1: Frank Giampaolo · nghịch cảnh · thiết lập lại · nghi thức</strong></span>
+        <span class="caption-en"><em>Figure 11.1: Frank Giampaolo adversity reset ritual</em></span>
+    </figcaption>
+</figure>
 <div class="bilingual-block stanza"><p class="lang-vi">Phương pháp trường học luôn tạo ra những người trẻ toàn diện.</p><p class="lang-en">The school methodology consistently delivers well-rounded young adults.</p></div>
+<figure class="instructional-figure">
+    <img src="giampaolo_workbook_assets/giampaolo_fig9_emotional_thermometer.jpg" alt="Hình 11.2: Frank Giampaolo · cảm xúc · nhiệt kế" loading="lazy" class="responsive-img">
+    <figcaption class="dual-caption">
+        <span class="caption-vi"><strong>Hình 11.2: Frank Giampaolo · cảm xúc · nhiệt kế</strong></span>
+        <span class="caption-en"><em>Figure 11.2: Frank Giampaolo emotional thermometer</em></span>
+    </figcaption>
+</figure>
 <div class="bilingual-block stanza"><p class="lang-vi">Trong quần vợt, bạn chỉ đơn giản muốn trở thành một tay vợt toàn diện.</p><p class="lang-en">In tennis, you simply want to become a complete player.</p></div>
+<figure class="instructional-figure">
+    <img src="giampaolo_workbook_assets/giampaolo_goal_setting_worksheet.jpg" alt="Hình 11.3: Frank Giampaolo · mục tiêu · thiết lập · bảng bài tập" loading="lazy" class="responsive-img">
+    <figcaption class="dual-caption">
+        <span class="caption-vi"><strong>Hình 11.3: Frank Giampaolo · mục tiêu · thiết lập · bảng bài tập</strong></span>
+        <span class="caption-en"><em>Figure 11.3: Frank Giampaolo goal setting worksheet</em></span>
+    </figcaption>
+</figure>
 <h3 class="part-title" id="sec010">CÁCH KHẮC PHỤC: Đẩy nhanh đường cong học tập của bạn đòi hỏi chất lượng luyện tập thay vì</h3>
 <div class="en-heading">CURE: Accelerating your learning curve requires quality of practice versus</div>
 <div class="bilingual-block stanza"><p class="lang-vi">số lượng. Việc phát triển tất cả các thành phần thiết yếu bắt đầu từ một kế hoạch có tổ chức.</p><p class="lang-en">quantity. Developing all the essential components begins with an organized plan.</p></div>
+<figure class="instructional-figure">
+    <img src="giampaolo_workbook_assets/giampaolo_game_plans_bc_matrix.jpg" alt="Hình 12.1: Frank Giampaolo · trận đấu · kế hoạch · ma trận" loading="lazy" class="responsive-img">
+    <figcaption class="dual-caption">
+        <span class="caption-vi"><strong>Hình 12.1: Frank Giampaolo · trận đấu · kế hoạch · ma trận</strong></span>
+        <span class="caption-en"><em>Figure 12.1: Frank Giampaolo game plans bc matrix</em></span>
+    </figcaption>
+</figure>
 <div class="bilingual-block stanza"><p class="lang-vi">Tôi có muốn một học bổng NCAA hạng 1 hay một cơ hội thực sự được thi đấu chuyên nghiệp không? Nếu vậy, tôi có tập ngoài sân khoảng 5 giờ mỗi tuần với các bài tập bóng y tế, bài tập tốc độ, chạy nước rút và tạ nhẹ cho sức mạnh phần thân trên không? Tôi có dành 4 giờ mỗi tuần để phát triển cả cú đánh chính lẫn cú đánh phụ không?</p><p class="lang-en">Do I want a division 1 NCAA scholarship or a real shot at the pro tours? If so, do I train off-court approximately 5 hours each week with medicine ball drills, speed drills, sprints, and light weights for upper body strength? Am I spending 4 hours a week developing both my primary &amp; secondary strokes?</p></div>
+<figure class="instructional-figure">
+    <img src="giampaolo_workbook_assets/giampaolo_tennis_speeds_worksheet.jpg" alt="Hình 12.2: Frank Giampaolo · tốc độ · bảng bài tập" loading="lazy" class="responsive-img">
+    <figcaption class="dual-caption">
+        <span class="caption-vi"><strong>Hình 12.2: Frank Giampaolo · tốc độ · bảng bài tập</strong></span>
+        <span class="caption-en"><em>Figure 12.2: Frank Giampaolo tennis speeds worksheet</em></span>
+    </figcaption>
+</figure>
 <div class="bilingual-block stanza"><p class="lang-vi">Tôi có dành 2 giờ mỗi tuần cho các bài tập lặp lại theo hoa lưu không? Tôi có chơi 3-4 trận đấu đầy đủ mỗi tuần không? Tôi có dành thời gian phân tích video một trận đấu thật tại giải đấu không? Tôi có xếp 2 giờ mỗi tuần để lặp lại cú giao bóng không? Nói cho cùng, tôi có thực sự có một công thức thành công không? Hãy dùng các thành phần này để hỗ trợ việc tổ chức công thức quần vợt cho thành công mới tìm ra của bạn!</p><p class="lang-en">Do I set aside 2 hours a week for pattern repetition drills? Do I play 3-4 full matches a week? Do I spend time doing video analysis of a real tournament match play? Do I schedule 2 hours a week for serving repetition? In essence, do I truly have a formula for success? Use these components to assist in organizing your new found tennis formula for success!</p></div>
+<figure class="instructional-figure">
+    <img src="giampaolo_workbook_assets/giampaolo_top7_situations_worksheet.jpg" alt="Hình 12.3: Frank Giampaolo · tình huống · bảng bài tập" loading="lazy" class="responsive-img">
+    <figcaption class="dual-caption">
+        <span class="caption-vi"><strong>Hình 12.3: Frank Giampaolo · tình huống · bảng bài tập</strong></span>
+        <span class="caption-en"><em>Figure 12.3: Frank Giampaolo top situations worksheet</em></span>
+    </figcaption>
+</figure>
 <h3 class="part-title" id="sec011">SAI LẦM: Bỏ qua việc đặt mục tiêu</h3>
 <div class="en-heading">BLUNDER: Overlooking Goal Setting</div>
 <div class="bilingual-block stanza"><p class="lang-vi">Việc đặt mục tiêu và các kế hoạch tổ chức nên được sử dụng ngay khi bạn bước vào giai đoạn thi đấu. Sau một sự kiện, hãy lên kế hoạch đặt một số mục tiêu khi bạn xếp lịch các buổi học sắp tới. Hãy ngồi lại với ê-kíp hỗ trợ của bạn để xem xét thành tích của bạn vào thời điểm thích hợp. Phân tích này sẽ cung cấp "Bản Thiết Kế" cho các buổi học và lớp tập trong những tuần tới.</p><p class="lang-en">Goal setting and organizational plans should be used as soon as you enter into the competitive phase. After an event, plan on setting some goals as you schedule your upcoming lessons. Sit down with your entourage to review your performance at an appropriate time. This analysis will provide your “Blue Print” for the upcoming weeks’ worth of lessons and clinics.</p></div>
@@ -401,7 +468,7 @@ body.no-en #lang-toggle{display:none}
 <h3 class="part-title" id="sec016">CÁCH KHẮC PHỤC: Làm việc thông minh sẽ là thay thế những giờ chơi "bắt bóng" bằng</h3>
 <div class="en-heading">CURE: Smart work would be to replace those hours playing “catch” with</div>
 <div class="bilingual-block stanza"><p class="lang-vi">các hoa lưu "giữ khoảng cách" nhằm vô hiệu hóa một tay rình bóng ở cuối sân. Chúng bao gồm các hoa lưu "cửa bên" và hoa lưu tiếp cận bóng bổng để thực hiện cú vô-lê, chỉ kể vài ví dụ. Bạn có thể đang làm việc chăm chỉ hơn 4 giờ mỗi ngày, nhưng liệu bạn có đang làm việc thông minh?</p><p class="lang-en">“keep away” patterns designed to defuse a back court retriever. They include side door patterns and moonball approach to swing volley patterns just to name a few. You may be working hard over 4 hours a day, but are you working smart?</p></div>
-<div class="bilingual-block stanza"><p class="lang-vi">Các buổi học và buổi tập điển hình của bạn như thế nào? Bạn có dành phần lớn thời gian thực hiện các cú đánh chạm đất được đưa bóng ngay vào vùng đánh của mình không? Hãy liệt kê ba cách bạn có thể cải thiện kế hoạch buổi học của mình?</p><p class="lang-en">What are your typical lessons and practice sessions like? Do you spend the majority of the time hitting ground strokes that are fed right to your strike zone? List three ways that you can possibly improve your lesson plan?</p></div>
+<div class="bilingual-block stanza"><p class="lang-vi">Các buổi học và buổi tập điển hình của bạn như thế nào? Bạn có dành phần lớn thời gian thực hiện các cú đánh nền được đưa bóng ngay vào vùng đánh của mình không? Hãy liệt kê ba cách bạn có thể cải thiện kế hoạch buổi học của mình?</p><p class="lang-en">What are your typical lessons and practice sessions like? Do you spend the majority of the time hitting ground strokes that are fed right to your strike zone? List three ways that you can possibly improve your lesson plan?</p></div>
 <div class="bilingual-block stanza"><p class="lang-vi">Hãy ghi nhớ điều này: "Luyện tập theo cách bạn được kỳ vọng sẽ thi đấu."</p><p class="lang-en">Memorize this: “Practice in the manner you are expected to perform.”</p></div>
 <h3 class="part-title" id="sec017">SAI LẦM: Khuyến khích những "kỳ quan một hiệp đấu"</h3>
 <div class="en-heading">BLUNDER: Encouraging “One Set Wonders”</div>
@@ -599,8 +666,29 @@ body.no-en #lang-toggle{display:none}
 <h3 class="part-title" id="sec059">SỰ THẬT THÚ VỊ: Đây là một phép so sánh: Cảm xúc tràn vào não bạn giống như tàu hỏa</h3>
 <div class="en-heading">FUN FACT: Here is an analogy: Feelings enter your brain just as trains</div>
 <div class="bilingual-block stanza"><p class="lang-vi">liên tục vào nhà ga. Bạn có thể chọn lên một chuyến tàu giận dữ hoặc có thể chọn để nó rời nhà ga mà không có bạn. Hoảng loạn và chơi trong giận dữ không phải là tình huống đang xảy ra với bạn, đó là cách bạn chọn để đối phó với tình huống. Nếu bạn là một đối thủ hay giận dữ, hãy nhớ rằng giận dữ là lựa chọn của bạn.</p><p class="lang-en">continually enter a train station. You can choose to get on board an angry train or can choose to let it leave the station without you. Panicking and playing angry is not a situation that is happening to you, it is how you are choosing to deal with the situation. If you are an angry competitor, remember that anger is your choice.</p></div>
+<figure class="instructional-figure">
+    <img src="giampaolo_workbook_assets/diag_choking_vs_panicking.jpg" alt="Hình 65.1: nghẹt thở tâm lý · hoảng loạn" loading="lazy" class="responsive-img">
+    <figcaption class="dual-caption">
+        <span class="caption-vi"><strong>Hình 65.1: nghẹt thở tâm lý · hoảng loạn</strong></span>
+        <span class="caption-en"><em>Figure 65.1: Choking vs panicking</em></span>
+    </figcaption>
+</figure>
 <div class="bilingual-block stanza"><p class="lang-vi">Hãy chơi một hiệp đấu tập và chỉ tập trung vào việc dành 20 giây giữa mỗi điểm Bạn có thấy rằng khi cảm thấy áp lực từ đối thủ thì bạn tắt ngỏm và bỏ qua việc phân tích tình huống trước mắt không? Bạn có phản ứng với căng thẳng bằng cách đánh quá mạnh, đi nhanh, giao bóng nhanh v.v. không? Bạn có bị động ép quá mức dưới áp lực không? Bạn có chấp đơn bỏ cuộc khi cảm thấy bị thử thách trên sân không? Bạn đã bao giờ nghe câu nói của Billy Jean King: "Áp lực là một đặc quyền" chưa?</p><p class="lang-en">Play a practice set and focus solely on taking 20 seconds in between each point Do you find that when you feel pressure from your opponent do you unplug and under analyzing the situation at hand? Do respond to stress by over-hitting, fast walking, quick serving etc? Do you over press under stress? Do you just throw in the towel (give up) when you feel challenged on the court? Did you ever hear Billy Jean King’s quote: “Pressure is a privilege”?</p></div>
+<figure class="instructional-figure">
+    <img src="giampaolo_workbook_assets/giampaolo_between_points_routine.jpg" alt="Hình 65.2: Frank Giampaolo · điểm · quy trình" loading="lazy" class="responsive-img">
+    <figcaption class="dual-caption">
+        <span class="caption-vi"><strong>Hình 65.2: Frank Giampaolo · điểm · quy trình</strong></span>
+        <span class="caption-en"><em>Figure 65.2: Frank Giampaolo points routine</em></span>
+    </figcaption>
+</figure>
 <div class="bilingual-block stanza"><p class="lang-vi">Bạn nghĩ bà ấy muốn nói điều gì qua câu đó?</p><p class="lang-en">What do you think she meant by that?</p></div>
+<figure class="instructional-figure">
+    <img src="giampaolo_workbook_assets/giampaolo_choking_panicking_cure.jpg" alt="Hình 65.3: Frank Giampaolo · nghẹt thở tâm lý · hoảng loạn · cách khắc phục" loading="lazy" class="responsive-img">
+    <figcaption class="dual-caption">
+        <span class="caption-vi"><strong>Hình 65.3: Frank Giampaolo · nghẹt thở tâm lý · hoảng loạn · cách khắc phục</strong></span>
+        <span class="caption-en"><em>Figure 65.3: Frank Giampaolo choking panicking cure</em></span>
+    </figcaption>
+</figure>
 <h2 id="ch07">NHỮNG SAI LẦM TRONG TĂNG TRƯỞNG NHANH</h2>
 <div class="en-heading">ACCELERATED GROWTH BLUNDERS</div>
 <h3 class="part-title" id="sec060">SAI LẦM: Không nhìn nhận những chướng ngại vật như bước đá tiến bộ</h3>
@@ -622,7 +710,7 @@ body.no-en #lang-toggle{display:none}
 <div class="bilingual-block stanza"><p class="lang-vi">Tác phẩm nghệ thuật nổi tiếng và được yêu mến nhất hành tinh không hoàn hảo. Nhà nguyện Sistine không hoàn hảo. Bản nhạc hay nhất không hoàn hảo. Trong một cuộc phỏng vấn năm 1980, John Lennon nói ông nghe thấy những khiếm khuyết trong mọi bản thu của Beatles. Và trong một trận chung kết Grand Slam, ngay cả các tay vợt chuyên nghiệp cũng không đánh hoàn hảo mọi điểm.</p><p class="lang-en">The most famous and beloved art on the planet isn’t perfect. The Sistine Chapel isn’t perfect. The best music isn’t perfect. In a 1980 interview, John Lennon said he heard flaws in every Beatles recording. And in a grand slam final, even the professionals don’t play every point perfectly.</p></div>
 <div class="bilingual-block stanza"><p class="lang-vi">Hãy đặc biệt chú ý đến những cú winners so với lỗi. Roger Federer thường đánh trượt bóng vào khung vợt. Serena Williams thường đánh quá mạnh và mắc một loạt lỗi. Theo một nghiên cứu khoa học thể thao do bạn bè chúng tôi tại Tennis Australia thực hiện, trong hệ thống thi đấu chuyên nghiệp, khoảng 70% tất cả các điểm kết thúc bằng một lỗi có ép buộc hoặc không ép buộc.</p><p class="lang-en">Pay special attention to winners versus errors. Roger Federer often shanks balls off the frame. Serena Williams often over hits and makes a rash of errors. According to a sports science study conducted by our friends at Tennis Australia, on the professional tour, about 70% of all points end in either a forced or unforced error.</p></div>
 <div class="bilingual-block stanza"><p class="lang-vi">Nếu bạn vẫn còn trên con ngựa cao ngạo gọi là sự hoàn hảo, hãy nhảy xuống! "Thành công là nhiều hơn một chức năng của sự kiên trì hơn là sự hoàn hảo." Ở mọi cấp độ thi đấu, chỉ cần tập trung giành chiến thắng khoảng 65 phần trăm tổng số điểm (2 trên 3 điểm) và bạn sẽ rất có thể thắng trận đấu một cách thoải mái. Bạn không cần thắng mọi điểm. Điều này cho bạn quyền để chấp nhận một vài lỗi tự đánh hỏng. Cũng tốt khi để đối thủ có chút vinh quang khi họ thắng một vài điểm.</p><p class="lang-en">If you are still on that high horse called perfection, jump off! “Success is more of a function of persistence than perfection.” At every level of competition, simply focus on winning about 65 percent of the total points (2 out of 3 points) and you’ll most likely win the match comfortably. You don’t have to win every point. This gives you permission to accept a few unforced errors. It’s also okay to allow the opponent to have a little glory as they win some points.</p></div>
-<div class="bilingual-block stanza"><p class="lang-vi">CÁCH CHỮA: Tham gia các giải đấu với tư duy phát triển thay vì chỉ hướng tới kết quả. Nhờ một phụ huynh, huấn luyện viên hoặc bạn bè ghi biểu đồ. Biểu đồ Nguyên nhân Lỗi hoặc Biểu đồ Vị trí trên Sân là những nơi tuyệt vời để bắt đầu. (Xem Tập san Thu thập Biểu đồ Trận đấu e-Booklet) Tự hỏi bản thân: Tôi có áp dụng các nghi thức giữa các điểm trong thi đấu hay chỉ để mình bùng nổ trên sân? Tôi có những mục tiêu thành tích định sẵn để phấn đấu đạt được không? (Như 65% giao bóng nhất vào sân hoặc áp dụng một cú đánh chạm đất cao và mạnh khi phòng thủ) Tôi có đang dùng trận đấu như một nhiệm vụ thu thập thông tin hay chỉ kỳ vọng thắng mọi giải? Đạt được thứ hạng cao là nhiều hơn một cuộc marathon hơn là một cuộc chạy nước rút. Bạn có thể nhờ ai đó ghi biểu đồ một trận đấu giải thực tế và giúp bạn lập kế hoạch tùy chỉnh để phát triển không?</p><p class="lang-en">CURE: Enter tournaments with a growth mentality versus being strictly outcome oriented. Ask a parent, coach or friend to chart. The Cause of Error Chart or the Court Positioning Charts are terrific places to start. (See The Match Chart Collection e-Booklet) Ask Yourself: Do I apply between point rituals during match play or simply allow myself to go ballistic on the court? Do I have preset performance goals to strive to achieve? (Like 65% first serves in or apply a high and heave groundstroke when on defense) Am I using match play as an information gathering mission or do I just expect to win every event? Achieving a high ranking is more of a marathon than a sprint. Can you ask someone to chart an actual tournament match and help you devise a customized plan for growth?</p></div>
+<div class="bilingual-block stanza"><p class="lang-vi">CÁCH CHỮA: Tham gia các giải đấu với tư duy phát triển thay vì chỉ hướng tới kết quả. Nhờ một phụ huynh, huấn luyện viên hoặc bạn bè ghi biểu đồ. Biểu đồ Nguyên nhân Lỗi hoặc Biểu đồ Vị trí trên Sân là những nơi tuyệt vời để bắt đầu. (Xem Tập san Thu thập Biểu đồ Trận đấu e-Booklet) Tự hỏi bản thân: Tôi có áp dụng các nghi thức giữa các điểm trong thi đấu hay chỉ để mình bùng nổ trên sân? Tôi có những mục tiêu thành tích định sẵn để phấn đấu đạt được không? (Như 65% giao bóng nhất vào sân hoặc áp dụng một cú đánh nền cao và mạnh khi phòng thủ) Tôi có đang dùng trận đấu như một nhiệm vụ thu thập thông tin hay chỉ kỳ vọng thắng mọi giải? Đạt được thứ hạng cao là nhiều hơn một cuộc marathon hơn là một cuộc chạy nước rút. Bạn có thể nhờ ai đó ghi biểu đồ một trận đấu giải thực tế và giúp bạn lập kế hoạch tùy chỉnh để phát triển không?</p><p class="lang-en">CURE: Enter tournaments with a growth mentality versus being strictly outcome oriented. Ask a parent, coach or friend to chart. The Cause of Error Chart or the Court Positioning Charts are terrific places to start. (See The Match Chart Collection e-Booklet) Ask Yourself: Do I apply between point rituals during match play or simply allow myself to go ballistic on the court? Do I have preset performance goals to strive to achieve? (Like 65% first serves in or apply a high and heave groundstroke when on defense) Am I using match play as an information gathering mission or do I just expect to win every event? Achieving a high ranking is more of a marathon than a sprint. Can you ask someone to chart an actual tournament match and help you devise a customized plan for growth?</p></div>
 <h3 class="part-title" id="sec064">SAI LẦM: Tin rằng Số lượng Thời gian Sân là Chất lượng Thời gian Sân</h3>
 <div class="en-heading">BLUNDER: Believing Quantity of Court Time is Quality Court Time</div>
 <div class="bilingual-block stanza"><p class="lang-vi">Nếu bạn có cơn ác mộng lặp lại về việc thua những tay vợt đánh bền ở các giải đấu, thì việc dành 6 tiếng mỗi ngày đánh bóng thấp và mạnh qua lại trên sân tập sẽ giúp ích gì? Không hề! Chinh phục những kẻ bám trụ thực chất là một trò chơi giữ bóng chứ không phải trò chơi bắt bóng mà hầu hết các bạn đang tập.</p><p class="lang-en">If you have a reoccurring nightmare of losing to pushers in tournaments, how is spending 6 hours a day hitting the ball low and hard back and forth on the practice court going to help? It’s not! Conquering those dreaded retrievers is actually a game of keep away versus the game of catch most of you are practicing.</p></div>
@@ -657,7 +745,7 @@ body.no-en #lang-toggle{display:none}
 <div class="bilingual-block stanza"><p class="lang-vi">Ở giai đoạn thi đấu của quần vợt, dành vài phút để tổ chức các lối chơi chính và phụ của bạn sẽ đưa bạn vượt lên trước hầu hết đối thủ. Các lối chơi bao gồm tay vợt đánh bền cuối sân mạnh, tay vợt toàn sân, tay vợt lên lưới, và tay vợt bám trụ. Ở các cấp độ thi đấu thấp hơn, liên tục kéo đối thủ lên lưới cũng có thể là một lối chơi hiệu quả.</p><p class="lang-en">In the competitive stage of tennis, spending a few moments to organize your primary and secondary styles of play will push you ahead of most opponents. Styles of play include hard hitting baseliners, all court players, net rushers, and retrievers. In lower levels of competition, continually bringing the opponent into the net can also be an effective style of play.</p></div>
 <h3 class="part-title" id="sec069">SỰ THẬT THÚ VỊ: Ở quần vợt trình độ thấp, các vận động viên thường chưa phát triển đầy đủ. Mặc dù</h3>
 <div class="en-heading">FUN FACT: In lower level tennis, players are often under developed. While</div>
-<div class="bilingual-block stanza"><p class="lang-vi">họ có thể có những cú đánh chạm đất vững vàng, nhưng cú vô-lê và cú đập bóng của họ không tồn tại. Ép một tay vợt đánh bền thoải mái chơi trận đấu tại lưới, giúp nghiêng tỷ lệ cược có lợi cho bạn. Kéo một đối thủ lên lưới là một tập hợp kỹ năng cũng cần được phát triển. Những kỹ năng cú đánh phụ này là cú bỏ nhỏ, cú đánh vượt tuyến chìm và cú tạt bóng bổng. Diễn tập những kỹ năng này sẽ là một ví dụ tuyệt vời về kế hoạch trận đấu B và C của một người.</p><p class="lang-en">they may have solid ground strokes, their volleys and overheads are nonexistent. Forcing a comfortable baseliner to play the match at the net, tips the odds in your favor. Brining an opponent into the net is a set of skills that needs to be developed as well. These secondary stroke skills are drop shots, dipping passing shots and lobs. Rehearsing these skills would be a great example of one’s B and C game plans.</p></div>
+<div class="bilingual-block stanza"><p class="lang-vi">họ có thể có những cú đánh nền vững vàng, nhưng cú vô-lê và cú đập bóng của họ không tồn tại. Ép một tay vợt đánh bền thoải mái chơi trận đấu tại lưới, giúp nghiêng tỷ lệ cược có lợi cho bạn. Kéo một đối thủ lên lưới là một tập hợp kỹ năng cũng cần được phát triển. Những kỹ năng cú đánh phụ này là cú bỏ nhỏ, cú đánh vượt tuyến chìm và cú tạt bóng bổng. Diễn tập những kỹ năng này sẽ là một ví dụ tuyệt vời về kế hoạch trận đấu B và C của một người.</p><p class="lang-en">they may have solid ground strokes, their volleys and overheads are nonexistent. Forcing a comfortable baseliner to play the match at the net, tips the odds in your favor. Brining an opponent into the net is a set of skills that needs to be developed as well. These secondary stroke skills are drop shots, dipping passing shots and lobs. Rehearsing these skills would be a great example of one’s B and C game plans.</p></div>
 <div class="bilingual-block stanza"><p class="lang-vi">CÁCH CHỮA: Sắp xếp các séc tập với những người chơi trình độ thấp hơn và ép bản thân diễn tập lối chơi phụ của bạn. Các nhà vô địch đã làm chủ hơn một lối chơi và bạn cũng có thể!</p><p class="lang-en">CURE: Set up practice sets against lower level players and force yourself to rehearse your secondary style of play. Champions have mastered more than one style and so can you!</p></div>
 <div class="bilingual-block stanza"><p class="lang-vi">Ví dụ: Con gái kế của tôi, Sarah, chơi giải Mỹ Mở rộng người lớn đầu tiên ở tuổi 15. Ở vòng một, đối thủ của Sarah ra sân với lối chơi Kế hoạch A của cô ấy (tay vợt đánh bền cuối sân mạnh). Sarah thắng séc đầu 6-4. Đầu séc 2, đối thủ chuyển sang Kế hoạch B (tay vợt lên lưới) và Sarah vươn lên 4-1. Đối thủ sau đó chuyển sang Kế hoạch C (bóng trăng/pusher), đây là lối chơi đối thủ mà Sarah ít yêu thích nhất. Sarah kinh ngạc khi thấy một cựu binh WTA 30 tuổi đẩy mình tới chiến thắng 15.000 đô la ở séc 3.</p><p class="lang-en">Example: My step- daughter Sarah played her first adult U.S. Open at age 15. In the first round, Sarah’s opponent came out with her Plan A style (hard hitting baseliner). Sarah won the first set 6-4. At the start of the 2nd set, the opponent switched to Plan B (net rusher) and Sarah went up 4-1. The opponent then switched to Plan C (moonball/pusher), which was Sarah’s least favorite style of opponent. Sarah was amazed to see a 30-year old WTA veteran push her way to a $15,000 victory in the 3rd set.</p></div>
 <div class="bilingual-block stanza"><p class="lang-vi">Thắng toàn bộ các giải đấu thường đòi hỏi nhiều công cụ hơn trong túi đồ của bạn. Bạn có phải là một chú ngựa một trò ảo thuật không? Nếu kế hoạch A của bạn không hiệu quả, bạn chỉ nổi điên sao? Vậy, kế hoạch trận đấu B và C của bạn là gì? Bạn có thể sắp xếp thời gian để phát triển những kỹ năng đó và sau đó lên kế hoạch chơi các séc tập với những lối chơi phụ đó không? Bạn có thể bắt đầu ngay tuần này không?</p><p class="lang-en">Winning whole tournaments often requires more tools in your tool belt. Are you a one trick pony? If your plan A isn’t working do you just get mad? So, what are your B and C Game Plans? Can you schedule time to develop those skills and then plan on playing practice sets with those secondary styles of play? Can you start this week?</p></div>
@@ -975,6 +1063,51 @@ window.addEventListener('scroll', function(){
     if (!overlay.classList.contains('open')) return;
     clearTimeout(rt); rt = setTimeout(refit, 220);
   });
+})();
+</script>
+
+<button class="chapter-fab" id="chapter-fab" aria-label="Mục lục chương"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h12v2H3zM3 11h12v2H3zM3 17h8v2H3zM17 9h4v2h-4zM17 15h4v2h-4z"/></svg><span>Chương</span></button>
+<div class="chapter-backdrop" id="chapter-backdrop"></div>
+<aside class="chapter-drawer" id="chapter-drawer" aria-label="Danh sách chương">
+  <div class="cd-head"><h3>Mục lục</h3><button class="cd-close" id="chapter-close" aria-label="Đóng">&times;</button></div>
+  <nav class="cd-list" id="chapter-list"></nav>
+</aside>
+<script>
+(function(){
+  var fab=document.getElementById('chapter-fab'),
+      drawer=document.getElementById('chapter-drawer'),
+      backdrop=document.getElementById('chapter-backdrop'),
+      list=document.getElementById('chapter-list'),
+      book=document.getElementById('book-content');
+  if(!book) return;
+  var heads=[].slice.call(book.querySelectorAll('h2[id]'));
+  if(!heads.length) heads=[].slice.call(book.querySelectorAll('h3[id]'));
+  if(!heads.length) return;
+  var links=[];
+  heads.forEach(function(h){
+    var a=document.createElement('a');
+    a.href='#'+h.id; a.textContent=h.textContent.trim();
+    a.addEventListener('click',function(){drawer.classList.remove('open');backdrop.classList.remove('open');});
+    list.appendChild(a); links.push(a);
+  });
+  function openD(){drawer.classList.add('open');backdrop.classList.add('open');}
+  function closeD(){drawer.classList.remove('open');backdrop.classList.remove('open');}
+  fab.addEventListener('click',openD);
+  backdrop.addEventListener('click',closeD);
+  document.getElementById('chapter-close').addEventListener('click',closeD);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeD();});
+  var ticking=false;
+  function spy(){
+    var cur=null, y=100;
+    for(var i=0;i<heads.length;i++){
+      if(heads[i].getBoundingClientRect().top<=y) cur=heads[i].id; else break;
+    }
+    if(cur) links.forEach(function(l){l.classList.toggle('active',l.getAttribute('href')==='#'+cur);});
+    ticking=false;
+  }
+  function onscroll(){ if(!ticking){ticking=true;requestAnimationFrame(spy);} }
+  window.addEventListener('scroll',onscroll,{passive:true});
+  spy();
 })();
 </script>
 </body>

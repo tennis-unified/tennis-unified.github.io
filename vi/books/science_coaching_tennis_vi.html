@@ -264,6 +264,24 @@ body.no-en #lang-toggle{display:none}
 .book-wrapper { display: block; }
 .book-content { max-width: 880px; margin: 0 auto; }
 </style>
+
+<style>
+/* Floating chapter drawer (added by add_chapter_drawer.py) */
+.chapter-fab{position:fixed;right:20px;bottom:20px;z-index:55;display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:none;border-radius:999px;background:var(--gold,#b8860b);color:#fff;font:600 .9rem/1 system-ui,sans-serif;box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer}
+.chapter-fab svg{width:16px;height:16px;fill:currentColor}
+.chapter-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:110;opacity:0;visibility:hidden;transition:opacity .2s}
+.chapter-backdrop.open{opacity:1;visibility:visible}
+.chapter-drawer{position:fixed;top:0;right:0;height:100%;width:330px;max-width:88vw;z-index:120;background:var(--bg-card,#fff);box-shadow:-8px 0 30px rgba(0,0,0,.18);transform:translateX(100%);transition:transform .25s ease;display:flex;flex-direction:column}
+.chapter-drawer.open{transform:translateX(0)}
+.cd-head{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid var(--rule,#e4ded2)}
+.cd-head h3{margin:0;font-size:1rem;font-family:var(--serif,Georgia,serif)}
+.cd-close{background:none;border:none;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--ink-muted,#555)}
+.cd-list{overflow-y:auto;padding:8px 0;flex:1}
+.cd-list a{display:block;padding:9px 18px;color:var(--ink-muted,#555);text-decoration:none;font-size:.92rem;line-height:1.4;border-left:3px solid transparent;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cd-list a:hover{background:rgba(0,0,0,.04)}
+.cd-list a.active{color:var(--ink,#111);font-weight:600;border-left-color:var(--gold,#b8860b);background:rgba(184,134,11,.08)}
+@media(max-width:560px){.chapter-drawer{width:100%;max-width:100%}}
+</style>
 </head>
 <body class="no-en">
 <nav class="tu-breadcrumb" aria-label="Breadcrumb">
@@ -422,7 +440,7 @@ Trên thực tế, những tay vợt giỏi không phải lúc nào cũng làm n
 Trong một cuộc phỏng vấn trên truyền hình gần đây, một trong những kỳ thủ hàng đầu thế giới đã được hỏi rằng anh ta sẽ tính phí bao nhiêu khi dạy kèm riêng.
 Hầu hết mọi người có lẽ đều mong đợi anh ta đưa ra một khoản phí hợp lý, nhưng tay vợt này thừa nhận rằng anh ta sẽ không bao giờ cố gắng dạy bất kỳ ai trò chơi này.
 “‘Tôi sẽ để việc đó cho các giáo viên vì họ dành quá nhiều thời gian để nghiên cứu trò chơi,” anh nói.
-“Tôi thực sự không biết nhiều về cơ chế đột quỵ và những thứ tương tự.”</p></div>
+“Tôi thực sự không biết nhiều về cơ chế cú đánh và những thứ tương tự.”</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Tay vợt này đã thể hiện rất cá tính khi phản ứng như vậy, nhưng anh ta có thể đã thay đổi bản thân một cách ngắn ngủi khi đánh giá thấp tiềm năng huấn luyện của mình.
 Anh ta có thể không biết nhiều về cách mình thực sự đánh bóng, nhưng anh ta biết rất nhiều về sự cạnh tranh - khi nào nên đánh cú nào, cách xử lý căng thẳng tâm lý của trận đấu, cách kiểm soát nhịp độ, cách xử lý những nỗ lực tâm lý của đối thủ.
 Không một chuyên gia nào đạt được vị thế đẳng cấp thế giới nếu không hiểu rõ những điều này và các yếu tố cạnh tranh khác.</p></div>
@@ -481,7 +499,7 @@ Trong một cuốn sách không thể cung cấp một chuyên luận hoàn ch�
             <div class="bilingual-block stanza"><p class="lang-vi">có liên quan đến quần vợt và huấn luyện.
 Cuốn sách này xem xét các ứng dụng có tầm quan trọng hàng đầu đối với quần vợt từ bốn phân ngành của khoa học thể thao.
 Những lĩnh vực này là cơ sinh học, học tập vận động, sinh lý học thể dục và tâm lý học thể thao.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Trong cơ sinh học, các nhà khoa học kiểm tra các lực gây ra chuyển động, các lực có thể gây thương tích cũng như hiệu quả và hiệu quả của việc tạo ra đột quỵ.
+            <div class="bilingual-block stanza"><p class="lang-vi">Trong cơ sinh học, các nhà khoa học kiểm tra các lực gây ra chuyển động, các lực có thể gây thương tích cũng như hiệu quả và hiệu quả của việc tạo ra cú đánh.
 Các chuyên gia về học tập vận động kiểm tra xem kỹ năng được tiếp thu như thế nào và phương pháp giảng dạy nào hiệu quả nhất để huấn luyện quần vợt thành công.
 Các nhà sinh lý học thể dục xem xét tầm quan trọng của những thứ như điều hòa, rèn luyện tính linh hoạt và dinh dưỡng;
 họ quan tâm đến những thay đổi sinh lý xảy ra trong quá trình thi đấu cũng như những thay đổi có thể xảy ra khi vui chơi giải trí hoặc trong môi trường tập luyện.
@@ -530,7 +548,7 @@ Trong khi đó, tay vợt phải nhận thức được hành động và vị t
 Trên hết, tay vợt phải quyết định độ khó để đánh bóng và sử dụng bao nhiêu độ xoáy.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Tuy nhiên, độ khó của trò chơi là một phần tạo nên vẻ đẹp của nó.
 Để chơi quần vợt xuất sắc, một vận động viên phải thông thạo nhiều lĩnh vực, một số lĩnh vực đó sẽ được đề cập trong cuốn sách này.
-Một trong những lĩnh vực quan trọng nhất là cơ sinh học của quá trình tạo ra đột quỵ.</p></div>
+Một trong những lĩnh vực quan trọng nhất là cơ sinh học của quá trình tạo ra cú đánh.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Cơ sinh học là nghiên cứu về các lực bên trong (hoặc cơ bắp) và bên ngoài (gió, trọng lực, v.v.) ảnh hưởng đến hiệu suất của con người.
 Nói một cách đơn giản, đó là nghiên cứu về chuyển động của con người.
 Trong cơ sinh học, điều quan trọng là phải hiểu hiệu suất và hiệu quả của chuyển động, ý nghĩa của y học thể thao đối với hiệu suất và tác động của các thiết kế thiết bị khác nhau đối với hiệu suất và trên cơ thể của người biểu diễn.</p></div>
@@ -557,7 +575,7 @@ Các kỹ sư cơ khí và chuyên gia thiết kế trong các công ty sản xu
             <div class="bilingual-block stanza"><p class="lang-vi">Cơ sinh học của quần vợt « 13 Khi đánh bóng tennis, hầu hết tay vợt không coi trọng vai trò quan trọng của trọng lực.
 Ví dụ, khi thực hiện cú vô lê từ vị trí cách lưới khoảng 10 feet, các tay vợt (cao hơn lưới rất nhiều) thường cảm thấy cú vô lê ngang vai phải được đánh xuống để giữ cho nó tiếp tục thi đấu.
 Kết quả thông thường của việc ném bóng xuống dưới là một cú sút vào lưới hoặc một cú đánh quá nông đến mức có thể gây ra một cú đánh trả phản công.
-Nếu người chuyền bóng nhận thấy trọng lực kéo bóng xuống dưới, huấn luyện viên có thể dễ dàng thuyết phục họ đánh cú vô lê cao ngang vai theo chiều ngang qua lưới (không hướng xuống) để bóng rơi sâu hơn vào phần sân đối phương và giảm cơ hội trả đòn tấn công.</p></div>
+Nếu người đánh vô-lê nhận thấy trọng lực kéo bóng xuống dưới, huấn luyện viên có thể dễ dàng thuyết phục họ đánh cú vô lê cao ngang vai theo chiều ngang qua lưới (không hướng xuống) để bóng rơi sâu hơn vào phần sân đối phương và giảm cơ hội trả đòn tấn công.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Trọng lực cũng đóng vai trò giao bóng và đánh một cú đập từ trên cao.
 Bởi vì các cú giao bóng và các cú đánh qua đầu đòi hỏi bóng phải tiếp xúc ở vị trí cao hơn đầu nên hầu hết tay vợt nghĩ rằng họ phải đánh bóng xuống dưới để đưa bóng vào sân.
 Nhưng những tay vợt duy nhất cần đánh xuống là những người đạt độ cao 11 feet (với vợt) và đánh bóng với tốc độ 100 dặm một giờ.
@@ -699,7 +717,7 @@ Cả hai loại động lượng đều được áp dụng khi thực hiện c�
             <div class="bilingual-block stanza"><p class="lang-vi">Tóm lại, huấn luyện viên quần vợt phải nhận thức được các yếu tố thể chất ảnh hưởng đến thành tích.
 Các lực bên ngoài là trọng lực và lực cản khí động học (Aerodynamic Drag) quyết định đường bay của quả bóng sau khi nó được đánh.
 Khi một tay vợt di chuyển để đánh trả, việc kiểm soát cơ thể và giữ thăng bằng là rất quan trọng đối với hiệu suất và hiệu quả của chuyển động.
-Khi đã vào vị trí, tay vợt phải kết hợp động lượng tuyến tính và động lượng góc để đạt được lợi nhuận tối ưu.</p></div>
+Khi đã vào vị trí, tay vợt phải kết hợp động lượng tuyến tính và động lượng góc để đạt được lợi thế tối ưu.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Điểm mấu chốt mà huấn luyện viên quần vợt cần ghi nhớ là khả năng kiểm soát có tầm quan trọng hàng đầu và phải liên tục được nhấn mạnh là ưu tiên hàng đầu của học sinh.
 Học sinh có xu hướng nỗ lực tối đa hóa tiềm năng thể chất của mình để tăng sức mạnh, nhưng bất kỳ quá trình huấn luyện nào để tăng sức mạnh phải luôn nằm trong bối cảnh kiểm soát cú đánh.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Sa ae ee a Y Rn eee, GL a Se ae ues rr Lin i = Sey &amp; ay SS a ei “a= Wank lst Prim Seaige fi eat Earn | ce had eke ee one : a eae ee ey Sy ey he Vall a a ee gl hs wey (ali octet atm Seer a. elias hl ia eget ed re | al ee Cee
@@ -764,7 +782,7 @@ Mục đích của những bài tập này là dạy học sinh phản ứng v�
 Một cách hay để bắt đầu là thực hành các bài tập bóng, trong đó học sinh bắt chước các động tác của huấn luyện viên.
 Huấn luyện viên đứng trước mặt học sinh, thường quay mặt ra xa và hướng dẫn chuyển động ngang cũng như cách chuẩn bị vợt để bắt chước một cú đánh.
 Học sinh học cách di chuyển cân bằng với trọng lượng bên ngoài ở tay.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Một vấn đề mà một số tay vợt gặp phải khi phát triển kỹ thuật đánh là làm thế nào để định vị bản thân so với bóng để đánh bóng hiệu quả.
+            <div class="bilingual-block stanza"><p class="lang-vi">Một vấn đề mà một số tay vợt gặp phải khi phát triển kỹ thuật đánh làm thế nào để định vị bản thân so với bóng để đánh bóng hiệu quả.
 Khi họ chạy để đánh trả, họ thấy mình ở quá xa hoặc quá gần quả bóng đến mức bị kẹt và không thể xoay người hiệu quả.
 Điều quan trọng là phải liên tục nhấn mạnh vị trí của cánh tay so với cơ thể và cách cơ thể cần di chuyển đến bóng để đạt hiệu quả cú đánh.
 Khi các tay vợt của bạn gặp vấn đề về vuốt bóng, hãy bắt đầu bằng cách ném một quả bóng về phía họ, cho phép họ đánh từ vị trí đứng yên.
@@ -799,7 +817,7 @@ Ví dụ, nếu tay vợt đọc sai độ xoáy của quả bóng hoặc nếu 
             <div class="bilingual-block stanza"><p class="lang-vi">Bất kể sử dụng phương pháp backswing nào, cơ thể nên chuẩn bị bằng cách xoay vào vị trí (Hình 3.1).
 Bàn chân ở phía vợt hướng ra ngoài trong khi hông và vai xoay vào tư thế chuẩn bị.
 Hiệu ứng cuộn này chuẩn bị cho cơ thể tạo ra xung lượng góc khi nó thả lỏng trong cú đánh.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Một lần nữa, việc bắt đầu một cú đánh, có thể là một cú đánh chạm đất hoặc một cú giao bóng, xảy ra dưới dạng lực phản lực mặt đất (Ground Reaction Force).
+            <div class="bilingual-block stanza"><p class="lang-vi">Một lần nữa, việc bắt đầu một cú đánh, có thể là một cú đánh nền hoặc một cú giao bóng, xảy ra dưới dạng lực phản lực mặt đất (Ground Reaction Force).
 Bàn chân sau đẩy xuống đất, tạo cho cơ thể một động lượng tuyến tính nhẹ theo hướng bước về phía trước.
 Ngay sau khi thực hiện bước, lực được tạo ra sẽ được truyền qua chân đến hông, chân này bắt đầu quay lần lượt, truyền lực (bây giờ là động lượng góc) sang thân.
 Thân cây quay sau đó truyền vận tốc của nó tới cánh tay và vợt.
@@ -910,7 +928,7 @@ Ngoài ra, cả hai cách đều có xu hướng giảm lượng mô-men xoắn 
             <div class="bilingual-block stanza"><p class="lang-vi">Sự thật: Việc thay đổi cách cầm bóng khi mới bắt đầu tạo điều kiện thuận lợi cho việc tiếp thu kỹ năng.
 Việc thay đổi cách cầm bóng trong cú vô lê đã được tranh luận rộng rãi.
 Nghiên cứu duy nhất về chủ đề này chỉ ra rằng những tay vợt quần vợt mới bắt đầu được dạy cách thay đổi cách cầm vợt từ kiểu thuận tay phương Đông sang trái tay kiểu phương Đông có khả năng kiểm soát cú bắt lưới (Volley) tốt hơn so với những người mới bắt đầu được dạy chỉ sử dụng kiểu cầm vợt lục địa.
-Một số tay vợt được dạy cách thay đổi cách cầm vợt khi chuyền bóng sau đó đã thử cách cầm vợt kiểu lục địa, điều này một lần nữa dường như giúp họ tiến bộ nhanh hơn.
+Một số tay vợt được dạy cách thay đổi cách cầm vợt khi đánh vô-lê sau đó đã thử cách cầm vợt kiểu lục địa, điều này một lần nữa dường như giúp họ tiến bộ nhanh hơn.
 Họ có thể thực hiện các cú vô lê thuận tay và trái tay dễ dàng hơn mà không cần mất thời gian thay đổi cách cầm vợt.
 Những phát hiện này cho thấy rằng nên bắt đầu cho người mới bắt đầu chơi cú bắt lưới (Volley) bằng cách dạy thay đổi cách cầm vợt, sau đó chuyển họ sang cách cầm vợt lục địa vào một ngày sau đó.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Ngụy biện: Cảm nhận bóng trên dây.
@@ -935,7 +953,7 @@ Mặc dù họ sẽ không thể chạy nhanh nhất nhưng việc chuẩn bị 
 Khi một tay vợt kém kỹ năng hơn cố gắng chạy về phía quả bóng và vung vợt, thì việc căn thời gian thường kém.
 Để hỗ trợ những tay vợt này di chuyển và vị trí vợt thích hợp, gợi ý này có thể có hiệu quả trong việc giúp họ tạo ra sự kết hợp tối ưu giữa chuyển động và cú đánh.
 Tuy nhiên, khi tay vợt phát triển, huấn luyện viên nên dạy họ di chuyển bằng cánh tay và vợt được giữ theo cách cho phép đạt được tốc độ và sự cân bằng tối ưu.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Sự thật: Đừng nhảy khi đánh những cú chạm đất.
+            <div class="bilingual-block stanza"><p class="lang-vi">Sự thật: Đừng nhảy khi đánh những cú đánh nền.
 Rời khỏi mặt đất là điều bình thường trong việc giao bóng.
 Trên thực tế, người ta đã chứng minh rằng một tay vợt ưu tú càng ở xa mặt đất thì cú giao bóng càng hiệu quả.
 Tuy nhiên, cần thừa nhận rằng tay vợt không bao giờ cố ý nhảy khi giao bóng mà cơ thể của họ thực sự bị kéo lên khỏi mặt đất do tác động của chân và chuyển động xoay của cơ thể.
@@ -955,7 +973,7 @@ Tuy nhiên, mô phỏng trên máy tính chứng minh rằng tay vợt phải c�
 Vì rất ít tay vợt quần vợt đáp ứng được những yêu cầu về thể chất này nên điều quan trọng là phải hướng dẫn họ để trọng lực tác động lên họ.
 Sẽ tốt hơn nhiều nếu bạn đánh bóng thẳng ra khỏi vợt hoặc thậm chí đánh bóng lên khi giao bóng.
 Từ một góc độ khác, việc học cách giao bóng sẽ dễ dàng hơn nhiều bằng cách đánh bóng ra ngoài đường giao bóng và sau đó cố gắng đưa nó trở lại so với việc đánh quả giao bóng vào lưới và sau đó cố gắng vượt qua.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Ngụy biện: Xoay người sang một bên lưới khi thực hiện cú đánh chạm đất.
+            <div class="bilingual-block stanza"><p class="lang-vi">Ngụy biện: Xoay người sang một bên lưới khi thực hiện cú đánh nền.
 Tuy cần phải xoay vai sang một bên nhưng không nhất thiết phải xoay toàn bộ cơ thể sang một bên vào lưới, điều này chỉ có tác dụng cố định vận động viên ở một tư thế và hạn chế sự linh hoạt.
 Cú thuận tay ở tư thế mở yêu cầu xoay hông và thân để phát triển xung lượng góc tối ưu và bàn chân phải được đặt ở vị trí để cho phép xoay cần thiết khi bước vào cú đánh, nhưng hiếm khi cơ thể của tay vợt hoàn toàn nghiêng về phía lưới.
 Có thể hữu ích nếu dạy người mới bắt đầu chuyển động sang ngang để nâng cao khả năng tiếp thu kỹ năng, nhưng khi kỹ năng của họ tiến bộ, hãy dạy họ sự linh hoạt trong chuyển động và đảm bảo rằng họ hiểu hông và thân phải xoay như thế nào.</p></div>
@@ -963,7 +981,7 @@ Có thể hữu ích nếu dạy người mới bắt đầu chuyển động sa
 Cho đến cuối những năm 1970, các huấn luyện viên quần vợt vẫn cảm thấy rằng cú đánh trái tay bằng một tay là cú đánh được ưa chuộng hơn vì khả năng tiếp cận xa hơn trong quá trình tạo cú đánh của nó.
 Một nghiên cứu năm 1978 về câu hỏi này đã tìm thấy rất ít sự khác biệt về tầm với giữa các cú công bóng trái tay bằng một tay và hai tay khi tay vợt đến vị trí thích hợp để vung vợt.
 Có những vấn đề rõ ràng về những cú đánh cực rộng hoặc những cú đánh tiếp cận thấp đối với cú đánh trái tay bằng hai tay, nhưng những tay vợt sử dụng cú đánh bằng một tay cũng gặp vấn đề tương tự với những cú đánh rất rộng.
-Rất ít cú đánh chạm đất tấn công xảy ra khi tay vợt duỗi người, ngay cả với cú đánh trái tay bằng một tay.
+Rất ít cú đánh nền tấn công xảy ra khi tay vợt duỗi người, ngay cả với cú đánh trái tay bằng một tay.
 Tay vợt sử dụng trái tay bằng hai tay có thể được dạy các động tác phòng thủ để sử dụng bằng một tay khi kéo rộng.
 Do đó, phạm vi tiếp cận hạn chế không phải là lý do chính đáng để tránh dạy trái tay bằng hai tay.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Ngụy biện: Nghiêng vợt để đánh xoáy xuống.
@@ -982,7 +1000,7 @@ Một vận động viên thực sự có thể đánh chéo sân với một qu
 Thời điểm tác động không phải là yếu tố quyết định.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Ngụy biện: Giữ đầu vợt phía trên cổ tay của bạn khi thực hiện cú vô lê.
 Mục đích của gợi ý giảng dạy này là giảm thiểu mức độ tự do chung trong một cú đánh có kiểm soát như cú bắt lưới (Volley).
-Hoạt động chung không cần thiết trong cơn đột quỵ làm tăng nguy cơ mắc sai lầm.
+Hoạt động chung không cần thiết trong cơn cú đánh làm tăng nguy cơ mắc sai lầm.
 Với cổ tay được giữ khá cứng, tay vợt có thể tạo ra những cú vô lê hiệu quả và xuyên thấu.
 Tuy nhiên, theo nghĩa đen của nó, tín hiệu này không chính xác.
 Nếu góc ở cổ tay là tĩnh, các hoạt động của chi trên và thân có thể định vị đầu vợt ở nhiều vị trí khác nhau so với các bộ phận khác của cơ thể.
@@ -1134,7 +1152,7 @@ Nếu cú sút bị trượt, rõ ràng có điều gì đó không ổn;
 nếu nó kém mạnh hơn mong muốn hoặc thiếu khả năng kiểm soát hoặc thâm nhập, điều này cũng cho thấy có lỗi.
 Bạn nên quyết định chính xác lý do tại sao cú đánh không hiệu quả trước khi tiếp tục.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">3. Cố gắng đánh giá nguyên nhân của vấn đề và khoanh vùng nó (tức là nửa trên hoặc nửa dưới của cơ thể).
-Sau khi quan sát cơn đột quỵ vài lần, bạn sẽ có thể xác định được một bộ phận cơ thể cụ thể có thể là nguyên nhân gây ra lỗi.</p></div>
+Sau khi quan sát cơn cú đánh vài lần, bạn sẽ có thể xác định được một bộ phận cơ thể cụ thể có thể là nguyên nhân gây ra lỗi.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">4. Tiếp tục quan sát chuyển động, chỉ quan sát bộ phận đã xác định và xác định vấn đề ở một đoạn cơ thể cụ thể.
 Việc giới hạn các phương án sửa lỗi bằng cách xác định nguyên nhân ở một phần cụ thể của cú đánh là chìa khóa để xác định nguyên nhân gây ra lỗi.
 Hơn nữa, đừng bao giờ ngừng phân tích quá sớm.
@@ -1223,7 +1241,7 @@ Tom cảm thấy nếu anh ấy có thể trả lại cú giao bóng của Hoope
 Tom cảm thấy anh ấy không thể chờ đợi quả giao bóng của Hooper mà anh ấy phải tấn công nó, tương tự như cách Bjorn Borg trả giao bóng.
 Borg luôn bắt đầu lượt giao bóng của mình bằng cách đứng sau đường biên khoảng 7 đến 8 feet.
 Khi đối phương giao bóng, Borg tiến về phía trước và thường xuyên chạm bóng ở khoảng 3 đến</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">5 feet sau đường cơ sở.
+            <div class="bilingual-block stanza"><p class="lang-vi">5 feet sau vạch cuối sân.
 Khi làm như vậy, Borg đã tạo ra rất nhiều động lực về phía trước và buộc cơ thể của mình phải tấn công quả giao bóng của đối phương mọi lúc mà không cần phải dùng sức.
 Tuy nhiên, điều quan trọng là sự cân bằng của anh ấy.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Gullikson cho rằng cần phải xem xét xem mình nên đứng ở đâu khi trả một quả giao bóng nặng như của Hooper.
@@ -1319,7 +1337,7 @@ Chương này áp dụng một số kiến thức này để giải quyết mố
             
             <div class="bilingual-block stanza"><p class="lang-vi">Các huấn luyện viên giàu kinh nghiệm biết rằng việc dạy mọi người vung vợt tennis đúng cách không hề dễ dàng như người ta tưởng.
 Có lẽ bạn đã từng trải qua tình huống mà bạn đã làm việc chăm chỉ với một tay vợt về một kỹ thuật nhưng đã thất bại, một phần hoặc toàn bộ.
-Tôi đã từng làm việc rộng rãi với một tay vợt có cú đánh trái tay xoáy xuống khá hiệu quả và muốn phát triển cú đánh chạm đất trái tay xoáy lên.
+Tôi đã từng làm việc rộng rãi với một tay vợt có cú đánh trái tay xoáy xuống khá hiệu quả và muốn phát triển cú đánh nền trái tay xoáy lên.
 Anh ấy hài lòng với sự hướng dẫn và hết lời khen ngợi sự giúp đỡ của tôi ở mọi nơi anh ấy đến.
 Sự thật đáng thất vọng là kết quả chỉ xác nhận rằng tôi không thể giao tiếp với tay vợt.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Anh ấy vẫn cắt cú trái tay nhiều như mọi khi, chỉ có điều bây giờ anh ấy có một pha theo dõi thú vị hơn.</p></div>
@@ -1362,7 +1380,7 @@ Ví dụ: ngay cả khi bạn đã thể hiện sự thay đổi trọng lượn
 Trước khi thể hiện một kỹ năng, hãy nghĩ đến một hoặc hai khía cạnh chuyển động mà bạn muốn người quan sát chú ý.
 Khi trình diễn, hãy chuẩn bị sẵn những gợi ý ngắn gọn, sinh động để thu hút sự chú ý của người học vào các khía cạnh này.
 Các biểu thức ngắn, đầy màu sắc dễ dàng được mã hóa và truy xuất từ bộ nhớ hơn.
-Ví dụ: khi thực hiện một cú đánh chạm đất trái tay xoáy lên, bạn có thể nói, 'Hãy chú ý cách cánh tay của tôi chuyển động như thể tôi đang rút kiếm.'' Gợi ý này nên tập trung sự chú ý của học viên vào cách cánh tay vuốt ve của bạn di chuyển từ thấp lên cao và từ trong ra ngoài thay vì phẳng hoặc xung quanh cơ thể như thường lệ. Sau đó, tay vợt nghĩ về hoặc thực hành kỹ thuật mới này có thể luyện tập trong tâm trí việc rút kiếm và dễ dàng được nhắc nhở về khía cạnh chuyển động quan trọng này. Nếu bạn không cung cấp các tín hiệu có sẵn như vậy, bạn đang tận dụng cơ hội này.
+Ví dụ: khi thực hiện một cú đánh nền trái tay xoáy lên, bạn có thể nói, 'Hãy chú ý cách cánh tay của tôi chuyển động như thể tôi đang rút kiếm.'' Gợi ý này nên tập trung sự chú ý của học viên vào cách cánh tay vuốt ve của bạn di chuyển từ thấp lên cao và từ trong ra ngoài thay vì phẳng hoặc xung quanh cơ thể như thường lệ. Sau đó, tay vợt nghĩ về hoặc thực hành kỹ thuật mới này có thể luyện tập trong tâm trí việc rút kiếm và dễ dàng được nhắc nhở về khía cạnh chuyển động quan trọng này. Nếu bạn không cung cấp các tín hiệu có sẵn như vậy, bạn đang tận dụng cơ hội này.
 rằng tay vợt có thể không tạo ra những hình ảnh cá nhân và do đó hình ảnh sẽ nhanh chóng biến mất.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Một gợi ý đáng nhớ khác cho cú trái tay xoáy lên là một gợi ý mà Vic Braden sử dụng.
 Anh ấy cho rằng vị trí tiếp theo là một phần quan trọng của cú swing này và nhiệt tình nói với các học trò của mình rằng hãy</p></div>
@@ -1392,7 +1410,7 @@ nhìn từ một góc độ duy nhất không thể hiện được hình ảnh 
 Khi bạn lặp lại màn biểu diễn của mình, hãy di chuyển những người quan sát xung quanh bạn để xem một số màn hành quyết từ hai bên và từ phía sau bạn.
 Ngay cả những quan sát từ phía trước cũng có giá trị.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Gợi ý thứ hai là trình bày cách sử dụng kỹ thuật này để xử lý nhiều loại cảnh quay.
-Nếu bạn đang huấn luyện một tay vợt theo một kỹ thuật chuyền bóng mới, không phải tất cả các màn trình diễn của bạn đều phải là những cú vô lê ngang vai được thực hiện ở tốc độ trung bình trừ khi mục đích của bạn là thay đổi kỹ thuật của tay vợt chỉ cho một kiểu chuyền bóng này.
+Nếu bạn đang huấn luyện một tay vợt theo một kỹ thuật vô-lê mới, không phải tất cả các màn trình diễn của bạn đều phải là những cú vô lê ngang vai được thực hiện ở tốc độ trung bình trừ khi mục đích của bạn là thay đổi kỹ thuật của tay vợt chỉ cho một kiểu đánh vô-lê này.
 Nếu bạn làm việc với tay vợt để hình thành một hình ảnh tốt về cách xử lý các cú đánh thấp và cao, phao và cú đánh cứng, các cú đánh giữa sân và lưới, bạn phải lập mô hình cách kỹ thuật mới mà bạn đang ủng hộ điều chỉnh cho phù hợp với những nhu cầu khác nhau này.
 Điều này đúng ngay cả khi ban đầu bạn dự định yêu cầu tay vợt chỉ thực hành những cú vô lê ngang vai.
 Sau khi xem các phiên bản khác nhau của cú đánh, tay vợt sẽ hiểu rõ hơn và hình dung rõ hơn về cách thực hiện các cú vô lê ngang vai cũng như các cú vô lê cao hơn và thấp hơn.</p></div>
@@ -1442,12 +1460,12 @@ Mặc dù tay vợt không nên sử dụng chúng ngoài những buổi tập n
 Nếu không có gì khác, việc xem lại các ví dụ về cách sử dụng thiết bị này có thể giúp bạn nảy ra thêm một số ý tưởng hay hơn.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">1. Sử dụng các thiết bị khuỷu tay để hạn chế việc uốn cong khuỷu tay.
 Điều này có thể làm giảm vấn đề dẫn đầu bằng khuỷu tay và sử dụng quá mức khi vuốt đất.
-2. Yêu cầu các tay vợt thực hành động tác chuyền bóng với bức tường ngay phía sau.
+2. Yêu cầu các tay vợt thực hành động tác vô-lê với bức tường ngay phía sau.
 Bức tường đóng vai trò như một ranh giới hạn chế để ngăn tay vợt thực hiện động tác vung vợt lùi quá mức.
 3. Yêu cầu tay vợt phải ngồi trên ghế khi thực hiện một nửa cú vô lê để khuyến khích uốn cong đầu gối và thực hiện cú đánh.
-4. Treo bóng ở các độ cao và vị trí khác nhau phía trên máy chủ.
+4. Treo bóng ở các độ cao và vị trí khác nhau phía trên người giao bóng.
 Mục đích là để khuyến khích điểm tiếp xúc cao cho những cú giao bóng phẳng và điểm tiếp xúc thấp hơn một chút, qua đầu nhiều hơn cho những cú giao bóng xoáy lên.
-5. Sơ đồ sử dụng đường đi mà vợt nên thực hiện trong các cú đánh chạm đất xoáy lên.
+5. Sơ đồ sử dụng đường đi mà vợt nên thực hiện trong các cú đánh nền xoáy lên.
 Kỹ thuật này hữu ích cho nhiều người, nhưng không phải tất cả.
 Ngay cả với hướng dẫn được đánh dấu, một số tay vợt sẽ ghi một đường đi vợt khác.
 Một ý tưởng dành cho một huấn luyện viên tận tâm nào đó là cắt đường đi của vợt trên một tấm ván ép - một loại khuôn mẫu. Tay vợt có thể nắm lấy tay cầm của vợt được đặt xuyên qua rãnh và sau đó thực hành các cú vung vợt nhất thiết phải chuyển hướng theo hướng hướng lên trên mong muốn.
@@ -1795,7 +1813,7 @@ Việc kích hoạt các mục tiêu cung cấp một kế hoạch chi tiết v�
 Huấn luyện viên có thể lôi kéo tay vợt tham gia vào quá trình lựa chọn các mục tiêu thuận lợi bằng cách hỏi, "Chúng ta cần hoàn thành những gì để đạt được mục tiêu?" Việc liệt kê điểm mạnh và điểm yếu của tay vợt sẽ giúp kích thích thảo luận về giai đoạn nào trong trận đấu của anh ta hoặc cô ta cần nỗ lực nhiều nhất.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Nếu sự không nhất quán dường như là do thiếu kinh nghiệm chứ không phải do kỹ thuật kém, thì mục tiêu khả thi có thể là luyện tập một giờ giao bóng mô phỏng trò chơi 5 ngày một tuần trong 6 tháng.
 (Để đây là một mục tiêu hợp lý, cần phải cân nhắc đến các cơ sở thực hành. Nếu vì lý do nào đó không có đủ không gian sân thi đấu thì có thể cần phải bố trí việc sử dụng mục tiêu trên tường. Để có một số ý tưởng tuyệt vời về việc xây dựng mục tiêu trên tường, hãy tham khảo Hoyle, 1985.)</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Một mục tiêu khác đối với một máy chủ có kỹ thuật phù hợp có thể là: ‘“Trong vòng 3 tuần, tôi sẽ ghi điểm trong bài kiểm tra giao bóng.’’ Điểm kiểm tra giao bóng có thể cung cấp bằng chứng khách quan tốt về việc cải thiện hiệu suất dần dần.
+            <div class="bilingual-block stanza"><p class="lang-vi">Một mục tiêu khác đối với một người giao bóng có kỹ thuật phù hợp có thể là: ‘“Trong vòng 3 tuần, tôi sẽ ghi điểm trong bài kiểm tra giao bóng.’’ Điểm kiểm tra giao bóng có thể cung cấp bằng chứng khách quan tốt về việc cải thiện hiệu suất dần dần.
 (Mặc dù có rất nhiều bài kiểm tra giao bóng quần vợt, nhưng tôi đề xuất bài kiểm tra do Hewitt</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Nếu sự không nhất quán trong cú giao bóng của tay vợt được cho là do kỹ thuật bị lỗi, chẳng hạn như một cú giật không liên quan trong động tác backswing, thì các mục tiêu hỗ trợ phải được thiết kế để sửa lỗi.
 Dưới đây là một số ví dụ:</p></div>
@@ -1887,9 +1905,9 @@ các</p></div>
 Ngoài ra, những tay vợt như vậy sẽ có thể điều chỉnh theo các kiểu đánh thuận tay chưa được thực hành.
 Họ thậm chí còn có thể đánh được những cú đánh chéo sân cao đến thắt lưng cũng như (hoặc giỏi hơn) những tay vợt dành phần lớn thời gian tập luyện chỉ thực hiện những cú đánh chéo sân cao đến thắt lưng.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Phát hiện khác liên quan đến các bài tập thực hành là trình tự mà người biểu diễn thực hành các kỹ năng vận động (Motor Skills) khác nhau hoặc các biến thể của kỹ năng vận động (Motor Skills), ảnh hưởng rõ rệt đến chất lượng học tập.
-Một thứ tự có thể áp dụng khi thực hành các cú đánh khác nhau là đánh nhiều cú từ trên cao, sau đó là một số cú vô lê, sau đó là một số cú chạm đất.
+Một thứ tự có thể áp dụng khi thực hành các cú đánh khác nhau là đánh nhiều cú từ trên cao, sau đó là một số cú vô lê, sau đó là một số cú đánh nền.
 Điều này được gọi là trình tự bị chặn vì tất cả các cảnh quay cùng loại được gộp lại với nhau trong một khối luyện tập.
-Một cách ngược lại để thực hành các cú đánh tương tự là chuyển từ cú đánh này sang cú đánh khác—cú đánh từ trên cao, sau đó là cú vô lê, rồi cú đánh chạm đất, v.v.
+Một cách ngược lại để thực hành các cú đánh tương tự là chuyển từ cú đánh này sang cú đánh khác—cú đánh từ trên cao, sau đó là cú vô lê, rồi cú đánh nền, v.v.
 Phương pháp thực hành này được gọi là giải trình tự hỗn hợp hoặc ngẫu nhiên.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Tay vợt chỉ thực hành giao bóng cũng có thể lựa chọn giữa việc chặn các lần thực hành hoặc trộn lẫn chúng.
 Họ chỉ có thể thực hiện những cú giao bóng phẳng trước, sau đó chỉ có thể thực hiện những cú giao bóng xoáy, điều này sẽ gây cản trở.
@@ -1926,16 +1944,16 @@ Thay vào đó, họ phát triển các bài tập thúc đẩy sự đa dạng 
             <div class="bilingual-block stanza"><p class="lang-vi">Luyện tập với đồng đội Khi các đồng đội đang luyện tập cùng nhau, họ nên cố tình thực hiện những cú đánh đòi hỏi nhiều phản ứng từ nhau.
 Điều này đúng bất kể kiểu đánh mà họ chủ yếu tập luyện.
 Hai ví dụ về bài tập sẽ minh họa cách tối đa hóa khả năng biến đổi khi thực hiện cú đánh.
-Sau khi chúng tôi đã chỉ ra cách thay đổi cách thực hành chuyền bóng và đánh đầu từ trên cao của đối tác, bạn sẽ dễ dàng thấy cách áp dụng các kỹ thuật tương tự cho các cú đánh khác.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Một bài tập chuyền bóng bắt đầu với một máng đựng bóng và một hộp đựng bóng.
+Sau khi chúng tôi đã chỉ ra cách thay đổi cách thực hành đánh vô-lê và đánh đầu từ trên cao của đối tác, bạn sẽ dễ dàng thấy cách áp dụng các kỹ thuật tương tự cho các cú đánh khác.</p></div>
+            <div class="bilingual-block stanza"><p class="lang-vi">Một bài tập vô-lê bắt đầu với một máng đựng bóng và một hộp đựng bóng.
 Người trung chuyển được hướng dẫn thực hiện các cú đánh yêu cầu tất cả các loại cú vô lê.
 Các đường chuyền nên bao gồm các cú đánh mềm và cứng, xoáy lên và xoáy xuống, bóng thấp và cao, cũng như các cú đánh dọc biên và chéo sân.
 Vận động viên vô lê tạo thêm sự đa dạng cho bài tập bằng cách di chuyển xung quanh, sao cho một số cú đánh được thực hiện từ vùng đất cấm, những cú khác từ ngay bên trong đường giao bóng và những cú khác từ rất gần lưới.
-Người chuyền bóng cũng nên cố gắng thay đổi hướng đánh của mình sao cho một số là cú chuyền ngang, một số là cú vô lê dọc và một số là cú vô lê dừng.
+Người đánh vô-lê cũng nên cố gắng thay đổi hướng đánh của mình sao cho một số là cú chuyền ngang, một số là cú vô lê dọc và một số là cú vô lê dừng.
 Tốc độ của các cú vô lê cũng nên khác nhau.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Một bài tập của đối tác dành cho các cú đập trên cao bắt đầu bằng việc thả bộ nạp và đánh các thùy có quỹ đạo đa dạng.
 Các cú lốp bóng phải có phạm vi từ cực cao đến những đường ở ranh giới của những cú vô lê cao.
-Tương tự, một số thùy phải sâu và một số thùy khác phải ngắn.
+Tương tự, một số cú lốp phải sâu và một số cú lốp khác phải ngắn.
 Một số nên được hướng về phía trái tay và một số khác cần phải chuyển nhanh sang phía thuận tay.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Trong khi đó, công việc của người đập phá là kết hợp các pha trả đòn phòng thủ xoay tròn với các pha tiêu diệt mạnh mẽ.
 Việc trả bóng nên được thực hiện chéo bàn, lên giữa và dọc theo đường biên.
@@ -1974,7 +1992,7 @@ Trong một bài tập như vậy, thử thách có thể là cố gắng kiểm
 Bạn yêu thích các cuộc tập hợp và không muốn xúi giục bất cứ điều gì có thể chấm dứt các cuộc biểu tình sớm hơn mức cần thiết.
 Tôi mong bạn ít nhất hãy cân nhắc việc ngăn cản tay vợt của mình luôn đảm nhận các vị trí tập hợp giống hệt nhau.
 Không phải lúc nào cũng để người bắt bóng chạm bụng vào lưới;
-yêu cầu đôi khi họ phải chuyền bóng từ sâu hơn trong sân.
+yêu cầu đôi khi họ phải đánh vô-lê từ sâu hơn trong sân.
 Khuyến khích những người đánh mặt đất của bạn đôi khi thực hiện các cú đánh của họ từ bên trong đường cuối sân và đôi khi từ xa phía sau đường cuối sân.
 Những loại thay đổi nhỏ này có thể được thêm vào các bài tập của bạn một cách dễ dàng và sẽ tạo ra một số biến thể có giá trị.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Một thủ tục không đau đớn khác là thường xuyên luân chuyển các đối tác tập hợp.
@@ -1995,7 +2013,7 @@ Trong khi đánh theo hướng gió đòi hỏi những cú xoay lớn và mạn
             <div class="bilingual-block stanza"><p class="lang-vi">Mặc dù chưa có nghiên cứu nào được thực hiện về tác động của việc luyện tập trong điều kiện có gió, nhưng nghiên cứu về tính biến đổi của thực hành sẽ hỗ trợ mạnh mẽ cho việc tay vợt làm như vậy.
 Những điều chỉnh đột ngột do gió mạnh yêu cầu giúp tay vợt thi đấu trong những điều kiện như vậy— và với lịch thi đấu mùa xuân, các trận đấu có gió mạnh là quy luật hơn là ngoại lệ.
 Các huấn luyện viên có thể đã sai lầm khi cho rằng vì phong độ của các tay vợt bị ảnh hưởng nặng nề nên họ nên chuyển buổi tập vào trong nhà hoặc hoãn lại.
-Các điều kiện bất lợi đòi hỏi phải có sự thích ứng lớn với đột quỵ có lẽ là những trải nghiệm học tập lý tưởng.</p></div>
+Các điều kiện bất lợi đòi hỏi phải có sự thích ứng lớn với cú đánh có lẽ là những trải nghiệm học tập lý tưởng.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Tôi rất tin tưởng vào tầm quan trọng của sự biến đổi trong thực hành mà</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Tôi tin rằng các huấn luyện viên thực sự nên tìm kiếm cơ hội để luyện tập trong gió.
 Nếu tay vợt được trang bị và khởi động đúng cách theo quy định trong phần sinh lý học của cuốn sách này, thì việc luyện tập thường xuyên trong điều kiện gió mạnh là phù hợp đối với những tay vợt có cơ chế vung vợt tốt.</p></div>
@@ -2086,7 +2104,7 @@ Một lợi thế của máy bóng là chúng có sẵn khi các huấn luyện 
 Chúng cũng rất hữu ích khi bạn không thể tìm được đối tác phù hợp đồng đều cho một tay vợt cụ thể.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Một lý do khác để sử dụng máy đánh bóng là chúng là công cụ hỗ trợ luyện tập lý tưởng cho những người mới bắt đầu học một kiểu xoay mới.
 Máy liên tục ném bóng mà hầu như không có sự thay đổi—một cơ hội học tập lý tưởng cho những người mới bắt đầu tập đánh bóng trên mặt đất.
-Người đập bóng và người chuyền bóng có thể sử dụng máy theo cách tương tự, tạo ra yếu tố có thể thay đổi bằng cách cố gắng đánh cả hai đường chéo và dọc.</p></div>
+Người đập bóng và người đánh vô-lê có thể sử dụng máy theo cách tương tự, tạo ra yếu tố có thể thay đổi bằng cách cố gắng đánh cả hai đường chéo và dọc.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Máy bóng cũng rất tuyệt vời để giữ mọi thứ không đổi vì chúng giới thiệu các biến thể hạn chế cho người mới bắt đầu.
 Ví dụ: một cài đặt giữ mọi thứ đều chuẩn ngoại trừ việc tăng dần độ biến thiên theo hướng mang lại tiến trình học tập tốt cho người mới bắt đầu.
 Tương tự như vậy, việc bắn bóng ở các tốc độ khác nhau mang lại một bài tập khởi đầu đáng giá cho tất cả các cú đánh.</p></div>
@@ -2129,20 +2147,20 @@ Có lẽ tay vợt chuyển đổi cú đánh mỗi lần thử thứ hai hoặc
 Không có gì đáng ngạc nhiên, sự xác nhận mạnh mẽ của những nghiên cứu mới này là các chuỗi thực hành hỗn hợp và bị chặn một phần có những lợi thế nhất định so với các chuỗi thực hành bị chặn hoàn toàn.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Để chuẩn bị cho một trận đấu quần vợt, có vẻ như tay vợt nên luyện tập các bài tập hỗn hợp hoàn toàn hoặc chủ yếu là hỗn hợp.
 Tuy nhiên, đây không phải là trường hợp.
-Có thể khẳng định rằng phần lớn các bài tập quần vợt hiện nay đều liên quan đến việc tập luyện bị chặn đối với các cú đánh chạm đất, vô lê, giao bóng, v.v. Nhiều bài tập thậm chí còn vượt ra ngoài việc chặn các kiểu đánh.
+Có thể khẳng định rằng phần lớn các bài tập quần vợt hiện nay đều liên quan đến việc tập luyện bị chặn đối với các cú đánh nền, vô lê, giao bóng, v.v. Nhiều bài tập thậm chí còn vượt ra ngoài việc chặn các kiểu đánh.
 Đôi khi các huấn luyện viên và tay vợt chặn trong các cú đánh, không chỉ các cú đánh mặt đất lặp đi lặp lại hàng loạt mà còn thực sự chặn các cú đánh thuận tay và trái tay.
 Khả năng chặn lớn hơn nữa được thiết kế thành các bài tập trong đó tay vợt được yêu cầu tiếp tục trao đổi trái tay, tiếp tục thu hẹp bài tập để bao gồm tất cả các cú giao bóng trái tay.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Gợi ý luyện tập cụ thể đầu tiên là tay vợt thực hiện nhiều bài tập hơn trong đó họ thường xuyên chuyển từ kiểu đánh hoàn toàn khác này sang kiểu đánh khác.
 Ví dụ, nếu họ được tiếp bóng (Feed), họ nên đánh một hoặc hai cú đánh xuống đất, tiến vào và đánh một vài cú vô lê, đánh một hoặc hai cú qua đầu, sau đó lùi lại vài bước và đánh lại những cú đánh trên mặt đất.
 Trình tự này nên được lặp lại nhiều lần, có thể thay đổi nguồn cấp dữ liệu để yêu cầu cả cú đánh thuận tay và trái tay.
-Các bài tập giao bóng và chuyền bóng và các bài tập trong đó tay vợt luân phiên đánh bóng và đánh bóng là những ví dụ khác về việc chuyển đổi hoàn toàn giữa các cú đánh.</p></div>
+Các bài tập giao bóng và đánh vô-lê và các bài tập trong đó tay vợt luân phiên đánh bóng và đánh bóng là những ví dụ khác về việc chuyển đổi hoàn toàn giữa các cú đánh.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Không có đề xuất rằng tất cả các cuộc tập trận đều là sự kết hợp của các kiểu đánh hoàn toàn khác nhau.
 Có những lý do chính đáng cho việc tập luyện hoàn toàn dành cho giao bóng, lốp bóng, v.v.
 Một lý do là các tay vợt đôi khi có một điểm yếu nghiêm trọng trong các cú sút của họ khiến họ phải tập trung cao độ.
 Nếu tay vợt lốp bóng yếu và các trận đấu quan trọng sắp đến gần, rõ ràng người đó cần dành thời gian để thực hiện các cú lốp bóng.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Một lý do khác để sử dụng các cuộc tập trận bị chặn là chúng có tính dễ quản lý cao.
 Khi không gian sân ở mức cao, một sân có thể chứa bốn người làm việc trên một kiểu đánh cụ thể.
-Bốn máy chủ có thể luyện tập đồng thời hoặc hai vận động viên chuyền bóng có thể hoạt động với hai bộ nạp.
+Bốn người giao bóng có thể luyện tập đồng thời hoặc hai vận động viên đánh vô-lê có thể hoạt động với hai bộ nạp.
 Việc chuyển từ cú đánh này sang cú đánh khác đòi hỏi sân đấu phải di chuyển nhiều hơn và tạo ra nhiều vấn đề hậu cần hơn.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">kỹ năng chuyển đổi trong quần vợt</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Gợi ý cụ thể thứ hai là khi sử dụng các bài tập thuộc một loại bắn, tốt nhất nên tránh bị chặn trong kỹ năng.
@@ -2222,7 +2240,7 @@ Bạn có thể đã từng chứng kiến những trận đấu tập không th
 Ví dụ: một tay vợt giỏi hơn có thể không bị thách thức bởi cú giao bóng của đồng đội, điều này có thể ít lực hơn so với những cú giao bóng gặp phải trong một giải đấu.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Trong những trường hợp như vậy, các bài tập có thể được thiết kế để tăng tính thử thách trong các cú giao bóng của đồng đội bằng cách cho phép họ đứng bên trong đường cuối sân, đánh qua lưới đã hạ thấp hoặc sử dụng bóng hơi mòn (nảy nhanh hơn).
 Những sự thích ứng này cho phép những tay vợt kém kỹ năng hơn có được nhiều cú giao bóng hơn, đánh mạnh hơn và vung cú giao bóng rộng hơn.
-Ngoài ra, máy chủ khoan có thể đứng trên một bệ để thực hiện các cú giao bóng mô phỏng các cú giao bóng cao.</p></div>
+Ngoài ra, người giao bóng khoan có thể đứng trên một bệ để thực hiện các cú giao bóng mô phỏng các cú giao bóng cao.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Nếu một tay vợt là người trả giao bóng tốt và quá dễ dàng đánh trúng người thắng từ cú giao bóng yếu của đồng đội, bạn có thể thấy cần phải hạn chế khu vực mà cú trả giao bóng có thể rơi xuống, từ đó đưa ra cho tay vợt một thử thách.
 Hoặc bạn có thể nói với tay vợt rằng cú trả bóng của họ phải được thực hiện dưới một đường kẻ phía trên lưới hoặc thành công với tỷ lệ phần trăm cao.
 Rõ ràng, với một chút sáng tạo, huấn luyện viên có thể thiết kế điều kiện tập luyện để đáp ứng nhu cầu ở mọi cấp độ khả năng.
@@ -2248,9 +2266,9 @@ Tay vợt phải trải nghiệm những loại tình huống này và khám ph�
             <div class="bilingual-block stanza"><p class="lang-vi">Về bản chất, các cuộc tập trận tạo ra những tình huống không thực tế, giả tạo.
 Những tình huống như vậy tốt cho việc phát triển kỹ năng vận động (Motor Skills) nhưng có xu hướng gây bất lợi cho việc học các kỹ năng ứng dụng.
 Hãy xem xét ví dụ về một tay vợt cú bắt lưới (Volley) đôi.
-Đầu tiên, chỉ từ các bài tập, người chuyền bóng có thể không bao giờ học được các chiến lược trò chơi như vị trí cú bắt lưới (Volley) lý tưởng trong các tình huống trận đấu khác nhau, khi nào nên thực hiện cú vô lê và khi nào nên giao cho đồng đội, hoặc khi nào nên hướng cú vô lê về phía người trong lưới và khi nào nên đánh vào đối thủ sâu hơn về mặt chiến lược.</p></div>
+Đầu tiên, chỉ từ các bài tập, người đánh vô-lê có thể không bao giờ học được các chiến lược trò chơi như vị trí cú bắt lưới (Volley) lý tưởng trong các tình huống trận đấu khác nhau, khi nào nên thực hiện cú vô lê và khi nào nên giao cho đồng đội, hoặc khi nào nên hướng cú vô lê về phía người trong lưới và khi nào nên đánh vào đối thủ sâu hơn về mặt chiến lược.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Thứ hai, các bài tập có thể không chuẩn bị cho tay vợt cú bắt lưới (Volley) dự đoán khi nào đối thủ có thể chồm, lốp bóng hoặc vô lê ở giữa.
-Các cuộc tập trận không đối đầu với người chuyền bóng trong những tình huống này hoặc làm như vậy với xác suất thay đổi.
+Các cuộc tập trận không đối đầu với người đánh vô-lê trong những tình huống này hoặc làm như vậy với xác suất thay đổi.
 Vấn đề là nếu các cú đánh và chuyển động của đối thủ trong bài tập khác với những gì chúng sẽ diễn ra trong trò chơi, thì tay vợt sẽ không được huấn luyện để phản ứng nhanh chóng với các tình huống cụ thể khi chúng xảy ra “thực sự”.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Cuối cùng, các bài tập không giúp phát triển nhiều kỹ năng về nhịp độ tâm lý và sinh lý mà tay vợt phải học.
 Duy trì sự tập trung là một ví dụ điển hình.
@@ -2402,20 +2420,20 @@ Chúng tôi sẽ xem xét các yếu tố này một cách riêng lẻ liên qua
             <div class="bilingual-block stanza"><p class="lang-vi">Để phản ứng, trước tiên mỗi cá nhân phải nhận thức được.
 Bộ não luôn cần một khoảng thời gian để xác định kích thích nhận được.
 Kích thích càng ít rõ ràng thì não càng cần nhiều thời gian.
-Hãy hình dung bản thân bạn ở tư thế chuyền bóng.
+Hãy hình dung bản thân bạn ở tư thế đánh vô-lê.
 Giả sử bạn chọn tập trung vào kiểu vung vợt ngược mà đối thủ của bạn đang thực hiện.
-Giả sử bạn biết cô ấy sẽ gợi ý kiểu chuyền bóng mà cô ấy sẽ thực hiện bằng cách thực hiện các động tác vung vợt ra sau khác nhau.
+Giả sử bạn biết cô ấy sẽ gợi ý kiểu đánh vô-lê mà cô ấy sẽ thực hiện bằng cách thực hiện các động tác vung vợt ra sau khác nhau.
 Trong trường hợp này, kiểu vung vợt ngược của đối thủ là tác nhân kích thích mà bạn phải phản ứng lại.
 Bộ não cần một thời gian sau khi nhận được các xung động thần kinh từ mắt để nói, 'À, cô ấy đang thực hiện một cú giật lùi lớn, có nghĩa là một cú trả bóng chéo sân.'' Cú vung sau của đối phương càng ít đặc trưng rõ ràng thì bạn sẽ càng mất nhiều thời gian để nhận dạng. Ví dụ, tín hiệu có thể ít rõ ràng hơn nếu động tác vung vợt sau chỉ khác một chút so với các kiểu vung vợt khác, hoặc nếu nó được ngụy trang bởi các chuyển động khác.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Yếu tố 2: Lựa chọn phản hồi cần thực hiện</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Sau khi não đã xác định được tác nhân kích thích, việc tiếp theo nó phải làm là lựa chọn phản ứng thích hợp.
-Giả sử bạn lại ở tư thế chuyền bóng và đã xác định được tác nhân kích thích là biểu thị một cú sút chéo sân.
+Giả sử bạn lại ở tư thế đánh vô-lê và đã xác định được tác nhân kích thích là biểu thị một cú sút chéo sân.
 Phản ứng đúng với việc đạp lùi, đứng yên, di chuyển về phía vạch, di chuyển theo đường chéo về phía trước hay không có phản ứng nào ở trên?
 Nghiên cứu đã chỉ ra rằng quá trình lựa chọn này đòi hỏi thời gian, góp phần gây ra sự chậm trễ về thời gian phản ứng (Reaction Time) và rằng tay vợt phải chọn càng nhiều phản hồi thì thời gian đưa ra quyết định càng lâu.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Hãy so sánh điều này với việc mò kim đáy bể.
 Nếu ngăn xếp lớn, việc tìm kiếm sẽ mất nhiều thời gian.
 Nếu đống chỉ có một vài sợi cỏ khô thì việc tìm kiếm sẽ ngắn gọn.
-Nếu bạn, với tư cách là người chuyền bóng, không biết phản ứng nào là phù hợp thì bộ não của bạn phải lựa chọn từ vô số khả năng.
+Nếu bạn, với tư cách là người đánh vô-lê, không biết phản ứng nào là phù hợp thì bộ não của bạn phải lựa chọn từ vô số khả năng.
 Danh sách các phản ứng vừa được trích dẫn có thể được mở rộng để bao gồm cúi người, nhảy lên và xuống hoặc bất kỳ chuyển động thể chất nào khác mà cơ thể bạn có thể thực hiện.
 Mặt khác, nếu bạn đã chuẩn bị tinh thần để lựa chọn giữa hai hoặc ba phản ứng thích hợp, bạn sẽ có thể phản ứng nhanh hơn khi nhìn thấy một cú vô lê thành hình.
 Việc giảm số lượng câu trả lời có thể có mà bạn cần chọn sẽ giúp bộ não của bạn đưa ra quyết định nhanh hơn.</p></div>
@@ -2453,8 +2471,8 @@ Việc chờ đợi tín hiệu bóng đáng tin cậy này sẽ giúp họ khô
 Chỉ trong những tình huống cơ bản bất thường, việc chờ đợi tín hiệu bóng mới khiến tay vợt khó phản ứng đủ nhanh.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Tay vợt quần vợt cũng dựa nhiều vào tín hiệu bóng khi trả giao bóng.
 Người trả giao bóng thường không được nhìn thấy di chuyển theo một hướng khi bóng đi theo hướng khác, điều này cho thấy rằng họ chờ xem hướng của quả bóng trước khi di chuyển.
-Tuy nhiên, cũng có một số tình huống trả giao bóng nhất định trong đó việc chờ đợi bóng.cues tốn quá nhiều thời gian, chẳng hạn như khi một tay vợt đang thi đấu với một máy chủ mạnh trên bề mặt nhanh.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Chúng tôi đã chứng minh rằng tín hiệu bóng đóng một vai trò quan trọng trong các cuộc tập hợp động tác chạm đất, khi trả giao bóng và trong các tình huống khác khi hạn chế về thời gian không quá nghiêm trọng.
+Tuy nhiên, cũng có một số tình huống trả giao bóng nhất định trong đó việc chờ đợi bóng.cues tốn quá nhiều thời gian, chẳng hạn như khi một tay vợt đang thi đấu với một người giao bóng mạnh trên bề mặt nhanh.</p></div>
+            <div class="bilingual-block stanza"><p class="lang-vi">Chúng tôi đã chứng minh rằng tín hiệu bóng đóng một vai trò quan trọng trong các cuộc tập hợp động tác đánh nền, khi trả giao bóng và trong các tình huống khác khi hạn chế về thời gian không quá nghiêm trọng.
 Tiếp theo, chúng tôi sẽ giải quyết những gì chúng tôi có thể làm để cải thiện thời gian phản ứng (Reaction Time) của tay vợt với tín hiệu bóng.
 Về cơ bản, có hai loại tín hiệu bóng mà tay vợt có thể sử dụng để phản ứng nhanh: tín hiệu quỹ đạo và tín hiệu lờ mờ.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Tín hiệu quỹ đạo là những tín hiệu mà tay vợt nhận được khi quan sát đường bay của bóng.
@@ -2538,17 +2556,17 @@ Có lẽ tốt hơn nữa, hãy để tay vợt của bạn xem đối thủ tư
 Ngoài ra, trong khi chơi thực tế, đối thủ có thể tiếp thu tín hiệu của tay vợt của bạn nhanh hơn tay vợt của bạn học được tín hiệu của họ.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Khi quan sát đối thủ, tay vợt của bạn nên đặt mình ở vị trí phía sau cuối sân đối diện với người mà họ sẽ thi đấu.
 Phối cảnh này thể hiện tốt nhất những tín hiệu mà đối thủ có thể phản bội.
-Ví dụ: nhận ra rằng đối thủ luôn thực hiện các cú chuyền bóng dọc từ một vị trí trống và các cú tạt bóng từ một vị trí đóng có thể giúp tay vợt dự đoán và chặn các cú chuyền bóng mà họ có thể trở thành nạn nhân.</p></div>
+Ví dụ: nhận ra rằng đối thủ luôn thực hiện các cú vô-lê dọc từ một vị trí trống và các cú tạt bóng từ một vị trí đóng có thể giúp tay vợt dự đoán và chặn các cú vô-lê mà họ có thể trở thành nạn nhân.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Tay vợt của bạn cần biết những gì cần chú ý khi xem đối thủ trong tương lai thi đấu.
 Những chuyển động nào của đối thủ thường cho biết cú đánh nào sẽ được thực hiện?
 Không có nghiên cứu đã trả lời câu hỏi này.
 Tuy nhiên, có một số tín hiệu mà tay vợt có thể sử dụng một cách đáng tin cậy để chống lại hầu hết các đối thủ.
 Một trường hợp xảy ra khi họ đang nhận giao bóng.
-Nhiều máy chủ sẽ thay đổi tốc độ và độ xoáy của các cú giao bóng của họ, điều này gây ra vấn đề về phản ứng đối với người nhận vì họ thường chuẩn bị khác nhau để phản ứng với các cú giao bóng khác nhau.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Mức độ xoáy mà máy chủ đặt lên bóng phụ thuộc chủ yếu vào vị trí thực hiện tiếp xúc.
+Nhiều người giao bóng sẽ thay đổi tốc độ và độ xoáy của các cú giao bóng của họ, điều này gây ra vấn đề về phản ứng đối với người nhận vì họ thường chuẩn bị khác nhau để phản ứng với các cú giao bóng khác nhau.</p></div>
+            <div class="bilingual-block stanza"><p class="lang-vi">Mức độ xoáy mà người giao bóng đặt lên bóng phụ thuộc chủ yếu vào vị trí thực hiện tiếp xúc.
 Bóng càng được tiếp xúc về phía sau đầu thì độ xoáy càng nhiều và tốc độ bóng càng giảm.
 Càng ở xa cơ thể (trong phạm vi hợp lý), bóng sẽ bị đánh càng phẳng và cứng hơn.
-Vì máy chủ không thể làm gì để che giấu vị trí của cú ném nên đây là tín hiệu của đối thủ.
+Vì người giao bóng không thể làm gì để che giấu vị trí của cú ném nên đây là tín hiệu của đối thủ.
 Tay vợt của bạn có thể và nên học cách sử dụng nó.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Gợi ý thứ hai đáng tin cậy của đối thủ đối với hầu hết tay vợt là chuẩn bị cú đánh muộn.
 Khi quan sát những người mới bắt đầu chơi, có thể thấy rõ ràng là họ không lấy vợt kịp thời để đánh quả bóng đang đến gần.
@@ -2559,7 +2577,7 @@ Do đó, những tay vợt nhận ra sự chuẩn bị cú đánh muộn của �
 Tuy nhiên, đôi khi, tất cả tay vợt, bất kể khả năng, đều may mắn có thể thực hiện được một cú sút.
 Có thể thấy rõ rằng họ không có thời gian để lấy lại vợt hoặc định vị để phát bóng ra phía trước.
 Đây là điều quan trọng mà tay vợt cần chú ý.
-Khi đối thủ chậm cả trong việc chuẩn bị vợt và chọn vị trí, họ có thể sẽ phải thực hiện cú vô lê hoặc cú đánh chạm đất dọc đường biên.
+Khi đối thủ chậm cả trong việc chuẩn bị vợt và chọn vị trí, họ có thể sẽ phải thực hiện cú vô lê hoặc cú đánh nền dọc đường biên.
 Điều này đặc biệt đúng đối với những cú đánh trái tay vì cần phải chạm bóng xa hơn về phía trước để thực hiện cú đánh trái tay chéo góc.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Tín hiệu tình huống trò chơi Loại tín hiệu thứ ba có thể đóng vai trò kích thích tay vợt bắt nguồn từ xác suất sự kiện và cung cấp phương tiện để đưa ra những phỏng đoán có căn cứ.
 Nếu chúng ta biết rằng một sự kiện cụ thể có nhiều khả năng xảy ra hơn một sự kiện khác, chúng ta có thể phản ứng dựa trên thông tin này.
@@ -2573,7 +2591,7 @@ Xem xét những hạn chế của bóng và tín hiệu của đối phương, 
             <div class="bilingual-block stanza"><p class="lang-vi">Trong loạt phim truyền hình của Vic Braden, "Quần vợt cho tương lai", một phát hiện thú vị đã được báo cáo minh họa tầm quan trọng của các tín hiệu tình huống trong trận đấu. Các nhà nghiên cứu của Braden đã gắn một thiết bị đo trực tiếp vào đồng tử của mắt Vitas Gerulaitis. Dụng cụ này có khả năng theo dõi xem Gerulaitis đang hướng ánh mắt của anh ấy đến đâu trong khi thực hiện cú vô lê. Gerulaitis, tình cờ, được coi là một trong những tay vợt phản ứng nhanh nhất trong quần vợt chuyên nghiệp. Các nhà nghiên cứu muốn tìm ra đối thủ nào
 những tín hiệu mà Gerulaitis đọc được đã giúp anh ấy phản ứng nhanh chóng và thành công.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Các nhà nghiên cứu tuyên bố đã phát hiện ra rằng Gerulaitis bình thường thậm chí không nhìn vào người chạm đất, chứ chưa nói đến một bộ phận cơ thể cụ thể.
-Vào thời điểm đối thủ của anh ta đang thực hiện một cú chuyền bóng,</p></div>
+Vào thời điểm đối thủ của anh ta đang thực hiện một cú vô-lê,</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Gerulaitis thường nhìn vào khán đài hoặc xung quanh, điều này cho thấy rõ ràng rằng anh ta thậm chí không cố gắng sử dụng các tín hiệu của đối thủ mà đúng hơn là đang sử dụng các tín hiệu về tình huống trận đấu.
 Anh ấy phản ứng rất nhanh vì anh ấy đã đoán trước được điều gì sẽ xảy ra.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Làm cách nào để tay vợt có thể học được những tín hiệu tình huống quan trọng trong trò chơi này để phản ứng nhanh như Gerulaitis?
@@ -2612,7 +2630,7 @@ Ví dụ, họ biết chính xác kiểu chuyển động cần thực hiện kh
 Tương tự, họ có sẵn phản hồi cụ thể khi xác định được đường chuyền chéo sân.
 Hãy xem xét các ví dụ sau.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Giả sử bạn đang ở trong tình huống vui vẻ khi đối thủ của mình gặp rắc rối.
-Cô ấy đang ở trên lưới và bạn có một cú đánh chạm đất dễ dàng để thực hiện từ bên trong đường cuối sân.
+Cô ấy đang ở trên lưới và bạn có một cú đánh nền dễ dàng để thực hiện từ bên trong đường cuối sân.
 Đối thủ phải dấn thân theo hướng này hay hướng khác.
 Nhiệm vụ của bạn là đợi cho đến khi cô ấy phạm lỗi rồi đánh bóng theo hướng khác.
 Để có thể đợi đủ lâu để đối thủ di chuyển, bạn cần phải tự lập trình.
@@ -2622,7 +2640,7 @@ Bạn đang đưa ra cho bộ não một menu thời gian phản ứng (Reaction
 Nếu bạn không suy nghĩ trước tình huống, bạn có thể không đợi được cho đến khi đối thủ phạm tội, bởi vì một khi cô ấy di chuyển (hoặc không di chuyển), bạn phải chọn một phản ứng thích hợp từ số lượng lớn hơn các khả năng, điều này khiến não mất nhiều thời gian hơn.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Lấy ví dụ thứ hai.
 Bạn đang gặp khó khăn trong việc phản ứng với một cú giao bóng mạnh trong một trận đấu đôi.
-Bạn có thể phản ứng nhanh hơn nếu bạn quyết định trước loại lợi nhuận sẽ thực hiện.
+Bạn có thể phản ứng nhanh hơn nếu bạn quyết định trước loại lợi thế sẽ thực hiện.
 Ví dụ: bạn có thể muốn chặn cú đánh chéo bàn ở người giao bóng.
 Về bản chất, bạn đã giảm tình huống lựa chọn đáp án phức tạp thành tình huống có hai phản ứng: một đường chéo thuận tay bị chặn hoặc một đường chéo trái tay bị chặn.
 Tất nhiên, nếu đối thủ trực tuyến đang tạo ra vấn đề bằng cách thường xuyên săn trộm, bạn có thể cần phải mở rộng kích thước menu lựa chọn phản hồi của mình ít nhất một lần.
@@ -2644,9 +2662,9 @@ Họ có thể tự hỏi, Có phải tôi đến trễ vì không có ý địn
             <div class="bilingual-block stanza"><p class="lang-vi">Một lời cảnh báo về quá trình lựa chọn phản hồi.
 Tay vợt nên lưu ý rằng khi chuẩn bị thực hiện một số phản hồi, họ sẽ phản ứng nhanh hơn nhưng lại phản ứng chậm hơn với những phản hồi mà họ chưa chuẩn bị.
 Chắc chắn có một sự đánh đổi.
-Ví dụ: giả sử bạn đang ở vị trí chuyền bóng và đã giới hạn các lựa chọn của mình là di chuyển để cắt đường chéo hoặc di chuyển để che đường biên.
+Ví dụ: giả sử bạn đang ở vị trí đánh vô-lê và đã giới hạn các lựa chọn của mình là di chuyển để cắt đường chéo hoặc di chuyển để che đường biên.
 Bằng cách đặt trong đầu hai phản ứng này ở trạng thái sẵn sàng, bạn sẽ có thể bắt đầu chúng nhanh hơn những gì bạn có thể làm.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Tuy nhiên, nếu đối thủ làm bạn ngạc nhiên bằng một cú lốp bóng, phản ứng của bạn với nó sẽ mất nhiều thời gian hơn đáng kể so với khi bạn không lường trước được hai cú chuyền bóng.</p></div>
+            <div class="bilingual-block stanza"><p class="lang-vi">Tuy nhiên, nếu đối thủ làm bạn ngạc nhiên bằng một cú lốp bóng, phản ứng của bạn với nó sẽ mất nhiều thời gian hơn đáng kể so với khi bạn không lường trước được hai cú vô-lê.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Hãy kết thúc phần này bằng cách nhắc lại rằng việc giới hạn các lựa chọn phản ứng có thể đóng một vai trò cực kỳ quan trọng trong việc giảm thời gian phản ứng (Reaction Time).
 Khả năng này thường không được tay vợt và người hướng dẫn cân nhắc, tuy nhiên những tay vợt giỏi nhất chắc chắn sẽ tận dụng nó để làm lợi thế cho mình trong nhiều tình huống.
 Phải thừa nhận rằng, việc sử dụng các tín hiệu tình huống trong trò chơi là một loại quy trình cờ bạc, vì vậy nếu tay vợt không ở trong tình huống đòi hỏi họ phải phản ứng đặc biệt nhanh thì họ không nên để mình mắc phải những tính toán sai lầm có thể xảy ra.
@@ -2667,7 +2685,7 @@ Trong cú bắt lưới (Volley), một tay vợt có thể chỉ cần bước 
 Một tay vợt khác có thể uốn cong đầu gối của mình, nhảy lên, di chuyển một hoặc hai bước, xoay vợt một chút, sử dụng sự kết hợp nào đó của khớp cổ tay-khuỷu tay-vai để vung về phía trước, sau đó thực hiện một động tác tiếp theo lạ mắt kèm theo chuyển động đầu đặc trưng.
 Sự khác biệt về độ phức tạp của chuyển động chắc chắn hiện diện trong tất cả các giai đoạn của trò chơi—trong cách mọi người chạy, trượt sang một bên, lùi lại, chạm đất, v.v.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Người hướng dẫn thường cố gắng đơn giản hóa các chuyển động của học sinh, thường là vì họ tin rằng các chuyển động quá mức sẽ làm tăng thời gian chuyển động (Movement Time) của tay vợt.
-Một cú giật bổ sung trong cú đánh sau sẽ được sửa chữa vì nó được coi là làm chậm cú đánh.
+Một cú giật bổ sung trong cú đánh sau sẽ được sửa chữa vì nó được coi làm chậm cú đánh.
 Học sinh chuẩn bị đánh từ trên cao được hướng dẫn giữ vợt sau đầu vì động tác đập bóng có thể được hoàn thành nhanh nhất từ vị trí đó.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Những hướng dẫn như thế này hữu ích trong việc giảm thời gian di chuyển cũng có thể làm giảm thời gian phản ứng (Reaction Time).
 Thời gian tổ chức phản ứng cần thiết để thực hiện một cú vô lê nhỏ gọn ít hơn nhiều so với một cú vô lê phức tạp.
@@ -2813,7 +2831,7 @@ Một cách là rút ngắn backswing của họ.
 Một cú vung mạnh từ cú backswing ngắn sẽ đánh bóng ở tốc độ tương tự như một cú swing dài hơn được thực hiện ở tốc độ nhẹ hơn.
 Mặc dù cả hai cú xoay đều dẫn đến vận tốc bóng như nhau, nhưng cú xoay nhanh và ngắn hơn sẽ dễ dàng kiểm soát thời gian và kiểm soát hơn nhiều.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Một cách khác để vung vợt mạnh mà không đánh quá mạnh là hướng năng lượng cơ bắp vào việc tạo ra một cú xoáy lên.
-Tay vợt có thể vung vợt rất mạnh ở một cú đánh chạm đất hoặc giao bóng mà không đánh quá mạnh nếu đường vung vợt không trực tiếp vào bóng.
+Tay vợt có thể vung vợt rất mạnh ở một cú đánh nền hoặc giao bóng mà không đánh quá mạnh nếu đường vung vợt không trực tiếp vào bóng.
 Ưu điểm thực tế của cách topspin giúp tay vợt giữ bóng tốt hơn trong cuộc chơi bằng cách cho phép họ đánh bóng cao hơn lưới đã được các tay vợt và huấn luyện viên công nhận rõ ràng.
 Nghiên cứu về động cơ ủng hộ thực hành này vì một lý do khác.
 Nó cho phép co cơ mạnh mẽ và thực hiện cú xoay nhanh, chính xác mà không cần đánh bóng quá mạnh.</p></div>
@@ -2836,7 +2854,7 @@ Bằng mọi cách, tay vợt nên tiếp tục vung mạnh.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Huấn luyện viên nên khuyến khích phát triển những cú xoay người thoải mái, gọn, mạnh mẽ, dẫn đến những cú đánh sắc nét hơn.
 Khuyến nghị này áp dụng cho tất cả các cú đánh trừ những cú đánh tinh tế nhất, chẳng hạn như những cú vô lê và có lẽ một số cú lốp bóng.
 Hãy để ý xem tay vợt của bạn có thói quen giảm bớt một số kiểu đánh nhất định.
-Bất cứ ai nới lỏng các cú giao bóng, đánh qua đầu, vô lê hoặc các cú đánh chạm đất đều sẽ gặp rắc rối cả về thời gian và kiểm soát vợt.
+Bất cứ ai nới lỏng các cú giao bóng, đánh qua đầu, vô lê hoặc các cú đánh nền đều sẽ gặp rắc rối cả về thời gian và kiểm soát vợt.
 Ngay cả một số tay vợt to lớn của bạn cũng có thể trở nên yếu đuối khi chơi một cú vô lê thuận tay.
 Có lẽ bạn đã gọi đây là “khuỷu tay bê tông cũ”. Những tay vợt khác có thể đẩy nhẹ hoặc lướt vào các cú trái tay của họ.
 Hãy theo dõi kỹ nhất cú giao bóng thứ hai của họ.
@@ -2845,7 +2863,7 @@ Việc giảm bớt bất kỳ cảnh quay nào trong số này sẽ tạo ra nh
             <div class="bilingual-block stanza"><p class="lang-vi">Nếu bạn vẫn còn hoài nghi về nghiên cứu và những khuyến nghị đã được đưa ra, hãy thử tự mình thực hiện thí nghiệm sau đây.
 Đấu tập với một trong những tay vợt của bạn hoặc một người bạn kiên nhẫn.
 Cố gắng đánh khoảng một nửa tốc độ bằng cách thực hiện động tác vung vợt về phía sau hoàn toàn bình thường và thực hiện động tác đánh trước dễ dàng.
-Thực hiện điều này cho các cú giao bóng đầu tiên, các cú giao bóng thứ hai, các cú đánh qua đầu, các cú vô lê và các cú đánh chạm đất thuận tay và trái tay.
+Thực hiện điều này cho các cú giao bóng đầu tiên, các cú giao bóng thứ hai, các cú đánh qua đầu, các cú vô lê và các cú đánh nền thuận tay và trái tay.
 Mặc dù những quả bóng được đánh nhẹ của bạn có nhiều khả năng xảy ra lỗi về vị trí hơn, nhưng bạn gần như chắc chắn sẽ thấy rằng mình đánh sai và đánh sai một số lượng lớn các cú đánh đáng lo ngại.
 Hãy để trải nghiệm này chứng minh cho bạn những kết quả nghiên cứu về vận động liên quan đến ảnh hưởng của chuyển động nhanh đến thời gian và độ chính xác.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">SINH LÝ VÀ TENNIS</p></div>
@@ -3566,7 +3584,7 @@ Suy cho cùng, mục tiêu của họ đặt ra giới hạn về tiềm năng c
 Để có được thể lực, cần phải thực hiện một cường độ luyện tập vượt quá mức mà cơ thể thường quen.
 Rõ ràng, nếu cường độ tập luyện quá nhẹ, hiệu suất sẽ không cải thiện đáng kể.
 Tuy nhiên, nếu tải quá nặng, tay vợt sẽ trở nên mệt mỏi và không thể hiện được sự cải thiện như mong đợi.
-Huấn luyện viên phải tìm một môi trường vui vẻ mà sức đề kháng khi tập luyện của mỗi cá nhân ở mức cao nhất ngay từ đầu và sau đó tăng dần khi năng lực thể lực của tay vợt được cải thiện.</p></div>
+Huấn luyện viên phải tìm một môi trường vui vẻ mà kháng lực khi tập luyện của mỗi cá nhân ở mức cao nhất ngay từ đầu và sau đó tăng dần khi năng lực thể lực của tay vợt được cải thiện.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Nguyên tắc tập luyện thể dục quần vợt * « 173 trong suốt quá trình của chương trình đào tạo.
 Các cơ sẽ phản ứng với khả năng và hiệu quả tăng lên.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Tính đặc hiệu là rất quan trọng đối với một chương trình thể dục.
@@ -3748,17 +3766,17 @@ Trao phần thưởng (bất cứ thứ gì từ một bài học miễn phí đ
 Ví dụ, tại Học viện quần vợt Nick Bollettieri, cuộc thi tập luyện rất căng thẳng.
 Một số tay vợt đưa ra thử thách trong bữa tối</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Vị trí xuất phát nước rút theo mọi hướng</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Dấu trung tâm trên đường cơ sở.
+            <div class="bilingual-block stanza"><p class="lang-vi">Dấu trung tâm trên vạch cuối sân.
 Trở lại vị trí này sau mỗi lần chạy nước rút, đảo ngược hướng bạn chạy.
 Lưu ý: Bạn phải chạm vào từng dòng bạn chạy tới và cả vị trí xuất phát mỗi khi bạn đi qua nó.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">1. Chạy nước rút đến giao lộ ''T'' (vạch giao bóng và vạch giữa), sau đó bước sang bên đường giao bóng đến lề đơn bên phải và chạm vào. Quay trở lại vị trí bắt đầu theo cùng một mô hình.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">2. Lặp lại 1, nhưng sang lề bên trái của đĩa đơn.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">3. Chạy theo đường chéo đến vạch giao bóng và đường biên đánh đơn (phải), chạm, sau đó đạp ngược theo đường chéo trở lại điểm xuất phát.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Bước qua đường cơ sở để chạm vào đường biên đơn bên phải.</p></div>
+            <div class="bilingual-block stanza"><p class="lang-vi">Bước qua vạch cuối sân để chạm vào đường biên đơn bên phải.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Lặp lại 3, nhưng ở đường chéo bên trái (đường biên đơn và đường giao bóng).</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Lặp lại 4, nhưng bước sang lề bên trái của đĩa đơn.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Chạy theo đường chéo tới lưới và (phải) nhân đôi đường biên, chạm bóng, sau đó đạp ngược theo đường chéo để bắt đầu.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Bước ngang qua đường cơ sở để chạm vào đường biên đôi bên phải.</p></div>
+            <div class="bilingual-block stanza"><p class="lang-vi">Bước ngang qua vạch cuối sân để chạm vào đường biên đôi bên phải.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Lặp lại 7, nhưng theo đường chéo bên trái (đôi bên lề và lưới).</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Lặp lại 8, nhưng bước sang ngang để chạm vào đường biên đôi bên trái.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Để hoàn thành bài tập, hãy chạy nước rút về phía trước để chạm vào lưới, sau đó lùi về vị trí xuất phát.</p></div>
@@ -3776,16 +3794,16 @@ Huấn luyện viên nên thiết lập các mục tiêu thực tế cho từng 
             <div class="bilingual-block stanza"><p class="lang-vi">Đường đơn bên lề—trái Đường chéo dài—phải</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Đường đôi bên lề—phải Đường chéo dài—trái</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Hình 14.1 Chạy nước rút theo mọi hướng.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">10. Đường biên đôi—trái 11. Lưới—đường cơ sở (kết thúc)</p></div>
+            <div class="bilingual-block stanza"><p class="lang-vi">10. Đường biên đôi—trái 11. Lưới—vạch cuối sân (kết thúc)</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Vị trí xuất phát nước rút ở đường tiến/lùi</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Để cải thiện chuyển động tiến và lùi trên sân.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">1. Chạy nước rút về tuyến dịch vụ.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">2. Đưa đường dịch vụ lùi về đường cơ sở.</p></div>
+            <div class="bilingual-block stanza"><p class="lang-vi">2. Đưa đường dịch vụ lùi về vạch cuối sân.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">4. Bàn đạp ngược lưới vào đường dây dịch vụ.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">5. Chạy nước rút đường dây vào lưới.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">6 .
 Đạp ngược từ lưới đến điểm dừng.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">7. Chạy lùi về đường cơ sở.</p></div>
+            <div class="bilingual-block stanza"><p class="lang-vi">7. Chạy lùi về vạch cuối sân.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">8. Đạp lùi một lần nữa về điểm dừng (kết thúc).</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Nam: 18,82 giây Nữ: 20,90 giây</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Gợi ý kêu gọi .
@@ -3812,8 +3830,8 @@ Bởi vì tất cả tay vợt đều có những lĩnh vực cụ thể cần t
             <div class="bilingual-block stanza"><p class="lang-vi">Đây là một bài tập khó, được thiết kế để cải thiện tốc độ về phía trước, khởi động, dừng, giữ thăng bằng và sức bền.
 Bắt đầu ở vạch cuối và chạy nước rút về phía đường giao bóng và quay lại.
 Sau đó chạy nhanh vào lưới và quay trở lại.
-Sau đó, đến đường giao bóng của bên kia và quay trở lại đường cơ sở.
-Sau đó đến đường cơ sở đối diện và quay trở lại.
+Sau đó, đến đường giao bóng của bên kia và quay trở lại vạch cuối sân.
+Sau đó đến vạch cuối sân đối diện và quay trở lại.
 Sau đó bắt đầu lại, đảo ngược thứ tự của các lần chạy nước rút.
 Hãy nhớ—chúc vui vẻ!</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Hình 14.3 Sát thủ phía trước để bắt đầu và dừng nổ.</p></div>
@@ -3851,7 +3869,7 @@ Họ luôn luôn trên đầu ngón chân của họ.
 Bắt đầu bằng cách thực hiện bài tập này 20 lần và tăng dần.
 Những người chuyên nghiệp thường sẽ thực hiện từ 75 đến 100. Để làm cho bài tập trở nên thú vị hơn, hãy thực hiện theo âm nhạc.</p></div>
             
-            <div class="bilingual-block stanza"><p class="lang-vi">Điều này cũng giống như bài tập ở trên, ngoại trừ việc tay vợt thay vì chuyền bóng phải uốn cong đầu gối để đánh thuận tay thấp và trái tay tương ứng.
+            <div class="bilingual-block stanza"><p class="lang-vi">Điều này cũng giống như bài tập ở trên, ngoại trừ việc tay vợt thay vì đánh vô-lê phải uốn cong đầu gối để đánh thuận tay thấp và trái tay tương ứng.
 Đây là một bài tập tuyệt vời để buộc tay vợt phải uốn cong, đặc biệt nếu học sinh của bạn thường lười biếng và chỉ đánh rơi đầu vợt.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Hình 14.6 Yannick Noah trình diễn cách cúi xuống để chơi bóng thấp.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">MÁY KHOAN CHẠY CHÉO</p></div>
@@ -3883,7 +3901,7 @@ Tăng dần số lượng khi tay vợt cải thiện thể lực.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">MÁY KHOAN PHỤC HỒI BÓNG</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Mục tiêu của các bài tập này là nhặt tất cả các quả bóng, cho chúng vào rổ càng nhanh càng tốt, sau đó đặt chúng trở lại vị trí của chúng trên sân.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">bài tập phục hồi theo thời gian trong quần vợt</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Bắt đầu từ đường cơ sở.
+            <div class="bilingual-block stanza"><p class="lang-vi">Bắt đầu từ vạch cuối sân.
 Chạy nước rút để nhặt quả bóng đầu tiên.
 Đạp ngược về vạch cuối sân và đặt bóng vào rổ.
 Thực hiện theo quy trình này với tất cả các quả bóng khác.
@@ -4145,14 +4163,14 @@ Tất cả các lần chạy nước rút 10 giây có thể được hoàn thà
             <div class="bilingual-block stanza"><p class="lang-vi">Tần suất tập luyện mỗi tuần Một chương trình tập luyện ngắt quãng đơn giản dành cho tay vợt quần vợt được trình bày trong Bảng 14.1.
 Một nơi tốt để bắt đầu là trên sân tennis.
 Chỉ cần gỡ mạng xuống và bạn đã sẵn sàng để bắt đầu.
-Bắt đầu từ vạch cuối mỗi lần, yêu cầu các tay vợt của bạn thực hiện tám lần chạy nước rút đến vạch giao bóng, sáu lần chạy nước rút vào lưới, bốn lần chạy nước rút đến vạch giao bóng ở đầu đối diện và hai lần chạy nước rút đến đường cơ sở đối diện.
+Bắt đầu từ vạch cuối mỗi lần, yêu cầu các tay vợt của bạn thực hiện tám lần chạy nước rút đến vạch giao bóng, sáu lần chạy nước rút vào lưới, bốn lần chạy nước rút đến vạch giao bóng ở đầu đối diện và hai lần chạy nước rút đến vạch cuối sân đối diện.
 Sau đó làm việc ngược lại.
 Nếu bạn muốn, hãy thực hiện bài tập này để mô phỏng các chuyển động của sân—chạy sang một bên, chạy lùi, theo đường chéo hoặc thực hiện các động tác chéo.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Sự khác biệt giữa các cá nhân khiến việc phát triển các chương trình ''sách dạy nấu ăn'''' đáp ứng mọi khả năng là không khôn ngoan. Thay vào đó, bằng cách áp dụng các hướng dẫn cơ bản và vận dụng các biến số, bạn có thể thiết kế các chương trình đào tạo riêng lẻ để phù hợp với mức độ thể lực hiện tại và khả năng phục hồi của các tay vợt của mình.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Bảng 14.1 Chương trình tập luyện ngắt quãng quần vợt</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Bộ điều phối Số lần lặp lại Khoảng cách Thời gian Thời gian</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">1 8 Đường cơ sở (Bl) đến đường dây dịch vụ 3 giây 12 giây</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">2, 6 BI đến mạng 5 giây 20 giây 3 4 BI đến đường dây dịch vụ (đầu kia) 8 giây 30 giây 4 2 BI đến đường cơ sở (đầu kia) 10 giây AO giây 5 4 Bl đến đường dây dịch vụ (đầu kia) 8 giây 30 giây 6 6 BI đến mạng 5 giây 20 giây 7 8 BI đến đường dây dịch vụ 3 giây 12 giây</p></div>
+            <div class="bilingual-block stanza"><p class="lang-vi">2, 6 BI đến mạng 5 giây 20 giây 3 4 BI đến đường dây dịch vụ (đầu kia) 8 giây 30 giây 4 2 BI đến vạch cuối sân (đầu kia) 10 giây AO giây 5 4 Bl đến đường dây dịch vụ (đầu kia) 8 giây 30 giây 6 6 BI đến mạng 5 giây 20 giây 7 8 BI đến đường dây dịch vụ 3 giây 12 giây</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Lưu ý.
 Nhịp tim phải giảm xuống 150 nhịp mỗi phút giữa các lần lặp lại.
 Nhịp tim phải giảm xuống 120 nhịp mỗi phút giữa các hiệp.
@@ -4297,7 +4315,7 @@ Giữ lưng thẳng và đầu ngang bằng.
 Điều này sẽ kéo dài gân kheo của bạn cũng như các cơ khác</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Căng PNF Cánh tay và Vai Hình 14.17 Căng PNF cánh tay và vai.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Đối tác của bạn đứng phía sau nắm tay bạn dang rộng (lòng bàn tay hướng ra ngoài).
-Anh ấy hoặc cô ấy nhẹ nhàng kéo tay bạn vào trong trong khi bạn cố gắng đẩy ra ngoài.
+Anh ấy hoặc cô ấy nhẹ nhàng kéo tay bạn vào trong khi bạn cố gắng đẩy ra ngoài.
 Giữ trong 6 giây;
 lặp lại ba lần.</p></div>
             
@@ -4552,7 +4570,7 @@ Chất béo là nguồn năng lượng thứ cấp và sẽ chiếm khoảng 25%
 Lượng mỡ tích tụ vừa phải trong các mô cơ thể đóng vai trò là nguồn cung cấp nhiên liệu dự trữ;
 một số chất lắng đọng cần thiết để hỗ trợ và bảo vệ một số cơ quan quan trọng.
 Chất béo cũng cần thiết như một nguồn axit béo thiết yếu và là chất vận chuyển các vitamin tan trong chất béo.</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Chế độ ăn nhiều chất béo bão hòa hoặc chất béo động vật (tất cả các vị trí có thể có của phân tử hydro đều chứa đầy phân tử hydro) được cho là làm tăng tỷ lệ mắc bệnh xơ vữa động mạch và bệnh tim mạch.
+            <div class="bilingual-block stanza"><p class="lang-vi">Chế độ ăn nhiều chất béo bão hòa hoặc chất béo động vật (tất cả các vị trí có thể có của phân tử hydro đều chứa đầy phân tử hydro) được cho làm tăng tỷ lệ mắc bệnh xơ vữa động mạch và bệnh tim mạch.
 Hiệp hội Tim mạch Hoa Kỳ đặc biệt khuyến nghị nên giảm lượng chất béo bão hòa trong chế độ ăn trung bình.
 Huấn luyện viên nên nhấn mạnh rằng dầu thực vật và nguồn thực vật là tốt nhất, vì những chất béo này không bão hòa, có nghĩa là một số vị trí hydro không được lấp đầy.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Hàm lượng chất béo quá cao trong chế độ ăn của tay vợt sẽ làm chậm quá trình làm rỗng dạ dày và làm chậm quá trình tiêu hóa.
@@ -4755,7 +4773,7 @@ Một trong những nhiệm vụ của bạn với tư cách là huấn luyện 
 Việc áp dụng chế độ ăn kiêng theo mốt hoặc chế độ ăn kiêng khắc nghiệt sẽ không hướng dẫn tay vợt cách ăn uống dinh dưỡng và họ sẽ không khá hơn so với khi bắt đầu.
 Hãy đặc biệt cẩn thận với một số cô gái có ý thức ăn kiêng, nhiều người trong số họ không cần giảm cân chút nào.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Xác định cân nặng lý tưởng Biểu đồ chiều cao/cân nặng cho phép mọi người so sánh bản thân với nam hoặc nữ trung bình không đặc biệt chính xác và thường là hướng dẫn không đầy đủ về cân nặng "lý tưởng". Nhiều vận động viên có lượng mỡ trong cơ thể thấp nhưng rất cơ bắp sẽ bị thừa cân theo các biểu đồ này. Không thể nhầm lẫn, chính tỷ lệ mô mỡ trong cơ thể quyết định cân nặng phù hợp của một người. Tỷ lệ này có thể được ước tính bằng cách sử dụng thước cặp da. Hãy tham khảo phần thử nghiệm của chương 12 để biết
-quy trình và vào Bảng 15.4 để biết tỷ lệ phần trăm.</p></div>
+quy trình vào Bảng 15.4 để biết tỷ lệ phần trăm.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Bảng 15.4 Tỷ lệ phần trăm mỡ cơ thể được khuyến nghị</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Giới tính Vận động viên béo phì trung bình Nam 13 đến 17% 20% Dưới 10% Nữ 20 đến 24% 27% Dưới 15%</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Thừa cân là do lượng calo nạp vào lớn hơn số lượng calo được đốt cháy để tập thể dục và trao đổi chất cơ bản.
@@ -5167,7 +5185,7 @@ Một chiếc xe tăng chính thường được phản ánh trong việc vận 
 Điều này được chứng minh bằng sự thiếu hoàn toàn cường độ, nỗ lực và tiêu hao năng lượng cũng như vẻ ngoài thiếu sức sống, không có động lực và thờ ơ.
 Các hình thức kiềm chế cảm xúc tinh vi hơn bao gồm giảm một phần mức độ cam kết, năng lượng hoặc cường độ tổng thể.
 Tay vợt có thể tăng một điểm, một trận đấu hoặc toàn bộ trận đấu.
-Khả năng phản ứng của xe tăng phụ thuộc vào mức độ căng thẳng hoặc đe dọa của tình huống đối với lòng tự trọng của tay vợt và vào bản chất kỹ năng đối phó của tay vợt.</p></div>
+Khả năng phản ứng của xe tăng phụ thuộc vào mức độ căng thẳng hoặc đe dọa của tình huống đối với lòng tự trọng của tay vợt vào bản chất kỹ năng đối phó của tay vợt.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Tanking thực sự là một biến thể của cơ chế phòng thủ tâm lý được gọi là rút lui.
 Đối với hầu hết các vận động viên, việc rút lui ban đầu là một trong những chiến lược phổ biến nhất để giải quyết xung đột tâm lý và thực sự là chiến lược gây rối loạn nhất đối với mức thành tích tổng thể.
 Ban đầu, phản ứng tanking xảy ra một cách vô tình.</p></div>
@@ -5471,12 +5489,12 @@ Cha mẹ phải hiểu rằng nếu họ góp phần làm tăng thêm áp lực 
 Cha mẹ càng nhấn mạnh đến niềm vui, sự thích thú và giá trị nội tại của việc chơi trò chơi thì họ càng có nhiều khả năng thấy con mình đạt được thành công trong cạnh tranh.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Giúp các bậc cha mẹ hiểu rằng họ không nên xem việc chơi quần vợt của con trai hoặc con gái mình như một khoản đầu tư kinh doanh.
 Không nghi ngờ gì rằng quần vợt trẻ ở cấp quốc gia hoặc khu vực có thể rất tốn kém.
-Khi cha mẹ bắt đầu nghĩ rằng một ngày nào đó họ sẽ nhận được lợi nhuận tài chính từ khoản đầu tư của mình, thì đứa trẻ luôn bắt đầu cảm thấy áp lực gia tăng.
+Khi cha mẹ bắt đầu nghĩ rằng một ngày nào đó họ sẽ nhận được lợi thế tài chính từ khoản đầu tư của mình, thì đứa trẻ luôn bắt đầu cảm thấy áp lực gia tăng.
 Giúp cha mẹ coi số tiền bỏ ra là sự đầu tư vào con người.
 Giúp họ nhận thức được chi phí cũng giống như chi phí học tập hoặc học nhạc cụ.
 Chơi quần vợt thi đấu là một trải nghiệm sống vô giá đối với vận động viên trẻ khi trở thành một người đang phát triển và trưởng thành.
 Nếu các bậc cha mẹ cảm thấy rằng việc thi đấu quần vợt không phải là một trải nghiệm cá nhân lành mạnh và đáng giá thì họ nên xem xét lại rõ ràng liệu họ có muốn con mình tham gia hay không.
-Quần vợt càng trở thành một khoản đầu tư tài chính với lợi nhuận kỳ vọng thì khả năng nó hoàn toàn đi chệch hướng càng lớn.</p></div>
+Quần vợt càng trở thành một khoản đầu tư tài chính với lợi thế kỳ vọng thì khả năng nó hoàn toàn đi chệch hướng càng lớn.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Giúp phụ huynh hiểu rằng không nên quá phấn khích khi con thắng cũng như không nên quá buồn nếu con thua.
 Quan trọng nhất, họ không bao giờ nên gắn những đặc quyền hoặc phần thưởng đặc biệt với chiến thắng.
 Một trong những hành vi tai hại nhất của cha mẹ là rút lại sự quan tâm, tình yêu thương hoặc tình cảm khi con cái thua cuộc.
@@ -5610,7 +5628,7 @@ Hãy nhớ rằng, bạn đang cố gắng điều chỉnh các tay vợt của 
 Bảng 18.2 trình bày biểu đồ giám sát mẫu một tuần.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">ĐÁNH GIÁ KỸ NĂNG TÂM THẦN</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Sau khi bạn hiểu rõ về tính cách của các tay vợt, lịch sử thi đấu của họ và các yếu tố như gia đình, điểm số, áp lực trong và ngoài sân, v.v., giờ là lúc bắt đầu đánh giá hồ sơ kỹ năng của họ với tư cách là đối thủ cạnh tranh.
-Huấn luyện viên có thể theo dõi một tay vợt và nhanh chóng xác định điểm mạnh và điểm yếu về thể chất trong các lĩnh vực như tốc độ, sự nhanh nhẹn, sức bền, động tác bằng chân, cú chạm đất, giao bóng, cú vô lê, cú đánh đặc biệt, chiến lược trò chơi, v.v.
+Huấn luyện viên có thể theo dõi một tay vợt và nhanh chóng xác định điểm mạnh và điểm yếu về thể chất trong các lĩnh vực như tốc độ, sự nhanh nhẹn, sức bền, động tác bằng chân, cú đánh nền, giao bóng, cú vô lê, cú đánh đặc biệt, chiến lược trò chơi, v.v.
 Huấn luyện viên cần phải làm điều tương tự đối với các kỹ năng tinh thần.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Bảng 18.1 Bảng câu hỏi tự mô tả</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Rất giống tôi Không giống tôi chút nào Người suy nghĩ tiêu cực</p></div>
@@ -5852,7 +5870,7 @@ Hãy nhớ rằng, bài kiểm tra thực sự đối với những người có
 Đây chính là điểm khác biệt giữa số ít lọt vào top và số đông không đứng đầu.
 Hãy rèn luyện các kỹ năng tâm lý của bạn một cách chính xác như cách bạn yêu cầu các tay vợt của mình rèn luyện kỹ năng của họ.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">MẪU MẪU ĐIỀU BẠN MUỐN DẠY</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Không có cách nào hiệu quả hơn để dạy các kỹ năng tâm lý hơn là làm mẫu cho chúng.
+            <div class="bilingual-block stanza"><p class="lang-vi">Không có cách nào hiệu quả hơn để dạy các kỹ năng tâm lý hơn làm mẫu cho chúng.
 Các huấn luyện viên thường bị sốc khi nhận ra tầm ảnh hưởng của họ đối với các tay vợt mạnh mẽ đến mức nào, cả từ góc độ tích cực lẫn tiêu cực.
 Bạn là người có quyền lực trong cuộc sống của tay vợt;
 họ luôn học hỏi từ bạn, ngay cả khi bạn không tích cực giảng dạy.
@@ -5897,7 +5915,7 @@ Không ngừng rèn luyện để suy nghĩ giống như những nhà vô địc
 Trong những trường hợp như vậy, chúng ta nên yêu cầu bản thân không kém gì chúng ta yêu cầu tay vợt: Giả mạo nó.
 Nếu bạn không cảm thấy tràn đầy sinh lực, thư giãn, tích cực hay nhiệt tình, chỉ cần hành động như thể bạn đang cảm thấy như vậy.
 Hãy thể hiện cùng một cảm giác mà bạn muốn cảm nhận.
-Để bản thân hành động theo cách bạn cảm thấy trước các tay vợt của mình—tiêu cực, bi quan, bơ phờ và chỉ trích—là làm hại họ thực sự.</p></div>
+Để bản thân hành động theo cách bạn cảm thấy trước các tay vợt của mình—tiêu cực, bi quan, bơ phờ và chỉ trích—làm hại họ thực sự.</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">HÃY ĐẢM BẢO LUYỆN TẬP CỦA BẠN</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">TRIẾT HỌC LÀ VĨ ĐẠI</p></div>
             <div class="bilingual-block stanza"><p class="lang-vi">Mặc dù triết lý thắng bằng mọi giá trong quần vợt trẻ em có thể gây ra những hậu quả tàn khốc, nhưng nó là mô hình cơ bản phổ biến trong các môn thể thao chuyên nghiệp: ''Chiến thắng không phải là tất cả - đó là điều duy nhất.'' Thật không may, khi thái độ này được phép thấm vào các môn thể thao trẻ em, nó được ưu tiên hơn sự phát triển cá nhân của các tay vợt. Thể thao trẻ em tồn tại cho các tay vợt—không phải dành cho người hâm mộ, phụ huynh hoặc huấn luyện viên.
@@ -6193,7 +6211,7 @@ Việc phát triển các kiểu thở cụ thể cho tất cả các khía cạ
             <div class="bilingual-block stanza"><p class="lang-vi">Xây dựng các kế hoạch hành động rõ ràng và ngắn gọn cho các vấn đề về căng cứng tâm lý (Choking) hoặc nóng nảy.
 Các vận động viên phải kêu gọi kế hoạch hành động càng cụ thể trong cơn khủng hoảng thì họ càng có khả năng thực hiện tốt hơn.
 Một ví dụ về kế hoạch chống nghẹn có thể như sau:</p></div>
-            <div class="bilingual-block stanza"><p class="lang-vi">Ngay khi tay vợt nhận thức được sự lo lắng hoặc hoảng sợ, anh ta hoặc cô ta nên dành nhiều thời gian hơn để làm mọi việc, trở nên thực sự nghi thức, chống lại sự cám dỗ ''đẩy'' hoặc tìm kiếm người chiến thắng quả bóng đầu tiên, tập trung tinh thần vào việc đánh bóng sớm và nhìn thấy nó hoàn toàn, và 5. chơi quần vợt có tỷ lệ tấn công cao.</p></div>
+            <div class="bilingual-block stanza"><p class="lang-vi">Ngay khi tay vợt nhận thức được sự lo lắng hoặc hoảng sợ, anh ta hoặc cô ta nên dành nhiều thời gian hơn để làm mọi việc, trở nên thực sự nghi thức, chống lại sự cám dỗ ''đẩy'' hoặc tìm kiếm cú ghi điểm trực tiếp quả bóng đầu tiên, tập trung tinh thần vào việc đánh bóng sớm và nhìn thấy nó hoàn toàn, và 5. chơi quần vợt có tỷ lệ tấn công cao.</p></div>
             
             <div class="bilingual-block stanza"><p class="lang-vi">Loại bỏ áp lực để giành chiến thắng.
 Áp lực quá mức để giành chiến thắng có thể nhanh chóng dẫn đến các vấn đề về kiểm soát kích thích.
@@ -6613,6 +6631,51 @@ window.addEventListener('scroll', function(){
     if (!overlay.classList.contains('open')) return;
     clearTimeout(rt); rt = setTimeout(refit, 220);
   });
+})();
+</script>
+
+<button class="chapter-fab" id="chapter-fab" aria-label="Mục lục chương"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h12v2H3zM3 11h12v2H3zM3 17h8v2H3zM17 9h4v2h-4zM17 15h4v2h-4z"/></svg><span>Chương</span></button>
+<div class="chapter-backdrop" id="chapter-backdrop"></div>
+<aside class="chapter-drawer" id="chapter-drawer" aria-label="Danh sách chương">
+  <div class="cd-head"><h3>Mục lục</h3><button class="cd-close" id="chapter-close" aria-label="Đóng">&times;</button></div>
+  <nav class="cd-list" id="chapter-list"></nav>
+</aside>
+<script>
+(function(){
+  var fab=document.getElementById('chapter-fab'),
+      drawer=document.getElementById('chapter-drawer'),
+      backdrop=document.getElementById('chapter-backdrop'),
+      list=document.getElementById('chapter-list'),
+      book=document.getElementById('book-content');
+  if(!book) return;
+  var heads=[].slice.call(book.querySelectorAll('h2[id]'));
+  if(!heads.length) heads=[].slice.call(book.querySelectorAll('h3[id]'));
+  if(!heads.length) return;
+  var links=[];
+  heads.forEach(function(h){
+    var a=document.createElement('a');
+    a.href='#'+h.id; a.textContent=h.textContent.trim();
+    a.addEventListener('click',function(){drawer.classList.remove('open');backdrop.classList.remove('open');});
+    list.appendChild(a); links.push(a);
+  });
+  function openD(){drawer.classList.add('open');backdrop.classList.add('open');}
+  function closeD(){drawer.classList.remove('open');backdrop.classList.remove('open');}
+  fab.addEventListener('click',openD);
+  backdrop.addEventListener('click',closeD);
+  document.getElementById('chapter-close').addEventListener('click',closeD);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeD();});
+  var ticking=false;
+  function spy(){
+    var cur=null, y=100;
+    for(var i=0;i<heads.length;i++){
+      if(heads[i].getBoundingClientRect().top<=y) cur=heads[i].id; else break;
+    }
+    if(cur) links.forEach(function(l){l.classList.toggle('active',l.getAttribute('href')==='#'+cur);});
+    ticking=false;
+  }
+  function onscroll(){ if(!ticking){ticking=true;requestAnimationFrame(spy);} }
+  window.addEventListener('scroll',onscroll,{passive:true});
+  spy();
 })();
 </script>
 </body>
