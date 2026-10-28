@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Winning Doubles</title>
+<meta name="description" content="Tennis library">
+<meta name="author" content="Pham Duc Hai">
+<style>
+.tcq-book{
+  --tcq-paper:#faf9f5; --tcq-ink:#1a1c20; --tcq-ink-soft:#4a4e54;
+  --tcq-ink-faint:#8a8d93; --tcq-indigo:#1d5c63; --tcq-indigo-soft:#2f7d84;
+  --tcq-gold:#a8863c; --tcq-rule:#e2e1da; --tcq-panel:#ffffff;
+  background:var(--tcq-paper); color:var(--tcq-ink);
+  font-family:"Palatino Linotype","Book Antiqua",Cambria,"Times New Roman","Noto Serif",serif;
+  font-size:19px;line-height:1.78;-webkit-font-smoothing:antialiased;}
+.tcq-book .wrap{max-width:760px;margin:0 auto;padding:64px 28px 120px;}
+.tcq-book header.cover{text-align:center;padding:8px 0;}
+.tcq-book .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+.tcq-book header.cover .cover-art{width:100%;max-width:430px;margin:0 auto 30px;border-radius:10px;
+  box-shadow:0 14px 40px rgba(16,40,44,.28);display:block;}
+.tcq-book header.cover .kicker{letter-spacing:.28em;font-size:12px;text-transform:uppercase;
+  color:var(--tcq-indigo);font-weight:600;}
+.tcq-book header.cover h1{font-size:38px;line-height:1.16;margin:.4em 0 .12em;font-weight:600;
+  color:var(--tcq-ink);text-align:center;letter-spacing:0;}
+.tcq-book header.cover .sub{color:var(--tcq-ink-soft);font-size:20px;font-style:italic;}
+.tcq-book header.cover .blurb{color:var(--tcq-gold);font-size:16px;margin-top:.7em;
+  letter-spacing:.04em;}
+.tcq-book header.cover .by{margin-top:1.2em;color:var(--tcq-ink-faint);font-size:14px;
+  letter-spacing:.06em;}
+.tcq-book hr.lead{border:none;border-top:1px solid var(--tcq-rule);margin:36px 0;}
+.tcq-book .part-band{margin:88px 0 8px;padding:26px 0 22px;text-align:center;
+  border-top:1px solid var(--tcq-rule);border-bottom:1px solid var(--tcq-rule);}
+.tcq-book .part-band .part-kicker{letter-spacing:.3em;font-size:12px;text-transform:uppercase;
+  color:var(--tcq-gold);font-weight:600;}
+.tcq-book .part-band .part-name{font-size:23px;color:var(--tcq-indigo);margin-top:.5em;
+  font-style:italic;}
+.tcq-book .chapter{margin-top:56px;}
+.tcq-book h2.ch-title{font-size:29px;line-height:1.25;margin:0 0 .1em;font-weight:600;
+  color:var(--tcq-ink);letter-spacing:0;font-style:normal;
+  border-bottom:2px solid var(--tcq-indigo);padding-bottom:.25em;}
+.tcq-book h3{font-size:21px;margin:40px 0 12px;font-weight:600;color:var(--tcq-indigo);
+  font-style:normal;letter-spacing:0;}
+.tcq-book h4{font-size:18px;margin:30px 0 8px;font-weight:600;color:var(--tcq-gold);
+  font-style:normal;letter-spacing:.02em;}
+.tcq-book p{margin:0 0 1.15em;text-align:justify;hyphens:auto;color:var(--tcq-ink);}
+.tcq-book p.lead-p{font-size:21px;color:var(--tcq-ink-soft);}
+.tcq-book strong{color:var(--tcq-ink);}
+.tcq-book em{color:var(--tcq-ink-soft);}
+.tcq-book .toc{margin:44px auto 0;max-width:560px;background:var(--tcq-panel);
+  border:1px solid var(--tcq-rule);border-radius:8px;padding:26px 32px;}
+.tcq-book .toc-title{font-size:15px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--tcq-indigo);margin:0 0 .9em;font-weight:600;font-style:normal;}
+.tcq-book .toc-part{font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--tcq-gold);font-weight:600;margin:1.3em 0 .4em;}
+.tcq-book .toc-part:first-of-type{margin-top:.4em;}
+.tcq-book .toc ol{margin:0;padding-left:0;list-style:none;}
+.tcq-book .toc li{margin:.42em 0;font-size:16px;}
+.tcq-book .toc a{color:var(--tcq-ink);text-decoration:none;border-bottom:1px solid transparent;}
+.tcq-book .toc a:hover{border-bottom-color:var(--tcq-indigo);}
+.tcq-book dl.glossary{margin:0 0 1.2em;padding:0;}
+.tcq-book dl.glossary dt{font-weight:600;color:var(--tcq-indigo);margin:1.15em 0 .15em;
+  font-size:18px;}
+.tcq-book dl.glossary dd{margin:0 0 .3em;padding-left:1.4em;color:var(--tcq-ink-soft);
+  font-size:18px;line-height:1.7;text-align:justify;}
+.tcq-book footer.end{margin-top:90px;border-top:1px solid var(--tcq-rule);padding-top:26px;
+  color:var(--tcq-ink-faint);font-size:14px;text-align:center;line-height:1.9;}
+.tcq-book footer.end .sig{color:var(--tcq-indigo);font-size:15px;letter-spacing:.08em;}
+body.dark-mode .tcq-book{
+  --tcq-paper:#0f1416; --tcq-ink:#e6e7e3; --tcq-ink-soft:#b0b3af;
+  --tcq-ink-faint:#878b90; --tcq-indigo:#7fbfc4; --tcq-indigo-soft:#5fa3a9;
+  --tcq-gold:#c9a961; --tcq-rule:#283135; --tcq-panel:#161d20;}
+body.dark-mode .tcq-book p,
+body.dark-mode .tcq-book li,
+body.dark-mode .tcq-book dd,
+body.dark-mode .tcq-book div{color:var(--tcq-ink);}
+body.dark-mode .tcq-book p.lead-p,
+body.dark-mode .tcq-book em,
+body.dark-mode .tcq-book dl.glossary dd{color:var(--tcq-ink-soft);}
+body.dark-mode .tcq-book header.cover .by,
+body.dark-mode .tcq-book footer.end{color:var(--tcq-ink-faint);}
+body.dark-mode .tcq-book h2.ch-title,
+body.dark-mode .tcq-book header.cover h1{color:var(--tcq-ink) !important;}
+body.dark-mode .tcq-book h3,
+body.dark-mode .tcq-book dl.glossary dt,
+body.dark-mode .tcq-book header.cover .kicker,
+body.dark-mode .tcq-book .toc-title,
+body.dark-mode .tcq-book footer.end .sig,
+body.dark-mode .tcq-book .part-band .part-name{color:var(--tcq-indigo) !important;}
+body.dark-mode .tcq-book h4,
+body.dark-mode .tcq-book header.cover .blurb,
+body.dark-mode .tcq-book .toc-part,
+body.dark-mode .tcq-book .part-band .part-kicker{color:var(--tcq-gold) !important;}
+body.dark-mode .tcq-book .toc a{color:var(--tcq-ink);}
+body.dark-mode .tcq-book strong{color:var(--tcq-ink) !important;}
+@media (max-width:760px){
+  .tcq-book .wrap{padding:40px 20px 80px;}
+  .tcq-book header.cover h1{font-size:28px;}
+  .tcq-book header.cover .cover-art{max-width:320px;}
+  .tcq-book dl.glossary dd{padding-left:.8em;}
+  .tcq-book .part-band .part-name{font-size:19px;}
+}
+@media print{
+  .tcq-book .toc{break-after:page;}
+  .tcq-book .chapter{break-before:page;}
+  .tcq-book .part-band{break-before:page;break-after:avoid;}
+  .tcq-book dl.glossary dt{break-after:avoid;}
+}
+
+/* breadcrumb — sits above .tcq-book, so it carries its own palette.
+   Colours/scale mirror the reference TFL books (#2–#8): .9rem, muted
+   #5b6572 separator, the book's own accent for the root link. */
+.tu-breadcrumb{background:#faf9f5;padding:16px 0 4px;font-size:.9rem;color:#6b6f76;
+  font-family:"Palatino Linotype","Book Antiqua",Cambria,"Times New Roman","Noto Serif",serif;}
+.tu-breadcrumb__list{list-style:none;display:flex;flex-wrap:wrap;gap:2px 8px;
+  max-width:760px;margin:0 auto;padding:0 28px;align-items:center;}
+.tu-breadcrumb__item{margin:0;}
+.tu-breadcrumb__link{color:#1d5c63;text-decoration:none;}
+.tu-breadcrumb__link:hover{text-decoration:underline;}
+.tu-breadcrumb__sep{color:#5b6572;margin:0 2px;user-select:none;}
+.tu-breadcrumb__current{color:#1a1c20;font-weight:500;}
+</style>
+</head>
+<body>
+
+
+<nav class="tu-breadcrumb" aria-label="Breadcrumb">
+  <ol class="tu-breadcrumb__list">
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/books/">Tennis Books Library</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item tu-breadcrumb__current" aria-current="page">Winning Doubles</li>
+  </ol>
+</nav>
+<div class="tcq-book">
+<div class="wrap">
+<header class="cover"><div class="kicker">Tennis Library</div><h1>Winning Doubles</h1><div class="by"></div><p style="text-align:center;margin:18px 0 0;font-family:var(--tcq-sans,sans-serif);font-size:14px;letter-spacing:.02em;"><a href="https://github.com/tenniskb/tenniskb.github.io/releases/download/books-pdf-v1/winning-doubles.pdf" target="_blank" rel="noopener" style="color:#1d5c63;font-weight:600;text-decoration:none;border:1px solid #cfd8d4;border-radius:6px;padding:7px 14px;display:inline-block;">Read the original PDF &#8599;</a></p></header><div class="toc"><div class="toc-title">Contents</div><ol>
+<li><a href="#sec-1">Part 1  ·  pp. 16–45</a></li>
+<li><a href="#sec-2">Part 2  ·  pp. 46–75</a></li>
+<li><a href="#sec-3">Part 3  ·  pp. 76–105</a></li>
+<li><a href="#sec-4">Part 4  ·  pp. 106–135</a></li>
+<li><a href="#sec-5">Part 5  ·  pp. 136–165</a></li>
+<li><a href="#sec-6">Part 6  ·  pp. 166–195</a></li>
+<li><a href="#sec-7">Part 7  ·  pp. 196–203</a></li>
+</ol></div><section class="chapter" id="sec-1">
+<h2>Part 1  ·  pp. 16–45</h2>
+<p>illumination for the viewers to see anymore play. The score at this point was two sets apiece. Grabb and Reneberg had won the first and third sets 7—5 and 6-3. McEnroe and Stich had won the second and</p>
+<p>fourth sets, both in tiebreakers. At i3 all in the fifth set, the players</p>
+<p>met at the net, and tournament referee Andy Mills was called in.</p>
+<p>McEnroe and Stich finally prevailed 19-17 in that fifth set on Monday—ending the longest doubles match in Wimbledon history. It took over 5 hours to complete, not to mention the extra day. Believe it or not, this famous match fell shy of the longest doubles match in pro tennis history, which was played in February 1968 in the men’s</p>
+<p>doubles quarterfinals of the U.S. Indoor Championships at Salisbury,</p>
+<p>Maryland. Mark Cox and Bobby Wilson defeated Charlie Pasarell and Ron Homberg 26-24, 17-19, 30-28; a total of 144 games were played in 6 hours and 23 minutes.</p>
+<p>Doubles is not always an all-day affair—the shortest match was played on July 13, 1914, in the men’s final of the Kent Championships at Beckham, when Norman Brooks and Tony Wilding de-</p>
+<p>feated Arthur Gore and Herbert Roper Barntt 6—2, 6-1 in just 16</p>
+<p>minutes. This match was played before the teams were given the 20second break between points and the 90-second changeover rest after the completion of each odd numbered game.</p>
+<p>Whether you are a pro playing on the grass courts of Wimbledon or a young, less seasoned player playing on the Har-tru courts of Central Park, doubles is one of the best ways to have fun, spend time, and meet people.</p>
+<p>Every year I attend the Newsweek Championships in Palm Springs. Before the format was changed in 1994, the crowd usually started to leave by 4:00 P.M., just when doubles would begin. By 6:00</p>
+<p>p.M. the stadium would be nearly empty, which was great for my wife and me and our traveling companions the Rosenstocks, because we could move down to courtside to watch the rest of the matches. By</p>
+<p>7:00 PM. the stadium would look like an “MCI plan”—friends and family only! At this point, as sports announcer Al Michaels once said, “Instead of giving you the paid attendance, it would be easier just to tell you who is here.”</p>
+<p>We never leave until the last ball is struck, because the quality of hitting is unbelievably great. Being that close to the players, with so few fans around, we actually feel as if we are a part of the action. This is, in my estimation, the best part of the tournament—doubles. Why</p>
+<p>the fans leave and miss the doubles events is a mystery to me. Watching high-level doubles competition can be instructional, inspirational, and, as described before, exciting and dramatic.</p>
+<p>I teach tennis six days a week, sometimes 10 hours a day. One of my prime motivators is my dedication to improvement. I must stay current and continually work to improve my game, which gives me a</p>
+<p>huge marketing advantage over so many other teaching pros. I take time off from my business and my students to attend at least three major pro tournaments a year, and it’s the doubles events that I enjoy the most. I also continue to play tournaments with my partner of four years, Mark Jee. We both enjoy the competition and the camaraderie,</p>
+<p>and we have never had so much fun on the tennis court. The combi-</p>
+<p>nation of watching highly competitive players and being one not only helps me stay up-to-date but also helps me maintain my enthusiasm for the sport. This enthusiasm spills over to my students.</p>
+<p>Doubles requires teamwork and quick action, but many times four players walk onto the court and begin playing tennis without really knowing how doubles is supposed to be played. That’s why I wrote this book. Its purpose is to help the reader (player) become a better doubles player. This book addresses all levels of the game.</p>
+<p>Whether you are just beginning or playing on the tour, you will advance your game to another level if you learn the lessons between</p>
+<p>these covers. I discuss the kinds of doubles played, positioning,</p>
+<p>movement strategy, and how to help yourself and each other be better doubles partners. I also discuss various problems that develop on the court between opponents and partners and how to handle these situations.</p>
+<p>The most important element of this book is the picture playbook for doubles strategy. If you ever played football or basketball, you had a playbook to study to follow patterns that can develop during the</p>
+<p>game. I have set up 64 play scenarios that occur on the doubles court, showing both teams how to move and respond to each situation. For every scenario you will be taught the shot to hit, where to place that</p>
+<p>shot, and where you and your partner should position yourselves on the court for the return of your shot. There is also a set of pictures to help your team better understand the situation presented. I often compare these play scenarios to the loading of a floppy disk onto a computer. It takes a little time to load the program, and it also takes</p>
+<p>time to learn to use the computer program. But once loaded, you can just turn the computer on, and it runs.</p>
+<p>The key to any learning is to have a goal and then understand the pieces that must be mastered to reach your goal. By knowing and understanding what is going to happen on and off the court, both you and your partner will be able to achieve greater success at a faster rate.</p>
+<p>ost people who play tennis on a nonprofessional basis play doubles, because more people can be on the court at one time. This is an important consideration if you are</p>
+<p>paying court fees or when the number of available courts is limited.</p>
+<p>Most adult recreational leagues play doubles for the same reasons. Also, as aging and conditioning become factors, more people turn to</p>
+<p>doubles. Doubles can be nearly as intense a workout as singles, even</p>
+<p>though you have a partner with whom you share the serving and returning duties.</p>
+<p>For children who are serious about competing at a high level, learning to play doubles is crucial, since all high school and college</p>
+<p>teams play doubles matches. I tell my junior players to look at the draw when they are playing a tournament to see whether they can</p>
+<p>find someone from their area to team up with. When I was a junior</p>
+<p>player many years ago, I played for three years with Kevin Conway, and we never lost a match. We continued to play together in college at</p>
+<p>Wisconsin, and the junior doubles experience definitely made us better college doubles players.</p>
+<p>At the pro level, most tournaments include doubles events. Many pros are doubles specialists, though a few of the top-ranked players save their energy for singles only. Some pros use doubles as a way to practice their singles game. Because there is less pressure to chase down every ball, it is not uncommon for the pros to take advantage of</p>
+<p>the light workout on off days. And what better way to practice skills than playing doubles? This is the strategy John McEnroe used. As he explained it, doubles enabled him to practice all his skills to stay</p>
+<p>sharp for his next singles match.</p>
+<p>Most junior and adult tournaments include doubles events for men and women, and there are leagues for men’s, women’s, and</p>
+<p>mixed doubles play at all levels. Because most adults who play tennis play doubles, the recreational tennis leagues focus primarily on doubles. The key to being a good doubles team is finding a partner with</p>
+<p>whom you enjoy playing. A doubles partnership is like any other part-</p>
+<p>nership; some teams work well together, and others do not. Of course, playing repetitively with the same partner helps the team</p>
+<p>learn to function better as a unit.</p>
+<p>Sf. singles and doubles tennis is played on a court that is 78 feet long and divided horizontally in the middle by a net. Thus each side has 39 feet of hitting length. The singles court is 27 feet wide. The doubles court expands 4.5 feet on each side to 36 feet. The ex-</p>
+<p>pansion area is called the alley. The net height should always be 3 feet in the middle of the court, 3 feet 6 inches on the sidelines.</p>
+<p>ye are four players on the doubles court: Player A, the server; Player B, the server’s partner; Player C, the serve returner; and Player D, the serve returner’s partner. Each player occupies a certain spot on the court, and each of these spots carries with it specific responsibilities. In doubles, one partner is responsible for the right half</p>
+<p>~ Pah ve Elements of. Dana b bes OD</p>
+<p>of the court and the other is responsible for the left. There are times, which will be discussed later, when the players change responsibilities, but basically each partner is responsible for a side. The division is not</p>
+<p>up and back; it is left or right.</p>
+<p>° Server&#x27;s position: in the middle of the side the player is responsible</p>
+<p>for, behind the baseline.</p>
+<p>° Server&#x27;s partner&#x27;s position: in the middle of the side the player is</p>
+<p>responsible for on the /s line. To find this spot, divide the area</p>
+<p>between the net and the service line in half, then take one small</p>
+<p>step back toward the service line.</p>
+<p>* Serve returner’s position: near the singles out-of-bounds line around the baseline area.</p>
+<p>° Serve returner’s partner&#x27;s position: 7s line in the middle of the</p>
+<p>player’s area of responsibility. (A less experienced player should</p>
+<p>stand on the service line in the middle of his or her area of</p>
+<p>Who Plays Which Side?</p>
+<p>Neither side is easier or tougher to return serve from. When you play singles, you return from both sides. In doubles, however, it is not un-</p>
+<p>usual for a player to prefer one side, usually the forehand. Because many inexperienced players fear their backhands, they want to play only the forehand side of the court, commonly referred to as the</p>
+<p>deuce court. But what they don’t realize is that by moving out one</p>
+<p>more step, the returner will actually hit more backhands at a higher level than in the backhand or “ad” court. To facilitate the backhand crosscourt return, you should move out one step toward the alley so</p>
+<p>that you can get an exaggerated turning of your lead hip toward your crosscourt hit location.</p>
+<p>You and your partner must work out who plays which side. In practice, change around to see what works best for your team. Often when you are playing team or league matches, you will be teamed with an unfamiliar partner or someone who prefers the same side of the court as you. Since someone has to play the nonfamiliar side, avoid this problem by practicing both sides.</p>
+<p>If you lose the first set, it is usually not a good idea to change returning sides. Instead of focusing on which side you are playing or not playing, focus more on the ball. See the stroker hit the ball; watch the path of your opponent’s racquet and the direction of the incoming ball.</p>
+<p>The only time it might be worthwhile to change sides is when you and your partner feel that you were outmatched from the onset.</p>
+<p>U sually, though, both of you simply need to track the ball better.</p>
+<p>Who Serves First?</p>
+<p>Usually the stronger server serves first, because in a 6-4 set, the stronger server serves three times, his or her partner twice. If sun and wind conditions are factors and one player has a weaker serve, then</p>
+<p>that player should be the one serving into the wind. Don’t diminish</p>
+<p>the stronger partner’s strength by having that player serve into the wind; otherwise, the team ends up with two weak servers.</p>
+<p>T he Elements oe, Dio web al ve ss (OS</p>
+<p>In doubles, the serve rotates between the teams. Player A serves, then Player C. Next Player A’s partner serves, followed by Player C’s partner. This rotation is maintained throughout the set. When the set is over, each team may set a new rotation order for itself. It behooves</p>
+<p>the team to have its stronger server start each new set. Thus, if Player C served the second, sixth, and tenth games of set one, which her team won 6-4, she may serve her team’s first game of the new set. Assuming that her team wins again 6-4, Player C will have served six</p>
+<p>times and her partner four. A new serving rotation may be a big ad-</p>
+<p>vantage.</p>
+<p>Many players like to receive the first game because it gives them one game to get into the match before going on the offensive with the serve. Most big servers prefer to start serving because they believe</p>
+<p>that it gives them a psychological advantage and keeps them on the offensive. One reason for choosing side first would be to hit with the wind rather than into it for two of the first three games or not to serve into the sun on your first service game.</p>
+<p>The tiebreaker in doubles is similar to the regular service rotation.</p>
+<p>Player A serves one point, then the teams rotate servers every two points. Six points are played before the teams switch sides. The teams change sides after each additional sixth point, which leads to one or</p>
+<p>more of the servers serving on a different side. When the sun and wind are factors in the match, this change requires additional focus</p>
+<p>and mental toughness. The first team to win seven or more points by</p>
+<p>a two-point margin wins the set.</p>
+<p>efore the match starts, players warm up with each other for a short time. At tournament-level play, only 5 minutes is allowed before</p>
+<p>play must begin. Tour players have warmed up extensively elsewhere and use this time as the final warm-up.</p>
+<p>Unfortunately, many novice players do not understand the intent of the warm-up, which is to quickly ready your shots for the play about</p>
+<p>to begin. Too often, players use the warm-up period inappropriately to practice put-away shots, or they hit poorly on purpose to throw off the opponent. Occasionally, a player simply cannot hit the ball back. All three lead to no warm-up for either player. Each player is oblig-</p>
+<p>ated to warm up the opponent and should be hitting the shots back with moderate to good speed.</p>
+<p>A player should warm up all the skills—strokes, volleys, serves, and overheads—before play begins. Although many new players like</p>
+<p>to delay practicing the serve until it is their turn in the match, this is</p>
+<p>not allowed. Since play must be continuous once the game has begun, players should hit two or three serves, then let the opponent hit two or three during the warm-up. If a server continues to hit practice</p>
+<p>serves into the net, he or she should return the balls across the net instead of continually trying to make serve. Otherwise the opponent will have no time to warm up his or her serve. This is unfair and is</p>
+<p>not allowed.</p>
+<p>The warm-up is the place to set the tone of the match. As a player, you are out there to compete, not to be a jerk. Never try to aggravate your opponent before the match starts, or you&#x27;ll be burdened with a contentious, rancorous match where time seems to inch by.</p>
+<p>I tell all my players that they must do a full half hour warm-up before they go into their matches. This way, the match warm-up is</p>
+<p>really unnecessary. If you use the first set as a warm-up, you will always be down in the score and risk giving your opponents an unstoppable</p>
+<p>momentum. If your opponents can’t or will not warm you up, that becomes their problem; you will still be ready to play.</p>
+<p>When you are the net player and your serving partner’s first serve goes into the net, clear the ball off the court. Let the server stay focused on the serve rhythm and not be distracted by the loose ball.</p>
+<p>In doubles, you and your partner are allowed to communicate during the point when the ball is on your side of the net. Calling “Yours” or “T’ve got it” is a good idea to make sure that you both know who is to</p>
+<p>Chek Ed eo mle mete mf Dio a bb e&#x27;s~ te 99</p>
+<p>hit the ball. Because the nonhitter often has a better view of the shot and can determine whether the ball will land in or out, that player should yell, “Bounce it” or “No.” And don’t forget to yell “Get back” when you&#x27;ve hit a poor shot, such as a short lob, that may hurt your</p>
+<p>partner. But you must speak quickly. If you wait until your opponent is ready to hit and then bark instructions, you have crossed the line of</p>
+<p>proper communication. Your opponents may claim distraction, which causes you to forfeit the point.</p>
+<p>If both players go for the ball and crash racquets, the play is legal as long as only one racquet hits the ball. However, if Player A nicks the ball and on the deflection Player B hits it over the net, it is a double</p>
+<p>hit, and that team loses the point.</p>
+<p>All lines are good; if any part of the ball touches any part of the line,</p>
+<p>the ball continues to be played. The farther away you are from a ball, the more difficult it is to judge it correctly. Because of parallax—the apparent displacement of an object as seen from two different points—many balls that land close to the lines may appear to be out but are in reality in. When I am at the net and turn to make a base-</p>
+<p>line call, I know from experience that even though the ball appears to land on the outside color of the court, unless I see the ball out by at</p>
+<p>least 4 inches, it actually landed inside the court.</p>
+<p>Be generous with your line calls. Keep in mind that when you are playing a match, your opponents are trying to beat you. If you</p>
+<p>make them feel that you are calling the lines incorrectly, you are only giving them extra incentive to beat you. In most cases, if you call the lines liberally, your opponents will reciprocate.</p>
+<p>WHEN YOU, AND, YOUR PART NERVES THE BALL DIS? EREN ELLY</p>
+<p>Both partners are responsible for line calls on their side of the net; however, the person closer to the line has the easier call. Still, one question that comes up all the time is what to do when you and your</p>
+<p>partner see the ball differently. I tell my students that if one partner sees the ball in, it must be called good. It does no good to throw a fit and wonder how your partner could question your integrity or not</p>
+<p>support you. Remember that you are simply calling a tennis shot. If you lose track of this and let your ego get in the way, you will be a</p>
+<p>poor partner.</p>
+<p>Under no circumstances should you condone an inaccurate line call by your partner. In a recent match, a player mentioned to her op-</p>
+<p>ponents that she was embarrassed by her partner’s poor line calls.</p>
+<p>But since she did not overrule her partner, those bad line calls became her bad line calls as well.</p>
+<p>Once, to test the importance of correct line calls, my friends Steve and Greg played two sets. In the first set, Steve called all close balls out; Greg did the same in the second set. The player who was al-</p>
+<p>lowed to make incorrect calls won both times by the same score, 6-1.</p>
+<p>WEA SO&quot; DO aw Et En re OUR OP PON EN TF CHALLENGES py OUR Nae Caer</p>
+<p>If both you and your partner are dead sure, stick to your call. But if the ball landed close to the line, perhaps your opponents had a better view of the landing of the shot. My partner and I usually say, “We saw it out, but if you saw it in, take the point.” In the four years that Mark and I have been playing together, we have been questioned only</p>
+<p>twice—and one time was when we played a ball that the opponents thought was out! If in doubt, err in your opponents’ favor.</p>
+<p>This brings up another point. Call close balls in, particularly on fast serves. Without the Cyclops machine, which automatically calls lines, it is too tough to call a close serve out. Although the hitting team often has a better view of the ball’s landing (which may appear</p>
+<p>to be out), you must always be ready to play the ball in case the opponents call it good and continue play.</p>
+<p>WHAT DOlDO WHEN JE OPRONENTS MAKE</p>
+<p>Everyone misses a call now and then. However, once your opponents have missed more than two calls, you must bring the situation under control for two reasons. First, it is easy to become upset when you feel cheated; then your focus becomes weak and the team falls apart. Second, it is tough to play when the lines are “floating.” If you are fear-</p>
+<p>ful of hitting your shots because they may land too close to the line and be called out, you will start to hold back, which means that you are coming off your game. Do not allow this to happen. In one doubles match, a friend of mine jumped over the net after another bad</p>
+<p>line call and persuasively argued against any future marginal or bad</p>
+<p>line calls. This extreme measure is not recommended!</p>
+<p>If the line calls are in question, ask for help with the lines after two disputes. If you are playing in a tournament, ask for a linesperson. If you are playing a league match, ask the captains of the teams</p>
+<p>to send an impartial observer from each team. If you are playing with a friend whose vision is suspect or who is a deliberate cheater, con-</p>
+<p>sider searching for a different friend!</p>
+<p>Tyne deal ie mite eaesTM oof. Dow bles” &amp; 1</p>
+<p>¢ When playing a league match: Politely ask your opponents to</p>
+<p>request that their captain—and you request yours—get a</p>
+<p>linesperson because you disagree about the lines.</p>
+<p>* When playing a tournament: Politely tell your opponents that you</p>
+<p>must get the tournament director because you are having a</p>
+<p>disagreement about the lines. The tournament director will send a</p>
+<p>linesperson.</p>
+<p>* When playing a friendly match: If your friend constantly makes</p>
+<p>bad line calls, find a new friend to play with.</p>
+<p>To determine who serves, the pros flip a coin. For everyone else, one</p>
+<p>player spins a racquet. Each racquet has a distinctive up and down side. For instance, when using a Wilson racquet, a player calls “M” or “W,” since the grip handle endpiece has a W on it for Wilson. The winner of this spin can choose to either serve or return, specify a side and place the burden of deciding to serve or receive on the opponent,</p>
+<p>» Tennis is a civilized sport that emphasizes fairness</p>
+<p>and politeness.</p>
+<p>» Leave balls on the baseline near the center mark</p>
+<p>when changing ends, unless your side will be serv-</p>
+<p>ing next.</p>
+<p>&gt; Do not return “fault” service balls. Let them pass</p>
+<p>to the back wall.</p>
+<p>&gt; Do not talk when your opponent is ready to hit</p>
+<p>the ball.</p>
+<p>» If a ball from another court rolls onto your court</p>
+<p>during your opponent’s service motion or at any other time, offer to play a let.</p>
+<p>» Always call the score before each service point and</p>
+<p>the game score at the beginning of each game.</p>
+<p>Which Side?</p>
+<p>or let the opponent choose first.</p>
+<p>&gt; A ball is not out until it is called out.</p>
+<p>» If the ball hits any part of your body, regardless of</p>
+<p>whether you are standing inside or outside the court, the point automatically belongs to your op-</p>
+<p>ponent. Thus, if the ball is clearly long and you catch it on a fly, you lose the point! Do not touch</p>
+<p>an out ball until it has bounced and been called out. The rules anticipate a hurricane occurring and blowing the ball back into the tennis court.</p>
+<p>Even if you are diligently trying to avoid being hit but the ball nicks your foot, you have lost the</p>
+<p>point. This also applies to the serve. It cannot hit you or your partner before it bounces out.</p>
+<p>&gt; You must use your racquet to hit the ball over the</p>
+<p>net. Once I was chasing a low ball in a match and just missed it, though it did hit my foot and go</p>
+<p>over the net. Although my opponent thought that</p>
+<p>I had hit the ball with my racquet, I was obligated to inform him that it was his point. You can use any part of the racquet to hit the ball. The standard response when the ball hits the edge and goes over is, “I paid for the whole racquet, therefore I plan to use the whole racquet.”</p>
+<p>&gt;» You can hit the ball only once on your side. There</p>
+<p>is a very thin line between a “carry,” in which the shot is one continuous motion but the ball rolls on your racquet and gets thrown over the net like a jai alai shot, and a double hit, in which the ball</p>
+<p>leaves the racquet and you contact it again before it crosses the net.</p>
+<p>» You are not allowed to touch the net with your</p>
+<p>racquet or any part of your body or clothing until the ball has bounced twice. If you do so, the point is over, no matter how clear it is that your shot was unreturnable.</p>
+<p>» If you touch the net or reach over it, or the ball</p>
+<p>hits any part of your body or double bounces, you are obligated to call these infractions against your-</p>
+<p>self immediately. If you suspect that this has occurred with your opponent, continue to play the</p>
+<p>point. At its conclusion, ask whether the ball bounced twice or mention that a piece of clothing</p>
+<p>or body part hit the net. Because these are self-</p>
+<p>made calls, the ultimate determiner is the offending player’s integrity. (cont’d.)</p>
+<p>eine Fda meni s Yolf, La ab ies</p>
+<p>There are a few quirky rules of the game you should know about:</p>
+<p>&gt; You must let the ball cross over the net before you</p>
+<p>hit it; you must not prohibit the ball from reaching your side.</p>
+<p>&gt; Every once in a while, due to spin or the wind, the</p>
+<p>ball lands on your side and then spins or blows back over the net before you can touch it. Once</p>
+<p>the ball has landed on your side, you can reach over the net to hit it (the only time this is permis-</p>
+<p>sible), as long as you do not touch the net. Unless you touch the ball, you lose the point, because it is</p>
+<p>deemed that you are not responsible for its return.</p>
+<p>&gt; If the ball you hit touches anything on or over the</p>
+<p>court, you are deemed to have missed. Thus, if</p>
+<p>there are electrical wires or lights overhead and the ball hits them, you lose the point. The only thing that can be hit is the net post, which is deemed part of the court. (I have never seen this happen.) However, if a very wide shot is returned by going around the net rather than over it, this is</p>
+<p>legal.</p>
+<p>ne Sunday many years ago, when I had first started seeing my wife Karen, we were invited to play mixed doubles with another cou-</p>
+<p>ple at their club. Upon arriving, Karen was astounded to see so many husbands interacting with their wives. Doubles tennis is a great way to</p>
+<p>socialize, both with your spouse or significant other and with other couples. We have met some of our best friends through tennis, and</p>
+<p>playing tennis with them continues to be a significant part of these</p>
+<p>friendships. In fact, we often travel to tennis tournaments with many of these same couples. We all enjoy watching and playing tennis and</p>
+<p>find that it’s a great way to spend time together.</p>
+<p>When you play social tennis, there are unwritten rules of behavior.</p>
+<p>For example, if all the players are of equal ability, everyone can play full-out. But when one or more players are substantially better, the</p>
+<p>better players must tone down.</p>
+<p>Some players have difficulty adjusting to social tennis; they mistakenly believe that toning down their power destroys their game, but this isn’t correct. Think of tennis as having three buttons: a try button,</p>
+<p>a focus button, and a power button. Adjust only the power button in</p>
+<p>social tennis. Don’t confuse toning down your game with less focus or effort.</p>
+<p>Recently, one of my students told me that she and her husband went to a tennis party. They were beating another couple, when sud-</p>
+<p>denly the husband went ballistic. He was playing life-or-death tennis— going nuts every time he or his wife missed a shot. My student’s team won that set, but when it was over, Mr. X sought out the best available</p>
+<p>female partner at the party to seek revenge. My student felt stuck, so she and her husband halfheartedly played another set, but they couldn’t wait to walk off the court. Mr. X had broken the social con-</p>
+<p>tract—there is a place to play life-or-death tennis and a place to play social tennis.</p>
+<p>Life-or-death tennis should be reserved for tournaments; if you play with such intensity in social situations, you are out of line. When</p>
+<p>I play tennis with my wife, I am trying to help her improve her game. I view this time as her time, not mine. I am still focused and still trying, but this is not the time or place for me to work on my competitive tennis. I will play mixed doubles with a couple only when the fellow is my equal and we both stay toned down, or when everyone is</p>
+<p>my wife’s equal. Then I play as if I am giving a lesson—I just keep the ball in play and let everyone hit.</p>
+<p>Pee ements? ef Diera bl ecs: 36 25</p>
+<p>s mentioned in Chapter 1, the four players on a doubles court are labeled Players A, B, C, and D. In</p>
+<p>this chapter, the basic moves each player can expect to make are discussed.</p>
+<p>fe server stands behind the baseline near the middle of his or her side of the court and must choose beforehand whether to serve and volley (move in toward the net) or serve and stay back.</p>
+<p>Before the serve is struck, the server must decide whether to go in or not. You cannot wait to judge the quality of the serve and then decide</p>
+<p>to serve and volley, because by the tme you make up your mind to move, the ball will be on your side again.</p>
+<p>Toss the ball up and in front of you. Your serve momentum must carry you forward into the court to aid in your rushing the net. If</p>
+<p>your toss is off to the side or behind you, you will never recover your balance in time to move to the net.</p>
+<p>When you come in to the net, your goal must be to reach at least the service line. If you can’t move in this far, you become vulnerable to having your toes hit on the service return or being passed wide.</p>
+<p>At some point when serving and volleying, you need to perform a</p>
+<p>neutral balancing step called a split step. Some players like to do this when their serve lands on the other side; others make their split step just before the ball is struck by the returner. I have had the most suc-</p>
+<p>cess instructing players to get to the service line before splitting. In any case, the premise is to balance yourself so you can react to the</p>
+<p>incoming return.</p>
+<p>The first volley should be treated as an approach shot. On the first volley, you are usually too far back from the net to hit an easy winning shot, so set the team up with a volley that goes deep to the returnee’s side.</p>
+<p>1. Make up your mind to go in.</p>
+<p>2. Sprint in.</p>
+<p>3. Hit deep; your first volley is treated as an approach shot.</p>
+<p>4. Join your partner at the % line by the next shot.</p>
+<p>A second choice is to serve and stay back. Like with the serve and vol-</p>
+<p>ley, you must make up your mind to stay back before you hit the serve. You should still toss the ball out in front of you to maximize the</p>
+<p>serve, then regain your balance and retreat behind the baseline into your ground-stroke position. If you are serving well but the returns are being crushed, staying back makes good sense. If you are serving and volleying and you miss many of your volleys, consider staying back. If your serve is weak, don’t force the action—stay back.</p>
+<p>_ KEYS TO SERVING AND STAYING BACK</p>
+<p>| 1. Make up your mind to stay back.</p>
+<p>2. Reposition yourself quickly behind the baseline.</p>
+<p>3. Hit deep to deep, away from the opposing net player.</p>
+<p>Importance of the Serve in Doubles</p>
+<p>Whether you are playing singles or doubles, it is important to get your first serve in the service box to put the ball in play. The first</p>
+<p>serve, at all levels, should travel more miles per hour than the second serve. Since your first serve should be your “weapon,” you can inflict more damage on your opponents by getting your first serve in play. Getting your first serve in also keeps the psychological pressure off of you and on your opponents, because they then have to deal with your weapon-grade serve. The pressure reverts back to you when hitting a</p>
+<p>second serve, because if you miss again, the opponents win the point.</p>
+<p>Further, if you get your first serve in play, you cannot double-fault. In televised matches, the commentators always talk about two statistics: first serve percentage and points won when the first serve goes in. At</p>
+<p>the pro level, when the first serve goes in, the serving team wins at least 80% of the points.</p>
+<p>Some experts suggest that the serve be hit at 75% power and with more spin in order to facilitate a higher percentage of first serves going in. This suggestion makes sense if you do not have a big serve or if there is a huge drop-off in power on your second serve; however, at the higher level, this no longer holds true. If you have a big</p>
+<p>“heater” serve and a good second serve, then go for it on the first serve. If your serve is that big, you will earn many free points. It would be senseless to diminish your power.</p>
+<p>Regardless of which approach to serving you subscribe to, do not double-fault. A double fault gives your opponents a free point. If you double-</p>
+<p>fault often, your partner will become frustrated, because there is no way he or she can help you win the point if you cannot put the ball in</p>
+<p>play. Even wimpy serves are better than no serves; you must start the</p>
+<p>point.</p>
+<p>When Does Player A Adjust Positioning?</p>
+<p>Player A may move around to change serve angles or facilitate better serve placement but must stay on his or her side of the court and within the court boundaries, between the center mark and the doubles alley sideline.</p>
+<p>T,. server’s partner stands in the middle of his or her half of the court at an imaginary spot called the % line. To find this line, divide</p>
+<p>the area between the net and the service line in half. Then take one small step back toward the service line. Many players like to stand too close to the alley, which inadvertently causes their partners to cover</p>
+<p>the equivalent of a singles court. The net player must cover the entire half of the court, not just the alley.</p>
+<p>Many players also like to stand very close to the net. This invites</p>
+<p>a lob, because there is so much territory left uncovered behind them.</p>
+<p>Furthermore, standing too close to the net allows net players less reaction time, making them vulnerable to power hits. Being overly close also causes a problem for the serving partner, because the server has</p>
+<p>too much ground to cover before joining the net player.</p>
+<p>When the ball is hit away from the net player to the opposite side of the court, Player B, the net player, could move across the court to take this shot. This movement across the court to the other side is called poaching. Since the net player is positioned at the % line, he or she has the ability to close in on the opponent’s hit and get to the % line, if not closer. By closing in like this, Player B gets an opportunity to “kill” the opposing net player. By being so close to the net, Player B also develops great angles. So whether it is a planned play on the</p>
+<p>serve or a spontaneous movement off the ongoing point, the net player is looking to take the ball all the time.</p>
+<p>Player B changes sides either on a prearranged plan on the serve or spontaneously during an ongoing point. The purpose of Player B changing sides is to facilitate the team’s offense.</p>
+<p>SVGN-VER UN GOB EE © RE Tie: SERVE</p>
+<p>Often, Player B will signal Player A or decide ahead of time that he or she is going to poach on a particular serve. When doing this, you should not move until the ball has landed on the returnee’s side.</p>
+<p>Then, just before the ball is struck, move as fast as you can. Remem-</p>
+<p>ber that you have committed to the movement, since you told your</p>
+<p>partner to play the other side. You cannot change your mind or chicken out halfway across. Even if the returner is able to hit the ball behind you, it does not matter, because your partner is already cover-</p>
+<p>ing that area.</p>
+<p>1. On a poach, move just before the returner hits.</p>
+<p>2. Run in to the net on an angle.</p>
+<p>3. Bounce out to the %% line.</p>
+<p>4. Any time a player crosses over halfway, that player stays on this</p>
+<p>new side and the partner switches.</p>
+<p>Whenever the teams are playing one up and one back during a point</p>
+<p>in progress, Player B, the net player, should always be looking to poach and seize the opportunity whenever possible. Player A, the back player, then crosses to the other side. There is no signal given on</p>
+<p>poaching during an ongoing point. Player B makes this move spontaneously. The deeper the drive pushes the opposition back, the more likely that a poach opportunity will occur. This is based on straight</p>
+<p>math: The greater the distance the ball must travel, the more time the net person has to observe and go for the ball.</p>
+<p>If the drive to the other side is short, the net player should protect his or her side, since the ball has less distance to travel, resulting in less reaction time. The range of the net player determines the pressure the opposite back player feels. The more active the net player is, the more pressure there will be to hit the ball farther crosscourt.</p>
+<p>The net player’s partner must remain focused on the incoming ball rather than be distracted by an active net person. In fact, the net</p>
+<p>player’s own partner is usually the one who complains that the movement is distracting, which is nonsense. The net player must feel no pressure from the backcourt partner. It is a great break for the opposition when the back player freezes his or her own net partner. Even if the net player is missing volleys, the movement causes the other</p>
+<p>team to make more errors because of the added pressure created by poaching. In the long run, a poaching team will win more points than</p>
+<p>an inactive one.</p>
+<p>As the net player becomes more active at the net, he or she must cover the middle shot. Even if the partner is coming to the net, the</p>
+<p>net player is sull in the superior court position to grab this ball.</p>
+<p>KEYS TO POACHING DURING AN ONGOING POINT</p>
+<p>1. Look to get every ball that is hit.</p>
+<p>2. Move in on an angle for the shot.</p>
+<p>An alternative to poaching, and just as important as the real thing, is</p>
+<p>faking poaching. When doing this, Player B should move just before the ball lands. This hints to the returner that you are vacating your territory, so a down-the-line return appears to be the returner’s best bet. Then, as the ball is being struck, quickly return to your original</p>
+<p>position.</p>
+<p>1. Move just before the ball lands.</p>
+<p>2. Just before it is hit, move in on an angle to the net.</p>
+<p>3. Bounce out to the % line, ready to cover the down-the-line shot.</p>
+<p>The purpose of both poaching and faking is to draw the return to the net person. Even when the server is coming in on the serve, the</p>
+<p>net person is in a superior volleying position. He or she can advance to the net more quickly, which creates greater angles and power op-</p>
+<p>portunities. Furthermore, it takes a disciplined returner not to look up to see the opposing team’s activity. This movement often leads to free points, since the returner cannot watch both the ball and you at</p>
+<p>the same time. Even if the net player makes one shot and misses one, if you add the free point to the serving team’s column, the score would be two to one.</p>
+<p>If you do not feel comfortable moving at the net, try changing the lineup position by playing the J formation or Australian. On the I for-</p>
+<p>mation, the server and the net player line up on the same side of the court in an J. After the serve is struck, the server—who has served</p>
+<p>from the center mark—zooms in on the serve and volley on the new side or slides over three steps on the new side if staying back. The net</p>
+<p>player may still signal and run plays.</p>
+<p>The purpose is to disrupt the returner’s rhythm, which is perfectly legal. If you never make any changes, the returner can use a single return and never worry. Increase the pressure on the returner by changing the lineup.</p>
+<p>When Do You Move?</p>
+<p>Start the movement at the beginning of the match. When I play, the first point is always a poaching play. This puts our opponents on no-</p>
+<p>tice that we will be very active at the net. Oddly enough, we have played many teams who use the signals but never move. They are waiting to see if our returns are weak enough to allow them to poach, which is seldom the case, since both Mark and I return very well. As</p>
+<p>a result, these opponents do not move. This is another example of how to take your game to the opponents. Do not react — dictate.</p>
+<p>When Does Player B Adjust Positioning?</p>
+<p>If Player B is faced with a returner who hits every ball weak or low, he or she needs to make a correction and move in. If faced with a nonstop lobber on the return of serve, Player B should start 4 feet closer to the service line to ensure that the lobber has a more difficult</p>
+<p>time hitting the ball over the net player’s head.</p>
+<p>5 A serve returner is positioned around the baseline area in his or her return court. If faced with a strong serve, Player C moves back a little for better sighting and increased reaction time. When facing a weak serve, Player C moves forward to avoid hitting running returns.</p>
+<p>Although serving is the most important skill in tennis, serve returning runs a close second. Again, if you cannot start the point, you</p>
+<p>lose. This may be difficult when facing a big server, but you must try to hit the ball over the net and into the court. Unfortunately, you cannot tell your opponent to slow down the serve so you can get more</p>
+<p>of them back. In doubles, besides having to return the serve successfully, there is the added pressure of trying to avoid the net player to</p>
+<p>protect your partner.</p>
+<p>The slice return is executed by hitting high to low on the ball and</p>
+<p>then driving out with the racquet. I like to call this a “slide and drive” shot, because that is the required motion. This is not a weak shot, but an offensive one. Television announcers often refer to this shot as a</p>
+<p>“chip and charge” shot, but I dislike that terminology, because chip implies a chopping down motion, which you must be careful not to do.</p>
+<p>The slice return is a good one to use when the server stays back. The ball stays low after it lands, forcing the server to hit up on the</p>
+<p>next shot. The slice return is also a good shot to use if the server</p>
+<p>moves toward the net, because it is easy to keep the return low, driving the ball to the toes of the incoming server to make him or her volley up.</p>
+<p>The second style of return is the “big-bang hit.” If the server is going</p>
+<p>to whack the ball, then so will you—power on power. This shot is hit with topspin, going low to high on the ball. This is a good return to</p>
+<p>use if the server stays back, because your power can overrun the server. This is also a good return if the server follows the serve to the net, for</p>
+<p>the same reason. During a recent Davis Cup match, I could hear, via satellite, the captains coaching their teams. One captain told his players to go for the high percentage play and tone down the power to</p>
+<p>get the return in, and the other captain was advocating the opposite, telling his players to keep on banging! The one catch to the big-bang theory is that if the serve is coming in at 100+ miles per hour and the</p>
+<p>return is at equal speed, it is nearly impossible for the returner to follow that return to the net.</p>
+<p>Both methods of return are valid. When I play, I usually use the “bang” on the first serve and the “slide and drive” on the second, always remembering that the return has to go over the net and stay</p>
+<p>within the court boundaries. Your team must play the point. If you miss too many serve returns, you make the opponents’ task of holding serve too easy.</p>
+<p>Before the serve is struck, the returner must decide whether to rush the net. If you wait to make a quality judgment, it will be too late to</p>
+<p>move in as far as the service line. Instead, you must attack the serve and treat it like an approach shot—ideally hitting 2 to 4 feet inside the baseline. If you do not reach the service line, you will be vulnerable to having your toes hit or being passed wide. So attack the serve</p>
+<p>using either method of return, but remember to make up your mind and stay committed.</p>
+<p>When the server hits the ball, do a split step so that you are balanced and can reach every possible area in which the ball might be hit.</p>
+<p>_ KEYS TO RETURNING SERVE AND VOLLEYING</p>
+<p>| 1. Before the server begins the service motion, make up your mind to</p>
+<p>go in.</p>
+<p>2. Pick your target and, ideally, hit it.</p>
+<p>3. Try to get to the 7% line.</p>
+<p>Returning Serve and Staying Back</p>
+<p>You also must make up your mind before you hit the return if you are going to stay back. If the incoming serve is strong, don’t force coming in. If you are not getting in far enough or missing too many volleys, don’t force the issue. Stay back and let the point develop. After you hit your return, quickly assume your stroke posture behind the baseline.</p>
+<p>KEYS TO RETURNING SERVE AND STAYING BACK</p>
+<p>1. Make up your mind to stay back.</p>
+<p>2. Pick your target and, ideally, hit it.</p>
+<p>3. Reposition behind the baseline.</p>
+<p>When Does Player C Adjust FOStTIORtN SF</p>
+<p>Player C’s moves are based on the reality of the server. The sooner in the match that Player C can ascertain the server’s patterns the better he or she will be able to adjust. Then the server may adjust to Player C’s adjustments, making the maneuvering similar to that in a chess</p>
+<p>match, each player moving and countering. Player C can move back if the serve is fast or move in if it’s weak. To counter a serve breaking wide due to heavy spin, Player C may also move up.</p>
+<p>iy A returner’s partner stands at the net in the middle of his or her half of the court, ideally at the % line, the basic volley position. Some players like to stand farther back around the service line. If you do this, make sure as the point progresses that you return to the %%</p>
+<p>line. As with the server&#x27;s partner, sometimes the returner’s partner stands too close to the alley, which inadvertently causes the partner to cover the equivalent of a singles court. The net player must cover the entire half of the court, not just the alley.</p>
+<p>When Does Player D Poach?</p>
+<p>Player D is looking to move off the shot that Player A hits. If Player A’s volley or stroke goes in the middle of the court between Players C</p>
+<p>and D, Player D should be aggressive and get this ball. Player D is also looking to poach if Player A’s shot floats up. By trying to volley this</p>
+<p>shot, Player D is playing offensively.</p>
+<p>1. Look to intercept every ball that is hit.</p>
+<p>2. Move in on an angle for the shot.</p>
+<p>When Does Player D Adjust Positioning?</p>
+<p>Player D moves back to the baseline when:</p>
+<p>@ The return is constantly hit to the opposite net player,</p>
+<p>who nonstop kills Player D.</p>
+<p>® Player C continually misses the return. Tell your part-</p>
+<p>ner that you will move back so he or she can aim in the middle of the court to make the return and need not worry about protecting you.</p>
+<p>© The opposing net player is a great and successful</p>
+<p>poacher. By moving back, you eliminate the point-blank</p>
+<p>target.</p>
+<p>ven though you and your partner may be good players, you may not make a good team. Some teams work well together; others never do. At the pro level, partner-</p>
+<p>ships change all the time. The most successful women’s team ever was</p>
+<p>Pam Shriver and Martina Navratilova. They stopped playing together after many years, feeling that the team had grown stale. On the men’s</p>
+<p>side, it was said that the best doubles team was John McEnroe and whoever was his current partner.</p>
+<p>A key to playing good doubles is having a good partner—being</p>
+<p>a good singles player does not guarantee being a good doubles player. When choosing a partner, look for someone who has good skills that complement yours, because a good team is a balanced team. A few</p>
+<p>years ago, Mark and I played a team in which one player was the best</p>
+<p>player on the court, but his partner was the weakest. We killed them!</p>
+<p>Mark and I have commensurate skills, and we both take responsibility for controlling play. When a team has a noticeably superior player, the better player feels pressured to do more than his share, and the weaker player defers to his partner, becoming too passive. Thus a team with balanced skills is often far more successful than an</p>
+<p>unbalanced team. So when selecting a partner, do not necessarily look for a great player; look for someone on your level who will comple-</p>
+<p>ment your game.</p>
+<p>Another thing to look for when choosing a partner is someone who complements your philosophy. Many times, teams split because</p>
+<p>the players have different goals or a mismatched competitive spirit. This is probably the most common complaint I hear from players. If</p>
+<p>a player is very competitive, she expects the same intensity from her</p>
+<p>partner. If her partner is not as fiercely competitive in the battle, the</p>
+<p>more competitive player feels that she is carrying the entire load. And often the less competitive player feels that her partner is pressuring</p>
+<p>her too much.</p>
+<p>There is no right or wrong level of competitiveness, but compatibility on this issue is essential if you want an enduring partnership. Whether you and your partner play life-or-death tennis in a tourna-</p>
+<p>ment environment or play tennis only to socialize, it is critical that you share the same philosophy.</p>
+<p>When Mark and I play tournaments, it is important to both of us that we do well and play our best. We both play with a high degree of competitiveness, energy, and intensity. As Richey Reneberg said in the foreword about helping each other out and picking each other up on occasion, our team can do this.</p>
+<p>LH. a high level of play, it is important that both partners possess</p>
+<p>all the necessary skills and can play aggressively. At the U.S. Tennis Association (USTA) 3.5 level (the USTA has created a 1-7 classifica-</p>
+<p>tion system for tennis talent; see Appendix A), many teams try to blend two diverse play styles: a steady player with an aggressive</p>
+<p>player, one responsible for setting up the point and the other for finishing it off. This makes for a tough combination to play against, because the two styles never give the opponents a chance to find their</p>
+<p>groove or get a good hitting rhythm. However, once you clear the 3.5 level of play, if you fall short on skills, your opponents will exploit the weakness.</p>
+<p>n order to achieve successful teamwork, you and your partner must be comfortable with each other’s style of play, and the best way to become comfortable is to practice together. As you and your partner work together, you learn more about each other and become increasingly familiar with what works best for you as a team. I hope that you are both studying this book and working harmoniously on your</p>
+<p>play program.</p>
+<p>Also, as with any activity that involves two people, learning to get along with your partner enables you to maximize your level of play. The secret is for each player to be responsible for carrying his or her</p>
+<p>share of the load.</p>
+<p>The best way to play well yourself is to have a good definition of all</p>
+<p>your shots. You must have a video of the shot in your mind; then you</p>
+<p>simply push the execute button when you hit. Everyone misses now and then. It is critical, however, that you do not let your arm’s failure erase the video of the correct way to hit your shots.</p>
+<p>The better you play, the easier it is for your partner to play better. During one of my tournaments, I observed a good doubles match in which all four players were quite good, but one player was having a tough time on the serve return. Finally his partner turned to him and said, “I can’t do this by myself. You must help.” If you go into a</p>
+<p>miss mode, your partner inevitably feels that every time he hits the ball he must win the point, which is an impossible task. The pressure</p>
+<p>created is too immense; your partner ends up trying too hard, which</p>
+<p>results in his performing poorly. You must hold up your end of the partnership to help out your partner.</p>
+<p>The Roar tonye.7is shit pi 2, 29</p>
+<p>In doubles, it is easy not to be intensely focused because you are not hitting every ball—you are sharing them with your partner. But you must develop a doubles attitude wherein you expect that every ball is going to come to you. This will make you constantly ready and in the point. Further, you must want every ball to come to you. This is not an insult to your partner, but simply a good doubles attitude. If you are looking for the ball and wanting to play the ball, you will play</p>
+<p>more aggressively and cover more of the shots.</p>
+<p>When you play, you and your partner must be on the same page of</p>
+<p>the playbook. If your partner comes in but you suddenly retreat, you distract your partner. Instead of focusing on the ball, he will be wondering where you are going and why.</p>
+<p>I am a very good doubles player. At a tournament years ago, a player ranked above me in singles asked if I would play with him because his partner had to withdraw. Knowing that he was a good sin-</p>
+<p>gles player, I welcomed the opportunity. (I pointed out earlier that playing singles well does not guarantee a good doubles player.) I was surprised that he was such a weak doubles player—most of the match</p>
+<p>I was looking around for him, trying to figure out where he was going. Obviously we were not on the same page of the playbook. As a result of this distraction, my play suffered greatly because I could no longer focus on me and the ball. We lost.</p>
+<p>Sometimes you and a new partner are immediately comfortable. Other times, you never seem to be in sync or able to work things out.</p>
+<p>But either way, make sure that you are not the one compromising the</p>
+<p>team.</p>
+<p>You must ready yourself before the point starts and stay ready throughout the point. I mention this again and again because it is so important. If I see my partner acting like a lump, I am distracted and cannot focus on the ball. I want to yell to my opponents not to start</p>
+<p>play because when my partner is not ready, I am not ready. Even if you are the server’s partner or the serve returner’s partner and the earliest ball you can hit is ball three or four, you must be ready for ac-</p>
+<p>tion before the first ball is struck. To do otherwise ensures a losing strategy and is disrespectful of your partner.</p>
+<p>You must trust your partner to take care of his or her shots and side.</p>
+<p>If you are constantly hogging the court, your partner will become court shy and let balls go through because he or she automatically ex-</p>
+<p>pects you to take them. As you squeeze your partner’s court down, he or she begins to play much worse, never being certain when to hit the ball.</p>
+<p>One further word of caution here: Recently one of my students played with an overly aggressive partner. During her next clinic, I noticed that she was not covering shots that were clearly hers. Just because Ms. X hogs all the shots when she is your partner, this does not</p>
+<p>mean that all your other partners will do the same. You must be careful not to let yourself become a universally small-ground coverage player because of one partner.</p>
+<p>To work together as a team, you and your partner must talk. Learn</p>
+<p>what to say to your partner to help him or her function better. One of</p>
+<p>my students always encourages her partner by yelling “Run, run, run” for the deep lobs or drop shots, or “Swing” on balls that require</p>
+<p>a long stretch. Some partners like this; others don’t. Know which your partner prefers. Often the nonhitter has a better read on a shot and can bark the proper command.</p>
+<p>Recently one of my students told me that when he plays mixed doubles and his wife barks commands, he just freezes. He is distracted by her. You and your partner must figure out what you can say to each other. When I tell Mark to get his first serve in, it is a reminder of the task to be accomplished and what to focus on. I am not belit-</p>
+<p>tling or denigrating him, but simply trying to encourage him.</p>
+<p>If your partner asks what he or she is doing wrong and you have observed something, then by all means share your observation—briefly.</p>
+<p>Remember, however, that very few partners respond well to being coached on every point. They may perceive you as a know-it-all and</p>
+<p>think that you are blaming them for the misses in the match. What you say and how you say it may make the team hold together or fall apart.</p>
+<p>Be open to adjustments. Both players need to try to spot trends</p>
+</section>
+<section class="chapter" id="sec-2">
+<h2>Part 2  ·  pp. 46–75</h2>
+<p>in the match. If your partner makes a suggestion, be open to trying different things. The key to remember is: Do not change a winning</p>
+<p>game, but learn to make adjustments if you are losing.</p>
+<p>Learn to Return from Both Sides</p>
+<p>When you play singles, you practice returning from both sides. But many players who play only doubles learn to return serve well from only one side, even though neither side is more difficult to play. If you play only one side, you limit your possible play partners, because</p>
+<p>switching sides will be too difficult for you. Therefore, it’s a good idea to mix up the sides on which you play.</p>
+<p>When you play a match, you need to decide which sides you and your partner will play. I believe that changing sides during a match is one of the least productive changes. However, if you are getting</p>
+<p>rolled and have no apparent chance of winning, why not?</p>
+<p>Even if your partner 1s having an unbelievably bad day, try your best to keep the team going. If you play well and hang in there, it is possible that your partner will come around. Your partner feels pressure from the opponents, but if he or she feels pressured by you as well, your partner’s play may never stabilize. Good teams help each other</p>
+<p>through the rough patches.</p>
+<p>In tennis, racquet technology changes radically and frequently. Don’t be technologically inadequate. If your team is playing with old tech-</p>
+<p>nology when your opponents have the latest weapons, you are giving them at least a 10% advantage. If you are a serious player, you need</p>
+<p>a serious racquet—a wide-body racquet. You don’t necessarily need</p>
+<p>the latest racquet or the widest racquet made, but you do need a racquet that is technologically current.</p>
+<p>1. Play well yourself.</p>
+<p>2. Have a good doubles attitude.</p>
+<p>3. Run the plays.</p>
+<p>4. Be ready.</p>
+<p>5. Trust your partner.</p>
+<p>6. Talk.</p>
+<p>7. Do not coach your partner.</p>
+<p>8. Learn to return from both sides.</p>
+<p>9. Do not quit on your partner.</p>
+<p>10. Be technologically current.</p>
+<p>Bey and during the match, a good team needs to make sure that both members are in sync that day. There are three things you</p>
+<p>must do to ensure this. First, before the match, you and your partner must sit down with each other and formulate your game plan. Next, you must develop match analytical skills. Then you must huddle or com-</p>
+<p>municate.</p>
+<p>You need to plot the strategy your team will use. When the San Francisco Forty-niners football team plays a game, they run their first 15</p>
+<p>plays the way they were scripted, which is what you should do in your</p>
+<p>match. Walk onto the court committed to your predetermined game plan.</p>
+<p>Although some pros admit to not having a game plan, very few players wait to see how their opponents are playing before imple-</p>
+<p>menting a game plan. Of course, you may need to adjust your plan once you&#x27;ve given it every opportunity to work, but to start play without a plan is a poor strategy. Why deliberately plan to play reactive</p>
+<p>tennis? Reactive tennis reflects a negative and defensive posture.</p>
+<p>In their Super Bowl performances, the Denver Broncos were never able to figure out how to stop the opposition. Don’t make the same mistake. Walk onto the court planning to play aggressively and</p>
+<p>make your opponents stop you. And only if they stop you cold do you adjust your game plan.</p>
+<p>You should always discuss the following with your partner:</p>
+<p>@ Are we going to serve and come in or not?</p>
+<p>® Are we going to return serve and come in or stay back?</p>
+<p>® Who covers the middle?</p>
+<p>® Who covers the short balls?</p>
+<p>® Who chases down the lobs?</p>
+<p>@ How do we switch?</p>
+<p>I hope that you and your partner study the play section in this book and agree on how you are going to play your match beforehand.</p>
+<p>Your team needs to develop match analytical skills. Both you and your partner must keep your eyes wide open and your computers</p>
+<p>turned on. Even though your game plan may be working, you still</p>
+<p>need to fine-tune your program to the reality of the day’s opponents. Some of the things you must observe include:</p>
+<p>@ Which hand do they hit with? Inexperienced players are often so focused on their own play that they fail to observe the most obvious. The spin delivered by a right-</p>
+<p>handed hitter is different from that delivered by a lefthander. Also, at the beginner level, the backhand side is often the opponent’s weaker side. Thus, knowing which side is the opponent’s backhand side is important.</p>
+<p>® How do today’s conditions affect you and your oppo-</p>
+<p>nents? What is the sun’s position? From which direction 1s</p>
+<p>the wind blowing? What is the court speed?</p>
+<p>© What is the quality of your opponents’ shots, spin, and</p>
+<p>placement? You should have a full scouting report on them by the third game. It is important that partners share and discuss this information and that both are receptive to the information. If your partner tells you to watch the short-angle service return because it has hap-</p>
+<p>pened three straight times, it is important that you re-</p>
+<p>spond favorably. Furthermore, you need to continue to observe and communicate throughout the match.</p>
+<p>In one tournament, my partner and I had determined that Player D had the weaker overhead. I made a great scramble switch and threw up a lob to Player C. My partner half kiddingly, half seriously said, “If you&#x27;re going to make such a great get, lob to the right player.” He was right; for a moment I just forgot to whom I should hit the ball. You need to remind each other about who is the stronger player, who is the stronger server, where the sun is, from which direction the wind blows. A good team continually communicates and reminds each</p>
+<p>other of the seemingly obvious. Do not assume that because you are knowledgeable about these things your partner is also as observant.</p>
+<p>A good team communicates, huddling after each point. If you watch</p>
+<p>any pro doubles match, you will see both teams huddle for a moment after every point. I call these “formula huddles.” For example:</p>
+<p>» Serve side formula: Server gets his first serve in; the</p>
+<p>net player is active.</p>
+<p>&gt; Serve return side formula: Call your return (cross-</p>
+<p>court or down the line) and tell your partner if you are coming in or staying back.</p>
+<p>The purpose of the huddle is to go over the game plan and make a</p>
+<p>commitment to play the next point. This interaction helps the team work together. If you blow a shot, apologize and get on with it. You</p>
+<p>are allowed only 20 seconds between points, so get together to set the plan for the next point.</p>
+<p>Remember, if you give your best effort each me you play, your partner will be encouraged to put forth his or her best effort too. A successful partnership is mutually encouraging and supportive.</p>
+<p>1. Have a game plan.</p>
+<p>2. Develop match analytical skills.</p>
+<p>3. Huddle.</p>
+<p>nce a player is able to stroke with some consistency and play at the net fairly aggressively, usually around the 3.5 level and up, the team that can control the net is going to win most of the matches. The key concept to winning requires you and your partner to form a “wall” at the net.</p>
+<p>cd. foremost way to put pressure on your opponents is to position yourselves at the net on an imaginary line at the % spot. On paper, the net team is unbeatable at this spot. Any ball that Player C, the returner, hits has to flow through an area that is reachable by either Player A or Player B at the net.</p>
+<p>» If Player C hits down Player B’s alley, Player B can</p>
+<p>cross Over to get it.</p>
+<p>» If Player C tries to power crosscourt, Player A can</p>
+<p>cross over to get it.</p>
+<p>» If Player C powers down the middle, both Players</p>
+<p>A and B can cover the shot.</p>
+<p>» If Player C tries to power the ball through either</p>
+<p>Player A or Player B, either player can step sideways to handle the shot.</p>
+<p>» If Player C tries a dip shot to either player, the</p>
+<p>player can charge the shot and hit it.</p>
+<p>» If Player C tries to lob to either player, the player</p>
+<p>can go back and hit a power overhead shot.</p>
+<p>Remember that once the wall is in place, the team at the net must inflict damage by either powering near the net player or short-an-</p>
+<p>gling the deep player. To execute a power volley, the volleyer sets the racquet at a left or right 90-degree angle and drives through the shot. When angle volleying, the volleyer places the racquet head at a 60- or</p>
+<p>110-degree angle and touches the ball with the racquet. Occasionally Player C will be able to outexecute the wall, but at a high level of play, the net team will win 75% of the points.</p>
+<p>1. Use your feet to cover the ground you are supposed to.</p>
+<p>2. Do “damage” to the ball.</p>
+<p>When one of the players at the net receives the ball, it is that player&#x27;s job to do damage with that shot by powering around the closer op-</p>
+<p>ponent. I call this being “mean” because it is mean to hit at or around the opposing net person, but being mean is really just correct ball</p>
+<p>placement. It is not a matter of which opponent is the weaker player, but mathematics. Who has fewer seconds to react and less distance to | track the ball? The answer is the close opposite net player, so try to hit | the ball around this player.</p>
+<p>The power volley is your basic volley. Start with your racquet at a left</p>
+<p>or right angle, depending on whether you are hitting a forehand or backhand; then drive outward with a punch or short quarter-circle | follow-through.</p>
+<p>Dindt bbes, Sstoradt egy ©. 37</p>
+<p>The angle shot is hit by placing your racquet head at a 60-degree an-</p>
+<p>gle in front of your wrist to produce the out angle. The reverse angle shot is hit by placing your racquet at a 110-degree angle to your wrist.</p>
+<p>The short-angled shot hit toward the deep opponent&#x27;s (Player C’s) sideline is a shot that is nearly impossible to run down. This shot becomes mandatory if the net player (Player A or B) is faced with a</p>
+<p>shot below net level. At an upper level of play, the opposite net player</p>
+<p>(Player D) is aware of the close-to-close play and will protect himself or herself. Thus, if you hit up on the ball, you are presenting the opposing net player with a seemingly floating pumpkin, and you suddenly become the target. Therefore, if a player hits a shot that dips below net level, the opposing team’s response should be to return</p>
+<p>another dip shot, short-angled away from the opposing net player’s</p>
+<p>sideline.</p>
+<p>If you fail to do damage with your volley, your opponents won&#x27;t fear you at the net. One of the premier women’s pro doubles players is not as strong as her rating implies because she always needs more</p>
+<p>than one put-away opportunity. If I hit the ball to you at the net and you just hit it back to me, I am not threatened by your net position because of the unlimited opportunities to go around or over your</p>
+<p>team. And given enough chances, I will eventually be successful.</p>
+<p>| 1. Power the close-to-close player.</p>
+<p>| 2. Angle close to the net, away from the deep player.</p>
+<p>Sse Players A and B will be positioned at the net, forming</p>
+<p>a wall, because Player A either served and volleyed or was invited into</p>
+<p>the net. When the opposing back player is facing that wall, he or she must try to escape by hitting through, around, under, or over the wall to keep his or her teammate at the net from getting “killed.” Certain responses from you will either protect your partner or get him or her killed. The concept of protecting your partner is called escaping, and there are several ways to accomplish it:</p>
+<p>» The back stroker can try to hit at the bodies of ei-</p>
+<p>ther net player, hoping to literally run them over.</p>
+<p>In one of my clinics for young players, whenever one stroker would take a big windup, the opposing</p>
+<p>net player would become fearful and abandon her</p>
+<p>net spot.</p>
+<p>» The stroker can try to hit a power shot toward the</p>
+<p>opposing net player’s alley, hoping that this player</p>
+<p>will not have enough range to cover the shot.</p>
+<p>» The stroker can power the ball between the play-</p>
+<p>ers at the net, hoping that the net team has not</p>
+<p>worked out who will cover this shot. Often inexperienced players act like magnets that repel each other. Both players vacate the hit area, thinking</p>
+<p>that the other partner will hit them or the ball.</p>
+<p>» By placing more spin on the shot or softening the</p>
+<p>hit, the stroker can hit the ball so that it dips just over the net. The net players may not be able to</p>
+<p>move fast enough or bend low enough to get to the ball, but if they do, they will be able to return only a weak, floating shot.</p>
+<p>&gt;» The stroker can lob over the heads of the net</p>
+<p>team. The net players will either have poor overhead shots or be confused as to who should chase down and hit the ball.</p>
+<p>1. Pick one target and do not change your mind.</p>
+<p>2. Vary your shot selection so you do not become predictable. |</p>
+<p>Pee Pry TO DEEP; GeOSsSE FTO CLOSE</p>
+<p>E 4. inally, one of the keys to understanding the upcoming playbook | is to remember that all doubles strategy flows from the concept that | when you are deep in the court you hit the ball to the deep target, | and when you are close to the net you hit the ball to the close target. | Until you are positioned at or inside the net at the % line, you are in | a deep position, requiring patience and hitting back to the deep tar- | get. When you are close, power around the other net player or short- | angle the deep player.</p>
+<p>uring a football game, if you watch the players on the sidelines, you often see them studying pictures</p>
+<p>that have been taken from the coaches’ boxes and sent down to the players. The players are studying plays that have taken place during the game in order to develop a better understanding of how to respond to the pictured situation. I’ve constructed something similar</p>
+<p>here for doubles tennis. The purpose of my playbook is to help you develop a better understanding of how to respond to given situations</p>
+<p>on the doubles court.</p>
+<p>The playbook in this chapter covers various scenarios that you may encounter on the court. These scenarios fall under four categories: the serve and serve return; a point in progress in which both</p>
+<p>sides have one player at the net and the other back; a point in progress in which one of the teams is at the net and the other is still one up and one back (in which case the back player must protect the</p>
+<p>net player by escaping out of the danger of the opponents at the net); and finally the case in which both players stay back at the baseline, or</p>
+<p>Each scenario is followed by pictures of the doubles players responding to the given situation. In some situations, you will be shown how to go for more on the shot; in others, you will be cautioned to exe for less just to stay in the point. Knowing which shot to hit and w here to hit it greatly increases your chances fe: success because you will be aiming the ball and following through to the target area. Chasing down a tough ball with a plan i in mind helps you achieve your goal. Once you become familiar with the scenarios presented, your confidence and ability to move quickly as a team will increase. Your</p>
+<p>success in running these plays depends on good movement by the team. There are two movement clocks that your team must maximize. The first clock starts when your team hits the ball and ends when</p>
+<p>your opponent team hits the ball. Once your team has concluded the</p>
+<p>hit, every tick of this clock must be used to reposition your team in preparation for the return shot. One of your team’s main goals is to learn where to reposition—to develop the ability to come off the last shot and move quickly with a purpose.</p>
+<p>The second clock begins when the opposing team hits the ball and ends when your team hits the ball. Again, the key goal is to max-</p>
+<p>imize your team’s movement on every Hick of this clock. The key to moving off your opponents’ hit is to know what to look for: angle of</p>
+<p>racquet at contact point, length of follow-through on the drive, and directional flow of the hit. Pictures 1 and 2 show the contact point. This will tell you the spin—whether the racquet face is open for a slice</p>
+<p>as in Picture 1, or squared up for a topspin shot as in Picture 2—and the power of the shot. If it was hit early, it was hit with more power due to better body involvement. If it was hit late, it has less power due to less body usage. When playing, you should also be able to hear the solidness of the hit. A more solid sound means more power, because the racquet strength was maximized.</p>
+<p>Picture 3 captures the drive-through picture. The longer the drive-through, the more depth or speed on the ball. If the hitter chops down, the ball will float.</p>
+<p>Picture 4 addresses the directional flow of the hit—whether the ball will go to the left or the right. It is critical that you never guess</p>
+<p>flow direction but read it. Within a foot of the ball’s leaving the racquet, you should be able to discern whether it is moving right or left or straight at you.</p>
+<p>If you can read the direction, speed, and spin of the opponent&#x27;s hit, you will have time to reach the ball and control your response.</p>
+<p>or each play, I set a scenario (in boldface) and follow this with directions explaining how each player is likely to respond. Your job is to understand the situation presented, then go through each play as one of the players—noting, as the play develops, your ideal reactions in combination with your partner’s. This exercise should increase your</p>
+<p>knowledge of how your response to a situation will create a new situation and so on, thereby increasing your ability to react quickly and correctly on the court.</p>
+<p>For each play, there is also a set of pictures for you to study. These should help you visualize the plays and increase your under-</p>
+<p>standing of play development—what shot to hit, where to hit it, and</p>
+<p>where to go next on the court. You should soon be able to play without thinking—programmed tennis will take over, enabling you to</p>
+<p>focus on the shot itself without expending energy and time on the decision-making process.</p>
+<p>You can mentally run through each play as many as four times, assuming the role of a different player each time. I also suggest going over these plays with your partner. The only way a team will ever do</p>
+<p>well is for it to move, react, think—essentially play—together.</p>
+<p>| 1. Identify and understand the boldface scenario.</p>
+<p>2. Run through the play-by-play, assuming the identity of any one</p>
+<p>| player.</p>
+<p>3. Study the pictures to better understand play development.</p>
+<p>4. Repeat the process, assuming different roles.</p>
+<p>5. Share this information with your partner.</p>
+<p>6. Put your understanding to good use through quick and correct</p>
+<p>team play on the court.</p>
+<p>SCOHSSSHSHHHSHSSHHHHEHESHESHETOHSESSSHSEHEHSHEEHHSEHEHHEHEHEEHEEEEEEEEOEOEESED « Serve and Serve Rees Plays</p>
+<p>aD Player A serves and Player A serves and rushes the net, attempting to reach the volleys. Player C hits a service line. The first volley goes back crosscourt. After this driving crosscourt return shot is hit, A moves in 3 feet more to form the wall with Player B. and rushes the net.</p>
+<p>Player B holds her spot.</p>
+<p>Player C, after the return, attempts to follow the return to the</p>
+<p>net. Ideally she hits her first volley from inside the service line. She can hit in any direction, as all four players are at the</p>
+<p>net. After her first shot, she moves in to join her partner.</p>
+<p>Player D holds her spot if she started at the % line.</p>
+<p>Player A serves and Player A attempts to reach the service line. The first volley rushes the net. Player Gg goes back crosscourt. After this shot is hit, A moves in 3 feet returns a drive crosscourt more to form the wall with Player B.</p>
+<p>and stays back. Player B holds his spot.</p>
+<p>Player C bounces behind the baseline to prepare for A’s volley.</p>
+<p>He faces the wall and must escape. His next shot is either power down his alley, power middle, short crosscourt angle, or lob.</p>
+<p>Player D holds his spot.</p>
+<p>the net.</p>
+<p>Player A bounces behind the baseline to prepare for C’s return. He faces the wall and must escape. His next shot is either power down his alley, power middle, short crosscourt angle, or lob.</p>
+<p>Player B holds his spot.</p>
+<p>Player C rushes the net, attempting to reach the % line.</p>
+<p>Player D holds his spot.</p>
+<p>POOP REE H EHH E ESTEE EEE HEE H EEE SHEE HEHE EEE SEES SEES EEE EEE EEEE EEE EEEE EEE E EEE EEE EEE EEE E EEE EEE E EEE EE®</p>
+<p>4 | Player A serves and Player A continues in to the % line.</p>
+<p>rushes the net. Player C Player B holds her ground, trying to power through returns a power drive to Player D. Player B and stays back. Player C stays back.</p>
+<p>SERRE R ERE E EERE EEE E HH EEE SEES EEE EEE EEE EE EE SETH SESE ESE EEE EEEH EEE H EEE SHEE HEHE SEH EEE SEEHEHEE ESSE EES</p>
+<p>5 Player A serves and Player A continues in to the % line.</p>
+<p>rushes the net. Player C Player B dips the ball on a soft touch hit on the short angle returns a power drive below —_ away from Player C.</p>
+<p>Player C tries for the ball. comes in behind the return. ayer C tries for the ba</p>
+<p>Player D may try to chase the hit.</p>
+<p>NOTE: For Scenarios 4 and 5, Player C may either come in or stay back. - For either scenario, Player B will try the power return through Player D, known as the mean drill, if the ball is above the net. If the ball lands below the net, Player B will angle the ball back to</p>
+<p>Player C’s side.</p>
+<p>Player A serves and remains behind the baseline. Player C returns high to Player B.</p>
+<p>Player A then rushes toward *% line. (When your partner is invited to go on the offensive, you rush the net in support.)</p>
+<p>Player B holds his ground, trying to power through Player</p>
+<p>D—the mean drill.</p>
+<p>Player C continues in toward the net.</p>
+<p>Player D holds his ground, trying to survive the big hit.</p>
+<p>eee PP eee ee eee eee Cee CCC eee eee rere</p>
+<p>] Player A serves and remains behind the baseline.</p>
+<p>The return of serve is hit low</p>
+<p>to Player B.</p>
+<p>Player A then rushes toward the * line.</p>
+<p>Player B tries to hit a dip angle short toward Player C.</p>
+<p>Player C continues in toward the net.</p>
+<p>Player D holds his ground, trying to survive the big hit.</p>
+<p>COROT RTH E EEE EEE HEHEHE HEHEHE HEHE EEE SESH HEHE EEE EEE EEE EEE EEE EEE SESE EEEE HEHE EEEEEEHEEE SEES EEEE SEES</p>
+<p>Player A serves and Player A stops, hits the overhead, then proceeds toward the volleys. Player C lobs the net.</p>
+<p>return toward Player A. Player B starts back to cover the lob but, seeing that Player A</p>
+<p>can cover the ball, advances toward net.</p>
+<p>Player C holds his position if Player A hits the overhead.</p>
+<p>Player D, at the % line, retreats to the baseline with his partner unless he feels brave or insulting.</p>
+<p>Ree ee H EEE EE EEE HEHEHE HEHEHE HEHEHE HEHE EEE EEE HEE HEE EHEEEEEEEEEE EEE EEEEEEEEEEEEE EES eeeneee</p>
+<p>= @) 5d @©@ Winnitn zg D201 be ses</p>
+<p>POOR O RHEE HEH HEHEHE E EEE EEE EE EE EEE HEHE SESE ES HEEEEEH ESE SESH EEE EEEEEEEEEEHHEHSSESHEEH HOES EEE EEEEES |</p>
+<p>return over Player A.</p>
+<p>Player A runs back, lets the ball bounce, then hits it.</p>
+<p>Player B retreats to the baseline with his partner.</p>
+<p>Player C charges toward the net.</p>
+<p>Player D holds his position.</p>
+<p>POOR H REE H TEETH HEE E EEE SESH HEHE EEH OSES EEE EEEE ETE SEES EEE EEE SESE EEE TEES EEE H EES EEEH OEE HEHE SEES SEES EEESD®</p>
+</section>
+<section class="chapter" id="sec-3">
+<h2>Part 3  ·  pp. 76–105</h2>
+<p>return toward Player A.</p>
+<p>Player A comes in and hits the overhead.</p>
+<p>Player B holds his position.</p>
+<p>Player C holds his position.</p>
+<p>Player D holds his position.</p>
+<p>STEERER HEHE EEE EEE EEE HEHE ETHER EE EEE EEE EEE EEE E EEE EEE EE EEE EEE HEHE EEE HEHE EEE EEEE EEE EEE HEEEEEEE EEE EES</p>
+<p>Player A serves and Player A advances toward the °8 line if Player B hits the volleys. Player C lobs the overhead.</p>
+<p>return over Player B. Player B hits the overhead and returns to the % line.</p>
+<p>Player C holds his position.</p>
+<p>Player D holds his position if the ball is deep. If the lob is</p>
+<p>short, Player D retreats to the baseline.</p>
+<p>COREE EE EEE EEE EER EEE EERE EEE EEE EEE H EEE EEE EEE EEE SEES</p>
+<p>Player A serves and Player A retreats with her partner to the baseline. volleys. Player C lobs the</p>
+<p>return over Player B, who Sees oe runs back, lets the ball Player C attacks toward the % line when the opposition</p>
+<p>retreats.</p>
+<p>Player B has retreated to the baseline.</p>
+<p>bounce, then hits it.</p>
+<p>Player D holds her position.</p>
+<p>r. s BRAK MBAS RRP ARARS A I PP. £ a a ae a</p>
+<p>13 Player A serves and stays back. Player C lobs the</p>
+<p>return over Player B, who hits the overhead.</p>
+<p>Player A advances toward the °% line.</p>
+<p>Player B hits an overhead.</p>
+<p>Player C holds his position.</p>
+<p>Player D holds his position if the ball lands deep or retreats if</p>
+<p>it is short.</p>
+<p>CERRO R Ree Ree OEE EERE EEE EEE EEE E EERE EEE HEHE EES EEEEEEEE EEE EEE EEE EEE EEEEEEEHEEEE HEHE EEE EEEEEEEEEES</p>
+<p>Bese csewsaeosct ENN eon scone ceca ccccse conde cccvececcscctcucccecossesessececesecses</p>
+<p>stays back. Player C hits a good lob return over Player</p>
+<p>Player A crosses over and either hits the ball on the fly (blitzes) or lets it bounce.</p>
+<p>Player B switches and advances on the blitz or retreats on the</p>
+<p>bounced ball.</p>
+<p>Player C moves in toward the net.</p>
+<p>Player D holds his position.</p>
+<p>Player A serves wide Player A moves in toward the net, hedging toward the middle to Player C and advances of the court.</p>
+<p>toward net. Player B slides two steps toward the alley.</p>
+<p>Player C returns anywhere; however, because the angle has</p>
+<p>changed, the down-the-line shot is now in his favor.</p>
+<p>Player D slides to the middle two steps.</p>
+<p>Player A serves wide Player A slides to the middle of the court.</p>
+<p>to Player C and stays back. Player B slides two steps toward the alley.</p>
+<p>Player C returns anywhere; however, because the angle has changed, the down-the-line shot is now in her favor.</p>
+<p>Player D slides to the middle two steps.</p>
+<p>—— Af AA RK RRR KR AKAALAAPDPS IS a A Se eS ane &lt;n PCRTSTEIEMEEE, UEIIIEU OUI EEE EES WORE LAE OP IR</p>
+<p>17Player A serves and Player A, after a split step, charges the ball, going for the win 4 . I I § , Soins volleys. Player C returns short by powering the ball down the line or angling it short, back to</p>
+<p>and floats the ball toward Player C’s side. Because the ball floated, Player A can use the Player A extra time to move inside the win line, the °% line.</p>
+<p>Player B holds his position.</p>
+<p>Player C holds his position.</p>
+<p>Player D runs for his life.</p>
+<p>Player A serves and volleys. Player C floats the</p>
+<p>ball to Player B.</p>
+<p>Player B attacks the ball, going for the win. He powers the</p>
+<p>ball around Player D or short-angles Player C.</p>
+<p>Player A continues to close toward the net.</p>
+<p>Player C holds his position.</p>
+<p>Player D runs for his life.</p>
+<p>returns crosscourt.</p>
+<p>During the course of a normal match, the server will often be faced with about 50 balls to hit during his or her service games. But my partner Mark and I have played doubles matches in which the server hit only two balls after the serve. Once we even played a set in which Mark</p>
+<p>never hit a ball after he served because of my movement at the net. The purpose of the movement is to draw the opponent’s hit to the net player or, better yet, confuse the opponents so that they simply miss.</p>
+<p>When I am poaching, I try to make the opponent believe that the crosscourt shot is safe, then I close it off. When I fake the poach,</p>
+<p>I try to make the opponent think that the down-the-line shot is safe, but I close it down. When we play, we have a simple formula: Get the</p>
+<p>first serve in, and the net player will do the rest.</p>
+<p>Player A should serve to the middle, take two steps in, then break to the other side and in. Player A must still get to the Poaching: Player A service line.</p>
+<p>serves and volleys; Player C Player B waits until the ball has landed and Player C’s head</p>
+<p>goes down to hit the ball, then sprints in on the angle, hitting either a power shot around Player D or a short angle back to</p>
+<p>Player C, then continues his movement to change sides. Player B should not return to his original spot.</p>
+<p>Player C rushes the net or stays back.</p>
+<p>Player D hopes for the best and holds his ground.</p>
+<p>Poaching: Player A Player A serves, waits one count, then breaks to the other serves and stays back; Player _ side.</p>
+<p>C returns crosscourt. Player B waits until the ball has landed and Player C’s head</p>
+<p>goes down to hit the ball, then sprints in on the angle, hitting either a power shot around Player D or a short angle back to</p>
+<p>Player C.</p>
+<p>Player C returns crosscourt.</p>
+<p>Player D hopes for the best and holds her ground.</p>
+<p>RRR ER ERR EEE EERE EEE EEE EEE EERE HEHE EEE EES Poe eee UCT USCC CCOSCOOCCC CCST) eee eee eee eee</p>
+<p>Poaching: Player A Player A runs over on the cross and hits the first volley deep serves and volleys; Player C to deep, down the line to Player C.</p>
+<p>returns down the line. Player B, who crossed, bounces out to the % line.</p>
+<p>Player C moves either up or back.</p>
+<p>Player D must slide to the middle to close the gap.</p>
+<p>NOTE: When Player A gets the volley, he has an easy winner in the gap area between Players C and D, unless Player D slides and squeezes</p>
+<p>the middle of the court to close the gap.</p>
+<p>Poaching: Player A Player A serves, runs over on the cross, and returns the ball serves and stays back; Player deep to Player C. C returns down the line. Player B switches sides with Player A.</p>
+<p>Player C remains back. If Player C comes in, Player A must</p>
+<p>escape.</p>
+<p>Player D squeezes the middle.</p>
+<p>CORO Ree REE EEE EEE EEE EEE EEE EE HEHE EEE HEHEHE EE EEE EEE EEE EEE SESE EEE EEEEEEEHEEEEEEEE EEE E EEE EEEE</p>
+<p>returns power middle.</p>
+<p>Player A serves and volleys.</p>
+<p>Player B must reach back to cover the ball.</p>
+<p>Player C remains back or comes in.</p>
+<p>Player D hopes for the best and holds his ground.</p>
+<p>SORTER E HERE E EEE HEHE EEE HEHE HEHEHE EEE HEE E EEE EEE TEES seen eeeeeee seeeeeeee seen eeeneee eee e ee eenee®</p>
+<p>Player A serves and Player A moves in, then crosses over.</p>
+<p>rushes the net. Player B ria GE ae Player C comes in if the lob is deep or holds his position if it is</p>
+<p>short.</p>
+<p>Player B must read the ball, then go back to get the ball.</p>
+<p>Player D goes back if the lob is short or remains if the lob is</p>
+<p>deep.</p>
+<p>rushes the net. Player B poaches; Player C lobs to</p>
+<p>Player A.</p>
+<p>Player A puts on the brakes and hits the overhead.</p>
+<p>Player B goes to the * line on the new side.</p>
+<p>Player C comes in if the lob is deep or holds his position if it is</p>
+<p>short.</p>
+<p>Player D hopes for the best and holds his ground.</p>
+<p>CORRE REE EEE EEE R EEE HEHEHE EEE EEE HEHE EEE EEEE EERE EEE EEE EEE ESET EEE EE EEEEEEH HEHE SEES EEE EEE EEEEEEE</p>
+<p>CORRS POH Teme eee eee eeeeeeeseeees See eeeeeeeeeseseee See reeeeeeseseees</p>
+</section>
+<section class="chapter" id="sec-4">
+<h2>Part 4  ·  pp. 106–135</h2>
+<p>rushes the net while Player B fakes the poach. Player C</p>
+<p>returns crosscourt.</p>
+<p>Player A volleys deep back to Player C.</p>
+<p>Player B stays.</p>
+<p>Player C may come in or stay back.</p>
+<p>Player D holds his position.</p>
+<p>27 Player A serves and Player A continues to the net.</p>
+<p>volleys while Player B fakes Player B angles the ball to Player C or powers it toward the poach. Player C sees Player D. Player B move, believes the fake, and returns down the</p>
+<p>line.</p>
+<p>Player C may be in or back.</p>
+<p>Player D squeezes the middle.</p>
+<p>28) Player A serves and Player A volleys crosscoutt.</p>
+<p>volleys. Player C hits the Player B holds his position. return at Player A’s feet.</p>
+<p>Player C crosses over.</p>
+<p>Player D moves in on the angle and powers the ball through</p>
+<p>either player.</p>
+<p>PRET EE HEE H EEE HEHE EHO EEE EEE EEE HEHE EEE EES EEE EEE HEHE EEE EEEEEEH EES EEH HEHE EEE EEE EEEHEEEEEEH EEE OEE E EES</p>
+<p>Player A serves and Player B holds his position.</p>
+<p>volleys. Player C returns Player C is either in or back. If Player D crosses over, then C crosscourt. Player A power switches to D’s side. volleys in the middle of the</p>
+<p>court.</p>
+<p>Player D picks off the ball. He is looking to move, thus the</p>
+<p>middle ball is his. Usually Player D will not go over the middle line but return to his side. Player D powers the ball at either Player A or Player B.</p>
+<p>Australian Player A stands near the center mark, as if serving in singles. positioning: Player C After the serve, Player A moves to the side opposite him.</p>
+<p>returns crosscourt. Player B holds and goes for the power drive to Player D o1 angles to Player C.</p>
+<p>Player C stays in or moves back.</p>
+<p>Player D holds his position.</p>
+<p>NOTE: If Player B fakes the poach, the same scenario is used.</p>
+<p>Australian Player A volleys straight, hitting the ball deep to deep to positioning: Player C returns Player C.</p>
+<p>down the line. Player A Player B holds his position. stands near the center mark</p>
+<p>as if serving in singles, then</p>
+<p>rushes the net on the new Player D squeezes the middle of the court.</p>
+<p>side.</p>
+<p>Player C stays in or moves back.</p>
+<p>32| Australian Player A volleys deep to Player C. positioning: Player B</p>
+<p>returns crosscourt. Player A stands near the center mark Player D slides back to her base position.</p>
+<p>as if serving in singles, then</p>
+<p>rushes the net on the same side from which she served.</p>
+<p>Player B stabilizes her position.</p>
+<p>Player C stays in or moves back.</p>
+<p>PEO H ETTORE HEE EHS TEES EE ESET SESE SESE EEE H EEE SEES EEE SEE EEEE EES SESE EES ESESESEEEH HESS EEHEEHEEEE EEE E EEE EEEEE®</p>
+<p>. 33) Australian Player A continues in to the net. positioning: Player B poaches, and Player C</p>
+<p>returns down the line.</p>
+<p>Player B power volleys Player D or angle volleys to Player C.</p>
+<p>Player C stays in or moves back.</p>
+<p>Player D squeezes.</p>
+<p>SOSH EEE HEHE HEHEHE EEE EE EEE - Points in Progress] 20me Up, OuceBock Plays</p>
+<p>In these scenarios, neither the server nor the returner has rushed the net, so the players remain in the one up and one back position. The goal is for the deep players to hit deep to deep, but this may not always happen.</p>
+<p>The service square. Any ball that lands inside the service square is an invitation to come</p>
+<p>to the net. In doubles, the approach shot should go crosscourt. After you hit this shot, you go im to the net. If you have a slice shot in your repertoire, this is the weapon of choice to</p>
+<p>UuSé AS YOU Come mM.</p>
+<p>The next 9 feet in the court past the service line. Again, any ball that lands in this area</p>
+<p>is considered an invitation to come to the net. You attack the shot and hit crosscourt, following the shot in to the net.</p>
+<p>The next part of the court up to the last 6 inches. If the ball lands in this zone, you respond with a ground stroke back to the opposite deep player. You must remain patient and keep the ball alive, hitting at 75% power. Hold the baseline position.</p>
+<p>The last part of the court. If the ball lands this deep, you may retreat slightly, looping your response back to the deep opposite player. After this shot, you should return to the</p>
+<p>baseline position.</p>
+<p>The key to Zones | and 2 is that you must read that the opponent&#x27;s</p>
+<p>shot is going to land short and move into the court to strike the shot. The key to Zones 3 and 4 is remaining patient. Stay alive, keep the ball deep, and wait for a chance to play more aggressively. Do not</p>
+<p>force the action.</p>
+<p>ZONE 1_ The service square on the net player’s side. A shot landing in this area is always the responsibility of the player at the net. You must be able to control the area you can reach with a crossover step toward the middle of the court.</p>
+<p>ZONE 2_ The next 3 feet on the other side of the service line. If the ball is hit into this area, the net player should be able to reach it. If you take two quick steps in on an angle toward the net, you&#x27;ll be able to cover this shot and continue your offensive posture.</p>
+<p>ZONE 3_ The rest of the court. If the ball is hit into this area, it is the back player’s responsibility</p>
+<p>to hit the shot unless it is a slow ball that would allow the net player the time to run in four steps and intercept this ball. The only other exception occurs on the service poach,</p>
+<p>when the entire new side belongs to the net player.</p>
+<p>1. Hit deep to deep.</p>
+<p>2. Still look to play the offense by running the zones and going to the</p>
+<p>net when you are invited to go on the offensive.</p>
+<p>3. Go to the net when your partner is invited to go on the offensive.</p>
+<p>ZONE 4: Player C Player A retreats and lets the ball come down, then power hits the ball in the last foot of loops the ball back crosscourt and returns to the baseline Player A’s court setup zone, staying back.</p>
+<p>Player B holds his position.</p>
+<p>Player C holds his position; if Player D poaches, he switches</p>
+<p>sides.</p>
+<p>Player D holds his position but is looking to poach.</p>
+<p>35 ZONE 3: Player C Player B holds his position. hits the ball into Zone 3 to Player C holds his position; if Player D poaches, he switches Player A. Player A tries to ee drive the return crosscourt,</p>
+<p>then stays back.</p>
+<p>Player D holds his position but is looking to poach.</p>
+<p>36) ZONE 2: Player C Player A steps up to hit a crosscourt drive, then moves in hits the ball into Zone 2 to toward the net to the % line.</p>
+<p>Player A. Player B holds his position.</p>
+<p>Player C holds his position.</p>
+<p>Player D holds his position.</p>
+<p>orerete erecetets OX S&lt;4 SLL SELIG</p>
+<p>eres e cee teeee, BSS SEES ELEN SRR</p>
+<p>Player D holds her position but should be very aware of her</p>
+<p>Player C holds her position.</p>
+<p>alley.</p>
+<p>Player B holds her position.</p>
+<p>toward the net to the % line. hits the ball into Zone 1 to</p>
+<p>ZONE 1: Player C Player A hits an approach shot crosscourt, then proceeds in</p>
+<p>Player A.</p>
+<p>to Player B. Although this would normally be a poor</p>
+<p>shot selection, if Player B is</p>
+<p>the ball, it is a great choice. And if Player B is not holding</p>
+<p>his position, then hitting deep</p>
+<p>winner.</p>
+<p>Player B powers the ball around Player D or angles the ball</p>
+<p>short to Player C.</p>
+<p>Player A charges the net, since his partner was invited to go on the offensive.</p>
+<p>Player C holds his position.</p>
+<p>Player D remains alert—he should be in peril.</p>
+<p>CORO e eee e eee HEHE HEHE EEE HEE EEE EEE HEEH EEE EEE E EEE E EEE EEE E EEE EEE EEEEEEEEEEEE EEE EEE E SEES EEEEEEEEEEEES</p>
+<p>Ed) Player C hits the ball Players C and D both chase down the ball. If Player C calls for low to Player B; B hits a the ball, then Player D goes back to his side. If Player D touch shot over the net. retrieves the ball, Player C crosses over to the vacated area.</p>
+<p>Player A charges the net, since his partner was invited to go on the offensive.</p>
+<p>POOP OOOO EEE EEE EEE EEE E TEESE EEE REET EEE E EEE EEEEEH SESE EEEHEEHEEEE EEE HEEH SHEE EEE EEEE HEHE SESH HEE EEEEE®</p>
+<p>Player C lobs short to Player B.</p>
+<p>Player B retreats and hits the overhead.</p>
+<p>Player A advances toward the net.</p>
+<p>Player C holds his position.</p>
+<p>Player D retreats to the baseline.</p>
+<p>PERRO OH EHH EERE E EEE TEETH EEE EEE EE EEE EEEH EEE EEEE EEE SEES EEEH HEHE EEE EEESEEEHEEE EEE EEES ESSE EEHHEEHEEEH EES</p>
+<p>41 Player C lobs deep to Player B ducks down and crosses. Player B. Player B tries to hit</p>
+<p>ca pene na ae 1. Let the ball bounce, then lob it back;</p>
+<p>Player A, after the switch, has three choices:</p>
+<p>Player A then switches over. 2. Let the ball bounce, then hit an overhead;</p>
+<p>3. Attack the ball and hit it before it bbunces—a blitz— then go to the net.</p>
+<p>Player C comes in to the net if Player A responds with (1) or</p>
+<p>(2) above, but stays back if Player A blitzes.</p>
+<p>Player D holds his position.</p>
+<p>Player C hits crosscourt to Player A; Player B poaches.</p>
+<p>Player B crosses over, then powers the ball around Player D</p>
+<p>or angles Player C. After the hit, Player B stays on the new side.</p>
+<p>Player A reads that Player B has poached and switches sides.</p>
+<p>Player C holds his position.</p>
+<p>Player D remains alert—he should be in peril.</p>
+<p>OCTET EEE E HEE H EEE EEE HEHE EEE HEHE HEHEHE EEE HEEH HEHE ESE EEE ESSE EEE HEE EEE SESH EEEH SESS ESEEHEEEH SESE ES</p>
+</section>
+<section class="chapter" id="sec-5">
+<h2>Part 5  ·  pp. 136–165</h2>
+<p>43 Player C lobs to Player A has three possible responses: Player A. This tactic is used</p>
+<p>to stop Player B’s activity at he ‘bt. 2. Let the ball bounce, then hit an overhead;</p>
+<p>1. Let the ball bounce, then lob back;</p>
+<p>3. Attack the ball and hit it before it bobunces—a blitz— then go to the net.</p>
+<p>Player C rushes the net if Player A uses option (1) or (2).</p>
+<p>Player B holds his position.</p>
+<p>Player D holds his position.</p>
+<p>i222 @ Winnatn? D&#x27;0\ a 3b) le 4s</p>
+<p>CEOS EEE HEHEHE EHEHHEEEESESESEEEEHTEEHEESESESESEEESEEEEEEES - Points in Progress—Escape Plays</p>
+<p>The premise of this section is that the team of Players A and B has as-</p>
+<p>sumed the offensive net position. Player C’s goal is to try to escape the dangers that the opposite team’s offensive position creates. Players A and B’s goal is to do damage and have an offensive, aggressive response</p>
+<p>to Player C’s shot.</p>
+<p>44 Player C hits to Player A hits an angle volley deep to Player C, forcing C off Player A at the net. the court.</p>
+<p>Players A and B move as a unit, taking two side steps in the</p>
+<p>direction of the ball, flowing with the flight path of the ball.</p>
+<p>Player D moves as if tethered to Player C on a rope. As Player</p>
+<p>C gets pulled wide, Player D slides to the middle of the court.</p>
+<p>If Player C makes a great save, Player D then plays singles on the doubles court to give his partner time to recover and return to position.</p>
+<p>45, Player C hits a power Player A or B, the hitter, must step to the side to avoid being shot at Player A or B. jammed, then powers the ball around Player D or angles</p>
+<p>Player C.</p>
+<p>Player B or A holds his/her position.</p>
+<p>Player C maintains his/her position at the baseline.</p>
+<p>Player D holds his/her position.</p>
+<p>FPO R HEHE HEHE EEE EEE EEE EEE EE HEHE EEE EEE EEE EHEH EES EEEE EEE EEHE EEE SETH HEHE EEE EEE EESE HESS EEEHEEEEEEEEEEES</p>
+<p>Player C powers the Players A and B should both go for the ball, not just the ball in the middle, between forehand player. Often the players will crash racquets, but</p>
+<p>: neither the players nor the racquets will be harmed. the players. ecb q</p>
+<p>Player B or A holds his position.</p>
+<p>Player C maintains his position at the baseline.</p>
+<p>Player D holds his position.</p>
+<p>Player C hits - power shot in Player B’s alley.</p>
+<p>Player B crosses over and powers the ball around Player D.</p>
+<p>Player A squeezes the middle.</p>
+<p>Player C holds his position.</p>
+<p>Player D squeezes the gap.</p>
+<p>PERE EEE T HEE E ESET EEE E SEES TEES EES EEEE EEE EEE SEEE SESE EEE EEEE HEHE EEE EHH EEE EEEH OSES EEE ESEHESEEEEEEEEES SES</p>
+<p>48, Player C hits a power Player A powers around Player D or short-angles Player C.</p>
+<p>shot crosscourt. Player B holds his position.</p>
+<p>Player C holds his position.</p>
+<p>Player D hopes for the best.</p>
+<p>POOR RHEE HOE E HEHE EEE HEHE EEE EEE TEESE HEE EEEH EES EEEH EEE EEE SEES EEE SESS EEHHEEEE EEE EES</p>
+<p>49) Player C hits a low ball to Player A.</p>
+<p>Player A charges the ball and hits a soft angle short to Player C.</p>
+<p>Players C and D both chase the ball. If Player D hits the ball,</p>
+<p>then Player C switches.</p>
+<p>Player B holds his position.</p>
+<p>. HORE ERE E EEE HEE TEER EEE HEHE EEE EEE HEHE EEE HEHE EEE EEEE EEE EEE EEEE HEHEHE SEEH EEE H EEE ESEH EEE EEEEEES</p>
+<p>E) Player C hits the dip Player B hits another dip shot on the short angle to Player C.</p>
+<p>shot, a low ball to Player B. Players C and D both chase down the ball.</p>
+<p>Player A holds his position.</p>
+<p>51) Player C lobs to the Player A starts for the ball but backs off as Player B calls for middle of the court. the shot.</p>
+<p>Player B goes for the overhead.</p>
+<p>Player C stays back.</p>
+<p>Player D holds or retreats, depending on how courageous or</p>
+<p>insulting he feels.</p>
+<p>SRR e eee eee HEHEHE EEE HERE HEE H EEE EEE EEE EEE HEHEHE EEE EEEEEEEEEEEEEEEEEEEEEESEEEEEEEE HEHE EEE EEEED</p>
+<p>FORE RReREE EERE EERE EEE EEE EEE EEE EEE HEHEHE EEE EEE ED eee een eeeeeeeee Oe eee ee eee ECCS eee eee rere</p>
+<p>Player C lobs deep Players A and B both chase the ball, although the player on over Player B. whose side the ball lands should cover it. Player B should hit</p>
+<p>fi the overhead, but if Player A can retrieve the ball, that is fine.</p>
+<p>If Player B hits the overhead, both players return to the net</p>
+<p>position.</p>
+<p>If Player B must retreat and let the ball bounce, then both Players A and B return to the deep position, and Player C advances to the net.</p>
+<p>Player D holds position.</p>
+<p>53 Player C lobs short to The player who has been lobbed tries to hit the overhead.</p>
+<p>either Player A or Player B. Player D has time to retreat, going back to the baseline to</p>
+<p>form the deep wall.</p>
+<p>Either Player A or Player C comes in to power the ball to Player B&#x27;s alley or the Player B hits the ball short to middle of the court, then continues to the net.</p>
+<p>Zz | Player C. Players A and B squeeze the side on which the ball is hit by</p>
+<p>one step.</p>
+<p>144 @ Vi tL AV. 2.2 D ou h l é §</p>
+<p>55) Either Player A or Player D powers the ball down Player A’s alley or in the Player B hits the ball short to = middle of the court.</p>
+<p>Player D. Player C comes to net, since his partner has taken the</p>
+<p>offensive position.</p>
+<p>Players A and B squeeze the side on which the ball is hit by</p>
+<p>one step.</p>
+<p>PORTER EEE EEE EEE HEE E EEE H HEE E EEE EEE EEE E EEE EEE EHEE EEE SEES EEEH ESSE EET HEEH EEE EEE EEHH EEE HESS SESH EEEES</p>
+<p>56 Either Player A or Player C steps up to blitz the ball by hitting it on the fly, Player B floats the volley powering the ball into Player B&#x27;s alley or to the middle, then toward Player C continues to the net.</p>
+<p>Player A squeezes the side on which the ball is hit.</p>
+<p>Player D holds.</p>
+<p>Player D holds her position if the lob is deep, otherwise she</p>
+<p>Player B runs around the lob to hit an overhead.</p>
+<p>retreats.</p>
+<p>Player A holds her position.</p>
+<p>Player C holds her position.</p>
+<p>Player B’s backhand side.</p>
+<p>« rs &lt; ¢ () a 4 4 4 q am ee AAR APL SAP PPA</p>
+</section>
+<section class="chapter" id="sec-6">
+<h2>Part 6  ·  pp. 166–195</h2>
+<p>58) Player C lobs to Player A runs around the shot and hits an overhead. Player A’s backhand side. Player B holds.</p>
+<p>Player D holds or retreats, depending on lob quality.</p>
+<p>a ee cee eee core eee cee at Ree ee a ee Oc a ca ca — ma em a = ea</p>
+<p>POOR R eee ee eee eee eee EEE EEE HEHEHE EEE EEE SHEET ESSE EEEH HEHE EE SESEEEEEHEEHEHEEEEESHSEEEE SESE EE EEEEEEEES</p>
+<p>Player C hits a high [he hitter, either A or B, must take one step back and jump ground stroke to either Player up, attempting to hit the ball. If the hitter makes contact, 4 or Player B. ; she has prolonged the point. If she misses, the point was</p>
+<p>lost anyway, because the ball was hit too low to run back and get it.</p>
+<p>Player C holds her position.</p>
+<p>Player D holds her position.</p>
+<p>he ee ie Lp Ba ahh Ate Se Se Be Ss he a Be Chehe eee) &amp; &amp;2eé€} as. ) Bp eS De Seo So&#x27;s | } ae ‘ &amp; 2 ‘ Ye SoD oO RS DOD: so xXx 266666 66 6 @ &lt; | 4 o. SS hp BD dy GE BE ale eS Dh a, he a ae PS QD HBP Sn ty BO hb S| x Of he Se ah i Ep ie Eh oe ale &lt;p oe</p>
+<p>POPC O OOO EEE EH EEE HEHE EEE EEE H EEE EEH EEE HESS EEE H EEE EEE EEEESEESEEH HEHE SSE EHEH EEE ESEOHESHSEHHEEEHEED®</p>
+<p>On occasion, all that you can do is run down the ball and hope to stay</p>
+<p>in the point. If your partner makes a great save on one shot, the responsibility to stay in the point often shifts to you. You must get the ball back, try to stabilize the situation, and untangle yourselves later.</p>
+<p>1. Don’t quit on your partner.</p>
+<p>2. Stay in the point by proper movement. |</p>
+<p>60) Player C hits the ball Player A holds the net.</p>
+<p>to Player B. Player B hits around Player D into the gap.</p>
+<p>Player C runs down the ball and switches. Player C should hit</p>
+<p>the ball straight, deep to deep.</p>
+<p>Player D stays in the point by crossing over to the side vacated</p>
+<p>by Player C. It is very important that Player D does not quit</p>
+<p>the point simply because the ball went past her.</p>
+<p>Player A charges the net, since her partner was invited to go on the offensive.</p>
+<p>a .. wai a ST erates Ta Sa dhe eee eos we.</p>
+<p>Player C hits the ball Player B slides to the middle. wide to Player A, pulling him off the court.</p>
+<p>Player A makes his shot.</p>
+<p>Player C’s next shot ts close to the singles line on Player A’s</p>
+<p>side.</p>
+<p>Player B goes for the ball. As Player A reenters the court, he</p>
+<p>crosses behind Player B.</p>
+<p>62) Player C hits the ball Player B tries to pick off the shot but misses. If Player B has crosscourt. not gone too far past the middle, he goes back to his original side. If Player B misses the shot but has moved too far over, he is stuck.</p>
+<p>Player A must hit the shot deep to deep, then switch over.</p>
+<p>¢ Points in Progress—Both Back Plays</p>
+<p>On occasion, it may be necessary for both you and your partner to stay back at the baseline. This may occur if your partner cannot hit crosscourt and the opposite net person is killing you. Or it may occur because the opposite net player is a great poacher and is killing you.</p>
+<p>Or it may occur because your net player is a weak volleyer and prefers not being at the net.</p>
+<p>| 1. Stay in the point.</p>
+<p>| 2. Play offensively when invited in.</p>
+<p>[62 ‘@ ‘Woe mem eee WD ol bles</p>
+<p>go for the ball. One player calls for the ball; the other must yield to her partner and move out of the</p>
+<p>Way.</p>
+<p>Players A and B both in the middle between Players 63 Player C hits the ball</p>
+<p>Aand B.</p>
+<p>goes deep to Player C. If Player C stayed back, the return</p>
+<p>If Player C came in to the net, the hitter must escape.</p>
+<p>ocecenoecece ERLE LS LEK oserereretets?</p>
+<p>weretetetetete!SSS 2606264] eretetetetets OS 50 52525624</p>
+<p>Peteteretetere® SMM Wevetereretere!</p>
+<p>Wetaretetete Petererere, imo, Teleterel</p>
+<p>one en eeeee.</p>
+<p>64) Player C hits short to Players A and B both run to hit the approach shot, then move either Player A or Player B. in toward the net.</p>
+<p>Player C stays in or back.</p>
+<p>Player D holds her position.</p>
+<p>PPeeeUeCEPE rere eee eee eee rere rere ere eee) eee eeeeeeee eeeeeee</p>
+<p>n my book Essential Tennis, | talked about the seven areas in which you, and now your partner, must be superior. These are shot mechan-</p>
+<p>ics, play program, conditioning, attitude, state of mind, heart, and fortitude.</p>
+<p>Recently, one of my teams came to me after losing a frustrating match. They thought that they should have won because they were so much better than their opponents. But when we reviewed the seven areas, they found that in fact, they were superior in only two of the seven areas. They were not the better team; they should have lost and did.</p>
+<p>All your confidence in your tennis game flows from your belief in</p>
+<p>your shots. If you know you have good form and good shot mechan-</p>
+<p>ics, you walk onto the court with confidence. The better your form, the more likely you are to hit good shots and continue to grow as a player. Good form intimidates opponents. The more you know and</p>
+<p>understand your art form, the easier it is for you to hold together and make the necessary corrections and adjustments during the match.</p>
+<p>This book is designed to teach you the doubles plays you need to</p>
+<p>know so that you and your partner will play in sync. Both you and your partner should be studying this book on a regular basis so that</p>
+<p>the proper drill scenario responses become automatic.</p>
+<p>Your conditioning must be good enough to enable you to play both long points and long matches. Good conditioning means that you can expend energy from the first point to the very last one. At a recent</p>
+<p>U.S. Open tournament, one parent told his son to start slowly to conserve his energy. This advice worked; the young player started so slowly that he lost the first set! If you want to play serious tennis, you</p>
+<p>must condition your body to help you achieve your goal.</p>
+<p>You need to walk onto the court with a high level of self-respect and appreciation. You need to be arrogant. You need to believe that your</p>
+<p>team is deserving of the win and that you are ready to play. You need to have high energy and good body language throughout the match. As Stefan Edberg and Pete Sampras made their move into the num-</p>
+<p>ber one spot, they worked hard on positive body language.</p>
+<p>It is important that you stay arrogant. No one makes all the shots, but if you miss one or two and then start to mope and droop your shoulders, you are acting defeated. You must maintain your confidence; understand that you can withstand a few failures.</p>
+<p>Step onto the court with a winner&#x27;s attitude. Expect to win.</p>
+<p>Playing Your Best Tennis @ 167</p>
+<p>You must also step out onto the court with a level of respect for your partner. If you are upset that someone is your partner and believe that he or she can’t hit a ball, that your partnership stands no chance of winning, then you won&#x27;t! For a partnership to work, both players</p>
+<p>must be mutually supportive. If you continually question your partner’s judgment, you not only intimidate but also demoralize him or her. During the match, you must be supportive if you want a chance to win.</p>
+<p>Recently I was listening to Charlie Rose interview internationally acclaimed concert violinist Nadia Salerno-Sonenberg. When asked if she</p>
+<p>was ever intimidated by the hall in which she was about to play, she responded with an answer that is as appropriate to tennis as it is to</p>
+<p>music or any other situation that requires a positive focus. She stated that when she plays, she does not think about where she is playing or the quality of the orchestra or the concert hall, nor can she allow herself to be intimidated by those with whom she is playing. Whether she</p>
+<p>is to play for half an hour or two hours straight does not matter. When she plays she goes into a “zone of concentration” and blocks out all other thoughts but her playing. That’s what I call a great state</p>
+<p>of mind!</p>
+<p>State of mind means coming to the tennis court with a clear focus on the match at hand. You must be focused solely on tennis, not</p>
+<p>thinking about the four tasks you did before the match or need to do after the match. Do not be concerned with things beyond your con-</p>
+<p>trol such as the sun, the wind, the temperature, the court, or the ball quality. Remember that both sides share the same disadvantages; that</p>
+<p>is the beauty of tennis. The frequent changeovers level the playing field, so stop fretting and stay focused.</p>
+<p>I hope that you have already developed a love for the game. No one wins all the time, and some losses are tougher to handle than others.</p>
+<p>But it is the love of the game that allows you to endure a loss and rebound with an even stronger will to win. Many days, mastering all</p>
+<p>seven areas of superiority is difficult to do, but the love of the game should sustain you. There is not one high-level player alive who at some point in his or her career did not want to quit the game after experiencing moments of frustration. But it is the ability to work hard both on and off the court that creates success. And that work requires</p>
+<p>a lot of heart.</p>
+<p>You must develop the fortitude to do what is necessary on and off the court. Often my players will come to me complaining of a loss. Al-</p>
+<p>though they can articulate what had to be done to win the match, they did not have the fortitude to execute those requirements. It takes courage to continue to fight; recognize the task to be accom-</p>
+<p>plished, then divide it into achievable goals and do it.</p>
+<p>na good team, each player helps the other out. It stands to reason that the more you play with the same partner, the more you will develop a sense of how to help each other. Practicing the drills in this book enhances the partnership. It also helps to know how each of you</p>
+<p>will respond to the different scenarios you may encounter on the court. Study this book to reaffirm what is to be done in each situation.</p>
+<p>You and your partner may even be able to work out some variations on these drills to make you a more effective team.</p>
+<p>Once you reach the 3.0 level, to function better as a team you must implement a signal system, because your opponents will be good enough to consistently aim the ball to avoid the net player. If the net</p>
+<p>player is not an active participant, the back player will be trying to hold serve but playing at a disadvantage, two against one. The use of signals enhances your offense and intimidates your opponents.</p>
+<p>At all levels of play, the net player must help his or her partner hold serve. Often the stronger player loses serve but the weaker player holds. This anomaly occurs because the stronger player receives little help from the net player. When the weaker player serves,</p>
+<p>the stronger player often wins two points at the net, thus making a service hold easier.</p>
+<p>On the serve, there are three possible determinants for movement. The net player may move spontaneously, causing the server to read</p>
+<p>his or her partner and adjust accordingly. I do not encourage this system because it gives the server one more job to do. Besides having to</p>
+<p>Pal y 1 Your Boers. t Tennis @ 169</p>
+<p>follow the opponent&#x27;s shot, the server must also be looking at his or her partner for possible movement—a distraction at best.</p>
+<p>The second scenario occurs during a brief get-together between the players, called a huddle, where a play is decided on for both the</p>
+<p>first and second serves. Although ‘this is a good strategy, the catch is that the players must remember both plays.</p>
+<p>The third system requires the use of hand signals on each serve—the preferred system. Since a play is agreed on by the partners</p>
+<p>moments before each serve, there is little chance for error or forgetting the play. Each serve can have a new play, with the server verbally acknowledging the net player’s selection. Of course, the server always</p>
+<p>has the option of overruling the net player’s call.</p>
+<p>The open hand indicates that the net person will poach. After serving</p>
+<p>the ball, the server must initially step into the court on his or her side to put on a fake; otherwise, the server tips the play. If the server is going to the net, he or she moves in two steps straight ahead before</p>
+<p>breaking off on the diagonal to quickly change sides. If the server is</p>
+<p>staying back, after the serve is hit, he or she holds the spot for one count, then quickly changes sides.</p>
+<p>The two fingers down sign indicates that the net player is going</p>
+<p>to fake poaching. This play is very important because, when the net</p>
+<p>player moves, the serve returner does not know where the net player will go. On this play, the net player takes two hard steps on the run as</p>
+<p>if to poach, then quickly returns to the original spot. The server either goes straight to the net or stays back on the original side.</p>
+<p>The closed hand indicates that the net person is staying; there is no poach. On this play, the server either moves in to the net or stays behind the baseline on the original side.</p>
+<p>WH kee DOCYOU ALM PIE SERVE?</p>
+<p>Some teams like to signal the server where to place the serve. Thumb</p>
+<p>up means serve to the right; index finger out means serve to the left.</p>
+<p>I find that the call of serve placement becomes redundant, because the play itself dictates serve placement.</p>
+<p>Play vt mig Y Owe % Baas *t Tennis @ 17]</p>
+<p>Many players serve up the middle in doubles all the time. When you are running the poach play, it is very important that the serve be placed up the middle because it closes off the easy down-the-line shot,</p>
+<p>the counter to the poach. On the other two plays, fake and stay, the serve can be aimed anywhere. When you play the I formation or Aus-</p>
+<p>tralian, the predominant serve location is up the middle.</p>
+<p>WHERE DOPYOU) ATM Lite SE Rae Bee Pe RN</p>
+<p>Generally, the returner should hit the return away from the stationary net player. Thus, most doubles returns go crosscourt. If the serve</p>
+<p>side is lined up in the Australian formation, then follow the principle of going away from the stationary net player and return down the</p>
+<p>line.</p>
+<p>Before the serve is struck, the returner must decide where to place the return, then execute that decision, trusting that he or she will do a better job than the net player. As long as you keep looking</p>
+<p>up to ensure that you are hitting the ball to the open zone, you will miss because you are not focusing on the ball. Forget the opposition; just hit the ball.</p>
+<p>There are three things that must be done to keep your game in tact:</p>
+<p>watch the ball, stay focused, and maintain a discipline of execution.</p>
+<p>Although watching the ball seems easy, it is not. Just the fact that</p>
+<p>there is another body on your side of the net often creates a visual distraction. In the course of play, it is easy to become caught up in looking where you want to hit the ball instead of watching the ball. That’s why this book and these plays are so crucial—they teach you</p>
+<p>where the ball should go, so you need never look up. Although you</p>
+<p>must know where to hit the ball, you do not scout out the area then recheck to make sure it is right. Many mistakes occur because the hit-</p>
+<p>ter is looking where the ball is going instead of ensuring proper execution before admiring his or her handiwork.</p>
+<p>Don’t be a “nice guy.” I often hear my students say, “I was going to hit it in the right area, close to close, but I saw Joan in the way so</p>
+<p>I looked at her instead of the ball.” The opposing net player must understand that the ball may come at or near him or her and should be prepared for it.</p>
+<p>Your job is to hit the ball in the proper area; the opponent’s is to defend his or her area. Your job as the hitter is to watch the ball and execute. The opponent’s job is to try to stop you. When I play doubles, I usually get hit once or twice in a match when standing at the</p>
+<p>net. I am not mad at my opponent when this happens; in fact, I like the ball coming at me. At point-blank net play, there is so little reaction time that if you go right at me I am able to reflex the ball back into the court four out of five times.</p>
+<p>But on the point-blank shots that go around me, I make only one in five, since there is no time for any movement. I will gladly take the occasional hit at my body to get more balls back, because I can take care of myself. It greatly helps my team when the opponent ts fearful of being too aggressive, worried about hitting me. When your play</p>
+<p>level is so superior to that of the others on the court that you could consistently hit anywhere on the court, work on put-away angles</p>
+<p>when at the net.</p>
+<p>WHEN DO-YOU WATCH THE BALT?</p>
+<p>When your partner is serving—after you have made sure that your</p>
+<p>partner is ready to serve—you look forward because you know where the ball is going to go. Unless it goes into the service square, there will be no point to play. At all other times, follow the ball. Some pros like</p>
+<p>to look straight ahead to read their opponents’ reaction. Others like to know where the ball is at all times. By following the ball as soon as</p>
+<p>Piast me “Korum gh gist Tie mnie @° 173</p>
+<p>your partner strikes the shot, you know where it is going, which helps you prepare for the next shot. It also helps your concentration, because you are always focused on the ball. Follow the ball by glimpsing back over your shoulder, but try not to imitate a rotisserie chicken.</p>
+<p>During a match, very little court time is spent actually hitting the ball,</p>
+<p>so it is critical that you learn how to stay focused between points and between games. The huddle system will keep you focused. Never get</p>
+<p>involved with your opponents. How they look, hit, or act is their problem; don’t make it yours. Occasionally, my students wiil comment that their opponents’ shots or form was so strange that they were distracted and could not hit. Or they didn’t like the way the opponents treated them. You must learn how to stay focused on your side of the net, in a positive fashion.</p>
+<p>You must trust and use your mechanics and play program. Initially, as you are learning the different plays and responses, you must do a lot of thinking. Your goal, however, is to automate the appropriate response; through repetition, you will run the correct plays. Re-</p>
+<p>member, you must concentrate on the task at hand. Hit the ball with your learned form, and be willing to work the point.</p>
+<p>There are five levels of focus delivery: long-point play ability, next point, next game, next set, next day. It is common after a long point to take a mental rest and self-cancel because you are exhausted from that previous point. You wind up not playing the current or</p>
+<p>next point. Television commentators call these “loose points.” Loose points lead to loose games. Loose games lead to loose sets. Loose sets lead to lots of losses.</p>
+<p>To facilitate concentration, you must have start rituals.</p>
+<p>| 1. Determine the strategy play with your partner.</p>
+<p>2. Decide to serve and volley or stay back. |</p>
+<p>3. Decide where to place the serve.</p>
+<p>4. Bounce the ball one to four times. |</p>
+<p>5. Breathe.</p>
+<p>6. Hit the bail.</p>
+<p>1. Signal the strategy play to the server.</p>
+<p>2. Lightly bounce on your toes to get ready to play the upcoming</p>
+<p>point.</p>
+<p>2. Review your targets—crosscourt or down the line.</p>
+<p>3. Decide to go forward or stay back.</p>
+<p>4. Bounce on your toes as the server begins the motion.</p>
+<p>5. Take one step forward as the toss goes up.</p>
+<p>6. As the ball is struck, take a second step with both feet—a split step forward.</p>
+<p>7. Read and react to the serve and stay committed to your form.</p>
+<p>1. Lightly bounce on your toes to prepare to play the upcoming point.</p>
+<p>SERVE RETURNER’S PARTNER’S RITUAL</p>
+<p>1. Lightly bounce on your toes to be ready for the upcoming point.</p>
+<p>@ Keep the focus on your side. Don’t get caught up in</p>
+<p>what the other team is doing.</p>
+<p>® Quickly get together. You are allowed 20 seconds be-</p>
+<p>tween points. Say, “Great shot, Sallie” or “Oops, sorry partner.”</p>
+<p>© Reconfirm the positive and get back to the game plan.</p>
+<p>“Let’s go. We&#x27;ll get this one.”</p>
+<p>@ If you missed, take a swing at the shot the correct way.</p>
+<p>Remind your muscles of the proper stroke.</p>
+<p>PLLA &gt; tte p: Ye 0% 6 °F: Bens ot Tennis ®</p>
+<p>When you are missing your shots, you must remain focused and positive. If you make your partner spend energy pumping you up, your partner will have no energy left for his or her own game. Although it</p>
+<p>is both players’ responsibility to help the other on occasion, you can-</p>
+<p>not make it a full-time job. The key to remember is that the form never fails you; you fail the form. The easiest way to correct mistakes is to take</p>
+<p>a practice swing after a miss, going over the shot in your head with</p>
+<p>the correct video of that shot running. To help you deal more specifically with your mistakes, here is a quick checklist:</p>
+<p>&gt; When you are missing, forget the huddle for one</p>
+<p>second.</p>
+<p>» Take a practice swing, recreating the shot prop-</p>
+<p>erly.</p>
+<p>» Close your eyes and run the video in your head of</p>
+<p>the shot as it is supposed to be performed. Never buy the idea that this is a day when your shots</p>
+<p>don’t work. Remember: The form never fails you; you fail the form.</p>
+<p>Paine \ he ite neys ta Sen was @ ATT</p>
+<p>As you change sides, you must stay focused on this match only.</p>
+<p>* Relax, towel off, drink, and stay cool for a few seconds.</p>
+<p>° Review the game plan for the next game with your partner.</p>
+<p>* Remind each other of where the sun is and from which direction</p>
+<p>the wind is blowing.</p>
+<p>° Review the weaknesses you have discovered and pledge to attack</p>
+<p>them.</p>
+<p>MAINTAIN A DI S@ IP TEER Ee OE SE on CU tenon</p>
+<p>Players often complain to me that even though they were watching the ball and focused on the match, they still missed. Why? You must have the ability to discipline yourself to implement your knowledge and execute your form on every hit. Recently on ESPN, the com-</p>
+<p>mentators were analyzing Troy Aikman, the quarterback for the Dallas Cowboys, and another quarterback. The comparison showed the same play being run: Aikman ran the play with executed discipline, but the other quarterback did not. Even when you know what to do,</p>
+<p>you must still make yourself perform.</p>
+<p>The ability to perform consistently takes work, practice, and patience. Part of being a winner is being willing to work on the shots.</p>
+<p>Until you can perform your shots competently every day, when each one automatically flows off your racquet—a level many of the top pros</p>
+<p>never reach—you must talk to yourself in a positive manner and work your way through the shot. Discipline yourself to play at your skill</p>
+<p>level and knowledge level each time you play.</p>
+<p>CA Por eee.</p>
+<p>ccasionally you&#x27;ll find yourself frustrated by your performance on the court, when you’re seemingly</p>
+<p>unable to hit a shot of one kind or another that will go over the net and stay inside the court boundaries. Here is a quick checklist for those troublesome times. Often if you observe how you are missing, you will be able to figure out why you are missing and then be able to correct your mistakes.</p>
+<p>&gt; PROBLEM: You are hitting into the net.</p>
+<p>SOLUTION: You are making contact too late, thus you don&#x27;t generate</p>
+<p>enough body power. Prepare earlier.</p>
+<p>SOLUTION: Your wrist may be rolling over or caving in. Hit the ball</p>
+<p>dead center so the impact of the hit does not turn your racquet so forcefully.</p>
+<p>SOLUTION: You may have mishit the ball. Watch the ball better;</p>
+<p>keep your head down and still longer.</p>
+<p>SOLUTION: If the stroke feels good and looks good but still lands in</p>
+<p>the net, then your alignment was over the ball, without enough lowto-high contact. To correct, bend down more.</p>
+<p>SOLUTION: Ifthe stroke feels awful and the ball went nowhere, your body moved but your arm and racquet did not. Make sure that you</p>
+<p>act and move as a unit: upper body, lower body, arm, and racquet all</p>
+<p>moving together at the same time.</p>
+<p>PROBLEM: You are hitting the ball wide.</p>
+<p>SOLUTION: Your balance may be pulled too much toward the aimed</p>
+<p>direction; balance better.</p>
+<p>SOLUTION: You may have aimed too wide. Don’t go for the lines; in-</p>
+<p>stead, aim for a target area that allows for a greater margin of error.</p>
+<p>PROBLEM: You are hitting the ball long.</p>
+<p>SOLUTION: You may be hitting slightly late. When there is not</p>
+<p>enough spin placed on the hit, it misses some gravitational resis-</p>
+<p>tance. To correct, attack the ball; don’t let the ball play you.</p>
+<p>SOLUTION: If the ball floats long, your racquet head probably</p>
+<p>dropped below the wrist, so always keep the racquet head up. This is straight geometry: If your racquet creates an up angle, the ball will</p>
+<p>go up.</p>
+<p>SOLUTION: If you powered the ball long, either you slapped at the ball with your wrist—an excellent hockey form, but a lousy tennis</p>
+<p>form—or your arm and racquet exploded. To correct slapping,</p>
+<p>swing with your arm and racquet together as a unit. To correct exploding, remind yourself that tennis is a boundary sport, so you</p>
+<p>must learn to harness your energy. If the arm and racquet wildly win a race with the rest of your body, the shot will sail, so remember the</p>
+<p>unit movement concept.</p>
+<p>PROBLEM: You are having difficulty returning serve.</p>
+<p>SOLUTION: The corrections for serve return are the same as those</p>
+<p>for ground strokes. In addition, if you are having difficulty returning serve, have the net person come back to the baseline so there is no power target for the opponents. The returner should aim up the</p>
+<p>middle of the court to keep the ball in play. As the returner’s confidence grows, he or she may feel more at ease trying to return away</p>
+<p>from the net player, so his or her partner can return to the offensive</p>
+<p>net position.</p>
+<p>&gt; PROBLEM: You are missing your volleys long.</p>
+<p>SOLUTION: You may be taking too much of a backswing, which 1s</p>
+<p>the most common volley mistake. Too much backswing results in a late and wild hit, which sends the ball all over the court. To correct,</p>
+<p>make sure that your racquet starts in front of you. Try to keep the racquet head within your sight; if the racquet is behind you, this will be impossible.</p>
+<p>SOLUTION: You may be running through the volley. When your op-</p>
+<p>ponent hits the ball, it is critical that you do a split step or neutral step that puts your body on balance so you will be able to move in the direction of the incoming ball.</p>
+<p>SOLUTION: Don’t drop your wrist. Make sure that your racquet</p>
+<p>head stays above your wrist. If the racquet drops, the racquet angle</p>
+<p>makes the ball go up.</p>
+<p>&gt; PROBLEM: You are hitting your volleys in the net.</p>
+<p>SOLUTION: If you are missing because you are mishitting, track the ball better. Don’t look where the ball is going—don’t even peek at the</p>
+<p>destination.</p>
+<p>SOLUTION: Your wrist caves in, so the ball goes nowhere. Brace bet-</p>
+<p>ter for the impact.</p>
+<p>&gt; PROBLEM: You are hitting your volleys wide.</p>
+<p>SOLUTION: Don’t go for so much precision.</p>
+<p>SOLUTION: Make sure that your racquet is not angled so severely</p>
+<p>that it is impossible for the ball to land in the court.</p>
+<p>&gt; PROBLEM: Your service toss is all over the sky.</p>
+<p>SOLUTION: You are not giving yourself a chance at success. This is</p>
+<p>where new players often get stuck. If every toss varies greatly, so will</p>
+</section>
+<section class="chapter" id="sec-7">
+<h2>Part 7  ·  pp. 196–203</h2>
+<p>every hit motion in reaction to the varied tosses. Since every toss is an adventure in space, there is no growth pattern. To correct, slow down, making sure that the tossing arm is relaxed. Then work on</p>
+<p>the five elements of the toss. The second point to remember is to make sure that your toss is being released as you are going forward.</p>
+<p>1. Same downswing spot.</p>
+<p>2. Same upswing spot.</p>
+<p>3. Same rhythm of swing of the arm.</p>
+<p>4. Have the toss release come only out the “top door” —no “side”</p>
+<p>exits.</p>
+<p>5. Whenever the toss arm comes down, let it softly collapse onto your</p>
+<p>body.</p>
+<p>SOLUTION: To help target your toss, toss the ball into a basketball</p>
+<p>hoop or into a post at the side of the court. For some players, the toss clock is too vague. By using a real target, a beginning player can visualize the toss-control concept.</p>
+<p>&gt; PROBLEM: Your service hit misses into the net.</p>
+<p>| SOLUTION: You have hit down on the ball; the geometric angle cre-</p>
+<p>ated has no chance of clearing the net. If your toss was not high . enough in the first place—reaching only as high as your nose—you will find it difficult to hit up. Swing the toss arm more to get more</p>
+<p>toss height.</p>
+<p>SOLUTION: Your toss hand and head came down too soon. Keep | your tossing arm and head up longer. Many players are so worried about hitting their tossing arm that they yank it away quickly, which | pulls their shoulders and weight down. Try to sight the toss through your tossing hand, which forces you to stay tall on the serve.</p>
+<p>SOLUTION: If your toss was good initially but the ball was too low by</p>
+<p>the time you hit it, you did not go up to the ball. This is a tough one for new players. What allows you to chase the ball with a constant at-</p>
+<p>tack speed is the belief that the toss is going to be in the same rea-</p>
+<p>sonable location every time.</p>
+<p>SOLUTION: If the toss is always radically different, it is nearly im-</p>
+<p>possible to spot and find an errant toss. To correct, trust your toss and stay aggressive. If you serve in segments, the power goes away;</p>
+<p>go up after the ball.</p>
+<p>182 © Wanted niet. Dio wusbyieems</p>
+<p>SOLUTION: Did you bend your knees enough? For those of you who</p>
+<p>have added the knee bend, this is a big part of your motion that helps you get under the ball. Learn to relax and not rush your motion; you must incorporate this integral part each time.</p>
+<p>&gt; PROBLEM: Your service hit is long.</p>
+<p>SOLUTION: The toss is behind you. You are hitting the ball too early</p>
+<p>in the motion, getting only the hitting up part, so toss the ball more</p>
+<p>in front of you.</p>
+<p>SOLUTION: Did you push it long? If the toss is too low, you will get</p>
+<p>under it too much and just push it up, so toss the ball higher.</p>
+<p>SOLUTION: Your feet may have moved too much. If you go for a</p>
+<p>walk and get no wrist action because the toss is too far right or left, you will come out of the over-your-head motion and push the ball out. Bring the toss back into the target range.</p>
+<p>&gt; PROBLEM: Your service hit is wide.</p>
+<p>SOLUTION: Remember that when you serve you must drive your</p>
+<p>motion into the target box. Don’t aim too finely; don’t go for the lines. Give yourself a wider target area. Inexperienced players especially should aim for the middle of the square on the second serve to</p>
+<p>prevent double-faulting.</p>
+<p>&gt; PROBLEM: Your overhead lands in the net.</p>
+<p>SOLUTION: The ball dropped too low. When the ball drops too low,</p>
+<p>it is difficult not to overhit it down, resulting in no clearance. To correct, prepare earlier and reach up more.</p>
+<p>SOLUTION: If you are mishitting, hitting the edge of your racquet,</p>
+<p>the ball will go nowhere. Keep your head up and watch the ball</p>
+<p>longer.</p>
+<p>SOLUTION: If you hit the ball solidly on the overhead, you may be close enough to the net to hit the ball down and still have it clear the</p>
+<p>net. From close in this is easy, but as you step farther back, the angle changes and it becomes tougher, so hit the overhead more like your</p>
+<p>serve and spin it to a corner.</p>
+<p>&gt; PROBLEM: Your overhead lands long.</p>
+<p>SOLUTION: You had no wrist action; you just pushed the ball up. As</p>
+<p>with the serve, you need to impart wrist action, so hit the overhead like a serve to spin the ball.</p>
+<p>Go 7 Theron) Mii 4a kee 8) © 163</p>
+<p>SOLUTION: If the ball sails long, you are probably hitting the ball</p>
+<p>late. Move your feet more and get behind the ball more so you can step up into the shot.</p>
+<p>SOLUTION: You may have misjudged the flight pattern of the in-</p>
+<p>coming lob, which is a universal problem. Step back more than you</p>
+<p>think you need to, then step up into the shot.</p>
+<p>PROBLEM: Your lob lands short or into the net.</p>
+<p>SOLUTION: Make sure that you give it a little more hit power. A lob</p>
+<p>is a measurement shot: Too little power will get you killed; too much causes you to miss. You need to develop soft hands to be able to feel and measure the stroke, which must be hit in front of you, dead cen-</p>
+<p>ter, and with enough ball-racquet contact time.</p>
+<p>PROBLEM: Your lob lands long.</p>
+<p>SOLUTION: You may be feeling too much pressure from the net</p>
+<p>player, trying to make this shot too good. Again, you must develop the touch to measure this shot.</p>
+<p>ne of the most rewarding elements of my first book, Essential Tennis, is having readers repeatedly tell me</p>
+<p>how they refer to the book over and over again to study the concepts presented. That is my hope for the readers of Winning Doubles. I have presented a tremendous amount of information to help you become a better doubles player. The concepts are ones that will last forever and</p>
+<p>should be reviewed periodically to reinforce the knowledge you have gained. As you master the information, your confidence will grow, and as your confidence grows, your tennis will become more consistent. When the pros are asked what their greatest frustration is, they often say that two days ago they played great, but today their perfor-</p>
+<p>mance level has tapered off. Every player has a range of achievement, but this range must be kept small. You must perform at 85% or more</p>
+<p>of your skill and knowledge level every time you play on the court; as</p>
+<p>you master the material, you will.</p>
+<p>In the playbook section, I showed you the right shot to hit, where to hit the ball, and where to reposition yourself to win your points more easily and effectively. When you play, you should never feel that you have to gamble or hit great shots to win. Steffi Graf&#x27;s coach Heinz Gunthardt recently said that he was working with her to</p>
+<p>find the easiest way to win the point and help her recognize that when she is playing well, she hardly ever has to hit a great shot. This</p>
+<p>applies to all tennis players. Remember that tennis is a game of percentages; no one shot or strategy pays off every time. You may play</p>
+<p>the greatest point in the world, only to have your opponent steal it away from you with a lucky shot or mishit. That happens, but if you stay with the program I have designed for you, the percentages are weighted in your favor.</p>
+<p>Your growth goal as you become a better team is to add more offense to your game plan. In doubles, offense is played at the net. As I explained earlier, the key is to learn your target area so that you or your partner can do damage with the volley and get a good percentage of payoff points. I constantly remind my students that by working on their games year in and year out, their games will continue to improve and evolve. Each match you will have a few more opportunities</p>
+<p>to convert playing points into winning opportunities, which 1s important for your team’s mental well-being.</p>
+<p>As you reach a higher level of play, your team may be pressed by opponents who reach the net before your team does. The really good</p>
+<p>players stay calm, acting like the opposing team is just bluffing its position, and hit an escape shot. Make one clear shot selection; do not change your mind and try to outexecute your opponents.</p>
+<p>The section of the book on helping your partner is critical if you are to grow as a team. As a reminder, play well yourself, run the plays, employ a doubles attitude, and trust your partner. Learn how to talk to each other. Don’t try to coach your partner, don’t quit on your</p>
+<p>partner, and make sure that your equipment is technologically correct. The section on keeping the team in sync is critical for team growth. Make sure that your team has a game plan and that both your and your partner’s computers are on so that your team can analyze the match conditions and components. Finally, learn to huddle, and have a good time with each other.</p>
+<p>As Richey Renenberg said in the foreword, learn to love the interaction with your partner. As I mentioned in the beginning of the book, I have never had so much fun on the court as I have when</p>
+<p>playing with my current partner, Mark Jee. As a team, digest the materials presented, and let the wins start to roll your way.</p>
+<p>To provide a better understanding of the levels of the game, the</p>
+<p>United States Tennis Association (USTA) has devised the following rating system:</p>
+<p>This player is just starting to play tennis.</p>
+<p>This player has limited experience and is still working pri-</p>
+<p>marily on getting the ball in play.</p>
+<p>This player needs on-court experience. This player has ob-</p>
+<p>vious stroke weaknesses but is familiar with basic positions</p>
+<p>for singles and doubles play.</p>
+<p>This player is learning to judge where the ball is going, al-</p>
+<p>though court coverage is weak. This player can sustain a slow-paced rally with other players of the same ability.</p>
+<p>This player is consistent when hitting medium-paced shots</p>
+<p>but is not comfortable with all strokes and lacks control</p>
+<p>when trying for directional intent, depth, or power.</p>
+<p>This player has achieved improved stroke dependability</p>
+<p>and direction on moderate shots but still lacks depth and va-</p>
+<p>riety. This player is starting to exhibit more aggressive net play, has improved court coverage, and is developing teamwork in doubles.</p>
+<p>This player has dependable strokes, including directional</p>
+<p>intent and depth on both forehand and backhand sides on</p>
+<p>moderate shots, plus the ability to use lobs, overheads, approach shots, and volleys with some success. This player occasionally forces errors when serving, and teamwork in</p>
+<p>doubles is evident.</p>
+<p>This player has begun to master the use of power and spins</p>
+<p>and is beginning to handle pace, has sound footwork, can control depth of shots, and is beginning to vary tactics according to opponents. This player can hit first serves with</p>
+<p>power and accuracy, can place the second serve, and is able to rush the net successfully.</p>
+<p>This player has good shot anticipation and frequently has</p>
+<p>an outstanding shot or exceptional consistency around</p>
+<p>which a game can be structured. This player can regularly</p>
+<p>hit winners or force errors off short balls; can put away volleys; can successfully execute lobs, drop shots, half volleys, and overhead smashes; and has good depth and spin on</p>
+<p>most second serves.</p>
+<p>This player has developed power or consistency or both as a</p>
+<p>major weapon. This player can vary strategies and styles of play in a competitive situation and hits dependable shots in stress situations.</p>
+<p>These players generally do not need the USTA rating sys-</p>
+<p>tem. Ranking or past rankings will speak for themselves. The 6.0 player typically has had intensive training for 7.0</p>
+<p>national tournament competition at the junior and collegiate levels and has obtained a sectional or national ranking or both.</p>
+<p>This player has a reasonable chance of succeeding at the 7.0</p>
+<p>level and has extensive satellite tournament experience.</p>
+<p>This is a world-class player who is committed to tournament</p>
+<p>competition on the international level and whose major</p>
+<p>source of income is tournament prize winnings.</p>
+<p>In both singles and doubles, tennis matches are played in sets. To win a set, one player must win at least six games by a margin of</p>
+<p>two. Thus the score can be 6-0 through 6-4 but not 6-5, which would require one more game to be played. If the score becomes</p>
+<p>7-5, the set is over, but if the opponent ties it at 6—6, a tiebreaker is played (more on this in a moment).</p>
+<p>Most matches consist of a two-out-of-three-set format, except for the Grand Slam, Davis Cup, and a few other pro tournaments, where the men play three-out-of-five-set matches. The only</p>
+<p>women’s event to use the three-out-of-five-set format is the culmi-</p>
+<p>nation tournament of the tour finals.</p>
+<p>There are two ways to score a game of tennis: no ad and regular scoring. In the no ad (short for no advantage) format, the first</p>
+<p>player to win four points wins the game. Thus when the score is 3-3, only one more point is played, and the opponent has the preference as to which side the server must serve. Many tournaments use this scoring method to move the sets along. No ad is also a good scoring method when court time is limited.</p>
+<p>In the regular scoring method, one player must still win four points, but by a margin of two. Zero points 1s called love; one point</p>
+<p>is called 15; two points, 30; three points, 40. After 40-40, called deuce, there are no more numbers. At deuce, both players are two</p>
+<p>points away from winning the game. If the server wins the deuce</p>
+<p>point, that player needs just one more point to win, which is his or her advantage, called “ad in.” If the server wins the next point, he or she has won the game. But if the opponent wins the deuce point,</p>
+<p>it’s “ad out.” If the receiver loses the next point, the score is tied again at deuce. Whoever scores next will have the advantage, which continues until one player wins the deuce and following point.</p>
+<p>Points are scored by hitting a winning shot or the opponent missing a shot.</p>
+<p>The serving square in which the deuce point can be played is often referred to as the deuce court. The serving square in which</p>
+<p>the ad point is played is called the ad court.</p>
+<p>Holding serve means that the server has won the game; the serve was held. Breaking serve means that the opponent has won the server’s game.</p>
+<p>Some players use slang terminology in scoring. Fifteen, the first point, is sometimes shortened to 5. “Deuce” might be said at 30 all, since both players need two points to win. When recounting set scores, there is no need to mention the first number (6), since it is a given, so the player says that he or she won in three and five, meaning 6-3, 7-5.</p>
+</section><footer class="end"><div class="sig">Tennis Books Library</div><div>English text extracted from the book's own PDF.</div></footer>
+</div>
+</div>
+</body>
+</html>

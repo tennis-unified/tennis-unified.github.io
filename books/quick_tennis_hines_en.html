@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quick Tennis</title>
+<meta name="description" content="Tennis library">
+<meta name="author" content="Pham Duc Hai">
+<style>
+.tcq-book{
+  --tcq-paper:#faf9f5; --tcq-ink:#1a1c20; --tcq-ink-soft:#4a4e54;
+  --tcq-ink-faint:#8a8d93; --tcq-indigo:#1d5c63; --tcq-indigo-soft:#2f7d84;
+  --tcq-gold:#a8863c; --tcq-rule:#e2e1da; --tcq-panel:#ffffff;
+  background:var(--tcq-paper); color:var(--tcq-ink);
+  font-family:"Palatino Linotype","Book Antiqua",Cambria,"Times New Roman","Noto Serif",serif;
+  font-size:19px;line-height:1.78;-webkit-font-smoothing:antialiased;}
+.tcq-book .wrap{max-width:760px;margin:0 auto;padding:64px 28px 120px;}
+.tcq-book header.cover{text-align:center;padding:8px 0;}
+.tcq-book .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+.tcq-book header.cover .cover-art{width:100%;max-width:430px;margin:0 auto 30px;border-radius:10px;
+  box-shadow:0 14px 40px rgba(16,40,44,.28);display:block;}
+.tcq-book header.cover .kicker{letter-spacing:.28em;font-size:12px;text-transform:uppercase;
+  color:var(--tcq-indigo);font-weight:600;}
+.tcq-book header.cover h1{font-size:38px;line-height:1.16;margin:.4em 0 .12em;font-weight:600;
+  color:var(--tcq-ink);text-align:center;letter-spacing:0;}
+.tcq-book header.cover .sub{color:var(--tcq-ink-soft);font-size:20px;font-style:italic;}
+.tcq-book header.cover .blurb{color:var(--tcq-gold);font-size:16px;margin-top:.7em;
+  letter-spacing:.04em;}
+.tcq-book header.cover .by{margin-top:1.2em;color:var(--tcq-ink-faint);font-size:14px;
+  letter-spacing:.06em;}
+.tcq-book hr.lead{border:none;border-top:1px solid var(--tcq-rule);margin:36px 0;}
+.tcq-book .part-band{margin:88px 0 8px;padding:26px 0 22px;text-align:center;
+  border-top:1px solid var(--tcq-rule);border-bottom:1px solid var(--tcq-rule);}
+.tcq-book .part-band .part-kicker{letter-spacing:.3em;font-size:12px;text-transform:uppercase;
+  color:var(--tcq-gold);font-weight:600;}
+.tcq-book .part-band .part-name{font-size:23px;color:var(--tcq-indigo);margin-top:.5em;
+  font-style:italic;}
+.tcq-book .chapter{margin-top:56px;}
+.tcq-book h2.ch-title{font-size:29px;line-height:1.25;margin:0 0 .1em;font-weight:600;
+  color:var(--tcq-ink);letter-spacing:0;font-style:normal;
+  border-bottom:2px solid var(--tcq-indigo);padding-bottom:.25em;}
+.tcq-book h3{font-size:21px;margin:40px 0 12px;font-weight:600;color:var(--tcq-indigo);
+  font-style:normal;letter-spacing:0;}
+.tcq-book h4{font-size:18px;margin:30px 0 8px;font-weight:600;color:var(--tcq-gold);
+  font-style:normal;letter-spacing:.02em;}
+.tcq-book p{margin:0 0 1.15em;text-align:justify;hyphens:auto;color:var(--tcq-ink);}
+.tcq-book p.lead-p{font-size:21px;color:var(--tcq-ink-soft);}
+.tcq-book strong{color:var(--tcq-ink);}
+.tcq-book em{color:var(--tcq-ink-soft);}
+.tcq-book .toc{margin:44px auto 0;max-width:560px;background:var(--tcq-panel);
+  border:1px solid var(--tcq-rule);border-radius:8px;padding:26px 32px;}
+.tcq-book .toc-title{font-size:15px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--tcq-indigo);margin:0 0 .9em;font-weight:600;font-style:normal;}
+.tcq-book .toc-part{font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--tcq-gold);font-weight:600;margin:1.3em 0 .4em;}
+.tcq-book .toc-part:first-of-type{margin-top:.4em;}
+.tcq-book .toc ol{margin:0;padding-left:0;list-style:none;}
+.tcq-book .toc li{margin:.42em 0;font-size:16px;}
+.tcq-book .toc a{color:var(--tcq-ink);text-decoration:none;border-bottom:1px solid transparent;}
+.tcq-book .toc a:hover{border-bottom-color:var(--tcq-indigo);}
+.tcq-book dl.glossary{margin:0 0 1.2em;padding:0;}
+.tcq-book dl.glossary dt{font-weight:600;color:var(--tcq-indigo);margin:1.15em 0 .15em;
+  font-size:18px;}
+.tcq-book dl.glossary dd{margin:0 0 .3em;padding-left:1.4em;color:var(--tcq-ink-soft);
+  font-size:18px;line-height:1.7;text-align:justify;}
+.tcq-book footer.end{margin-top:90px;border-top:1px solid var(--tcq-rule);padding-top:26px;
+  color:var(--tcq-ink-faint);font-size:14px;text-align:center;line-height:1.9;}
+.tcq-book footer.end .sig{color:var(--tcq-indigo);font-size:15px;letter-spacing:.08em;}
+body.dark-mode .tcq-book{
+  --tcq-paper:#0f1416; --tcq-ink:#e6e7e3; --tcq-ink-soft:#b0b3af;
+  --tcq-ink-faint:#878b90; --tcq-indigo:#7fbfc4; --tcq-indigo-soft:#5fa3a9;
+  --tcq-gold:#c9a961; --tcq-rule:#283135; --tcq-panel:#161d20;}
+body.dark-mode .tcq-book p,
+body.dark-mode .tcq-book li,
+body.dark-mode .tcq-book dd,
+body.dark-mode .tcq-book div{color:var(--tcq-ink);}
+body.dark-mode .tcq-book p.lead-p,
+body.dark-mode .tcq-book em,
+body.dark-mode .tcq-book dl.glossary dd{color:var(--tcq-ink-soft);}
+body.dark-mode .tcq-book header.cover .by,
+body.dark-mode .tcq-book footer.end{color:var(--tcq-ink-faint);}
+body.dark-mode .tcq-book h2.ch-title,
+body.dark-mode .tcq-book header.cover h1{color:var(--tcq-ink) !important;}
+body.dark-mode .tcq-book h3,
+body.dark-mode .tcq-book dl.glossary dt,
+body.dark-mode .tcq-book header.cover .kicker,
+body.dark-mode .tcq-book .toc-title,
+body.dark-mode .tcq-book footer.end .sig,
+body.dark-mode .tcq-book .part-band .part-name{color:var(--tcq-indigo) !important;}
+body.dark-mode .tcq-book h4,
+body.dark-mode .tcq-book header.cover .blurb,
+body.dark-mode .tcq-book .toc-part,
+body.dark-mode .tcq-book .part-band .part-kicker{color:var(--tcq-gold) !important;}
+body.dark-mode .tcq-book .toc a{color:var(--tcq-ink);}
+body.dark-mode .tcq-book strong{color:var(--tcq-ink) !important;}
+@media (max-width:760px){
+  .tcq-book .wrap{padding:40px 20px 80px;}
+  .tcq-book header.cover h1{font-size:28px;}
+  .tcq-book header.cover .cover-art{max-width:320px;}
+  .tcq-book dl.glossary dd{padding-left:.8em;}
+  .tcq-book .part-band .part-name{font-size:19px;}
+}
+@media print{
+  .tcq-book .toc{break-after:page;}
+  .tcq-book .chapter{break-before:page;}
+  .tcq-book .part-band{break-before:page;break-after:avoid;}
+  .tcq-book dl.glossary dt{break-after:avoid;}
+}
+
+/* breadcrumb — sits above .tcq-book, so it carries its own palette.
+   Colours/scale mirror the reference TFL books (#2–#8): .9rem, muted
+   #5b6572 separator, the book's own accent for the root link. */
+.tu-breadcrumb{background:#faf9f5;padding:16px 0 4px;font-size:.9rem;color:#6b6f76;
+  font-family:"Palatino Linotype","Book Antiqua",Cambria,"Times New Roman","Noto Serif",serif;}
+.tu-breadcrumb__list{list-style:none;display:flex;flex-wrap:wrap;gap:2px 8px;
+  max-width:760px;margin:0 auto;padding:0 28px;align-items:center;}
+.tu-breadcrumb__item{margin:0;}
+.tu-breadcrumb__link{color:#1d5c63;text-decoration:none;}
+.tu-breadcrumb__link:hover{text-decoration:underline;}
+.tu-breadcrumb__sep{color:#5b6572;margin:0 2px;user-select:none;}
+.tu-breadcrumb__current{color:#1a1c20;font-weight:500;}
+</style>
+</head>
+<body>
+
+
+<nav class="tu-breadcrumb" aria-label="Breadcrumb">
+  <ol class="tu-breadcrumb__list">
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/books/">Tennis Books Library</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item tu-breadcrumb__current" aria-current="page">Quick Tennis</li>
+  </ol>
+</nav>
+<div class="tcq-book">
+<div class="wrap">
+<header class="cover"><div class="kicker">Tennis Library</div><h1>Quick Tennis</h1><div class="by"></div><p style="text-align:center;margin:18px 0 0;font-family:var(--tcq-sans,sans-serif);font-size:14px;letter-spacing:.02em;"><a href="https://github.com/tenniskb/tenniskb.github.io/releases/download/books-pdf-v1/quick-tennis.pdf" target="_blank" rel="noopener" style="color:#1d5c63;font-weight:600;text-decoration:none;border:1px solid #cfd8d4;border-radius:6px;padding:7px 14px;display:inline-block;">Read the original PDF &#8599;</a></p></header><div class="toc"><div class="toc-title">Contents</div><ol>
+<li><a href="#sec-1">Part 1  ·  pp. 18–47</a></li>
+<li><a href="#sec-2">Part 2  ·  pp. 48–77</a></li>
+<li><a href="#sec-3">Part 3  ·  pp. 78–80</a></li>
+</ol></div><section class="chapter" id="sec-1">
+<h2>Part 1  ·  pp. 18–47</h2>
+<p>concluded that keeping your balance squared away—uncommitted—will always permit you to pivot correctly from the very beginning.</p>
+<p>At one point, I asked Arthur and Roscoe if they ever stretched</p>
+<p>and loosened up before they played. They answered, “Not really. We just hit to warm up.” They were especially impressed by my looseness and flexibility, and figured that that was probably one</p>
+<p>of the main reasons I was so well balanced when I moved. Agree-</p>
+<p>ing that stretching out first would probably help them feel better,</p>
+<p>get more limber, and enable them to do more with their bodies,</p>
+<p>they asked me for some exercises. Since each sport uses different</p>
+<p>sets of muscles, each requires a warm-up specifically for that</p>
+<p>sport; even in track and field, hurdlers stretch out differently from long jumpers, sprinters differently from distance runners. I sat down and thought: “. .. playing lower... moving... using arms . . .” and came up with a series of stretching exer-</p>
+<p>cises to loosen all the muscles tennis players use on the court.</p>
+<p>I also put together a workout program to strengthen the muscles</p>
+<p>that they would particularly need to maintain their new, lower</p>
+<p>positions. Since the body doesn’t work any harder than you make</p>
+<p>it work, these muscles were undeveloped because the players had been playing tall so long. I then designed a set of running</p>
+<p>drills that would help them develop more quickness, agility,</p>
+<p>balance, and control. After sifting through hundreds of ideas, inventing, adapting, changing, eliminating—the test being what worked—I eventually evolved a program specifically geared to improving mobility on the tennis court.</p>
+<p>The first player I actually worked with was Roscoe Tanner. We went over to a park near my home and worked out on the</p>
+<p>grass. The session was a great success. By the end of that first day, Roscoe had a good idea of what his weak spots were and what he could do to strengthen them. For example, we did the Eight-Second Drill, a fast foot exercise that showed him both how quickly he could move his feet and also how weak his leg muscles were, which is something that drill brings out—as you&#x27;ll</p>
+<p>soon see. Tanner concluded that if he wanted to be quicker he’d have to strengthen his legs. He did the Balance and Motion Tri-</p>
+<p>angle, a running drill that challenges and improves balance, sev-</p>
+<p>eral times under the stopwatch, which showed him what it would</p>
+<p>take to control his balance as he changed direction quickly. We</p>
+<p>got into toe leads, cross-court pivots, arm drives. I timed him</p>
+<p>doing things right and doing them wrong, which helped bring my ideas home. Soon he started practicing and applying the tech-</p>
+<p>niques we worked on that day and subsequently, and before long</p>
+<p>his friends, who are, after all, his opponents on the court, were</p>
+<p>taking notice.</p>
+<p>I began filming him and Ashe and going over their motion problems with them. Then in January, 1975, I went down to</p>
+<p>Puerto Rico, where eight of the top pros had put together a kind</p>
+<p>of training camp for themselves before the season started. We</p>
+<p>went through my entire program, and, as Arthur has told you,</p>
+<p>those guys got a real workout. I started working regularly with</p>
+<p>tennis pros: drilling, filming, teaching them how to get off the mark more quickly, how to have better balance, how to run to</p>
+<p>the ball more efficiently. No one had ever really helped them with</p>
+<p>movement before, and there was a great need for it. As tennis has become more popular, more and more major tournaments are being played on slower surfaces to keep the game spectatororiented—tennis fans would rather see a match where five or</p>
+<p>six strokes are being hit per point than just a big serve and a winning volley, where the point is over in a matter of seconds. Even the big servers are being forced to learn to cover the court</p>
+<p>well because on clay, their big serves come right back at them. On top of this, now that the prize money is so high in professional tennis, the level of competitiveness has risen to new heights, and the players are starting to play aggressive, quick tennis even on clay. Clay is a tough surface to move well on, and</p>
+<p>any player who really doesn’t know his way around on it now</p>
+<p>is going to get left behind. It’s not enough anymore just to have good strokes; these days it’s the players who are also quick on their feet who win tournaments.</p>
+<p>The clinics for amateurs got started after an article about me</p>
+<p>in World Tennis included my address. Thousands of people wrote me with questions about warm-ups, workouts, drills, and tech-</p>
+<p>niques. I started with a few small groups; they went well, and now in addition to coaching professionals, I run two-day clinics</p>
+<p>for twenty to thirty amateurs at a time. Young players, old play-</p>
+<p>ers, beginners and advanced—there’s usually the whole gamut</p>
+<p>in each clinic and everyone learns a lot and has a good time. My amateur clinics are exactly the same as my workouts with the</p>
+<p>pros, only a little less strenuous. And this book explains the same</p>
+<p>principles that are actually used in my workouts and clinics, except that I’m not there in person to clock you and carry on</p>
+<p>like a drill sergeant or a mother hen.</p>
+<p>Have you ever wondered why, no matter how hard you try,</p>
+<p>you can never quite manage to reach a certain opponent’s cross-</p>
+<p>court forehand? By the time you get over there, flailing des-</p>
+<p>perately with your racket, the damn ball has just gotten behind</p>
+<p>you. Or why, when you’re at the net and your opponent makes</p>
+<p>an average shot, it ends up passing you, and you’ve been working</p>
+<p>on your volley for months? Do you ever find yourself just standing</p>
+<p>up at the net with your feet planted, watching the ball bounce, when your opponent has sailed a lob over your head, half because</p>
+<p>you don’t think you’re fast enough to chase it back and half</p>
+<p>because you have no idea how to get there? Have you ever wondered how the guy on the next court can retrieve practically</p>
+<p>any ball his opponent hits, no matter where it lands, and how he</p>
+<p>always manages to get back into position for the next one?</p>
+<p>This is a tennis instruction book that won’t tell you a single</p>
+<p>thing about how to hold your racket, or how to stroke the ball.</p>
+<p>It also won&#x27;t tell you anything about strategy, or the winning</p>
+<p>attitude, or what you should do if your doubles partner can’t</p>
+<p>volley but insists on poaching at the net. What this book will</p>
+<p>teach you is how to cover the court, how to get to the ball so you</p>
+<p>can start reaching all those shots that seem to land just beyond</p>
+<p>your range, the ones you could control if only you could get</p>
+<p>started more quickly and knew how to run them down.</p>
+<p>The difference between a well-hit and a mis-hit shot is often</p>
+<p>no more than a fraction of a second, gained or lost because of movement techniques. I’ve become more and more convinced</p>
+<p>that very few tennis players—professionals or amateurs—know</p>
+<p>how to move quickly and efficiently on the tennis court. Many</p>
+<p>players who have classic Pancho Gonzales strokes can’t get them-</p>
+<p>selves to the ball in time to use those strokes. Much of the time</p>
+<p>they’re completely out of position. They look beautiful, those</p>
+<p>strokes, but tennis is a competitive sport, not a beauty contest,</p>
+<p>and if you can’t reach the ball in time to set up properly, the</p>
+<p>best strokes in the world won’t do you a bit of good.</p>
+<p>So I teach the bottom half of the game: the footwork. [ll</p>
+<p>teach you how to get from point A to point B on a tennis court</p>
+<p>with finesse, control, and balance. I&#x27;ll also help you get your feet</p>
+<p>and your body out of the way of your strokes, so you can start</p>
+<p>using them to your best advantage. The overall goal of this program is to help you be the best athlete and tennis player you can possibly be by working on six fundamental qualities:</p>
+<p>1. Flexibility. You can’t run well if you’re tight. One of the</p>
+<p>things that has helped Roscoe Tanner—who used to be known</p>
+<p>not only for his lightning-fast serve but also for his awful, lumber-</p>
+<p>ing slowness on the court—become so much quicker in the past</p>
+<p>few years is that he started to work on loosening up his stiff muscles. His opponents still can’t believe it when they see him</p>
+<p>streak across the court and get to the ball. He’s even playing a</p>
+<p>different game now: percentage tennis. Now that he can move,</p>
+<p>he has the confidence to wait for the right shot and knows he</p>
+<p>can stay out on the court as long as necessary.</p>
+<p>In order to be a quicker, more athletic tennis player, you’re going to have to be flexible. You&#x27;ll be putting demands on your body that it’s probably never gone through before. If your</p>
+<p>muscles, ligaments, and tendons aren’t limber and stretched out,</p>
+<p>you won’t be able to make them do what you want and you</p>
+<p>could hurt yourself trying.</p>
+<p>2. Agility. There are some drills in this book that will show</p>
+<p>you just how agile you are or aren’t. Doing them will make you</p>
+<p>more agile—maybe not quite catlike, but certainly better able to</p>
+<p>react on the court in a manner that gets the job done.</p>
+<p>3. Balance. A lot of players have problems with balance—they overcommit their weight in one direction or another and often</p>
+<p>get caught wrong-footed. There is a drill in this book that can improve your balance to the extent that you&#x27;ll be able to make</p>
+<p>360-degree turns at full speed with no problems. Since this is a much more radical directional change than you will ever need</p>
+<p>to make on a tennis court, if you can do this drill right you should have very little trouble with lesser changes of direction—</p>
+<p>say, getting to the side quickly for a ball that’s on its way down</p>
+<p>the line.</p>
+<p>4. Footwork. Most players don’t know what to do with their</p>
+<p>feet when they go for the ball—how to get started, which leg to</p>
+<p>lead with, which part of the foot to run on, what length of stride</p>
+<p>to take. I see people all the time landing on their heels and off-</p>
+<p>balance, or getting to the ball on the wrong foot and then having</p>
+<p>to lunge wildly just to get their rackets on it.</p>
+<p>Bad footwork, not bad strokes, is probably the major cause of</p>
+<p>errors on the tennis court. People try to hit their strokes with</p>
+<p>their feet and bodies out of position, then they miss their shots</p>
+<p>and blame it on their forehand or their backhand, when the problem is generally on the bottom. Ashe and Pasarell estimate</p>
+<p>that getting in position to hit the ball is seventy percent of the game. All players are capable of moving much more effectively,</p>
+<p>if they work on it and have some faith in themselves.</p>
+<p>There are a few gifted players—very few—who move well</p>
+<p>naturally, without thinking about it much; but we can’t all be Nastases and Goolagongs. Unfortunately, most teaching pros</p>
+<p>don’t teach footwork at all. Pros teach strokes, not running; most of them don’t know enough about running to help their</p>
+<p>students become quicker on the court. Over and over I talk to</p>
+<p>people in my clinics who complain that their teaching pros never</p>
+<p>go any farther about footwork than to say “Step into the ball.” Nothing about how to get going quickly, how to stop and set up, how to move across the court, how to recover.</p>
+<p>Most players who have moved past the beginning stages of the game can handle inner balls—balls that come right to them or</p>
+<p>near them, within what I call their comfort range—without much</p>
+<p>trouble. The problems begin with outer balls, ones they have to</p>
+<p>run down. That’s when they start lunging and dragging and</p>
+<p>lurching all over the court. This book will introduce you to the</p>
+<p>basic techniques of moving, both for the outer balls, the ones</p>
+<p>you probably often end up running through now, and the inner</p>
+<p>balls, which are your bread-and-butter shots.</p>
+<p>5. Quickness. The quick players, the ones who move well, are</p>
+<p>the ones who win matches against their peers and can often stay</p>
+<p>on the court with players who have superior strokes. In pro-</p>
+<p>fessional tennis, as the players themselves will tell you, very few</p>
+<p>players who are slow are winning singles matches. By quick, as I</p>
+<p>said earlier, I don’t mean fast; there’s a big difference. I know a</p>
+<p>couple of sprinters who can run the hundred in 9.1 but often</p>
+<p>can’t get to a drop shot, because they’re just not quick enough. Quickness is a matter of taking off for short bursts of speed, which is what you need to reach those drop shots, lobs, and</p>
+<p>other balls beyond your range. It’s actually the first stage you run through on the way to reaching your maximum speed, but in</p>
+<p>tennis you don’t need to go past that first stage. A large part of quickness is reflexes. I’ve got a couple of drills to help you sharpen yours.</p>
+<p>6. Conditioning. Most tennis players are simply not in good</p>
+<p>shape. Many people’s bodies quit on them after only one or two</p>
+<p>sets. A lot of players ’ve worked with believe they’re in shape</p>
+<p>until we start working out, when they begin huffing and puffing</p>
+<p>and groaning and complaining and finding out what it means to</p>
+<p>really be in shape. Especially for many of the women in my</p>
+<p>clinics, it’s been an absolute revelation that to be quick you need</p>
+<p>to be strong, which means firming up the body. Conditioning—</p>
+<p>more strength and better endurance—is one of the end results of</p>
+<p>the program, a very important one because it’s what will allow</p>
+<p>you to go three fast sets and still maintain a high degree of</p>
+<p>effectiveness on the court. A lot of matches are won and lost just</p>
+<p>at that point when one player begins to dog it.</p>
+<p>This book can help you improve your game in these six areas.</p>
+<p>It can push your overall game up a notch or two and give you</p>
+<p>a big advantage over the guy or gal whose strokes are as good</p>
+<p>as yours. If you’re like most people, feeling satisfied when you come off the court depends at least as much on victory over</p>
+<p>yourself as on victory over your opponent. Knowing how to cover</p>
+<p>the court effectively and knowing you have the strength and stamina to play your best until the match is over will not only make you a more confident, competent tennis player; it will also make playing tennis a richer experience for you. A friend of mine once summed it up beautifully when we were discussing the</p>
+<p>joys of tennis: “Owning your own body on the court will help</p>
+<p>put tennis on the precious list of things you do well.”</p>
+<p>Does it sometimes take a whole set before you really get into the match? If so, I think I know what your problem is. Tennis players</p>
+<p>hardly ever warm up properly before they play, not only amateurs</p>
+<p>but top professionals as well. To most players, “warming up” means rallying for ten minutes, if that long; practicing a couple of</p>
+<p>volleys, serves, and overheads; and then somebody says, “You</p>
+<p>ready? Up or down?” Typically, these players then get locked into</p>
+<p>a kind of uncontrolled, unathletic, unwilling game in which their minds are urging, “Let’s go! Let’s go!” but their bodies are pro-</p>
+<p>testing, “Hey, hold on. Let’s just wait a minute here until we get</p>
+<p>ready.” Sometimes unprepared players wind up pulling a ham-</p>
+<p>string, a groin muscle, or a back muscle, and have to spend the</p>
+<p>rest of the season watching other people play tennis. Most of the</p>
+<p>time they get away without hurting themselves, just losing a lot</p>
+<p>of points unnecessarily because their bodies are still cold. There</p>
+<p>are many more muscles involved in playing tennis besides the ones</p>
+<p>in your arms and back, which are the only ones you stretch out</p>
+<p>if you warm up by just hitting.</p>
+<p>A series of good stretching and loosening-up exercises will do</p>
+<p>three very important things for you: get you ready to come out smoking on the first point, reduce your chances of injuring your-</p>
+<p>self, and, if you do them more or less regularly, make you more flexible—in other words, improve the elasticity of your muscles, tendons, and ligaments—which is very important if you want to be</p>
+<p>really mobile on the tennis court. Tanner, for instance, has noticed</p>
+<p>that he is able to change direction much more quickly since he’s been doing these exercises. If you’re tight, you’ll move awkwardly.</p>
+<p>If you’re loose and stretched out, you&#x27;ll move with more fluidity.</p>
+<p>Very few people are really flexible without working at it, and anyone who does work at it can be more flexible, whatever his</p>
+<p>age or the current condition of his body. While flexibility decreases</p>
+<p>with age, ’ve found that even most of the guys and gals on the</p>
+<p>college tennis teams I’ve worked with have been extremely tight. John Andrews, a young pro I work with, notices that he particu-</p>
+<p>larly needs to stretch out when he’s in training, because that’s when his muscles really tighten up. In other words, stretching exer-</p>
+<p>cises are for everybody—kids, juniors, seniors, professional ath-</p>
+<p>letes, and everyone in between.</p>
+<p>Warming up is a transition from rest to activity; it’s natural, it’s</p>
+<p>necessary, and it feels good. When a cat gets up from a nap, it</p>
+<p>doesn’t take a single step until it’s stretched the whole length of</p>
+<p>its body, front to back. You probably do the same thing to some</p>
+<p>extent when you wake up in the morning. But tennis players were</p>
+<p>never really taught to stretch their bodies systematically, even though before such a demanding sport as tennis it’s close to essen-</p>
+<p>tial. Until recently, the only players who ever bothered with it were</p>
+<p>the ones who were nursing injuries, like Bob Lutz and Stan Smith.</p>
+<p>Muscles work by contracting and relaxing. When you start mov-</p>
+<p>ing a muscle that has been inactive, its first few contractions and</p>
+<p>relaxations are going to be weak and irregular—that’s why those</p>
+<p>first few shots you hit are usually so uncoordinated. Besides lit-</p>
+<p>erally raising the temperature of your muscles and increasing their</p>
+<p>blood and oxygen supplies, warming up also increases the strength</p>
+<p>of their contractions and relaxations. That’s how it can help you</p>
+<p>be more coordinated when you start playing.</p>
+<p>A sudden, unprepared, strenuous activity like running can ex-</p>
+<p>tend a cold muscle too quickly and increase the chances of injuring</p>
+<p>it. It’s not all that different from what happens to taffy if you try</p>
+<p>to stretch it too fast. Now that they’re in their thirties, a lot of the</p>
+<p>pros do these stretches every day, even on days they’re not playing, because otherwise their muscles would tighten up and could get</p>
+<p>them into trouble. In fact, one man who took my clinic, who had</p>
+<p>a bad knee from an old football injury, got into the habit of exer-</p>
+<p>cising regularly before playing tennis and found that his knee</p>
+<p>didn’t give him any more problems when he played. Just once</p>
+<p>he failed to warm up, and his knee started to bother him again. Now he’s a believer. While I can’t promise you that kind of near-</p>
+<p>miracle, I do know that a warmed-up, stretched muscle or ligament is much less injury-prone than a cold, tight, sleepy one. Incidentally, most people who do exercise before they play only</p>
+<p>bother with it on cold days, which is a big mistake and the reason</p>
+<p>more athletes pull muscles in hot weather than in cold. The temperature outside has nothing to do with your internal temperature, which is what we’re concerned about. Getting warmed up may be</p>
+<p>easier when it’s ninety-four degrees outside, but it’s just as impor-</p>
+<p>tant as when it’s forty-nine.</p>
+<p>I guarantee it: fifteen minutes of stretching exercises before you</p>
+<p>start hitting will do you and your game a lot more good than</p>
+<p>fifteen minutes of just rallying. These days, more and more of</p>
+<p>the guys and gals on the pro tour are rallying before matches</p>
+<p>simply to groove their strokes a bit—they’ve already done their warming up off the court. A lot of them used to be slow getting</p>
+<p>started; they felt they needed three or four games just to loosen up. Now they’re ready to get the edge on an opponent right at the beginning of the match. Besides, now that there are tournaments</p>
+<p>practically every week of the year, players are getting hurt more— tennis elbows, pulled muscles, sprains. Warming up provides them with some insurance against injuries. So even if you’re skeptical,</p>
+<p>give it a try. Think of it this way: if you’ve rented a court for an hour, why waste part of your court time warming up? I know at</p>
+<p>least one woman who does the exercises at home just before she leaves to play tennis. Another clinic graduate, a fifteen-year-old</p>
+<p>girl who plays number one on her high-school team, taught her teammates the warm-ups, and now the whole team does them religiously before practice, and of course before matches.</p>
+<p>Recently I was talking to the man with the old football injury, who told me, “A couple of the guys I play with laugh at me for doing warm-up exercises. Let them laugh. I just won the C tournament at my club for the first time.”</p>
+<p>You&#x27;ll probably recognize some of these exercises. I chose them because together they get the job done of warming up and stretch-</p>
+<p>ing all the muscles, tendons, and ligaments you use in tennis. Do</p>
+<p>them in the correct sequence, because that way in the earlier exer-</p>
+<p>cises you warm up the muscles you stretch in the later ones. Breathe regularly, and go at your own pace. Don’t try to force</p>
+<p>your body into shape; coax it; and don’t feel discouraged if you</p>
+<p>can’t assume all the correct positions at first—neither could most</p>
+<p>of the professionals I’ve taught them to. You&#x27;ll get more flexible</p>
+<p>as you keep it up.</p>
+<p>Like everything else, you get out of exercise what you put into</p>
+<p>it. The warm-ups will do you a lot more good if you do them with</p>
+<p>full range of motion, which means stretching until you’ve reached</p>
+<p>the maximum extension allowed by a particular muscle. Stretching</p>
+<p>slowly and holding the stretch for a few seconds is both safer and more effective than bobbing up and down. Youre just asking for</p>
+<p>trouble if you try to do too much too fast. Concentrate more on</p>
+<p>quality than on quantity. I’ve indicated the number of times you</p>
+<p>should repeat each exercise, but just use my numbers as guidelines;</p>
+<p>only you know when you feel loose enough. At first, you may find</p>
+<p>these exercises taking more time than you’d like—half an hour or so—but as you get stronger and more accustomed to doing them,</p>
+<p>you&#x27;ll find your time coming down to twelve or fifteen minutes.</p>
+<p>Your muscles draw up while you’re playing, so between points,</p>
+<p>between games, whenever there’s a break in the action, do some</p>
+<p>more stretches. Whatever feels tight, stretch it back out again.</p>
+<p>After you’ve played two or three sets, you probably feel like</p>
+<p>taking a break for half an hour or so. Before getting back on the</p>
+<p>court, loosen up again. This will help you avoid that sluggish</p>
+<p>feeling players often have when they resume play after a long</p>
+<p>break.</p>
+<p>There are times, I realize, when you don’t have fifteen minutes</p>
+<p>to warm up off the court. You’ve reserved a court from 2 to 3</p>
+<p>and it’s 1:55. In that case, just concentrate on your arms and legs:</p>
+<p>do the arm rotations and the Hurdlers’ Exercise. Don’t do too</p>
+<p>much stretching if you haven’t broken a sweat first, and play easy</p>
+<p>at the beginning: try not to stop too short and don’t give your</p>
+<p>strokes or your practice serves everything you’ve got. Then, be-</p>
+<p>tween points, between games, whenever you have a minute, work</p>
+<p>in a few more stretches. In other words, when you don’t have time beforehand, warm up during the match, as early into it as possible.</p>
+<p>Realize, however, that the more important the match is to you,</p>
+<p>the more you have to come in with both sides blazing!</p>
+<p>1. Breaking a Sweat. The first thing we do is jog around a</p>
+<p>little bit, or run in place if space is limited, taking short, slow,</p>
+<p>relaxed strides. There’s no set number of laps; just run until you</p>
+<p>break a little sweat under your arms. One woman I know runs around the court four times. Jogging will not get you in top shape</p>
+<p>and should not make you tired. It’s just to get your heart pumping</p>
+<p>and your circulation going—like warming up a cold engine.</p>
+<p>2. Neck Rotations. We start at the neck, go all the way down</p>
+<p>to the feet, and loosen up everything in between. A lot of muscles</p>
+<p>connected to your arms, back, and legs start in your neck, which</p>
+<p>is really the top of your spine and a tension center for many</p>
+<p>people. This makes it a good place to start loosening up your whole body.</p>
+<p>Stand with your feet about shoulder-width apart, put your arms</p>
+<p>by your sides, and relax. Now rotate your head slowly all the way</p>
+<p>around, with full range of motion. The cracking you may hear</p>
+<p>is just like what happens when you crack your knuckles and is nothing to worry about. While your head is down, press your</p>
+<p>chin into your chest a bit to pull up your back muscles. Usually</p>
+<p>five times around to the left, then five times to the right will get</p>
+<p>the job done, but if you’re especially tense, or just waiting around,</p>
+<p>do what Bob Lutz calls “360 on the neck” until you feel good.</p>
+<p>(Above, Left) Neck rotations. Rotate your head slowly all the way around. (Above, Right) Shoulder Rotations. Make full circles with your shoulders. (Below, Left) Arm Rotations. Let your arms circle freely; your fingertips should tingle. (Below, Right) Trunk rotations. Just swing from side to side with full range of motion.</p>
+<p>3. Shoulder Rotations. These loosen your back and shoulders,</p>
+<p>usually a very tight, weak area. In the same stance you use for</p>
+<p>neck rotations, rotate your shoulders in full circles. Raise them</p>
+<p>as high as you can, push them all the way back, then down as low</p>
+<p>as you can, and around in front as far forward as you can. Up,</p>
+<p>back, around and down, vigorously. Make the motion round, not</p>
+<p>square. Don’t thrust your head forward, and keep your neck</p>
+<p>relaxed. If you find yourself getting a little tired from these, it’s because your deltoid muscles are weak, and if you’re weak in</p>
+<p>there you can imagine what’s hampering some of your shots— particularly your overheads and serves. I get a bit tired from these</p>
+<p>myself, and so do a lot of the players ’ve worked with, so don’t</p>
+<p>feel as though you’re hopelessly out of shape. Do twenty forward,</p>
+<p>twenty backward, quickly—approximately twenty per ten sec-</p>
+<p>onds.</p>
+<p>4. Arm Rotations. For your shoulders, arms, and back. With</p>
+<p>your feet shoulder-width apart, extend your arms directly out in</p>
+<p>front of you. Swing them around vigorously in wide circles, up,</p>
+<p>back, and around. Don’t “muscle” your arms; let them swing</p>
+<p>freely, because muscling them around would just tense them up,</p>
+<p>and what we’re striving for is freedom of motion. If you’re doing</p>
+<p>it correctly, this exercise should make your fingertips tingle be-</p>
+<p>cause blood is being pumped into them. Do twenty-five forward,</p>
+<p>twenty-five backward.</p>
+<p>5. Trunk Rotations. To loosen your back and hip area. Stand</p>
+<p>with your feet shoulder-width apart and push your hips forward</p>
+<p>slightly. Just swing around from side to side, letting your arms</p>
+<p>float freely. Don’t stop abruptly; ease into the stops. When you</p>
+<p>twist to the right, let your left foot rise up onto your toes, and</p>
+<p>vice versa, which will give you more freedom of motion. Do ten</p>
+<p>in each direction.</p>
+<p>6. Hamstring Stretch. This is designed to stretch the muscle behind your thigh, the hamstring. Hamstring pulls are a common</p>
+<p>sports injury.</p>
+<p>(Left) Hamstring Stretch A. Hold your maximum position; don’t bob up and down.</p>
+<p>(Below) Hamstring Stretch B. Try</p>
+<p>to make an ever-widening arc.</p>
+<p>(Bottom) Hamstring Stretch C. Reach way around from side to</p>
+<p>side in slow semicircles.</p>
+<p>a. With your feet a little closer together than shoulder-width</p>
+<p>apart, extend your arms down as far as your legs will let you go without either bending your knees or straining yourself—just a</p>
+<p>bit past where it’s comfortable but not to the point of pain. Think</p>
+<p>you’re not reaching down as far as you should be at first? Well,</p>
+<p>Ray Moore, Charles Pasarell, Roscoe Tanner, and a few of the</p>
+<p>other guys and gals on the pro tour probably didn’t get as low as</p>
+<p>you are now. One player could barely get to his knees. With</p>
+<p>regular practice, you&#x27;ll be getting your hands to the ground. Bend down and hold your position for a count of six, then come up.</p>
+<p>Stay relaxed. Try to go down perhaps a quarter-inch or half-inch</p>
+<p>farther each time, or if you loafed last time try to go down a whole inch farther. Make a little increment of progress each time,</p>
+<p>not more than you can take, and don’t bob up and down. If you</p>
+<p>try to do too much too fast you’re going to hurt yourself; we’re</p>
+<p>trying to get you quicker on the court, not laid up in bed. Four</p>
+<p>of these should get you limber enough for the next phase.</p>
+<p>b. Spread your feet about one foot wider. Keep your knees</p>
+<p>straight, bend down, and reach out with both hands as far as you</p>
+<p>can in front of you, with your fingers touching the ground. Now swing your body all the way around to the left, keeping your</p>
+<p>fingers on the ground, then way around as far as you can reach</p>
+<p>out in front, and all the way around to the right. Draw an imag-</p>
+<p>inary line between your heels, extend it out a few feet, and try</p>
+<p>to go from that point on one side to that point on the other side,</p>
+<p>reaching forward a little farther each time, making an ever-</p>
+<p>widening, semicircular arc. Make a mark in front of yourself so</p>
+<p>you can try to go a little bit past it. A quarter of an inch here,</p>
+<p>a quarter of an inch there, pay big dividends later on the court.</p>
+<p>I’m not trying to turn you into Kathy Rigby or Nadia Comaneci,</p>
+<p>just helping you get limber enough to do what you have to do</p>
+<p>on the court. Pay the price now and get the benefits later on.</p>
+<p>c. Now spread your legs as far out to the sides as you can pos-</p>
+<p>sibly stand it. Just take them and jam them out there. Do the same thing in this position: reach way around from side to side</p>
+<p>(Left) Groin Stretch. Push outward with your elbows.</p>
+<p>a little farther out and around each time.</p>
+<p>(Bottom) Hurdler’s Exercise. Stretch over your straight leg without bobbing.</p>
+<p>in slow semicircles. Yes, that’s where the pain is, that’s where it</p>
+<p>feels uncomfortable, uncoordinated, and clumsy, but that’s where</p>
+<p>the benefit is, that’s where the progress is made, going a little</p>
+<p>farther than you’d like. Just do a couple here and then come back</p>
+<p>out of this position because you’re putting a lot of strain on your-</p>
+<p>self right now and all we’re trying to do is to begin to loosen you</p>
+<p>up a bit.</p>
+<p>7. Groin Stretch. Probably the most common leg-muscle injury</p>
+<p>is not to the hamstring or the quadriceps but to the groin muscle. People slip, stretch their legs out too far, and then pull it. This</p>
+<p>area is subject to enormous stress in running and is also probably</p>
+<p>the most neglected area when it comes to stretching. You don’t want a pulled groin muscle, and neither does your husband, wife,</p>
+<p>boyfriend, or girl friend.</p>
+<p>With your feet about a foot or so more than shoulder-width</p>
+<p>apart, squat down between your legs and tuck your rear end in. You should be flat-footed. Fit your elbows in the inside bend of your knees and push outward with your elbows. Hold for six</p>
+<p>8. Bridge. Staying in the squatting position, shift your weight</p>
+<p>all the way to the left, and then extend your right leg. Your legs</p>
+<p>should form a ninety-degree angle. You might find this tough</p>
+<p>to do at first; you may be able to balance better if you put the</p>
+<p>heel of your foot directly under you. Now extend your arms out</p>
+<p>in front, fingers lightly touching the ground, and rotate your body</p>
+<p>in a semicircular arc, putting your chest over your straight leg,</p>
+<p>then over your bent leg. Each time try to reach a little farther out</p>
+<p>and around. Work on maintaining your balance; it will improve</p>
+<p>with practice. Do four each way. Then shift your weight across,</p>
+<p>staying as low as possible, and reverse legs, doing the exercise</p>
+<p>with your left leg extended. Work on each leg two times.</p>
+<p>9. Hurdler’s Exercise. If you only have time to do one exercise,</p>
+<p>this should be the one. It’s just about the best stretching exercise</p>
+<p>ever devised by man for your legs because it works on your whole leg—top, bottom, front, and back.</p>
+<p>(Top) When you can “eat the grass,” you’re really loose. (Center) Try to</p>
+<p>put your chest on your bent leg, but don’t expect to come close at first. (Bottom) Lie straight back to stretch your quadriceps.</p>
+<p>Use a towel or a mat if you’re warming up on a hard surface.</p>
+<p>Sit down. Extend your right leg and bend your left leg beside</p>
+<p>you, forming a ninety-degree angle with your legs. Reach down</p>
+<p>over your right leg, stretching over as far as possible, and hold at</p>
+<p>maximum stretch without bobbing for a count of six. Then come</p>
+<p>up. Do this four times, trying to stretch a little farther each time.</p>
+<p>A fraction of an inch is good progress. Eventually you&#x27;ll be able</p>
+<p>to “kiss your knee,” believe it or not. If you can already do that,</p>
+<p>reach out a little farther with your hands and try putting your head to the ground along the inside of your knee. Between each</p>
+<p>repetition, you may want to bounce your leg up and down a few</p>
+<p>times to relax it, but remember not to bounce your body over your leg while you’re stretching it.</p>
+<p>Now extend your arms straight out between your legs and</p>
+<p>stretch down as far between them as you possibly can. Hold for</p>
+<p>six counts, and come up. Do this four times. The idea is to make progress toward putting your face on the ground. You&#x27;ll probably</p>
+<p>only get down three or four inches in that direction at first. When</p>
+<p>you can put your face on the ground and “eat the grass” under</p>
+<p>you, then you are loose. Believe me, when I started out with Tan-</p>
+<p>ner, Gorman, Moore, Ashe, Smith, Andrews, and the rest of those</p>
+<p>guys, they were the absolute worst at this. Some of them had never stretched a leg muscle before in their lives. Guys who couldn’t move two inches toward the ground at first are all “eating</p>
+<p>the grass” now, not because they’re professional tennis players</p>
+<p>but because they stretch out regularly now. So don’t be disap-</p>
+<p>pointed by your lack of progress early on, because it never happens immediately. I can still remember the feeling of achievement</p>
+<p>I had when I finally got down there.</p>
+<p>Now stretch over the bent left leg, trying to put your chest on your left leg. Absolutely no one does well in this position at first, because the ligament involved here is a very short one. Go slowly,</p>
+<p>holding for six counts. Do this four times.</p>
+<p>Now, keeping your legs right where they are and maintaining</p>
+<p>the ninety-degree angle between them, lie straight back. You may have to raise your bent knee to get your back down, but try to lower the knee again. You’re stretching your quadriceps, the</p>
+<p>muscle on top of the thigh. This is a very important stretch be-</p>
+<p>cause it’s the only one in the series for the quad. Stay down for</p>
+<p>a count of six.</p>
+<p>Now sit up, reverse legs, and repeat the entire exercise, stretch-</p>
+<p>ing over the top of the left leg, into the middle, and over the bent</p>
+<p>right leg, four times each, holding for six counts. Then lie straight</p>
+<p>back in line with your bent leg for six counts. Do this exercise</p>
+<p>slowly, and try to make a little progress with each repetition.</p>
+<p>10. Jump-ups. Finally, an easy one: do twenty-five, jumping up</p>
+<p>as high as you can by springing off your toes.</p>
+<p>Now that you’ve loosened up all your tennis muscles, you’re ready</p>
+<p>to get ready. The correct ready position is as basic to moving</p>
+<p>efficiently on the tennis court as the proper grip is to hitting a good forehand. Getting ready properly will help you to concen-</p>
+<p>trate on the game from the body upward: you will find that in</p>
+<p>readying yourself on the court, you will also be readying yourself</p>
+<p>in your mind; your mind and your body will be on their way to</p>
+<p>working in conjunction with each other.</p>
+<p>Get down in what you think is a good ready position, the one</p>
+<p>your local pro or whoever taught you this game showed you. Take a look at yourself. How far apart are your feet? Where are your toes pointed? Where is your weight centered—in front of</p>
+<p>you, behind you, directly over your feet? Are you low to the ground or high?</p>
+<p>The quickest, most prepared, and most solid way to wait for</p>
+<p>the ball is to get your weight Jow and forward. Here’s why: your</p>
+<p>center of gravity, located in the vicinity of your navel, is the</p>
+<p>point around which your weight is equally distributed. The lower</p>
+<p>your center of gravity and the wider your base of support—your feet—the more stable you&#x27;ll be. Your weight should be forward</p>
+<p>because forward is where you&#x27;re going; if your center of gravity</p>
+<p>isn’t out in front, you might as well be glued to the ground.</p>
+<p>A good ready position should make you feel both comfortable</p>
+<p>and aggressive. First of all, stand with your feet about shoulderwidth apart, or maybe even a little wider, your weight equally balanced on both feet. Bend down and put your hands on your</p>
+<p>knees as if you were getting ready to look through a keyhole. Make sure your knees are comfortably flexed, not locked behind</p>
+<p>you. Right now you&#x27;re in a fairly good ready position, but not</p>
+<p>the best, because your weight and your balance are not yet work-</p>
+<p>ing for you at maximum efficiency. If you shift your weight forward just a hair, you&#x27;ll be in perfect position. Shift forward enough</p>
+<p>so that there’s a definite weight transfer off your heels and onto</p>
+<p>the balls of your feet, but don’t lift your heels four inches off the ground—no more than an inch at the most. Maintain an equal</p>
+<p>profile, by which I mean keep your whole body in line both ver-</p>
+<p>tically and horizontally. Keep your head up, and don’t tilt it to</p>
+<p>Feet shoulder-width apart, knees flexed, put your hands on your knees . . . then shift your weight forward slightly.</p>
+<p>either side, or raise one shoulder, or one hip. Like an airplane</p>
+<p>flying, slight resistance and superfluous movements will affect your</p>
+<p>body’s motion a great deal. The idea is to be ready to go in any</p>
+<p>direction in a flash, and if you’ve already committed even a small portion of your weight in one direction or another before you know where you want to go, you’re starting off with one strike</p>
+<p>against you. In fact you should be centered, or squared away, all</p>
+<p>the time—in ready position, while you’re moving, when you stop.</p>
+<p>This will help you avoid getting wrong-footed by making it a lot</p>
+<p>easier for you to stay balanced and to go back to where you came from if necessary.</p>
+<p>Now pick up your racket and feel the position that you’re in</p>
+<p>by shifting your weight back and forth from your heels onto the</p>
+<p>balls of your feet, like a tiger that’s crouching low, getting ready</p>
+<p>to spring. This is the position that will allow you to. move left, move right, move forward, get back, jump up in the air, and do</p>
+<p>anything you have to do on the court very quickly.</p>
+<p>Perfect ready position: alert, weight forward, equal profile, ready to spring.</p>
+<p>I can describe the correct position, but you have to feel it. The most important thing is to get your weight forward by getting off</p>
+<p>your heels; but you don’t have to be flat-footed or stiff-kneed to</p>
+<p>be unready. You can be on the balls of your feet and still be wrong,</p>
+<p>with your weight slumped back in your seat—just “posing.” Or</p>
+<p>you can be too far forward, which is just as bad as being too far</p>
+<p>backward: you&#x27;d be off-balance, and besides, you can’t go back</p>
+<p>quickly if your weight is way out in front. You also don’t want to</p>
+<p>be so low that you’d cramp your shots, or so wide that you can’t move. You know you&#x27;re in good ready position if you feel you</p>
+<p>can take off like a shot in any direction.</p>
+<p>This is the position you should immediately and automatically</p>
+<p>recover into after every shot you hit until you’ve won the point</p>
+<p>(might as well think positively) and it’s time to collect the balls.</p>
+<p>Hit, get back in ready position, and then return into the court by</p>
+<p>skipping sideways—shuffling—in your ready/recovery position,</p>
+<p>staying on your toes and squared away. Because you’re not com-</p>
+<p>mitting your balance, as you are when you run, shuffling is the</p>
+<p>best way to regain ground after you’ve hit and you’re waiting for</p>
+<p>your opponent’s next shot.</p>
+<p>Particularly when the game is getting aggressive, you’ve got</p>
+<p>to maintain this aggressive profile, low and forward, which will</p>
+<p>allow you the maximum opportunity to shift, run, hit, dart, stop,</p>
+<p>go, jump—in short, be completely mobile. Anything less than the</p>
+<p>position you&#x27;re in right now is not desirable when you&#x27;re trying</p>
+<p>to control the inner balls—the ones within your range—and get</p>
+<p>to those outer balls—the ones you have to run for—that are giv-</p>
+<p>ing you problems. If you’re having difficulty reaching outer balls,</p>
+<p>you can be pretty sure that one root of the problem is the position</p>
+<p>that you left from, which probably wasn’t aggressive enough to</p>
+<p>let you get started quickly.</p>
+<p>As soon as you start playing in this good ready position, you</p>
+<p>will begin to realize the extent to which tennis is a game of posi-</p>
+<p>tion and movement as well as a game of strokes. It’s absolutely</p>
+<p>the best all-purpose position in which to wait for any ball, includ-</p>
+<p>ing a serve. It will enable you to keep your balance if you have</p>
+<p>to return a hard-hit serve, or to get a quick, controlled start if</p>
+<p>Incorrect ready position: flat-footed and weight committed to one side.</p>
+<p>you have to return a serve that spins away. It’s the position that</p>
+<p>will allow you to get to the net quickly and to cover it effectively</p>
+<p>once you’re up there. Wherever you are on the court, if you’re not</p>
+<p>hitting or running or setting up for your shot, you should be in</p>
+<p>this ready/recovery/return-of-serve position, with certain varia-</p>
+<p>tions for different situations, which I&#x27;ll get into next. If your back,</p>
+<p>stomach, and leg muscles aren’t in shape, you’re going to get too</p>
+<p>fatigued to maintain this position throughout a long match; but</p>
+<p>if you do the workouts in Chapter 9, you should have no problems</p>
+<p>with it at all.</p>
+<p>There are basically three types of tennis players: the back-court</p>
+<p>player, the serve-and-volleyer, and the all-court player, who is at</p>
+<p>home back on the baseline or up at the net, depending on the situation—his opponent’s game, the court surface, the score, and</p>
+<p>so forth. Of course, whether you prefer to take the offensive by</p>
+<p>attacking the net or to stand on the baseline and attempt to out-</p>
+<p>steady your opponent is a matter of personality as well as of your</p>
+<p>particular talents and skills on the court. But whatever your style</p>
+<p>of game, you have to gear it to the aggressiveness of the match</p>
+<p>you&#x27;re playing—the more aggressive the tennis, the quicker and more ready you have to be.</p>
+<p>If you’re playing on the baseline and everything’s going your way—your opponent is on the defensive, running all over the</p>
+<p>court, hitting right to you—then you can relax a little, recovering</p>
+<p>a bit taller, say, than into your standard ready position. You should always maintain a forward profile, but you can come up</p>
+<p>slightly from the waist. However, be prepared, because anything</p>
+<p>might happen. All of a sudden, your opponent might get a chance</p>
+<p>to knock the cover off the ball, or to surprise you with a little</p>
+<p>dink shot. You’d never make it if you were standing pat, on your</p>
+<p>heels. Or he could be hitting you a series of easy cross-court shots</p>
+<p>and then hit two in a row to the same side, catching you going</p>
+<p>the wrong way. It’s one of the oldest and most effective patterns in</p>
+<p>tennis. Don’t let yourself be lulled into complacency by a long</p>
+<p>baseline rally. You’ve got to be ready for anything.</p>
+<p>On the other hand, if you’re on the defensive, with your oppo-</p>
+<p>nent running you from side to side and up and back, that’s war,</p>
+<p>so stay down. The more aggressive the game is, the lower your</p>
+<p>profile has got to be, for extra stability and power.</p>
+<p>Most of the time you’re either going to be on the baseline or</p>
+<p>up at the net, except for approach shots and half-volleys. Obvi-</p>
+<p>ously, the closer you come to the net, the quicker the action is, because the ball has less time and distance to travel before it</p>
+<p>reaches you. This means you have to be in a more intense ready</p>
+<p>position as you come in. Make sure you set up before your oppo-</p>
+<p>nent hits the ball; when you go after it, you want to feel like a</p>
+<p>leopard pouncing on a deer from up in a tree.</p>
+<p>Being up at net is the quickest, most aggressive part of any</p>
+<p>tennis match because there’s so little time between the moment</p>
+<p>the ball is hit and when it gets to you. There’s no time to fool around at net. Once you’re up there you have exactly half the time</p>
+<p>to prepare that you do on the baseline, so you have to be on your</p>
+<p>toes and twice as ready, whether you’re playing singles or doubles;</p>
+<p>the net is where it is in doubles. You must be in position to re-</p>
+<p>spond with catlike quickness and no hesitation whatsoever. The</p>
+<p>ball will be coming in hard and fast, so your timing, coordination,</p>
+<p>and alertness must be as perfect as you can make them. Your</p>
+<p>reactions have to be reflexive: the instant you see the ball hit, you</p>
+<p>respond. It comes in much harder at net than at the baseline, since</p>
+<p>it loses a lot of its pace after it bounces, so you have to be very</p>
+<p>stable. If you’re really getting blasted, lower your center of gravity</p>
+<p>and widen your base—never getting too wide to move, though.</p>
+<p>Staying low at net will also help you to “sight” the ball better—</p>
+<p>will give you a better perspective on it—and keep you alert for</p>
+<p>net cords and dink shots. People often get in such high gear up</p>
+<p>at net that they flub the soft stuff.</p>
+<p>A lot of professional players move back and forth, doing a bouncing little dance, when they’re at net. That’s nerves—getting</p>
+<p>ready to unleash, spring, and react one way or the other. You never see good players guessing wrong when it comes to this con-</p>
+<p>stant motion at net, because there’s never any commission of balance; they always maintain their equal profiles. It’s not to get</p>
+<p>a head start on the ball, or to try to guess where it’s going, but</p>
+<p>merely to keep their feet vibrant and alive, ready to go, then— Boom!—they’re on their way. The alternative is standing pat, dead</p>
+<p>in the ground, just there, theoretically in great position but not</p>
+<p>really ready for the shot—aware of the ball and the racket but not</p>
+<p>of the feet.</p>
+<p>When you&#x27;re at net, remember to maintain your ready position</p>
+<p>until the point is over. In other words, if you have to hit a low</p>
+<p>volley, maintain your aggressive profile by bending mainly at the</p>
+<p>knees—don’t just drop your head or the head of your racket—and come back up afterward. If you have to raise up to hit a high</p>
+<p>volley, remember to recover low and forward again.</p>
+<p>Now that you have a good ready/recovery/return-of-serve position—weight low and in front—I want you to get in position</p>
+<p>and to move your feet in place as quickly as you can for eight</p>
+<p>seconds. Running in place is usually done with high knees, but</p>
+<p>in this quick-step drill only lift your feet four or five inches off</p>
+<p>the ground—just pick each one up and put it down as quickly</p>
+<p>as possible. Keep your arms tucked into your body and land on</p>
+<p>the balls of your feet. Keep count by tens because (I hope) you&#x27;ll</p>
+<p>be going too fast to count each step. When twenty or thirty people are doing this drill all at once in my clinic, it sounds something like an office full of typists. You should be doing about</p>
+<p>forty-five per eight seconds at first; try to work up to seventy to</p>
+<p>a hundred eventually.</p>
+<p>Now get down even lower and try the drill again. You should</p>
+<p>be even quicker this time. Notice the position your body is in</p>
+<p>in order for your feet to move quickly. You&#x27;ll never have to run</p>
+<p>this way when you play; I mean, nobody takes four-inch strides</p>
+<p>on the tennis court. I just want you to realize exactly how quickly your feet can move when they put their minds to it. A lot of people who have trouble covering the court when they play think</p>
+<p>its because they have slow, heavy, leaden feet. Actually, the human body is designed better for speed then it is for strength. The reason most “slow” people clunk around on the court is that</p>
+<p>they are totally untrained in the techniques of efficient motion.</p>
+<p>If you try this experiment, I&#x27;ll show you what I mean. Do the same Eight-Second Drill again, only this time stand up tall and</p>
+<p>let your heels hit the ground first as you run in place. You&#x27;ll probably notice that your feet move much more slowly this way —a basic positional change and your score most likely decreases</p>
+<p>by something like a full quarter. Yet this is the way so many people play tennis—up tall and on their heels.</p>
+<p>Lots of people run heel-toe, heel-toe, just like they walk. This is</p>
+<p>absolutely wrong; you simply cannot run quickly on your heels, as</p>
+<p>you just saw. You want to lead with your toes, which means you have to run with forward lean. Try running on your toes with your weight behind you; you&#x27;ll have a tough time. And vice</p>
+<p>versa: if your weight is in front of you, you can’t run on your</p>
+<p>heels; your toes will lead automatically. If you’re hitting on your</p>
+<p>heels when you run, either your weight is too far back, or you’re taking too long a stride. But you’re in good company: I used to catch Ashe landing on his heels all the time, and Tanner used</p>
+<p>to run on his whole foot, as though his feet were made of lead.</p>
+<p>Actually, when you run, you should land on the balls of your feet—on the front third. What happens is that after you land, you roll back onto your whole foot, and then you roll forward</p>
+<p>again onto the front of your foot, to push off. This all happens</p>
+<p>too quickly for you to be aware of it when you’re running, but</p>
+<p>if you try it in slow motion you&#x27;ll see what I mean.</p>
+<p>When I show this drill to people who have been running a</p>
+<p>certain way all their lives, sometimes someone complains, “How</p>
+<p>can you expect me to relearn to run at this stage of the game?”</p>
+<p>Let me explain that I’m not trying to redesign your entire run-</p>
+<p>ning style, just to polish it up. You should definitely work with what you’ve got. Just as everyone walks differently because of different builds, weight distributions, leg lengths, and so on, everyone runs differently, too. Only make the changes that are neces-</p>
+<p>sary in your running style, because running is a natural activity. You don’t want to interfere with your own rhythm and coordina-</p>
+<p>tion and end up with paralysis by analysis.</p>
+<p>The next time you’re playing tennis and having trouble getting</p>
+<p>to your opponent’s shots, take a look at how you&#x27;re running; you&#x27;re probably up tall—what Tanner calls “spectating”—and</p>
+</section>
+<section class="chapter" id="sec-2">
+<h2>Part 2  ·  pp. 48–77</h2>
+<p>landing on your heels. Get some forward lean and a toe lead, and</p>
+<p>see how many more of those balls you&#x27;ll reach. You&#x27;ll turn some</p>
+<p>of your opponent’s good shots into your great gets.</p>
+<p>The Eight-Second Drill shows you just how quickly you can move</p>
+<p>your feet, but running in place won’t get you very far on the</p>
+<p>tennis court. The foundation of efficient running is a good stride</p>
+<p>pattern, the maximum-length stride you can take on a court, whatever surface it may be, and still maintain a toe lead. If your</p>
+<p>strides are too short, you’ll take choppy little steps that won’t</p>
+<p>get you anywhere. A stride that’s too long will land you on your</p>
+<p>heels with every step, which, as you just learned, is a very slow way to move on the court. A too-long stride also causes another</p>
+<p>common error, which is to shorten up to a mincing little dance</p>
+<p>as you get close to the ball.</p>
+<p>The fifteen-year-old girl who plays number one on her school</p>
+<p>tennis team has asthma and used to get winded quickly when</p>
+<p>she played tennis. Learning to run with a stride that’s neither too</p>
+<p>long nor too short has made her more efficient; she can accom-</p>
+<p>plish more with less effort and no longer gets all tired out when</p>
+<p>she plays. Another woman who took my clinic, who used to run</p>
+<p>flat-footed, had a weak left ankle that doesn’t give her trouble anymore. She believes learning to run properly has helped strengthen it. But you don’t have to have medical problems to benefit from a good stride pattern.</p>
+<p>It’s not just amateurs who run incorrectly. Charles Pasarell</p>
+<p>used to start off with one great huge step until we worked on his</p>
+<p>stride pattern. He and some of the other guys have discovered</p>
+<p>that shortening their strides helps them get a quicker start, be</p>
+<p>better balanced when they make contact with the ball, and</p>
+<p>recover more quickly. Learning a good stride pattern can do as</p>
+<p>much for your tennis game as learning to volley effectively.</p>
+<p>Different court surfaces require different stride patterns. Clay,</p>
+<p>for example, which is soft and doesn’t offer very good footing,</p>
+<p>takes a slightly shorter stride than a hard, fast surface like asphalt</p>
+<p>or cement. More on that later. Right now we&#x27;ll assume you’re</p>
+<p>playing on some type of hard, fast court. To figure out your</p>
+<p>stride pattern, you&#x27;ll need a tennis court, five markers (tennis</p>
+<p>balls will do but adhesive tape would be better), a tape measure,</p>
+<p>and a friend.</p>
+<p>1. Walk off eight normal steps from the baseline toward the net</p>
+<p>and mark the spot with a ball or a piece of tape. Walk it again—</p>
+<p>eight normal steps as though you were walking down the street.</p>
+<p>If the distance changes, adjust the marker. Walk it three times</p>
+<p>before making your final mark. Then, to add an extra nine or</p>
+<p>ten inches, place your racket head directly in front of your mark,</p>
+<p>parallel to the net, and mark the spot. Clear away the other</p>
+<p>marks.</p>
+<p>2. Starting with your toes exactly on the baseline, run from the</p>
+<p>baseline to your mark, trying to take the distance in exactly five</p>
+<p>strides. But don’t take two long and then three short steps just</p>
+<p>to hit the mark. You’re trying to measure your stride pattern,</p>
+<p>and if you’re overshooting the mark, your strides are too long,</p>
+<p>so shorten them up stride by stride. Your five strides shouldn’t be</p>
+<p>equal in length, though, because your strides lengthen as you</p>
+<p>pick up speed. For this reason, run from the baseline to the mark,</p>
+<p>then walk back to the baseline and try again, instead of trying to work from both ends.</p>
+<p>It may take you as many as ten run-throughs to get it perfect:</p>
+<p>five natural, smooth, toe-leading strides, landing right on the</p>
+<p>(Above) Have your friend mark off each stride at the point where your toe</p>
+<p>hits the ground. (Below) Run through your stride pattern as many times</p>
+<p>as you need to get it perfect.</p>
+<p>money without having to adjust one way or the other. Practice</p>
+<p>it until you can hit the mark every time. Run through it slowly,</p>
+<p>just as you hit your strokes slowly when you were learning to</p>
+<p>groove them. Don’t point your toes out when you run, making</p>
+<p>chicken tracks, and don’t run pigeon-toed, pointing them in. You</p>
+<p>should run like an Indian walks, toes pointed straight ahead.</p>
+<p>3. When you can hit the spot every time, have your friend mark</p>
+<p>off each of your strides at the point where your toe hits the ground. It will probably take one complete run-through to mark</p>
+<p>off each stride. Don’t just run two steps, now, and cut off, because</p>
+<p>people have a tendency to take really short strides when they do</p>
+<p>that. Run the whole five steps each time and have your friend mark only one at a time.</p>
+<p>That’s your stride pattern. Between the first two strides, the</p>
+<p>increase might be as much as a foot; between the other three, a</p>
+<p>few inches each. Measure the first two strides with the tape measure because they’re the most important; it’s essential that</p>
+<p>your stride pattern be perfect when you&#x27;re getting your body in</p>
+<p>motion. Run through your whole stride pattern fifteen, twenty,</p>
+<p>even thirty times, until you get the first two steps exactly right</p>
+<p>every single time, so you know precisely how far your feet have</p>
+<p>to move from the first step to the second step.</p>
+<p>Just as you groove your strokes before you play a match, take</p>
+<p>a minute or two to groove your stride pattern on the court, par-</p>
+<p>ticularly when you’re in a tournament or any other situation when</p>
+<p>you want to play your best. Write the measurements of the first two</p>
+<p>steps on your racket cover—39 44; or 48 56—-whatever it hap-</p>
+<p>pens to be. Then, before an important match, mark off your first</p>
+<p>two strides with a tape measure and run through them several</p>
+<p>times, so that everything will be grooved in—your feet, your</p>
+<p>strokes, and, I hope, your head.</p>
+<p>A lot of players lose matches by playing all surfaces the same</p>
+<p>way. If you’re used to playing on a fast court like asphalt or</p>
+<p>grass, you’ve probably developed a serve-and-volley game. If you</p>
+<p>play on a slow court like clay or Har-tru, you probably play a</p>
+<p>baseline game. Even most pros have a favorite surface, generally</p>
+<p>the one they grew up on. There are pros who usually go far in tournaments they play on fast courts and consistently get put out</p>
+<p>in the first or second round on clay.</p>
+<p>The speed of a court refers to how the ball reacts when it comes off the surface. On clay, where the ball takes a high, slow,</p>
+<p>uniform bounce, you have almost a whole extra second to get</p>
+<p>to it than you do on grass, which means that on clay it’s possible</p>
+<p>to run down practically everything, even shots that would be</p>
+<p>outright winners on grass. Court surfaces also vary in how much traction they give you, how slippery they are, and whether</p>
+<p>they “give” under your feet. You can’t move exactly the same</p>
+<p>way on different surfaces. Making some adjustments in your</p>
+<p>stride pattern and your court posture will help you stay balanced and steady on whatever surface you’re playing, so the court</p>
+<p>doesn’t become your opponent and you get to your shots in time</p>
+<p>and under control.</p>
+<p>ay.</p>
+<p>Grass is one of the fastest surfaces. The ball takes a low bounce</p>
+<p>on grass—and if the grass isn’t in top shape, it frequently takes a</p>
+<p>bad bounce—and then it just dies. If it’s hit hard, the ball skids. Grass is the hardest surface for someone with a slow-court game</p>
+<p>to move on effectively. What would be an easy baseline rally on</p>
+<p>clay is a much faster, harder situation on grass, partly because</p>
+<p>players tend to hit bigger on fast courts. Because grass is soft and</p>
+<p>gives, it’s easy on your legs. But it’s also slippery, and even more</p>
+<p>so after rain or watering. Once you get committed one way or the</p>
+<p>other, it’s extremely hard to change direction—you’re moving</p>
+<p>aggressively and there’s very little friction to help you stop, so</p>
+<p>you have to be especially conscious of stopping and setting up</p>
+<p>early. You&#x27;ll have a lot of problems on grass if you’re not in</p>
+<p>perfect balance and if your stride pattern isn’t right on the money.</p>
+<p>All this means that grass, like any fast surface, requires an</p>
+<p>active participation between you and your profile. You should</p>
+<p>stay lower than usual and shorten your stride pattern slightly. The formula for a hard court—eight walking steps plus one racket</p>
+<p>head divided by five running steps—should be modified to eight walking steps even divided by five running steps.</p>
+<p>Cement and asphalt are also usually very fast courts with no</p>
+<p>give whatsoever, which makes them easy surfaces to run on: you</p>
+<p>can really take off. People who have good net games usually love</p>
+<p>to play on hard courts because they can come right in and nail</p>
+<p>you. You need a fast-game profile for a hard court: keep low and as you come up to net, be ready to be ready. The stride</p>
+<p>pattern for cement and asphalt is the one you learned on page 36—eight plus one divided by five.</p>
+<p>There are so many different synthetic surfaces now that it’s impossible to generalize much about them, but as a rule, they are slower than grass and faster than clay, and usually fast enough</p>
+<p>to favor the attacker. Most of these courts give you good traction</p>
+<p>and firm footing, so stopping and changing direction quickly</p>
+<p>are no problem if you keep your balance. Your stride pattern</p>
+<p>should be eight plus one divided by five, just as on asphalt and</p>
+<p>cement.</p>
+<p>On clay, you don’t want as aggressive a profile or as long a</p>
+<p>stride as on the other surfaces. You should play a hair taller on</p>
+<p>clay, because if you’re too low and too far forward, your feet</p>
+<p>will just spin right out, like tires with bald treads. The stride-</p>
+<p>pattern formula for clay is eight walking steps minus one racket</p>
+<p>head divided by five running steps. The few-inches-per-stride</p>
+<p>difference will enable you to keep your footing and to cut down</p>
+<p>on excess sliding.</p>
+<p>Ashe says that playing on clay feels like playing on roller</p>
+<p>skates, but to move well on clay, you have to slide. Sliding into</p>
+<p>the ball will keep you from overrunning it, will get you to the</p>
+<p>ball on the correct foot, and will help you recover and change</p>
+<p>direction more quickly for the next ball. If you run hard, you&#x27;ll</p>
+<p>slide naturally. Most clay-court players slide two or three feet into</p>
+<p>their shots, some pros as much as six feet. To slide on long, hard</p>
+<p>runs, keep your back foot steady when you’re coming into the ball</p>
+<p>and slide your front foot into position. Remember to stay squared away for good balance.</p>
+<p>Har-tru, which is a crushed-rock surface, plays a lot like clay</p>
+<p>but a bit faster, and requires the same profile and stride pattern.</p>
+<p>You&#x27;ll slide on Har-tru just like on clay. When either clay or</p>
+<p>Har-tru has just been watered or rained on, it will play slower and softer than when it’s dry.</p>
+<p>First let’s distinguish between two positions of the ball: the inner</p>
+<p>ball, which is one that you can reach comfortably without trying</p>
+<p>too hard, and the outer ball, which is one you really have to run</p>
+<p>for. There are also all those balls that land somewhere in between</p>
+<p>these two extremes; in fact, these are probably the majority of</p>
+<p>balls you&#x27;ll come up against in a match.</p>
+<p>The easiest ball to hit is the one that comes right to you. This doesn’t happen very many times in a match, and when it does, probably you can almost always hit a great shot back. Any ball</p>
+<p>that you can get to and set up for early enough to hit as if it had come right to you, giving you the opportunity to make a con-</p>
+<p>trolled, offensive shot, is an inner ball. It’s no set distance away; everybody has a particular range in which he’s comfortable and</p>
+<p>can move well. Whether a ball is within your range also depends</p>
+<p>on its speed, its spin, and the type of court surface you’re playing</p>
+<p>on.</p>
+<p>Inner balls are the ones you can’t afford to louse up. There is never any excuse for hitting an inner ball on the run. It’s your bread-and-butter shot because it gives you your best opportunity</p>
+<p>to hit the best shot you know how to make. But a lot of players</p>
+<p>Footwork into the Inner and Outer Ball 43</p>
+<p>get lazy on inner balls, saying to themselves, “Well, it’s a close</p>
+<p>ball, easy to reach, so I&#x27;ll just lope over there and hit it,” instead</p>
+<p>of getting there, setting up as early as possible, and going for a</p>
+<p>big shot. Also, theyll often play inner balls too close to their</p>
+<p>bodies instead of moving a racket-length away. It’s when the ball</p>
+<p>lands within your range that you’re most likely to play a lazy</p>
+<p>shot.</p>
+<p>The critical phase of the footwork into the inner ball is the</p>
+<p>final adjustments you make to set yourself up perfectly for your</p>
+<p>shot. Get quickly to the approximately correct position, moving</p>
+<p>according to the flight of the ball, using a burst of speed if</p>
+<p>necessary. Get side-on to the net, and as the ball bounces, make</p>
+<p>the final adjustments that will allow you to control your shot completely—whatever weight shifts you need, or little steps back</p>
+<p>or in, up or down necessary to hit the ball at your most com-</p>
+<p>fortable level, probably waist-high. The most important thing is</p>
+<p>to end up with your back foot, the one nearest the fence, planted,</p>
+<p>Footwork, forehand inner ball: back foot planted . . . uncoil and shift your weight forward as you attack the ball in front of you.</p>
+<p>Footwork, backhand inner ball: back foot planted . . . uncoil and shift forward as you attack the ball in front of you.</p>
+<p>because it’s transferring your weight from your back foot to your</p>
+<p>front foot, the one nearest the net, that provides the power source</p>
+<p>for your stroke. As you hit, you uncoil and shift your weight forward onto your front foot, and attack the ball in front of you.</p>
+<p>The farther away the ball is, the less time you’re going to have</p>
+<p>to set up perfectly for it. For balls that land in a category somewhere between inner balls and outer balls, you probably won&#x27;t</p>
+<p>have time to make those final adjustments, but if you hustle, you</p>
+<p>usually will have time to stop, plant your back foot, and step</p>
+<p>into the ball.</p>
+<p>THE OUTER BALL: GETTING A QUICK START</p>
+<p>You&#x27;re standing in ready position at the center of the baseline. Your opponent hits the ball wide to your forehand. You’ve got a</p>
+<p>Footwork into the Inner and Outer Ball 45</p>
+<p>lot of ground to cover. You get your racket back and start run-</p>
+<p>ning, right? Wrong.</p>
+<p>When there are five, six, seven, or even more running steps between you and the ball, there’s absolutely no reason in the world to get your racket back on the first step. Not only is it unnecessary, it’s a hindrance. A racket extended behind you when you&#x27;re trying to get started to run down a long ball is like trying</p>
+<p>to beat out a bunt with the bat in your hand. The two activities —getting to the ball and hitting it—have to be separated. Re-</p>
+<p>member that this applies only to the outside ball, the one that</p>
+<p>requires a lot of running. The first thing you’ve got to do is to overcome the inertia of being stationary and get your body in</p>
+<p>motion. After the first two steps, when you’ve established your momentum, then you&#x27;re ready to start thinking about hitting the</p>
+<p>ball.</p>
+<p>The key to reaching that wide forehand on time is pushing off —getting a quick start. Whereas the critical part of inner-ball footwork is at the end, the critical part of outer-ball footwork is</p>
+<p>at the beginning. As Tom Gorman notes, saving half or even just</p>
+<p>a tenth of a second here can often mean the difference between a defensive and an offensive shot.</p>
+<p>The reason you want your weight forward when you&#x27;re in ready position is that the closer your center of gravity is to the</p>
+<p>front edge of your base of support, the more quickly you can get</p>
+<p>started. What actually happens when you run is that first your body moves out in front of your feet, which puts you off-balance.</p>
+<p>Then you bring your foot forward to regain your balance, then you move forward out in front of your feet again, and so on. Running is moving forward by continually losing and recovering your balance.</p>
+<p>Let’s get back to that wide forehand. You’re in good ready</p>
+<p>position on the baseline—low, forward, and on your toes. As soon as you see that your opponent has hit to your forehand, the</p>
+<p>first thing you have to do is pivot by turning your whole body</p>
+<p>in the direction in which you’re going, dropping your weight lower and farther forward, and as you&#x27;re turning, push off. The</p>
+<p>Footwork into the Inner and Outer Ball 47</p>
+<p>pivot and push-off have to be simultaneous, not sequential.</p>
+<p>For these first two momentum-establishing steps, your legs</p>
+<p>have to feel like springs, with only your toes hitting the ground. The rhythm of these first two steps is very quick: ONE-TWO!—</p>
+<p>as fast as you can say it; not one, two. It’s TOE-TOE!—an ex-</p>
+<p>plosive motion, because the faster you can get started, the faster</p>
+<p>you&#x27;ll go.</p>
+<p>Your weight should be way out in front of yourself, and very low—low enough to get under a racket held at waist-height. This low start will get you off the mark a lot more quickly. That’s why sprinters start from a crouch.</p>
+<p>Try this with a friend: have him hold a racket level with your</p>
+<p>waist, and you take off under it—ONE-TWO! You’ve got to</p>
+<p>get under the racket, not by stooping but by getting your weight way out in front of your lead knee. You may think this position</p>
+<p>is too low and too far forward, but it’s not. It’s by far the most</p>
+<p>efficient way to get your weight working for you instead of against</p>
+<p>you, allowing it to pull you forward rather than having to muscle</p>
+<p>it through.</p>
+<p>To get your body in the right motion to chase down a ball, you</p>
+<p>have to realize that when your feet take a step, your arms should move in conjunction with them. Since they are attached to your</p>
+<p>body, you might as well let them help you get going.</p>
+<p>Most people don’t use their arms at all when they run on the</p>
+<p>tennis court, and many players who use them do so incorrectly,</p>
+<p>muscling them or sticking their elbows out as though they’re beat-</p>
+<p>ing a drum. The following method for learning the correct arm</p>
+<p>action will let you maintain your particular natural motion.</p>
+<p>Start by standing up straight, with your arms at your sides. Let them swing back and forth, approximately up to shoulder height. When one arm is at the top of its upswing, hold it up there and</p>
+<p>let the other one keep swinging a few more times. Now bend your swinging arm at the elbow, not locking it but keeping it firm</p>
+<p>Friend holds a racket level with your waist . . . and you take off under</p>
+<p>it, getting your weight way out in front of your lead knee.</p>
+<p>LL, » Wt hLlLEEE ae ) Sddaddla ; i (as 7 ¢ j ‘ 3 3 - . ’ |</p>
+<p>(Left) Hold one arm at the top of the upswing, keep swinging the other</p>
+<p>one. (Center) Bend your swinging arm at the elbow, firm but not locked.</p>
+<p>(Right) Let your arms swing together.</p>
+<p>enough so that it’s not floppy. Keep it swinging. Now bend the</p>
+<p>one hanging up in the air, and let your arms swing together. Now make it quicker: pump them ONE-TWO, ONE-TWO, as fast as</p>
+<p>you can say it and as fast as you can do it—yjust like the first two</p>
+<p>steps. You&#x27;ll notice that your elbows are not sticking out, nor are</p>
+<p>they tucked in too tight. They’re pumping right alongside your</p>
+<p>body. Notice also that your hands are going only as high as your</p>
+<p>chin in front of you and back only as far as your hips; no more,</p>
+<p>no less. The reason we have such an abbreviated arm swing is</p>
+<p>that you&#x27;ll be taking relatively short, quick steps. If you were</p>
+<p>going to take a long stride, you would need a long arm swing. But</p>
+<p>that’s track, not tennis. Tennis requires a somewhat shorter mo-</p>
+<p>tion in your arms as well as in your feet.</p>
+<p>You&#x27;ll have one hand free when you’re pumping on these first</p>
+<p>two steps. You don’t want it either clenched tight or floppy and</p>
+<p>loose. If you close it around three fingers of the other hand, and</p>
+<p>then take the fingers out, that’s a good position: relaxed and com-</p>
+<p>fortable and firm.</p>
+<p>Let your racket become an extension of your arm for these</p>
+<p>first two steps. Hold it firmly and pump your arm naturally as if</p>
+<p>the racket were not in your hand. Don’t move it around excessively because any resistance will affect your momentum a great deal.</p>
+<p>Your arm action should balance your legs. Since every action</p>
+<p>has an equal and opposite reaction, when your arm goes back,</p>
+<p>your body goes forward. When you run, start pumping with the</p>
+<p>arm opposite the lead leg. In other words, when the left leg leads,</p>
+<p>the right arm leads. I&#x27;ll get into exactly which leg leads when in</p>
+<p>a moment.</p>
+<p>This drill will help you develop the power and control you need</p>
+<p>to generate speed for the first two steps of a long run.</p>
+<p>Hold onto your racket. Put a towel around your waist and have</p>
+<p>a friend stand behind you holding the ends. As you pull forward—</p>
+<p>staying low, on your toes, and driving with your arms—have him</p>
+<p>pull back on you hard enough so that you can pull him into a walk,</p>
+<p>but not a run. Take short, quick, aggressive steps—it should take</p>
+<p>you about fifteen steps to get from the baseline to the service line —a distance of eighteen feet, if you’re doing this off the court.</p>
+<p>If your body is too high, you&#x27;ll just dance off your feet and get what I call the rainbow effect, a high arc that dissipates all your</p>
+<p>power. Drive your feet across with a forward, pushing action with</p>
+<p>each step, which will help you keep your weight down and in</p>
+<p>front. Try to maintain the ONE-TWO rhythm, keeping it smooth,</p>
+<p>solid, and aggressive.</p>
+<p>If you’re running hard but not moving forward, your partner</p>
+<p>is pulling back too hard and should ease up a bit. If you can</p>
+<p>pull him into a run, he’s not pulling back hard enough. He has</p>
+<p>to stay low, too, keeping a wide base, bending at the knees, and</p>
+<p>sitting back in his seat so he can provide enough resistance. You</p>
+<p>stay low and forward, he stays low and back. You&#x27;re both doing it</p>
+<p>Quick-Start Harness Drill: Stay low, on your toes, and pump with your arms.</p>
+<p>correctly if he’s pulling back hard, you’re running full-strength,</p>
+<p>and he’s only walking.</p>
+<p>After you’ve got it right, try it without the towel. Keep your ONE-TWO rhythm, but now try to maintain your stride pattern,</p>
+<p>too. You should shoot right out of there. Sometimes in my clinics</p>
+<p>I&#x27;ll whisper, “Let it go,” to the person holding the towel. The run-</p>
+<p>ner takes off like a shot. He also finds out very quickly that he’d</p>
+<p>fall flat on his face if he didn’t pump with his arms, which pull him right out of trouble. Remember that you drive with the arm</p>
+<p>opposite the driving leg.</p>
+<p>Work on getting better at it, stronger and looser. You&#x27;ll find</p>
+<p>that this drill will help you get started a lot more quickly if you</p>
+<p>do it correctly and practice it. It’s really just a matter of bringing</p>
+<p>out what you already have. Most players’ brains usually work</p>
+<p>faster than their feet, and the Harness Drill can improve the com-</p>
+<p>munication between them.</p>
+<p>After the first two explosive steps, you’re on your way. Once you&#x27;ve established your momentum, it will take care of itself if</p>
+<p>you maintain your toe lead, your forward lean, and your stride</p>
+<p>pattern. Now you can concentrate completely on preparing to hit</p>
+<p>the ball.</p>
+<p>On the third step, begin to rise up into your basic hitting posi-</p>
+<p>tion, and begin to get your racket back. You’re down really low</p>
+<p>for the first two steps; don’t pop up suddenly, or pull your racket back all at once, because that would throw your weight back and</p>
+<p>you&#x27;d be running on your heels. Rise up gradually, reacting to the</p>
+<p>level of the ball. Your racket should be all the way back one step</p>
+<p>before your last running step so you&#x27;ll have as much time as pos-</p>
+<p>sible to plant your feet, set up, and make a great get. If you end</p>
+<p>up having to hit the ball on the run despite having gotten a quick</p>
+<p>start and maintaining your stride pattern, well, you probably wouldn’t have reached it at all any other way.</p>
+<p>PIVOTING: RUNNING CROsSS-COURT—LEG LEADS</p>
+<p>Let’s get back to the question of which foot to lead with when</p>
+<p>you&#x27;re going after an outer ball. To change direction on the tennis</p>
+<p>court, you have to pivot, which simply means turn, and simulta-</p>
+<p>neously take your first step. It’s very important to take that first</p>
+<p>step with the correct foot, so that you can transfer your weight forward, keep a toe lead, and end up hitting off the correct foot.</p>
+<p>Leading with the wrong foot would prevent you from doing any-</p>
+<p>thing worthwhile with your weight, you’d get a slow start, and</p>
+<p>you&#x27;d most likely get to the ball on the wrong foot.</p>
+<p>When you’re running to the right, whether you’re right-handed</p>
+<p>or left-handed, your first step should be with your left foot. This is</p>
+<p>a left-leg lead. When you&#x27;re running to the left, your right leg</p>
+<p>leads. In other words, the leg closest to the net as you pivot is</p>
+<p>always the leg that leads in running down a long ball. And you</p>
+<p>start pumping with the opposite arm.</p>
+<p>When I teach the pivots in my clinics, it usually takes a while</p>
+<p>before everyone gets them right. Even though it’s just like walking —left arm, right leg, and vice versa—a lot of people have trouble</p>
+<p>(Above) Pivoting: left leg, right arm lead. (Below) Pivoting: right leg,</p>
+<p>left arm lead.</p>
+<p>with it at first, leading with the wrong arm, or the wrong leg, or</p>
+<p>both. So we walk through each pivot a few times first to get the</p>
+<p>feel and the correct arm-and-leg coordination. Then we do them</p>
+<p>over and over, from sideline to sideline, to simulate cross-court</p>
+<p>shots. By the time the people leave the clinic, everyone knows how to pivot, and no one has to waste any more time starting on</p>
+<p>the wrong foot.</p>
+<p>Stand in ready position on the deuce court sideline. Pretend</p>
+<p>you&#x27;ve just been drawn wide. You can expect the next shot to go</p>
+<p>cross-court. Pivot, drop, push off, and run cross-court to the ad</p>
+<p>court sideline, remembering your stride pattern, keeping your weight in front, and keeping a toe lead. From the deuce court</p>
+<p>sideline, it’s right leg, left arm; from the ad court sideline, left</p>
+<p>leg, right arm.</p>
+<p>Take the time to learn the pivots properly and practice them</p>
+<p>until they’re habitual, because when you&#x27;re playing in a match</p>
+<p>you&#x27;re concentrating on outsmarting your opponent and winning</p>
+<p>points; there’s no time to think about technique, either for strokes</p>
+<p>or footwork. I know one woman who practiced those leg leads</p>
+<p>until she could almost do them in her sleep. Then when she took</p>
+<p>a Latin dance class and the rest of the class had a lot of trouble</p>
+<p>with the steps that required similar footwork, for her it had become second nature. I also know a guy who, instead of jogging,</p>
+<p>runs through the pivots in the park before he plays, so he gets in some footwork practice as he’s warming up.</p>
+<p>The secret to not getting drop-shotted is going after the ball</p>
+<p>with no hesitation whatsoever. In that split second when you’re</p>
+<p>deciding Can I make it or can’t I?—-you’ve probably already blown it. Faith in your own quickness and getting into the habit</p>
+<p>of reacting immediately to every ball will get you to shots you</p>
+<p>never thought you could reach.</p>
+<p>Several years ago, when I was working out with a group of</p>
+<p>tennis professionals in Puerto Rico, we clocked drop shots to</p>
+<p>see how long they took to go over the net, bounce, and go out of</p>
+<p>Footwork into the Inner and Outer Ball 55</p>
+<p>play. The average drop shot took 1.8 seconds on clay. It should</p>
+<p>take you between 1 and 1.5 seconds to run from the baseline</p>
+<p>to the net if you can get off the mark quickly and run halfway decently—which gives you time to spare. For the pros,</p>
+<p>this was a real revelation; I convinced them that there was no drop shot they should miss. South African player Ray Moore</p>
+<p>told me, “Now every time a guy drop-shots me, I always go flat</p>
+<p>out for it. I wouldn’t say that I haven’t missed one since then, but</p>
+<p>at least I have the confidence to try for it.” The woman who prac-</p>
+<p>ticed her pivots so diligently told me that her tennis friends used</p>
+<p>to say, “All we have to do to win the point is drop-shot her.” Though she had the strokes, she couldn’t get to the ball; she would just say “Good shot” from the baseline instead of running</p>
+<p>it down. Once she had learned how to react automatically and</p>
+<p>get off on the right foot, she wasn’t a victim anymore. She just hadn’t realized before that she could move so quickly. I’ve no-</p>
+<p>ticed that, in general, women find moving forward more difficult</p>
+<p>than moving to the sides, so this is something they particularly should work on.</p>
+<p>To move cross-court, you have to change direction by pivot-</p>
+<p>ing. But to get to a drop shot from the baseline, there’s no need</p>
+<p>to pivot, since you’re already facing the direction in which you have to go—forward. However, the leg leads for running down drop shots are identical to the leg leads for cross-court shots: your</p>
+<p>right leg leads going toward the ad court, your left leg leads going</p>
+<p>toward the deuce court, so that your weight is working for you by pulling your body forward. The arm work is also the same. And</p>
+<p>just as when you’re running cross-court, you really have to dig</p>
+<p>out after that drop shot by dropping your weight way down and</p>
+<p>in front of your lead knee, like in the Harness Drill.</p>
+<p>I’ve noticed that in starting to move forward, many players have a natural tendency to double step: in an attempt to push</p>
+<p>off they will take a tiny, three-inch step backward before going forward. What happens is that they straighten up first when they</p>
+<p>see that the ball has been hit, they get caught off-balance, and then they take that little step back to regain their balance. This brings their weight too far back to allow them to get down and</p>
+<p>forward quickly, and so they get to the ball late. Being in good</p>
+<p>ready position to begin with, with your weight forward enough,</p>
+<p>will prevent you from taking that unnecessary little step back-</p>
+<p>ward. You&#x27;ll get a quicker start, and you&#x27;ll make it to that drop</p>
+<p>shot in good time.</p>
+<p>Another problem a lot of players have in running down drop</p>
+<p>shots is running through their shots, because they’re moving so</p>
+<p>aggressively that they’re not able to stop once they get there. This</p>
+<p>is also usually the result of starting off tall and late, and then hav-</p>
+<p>ing to generate speed throughout the fifth, sixth, and seventh steps</p>
+<p>in order to get to the ball, which means yourre still accelerating</p>
+<p>while you&#x27;re hitting, making it impossible to cut off quickly. The</p>
+<p>only way to avoid running through your shot is to get started</p>
+<p>quickly, and to get there early enough to stop and set up. Now,</p>
+<p>I know this isn’t always possible; sometimes you&#x27;re going to race</p>
+<p>in for a too-good drop shot and run into the net and lose the</p>
+<p>point. But most of the time you can get there early enough if you</p>
+<p>don’t hesitate, if you stay low and if you maintain your stride</p>
+<p>pattern. Remember to slide into drop shots on clay, which will</p>
+<p>save you crucial time.</p>
+<p>When you&#x27;re up at the net, the action is often so fast that you</p>
+<p>don’t have time to think about correct footwork. You&#x27;re trying</p>
+<p>to volley the ball aggressively out in front of you, and frequently</p>
+<p>agility and sharp reactions are going to be your main assets.</p>
+<p>A lot of the problems players have at net result simply from</p>
+<p>being too close to it, not allowing themselves enough time to</p>
+<p>react to the ball. This probably comes from emulating the pros, who can camp right on top of the net because they’re able to</p>
+<p>handle the speed of play up there. Try to make a realistic assessment of how good a volleyer you are, and stay back far enough</p>
+<p>to give yourself a chance to do some harm. Most average players</p>
+<p>are probably best off standing midway between the service line</p>
+<p>and the net. That’s far enough back so you have time to react to</p>
+<p>the ball, and close enough to hit a good, deep volley.</p>
+<p>Footwork into the Inner and Outer Ball 57</p>
+<p>What’s essential to effective volleying is maintaining your good</p>
+<p>ready position between each shot. Physically it’s the same ready</p>
+<p>position as on the baseline, but mentally you have to be much</p>
+<p>more alert and aggressive. Keeping your toes bouncing or skip-</p>
+<p>ping a bit may help keep you ultravigilant and ready to pounce</p>
+<p>at net, but unless you’re psychic, keep an equal profile and don’t commit your weight before your opponent hits his shot. Usually</p>
+<p>having to take one huge, lunging step for an inner ball up at net</p>
+<p>is the result of being committed the wrong way: you think the ball</p>
+<p>is going to the right, it goes to the left, and you just do whatever</p>
+<p>you can to get across there. Since your balance is going one way</p>
+<p>and the ball is going the other way, you have to throw everything</p>
+<p>to the other side. Your opponent loves to see you lunging like</p>
+<p>that at net because you’re telling him that you have absolutely no</p>
+<p>control whatsoever over what he’s doing to you up there. Re-</p>
+<p>covering immediately, staying on your toes, and maintaining an</p>
+<p>equal profile will cut down substantially on those situations and you won&#x27;t get passed so easily anymore.</p>
+<p>An inner ball at net is often an opportunity to volley the ball away, and the correct footwork can help insure it. It’s standard</p>
+<p>cross-over footwork: if the ball is to your left, step forward and</p>
+<p>across with your right foot as you volley: ONE!—quick and crisp.</p>
+<p>If it’s to your right, step into it with your left and BOOM!</p>
+<p>Often you have time for good footwork even on an outer ball</p>
+<p>if the ball hasn’t been hit too hard. Use the same pivots you’d</p>
+<p>use anywhere else on the court, bringing your outside leg across</p>
+<p>first. The main difference is that at net you don’t want to drop down as low or to have as extreme a weight transfer as for a drop</p>
+<p>shot or a cross-court shot, because you’ve got to stay up to hit the</p>
+<p>ball. Elsewhere on the court, you’re only concerned with getting</p>
+<p>in motion when you pivot.</p>
+<p>More than anything else, your previous shot is going to deter-</p>
+<p>mine what your opponent will hit back at, to, past, or over you.</p>
+<p>If you make a really good volley, you don’t have to worry; with</p>
+<p>a reasonably good shot, you&#x27;ll most likely get a reasonably good</p>
+<p>shot back, one that you can probably handle if you maintain your balance and react quickly enough. If you hit a weak shot, you’re</p>
+<p>a sitting duck; be ready for the ball to go down the line or across</p>
+<p>the court. Take your pick. You&#x27;ll be lucky just to get your racket</p>
+<p>on it by taking a flying leap and throwing yourself at the ball. The more agile you are, the more likely you are to get away</p>
+<p>with it.</p>
+<p>Although the overhead stroke itself is similar to the serve, the</p>
+<p>rules for getting to the ball when it sails over your head are the</p>
+<p>same as for any other shot, only more so, because the overhead</p>
+<p>is a power shot and you need every ounce of leverage you can</p>
+<p>get: a defensively hit overhead usually means disaster for you. Most missed and weak overheads are caused by not getting ready</p>
+<p>properly. If you’re running forward when your opponent throws</p>
+<p>up a lob, you’re stuck; you have to slam down on your heels to</p>
+<p>stop and it’s virtually impossible for you to get back there in</p>
+<p>time. You should be on your toes and stationary while your opponent is hitting, so that when you see the ball lofting you can</p>
+<p>start to move back instantly. If the lob isn’t very deep, the best way to retreat is by turning your body sideways to the net and backpedaling. Stay sideways until after you’ve made the shot. Cock your racket behind you as you begin to backpedal, because</p>
+<p>cocking it at the last second completely fouls up most people’s</p>
+<p>timing. Keep your eye on the ball at all times and sight it—line</p>
+<p>it up—with your free hand.</p>
+<p>If the lob is deep—more than six or seven steps—backpedaling would be too slow. You’ve got to pivot 180 degrees—turning your back to the net—drop, and run. If you have any doubts about your</p>
+<p>ability to back up for the lob, even if it’s shallow, don’t waste any</p>
+<p>time thinking about it—just turn around and go. Always turn in</p>
+<p>the direction in which the ball is going: if it’s hit over your left</p>
+<p>shoulder, for example, pivot and follow it to the left, keeping your</p>
+<p>eye on it as best you can over your shoulder. You&#x27;ve really got</p>
+<p>to race it back, beating it to the spot. Get there before it bounces,</p>
+<p>going back farther than necessary so that you can set up with the</p>
+<p>ball in front of you for more leverage and better control. It’s also</p>
+<p>Footwork into the Inner and Outer Ball 59</p>
+<p>much easier to adjust forward than to go farther back at the last moment. Overheads are always taken as forehands if it’s possible, because very few people can hit backhand overheads with any power; so get set with the ball to your forehand side even if it’s</p>
+<p>hit to your backhand.</p>
+<p>If you watch tennis tournaments, you’ve probably seen some</p>
+<p>of the pros backpedal straight back, then jump up as they hit their</p>
+<p>overheads. This shot looks spectacular, but it takes perfect timing,</p>
+<p>and the additional leverage you’d get from hitting this way just</p>
+<p>isn’t worth giving up a safer shot for. You should try to keep at</p>
+<p>least one foot on the ground when you hit an overhead, getting your leverage from being sideways to the net. The only time to jump up off the ground for an overhead is when you&#x27;re at net and</p>
+<p>can only reach it by leaping up for it, or if you’ve mistimed the</p>
+<p>ball and have no other choice.</p>
+<p>So many people wait for that serve as though their lives were</p>
+<p>on trial. They mess up their returns because they’re intimidated,</p>
+<p>and because they don’t know what to do with their feet and</p>
+<p>bodies when they see the ball coming at them.</p>
+<p>When you&#x27;re receiving serve, you have certain advantages;</p>
+<p>capitalize on them. You have plenty of time to get ready before</p>
+<p>your opponent is allowed to serve; you’re stationary, which makes</p>
+<p>timing the ball simpler; and you know that the ball can only land</p>
+<p>within a certain clearly defined area, the service box. On the other hand, the serve (together with the overhead) is</p>
+<p>the fastest, hardest-hit shot in tennis—ninety to ninety-five miles</p>
+<p>an hour is not uncommon for a good male club player—and it</p>
+<p>can come in spinning, sliced, or flat. This requires the ultimate ready position: a solid base; a low, forward profile; and your weight in front on the balls of your feet for maximum control, balance, and quickness.</p>
+<p>If you were to receive serve with your feet together, your</p>
+<p>knees stiff, your weight back, and flatfooted (which is how an awful lot of people wait for serves), you’d get blown away by a</p>
+<p>hard serve. As much as possible, you want to be like a wall when</p>
+<p>that ball comes barreling in. The harder your opponent’s serve,</p>
+<p>the lower you have to be, because a hard-hit ball is generally a</p>
+<p>low one. It’s also a lot easier to come up if necessary than to drop down when time is very short.</p>
+<p>Most of the problems people have returning serve are the</p>
+<p>result of reacting too slowly. Especially on the backhand, many</p>
+<p>players wait for the ball to come to them before they get com-</p>
+<p>pletely set up, and then suddenly it’s right on top of them and</p>
+<p>they have to cramp their shots. To be in a position to react quickly, you should be waiting at the cutoff point, midway between the possible extreme lines of flight of the ball. If the server</p>
+<p>is right-handed, his serve is going to curve out in the deuce court,</p>
+<p>and toward the center in the ad court. Therefore, to receive his</p>
+<p>serve in the deuce court, you should stand approximately two</p>
+<p>feet to the left of the intersection of the singles line and the base-</p>
+<p>line, and in the ad court, midway between the center line and</p>
+<p>the singles line/baseline intersection. To receive a lefty’s serve,</p>
+<p>it’s just the opposite: stand approximately in the middle when</p>
+<p>he’s serving into the deuce court, and approximately two feet to</p>
+<p>the right of the singles line in the ad court.* You should be as</p>
+<p>close in an possible (sometimes four feet behind the baseline is</p>
+<p>as close as possible), for several reasons: (a) If you can get the</p>
+<p>ball on the rise, it won’t have developed all its spin yet. (b) You&#x27;ll</p>
+<p>also be putting pressure on the server, giving him less time to prepare for his next shot, or to get to the net, which gives you a chance to hit a better-than-adequate return. (c) Also, the closer</p>
+<p>you are to the net for your return, the better angle you can get</p>
+<p>* baseline XO | xX O Ad court Deuce court</p>
+<p>O: receiving a right-handed person’s serve X: receiving a left-handed person’s serve</p>
+<p>Footwork into the Inner and Outer Ball 61</p>
+<p>on your shot, and the faster you can get in to net. This goes for</p>
+<p>both your opponent’s first and second serves; obviously it’s easier</p>
+<p>to accomplish on his second, which will have less pace and often</p>
+<p>less depth.</p>
+<p>The instant you see to which side the ball is coming, shift your</p>
+<p>weight to that side and get your racket back. The footwork for</p>
+<p>return of serve is exactly the same as for any other shot. If it’s an</p>
+<p>inner ball, coming in to your right side (whether it’s a backhand</p>
+<p>or a forehand will depend on whether you&#x27;re right- or left-handed),</p>
+<p>it’s a right-leg plant and then step forward into the ball with your</p>
+<p>left. If it’s outside your range to the right, then it’s a left-leg lead,</p>
+<p>so that, again, you wind up planting your right foot and stepping</p>
+<p>into the ball with your left. If you’re going to be hitting off your</p>
+<p>left side, left-leg plant for an inner ball, right-leg lead for an outer ball.</p>
+<p>When I teach this return-of-serve footwork, sometimes I get a</p>
+<p>lot of backtalk at first: “Who’s got time to think about all this footwork, Hines, when the ball’s coming at me a million miles</p>
+<p>an hour?” Well, all I can say is, you’ve got to do something with your feet, so you might as well do something right with them. People usually come around to my way of thinking after a while, when they see that it works.</p>
+<p>What should you be doing while your opponent is winding up</p>
+<p>to serve? While you’re waiting for that serve, you don’t neces-</p>
+<p>sarily have to be still. You can do whatever feels comfortable and keeps you relaxed, as long as you don’t give anything up. An easy sway back and forth might ease the tension for you and help you concentrate, the way a cobra sways its head before it gets ready to strike. Some people, especially beginners, move exces-</p>
+<p>sively, just imitating what they see more experienced players doing without really getting any benefit from it themselves. Don’t bounce or sway so much that you risk getting caught off-balance. How much is too much? If you’re bouncing up and down and</p>
+<p>are in the air when the server hits the ball, that’s too much.</p>
+<p>Remember always to recover after you return serve. I often</p>
+<p>see players hit a good return and then just stand there admiring</p>
+<p>their own shot, sure that it’s a winner. Then while they’re stand-</p>
+<p>ing there straight up and flat-footed, the ball comes whizzing</p>
+<p>back and they’re not ready for it. Always assume the ball is com-</p>
+<p>ing back and going in until the point is over.</p>
+<p>The major goal of this book is to help you improve your court</p>
+<p>mobility so that you can reach practically any ball that comes</p>
+<p>over the net with the control and balance necessary to making</p>
+<p>the best shot you’re capable of hitting, rather than either missing</p>
+<p>it altogether or having to struggle, hit from a bad position, and</p>
+<p>just hope the ball goes over and in because you lost so much time</p>
+<p>getting to it. The techniques and drills in this book are designed</p>
+<p>to help you expand your comfort range, the area in which you</p>
+<p>can move easily and hit solid, offensive shots.</p>
+<p>When the ball is within your comfort range (what I’ve been</p>
+<p>calling the inner ball), whether it’s in front of you, behind you,</p>
+<p>or to either side, you can get there in plenty of time to set up,</p>
+<p>plant your feet before you swing, and attack it in front of you,</p>
+<p>getting your weight into your shot. The limits of your comfort</p>
+<p>range are defined by where you have to start struggling to get to</p>
+<p>the ball and are forced to hit it defensively. You probably find</p>
+<p>that your range varies from day to day. Some days your timing</p>
+<p>is off, you’re a little sluggish, your feet just won’t move, or what-</p>
+<p>ever; range depends not only on your ability to move but also on your confidence and motivation to go after a particular ball: the</p>
+<p>more you go for, the more you get.</p>
+</section>
+<section class="chapter" id="sec-3">
+<h2>Part 3  ·  pp. 78–80</h2>
+<p>Most average players have a range of about eight feet to</p>
+<p>either side and behind them, and twelve to fifteen feet in front</p>
+<p>of them. Obviously, advanced players have a greater range, a</p>
+<p>greater ability to cover the court, than beginners. But practically</p>
+<p>all tennis players are better at stroking the ball than at moving</p>
+<p>for it, because if you have to move at the same time the ball is moving, the timing is much more complicated than if you&#x27;re</p>
+<p>stationary. No matter how good your strokes are, you’re always going to be in trouble on the court unless motion is working for</p>
+<p>you. Motion and footwork problems, more than anything else,</p>
+<p>are what make second-rate players second-rate.</p>
+<p>No one’s range covers every extremity of the court. Even Jimmy Connors gets drawn off the court once in a while and</p>
+<p>can’t get back in time for a shot hit to the other side. But nothing</p>
+<p>will shake your opponent’s confidence more than watching you</p>
+<p>race over and attack his “winner.” He&#x27;ll think there’s nothing</p>
+<p>you can’t get to, and he’ll start wondering what he has to do to</p>
+<p>the damn ball to get one past you—and then watch him start</p>
+<p>making errors trying.</p>
+<p>If you want to increase your comfort range, you should follow</p>
+<p>the five steps below for every shot. I&#x27;ll deal with each one in turn.</p>
+<p>1. Be stationary, in good ready position, at the spot on the</p>
+<p>court that will allow you the best opportunity to go after what-</p>
+<p>ever your opponent can possibly hit to you, before your opponent</p>
+<p>hits the ball.</p>
+<p>2. React instantly when he does hit it.</p>
+<p>3. Move quickly according to the flight of the ball, pivoting</p>
+<p>and using your stride pattern to get to a long ball.</p>
+<p>4. Establish your hitting position (outside leg planted, ready to come into the ball) as early as possible before you hit, making whatever final adjustments necessary to control the inner ball</p>
+<p>and hit it at your most comfortable level, probably waist-height.</p>
+<p>5. After you make your shot, immediately recover and re-</p>
+<p>turn to that part of the court that seems to give you an equal chance to react to and control your opponent’s next shot, again</p>
+<p>remaining in your aggressive profile.</p>
+<p>1. Coming to a stop before your opponent hits the ball is one</p>
+<p>of the main keys to covering the court. You may think you&#x27;re</p>
+<p>always making progress while you’re running, but it’s just not</p>
+<p>true. You have your entire comfort range when you&#x27;re stationary.</p>
+<p>It’s practically nil while you’re in motion, because your momentum is carrying you forward, making it impossible for you to</p>
+<p>stop or to change direction quickly. For example, if you’re mov-</p>
+<p>ing forward as your opponent hits the ball down the line, you’ll</p>
+<p>have to careen over to it—and you&#x27;ll get there late and off-balance.</p>
+<p>If, instead, you are stationary and in ready position while he’s</p>
+<p>hitting, you can simply pivot and run; if your balance is not committed to one side or another, you can move quickly in any</p>
+<p>direction.</p>
+<p>Stopping and setting up before your opponent makes his shot</p>
+<p>is extremely important—whether you are receiving serve, hitting from the baseline, or volleying up at the net. One of the axioms</p>
+<p>of tennis is that after you make your shot, you’ve got to get back</p>
+<p>to the center of the court. I’ve seen players follow this rule so</p>
+<p>rigidly that they lose sight of the fact that the object of the game</p>
+<p>is to get to the ball, not back to the center of the court.</p>
+<p>Let’s say you’ve just returned a wide forehand. If you’re running back to the center and your opponent drills away at the same spot again, you’re obviously going to get caught going the wrong way. You&#x27;re back in position but the ball is somewhere</p>
+<p>else. You get an A for theory, for being where you’re “supposed”</p>
+<p>to be, but an F for losing the point—you’ve played the court rather than the ball. Instead, you should have made your shot,</p>
+<p>run as far back to the cutoff spot—the spot that will give you your best chance to go after your opponent’s next shot, which</p>
+<p>is usually (but not always) the center of the baseline or net—as</p>
+<p>possible, and stopped and established an aggressive ready posi-</p>
+<p>tion before your opponent made his shot. Then, even if you’ve</p>
+<p>only gotten halfway back to the center, you’re in a better posi-</p>
+<p>tion to reach a ball hit behind you, and you are also in an excel-</p>
+<p>lent starting position to pivot and drive out quickly if he has hit</p>
+<p>to your backhand. Your weight commitment is just as important</p>
+<p>as how far you are from the ball in determining whether or not</p>
+<p>you&#x27;re going to get to it, and at no time is your weight more committed than when you&#x27;re running.</p>
+<p>It’s a matter of percentages. You want to have a crack at whatever your opponent can hit to you. The moment you turn</p>
+<p>your back on a portion of the court and start running, you’re</p>
+<p>giving up every step behind you. Your momentum is carrying</p>
+<p>you one way and that’s the only general direction in which you&#x27;re</p>
+<p>going to be effective. The greater your momentum, the more</p>
+<p>difficult it is to stop or to redirect your motion toward the ball,</p>
+<p>so even if you do have a chance to reverse your direction and get</p>
+<p>back, you&#x27;re still going to have a hell of a time getting to that</p>
+<p>ball.</p>
+<p>Sure, sometimes you have no choice. You make a weak shot, your opponent is all over it, and you just have to guess where he’s</p>
+<p>likely to hit and get there, fast—it’s your only chance. But most</p>
+<p>of the time you do have some degree of control over the situa-</p>
+<p>tion, which you&#x27;re just forfeiting by being on the run while your opponent is hitting the ball, hoping that his shot will go that way. Particularly if you’ve just made a good shot—changed the pace, gotten your opponent out of position, hit to his weakness —he’s not going to be able to hit where he wants, but chances</p>
+<p>are that he could sneak one behind you if you gave him the open-</p>
+<p>ing. If you’re dashing back across to the middle of the court while he’s hitting the ball, you’re giving up control of the point. The ball could be three feet away from you, but if you’re going</p>
+<p>the wrong way, it might as well be a mile.</p>
+<p>Certainly, if you have time, and you usually do after you hit,</p>
+<p>get back to the spot midway between the ball’s possible lines of</p>
+<p>flight, the spot that allows you an equal chance of getting to whatever your opponent can hit next, whether it’s a forehand, a backhand, a drop shot, or a lob, without leaving yourself an inordinate amount of territory to cover on one side and an extremely small area on another. But it’s always preferable to give</p>
+<p>up a little territory in front of you in order to assume a solid, aggressive ready position while your opponent is hitting. Don’t give up the ball for a spot on the court!</p>
+</section><footer class="end"><div class="sig">Tennis Books Library</div><div>English text extracted from the book's own PDF.</div></footer>
+</div>
+</div>
+</body>
+</html>
