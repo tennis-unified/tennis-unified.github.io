@@ -9,6 +9,11 @@ from the root index by:
   * rewriting root-relative links to their /en/ equivalents where that page
     exists under en/, and leaving them alone otherwise (the en/ tree only
     contains articles + the two pillar folders);
+  * rewriting BARE-RELATIVE links (href="coach-video-library/", href="./vi/")
+    the same way. MkDocs emits bare relative hrefs, not "/"-prefixed ones, so
+    the root-relative rule alone silently matched nothing and every bare link
+    on /en/ resolved under /en/ instead of the site root -- 12 unique targets
+    404ed, including the language switcher's "./vi/";
   * fixing <title>, canonical, and hreflang (absolute, with x-default).
 
 Read-only on every other file. Writes exactly one new file.
@@ -63,10 +68,55 @@ def main():
 
     html = re.sub(r'href(["\'])(/[^"\']*)\1', fix_href, html)
 
+    # ---- 1b. bare-relative hrefs ------------------------------------------ #
+    # MkDocs writes href="coach-video-library/", not href="/coach-video-library/",
+    # so the rule above never fires and the link keeps resolving relative to
+    # /en/. Resolve each one against the SITE ROOT instead, then send it to
+    # /en/<path> when an en twin exists (preserving the intent of step 1) and to
+    # /<path> when it does not.
+    SCHEME = ("http:", "https:", "mailto:", "tel:", "javascript:", "data:", "//")
+
+    def fix_relative(m):
+        q, url = m.group(1), m.group(2)
+        if not url or url.startswith("#") or url.startswith(SCHEME):
+            return m.group(0)
+        core, _, frag = url.partition("#")
+        path, _, query = core.partition("?")
+        if path.startswith("/") or path.startswith("../"):
+            return m.group(0)          # absolute or upward: leave to step 1
+        if path in ("", ".", "./"):
+            return f'href{q}="/en/{"#" + frag if frag else ""}"'
+        p = path[2:] if path.startswith("./") else path
+        is_dir = p.endswith("/")
+        key = p.rstrip("/")
+        if not key:
+            return f'href{q}="/en/{"#" + frag if frag else ""}"'
+        cand = os.path.join(ROOT, "en", key.replace("/", os.sep))
+        twin = os.path.isfile(cand) or os.path.isfile(os.path.join(cand, "index.html"))
+        target = ("/en/" + key) if twin else ("/" + key)
+        if is_dir:
+            target += "/"
+        if query:
+            target += "?" + query
+        if frag:
+            target += "#" + frag
+        return f'href{q}="{target}"'
+
+    html = re.sub(r'href=(["\'])([^"\']*)\1', fix_relative, html)
+
     # ---- 2. title ---------------------------------------------------------- #
     html = re.sub(
         r"<title>[^<]*</title>",
         "<title>Tennis Unified Library — Tennis Knowledge Base</title>",
+        html, count=1,
+    )
+
+    # ---- 2b. og:url must describe THIS page ------------------------------- #
+    # The source is the root homepage, so its og:url says "/". Copied verbatim
+    # into /en/ it advertises the wrong URL; og:url has to agree with canonical.
+    html = re.sub(
+        r'(<meta\s+property="og:url"\s+content=")([^"]*)(")',
+        lambda m: m.group(1) + CANON + "/en/" + m.group(3),
         html, count=1,
     )
 
