@@ -1,0 +1,1835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Getting Started in Tennis</title>
+<meta name="description" content="Tennis library">
+<meta name="author" content="Pham Duc Hai">
+<style>
+.tcq-book{
+  --tcq-paper:#faf9f5; --tcq-ink:#1a1c20; --tcq-ink-soft:#4a4e54;
+  --tcq-ink-faint:#8a8d93; --tcq-indigo:#1d5c63; --tcq-indigo-soft:#2f7d84;
+  --tcq-gold:#a8863c; --tcq-rule:#e2e1da; --tcq-panel:#ffffff;
+  background:var(--tcq-paper); color:var(--tcq-ink);
+  font-family:"Palatino Linotype","Book Antiqua",Cambria,"Times New Roman","Noto Serif",serif;
+  font-size:19px;line-height:1.78;-webkit-font-smoothing:antialiased;}
+.tcq-book .wrap{max-width:760px;margin:0 auto;padding:64px 28px 120px;}
+.tcq-book header.cover{text-align:center;padding:8px 0;}
+.tcq-book .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+.tcq-book header.cover .cover-art{width:100%;max-width:430px;margin:0 auto 30px;border-radius:10px;
+  box-shadow:0 14px 40px rgba(16,40,44,.28);display:block;}
+.tcq-book header.cover .kicker{letter-spacing:.28em;font-size:12px;text-transform:uppercase;
+  color:var(--tcq-indigo);font-weight:600;}
+.tcq-book header.cover h1{font-size:38px;line-height:1.16;margin:.4em 0 .12em;font-weight:600;
+  color:var(--tcq-ink);text-align:center;letter-spacing:0;}
+.tcq-book header.cover .sub{color:var(--tcq-ink-soft);font-size:20px;font-style:italic;}
+.tcq-book header.cover .blurb{color:var(--tcq-gold);font-size:16px;margin-top:.7em;
+  letter-spacing:.04em;}
+.tcq-book header.cover .by{margin-top:1.2em;color:var(--tcq-ink-faint);font-size:14px;
+  letter-spacing:.06em;}
+.tcq-book hr.lead{border:none;border-top:1px solid var(--tcq-rule);margin:36px 0;}
+.tcq-book .part-band{margin:88px 0 8px;padding:26px 0 22px;text-align:center;
+  border-top:1px solid var(--tcq-rule);border-bottom:1px solid var(--tcq-rule);}
+.tcq-book .part-band .part-kicker{letter-spacing:.3em;font-size:12px;text-transform:uppercase;
+  color:var(--tcq-gold);font-weight:600;}
+.tcq-book .part-band .part-name{font-size:23px;color:var(--tcq-indigo);margin-top:.5em;
+  font-style:italic;}
+.tcq-book .chapter{margin-top:56px;}
+.tcq-book h2.ch-title{font-size:29px;line-height:1.25;margin:0 0 .1em;font-weight:600;
+  color:var(--tcq-ink);letter-spacing:0;font-style:normal;
+  border-bottom:2px solid var(--tcq-indigo);padding-bottom:.25em;}
+.tcq-book h3{font-size:21px;margin:40px 0 12px;font-weight:600;color:var(--tcq-indigo);
+  font-style:normal;letter-spacing:0;}
+.tcq-book h4{font-size:18px;margin:30px 0 8px;font-weight:600;color:var(--tcq-gold);
+  font-style:normal;letter-spacing:.02em;}
+.tcq-book p{margin:0 0 1.15em;text-align:justify;hyphens:auto;color:var(--tcq-ink);}
+.tcq-book p.lead-p{font-size:21px;color:var(--tcq-ink-soft);}
+.tcq-book strong{color:var(--tcq-ink);}
+.tcq-book em{color:var(--tcq-ink-soft);}
+.tcq-book .toc{margin:44px auto 0;max-width:560px;background:var(--tcq-panel);
+  border:1px solid var(--tcq-rule);border-radius:8px;padding:26px 32px;}
+.tcq-book .toc-title{font-size:15px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--tcq-indigo);margin:0 0 .9em;font-weight:600;font-style:normal;}
+.tcq-book .toc-part{font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--tcq-gold);font-weight:600;margin:1.3em 0 .4em;}
+.tcq-book .toc-part:first-of-type{margin-top:.4em;}
+.tcq-book .toc ol{margin:0;padding-left:0;list-style:none;}
+.tcq-book .toc li{margin:.42em 0;font-size:16px;}
+.tcq-book .toc a{color:var(--tcq-ink);text-decoration:none;border-bottom:1px solid transparent;}
+.tcq-book .toc a:hover{border-bottom-color:var(--tcq-indigo);}
+.tcq-book dl.glossary{margin:0 0 1.2em;padding:0;}
+.tcq-book dl.glossary dt{font-weight:600;color:var(--tcq-indigo);margin:1.15em 0 .15em;
+  font-size:18px;}
+.tcq-book dl.glossary dd{margin:0 0 .3em;padding-left:1.4em;color:var(--tcq-ink-soft);
+  font-size:18px;line-height:1.7;text-align:justify;}
+.tcq-book footer.end{margin-top:90px;border-top:1px solid var(--tcq-rule);padding-top:26px;
+  color:var(--tcq-ink-faint);font-size:14px;text-align:center;line-height:1.9;}
+.tcq-book footer.end .sig{color:var(--tcq-indigo);font-size:15px;letter-spacing:.08em;}
+body.dark-mode .tcq-book{
+  --tcq-paper:#0f1416; --tcq-ink:#e6e7e3; --tcq-ink-soft:#b0b3af;
+  --tcq-ink-faint:#878b90; --tcq-indigo:#7fbfc4; --tcq-indigo-soft:#5fa3a9;
+  --tcq-gold:#c9a961; --tcq-rule:#283135; --tcq-panel:#161d20;}
+body.dark-mode .tcq-book p,
+body.dark-mode .tcq-book li,
+body.dark-mode .tcq-book dd,
+body.dark-mode .tcq-book div{color:var(--tcq-ink);}
+body.dark-mode .tcq-book p.lead-p,
+body.dark-mode .tcq-book em,
+body.dark-mode .tcq-book dl.glossary dd{color:var(--tcq-ink-soft);}
+body.dark-mode .tcq-book header.cover .by,
+body.dark-mode .tcq-book footer.end{color:var(--tcq-ink-faint);}
+body.dark-mode .tcq-book h2.ch-title,
+body.dark-mode .tcq-book header.cover h1{color:var(--tcq-ink) !important;}
+body.dark-mode .tcq-book h3,
+body.dark-mode .tcq-book dl.glossary dt,
+body.dark-mode .tcq-book header.cover .kicker,
+body.dark-mode .tcq-book .toc-title,
+body.dark-mode .tcq-book footer.end .sig,
+body.dark-mode .tcq-book .part-band .part-name{color:var(--tcq-indigo) !important;}
+body.dark-mode .tcq-book h4,
+body.dark-mode .tcq-book header.cover .blurb,
+body.dark-mode .tcq-book .toc-part,
+body.dark-mode .tcq-book .part-band .part-kicker{color:var(--tcq-gold) !important;}
+body.dark-mode .tcq-book .toc a{color:var(--tcq-ink);}
+body.dark-mode .tcq-book strong{color:var(--tcq-ink) !important;}
+@media (max-width:760px){
+  .tcq-book .wrap{padding:40px 20px 80px;}
+  .tcq-book header.cover h1{font-size:28px;}
+  .tcq-book header.cover .cover-art{max-width:320px;}
+  .tcq-book dl.glossary dd{padding-left:.8em;}
+  .tcq-book .part-band .part-name{font-size:19px;}
+}
+@media print{
+  .tcq-book .toc{break-after:page;}
+  .tcq-book .chapter{break-before:page;}
+  .tcq-book .part-band{break-before:page;break-after:avoid;}
+  .tcq-book dl.glossary dt{break-after:avoid;}
+}
+
+/* breadcrumb — sits above .tcq-book, so it carries its own palette.
+   Colours/scale mirror the reference TFL books (#2–#8): .9rem, muted
+   #5b6572 separator, the book's own accent for the root link. */
+.tu-breadcrumb{background:#faf9f5;padding:16px 0 4px;font-size:.9rem;color:#6b6f76;
+  font-family:"Palatino Linotype","Book Antiqua",Cambria,"Times New Roman","Noto Serif",serif;}
+.tu-breadcrumb__list{list-style:none;display:flex;flex-wrap:wrap;gap:2px 8px;
+  max-width:760px;margin:0 auto;padding:0 28px;align-items:center;}
+.tu-breadcrumb__item{margin:0;}
+.tu-breadcrumb__link{color:#1d5c63;text-decoration:none;}
+.tu-breadcrumb__link:hover{text-decoration:underline;}
+.tu-breadcrumb__sep{color:#5b6572;margin:0 2px;user-select:none;}
+.tu-breadcrumb__current{color:#1a1c20;font-weight:500;}
+</style>
+</head>
+<body>
+
+
+<nav class="tu-breadcrumb" aria-label="Breadcrumb">
+  <ol class="tu-breadcrumb__list">
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/books/">Tennis Books Library</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item tu-breadcrumb__current" aria-current="page">Getting Started in Tennis</li>
+  </ol>
+</nav>
+<div class="tcq-book">
+<div class="wrap">
+<header class="cover"><div class="kicker">Tennis Library</div><h1>Getting Started in Tennis</h1><div class="by"></div><p style="text-align:center;margin:18px 0 0;font-family:var(--tcq-sans,sans-serif);font-size:14px;letter-spacing:.02em;"><a href="https://github.com/tenniskb/tenniskb.github.io/releases/download/books-pdf-v1/getting-started-in-tennis.pdf" target="_blank" rel="noopener" style="color:#1d5c63;font-weight:600;text-decoration:none;border:1px solid #cfd8d4;border-radius:6px;padding:7px 14px;display:inline-block;">Read the original PDF &#8599;</a></p></header><div class="toc"><div class="toc-title">Contents</div><ol>
+<li><a href="#sec-1">Part 1  ·  pp. 1–30</a></li>
+<li><a href="#sec-2">Part 2  ·  pp. 31–60</a></li>
+<li><a href="#sec-3">Part 3  ·  pp. 61–90</a></li>
+<li><a href="#sec-4">Part 4  ·  pp. 91–120</a></li>
+</ol></div><section class="chapter" id="sec-1">
+<h2>Part 1  ·  pp. 1–30</h2>
+<p>Grip size is marked on the handle of every racket.</p>
+<p>Your racket handle probably should be 4%, 4% or 4%</p>
+<p>PON \ SERNA ANN (Rees Seca See</p>
+<p>N SSAA SSSR \ en fe. NS a 4 gene cccnees,</p>
+<p>Noe ae Serer ncee Sneek. . ~ ial CS</p>
+<p>SG NS SS SN \\ NA YREECE ES Rca CCAS</p>
+<p>NO NNNAQLON ONC RIG ME HMICN WK CCC Cage MLO CCC</p>
+<p>4UN NS CHER GN Se See To SNOK SC CSIC S TS</p>
+<p>NECN KOCK KKHOKHANS AS BW DAK GH CK GG HSH OGONK NGC</p>
+<p>Betts Necens Y g@augggel@#avengaaes * nesses S8aegge ce 28am ay BBS a, « NA</p>
+<p>Seese’Seerag ee Saka me, Sa Peeseelsege eet Seem, goa Bee ‘ Seances SSneug SERGE 4 PEL</p>
+<p>long 26&quot; hood BI metal 27&quot; racket; a metal</p>
+<p>Here are the most common types (from left</p>
+<p>a standard wood racket for adults and older youths, 27&quot; long</p>
+<p>racket, made of metal and fiberglass, also 27&quot;</p>
+<p>inches in circumference. I suggest that you try light-</p>
+<p>weight rackets in those three sizes before picking the one</p>
+<p>that feels the best. Unless you have very large hands, you</p>
+<p>shouldn’t even pick up a racket with a 4%4- or 4%-inch</p>
+<p>grip. Stan Smith uses a 4%-inch heavy, but there are not</p>
+<p>many players of any age who can handle that.</p>
+<p>Rackets are strung with various materials. There is a</p>
+<p>plain nylon string which stretches a lot, so that the ball</p>
+<p>does not come back off the racket as quickly when hit.</p>
+<p>There is twisted nylon, which is a little stronger than</p>
+<p>plain nylon. And then there are various types of gut.</p>
+<p>strings, which are made from animal intestines. These</p>
+<p>are more expensive and usually don’t last as long as</p>
+<p>nylon, but they are better to use when you become a good</p>
+<p>player because, when you strike the ball, it comes off the</p>
+<p>racket face faster and truer.</p>
+<p>Once you have made your selection, you should al-</p>
+<p>ways Keep a cover on your racket when it is not in use</p>
+<p>in order to keep out moisture and to protect it from the</p>
+<p>sun and other harmful elements.</p>
+<p>What about tennis balls? American balls, made by</p>
+<p>such companies as Wilson, Spalding, Bancroft and</p>
+<p>others, usually come in cans. When you open the can,</p>
+<p>the hissing sound you hear is air coming out because the</p>
+<p>balls are packed under pressure. They are packed that</p>
+<p>way because when each ball is made, air is pumped</p>
+<p>inside it. It is the air inside the ball that causes it to</p>
+<p>bounce. In order to keep the air inside the balls when</p>
+<p>Smaller youngsters should choke up on their rackets if they’ re using adult models</p>
+<p>(ABOVE) or even if they’ re using junior models (BELOW). It’s important to feel you have</p>
+<p>complete control over the racket you play with.</p>
+<p>they are packed into a can, more air pressure is pumped</p>
+<p>into the can than is inside the ball. That way, air will not</p>
+<p>seep out of the balls while they are sitting in the can.</p>
+<p>If you were to put a tennis ball recently pumped with</p>
+<p>air on a table in your room for two weeks, air would</p>
+<p>gradually seep out until the air pressure inside the ball</p>
+<p>was the same as that outside, and the ball would not</p>
+<p>bounce as high as it once did. It would be somewhat</p>
+<p>Rackets should balance in about the</p>
+<p>middle. This junior model balances</p>
+<p>at a point that is 12 ¥2&quot; from either</p>
+<p>end. If the racket is too heavy at the</p>
+<p>head end it will be hard to swing</p>
+<p>quickly. If it is too light at the head</p>
+<p>end it will encourage a flicky stroke</p>
+<p>rather than a smooth and solid</p>
+<p>stroke.</p>
+<p>Other types of balls, such as the Tretorn or Pirelli</p>
+<p>brands frequently used in Europe, get their bounce, not</p>
+<p>from air pumped inside, but from the rubber of which the</p>
+<p>balls are made. The ball is thicker, and it does not bounce</p>
+<p>quite as high as the air-pressure ball. Such balls may</p>
+<p>come in boxes because there is no need to pack them</p>
+<p>under pressure since no air is pumped into them.</p>
+<p>I would suggest that beginners start out with a box of</p>
+<p>unpressurized balls such as Tretorns. First, you get four</p>
+<p>balls instead of three. Also, these balls last a lot longer</p>
+<p>because they are a little thicker. You can’t hit them quite</p>
+<p>as fast, but what you need to learn at first is control, not</p>
+<p>power, and I think you will probably learn this a lot</p>
+<p>better if you start with the Tretorn type.</p>
+<p>As for tennis shoes, generally the more you pay for a</p>
+<p>shoe, the more comfortable it will feel and the longer it</p>
+<p>will last. But remember, at your age you could pay too</p>
+<p>much for a shoe because you could outgrow it before you</p>
+<p>wear it out.</p>
+<p>All tennis courts everywhere in the world are built to</p>
+<p>the same dimensions. In my view, youngsters such as</p>
+<p>you should start playing on a smaller court than this,</p>
+<p>because you cannot possibly cover all the shots in tennis</p>
+<p>the way older and faster players can. I think a court that</p>
+<p>is approximately four-fifths the size of the standard tennis</p>
+<p>court, with a net that is 37 or 38 inches high near the</p>
+<p>sidelines rather than 39 inches, would make it easier for</p>
+<p>twelve-year-olds and younger—and also for senior</p>
+<p>If you reach out as though to shake hands with your racket (ABOVE) you&#x27;ll automatically</p>
+<p>assume a good grip on the handle, with fingers spread on the grip for greater control and</p>
+<p>with the racket parallel to the ground. A hammer-type grip (BELOW) should be avoided</p>
+<p>because it reduces control over the racket and sets the racket face much too high for hit-</p>
+<p>ting ground strokes.</p>
+<p>citizens—to learn and to enjoy the game.</p>
+<p>Maybe these changes I advocate will not occur in the</p>
+<p>near future. Chances are most youngsters will still have</p>
+<p>to learn to play the game on the standard-size court. Bear</p>
+<p>in mind that as you mature, though, the court will not</p>
+<p>seem so big or the net so high. That will help you over-</p>
+<p>look the frustrations of chasing balls now at the start of</p>
+<p>your progress in the game, and concentrate on the fun</p>
+<p>parts.</p>
+<p>Okay, slip on your tennis shoes, pick up your racket</p>
+<p>and a box of balls, and let’s go out to the tennis court.</p>
+<p>WE START our lessons with the forehand stroke rather</p>
+<p>than with the serve, because when you go out to the court</p>
+<p>to warm up, the first thing you do is bounce the ball off</p>
+<p>the ground and hit a forehand to your opponent. It is just</p>
+<p>natural to use your “*fore’’ hand or dominant hand (right</p>
+<p>hand if you are right-handed) to start things off.</p>
+<p>The illustrations in this chapter show good forehand</p>
+<p>form. The backswings and follow-throughs may be</p>
+<p>slightly different for different players, but in the hitting</p>
+<p>zone—that foot-long area where the racket meets the</p>
+<p>ball—the strokes look almost exactly the same.</p>
+<p>Okay, now that you’ve taken a look at the ways the</p>
+<p>forehand can be made, take your racket out of the cover</p>
+<p>and hold it in front of you so that it points outward from</p>
+<p>your stomach and you are looking at the edge, or rim, of</p>
+<p>To grip the racket for the forehand stroke, put your hand on the handle so that the V</p>
+<p>formed by thumb and first finger is lined up along the right edge of the top panel on the</p>
+<p>racket. Notice that this puts the meaty part of your hand behind the racket when you hit.</p>
+<p>the racket. The forehand grip is made by spreading your</p>
+<p>fingers along the handle so that the V formed by your</p>
+<p>thumb and forefinger is positioned on the right top edge</p>
+<p>of the handle. This permits you to make contact with the</p>
+<p>ball with as much support as possible from your hand.</p>
+<p>Now you can hit a forehand using the loop back-</p>
+<p>swing, in which the racket is brought back past your face</p>
+<p>in a loop and then straight through the ball, ending up</p>
+<p>with the racket following through somewhere between</p>
+<p>your left shoulder and your head. Or you can hit the</p>
+<p>forehand using the straight backswing, with the racket</p>
+<p>being brought straight back—not looped—then straight</p>
+<p>forward along the same path.</p>
+<p>At this point, the important thing to remember is</p>
+<p>your grip and keeping your eye on the ball. Also,</p>
+<p>finish your swing with the racket somewhere between</p>
+<p>your left shoulder and your head.</p>
+<p>Ideally, when the ball comes toward you over the net,</p>
+<p>you should turn your body slightly sideways to the right</p>
+<p>so that you see the ball more with your left eye than your</p>
+<p>right eye. As you bring your body back on the backswing,</p>
+<p>you should find it turning naturally by itself.</p>
+<p>The point of contact for the forehand is roughly</p>
+<p>that narrow area between both hips as you stand</p>
+<p>sideways to the approaching ball. You want to start</p>
+<p>making contact about the time the ball reaches your</p>
+<p>The best spot to meet the ball with</p>
+<p>the forehand stroke is at a point op-</p>
+<p>posite your belly button.</p>
+<p>right hip and keep the ball on the strings until the racket reaches your left hip. You have a little leeway</p>
+<p>here for your own individual stroke, but these two points</p>
+<p>should be kept in mind.</p>
+<p>The most important thing now is to hit the ball in the</p>
+<p>middle of the strings. Disregard where it goes, be-</p>
+<p>cause even if you hit the ball solidly and it goes over</p>
+<p>the fence, this is a good beginning. It is just a matter of</p>
+<p>time and experience before you learn how to control the</p>
+<p>ball’s flight.</p>
+<p>A natural feeling to look for in hitting the forehand is,</p>
+<p>from your windup through the follow-through, your</p>
+<p>body weight should be shifting forward from your</p>
+<p>right foot to your left foot as the racket swings from</p>
+<p>behind you on through the hitting zone to the desired</p>
+<p>point between vour head and left shoulder.</p>
+<p>The two biggest faults in hitting the forehand are: (1)</p>
+<p>not taking the racket back in time, and (2) not follow-</p>
+<p>ing through.</p>
+<p>Many beginners hit the ball too late. By the time an</p>
+<p>opponent’s shot bounces, your backswing should be</p>
+<p>complete. You should be ready to begin the forward</p>
+<p>part of your stroke as the ball bounces. Try using a</p>
+<p>rhythmic count of one-two, starting just as you bring the</p>
+</section>
+<section class="chapter" id="sec-2">
+<h2>Part 2  ·  pp. 31–60</h2>
+<p>. Z. 4 Z Yo , a é Yu ty Yyfyy V4</p>
+<p>In these pictures of a forehand stroke, the player takes her racket strai ght back (Figs. 1</p>
+<p>and 2) rather than in the looping arc some players prefer. Notice how well she moves her</p>
+<p>weight onto her front foot (Fig. 3) and finishes with the racket high, pointing to the top of</p>
+<p>the back fence (Fig. 4).</p>
+<p>racket back, to set up a smooth, well-timed swing. Re-</p>
+<p>member, the word ‘“‘rhythmic’’ should tell you this is not</p>
+<p>a quick, jerky count. Also make sure you bring the racket</p>
+<p>back all the way in one continuous sweep and swing it</p>
+<p>forward in the same manner.</p>
+<p>The second biggest fault among beginners is that,</p>
+<p>when they feel the racket against the ball, they stop the</p>
+<p>stroke without a follow-through. Remember, you must</p>
+<p>not finish your stroke until the racket reaches a position</p>
+<p>between your head and left shoulder.</p>
+<p>One thing you must realize is that you cannot afford to</p>
+<p>be lazy on a tennis court if you want to play well. Lazi-</p>
+<p>ness can cause you to hit the ball late and into the net.</p>
+<p>The ball goes into the net because the player really does</p>
+<p>not get up to it in time to hit it at about waist level.</p>
+<p>If you are hitting the ball too long, there may be a</p>
+<p>couple of causes. You could be hitting the ball too early,</p>
+<p>or you could be shifting your weight before your follow-</p>
+<p>through. But with experience you should correct this.</p>
+<p>Remember, the object is to hit the ball between the</p>
+<p>court’s boundary lines, not to see how hard you can hit it.</p>
+<p>Score 12% points for each correct answer. A perfect</p>
+<p>score is 100.</p>
+<p>1. What are the first two things you want to think about</p>
+<p>as a beginner on the court?</p>
+<p>2. What is the correct finishing, or follow-through, posi-</p>
+<p>tion for the forehand stroke?</p>
+<p>3. What is the point of contact, or ‘‘hitting zone,’’ for</p>
+<p>the ball?</p>
+<p>4. How high should the ball be on the bounce when you</p>
+<p>hit it?</p>
+<p>5. What area of the racket face should contact the ball?</p>
+<p>6. How should your weight shift as you contact the ball?</p>
+<p>7. As the ball approaches you, where should your racket</p>
+<p>be when the ball bounces?</p>
+<p>8. What are the two biggest faults of beginners hitting</p>
+<p>the forehand?</p>
+<p>1. Your grip and keeping your eye on the ball.</p>
+<p>2. Somewhere between your left shoulder and your</p>
+<p>head.</p>
+<p>3. Between both hips as you stand sideways to the ball.</p>
+<p>4. Waist high.</p>
+<p>5. In the middle of the strings.</p>
+<p>6. From your right foot to your left foot.</p>
+<p>7. At the end of your backswing, ready to begin your</p>
+<p>forward stroke.</p>
+<p>S. Not taking the racket back in time, and not following</p>
+<p>through.</p>
+<p>THE BACKHAND STROKE is So called simply be-</p>
+<p>cause, aS you swing your hand toward the ball from the</p>
+<p>left side of your body (or right side if you are left-</p>
+<p>handed), you are almost literally hitting it with the</p>
+<p>The difficulty with the backhand is control, because all</p>
+<p>you have behind the racket when you contact the ball is</p>
+<p>your thumb and less than half of your hand. The hand is</p>
+<p>turned a quarter inch or so on the handle so that the V</p>
+<p>formed by thumb and forefinger straddles the left edge of</p>
+<p>the handle. Thus, timing is actually more important in</p>
+<p>the backhand stroke than in the forehand, because the</p>
+<p>power and control that you get on the backhand comes,</p>
+<p>not from a strong grip, but from timing. So it is essential</p>
+<p>that you develop a lot of racket-head momentum and</p>
+<p>To get power, it’s important to meet the ball earlier on the backhand</p>
+<p>side than on the forehand side. Always try to hit the ball before it gets</p>
+<p>past your front foot.</p>
+<p>make contact with the ball in front of your right foot.</p>
+<p>The swing itself is an upward motion. You want to</p>
+<p>bring the racket back as low as is comfortably</p>
+<p>possible—past the left hip is a good place to start it</p>
+<p>from—and sweep your arm in an upward motion,</p>
+<p>ending high and wide. But remember, the point of con-</p>
+<p>tact must be in front of the right foot. If the ball gets past</p>
+<p>Yyy&gt; In the backhand grip, the V formed. ;</p>
+<p>by thumb and first finger is lined up</p>
+<p>along the left edge of the panel on</p>
+<p>top of the racket. That puts more of</p>
+<p>the thumb behind the handle for</p>
+<p>greater control.</p>
+<p>7.</p>
+<p>In these backhand pictures, the player shifts side-on to the ball as he takes the racket</p>
+<p>straight back, then moves his weight forward, into the shot, and follows through high.</p>
+<p>Holding the racket with two hands instead of one hand helps many youngsters control</p>
+<p>shots better on the backhand side. It’s worth using the two-handed grip if you’ re having</p>
+<p>trouble swinging the racket one-handed, or if your backhand shots lack any power.</p>
+<p>your right foot into the area of your belly-button or left</p>
+<p>foot, you are in trouble.</p>
+<p>Contact the ball with your weight shifting from</p>
+<p>your left foot to your right foot (just the opposite of the</p>
+<p>forehand), and follow through with your arm sweeping</p>
+<p>high and wide. At the finish, the elbow of your right arm</p>
+<p>should point directly at the fence along the right side of</p>
+<p>the court.</p>
+<p>One fault many beginners make on the backhand is carr-</p>
+<p>ing the elbow of the hitting arm too high as they prepare</p>
+<p>to hit the stroke. This is an attempt to compensate for a</p>
+<p>weak wrist, and women and juniors are especially guilty</p>
+<p>of it. It causes you to sling your racket at the ball in a</p>
+<p>sidespin-producing motion. Practice keeping your elbow</p>
+<p>down as you begin to time the ball better. Chris Evert is a</p>
+<p>good example of a top player who hits the ball with her</p>
+<p>elbow down. The same is true of Borg and Connors and</p>
+<p>Laver—and Ashe.</p>
+<p>As with the forehand, another key fault in the back-</p>
+<p>hand is not getting the racket back in time to make the</p>
+<p>stroke. If you don’t get the racket back in time, you’re</p>
+<p>going to hurry the shot.</p>
+<p>Many players weaken their backhand strokes by allowing the elbow of</p>
+<p>their hitting arm to collapse as they stroke through the ball. If you try</p>
+<p>not to let the wrist get too far ahead of the racket hand when you swing,</p>
+<p>you won t make this mistake.</p>
+<p>Score 20 points for each correct answer. A perfect</p>
+<p>score is 100.</p>
+<p>1. What is the most important thing in hitting the back-</p>
+<p>hand?</p>
+<p>2. What is the contact point for the ball with the back-</p>
+<p>hand?</p>
+<p>3. From what racket position should you start the back-</p>
+<p>hand?</p>
+<p>4. How should your weight shift as you strike the ball?</p>
+<p>5. What are the two most common faults in hitting the</p>
+<p>backhand?</p>
+<p>1. Timing.</p>
+<p>2. In front of your right foot.</p>
+<p>3. Somewhere near the left hip.</p>
+<p>4. From your left foot to your right foot.</p>
+<p>5. Carrying the elbow too high, and not getting your</p>
+<p>racket back in time.</p>
+<p>A VOLLEY IS a shot hit before the ball touches the</p>
+<p>ground on your side of the net. The correct grip to use to</p>
+<p>volley is neither the forehand nor backhand grip, but the</p>
+<p>continental grip. The V formed by thumb and forefinger is</p>
+<p>positioned exactly at the center of the top panel. With this</p>
+<p>grip, you can volley balls hit to your left or your right</p>
+<p>side.</p>
+<p>The big differences between the volley and ground-</p>
+<p>strokes (forehand and backhand) are:</p>
+<p>1. In the ready position for the volley, instead of the</p>
+<p>racket being parallel to the ground, the head of the racket</p>
+<p>is cocked upward so that the head of the racket is in line</p>
+<p>with your eyes.</p>
+<p>2. On the forehand volley, you must bend the wrist</p>
+<p>outward as you stroke, and on the backhand volley you</p>
+<p>cA SoS SSK @ Som POI OEE SSSA ISIS SOT BSI SS , Bete oh eek ot a! Yoretetet ctigsiget</p>
+<p>When you’ re up at net looking for a</p>
+<p>chance to volley, remember to hold</p>
+<p>the racket head high, as shown, anc</p>
+<p>to place your free hand on the</p>
+<p>throat of the racket as an aid in</p>
+<p>moving the racket to the forehand</p>
+<p>or backhand side when you spot the</p>
+<p>ball’ s direction.</p>
+<p>must bend it back toward your body. On the forehand</p>
+<p>volley, the wrist bend is similar to one you would use in</p>
+<p>preparing to catch a ball thrown to you. On the backhand</p>
+<p>volley, the wrist bend is like one you would use in slap-</p>
+<p>ping someone next to you with the back of your hand.</p>
+<p>The length of the volley stroke is quite short with little</p>
+<p>or no backswing involved. The stroke is on a down and</p>
+<p>out path, which permits the racket to impart underspin to</p>
+<p>the ball.</p>
+<p>Never let the racket get behind you when volleying.</p>
+<p>Keep it in front of you, and the earlier you hit the ball,</p>
+<p>the better. Hold the racket a little tighter because the</p>
+<p>ball is traveling roughly twice as fast at the net as it is</p>
+<p>when it gets back to the baseline. Also, keep your</p>
+<p>elbow as close to your rib cage as possible. You don’t</p>
+<p>want your elbow flying off into space during a volley.</p>
+<p>The major technical fault made in volleying is swinging</p>
+<p>the racket across the body, rather than in a downward</p>
+<p>motion under the ball and out toward the net.</p>
+<p>Most faults in volleying are psychological. Players</p>
+<p>tend to flinch at net because they are scared or nervous.</p>
+<p>They have not psychologically mastered the volley posi-</p>
+<p>tion. When you get to the net, you are in command,</p>
+<p>and when you see the ball coming you must go after it.</p>
+<p>You must approach the volley as if you are in control</p>
+<p>of the situation.</p>
+<p>When you flinch, the racket head is usually dropped</p>
+<p>below the wrist, and you end up hitting the ball into the</p>
+<p>bottom of the net. The racket must be kept cocked up</p>
+<p>at eye level. With the ball traveling at increased speed,</p>
+<p>The volley is a short stroke with lit-</p>
+<p>tle or no backswing. The first moves</p>
+<p>(Figs. 1 and 2) should be toward</p>
+<p>the oncoming shot. The sooner you</p>
+<p>meet the ball, the more weight you&#x27;ll put in the shot and the sooner</p>
+<p>it will get back over the net. The</p>
+<p>finish (Fig. 3) shows that the stroke</p>
+<p>has been made with the racket head</p>
+<p>sliding under the ball. This puts</p>
+<p>underspin on the shot for greater</p>
+<p>control. Notice where the player&#x27;s</p>
+<p>left hand is in Fig. 2. He’s really</p>
+<p>using that free hand to keep the</p>
+<p>head of the racket from going back</p>
+<p>too far and getting behind his body.</p>
+<p>hand and eye coordination must be keener. Actually put-</p>
+<p>ting the racket near eye level not only helps with this, but</p>
+<p>also gives more support to the shot when the ball is hit.</p>
+<p>Score 12% points for each correct answer. A perfect</p>
+<p>score is 100.</p>
+<p>. What is the correct grip for the volley?</p>
+<p>. Where do you hold the racket to be ready to volley?</p>
+<p>. What should your wrist do on the forehand volley?</p>
+<p>. What should your wrist do on the backhand volley?</p>
+<p>. What must you never do with your racket in the vol-</p>
+<p>ley?</p>
+<p>6. Should you grip the racket tighter or more loosely</p>
+<p>when you volley?</p>
+<p>7. How do you make contact with the ball in the volley</p>
+<p>stroke?</p>
+<p>8. How should you feel when you are at the net to vol-</p>
+<p>ley?</p>
+<p>. The continental grip.</p>
+<p>. Cocked upward directly in front of you at about eye</p>
+<p>level.</p>
+<p>. Bend outward.</p>
+<p>. Bend backward.</p>
+<p>. Let it get behind you.</p>
+<p>. Tighter.</p>
+<p>. A short stroke downward and outward toward the net.</p>
+<p>. You should feel that you are in command of the situa-</p>
+<p>tion.</p>
+<p>A GOOD DEAL of your success in tennis will depend</p>
+<p>on how well you serve, so it is important to develop a</p>
+<p>toss-and-service motion that works for you.</p>
+<p>There are two grips for serving. The forehand-type</p>
+<p>grip gives a wide-open racket face to the ball when you</p>
+<p>swing it from your shoulder. The more advanced</p>
+<p>backhand-type grip gives a more closed racket face to the</p>
+<p>ball and so produces more spin and control in the long</p>
+<p>run.</p>
+<p>The beginner should start serving with a forehand</p>
+<p>grip. Stand on the baseline near the center service mark</p>
+<p>with the intention of placing the ball in the opposite</p>
+<p>service court.</p>
+<p>To begin your serve, put your racket on your</p>
+<p>shoulder, and place the ball in the tips of four fingers</p>
+<p>In first learning to serve, put the</p>
+<p>racket on your shoulder before</p>
+<p>making the toss. That will make it</p>
+<p>much easier to coordinate the two</p>
+<p>actions of lifting the ball and swing-</p>
+<p>ing the racket.</p>
+<p>of the left hand. Your little finger should not touch the</p>
+<p>ball. (If you are under twelve, do not put any fingers on the</p>
+<p>ball at all, but simply hold it in the palm of your open</p>
+<p>hand.) Now, facing the right net post, start your left</p>
+<p>arm up to toss the ball, holding the arm straight out—</p>
+<p>but not stiff—and move it in a line straight up the net</p>
+<p>post. At the same time, your right arm should be</p>
+<p>bringing your racket back and up. The two arms start</p>
+<p>this motion together.</p>
+<p>The toss should begin with your weight on your right</p>
+<p>foot, and when you release the ball you should start your</p>
+<p>weight forward onto your left foot as you prepare to hit</p>
+<p>the ball.</p>
+<p>The ideal toss is one which puts the ball at a height</p>
+<p>you can reach with your arm and racket fully ex-</p>
+<p>The best toss is one which puts the</p>
+<p>ball at a height you can reach with</p>
+<p>your arm and racket fully extended.</p>
+<p>As the ball is released, the racket is</p>
+<p>taken back in a natural manner</p>
+<p>similar to that used in winding up to</p>
+<p>throw a baseball.</p>
+<p>Here’s the proper starting position</p>
+<p>for the serve once you’ ve gotten the</p>
+<p>knack of coordinating ball toss with</p>
+<p>swing. The ball is held lightly in the</p>
+<p>fingertips and the racket is cradled</p>
+<p>comfortably on the wrist of the toss-</p>
+<p>ing hand. It’s important to stay</p>
+<p>nice and loose—relaxed—Sor the</p>
+<p>serve because it requires more</p>
+<p>rhythm than any other stroke.</p>
+<p>Just before the ball begins to drop, reach</p>
+<p>up and forward and hit through it with</p>
+<p>your racket. Finish the stroke with your</p>
+<p>right foot inside the baseline. That for-</p>
+<p>ward step is very important. It makes you</p>
+<p>toss the ball far enough in front.</p>
+<p>tended. Just before the ball begins to drop, reach up and</p>
+<p>hit through it with your racket. Finish the stroke with</p>
+<p>your right foot inside the base line.</p>
+<p>Trial and error will teach you how fast to hit the ball</p>
+<p>and how to get it across the net into the proper service</p>
+<p>court. Once you achieve this, you will have mastered the</p>
+<p>beginner’s serve.</p>
+<p>As you become a more experienced player, you can</p>
+<p>switch to the backhand-type grip, or continental grip, to</p>
+<p>serve. With the more closed racket face caused by these</p>
+<p>grips, greater spin is put on the ball.</p>
+<p>In first learning to serve, don’t hit the ball into the</p>
+<p>comers or near the sideline. Simply try to get it across the</p>
+<p>net and into the proper court.</p>
+<p>Also, never toss the ball up while you are shifting your</p>
+<p>weight backward. Only toss it while your weight is lean-</p>
+<p>ing forward.</p>
+<p>If you are under twelve and have been tossing the ball</p>
+<p>with an open palm as we suggested, you can begin to</p>
+<p>improve your toss after playing awhile by learning to hold</p>
+<p>the ball in your fingertips.</p>
+<p>If you find yourself hitting the ball into the net,</p>
+<p>chances are you are not tossing the ball high enough</p>
+<p>into the air over your head when you serve. This</p>
+<p>causes you to bend your elbow too much and swing with</p>
+<p>a cramped arm motion. Toss the ball nice and high,</p>
+<p>perhaps just a bit higher than you can reach with your</p>
+<p>racket.</p>
+<p>If you toss the ball too high, however, you will have to</p>
+<p>wait for it to come down, and this will delay and weaken</p>
+<p>your serve.</p>
+<p>You may also find that, although you are tossing the</p>
+<p>ball up and a little into the court in the direction of the</p>
+<p>right net post, it seems to be arcing back toward you. The</p>
+<p>problem may be that you are holding the ball in the palm</p>
+<p>of your hand and, as the ball rolls off your fingers, which</p>
+<p>curl inward, it tends to travel on an arc back toward you.</p>
+<p>The ball has started out in the right direction, but has</p>
+<p>arrived at the wrong place.</p>
+<p>The body works better when both arms work together.</p>
+<p>In tossing the ball and winding up your racket for the</p>
+<p>serve, try to coordinate these movements.</p>
+<p>Score 15 points for each correct answer. A perfect</p>
+<p>score is 105.</p>
+<p>1. Which racket grip should a beginner use to serve the</p>
+<p>ball?</p>
+<p>2. Where should your racket be placed to begin the</p>
+<p>serve?</p>
+<p>3. What point should you face to begin the serve?</p>
+<p>4. How should your weight shift as you toss the ball into</p>
+<p>the air?</p>
+<p>5. How high should you toss the ball?</p>
+<p>6. If you hit the net when you serve, what is one possible</p>
+<p>reason?</p>
+<p>7. Do the arms work together or separately when you</p>
+<p>serve?</p>
+<p>. The forehand grip.</p>
+<p>. On your right shoulder.</p>
+<p>3. The right net post.</p>
+<p>4. From your right foot to your left foot. ) . As high as, or just a bit higher than, you can reach</p>
+<p>with your racket.</p>
+<p>. You did not toss the ball high enough.</p>
+<p>7. Together.</p>
+<p>BEFORE YOU CAN hit the ball, you have to get to</p>
+<p>it—on all shots in tennis except the serve. And that in-</p>
+<p>volves footwork. Even if an opponent hits a ball right at</p>
+<p>you, proper footwork must be used to make your return</p>
+<p>stroke.</p>
+<p>Ile Nastase and Evonne Goolagong represent the ul-</p>
+<p>timate in grace and footwork on the tennis court. They</p>
+<p>are so athletically coordinated that they just seem to float</p>
+<p>across the surface.</p>
+<p>For purity in footwork preparation, one has to point to</p>
+<p>Ken Rosewall. He is seemingly always in position.</p>
+<p>That’s because he moves so quickly to get to the ball.</p>
+<p>Efficient, smooth weight shift is what makes</p>
+<p>Goolagong, Nastase and Rosewall look so graceful.</p>
+<p>Flow is another word for effective weight shift. It’s</p>
+<p>something that originates in good footwork, and it has to</p>
+<p>be learned.</p>
+<p>Good footwork does three things:</p>
+<p>1. It enables you to shift your weight from your rear</p>
+<p>foot to the front foot, thereby transferring your body</p>
+<p>weight to the ball as you swing.</p>
+<p>2. It helps you maintain balance (if your footwork is</p>
+<p>correct and you practice it, you will find you will be</p>
+<p>much more balanced than someone who does not know</p>
+<p>the correct techniques of footwork).</p>
+<p>3. It helps your coordination.</p>
+<p>Let’s examine these three elements in more detail.</p>
+<p>If you don’t shift your weight from the back foot to the</p>
+<p>front foot, you’re really spinning your wheels. You’re</p>
+<p>not using your body to the best advantage, so it is not</p>
+<p>working efficiently. When you do shift your weight, you</p>
+<p>don’t have to swing at the ball as hard because your body</p>
+<p>is doing most of the work.</p>
+<p>Until you learn how to coordinate this weight shift</p>
+<p>from the back foot to the front foot as you move through</p>
+<p>the hitting zone and before the ball leaves your racket</p>
+<p>strings, you really won’t look like a smooth tennis</p>
+<p>player.</p>
+<p>Ideally, you want to keep the ball on your strings as</p>
+<p>your weight is shifting from the back foot to the front</p>
+<p>foot when making the stroke. When the ball leaves your</p>
+<p>racket strings heading for the other side of the net, your</p>
+<p>weight should then be on your front foot. When you</p>
+<p>finish either a forehand or backhand—with the racket</p>
+<p>high and wide—you should swing around, pivoting on</p>
+<p>the left foot for the forehand and on the right foot for the</p>
+<p>backhand. In so pivoting, you will be swinging your</p>
+<p>weight around to a balanced, ready position for your next</p>
+<p>stroke.</p>
+<p>It is easier to shift your weight if your knees are</p>
+<p>slightly bent, because this gives you a low center of</p>
+<p>gravity.</p>
+<p>The best way to achieve the proper weight shift is to</p>
+<p>concentrate harder during the time you make contact with</p>
+<p>the ball. That is, try to look at the ball harder, try to keep</p>
+<p>your knees bent a little bit longer, and resist the urge to</p>
+<p>look up before the ball leaves your strings. As your</p>
+<p>weight is shifting through the stroke, keep your eye on</p>
+<p>the area of the strings. You know where the ball is going</p>
+<p>to go, so don’t worry about it; in time, you can hit a ball</p>
+<p>into the correct part of the court almost blindfolded.</p>
+<p>Basically, when you look up, you are trying to see if</p>
+<p>you have hit a correct shot; but you are taking your eye</p>
+<p>off the ball and hitting an incomplete shot, one in which</p>
+<p>the ball does not stay on the strings long enough.</p>
+<p>Balance is really everything when it comes to looking</p>
+<p>good on the tennis court. Some players, when they finish</p>
+<p>a stroke, look as if they are about to fall flat on their face,</p>
+<p>or flat on their backside.</p>
+<p>If you set up wrong when you hit the ball, you’re off</p>
+<p>balance when you complete your stroke, and that’s proof</p>
+<p>a.</p>
+<p>A balanced ready position is the starting</p>
+<p>point for getting to each ball quickly and ef-</p>
+<p>ficiently in tennis.</p>
+<p>At the baseline (LEFT), awaiting serve or</p>
+<p>taking up your position between shots, your</p>
+<p>knees should be bent, weight centered on the</p>
+<p>balls of the feet, and racket held comfortably</p>
+<p>in front of the body, pointing at the net.</p>
+<p>The ready position is the same at net (BE-</p>
+<p>LOW) except that the racket head is held</p>
+<p>much higher. That makes it easier to hit</p>
+<p>down on the ball with your volley stroke and</p>
+<p>also speeds up your reactions because the</p>
+<p>racket is at eye level.</p>
+</section>
+<section class="chapter" id="sec-3">
+<h2>Part 3  ·  pp. 61–90</h2>
+<p>that you’ve done something wrong. Usually, the problem</p>
+<p>is that you are standing ‘‘too tall.’’ If you remember to</p>
+<p>bend the knees and keep the body weight closer to the</p>
+<p>ground, you will be in a more stable position.</p>
+<p>Think of it this way: If you stood straight up with your</p>
+<p>knees locked without any flex at all and your hands down</p>
+<p>by your sides, someone pushing against your shoulder</p>
+<p>would be able to knock you over rather easily. However,</p>
+<p>if you were to spread your legs a bit, bend your knees and</p>
+<p>put your arms out like a defensive guard in basketball,</p>
+<p>you could resist a push several times stronger than the</p>
+<p>first one.</p>
+<p>The correct body position for balance (as you quickly</p>
+<p>get into position with your good footwork) at the end of</p>
+<p>the forehand stroke is for your right arm to be between</p>
+<p>your left shoulder and your head. But where should your</p>
+<p>left arm be? Well, your left arm should be extended a bit</p>
+<p>to counterbalance you when your right shoulder is pulled</p>
+<p>way around. If you put your left hand into your pocket</p>
+<p>and really swing at a forehand, you are liable to fall on</p>
+<p>your right shoulder.</p>
+<p>Try it. Not so hard that you actually fall, but just</p>
+<p>enough so you get the sensation of what is called ‘‘cen-</p>
+<p>trifugal force’’ pulling you not only around, but down. If</p>
+<p>you try hitting the backhand with your left hand in your</p>
+<p>pocket, the feeling is that you will not be able to stop</p>
+<p>unwinding yourself.</p>
+<p>If your legs are spread out sufficiently when you finish</p>
+<p>oe!</p>
+<p>These pictures show an effective use of body weight in the forehand stroke. Early on the</p>
+<p>backswing (Fig. 1), the weight is on the back foot. As the racket nears the ball (Fig. 3) the</p>
+<p>weight moves onto the front foot, to make sure enough power will be put into the shot. In</p>
+<p>the balanced follow-through (Fig. 4) the racket has swung around high and wide and the</p>
+<p>player is ready to move into position for his next shot.</p>
+<p>your stroke, if your knees are bent and you’ve stayed low</p>
+<p>throughout the whole shot, and if your left arm is ex-</p>
+<p>tended a bit to counterbalance that spinning effect of the</p>
+<p>backhand or falling down on your right shoulder on the</p>
+<p>forehand, then you won’t feel awkward when you finish</p>
+<p>the stroke.</p>
+<p>I saved discussion of coordination for last because if</p>
+<p>you do the two things I just mentioned—shift your</p>
+<p>weight and maintain your balance—you will auto-</p>
+<p>matically achieve coordination. Weight shift plus bal-</p>
+<p>ance equals coordination.</p>
+<p>But let’s say you are shifting your weight but you’re</p>
+<p>not balanced. This usually happens if you are standing</p>
+<p>too tall (knees not flexed) at the beginning, middle or end</p>
+<p>of the stroke. Or, you are maintaining your balance but</p>
+<p>not shifting your weight. Then your arm will have to try</p>
+<p>to make up for the work your body should have done,</p>
+<p>and you will end up swinging too hard. When you swing</p>
+<p>too hard, you cannot stay balanced and therefore you</p>
+<p>become uncoordinated.</p>
+<p>In moving to hit a ball coming onto your side of the</p>
+<p>court, you want to ‘‘skip’’ to the ball. That is, from the</p>
+<p>ready position, with your weight forward on the balls of</p>
+<p>your feet, you ‘‘skip’’ sideways—without your legs</p>
+<p>crossing each other—until you get to the ball. Then you</p>
+<p>move your left leg past your right to hit the forehand, or</p>
+<p>your right leg past your left to hit a backhand.</p>
+<p>Remember to keep your knees slightly bent rather than</p>
+<p>straight and stiff. Also, you should always try to keep</p>
+<p>your weight a little bit forward on the balls of your feet or</p>
+<p>your toes. If you rest your weight on your heels, you may</p>
+<p>easily find yourself suddenly off balance.</p>
+<p>You will have to learn much of proper movement on a</p>
+<p>court through trial and error, by trying to do it right and</p>
+<p>looking out for your own mistakes. Remember, it takes</p>
+<p>as much patience to learn the game of tennis as it does to</p>
+<p>learn to read or solve math problems. Some things may</p>
+<p>not come as easily as others at first, but if you keep</p>
+<p>trying, one day a particular movement will suddenly feel</p>
+<p>right and you will see the results. Practice makes perfect.</p>
+<p>IF YOU HAVE BEEN watching tennis matches on</p>
+<p>TV or at your local park, you probably already know that</p>
+<p>the object of the game is to hit the ball into your oppo-</p>
+<p>nent’s court in such a way that he or she (1) cannot reach</p>
+<p>it to return it, or (2) hits it back into the net or outside the</p>
+<p>boundary lines. Each time that happens, you earn one</p>
+<p>point. The first player to score four points with at least a</p>
+<p>two-point advantage wins a game.</p>
+<p>However, tennis has a somewhat different method of</p>
+<p>scoring. It is traditional rather than logical. Each time</p>
+<p>you win a point, it is not recorded or credited as a point.</p>
+<p>The first point either side wins is recorded as **15,’’ and</p>
+<p>the player having no points, instead of being said to have</p>
+<p>zero, is recorded as ‘‘love.’’ Thus if the person serving</p>
+<p>scores the first point, the score at that time is called</p>
+<p>HOW TO PLAY A GAME... SET... MATCH</p>
+<p>**15-love.’’ Since the server’s score is always called</p>
+<p>first, if his opponent scores the first point, the score is</p>
+<p>called “‘love-15.’’ The second point scored by either</p>
+<p>player is credited as ‘‘30,’’ but the third point, when</p>
+<p>added to the first two points, gives the player a total of</p>
+<p>**40,’’ rather than °°45,’’ as logic would seem to de-</p>
+<p>mand. On either of the first two points, if the score be-</p>
+<p>comes tied it is then called °**15-all,’’ or ‘*30-all,’’ but if</p>
+<p>the score becomes tied with each player having 40, the</p>
+<p>score is referred to as **deuce,’’ and a player must score</p>
+<p>two consecutive points (that is, two in a row) to win the</p>
+<p>game. If he scores one point, the game is said to be at his</p>
+<p>chance to win because if he scores the next point it is his</p>
+<p>game. But if that player’s opponent scores the next point,</p>
+<p>the game is returned to deuce.</p>
+<p>The player serving first stands to the right of the center</p>
+<p>line and behind the baseline of what is called the</p>
+<p>forehand, or “‘deuce,’’ court (the left side is called the</p>
+<p>backhand, or ‘‘ad,’’ court). The serve is made over the</p>
+<p>net into the opposite service box.</p>
+<p>Here are the main rules you need to know to play the</p>
+<p>game.</p>
+<p>1. You get two chances to put the ball in play. If your</p>
+<p>first try hits the net but lands in the proper service</p>
+<p>court, it is called a “‘let’’ and you get to start over,</p>
+<p>HOW TO PLAY A GAME... SET... MATCH</p>
+<p>still having two chances. If your second serve hits</p>
+<p>the net and goes in, you get one more chance.</p>
+<p>Every time you hit the top of the net with your</p>
+<p>serve and it goes in, you start again with that</p>
+<p>serve.</p>
+<p>2. If your serve strikes the net but does not go across</p>
+<p>into the proper court, or if your ball clears the net</p>
+<p>but lands outside the proper court, it is called a</p>
+<p>‘“‘fault,’’ and you are allowed but one more try. If</p>
+<p>you fault on your second try, that point goes to</p>
+<p>your opponent.</p>
+<p>3. You cannot step into the court before you hit your</p>
+<p>serve. That is called a ‘‘foot fault.’’ Your feet must</p>
+<p>remain either behind the baseline or in the air until</p>
+<p>you hit the serve. You are allowed to jump, but you</p>
+<p>cannot back up two feet or more and get a running</p>
+<p>start. A foot fault counts the same as a fault.</p>
+<p>4. If you toss the ball up to hit it and you miss, that</p>
+<p>counts as a fault because you tried to hit it.</p>
+<p>5. If, when playing doubles, you hit either of your</p>
+<p>opponents with your serve before the ball touches</p>
+<p>the ground, you win the point. If you hit your</p>
+<p>partner while serving doubles, it is a fault if you do</p>
+<p>it on your first serve; it is a ‘‘double fault’’ (and</p>
+<p>you lose the point) if you do it on your second</p>
+<p>serve.</p>
+<p>6. You can serve any way you like (overhand, under-</p>
+<p>HOW TO PLAY A GAME... SET... MATCH</p>
+<p>arm, sidearm), as long as you hit the ball before it</p>
+<p>hits the ground.</p>
+<p>. If you break a string in your racket while serving a</p>
+<p>fault, that’s bad luck for you. It is not treated as a</p>
+<p>let. However, if something happens on the court</p>
+<p>between your first and second serves that is not</p>
+<p>your fault and it delays the game, you are allowed</p>
+<p>to serve your first serve again.</p>
+<p>. You cannot serve until your opponent is ready to</p>
+<p>retum.</p>
+<p>2.</p>
+<p>You must hit the ball on one bounce or while it is</p>
+<p>still in the air from your opponent’s racket.</p>
+<p>. If the ball hits any part of you or your clothing, you</p>
+<p>lose the point. You may use the racket only—any</p>
+<p>part of it.</p>
+<p>You change sides of the net with your opponent</p>
+<p>after the first game of every set, and then after</p>
+<p>every two games. When in doubt, add up the total</p>
+<p>number of games played in a set and if it is an odd</p>
+<p>number (one, three, five, seven, etc.), change</p>
+<p>sides.</p>
+<p>4. When you play a tie-breaker at six games each,</p>
+<p>change ends after every six points.</p>
+<p>. If a ball bounces or rolls onto your court from</p>
+<p>another court, you can play the point over again. If</p>
+<p>HOW TO PLAY A GAME... SET... MATCH</p>
+<p>a ball drops out of your pocket or that of your</p>
+<p>opponent, you can play the point over only if both</p>
+<p>players agree to.</p>
+<p>6. In doubles, after every set you and your partner</p>
+<p>may change the order of serving. That is, whoever</p>
+<p>served first in the last set may now serve second if</p>
+<p>you so desire.</p>
+<p>7. When playing without an umpire, be fair, and if</p>
+<p>you are not sure where the ball landed, play the</p>
+<p>point over again.</p>
+<p>8. In tournaments, you are not allowed any coaching</p>
+<p>until the match is over.</p>
+<p>After either player scores the first point, the server</p>
+<p>then moves from the right to the left side of the court and</p>
+<p>serves again, and he continues to alternate from side to</p>
+<p>side after each point is scored, serving the entire game.</p>
+<p>His opponent then serves the second game in the same</p>
+<p>manner. The games are continued until a player (or a</p>
+<p>team in doubles) wins six games, which makes him the</p>
+<p>winner of the “‘set.’’ Players may play a *‘match,’’ with</p>
+<p>the winner being the first player to win two sets (two out</p>
+<p>of three), or the first player to win three sets (three out of</p>
+<p>five).</p>
+<p>In playing sets, however, if the players become tied at</p>
+<p>five games each, one of them must win two games in a</p>
+<p>row to win the set. If a player wins but one game and</p>
+<p>then his opponent wins the next, tying the games at six-</p>
+<p>HOW TO PLAY A GAME... SET... MATCH</p>
+<p>all, then they play what is called a *‘tie-breaker.’’</p>
+<p>There are two kinds of tie-breakers: (1) sudden-death</p>
+<p>tie-breakers, and (2) the 12-point tie-breaker.</p>
+<p>There are two types of sudden-death tie-breakers. In</p>
+<p>the 13-point tie-breaker, the first person to score seven</p>
+<p>66 points wins the set. At six—all, the next point is “set</p>
+<p>point.’’ In the nine-point tie-breaker, the first player to</p>
+<p>score five points wins. At four—all the next point is “‘set</p>
+<p>With the nine-point tie-breaker, players take turns</p>
+<p>serving two points each for the first six points, after</p>
+<p>which the next server gets to serve three points in arow.</p>
+<p>In the 13-point sudden-death tie-breaker, the first</p>
+<p>server serves one point, and then the players alternate,</p>
+<p>serving two points each until the set is over.</p>
+<p>This is also true of the 12-point tie-breaker system. In</p>
+<p>a 12-point tie-breaker, the first player to score seven</p>
+<p>points with a two-point advantage wins the set.</p>
+<p>Tie-breakers are used whenever a set is tied at six—all. For a complete set of the official rules of tennis, write:</p>
+<p>U.S. Tennis Association, 51 East 42nd Street, New</p>
+<p>York, N.Y. 10017.</p>
+<p>TENNIS IS A _ game of true sportsmanship, and as</p>
+<p>such there are rules of etiquette—or conduct—which</p>
+<p>must also be observed.</p>
+<p>The rules of etiquette for the game of tennis should</p>
+<p>really be divided into two sections: (1) your attitude and</p>
+<p>actions toward yourself, and (2) your attitude and actions</p>
+<p>toward your opponent and the public.</p>
+<p>Your attitude about yourself has to be your first con-</p>
+<p>sideration, because how you present yourself, how your</p>
+<p>Opponent sees you, and how the public sees you, if any-</p>
+<p>body happens to be watching, has a lot to do with the</p>
+<p>way you will play, and it will go a long way toward</p>
+<p>determining how people think of you when you are out</p>
+<p>there playing, whether it’s in a public park or a private</p>
+<p>club.</p>
+<p>First, you should always be clean. Your clothes, even</p>
+<p>if they are simply cut-off jeans instead of a regular tennis</p>
+<p>outfit, should be neat and clean. The same is true of your</p>
+<p>shoes, even if they are not white tennis shoes.</p>
+<p>In general, you want a neat appearance because that’s</p>
+<p>the way the sport is. And if you form these good habits</p>
+<p>while you are young, you will keep them as you grow</p>
+<p>older.</p>
+<p>You also want to think about how you would like to be</p>
+<p>treated if you are going out to test yourself against some-</p>
+<p>body else in a sport such as tennis. You would not want</p>
+<p>your opponent to cheat you, or not try against you, or not</p>
+<p>really prepare for a serious match. When you finish a</p>
+<p>match, whether you were just practicing or playing in</p>
+<p>competition, you want to feel that you have had fun,</p>
+<p>gotten a lot of exercise, done your best, and want to</p>
+<p>come back and do it again.</p>
+<p>As for your attitude toward your opponent, first of all,</p>
+<p>you must realize that the most important thing about the</p>
+<p>game of tennis and you at this stage of your life—more</p>
+<p>important than whether you win or not—is that you have</p>
+<p>fun. You are not always going to win and you are not</p>
+<p>always going to lose; you will do some of both. But if</p>
+<p>you are doing serious practice or competition, you want</p>
+<p>to know that you were prepared well and you did your</p>
+<p>best, and that you got your share of the fun of the game.</p>
+<p>And this is the attitude you should have toward your</p>
+<p>opponent. If he starts screaming and yelling and throw-</p>
+<p>ing his racket, keep your cool.</p>
+<p>Another rule is, be on time. You probably do not like</p>
+<p>to be kept waiting and you should not keep your oppo-</p>
+<p>nent waiting. If you make an appointment to play at two</p>
+<p>o&#x27;clock, be there at ten minutes to two. The rule is: It is</p>
+<p>impossible to be on time if you are not there ahead of</p>
+<p>time. It most often takes a few minutes to get ready and</p>
+<p>get onto the court anyway.</p>
+<p>Once the game starts, in the absence of linesmen and</p>
+<p>other officials, make sure you call things as you see</p>
+<p>them. If you are not sure about how a ball lands, say</p>
+<p>‘*Play a let.’’ This is one way in which tennis differs</p>
+<p>from other sports—a point is sometimes replayed if there</p>
+<p>is doubt about which way it went. On a clay court, if a</p>
+<p>ball leaves a mark when it strikes near the base line, you</p>
+<p>can tell if it was in or out. But on a hard surface, where</p>
+<p>the ball does not leave a mark, then you have to take an</p>
+<p>educated guess and be very careful how you call it.</p>
+<p>Also during the game, you should always—but al-</p>
+<p>ways—call out the score after every point. That way,</p>
+<p>there should be no confusion later on as to what the score</p>
+<p>is.</p>
+<p>If there is any doubt in your mind about something</p>
+<p>regarding the game, ask your opponent; he is not your</p>
+<p>enemy, he is out there to have fun just as you are.</p>
+<p>Remember at all times that your opponent deserves</p>
+<p>just as much consideration as you do.</p>
+<p>And it is considered a mark of character and good</p>
+<p>sportsmanship always to shake hands with your opponent</p>
+<p>after a match.</p>
+<p>Now, whether you are playing in a tournament before</p>
+<p>an audience, or in a public park—which everybody’s tax</p>
+<p>dollars help to pay for—with people watching, you must</p>
+<p>be courteous to those looking on. There must be no pro-</p>
+<p>fanity, no racket-throwing, no intentional hitting of balls</p>
+<p>against the fence.</p>
+<p>It’s natural to get upset if you miss an easy shot. The</p>
+<p>problem with getting angry is, once you do it the first</p>
+<p>time, it gets worse and worse. It becomes easier to get</p>
+<p>mad the second time, and this time you are usually more</p>
+<p>angry than you were the first time. It just keeps building</p>
+<p>up and usually while it does, you start to lose. You may</p>
+<p>notice that if you miss a shot and then hit a ball into the</p>
+<p>back fence in anger, you will often end up missing the</p>
+<p>next two shots because you are still worrying over the</p>
+<p>first shot you missed. Think about it.</p>
+<p>What you want the public to know when you come off</p>
+<p>the tennis court is that you had a lot of fun, played well,</p>
+<p>and are a credit to the community and the sport.</p>
+<p>To sum it up, here are some final pointers:</p>
+<p>Most people wear tennis outfits, though you don’t</p>
+<p>have to. At a public park you can wear anything—</p>
+<p>almost. But you can, if you feel like it, purchase an</p>
+<p>inexpensive tennis outfit at any department store or</p>
+<p>tennis shop.</p>
+<p>a. Ifa ball from another court rolls onto your court but</p>
+<p>does not disturb you, finish your point and then</p>
+<p>return your neighbor’s ball. If the ball does roll into</p>
+<p>Keeping your court tidy and free of</p>
+<p>litter such as empty ball cans and</p>
+<p>soda bottles are simple ways of ob-</p>
+<p>serving good tennis etiquette and</p>
+<p>making the game more enjoyable</p>
+<p>for all players.</p>
+<p>the playing area, don’t get angry: just return the</p>
+<p>ball and play the point over.</p>
+<p>b. If you are playing with new balls purchased by</p>
+<p>your opponent or partner, offer to pay half the cost.</p>
+<p>c. Don’t ever call your opponent names or curse at</p>
+<p>him. Calling him a *‘cheat’’ is the worst. If you</p>
+<p>don’t think he plays fair, don’t play with him any-</p>
+<p>more. Always be fair. Cheating is never accept-</p>
+<p>able! Never!</p>
+<p>d. Always get off the court when your time is up.</p>
+<p>Usually courts are reserved an hour at a time, so</p>
+<p>when your time is up, leave.</p>
+<p>e. Don’t walk behind your neighbors’ court when</p>
+<p>they are playing a point. Wait until the point is</p>
+<p>over.</p>
+<p>f. Always leave the court as you would like to see</p>
+<p>your own court left. Pick up all your trash—old</p>
+<p>tennis cans, pop bottles, etc.</p>
+<p>g. In general, during a match, keep your comments to</p>
+<p>yourself. Don’t laugh at your opponent if he misses</p>
+<p>an easy one or brag about your great forehand.</p>
+<p>Now THAT YOU have tried the forehand, backhand,</p>
+<p>volley and serve, here are a couple of more strokes for</p>
+<p>you to learn—but only after you have gained some famil-</p>
+<p>larity with the first four.</p>
+<p>The important thing about hitting the lob is to get set</p>
+<p>by planting your back foot so that as you stroke the</p>
+<p>ball, you are leaning forward. You want to get under</p>
+<p>the ball and hit it up in the air as high as you can with</p>
+<p>an upward sweeping stroke and your racket facing</p>
+<p>the sky.</p>
+<p>A young player might use the lob quite a bit on a clay</p>
+<p>The lob is a shot played when you&#x27;re caught behind your own baseline</p>
+<p>and the opponent has moved up to net. The stroke is made by getting</p>
+<p>under the ball and hitting it in the air as high as you can with an upward</p>
+<p>sweeping action, and with the racket face pointing toward the sky.</p>
+<p>court to keep opponents as far back as possible. Chances</p>
+<p>are, if you hit a deep lob, unless your opponent returns</p>
+<p>with the same kind of shot, you would have an excellent</p>
+<p>opportunity to hit a drop shot on your next stroke.</p>
+<p>Ideally, your lob should drop somewhere between</p>
+<p>the service line and the baseline. If it drops anywhere</p>
+<p>in there, you are in great shape. You also want to hit it</p>
+<p>as high as possible because the higher you hit it, the</p>
+<p>straighter it will drop down. You may hit it up at an</p>
+<p>angle, but a very high lob will still drop straight down,</p>
+<p>and a ball dropping straight down is very difficult to hit.</p>
+<p>In fact, if such a ball is hit to you, be sure to let it bounce</p>
+<p>before you attempt to return it.</p>
+<p>The time to hit a nice high lob is when you are chasing</p>
+<p>a deep ball hit by your opponent and he is coming to the</p>
+<p>net.</p>
+<p>The strategy behind a very young player (thirteen years</p>
+<p>old or younger) hitting a drop shot is not to win the point,</p>
+<p>but to pull his opponent off to one side of the court,</p>
+<p>thereby leaving the other side open.</p>
+<p>Never try a drop shot from the baseline, not even if</p>
+<p>you go on to become a professional player some day.</p>
+<p>Only try a drop shot if your opponent has hit the ball</p>
+<p>within your service court, which means, as far as he is</p>
+<p>concerned, you are probably coming to the net to hit an</p>
+<p>approach shot (a shot you will hit back down the sideline</p>
+<p>and then come to the net).</p>
+<p>The reason I say “‘never’’ is because the margin for</p>
+<p>error is too high. You are likely to hit the ball into the</p>
+<p>net, or make it easy for your opponent to hit back a</p>
+<p>point-winning stroke.</p>
+<p>The element of surprise is all-important when hitting</p>
+<p>the drop shot, and you have to be able to hit it when you</p>
+<p>are in control of the shot.</p>
+<p>The technique in hitting the drop shot as far as a young</p>
+<p>player is concerned is simply to think about how hard</p>
+<p>you have to hit the ball to get it just over the net. Don’t</p>
+<p>think about how you are going to do it; how you do it will</p>
+<p>be dictated by your mental picture of the power the shot</p>
+<p>will require.</p>
+<p>Score 15 points for each correct answer. A perfect</p>
+<p>score is 90.</p>
+<p>1. What is the most important thing in getting set to hit a</p>
+<p>lob?</p>
+<p>2. In which direction should your racket face as you hit</p>
+<p>a lob?</p>
+<p>3. How high should you hit a lob?</p>
+<p>4. Where should your lob land?</p>
+<p>5. How should you hit a drop shot?</p>
+<p>6. When should you never hit a drop shot?</p>
+<p>1. Planting your foot back so that you can lean forward</p>
+<p>as you hit the ball.</p>
+<p>. Toward the sky.</p>
+<p>. As high as you can.</p>
+<p>4. Between the service line and the base line.</p>
+<p>5. Any way you can to get it just over the net.</p>
+<p>6 . From the baseline.</p>
+<p>ONCE YOU HAVE learned to hit the basic shots in</p>
+<p>tennis, you need to start thinking about where and when</p>
+<p>to hit those shots so that you can win over your op-</p>
+<p>ponent—who might be able to hit those same shots just</p>
+<p>as well as you can.</p>
+<p>Outplaying an opponent of equal or better shot-making</p>
+<p>ability involves what is known as strategy, and that is</p>
+<p>what we are talking about now.</p>
+<p>By far, the majority of points are won on errors made</p>
+<p>by your opponent, rather than by you making great shots.</p>
+<p>So, basically, the longer you can keep the ball on the</p>
+<p>court, the better your chances of winning the point. Bear</p>
+<p>that in mind as you consider these fundamentals of win-</p>
+<p>ning tennis strategy.</p>
+<p>1. When you are serving, try to get two out of three</p>
+<p>of all your first serves in. At your age, don’t</p>
+<p>expect to serve aces (a dazzling first ball that your</p>
+<p>opponent can’t hit back). All you want to do is</p>
+<p>develop a consistent serve, and if you can get two</p>
+<p>out of every three serves inside the service court at</p>
+<p>this stage of your learning, you will be really pre-</p>
+<p>paring yourself well as you grow older and</p>
+<p>stronger.</p>
+<p>. If you do commit a fault while serving, try to</p>
+<p>make that fault by hitting the ball over the service</p>
+<p>line rather than into the net (even though the re-</p>
+<p>sults are the same as far as your opponent and the</p>
+<p>score are concerned). The reason is this: It is</p>
+<p>much easier to learn to let up a little bit on your</p>
+<p>serve than to speed up. If you hit your first serve</p>
+<p>long, then you just hit your second one a bit</p>
+<p>easier. If you hit your first serve into the net, you</p>
+<p>still haven’t gotten to the ball park yet, and a little</p>
+<p>bit stronger on your second serve may still not be</p>
+<p>enough to get it over the net, while a lot stronger</p>
+<p>may be too much.</p>
+<p>. You should work toward building a good,</p>
+<p>sound spin service.</p>
+<p>. If you are serving and the score is 15~-all, 30-all</p>
+<p>or 15-40 (on this latter, your opponent is one</p>
+<p>point away from winning the game), serve the</p>
+<p>ball down the middle. It’s safer that way. Don’t</p>
+<p>open up the court by trying to serve wide to your</p>
+<p>opponent’s forehand.</p>
+<p>. If you are serving and the score is 15-love, 30-15</p>
+<p>or 40-love (you’re ahead on all of these), you</p>
+<p>might try serving the ball real wide.</p>
+<p>. When you get into a rally, get the ball back into</p>
+<p>the court four times before you even think</p>
+<p>about winning the point. If you will do that at</p>
+<p>your age against opponents of about the same age,</p>
+<p>I firmly believe you will win almost every match</p>
+<p>you play. It sounds simple, but remember this:</p>
+<p>Most people, especially juniors and beginners,</p>
+<p>tend to make an error within the first three</p>
+<p>shots.</p>
+<p>. Don’t even think about hitting an approach</p>
+<p>shot to the net unless the ball bounces within</p>
+<p>the service court. If the ball bounces between the</p>
+<p>service line and the baseline, stay in the back</p>
+<p>court. If you are going to hit an approach shot and</p>
+<p>come to the net, unless your opponent is way off</p>
+<p>court, hit the ball down the line. Then come in</p>
+<p>and expect your opponent’s shot to come back</p>
+<p>down the same line. That is, come in and stand a</p>
+<p>little bit left of center if you hit your backhand</p>
+<p>down the line, and if you hit your forehand, come</p>
+<p>in and stand a little bit right of center. This means</p>
+<p>you actually concede that part of the court that</p>
+<p>you have left open. If your opponent can actually</p>
+<p>put a ball past you into that part of the court, then</p>
+<p>10.</p>
+<p>11.</p>
+<p>12.</p>
+<p>he has really hit a fine shot. But you have the</p>
+<p>percentage part of the court (the part where the</p>
+<p>ball is mostly likely to come) covered like a blan-</p>
+<p>ket.</p>
+<p>. You should never consider hitting an approach</p>
+<p>shot cross court unless your opponent is just way</p>
+<p>off court and you have that part wide open. It is</p>
+<p>very dangerous to hit an approach shot cross</p>
+<p>court.</p>
+<p>. When in doubt about what to do in the back</p>
+<p>court, hit a nice, deep ball down the middle.</p>
+<p>You can’t hurt yourself with that.</p>
+<p>At your age, don’t think about trying to win the</p>
+<p>point on a return of your opponent’s serve.</p>
+<p>Remember the rule of getting the ball safely into</p>
+<p>your opponent’s side of the court four times be-</p>
+<p>fore trying to win the point. Winning it on return</p>
+<p>of service comes in three or four years, when you</p>
+<p>are stronger.</p>
+<p>If your opponent is a net-rusher, make sure that if</p>
+<p>he wins the point, you don’t lose it. That is, don’t</p>
+<p>try some spectacular passing shot that you</p>
+<p>might miss. Let your opponent go ahead and vol-</p>
+<p>ley the ball. He may be able to hit a shot that you</p>
+<p>will miss, but he might miss while trying to.</p>
+<p>If you find yourself trailing your opponent by</p>
+<p>quite a lot during a match, it is undoubtedly be-</p>
+<p>cause you have been making too many errors.</p>
+<p>Therefore, if you are already observing the rule of</p>
+<p>getting the ball into the court four times before</p>
+<p>trying to win a point, increase that number to</p>
+<p>five, thereby increasing the margin for your</p>
+<p>opponent to make an error. Learn to play more</p>
+<p>error-free tennis, because at every level of skill in</p>
+<p>tennis, matches are seldom really won; instead,</p>
+<p>they are lost—lost by the player who makes the</p>
+<p>most mistakes.</p>
+<p>PROFESSIONAL TENNIS PLAYERS—and young</p>
+<p>players would do well to follow this example—find it</p>
+<p>best to limber up before they even walk onto a tennis</p>
+<p>court. If at a single court, we usually run around the court</p>
+<p>four times. If there are two courts side by side, we run</p>
+<p>around the pair of them twice.</p>
+<p>Tennis is a very strenuous activity, and if you just</p>
+<p>walk onto the court and start running after tennis balls, it</p>
+<p>is like getting up in the morning and running a 440-yard</p>
+<p>dash. You must warm up your body first for five min-</p>
+<p>utes.</p>
+<p>Most players get to play at most courts for one hour at</p>
+<p>a time, so your body should be warmed up through exer-</p>
+<p>cises before you go on the court to play. This way, you</p>
+<p>won&#x27;t spend valuable minutes of the hour just warming</p>
+<p>up your body. But most important, by exercising before</p>
+<p>you walk on the court, you make it much less likely that</p>
+<p>you&#x27;ll get a cramp, sprain an ankle or develop soreness in</p>
+<p>shoulder or elbow.</p>
+<p>In addition to taking a pre-game run around the court,</p>
+<p>try this series of exercises too:</p>
+<p>Ve Stand with your hands on your hips and just roll</p>
+<p>your head in one direction for about 15 seconds.</p>
+<p>Then roll it the other way for 15 seconds.</p>
+<p>. With your arms at your sides, roll your shoulders</p>
+<p>forward and down and back up again for 15 sec-</p>
+<p>onds. Then roll them backward, then up, back and</p>
+<p>around for 15 seconds.</p>
+<p>. Stand with your feet shoulder-width apart and</p>
+<p>swing your arms in the same directions that you</p>
+<p>rolled your shoulders. Do this for 15 seconds in</p>
+<p>each direction.</p>
+<p>. Now, swing your arms back and forth horizontally.</p>
+<p>Swing them around as far as they can go! Do this</p>
+<p>for 20 seconds.</p>
+<p>. Stretch the back muscles used for serving by stand-</p>
+<p>ing with the feet a shoulder-width apart, extend</p>
+<p>both arms into the air and grab your left wrist with</p>
+<p>your right hand and slowly pull your left arm over</p>
+<p>your head. You should feel your left side stretch-</p>
+<p>ing. Pull as far as you comfortably can and hold it</p>
+<p>for 5 seconds. Then return both arms to extended</p>
+<p>positions in the air. Repeat this again, but this time</p>
+<p>Pe se ees Lo ta ; pes e on ce : i i IE is ee ae ae $ He oe</p>
+<p>Sage, 2 a Ge t: 5 vay) Gk me ge ye eer 2 % 4; : 3 o bh. be $s 6 % ts 5 e Rags %</p>
+<p>ois tei 4 %: ed eG $e é Tees op SE</p>
+<p>Tennis is such a strenuous activity that it’s wise for all players, young or old, to warm up</p>
+<p>for at least five minutes prior to a match. Exercises limber up the muscles—and they’ re</p>
+<p>fun to do.</p>
+</section>
+<section class="chapter" id="sec-4">
+<h2>Part 4  ·  pp. 91–120</h2>
+<p>you should be able to pull the left arm a little more.</p>
+<p>Hold it in that position for 5 seconds and then</p>
+<p>return to the straight-up position. Now switch,</p>
+<p>grabbing your right wrist with your left hand and</p>
+<p>repeat the exercise.</p>
+<p>6. Now for the legs. First, stand with your feet to-</p>
+<p>gether and reach down as far as you can with both</p>
+<p>hands and hold there for 5 seconds. Come back up</p>
+<p>and shake your legs. Repeat, but this time go down</p>
+<p>farther with your hands; hold for 5 seconds. Come</p>
+<p>back up and repeat a third time, making sure to go</p>
+<p>as far as you can this time, and hold for 5 sec-</p>
+<p>onds. Shake your legs.</p>
+<p>7. Sit on the floor and extend the left leg, but bend the</p>
+<p>right leg around so the right heel is close to your</p>
+<p>right thigh. Then with both arms try slowly, very</p>
+<p>slowly, to reach your left toes. Do this two or three</p>
+<p>times and then switch legs.</p>
+<p>8. For the last exercise, jump up as high as you can 10</p>
+<p>times. Now your body is warm. Let’s go out and</p>
+<p>play some tennis!</p>
+<p>ONCE YOU HAVE learned how to play the game of</p>
+<p>tennis, you should take a closer look at the court surface</p>
+<p>you’re playing on.</p>
+<p>There are various surfaces for outdoor courts, and dif-</p>
+<p>ferent ones for indoor courts. But there are really only</p>
+<p>two different surface characteristics: Clay courts and then</p>
+<p>all the hard courts.</p>
+<p>The ball bounces a lot faster on the hard courts,</p>
+<p>and the height of the bounce depends roughly on what</p>
+<p>is in the sub-soil. For instance, Dynaturf is a hard sur-</p>
+<p>face often used indoors. It has a thin layer of cork that</p>
+<p>makes you feel a little like you’re walking on mashed</p>
+<p>potatoes and causes the ball to bounce higher than, say,</p>
+<p>Laykold, another hard surface. That’s because the Dy-</p>
+<p>naturf surface with its layer of cork gives a little and</p>
+<p>COURT SURFACES—WHAT’S ON TOP COUNTS</p>
+<p>shoots the ball back out a bit.</p>
+<p>Clay courts ‘‘give’’ because clay is made of dirt, and</p>
+<p>dirt is compactible. That is, it compresses a little bit and</p>
+<p>shoots the ball back. The big difference in playing on</p>
+<p>clay is that you have to learn to slide, which you can’t do</p>
+<p>on hard or synthetic surfaces. Most of the time.on clay</p>
+<p>courts you will be hitting the ball at waist level or</p>
+<p>above, and you have to learn to slide into your shots</p>
+<p>so that when you come to the end of your slide, you</p>
+<p>are executing the forward part of your swing. Then</p>
+<p>you regain your balance and move back to the desired</p>
+<p>part of the court. Because of the sliding on clay, accu-</p>
+<p>racy becomes more important than speed, so you</p>
+<p>might want to string your racket a little more loosely</p>
+<p>so that when it contacts the ball, the ball will stay on the</p>
+<p>racket strings a little longer.</p>
+<p>If you are playing on a hard or asphalt-type sur-</p>
+<p>face, you should try playing with tighter strings be-</p>
+<p>cause in this case speed is more important than control.</p>
+<p>On these surfaces, the ball comes at you a lot faster.</p>
+<p>Clay is seldom found now as an indoor court surface</p>
+<p>because it is difficult to maintain inside. Therefore, if</p>
+<p>you play indoors you are more likely playing on</p>
+<p>Dynaturf, Laykold or Sportface (which is pretty much</p>
+<p>like a rug).</p>
+<p>Outdoors you will probably play on Laykold or a clay</p>
+<p>surface. There are three other common terms for clay: (1)</p>
+<p>composition, (2) Har-tru, and (3) En-tout-cas, a French</p>
+<p>COURT SURFACES—WHAT’S ON TOP COUNTS</p>
+<p>term which, roughly translated means ‘‘in all cases,”’</p>
+<p>literally meaning an all-weather court. But a clay court is</p>
+<p>a clay court.</p>
+<p>Practice for Fun and Improvement</p>
+<p>WHILE PLAYING tennis matches is fun, in order to</p>
+<p>really improve your game, you must practice, and that</p>
+<p>should be fun, too. Many people do not like to practice</p>
+<p>because they think of it as work or just drudgery. But</p>
+<p>there are games you can play while practicing. And re-</p>
+<p>member, while you are practicing, you are improving.</p>
+<p>It is not the number of hours a day you practice that is</p>
+<p>important. It is what you do while you are out there.</p>
+<p>Practice, except when you are playing practice</p>
+<p>matches, should be specific.</p>
+<p>Usually, if you are going to take a day to practice, it</p>
+<p>should be divided into two parts. The morning session</p>
+<p>should be limited to trying to improve some one shot on</p>
+<p>which you believe you are weak. You may hit forehand</p>
+<p>volleys, then you may hit backhand volleys for 20 min-</p>
+<p>PRACTICE FOR FUN AND IMPROVEMENT</p>
+<p>utes each. Then you may serve two buckets of balls</p>
+<p>(about 50 serves). You may also want to practice your</p>
+<p>quickness. If a friend wants to serve to you, you may</p>
+<p>want to simply practice your preparation for the return of</p>
+<p>service. You may want to conclude the session by a little</p>
+<p>rope-skipping, or sit-ups or some other exercise.</p>
+<p>Then cool it for a while.</p>
+<p>In the afternoon, you can come back and play matches</p>
+<p>or some other sort of competitive game. You can play an</p>
+<p>ordinary set with conventional scoring, or you may play</p>
+<p>an 11-point game in which the same person serves until</p>
+<p>he wins 11 points on his own serve. In this game it does</p>
+<p>not matter how many points your opponent gets. You</p>
+<p>keep serving until your own total reaches 11. Next your</p>
+<p>opponent takes over and serves until he wins 11 points.</p>
+<p>Then you can compare scores on who had to hit the most</p>
+<p>serves to win the 11 points. This can really take a long</p>
+<p>time, but you will get plenty of practice in serving</p>
+<p>against an opponent.</p>
+<p>You can play 21+ or 31-point matches, with each</p>
+<p>player serving five times in a row. And you can play the</p>
+<p>same game another way: If you want to improve your</p>
+<p>concentration on return of service, you can play that</p>
+<p>whoever wins the most points while returning service</p>
+<p>wins the match. (Jimmy Connors or Ken Rosewall would</p>
+<p>be great at this because they have great service returns.)</p>
+<p>This forces you to really concentrate not to miss that</p>
+<p>return of serve, which is usually caused by trying to go</p>
+<p>PRACTICE FOR FUN AND IMPROVEMENT</p>
+<p>for a winner off the return. Usually the game-winning</p>
+<p>total in this exercise is set no higher than 11 points.</p>
+<p>You definitely should not practice every day. Every</p>
+<p>now and then you should take two or three days off. This</p>
+<p>does not mean that you particularly need physical rest.</p>
+<p>Go swimming or play baseball or golf. Just don’t play</p>
+<p>tennis. Get away from it for a while. During this period</p>
+<p>you might think about the game, however, reviewing</p>
+<p>fundamentals in your mind, spotting your weaknesses</p>
+<p>and the cause of them, and deciding what to practice</p>
+<p>next.</p>
+<p>Danger signals, particularly in hot weather, include</p>
+<p>dizziness and nausea. If you feel yourself getting dizzy</p>
+<p>in the head or sick in the stomach, stop immediately.</p>
+<p>Your body is telling you something: You are not physi-</p>
+<p>cally equipped at this stage in your preparations to con-</p>
+<p>tinue.</p>
+<p>Watching tennis tournaments on television can be in-</p>
+<p>structive, but I don’t think you should watch shots so</p>
+<p>much as note what certain players do in particular situa-</p>
+<p>tions and at certain stages of the match. Pay attention to</p>
+<p>such things as when players hit an approach shot,</p>
+<p>whether they hit an underspin or a topspin backhand,</p>
+<p>what kind of serve they hit when down love-30, where</p>
+<p>they serve, and when a player chooses to lob.</p>
+<p>You can also learn a lot about what not to do. You may</p>
+<p>see a player get burned trying a cross-court approach shot</p>
+<p>and losing the point.</p>
+<p>PRACTICE FOR FUN AND IMPROVEMENT</p>
+<p>Certain players can be watched for certain strokes, but</p>
+<p>there is a danger in trying to copy what someone does</p>
+<p>just because he is a good player. As I said earlier, there</p>
+<p>are many different winning styles in tennis. Your style</p>
+<p>may not resemble the one you see on TV and therefore</p>
+<p>you would not benefit from emulation of it.</p>
+<p>A great way to learn while watching televised tennis is</p>
+<p>to take the statistical approach: Chart the match. Take a</p>
+<p>piece of paper and make five columns with the headings:</p>
+<p>serve, forehand, backhand, volley and overhead. Do this</p>
+<p>for both players. Now all you have to do is keep track of</p>
+<p>the errors made with these strokes. A pattern will de-</p>
+<p>velop quickly. A player’s weaknesses will become glar-</p>
+<p>ingly evident. Once they do, watch to see how he or she</p>
+<p>tries to compensate for them, and how his or her oppo-</p>
+<p>nent tries to exploit them.</p>
+<p>Make two more columns for each player at the bottom</p>
+<p>of the page. In one, mark down the number of points won</p>
+<p>because of an unreturnable shot. In the other, mark the</p>
+<p>number of points won because of an opponent’s error. At</p>
+<p>the end of the match, compare the two columns, and you ll discover in virtually all matches 90 percent of the</p>
+<p>points are lost rather than won. The conclusion is obvi-</p>
+<p>ous. To be a winner, you must cut down on the number</p>
+<p>of errors.</p>
+<p>Watching a televised match may not improve your</p>
+<p>game as much as practice can, but it can point out the</p>
+<p>aspects of the game which you need to work on. So next</p>
+<p>PRACTICE FOR FUN AND IMPROVEMENT</p>
+<p>time you&#x27;re home watching a match and somebody calls</p>
+<p>and asks what you’re doing, don’t say you’re watching</p>
+<p>TV, say you’re taking a lesson.</p>
+<p>WHAT YOU EAT and when you eat is important if</p>
+<p>you want to play good tennis.</p>
+<p>Your stomach empties in about an hour and a half.</p>
+<p>You should therefore try to eat from two to two and a</p>
+<p>half hours before playing a match.</p>
+<p>What you want to eat before a match are foods</p>
+<p>called carbohydrates. These include rice, spaghetti,</p>
+<p>potatoes, bread, etc.</p>
+<p>Carbohydrates are to muscles what gasoline is to a car.</p>
+<p>Your muscles cannot ‘“‘run’’ without them, because your</p>
+<p>muscles burn glucose and glycogen, of which carbohy-</p>
+<p>drates are made.</p>
+<p>You may have a great-looking, finely tuned body, but</p>
+<p>if there are not enough carbohydrates in your system,</p>
+<p>your muscles won’t work as well as they should.</p>
+<p>After you have played a match, your body actually</p>
+<p>loses cells, and these cells are rebuilt with foods known</p>
+<p>as protein, which help build a strong body and maintain</p>
+<p>body weight. Excellent sources of protein are lean meat,</p>
+<p>fish, eggs, cheese and yogurt, among others. Protein is to</p>
+<p>your body what a motor is to a car.</p>
+<p>Milk is always one of your best sources of good nutri-</p>
+<p>from dairy products before a match, because if you get</p>
+<p>nervous or upset, they curdle in your stomach.</p>
+<p>Remember to balance your meals with vegetables and</p>
+<p>salads and fruit.</p>
+<p>About half an hour before a match, try to drink as</p>
+<p>much liquid as you comfortably can. Then, sip a little</p>
+<p>bit of water or Gatorade every time you change court</p>
+<p>ends. One or two mouthfuls should be enough. You want</p>
+<p>to maintain a certain water level in your system through-</p>
+<p>out the match. Gatorade is pleasant-tasting and better</p>
+<p>than water because it is a balanced solution of water,</p>
+<p>sugar (containing the glucose your body needs) and salt</p>
+<p>(sodium), all of which the body burns at a balanced rate.</p>
+<p>If you play tennis on a very hot day, take a salt tablet</p>
+<p>after two sets. This will prevent cramps.</p>
+<p>AFTER YOU LEARN the fundamentals of tennis and</p>
+<p>you begin to play reasonably well, you may move into</p>
+<p>intermediate and, later, even advanced stages, through</p>
+<p>more reading, more practice, and more lessons.</p>
+<p>If you decide to become serious about the game—that</p>
+<p>is, to be better than the average player—there are four</p>
+<p>things you should do.</p>
+<p>1. Get the best equipment that you can afford.</p>
+<p>2. Take as many lessons on technical development</p>
+<p>and strategy as you possibly can.</p>
+<p>3. Having done the first two, start playing in as many</p>
+<p>competitive situations as you can—local tourna-</p>
+<p>ments, whatever. It is how you are able to per-</p>
+<p>form under pressure that will improve your</p>
+<p>level of expertise in the game.</p>
+<p>4. Play doubles, too. Doubles play is not only fun, but</p>
+<p>a great way to get more experience hitting lobs,</p>
+<p>volleys, and overheads. It teaches you the value of</p>
+<p>getting your first serve in, and familiarizes you</p>
+<p>with the style of play up at net.</p>
+<p>The first thing you look for in a teacher is whether he</p>
+<p>or she is a member of the U.S. Professional Tennis As-</p>
+<p>sociation, which is an organization of men and women</p>
+<p>who teach tennis for a living. The address of USPTA</p>
+<p>headquarters is: P.O. Box 145, Wakefield Station, New</p>
+<p>York, N.Y. 10466. If your teacher is a member, you can</p>
+<p>be sure he or she is a capable one. But you also should try</p>
+<p>to find out if this particular teacher is good with younger</p>
+<p>players. Some teachers are excellent with youngsters but</p>
+<p>not so good with adults, or it may be the other way</p>
+<p>around. Some teachers, excellent though they may be in</p>
+<p>teaching tennis, do not have the patience necessary to</p>
+<p>deal with very young players.</p>
+<p>If you are twelve or thirteen years old and thinking</p>
+<p>about becoming a professional tennis player, you should</p>
+<p>concentrate on being the very best you can in junior</p>
+<p>competition in the various age groups, because that is the</p>
+<p>training ground for professionals. The junior ranks con-</p>
+<p>tinually feed our professional ranks. The major junior</p>
+<p>competitions around the world are in Kalamazoo, Michi-</p>
+<p>gan (the U.S. National Juniors) and, the most important of</p>
+<p>them all, the Orange Bowl in Miami.</p>
+<p>If you have done very well in playing in tournaments</p>
+<p>in your region, then you should try to get an invitation to</p>
+<p>play in the Orange Bowl. This tournament brings to-</p>
+<p>gether the best junior players from all over the world.</p>
+<p>Some of the past winners of the Orange Bowl include</p>
+<p>Rod Laver, Tony Roche, John Newcombe, Harold Sol-</p>
+<p>omon and Billy Martin. You will know how well you</p>
+<p>stack up against other young players your age as a result</p>
+<p>of how well you do in the Orange Bowl. If your entry is</p>
+<p>even accepted into the Orange Bowl, you are pretty</p>
+<p>good.</p>
+<p>Exposing yourself to the best competition wherever</p>
+<p>you can is very important. Just do well in your own age</p>
+<p>division and the rest will take care of itself.</p>
+<p>If you are ten years old and you aspire to be a profes-</p>
+<p>sional tennis player, you will know in the next five years,</p>
+<p>probably, what kind of chance you have. If you have</p>
+<p>good equipment and good instruction and do not find</p>
+<p>yourself among the top players of your age in competi-</p>
+<p>tion in the region where you live, then the chances are</p>
+<p>against your making it as a tennis pro. But if you are</p>
+<p>keeping up with your age group regionally and nation-</p>
+<p>ally, please continue to work to become a pro.</p>
+<p>Generally, you need to be in good physical condition.</p>
+<p>The one thing physical conditioning gives you more</p>
+<p>than anything else is confidence. If you know that you</p>
+<p>are in better shape than your opponent, then you will be</p>
+<p>comfortable putting the ball in four times before you</p>
+<p>make a mistake because you know you have the staying</p>
+<p>power to hang in there and outlast the other player. It’s</p>
+<p>also very frightening psychologically to your opponent</p>
+<p>the next time you play him: He knows that not only did</p>
+<p>you beat him, but you outlasted him, you wore him out.</p>
+<p>You came off the court fresh and he was nearly</p>
+<p>exhausted.</p>
+<p>Another thing: It is not how fast you run the 100-yard</p>
+<p>dash that matters in tennis; it is how fast you run 20</p>
+<p>yards. You have to be quick rather than fast, for in</p>
+<p>tennis, quickness counts more than sheer speed.</p>
+<p>Remember also that you do not need brute strength.</p>
+<p>Timing is the thing. Strength can only help up to a point,</p>
+<p>and past that it gets in the way. Some players tend to</p>
+<p>think that if they are strong enough, they can simply</p>
+<p>muscle the ball and they won’t take time to master the</p>
+<p>fluidity necessary to get great timing. Simply trying to</p>
+<p>overpower Opponents does not make a championship</p>
+<p>tennis player.</p>
+<p>There is more to the game of tennis than just winning</p>
+<p>or losing, however. It is, in fact, a very character-</p>
+<p>building experience. From the very beginning, you</p>
+<p>should practice total honesty on the court. To begin</p>
+<p>with, tennis is a one-on-one sport—and at your level</p>
+<p>there will be no linesmen in most cases, except when you</p>
+<p>are playing in tournaments—and you will be calling your</p>
+<p>own lines. That is, on a ball hit close to the lines, you</p>
+<p>must call whether it is in or out. If your opponent hits a</p>
+<p>ball past you and it touches the line, you must have guts</p>
+<p>enough to call it ““good.’’ Otherwise, you cannot expect</p>
+<p>him to do the same in return.</p>
+<p>If you start to play competitive tennis early, you will</p>
+<p>find yourself among people from all walks of life, from</p>
+<p>different cultures, of different races, speaking different</p>
+<p>languages. More than anything else, you should take</p>
+<p>advantage of the wonderful opportunity to acquaint your-</p>
+<p>self with these differences so that you will become more,</p>
+<p>comfortable with them as you grow older.</p>
+<p>There is no room for ethnic, racial, class or</p>
+<p>economic prejudices in tennis. Tennis players come in</p>
+<p>all shapes, sizes and colors from all over the world, and</p>
+<p>in the locker room, they are all the same. Rod Laver, an</p>
+<p>Australian who is one of the best players the world has</p>
+<p>ever seen, may find his locker next to a player who had to</p>
+<p>qualify to enter a tournament. He doesn’t have a special</p>
+<p>room, he doesn’t get extra time on the massage table, he</p>
+<p>doesn’t get preferred treatment in the shower or the din-</p>
+<p>ing room or anywhere else. He may be seeded, but once</p>
+<p>the tournament starts he is treated just like everybody</p>
+<p>else. And that’s the way it should be.</p>
+<p>ACE: A point-winning service struck so well that an op-</p>
+<p>ponent fails to even touch it or attempt a return.</p>
+<p>ACROSS COURT: A shot played diagonally across the court</p>
+<p>from one corner to another; also termed ‘‘cross</p>
+<p>AD-IN, AD-OUT: Scoring expressions meaning advan-</p>
+<p>tage-server and advantage-receiver during a game</p>
+<p>that has reached deuce.</p>
+<p>ALLEY: The lane between the singles sideline and the</p>
+<p>doubles sideline; not in play in singles.</p>
+<p>AMERICAN TWIST: A serve in which the racket strikes the</p>
+<p>ball with an upward and sideward motion, causing</p>
+<p>the ball to spin and take a high bounce, usually to</p>
+<p>the receiver’s backhand.</p>
+<p>APPROACH SHOT: Usually a shot played from inside the</p>
+<p>service court, behind which the striker advances to</p>
+<p>the net position.</p>
+<p>BACKSPIN: Spin applied to the ball by hitting down be-</p>
+<p>hind it, causing the ball to rotate in the opposite</p>
+<p>direction it travels.</p>
+<p>BASELINE: The back line at either end of the court.</p>
+<p>CANNONBALL: A hard flat serve.</p>
+<p>CENTER MARK: The mark bisecting the baseline, defining</p>
+<p>one of the limits of the service position.</p>
+<p>CENTER SERVICE LINE: The line dividing the right and</p>
+<p>left service courts.</p>
+<p>CHANGE OF PACE: Altering the speed and power of shots.</p>
+<p>CONTINENTAL GRIP: Used by some players for forehand,</p>
+<p>backhand and volleys. Sometimes called the service</p>
+<p>grip.</p>
+<p>CRrOsS COURT: See ‘‘Across court.”’</p>
+<p>DEFAULT: To lose a match by not playing or by stopping</p>
+<p>before the match is completed.</p>
+<p>Deuce: A scoring expression used when players are tied</p>
+<p>after the fifth point in a game. One player must then</p>
+<p>score two successive points to win.</p>
+<p>DOUBLE FAULT: When the server fails to put either of the</p>
+<p>two serves allowed for each point into the correct</p>
+<p>court. A point is then awarded to his opponent.</p>
+<p>DOWN THE LINE: A shot hit to the same side of center</p>
+<p>from which it is hit.</p>
+<p>Drive: A shot hit after the bounce with a full stroke.</p>
+<p>Drop sHoT: A shot hit with underspin to land short on the</p>
+<p>other side of the net.</p>
+<p>EASTERN GRIP: The most common grip for holding a</p>
+<p>racket.</p>
+<p>FAuLT: A served ball that does not land in the proper</p>
+<p>court or is not properly served.</p>
+<p>FOOT FAULT: Standing inside, or putting a foot inside,</p>
+<p>the baseline before a served ball is struck.</p>
+<p>FORCING SHOT: A shot played from the baseline forcing</p>
+<p>the opponent on the defensive and eliciting a weak</p>
+<p>shot or an error.</p>
+<p>GAME POINT: A point which will give one player the</p>
+<p>game.</p>
+<p>GROUND STROKE: A stroke made after the ball is allowed</p>
+<p>to bounce.</p>
+<p>HALF VOLLEY: A shot hit just barely after it has hit the</p>
+<p>ground.</p>
+<p>HEAD: The frame and strings of the racket.</p>
+<p>Let: A served ball that touches the net but goes into the</p>
+<p>proper court. Also any stroke that does not count</p>
+<p>and is played over.</p>
+<p>Los: A ball that is hit high into the air and lands in the</p>
+<p>opponent’s backcourt.</p>
+<p>Love: A scoring term meaning zero, or nothing. It is</p>
+<p>derived from the French word ‘‘l’oeuf,’’ which</p>
+<p>means egg. When the game was taken up in Eng-</p>
+<p>land, the French word was pronounced ‘‘love.’’</p>
+<p>MATCH POINT: The point which, if won by the player</p>
+<p>who is ahead, wins the match. Double match point</p>
+<p>is when the score is 40-15 or 15-40 in a match</p>
+<p>game, and triple match point is when the score is</p>
+<p>40-love or love—40 in a match game.</p>
+<p>NET: The netting stretched across the middle of the court.</p>
+<p>NET GAME: A type of strategy in which a player attempts</p>
+<p>to reach a position in the front court in order to</p>
+<p>utilize volleys and overheads to win points.</p>
+<p>No MAN’S LAND: An area midway between the baseline</p>
+<p>and the service line in which a player should not</p>
+<p>stand while awaiting an opponent’s ball because it</p>
+<p>will most likely be at his feet.</p>
+<p>Not up: A call made when a player fails to play the ball</p>
+<p>before the second bounce.</p>
+<p>PASSING SHOT: A ball that passes an opponent at the net.</p>
+<p>PLACEMENT: A successful shot that an opponent cannot</p>
+<p>reach; usually a ground stroke.</p>
+<p>PoAcu: A play in doubles in which a player at net crosses</p>
+<p>into his partner’s half of the court to volley the ball.</p>
+<p>PoINT: A single score. Four points scored wins a game</p>
+<p>unless both sides have three points—thus the score</p>
+<p>is deuce—and one side must then score two con-</p>
+<p>secutive points to win.</p>
+<p>RALLY: A long series of shots in which both players are</p>
+<p>able to keep the ball in play.</p>
+<p>RANKINGs: A listing of players according to their per-</p>
+<p>formance of the previous year.</p>
+<p>SCRAMBLING: When a player is able to keep the ball in</p>
+<p>play regardless of correct technique.</p>
+<p>SEEDINGS: The listing of players in a tournament on the</p>
+<p>basis of recent performances.</p>
+<p>SERVICE: The act of putting the ball into play.</p>
+<p>SERVICE BREAK: When the server fails to win the game he</p>
+<p>serves.</p>
+<p>SET POINT: The point which, if won by the player who is</p>
+<p>ahead, wins the set.</p>
+<p>SIDELINE: The line at either side of the court that marks</p>
+<p>the outside edge of the singles playing service.</p>
+<p>SLICE: A ground stroke or volley hit with backspin.</p>
+<p>THROAT: The part of the racket where the head joins the</p>
+<p>handle.</p>
+<p>TIMING: The rhythm that produces a perfectly hit shot.</p>
+<p>TOPSPIN: Spin applied to the ball by hitting through the</p>
+<p>ball from low to high, causing the ball to rotate in</p>
+<p>the same direction it travels.</p>
+<p>ToucH: The delicate feeling some players develop for</p>
+<p>striking the ball or executing certain shots.</p>
+<p>Twist: A type of serve hit with topspin.</p>
+<p>VOLLEyY: A stroke made by hitting a ball before it has</p>
+<p>touched the ground, except in serving.</p>
+<p>H.</p>
+<p>fl f Tat bre Pil aor, AN Wav te Coe Tyson 7 eet</p>
+<p>Ce betiytir aehs, pasha) rope fey aN nen</p>
+<p>ies ee are aol a het ran 7 &#x27; pie Aisi ; Fai) Pentti Ween? GT ns, erty seein ra</p>
+<p>A te uel.</p>
+<p>Siena wie A a Seis Si ca! u Nie iv ae</p>
+<p>; ah PLUS 98 0 1) He 53 mn ACR AEE</p>
+<p>ious eeni nes] arr TOTTI)SenneRe aeyieee</p>
+<p>Ashe became the first black man to win the</p>
+<p>U.S. Open in 1968. Since then he has won</p>
+<p>the Wimbledon and the WCT Champion-</p>
+<p>ship, among numerous other tournament</p>
+<p>titles. He is co-founder of the National</p>
+<p>Junior Tennis League, the single largest or-</p>
+<p>ganization bringing tennis instruction to</p>
+<p>youngsters in our cities.</p>
+<p>In this book I will show you several good ways to hit a forehand, a</p>
+<p>backhand, the volley and the serve, and I will also mention a little</p>
+<p>about the lob and the drop shot. There will also be helpful tips on</p>
+<p>something that is not always explained in tennis books: how to move</p>
+<p>effectively on the tennis court.</p>
+<p>I will not teach you such shots as the topspin lob, the drop volley</p>
+<p>or a topspin backhand. As you get better, you may want to read a</p>
+<p>more advanced book on tennis or locate a teacher to show you how</p>
+<p>After we have treated the basic shots in tennis, I will tell you a</p>
+<p>little bit about strategy. Strategy is knowing where you should hit the</p>
+<p>ball in a certain situation. You may have a very good forehand and</p>
+<p>backhand, but if you hit the ball to the wrong place, you may find</p>
+<p>yourself in trouble. Strategy has a lot to do with how successfully we</p>
+<p>play this game.</p>
+<p>This book can help you get started in what is one of the most en-</p>
+<p>joyable and fastest-growing sports in the world. You should have no</p>
+<p>trouble understanding it, for I have tried to describe things very</p>
+<p>simply. The illustrations also should help you.</p>
+<p>—-ARTHUR ASHE ..</p>
+</section><footer class="end"><div class="sig">Tennis Books Library</div><div>English text extracted from the book's own PDF.</div></footer>
+</div>
+</div>
+</body>
+</html>

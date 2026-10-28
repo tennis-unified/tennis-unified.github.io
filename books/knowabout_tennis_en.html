@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Knowabout Tennis</title>
+<meta name="description" content="Tennis library">
+<meta name="author" content="Pham Duc Hai">
+<style>
+.tcq-book{
+  --tcq-paper:#faf9f5; --tcq-ink:#1a1c20; --tcq-ink-soft:#4a4e54;
+  --tcq-ink-faint:#8a8d93; --tcq-indigo:#1d5c63; --tcq-indigo-soft:#2f7d84;
+  --tcq-gold:#a8863c; --tcq-rule:#e2e1da; --tcq-panel:#ffffff;
+  background:var(--tcq-paper); color:var(--tcq-ink);
+  font-family:"Palatino Linotype","Book Antiqua",Cambria,"Times New Roman","Noto Serif",serif;
+  font-size:19px;line-height:1.78;-webkit-font-smoothing:antialiased;}
+.tcq-book .wrap{max-width:760px;margin:0 auto;padding:64px 28px 120px;}
+.tcq-book header.cover{text-align:center;padding:8px 0;}
+.tcq-book .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+.tcq-book header.cover .cover-art{width:100%;max-width:430px;margin:0 auto 30px;border-radius:10px;
+  box-shadow:0 14px 40px rgba(16,40,44,.28);display:block;}
+.tcq-book header.cover .kicker{letter-spacing:.28em;font-size:12px;text-transform:uppercase;
+  color:var(--tcq-indigo);font-weight:600;}
+.tcq-book header.cover h1{font-size:38px;line-height:1.16;margin:.4em 0 .12em;font-weight:600;
+  color:var(--tcq-ink);text-align:center;letter-spacing:0;}
+.tcq-book header.cover .sub{color:var(--tcq-ink-soft);font-size:20px;font-style:italic;}
+.tcq-book header.cover .blurb{color:var(--tcq-gold);font-size:16px;margin-top:.7em;
+  letter-spacing:.04em;}
+.tcq-book header.cover .by{margin-top:1.2em;color:var(--tcq-ink-faint);font-size:14px;
+  letter-spacing:.06em;}
+.tcq-book hr.lead{border:none;border-top:1px solid var(--tcq-rule);margin:36px 0;}
+.tcq-book .part-band{margin:88px 0 8px;padding:26px 0 22px;text-align:center;
+  border-top:1px solid var(--tcq-rule);border-bottom:1px solid var(--tcq-rule);}
+.tcq-book .part-band .part-kicker{letter-spacing:.3em;font-size:12px;text-transform:uppercase;
+  color:var(--tcq-gold);font-weight:600;}
+.tcq-book .part-band .part-name{font-size:23px;color:var(--tcq-indigo);margin-top:.5em;
+  font-style:italic;}
+.tcq-book .chapter{margin-top:56px;}
+.tcq-book h2.ch-title{font-size:29px;line-height:1.25;margin:0 0 .1em;font-weight:600;
+  color:var(--tcq-ink);letter-spacing:0;font-style:normal;
+  border-bottom:2px solid var(--tcq-indigo);padding-bottom:.25em;}
+.tcq-book h3{font-size:21px;margin:40px 0 12px;font-weight:600;color:var(--tcq-indigo);
+  font-style:normal;letter-spacing:0;}
+.tcq-book h4{font-size:18px;margin:30px 0 8px;font-weight:600;color:var(--tcq-gold);
+  font-style:normal;letter-spacing:.02em;}
+.tcq-book p{margin:0 0 1.15em;text-align:justify;hyphens:auto;color:var(--tcq-ink);}
+.tcq-book p.lead-p{font-size:21px;color:var(--tcq-ink-soft);}
+.tcq-book strong{color:var(--tcq-ink);}
+.tcq-book em{color:var(--tcq-ink-soft);}
+.tcq-book .toc{margin:44px auto 0;max-width:560px;background:var(--tcq-panel);
+  border:1px solid var(--tcq-rule);border-radius:8px;padding:26px 32px;}
+.tcq-book .toc-title{font-size:15px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--tcq-indigo);margin:0 0 .9em;font-weight:600;font-style:normal;}
+.tcq-book .toc-part{font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--tcq-gold);font-weight:600;margin:1.3em 0 .4em;}
+.tcq-book .toc-part:first-of-type{margin-top:.4em;}
+.tcq-book .toc ol{margin:0;padding-left:0;list-style:none;}
+.tcq-book .toc li{margin:.42em 0;font-size:16px;}
+.tcq-book .toc a{color:var(--tcq-ink);text-decoration:none;border-bottom:1px solid transparent;}
+.tcq-book .toc a:hover{border-bottom-color:var(--tcq-indigo);}
+.tcq-book dl.glossary{margin:0 0 1.2em;padding:0;}
+.tcq-book dl.glossary dt{font-weight:600;color:var(--tcq-indigo);margin:1.15em 0 .15em;
+  font-size:18px;}
+.tcq-book dl.glossary dd{margin:0 0 .3em;padding-left:1.4em;color:var(--tcq-ink-soft);
+  font-size:18px;line-height:1.7;text-align:justify;}
+.tcq-book footer.end{margin-top:90px;border-top:1px solid var(--tcq-rule);padding-top:26px;
+  color:var(--tcq-ink-faint);font-size:14px;text-align:center;line-height:1.9;}
+.tcq-book footer.end .sig{color:var(--tcq-indigo);font-size:15px;letter-spacing:.08em;}
+body.dark-mode .tcq-book{
+  --tcq-paper:#0f1416; --tcq-ink:#e6e7e3; --tcq-ink-soft:#b0b3af;
+  --tcq-ink-faint:#878b90; --tcq-indigo:#7fbfc4; --tcq-indigo-soft:#5fa3a9;
+  --tcq-gold:#c9a961; --tcq-rule:#283135; --tcq-panel:#161d20;}
+body.dark-mode .tcq-book p,
+body.dark-mode .tcq-book li,
+body.dark-mode .tcq-book dd,
+body.dark-mode .tcq-book div{color:var(--tcq-ink);}
+body.dark-mode .tcq-book p.lead-p,
+body.dark-mode .tcq-book em,
+body.dark-mode .tcq-book dl.glossary dd{color:var(--tcq-ink-soft);}
+body.dark-mode .tcq-book header.cover .by,
+body.dark-mode .tcq-book footer.end{color:var(--tcq-ink-faint);}
+body.dark-mode .tcq-book h2.ch-title,
+body.dark-mode .tcq-book header.cover h1{color:var(--tcq-ink) !important;}
+body.dark-mode .tcq-book h3,
+body.dark-mode .tcq-book dl.glossary dt,
+body.dark-mode .tcq-book header.cover .kicker,
+body.dark-mode .tcq-book .toc-title,
+body.dark-mode .tcq-book footer.end .sig,
+body.dark-mode .tcq-book .part-band .part-name{color:var(--tcq-indigo) !important;}
+body.dark-mode .tcq-book h4,
+body.dark-mode .tcq-book header.cover .blurb,
+body.dark-mode .tcq-book .toc-part,
+body.dark-mode .tcq-book .part-band .part-kicker{color:var(--tcq-gold) !important;}
+body.dark-mode .tcq-book .toc a{color:var(--tcq-ink);}
+body.dark-mode .tcq-book strong{color:var(--tcq-ink) !important;}
+@media (max-width:760px){
+  .tcq-book .wrap{padding:40px 20px 80px;}
+  .tcq-book header.cover h1{font-size:28px;}
+  .tcq-book header.cover .cover-art{max-width:320px;}
+  .tcq-book dl.glossary dd{padding-left:.8em;}
+  .tcq-book .part-band .part-name{font-size:19px;}
+}
+@media print{
+  .tcq-book .toc{break-after:page;}
+  .tcq-book .chapter{break-before:page;}
+  .tcq-book .part-band{break-before:page;break-after:avoid;}
+  .tcq-book dl.glossary dt{break-after:avoid;}
+}
+
+/* breadcrumb — sits above .tcq-book, so it carries its own palette.
+   Colours/scale mirror the reference TFL books (#2–#8): .9rem, muted
+   #5b6572 separator, the book's own accent for the root link. */
+.tu-breadcrumb{background:#faf9f5;padding:16px 0 4px;font-size:.9rem;color:#6b6f76;
+  font-family:"Palatino Linotype","Book Antiqua",Cambria,"Times New Roman","Noto Serif",serif;}
+.tu-breadcrumb__list{list-style:none;display:flex;flex-wrap:wrap;gap:2px 8px;
+  max-width:760px;margin:0 auto;padding:0 28px;align-items:center;}
+.tu-breadcrumb__item{margin:0;}
+.tu-breadcrumb__link{color:#1d5c63;text-decoration:none;}
+.tu-breadcrumb__link:hover{text-decoration:underline;}
+.tu-breadcrumb__sep{color:#5b6572;margin:0 2px;user-select:none;}
+.tu-breadcrumb__current{color:#1a1c20;font-weight:500;}
+</style>
+</head>
+<body>
+
+
+<nav class="tu-breadcrumb" aria-label="Breadcrumb">
+  <ol class="tu-breadcrumb__list">
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/books/">Tennis Books Library</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item tu-breadcrumb__current" aria-current="page">Knowabout Tennis</li>
+  </ol>
+</nav>
+<div class="tcq-book">
+<div class="wrap">
+<header class="cover"><div class="kicker">Tennis Library</div><h1>Knowabout Tennis</h1><div class="by"></div><p style="text-align:center;margin:18px 0 0;font-family:var(--tcq-sans,sans-serif);font-size:14px;letter-spacing:.02em;"><a href="https://github.com/tenniskb/tenniskb.github.io/releases/download/books-pdf-v1/knowabout-tennis.pdf" target="_blank" rel="noopener" style="color:#1d5c63;font-weight:600;text-decoration:none;border:1px solid #cfd8d4;border-radius:6px;padding:7px 14px;display:inline-block;">Read the original PDF &#8599;</a></p></header><div class="toc"><div class="toc-title">Contents</div><ol>
+<li><a href="#sec-1">Part 1  ·  pp. 9–38</a></li>
+<li><a href="#sec-2">Part 2  ·  pp. 39–62</a></li>
+</ol></div><section class="chapter" id="sec-1">
+<h2>Part 1  ·  pp. 9–38</h2>
+<p>The very nature of the game requires hand-eye co-ordination and some racket and ball skills, but once you can hit the ball over the net you can have a lot of fun. Tennis does have a high skill level, and if you want to reach the top, it is imperative that you work on the skills of the game. One way to do this is by looking at</p>
+<p>top players and watching how they play shots, the tactics they use, their emotions and the way they react to success and failure. There is no greater feeling of satisfaction than when you&#x27;ve hit a good</p>
+<p>shot or finally mastered the backhand and have hit the ball over the net. The more you experience this feeling, the more you will</p>
+<p>enjoy the game. So read on and try to learn from the stars.</p>
+<p>Each technique in this book has a difficulty rating, denoted by one, two or three tennis player symbols. One player indicates that the skill is relatively easy to learn, whereas three players indicate that the skill is much harder.</p>
+<p>Also included are STAR TIPS, which might help you to master the shots more easily.</p>
+<p>I have been involved in tennis for many years, and have spent the last 10 of them developing and coaching tennis — mainly with players aged between six and 18 years. During this time I have travelled to many tennis-playing countries and have experienced both the successes and the failures of my pupils. I have coached young players from grass-roots to international level, and gain most pleasure from helping people to fulfil their potential. One</p>
+<p>day I hope this will even mean producing a Wimbledon or U.S. Open Champion — perhaps it could be you. I hope you will get as much pleasure from reading this book and playing tennis as I do.</p>
+<p>T ennis is one of the most fascinating sports you will ever</p>
+<p>‘ke is a complex game for two players</p>
+<p>(singles) or four players (doubles). It is a sport that can be played at any age from four to 80 years, although it is recommended that young children initially try short tennis — a scaled-</p>
+<p>down version of the big game. It is a sport for life,</p>
+<p>a wonderful and most enjoyable form of exercise for people of all ages and abilities.</p>
+<p>The aim of the game is simply to hit the ball over the net and into a rectangle one more time than your opponent. It sounds simple, but your oppo-</p>
+<p>nent is trying to hit the ball away from you and force you to run and retrieve the ball to make the</p>
+<p>game as difficult as possible for you. One of the great advantages of tennis is that it is a very adaptable game. It is also an excellent game to play just for fun. However, it can also be very demanding,</p>
+<p>testing the fitness, skill and competitive spirit of its players.</p>
+<p>Tennis originated as an outdoor version of the game called Real Tennis. Although nobody in particular can claim to have invented the game,</p>
+<p>heme name of Major Clopton Wing-</p>
+<p>field patented a game in the early 1870s which he called</p>
+<p>“sphairistike” and which later came to be known as Lawn Tennis. The game was played initially by the leisured classes, and</p>
+<p>then usually as a garden-party activity. Its popularity soon spread, and today Lawn Tennis is played in most countries of the world. The influ-</p>
+<p>ence of the media, and of television in particular, with its live coverage of matches, has greatly en-</p>
+<p>couraged the popularity of tennis. This, together with the advent of new technology (which has helped to transform both tennis rackets and tennis court surfaces) and the increasing availability of indoor facilities now means that tennis is a sport that can be played at any time of the day or year.</p>
+<p>THE COURT Generally a tennis court has both singles and doubles markings, as shown in the diagram. When a combined singles and doubles court is used, with a doubles net for a singles match, then</p>
+<p>the net should be supported by “singles sticks’’ to a height of 3 ft 6 in (1.07m). The singles sticks are positioned 3 ft (0.91m) outside the singles court on</p>
+<p>each side. In both cases, the net should be 3 ft</p>
+<p>(0.91m) high at the centre.</p>
+<p>C 21 ft (6.40m) D 27 ft (8.23m) E 4 ft 6 in (1.37m)</p>
+<p>F centre service line G service line H centre mark</p>
+<p>I baseline J net 3 ft (0.91m) at centre</p>
+<p>KS ft (0.9m) L mark for singles post</p>
+<p>shoes, some comfortable clothing, a racket and balls, and, naturally, a court and some opposition.</p>
+<p>It all sounds very simple, but there is such a variety of equipment available today that you</p>
+<p>should take care before buying expensive items. When you start to play tennis you may be faced with players who have expensive equipment. The</p>
+<p>cost of an item, however, is not important. The racket, and other equipment, that is right for you</p>
+<p>is the one that feels right for you. The most impor-</p>
+<p>tant piece of equipment is your tennis racket. If at all possible, seek the advice of a tennis profes-</p>
+<p>sional or expert before purchasing your racket. There is a wide range of rackets on the market for’</p>
+<p>all ages and standards of players. It is vital that: you choose a racket which suits you, even if it</p>
+<p>means spending a little more money. There are</p>
+<p>several junior rackets available for five- to 10-yearolds, in addition to the small plastic rackets, which are especially popular in Europe for playing short: tennis.</p>
+<p>ale o play tennis, all you need is a pair of tennis</p>
+<p>COLOURS Here you see Gabriela Sabatini dressed in white. As you will</p>
+<p>see from the photographs in this book, many colours are available. White, however, is still very popular, and is the rule in some tournaments.</p>
+<p>GRIP SIZE As a general rule, a player with a large hand will need a larger grip size than a player with a small hand. The grips on a full-</p>
+<p>size racket range from size 1 (with a circumference of 4’/s in — 10.5cm) to size 5 (4°/s in — 11.7cm). Recently there has been a trend for players to use smaller grips, but be careful because small grips can lead to elbow injury problems. As a rough guideline, when you grip the racket firmly your thumb and forefinger should just be able to touch each other round the</p>
+<p>grip.</p>
+<p>The player is seen adding an extra grip to his racket to help him to hold the racket firmly while playing.</p>
+<p>WEIGHT The weight of a racket can range from 11 oz (300g) to 13 oz</p>
+<p>(377g). Modern graphite rackets are generally light. They</p>
+<p>range from ESL (extra super light), to SL (super light), to L</p>
+<p>(light), to LM (light medium) and M (medium). A young, small player would be more suited to a super light or light rather than a medium racket.</p>
+<p>If a junior has a racket that is too heavy, it tends to drag the wrist down. This often makes it difficult to develop good</p>
+<p>techniques at an early age.</p>
+<p>STRINGING The two main types of string</p>
+<p>(synthetic). Gut is far more expensive than nylon, but is more elastic and yields more</p>
+<p>to the ball. Synthetic strings are cheaper and can be used in any weather conditions. Many of the professional players use gut. The tension</p>
+<p>of the strings in their rackets will depend largely on their</p>
+<p>own style of play and, perhaps, the court surface on which they are playing. The tension of the strings in your racket will depend partly on</p>
+<p>the manufacturer’s recommendations and your own individual style of play. Top players will have several rackets at the same tension, in case strings break during</p>
+<p>a match.</p>
+<p>TENNIS BALLS There are many types of</p>
+<p>tennis ball — and a range of colours. The most popular colour is yellow, which is now used at Wimbledon (after numerous years of the traditional white ball). Some tennis balls are also now specifically designed for hard-wearing surfaces.</p>
+<p>New tennis balls are expensive. If you are just starting the game, don’t worry about spending a for-</p>
+<p>tune on tennis balls. Get hold of some older ones and</p>
+<p>see if you like the game first. The better your standard of</p>
+<p>play, the more essential it is</p>
+<p>for you to use good-quality tennis balls. Once the ball loses its cover and becomes bare, it tends to fly through</p>
+<p>the air and is very difficult to control. On the professional circuit, tennis balls are changed several times dur- ~~ ing the course of a match.</p>
+<p>CLOTHING Although traditional tennis</p>
+<p>attire is white, and many clubs and some _ tournaments continue to adhere to this, a wide range of colours</p>
+<p>is available today. Always use clothing that is comfortable and allows plenty of room for movement. Absorbent material is useful, as</p>
+<p>you may find you sweat freely when playing tennis.</p>
+<p>Sweatbands on the wrist and head help to mop up perspiration and, in extreme</p>
+<p>a sunhat.</p>
+<p>FULLY PREPARED The photograph of Arantxa</p>
+<p>modern stars come prepared for matches. A top player will carry a tennis bag</p>
+<p>several rackets, extra shirts, a towel, a pair of shoes, all necessary first-aid equipment, tape, and perhaps a</p>
+<p>carrying rackets, her bag and her tracksuit top. Note</p>
+<p>the head and wrist bands.</p>
+<p>SHOES For top players there is a variety of shoes for different</p>
+<p>court surfaces, such as clay, cement, indoor, grass and</p>
+<p>so on. My advice is to find a pair that gives you a good fit, has ankle support, is</p>
+<p>slip-proof and hard-wearing, and suitable for the sur-</p>
+<p>face you play on most of the time. Ideally, you should have two or three different pairs for various court surfaces.</p>
+<p>skills. The way you do this will influence the angle of the racket face, where you actually meet the ball, and what happens when the strings of the racket contact the ball.</p>
+<p>Ever since tennis began, there have been differing views on what grip to use, and this remains a subject of some controversy today. The simple answer is to use the grip that works best for you.</p>
+<p>If it limits your performance, it should be modified. If you volley with a western forehand grip, you will find it very difficult to hit a</p>
+<p>low volley because of the angle of the racket face, but if you modify the grip to a chopper grip, this will make it easier to, play</p>
+<p>the shot.</p>
+<p>There are three grips that could be described as basic — eastern, continental, and western. The simplest grip for a beginner to master on the forehand is an eastern grip, where the palm of the</p>
+<p>( ripping the racket is one of the most important basic</p>
+<p>hand is behind the racket handle.</p>
+<p>EASTERN FOREHAND GRIP In this grip, the palm of the hand is behind</p>
+<p>the racket handle, and it is ideal for balls of varying heights. It is called the shakehands grip, since it is a natural extension of</p>
+<p>the hand. To find the grip, place your gripping hand flat on the strings and slide the hand down the handle of the racket until you reach nearly the end of the handle. Then take hold of the racket, as if shaking hands with it.</p>
+<p>CONTINENTAL GRIP Used for a variety of shots, this grip requires a strong wrist and more precise</p>
+<p>timing than the eastern grip. It isn’t really recommended for the average player hit-</p>
+<p>ting ground strokes. With this grip, the palm of the hand is on top of the racket. When gripping the racket, spread your</p>
+<p>fingers out a little and ensure that the thumb is wrapped round the racket.</p>
+<p>WESTERN FOREHAND GRIP This is ideal for both high-bouncing, and waist-high balls. The palm of the hand is now underneath the handle of the racket. The grip does make it difficult to hit lowbouncing balls, both on the baseline and at</p>
+<p>the net, because it is hard to get the racket head down for these low balls. It is, however, ideal for hitting with heavy topspin.</p>
+<p>of the hand.</p>
+<p>better impact and control.</p>
+<p>variety of grips can be : \ used on the backhand,</p>
+<p>depending on whether you play the shot single-handed</p>
+<p>or double-handed. It is usually a</p>
+<p>good idea to try the single-handed backhand to start with, but if you</p>
+<p>have difficulty or feel more comfortable with two hands, then use</p>
+<p>them.</p>
+<p>SINGLE-HANDED BACKHAND For the single-handed backhand you need to use the basic grip —</p>
+<p>the eastern backhand grip. This grip can be found by turning your hand a quarter of a turn inwards from the eastern forehand grip so</p>
+<p>that your knuckle is on top of the racket. The heel of the hand is partly on the left bevel of the racket (if right-handed). Make sure your thumb is positioned diagonally across the back of the handle. This is a strong grip as it provides strength behind the handle, but also allows for a degree of flexibility.</p>
+<p>1| Stefan Edberg has one of the best single-handed backhands on the men’s circuit. The palm of his hand is on top of</p>
+<p>the handle. He has turned the grip inwards from his forehand grip. This helps</p>
+<p>to provide him with extra strength behind</p>
+<p>the handle and also a degree of flexibility. This is a sensitive but strong grip, recommended for all beginners. The thumb is positioned diagonally across the racket.</p>
+<p>DOUBLE-HANDED BACKHAND The double-handed backhand (see pages 14-15) is</p>
+<p>very popular, especially among top players.</p>
+<p>Chris Evert has one of the best double-handed backhands in the game. Technically she has a very sound shot, which is a</p>
+<p>model for any budding young player. Notice how her hands:</p>
+<p>are next to each other on the grip and how both arms are working together.</p>
+<p>&amp; [4] Monica Seles is an unusual player as she hits both forehands and backhands with two hands. She is ambidex-</p>
+<p>trous. Some very young children:do this when they take up tennis, primarily when they use a racket which is far too big for them. Monica serves left-handed, so her backhand is quite</p>
+<p>conventional here. With her forehand, notice how the left hand is at the bottom of the racket.</p>
+<p>Connors, together with Evert, led the way with twohanded backhands in the 1970s. Many children then started</p>
+<p>to copy these stars, and the two-handed backhand gained in popularity. Today several of the top players hit with two hands on the backhand.</p>
+<p>ou may have difficulty playing a one-handed backhand. The easiest way to solve this problem is to add your free</p>
+<p>hand to the racket (next to the eastern forehand). This converts your backhand into a two-handed backhand, and makes the</p>
+<p>shot very easy to play as there is no grip change. Both the left and right hands hold the racket with forehand grips.</p>
+<p>The advantages of a double-handed backhand include greater strength with two hands rather than one (this is particularly important for the physically weak beginner), and more flexibility and</p>
+<p>control of the swing. It is also easier to disguise shots using two hands on the racket.</p>
+<p>The major disadvantage of using two hands is that it limits your reach. You need to be fast around the court if you play two-handed; you have to get slightly closer to the ball, and the actual hitting</p>
+<p>area is different from the conventional one-handed backhand.</p>
+<p>Most of the top players (e.g. Mats Wilander), will use a backhand grip on their two-handed ground strokes. This makes it</p>
+<p>easier to hit topspin (see pages 44-45) and also to play a one-handed</p>
+<p>shot if the need arises. Jimmy Connors, however, is a notable exception. He uses a forehand grip, and consequently hits a very flat or sliced ball.</p>
+<p>STYLE 1 The beginner often plays a two-handed backhand using a forehand grip with the bottom hand (this is the hand nearest to</p>
+<p>the end of the handle). The free hand (top hand) is just added to the racket in a forehand grip. This is the easiest way to improve your backhand play.</p>
+<p>STYLE 2 Some players only modify the.grip with the bottom hand, moving it slightly to a con-</p>
+<p>tinental grip. Again the free hand grips the racket with a forehand grip.</p>
+<p>STYLE 3 Many advanced players change the grip of the bottom hand to a full eastern backhand. This makes it easier to hit the ball with topspin, which many players use as a form of attacking play.</p>
+<p>Whatever type of backhand grip you use, the important thing is to feel comfortable with it. Think carefully about the choice of grip in practice, so that during a game you</p>
+<p>can use your chosen grip naturally.</p>
+<p>SLOWER SURFACES André Agassi, who is</p>
+<p>two-handed _ backhand.</p>
+<p>on slower surfaces.</p>
+<p>to the eastern backhand.</p>
+<p>match.</p>
+<p>1} The forehand drive is the most fundamental shot in tennis, and once it is mastered, you are almost ready to play a game. The</p>
+<p>easiest grip to use is the eastern forehand. Start from the ready position — this is the position from which it is easiest for you to get off the mark, so that you can get into the right position at the right time to hit the ball.</p>
+<p>In the ready position, the racket is held out in front of</p>
+<p>the body in the forehand grip. It is supported by the</p>
+<p>free hand at the throat (unless two-handed). Stand with your feet shoulderwidth apart, knees bent and</p>
+<p>springy, with your body weight bent towards the racket. Your eyes should be</p>
+<p>focused on your opponent and the ball. The ready position for your ground</p>
+<p>1 yard (1m) behind the centre mark on the baseline. A beginner may well stand inside the baseline. Martina</p>
+<p>Navratilova is in an ideal ready position here — note</p>
+<p>the low body position.</p>
+<p>—‘[4] From this position take the racket back as soon</p>
+<p>as you see the ball leave your opponent&#x27;s racket and</p>
+<p>come to your forehand side. This is done by turning at</p>
+<p>the hips and shoulders. The backswing doesn’t need to</p>
+<p>the racket takeback will depend largely on _ the height of the oncoming ball. At this moment, your weight is on your back foot.</p>
+<p>[5] You then need a smooth connection between the back-</p>
+<p>swing and the forward swing. This swing is from low to high, giving the ball lift. As the racket comes forward, your weight is transferred to your front foot. The racket finishes in a high</p>
+<p>position and in the direction that you want the ball to go. Use your free hand for balance.</p>
+<p>a good forehand is the “hitting area’ or “contact point” with the ball. This needs to be in front of the leading hip, and at a com-</p>
+<p>the body. Your grip needs to be very firm on contact with</p>
+<p>the ball. Stay balanced throughout the shot.</p>
+<p>9| — [11] For the beginner, the easiest level at which to hit the ball is between knee</p>
+<p>and waist height. Initially you will find it easier to hit a</p>
+<p>falling ball, i.e. to strike the ball as it is falling after the</p>
+<p>of a falling ball often tends to encourage the correct grooved action on the forward swing.</p>
+<p>It would be very difficult for an absolute beginner to try to pay attention to all these points at once. It is much simpler to think of TURN, STEP, and SWING. By turning the body the</p>
+<p>stepping you transfer your weight forwards, and by</p>
+<p>swinging from low to high with the racket you are able</p>
+<p>to hit the ball.</p>
+<p>If a “semi-western” grip is used, when the weight is</p>
+<p>transferred forwards the stance will be semi-open</p>
+<p>(even more open if a full western grip is used). The hitting area will be level with the front foot, but still a</p>
+<p>comfortable distance away from the body. It is easier to hit high-bouncing balls with</p>
+<p>this grip, but far more diffi-</p>
+<p>cult with low balls.</p>
+<p>&quot;THE BACKHAND DRIVE — ONE-HANDED</p>
+<p>1| For the beginner the one-handed backhand is often a difficult shot to master. Start in the ready</p>
+<p>position (the same position you use with the forehand).</p>
+<p>coming to your backhand side, change your grip to an</p>
+<p>eastern backhand.</p>
+<p>Then turn early at the hips and shoulders to get a good shoulder turn for the backhand. Make sure that</p>
+<p>take it back. This hand only comes off the racket just before impact.</p>
+<p>3| Now transfer your weight onto your front foot by stepping into the shot.</p>
+<p>Make sure you step forwards and not parallel with</p>
+<p>the baseline.</p>
+<p>4| The backswing is connected to the forward swing by a shallow loop in a low-</p>
+<p>to-high action, giving the feeling of lift on the backhand.</p>
+<p>The hitting area or contact point is slightly in front of the leading foot, again at a comfortable distance from the body. The grip is firm on impact. As I mentioned in the forehand</p>
+<p>section, it is much easier for</p>
+<p>a beginner to hit the ball between knee and waist height, and to hit it as it</p>
+<p>starts to fall after reaching the top of the bounce.</p>
+<p>6|—[8] The follow-through is high and in the direction</p>
+<p>that you want the ball to go. Try to maintain your bal-</p>
+<p>ance throughout the shot. On completion of the stroke, return to the ready position.</p>
+<p>the physically small player may find this shot easier to master initially than the one-handed backhand, be-</p>
+<p>cause two hands will provide more strength.</p>
+<p>This shot has the same preparation as the onehanded shot except that both hands are now next to</p>
+<p>shown here by Monica Seles. Start from the ready position. For variations of</p>
+<p>grips see pages 14-15.</p>
+<p>and hips as soon as you see the ball coming to your backhand.</p>
+<p>[3] Now transfer your weight forwards onto your</p>
+<p>front foot. The hitting area with two hands tends to be</p>
+<p>level with your front hip, but needs to be a comfort-</p>
+<p>able distance away from the body (slightly closer than for</p>
+<p>a one-handed backhand). If you are too close to the ball,</p>
+<p>the shot becomes cramped and it is difficult to get a proper swing.</p>
+<p>4| &amp; [5] The follow-through is high and in front of the body, sometimes even fin-</p>
+<p>ishing over the shoulder. The arms are not tucked into</p>
+<p>the body, as this would cramp the shot.</p>
+<p>If you are undecided whether to use two hands or just one hand, it is a good</p>
+<p>are simply copying another player or whether it is a natural stroke for you. Don’t</p>
+<p>forget that if you play twohanded you need to be able</p>
+<p>court.. If you are equally good with one and two hands, try to gauge how fast you are. If you aren&#x27;t particularly quick, you would be better off hitting one-handed.</p>
+<p>Likewise, a player who is not very strong physically might get more balls over the net using two hands rather</p>
+<p>than just one hand.</p>
+<p>Mary-Joe Fernandez, runner-up in the 1990 Australian Open, is seen in</p>
+<p>this sequence hitting a very effective two-handed _ backhand — a model for righthanded players.</p>
+<p>is also the only shot that you have complete mastery over,</p>
+<p>since you toss the ball in the air and you hit it. . As soon as you have a little skill, you must try to master the</p>
+<p>T he service is one of the most important shots in the game. It</p>
+<p>overarm serve. Here the ball is tossed in the air, and struck while above your head.</p>
+<p>To start with, you will tend to use the forehand grip on the service. Initially, the main aim is to get the ball over the net and into the correct area, with a simple “throwing” action.</p>
+<p>First, take up a stance behind the baseline facing sideways. Your front foot should be pointing slightly towards the net post, and your back foot should be parallel with the baseline. Place your feet</p>
+<p>about shoulder-width apart. Whatever position you adopt, make sure it is comfortable and suits you. In a singles match it is a good idea to stand near the centre mark, as this position represents the</p>
+<p>shortest distance between you and your opponent’s service box</p>
+<p>(ideal for hitting a flat serve down the centre line). In doubles, you need to stand about halfway between the centre mark and the</p>
+<p>singles sideline.</p>
+<p>Stand with your feet shoulder-width apart in a comfortable sideways position behind the baseline. Start with the racket and ball together, pointing roughly to the service</p>
+<p>box that you are aiming for.</p>
+<p>THE GRIP To begin, use your accustomed forehand grip. This can be used as a</p>
+<p>service grip while you are trying to master the basic action.</p>
+<p>IMPROVING YOUR SERVICE Once you have the basic action, it is vital to progress to the more flexible continental</p>
+<p>(or chopper) grip. The more a player uses the forehand grip, the more ingrained it becomes and the harder it is to change. In</p>
+<p>the initial stages of using the continental grip, you will find that the ball tends to slice out to the side. This is because the angle of the racket face on impact with the ball is now slightly different. To help to get</p>
+<p>a flatter serve, either bring your shoulder round more, or turn your wrist slightly, prior to impact with the ball. There are many facets to the serve, and it is a good idea to concentrate on only one at a time as you try to improve.</p>
+<p>begin.</p>
+<p>Start from the ready position (see page 22), with</p>
+<p>the ball and racket together pointing towards the box you are aiming for. Hold the ballin your fingertips. Try to</p>
+<p>start in a relaxed manner, with your weight slightly</p>
+<p>forwards.</p>
+<p>2| — |4| Both arms must work rhythmically together. As the racket is taken out at the back, the left arm starts</p>
+<p>to come upwards and releases the ball. Both arms go down and out as the shoul-</p>
+<p>ders open up.</p>
+<p>[5] &amp; [6] The ball is placed high in the air. It is easier to place the ball above your outstretched reach and hit it</p>
+<p>as it is falling, than to hit the ball as it is rising (this</p>
+<p>is very difficult for the beginner). Toss the ball a</p>
+<p>comfortable distance in front and slightly to the right of the body (if righthanded; to the left of the body if left-handed). In order to get a good toss, try</p>
+<p>of your body. Don’t forget: you do not have to hit a bad</p>
+<p>toss — leave it and toss the ball up again.</p>
+<p>onto the back. Note the knee bend, so that the player can</p>
+<p>up to the ball.</p>
+<p>Here the racket has dropped down onto the back. Notice the high elbow</p>
+<p>at the ball (without, of course, letting go of the racket!) as the player extends upwards.</p>
+<p>[9] The racket is now thrown up at the ball. In order to generate pace on</p>
+<p>the serve, the racket head needs to come through quickly.</p>
+<p>The player might now be off the ground. If you have difficulty with the throwing action, try practising over-</p>
+<p>arm throws with a tennis ball until you can throw the ball from one baseline to the</p>
+<p>other. Contact with the ball is made at the player&#x27;s maximum reach. The wrist</p>
+<p>is firm but flexible.</p>
+<p>&amp; The racket follows through in the direc-</p>
+<p>tion of the ball, ending on the left side of the body (for</p>
+<p>a right-hander). As the racket comes through, the player lands inside the court, having maintained</p>
+<p>need to return to the ready position.</p>
+<p>return of service is the second most important.</p>
+<p>The main aim of the return of service is to get the ball back over the net and into play. Don’t worry about trying to hit the cover off the ball: chip it, chop it, block it — but whatever you do, force your opponent to hit another ball after the serve. Once the return is</p>
+<p>in play, you increase your chance of winning the point.</p>
+<p>Position yourself properly for the return of service. If your opponent has a weak service, move forwards. If the server has a powerful service, stand further back and just block the return. Try to pick up the ball early. This is done by watching the ball carefully. Try to find clues as to where your opponent is going to serve by</p>
+<p>I f the service is the most important shot in the game, then the</p>
+<p>watching the server and the ball during the service action.</p>
+<p>As a beginner, the most important point is to be alert on your toes. As the server tosses the ball in the air, get ready to move.</p>
+<p>Check when the server strikes the ball, and then move forwards to hit the return.</p>
+<p>SERVICE POSITIONS The server has the choice of where to posi-</p>
+<p>tion the ball in the service box:</p>
+<p>1) either serve hard and flat down the centre line (A); 2) or to a position (B) straight at the opponent, or sliced into the opponent’s body; 3) or to position (C), i.e. sliced out wide (for a right-hander).</p>
+<p>POSITION OF RECEIVER The receiver has to concentrate very hard when receiving serve, and needs to stand in the middle of the serving angle. The</p>
+<p>server can hit the ball anywhere between the two lines X and Y. : A server B receiver</p>
+<p>One of the hardest serves for the beginner to return is the wide sliced serve or the high-kicking topspin serve. The key to returning these difficult serves is to move forwards and take the ball early . If you</p>
+<p>move into the ball, you should be able to</p>
+<p>take it before it has bounced high (topspin) or before it has cut away (slice).</p>
+<p>When returning the wide serve, try to follow the path of the arrows, as shown here in the diagram. A server</p>
+<p>backhand return.</p>
+<p>ways. The receiver must be flexible and capable of hit-</p>
+<p>different positions.</p>
+<p>Bieta.</p>
+<p>It is generally played from near to the net. Technically, the volley is the simplest shot to teach. If you are a beginner, the easiest grip to use is the basic eastern forehand grip; however, as you progress it is preferable to use the</p>
+<p>chopper or continental grip because you can use this for both. the forehand and backhand volleys.</p>
+<p>When you are at the net, it is quite common to have to face a succession of forehand and backhand volleys, and it is far more convenient to use one grip for all your volley shots. Net play often involves split-second timing, allowing little opportunity to change the grip. Once you have mastered the basics, you will find that the</p>
+<p>chopper or continental grip is the best to use.</p>
+<p>A volley is any shot which is played before the ball bounces.</p>
+<p>STEP 1 Start from the ready position, approximately 6—-8ft (1.82-2.44m) from the net.</p>
+<p>(Hint: touch the net with your racket and then move back two paces.) You are now much nearer to your opponent, so be alert in a springy position, and ready to move. Hold the racket out in front of you, supported at the throat by your free hand. Watch your opponent and the ball carefully — this will help you to decide which side</p>
+<p>the ball is coming. As soon as your opponent strikes the ball, check. This enables you to get your weight evenly distributed,</p>
+<p>and to push off to whichever side the ball</p>
+<p>comes.</p>
+<p>Prepare early with a short takeback, and then contact the ball well out in front of you, at a comfortable distante from your body. Your arm will be slightly bent. The</p>
+<p>action is a PUNCHING or BLOCKING one. Let the racket do the work with very little follow-through.</p>
+<p>In order to get some power into the volley as you move forwards to the ball,</p>
+<p>sfer your weight onto your front foot;</p>
+<p>tep into the shot.</p>
+<p>STEP 3 Try to keep the follow-through short so</p>
+<p>that you will have time to get ready for the next shot. The volleyer should have a very firm wrist on contact. Notice how balanced</p>
+<p>the volleyer is.</p>
+<p>hit his forehand volley. His eyes are focused on the</p>
+<p>weight onto his front foot.</p>
+<p>The wrist is very firm. Wilander is going to hit</p>
+<p>Hold the racket well out in front of you and always try</p>
+<p>to meet the ball early.</p>
+<p>BI.OCK the ball.</p>
+<p>that one of his most successful shots was his backhand volley. Edberg shows</p>
+<p>perfect control as he steps forward.to this backhand</p>
+<p>volley. The racket 1s supported with his left hand at</p>
+<p>the throat. His arm is straight, the wrist firm. He has good weight transference to get power into</p>
+<p>the volley. Notice the concentration on his face as he strikes the ball. If you hit</p>
+<p>volleys like this, you will have a lot of success!</p>
+<p>handed, always use your free hand to support the</p>
+<p>racket. Keep volleying well out in front of your body.</p>
+<p>the ball. Remember: volleying is fun.</p>
+<p>with two hands. First, let us take a closer look at the one-</p>
+<p>handed backhand volley. You should start from the ready position with the chopper (or backhand) grip mentioned previously. The racket takeback is very</p>
+<p>short (like the forehand volley), but this time the supporting free hand only comes off the racket just before the ball makes contact</p>
+<p>with the racket strings. . The racket is brought forwards in a PUNCHING or BLOCKING action. The ball is contacted well out in front of the body, at a com-</p>
+<p>fortable distance to the side. Again, power is obtained by transferring the weight forwards, so try to step into the shot. Remember to keep the follow-through short for a solid volley.</p>
+<p>The two-handed backhand volley has the same action as that of the one-hander, although generally the takeback is slightly longer.</p>
+<p>Be careful not to swing at the volley if you use two hands. The hands must be close together on the grip. Beginners may get more</p>
+<p>strength on the backhand volley with two hands.</p>
+<p>T he backhand volley can be played either with one hand or</p>
+<p>STEP 1 The ready position — use either a chopper</p>
+<p>or backhand grip. As for all shots, you need to be alert and on your toes. This is</p>
+<p>especially important if playing close to the net — particularly in doubles.</p>
+<p>STEP 2 Here the racket is supported with the free</p>
+<p>hand as it is taken back. Note the short</p>
+<p>takeback. This is an advantage if you are close to the net and have little time to prepare for your shot.</p>
+<p>STEP 3 The action is then a short punch or block with little follow-through. Note how the</p>
+<p>weight is going forwards to get power into</p>
+<p>the shot. The grip must be firm on impact,</p>
+<p>and good balance must be maintained throughout the stroke. After hitting the ball, recover quickly to the ready position</p>
+<p>for the next shot.</p>
+<p>The three steps show the one-handed backhand volley. Although you can use a</p>
+<p>two-handed volley, the major disadvantage is one of reach. This means you need</p>
+<p>to be quicker on your feet and you also need to use a slightly longer backswing. It is advisable to play one-handed volleys whenever possible.</p>
+<p>volleys, high volleys and low volleys.</p>
+<p>You might be forced to play the half-volley when you are coming into the net, but haven’t moved quite quickly enough. The ball is played just after the bounce, at about ground level. It is a</p>
+<p>shot you might play instinctively, but really it is a defensive shot, played when you are out of position. It needs good footwork and balance if it is to be executed properly. To play this shot you need to get down to the ball, so bend your knees and take a short back-</p>
+<p>swing to come forwards with a low-to-high action. Follow through in the direction you want the ball to go. The racket face is slightly</p>
+<p>open on impact, and the grip and the wrist are firm.</p>
+<p>The high volley may look easy to hit, but all too often a player swings at the ball, with the result that the ball ends up over the baseline. The key is to watch the ball very carefully, set yourself</p>
+<p>up to play the volley with a high racket takeback, and then exaggerate the high-to-low volleying action, while playing the ball well out in front of the body.</p>
+<p>The low volley is often one of the most difficult volleys to play, as the ball is coming low over the net and you are forced to hit it upwards to get it back over the net. It is played generally when you</p>
+<p>are a long way from the net and your opponent has hit a good return at your feet.</p>
+<p>There are four basic points to remember when hitting a low volley: bend your knees, not your back; open the racket face so that</p>
+<p>it is tilted back slightly; keep the racket head up; and play the ball out in front of you.</p>
+<p>I n addition to the basic volley, you may have to play half-</p>
+<p>follow-through is short.</p>
+<p>The racket is taken back above shoulder height. The action is a high-to-low one; the</p>
+<p>Notice the low position of the player. The racket head is up and the racket face</p>
+<p>slightly open. The ball is struck well out in front of the body and the follow-through is</p>
+<p>then slightly upwards, to help lift the ball over the net and deep into the opponent&#x27;s court. If necessary, sacrifice some pace to get a good length.</p>
+<p>TECHNICAL POINTS This photograph _high-</p>
+<p>points on the low volley.</p>
+<p>makes it look easy.</p>
+<p>STAR TIP .</p>
+<p>to play half-volleys.</p>
+</section>
+<section class="chapter" id="sec-2">
+<h2>Part 2  ·  pp. 39–62</h2>
+<p>DRIVE VOLLEY Jimmy Connors is seen in full flight playing a high</p>
+<p>drive volley on the backhand side. Connors often</p>
+<p>uses drive volleys when coming into the net as</p>
+<p>approach shots. Here he is about to contact the ball, even with his feet well off</p>
+<p>the ground. Notice how he is balanced and poised</p>
+<p>even in this position, and how his eyes are clearly focused on the ball. This is</p>
+<p>a difficult shot to control for the beginner.</p>
+<p>drive volley and the lob volley.</p>
+<p>The drop volley is similar to the drop shot, except that it is played before the ball bounces. Generally it is played when the ball is at, or below, net height. This shot requires a great deal of</p>
+<p>touch and feel for the ball. You need a short backswing and</p>
+<p>reduced follow-through for this shot. Make sure your wrist is firm</p>
+<p>on impact, and that the racket face is open to help impart more backspin on to the ball. Try to keep your eye on the ball, your head</p>
+<p>over the ball, and bend your knees.</p>
+<p>The drive volley is sometimes used as an approach shot. It is hit from the mid-court area and, as its name suggests, it is a combination of a drive and volley, with the characteristics of both. Use a longer backswing than for a normal volley. In order to control the</p>
+<p>shot, it is advisable to hit the ball with a little topspin.</p>
+<p>The lob volley is more common in doubles than in singles. It is particularly effective when all four players are at the net and it is used as a surprise, forcing the opposing pair to retreat to the baseline. It is similar to the basic lob (see pages 38-39), but is played before the ball bounces. This shot requires a fine touch. If</p>
+<p>played badly, it can have drastic consequences, particularly if it</p>
+<p>gives your opponent an easy smash!</p>
+<p>TL he other variations on the volley include the drop volley, the</p>
+<p>FOREHAND DROP VOLLEY If played effectively, a good drop volley lands short in your opponent&#x27;s court (i.e. just over the net); the backspin makes the ball stay low. Tactically it is useful as an</p>
+<p>element of surprise, particularly if your opponent is standing well behind the baseline. It is, however, a relatively difficult</p>
+<p>shot to master.</p>
+<p>FOREHAND DRIVE VOLLEY This stroke can be used against a slow,</p>
+<p>high-bouncing ball when close to the net;</p>
+<p>against high balls when coming into the net; or, alternatively, to introduce an element of surprise, by moving off the baseline quickly and not allowing a floating return to bounce.</p>
+<p>FOREHAND LOB VOLLEY This shot is used mainly as a surprise, when your opponent is very close to the</p>
+<p>net. If played effectively, it can open up the</p>
+<p>court for a better range of angled shots. Hit the ball in front, giving it sufficient height by opening up the racket face and getting</p>
+<p>an upward follow-through.</p>
+<p>throwing action.</p>
+<p>For beginners, the smash is a hard shot to master. The key to success is good footwork and good positioning, so make sure that you spend plenty of time getting your footwork right. Move as</p>
+<p>quickly as possible to get underneath the ball on the smash. Try to get back to the ball in a sideways movement, and position yourself so that the ball is in front and slightly to the right of the body (fora right-hander).</p>
+<p>Once in the smashing position, really throw the racket head up at the ball. Pick your target area on court and go for it, don’t just pat the ball back. Make sure you complete the stroke with a good follow-through in the direction of the ball and then recover to the ready position — you might get another lob! , It is also possible to hit a backhand smash, but this is a difficult shot to do properly. It is better to run round the ball and play the forehand smash (good footwork is required) because you have less power with the backhand smash.</p>
+<p>If you are forced to play the backhand smash, really turn the right shoulder (if right-handed) round behind the ball, to enable you to throw the racket up and over the ball.</p>
+<p>Less power, and greater accuracy, are the two key elements to remember.</p>
+<p>Te smash is very much like the serve — with the same</p>
+<p>A\ Having started from the ready position,</p>
+<p>on the ball.</p>
+<p>STEP 2 The racket head is then thrown up at the ball, and the point of impact&#x27;with the ball</p>
+<p>should be at your maximum reach. Good</p>
+<p>smashes, and may even play these with their feet off the ground.</p>
+<p>STEP 3 Like the service, it is essential to have a</p>
+<p>prefer to smash the ball after the bounce. This is a good idea from a high lob on a</p>
+<p>directly into your eyes, making it difficult for you to see the ball.</p>
+<p>y))\ players will move back quickly for difficult</p>
+<p>good follow-through. Snapping your wrist over after contacting the ball helps to bring the ball down. Sometimes you might</p>
+<p>windy day, or when the sun is shining</p>
+<p>a powerful overhead shot.</p>
+<p>ground to play this smash.</p>
+<p>taken off on one foot, and will land on the other.</p>
+<p>types of smash: the offensive smash which is hit</p>
+<p>offensive smash.</p>
+<p>bounce just in front of you.</p>
+<p>in the game, but if played effectively and at</p>
+<p>the right time, it can be a match-winning shot. A lob can be either a defensive shot, played when under pressure and in trouble, or an attack-</p>
+<p>ing shot, when played with topspin against an</p>
+<p>aggressive volleyer.</p>
+<p>A defensive lob (A) is generally hit from behind the baseline or when you are stretched wide out of</p>
+<p>court for a ball. The aim here is to put the ball up high, in order to give yourself time to recover your position.</p>
+<p>An offensive lob (B) is hit lower and generally from inside the baseline. The aim is to hit the ball just high enough so that it is out of the reach of</p>
+<p>your opponent (allowing for a jump as well), but</p>
+<p>not so high that the player has time to turn and chase the ball.</p>
+<p>al: he lob is perhaps the most underrated shot</p>
+<p>THE FOREHAND LOB SEQUENCE OF SHOTS The lob is very much a touch shot, so try to hit it</p>
+<p>gently into the air so that you can control the height and length that you hit the ball.</p>
+<p>[1] READY POSITION The forehand lob is played</p>
+<p>in a similar way to the forehand drive, with two not-</p>
+<p>able exceptions. Start in the ready position.</p>
+<p>EARLY PREPARATION Take the racket back early,</p>
+<p>as soon as you see the ball coming to your forehand</p>
+<p>side.</p>
+<p>LOB SEQUENCE The backhand lob is</p>
+<p>played in a similar fashion. Use the basic backhand grip.</p>
+<p>The racket swings down and under the ball at impact, with</p>
+<p>the racket face open. Again, the followthrough is high.</p>
+<p>RACKET COMING FORWARDS Then make a smooth con-</p>
+<p>swing and forward swing.</p>
+<p>[4] OPEN RACKET FACE The swing is from low to high, and on impact the</p>
+<p>open.</p>
+<p>5| HIT IN FRONT The racket comes from below the ball. The ball is hit</p>
+<p>side of the body. The body weight is transferred</p>
+<p>forwards.</p>
+<p>[6] FOLLOW-THROUGH The follow-through is then</p>
+<p>a normal forehand drive.</p>
+<p>t junior level the drop shot is perhaps the most under-used shot, yet if you play it at</p>
+<p>the correct time, you can easily win the point outright. The aim is to hit the ball with sufficient backspin to make it land as near to the net</p>
+<p>as possible. With a great deal of backspin, the ball (g% will die as it hits the ground. The beginner should</p>
+<p>try to concentrate on getting the ball to bounce as near to the net as possible. Drop shots can be hit</p>
+<p>anywhere in the court, but the further back the</p>
+<p>shot is played, the more risky it becomes.</p>
+<p>Unless you possess a good touch, and certainly at beginner level, it is advisable to play the drop shot from an offensive position, in or around the service box.</p>
+<p>The key to a good drop shot is deception, so try to prepare for you drop shot as you would for a normal forehand or backhand drive, and remember — only play the drop shot when you are mov-</p>
+<p>ing forward to the ball.</p>
+<p>The drop shot takes a lot of experience and practice to perfect. The easiest drop shot to play is one down the line, as the ball has to travel the shortest distance. For a beginner, a bad cross-court drop shot at least has the advantage of taking the opponent out of court, whereas a bad down-the-line drop shot could be put away for a winner. Have fun trying the drop shot.</p>
+<p>READY POSITION : The racket is taken back at about shoulder height (as for the normal forehand drive) and the player starts to move towards</p>
+<p>the ball.</p>
+<p>READY POSITION Again, start from the ready position and change your grip to</p>
+<p>an eastern backhand grip. Take the racket back high, and support it with your free hand. If disguised, it should look as if you are going to slice the ball.</p>
+<p>MEETING THE BALL The racket then comes down and underneath the ball with an</p>
+<p>open racket face, imparting backspin on the ball. The shape of the swing is similar to the letter C.</p>
+<p>FOLLOW-THROUGH The follow-through is slightly upward. The drop shot can be</p>
+<p>used to tire your opponent; to break up your opponent&#x27;s rhythm; to bring a baseliner into the net; as an element of</p>
+<p>surprise; or against a weak second serve.</p>
+<p>Step into the ball and bring the racket down ina C shape. The point of impact is in front of the body, and the racket face is</p>
+<p>slightly open. The racket then comes down and underneath the ball, imparting backspin on the ball.</p>
+<p>FOLLOW-THROUGH Try to have a good follow-through, with the racket finishing</p>
+<p>slightly upwards in the direction that you want the ball to go. In early learning stages, don’t worry if the ball clears the net by a reasonable margin — it is better to improve your control</p>
+<p>of backspin than try to get the ball to skim the net.</p>
+<p>USE OF SPIN ON THE GROUND STROKES</p>
+<p>backhand drives, it is time to see how you can vary these</p>
+<p>shots. One way to do this is to put spin on the ball. This could be by topspin — when you make the ball kick up and go high - or by</p>
+<p>slice, when you make the ball skid and stay low. You could also use sidespin, making the ball curve to the left or right, and moving</p>
+<p>it away from your opponent.</p>
+<p>Modern players tend to hit with topspin. The ball spins from low to high on a vertical axis, causing downward force so that the path of the ball is like the arch of a rainbow. Topspin can be used</p>
+<p>from the baseline, to allow you to hit the ball higher over the net for safety (the spin will cause the ball to dip). You can then hit an</p>
+<p>aggressive shot without any fear of making an error, as most of the power is turned into spin.</p>
+<p>Topspin can also be used as a passing shot. In this case, it is hit lower over the net. The advantage is that the spin will cause the ball to dip. This means that you can hit it directly at the oncoming player’s feet.</p>
+<p>N ow that you have mastered the basics on the forehand and</p>
+<p>STEP 1 Racket head comes from below the ball Topspin is easy to learn. Start from the ready position. Prepare as for a normal</p>
+<p>forehand drive, but bring the racket head</p>
+<p>down much lower than for a normal forehand drive, at least 1 ft (30cm) below the intended point of impact. The key to a suc-</p>
+<p>~ cessful topspin shot is where the racket comes from, so make sure that you can bring the</p>
+<p>racket upwards, towards the sky.</p>
+<p>STEP 2 Point of impact The racket face is closed and the ball is</p>
+<p>struck in a low-to-high swing, with the racket approaching a vertical position to the ground on impact. In fact, if you</p>
+<p>started with the racket touching the ground and then just lifted the racket up, keeping the face vertical, the ball would</p>
+<p>have topspin on it.</p>
+<p>STEP 3 Follow-through The more spin you want on the ball, the more the racket needs to travel in a 6 to 12 o’clock direction. Follow through over the ball with a long, smooth finish. Many</p>
+<p>players who hit with excessive topspin have an extreme follow-through, where</p>
+<p>the body really swings round.</p>
+<p>with an open stance.</p>
+<p>when hitting with topspin.</p>
+<p>semi-open stance.</p>
+<p>RRA ___ USE OF TOPSPIN ON THE BACKHAND</p>
+<p>HEAVY TOPSPIN Michael Chang hits with</p>
+<p>the racket head is coming from well below the ball.</p>
+<p>to brush up the back of the ball and impart spin to tt.</p>
+<p>to bring the racket well below the ball on the backswing.</p>
+<p>in the late 1970s. Borg used phenomenal topspin off both the forehand and backhand sides. Slow courts, particularly clay, are most suited to topspin because of their high bounce. Many tournaments are played on clay, so it is wise to have topspin</p>
+<p>in your range of shots.</p>
+<p>the forehand. In fact, if you are two-handed you might even find that it is easier than the forehand, and that it comes naturally to you on this side. Start in the ready position, and change your grip</p>
+<p>to an eastern backhand.</p>
+<p>Even if you are two-handed, try to use an eastern backhand grip, as this is better for imparting spin to the ball.</p>
+<p>T he use of topspin increased after the successes of Bjorn Borg</p>
+<p>STEP 1 Lower takeback Once you have an eastern backhand grip, turn early at the shoulders. Even if you initially take the racket back high (like Becker) make sure that the racket head comes</p>
+<p>down well below the ball. The racket is</p>
+<p>supported with the free hand on the takeback. This helps to give you more control and also helps to make you more aware of the racket face.</p>
+<p>STEP 2 Angle of racket-face Transfer your weight forwards onto the</p>
+<p>front foot as you prepare to make contact with the ball. The racket face is closed</p>
+<p>slightly on impact, while the racket head is brought vertically up the back of the ball</p>
+<p>and forward to generate power. The more the racket head is accelerated through the</p>
+<p>stroke, the more power and momentum are achieved. Remember to contact the ball in front of your body.</p>
+<p>STEP 3 Follow-through Follow through high and in the direction of</p>
+<p>the target. If you have difficulty hitting with topspin, check that the angle of the</p>
+<p>racket face is correct on impact (if it is too</p>
+<p>closed, the ball ends up in the bottom of the net). Also check that the racket head is</p>
+<p>coming from well below the ball (this is essential if you are to get sufficient spin on the ball); that you are preparing early enough; that the grip is right and your py stance not too closed.</p>
+<p>use it on the forehand as well, against high-bouncing balls</p>
+<p>or as a last resort when badly out of position. If played defensively, it is hit from the baseline and is often used when a player is not in a good position to play an attacking backhand. It</p>
+<p>can also be used effectively to change the pace and direction of the ball.</p>
+<p>If you use the slice offensively, then it is played as an approach shot, for instance, when your opponent has hit a short ball and you want to play a shot and come into the net. The ball is hit low over</p>
+<p>the net; on bouncing it will stay low, forcing your opponent to lift the ball in order to get it back over the net. This will, in turn, give you an easier volley.</p>
+<p>The slice is difficult to play two-handed because the second hand limits the follow-through. You will find that many players who normally hit two-handed tend to slice with one hand. Other players start with two hands and let the second hand come off on</p>
+<p>ale he slice is generally hit on the backhand side. Some players</p>
+<p>the follow-through.</p>
+<p>STEP 1 Takeback for slice Start in the ready position and then change your grip to an eastern backhand. If you</p>
+<p>use a forehand grip, the angle of the racket face will be too open on impact and the ball will sail up into the air. As soon as you see</p>
+<p>the ball coming to your backhand side, turn at the hips and shoulders and take the racket back high, above the level of the</p>
+<p>oncoming ball.</p>
+<p>STEP 2 Impact Keep the wrist firm and then bite into the ball with a high-to-low swing. The racket</p>
+<p>face will be slightly open on impact. The ball is hit in front of the body and at a.com-</p>
+<p>fortable distance to the side. Note how the player’s body is leaning forwards into the</p>
+<p>shot. If the angle of the racket is too open on impact with the ball, it will go too high in the air; conversely, if the angle is too</p>
+<p>closed, the ball will end up in the bottom of the net.</p>
+<p>STEP 3 Follow-through The follow-through should be smooth and out in front of the body. Let the momentum of the shot carry you into the net. To generate more backspin and get the ball to</p>
+<p>skid, you might find it better to use a shortened follow-through.</p>
+<p>racket.</p>
+<p>the baseline.</p>
+<p>oe,y,¥,\ _USE OF SPIN ON THE SERVE — TOPSPIN</p>
+<p>topspin (or kick) and slice. A good serve is a combination of speed, placement and variation of spin. The server should always keep his opponent guessing as to where the serve is going. Don’t forget, if you keep holding your serve, you cannot lose the</p>
+<p>game except in a tie break; this will keep the pressure on your opponent.</p>
+<p>Topspin is the safest serve to use and, because of this, it is popular for second serves as well as first serves. Topspin is also</p>
+<p>useful on slow, high-bouncing courts, such as cement or clay, where the court surface automatically diminishes the power of the</p>
+<p>T here are three basic types of serve that you can hit — flat,</p>
+<p>because it is a safe serve. It</p>
+<p>down, reducing the chance of serving the ball long.</p>
+<p>In the learning stages, try placing the ball further to</p>
+<p>the left (if right-handed) and slightly behind you, to</p>
+<p>it.</p>
+<p>shot..</p>
+<p>Imparting spin to the ball with the serve is similar to using topspin on ground strokes. You need to learn a combination of body and racket movements.</p>
+<p>STEP 1 Ball placement Start in the ready position for the serve with a continental (or backhand) grip. Toss</p>
+<p>the ball a little to your left (if right-handed). If you let the ball drop onto the ground, it will land slightly to your left. For the begin-</p>
+<p>ner it is easier if the ball lands behind you.</p>
+<p>Once you have the feeling of topspinning the ball, place it to the left, but in front of, the baseline. You will have to arch your back to hit the serve — especially if you are</p>
+<p>tossing the ball slightly behind you. A topspin B flat</p>
+<p>STEP 2 Racket path The ball is then struck from left to right. The continental or backhand grip gives</p>
+<p>greater flexibility of the wrist, and also ensures that the racket face strikes the ball at the correct angle to get ball rotation. Try to use lots of wrist movement and throw the racket head upwards, through and past the ball.</p>
+<p>STEP 3 Serve paths The ball travels high over the net on the</p>
+<p>topspin serve, and the spin then brings it down. On landing, the ball will kick up and outwards — making it difficult to return, particularly if hit to the backhand</p>
+<p>side of your opponent. He will have to play a high, shoulder-height ball, or take the</p>
+<p>serve very early. A topspin B flat</p>
+<p>USE OF SPIN ON THE SERVE — SLICE</p>
+<p>and is played in the same way as a flat service, except that the racket now comes round the side of the ball. A right-hander serving from the right (deuce) court can make the ball break off to his opponent’s right, taking him out of court and</p>
+<p>forcing a weak return. Likewise, a left-hander such as Martina Navratilova, serving from the left (advantage) court, can make the ball break to her opponent’s left and take her out of court.</p>
+<p>This technique is particularly effective when a left-hander plays a right-hander, as the ball is travelling away from the righthander’s backhand side. It is also effective on fast surfaces, such as</p>
+<p>46 he slice can be used for a first service or a second service,</p>
+<p>grass.</p>
+<p>STEP 1 Ball placement Start in the service ready position with a continental (or backhand) grip. If you are right-handed, place the ball slightly fur-</p>
+<p>ther to your right, but still in front of the body.</p>
+<p>STEP 2 Impact position Brush round the side of the ball — imagine you are hitting past the ball at three o’clock</p>
+<p>to impart spin to it. Many players find this easier with a backhand grip. Try some</p>
+<p>serves with the continental grip and some with the backhand grip to see what suits you best. Your body naturally turns when you serve, so make use of this when slicing</p>
+<p>the ball. Ensure your wrist is fairly loose to help generate a natural snapping action on impact, and follow through in the normal Way. :</p>
+<p>STEP 3 Effect of slice serve on court Once the ball bounces it will stay low and break off to the side. This is a good serve to</p>
+<p>use to make your opponent stretch, and when served wide it can open up the court</p>
+<p>for a volley. It can be devastating if there is</p>
+<p>a side wind from the same direction. On grass, a short, angled slice serve is particularly useful if your opponent is a long way behind the baseline. A flat serve</p>
+<p>B slice serve (this draws the receiver out of position and opens up space for the</p>
+<p>server&#x27;s first ground stroke) C ground stroke</p>
+<p>SLICE SERVICE Jimmy Connors, who is</p>
+<p>against a_ right-hander.</p>
+<p>Here, Connors is in full flight. The racket has left</p>
+<p>imparting spin to it.</p>
+<p>the ball.</p>
+<p>is partly because the game of doubles is more sociable than singles, partly because it is less energetic (the load is shared between two of you), and also because it is stimulating,</p>
+<p>involving touch, creativity, imagination and teamwork.</p>
+<p>The aim of the game of doubles, and the easiest way to win, is to play from the net. The serving team starts with a tremendous advantage, as they already have one player at the net. If the server</p>
+<p>follows his serve into the net, this team will be in a dominating position.</p>
+<p>At low levels, one-up, one-back, formations are often seen, and there is a lot of cross-court rallying. Try to be adventurous and get to the net, as it is far easier to win points there. Some of the most</p>
+<p>exciting points played in tennis are between two attacking doubles partnerships — both at the net!</p>
+<p>M ost club players play far more doubles than singles. This</p>
+<p>BASIC POSITIONS FOR DOUBLES The traditional formation for doubles is with the server (A) standing midway between the centre mark and the inner</p>
+<p>sideline. The server’s partner (B) stands in the middle of the service box, in the volleying position near the net; the receiver (C)</p>
+<p>stands near the baseline, but in a position to cover all the possible angles of the serve;</p>
+<p>and the receiver&#x27;s partner (D) stands on the service line.</p>
+<p>SERVE AND VOLLEY In doubles, a lot of serves are hit down the</p>
+<p>centre line. If you (A), serve wide, you will open the court up, but give your opponent</p>
+<p>a greater angle for return. Try to serve a three-quarter pace serve (1). to allow you time to get into the net (2). The receiver (C) and his partner (D) have the option of returning cross-court at your feet; down</p>
+<p>the middle of the court between you and your partner (B); down the tramline; or of</p>
+<p>lobbing your partner.</p>
+<p>A TYPICAL DOUBLES SITUATION Here is a typical situation with one pair at</p>
+<p>the net, and the other at the baseline. The pair on the baseline have the option of trying to pass their opponents, or of trying to lob them. If the lob (3) is successful, the pair at the net retreat, and the pair at the baseline can come into an advantageous</p>
+<p>position at the net.</p>
+<p>Doubles is all about teamwork. Ken Flach and</p>
+<p>ting down the centre line.</p>
+<p>work together as a team.</p>
+<p>ACTION STUDY (1): SERVE AND VOLLEY</p>
+<p>find that the tactic of serving and volleying is for you. It is particularly suitable for fast surfaces (such as grass) where the ball rebound is quicker, and the ball can be put away more easily. | . You will find that a lot of top players, particularly men, serve and volley when they play at Wimbledon. Boris Becker has won</p>
+<p>Wimbledon with some devastating serving and volleying. Martina Navratilova has also had great success using this tactic. The type of player who uses serving and volleying tries to get to the net whenever possible. A position near to the net has both psychological and physical advantages. ci One of the keys to good serving and volleying is being able to vary your serve by changing the spin — flat, slice or topspin — and by varying the direction or placement in the service box. This means your opponent doesn’t know what to expect, and cannot get into a rhythm on his returns. You need to follow your serve into the net as quickly as possible, forcing your opponent to rush his return. Try to steady yourself so that you are balanced before hitting the volley</p>
+<p>I f you possess a good serve and enjoy volleying, you may well</p>
+<p>SPLIT STEP fo The split step is the key to making your</p>
+<p>77 serve and volley work, even at beginner level. When coming into the net, you need</p>
+<p>to stop momentarily as the receiver strikes the ball, in order to be balanced and react to the return. You jump slightly off one foot, and land on two feet. This gives you a base from which you can move either to</p>
+<p>the forehand or backhand side to play your volley.</p>
+<p>THE RIGHT POSITION It is very important that you get into the right position for your first volley. If you</p>
+<p>serve down the centre line (A) you will run in down the centre of the court (B). This</p>
+<p>serve will reduce the angle of return from your opponent, and is very useful in</p>
+<p>doubles.</p>
+<p>MIDDLE OF ANGLE If you serve out wide, you must follow the path of the ball, and you will move slightly to the side of the centre line (A) to cover possible angles of return. A wide serve will</p>
+<p>open the court up for an easy volley into the open space, but it will also give your opponent (B) a wide range of angles with which to pass you.</p>
+<p>return of serve.</p>
+<p>INSET: Pat Cash serving.</p>
+<p>volleying.</p>
+<p>ACTION STUDY (2): BASELINE PLAY</p>
+<p>1| Many people play tennis from the back of the court and rarely venture to the net, particularly on a</p>
+<p>slower surface, where it is difficult to put the ball away because the opponent has more time to chase it. As ground strokes are bread-andbutter shots, you will probably</p>
+<p>learn to play from the baseline before serving and volleying. A</p>
+<p>good baseliner such as Chris Evert has solid ground strokes and will be very consistent, making few un-</p>
+<p>forced errors. In a match, more points are lost than won. If you can be consistent from the back of the</p>
+<p>court, you will have a lot of success.</p>
+<p>2| A good baseliner will hit the ball about 2-3ft (60-90cm) above the net</p>
+<p>— this gives a good margin for error. Mistakes are often made at beginner level with the ball landing</p>
+<p>in the net. Give yourself a bit more height, and play the percentage</p>
+<p>shot (i.e. the easier one). If you hit higher over the net, it will help you</p>
+<p>to get good length, then your opponent will find it difficult to do much with the ball, and with luck you will</p>
+<p>force him into making an error. Try to hit the ball over the net into zones A and B. Zone C should only be used for aggressive passing</p>
+<p>shots.</p>
+<p>3| Clay-court tennis can be like a game of chess, and the rallies tend to go on for along period of time: A</p>
+<p>simple tactic often used by top players is to force their opponent from one corner to the other. The</p>
+<p>aim is to run the opponent from corner to corner, until you force him out of position. In the diagram,</p>
+<p>player A hits a forehand cross-court to the sideline, and then hits the return cross-court to the backhand. Player B is running from side to side, and eventually hits a short return to point C. Player A then has three chances to win the point: he</p>
+<p>can hit cross-court to point 1; wrong-foot his opponent if he is running hard to cover the shot, by hitting to point 2; or slice the ball</p>
+<p>short and wide, to point 3.</p>
+<p>[4] Another tactic which you will</p>
+<p>see top players like Ivan Lendl using is a sequence of forcing shots from the backhand side. On a slow</p>
+<p>court, the rallies will go on for</p>
+<p>several shots. The diagram simply shows a few strokes to finish the point (otherwise it would be too</p>
+<p>confusing to read). Player A hits deep backhands to player B, driving him further to the left each time. Both players are trying to recover to the central position on</p>
+<p>court after each shot. Eventually, player B hits a short ball to point C.</p>
+<p>This opens up the court for player A to hit a deep backhand down the line (1); if player B has anticipated this, he could wrongfoot him by hitting a short, angled ball to point 2. This tactic would be</p>
+<p>used far more by an aggressive baseliner than a defensive one.</p>
+<p>[5] A good baseliner will not only be able to move his opponent from</p>
+<p>side to side, but also forwards and backwards, so that he uses both the.</p>
+<p>length and breadth of the court. Don’t forget that sidelines can be</p>
+<p>used very effectively to take your</p>
+<p>opponent out of court. One of the best shots to use is a soft topspin</p>
+<p>shot to the short corner (where the service line meets the sideline). This really makes your opponent</p>
+<p>move.</p>
+<p>Sequence of shots: short ball to 1; lob to 2; then short, angled ball to 3.</p>
+<p>[6] You must vary your shots — use</p>
+<p>different spins (topspin, flat or</p>
+<p>slice) — and vary the pace of the ball so that your opponent cannot get into a rhythm. One way to vary your baseline game is by the use of</p>
+<p>the drop shot, which if played at the correct time can be an outright winner or at the worst open the</p>
+<p>court up for an easy next shot.</p>
+<p>Player A hits wide to player B’s forehand, taking him well out of</p>
+<p>court. Player B retrieves the ball</p>
+<p>and hits it down the line. Player A then hits a deep cross-court backhand, forcing a short ball (3) from B. Player B is still trying to recover</p>
+<p>to the central position; so player A then fakes another hard drive but</p>
+<p>as an element of surprise hits a</p>
+<p>drop shot to 1 or 2. As drop shots can be risky, initially only try them from close to the net. They are probably most effective in the women’s game where their court</p>
+<p>coverage is not so great. Learn from the stars.</p>
+<p>odern tennis has tended to encourage all-court players, M who can play from both the baseline and the net. If a ball</p>
+<p>lands in the middle of the court in a normal rallying situation, during the course of a point, a player has several options: to hit an outright winner, or a short-angled ball, or a drop shot, or perhaps an approach shot.</p>
+<p>It is the approach shot that you can try here. An approach shot is any shot which gets you from the back of the court to the front of the court, and into an attacking position at the net. It can be a</p>
+<p>ground stroke, a slice (particularly effective as the ball stays low | , r on bouncing), or a volley. ie An all-court player is always trying to attack the ball, so he will move to any short ball very quickly, hitting an approach shot when</p>
+<p>appropriate, and coming in to the net. It is easier to hit angled strokes from the net, and it gives your opponent less time to play a return. Remember, though, that it is vital to control the approach</p>
+<p>shot as you come in to the net.</p>
+<p>SHORT-BALL RANGE Each player has his own short-ball range —</p>
+<p>that is, the ball from which you can get comfortably to the net without being stranded in the middle of the court. When practising, try to find your short-ball range. Ask your partner (A) to hit balls of varying lengths for you (B) to come in off. Try to get to position X.</p>
+<p>DOWN THE LINE: VOLLEY CROSS-COURT It is important to hit an approach shot</p>
+<p>deep, forcing your opponent to try to pass you from behind the baseline, and from a</p>
+<p>defensive position. If you hit cross-court and come in, the court is opened up and it makes it easier for your opponent to hit a passing shot. A simple tactic is for player A</p>
+<p>to hit down the line, come into the net and volley cross-court.</p>
+<p>SECOND SERVE You can learn when to come to the net by watching top players. You will often see</p>
+<p>the following: Player A: hits a weak serve</p>
+<p>(generally a second serve) to player B. Player B hits down the line and follows the ball into the net to position X, ready to put</p>
+<p>the volley away. This is a very effective</p>
+<p>tactic, but it requires a high level of skill.</p>
+<p>sliced approach shot.</p>
+<p>approaching the net easy.</p>
+</section><footer class="end"><div class="sig">Tennis Books Library</div><div>English text extracted from the book's own PDF.</div></footer>
+</div>
+</div>
+</body>
+</html>

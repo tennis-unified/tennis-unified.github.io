@@ -1,0 +1,2563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pattern Play Tennis</title>
+<meta name="description" content="Tennis library">
+<meta name="author" content="Pham Duc Hai">
+<style>
+.tcq-book{
+  --tcq-paper:#faf9f5; --tcq-ink:#1a1c20; --tcq-ink-soft:#4a4e54;
+  --tcq-ink-faint:#8a8d93; --tcq-indigo:#1d5c63; --tcq-indigo-soft:#2f7d84;
+  --tcq-gold:#a8863c; --tcq-rule:#e2e1da; --tcq-panel:#ffffff;
+  background:var(--tcq-paper); color:var(--tcq-ink);
+  font-family:"Palatino Linotype","Book Antiqua",Cambria,"Times New Roman","Noto Serif",serif;
+  font-size:19px;line-height:1.78;-webkit-font-smoothing:antialiased;}
+.tcq-book .wrap{max-width:760px;margin:0 auto;padding:64px 28px 120px;}
+.tcq-book header.cover{text-align:center;padding:8px 0;}
+.tcq-book .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+.tcq-book header.cover .cover-art{width:100%;max-width:430px;margin:0 auto 30px;border-radius:10px;
+  box-shadow:0 14px 40px rgba(16,40,44,.28);display:block;}
+.tcq-book header.cover .kicker{letter-spacing:.28em;font-size:12px;text-transform:uppercase;
+  color:var(--tcq-indigo);font-weight:600;}
+.tcq-book header.cover h1{font-size:38px;line-height:1.16;margin:.4em 0 .12em;font-weight:600;
+  color:var(--tcq-ink);text-align:center;letter-spacing:0;}
+.tcq-book header.cover .sub{color:var(--tcq-ink-soft);font-size:20px;font-style:italic;}
+.tcq-book header.cover .blurb{color:var(--tcq-gold);font-size:16px;margin-top:.7em;
+  letter-spacing:.04em;}
+.tcq-book header.cover .by{margin-top:1.2em;color:var(--tcq-ink-faint);font-size:14px;
+  letter-spacing:.06em;}
+.tcq-book hr.lead{border:none;border-top:1px solid var(--tcq-rule);margin:36px 0;}
+.tcq-book .part-band{margin:88px 0 8px;padding:26px 0 22px;text-align:center;
+  border-top:1px solid var(--tcq-rule);border-bottom:1px solid var(--tcq-rule);}
+.tcq-book .part-band .part-kicker{letter-spacing:.3em;font-size:12px;text-transform:uppercase;
+  color:var(--tcq-gold);font-weight:600;}
+.tcq-book .part-band .part-name{font-size:23px;color:var(--tcq-indigo);margin-top:.5em;
+  font-style:italic;}
+.tcq-book .chapter{margin-top:56px;}
+.tcq-book h2.ch-title{font-size:29px;line-height:1.25;margin:0 0 .1em;font-weight:600;
+  color:var(--tcq-ink);letter-spacing:0;font-style:normal;
+  border-bottom:2px solid var(--tcq-indigo);padding-bottom:.25em;}
+.tcq-book h3{font-size:21px;margin:40px 0 12px;font-weight:600;color:var(--tcq-indigo);
+  font-style:normal;letter-spacing:0;}
+.tcq-book h4{font-size:18px;margin:30px 0 8px;font-weight:600;color:var(--tcq-gold);
+  font-style:normal;letter-spacing:.02em;}
+.tcq-book p{margin:0 0 1.15em;text-align:justify;hyphens:auto;color:var(--tcq-ink);}
+.tcq-book p.lead-p{font-size:21px;color:var(--tcq-ink-soft);}
+.tcq-book strong{color:var(--tcq-ink);}
+.tcq-book em{color:var(--tcq-ink-soft);}
+.tcq-book .toc{margin:44px auto 0;max-width:560px;background:var(--tcq-panel);
+  border:1px solid var(--tcq-rule);border-radius:8px;padding:26px 32px;}
+.tcq-book .toc-title{font-size:15px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--tcq-indigo);margin:0 0 .9em;font-weight:600;font-style:normal;}
+.tcq-book .toc-part{font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--tcq-gold);font-weight:600;margin:1.3em 0 .4em;}
+.tcq-book .toc-part:first-of-type{margin-top:.4em;}
+.tcq-book .toc ol{margin:0;padding-left:0;list-style:none;}
+.tcq-book .toc li{margin:.42em 0;font-size:16px;}
+.tcq-book .toc a{color:var(--tcq-ink);text-decoration:none;border-bottom:1px solid transparent;}
+.tcq-book .toc a:hover{border-bottom-color:var(--tcq-indigo);}
+.tcq-book dl.glossary{margin:0 0 1.2em;padding:0;}
+.tcq-book dl.glossary dt{font-weight:600;color:var(--tcq-indigo);margin:1.15em 0 .15em;
+  font-size:18px;}
+.tcq-book dl.glossary dd{margin:0 0 .3em;padding-left:1.4em;color:var(--tcq-ink-soft);
+  font-size:18px;line-height:1.7;text-align:justify;}
+.tcq-book footer.end{margin-top:90px;border-top:1px solid var(--tcq-rule);padding-top:26px;
+  color:var(--tcq-ink-faint);font-size:14px;text-align:center;line-height:1.9;}
+.tcq-book footer.end .sig{color:var(--tcq-indigo);font-size:15px;letter-spacing:.08em;}
+body.dark-mode .tcq-book{
+  --tcq-paper:#0f1416; --tcq-ink:#e6e7e3; --tcq-ink-soft:#b0b3af;
+  --tcq-ink-faint:#878b90; --tcq-indigo:#7fbfc4; --tcq-indigo-soft:#5fa3a9;
+  --tcq-gold:#c9a961; --tcq-rule:#283135; --tcq-panel:#161d20;}
+body.dark-mode .tcq-book p,
+body.dark-mode .tcq-book li,
+body.dark-mode .tcq-book dd,
+body.dark-mode .tcq-book div{color:var(--tcq-ink);}
+body.dark-mode .tcq-book p.lead-p,
+body.dark-mode .tcq-book em,
+body.dark-mode .tcq-book dl.glossary dd{color:var(--tcq-ink-soft);}
+body.dark-mode .tcq-book header.cover .by,
+body.dark-mode .tcq-book footer.end{color:var(--tcq-ink-faint);}
+body.dark-mode .tcq-book h2.ch-title,
+body.dark-mode .tcq-book header.cover h1{color:var(--tcq-ink) !important;}
+body.dark-mode .tcq-book h3,
+body.dark-mode .tcq-book dl.glossary dt,
+body.dark-mode .tcq-book header.cover .kicker,
+body.dark-mode .tcq-book .toc-title,
+body.dark-mode .tcq-book footer.end .sig,
+body.dark-mode .tcq-book .part-band .part-name{color:var(--tcq-indigo) !important;}
+body.dark-mode .tcq-book h4,
+body.dark-mode .tcq-book header.cover .blurb,
+body.dark-mode .tcq-book .toc-part,
+body.dark-mode .tcq-book .part-band .part-kicker{color:var(--tcq-gold) !important;}
+body.dark-mode .tcq-book .toc a{color:var(--tcq-ink);}
+body.dark-mode .tcq-book strong{color:var(--tcq-ink) !important;}
+@media (max-width:760px){
+  .tcq-book .wrap{padding:40px 20px 80px;}
+  .tcq-book header.cover h1{font-size:28px;}
+  .tcq-book header.cover .cover-art{max-width:320px;}
+  .tcq-book dl.glossary dd{padding-left:.8em;}
+  .tcq-book .part-band .part-name{font-size:19px;}
+}
+@media print{
+  .tcq-book .toc{break-after:page;}
+  .tcq-book .chapter{break-before:page;}
+  .tcq-book .part-band{break-before:page;break-after:avoid;}
+  .tcq-book dl.glossary dt{break-after:avoid;}
+}
+
+/* breadcrumb — sits above .tcq-book, so it carries its own palette.
+   Colours/scale mirror the reference TFL books (#2–#8): .9rem, muted
+   #5b6572 separator, the book's own accent for the root link. */
+.tu-breadcrumb{background:#faf9f5;padding:16px 0 4px;font-size:.9rem;color:#6b6f76;
+  font-family:"Palatino Linotype","Book Antiqua",Cambria,"Times New Roman","Noto Serif",serif;}
+.tu-breadcrumb__list{list-style:none;display:flex;flex-wrap:wrap;gap:2px 8px;
+  max-width:760px;margin:0 auto;padding:0 28px;align-items:center;}
+.tu-breadcrumb__item{margin:0;}
+.tu-breadcrumb__link{color:#1d5c63;text-decoration:none;}
+.tu-breadcrumb__link:hover{text-decoration:underline;}
+.tu-breadcrumb__sep{color:#5b6572;margin:0 2px;user-select:none;}
+.tu-breadcrumb__current{color:#1a1c20;font-weight:500;}
+</style>
+</head>
+<body>
+
+
+<nav class="tu-breadcrumb" aria-label="Breadcrumb">
+  <ol class="tu-breadcrumb__list">
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/books/">Tennis Books Library</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item tu-breadcrumb__current" aria-current="page">Pattern Play Tennis</li>
+  </ol>
+</nav>
+<div class="tcq-book">
+<div class="wrap">
+<header class="cover"><div class="kicker">Tennis Library</div><h1>Pattern Play Tennis</h1><div class="by"></div><p style="text-align:center;margin:18px 0 0;font-family:var(--tcq-sans,sans-serif);font-size:14px;letter-spacing:.02em;"><a href="https://github.com/tenniskb/tenniskb.github.io/releases/download/books-pdf-v1/pattern-play-tennis.pdf" target="_blank" rel="noopener" style="color:#1d5c63;font-weight:600;text-decoration:none;border:1px solid #cfd8d4;border-radius:6px;padding:7px 14px;display:inline-block;">Read the original PDF &#8599;</a></p></header><div class="toc"><div class="toc-title">Contents</div><ol>
+<li><a href="#sec-1">Section 1</a></li>
+<li><a href="#sec-2">DOUBLEDAY &amp; COMPANY, INC.</a></li>
+<li><a href="#sec-3">CHAPTER ONE PATTERN PLAY TEACHING</a></li>
+<li><a href="#sec-4">on basic stroke production. With the old method of teaching,</a></li>
+<li><a href="#sec-5">difficult, to impossible, just by increasing the speed of the</a></li>
+<li><a href="#sec-6">moves the “V” 4 turn to his left. The palm of the hand moves</a></li>
+<li><a href="#sec-7">close to the body and the right hand should be forward and aie of the right hip.</a></li>
+<li><a href="#sec-8">both examples the ball is being played off to one side and full</a></li>
+<li><a href="#sec-9">In this series of patterns ask your student to hit all of his re-</a></li>
+<li><a href="#sec-10">Tossing Arm a TT ok nee ee Racket Arm</a></li>
+<li><a href="#sec-11">your student that he is throwing the racket up skyward toward</a></li>
+<li><a href="#sec-12">starting in the back-scratch position.</a></li>
+<li><a href="#sec-13">with the pivot, the racket will not have gone very far. Kid</a></li>
+<li><a href="#sec-14">fore is not considered a high percentage shot even by top</a></li>
+<li><a href="#sec-15">the youngster group, the choice of a racket shauld be based</a></li>
+<li><a href="#sec-16">some overlapping into the medium category by 4 ounce if</a></li>
+<li><a href="#sec-17">heavy category. Many of the top players who~are small in</a></li>
+</ol></div><section class="chapter" id="sec-1">
+<h2>Section 1</h2>
+<p>Weight shifts to back foot. Arm starts down.</p>
+<p>Left knee begins to bend forward. Arm reaches full down position ‘ and starts moving toward back-</p>
+<p>stop.</p>
+<p>Body weight remains on back foot. Arm and racket continue to come</p>
+<p>around toward cocked position.</p>
+<p>Body coil is just beginning. Arm and elbow almost ready to</p>
+<p>be cocked.</p>
+<p>Body coil is really building. Right . Elbow bends, arm cocks, wrist</p>
+<p>knee bends in same direction as cocks, and racket drops behind</p>
+<p>left knee. back.</p>
+<p>Body coil is completed including Arm and racket are in the fully</p>
+<p>some backbend. Both knees are fully cocked position.</p>
+<p>bent.</p>
+<p>Body weight whips upward and forward Wrist starts racket upward and</p>
+<p>as knees begin to straighten. The only forward, right shoulder starts</p>
+<p>contact with the ground is the balls upward and forward. Racket is</p>
+<p>of both feet. picking up speed rapidly.</p>
+<p>All bodycweight is being thrust up- Entire right arm and shoulder are</p>
+<p>ward and forward at the hit point. fully extended, wrist has completely</p>
+<p>Left toe is barely touching the court, triggered and racket head is</p>
+<p>as right foot begins to come forward. traveling at its highest speed.</p>
+<p>Body is extended in straight line. .</p>
+</section>
+<section class="chapter" id="sec-2">
+<h2>DOUBLEDAY &amp; COMPANY, INC.</h2>
+<p>No portion of this book may be reprinted for any reason without</p>
+<p>express permission from the publisher.</p>
+<p>To Tony Trabert, a long time friend,</p>
+<p>who places the importance of helping</p>
+<p>young people believe in themselves far</p>
+<p>above the goal of teaching them tennis.</p>
+<p>Chapter One PATTERN PLAY TEACHING</p>
+<p>Crowding the Ball Low and High Volleys</p>
+<p>Hitting Position 61 The First “Hit” 62 Racket Arm/Full Wind-up 64 Body /Coil 65 Follow-through 68</p>
+<p>Basics 96 Basic Common Points Between Forehand a</p>
+<p>Stroke Refinements—Backhand 108 Where the Backhand Differs 111</p>
+<p>Special Problems to Look for—Backhand 112</p>
+<p>Shoulder 112 Hip and Shoulder 112 Hitting Off the Back Foot 113</p>
+<p>Where the Forehand Differs Special Problems to Look for—Forehand</p>
+<p>Patterns—Stroke Refinement, Backhand and</p>
+<p>Chapter Six MODIFIED GROUND STROKES The Serve Return</p>
+<p>Half-volley Patterns The Base Line Half-volley</p>
+<p>Chapter Seven CHOOSING A RACKET</p>
+<p>Men 135 Balance 136 Grip 137 Stringing a Racket 138</p>
+<p>String Tension 138 Types of Strings 139</p>
+<p>While playing tennis tournaments in Europe and the United</p>
+<p>States, Spencer Brent got to know most of the tournament players and became close friends with many world cham-</p>
+<p>pions.</p>
+<p>Knowing he someday wanted to teach tennis, he began studying players’ strengths and weaknesses and how these re-</p>
+<p>lated to their basic stroke production. He took notes on what</p>
+<p>players thought about their own strokes and their opponents’.</p>
+<p>He paid special attention to ideas and key words that con-</p>
+<p>veyed the mechanics of a stroke with impact and meaning.</p>
+<p>He took lessons on how to teach tennis from Les Stoefen,</p>
+<p>one of the all-time great professional teachers, and then spent</p>
+<p>several years gaining teaching experience. He worked with</p>
+<p>Maureen Connolly and the Junior Wightman Cup team the</p>
+<p>year the roster included such familiar names as Billie Jean</p>
+<p>(Moffitt) King and Karen (Hantze) Susman. Over the years</p>
+<p>he experimented and improved on all he had learned about</p>
+<p>teaching tennis, and from this was born the concept of Pattern</p>
+<p>Play Tennis.</p>
+<p>He first used Pattern Play Tennis in teaching Tory Fretz, who</p>
+<p>later achieved a national ranking as fourth in the United</p>
+<p>States. Then he coached Linda Tuero, who won the National</p>
+<p>CONTENTS.</p>
+<p>Clay Court Singles Championship and has been“ranked seventh in the United States. One of the author’s most recent</p>
+<p>students, after one year of intensive Pattern Play Tennis, en-</p>
+<p>tered the Los Angeles City Championship and, although un-</p>
+<p>heard of and un-seeded, reached the finals and upset a na-</p>
+<p>tionally ranked player in straight sets to win the tournament.</p>
+<p>The author has played national championship tournaments</p>
+<p>in Europe and the United States, including Forest Hills, and</p>
+<p>has reached the semi-finals of the nationals in platform tennis.</p>
+<p>Mr. Brent is forty-three years old, lives in Scarsdale, N.Y.,</p>
+<p>with his wife, Elaine, and their daughter, Monica, and son,</p>
+<p>Pattern Play Tennis has produced championship players in remarkably short time periods because it is based on a simple but</p>
+<p>powerful fact . . . Every point is a pattern. Trace the flight of</p>
+<p>the ball during a point and the resulting lines will form a</p>
+<p>pattern on the court surface. Do this for several points and it</p>
+<p>becomes obvious patterns repeat themselves.</p>
+<p>By using the concept of Pattern Play Teaching combined with a thorough understanding of not only the “how to” but the “why” of each stroke, you can experience the tremendous sense</p>
+<p>of achievement of seeing a student progress into an outstanding</p>
+<p>tennis player. And the satisfaction of knowing you have helped</p>
+<p>someone, I mean really helped, continues every time you see</p>
+<p>him hit a winning shot, or come home with a trophy, or make</p>
+<p>the headlines when he upsets a ranked player, or when you</p>
+<p>team up together and win the club doubles championship.</p>
+<p>There is a very definite side benefit to Pattern Play Teach-</p>
+<p>ing. You can substantially improve your own game, because by</p>
+<p>thoroughly understanding the refinements of each stroke and by talking about them over and over again, you will be sur-</p>
+<p>prised by suddenly playing better yourself. For example, most</p>
+<p>players are taught to get to the ball with the wrong foot and</p>
+<p>this robs a great deal of a player’s natural power. The fact</p>
+<p>is the foot that gets the player into position should not be the</p>
+<p>foot that is part of the hit. By teaching the correct footwork, by having to repeat it over and over again, and by observing</p>
+<p>the tremendous difference it makes, you will be automatically</p>
+<p>programing or brainwashing yourself into using -better footwork. And there are many other benefit areas besides footwork,</p>
+<p>so when you want to bring your own game to a new peak, get</p>
+<p>someone familiar with Pattern Play Teaching to hit patterns</p>
+<p>to you.</p>
+<p>There are many tennis players who are convinced teaching will create bad habits in their own game and therefore refuse</p>
+<p>to coach anyone, even occasionally. Unless they use Pattern</p>
+<p>Play Teaching, their concern is well justified. The reason their</p>
+<p>game suffers is simple. Watching the ball through the hit is very important, and accomplishing this on every shot takes a</p>
+<p>great deal of self-discipline until it becomes second nature. Teaching breaks this down by requiring the instructor to</p>
+<p>divide his attention between the student and the ball. He must</p>
+<p>analyze the student&#x27;s stroke, and at the same time move into</p>
+<p>position to hit the ball back to the student. Soon the teacher is</p>
+<p>“peeking” as he hits, thus opening the floodgates for many</p>
+<p>bad habits. Yet all of these habits are caused by not watching</p>
+<p>the ball.</p>
+<p>Pattern Play Teaching completely eliminates the tendency</p>
+<p>to “peek” as the instructor never attempts to return the ball hit</p>
+<p>by the student.</p>
+<p>This book will help you teach the wonderful game of tennis</p>
+<p>well. It will answer the undeniable prerequisite of having to</p>
+<p>know the subject thoroughly. It will help you to communicate</p>
+<p>this knowledge, it will help you to analyze a student’s under-</p>
+<p>standing or lack of it, and it will help you to innovate when a</p>
+<p>learning problem develops. The book is not written with the</p>
+<p>idea of making thousands upon thousands of tennis players</p>
+<p>into professional teachers, but it will enable you to bring .a</p>
+<p>student along as far as you wish and up to the point a good</p>
+<p>teaching professional gets into the act. And this professional</p>
+<p>will be greatly helped by what has been done before him.</p>
+<p>Learning to play tennis takes time and the process is a rather</p>
+<p>orderly progression of accomplishments, Each stroke chapter</p>
+<p>follows this progression step by step from basics through stroke</p>
+<p>refinements, so as your student improves you will be able to</p>
+<p>move deeper into each chapter introducing new challenges as</p>
+<p>he becomes a better and better player. As you use Pattern Play Tennis be sure to teach all the strokes to your student</p>
+<p>each lesson so that his game develops as a well-knit unit.</p>
+<p>Apologies are in order to all who are left-handed, for they will have to mirror the instructions, which can get complicated. But, hopefully, having done this through their lives, the task</p>
+<p>will be a familiar one.</p>
+<p>1. Serve to backhand.</p>
+<p>2. Backhand return to backhand volley.</p>
+<p>3. Backhand volley to backhand.</p>
+</section>
+<section class="chapter" id="sec-3">
+<h2>CHAPTER ONE PATTERN PLAY TEACHING</h2>
+<p>To fully appreciate the significance of Pattern Play Teaching,</p>
+<p>all you would need to do is trace the flight of the ball during</p>
+<p>a point. If this were done for several games, it would become</p>
+<p>obvious patterns repeat themselves as you would soon be</p>
+<p>drawing patterns on top of patterns. For example, how many</p>
+<p>times have you seen this pattern (opposite) repeat itself in a</p>
+<p>match, set, or even a game?</p>
+<p>Using this pattern as a simplified example, it becomes ob-</p>
+<p>vious points are made up of patterns, some complicated and</p>
+<p>some never really getting started, as in the case of a double</p>
+<p>fault. We could even substitute the word “pattern” for “point”</p>
+<p>and introduce a new meaning to the game, as in “Who won</p>
+<p>that last pattern?” Therefore, if any player masters the various</p>
+<p>patterns that occur during a match, by practicing, learning,</p>
+<p>and conquering them one at a time, he will become an out-</p>
+<p>standing player. And that is exactly why the concept of Pattern Play Teaching has been so successful.</p>
+<p>Pattern Play Teaching’s greatest advantage over any other</p>
+<p>method of teaching is its flexibility. Patterns can be varied in</p>
+<p>speed, direction, and order of difficulty of shots, or the instructor can duplicate a pattern again and again, This makes it possible to apply Pattern Play Teaching to beginners, in-</p>
+<p>termediates, advanced, and championship players.</p>
+<p>Let’s take a beginner—one who is just starting off working</p>
+</section>
+<section class="chapter" id="sec-4">
+<h2>on basic stroke production. With the old method of teaching,</h2>
+<p>the ball would be bounced to the forehand over and over again</p>
+<p>until the student began to get a certain grooved quality to that stroke. And then the backhand would be worked on,</p>
+<p>over and over again, until that stroke began to feel natural. The unfortunate part of this method of teaching, is there</p>
+<p>then comes a period during which the two strokes have to be tied together. Grips need changing between shots. Footwork</p>
+<p>and body movement linking the shots must be learned. And to make matters worse, almost inevitably the backhand falls be-</p>
+<p>hind the progress of the forehand. During this phase of joining</p>
+<p>the shots together the student feels his progress has stopped</p>
+<p>and will often become discouraged.</p>
+<p>Now let’s apply Pattern Play Teaching to the same example. The student is asked to face the net at the base line, just as he</p>
+<p>would if he were about to play a game. The instructor holds</p>
+<p>four balls in his left hand and hits them to his student one</p>
+<p>after the other, alternating forehand and backhand, forehand</p>
+<p>and backhand. He does not attempt to hit any of his student&#x27;s</p>
+<p>returns. The instructor begins to mold stroke production within</p>
+<p>the framework of the way the strokes will be used during play.</p>
+<p>After stroking the first ball of the pattern, which a new student</p>
+<p>probably will miss completely, the next ball is on its way, com-</p>
+<p>ing to the student’s backhand. There simply is not time to worry</p>
+<p>about a missed shot and the student’s concentration does not</p>
+<p>slacken, nor does he become discouraged.</p>
+<p>With a little prompting, and slow patterns, the student</p>
+<p>is reminded to change grips between shots, Within just a</p>
+<p>few minutes, you have established a basic rhythm—racket</p>
+<p>back, forehand swing, change grip, racket back, backhand</p>
+<p>swing, change grip, racket back, forehand swing, etc. It is that</p>
+<p>simple, and takes longer to explain it than for the beginner</p>
+<p>to pick it up. Footwork also becomes a part of Pattern Play</p>
+<p>Teaching quite naturally. The student will instinctively move</p>
+<p>into the ball properly when hitting an alternating pattern,</p>
+<p>for he knows the next shot in the pattern will be to the op-</p>
+<p>posite side. This gets his weight moving through the shot and</p>
+<p>toward the net as he comes back to the ready position. The</p>
+<p>patterns are deliberately kept simple and a great deal of time</p>
+<p>is permitted between shots. The important factor is the student</p>
+<p>is learning the game as a unit, all together, without interrup-</p>
+<p>tion, and with a smooth-flowing transition developing from one</p>
+<p>shot to the next.</p>
+<p>Now let’s take an example of how a pattern can be used with a top player. Remember, top players, even world cham-</p>
+<p>pions, are confronted with some of the same problems facing</p>
+<p>the beginner. Even among the best, strokes will falter from</p>
+<p>time to time. Footwork, watching the ball, timing, all these</p>
+<p>need to be constantly worked on to remain in top form. The</p>
+<p>great LilMo (Maureen Connolly), used to use patterns to</p>
+<p>sharpen up her game, particularly when she was having a</p>
+<p>stroke or a footwork problem. One day in particular, she was</p>
+<p>very unhappy with the way she was moving on the court.</p>
+<p>She asked that I step up the speed of the patterns to the point that the second ball in the pattern was being sent on its</p>
+<p>way before the ball she had just hit had crossed the net. This</p>
+<p>picked up the tempo of play to an almost impossible speed.</p>
+<p>The result was a very considerable improvement in her covering of court under normal play conditions. The idea in this</p>
+<p>case is not unlike the batter who will pick up a heavily weighted bat and swing it prior to going to the plate.</p>
+<p>In summary, we can say that for every problem that plagues</p>
+<p>a tennis player, whether a beginner or a world champion, an</p>
+<p>explicit pattern can be picked to work on that problem, And it can be repeated again and again until that problem is</p>
+<p>mastered.</p>
+<p>In order to hit precise patterns to a student, the best technique is for you to stand about five feet behind the net, hold-</p>
+<p>ing the racket in one hand and four balls in the other. Your</p>
+<p>student is back on his base line at the ready position. Without</p>
+<p>bouncing the ball, you then hit the first ball of the pattern to a</p>
+<p>predetermined spot. The student moves in and hits that ball,</p>
+<p>say, down the side line. As the ball he has just hit reaches the</p>
+<p>1. Deep to student’s forehand. 2. Deep to student&#x27;s backhand.</p>
+<p>net, and again without bouncing it, you hit the second ball</p>
+<p>in your hand to the next predetermined point in the court.</p>
+<p>You do not attempt to return the balls hit by the student. For</p>
+<p>3. Short to forehand bringing 4. Student&#x27;s forehand volley.</p>
+<p>him to net.</p>
+<p>Remember, the objective of Pattern Play Teaching is not to make it so difficult that the student is continually scrambling.</p>
+<p>For the beginner, you not only stick to a simple pattern, but</p>
+<p>you also let your student know ahead of time where each ball</p>
+<p>in the pattern will be hit. If he can get set, at least in his mind, and know in which general direction he will be expected</p>
+<p>to move, his progress will be much faster.</p>
+<p>Initially, patterns can be used to probe various aspects of a</p>
+<p>student’s game, Simple patterns can progress into more difficult ones, until finally, errors begin to occur. At this point,</p>
+<p>a specific problem can be selected and the degree of difficulty</p>
+<p>of the pattern can be adjusted to then work on that problem.</p>
+<p>The amount of time you wait before you hit the second ball,</p>
+<p>how hard you hit it, where you hit it, and finally where you</p>
+<p>have asked your student to return it, all can be varied depend-</p>
+<p>ing on the degree of ability of your student. Now let&#x27;s take an</p>
+<p>example.</p>
+<p>Let’s suppose you have an intermediate student who is</p>
+<p>consistently missing an approach shot off his forehand during</p>
+<p>a series of patterns. The chances are if your student were</p>
+<p>asked to hit one isolated approach shot from that position in</p>
+<p>the court, he wouldn’t miss too often. But now, you mix this</p>
+<p>shot into a realistic pattern that includes an approach shot. In</p>
+<p>the preceding diagrams the “trouble” shot would be in Diagram</p>
+<p>3. In going to work on the problem you could use the same</p>
+<p>pattern. The first pattern shot is a forehand, followed by a</p>
+<p>backhand, and finally, the shot he’s been missing. But as he</p>
+<p>hits it he knows it will be followed by a volley, and so the</p>
+<p>pressure is on, just as it is during play.</p>
+<p>To further develop this example, let’s say you hit several</p>
+<p>identical patterns, checking all the basics, one by one. After</p>
+<p>isolating what you think the reason is for his missing the ap-</p>
+<p>proach shot, you hit several more patterns, just to make sure. At this point you are certain the basics are being performed</p>
+<p>properly with the exception of his watching the ball. So you point this fact out, tell him to keep his head down and watch</p>
+<p>the ball through the hit, and then go back and redo the pattern with him concentrating on watching the ball. If you have</p>
+<p>correctly diagnosed the problem, his progress will be quite</p>
+<p>startling. Stick with this pattern until it has been mastered. The feeling of accomplishment is another benefit of Pattern Play Teaching.</p>
+<p>Without exception the best way to teach a student is to hit</p>
+<p>patterns on every basic stroke every lesson, While progress</p>
+<p>may seem slow, actually it will be just the opposite, for your</p>
+<p>student will be learning the game as a well-knit unit. From</p>
+<p>every stroke that must be learned by a beginner to every</p>
+<p>problem that can plague a top player, a pattern can be created</p>
+<p>to work on that stroke or problem. Further, the degree of</p>
+<p>difficulty of a specific pattern may be varied from very easy, to</p>
+</section>
+<section class="chapter" id="sec-5">
+<h2>difficult, to impossible, just by increasing the speed of the</h2>
+<p>shots and/or decreasing the time interval between each shot.</p>
+<p>As you teach, using patterns, you will find it increasingly</p>
+<p>easy to create new ones to solve a problem or help teach a</p>
+<p>stroke. Be flexible and use your imagination.</p>
+<p>The best place to introduce your student to Pattern Play</p>
+<p>Teaching is at net, as the volley is a relatively simple stroke. His progress will be quite noticeable even on the first lesson,</p>
+<p>and this will give him confidence in you and his ability to</p>
+<p>learn the game. In each subsequent lesson you will always</p>
+<p>cover all the strokes so that his game progresses as a unit.</p>
+<p>Even if your student is not a beginner, check his volley</p>
+<p>grip carefully. Most players, not realizing it, use the wrong</p>
+<p>grip and greatly handicap their net play as a result, The cor-</p>
+<p>rect volley grip is the Eastern backhand, also called the Con-</p>
+<p>tinental, and it is used by virtually all of the top players. It</p>
+<p>has many advantages, not the least of which is both back-</p>
+<p>hand and forehand volleys are made with the exact same</p>
+<p>grip, which is particularly valuable during a fast exchange</p>
+<p>of shots.</p>
+<p>Starting a student out on the Continental grip will un-</p>
+<p>doubtedly cause learning problems on the forehand side. But</p>
+<p>be stubborn, hang in there, and together you will win out,</p>
+<p>for conquering the Continental is mostly mind over matter</p>
+<p>and establishing racket face control with the wrist. The bene-</p>
+<p>fits to your student of going this route are well worth the</p>
+<p>extra effort many times over, If you come across a student who</p>
+<p>after quite a few lessons is just not making any progress, then</p>
+<p>the reluctant alternative is to move his grip toward the Eastern</p>
+<p>forehand, and then gradually over a period of time bring him</p>
+<p>back to the Continental.</p>
+<p>As the Eastern forehand grip is the easiest to get exactly</p>
+<p>right, introduce it to him first. Ask him to take the throat of</p>
+<p>the racket in his left hand and place the palm of his right</p>
+<p>hand flat against the strings. Have him slide his right hand, with fingers outstretched, down the racket making sure the</p>
+<p>palm remains parallel with the strings. When his hand reaches</p>
+<p>the handle he simply closes his fingers around it (Figure 1).</p>
+<p>The butt end of the racket should extend slightly beyond the</p>
+<p>heel of the hand.</p>
+<p>Now he is ready to learn the Eastern backhand, which is</p>
+<p>also called the Continental. Ask him to look down at his</p>
+<p>Kastern forehand grip and note the position of the “V” formed by his thumb and forefinger in relation to the racket head</p>
+<p>and handle (Figure 2). To attain the Continental grip he</p>
+</section>
+<section class="chapter" id="sec-6">
+<h2>moves the “V” 4 turn to his left. The palm of the hand moves</h2>
+<p>from parallel to the racket strings to a position almost com-</p>
+<p>pletely on top of the handle. As a result the “V” is now to</p>
+<p>the left of the handle (Figure 3).</p>
+<p>While this is the correct grip for all volleys including the</p>
+<p>overhead, there is a minor modification that can help your</p>
+<p>student learn the Continental on the forehand volley. The</p>
+<p>modification is simply this, the heel of the hand does not come</p>
+<p>quite as far on top of the handle, although the rest of the grip remains the same. This grip can be used on both backhand</p>
+<p>and forehand volleys.</p>
+<p>Before leaving the various grips, the modified Continental</p>
+<p>should be covered. It is simply a grip position that is halfway</p>
+<p>between the Eastern forehand grip and the full Continental</p>
+<p>or Eastern backhand grip. The grip is a compromise and can</p>
+<p>be used on all volleys as well as on the backhand ground</p>
+<p>stroke. It should not be used on the forehand. For a player</p>
+<p>that just cannot master the full Continental grip on the volley,</p>
+<p>the modified Continental is an acceptable compromise.</p>
+<p>Figure 1. The Eastern forehand grip is like shaking hands with the</p>
+<p>racket. The fingers should be spread a little for better racket control.</p>
+<p>Figure 2. (Left) Although there are modifications of the Eastern forehand grip, the only stroke it is used on is the forehand.</p>
+<p>Figure 3. (Right) With the exception of the forehand, the Continental grip is used on all strokes including volleys, half-volleys,</p>
+<p>overheads, serves, and backhands. Depending on the stroke and the player&#x27;s preference, the thumb can be wrapped around the handle, or as shown here, placed almost parallel to it.</p>
+<p>Figure 4. In the ready position the right elbow should be tucked in</p>
+</section>
+<section class="chapter" id="sec-7">
+<h2>close to the body and the right hand should be forward and aie of the right hip.</h2>
+<p>Because of the extreme shortness of preparation time at</p>
+<p>net, the ready position takes on added importance. Be critical</p>
+<p>of your student if he does not get this part of the volley</p>
+<p>learned and learned well.</p>
+<p>Move him to a position of 8 to g feet behind the net straddling the center service line. His weight should be evenly dis-</p>
+<p>tributed on the balls of both feet which should be spread about</p>
+<p>shoulder’s width apart. His knees ought to be flexed, and even</p>
+<p>though his body is slightly bent at the waist, his ramp should</p>
+<p>be tucked in under him. His right hand should be belt high,</p>
+<p>holding the racket with the correct volley grip. The left hand</p>
+<p>cradles the throat of the racket so that the racket head is forward and in front of the left shoulder area. The face of the</p>
+<p>racket must be perpendicular to the court surface. He must</p>
+<p>have his concentration under complete control and be ready to</p>
+<p>spring into instant action, but his muscles should not be rigid</p>
+<p>(Figure 4). While all this sounds easy, it will take plenty of</p>
+<p>practice before he is doing it well.</p>
+<p>The volley, either backhand or forehand, is an abbreviated</p>
+<p>and relatively simple stroke, although body weight and footwork are very important. Show your student how simple the</p>
+<p>racket movement actually is.</p>
+<p>From the ready position have your student move the racket head to his right, laying his wrist back sharply, bringing the</p>
+<p>racket parallel to the net. His elbow should be bent and kept tucked in fairly close to his body. His forearm should be</p>
+<p>Figure 5. Laying the wrist back sharply and making it solid as a piece of steel is the answer to learning the forehand volley using the</p>
+<p>Continental grip.</p>
+<p>forward of and to the right of his hip. Even though he is using</p>
+<p>the Continental grip he should have no trouble in positioning</p>
+<p>the racket face in an open position of approximately 35 to 4o</p>
+<p>degrees. The head of the racket should be slightly above the</p>
+<p>handle (Figure 5).</p>
+<p>Have him bring his racket back to the ready position, and</p>
+<p>after checking the grip to make sure it is still correct, have</p>
+<p>Figure 6. Great strength is built into the backhand volley by positioning the forearm well forward and by keeping the wrist ab-</p>
+<p>solutely solid through the entire shot.</p>
+<p>your student move the racket to the backhand volley position.</p>
+<p>The basic difference between this and the forehand volley is</p>
+<p>the wrist is not laid back when moving the racket parallel</p>
+<p>to the net. Instead, racket position is accomplished through a</p>
+<p>rotation of the wrist and forearm so that the back of the</p>
+<p>hand is facing skyward. The racket hand is in front of the</p>
+<p>body instead of off to one side. As with the forehand volley,</p>
+<p>the racket face is open (Figure 6).</p>
+<p>Figure 7. When footwork is introduced, the left hip moves forward</p>
+<p>but the shoulders remain parallel to the net.</p>
+<p>Before hitting volley patterns to your student, you need. to</p>
+<p>demonstrate the footwork. Ask him to take the ready position.</p>
+<p>Then, moving the racket to the forehand volley position as</p>
+<p>practiced earlier, have him take a short step forward and to</p>
+<p>the right with his left foot. If a line were drawn from the toe</p>
+<p>of his right foot to the toe of his left foot, it would be almost</p>
+<p>perpendicular to the net (Figure 7).</p>
+<p>Figure 8. On the backhand volley, shoulder pivot is pronounced as the left shoulder moves to the rear and the right shoulder moves</p>
+<p>forward. The hit point must be well toward the net.</p>
+<p>Now have your student come back to the ready position.</p>
+<p>Have him move the racket to the backhand volley position while stepping forward and to the left with his right foot. The</p>
+<p>movement of the shoulders is quite pronounced. A line drawn</p>
+<p>from the toe of the left foot to the toe of the right foot will be</p>
+<p>almost perpendicular to the net (Figure 8).</p>
+<p>Bring your student back to the ready position..At this point have him put it all together, moving quickly from the ready position to the forehand volley, back to the ready position,</p>
+<p>to the backhand volley and back to the ready position. Repeat</p>
+<p>this without pausing and he will quickly establish a rhythm</p>
+<p>that is like a simple dance step.</p>
+<p>By now your student is probably wondering if he is ever</p>
+<p>going to hit a ball, but the preceding steps will prove well</p>
+<p>worth the time and effort.</p>
+<p>Move back to your service line and hit soft alternating</p>
+<p>patterns with the first shot going to the forehand, the second</p>
+<p>to the backhand and so on. All your student does on each</p>
+<p>shot is repeat the racket movement and footwork you have</p>
+<p>just shown him, moving the racket directly-in front of the path</p>
+<p>of the ball and keeping his wrist absolutely firm. Make sure</p>
+<p>you give him time to come back to the ready position after</p>
+<p>each ball, but keep the rhythm of your shots consistent so he</p>
+<p>will begin to pick up a sense of timing.</p>
+<p>While the net is a good place to start a student, the difficulty</p>
+<p>of your hitting patterns is greater, for the target area you hit</p>
+<p>each ball to is fairly small (Figure 4-R). In addition, your shots</p>
+<p>will strike the net more often as it will be directly in front of</p>
+<p>your student. If this happens too often the rhythm of your</p>
+<p>patterns will be disrupted and the best solution is to move</p>
+<p>closer to net, but hit your shots with less pace. If you are work-</p>
+<p>ing with a beginner, you may want to do this anyway, or even</p>
+<p>toss patterns to him. As he progresses you can begin hitting</p>
+<p>them, and as he improves you can move a few feet farther away</p>
+<p>from net hitting patterns from a still deeper court position. By</p>
+<p>moving in stages like this over a period of several lessons, you</p>
+<p>will find a beginner adjusts quite easily.</p>
+<p>The first problem you will run into is the tendency of your</p>
+<p>student to swing at the ball. The minute you see him doing</p>
+<p>this, remind him his racket is, in the beginning, simply to be a</p>
+<p>Figure 4-R. Due to the difference in shoulder pivot, the backhand target area is closer to the student than the forehand.</p>
+<p>firm backstop that he moves in front of the oncoming ball.</p>
+<p>As your initial patterns should be soft, the momentum of the ball will not always be enough to carry it back over the net</p>
+<p>after hitting your student’s racket, so be sure he is convinced</p>
+<p>you are not concerned with his getting the ball back over the</p>
+<p>net. Emphasize that for the first few lessons you are primarily</p>
+<p>interested in his establishing racket position, body weight, and</p>
+<p>footwork. If you do not make this clear, he will be concentrat-</p>
+<p>ing on getting the ball back any way he can, and this defeats</p>
+<p>one of the big advantages of Pattern Play Teaching.</p>
+<p>The importance of hitting the volley in front of the body cannot be overstated, and there are several reasons why. First, getting body weight in behind a volley comes naturally when</p>
+<p>the ball is hit early, but is virtually impossible if the racket is allowed to get jammed up against the stomach on the hit.</p>
+<p>Second, judging the speed and trajectory of the ball is far</p>
+<p>easier when the racket contacts the ball in front of the body.</p>
+<p>Third, the arm and racket are easier to move and have much</p>
+<p>greater strength when extended forward. Fourth, the player</p>
+<p>has a wide choice as to where he can volley his return if the hit</p>
+<p>point is well in front of him.</p>
+<p>To thoroughly impress your student with this, take a piece</p>
+<p>of chalk if you are on a hard court, or a stick if on clay,</p>
+<p>and draw a line parallel to the net just in front of your stu-</p>
+<p>dent’s feet. Draw a second parallel line to this one so the lines</p>
+<p>are apart about 6 inches less than the length of a racket. With</p>
+<p>his toes on the first line, ask your student to get in the ready</p>
+<p>position. The head of the racket should be directly over the</p>
+<p>second line (Figure g). Point this out and explain you want</p>
+<p>him to reach forward and volley the ball before it gets to the</p>
+<p>first line, even though he will be starting from behind the</p>
+<p>second (Figure 10).</p>
+<p>Figures g and 10. The parallel lines give a reference point and a good idea of what is meant by hitting the ball early and in front of</p>
+<p>a player&#x27;s ready position.</p>
+<p>Now comes the fun part of the volley. For a change, start with the backhand volley instead of the forehand. This way</p>
+<p>the student does not begin to get a complex about either</p>
+<p>stroke. From the ready position have him move the racket to</p>
+<p>the backhand volley position. Without letting the racket move</p>
+<p>back of the line just in front of his toes, have him pull the</p>
+<p>handle of the racket down and forward, keeping the wrist very</p>
+<p>firm. He should stop this motion just as sharply as it was</p>
+<p>started with a total of about 8 to 12 inches of travel. Too big</p>
+<p>a follow-through leads to inaccuracy and an inability to be</p>
+<p>ready for the next shot during a fast exchange, so be sure to</p>
+<p>correct him every time he moves the racket more than 12</p>
+<p>inches. The only time a big follow-through is used is on a</p>
+<p>high put-away volley where speed needs to be imparted to</p>
+<p>the ball.</p>
+<p>Have your student move back to the ready position before</p>
+<p>trying the forehand volley. The punch and power in the fore-</p>
+<p>hand volley comes from the shoulder and forearm, The motion</p>
+<p>is similar to a very short stroke on a handsaw or a boxing</p>
+<p>jab. The basic movement is between the hand and elbow with limited shoulder movement. The wrist is locked and rigid and</p>
+<p>does not change from its laid back position.</p>
+<p>You are now ready to tie the punch and footwork together. This time as he moves the racket into the backhand volley po-</p>
+<p>sition, have him take the short step you have practiced before,</p>
+<p>and in addition as his weight moves forward, activate the</p>
+<p>short forward and downward punch. Have him return to the ready position and do the same thing on the forehand side.</p>
+<p>Repeat this walk-through exercise until he is doing it smoothly.</p>
+<p>Now you are ready to hit alternating patterns, with your student practicing the short punch on both the backhand and</p>
+<p>the forehand volleys without any pause in between. Be ready</p>
+<p>to stop and make corrections if he starts to swing. Be sure he</p>
+<p>understands the racket should not be brought back behind</p>
+<p>the line in front of his toes and in fact should be kept well in</p>
+<p>front of it and simply moved forward into the flight path of</p>
+<p>the ball.</p>
+<p>Body weight is the key to a powerful volley and the next</p>
+<p>procedure is very effective in giving your student an idea of</p>
+<p>just what you mean. Have him face the net in his ready posi-</p>
+<p>tion. Stand facing him far enough away so when you extend</p>
+<p>your arm the palm of your hand is about 6 inches from his</p>
+<p>right shoulder. Ask him to lean his weight against your hand</p>
+<p>without moving his feet. Be ready to support some of his weight</p>
+<p>so he doesn&#x27;t lose his balance. The feeling he has of almost fall-</p>
+<p>ing forward while leaning against your hand is the same feel-</p>
+<p>ing he should have as he begins to move forward to intercept a</p>
+<p>ball on the volley. This is true even if there is not enough time</p>
+<p>to execute proper footwork.</p>
+<p>Now, quickly move your hand away and he will have to take</p>
+<p>a quick short step forward to catch himself. His stepping</p>
+<p>forward with considerable body momentum is the same feeling</p>
+<p>he will have just as he hits the ball. Now he knows how it</p>
+<p>should feel.</p>
+<p>Putting all of this together will take time and plenty of</p>
+<p>practice, but once he is consistently volleying easy patterns,</p>
+<p>you should without telling him, gradually increase the speed</p>
+<p>of your shots. What will happen is your student will begin to</p>
+<p>make some good, firm crisp volleys that really zing across the</p>
+<p>net, and both of you will feel the excitement of knowing a ma-</p>
+<p>jor step has been accomplished.</p>
+<p>Up to this point your patterns have been directed at establishing the basic volley. Now it is time to make things a</p>
+<p>little tougher pattern-wise.</p>
+<p>You have been hitting alternating shots and your student has known in advance where the next shot was coming. In hitting random patterns, you mix up your shots, thus taking</p>
+<p>this advantage away from him.</p>
+<p>You can start a pattern off on either backhand or forehand,</p>
+<p>and then hit two consecutive shots to the same side. This is</p>
+<p>going to mess up his net playing rather dramatically, so it is</p>
+<p>best to warn him. One approach that works well is to say,</p>
+<p>“Okay, you&#x27;re hitting good solid volleys, but I&#x27;ll bet I can make</p>
+<p>you miss by not hitting to alternate sides. I&#x27;ll even hit the shots</p>
+<p>a little softer, but you won&#x27;t know which side they will be</p>
+<p>coming to. Is it a bet?” If your student is eager, he will tell you</p>
+<p>how he will hit every shot as well as before. But knowing where</p>
+<p>the next shot is going before it is hit is a very big advantage.</p>
+<p>Pattern Play Teaching should be fun. Take the time to make</p>
+<p>a game of random patterns. Mix them up while he tries to out-</p>
+<p>guess you. Will he figure where the last shot is going if you</p>
+<p>have already hit three in a row to his backhand? If you fool</p>
+<p>him, kid him a little and he will respond to the challenge.</p>
+<p>This accomplishes two things. First, he will begin to learn</p>
+<p>anticipation. Instinctively, he will start to watch you as you</p>
+<p>hit each shot, searching for little indicators or giveaways as</p>
+<p>to where you are going to hit the ball. Secondly, the challenge will stimulate his interest for he will recognize this step as a</p>
+<p>big one toward actual play.</p>
+<p>Be patient if he starts missing badly, for his attention is be-</p>
+<p>ing divided for the first time. If he continues to have trouble,</p>
+<p>go back to a few alternating patterns to re-establish his confi-</p>
+<p>dence.</p>
+<p>This series of patterns is so critical, if a player does not mas-</p>
+<p>ter it his net play will be severely limited. The pattern series</p>
+<p>has two objectives. The first is footwork. Specifically, not what</p>
+<p>foot to start off on, but how to arrive at the hit point on the</p>
+<p>correct foot. The second objective is to get him to crowd the</p>
+<p>ball so he is getting full body weight in behind each volley.</p>
+<p>The basic footwork being introduced at this point carries</p>
+<p>into all other strokes and sets the stage for an offensive player,</p>
+<p>or if not properly learned, a defensive player. The concept is</p>
+<p>simple and extremely important. The foot that gets the player</p>
+<p>into position should not be the foot that is part of the hit. If he</p>
+<p>learns this early, he will be mentally programed not to rely on</p>
+<p>the hitting foot to get him to the ball.</p>
+<p>To reach the objective of this pattern series you must make</p>
+<p>your student move parallel with the net in order to get to the</p>
+<p>ball. All you have to do is hit each shot one step farther to his</p>
+<p>left or right than you have been doing. Keep them waist high</p>
+<p>as before and hit your shots softly so he has plenty of time. As</p>
+<p>this lateral movement will be quite strange to him, go back to</p>
+<p>alternating patterns so he will know in advance where your</p>
+<p>shots will be coming.</p>
+<p>The key to your student’s mastering this new dimension is</p>
+<p>for him to understand what he is expected to do, He must</p>
+<p>move quickly for a wide shot and achieve a new position that</p>
+<p>then becomes the same, relative to the flight of the ball, as all</p>
+<p>the pattern shots he has been handling. That sounds easy ex-</p>
+<p>cept all previous footwork during the volley involved just one</p>
+<p>foot crossing over and forward. Now he must first take an addi-</p>
+<p>tional step.</p>
+<p>Before hitting any wide patterns it is a good idea to walk</p>
+<p>through the footwork. Taking the backhand for example, get</p>
+<p>your student in the ready position. Ask him to take a step to his left with his left foot and plant it firmly. Bring the right</p>
+<p>foot toward the left foot, but instead of planting it, he starts</p>
+<p>the hit part of the volley. His weight shifts toward the net,</p>
+<p>moving off the left foot as he comes forward to contact the ball</p>
+<p>Figure 11. The foot that gets the player into position should not be the foot that is part of the hit, but in this case the right foot is doing double duty. As a result, body weight is going toward the side line</p>
+<p>instead of into the hit.</p>
+<p>exactly as he has done in all the previous patterns. Bring him</p>
+<p>back to the ready position and have him walk through the</p>
+<p>forehand volley starting off with the right foot. Practice this</p>
+<p>by moving first to the backhand then to the forehand without</p>
+<p>pausing at the ready position. Repeat this until he is moving</p>
+<p>smoothly.</p>
+<p>You should now go back to your normal court position from which you have been hitting patterns and ask your student</p>
+<p>to walk through the footwork one more time. As he does this,</p>
+<p>make a mental note about how far his initial step carries him.</p>
+<p>Aim your pattern shots just wide of that point. After the com-</p>
+<p>pletion of each pattern your student should be closer to the</p>
+<p>net than when he started. This means he is moving into the</p>
+<p>ball properly and that he&#x27;ll have to move back before starting</p>
+<p>another pattern.</p>
+<p>This pattern series should be practiced over and over again until he is consistently moving into the volley with the correct</p>
+<p>foot. As your student starts getting very good, you need to</p>
+<p>push him hard by increasing pattern difficulty. Lateral move-</p>
+<p>ment is the enemy of a well-executed volley and each player</p>
+<p>strives to make his opponent stretch wide for a shot and then</p>
+<p>follow-up the resulting advantage (Figure 11). Your patterns</p>
+<p>should do exactly the same thing so he gets to be an expert on</p>
+<p>achieving a new strong position prior to his volley. When he</p>
+<p>has mastered this it will be tough for an opponent to force him</p>
+<p>at net.</p>
+<p>The final refinement in volleying and the difference between</p>
+<p>a very good volleyer and a great one, is learning to crowd the</p>
+<p>ball. Not only does this make it easy to put plenty of pace on</p>
+<p>the ball, but it also makes it difficult for an opponent to antic-</p>
+<p>ipate what direction the volley will be hit.</p>
+<p>In the first two examples, over-all position is very good (Figure 12, Figure 13). The racket is well forward toward the</p>
+<p>net and both footwork and body balance are excellent. But in</p>
+</section>
+<section class="chapter" id="sec-8">
+<h2>both examples the ball is being played off to one side and full</h2>
+<p>body weight will not be available on either shot. In addition,</p>
+<p>but equally important, is the fact that in both situations the</p>
+<p>ball can be easily volleyed down the side line, but the degree</p>
+<p>of difficulty in going cross-court is increased by quite a bit. Be-</p>
+<p>cause of this, and particularly if the oncoming ball has been really well hit, the volleyer will play the percentage shot</p>
+<p>down the side line. The problem is an experienced opponent will see this and in most cases correctly anticipate the direc-</p>
+<p>tion of the volley.</p>
+<p>Figure 12. The racket is well forward toward the net and both footwork and body balance are excellent. But in both examples the</p>
+<p>ball is being played off to one side and full body weight will not</p>
+<p>be available on either shot. |</p>
+<p>Figure 13.</p>
+<p>Figure 14.</p>
+<p>In the second two examples, everything is the same in terms</p>
+<p>of footwork and body balance, but the ball has been crowded</p>
+<p>(Figure 14, Figure 15). As a result, full body weight will be behind each shot regardless of what direction it is hit. And be-</p>
+<p>Figure 15.</p>
+<p>cause the volleyer can go cross-court just as easily as down the</p>
+<p>line, his opponent&#x27;s anticipation will be reduced to pure guess-</p>
+<p>work.</p>
+</section>
+<section class="chapter" id="sec-9">
+<h2>In this series of patterns ask your student to hit all of his re-</h2>
+<p>turns cross-court. This will really put the pressure on him to</p>
+<p>start fast and intercept the ball well in front of him. If he does</p>
+<p>not crowd the ball he will not be able to consistently cross-</p>
+<p>court his volleys.</p>
+<p>Once his footwork and body balance become well established you can move to random patterns. When his quickness</p>
+<p>in getting to the ball shows obvious improvement, you should</p>
+<p>increase the speed of your shots making it even tougher. Chal-</p>
+<p>lenge your student, push him, keep him digging hard, but</p>
+<p>above all make sure he is crowding the ball and his weight is</p>
+<p>moving into the shot. If he starts faltering on the tougher pat-</p>
+<p>terns, ease off until he gets going and then press him again.</p>
+<p>As your student begins to master the volley, he will instinctively learn to open the racket face more on low volleys and on</p>
+<p>those made from deeper than normal court positions. But</p>
+<p>watch closely to make sure he does not drop his racket head</p>
+<p>below the level of his racket hand. This is a bad habit that is</p>
+<p>very easy to get into particularly on low shots. Instead, he</p>
+<p>should bend his knees, occasionally to the point the trailing</p>
+<p>knee almost touches the court.</p>
+<p>At the same time you should get him in the habit of getting</p>
+<p>his eyes down to the level of the oncoming ball by bending his</p>
+<p>knees, This results in the big advantage of being able to better</p>
+<p>judge speed and direction of the ball, and as a bonus gets him</p>
+<p>down for a low shot well before the hit. The last step is to</p>
+<p>make sure he stays down on the volley through the entire shot.</p>
+<p>If he straightens up during the hit, the effect is similar to carefully sighting a rifle and then standing up just as the trigger is</p>
+<p>pulled.</p>
+<p>On high volleys he will soon learn to close the racket face</p>
+<p>and hit down on the ball. He will also learn the higher the</p>
+<p>volley, the more vertical the shaft of the racket will become in</p>
+<p>order to reach the ball. As he gets good at hitting volleys at</p>
+<p>shoulder level or higher, you can get him to use some wrist movement to impart additional speed.</p>
+<p>During actual play, the first volley is the toughest and most critical, and if it is weak the odds swing heavily against the</p>
+<p>net rusher. But the key to a successful first volley is the ap-</p>
+<p>proach shot. Whether it is a serve, serve return, or a ground</p>
+<p>stroke off of an opponent&#x27;s shallow ball, the approach shot</p>
+<p>must be deep and well placed, The net rusher should come in</p>
+<p>behind it on a line that bisects the angle of the several possible</p>
+<p>shots his opponent can safely make. As he comes to net on that</p>
+<p>line, he should skip or land on the balls of both feet, much</p>
+<p>like in hopscotch, in the general area of the service line. There</p>
+<p>he should hesitate for a split second and judge exactly where</p>
+<p>his opponent&#x27;s return is going and then move in to make his</p>
+<p>first volley. Although this brief pause is performed by all top</p>
+<p>players it is not apparent unless you are looking for it, but dur-</p>
+<p>ing a tournament on grass, a worn area soon appears just in</p>
+<p>front of the service line as proof positive.</p>
+<p>When you are ready to work on your student’s approach</p>
+<p>shot, a very effective pattern series is to start with the first two</p>
+<p>shots as ground strokes followed by two volleys. For example,</p>
+<p>get your student to assume the ready position behind the</p>
+<p>base line. Hit your first shot fairly deep to his forehand as you would on a normal ground stroke pattern series. Your second</p>
+<p>shot will be 8 to 10 feet short of the base line, say to his back-</p>
+<p>hand. This is the approach shot, and he should move in on it</p>
+<p>hit it deep, and come to net. The third ball of the pattern he</p>
+<p>should handle as a volley just inside the service line area, and</p>
+<p>the fourth and last ball should also be a volley.</p>
+<p>The serve is without question the most important stroke in a</p>
+<p>player’s weaponry. It can win a point outright, or at least set</p>
+<p>the stage so the odds of winning it are overwhelmingly in</p>
+<p>favor of the server. If the server can accomplish this on a high</p>
+<p>percentage of points, he will consistently win his serve. If he</p>
+<p>wins it each time he serves, he cannot possibly lose.</p>
+<p>Like they say, nothing worthwhile comes easily, and that</p>
+<p>goes double for the serve, for it is by far the most complicated</p>
+<p>and difficult shot to master. What makes it complicated is the</p>
+<p>server is required to perform separate and seemingly disasso-</p>
+<p>ciated actions which result in transmitting maximum racket</p>
+<p>energy to the ball. In addition, spin is introduced for the first</p>
+<p>time as a major and critical component of a stroke, and to put</p>
+<p>heavy spin on a ball the racket must travel dramatically away</p>
+<p>from the direction the ball is to go.</p>
+<p>Before getting into what spin actually does to the flight of</p>
+<p>the ball, it will help to understand the relationship of spin,</p>
+<p>speed, and placement. No matter how well placed a serve may</p>
+<p>be, if it has no speed and is just a blooper, any good player</p>
+<p>will move in and kill it, Add enough speed to a well-placed</p>
+<p>serve, and the result is an ace. That sounds easy enough ex-</p>
+<p>cept the high-speed flat serve has no spin, and spin is control. That is why the flat serve is impossible to hit with a high de-</p>
+<p>gree of accuracy. Put another way, if a top tournament player</p>
+<p>were allowed only one serve, he would seldom risk the flat</p>
+<p>high-speed serve, knowing if he missed with it the point would</p>
+<p>be over. Without spin he cannot control the ball. With spin he</p>
+<p>not only can consistently place it where he wants it, but he</p>
+<p>can aim it much higher over the net and have it still come in,</p>
+<p>and even though the ball is traveling forward with less speed,</p>
+<p>the spin keeps it from being a setup.</p>
+<p>The frustrating part is, the server cannot have maximum</p>
+<p>speed and maximum spin at the same time. He can build up</p>
+<p>just so much racket speed or energy, and that’s it. He can</p>
+<p>channel all of it to speed and no spin, resulting in the flat cannon-ball serve. Or he can convert most of it to spin and</p>
+<p>very little forward speed, as in the case of the American twist. He can select any mix between these two extremes he wants,</p>
+<p>but as he increases speed, spin must decrease, and with it con-</p>
+<p>trol. See Diagrams A and B.</p>
+<p>Diagram A. Flat serve has little margin of error. Diagram B. Spin serve has large margin of error.</p>
+<p>In this age of rapid technological break-throughs, understanding how and why something happens, rather than ac-</p>
+<p>cepting it at face value, is one of the key principles that makes break-throughs possible. When applied to the serve, this principle has resulted in some surprising break-throughs, not only with students but with seasoned players who have been</p>
+<p>plagued with serving problems, It centers on the fact that many players do not understand how spin controls the flight</p>
+<p>of the ball. They are instructed to hit up skyward more if the ball is going too long. They are told to get their racket moving</p>
+<p>more to the right because this will make the ball curve left. The problem is these instructions seem to contradict what has</p>
+<p>been learned on the ground strokes where they were taught</p>
+<p>to follow through in the direction they want the ball to go.</p>
+<p>So it takes time to mentally accept this. What happens is they</p>
+<p>listen to what they are supposed to do, but they have diffi-</p>
+<p>culty in doing it. A perfect example is getting a student who</p>
+<p>is serving well with the forehand grip, to shift to the Conti-</p>
+<p>nental. The problem is not physical, for he is perfectly capable</p>
+<p>of swinging the racket properly. The real problem is the Con-</p>
+<p>tinental grip and resulting racket face angle just do not make</p>
+<p>sense to him, and so when he uses the new grip he runs into</p>
+<p>trouble. The fact is, the moment he really accepts how spin</p>
+<p>works and why the Continental grip is necessary, his progress</p>
+<p>will be rapid.</p>
+<p>Spin controls and steers the ball very accurately. It does so</p>
+<p>because the velocity on the ball is the sum of the forward</p>
+<p>speed plus or minus the spinning speed. Forward motion and</p>
+<p>spin combine to create two different air pressure areas. One</p>
+<p>side of the ball experiences a wind velocity equal to its transla-</p>
+<p>tional velocity plus spinning velocity. The other side experi-</p>
+<p>ences translational velocity minus the spinning velocity. A</p>
+<p>technical point of interest is a ball spinning at any speed, fast</p>
+<p>or slow, will not curve if it does not also have forward mo-</p>
+<p>tion.</p>
+<p>Looking at the front side of the ball as you would be doing if returning serve, air pressure builds up on the front half that</p>
+<p>is spinning toward you and decreases on the front half spin-</p>
+<p>ning away from you. In Diagram C the air pressure builds up</p>
+<p>on the left side of the ball and decreases on the right side,</p>
+<p>causing the ball to curve from your left to your right, as in the</p>
+<p>case of a slice serve. Depending on how the racket hits the ball, this axis can be tilted in varying amounts. In the case of</p>
+<p>the spin serve in Diagram D, the axis of rotation has been</p>
+<p>tilted and the ball will curve down, as well as from left to</p>
+<p>right.</p>
+<p>Where your student will benefit the most from this is he will</p>
+<p>understand how spin controls the ball, that the control is pre-</p>
+<p>cise and unchanging being based on a mathematical formula,</p>
+<p>and that to impart spin to a ball the racket must travel in a</p>
+<p>different direction from the desired flight path of the ball. As</p>
+<p>a result he will have a clear picture of not only what he must</p>
+<p>do to develop a good serve, but why.</p>
+<p>1.</p>
+<p>The server chooses the appropriate court position and prepares to serve,</p>
+<p>Three distinct actions are started</p>
+<p>at the same time.</p>
+</section>
+<section class="chapter" id="sec-10">
+<h2>Tossing Arm a TT ok nee ee Racket Arm</h2>
+<p>Arm starts down. Weight shifts to back foot. Arm starts down.</p>
+<p>starts up.</p>
+<p>Left knee begins to bend forward. Arm reaches full down position</p>
+<p>and starts moving toward back-</p>
+<p>stop.</p>
+<p>still slightly bent.</p>
+<p>ball leaves fingertips.</p>
+<p>its highest position.</p>
+<p>Liberty” fashion.</p>
+<p>for balance.</p>
+<p>down out of the way.</p>
+<p>out of the way.</p>
+<p>Body weight remains on back foot.</p>
+<p>Body coil is just beginning.</p>
+<p>Body coil is really building. Right</p>
+<p>knee bends in same direction as</p>
+<p>left knee.</p>
+<p>Body coil is completed including</p>
+<p>some backbend. Both knees are fully</p>
+<p>bent.</p>
+<p>Body weight whips upward and forward</p>
+<p>as knees begin to straighten. The only</p>
+<p>contact with the ground is the balls</p>
+<p>of both feet.</p>
+<p>All body weight is being thrust up-</p>
+<p>ward and forward at the hit point.</p>
+<p>Left toe is barely touching the court,</p>
+<p>as right foot begins to come forward.</p>
+<p>Body is extended in straight line.</p>
+<p>Arm and racket continue to come</p>
+<p>around toward cocked position.</p>
+<p>be cocked.</p>
+<p>cocks, and racket drops behind</p>
+<p>back.</p>
+<p>Arm and racket are in the fully</p>
+<p>cocked position.</p>
+<p>Wrist starts racket upward and</p>
+<p>forward, right shoulder starts</p>
+<p>upward and forward. Racket is picking up speed rapidly.</p>
+<p>Entire right arm and shoulder are fully extended, wrist has completely</p>
+<p>traveling at its highest speed.</p>
+<p>Every ounce of a server&#x27;s concentration and muscular ability should be directed toward transferring maximum racket en-</p>
+<p>ergy and accuracy into the service delivery. To accomplish</p>
+<p>this he must perform several independent actions simultaneously. Each of these actions will be covered in detail and</p>
+<p>should be taught to your student separately, one at a time, until he can put them together and still perform each action well.</p>
+<p>Even if your student is not a beginner, substantial serve advancement can be made by improving each action independ-</p>
+<p>ently.</p>
+<p>It will help if you show your student the sequence-of-action</p>
+<p>chart, as it will allow him to visualize the interrelationship and</p>
+<p>timing and how each action you teach him fits together with</p>
+<p>the others.</p>
+<p>Ask your student to step up to the base line 1 or 2 feet to the</p>
+<p>right of center line. His left foot should be at a 45-degree</p>
+<p>angle to the base line and 2 inches behind it. The right foot is</p>
+<p>parallel to the base Jine but about 12 inches to 18 inches be-</p>
+<p>hind it, or in other words, his feet are about shoulder’s width</p>
+<p>apart. The right foot’s position relative to the left one is one-</p>
+<p>half step closer to the right side line.</p>
+<p>As you work on his serve, it is a good idea to switch service</p>
+<p>courts from time to time. When you move him over to the back-</p>
+<p>hand service court, your student’s position is slightly different.</p>
+<p>Get him accustomed to this right in the beginning. To serve to</p>
+<p>the backhand court, the server’s position is 3 feet to 4 feet left</p>
+<p>of center line and the right foot should be moved back about</p>
+<p>one-half step farther from the right side line although still par-</p>
+<p>allel with the base line. This turns the body a few more de-</p>
+<p>grees to compensate for the different angle between the server</p>
+<p>and the backhand service court.</p>
+<p>Each time your student prepares to serve, the first thing you should check for is his being tense. Make sure his hand holding the tennis ball is not rigid and that the racket hand has not</p>
+<p>tightened to a white knuckle grip. Really emphasize the importance of being relaxed during preparation for the serve.</p>
+<p>This is one of the critical factors in developing a consistently big serve for any player, for the ability of muscles to spring</p>
+<p>into fast smooth action greatly depends on the counterpart</p>
+<p>muscles being completely relaxed. One set of muscles does not</p>
+<p>have to “let go” before the others take over.</p>
+<p>Tenseness, by getting one muscle pulling against another,</p>
+<p>not only causes service faults and robs power, but during a</p>
+<p>match is very tiring and can take the edge off a player’s entire</p>
+<p>game. The trouble is, tenseness can become a habit, and the</p>
+<p>worst part is a player can become increasingly tense during a</p>
+<p>match without realizing it. If you teach your student to check</p>
+<p>for his being tense each time he prepares to serve, he will</p>
+<p>learn to control it. As he learns to control it on the serve, he will be able to do the same on other strokes. Thus his entire</p>
+<p>game benefits, particularly on the two most important strokes,</p>
+<p>the serve and serve return. In time this check for tenseness and</p>
+<p>subsequent relaxing of the muscles will become a habit, and</p>
+<p>he will only occasionally have to remind himself to relax. Be-</p>
+<p>ing relaxed has begun to become part of his game.</p>
+<p>As your student takes the ready position prior to serving,</p>
+<p>his body weight can be on the back foot or evenly distributed</p>
+<p>on both. The arms are not extended forward away from his</p>
+<p>body, but hang comfortably by it. The right forearm is approximately parallel to the court surface and therefore the</p>
+<p>right hand is waist high. The right elbow is tucked in close to</p>
+<p>the body (Figure 16). The left hand, besides holding the</p>
+<p>tennis balls, cradles the throat of the racket on the tips of the</p>
+<p>last two fingers. The ball that is about to be tossed, is resting</p>
+<p>on the tips of the first two fingers and thumb. If a second ball</p>
+<p>is being held it is well into the palm of the hand (Figure 17).</p>
+<p>The racket is pointing in the direction of the service court with the face perpendicular to the ground, and the head of the</p>
+<p>racket is slightly higher than the handle. If the feet are properly positioned the body is sideways to the net. The entire</p>
+<p>stance should be comfortable and relaxed.</p>
+<p>Figure 16. (Left) Being completely relaxed and at the same time having mental concentration at its peak takes plenty of practice.</p>
+<p>Figure 17. (Right) The toss can make or break a serve and how the ball is held can make or break the toss.</p>
+<p>The Continental or Eastern backhand grip is the one used by top players, but many students have trouble learning with</p>
+<p>it. Although there are problems with starting your student on</p>
+<p>the correct serving grip, there are some advantages too. The</p>
+<p>answer is a compromise.</p>
+<p>Start him with the backhand grip even though he will prob-</p>
+<p>ably run into trouble. After he has struggled for ten or fifteen</p>
+<p>minutes, give in and move the grip a little bit toward the fore-</p>
+<p>hand. Stick with this new grip for the rest of the serving part</p>
+<p>of the lesson. You probably will have to compromise and give</p>
+<p>ground toward the forehand once or twice more on subsequent</p>
+<p>lessons, but be stingy about it. Somewhere down the line he will begin to get the hang of it with a grip that is not too far</p>
+<p>away from the correct backhand grip. This is a lot better</p>
+<p>procedure than automatically going all the way to the in-</p>
+<p>correct forehand grip when starting a student out on learning</p>
+<p>to serve.</p>
+<p>Most service problems result from inaccurate tosses. Take any of the best servers in the game and mess up the toss and youll see poor serves and plenty of double faults (Figure 18).</p>
+<p>To toss a ball with the left hand is tough enough, but to complicate matters, the server has the racket arm moving, body weight will soon be shifting, and finally the area the ball</p>
+<p>is being tossed to is quite small. There is only one solution to</p>
+<p>the challenge—lots of practice.</p>
+<p>Explain to your student the importance of extreme accuracy in the toss. The ball should be hit 12 inches forward of the</p>
+<p>base line and 6 inches to his right. Take some chalk or a stick</p>
+<p>if it’s a clay court and outline his left foot. Next get him to toss</p>
+<p>Figure 18. The toss should lay the ball up “dead.” This is accomplished by using all arm and no wrist or finger flick. The tossing arm should end up in the “Statue of Liberty” position.</p>
+<p>the ball as if he were serving. Let him go through all the mo-</p>
+<p>tions of the serve but do not let him hit the ball with the</p>
+<p>racket. Allow the ball to drop and mark the spot where it hits the court. A handful of pennies works well. Your student then</p>
+<p>places his left foot in exactly the same place as marked by the</p>
+<p>outline, and repeats the procedure. Do this about twelve</p>
+<p>times. Now draw a circle to include all the pennies or marks,</p>
+<p>which probably will be all over, including behind him. The</p>
+<p>circle is usually 5 feet in diameter (Diagram E),.</p>
+<p>You can demonstrate your point further by asking him to</p>
+<p>move up into his hitting position with his arm and racket fully</p>
+<p>extended to the correct hit point. Then indicate where the ball</p>
+<p>would have been at its peak and the direction it would have</p>
+<p>been going to land on one of the marked spots behind him.</p>
+<p>He will quickly see how impossible it would have been to have</p>
+<p>hit the ball correctly on that particular toss.</p>
+<p>Whether you play a great deal of tennis or not, get by your-</p>
+<p>self and try tossing the ball, marking where it hits the court.</p>
+<p>It will give you full appreciation of just how difficult the toss</p>
+<p>can be even without the stroke complicating it further.</p>
+<p>Get your student to practice the toss. As an “assignment”</p>
+<p>you can give him the challenge of seeing if by the next lesson</p>
+<p>he can get at least half of his tosses into a 12-inch diameter</p>
+<p>circle you will draw for him, the center of which will be 12</p>
+<p>inches forward of the base line and 6 inches to the right of his</p>
+<p>ready position (Diagram F ). As you work with your student</p>
+<p>on his toss, there are several points you should be watching for.</p>
+<p>1. The ball to be tossed is held on the tips of the first two fin-</p>
+<p>gers and thumb.</p>
+<p>2. It is held so gently the fuzz on the ball is not even bent.</p>
+<p>3. The tossing hand is completely relaxed.</p>
+<p>4. On the toss, the left hand moves forward and up in the di-</p>
+<p>rection the body is facing, rather than toward the net or</p>
+<p>parallel with the base line.</p>
+<p>5. The arm motion is like trying to toss an egg up on a pillow</p>
+<p>so that it lands softly and stays there.</p>
+<p>6. The toss is sufficiently high so the racket and arm can come</p>
+<p>from the cocked position and hit the ball at a point high</p>
+<p>enough so both arm and racket are fully extended.</p>
+<p>Even with an advanced player considerable improvement can be made on the serve by practicing this next step. Get your student into the relaxed ready position and give him a very old beat up racket. Have him use his normal serve grip</p>
+<p>and place the racket head down behind him much as if he</p>
+<p>were scratching an itch in the small of his back. Get him to relax. You should be able to take the racket right out of his</p>
+<p>hand! His shoulders are turned and his right elbow should be</p>
+<p>pointing toward the fence in back of him (Figure 19). From</p>
+<p>this point have him throw the racket up and out triggering his</p>
+<p>wrist so the racket travels end over end, If the keeper of the</p>
+<p>courts screams at this point, you can accomplish the same</p>
+<p>thing by tossing the racket in an open field. This exercise is</p>
+<p>particularly effective with girls, as most boys have been throw-</p>
+<p>ing things for years. The important action to watch for is the</p>
+<p>wrist starting the racket head on its way up and out (Figure</p>
+<p>20). Your student will soon have a very good idea of how it</p>
+<p>feels to properly trigger the racket and that the throwing ac-</p>
+<p>tion is very close to the actual serve.</p>
+<p>Now you are ready to tie the toss and the hit together. One</p>
+<p>of the best ways is with another old racket that has had the</p>
+<p>strings removed. What this does is eliminate a very big psycho-</p>
+<p>logical hang-up on the part of the student as to “where the ball is going to go.” Although this may border on being a gim-</p>
+<p>mick, the important thing is it works, and works well. It is just</p>
+<p>as effective with a more advanced student who is having serv-</p>
+<p>ing problems as it is with the beginner.</p>
+<p>The student assumes the ready position with the stringless racket in the cocked position. Check again for being relaxed. Have him toss the ball and “hit” it. If done properly the ball</p>
+<p>will pass right through the middle of the racket head. As the</p>
+<p>student comes through with his wrist and body, the ball should hit him in the area of his right shoulder blade. Repeat this</p>
+<p>again and again until the toss is accurate and the wrist is triggering nicely. The arm and body should be extended in a straight line at the hit point. The student should get the feel-</p>
+<p>ing he is pulling his shirt tail out stretching for the ball.</p>
+<p>Figure 19. (Left) By far the best way to develop a top serve is to start off learning it in the back-scratch position.</p>
+<p>Figure 20. (Right) When the wrist triggers, it throws the racket</p>
+<p>upward and forward at the bail.</p>
+<p>When your student has the serve actions pretty well coordinated starting from the back-scratch position, the next</p>
+<p>step is to hand him his own racket. Don’t make any comment</p>
+<p>that he will be hitting with a strung racket, just switch rackets</p>
+<p>and have him serve. The odds are he will hit some good serves right from the start. If he loses the timing, go back briefly to</p>
+<p>the stringless racket until he gets the feel of it again. You</p>
+<p>probably will have to perform this racket switch several times,</p>
+<p>but the procedure is very effective.</p>
+<p>Although there is no rush, you will want to get your student</p>
+<p>using a full wind-up. Before you do this, he should be well</p>
+<p>grooved and hitting serves consistantly from the back-scratch</p>
+<p>position. His toss should be accurate, he should have a fair</p>
+<p>amount of power, and most important, he should be able to</p>
+<p>place the ball into the forehand and backhand areas of both</p>
+<p>service courts, How long it will take before he gets to this point depends on his athletic ability and how hard he has</p>
+<p>practiced on his serve. If he has worked hard, you may find</p>
+<p>he is ready within three to four weeks. If he has not practiced</p>
+<p>and played that much, it can take several months.</p>
+<p>When he is ready, the best way to accomplish the step to a full swing is to again use the stringless racket. At first, get him to practice the full backswing, tossing arm as well, but</p>
+<p>without a ball. Devote special attention to bringing the racket from the ready position down past the waist, out parallel and</p>
+<p>pointing toward the back-stop, and around and up into the fully cocked back-scratch position. Have him repeat this until</p>
+<p>it becomes a smooth continuous motion, Do not allow racket</p>
+<p>face to close on backswing (Figures 21, 22).</p>
+<p>Now you are ready to put it together with the ball, actual</p>
+<p>toss and stringless racket “hit.” In the beginning he will have</p>
+<p>some difficulty in getting the timing of the racket and the ball</p>
+<p>to coincide at the correct hit point. But the stringless racket will help get him past this obstacle quickly. When you are</p>
+<p>satisfied that he is performing all the actions of the serve properly, it is time to hand him his own racket and actually hit</p>
+<p>some serves. Watch carefully for the following:</p>
+<p>1. The racket arm starts down simultaneously with the tossing</p>
+<p>arm. The motion of the arm and racket is like a pendulum</p>
+<p>and is continuous. The racket face should be opened</p>
+<p>slightly during backswing.</p>
+<p>2. The arm, wrist, and hand remain relaxed. The wrist remains uncocked.</p>
+<p>3. The arm and racket extend out to a position pointing toward the backstop and are parallel, at that instant, to the playing surface At this point the tossing arm should be al-</p>
+<p>most fully extended and the ball is starting to leave the</p>
+<p>fingertips.</p>
+<p>4. The elbow bends, the wrist cocks, and the racket head</p>
+<p>drops to the back-scratch position. The arm, wrist, and</p>
+<p>hand remain relatively relaxed. Each time he properly executes these four steps, he will find himself in the familiar back-scratch position. If he has previ-</p>
+<p>ously grooved his serve from this position, he will find the</p>
+<p>transition very easy. There should be no pause in his swing</p>
+<p>when going from the ready position, through the backswing</p>
+<p>to the back-scratch position and into the hit. With very little</p>
+<p>practice your student will be hitting good serves with a much</p>
+<p>better sense of timing and with considerably more power.</p>
+<p>In the beginning your student will have plenty to think</p>
+<p>about between the tossing arm and the racket arm. But once</p>
+<p>you have moved him to a full backswing and he is getting that pretty well grooved, you will want to start refining his body</p>
+<p>actions. Body/coil adds finesse and power that marks the top</p>
+<p>Figure 21. Closing the racket face on the backswing faces the wrist</p>
+<p>downward, making it awkward for the wrist and arm to cock when the racket drops into the back-scratch position.</p>
+<p>Figure 22. The face of the racket should be at least perpendicular to the court and preferably slightly open.</p>
+<p>server. It is not difficult for your student to learn if you get</p>
+<p>him working on dt at this point.</p>
+<p>The key to developing body/coil is the understanding by</p>
+</section>
+<section class="chapter" id="sec-11">
+<h2>your student that he is throwing the racket up skyward toward</h2>
+<p>the hit point as well as forward. To accomplish this with</p>
+<p>maximum power he must employ some backbend and subse-</p>
+<p>quent pulling or snapping of the body forward with the</p>
+<p>stomach muscles. As this is occurring, he should also be getting</p>
+<p>additional thrust from the knees straightening and pushing</p>
+<p>upward from a bent position to a straight position (Figure 23). When these actions are combined with the triggering of the</p>
+<p>racket and arm toward the hit point, the result is a tremendous</p>
+<p>amount of power.</p>
+<p>When the server unleashes all the striking power he has in</p>
+<p>his coiled body and cocked arm, then his weight is thrust</p>
+<p>upward and forward resulting in quite a bit of momentum.</p>
+<p>This momentum should be allowed to bring the racket arm and</p>
+<p>body right on through in a big free follow-through. Restricting</p>
+<p>or holding back the follow-through can rob power and ac-</p>
+<p>curacy.</p>
+<p>As your student serves watch for the following points on his</p>
+<p>1. The arm and racket power right through the hit point and</p>
+<p>continue forward and down finishing across the left leg.</p>
+<p>This should be a big free motion.</p>
+<p>2. The right shoulder follows and ends up moving forward</p>
+<p>and pointing down at the court in the area of the left foot.</p>
+<p>3. The right foot follows across the base line into the court toward the service court being served to.</p>
+<p>4. The entire follow-through is big, free, and not too different from the follow-through of a professional baseball pitcher.</p>
+<p>Although the work horse is the spin serve, in top tennis it is</p>
+<p>Figure 23. As body/coil builds and just prior to the hit, both knees should bend in the same direction.</p>
+<p>important to be able to hit the slice, flat, and American twist</p>
+<p>serves. However, do not introduce these to your“student too</p>
+<p>soon, for all this will do is confuse him and mess him up on his</p>
+<p>spin serve. If your student is a beginner, wait until he has had</p>
+<p>a minimum of two years to develop and groove his basic spin</p>
+<p>serve. When you do start teaching a student the other serves,</p>
+<p>always include several minutes of brush-up on his spin serve,</p>
+<p>thus keeping it grooved and solid.</p>
+<p>The only basic difference between one spin serve and an-</p>
+<p>other is the angle of the axis of rotation. As discussed previ-</p>
+<p>ously, the slice serve’s axis of rotation is almost vertical. In</p>
+<p>order to impart this spin, the racket must strike the ball with</p>
+<p>comparatively little upward thrust and a great deal of side-</p>
+<p>spin. So the racket can impact the ball at the proper angle,</p>
+<p>your student must shift his toss 6 to 8 inches to the right of</p>
+<p>the spin serve’s hit point. In addition to being moved to the</p>
+<p>right, the toss and the hit point are a few inches lower than on</p>
+<p>the other serves. The grip, however, does not change.</p>
+<p>Starting from the ready position, the racket arm performs</p>
+<p>the same backswing right on through to the cocked back-</p>
+<p>scratch position. But from this cocked position, the racket</p>
+<p>head spoons around the right hand side of the ball striking</p>
+<p>it at the three o’clock position (Figure 24). Put another way,</p>
+<p>instead of traveling upward and directly forward, the racket</p>
+<p>moves more toward the server&#x27;s right and contacts the out-</p>
+<p>side edge of the ball. Its momentum brings it sharply around</p>
+<p>the far side of the ball and then travels in a more horizontal</p>
+<p>right to left follow-through finishing up on the server&#x27;s left</p>
+<p>side. Different from the other serves, the elbow is somewhat</p>
+<p>bent at the hit point.</p>
+<p>Figure 24. At the hit point on the slice serve, the racket is perpendicular to the court while the arm is much closer to being hori-</p>
+<p>zontal.</p>
+<p>The American twist serve is quite different from the slice</p>
+<p>as its axis of rotation is tilted sharply to the left. To impart the</p>
+<p>American twist spin, the racket must contact the ball at the</p>
+<p>eight o&#x27;clock position and travel up and outward toward the</p>
+<p>two oclock position. To make this easier to do, the toss is</p>
+<p>moved to directly over the server&#x27;s head, Get your student to</p>
+<p>practice this new toss until he is consistent, then he is ready to</p>
+<p>start hitting.</p>
+<p>Up to the cocked position and except for the toss, all the motions are the same as the other serves with possibly a little</p>
+<p>more backbend. The grip is the same as on the other serves.</p>
+<p>At the back-scratch position your student’s wrist should trigger</p>
+<p>the racket up and to the right. His arm straightens upward</p>
+<p>and to the right just as if he were trying to toss his racket in</p>
+<p>the top of a tall tree that is forward and to his right just outside</p>
+<p>the fence. Although the arm should be fully extended at the</p>
+<p>hit point, because of the ball’s position directly over the serv-</p>
+<p>ers head, the racket shaft will be at about a 45-degree angle</p>
+<p>to the racket arm. This is quite different from the flat serve</p>
+<p>where the racket shaft is vertical, This angle allows the wrist</p>
+<p>to trigger the racket up from the underside position of the ball</p>
+<p>and it is at this point the racket is traveling at its highest</p>
+<p>speed. After the hit the racket continues upward and toward</p>
+<p>the right side-line fence (Figure 25). Then in follow-through,</p>
+<p>it starts downward ending up on the server&#x27;s right side. This is</p>
+<p>the only serve the racket does not cross over in front of the</p>
+<p>servers body during follow-through.</p>
+<p>Almost all of the racket’s power is directed toward spinning</p>
+<p>the ball and very little of it goes into forward speed. This does</p>
+<p>not mean less energy or effort is put into it, for the twist serve</p>
+<p>should be hit with everything the server has got.</p>
+<p>Figure 25. A split second before the wrist triggers, the racket is at</p>
+<p>a 45-degree angle with the arm. After the wrist triggers and even though the arm is moving, the racket overtakes and passes it with</p>
+<p>tremendous speed.</p>
+<p>Unlike all the other serves, the flat serve has no spin to bring it into the service court and therefore it must pass very close</p>
+<p>to the net, which means the margin of error is not very big.</p>
+<p>Players under 6 feet should not depend on an absolutely flat</p>
+<p>serve, as the shorter the server the less the margin of error.</p>
+<p>Depending on the individual&#x27;s height and ability, he can re-</p>
+<p>duce spin and increase speed up to the point he starts faulting.</p>
+<p>He should consider this serve his “flat” serve. If he is tall</p>
+<p>enough and has the ability, he may actually get to the ab-</p>
+<p>solutely flat serve.</p>
+<p>There are only a few adjustments to be made to hit a flat</p>
+<p>serve. The toss is a little farther to the right than a spin serve,</p>
+<p>but not as far as the slice. At the hit the racket shaft is vertical</p>
+<p>and therefore a straight-line extension of the racket arm. And finally, the wrist is turned outward so the face of the racket</p>
+<p>hits the ball absolutely flat (Figure 26). Everything else from</p>
+<p>ready position and grip, to backswing and follow-through re-</p>
+<p>mains the same as the basic spin serve.</p>
+<p>The answer to developing a consistent and forcing serve is good solid instruction and lots of practice. Considerably more practice than on any other stroke. But just going out and</p>
+<p>serving a whole bunch of balls won’t do it. The kind of practice that will do it is the hard work variety. This means your</p>
+<p>student must analyze each serve he hits, which in turn means he should question how well he is performing each part of the serve. “How good was that last toss? Am I triggering my wrist? Let’s see what happens if I move my hit point up just a little higher.” He, in effect, takes over your role as instructor,</p>
+<p>Figure 26. Stretching as high as possible for the hit point gains valuable inches that increase the safety margin over the net and</p>
+<p>frees up power.</p>
+<p>and although he can’t see himself, he most certainly can feel when he does something right or wrong. Most ithportant he</p>
+<p>can work on accuracy.</p>
+<p>The best way for your student to improve serve accuracy</p>
+<p>is to hit at a target. He should take four empty tennis ball</p>
+<p>cans and put one in each corner of the two service courts. They</p>
+<p>should be placed on their sides and positioned so they are</p>
+<p>broadside to him when he is serving. Now he has a target to</p>
+<p>go for, but emphasize he must not peek during the hit to see if the serve is going to blast one of the cans. That is the ad-</p>
+<p>vantage in using tennis cans versus some other target, for</p>
+<p>when he hits one he does not have to see it, he will hear it.</p>
+<p>Somehow there is great satisfaction in blasting one all the way</p>
+<p>to the backstop, and you will find the tennis-can target not</p>
+<p>only keeps your student’s interest up, but also builds his con-</p>
+<p>fidence each time he hits one.</p>
+<p>As your student really starts getting good, you will be occa-</p>
+<p>sionally faced with a collapse of one of his strokes and an entire</p>
+<p>lesson will be spent correcting the problem. But the serve is</p>
+<p>much too important to neglect, so make sure it gets a good</p>
+<p>workout every lesson, no matter what.</p>
+<p>There are several patterns that can help your student&#x27;s serve once he has his swing fairly well grooved. Different from the</p>
+<p>patterns used on all the other strokes, the serve patterns’ only</p>
+<p>objective is to link his serve to the rest of his game.</p>
+<p>Each serve pattern starts off with your student hitting a serve immediately followed by the pattern you have selected.</p>
+<p>As you will be hitting these from your base line, try to time the first shot just as if you had returned his serve. In the be-</p>
+<p>ginning he will serve plenty of faults as he will be thinking too much about his first ground stroke while he is in the process of hitting the serve. Emphasize the importance of concentrating</p>
+<p>on the serve and that after he has completed his follow-through</p>
+<p>there is plenty of time to think about his next shot.</p>
+<p>You can use any combination of pattern shots, although if he is a beginner do not use any patterns that include a</p>
+<p>volley as his first shot of the pattern. Once he has developed</p>
+<p>good consistency and is ready to start coming to net behind</p>
+<p>his serve, then it is time to introduce patterns involving a volley</p>
+<p>immediately following his serve.</p>
+<p>A well-hit overhead is a picture of grace, blazing speed,</p>
+<p>and finality. To the beginner the overhead looks fairly easy,</p>
+<p>but it is one of the tough ones, and with good reason. In the</p>
+<p>serving chapter great emphasis has been placed on the toss,</p>
+<p>for it determines where the hit point will be. If the hit point</p>
+<p>is wrong, the serve will be at best ineffective. The same is true</p>
+<p>of the overhead. The hit point is critical. The obvious differ-</p>
+<p>ence on the overhead is the player must move his body into</p>
+<p>exact position relative to the flight of the ball. If he does not</p>
+<p>achieve the correct position, his hit point will be wrong and</p>
+<p>the effect will be the same as a bad toss on the serve. Plenty</p>
+<p>of practice will win out, for your student will eventually learn</p>
+<p>to judge angle of trajectory, speed, spin, and even the wind if</p>
+<p>it is a factor.</p>
+<p>As the overhead stroke is identical to the flat serve from</p>
+<p>the back-scratch position, you should not start your student</p>
+<p>on the overhead until he has grooved his service swing reason-</p>
+<p>ably well. This does not mean he has to be putting his serve in every time he hits it. What you are looking for is good consistency in his swing. If you try teaching the overhead before</p>
+<p>he has achieved this, his progress will be painfully slow.</p>
+<p>Up to this point your student’s attention has been directed</p>
+<p>entirely to the basic spin serve. To make the adjustment to the</p>
+<p>overhead a little easier, get him to hit a few relatively flat serves. All he has to do is turn his wrist outward so the face of</p>
+<p>the racket contacts the ball flatter, and move his toss and hit</p>
+<p>point a few inches to the right so that on impact the arm and</p>
+<p>racket are in a straight line and fully extended. Don’t spend</p>
+<p>too much time on this as a deep lob should be hit with some</p>
+<p>spin anyway. Be very sure he keeps the correct Continental</p>
+<p>serving grip for his overhead.</p>
+<p>Ask your student to take up his ready position 6 to g feet</p>
+<p>from the net just as if you were going to hit volley patterns to</p>
+<p>him. Instead, you will hit very easy lobs that are as much right to him as you can make them. As you hit the lob he</p>
+<p>should immediately turn his shoulders and drop the racket</p>
+<p>into the back-scratch position without any wind-up at all.</p>
+<p>His left arm should be extended and it is a good idea to get</p>
+<p>him in the habit of actually pointing at the ball (Figure 27).</p>
+<p>This not only gives him better depth perception, but it automatically turns his shoulders to the correct position. His right</p>
+<p>leg should be bent so he can push off and move his weight</p>
+<p>forward into the hit (Figure 28), From this point on, every-</p>
+<p>thing else is exactly like the flat serve except the problem of</p>
+<p>timing. Because of the speed of the descending ball he will</p>
+<p>have a tough time connecting, and so the best procedure is to</p>
+<p>start him off with a very abbreviated punch-type swing. When your student starts his swing from the back-scratch position, his arm straightens and becomes fully extended, but instead of</p>
+<p>snapping the wrist forward, ask him to block the ball firmly. His follow-through should end well above shoulder level</p>
+<p>instead of finishing down by the left shin. Stay with this punch-type overhead until he is consistently accomplishing</p>
+<p>good hitting position, is timing the ball well, and is placing them with considerable accuracy. When he has reached this point, you can get him to snap his wrist and lengthen his</p>
+<p>follow-through a bit more, but do this in stages so he does not</p>
+<p>lose it.</p>
+<p>s made a lot easier by Figure 27. Learning to hit the overhead i</p>
+</section>
+<section class="chapter" id="sec-12">
+<h2>starting in the back-scratch position.</h2>
+<p>Figure 28. As the ball approaches the hit point, body weight will shift forward and upward as the legs straighten and the wrist trig-</p>
+<p>gers the racket. The shoulders remain sideways to the net until</p>
+<p>the racket and arm bring them around.</p>
+<p>As your student develops his timing, you can begin to make</p>
+<p>him move a little in order to get into position. As you do this,</p>
+<p>work hard on the following points:</p>
+<p>No matter how lazy the lob looks, he should move in-</p>
+<p>stantly and fast. The saying “Hurry up and wait” is exactly what he should do on every overhead.</p>
+<p>. When he must move any distance to get under a lob, he</p>
+<p>should turn and run, looking over his shoulder at the ball</p>
+<p>just as an outfielder does in baseball. He should watch</p>
+<p>the ball like a hawk the entire time it is in the air, and</p>
+<p>especially through the hit.</p>
+<p>. As he digs hard to get under a lob, the head of the racket</p>
+<p>should be positioned just by his right ear. This places the</p>
+<p>right arm in a natural running position and also puts the</p>
+<p>racket close to the fully cocked position (Figure 29). When</p>
+<p>he gets to the point he must turn around to hit the overhead,</p>
+<p>the racket simply drops from the ear position into the back-</p>
+<p>scratch position.</p>
+<p>If he has enough time to get into good position he should</p>
+<p>be back far enough so that his body weight will be going</p>
+<p>toward the net during the hit. He should stop and wait for</p>
+<p>the ball in the fully cocked hitting position, but he should</p>
+<p>not get set for the shot too soon as he must be able to make</p>
+<p>last split-second adjustments in his position.</p>
+<p>He should reach up and meet the ball so his arm and racket</p>
+<p>are fully extended. The hit point should be well in front of him, and his full weight should be moving into the hit.</p>
+<p>Figure 29. (Opposite) To get into hitting position under a deep lob, a player must turn and run, but at the same time get his racket and shoulders in position for the hit.</p>
+<p>There are only two situations when a lob should be bounced</p>
+<p>and then hit. First, and obviously, when it is out of reach.</p>
+<p>Second, when a player is absolutely certain that by bouncing</p>
+<p>the lob he can achieve perfect hitting position, still hit it as</p>
+<p>an overhead, and hit it for a winner. Otherwise the lob should</p>
+<p>always be hit as an overhead or volley before it bounces</p>
+<p>(Figure 30).</p>
+<p>A player&#x27;s hitting position determines how much power he</p>
+<p>should put into an overhead. If it is marginal, he should elect</p>
+<p>to hit the overhead with moderate speed and place it deep into</p>
+<p>his opponent’s court. Although he gives up the chance of a</p>
+<p>winner, he eliminates the strong possibility of hitting his over-</p>
+<p>head out or into the net. Depending on his opponent’s court</p>
+<p>position, he may also elect to hit a soft but well-angled over-</p>
+<p>head. In either case, the key element is placement, not speed.</p>
+<p>There is no question speed adds a great deal to the effective-</p>
+<p>ness of an overhead, but it cannot be successfully included</p>
+<p>unless the player has good hitting position on the lob and has</p>
+<p>developed consistent accuracy with his overhead. Don&#x27;t let</p>
+<p>your student get into the habit of trying to blast every over-</p>
+<p>head he hits. This is particularly true on lobs that catch him</p>
+<p>back of his service line. When this happens he should hit his</p>
+<p>overhead with some spin, with moderate speed, and return the</p>
+<p>ball deep into his opponent&#x27;s court.</p>
+<p>There are a few times a lob should be hit as a volley instead</p>
+<p>of an overhead. As your student’s overhead starts getting</p>
+<p>grooved, you should begin to introduce these volley situations</p>
+<p>to him.</p>
+<p>1. If a player is surprised by a quick lob over his left shoulder and he cannot get into position to hit it as an overhead, then rather than give up his net position, he should take it as a</p>
+<p>high backhand volley. He should not try to hit this shot</p>
+<p>hard, but return it deep, or soft and well angled.</p>
+<p>Figure 30. When a lob is too deep to reach any other way, a player</p>
+<p>must leap and time the hit to perfection.</p>
+<p>Figure 31. If the hit point is too low, arm and body action becomes cramped and unco-ordinated, resulting in loss of power and ac-</p>
+<p>curacy.</p>
+<p>2. If a lob is too low to be hit as an overhead, then it should</p>
+<p>be volleyed (Figure 31). The closer this occurs to the</p>
+<p>net, the better the chances of going for a winner.</p>
+<p>As you start your student on learning the overhead, you</p>
+<p>should hit easy lob patterns right to him. They should not be very high and he should have plenty of time between each</p>
+<p>lob. As with other strokes, once he begins to get the basics</p>
+<p>nailed down, it is time to increase the degree of difficulty of</p>
+<p>the patterns. Eventually you will want to duplicate every pat-</p>
+<p>tern that occurs in actual play.</p>
+<p>To start with you can mix in drives with your lobs, At first</p>
+<p>you will want to hit these well within easy reach, but as he</p>
+<p>conquers these patterns you can begin to move him around</p>
+<p>more. Here is a good basic pattern that is tougher than it looks.</p>
+<p>Hit the first shot as a drive which he should volley, then hit your next shot as a good lob moving him back from net</p>
+<p>several steps. After he hits the overhead, hit a weak drive which he should move right back into net and volley, followed by a short lob as the last shot of the pattern series. Use your</p>
+<p>imagination in creating patterns, and be alert for any particular pattern that gives him trouble. When you find one, go to work</p>
+<p>on it until it is conquered.</p>
+<p>All “ground strokes” from serve returns to lobs are based on the</p>
+<p>forehand and backhand strokes. Therefore, if a player has an</p>
+<p>erratic forehand, the odds are he will also have an erratic fore-</p>
+<p>hand lob or serve return or both.</p>
+<p>The importance of solid ground strokes is further empha-</p>
+<p>sized by the fact a player’s ground game will only be as</p>
+<p>formidable as its weakest stroke. Coupled to a weak backhand,</p>
+<p>a strong forehand can be de-fanged completely by an ex-</p>
+<p>perienced player.</p>
+<p>To develop a powerful ground game a player must do three</p>
+<p>things before he ever hits the ball and he must do them without</p>
+<p>having to think about it. First he must physically and mentally</p>
+<p>be ready to move the split second he sees where his opponent&#x27;s</p>
+<p>shot is going. Second he must change grips, if necessary, and</p>
+<p>start his racket back as he pivots. Finally, he must arrive at the hit point on balance and on the proper foot.</p>
+<p>If he accomplishes these actions he is well prepared for the</p>
+<p>hit part of the shot.</p>
+<p>Time, or lack of it, is the enemy of preparation. If a player</p>
+<p>can force his opponent in the early stages of a stroke so his</p>
+<p>opponent is not prepared for the hit, he is well on his way to</p>
+<p>_ winning the point.</p>
+<p>On the other hand if a player has learned to save valuable</p>
+<p>split seconds during his preparation, he will be much tougher</p>
+<p>to force into errors. Just like a sprinter or swimmer who prac-</p>
+<p>tices starts, a tennis player should practice preparation until</p>
+<p>he excels at it.</p>
+<p>Before hitting any patterns, emphasize the importance of</p>
+<p>proper preparation and how it will inevitably affect the out-</p>
+<p>come of each ground stroke. Make very sure your student un-</p>
+<p>derstands and accepts this, for his mental attitude toward</p>
+<p>preparation is just as important as the physical execution of</p>
+<p>it. He must develop an eagerness, an impatience to get to the</p>
+<p>ball as fast as possible well prepared for the hit.</p>
+<p>Explain the three steps of preparation separately, but com-</p>
+<p>bine them when you start hitting patterns for they should be</p>
+<p>executed in one continuous smooth flow and are easily learned</p>
+<p>that way.</p>
+<p>1. The Ready Position: Ask your student to stand a foot behind</p>
+<p>the base line facing the net. His body should be slightly bent</p>
+<p>at the waist. His weight should be evenly distributed on the</p>
+<p>balls of his feet which should be about 18 inches apart. His</p>
+<p>knees should be flexed and his rump should be tucked well in</p>
+<p>under him so he can get moving fast.</p>
+<p>He should cradle the throat of the racket in his left hand</p>
+<p>positioning the racket head slightly to the left of the center of</p>
+<p>his body just below shoulder level. The face of the racket</p>
+<p>should be perpendicular to the playing surface. His right hand</p>
+<p>should be belt high close to the mid-point of his body and</p>
+<p>should grip the racket with either the forehand or backhand</p>
+<p>grip. (See chapter on the volley for proper grip.) As there is a fraction of a second less time available on the backhand</p>
+<p>stroke, particularly on serve return, some top players make the</p>
+<p>backhand grip their standard ready position grip.</p>
+<p>While his muscles are ready to spring into instant action he</p>
+<p>should not be rigid. His concentration should be under com-</p>
+<p>plete control and focused on the ball. .</p>
+<p>Figure 32. After one or two unsuccessful tries to throw a racket over the net, a beginner will take a big wind-up which will result in</p>
+<p>a natural, compact, and well-executed pivot.</p>
+<p>2. The Pivot: The pivot is simple except it must be started the</p>
+<p>split second a player sees where his opponent’s shot is coming.</p>
+<p>He then must change his grip, if necessary, while starting his</p>
+<p>racket back. The action of the racket coming back helps rotate</p>
+<p>the shoulders into their proper position. It will be a very big</p>
+<p>step if you can get your student thinking of his racket as the</p>
+<p>starter button to the series of actions that make up the pivot.</p>
+<p>At the same time the racket starts back and the shoulders</p>
+<p>rotate, the body weight should start shifting so he can push</p>
+<p>off hard for the spot he will intercept and hit the ball.</p>
+<p>Figure 33. When throwing the racket on the backhand side, a beginner will instinctively execute good footwork and body action</p>
+<p>even to the point of correctly holding shoulders and hips.</p>
+<p>Occasionally you will find a beginner who just can’t get the</p>
+<p>feel of the pivot. This happens most often with girls who</p>
+<p>have not played other sports much. They have not learned</p>
+<p>how to wind-up and really let fly with a baseball bat or golf</p>
+<p>club or whatever. The quickest solution is to grab an old</p>
+<p>racket that can be thrown and head for an open field. Ask</p>
+<p>your student to take the ready position, correct grip and all.</p>
+<p>Get well off to one side just in case. Have him aim for a dis-</p>
+<p>tant spot, go into a pivot, and heave the racket as he takes a</p>
+<p>step forward (Figures 32, 33). If he has been having trouble</p>
+</section>
+<section class="chapter" id="sec-13">
+<h2>with the pivot, the racket will not have gone very far. Kid</h2>
+<p>him and urge him to wind up and really let it fly. Have him try this on both sides, backhand and forehand. As he gets</p>
+<p>the feel of the pivot he will begin to get his shoulders well</p>
+<p>around and his footwork and body balance will improve. Now</p>
+<p>see if you can get him to stop action by yelling “hold it” when</p>
+<p>he’s completed his pivot but before he has started his throw. If</p>
+<p>you have been fast enough to catch him in this correct wind-</p>
+<p>up position you can demonstrate all of the points of his pivot</p>
+<p>he has not been accomplishing on the tennis court. If you feel your student can benefit by additional racket throwing, re-</p>
+<p>peat the procedure, This time get him to take several running</p>
+<p>steps as if he were intercepting a ball and then heave the</p>
+<p>Figure 34. Using the hitting foot to get to the ball means body weight is moving toward the side line. This substantially increases the degree</p>
+<p>of difficulty in hitting the ball cross-court, a fact</p>
+<p>an opponent can successfully gamble on.</p>
+<p>racket. If during later lessons the pivot begins to deteriorate,</p>
+<p>head back for the open spaces for a few minutes of racket</p>
+<p>tossing.</p>
+<p>3. Footwork: Arriving at the hit point on the correct foot is</p>
+<p>essential for a strong ground game. The importance of this has</p>
+<p>been covered in the chapter on the volley, but is so important</p>
+<p>it is worth reviewing.</p>
+<p>The foot that gets the player into position should not be the</p>
+<p>foot that is part of the hit (Figures 34, 35). This allows the</p>
+<p>final and hitting step to be made in the direction of the oppo-</p>
+<p>nent’s court. To accomplish this consistently a player must be</p>
+<p>mentally programed not to rely on the hitting foot to get him to</p>
+<p>the ball.</p>
+<p>Figure 35. Getting into position with the correct foot requires just one more step, which can be accomplished by a fraction of a second</p>
+<p>quicker start and a determination not to get to the ball any other way.</p>
+<p>Explain to your student the purpose of these patterns is to</p>
+<p>begin to groove the ready position, pivot and footwork. Getting</p>
+<p>the ball over the net will come soon enough. Be prepared to</p>
+<p>repeatedly remind him of this, for in spite of what you say his only thought will be to hit the ball back any way he can.</p>
+<p>Once he begins to concentrate on his ready position, pivot</p>
+<p>and footwork, progress will be quite rapid.</p>
+<p>If your student is just starting out, it will help to toss the</p>
+<p>patterns. Move to a position of 10 feet in front of the net on his</p>
+<p>side of the net and put him one-half step behind his base line.</p>
+<p>Toss alternating patterns, but give him plenty of time in be-</p>
+<p>tween the shots so he can get back to the ready position.</p>
+<p>Keep the time interval or pattern rhythm constant. If he really</p>
+<p>messes up on a shot, finish the pattern anyway. This will help</p>
+<p>him learn to recover and keep on going.</p>
+<p>In the first series of alternating patterns you will hit or</p>
+<p>toss each ball so he must take one step to the side, immedi-</p>
+<p>ately followed by a second step toward the net as he hits the ball (Figure 36). Explain to him this is the same procedure</p>
+<p>he practiced at net. Walk through an example. Show him when you toss the ball to his right he will step with the right</p>
+<p>foot more or less parallel with the base line and then move forward into the hit with his left foot. You probably will have</p>
+<p>to adjust your toss point until you find where the ball needs</p>
+<p>to land for him to best accomplish the correct footwork.</p>
+<p>In a relatively short time your student will begin to develop</p>
+<p>a rhythm. Ready position, change grips, racket back on pivot, forehand swing, to the ready position, change grips, racket back on pivot, backhand swing, and so on. Soon the three</p>
+<p>basics of preparation will start to blend and become a smoother</p>
+<p>and more continuous action. | By now your student should be connecting on a few shots. If not, ask him to keep his head down and eyes on the ball</p>
+<p>through the hit. So he does not get anxious and tighten up,</p>
+<p>remind him you are still working on preparation.</p>
+<p>Figure 36. By being in position with the non-hitting foot, the ball can be hit with power and accuracy either cross-court or down</p>
+<p>the side line. And an opponent does not know which.</p>
+<p>Now you are ready to move back on the other side of the net, Two things will happen. First; the ball will bounce differently and he will need to adjust. Second, you will not be as</p>
+<p>accurate with your patterns which will create some footwork</p>
+<p>problems. But the solution is easy.</p>
+<p>To a beginner, arriving at the hit point on the proper foot</p>
+<p>when the ball isn’t exactly where it is “supposed” to be is</p>
+<p>confusing. He will often try to approach the problem mathematically. “Let’s see, four steps should take me about there, so</p>
+<p>do I start off on the left or right foot?” Disaster.</p>
+<p>The answer is simple. Continue to hit alternating patterns</p>
+<p>but hit them farther to each side than you have been. Your</p>
+<p>student will thus be forced to take more than one step to get</p>
+<p>to the ball. Make the patterns easy so he will have plenty</p>
+<p>of time.</p>
+<p>He will adjust quickly to this multiple footwork if you can</p>
+<p>get him to do two things. First, he must be concentrating</p>
+<p>hard on the fact his hitting step will be toward the net. Second</p>
+<p>he must get to the ball with very short, almost choppy steps.</p>
+<p>If he is taking very short, quick steps and if he is thinking about</p>
+<p>the last step being toward the net, he will automatically adjust</p>
+<p>his footwork so he gets to the ball on the correct foot. In other</p>
+<p>words, short rapid steps make adjustment easy. Long strides</p>
+<p>do just the opposite.</p>
+<p>The backhand and forehand, both being ground strokes,</p>
+<p>have many similarities from the start of the pivot right through</p>
+<p>the hit and follow-through. In fact there are very few major</p>
+<p>differences. Therefore, although the strokes can be taught</p>
+<p>separately, there are three big advantages to first teaching</p>
+<p>the similarities of both strokes at the same time.</p>
+<p>The first advantage is that learning the common points of</p>
+<p>the backhand and forehand at the same time continues the</p>
+<p>joining together of the two strokes into a single unit, with no</p>
+<p>seams and no mental pictures of the backhand being different</p>
+<p>and automatically weaker. Second, a single point that applies</p>
+<p>to both strokes is quickly understood and makes more of an</p>
+<p>impression on the student than learning the same point sep-</p>
+<p>arately for each stroke, For example, instructing your student</p>
+<p>to “watch the ball through the hit” is just as applicable to the</p>
+<p>forehand as it is to the backhand. As you hit alternating pat-</p>
+<p>terns you can get him concentrating exclusively on the problem</p>
+<p>of watching the ball, thus nailing it down on both strokes.</p>
+<p>Third, the more clearly your student understands the entire</p>
+<p>structure of his ground strokes the easier it will be for him</p>
+<p>to analyze and correct stroke problems that will plague him from time to time. In other words, having a clear picture of the</p>
+<p>many basic stroke similarities as separate from the few unique</p>
+<p>refinements of each stroke will help him analyze and correct</p>
+<p>stroke problems.</p>
+<p>Basic Common Points Between Forehand and Backhand</p>
+<p>1. From the ready position racket movement should start the</p>
+<p>instant it is determined which side the ball will be played</p>
+<p>on. The racket is the starter button for all subsequent</p>
+<p>actions.</p>
+<p>2. The ball is watched from the instant it leaves the oppo-</p>
+<p>nent’s racket right through the hit point.</p>
+<p>Figure 38.</p>
+<p>3. If necessary the grip is changed as the left hand guides</p>
+<p>the racket back. The left hand helps to move and support</p>
+<p>the racket. In the early stages of the pivot it helps the</p>
+<p>shoulders turn properly.</p>
+<p>4. The speed of the pivot, including the backswing, is de-</p>
+<p>termined by the speed of the oncoming ball.</p>
+<p>5. As the shoulders continue to pivot smoothly with the arms</p>
+<p>and racket, body weight begins to really get moving in the</p>
+<p>direction of the point of ball intercept.</p>
+<p>6. As the pivot continues, the racket head is brought by the body at about shoulder level on its way to the full back-</p>
+<p>swing position. The wrist is not allowed to cock upward, which would position the racket shaft much too perpen-</p>
+<p>dicular with the ground.</p>
+<p>Figure 4o.</p>
+<p>7. Without pausing the racket starts a descent to hitting</p>
+<p>level describing a small arc as it does so.</p>
+<p>8. Although the swing is continuous, at this instant the racket</p>
+<p>has reached the full backswing position and is pointing at</p>
+<p>the backstop. The racket arm is almost fully extended but</p>
+<p>Figure 41.</p>
+<p>not quite as there is still a slight bend in the elbow. The</p>
+<p>back foot is planted holding full body weight.</p>
+<p>g. The knees should be flexed so the player is well down to</p>
+<p>the flight level of the ball. He must stay down at that</p>
+<p>level throughout the entire stroke.</p>
+<p>Figure 42.</p>
+<p>10. The racket begins to smoothly accelerate forward reaching</p>
+<p>its maximum speed at the hit point.</p>
+<p>11. As the racket starts its forward motion, weight begins to</p>
+<p>shift to the front foot which has stepped toward the net.</p>
+<p>12. The racket shaft is parallel with the playing surface. This is</p>
+<p>Figure 43.</p>
+<p>particularly important on low shots. The exceptions are</p>
+<p>shots at shoulder level or higher.</p>
+<p>13. At the moment of impact the wrist should be firm, The</p>
+<p>racket is parallel with the net.</p>
+<p>14. At exactly the moment of impact full weight transfer</p>
+<p>occurs from the back foot to the front foot.</p>
+<p>Figure 44.</p>
+<p>15. The racket sweeps through the hit in a long follow-through</p>
+<p>as if the edge of the hand were dusting a long table. As</p>
+<p>this follow-through occurs, the body continues to move</p>
+<p>forward thus greatly increasing the length of time the ball</p>
+<p>is in contact with the racket.</p>
+<p>16. During the follow-through the arm becomes fully extended,</p>
+<p>although it is not rigid nor is the elbow allowed to lock.</p>
+<p>Figure 45.</p>
+<p>17. The shoulders pivot freely out of the way. 18. The back foot does not swing forward on the hit or followthrough but remains to the rear in light contact with the</p>
+<p>19. The racket continues through in its sweep and begins moving upward until it finishes the stroke pointing at the top</p>
+<p>of the opponent’s backstop. 20. At the end of the follow-through the back foot moves forward. This is the first motion toward moving into the ready position in preparation for the opponent&#x27;s next shot.</p>
+<p>All of these twenty basic points apply to both backhand and forehand. As you hit alternating patterns you should</p>
+<p>cover each point on both strokes. right down the list. Not only</p>
+<p>should your student be able to perform the twenty basics, but he should know them by heart.</p>
+<p>During the many lessons needed on basics it is predictable</p>
+<p>one stroke will come ahead faster than the other. It is very</p>
+<p>important to catch this early and bring the laggin&amp; stroke up. This can easily be done by increasing the emphasis of in-</p>
+<p>struction on that stroke.</p>
+<p>Your student has a lot to think about so make sure he is</p>
+<p>performing these basics fairly consistently before beginning</p>
+<p>work on stroke refinements.</p>
+<p>The backhand can be a powerful flowing stroke capable of</p>
+<p>producing accuracy as well as explosive speed (Figure 46).</p>
+<p>For a very few top players a devastating backhand has become</p>
+<p>their trade-mark, For some others their backhands are as good</p>
+<p>or almost as good as their forehands. But for the large majority</p>
+<p>of players the backhand is a problem and it sets the stage</p>
+<p>for ultimately losing many, many points. While this is the way</p>
+<p>it is, it does not have to be. The few reasons the backhand</p>
+<p>becomes the weakest ground stroke may be dealt with and</p>
+<p>overcome during the early stages of learning the game.</p>
+<p>Points to be discussed with your student prior to hitting</p>
+<p>patterns on backhand stroke refinements</p>
+<p>In teaching backhand stroke refinements to your student,</p>
+<p>the first step is to overcome the backhand mental barrier. The</p>
+<p>following points will help him understand why most players’</p>
+<p>Figure 46. There is tremendous natural power in the backhand if, and only if, the preparation of the stroke has been properly executed.</p>
+<p>backhands are the weakest ground stroke and“why his does</p>
+<p>not have to be. In fact show him why it can be better than the</p>
+<p>forehand. If he is convinced, together you can forge a backhand</p>
+<p>opponents will fear, not pounce upon.</p>
+<p>1. During the period any beginner was first getting interested</p>
+<p>in tennis, he undoubtedly watched others play and listened</p>
+<p>when they talked. It is no surprise he quickly learned the</p>
+<p>backhand is the weak stroke. His subconscious conclusion</p>
+<p>is “My backhand will be a problem too.” And his approach</p>
+<p>to learning the stroke automatically becomes a very neg-</p>
+<p>ative one which often is not obvious, but it’s there. Your</p>
+<p>first step is to convince him this does not have to be</p>
+<p>the case. Brainwash him if necessary, but get him thinking</p>
+<p>positively about his backhand.</p>
+<p>2. Instructors and students alike are responsible for keeping</p>
+<p>the forehand and backhand equal in proficiency. But what</p>
+<p>usually happens is the forehand is the first stroke to be</p>
+<p>taught and it begins to move ahead of the backhand in</p>
+<p>reliability. During play the student realizes this, and be-</p>
+<p>cause he wants to win, he begins to favor the forehand. The more he does this the better it becomes and the back-</p>
+<p>hand falls further and further behind. You and your stu-</p>
+<p>dent should agree to keep the backhand up to or slightly</p>
+<p>ahead of his forehand in proficiency. If it starts to lag, put</p>
+<p>more emphasis on it during each lesson, and in turn he must</p>
+<p>use it more during play.</p>
+<p>3. Because of the difference in shoulder position on the back- ‘hand versus the forehand, the ball is contacted considerably</p>
+<p>farther toward the net. This means there is always a split-</p>
+<p>second less time on the backhand side. Early preparation easily overcomes this, but this must be built into the stroke</p>
+<p>at the very beginning.</p>
+<p>4. On the backhand the arm and wrist have great strength when the ball is contacted well in front of the body, but very little strength when hit late. This is in contrast to the forehand where the arm and wrist maintain their strength</p>
+<p>even when the ball is hit late. Make it clear this lack of</p>
+<p>strength on a late hit, plus the split-second less time to get prepared, means there can be absolutely no compromise on</p>
+<p>the backhand. He must learn to always be prepared early</p>
+<p>so he can hit the backhand well in front of him.</p>
+<p>Where the Backhand Differs During previous ground-stroke patterns, you have been work-</p>
+<p>ing on the twenty basic corrections common to both the forehand and backhand. Now it’s time to begin refining the back-</p>
+<p>hand.</p>
+<p>There are only five points where the backhand is different</p>
+<p>from the forehand, As you work these into your instruction,</p>
+<p>you will find your student will have no problem picking them</p>
+<p>up. In fact if he has been accomplishing the twenty basic</p>
+<p>points common to both strokes, the odds are he is already</p>
+<p>performing these differences quite naturally.</p>
+<p>1. The Continental grip should be used on the backhand.</p>
+<p>2. The left hand should support and guide the racket through</p>
+<p>the backswing longer, up to the point the racket starts its</p>
+<p>descent and forward motion.</p>
+<p>3. The wrist is firm and remains unchanged during the entire</p>
+<p>stroke from ready position through the follow-through.</p>
+<p>4. The racket is brought back in a flatter backswing than the forehand, This in turn reduces the size of the arc as the</p>
+<p>racket moves to hitting level.</p>
+<p>5. In the full pivot position the front or right shoulder is far</p>
+<p>enough around so the point of the shoulder is aiming more toward the left side lines than toward the net. Being the hinge point, the shoulder should remain almost stationary</p>
+<p>through the hit. Your student’s mental grasp and comprehension of these stroke differences is important. The better he understands the</p>
+<p>structure of the backhand, the quicker he will learn it, and the easier it will be for him to correct stroke problems that</p>
+<p>will occasionally crop up in the future. Don’t underestimate</p>
+<p>the importance of why something is done, and don’t under-</p>
+<p>estimate your student&#x27;s ability to understand and: benefit from knowing why.</p>
+<p>SPECIAL PROBLEMS TO LOOK FOR—BACKHAND</p>
+<p>Arm and Elbow In bringing the racket back your student will probably have</p>
+<p>a tendency to keep his upper arm out and away from his body</p>
+<p>in a horizontal position and then bend his elbow to bring the</p>
+<p>forearm and racket back. As he starts his forward swing from</p>
+<p>this position, the elbow will lead the forearm and racket re-</p>
+<p>sulting in a slapping motion, loss of power and accuracy. To</p>
+<p>correct this, get your student to bring his upper arm and</p>
+<p>forearm in close to his body as it comes back with the racket</p>
+<p>during the pivot. The elbow is only slightly bent. If he has</p>
+<p>trouble adjusting, ask him to touch his left hip with the</p>
+<p>inside of his right wrist in the full wind-up position. This will</p>
+<p>help by giving him a reference point, and although an over-</p>
+<p>correction, it is very effective. The wrist should remain firm</p>
+<p>throughout the entire stroke.</p>
+<p>Shoulder The shoulder should be kept down during the backswing</p>
+<p>and should stay down through the hit. It is the hinge point and</p>
+<p>to produce full power, needs to be pointing down at the ball. In the full wind-up position he should have his chin tucked</p>
+<p>in close to, and should be looking over the point of his shoulder.</p>
+<p>Hip and Shoulder The body should move out of the way on the final stage of</p>
+<p>the stroke thus allowing a free uninterrupted swing. But many players, particularly on the backhand, allow the shoulder</p>
+<p>and hip to break away much too soon. Because this leads to very serious problems, it is better to teach your student to</p>
+<p>hold both hip and shoulder a little too long. This is easily</p>
+<p>adjusted at a later date by getting him to emphasize his</p>
+<p>follow-through.</p>
+<p>Even if your student is well prepared in advance of the hit, it is possible he can get into the habit of leaving his weight</p>
+<p>on the back foot as he swings. This causes the shoulder to</p>
+<p>break upward and the stroke to travel in a golf-type swing.</p>
+<p>Catch this early and get him moving off the back foot toward</p>
+<p>the ball, accomplishing full weight transfer to the front foot at</p>
+<p>the instant of racket contact with the ball. It will also help to</p>
+<p>get him to emphasize a long forward sweeping follow-through.</p>
+<p>Because there can be no compromise in hitting a backhand well in front of the body, a beginner soon learns by backing away from the ball instead of stepping into it, he can buy a</p>
+<p>couple of split seconds in order to get his racket through. Cor-</p>
+<p>rective action must be twofold. First, he must accomplish all</p>
+<p>the actions of preparation much sooner so when he is in the full backswing position, he is actually waiting for the ball.</p>
+<p>Second, he must step toward the net with the hitting foot and</p>
+<p>transfer weight to that foot as the racket hits the ball.</p>
+<p>As your sudent’s backhand progresses it should be develop-</p>
+<p>ing a look of compactness. A wound-spring feeling with stored</p>
+<p>power ready to use well in advance of the actual hit. From</p>
+<p>this position he should be unleashing a smoothly accelerating</p>
+<p>swing and long forward sweeping follow-through ending up pointing toward the top of his opponent’s back-stop.</p>
+<p>1. The Eastern grip should be used on the forehand. 2. During the pivot the left hand supports and guides the racket into the backswing until the front or left shoulder reaches its fullest pivot position. As the racket continues on</p>
+<p>its way to the full backswing position, the left hand lets go</p>
+<p>of the racket and extends forward toward the net for bal-</p>
+<p>ance. The point of the left shoulder is aiming at the net.</p>
+<p>3. As the racket moves down to hitting level and starts for-</p>
+<p>ward, the shoulders start to rotate. The front shoulder be-</p>
+<p>gins to move left and rearward as the right shoulder moves</p>
+<p>down slightly as it comes forward. At the moment of impact</p>
+<p>the shoulders will be parallel to the net. Depending on how</p>
+<p>open the stance, the hips can be either parallel with the net</p>
+<p>and shoulders, or perpendicular to the net and shoulders</p>
+<p>and therefore almost parallel to the side line.</p>
+<p>4. From the ready position or during the backswing, the wrist</p>
+<p>is laid back slightly and is firm. It remains this way through</p>
+<p>the forward swing until the moment of impact. As the</p>
+<p>racket contacts the ball the wrist moves sharply forward</p>
+<p>and locks into position so the racket, wrist, and arm form a</p>
+<p>straight line as the racket sweeps forward in the follow-</p>
+<p>through. Beginners should not use any wrist and intermedi-</p>
+<p>ate players should limit this wrist action to the last split</p>
+<p>second of ball and racket contact, letting the wrist, arm, and</p>
+<p>racket achieve a straight line in the late stages of the follow-</p>
+<p>through. If your student is having control problems with his</p>
+<p>forehand, he is probably using too much wrist. This can be</p>
+<p>corrected by getting him to make his wrist even firmer</p>
+<p>through the entire stroke.</p>
+<p>5. On the follow-through the shoulders pivot freely allowing the racket to continue its forward and upward sweep.</p>
+<p>SPECIAL PROBLEMS TO LOOK FOR—FOREHAND</p>
+<p>Using the wrong grip on the forehand is a problem that can destroy the forehand stroke as the student compensates the resulting improper positioning of the racket face by rotating</p>
+<p>the wrist and arm during the swing. This is not always obvious, for he may be switching to an incorrect grip during his back-</p>
+<p>swing. Corrective action is simply checking frequently to make</p>
+<p>sure he has the Eastern forehand grip. The best times to do</p>
+<p>this are at the full backswing position, and immediately follow-</p>
+<p>ing the hit before your student has had a chance to come back</p>
+<p>to the ready position.</p>
+<p>Racket Face An easy bad habit to get into on the forehand is closing the</p>
+<p>racket face. During the backswing the racket face moves from</p>
+<p>perpendicular to looking down at the playing surface. This</p>
+<p>can be seen at the full backswing position and should be</p>
+<p>corrected by asking your student to keep the face of the racket</p>
+<p>perpendicular throughout the entire stroke. If the problem per-</p>
+<p>sists, overcorrect by getting him to open the racket face sky-</p>
+<p>ward slightly.</p>
+<p>Wrist Not Firm A weak, wobbly wrist results in an ineffective shot that often</p>
+<p>doesn’t make it over the net. If not corrected, this habit eventually leads to slapping at the ball in an attempt to get</p>
+<p>some power into the shot. Remind your student of the im-</p>
+<p>portance of the wrist being very firm and locked into place at</p>
+<p>the hit as full weight transference occurs from the back foot to</p>
+<p>the front foot.</p>
+<p>Too Much Wrist Too much wrist results in a high degree of inaccuracy mixed with an occasional shot going like a bullet in what, to the in-</p>
+<p>experienced eye, looks like a perfect stroke. Here again emphasis should be placed on firming up the wrist. If the habit</p>
+<p>continues, the laying back of the wrist during the backswing</p>
+<p>should be minimized or temporarily eliminated.</p>
+<p>Shoulders and Hips Opening up too soon with the shoulders and hips results in the racket trailing the shoulder pivot. The student will slice or</p>
+<p>foul off shots to his right and may attempt to overcome this by</p>
+<p>slapping his wrist forward. There is a simple corfective action.</p>
+<p>During the backswing he should be letting go of the racket with his left hand and extending his arm forward. When</p>
+<p>he does this, get him to point at the oncoming ball with his</p>
+<p>left hand. This helps to keep the shoulders perpendicular to</p>
+<p>the net until the racket leads them around during the forward</p>
+<p>swing.</p>
+<p>Arm and Elbow A common problem with beginners and intermediates is a</p>
+<p>very short follow-through caused by bending the elbow and</p>
+<p>pulling the racket upward at the hit point instead of sweeping</p>
+<p>forward through the hit. This habit has a way of getting worse,</p>
+<p>and soon the racket will be ending up over the left shoulder. Explain to your student the importance of a long sweeping</p>
+<p>follow-through. Remind him that his arm should fully extend</p>
+<p>during the follow-through even though the elbow does not</p>
+<p>lock. Get him to finish the stroke with his racket pointing at the</p>
+<p>top of his opponent’s back-stop.</p>
+<p>As your student’s forehand improves it should have the feeling of smooth power with a long sweeping follow-through.</p>
+<p>His footwork should allow him to step forward into the ball</p>
+<p>thus allowing him to hit cross-courts and down the line shots</p>
+<p>with equal power and accuracy.</p>
+<p>When you work on backhand and forehand stroke refinements you will want to concentrate first on one stroke and then</p>
+<p>the other, but don’t hit all the shots of the pattern series to that stroke. In other words, hit at least one of the pattern</p>
+<p>shots to the stroke not being worked on.</p>
+<p>As your student begins to conquer the ground-stroke refine-</p>
+<p>ments, he should be fast approaching the point of becoming</p>
+<p>a good player. Therefore you will need to increase the difficulty of the patterns in order to keep him interested and his</p>
+<p>game improving at a steady pace. This can be done by increas-</p>
+<p>ing the speed of your shots, decreasing the time element be-</p>
+<p>tween each shot, and by hitting the shots farther away from</p>
+<p>each other. But one of the most effective ways of increasing</p>
+<p>pattern difficulty is to get your student to hit more and more of</p>
+<p>his pattern returns cross-court. This results in by far the most</p>
+<p>difficult pattern series and is the making of a winning player,</p>
+<p>for the ability to hit cross-courts from almost any position</p>
+<p>keeps an opponent from moving over to cover the easier down-</p>
+<p>the-line return. To hit cross-court returns, your student must be</p>
+<p>stroking the ball very well indeed. Most important, he will</p>
+<p>have had to “turn the corner” prior to intercepting the ball so</p>
+<p>that his weight can move forward through the hit toward</p>
+<p>the center of the net, rather than down the side line toward</p>
+<p>the net post.</p>
+<p>Once your student has grooved his basic ground strokes to the</p>
+<p>point they do not break down under the pressure of fairly</p>
+<p>tough patterns, you should start to work on the supplementary</p>
+<p>shots. The word supplementary, which is most often used in</p>
+<p>describing these shots, can be misleading, for these modified</p>
+<p>basic strokes are a very important part of a winning player&#x27;s</p>
+<p>game. They are the lob, drop shot, half-volley, and serve re-</p>
+<p>turn. They are as much a part of the basic game as the over-</p>
+<p>head or serve. You should make sure your student understands</p>
+<p>this so he will be willing to spend the time necessary to master</p>
+<p>these modified ground strokes.</p>
+<p>To fully appreciate the extreme importance of the serve</p>
+<p>return, it helps to look first at the serve. The objective of the</p>
+<p>serve is to win the point with an outright ace, or to at least set</p>
+<p>the stage for the eventual winning of the point by placing</p>
+<p>the receiver in a defensive position from which he never re-</p>
+<p>covers, The serve return must neutralize the effect of the</p>
+<p>serve or the odds of winning the point remain heavily in favor</p>
+<p>of the server. Therefore, in terms of importance, the serve return ranks right at the top of the list along with the serve. It</p>
+<p>also ranks with the serve in terms of degree of difficulty.</p>
+<p>The serve-return stroke is greatly affected by the speed,</p>
+<p>spin, and placement of the serve as well as by the playing</p>
+<p>surface, the server’s intended court position on his next shot,</p>
+<p>the server&#x27;s over-all game, and finally by the serve returner’s ability to handle his opponent’s serve that day. Depending on</p>
+<p>these variables, the degree of modification of the basic ground</p>
+<p>stroke of a serve return may be large or small.</p>
+<p>A difference between the serve return and other ground</p>
+<p>strokes is the ball is not in play until the serve is hit; therefore</p>
+<p>the receiver has plenty of time to get set. His ready-position</p>
+<p>grip and stance should be the same as covered in detail in the</p>
+<p>chapter on ground strokes with two minor differences. First,</p>
+<p>the knees should be bent more so he will already be down</p>
+<p>in case the ball comes off low and fast (Figure 47). Second,</p>
+<p>court position should be determined by a line drawn from the</p>
+<p>server to the receiver, with this line bisecting the angle cre-</p>
+<p>ated by the sharpest angled forehand and sharpest angled</p>
+<p>backhand serves that can be hit. The receiver&#x27;s position along</p>
+<p>this bisecting line may be behind the base line, just in front of</p>
+<p>it, or several feet in front of it, depending on the variables</p>
+<p>previously mentioned.</p>
+<p>Standing a foot or two inside the base line and catching the</p>
+<p>serve early gives the receiver a big edge if he can pull it off.</p>
+<p>It greatly reduces the effective angle of a well-placed serve,</p>
+<p>and in addition gets the serve return headed back to the re-</p>
+<p>ceiver’s court much sooner. It also allows the receiver to chip</p>
+<p>the ball, placing the return low at the feet of a net rusher.</p>
+<p>But the receiver cannot always get away with this preferred serve-return position. If the court surface is particularly fast,</p>
+<p>if the server is hitting with good speed and placement, or if</p>
+<p>the receiver’s reflexes are not quite up to par, then there will be too many serve-return errors. The serve returner will have</p>
+<p>to compromise, giving ground and buying time by moving back. By standing behind the base line, he gains valuable</p>
+<p>split seconds to prepare for the hit, but a well-angled serve pulls him farther out of court and, because he is hitting from</p>
+<p>a deeper court position, his opponent gains time to get into a</p>
+<p>better position for his next shot.</p>
+<p>Figure 47. The pace of the serve return is determined by how much body weight the receiver can get in behind the hit. The split second the serve is hit he must move and move fast.</p>
+<p>As the server tosses the ball, the receiver’s concentration</p>
+<p>should be at its height. He should be ready to move very quickly, in fact considerably quicker than on any other ground</p>
+<p>stroke. As the server&#x27;s racket hits the ball, the receiver should</p>
+<p>move the instant he senses where the serve is headed, His</p>
+<p>backswing should be started before the ball crosses the net</p>
+<p>and must be completed before the ball hits in the service</p>
+<p>court. The farther your student stands in, the less his serve-</p>
+<p>return stroke will resemble a full ground stroke. The farther</p>
+<p>he stands in, the less time to execute perfect footwork, and so it is very important that he always pivot his shoulders. His</p>
+<p>backswing must be very short, similar to the half-volley. He</p>
+<p>should crowd the ball and get his weight in behind the re-</p>
+<p>turn. His forward swing will be more of a block, but he must</p>
+<p>follow through, although not to the extent that he does on a</p>
+<p>full ground stroke. His wrist will be very firm throughout the</p>
+<p>entire stroke. It is critical that he watch the ball from the</p>
+<p>moment of the toss through the hit point of the serve return.</p>
+<p>The speed or pace of his return comes directly from the amount</p>
+<p>of body weight he is able to get into the shot.</p>
+<p>In the beginning your student will be standing back to</p>
+<p>return serve, and his stroke will be much closer to a full ground</p>
+<p>stroke. He still must move very fast, always pivot his shoulders,</p>
+<p>and in most cases be executing excellent footwork.</p>
+<p>It is difficult to effectively instruct your student on the</p>
+<p>serve return if you are hitting the serves. It will be well worth</p>
+<p>enlisting the help of another player who can get valuable serv-</p>
+<p>ing practice while your student is learning the return. In the beginning ask your server to hit the ball without much</p>
+<p>speed and have him concentrate on consistency and getting</p>
+<p>his serve in deep.</p>
+<p>Ask your student to take his ready position just behind the</p>
+<p>base line. Make sure he is facing the server. This means he</p>
+<p>will not be standing exactly parallel to the base line. In other</p>
+<p>words he should face the “problem,” which is the server. Many</p>
+<p>players do not do this, and as a result increase the degree of difficulty of their serve return. You should take up a position</p>
+<p>on your student’s side of the net, moving around occasionally</p>
+<p>to get a different view.</p>
+<p>After several minutes of returning serve from the forehand</p>
+<p>service court, have your student move over to the backhand</p>
+<p>court. This not only gives him a chance to learn the serve</p>
+<p>return from both service courts, but it also gives the server</p>
+<p>practice in both service courts.</p>
+<p>As your student develops his serve return, and he should be</p>
+<p>working on consistency for quite some time, he can move</p>
+<p>forward to a ready position just inside the base line. Later</p>
+<p>you will want to move him in farther to a foot inside the</p>
+<p>base line. He will need to modify his stroke each time he</p>
+<p>moves in. As he becomes more and more proficient on the</p>
+<p>serve return, you will probably have to move up to a better</p>
+<p>server. Before long you will be enlisting the help of a player</p>
+<p>or players that have all the serves including an American twist,</p>
+<p>flat serve, slice, and spin.</p>
+<p>You can eventually work in teaching patterns where your</p>
+<p>student comes into net behind each serve return. When he</p>
+<p>does you hit him patterns from the base line as your server</p>
+<p>moves out of the way after hitting the serve. The purpose of</p>
+<p>this pattern series is to condition your student to taking the</p>
+<p>net without destroying the consistency of his serve return.</p>
+<p>Your next step is to work hard on your student&#x27;s serve return under playing conditions. Set up practice matches and</p>
+<p>with agreement from his opponent, take up a position by the net post. When your student is returning serve, watch how he</p>
+<p>performs the basics. After a point is over, discuss those areas he is not executing properly with particular emphasis on his</p>
+<p>moving fast, staying down on the ball through the hit, and</p>
+<p>getting his weight moving in behind the ball toward the net.</p>
+<p>Once your student is accomplishing the basics without hav-</p>
+<p>ing to think about them, he is ready to work on what he should</p>
+<p>do with his serve return other than just getting it back. The</p>
+<p>following observations should be discussed with him in detail.</p>
+<p>1. His serve return should be reliable, but he should always</p>
+<p>try to take the offensive any time he can. He should be</p>
+<p>ready to pounce on a weak serve and blast it, occasionally</p>
+<p>hitting a drop shot if the server hangs back at the base line.</p>
+<p>2. Your student should study his opponent’s serve and learn</p>
+<p>to anticipate the type and direction of the serve he is in the</p>
+<p>act of hitting. If it is a hard flat serve, your student should be</p>
+<p>prepared to block it. If it is an American twist, he should</p>
+<p>move in, catch it early, and chip it.</p>
+<p>3. He should learn to anticipate his opponent’s “favorite”</p>
+<p>serve that he uses when he knows he must have the point</p>
+<p>to avoid a service break.</p>
+<p>4. If his opponent is consistently rushing the net, he should</p>
+<p>move in on the serve, keeping his return low and usually</p>
+<p>hitting down the side line, but occasionally hitting a lob.</p>
+<p>5. He should observe his opponent’s handling of his serve re-</p>
+<p>turns. He should experiment and find out if a particular</p>
+<p>type of serve return gives the server trouble. If the server</p>
+<p>rushes net but only has an adequate overhead, he should</p>
+<p>lob, If his opponent has trouble changing direction, he</p>
+<p>should hit his serve returns deep in the corners. If his</p>
+<p>opponent has trouble handling different spins, he should</p>
+<p>vary his returns by mixing up backspin and drive returns. If</p>
+<p>his opponent does not like to come to net, soft well-angled</p>
+<p>returns can force him to do so.</p>
+<p>6. Above all, he should make the server work hard and fight for every point. If your student learns this early and makes it an integral part of his serve return, he will find his op-</p>
+<p>ponent’s serve will become less and less effective during a</p>
+<p>match. This allows him to hit an increasingly effective serve</p>
+<p>return which puts tremendous additional préssure on his</p>
+<p>opponent.</p>
+<p>The lob is most often used as a defensive shot to dislodge an</p>
+<p>opponent from the net, or to buy time in order to recover</p>
+<p>from a bad court position. It is also used to safely keep the ball in play when an opponent&#x27;s shot has been hit excessively</p>
+<p>hard, or to break up the rhythm of a hard-charging net player. The defensive lob utilizes backspin for control and is a rela-</p>
+<p>tively easy shot to hit.</p>
+<p>Offensively the lob can be used when an opponent has</p>
+<p>worked his way into net and has hit a shot that is a little short.</p>
+<p>He is expecting a solidly hit drive and suddenly the ball is on</p>
+<p>its way over his head hitting deep in his court near the base</p>
+<p>line. The key element is surprise. Although the topspin lob is</p>
+<p>particularly effective in this situation and will result in an out-</p>
+<p>right winner, it is a difficult shot to hit consistently, and there-</p>
+</section>
+<section class="chapter" id="sec-14">
+<h2>fore is not considered a high percentage shot even by top</h2>
+<p>players. The backspin lob, however, can be used offensively</p>
+<p>as well as defensively. Like the topspin lob, the key element</p>
+<p>is surprise, and although it may not result in a clean winner,</p>
+<p>it puts the opponent in deep trouble from which he seldom re-</p>
+<p>covers.</p>
+<p>The basic forehand or backhand is modified only slightly to hit a backspin lob. The backswing, unless hit under excessive</p>
+<p>pressure, is the same as when hitting a drive. The racket face, however, is open. At the hit point the racket passes under the</p>
+<p>ball imparting backspin, which gives control to the shot. The</p>
+<p>face of the racket remains open during the follow-through</p>
+<p>which should be forward, upward, and shorter than the usual</p>
+<p>ground-stroke follow-through.</p>
+<p>The topspin lob does not utilize the natural spin on the ball</p>
+<p>coming off the playing surface as does the backspin lob. In fact it must be hit with sufficient topspin to overcome the play-</p>
+<p>ing surface spin and with enough left over to control the ball so</p>
+<p>that it drops into the court and bounds away toward the</p>
+<p>opponent’s backstop. The spin factor is what makes the top-</p>
+<p>spin lob difficult. For this reason it should not be taught to a</p>
+<p>student until he is well into the intermediate stage and has</p>
+<p>developed a consistent and accurate backspin lob. To hit a</p>
+<p>topspin lob, the racket must start its forward swing from a</p>
+<p>point below the impact height of the ball. The racket face</p>
+<p>is slightly closed. The racket continues on a sharp, upward</p>
+<p>climb ending in a follow-through that is considerably higher</p>
+<p>than the normal ground stroke. Because of the sharp pull</p>
+<p>up that is needed to impart the right amount of spin, the</p>
+<p>topspin lob is exclusively a forehand shot.</p>
+<p>In the beginning you will want to stick with easy alternating</p>
+<p>patterns until your student is hitting lobs with good con-</p>
+<p>sistency off of both sides. Don’t ignore the basics just because</p>
+<p>he is hitting a lob. Watch his preparation and most particularly</p>
+<p>the footwork. Make sure he does not begin to step backward</p>
+<p>as he executes the shot. Once he is hitting the lob well off</p>
+<p>easy patterns, begin to move him around. You can start mix-</p>
+<p>ing in short pattern shots with deeper ones. The final step is</p>
+<p>to have him vary his returns hitting both drives and lobs.</p>
+<p>Mix in some deep pattern shots with some pace on the ball</p>
+<p>and see how he handles the lob under pressure.</p>
+<p>When your student has progressed to the point you want</p>
+<p>him to learn the topspin lob, you can continue to use alternat-</p>
+<p>ing patterns, but he should only hit a topspin lob on his</p>
+<p>forehand side and the pattern shot should be one that he is</p>
+<p>not forced on and therefore could comfortably hit as a drive</p>
+<p>if he wished.</p>
+<p>The drop shot is an aggressive attack shot that will result in</p>
+<p>an outright winner. Unlike any other shot it remains on the</p>
+<p>mind of the opponent like salt in the wound. It can irritate</p>
+<p>him, break up his rhythm and concentration. Like the offensive</p>
+<p>lob, the key is surprise.</p>
+<p>The drop shot is hit with backspin very much like the back-</p>
+<p>spin lob except that it is a much softer shot and the follow-</p>
+<p>through is not carried upward. It is important to maintain</p>
+<p>a good follow-through, gentle though it may be. The drop shot</p>
+<p>should be made with a comfortable margin of safety over the</p>
+<p>net and should never land in the opponent’s court much farther</p>
+<p>than 7 feet from the net. It must not be hit from any deeper</p>
+<p>than inside the service line, and only then when the opponent</p>
+<p>is behind his base line. The more your student’s drop shot</p>
+<p>stroke looks like his regular ground stroke, the more effective</p>
+<p>it will be.</p>
+<p>Move your student into mid-court and hit him easy alternating patterns. In the beginning you can hit these from the service line area, but eventually you will want to move back</p>
+<p>to the base line. Once he has the feel of the drop shot it is important for him to mix his pattern returns so no matter what pattern sequence you use, he is hitting drives and drop shots</p>
+<p>alternately on both the backhand and forehand. Only in this</p>
+<p>way can he build a drop shot that looks like a drive remaining</p>
+<p>disguised until it is too late for the opponent to recover.</p>
+<p>Whether it is hit on the way to net or from a base line</p>
+<p>position, the half-volley is a combination of partly a ground</p>
+<p>stroke, partly a volley and always a shot the player should have preferred to hit as one or the other. In other words, the half-volley is never hit through choice, but rather through</p>
+<p>being caught in a less than desirable situation. The objective</p>
+<p>of the half-volley is to get out of that situation by floating the ball accurately and deep enough so the opponent is not fed a</p>
+<p>setup.</p>
+<p>The basic ground stroke is greatly modified on the mid-</p>
+<p>court half-volley, Preparation time is very short. The ball must</p>
+<p>be lifted over the net because it is hit close to the playing</p>
+<p>surface from a court position somewhere near the service line.</p>
+<p>To further increase the degree of difficulty, the ball has not had</p>
+<p>a chance to lose speed or spin and is usually a heavy shot to</p>
+<p>handle.</p>
+<p>Hither of two grips can be used on the forehand half-volley,</p>
+<p>the Continental or the Eastern forehand grip. The Continental</p>
+<p>grip is the same as used on the volley and the serve and there-</p>
+<p>fore has two advantages. First, most half-volleys occur as a</p>
+<p>player follows his serve to net and when trapped into a fore-</p>
+<p>hand half-volley, he does not have to change grips. Second,</p>
+<p>after hitting either a forehand or backhand half-volley with</p>
+<p>the Continental grip, he is ready for a full volley without</p>
+<p>changing grips. Elimination of these two grip changes may</p>
+<p>seem minor, but it reduces errors by saving valuable split</p>
+<p>seconds when preparation time is particularly critical.</p>
+<p>When a player moving into net is trapped into hitting a half-volley, his footwork is greatly determined by his relative</p>
+<p>position to the ball. If it is wrong, there just is not enough</p>
+<p>time to take an additional step. In fact, if thére is enough</p>
+<p>time to take an extra step, he should move in and hit a full volley.</p>
+<p>Regardless of awkward footwork and lack of time, the shoul-</p>
+<p>der pivot must always be accomplished. However, the shoul-</p>
+<p>ders do not turn as far as on the ground strokes and the</p>
+<p>racket should not be brought back past the player’s side. In</p>
+<p>other words, the footwork, pivot, and backswing are condensed</p>
+<p>to the bare minimums.</p>
+<p>On the forehand half-volley the wrist is laid back during</p>
+<p>the short backswing and is kept firmly in that position through</p>
+<p>the entire stroke including the follow-through. On the back-</p>
+<p>hand side the wrist position is the same as on the backhand</p>
+<p>and also remains firm through the entire stroke.</p>
+<p>As stroke preparation is completed, the player should be</p>
+<p>way down to the level of the ball and should stay down through</p>
+<p>the hit. This is particularly important on the half-volley as it is</p>
+<p>the only way the racket can be kept parallel with the playing</p>
+<p>surface, which in turn is key to hitting the half-volley con-</p>
+<p>sistently. It is not uncommon to see a player&#x27;s knee only a few</p>
+<p>inches from the playing surface.</p>
+<p>Whenever possible the ball should be contacted well in</p>
+<p>front and body weight should move into the shot as the racket</p>
+<p>travels forward in a smooth positive short stroke. It is very</p>
+<p>important to impress upon your student the half-volley is never</p>
+<p>hit hard and its mission is simply to get him out of an un-</p>
+<p>desirable court position which he moves from the instant the</p>
+<p>shot is completed.</p>
+<p>The angle of the racket face varies greatly depending on where the half-volley is being made from and what kind of</p>
+<p>speed and spin the ball is carrying just prior to racket contact.</p>
+<p>If it is a hard topspin shot in the service line area, the racket</p>
+<p>face will have to be closed to keep the half-volley return in</p>
+<p>court. If it is a soft shot hitting closer to the net the racket face will have to be open. With practice your student will</p>
+<p>instinctively begin to adjust to the proper racket-face angle.</p>
+<p>Move your student to a position just behind the service line</p>
+<p>and begin with easy alternating patterns that hit just in front</p>
+<p>of him. Keep the shots in close to him so he does not have to</p>
+<p>go wide toward the side lines. As he gets the feel of the halfvolley and is performing the basics consistently you should</p>
+<p>begin to vary the speed and spin on the ball. You can hit these</p>
+<p>patterns to your student from the base line, but if you have</p>
+<p>difficulty in placing them, move into your service line area.</p>
+<p>The next step in learning the half-volley is to move your</p>
+<p>student back to the base line and start each pattern from this new position. The first ball of the pattern will be an easy shot</p>
+<p>he will play as a full ground stroke, but he will follow it to net.</p>
+<p>As he starts in, hit your next shot a little sooner than usual thus</p>
+<p>trapping him into hitting a half-volley. After he hits the halfvolley he should move right into net taking the last two shots</p>
+<p>of the pattern as full volleys. He then returns to the base line</p>
+<p>and the process is repeated. This series of patterns is particu-</p>
+<p>larly effective as your student learns to hit the half-volley in</p>
+<p>exactly the same circumstances as actual play. If he is having</p>
+<p>trouble with the half-volley or the full volleys that follow, re-</p>
+<p>peat the same pattern over again until he gets it nailed down.</p>
+<p>When your student is handling these patterns well, it is</p>
+<p>time to have him take a bucket of balls and head for his</p>
+<p>normal serving position. You take a bucket of balls and take</p>
+<p>up a position on your base line as if you were going to return</p>
+<p>serve. Have him serve and come into net. You hit the first</p>
+<p>shot of the pattern series soon enough to force him into hitting</p>
+<p>a half-volley. He should immediately follow it into net hitting</p>
+<p>the last two shots of the pattern series from that position. Vary the pace of your shots and even throw in an occasional</p>
+<p>lob. You will probably uncover a particular half-volley pattern</p>
+<p>that gives him trouble. Pattern Play Teaching will bring him</p>
+<p>through this quickly if you hit the exact same pattern over and</p>
+<p>over. Once he has mastered the “trouble” pattern, move on to</p>
+<p>new combinations.</p>
+<p>on THE BASE LINE HALF-VOLLEY “</p>
+<p>When your student’s game has progressed to the advanced intermediate stage, you can work with him on mastering the</p>
+<p>base line half-volley. Although seldom used, it is a shot top</p>
+<p>players can hit any time they need to. The stroke is effective</p>
+<p>when a player is caught out of position by a particularly</p>
+<p>deep shot. Instead of backing up and hitting it on a normal</p>
+<p>bounce from deep behind the base line, the player steps in</p>
+<p>catching the ball on the rise close to the playing surface. In</p>
+<p>this way he maintains a good court position and greatly short-</p>
+<p>ens the time his opponent has to get ready for his return.</p>
+<p>The base line half-volley is hit with the same stroke as the</p>
+<p>mid-court half-volley with two minor differences. First, in-</p>
+<p>stead of the volley grip the standard ground-stroke grips are</p>
+<p>used, and second, the follow-through should be slightly longer</p>
+<p>to assure the necessary depth. As with the mid-court half-</p>
+<p>volley, the follow-through should remain parallel with the</p>
+<p>court surface and the player should stay way down on the</p>
+<p>ball through the hit.</p>
+<p>When hitting patterns, have your student crowd the base line and place your pattern shots just inside of it, thus forcing</p>
+<p>him to play the ball on the rise. You can hit these to him from</p>
+<p>net. As with the mid-court half-volley, you should vary speed,</p>
+<p>spin, and trajectory once your student is handling easy alter-</p>
+<p>nating patterns.</p>
+<p>As observers see the improvement in your student’s game, they</p>
+<p>will ask you many questions. One you will hear repeatedly is</p>
+<p>“What kind of racket should I buy?”</p>
+<p>The reason is the choice has become difficult due to the introduction of many new products ranging from twisted nylon</p>
+<p>strings that play almost as well as gut, to a wide variety of</p>
+<p>rackets of wood, various metals and metal fiberglass laminates. To further complicate the problem, at most sport shops, the</p>
+<p>knowledge of the salesman is limited to selling rackets not playing with them. He will try to sell the most expensive</p>
+<p>racket he can, because that is his job. Tennis shops usually</p>
+<p>have better informed sales people who must know their prod-</p>
+<p>ucts in order to do well as a specialty store. A brief conversa-</p>
+<p>tion will quickly determine just how much they do know. In</p>
+<p>any case it’s up to the buyer to know what he wants and how</p>
+<p>much he should spend.</p>
+<p>It can be fun taking practice swings in the store with</p>
+<p>various shiny new models, each promising great winning shots,</p>
+<p>but the moment of truth comes after the racket has been</p>
+<p>chosen, strung, and paid for. Even the more experienced play-</p>
+<p>ers are often disappointed with their choice after hitting with</p>
+<p>it. The answer is not how much the buyer has played, but rather, has he learned what to look for when buying a racket?</p>
+<p>As the price of a good racket is getting up there, it’s worth</p>
+<p>learning.</p>
+<p>The basic difference between a wood racket and metal rests</p>
+<p>on the simple fact you give something to get something, At the</p>
+<p>wood end of the spectrum is accuracy and “feel”. At the metal</p>
+<p>end, is speed. In between these extremes are some metal</p>
+<p>rackets that play more like wood rackets and other metal</p>
+<p>rackets that are whippy and therefore fall at the speed end</p>
+<p>of the spectrum. A second difference is wood will age thus</p>
+<p>losing some of its liveliness, while a metal racket does not age</p>
+<p>at all.</p>
+<p>The job of picking the right racket is a decision which should</p>
+<p>be based on the player&#x27;s age, proficiency, type of surface usually played, and so on. The choice should not be based on the</p>
+<p>fact a particular championship player does or does not play with wood, laminate, or all metal racket. As a matter of fact,</p>
+<p>championship players have their favorites and it is interesting</p>
+<p>to note that these span the entire spectrum from all metal to all</p>
+<p>wood. Therefore, the choice of a racket should be based on a</p>
+<p>personal evaluation of the individual who will be using it. To help simplify this evaluation, here are some general guidelines</p>
+<p>that can be applied.</p>
+<p>If a thirty-year-older is starting to learn the game, nine out</p>
+<p>of ten times the decision should be metal.</p>
+<p>1. Physically the metal racket is easier to move. 2. It greatly reduces the shock of the ball hitting the racket even on mis-hits, and helps reduce shoulder problems and</p>
+<p>tennis elbow.</p>
+<p>3. Part of the fun of playing tennis is zinging one in for a winner and the more whippy metal racket imparts extra speed</p>
+<p>even if a shot is not perfectly timed. 4. For players who are in this group the drawbacks to a metal</p>
+<p>racket are greatly outnumbered by the advantages, partic-</p>
+<p>ularly for women who benefit the most from racket maneuverability and the additional speed imparted to the ball.</p>
+<p>If a youngster, girl or boy, is starting the game, a goodquality wood racket right off the shelf and already strung is</p>
+<p>an excellent first purchase. Name-brand rackets are sold this way, are adequate to start learning with, and are considerably</p>
+<p>less expensive. Even though off the shelf, it is still a good idea</p>
+<p>to choose the right handle size and proper weight. Selections</p>
+<p>in the sports departments of major chain stores are usually</p>
+<p>large enough to do this.</p>
+<p>If the beginner starts to show real interest and determina-</p>
+<p>tion, his game will improve, and when this progress becomes</p>
+<p>obvious it is time to move up to a more expensive racket.</p>
+<p>There are several good reasons for staying with a wood</p>
+<p>racket.</p>
+<p>1. His game will change as he grows up, and just like clothes he&#x27;ll outgrow his racket in grip and weight. Wooden rackets,</p>
+<p>even good ones, are less expensive than metal.</p>
+<p>2. While imparting more speed, metal rackets also produce</p>
+<p>more errors, and yet one of the biggest battles for the young-</p>
+<p>ster is becoming consistent. The wood racket helps.</p>
+<p>3. If a youngster has a particularly strong desire to become</p>
+<p>good, he may also have a temper problem. Again, the</p>
+<p>wooden racket is considerably cheaper to replace. The same</p>
+<p>is true for rackets that become lost.</p>
+<p>4. Developing sound strokes in a youngster means weeding out</p>
+<p>stroke problems before they become firm habits. Whippy</p>
+<p>metal rackets hide errors in stroke production and make the</p>
+<p>weeding out process considerably more difficult.</p>
+<p>If a player falls in between the thirty-year-old group and</p>
+</section>
+<section class="chapter" id="sec-15">
+<h2>the youngster group, the choice of a racket shauld be based</h2>
+<p>on the following considerations.</p>
+<p>1. If he has been playing with a wood racket for several</p>
+<p>years and is more or less content with his game, the chances</p>
+<p>are he will improve his game by going to a metal laminate</p>
+<p>or all metal racket. If he does, he must be willing to stay with this new racket through a learning period. He will find it initially creates errors, but these will diminish and the “winners will increase as he becomes accustomed to it.</p>
+<p>2. Whether a player is just starting out or has been playing for</p>
+<p>years, if he wants to work hard and improve his game, it is</p>
+<p>important for him to know if a ball was or was not well hit. A whippy racket makes this more difficult. Even if he does</p>
+<p>sense he is doing something wrong it can disguise what the</p>
+<p>real problem actually is, making it just that much tougher</p>
+<p>to correct. Therefore a wood racket or metal that plays close</p>
+<p>to a wood racket is a logical choice.</p>
+<p>3. And finally, if a player is just starting out or plays occa-</p>
+<p>sionally and simply wants to enjoy the game on a casual</p>
+<p>basis, a metal or a laminate is the probable choice.</p>
+<p>After choosing the type of racket best suited to his game, the</p>
+<p>buyer must next decide on the weight of the racket.</p>
+<p>Judging what weight is best is once again a personal evalu-</p>
+<p>ation. Like knowing what size suit or dress to buy, racket weight depends on the size and strength of the individual. In</p>
+<p>addition, the more often an individual plays, the better physical condition he will be in, and this means a heavier racket</p>
+<p>can be used. One woman world champion used rackets from</p>
+<p>the light category up to a fairly hefty medium-weight racket</p>
+<p>depending on how much she was playing.</p>
+<p>To someone just starting, racket weight will have little effect on his ability to hit the ball. As his proficiency increases he</p>
+<p>will begin to become aware of the difference between one</p>
+<p>racket and another and will eventually know how these dif-</p>
+<p>ferences affect his game. In deciding on the best weight there</p>
+<p>are some general guidelines that can be helpful.</p>
+<p>Rackets are labeled by manufacturers as “light,” “medium,”</p>
+<p>and “heavy,” but unfortunately they do not have set weights</p>
+<p>for these categories. What is labeled as heavy by one manufacturer can be labeled as medium weight by another. In ad-</p>
+<p>dition these are unstrung weights. By arbitrarily assigning</p>
+<p>specific strung racket weights to these three categories they be-</p>
+<p>come more useful as buying guides:</p>
+<p>Medium 12¥2 to 13¥2 ounces Heavy 13% to 14/2 ounces</p>
+<p>Rackets for youngsters will fall in the light category with</p>
+</section>
+<section class="chapter" id="sec-16">
+<h2>some overlapping into the medium category by 4 ounce if</h2>
+<p>the youngster is big for his age.</p>
+<p>Girls will find the best weight rackets at the lower end of</p>
+<p>the medium category, up to 13 ounces.</p>
+<p>Rackets for boys and women will also fall in the medium-</p>
+<p>weight category but will be at the heavier end of the scale,</p>
+<p>up to 13/2 ounces, and for a particularly strong individual, up</p>
+<p>to 13% ounces.</p>
+<p>Because of their wide range of strength and size, men will</p>
+<p>find rackets in the medium category all the way through the</p>
+</section>
+<section class="chapter" id="sec-17">
+<h2>heavy category. Many of the top players who~are small in</h2>
+<p>stature play with fairly light medium-weight rackets. As a</p>
+<p>final guideline it should be added that a racket of 14/2 ounces</p>
+<p>is heavy even for a man of considerable size and strength.</p>
+<p>Although the well-equipped tennis shop usually has a sen-</p>
+<p>sitive scale to weigh rackets, some do not. A good-quality</p>
+<p>home postal scale should be taken along just in case. The</p>
+<p>scale may bring a few curious glances, but it is the answer to</p>
+<p>getting the correct weight of a racket.</p>
+<p>If the racket is off the shelf and already strung it can be</p>
+<p>weighed as is. If it is unstrung, a special weight device con-</p>
+<p>sisting of a small weight attached to a wide rubber band</p>
+<p>should be slipped over the head of the racket. This temporarily</p>
+<p>substitutes the additional #4 ounce the strings will add to the</p>
+<p>frame once the racket is strung. In addition to helping deter-</p>
+<p>mine the exact weight of a racket, this same device must be</p>
+<p>used when determining balance. It is very unlikely a tennis</p>
+<p>shop does not have this weight device, but if not, then a rubber</p>
+<p>band with a %4 ounce weight of some kind attached to it</p>
+<p>makes a suitable substitute.</p>
+<p>After deciding on racket type and weight, the next de-</p>
+<p>cision is balance. Balance is especially important as it is a more</p>
+<p>sensitive and critical factor than minor weight variances. In</p>
+<p>other words, two rackets with exactly the same weights but</p>
+<p>different balance points will play very differently. In contrast</p>
+<p>two rackets with distinct weight differences but identical bal-</p>
+<p>ance points will play very much the same.</p>
+<p>By far the large majority of good tennis players use evenly balanced rackets. The next most popular balance is light in</p>
+<p>the head. A heavy-headed racket is least desirable as it is difficult to maneuver for its weight and also tends to carry the head of the racket too fast through the hit and too far after</p>
+<p>the hit.</p>
+<p>Determining the balance point of a racket is simple. First slip the %4 ounce weight device over the head of the racket,</p>
+<p>making sure it is positioned in the center of the open space of</p>
+<p>the racket. If this is not properly done, it will give an incorrect</p>
+<p>balance point. Next, the racket should be balanced on some</p>
+<p>object that has a fairly sharp or rounded edge. A pen Scotch</p>
+<p>taped to the bottom of an inverted ash tray works well. After</p>
+<p>the racket has been balanced, a grease pencil or Scotch tape</p>
+<p>can be used to mark the balance point. If a pen or pencil is</p>
+<p>used, it can end up marring the racket. The final step in de-</p>
+<p>termining balance is to measure the distance of the balance</p>
+<p>point from the exact middle of the racket. Most rackets are 27</p>
+<p>inches long and, therefore, an evenly balanced racket will have</p>
+<p>a balance point 132 inches from both ends. Although some of</p>
+<p>the new metal rackets are shorter, the procedure remains the</p>
+<p>same.</p>
+<p>A racket that is light in the head has a balance point closer</p>
+<p>to the handle. To keep from getting mixed up, the racket</p>
+<p>should be viewed as having three parts: the head, shaft, and</p>
+<p>handle. If the head is light, then to even things up, more of the</p>
+<p>shaft is needed on the head side of the balance point. This</p>
+<p>moves the balance point away from the mid-point, toward the</p>
+<p>handle.</p>
+<p>Few rackets will have their balance point exactly in the</p>
+<p>middle, but the balance point should not be more than % inch</p>
+<p>either side of the mid-point if the buyer is looking for an</p>
+<p>evenly balanced racket. Obviously, the closer the better. Some</p>
+<p>tennis shops are equipped to balance a racket exactly as the</p>
+<p>buyer wishes.</p>
+<p>The final step in choosing a racket is deciding on the right</p>
+<p>size handle. Too small or large a grip makes it difficult to keep</p>
+<p>the racket from twisting even on slightly off-center hits.</p>
+<p>It is estimated that as high as 80 per cent: of all tennis players choose too small a grip, and so if in doubt, the buyer would do better to decide on the next larger size. To make the</p>
+<p>choice easier there are two guidelines that can be followed.</p>
+<p>First, take the racket with the Eastern forehand grip, remembering the fingers should be spread. While holding the</p>
+<p>racket with this grip, turn your wrist over so you can look at</p>
+<p>your fingernails. If the grip is the correct size, there will be</p>
+<p>an open space between the fingertips and the base or fleshy part of the thumb. This space should be wide enough to in-</p>
+<p>sert the forefinger of your left hand parallel to the base of</p>
+<p>the thumb. One side of this forefinger should touch the base</p>
+<p>of the thumb and the other side should just touch the finger-</p>
+<p>tips, thus camfortably filling the space.</p>
+<p>The second guideline is to take a racket, grip it firmly but</p>
+<p>not in a death grip, and have someone twist the head of the</p>
+<p>racket. After trying this with several rackets with different han-</p>
+<p>dle sizes it will become apparent one size makes it a great</p>
+<p>deal easier to resist the twisting action.</p>
+<p>If during the process of selecting rackets having the correct weight and balance, those remaining do not have the exact</p>
+<p>grip size, it is possible to build up or shave down the handle.</p>
+<p>If this is kept to a minimum, weight and balance will be only slightly affected. Most tennis shops are capable of doing this</p>
+<p>although their selections are usually large enough so this is</p>
+<p>not necessary.</p>
+<p>Once a frame has been selected, all that remains is getting it strung, In this final step, there are two considerations. String</p>
+<p>tension and the kind of strings to be used.</p>
+<p>String tension has a dramatic effect on how a racket plays,</p>
+<p>much more so than the type of strings used. The reason is the</p>
+<p>tautness of the strings have the same effect on the ball as the</p>
+<p>tension on a trampoline has on a person bouncing around on</p>
+<p>its surface. If the tension on a trampoline were increased</p>
+<p>enough, its surface would become very rigid, virtually eliminating any bounce or spring of the trampoline. The same</p>
+<p>thing is true of a racket. Therefore, the effect of a whippy steel racket can be reduced by very tight string tension or increased by less tension.</p>
+<p>In deciding on string tension, the type of racket being played with is a factor. An equally important factor is the surface</p>
+<p>being played on. A slow surface, such as clay, slows the ball</p>
+<p>down during the bounce to the point where a great deal more</p>
+<p>power is needed during the hit to build the speed of the ball</p>
+<p>back. String tension from 53 to 58 pounds creates speed through</p>
+<p>the trampoline effect. Playing with too tight a racket on a slow</p>
+<p>surface causes the player to overhit in an attempt to get speed</p>
+<p>on his shots.</p>
+<p>On a fast surface, like cement, the ball loses very little</p>
+<p>speed during its contact with the court and, therefore, string</p>
+<p>tension of 58 to 63 pounds produces plenty of pace. String</p>
+<p>tension that is too loose will add some trampoline effect to an</p>
+<p>already fast ball, thus creating errors.</p>
+<p>Some tennis shops do not like to use high string tension</p>
+<p>when stringing a metal racket as the frame cuts the strings</p>
+<p>and an unhappy customer is soon back on their doorstep. Still,</p>
+<p>the buyer is the one using the racket and if a little higher</p>
+<p>tension than recommended gives him the control he wants, he</p>
+<p>just ends up getting a patch job or a complete restringing</p>
+<p>more often.</p>
+<p>Nylon and gut are the two materials used in making strings. Gut is preferred by all the top players as it effectively grips</p>
+<p>the ball during impact, thus producing better control. Many</p>
+<p>players feel it also has more spring or life than nylon. However,</p>
+<p>it is more expensive and is easily damaged by “moisture. Al-</p>
+<p>though it is sold by gauge and weight, it takes a very experienced player to tell the difference between 15 gauge</p>
+<p>and 15 gauge/light. The simplest yardstick is cost. If the buyer</p>
+<p>wants the best there is, he says so and pays three or four</p>
+<p>dollars more to find out if it does make a difference in his</p>
+<p>game.</p>
+<p>Nylon has come a long way since first being introduced and</p>
+<p>now plays almost as well as gut. Until a player reaches the</p>
+<p>category of an average club player, he will not be able to tell</p>
+<p>the difference between the two. Nylon is cheaper, moisture</p>
+<p>does not bother it, and it will not dry out and snap the way</p>
+<p>gut will. It comes in a wide variety of colors, including an</p>
+<p>imitation gut, that takes close scrutiny to tell it isn’t. For the</p>
+<p>player who plays occasionally, is an average club player or</p>
+<p>below, or wants a spare racket for damp playing conditions,</p>
+<p>nylon is a durable, economical choice.</p>
+<p>-— jul Sauew ed Bais MARR aaa oe</p>
+<p>1. Arm starts down.</p>
+<p>(OE ESA DEES OE AS ea 2. Arm descends to just below</p>
+<p>starts up.</p>
+<p>still slightly bent. eee ae 4. Arm is fully extended and</p>
+<p>ball leaves fingertips.</p>
+<p>its highest position. OO 5. Left arm remains fully</p>
+<p>Liberty”’ fashion. LLL 6. Left arm remains extended</p>
+<p>for balance.</p>
+<p>down out of the way.</p>
+<p>8. Left arm has moved completely</p>
+<p>left knee.</p>
+<p>bent.</p>
+<p>of both feet.</p>
+<p>and gives you the steps to follow to make it that way.</p>
+<p>As each pattern is learned, opponents will find it tough to win a point on that pattern type. Mastering all the patterns—and there are not that many—is what makes for a champion player.</p>
+<p>Whether youre a non-player or professional coach, this simple but powerful teaching breakthrough will help you to reason out a player&#x27;s</p>
+<p>stroke problem (or your own) quickly and accurately—even during the heat of a match.</p>
+<p>Here, a man who has spent years studying the strengths and weak-</p>
+<p>nesses of world champion tennis players formulates a unique and to-</p>
+<p>tally innovative and exciting approach to America’s most popular sport.</p>
+<p>JACKET ILLUSTRATION BY GEORGE JANES</p>
+<p>JACKET TYPOGRAPHY BY AMY BISSO</p>
+<p>Spencer Brent is a veteran of national championship tournaments in Europe and the United States. He took lessons on teaching tennis from Les Stoefen, one of the all-time great professional teachers, and</p>
+<p>over the years he experimented and improved on all he had learned</p>
+<p>about teaching tennis and from this was born the concept of Pattern Play Tennis.</p>
+<p>Using Pattern Play Tennis, he taught Tory Fretz (who later achieved a national ranking as fourth in the United States) and coached Linda Tuero (who won the National Clay Court Singles</p>
+<p>Championship and was ranked seventh in the United States). One of the author&#x27;s most recent students, after one year of intensive Pattern Play Tennis, entered the Los Angeles City Championship,</p>
+<p>and upset a nationally ranked player in straight sets to win the</p>
+<p>tournament.</p>
+<p>Mr. Brent now lives in Scarsdale, New York, with his wife and children.</p>
+</section><footer class="end"><div class="sig">Tennis Books Library</div><div>English text extracted from the book's own PDF.</div></footer>
+</div>
+</div>
+</body>
+</html>

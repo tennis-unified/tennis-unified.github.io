@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Instant Tennis Lessons</title>
+<meta name="description" content="Tennis library">
+<meta name="author" content="Pham Duc Hai">
+<style>
+.tcq-book{
+  --tcq-paper:#faf9f5; --tcq-ink:#1a1c20; --tcq-ink-soft:#4a4e54;
+  --tcq-ink-faint:#8a8d93; --tcq-indigo:#1d5c63; --tcq-indigo-soft:#2f7d84;
+  --tcq-gold:#a8863c; --tcq-rule:#e2e1da; --tcq-panel:#ffffff;
+  background:var(--tcq-paper); color:var(--tcq-ink);
+  font-family:"Palatino Linotype","Book Antiqua",Cambria,"Times New Roman","Noto Serif",serif;
+  font-size:19px;line-height:1.78;-webkit-font-smoothing:antialiased;}
+.tcq-book .wrap{max-width:760px;margin:0 auto;padding:64px 28px 120px;}
+.tcq-book header.cover{text-align:center;padding:8px 0;}
+.tcq-book .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+.tcq-book header.cover .cover-art{width:100%;max-width:430px;margin:0 auto 30px;border-radius:10px;
+  box-shadow:0 14px 40px rgba(16,40,44,.28);display:block;}
+.tcq-book header.cover .kicker{letter-spacing:.28em;font-size:12px;text-transform:uppercase;
+  color:var(--tcq-indigo);font-weight:600;}
+.tcq-book header.cover h1{font-size:38px;line-height:1.16;margin:.4em 0 .12em;font-weight:600;
+  color:var(--tcq-ink);text-align:center;letter-spacing:0;}
+.tcq-book header.cover .sub{color:var(--tcq-ink-soft);font-size:20px;font-style:italic;}
+.tcq-book header.cover .blurb{color:var(--tcq-gold);font-size:16px;margin-top:.7em;
+  letter-spacing:.04em;}
+.tcq-book header.cover .by{margin-top:1.2em;color:var(--tcq-ink-faint);font-size:14px;
+  letter-spacing:.06em;}
+.tcq-book hr.lead{border:none;border-top:1px solid var(--tcq-rule);margin:36px 0;}
+.tcq-book .part-band{margin:88px 0 8px;padding:26px 0 22px;text-align:center;
+  border-top:1px solid var(--tcq-rule);border-bottom:1px solid var(--tcq-rule);}
+.tcq-book .part-band .part-kicker{letter-spacing:.3em;font-size:12px;text-transform:uppercase;
+  color:var(--tcq-gold);font-weight:600;}
+.tcq-book .part-band .part-name{font-size:23px;color:var(--tcq-indigo);margin-top:.5em;
+  font-style:italic;}
+.tcq-book .chapter{margin-top:56px;}
+.tcq-book h2.ch-title{font-size:29px;line-height:1.25;margin:0 0 .1em;font-weight:600;
+  color:var(--tcq-ink);letter-spacing:0;font-style:normal;
+  border-bottom:2px solid var(--tcq-indigo);padding-bottom:.25em;}
+.tcq-book h3{font-size:21px;margin:40px 0 12px;font-weight:600;color:var(--tcq-indigo);
+  font-style:normal;letter-spacing:0;}
+.tcq-book h4{font-size:18px;margin:30px 0 8px;font-weight:600;color:var(--tcq-gold);
+  font-style:normal;letter-spacing:.02em;}
+.tcq-book p{margin:0 0 1.15em;text-align:justify;hyphens:auto;color:var(--tcq-ink);}
+.tcq-book p.lead-p{font-size:21px;color:var(--tcq-ink-soft);}
+.tcq-book strong{color:var(--tcq-ink);}
+.tcq-book em{color:var(--tcq-ink-soft);}
+.tcq-book .toc{margin:44px auto 0;max-width:560px;background:var(--tcq-panel);
+  border:1px solid var(--tcq-rule);border-radius:8px;padding:26px 32px;}
+.tcq-book .toc-title{font-size:15px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--tcq-indigo);margin:0 0 .9em;font-weight:600;font-style:normal;}
+.tcq-book .toc-part{font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--tcq-gold);font-weight:600;margin:1.3em 0 .4em;}
+.tcq-book .toc-part:first-of-type{margin-top:.4em;}
+.tcq-book .toc ol{margin:0;padding-left:0;list-style:none;}
+.tcq-book .toc li{margin:.42em 0;font-size:16px;}
+.tcq-book .toc a{color:var(--tcq-ink);text-decoration:none;border-bottom:1px solid transparent;}
+.tcq-book .toc a:hover{border-bottom-color:var(--tcq-indigo);}
+.tcq-book dl.glossary{margin:0 0 1.2em;padding:0;}
+.tcq-book dl.glossary dt{font-weight:600;color:var(--tcq-indigo);margin:1.15em 0 .15em;
+  font-size:18px;}
+.tcq-book dl.glossary dd{margin:0 0 .3em;padding-left:1.4em;color:var(--tcq-ink-soft);
+  font-size:18px;line-height:1.7;text-align:justify;}
+.tcq-book footer.end{margin-top:90px;border-top:1px solid var(--tcq-rule);padding-top:26px;
+  color:var(--tcq-ink-faint);font-size:14px;text-align:center;line-height:1.9;}
+.tcq-book footer.end .sig{color:var(--tcq-indigo);font-size:15px;letter-spacing:.08em;}
+body.dark-mode .tcq-book{
+  --tcq-paper:#0f1416; --tcq-ink:#e6e7e3; --tcq-ink-soft:#b0b3af;
+  --tcq-ink-faint:#878b90; --tcq-indigo:#7fbfc4; --tcq-indigo-soft:#5fa3a9;
+  --tcq-gold:#c9a961; --tcq-rule:#283135; --tcq-panel:#161d20;}
+body.dark-mode .tcq-book p,
+body.dark-mode .tcq-book li,
+body.dark-mode .tcq-book dd,
+body.dark-mode .tcq-book div{color:var(--tcq-ink);}
+body.dark-mode .tcq-book p.lead-p,
+body.dark-mode .tcq-book em,
+body.dark-mode .tcq-book dl.glossary dd{color:var(--tcq-ink-soft);}
+body.dark-mode .tcq-book header.cover .by,
+body.dark-mode .tcq-book footer.end{color:var(--tcq-ink-faint);}
+body.dark-mode .tcq-book h2.ch-title,
+body.dark-mode .tcq-book header.cover h1{color:var(--tcq-ink) !important;}
+body.dark-mode .tcq-book h3,
+body.dark-mode .tcq-book dl.glossary dt,
+body.dark-mode .tcq-book header.cover .kicker,
+body.dark-mode .tcq-book .toc-title,
+body.dark-mode .tcq-book footer.end .sig,
+body.dark-mode .tcq-book .part-band .part-name{color:var(--tcq-indigo) !important;}
+body.dark-mode .tcq-book h4,
+body.dark-mode .tcq-book header.cover .blurb,
+body.dark-mode .tcq-book .toc-part,
+body.dark-mode .tcq-book .part-band .part-kicker{color:var(--tcq-gold) !important;}
+body.dark-mode .tcq-book .toc a{color:var(--tcq-ink);}
+body.dark-mode .tcq-book strong{color:var(--tcq-ink) !important;}
+@media (max-width:760px){
+  .tcq-book .wrap{padding:40px 20px 80px;}
+  .tcq-book header.cover h1{font-size:28px;}
+  .tcq-book header.cover .cover-art{max-width:320px;}
+  .tcq-book dl.glossary dd{padding-left:.8em;}
+  .tcq-book .part-band .part-name{font-size:19px;}
+}
+@media print{
+  .tcq-book .toc{break-after:page;}
+  .tcq-book .chapter{break-before:page;}
+  .tcq-book .part-band{break-before:page;break-after:avoid;}
+  .tcq-book dl.glossary dt{break-after:avoid;}
+}
+
+/* breadcrumb — sits above .tcq-book, so it carries its own palette.
+   Colours/scale mirror the reference TFL books (#2–#8): .9rem, muted
+   #5b6572 separator, the book's own accent for the root link. */
+.tu-breadcrumb{background:#faf9f5;padding:16px 0 4px;font-size:.9rem;color:#6b6f76;
+  font-family:"Palatino Linotype","Book Antiqua",Cambria,"Times New Roman","Noto Serif",serif;}
+.tu-breadcrumb__list{list-style:none;display:flex;flex-wrap:wrap;gap:2px 8px;
+  max-width:760px;margin:0 auto;padding:0 28px;align-items:center;}
+.tu-breadcrumb__item{margin:0;}
+.tu-breadcrumb__link{color:#1d5c63;text-decoration:none;}
+.tu-breadcrumb__link:hover{text-decoration:underline;}
+.tu-breadcrumb__sep{color:#5b6572;margin:0 2px;user-select:none;}
+.tu-breadcrumb__current{color:#1a1c20;font-weight:500;}
+</style>
+</head>
+<body>
+
+
+<nav class="tu-breadcrumb" aria-label="Breadcrumb">
+  <ol class="tu-breadcrumb__list">
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/books/">Tennis Books Library</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item tu-breadcrumb__current" aria-current="page">Instant Tennis Lessons</li>
+  </ol>
+</nav>
+<div class="tcq-book">
+<div class="wrap">
+<header class="cover"><div class="kicker">Tennis Library</div><h1>Instant Tennis Lessons</h1><div class="by"></div><p style="text-align:center;margin:18px 0 0;font-family:var(--tcq-sans,sans-serif);font-size:14px;letter-spacing:.02em;"><a href="https://github.com/tenniskb/tenniskb.github.io/releases/download/books-pdf-v1/instant-tennis-lessons.pdf" target="_blank" rel="noopener" style="color:#1d5c63;font-weight:600;text-decoration:none;border:1px solid #cfd8d4;border-radius:6px;padding:7px 14px;display:inline-block;">Read the original PDF &#8599;</a></p></header><div class="toc"><div class="toc-title">Contents</div><ol>
+<li><a href="#sec-1">Section 1</a></li>
+<li><a href="#sec-2">FOREHAND.</a></li>
+<li><a href="#sec-3">OVERHEAD.</a></li>
+<li><a href="#sec-4">IN THE READY POSITION, IMAGINE THERE’S A BALL UNDER YOUR HEELS</a></li>
+<li><a href="#sec-5">—John A. Kraft Jr.</a></li>
+<li><a href="#sec-6">KEEP YOUR HEAD DOWN TO KEEP YOUR SHOTS</a></li>
+<li><a href="#sec-7">WEIGHT!</a></li>
+<li><a href="#sec-8">—John A. Kraft Jr.</a></li>
+<li><a href="#sec-9">POINT THE WAY TO POWER ON YOUR BACKHAND</a></li>
+<li><a href="#sec-10">FOR THE BIRDS?</a></li>
+<li><a href="#sec-11">TOSS FOR A FULL BACK= SCRATCHING</a></li>
+<li><a href="#sec-12">—Richard W. Fernan Jr.</a></li>
+<li><a href="#sec-13">YOUR GRIP AS YOU HIT FOR A SOLID VOLLEY</a></li>
+<li><a href="#sec-14">squeeze an orange — at ball contact. The firmer grip will keep your racquet</a></li>
+<li><a href="#sec-15">&gt; Most players like to volley from a posi-</a></li>
+<li><a href="#sec-16">SAY EYE!</a></li>
+<li><a href="#sec-17">REACH UP TO MEET THE BALL ON YOUR</a></li>
+</ol></div><section class="chapter" id="sec-1">
+<h2>Section 1</h2>
+<p>Would you like the opportunity to pick the minds of the best tennis teachers in the game for their key instruction pointers? Of course you would. What tennis player wouldn&#x27;t?</p>
+<p>That&#x27;s what this book offers you. From the pages of TENNIS magazine, we’ve taken the finest of the tennis tips presented each month</p>
+<p>by a number of the nation’s leading instructors—the members of the United States Professional Tennis Association (USPTA). And</p>
+<p>we ve combined them into 84 instant lessons</p>
+<p>to give you a quick yet comprehensive pro-</p>
+<p>gram for improving your game—no matter what your level of play.</p>
+<p>This series of private lessons from USPTA teaching professionals closely approximates the conditions of a real lesson. And like the</p>
+<p>instructor giving a lesson, this book actually</p>
+<p>instructs you in what to do. It isolates the key elements that are involved in hitting a tennis</p>
+<p>ball successfully, blending text and drawings</p>
+<p>so that you will remember each one once you&#x27;ve put the book down and face your op-</p>
+<p>ponent across the net.</p>
+<p>Each of the instant lessons on the following pages has been reviewed and approved by the members of TENNIS magazine&#x27;s Instruction Advisory Board—Tony Trabert, Vic Sei-</p>
+<p>xas, Ron Holmberg, Roy Emerson, George</p>
+<p>Lott, Bill Price and Margaret Court—all of whom are distinguished coaches as well as former leading players. The material was</p>
+<p>the top sports artists in the business, Jim</p>
+<p>McQueen and Ed Vebell.</p>
+<p>There are two ways for you to use this book most profitably. The first is to read through it and absorb its lessons stroke by stroke. The</p>
+<p>second is to keep it handy for those times when your game seems to need some</p>
+<p>remedial work; if you develop a problem with a particular stroke, you will almost certainly</p>
+<p>be able to pinpoint the reason by consulting these pages.</p>
+<p>Instant Tennis Lessons won&#x27;t make you a better player instantly, but we do hope that</p>
+<p>its quick and graphic pointers will help you enjoy the game more right away.</p>
+<p>INTRODUCTION . GRIP 2s.</p>
+<p>PADDY . .</p>
+</section>
+<section class="chapter" id="sec-2">
+<h2>FOREHAND.</h2>
+<p>DeaVvVeE. .</p>
+<p>WORWEY .</p>
+<p>BeBe.</p>
+</section>
+<section class="chapter" id="sec-3">
+<h2>OVERHEAD.</h2>
+<p>Many players have difficulty mastering one of tennis’ basic fundamentals: the</p>
+<p>proper pressure to apply on the grip. They are apt to squeeze the racquet</p>
+<p>handle too hard, which tightens up the shoulder and forearm muscles and</p>
+<p>hampers the stroke.</p>
+<p>lf you experience this problem, one way to learn to relax is to imagine that the racquet in your hand is a live bird.</p>
+<p>You want to hold it firmly enough so that it won&#x27;t escape but not so hard that you&#x27;ll crush it. With this amount of</p>
+<p>pressure, the racquet isn’t held so</p>
+<p>loosely that it slips out of the hand. Yet your shoulder and forearm are relaxed</p>
+<p>and your body weight can be applied to a flowing, forward swing.</p>
+<p>Having trouble in making consistent shots? Try a firmer grip. You can</p>
+<p>strengthen your fingers, hand and wrist</p>
+<p>by squeezing an old tennis ball several times a day, while you are watching television, riding the train or bus to work, or anytime you have a spare mo-</p>
+<p>ment. A firm grip should help you achieve consistent shots and, at the same time, avoid a sore elbow. But, don’t squeeze the racquet so tightly that the sap runs out of the bottom of</p>
+<p>the handle! —William M. Summers</p>
+<p>As you wait for the ball, cradle the throat of your racquet with your free</p>
+<p>hand. That will helo you maintain a proper ready position with the racquet out in front of you and its head chest</p>
+<p>high. Keep your thumb on top of the</p>
+<p>racquet and your first two fingers underneath. The racquet face should</p>
+<p>be perpendicular to the ground and the head aimed at your opponent. Your free hand will not only take some of the weight of the racquet off your play-</p>
+<p>ing hand, it will also help with rapid grip changes. —Ben Foster</p>
+</section>
+<section class="chapter" id="sec-4">
+<h2>IN THE READY POSITION, IMAGINE THERE’S A BALL UNDER YOUR HEELS</h2>
+<p>The next time you position yourself at</p>
+<p>the net, stay on the balls of your feet</p>
+<p>by imagining that there’s a tennis ball under each of your heels. Keep return-</p>
+<p>ing to this ready position after each volley, never allowing your heels to touch the ground. The imaginary tennis</p>
+<p>balls will give you the bounce that you should have as you move quickly at the</p>
+<p>net. Of course, you should never put an actual ball under your feet; that</p>
+<p>could cause you to trip. But do stay on the balls of your feet as though imagi-</p>
+<p>nary tennis balls were under your heels.</p>
+<p>When you are waiting for an opponent to make his shot, keep your weight forward by standing on the balls of your feet. That will enable you to move</p>
+<p>quickly in any direction without the</p>
+<p>added delay of getting your weight up and forward as you prepare to pursue the oncoming ball. If you always wait with your weight on the balls of your feet, you&#x27;ll get to all balls sooner.</p>
+</section>
+<section class="chapter" id="sec-5">
+<h2>—John A. Kraft Jr.</h2>
+<p>Driving an automobile with only one hand on the wheel is tiring and dangerous. Using only one hand to guide your racquet when preparing for a</p>
+<p>ground stroke is similarly tiring and in-</p>
+<p>evitably leads to poor positioning of the body. Keep two hands on the</p>
+<p>“wheel” when you’re in the ready position and, as the ball approaches, use your free hand to guide the racquet back. That will trigger an auto-</p>
+<p>matic turning of your shoulders and help give you the proper weight transfer. —Donna B. Jaquith</p>
+<p>nigga ttctionw tev eenanecatnndtonctee:</p>
+<p>As soon as you see the ball leaving your opponent&#x27;s racquet, start running</p>
+<p>to the general area where the ball is</p>
+<p>headed. Don’t wait until the ball clears the net. You can be the master of your fate only if you and your racquet arrive</p>
+<p>How many times have you gone after a relatively easy return, reached the ball and then flubbed the shot? There are few things more frustrating on the</p>
+<p>court. Why does it happen?</p>
+<p>Often, the problem is that you neglected to get your racquet back soon enough. Don&#x27;t wait until you get to the ball to start your backswing. Run</p>
+<p>with your racquet back and you&#x27;ll be</p>
+<p>ready for the stroke the moment you arrive in position. The time to start the backswing is when the ball leaves</p>
+<p>your opponent&#x27;s racquet and you&#x27;ve</p>
+<p>decided to take the shot on your back-</p>
+<p>hand or forehand. Then, be ready to start swinging your racquet forward at</p>
+<p>about the time the ball bounces.</p>
+<p>Remember, it’s the early backswing that gets the good return.</p>
+<p>lf your ground strokes lack power, you may be hitting the ball without first turning your shoulders sideways to the</p>
+<p>net. As the ball approaches, you should rotate your body while you take your racquet back so that your shoulders are at a right angle to the net. Then, as you hit through the ball, open your shoulders by turning them parallel to the net. By doing that, you&#x27;ll automati-</p>
+<p>cally transfer your weight forward and</p>
+<p>put more power into your shot. So</p>
+<p>rotate those shoulders and put more zip into your ground strokes.</p>
+<p>Unlike a normal ground stroke, the service return doesn’t require a big</p>
+<p>backswing. Aim for about half a normal backswing and then bring the racquet forward to meet the ball out in front of you. The follow-through may also be a</p>
+<p>little shorter than with a normal ground stroke. A good service return demands</p>
+<p>lots of concentration and practice, but start with a shorter backswing and</p>
+<p>remember to follow through.</p>
+<p>lf you find yourself hitting the ball late and uncomfortably on your forehand</p>
+<p>drives, check the position of your front foot as you step to make the shot. You</p>
+<p>should be stepping out so that the foot</p>
+<p>is pointed at the one o&#x27;clock position. That will help make sure that you meet the ball early out in front of your body</p>
+<p>and will allow you to lean forward comfortably. If you’re stepping out at the</p>
+<p>three o&#x27;clock position, you&#x27;ll not only</p>
+<p>meet the ball late but your movements will feel cramped. Go for the one</p>
+<p>o’clock direction and you&#x27;ll have a free</p>
+<p>and easy forehand. —Dave Kozlowski</p>
+<p>Many weekend players back up on deep balls. As a result, they forget to take the racquet back early and they</p>
+<p>hit the shot with their weight going backward rather than forward into the stroke. When a ball is hit to you, get your racquet back first, turn sideways</p>
+<p>to get ready for the shot and then hit the ball with your weight moving forward. Don’t waste time backing up; get</p>
+<p>your racquet back early and move forward into the shot. —Rick Tavolacci</p>
+<p>some players, particularly beginners,</p>
+<p>rarely bend their knees when they hit a ground stroke. As a result, they develop high, looping shots that lack</p>
+<p>both power and direction. A good way to help correct this problem is to think</p>
+<p>of your knees as shock absorbers that take the impact of your forward weight transfer as you hit a backhand or a forehand. Step toward the ball and</p>
+<p>bend down so that your racquet head can hit directly through the ball. Allow your “shock absorbers” to push you</p>
+<p>up again only when you complete the</p>
+<p>hit and start the follow-through.</p>
+</section>
+<section class="chapter" id="sec-6">
+<h2>KEEP YOUR HEAD DOWN TO KEEP YOUR SHOTS</h2>
+<p>The key to hitting solid ground strokes</p>
+<p>is to transfer your weight properly from your back foot to the ball of your front foot as you swing forward. To do that</p>
+<p>effectively, you’ve got to keep your</p>
+<p>head down. If you pull your head up and back as you hit, your weight will stay on your rear foot and you&#x27;ll prob-</p>
+<p>ably lift the racquet abruptly—sending the ball skyward instead of straight</p>
+<p>over the net. Keep your head down and you&#x27;ll be surprised how much</p>
+<p>power goes into your shots as a result of the proper weight transfer.</p>
+<p>If you often find that you are off balance as you hit your ground strokes, the problem may be that you&#x27;re leaning forward too much on your front foot. You then have to bring your back foot</p>
+<p>around to maintain your balance. Try thinking of your back foot as an anchor which must stay in contact with the</p>
+<p>ground throughout your shot. That will</p>
+<p>prevent you from leaning too far into the shot. So anchor your back foot to the ground to keep your balance.</p>
+</section>
+<section class="chapter" id="sec-7">
+<h2>WEIGHT!</h2>
+<p>The most important single factor in</p>
+<p>hitting a tennis ball well is the distribution of your weight at the moment of</p>
+<p>impact. It should be on your front foot. That helps you in two ways: it gets</p>
+<p>more force into the ball and gives better control of the shot. On ground strokes, for instance, you should step</p>
+<p>into the ball with your weight well forward. If you don’t, your weight will be</p>
+<p>on your back foot and the ball will tend to rise and lose force. So play the ball,</p>
+<p>don’t let it play you. Get set quickly and swing through with your weight coming forward at the same time your</p>
+<p>racquet meets the ball—Hugh Curtler</p>
+<p>Although it’s usually best to hit the ball</p>
+<p>at the top of its bounce, there are some occasions when you will want to hit a</p>
+<p>rising ball. Go right ahead, but be sure to hit the ball with a racquet face that’s vertical to the ground. Don&#x27;t tilt the</p>
+<p>racquet back because you feel that’s necessary to help the ball clear the</p>
+<p>net. All that will do is push the ball up high in the air and perhaps send it out of bounds.</p>
+<p>Meet the ball as solidly as possible to neutralize any topspin that the ball</p>
+<p>may possess. Then hit through the ball with a vertical racquet face and a ris-</p>
+<p>ing follow-through, and your shot will move crisply across the net.</p>
+</section>
+<section class="chapter" id="sec-8">
+<h2>—John A. Kraft Jr.</h2>
+<p>Just as it is always easier to push</p>
+<p>rather than pull a heavy object, it’s easier to push a tennis ball through a stroke than it is to pull it. You can get your weight behind your racquet and</p>
+<p>push the ball if you use the proper Eastern forehand and backhand grips. That way, your wrist is always behind the racquet. And if you also remember to meet the ball out in front of your for-</p>
+<p>ward leg, you&#x27;ll be stroking with less</p>
+<p>effort and more accuracy.</p>
+<p>lf you&#x27;re having trouble meeting the ball squarely on forehand drives, imag-</p>
+<p>ine that you are trying to hit it with the palm of your hand—almost as though you are playing handball rather than tennis. The palm would have to be held</p>
+<p>perpendicular to the ground for you to hit the ball properly. And that’s the</p>
+<p>position your racquet should be in, too.</p>
+<p>If you have the feel of hitting through the ball with the flat of your hand, then you won&#x27;t hit with a closed face, which</p>
+<p>will put the ball in the net, or with an</p>
+<p>open face, which will send the ball out of court. —Don Allen</p>
+<p>When hitting ground strokes, do you find that your shots often sail up in the</p>
+<p>air? Chances are that you are ‘‘spoon-</p>
+<p>ing’ your strokes by allowing the racquet head to drop below the level of your wrist. The result is a scooping</p>
+<p>action which lifts the ball too far into the air. Remember to hit the ball with the racquet face at right angles to the</p>
+<p>ground. That way, you&#x27;ll be hitting</p>
+<p>along the line of flight of the ball and your shots will go smoothly over the top of the net. Keep your racquet head</p>
+<p>up and you won’t spoon your shots.</p>
+<p>To hit powerful and accurate ground</p>
+<p>strokes, you should keep the racquet</p>
+<p>on the ball as long as possible. One way to be sure you do that is to imag-</p>
+<p>ine that you are trying to contact each one of a line of 10 balls starting from a</p>
+<p>point opposite your front hip. Hit through the balls on a straight line and</p>
+<p>the result will be a powerful forehand</p>
+<p>or backhand which will send the ball</p>
+<p>deep into your opponent&#x27;s court.</p>
+<p>Effective ground strokes demand a long follow-through for accurate control of the ball on your racquet. To</p>
+<p>extend your follow-through, imagine that your racquet is traversing a path</p>
+<p>along the top of an ironing board as you send the ball toward the other</p>
+<p>court. Try to hit through the ball, keep-</p>
+<p>ing racquet contact until your stroke reaches the end of the imaginary board. For each forehand stroke, point the tip of your ironing board in the</p>
+<p>direction you want to hit the ball and</p>
+<p>make sure that your follow-through continues in that direction.</p>
+<p>When you are playing from the base-</p>
+<p>line, you need a long follow-through to make sure that your ground strokes</p>
+<p>land deep in your opponent&#x27;s court. Follow through so that you complete your swing with your racquet roughly</p>
+<p>at the level of your head. This high finish will help you lift the ball so that</p>
+<p>it will clear the net by three or four feet and, thus, land deep in the opposing</p>
+<p>court. It will also help you put a little topspin on the ball. So remember to</p>
+<p>swing your racquet head up to head</p>
+<p>level as you follow through on ground strokes. —Ben Foster</p>
+<p>BT eeT Pr een en ren ee en een eee ern Or rr a</p>
+<p>Gsdndanesanaee!</p>
+<p>Beaneeeasi, Lhd dd adedabebudedt Titi</p>
+<p>Sateaeesan!</p>
+<p>Don&#x27;t be afraid of hitting a ground stroke that makes the ball pass quite</p>
+<p>high over the net—perhaps as much as five feet. Hitting the ball higher will</p>
+<p>not only cut down on the chances of the ball going into the net, but will also</p>
+<p>send the ball deeper into the oppo-</p>
+<p>nent’s backcourt. For height, the forward swing must begin below the level</p>
+<p>where the ball is going to be hit. The follow-through should finish higher, usually above the player&#x27;s head. Don&#x27;t swing down on the ball or you&#x27;ll be forced to pull up on the follow-through.</p>
+<p>Start low and finish high.</p>
+<p>If you are just getting started in tennis, one of your first objects is to learn how to hit a forehand shot straight ahead. This target practice will help you. If you</p>
+<p>are right-handed, stand between positions B and C and hit against a back-</p>
+<p>board to target C. If you do it correctly, the ball will rebound to your forehand</p>
+<p>side. Don’t attempt to alternate fore-</p>
+<p>hands and backhands against the backboard until you have fully grooved both strokes. —The Editors</p>
+<p>When you prepare to hit a forehand or</p>
+<p>backhand drive, you should take your</p>
+<p>racquet back until it is almost completely hidden from your opponent. It should be pointing at the fence directly</p>
+<p>behind you so that the racquet, your</p>
+<p>body and your opponent are all in one</p>
+<p>line. If your opponent can see your</p>
+<p>racquet in front of your body when you have the racquet all the way back, your backswing is too short; if your oppo-</p>
+<p>nent can see your racquet behind your</p>
+<p>back, your backswing is too long.</p>
+<p>tou?</p>
+<p>To hit a strong backhand, you must</p>
+<p>rotate your upper body fully on the forward swing In order to put power into the shot and get your weight moving forward. To do that, imagine that you</p>
+<p>are pulling a sword out of its scabbard as you start your forward swing. Draw the racquet forward smoothly and turn</p>
+<p>your lead shoulder around. That way, your upper body will turn and your weight will start to move forward.</p>
+<p>lf your backhands are erratic, you may be hitting the ball too far away from your body. You can reduce that tend-</p>
+<p>ency by using a more compact backswing with your arm flexed and your</p>
+<p>elbow closer to your body. To check that your elbow is only two or three</p>
+<p>inches from your body, practice your backswing with a tennis ball tucked under your arm. If the ball falls out dur-</p>
+<p>ing the backswing you are straighten-</p>
+<p>ing your arm too much. With your elbow tucked and your arm flexed on your backswing, your forward swing will be closer to your body so that you&#x27;ll hit with more power and control.</p>
+<p>Many players have weak backhands because they flail at the ball with roundhouse strokes rather than swing-</p>
+<p>ing on a line toward the target. If that’s your problem, imagine that you are</p>
+<p>standing with your back to a wall and are hitting the ball along a line parallel to that wall. Swing without hitting your</p>
+<p>make-believe wall with your racquet hand. That will compel you to take the racquet back no further than necessary, will prevent you from opening your shoulders too soon and will make you bring the racquet forward on a</p>
+<p>smooth path using your upper body, shoulders and arm. The result will be solidly hit, accurate backhands.</p>
+</section>
+<section class="chapter" id="sec-9">
+<h2>POINT THE WAY TO POWER ON YOUR BACKHAND</h2>
+<p>On the backhand stroke, the body can impede a proper, full backswing which,</p>
+<p>in turn, puts a limit on how much power you can get into the stroke. You can</p>
+<p>lengthen your backswing and thereby</p>
+<p>increase your power simply by rotating your shoulders when taking your rac-</p>
+<p>quet back. Turn your body until the front shoulder points toward the contact point. You&#x27;ll ensure a longer back-</p>
+<p>swing and a more powerful backhand.</p>
+<p>Having problems timing your hits? Try watching the ball until you hear it hit the racquet strings. Many players think that they have watched the ball all the</p>
+<p>way to impact but, in fact, they often take their eyes off it 15 to 20 inches</p>
+<p>away from contact. The result is a</p>
+<p>poorly hit shot. So watch the ball until you hear it strike the strings and you&#x27;ll</p>
+<p>usually hit the ball solidly and accurately. —Doug Elgin</p>
+<p>Many beginning players swing too hard at the ball when hitting ground strokes. These wild swings often result in off-</p>
+<p>center hits with poor direction and a</p>
+<p>lack of power. Try slowing down your swing so that you hit cleanly through the ball. A smooth swing will help you hit the ball in the center of your racquet,</p>
+<p>produce a more powerful shot and help you avoid potential elbow strain. A</p>
+<p>slower, smoother swing will also be a</p>
+<p>more relaxed swing and, as a result, you&#x27;ll have a more consistent stroke.</p>
+<p>Do you tend to spray your backhands all over the court? The problem may</p>
+<p>have nothing to do with your racquet swing. Surprising as it may seem, the</p>
+<p>blame may lie with your non-racquet arm. If you wave that arm around too</p>
+<p>much, you can force your body to open</p>
+<p>(rotate toward the net) before it should. And that will probably cause you to pull the ball wide or short. The solution is to</p>
+<p>keep your other arm at your side as you swing. That will compel you to remain</p>
+<p>sideways to the net through most of the swing. The result should be better</p>
+<p>control and direction. You can even</p>
+<p>put your other hand in your pocket until you have the habit of keeping your</p>
+<p>other arm at your side.</p>
+<p>The arm motion for a backhand is</p>
+<p>almost exactly like that for a Frisbee toss. To throw a Frisbee, you should</p>
+<p>stand sideways to the target, draw your arm back close to your body,</p>
+<p>swing forward with your arm straight and release the Frisbee infront of your</p>
+<p>body. Your knees stay bent and your body rotates as the throw is made. If you are a proficient Frisbee thrower, you&#x27;ll also have a long follow-through</p>
+<p>to help you get the proper direction. Try the uncoiling action of the Frisbee throw on your backhand and you&#x27;ll find</p>
+<p>that it will help you keep your elbow</p>
+<p>close to your body (putting less strain on your arm) and will help put your</p>
+<p>racquet out in front where it belongs for a clean, well-timed stroke.</p>
+<p>If your backhand lacks power, the chances are that you are not putting your weight into the shot. One way to</p>
+<p>correct that problem is to imagine that you are involved in a tug-of-war and that your racquet handle is the rope which you&#x27;re pulling from behind you.</p>
+<p>As you pull, you&#x27;ll lean forward, push-</p>
+<p>ing your weight off your back foot and</p>
+<p>into the stroke. This action will also help you to keep your elbow in and Straight so that you hit through the ball</p>
+<p>rather than slap at it with a whippy motion. Put your weight into your back-</p>
+<p>hand as though you were pulling ina tug-of-war and you&#x27;ll put extra zip into your shots. —Rick Halpine</p>
+<p>If you have problems controlling the direction of your backhand shots, it</p>
+<p>may help if you imagine that you are throwing your racquet after the depart-</p>
+<p>ing ball. Once you&#x27;ve hit it, follow through in the direction you&#x27;d like the</p>
+<p>ball to go. Think of throwing your racquet along that line. But don&#x27;t actually</p>
+<p>let go, of course! The throwing action will point your arm and racquet to the</p>
+<p>spot you want the ball to go and you&#x27;ll see it follow the line right to that spot.</p>
+<p>Don&#x27;t freeze your motion after the throw, however. Let the racquet slow</p>
+<p>down naturally until you reach the end of your complete follow-through. Re-</p>
+<p>member to simulate a throwing action just after impact and you&#x27;ll soon have</p>
+<p>an accurate backhand.</p>
+</section>
+<section class="chapter" id="sec-10">
+<h2>FOR THE BIRDS?</h2>
+<p>lf your backhand seems jerky, check to see if you&#x27;re flapping your free hand. Should your hand fly up in the air as you make the stroke, it will cause you</p>
+<p>to pull up your entire body and the</p>
+<p>stroke will lose its fluidity. Try a few</p>
+<p>practice shots to see if your hand flaps aimlessly. If so, make a point of keep-</p>
+<p>ing your free hand low in a balanced position behind your body. That spare hand isn’t for flapping, it’s for helping your balance. Get rid of the flap and</p>
+<p>you&#x27;ll restore smoothness to your</p>
+<p>Just as a tightrope walker uses both arms to maintain balance, a tennis</p>
+<p>player should use the non-racquet arm as a counterbalance. For example, on a forehand drive, extend your free arm toward the ball as you take your rac-</p>
+<p>quet back. As you begin moving your</p>
+<p>racquet forward, the other arm should then swing around at the same speed</p>
+<p>in the same direction to help you keep your balance throughout the stroke.</p>
+<p>You can also use your non-racquet</p>
+<p>arm for balance when you&#x27;re at the net</p>
+<p>and when you&#x27;re moving to hit a shot.</p>
+<p>lf your backhand shots lack control, you may be putting too much weight</p>
+<p>on your heels as you follow through.</p>
+<p>Most players have a natural tendency to straighten their legs and throw their</p>
+<p>heads back as they complete a stroke.</p>
+<p>But that’s wrong. Your weight should be on the front foot as you hit the ball</p>
+<p>and follow through. The way to achieve that is to keep your head down and</p>
+<p>keep your knees bent. Keeping your head down will automatically put the weight where it’s needed—on the front</p>
+<p>Qari i ian * aa ‘ .</p>
+<p>Are you having trouble with your</p>
+<p>follow-through? The next time you are out practicing, stop your motion as you</p>
+<p>complete your stroke. You&#x27;ll probably find that you have only a partial follow-</p>
+<p>through, and that’s why you&#x27;re not</p>
+<p>getting the proper direction on your shots. When you freeze your backhand</p>
+<p>or forehand, the follow-through should</p>
+<p>be as far out in front as possible with the racquet head up in the air. If you</p>
+<p>are stopping too soon, you&#x27;ll have to</p>
+<p>extend the follow-through. Even when you play, you can still freeze momentarily to check on your follow-through</p>
+<p>Don’t just stand around admiring your shot after you&#x27;ve hit the ball—get mov-</p>
+<p>ing! AS soon as you complete your stroke, start running. It is a rare shot in tennis that shouldn&#x27;t be followed up by</p>
+<p>some fast footwork. Usually, you&#x27;ll need to run back into position in the center of the court if youre at the</p>
+<p>baseline or to cover an angled return</p>
+<p>if you are at the net. Or you may want to run up to the net to follow an ap-</p>
+<p>proach shot or move back to cover an expected attacking shot. Whatever the situation, don’t just stand there. Move!</p>
+<p>If you do not already bounce the ball once or twice before you serve, you should start doing it. The bounce helps you build concentration for the serve</p>
+<p>by changing the focus from the last</p>
+<p>point played—a horizontal action—to the service toss and swing—a vertical</p>
+<p>motion. Bounce the ball approximately at the point where it would land if it were tossed correctly and fell without</p>
+<p>being hit. That will force you to get your weight onto your front foot for a</p>
+<p>proper start of the smooth shifts of body weight that will give you a powerful service. —Mary P. Johnson</p>
+<p>lf your service lacks consistency and power, you may be standing with your feet too close together. If your feet are</p>
+<p>not apart, you&#x27;ll have a tendency to dip at the knees, which will result in a jerky and inconsistent motion. You&#x27;ll also be</p>
+<p>unable to put your weight into the serve for maximum power. The cure is to stand with your feet spread slightly wider than your shoulders—or about a</p>
+<p>racquet’s length apart. With your feet spread, your serve will be more fluid</p>
+<p>since you&#x27;ll be able to rock back to</p>
+<p>Start the motion and then transfer your weight forward to put power into the</p>
+<p>Having trouble placing your serves? Check the position of your feet as you</p>
+<p>prepare to serve. An imaginary line crossing the tips of the toes of both your shoes should point along the</p>
+<p>intended line of flight of the ball. Keep your feet about shoulder width apart</p>
+<p>and check their position each time you serve. Make sure that the line across the toes is pointing to your target in the</p>
+<p>No part of the service is more difficult to master than the toss. But you can</p>
+<p>develop the necessary consistency in your toss if you follow this routine. Before starting your toss, hold the ball</p>
+<p>and your racquet in front of you and then look right over them into the ser-</p>
+<p>vice court; your head, your arms and the target should now be all in line.</p>
+<p>When you lift your arm for the toss,</p>
+<p>Keep it in this line. The correct toss for a flat or spin serve should place the</p>
+<p>ball approximately six inches to a foot</p>
+<p>in front of your hitting arm. If the toss does not line up in front of your hitting arm, catch it and try again.</p>
+<p>Many players have difficulty with their serves because they do not contact the</p>
+<p>ball at the same place each time. This variation in hitting is largely due to the</p>
+<p>irregularity of the toss. Toss the ball to the same position and height each time and you&#x27;ll find that you will get a</p>
+<p>more consistent serve. The secret of an accurate ball toss is to release the</p>
+<p>ball at the very top of your reach. Hold the ball with your fingertips and, when your arm is fully extended, release the</p>
+<p>ball by gently opening your fingers. If you wait to let go of the ball at the top of your reach, you&#x27;ll develop con-</p>
+<p>sistency in your toss. And that will give you a more consistently accurate serve. —Chuck Morrison</p>
+<p>AOR IS SES OEE Pe Ce) a ee re Se Re</p>
+<p>At almost any level of tennis, the rea-</p>
+<p>son for a poor serve can often be traced to a faulty tossing technique. If</p>
+<p>the ball goes to different spots each time, it is impossible to develop a con-</p>
+<p>sistent serve.</p>
+<p>Practice, of course, is required to correct the problem. And it is usually</p>
+<p>best, especially for beginners, to get away from the court for that practice so that concentration focuses only on the</p>
+<p>toss itself and not on where the ball is</p>
+<p>being hit.</p>
+<p>| suggest standing sideways about an arm’s length away from a wall.</p>
+<p>Practice tossing the ball up parallel to the wall to a height level with the very top of the racquet when it is held up</p>
+<p>with the arm fully outstretched. Keep at</p>
+<p>it until the ball is thrown to the same place every time. It will all pay off back on the court. —John Brownlow</p>
+<p>lf you have a weak serve that frequently goes into the net, the root of the trou-</p>
+<p>ble is probably a cramped service</p>
+<p>motion. The odds are you&#x27;re not lifting the ball high enough in the air before you hit it. The way to overcome the</p>
+<p>problem is to keep your ball hand ris-</p>
+<p>ing after you&#x27;ve released the ball. As you watch the ball ascend, you should</p>
+<p>also see your ball hand reaching for the sky just before you tuck it down</p>
+<p>next to your body to get it out of the way of the racquet. Reaching for the</p>
+<p>sky will help you place the ball higher and, thus, correct that cramped service</p>
+</section>
+<section class="chapter" id="sec-11">
+<h2>TOSS FOR A FULL BACK= SCRATCHING</h2>
+<p>lf you are not getting the racquet head down behind your back in the backscratching position as you should when you serve, the thing to do is re-</p>
+<p>lease the ball a little later. By delaying your toss, you&#x27;ll give your serving arm time to get the racquet back properly</p>
+<p>and then you&#x27;ll be able to bring the</p>
+<p>racquet up sharply for a powerful serve. | recommend that you delay your ball toss until your racquet has</p>
+<p>gone behind your head. You can then</p>
+<p>release the ball, complete the backscratching swing and, finally, bring the</p>
+<p>racquet up sharply to hit the serve.</p>
+<p>If your serve seems to lack power and you have trouble timing the hit, you may</p>
+<p>not be taking your racquet back far enough. Drop the racquet head down</p>
+<p>behind your back before you swing forward to hit the ball. If you get your</p>
+<p>racquet in what&#x27;s known as the backscratching position, you&#x27;ll be able to</p>
+<p>accelerate the head for a powerful hit. And back-scratching will stop you from</p>
+<p>bringing your shoulder around too early, which causes a loss of control.</p>
+<p>To put any real power in your service,</p>
+<p>you must transfer your weight forward</p>
+<p>as you make contact with the ball. A</p>
+<p>reliable way to do that is to remember to keep your front foot anchored to the</p>
+<p>court as you serve. That way, your front foot can receive the weight of</p>
+<p>your body as it is transferred forward</p>
+<p>during the serve. With your front foot anchored, you can lift your back foot</p>
+<p>and swing it forward as your weight</p>
+<p>moves. That will also help get you</p>
+<p>moving if you plan to charge the net.</p>
+<p>Keep your front foot anchored, though, until after you&#x27;ve hit the ball.</p>
+<p>To get maximum power from your serve</p>
+<p>without injuring your shoulder or arm,</p>
+<p>remember to take your racquet well back and drop the head until the butt end of the handle is pointing to the sky. When it’s in that position, your racquet</p>
+<p>will be in the proper back-scratching</p>
+<p>position and your wrist will be cocked for the start of the forward swing. That way, you&#x27;ll be able to get a big swing</p>
+<p>and a healthy wrist snap as you hit the</p>
+<p>ball. So pointing your racquet handle to the sky will help you put extra power</p>
+<p>lf your serve lacks real oomph, the reason may be that you&#x27;re not putting your weight into it properly. To do that,</p>
+<p>push off from your back foot as you bring the racquet up on the serve so that at contact you are leaning into</p>
+<p>the court. As the ball is hit, you should</p>
+<p>be almost falling into the court with your body stretched out in a straight</p>
+<p>line from your ankles to the tip of your racquet. Don’t bend at the waist because that won&#x27;t put any body weight</p>
+<p>into the shot. Lean forward with your body fully extended as you hit the ball.</p>
+<p>Whenever your serve becomes erratic,</p>
+<p>check to be sure that you are lifting the ball to the proper contact point. To</p>
+<p>find out where that is, simply swing</p>
+<p>your racquet up to the place where you</p>
+<p>normally hit the ball. You should be reaching up with your body stretched and your arm fully extended. Look at the middle of your racquet strings. That’s where the ball should be when</p>
+<p>you hit it. Keep a mental picture of that</p>
+<p>contact point and release the ball so that it reaches that height.</p>
+<p>If you have mastered the art of throw-</p>
+<p>ing the ball to the proper height for the serve, try and hit the ball at the peak of</p>
+<p>its flight. At its peak, the ball will stop momentarily before it begins to drop. You&#x27;ll find that it&#x27;s much easier to hit the ball in the center of your racquet</p>
+<p>when the ball is not moving. Don&#x27;t hit a</p>
+<p>moving ball unless you have no choice.</p>
+<p>Just before you hit the ball on your serve, you should snap your wrist forward as a pitcher would when throw-</p>
+<p>ing a baseball. The wrist snap will give your serve extra zip and help put spin</p>
+<p>on the ball. As you snap your wrist, you can rotate your palm slightly to</p>
+<p>help you aim the ball. It will go in the direction that the palm is pointing. For</p>
+<p>maximum power, continue the snap through the contact with the ball and</p>
+<p>into the follow-through. If you have trouble getting the feel of the wrist</p>
+<p>Snap, try throwing a ball a few times</p>
+<p>before you serve. —Raymond Yost</p>
+<p>Do many of your serves thud harmlessly against the net? If they do, the reason probably is that you&#x27;re dropping your head as you meet the ball. It means that you can’t watch the ball, that your body bends prematurely at the waist, that your wrist snaps too</p>
+<p>soon and that you&#x27;re hitting off bal-</p>
+<p>ance. So be sure to keep your head up and your eyes on the ball when you serve. You&#x27;ll get more accuracy and</p>
+<p>power because you&#x27;ll be hitting the ball with a straight arm and a fully extended body. —Gregg Kail</p>
+<p>If you are having trouble getting your serve over the net, here’s something to try in practice that should help. Throw your racquet over, instead. It’s</p>
+<p>best to use an old one if you can, and to avoid doing it when there are other</p>
+<p>people on the court. You&#x27;ll probably find that the racquet will hit the ground</p>
+<p>in front of the net on your first try, indicating that you are either pulling your</p>
+<p>head or the racquet down—or both. Throw the racquet up and out, and you&#x27;ll soon find that it will sail over the net. Now, use the same motion with your normal serve and you&#x27;ll have</p>
+<p>an easy motion that will send the ball</p>
+<p>consistently deep. —Sean Sloane</p>
+<p>You&#x27;ll have a potent serve only if you</p>
+<p>use a full swing with a complete followthrough that carries the racquet sweep-</p>
+<p>ing out toward your opponent&#x27;s court and down past your body on the side</p>
+<p>opposite your hitting arm. The racquet should end behind you. Try to com-</p>
+<p>plete the service swing with your racquet pointing at the fence behind you. This full swing will put the force of the</p>
+<p>whole arm and upper body into the</p>
+<p>serve. It also brings the wrist into play to put pace, spin and kick on the ball.</p>
+<p>How many times have you found yourself bored by an opponent who seems to hit all of his first serves into the net?</p>
+<p>Of course, when his serve finally does go in, you may be caught off guard</p>
+<p>and muff the return.</p>
+<p>Why not compete against the netted serve? Imagine that you are actually going to play the return. Get your racquet back as quickly as you can after the ball leaves the server&#x27;s racquet</p>
+<p>and get into position to hit the ball as</p>
+<p>if it were going to come through the net. This practice on netted serves will speed up your reaction time and quicken your reflexes to keep you alert when the serve does come in.</p>
+<p>When you&#x27;re returning serve, hop</p>
+<p>lightly the moment the ball leaves the server&#x27;s racquet to start your body turn for either a forehand or a backhand.</p>
+<p>By hopping in the air, you&#x27;ll force your body to move, your racquet will start</p>
+<p>its backswing and you&#x27;ll be on your toes when you land. The result will be</p>
+<p>an early start on the return and your</p>
+<p>body will be poised to make the stroke.</p>
+<p>But don’t jump high in the air; a slight hop is all you need to get moving for your safe return. —Edward Fuller</p>
+<p>ee.</p>
+<p>Fast volleying at the net calls for short, punchy strokes with little or no backswing. Take too long a backswing and you&#x27;ll miss the shot completely. To</p>
+<p>shorten your backswing, imagine that you are standing with your back to a wall whenever you are inside the service line. The imaginary wall will stop</p>
+<p>you from taking your racquet farther</p>
+<p>back than your shoulder, thus forcing you to adopt a punching motion for</p>
+<p>your volleys. Swing back only as far as the wall and punch out in front of you</p>
+<p>for deeper and more accurate volleys.</p>
+<p>When you are playing doubles, you</p>
+<p>should aim most of your shots at the center of your target—that is, down the middle of the court (except on return</p>
+<p>of serve). By directing the ball at the</p>
+<p>center, you give your opponents less chance to pass you with an angled shot and you&#x27;ll also net fewer balls since the net is lower in the center. On top of that, a down-the-center shot can sometimes confuse the opposition as</p>
+<p>both partners try to hit the same ball. Aim for the center and the percentages</p>
+<p>will be on your side. —Henry Majkut</p>
+<p>lf you are having trouble getting to those wide volleys, check your footwork. Chances are that you’re stepping</p>
+<p>out with your right foot (if you&#x27;re a</p>
+<p>right-hander) for those wide forehand volleys. That wrong step limits your</p>
+<p>reach quite severely. Next time, cross over with your left foot and you&#x27;ll find that you can not only reach farther but</p>
+<p>you can easily bend down for those tricky low volleys. Practice that pivot</p>
+<p>and left-foot step and it will soon become standard procedure for your net</p>
+<p>play. Swift footwork at the net comes with the one-step crossover.</p>
+<p>When you&#x27;re in the forecourt, the hard-</p>
+<p>est balls to volley are those that descend below the top of the net. Many</p>
+<p>players make the mistake of dropping the racquet head and scooping the ball</p>
+<p>back over the net; that only presents the opponent with a rising ball that can</p>
+<p>be put away easily. So it’s vital on low volleys to keep the racquet head</p>
+<p>above the level of the wrist and just</p>
+<p>below the flight of the ball on the forward swing. You&#x27;ve got to bend sharply</p>
+<p>at the knees to do that. But with the</p>
+<p>racquet head high, you&#x27;ll find that you can swing through the ball and send</p>
+<p>it skimming low over the net. Instead of a nice, fat setup to pounce on, your</p>
+<p>Opponent will have a tough shot to contend with. —Jean Prevost</p>
+<p>To hit an effective volley at the net,</p>
+<p>play the ball in front of your body, not to the side. Hold your racquet firmly</p>
+<p>in front of you and, as the ball approaches, step forward toward the net so as to bring your racquet into the line</p>
+<p>of the ball’s flight. That way you&#x27;ll cut off the volley as close to the net as</p>
+<p>possible, which usually gives you a</p>
+<p>higher ball to play and always gives you better angles down into your op-</p>
+<p>The high backhand volley is a difficult</p>
+<p>shot because you have to chop, or slice, the ball to bring it down inside your opponent&#x27;s court. To help you</p>
+<p>develop the proper slicing action, try</p>
+<p>hitting the ball with an action similar to a karate chop. The motion of your</p>
+<p>hand should be the same as it would be on a karate chop. Bring the bottom edge forward and down with a rapid slicing action as your racquet head</p>
+<p>approaches the ball. Done correctly, this karate chop volley will produce a</p>
+<p>crisp shot with a solid punch to it and</p>
+<p>enough spin for the control you need.</p>
+<p>The key to hitting a good, crisp low volley is to get down to the ball. How-</p>
+<p>ever, if you simply bend forward at the waist, the chances are that you&#x27;ll bend</p>
+<p>your racquet face forward, too, causing the ball to go into the net. So on low volleys, you must bend your legs — enough so that your rear knee is almost touching the ground. That way, your</p>
+<p>upper body will be more upright and, as aresult, you&#x27;ll be able to hit the ball</p>
+<p>up and over the net. And, of course, your eyes will be closer to the line of</p>
+<p>flight of the ball which means you can</p>
+<p>watch it more easily.</p>
+</section>
+<section class="chapter" id="sec-12">
+<h2>—Richard W. Fernan Jr.</h2>
+<p>jis.</p>
+<p>Low volleys and half volleys are difficult shots at best, but you&#x27;ll make them</p>
+<p>even more difficult if you bend only at the waist and drop the head of your</p>
+<p>racquet to meet the ball. You&#x27;ll have much more success with these shots if you bend your knees as well as your</p>
+<p>back. In some cases, in fact, your knees should be bent so far that your back knee is nearly on the court. In this</p>
+<p>position, you&#x27;ll be crouched something</p>
+<p>like a sprinter in his starting blocks.</p>
+<p>But this stance will permit you to get under the volley while Keeping the racquet head up. —Ben Foster</p>
+<p>Have you ever watched a cat reach out to paw at a passing insect? Your volley motion should duplicate the cat’s quick, short movement from the</p>
+<p>shoulder. The racquet will move only a short distance but it must be accel-</p>
+<p>erating quite rapidly at contact to give control and depth to your volleys. So the next time you are crouched at the</p>
+<p>net preparing to volley, imagine that you are a cat and the ball is a passing</p>
+<p>butterfly. Reach out and paw the ball as it comes over the net.</p>
+</section>
+<section class="chapter" id="sec-13">
+<h2>YOUR GRIP AS YOU HIT FOR A SOLID VOLLEY</h2>
+<p>lf your volleys are erratic, you may have a floppy grip that allows the racquet to wobble in your hand as you hit the ball.</p>
+<p>Try giving your racquet handle a quick, firm squeeze as if you were trying to</p>
+</section>
+<section class="chapter" id="sec-14">
+<h2>squeeze an orange — at ball contact. The firmer grip will keep your racquet</h2>
+<p>steady in your hand and, as a result,</p>
+<p>produce more accurate and effective volleys. But don’t grip the racquet tightly throughout the stroke because</p>
+<p>your hand and arm muscles will be-</p>
+<p>come fatigued. Just squeeze firmly as you hit the ball. —Charles Tyrrell</p>
+<p>Remember how you used to play hopscotch as a child? You&#x27;d run, pause and then jump to either side. Do the same things as you head toward the</p>
+<p>net following your serve. Pause momentarily as your opponent returns your serve, decide where the return is</p>
+<p>going and then move diagonally to that side, just as you would if you were</p>
+<p>playing hopscotch. Imagine that the</p>
+<p>hopscotch layout is on the court just in front of the service box and you&#x27;ll be</p>
+<p>close to the best position for your first volley. —Peter Allen</p>
+<p>BAR ECISE RHO? Bese!</p>
+<p>gucsenaeeer — .;!</p>
+<p>Once you&#x27;ve got yourself placed prop-</p>
+<p>erly for volleying, don&#x27;t waste the opportunity. You&#x27;re in an attacking position — so attack with your heavy artillery.</p>
+<p>The first volley should land within three to four feet of your opponent&#x27;s</p>
+<p>baseline and, if possible, in the open court. Now, press your advantage by</p>
+<p>moving further toward the net several steps in the direction of your volley.</p>
+<p>lf your first volley does not penetrate, does not make your opponent</p>
+<p>move for the ball and does not keep</p>
+<p>him off balance, he&#x27;ll take your volley and perhaps do terrible things to your confidence — like pull off a devastat-</p>
+<p>ing passing shot. So make the first volley work for you. —Chuck Morrison</p>
+<p>How many times have you seen a</p>
+<p>player who Is faced with an easy volley slam the ball into the net or out of the</p>
+<p>court? You can help prepare yourself for easy touch shots by practicing the</p>
+<p>volley at the net with a partner. Try to</p>
+<p>keep the ball off the ground and in play as long as possible until someone</p>
+<p>misses. Then you can take turns feed-</p>
+<p>ing balls from the baseline so the person at the net can practice placements to different parts of the court. These two drills should help sharpen up your volleys quickly. —Henry Majkut</p>
+<p>LUBOCOEGCER. CLERC CELE OEMS. ELLE RELIED Le i sO, | Fe ee ee ces th OH i Or uk ies | ESE TES</p>
+<p>wotnowe ne.</p>
+</section>
+<section class="chapter" id="sec-15">
+<h2>&gt; Most players like to volley from a posi-</h2>
+<p>tion about five to eight feet from the</p>
+<p>net. At that distance, few balls can drop to your shoelaces. The odds are, though, that you&#x27;ll have to hit your first volley before that while you&#x27;re still on</p>
+<p>your way up to the net. Usually, you&#x27;ll</p>
+<p>be right around the service line. So during your next practice session, why</p>
+<p>not practice volleys from that point? To</p>
+<p>hit solid volleys from the service line, get down low and keep your wrist very firm. Practice a few volleys like that</p>
+<p>and notice how your serve and volley game will improve. —Doug MacCurdy</p>
+<p>| can remember an old-time radio program that used to introduce each episode with, ‘When in trouble, call the</p>
+<p>sheriff.”’ In tennis, that phrase should</p>
+<p>be changed to, “When in trouble, hit the lob.’ What can you do when an</p>
+<p>Opponent runs you deep and to a Cor-</p>
+<p>ner of the court? Lob, lob, lob!</p>
+<p>Lobs can be hit offensively and defensively. The defensive one is not</p>
+<p>designed to fool the opponent; it is designed to give you time to recover and</p>
+<p>regain court position. To gain enough time, be sure to hit the ball very high</p>
+<p>and deep (think of the sheriff and aim for a star). Too many players fail to re-</p>
+<p>sort to the lob when it is the only way you can keep the ball away from the</p>
+<p>Opponent long enough to recover time</p>
+<p>and position. After all, he can’t hit it when it’s 40 feet in the air.</p>
+<p>To retrieve a lob that is going to bounce</p>
+<p>near the baseline, don’t merely backpedal facing the net. You won&#x27;t be able to get back fast enough. Instead, like</p>
+<p>an outfielder chasing down a deep fly</p>
+<p>ball, turn your body and feet toward the back fence, watch the ball over your shoulder and run. By turning tail this way, you&#x27;ll move faster and cover more</p>
+<p>ground. And, of course, your upper</p>
+<p>body will already be turned sideways and your racquet will be back, mean-</p>
+<p>ing that you will be ready to swing at the ball as soon as it reaches you. But</p>
+<p>remember to keep watching the ball over your shoulder. —Ben Foster</p>
+<p>A good lob is actually a cross between two shots: a direct drive over the net</p>
+<p>and a ball hit straight up in the air. A</p>
+<p>lob should obviously get the kind of depth you&#x27;d expect from a drive and it will need height to clear your opponent</p>
+<p>at the net. So if you&#x27;re having difficulty</p>
+<p>in getting the feel for a lob, try two swings: one a line drive and one a vertical shot. Then try a shot between the</p>
+<p>two. With a little practice, you&#x27;ll not only get the feel for the shot but you&#x27;ll</p>
+<p>also get the right height and range just</p>
+<p>like the Navy gunner who fires off test rounds. —Dave Kozlowski</p>
+<p>To hit higher, deeper lobs, keep your</p>
+<p>racquet on the ball longer and follow through more fully. Think of your rac-</p>
+<p>quet as an elevator. The ball should get</p>
+<p>on at the bottom floor with contact about waist high. Lift your racquet through contact and keep on lifting it</p>
+<p>after contact until your arm is fully extended upward. Your follow-through</p>
+<p>will make you feel that the ball stayed</p>
+<p>on the racquet much longer. Use a smooth upward motion like an elevator and your lobs will go higher and</p>
+<p>Get your racquet up and back when you prepare for an overhead smash. If</p>
+<p>you let your racquet dangle by your</p>
+<p>side, you&#x27;ll take too large and too late</p>
+<p>a swing. To be ready for the smash,</p>
+<p>have your racquet cocked behind your ear on your racquet side. The racquet</p>
+<p>head should be down your back in the</p>
+<p>‘“‘back-scratching position.’ With your hitting arm in this position, your swing will be shorter and more controlled.</p>
+<p>You&#x27;ll experience no loss in power and</p>
+<p>a great gain in accuracy.—Ben Foster</p>
+<p>Weekend tennis players blow the over-</p>
+<p>head smash more than possibly any</p>
+<p>other shot. But there are times when you should smash, especially close to the net. Be sure to position the ball in front of you, reach up with your free</p>
+<p>arm to judge—i.e., track—the descent, and get your racquet behind your ear.</p>
+<p>Don&#x27;t wind up as you do for the serve, and don&#x27;t let your zeal for a spectacu-</p>
+<p>lar smash prevent your executing the stroke properly—Raymond Schuessler</p>
+</section>
+<section class="chapter" id="sec-16">
+<h2>SAY EYE!</h2>
+<p>Hitting a solid no-nonsense overhead</p>
+<p>provides one of the bigger thrills of tennis. Confidence in your ability to</p>
+<p>handle this stroke adds a whole new dimension to your game. If you avoid overheads because they cause you trouble — perhaps embarrassment —</p>
+<p>chances are you&#x27;re making the most common overhead error, lowering your</p>
+<p>head before you contact the ball.</p>
+<p>Players often make this mistake because they unconsciously glance at their target area instead of keeping their eyes on the approaching ball. As</p>
+<p>you move into position semi-sideways</p>
+<p>to the ball with your racquet back,</p>
+<p>keep your head up and eyes on the ball until you make contact just in front of your forehead, with your arms fully</p>
+<p>Do most of your overheads crash pointlessly into the net? If they do, it’s</p>
+<p>probably because you hit down on the ball too much and, thus, create too sharp an angle for the shot to clear the net adequately. To prevent your</p>
+<p>smashes from nosediving into the net, attack the ball from behind as though you intend to drive it horizontally. Your wrist snap and follow-through will be</p>
+<p>enough to bring the ball down into your Opponent’s court. By attacking the ball from behind, you&#x27;ll hit deep smashes</p>
+<p>that will go over—not into—the net.</p>
+</section>
+<section class="chapter" id="sec-17">
+<h2>REACH UP TO MEET THE BALL ON YOUR</h2>
+<p>When hitting an overhead, reach up to</p>
+<p>hit the descending ball. That way, the contact point will be slightly in front of your body and as high as you can reach</p>
+<p>So you&#x27;ll hit the ball with a full swing for a powerful shot. If you wait too long to</p>
+<p>hit your overheads, you&#x27;ll contact the ball with a cramped swing which will</p>
+<p>reduce your power and accuracy. So reach up to meet the oncoming ball and you&#x27;ll find that you&#x27;ll soon stop mis-</p>
+<p>hitting your overheads.</p>
+<p>Would you like to take lessons from the best</p>
+<p>tennis teachers in the game? Of course you would. And that’s what INSTANT TENNIS</p>
+<p>LESSONS offers you: personal pointers you can use to improve your game from members of the official organization of teaching professionals, the United States Professional Tennis Association.</p>
+<p>Each lesson, which originally appeared in TENNIS magazine, is designed to help you hit a</p>
+<p>tennis ball successfully. It isolates one key element of the game and then explains briefly</p>
+<p>how you can master it. AS Sa MS 6 NS See ee ee ae |</p>
+<p>Each lesson blends text with a clear, complete illustration, leaving you with a graphic mental image you can take with you and use on court.</p>
+<p>—to apply proper pressure on the grip,</p>
+<p>“Imagine you&#x27;ve a bird in your hand.”</p>
+<p>(see page 11) —in the ready position, “Imagine there’s a ball</p>
+<p>under your heels.” (page 19) —when hitting ground strokes, ‘‘Use your back</p>
+<p>Each lesson was reviewed and approved by the members of TENNIS magazine’s Instruction Advisory Board—Tony Trabert, Roy Emerson,</p>
+<p>Vic Seixas, Ron Holmberg, George Lott and</p>
+<p>Bill Price—all distinguished coaches as well as former leading Laas</p>
+<p>Play better tennis with INSTANT TENNIS LESSONS!</p>
+</section><footer class="end"><div class="sig">Tennis Books Library</div><div>English text extracted from the book's own PDF.</div></footer>
+</div>
+</div>
+</body>
+</html>

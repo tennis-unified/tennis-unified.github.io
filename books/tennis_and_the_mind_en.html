@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tennis and the Mind</title>
+<meta name="description" content="Tennis library">
+<meta name="author" content="Pham Duc Hai">
+<style>
+.tcq-book{
+  --tcq-paper:#faf9f5; --tcq-ink:#1a1c20; --tcq-ink-soft:#4a4e54;
+  --tcq-ink-faint:#8a8d93; --tcq-indigo:#1d5c63; --tcq-indigo-soft:#2f7d84;
+  --tcq-gold:#a8863c; --tcq-rule:#e2e1da; --tcq-panel:#ffffff;
+  background:var(--tcq-paper); color:var(--tcq-ink);
+  font-family:"Palatino Linotype","Book Antiqua",Cambria,"Times New Roman","Noto Serif",serif;
+  font-size:19px;line-height:1.78;-webkit-font-smoothing:antialiased;}
+.tcq-book .wrap{max-width:760px;margin:0 auto;padding:64px 28px 120px;}
+.tcq-book header.cover{text-align:center;padding:8px 0;}
+.tcq-book .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+.tcq-book header.cover .cover-art{width:100%;max-width:430px;margin:0 auto 30px;border-radius:10px;
+  box-shadow:0 14px 40px rgba(16,40,44,.28);display:block;}
+.tcq-book header.cover .kicker{letter-spacing:.28em;font-size:12px;text-transform:uppercase;
+  color:var(--tcq-indigo);font-weight:600;}
+.tcq-book header.cover h1{font-size:38px;line-height:1.16;margin:.4em 0 .12em;font-weight:600;
+  color:var(--tcq-ink);text-align:center;letter-spacing:0;}
+.tcq-book header.cover .sub{color:var(--tcq-ink-soft);font-size:20px;font-style:italic;}
+.tcq-book header.cover .blurb{color:var(--tcq-gold);font-size:16px;margin-top:.7em;
+  letter-spacing:.04em;}
+.tcq-book header.cover .by{margin-top:1.2em;color:var(--tcq-ink-faint);font-size:14px;
+  letter-spacing:.06em;}
+.tcq-book hr.lead{border:none;border-top:1px solid var(--tcq-rule);margin:36px 0;}
+.tcq-book .part-band{margin:88px 0 8px;padding:26px 0 22px;text-align:center;
+  border-top:1px solid var(--tcq-rule);border-bottom:1px solid var(--tcq-rule);}
+.tcq-book .part-band .part-kicker{letter-spacing:.3em;font-size:12px;text-transform:uppercase;
+  color:var(--tcq-gold);font-weight:600;}
+.tcq-book .part-band .part-name{font-size:23px;color:var(--tcq-indigo);margin-top:.5em;
+  font-style:italic;}
+.tcq-book .chapter{margin-top:56px;}
+.tcq-book h2.ch-title{font-size:29px;line-height:1.25;margin:0 0 .1em;font-weight:600;
+  color:var(--tcq-ink);letter-spacing:0;font-style:normal;
+  border-bottom:2px solid var(--tcq-indigo);padding-bottom:.25em;}
+.tcq-book h3{font-size:21px;margin:40px 0 12px;font-weight:600;color:var(--tcq-indigo);
+  font-style:normal;letter-spacing:0;}
+.tcq-book h4{font-size:18px;margin:30px 0 8px;font-weight:600;color:var(--tcq-gold);
+  font-style:normal;letter-spacing:.02em;}
+.tcq-book p{margin:0 0 1.15em;text-align:justify;hyphens:auto;color:var(--tcq-ink);}
+.tcq-book p.lead-p{font-size:21px;color:var(--tcq-ink-soft);}
+.tcq-book strong{color:var(--tcq-ink);}
+.tcq-book em{color:var(--tcq-ink-soft);}
+.tcq-book .toc{margin:44px auto 0;max-width:560px;background:var(--tcq-panel);
+  border:1px solid var(--tcq-rule);border-radius:8px;padding:26px 32px;}
+.tcq-book .toc-title{font-size:15px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--tcq-indigo);margin:0 0 .9em;font-weight:600;font-style:normal;}
+.tcq-book .toc-part{font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--tcq-gold);font-weight:600;margin:1.3em 0 .4em;}
+.tcq-book .toc-part:first-of-type{margin-top:.4em;}
+.tcq-book .toc ol{margin:0;padding-left:0;list-style:none;}
+.tcq-book .toc li{margin:.42em 0;font-size:16px;}
+.tcq-book .toc a{color:var(--tcq-ink);text-decoration:none;border-bottom:1px solid transparent;}
+.tcq-book .toc a:hover{border-bottom-color:var(--tcq-indigo);}
+.tcq-book dl.glossary{margin:0 0 1.2em;padding:0;}
+.tcq-book dl.glossary dt{font-weight:600;color:var(--tcq-indigo);margin:1.15em 0 .15em;
+  font-size:18px;}
+.tcq-book dl.glossary dd{margin:0 0 .3em;padding-left:1.4em;color:var(--tcq-ink-soft);
+  font-size:18px;line-height:1.7;text-align:justify;}
+.tcq-book footer.end{margin-top:90px;border-top:1px solid var(--tcq-rule);padding-top:26px;
+  color:var(--tcq-ink-faint);font-size:14px;text-align:center;line-height:1.9;}
+.tcq-book footer.end .sig{color:var(--tcq-indigo);font-size:15px;letter-spacing:.08em;}
+body.dark-mode .tcq-book{
+  --tcq-paper:#0f1416; --tcq-ink:#e6e7e3; --tcq-ink-soft:#b0b3af;
+  --tcq-ink-faint:#878b90; --tcq-indigo:#7fbfc4; --tcq-indigo-soft:#5fa3a9;
+  --tcq-gold:#c9a961; --tcq-rule:#283135; --tcq-panel:#161d20;}
+body.dark-mode .tcq-book p,
+body.dark-mode .tcq-book li,
+body.dark-mode .tcq-book dd,
+body.dark-mode .tcq-book div{color:var(--tcq-ink);}
+body.dark-mode .tcq-book p.lead-p,
+body.dark-mode .tcq-book em,
+body.dark-mode .tcq-book dl.glossary dd{color:var(--tcq-ink-soft);}
+body.dark-mode .tcq-book header.cover .by,
+body.dark-mode .tcq-book footer.end{color:var(--tcq-ink-faint);}
+body.dark-mode .tcq-book h2.ch-title,
+body.dark-mode .tcq-book header.cover h1{color:var(--tcq-ink) !important;}
+body.dark-mode .tcq-book h3,
+body.dark-mode .tcq-book dl.glossary dt,
+body.dark-mode .tcq-book header.cover .kicker,
+body.dark-mode .tcq-book .toc-title,
+body.dark-mode .tcq-book footer.end .sig,
+body.dark-mode .tcq-book .part-band .part-name{color:var(--tcq-indigo) !important;}
+body.dark-mode .tcq-book h4,
+body.dark-mode .tcq-book header.cover .blurb,
+body.dark-mode .tcq-book .toc-part,
+body.dark-mode .tcq-book .part-band .part-kicker{color:var(--tcq-gold) !important;}
+body.dark-mode .tcq-book .toc a{color:var(--tcq-ink);}
+body.dark-mode .tcq-book strong{color:var(--tcq-ink) !important;}
+@media (max-width:760px){
+  .tcq-book .wrap{padding:40px 20px 80px;}
+  .tcq-book header.cover h1{font-size:28px;}
+  .tcq-book header.cover .cover-art{max-width:320px;}
+  .tcq-book dl.glossary dd{padding-left:.8em;}
+  .tcq-book .part-band .part-name{font-size:19px;}
+}
+@media print{
+  .tcq-book .toc{break-after:page;}
+  .tcq-book .chapter{break-before:page;}
+  .tcq-book .part-band{break-before:page;break-after:avoid;}
+  .tcq-book dl.glossary dt{break-after:avoid;}
+}
+
+/* breadcrumb — sits above .tcq-book, so it carries its own palette.
+   Colours/scale mirror the reference TFL books (#2–#8): .9rem, muted
+   #5b6572 separator, the book's own accent for the root link. */
+.tu-breadcrumb{background:#faf9f5;padding:16px 0 4px;font-size:.9rem;color:#6b6f76;
+  font-family:"Palatino Linotype","Book Antiqua",Cambria,"Times New Roman","Noto Serif",serif;}
+.tu-breadcrumb__list{list-style:none;display:flex;flex-wrap:wrap;gap:2px 8px;
+  max-width:760px;margin:0 auto;padding:0 28px;align-items:center;}
+.tu-breadcrumb__item{margin:0;}
+.tu-breadcrumb__link{color:#1d5c63;text-decoration:none;}
+.tu-breadcrumb__link:hover{text-decoration:underline;}
+.tu-breadcrumb__sep{color:#5b6572;margin:0 2px;user-select:none;}
+.tu-breadcrumb__current{color:#1a1c20;font-weight:500;}
+</style>
+</head>
+<body>
+
+
+<nav class="tu-breadcrumb" aria-label="Breadcrumb">
+  <ol class="tu-breadcrumb__list">
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/books/">Tennis Books Library</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item tu-breadcrumb__current" aria-current="page">Tennis and the Mind</li>
+  </ol>
+</nav>
+<div class="tcq-book">
+<div class="wrap">
+<header class="cover"><div class="kicker">Tennis Library</div><h1>Tennis and the Mind</h1><div class="by"></div><p style="text-align:center;margin:18px 0 0;font-family:var(--tcq-sans,sans-serif);font-size:14px;letter-spacing:.02em;"><a href="https://github.com/tenniskb/tenniskb.github.io/releases/download/books-pdf-v1/tennis-and-the-mind.pdf" target="_blank" rel="noopener" style="color:#1d5c63;font-weight:600;text-decoration:none;border:1px solid #cfd8d4;border-radius:6px;padding:7px 14px;display:inline-block;">Read the original PDF &#8599;</a></p></header><div class="toc"><div class="toc-title">Contents</div><ol>
+<li><a href="#sec-1">Section 1</a></li>
+<li><a href="#sec-2">jars you awake. What would you do if you were the</a></li>
+<li><a href="#sec-3">aline. With friends like anxiety, the mind does not need</a></li>
+<li><a href="#sec-4">tion that you&#x27;re not playing for yourself but for millions</a></li>
+<li><a href="#sec-5">I’s a common reaction among some players. If</a></li>
+<li><a href="#sec-6">about it. But if yowre playing somebody you figure</a></li>
+<li><a href="#sec-7">excitable you are in general: it all affects the kind of</a></li>
+<li><a href="#sec-8">A guy can be calm and cool on the court and still</a></li>
+<li><a href="#sec-9">ning.” Sue Barker has much the same philosophy. “It’s</a></li>
+<li><a href="#sec-10">come of the match but because of certain things I</a></li>
+<li><a href="#sec-11">I never went into a match afraid of how he would</a></li>
+<li><a href="#sec-12">aster, which works better for modern literature</a></li>
+<li><a href="#sec-13">squeeze the handle, stride, see the ball meet the</a></li>
+<li><a href="#sec-14">ment. Thus if I have hit a couple of backhand er-</a></li>
+<li><a href="#sec-15">Here’s an illustration of the point ’m trying to make.</a></li>
+<li><a href="#sec-16">ficiency of his strokes. As a result, he begins to play</a></li>
+<li><a href="#sec-17">trate harder and it gets my game back on track.</a></li>
+<li><a href="#sec-18">I won the first set very easily, and in the second</a></li>
+<li><a href="#sec-19">situation, but I didn’t break. I sat down between</a></li>
+<li><a href="#sec-20">I never realized until I worked with a sports psy-</a></li>
+<li><a href="#sec-21">Manuel Orantes. But Orantes has learned in recent</a></li>
+<li><a href="#sec-22">myself from getting angry and upset. I know as</a></li>
+<li><a href="#sec-23">ball. And if you muff a couple of easy shots, learn</a></li>
+<li><a href="#sec-24">jailer. When the tension eventually arises, the result is</a></li>
+<li><a href="#sec-25">to the choke. If you are confident—genuinely confident</a></li>
+<li><a href="#sec-26">When Newcombe is serving well, you can feel the</a></li>
+<li><a href="#sec-27">My feeling about confidence is that if you&#x27;ve got</a></li>
+<li><a href="#sec-28">reasons J think there are more genuinely confident</a></li>
+<li><a href="#sec-29">asked me what was going to happen (if it came</a></li>
+<li><a href="#sec-30">Call it psycho-cybernetics, if you will: when you have</a></li>
+<li><a href="#sec-31">times after he has made an error. “All the bad habits</a></li>
+</ol></div><section class="chapter" id="sec-1">
+<h2>Section 1</h2>
+<p>All in all, it’s not a bad system—except for one thing. What if you want to thread a needle, tie a shoelace or play the piano and the mind is behaving as if you were being chased down an alley by a couple of Neanderthals? Why should the mind behave thusly? Mainly because a big part of the mind’s job is not only</p>
+<p>to respond to danger but to anticipate it. Frequently it</p>
+<p>goes overboard. It is 3 a.m. and the ringing of the phone</p>
+</section>
+<section class="chapter" id="sec-2">
+<h2>jars you awake. What would you do if you were the</h2>
+<p>mind and the phone rang at 3 a.m.? You would sound</p>
+<p>an alarm, of course. Flood the system with adrenaline.</p>
+<p>And if the call turns out to be a wrong number—well,</p>
+<p>cest la vie. Better cautious than dead. In the meantime,</p>
+<p>however, the neural troops have all donned their battle</p>
+<p>gear. Sleep, for the time being, is out of the question.</p>
+<p>Which brings us to tennis. In some respects, the</p>
+<p>phone is always ringing at 3 a.m. on a tennis court.</p>
+<p>That is to say, the mind is forever priming the body for</p>
+<p>responses that frequently have no place in tennis com-</p>
+<p>bat. Tennis is a sport requiring a combination of co-</p>
+<p>ordination, precision, quickness, clear thinking, and</p>
+<p>concentration, not to mention a healthy lung capacity.</p>
+<p>A certain amount of adrenaline is indispensable to fuel</p>
+<p>these activities, much like a dollop or two of tabasco</p>
+<p>sauce puts the blood in a bloody mary. But an excess of</p>
+<p>adrenaline can—and usually does—generate a state of</p>
+<p>hyper-arousal that makes it difficult to meet the game’s</p>
+<p>more specific requirements.</p>
+<p>A similar dilemma is at work in most sports but there are differences. If your name is Mean Joe Greene</p>
+<p>and you are richly compensated for the dismantling of</p>
+<p>other human beings, the more agitation and excitement</p>
+<p>the better. Adrenaline and aggression are congenial bed-fellows. But if your name is Jack Nicklaus and you</p>
+<p>are paid to tap a small ball into a small hole, the last</p>
+<p>thing you need is a surplus of behavioral juice.</p>
+<p>The problem with tennis is that it asks you to be</p>
+<p>part Joe Greene and part Jack Nicklaus. The overall</p>
+<p>physical demands of the game—the running and the</p>
+<p>quickness and need for sharp reflexes—create a need</p>
+<p>for a healthy level of arousal. But if the arousal gets</p>
+<p>out of hand, the phone starts to ring at 3 a.m. and the</p>
+<p>precise demands of the game lose out.</p>
+<p>There’s another factor involved here as well. If it</p>
+<p>were only the physical demands of the game that the</p>
+<p>mind had to deal with, the delicate adrenaline balancing</p>
+<p>act that is a prerequisite for successful playing could</p>
+<p>probably be handled by most players. There is, after all,</p>
+<p>a stop and go rhythm to tennis, opportunities to catch</p>
+<p>your breath and clear your head. But the mind has other</p>
+<p>things to concern itself with—namely, the mental pressures of the game.</p>
+<p>And mental pressures there are—in abundance. The fact that the brain is being called upon to marshal a</p>
+<p>series of rather specific responses every few seconds is</p>
+<p>pressure inducing. The fact that these responses have</p>
+<p>to be made in a one-on-one, competitive situation is</p>
+<p>pressure inducing. The fact that the inability to make</p>
+<p>68 2. Emotions on the Court: The Mind at War</p>
+<p>these responses can generate frustration and anger is</p>
+<p>pressure inducing.</p>
+<p>There’s more: the added pressure we bring upon our-</p>
+<p>selves when we introduce to the tennis playing situation</p>
+<p>implications which involve not the game itself but, rather, the significance we attach to it. Technically</p>
+<p>speaking, it is no more difficult to produce a down the</p>
+<p>line backhand at match point in the Wimbledon finals</p>
+<p>than it is to produce the same shot if you’re working out</p>
+<p>on a ball machine on a local court, but the actual diffi-</p>
+<p>culty factor between the two can only be measured in</p>
+<p>light years. Julie Heldman once described her own men-</p>
+<p>tal struggles with tennis as “a constant battle to trick</p>
+<p>myself into thinking that it didn’t matter.” She adds</p>
+<p>that she was rarely successful at it. And Bob Lutz sum-</p>
+<p>marizes the feelings of nearly every professional player</p>
+<p>I’ve ever spoken with.</p>
+<p>You do your best to keep telling yourself that a</p>
+<p>match is just another match and a point is just</p>
+<p>another point, but the realization always seems to</p>
+<p>creep in anyway. When you&#x27;re a point or two away</p>
+<p>from winning, it’s very difficult to convince your-</p>
+<p>self that it’s just another point. How do you get</p>
+<p>yourself to believe what is, isn’t?</p>
+<p>How, indeed? Asking the brain no¢ to anticipate the</p>
+<p>excitement of a big win, or not to sound the alarm when</p>
+<p>it senses that you’re about to lose control of a situation</p>
+<p>you desperately want to keep control of is like asking</p>
+<p>for a rewrite of evolutionary history. Originally a</p>
+<p>hunter, man, remember, was not to the tennis court</p>
+<p>born. Our gut responses are better suited to the jungle</p>
+<p>than to the tennis court. Shoot first, ask questions later.</p>
+<p>Not that I’m trying to paint a hopeless picture. To say</p>
+<p>that tennis presents the mind with barriers it is not in-</p>
+<p>herently equipped to overcome is not to say these bar-</p>
+<p>riers are insurmountable. Many players—the more</p>
+<p>successful players, to be sure—have learned to manage</p>
+<p>the emotional and mental pressures of the game in</p>
+<p>ways that minimize, if not entirely eliminate, the chok-</p>
+<p>ing reactions that are more or less endemic to the game.</p>
+<p>And while the methods used by these players are differ-</p>
+<p>ent, the approach has generally been the same. What</p>
+<p>the more successful tennis players have learned to do</p>
+<p>is to control the most volatile—but also the most con-</p>
+<p>trollable—agent in the choking process: anxiety. Til</p>
+<p>get to how some of these players do this later in the</p>
+<p>chapter. For now, though, let’s have a look at anxiety</p>
+<p>itself the better to see just what produces it and what</p>
+<p>damage it creates on the tennis court.</p>
+<p>BECAUSE it is a subject unto itself, I don’t intend</p>
+<p>to get too deeply immersed in the dynamics of anxiety, except to clarify the role it plays in determining the level of inner excitement on the loose in the budy at any</p>
+<p>given moment in a tennis match, We&#x27;ve already established that the mind has its own method of monitoring</p>
+<p>the energy demands of the body, and that the inherent nature of tennis creates arousal in its own right. So,</p>
+<p>things being how they are, the mind could get along</p>
+<p>very nicely, thank you, without the additional arousal kicked up by anxiety. Anxiety only serves to increase</p>
+<p>70 2. Emotions on the Court: The Mind at War</p>
+<p>what is already an almost overflowing stream of adren-</p>
+</section>
+<section class="chapter" id="sec-3">
+<h2>aline. With friends like anxiety, the mind does not need</h2>
+<p>enemies.</p>
+<p>That a sport in which the danger of physical injury is slight should generate anxiety may seem illogical on</p>
+<p>the surface. But tennis produces anxiety because players attach to it a symbolic meaning that transcends the</p>
+<p>tennis court. “It comes about,” Julie Anthony says, “when we begin to evaluate who we are with what we</p>
+<p>In the professional game, of course, anxiety has understandable roots. There is generally something tangible at stake, apart from winning itself, whenever a</p>
+<p>professional tennis player competes.</p>
+<p>If your livelihood depends on your ability to win tennis matches, there is always a little of yourself</p>
+<p>on the line every time you go out on a court. Win-</p>
+<p>ning has the effect, symbolically, of making every-</p>
+<p>thing easier for you and your family years in the</p>
+<p>future. Losing has the opposite effect.</p>
+<p>The event, the amount of money at stake, the setting,</p>
+<p>the opponent—all of these things affect the anxiety</p>
+<p>level of professional players in different ways. Wimble-</p>
+<p>don, because of its historical significance and its pres-</p>
+<p>tige (not to mention the economic benefits that accrue</p>
+<p>to its champions ), almost invariably spikes the anxiety</p>
+<p>level in most players—so much so that Sherwood</p>
+<p>Stewart recalls that the first time he served at Centre</p>
+<p>Court at Wimbledon, he missed the toss entirely. Davis</p>
+<p>Cup competition is, for most players, a much more emo-</p>
+<p>tionally trying experience than regular tournament</p>
+<p>play. “What does it,” says Tony Trabert, “is the realiza-</p>
+</section>
+<section class="chapter" id="sec-4">
+<h2>tion that you&#x27;re not playing for yourself but for millions</h2>
+<p>of people.” Playing in front of a hometown crowd is a</p>
+<p>problem for many players, among them Manuel</p>
+<p>Orantes, who reports that while he can deal with his</p>
+<p>own disappointment when he’s not playing well, he</p>
+<p>can’t deal with the disappointment of his countrymen.</p>
+<p>And it has only been recently that Chris Evert has been</p>
+<p>able to take the court against Evonne Goolagong with-</p>
+<p>out experiencing a nervous stirring that is noticeably</p>
+<p>absent when she plays everybody else.</p>
+<p>Then there are the idiosyncratic anxiety patterns that</p>
+<p>characterize many players. Virginia Wade, for instance,</p>
+<p>admits that the nervousness she experiences on a tennis</p>
+<p>court is related not so much to whether she wins or loses</p>
+<p>but to how she looks doing it. Linky Boshoff says she</p>
+<p>has no anxiety about losing but does worry, on occa-</p>
+<p>sion, about being humiliated on the court. Cliff Drys-</p>
+<p>dale admits that there are one or two players on the tour with whom his personal relations are so strained that</p>
+<p>he invariably tightens up. And Gene Scott says that</p>
+<p>when he was competing, he was always more anxious</p>
+<p>when he was playing somebody that he felt he should</p>
+<p>beat than when he was playing someone who was a notch or two better than he was.</p>
+</section>
+<section class="chapter" id="sec-5">
+<h2>I’s a common reaction among some players. If</h2>
+<p>youre up against a top player, you figure you have</p>
+<p>nothing to lose by losing and so you don’t worry</p>
+</section>
+<section class="chapter" id="sec-6">
+<h2>about it. But if yowre playing somebody you figure</h2>
+<p>you should beat, then you have to deal with how youre going to feel about yourself in the event you do lose.</p>
+<p>72 2. Emotions on the Court: The Mind at War</p>
+<p>It needn’t be stressed that the presence—or absence —of anxiety in a tennis situation is very much related</p>
+<p>to personality. How you feel about yourself, how important—or unimportant—it is for you to win, how</p>
+</section>
+<section class="chapter" id="sec-7">
+<h2>excitable you are in general: it all affects the kind of</h2>
+<p>responses you will make under pressure. And let us not forget the importance of basic talent in this process. Ilie</p>
+<p>Nastase, by his own admission, is almost always anx-</p>
+<p>ious in big matches, but his talent reservoir is so vast</p>
+<p>that the effects are not as costly to him as they would be</p>
+<p>to a less nervous, but less talented player, like, say, Harold Solomon. For the bottom line, remember, is not</p>
+<p>so much what sort of nervous reactions you&#x27;re having</p>
+<p>on the court but the effect these reactions are having</p>
+<p>on your game.</p>
+<p>But is there a substantial difference in the anxiety</p>
+<p>levels of professional players? You bet! But the differ-</p>
+<p>ences are not always easy to discern. First of all, you</p>
+<p>can’t always pinpoint anxiety as the culprit behind a</p>
+<p>technical lapse that occurs in a pressure situation.</p>
+<p>Harry Hopman notes that players who appear to be</p>
+<p>choking are often being victimized by a favorite stroke</p>
+<p>that happens to have a small margin for error. Roy</p>
+<p>Emerson’s tendency to choke, Hopman points out, dis-</p>
+<p>appeared almost overnight once Emmo began to hit</p>
+<p>his forehand with more topspin, making it a safer shot.</p>
+<p>Hopman also defends the rash of double faults that cost</p>
+<p>Dennis Ralston a victory over Rod Laver in the 1969</p>
+<p>U.S. Open Championships at Forest Hills.</p>
+<p>Ralston was a prime example. of a player who had</p>
+<p>a shot that left little margin for error. It was his</p>
+<p>service. At Ralston’s peak, he possessed a serve</p>
+<p>that barely skimmed the net and struck deep, al-</p>
+<p>most on the service box line. But when he tried to</p>
+<p>do more with it, there was no room for improve-</p>
+<p>ment, only room for error.</p>
+<p>Everybody has what I like to call a choking margin. There were certain strokes in my game—my re-</p>
+<p>turn of serve, or my backhand—that I never wor-</p>
+<p>ried about choking on because I felt so comfortable</p>
+<p>with these shots. Even if I did tighten just a little,</p>
+<p>I still had plenty of safety margin. But then I&#x27;d</p>
+<p>get out there against a guy like Don Budge, who</p>
+<p>was so sound in every way, and I knew I had to</p>
+<p>make perfect shots in order to win points, I didn’t</p>
+<p>have that ability, and so I missed. It wasn’t a ques-</p>
+<p>tion of choking, it was a question of trying to do</p>
+<p>what I knew I had to do if I wanted to win—and</p>
+<p>then not being able to do it.</p>
+<p>Another thing. You don’t necessarily have to tighten</p>
+<p>up to choke. The symptoms of anxiety vary widely from</p>
+<p>player to player. Fred McNair says he gets slightly dizzy</p>
+<p>when he’s nervous. Rod Laver experiences a vague</p>
+<p>sense of remoteness, as if he’d just been dropped into a</p>
+<p>hostile environment. Margaret Court loses her timing.</p>
+<p>And Arthur Ashe has trouble breathing.</p>
+<p>Ashe, from Portrait in Motion:</p>
+<p>I may never look like I&#x27;m choking, but that can be</p>
+<p>very misleading. Right now, when I&#x27;m nervous on</p>
+<p>the court, I have actual difficulty in breathing. And</p>
+<p>the problem is compounded when I try to run. My</p>
+<p>legs move stiffly, and soon my whole body offers</p>
+<p>only the most deliberate movements. It’s as if I&#x27;ve</p>
+<p>74 2. Emotions on the Court: The Mind at War</p>
+<p>lost all my instincts for playing tennis, so that my mind must try to explain repeatedly to my body</p>
+<p>what it already knows how to do.</p>
+<p>Few professionals have ever described choking reactions more candidly than Ashe, but it would be wrong to conclude that Ashe is any more susceptible</p>
+<p>to choking than other players on the tour. Ashe points out, for instance, that many “calm” players choke in</p>
+<p>their own manner.</p>
+</section>
+<section class="chapter" id="sec-8">
+<h2>A guy can be calm and cool on the court and still</h2>
+<p>be choking. Maybe he’s resigned himself to losing,</p>
+<p>which, to me, is a choke. Maybe he didn’t train the way he should have for the match. Maybe he didn’t</p>
+<p>go to bed early the night before. When you come</p>
+<p>down to it, anything you do to give yourself a rea-</p>
+<p>son for losing is a choke.</p>
+<p>Something else, too. The choking of many players</p>
+<p>frequently goes unnoticed by tennis spectators. Instead</p>
+<p>of committing glaring errors—a double fault at a key</p>
+<p>point—certain players will, in certain situations, shift</p>
+<p>their games into a lower gear. Their groundstrokes</p>
+<p>won&#x27;t go out but they won’t land as deep. Their volleys</p>
+<p>will lose their customary bite. Their serves will land</p>
+<p>more shallow than usual. Stan Smith once told me that</p>
+<p>even when Rod Laver was playing his best tennis, you</p>
+<p>could tell when he was getting a little nervous because</p>
+<p>he would start to chip his backhand. Roy Emerson re-</p>
+<p>members that in the early 1960s some of his opponents</p>
+<p>would sense his anxiousness through his tendency to</p>
+<p>rush in between points. “What a lot of players started</p>
+<p>doing,” Emmo says, “was to deliberately stall, and this</p>
+<p>Yet there are—and have been—professional players</p>
+<p>for whom anxiety, in most instances, is simply not a problem. Ham Richardson, a top rated amateur player</p>
+<p>in the 1950s, is one example.</p>
+<p>The only time I can ever remember nerves really</p>
+<p>getting to me in a match was when I was eighteen</p>
+<p>and playing in Europe. I managed to beat my op-</p>
+<p>ponent but not until I&#x27;d lost my serve three times in</p>
+<p>a row. It might have been the unfamiliar surround-</p>
+<p>ings—I don’t know. I do know that I always went</p>
+<p>into a match with a pretty realistic idea of how I</p>
+<p>fared compared with the other player. I never cared</p>
+<p>that much about being the best player in the world,</p>
+<p>so I was mainly concerned with doing what I could</p>
+<p>do best. And if I won, so much the better.</p>
+<p>I mention Richardson specifically here because his</p>
+<p>sentiments call to mind some of the attitudes exempli-</p>
+<p>fied by contemporary players who are judged by their</p>
+<p>colleagues as being fairly immune to the consequences</p>
+<p>of anxiety on the court. I&#x27;m thinking in particular of</p>
+<p>players like Bjorn Borg, Harold Solomon, Chris Evert,</p>
+<p>Evonne Goolagong, and Sue Barker, all of whom seem</p>
+<p>notably less prone to nervousness than the average</p>
+<p>touring pro and all of whom bring to the court, apart</p>
+<p>from everything, an attitude untainted by the fear of losing.</p>
+<p>Goolagong, in particular, takes winning and losing</p>
+<p>remarkably in stride, insisting that she can be this way</p>
+<p>only because she “enjoys the tennis and not the win-</p>
+<p>76 2. Emotions on the Court: The Mind at War</p>
+</section>
+<section class="chapter" id="sec-9">
+<h2>ning.” Sue Barker has much the same philosophy. “It’s</h2>
+<p>a question,” she says, “of really enjoying what you do. If you&#x27;re enjoying yourself, then you’re not worried about how well or badly you&#x27;re doing.” And Chris Evert, although she is more competitive and goal-directed than</p>
+<p>either Goolagong or Barker, insists that a fear of losing</p>
+<p>has never been a factor in her mental attitude.</p>
+<p>A lot of it really has to do with the way I was</p>
+<p>raised. My father was very careful to react pretty</p>
+<p>much the same way whether I won or lost. When</p>
+<p>he was critical, it was never because of the out-</p>
+</section>
+<section class="chapter" id="sec-10">
+<h2>come of the match but because of certain things I</h2>
+<p>may not have done right. But he was never harsh.</p>
+</section>
+<section class="chapter" id="sec-11">
+<h2>I never went into a match afraid of how he would</h2>
+<p>react if I lost.</p>
+<p>Borg and Solomon have similar points of view—</p>
+<p>neither enjoys losing but neither overly worries about</p>
+<p>it—but they have an advantage that other players don’t</p>
+<p>enjoy. Their games are basically defensive and highly</p>
+<p>physical. Which is another way of saying that if they&#x27;ve</p>
+<p>trained well enough there isn’t too much that can go</p>
+<p>technically wrong with their strokes. They are Volvos</p>
+<p>in a world of Porsches. It has been said of Borg that he</p>
+<p>was so good so young that getting nervous never oc-</p>
+<p>curs to him, although there have been defeats in his</p>
+<p>career that came about not because he was nervous but</p>
+<p>because he became frustrated and upset and simply</p>
+<p>stopped trying. A choke, by Arthur Ashe’s definition.</p>
+<p>Solomon’s uniqueness, on the other hand, seems to lie</p>
+<p>in his ability to analyze his defeats logically.</p>
+<p>One of the big differences between me and a lot of</p>
+<p>players is that I really know my strengths and</p>
+<p>weaknesses. There are very logical reasons why I</p>
+<p>have trouble with certain players like Borg or</p>
+<p>Vilas, It’s because they&#x27;re too strong for me to</p>
+<p>outlast from the baseline, and I’m not sure enough</p>
+<p>of myself at the net to pressure them. Being wor-</p>
+<p>ried about it isn’t going to help. What I have to do</p>
+<p>is strengthen my game.</p>
+<p>Being able to view yourself objectively and to take</p>
+<p>your lumps philosophically are useful traits to have no</p>
+<p>matter what your line of work is but there is a fine line</p>
+<p>between having a realistic appreciation of your own</p>
+<p>capabilities and underestimating yourself. Butch Buch-</p>
+<p>holz is one former player who admits that he was never</p>
+<p>able to view his losses within a logical framework, yet,</p>
+<p>feels that he was a more successful player because of it.</p>
+<p>Looking back, I can see that I kidded myself a</p>
+<p>great deal because there were weaknesses in my</p>
+<p>game that I refused to acknowledge. I took my de-</p>
+<p>feats hard because I couldn’t understand how I could lose. But on the other hand, I probably won</p>
+<p>a lot of matches I wouldn’t have otherwise won if I hadn’t gone in with that attitude.</p>
+<p>So much for anxiety as it relates to the professional</p>
+<p>game. Plenty of choking goes on in recreational tennis, too, never mind that there is rarely anything tangi-</p>
+<p>ble at stake beyond the outcome of the match.</p>
+<p>As Ted Solotaroff, a writer, editor and tennis addict, once put it in a New York Times Magazine piece:</p>
+<p>78 2, Emotions on the Court: The Mind at War</p>
+<p>My main trouble is not stamina but imagination.</p>
+<p>Like Henry James, I have the imagination of dis-</p>
+</section>
+<section class="chapter" id="sec-12">
+<h2>aster, which works better for modern literature</h2>
+<p>than it does for tennis. In general, imagination is the neurotic tennis player&#x27;s substitute for concentration. Concentration means that you are follow-</p>
+<p>ing a clearcut set of orders: “Move to the ball, get</p>
+<p>your racquet back, set your feet, see the ball,</p>
+</section>
+<section class="chapter" id="sec-13">
+<h2>squeeze the handle, stride, see the ball meet the</h2>
+<p>racket, follow through,” and so forth. But my imagination can’t be bothered with such mundane</p>
+<p>matters; it’s usually too busy adjusting my play to</p>
+<p>the image I happen to have of myself at the mo-</p>
+</section>
+<section class="chapter" id="sec-14">
+<h2>ment. Thus if I have hit a couple of backhand er-</h2>
+<p>rors in a row, my imagination appears on the</p>
+<p>scene like a doctor in the house to announce that my backhand has suffered a relapse, and my fol-</p>
+<p>lowing strokes will be timid with dismay and cau-</p>
+<p>tion. I have just hit a forehand smash down the</p>
+<p>line in a close match and my opponent has some-</p>
+<p>how gotten it back, imagination raises the deaden-</p>
+<p>ing question of what do I have to do to win a point.</p>
+<p>Or if Iam coming in for a weak return, with three-</p>
+<p>fourths of the court sitting wide open, my imag-</p>
+<p>ination will turn grandiose and suggest a really</p>
+<p>decisive smash or a class drop-shot. This is also</p>
+<p>known as the death wish.</p>
+<p>But why? Why should a perceptive, intelligent man</p>
+<p>like Solotaroff come apart so on a tennis court? And</p>
+<p>why should I, for instance, choke in a match against</p>
+<p>an opponent I know well and like? Why does my game</p>
+<p>take such a nose-dive if I find myself in a foursome that</p>
+<p>I&#x27;m not especially comfortable with?</p>
+<p>I really don’t know. Psychologists and psychiatrists</p>
+<p>I’ve interviewed tell me that much of the anxiety recre-</p>
+<p>ational players experience is rooted in the fear that we</p>
+<p>will prove ourselves unworthy of the players we&#x27;re</p>
+<p>playing with and thus invite the prospect of rejection.</p>
+<p>I suspect there’s more to it. I’ve noticed in my own cir-</p>
+<p>cle of partners, for instance, that players who have</p>
+<p>played a lot of competitive sports as younger men tend</p>
+<p>to do better under pressure than non-athletes, forget-</p>
+<p>ting for the moment how well they play tennis. Which</p>
+<p>leads me to theorize that players who are unfamiliar</p>
+<p>with athletic pressure in general are at a slight disad-</p>
+<p>vantage when it comes to dealing with the pressures of</p>
+<p>tennis. One of the better competitors on the celebrity</p>
+<p>tennis circuit, for instance, is actor Jerry Orbach, a pool</p>
+<p>shark in his youth. “I don’t think I hit the ball better</p>
+<p>than most of the people I play,” Orbach says. “But I do</p>
+<p>know I handle the pressure of competition better.”</p>
+<p>No matter. Whatever the reasons behind the anxiety</p>
+<p>—fear of losing, fear of winning, fear of being dis-</p>
+<p>graced, low self-esteem, the need for approval, fear of</p>
+<p>flying, ad infinitum—the fact remains that it must be</p>
+<p>controlled if you’re going to deal effectively with the</p>
+<p>mental pressures of tennis. A look at how the profes-</p>
+<p>sionals deal with the problem might give us some</p>
+<p>insights.</p>
+<p>LET us retrench. We have already established</p>
+<p>that the intrinsic physical and mental demands of ten-</p>
+<p>nis create the need for a certain amount of inner</p>
+<p>80 2. Emotions on the Court: The Mind at War</p>
+<p>arousal but that if this arousal gets out of hand the body cannot operate at peak efficiency. We&#x27;ve established, too, that any number of factors—personality,</p>
+<p>ability, etc.—have a bearing on how well you perform</p>
+<p>in pressure situations. ‘ What seems to be at work here is a threshold phe-</p>
+<p>nomenon—a point at which arousal changes uniforms,</p>
+<p>switching from ally to saboteur. If the arousal is too far</p>
+<p>below your threshold, your play will lack the necessary</p>
+<p>sharpness and intensity. If arousal is over the thresh-</p>
+<p>old, you may play too tightly and tentatively. Not that it’s</p>
+<p>a fixed point, however. It will vary from player to player</p>
+<p>and from individual players in different situations.</p>
+</section>
+<section class="chapter" id="sec-15">
+<h2>Here’s an illustration of the point ’m trying to make.</h2>
+<p>You are playing the club champion in the first round of</p>
+<p>your club’s singles championship. Nobody, including</p>
+<p>you, gives you much chance of winning. You normally</p>
+<p>go into a match with a lot of anxiety about winning,</p>
+<p>but on this day, because you don’t give yourself a</p>
+<p>chance, you&#x27;re not worried. You&#x27;ve given anxiety the</p>
+<p>day off.</p>
+<p>Now the match starts and you find yourself concen-</p>
+<p>trating well, hitting the ball crisply, playing each point</p>
+<p>one at a time—in short, doing all the things the books</p>
+<p>tell you to do without worrying about whether it’s going</p>
+<p>to work out or not. There is inner arousal, sure, but it is</p>
+<p>comfortably within your threshold range. You’re not</p>
+<p>choking.</p>
+<p>And what happens? Before you know it, you’re up</p>
+<p>4-0 in the first set and it’s your serve. Suddenly it</p>
+<p>dawns on you that you are not only in this match, you</p>
+<p>have a good shot at winning! Enter the brain. It imme-</p>
+<p>diately conjures up an image of what it’s going to mean</p>
+<p>to you once word gets out that you’ve beaten the club’s</p>
+<p>No. 1 player. Your body, of course, responds to this</p>
+<p>image. It gets excited. The valve that had controlled</p>
+<p>your anxiety opens up and—whoosh—Niagara Falls. Your threshold is suddenly swamped, You play the rest</p>
+<p>of the match like a scarecrow.</p>
+<p>I quote from Alvaro Fillol, Jaimie Fillol’s brother,</p>
+<p>after he had lost to Rod Laver in an early round at</p>
+<p>Forest Hills.</p>
+<p>I played well in the beginning of the match, but</p>
+<p>when I started to win, and I realized who I was</p>
+<p>playing, I got a little nervous. I just couldn’t make</p>
+<p>the same shots.</p>
+<p>Don&#x27;t be so hard on yourself, Alvaro. There’s another</p>
+<p>side to this threshold business. It has to do with what’s</p>
+<p>going on in the other guy’s nervous system. Go back to</p>
+<p>the original situation. Look at it from the club cham-</p>
+<p>pion’s point of view. Because you have never been able</p>
+<p>to win more than two games a set from him, he is not</p>
+<p>exactly quivering in his boots at the prospect of playing</p>
+<p>you. And because his “anxiety of winning” machinery</p>
+<p>isn’t all that operational, his level of inner arousal is</p>
+<p>well below his threshold, too. Probably too low. Conse-</p>
+<p>quently, he’s not playing with normal consistency, fi-</p>
+<p>nesse, or power. He’s not pressuring you.</p>
+<p>It soon dawns upon him that if he doesn’t get his act</p>
+<p>together, he is going to lose to one of the biggest turkeys</p>
+<p>at the club—a possibility that doesn’t please him. His</p>
+<p>brain conjures up an image, too, and his body reacts to</p>
+<p>it—but in this case the nervous energy that’s released</p>
+<p>doesn’t surpass the threshold, it simply approaches it.</p>
+<p>As his level of inner arousal increases, so does the pro-</p>
+<p>82 2. Emotions on the Court: The Mind at War</p>
+</section>
+<section class="chapter" id="sec-16">
+<h2>ficiency of his strokes. As a result, he begins to play</h2>
+<p>better.</p>
+<p>I’m the sort of player who needs a challenge if &#x27;m going to play my best. I&#x27;ve always been something</p>
+<p>of a slow starter, but once I get a little nervous</p>
+<p>about the possibility of losing, I start to concen-</p>
+</section>
+<section class="chapter" id="sec-17">
+<h2>trate harder and it gets my game back on track.</h2>
+<p>Manuel Orantes, after coming from behind to beat</p>
+<p>Hans Pohlman in an early-round Forest Hills match in</p>
+</section>
+<section class="chapter" id="sec-18">
+<h2>I won the first set very easily, and in the second</h2>
+<p>set neither one of us was really that serious. We</p>
+<p>were playing drop shots back and forth and that</p>
+<p>sort of thing. But pretty soon he won the set, and then he broke my serve in the first game of the</p>
+<p>third set. There’s always the danger of panic in this</p>
+</section>
+<section class="chapter" id="sec-19">
+<h2>situation, but I didn’t break. I sat down between</h2>
+<p>games and told myself what I had to do to win—</p>
+<p>how I should play him—and I won the next six</p>
+<p>games.</p>
+<p>The scenario won&#x27;t always work out this way. Had</p>
+<p>you and the club champion been more equally matched,</p>
+<p>and had you been better able to control your inner</p>
+<p>arousal (and had he controlled his a little less effec-</p>
+<p>tively) the stress factor might well have made the dif-</p>
+<p>ference in the match. For the key to dealing with nerves</p>
+<p>is not so much to eliminate them from your game but</p>
+<p>to manage them in a way that works best for your par-</p>
+<p>ticular threshold level and in that particular situation.</p>
+<p>This situational aspect of nerves ought not to be dis-</p>
+<p>missed. Orantes, for instance, is a player whose touch</p>
+<p>game can be devastated if he becomes too aroused.</p>
+<p>Even so, he can allow himself more arousal against a</p>
+<p>player he knows he can beat than against a player who</p>
+<p>has given him trouble in the past. He can use the</p>
+<p>arousal more productively in that situation because his</p>
+<p>threshold level is, presumably, higher than normal.</p>
+<p>So it is that on some days, and against some op-</p>
+<p>ponents, it will take more (or less) in the way of inner</p>
+<p>arousal to approach (or exceed) your own particular</p>
+<p>threshold than on other days and against other oppo-</p>
+<p>nents. The way you happen to feel physically on a par-</p>
+<p>ticular day, your frame of mind, your personal feelings</p>
+<p>about your opponent and whatever subconscious influ-</p>
+<p>ences may be working on your psyche—any one or all</p>
+<p>of these things can tip the scales in one direction or the</p>
+<p>other.</p>
+<p>It’s a hard thing to explain. On some days, you get</p>
+<p>out on the court and you can be very keen to win and youll play super. Other days, you can go out with the same desire, but you don’t play with the</p>
+<p>same abandon.</p>
+<p>Yes, it is a hard thing to explain. The main reason is that most of us are unaware of the factors that affect the ever-changing relationship between the threshold level and the arousal level. I once allowed myself to be wired up to a biofeedback machine, which measures what psychologists call GSR—galvanic skin reaction. It’s a measurement of inner stress. A dial on the machine went up when the GSR was high and down when it was low. The weird thing about the test was that</p>
+<p>84 2. Emotions on the Court: The Mind at War</p>
+<p>when it registered higher, I was not consciously aware</p>
+<p>of any anxiety.</p>
+</section>
+<section class="chapter" id="sec-20">
+<h2>I never realized until I worked with a sports psy-</h2>
+<p>chologist in Australia that there were certain play-</p>
+<p>ers who were getting to me on a subconscious level. The psychologist would simply mention players’</p>
+<p>names. Some triggered a bigger response than</p>
+<p>others, and this surprised me because I wasn&#x27;t</p>
+<p>consciously aware that my reactions to these play-</p>
+<p>ers were any different from my reactions to other</p>
+<p>players.</p>
+<p>Most experienced players have a general grasp of</p>
+<p>their own stress reaction patterns and have jerry-rigged</p>
+<p>ways to deal with them. Indeed, most players maintain</p>
+<p>they need this inner excitement to hone their reflexes.</p>
+<p>“Without these feelings,” Chris Evert says, “it’s tough</p>
+<p>to get started. You feel flat and sluggish.”</p>
+<p>Early in my career I read an article that quoted</p>
+<p>Ted Williams as saying, “I never overcame ner-</p>
+<p>vousness.” That statement stuck with me through-</p>
+<p>out my career. I got to the point where I actully</p>
+<p>wanted my mouth to feel a little dry. I wanted to be</p>
+<p>aware of my heart pounding. It gave me the little</p>
+<p>edge I needed to play my best.</p>
+<p>It&#x27;s important that we not confuse what Seixas de-</p>
+<p>scribes here and what we might normally think of as</p>
+<p>nervousness or anxiety. To be nervous before a match</p>
+<p>is not necessarily to be worried, although the distinc-</p>
+<p>tion is sometimes difficult to make.</p>
+<p>I was always a little nervous before a match, but</p>
+<p>there was nothing specific I was afraid of. It never</p>
+<p>entered my mind, for instance, that I would double</p>
+<p>fault at a big point. It was more a general feeling.</p>
+<p>I&#x27;d go out and warm up and think to myself, this</p>
+<p>guy is hitting so great, how am I ever going to beat</p>
+<p>him. But this was good for me because it really</p>
+<p>forced me to look for weakness and develop an idea</p>
+<p>of how I should play in order to beat him. Even-</p>
+<p>tually, once I got into the match, I&#x27;d stop worrying</p>
+<p>about whether I was going to beat him and con-</p>
+<p>centrate on doing the job.</p>
+<p>Fortunately for Mulloy, he could pull off what he’s</p>
+<p>just described. Most players can’t. Most professionals</p>
+<p>get rid of their “butterflies” once the match heats up,</p>
+<p>but their minds still remain vulnerable to periodic at-</p>
+<p>tacks of steel elbow and related miseries. Knowing this,</p>
+<p>they have devised their own ways of coping. Wendy</p>
+<p>Overton, for instance, has learned that if she doesn’t</p>
+<p>come down too hard on herself in the beginning when</p>
+<p>she misses shots, she doesn’t get as nervous as she used</p>
+<p>to get early in her career.</p>
+<p>The mistake I used to make was to get so angry with myself as soon as I&#x27;d muff a few shots that by</p>
+<p>the time the match was halfway through, I was</p>
+<p>totally discouraged. Just learning to be nicer to</p>
+<p>myself helped my game tremendously.</p>
+<p>Another player with a regrettable tendency to get</p>
+<p>down on himself when his shots aren&#x27;t falling in is</p>
+<p>86 2. Emotions on the Court: The Mind at War</p>
+</section>
+<section class="chapter" id="sec-21">
+<h2>Manuel Orantes. But Orantes has learned in recent</h2>
+<p>years that if he can keep his mind calm and focus on what he has to do to put the other player under pres-</p>
+<p>sure, he can keep his nerves under control.</p>
+<p>One of the things I&#x27;ve learned about myself is that I can’t think about or even watch tennis before a</p>
+<p>match. What happens when I do this is that I be-</p>
+<p>come all stirred up inside. I do my best to keep</p>
+</section>
+<section class="chapter" id="sec-22">
+<h2>myself from getting angry and upset. I know as</h2>
+<p>soon as I do that my whole game will fall apart.</p>
+<p>For Ingrid Bentzer, letting her mind drift during the</p>
+<p>break to a subject that has nothing at all to do with ten-</p>
+<p>nis (“My little girl, for instance”) can often relax her</p>
+<p>when she feels she’s getting too tense for the good of</p>
+<p>her game. Brian Fairlie is one of many players who ad-</p>
+<p>vocates deep breathing whenever tension starts to seep</p>
+<p>in. Billy Talbert says that when he felt himself getting</p>
+<p>nervous in the middle of a match, he’d try to imagine</p>
+<p>that he was practicing and he insists it worked most of</p>
+<p>the time. Tony Roche has a habit of shaking his arm</p>
+<p>down between points. (“Just to keep it loose.”’)) Marty</p>
+<p>Riessen will do knee bends or jump up on his toes.</p>
+<p>“Keep the body loose,” he says, “and you can sometimes</p>
+<p>fool the mind.” John Newcombe amends Riessen’s the-</p>
+<p>ory by suggesting that you smile whenever you feel</p>
+<p>yourself getting too tense. “It’s tough to be tense and to</p>
+<p>smile at the same time,” he says.</p>
+<p>If none of these suggestions is of any help to you, you</p>
+<p>might consider Rod Laver’s advice.</p>
+<p>The thing that has always worked best for me</p>
+<p>whenever I felt I was getting too tense to play</p>
+<p>good tennis was to simply remind myself that the</p>
+<p>worst thing—the very worst thing—that could</p>
+<p>happen to me was that I&#x27;d lose a bloody tennis</p>
+<p>match. That’s all.</p>
+<p>The one thing I&#x27;ve learned about tension on the</p>
+<p>court that’s really helped me is something I got</p>
+<p>from Pancho Gonzales. He told me once that if</p>
+<p>you can somehow learn to relax in between points,</p>
+<p>the tension won&#x27;t build up in a match the way it</p>
+<p>does if you try to concentrate every second. Just as</p>
+<p>physical fatigue can make you mentally tired,</p>
+<p>mental fatigue can get you physically tired. What-</p>
+<p>ever you do to minimize the tension will make</p>
+<p>serious choking much less likely.</p>
+<p>Forget about the match and the point and the</p>
+<p>other player and just concentrate on watching the</p>
+</section>
+<section class="chapter" id="sec-23">
+<h2>ball. And if you muff a couple of easy shots, learn</h2>
+<p>to shrug them off. You can’t tell yourself enough</p>
+<p>times: it’s just a game.</p>
+<p>And, finally, a word from Vic Braden:</p>
+<p>You have to groove with it. Really. You feel your-</p>
+<p>self getting all nervous and aroused and the worst</p>
+<p>thing you can do, really, is fight it because it’s</p>
+<p>gonna surface, anyway. So what you want to do is</p>
+<p>88 2. Emotions on the Court: The Mind at War</p>
+<p>tell yourself how great it is that you&#x27;re feeling this excitement. Get used to the feelings. They can&#x27;t</p>
+<p>hurt you.</p>
+<p>Braden’s advice is particularly worth noting because it’s the ability to follow it that seems to separate the</p>
+<p>super great players from the routinely great. Most tennis players deal with their emotions and nerves by keeping them in check. The brain plays the role of</p>
+</section>
+<section class="chapter" id="sec-24">
+<h2>jailer. When the tension eventually arises, the result is</h2>
+<p>a more conservative style of play. Choking is taking place but its effects are not great because there is more</p>
+<p>choking taking place on the other side of the net. Then</p>
+<p>there are the players who manage to keep their nerves</p>
+<p>and emotions under control but in a way that enables</p>
+<p>them to maintain the same level of play regardless of</p>
+<p>the situation. Borg is such a player. So are Chris Evert,</p>
+<p>Harold Solomon, and Ken Rosewall. Each of these</p>
+<p>players is known for being able to play the “big points”</p>
+<p>well but I wonder if we&#x27;re not being fooled. What</p>
+<p>seems to happen frequently in big points involving</p>
+<p>these players is that their opponents are playing the</p>
+<p>big point poorly.</p>
+<p>Not that it makes a difference in the outcome. Borg,</p>
+<p>for instance, has expressed on many occasions his phi-</p>
+<p>losophy for playing big points, which is to keep the</p>
+<p>pressure on but not to unnecessarily risk an error. His</p>
+<p>game doesn’t come up on big points; it just doesn’t go</p>
+<p>down. On occasion he pays the price. Most players who</p>
+<p>watched the Borg—Connors Forest Hills final in 1976</p>
+<p>feel that Borg could have won the tiebreaker in the third</p>
+<p>set (and probably the match) if he had played more</p>
+<p>aggressively when Connors faltered and fell behind</p>
+<p>2-4. He didn’t. If anything, he played a little safer, wait-</p>
+<p>Antidote to Nerves: Confidence 89</p>
+<p>ing for Connors to take the initiative, which Connors,</p>
+<p>of course, did.</p>
+<p>Against most players, whenever I need only one</p>
+<p>more point to win the set or to break serve, I can</p>
+<p>hit the ball fairly shallow because most players</p>
+<p>will not go for a winner off that shallow shot. Theyll tighten up a little, hit the shot safer and</p>
+<p>give me a chance to win the point on the passing</p>
+<p>shot. But Connors doesn’t play it safe, he just hits</p>
+<p>out.</p>
+<p>Indeed Connors does. For he is one of those athletes</p>
+<p>blessed with the ability to lift the level of his game</p>
+<p>when confronted with pressure. Gonzales could do it.</p>
+<p>So could Laver in his prime. And Newcombe. And Billie Jean King. Granted, each of these players has extraordi-</p>
+<p>nary ability, but there is a special dimension to this</p>
+<p>ability—a dimension that can be called, for lack of a</p>
+<p>better term, confidence.</p>
+<p>ANTIDOTE TO NERVES: CONFIDENCE</p>
+<p>WHAT penicillin is to pneumonia, confidence is</p>
+</section>
+<section class="chapter" id="sec-25">
+<h2>to the choke. If you are confident—genuinely confident</h2>
+<p>—the sequence of psychological and physical events</p>
+<p>that produces choking on the court is simply not going</p>
+<p>to happen frequently enough to make a negative differ-</p>
+<p>ence in your tennis. You will choke on occasion, like</p>
+<p>everyone else, but you will do it less than most—and rarely when it really counts.</p>
+<p>90 2. Emotions on the Court: The Mind at War</p>
+<p>But how do we define a concept as vague and as fleeting as confidence? More importantly, how do we</p>
+<p>get a real handle on it?</p>
+<p>Roy Emerson: .</p>
+<p>The whole thing is to have a positive mental approach, You can see it in a player like Newcombe.</p>
+</section>
+<section class="chapter" id="sec-26">
+<h2>When Newcombe is serving well, you can feel the</h2>
+<p>confidence across the other side of the net. He’s not worried about the ball going in: he’s just blasting</p>
+<p>away. The worst thing you can do on a court ts to say to yourself: “Do I hit this serve with everything I have, or do I have to get it in?” You can&#x27;t think</p>
+<p>in these terms. You have to make up your mind</p>
+<p>that yowre going to hit the bloody serve and go</p>
+<p>ahead and hit it.</p>
+<p>Okay, that describes confidence, but we still haven&#x27;t</p>
+<p>pinned it down. Confidence is basically nothing more</p>
+<p>than a feeling—a belief that you can do a particular</p>
+<p>thing—but it shares with concentration a frustrating elusivity. You can be confident one moment and bereft</p>
+<p>of confidence the next. You can be confident in one set</p>
+<p>of circumstances and not in another. Roscoe Tanner,</p>
+<p>for obvious reasons, feels more confident on a fast sur-</p>
+<p>face that adds thunder to his serve than on a slow sur-</p>
+<p>face. Eddie Dibbs feels more confident on clay than he</p>
+<p>does on asphalt. It depends a lot on whom you&#x27;re play-</p>
+<p>ing, too. Marty Riessen, for example, suggests that a big</p>
+<p>reason American players tended to do better against</p>
+<p>Rod Laver in Laver’s prime than Australian players was</p>
+<p>that Americans weren’t as overwhelmed by the idea of</p>
+<p>playing Laver, “It always seemed to me,” Reissen says,</p>
+<p>Antidote to Nerves: Confidence 91</p>
+<p>“that most of the Australians conceded defeat even be-</p>
+<p>Let’s not overstate the case. In and of itself, confi-</p>
+<p>dence is not a form of behavior. Only when it is</p>
+<p>overlaid with some specific activity does it make its</p>
+<p>presence noticed. And even then, it can take you only</p>
+<p>as far as you are physically and technically capable of</p>
+<p>going. The most confident runner in the world isn’t go-</p>
+<p>ing to do a mile in four minutes if the lung capacity</p>
+<p>isn’t there. The most “confident” tennis player isn’t</p>
+<p>going to get very far if he spends too much time getting</p>
+<p>his head into gear and too little time on his tennis game.</p>
+<p>But what confidence can do is eliminate mental barriers that prevent you from performing to the outer</p>
+<p>limits of your capability. There is probably a finite</p>
+<p>limit to how well you can play on any day with confi-</p>
+<p>dence, but there is no limit to how poorly you can play if you lack it.</p>
+<p>The difference between feeling confident when</p>
+<p>youre playing and not feeling confident is that you</p>
+<p>never hesitate to go for shots and you&#x27;re not giving</p>
+<p>your opponent the extra opportunities you give him</p>
+<p>when yowre not feeling confident and you&#x27;re just trying to keep the ballin play.</p>
+<p>When you&#x27;re not confident, it affects nearly every-</p>
+<p>thing you do on the court: the way you move, the</p>
+<p>way you hit the ball, the way you think. You let winning opportunities go by, you tighten up on</p>
+<p>easy points. It’s the catalyst to your entire game. When it goes, your game goes.</p>
+<p>92 2. Emotions on the Court: The Mind at War</p>
+<p>Gottfried and Smith, of course, are talking in absolute terms. As Dennis Ralston reminds us, confidence</p>
+<p>can be as elusive as concentration, even more so.</p>
+<p>. It comes and goes in a match. You can serve a game and have a feeling that you can close your</p>
+<p>eyes and get every first serve in. Ten minutes</p>
+<p>later, you&#x27;ve lost it and you’re worrying about los-</p>
+<p>ing the game on double faults.</p>
+<p>Confidence feeds upon itself. A series of events seem</p>
+<p>to take place within the brain at one minute that deter-</p>
+<p>mines how you will feel about the same series of events</p>
+<p>two or three minutes from now—or even two or three</p>
+<p>weeks from now. Perhaps in anticipation of the re-</p>
+<p>markable potential for self-deception that exists within</p>
+<p>the human spirit, the brain appears to have been en-</p>
+<p>dowed with its own accounting system. When the time</p>
+<p>comes to make a judgment on whether you will or won&#x27;t</p>
+<p>succeed in a particular task, promises and salesman-</p>
+<p>ship will only go so far. If you have double faulted each</p>
+<p>of the past three service games at game point, the next</p>
+<p>time there’s a game point there is very little you can do</p>
+<p>to persuade the brain that it doesn’t have anything to</p>
+<p>worry about this time.</p>
+</section>
+<section class="chapter" id="sec-27">
+<h2>My feeling about confidence is that if you&#x27;ve got</h2>
+<p>one big shot you can really count on, it tends to</p>
+<p>carry over to the rest of your game. One of the</p>
+</section>
+<section class="chapter" id="sec-28">
+<h2>reasons J think there are more genuinely confident</h2>
+<p>men players than women players is that a lot of</p>
+<p>men players have tremendous confidence in their</p>
+<p>Antidote to Nerves: Confidence 93</p>
+<p>serves. So when the serve is working, they figure</p>
+<p>the worst they can do is stay even. Most women</p>
+<p>don’t have that luxury.</p>
+<p>Not that the brain isn’t receptive to a logical, well</p>
+<p>presented argument. Two weeks after he beat Jimmy</p>
+<p>Connors in the finals of the 1976 North American Zone</p>
+<p>Davis Cup finals, Raul Ramirez admitted that before</p>
+<p>the competition began he did not feel very confident</p>
+<p>about his chances. By the time he took the court against Connors in the finals, however, his mental attitude had</p>
+<p>changed.</p>
+<p>A very strange thing happened. Even though I</p>
+<p>didn’t give myself much of a chance against Con-</p>
+<p>nors, when the newspaper reporters and everyone</p>
+</section>
+<section class="chapter" id="sec-29">
+<h2>asked me what was going to happen (if it came</h2>
+<p>down to Connors and me in the final) I had to tell</p>
+<p>them that, of course, I thought I was going to win.</p>
+<p>So they started asking me why, and I started to</p>
+<p>think up reasons, And the more I thought about</p>
+<p>the reasons—especially the fact that I had Davis</p>
+<p>Cup experience and Jimmy didn’&#x27;t—the more I</p>
+<p>began to realize that I really was going to win.</p>
+<p>And when I finally went out on the court, I was very confident.</p>
+</section>
+<section class="chapter" id="sec-30">
+<h2>Call it psycho-cybernetics, if you will: when you have</h2>
+<p>a mental block about something, sit down and list all</p>
+<p>the reasons the mental block shouldn’t be there. It can</p>
+<p>work—providing, you are able to mount a strong argument.</p>
+<p>But in many situations where mental blocks exist, the</p>
+<p>mind is resistant to change, often unreasonably so.</p>
+<p>94 2. Emotions on the Court: The Mind at War</p>
+<p>Here it’s been at least six months since you’ve double</p>
+<p>faulted at a big point, and now you find yourself sud-</p>
+<p>denly starting to worry about it. Try to explain to the</p>
+<p>brain that what happened six months ago is past his-</p>
+<p>tory. The brain is likely to-remind you that history has a</p>
+<p>habit of repeating itself. It will even show you film</p>
+<p>clips.</p>
+<p>I once lost a match to Sandy Mayer when I double</p>
+<p>faulted at game point at 5-3 in the final set.</p>
+<p>Months later, whenever Id find myself in that</p>
+<p>same situation—where I was ahead in a close</p>
+<p>match on my serve—Id think back to that point,</p>
+<p>and I&#x27;d worry about it. This is not the way to win</p>
+<p>tennis matches.</p>
+<p>You get into winning or losing patterns. A lot of</p>
+<p>it’s getting the breaks. If you win a lot of close</p>
+<p>matches, your attitude when you get into close</p>
+<p>matches is, “No sweat, I&#x27;ve been here before and</p>
+<p>Pll be here again.” But if you start to lose a lot of</p>
+<p>close ones, or you get ahead in a match, then the</p>
+<p>whole picture changes. The other guy starts to</p>
+<p>catch up and you start to think, “Oh, oh, here it</p>
+<p>comes again.” Basically, I think this is what hap-</p>
+<p>pened to Stan Smith. He lost just enough of the</p>
+<p>edge so that the close ones he used to win he be-</p>
+<p>gan losing, and that changed his entire attitude</p>
+<p>about his game.</p>
+<p>Many players have trouble keeping negative in-</p>
+<p>fluences from infiltrating the mind. If Virginia Wade</p>
+<p>Antidote to Nerves: Confidence 95</p>
+<p>isn’t hitting the ball smoothly, she&#x27;ll get impatient with</p>
+<p>herself even if she’s well ahead, a trait shared by any</p>
+<p>number of players for whom looking good on a tennis</p>
+<p>court is as important as winning. Players who play</p>
+<p>very controlled tactical styles are often thrown off</p>
+<p>when the unexpected happens.</p>
+<p>Certain players have an idea in their minds that</p>
+<p>tennis is a very logical game, and that if you do</p>
+<p>A, B, and C, then X, Y, and Z will happen. Usu-</p>
+<p>ally, it will work out this way, but there’s a random</p>
+<p>element to tennis, too, and certain players simply</p>
+<p>cannot cope when the predictable things don’t</p>
+<p>happen. This is why I say that thinking too much</p>
+<p>on the court can get you into trouble.</p>
+<p>If the brain does indeed base its judgments on past</p>
+<p>performance, it’s logical to wonder why it doesn’t use</p>
+<p>as a frame of reference one’s good days and ignore the</p>
+<p>bad days? A capital suggestion, except for one thing:</p>
+<p>negative experiences in most cases seem to make a</p>
+<p>stronger impression than positive experiences, rather</p>
+<p>like a bank that is more curious about the time you</p>
+<p>went bankrupt than the ten times you created a suc-</p>
+<p>cessful business. Ultimately, negative experiences</p>
+<p>create a fallout whose residue appears to seep into the</p>
+<p>subconscious.</p>
+<p>The presence of these negative memory tapes deep</p>
+<p>within the subconscious is probably the principal bar-</p>
+<p>rier to a feeling of genuine confidence. The problem is,</p>
+<p>you can’t really get to these memory banks through</p>
+<p>conventional means. Often, the minute your conscious</p>
+<p>mind tampers with the brain’s memory bank, the brain</p>
+<p>96 2. Emotions on the Court: The Mind at War</p>
+<p>rejects the new data—without your consent or aware-</p>
+<p>ness.</p>
+<p>There seems to be two solutions to this dilemma. One is to stockpile a succession of positive experiences which, by their sheer weight, eventually work their way past the brain into the subconscious. There they can eradicate the negative tapes, or at least quiet them</p>
+<p>down. “I’m winning now because I’m confident,” Brian Gottfried said in the midst of his hot streak during the early part of 1977. “But the reason I’m confident is that I&#x27;m winning.” Torben Ulrich has a habit of slowly</p>
+<p>going through the motions of a stroke two or three</p>
+</section>
+<section class="chapter" id="sec-31">
+<h2>times after he has made an error. “All the bad habits</h2>
+<p>you accumulate in your life never leave you,” he ex-</p>
+<p>plains, “and sometimes, without any real reason, they&#x27;ll</p>
+<p>surface. What you have to do is put them back in</p>
+<p>their place by grafting the proper habits over them.”</p>
+<p>The second solution to the dilemma, and a more ad-</p>
+<p>venturous one, is to go right to the core of it. You cir-</p>
+<p>cumvent the brain altogether in order to reprogram</p>
+<p>the subconscious—i.e., you undergo hypnosis or a re-</p>
+<p>lated experience. More athletes than you might imagine</p>
+<p>have sought the help of hypnotists to restore confi-</p>
+<p>dence. One such resource is a Los Angeles man named</p>
+<p>Arthur Ellen, whose subjects have included hundreds</p>
+<p>of prominent performers and athletes, among them</p>
+<p>Harry Belafonte, Jackie Jensen, Maury Wills, Don</p>
+<p>Sutton, and, reportedly (no one will say for certain),</p>
+<p>Stan Smith. Ellen contends that when an athlete goes</p>
+<p>into a slump, the reasons are nearly always subcon-</p>
+<p>scious in origin.</p>
+<p>Hypnosis, Ellen is careful to point out, cannot imbue</p>
+<p>you with physical skills you do not already possess.</p>
+</section><footer class="end"><div class="sig">Tennis Books Library</div><div>English text extracted from the book's own PDF.</div></footer>
+</div>
+</div>
+</body>
+</html>

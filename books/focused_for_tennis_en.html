@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Focused for Tennis</title>
+<meta name="description" content="Tennis library">
+<meta name="author" content="Pham Duc Hai">
+<style>
+.tcq-book{
+  --tcq-paper:#faf9f5; --tcq-ink:#1a1c20; --tcq-ink-soft:#4a4e54;
+  --tcq-ink-faint:#8a8d93; --tcq-indigo:#1d5c63; --tcq-indigo-soft:#2f7d84;
+  --tcq-gold:#a8863c; --tcq-rule:#e2e1da; --tcq-panel:#ffffff;
+  background:var(--tcq-paper); color:var(--tcq-ink);
+  font-family:"Palatino Linotype","Book Antiqua",Cambria,"Times New Roman","Noto Serif",serif;
+  font-size:19px;line-height:1.78;-webkit-font-smoothing:antialiased;}
+.tcq-book .wrap{max-width:760px;margin:0 auto;padding:64px 28px 120px;}
+.tcq-book header.cover{text-align:center;padding:8px 0;}
+.tcq-book .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+.tcq-book header.cover .cover-art{width:100%;max-width:430px;margin:0 auto 30px;border-radius:10px;
+  box-shadow:0 14px 40px rgba(16,40,44,.28);display:block;}
+.tcq-book header.cover .kicker{letter-spacing:.28em;font-size:12px;text-transform:uppercase;
+  color:var(--tcq-indigo);font-weight:600;}
+.tcq-book header.cover h1{font-size:38px;line-height:1.16;margin:.4em 0 .12em;font-weight:600;
+  color:var(--tcq-ink);text-align:center;letter-spacing:0;}
+.tcq-book header.cover .sub{color:var(--tcq-ink-soft);font-size:20px;font-style:italic;}
+.tcq-book header.cover .blurb{color:var(--tcq-gold);font-size:16px;margin-top:.7em;
+  letter-spacing:.04em;}
+.tcq-book header.cover .by{margin-top:1.2em;color:var(--tcq-ink-faint);font-size:14px;
+  letter-spacing:.06em;}
+.tcq-book hr.lead{border:none;border-top:1px solid var(--tcq-rule);margin:36px 0;}
+.tcq-book .part-band{margin:88px 0 8px;padding:26px 0 22px;text-align:center;
+  border-top:1px solid var(--tcq-rule);border-bottom:1px solid var(--tcq-rule);}
+.tcq-book .part-band .part-kicker{letter-spacing:.3em;font-size:12px;text-transform:uppercase;
+  color:var(--tcq-gold);font-weight:600;}
+.tcq-book .part-band .part-name{font-size:23px;color:var(--tcq-indigo);margin-top:.5em;
+  font-style:italic;}
+.tcq-book .chapter{margin-top:56px;}
+.tcq-book h2.ch-title{font-size:29px;line-height:1.25;margin:0 0 .1em;font-weight:600;
+  color:var(--tcq-ink);letter-spacing:0;font-style:normal;
+  border-bottom:2px solid var(--tcq-indigo);padding-bottom:.25em;}
+.tcq-book h3{font-size:21px;margin:40px 0 12px;font-weight:600;color:var(--tcq-indigo);
+  font-style:normal;letter-spacing:0;}
+.tcq-book h4{font-size:18px;margin:30px 0 8px;font-weight:600;color:var(--tcq-gold);
+  font-style:normal;letter-spacing:.02em;}
+.tcq-book p{margin:0 0 1.15em;text-align:justify;hyphens:auto;color:var(--tcq-ink);}
+.tcq-book p.lead-p{font-size:21px;color:var(--tcq-ink-soft);}
+.tcq-book strong{color:var(--tcq-ink);}
+.tcq-book em{color:var(--tcq-ink-soft);}
+.tcq-book .toc{margin:44px auto 0;max-width:560px;background:var(--tcq-panel);
+  border:1px solid var(--tcq-rule);border-radius:8px;padding:26px 32px;}
+.tcq-book .toc-title{font-size:15px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--tcq-indigo);margin:0 0 .9em;font-weight:600;font-style:normal;}
+.tcq-book .toc-part{font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--tcq-gold);font-weight:600;margin:1.3em 0 .4em;}
+.tcq-book .toc-part:first-of-type{margin-top:.4em;}
+.tcq-book .toc ol{margin:0;padding-left:0;list-style:none;}
+.tcq-book .toc li{margin:.42em 0;font-size:16px;}
+.tcq-book .toc a{color:var(--tcq-ink);text-decoration:none;border-bottom:1px solid transparent;}
+.tcq-book .toc a:hover{border-bottom-color:var(--tcq-indigo);}
+.tcq-book dl.glossary{margin:0 0 1.2em;padding:0;}
+.tcq-book dl.glossary dt{font-weight:600;color:var(--tcq-indigo);margin:1.15em 0 .15em;
+  font-size:18px;}
+.tcq-book dl.glossary dd{margin:0 0 .3em;padding-left:1.4em;color:var(--tcq-ink-soft);
+  font-size:18px;line-height:1.7;text-align:justify;}
+.tcq-book footer.end{margin-top:90px;border-top:1px solid var(--tcq-rule);padding-top:26px;
+  color:var(--tcq-ink-faint);font-size:14px;text-align:center;line-height:1.9;}
+.tcq-book footer.end .sig{color:var(--tcq-indigo);font-size:15px;letter-spacing:.08em;}
+body.dark-mode .tcq-book{
+  --tcq-paper:#0f1416; --tcq-ink:#e6e7e3; --tcq-ink-soft:#b0b3af;
+  --tcq-ink-faint:#878b90; --tcq-indigo:#7fbfc4; --tcq-indigo-soft:#5fa3a9;
+  --tcq-gold:#c9a961; --tcq-rule:#283135; --tcq-panel:#161d20;}
+body.dark-mode .tcq-book p,
+body.dark-mode .tcq-book li,
+body.dark-mode .tcq-book dd,
+body.dark-mode .tcq-book div{color:var(--tcq-ink);}
+body.dark-mode .tcq-book p.lead-p,
+body.dark-mode .tcq-book em,
+body.dark-mode .tcq-book dl.glossary dd{color:var(--tcq-ink-soft);}
+body.dark-mode .tcq-book header.cover .by,
+body.dark-mode .tcq-book footer.end{color:var(--tcq-ink-faint);}
+body.dark-mode .tcq-book h2.ch-title,
+body.dark-mode .tcq-book header.cover h1{color:var(--tcq-ink) !important;}
+body.dark-mode .tcq-book h3,
+body.dark-mode .tcq-book dl.glossary dt,
+body.dark-mode .tcq-book header.cover .kicker,
+body.dark-mode .tcq-book .toc-title,
+body.dark-mode .tcq-book footer.end .sig,
+body.dark-mode .tcq-book .part-band .part-name{color:var(--tcq-indigo) !important;}
+body.dark-mode .tcq-book h4,
+body.dark-mode .tcq-book header.cover .blurb,
+body.dark-mode .tcq-book .toc-part,
+body.dark-mode .tcq-book .part-band .part-kicker{color:var(--tcq-gold) !important;}
+body.dark-mode .tcq-book .toc a{color:var(--tcq-ink);}
+body.dark-mode .tcq-book strong{color:var(--tcq-ink) !important;}
+@media (max-width:760px){
+  .tcq-book .wrap{padding:40px 20px 80px;}
+  .tcq-book header.cover h1{font-size:28px;}
+  .tcq-book header.cover .cover-art{max-width:320px;}
+  .tcq-book dl.glossary dd{padding-left:.8em;}
+  .tcq-book .part-band .part-name{font-size:19px;}
+}
+@media print{
+  .tcq-book .toc{break-after:page;}
+  .tcq-book .chapter{break-before:page;}
+  .tcq-book .part-band{break-before:page;break-after:avoid;}
+  .tcq-book dl.glossary dt{break-after:avoid;}
+}
+
+/* breadcrumb — sits above .tcq-book, so it carries its own palette.
+   Colours/scale mirror the reference TFL books (#2–#8): .9rem, muted
+   #5b6572 separator, the book's own accent for the root link. */
+.tu-breadcrumb{background:#faf9f5;padding:16px 0 4px;font-size:.9rem;color:#6b6f76;
+  font-family:"Palatino Linotype","Book Antiqua",Cambria,"Times New Roman","Noto Serif",serif;}
+.tu-breadcrumb__list{list-style:none;display:flex;flex-wrap:wrap;gap:2px 8px;
+  max-width:760px;margin:0 auto;padding:0 28px;align-items:center;}
+.tu-breadcrumb__item{margin:0;}
+.tu-breadcrumb__link{color:#1d5c63;text-decoration:none;}
+.tu-breadcrumb__link:hover{text-decoration:underline;}
+.tu-breadcrumb__sep{color:#5b6572;margin:0 2px;user-select:none;}
+.tu-breadcrumb__current{color:#1a1c20;font-weight:500;}
+</style>
+</head>
+<body>
+
+
+<nav class="tu-breadcrumb" aria-label="Breadcrumb">
+  <ol class="tu-breadcrumb__list">
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/books/">Tennis Books Library</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item tu-breadcrumb__current" aria-current="page">Focused for Tennis</li>
+  </ol>
+</nav>
+<div class="tcq-book">
+<div class="wrap">
+<header class="cover"><div class="kicker">Tennis Library</div><h1>Focused for Tennis</h1><div class="by"></div><p style="text-align:center;margin:18px 0 0;font-family:var(--tcq-sans,sans-serif);font-size:14px;letter-spacing:.02em;"><a href="https://github.com/tenniskb/tenniskb.github.io/releases/download/books-pdf-v1/focused-for-tennis.pdf" target="_blank" rel="noopener" style="color:#1d5c63;font-weight:600;text-decoration:none;border:1px solid #cfd8d4;border-radius:6px;padding:7px 14px;display:inline-block;">Read the original PDF &#8599;</a></p></header><div class="toc"><div class="toc-title">Contents</div><ol>
+<li><a href="#sec-1">Part 1  ·  pp. 10–39</a></li>
+<li><a href="#sec-2">Part 2  ·  pp. 40–69</a></li>
+<li><a href="#sec-3">Part 3  ·  pp. 70–99</a></li>
+<li><a href="#sec-4">Part 4  ·  pp. 100–129</a></li>
+<li><a href="#sec-5">Part 5  ·  pp. 130–139</a></li>
+</ol></div><section class="chapter" id="sec-1">
+<h2>Part 1  ·  pp. 10–39</h2>
+<p>Pais book is for every tennis player who wants to move up to the next level of play. Written by a sport psychologist and a veteran</p>
+<p>of the pro tour, it helps players build successful strategies on a simple yet often neglected premise: What you do when the ball is out of play can be just as important as what you do when you hit the ball—if not more so.</p>
+<p>You needn’t look far to test this premise yourself. In tennis and in life, the way we think about things—whether we encourage</p>
+<p>ourselves or knock ourselves down—can make the critical difference between success and failure. When you are playing badly, you can make things worse by berating yourself. (Say “You’re terrible!” often enough and you start to believe it—and make it true.) Frustrations and distractions can make you forget your game plan.</p>
+<p>This book describes a powerful system that will let you solve</p>
+<p>this problem and unlock your best tennis. We first developed it with highly competitive players, then shared it with players at all levels. The message they ‘brought back was loud and clear: “This works! I wish I’d been doing it earlier!” The system teaches you to</p>
+<p>focus your thoughts and behavior during the 25 seconds between points when the ball is out of play, and also during the 90 seconds at</p>
+<p>changeovers. It also works between matches—the time during the week when you are not playing, but are thinking ahead to a match.</p>
+<p>Sport psychologist Jim Loehr first studied the way top tennis play-</p>
+<p>ers used their time between points to collect themselves, to relax, and to go through various behavioral routines to prepare for either</p>
+<p>serving or returning. His article in World Tennis (February, 1990)</p>
+<p>still provides useful insight on the importance of between-point activity in tennis. Our system builds on this early work, and psy-</p>
+<p>chology studies of “off-task” behavior for individuals and groups. We use the “STOP” technique from clinical psychology and sev-</p>
+<p>eral other sport psychology tools. Compared with other approaches, our system is shorter and easier to remember. And, as players at all levels have found, it works! (See the references at the back of the book.)</p>
+<p>Here’s how it goes: The system teaches you to Release your reaction to the point you just finished, so you can go forward fresh and ready. Then it helps you to Review where you are in the match, check your game plan, and use key images and code words to help you focus, after which you Reset yourself with a behavioral routine that helps you get ready to put the ball in play or return</p>
+<p>serve. We call this the Three R’s—Release, Review, and Reset. You will find that you can apply the system between points and at</p>
+<p>changeovers and also to other areas of your life. In the course of teaching the Three R’s system around the world, we have had many players tell us they use it to succeed in activities as diverse</p>
+<p>as business negotiations, standardized tests, and other sports such as golf, soccer, baseball, and basketball.</p>
+<p>We love the game of tennis, and we love to help anyone who wants to improve. Our backgrounds include a range of experience</p>
+<p>with the game. Slaikeu first started to play after learning how to hold a racket from instructions in the World Book Encyclopedia,</p>
+<p>and then practiced hitting against the wall in a church basement. Trogolo came up through the junior competitive ranks, spent sev-</p>
+<p>eral years on the pro tour, and then coached players such as Michael Chang, Kevin Curren, and Richie Rennenberg, as well as the Malaysian Davis Cup team. These days we work with players at all levels, some new to the game and others who want more than</p>
+<p>anything else to beat one special person who has been giving them trouble for years. We have not found a player who cannot get better by improving mental focus—and for us, the Three R’s system of-</p>
+<p>fers the best path to this goal. We are excited about the opportunity to bring our system to you through the pages of this book.</p>
+<p>W. are indebted to the numerous players and coaches who have assisted us in testing and refining the Three R’s system</p>
+<p>over the past several years. We give particular thanks to: Diane Slaikeu for helping us bring conceptual clarity to the three phases, and for drawing on her experience as a tennis parent and tennis spouse in making the system user-friendly; Ingrid Ramsey and Hilary Powers for their assistance in editing the manuscript and</p>
+<p>to Robert Dole for his help with the player profiles and numer-</p>
+<p>ous other production tasks. Special thanks to Ann Blackwood, Natalie Pham, Luke Smith, Kristina Slaikeu, Micah Thompson, and Jamin Thompson for helping with photos to illustrate the Three R’s System.</p>
+<p>Karl A. Slaikeu, Ph.D.</p>
+<p>Robert Trogolo September, 1996</p>
+<p>What do you do between points? For every hour in a tennis match, the ball is in play only 4 to 15 of the total 60 minutes. This means that you spend less than one-fourth of your time hitting the ball, and three-fourths or more walking around, toweling off,</p>
+<p>and thinking. Perhaps you spend some of that time looking off to the side, letting your mind wander to something unrelated to the task at hand. Or you might be thinking ahead to the next point. If you have problems maintaining your focus, you may be committing one or more of the “seven deadly sins” of between-point ten-</p>
+<p>nis. See if any of these apply to you.</p>
+<p>1. Exploding. You do not handle frustration well. You have a hair trigger and sometimes blow up between points. When you</p>
+<p>aren’t playing well you throw your racket, hit the ball against the</p>
+<p>screen, or condemn yourself (and the world, and the heavens) loudly and perhaps profanely. Sometimes you regain your focus, but often the intense feelings of the explosion spill over into the</p>
+<p>next point. Instead of improving your play, all that energy makes you play worse.</p>
+<p>2. Holding it in. This is the opposite of exploding. You think of yourself as the strong, silent type, but the inner you often</p>
+<p>churns on the tennis court. You do not show your feelings, but keep them bottled up inside. Meanwhile, your body gets tense,</p>
+<p>sometimes so tense you can’t execute shots properly. At its worst,</p>
+<p>your control turns to a choke. You would like to let it out, but you do not know how to do so in a good way.</p>
+<p>3. Rushing. You play fast. Sometimes too fast. Your speed is okay when you are playing well, but when you are playing badly, you rush your serve, sometimes double fault, and things start to</p>
+<p>go downhill. You sometimes “donate” points and games by making unforced errors one after another. When it is bad, it gets very bad. You would like to slow down and collect yourself, but you</p>
+<p>do not do so when you most need to.</p>
+<p>4. Not thinking. You have told yourself to get your first serve in, or to turn your shoulders more when executing a forehand, but you forget to do it. You are not winning the big points when</p>
+<p>you need to. You get so caught up in the action, or so worried</p>
+<p>about the outcome (“I can’t let this guy beat me!”) that you don’t think. Sometimes after a match you wonder: “What was I doing</p>
+<p>out there?” Fact is, you do not know.</p>
+<p>5. Catastrophizing. It’s not just the game of tennis. It’s not just</p>
+<p>the point. It’s not just the double fault. It’s life! After all, tennis is life, and when you play badly, you want to pack it in! Something</p>
+<p>small becomes something large and catastrophic. You cannot seem</p>
+<p>to stop yourself.</p>
+<p>6. Wandering. You have no pattern for what you do between</p>
+<p>points. You wander over to pick up the ball, move to the line to</p>
+<p>serve, look at your opponent, and put the ball in play. Sometimes you bounce the ball two times, other times once, and on other</p>
+<p>occasions you give it six bounces. There is no pattern to it, and</p>
+<p>you are not sure what the pattern should be like even if you wanted one.</p>
+<p>7. Sleeping. You don’t actually close your eyes, lie down, and go to sleep—but it sometimes seems that way. You simply</p>
+<p>are not in the game. Your mind goes someplace else. It seems</p>
+<p>as if you want to withdraw. Maybe the prospect of losing to this opponent is so frightening that you want to get out of there,</p>
+<p>and one way to do so is to act as if you are sleepily going through the motions. Or perhaps you did have a bad night’s</p>
+<p>sleep and it shows. The problem is that you do not have a way</p>
+<p>to snap yourself out of it and bring out your best between points.</p>
+<p>4 \ than to catch up!</p>
+<p>As I read over the list of the seven deadly sins that Karl and I put together for this chapter, I have vivid memories of play-</p>
+<p>ers falling prey to every one of them. Start off with exploding.</p>
+<p>I once saw a doubles match in which a player got hit hard by an overhead and took a few seconds to get going again.</p>
+<p>The umpire gave him a warning for delay of game. The player</p>
+<p>proceeded to tell the umpire where to go. The umpire said,</p>
+<p>“Game,” (defaulting that game). The player said, “#!?*!#?! you, you, #!?*!#?!” and the umpire said, “Match!”</p>
+<p>Catastrophizing is another favorite with many players. It is not just a bad game, or a bad set, but the whole world goes to hell in a handcart. I can remember sitting in the stands,</p>
+<p>about 100 feet from the court, as my guy walked over and held his hands up in the air, shaking them and looking at me</p>
+<p>as if to say, “I don’t know what to do. Why is this happening to me?” Juniors do this a lot, saying negative things like “I’m</p>
+<p>so stupid. I can’t believe how bad I am.” They jump directly from a bad point or a bad game to a “bad me.”</p>
+<p>Not thinking reminds me of one of my players who lost a match at the U.S. Pro Indoors to a player with whom he was</p>
+<p>on really bad terms—these guys hated each other and called each other every name in the book throughout the match— and when my guy played the same player in the next tournament, he could not forget the previous match. We had a game</p>
+<p>plan, but he could not focus on it. In the second match he was up a set and a break, but lost the match. My impression was that he actually relived the previous match and could</p>
+<p>not get it out of his mind.</p>
+<p>And then there is sleeping. If I had a nickel for every player I have seen who wanders on the court and drops the first set,</p>
+<p>deciding to wake up and get into the match in the second set when he suddenly realizes he has to win, I would be a rich man. I now tell my players to use the Three R’s to get ready to win the first point, game, and set. It’s easier to stay ahead</p>
+<p>YOU MIGHT NOT BE AS CRAZY AS YOU THINK!</p>
+<p>Don’t think yourself too strange if you are guilty of one or more of these sins. We all fall into them at one time or another. As a matter of fact, psychologists have found these same sins crop up pre-</p>
+<p>dictably in both individual and group behavior in all sorts of fields. Whenever people put aside the task at hand, they tend to be more</p>
+<p>susceptible to negative thinking and behavior than when they are</p>
+<p>engaged in the task. You see the same phenomenon between points in tennis.</p>
+<p>Have a look at the two columns in table 1.1. On the left is a summary of the research on individuals and groups, and the characteristics of what can happen to any of us during off-task activity, whether at school, at work, or in sport. On the right is the between-</p>
+<p>point version that shows what can happen to us on the tennis</p>
+<p>court. As a quick glance shows, the following can strike any of us during the in-between time: A rise in self-defeating behavior, a drop in self-esteem, or a derailment of dedication and drive leading to frustration. It is normal under stress—in the off-task time—</p>
+<p>to look back at the problems instead of looking forward to what you need to do next. It is normal when you are under stress to have</p>
+<p>a difficult time planning your next move. At times, your thoroughness and the quality of what you are doing can decrease, lead-</p>
+<p>ing to unforced errors. Muscles tighten up and executing shots</p>
+<p>can become a problem. You become susceptible to a choke.</p>
+<p>Figure 1.1 gives a visual summary of the Three R’s system. The system shows three events, each customized to your own personality, that will occur between each point: Release (followed by a</p>
+<p>STOP), Review (followed by another STOP), and then a Reset routine, after which you put the ball in play. As we shall see, you can</p>
+<p>learn to take charge of any situation between points by channeling your thoughts, feelings, and behavior through these three phases.</p>
+<p>Think of it this way: The point is over, and you have 25 seconds</p>
+<p>or so before you serve or return. Picture this time as your opportunity to react appropriately to what just happened (whether it was</p>
+<p>Table 1.1 “Off Task” Psychology</p>
+<p>Psychologists researching individual and group behavior have identified several predictable hazards during “off task” activity, which</p>
+<p>we can compare to “between point” time in tennis. In the table be-</p>
+<p>low, we have listed the characteristics of individuals and groups during non-work or off-task activity to the left, and the between</p>
+<p>point tennis version to the right.</p>
+<p>Members devote energy to self-defeating ends.</p>
+<p>abuse, or throw your racket.</p>
+<p>Self-esteem decreases. Your self-talk becomes</p>
+<p>negative: “You&#x27;re terrible!,” “You can&#x27;t play!,” “You should quit!”</p>
+<p>LESCOL ELOISE RESELL SSE BNE LT</p>
+<p>Drive and dedication in the face of constraints lead to frustration and burnout in</p>
+<p>highly motivated and committed individuals.</p>
+<p>when you play badly.</p>
+<p>g Foresight becomes hindsight. You keep looking back</p>
+<p>instead of ahead. You’re down only one break, but you can’t get it out of your mind that you had break points and</p>
+<p>blew it!</p>
+<p>Predictive capacity decreases. You are so upset that you</p>
+<p>can&#x27;t think ahead.</p>
+<p>YESS OOOO NOR USCA SE IEEE RNASE LISI TEE IE TEES DSTO</p>
+<p>decreases.</p>
+<p>You make unforced errors.</p>
+<p>r The work climate deteriorates. At its worst, the court feels</p>
+<p>like a disaster scene for your</p>
+<p>game.</p>
+<p>SDR DINE CLUE IAM RELEE DEEDES OEE LE LITE BELLE SSPE LES EDDIE TEREBRES</p>
+<p>Perception narrows. You can’t get the negatives out of your mind, and can’t</p>
+<p>broaden the horizon to see where you are in the match and what needs to be done</p>
+<p>next.</p>
+<p>Manual support systems Your muscles tighten up; you deteriorate. can&#x27;t execute your shots, and you choke.</p>
+<p>EER SEES SES IES REIS LEO EIR BEN ESS I DNS EES BEI IIE</p>
+<p>RAL ARERR RO TT ON ONT TE NEE NEI SLI DTI LIED. SEIS ELIE EE EEE EAE I SEIN EE EO GREELEY SOLER ISELESEEOEII CS ILIS ISS em</p>
+<p>a rather uneventful point, a wild success, or a major disappointment), check where you are in your game plan and what you want</p>
+<p>to do next, and Reset your mind and muscles for the next point. That is, Release the previous point, Review where you stand, and Reset for the next point. It doesn’t take long to run through the Three R’s—and, after all, if you weren’t doing the Three R’s, you’d</p>
+<p>be doing something else. Probably something less constructive</p>
+<p>for your game. Let’s have a brief look at each phase.</p>
+<p>The Release is a letting‘go of the point that has just been completed. Sometimes the Release is very mild, as in the early going</p>
+<p>of any match, when you finish hitting a good shot and simply turn away from the ball and say or think to yourself, “All right!”</p>
+<p>No one really notices that you are conducting a Release. You have</p>
+<p>simply made a positive statement to yourself about the point just completed. At other times, the Release may be wide open to the public. For example, making fun of yourself after missing a shot is a form of Release. Releases can be positive or negative. If you</p>
+<p>are feeling good, then the Release will be positive, perhaps a fist</p>
+<p>pump or some other affirmation of what just happened. If you</p>
+<p>are playing badly and are upset, nervous, or angry, a Release might</p>
+<p>take the form of saying something out loud—though it’s best to</p>
+<p>train yourself to make statements that don’t invite code violations. The best Releases in situations in which you aren’t play-</p>
+<p>ing well are those where you immediately imitate the shot you wish you had made. For example, if you fail to turn when you volley and instead hit the ball with your shoulders square to the</p>
+<p>net, sailing it long, you might immediately fix it—that is, turn, take an appropriate step toward the net, and hit an imaginary</p>
+<p>ball properly. This is an example of a constructive Release aimed</p>
+<p>at letting go of negative energy by channeling it in a constructive</p>
+<p>direction.</p>
+<p>The next phase is Review, in which you think about what just happened and make plans for how you will play the next point. For example, you might switch your racket to your other hand, walk toward the baseline, and think something along the lines of:</p>
+<p>“What just happened? Did I make an unforced error, or is my</p>
+<p>Figure 1.1 The Three Rs: Sequence</p>
+<p>opponent outplaying me? Do I need to change anything in my</p>
+<p>game plan or should I stay with what I am doing?” This is also the time when you will remind yourself of your own game plan, perhaps with code words—which we&#x27;ll discuss later. Or you might</p>
+<p>say key preplanned phrases to yourself that help you focus (“First</p>
+<p>serve in, and make the first volley!”).</p>
+<p>The final R is the Reset routine you go through before serving or</p>
+<p>returning. This is a preplanned series of steps, customized to</p>
+<p>your own style of play, that will relax you (or, if needed, rev you</p>
+<p>up) before the next point. When serving, you might stand in the back court and look at your opponent, then step to the line and</p>
+<p>call the score. Then you imagine the serve you will hit, take a</p>
+<p>deep breath and exhale to relax, bounce the ball your preferred number of times, and pause before you begin the service motion. When returning serve, you may go through a sequence that in-</p>
+<p>cludes walking confidently into the return area, looking at your opponent, bouncing on your toes, and doing a split step before returning the serve. Most Reset routines will be of the relaxing</p>
+<p>type, though sometimes, if you are underaroused and cannot seem to get moving, you will need to rev up. In this case, your Reset</p>
+<p>may include slapping your thigh and saying something to your-</p>
+<p>Note in table 1.2 that the phases are separated from one another by the word STOP. The Three R’s system uses a STOP technique</p>
+<p>to end the Release phase and keep it from spilling over into the Review. Similarly, a STOP after the Review (the thinking part) keeps it from spilling over into the Reset routine. The STOP tech-</p>
+<p>nique is borrowed from thought stopping, a tool clinical psy-</p>
+<p>chologists use to help patients deal with obsessive thoughts, and is a powerful way to end one behavior in the sequence and move to another. The STOP technique is discussed in more detail in</p>
+<p>chapter 2.</p>
+<p>The next few chapters will give you more on each of the Three R’s</p>
+<p>and will show you how to apply the system to your own game. As you read through the chapters and apply the exercises to your</p>
+<p>own situation, keep in mind that:</p>
+<p>e The system does not require you to change your personality. Some people are simply more emotional than others, with a greater need to let out their feelings. Others are more private and keep things inside. That’s fine. The Three R’s will not change</p>
+<p>Table 1.2 The Three R’s Make a Difference</p>
+<p>| play fast. | take full advantage of the 25 seconds between points.</p>
+<p>| let my frustrations out in negative ways, and sometimes get code violations.</p>
+<p>| Release the negative, and then | move on.</p>
+<p>| forget my game plan. | Review my game plan.</p>
+<p>| am vulnerable to choke, tank, or distraction.</p>
+<p>IL LS IEE EOIN E RO OBER ES DIRS SEI SIE RTS DEEPEN ERS ERO EONS SORE</p>
+<p>| might get nervous, discouraged, or distracted, but | channel it through a Release,</p>
+<p>STOP it, then a Review so | can get back into the game effectively.</p>
+<p>it is hard to get back up.</p>
+<p>If | am down,! use the STOP and add rev up moves to my</p>
+<p>Reset routine to get going again. ‘</p>
+<p>| get discouraged by errors.</p>
+<p>| correct errors as they occur, getting stronger with each</p>
+<p>point.</p>
+<p>&amp; nent back in.</p>
+<p>EERE NE LEE LE TE EEE EMESIS LEE LESTE DN DEIR DE ENO</p>
+<p>When | am ahead, | use Review and Reset to stay focused and close out the</p>
+<p>match.</p>
+<p>this basic tendency, but instead will teach you ways to handle your thoughts and feelings between points in keeping with your</p>
+<p>personality type.</p>
+<p>e The Three R’s system does not require you to be positive all</p>
+<p>the time. It does help you to be constructive when things go badly.</p>
+<p>Tennis is a rough-and-tumble sport, and you will sometimes get</p>
+<p>angry or frightened or depressed about it. The Three R’s system teaches you to express these feelings appropriately, then to STOP</p>
+<p>and move on to the next step.</p>
+<p>e The Three R’s system does not require you to think all the time. You will think about where you are in the match at certain times between points, but this will not keep you from reaching the zone, the mental and physical space where good play flows</p>
+<p>seemingly effortlessly. Indeed, the Three R’s will help you find your zone and play in it more often!</p>
+<p>Here are some things that the system does require of you:</p>
+<p>e A desire to improve. Here you are home free! If you did not have a desire to improve, you would not be reading this book. If you are like the rest of us, you know that deep inside you have</p>
+<p>some great shots and a will to win. The only problem is that you</p>
+<p>cannot hit those great shots or win on a regular basis. The very</p>
+<p>desire to bring out your best tennis is the starting point.</p>
+<p>e An open mind. The standard sport psychology tools have been around for a long time, and there are not very many new ones. All we have done is repackage standard tools in a way that anyone</p>
+<p>can use. Before you decide whether the system will help you, make sure you understand all three phases (with the intervening</p>
+<p>STOP techniques), that you have customized them for personal use, and have practiced them awhile. Then let the results speak</p>
+<p>for themselves.</p>
+<p>¢ Practice. Think of the last time a coach helped you change any part of your game. It may have involved learning a kick serve. Maybe you had to change your grip. It felt awkward at first, right? And so will the Three R’s. Using the system will feel awkward at</p>
+<p>first, but this will change as you practice, practice, practice.</p>
+<p>In 1987, at age 15,Michael Chang became the I SZ towinamain</p>
+<p>draw match at the U.S. Open and ended the yearranked 163. He turned pro</p>
+<p>in 1988. In 1989, Chang was the first American male to win the French Open</p>
+<p>since Tony Trabert in 1955 and at age 17became the youngest French Open</p>
+<p>and Grand Slam champion. By 1996 Chang compiled a 7-10 record playing</p>
+<p>against Top 10 opponents and assembled a 50-9 record on hard courts. He</p>
+<p>finished the year ranked 2 with‘four titles and as a finalist at the Australian</p>
+<p>and the U.S. Opens, bringing in $2,015,699 in prize money.</p>
+<p>Michael is a swift player and has an all-court game but prefers to play</p>
+<p>baseline. He is known for his consistency on the court, regardless of his per-</p>
+<p>formance. If he hits a good shot, sometimes he will pump his fist. He rarely</p>
+<p>gets visibly frustrated over mistakes. His review is consistent: If he misses a</p>
+<p>forehand or backhand return, he will stroke three or four times to make sure</p>
+<p>he has a clear picture of what the correction feels like. Chang developed his</p>
+<p>tough mental edge coming up in the juniors and developed a reputation</p>
+<p>for fighting for every point.</p>
+<p>Michael Chang was born February 22, 1972, in Hoboken, New Jersey. His</p>
+<p>parents are research chemists; his father Joe introduced him to the game</p>
+<p>and still guides his son. Chang supports grassroots tennis development in</p>
+<p>Asia through his Stars of the Future program in Hong Kong and the Reebok</p>
+<p>Challenge across Asia. Chang, an avid fisherman, often finds time to fish while</p>
+<p>traveling. He also breeds tropical fish. He is a national spokesperson for the</p>
+<p>National Fish &amp; Wildlife Federation. He lives in Henderson, Nevada.</p>
+<p>Levanopengenasive encanto wrrrennranet neh ant CR OOYMEN TCR ERT STARS P EOS NST Tools — — -ccanrsonoeemenendnaancanseeioa nee NAH R SONOS SHEEN</p>
+<p>4 ai Three R’s Sport Psychology System draws on many sport psychology tools, some of which may not be familiar to you. If you already know about the topics listed below, then proceed di-</p>
+<p>rectly to chapter 3. If not, read this chapter to learn the standard techniques for channeling thoughts, feelings, and behavior both</p>
+<p>on and off the court. If you are experienced with them, you may still want to review this chapter before learning how to create your customized Three R’s. Here are the tools:</p>
+<p>Can you picture what you ate for breakfast this morning? Can you picture yourself hitting strong ground strokes, creating a short ball, and moving in to knock the ball off for a winner? If so, you</p>
+<p>already know how to practice ‘imagery. The clinical and sport psychology literature is filled with articles and case studies describing the use of imagery to help individuals solve problems and enhance performance in a variety of fields.</p>
+<p>In the Three R’s Sport Psychology System, imagery comes into play during the Review phase (for example, when you picture your</p>
+<p>game plan and choose which one you will carry out on the next</p>
+<p>point), and in the Reset phase (when you imagine a perfect toss, a</p>
+<p>smooth motion to hit your serve, following the ball to the net for a volley, and actually winning the point). You can practice imagery by doing the relaxation exercise described later in this chapter.</p>
+<p>If you have been around the sport of tennis for any time at all, you know that tennis players talk to themselves. Frustrated players</p>
+<p>often say negative things to themselves, and other times they yell</p>
+<p>statements to pump themselves up: “Come on, John! Let’s go!” What you might not know is that these players are practicing a psychology tool that has been 8tudied quite extensively in clini-</p>
+<p>cal situations. The idea behind the tool is that as human beings we do not simply live life. Instead, we reflect on what has happened and we make statements to ourselves about what we are</p>
+<p>going through. These statements that we make (usually statements</p>
+<p>to ourselves, though sonietimes made audible so others can hear them) are what psychologists refer to as self-talk.</p>
+<p>Self-talk has power as’a sport psychology tool because it provides the means by which you can turn an event in a positive or negative direction. You may have heard the quote from</p>
+<p>Shakespeare that it’s not things themselves that are good or bad,</p>
+<p>but the thinking that makes them so. Consider an example. You</p>
+<p>are playing against an opponent you have never beaten, and after having two break points, when tied at 3-3 in the first set, you lose</p>
+<p>the game as your opponent holds serve. Do you think (or say) to yourself: “You dummy! That was your chance to break, and you blew it! Now you’ll never beat him!” Or do you say: “Wow! What</p>
+<p>a disappointment! You had him, and let him go. But you did have him, and you can get him again!”</p>
+<p>Notice the difference in the two statements. The first is totally negative. The second recognizes the negative, but then turns the</p>
+<p>statement in a positive direction: “You can get him again.”</p>
+<p>You can teach yourself to avoid negative self-talk and cultivate balanced self-talk instead. Negative self-talk includes words that</p>
+<p>disparage you, your play, and the entire situation, such as: “You’re terrible. You’ll never make it. That was ridiculous. You can’t beat</p>
+<p>her. Now you&#x27;ll never make it. There goes your ranking. You&#x27;re a</p>
+<p>Balanced statements are behavioral; they include both the negatives and the positives. They include specific behaviors such as:</p>
+<p>“That serve was terrible [not you as a person are terrible, but the behavior]. You had him, and you let him get away.” The opposite</p>
+<p>of behavioral would be to make global and negative statements about yourself as a person or a player: “You are a joke!” or “You can’t play at all, better quit right now!”</p>
+<p>Because balanced statements include both negative and positive, they end on a hopeful note: “That was bad, but you’re not</p>
+<p>out of it yet!” Or, “You missed the short ball, but you can work the point and create another one.”</p>
+<p>In the Three R’s system, self-talk comes into play especially in the Release and Review phases, when you consider what just hap-</p>
+<p>pened and evaluate the situation. During the Release, avoid global negatives about yourself (“you are terrible”), and replace them</p>
+<p>with specific behavioral statements (“that was terrible”). In the</p>
+<p>Review phase, be behavioral about what has just happened, and then repeat encouraging words to yourself that get you back into the game plan. For example: “You stayed back and got burned.</p>
+<p>Now is the time to get in. Let’s go!”</p>
+<p>If you would like to improve your self-talk, begin by noticing your thoughts following the events that take place during the day. Write</p>
+<p>down some of them. If you notice that you continue to put yourself down, work toward replacing negative put-downs with balanced statements that look at the good and the bad (“I had a good serve, but I missed the volley”), and then end on a constructive note. (“I’m going to make the next volley!”)</p>
+<p>In sum, self-talk ought to be both behavioral and focused on the good that just occurred as well as on the bad. This way it can set the stage for improvement.</p>
+<p>One unique feature of the Three R’s system is use of the STOP technique to keep Releases from taking over between points. Borrowed from clinical psychology (where it is called thought stopping), the technique is very simple. It begins with training your-</p>
+<p>self to stop whatever you are doing at the word “STOP.” Ask a friend to help you. Find a quiet room, and begin counting from 1</p>
+<p>to 20. Have your friend yell “Stop!” unexpectedly. You will find that as soon as this happens you stop counting immediately. This</p>
+<p>is an example of what you will be doing on the court, except then you will not say it out loud, but to yourself. You will use it to end the Release and later to STOP the Review and move on to the</p>
+<p>Reset phase.</p>
+<p>Of course, you will not literally yell “Stop!” while on the court, but will simply think the word&#x27;to yourself. After completing your</p>
+<p>Release, say the word STOP to yourself clearly and assertively. This means that it is time to STOP the Release, and move into the</p>
+<p>Review.</p>
+<p>The STOP technique may seem so simple to you as to be almost trivial. But it works! Arid players need it. Look around on the</p>
+<p>court—you’ll see many players have no mechanism for halting inappropriate behavior, and therefore let negative events carry forward into the next point, where it interferes with their play.</p>
+<p>Body language is your way of sending a message with behavior instead of words. It is also your way of putting your body through</p>
+<p>certain motions—acting, if you will—so you can improve your emotional and mental state. The classic example of this is the</p>
+<p>person who whistles in the dark to combat fear. By acting as if I</p>
+<p>am not afraid, I will mentally notice myself acting in this way,</p>
+<p>and begin to believe that perhaps I am not as afraid as I thought I was. Applied to tennis, the idea is to act strong, together, and</p>
+<p>in control, even though you might not feel it. This can throw your opponent off: Most people can’t tell how you feel, and only</p>
+<p>see how you act. If your opponent sees you acting strong when believing you should be feeling weak, this sows confusion and</p>
+<p>may lead him or her to wonder: “What do I have to do to break</p>
+<p>In a similar vein, by acting strong you send to yourself the message that you have the situation more under control than others might under similar circumstances. In the Three R’s system, body</p>
+<p>language is important in all three phases. For example, in the Release, the act of imitating the shot you just missed (one of the most constructive Releases possible) is something you can train</p>
+<p>yourself to do as a way to combat frustration over missed shots.</p>
+<p>Similarly, by standing tall, switching your racket to the nonplaying hand, and looking at the strings as you walk to Review the situation, you are engaging in a behavior that says you</p>
+<p>are in control of the situation, even though you might be facing a</p>
+<p>formidable opponent. And finally, the Reset routine is made up almost entirely of positive body language (with the addition of</p>
+<p>some mental imagery). The Three R’s is something that you begin and carry all the way through as a way of bringing your mind</p>
+<p>and heart to the level of focus required to play at peak performance on the next point.</p>
+<p>If you would like to experiment with the effects of body language</p>
+<p>on your own tennis game, try acting as if you are in control between points in a practice match, even if you do not feel you are.</p>
+<p>See if you notice the result in the way you feel about yourself. As you face adversity, act as if you are in control of the situation,</p>
+<p>even though you do not feel like you are. Obviously, positive body language alone may not carry the day, although it is a critical sport</p>
+<p>psychology tool to be used in conjunction with the others listed in this chapter to help you make the Three R’s system work for you.</p>
+<p>It is hard to be both uptight and relaxed at the same time—so by</p>
+<p>putting your body into a relaxed state, you combat uptight feel-</p>
+<p>ings. As a result, relaxation techniques are a hallmark of behavior therapy, and they’re also used in other forms of self-help. The underlying principle is that people naturally tense up in the face</p>
+<p>of anxiety and fear, so one way to combat anxiety and fear is literally to relax the muscles. While this does not totally eliminate fear and anxiety, it provides a useful tool for bringing them to a level where you can make constructive use of them.</p>
+<p>There are at least three powerful ways to relax. The first is to close your eyes and reach for a state of mental relaxation, and through self-talk and imagery tell yourself to relax.</p>
+<p>A second way to relax is through deep breathing. Hatha yoga focuses on breathing and stretching as a form of relaxation, and tennis players can use a version of this on the court. Before doing</p>
+<p>so, you must learn the skill. Start by finding a comfortable place and closing your eyes (lying on a recliner or on a bed is best).</p>
+<p>Slowly take in air, filling the diaphragm and then the upper lungs while counting to 5, 6, or 7, hold the breath for that same period,</p>
+<p>and then slowly let it out for the same 5 to 7 counts. Do this two or three times and notice the relaxation that flows through your body. Later, you can shorten the time to a few seconds in, a few to</p>
+<p>hold the breath, and a few to let it out.</p>
+<p>A third approach is deep muscle relaxation, first formulated by Edmund Jacobson in You Must Relax, back in the 1930s. The tech-</p>
+<p>nique involves tensing and untensing different muscle groups in the body. Once the tension is given up, the muscles naturally re-</p>
+<p>lax. Here is a procedure for deep muscle relaxation that can help you learn how to relax. The technique can be shortened for use</p>
+<p>on the court.</p>
+<p>Start by practicing this series of movements:</p>
+<p>1. Right and left hand and forearm: Make very tight fists and then let them go.</p>
+<p>2. Right and left upper arms: Press your elbows down into the armrest of the chair or into the bed. While pressing down,</p>
+<p>move your upper arms toward your rib cage. Then release</p>
+<p>all the way.</p>
+<p>3. Forehead: Raise your eyebrows as high as you can, then release. (If this movement does not produce tension, try making a deep frown.)</p>
+<p>4. Middle face: With your eyelids shut tightly, wrinkle your nose, then release.</p>
+<p>5. Jaws: While pressing your tongue to the roof of your mouth, clench your teeth tightly, then release.</p>
+<p>6. Neck: Pull your chin down to your chest, and at the same time pull your head back with the muscles at the rear of your neck, then release.</p>
+<p>7. Shoulders and upper back: Shrug your shoulders as if you were trying to touch your ears, then release.</p>
+<p>8. Stomach: Suck your stomach in while forcing it downward. Make it hard, as if you expected someone to hit you with a fist, then let it go slack.</p>
+<p>9. Thighs: Tense the muscles in your thighs, then release.</p>
+<p>10. Calves: Bend your feet upward toward your shins as if you</p>
+<p>were trying to touch your shins with your toes, then re-</p>
+<p>lease.</p>
+<p>When you are familiar with how each movement feels, you are ready to begin using progressive relaxation.</p>
+<p>¢ Find a quiet room where you will not be disturbed or distracted. Keep the lights dim.</p>
+<p>¢ Choose a comfortable bed, couch, or overstuffed recliner. All parts of your body must be supported without strain; if you have to work to stay in place, you will not be able to relax</p>
+<p>completely.</p>
+<p>¢ Wear loose-fitting clothing. Remove any tight clothes or undergarments, as well as shoes, eyeglasses, and contact lenses.</p>
+<p>e Start by making yourself as comfortable as possible.</p>
+<p>¢ Settle back until you feel completely supported.</p>
+<p>¢ Take a deep breath. Fill your lungs with air and hold your breath for 5 seconds. °</p>
+<p>¢ Release your breath.and let yourself begin to relax, letting go of the tension in your body.</p>
+<p>¢ Tense the muscles of your hands and forearms. Hold that tension for 5 to 7 seconds. Study the feelings; be aware of what this tension feels like.</p>
+<p>° Relax. Release the tension immediately and completely, not gradually. Feel the relaxation spread into your arms and hands.</p>
+<p>Study it; be aware of the difference between relaxation and tension. Enjoy the pleasant sensation for 20 to 30 seconds.</p>
+<p>e Repeat the procedure on the upper arms: Tense the muscles and hold for 5 to 7 seconds (find a time length that feels right for you). Focus on the tension. Then release the muscles and con-</p>
+<p>centrate on the feeling of relaxation for 20 to 30 seconds. Notice</p>
+<p>Sport Psychology Tools 25?</p>
+<p>the difference between the two feelings. Enjoy the pleasant sen-</p>
+<p>sations as your muscles loosen and relax.</p>
+<p>¢ Move on to the next muscle group and perform the recommended movement. Repeat it, and then move on to the next muscle</p>
+<p>group, and the next, and so on until you have completed all the movements twice for all the muscle groups.</p>
+<p>e As you lie without moving, mentally explore each of the muscle groups you have relaxed. If you feel any remaining ten-</p>
+<p>sion in any area simply repeat the tense-and-relax movement for that area. If you are free of tension, quietly enjoy your calm, peace-</p>
+<p>ful feelings.</p>
+<p>e End by imagining yourself in a calm, peaceful scene—it might be the green security of a quiet forest, or a sunlit beach with you</p>
+<p>alone and listening to the gentle ocean waves. Imagine yourself anywhere you feel safe and secure and at peace. Visualize the place in your mind and picture yourself there, completely at ease, rested and relaxed, untroubled by the events of the outside world. Enjoy this peaceful state for 10 minutes, or for as long as you like.</p>
+<p>You may find it easier to record these instructions on tape, along with the proper timing cues. This frees you to concentrate on the</p>
+<p>movement without having to remember what to do next.</p>
+<p>Progressive relaxation produces the most benefit when it is practiced twice a day. Once you have practiced it for a few days you will find yourself able to relax more easily and much more</p>
+<p>quickly. As with any skill, practice makes a great difference; but once it is learned, deep muscle relaxation is a most effective weapon against stress.</p>
+<p>Obviously, you can’t lie down in the middle of the court to do</p>
+<p>deep breathing or deep muscle relaxation. If you practice these techniques on your own, however, you soon will reach a point where you can perform a shortened version on your feet. You</p>
+<p>will be able, for example, to tense your body briefly and then let go, triggering much of the relaxation you learned to attain through the full deep muscle relaxation exercise. You also will be able to take one deep breath, let it out slowly, and center</p>
+<p>yourself to maintain this sense of peace and balance. Combine</p>
+<p>~ these techniques—muscle tensing and relaxing, followed by a</p>
+<p>deep breath—and you have a powerful relaxation tool to use any time you wish.</p>
+<p>In the Three R’s system, you always relax as part of your Reset routine, even when you want to rev up as well. You also can relax</p>
+<p>during the Review phase to help clear your mind. The concept is</p>
+<p>to use the time between points to build in relaxation as an intervening event between two points of active play. This lets you play</p>
+<p>fresh, without residual tension from a previous point interfering with what you need to do for the current one.</p>
+<p>Laughter can play a role in reducing stress, bringing a general feeling of well-being to the body and helping the healing pro-</p>
+<p>cess. For a vivid description of this process, see Norman Cousins’ Anatomy of an Illness. In addition to the relaxing effects of laughter, humor allows you as a tennis player to break the tension, and to view the match from a different perspective. This can be a huge boost to your confidence—and often can be used to help you get out of a rut of bad play and lift you to a new level of performance. ; How can you cultivate humor to enhance your tennis? Start by knowing that any opportunity you have to laugh, whether</p>
+<p>through books, comics; movies, plays, or simply joking around</p>
+<p>with your friends, is a way of practicing the art of letting humor</p>
+<p>and laughter be a part of your life and consequently your game. The transfer from everyday life to the tennis court will be more natural if you allow yourself to laugh at other aspects of living as they occur.</p>
+<p>Beyond this, two other guidelines will help you make good</p>
+<p>use of humor in your tennis. First, steer clear of humor that makes fun of your opponent, or that occurs at someone else’s</p>
+<p>expense. Instead, look for the humor in your own behavior and your own performance as a way of distancing yourself from</p>
+<p>mistakes. When making fun of your own mistakes, you Release the negative energy and clear the way for a correction on the next point.</p>
+<p>Think of humor as a way to disengage from what just happened. All good humor, whether stand-up comedy, the written word, or jokes among friends, is grounded in taking a perspective ora view</p>
+<p>of a problem that is different from the one that everyone else is taking at the time. The punch line to a joke works because it is unexpected and surprises us. And it feels good to laugh! Look for</p>
+<p>opportunities to make jokes about your own play and lighten your own load.</p>
+</section>
+<section class="chapter" id="sec-2">
+<h2>Part 2  ·  pp. 40–69</h2>
+<p>Depending upon your own philosophy of life and religious orientation, meditation might already be a part of your daily living. For some people, meditation takes the form of focused prayer to a higher power, and for others it involves establishing a quiet and relaxed state, and, with eyes closed, either thinking about nothing at all or focusing upon a particular word or concept. Meditation has a great deal in common with imagery, self-talk, and relaxation, but we list it as a separate tool because its focus goes beyond each of these alone, and even beyond the three of them</p>
+<p>taken together. Meditation is a process through which an athlete</p>
+<p>can reserve energy and focus not only on the event about to occur, but on life itself.</p>
+<p>You can find volumes written on meditation, usually from the point of view of a particular religious tradition. Herbert Benson’s</p>
+<p>The Relaxation Response draws together many of the common elements and adapts them for secular as well as religious use. As</p>
+<p>a basic outline, most systems of meditation involve steps like these:</p>
+<p>1. Regular practice: Find a time each day when you choose to meditate (whether morning, during the day, or evening), and faith-</p>
+<p>fully adhere to this special time away from the routine of your day.</p>
+<p>2. Turn attention away from events: You can do this by closing your eyes, but the underlying concept is to get away from the</p>
+<p>sounds of radio and television, as well as interaction with other people, and focus instead on something that is seemingly unrelated to your regular activities.</p>
+<p>3. Focus on a higher power or special word. Depending upon your religious tradition, you may experience the presence of God</p>
+<p>or a higher power, opening your mind and heart to influence, instruction, and support. Some will encourage this process through the repetition of a word to bring mental and spiritual</p>
+<p>focus.</p>
+<p>4. Relaxed deep breathing. Slowing one’s breathing slows the heart rate, and is another way to disengage from regular activi-</p>
+<p>ties. Practiced in combination with the preceding techniques, the meditation experience is enhanced through the regulation of breathing to bring relaxation.</p>
+<p>None of these techniques is unique to sport psychology. Indeed, they have been borrowed from many other traditions in the be-</p>
+<p>havioral sciences and the fields of religion and medicine. From the vantage point of sport psychology, they provide the necessary tools for enhancing performance. We draw on all of them in the</p>
+<p>Three R’s Sport Psychology System. The system makes use of one</p>
+<p>or more of these tools in each of the three phases.</p>
+<p>Martina Hingis began playing tennis at the age of three and began playing</p>
+<p>tournaments at the age of five. In 1997, at age 16, she became the youngest</p>
+<p>player in Open Era play to win Wimbledon, She rounded out 1997 with nine</p>
+<p>singles tournament wins and 5 doubles:wins, pushing her number of career</p>
+<p>singles titles to 11 and doubles titles to 8. The year 1997 was also notable</p>
+<p>because at the Australian Open, Martina won her first career Grand Slam</p>
+<p>singles title since turning professional at 14, becoming the youngest Grand</p>
+<p>Slam winner in Open Era play. &quot; At this point in her career, Hingis is known for a practically flawless game</p>
+<p>whether it be backhands, forehands, volleys, or serves. She uses solid Re-</p>
+<p>views and quickness to keep an upper hand against her opponents. Though</p>
+<p>clay is her favorite surface, she has shown a dominance on all surfaces.</p>
+<p>Martina Hingis, named after Martina Navratilova, was born in Kosice,</p>
+<p>Slovakia, on September 30, 1980 (She and her family moved to Switzerland</p>
+<p>when she was seven). She comes from a family steeped in tennis. Hingis is</p>
+<p>coached by her mother, Melanie Monitor, and her father, Karol Hingis, man-</p>
+<p>ages and coaches a tennis club in Trubbach, Switzerland. In her spare time</p>
+<p>she enjoys skiing, soccer, basketball, and horseback riding. She is supersti-</p>
+<p>tious about walking on the tennis court lines.</p>
+<p>5 &#x27;&#x27;</p>
+<p>Ee tennis point ends in either a win or a loss: You win the point through an opponent’s error or your own good play, or you lose the point through your own error or your opponent’s good play. If that were all there is to it—a point won or lost—then there would be no need for a Release between points. But we all know</p>
+<p>it is more complicated than that. As a human being, you might have deep feelings about your win or loss on a given point. If you make an unforced error, especially on a big point, then you might be mad at yourself when the point is over, or you might feel dis-</p>
+<p>couraged, or you might wonder, “What in the world do I have to</p>
+<p>do to win a point!” The key question is: What you do with the negative thought, the negative feeling, the negative energy?</p>
+<p>Answer: Release it!</p>
+<p>WHY RELEASE?</p>
+<p>Robert Trogolo recalls watching one of his players in the early round of the U.S. Pro Indoors. “My player was totally dominating</p>
+<p>his opponent. Having won the first set 6-2, he was up 4—2, and</p>
+<p>serving to go up 5—2 with a lead of 40love in the game. He served the first ball up the middle for an ace. He thought for sure it was</p>
+<p>an ace, and so did the line judge, but the umpire overruled the call. My guy went nuts! He started shouting at the umpire. The</p>
+<p>umpire said he had only 5 seconds to serve his second serve, so</p>
+<p>he told the umpire where to go. The umpire then gave him a warning. The second serve was out, which resulted in a double fault. That one incident marked the turning point in the match. My</p>
+<p>player could not recover from the bad line call, and went on to lose the match. His opponent went on to win the tournament.”</p>
+<p>In terms of the Three R’s, Trogolo’s player—instead of releasing the negative energy from the bad line call—kept the thought in his mind. He could not get past it, so he couldn’t focus on playing</p>
+<p>out the next crucial points. There was a Release (“My guy went nuts!”), but the Release did not work. It led to more bad behavior</p>
+<p>(shouting at the umpire), then a warning, a double fault, and the whole downhill slide.</p>
+<p>In its simplest form, a Release is an expression of feelings and energy after a point is over. There are good Releases and bad Releases. Bad Releases are those that get you in more trouble than you are already in, leaving you feeling worse about your play or</p>
+<p>even getting socked with code violations. Good Releases are those that allow you to get rid of the negative energy—literally leave it</p>
+<p>behind, so you can move on.</p>
+<p>Based on your own experience, what’s bad about the Releases on</p>
+<p>this list?</p>
+<p>e Hitting a ball over the fence.</p>
+<p>¢ Using loud profanity.</p>
+<p>e Telling yourself, “You are so bad. I can’t believe what a sorry</p>
+<p>excuse for a player you are! You are stupid!”</p>
+<p>e Engaging in verbal combat with your opponent, perhaps re-</p>
+<p>sulting in a fistfight.</p>
+<p>Let’s take a closer look.</p>
+<p>° Hitting a ball over a fence, or into the stands. If you break the rule about equipment abuse, you get a code violation and lose a</p>
+<p>point. Even worse, you might injure somebody. Remember when Jimmy Connors hit a ball into the stand and hit a spectator? Clearly,</p>
+<p>that kind of Release only makes things worse.</p>
+<p>¢ Profanity. Another code violation. Even worse, by going over the edge with profane language, you demonstrate to yourself and to your opponent that you are out of control. And all the while, your opponent is feeding off your misfortune.</p>
+<p>¢ Negative talk. When you call yourself “bad” or “stupid,” you compound the situation. Bad play is one part of the problem; labeling yourself as bad and stupid becomes a second problem. You</p>
+<p>may start to live up to your own prophecy—and play even worse!</p>
+<p>(Tennis is tough enough without your adding to it by getting down on yourself!)</p>
+<p>¢ Verbal combat. Anything that distracts you from the task at hand (executing your shots, working your game plan) carries the risk of throwing you way off course.</p>
+<p>A better Release is one that gets rid of the energy, but lets you hold your head high, maintain your integrity, and look strong to your opponent. The last bit is an important part of the game of</p>
+<p>tennis. After all, you are the only real support you have out there, and the image you project to your opponent is one that may make</p>
+<p>or break your game. If you look strong, you are more intimidating than if you look like you are falling apart. If you look like you are</p>
+<p>falling apart, your opponent gets pumped up and moves in for the kill.</p>
+<p>What if, instead of letting your energy out in a way that de-</p>
+<p>means you, you let it out in a way that says, “I don’t like what just happened, but I can deal with it! Watch me get better!” Some of the top players do this with humor, antics, or phrases that let them blow off steam without harming their games. Forexample:</p>
+<p>¢ You dump a volley into the net. Instead of screaming or turning away with slumped shoulders and a dejected look, you immediately imitate the shot you wish you had hit, thereby locking in the positive. You turn an error into an improved imaginary shot, ready for the next one to be even better when the ball is in play. If you want to see‘how this is done, watch Boris Becker or Michael Chang. We once saw Becker hit a shot into the net, and immediately take a ball from his pocket, drop it as if he were ina</p>
+<p>practice session, and hit the stroke smoothly, with good net clear-</p>
+<p>ance and heavy topspin, right back to the ball boy in the corner.</p>
+<p>He wasn’t bashing the ball in anger, he just corrected the shot that</p>
+<p>he missed. Michael Chang is another player who will do this. We have seen him hit an imaginary shot three or four times between points to make sure he has a clear picture of what the proper shot feels like, the shot he just missed or the one he wants to handle correctly the next time he gets a chance.</p>
+<p>¢ You play a bad shot. Instead of saying, “You’re so stupid,”</p>
+<p>you say, “I can’t believe that!” Emphasize that you are upset with</p>
+<p>that one stroke, not your whole life! By criticizing this one behav-</p>
+<p>ior, you allow for the idea that your play can improve, even though that particular point or shot was bad.</p>
+<p>e Your opponent calls the ball out when you thought it was in. You do what Chris Evert used to do. Instead of an angry protest, you glare at the spot where the ball hit. Without speaking a word, you “question the call” with a glare.</p>
+<p>¢ You make an unforced error. Instead of berating yourself, you look to the heavens and spread your arms wide, as if to say, “Why me, Lord?”</p>
+<p>In these examples, you are letting your feelings out (Releasing the energy, letting go of the point), and you are letting them out without throwing yourself into an emotional ditch.</p>
+<p>Peak performers in tennis have perfected a variety of Releases</p>
+<p>so that they always have several options, no matter what happens</p>
+<p>on the court. Sometimes only the player knows what the Release is, or even that there’s been one. Things are going well in the match, nothing bad has happened yet, and after a point, the player</p>
+<p>simply thinks to himself, “All right, keep it up.” This thought releases energy after the point is over.</p>
+<p>On another occasion, a player has come back after being down 0-40, and a fist pump coupled with the words “Come on!” or some other physical Release keeps the momentum going. At an-</p>
+<p>other time, when things are going badly, a player may use humor to let out the negative so that it does not spill forward and paint</p>
+<p>the next point. We have seen Jimmy Connors, after a string of bad</p>
+<p>shots, walk over and hand his racket to someone in the stands as if to say, “Surely you can play better than I can. Come on and take</p>
+<p>over for me.” We recall seeing Andre Agassi give his racket to a ball girl, and let her play a whole point.</p>
+<p>Let us summarize what we have said so far about good Releases:</p>
+<p>1. The amount of Release will vary, depending on where you are in the match. In the early going, it may seem as if you don’t have many feelings to Release. You may be playing ordinary points,</p>
+<p>and as soon as one is over, you are ready to move on to the next</p>
+<p>one. As you get more into the match, however, there will be more to feel good or bad about. You can feel good about your own play,</p>
+<p>or the lead you are building. You can feel bad about the mistakes you are making, or the way you can’t seem to get on track, or your</p>
+<p>opponent’s good play. By engaging in some acceptable expression after the point is over, you are simply allowing yourself to be a human being and to feel good or bad after a point.</p>
+<p>2. At the heart of the Release phase is a letting go of the previous point, so you can go on to the next one. It might sound trivial, but unless you let go of what just happened, you will have a hard</p>
+<p>time grabbing the new opportunity that the next point presents.</p>
+<p>At a later stage in the Three R’s, we will help you Review what has happened and prepare for making an adjustment in the next</p>
+<p>point. It will be easier to do this if you have let go of the previous point. It’s almost like climbing a ladder. You can’t put your hand</p>
+<p>on the next rung until you let go of the one below it.</p>
+<p>3. The Release can be a very private matter. You may simply say something under your breath, or think a thought that fulfills all of the requirements of a good Release. It need not be a public</p>
+<p>display.</p>
+<p>4. Humor can be a great Release. The ability to find humor in a situation requires having a perspective on what is going on. Humor can lead to laughter, which can lead to relaxation, which</p>
+<p>will help your tennis. Look for opportunities to laugh at your-</p>
+<p>self, and you will be on your way to a Release that you can use to your advantage.</p>
+<p>5. Be creative in fashioning constructive Releases. Questioning a line call is a form of Release. If your opponent (or a line judge) makes a call you don’t like, the way you glare at the ball mark or raise a question (“Are you sure?”) or engage in any dis-</p>
+<p>cussion is all a matter of Release. The important part is to Release your feelings and views in a way that is assertive but does</p>
+<p>not throw off your own concentration. A good Release might</p>
+<p>The First R: Release 41?</p>
+<p>include body language, talking out loud, talking to yourself, or</p>
+<p>all three. For example, body language might include throwing your arms up in the air, or imitating the shot you missed to</p>
+<p>correct it. Similarly, you speak or groan out loud as another form</p>
+<p>of Release. And finally, by talking to yourself (self-talk, psychologists call it, the internal patter no one else can hear), you also are engaging in a Release. Indeed, you can say things to yourself that others should not hear—if they did it might get you in more trouble.</p>
+<p>6. Emphasize the positive. One of our junior players put it this way: “Negative releases don’t help me. They just bring me</p>
+<p>down.” If you let out a string of negative words after a bad point, you run the danger of starting a downward spiral. On the other hand, if you make fun of what just happened with humor, or</p>
+<p>immediately imitate the shot you wish you had played, you get the double benefit of letting the feelings out and lifting the bad</p>
+<p>moment to a higher, more positive plane. After all, the next thing you want to do is the positive, so start right now by imitating it.</p>
+<p>At the end of this chapter we will help you develop your own</p>
+<p>preferred Releases. You may want to draw from some of these tested versions.</p>
+<p>One of the most powerful things you can do following a shot that you have missed is to imitate the shot and correct the mistake you have just made, while at the same time giving yourself a verbal instruction.</p>
+<p>It goes like this. Suppose you opened up too quickly on your backhand and sprayed the ball wide. Instead of whatever you</p>
+<p>might ordinarily do, tell yourself, “Not like that. Like this!” At the same time, make an appropriate turn and step in to hit an</p>
+<p>imaginary ball, this time keeping your shoulders properly “closed” until the last moment.</p>
+<p>What you are doing is correcting the error you just made. This becomes a tremendously powerful Release because it takes the</p>
+<p>negative energy and puts it into a corrective mode. You have rec-</p>
+<p>ognized what you have done wrong, and you are now telling yourself what to do, and modeling and demonstrating how to do it right. It lets your last memory of the failed shot be the correction, which will help you on the next point. Also, it presents a fairly intimidating image to an opponent. An opponent will begin to think: “What do I have to do to beat you? You correct mistakes as</p>
+<p>you make them. I can’t seem to break you down.”</p>
+<p>Nothing can be so vexing to a player (or coach, or family member)</p>
+<p>as the profanity and other words that seem to spew forth during</p>
+<p>tough times on the court. Some players find it almost impossible</p>
+<p>to stop saying these words. It is as if a button gets pushed and there seems to be no way to stop what will happen next. The</p>
+<p>problem is understandable—competitive tennis is a form of com-</p>
+<p>bat, and it makes sense that someone who is playing hard and</p>
+<p>aggressively to win also will be verbally combative between</p>
+<p>points—combative with himself or herself, and with an opponent.</p>
+<p>So what can you do to channel aggressive energy away from words that bring on code violations and fines, and turn it in a more con-</p>
+<p>structive direction?</p>
+<p>The Three R’s approach is to define alternative words well ahead of time, and practice these instead of the words that draw violations. If you are a player who needs to “let it out,” then treat this</p>
+<p>as one of your strengths—but redefine what letting it out will mean in your case. Instead of swear words, select and practice saying words to take their place. Before you say this will not work for</p>
+<p>you, remember that profane people throughout history have used the same technique to keep themselves out of trouble. Words like</p>
+<p>gosh and darn are simply variations on words that people have found unacceptable in social situations. In formulating your words, you might draw on the following approaches that have worked</p>
+<p>1. Drop all the consonants. Don’t say a word at all, just give a loud groan or other utterance. “Aaah!” You can’t do this too loudly</p>
+<p>or you will disrupt play on the other courts, but it could be a way to express your pain without saying a real word. (As a variation,</p>
+<p>pick up a towel and yell into it.)</p>
+<p>2. Talk about behavior only. Talk about what you just did instead of saying negative things about yourself, the world, the deities, and the cosmos. For example: “I can’t believe this.” “That was a terrible shot.” “You better improve that.” All these state-</p>
+<p>ments focus on the behavior, as opposed to you as a person—or</p>
+<p>anyone else. If I tell myself that I can’t play, or that I am stupid, then I begin to adjust my game to this characterization. On the</p>
+<p>other hand, if I say something more balanced about what just</p>
+<p>happened (“A bad line call, yes, but you can come back, now let’s get going, let’s do it!”), then I have turned adversity into a challenge, and a negative becomes a positive.</p>
+<p>3. Use substitute words. If you know words from other languages (not swear words), that have a good sound and feel for you, try saying these. One student with two years of high school German used to enjoy saying “Ausgezeichnet!” and “Ach Du meiner giite.”</p>
+<p>The gutturals allow a strong expression of feeling, but the words actually translate into “Excellent” and “Oh, my goodness!”— though you certainly would not know that to hear them on the</p>
+<p>court (unless you speak German). Try developing your own substitute word (“Great!” “Fantastic!”) to use instead of profanity. The more you use it, the more likely you are to say it under stress, when you really need it. See table 3.1.</p>
+<p>_ Corrective comments: “Stay “ No comment—allowing bad</p>
+<p>_ down! Watch the ball!” play to sink in and get worse.</p>
+<p>_ Pump up words: “Come onl” ° No words (or thoughts) of ;</p>
+<p>bP Yeslt (That&#x27;s it!’ encouragement. |</p>
+<p>| Pump up action—pump fist, No action—internal tension slap leg. : builds. &#x27;</p>
+<p>Private thoughts: “You&#x27;re Private thoughts: “You can’t</p>
+<p>doing great! Keep it up!” do it.” |</p>
+<p>Compliment opponent: “Too Scowl in disbelief or make</p>
+<p>| good!&quot;&quot;Great shot!” Applaud disparaging remark to oppo- |</p>
+<p>_ Use humor after an error. Live with the pain. i</p>
+<p>__ Imitate the good shot to Let the bad shot stayin your</p>
+<p>| override the bad one in your mind and become the last |</p>
+<p>| memory. thought before the next &#x27;</p>
+<p>US RUSRE LO CU et np iii a Tr |</p>
+<p>The flow of the Three R’s system requires an end point for each</p>
+<p>phase: Release, Review, and Reset. The end point of Reset is obvi-</p>
+<p>ous: Serving or returning serve marks the clear end of betweenpoint activity, and the beginning of playing out the point.</p>
+<p>Ending the Release and Review phases, however, requires a separate action on your part. Tennis players are vulnerable off the task—between points, between matches—because it is so easy to</p>
+<p>fall into endless negative Releases or obsessively ruminating Reviews. If the feelings of the Release or the mental activity of the</p>
+<p>Review do not end, then they spill over into the next point. We</p>
+<p>sometimes refer to this as painting the next point. Think of your</p>
+<p>own experience, or consider some of the great players you have</p>
+<p>observed. It is easy to remember times where stopping the Release soon enough would have kept someone out of serious trouble—code violations, even disqualification. The trick is to get</p>
+<p>the satisfaction of a solid Release as described in this chapter, then to move on to the Review, which is also critical to improving</p>
+<p>performance on the next point.</p>
+<p>The solution is to STOP Release behavior with a preplanned word, and, as will be discussed in chapter 4, to STOP Review behavior in the same way. By giving yourself the simple verbal</p>
+<p>instruction, “STOP,” you can end whatever you are doing, at least</p>
+<p>for that moment. In the case of the Three R’s, once you end the Release behavior, you can move easily to Review.</p>
+<p>Practice the STOP technique with a friend. Begin counting from 1 to 20, and let your friend interrupt you by shouting “STOP!” at some point. Notice how this gets you to stop counting. The next number simply doesn’t get spoken. If you can follow this simple</p>
+<p>step, then you will have learned the STOP technique.</p>
+<p>The next step is to turn your attention away from what just occurred (in this case, counting from 1 to 20), and turn to something else. Try having your friend tell you to begin saying the</p>
+<p>alphabet immediately after the STOP. For example:</p>
+<p>You! 4; 27:37 4)-5—&quot;</p>
+<p>Your friend: “STOP! Now, start saying your ABCs.”</p>
+<p>In this simple sequence, you will notice that you are able to go immediately from one activity (counting) to another activity (saying your ABCs), with one simple instruction, STOP. This is just what you do in the Three R’s when you move from the Release</p>
+<p>phase to the Review phase. After you finish your Release, you say</p>
+<p>to yourself (so no one else can hear): “STOP.” Then give yourself</p>
+<p>some cue sequence you’ve worked out in advance and move smoothly into the Review phase.</p>
+<p>Evaluate your own current Release behavior by answering the following</p>
+<p>questions and rating your responses as follows:</p>
+<p>All or almost all of the time = 4</p>
+<p>___a. Profanity is a part of my between-point behavior.</p>
+<p>_____ b. | get code violations from outbursts.</p>
+<p>e. | throw my racket, hit the ball against the screen, or engage in</p>
+<p>other forms of equipment abuse.</p>
+<p>f. |get so mad that sometimes | cannot cool down before | play the next point.</p>
+<p>g. My self-talk is quite negative.</p>
+<p>h. |sometimes imitate the shot | missed in order to “fix” it before the next point.</p>
+<p>i. | talk out on the court, but my words do not draw code viola-</p>
+<p>tions.</p>
+<p>j. | sulk after a bad shot, keeping my feelings inside.</p>
+<p>A. Scoring Instructions: Record the score for each item in the appro-</p>
+<p>priate box.</p>
+<p>SLOSS CAC ROBERT IESE D DE SET</p>
+<p>B. Strengths: Scores of 3 or 4 on items c,h, and i indicate that you are already incorporating constructive releases into your between-point</p>
+<p>behavior.</p>
+<p>C. Deficits: Scores of 2,3, or 4 on items a,b, d,e, f,g, and j indicate that you are vulnerable to breakdowns in the Release phase, which could have</p>
+<p>a negative effect on how you play the next point.</p>
+<p>One way to improve your Releases is to make a list of the Releases that fit your personality and that you would like to incorporate into your game. You should give this list the same attention you would</p>
+<p>give to selecting a racket, or to picturing the kind of serve or forehand you wish to develop. Use the following checklist to identify elements</p>
+<p>of your own customized Release. (Check as many items as apply to your game.)</p>
+<p>(such as “Stay down!”).</p>
+<p>on big point).</p>
+<p>Use fist pump.</p>
+<p>Use humor after an error.</p>
+<p>correct the bad one.</p>
+<p>Do all of this in a quiet way.</p>
+<p>so bad,” “You stink”).</p>
+<p>Profanity.</p>
+<p>Racket, ball, people abuse.</p>
+<p>Release phase.</p>
+<p>Looking at the items you have checked, and in light of your history with Releases, write a summary of what you want to include in your</p>
+<p>The First R: Release 49?</p>
+<p>Practice your own Release each time you are on the court (whether</p>
+<p>playing a match or in a practice game). Have a friend code your Re-</p>
+<p>leases from a live match or from a videotape using the coding sheet in chapter 7.</p>
+<p>Stefan Edberg won his first junior Grand Slam singles.title by triumphing</p>
+<p>over the field at the U.S. Open in 1983. In 1990and again in 1991, Edberg</p>
+<p>was placed first in the year-end rankings. By the endof 1 996, the right-hander</p>
+<p>1d 18 doubles titles, winning tourna-</p>
+<p>ments on all surfaces: carpet, clay cour grass court, and hard court. He has a</p>
+<p>record of 51 consecutive Grand Slam appearances, the all-time best record</p>
+<p>in the history of Grand Slam tenhis, He also shares the distinction with John</p>
+<p>McEnroe of being the only players,to be ranked No. 1 in both singles and</p>
+<p>doubles play.</p>
+<p>Where Muster’s and Chang&#x27;s strength is speed and counterattack, Edberg’s</p>
+<p>chief strength is his ability to maintain a focused attack through strong serves</p>
+<p>and volleys. During play, Edberg maintains a cool demeanor with subdued</p>
+<p>Releases. He follows through with solid Reviews that help him maintain his</p>
+<p>Stefan Edberg was born on January 19, 1966, in Vastervik, Sweden. He is</p>
+<p>married to Annette Olson and they have two children, Emilie Victoria Edberg</p>
+<p>and Christoffer Edberg. When he announced his retirement at the close of</p>
+<p>1996, he was among only four players in the modern era to have played</p>
+<p>more than 1,000 matches. He resides in London.</p>
+<p>Te second R in the Three R’s system is the “Review”. It gives you achance to either affirm your game plan (Ifit’s working, keep</p>
+<p>it up!) or to find some way to get your game on track. We’ll show you how to Review in this chapter—but first let’s take a closer look at the rationale behind it.</p>
+<p>WHY REVIEW?</p>
+<p>Your Review lets you evaluate where you are, and make any adjustments necessary to improve your situation. If the game is go-</p>
+<p>ing well, you won’t want to change a thing. Remember the old adage, “If it ain’t broke, don’t fix it.” This applies to your game plan. If you’re doing something right (for example, strong slice</p>
+<p>service return to keep the ball low and make it harder for your opponent to volley), then during your Review you will tell yourself, “Stay with it, watch the ball, make a good return.”</p>
+<p>Or you may discover that you have been deserting your game plan, and you need to remind yourself to get back to it. For ex-</p>
+<p>ample, if you planned to chip and charge to get in to the net but forgot to do it, the Review is your time to make this adjustment.</p>
+<p>Another objective of the Review might be to change your game plan. Your opponent is presenting you with new problems or new</p>
+<p>opportunities that you had not anticipated. No coach can help</p>
+<p>you now. You evaluate the situation and tell yourself what adjustment to make on the next point.</p>
+<p>One of the simplest things you can do to start your Review is turn away from the net and your opponent, switch your racket to your nonplaying hand, and walk toward the back court, perhaps looking at the strings as you go. The purpose of this little maneuver is</p>
+<p>You will notice that in the Three R’s system we rely on behavioral cues to make the system work. The reason for this is that in the heat of a match, it is hard to think about what you</p>
+<p>should be doing between points. You want to develop good habits that trigger the appropriate phases of the Three R’s:</p>
+<p>Release, Review, and Reset. Switching your racket to your</p>
+<p>other hand and turning away from the net is an effective cue to begin the Review. Some psychologists would view this as</p>
+<p>a way to anchor the Review. We have known some players who wear a rubber band on their wrists, and snap it between</p>
+<p>points to remind themselves to get in the game, stay with the game plan, or whatever they have decided they most need to</p>
+<p>_ remember. Whatever method you use, choose a simple be-</p>
+<p>_ havioral step that will start the Review for you.</p>
+<p>to prompt you to start your Review. It should be so ingrained that</p>
+<p>as soon as the racket hits your nonplaying hand, you begin the Review phase. On a videotape of your between-point activity, you</p>
+<p>should be able to see when you started your Review.</p>
+<p>Here’s where habit is your friend. Develop a pattern of movement that begins the Review, and file it in the same part of your brain that enables you to put on your shoes, brush your teeth, and</p>
+<p>perform other voluntary actions without having to think about</p>
+<p>them.</p>
+<p>By starting the Review this way you can condition yourself to do a Review even when big-time distractions come your way (see the “Anchor Your Review” box).</p>
+<p>Once you have made the behavioral prompt to start Reviewing, what should you think about? There are two good options: What</p>
+<p>you can learn from what just happened (past), and what you can</p>
+<p>do next (future).</p>
+<p>Suppose you are making a lot of unforced errors. Say you have been working the point, keeping the ball deep and creating short balls, but then you hit the short ball long or wide. During the Review, you will think about why this is happening. Perhaps you</p>
+<p>are running through the shot instead of getting set before you knock</p>
+<p>off the hard-earned short ball for a winner. Maybe you are so excited at finally having a chance to end the point that you take your eye off the ball. You are thinking ahead to the new score with you in the lead, so much so that you miss the shot. During the Review phase, you think about it in just this way.</p>
+<p>Try asking yourself the standard “coach questions,” the ones your own coach might ask you if he could:</p>
+<p>“Am I playing to my opponent’s weakness?”</p>
+<p>The Second R: Review.</p>
+<p>Here is the payoff for asking these Review questions: You learn from your mistakes (and your good points, too), and get</p>
+<p>stronger and smarter with each point. A good Review lets you</p>
+<p>Table 4.1 Make Your Reviews Work</p>
+<p>Use specific behavior (such as switching racket to non-</p>
+<p>playing hand) to start Review. ait</p>
+<p>Relax with a deep breath in Pace or walk to the ball in an and out as you begin the agitated manner. Review. |</p>
+<p>Walk confidently (shoulders Let racket hang from your back, head up). playing hand, shoulders droop, and allow negative feelings show in your nonver-</p>
+<p>bal behavior.</p>
+<p>Look at strings, ground, or Distract yourself by looking at some other focal point to others on the sideline (such as think. your coach, friends, or parents).</p>
+<p>Ask the “coach question”: Neglect to ask these ques-</p>
+<p>* What just happened? tions when it was part of your</p>
+<p>* Why did | win the point? Review plan to do so.</p>
+<p>* Am| doing my game plan?</p>
+<p>* Am! playing my opponent&#x27;s weakness?</p>
+<p>* What do | need to do next? et</p>
+<p>Call Play 1, Play 2, Play 3 Forget to Review your game (see page 61). plan.</p>
+<p>Consider code words to bring | Talk to yourself at length, focus to the Review (such as without focus. “Watch the ball!””Be strong!” “Play the ball!” or“Get in!”) &#x27;</p>
+<p>S cha et Mee ae YASS ARTEL SON STILE ERE IRE DEEP AIOE IRENE AES LESTE RS CE</p>
+</section>
+<section class="chapter" id="sec-3">
+<h2>Part 3  ·  pp. 70–99</h2>
+<p>build on your success and correct for your weakness then and there on the spot. This makes you a strong competitor. You</p>
+<p>even turn the bad stuff to your advantage. Table 4.1 offers Review tips in a “Do’s and Don’ts” format. The exercises at the</p>
+<p>end of the chapter also will help you create a customized Review, one that fits your game. Remember, too, that sometimes the Review will be brief, and at other times it may take a bit</p>
+<p>longer. The key is to make Review such a habit that you do it every time.</p>
+<p>Review to Deal With Distractions</p>
+<p>You have just lost a point, and you know it was because of poor</p>
+<p>concentration. To make matters worse, you allowed yourself to</p>
+<p>get distracted by an airplane noise—or by someone on the sidelines, or a stray thought about what a friend, parent, or coach might be thinking of your play. You feel bad enough about having lost the point, but these other distracting thoughts make matters worse. What do you do?</p>
+<p>Start by allowing yourself.to have the thought, perhaps even exaggerating it. Suppose, for example, that instead of watching the ball, you were watching someone in the crowd. As soon as you notice what you did, say to yourself so others cannot hear:</p>
+<p>“There you go, looking at that hat instead of at the ball!”</p>
+<p>Or suppose you thought about what your coach would think of</p>
+<p>your play, instead of watching the ball. Then say to yourself: “Can you believe this, here\I am thinking what my coach thinks in-</p>
+<p>stead of getting down to business!” Doing this lets you bring the thought into consciousness instead of allowing it to stay buried</p>
+<p>somewhere in your thoughts and feelings.</p>
+<p>To underline what your mind is doing to you, you also can think</p>
+<p>to yourself, “That’s interesting!” or “Look at that thought!” to</p>
+<p>punctuate what you have just discovered. For example, “Look at what I just did: Watched somebody in the crowd instead of the ball! That’s interesting!”</p>
+<p>On first glance, noticing that you were distracted may seem like</p>
+<p>a strange thing to do. The point is that you have to expose the distracting thought before you can replace it with something more</p>
+<p>appropriate. This is a concept you might apply to any business or</p>
+<p>The Second R: Review 59?</p>
+<p>life problem. Expose the problem with words: “I’m afraid to make that speech,” or “I can’t believe I just said something that stupid.”</p>
+<p>Once your fear or frustration has been exposed, you will be in a position to move past it and take constructive action to correct the error.</p>
+<p>Next, plan what you want to do in the next point. Think back to the objectives of the Review. Do you need to watch the ball better,</p>
+<p>or move your feet, or simply execute your shots by following through better? Do you want to recover your game plan—that is,</p>
+<p>go back to something that you planned on doing that you have</p>
+<p>forgotten to do? Pay close attention to staying with something that is already working. Many players, because they have a weak</p>
+<p>Review, will desert a game plan that is working. If it is working,</p>
+<p>stay with it. Remember what Darrell Royal, the famous football coach, said about a winning game plan: “Dance with the one who</p>
+<p>Here are some sample Review instructions that might be appro-</p>
+<p>priate during the middle phase of the Three R’s:</p>
+<p>¢ “Work her backhand!” Sue made an amazing discovery. She found her opponent had a weak backhand during the warmup, and the first two games confirmed it. During the Review, Sue de-</p>
+<p>cided to work the point to get her opponent wide in the deuce court, and then force her to run to hit a backhand. During the Review, she thought this to herself, and pictured herself doing it</p>
+<p>on the next point.</p>
+<p>¢ “Get in!” Tom got burned during long baseline rallies during the first two games of the first set. As he got ready to return serve</p>
+<p>in game three, he realized that he had gotten to the net only once. His coach had told him to chip and charge against this guy, but</p>
+<p>Tom had not been doing it. He decided to chip and charge on the very next point.</p>
+<p>¢ “Be aggressive!” Blanche found herself falling into her opponent’s game plan by staying back and simply returning whatever came to her. She had made a commitment to be aggressive against her opponent, work the point, and look for a</p>
+<p>short ball to attack, but realized she had not been doing it. During the Review she discovered this error, and said to herself:</p>
+<p>¢ “Block it out!” Natasha was really thrown off by the airplane noise, and by the cheers that went up every time she lost a point. Natasha knew that she needed to block this out if she were to play well. She noticed that she was distracted, and thought to herself: “Can you believe this? Here I am thinking about the air-</p>
+<p>planes and the fans, and not watching the ball. I’ve got to stop that. Just watch the ball, and play the point. If I do that, I know</p>
+<p>In each of these examples, the player is simply noticing what is happening on the court (or, more precisely, what has happened</p>
+<p>in the past, as well as what is happening right now), Reviewing the situation in terms of his or her knowledge of the game, and making a plan to do something constructive on the next ball.</p>
+<p>As a tennis player, you can learn from other sports by creating a</p>
+<p>simple, easily remembered game plan with code numbers to bring focus to the Review phase of the Three R’s system. For example, in basketball, football, and other sports, players call out plays that have numbers or names known to everyone on the team. A</p>
+<p>single number can tell all 11 players on a football team what their assignments are. Tennis players, on the other hand, often find themselves simply playing a match with no way to remember what their game plan is. If your memory goes blank, try one of these three standard tennis game plans, which are described in</p>
+<p>more detail in chapter 7.</p>
+<p>Play 1 is the most aggressive: Serve and volley, or come in on the very next ball when you are returning. Play 1 says: “Iam com-</p>
+<p>ing in to the net no matter what; after a serve, I’ll run, do a split</p>
+<p>step, hit the volley, and close; I may have to hit an overhead, but I am going to win or lose the point at the net.”</p>
+<p>Play 2 says: “I will work the point from the baseline, but the very first time I get a short ball, I am coming in. I will knock off the short ball, then close for a volley or, if necessary, be ready to</p>
+<p>hit an overhead to win the point.”</p>
+<p>Play 3 is a standard baseline game: “I will hit good solid ground strokes from the baseline, work the point, and win with my precision, consistency, and power from the baseline.”</p>
+<p>As a part of your Review (looking back at what happened, and remembering your game plan) you can decide between points which play to use on the next point. For example, you can say to yourself, “Play 1,” and this will tell you that you are going to serve and volley on the next point. “Play 2” would mean that you are going to work the point, but come in on a</p>
+<p>short ball.</p>
+<p>Trogolo’s coaching of Michael Chang in a match against Stefan Edberg illustrates the use of both game plan and code words during the Review phase. In the week prior to the match, Edberg had beaten Chang 6—1, 6—0. Michael had stayed back</p>
+<p>on everything, and Edberg came in on everything. The plan this time was for Michael to be more aggressive on the returns by hitting down the line. Also, on second serves his plan was</p>
+<p>to take the ball early and come in behind it, taking the net</p>
+<p>away from Edberg. The plan worked; in the first set Chang broke Edberg three times. The plan also required Chang to hold</p>
+<p>serve, and to mix up serves by coming in on some and staying back on others. The successful game plan included a combi-</p>
+<p>nation of Play 1 and Play 2, and Chang won the match in</p>
+<p>straight sets.</p>
+<p>Keep it simple during the Review by using a code word to tell you what to do next. Tennis players and other athletes are noted for having short phrases to tell them what to do. We once saw Monica Seles in a match against Steffi Graf, and at the changeover Monica looked at her strings and shouted over and over: “Break</p>
+<p>her! You can break her! Come on!” One player went back to her room during a rain delay and put little adhesive notes all over the wall that each contained only one word: “Hold” or “Break.” Very</p>
+<p>simple.</p>
+<p>Other code words are: “Watch the ball!” “Play the ball!” “Get in!” “Be strong!” “Go for it!” Or you can use the code words for your game plan: Play 1, Play 2, or Play 3.</p>
+<p>Always wrap up your Review phase with a code word about what you are going to do next.</p>
+<p>The STOP is your best friend when it comes to putting an end to</p>
+<p>too much thinking. One of Trogolo’s players used to say “Stop!”</p>
+<p>to keep negative thinking about his doubles partner’s bad play</p>
+<p>from spilling over into the next point. Even though they had talked things over before the match and were trying to communicate better on court, there was only so much this player could do. Ata</p>
+<p>certain point, the only appropriate thing to do was to STOP all thinking, move on to Reset, and get ready for the next point. The</p>
+<p>STOP technique saved the day for this player. Say the word “Stop!” to yourself after you have finished the Review. This will be your</p>
+<p>cue to stop thinking and begin a preplanned and practical set of relaxing and focusing behaviors—your Reset routine—before serv-</p>
+<p>ing or returning.</p>
+<p>As described in chapter 2, you can learn the STOP technique by starting any behavioral sequence such as counting and hav-</p>
+<p>ing a friend yell “Stop!” at any point. From that point on, the word will mean that it is time to stop whatever you are doing</p>
+<p>and move on to the next phase which, in this case, is your Reset routine.</p>
+<p>Answer these questions:To what extent have you been one to think too</p>
+<p>much—or too little—while on the court between points? Can you identify matches in which you were hurt because your Review between points</p>
+<p>wasn&#x27;t sufficiently focused?</p>
+<p>Create your own Review by checking items from the list in this exercise. Then write your own summary Review in the lines that follow. For ex-</p>
+<p>ample: “After saying STOP (following Release) | will immediately switch</p>
+<p>racket hands, look at my strings, and walk as | go over the situation. Relaxing as | walk, | will ask myself the “coach questions” and check my game plan. Then | will call either Play 1, Play 2, or Play 3 before beginning my Reset routine.”</p>
+<p>Switch racket to nonplaying Skipping the Review. hand to start Review.</p>
+<p>Looking just at the bad.</p>
+<p>|_| Walk confidently (shoulders</p>
+<p>back, head up). Forgetting my game plan.</p>
+<p>|_| Look at my strings as | think. Looking at coach (parents) | ; a for help. Ask the “coach questions.</p>
+<p>What just happened? Other (list):</p>
+<p>Why did | win the point?</p>
+<p>__| Why did I lose the point?</p>
+<p>Am|doing my game plan?</p>
+<p>Am | playing my opponent&#x27;s weakness?</p>
+<p>What do I need to do next?</p>
+<p>“Watch the ball,” “Be strong,”</p>
+<p>“Play the ball,” “Get in!”).</p>
+<p>Relax with deep breathing.</p>
+<p>Looking at the items you have checked, write down a summary of what would be an ideal Review for you between points.</p>
+<p>Practice your own Review, and ask a friend to code your Review behavior</p>
+<p>live or on videotape using the Coding Manual in chapter 7.</p>
+<p>Watch other players (live or on TV) to see if you can spot good and poor</p>
+<p>Reviews. For example, can you tell when taking too little time for the Review leads to rushed play and unforced errors (especially after things</p>
+<p>have gone badly for a point or two)?</p>
+<p>What kind of mental toughness does it take to beat Bobby figeeint! the“Battle of</p>
+<p>the Sexes” before a worldwide audience? Those who watched that match recall</p>
+<p>that Riggs had previously defeated Margaret Court i in another battle of the sexes,</p>
+<p>and that Riggs went through all sorts of di re cting maneuvers, even present-</p>
+<p>ing Margaret with a bouquet of roses just as the match started. Billie Jean told</p>
+<p>the world that she would not let herself get distracted, and she proved it.</p>
+<p>Billie Jean King was the first woman to be given the title“Sportsperson of</p>
+<p>the Year” by Sports Illustrated in 1972, and in 1973 she was named “Female</p>
+<p>Athlete of the Year.” In 1962, when she was 18, King upset Margaret Smith</p>
+<p>Court, the best woman player, at Wimbledon. In 1967 King was the first</p>
+<p>woman since 1939 to have won the triple crown in singles, doubles, and</p>
+<p>mixed doubles in both the British and American championships. By 1968</p>
+<p>she had captured Wimbledon three times and would go on to win it three</p>
+<p>more times before retiringaln all, she won 71 career tournaments, 39 Grand</p>
+<p>Slam singles titles,and 27 Grand Slam doubles titles. King was the first woman</p>
+<p>athlete to win more than $100,000 in prize money in a single season.</p>
+<p>King’s outspoken support for better pay and treatment for women play-</p>
+<p>ers, as well as her defeat of Bobby Riggs, were instrumental in improving the</p>
+<p>popularity of women’s tennis. Known to be a fierce competitor, King em-</p>
+<p>ployed an all-out attack on the court while maintaining a tight focus on her</p>
+<p>game plan with solid Reviews.</p>
+<p>Billie Jean King (Moffit) was born on November 22, 1943, in Long Beach,</p>
+<p>California. After retiring, King became a coach and television analyst for the</p>
+<p>sport. She established the first successful women’s professional tennis tour</p>
+<p>and founded tennis clinics for underprivileged children.</p>
+<p>|amar iti -masesneeeincanesna Lea</p>
+<p>Oar 1 Ot Gat . ar gai pity with aa! i Faw</p>
+<p>Watch professional tennis players as they get ready to serve or return serve, and you’ll notice patterns in their behavior. Some</p>
+<p>look at their opponent or glance unobtrusively at a spot on the</p>
+<p>court where they intend to hit the first serve. Others go through a specific ball bounce routine. Some take a deep breath and seem to draw a mental image of what they are going to do. (You&#x27;ll see this in other sports as well. Watch basketball players shooting</p>
+<p>free throws, placekickers getting ready to kick field goals, or baseball players stepping into the batter’s box.) Many players go</p>
+<p>through rituals, such as John McEnroe pulling on his shirt, or</p>
+<p>Ivan Lendel pulling on his eyelids in certain situations. Others will bounce on their toes before returning serve, then do a split</p>
+<p>step in preparation for hitting the ball.</p>
+<p>WHY RESET?</p>
+<p>Our analysis of these routines and rituals is that players use them to Reset themselves before the next point. Instead of being</p>
+<p>dragged down by some terrible thing that just happened (bad line call, noise from the stands, or feelings of impending doom when a weaker player manages to get ahead of them), these play-</p>
+<p>ers do something to get themselves into a better frame of mind for the next point. You can start your computer working again</p>
+<p>when it gets itself tied in knots simply by pressing a button.</p>
+<p>Tennis (and life) is a bit more complicated, so it takes a more complex behavioral routine to Reset yourself when you need a</p>
+<p>fresh start.</p>
+<p>Picture John McEnroe at his worst and best! No matter how dramatic his outbursts or how they threw his opponent off, when it</p>
+<p>came time to serve or return, there was never a player as good at putting what had just occurred behind him, completing spe-</p>
+<p>cific behavioral routines, and bringing complete focus to the task at hand.</p>
+<p>This chapter will give you a checklist for completing the third</p>
+<p>R, Reset, between points. We suggest that you use a regular routine for your Reset, so the power of conditioned habit will carry you through no matter what’s happening in the game. You may have such a routine already—many players are fairly strong on this part of the game—without noticing that you’re doing anything specific. Without the uriderlying concept, however, play-</p>
+<p>ers commonly rush their normal routine under stressful circumstances, or skip it altogether. Just as bad, they might allow</p>
+<p>distractions to throw off their Reset routine, and keep them from using it to enhance concentration and focus when they need it most.</p>
+<p>Think of the Reset as a best friend who helps you maintain (or regain) your composure as you prepare to put the ball in play. In</p>
+<p>no case do you want to let someone steal your Reset from you by</p>
+<p>interrupting the flow. As a matter of fact, if you’re ever interrupted between points (a ball rolls onto the court, crowd noise gets un-</p>
+<p>usually loud, or your opponent does something to throw you off), begin the Three R’s all over again, from the top: Brief Release, brief Review of the situation, and then complete your Reset rou-</p>
+<p>tine. We’ll get back to ways to deal with interruptions later, but let’s look at some basic Reset routines first.</p>
+<p>The Third R: Reset Routine 71)</p>
+<p>You can develop a routine that is uniquely suited to your style of</p>
+<p>play. This means that your routine may be very different from that of other players, even though all players will draw from sev-</p>
+<p>eral standard components illustrated in table 5.1. Have a look at the table and the discussion of the components, and see which</p>
+<p>elements you would like to include in your Reset routine, and in what order.</p>
+<p>Here are some of the measures that we’ve found helpful when getting ready to serve.</p>
+<p>¢ Look to opposite court. Before stepping to the line to serve, look at the opponent, or the other side of the court, indicating that you are in control of the situation, and about to put the ball</p>
+<p>in play.</p>
+<p>Table 5.1 Reset Routine Components</p>
+<p>_ Step to the line. Step to the line. i</p>
+<p>Call score. Check score.</p>
+<p>; Relax with a deep breath in Relax with a deep breath in : and out; image a great serve and out;imagine your strong |</p>
+<p>__ to start the point. return (say, chip and charge).</p>
+<p>Bounce the ball a set number Begin “fast feet.”</p>
+<p>Begin serve motion. Move to the return.</p>
+<p>Note. This is a basic relaxation-oriented Reset routine. You can add Rev Up ele-</p>
+<p>ments by starting the process with a slap to your leg, saying “Come On!&quot; to yourself, or going through some other motion to get yourself going as you step to the</p>
+<p>line. Note that you still want to relax midway through the Reset routine, so as to settle in at the new energy level and make sure you&#x27;re ready to play your best.</p>
+<p>¢ Call the score. Unless you have someone calling the score for you, you can step to the line and call the score (if returning, ask for the score to be called, if your opponent fails to do so).</p>
+<p>¢ Relax with a deep breath, and exhale. Imagine putting the</p>
+<p>ball into play, and then bounce the ball. This sequence of behav-</p>
+<p>iors can be ordered to suit your own style. The concept is to relax by taking a deep breath and exhaling (much as basketball players</p>
+<p>do before shooting free throws), conjure up an image of what you</p>
+<p>are about to do, and then bounce the ball any number of times that seems to suit you. Always use the same number of bounces— the number itself doesn’t matter, but the repetition builds a sense</p>
+<p>of control at a nonverbal level and transfers to similar control</p>
+<p>when you actually serve.</p>
+<p>¢ Serve the ball. At this point you begin your service motion, which has a behavioral routine of its own. Beginning from a start position (ball and racket held together), you bend your knees, moving the racket back and tossing the ball, and then uncoil your body and hit the ball with tremendous energy and power in pre-</p>
+<p>cisely the direction that you have already imagined. The ball is now in play and you are off and running!</p>
+<p>Use any combination of the following as a part of your return routine.</p>
+<p>¢ Imagine your return. Picture what you are going to do on the</p>
+<p>return. Imagine how you will watch the ball come off the opponent’s racket, quickly make your move to return, and hit the ball well.</p>
+<p>¢ Relax. Take a deep breath and let it out slowly. Shake loose any jitters before you step into the return area.</p>
+<p>¢ Look at opponent on other side of the court. As with the service, looking at the opponent on the other side can be your way of</p>
+<p>controlling the situation and letting the person know that you are ready to return.</p>
+<p>e Step to the return area and begin footwork. This may involve bouncing on your toes, swaying back and forth, or any other be-</p>
+<p>havioral routine that allows you to prepare to return a good shot.</p>
+<p>The Third R: Reset Routine 75)</p>
+<p>Players report that when they are “in the zone” of peak perfor-</p>
+<p>mance, they are able to effortlessly execute shots without a lot of</p>
+<p>thought. They are neither too relaxed nor too excited. While you</p>
+<p>cannot force yourself into the zone, you certainly can create con-</p>
+<p>ditions that make getting there possible. If you are too relaxed, you may need to pump yourself up. If you are too pumped up, you may need to relax yourself. You can do this by varying your</p>
+<p>Reset routine as either a relax routine or a rev up routine.</p>
+<p>Use a relax routine if you are uptight, nervous, or too energized. The routines already described are relax routines. In these routines you take a deep breath, let it out slowly, collect yourself,</p>
+<p>then get ready to serve the ball or return.</p>
+<p>If you have learned in your Review phase that you are too calm, underaroused, lethargic, or unmotivated, and you need to get go-</p>
+<p>ing, then do a rev up routine. Add one or more of the following to your standard routine to rev you up:</p>
+<p>¢ Say “Come on!” or some other phrase. Tell yourself to get going.</p>
+<p>¢ Slap your leg, as if to wake yourself up. Or do something else</p>
+<p>to get your attention.</p>
+<p>e Use aggressive imagery about the next point. Picture what</p>
+<p>you are going to be doing in a strong, positive way. Picture taking control of the entire point.</p>
+<p>Here’s more on how to make imagery a part of your (relax or rev up) Reset routine as you get ready to serve or return. Picture your-</p>
+<p>self about to play a classic tennis point. If you are going to play serve and volley and you have chosen Play 1, then at this point you picture a strong, solid Play 1, with you in charge of the entire</p>
+<p>situation. On the other hand, if you are returning and have chosen Play 2, then you will picture a strong return—one that will create a short ball—and you will picture yourself charging in to take the short ball early, closing for a good volley to win the point.</p>
+<p>Suppose you are just about to complete your Reset routine by beginning your serve when something interrupts you. It might be</p>
+<p>that your opponent engages in‘a bit of gamesmanship and delays play. Or a ball may roll out on the court. What do you do?</p>
+<p>Answer: Start the Three R’s all over, completing each R, even though you might make the Release and the Review quite short.</p>
+<p>For example, suppose your opponent turns to the crowd and makes</p>
+<p>a joke just as you are about to serve. Here is what you can do:</p>
+<p>¢ Release: Walk away from the service line, perhaps saying to</p>
+<p>¢ Review: “He thinks this will throw me off, but I won’t let it</p>
+<p>happen. My plan was to kick the serve high to his backhand,</p>
+<p>and that’s still what I’m going to do. I’ll do an especially good Reset routine, with a good deep breath to focus, and I’ll keep this from throwing me off.”</p>
+<p>¢ Reset: Do the Reset routine that was interrupted—from the</p>
+<p>beginning. Take the deep breath, form the image, bounce the ball, whatever you were going to do.</p>
+<p>The key is to use the Reset routine as your own entry for the next point, and not let anyone take it away from you. They may</p>
+<p>interrupt it—but you will simply step back and move through the Three R’s again, using the Release to let go of any frustration that may be present, the Review to analyze the interruption and make your plan, and the Reset routine to get ready to play the point.</p>
+<p>It’s natural! Remember that we all have to hit a lot of balls to develop our best shots. And that at some point hitting good shots</p>
+<p>starts to feel natural. Even more, it feels great to hit solid shots. The same is true of the Three R’s between points. After you develop your own sequence, the between-point time becomes your</p>
+<p>ally, a time to enjoy the good that just happened, or to correct for anything that is not going well. Remember too, that the Three R’s is a no-fail system: If you drop your guard and lose it in some way</p>
+<p>(outburst, discouragement, or choke), you can always recover with</p>
+<p>a Release, a quick Review, and a Reset routine to bring focus to the next point.</p>
+<p>What Reset routines do you characteristically perform when serving? How</p>
+<p>about when returning?</p>
+<p>Check items on the lists that follow to identify elements of your own</p>
+<p>Reset routine.</p>
+<p>When serving: Letting anyone keep me</p>
+<p>from doing my Reset Step to the line. : routine. Call score.</p>
+<p>Skipping my Reset routine. Relax with a deep breath.</p>
+<p>Bounce the ball __ times.</p>
+<p>Imagine a great serve to start a great point.</p>
+<p>Begin serve.</p>
+<p>Step to the line.</p>
+<p>Check score.</p>
+<p>Jump on the return.</p>
+<p>If Underaroused, If Underaroused,</p>
+<p>Rev up by slapping my leg, Drifting into next point saying “Come on” or with no energy or focus. something else to get me going. Chosen phrase:</p>
+<p>Considering the items you have checked, write out a summary of your own standard Reset routines for serving and returning.</p>
+<p>Summary of service Reset routine:</p>
+<p>Summary of return Reset routine:</p>
+<p>The Third R: Reset Routine — 79»</p>
+<p>Practice your Reset routine when playing with a friend. Have an observer code your behavior from a live match or from a videotape using the Cod-</p>
+<p>ing Manual in chapter 7.</p>
+<p>From 1981 to 1984 John McEnroe ranked as the No. player in tennis and is</p>
+<p>still praised for a nearly perfect technique. McEnroe Claimed 77 singles titles,</p>
+<p>including four U.S.Open championships and three Wimbledon titles during</p>
+<p>his 16-year professional career.</p>
+<p>Considered one of the foremost doubles players in the history of the sport,</p>
+<p>he won the doubles crown five times at Wimbledon and four times at the</p>
+<p>U.S. Open. He won the French Open mixed doubles title in 1979 with Mary</p>
+<p>Known for loud negative Releases when his game wasn&#x27;t going well, he</p>
+<p>maintained clear internal focus and stayed on top of his game by having a</p>
+<p>strong Review after missed shots. Additionally, McEnroe employed a distinc-</p>
+<p>tive Reset routine of pulling his shirt up over his shoulder before serving.</p>
+<p>McEnroe is now a match analyst for CBS and has done tennis match analy-</p>
+<p>sis for the USA Network and NBC.</p>
+<p>John McEnroe was born in Wiesbaden, Germany, on February 10, 1959,</p>
+<p>and divides his time between New York and Malibu, California. He is active</p>
+<p>with The Safe Passage Foundation, founded by the late Arthur Ashe, which</p>
+<p>provides 6,000 inner-city youths with tennis instruction and educational</p>
+<p>counseling.</p>
+<p>vetoes cenymoRRt anton PNRM IONEOSET HAAN HOH Three R’s -</p>
+<p>Now that you know how the Three R’s system works, and now that you have a picture of what your own Releases, Reviews, and Reset routines can be, this chapter will help you apply the Three R’s</p>
+<p>to standard tennis situations. Then we will show how to apply the</p>
+<p>system to standard tennis disasters. As you read through our solutions to problems such as tantrums, choking, and tanking, you</p>
+<p>may find some that apply to you or to someone you know. The</p>
+<p>good news is that you can use the Three R’s between points to</p>
+<p>counter every one of these situations. A table at the end of the chapter summarizes the main points, showing the symptoms and the results you can get when you apply the Three R’s as a solution.</p>
+<p>A moment’s thought reveals that there are at least three standard</p>
+<p>situations to which you can apply the Three R’s in tennis: Between points, at changeovers, and between matches. Let’s take a</p>
+<p>look at each.</p>
+<p>We’ve been talking about using the Three R’s between points all</p>
+<p>along, so here we will simply remind you that the idea is to do</p>
+<p>some version of the Three R’s before every point. This means that in the early going of a match, perhaps when you are playing well, the Three R’s will be more streamlined, shorter, and feel like no big deal. Do not skip the routine, however. We have seen players</p>
+<p>invite disastrous mental lapses by skipping the Three R’s, or by trying to apply the system only on the two to three big points in</p>
+<p>the match. This does not work. You need to make it a part of your</p>
+<p>ongoing between-point experience.</p>
+<p>Try something like this. If you are playing well, the Release can</p>
+<p>be quiet, positive, affirmative. Just think to yourself: “You’re do-</p>
+<p>ing great. Keep it up.” The Review need be no more than a quick</p>
+<p>“Play 1.” (Or Play 2 or Play 3, of course.) But the Reset routine will be the same as in difficult situations: Look to the opposite</p>
+<p>Competing With the Three R’s 85?</p>
+<p>court, take a deep breath to relax and let it out, form an image, bounce the ball, and serve. This takes very little time, and the</p>
+<p>constant repetition is what gives it its strength.</p>
+<p>When things are going badly, you may take more time. The Release is more critical and important to you because it gives you a</p>
+<p>chance to let go of tremendously negative feelings in a constructive way. In intense situations, such as when you are in a critical</p>
+<p>game in the final set, it will be important to use the Review to</p>
+<p>assess the situation and to pick the best play—still without going through a lot of thinking, but without shortchanging yourself, ei-</p>
+<p>ther. And the Reset routine will come into its own. All that rep-</p>
+<p>etition during practice and good times on the court will add up to</p>
+<p>something you can use to focus your thoughts and images and concentrate even under conditions of extreme stress or fatigue.</p>
+<p>You have 90 seconds at the changeover, and the question is what to do with it. Simply walking to the side, sitting down, toweling</p>
+<p>off, and drinking fluids is an important part of most players’ changeover procedures. Allow your mind, heart, and feelings to go through the Three R’s as you go through the changeover. Re-</p>
+<p>lease feelings and thoughts. The Release might be about your play: Being aware that you are playing well or playing badly. Or use the Release as an outlet to take a break: Look at the crowd, think</p>
+<p>about what this match means to you, or anything else that may be on your mind. Release and allow these thoughts and feelings to come out. Then end them with the STOP technique, and move to Review: “What do I need to do next?” During a changeover, you</p>
+<p>can even pull out your play book and Review your game plan. Then continue into a changeover Reset routine that includes more relaxation. Put a cold (or hot) towel on the back of your neck if you are extremely fatigued. Close your eyes. Use mental imagery</p>
+<p>of what you will be doing next. Then get up and move to the other side to begin play. Notice that if you have done the first two of the Three R’s thoroughly enough while on the bench, then you may well move to the active Reset routine as you walk over to begin your serve (skipping the Release and Review that you nor-</p>
+<p>mally would do while in transit between points).</p>
+<p>As you get ready for a big tournament, your mind might be filled with all kinds of debilitating and frightening thoughts: “What if I</p>
+<p>don’t play as well as Ineed to? What will happen to my rankings? Should I look at the draw, or will that make me think too far ahead? This person is really good.”</p>
+<p>A multitude of other thoughts or experiences may come your way to make your life difficult, increase anxiety, interfere with prac-</p>
+<p>tice, or interfere with sleep as you prepare for a match. The solution can be to apply the Three R’s whenever you face any distraction between matches. Let’s have a look at how you might do this.</p>
+<p>You are one week away from a major tournament that could have an important effect on your rankings. Someone makes a</p>
+<p>Competing With the Three R’s 87)</p>
+<p>comment about the opponent you might draw in the first round, and you begin to get uptight and nervous about the situation. Your mind races to thoughts about not wanting to draw a particular player in the first round, and a fear that you will. You</p>
+<p>chastise yourself for being afraid of this opponent, though in your heart of hearts you feel afraid, and that makes it worse. What can you do?</p>
+<p>Release the feelings by acknowledging that this is what you are thinking. Notice the mental pictures you have of the draw sheet</p>
+<p>and the name of the opponent, and notice the feelings in your</p>
+<p>stomach as you think of playing that person. Allow the feelings to</p>
+<p>occur. Release them into your consciousness. Then STOP yourself and move to a Review.</p>
+<p>During the Review, reflect critically on what is going on. Say to yourself, “Look at me thinking about the draw sheet, and my</p>
+<p>opponent, and making myself uptight by doing so. I’m thinking more about the rankings and all these other things than I am</p>
+<p>about what it takes to win. Let me ask myself right now what</p>
+<p>does it take to beat this person? Well, the same thing it takes to beat anybody else. I have to watch the ball, play the ball, ex-</p>
+<p>ecute my game plan, and play each point one at a time. That’s what I need to do. Also, I’m going to have to get more first serves</p>
+<p>in against this person than somebody else because this one likes to punish second serves. So, I need to work on first serves this</p>
+<p>week, and beyond that, simply follow my game plan. I will work</p>
+<p>Then STOP the Review. Review is good and useful, but not when you go around and around over the same ideas. Think it through</p>
+<p>once, then start a Reset routine. Develop a specialized Reset for this sort of situation—perhaps deep muscle relaxation and visu-</p>
+<p>alization of what you want to do in the match, or perhaps reading, watching a movie, or simply taking a deep breath and going</p>
+<p>on with the business at hand. If you are in class and about to complete an algebra assignment when the upcoming match intrudes on your thoughts, both your tennis and your grade will benefit if you can get back to the algebra assignment without a lot</p>
+<p>of wasted energy.</p>
+<p>When you have mapped out a constructive action, take that action at once if you can. If you are getting ready to go out and play,</p>
+<p>carry out what you said you would do. Work on first serves, work</p>
+</section>
+<section class="chapter" id="sec-4">
+<h2>Part 4  ·  pp. 100–129</h2>
+<p>on watching the ball, work on playing the ball at all costs without</p>
+<p>getting into distracting thoughts. If you are in class or at work or</p>
+<p>otherwise tied up when you start thinking about the match, make the commitment or even write a note to yourself that says you will work on first serves and playing the ball this afternoon, but right</p>
+<p>now you are going to complete the other work in front of you.</p>
+<p>The same techniques will come in handy during delays once</p>
+<p>the tournament gets started. If it’s raining or there’s something else keeping you off the court, do whatever you find useful to help yourself relax, maintain concentration, and save energy. Eat, rest, listen to music, read, play cards, or watch a movie in your room. When the upcoming match intrudes on your thoughts, run through</p>
+<p>the Three R’s briefly and return to your placeholding activity. Avoid the spiraling tension of endless worry or negative thinking.</p>
+<p>You can use the Three R’s as an appropriate channel for any</p>
+<p>thought, feeling, or challenge that may come your way in getting ready for a match. The Three R’s system is the opposite of denial:</p>
+<p>Competing With the Three R’s 89?</p>
+<p>You don’t block out what is happening and keep yourself from</p>
+<p>learning from it. Instead, you treat the disruption and the accom-</p>
+<p>panying thought or feeling as a friend. Something floats into your</p>
+<p>consciousness and makes you think about the match, even though it causes you anxiety to do so. You allow it to happen (this is the Release), and then you STOP it. Then you move to a Review to</p>
+<p>analyze the situation and decide how you can learn from it. You make a commitment right here and right now to do one or two</p>
+<p>correct things this week to help get ready for the match. This is the very same as saying to yourself Play 1, Play 2, or Play 3 dur-</p>
+<p>ing the between-point use of the Three R’s. And then you STOP the Review and get on with your life.</p>
+<p>“Excuse me, but this situation is so frustrating, I think I&#x27;ll just destroy everything in sight.”</p>
+<p>Everyone experiences frustrations at one time or another. Some obstacle gets in the way of a goal. As a matter of fact, that is what competition is all about: Trying to block the progress of</p>
+<p>an opponent while the opponent is trying to do the same to you. How about when you frustrate yourself? What if your own</p>
+<p>poor play or unforced errors make you so mad that you cannot</p>
+<p>control your feelings? Every tennis player has seen extreme examples of this. Angry outbursts expressed at anything in sight: the ball (the ball you strike in anger could hit a spectator); in-</p>
+<p>animate objects (John McEnroe once kicked a water cooler off its stand, sending water and ice all over the side of the court); your opponent (if you are susceptible to tantrums, then you know what it feels like to get into a verbal if not a physical</p>
+<p>altercation with an opponent). A player Robert knows once got</p>
+<p>so mad after being cheated repeatedly by line judges and umpires in a small town that the player walked over and shook the umpire’s chair so violently that the umpire fell out of the</p>
+<p>chair and broke his arm. Tournament officials had to intervene, ending the match, and telling the player to leave town before somebody killed him.</p>
+<p>Tantrums are simply behavioral expressions of deeply felt angry feelings. At its heart, anger reflects a view that what is happening</p>
+<p>right now is simply “not right, not just, and I’m not gonna take it</p>
+<p>anymore!” When a tennis player gets angry, the player is usually</p>
+<p>angry at himself or herself, although the anger may be directed at</p>
+<p>someone outside—a referee for a bad line call, an opponent for</p>
+<p>cheating, or a photographer or a reporter for causing a distraction in the stands.</p>
+<p>While most people do not recognize it, the good part about anger is that it shows that you care about what is happening to you. If you did not set high standards for yourself, and if you did not have a sense of justice about the rules of the game, you would not</p>
+<p>care if you played badly; you would not care if your opponent cheated; you would not care if someone interfered with play. So</p>
+<p>at its heart, it is a positive sign that you are paying close enough</p>
+<p>Competing With the Three R’s 91?</p>
+<p>attention to yourself, your opponent, and the entire situation to notice violations, and to notice that you are not playing up to your own standard of excellence.</p>
+<p>The negative, of course, is that you can get so angry that the emotion gets out of control. Your anger takes over and totally obliterates</p>
+<p>any chance of playing well. Anger turns to a destructive tantrum when you abuse equipment and people so badly that you receive a</p>
+<p>code violation (or are disqualified altogether), or when you lose track of what you are trying to do during the point and your feelings</p>
+<p>interfere with your shots. Every tennis player knows that there is a</p>
+<p>fine line between anger that motivates and energizes—anger that is under control—and anger that goes over the line.</p>
+<p>Have you truly defined what a good Release will be for you? In the best of all worlds, how do you want to let your feelings out? If</p>
+<p>you have not given this enough attention, then you will be likely</p>
+<p>to fall into old patterns of swearing, abusing rackets, and the like.</p>
+<p>Once you have practiced a solid Release, remember that even if you should lose it and fall into bad behavior, you can use the</p>
+<p>STOP technique any time you want. After you do that, it is critical that you engage in some sort of standard Review behavior (for example, switching your racket to your nonplaying hand) to cue yourself into the next phase. After the Review, use the Reset routine as a way to put yourself into a relaxed state for the next point.</p>
+<p>“I’m so nervous right now, I believe I’ll just tighten all my muscles</p>
+<p>so I can’t hit this shot well at all. Also, I think I’ll desert my game plan, try to protect my lead, and, eventually, I guess, I’ll lose.”</p>
+<p>No one says it just this way, but that is what a choke is: nervousness that becomes debilitating. Choking begins with think-</p>
+<p>ing about everything other than hitting the ball and executing the</p>
+<p>game plan. A player will think about how important this match is</p>
+<p>in terms of rankings or who might be watching, or indulge in internal monologues like this: “I was up 5—1, and now the score is 5—5. I can’t believe I let it go!”</p>
+<p>At the heart of choking is nervousness or anxiety—psychologists’ words for fear about consequences. “I’m afraid I might lose this match. I get worried that I will not be able to break serve. Iam anxious about my first&#x27;serve; it’s going to desert me. My coach will think badly of me ifI do not beat this person (whom I should</p>
+<p>beat, based on past performance).” As with the feeling of anger that underlies a tantrum, the feeling of anxiety underlying a choke</p>
+<p>is one that can be used to your advantage if you are able to understand the feeling and channel it in a constructive direction.</p>
+<p>It is a strength to appreciate the importance of getting your first</p>
+<p>serve in (not giving your opponent a chance to unload on a weak</p>
+<p>second serve). It is a plus to want to win a match and improve your rankings, or to avoid blowing a 5—1 lead. The fact that you care</p>
+<p>about such things is an indication that you are aware of the situation, which is the first requirement for doing something about it.</p>
+<p>The negative is that you can get so anxious that the feeling runs away with you and takes over the situation. When this happens,</p>
+<p>Competing With the Three R’s 93?</p>
+<p>you become so nervous, so anxious, that your muscles tighten up</p>
+<p>and you are unable to execute shots. Most tennis players have had this happen at one time or another. The standard tennis term</p>
+<p>for this situation is that you start to “push,” barely blocking the ball back instead of executing the shots with fluid strokes that</p>
+<p>have energy, power, and direction. Just as the word choke conjures up an image of air being closed off from your windpipe,</p>
+<p>choke also indicates a tightening of muscles, constricting of blood flow, and an inability to hit the ball properly.</p>
+<p>What can you do to use this heightened awareness and concern</p>
+<p>constructively, and keep anxiety from turning into choking? The Three R’s response to a choke involves a Release of tension (perhaps with humor), a Review of the causes (for example, “Here I go thinking about how huge this match is to me, instead of ex-</p>
+<p>ecuting my shots”), and a relaxing Reset routine (very deep breath, let out slowly, and then my image and ball bounce). This use of the Three R’s lets you understand what is happening, perhaps</p>
+<p>express the feelings with humor, and then leave them behind by getting back to the matter at hand with a new and improved focus</p>
+<p>on watching the ball or executing the game plan.</p>
+<p>“l’ve had enough of this, thank you. If I can’t play any better than this, then I quit.”</p>
+<p>Tanking is the ultimate contro] maneuver. The logic seems to go something like this: “Sure, I’m playing badly and you&#x27;re play-</p>
+<p>ing pretty well; you’re about to beat me. But I won’t let you beat me. I will not give you that kind of control over my life. How will laccomplish this? Simple, I will quit playing. Oh, I will go through the motions, but I will show you and everybody else that I’m not really trying. I feel so bad about what has happened and is now</p>
+<p>happening that I will not tolerate it. I would rather have you see me as a depressed and discouraged player, one who gave up and</p>
+<p>let you take it, than allow you to beat me. My ego and heart, to be quite honest about it, won’t stand for you beating me, so, I will not let you do it. I quit.”</p>
+<p>If you think about competition as a matter of fighting and attempting to control the outcome, then the psychology of the</p>
+<p>tank is understandable. It is a desperate move, however, one in which the player demeans himself or herself in an attempt to retain some semblance of self-esteem. To further complicate the matter, a tank can sometimes turn a match around (thereby reinforcing the tank behavior). Your opponent, seeing that you have quit, lets down. You hit freely (after all, there’s nothing to lose now) and start to win some points, or a game or two. An</p>
+<p>experience or two like this and the strategy may be reinforced enough that it unconsciously becomes a part of your approach</p>
+<p>to difficult situations.</p>
+<p>As with anger and anxiety, tanking indicates discouragement about the situation, a form of on-court depression. If giving up becomes a part of your standard response, then it will hurt you more than it will help you over the course of your tennis career.</p>
+<p>Tennis is one of the few sports where the clock does not run out. There is always a chance to come back. We remember Jimmy Connors’ comeback victory over Michael Pernfors at Wimbledon. Having lost the first two sets, Connors was down 1-4 in the third. To the amazement of all, Jimmy hung in there to win the&#x27;third set,</p>
+<p>and the fourth, and eventually to take the match in five sets. How did he do it? By blocking out the score, and playing the ball, one point at a time.</p>
+<p>How can you turn negative feelings of discouragement in a constructive direction? Use the Three R’s to make an adjustment in your game plan, and to ride the situation through. Remember that it does not take much to begin forcing errors in your opponent, and doing so transfers the negative feelings to the other side of</p>
+<p>the court.</p>
+<p>Allow the Review phase to turn things around by giving yourself clear instructions to focus on the ball, or do something else</p>
+<p>very concrete. Focus on executing your shots (perhaps “execute” could be a code word during Review), or focus on calling Play 1</p>
+<p>or Play 2. One of the most disastrous parts of the tank occurs when the mind wanders, but you can counter this by focusing</p>
+<p>concretely on what you are going to do, calling to mind your predetermined game plan during the Review phase.</p>
+<p>Competing With the Three R’s 95)</p>
+<p>“T think I’ll just tune in on anything I please—that weird guy in the stands, what’s happening on the next court, my date tonight.</p>
+<p>After all, I’m special: I don’t really have to watch the ball or ex-</p>
+<p>ecute my game plan. I can do several things at once.”</p>
+<p>In its most positive form, distraction means that you are a wellrounded human being. After all, you were not born simply to hit</p>
+<p>a tennis ball and execute a game plan. You have a life! You care</p>
+<p>about your relationships, your car, your bank balance, your friends, the people in the stands, and the newspaper and TV reporters.</p>
+<p>None of these concerns is bad. The problem arises when you think</p>
+<p>about them in the middle of a point, or as you are getting ready to</p>
+<p>serve to win a tiebreaker.</p>
+<p>Every tennis player has run into distractions. Some come from inside, as when you let your mind drift, seemingly a willful act.</p>
+<p>Others come from the outside, such as a loud noise, an airplane flying overhead, a ball that rolls onto your court. An opponent</p>
+<p>goes through antics that generate laughter from the sidelines, or a line judge makes a bad call against you.</p>
+<p>As with all the other emotions, at the heart of distractibility is</p>
+<p>the fact that you are a human being. People do pay attention to what is happening around them. It becomes a problem only when</p>
+<p>you pay too much attention. It will not help to be thinking about the bad line call or the planes overhead as you make the toss on</p>
+<p>your second serve at a crucial point in a tiebreaker.</p>
+<p>How can you keep distractions from interfering with your own ability to perform? How can you move from a distraction to a mental focus on watching the ball, executing shots, and complet-</p>
+<p>ing the game plan?</p>
+<p>Try exaggerating the wandering of your mind during the Release. (“I can’t serve at all, and I’ve got to get my car washed today too!”) Let it go, and then use the STOP technique to end the distraction and use the Review to get your head back into the</p>
+<p>game (“Come on! Play! Get in!”). Remember, too, the rev-up ver-</p>
+<p>sion of the Reset routine, which you might need to get yourself back into the game when you are distracted.</p>
+<p>“You know, tennis is a wonderful game, and I’m committed to</p>
+<p>competitive play. But I just don’t care about any of it today.”</p>
+<p>No one can stay totally focused on the task at hand indefinitely.</p>
+<p>Some players have a tough time motivating themselves to practice, then do quite well during matches. Others cannot get “up” when they feel they really ought to. What are your feelings telling you when you cannot get motivated to perform? It might be that your</p>
+<p>priorities are off. You might have invested too much time, effort, and money in your sport, to the exclusion of other interests and priorities, and your unmotivated play is your body’s way of getting</p>
+<p>the message through to your mind. Or perhaps you are burned out,</p>
+<p>overextended, or mentally exhausted. Or maybe it really is just</p>
+<p>that on this particular day and at this particular moment you can-</p>
+<p>Competing With the Three R’s 97&gt;</p>
+<p>not get your head into the match. Sometimes you get by with low motivation, and other times you pay a price. How about losing to</p>
+<p>someone that you should beat? You walk off the court with the knowledge that the other player wanted it more than you did.</p>
+<p>Use the Three R’s to motivate yourself while on the court—and in</p>
+<p>practice. During your Release, allow the thoughts and words that you are “not motivated” to come out, to be Released into your</p>
+<p>consciousness. Perhaps chastise yourself or make fun of yourself</p>
+<p>a bit, but do not become so negative that you drag yourself down even further. Say, “Okay, maybe I’m not motivated to play—but I’m on the court. Do I really want to lose to this person?” Then</p>
+<p>use the STOP word, and kick in your “pump-up” positive statements during the Review, followed by a solid rev-up Reset routine. Revving up can be your best friend when you are feeling</p>
+<p>lethargic and unmotivated.</p>
+<p>“Sometimes I’m good, and sometimes I’m bad. I can never predict what it will be!”</p>
+<p>Let’s start with the positive part of uneven performance: At least you are good some of the time! As with any athlete, your goal</p>
+<p>now is to increase the number of times you do well, and decrease the number of times you do poorly. Your problem may be that you make too many unforced errors, losing points and even games, not because your opponent has done anything great, but because you have overhit or lost concentration. At the heart of the problem is an inability to correct errors immediately and keep them from turning into a downward spiral.</p>
+<p>What can you do between points to maintain intensity, focus,</p>
+<p>and concentration to close out opponents and reduce unforced errors? Use the Three R’s to fix errors as they occur. Use the Review especially as a time to analyze what just happened. For</p>
+<p>example, did you take your eye off the ball, or watch your opponent charging the net instead of watching the ball as you got ready</p>
+<p>to pass? Picture what you would like to do next as a part of your Review. In this way the Three R’s will allow you to solve the problem of uneven performance by fixing errors as they occur.</p>
+<p>If you have fallen behind, set a goal during the Review to execute your shots until you get to a point where you are back in the game. You can resist the tendency to overgeneralize and</p>
+<p>catastrophize about your play (after having blown a few shots) by making a solid Review of the past to see exactly what happened,</p>
+<p>and then putting the game plan or code word phrases into play to</p>
+<p>correct your errors.</p>
+<p>“T go great until it gets to 5-1, then my opponent comes back to win the set. I can’t believe I let that happen!”</p>
+<p>Sometimes you simply let down, relax too much, thinking you have a cushion of a few games. As all teaching pros know, this</p>
+<p>can be a disaster. The psychology of a 5-1 lead is that the player</p>
+<p>in the lead tends to relax; it’s always tempting to coast through a</p>
+<p>game when you seem to be sa far ahead: “Let’s see, even if she breaks me, and then I hold . . .” Meanwhile, the opponent sees</p>
+<p>that there is nothing to lose and begins to hit out on the ball,</p>
+<p>lifting the level of play. This combination can change the score quickly in the favor of the player who has been behind.</p>
+<p>2 How can you keep up the intensity and focus when you are ahead</p>
+<p>so as to close out the match and ride through an opponent whose level of play is starting to climb?</p>
+<p>During the Review, remind yourself to play as if you are in a tiebreaker, even though you are up 5-1. Or use any other phrase that will surely make you focus. (For example, during the Review, pretend that you are down 1-5). Make sure you do this in</p>
+<p>every between-point interval. It will become another habit, and one that will increase your chance of keeping in focus when you run into conditions that tempt you to let down.</p>
+<p>Each of the situations we’ve discussed begins with an absolutely</p>
+<p>normal feeling, although one with the potential to escalate into</p>
+<p>an abnormal reaction. Remember that the danger lies not in simply feeling anger, frustration, anxiety, discouragement, or bore-</p>
+<p>dom, but in giving these feelings free rein to control you on the court. Think of it this way: These feelings serve as a gauge to let you evaluate a situation. It is entirely good that your mind is work-</p>
+<p>ing to evaluate the situation. As table 6.1 shows, by understand-</p>
+<p>ing the feelings, you can channel them in a positive direction. As we all know, the real disasters occur when these feelings escalate unchecked and turn into behavior that hurts your performance.</p>
+<p>By using the Three R’s, you can take advantage of these feelings instead. The Release gives an outlet. The Review gives under-</p>
+<p>standing and a plan for recovery. And the Reset routine brings steady focus before the next point. The two STOPs (after the Release and after the Review) protect against the runaway threat of heavy-duty emotion.</p>
+<p>Table 6.1 The Three R’s Solution</p>
+<p>| Tantrums Anger spills into | Anger channeled | Constructive Re-</p>
+<p>next point,lead- | and stopped leases replace de-</p>
+<p>ing to unforced from spilling into | structive ones; errors, code next point; en- STOP technique to violations, lack of | ergyfocusedon | end Release and</p>
+<p>control. next ball and move to Review; channeled into Review to analyze hitting next ball. | what to do next;</p>
+<p>Reset routine to bring relaxation and focus to next</p>
+<p>ball.</p>
+<p>LP ROBSON CSCS LO EU SLAEEN SLL EOEIN SERS DECOSGA EMD STILE OE ATED OBAGI SORTED VELLES EDITS DEE ELIE LE DSL SEDI ELE I LLIN LIE SLLDOI</p>
+<p>do next.</p>
+<p>_ Choking Anxiety leads to | Release of ten- Use of humor in</p>
+<p>| tight muscles, sion permits new | Release phase; choke, poor perspective analysis of selfperformance, through Review | defeating talk in forgetting game | phase (stopping | Review;code</p>
+<p>plan. overgeneralizing | phrases to focus on</p>
+<p>and catastrophiz- | this ball (not neces-</p>
+<p>ing); increased sarily the outcome focus on next of the match); point; relaxed Reset routine with anticipation of built-in relaxation next ball. to prepare to ex-</p>
+<p>ecute next point.</p>
+<p>Tanking Discouragement, | Negative trans- Release lets out the low intensity, formed into negative, and STOP</p>
+<p>“feel like made of | constructive keeps it from getlead,” cannot plan; focus on ting out of hand; move. | the ball and give | Review allows re-</p>
+<p>concrete instruc- | turn to game plan;</p>
+<p>Reset routine allows for programmed</p>
+<p>preparation for next ball (instead of falling prey to the</p>
+<p>ing feelings).</p>
+<p>SONI SPOSL HESSEN RISEN ME SOU ESERIES ESET SOON A SON SHRINE NS ea tae</p>
+<p>errors.</p>
+<p>Mind may wander initially, but</p>
+<p>not forever (STOP!); head gets back in</p>
+<p>game and back to game plan.</p>
+<p>lease, but STOP ends distracting thoughts; behav-</p>
+<p>ioral cue begins Review; reminder of preplanned</p>
+<p>game plan occurs during Review;</p>
+<p>Reset routine keeps mind and heart on track for</p>
+<p>next point.</p>
+<p>sian eterno tetanic ean se EO REE ESAS SSRIS SAS SEER SES RSE SNE ST SESE EEN</p>
+<p>Low intensity; head not in game—leads to</p>
+<p>games.</p>
+<p>Competing With the Three R’s_ 101?</p>
+<p>point.</p>
+<p>Review (and behavioral cue during Review) bring game plan to fore and prepare for next</p>
+<p>ball; Reset routine provides focus for next point.</p>
+<p>Unforced errors; lost points and</p>
+<p>games; more discouragement.</p>
+<p>Errors get corrected immediately, so prob-</p>
+<p>lems become strengths.</p>
+<p>Use of “fix it” Release; game plan approach to Review phase makes for simpler instructions on the court;</p>
+<p>positive image allows for focus on</p>
+<p>posed to“wrong way” in preparation for next ball.</p>
+<p>SOS EN SNARE SITIONS TES TEL EN TUONO DE ELT NIECE ELE</p>
+<p>PERRET RISA RARE RATAN AN OTOT (poems</p>
+<p>Lack of attention when far ahead</p>
+<p>nent back in the match, sometimes resulting in</p>
+<p>lost set or match.</p>
+<p>Focus of Three R’s system allows you to maintain</p>
+<p>intensity and level of play to close out match.</p>
+<p>SSeS ELIS BEE DERE THO SELES TELS LEE STEELE LAL LEDER LAS LA ELLAEDBS ELLE LLLP LERLEREL LEILA LLL</p>
+<p>phase keep you bearing down and playing as if you are behind, or as if you are in a tie-</p>
+<p>breaker (where each point counts as holding serve or</p>
+<p>a mini break).</p>
+<p>DEES ERLE RIE IY OLE STEERER ELE ELLE LL ELLE LLIN EOE EEL</p>
+<p>Steffi Graf was 4 years old when she began playing tennis, and turned pro</p>
+<p>when she was 13 in 1982. By the end of 1996,shé placed first in season-</p>
+<p>ending singles rankings for the eighth time since 1982. Graff won seven titles</p>
+<p>in 1996 including Wimbledon, the U.S. Open, the German Open, Lipton, In-</p>
+<p>dian Wells, and Roland Garros, collecting $2,665,706 in prize money and</p>
+<p>bringing her career title record to102. She earned her 100th singles title at</p>
+<p>1996 Wimbledon, becoming the third woman in the Open Era (behind</p>
+<p>Navratilova and Evert) to pass that milestone.</p>
+<p>Graf uses tight concentration and tremendous speed to maintain an edge</p>
+<p>over her opponents. She has a quiet demeanor on the court, not letting line</p>
+<p>calls or botched shots crowd in on her game focus. She plays point by point,</p>
+<p>running everything down and not allowing any loose points to get past her.</p>
+<p>Steffi Graf was born in Bruhl, Germany, on June 14, 1969. She divides her</p>
+<p>time between Bruhl and New York City. She loves animals and enjoys all kinds</p>
+<p>of music. She appreciates impressionist and modern art and passes time off</p>
+<p>the court shooting photographs, reading, and playing cards. She helped</p>
+<p>found the Steffi Graf Youth Tennis Center, which was dedicated in October</p>
+<p>1991 in Leipzig, Germany.</p>
+<p>Practicing — With the - Three R’ R’s</p>
+<p>Perches your own customized Three R’s—and then practice it so that it becomes as much a part of your game as your forehand, backhand, overhead, serve, volley, and return of serve. Just as it</p>
+<p>takes hitting a lot of practice balls to groove a stroke, it takes a lot</p>
+<p>of repetition to settle into your own customized Three R’s. Practice during regular workouts (and even when simply thinking about your tennis game) and you will see immediate results when you get into match play, especially in close situations when everything</p>
+<p>is on the line in one or two points. This chapter gives our six-step practice plan for building the Three R’s into your overall game.</p>
+<p>STEP ONE: WRITE OUT YOUR OWN THREE R’S</p>
+<p>By completing the worksheets in chapters 3, 4, and 5, you already have a draft version of what your Three R’s will look like. If you have not done so already, fill out these checklists. Then summarize them in the Three R’s worksheet in this section. This is your working draft of what you would like to see yourself doing between points. Literally see, in your mind’s eye—imagine a videotape of one of your matches, and watch yourself doing these things. When you look comfortable and happy, you will know what your</p>
+<p>own Three R’s should look like. It is the same as with your forehand. When you are executing the stroke well, you will have a</p>
+<p>good shoulder turn, you will strike the ball ahead of you and follow through. If you get jammed (because you turned too late, did</p>
+<p>not move your feet, or because your opponent hit a tremendous</p>
+<p>shot), then the forehand will not work so well. But you will not</p>
+<p>be able to diagnose this in the forehand unless you have the ideal</p>
+<p>shot in mind already, and have grooved it in practice. The same is</p>
+<p>true of the Three R’s. What you write in the worksheet is your ideal Three R’s, the pattern you aspire to go through between ev-</p>
+<p>ery point.</p>
+<p>STEP TWO: WRITE OUT YOUR GAME PLAN</p>
+<p>Unlike athletes in many other sports (basketball, football, baseball), tennis players do not usually call plays for themselves be-</p>
+<p>fore they begin a point. Instead, they think the situation over be-</p>
+<p>tween points, decide what to do, and then attempt to do it. As a part of the Three R’s Sport Psychology System, we suggest that players pick one of the three preplanned Plays first presented in chapter 3, and then implement that Play during the point. The obvious advantage of this approach is that it simplifies playmaking, so that players can spend less time thinking. This is especially important when fatigue sets in. It saves a lot of mental</p>
+<p>effort if you can keep the number of big decisions you must make</p>
+<p>on the court to a minimum, adjusting your plan only for weak-</p>
+<p>nesses you spot in your opponent during the match. The objective is to implement a.game plan, and to do it well. These stan-</p>
+<p>dard Plays will help you develop your personal game plan, lock</p>
+<p>it in with mental imagery practice, and apply it in match play.</p>
+<p>This is the most aggressive play in tennis. On serve, it means</p>
+<p>serve and volley: After this good serve, I’m coming in to hit a volley, after which I will close for a cut-off volley to win the point.</p>
+<p>I will be ready for an overhead. All movement forward to the net.</p>
+<p>Returning, I plan either to chip and charge, or to hit the return solid and come in immediately.</p>
+<p>The whole idea behind Play 1 is to achieve the advantage of</p>
+<p>court position (taking the net), and then win the point.</p>
+<p>Make corrective comments: “Stay down!” “Watch the</p>
+<p>Say “come on,” “yes,” “that’s it” (After doing well</p>
+<p>ona big point).</p>
+<p>Use humor after an error.</p>
+<p>Imitate the good shot to override the bad one.</p>
+<p>Do all of this in a“quiet sort of way.”</p>
+<p>Do all of this ina “flamboyant sort of way.”</p>
+<p>Compliment my opponent: “Too good,” “Great shot,”</p>
+<p>applaud with racket.</p>
+<p>Practicing With the Three R’s_ 1</p>
+<p>Profanity.</p>
+<p>Racket, ball, people abuse.</p>
+<p>Looking at the items you have checked, and in light of your own</p>
+<p>history with Releases, write a summary you want to include in your Release phase.</p>
+<p>|] Switch racket to nonplaying Skipping the Review. hand to start Review.</p>
+<p>Looking just at the bad. Walk confidently (shoulders</p>
+<p>back, head up). Forgetting my game plan.</p>
+<p>Look at my strings as | think. Looking at coach (parents) for help.</p>
+<p>What just happened?</p>
+<p>Why did | win the point?</p>
+<p>Why did | lose the point?</p>
+<p>Am|doing my game plan?</p>
+<p>Am | playing my opponent&#x27;s weakness?</p>
+<p>What do! need to do next?</p>
+<p>Say my code words (such as “Watch the ball,” “Be strong,”</p>
+<p>“Play the ball,” “Get in!”).</p>
+<p>Relax with deep breathing.</p>
+<p>Looking at the items you have checked, write down a summary of what would be an ideal Review for you between points.</p>
+<p>Practicing With the Three R’s —</p>
+<p>lf Overaroused, If Overaroused,</p>
+<p>|| Letting anyone keep me Step to the line. from doing my Reset</p>
+<p>routine. || Call score.</p>
+<p>Skipping my Reset routine. Relax with a deep breath.</p>
+<p>Bounce the ball a set number of times.</p>
+<p>start a great point.</p>
+<p>Begin motion.</p>
+<p>Step to the line.</p>
+<p>Check score.</p>
+<p>Jump on the return.</p>
+<p>If Underaroused, If Underaroused,</p>
+<p>Rev up by slapping my leg, Drifting into next point saying “Come on” or with no energy or focus. something else to get me going. Chosen phrase:</p>
+<p>ff Three R&#x27;s Worksheet, (continued)</p>
+<p>Considering the items you have checked, write out a summary of your own standard Reset routines for serving and returning.</p>
+<p>Summary of service Reset routine: |</p>
+<p>Summary of return Reset routine: Og} &#x27;</p>
+<p>Play 2: “Work the Point, and Then Come In!”</p>
+<p>Play 2 involves working the point with solid ground strokes, try-</p>
+<p>ing to create a short ball so that I can come in immediately on the short ball. It requires sdlid ground strokes to move my opponent around, and it requires hitting an effective approach shot so I can</p>
+<p>get in. Once I get in to hit a volley, the goal is the same as for Play 1: Cut off the volley or crunch the overhead to win the point.</p>
+<p>The theory behind Play 2 is the same as behind Play 1: If I have the advantage of court position at the net, I increase my chances</p>
+<p>of winning the point; conversely, if 1 let my opponent get in, then my opponent has the advantage, so I want to get in first. Play 2 works on returning or serving situations.</p>
+<p>Play 3: “Win From the Baseline.”</p>
+<p>This is used when a player has especially strong ground strokes that can overpower an opponent; it also can be used if a player</p>
+<p>Practicing With the Three R’s_ 111)</p>
+<p>needs to regain confidence so as to do Play 1 or Play 2 after getting “back in the game.” Using Play 3, you work the point, at-</p>
+<p>tempting to run your opponent all over the court, working the</p>
+<p>point until you generate an error or hit a winner.</p>
+<p>Think through key matches and see if you are most effective when doing Play 1, Play 2, Play 3, or combinations. Identify spe-</p>
+<p>cific matches and specific points where you were more or less</p>
+<p>effective. Think of opponents you have played who have beaten</p>
+<p>you: How did they beat you?</p>
+<p>Now, write out your own game plan. For example: I will do Play</p>
+<p>1 and Play 2 as my main approach, with Play 3 as backup only if1 get in trouble. Also, when serving, I will do more Play 1 than Play</p>
+<p>2, especially on key points. In all cases I will think aggressively to implement Play 1 and Play 2, knowing that I increase my chances</p>
+<p>of winning if I can take the net from my opponent.</p>
+<p>STEP THREE: DO IMAGERY TRAINING</p>
+<p>The purpose of imagery training is to give you an experience of yourself implementing the Three R’s (including Review of your</p>
+<p>game plan) before you get on the court. There are many ways to</p>
+<p>do imagery training, some informal and others that take a specific amount of time. Daydreaming is actually imagery training. The question is, do you daydream about negative things or do you</p>
+<p>daydream about things that are positive and contribute to your overall success? Begin right now using any daydreaming time to picture yourself as strong and confident between points, Releasing negatives as they occur, Reviewing your game plan, and Re-</p>
+<p>setting with a routine that improves your performance on the next point. Cultivate this image of yourself as often as you can.</p>
+<p>You can increase the power of these images through practice imagery training. Try this 10-minute exercise twice a day for two weeks:</p>
+<p>e Find a comfortable spot where you will not be interrupted.</p>
+<p>Relax with deep breathing or deep muscle relaxation. (For tips on these techniques, see chapter 2.) Go through the fol-</p>
+<p>lowing mental pictures.</p>
+<p>¢ Picture yourself playing the best match of your life. (It could be</p>
+<p>a real match or an imaginary one.) As you do so, use all five of your senses. Picture the ball as you hit it. Hear the sound of</p>
+<p>your feet as you turn and run to meet the ball. Feel the great</p>
+<p>stroke as you follow through, never taking your eyes off the ball.</p>
+<p>e Picture yourself playing points, and between points doing</p>
+<p>the Three R’s, and focusing on the choice of Play 1 or Play 2.</p>
+<p>¢ Play out each point using Play 1 or Play 2, closing it with a</p>
+<p>victory at the net (cut off volley or overhead). Enjoy the feel-</p>
+<p>ing of successful play.</p>
+<p>¢ Continue this and play out several games—even an entire set.</p>
+<p>* Close the imagery by winning the set and match.</p>
+<p>¢ Continue to relax and soak in the images and feelings of play-</p>
+<p>ing aggressive tennis, getting to the net using Play 1 and Play</p>
+<p>2, and winning.</p>
+<p>° Stop the exercise by opening your eyes and emerging confi-</p>
+<p>dent and relaxed.</p>
+<p>° Repeat this twice a day for one week, and then once a day for</p>
+<p>a week.</p>
+<p>If you do imagery training like this and then combine it with daydreaming, you will effectively increase your practice time. It is almost as if you are getting extra opportunities to become a</p>
+<p>strong tennis player. Players and coaches have found that there is</p>
+<p>Practicing With the Three R’s 113?</p>
+<p>nothing to compare with imagery training combined with focused</p>
+<p>practice of hitting the ball on the court to improve performance.</p>
+<p>STEP FOUR: CHART YOUR THREE R’S IN PRACTICE</p>
+<p>Now comes the opportunity to complete the Three R’s during practice. Most of us were trained to hit as many balls as we could; we tend to think of practice as a time when hitting the ball is the</p>
+<p>most important thing. We often rush through practice games as if what we do between points does not really matter much. If you want to develop your focus between points, however, treat every between-point opportunity in practice as a chance to use the Three</p>
+<p>R’s. Granted, in some drills the idea is to hit many balls quickly</p>
+<p>and not regroup between points. On the other hand, such drills— useful as they are—shouldn’t take up your whole practice ses-</p>
+<p>sion. Outside of speed drills, create as many opportunities as you can to practice the Three R’s between times when you hit the ball. For example, you can:</p>
+<p>¢ Set up tiebreakers, single games, or games to 5 or 10 points</p>
+<p>and treat them as game situations in which you use the Three R’s between points.</p>
+<p>e Slow down your activity during some drills for backhands,</p>
+<p>forehands, and other shots, and make sure to complete a brief Three R’s—especially Review, looking for what to do in order to execute the shot properly if you have just missed one.</p>
+<p>e Between specific drills (such as serve and volley drills, or</p>
+<p>even practicing serves), complete a strong Three R’s (Release, Review, and Reset) to make the next ball you hit better than the preceding one. We once heard Pete Sampras say that practicing one bucket of serves at a time was enough, and we know that is true, if you use the Three R’s between serves to learn</p>
+<p>from one serve to the next.</p>
+<p>To capture what you are doing, have someone chart your activity using the Three R’s Coding Manual in table 7.1. The coding</p>
+<p>can be done from videotapes or live action, and will give you solid feedback on what you are doing between points.</p>
+<p>Table 7.1 Three R&#x27;sCoding Manual</p>
+<p>This coding system is designed for players, coaches, and research-</p>
+<p>ers to use in evaluating the effectiveness of any player&#x27;s “between-</p>
+<p>point” performance in tennis. The coding scheme allows evaluation of Releases, Reviews, and Reset routines, and the intervening STOPs. By coding the Three R&#x27;s performance for each point, players and coaches can see the link between successful use of the Three R’s and success or failure on the“big points” in any match. For example,</p>
+<p>a player might rush between points, perhaps skipping the Review</p>
+<p>__ phase, and thereby let the opponent who could have been closed</p>
+<p>| out back into the match. Or, a player might be frustrated and en-</p>
+<p>| gage in negative talk as a part of the Release, then neglect to STOP</p>
+<p>__ the Release and move to a solid Review—allowing the negative</p>
+<p>Release to spill into the next point, and interfering with performance.</p>
+<p>This coding chart is designed for use with either a live match or a</p>
+<p>videotape. For video, keep the camera running for the entire match,</p>
+<p>including between points and during changeovers.</p>
+<p>1. Write in the names of the players, and identify the game score in the left column.</p>
+<p>2. Identify the “point just played” score in each case. All coding is for between-point behavior that follows the point listed in the</p>
+<p>left column.</p>
+<p>3. Write down brief descriptions of all Release behavior, all Review behavior, and all Reset behavior.</p>
+<p>4. In addition, jot down a“+,” “-,” or“?” to show whether the Re-</p>
+<p>lease, Review, and Reset were constructive (+), destructive (-), or “can&#x27;t tell from this observation’ (?).</p>
+<p>5. At the end, answer the summary questions for player feedback:</p>
+<p>a. To what extent does this player execute constructive Releases?</p>
+<p>b. Does the player need to replace any negative Releases?</p>
+<p>c. What improvements can you see for the Review portion of</p>
+<p>the Three R&#x27;s (for example, switching racket to nonplaying hand</p>
+<p>as a behavioral indication that the Review is in progress)?</p>
+<p>d. What changes should the player make in the Reset routines?</p>
+<p>e. What can the player do to improve performance on the Three</p>
+<p>R&#x27;s (for example, practice matches, coding other tapes)?</p>
+<p>STEP FIVE: DISCUSS CHARTING RESULTS</p>
+<p>Talk with your coach, another player, or some other knowledgeable person about the results of your charting. Ask the following questions:</p>
+<p>° How constructive are my Releases? (Ask for examples of ef-</p>
+<p>fective and ineffective things you do.)</p>
+<p>¢ Do Ineed to replace any negative Releases? (Ask for specifics.)</p>
+<p>¢ How could you tell that I’d moved into the Review portion of</p>
+<p>the Three R’s? (You should have a behavioral cue to tell your-</p>
+<p>self that you’re in Review, such as switching the racket to</p>
+<p>your nonplaying hand. If it’s so subtle that an outside ob-</p>
+<p>server can’t spot it, maybe it needs to be more specific.)</p>
+<p>Practicing With the Three R’s 117)</p>
+<p>¢ Does it look like my Reset routine is working? (Ask for im-</p>
+<p>¢ What could I do to improve performance on the Three R’s?</p>
+<p>(You’re looking for suggestions on the order of taking part in</p>
+<p>more practice matches, coding other tapes, and so on, that is,</p>
+<p>STEP SIX: REFINE YOUR THREE R’S AS NEEDED</p>
+<p>By writing out your Three R’s and your game plan, doing imagery training, charting on the court, and getting feedback, you now have the tools to improve every aspect of your tennis game. The</p>
+<p>Three R’s will help you create opportunities to improve from point</p>
+<p>to point, instead of melting down if things get bad. Do not be</p>
+<p>afraid to change things that are not working—but if something isn’t broken, then don’t change it. As Trogolo has said to many players, “Don’t change a winning game plan.” The same is true of your Three R’s. If it is working, do not change it. On the other hand, if you find that you have been having difficulty, and if you</p>
+<p>see something you admire in another premier player, perhaps the use of humor during a Release or a positive use of a practice fix-it move to replace a bad shot and correct for an error, then build this into your own Three R’s. Experiment and refine your system until it fits with your own style.</p>
+</section>
+<section class="chapter" id="sec-5">
+<h2>Part 5  ·  pp. 130–139</h2>
+<p>Thomas“King of Clay” Muster is renowned for his 111-S&#x27;record on clay courts,</p>
+<p>the best consecutive clay court record in Open Era play. Muster won seven</p>
+<p>ATP tour titles in 1996 and was a semifinalist in the U.S. Open, collecting</p>
+<p>$2,875,496 in prize money. Also in 1996,he held the No. 1 position in tennis</p>
+<p>for one week and again for five weeks from March 11-April 14, the first left-</p>
+<p>hander to hold the No.1 position since John McEnroe did so in the week of</p>
+<p>September 2, 1985.</p>
+<p>In 1989 he was the first Austrian to reach the Australian Open semifinals</p>
+<p>and was the first Austrian ever to reach the Top 10. In the same year, only</p>
+<p>hours after defeating Yannick Noah to reach the final at Key Biscayne, he</p>
+<p>was struck by a drunken driver and injured his left knee, severing several</p>
+<p>ligaments. The injury barred him from the final with lvan Lendl. He returned</p>
+<p>to tennis less than six months after the accident and was named ATP Tour</p>
+<p>Comeback Player of the Year in 1990.</p>
+<p>Muster has a strong work ethic and has been quoted as saying he “lives</p>
+<p>for tennis.” Much of his success on clay surface is due to his tenacity, and his</p>
+<p>ability to make his opponents work for every point. His distinctive Reset in</p>
+<p>the form of running around the baseline before receiving, and a very strong</p>
+<p>Review allow him to stay with his game plan and bring opponents down,</p>
+<p>mentally and physically.</p>
+<p>Thomas Muster was born in Leibnitz, Austria, on October 2, 1967, and</p>
+<p>lives in Monaco.He plays drums and enjoys photography, abstract art, and</p>
+<p>painting.</p>
+<p>eck Mister eas tsrh Par er Nissi ea pttoner at</p>
+<p>liars Uivect iy Movies, Hk lays ruta, aha pryoie rea regia mal fe : : vy 7</p>
+<p>“rte Other Uses ofthe Three R&#x27;s</p>
+<p>Sortie once said that the dangerous thing about walking around with a hammer in your hand is that everything starts to look like a nail. We have to agree, and certainly would not suggest that you apply the Three R’s to everything in your life. At the</p>
+<p>same time, you have probably already figured out that this approach can help you in more areas than just tennis. After learning</p>
+<p>about this system, some of our players report that they use it successfully in areas as wide-ranging as dealing with test anxiety,</p>
+<p>conducting intense business negotiations, performing surgical operations or complex lab experiments, or talking to family members about a problem.</p>
+<p>This chapter summarizes some applications of the Three R’s for other areas of your life. Remember that the psychology of learning suggests that the more ways you find to apply a new</p>
+<p>skill, the quicker you will learn the skill and the better you will be able to use it. As you read through the following sections, begin to think about applying the Three R’s not only in tennis</p>
+<p>(between points, changeovers, before matches), but also in as many other areas of your life as you can. Success in using the Three R’s with tennis will help your golf game and will give you an edge in business as well. Take the old adage, “If you don’t use it you lose</p>
+<p>it,” and turn it to your advantage: “The more you use it, the bet-</p>
+<p>1” ter you get!</p>
+<p>Most tennis players have played other competitive sports, or have</p>
+<p>other sports they participate in as a break from tennis. How would</p>
+<p>the Three R’s look if applied to golf, basketball, football, or soccer? Clearly, the Three R’s applies to any opportunity for reflection— anything parallel to tennis changeovers or between-point activity. Beyond this, there are some differences and some similarities.</p>
+<p>Shooting a free throw or kicking a field goal or stepping into the batter’s box are all situations in which you can apply the Three R’s</p>
+<p>in virtually the same way as in tennis. All you need are Releases,</p>
+<p>Reviews, and Reset routines that are specific to the particular sport. For example, a batter stepping up to the plate might get involved in banter with the umpire or opposing catcher as a part of the Release, then turn away to get a sign from the third-base coach as</p>
+<p>a part of the Review about getting ready to hit the pitch. He might</p>
+<p>then execute a Reset routine by knocking dirt off his cleats or go-</p>
+<p>ing through some other apparently casual maneuvers with the bat</p>
+<p>or with the uniform before stepping into the batter’s box.</p>
+<p>The more opportunities you have to apply the Three R’s, the quicker you will learn to apply the system to your own sport of</p>
+<p>tennis. How would you apply the Three R’s to your golf game? Why not treat the walk to your ball between shots just like a longer</p>
+<p>version of a tennis between-point interval? If you find yourself thinking too much as you stand over the ball, step back, Release the feelings, conduct your Review away from the ball, and then begin your Reset routine again.</p>
+<p>Coaches can use the Three R’s as a way of helping players under-</p>
+<p>stand breakdowns that occur on the court. Instead of simply tell-</p>
+<p>ing a player to stay positive, or be tough, or block out distrac-</p>
+<p>tions, you can begin by helping a player understand where the breakdowns occur. Are the Releases too negative? Does the negative talk carry forward and paint the next point? Are there STOPs in the sequence that will put a control on the Release? How about the Review? Does it ask the right questions? Is there any thinking</p>
+<p>going on at all? Does it have an end point? And finally, examine</p>
+<p>Other Uses of the Three R’s 123?</p>
+<p>the Reset routines to see what suggestions there might be for im-</p>
+<p>provement.</p>
+<p>You can use the Three R’s as a guide for opportunities to coach players when they split sets, or even on the court (for high school</p>
+<p>and college matches, when this is allowed). We like to begin by</p>
+<p>asking the player one question after having split sets: “How did you win that first set?” (Or the second set, whichever the player</p>
+<p>did win.) If the player answers correctly, for example, “I was relaxed, and kept the ball deep, and got in,” then leave it alone, perhaps adding one or two words of encouragement. If the player</p>
+<p>is wrong about what happened, then give corrective feedback about what you observed that led to success, and then again move to</p>
+<p>something positive. In these situations, you are simply helping with the Review. It is also useful to allow a player to vent with</p>
+<p>you, which turns out to be your opportunity for Release. And fi-</p>
+<p>nally, the Reset routine can include advice about brief relaxation, getting water, eating a banana, or any other set of behaviors that</p>
+<p>get the player ready to go back in and do the very best. The Three R’s can serve as a guide for the entire coaching event between sets.</p>
+<p>Coaches can use videotapes of matches to demonstrate different Three R’s styles (coding them as illustrated in chapter 7), and</p>
+<p>encourage players to take notes on what they see in televised matches or in live match play from collegiate and professional players. In all cases the objective is to help players to become</p>
+<p>aware of the three phases, both in themselves and in other play-</p>
+<p>ers, and design their own Three R’s system.</p>
+<p>When breakdowns do occur, as surely they will, the concept is</p>
+<p>to be precise in the feedback. For example, “Your Reset is out-</p>
+<p>standing, and you seem to be doing a solid Review, but your Releases are getting way out of hand.” Or, “I wonder if you are not shortening the Review too much? I did not notice you switching hands on your racket or giving any other sign that you were start-</p>
+<p>Other Uses of the Three R’s 125?</p>
+<p>Sue got uptight every time she thought of taking a history exam. Her palms would begin to sweat, her heart would race, and she would get a queasy feeling in her stomach at the very thought of</p>
+<p>all those names and dates she would have to remember, and of trying to put it all together in an essay. It would get so bad sometimes that she avoided studying altogether, afraid even to open</p>
+<p>the book. Needless to say, she put off studying until the last minute,</p>
+<p>crammed as much as she could, and then the whole syndrome would start all over again as she walked in to take the exam. She</p>
+<p>described herself as a nervous wreck and felt that her anxiety had gone way overboard. Instead of getting her primed to do well, her</p>
+<p>concern got in the way of her performance.</p>
+<p>In applying the Three R’s, Sue began to express (to herself and to a friend) her feelings of concern about the exam and treated it</p>
+<p>the same as a Release in tennis. She would talk about how upset</p>
+<p>she got, about how her palms would sweat, and of how she was</p>
+<p>afraid of taking the exam, afraid of failing—wanting a good grade, but fearing she would not be able to do well. Then she applied</p>
+<p>the STOP technique. She literally told herself to STOP! and began to Review the entire situation critically. She noted that she</p>
+<p>actually enjoyed some parts of her history study; it was remembering everything that bothered her. She also was not sure how</p>
+<p>much she had to remember. Would she have to memorize all the names and dates, or could she get by with understanding some of the themes from the lecture? In the Review, she realized that she needed to find out from the teacher what the exact structure of the exam would be. She also realized that, in any case, she would need to be able to develop some memory device to remember</p>
+<p>names and dates. And finally, she realized that before walking into the room for an exam, she ought to be able to use the relax-</p>
+<p>ation techniques she applied to tennis. In summary, her Review led her to the following game plan:</p>
+<p>1. Talk to the teacher to learn the exact nature of the exam and what it would take to get ready for it; as an edge, try to find some-</p>
+<p>one who had taken an exam from this teacher and see what kinds</p>
+<p>of things the teacher actually did like to include (for example, a lot of names and dates, or not).</p>
+<p>2. Get some help from a friend or a counselor on a memory de-</p>
+<p>vice for remembering names and dates, and practice it daily.</p>
+<p>3. Apply deep breathing and muscle relaxation techniques as a way of getting centered before taking the exam.</p>
+<p>Sue then turned to a Reset routine that had to do with implement-</p>
+<p>ing her game plan in a relaxed and focused manner. When sitting</p>
+<p>alone in her room, she would do something from the game plan that would help her study at that time, or at least make plans for studying later that evening or the next day. If she was in class, in her car,</p>
+<p>or on the court, she would remind herself during the Reset that she would apply these measures to her studies when she got home at night. At her desk, she would clear the surface of other books, get</p>
+<p>something refreshing to drink, and arrange paper and pencil as she</p>
+<p>started (a study parallel to getting ready to serve in tennis).</p>
+<p>Whether in class, on the tennis court, or in her own room, and whether she had an opportunity to study or not, she wrapped up the Three R’s with a Reset routine that either let her implement</p>
+<p>Other Uses of the Three R’s 127)</p>
+<p>the best next step (do some studying right now or call a friend to</p>
+<p>talk about this particular teacher’s exams), or let her set the mat-</p>
+<p>ter aside calmly with the confidence that she would do some-</p>
+<p>thing useful later. She used the Three R’s to learn from the situation, that is, to find out what to study, to make a plan to study it,</p>
+<p>and then to settle down and study it.</p>
+<p>Think of your own life situation and look for other applications, whether at work, at school, in other sports, or at home. The system is simple enough to apply, though you&#x27;ll need to make ad-</p>
+<p>justments depending on the circumstances. Remember always that the more you apply the Three R’s, the stronger you will become—</p>
+<p>and the more easily the system will flow.</p>
+<p>The challenge of sport and of life is that things seldom go according to plan. Indeed, a game plan is really just a way of preparing yourself to deal with a range of adverse circumstances and turn them in the direction you want as often as you can. This means that you should not be surprised when things go wrong. Bad</p>
+<p>weather, fans who won’t be quiet at the right time, and opponents who do everything they can to throw you off are all the order of</p>
+<p>the day in tennis. Other arenas have their own ranges of obstacles.</p>
+<p>The Three R’s Sport Psychology System is intended to keep you from simply reacting to these things and letting thoughts and feelings take control of you, and instead allow you to channel your reactions through the Release, then the Review, and finally the Reset</p>
+<p>routine in preparation for playing the point. Instead of objecting</p>
+<p>and feeling bad that the world is the way it is, you are saying: “Okay world, I understand how you can be! Bring it on! I have thoughts</p>
+<p>and feelings about what is going to happen, and I will express them in my Release, then I’ll Review critically what has happened, pick the best move in my game plan, and then do a solid Reset routine</p>
+<p>that prepares me to play as well as I can on the next point.”</p>
+<p>As we said in the beginning, everyone wants to play in the zone—but the question is: How do I get there more often? The Three R’s shows you the way, by helping you to deal with what-</p>
+<p>ever comes your way, learning from mistakes, and channeling your energy into your very best play.</p>
+</section><footer class="end"><div class="sig">Tennis Books Library</div><div>English text extracted from the book's own PDF.</div></footer>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,3431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zen Tennis</title>
+<meta name="description" content="Tennis library">
+<meta name="author" content="Pham Duc Hai">
+<style>
+.tcq-book{
+  --tcq-paper:#faf9f5; --tcq-ink:#1a1c20; --tcq-ink-soft:#4a4e54;
+  --tcq-ink-faint:#8a8d93; --tcq-indigo:#1d5c63; --tcq-indigo-soft:#2f7d84;
+  --tcq-gold:#a8863c; --tcq-rule:#e2e1da; --tcq-panel:#ffffff;
+  background:var(--tcq-paper); color:var(--tcq-ink);
+  font-family:"Palatino Linotype","Book Antiqua",Cambria,"Times New Roman","Noto Serif",serif;
+  font-size:19px;line-height:1.78;-webkit-font-smoothing:antialiased;}
+.tcq-book .wrap{max-width:760px;margin:0 auto;padding:64px 28px 120px;}
+.tcq-book header.cover{text-align:center;padding:8px 0;}
+.tcq-book .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+.tcq-book header.cover .cover-art{width:100%;max-width:430px;margin:0 auto 30px;border-radius:10px;
+  box-shadow:0 14px 40px rgba(16,40,44,.28);display:block;}
+.tcq-book header.cover .kicker{letter-spacing:.28em;font-size:12px;text-transform:uppercase;
+  color:var(--tcq-indigo);font-weight:600;}
+.tcq-book header.cover h1{font-size:38px;line-height:1.16;margin:.4em 0 .12em;font-weight:600;
+  color:var(--tcq-ink);text-align:center;letter-spacing:0;}
+.tcq-book header.cover .sub{color:var(--tcq-ink-soft);font-size:20px;font-style:italic;}
+.tcq-book header.cover .blurb{color:var(--tcq-gold);font-size:16px;margin-top:.7em;
+  letter-spacing:.04em;}
+.tcq-book header.cover .by{margin-top:1.2em;color:var(--tcq-ink-faint);font-size:14px;
+  letter-spacing:.06em;}
+.tcq-book hr.lead{border:none;border-top:1px solid var(--tcq-rule);margin:36px 0;}
+.tcq-book .part-band{margin:88px 0 8px;padding:26px 0 22px;text-align:center;
+  border-top:1px solid var(--tcq-rule);border-bottom:1px solid var(--tcq-rule);}
+.tcq-book .part-band .part-kicker{letter-spacing:.3em;font-size:12px;text-transform:uppercase;
+  color:var(--tcq-gold);font-weight:600;}
+.tcq-book .part-band .part-name{font-size:23px;color:var(--tcq-indigo);margin-top:.5em;
+  font-style:italic;}
+.tcq-book .chapter{margin-top:56px;}
+.tcq-book h2.ch-title{font-size:29px;line-height:1.25;margin:0 0 .1em;font-weight:600;
+  color:var(--tcq-ink);letter-spacing:0;font-style:normal;
+  border-bottom:2px solid var(--tcq-indigo);padding-bottom:.25em;}
+.tcq-book h3{font-size:21px;margin:40px 0 12px;font-weight:600;color:var(--tcq-indigo);
+  font-style:normal;letter-spacing:0;}
+.tcq-book h4{font-size:18px;margin:30px 0 8px;font-weight:600;color:var(--tcq-gold);
+  font-style:normal;letter-spacing:.02em;}
+.tcq-book p{margin:0 0 1.15em;text-align:justify;hyphens:auto;color:var(--tcq-ink);}
+.tcq-book p.lead-p{font-size:21px;color:var(--tcq-ink-soft);}
+.tcq-book strong{color:var(--tcq-ink);}
+.tcq-book em{color:var(--tcq-ink-soft);}
+.tcq-book .toc{margin:44px auto 0;max-width:560px;background:var(--tcq-panel);
+  border:1px solid var(--tcq-rule);border-radius:8px;padding:26px 32px;}
+.tcq-book .toc-title{font-size:15px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--tcq-indigo);margin:0 0 .9em;font-weight:600;font-style:normal;}
+.tcq-book .toc-part{font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--tcq-gold);font-weight:600;margin:1.3em 0 .4em;}
+.tcq-book .toc-part:first-of-type{margin-top:.4em;}
+.tcq-book .toc ol{margin:0;padding-left:0;list-style:none;}
+.tcq-book .toc li{margin:.42em 0;font-size:16px;}
+.tcq-book .toc a{color:var(--tcq-ink);text-decoration:none;border-bottom:1px solid transparent;}
+.tcq-book .toc a:hover{border-bottom-color:var(--tcq-indigo);}
+.tcq-book dl.glossary{margin:0 0 1.2em;padding:0;}
+.tcq-book dl.glossary dt{font-weight:600;color:var(--tcq-indigo);margin:1.15em 0 .15em;
+  font-size:18px;}
+.tcq-book dl.glossary dd{margin:0 0 .3em;padding-left:1.4em;color:var(--tcq-ink-soft);
+  font-size:18px;line-height:1.7;text-align:justify;}
+.tcq-book footer.end{margin-top:90px;border-top:1px solid var(--tcq-rule);padding-top:26px;
+  color:var(--tcq-ink-faint);font-size:14px;text-align:center;line-height:1.9;}
+.tcq-book footer.end .sig{color:var(--tcq-indigo);font-size:15px;letter-spacing:.08em;}
+body.dark-mode .tcq-book{
+  --tcq-paper:#0f1416; --tcq-ink:#e6e7e3; --tcq-ink-soft:#b0b3af;
+  --tcq-ink-faint:#878b90; --tcq-indigo:#7fbfc4; --tcq-indigo-soft:#5fa3a9;
+  --tcq-gold:#c9a961; --tcq-rule:#283135; --tcq-panel:#161d20;}
+body.dark-mode .tcq-book p,
+body.dark-mode .tcq-book li,
+body.dark-mode .tcq-book dd,
+body.dark-mode .tcq-book div{color:var(--tcq-ink);}
+body.dark-mode .tcq-book p.lead-p,
+body.dark-mode .tcq-book em,
+body.dark-mode .tcq-book dl.glossary dd{color:var(--tcq-ink-soft);}
+body.dark-mode .tcq-book header.cover .by,
+body.dark-mode .tcq-book footer.end{color:var(--tcq-ink-faint);}
+body.dark-mode .tcq-book h2.ch-title,
+body.dark-mode .tcq-book header.cover h1{color:var(--tcq-ink) !important;}
+body.dark-mode .tcq-book h3,
+body.dark-mode .tcq-book dl.glossary dt,
+body.dark-mode .tcq-book header.cover .kicker,
+body.dark-mode .tcq-book .toc-title,
+body.dark-mode .tcq-book footer.end .sig,
+body.dark-mode .tcq-book .part-band .part-name{color:var(--tcq-indigo) !important;}
+body.dark-mode .tcq-book h4,
+body.dark-mode .tcq-book header.cover .blurb,
+body.dark-mode .tcq-book .toc-part,
+body.dark-mode .tcq-book .part-band .part-kicker{color:var(--tcq-gold) !important;}
+body.dark-mode .tcq-book .toc a{color:var(--tcq-ink);}
+body.dark-mode .tcq-book strong{color:var(--tcq-ink) !important;}
+@media (max-width:760px){
+  .tcq-book .wrap{padding:40px 20px 80px;}
+  .tcq-book header.cover h1{font-size:28px;}
+  .tcq-book header.cover .cover-art{max-width:320px;}
+  .tcq-book dl.glossary dd{padding-left:.8em;}
+  .tcq-book .part-band .part-name{font-size:19px;}
+}
+@media print{
+  .tcq-book .toc{break-after:page;}
+  .tcq-book .chapter{break-before:page;}
+  .tcq-book .part-band{break-before:page;break-after:avoid;}
+  .tcq-book dl.glossary dt{break-after:avoid;}
+}
+
+/* breadcrumb — sits above .tcq-book, so it carries its own palette.
+   Colours/scale mirror the reference TFL books (#2–#8): .9rem, muted
+   #5b6572 separator, the book's own accent for the root link. */
+.tu-breadcrumb{background:#faf9f5;padding:16px 0 4px;font-size:.9rem;color:#6b6f76;
+  font-family:"Palatino Linotype","Book Antiqua",Cambria,"Times New Roman","Noto Serif",serif;}
+.tu-breadcrumb__list{list-style:none;display:flex;flex-wrap:wrap;gap:2px 8px;
+  max-width:760px;margin:0 auto;padding:0 28px;align-items:center;}
+.tu-breadcrumb__item{margin:0;}
+.tu-breadcrumb__link{color:#1d5c63;text-decoration:none;}
+.tu-breadcrumb__link:hover{text-decoration:underline;}
+.tu-breadcrumb__sep{color:#5b6572;margin:0 2px;user-select:none;}
+.tu-breadcrumb__current{color:#1a1c20;font-weight:500;}
+</style>
+</head>
+<body>
+
+
+<nav class="tu-breadcrumb" aria-label="Breadcrumb">
+  <ol class="tu-breadcrumb__list">
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/books/">Tennis Books Library</a></li>
+    <li class="tu-breadcrumb__sep">›</li>
+    <li class="tu-breadcrumb__item tu-breadcrumb__current" aria-current="page">Zen Tennis</li>
+  </ol>
+</nav>
+<div class="tcq-book">
+<div class="wrap">
+<header class="cover"><div class="kicker">Tennis Library</div><h1>Zen Tennis</h1><div class="by"></div><p style="text-align:center;margin:18px 0 0;font-family:var(--tcq-sans,sans-serif);font-size:14px;letter-spacing:.02em;"><a href="https://github.com/tenniskb/tenniskb.github.io/releases/download/books-pdf-v1/zen-tennis-eastern-wisdom-for-western-sport.pdf" target="_blank" rel="noopener" style="color:#1d5c63;font-weight:600;text-decoration:none;border:1px solid #cfd8d4;border-radius:6px;padding:7px 14px;display:inline-block;">Read the original PDF &#8599;</a></p></header><div class="toc"><div class="toc-title">Contents</div><ol>
+<li><a href="#sec-1">Part 1  ·  pp. 1–30</a></li>
+<li><a href="#sec-2">Part 2  ·  pp. 31–60</a></li>
+<li><a href="#sec-3">Part 3  ·  pp. 61–90</a></li>
+<li><a href="#sec-4">Part 4  ·  pp. 91–120</a></li>
+<li><a href="#sec-5">Part 5  ·  pp. 121–150</a></li>
+<li><a href="#sec-6">Part 6  ·  pp. 151–180</a></li>
+</ol></div><section class="chapter" id="sec-1">
+<h2>Part 1  ·  pp. 1–30</h2>
+<p>Would I be able to meet the challenge?</p>
+<p>I didn’t have long to find out. One of my clients</p>
+<p>suggested we play a competitive set. “Sure,” I said.</p>
+<p>We began and my adrenalin began to flow and</p>
+<p>with it my old thinking surfaced. “I don’t care if I die,</p>
+<p>I’m going to win!” Roused into action, I battled and</p>
+<p>fought my way through the game. The next day</p>
+<p>I could hardly walk. What had happened?</p>
+<p>I hadn’t felt this way in years. Was I back to square</p>
+<p>one? Did I have to give the game away? Maybe,</p>
+<p>I thought, but one of the useful things I&#x27;d learnt</p>
+<p>through meditation was to observe myself. And so the</p>
+<p>next day as I hobbled out onto the court, I decided</p>
+<p>to “watch” myself and see how I played.</p>
+<p>It wasn’t long before’ I experienced the connection</p>
+<p>PONG he Re OF Be Uh3G it ly Or N ee 5</p>
+<p>between my thoughts and attitudes and their effects</p>
+<p>on my body and game.</p>
+<p>I experienced how my self-doubt tightened my</p>
+<p>body. I felt the strain of thinking “I don’t care if I die,</p>
+<p>I’m going to win.” And I became aware of another</p>
+<p>choice. I didn’t have to either give up tennis or suffer.</p>
+<p>Instead of tightening up in order to win, I could take</p>
+<p>a risk and relax. This seemed a simple solution. As I</p>
+<p>approached the next point, I could hear the doubts</p>
+<p>flooding in.</p>
+<p>“Would this relaxed approach work?”</p>
+<p>I could feel myself wanting to take back control.</p>
+<p>I noticed my hand tightening its grip on the racket. I</p>
+<p>could feel the tension produced by fear and self-</p>
+<p>doubt. Was I the only person who felt this way? Could</p>
+<p>I relax and let go?</p>
+<p>It was out of this inner challenge that Zen Tennis -</p>
+<p>surfaced.</p>
+<p>I began to realize how much of my thinking was</p>
+<p>influenced by the result. How my self-image was</p>
+<p>threatened by the prospect of losing. I noticed my</p>
+<p>mind was always entering the future. Would I win?</p>
+<p>Would I lose? I saw that tennis was revealing much of</p>
+<p>the way I thought and felt.</p>
+<p>Along the way I began to discover that I could play</p>
+<p>a match and not end up in pain. I found by hitting the</p>
+<p>ball in a relaxed, flowing style I could experience a</p>
+<p>sense of wellbeing. I realized that my imagination</p>
+<p>could become a positive part of my tennis and that I</p>
+<p>could feel creative on the court and enjoy hitting a</p>
+<p>ball purely for the sense of relaxation it created.</p>
+<p>Gradually I began to see a strong connection</p>
+<p>between Eastern philosophies and their application to</p>
+<p>tennis. The satori experience, of being fully in the</p>
+<p>moment, found its expression in watching the ball.</p>
+<p>The flowing gentle movements of Tai Chi became</p>
+<p>possible in tennis. The need for the balanced approach</p>
+<p>of Hard and Soft techniques of Kung Fu became</p>
+<p>obvious. The apparently distinct worlds of tennis and</p>
+<p>meditation started to come together. I began to see a</p>
+<p>bigger picture operating in my life that drew these</p>
+<p>seemingly different worlds, together.</p>
+<p>In writing this book I have tried to develop a</p>
+<p>philosophy behind the sport of tennis, a philosophy</p>
+<p>that takes into account the physical, mental and</p>
+<p>emotional aspects of the game. In doing so I have</p>
+<p>drawn on Japanese Zen, Chinese martial arts, Indian</p>
+<p>meditation and Western psychology.</p>
+<p>The exercises in the book are a mixture of on-</p>
+<p>court and off-court processes designed to increase</p>
+<p>CON. TeRiGO) DIU GT 100 N ‘e 7</p>
+<p>your self-awareness and improve your tennis. In keeping</p>
+<p>with the Zen tradition of story telling I’ve included</p>
+<p>some of my fables and poems to highlight and reinforce</p>
+<p>certain viewpoints. These are valuable methods of</p>
+<p>teaching because, instead of spelling out messages, they</p>
+<p>invite the reader to think about the issues themselves.</p>
+<p>A personal reason for the inclusion of the poems and</p>
+<p>fables is that, for me, they are signs that I am loosening</p>
+<p>up enough to express my creativity. I see them as a</p>
+<p>spin-off from my approach to tennis becoming less</p>
+<p>rigid. This is in keeping with my belief that changes in</p>
+<p>one aspect of my life pervade all others.</p>
+<p>By taking this total approach, I believe we can gain</p>
+<p>full value from the time we allot to our game,</p>
+<p>regardless of our standard. However, the most</p>
+<p>important benefit to be drawn from this is the</p>
+<p>development of a set of attitudes and qualities that we</p>
+<p>can take into all areas of our lives.</p>
+<p>* I&#x27;ve learnt how to challenge my conditioned</p>
+<p>thinking and focus more clearly on the here</p>
+<p>and now rather than be lost in the past.</p>
+<p>¢ I’ve rediscovered my creativity, imagination</p>
+<p>and the pure enjoyment of play and have</p>
+<p>begun to see how all aspects of my life are</p>
+<p>interconnected.</p>
+<p>In this way sport should not be seen as something</p>
+<p>separate from work and relationships, but as a</p>
+<p>reflection of and mechanism for developing them. In</p>
+<p>this way our sport remains alive, creative and</p>
+<p>spontaneous.</p>
+<p>Begin!</p>
+<p>Pole Aey a OLN fi &gt; Oh ee se NN</p>
+<p>(A people who have played tennis have, at</p>
+<p>some time, come off the court and recalled a</p>
+<p>great shot. Whether it was a serve, backhand or volley</p>
+<p>it was memorable, because it was beyond what they</p>
+<p>thought was possible for them. It gave them a glimpse</p>
+<p>of another realm. After the match they may speak, in</p>
+<p>almost reverent tones, of the backhand they hit down</p>
+<p>the line.</p>
+<p>“TI was running flat out, my opponent had hit a</p>
+<p>deep shot into the backhand corner and moved into</p>
+<p>the net. Then something strange happened. It was as</p>
+<p>if time stood still. I imagined hitting the ball down</p>
+<p>the line. I knew I could do it. Whack! With only</p>
+<p>inches to aim for, I hit it. It zoomed past his</p>
+<p>outstretched racket for a winner. I was as surprised as</p>
+<p>On a good day you may have played a number of</p>
+<p>these shots, and just occasionally you may play a</p>
+<p>match like this. It is as if you enter a “space” or “zone”</p>
+<p>where fear or doubt can’t penetrate. In normal</p>
+<p>conversation we speak of these times as “having a</p>
+<p>purple patch” or “having the ball on a string.”</p>
+<p>In psychological terms such an experience is</p>
+<p>described as a “peak experience.” It is not only the</p>
+<p>property of sportspeople, but is the term used to</p>
+<p>describe the times when a person feels inspired. It is</p>
+<p>the experience of being lifted beyond your normal</p>
+<p>performance to something greater. The experience</p>
+<p>holds special qualities where the time seems to stand</p>
+<p>still, where the mind is free from distraction and</p>
+<p>where there is an unshakable sense of inner calm.</p>
+<p>Everything in that moment appears perfect.</p>
+<p>In the Zen tradition, the term satori is used to describe</p>
+<p>a moment or time of enlightenment. The experience</p>
+<p>connects us closely to our true nature, or Self, which</p>
+<p>is unclouded by the past or future. Although this may</p>
+<p>sound very mystical, it is really the experience of</p>
+<p>being natural. Satori can be the outcome of Zen</p>
+<p>practices and occurs when the practitioner is fully</p>
+<p>focused in the moment. It is the natural harmony of</p>
+<p>mind, body and emotions flowing together. It is a state</p>
+<p>that many people stumble across, attain for a moment,</p>
+<p>lose, and spend the rest of their life seeking. It is from</p>
+<p>these states of mind that works of inspiration are</p>
+<p>created, whether it be the memorable tennis match,</p>
+<p>the great painting or a musical masterpiece.</p>
+<p>Once we have a glimpse of satori it can become a</p>
+<p>lure in itself. The experience creates a sense of magic</p>
+<p>in life that can transform the mundane into something</p>
+<p>special. It can equate with the experience of being in</p>
+<p>love, and color all aspects of life.</p>
+<p>In writing a book entitled Zen Tennis, I sometimes</p>
+<p>feel uneasy. It is as though I am being observed</p>
+<p>inwardly by a smiling face. I even get the feeling it</p>
+<p>might be an elderly monk from a by-gone era. He</p>
+<p>humorously notes my attempts to write about a way</p>
+<p>of playing tennis as if there is a formula to follow.</p>
+<p>Even the act of putting this many words down on</p>
+<p>paper is to confront the Zen saying:</p>
+<p>Those who speak do not know.</p>
+<p>Zen has been described as a pathless path where</p>
+<p>nothing needs to be done in order to attain</p>
+<p>enlightenment. Enlightenment is said to exist at all</p>
+<p>times. We just need to realize it. It is something that</p>
+<p>happens to us rather than a result of things we</p>
+<p>consciously do. Ideally the experience of satori is totally</p>
+<p>satisfying and not attached to results. This viewpoint is</p>
+<p>made clear in the well-known Zen saying:</p>
+<p>Fetch water.</p>
+<p>Fetch water.</p>
+<p>Having said this, the Zen tradition still places great</p>
+<p>emphasis on disciplines and techniques. Some of</p>
+<p>these, which will be discussed later in greater detail,</p>
+<p>include long periods of meditation called Zazen,</p>
+<p>kinhin (walking meditation), study of koans and</p>
+<p>chanting. With many of these practices, great attention</p>
+<p>is paid to detail and ritual. How one leaves and enters</p>
+<p>the meditation hall, eats, sits, stands up and walks are</p>
+<p>all guided by various routines. So, even though the</p>
+<p>destination is ever present, we may need some help to</p>
+<p>realize it.</p>
+<p>¢ What is the destination?</p>
+<p>* Is it becoming a Wimbledon champion?</p>
+<p>¢ Is it uncovering the fact that there is a</p>
+<p>Wimbledon Champion inside us who is</p>
+<p>clouded by misconceptions?</p>
+<p>¢ Or, is it the arrival of an attitude to the time</p>
+<p>spent playing?</p>
+<p>* Is ita valuing of every moment?</p>
+<p>* Is the tennis equivalent of the above Zen</p>
+<p>Hit forehand.</p>
+<p>Hit forehand?</p>
+<p>The only answer that seems reasonable is that it can</p>
+<p>be all of these things. In the Zen tradition there is</p>
+<p>usually not one right answer. It may be simply a case</p>
+<p>of discovering what is right for you, at any particular</p>
+<p>moment. If your reason for playing is to be a</p>
+<p>champion, so be it, or if it is just to play for the</p>
+<p>experience that’s fine as well. Every moment adds to</p>
+<p>the sense of who your real self is.</p>
+<p>It would be valuable to complete the satori sheet on page</p>
+<p>19 to help you recognize that you may have already</p>
+<p>experienced this state. While we don’t want to live in or</p>
+<p>dwell on the past, many of us become so preoccupied</p>
+<p>with our everyday commitments that it is easy to forget</p>
+<p>some of the more inspirational moments of our life.</p>
+<p>Recalling these experiences can be of great value.</p>
+<p>By taking the time to review these moments we</p>
+<p>may find that important aspects of our life have been</p>
+<p>forgotten without our noticing. We may have stopped</p>
+<p>taking time out to exercise, we may have stopped</p>
+<p>meditating, and so on. Restoring these activities can</p>
+<p>lead to a renewed zest for life.</p>
+<p>When it comes to tennis, if you have lost</p>
+<p>confidence in your game, it is possible you have</p>
+<p>become focused on some negative aspects. At these</p>
+<p>times it is easy to become flat and lose the enjoyment</p>
+<p>of playing. Replaying and reminding yourself of these</p>
+<p>uplifting times may help to rid you of your doubts</p>
+<p>and renew your faith in yourself. As long as you use</p>
+<p>the memory as a reminder of what you are capable of,</p>
+<p>rather than a comparison with how you are playing at</p>
+<p>the moment, this exercise can be very beneficial.</p>
+<p>When filling out this sheet, it’s important to</p>
+<p>remember that satori experiences don’t have to be</p>
+<p>linked to great achievements. Often they can occur at</p>
+<p>very simple natural moments. I would consider that I</p>
+<p>experienced some very special moments hitting tennis</p>
+<p>balls early on spring mornings. The air was crisp and</p>
+<p>invigorating, my body relaxed and alert and I felt a</p>
+<p>great sense of wellbeing.</p>
+</section>
+<section class="chapter" id="sec-2">
+<h2>Part 2  ·  pp. 31–60</h2>
+<p>* Recall and describe a time when you played your best tennis.</p>
+<p>Where were you?</p>
+<p>Who were you playing?</p>
+<p>Did you do anything different to prepare?</p>
+<p>Did you do something consciouslyto create it?</p>
+<p>¢ What was the experience like?</p>
+<p>Were you relaxed?</p>
+<p>How was your sense of time?</p>
+<p>Did you see the ball clearly?</p>
+<p>What was your concentration like?</p>
+<p>* Did you notice what was happening around you?</p>
+<p>¢ Did the feeling last after the match?</p>
+<p>* Did you have the experience often?</p>
+<p>* Could you consciously repeat it?</p>
+<p>* Have you had similar experiences while doing something else?</p>
+<p>The following is John Newcombe’s description of an</p>
+<p>experience of satori. It also gives some valuable</p>
+<p>insights into how he achieved this.</p>
+<p>I have managed to achieve a satori or “peak</p>
+<p>experience” several times, which in my layman’s</p>
+<p>terminology I called “putting myself in the zone.” The</p>
+<p>most notable and rewarding for me personally was the</p>
+<p>1970 Wimbledon final against Ken Rosewall.</p>
+<p>As a nine-year-old I had listened on the radio to</p>
+<p>the 1953 Davis Cup finals in Melbourne between</p>
+<p>Australia and the US with the teenage whiz kids</p>
+<p>Rosewall and Hoad representing Australia. In 1954</p>
+<p>they played again in Sydney and this time I sat in</p>
+<p>the stands with my dad and dreamed of the day I</p>
+<p>would be good enough to be on court.</p>
+<p>Now, here I was in a Wimbledon final against</p>
+<p>Rosewall. I expected the crowd to be with Ken as he</p>
+<p>was older and they felt it may be his last chance to win.</p>
+<p>Following a close first set to Ken I won the next</p>
+<p>two comfortably and at 3-1 up in the fourth I</p>
+<p>appeared to be cruising to my second Wimbledon</p>
+<p>singles title. The crowd had other ideas as they</p>
+<p>began cheering every mistake of mine and cheering</p>
+<p>wildly for every winner Ken made.</p>
+<p>I allowed emotions to get the better of me and</p>
+<p>became full of anger, frustration and negative energy</p>
+<p>as Ken ran out five games to level at two sets all.</p>
+<p>On the change of ends I had a serious talk with</p>
+<p>myself that went something like this: How badly do</p>
+<p>you want to win? Yes, I want to win very badly!</p>
+<p>Okay, then you need to purge yourself of all</p>
+<p>negative energy, and go onto the court with a vision</p>
+<p>only of a tennis ball and a player at the other end of</p>
+<p>the court. Everything else must become irrelevant,</p>
+<p>such as the umpire, linespeople, ballboys, crowd,</p>
+<p>friends, family and the fact it is a Wimbledon final. I actually felt myself go inside my body and blow</p>
+<p>out all the negative feelings. I clearly remember a</p>
+<p>point at 15-30 on my first service game. I served a</p>
+<p>fault and Ken was standing in trying to apply the</p>
+<p>pressure on my second serve. Without ever really</p>
+<p>debating it I calmly aced him on the centre line.</p>
+<p>From that moment on the match was mine as I felt</p>
+<p>I knew what Ken was going to do before he hit the</p>
+<p>ball, and I ran out the set 6—1.</p>
+<p>Afterwards, as I reflected back on the match, I</p>
+<p>was very proud of how I had been able to put myself</p>
+<p>into a zone within the short space of a sixty-second</p>
+<p>changeover, when ‘my body and mind had been</p>
+<p>overcome with negativity. It was a great lesson that</p>
+<p>you can overcome the monsters such as fear, anxiety,</p>
+<p>anger and frustration.</p>
+<p>I have been able to repeat this experience but I</p>
+<p>will never again be under the same pressure as in</p>
+<p>the cauldron of Centre Court Wimbledon.</p>
+<p>While I will analyze this experience in more detail</p>
+<p>later in the book, I believe a few important points</p>
+<p>need to be mentioned now. John Newcombe’s</p>
+<p>account describes his capacity to refocus his attention</p>
+<p>back to the here and now, by purging himself of</p>
+<p>his negative energy. As a result he gains a sense of</p>
+<p>calmness and knowing which stays with him</p>
+<p>throughout the rest of the match. Finally he gains a</p>
+<p>belief in his ability to overcome his inner monsters.</p>
+<p>These points are all consistent with the earlier</p>
+<p>description of satori.</p>
+<p>Earlier I mentioned that during the experience of</p>
+<p>satori the mind is free of the distracting influence of</p>
+<p>thoughts. However, once the experience is glimpsed,</p>
+<p>certain questions, like the following, inevitably arise in</p>
+<p>our minds.</p>
+<p>* Is this experience repeatable?</p>
+<p>¢ Is ita random event left to chance?</p>
+<p>* Can I do anything that encourages this to</p>
+<p>happen more frequently?</p>
+<p>* Was it luck, just a destined moment or is it a</p>
+<p>matter of desire?</p>
+<p>¢ Is this state of mind the domain of the</p>
+<p>champion only?</p>
+<p>These natural questions provide the mental</p>
+<p>direction to gain a greater understanding of these</p>
+<p>times. Answering them may take you on many</p>
+<p>interesting journeys. You may meet people or read</p>
+<p>books in order to find pieces of the jigsaw or you may</p>
+<p>be lucky enough to have the experience repeat itself</p>
+<p>with little effort. As long as you don’t become too</p>
+<p>interested in intellectually understanding the experience</p>
+<p>at the expense of “having the experience” these</p>
+<p>questions are valuable.</p>
+<p>I wrote the fable, “The porcelain saxophone” while</p>
+<p>wrestling with the issues involved in enjoyment,</p>
+<p>expectations and results. It gives a glimpse of satori, its</p>
+<p>loss and its rediscovery.</p>
+<p>Even as a young child he loved music. He would pick up</p>
+<p>any instrument and play with it for hours. As he grew older</p>
+<p>he chose to specialize in the saxophone because he found its</p>
+<p>soulful notes expressed most closely how he felt.</p>
+<p>It wasn’t long before people gathered around to listen to</p>
+<p>the beautiful sounds he produced. His face shone with joy as</p>
+<p>he played.</p>
+<p>To repay him for the pleasure he gave them the people of</p>
+<p>his town commissioned a special gift. They hired an artisan</p>
+<p>to make a unique porcelain hand-painted saxophone. This</p>
+<p>fragile instrament was not only beautiful to look at but also</p>
+<p>had a magical tone. The young musician loved it.</p>
+<p>He grew more famous and wherever he played audiences</p>
+<p>were spellbound by his music. After each performance they</p>
+<p>would all comment on the beauty of this precious instrament</p>
+<p>and its remarkable sound. Time passed and the young man</p>
+<p>started to enjoy the attention he gained from performing but he</p>
+<p>also secretly began to wonder whether the audience would love</p>
+<p>his concerts if he didn’t have this fine musical instrument. He</p>
+<p>began to doubt his ability and worry about his performances.</p>
+<p>Then one night as he carefully unwrapped his saxophone</p>
+<p>his worst fear happened. His hand slipped and the</p>
+<p>instrament dropped to the floor, shattering into pieces.</p>
+<p>He couldn’t perform without it. The audience would be</p>
+<p>disappointed. He couldn’t go on.</p>
+<p>The young man stopped playing altogether. At first he</p>
+<p>tried to interest himself in other activities but his heart wasn’t</p>
+<p>in them. He became restless and wanted to get away from the</p>
+<p>memories and the people who kept asking him when he was</p>
+<p>going to play again. He started traveling and wandered far</p>
+<p>from home.</p>
+<p>Years passed. He had many experiences and time dulled</p>
+<p>the memory of his playing days but, still unfulfilled, he</p>
+<p>decided to return home. It was night time when he arrived</p>
+<p>at his village and as he had nowhere to stay, he headed for</p>
+<p>an old cobbled laneway where he knew he could take</p>
+<p>shelter.</p>
+<p>Once there, he started to clear a place to lay out his</p>
+<p>blankets. As he pushed some rubbish aside he heard the</p>
+<p>sound of metal scraping on the stones. Looking closely he</p>
+<p>saw, to his surprise, a battered old saxophone. As he cleaned</p>
+<p>it, he realized that it was dented and had surely passed its</p>
+<p>best days. Could it even play a note? Picking it up, he</p>
+<p>noticed how comfortable it felt in his hands. It was the first</p>
+<p>time he had touched an instrument since that terrible</p>
+<p>moment in his past. He lifted it to his lips.</p>
+<p>Expecting nothing, he began to play. Tentatively at first.</p>
+<p>He felt like that young child of a lifetime ago, until he forgot</p>
+<p>himself, lost in the soulful, stirring sound. Meanwhile his</p>
+<p>enchanting music stopped passers-by and drew the attention</p>
+<p>of curious residents. Some opened windows, others wandered</p>
+<p>outside to listen.</p>
+<p>With eyes closed and face glowing he continued.</p>
+<p>Two protagonists of tennis who fought many battles</p>
+<p>in the 1980s were John McEnroe and Bjorn Borg. An</p>
+<p>intriguing aspect of their matches was the contrast in</p>
+<p>styles and temperaments. McEnroe displayed the</p>
+<p>passionate, “let it all hang out” approach while Borg</p>
+<p>always appeared cool and in control. McEnroe’s game</p>
+<p>was full of flair and creativity whereas Borg’s was</p>
+<p>unnervingly consistent. What they did have in</p>
+<p>common was a great desire to&#x27;compete, along with</p>
+<p>tremendous concentration when it counted. Both</p>
+<p>were great tennis players. Based on the example of</p>
+<p>these two players it is obvious that there is no one</p>
+<p>“right” personality for tennis.</p>
+<p>Even though we all have a predisposition to a</p>
+<p>certain temperament, there are times when it would</p>
+<p>be either necessary or useful to be able to draw on</p>
+<p>other familiar aspects of our personality. I wonder if</p>
+<p>there were times when it would have helped either</p>
+<p>Borg or McEnroe to be a little like the other. It’s hard</p>
+<p>to imagine Borg firing up and doing his block or</p>
+<p>McEnroe playing a tight match calmly, but there were</p>
+<p>probably times when it would have been beneficial.</p>
+<p>Being adaptable enough to draw on an opposite</p>
+<p>aspect of your own personality provides flexibility in</p>
+<p>handling different circumstances. Being aware of these</p>
+<p>opposites and using them appropriately leads to a</p>
+<p>greater sense of balance.</p>
+<p>In Chinese philosophy, the concept of balance is</p>
+<p>described in terms of Yin and Yang. Yin and Yang are</p>
+<p>seen as complementary opposites, dependent on each</p>
+<p>other for definition. Nothing is absolutely one or the</p>
+<p>other. Each section of the symbol contains a small</p>
+<p>contrasting circle illustrating the fact that within Yin</p>
+<p>there is some Yang and vice versa.</p>
+<p>Some obvious examples of these opposites are:</p>
+<p>The emphasis on balance is an integral aspect</p>
+<p>of Chinese life. For example if someone is sick,</p>
+<p>their treatment often revolves around diagnosing</p>
+<p>imbalances relating to an over-, or under-emphasis on</p>
+<p>Yin or Yang.</p>
+<p>A simple example of how this could occur is</p>
+<p>through a person’s approach to exercise. Exercise is a</p>
+<p>Yang element and rest is a Yin element. Too much</p>
+<p>exercise leaves a person tired and reduces their ability</p>
+<p>to cope physically, mentally and emotionally. In</p>
+<p>extreme cases it can lead to disabilities such as</p>
+<p>dehydration and reduced functioning of the auto-</p>
+<p>immune system. On the other hand, too little exercise</p>
+<p>can result in physical problems such as_ poor</p>
+<p>circulation and loss of strength and flexibility. Finding</p>
+<p>the right balance is the key to maximizing good</p>
+<p>health.</p>
+<p>Trqenr, Grant OR °DWA COW?</p>
+<p>Another area where this concept is highlighted strongly</p>
+<p>is in the martial arts system of Kung Fu. In the Wu Shu</p>
+<p>system, balance is achieved by having a blending of Yin</p>
+<p>(soft) and Yang (hard) movements, whereas other types</p>
+<p>of martial arts may concentrate more on either Yin or</p>
+<p>Yang force. Karate is largely a Yang art because of its</p>
+<p>emphasis on strength and power. A hard, powerful</p>
+<p>punch is countered by a strong, forceful block. Martial</p>
+<p>arts such as Aikido rely upon the Yin aspect by</p>
+<p>redirecting or evading the force of an opponent’ attack.</p>
+<p>The principles of Kung Fu were derived from the</p>
+<p>observation of different animals in their natural</p>
+<p>setting. It is thought that in the thirteenth century, Pai</p>
+<p>Yu-feng, a Wu Shu expert, choreographed the famous</p>
+<p>Shaolin system named after five animals.</p>
+<p>The Shaolin system is a combination of breathing</p>
+<p>techniques used in association with physical martial</p>
+<p>arts, which mimics the movements and spirit of</p>
+<p>selected animals. The choreography is intended to</p>
+<p>combine the movements of various animals into a</p>
+<p>set routine, which displays Yin and Yang in various</p>
+<p>forms. When one changes from a Crane technique</p>
+<p>to a Tiger technique it is necessary to show the</p>
+<p>change in execution from supple and restrained to</p>
+<p>hard and aggressive. This allows the practitioner to</p>
+<p>more accurately mimic the animal’s movements and</p>
+<p>display the spirit or personality of that particular</p>
+<p>animal.</p>
+<p>The choreography also allows Yin and Yang to be</p>
+<p>displayed by alternating between high (Yang) and low</p>
+<p>(Yin) techniques, hard (Yang) and soft (Yin) techniques</p>
+<p>and by changing the execution of movements between</p>
+<p>fast (Yang) and slow (Yin). These same principles can be</p>
+<p>applied to tennis where shots could be varied between</p>
+<p>hard and soft, and short (Yang) and long (Yin).</p>
+<p>The discipline and commitment necessary to</p>
+<p>master the movements were seen as an essential aspect</p>
+<p>of each monk’s development. The training consisted</p>
+<p>largely of breathing, stretching and meditation</p>
+<p>exercises combined with a strictly controlled diet. The</p>
+<p>rigorous training forced the monks to go beyond self-</p>
+<p>imposed limitations and enabled them to gain insights</p>
+<p>into their true nature. This acquiring of a new</p>
+<p>viewpoint and the freeing from illusory concepts of</p>
+<p>the self can be seen as satori experiences.</p>
+<p>The animals that follow the system are:</p>
+<p>TIGER: strength, courage, spirit</p>
+<p>L EO PAR D: Stealth, speed, aggression</p>
+<p>SNAKE: timing, flexibility, agility</p>
+<p>Of the animals mentioned above, the Crane and</p>
+<p>Snake represent the Yin, and the Tiger and Leopard</p>
+<p>represent the Yang. The animals are classified as either</p>
+<p>Yin or Yang according to their temperament and</p>
+<p>behavior. The Snake and Crane are both rather placid</p>
+<p>(Yin) animals that would prefer to flee (Yin) rather</p>
+<p>than fight (Yang). The Crane is renowned for its long</p>
+<p>life, which is attributed to its powerful Yin force.</p>
+<p>Similarly, the Snake uses its Yin power to maintain life</p>
+<p>during hibernation in winter. The Tiger and Leopard</p>
+<p>display their Yang natures by being aggressive and</p>
+<p>physically powerful.</p>
+<p>A fifth animal, which is said to combine the Yin</p>
+<p>and the Yang, is the mythological Dragon. This</p>
+<p>supernatural beast is considered by many Chinese to</p>
+<p>be a mystical and godly animal and is included in this</p>
+<p>system as an ideal that can be constantly strived for. It</p>
+<p>is said that the Dragon can quickly fluctuate between</p>
+<p>weightlessness (Yin) and being extremely heavy</p>
+<p>(Yang). It is equally at home in the sky, on the ground</p>
+<p>or in the water, Its abilities are consciously determined</p>
+<p>according to its current situation.</p>
+<p>AWD” JANG &quot;ACNPED YOTOHTE ANIMALS TO TENNIS</p>
+<p>To develop a complete and balanced game it is</p>
+<p>necessary to become aware of your strengths and</p>
+<p>weaknesses. It is not enough to have a great forehand</p>
+<p>if your backhand is weak.</p>
+<p>In the same way it is not always to your advantage</p>
+<p>to hit a ball aggressively or, conversely, to play only</p>
+<p>“touch” shots. You need the versatility to be able to</p>
+<p>choose the type of game that is appropriate for the</p>
+<p>situation and your opponent. To be able to draw on</p>
+<p>the necessary shot or mental approach means being</p>
+<p>comfortable with both the Yin and the Yang of</p>
+<p>tennis.</p>
+<p>What would some Yin and Yang qualities of</p>
+<p>tennis be?</p>
+<p>Can wait and hit Hits the ball</p>
+<p>the the ball late . on the rise</p>
+<p>Plays with touch Hits the ball &#x27;</p>
+<p>Movements flow Movements short</p>
+<p>with little effort and sharp with</p>
+<p>Responds to opponent Dictates play</p>
+<p>Enjoys slow surface Enjoys quick surface</p>
+<p>Earlier when I described the meaning of Yin and</p>
+<p>Yang I said that nothing is totally Yin or Yang. There</p>
+<p>is always some aspect of one in the other. This list</p>
+<p>of players is based on their game falling more</p>
+<p>predominantly into one category than the other.</p>
+<p>Conchita Martinez Aranxta Sanchez</p>
+<p>In making the list I found it more difficult to fit</p>
+<p>contemporary players into the Yin category. This is</p>
+<p>due possibly to the power that is generated by</p>
+<p>modern-day rackets. In the past players such as Ilie</p>
+<p>Nastase and Ken Rosewall displayed more of the style</p>
+<p>that emphasized finesse and touch.</p>
+<p>If we continue to follow the analogy with the</p>
+<p>Chinese system then the ideal player, the Dragon,</p>
+<p>would have a blending of the following qualities:</p>
+<p>aggression, determination, persistence (Yang) along</p>
+<p>with balance, flow and agility (Yin). They would be</p>
+<p>able to choose and adapt their play as required. This</p>
+<p>player would be one whose game could be adapted to</p>
+<p>both fast and slow surfaces and would put them in the</p>
+<p>running to win a Grand Slam. As very few players</p>
+<p>have won it, it indicates how difficult it is to master all</p>
+<p>aspects of tennis. In recent years in women’s tennis,</p>
+<p>Steffi Graf has gone on to win one, while Monica</p>
+<p>Seles went very close in 1992. 1 wonder whether they</p>
+<p>would see themselves as complete players, or Dragons.</p>
+<p>In men’s tennis, Jim Courier, Andre Agassi and</p>
+<p>Pete Sampras have all gone close to winning the four</p>
+<p>major tournaments in different years.</p>
+<p>The player whose game I believe is the most com-</p>
+<p>plete and therefore closest to the ideal of the Dragon</p>
+<p>is Pete Sampras. While there is no doubting his</p>
+<p>courage, spirit or power (all Yang qualities), he does</p>
+<p>demonstrate strong Yin traits. His movement around</p>
+<p>the court between points is slow and loping, when</p>
+<p>volleying his hands are relaxed and contain a great</p>
+<p>deal of touch and his recent displays of emotion on</p>
+<p>the court could all be described as Yin characteristics.</p>
+<p>Even though our personalities may predispose us to</p>
+<p>be more naturally Yin or Yang in our approach, to</p>
+<p>develop a “total” game we need to practice both.</p>
+<p>Let’s say two opponents are Snakes who enjoy</p>
+<p>moving the ball around the court. After a time it</p>
+<p>‘becomes obvious one has greater touch than the</p>
+<p>other. What are the other player&#x27;s options? If they</p>
+<p>become stuck in their Snake ‘nature then they will</p>
+<p>probably go for greater angles and look for even</p>
+<p>greater touch. Their game will be pushed to an</p>
+<p>extreme. However, if they step out of the moment of</p>
+<p>battle to assess the situation they might decide to</p>
+<p>change their approach and experiment with using</p>
+<p>some Tiger/Leopard attributes. This might be the time</p>
+<p>to attack more and introduce greater power.</p>
+<p>If you are having difficulty getting the feel of</p>
+<p>playing in a different manner then you could try using</p>
+<p>your imagination and let yourself “become” one of</p>
+<p>the animals from that style.</p>
+<p>It’s often too late to start this experimentation</p>
+<p>during a match. It’s important to allot some of your</p>
+<p>practice time to hitting the ball in different ways. If</p>
+<p>you&#x27;re someone who always waits for the ball, see</p>
+<p>what happens if you take it on the rise. Conversely, if</p>
+<p>you have no patience in a rally, challenge yourself to</p>
+<p>keep the ball in play and maneuver your opponent</p>
+<p>around the court before hitting the winner.</p>
+<p>If you are having difficulty getting the feel of</p>
+<p>playing a different way then you could try using your</p>
+<p>imagination and let yourself become a Tiger on the</p>
+<p>court.</p>
+<p>Allow yourself to feel a Tiger’s strength and</p>
+<p>courage, notice your strong decisive moments, prowl</p>
+<p>with a Leopard’s stealth, imagine your opponent is</p>
+<p>your prey. Or, conversely, picture your own fluid</p>
+<p>movements. Become the Crane, with your effortless</p>
+<p>flowing style, or glide like a Snake around the court.</p>
+<p>Many years ago there were two monasteries nestled into the</p>
+<p>base of either side of a mountain. One group of monks</p>
+<p>followed the path of the Yin techniques while the other the</p>
+<p>Yang. There was much debate between them as to which style</p>
+<p>was superior. Finally it was decided that the champion of</p>
+<p>each monastery would play off to determine once and for all</p>
+<p>which was the better approach.</p>
+<p>The day arrived for the match. A large crowd had</p>
+<p>gathered. Tivo very fine athletes opposed each other. One was</p>
+<p>a tall, sinewy figure who moved gracefully and played all his</p>
+<p>strokes effortlessly. The other was a solid, muscular type who</p>
+<p>aggressively prowled the court and hit each shot as if it were</p>
+<p>his last.</p>
+<p>The match began. The ball was served and then returned</p>
+<p>back into play. The Tiger powerfully hit the next shot, deep</p>
+<p>into the corner, the crowd rose to applaud, but the Crane</p>
+<p>moved effortlessly into position and with great touch played -</p>
+<p>an immaculate drop shot just over the net. This must</p>
+<p>certainly be a winner, Not to be outdone, the Tiger raced into</p>
+<p>the net and picked it up. Shot after shot was punched or</p>
+<p>counter-punched into play. Who would weaken? After all this</p>
+<p>was still the first point. The audience were spell-bound as</p>
+<p>both players continued to trade shots. Hours passed and still</p>
+<p>no score.</p>
+<p>The players were exhausted. Then it happened. As one</p>
+<p>hit the ball high into the air, both collapsed. The crowd held</p>
+<p>their breath. Depending where it landed there would be a</p>
+<p>result. The ball was just above the net when to the disbelief</p>
+<p>of all watching, it split in two. Both halves fell to the ground,</p>
+<p>one part landing on one side of the court and the other part</p>
+<p>landing on the other.</p>
+<p>The crowd was stunned. In front of their eyes lay the two</p>
+<p>players, unable to move with half the ball on either side.</p>
+<p>In silence, each player was picked up by his fellow monks</p>
+<p>and carried back to their own monastery, still uncertain as to</p>
+<p>which style was the best.</p>
+<p>Ex TS NOUN GP ee KONG “Fou &#x27;s ¥9T EM</p>
+<p>Although the Kung Fu system revolves around the</p>
+<p>movements of the Crane, Snake, Tiger, Leopard and</p>
+<p>Dragon, you may feel that there is another animal that</p>
+<p>gives you a sense of strength, power or grace.</p>
+<p>Experiment with this idea. The following list may</p>
+<p>provide you with a few ideas.</p>
+<p>ELEPHANT: huge strength, stability and</p>
+<p>EAGLE: keen eyesight and power</p>
+<p>LION: regality, pride, strength, authority</p>
+<p>KANGAROO: ability to jump great distances</p>
+<p>MONARCH BUTTERFLY: ability to travel</p>
+<p>great distances, endurance, stamina, lightness</p>
+<p>HUNTING DOG: ability to pace itself,</p>
+<p>follow until prey is exhausted, then attack</p>
+<p>Many ancient cultures actually used dances and</p>
+<p>rituals to help get in touch with the qualities</p>
+<p>attributed to certain animals. The American Indians</p>
+<p>were so convinced that they even took on the names</p>
+<p>of certain beasts. Although you may initially feel a</p>
+<p>little self-conscious, first decide which animal has the</p>
+<p>qualities or traits you either need or admire. Think of</p>
+<p>ones that would benefit your game. Is it the strength</p>
+<p>and stability of the Elephant? Is it the keen eyesight of</p>
+<p>the Eagle? Once you’ve done this, spend a few</p>
+<p>minutes imagining the chosen animal using these</p>
+<p>attributes. Next see yourself endowed with these</p>
+<p>qualities. How would it feel to move with the speed</p>
+<p>of the Cheetah or move around the court with the</p>
+<p>lightness of the Butterfly. Who could forget</p>
+<p>Muhammad Ali’s famous warcry, “Float like a</p>
+<p>butterfly, Sting like a bee,” with which he taunted his</p>
+<p>opponents. As he spoke the words he often lightly</p>
+<p>danced while darting out punches. The secret to</p>
+<p>gaining benefit from this sort of exercise is to allow</p>
+<p>yourself to let go enough to imagine and feel.</p>
+<p>i a ae oe ie Tree is footer IMAGE ROY IN TENNIS</p>
+<p>When I suggest to various clients or pupils that they</p>
+<p>picture a certain style of play, or imagine achieving a</p>
+<p>specific goal, they often reply that they can’t do it.</p>
+<p>They feel sure that they don’t “see” anything with</p>
+<p>their eyes closed. However, in most cases, after a little</p>
+<p>prompting they realize that is not the case. Their</p>
+<p>mental images are forming so naturally or quickly that</p>
+<p>they don’t recognize it.</p>
+<p>Visualization involves the use of imagination from</p>
+<p>all the senses to create images and effects within the</p>
+<p>mind and body. If you feel uncertain of your own</p>
+<p>ability to visualize then try this little exercise.</p>
+<p>Think of a room that you go into regularly. It</p>
+<p>might be your bedroom, your office or another room.</p>
+<p>Recall some objects in the room.</p>
+<p>¢ What color are they?</p>
+<p>¢ What size or shape?</p>
+<p>* Do you associate certain aromas with this</p>
+<p>room?</p>
+<p>* Is it generally warm or cold?</p>
+<p>¢ Is there much light in this room?</p>
+<p>Start by using familiar situations to gain confidence</p>
+<p>in your capacity to form mental images. If you have</p>
+<p>been able to successfully answer these questions it is</p>
+<p>almost certain that you were “seeing” these images in</p>
+<p>your mind.</p>
+<p>Try and utilize all of your senses when creating the</p>
+<p>image in your mind. An example of this could be:</p>
+<p>You see yourself on a tennis court that you play on</p>
+<p>regularly. It’s a warm, sunny day and you feel the</p>
+<p>gentle warmth on your skin. You are moving</p>
+<p>smoothly around the court, your legs feel strong and</p>
+<p>your breathing is smooth and rhythmical. You hear the</p>
+<p>sound of your feet sliding on the court surface and</p>
+<p>the effortless impact of the ball on your racket. With</p>
+<p>minimal tightening of the hand the shot you&#x27;ve</p>
+<p>imagined happens before your eyes.</p>
+<p>RxE Aubal Yo eH ALP -P ByN iN Ged</p>
+<p>Invariably when using mental imagery when working</p>
+<p>with a client they’ll ask, “This all sounds really nice but am I just kidding myself? Is something really</p>
+<p>happening? Is my body responding to these images?”</p>
+<p>These are good questions and are well answered by</p>
+<p>Tom Kubistant in his book Performing Your Best.</p>
+<p>The effectiveness of mental rehearsal is based upon</p>
+<p>two physiological facts. First ... the basal parts of</p>
+<p>the brain and the central nervous system could not</p>
+<p>differentiate between something that was actually</p>
+<p>happening, versus that which was being , vividly</p>
+<p>visualized. The higher parts of the brain make this</p>
+<p>differentiation. Second ... when one is vividly</p>
+<p>visualizing a moment, all those nerves that fire the</p>
+<p>muscles used in the movement are being electrically</p>
+<p>stimulated at a lower, yet significant magnitude.</p>
+<p>To those doubters among us, it is reassuring to hear</p>
+<p>that our bodies respond on a physiological level to the</p>
+<p>images formed in our mind. Something is really</p>
+<p>happening! It’s not a matter of blind faith.</p>
+<p>How is this useful for your tennis? If we think of</p>
+<p>_our body as a car, then mental imagery is part of the</p>
+<p>tuning that prepares it to move. The engine is</p>
+<p>switched on but the car is stationary. It’s ready to</p>
+<p>move. In the same way, by applying mental imagery to</p>
+<p>your tennis, you are firing the necessary cylinders or</p>
+<p>muscle fibers that are to be used in your movement.</p>
+<p>By clearing the connections you&#x27;re ready for action.</p>
+<p>During a time when there is major television</p>
+<p>coverage of tennis the games of many of my pupils</p>
+<p>(especially children) seem to go through change. Their</p>
+<p>style seems to pick up the mannerisms and approach</p>
+<p>of whichever player ignites their imagination. This is</p>
+<p>often done unconsciously and it can be a bit of fun</p>
+<p>guessing who&#x27;s their favorite player. This mimicking</p>
+<p>was obvious when Bjorn Borg inspired a crop of</p>
+<p>Swedes to play baseline tennis with his trademark</p>
+<p>double-handed backhand.</p>
+<p>Once we realize that we can be influenced by the</p>
+<p>images we see on the television screen (this is the basis</p>
+<p>of any advertising campaign) we can put this time to</p>
+<p>good use. Select a player whose game excites your</p>
+<p>imagination. You may admire their mental approach, it</p>
+<p>might be the power with which they hit the ball or you</p>
+<p>may like their style. Spend some time watching them</p>
+<p>play. You don’t have to concentrate hard on what they</p>
+<p>are doing. Just sit back, relax and soak up their play.</p>
+<p>The next time you’re on the court allow yourself</p>
+<p>to copy the odd mannerism of their game. Although</p>
+<p>you don’t want to end up a clone of that player, and</p>
+<p>lose your individual approach, you may find that you</p>
+<p>gain a little of the quality you admired.</p>
+<p>On a slightly different note: I’ve often been</p>
+<p>tempted to put a video together of top players making</p>
+<p>bad mistakes. This would be useful to show players</p>
+<p>who are perfectionists and give themselves a hard time</p>
+<p>over every mistake.</p>
+<p>NEGA TAYE FMA GER Y UAT ork y SOUN TT HEE ChOCURT</p>
+<p>During coaching sessions it has become obvious how</p>
+<p>many players reinforce and recall their mistakes. On</p>
+<p>many occasions I have been working on a particular</p>
+<p>shot with someone and feel that we are making good</p>
+<p>progress. They may have hit nine good shots in a row.</p>
+<p>Then they make a mistake. The next moment is full</p>
+<p>of expletives, tantrums and the declaration: “I can’t</p>
+<p>play such and such a shot.’ This belief and the</p>
+<p>accompanying image of failure are the ones that</p>
+<p>become strengthened. Remember to try to focus on</p>
+<p>the positive aspects of your training. A word of</p>
+<p>warning: be careful which images you focus your</p>
+<p>mind on!</p>
+<p>As a means of encouraging your imagination try the following</p>
+<p>exercise.</p>
+<p>¢ Spend a few minutes relaxing.</p>
+<p>Monitor your breathing.</p>
+<p>Listen to its rhythm.</p>
+<p>Hear its sound.</p>
+<p>Allow your analytical mind and beliefs to be put aside.</p>
+<p>Allow yourself to be a little unrealistic.</p>
+<p>Try not to stop your imagination before it starts.</p>
+<p>* Now drift back into your childhood. Take a little time. Ask</p>
+<p>yourself if you can recall your earliest dream.</p>
+<p>What was it that you imagined?</p>
+<p>Was it a sporting dream? See if you can get the feel of it.</p>
+<p>* Allow yourself to experience the excitement and enthusiasm</p>
+<p>involved in your imagination.</p>
+<p>* Give yourself some time. Be prepared to let your mind mull over</p>
+<p>this for some time. Don’t worry if nothing comes to mind</p>
+<p>initially. Be patient and be willing to try it a few times.</p>
+<p>« Ifa past memory came to mind ask yourself the following</p>
+<p>Did you achiéve your dream?</p>
+<p>If not, what happened?</p>
+<p>Was it just too unrealistic?</p>
+<p>Did someone tell you it couldn’t</p>
+<p>be done?</p>
+<p>Did some experience bring about a sense of self-doubt?</p>
+<p>_ What beliefs did that create for you?</p>
+<p>Can you remember the disappointment?</p>
+<p>Did you dream a different dream?</p>
+<p>Did you stop imagining?</p>
+<p>Are you dreaming now?</p>
+<p>What are your beliefs now?Reinforce the value of dreaming and</p>
+<p>this memory by writing it down somewhere. Perhaps draw a very</p>
+<p>simple image that reminds you of it. Place this where you will see</p>
+<p>it regularly so that you benefit from the visual reinforcement.</p>
+<p>WTAE atte Me Roo et has ScRANTE aa Ear Mo Ne ss (Och) aZaiN</p>
+<p>t is said in sporting Circles that ninety per cent of he game is played above the shoulders. When two</p>
+<p>players of equal physical ability compete it often</p>
+<p>comes down to who has the strongest psychological</p>
+<p>make-up that determines the result. Many sports</p>
+<p>people put themselves into a winning position only</p>
+<p>to lose due to their own doubts. Thoughts such as</p>
+<p>“l’m not good enough” or “Surely I couldn’t beat so</p>
+<p>and so” enter their mind and generate images and</p>
+<p>feelings that undermine performance.</p>
+<p>This type of thinking is the main challenge to</p>
+<p>experiencing satori. The sense of flow that epitomizes</p>
+<p>the experience is interrupted and our true ability or</p>
+<p>potential is not displayed. Performing to a level lower</p>
+<p>than we know we are capable of is perhaps the</p>
+<p>greatest cause of frustration in our sport.</p>
+<p>¢ Where do these negative messages originate?</p>
+<p>¢ What can be done to change them?</p>
+<p>In answering these questions I have drawn on three</p>
+<p>essential elements to the practice of Zen. These are</p>
+<p>said to be great doubt, great faith and great</p>
+<p>determination. All three are interconnected and either</p>
+<p>reinforce or influence each other. Change one and we</p>
+<p>automatically affect the others.</p>
+<p>It may sound unusual to have this listed as a positive</p>
+<p>aspect of practice in any field, until we examine what</p>
+<p>The doubt here refers to the conditioned beliefs</p>
+<p>that we hold to be true about ourselves, our life and,</p>
+<p>in this case, our tennis. Being able to doubt the</p>
+<p>validity of statements that limit our perception of</p>
+<p>ourselves and our game is a tremendous asset. When</p>
+<p>our self-talk says “You&#x27;re not good enough,” or “You&#x27;ll</p>
+<p>never amount to much,” doubt suddenly becomes</p>
+<p>valuable.</p>
+<p>Great doubt asks the questions:</p>
+<p>* Who says you are no good?</p>
+<p>* Why do you believe this statement?</p>
+</section>
+<section class="chapter" id="sec-3">
+<h2>Part 3  ·  pp. 61–90</h2>
+<p>¢ How do you know it’s true?</p>
+<p>e Are you sure?</p>
+<p>¢ Why couldn&#x27;t you be successful?</p>
+<p>In exploring these questions we often have to</p>
+<p>admit to ourselves that we don’t know why we think</p>
+<p>that way. Maybe it is true that “we&#x27;re not good</p>
+<p>enough” but have we really assessed it for ourselves?</p>
+<p>Great doubt challenges us to put our preconceptions</p>
+<p>aside and honestly reappraise our beliefs. This process</p>
+<p>can take time and in the short term leave us feeling</p>
+<p>confused. However, this temporary discomfort can</p>
+<p>lead to a much deeper sense of our true nature</p>
+<p>because our beliefs become a result of our own</p>
+<p>thinking. During this period of challenge it is useful</p>
+<p>to have great faith.</p>
+<p>It is essential to become aware of our inner</p>
+<p>communication because we may be sabotaging</p>
+<p>ourselves without knowing it. Our opinions, beliefs or</p>
+<p>judgments are influenced by our upbringing and early</p>
+<p>conditioning and our continuing experiences. These</p>
+<p>opinions or judgments may be empowering or</p>
+<p>limiting.</p>
+<p>This form of “doubting” leads to an honest</p>
+<p>assessment of our own truth, not a passive acceptance</p>
+<p>of someone else’s opinion.</p>
+<p>To enter the uncertain world of doubt it is valuable to</p>
+<p>have faith in other possibilities. We need to be able to</p>
+<p>imagine more for ourselves than our limiting messages</p>
+<p>suggest.</p>
+<p>Faith is the voice inside that reassures us that all is</p>
+<p>fine, that it is all right to have uncertainty in our lives,</p>
+<p>especially if it leads to a greater knowledge of our self.</p>
+<p>Faith encourages inquiry but teaches us to stop</p>
+<p>grasping at answers. Faith gives us the strength to wait</p>
+<p>until we do know. The reward of faith is trust: trust in</p>
+<p>ourselves and trust in life’s uncanny ability to direct</p>
+<p>the right people, situations and circumstances to us.</p>
+<p>At times when our faith is wavering from the</p>
+<p>tension produced by great doubt it is useful to call on</p>
+<p>our will and great determination.</p>
+<p>For someone like myself whose faith wavers, great</p>
+<p>determination is essential. If doubt starts the journey</p>
+<p>and faith reassures us along the way, then determi-</p>
+<p>nation carries us across the line. Great determination</p>
+<p>strengthens our resolve to find the answer to our</p>
+<p>questioning. It provides the passion and will to</p>
+<p>change.</p>
+<p>Great determination supports the saying that most</p>
+<p>breakthroughs in human endeavor require “‘ninety per</p>
+<p>cent perspiration and ten per cent inspiration.”</p>
+<p>Ta STA hes AAs aay Se is Tren aN UG 1B</p>
+<p>Great doubt springs from the mind, great faith leads to</p>
+<p>the heart and great determination provides the desire</p>
+<p>and will to finish the journey. This combination of</p>
+<p>elements provides a model for describing change: a</p>
+<p>window for looking past our conditioned selves and</p>
+<p>gaining a new insight into our psyche.</p>
+<p>Moments of change in our life can be viewed</p>
+<p>through the lens of the “three greats.” An example of</p>
+<p>how this interaction works can be gleaned from John</p>
+<p>Newcombe’s satori experience. (I have analyzed John</p>
+<p>Newcombe’s experience. He did not fill this out</p>
+<p>Great determination Great doubt</p>
+<p>* Conditioned belief: crowd has control over him</p>
+<p>(and therefore, the result). Belief results in</p>
+<p>feelings such as frustration, anger, etc.</p>
+<p>¢ Challenges this belief.</p>
+<p>¢ Method: self-talk: “... you need to purge yourself</p>
+<p>* Needed faith that another possibility existed.</p>
+<p>Needed to doubt the truth of his conditioned belief.</p>
+<p>* Faith in the possibility he could control himself</p>
+<p>in these circumstances.</p>
+<p>* Provided by the will and desire to achieve his</p>
+<p>goal. Displayed in his self-talk: “How badly do</p>
+<p>you want to win? Yes, I want to win very badly!</p>
+<p>* Result: Blew out all negative feelings.</p>
+<p>* Able to control his own feelings.</p>
+<p>* Can overcome monsters such as fear, anxiety and</p>
+<p>frustration.</p>
+<p>In looking over this process it is clear how John</p>
+<p>Newcombe initially allowed the crowd to affect his</p>
+<p>feelings and threaten his goal of winning Wimbledon.</p>
+<p>When he challenged himself through some strong</p>
+<p>self-talk he was able to transform his negative feelings</p>
+<p>and achieve his desired result. Importantly he gained</p>
+<p>the insight into the fact that he could control the</p>
+<p>monsters such as fear, anxiety, anger and frustration.</p>
+<p>In the next section we will look a little more</p>
+<p>closely at our self-talk and our possible responses to it.</p>
+<p>Why not you?</p>
+<p>Why not me?</p>
+<p>Why not you?</p>
+<p>Why not me?</p>
+<p>Luck, desire or destiny?</p>
+<p>Why not you?</p>
+<p>Why not me?</p>
+<p>Why not?</p>
+<p>Yoda: Luke. You must unlearn what you’ve learned.</p>
+<p>Luke: I can’t, it’s too big ...</p>
+<p>Yoda: That is why you fail.</p>
+<p>(From The Empire Strikes Back)</p>
+<p>Much of the way we communicate with ourselves is</p>
+<p>learnt from our parents or family members. This</p>
+<p>process begins very early in our lives so that our</p>
+<p>drives, values and morals are in place before we even</p>
+<p>realize it. It is as if we look at life through a pair of</p>
+<p>colored glasses that highlight certain facts and edit out</p>
+<p>others. This can take the form of dialog we have</p>
+<p>within ourselves. Sport is a tremendous vehicle for</p>
+<p>becoming aware of this inner conversation.</p>
+<p>Earlier we looked at how we can use great doubt as</p>
+<p>a means of challenging these conditioned beliefs. It</p>
+<p>questions our inner dialog in order to discern which</p>
+<p>inner messages are beneficial. For instance, you might</p>
+<p>tell yourself, “If you try hard enough you can do</p>
+<p>anything you want,” or “Never give in.” You may have</p>
+<p>self-doubts in the form of “I’m not good enough” or</p>
+<p>“Tl never amount to anything.” Some of these</p>
+<p>messages passing through our minds are loud, as</p>
+<p>though they are being blasted through a speaker, while</p>
+<p>others play quietly in the background, almost</p>
+<p>unnoticed.</p>
+<p>When we are under the pressure of competition</p>
+<p>this internal dialog, some of which is unconscious, is</p>
+<p>highlighted and brought to the surface. If the messages</p>
+<p>are positive and useful then we will run with them.</p>
+<p>However, any “inner messages” we are not comfortable</p>
+<p>with will have to be worked through and modified.</p>
+<p>What can bring them to our attention is an</p>
+<p>uncomfortable experience, like losing a match we</p>
+<p>were expected to win. On close reflection we realize</p>
+<p>that as the match hung in the balance our inner dialog</p>
+<p>was “You&#x27;re no good if you lose.”</p>
+<p>What are some of the possible responses to this</p>
+<p>scenario?</p>
+<p>1. I feel lousy but become determined to train</p>
+<p>harder, so I don’t lose.</p>
+<p>2. I feel lousy, fear losing and begin to lose</p>
+<p>motivation and interest in my sport.</p>
+<p>3. I feel lousy and examine my thinking to see if</p>
+<p>it needs to be changed.</p>
+<p>Let’s look at these three potential responses to</p>
+<p>losing a match and the discovery of the accompanying</p>
+<p>inner dialog, “You&#x27;re no good if you lose.”</p>
+<p>1. If we use the spur of the disappointment of</p>
+<p>losing, and the fear of the judgment of</p>
+<p>hearing “You are no good,” as a motivational</p>
+<p>force to improve our game, then we are</p>
+<p>gaining some benefit from the loss. However,</p>
+<p>we may still have, buried inside us, a tension</p>
+<p>that surfaces and undermines our game when</p>
+<p>a match is close. We may sense the voice of</p>
+<p>judgment looming and try too hard, or</p>
+<p>tighten up under the inner pressure.</p>
+<p>2. In the second scenario the enjoyment and</p>
+<p>pleasure is taken from our game and we</p>
+<p>become dispirited and give up. We may feel</p>
+<p>that this is all we can do; however, at some</p>
+<p>point similar challenges might present</p>
+<p>themselves under different circumstances. We</p>
+<p>might be just delaying the inevitable</p>
+<p>confrontation.</p>
+<p>3. This is where great doubting can come into</p>
+<p>— Who says this is true?</p>
+<p>— Where did this statement come from?</p>
+<p>— Why should you believe this statement?</p>
+<p>This leads to the process described earlier</p>
+<p>where the three “greats” operate, creating a</p>
+<p>window of change where a new perspective can</p>
+<p>be gained.</p>
+<p>One reason why this thinking can be so</p>
+<p>entrenched and difficult to change is due to the fact</p>
+<p>that it is learnt at such an early age. It has been there</p>
+<p>so long it feels part of us. It’s difficult to recall a time</p>
+<p>when it wasn’t there. We learn to respond to situations</p>
+<p>in a certain way for so long that our behavior</p>
+<p>becomes automatic.</p>
+<p>Let’s continue to use the above situation as our</p>
+<p>example because the issue of winning and losing is</p>
+<p>central to the sporting situation.</p>
+<p>Inner conversation: “If | lose I’m no good.”</p>
+<p>In examining this statement clearly we need to</p>
+<p>¢ Who says this is true?</p>
+<p>¢ Where did it come from?</p>
+<p>* On what do you base an acceptance of “If I</p>
+<p>lose I’m no good”?</p>
+<p>* Has anyone said this was the case?</p>
+<p>As small children we absorb the feelings and</p>
+<p>thinking of those around us. We soon learn what</p>
+<p>sort of behavior brings what responses. This then</p>
+<p>reinforces in our minds what to do. After a while, in</p>
+<p>certain situations we act and think in such an</p>
+<p>automatic way that we no longer consider whether</p>
+<p>there are any alternatives.</p>
+<p>This conditioned response is obvious in the animal</p>
+<p>kingdom. In India when an elephant is young, one</p>
+<p>end of a rope is tied to its leg and the other to a</p>
+<p>strong tree. The young elephant tries to break free and</p>
+<p>can&#x27;t. It feels the resistance to its efforts and eventually</p>
+<p>associates the feeling of the rope at its leg with being</p>
+<p>unable to move. After a time of reinforcing this</p>
+<p>condition, the rope can be lighter and a smaller tree</p>
+<p>can be used. Even though the elephant by this time</p>
+<p>could easily break the rope or snap the tree, it</p>
+<p>recognizes the feeling of the tug on the leg and</p>
+<p>doesn’t move.</p>
+<p>Luckily as humans we are not confined to live</p>
+<p>with our conditioning. At the time of learning these</p>
+<p>responses we may have felt as though there was little</p>
+<p>choice, but now as an adult, things can be different. By</p>
+<p>challenging our beliefs it is only a matter of time</p>
+<p>before we change.</p>
+<p>Be patient with yourself. The emotional aspect of</p>
+<p>these beliefs can take time to let go.</p>
+<p>If you have become aware of an attitude that needs</p>
+<p>some adjusting then it’s up to you to put the work in.</p>
+<p>Sometimes mental shifts occur almost instantaneously</p>
+<p>while at other times hours of rehearsal are necessary.</p>
+<p>The development of mental skills in tennis works in</p>
+<p>the same way as physical ones. Approach, them as</p>
+<p>though it were another ground stroke, say the “mental</p>
+<p>One aspect of this mental drive is the use of</p>
+<p>affirmations. These are positive statements that we use</p>
+<p>to reinforce certain messages that we need to hear.</p>
+<p>By repeating them to ourselves, either internally or</p>
+<p>externally, we challenge any ideas to the contrary that</p>
+<p>lie in our subconscious. Repetition will force the</p>
+<p>negative thinking to the surface and eventually out of</p>
+<p>our system. For instance, if you have a belief, “I am no</p>
+<p>good at sport,’ buried deep inside then to create</p>
+<p>an affirmation, “I am good at sport,’ will push the</p>
+<p>negative message to the surface to be reviewed. You</p>
+<p>may find that the old belief wasn’t true after all.</p>
+<p>If you have become aware of the need to work on</p>
+<p>a new belief what do you do? You have become aware</p>
+<p>that you need to reinforce a new belief. You’re clear as</p>
+<p>to what the old one was, so how do we develop and</p>
+<p>utilize the new one to gain maximum benefit?</p>
+<p>* Begin by writing the new belief. It could be:</p>
+<p>- Iam focused in the “here and now”</p>
+<p>- Tam an excellent tennis player</p>
+<p>* When writing it put it in the present tense, as if</p>
+<p>you already possess this attitude. For example, “I</p>
+<p>am confident” or “I relax under pressure.”</p>
+<p>¢ Write it on a card and place it where you will</p>
+<p>regularly see it. In much the same way</p>
+<p>advertising reinforces messages by constantly</p>
+<p>displaying them on the screen, we can absorb</p>
+<p>the message just by having it around us. Take</p>
+<p>a card with your message onto the tennis</p>
+<p>court with you. Have it in your bag so that</p>
+<p>you can read it at the change of ends. This</p>
+<p>can help to focus your mind. You could even</p>
+<p>try writing your new belief in poem form. I</p>
+<p>wrote “Fire dreaming” when wrestling with</p>
+<p>the idea that I could be successful.</p>
+<p>and what if in your sleep you dreamed,</p>
+<p>and what if in your dream you went to heaven</p>
+<p>and there you plucked a strange and beautiful flower</p>
+<p>and what if when you awoke you had</p>
+<p>the flower in your hand?</p>
+<p>Oh, what then?</p>
+<p>Tennis, like all areas of achievement or self-expression,</p>
+<p>has repetitious, disciplined aspects. Many hours need</p>
+<p>to be spent repeating technical aspects of strokes in</p>
+<p>order to produce them automatically. It requires</p>
+<p>dedication and commitment to reach a high level of</p>
+<p>proficiency.</p>
+<p>Many people set goals in order to succeed. They .</p>
+<p>usually map out logical, coherent steps to achieve the</p>
+<p>desired result. However, if the goal they’ve set doesn’t</p>
+<p>excite them, if it doesn’t stimulate their imagination,</p>
+<p>then achieving it will be a mechanical soul-less</p>
+<p>exercise. Others start out enthusiastic but for various</p>
+<p>reasons lose the initial enjoyment. In tennis, the stress</p>
+<p>of competing at an early age has dampened the</p>
+<p>interest of many young players. (In order to prevent</p>
+<p>burn-out occurring, the Women’s tour recently ruled</p>
+<p>that no player could become a full-time professional</p>
+<p>until they were sixteen years old.)</p>
+<p>Why is it that some people find the constant</p>
+<p>striving an obstacle to their progress while others</p>
+<p>appear to enjoy it? I believe this is where it is</p>
+<p>important to have the ability to dream and imagine</p>
+<p>and to stay in touch with the excitement they create.</p>
+<p>To instill passion, enthusiasm, creativity and</p>
+<p>spontaneity into our goal setting we need to “dream”</p>
+<p>and imagine ourselves achieving and experiencing</p>
+<p>these future results. By combining the analytical mind</p>
+<p>with the imaginative process we are calling into play</p>
+<p>both hemispheres of the brain and therefore gain a</p>
+<p>total approach. , .</p>
+<p>CUM dske DUR EON eT xOs bleMeAcGoliN E</p>
+<p>We only have to observe children at play to realize</p>
+<p>how active their imaginations are. The ability to be</p>
+<p>creative and involved in the imaginary world seems to</p>
+<p>be an inherent aspect of childhood.</p>
+<p>The capacity of children to imagine was brought</p>
+<p>home strongly to me when I was asked by one of my</p>
+<p>clients to coach his five-year-old son. This was a new challenge for me as I had coached mainly adults for</p>
+<p>the previous ten years. Not wanting to burden the boy</p>
+<p>with technical instruction I was trying to make the</p>
+<p>lesson fun, but I realized after a while that he had lost</p>
+<p>concentration and wasn’t watching the ball. I</p>
+<p>suggested to him that when the ball bounced he</p>
+<p>could yell out “Yes.” He did this happily to begin</p>
+<p>with, probably enjoying the fact that an adult had</p>
+<p>asked him to call out something rather than try and</p>
+<p>quieten him.</p>
+<p>After a few extremely loud yeses I thought it</p>
+<p>might be fun if he made up something himself to call</p>
+<p>out. I asked him whether he would like to do that.</p>
+<p>“Sure,” he said, “I’ve already thought of something.”</p>
+<p>Without asking him what he had in mind I prepared</p>
+<p>to hit the next ball. What was he going to scream?</p>
+<p>I only hoped he wasn’t going to swear at the top of</p>
+<p>his lungs.</p>
+<p>I hit the ball and waited expectantly for the</p>
+<p>bounce. I couldn’t believe it when “I’m a great tennis</p>
+<p>player” was screamed back on top note. It was an .</p>
+<p>unashamed expression of how he saw himself and an</p>
+<p>extremely powerful affirmation. There was no doubt</p>
+<p>in his mind at that moment that he imagined himself</p>
+<p>as a great tennis player. Such an image of himself</p>
+<p>created a great faith in himself.</p>
+<p>How many adults would entertain this image, see</p>
+<p>themselves this way and allow themselves to express it</p>
+<p>openly? Even those who had allowed this thought,</p>
+<p>might dismiss it very quickly with another like,</p>
+<p>‘Don’t be ridiculous!” or “Be realistic!” Our doubts</p>
+<p>wouldn&#x27;t allow us the luxury of these images.</p>
+<p>While we don’t want to deceive ourselves</p>
+<p>regarding our ability it is equally important to allow</p>
+<p>ourselves to entertain the possibilities we imagine.</p>
+<p>Wi Oe Re DDT Sy 190 S$ ESO TNE</p>
+<p>Do we stop dreaming because memories of failing to</p>
+<p>achieve our early goals are painful and stop us taking</p>
+<p>the risk to try again? Imagination and dreams magnify</p>
+<p>and highlight our feelings and so, inherent in the use</p>
+<p>of imagination is the possibility of great euphoria and</p>
+<p>deep disappointment.</p>
+<p>By letting our minds drift into the future and</p>
+<p>imagining something bigger and better for ourselves</p>
+<p>we simultaneously dredge our past experiences. If</p>
+<p>we allow ourselves to entertain the image of being</p>
+<p>a great tennis player then we will need to confront</p>
+<p>the fears and doubt that this image may disturb.</p>
+<p>These are usually the result of past experiences and</p>
+<p>memories and hold a strong negative emotional</p>
+<p>charge.</p>
+<p>To dream successfully into the future we need to confront our past, let go of the emotional baggage</p>
+<p>associated with it and replace the unwanted images</p>
+<p>with new ones. In doing this we ultimately achieve</p>
+<p>psychological freedom.</p>
+<p>LOBE. MEN DD ioe A as gas ee. Y &amp;</p>
+<p>To stay in touch with our dreams it is useful to have</p>
+<p>definite, achievable steps and sign-posts along the way.</p>
+<p>Remember the dream provides the emotional fuel for</p>
+<p>the journey, the mind creates the map. When setting these goals it is useful to break them</p>
+<p>down into manageable pieces. I’ve done this in the</p>
+<p>Dream Map (see page 73). Firstly, dream your big</p>
+<p>goal; don’t put the brakes on. Allow your imagination</p>
+<p>free rein. If something comes to mind put it down</p>
+<p>and worry about the reality of it later.</p>
+<p>If you&#x27;re working on your tennis dreams an obvious</p>
+<p>example of a “big dream” would be winning</p>
+<p>Wimbledon. For most of us, however, a big dream may |</p>
+<p>be winning our club championships. This may seem</p>
+<p>like Wimbledon to us. For the sake of the exercise</p>
+<p>we&#x27;ll use winning the club championship as our dream</p>
+<p>and follow through the necessary steps as an example.</p>
+<p>Having decided on your dream draw a symbol or</p>
+<p>image that represents it. Try and make this fun. When</p>
+<p>I suggest doing this, many people cringe and say they</p>
+<p>can’t draw. Remember to let your inner creative child</p>
+<p>out to play. The image could be something obvious</p>
+<p>like a trophy or you could represent this dream by an</p>
+<p>abstract symbol. If you are struggling to come up with</p>
+<p>an idea, you might find something appropriate in a magazine. Once you&#x27;ve decided on an image, then put</p>
+<p>it somewhere you&#x27;ll see it regularly. It might be near</p>
+<p>the bathroom mirror, on the fridge or even the</p>
+<p>dashboard of your car. Seeing it regularly will keep</p>
+<p>you connected to your dream.</p>
+<p>Now imagine some of the benefits of achieving</p>
+<p>this. Feel the excitement that these changes will bring!</p>
+<p>Before you continue, imagine the benefits of</p>
+<p>achieving it.</p>
+<p>* What would it mean?</p>
+<p>¢ Would it mean you’ve conquered many fears</p>
+<p>and doubts?</p>
+<p>¢ Would it lead to greater confidence in all</p>
+<p>areas of your life?</p>
+<p>* Would it mean that you had gained a level of</p>
+<p>fitness that you’d never attained previously?</p>
+<p>¢ Would it be an opportunity to demonstrate a</p>
+<p>deeper sense of commitment to a goal?</p>
+<p>Next, give yourself a sign-post that indicates you</p>
+<p>are on your way. Imagine or think of something that</p>
+<p>you could achieve in one month that would indicate</p>
+<p>that you are well and truly on the right path.</p>
+<p>Working our way backwards, using our example of</p>
+<p>winning the club championships, what would be a</p>
+<p>sign in one year’s time that you were on your way to</p>
+<p>achieving your dream? Could it be in this year’s club</p>
+<p>championships that you get to a further stage than</p>
+<p>before? Could it be beating a player that you’ve never</p>
+<p>beaten? We are assuming that your dream/goal will</p>
+<p>take more than one year to achieve but you might get</p>
+<p>there more quickly than you expect. If this happens</p>
+<p>obviously you would need to re-dream your goal. What could your six-month sign-post be? If you</p>
+<p>play competitive tennis already you might be perfor-</p>
+<p>ming better. If you haven’t played in a team before this</p>
+<p>would be an excellent goal to aim for.</p>
+<p>Your one-month sign may be achieving a</p>
+<p>breakthrough in your technical expertise. You may</p>
+<p>improve your second serve or get that topspin</p>
+<p>backhand you’ve always dreamt of. You may challenge</p>
+<p>yourself to get more comfortable at the net.</p>
+<p>Now to the nitty gritty of getting to your dream!</p>
+<p>This is an extremely important part of the process.</p>
+<p>What can you do this week that will contribute</p>
+<p>towards your monthly goal being achieved? Make</p>
+<p>these steps achievable. If you create something too</p>
+<p>difficult you could lose confidence or momentum.</p>
+<p>It is important to date, sign and have someone</p>
+<p>witness this sheet. Making a contract with yourself</p>
+<p>reinforces your commitment to your goals. When</p>
+<p>choosing someone to witness these goals and action</p>
+<p>steps see if you can find someone who is interested in</p>
+<p>following the process through for at least six months.</p>
+<p>What sort of person do you need? Someone who</p>
+<p>acts like a watchdog? Someone who encourages and</p>
+<p>supports you?</p>
+<p>When I first started writing, I set up a regular</p>
+<p>meeting with a friend who challenged me to keep up</p>
+<p>the action steps I’d set.-Having a definite time each</p>
+<p>week gave me a structure to work with. Get used to</p>
+<p>ticking off the steps as you go. Keep it handy so that</p>
+<p>you remind yourself of your goals. Obviously as you</p>
+<p>are setting weekly action steps you will need to spend</p>
+<p>time on it on a weekly basis. Keep your old sheets in</p>
+<p>a folder so as to be able to look back over your</p>
+<p>progress. At the end of each month reset your</p>
+<p>monthly goal and check whether you feel you are on</p>
+<p>target to meet your six-monthly one. If not modify it.</p>
+<p>Although to arrive successfully at your goals is a</p>
+<p>good feeling in itself, it may be useful, and act as an</p>
+<p>incentive, to reward. yourself for achieving your steps</p>
+<p>along the way.</p>
+<p>This contract with yourself can serve to reinforce</p>
+<p>your goals. By taking the time and effort to write it</p>
+<p>down and have someone witness it, you will start to</p>
+<p>give the dream a shape or form. What was previously</p>
+<p>a nice idea has moved from your mind into the outer</p>
+<p>The aspect of reward is optional. While achieving</p>
+<p>the goals in themselves may be reward enough for</p>
+<p>some people, others might motivate themselves by</p>
+<p>deciding that meeting certain targets is deserving of</p>
+<p>some special recognition. This can still be related to</p>
+<p>the main goals set. For instance the reward may be a</p>
+<p>new tennis racket, a tennis lesson or even a tennis</p>
+<p>retreat or weekend.</p>
+<p>Imagine some of the benefits of achieving this Dream</p>
+<p>When setting sporting goals we may reach an age</p>
+<p>where we realistically have to face the fact that we</p>
+<p>may not be a Wimbledon champion. However, we can</p>
+<p>still choose dreams and goals that challenge the same</p>
+<p>processes. We may do it in a sporting area or we may</p>
+<p>set ourselves the dream of achieving excellence in a</p>
+<p>completely different area. Inevitably we discover that</p>
+<p>the same attitudes and thoughts that prevented us</p>
+<p>from reaching our sporting goal are unearthed again.</p>
+<p>It’s never too late to be involved in the experience of</p>
+<p>When I had the idea of writing this book, I knew</p>
+<p>that it would take a great deal of persistence, firstly to</p>
+<p>actually write it and secondly to get the go-ahead</p>
+<p>from a publisher. So to keep my eye on the ball I</p>
+<p>decided to get a cover made up for the book. One</p>
+<p>that would excite me. Luckily through a chance</p>
+<p>meeting it happened. Once I got the image I wanted _</p>
+<p>I had it framed. I placed it on my office wall so that</p>
+<p>each day I reinforced the fact that this was going to</p>
+<p>happen. Two years down the track it did.</p>
+<p>However, as the publisher had a different image</p>
+<p>and goal in mind, the cover I’d visualized needed</p>
+<p>to change. Who can argue with a publisher? But, the</p>
+<p>important factor was that the process of keeping in</p>
+<p>touch with the dream helped it to become a reality.</p>
+<p>Destination where?</p>
+<p>Or land ho!</p>
+<p>Is what makes it so.</p>
+<p>n sport, the experience of satori is often | aeanaia sc by the physical feeling of relaxation.</p>
+<p>Movements are described as fluid, flowing, controlled</p>
+<p>and natural.</p>
+<p>If this is the case, then to be able to monitor and</p>
+<p>regulate the tension in your body when you play is</p>
+<p>essential. The exercises in this chapter are designed to</p>
+<p>create greater awareness of the state of your body and</p>
+<p>more choice in controlling it.</p>
+<p>When playing sport it is easy to tighten up without</p>
+<p>realizing it. Therefore it is important to regularly</p>
+<p>check whether this is happening. To tell your body to</p>
+<p>relax is beneficial. However, it is such a general</p>
+<p>instruction that you may not experience any tangible</p>
+<p>results. This is where it is useful to utilize the area of</p>
+<p>your body making contact with the racket: your hand.</p>
+<p>Think of the times you have played a “good shot,”</p>
+<p>that is it went in for a winner, and looked good to the</p>
+<p>observer. Yet you did not feel good about it yourself.</p>
+<p>Often the reason is that you don’t feel connected to</p>
+<p>the shot. You may find out, if you closely monitor</p>
+<p>your play, that there is some tension either in your</p>
+<p>arm, shoulder or hand that is blocking you from</p>
+<p>sensing the ball hitting your racket.</p>
+<p>When the ball hits your racket it vibrates and</p>
+<p>feeling this is important. It is generally not registered</p>
+<p>as a conscious sensation followed by the thought,</p>
+<p>“Oh there’s the ball hitting my racket.’ However, if the grip is squeezed too tightly then you will block</p>
+<p>out all sensation and not feel connected to the shot.</p>
+<p>Hence you don’t feel in control or good about</p>
+<p>the shot.</p>
+<p>Start this body awareness training in your practice</p>
+<p>sessions. Have someone hit a ball easily to you so that</p>
+<p>you can begin to monitor the tension at the grip</p>
+<p>without too much pressure. Notice the tension at</p>
+<p>various stages of the swing and the rally. Observe what</p>
+<p>your hand is doing at end of the backswing, when you</p>
+<p>connect with the ball, and while the ball is down the</p>
+<p>other end.</p>
+<p>Experiment with the moment of hitting the ball</p>
+<p>by using differing degrees of tension in the hand. If</p>
+<p>you are unsure whether you are tense or not, provide</p>
+<p>a contrast for yourself by tightening your hand on</p>
+<p>the racket and then releasing it. This exercise often</p>
+<p>leads you to be able to find the correct tension. By</p>
+<p>keeping some awareness on the grip you could stop</p>
+<p>your game getting “out of hand.”</p>
+<p>Try and develop the habit of consciously relaxing</p>
+<p>your grip on the racket after each shot so that you</p>
+<p>short-circuit the possibility of gradually accumulating</p>
+<p>tension. With practice you will begin to recognize</p>
+<p>more quickly the times that you start to react to some</p>
+<p>thought or feeling by gripping your racket tightly.</p>
+<p>Once you have gained this awareness, and</p>
+<p>experience the results of tightening up, you will</p>
+<p>probably be motivated to change. At the very least you</p>
+<p>now have a choice. You can either continue to hit</p>
+<p>with tension or see what happens if you relax your</p>
+<p>grip. Don’t expect yourself to “let go” every time. It -</p>
+<p>may take time to gain the confidence to trust this</p>
+<p>process. Don’t judge yourself if you do tighten up. Use</p>
+<p>the information and feedback to help next time.</p>
+<p>Be patient.</p>
+<p>At times you may feel that even though your hand</p>
+<p>is relaxed you are still tense. This is possible. I’ve</p>
+<p>included other exercises in this chapter to help deal</p>
+<p>with this. However, getting feedback on your hand</p>
+</section>
+<section class="chapter" id="sec-4">
+<h2>Part 4  ·  pp. 91–120</h2>
+<p>tension is an excellent start to gaining awareness and</p>
+<p>some control of your body.</p>
+<p>Once a player becomes aware of whether or not they</p>
+<p>are tense, they can start to assess their errors in terms of</p>
+<p>whether they were flowing or whether they had</p>
+<p>become too rigid. If they have the realization that a</p>
+<p>certain mistake was caused by bodily tension the usual</p>
+<p>response is to give themselves the mental instruction</p>
+<p>“relax and hit through the ball.’ This in itself is a useful</p>
+<p>piece of advice. However, this instruction can be taken</p>
+<p>one step further and that is by actually taking a</p>
+<p>practice swing exactly like the one you are suggesting.</p>
+<p>When taking this swing (obviously between</p>
+<p>points), it will register more strongly in your memory</p>
+<p>if it can be done with your full attention on the</p>
+<p>sensation. Therefore when called upon it will more</p>
+<p>likely resemble the type of stroke you want. Even try</p>
+<p>doing this with your eyes closed so that you cut out</p>
+<p>unnecessary stimuli. Learning to register and trust this</p>
+<p>feeling is extremely beneficial. Instead of approaching</p>
+<p>the ball with a lot of mental clutter we can just allow</p>
+<p>a particular feeling to come out.</p>
+<p>In the Zen tradition the teacher often demonstrates</p>
+<p>a skill which the disciple observes and attempts to</p>
+<p>repeat. Mistakes are seen as a necessary aspect of</p>
+<p>learning and verbal teaching is kept to a minimum.</p>
+<p>I can recall a tennis lesson where the person I was</p>
+<p>coaching was a perfectionist. After every mistake she</p>
+<p>asked, “What did I do wrong?” At first I suggested to</p>
+<p>her that she was doing well and that she just relax and</p>
+<p>swing at the ball. But she couldn’t contain herself and</p>
+<p>it wasn’t long before she inquired, “What happened</p>
+<p>I took a breath, resisting the urge to give her more</p>
+<p>information and said, “The ball went out of the lines.”</p>
+<p>“Ts that it? Is this what I’m paying you for?” she</p>
+<p>said.</p>
+<p>She looked at me a little annoyed until a faint smile</p>
+<p>formed as she realized that I was resisting the urge to</p>
+<p>clutter her mind.</p>
+<p>Another important aspect of body awareness is to feel</p>
+<p>that the dimensions of the court are part of you</p>
+<p>rather than experiencing them as something external.</p>
+<p>What I mean by this is that many players, for</p>
+<p>example, hit the ball short: all the time, as if the</p>
+<p>baseline was somehow controlling their behavior. It is</p>
+<p>as if it were saying “Don’t hit the ball near me or</p>
+<p>else.’ So we continue to hit the ball short. If we take</p>
+<p>the risk of hitting the ball long at times, we will get</p>
+<p>an internal reference point that tells us what it feels</p>
+<p>like to hit the ball deep. When we have that feeling</p>
+<p>inside we can refer to it for direction rather than be</p>
+<p>intimidated by an external element. It is necessary to</p>
+<p>have hit the ball long to have the experience and</p>
+<p>knowledge of what that feels like.</p>
+<p>rasa site oh 6 a a oe WON OY LEAVING THE OFFICE BEHIND?</p>
+<p>In the business world there is a great deal of pressure</p>
+<p>to win and not make mistakes. People are pushing</p>
+<p>themselves all the time. Their lives often become</p>
+<p>imbued with an all-pervading sense of urgency that</p>
+<p>builds up over the years until their bodies become</p>
+<p>tense under that relentless pressure.</p>
+<p>Many business people turn to tennis as a means</p>
+<p>of releasing tension and having a different focus.</p>
+<p>However, when they get on the court they can behave</p>
+<p>the same as they do in the office: driven, angry and</p>
+<p>tense. Their sport becomes an extension of the</p>
+<p>attitudes they have towards work.</p>
+<p>This was: demonstrated when I was coaching a</p>
+<p>forty-year-old businessman who had never played</p>
+<p>tennis before. For his first lesson I gave him a simple</p>
+<p>exercise — I knocked a slow ball onto his side of the</p>
+<p>court and he had to return it. He hit the ball with a</p>
+<p>reasonable stroke. I thought, “That’s not too bad.” But</p>
+<p>the ball landed out. He let out a terrible scream. I</p>
+<p>thought he’d pulled a muscle. I charged across to him</p>
+<p>and said, “What have you done?” With his back to me</p>
+<p>he replied, “Didn’t you see the ball was out!”</p>
+<p>It took me about a minute to respond. “You let out</p>
+<p>that scream because the shot went out?” I asked.</p>
+<p>“Yes,” he said. “What you showed me was so</p>
+<p>bloody simple and I couldn’t do it.”</p>
+<p>I hit him a few more balls and he treated each one</p>
+<p>like a live hand grenade. I started to sweat. I thought, “If</p>
+<p>he’s not going to have a heart attack in the next few</p>
+<p>minutes, I will.” Eventually I stopped the lesson, walked</p>
+<p>over to him and said, “C’mon, let’s go for a walk.” As we</p>
+<p>walked I asked him how he was feeling at the moment.</p>
+<p>He replied that he was feeling tense and frustrated. “Is</p>
+<p>this what you want from your leisure time?” I asked.</p>
+<p>Although this person’s desire to play good tennis</p>
+<p>could not be questioned, what was in doubt was the</p>
+<p>value derived from being under that constant level of</p>
+<p>pressure not to make mistakes.</p>
+<p>On a physiological level constant arousal is bad for</p>
+<p>you. We&#x27;ve all evolved to cope with brief periods of</p>
+<p>arousal, such as when somebody threatens us. But in</p>
+<p>the modern world a lot of adrenalin-producing</p>
+<p>stresses go on day after day. If you’re in a permanent</p>
+<p>state of fight you can find yourself feeling angry or</p>
+<p>irritable much of the time. It is important to ask</p>
+<p>yourself, “Why did you want to play tennis in the first</p>
+<p>place?” Make a list of what you want out of this</p>
+<p>recreation time.</p>
+<p>The list I made with the businessman went</p>
+<p>1. I need some regular exercise. I sit at a desk all</p>
+<p>week.</p>
+<p>2. Tennis is a good social game and I can play it</p>
+<p>with a few mates.</p>
+<p>3. I need to unwind after a week of constant</p>
+<p>deadlines and challenges.</p>
+<p>4. I need to have a bit of fun.</p>
+<p>If one of the benefits you want from your tennis 1s</p>
+<p>to relax physically and mentally then it is important to</p>
+<p>learn some techniques to achieve that.</p>
+<p>Two major areas of focus can be used to achieve a</p>
+<p>more relaxed approach to your game and to leave the</p>
+<p>office behind.</p>
+<p>1. Learn to scan your body for any tension</p>
+<p>during your game.</p>
+<p>Before you serve or receive serve, do a quick</p>
+<p>scan of your body. Notice whether you are</p>
+<p>clenching your jaw, whether your shoulders</p>
+<p>feel tight and if your breathing feels</p>
+<p>restricted. If so then simply instruct yourself</p>
+<p>to drop your shoulders, relax your jaw and</p>
+<p>take a couple of deep breaths. This will help</p>
+<p>you flow a little more and reduce the strain</p>
+<p>placed on your body. As mentioned earlier,</p>
+<p>monitor how you are gripping your tennis</p>
+<p>racket. Through this method you get instant</p>
+<p>feedback about your body and state of mind.</p>
+<p>. Give yourself a focus that keeps your</p>
+<p>attention in the present.</p>
+<p>During your recreation time you may find</p>
+<p>that your mind continually wanders back to</p>
+<p>the office. You may find yourself thinking</p>
+<p>about details of meetings, contracts, etc. If you</p>
+<p>realize this, then one excellent way to refocus</p>
+<p>yourself is to give yourself the challenge of</p>
+<p>watching and seeing each ball during the</p>
+<p>match. The ball can act as a psychological</p>
+<p>“circuit breaker” to break the loop of work-</p>
+<p>related thoughts.</p>
+<p>One company director I coached always played with</p>
+<p>his teeth clenched. This was extremely obvious when</p>
+<p>he served. He would walk up to the line to serve, take</p>
+<p>a breath, hold it, quickly go red in the face and clamp</p>
+<p>his teeth together. I wondered whether he realized he</p>
+<p>was doing this so I asked him to observe on his next</p>
+<p>serve what was happening with his jaw. “Wow,” he</p>
+<p>said, “I’m sure locking that tight!” During the next</p>
+<p>serve he tried to keep it relaxed while he hit the ball.</p>
+<p>He reported that it felt a little strange at first but as he</p>
+<p>got used to it, it started to feel comfortable. What</p>
+<p>really surprised him, however, was the fact that his</p>
+<p>serve seemed to become more reliable.</p>
+<p>Now that he was aware of this he used this moment</p>
+<p>as a checkpoint to relax his jaw and take a few breaths.</p>
+<p>One week he reported back to me on his weekly sales</p>
+<p>meeting. “I normally get wound up and eventually</p>
+<p>blow up at someone or something. However, today</p>
+<p>I noticed early in the meeting that I was clenching</p>
+<p>my jaw and holding my breath. I did the same as on</p>
+<p>the tennis court, I relaxed and took a couple of deep</p>
+<p>breaths. The meeting proceeded without a hitch. I</p>
+<p>think everyone else in the meeting became nervous,</p>
+<p>they were wondering what was wrong with me!”</p>
+<p>To derive.maximum benefit from your tennis game</p>
+<p>it is important that you leave the court feeling</p>
+<p>refreshed, both mentally and physically. This in turn,</p>
+<p>will lead to greater satisfaction and productivity back</p>
+<p>in the work-place.</p>
+<p>UNO BE Sf AC Ge ee aed Oe ATO Da es</p>
+<p>We have all heard of talented people in sport who had</p>
+<p>great ability but were continually dogged by injuries</p>
+<p>to the point where it forced them to retire</p>
+<p>prematurely. Rather than just passively accept there is</p>
+<p>nothing that can be done to heal the problem (which</p>
+<p>may be true) I believe it is important to explore how</p>
+<p>the attitude of the player may have contributed to the</p>
+<p>injury in some way.</p>
+<p>One of my clients had a very bad case of tennis</p>
+<p>elbow. The initial treatment was purely physical. It</p>
+<p>was a combination of physiotherapy and rest followed</p>
+<p>by an exercise program to strengthen and increase</p>
+<p>mobility in the appropriate muscles and joints.</p>
+<p>Having done this he got the OK to return to play.</p>
+<p>Within three weeks his tennis elbow had returned. It</p>
+<p>was extremely frustrating as he was just beginning</p>
+<p>to find form and was looking forward to the club</p>
+<p>championships.</p>
+<p>His choices seemed to be to continue playing and</p>
+<p>suffer or not play at all. Would it be worthwhile</p>
+<p>going through rehabilitation and all the work it</p>
+<p>entailed if the condition kept recurring? After all</p>
+<p>hadn’t he already tried everything? When we spoke</p>
+<p>about it I suggested there was the possibility of a</p>
+<p>third choice. Was his body trying to get a message to</p>
+<p>him that he needed to look at his technique or his</p>
+<p>mental approach to the game? What could that</p>
+<p>message be?</p>
+<p>It is possible, for instance, that he was getting too</p>
+<p>fired up, too driven, and as a result was putting too</p>
+<p>much strain on his body. This excess adrenalin and</p>
+<p>drive may result from thoughts such as “I’m not good</p>
+<p>enough” or simply from a fear of losing and what that</p>
+<p>means to his self-image. It won&#x27;t be until this attitude</p>
+<p>or doubt is challenged that the body fully recovers. He</p>
+<p>might have an over-emphasis of the harder, Yang</p>
+<p>element and need to balance it. Full recovery could</p>
+<p>depend on a combination of physical therapy and a</p>
+<p>change in mental approach.</p>
+<p>He seemed keen to explore this option and found</p>
+<p>that there were many times when his body was under</p>
+<p>unnecessary strain. Over time, by modifying his game</p>
+<p>and continuing with his exercises, he made a full</p>
+<p>recovery.</p>
+<p>Today, perhaps more than at any other time, it is</p>
+<p>becoming accepted that the right mental approach has</p>
+<p>a bearing on recovery from disease. Sporting injuries</p>
+<p>are no exception. So next time you have an injury, as</p>
+<p>part of the rehabilitation process, take time to explore</p>
+<p>the possibility of whether the injury is your body’s</p>
+<p>way of trying to tell you something about your</p>
+<p>approach to the game. It may be a case of having to</p>
+<p>accept there is nothing you can do to prevent the</p>
+<p>injury recurring or else you may be able to save</p>
+<p>yourself a great deal of “rotten luck.”</p>
+<p>LUlSSaTr BPN eTHO!: YOOU Riek Beast</p>
+<p>One of the more neglected areas of tennis is the use</p>
+<p>of the time between points. It is very easy to rush</p>
+<p>between points without even realizing it. This is</p>
+<p>where it can be very useful to give yourself a part of</p>
+<p>the body to focus on so that you can keep this under</p>
+<p>~ control.</p>
+<p>The part of the body I find,most useful to focus on</p>
+<p>is the feet. Begin by listening to the sound your feet</p>
+<p>make as you walk back to position. By simply placing</p>
+<p>your attention on this sound you will begin to regulate</p>
+<p>your speed. If you feel you are rushing, experiment</p>
+<p>with consciously walking more slowly. Keep listening</p>
+<p>to your feet hit the court as you do this.</p>
+<p>Another reason that tuning in to your feet can be</p>
+<p>useful is if you are thinking too much. If you have so</p>
+<p>many thoughts running around in your brain that you</p>
+<p>are becoming distracted or confused then by listening</p>
+<p>to the sound of your feet you are “grounding” your</p>
+<p>energy and taking the excess mental energy away.</p>
+<p>This will result in a quiet mind that is free to</p>
+<p>concentrate on the important and appropriate</p>
+<p>elements of the game.</p>
+<p>we PROGRES SEVE “RELAX A TP O°&#x27;N</p>
+<p>This technique involves taking your attention to each</p>
+<p>section of your body in order to identify where your</p>
+<p>tension is located. The first objective is to find out</p>
+<p>what is there without trying to change it. Once this</p>
+<p>has been achieved, then by tightening and letting go</p>
+<p>the various muscle groups we can bring about a</p>
+<p>greater sense of relaxation and ease.</p>
+<p>To do this exercise it would be useful to have</p>
+<p>someone read the text for you (see page 92) rather</p>
+<p>than try and play the role of the “relaxer and relaxee.”</p>
+<p>Try recording it so that you have it for future use. If</p>
+<p>it’s difficult to get someone to do this, then read it</p>
+<p>onto tape for yourself. Practice reading it a few times</p>
+<p>before you record it so that you get a feel for the right</p>
+<p>times to pause. Feel free to add or delete pieces as you</p>
+<p>become more acquainted with the process.</p>
+<p>One important point to keep in mind is that when</p>
+<p>you are listening to this tape, do not force yourself to</p>
+<p>follow the sequence. If at any stage you find your</p>
+<p>mind wandering off, let it go. When your attention</p>
+<p>returns just pick up the tape at the point it 1s up to. If</p>
+<p>you try and make yourself listen and stick rigidly to</p>
+<p>the tape you will create more tension than relaxation.</p>
+<p>Now that you have your tape, or your friend, it’s</p>
+<p>time to give it a try. Find a quiet place where, you can</p>
+<p>lie down comfortably and not be disturbed.</p>
+<p>Close your eyes. Give yourself a few moments to adjust to</p>
+<p>the fact you are lying down and begin your relaxation.</p>
+<p>Now become aware of your body in a general sense. Does</p>
+<p>it feel heavy or light? Does it feel tired or energetic? Are</p>
+<p>there any strong sensations? Observe them without trying</p>
+<p>to understand them or work them out.</p>
+<p>Now observe your breathing. Is it fast or slow? Is it deep or</p>
+<p>shallow? Is it in rhythm or is it labored? Listen to the sound</p>
+<p>it makes when you breathe out. Do this for a couple of</p>
+<p>minutes. If you become aware of your mind wandering just</p>
+<p>bring your attention back to hearing your breath.</p>
+<p>Now we will start to take our awareness through the body</p>
+<p>in a very gradual, systematic way.</p>
+<p>Starting at your face and head, become aware of any</p>
+<p>tightness or tension around your jaw. If you find any, allow</p>
+<p>the jaw to drop open a little and relax. Check behind your</p>
+<p>eyes, cheeks, chin and scalp for any further tightness and</p>
+<p>have the idea of letting it go. Remember, relaxation often</p>
+<p>starts as an idea and later becomes a feeling or experience.</p>
+<p>Move your attention down to your neck. Notice how it</p>
+<p>feels. If you become aware of tension then gently have the</p>
+<p>idea of relaxing it. Move your awareness down the left side</p>
+<p>of the neck, then the right. Continue through to your</p>
+<p>shoulders and slowly down your arms. Imagine that some</p>
+<p>soothing warm water is running through the muscles and</p>
+<p>gently breaking up tension.</p>
+<p>Once you&#x27;ve done this, then with your right hand, slowly</p>
+<p>make a fist, hold the tension for the count of seven, then</p>
+<p>release it. Now move your attention to your left hand.</p>
+<p>Slowly make a fist with it, hold it for the count of seven,</p>
+<p>then release it.</p>
+<p>Become aware of the movement of your chest and stomach</p>
+<p>as you breathe. Notice the speed as it moves up and down.</p>
+<p>Once you’ve done this, on the next three breaths allow</p>
+<p>yourself to sigh on the out breath. Imagine your breath is</p>
+<p>like the release valve on a pressure cooker. With each sigh</p>
+<p>you are freeing any build up of tension.</p>
+<p>Move your awareness down to your lower back and hips.</p>
+<p>Observe any tightness. Imagine all the muscles relaxing and</p>
+<p>softening. Feel your body sink further into the couch or floor.</p>
+<p>Move slowly down your right leg. From the upper thigh</p>
+<p>move to the area behind the knee. Take your attention</p>
+<p>through to the calf, the ankle, the foot and into the toes. Move</p>
+<p>your attention to your left leg. From the upper thigh move</p>
+<p>slowly down to the knee. Relax the area behind the knee.</p>
+<p>Take your attention through to the calf, ankle, foot and toes.</p>
+<p>Having moved through all of your body, allow a little time</p>
+<p>for yourself to drift without any instruction.</p>
+<p>At the end of this time gently bring your attention back to</p>
+<p>your breathing. Motice it without trying to change it.</p>
+<p>Observe the sounds you can hear around you. Slowly begin</p>
+<p>to move your hands and feet. Then open your eyes. Notice</p>
+<p>how your body feels. Slowly begin to move your hands and</p>
+<p>feet. There’s no need to rush. Allow yourself as much time as</p>
+<p>you need. Open your eyes when you feel ready. Lie there for</p>
+<p>a while so that there is a smooth transition back into activity.</p>
+<p>By practicing this you will become more aware of your</p>
+<p>body and where it holds tension. This will enable you to</p>
+<p>identify more quickly when you are beginning to become</p>
+<p>tense on the court, and thus be able to respond before the</p>
+<p>In her book, Make the Most Of Your Best, Dorothy</p>
+<p>Sarnoff provides a tip on how to control nerves before</p>
+<p>public presentations. She suggests tightening the</p>
+<p>muscles of your Vital Triangle. This area of the body is</p>
+<p>formed by tracing the outline of the ribs from the</p>
+<p>point at the solar plexus, down each side of the</p>
+<p>ribcage as it splays and then drawing a straight line</p>
+<p>across at the widest separation.</p>
+<p>By exhaling and drawing the muscles back as hard</p>
+<p>as you can, you can put the brakes on any out-of-</p>
+<p>control nervousness.</p>
+<p>If you are someone who gets overly nervous before</p>
+<p>a tennis match try practicing this before you go onto</p>
+<p>the court. It could also be useful to try at the change</p>
+<p>of ends.</p>
+<p>MAS Te B65 2 AND DiS CPEs si Ol i” ik Se a</p>
+<p>OF CH ACL EN’ GE The Zen masters were often notorious for their</p>
+<p>methods of challenging their disciples’ determination</p>
+<p>to hang on to outmoded beliefs. To help them break</p>
+<p>free from their conditioning, one technique involved</p>
+<p>giving the young monks riddles, or koans, to solve.</p>
+<p>A well-known example of a koan is Hakuin’s</p>
+<p>“What is the sound of one hand clapping?” The</p>
+<p>disciple was meant to go off and solve this</p>
+<p>conundrum.</p>
+<p>The student is often brought to the point where he</p>
+<p>feels stupid, as though he knows nothing. In searching</p>
+<p>for the answer he realizes how much of his thinking is</p>
+<p>conditioned rather than known.</p>
+<p>Zen masters were often severe disciplinarians who</p>
+<p>were known to give monks a whack on the shoulder</p>
+<p>_ for moving needlessly during meditation. The disciple</p>
+<p>had to place great trust and faith in their teacher. This</p>
+<p>“shoulder tap” was deemed to. be necessary when the</p>
+<p>pupil’s attention had wandered off or when they were</p>
+<p>drifting off to sleep. The student needed to believe</p>
+<p>that the master or Roshi was awakening them for</p>
+<p>their own good.</p>
+<p>The role of the tennis coach can parallel that of the</p>
+<p>Zen master, although I’m not sure how the Zen</p>
+<p>master’s discipline would work between tennis coach</p>
+<p>and pupil. Imagine asking a young tennis player to</p>
+<p>come up with an answer to “What sound does the</p>
+<p>tennis ball make while it moves in the air?” or giving</p>
+<p>him a sharp whack with a tennis racket when a</p>
+<p>mistake is made!</p>
+<p>C A NTS?</p>
+<p>It is interesting to note that many of the leading</p>
+<p>figures in tennis have enlisted the aid of an older adult</p>
+<p>in order to direct, encourage and steer their careers.</p>
+<p>Do the players, under the constant pressure of battle</p>
+<p>look for and replace their natural parent with a</p>
+<p>surrogate one, their coach?</p>
+<p>Anna Kounikova Nick Bollitieri -</p>
+<p>This guidance from an older “parent” is not</p>
+<p>something new to elite tennis. In the past Harry</p>
+<p>Hopman steered the careers of many young</p>
+<p>Australians (Laver, Hoad, Rosewall, et al.). His</p>
+<p>direction entailed the discipline and authority often</p>
+<p>seen as the domain of parenting. He appeared to have</p>
+<p>some of the qualities associated with Zen masters who</p>
+<p>were renowned for their fierce, tigerish personalities.</p>
+<p>Even today, Australian tennis players are still looking</p>
+<p>for direction from the “tribal elders” with Ray</p>
+<p>Ruffels, Bob Carmichael, John Newcombe and Tony</p>
+<p>Roche still actively involved in players’ lives.</p>
+<p>The coach can provide new insights and turn up the</p>
+<p>volume on the new communication we need to hear.</p>
+<p>The crucial part of this process occurs when the new</p>
+<p>message ultimately becomes internalized and part of</p>
+<p>_ the pupil’s inner communication. This internalization</p>
+<p>usually happens over a period of time after the pupil</p>
+<p>has heard the coach repeat. the instruction many</p>
+<p>times. After a while the coach’s voice becomes the</p>
+<p>pupil’s. This leads to individual freedom and self-</p>
+<p>reliance, the result of a healthy and_ successful</p>
+<p>relationship between coach and player. The coach</p>
+<p>then fills the role of offering insight, support and</p>
+<p>motivation without strings attached.</p>
+<p>When we take responsibility for our inner dialog -</p>
+<p>we are on the way to becoming masters of our own</p>
+<p>destiny. Our beliefs have been consciously chosen and</p>
+<p>accepted. At this point we have become our own</p>
+<p>person and have inside us our own Master Coach.</p>
+<p>ME ET) TOME IENGN BARC On Aa Cou</p>
+<p>While it is useful to have a coach or someone we trust</p>
+<p>to ask for advice, it is also important to be able to trust</p>
+<p>our own instincts and intuition.</p>
+<p>By developing an inner sense or image of our own</p>
+<p>wisdom we will feel more confident in making</p>
+<p>important decisions. This imagining or visualization is</p>
+<p>designed to get you in touch with your problem-</p>
+<p>solving ability as well as further develop your ability</p>
+<p>to imagine.</p>
+<p>Begin visualizing by spending the necessary time</p>
+<p>you need to relax. Remember any visualization exer-</p>
+<p>cises work better when you feel relaxed.</p>
+<p>Earlier this century a leading psychologist, Carl</p>
+<p>Jung, coined the term “archetype.” Archetypes are</p>
+<p>patterns of human development that are universal and</p>
+<p>exist in all people, in all cultures at all periods of</p>
+<p>history. They are eternal images that attract, convince</p>
+<p>and fascinate humans. Some examples are the Hero,</p>
+<p>the Witch, the King or Queen, and the one that is the</p>
+<p>focus of this exercise, the Wise Man or Woman.</p>
+<p>Imagine you are on a tennis court in the country. The</p>
+<p>court is nestled into the bottom of a mountain. Spend</p>
+<p>some time on the court hitting up. Enjoy this time. Don’t</p>
+<p>make it competitive. Create very comfortable</p>
+<p>circumstances. Make it your ideal conditions. Notice how</p>
+<p>you are hitting the ball. Swing easily without forcing</p>
+<p>anything.</p>
+<p>After you&#x27;ve finished playing, sit by the side of the court</p>
+<p>and check whether there is any aspect of your game you</p>
+<p>are not happy with. If you find that something is bothering</p>
+<p>you and you don’t have a solution then it is time to find</p>
+<p>the Wise Old Tennis Coach.</p>
+<p>You&#x27;ve heard that in a cave on the mountain-side lives a</p>
+<p>wise old coach. So you head off in search of him or her. You</p>
+<p>climb steadily up the path winding along the edge of the</p>
+<p>mountain. Every now and then pause to get a view of your</p>
+<p>surroundings. You move on and round a corner. In the</p>
+<p>distance you see the outline of a cave. You come to the</p>
+<p>entrance. You enter. Inside you find a person whom you</p>
+<p>instinctively trust and with whom you feel comfortable. You</p>
+<p>introduce yourself and inform this person of the reason for</p>
+<p>your visit. You voice your problem. Now listen carefully for</p>
+<p>their answer. Once you feel clear that you understand the</p>
+<p>message thank them and head back to the court.</p>
+<p>If your question was specifically connected to your</p>
+<p>game and you feel like some more imaginary practice</p>
+<p>it might be useful to see yourself walk onto the court</p>
+<p>and rehearse whatever direction you&#x27;ve been given. If</p>
+<p>not take a little time, then open your eyes.</p>
+<p>Now write down ona piece of paper the wise old coach’s</p>
+<p>response. Depending on the question asked and the advice</p>
+<p>you received your follow-up plan can be quite different.</p>
+<p>If your problem was about some mental aspect of your</p>
+<p>game like “How can I overcome nervousness during a</p>
+<p>match?” your plan might involve the use of affirmations or</p>
+<p>repeated visualizations. If it was a technical problem, devise</p>
+<p>a practice routine in order to make the necessary changes.</p>
+<p>If you have a coach it might be useful to talk over the</p>
+<p>response you received to your question so that you can</p>
+<p>work together on the change.</p>
+<p>t is almost impossible to play a rhythmical shot if [ee breath is out of rhythm. Well, what is rhythm?</p>
+<p>When we hear the word “rhythm” our first</p>
+<p>thoughts are often of music or dance. It is no wonder</p>
+<p>it has been described as movement with a beat. It is</p>
+<p>usually experienced in the body as a sense of ease and</p>
+<p>flow where our timing is “just right.” Yet, for</p>
+<p>something sounding so natural it does seem to have</p>
+<p>an elusive quality to it. How often have we heard</p>
+<p>people say that they “just lost their rhythm” or “their</p>
+<p>rhythm just deserted them,” as if they were powerless</p>
+<p>to do anything about it because it was beyond their</p>
+<p>control.</p>
+<p>A clue to the rediscovery of our rhythm lies in its</p>
+<p>description as movement with a beat. Most people report</p>
+<p>that they lose their rhythm when they become tense</p>
+<p>or tired and their movements develop an element of</p>
+<p>strain. This tightens the muscles and restricts their flow</p>
+<p>of breath.</p>
+<p>The breath becomes uneven and loses its steady</p>
+<p>rhythm. This process may happen so gradually over a</p>
+<p>period of time that it goes by unnoticed and hence</p>
+<p>the sense of its disappearing and being lost.</p>
+<p>One key to restoring rhythm lies in the ability</p>
+<p>firstly, to notice that our breathing has been affected</p>
+<p>and secondly, to be able to do something about it.</p>
+<p>Later in this chapter I will look at specific techniques</p>
+<p>designed to gain greater awareness and control of the</p>
+<p>breath.</p>
+<p>The use, control and awareness of breathing is of</p>
+<p>major importance.in Kung Fu and the Zen disci-</p>
+<p>plines. In the martial arts all techniques are initially</p>
+<p>practiced with normal breathing. However, once some</p>
+<p>technical competency is achieved the breath is</p>
+<p>directed from a place in the body called the Dantian.</p>
+<p>The Dantian is located approximately three inches</p>
+<p>(or 7.5 centimeters) below the navel. The purpose of</p>
+<p>drawing the breath from there is to add power and</p>
+<p>strength to each strike. The breath and the strike are</p>
+<p>coordinated by drawing the breath in from the</p>
+<p>Dantian, as the fist is taken back, and then releasing</p>
+<p>breath and fist together.</p>
+<p>The same process could be utilized on the tennis</p>
+<p>court when playing a ground stroke. To begin with, practice the following process without the ball.</p>
+<p>Draw your racket back and at the same time, inhale</p>
+<p>your breath. Then, as you follow through, release your</p>
+<p>racket and breath together. Repeat this process until</p>
+<p>you feel your breath and racket are working together</p>
+<p>easily. Once you can comfortably coordinate the two</p>
+<p>add the ball to the process.</p>
+<p>As you begin to hit the ball in this manner you</p>
+<p>may notice the extra power that you can generate by</p>
+<p>combining the timing of your swing with your</p>
+<p>breath. If you have been hitting forcefully through</p>
+<p>physical effort alone this method of hitting will help</p>
+<p>to reduce the strain on your body. You may notice</p>
+<p>that you have already been doing this without</p>
+<p>realizing. Just keep on doing it. If it is new to you,</p>
+<p>then like anything else you practice, over a period of</p>
+<p>time it will become an automatic part of your game.</p>
+<p>In Eastern culture meditation is seen as a normal and</p>
+<p>essential part of life. However, as technology has</p>
+<p>enabled information and lifestyle to be exchanged</p>
+<p>rapidly around the planet, new terms such as “medita-</p>
+<p>tion” have become recognizable in the West.</p>
+<p>¢ What is meditation?</p>
+<p>¢ What are its benefits?</p>
+<p>* What forms of meditation are there?</p>
+<p>* Which sportspeople practice it?</p>
+<p>To break down the mystique the word</p>
+<p>“meditation” held in the West, and the feeling that it</p>
+<p>worked only if you believed in it, meditation has been</p>
+<p>subjected to stringent scientific research. Some of the</p>
+<p>health findings during and after meditation are:</p>
+<p>* Drop in oxygen consumption to greater levels</p>
+<p>than the deepest part of sleep</p>
+<p>* Biochemical responses in the body the</p>
+<p>POReARG Ti CARED)?</p>
+<p>One interesting approach to meditation used in the</p>
+<p>East that parallels “watching the ball” involves the use</p>
+<p>of a mandala. The word “mandala” means magic circle</p>
+<p>or sphere in Sanskrit, and contemplation on one is</p>
+<p>said to bring about a deep feeling of inner peace.</p>
+<p>Circles or mandalas feature in Zen paintings and</p>
+<p>represent enlightenment and the striving for human</p>
+<p>perfection. Seen in this light, a tennis ball could be</p>
+<p>used as a moving mandala and a vehicle for self-</p>
+<p>discovery.</p>
+<p>Another form of meditation that complements the</p>
+<p>process of “watching the ball” involves the use of a</p>
+<p>mantra, or sound, as a means of quieting mental</p>
+<p>activity. The process is similar to watching the ball</p>
+<p>bounce except instead of using a visual object (ball) as</p>
+<p>a focus to let go of thoughts a sound (mantra) is used.</p>
+<p>The mantra is gently repeated internally and produces</p>
+<p>a unique state where the mind is deeply rested while</p>
+<p>still remaining alert. With regular use the mind</p>
+<p>naturally maintains this experience for longer periods.</p>
+<p>The benefits of an alert restful mind are obvious to</p>
+<p>any sportsperson.</p>
+<p>Champions such as Martina Navratilova, Billie</p>
+<p>Jean King and Gigi Fernandez have all learnt to</p>
+<p>meditate, and obtained benefits from the practice.</p>
+<p>Meditation is of benefit to players at all levels.</p>
+<p>Regardless of the standard, as we have discussed</p>
+<p>‘earlier, there will always be distractions, thoughts or</p>
+<p>fears to contend with and so there is always a place</p>
+<p>for a technique that helps you to relax and focus. To</p>
+<p>actually meditate before you go on the court means</p>
+<p>that you have already dealt with many of the</p>
+<p>distracting thoughts and feelings.</p>
+<p>TUME*’ TO MEDIULTATE?</p>
+<p>Ideally, try to meditate twice a day, before breakfast</p>
+<p>and dinner. Relaxing on a full stomach is a little like</p>
+<p>trying to sleep immediately after finishing the evening</p>
+<p>meal. It can be a little uncomfortable.</p>
+<p>The other time it may be useful to meditate is if</p>
+<p>you are having trouble sleeping. If you have difficulty</p>
+</section>
+<section class="chapter" id="sec-5">
+<h2>Part 5  ·  pp. 121–150</h2>
+<p>getting to sleep or you wake up in the night and</p>
+<p>cannot get back to sleep, then it may be useful to use</p>
+<p>meditation to help you drift off.</p>
+<p>The most important thing to remember is that, like</p>
+<p>everything else we do, the more regular you are in</p>
+<p>your practice of meditation the better you will</p>
+<p>become. If you are only trouble-shooting difficult</p>
+<p>moments you will probably have limited success. Try</p>
+<p>getting into the habit of meditating as a preventive</p>
+<p>measure rather than as a response to acute pressure,</p>
+<p>tension or stress.</p>
+<p>SHO WED bo ME DHSTATE iMoOMoE DPA T ELL. YB EF O&#x27;R-E COM PET HN G?</p>
+<p>I don’t believe there is a black-and-white answer</p>
+<p>to this question. Each sportsperson approaches</p>
+<p>competition with their own particular attitudes and</p>
+<p>temperament. Some people find it necessary to be</p>
+<p>quiet and to remove themselves from others in order</p>
+<p>to maintain their composure and focus. More</p>
+<p>extroverted types may find they relax more by being</p>
+<p>in the company of others.</p>
+<p>You may need to experiment a little to discover</p>
+<p>your ideal pre-match meditation time.</p>
+<p>WHERE | MEDITATE?</p>
+<p>If you share a house with others it is often useful to</p>
+<p>let them know that you are practicing your</p>
+<p>meditation so that there is little likelihood of being</p>
+<p>disturbed.</p>
+<p>Although it is not essential, some people find it</p>
+<p>useful to meditate in the same place each time.</p>
+<p>Consider taking the phone off the hook or putting on</p>
+<p>the answering machine. Remember, this is your time.</p>
+<p>If you treat it as precious others will soon get the same</p>
+<p>idea.</p>
+<p>we My T HS ? o&#x27;r TR ED PTR T Of</p>
+<p>Many people start meditation but after a period of</p>
+<p>time conclude, “I can’t do it, I can’t stop my mind</p>
+<p>from having thoughts!” or “I can’t do it, I don’t feel</p>
+<p>These statements expose two of the myths</p>
+<p>regarding meditation.</p>
+<p>Firstly, many people consider that for meditation to</p>
+<p>be successful they must empty their mind of all</p>
+<p>thoughts. When they close their eyes and find that</p>
+<p>thoughts keep coming, much like a river keeps</p>
+<p>flowing, they decide that unfortunately they can’t do</p>
+<p>it. However, if we accept that thoughts are a natural</p>
+<p>part of us, and include them in our experience of</p>
+<p>meditation, we can relax more easily. Absence of</p>
+<p>thoughts may be related to the goal of meditation but</p>
+<p>thoughts, themselves, are accepted as part of the</p>
+<p>journey.</p>
+<p>The second common myth regarding meditation is</p>
+<p>that during or after it we will always feel relaxed and</p>
+<p>that we will walk around with a smile on our face and</p>
+<p>be perturbed by nothing. These expectations are</p>
+<p>unrealistic. In fact, when we meditate we may end up</p>
+<p>confronting many of our past beliefs that need</p>
+<p>transforming. This may lead to feelings of tension or</p>
+<p>discomfort, in the short term, as we learn to let go of</p>
+<p>the outmoded beliefs. So, even though it can be a</p>
+<p>passive activity it can also be confrontational.</p>
+<p>Finally, you may have begun looking for a means of</p>
+<p>meditating as a response to some difficulty in your</p>
+<p>game or life. At this point you are probably anxious to</p>
+<p>get immediate results, and you may. However, with</p>
+<p>such high expectations and hopes it is easy to end up</p>
+<p>disappointed. Try to adopt an attitude of patience</p>
+<p>when you begin. It may take time to turn around long</p>
+<p>periods of stress. Try to approach the early stages as an</p>
+<p>experiment, using yourself as the test case. If you</p>
+<p>persevere, what may have started as a discipline to</p>
+<p>improve performance or alleviate pain may turn into</p>
+<p>an interesting adventure discovering more about your</p>
+<p>body, mind and emotions. You may even rediscover</p>
+<p>that child-like pleasure that comes from feeling good</p>
+<p>for no particular reason.</p>
+<p>Next time you head off to practice ask yourself</p>
+<p>whether it would be useful to add meditation to your</p>
+<p>arsenal of shots.</p>
+<p>Awareness of the breath is a fundamental aspect of</p>
+<p>Zen meditation. One Zen practice that combines</p>
+<p>movement and breath awareness is called kinhin. It is</p>
+<p>interspersed with Zazen in order to shake off the</p>
+<p>sluggishness and stiffness that can be experienced by</p>
+<p>long periods of sitting. It is usually used only for</p>
+<p>periods of five minutes at a time.</p>
+<p>One aspect of kinhin is promoting awareness of</p>
+<p>the breath as you walk. While walking the breathing</p>
+<p>can be coordinated with the stepping, counted or</p>
+<p>merely just observed. This helps us to maintain some</p>
+<p>mental separation from our thoughts and feelings,</p>
+<p>and could be carried out on the tennis court while</p>
+<p>walking to position between points. This would be</p>
+<p>useful in a tennis match as it would help prevent a</p>
+<p>player from becoming carried away or overcome by</p>
+<p>the match.</p>
+<p>An extremely valuable time to gain awareness of your</p>
+<p>breathing is at the change of ends. Probably the most</p>
+<p>memorable instance of this occurred in the 1975</p>
+<p>Wimbledon final. The late Arthur Ashe used this time</p>
+<p>to clear and refocus his mind. It obviously helped</p>
+<p>because he went on to win the final against the</p>
+<p>heavily favored Jimmy Connors.</p>
+<p>This is an example of short meditation (remember</p>
+<p>it can be done at home or office as well as on the</p>
+<p>court).</p>
+<p>1. Sit, close your eyes.</p>
+<p>2. Consciously place your feet on the ground.</p>
+<p>Then relax your jaw, shoulders and hands.</p>
+<p>You could do this by slowly forming a fist</p>
+<p>with either hand, holding it for the count of</p>
+<p>five, then releasing it.</p>
+<p>3. Now take your attention to your breath and</p>
+<p>listen to the sound of ten exhalations. Count</p>
+<p>each one. Don’t jump straight up, but take a</p>
+<p>few seconds before you open your eyes and</p>
+<p>begin to move. Don’t underestimate the value</p>
+<p>of this time. Remember in John Newcombe’s</p>
+<p>satori experience how at the change of ends he “actually felt himself go inside his body</p>
+<p>and blow out all negative feelings.” By taking</p>
+<p>this time to observe your body and breath</p>
+<p>you may release or prevent the build up of</p>
+<p>tension.</p>
+<p>One aspect of Zazen, that is Zen meditation or sitting</p>
+<p>Zen, which is central to the practice is awareness or</p>
+<p>observation of breathing. This can be done in different</p>
+<p>ways and the methods are very similar to using a</p>
+<p>mantra, as described in earlier sections.</p>
+<p>Zazen is considered an extremely important aspect</p>
+<p>of modern-day Zen practice. Depending on the</p>
+<p>monastery and the time of year Zazen can be practiced</p>
+<p>for the whole day to be punctuated only by meals,</p>
+<p>chanting and some work. The idea of this meditation is</p>
+<p>to sit without expectation of achieving any outcome .</p>
+<p>other than the realization of one’s true nature. In this</p>
+<p>quiet awareness one simply observes without judgment</p>
+<p>the passing thoughts and feelings. In order to help</p>
+<p>quieten the mind and give some direction to the</p>
+<p>practice awareness can be placed on the breath itself.</p>
+<p>The idea is not to try to force the breath into any</p>
+<p>particular pattern or rhythm, but merely to be aware</p>
+<p>of it. During this time thoughts, feelings and</p>
+<p>sensations will come into our minds and at times take</p>
+<p>the attention away from the breath. This is seen as part</p>
+<p>of the process and the attention is returned to the</p>
+<p>breath when the meditator becomes aware of the fact</p>
+<p>An everyday example which highlights this is when</p>
+<p>we are tired and reading a book. We may find that we</p>
+<p>have scanned halfway down a page only to find that</p>
+<p>our attention has returned and we have no idea what</p>
+<p>we have just read. During our mental wandering, our</p>
+<p>attention has been focused on a thought, feeling etc.</p>
+<p>and not absorbed in reading. It is not until our</p>
+<p>awareness returns that we realize we have been away.</p>
+<p>At this moment we usually go back and re-read the</p>
+<p>text with awareness.</p>
+<p>Awareness of the breath can be maintained by:</p>
+<p>1. Counting the breaths, usually up to ten.</p>
+<p>2. Listening to the sound of the out breath.</p>
+<p>3. Feeling the breath at the nostrils.</p>
+<p>Another way to practice regulating your breath off</p>
+<p>the court is to use everyday situations. Even difficult</p>
+<p>or frustrating situations, such as a traffic jam, can</p>
+<p>become extremely useful practice sessions. Instead of</p>
+<p>being frustrated and losing your cool, observe your</p>
+<p>reactions and see what you can do to maintain a sense</p>
+<p>of equilibrium.</p>
+<p>An extension of the release of breath is the use of</p>
+<p>various sounds. In the Wu Shu system different sounds</p>
+<p>are attributed to each animal in order to enhance</p>
+<p>different effects we may be wanting.</p>
+<p>For example, if we wanted to play an aggressive,</p>
+<p>powerful shot we would use the sounds of the</p>
+<p>Leopard and Tiger. This would be the sound WAH.</p>
+<p>Conversely, if we were to play a “touch” shot from our</p>
+<p>fingertips then we would utilise the sounds of the</p>
+<p>Crane or Snake. These are WUP and TISS.</p>
+<p>The use of sound is not new to tennis: we only</p>
+<p>have to recall Monica Seles’ now infamous grunts</p>
+<p>(probably Tiger or Leopard) to appreciate that the use</p>
+<p>of sound at the moment of impact adds more power</p>
+<p>to each shot.</p>
+<p>Tai Chi is an ancient Chinese system of movement,</p>
+<p>usually performed in a very slow rhythmical manner.</p>
+<p>Its balanced series of dance-like steps are designed to</p>
+<p>restore and maintain balance in the body.</p>
+<p>The breath is brought up slowly from the Dantian</p>
+<p>(situated just below navel) and released with the body</p>
+<p>movements. By coordinating breath and body in this</p>
+<p>slow rhythmical manner, the practitioner is said to be</p>
+<p>able to feel an inner flow of energy called Chi.</p>
+<p>A similar and useful series of movements could be</p>
+<p>practiced on the tennis court. Very few players, once</p>
+<p>they attain a reasonable level of competency, bother to</p>
+<p>perform a practice swing. If they do, it is usually done</p>
+<p>at a very quick speed with little conscious attention</p>
+<p>paid to what they are actually doing.</p>
+<p>It would be beneficial to establish a short routine, as</p>
+<p>part of their warm up, to practice each groundstroke at</p>
+<p>a slow speed coordinating the movement with the</p>
+<p>breath. If you keep the routine simple it will allow you</p>
+<p>to monitor both your breath and the stroke production.</p>
+<p>A possible combination of movements and</p>
+<p>1. Stand at base line at center point.</p>
+<p>Take a ready position stance and hold it for a</p>
+<p>couple of seconds. Be aware that your weight</p>
+<p>is evenly distributed. Feel the muscles in your</p>
+<p>_ legs. Observe in this stationary position the</p>
+<p>movement of your breath. Is it fast or slow? Is</p>
+<p>it deep or shallow? Is it in rhythm?</p>
+<p>2. Perform forehand stroke with breath</p>
+<p>awareness.</p>
+<p>Now slowly take your racket back, and at the</p>
+<p>same speed and time draw your breath in</p>
+<p>from the Dantian. Once completed, begin</p>
+<p>your forward movement and follow through</p>
+<p>at the same speed as before and once again</p>
+<p>coordinating the physical movement and the</p>
+<p>breath.</p>
+<p>3. Return to ready position and rebalance.</p>
+<p>4. Perform backhand stroke with breath</p>
+<p>awareness. (Use same approach as 2.)</p>
+<p>From this point you can build a routine using</p>
+<p>service action, movement to the net and volleys. Try</p>
+<p>to create a pattern that involves the same number of</p>
+<p>steps and takes the same time to complete each time.</p>
+<p>Even though there is the danger this could be done</p>
+<p>mechanically, the discipline and ritual of keeping</p>
+<p>movements and time together should provide a great</p>
+<p>opportunity to balance and focus yourself before you</p>
+<p>start hitting a ball.</p>
+<p>The fable, “The rainbow made of rope,” highlights -</p>
+<p>the great value that can be gained by maintaining</p>
+<p>awareness of the breath.</p>
+<p>By a large bay window overlooking the harbor, a young,</p>
+<p>apprentice cobbler stood daydreaming of exploring greater</p>
+<p>horizons. He was snapped out of his mental wanderings by</p>
+<p>the old bootmaker who quietly reminded him of the task at</p>
+<p>hand. He returned to his work knowing that one day he</p>
+<p>would leave.</p>
+<p>When the day came it caught him by surprise. He was</p>
+<p>upstairs looking out the window when a Rainbow appeared</p>
+<p>on the horizon. This one was different from others. It didn’t</p>
+<p>form an arc across the sky and it wasn’t ethereal. This</p>
+<p>Rainbow hung from the sky. and was rectangular in shape. It</p>
+<p>had substance and appeared to be made of braided ropes.</p>
+<p>The young man was excited and knew this Rainbow was</p>
+<p>calling him. Anxious to get to it before it disappeared, he</p>
+<p>rushed off without saying goodbye to the old cobbler.</p>
+<p>Not daring to take his eyes off the Rainbow he hurried</p>
+<p>along the cliff-top path. Such was his haste that he didn’t</p>
+<p>notice that he was headed straight for some sort of force field.</p>
+<p>Now he was caught in it. It appeared to stretch in all</p>
+<p>directions and dragged him along like a powerful undertow.</p>
+<p>He started to panic. How was he going to get out of this</p>
+<p>limbo? Summoning every ounce of strength and will he</p>
+<p>dragged himself back. out to the side he had entered.</p>
+<p>Completely exhausted, he looked up, as his Rainbow</p>
+<p>disappeared.</p>
+<p>He lay there for some time until he had enough energy to</p>
+<p>return to the cobblers. On his return, the old man greeted</p>
+<p>him with warmth and understanding and shocked the young</p>
+<p>apprentice by saying, “If you remember nothing else, the next</p>
+<p>time you are in that force field, take a strong breath! The</p>
+<p>more powerful the breath the further the journey.”</p>
+<p>“How did he know what had happened? And what</p>
+<p>strange advice,” thought the young man. But he doubted</p>
+<p>whether, after that fright, he would ever want to go back</p>
+<p>again.</p>
+<p>Time passed and he settled into his job and began to</p>
+<p>enjoy the simplicity of his life.</p>
+<p>Again, he was surprised by, the reappearance of his</p>
+<p>Rainbow. He tried to resist it but the lure was too strong.</p>
+<p>This time he stopped long enough to say goodbye to the old</p>
+<p>man.</p>
+<p>As he headed off, he kept one eye on the Rainbow and</p>
+<p>the other on the path. He wanted to be prepared this time. It</p>
+<p>wasn&#x27;t long before he arrived at the force field. Approaching</p>
+<p>cautiously, he could feel the strength of its magnetic pull. One</p>
+<p>more step and he would be in. He paused, but knew he had</p>
+<p>no choice if he wanted to reach the Rainbow.</p>
+<p>In he stepped. Again he lost his bearings and felt himself</p>
+<p>being dragged along uncontrollably. He started to panic. How</p>
+<p>could he get to the other side? Suddenly, the old man’s words</p>
+<p>came to him. “Remember to breathe!” “Surely I’m already</p>
+<p>breathing,” he thought, “but what have I got to lose?” Taking</p>
+<p>his attention to his breathing, he found to his surprise that</p>
+<p>he was holding it, Consciously he took a deep slow breath in</p>
+<p>through his mouth and released it. He felt a little calmer. He</p>
+<p>repeated it and looked up to see that his breath had cleared a</p>
+<p>cylindrical tunnel in the force field. Seizing the moment, he</p>
+<p>jumped. With arms and legs flailing in all directions he slid</p>
+<p>to the other side.</p>
+<p>He realized now that there was something special about</p>
+<p>that ordinary old man. Looking up he saw the Rainbow was still a fair distance</p>
+<p>away. “Surely it will disappear before I reach it!” he thought.</p>
+<p>Then he had a sudden idea. “If I could breathe myself .</p>
+<p>through the force field, maybe I can breathe myself to the</p>
+<p>He pointed his body in the direction of Rainbow, tilted</p>
+<p>his head, took a deep slow breath in and released it.</p>
+<p>Before he realized it, he was hurtling through space like a</p>
+<p>human rocket. Maybe this breath had been too strong! Bang!</p>
+<p>He hit the Rainbow. He almost went past it but managed to</p>
+<p>grip the ropy strands and hang on, swinging in space for a</p>
+<p>while before coming to a halt.</p>
+<p>From this position he could see his whole world stretched</p>
+<p>before him. His home, the village and the sea. Everything</p>
+<p>was so clear from this perspective. He filled with gratitude at</p>
+<p>being able to free himself from the force field and have this</p>
+<p>wonderful experience.</p>
+<p>o create the state of mind described as satori, we J see to find a means of staying fully focused in</p>
+<p>the moment while still being relaxed. This may sound</p>
+<p>a fairly simple task, but it can be quite a difficult</p>
+<p>process to master. Why is this the case and how can</p>
+<p>awareness of the moment be developed?</p>
+<p>Here the tennis ball becomes a useful tool. If we</p>
+<p>can focus on the ball to the exclusion of everything</p>
+<p>else then we may have a momentary glimpse of satori.</p>
+<p>If we know that we saw the ball bounce and we see it |</p>
+<p>onto the racket after the bounce then we have been</p>
+<p>able to drop our other thoughts temporarily. The</p>
+<p>benefits of being able to do this are tremendous.</p>
+<p>If we’ think of the brain as a computer and we</p>
+<p>think of awareness of the ball as the information we</p>
+<p>punch into it then the printout (forehand, backhand</p>
+<p>etc.) will depend on the quality of the information</p>
+<p>processed. If the ball is clouded by thoughts in the</p>
+<p>form of fears and doubts, then each shot is likely to be</p>
+<p>affected. The clearer our attention for the ball the</p>
+<p>more likely we are to get quality information.</p>
+<p>A useful analogy that explains how easy it is to look at</p>
+<p>a ball and still not see it is that of driving the car. Let’s</p>
+<p>say that when you go to work you drive the same</p>
+<p>route every day. After a few years of traveling the same</p>
+<p>way, you get to work and think to yourself, “Did I</p>
+<p>stop at those lights?” or “I suppose I must have driven</p>
+<p>past that building. I’m here intact aren’t I?” Because</p>
+<p>it is such a repetitious act we use the minimum</p>
+<p>amount of attention necessary to complete our task</p>
+<p>satisfactorily. .</p>
+<p>However, if we went to bed one night and as we</p>
+<p>slept a Grand Prix race track was installed on the same</p>
+<p>route, the next day while driving to work at four</p>
+<p>times the speed we would be aware of every square</p>
+<p>inch of the drive and be able to recall it all.</p>
+<p>This is how we should think about seeing the ball.</p>
+<p>If we want to play Grand Prix tennis we have to be</p>
+<p>aware of every instant and see every ball so as not to</p>
+<p>be overtaken by the other players.</p>
+<p>How many times have you gone to tennis, hit up for a</p>
+<p>few minutes, had a couple of practice serves, then</p>
+<p>started playing. Five minutes later you are screaming</p>
+<p>in frustration at the mistakes you are making. What</p>
+<p>hope did you have of finding your timing, focus and</p>
+<p>rhythm? Would you be able to see the ball easily</p>
+<p>under that pressure?</p>
+<p>It’s important to remember when you are looking</p>
+<p>for the ball not to force your attention on it. If you</p>
+<p>do, you will find that you become tense and</p>
+<p>pressured. Try and allow your attention to “settle”</p>
+<p>easily onto the ball with minimum effort and</p>
+<p>minimum frustration. The exercise, the six-stage plan,</p>
+<p>which I practice regularly with my clients, is designed</p>
+<p>to create the time and structure for this to happen.</p>
+<p>It has a feeling of completeness about it. It allows</p>
+<p>for a smooth purposeful transition of watching the</p>
+<p>ball while performing less complicated tasks, more</p>
+<p>difficult ones and back again. It allows us to gradually</p>
+<p>get into the process rather than rush it.</p>
+<p>I believe the six-stage structure is one that warrants</p>
+<p>regular practice. This would be an ideal way to</p>
+<p>practice in the days leading up to match play and</p>
+<p>would be valuable in a shortened version to warm up</p>
+<p>the day of your match.</p>
+<p>1 Initially hit the ball easily backwards and forwards with a practice</p>
+<p>partner. Each time the ball bounces make a gentle inquiry as to</p>
+<p>whether or not you saw the ball bounce. You will notice that you</p>
+<p>can hit a ball without consciously remembering seeing it bounce.</p>
+<p>Don&#x27;t be critical of yourself if you realize that you haven’t seen the</p>
+<p>ball. Just use this information to reinforce the need to look next</p>
+<p>time. Try to be aware of the thoughts that clouded your perception.</p>
+<p>Some will be recurring ones, others will just come and go.</p>
+<p>Use this information to reinforce the need to look next time.</p>
+<p>On more than one occasion during coaching I’ve asked my pupil</p>
+<p>whether they remember seeing the ball, only to find that they</p>
+<p>snap back at me, “No, I didn’t!” At this stage I realize that</p>
+<p>watching the ball has become a test they feel they must pass. They</p>
+<p>have heard my question as a potential lead-in to some criticism.</p>
+<p>Try to make it an inquiry rather than an inquisition.</p>
+<p>To facilitate this process try yelling “Yes” at the moment the</p>
+<p>ball bounces. Have fun with your practice partner to see who is</p>
+<p>the first to forget. This is a valuable concentration exercise.</p>
+<p>Once you’ve practiced watching the ball in this easy manner</p>
+<p>and feel that you have it under control, it’s time to increase the</p>
+<p>difficulty and move onto Stage 2.</p>
+<p>2.The next stage, after hitting balls backwards and forwards to</p>
+<p>each other, is to increase your movement around the court.</p>
+<p>As you pick up the tempo you may notice that it becomes</p>
+<p>more difficult to stay with the ball. When a ball is hit to the</p>
+<p>opposite side of the court it becomes tempting to charge off</p>
+<p>furiously. In doing so there is often a “blank” spot where we don’t</p>
+<p>see the ball until we get close again. We may rush unnecessarily</p>
+<p>and find that we inwardly speed ourselves up and end up rushing</p>
+<p>our shot. Try and let the ball tell you how fast you need to run.</p>
+<p>Stay relaxed and keep the ball in focus as you move towards it.</p>
+<p>3.The third stage in your practice is to start playing points, not</p>
+<p>games. It is usually a good idea to have five serves each but</p>
+<p>DON’T SCORE. Now that you are involved in playing points</p>
+<p>there will be a little more tension in your game. You won&#x27;t want to</p>
+<p>hit the ball out of court and you may, despite the fact you are not</p>
+<p>scoring, try a little harder to win.</p>
+<p>However, see if you can hold uppermost in your mind the goal of following the ball. This can be slightly harder because the above</p>
+<p>thoughts and feelings may begin to cloud it. Once you are</p>
+<p>comfortable with this move onto Stage 4.</p>
+<p>4. Now it’s time to add the extra pressure that comes from scoring.</p>
+<p>Don&#x27;t actually play games yet. Make it the first to ten or twenty.</p>
+<p>Notice the extra pressure that scoring puts on the process. Does it</p>
+<p>make a difference to your ability to watch the ball now that</p>
+<p>win/lose is involved?</p>
+<p>5. Now it’s time to try playing an orthodox practice game with</p>
+<p>normal scoring. Now you are approximating match conditions.</p>
+<p>Notice the challenges that are involved.</p>
+<p>Although this is still only practice, because you are emulating</p>
+<p>match conditions it will bring to the surface as many fears about</p>
+<p>winning and losing, not making mistakes etc., as a match can.</p>
+<p>These thoughts and feelings will challenge your watching of the</p>
+<p>ball as much as the practice.</p>
+<p>6. Having finished your set it’s important to warm down. Go back</p>
+<p>to Stage 1 and hit gently backwards and forwards again. Notice</p>
+<p>now, in contrast to playing a set, what it’s like to watch the ball.</p>
+<p>Does it seem easier than at the beginning?</p>
+<p>This systematic practice routine is beneficial because it</p>
+<p>allows you to gradually increase the pressures that</p>
+<p>come to bear on your game. Be willing to wait until</p>
+<p>you feel comfortable with one stage before you move</p>
+<p>onto the next. This time may vary from one practice</p>
+<p>session to another.</p>
+<p>When you are comfortable with this practice</p>
+<p>routine it’s time to see how you fare watching the ball</p>
+<p>in competitive matches, tournaments etc. Obviously</p>
+<p>these circumstances will increase pressure even more</p>
+<p>but at least by gradually working up to this moment</p>
+<p>you will be as prepared as possible.</p>
+<p>If you find that your attention is constantly</p>
+<p>wandering when you are looking for the ball, try</p>
+<p>giving yourself something specific to look for. See if</p>
+<p>you can see the brand or the join on the ball. If you’re</p>
+<p>hitting with topspin, see the back of the ball or notice</p>
+<p>whether the ball is spinning fast or slow.</p>
+<p>Challenge yourself by seeing whether you can hold</p>
+<p>your attention on the ball for the whole rally. This</p>
+<p>means remembering it hitting your opponent&#x27;s racket,</p>
+<p>the time it travels in the air between you, as well as</p>
+<p>the bounce at your end.</p>
+<p>Miloslav Mecir, a former top ten player, is someone</p>
+<p>I believe focuses correctly. In an interview with Nick</p>
+<p>Place of the Melbourne Herald, “he [Mecir] watches</p>
+<p>the ball from the moment it is tossed into the air for a</p>
+<p>serve to the time a ballboy picks it up or it finds the</p>
+<p>net. Mecir is completely focused. You could wave a</p>
+<p>red flag behind his opponent, you could fire a gun —</p>
+<p>he is engrossed in the flying yellow missile.”</p>
+<p>Regardless of the level of sport you are playing there</p>
+<p>are always going to be distracting thoughts and</p>
+<p>feelings competing with the ball for your attention.</p>
+<p>For the beginner it may be thoughts such as “T</p>
+<p>hope I don’t make a fool of myself” or “I’m sure I’m</p>
+<p>going to be the worst player to ever set foot on the</p>
+<p>court.” These thoughts obviously hold an emotional</p>
+<p>charge and often cloud our perception of the ball.</p>
+<p>The advanced player will have another set of</p>
+<p>thoughts and feelings that vie for their attention. They</p>
+<p>may want to win a tournament so badly that if they get</p>
+<p>into a difficult position in a match the thought, “I think</p>
+<p>I’m going to lose,” may tighten them up and interfere</p>
+<p>with their ability to focus on the ball. They might</p>
+<p>expect a certain standard of play and frustrate themselves</p>
+<p>when they play below this. Although it is possible that</p>
+<p>these thoughts and feelings sharpen a_ person’s</p>
+<p>concentration, most players are distracted by them.</p>
+<p>Having the ball as a focus when we are inundated</p>
+<p>with thoughts is a great asset. The reason for this is that</p>
+<p>it gives us somewhere neutral to place our attention.</p>
+<p>There are some common themes or attitudes that can</p>
+<p>dominate the ball. These can be different for each</p>
+<p>player. However, a few occur on a regular basis.</p>
+<p>Letting go of them can be difficult. It is as if we are</p>
+<p>“attached” to them.</p>
+<p>So what do I mean by “attachment”? Attachment</p>
+<p>occurs when our attention becomes focused on a</p>
+<p>thought and we are unable to let it go. If this happens</p>
+<p>regularly then we have some emotional attachment or</p>
+<p>investment in the result.</p>
+<p>One common scenario that demonstrates how easy it</p>
+<p>is to hit the ball without consciously seeing it might</p>
+<p>go like this.</p>
+<p>Jack finally maneuvered his opponent out of</p>
+<p>position by playing a powerful drive into the backhand</p>
+<p>corner. Although off balance his opponent managed to</p>
+<p>get his racket onto the ball and play a feeble return</p>
+<p>into mid-court. Jack got excited, a gleam came to his</p>
+<p>eye. There, before him, lay the entire court begging for</p>
+<p>his shot. Already he could hear the umpire calling,</p>
+<p>“Game, Set and Match!” Revved up he walloped the</p>
+<p>ball across court. There was a momentary pause. He</p>
+<p>was about to throw his clenched fist into the air when</p>
+<p>it suddenly struck home that he had hit the easiest ball</p>
+<p>of the match, OUT. He couldn’t believe his eyes.</p>
+<p>Surely he was mistaken, but there was the</p>
+<p>outstretched arm of the linesman indicating it was out. “How could I have done that?” agonised Jack. Various</p>
+<p>explanations rushed through his mind, “Maybe I tried</p>
+<p>to hit it too hard or maybe I shouldn’t have tried to hit</p>
+<p>it so close to the line or maybe I got too excited?”</p>
+<p>While all Jack’s explanations may be true it is</p>
+<p>almost certain that once Jack saw that opening in the</p>
+<p>court and got excited he forgot to switch his attention</p>
+<p>back to the ball itself. Simply put, he didn’t see the</p>
+<p>ball as he hit it.</p>
+<p>The ability to have a, thought about the shot you</p>
+<p>wish to play and return your attention to the ball is an</p>
+<p>art that needs practice.</p>
+<p>Another problem with Jack’s explanation of why he</p>
+<p>made his mistake could be that he becomes critical of</p>
+<p>himself for the wrong reasons. Misunderstanding the</p>
+<p>real reasons for his mistake may mean that he curbs his</p>
+<p>flair or creativity.</p>
+<p>I’ve discovered that many players imagine a</p>
+<p>particular shot and when it doesn’t come off criticize</p>
+<p>themselves for attempting it. They might tell them-</p>
+<p>selves: “What a stupid shot to try and don’t do it</p>
+<p>This may be true, but another possibility is that</p>
+<p>they have become excited by the prospect of the shot</p>
+<p>they’ve imagined and in doing so have not shifted</p>
+<p>their attention back to the ball.</p>
+<p>One of the greatest feelings in sport comes when</p>
+<p>we imagine something and it happens. It would be a</p>
+<p>shame to kill this pleasure for the wrong reasons. I can</p>
+<p>still recall the feeling of playing a particular shot in my</p>
+<p>mind’s eye and looking up and seeing the actual shot</p>
+<p>following the imagined one as though it was sitting</p>
+<p>on the tail of a comet. All that separated them was the</p>
+<p>instant of time when I shifted my attention back to</p>
+<p>the ball.</p>
+<p>Not all players are negatively influenced by the</p>
+<p>need to win. Some players use it as a spur for self-</p>
+<p>development. However, for others the need to win is</p>
+<p>possibly the greatest danger to their development.</p>
+<p>With a society that places great emphasis on the</p>
+<p>result, players are under enormous pressure to win.</p>
+<p>They may be tempted to hang on to a style or game</p>
+<p>that helps them win in the short term but has</p>
+<p>limitations for the future.</p>
+<p>With the constant reinforcement of people asking,</p>
+<p>“Did you win? What was the score?”, it becomes</p>
+<p>very difficult to take risks. Rarely would someone</p>
+<p>ask, “Did you take any new risks out there today?” or</p>
+<p>“I saw you try something different — that was</p>
+<p>With this in mind it is easy to see how a player</p>
+<p>about to play a shot, when suddenly faced with the</p>
+<p>thought, “If you miss this shot it will cost you the</p>
+<p>match,” tightens up and probably doesn’t see the ball</p>
+<p>at all. It becomes lost in the emotions surrounding</p>
+<p>that thought. When the need to win becomes too</p>
+<p>dominant the value of competition is lost.</p>
+<p>I’ve found it interesting when coaching adults that</p>
+<p>frequently their games stop developing after a period</p>
+<p>of time. Quite often they set their sights on beating a</p>
+<p>certain person, and when they do beat that person</p>
+<p>they stop developing. Twenty years later their game</p>
+<p>has not changed. There is no spontaneity or creativity,</p>
+<p>no risks, no new shots. Their game is almost</p>
+<p>mechanical. Interest is completely centered around</p>
+<p>the result.</p>
+<p>We should ask ourselves, “If we were learning a</p>
+<p>skill that didn’t have win/lose at stake (let’s say a</p>
+<p>language) how would we feel if we were no better</p>
+<p>after twenty-five years than we were after five?”</p>
+<p>The short story, “The one that got away,’</p>
+<p>demonstrates how our attachment to a particular</p>
+<p>outcome can change as our circumstances change.</p>
+<p>One day a fisherman untied his small boat and headed out</p>
+<p>to sea. He looked forward to the challenge of matching wits</p>
+<p>with the creatures of the deep. And of course there was always</p>
+<p>the lure of catching the big one.</p>
+<p>Having cast his line, he settled down and waited. Knowing</p>
+<p>how to wait was part of the game. It wasn’t long before there</p>
+<p>was a violent tug on the line. His adrenalin started to flow as</p>
+<p>he released the line, giving his opponent plenty of slack to play</p>
+<p>with. From the resistance, he knew that to win this battle</p>
+<p>would require all his experience and resources.</p>
+<p>Time disappeared in the intense struggle. Stretched to his</p>
+<p>limit he felt that he might not be able to hold on, but he kept</p>
+<p>digging deeper, until unexpectedly he began to feel the fish</p>
+<p>weaken. With the prospect of winning the fight he felt a</p>
+<p>renewed surge of strength. He began to draw his trophy closer</p>
+<p>to the boat. Not far now. Peering into the water, the</p>
+<p>fisherman could see his prey only yards away. A sense of —</p>
+<p>victory started to well up inside. “Wait till the others see</p>
+<p>what I bring in,” he thought.</p>
+<p>In that instant he relaxed and the fish sensing it was his</p>
+<p>last chance violently wrenched at the line and snapped it.</p>
+<p>The fisherman was stunned. So close and yet he’d lost.</p>
+<p>Disappointed and exhausted, he started packing up</p>
+<p>trying to content himself with the prospect of telling his story</p>
+<p>about the one that got away.</p>
+<p>Just as he was about to head back to shore he heard a</p>
+<p>terrific splash behind him. He turned and glimpsed the</p>
+<p>airborne marlin just before it knocked him into the sea. As</p>
+<p>the man landed in the water the fish traded places and</p>
+<p>landed with a thump in the boat. It was such a small boat</p>
+<p>the large creature almost totally filled it.</p>
+<p>Stunned, the fisherman grabbed hold of the side of his</p>
+<p>vessel. Looking up, he could see the huge marlin in the boat</p>
+<p>staring back at him. He tried to climb back in but each time</p>
+<p>the fish lashed out so fiercely making it impossible. What was</p>
+<p>he to do? He stopped to think. “Don’t panic,” he told</p>
+<p>himself, “You’ll be able to last longer in the water than the</p>
+<p>fish can in the boat. Just be patient and you’ll be able to</p>
+<p>head back to shore with the prize after all. Not how you&#x27;d</p>
+<p>expected to win but this will make an even better story.”</p>
+<p>Pleased with himself, he hung on and prepared to wait.</p>
+<p>Now that the fisherman had stopped trying to climb into</p>
+<p>the boat, the fish stopped lashing out.</p>
+<p>Time passed. “Not much longer,” thought the man, when</p>
+<p>to his horror he looked up and saw a large fin heading in his</p>
+<p>direction. A shark!</p>
+<p>The options passed quickly through his mind.</p>
+<p>If he stayed in the water he would die and so would the</p>
+<p>fish. If the fish let him in the boat he would live and the fish</p>
+<p>could live as well. However, the fish had to trust him that he</p>
+<p>would let him go. On his past record that would be hard.</p>
+<p>¢ What would you do if you were the fisherman?</p>
+<p>* What would you do if you were the fish?</p>
+<p>By now, it should be clear that one of the effects of</p>
+<p>competition is that it dredges up our beliefs about</p>
+<p>winning and losing. We have also discussed various</p>
+<p>methods for challenging inappropriate beliefs and</p>
+<p>how they affect our perception of the ball.</p>
+<p>However, like any skill, if you practice the process</p>
+<p>of watching the ball consistently you will discover that</p>
+<p>the practice sessions will become similar to real</p>
+<p>competition. A useful analogy for this process comes from the</p>
+<p>Indian tradition.</p>
+<p>A guru was asked about the value of meditation in</p>
+<p>a busy life. He compared the process of meditation to</p>
+<p>the process of dyeing a cloth. In India when a piece of</p>
+<p>cloth is dyed it is dipped in the chosen color and</p>
+<p>hung in the sun to dry. Some of the color remains but</p>
+<p>some also fades. Once dry the cloth is again dipped</p>
+<p>into the color and once more hung out in the sun.</p>
+<p>Again some of the color fades, but this time it is a</p>
+<p>little darker than before. This process is continued</p>
+<p>until the dye becomes so embedded in the fabric that</p>
+<p>it barely fades when placed in the sun.</p>
+<p>In the same way, the more you practice as though</p>
+<p>in competition, the more the process of watching the</p>
+<p>ball will stick. There will be less distinction between</p>
+<p>practice and match play.</p>
+<p>eae TCH NG ee Spee IMPROVES TECHNIQUE</p>
+<p>There are situations where watching the ball improves</p>
+<p>a player’s technical skills.</p>
+<p>An example of this could be when a player hits a</p>
+<p>backhand. One problem in playing a backhand is that</p>
+<p>the person about to play the shot releases the racket too</p>
+<p>sharply which causes their head to lift up quickly. This is</p>
+<p>often accompanied by the body weight being thrown</p>
+<p>onto the back foot and the ball being lifted out of court.</p>
+<p>There are many instructions that could remedy this</p>
+<p>problem.</p>
+<p>1. Release the racket smoothly. By releasing the</p>
+<p>racket this way, your head is less likely to jerk</p>
+<p>upwards, therefore resulting in better timing</p>
+<p>and a more rhythmical shot.</p>
+<p>2. Keep the head still. By doing this, it is much</p>
+<p>more likely that you will actually see the ball.</p>
+<p>The only problem with this is that you can</p>
+<p>feel a little stiff and awkward keeping your</p>
+<p>head from moving.</p>
+<p>3. Hold the weight over the front foot. By</p>
+<p>keeping the front foot firmly planted on the</p>
+<p>ground it may anchor your shot. It may help</p>
+<p>to keep your head from lifting and create a</p>
+<p>more balanced shot.</p>
+<p>4. Watch the ball after the bounce.</p>
+<p>If you watch the ball after the bounce your head</p>
+<p>can’t go up in the air. If the head is kept down, the</p>
+<p>body weight usually stays balanced and we are</p>
+<p>compelled to release the racket in a more controlled</p>
+<p>mannet.</p>
+<p>I believe this is extremely useful because we need</p>
+<p>to see the ball anyway and so instead of complicating</p>
+<p>the moment of hitting with extra thoughts like</p>
+<p>“keeping the head still” and so on, we can keep the</p>
+<p>whole process simple.</p>
+<p>Obviously if there are glaring technical problems</p>
+<p>they will need to be ironed out with the usual</p>
+<p>disciplined approach.</p>
+<p>The more aspects of our game that we can</p>
+<p>program so that they are automatic, the greater our</p>
+<p>clarity for the parts that require conscious attention.</p>
+<p>Bal MiLNSG. ANE Do OT OME Be bad</p>
+<p>“What sort of things do you remember best?” Alice</p>
+<p>ventured to ask.</p>
+<p>“Oh, things that happened the week after next,”</p>
+<p>the Queen replied in a careless tone. “For instance,</p>
+<p>now,” she went on, “there’s the King’s Messenger.</p>
+<p>He’s in prison now being punished; and the trial</p>
+<p>doesn’t even begin till next Wednesday; and of</p>
+<p>course the crime comes last of all.”</p>
+</section>
+<section class="chapter" id="sec-6">
+<h2>Part 6  ·  pp. 151–180</h2>
+<p>In The Way of Zen Alan Watts writes of how the late</p>
+<p>Sokei-an Sasaki found Alice in Wonderland to be an</p>
+<p>admirable manual to express the point of view</p>
+<p>contained in some koans.</p>
+<p>What is time and timing? Our ancestors measured</p>
+<p>the passage of time by observing cycles in Nature,</p>
+<p>Day and Night, Tides. Today physicists have precise</p>
+<p>instruments, such as atomic clocks, that are so reliable</p>
+<p>that it would take a million years for two such clocks</p>
+<p>to be out of synchrony by one second.</p>
+<p>Yet it is interesting that the human perception of</p>
+<p>time can vary so dramatically. This relative experience</p>
+<p>of time is one of the theories for which Einstein is</p>
+<p>famous. In order to simplify the concept, Einstein</p>
+<p>devised the following simple, somewhat - sexist,</p>
+<p>explanation for his secretary: “An hour sitting with a</p>
+<p>pretty girl passes like a minute; a minute sitting on a</p>
+<p>hot stove seems like an hour.”</p>
+<p>Today biologists and physicists are telling us that</p>
+<p>time is a concept that is influenced by our senses.</p>
+<p>Some days time seems to fly, other days it seems to</p>
+<p>drag, while at other times it appears to stand still.</p>
+<p>What is even more interesting is that physiologists</p>
+<p>are finding that our bodies are eavesdropping on the</p>
+<p>communication we are having with ourselves and</p>
+<p>our physiologies are responding to this conversation.</p>
+<p>As Dr Deepak Chopra (leading figure in mind/body</p>
+<p>medicine) says in his “Time and Immortality”</p>
+<p>lecture: “If our physiology hears our self-talk saying,</p>
+<p>‘there isn’t time’ or ‘I’m running out of time’ and</p>
+<p>there is a sense of urgency about our experience of</p>
+<p>time then our physiology responds by producing</p>
+<p>adrenalin, by increasing our heart rate, our blood</p>
+<p>One way to discover your inner dialog and how</p>
+<p>you experience time is to see how you respond to the</p>
+<p>time after the bounce of the ball. That is, do you feel</p>
+<p>rushed like the Rabbit in Alice in Wonderland who said,</p>
+<p>“No time to say Hello or Goodbye, I’m late, I’m late,</p>
+<p>I’m late”? Or do you feel there is plenty of time from</p>
+<p>the bounce to your racket? Of course this is in some</p>
+<p>ways dependent on the speed and placement of the</p>
+<p>ball that is being hit to you. However, if you keep</p>
+<p>observing this process each time you play you might</p>
+<p>begin to notice that a ball hit at the same speed from</p>
+<p>one session to another may appear, subjectively, to</p>
+<p>travel at different speeds.</p>
+<p>I have noticed after experimenting with this process</p>
+<p>that the time from the bounce to my racket can feel —</p>
+<p>very different. Often this is dependent on what has</p>
+<p>gone on before I stepped onto the court. I may feel as</p>
+<p>though I have all the time in the world, long enough</p>
+<p>for a cup of tea, or conversely, the time may seem to be</p>
+<p>full of urgency as though I were confronting a live</p>
+<p>hand grenade. The ball seems to be acting as a mirror,</p>
+<p>feeding back to me my mental and emotional state.</p>
+<p>Try experimenting with this process. If you find</p>
+<p>that there seems very little time from the bounce</p>
+<p>onwards and the message from your brain is screaming</p>
+<p>urgently to hit it, see what happens if you can risk not</p>
+<p>listening to this voice and begin to hold onto the shot</p>
+<p>a little longer. It is interesting to note how many top</p>
+<p>sportspeople appear unhurried and at times almost</p>
+<p>casual.</p>
+<p>Don’t be frightened to experiment with your</p>
+<p>sense of time. The saying “having the ball on a string”</p>
+<p>has its basis in this idea. The ball can actually appear</p>
+<p>suspended on a string. There is often a timeless</p>
+<p>quality to this experience, as though we had a movie</p>
+<p>camera and were freeze framing the ball from instant</p>
+<p>to instant.</p>
+<p>When time comes to a standstill so does the breath.</p>
+<p>Time and breath are the movement of thought and</p>
+<p>when thought comes to a standstill we have a satori or</p>
+<p>These breathtaking moments are the ones where</p>
+<p>poetry, art and any inspiration comes from.</p>
+<p>OPPONENT: UNPAID THERA PAST ?</p>
+<p>Having practiced the skill of watching the ball over a</p>
+<p>period of time, you may begin to notice that it is your</p>
+<p>opponent’s task to try to hit a shot that actually</p>
+<p>disturbs your inner control and takes your attention</p>
+<p>from the ball. What they may do is to turn the volume</p>
+<p>up on your attitudes and fears. As discussed earlier,</p>
+<p>these fears have always been there, buried in your sub-</p>
+<p>conscious. But it wasn’t until your opponent’s shot</p>
+<p>unsettled you that they surfaced. In some ways they</p>
+<p>are is doing the job of a therapist, dredging and</p>
+<p>surfacing your self-limiting attitudes.</p>
+<p>Again, this is where the ball is an invaluable aid. If</p>
+<p>you can keep looking for the ball it can become like a</p>
+<p>psychological anchor, a little like being thrown a rope</p>
+<p>when you&#x27;re sliding into a crocodile pit of self-doubt</p>
+<p>and fear.</p>
+<p>eS.</p>
+<p>If one of our parents has a very dominant personality</p>
+<p>and we have had difficulty in asserting ourselves with</p>
+<p>them we may find that this pattern repeats itself in</p>
+<p>sporting situations. We may be playing someone with</p>
+<p>a similarly strong or aggressive personality and feel</p>
+<p>overwhelmed by them. This inability to hold our</p>
+<p>ground will need to be remedied so that it doesn’t</p>
+<p>continue to undermine our performances.</p>
+<p>Another situation that causes some problems for</p>
+<p>young tennis players is when the parent’s drive for</p>
+<p>their child to succeed is so strong that it may place</p>
+<p>more pressure on the child than they can handle. This</p>
+<p>may lead to resentment because the child feels that</p>
+<p>their self-esteem and their parent’s affection is linked</p>
+<p>to whether they win or not.</p>
+<p>Unless it is established clearly that the parent is</p>
+<p>supporting and encouraging the child regardless of</p>
+<p>the result then at some point in the child’s life the</p>
+<p>problem of who they are playing for will surface.</p>
+<p>Are they playing in order to realize their parent&#x27;s</p>
+<p>unfulfilled dreams or are they playing for their own</p>
+<p>sense of achievement and satisfaction?</p>
+<p>I guess the message here for parents is that they</p>
+<p>need to walk that fine line between encouragement</p>
+<p>and interest in their child’s development and being</p>
+<p>too driven or obsessive.</p>
+<p>One useful process that can help resolve any of</p>
+<p>these inner dialog conflicts is to set up off the court</p>
+<p>a chance to hear these different inner voices. This is</p>
+<p>useful because it gives each person the opportunity to</p>
+<p>hear exactly what they are saying to themselves and to</p>
+<p>learn new responses when necessary.</p>
+<p>WHEN IS A GREAT SHOT DANGEROUS?</p>
+<p>Many players think it is only when they are playing</p>
+<p>badly that mistakes can happen. This is not true,</p>
+<p>however. How many times have you played a terrific</p>
+<p>point only to follow it up with a lousy one? How</p>
+<p>often do we see two terrific points, one after the</p>
+<p>other? Not often! What can happen after you have</p>
+<p>played and won a rally with an outstanding shot is that</p>
+<p>you feel so pleased with yourself you are still replaying</p>
+<p>the point in your mind when the next point begins.</p>
+<p>In hanging on to the euphoria of the last point you</p>
+<p>will be lucky if you see the next ball at all.</p>
+<p>Again this is where the ritual and discipline of</p>
+<p>seeing every ball is so important.</p>
+<p>I’ve noticed in myself and in the people I coach that -</p>
+<p>in the heat of competition we get a little more revved</p>
+<p>up than usual, and because of this we have a tendency</p>
+<p>to rush. At the time, this can be difficult to objectively</p>
+<p>assess, know or monitor. This is where it is important</p>
+<p>to have a set of in-built “rituals” that will help regulate</p>
+<p>our tempo on the court.</p>
+<p>Two of the most important moments in tennis are</p>
+<p>those before we receive serve and those before we</p>
+<p>serve. These are ideal moments in which to self-</p>
+<p>monitor and check that our focus is in the appropriate</p>
+<p>place. They provide an opportunity to draw on Ball,</p>
+<p>The importance of ritual is something that has been</p>
+<p>known for thousands of years. It adds stability to our</p>
+<p>behavior and our actions and is a part of every culture.</p>
+<p>Before serving the ball it is useful to have a little</p>
+<p>checklist of thoughts. The ones I consider important</p>
+<p>1. Decide where you are going to serve, that is</p>
+<p>backhand or forehand? Although this seems</p>
+<p>self-explanatory, over&#x27;the years I’ve seen many</p>
+<p>players stand at the service line and crunch</p>
+<p>down their fastest, and best, serve straight to</p>
+<p>their opponent’s strength. Remember that a</p>
+<p>well-placed serve is often better than pure</p>
+<p>brute strength.</p>
+<p>2. Are you going into the net or are you staying</p>
+<p>back? On most occasions this decision needs</p>
+<p>to be made before you serve. If you serve and</p>
+<p>then decide you will often be caught out of</p>
+<p>position.</p>
+<p>3. What sort of serve are you going to do? Are</p>
+<p>you going to use a powerful flat serve or</p>
+<p>topspin? Are you better off mixing up the</p>
+<p>serve so that your opponent doesn’t get into</p>
+<p>a rhythm on return?</p>
+<p>4. Relax hand on racket and take a deep breath.</p>
+<p>If you observe closely the serving hand of</p>
+<p>many of the top players you will notice that</p>
+<p>they relax their fingers on the grip before</p>
+<p>starting their service action. This allows for a</p>
+<p>relaxed smooth swing that maintains rhythm.</p>
+<p>5. The last memory should always be “watch the</p>
+<p>ball.” This is probably the most important</p>
+<p>point of all. For many players the service</p>
+<p>toss varies slightly and so if we swing</p>
+<p>automatically without a clear perception of</p>
+<p>the ball our timing may be off. Watching the</p>
+<p>ball means that this swing is timed to this ball.</p>
+<p>Having a clear routine is necessary for two reasons. ~</p>
+<p>Firstly it is obvious that we need to make decisions</p>
+<p>regarding how we are going to play the point but just</p>
+<p>as important is that, by having the discipline of</p>
+<p>consciously checking what we are doing, this process</p>
+<p>acts as a stabilizing influence when we are under</p>
+<p>pressure and tempted to rush. If we religiously go</p>
+<p>through our checklist then for that time our attention</p>
+<p>is absorbed in what we need to do and taken away</p>
+<p>from any self-limiting or negative thoughts. The ritual</p>
+<p>therefore serves as an emotional anchor. By counting</p>
+<p>out the items and consciously answering the questions</p>
+<p>your attention is held where it needs to be, in the</p>
+<p>moment.</p>
+<p>Before receiving serve we can again go through a</p>
+<p>checklist to try and prepare ourselves for the point</p>
+<p>ahead.</p>
+<p>1. Relax grip and check breath is regular. Use</p>
+<p>this checkpoint to check that you are relaxed.</p>
+<p>It is interesting to note how relaxation and</p>
+<p>attachment to the result affect the return of</p>
+<p>serve. This is highlighted especially on the first</p>
+<p>serve. In many cases the first serve of a player</p>
+<p>is much faster than their second. How many</p>
+<p>times have you waited to return the first serve</p>
+<p>and it’s a fault. It could even be very long and</p>
+<p>wayward but because it’s a fault and doesn’t</p>
+<p>matter we swing freely and hit what would</p>
+<p>have been a blinding winner. The second serve</p>
+<p>follows at half the pace, giving us plenty of</p>
+<p>time to see it and we play a dud shot into the</p>
+<p>net. Because of win/lose and fear of mistakes</p>
+<p>we tighten up and make mistakes.</p>
+<p>2. Consciously see the ball toss of your</p>
+<p>opponent. This is the moment to check in.</p>
+<p>(It is easy to be focused on a thought without</p>
+<p>realizing it so it is useful to consciously see</p>
+<p>this ball so you are not suddenly woken up</p>
+<p>3. Remember to see the ball bounce before you</p>
+<p>hit it. Many people lose their perception of</p>
+<p>time when their senses pick up the fact the</p>
+<p>ball is coming quickly. They panic. Instead of</p>
+<p>using the time that’s available they overeact</p>
+<p>and swing early. This leads to mis-timing the</p>
+<p>ball altogether.</p>
+<p>Learning to respond appropriately can be difficult</p>
+<p>to master. A useful exercise to practice is to have</p>
+<p>someone serve fast to you. Initially be content to just</p>
+<p>stop the ball with your racket without worrying about</p>
+<p>trying to return it. Notice the time after the bounce.</p>
+<p>Once you feel that you can see it clearly start trying</p>
+<p>to return the ball while watching it.</p>
+<p>If you are still feeling pressured you can create</p>
+<p>more time for yourself by moving further back in the</p>
+<p>court. As you become more confident with this</p>
+<p>process experiment with moving forward again. Have</p>
+<p>a little fun and see how far in you can stand and still</p>
+<p>see the ball. Remember this is a PRACTICE</p>
+<p>exercise.</p>
+<p>Over the years I’ve found that many people</p>
+<p>actually have a tendency to swing early on a return of</p>
+<p>serve. It appears to be a difficult shot to wait for.</p>
+<p>A final point about these moments before receiving</p>
+<p>serve and serving: Always wait until you are ready to</p>
+<p>play the point before you start. It is important to</p>
+<p>establish your own presence on the court. If an</p>
+<p>opposition player can rush you and pressure you to</p>
+<p>play the match at their tempo you may feel as though</p>
+<p>you are unable to settle into your own rhythm.</p>
+<p>Recently I participated in a public speaking course</p>
+<p>and it became quite noticeable to each of us how</p>
+<p>difficult it is to hold the audience’s attention at the</p>
+<p>beginning of a speech. Our nervous tension pushed us</p>
+<p>into starting our talk before we were really ready.</p>
+<p>One night we spent time practicing waiting at the</p>
+<p>podium before we spoke. Initially it was difficult to</p>
+<p>hang on until we had the audience’s attention but</p>
+<p>once we gained a little confidence it became clear</p>
+<p>how powerful this moment could be.</p>
+<p>In much the same way it is easy to step up to the</p>
+<p>line to serve and be driven by the extra adrenalin of</p>
+<p>the moment. So practice containing this urgency so</p>
+<p>that you establish early in the match that you are</p>
+<p>PRESENT.</p>
+<p>PLtACVYSIN 43 WATE ae ee GRAPH heaps ek</p>
+<p>Having spent some time familiarizing yourself with</p>
+<p>the previous chapters, it is important to decide, at any</p>
+<p>particular practice session, where your emphasis needs</p>
+<p>to lie. Do you need to watch the ball more closely</p>
+<p>after the bounce? Do you need to spend more time</p>
+<p>relaxing and monitoring your grip? And so on. For</p>
+<p>instance, you may feel that you are focused on the ball</p>
+<p>and seeing it clearly after the bounce, and yet you may</p>
+<p>not feel that you are hitting the ball well. If that’s the</p>
+<p>case then you may need to spend more time on</p>
+<p>relaxing your hand. In the end you might see yourself</p>
+<p>playing with the dials of your stereo turning up the</p>
+<p>base or treble until you get the tuning you want. This</p>
+<p>fine tuning might be slightly different each time or</p>
+<p>you may begin to notice that you need to work on</p>
+<p>one particular area more than others.</p>
+<p>Mysteriously A light illumines</p>
+<p>Ah Ha!!</p>
+<p>This the player sees.</p>
+<p>Early in my tennis coaching days I was tempted to</p>
+<p>give too much instruction. Each pupil seemed hungry</p>
+<p>for information and it was tempting to give them a</p>
+<p>detailed account of everything in their game that</p>
+<p>required change.</p>
+<p>Unfortunately, while that made me appear very</p>
+<p>knowledgeable, it rarely led to good results. Many</p>
+<p>times the pupil who had left in an optimistic frame of</p>
+<p>mind, armed with a mental recipe book for solving -</p>
+<p>any tennis problem, would return the next week</p>
+<p>frustrated and despondent at how their game had</p>
+<p>actually got worse, not better.</p>
+<p>In time I learnt to hold back information until</p>
+<p>they were ready to take in more. Managing change</p>
+<p>in their game meant striking a balance between</p>
+<p>getting rid of the old, creating the new and</p>
+<p>maintaining some stability in the process. By doing</p>
+<p>this they could make sustainable progress.</p>
+<p>However, for those who are extremely enthusiastic</p>
+<p>about getting on with things I would suggest they try</p>
+<p>to create more time for a concentrated approach.</p>
+<p>Sustainable change either needs to be gradual or</p>
+<p>requires a concentrated effort to bring it about.</p>
+<p>If your game has reached a plateau or you’re keen</p>
+<p>to break new ground, I would encourage you try a</p>
+<p>tennis sesshin in order to make smoother and quicker</p>
+<p>transitions in your game. In the Zen tradition sesshins</p>
+<p>(intensives) are designed to give practitioners the</p>
+<p>opportunity to gain deeper insights into their practice.</p>
+<p>The word sesshin actually means to unite the mind.</p>
+<p>During these sesshins, monks or keen practitioners of</p>
+<p>Zen would do more intensive periods of meditation,</p>
+<p>chanting and ceremony.</p>
+<p>A tennis sesshin gives you a chance to practice and</p>
+<p>combine the techniques discussed in this book and</p>
+<p>hopefully gain a glimpse of your game at a higher</p>
+<p>level.</p>
+<p>It’s important before’ you start your intensive that you</p>
+<p>have planned each detail so that you don’t find</p>
+<p>yourself having to make too many decisions during it.</p>
+<p>How long?</p>
+<p>The first decision to make is how long and how</p>
+<p>intense an experience you want. The Zen sesshins</p>
+<p>often last for seven days. The days are structured from</p>
+<p>early morning to night.</p>
+<p>How much time are you going to allot to your</p>
+<p>intensive? Have you a whole day, a weekend or a week?</p>
+<p>Who with?</p>
+<p>It would be ideal to have a group of like-minded</p>
+<p>people involved in the sesshin. There is strength in</p>
+<p>numbers. Obviously, as this is a tennis intensive, it will</p>
+<p>help if your hitting partners are at a similar level.</p>
+<p>However, as long as each person in the group has</p>
+<p>someone of comparable ability to hit with it won&#x27;t</p>
+<p>matter if there are varying standards within the group.</p>
+<p>Obviously for the meditation, meals and walking</p>
+<p>components, tennis ability is irrelevant.</p>
+<p>Whereabouts?</p>
+<p>Once you have been able to organize a group, work</p>
+<p>out where the sesshin will take place. Which tennis</p>
+<p>courts? Could you go into the country and make it a</p>
+<p>Preparation and acquisition of the food needs to be</p>
+<p>considered beforehand so that the routine is not</p>
+<p>interrupted. Having gone to the trouble of organizing</p>
+<p>this time try to make the food nutritious and</p>
+<p>enjoyable.</p>
+<p>Due to the high exercise component of the day it</p>
+<p>is important to have a high intake of complex</p>
+<p>carbohydrates. These foods include whole grains, fruit,</p>
+<p>breads, vegetables, pastas and potatoes. This will</p>
+<p>provide the necessary fuel for the day’s activities.</p>
+<p>Which meditation activities?</p>
+<p>Two important ones discussed are:</p>
+<p>1. Mantra meditation, which is useful for</p>
+<p>clearing the mind and is a similar process to</p>
+<p>watching the ball.</p>
+<p>2. Progressive relaxation can help you gain some</p>
+<p>body awareness and relaxation to take onto</p>
+<p>the court.</p>
+<p>Throughout the book we have looked at various</p>
+<p>exercises designed to create a greater awareness of our</p>
+<p>attitudes, thoughts, body and breath. Which of these</p>
+<p>exercises appeal to you? You may wish to practice one</p>
+<p>technique for the complete length of your intensive</p>
+<p>or you may wish to experiment with a range.</p>
+<p>Which tennis activities?</p>
+<p>When planning this aspect, consider some of the</p>
+<p>activities discussed in the book. Some of these are:</p>
+<p>¢ Watching the ball (see page 137).</p>
+<p>¢ Monitoring tension (see page 77).</p>
+<p>¢ Putting it all together, for example the</p>
+<p>serving and receiving exercises (see pages</p>
+<p>145-48).</p>
+<p>Stick to your timetable or else you’ll end up chopping</p>
+<p>and changing times too much. Once you’ve decided</p>
+<p>on your routine it’s valuable to slot yourself into it</p>
+<p>with as little fuss as possible.</p>
+<p>6.00 a.m.</p>
+<p>Early start. In a Zen sesshin a typical day might begin</p>
+<p>at 4.45 a.m. This would probably be a shock to most</p>
+<p>of us, so let’s try for a 6 a.m. rising. Take half an hour</p>
+<p>to wash and wake up.</p>
+<p>6.30 a.m.</p>
+<p>Either individually or as a group do some light</p>
+<p>stretching or have a half-hour walk. At this time in a</p>
+<p>Zen sesshin the participants would be in the midst of a</p>
+<p>two-and-a-half-hour Zazen/kinhin meditation. Make</p>
+<p>this very easy and gentle. It is a slow wake-up for the</p>
+<p>body, not an aerobic activity.</p>
+<p>7.00 a.m.</p>
+<p>This is meditation time. Which of the exercises have</p>
+<p>you chosen? Some of the possibilities are:</p>
+<p>* visualization exercise (page 100)</p>
+<p>* progressive relaxation (page 91);</p>
+<p>You might want to use a combination. Decide this</p>
+<p>in your planning session before the intensive begins.</p>
+<p>8.00 a.m.</p>
+<p>Breakfast. Try to make it healthy. Typical breakfast</p>
+<p>foods would be whole grain cereals (muesli), fruit,</p>
+<p>toast and high fiber wholemeal muffins. Make sure</p>
+<p>that you drink water regularly throughout the</p>
+<p>morning, especially in warm conditions.</p>
+<p>9.00 a.m.</p>
+<p>Warm up slowly. It is useful before you even hit a</p>
+<p>ball to do some Tai Chi tennis and slowly swing</p>
+<p>through a tennis routine. Focus on the feeling of your</p>
+<p>strokes flowing effortlessly. Now that your body is</p>
+<p>warm start with slow relaxed hitting. You could follow</p>
+<p>the Six-stage Hitting Plan and start by watching the</p>
+<p>ball as in Step 1. See how the time after the bounce</p>
+<p>feels. Do you feel urgent or relaxed. Then add the</p>
+<p>tig been Wee teks au ae 1 5 7.</p>
+<p>movement of Step 2. Feel yourself moving effortlessly</p>
+<p>around the court, following the flight and bounce of</p>
+<p>the ball.</p>
+<p>The last half hour of this time could be used for</p>
+<p>practicing serving and receiving rituals.</p>
+<p>10.30 a.m.</p>
+<p>Morning tea break — 30 minutes</p>
+<p>During this break you could talk over with your</p>
+<p>practice partner your experience of the morning. This</p>
+<p>could be a useful time to make a few notes as to other</p>
+<p>ideas, thoughts for future practice times.</p>
+<p>Fruit juice or easily digestible fruit like bananas</p>
+<p>would help keep the blood sugar levels up.</p>
+<p>11.00 a.m.</p>
+<p>If you felt comfortable with the processes in the</p>
+<p>earlier session then you could move on to using the</p>
+<p>next steps of the Six-stage Hitting Plan. This involves</p>
+<p>playing points. At first play points without worrying</p>
+<p>about the score. See if you hold your focus for the</p>
+<p>ball. You might check that you relax your hand on the</p>
+<p>racket between shots. Then move into scoring. Again</p>
+<p>observe whether you can maintain the same focus and</p>
+<p>relaxation.</p>
+<p>The last half hour could revolve around staying</p>
+<p>relaxed and focused at the net. Stay on your toes, keep</p>
+<p>your hands relaxed and look for the ball. Obviously,</p>
+<p>you will have less time to see the ball when you are at</p>
+<p>the net. This exercise is often done in short bursts.</p>
+<p>In a Zen sesshin this part of the morning could be</p>
+<p>filled with more Zazen mediation, chanting or a talk.</p>
+<p>12.30 p.m.</p>
+<p>Low fat, high carbohydrate meals for lunch could</p>
+<p>include sandwiches, salads, fruit or dried fruits.</p>
+<p>Control the amount you eat because you will be</p>
+<p>running around in less than an hour. Remember to</p>
+<p>drink a couple of glasses of water.</p>
+<p>2.00 p.m.</p>
+<p>Start with a warm up. Then if you have been happy</p>
+<p>with your progress this morning you could move into</p>
+<p>playing matches with normal tennis scoring. Again</p>
+<p>notice how you respond to the pressure. Can you</p>
+<p>maintain your attention for the ball and feel relaxed at</p>
+<p>the same time.</p>
+<p>Leave fifteen minutes at the end to warm down.</p>
+<p>You could go back to light hitting or you could do</p>
+<p>some light stretching.</p>
+<p>4.00 p.m.</p>
+<p>Having finished tennis for the day it would</p>
+<p>probably be useful to use this time to freshen up. Have</p>
+<p>a shower and change into some light comfortable</p>
+<p>clothes ready for your afternoon meditation session.</p>
+<p>4.30 p.m.</p>
+<p>Use the mediation technique you have chosen.</p>
+<p>You may wish at this stage to repeat the</p>
+<p>meditation technique you used this morning or you</p>
+<p>might like to try something different. If you had</p>
+<p>difficulty with an aspect of your game during the day,</p>
+<p>using the visualization, Meet the Inner Coach, might</p>
+<p>be useful.</p>
+<p>5.30 p.m.</p>
+<p>This could be a valuable time to fill out your</p>
+<p>journal to bring to the evening session. Write a short</p>
+<p>overview of the day. How was the experience of</p>
+<p>meditation? Could you hold your focus on the tennis</p>
+<p>court?</p>
+<p>6.30 p.m.</p>
+<p>The evening meal could consist of more complex</p>
+<p>carbohydrates such as pasta, vegetables, rice, potato,</p>
+<p>lentils and fruit salad. If your intensive is going for</p>
+<p>more than one day this meal will provide some of the</p>
+<p>fuel for tomorrow’s activities.</p>
+<p>7.30 p.m.</p>
+<p>Use this time for a group meeting. How are you</p>
+<p>feeling by this stage of the day? Tired? Relaxed? Did</p>
+<p>anyone have a breakthrough? Did anyone gain any</p>
+<p>new insights into their game? Are there similarities</p>
+<p>between your responses to pressure on the court and</p>
+<p>your responses in other areas? If it is only a one-day</p>
+<p>sesshin, what aspect of your game could you focus on</p>
+<p>when you return to your club? You could use this</p>
+<p>time to fill out the dream/goal sheet or the satori sheet</p>
+<p>and use these for discussion.</p>
+<p>10.00 p.m.</p>
+<p>During each day of the sesshin you have five hours</p>
+<p>of exercise blended with two hours of meditation.</p>
+<p>These times will draw on both physical and mental</p>
+<p>stamina. Being well rested is important.</p>
+<p>This concentrated time provided by a tennis sesshin</p>
+<p>will give you the opportunity to put into practice the</p>
+<p>processes and techniques described in this book so</p>
+<p>¢ the possibility that tennis can be used as a</p>
+<p>vehicle: for uncovering and transforming</p>
+<p>¢ the value of being fully focused in the</p>
+<p>* your true potential as a tennis player</p>
+<p>* the connections between your philosophy of</p>
+<p>tennis and your philosophy of life</p>
+<p>¢ the experience of satori.</p>
+<p>Bursts from the player’s racket</p>
+<p>Choreographed by the invisible strings</p>
+<p>Enacting the tragedies and triumphs</p>
+<p>Foreword by Evonne Goolagong Cawley</p>
+<p>| began to see a strong connection between Eastern ‘philosophies and their application to tennis. The satori</p>
+<p>experience, of being fully in the moment, found its expression</p>
+<p>in watching the ball. The flowing, gentle movements of Tai Chi became possible in tennis. The need for the balanced approach</p>
+<p>of hard and soft techniques of Kung Fu became obvious. The apparently distinct worlds of tennis and meditation started to come together.</p>
+<p>Zen. Tennis weaves strands of Eastern wisdom with Western sport «to produce a philosophy of tennis, of sport, and of life. The</p>
+<p>unique harmony of body, mind and emotion flowing together</p>
+<p>will motivate you and. increase your appreciation of the moment</p>
+<p>_ as.you strengthen and improve your tennis game.</p>
+<p>Discover how techniques such as focusing on the tennis ball, meditating between playing points and moving like a Crane on the court can improve your performance, clear your mind of</p>
+<p>distraction and increase your self-esteem.</p>
+<p>Zen Tennis is full of practical exercises that take place both on</p>
+<p>and off the tennis court. It features the art of Zen storytelling, with tennis-flavoured fables and poems. It will inspire you to</p>
+<p>i mms levels and lower your incidence of i injury.</p>
+<p>Paul Mutimer is testament Zen Tennis.</p>
+<p>He began adapting Eastern hisssport when he was sidelined by injury, helped in his recovery. He now works as d as a psychologist, and has developed a number of stress. and pain management courses based on his unique approach.</p>
+</section><footer class="end"><div class="sig">Tennis Books Library</div><div>English text extracted from the book's own PDF.</div></footer>
+</div>
+</div>
+</body>
+</html>
