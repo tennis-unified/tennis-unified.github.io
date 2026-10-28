@@ -31,8 +31,42 @@ SKIP_DIRS = {".git", "node_modules", "_tmp", ".workbuddy-ai"}
 # og:url while books/ was excluded, and the tool reported it as work to do.)
 SKIP_PREFIX = ("books/", "vi/books/")
 
-CANON_RE = re.compile(r'(<link\s+rel="canonical"\s+href=")([^"]*)(")', re.I)
-OGURL_RE = re.compile(r'(<meta\s+property="og:url"\s+content=")([^"]*)(")', re.I)
+# A tag-level reader, not a positional regex.
+#
+# The previous patterns were
+#     (<link\s+rel="canonical"\s+href=")([^"]*)(")
+#     (<meta\s+property="og:url"\s+content=")([^"]*)(")
+# and each matched exactly one spelling of its tag:
+#     <link rel="canonical" href="...">     matched
+#     <link href="..." rel="canonical">     missed
+#     <link href=... rel=canonical>         missed  (unquoted, legal HTML5)
+#
+# 69 pages in this tree use the third spelling, so this verifier reported a
+# clean tree -- "0 canonical rewrites" -- while 69 absolute canonicals were
+# still in it. A verifier that cannot see a syntax is not evidence about that
+# syntax. Parse the attributes instead; order and quoting stop mattering.
+TAG_RE = re.compile(r"<link\b[^>]*>|<meta\b[^>]*>", re.I)
+ATTR_RE = re.compile(r"""([\w:-]+)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))""")
+URL_ATTR = {"canonical": "href", "og:url": "content"}
+
+
+def _attr_spans(tag):
+    """name -> (value, value_start, value_end). First occurrence wins."""
+    out = {}
+    for m in ATTR_RE.finditer(tag):
+        gi = 2 if m.group(2) is not None else (3 if m.group(3) is not None else 4)
+        out.setdefault(m.group(1).lower(), (m.group(gi), m.start(gi), m.end(gi)))
+    return out
+
+
+def _tag_kind(tag, a):
+    if tag[:5].lower() == "<link":
+        if "canonical" in (a.get("rel", ("",))[0] or "").lower().split():
+            return "canonical"
+    elif (a.get("property", ("",))[0] or "").lower() == "og:url":
+        return "og:url"
+    return None
+
 
 HOST_RE = re.compile(r"^https?://([^/]+)(/.*)?$", re.I)
 
@@ -117,28 +151,42 @@ def main():
         except UnicodeDecodeError:
             continue
 
-        def sub(m, kind):
-            pre, url, post = m.group(1), m.group(2), m.group(3)
+        def handle(kind, tag, a):
+            """Rewrite the URL attribute of one tag in place, or return it unchanged."""
+            attr = URL_ATTR[kind]
+            if attr not in a:
+                return tag
+            url, s, e = a[attr]
             if not url.lower().startswith(("http://", "https://")):
-                return m.group(0)
+                return tag
             st, val = to_rootrel(url, rel)
             if st == "ok":
-                stats[kind] += 1
-                return pre + val + post
+                stats["canon" if kind == "canonical" else "ogurl"] += 1
+                return tag[:s] + val + tag[e:]
             if st == "self":
                 why, self_href = val
                 stats["self"] += 1
                 selfed.append((rel, url, self_href, why))
-                return pre + self_href + post
+                return tag[:s] + self_href + tag[e:]
             if st == "bad":
                 stats["bad"] += 1
                 bad.append((rel, url, val))
             else:
                 stats["skip"] += 1
-            return m.group(0)
+            return tag
 
-        new = CANON_RE.sub(lambda m: sub(m, "canon"), text)
-        new = OGURL_RE.sub(lambda m: sub(m, "ogurl"), new)
+        parts, last = [], 0
+        for m in TAG_RE.finditer(text):
+            tag = m.group(0)
+            kind = _tag_kind(tag, _attr_spans(tag))
+            if not kind:
+                continue
+            new_tag = handle(kind, tag, _attr_spans(tag))
+            if new_tag != tag:
+                parts.append(text[last:m.start()])
+                parts.append(new_tag)
+                last = m.end()
+        new = ("".join(parts) + text[last:]) if parts else text
 
         if new != text:
             changed += 1
