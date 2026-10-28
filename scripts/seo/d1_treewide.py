@@ -26,7 +26,10 @@ from urllib.parse import unquote, quote
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SKIP_DIRS = {".git", "node_modules", "_tmp", ".workbuddy-ai"}
-SKIP_PREFIX = ("books/",)  # book readers: not part of this job
+# The book shelf is another stream's working tree -- both languages, so the skip
+# has to be symmetric. (Asymmetric skipping let vi/books/ keep an absolute
+# og:url while books/ was excluded, and the tool reported it as work to do.)
+SKIP_PREFIX = ("books/", "vi/books/")
 
 CANON_RE = re.compile(r'(<link\s+rel="canonical"\s+href=")([^"]*)(")', re.I)
 OGURL_RE = re.compile(r'(<meta\s+property="og:url"\s+content=")([^"]*)(")', re.I)
