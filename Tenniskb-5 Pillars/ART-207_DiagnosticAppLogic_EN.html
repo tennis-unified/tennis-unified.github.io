@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600,1,300&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500,1,400&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="This article specifies the logic, algorithms, and data structures for a "5-Pillar Diagnostic App" — a clinical decision support tool that encodes the Tenni…">
+    <meta name="author" content="Henry Pham">
+    <link rel="canonical" href="https://tenniskb.github.io/Tenniskb-5%20Pillars/ART-207_DiagnosticAppLogic_EN.html">
+    <link rel="alternate" href="https://tenniskb.github.io/Tenniskb-5%20Pillars/ART-207_DiagnosticAppLogic_EN.html" hreflang="en">
+    <link rel="alternate" href="https://tenniskb.github.io/vi/Tenniskb-5%20Pillars/ART-207_DiagnosticAppLogic_VN.html" hreflang="vi">
+    <link rel="alternate" href="https://tenniskb.github.io/Tenniskb-5%20Pillars/ART-207_DiagnosticAppLogic_EN.html" hreflang="x-default">
+    <link rel="icon" href="../assets/images/favicon.png">
+    <title>ART-207: Diagnostic App Logic — The 5-Pillar Decision Engine - Tenniskb Pillars</title>
+    <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+    <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+    <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
+    <link rel="stylesheet" href="../assets/css/book-theme.css">
+    <link rel="stylesheet" href="../assets/css/site.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$']] }, options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] } };</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+  <link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
+<script src="/assets/javascripts/lang-toggle.js" defer></script>
+<script src="/assets/javascripts/darkmode.js" defer></script>
+</head>
+  <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<!-- FLATTENED-TOP-NAV-START -->
+<header class="mm-top"><a class="mm-brand" href="/">Tennis Unified</a><nav class="mm-nav" aria-label="Sections"><div class="mm-dropdown"><button class="mm-dropbtn" type="button" aria-haspopup="true" aria-expanded="false">Main <span class="mm-caret">&#9662;</span></button><div class="mm-dropmenu">
+        <a href="/">Home</a>
+        <a href="/fundamentals/">Fundamentals</a>
+        <a href="/doubles/">Doubles</a>
+        <a href="/stroke-analysis/">Stroke Analysis</a>
+        <a href="/coach-video-library/">Coach Library</a>
+        <a href="/tennis-video-library/">Video Library</a>
+        <a href="/tennis-technical-reference/">Technical Reference</a>
+        <a href="/tnkb/">Knowledgebase</a>
+        <a href="/tennis-evolution/">Tennis Evolution</a>
+        <a href="/blog/">Blog</a>
+        <a href="/book/">Master Book</a>
+        <a href="/books/">Books Catalog</a>
+        <a href="/books/court_diagrams.html">Court Diagrams</a>
+        <a href="/en/articles/">200 Articles</a>
+        <a href="/Tenniskb-5 Pillars/" class="active">5 Pillars</a>
+        <a href="/Tenniskb-10 Pillars/">10 Pillars</a>
+      </div></div></nav><div class="mm-right"><a class="tu-nav-lang mm-langbtn" href="/vi/Tenniskb-5 Pillars/" title="Switch language">🌐 VI</a><button class="tu-nav-darkmode mm-darkbtn" type="button" aria-pressed="false" title="Dark Mode"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button></div></header>
+<!-- FLATTENED-TOP-NAV-END -->
+
+<nav class="tu-breadcrumb" aria-label="Breadcrumb">
+  <ol class="tu-breadcrumb__list">
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/">Home</a></li>
+        <li class="tu-breadcrumb__sep">›</li>
+        <li class="tu-breadcrumb__item tu-breadcrumb__current" aria-current="page">5 Pillars</li>  </ol>
+</nav>
+
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip"><a href="#article-content" class="md-skip">Skip to content</a></div>
+    <div data-md-component="announce"></div>
+    <header class="md-header" data-md-component="header">
+      <nav class="md-header__inner md-grid" aria-label="Header">
+        <a href="../" title="Tennis Unified Library" class="md-header__button md-logo" aria-label="Tennis Unified Library"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg></a>
+        <label class="md-header__button md-icon" for="__drawer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></label>
+        <div class="md-header__title" data-md-component="header-title"><div class="md-header__ellipsis"><div class="md-header__topic"><span class="md-ellipsis">Tennis Unified Library</span></div><div class="md-header__topic" data-md-component="header-topic"><span class="md-ellipsis" id="header-title">Article</span></div></div></div>
+        <div class="md-header__option"><div class="md-select">
+          <button class="md-header__button md-icon" aria-label="Select language"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg></button>
+          <div class="md-select__inner"><ul class="md-select__list">
+            <li class="md-select__item"><a href="/Tenniskb-5 Pillars/" hreflang="en" class="md-select__link">English</a></li>
+            <li class="md-select__item"><a href="/vi/Tenniskb-5 Pillars/" hreflang="vi" class="md-select__link">Tiếng Việt</a></li>
+          </ul></div>
+        </div></div>
+      </nav>
+    </header>
+    <div class="md-container" data-md-component="container">
+      <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs"><div class="md-grid"><ul class="md-tabs__list">
+      <li class="md-tabs__item"><a href="../" class="md-tabs__link">Home</a></li>
+      <li class="md-tabs__item"><a href="../fundamentals/" class="md-tabs__link">Fundamentals</a></li>
+      <li class="md-tabs__item"><a href="../stroke-analysis/" class="md-tabs__link">Stroke Analysis</a></li>
+      <li class="md-tabs__item"><a href="../coach-video-library/" class="md-tabs__link">Coach Library</a></li>
+      <li class="md-tabs__item"><a href="../tennis-video-library/" class="md-tabs__link">Video Library</a></li>
+      <li class="md-tabs__item"><a href="../tennis-wiki-reference/" class="md-tabs__link">Wiki</a></li>
+      <li class="md-tabs__item"><a href="../reference-library/" class="md-tabs__link">Reference</a></li>
+      <li class="md-tabs__item"><a href="../specialty-shots/" class="md-tabs__link">Specialty</a></li>
+      <li class="md-tabs__item"><a href="../doubles/" class="md-tabs__link">Doubles</a></li>
+      <li class="md-tabs__item"><a href="../elite/" class="md-tabs__link">Elite</a></li>
+      <li class="md-tabs__item"><a href="../foundation/" class="md-tabs__link">Foundation</a></li>
+      <li class="md-tabs__item"><a href="../biomechanics-neurology/" class="md-tabs__link">Biomechanics</a></li>
+      <li class="md-tabs__item"><a href="../advanced/" class="md-tabs__link">Advanced</a></li>
+      <li class="md-tabs__item"><a href="../building-champions/" class="md-tabs__link">Champions</a></li>
+      <li class="md-tabs__item"><a href="../blog/" class="md-tabs__link">Blog</a></li>
+      <li class="md-tabs__item"><a href="../new-issue/" class="md-tabs__link">New Issue</a></li>
+      <li class="md-tabs__item"><a href="../tenniskb-legacy/" class="md-tabs__link">Legacy</a></li>
+      <li class="md-tabs__item"><a href="./" class="md-tabs__link">Tenniskb-5 Pillars</a></li>
+      </ul></div></nav>
+      <main class="md-main" data-md-component="main"><div class="md-main__inner md-grid">
+        <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation"><div class="md-sidebar__scrollwrap"><div class="md-sidebar__inner">
+          <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+            <label class="md-nav__title" for="__drawer"><a href="./" title="Tenniskb-5 Pillars" class="md-nav__button md-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg></a>Tenniskb-5 Pillars</label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              <li class="md-nav__item"><a href="./" class="md-nav__link">← Home</a></li>
+            </ul>
+          </nav></div></div></div>
+        <div class="md-content" data-md-component="content"><article class="md-content__inner md-typeset" id="article-content">
+<div id="article-body"><h1>ART-207: Diagnostic App Logic — The 5-Pillar Decision Engine</h1>
+<h2>Executive Summary</h2>
+<p>This article specifies the logic, algorithms, and data structures for a "5-Pillar Diagnostic App" — a clinical decision support tool that encodes the Tennis Knowledgebase into executable diagnostic pathways. It transforms 200 articles of expert knowledge into a structured, queryable, and auditable software system for coaches, medics, and athletes.</p>
+<h2>System Architecture: The Diagnostic Engine</h2>
+<h3>Core Philosophy</h3>
+<ul>
+<li><strong>Expert System, Not Black Box AI:</strong> Transparent rule-based logic derived from the 5-Pillar articles. Every recommendation traces to a specific ART reference.</li>
+<li><strong>Differential Diagnosis First:</strong> Never single-pathway. Always presents ranked differential with confidence intervals.</li>
+<li><strong>Action-Oriented Output:</strong> Diagnosis → Matched Protocol → Monitoring Gates → Review Date.</li>
+<li><strong>Athlete-Centric:</strong> Inputs are athlete-reported + coach-observed + sensor-derived. Outputs are personalized.</li>
+</ul>
+<h3>Data Model: The Athlete State Vector (ASV)</h3>
+<pre><code class="language-typescript">interface AthleteStateVector {
+  // Identity &amp; Context
+  athleteId: string;
+  timestamp: Date;
+  age: number;
+  biologicalAge: number;      // PHV offset
+  sex: 'M' | 'F';
+  handedness: 'R' | 'L';
+  playingStyle: 'Baseline' | 'All-Court' | 'Serve-Volley' | 'Counterpuncher';
+  currentRank: number;
+  targetRank: number;
+  surface: 'Clay' | 'Grass' | 'Hard' | 'Carpet';
+  phase: 'Base' | 'Pre-Comp' | 'Comp' | 'Transition';
+  daysSinceLastMatch: number;
+
+  // Pillar I: Biomechanics &amp; Medical
+  pillar1: {
+    grfProfile: 'Vertical' | 'Horizontal' | 'Linear' | 'Mixed';
+    kineticChainIntegrity: 'Intact' | 'Compromised' | 'Unknown';
+    hipSeparationDeg: number;        // Measured
+    xFactorDeg: number;              // Measured
+    coreBracingScore: 1-10;          // Subjective + Objective
+    injuryHistory: Injury[];         // Structured: site, type, date, RTP status
+    currentPain: PainMap[];          // Body chart + severity 0-10
+    romDeficits: ROMDeficit[];       // Joint, plane, degrees
+    strengthAsymmetries: Asymmetry[]; // Limb, metric, %
+    grfAsymmetryPct: number;         // Force plate derived
+  };
+
+  // Pillar II: Neuro-Cognitive &amp; Mental
+  pillar2: {
+    visualAcuity: number;            // LogMAR
+    contrastSensitivity: number;     // Pelli-Robson
+    depthPerception: 'Normal' | 'Reduced';
+    quietEyeMs: number;              // Eye-tracker derived
+    anticipationScore: number;       // Occlusion test %
+    decisionSpeedMs: number;         // Choice RT
+    workingMemorySpan: number;       // Digit span / n-back
+    attentionalControl: 'High' | 'Moderate' | 'Low'; // Questionnaire + Dual-task
+    csaI2rCognitive: number;         // CSAI-2R Cognitive Anxiety
+    csaI2rSomatic: number;           // CSAI-2R Somatic Anxiety
+    csaI2rConfidence: number;        // CSAI-2R Self-Confidence
+    pomsProfile: POMSProfile;        // Tension, Depression, Anger, Vigor, Fatigue, Confusion
+    routineFidelityPct: number;      // Between-point routine compliance
+    flowStateFrequency: 'Never' | 'Rare' | 'Sometimes' | 'Often' | 'Always';
+  };
+
+  // Pillar III: Technical Production
+  pillar3: {
+    serve: {
+      firstServePct: number;
+      firstServeSpeedKph: number;
+      firstServeSpinRpm: number;
+      firstServePlacementAccuracy: number; // % in target zone
+      secondServeSpinRpm: number;
+      secondServeDepthPct: number;
+      tossConsistencyScore: 1-10;
+      routineFidelityPct: number;
+    };
+    forehand: {
+      grip: 'Eastern' | 'SemiWestern' | 'Western';
+      contactHeightCm: number;
+      contactDistanceCm: number;
+      spinRpm: number;
+      speedKph: number;
+      depthPct: number;              // % past service line
+      consistencyPct: number;        // In court
+      insideOutPct: number;          // Usage rate
+    };
+    backhand: {
+      type: '1HBH' | '2HBH';
+      grip: string;
+      contactHeightCm: number;
+      spinRpm: number;
+      speedKph: number;
+      depthPct: number;
+      consistencyPct: number;
+      sliceUsagePct: number;
+      sliceQuality: 1-10;
+    };
+    volley: {
+      fhVolleyQuality: 1-10;
+      bhVolleyQuality: 1-10;
+      overheadQuality: 1-10;
+      transitionSuccessPct: number;
+    };
+    return: {
+      firstServeReturnInPlayPct: number;
+      secondServeAttackPct: number;
+      returnDepthPct: number;
+      neutralizePct: number;
+    };
+    movement: {
+      shuffleSpeedMs: number;
+      crossoverSpeedMs: number;
+      cod505TimeSec: number;
+      codProAgilityTimeSec: number;
+      recoveryStepEfficiency: 1-10;
+    };
+  };
+
+  // Pillar IV: Tactics &amp; Geometry
+  pillar4: {
+    patternLibrary: Pattern[];       // Named patterns with success rates
+    firstStrikeEfficiencyPct: number;
+    patternUnpredictabilityIndex: number; // Entropy measure
+    courtPositionHeatmap: Heatmap;   // Time spent in zones
+    tacticalDecisionAccuracy: number; // % optimal choices per scouting
+    scoutingDossierQuality: 1-10;    // Opponent prep completeness
+    gamePlanAdherencePct: number;    // % points played per plan
+    momentumManagementScore: 1-10;   // Coach rated
+    scoreboardPressurePerformance: {
+      breakPointSavePct: number;
+      breakPointConvertPct: number;
+      setPointPerformance: 'Strong' | 'Average' | 'Weak';
+      matchPointPerformance: 'Strong' | 'Average' | 'Weak';
+    };
+    environmentalAdaptability: {
+      wind: 'High' | 'Moderate' | 'Low';
+      sun: 'High' | 'Moderate' | 'Low';
+      altitude: 'High' | 'Moderate' | 'Low';
+    };
+  };
+
+  // Pillar V: Conditioning &amp; Flow
+  pillar5: {
+    physical: {
+      vo2maxMlKgMin: number;
+      masKph: number;
+      rsaTotalTimeSec: number;       // Repeated Sprint Ability
+      rsaFatigueIndex: number;
+      cmjHeightCm: number;
+      cmjRsi: number;                // Reactive Strength Index
+      sprint10mTimeSec: number;
+      sprint20mTimeSec: number;
+      cod505Sec: number;
+      proAgilitySec: number;
+      strengthBenchPress1rmKg: number;
+      strengthSquat1rmKg: number;
+      strengthPullUpReps: number;
+      nordicsEccentricDurationSec: number;
+      injuryRiskScore: number;       // Composite 0-100
+    };
+    recovery: {
+      hrvBaselineMs: number;
+      hrvCurrentMs: number;
+      hrvTrend7d: 'Rising' | 'Stable' | 'Falling';
+      sleepDurationHrs: number;
+      sleepEfficiencyPct: number;
+      sleepConsistencyScore: 1-10;   // Bed/wake time variance
+      wellnessScore: 1-10;           // Daily questionnaire
+      muscleSoreness: 1-10;          // Daily
+      fatigueLevel: 1-10;            // Daily
+    };
+    nutrition: {
+      dailyEnergyAvailabilityKcalKgFfm: number;
+      carbIntakeGkg: number;
+      proteinIntakeGkg: number;
+      hydrationStatus: 'Euhydrated' | 'Hypohydrated';
+      supplementCompliance: 'Full' | 'Partial' | 'None';
+    };
+    mental: {
+      gritScore: number;             // Grit Scale
+      resilienceScore: number;       // Connor-Davidson
+      confidenceLevel: number;       // 1-10
+      motivationProfile: 'Intrinsic' | 'Extrinsic' | 'Amotivated';
+      burnoutRisk: 'Low' | 'Moderate' | 'High'; // MBI
+    };
+    travel: {
+      tluLast7Days: number;          // Travel Load Units
+      timeZonesCrossedLast14Days: number;
+      circadianAlignmentScore: 1-10;
+    };
+  };
+}
+</code></pre>
+<h2>Diagnostic Algorithms: The Decision Trees</h2>
+<h3>Algorithm 1: Performance Drop Differential (ART-171 Slump Audit)</h3>
+<p><strong>Input:</strong> ASV with performance trend flag (KPIs declining &gt; 2 weeks)
+<strong>Process:</strong></p>
+<pre><code>1. CHECK Pillar V Recovery Flags:
+   IF hrvTrend7d == 'Falling' AND wellnessScore &lt; 6 AND fatigueLevel &gt; 6
+     → PRIMARY: Physical Slump (ART-171 Physical Exit Protocol)
+     → CONFIDENCE: HIGH
+   ELSE IF injuryRiskScore &gt; 70 OR currentPain.max &gt; 4
+     PRIMARY: Physical/Medical Slump
+     CONFIDENCE: HIGH
+
+2. CHECK Pillar II Mental Flags:
+   IF csaI2rCognitive &gt; 25 OR routineFidelityPct &lt; 80 OR flowStateFrequency in ['Never','Rare']
+     → PRIMARY: Mental Slump (ART-171 Mental Exit Protocol)
+     CONFIDENCE: HIGH
+
+3. CHECK Pillar III Technical Flags:
+   IF serve.firstServePct &lt; baseline - 10% OR forehand.consistencyPct &lt; baseline - 15%
+     → PRIMARY: Technical Slump (ART-171 Technical Exit Protocol)
+     CONFIDENCE: MODERATE
+
+4. CHECK Pillar IV Tactical Flags:
+   IF patternUnpredictabilityIndex &lt; baseline - 20% OR gamePlanAdherencePct &lt; 50%
+     → PRIMARY: Tactical Slump (ART-171 Tactical Exit Protocol)
+     CONFIDENCE: MODERATE
+
+5. CHECK Environmental:
+   IF tluLast7Days &gt; 50 OR timeZonesCrossedLast14Days &gt; 6
+     → CONTRIBUTORY: Environmental Slump (ART-169 Travel Protocol)
+
+OUTPUT: Ranked Differential Diagnosis with Confidence % + Matched Exit Protocols
+</code></pre>
+<h3>Algorithm 2: Pressure Failure Classification (ART-176 Choke vs Panic)</h3>
+<p><strong>Input:</strong> Match event data + ASV physiological/cognitive markers
+<strong>Process:</strong></p>
+<pre><code>FOR each pressure failure event (BP faced, MP, Set Point, Tiebreak):
+  COLLECT: HR at event, HRV pre-event, self-report cognitive load, video behavioral coding
+
+  IF (HR &lt; 85% max) AND (cognitive load self-report == 'High - Technical') 
+     AND (behavioral: frozen, late contact, abbreviated swing)
+     → DIAGNOSIS: CHOKING (PFC Hyperactivity)
+     → PROTOCOL: ART-176 Anti-Choking (PFC Quiet)
+
+  ELSE IF (HR &gt; 90% max) AND (cognitive load == 'Blank / Fear') 
+     AND (behavioral: rushed, chaotic, tunnel vision, gasping)
+     → DIAGNOSIS: PANICKING (Amygdala Hijack)
+     → PROTOCOL: ART-176 Anti-Panicking (Amygdala Calm)
+
+  ELSE IF (HR &gt; 90% max) AND (cognitive load == 'High - Technical') 
+     → DIAGNOSIS: CHOKE-PANIC SPIRAL
+     → PROTOCOL: SEQUENTIAL — Panic First (Physio Reset), Then Choke (PFC Quiet)
+
+OUTPUT: Event-by-Event Classification + Session Protocol Prescription
+</code></pre>
+<h3>Algorithm 3: Injury RTP Readiness (ART-148, ART-174)</h3>
+<p><strong>Input:</strong> ASV medical/physical pillars + surgeon clearance
+<strong>Process:</strong></p>
+<pre><code>RTP_STAGE = 0
+IF surgeonClearance == TRUE AND painAtRest == 0 AND sleepNormalized == TRUE:
+  RTP_STAGE = 1  // Protection Phase Complete
+
+IF romSymmetryPct &gt; 95 AND strengthSymmetryPct &gt; 90 
+   AND forcePlateSymmetryPct &gt; 90 AND yBalanceSymmetryPct &gt; 90:
+  RTP_STAGE = 2  // Load Introduction Ready
+
+IF trainingWeeksPainFreeHighIntensity &gt;= 3 
+   AND psychologicalReadinessScore &gt; 80 (ACL-RSI/TSRQ)
+   AND trustMetricDaily &gt; 8 FOR 14 consecutive days:
+  RTP_STAGE = 3  // Competition Simulation Ready
+
+IF practiceMatchWins &gt; 2 at target intensity 
+   AND noPainNoCompensation 7 consecutive days:
+  RTP_STAGE = 4  // Full Return Authorized
+
+OUTPUT: Current RTP Stage + Gates to Next Stage + Specific Deficits
+</code></pre>
+<h3>Algorithm 4: "Uncoachable" Profile Classification (ART-175)</h3>
+<p><strong>Input:</strong> Coach observation log + ASV cognitive/physical/relational data
+<strong>Process:</strong></p>
+<pre><code>SCORES = {
+  cognitive: teachBackAccuracyPct,          // Target 100%
+  autonomy: athleteInitiativesPerSession,   // Target &gt; 2
+  physical: movementScreenSymmetryPct,      // Target &gt; 90%
+  relational: parentCoachAlignmentScore,    // Target: Aligned
+  environmental: athleteEngagementScore     // Target &gt; 8/10
+}
+
+PRIMARY_PROFILE = argmin(SCORES)  // Lowest scoring domain
+
+IF PRIMARY_PROFILE == 'cognitive' AND teachBackAccuracyPct &lt; 70:
+  → DIAGNOSIS: Cognitive Mismatch (ART-175 Protocol 1)
+
+ELSE IF PRIMARY_PROFILE == 'autonomy' AND athleteInitiativesPerSession == 0:
+  → DIAGNOSIS: Autonomy/Trust Deficit (ART-175 Protocol 2)
+
+ELSE IF PRIMARY_PROFILE == 'physical' AND movementScreenSymmetryPct &lt; 80:
+  → DIAGNOSIS: Physical Limitation (ART-175 Protocol 3)
+
+ELSE IF PRIMARY_PROFILE == 'relational' AND parentCoachAlignmentScore in ['Tension','Conflict']:
+  → DIAGNOSIS: Triangle Fracture (ART-175 Protocol 4)
+
+ELSE IF PRIMARY_PROFILE == 'environmental' AND athleteEngagementScore &lt; 5:
+  → DIAGNOSIS: Environmental Misfit (ART-175 Protocol 5)
+
+OUTPUT: Primary Profile + Secondary Contributors + Matched Reconstruction Protocol
+</code></pre>
+<h3>Algorithm 5: Style Change Readiness (ART-172)</h3>
+<p><strong>Input:</strong> Athlete request + ASV technical/physical/mental + coach assessment
+<strong>Process:</strong></p>
+<pre><code>READINESS_SCORE = 0
+
+// Strategic Necessity (0-25 pts)
+IF currentStyleCeilingEvidence == STRONG: READINESS_SCORE += 25
+ELSE IF currentStyleCeilingEvidence == MODERATE: READINESS_SCORE += 15
+ELSE: READINESS_SCORE += 5
+
+// Physical Capacity Match (0-25 pts)
+IF physicalToolsForNewStyle == EXCELLENT: READINESS_SCORE += 25
+ELSE IF physicalToolsForNewStyle == ADEQUATE: READINESS_SCORE += 15
+ELSE: READINESS_SCORE += 5
+
+// Time Budget (0-25 pts)
+IF protectionWindowMonths &gt;= 12: READINESS_SCORE += 25
+ELSE IF protectionWindowMonths &gt;= 6: READINESS_SCORE += 15
+ELSE: READINESS_SCORE += 5
+
+// Psychological Buy-In (0-25 pts)
+IF athleteAutonomyScore == HIGH: READINESS_SCORE += 25
+ELSE IF athleteAutonomyScore == MODERATE: READINESS_SCORE += 15
+ELSE: READINESS_SCORE += 5
+
+IF READINESS_SCORE &gt;= 80: GREEN_LIGHT = TRUE
+ELSE IF READINESS_SCORE &gt;= 60: YELLOW_LIGHT = TRUE (Conditional)
+ELSE: RED_LIGHT = TRUE
+
+OUTPUT: Readiness Score (0-100), Traffic Light, Specific Conditions if Yellow/Red
+</code></pre>
+<h3>Algorithm 6: Late-Career (35+) Adaptation Prescription (ART-173)</h3>
+<p><strong>Input:</strong> ASV age &gt; 35 + all pillar data
+<strong>Process:</strong></p>
+<pre><code>PRESCRIPTION = {
+  biomechanics: [
+    &quot;Shorten swing: Early prep, compact finish&quot;,
+    &quot;Serve: Placement + Spin &gt; Velocity. Body serve weapon&quot;,
+    &quot;Movement: Slide/Glide &gt; Sprint/Stop. Hold baseline&quot;,
+    &quot;Daily 15-min Prehab: Hip, Thoracic, Ankle, Scapular&quot;
+  ],
+  neurocognitive: [
+    &quot;Video occlusion 3x/week: Anticipation training&quot;,
+    &quot;Quiet Eye: Extend fixation 200ms&quot;,
+    &quot;Decision tree: Reduce to 3 core patterns&quot;,
+    &quot;Cognitive OFF periods: No tennis analysis outside practice&quot;
+  ],
+  technical: [
+    &quot;Weapon audit: Keep only &gt;70% reliability shots&quot;,
+    &quot;High% architecture: Serve 65%+, Cross-court depth, Heavy spin&quot;,
+    &quot;Equipment: RA &lt; 62, Tension -4 to -6 lbs, Gut/Poly hybrid&quot;
+  ],
+  tactical: [
+    &quot;Game plan: Make them play MY game&quot;,
+    &quot;Serve +1 FH dictate, Return +1 deep cross neutralize&quot;,
+    &quot;Energy mgmt: Tank low-leverage, Surge high-leverage&quot;,
+    &quot;Target weakness relentlessly&quot;
+  ],
+  conditioning: [
+    &quot;Ratio: 1 High Day : 2 Low Days. NO back-to-back high&quot;,
+    &quot;S&amp;C: Heavy/Low Volume (3x5@85%), Med Ball/Plyo Low Vol Max Intent&quot;,
+    &quot;Daily 20-min mobility + Fascial hydration&quot;,
+    &quot;Recovery Stack: Sleep 9-10h, Protein 2.5-3g/kg, Omega-3 3-4g, Creatine 5g, Collagen 15g+VitC&quot;,
+    &quot;Modalities budget = Priority: Contrast, Compression, Soft Tissue, Red Light, Sauna&quot;,
+    &quot;HRV Daily. ACWR &lt; 1.1. Red Flag = Immediate Deload&quot;
+  ],
+  scheduling: [
+    &quot;Surface: Prioritize best (Hard/Grass &gt; Clay for joints)&quot;,
+    &quot;Draw: Realistic QF/SF path. Avoid grind weeks&quot;,
+    &quot;Travel: Minimize TZ jumps. Cluster geographically&quot;,
+    &quot;Recovery window: Min 10 days between finals (ideal 14+)&quot;,
+    &quot;Block Periodization: Build 6wk/1wk, Peak 3wk/2wk, Maintain 2wk/1wk, Regen 1wk/3wk&quot;
+  ]
+}
+
+OUTPUT: Personalized Masters Protocol Document
+</code></pre>
+<h2>App Interface Specification</h2>
+<h3>Input Modules</h3>
+<ol>
+<li><strong>Daily Morning Check-In (2 min):</strong> Wellness, HRV, Sleep, Pain Map, Motivation</li>
+<li><strong>Weekly Coach Input (10 min):</strong> Technical/Tactical Ratings, Video Tags, Session RPE</li>
+<li><strong>Monthly Testing Battery (60 min):</strong> Physical, Technical, Cognitive, Medical</li>
+<li><strong>Event-Triggered:</strong> Match Data Import (Hawk-Eye/Video), Injury Report, Travel Log</li>
+</ol>
+<h3>Output Modules</h3>
+<ol>
+<li><strong>Dashboard (Real-Time):</strong> Traffic Light KPIs, Trend Arrows, Red Flags</li>
+<li><strong>Diagnostic Report (On-Demand):</strong> Differential Diagnosis, Confidence %, Protocol Links</li>
+<li><strong>Session Plan Generator (Daily):</strong> Constraints, Volume, Feedback Schedule, Focus Cues</li>
+<li><strong>Weekly/Monthly/Quarterly Reviews:</strong> Trend Analysis, Protocol Adherence, Pivot Recommendations</li>
+<li><strong>Alert System:</strong> Push Notifications for Red Flags (HRV drop, Pain spike, ACWR spike, RTP gate miss)</li>
+</ol>
+<h3>Audit Trail &amp; Explainability</h3>
+<ul>
+<li>Every recommendation logs: <strong>Rule ID, ART Reference, Input Values, Confidence %, Timestamp</strong></li>
+<li>Coach/Athlete can query: "Why this protocol?" → Shows decision tree path</li>
+<li>Monthly "Explainability Audit": Random sample of 10 recommendations reviewed for clinical accuracy</li>
+</ul>
+<h2>Data Governance &amp; Privacy</h2>
+<ul>
+<li><strong>Athlete Owns Data:</strong> Export/Delete anytime. Sharing = Explicit Opt-In per recipient.</li>
+<li><strong>Medical Data:</strong> Encrypted separate vault. Access = Medical Team only (Coach sees only RTP Stage).</li>
+<li><strong>Retention:</strong> Active career + 7 years. Anonymized for research after consent.</li>
+<li><strong>Compliance:</strong> GDPR, HIPAA, COPPA (juniors), WADA (supplement/TUE logs).</li>
+</ul>
+<h2>Implementation Roadmap</h2>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Scope</th>
+<th>Timeline</th>
+<th>Success Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MVP (Phase 1)</strong></td>
+<td>Algorithms 1-3 (Slump, Pressure, RTP) + Daily Check-In + Dashboard</td>
+<td>3 months</td>
+<td>10 beta athletes, &gt;90% diagnostic agreement with expert panel</td>
+</tr>
+<tr>
+<td><strong>Phase 2</strong></td>
+<td>Algorithms 4-6 (Uncoachable, Style Change, Masters) + Session Plan Generator</td>
+<td>3 months</td>
+<td>50 athletes, 5 coaches, protocol adherence &gt; 85%</td>
+</tr>
+<tr>
+<td><strong>Phase 3</strong></td>
+<td>Full Testing Battery Integration + Video Auto-Tagging + Predictive Analytics</td>
+<td>6 months</td>
+<td>200 athletes, predictive accuracy &gt; 80% for injury/slump</td>
+</tr>
+<tr>
+<td><strong>Phase 4</strong></td>
+<td>Multi-Language (EN/VN/ES) + Coach Certification Program + API for Federation Integration</td>
+<td>6 months</td>
+<td>1000+ users, federation adoption</td>
+</tr>
+</tbody>
+</table>
+<h2>Practical Application: "The Stethoscope"</h2>
+<p>The Diagnostic App is the <strong>Stethoscope of the 5-Pillar System</strong>. It doesn't replace the doctor (Coach/Medic) — it amplifies their hearing. It hears the murmurs (HRV drift, technical regression, cognitive load) before they become crashes. <strong>Use it daily. Trust its differentials. Verify its prescriptions. The athlete's career is the patient.</strong></p></div>
+<hr />
+<div style="display:flex;justify-content:space-between;align-items:center;margin:20px 0;flex-wrap:wrap;gap:12px;">
+  <a id="nav-prev" class="md-button" href="#" style="text-decoration:none;">← <span id="nav-prev-label">Prev</span></a>
+  <a id="nav-home" class="md-button md-button--primary" href="./" style="text-decoration:none;">🏠 Home</a>
+  <a id="nav-next" class="md-button" href="#" style="text-decoration:none;"><span id="nav-next-label">Next</span> →</a>
+</div>
+</article></div></div>
+  <button type="button" class="md-top md-icon" data-md-component="top" hidden><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>Back to top</button>
+</main>
+  <footer class="md-footer"><div class="md-footer-meta md-typeset"><div class="md-footer-meta__inner md-grid"><div class="md-copyright"><div class="md-copyright__highlight">© 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.</div></div></div></div></footer>
+</div><div class="md-dialog" data-md-component="dialog"><div class="md-dialog__inner md-typeset"></div></div>
+<script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs","navigation.sections","navigation.top","navigation.path","navigation.expand","navigation.indexes","navigation.prune","navigation.prev_next","navigation.footer","search.highlight","search.suggest","alternate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard","clipboard.copy": "Copy to clipboard","search.result.more.one": "1 more on this page","search.result.more.other": "# more on this page","search.result.none": "No matching documents","search.result.one": "1 matching document","search.result.other": "# matching documents","search.result.placeholder": "Type to start searching","search.result.term.missing": "Missing","select.version": "Select version"}, "version": null}</script>
+<script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../assets/js/extra.js"></script>
+
+</body></html>

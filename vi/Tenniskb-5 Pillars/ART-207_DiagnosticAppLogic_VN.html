@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="vi" class="no-js">
+  <head>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600,1,300&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500,1,400&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Bài Viết Này Chi Tiết Logic, Thuật Toán, Và Cấu Trúc Dữ Liệu Cho Một "App Chẩn Đoán 5 Cột Trụ" — Một Công Cụ Hỗ Trợ Quyết Định Lâm Sàng Mã Hóa Tennis Knowl…">
+    <meta name="author" content="Henry Pham">
+    <link rel="canonical" href="https://tenniskb.github.io/vi/Tenniskb-5%20Pillars/ART-207_DiagnosticAppLogic_VN.html">
+    <link rel="alternate" href="https://tenniskb.github.io/vi/Tenniskb-5%20Pillars/ART-207_DiagnosticAppLogic_VN.html" hreflang="vi">
+    <link rel="alternate" href="https://tenniskb.github.io/Tenniskb-5%20Pillars/ART-207_DiagnosticAppLogic_EN.html" hreflang="x-default">
+    <link rel="alternate" href="https://tenniskb.github.io/Tenniskb-5%20Pillars/ART-207_DiagnosticAppLogic_EN.html" hreflang="en">
+    <link rel="icon" href="../../assets/images/favicon.png">
+    <title>ART-207: Logic App Chẩn Đoán — Động Cơ Quyết Định 5 Cột Trụ - Tenniskb Pillars</title>
+    <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+    <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+    <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
+    <link rel="stylesheet" href="../../assets/css/book-theme.css">
+    <link rel="stylesheet" href="../../assets/css/site.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$']] }, options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] } };</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+  <link rel="stylesheet" href="/assets/stylesheets/cerulean.min.css">
+<script src="/assets/javascripts/lang-toggle.js" defer></script>
+<script src="/assets/javascripts/darkmode.js" defer></script>
+</head>
+  <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<!-- FLATTENED-TOP-NAV-START -->
+<header class="mm-top"><a class="mm-brand" href="/vi/">Tennis Unified</a><nav class="mm-nav" aria-label="Sections"><div class="mm-dropdown"><button class="mm-dropbtn" type="button" aria-haspopup="true" aria-expanded="false">Main <span class="mm-caret">&#9662;</span></button><div class="mm-dropmenu">
+        <a href="/vi/">Trang chủ</a>
+        <a href="/vi/fundamentals/">Nền tảng</a>
+        <a href="/vi/doubles/">Đánh đôi</a>
+        <a href="/vi/stroke-analysis/">Phân tích cú đánh</a>
+        <a href="/vi/coach-video-library/">Thư viện HLV</a>
+        <a href="/vi/tennis-video-library/">Thư viện Video</a>
+        <a href="/vi/tennis-technical-reference/">Tra cứu kỹ thuật</a>
+        <a href="/tnkb/vi/index.html">Kho Tri Thức</a>
+        <a href="/vi/tennis-evolution/">Tiến hóa quần vợt</a>
+        <a href="/vi/blog/">Bài viết</a>
+        <a href="/vi/book/">Sách Toàn diện</a>
+        <a href="/vi/books/">Tủ sách Tennis</a>
+        <a href="/vi/books/court_diagrams.html">Sơ đồ chiến thuật</a>
+        <a href="/vi/articles/">200 Bài Viết</a>
+        <a href="/vi/Tenniskb-5 Pillars/" class="active">5 Trụ Cột</a>
+        <a href="/vi/Tenniskb-10 Pillars/">10 Trụ Cột</a>
+      </div></div></nav><div class="mm-right"><a class="tu-nav-lang mm-langbtn" href="/Tenniskb-5 Pillars/" title="Switch language">🌐 EN</a><button class="tu-nav-darkmode mm-darkbtn" type="button" aria-pressed="false" title="Dark Mode"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button></div></header>
+<!-- FLATTENED-TOP-NAV-END -->
+
+<nav class="tu-breadcrumb" aria-label="Breadcrumb">
+  <ol class="tu-breadcrumb__list">
+    <li class="tu-breadcrumb__item"><a class="tu-breadcrumb__link" href="/vi/">Trang Chủ</a></li>
+        <li class="tu-breadcrumb__sep">›</li>
+        <li class="tu-breadcrumb__item tu-breadcrumb__current" aria-current="page">5 Pillars</li>  </ol>
+</nav>
+
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip"><a href="#article-content" class="md-skip">Skip to content</a></div>
+    <div data-md-component="announce"></div>
+    <header class="md-header" data-md-component="header">
+      <nav class="md-header__inner md-grid" aria-label="Header">
+        <a href="../../" title="Tennis Unified Library" class="md-header__button md-logo" aria-label="Tennis Unified Library"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg></a>
+        <label class="md-header__button md-icon" for="__drawer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></label>
+        <div class="md-header__title" data-md-component="header-title"><div class="md-header__ellipsis"><div class="md-header__topic"><span class="md-ellipsis">Tennis Unified Library</span></div><div class="md-header__topic" data-md-component="header-topic"><span class="md-ellipsis" id="header-title">Bài Viết</span></div></div></div>
+        <div class="md-header__option"><div class="md-select">
+          <button class="md-header__button md-icon" aria-label="Select language"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg></button>
+          <div class="md-select__inner"><ul class="md-select__list">
+            <li class="md-select__item"><a href="/Tenniskb-5 Pillars/" hreflang="en" class="md-select__link">English</a></li>
+            <li class="md-select__item"><a href="/vi/Tenniskb-5 Pillars/" hreflang="vi" class="md-select__link">Tiếng Việt</a></li>
+          </ul></div>
+        </div></div>
+      </nav>
+    </header>
+    <div class="md-container" data-md-component="container">
+      <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs"><div class="md-grid"><ul class="md-tabs__list">
+      <li class="md-tabs__item"><a href="../../" class="md-tabs__link">Trang Chủ</a></li>
+      <li class="md-tabs__item"><a href="../fundamentals/" class="md-tabs__link">Nền Tảng</a></li>
+      <li class="md-tabs__item"><a href="../stroke-analysis/" class="md-tabs__link">Phân Tích Cú Đánh</a></li>
+      <li class="md-tabs__item"><a href="../coach-video-library/" class="md-tabs__link">Thư Viện Huấn Luyện Viên</a></li>
+      <li class="md-tabs__item"><a href="../tennis-video-library/" class="md-tabs__link">Thư Viện Video</a></li>
+      <li class="md-tabs__item"><a href="../tennis-wiki-reference/" class="md-tabs__link">Wiki</a></li>
+      <li class="md-tabs__item"><a href="../reference-library/" class="md-tabs__link">Tham Khảo</a></li>
+      <li class="md-tabs__item"><a href="../specialty-shots/" class="md-tabs__link">Cú Đánh Đặc Biệt</a></li>
+      <li class="md-tabs__item"><a href="../doubles/" class="md-tabs__link">Đôi</a></li>
+      <li class="md-tabs__item"><a href="../elite/" class="md-tabs__link">Tầng Cao</a></li>
+      <li class="md-tabs__item"><a href="../foundation/" class="md-tabs__link">Nền Tảng (Foundation)</a></li>
+      <li class="md-tabs__item"><a href="../biomechanics-neurology/" class="md-tabs__link">Cơ Sinh Học</a></li>
+      <li class="md-tabs__item"><a href="../advanced/" class="md-tabs__link">Nâng Cao</a></li>
+      <li class="md-tabs__item"><a href="../building-champions/" class="md-tabs__link">Xây Dựng Nhà Vô Địch</a></li>
+      <li class="md-tabs__item"><a href="../blog/" class="md-tabs__link">Blog</a></li>
+      <li class="md-tabs__item"><a href="../new-issue/" class="md-tabs__link">Sản Phẩm Mới</a></li>
+      <li class="md-tabs__item"><a href="../tenniskb-legacy/" class="md-tabs__link">Lưu Trữ</a></li>
+      <li class="md-tabs__item"><a href="./" class="md-tabs__link">Tenniskb-5 Pillars</a></li>
+      </ul></div></nav>
+      <main class="md-main" data-md-component="main"><div class="md-main__inner md-grid">
+        <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation"><div class="md-sidebar__scrollwrap"><div class="md-sidebar__inner">
+          <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+            <label class="md-nav__title" for="__drawer"><a href="./" title="Tenniskb-5 Pillars" class="md-nav__button md-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg></a>Tenniskb-5 Pillars</label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              <li class="md-nav__item"><a href="./" class="md-nav__link">← Trang Chủ</a></li>
+            </ul>
+          </nav></div></div></div>
+        <div class="md-content" data-md-component="content"><article class="md-content__inner md-typeset" id="article-content">
+<div id="article-body"><h1>ART-207: Logic App Chẩn Đoán — Động Cơ Quyết Định 5 Cột Trụ</h1>
+<h2>Tóm Tắt Điều Hành</h2>
+<p>Bài Viết Này Chi Tiết Logic, Thuật Toán, Và Cấu Trúc Dữ Liệu Cho Một "App Chẩn Đoán 5 Cột Trụ" — Một Công Cụ Hỗ Trợ Quyết Định Lâm Sàng Mã Hóa Tennis Knowledgebase Thành Các Đường Dẫn Chẩn Đoán Có Thể Thực Thi. Nó Chuyển Đổi 200 Bài Viết Kiến Thức Chuyên Gia Thành Một Hệ Thống Phần Mềm Có Cấu Trúc, Có Thể Truy Vấn, Và Có Thể Kiểm Toán Cho HLV, Y Tế, Và Vận Động Viên.</p>
+<h2>Kiến Trúc Hệ Thống: Động Cơ Chẩn Đoán</h2>
+<h3>Triết Lý Cốt Lõi</h3>
+<ul>
+<li><strong>Hệ Thống Chuyên Gia, Không Phải AI Hộp Đen:</strong> Logic Dựa Trên Quy Tắc Minh Bạch Được Dẫn Xuất Từ Các Bài 5 Cột Trụ. Mọi Khuyến Nghị Đều Truy Vết Đến Một Bài ART Cụ Thể.</li>
+<li><strong>Chẩn Đoán Phân Biệt Trước Hết:</strong> Không Bao Giờ Đường Đi Đơn Độc. Luôn Trình Bày Chẩn Đoán Phân Biệt Có Xếp Hạng Với Khoảng Tin Cậy.</li>
+<li><strong>Đầu Ra Hướng Hành Động:</strong> Chẩn Đoán → Giao Thức Khớp → Cửa Giám Sát → Ngày Xem Xét Lại.</li>
+<li><strong>Trung Tâm Vận Động Viên:</strong> Đầu Vào Là Báo Cáo Của VĐ + Quan Sát Của HLV + Dữ Liệu Cảm Biến. Đầu Ra Được Cá Nhân Hóa.</li>
+</ul>
+<h3>Mô Hình Dữ Liệu: Vector Trạng Thái Vận Động Viên (ASV)</h3>
+<pre><code class="language-typescript">interface AthleteStateVector {
+  // Danh Tính &amp; Bối Cảnh
+  athleteId: string;
+  timestamp: Date;
+  age: number;
+  biologicalAge: number;      // Độ lệch PHV
+  sex: 'M' | 'F';
+  handedness: 'R' | 'L';
+  playingStyle: 'Baseline' | 'All-Court' | 'Serve-Volley' | 'Counterpuncher';
+  currentRank: number;
+  targetRank: number;
+  surface: 'Clay' | 'Grass' | 'Hard' | 'Carpet';
+  phase: 'Base' | 'Pre-Comp' | 'Comp' | 'Transition';
+  daysSinceLastMatch: number;
+
+  // Cột Trụ I: Sinh Cơ Học &amp; Y Tế
+  pillar1: {
+    grfProfile: 'Vertical' | 'Horizontal' | 'Linear' | 'Mixed';
+    kineticChainIntegrity: 'Intact' | 'Compromised' | 'Unknown';
+    hipSeparationDeg: number;        // Đã Đo
+    xFactorDeg: number;              // Đã Đo
+    coreBracingScore: 1-10;          // Chủ Quan + Khách Quan
+    injuryHistory: Injury[];         // Có Cấu Trúc: vị trí, loại, ngày, trạng thái RTP
+    currentPain: PainMap[];          // Sơ Đồ Cơ Thể + Mức Độ 0-10
+    romDeficits: ROMDeficit[];       // Khớp, Phẳng, Độ
+    strengthAsymmetries: Asymmetry[]; // Chi, Chỉ Số, %
+    grfAsymmetryPct: number;         // Dẫn Xuất Bàn Đạp Lực
+  };
+
+  // Cột Trụ II: Thần Kinh-Nhận Thức &amp; Tinh Thần
+  pillar2: {
+    visualAcuity: number;            // LogMAR
+    contrastSensitivity: number;     // Pelli-Robson
+    depthPerception: 'Normal' | 'Reduced';
+    quietEyeMs: number;              // Dẫn Xuất Eye-Tracker
+    anticipationScore: number;       // Test Che Khuất %
+    decisionSpeedMs: number;         // RT Lựa Chọn
+    workingMemorySpan: number;       // Digit Span / n-back
+    attentionalControl: 'High' | 'Moderate' | 'Low'; // Khảo Sát + Dual-Task
+    csaI2rCognitive: number;         // CSAI-2R Lo Âu Nhận Thức
+    csaI2rSomatic: number;           // CSAI-2R Lo Âu Thể Chất
+    csaI2rConfidence: number;        // CSAI-2R Tự Tin
+    pomsProfile: POMSProfile;        // Căng Thẳng, Trầm Cảm, Tức Giận, Sức Sống, Mệt Mỏi, Hỗn Loạn
+    routineFidelityPct: number;      // Độ Trung Thực Nghi Thức Giữa Các Điểm
+    flowStateFrequency: 'Never' | 'Rare' | 'Sometimes' | 'Often' | 'Always';
+  };
+
+  // Cột Trụ III: Sản Xuất Kỹ Thuật
+  pillar3: {
+    serve: {
+      firstServePct: number;
+      firstServeSpeedKph: number;
+      firstServeSpinRpm: number;
+      firstServePlacementAccuracy: number; // % Trong Vùng Mục Tiêu
+      secondServeSpinRpm: number;
+      secondServeDepthPct: number;
+      tossConsistencyScore: 1-10;
+      routineFidelityPct: number;
+    };
+    forehand: {
+      grip: 'Eastern' | 'SemiWestern' | 'Western';
+      contactHeightCm: number;
+      contactDistanceCm: number;
+      spinRpm: number;
+      speedKph: number;
+      depthPct: number;              // % Qua Vạch Giao Bóng
+      consistencyPct: number;        // Trong Sân
+      insideOutPct: number;          // Tỷ Lệ Sử Dụng
+    };
+    backhand: {
+      type: '1HBH' | '2HBH';
+      grip: string;
+      contactHeightCm: number;
+      spinRpm: number;
+      speedKph: number;
+      depthPct: number;
+      consistencyPct: number;
+      sliceUsagePct: number;
+      sliceQuality: 1-10;
+    };
+    volley: {
+      fhVolleyQuality: 1-10;
+      bhVolleyQuality: 1-10;
+      overheadQuality: 1-10;
+      transitionSuccessPct: number;
+    };
+    return: {
+      firstServeReturnInPlayPct: number;
+      secondServeAttackPct: number;
+      returnDepthPct: number;
+      neutralizePct: number;
+    };
+    movement: {
+      shuffleSpeedMs: number;
+      crossoverSpeedMs: number;
+      cod505TimeSec: number;
+      codProAgilityTimeSec: number;
+      recoveryStepEfficiency: 1-10;
+    };
+  };
+
+  // Cột Trụ IV: Chiến Thuật &amp; Hình Học
+  pillar4: {
+    patternLibrary: Pattern[];       // Các Mẫu Được Đặt Tên Với Tỷ Lệ Thành Công
+    firstStrikeEfficiencyPct: number;
+    patternUnpredictabilityIndex: number; // Chỉ Số Entropy
+    courtPositionHeatmap: Heatmap;   // Thời Gian Trong Các Vùng
+    tacticalDecisionAccuracy: number; // % Lựa Chọn Tối Ưu Theo Trinh Sát
+    scoutingDossierQuality: 1-10;    // Độ Hoàn Chỉnh Của Chuẩn Bị Đối Thủ
+    gamePlanAdherencePct: number;    // % Điểm Chơi Theo Kế Hoạch
+    momentumManagementScore: 1-10;   // HLV Đánh Giá
+    scoreboardPressurePerformance: {
+      breakPointSavePct: number;
+      breakPointConvertPct: number;
+      setPointPerformance: 'Strong' | 'Average' | 'Weak';
+      matchPointPerformance: 'Strong' | 'Average' | 'Weak';
+    };
+    environmentalAdaptability: {
+      wind: 'High' | 'Moderate' | 'Low';
+      sun: 'High' | 'Moderate' | 'Low';
+      altitude: 'High' | 'Moderate' | 'Low';
+    };
+  };
+
+  // Cột Trụ V: Điều Kiện &amp; Dòng Chảy
+  pillar5: {
+    physical: {
+      vo2maxMlKgMin: number;
+      masKph: number;
+      rsaTotalTimeSec: number;       // Repeated Sprint Ability
+      rsaFatigueIndex: number;
+      cmjHeightCm: number;
+      cmjRsi: number;                // Reactive Strength Index
+      sprint10mTimeSec: number;
+      sprint20mTimeSec: number;
+      cod505Sec: number;
+      proAgilitySec: number;
+      strengthBenchPress1rmKg: number;
+      strengthSquat1rmKg: number;
+      strengthPullUpReps: number;
+      nordicsEccentricDurationSec: number;
+      injuryRiskScore: number;       // Tổng Hợp 0-100
+    };
+    recovery: {
+      hrvBaselineMs: number;
+      hrvCurrentMs: number;
+      hrvTrend7d: 'Rising' | 'Stable' | 'Falling';
+      sleepDurationHrs: number;
+      sleepEfficiencyPct: number;
+      sleepConsistencyScore: 1-10;   // Độ Lệch Giờ Ngủ/Thức
+      wellnessScore: 1-10;           // Khảo Sát Hàng Ngày
+      muscleSoreness: 1-10;          // Hàng Ngày
+      fatigueLevel: 1-10;            // Hàng Ngày
+    };
+    nutrition: {
+      dailyEnergyAvailabilityKcalKgFfm: number;
+      carbIntakeGkg: number;
+      proteinIntakeGkg: number;
+      hydrationStatus: 'Euhydrated' | 'Hypohydrated';
+      supplementCompliance: 'Full' | 'Partial' | 'None';
+    };
+    mental: {
+      gritScore: number;             // Grit Scale
+      resilienceScore: number;       // Connor-Davidson
+      confidenceLevel: number;       // 1-10
+      motivationProfile: 'Intrinsic' | 'Extrinsic' | 'Amotivated';
+      burnoutRisk: 'Low' | 'Moderate' | 'High'; // MBI
+    };
+    travel: {
+      tluLast7Days: number;          // Travel Load Units
+      timeZonesCrossedLast14Days: number;
+      circadianAlignmentScore: 1-10;
+    };
+  };
+}
+</code></pre>
+<h2>Thuật Toán Chẩn Đoán: Các Cây Quyết Định</h2>
+<h3>Thuật Toán 1: Phân Biệt Giảm Hiệu Suất (Kiểm Toán Suy Thoái ART-171)</h3>
+<p><strong>Đầu Vào:</strong> ASV Với Cờ Xu Hướng Hiệu Suất (KPIs Giảm &gt; 2 Tuần)
+<strong>Quy Trình:</strong></p>
+<pre><code>1. KIỂM TRA Cờ Cột Trụ V Phục Hồi:
+   NẾU hrvTrend7d == 'Falling' VÀ wellnessScore &lt; 6 VÀ fatigueLevel &gt; 6
+     → CHÍNH: Suy Thoái Thể Chất (Giao Thức Thoát Thể Chất ART-171)
+     → ĐỘ TIN CẬY: CAO
+   NẾU injuryRiskScore &gt; 70 HOẶC currentPain.max &gt; 4
+     CHÍNH: Suy Thoái Thể Chất/Y Tế
+     ĐỘ TIN CẬY: CAO
+
+2. KIỂM TRA Cờ Cột Trụ II Tinh Thần:
+   NẾU csaI2rCognitive &gt; 25 HOẶC routineFidelityPct &lt; 80 HOẶC flowStateFrequency Trong ['Never','Rare']
+     → CHÍNH: Suy Thoái Tinh Thần (Giao Thức Thoát Tinh Thần ART-171)
+     ĐỘ TIN CẬY: CAO
+
+3. KIỂM TRA Cờ Cột Trụ III Kỹ Thuật:
+   NẾU serve.firstServePct &lt; baseline - 10% HOẶC forehand.consistencyPct &lt; baseline - 15%
+     → CHÍNH: Suy Thoái Kỹ Thuật (Giao Thức Thoát Kỹ Thuật ART-171)
+     ĐỘ TIN CẬY: TRUNG BÌNH
+
+4. KIỂM TRA Cờ Cột Trụ IV Chiến Thuật:
+   NẾU patternUnpredictabilityIndex &lt; baseline - 20% HOẶC gamePlanAdherencePct &lt; 50%
+     → CHÍNH: Suy Thoái Chiến Thuật (Giao Thức Thoát Chiến Thuật ART-171)
+     ĐỘ TIN CẬY: TRUNG BÌNH
+
+5. KIỂM TRA Môi Trường:
+   NẾU tluLast7Days &gt; 50 HOẶC timeZonesCrossedLast14Days &gt; 6
+     → GÓP PHẦN: Suy Thoái Môi Trường (Giao Thức Du Lịch ART-169)
+
+ĐẦU RA: Chẩn Đoán Phân Biết Có Xếp Hạng Với % Tin Cậy + Các Giao Thức Thoát Khớp
+</code></pre>
+<h3>Thuật Toán 2: Phân Loại Thất Bại Dưới Áp Lực (ART-176 Sụp Đổ vs Hoảng Loạn)</h3>
+<p><strong>Đầu Vào:</strong> Dữ Liệu Sự Kiện Trận Đấu + Các Chỉ Dấu Sinh Học/Nhận Thức ASV
+<strong>Quy Trình:</strong></p>
+<pre><code>CHO TỪNG SỰ KIỆN THẤT BÁI DƯỚI ÁP LỰC (Đối mặt BP, MP, Set Point, Tiebreak):
+  THU THẬP: HR tại sự kiện, HRV trước sự kiện, báo cáo tải nhận thức tự thân, mã hóa hành vi video
+
+  NẾU (HR &lt; 85% max) VÀ (báo cáo tải nhận thức == 'Cao - Kỹ Thuật') 
+     VÀ (hành vi: đóng băng, tiếp xúc muộn, vung rút gọn)
+     → CHẨN ĐOÁN: SÚP ĐỔ (PFC Hoạt Động Quá Mức)
+     → GIAO THỨC: ART-176 Chống Sụp Đổ (Im PFC)
+
+  NẾU (HR &gt; 90% max) VÀ (tải nhận thức == 'Trắng / Nỗi Sợ') 
+     VÀ (hành vi: vội vã, hỗn loạn, thị giác hầm, thở dốc)
+     → CHẨN ĐOÁN: HOẢNG LOẠN (Amygdala Hijack)
+     → GIAO THỨC: ART-176 Chống Hoảng Loạn (Bình Ổn Amygdala)
+
+  NẾU (HR &gt; 90% max) VÀ (tải nhận thức == 'Cao - Kỹ Thuật') 
+     → CHẨN ĐOÁN: VÒNG XOÁY SÚP ĐỔ-HOẢNG LOẠN
+     → GIAO THỨC: TUẦN TỰ — Hoảng Loạn Trước (Reset Sinh Lý), Rồi Sụp Đổ (Im PFC)
+
+ĐẦU RA: Phân Loại Từng Sự Kiện + kê Đơn Giao Thức Phiên
+</code></pre>
+<h3>Thuật Toán 3: Sẵn Sàng RTP Sau Chấn Thương (ART-148, ART-174)</h3>
+<p><strong>Đầu Vào:</strong> ASV Y Tế/Thể Chất + Quyết Định Bác Sĩ Phẫu Thuật
+<strong>Quy Trình:</strong></p>
+<pre><code>RTP_STAGE = 0
+NẾU surgeonClearance == TRUE VÀ painAtRest == 0 VÀ sleepNormalized == TRUE:
+  RTP_STAGE = 1  // Hoàn Thành Giai Đoạn Bảo Vệ
+
+NẾU romSymmetryPct &gt; 95 VÀ strengthSymmetryPct &gt; 90 
+   VÀ forcePlateSymmetryPct &gt; 90 VÀ yBalanceSymmetryPct &gt; 90:
+  RTP_STAGE = 2  // Sẵn Sàng Giới Thiệu Tải
+
+NẾU trainingWeeksPainFreeHighIntensity &gt;= 3 
+   VÀ psychologicalReadinessScore &gt; 80 (ACL-RSI/TSRQ)
+   VÀ trustMetricDaily &gt; 8 CHO 14 NGÀY LIÊN TIẾP:
+  RTP_STAGE = 3  // Sẵn Sàng Mô Phỏng Thi Đấu
+
+NẾU practiceMatchWins &gt; 2 Ở Cường Độ Mục Tiêu 
+   VÀ noPainNoCompensation 7 NGÀY LIÊN TIẾP:
+  RTP_STAGE = 4  // Cho Phép Trở Lại Đầy Đủ
+
+ĐẦU RA: Giai Đoạn RTP Hiện Tại + Các Cửa Đến Giai Đoạn Tiếp + Các Thiếu Hụt Cụ Thể
+</code></pre>
+<h3>Thuật Toán 4: Phân Loại Hồ Sơ "Không Huấn Luyện Được" (ART-175)</h3>
+<p><strong>Đầu Vào:</strong> Nhật Ký Quan Sát Của HLV + Dữ Liệu Nhận Thức/Thể Chất/Quan Hệ ASV
+<strong>Quy Trình:</strong></p>
+<pre><code>SCORES = {
+  cognitive: teachBackAccuracyPct,          // Mục Tiêu 100%
+  autonomy: athleteInitiativesPerSession,   // Mục Tiêu &gt; 2
+  physical: movementScreenSymmetryPct,      // Mục Tiêu &gt; 90%
+  relational: parentCoachAlignmentScore,    // Mục Tiêu: Căn Chỉnh
+  environmental: athleteEngagementScore     // Mục Tiêu &gt; 8/10
+}
+
+PRIMARY_PROFILE = argmin(SCORES)  // Lĩnh Vực Điểm Thấp Nhất
+
+NẾU PRIMARY_PROFILE == 'cognitive' VÀ teachBackAccuracyPct &lt; 70:
+  → CHẨN ĐOÁN: Không Khớp Nhận Thức (Giao Thức 1 ART-175)
+
+NẾU PRIMARY_PROFILE == 'autonomy' VÀ athleteInitiativesPerSession == 0:
+  → CHẨN ĐOÁN: Thiếu Hụt Tự Chủ/Niềm Tin (Giao Thức 2 ART-175)
+
+NẾU PRIMARY_PROFILE == 'physical' VÀ movementScreenSymmetryPct &lt; 80:
+  → CHẨN ĐOÁN: Hạn Chế Thể Chất (Giao Thức 3 ART-175)
+
+NẾU PRIMARY_PROFILE == 'relational' VÀ parentCoachAlignmentScore Trong ['Tension','Conflict']:
+  → CHẨN ĐOÁN: Vỡ Tan Tam Giác (Giao Thức 4 ART-175)
+
+NẾU PRIMARY_PROFILE == 'environmental' VÀ athleteEngagementScore &lt; 5:
+  → CHẨN ĐOÁN: Không Phù Hợp Môi Trường (Giao Thức 5 ART-175)
+
+ĐẦU RA: Hồ Sơ Chính + Các Yếu Tố Góp Phần Phụ + Giao Thức Tái Cấu Trúc Khớp
+</code></pre>
+<h3>Thuật Toán 5: Sẵn Sàng Thay Đổi Lối Chơi (ART-172)</h3>
+<p><strong>Đầu Vào:</strong> Yêu Cầu Của VĐ + ASV Kỹ Thuật/Thể Chất/Tinh Thần + Đánh Giá Của HLV
+<strong>Quy Trình:</strong></p>
+<pre><code>READINESS_SCORE = 0
+
+// Tính Cần Thiết Chiến Lược (0-25 Điểm)
+NẾU currentStyleCeilingEvidence == STRONG: READINESS_SCORE += 25
+NẾU currentStyleCeilingEvidence == MODERATE: READINESS_SCORE += 15
+KHÔNG: READINESS_SCORE += 5
+
+// Phù Hợp Năng Lực Thể Chất (0-25 Điểm)
+NẾU physicalToolsForNewStyle == EXCELLENT: READINESS_SCORE += 25
+NẾU physicalToolsForNewStyle == ADEQUATE: READINESS_SCORE += 15
+KHÔNG: READINESS_SCORE += 5
+
+// Ngân Sách Thời Gian (0-25 Điểm)
+NẾU protectionWindowMonths &gt;= 12: READINESS_SCORE += 25
+NẾU protectionWindowMonths &gt;= 6: READINESS_SCORE += 15
+KHÔNG: READINESS_SCORE += 5
+
+// Sự Đồng Ý Tâm Lý (0-25 Điểm)
+NẾU athleteAutonomyScore == HIGH: READINESS_SCORE += 25
+NẾU athleteAutonomyScore == MODERATE: READINESS_SCORE += 15
+KHÔNG: READINESS_SCORE += 5
+
+NẾU READINESS_SCORE &gt;= 80: GREEN_LIGHT = TRUE
+NẾU READINESS_SCORE &gt;= 60: YELLOW_LIGHT = TRUE (Có Điều Kiện)
+KHÔNG: RED_LIGHT = TRUE
+
+ĐẦU RA: Điểm Sẵn Sàng (0-100), Đèn Giao Thông, Điều Kiện Cụ Thể Nếu Vàng/Đỏ
+</code></pre>
+<h3>Thuật Toán 6: Chỉ Đơn Thích Ứng Cho VĐ 35+ (ART-173)</h3>
+<p><strong>Đầu Vào:</strong> ASV Tuổi &gt; 35 + Dữ Liệu Tất Cả Các Cột Trụ
+<strong>Quy Trình:</strong></p>
+<pre><code>PRESCRIPTION = {
+  biomechanics: [
+    &quot;Rút gọn vung: Chuẩn bị sớm, finish gọn&quot;,
+    &quot;Giao bóng: Vị trí + Xoáy &gt; Tốc độ. Giao vào người thành vũ khí&quot;,
+    &quot;Di chuyển: Trượt/Trôi &gt; Sprint/Phanh. Giữ cuối sân&quot;,
+    &quot;Prehab 15p/ngày: Hông, Ngực, Cổ chân, Cái Kẻ&quot;
+  ],
+  neurocognitive: [
+    &quot;Che khuất video 3 lần/tuần: Huấn luyện dự đoán&quot;,
+    &quot;Quiet Eye: Kéo dài cố định 200ms&quot;,
+    &quot;Cây quyết định: Giảm xuống 3 mẫu cốt lõi&quot;,
+    &quot;Khoảng tắt nhận thức: Không phân tích tennis ngoài tập&quot;
+  ],
+  technical: [
+    &quot;Kiểm toán vũ khí: Chỉ giữ cú đánh &gt;70% độ tin cậy&quot;,
+    &quot;Kiến trúc % cao: Giao bóng 65%+, Chéo sâu, Xoáy nặng&quot;,
+    &quot;Trang bị: RA &lt; 62, Độ căng -4 đến -6 lbs, Lai Ruột/Poly&quot;
+  ],
+  tactical: [
+    &quot;Kế hoạch trận: Buộc họ chơi game CỦA TÔI&quot;,
+    &quot;Giao +1 Thuận Tay chỉ đạo, Trả +1 Chéo Sâu Trung Hòa&quot;,
+    &quot;Quản lý năng lượng: Bỏ điểm lợi thế thấp, Tấn công điểm then chốt&quot;,
+    &quot;Nhắm vào điểm yếu liên tục&quot;
+  ],
+  conditioning: [
+    &quot;Tỷ lệ: 1 Ngày Cao : 2 Ngày Thấp. KHÔNG ngày cao liên tiếp&quot;,
+    &quot;S&amp;C: Nặng/Thể tích thấp (3x5@85%), Bóng Y/Plyo Thể tích thấp Ý định tối đa&quot;,
+    &quot;Hàng ngày 20p Linh hoạt + Thủy hóa màng&quot;,
+    &quot;Stack Phục Hồi: Ngủ 9-10h, Protein 2.5-3g/kg, Omega-3 3-4g, Creatine 5g, Collagen 15g+VitC&quot;,
+    &quot;Modalities ngân sách = Ưu tiên: Tương phản, Áp suất, Mềm mô, Đèn đỏ, Sauna&quot;,
+    &quot;HRV Hàng ngày. ACWR &lt; 1.1. Cờ Đỏ = Giảm Tải Ngay Lập Tức&quot;
+  ],
+  scheduling: [
+    &quot;Mặt sân: Ưu tiên mặt sân tốt nhất (Cứng/Cỏ &gt; Đất Nện cho khớp)&quot;,
+    &quot;Đội hình: Con đường thực tế đến Tứ Kết/Bán Kết. Tránh tuần mài mòn&quot;,
+    &quot;Du lịch: Tối thiểu hóa nhảy múi giờ. Gom cụm địa lý&quot;,
+    &quot;Cửa sổ phục hồi: Tối thiểu 10 ngày giữa các chung kết (Lý tưởng 14+)&quot;,
+    &quot;Chu Kỳ Hóa Khối: Xây Dựng 6 Tuần/1 Tuần, Đỉnh 3 Tuần/2 Tuần, Duy Trì 2 Tuần/1 Tuần, Tái Tạo 1 Tuần/3 Tuần&quot;
+  ]
+}
+
+ĐẦU RA: Tài Liệu Giao Thức Bậc Thầy Cá Nhân Hóa
+</code></pre>
+<h2>Thông Tích Giao Diện App</h2>
+<h3>Các Module Đầu Vào</h3>
+<ol>
+<li><strong>Check-In Sáng Hàng Ngày (2p):</strong> Wellness, HRV, Ngủ, Sơ Đồ Đau, Động Lực</li>
+<li><strong>Đầu Vào HLV Hàng Tuần (10p):</strong> Đánh Giá Kỹ Thuật/Chiến Thuật, Gắn Thẻ Video, Session RPE</li>
+<li><strong>Thử Thách Hàng Tháng (60p):</strong> Thể Chất, Kỹ Thuật, Nhận Thức, Y Tế</li>
+<li><strong>Kích Hoạt Bởi Sự Kiện:</strong> Nhập Dữ Liệu Trận Đấu (Hawk-Eye/Video), Báo Cáo Chấn Thương, Nhật Ký Du Lịch</li>
+</ol>
+<h3>Các Module Đầu Ra</h3>
+<ol>
+<li><strong>Bảng Điều Khiển (Thời Gian Thực):</strong> Đèn Giao Thông KPIs, Mũi Tên Xu Hướng, Cờ Đỏ</li>
+<li><strong>Báo Cáo Chẩn Đoán (Theo Yêu Cầu):</strong> Chẩn Đoán Phân Biệt, % Tin Cậy, Link Giao Thức</li>
+<li><strong>Trình Tạo Kế Hoạch Buổi Tập (Hàng Ngày):</strong> Ràng Buộc, Thể Tích, Lịch Phản Hồi, Gợi Ý Tập Trung</li>
+<li><strong>Xem Xét Hàng Tuần/Tháng/Quý:</strong> Phân Tích Xu Hướng, Tuân Thủ Giao Thức, Khuyến Nghị Chuyển Trục</li>
+<li><strong>Hệ Thống Cảnh Báo:</strong> Thông Báo Đẩy Cho Cờ Đỏ (Giảm HRV, Tăng Đau, Tăng ACWR, Bỏ Lỡ Cửa RTP)</li>
+</ol>
+<h3>Nhật Ký Kiểm Toán &amp; Giải Thích</h3>
+<ul>
+<li>Mọi Khuyến Nghị Ghi Log: <strong>Rule ID, Tham Chiếu ART, Giá Trị Đầu Vào, % Tin Cậy, Dấu Thời Gian</strong></li>
+<li>HLV/VĐ Có Thể Truy Vấn: "Tại Sao Giao Thức Này?" → Hiển Thị Đường Dẫn Cây Quyết Định</li>
+<li>"Kiểm Toán Giải Thích" Hàng Tháng: Mẫu Ngẫu Nhiên 10 Khuyến Nghị Được Xem Xét Độ Chính Xác Lâm Sàng</li>
+</ul>
+<h2>Quản Trị Dữ Liệu &amp; Quyền Riêng Tư</h2>
+<ul>
+<li><strong>VĐ Sở Hữu Dữ Liệu:</strong> Xuất/Xoá Bất Kỳ Lúc Nào. Chia Sẻ = Opt-In Tường Minh Mỗi Người Nhận.</li>
+<li><strong>Dữ Liệu Y Tế:</strong> Kho Lưu Trữ Mã Hoá Riêng. Truy Cập = Đội Y Tế (HLV Chỉ Thấy Giai Đoạn RTP).</li>
+<li><strong>Lưu Trữ:</strong> Suốt Sự Nghiệp Hoạt Động + 7 Năm. Ẩn Danh Cho Nghiên Cứu Sau Khi Đồng Ý.</li>
+<li><strong>Tuân Thủ:</strong> GDPR, HIPAA, COPPA (Trẻ Em), WADA (Nhật Ký Bổ Sung/TUE).</li>
+</ul>
+<h2>Lộ Trình Triển Khai</h2>
+<table>
+<thead>
+<tr>
+<th>Giai Đoạn</th>
+<th>Phạm Vi</th>
+<th>Thời Gian</th>
+<th>Tiêu Chí Thành Công</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MVP (Giai Đoạn 1)</strong></td>
+<td>Thuật Toán 1-3 (Suy Thoái, Áp Lực, RTP) + Check-In Hàng Ngày + Bảng Điều Khiển</td>
+<td>3 Tháng</td>
+<td>10 VĐ Beta, &gt;90% Đồng Thuận Chẩn Đoán Với Hội Đồng Chuyên Gia</td>
+</tr>
+<tr>
+<td><strong>Giai Đoạn 2</strong></td>
+<td>Thuật Toán 4-6 (Không HLV Được, Đổi Lối Chơi, Bậc Thầy) + Trình Tạo Kế Hoạch Buổi Tập</td>
+<td>3 Tháng</td>
+<td>50 VĐ, 5 HLV, Tuân Thủ Giao Thức &gt; 85%</td>
+</tr>
+<tr>
+<td><strong>Giai Đoạn 3</strong></td>
+<td>Tích Hợp Thử Thách Đầy Đủ + Gắn Thẻ Video Tự Động + Phân Tích Dự Đoán</td>
+<td>6 Tháng</td>
+<td>200 VĐ, Độ Chính Xác Dự Đoán &gt; 80% Cho Chấn Thương/Suy Thoái</td>
+</tr>
+<tr>
+<td><strong>Giai Đoạn 4</strong></td>
+<td>Đa Ngôn Ngữ (EN/VN/ES) + Chương Trình Chứng Chỉ HLV + API Tích Hợp Liên Đoàn</td>
+<td>6 Tháng</td>
+<td>1000+ Người Dùng, Áp Dụng Bởi Liên Đoàn</td>
+</tr>
+</tbody>
+</table>
+<h2>Ứng Dụng Thực Tế: "Cái Ong Nghề"</h2>
+<p>App Chẩn Đoán Là <strong>Cái Ong Nghề Của Hệ Thống 5 Cột Trụ</strong>. Nó Không Thay Thế Bác Sĩ (HLV/Y Tế) — Nó Khuếch Đại Thính Giác Của Họ. Nó Nghe Những Tiêu Âm (Trôi HRV, Quay Lùi Kỹ Thuật, Tải Nhận Thức) Trước Khi Chúng Trở Thành Vụ Sập. <strong>Sử Dụng Hàng Ngày. Tin Cậy Chẩn Đoán Phân Biệt. Xác Minh Đơn Thuốc. Sự Nghiệp Của VĐ Là Bệnh Nhân.</strong></p></div>
+<hr />
+<div style="display:flex;justify-content:space-between;align-items:center;margin:20px 0;flex-wrap:wrap;gap:12px;">
+  <a id="nav-prev" class="md-button" href="#" style="text-decoration:none;">← <span id="nav-prev-label">Trước</span></a>
+  <a id="nav-home" class="md-button md-button--primary" href="./" style="text-decoration:none;">🏠 Trang Chủ</a>
+  <a id="nav-next" class="md-button" href="#" style="text-decoration:none;"><span id="nav-next-label">Tiếp Theo</span> →</a>
+</div>
+</article></div></div>
+  <button type="button" class="md-top md-icon" data-md-component="top" hidden><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>Back to top</button>
+</main>
+  <footer class="md-footer"><div class="md-footer-meta md-typeset"><div class="md-footer-meta__inner md-grid"><div class="md-copyright"><div class="md-copyright__highlight">© 2026 Henry Phạm Đức · Tennis Future Lab Research · All contents are for educational purpose.</div></div></div></div></footer>
+</div><div class="md-dialog" data-md-component="dialog"><div class="md-dialog__inner md-typeset"></div></div>
+<script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs","navigation.sections","navigation.top","navigation.path","navigation.expand","navigation.indexes","navigation.prune","navigation.prev_next","navigation.footer","search.highlight","search.suggest","alternate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard","clipboard.copy": "Copy to clipboard","search.result.more.one": "1 more on this page","search.result.more.other": "# more on this page","search.result.none": "No matching documents","search.result.one": "1 matching document","search.result.other": "# matching documents","search.result.placeholder": "Type to start searching","search.result.term.missing": "Missing","select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/js/extra.js"></script>
+
+</body></html>
