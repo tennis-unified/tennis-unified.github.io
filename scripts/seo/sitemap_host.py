@@ -144,6 +144,103 @@ def regen_gz():
     return True
 
 
+LINK_RE = re.compile(r"<link\b[^>]*>", re.I)
+ATTR_RE = re.compile(r"""([\w:-]+)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))""")
+REFRESH_RE = re.compile(
+    r"""http-equiv=["']?refresh["']?[^>]*url=([^"'>\s]+)""", re.I
+)
+
+
+def attrs(tag):
+    out = {}
+    for m in ATTR_RE.finditer(tag):
+        out.setdefault(m.group(1).lower(), m.group(2) or m.group(3) or m.group(4) or "")
+    return out
+
+
+def canonical_href(text):
+    """First <link rel=canonical href> on the page, attribute-order independent."""
+    for tag in LINK_RE.findall(text):
+        a = attrs(tag)
+        if "canonical" in a.get("rel", "").lower().split():
+            return a.get("href", "").strip()
+    return None
+
+
+def local_path(url):
+    """URL -> the file that serves it here (dir -> its index.html)."""
+    m = re.match(r"^https?://[^/]+(/.*)?$", url)
+    path = unquote(m.group(1) or "/") if m else "/"
+    target = os.path.join(ROOT, path.lstrip("/").replace("/", os.sep))
+    if os.path.isdir(target):
+        for i in ("index.html", "index.htm"):
+            if os.path.isfile(os.path.join(target, i)):
+                return os.path.join(target, i)
+        return None
+    return target if os.path.isfile(target) else None
+
+
+def norm_path(p):
+    return unquote(p).rstrip("/") or "/"
+
+
+def loc_audit(r):
+    """Classify every <loc> by what it actually points at. Read-only.
+
+    A sitemap should list live, canonical, non-redirect pages. Each class below
+    is a reason a crawler is being sent somewhere it should not be:
+
+      dead          -- no file serves this path (a 404 in the sitemap)
+      duplicate     -- the same URL appears more than once
+      error_page    -- the site's own 404 page
+      redirect      -- a meta-refresh stub, not content
+      noncanonical  -- the page's own canonical names a different path
+    """
+    out = {"dead": [], "duplicate": [], "error_page": [], "redirect": [], "noncanonical": []}
+    seen = Counter()
+    for u in r["locs"]:
+        seen[u] += 1
+    out["duplicate"] = sorted(u for u, n in seen.items() if n > 1)
+
+    for u in r["locs"]:
+        path = unquote(re.sub(r"^https?://[^/]+", "", u) or "/")
+        f = local_path(u)
+        if f is None:
+            out["dead"].append(u)
+            continue
+        if re.search(r"(^|/)404/?$", path):
+            out["error_page"].append(u)
+            continue
+        try:
+            text = open(f, "rb").read().decode("utf-8", "replace")
+        except OSError:
+            continue
+        if REFRESH_RE.search(text):
+            out["redirect"].append(u)
+            continue
+        c = canonical_href(text)
+        if c and c.startswith("/") and norm_path(c) != norm_path(path):
+            out["noncanonical"].append((u, unquote(c)))
+    return out
+
+
+def report_locs(r):
+    a = loc_audit(r)
+    print("\n--- loc audit (what each <loc> points at) ---")
+    for k in ("dead", "duplicate", "error_page", "redirect"):
+        print(f"{k:14s}: {len(a[k])}")
+        for u in a[k][:10]:
+            print(f"    {u}")
+        if len(a[k]) > 10:
+            print(f"    ... +{len(a[k]) - 10} more")
+    print(f"{'noncanonical':14s}: {len(a['noncanonical'])}")
+    for u, c in a["noncanonical"][:10]:
+        print(f"    {u}\n        -> {c}")
+    if len(a["noncanonical"]) > 10:
+        print(f"    ... +{len(a['noncanonical']) - 10} more")
+    return a
+
+
 def measure(host):
     text = read(SITEMAP)
     raw_locs = LOC_RE.findall(text)
@@ -262,11 +359,20 @@ def main():
     ap.add_argument("--host", default=DEFAULT_HOST)
     ap.add_argument("--write", action="store_true")
     ap.add_argument("--verify", action="store_true")
+    ap.add_argument(
+        "--audit-locs",
+        action="store_true",
+        help="classify every <loc> (dead / duplicate / error page / redirect / "
+        "non-canonical). Read-only; this is the input to a content decision, "
+        "not something --write applies.",
+    )
     args = ap.parse_args()
 
     r = measure(args.host)
     print(f"canonical host                     : {args.host}\n")
     before = report(r)
+    if args.audit_locs:
+        report_locs(r)
 
     if args.write:
         changed_sitemap, changed_robots = repair(r, args.host)
