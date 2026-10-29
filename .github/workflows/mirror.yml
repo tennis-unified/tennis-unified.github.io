@@ -17,6 +17,10 @@ concurrency:
 jobs:
   mirror:
     name: Fast-forward the tennis-unified mirror
+    # This file is inherited by the fork. There it has no DESTINATION_TOKEN
+    # (fork secrets are not inherited) and merging a repo into itself is a
+    # no-op, so without this guard the job fails on every push to the fork.
+    if: github.repository == 'tenniskb/tenniskb.github.io'
     runs-on: ubuntu-latest
     steps:
       - name: Sync fork with upstream
