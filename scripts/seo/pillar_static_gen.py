@@ -55,6 +55,19 @@ def art_num(fname):
     return m.group(1) if m else None
 
 
+def pair_key(s, p):
+    """Language-twin key. T5 files are ART-XXX_<Slug>_EN/_VN.md and ART numbers
+    are DUPLICATED (ART-133..142 twice), so pair by slug. T10 EN is
+    ART-XXX-<slug>.md and VI is ART-XXX_VN.md (no slug), so pair by ART number
+    normalized to int (fixes the 0991/991 zero-padding split)."""
+    stem = p.stem
+    if s == "t5":
+        return re.sub(r"_(EN|VN)$", "", stem)
+    # T10: exact ART string. Do NOT normalize to int — ART-0971 and ART-971 are
+    # DIFFERENT articles (both exist), so int() would collide them.
+    return art_num(stem) or stem
+
+
 def strip_front_matter(md):
     return re.sub(r"^---\n[\s\S]*?\n---\n", "", md, count=1)
 
@@ -103,22 +116,36 @@ RE_TITLE = re.compile(r"<title>[^<]*</title>")
 RE_DESC = re.compile(r'<meta name="description" content="[^"]*">')
 RE_BODY = re.compile(r'<div id="article-body">.*?</div>', re.S)
 RE_RENDER_SCRIPT = re.compile(r'<script>\s*// Article navigation data[\s\S]*?</script>')
+RE_ALT_ANY = re.compile(r'[ \t]*<link rel="alternate"[^>]*>\s*\n')
 
 
-def build_page(template, self_url, en_url, vi_url, title, desc, body_html):
+def rel(u):
+    """Root-relative href. The site is served on TWO hosts (tenniskb.github.io
+    and tennis-unified.github.io), so an absolute canonical is a defect on one
+    of them (canonical_audit class 3). Sitemap <loc> stays absolute separately."""
+    return u[len(SITE):] if u.startswith(SITE) else u
+
+
+def build_page(template, self_url, en_url, vi_url, title, desc, body_html, has_twin=True):
     # NOTE: use lambda replacers so dynamic content (which may contain LaTeX
     # backslashes like \oint) is inserted LITERALLY, not parsed as a re.sub
     # replacement escape ("bad escape \o").
+    self_url, en_url, vi_url = rel(self_url), rel(en_url), rel(vi_url)
     t = template
     t = RE_CANON.sub(lambda m: f'<link rel="canonical" href="{self_url}">', t)
-    # en alternate: for an EN page self==en_url; for a VI page it's the twin
-    t = RE_ALT_EN.sub(lambda m: f'<link rel="alternate" href="{en_url}" hreflang="en">', t)
-    t = RE_ALT_VI.sub(lambda m: f'<link rel="alternate" href="{vi_url}" hreflang="vi">', t)
-    # insert x-default after the vi alternate
-    t = RE_ALT_VI.sub(
-        lambda m: m.group(0) + f'\n    <link rel="alternate" href="{en_url}" hreflang="x-default">',
-        t, count=1,
-    )
+    if has_twin:
+        # en alternate: for an EN page self==en_url; for a VI page it's the twin
+        t = RE_ALT_EN.sub(lambda m: f'<link rel="alternate" href="{en_url}" hreflang="en">', t)
+        t = RE_ALT_VI.sub(lambda m: f'<link rel="alternate" href="{vi_url}" hreflang="vi">', t)
+        # insert x-default after the vi alternate
+        t = RE_ALT_VI.sub(
+            lambda m: m.group(0) + f'\n    <link rel="alternate" href="{en_url}" hreflang="x-default">',
+            t, count=1,
+        )
+    else:
+        # no true translation twin -> emit no cross-language alternate (a false
+        # pairing would be a non-reciprocal edge). Canonical only.
+        t = RE_ALT_ANY.sub("", t)
     t = RE_TITLE.sub(lambda m: f"<title>{title} - Tenniskb Pillars</title>", t)
     t = RE_DESC.sub(lambda m: f'<meta name="description" content="{desc}">', t)
     t = RE_BODY.sub(lambda m: f'<div id="article-body">{body_html}</div>', t)
@@ -149,11 +176,9 @@ def main():
                 continue
             for p in sorted(dd.glob("*.md")):
                 stem = p.stem
-                an = art_num(p.name)
-                if not an:
-                    continue
+                key = pair_key(s, p)
                 entries.append((s, lang, d, stem, p))
-                keymap[(s, an, lang)] = (d, stem)
+                keymap[(s, key, lang)] = (d, stem)
 
     # 2) load templates (one per language)
     tmpl = {}
@@ -182,14 +207,12 @@ def main():
                        if e[0] == s and e[1] == lang and entries.index(e) <= entries.index((s, lang, d, stem, p)))
             if seen > args.limit:
                 continue
-        an = art_num(p.name)
+        key = pair_key(s, p)
         other = "vi" if lang == "en" else "en"
         self_url = url_of(root, d, stem)
-        twin = keymap.get((s, an, other))
-        if twin:
-            twin_url = url_of(root, twin[0], twin[1])
-        else:
-            twin_url = self_url  # no translation yet; point at self (no broken link)
+        twin = keymap.get((s, key, other))
+        has_twin = twin is not None
+        twin_url = url_of(root, twin[0], twin[1]) if twin else self_url
         en_url = self_url if lang == "en" else twin_url
         vi_url = twin_url if lang == "en" else self_url
 
@@ -198,7 +221,7 @@ def main():
             title = title_of(md) or stem
             desc = desc_of(md)
             body = render(md)
-            page = build_page(tmpl[lang], self_url, en_url, vi_url, title, desc, body)
+            page = build_page(tmpl[lang], self_url, en_url, vi_url, title, desc, body, has_twin=has_twin)
         except Exception as e:
             print(f"  ERROR {p}: {e}")
             errors += 1
