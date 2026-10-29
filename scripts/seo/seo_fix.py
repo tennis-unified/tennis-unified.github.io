@@ -32,6 +32,7 @@ Usage:
   python scripts/seo/seo_fix.py verify [--root DIR]
 """
 import argparse
+import difflib
 import os
 import re
 import sys
@@ -548,26 +549,68 @@ def rewrite_sitemap(root, dry):
 # --------------------------------------------------------------------------- #
 # D3 - canonicalise the extra-title blog duplicates to their primary slug
 #
-# Discriminator: an explicit trailing -N on the slug is the duplicate marker,
-# and a base slug (same name without -N) must exist. Measured on this tree:
-#   * true duplicates (Toni Nadal, Lewitology, Bruguera, Spanish-method) all
-#     carry a -2/-3/-4 suffix AND have a -N-less base sibling;
-#   * the one title collision WITHOUT a suffix
-#     (mantis-7-essential-tips... vs mantis-best-tennis-balls-for-grass-courts)
-#     is two DIFFERENT articles sharing a wrong <title>. Body similarity cannot
-#     separate them (0.998, higher than the real duplicates), so a similarity
-#     test is actively misleading here -- the slug-suffix rule is the signal.
+# A `-N` slug suffix plus an existing `-N`-less base sibling plus the same <title>
+# is NOT sufficient evidence of duplication. That was the original rule, and it
+# was wrong: measured on 2026-10-28 against the 15 pages it had canonicalised,
+# comparing article bodies (word-level, autojunk OFF) --
+#
+#   how-many-hours-...-2        0.980   same article, re-scraped with a new date
+#   the-spanish-method-...-2    0.975   same article, re-scraped with a new date
+#   reality-show-episode-17-2   0.886   same article, same date, same description
+#   -------------------------------- clean gap --------------------------------
+#   lewitology-...-by-chris-2   0.640   different pull-quote = different content
+#   ... down to ...
+#   wisdom-of-toni-nadal-5      0.184   a separate post, 2020-04-08
+#
+# 12 of the 15 were distinct articles carrying different publication dates and
+# different opening quotes (the Toni Nadal "series" is five separate posts). The
+# rule was telling Google they were copies of one another, so all 12 were out of
+# the index. Their canonicals were corrected to self on 2026-10-28.
+#
+# Hence the guard below: a candidate pair must ALSO clear BLOG_DUP_THRESHOLD body
+# similarity. The 3 real duplicates sit at >= 0.886 and everything distinct at
+# <= 0.640, so the threshold has a wide margin.
+#
+# Two traps this cost:
+#   * SequenceMatcher's default autojunk=True ignores frequent tokens, which
+#     scored the spanish-method pair at 0.740 while only 37 of 1,510 words
+#     actually differed. Pass autojunk=False or the number is meaningless.
+#   * the one title collision WITHOUT a suffix (mantis-7-essential-tips vs
+#     mantis-best-tennis-balls-for-grass-courts) is two different articles that
+#     share a wrong <title> and score 0.998 -- higher than any real duplicate.
+#     The slug-suffix requirement is what excludes it, so both tests are needed.
 # --------------------------------------------------------------------------- #
+BLOG_DUP_THRESHOLD = 0.85
+
+
 def _base_slug(rel_path):
     """'blog/foo-2/index.html' -> 'blog/foo/index.html' (None if no -N suffix)."""
     m = re.match(r"^(.*?)-(\d+)/index\.html$", rel_path)
     return f"{m.group(1)}/index.html" if m else None
 
 
+def _article_words(path):
+    """Words of the article body: after </h1>, before the footer/nav tail."""
+    html = read(path)
+    m = re.search(r"(?s)<h1[^>]*>.*?</h1>(.*?)(?:<footer|</main|</body)", html)
+    body = m.group(1) if m else ""
+    body = re.sub(r"(?s)<script.*?</script>|<style.*?</style>", "", body)
+    body = re.sub(r"<[^>]+>", " ", body)
+    return re.sub(r"\s+", " ", body).strip().split()
+
+
+def body_similarity(path_a, path_b):
+    """Word-level similarity of two article bodies, 0..1. autojunk OFF on purpose."""
+    return difflib.SequenceMatcher(
+        None, _article_words(path_a), _article_words(path_b), autojunk=False
+    ).ratio()
+
+
 def find_blog_variants(root):
-    """Return (pairs, skipped). A pair is emitted only when the variant slug
-    ends in -N and the corresponding base slug exists in the tree. Primary =
-    the base page. Never infers duplication from a title alone."""
+    """Return (pairs, skipped). A pair is emitted only when the variant slug ends
+    in -N, the corresponding base slug exists, AND the two article bodies are at
+    least BLOG_DUP_THRESHOLD similar. Primary = the base page. Never infers
+    duplication from a title alone, and never from a slug shape alone."""
     all_pages = {rel(root, p) for p in walk_html(root)}
 
     groups = {}
@@ -586,10 +629,18 @@ def find_blog_variants(root):
         emitted = False
         for v in files:
             base = _base_slug(v)
-            if base and base in all_pages and base != v:
+            if not base or base not in all_pages or base == v:
+                continue
+            sim = body_similarity(
+                os.path.join(root, v.replace("/", os.sep)),
+                os.path.join(root, base.replace("/", os.sep)),
+            )
+            if sim >= BLOG_DUP_THRESHOLD:
                 pairs.add((v, base))
                 emitted = True
-        if not emitted:
+            else:
+                skipped.append((f"{t}  [{v} ~ {base}: {sim:.3f}]", [v, base]))
+        if not emitted and len(files) > 1:
             skipped.append((t, sorted(files)))
     return sorted(pairs), skipped
 
