@@ -1,7 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-SEO host-policy tooling for the tennis-unified tree (deployed verbatim to both
+SEO host-policy tooling for the tenniskb tree (mirrored to both
 tenniskb.github.io and tennis-unified.github.io).
+
+HOST DECISION (2026-10-28): tenniskb.github.io is the single canonical host.
+Every SEO repair landed here, this is the repo Pages deploys for tenniskb, and
+all six sub-sitemaps in the tree already named tenniskb. CANON_HOST was
+tennis-unified.github.io, a fork leftover -- which meant `apply` would rewrite
+the sitemap back to the mirror and `verify` failed the correct state.
 
 Decision D1  : PER-HOST self-canonical. The same tree is mirrored verbatim to
                tenniskb.github.io (upstream) and tennis-unified.github.io (fork),
@@ -30,12 +36,17 @@ import os
 import re
 import sys
 
-CANON_HOST = "https://tennis-unified.github.io"
-ALT_HOSTS = ("https://tenniskb.github.io",)
+CANON_HOST = "https://tenniskb.github.io"
+ALT_HOSTS = ("https://tennis-unified.github.io",)
 
 def rewrite_robots(root, dry):
     """Under D1 the only advertised sitemap must be the canonical host's. The
-    existing file lists BOTH hosts; the tenniskb line is dropped."""
+    existing file listed both hosts at one point; the mirror line is dropped and
+    the canonical (tenniskb) line kept.
+
+    History: CANON_HOST used to be tennis-unified.github.io, so this function was
+    itself what left robots.txt advertising the mirror host on the primary
+    deployment. Corrected 2026-10-28 -- see scripts/seo/sitemap_host.py."""
     rb = os.path.join(root, "robots.txt")
     if not os.path.isfile(rb):
         return 0
