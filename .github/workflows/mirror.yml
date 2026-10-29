@@ -1,8 +1,19 @@
 name: Mirror to tennis-unified
 
-# tennis-unified/tennis-unified.github.io is a FORK of this repo, so syncing is
-# a server-side fast-forward: only new commits travel, never the 7 GB history.
-# (git push --mirror would re-upload everything and hit GitHub's 2 GB push cap.)
+# tennis-unified/tennis-unified.github.io is a FORK of this repo, so only the new
+# commits travel, never the 7 GB history. (git push --mirror would re-upload
+# everything and hit GitHub's 2 GB push cap.)
+#
+# `merge-upstream` MERGES upstream into the fork; it does not require the fork to
+# be behind or equal. The fork's history is full of its own
+# `Merge branch 'tenniskb:main' into main` commits, which is this API's signature
+# message. So a red run here means a real CONFLICT between the two lines of edits,
+# not an impossible fast-forward -- the earlier comment in this file said
+# "server-side fast-forward", and that wording sent two separate investigations
+# after the wrong cause. Keep edits on the upstream side only and it stays green.
+#
+# If you ever do need to move a fork commit upstream: MERGE it, never rebase it.
+# A rebase mints a new SHA and leaves the fork's copy permanently divergent.
 
 on:
   push:
@@ -16,7 +27,7 @@ concurrency:
 
 jobs:
   mirror:
-    name: Fast-forward the tennis-unified mirror
+    name: Sync the tennis-unified fork with upstream
     # This file is inherited by the fork. There it has no DESTINATION_TOKEN
     # (fork secrets are not inherited) and merging a repo into itself is a
     # no-op, so without this guard the job fails on every push to the fork.
