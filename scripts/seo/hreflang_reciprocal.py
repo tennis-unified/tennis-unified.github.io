@@ -47,8 +47,24 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 SKIP_DIRS = {".git", "node_modules", "_tmp", ".workbuddy-ai"}
 SKIP_PREFIX = ("books/",)
 
+# Attribute-ORDER-INDEPENDENT. The earlier positional pattern
+#     <link\s+rel="alternate"\s+href="..."\s+hreflang="...">
+# silently saw only one of the two orders present in this tree. 27 pages (54 tags) emit
+#     <link href="..." hreflang="..." rel="alternate"/>
+# and were therefore invisible: they never entered `pages`, so they were neither audited
+# nor repairable -- and, worse, their twins' edges were dropped too, because
+# `plan_repoints` skips a page whose twin is not in `by_key`. The lookaheads below capture
+# href/hreflang wherever they sit while keeping the group numbering (1 indent, 2 href,
+# 3 hreflang, 4 tail) that the rest of the module indexes by number.
+# Values are double-quoted throughout this tree (11,537/11,537 measured), so the quoted
+# alternation the other tools carry would be dead code here.
 ALT_RE = re.compile(
-    r'([ \t]*)<link\s+rel="alternate"\s+href="([^"]*)"\s+hreflang="([^"]*)"\s*/?>([ \t]*\r?\n)?',
+    r'([ \t]*)<link\b'
+    r'(?=[^>]*\shref\s*=\s*"([^"]*)")'
+    r'(?=[^>]*\shreflang\s*=\s*"([^"]*)")'
+    r'(?=[^>]*\srel\s*=\s*["\']?alternate\b)'
+    r'[^>]*>'
+    r'([ \t]*\r?\n)?',
     re.I,
 )
 HTML_LANG_RE = re.compile(r'<html[^>]*\blang="([^"]*)"', re.I)
