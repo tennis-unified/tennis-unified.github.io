@@ -133,8 +133,16 @@ def _set_href(anchor, href):
     """
     if href is not None:
         if 'href="' in anchor:
-            return re.sub(r'href="[^"]*"', lambda m: f'href="{href}"', anchor, count=1)
-        return anchor.replace("<a ", f'<a href="{href}" ', 1)
+            out = re.sub(r'href="[^"]*"', lambda m: f'href="{href}"', anchor, count=1)
+        else:
+            out = anchor.replace("<a ", f'<a href="{href}" ', 1)
+        # If this anchor was previously a hidden boundary, clear the inert flag —
+        # otherwise a page that moves into the middle of the order would keep a
+        # real href that nothing can click.
+        if "visibility:hidden" in out:
+            out = re.sub(r";?visibility:hidden;?", "", out)
+            out = re.sub(r'\s*style="\s*;?\s*"', "", out)   # drop the now-empty style
+        return out
     # drop href, hide
     out = re.sub(r'\shref="[^"]*"', "", anchor, count=1)
     if "visibility:hidden" in out:
