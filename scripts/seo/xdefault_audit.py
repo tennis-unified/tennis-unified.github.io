@@ -17,7 +17,15 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SKIP_DIRS = {".git", "node_modules", "site", ".github", "scripts", "sources"}
-MAX_BYTES = 1_500_000
+
+# Only <head> is inspected, and <head> is always at the top of the document, so
+# there is no reason to read whole files. The previous version instead SKIPPED
+# any file larger than 1.5 MB, which silently dropped 13 real pages (the
+# coach-video-library / tennis-video-library hubs, 1.6-3.5 MB each because they
+# embed their video tables) from the denominator -- 11 of which were missing
+# x-default. The audit reported "missing x-default: 0" while 11 pages were
+# missing it. A size cap on a head-only check can only ever hide defects.
+HEAD_SCAN_BYTES = 262_144
 
 HEAD_RE = re.compile(r"<head\b.*?</head>", re.I | re.S)
 LINK_RE = re.compile(r"<link\b[^>]*>", re.I)
@@ -46,10 +54,8 @@ def main():
 
     for path in html_files():
         try:
-            if os.path.getsize(path) > MAX_BYTES:
-                continue
             with open(path, "r", encoding="utf-8", errors="replace") as fh:
-                text = fh.read()
+                text = fh.read(HEAD_SCAN_BYTES)
         except OSError:
             continue
         if "hreflang" not in text:
