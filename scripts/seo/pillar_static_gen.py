@@ -27,6 +27,16 @@ EN<->VI pairing is by the ART-XXX number, robust to the slug map not matching.
 Idempotent: rerun overwrites. Safe-by-default: DRY RUN unless --write.
 Sitemap integration is a SEPARATE step (emits <root>/_pillar_urls.txt for it).
 
+POST-NAV (added 2026-10-29, §38):
+  The template's prev/next anchors and `.md-select__link` pair are placeholders
+  that only the reader's JavaScript filled (`renderNav`, `updateLanguageToggles`),
+  and build_page() strips exactly that script. So a generation pass used to ship
+  2,558 pages with 5,116 dead `href="#"` anchors and 5,116 language-switcher hrefs
+  pointing at a catalog root — 100% of pages, twice over. `--write` now ends with
+  a call into `pillar_nav_populate.py`, which fills both from the `var ARTS` order
+  and from each page's own `<head>` alternates. One implementation, shared with
+  the standalone fixer, so a regeneration cannot reintroduce the defect.
+
 Usage:
   python pillar_static_gen.py --root <repo>                 # dry-run, all
   python pillar_static_gen.py --root <repo> --limit 3       # pilot 3 per (set,lang)
@@ -153,6 +163,42 @@ def build_page(template, self_url, en_url, vi_url, title, desc, body_html, has_t
     return t
 
 
+def post_nav(root, dirs):
+    """Re-apply the reader's prev/next and language switcher to the pages just written.
+
+    build_page() strips the reader's script, which is what filled these at runtime,
+    so without this step every regenerated page ships the template's dead anchors.
+    The logic lives in pillar_nav_populate.py so there is exactly one implementation
+    of the ordering and one of the switcher target rule.
+    """
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from pillar_nav_populate import already_done, order_for, rewrite
+    except ImportError:
+        print("  WARN pillar_nav_populate.py not importable — run it manually after this")
+        return 0
+    n = 0
+    for d in dirs:
+        dd = root / d
+        if not dd.is_dir():
+            continue
+        order = order_for(dd)
+        for i, (stem, _num) in enumerate(order):
+            p = dd / (stem + ".html")
+            if not p.is_file():
+                continue
+            html = p.read_text(encoding="utf-8")
+            if already_done(html):
+                continue
+            new, ok = rewrite(html,
+                              order[i - 1] if i > 0 else None,
+                              order[i + 1] if i + 1 < len(order) else None)
+            if ok:
+                p.write_text(new, encoding="utf-8", newline="")
+                n += 1
+    return n
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--root", required=True)
@@ -245,6 +291,8 @@ def main():
         ul = root / "_pillar_urls.txt"
         ul.write_text("\n".join(urls) + "\n", encoding="utf-8")
         print(f"  wrote {ul.name}: {len(urls)} urls")
+        navd = post_nav(root, [d for s in sets for d, _l in SET_DIRS[s]])
+        print(f"  post-nav: filled prev/next + switcher on {navd} pages")
 
     print(f"\nSUMMARY: set={args.set} lang={args.lang} limit={args.limit} "
           f"write={args.write} -> generated={written} errors={errors}")
