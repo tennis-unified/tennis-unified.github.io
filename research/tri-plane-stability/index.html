@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tri-Plane Stability — three points, four contacts, and what the constraint costs</title>
+<meta name="description" content="A research dossier on the three-points-define-a-plane coaching framework: what it gets right, the three corrections it needs, an evidence audit of all five principles, and a drill-by-drill audit of the practice layer.">
+<meta name="author" content="Henry Pham">
+<link rel="canonical" href="/research/tri-plane-stability/">
+<link rel="alternate" hreflang="en" href="/research/tri-plane-stability/">
+<link rel="alternate" hreflang="vi" href="/vi/research/tri-plane-stability/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Tennis Unified Library">
+<meta property="og:title" content="Tri-Plane Stability — three points, four contacts, and what the constraint costs">
+<meta property="og:description" content="The stool-and-chair framework, taken seriously enough to test: three corrections, an evidence audit, and a drill-by-drill audit of the practice layer.">
+<meta property="og:url" content="/research/tri-plane-stability/">
+<meta property="og:image" content="/assets/tri-plane/figures/fig4-3-vs-4-points.jpg">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/images/favicon.png">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script src="/assets/javascripts/darkmode.js" defer></script>
+<style>
+:root{
+  --tp-ink:#0f2a44;
+  --tp-rust:#c2530f;
+  --tp-green:#1a6b3c;
+  --tp-grey:#6b6257;
+  --tp-paper:#fbf8f2;
+  --tp-rule:#e3dccf;
+  --tp-tint:#f4efe4;
+  --tp-keep:#1a6b3c;
+  --tp-repair:#b06b00;
+  --tp-relabel:#1d5b8f;
+  --tp-retire:#9b2c2c;
+}
+[data-theme="dark"]{
+  --tp-ink:#e8e3d9;
+  --tp-rust:#e8925a;
+  --tp-green:#7fc9a1;
+  --tp-grey:#a8a29e;
+  --tp-paper:#121917;
+  --tp-rule:#2d3a35;
+  --tp-tint:#1a2421;
+  --tp-keep:#7fc9a1;
+  --tp-repair:#e0a54a;
+  --tp-relabel:#7fb0dc;
+  --tp-retire:#e08a8a;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--tp-paper);
+  color:var(--tp-ink);
+  font-family:"DM Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:min(78ch,100% - 2.5rem);margin:0 auto;padding:0 0 4rem}
+h1,h2,h3,h4{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;font-weight:600;letter-spacing:-.01em;line-height:1.2;color:var(--tp-ink)}
+h1{font-size:clamp(2rem,5vw,2.9rem);margin:.2rem 0 .6rem}
+h2{font-size:clamp(1.4rem,3vw,1.75rem);margin:3.2rem 0 .9rem;padding-top:1.4rem;border-top:1px solid var(--tp-rule)}
+h3{font-size:1.13rem;margin:2rem 0 .5rem}
+p{margin:0 0 1.05rem}
+a{color:var(--tp-rust);text-decoration:none;border-bottom:1px solid rgba(194,83,15,.35)}
+a:hover{border-bottom-color:var(--tp-rust)}
+strong{font-weight:600}
+em{font-style:italic}
+small{font-size:.86rem}
+.eyebrow{font-family:"Space Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--tp-rust);margin:2.6rem 0 .4rem}
+.dek{font-size:1.16rem;color:var(--tp-grey);line-height:1.55;margin-bottom:1.4rem}
+.meta{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 2rem}
+.chip{font-family:"Space Mono",ui-monospace,monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;padding:.28rem .55rem;border:1px solid var(--tp-rule);border-radius:999px;color:var(--tp-grey);background:transparent}
+.cta-row{display:flex;flex-wrap:wrap;gap:.6rem;margin:0 0 2.6rem}
+.btn{display:inline-block;padding:.62rem 1.05rem;border-radius:6px;border:1px solid var(--tp-ink);background:var(--tp-ink);color:var(--tp-paper);font-size:.9rem;font-weight:500;letter-spacing:.01em}
+.btn:hover{background:var(--tp-rust);border-color:var(--tp-rust);color:#fff}
+.btn.ghost{background:transparent;color:var(--tp-ink)}
+.btn.ghost:hover{background:var(--tp-tint);color:var(--tp-ink);border-color:var(--tp-ink)}
+.lead{font-size:1.09rem}
+.lead::first-letter{float:left;font-family:Georgia,serif;font-size:3.3rem;line-height:.82;padding:.12em .12em 0 0;color:var(--tp-rust)}
+blockquote{margin:1.6rem 0;padding:1rem 1.2rem;background:var(--tp-tint);border-left:3px solid var(--tp-rust);border-radius:0 6px 6px 0;font-size:1.02rem}
+blockquote p:last-child{margin-bottom:0}
+blockquote cite{display:block;margin-top:.5rem;font-style:normal;font-size:.82rem;color:var(--tp-grey);letter-spacing:.02em}
+.scroller{overflow-x:auto;margin:1.2rem 0 1.8rem;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.87rem;line-height:1.45;table-layout:fixed}
+th,td{text-align:left;vertical-align:top;padding:.55rem .6rem;border-bottom:1px solid var(--tp-rule)}
+th{font-family:"Space Mono",ui-monospace,monospace;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--tp-grey);font-weight:400;border-bottom:1px solid var(--tp-ink)}
+tbody tr:last-child td{border-bottom:1px solid var(--tp-rule)}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.grade{display:inline-block;min-width:1.5rem;text-align:center;font-family:"Space Mono",monospace;font-size:.72rem;font-weight:700;padding:.05rem .3rem;border-radius:3px;border:1px solid currentColor}
+.g-a{color:var(--tp-keep)}
+.g-b{color:#2f6f4f}
+.g-c{color:var(--tp-repair)}
+.g-d{color:var(--tp-grey)}
+.g-x{color:var(--tp-retire)}
+[data-theme="dark"] .g-b{color:#9ed3b4}
+.v{font-family:"Space Mono",monospace;font-size:.68rem;letter-spacing:.07em;text-transform:uppercase;font-weight:700;white-space:nowrap}
+.v-keep{color:var(--tp-keep)}
+.v-repair{color:var(--tp-repair)}
+.v-relabel{color:var(--tp-relabel)}
+.v-retire{color:var(--tp-retire)}
+figure{margin:1.8rem 0 2rem}
+figure img{width:100%;height:auto;display:block;border:1px solid var(--tp-rule);border-radius:4px;background:#fff}
+figcaption{margin-top:.55rem;font-size:.82rem;line-height:1.45;color:var(--tp-grey)}
+figcaption b{color:var(--tp-ink);font-weight:600}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:1.4rem 0 1rem}
+@media(max-width:640px){.grid2{grid-template-columns:1fr}}
+.card{border:1px solid var(--tp-rule);border-radius:8px;padding:1.05rem 1.15rem;background:rgba(255,255,255,.45)}
+[data-theme="dark"] .card{background:rgba(255,255,255,.03)}
+.card h4{margin:.1rem 0 .45rem;font-size:1rem}
+.card p{font-size:.92rem;margin-bottom:.5rem}
+.card p:last-child{margin-bottom:0}
+.card .tag{font-family:"Space Mono",monospace;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--tp-rust)}
+.toc{display:flex;flex-wrap:wrap;gap:.35rem .9rem;padding:1rem 0 0;border-top:1px solid var(--tp-rule);margin:0 0 1rem;font-size:.82rem}
+.toc a{border-bottom:none;color:var(--tp-grey)}
+.toc a:hover{color:var(--tp-rust)}
+.note{font-size:.86rem;color:var(--tp-grey);border-left:2px solid var(--tp-rule);padding-left:.9rem;margin:1.4rem 0}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:.35rem 1rem;font-size:.9rem;margin:1rem 0 1.6rem}
+.kv dt{font-family:"Space Mono",monospace;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--tp-grey);padding-top:.18rem}
+.kv dd{margin:0}
+video{width:100%;height:auto;display:block;border:1px solid var(--tp-rule);border-radius:6px;background:#000}
+.dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:.7rem;margin:1.2rem 0 1.6rem}
+.dl a{display:block;border:1px solid var(--tp-rule);border-radius:6px;padding:.75rem .9rem;border-bottom:1px solid var(--tp-rule);font-size:.9rem}
+.dl a:hover{border-color:var(--tp-rust);background:var(--tp-tint)}
+.dl span{display:block;font-family:"Space Mono",monospace;font-size:.64rem;letter-spacing:.09em;text-transform:uppercase;color:var(--tp-grey);margin-top:.15rem}
+footer{margin-top:3.4rem;padding-top:1.2rem;border-top:1px solid var(--tp-rule);font-size:.82rem;color:var(--tp-grey)}
+footer p{margin-bottom:.5rem}
+[data-theme="dark"] h1,[data-theme="dark"] h2,[data-theme="dark"] h3,[data-theme="dark"] h4{color:var(--tp-ink)}
+[data-theme="dark"] .btn{background:var(--tp-ink);border-color:var(--tp-ink);color:#121917}
+[data-theme="dark"] .btn:hover{background:var(--tp-rust);border-color:var(--tp-rust);color:#121917}
+[data-theme="dark"] .btn.ghost{background:transparent;color:var(--tp-ink);border-color:var(--tp-ink)}
+[data-theme="dark"] .btn.ghost:hover{background:var(--tp-tint);color:var(--tp-ink)}
+[data-theme="dark"] figcaption b{color:var(--tp-ink)}
+</style>
+</head>
+<body>
+
+<!-- FLATTENED-TOP-NAV-START -->
+<header class="mm-top"><a class="mm-brand" href="/">Tennis Unified</a><nav class="mm-nav" aria-label="Sections"><div class="mm-dropdown"><button class="mm-dropbtn" type="button" aria-haspopup="true" aria-expanded="false">Main <span class="mm-caret">&#9662;</span></button><div class="mm-dropmenu">
+        <a href="/">Home</a>
+        <a href="/fundamentals/">Fundamentals</a>
+        <a href="/doubles/">Doubles</a>
+        <a href="/stroke-analysis/">Stroke Analysis</a>
+        <a href="/coach-video-library/">Coach Library</a>
+        <a href="/tennis-video-library/">Video Library</a>
+        <a href="/tennis-technical-reference/">Technical Reference</a>
+        <a href="/vi/tnkb/">Knowledgebase</a>
+        <a href="/tennis-evolution/">Tennis Evolution</a>
+        <a href="/blog/">Blog</a>
+        <a href="/book/">Master Book</a>
+        <a href="/books/">Books Catalog</a>
+        <a href="/books/court_diagrams.html">Court Diagrams</a>
+        <a href="/en/articles/">200 Articles</a>
+        <a href="/research/" class="active">Research</a>
+        <a href="/Tenniskb-5 Pillars/">5 Pillars</a>
+        <a href="/Tenniskb-10 Pillars/">10 Pillars</a>
+      </div></div></nav><div class="mm-right"><a class="tu-nav-lang mm-langbtn" href="/vi/research/tri-plane-stability/" title="Switch language">🌐 VI</a><button class="tu-nav-darkmode mm-darkbtn" type="button" aria-pressed="false" title="Dark Mode"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button></div></header>
+<!-- FLATTENED-TOP-NAV-END -->
+
+<main class="wrap">
+
+<p class="eyebrow">Research · Biomechanics · v1.1</p>
+<h1>Three points, four contacts, and what the constraint costs</h1>
+<p class="dek">A coaching framework built on a three-legged stool, tested against the literature, the geometry, and the drills that carry it into a player's week.</p>
+
+<div class="meta">
+  <span class="chip">17,300 words</span>
+  <span class="chip">10 parts</span>
+  <span class="chip">27 sources</span>
+  <span class="chip">Grades A–X</span>
+  <span class="chip">30 October 2026</span>
+</div>
+
+<div class="cta-row">
+  <a class="btn" href="#practice">What changed in v1.1</a>
+  <a class="btn ghost" href="/assets/tri-plane/downloads/tri-plane-stability-en.pdf">Read the full dossier (PDF)</a>
+  <a class="btn ghost" href="/vi/research/tri-plane-stability/">Bản tiếng Việt</a>
+</div>
+
+<p class="toc">
+  <a href="#claim">The claim</a>
+  <a href="#three">One phrase, three questions</a>
+  <a href="#budget">The constraint budget</a>
+  <a href="#corrections">Three corrections</a>
+  <a href="#evidence">The evidence, graded</a>
+  <a href="#practice">The practice layer</a>
+  <a href="#film">The 40-second film</a>
+  <a href="#cues">Six cues that survive</a>
+  <a href="#falsify">What would falsify this</a>
+</p>
+
+<p class="lead">A three-legged stool never wobbles. A four-legged chair does. From that observation a coaching framework was built and taught: three points define a plane, the fourth creates instability unless it lies in the same plane; therefore load one leg, define the swing plane with two hands, and tuck one hand close to the body.</p>
+
+<p>The observation is good. The geometry, as far as it goes, is correct. What the framework does is subtler and more interesting than it claims: it fuses three different physics questions into a single phrase, and when they are separated, they do not all point the same way.</p>
+
+<p>This page is the short version of a dossier that takes the framework seriously enough to test it. It does three things the original document did not: it separates the questions, it corrects the geometry at its weakest joint, and it grades every load-bearing claim — including the ones that turn out to be coaching doctrine wearing the clothes of measurement.</p>
+
+<h2 id="claim">The claim, as stated</h2>
+
+<p>Five principles, in the framework's own words:</p>
+
+<div class="scroller">
+<table>
+<colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+<thead><tr><th>Principle</th><th>Claim</th></tr></thead>
+<tbody>
+<tr><td><b>1. Single-fulcrum loading</b></td><td>One leg must be fully loaded at a time. This creates a single clean vertical axis through that leg's ground reaction force; 50/50 loading creates two competing axes and you get stuck in the middle.</td></tr>
+<tr><td><b>2. Wide-base compensation</b></td><td>If two legs are loaded, they must be wide. A narrow base is a small support polygon; gravity escapes it.</td></tr>
+<tr><td><b>3. Two hands define a plane</b></td><td>The racket path is a disc, not a line. Two hands set the tilt, height and direction of that disc before the swing.</td></tr>
+<tr><td><b>4. The proximal tuck</b></td><td>Pull one mass close to the axis. <i>L = I&omega;</i>: lower moment of inertia means higher angular velocity. The tossing arm tucks; the off-hand pulls to the chest.</td></tr>
+<tr><td><b>5. The three-point check</b></td><td>At contact, exactly three points work in one plane: the loaded leg, the tucked hand, the extended racket hand.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="three">One phrase, three questions</h2>
+
+<p>"Three versus four points" is doing three jobs at once. Separated, they give three different answers — and in one respect they point in opposite directions.</p>
+
+<div class="scroller">
+<table>
+<colgroup><col style="width:40%"><col style="width:41%"><col style="width:19%"></colgroup>
+<thead><tr><th>"3 vs 4 points" is really about…</th><th>More contact means</th><th>Verdict</th></tr></thead>
+<tbody>
+<tr><td><b>Determinacy</b> — geometry. Three non-collinear points fix a plane; a fourth overconstrains it unless coplanar.</td><td>Irrelevant. What matters is where the swing plane is, not how many contacts exist.</td><td><span class="v v-keep">True</span></td></tr>
+<tr><td><b>Sufficiency</b> — statics. A larger support polygon resists a larger perturbation.</td><td><b>More stable.</b> More contact is strictly better here.</td><td><span class="v v-retire">False</span></td></tr>
+<tr><td><b>Freedom</b> — rotational dynamics. Every contact that transmits torque can constrain the axis.</td><td><b>Less free.</b> More contact means less rotational freedom.</td><td><span class="v v-keep">True</span> — for a different reason</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>The framework's persuasive force came from moving between these three registers without announcing the move. The stool is a statement about determinacy. The wide base is a statement about sufficiency. The tuck is a statement about freedom. Only the first and third support "fewer contacts"; the second says the opposite, and it is the one coaches quote when they teach the ready position.</p>
+
+<figure>
+  <img src="/assets/tri-plane/figures/fig4-3-vs-4-points.jpg" alt="Three points always find a plane; a fourth overconstrains it unless coplanar">
+  <figcaption><b>Figure 1.</b> The originating image. The stool is a determinacy argument, not a stability argument — which is exactly why it does not transfer to the base of support.</figcaption>
+</figure>
+
+<h2 id="budget">The constraint budget</h2>
+
+<p>Restated, the framework becomes sharper than it was:</p>
+
+<blockquote>
+  <p>The optimal configuration is <b>the minimum constraint that still satisfies the task's stability demand</b> — because every constraint beyond sufficiency is paid for in rotational freedom.</p>
+</blockquote>
+
+<p>That one sentence absorbs all five principles, and it explains the studies that look like counter-evidence. Open stance produces the same racket speed as square, by a different route, because each architecture spends its constraints where they are cheapest. The two-handed backhand is not an exception to "fewer contacts"; it is a <em>closed chain with a coplanar fourth point</em>, which is a different design that buys rigidity where rigidity is useful.</p>
+
+<p>The budget has a parameter. Call it &lambda; — the stability demand of the task. Ready position, return of serve and a defensive slide are high-&lambda;: they want a wide base, two legs, and they accept the rotational cost. A first serve and an attacking forehand are low-&lambda;: they want one anchor and a free axis. The framework's error was to state a low-&lambda; rule as a universal law, and then to teach it during high-&lambda; tasks.</p>
+
+<figure>
+  <img src="/assets/tri-plane/figures/fig7-margin-of-stability.png" alt="Margin of stability against stance width at four lateral velocities">
+  <figcaption><b>Figure 2.</b> How wide is wide enough — modelled. The stance width at which the margin of stability reaches zero depends on how fast the body is moving sideways. At walking pace, 6 cm suffices; at 0.8 m/s, 50 cm is the threshold. This is why "wide base" is a band, not a direction.</figcaption>
+</figure>
+
+<div class="scroller">
+<table>
+<colgroup><col style="width:30%"><col style="width:30%"><col style="width:40%"></colgroup>
+<thead><tr><th>Lateral centre-of-mass velocity</th><th class="num">Stance width for zero margin</th><th>Task that resembles it</th></tr></thead>
+<tbody>
+<tr><td class="num">0.1 m/s</td><td class="num">6 cm</td><td>Standing ready, no ball</td></tr>
+<tr><td class="num">0.3 m/s</td><td class="num">19 cm</td><td>Split-step landing</td></tr>
+<tr><td class="num">0.5 m/s</td><td class="num">31 cm</td><td>Receiving a wide serve</td></tr>
+<tr><td class="num">0.8 m/s</td><td class="num">50 cm</td><td>Defensive slide at full speed</td></tr>
+</tbody>
+</table>
+</div>
+
+<p class="note">Modelled values, not measured ones. The model is a linear inverted-pendulum margin of stability with a stated leg length and a fixed foot; Appendix A of the dossier lists every assumption. The point is the <em>shape</em> of the relationship, which is robust: the required width scales with the lateral velocity you must arrest.</p>
+
+<h2 id="corrections">Three corrections</h2>
+
+<div class="grid2">
+  <div class="card">
+    <p class="tag">Correction 1 · geometry</p>
+    <h4>Two hands do not define a plane</h4>
+    <p>Two points define a <em>line</em>. A plane needs a third non-collinear point, and in a swing that point is the shoulder line — or the racket head. The framework's own axiom says so, which means the principle is one constraint short exactly where it is meant to be strongest.</p>
+    <p><b>Repair:</b> "Chest and hands, one plate." Hands fix the line; the chest line fixes the tilt.</p>
+  </div>
+  <div class="card">
+    <p class="tag">Correction 2 · mechanics</p>
+    <h4>Overconstraint makes you rigid, not wobbly</h4>
+    <p>A chair wobbles because its fourth leg is rigid and cannot close the gap. A body is compliant: the fourth contact closes, and the misfit is stored as preload — about 400 N at 20 mm of unevenness for a leg at 20 N/mm. You do not fall over. You lose rotation, and you arrive late.</p>
+    <p><b>Repair:</b> "One leg owns the turn" — which teaches the right failure mode.</p>
+  </div>
+</div>
+
+<figure>
+  <img src="/assets/tri-plane/figures/fig5-overconstraint-modes.png" alt="Two failure modes of overconstraint: a rigid chair lifts its fourth leg, a compliant body stores preload">
+  <figcaption><b>Figure 3.</b> The two failure modes. A rigid chair leaves a visible gap; a compliant body closes it and hides the force inside. This is why "be a stool, not a chair" teaches the wrong thing: the body never shows you the wobble it is supposed to warn about.</figcaption>
+</figure>
+
+<div class="card" style="margin:1.6rem 0 2rem">
+  <p class="tag">Correction 3 · the serve</p>
+  <h4>The serve is not a vertical-axis spin</h4>
+  <p>The figure-skater image belongs to groundstrokes. In the serve, Bahamonde's angular-momentum decomposition found the vertical component small and inconsistent; the dominant transfer is proximal-to-distal into the racket arm, and 75% of total angular momentum near impact sits in that arm. Teaching a server to "spin like a skater" points them at an axis the stroke does not use.</p>
+  <p><b>Repair:</b> keep the tuck as a trunk-acceleration cue for groundstrokes, and drop the vertical-axis language from serve coaching entirely.</p>
+</div>
+
+<figure>
+  <img src="/assets/tri-plane/figures/fig6b-plane-definition.png" alt="Two points define a line, three points define a plane, the racket travels in a disc">
+  <figcaption><b>Figure 4.</b> The repair, drawn. Two hands leave one degree of freedom free — the disc can still spin about the hand line. Adding the shoulder line locks the disc before the swing starts.</figcaption>
+</figure>
+
+<h2 id="evidence">The evidence, graded</h2>
+
+<p>Every load-bearing claim in the dossier carries a grade, because the framework's persuasive force came largely from inferences that read like measurements. The grades are not decoration: they determine what a coach is allowed to say.</p>
+
+<div class="scroller">
+<table>
+<colgroup><col style="width:11%"><col style="width:53%"><col style="width:36%"></colgroup>
+<thead><tr><th>Grade</th><th>Meaning</th><th>Coach may say</th></tr></thead>
+<tbody>
+<tr><td><span class="grade g-a">A</span></td><td>Measured in tennis players, replicated or large-sample, directly on point</td><td>"Research shows…"</td></tr>
+<tr><td><span class="grade g-b">B</span></td><td>Measured in tennis players, single study or narrow sample</td><td>"One study found…"</td></tr>
+<tr><td><span class="grade g-c">C</span></td><td>Established general biomechanics, imported to tennis by inference</td><td>"The physics says…"</td></tr>
+<tr><td><span class="grade g-d">D</span></td><td>Coaching doctrine or expert consensus, not measured</td><td>"Most coaches teach…"</td></tr>
+<tr><td><span class="grade g-x">X</span></td><td>Asserted in the source, contradicted by evidence or by its own geometry</td><td>Do not say it; say the restatement instead</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>What the audit found, principle by principle:</p>
+
+<div class="scroller">
+<table>
+<colgroup><col style="width:13%"><col style="width:44%"><col style="width:11%"><col style="width:32%"></colgroup>
+<thead><tr><th>Principle</th><th>What the literature actually measures</th><th>Grade</th><th>The restatement</th></tr></thead>
+<tbody>
+<tr>
+  <td><b>P1</b> Single fulcrum</td>
+  <td>The legs matter, and matter more for better players: peak vertical GRF in the serve is 2.12 &plusmn; 0.36 BW in elite versus 1.68 &plusmn; 0.33 in beginners, correlating with impact height at r = 0.85. But <em>which</em> leg is never measured as 100%. Open and square stances produce equal racket speed; one study found single-leg loading reduces total available force.</td>
+  <td><span class="grade g-a">A</span> legs<br><span class="grade g-x">X</span> 100%</td>
+  <td>At maximum rotation demand, the <em>majority</em> of load sits under one leg — 70–85%, with the inside leg a light brace. During high-stability tasks, two legs and a wide base are correct.</td>
+</tr>
+<tr>
+  <td><b>P2</b> Wide base</td>
+  <td>Widening reduces lateral sway, and lateral force is higher in defensive than attacking stances. But widening also raises the moment of inertia about the vertical axis: the knowledge base itself puts the redirection cost at 100–150 ms.</td>
+  <td><span class="grade g-a">A</span> band<br><span class="grade g-c">C</span> mechanism</td>
+  <td>Wide enough that the margin of stability stays positive at the task's lateral velocity — roughly 1.5–2&times; shoulder width. Beyond that, width buys stability and spends rotation.</td>
+</tr>
+<tr>
+  <td><b>P3</b> Two hands</td>
+  <td>"Swing plane" has no standardised peer-reviewed definition; it is used in at least three non-equivalent senses. The two-hander is a closed chain with eight degrees of freedom against the one-hander's seven, with greater upper-extremity rigidity.</td>
+  <td><span class="grade g-c">C</span> geometry<br><span class="grade g-d">D</span> mechanism</td>
+  <td>The swing plane is the plane of the <em>shoulder–hand–hand</em> triangle. Hands fix the line; the chest fixes the tilt. Keep any fourth point either on that plane or out of the equation.</td>
+</tr>
+<tr>
+  <td><b>P4</b> The tuck</td>
+  <td>Angular momentum near impact is 75.1% in the racket arm; the transfer is proximal-to-distal. But no tennis study shows that tucking the non-hitting arm raises trunk angular velocity, and the best controlled trial of tossing-arm timing found it changed the toss and the timing, not head or trunk kinematics.</td>
+  <td><span class="grade g-c">C</span></td>
+  <td>During trunk acceleration, keep the off-arm close so it does not brake the turn; release before contact so the hitting arm can extend. The benefit is permissive, not generative. Attach no percentage.</td>
+</tr>
+<tr>
+  <td><b>P5</b> Three-point check</td>
+  <td>As stated, the three named points are the loaded foot, the tucked hand and the racket hand. They do not generally lie in one plane — the foot is on the ground and the plane is in the air.</td>
+  <td><span class="grade g-c">C</span> relabelled</td>
+  <td>One plane (shoulder–hand–hand) <em>plus</em> one axis (the loaded leg), and the two must agree. That version is testable, and it becomes a four-item worksheet.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p><b>An unexpected finding.</b> The 1,000-article knowledge base this project draws on contradicts itself on four of the five principles — including two opposite definitions of which leg is "outside" on the forehand, and a biomechanics article (ART-011) stating that loading predominantly on one leg "reduces the total force available for the stroke." The dossier lists all five in §7.6 and recommends a task-phase qualifier pass: five articles, one editorial sitting.</p>
+
+<figure>
+  <img src="/assets/tri-plane/figures/fig8-moment-of-inertia.png" alt="Arm position acts as a 2.1x lever on whole-body moment of inertia">
+  <figcaption><b>Figure 5.</b> Why the tuck is mechanically sound even though it is unmeasured in tennis: arm position is a 2.1&times; lever on whole-body moment of inertia, worth about &minus;36% <i>I</i> and a +56% upper bound on &omega;. Modelled, not measured.</figcaption>
+</figure>
+
+<h2 id="practice">The practice layer <span class="chip" style="vertical-align:middle;margin-left:.3rem">New in v1.1</span></h2>
+
+<p>A wrong claim in a document is inert. A wrong claim inside a drill is repeated three hundred times a week, by a player who is trying to comply, under a coach watching for the criterion the drill names. Every drill is a claim in operational form — so v1.1 applies the same instrument to the fifteen drills in the source framework.</p>
+
+<p>Each drill was read for four things: the mechanism it assumes, the criterion it scores, the errors it can detect, and — more revealingly — the errors it structurally cannot detect. Verdicts: <span class="v v-keep">Keep</span>, <span class="v v-repair">Repair</span>, <span class="v v-relabel">Relabel</span>, <span class="v v-retire">Retire</span>.</p>
+
+<div class="scroller">
+<table>
+<colgroup><col style="width:5%"><col style="width:27%"><col style="width:12%"><col style="width:56%"></colgroup>
+<thead><tr><th>#</th><th>Drill</th><th>Verdict</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td class="num">1.1</td><td>Flamingo Freeze — outside leg only, inside knee up, 2 s hold</td><td><span class="v v-repair">Repair</span></td><td>Trains static single-support balance, not axis placement. The knee-up position deletes the inside foot's corrective authority, so the player passes by stiffening.</td></tr>
+<tr><td class="num">1.2</td><td>Med-ball single-leg throw</td><td><span class="v v-repair">Repair</span></td><td>The best of the three mechanically. Only the dose is wrong: 100% demand, inside foot removed rather than braced.</td></tr>
+<tr><td class="num">1.3</td><td>Serve front-leg lock — freeze on the front leg, back leg in air</td><td><span class="v v-relabel">Relabel</span></td><td>It is a landing drill. The serve's drive question is not trained; foot-up versus foot-back differ by 1 m/s, inside noise.</td></tr>
+<tr><td class="num">2.1</td><td>Tape-measure ready — feet at shoulder width + 50%</td><td><span class="v v-repair">Repair</span></td><td>1.5&times; is the <em>lower bound</em> of the band, presented as the target. No upper bound, no cost term — so it teaches over-widening.</td></tr>
+<tr><td class="num">2.2</td><td>Return wall sit — wide base, 10 s isometric hold</td><td><span class="v v-repair">Repair</span></td><td>Ten seconds of isometric squat is a quad-burn drill with a stance attached. The margin that matters is dynamic.</td></tr>
+<tr><td class="num">2.3</td><td>Defensive slide and stick — slide, wide stop, 2 s hold</td><td><span class="v v-keep">Keep</span></td><td>The one drill that trains the mechanism the model names: margin of stability at the task's lateral velocity.</td></tr>
+<tr><td class="num">3.1</td><td>Frame the disc — both hands on throat and tip</td><td><span class="v v-repair">Repair</span></td><td>Two hands on the racket fix the racket's line and face roll. Tilt is the relation between that line and the chest line, which the drill never references.</td></tr>
+<tr><td class="num">3.2</td><td>Mirror plane — freeze and check both hands define one plane</td><td><span class="v v-retire">Retire</span></td><td>A mirror returns a two-dimensional projection. The check cannot fail visibly, so it cannot teach.</td></tr>
+<tr><td class="num">3.3</td><td>Non-dominant guides — off-hand stays on the throat until the forward swing</td><td><span class="v v-keep">Keep</span></td><td>The best-constructed drill of the fifteen: correct mechanism, a release condition, an observable criterion.</td></tr>
+<tr><td class="num">4.1</td><td>Serve tuck and hold — grab your shirt, serve holding it to contact</td><td><span class="v v-repair">Repair</span></td><td>The tuck's window is the acceleration phase; it reverses before contact so the arm can extend. Holding to contact trains the opposite.</td></tr>
+<tr><td class="num">4.2</td><td>Pin the shirt forehand — towel under the off-arm</td><td><span class="v v-repair">Repair</span></td><td>Good binary criterion, but only half of it. There are two errors — early drop and late hold — and the drill can only see the first.</td></tr>
+<tr><td class="num">4.3</td><td>Figure-skater spins — arms out, spin, pull in</td><td><span class="v v-relabel">Relabel</span></td><td>Correct physics for an upright spin, which is the groundstroke case. Not the serve case. Keep the drill, delete the transfer claim.</td></tr>
+<tr><td class="num">5.1</td><td>Freeze call — partner checks three points are coplanar</td><td><span class="v v-retire">Retire</span></td><td>Geometrically false, and a judgement no partner can make in real time. It produces agreement, not measurement.</td></tr>
+<tr><td class="num">5.2</td><td>Video three-point audit — pause at contact, count the points</td><td><span class="v v-repair">Repair</span></td><td>The method is exactly right and the only drill that produces a record. The checklist is wrong: it omits the shoulder line and mislabels the fourth point.</td></tr>
+<tr><td class="num">5.3</td><td>Stool test progression — wide, load, plane, tuck, contact</td><td><span class="v v-relabel">Relabel</span></td><td>Sound pedagogy that should survive. The name teaches the wrong failure mode: you do not fall off a chair, you stop being able to turn on it.</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><b>Two keep, eight repair, three relabel, two retire.</b> Two of fifteen survive unchanged. That is not a verdict on the coach who wrote them; it is what happens when a drill set is derived from five principles and two of the five turn out to be mis-stated.</p>
+
+<h3>Four faults that run through the whole set</h3>
+
+<div class="grid2">
+  <div class="card">
+    <p class="tag">F1</p>
+    <h4>The 100% fault</h4>
+    <p>Three drills demand complete single-leg loading. A player given an impossible instruction does not report failure; they find a way to <em>feel</em> compliant — usually by stiffening the ankle and hip and freezing the trunk. <b>Fix:</b> every load cue becomes a ratio, and the brace is scored, not tolerated.</p>
+  </div>
+  <div class="card">
+    <p class="tag">F2</p>
+    <h4>The hold-through-contact fault</h4>
+    <p>Three drills keep the off-hand pinned through the hitting zone. That converts a rotation drill into a blocking drill, and it produces players who are stable, compact and slow. <b>Fix:</b> every tuck drill gets a release window, stated as a position.</p>
+  </div>
+  <div class="card">
+    <p class="tag">F3</p>
+    <h4>The unfalsifiable criterion fault</h4>
+    <p>Two drills ask a human to see a plane in real time. Neither can fail in a way the player can dispute, so both produce the appearance of assessment — and teach that the check is a ritual. <b>Fix:</b> a criterion must be countable, or filmed.</p>
+  </div>
+  <div class="card">
+    <p class="tag">F4</p>
+    <h4>The one-sided scorecard</h4>
+    <p>Every drill is scored on <em>stability</em>: did you fall, did the towel drop. Not one is scored on <em>rotation cost</em>. A drill set built to detect instability will report success for a player who has over-constrained into rigidity, because rigidity is stable. <b>Fix:</b> one extra column.</p>
+  </div>
+</div>
+
+<p>The last fault is the structural one, and it follows directly from correction 2. The framework's own thesis — that overconstraint is paid for in rotation — is nowhere in its assessment. The repair costs a stopwatch and a phone: every drill card gets a second score, time-to-redirect or shoulder-rotation range at contact or simply "did the follow-through finish."</p>
+
+<h3>One drill rewritten, in full</h3>
+
+<div class="scroller">
+<table>
+<colgroup><col style="width:20%"><col style="width:80%"></colgroup>
+<thead><tr><th colspan="2">Flamingo Freeze &rarr; the anchored hold</th></tr></thead>
+<tbody>
+<tr><td><b>Setup</b></td><td>Outside leg loaded to ~80%, inside foot toe-touching the ground with no weight. Shadow forehand to contact, hold 2 s.</td></tr>
+<tr><td><b>Dose</b></td><td>3 &times; 6 each side, then 2 &times; 6 at rally speed.</td></tr>
+<tr><td><b>Criterion</b></td><td>Lateral excursion of the sternum under 5 cm during the hold, filmed from the front. Not "did you stay up."</td></tr>
+<tr><td><b>Failure looks like</b></td><td>Sternum drifting over the inside foot — the axis was never placed. Not: the player wobbles.</td></tr>
+<tr><td><b>Why the toe</b></td><td>It restores the small corrective authority a real stroke uses, so the drill stops rewarding stiffness.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="film">The 40-second film, audited</h2>
+
+<p>The framework now has a Vietnamese teaching film: forty seconds, four captioned segments, drawn from match footage. It is the first artefact in this project that a player will actually watch — which makes it the most consequential document in the set.</p>
+
+<figure>
+  <video controls preload="metadata" poster="/assets/tri-plane/video/poster-a.jpg">
+    <source src="/assets/tri-plane/video/tri-plane-40s-vi.mp4" type="video/mp4">
+    Your browser does not support the video tag. <a href="/assets/tri-plane/video/tri-plane-40s-vi.mp4">Download the film</a>.
+  </video>
+  <figcaption><b>Film.</b> <i>Khung Ổn Định Ba Điểm</i> — 40 seconds, Vietnamese captions. Segments: Principle 1, Principle 2, Principle 4 (serve), Principle 4 (forehand).</figcaption>
+</figure>
+
+<div class="scroller">
+<table>
+<colgroup><col style="width:9%"><col style="width:69%"><col style="width:22%"></colgroup>
+<thead><tr><th class="num">t</th><th>Caption, as broadcast</th><th>Grade</th></tr></thead>
+<tbody>
+<tr><td class="num">0:00</td><td><i>Nguyên lý 1: Một chân trụ — Flamingo Freeze.</i><br>100% lực qua 1 chân, tạo trục quay thẳng đứng</td><td><span class="grade g-x">X</span> both halves</td></tr>
+<tr><td class="num">0:12</td><td><i>Nguyên lý 2: Đế rộng bù đắp — Wide Base.</i><br>Hai chân bắt buộc dang rộng để ổn định</td><td><span class="grade g-a">A</span> in band, silent on cost</td></tr>
+<tr><td class="num">0:20</td><td><i>Nguyên lý 4: Thu tay giao bóng — Tuck Principle.</i><br>Tay trái thu sát ngực &rarr; giảm I, tăng tốc độ xoay</td><td><span class="grade g-c">C</span> model caption</td></tr>
+<tr><td class="num">0:30</td><td><i>Nguyên lý 4: Forehand kẹp khăn.</i><br>Giữ tay không thuận sát ngực, không làm rơi khăn</td><td><span class="grade g-d">D</span> criterion is one-sided</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><b>Finding 1 — the omission is correct, and should be made deliberate.</b> The two principles the film leaves out are precisely the two that failed the audit: P3 is one geometric constraint short, and P5's three points are not coplanar. A film cannot show a plane it cannot define. What looks like an incomplete edit is the only defensible edit. Make it a rule: <em>film what can be shown; do not film what the model cannot specify.</em></p>
+
+<p><b>Finding 2 — one caption carries an X-grade claim into the most-copied medium.</b> "100% lực qua 1 chân, tạo trục quay thẳng đứng." Both halves are graded X: the load is never 100%, and the axis is a kinematic inference that has never been measured — and for the serve it is specifically wrong. A document can carry a caveat in the next paragraph; a caption cannot. This is the highest-priority edit in the whole project, because the film will be re-shared without the dossier attached.</p>
+
+<p><b>Finding 3 — the Principle 4 caption is the model caption.</b> It states the mechanism, names the quantity, and attaches no number. That is exactly the epistemic status of P4: sound physics, unmeasured in tennis. It should be the template for every other caption.</p>
+
+<p><b>Finding 4 — the Principle 2 caption will be over-applied.</b> True inside the band, silent on the cost. A viewer will widen until it stops feeling wrong, which is past 2&times; shoulder width. One word fixes it: <i>vừa đủ</i> — wide enough, not widest.</p>
+
+<h3>A production standard, derived from the four findings</h3>
+
+<ol>
+  <li><b>One claim per caption.</b> Two claims on one line is how a caveat gets lost.</li>
+  <li><b>No absolute quantifiers</b> — 100%, always, must, never — unless the grade is A.</li>
+  <li><b>If the mechanism is grade C</b>, say the mechanism and withhold the number.</li>
+  <li><b>Show the failure mode in the same shot as the success.</b> A film that only shows correct execution teaches recognition, not correction.</li>
+  <li><b>Caption the criterion, not the feeling.</b> "Hand released before contact" beats "feel the tuck."</li>
+</ol>
+
+<h2 id="cues">Six cues that survive</h2>
+
+<p>Each is traceable to a restatement, executable, and does not require the player to believe something the evidence does not support. The first two change behaviour fastest, because they replace an impossible instruction with a ratio a player can actually hit.</p>
+
+<div class="scroller">
+<table>
+<colgroup><col style="width:38%"><col style="width:34%"><col style="width:14%"><col style="width:14%"></colgroup>
+<thead><tr><th>Cue</th><th>Replaces</th><th>Traces to</th><th>Grade</th></tr></thead>
+<tbody>
+<tr><td><b>"One leg owns the turn."</b></td><td>"Be a stool, not a chair."</td><td>P1&prime;</td><td><span class="grade g-c">C</span></td></tr>
+<tr><td><b>"80 on the outside, 20 as a brace."</b></td><td>"Load 100% on one leg."</td><td>P1&prime;</td><td><span class="grade g-c">C</span></td></tr>
+<tr><td><b>"Wide enough to stop, narrow enough to turn."</b></td><td>"Wider is more stable."</td><td>P2&prime;</td><td><span class="grade g-a">A</span></td></tr>
+<tr><td><b>"Chest and hands, one plate."</b></td><td>"Two hands define a plane."</td><td>P3&prime;</td><td><span class="grade g-c">C</span></td></tr>
+<tr><td><b>"Tuck to accelerate, release to hit."</b></td><td>"Keep the hand tucked at contact."</td><td>P4&prime;</td><td><span class="grade g-c">C</span></td></tr>
+<tr><td><b>"Shoulder line agrees with hand line."</b></td><td>"Three points in one plane."</td><td>P5&prime;</td><td><span class="grade g-c">C</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<figure>
+  <img src="/assets/tri-plane/figures/fig9-plane-error-amplification.png" alt="Plane error amplification: two centimetres of hand error becomes sixty centimetres of miss">
+  <figcaption><b>Figure 6.</b> Why the plane correction is worth the trouble: 2 cm of hand error at the start of the swing becomes 0.6 m of miss at the target. Modelled through a 1.4 m lever arm.</figcaption>
+</figure>
+
+<h2 id="falsify">What would falsify this</h2>
+
+<p>A model that cannot be wrong is not a model. Six hypotheses are stated with their tests in §12.2 of the dossier; three of them would change the conclusion outright.</p>
+
+<div class="scroller">
+<table>
+<colgroup><col style="width:46%"><col style="width:54%"></colgroup>
+<thead><tr><th>If this were shown…</th><th>Then</th></tr></thead>
+<tbody>
+<tr><td>Tucking the non-hitting arm measurably raises trunk angular velocity</td><td>P4 moves from C to A, and the framework's most-quoted mechanism becomes its best-supported one.</td></tr>
+<tr><td>A single load split is optimal across tasks</td><td>The &lambda;-framework collapses and the original universal rule is vindicated.</td></tr>
+<tr><td>The rotation axis in a stroke does not pass near the loaded foot</td><td>The reinterpretation of single-leg loading breaks, and with it the reason the constraint budget works.</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Until then the honest position is the one the dossier takes: the framework survives, reframed. What emerges is a model with a name, a mechanism, a measurable cost function, quantitative predictions, and an explicit list of the experiments that would break it. That is more than the original document had, and it is more useful to a coach than a rule that cannot be questioned.</p>
+
+<h2 id="downloads">Read the full dossier</h2>
+
+<p>Two standalone editions, each written as its own document rather than a translation of the other. Every load-bearing claim is graded; modelled numbers are marked as modelled; Appendix A lists every assumption, including the one with the largest uncertainty (ball-launch coupling).</p>
+
+<div class="dl">
+  <a href="/assets/tri-plane/downloads/tri-plane-stability-en.pdf">English dossier — PDF<span>17,300 words · 10 parts · 10 figures</span></a>
+  <a href="/assets/tri-plane/downloads/tri-plane-stability-en.docx">English dossier — Word<span>editable, headings and tables</span></a>
+  <a href="/assets/tri-plane/downloads/tri-plane-stability-vi.pdf">Hồ sơ tiếng Việt — PDF<span>19,900 từ · 10 phần · thuật ngữ PDF gốc</span></a>
+  <a href="/assets/tri-plane/downloads/tri-plane-stability-vi.docx">Hồ sơ tiếng Việt — Word<span>có bảng thuật ngữ VI–EN</span></a>
+</div>
+
+<h3>Provenance</h3>
+
+<dl class="kv">
+  <dt>Framework</dt><dd>The originating document, its Vietnamese edition <i>Khung Ổn Định Ba Điểm</i>, four infographic figures, and the 40-second teaching film.</dd>
+  <dt>Literature</dt><dd>27 peer-reviewed sources, verified against primary bibliographic records. Claims that could not be verified are flagged in the working review and downgraded in the dossier.</dd>
+  <dt>Knowledge base</dt><dd>1,000-article corpus (pillars 01, 02, 04, 05, 06, 10). Audit found self-contradiction on four of five principles — §7.6.</dd>
+  <dt>Model</dt><dd>First-principles calculations in <code>analysis/triplane_model.py</code>; every modelled number is reproducible from <code>results.json</code>.</dd>
+  <dt>Version</dt><dd>v1.1, 30 October 2026. Part X added; Parts I–IX unchanged.</dd>
+</dl>
+
+<figure>
+  <img src="/assets/tri-plane/figures/fig2-single-leg-loaded.jpg" alt="Single-leg loaded fulcrum with a tilted swing plane">
+  <figcaption><b>Figure 7.</b> The originating infographic: one loaded leg as fulcrum, two hands as the plane. The corrected reading keeps the fulcrum and adds the chest line to the plane.</figcaption>
+</figure>
+
+<footer>
+  <p><b>Tennis Unified · Research Intranet · Biomechanics Pillar.</b> This page is a synthesis; the PDF editions carry the full argument, the references and the appendices.</p>
+  <p>Companion volumes: <a href="/vi/research/tri-plane-stability/">Khung Ổn Định Ba Điểm — bản tiếng Việt</a> · <a href="/research/">Research index</a> · <a href="/en/articles/">Tennis Fundamentals</a></p>
+  <p><small>Grades: A measured and replicated · B measured, single study · C general biomechanics by inference · D coaching doctrine · X contradicted. Modelled numbers are not measurements.</small></p>
+</footer>
+
+</main>
+</body>
+</html>
