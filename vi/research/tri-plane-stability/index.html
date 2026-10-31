@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Khung Ổn Định Ba Điểm — ba điểm, bốn tiếp xúc, và cái giá của ràng buộc</title>
+<meta name="description" content="Hồ sơ nghiên cứu về khung 3 điểm định nghĩa một mặt phẳng: nó đúng ở đâu, ba chỉnh lý cần thiết, kiểm toán bằng chứng cả năm nguyên lý, và kiểm toán từng bài tập ở lớp thực hành.">
+<meta name="author" content="Henry Pham">
+<link rel="canonical" href="/vi/research/tri-plane-stability/">
+<link rel="alternate" hreflang="vi" href="/vi/research/tri-plane-stability/">
+<link rel="alternate" hreflang="en" href="/research/tri-plane-stability/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Tennis Unified Library">
+<meta property="og:title" content="Khung Ổn Định Ba Điểm — ba điểm, bốn tiếp xúc, và cái giá của ràng buộc">
+<meta property="og:description" content="Khung ghế đẩu và ghế bốn chân, được kiểm tra đủ nghiêm túc: ba chỉnh lý, một cuộc kiểm toán bằng chứng, và một cuộc kiểm toán từng bài tập.">
+<meta property="og:url" content="/vi/research/tri-plane-stability/">
+<meta property="og:image" content="/assets/tri-plane/figures/fig4-3-vs-4-points.jpg">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/images/favicon.png">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script src="/assets/javascripts/darkmode.js" defer></script>
+<style>
+:root{
+  --tp-ink:#0f2a44;
+  --tp-rust:#c2530f;
+  --tp-green:#1a6b3c;
+  --tp-grey:#6b6257;
+  --tp-paper:#fbf8f2;
+  --tp-rule:#e3dccf;
+  --tp-tint:#f4efe4;
+  --tp-keep:#1a6b3c;
+  --tp-repair:#b06b00;
+  --tp-relabel:#1d5b8f;
+  --tp-retire:#9b2c2c;
+}
+[data-theme="dark"]{
+  --tp-ink:#e8e3d9;
+  --tp-rust:#e8925a;
+  --tp-green:#7fc9a1;
+  --tp-grey:#a8a29e;
+  --tp-paper:#121917;
+  --tp-rule:#2d3a35;
+  --tp-tint:#1a2421;
+  --tp-keep:#7fc9a1;
+  --tp-repair:#e0a54a;
+  --tp-relabel:#7fb0dc;
+  --tp-retire:#e08a8a;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--tp-paper);
+  color:var(--tp-ink);
+  font-family:"Be Vietnam Pro","DM Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:min(78ch,100% - 2.5rem);margin:0 auto;padding:0 0 4rem}
+h1,h2,h3,h4{font-family:"Palatino Linotype","Book Antiqua",Cambria,Georgia,serif;font-weight:600;letter-spacing:-.01em;line-height:1.22;color:var(--tp-ink)}
+h1{font-size:clamp(1.85rem,4.6vw,2.6rem);margin:.2rem 0 .6rem}
+h2{font-size:clamp(1.35rem,3vw,1.7rem);margin:3.2rem 0 .9rem;padding-top:1.4rem;border-top:1px solid var(--tp-rule)}
+h3{font-size:1.12rem;margin:2rem 0 .5rem}
+p{margin:0 0 1.05rem}
+a{color:var(--tp-rust);text-decoration:none;border-bottom:1px solid rgba(194,83,15,.35)}
+a:hover{border-bottom-color:var(--tp-rust)}
+strong{font-weight:600}
+em{font-style:italic}
+small{font-size:.86rem}
+.eyebrow{font-family:"Space Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--tp-rust);margin:2.6rem 0 .4rem}
+.dek{font-size:1.12rem;color:var(--tp-grey);line-height:1.6;margin-bottom:1.4rem}
+.meta{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 2rem}
+.chip{font-family:"Space Mono",ui-monospace,monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;padding:.28rem .55rem;border:1px solid var(--tp-rule);border-radius:999px;color:var(--tp-grey);background:transparent}
+.cta-row{display:flex;flex-wrap:wrap;gap:.6rem;margin:0 0 2.6rem}
+.btn{display:inline-block;padding:.62rem 1.05rem;border-radius:6px;border:1px solid var(--tp-ink);background:var(--tp-ink);color:var(--tp-paper);font-size:.9rem;font-weight:500;letter-spacing:.01em}
+.btn:hover{background:var(--tp-rust);border-color:var(--tp-rust);color:#fff}
+.btn.ghost{background:transparent;color:var(--tp-ink)}
+.btn.ghost:hover{background:var(--tp-tint);color:var(--tp-ink);border-color:var(--tp-ink)}
+.lead{font-size:1.06rem}
+blockquote{margin:1.6rem 0;padding:1rem 1.2rem;background:var(--tp-tint);border-left:3px solid var(--tp-rust);border-radius:0 6px 6px 0;font-size:1rem}
+blockquote p:last-child{margin-bottom:0}
+.scroller{overflow-x:auto;margin:1.2rem 0 1.8rem;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.87rem;line-height:1.5;table-layout:fixed}
+th,td{text-align:left;vertical-align:top;padding:.55rem .6rem;border-bottom:1px solid var(--tp-rule)}
+th{font-family:"Space Mono",ui-monospace,monospace;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--tp-grey);font-weight:400;border-bottom:1px solid var(--tp-ink)}
+tbody tr:last-child td{border-bottom:1px solid var(--tp-rule)}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.grade{display:inline-block;min-width:1.5rem;text-align:center;font-family:"Space Mono",monospace;font-size:.72rem;font-weight:700;padding:.05rem .3rem;border-radius:3px;border:1px solid currentColor}
+.g-a{color:var(--tp-keep)}
+.g-b{color:#2f6f4f}
+.g-c{color:var(--tp-repair)}
+.g-d{color:var(--tp-grey)}
+.g-x{color:var(--tp-retire)}
+[data-theme="dark"] .g-b{color:#9ed3b4}
+.v{font-family:"Space Mono",monospace;font-size:.68rem;letter-spacing:.07em;text-transform:uppercase;font-weight:700;white-space:nowrap}
+.v-keep{color:var(--tp-keep)}
+.v-repair{color:var(--tp-repair)}
+.v-relabel{color:var(--tp-relabel)}
+.v-retire{color:var(--tp-retire)}
+figure{margin:1.8rem 0 2rem}
+figure img{width:100%;height:auto;display:block;border:1px solid var(--tp-rule);border-radius:4px;background:#fff}
+figcaption{margin-top:.55rem;font-size:.82rem;line-height:1.5;color:var(--tp-grey)}
+figcaption b{color:var(--tp-ink);font-weight:600}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:1.4rem 0 1rem}
+@media(max-width:640px){.grid2{grid-template-columns:1fr}}
+.card{border:1px solid var(--tp-rule);border-radius:8px;padding:1.05rem 1.15rem;background:rgba(255,255,255,.45)}
+[data-theme="dark"] .card{background:rgba(255,255,255,.03)}
+.card h4{margin:.1rem 0 .45rem;font-size:1rem}
+.card p{font-size:.92rem;margin-bottom:.5rem}
+.card p:last-child{margin-bottom:0}
+.card .tag{font-family:"Space Mono",monospace;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--tp-rust)}
+.toc{display:flex;flex-wrap:wrap;gap:.35rem .9rem;padding:1rem 0 0;border-top:1px solid var(--tp-rule);margin:0 0 1rem;font-size:.82rem}
+.toc a{border-bottom:none;color:var(--tp-grey)}
+.toc a:hover{color:var(--tp-rust)}
+.note{font-size:.86rem;color:var(--tp-grey);border-left:2px solid var(--tp-rule);padding-left:.9rem;margin:1.4rem 0}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:.35rem 1rem;font-size:.9rem;margin:1rem 0 1.6rem}
+.kv dt{font-family:"Space Mono",monospace;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--tp-grey);padding-top:.18rem}
+.kv dd{margin:0}
+video{width:100%;height:auto;display:block;border:1px solid var(--tp-rule);border-radius:6px;background:#000}
+.dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:.7rem;margin:1.2rem 0 1.6rem}
+.dl a{display:block;border:1px solid var(--tp-rule);border-radius:6px;padding:.75rem .9rem;border-bottom:1px solid var(--tp-rule);font-size:.9rem}
+.dl a:hover{border-color:var(--tp-rust);background:var(--tp-tint)}
+.dl span{display:block;font-family:"Space Mono",monospace;font-size:.64rem;letter-spacing:.09em;text-transform:uppercase;color:var(--tp-grey);margin-top:.15rem}
+footer{margin-top:3.4rem;padding-top:1.2rem;border-top:1px solid var(--tp-rule);font-size:.82rem;color:var(--tp-grey)}
+footer p{margin-bottom:.5rem}
+[data-theme="dark"] h1,[data-theme="dark"] h2,[data-theme="dark"] h3,[data-theme="dark"] h4{color:var(--tp-ink)}
+[data-theme="dark"] .btn{background:var(--tp-ink);border-color:var(--tp-ink);color:#121917}
+[data-theme="dark"] .btn:hover{background:var(--tp-rust);border-color:var(--tp-rust);color:#121917}
+[data-theme="dark"] .btn.ghost{background:transparent;color:var(--tp-ink);border-color:var(--tp-ink)}
+[data-theme="dark"] .btn.ghost:hover{background:var(--tp-tint);color:var(--tp-ink)}
+[data-theme="dark"] figcaption b{color:var(--tp-ink)}
+</style>
+</head>
+<body>
+
+<!-- FLATTENED-TOP-NAV-START -->
+<header class="mm-top"><a class="mm-brand" href="/vi/">Tennis Unified</a><nav class="mm-nav" aria-label="Sections"><div class="mm-dropdown"><button class="mm-dropbtn" type="button" aria-haspopup="true" aria-expanded="false">Main <span class="mm-caret">&#9662;</span></button><div class="mm-dropmenu">
+        <a href="/vi/">Trang chủ</a>
+        <a href="/vi/fundamentals/">Nền tảng</a>
+        <a href="/vi/doubles/">Đánh đôi</a>
+        <a href="/vi/stroke-analysis/">Phân tích cú đánh</a>
+        <a href="/vi/coach-video-library/">Thư viện HLV</a>
+        <a href="/vi/tennis-video-library/">Thư viện Video</a>
+        <a href="/vi/tennis-technical-reference/">Tra cứu kỹ thuật</a>
+        <a href="/tnkb/vi/index.html">Kho Tri Thức</a>
+        <a href="/vi/tennis-evolution/">Tiến hóa quần vợt</a>
+        <a href="/vi/blog/">Bài viết</a>
+        <a href="/vi/book/">Sách Toàn diện</a>
+        <a href="/vi/books/">Tủ sách Tennis</a>
+        <a href="/vi/books/court_diagrams.html">Sơ đồ chiến thuật</a>
+        <a href="/vi/articles/">200 Bài Viết</a>
+        <a href="/vi/research/" class="active">Nghiên cứu</a>
+        <a href="/vi/Tenniskb-5 Pillars/">5 Trụ Cột</a>
+        <a href="/vi/Tenniskb-10 Pillars/">10 Trụ Cột</a>
+      </div></div></nav><div class="mm-right"><a class="tu-nav-lang mm-langbtn" href="/research/tri-plane-stability/" title="Switch language">🌐 EN</a><button class="tu-nav-darkmode mm-darkbtn" type="button" aria-pressed="false" title="Dark Mode"><span class="tu-nav-emoji">🌙</span><span class="tu-nav-text">Dark Mode</span></button></div></header>
+<!-- FLATTENED-TOP-NAV-END -->
+
+<main class="wrap">
+
+<p class="eyebrow">Nghiên cứu · Cơ sinh học · v1.1</p>
+<h1>Ba điểm, bốn tiếp xúc, và cái giá của ràng buộc</h1>
+<p class="dek">Một khung huấn luyện dựng trên chiếc ghế đẩu ba chân, được kiểm tra lại bằng tài liệu khoa học, bằng hình học, và bằng chính những bài tập đưa nó vào tuần luyện của một người chơi.</p>
+
+<div class="meta">
+  <span class="chip">19.900 từ</span>
+  <span class="chip">10 phần</span>
+  <span class="chip">27 nguồn</span>
+  <span class="chip">Hạng A–X</span>
+  <span class="chip">30 tháng 10, 2026</span>
+</div>
+
+<div class="cta-row">
+  <a class="btn" href="#practice">Có gì mới ở v1.1</a>
+  <a class="btn ghost" href="/assets/tri-plane/downloads/tri-plane-stability-vi.pdf">Đọc toàn văn (PDF)</a>
+  <a class="btn ghost" href="/research/tri-plane-stability/">English edition</a>
+</div>
+
+<p class="toc">
+  <a href="#claim">Khung nói gì</a>
+  <a href="#three">Một cụm từ, ba câu hỏi</a>
+  <a href="#budget">Ngân sách ràng buộc</a>
+  <a href="#corrections">Ba chỉnh lý</a>
+  <a href="#evidence">Bằng chứng, theo hạng</a>
+  <a href="#practice">Lớp thực hành</a>
+  <a href="#film">Đoạn phim 40 giây</a>
+  <a href="#cues">Sáu câu lệnh sống sót</a>
+  <a href="#falsify">Điều gì sẽ bác bỏ</a>
+</p>
+
+<p class="lead">Một chiếc ghế đẩu ba chân không bao giờ lắc lư. Một chiếc ghế bốn chân thì có. Từ quan sát đó, một khung huấn luyện được dựng lên và được dạy: ba điểm định nghĩa một mặt phẳng, điểm thứ tư tạo ra bất ổn trừ khi nó nằm trên cùng mặt phẳng; vì thế hãy dồn lực vào một chân, định mặt phẳng vung bằng hai tay, và thu một tay sát vào thân.</p>
+
+<p>Quan sát đó tốt. Phần hình học, trong giới hạn của nó, đúng. Điều khung thực sự làm thì tinh vi và thú vị hơn điều nó tuyên bố: nó gộp ba câu hỏi vật lý khác nhau vào một cụm từ, và khi tách ra, chúng không cùng chỉ về một hướng.</p>
+
+<p>Trang này là bản rút gọn của một hồ sơ kiểm tra khung đủ nghiêm túc để thử nó. Hồ sơ làm ba việc mà tài liệu gốc không làm: tách các câu hỏi, chỉnh lại hình học ở đúng chỗ yếu nhất, và xếp hạng mọi khẳng định chịu tải — kể cả những khẳng định hoá ra chỉ là giáo điều huấn luyện khoác áo phép đo.</p>
+
+<h2 id="claim">Khung nói gì</h2>
+
+<p>Năm nguyên lý, theo đúng lời của khung:</p>
+
+<div class="scroller">
+<table>
+<colgroup><col style="width:24%"><col style="width:76%"></colgroup>
+<thead><tr><th>Nguyên lý</th><th>Khẳng định</th></tr></thead>
+<tbody>
+<tr><td><b>1. Dồn lực vào một chân trụ</b></td><td>Mỗi lúc chỉ một chân chịu toàn bộ lực. Điều này tạo một trục quay thẳng đứng duy nhất đi qua phản lực mặt đất của chân đó; chia 50/50 tạo hai trục cạnh tranh và bạn bị kẹt ở giữa.</td></tr>
+<tr><td><b>2. Đế rộng bù đắp</b></td><td>Nếu hai chân cùng chịu lực, chúng phải dang rộng. Đế hẹp là đa giác đế đỡ nhỏ; trọng tâm dễ thoát ra ngoài.</td></tr>
+<tr><td><b>3. Hai tay định nghĩa một mặt phẳng</b></td><td>Đường vợt không phải một đường thẳng mà là một đĩa — một mặt phẳng nghiêng trong không gian. Hai tay đặt độ nghiêng, độ cao và hướng của đĩa đó trước khi vung.</td></tr>
+<tr><td><b>4. Thu tay về gần trục</b></td><td>Kéo một khối lượng lại gần trục. <i>L = I&omega;</i>: mô-men quán tính giảm thì tốc độ góc tăng. Tay tung bóng thu vào; tay không thuận kéo về sát ngực.</td></tr>
+<tr><td><b>5. Kiểm tra ba điểm</b></td><td>Tại điểm tiếp xúc, đúng ba điểm làm việc trên một mặt phẳng: chân chịu lực, tay thu, tay cầm vợt duỗi ra.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="three">Một cụm từ, ba câu hỏi</h2>
+
+<p>"Ba so với bốn điểm" đang làm ba việc cùng lúc. Tách ra, chúng cho ba câu trả lời khác nhau — và ở một khía cạnh, chúng chỉ về hai hướng ngược nhau.</p>
+
+<div class="scroller">
+<table>
+<colgroup><col style="width:40%"><col style="width:41%"><col style="width:19%"></colgroup>
+<thead><tr><th>"Ba so với bốn điểm" thực ra là về…</th><th>Nhiều tiếp xúc hơn nghĩa là</th><th>Kết luận</th></tr></thead>
+<tbody>
+<tr><td><b>Tính xác định</b> — hình học. Ba điểm không thẳng hàng cố định một mặt phẳng; điểm thứ tư thừa ràng buộc trừ khi đồng phẳng.</td><td>Không liên quan. Điều quan trọng là mặt phẳng vung nằm ở đâu, không phải có bao nhiêu tiếp xúc.</td><td><span class="v v-keep">Đúng</span></td></tr>
+<tr><td><b>Tính đủ</b> — tĩnh học. Đa giác đế đỡ lớn hơn chống được nhiễu lớn hơn.</td><td><b>Ổn định hơn.</b> Ở đây nhiều tiếp xúc là tốt hơn hẳn.</td><td><span class="v v-retire">Sai</span></td></tr>
+<tr><td><b>Tự do</b> — động lực học quay. Mỗi tiếp xúc truyền mô-men đều có thể ràng buộc trục quay.</td><td><b>Kém tự do hơn.</b> Nhiều tiếp xúc nghĩa là ít tự do xoay hơn.</td><td><span class="v v-keep">Đúng</span> — vì lý do khác</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Sức thuyết phục của khung đến từ việc chuyển giữa ba đăng ký này mà không tuyên bố chuyển. Chiếc ghế đẩu là phát biểu về tính xác định. Đế rộng là phát biểu về tính đủ. Động tác thu tay là phát biểu về tự do. Chỉ cái thứ nhất và thứ ba ủng hộ "ít tiếp xúc hơn"; cái thứ hai nói ngược lại — và chính nó là cái các huấn luyện viên trích khi dạy tư thế chờ.</p>
+
+<figure>
+  <img src="/assets/tri-plane/figures/fig4-3-vs-4-points.jpg" alt="Ba điểm luôn tìm được một mặt phẳng; điểm thứ tư gây thừa ràng buộc trừ khi đồng phẳng">
+  <figcaption><b>Hình 1.</b> Hình gốc. Chiếc ghế đẩu là lập luận về tính xác định, không phải về độ ổn định — đúng vì thế mà nó không chuyển được sang đa giác đế đỡ.</figcaption>
+</figure>
+
+<h2 id="budget">Ngân sách ràng buộc</h2>
+
+<p>Phát biểu lại, khung trở nên sắc hơn chính nó:</p>
+
+<blockquote>
+  <p>Cấu hình tối ưu là <b>ràng buộc tối thiểu mà vẫn thoả nhu cầu ổn định của nhiệm vụ</b> — vì mọi ràng buộc vượt quá mức đủ đều phải trả bằng tự do xoay.</p>
+</blockquote>
+
+<p>Một câu đó hấp thụ cả năm nguyên lý, và nó giải thích những nghiên cứu trông như bằng chứng ngược. Tư thế mở cho tốc độ vợt bằng tư thế vuông, bằng một con đường khác, vì mỗi kiến trúc tiêu ràng buộc ở nơi nó rẻ nhất. Backhand hai tay không phải ngoại lệ của "ít tiếp xúc"; nó là một <em>chuỗi kín với điểm thứ tư đồng phẳng</em> — một thiết kế khác, mua độ cứng ở nơi độ cứng có ích.</p>
+
+<p>Ngân sách có một tham số. Gọi là &lambda; — nhu cầu ổn định của nhiệm vụ. Tư thế chờ, đỡ giao bóng và trượt phòng thủ là &lambda; cao: chúng muốn đế rộng, hai chân, và chấp nhận chi phí xoay. Giao bóng một và forehand tấn công là &lambda; thấp: chúng muốn một điểm trụ và một trục tự do. Lỗi của khung là phát biểu một quy tắc &lambda; thấp như định luật phổ quát, rồi dạy nó trong những nhiệm vụ &lambda; cao.</p>
+
+<figure>
+  <img src="/assets/tri-plane/figures/fig7-margin-of-stability.png" alt="Biên ổn định theo bề ngang đế ở bốn vận tốc ngang">
+  <figcaption><b>Hình 2.</b> Rộng bao nhiêu là đủ — theo mô hình. Bề ngang đế mà tại đó biên ổn định bằng không phụ thuộc vào việc thân người đang di chuyển ngang nhanh đến đâu. Ở tốc độ đi bộ, 6 cm là đủ; ở 0,8 m/s, ngưỡng là 50 cm. Đây là lý do "đế rộng" là một dải, không phải một hướng.</figcaption>
+</figure>
+
+<div class="scroller">
+<table>
+<colgroup><col style="width:30%"><col style="width:30%"><col style="width:40%"></colgroup>
+<thead><tr><th>Vận tốc ngang của khối tâm</th><th>Bề ngang đế để biên bằng không</th><th>Nhiệm vụ tương ứng</th></tr></thead>
+<tbody>
+<tr><td class="num">0,1 m/s</td><td class="num">6 cm</td><td>Đứng chờ, không bóng</td></tr>
+<tr><td class="num">0,3 m/s</td><td class="num">19 cm</td><td>Tiếp đất sau split-step</td></tr>
+<tr><td class="num">0,5 m/s</td><td class="num">31 cm</td><td>Đỡ giao bóng xa người</td></tr>
+<tr><td class="num">0,8 m/s</td><td class="num">50 cm</td><td>Trượt phòng thủ hết tốc</td></tr>
+</tbody>
+</table>
+</div>
+
+<p class="note">Đây là giá trị mô hình, không phải giá trị đo. Mô hình là biên ổn định của con lắc ngược tuyến tính, với chiều dài chân và bàn chân cố định đã nêu; Phụ lục A của hồ sơ liệt kê mọi giả định. Điều đáng giữ là <em>hình dạng</em> của quan hệ, và nó vững: bề ngang cần thiết tỉ lệ với vận tốc ngang mà bạn phải hãm.</p>
+
+<h2 id="corrections">Ba chỉnh lý</h2>
+
+<div class="grid2">
+  <div class="card">
+    <p class="tag">Chỉnh lý 1 · hình học</p>
+    <h4>Hai tay không định nghĩa một mặt phẳng</h4>
+    <p>Hai điểm định nghĩa một <em>đường thẳng</em>. Một mặt phẳng cần điểm thứ ba không thẳng hàng, và trong cú vung điểm đó là đường vai — hoặc đầu vợt. Tiên đề của chính khung nói vậy, nghĩa là nguyên lý thiếu đúng một ràng buộc ngay tại chỗ nó được cho là mạnh nhất.</p>
+    <p><b>Sửa:</b> "Ngực và hai tay, một tấm." Hai tay cố định đường; đường ngực cố định độ nghiêng.</p>
+  </div>
+  <div class="card">
+    <p class="tag">Chỉnh lý 2 · cơ học</p>
+    <h4>Thừa ràng buộc làm bạn cứng, không làm bạn lắc</h4>
+    <p>Ghế bốn chân lắc vì chân thứ tư cứng và không khép được khe hở. Cơ thể thì mềm: tiếp xúc thứ tư khép lại, và phần lệch được tích thành tiền tải — khoảng 400 N ở 20 mm, với một chân cứng 20 N/mm. Bạn không ngã. Bạn mất xoay, và bạn tới muộn.</p>
+    <p><b>Sửa:</b> "Một chân làm chủ cú xoay" — câu này dạy đúng kiểu thất bại.</p>
+  </div>
+</div>
+
+<figure>
+  <img src="/assets/tri-plane/figures/fig5-overconstraint-modes.png" alt="Hai kiểu thất bại của thừa ràng buộc: ghế cứng nhấc chân thứ tư, cơ thể mềm tích tiền tải">
+  <figcaption><b>Hình 3.</b> Hai kiểu thất bại. Ghế cứng để lại một khe hở nhìn thấy được; cơ thể mềm khép khe đó và giấu lực vào bên trong. Đây là lý do "hãy là ghế đẩu, đừng là ghế bốn chân" dạy sai điều: cơ thể không bao giờ cho bạn thấy cái lắc mà câu đó định cảnh báo.</figcaption>
+</figure>
+
+<div class="card" style="margin:1.6rem 0 2rem">
+  <p class="tag">Chỉnh lý 3 · cú giao bóng</p>
+  <h4>Giao bóng không phải cú xoay quanh trục thẳng đứng</h4>
+  <p>Hình ảnh vận động viên trượt băng thuộc về cú đánh mặt sân. Trong giao bóng, phân rã mô-men động lượng của Bahamonde cho thấy thành phần thẳng đứng nhỏ và không nhất quán; chuyển giao trội là từ gần ra xa vào cánh tay cầm vợt, và 75% tổng mô-men động lượng gần điểm tiếp xúc nằm ở cánh tay đó. Dạy một người giao bóng "xoay như trượt băng" là chỉ họ vào một trục mà cú đánh không dùng.</p>
+  <p><b>Sửa:</b> giữ động tác thu tay như câu lệnh tăng tốc thân trên cho cú đánh mặt sân, và bỏ hẳn ngôn ngữ "trục thẳng đứng" khỏi việc dạy giao bóng.</p>
+</div>
+
+<figure>
+  <img src="/assets/tri-plane/figures/fig6b-plane-definition.png" alt="Hai điểm cho một đường, ba điểm cho một mặt phẳng, vợt đi trên một đĩa">
+  <figcaption><b>Hình 4.</b> Chỗ sửa, được vẽ ra. Hai tay để lại một bậc tự do — đĩa vẫn có thể xoay quanh đường nối hai tay. Thêm đường vai là đĩa được khoá trước khi vung.</figcaption>
+</figure>
+
+<h2 id="evidence">Bằng chứng, theo hạng</h2>
+
+<p>Mọi khẳng định chịu tải trong hồ sơ đều mang một hạng, vì sức thuyết phục của khung phần lớn đến từ những suy luận đọc lên như phép đo. Hạng không phải trang trí: nó quyết định điều một huấn luyện viên được phép nói.</p>
+
+<div class="scroller">
+<table>
+<colgroup><col style="width:11%"><col style="width:53%"><col style="width:36%"></colgroup>
+<thead><tr><th>Hạng</th><th>Nghĩa</th><th>HLV được nói</th></tr></thead>
+<tbody>
+<tr><td><span class="grade g-a">A</span></td><td>Đo trên người chơi tennis, lặp lại được hoặc mẫu lớn, đúng trọng tâm</td><td>"Nghiên cứu cho thấy…"</td></tr>
+<tr><td><span class="grade g-b">B</span></td><td>Đo trên người chơi tennis, một nghiên cứu hoặc mẫu hẹp</td><td>"Một nghiên cứu cho thấy…"</td></tr>
+<tr><td><span class="grade g-c">C</span></td><td>Cơ sinh học phổ quát đã xác lập, suy ra cho tennis</td><td>"Vật lý nói rằng…"</td></tr>
+<tr><td><span class="grade g-d">D</span></td><td>Giáo điều huấn luyện hoặc đồng thuận chuyên gia, chưa đo</td><td>"Phần lớn HLV dạy…"</td></tr>
+<tr><td><span class="grade g-x">X</span></td><td>Khẳng định trong tài liệu gốc, bị bằng chứng hoặc chính hình học của nó phản bác</td><td>Đừng nói; hãy nói bản phát biểu lại</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Cuộc kiểm toán tìm thấy gì, từng nguyên lý:</p>
+
+<div class="scroller">
+<table>
+<colgroup><col style="width:13%"><col style="width:44%"><col style="width:11%"><col style="width:32%"></colgroup>
+<thead><tr><th>Nguyên lý</th><th>Tài liệu thực sự đo được gì</th><th>Hạng</th><th>Bản phát biểu lại</th></tr></thead>
+<tbody>
+<tr>
+  <td><b>P1</b> Một chân trụ</td>
+  <td>Chân có vai trò, và vai trò lớn hơn ở người chơi tốt hơn: phản lực dọc đỉnh khi giao bóng là 2,12 &plusmn; 0,36 BW ở VĐV đẳng cấp so với 1,68 &plusmn; 0,33 ở người mới, tương quan với độ cao tiếp xúc r = 0,85. Nhưng <em>chân nào</em> chưa bao giờ được đo ở mức 100%. Tư thế mở và vuông cho tốc độ vợt bằng nhau; một nghiên cứu cho thấy dồn một chân làm giảm tổng lực khả dụng.</td>
+  <td><span class="grade g-a">A</span> chân<br><span class="grade g-x">X</span> 100%</td>
+  <td>Ở thời điểm nhu cầu xoay cao nhất, <em>phần lớn</em> lực nằm dưới một chân — 70–85%, chân trong là điểm tựa nhẹ. Trong nhiệm vụ cần ổn định cao, hai chân và đế rộng là đúng.</td>
+</tr>
+<tr>
+  <td><b>P2</b> Đế rộng</td>
+  <td>Dang rộng làm giảm lắc ngang, và lực ngang cao hơn ở tư thế phòng thủ so với tấn công. Nhưng dang rộng cũng làm tăng mô-men quán tính quanh trục thẳng đứng: chính kho tri thức ghi chi phí đổi hướng là 100–150 ms.</td>
+  <td><span class="grade g-a">A</span> dải<br><span class="grade g-c">C</span> cơ chế</td>
+  <td>Rộng đủ để biên ổn định vẫn dương ở vận tốc ngang của nhiệm vụ — khoảng 1,5–2 lần bề ngang vai. Vượt mức đó, bề rộng mua ổn định và tiêu xoay.</td>
+</tr>
+<tr>
+  <td><b>P3</b> Hai tay</td>
+  <td>"Mặt phẳng vung" không có định nghĩa chuẩn trong tài liệu bình duyệt; nó được dùng với ít nhất ba nghĩa không tương đương. Backhand hai tay là chuỗi kín với tám bậc tự do so với bảy của một tay, độ cứng chi trên lớn hơn.</td>
+  <td><span class="grade g-c">C</span> hình học<br><span class="grade g-d">D</span> cơ chế</td>
+  <td>Mặt phẳng vung là mặt phẳng của tam giác <em>vai–tay–tay</em>. Hai tay cố định đường; ngực cố định độ nghiêng. Điểm thứ tư phải nằm trên mặt phẳng đó hoặc ra khỏi phương trình.</td>
+</tr>
+<tr>
+  <td><b>P4</b> Thu tay</td>
+  <td>Mô-men động lượng gần tiếp xúc là 75,1% ở cánh tay cầm vợt; chuyển giao từ gần ra xa. Nhưng không có nghiên cứu tennis nào cho thấy thu tay không thuận làm tăng tốc độ góc thân trên, và thử nghiệm đối chứng tốt nhất về thời điểm thu tay tung bóng cho thấy nó đổi cú tung và nhịp điệu, không đổi động học đầu hay thân.</td>
+  <td><span class="grade g-c">C</span></td>
+  <td>Trong pha tăng tốc thân trên, giữ tay không thuận sát trục để nó không hãm cú xoay; thả trước tiếp xúc để tay đánh duỗi ra. Lợi ích mang tính cho phép, không phải tạo ra. Đừng gắn phần trăm.</td>
+</tr>
+<tr>
+  <td><b>P5</b> Kiểm tra ba điểm</td>
+  <td>Như đã phát biểu, ba điểm được gọi tên là bàn chân chịu lực, tay thu và tay cầm vợt. Chúng nói chung không nằm trên một mặt phẳng — bàn chân ở trên đất, mặt phẳng ở trên không.</td>
+  <td><span class="grade g-c">C</span> đổi tên</td>
+  <td>Một mặt phẳng (vai–tay–tay) <em>cộng</em> một trục (chân chịu lực), và hai thứ phải khớp. Bản đó kiểm tra được, và nó trở thành phiếu bốn mục.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p><b>Một phát hiện ngoài dự kiến.</b> Kho tri thức 1.000 bài mà dự án này dựa vào tự mâu thuẫn ở bốn trong năm nguyên lý — trong đó có hai định nghĩa ngược nhau về chân nào là "chân ngoài" ở forehand, và một bài cơ sinh học (ART-011) nói rằng dồn lực chủ yếu vào một chân "làm giảm tổng lực khả dụng cho cú đánh." Hồ sơ liệt kê cả năm ở mục 8 và đề nghị một lượt thêm bổ ngữ theo pha nhiệm vụ: năm bài, một buổi biên tập.</p>
+
+<figure>
+  <img src="/assets/tri-plane/figures/fig8-moment-of-inertia.png" alt="Vị trí tay là đòn bẩy 2,1 lần lên mô-men quán tính toàn thân">
+  <figcaption><b>Hình 5.</b> Vì sao động tác thu tay vững về cơ học dù chưa được đo trong tennis: vị trí tay là đòn bẩy 2,1 lần lên mô-men quán tính toàn thân, tương đương &minus;36% <i>I</i> và trần +56% cho &omega;. Đây là mô hình, không phải phép đo.</figcaption>
+</figure>
+
+<h2 id="practice">Lớp thực hành <span class="chip" style="vertical-align:middle;margin-left:.3rem">Mới ở v1.1</span></h2>
+
+<p>Một khẳng định sai nằm trong tài liệu thì nằm im. Một khẳng định sai nằm trong bài tập thì được lặp ba trăm lần một tuần, bởi một người đang cố làm đúng, dưới mắt một huấn luyện viên đang chấm theo đúng tiêu chí mà bài tập gọi tên. Mỗi bài tập là một khẳng định ở dạng vận hành — nên v1.1 áp dụng đúng công cụ đó cho mười lăm bài tập trong khung gốc.</p>
+
+<p>Từng bài được đọc theo bốn điểm: cơ chế nó giả định, tiêu chí nó chấm, lỗi nó phát hiện được, và — điều bộc lộ hơn — lỗi mà về cấu trúc nó không thể phát hiện. Phán quyết: <span class="v v-keep">Giữ</span>, <span class="v v-repair">Sửa</span>, <span class="v v-relabel">Đổi tên</span>, <span class="v v-retire">Bỏ</span>.</p>
+
+<div class="scroller">
+<table>
+<colgroup><col style="width:5%"><col style="width:27%"><col style="width:12%"><col style="width:56%"></colgroup>
+<thead><tr><th>#</th><th>Bài tập</th><th>Phán quyết</th><th>Vì sao</th></tr></thead>
+<tbody>
+<tr><td class="num">1.1</td><td>Flamingo Freeze — chỉ chân ngoài, gối trong co, giữ 2 giây</td><td><span class="v v-repair">Sửa</span></td><td>Luyện thăng bằng tĩnh trên một chân, không luyện việc đặt trục. Tư thế co gối xoá quyền điều chỉnh của bàn chân trong, nên người chơi đạt bằng cách cứng người.</td></tr>
+<tr><td class="num">1.2</td><td>Ném bóng thuốc một chân</td><td><span class="v v-repair">Sửa</span></td><td>Bài tốt nhất trong ba về cơ học. Chỉ sai liều: đòi 100%, và bàn chân trong bị bỏ đi thay vì làm điểm tựa.</td></tr>
+<tr><td class="num">1.3</td><td>Khoá chân trước khi giao bóng — đứng yên trên chân trước, chân sau bay</td><td><span class="v v-relabel">Đổi tên</span></td><td>Đây là bài tiếp đất. Câu hỏi lực đẩy của giao bóng không được luyện; chân trước so với chân sau lệch 1 m/s, nằm trong nhiễu.</td></tr>
+<tr><td class="num">2.1</td><td>Thước dây ở tư thế chờ — hai chân bằng vai + 50%</td><td><span class="v v-repair">Sửa</span></td><td>1,5 lần là <em>biên dưới</em> của dải, lại được trình bày như đích. Không có biên trên, không có số hạng chi phí — nên nó dạy mở rộng quá mức.</td></tr>
+<tr><td class="num">2.2</td><td>Ngồi tường khi đỡ giao bóng — đế rộng, giữ đẳng trường 10 giây</td><td><span class="v v-repair">Sửa</span></td><td>Mười giây đẳng trường là bài đốt cơ đùi có kèm tư thế. Biên quan trọng là biên động.</td></tr>
+<tr><td class="num">2.3</td><td>Trượt phòng thủ rồi dừng — trượt, dừng đế rộng, giữ 2 giây</td><td><span class="v v-keep">Giữ</span></td><td>Bài duy nhất luyện đúng cơ chế mà mô hình gọi tên: biên ổn định tại vận tốc ngang của nhiệm vụ.</td></tr>
+<tr><td class="num">3.1</td><td>Đóng khung đĩa — hai tay giữ cổ vợt và đầu vợt</td><td><span class="v v-repair">Sửa</span></td><td>Hai tay trên vợt cố định đường của vợt và độ xoay mặt vợt. Độ nghiêng là quan hệ giữa đường đó với đường ngực, mà bài không hề nhắc.</td></tr>
+<tr><td class="num">3.2</td><td>Mặt phẳng qua gương — đứng yên, kiểm tra hai tay cùng một mặt phẳng</td><td><span class="v v-retire">Bỏ</span></td><td>Gương cho hình chiếu hai chiều. Tiêu chí không thể trượt một cách nhìn thấy được, nên nó không dạy được gì.</td></tr>
+<tr><td class="num">3.3</td><td>Tay không thuận dẫn đường — giữ cổ vợt đến khi bắt đầu vung tới</td><td><span class="v v-keep">Giữ</span></td><td>Bài được dựng tốt nhất trong mười lăm bài: cơ chế đúng, có điều kiện thả, tiêu chí quan sát được.</td></tr>
+<tr><td class="num">4.1</td><td>Thu tay và giữ — nắm áo, giao 20 quả giữ đến tiếp xúc</td><td><span class="v v-repair">Sửa</span></td><td>Cửa sổ của động tác thu tay là pha tăng tốc; nó đảo chiều trước tiếp xúc để tay duỗi ra. Giữ đến tiếp xúc luyện điều ngược lại.</td></tr>
+<tr><td class="num">4.2</td><td>Kẹp khăn forehand — kẹp khăn dưới nách tay không thuận</td><td><span class="v v-repair">Sửa</span></td><td>Tiêu chí nhị phân tốt nhưng chỉ một nửa. Có hai lỗi — rơi sớm và giữ muộn — mà bài chỉ thấy lỗi đầu.</td></tr>
+<tr><td class="num">4.3</td><td>Xoay kiểu trượt băng — hai tay dang, xoay, thu vào</td><td><span class="v v-relabel">Đổi tên</span></td><td>Vật lý đúng cho cú xoay quanh trục dọc, tức trường hợp cú đánh mặt sân. Không phải giao bóng. Giữ bài, bỏ khẳng định chuyển giao.</td></tr>
+<tr><td class="num">5.1</td><td>Hô đứng yên — đồng đội kiểm tra ba điểm đồng phẳng</td><td><span class="v v-retire">Bỏ</span></td><td>Sai hình học, và là phán đoán không ai làm kịp trong thời gian thực. Nó tạo đồng thuận, không tạo phép đo.</td></tr>
+<tr><td class="num">5.2</td><td>Kiểm toán ba điểm qua video — dừng hình, đếm điểm</td><td><span class="v v-repair">Sửa</span></td><td>Phương pháp đúng và là bài duy nhất tạo hồ sơ. Danh mục sai: thiếu đường vai và gọi sai điểm thứ tư.</td></tr>
+<tr><td class="num">5.3</td><td>Tiến trình thử ghế đẩu — rộng, dồn lực, mặt phẳng, thu tay, tiếp xúc</td><td><span class="v v-relabel">Đổi tên</span></td><td>Trình tự sư phạm đúng, nên giữ. Cái tên dạy sai kiểu thất bại: bạn không ngã khỏi ghế, bạn mất khả năng xoay trên ghế.</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><b>Hai giữ, tám sửa, ba đổi tên, hai bỏ.</b> Hai trong mười lăm bài sống sót nguyên vẹn. Đó không phải bản án cho người viết ra chúng; đó là điều xảy ra khi một bộ bài tập được suy ra từ năm nguyên lý và hai trong năm hoá ra bị phát biểu sai.</p>
+
+<h3>Bốn lỗi chạy suốt cả bộ</h3>
+
+<div class="grid2">
+  <div class="card">
+    <p class="tag">L1</p>
+    <h4>Lỗi 100%</h4>
+    <p>Ba bài đòi dồn lực hoàn toàn vào một chân. Người nhận chỉ dẫn bất khả thi không báo thất bại; họ tìm cách <em>cảm thấy</em> mình tuân thủ — thường bằng cách cứng cổ chân, cứng hông, đóng băng thân trên. <b>Sửa:</b> mọi câu lệnh dồn lực thành một tỉ lệ, và điểm tựa nhẹ được chấm, không phải được tha.</p>
+  </div>
+  <div class="card">
+    <p class="tag">L2</p>
+    <h4>Lỗi giữ tay đến tiếp xúc</h4>
+    <p>Ba bài giữ tay không thuận cố định suốt vùng tiếp xúc. Điều đó biến bài xoay thành bài chặn xoay, và tạo ra người chơi ổn định, gọn và chậm. <b>Sửa:</b> mọi bài thu tay có một cửa sổ thả, phát biểu bằng vị trí.</p>
+  </div>
+  <div class="card">
+    <p class="tag">L3</p>
+    <h4>Lỗi tiêu chí không thể bác bỏ</h4>
+    <p>Hai bài đòi con người nhìn thấy một mặt phẳng trong thời gian thực. Cả hai không thể trượt theo cách người chơi phản bác được, nên tạo ra vẻ ngoài của đánh giá — và dạy rằng việc kiểm tra là một nghi thức. <b>Sửa:</b> tiêu chí phải đếm được, hoặc phải quay phim.</p>
+  </div>
+  <div class="card">
+    <p class="tag">L4</p>
+    <h4>Phiếu điểm một chiều</h4>
+    <p>Mọi bài đều được chấm trên <em>độ ổn định</em>: có ngã không, khăn có rơi không. Không bài nào chấm trên <em>chi phí xoay</em>. Một bộ bài dựng để phát hiện bất ổn sẽ báo đạt cho người đã thừa ràng buộc đến cứng đờ, vì cứng đờ thì ổn định. <b>Sửa:</b> thêm một cột.</p>
+  </div>
+</div>
+
+<p>Lỗi cuối là lỗi cấu trúc, và nó theo trực tiếp từ chỉnh lý 2. Luận điểm của chính khung — rằng thừa ràng buộc phải trả bằng xoay — không xuất hiện ở đâu trong phần đánh giá của khung. Sửa chữa chỉ tốn một đồng hồ bấm giây và một điện thoại: mỗi thẻ bài tập có thêm điểm thứ hai, thời gian đổi hướng, hoặc biên độ xoay vai tại tiếp xúc, hoặc đơn giản là "đã hoàn tất theo đà chưa."</p>
+
+<h3>Một bài tập viết lại đầy đủ</h3>
+
+<div class="scroller">
+<table>
+<colgroup><col style="width:20%"><col style="width:80%"></colgroup>
+<thead><tr><th colspan="2">Flamingo Freeze &rarr; giữ có điểm tựa</th></tr></thead>
+<tbody>
+<tr><td><b>Dựng bài</b></td><td>Chân ngoài chịu ~80%, mũi bàn chân trong chạm đất, không truyền lực. Vung forehand đến tiếp xúc, giữ 2 giây.</td></tr>
+<tr><td><b>Liều</b></td><td>3 &times; 6 mỗi bên, sau đó 2 &times; 6 ở tốc độ rally.</td></tr>
+<tr><td><b>Tiêu chí</b></td><td>Xương ức lệch ngang dưới 5 cm trong lúc giữ, quay từ phía trước. Không phải "có đứng vững không."</td></tr>
+<tr><td><b>Thất bại</b></td><td>Xương ức trôi về phía bàn chân trong — trục chưa từng được đặt. Không phải: người chơi lắc lư.</td></tr>
+<tr><td><b>Vì sao mũi chân</b></td><td>Nó trả lại quyền điều chỉnh nhỏ mà cú đánh thật có dùng, nên bài tập thôi thưởng cho sự cứng đờ.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="film">Đoạn phim 40 giây, được kiểm toán</h2>
+
+<p>Khung hiện có một phim dạy học tiếng Việt: bốn mươi giây, bốn phân đoạn có phụ đề, dựng từ hình ảnh thi đấu. Đây là hiện vật đầu tiên của dự án mà một người chơi thật sự sẽ xem — nên nó là tài liệu hệ trọng nhất trong bộ.</p>
+
+<figure>
+  <video controls preload="metadata" poster="/assets/tri-plane/video/poster-a.jpg">
+    <source src="/assets/tri-plane/video/tri-plane-40s-vi.mp4" type="video/mp4">
+    Trình duyệt của bạn không hỗ trợ video. <a href="/assets/tri-plane/video/tri-plane-40s-vi.mp4">Tải đoạn phim</a>.
+  </video>
+  <figcaption><b>Phim.</b> <i>Khung Ổn Định Ba Điểm</i> — 40 giây, phụ đề tiếng Việt. Các phân đoạn: Nguyên lý 1, Nguyên lý 2, Nguyên lý 4 (giao bóng), Nguyên lý 4 (forehand).</figcaption>
+</figure>
+
+<div class="scroller">
+<table>
+<colgroup><col style="width:9%"><col style="width:69%"><col style="width:22%"></colgroup>
+<thead><tr><th class="num">t</th><th>Phụ đề, đúng như đã phát</th><th>Hạng</th></tr></thead>
+<tbody>
+<tr><td class="num">0:00</td><td><i>Nguyên lý 1: Một chân trụ — Flamingo Freeze.</i><br>100% lực qua 1 chân, tạo trục quay thẳng đứng</td><td><span class="grade g-x">X</span> cả hai vế</td></tr>
+<tr><td class="num">0:12</td><td><i>Nguyên lý 2: Đế rộng bù đắp — Wide Base.</i><br>Hai chân bắt buộc dang rộng để ổn định</td><td><span class="grade g-a">A</span> trong dải, im lặng về chi phí</td></tr>
+<tr><td class="num">0:20</td><td><i>Nguyên lý 4: Thu tay giao bóng — Tuck Principle.</i><br>Tay trái thu sát ngực &rarr; giảm I, tăng tốc độ xoay</td><td><span class="grade g-c">C</span> phụ đề mẫu</td></tr>
+<tr><td class="num">0:30</td><td><i>Nguyên lý 4: Forehand kẹp khăn.</i><br>Giữ tay không thuận sát ngực, không làm rơi khăn</td><td><span class="grade g-d">D</span> tiêu chí một chiều</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><b>Phát hiện 1 — sự vắng mặt là đúng, và nên được biến thành chủ ý.</b> Hai nguyên lý mà phim bỏ ra đúng là hai nguyên lý trượt kiểm toán: P3 thiếu một ràng buộc hình học, và ba điểm của P5 không đồng phẳng. Một bộ phim không thể cho thấy mặt phẳng mà nó không định nghĩa được. Điều trông như dựng phim thiếu lại chính là cách dựng duy nhất biện hộ được. Hãy thành quy tắc: <em>quay cái có thể cho thấy; đừng quay cái mô hình không đặc tả được.</em></p>
+
+<p><b>Phát hiện 2 — một phụ đề mang khẳng định hạng X vào phương tiện được sao chép nhiều nhất.</b> "100% lực qua 1 chân, tạo trục quay thẳng đứng." Cả hai vế đều hạng X: lực không bao giờ là 100%, và trục quay là suy luận động học chưa từng được đo — còn với giao bóng thì nó sai một cách cụ thể. Một tài liệu có thể đặt cảnh báo ở đoạn sau; một phụ đề thì không. Đây là chỉnh sửa ưu tiên cao nhất của toàn dự án, vì phim sẽ được chia sẻ lại mà không kèm hồ sơ.</p>
+
+<p><b>Phát hiện 3 — phụ đề Nguyên lý 4 là phụ đề mẫu.</b> Nó nêu cơ chế, gọi tên đại lượng, và không gắn con số nào. Đó đúng là tình trạng nhận thức của P4: vật lý vững, chưa đo trong tennis. Nó nên là khuôn cho mọi phụ đề còn lại.</p>
+
+<p><b>Phát hiện 4 — phụ đề Nguyên lý 2 sẽ bị áp dụng quá mức.</b> Đúng trong dải, im lặng về chi phí. Người xem sẽ dang rộng cho đến khi thấy không còn sai, tức vượt 2 lần bề ngang vai. Một chữ sửa được: <i>vừa đủ</i>.</p>
+
+<h3>Một chuẩn sản xuất, suy ra từ bốn phát hiện</h3>
+
+<ol>
+  <li><b>Mỗi phụ đề một khẳng định.</b> Hai khẳng định trên một dòng là cách một lời cảnh báo bị thất lạc.</li>
+  <li><b>Không dùng lượng từ tuyệt đối</b> — 100%, luôn luôn, bắt buộc, không bao giờ — trừ khi hạng là A.</li>
+  <li><b>Nếu cơ chế hạng C</b>, nêu cơ chế và giữ lại con số.</li>
+  <li><b>Cho thấy kiểu thất bại trong cùng khung hình với kiểu đúng.</b> Phim chỉ cho thấy thực thi đúng thì dạy nhận diện, không dạy sửa.</li>
+  <li><b>Phụ đề ghi tiêu chí, không ghi cảm giác.</b> "Tay thả trước tiếp xúc" tốt hơn "cảm nhận động tác thu."</li>
+</ol>
+
+<h2 id="cues">Sáu câu lệnh sống sót</h2>
+
+<p>Mỗi câu truy được về một phát biểu lại, thực thi được, và không đòi người chơi tin vào điều bằng chứng không ủng hộ. Hai câu đầu thay đổi hành vi nhanh nhất, vì chúng thay một chỉ dẫn bất khả thi bằng một tỉ lệ người chơi chạm tới được.</p>
+
+<div class="scroller">
+<table>
+<colgroup><col style="width:38%"><col style="width:34%"><col style="width:14%"><col style="width:14%"></colgroup>
+<thead><tr><th>Câu lệnh</th><th>Thay cho</th><th>Truy về</th><th>Hạng</th></tr></thead>
+<tbody>
+<tr><td><b>"Một chân làm chủ cú xoay."</b></td><td>"Hãy là ghế đẩu, đừng là ghế bốn chân."</td><td>P1&prime;</td><td><span class="grade g-c">C</span></td></tr>
+<tr><td><b>"80 ở chân ngoài, 20 làm điểm tựa."</b></td><td>"Dồn 100% vào một chân."</td><td>P1&prime;</td><td><span class="grade g-c">C</span></td></tr>
+<tr><td><b>"Rộng đủ để dừng, hẹp đủ để xoay."</b></td><td>"Càng rộng càng ổn định."</td><td>P2&prime;</td><td><span class="grade g-a">A</span></td></tr>
+<tr><td><b>"Ngực và hai tay, một tấm."</b></td><td>"Hai tay định nghĩa mặt phẳng."</td><td>P3&prime;</td><td><span class="grade g-c">C</span></td></tr>
+<tr><td><b>"Thu để tăng tốc, thả để đánh."</b></td><td>"Giữ tay thu đến tiếp xúc."</td><td>P4&prime;</td><td><span class="grade g-c">C</span></td></tr>
+<tr><td><b>"Đường vai khớp đường tay."</b></td><td>"Ba điểm trên một mặt phẳng."</td><td>P5&prime;</td><td><span class="grade g-c">C</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<figure>
+  <img src="/assets/tri-plane/figures/fig9-plane-error-amplification.png" alt="Khuếch đại sai số mặt phẳng: hai xentimét sai ở tay thành sáu mươi xentimét lệch ở đích">
+  <figcaption><b>Hình 6.</b> Vì sao chỉnh lý mặt phẳng đáng công: 2 cm sai ở tay lúc bắt đầu vung thành 0,6 m lệch ở đích. Theo mô hình, qua một cánh tay đòn 1,4 m.</figcaption>
+</figure>
+
+<h2 id="falsify">Điều gì sẽ bác bỏ</h2>
+
+<p>Một mô hình không thể sai thì không phải mô hình. Sáu giả thuyết được nêu cùng phép thử ở mục 23 của hồ sơ; ba trong số đó sẽ đổi kết luận.</p>
+
+<div class="scroller">
+<table>
+<colgroup><col style="width:46%"><col style="width:54%"></colgroup>
+<thead><tr><th>Nếu điều này được chứng minh…</th><th>Thì</th></tr></thead>
+<tbody>
+<tr><td>Thu tay không thuận làm tăng tốc độ góc thân trên một cách đo được</td><td>P4 chuyển từ C lên A, và cơ chế được trích nhiều nhất của khung trở thành cơ chế được ủng hộ tốt nhất.</td></tr>
+<tr><td>Một tỉ lệ dồn lực duy nhất là tối ưu cho mọi nhiệm vụ</td><td>Khung &lambda; sụp, và quy tắc phổ quát ban đầu được minh oan.</td></tr>
+<tr><td>Trục quay trong cú đánh không đi gần bàn chân chịu lực</td><td>Cách đọc lại về dồn lực một chân đổ vỡ, và cùng với nó là lý do ngân sách ràng buộc vận hành.</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Cho đến lúc đó, vị thế trung thực là vị thế hồ sơ chọn: khung sống sót, nhưng được phát biểu lại. Cái xuất hiện là một mô hình có tên, có cơ chế, có hàm chi phí đo được, có dự báo định lượng, và có danh sách tường minh những thực nghiệm sẽ phá nó. Đó là nhiều hơn tài liệu gốc có, và hữu ích hơn cho một huấn luyện viên so với một quy tắc không thể chất vấn.</p>
+
+<h2 id="downloads">Đọc toàn văn hồ sơ</h2>
+
+<p>Hai bản độc lập, mỗi bản được viết như một tài liệu riêng chứ không phải bản dịch của bản kia. Mọi khẳng định chịu tải đều có hạng; số liệu mô hình được đánh dấu là mô hình; Phụ lục A liệt kê mọi giả định, kể cả giả định có độ bất định lớn nhất (khớp nối phóng bóng).</p>
+
+<div class="dl">
+  <a href="/assets/tri-plane/downloads/tri-plane-stability-vi.pdf">Hồ sơ tiếng Việt — PDF<span>19.900 từ · 10 phần · 10 hình</span></a>
+  <a href="/assets/tri-plane/downloads/tri-plane-stability-vi.docx">Hồ sơ tiếng Việt — Word<span>có bảng thuật ngữ VI–EN</span></a>
+  <a href="/assets/tri-plane/downloads/tri-plane-stability-en.pdf">English dossier — PDF<span>17,300 words · 10 parts · 10 figures</span></a>
+  <a href="/assets/tri-plane/downloads/tri-plane-stability-en.docx">English dossier — Word<span>editable, headings and tables</span></a>
+</div>
+
+<h3>Nguồn gốc</h3>
+
+<dl class="kv">
+  <dt>Khung</dt><dd>Tài liệu gốc, bản tiếng Việt <i>Khung Ổn Định Ba Điểm</i>, bốn hình infographic, và đoạn phim dạy học 40 giây.</dd>
+  <dt>Tài liệu</dt><dd>27 nguồn bình duyệt, đã đối chiếu với bản ghi thư mục gốc. Khẳng định không kiểm chứng được thì bị đánh dấu trong bản rà soát và hạ hạng trong hồ sơ.</dd>
+  <dt>Kho tri thức</dt><dd>Kho 1.000 bài (trụ 01, 02, 04, 05, 06, 10). Kiểm toán phát hiện tự mâu thuẫn ở bốn trong năm nguyên lý — mục 8.</dd>
+  <dt>Mô hình</dt><dd>Tính toán từ nguyên lý đầu trong <code>analysis/triplane_model.py</code>; mọi số liệu mô hình tái lập được từ <code>results.json</code>.</dd>
+  <dt>Phiên bản</dt><dd>v1.1, 30 tháng 10, 2026. Bổ sung Phần X; Phần I–IX không đổi.</dd>
+</dl>
+
+<figure>
+  <img src="/assets/tri-plane/figures/fig2-single-leg-loaded.jpg" alt="Điểm trụ một chân với mặt phẳng vung nghiêng">
+  <figcaption><b>Hình 7.</b> Infographic gốc: một chân chịu lực làm điểm trụ, hai tay làm mặt phẳng. Cách đọc đã chỉnh giữ nguyên điểm trụ và thêm đường ngực vào mặt phẳng.</figcaption>
+</figure>
+
+<footer>
+  <p><b>Tennis Unified · Research Intranet · Nhánh Cơ sinh học.</b> Trang này là bản tổng hợp; các bản PDF mang toàn bộ lập luận, tài liệu tham khảo và phụ lục.</p>
+  <p>Bản song hành: <a href="/research/tri-plane-stability/">English edition</a> · <a href="/vi/research/">Mục lục nghiên cứu</a> · <a href="/vi/articles/">200 Bài Viết</a></p>
+  <p><small>Hạng: A đo và lặp lại · B đo, một nghiên cứu · C cơ sinh học phổ quát suy ra · D giáo điều huấn luyện · X bị phản bác. Số liệu mô hình không phải phép đo.</small></p>
+</footer>
+
+</main>
+</body>
+</html>
