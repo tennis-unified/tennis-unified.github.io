@@ -182,6 +182,20 @@ body.dark-mode .tcq-book strong{color:var(--tcq-ink) !important;}
 .cd-list a{display:block;padding:9px 18px;color:#52525b;text-decoration:none;font-size:.92rem;line-height:1.4;border-left:3px solid transparent;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .cd-list a:hover{background:rgba(0,0,0,.04)}
 .cd-list a.active{color:#18181b;font-weight:600;border-left-color:#b45309;background:rgba(180,83,9,.08)}
+
+/* ==== Inline PDF viewer (shared component) ==== */
+#pdf-overlay{position:fixed;inset:0;z-index:1120;display:none;flex-direction:column;background:#3f3f46;}
+#pdf-overlay.open{display:flex;}
+.pdf-toolbar{display:flex;align-items:center;gap:8px;padding:8px 14px;background:rgba(24,24,27,.97);color:#f4f4f5;border-bottom:1px solid #52525b;flex-wrap:wrap;}
+.pdf-toolbar .pdf-title{font-weight:600;font-size:.92rem;margin-right:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:44vw;display:flex;align-items:center;gap:8px;}
+.pdf-btn{background:none;border:1px solid #71717a;color:#f4f4f5;padding:5px 11px;border-radius:6px;cursor:pointer;font-size:.85rem;display:inline-flex;align-items:center;gap:6px;text-decoration:none;line-height:1.4;}
+.pdf-btn:hover{background:#52525b;}
+.pdf-btn:disabled{opacity:.35;cursor:default;}
+#pdf-pages{position:relative;flex:1;overflow:auto;padding:16px 0 48px;text-align:center;-webkit-overflow-scrolling:touch;}
+.pdf-page{display:block;margin:0 auto 14px;box-shadow:0 2px 14px rgba(0,0,0,.5);background:#fff;}
+#pdf-status{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#f4f4f5;font-size:.95rem;background:rgba(24,24,27,.94);padding:14px 22px;border-radius:8px;display:none;max-width:80%;}
+body.pdf-lock{overflow:hidden;}
+@media (max-width:640px){.pdf-toolbar .pdf-title{display:none;}#pdf-pageinfo{min-width:62px;}}
 </style>
 </head>
 <body>
@@ -203,6 +217,7 @@ body.dark-mode .tcq-book strong{color:var(--tcq-ink) !important;}
   <div class="by">Phạm Đức Hải · Tennis Future Lab</div>
 </header>
 <hr class="lead">
+<div style="text-align:center;margin:30px 0 0"><button id="pdf-open" type="button" style="font:inherit;font-size:16px;background:var(--tcq-indigo,#1d5c63);color:#fff;border:0;border-radius:999px;padding:12px 26px;cursor:pointer;letter-spacing:.03em;box-shadow:0 6px 18px rgba(29,92,99,.28)">Đọc bản in (PDF)</button></div>
 <nav class="toc" id="toc"><h2 class="toc-title">Mục lục</h2><ol>
 <li><a href="#01_triet_ly_quan_ly_game">Chương 1 — Vì sao người đánh hay hơn vẫn thua</a></li>
 <li><a href="#02_tu_duy_xac_suat">Chương 2 — Tư duy xác suất</a></li>
@@ -2112,6 +2127,217 @@ body.dark-mode .tcq-book strong{color:var(--tcq-ink) !important;}
   function onscroll(){ if(!ticking){ticking=true;requestAnimationFrame(spy);} }
   window.addEventListener('scroll',onscroll,{passive:true});
   spy();
+})();
+</script>
+
+<div id="pdf-overlay" role="dialog" aria-modal="true" aria-label="Trình đọc PDF" data-pdf="6_Quan_Ly_Game_Vietnamese_Final.pdf">
+  <div class="pdf-toolbar">
+    <span class="pdf-title"><span id="pdf-title-text">Đọc bản in</span></span>
+    <button class="pdf-btn" id="pdf-prev" title="Trang trước">&#9650;</button>
+    <span id="pdf-pageinfo" style="font-size:.85rem;min-width:88px;text-align:center;">&ndash; / &ndash;</span>
+    <button class="pdf-btn" id="pdf-next" title="Trang sau">&#9660;</button>
+    <button class="pdf-btn" id="pdf-zoom-out" title="Thu nhỏ">A-</button>
+    <button class="pdf-btn" id="pdf-zoom-in" title="Phóng to">A+</button>
+    <a class="pdf-btn" id="pdf-download" href="#" download>Tải về</a>
+    <button class="pdf-btn" id="pdf-close" title="Đóng (Esc)">&#10005; Đóng</button>
+  </div>
+  <div id="pdf-pages"></div>
+  <div id="pdf-status">Đang tải…</div>
+</div>
+
+<script>
+/* ==== Inline PDF viewer (shared component) ==== */
+(function () {
+  var overlay = document.getElementById('pdf-overlay');
+  if (!overlay) return;
+  var pagesEl  = document.getElementById('pdf-pages');
+  var statusEl = document.getElementById('pdf-status');
+  var infoEl   = document.getElementById('pdf-pageinfo');
+  var dlLink   = document.getElementById('pdf-download');
+  var dlAnchor = document.querySelector('.header-controls a[download]') ||
+                 document.querySelector('a[href$=".pdf"]');
+  var url = overlay.getAttribute('data-pdf') || (dlAnchor && dlAnchor.getAttribute('href'));
+  if (!url) return;
+  if (dlLink) dlLink.href = url;
+  var titleEl = document.getElementById('pdf-title-text');
+  if (titleEl) {
+    var t = (document.title || '').split('\u00b7')[0].trim();
+    titleEl.textContent = overlay.getAttribute('data-title') || t || '\u0110\u1ecdc b\u1ea3n in';
+  }
+
+  var PDFJS_BASE = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/';
+  var libState = 0;
+  var pdfDoc = null, zoom = 1, items = [], current = 1, observer = null;
+  var FAIL = 'Kh\u00f4ng t\u1ea3i \u0111\u01b0\u1ee3c tr\u00ecnh \u0111\u1ecdc PDF. H\u00e3y d\u00f9ng n\u00fat \u201cT\u1ea3i v\u1ec1\u201d.';
+
+  function setStatus(msg) {
+    if (!statusEl) return;
+    if (msg) { statusEl.textContent = msg; statusEl.style.display = 'block'; }
+    else { statusEl.style.display = 'none'; }
+  }
+
+  function loadLib(cb) {
+    if (libState === 2) return cb();
+    if (libState === 3) { setStatus(FAIL); return; }
+    if (libState === 1) {
+      var t = setInterval(function () {
+        if (libState === 1) return;
+        clearInterval(t);
+        if (libState === 2) cb(); else setStatus(FAIL);
+      }, 80);
+      return;
+    }
+    libState = 1;
+    var s = document.createElement('script');
+    s.src = PDFJS_BASE + 'pdf.min.js';
+    s.onload = function () {
+      try { window.pdfjsLib.GlobalWorkerOptions.workerSrc = PDFJS_BASE + 'pdf.worker.min.js'; } catch (e) {}
+      libState = 2; cb();
+    };
+    s.onerror = function () { libState = 3; setStatus(FAIL); };
+    document.head.appendChild(s);
+  }
+
+  function fit() {
+    var avail = pagesEl.clientWidth - 28;
+    if (!avail || avail < 100) avail = 640;
+    return Math.max(0.35, Math.min(avail / 420, 1.7));
+  }
+
+  function draw(it) {
+    if (!it || it.done || it.busy) return;
+    it.busy = true;
+    it.page.render({ canvasContext: it.canvas.getContext('2d'),
+                     viewport: it.page.getViewport({ scale: it.scale }) }).promise
+      .then(function () { it.done = true; it.busy = false; })
+      .catch(function () { it.busy = false; });
+  }
+
+  function updateCurrent() {
+    if (!items.length) return;
+    var top = pagesEl.scrollTop + 20, best = 1, bd = Infinity;
+    for (var i = 0; i < items.length; i++) {
+      var d = Math.abs(items[i].canvas.offsetTop - top);
+      if (d < bd) { bd = d; best = items[i].n; }
+    }
+    if (best !== current) {
+      current = best;
+      infoEl.textContent = current + ' / ' + pdfDoc.numPages;
+    }
+  }
+
+  function observe() {
+    if (observer) observer.disconnect();
+    if (!('IntersectionObserver' in window)) { items.forEach(draw); return; }
+    observer = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var n = +e.target.dataset.page;
+        draw(items[n - 1]);
+        if (items[n]) draw(items[n]);
+      });
+    }, { root: pagesEl, rootMargin: '700px 0px' });
+    items.forEach(function (it) { observer.observe(it.canvas); });
+  }
+
+  function build() {
+    pagesEl.innerHTML = '';
+    items = []; current = 1;
+    setStatus('\u0110ang d\u1ef1ng trang\u2026');
+    var chain = Promise.resolve();
+    for (var i = 1; i <= pdfDoc.numPages; i++) {
+      (function (n) {
+        chain = chain.then(function () {
+          return pdfDoc.getPage(n).then(function (page) {
+            var s = fit() * zoom;
+            var vp = page.getViewport({ scale: s });
+            var cv = document.createElement('canvas');
+            cv.className = 'pdf-page';
+            cv.dataset.page = n;
+            cv.width = Math.floor(vp.width);
+            cv.height = Math.floor(vp.height);
+            cv.style.width = Math.floor(vp.width) + 'px';
+            cv.style.height = Math.floor(vp.height) + 'px';
+            pagesEl.appendChild(cv);
+            items.push({ n: n, canvas: cv, page: page, scale: s, done: false, busy: false });
+          });
+        });
+      })(i);
+    }
+    chain.then(function () {
+      setStatus(null);
+      infoEl.textContent = '1 / ' + pdfDoc.numPages;
+      observe();
+      updateCurrent();
+    }).catch(function (e) { setStatus('L\u1ed7i: ' + (e && e.message ? e.message : e)); });
+  }
+
+  function goto(n) {
+    if (!pdfDoc) return;
+    n = Math.max(1, Math.min(pdfDoc.numPages, n));
+    var it = items[n - 1];
+    if (it) { pagesEl.scrollTop = it.canvas.offsetTop - 12; current = n; infoEl.textContent = n + ' / ' + pdfDoc.numPages; }
+  }
+
+  function refit() {
+    if (!pdfDoc || !items.length) return;
+    var s = fit() * zoom;
+    items.forEach(function (it) {
+      var vp = it.page.getViewport({ scale: s });
+      it.scale = s; it.done = false;
+      it.canvas.width = Math.floor(vp.width);
+      it.canvas.height = Math.floor(vp.height);
+      it.canvas.style.width = Math.floor(vp.width) + 'px';
+      it.canvas.style.height = Math.floor(vp.height) + 'px';
+    });
+    var pr = pagesEl.getBoundingClientRect();
+    items.forEach(function (it) {
+      var r = it.canvas.getBoundingClientRect();
+      if (r.bottom > pr.top - 700 && r.top < pr.bottom + 700) draw(it);
+    });
+  }
+
+  function open() {
+    overlay.classList.add('open');
+    document.body.classList.add('pdf-lock');
+    if (pdfDoc) return;
+    setStatus('\u0110ang t\u1ea3i t\u00e0i li\u1ec7u\u2026');
+    loadLib(function () {
+      window.pdfjsLib.getDocument(url).promise
+        .then(function (d) { pdfDoc = d; build(); })
+        .catch(function (e) { setStatus('Kh\u00f4ng m\u1edf \u0111\u01b0\u1ee3c PDF: ' + (e && e.message ? e.message : e)); });
+    });
+  }
+  function close() {
+    overlay.classList.remove('open');
+    document.body.classList.remove('pdf-lock');
+  }
+
+  var openBtn = document.getElementById('pdf-open');
+  if (openBtn) openBtn.addEventListener('click', function (e) { e.preventDefault(); open(); });
+  var bind = function (id, fn) { var el = document.getElementById(id); if (el) el.addEventListener('click', fn); };
+  bind('pdf-close', close);
+  bind('pdf-prev', function () { goto(current - 1); });
+  bind('pdf-next', function () { goto(current + 1); });
+  bind('pdf-zoom-in', function () { zoom = Math.min(3, zoom + 0.2); refit(); });
+  bind('pdf-zoom-out', function () { zoom = Math.max(0.4, zoom - 0.2); refit(); });
+  document.addEventListener('keydown', function (e) {
+    if (!overlay.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    else if (e.key === 'PageDown') goto(current + 1);
+    else if (e.key === 'PageUp') goto(current - 1);
+  });
+  var st = false;
+  pagesEl.addEventListener('scroll', function () {
+    if (st) return;
+    st = true;
+    requestAnimationFrame(function () { st = false; updateCurrent(); });
+  });
+  var rt;
+  window.addEventListener('resize', function () {
+    if (!overlay.classList.contains('open')) return;
+    clearTimeout(rt); rt = setTimeout(refit, 220);
+  });
 })();
 </script>
 </body>
