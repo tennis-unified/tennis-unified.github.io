@@ -57,6 +57,7 @@ This book unites what high-speed cameras have finally revealed about the world�
     How ground reaction forces ascend through 6 kinetic links, biotensegrity and myofascial elasticity, and the ancient art of silk reeling in modern tennis.
 
     [Read Chapter 1 →](chapter-01-the-hidden-engine.md)
+
 - ### 👁️ [Chapter 2: The Satori Eye](chapter-02-the-satori-eye.md)
 
     ---
@@ -65,6 +66,7 @@ This book unites what high-speed cameras have finally revealed about the world�
     The Vestibulo-Ocular Reflex, Joan Vickers Quiet Eye anchor, predictive saccades, and quieting the inner critic for subcortical flow.
 
     [Read Chapter 2 →](chapter-02-the-satori-eye.md)
+
 - ### ⚖️ [Chapter 3: Dynamic Gravity](chapter-03-dynamic-gravity.md)
 
     ---
@@ -73,6 +75,7 @@ This book unites what high-speed cameras have finally revealed about the world�
     The physics of the split-step drop, kinetic friction on hard courts and clay, deceleration fulcrums, and dynamic movement.
 
     [Read Chapter 3 →](chapter-03-dynamic-gravity.md)
+
 - ### ♟️ [Chapter 4: Blitz Chess on Concrete](chapter-04-blitz-chess-on-concrete.md)
 
     ---
@@ -81,6 +84,7 @@ This book unites what high-speed cameras have finally revealed about the world�
     Wardlaw Directionals, Serve+1 patterns, Return+1 depth, and statistical dominance in modern first-strike tennis.
 
     [Read Chapter 4 →](chapter-04-blitz-chess-on-concrete.md)
+
 - ### 🚀 [Chapter 5: The Cannon Above](chapter-05-the-cannon-above.md)
 
     ---
@@ -89,6 +93,7 @@ This book unites what high-speed cameras have finally revealed about the world�
     The Kovacs & Ellenbecker 8-stage serve model, leg drive, internal shoulder rotation, forearm pronation snap, and shoulder health.
 
     [Read Chapter 5 →](chapter-05-the-cannon-above.md)
+
 - ### 🛡️ [Chapter 6: The Iron Gate](chapter-06-the-iron-gate.md)
 
     ---
@@ -97,6 +102,7 @@ This book unites what high-speed cameras have finally revealed about the world�
     Neutralizing 130 mph serves with compact block mechanics, short backswings, momentum redirection, and southpaw slice angles.
 
     [Read Chapter 6 →](chapter-06-the-iron-gate.md)
+
 - ### 🔨 [Chapter 7: The Modern Forehand](chapter-07-the-modern-forehand.md)
 
     ---
@@ -105,6 +111,7 @@ This book unites what high-speed cameras have finally revealed about the world�
     Unit turn, the slot drop, lead hip braking, windshield wiper release, and RPM mechanics in the modern topspin forehand.
 
     [Read Chapter 7 →](chapter-07-the-modern-forehand.md)
+
 - ### 🗡️ [Chapter 8: The Classical Blade](chapter-08-the-classical-blade.md)
 
     ---
@@ -113,6 +120,7 @@ This book unites what high-speed cameras have finally revealed about the world�
     Scapular retraction and pinch, kinetic chain timing for the single-hander, and the floating knife backhand slice.
 
     [Read Chapter 8 →](chapter-08-the-classical-blade.md)
+
 - ### 🔄 [Chapter 9: The Non-Dominant Engine](chapter-09-the-non-dominant-engine.md)
 
     ---
@@ -121,6 +129,7 @@ This book unites what high-speed cameras have finally revealed about the world�
     Treating the top hand as the primary motor, open-stance sliding backhands, hip deceleration, and Sinner's cruise pace.
 
     [Read Chapter 9 →](chapter-09-the-non-dominant-engine.md)
+
 - ### 🎯 [Chapter 10: Point-Blank Warfare](chapter-10-point-blank-warfare.md)
 
     ---
@@ -129,6 +138,7 @@ This book unites what high-speed cameras have finally revealed about the world�
     Blocking volleys with zero backswing, soft-hand absorption, knee-drop mechanics, and surviving the net firefight.
 
     [Read Chapter 10 →](chapter-10-point-blank-warfare.md)
+
 - ### 🦅 [Chapter 11: Aerial Conquest](chapter-11-aerial-conquest.md)
 
     ---
@@ -137,6 +147,7 @@ This book unites what high-speed cameras have finally revealed about the world�
     Heavy topspin offensive lobs, scissor-kick overheads, backhand smashes, and tweener mechanics under pressure.
 
     [Read Chapter 11 →](chapter-11-aerial-conquest.md)
+
 - ### 🪶 [Chapter 12: Velvet Destruction](chapter-12-velvet-destruction.md)
 
     ---
@@ -145,6 +156,7 @@ This book unites what high-speed cameras have finally revealed about the world�
     Grip pressure yielding, unit-turn disguise, reading court surfaces, and Alcaraz's devastating drop shot mastery.
 
     [Read Chapter 12 →](chapter-12-velvet-destruction.md)
+
 - ### 🛡️ [Chapter 13: The Bulletproof Athlete](chapter-13-the-bulletproof-athlete.md)
 
     ---
@@ -153,6 +165,7 @@ This book unites what high-speed cameras have finally revealed about the world�
     Tendon collagen turnover, GIRD shoulder maintenance, FAI hip mechanics, BFR training, and sleep science for longevity.
 
     [Read Chapter 13 →](chapter-13-the-bulletproof-athlete.md)
+
 - ### 🏰 [Chapter 14: The Fortress Within](chapter-14-the-fortress-within.md)
 
     ---
@@ -161,6 +174,7 @@ This book unites what high-speed cameras have finally revealed about the world�
     The 54% rule, Djokovic's parasympathetic calming, Nadal's rituals, Jim Loehr's 16-second cure, and Stoic court composure.
 
     [Read Chapter 14 →](chapter-14-the-fortress-within.md)
+
 - ### 🔬 [Chapter 15: The Microscopic Machine](chapter-15-the-microscopic-machine.md)
 
     ---
@@ -169,6 +183,7 @@ This book unites what high-speed cameras have finally revealed about the world�
     Clavicular elevation, forearm shock sharing, wrist ulnocarpal cushioning, subtalar joint dynamics, and cartilage lubrication.
 
     [Read Chapter 15 →](chapter-15-the-microscopic-machine.md)
+
 - ### 🤝 [Chapter 16: The Synchronized Mind](chapter-16-the-synchronized-mind.md)
 
     ---
