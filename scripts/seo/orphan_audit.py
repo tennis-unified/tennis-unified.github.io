@@ -50,14 +50,18 @@ ATTR = re.compile(r"""([a-zA-Z_:][-a-zA-Z0-9_:.]*)\s*=\s*(?:"([^"]*)"|'([^']*)')
 # to 28 fake-resolved ones, and every page appeared to link to itself. Head
 # metadata describes a page; it does not route to it.
 A_TAG = re.compile(r"<a\b[^>]*>", re.I)
-A_HREF = re.compile(r"""\bhref\s*=\s*(?:"([^"]*)"|'([^']*)')""", re.I)
+# Third alternative: UNQUOTED attribute values (minified HTML: <a href=../system/v-vestibular/>).
+# HTML5 allows these; browsers and Googlebot follow them. The quoted-only regex made every
+# minified link invisible, which is how 10 system/ pages were reported as orphans that the
+# "System Variables Index" hub has been linking all along (2026-11-03).
+A_HREF = re.compile(r"""\bhref\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>"']+))""", re.I)
 
 
 def anchor_hrefs(text):
     for tag in A_TAG.findall(text):
         m = A_HREF.search(tag)
         if m:
-            yield m.group(1) if m.group(1) is not None else m.group(2)
+            yield next(g for g in m.groups() if g is not None)
 
 
 def key(path):

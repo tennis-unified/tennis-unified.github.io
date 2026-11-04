@@ -30,12 +30,15 @@ from collections import Counter, defaultdict
 SKIP_DIRS = {".git", "node_modules", "__pycache__", ".github"}
 SKIP_PREFIX = ("tnkb/",)
 EXT_SCHEME = re.compile(r"^(?:[a-z][a-z0-9+.-]*:|//)", re.I)
-ATTR = re.compile(r"""\b(?:href|src|data-src|poster)\s*=\s*["']([^"']+)["']""", re.I)
+ATTR = re.compile(
+    r"""\b(?:href|src|data-src|poster)\s*=\s*(?:["']([^"']+)["']|([^\s>"'\\]+))""", re.I
+)
 
 
 def local_targets(text):
     for m in ATTR.finditer(text):
-        raw = m.group(1).strip()
+        # group 1 = quoted value, group 2 = unquoted value (minified HTML)
+        raw = (m.group(1) if m.group(1) is not None else m.group(2) or "").strip()
         if not raw or EXT_SCHEME.match(raw):
             continue
         if raw.startswith("#"):
@@ -101,6 +104,12 @@ def main():
     for page in pages:
         try:
             text = open(page, encoding="utf-8", errors="ignore").read()
+            # Script/style bodies contain JS assignment expressions (`... = url;`,
+            # `PDFJS_BASE + "..."`) that the unquoted-attribute branch of ATTR would
+            # misread as href/src targets (93+ false `vi/books/url;` dead targets,
+            # 2026-11-03). Attribute references only exist in markup.
+            text = re.sub(r"<script\b[^>]*>[\s\S]*?</script>", " ", text, flags=re.I)
+            text = re.sub(r"<style\b[^>]*>[\s\S]*?</style>", " ", text, flags=re.I)
         except OSError:
             continue
         seen = set()
