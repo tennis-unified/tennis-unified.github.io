@@ -58,6 +58,8 @@ def rebase_one(href, page_dir, root):
         return None  # already inside vi/, or escapes the repo
     was_dir = resolved.endswith("/") or "." not in os.path.basename(resolved)
     en_path = resolved.rstrip("/")
+    if en_path.startswith("assets/"):
+        return None  # theme assets: vi/assets/ exists but is a copy — pure churn
     if not os.path.exists(os.path.join(root, en_path)):
         return None  # EN target itself dead — separate problem, not a rebase
     vi_path = "vi/" + en_path
