@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Return Depth Targeting Metrics: Why Hitting within 1.5m of Baseline Cuts Server Win Rates to 38%">
+        <meta name="description" content="Trả về số liệu nhắm mục tiêu theo chiều sâu: Tại sao đạt trong phạm vi 1.5m so với đường cơ sở sẽ làm giảm tỷ lệ thắng của máy chủ xuống 38%">
       
       
         <meta name="author" content="Henry Pham">
@@ -17992,89 +17992,90 @@
               
               <article class="md-content__inner md-typeset">
 
-<h1 id="return-depth-targeting-metrics-why-hitting-within-15m-of-baseline-cuts-server-win-rates-to-38">Return Depth Targeting Metrics: Why Hitting within 1.5m of Baseline Cuts Server Win Rates to 38%<a class="headerlink" href="#return-depth-targeting-metrics-why-hitting-within-15m-of-baseline-cuts-server-win-rates-to-38" title="Liên kết cố định"></a></h1>
+<h1 id="return-depth-targeting-metrics-why-hitting-within-15m-of-baseline-cuts-server-win-rates-to-38">Trả về số liệu nhắm mục tiêu theo chiều sâu: Tại sao đạt trong phạm vi 1.5m so với đường cơ sở sẽ làm giảm tỷ lệ thắng của máy chủ xuống 38%<a class="headerlink" href="#return-depth-targeting-metrics-why-hitting-within-15m-of-baseline-cuts-server-win-rates-to-38" title="Liên kết cố định"></a></h1>
 <p><strong>Tác giả:</strong> Henry Phạm Đức · Tennis Future Lab &amp; Kinetic Biomechanics Research<br />
 <strong>Lĩnh vực:</strong> Cú trả giao bóng, Chặn đối thủ &amp; Hình học tay trái<br />
 <strong>Thư viện Nguồn:</strong> <code>Tennis Serve and Return of Serve · Winning Tennis Tactics</code><br />
 <strong>Từ khóa:</strong> <code>Return Depth Targeting, Deep Baseline Box (1.5m), Server + 1 Win Rate (38%), Craig O'Shannessy Data, Safety Margins</code>  </p>
 <hr />
-<h2 id="executive-abstract">Executive Abstract<a class="headerlink" href="#executive-abstract" title="Liên kết cố định"></a></h2>
+<h2 id="executive-abstract">Tóm tắt điều hành<a class="headerlink" href="#executive-abstract" title="Liên kết cố định"></a></h2>
 <p>ATP tour analytics (Craig O'Shannessy) chứng minh rằng <strong>Return Depth quan trọng 3.5 lần hơn Return Speed</strong>. Khi một cú trả bóng hạ thấp (gần đường giao bóng), tay vợt giao bóng thắng <strong>72% điểm ở Shot 3</strong>. Tuy nhiên, khi cú trả bóng hạ sâu <strong>1.5 mét từ baseline</strong>, tỷ lệ thắng của tay vợt giao bóng giảm xuống còn <strong>38%</strong>, buộc đối thủ phải lùi lại và loại bỏ các góc tấn công.</p>
-<div class="highlight"><pre><span></span><code>┌─────────────────────────────────────────────────────────────────────────────┐
-│              RETURN OF SERVE, BLOCK COUNTERING &amp; SOUTHPAW FLOW MAP          │
-│                                                                             │
-│ [Phase 1: Pre-Impact Cue Reading &amp; Toss Azimuth Decoding (-100ms)]          │
-│                                  │                                          │
-│ [Phase 2: Forward Jump-Split &amp; Linear Momentum Ingestion (-30ms)]           │
-│                                  │                                          │
-│ [Phase 3: Compact Unit Turn &amp; Zero-Backswing Isometric Wall]                │
-│                                  │                                          │
-│ [Phase 4: Ball Rebound &amp; Middle-Third / Corner Routing] ──► ⚡ [Hit Deep]    │
-│                                  │                                          │
-│ [Phase 5: Southpaw Spin Asymmetry &amp; Geometric Angle Neutralization]         │
-└─────────────────────────────────────────────────────────────────────────────┘
+<div class="highlight"><pre><span></span><code>┌────────────────── ──────────────────── ──────────────────── ───────────────────┐
+│ TRẢ LẠI PHỤC VỤ, ĐẾM KHỐI &amp; BẢN ĐỒ LƯU LƯỢNG NAM │
+│ │
+│ [Giai đoạn 1: Đọc tín hiệu trước tác động &amp; Giải mã góc phương vị (-100ms)] │
+│ │ │
+│ [Giai đoạn 2: Nhảy về phía trước &amp; Hấp thụ động lượng tuyến tính (-30ms)] │
+│ │ │
+│ [Giai đoạn 3: Vòng quay đơn vị nhỏ gọn &amp; Tường đẳng cự không vung ngược] │
+│ │ │
+│ [Giai đoạn 4: Bóng bật lại &amp; Định tuyến giữa thứ ba / phạt góc] ── ► ⚡ [Đánh sâu] │
+│ │ │
+│ [Giai đoạn 5: Sự bất đối xứng của vòng quay Southpaw &amp; Trung hòa góc hình học] │
+└────────────────── ──────────────────── ──────────────────── ───────────────────┘
 </code></pre></div>
 <hr />
-<h2 id="1-the-server-win-rate-plummet-curve">1. The Server Win Rate Plummet Curve<a class="headerlink" href="#1-the-server-win-rate-plummet-curve" title="Liên kết cố định"></a></h2>
+<h2 id="1-the-server-win-rate-plummet-curve">1. Đường cong tỷ lệ thắng của máy chủ giảm mạnh<a class="headerlink" href="#1-the-server-win-rate-plummet-curve" title="Liên kết cố định"></a></h2>
 <p>Mỗi mét tăng thêm chiều sâu của cú trả bóng đẩy tay vợt giao bóng xa baseline hơn, thu hẹp góc kết thúc và phá hủy thời gian tấn công.</p>
-<div class="highlight"><pre><span></span><code>       [ Forward Jump-Split Ingestion ] ──► [ Isometric Wrist-Wall Block ]
-                                                         │
-       [ Deep Baseline Neutralization ] ◄────────────────┘
-        (Cutting Server +1 Win Rate to 38%)
+<div class="highlight"><pre><span></span><code>[ Nhập vào chia đôi bước về phía trước ] ── ► [ Khối tường cổ tay Isometric ]
+│
+[ Trung hòa đường cơ sở sâu ] ◄────────────────┘
+(Cắt Máy chủ +1 Tỷ lệ thắng xuống 38%)
 </code></pre></div>
 <hr />
-<h2 id="2-the-15-meter-deep-target-zone">2. The 1.5-Meter Deep Target Zone<a class="headerlink" href="#2-the-15-meter-deep-target-zone" title="Liên kết cố định"></a></h2>
+<h2 id="2-the-15-meter-deep-target-zone">2. Vùng mục tiêu sâu 1.5-Mét<a class="headerlink" href="#2-the-15-meter-deep-target-zone" title="Liên kết cố định"></a></h2>
 <p>Đánh vào một đường hẹp 1.5m với độ cao lưới 1.2m đảm bảo độ sâu tấn công mà không rủi ro lỗi baseline dài.</p>
 <hr />
-<h2 id="3-return-depth-training-protocols">3. Return Depth Training Protocols<a class="headerlink" href="#3-return-depth-training-protocols" title="Liên kết cố định"></a></h2>
+<h2 id="3-return-depth-training-protocols">3. Các giao thức đào tạo độ sâu trả về<a class="headerlink" href="#3-return-depth-training-protocols" title="Liên kết cố định"></a></h2>
 <p>Đặt dây chỉ thị 1.5m bên trong baseline; tính điểm thưởng chỉ cho các cú trả bóng hạ sâu vào đường hẹp.</p>
 <hr />
-<h2 id="return-southpaw-diagnostic-matrix">Return &amp; Southpaw Diagnostic Matrix<a class="headerlink" href="#return-southpaw-diagnostic-matrix" title="Liên kết cố định"></a></h2>
+<h2 id="return-southpaw-diagnostic-matrix">Trả về &amp; Ma trận chẩn đoán Southpaw<a class="headerlink" href="#return-southpaw-diagnostic-matrix" title="Liên kết cố định"></a></h2>
 <table>
 <thead>
 <tr>
-<th>Return / Southpaw Situation</th>
-<th>Common Technical Error</th>
-<th>Tactical / Match Risk</th>
-<th>Prescribed Intervention Protocol</th>
+<th>Tình huống quay trở lại / Southpaw</th>
+<th>Lỗi kỹ thuật thường gặp</th>
+<th>Rủi ro chiến thuật/trận đấu</th>
+<th>Quy trình can thiệp theo quy định</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>130 mph First Serve</strong></td>
-<td>Taking big looped backswing</td>
-<td>Late contact &amp; high shank rate (&gt; 60%)</td>
-<td><strong>Zero-Backswing Unit Turn</strong>: 45° Torso turn with isometric wrist block.</td>
+<td><strong>130 mph Phục vụ lần đầu</strong></td>
+<td>Thực hiện động tác backswing vòng lớn</td>
+<td>Liên hệ muộn &amp; tỷ lệ shank cao (&gt; 60%)</td>
+<td><strong>Lượt quay của đơn vị Zero-Backswing</strong>: 45° Xoay thân với khối cổ tay đẳng cự.</td>
 </tr>
 <tr>
-<td><strong>Lefty Ad-Court Slider</strong></td>
-<td>Standing in standard return spot</td>
-<td>Pulled 3m outside doubles alley</td>
-<td><strong>Positional Counter-Shift</strong>: Move 1.2m wider &amp; 0.5m forward to cut angle.</td>
+<td><strong>Thanh trượt Tòa án Quảng cáo cánh tả</strong></td>
+<td>Đứng ở vị trí quay lại tiêu chuẩn</td>
+<td>Kéo 3m ra ngoài hẻm đôi</td>
+<td><strong>Dịch chuyển ngược vị trí</strong>: Di chuyển 1.2m rộng hơn &amp; 0.5m về phía trước để cắt góc.</td>
 </tr>
 <tr>
-<td><strong>Second-Serve Return</strong></td>
-<td>Backpedaling behind baseline</td>
-<td>Giving server full Shot 3 attack control</td>
-<td><strong>On-the-Rise Crush</strong>: Step 1.5m inside baseline to hit ball off the bounce.</td>
+<td><strong>Trả giao bóng thứ hai</strong></td>
+<td>Đi ngược lại phía sau đường cơ sở</td>
+<td>Cung cấp cho máy chủ toàn quyền kiểm soát tấn công Shot 3</td>
+<td><strong>Crush đang nổi</strong>: Bước 1.5m vào bên trong đường biên ngang để đánh bóng khỏi điểm nảy.</td>
 </tr>
 </tbody>
 </table>
 
-<nav class="tu-chapter-nav" aria-label="Chapter navigation">
+<nav class="tu-chapter-nav" aria-label="Điều hướng chương">
   <div class="tu-chapter-nav__inner">
     <a class="tu-chapter-nav__link tu-chapter-nav__link--prev" href="/vi/gemini-notebooks/return-depth-targeting-metric-entropy-induction/" rel="prev">
-  <span class="tu-chapter-nav__direction">‹ Previous</span>
-  <span class="tu-chapter-nav__title">Return Depth Targeting Metric Entropy Induction</span>
+  <span class="tu-chapter-nav__direction">&lt; Trước</span>
+  <span class="tu-chapter-nav__title">Cảm ứng Entropy số liệu nhắm mục tiêu theo chiều sâu trả về</span>
 </a>
-    <a class="tu-chapter-nav__link tu-chapter-nav__link--home" href="/vi/tennis-technical-reference/gemini-notebooks/">↑ Index</a>
+    <a class="tu-chapter-nav__link tu-chapter-nav__link--home" href="/vi/tennis-technical-reference/gemini-notebooks/">↑ Chỉ mục</a>
     <a class="tu-chapter-nav__link tu-chapter-nav__link--next" href="/vi/gemini-notebooks/return-of-serve-jump-split-block-kinematics/" rel="next">
-  <span class="tu-chapter-nav__direction">Next ›</span>
-  <span class="tu-chapter-nav__title">Return Of Serve Jump Split Block Kinematics</span>
+  <span class="tu-chapter-nav__direction">Kế tiếp &gt;</span>
+  <span class="tu-chapter-nav__title">Sự trở lại của cú giao bóng Nhảy khối động học</span>
 </a>
   </div>
 </nav>
 
+</article>
 </article>
             </div>
           
@@ -18165,5 +18166,6 @@
       
     
   <script src="/assets/javascripts/lang-toggle.js" defer></script>
+<div class="mt-notice" style="margin:1.5rem auto;padding:.55rem .9rem;max-width:1100px;font-size:.82rem;line-height:1.45;color:#666;border-top:1px solid #ddd;text-align:center">Nội dung được dịch tự động từ bản tiếng Anh; thuật ngữ chuyên môn có thể chưa chuẩn. Vui lòng đối chiếu với nguyên bản khi cần.</div>
 </body>
 </html>
