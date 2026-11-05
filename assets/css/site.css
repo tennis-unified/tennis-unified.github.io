@@ -8,7 +8,19 @@
    had no glyph and rendered as tofu. Be Vietnam Pro covers the whole Vietnamese
    block; it sits AFTER the design fonts in the stack, so Latin text keeps its
    DM Sans look and only Vietnamese glyphs resolve to it. */
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Noto+Sans:wght@400;700&display=swap');
+/* Global Vietnamese fix (applies to EVERY /vi/ page, not just one).
+   Each vi page sets --md-text-font:"DM Sans" inline; the Material theme
+   feeds it into --md-text-font-family -> .md-typeset, and DM Sans ships no
+   Vietnamese subset, so Vietnamese glyphs (U+1EA0-1EF9) render broken.
+   Overriding --md-text-font for html[lang="vi"] flows the Vietnamese-
+   capable stack into all content. Be Vietnam Pro / Noto Sans are loaded
+   above; Latin text still resolves to DM Sans. */
+html[lang="vi"] {
+  --md-text-font: "Be Vietnam Pro", "Noto Sans", "DM Sans",
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
 
 :root {
   --bg: #ffffff;
