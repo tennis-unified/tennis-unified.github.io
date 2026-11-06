@@ -165,3 +165,22 @@
 @media (prefers-reduced-motion: reduce){
   .cd-tooltip, .player-marker circle.body, .ball-path{ transition: none; }
 }
+
+/* =========================================================================
+   Full-size court diagrams: beat the site-wide "defensive SVG sizing" rule in
+   /assets/css/site.css ( svg { width:1em !important; height:1em !important;
+   max-width:1.5em !important; ... } ), which is meant for inline icons but
+   also collapses every .tennis-court-svg to a 25px dot. The compound
+   selectors outrank `svg` (0,0,1) AND `.md-content svg` / `.tu-main svg`
+   (0,1,1) when all declarations are !important. Keep this block at the END
+   of the file so it wins over future local edits.
+   ========================================================================= */
+.tennis-court-svg,
+.md-content .tennis-court-svg,
+.tu-main .tennis-court-svg,
+figure.court-diagram-wrap svg.tennis-court-svg{
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: none !important;
+}
