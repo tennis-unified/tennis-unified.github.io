@@ -3,9 +3,130 @@
 <html lang="vi" class="no-js">
   <head>
 <script>
-/* Legacy MkDocs source links: "/x/Foo.md" was never built as a file -- the real page
-   is the directory "/x/Foo/" (index.html). Rewrite it once, then let Pages resolve it. */
-(function(){var p=location.pathname;if(/\.md$/i.test(p)){location.replace(p.replace(/\.md$/i,"/"));}})();
+/* =========================================================================
+   Smart 404 recovery (v2).
+
+   GitHub Pages serves this ONE file for EVERY missing path, so relative
+   assets break on deep URLs; all page assets below are root-absolute and
+   all recovery logic here is self-contained.
+
+   Cases handled:
+     a) Legacy MkDocs source links "/x/Foo.md" -> "/x/Foo/" (v1 behaviour).
+     b) lang-toggle.js v2 emitted "/<section>/vi/<rest>/" instead of the
+        correct "/vi/<section>/<rest>/". Rebuild the intended VI path.
+     c) When the intended page does not exist in this language, walk up to
+        the nearest existing ancestor (section index -> language home).
+     d) For a bogus /<section>/vi/ URL, prefer the VI counterpart declared
+        by the SOURCE English article (hreflang="vi"): MkDocs may map an
+        untranslated article to a curated sibling page.
+
+   Candidates are HEAD-probed; the first HTTP 200 wins. No manifest to
+   maintain, so newly published pages are picked up automatically.
+   ========================================================================= */
+(function () {
+  'use strict';
+  var here = location.pathname;
+  var search = location.search || '';
+
+  function uniq(list) {
+    var seen = {}, out = [];
+    for (var i = 0; i < list.length; i++) {
+      var p = list[i];
+      if (!p || p === here || seen[p]) continue;
+      seen[p] = 1;
+      out.push(p);
+    }
+    return out;
+  }
+
+  function ancestors(p) {
+    var clean = p.split('#')[0].split('?')[0];
+    var segs = clean.split('/').filter(function (x) { return x.length; });
+    var out = [clean];
+    for (var i = segs.length; i >= 1; i--) {
+      var c = '/' + segs.slice(0, i).join('/') + '/';
+      if (out.indexOf(c) === -1) out.push(c);
+    }
+    return out;
+  }
+
+  var m = here.match(/^\/([^/]+)\/vi\/(.*)$/i);
+  var fixed = m ? '/vi/' + m[1] + '/' + m[2] : null;
+  var enSource = m ? '/' + m[1] + '/' + m[2] : null;
+  var legacyMd = /\.md$/i.test(here) ? here.replace(/\.md$/i, '/') : null;
+  var isVi = /^\/vi\//.test(here);
+
+  function buildList() {
+    var list = [];
+    if (legacyMd) list.push(legacyMd);
+    if (fixed) {
+      list = list.concat(ancestors(fixed));
+      list.push('/vi/');
+    } else if (isVi) {
+      list = list.concat(ancestors(here));
+      list.push(here.replace(/^\/vi/, '') || '/');
+      list.push('/vi/', '/');
+    } else {
+      list.push('/vi' + here);
+      list = list.concat(ancestors(here));
+      list.push('/vi/', '/');
+    }
+    return uniq(list).filter(function (p) { return p !== '/'; });
+  }
+
+  function go(p) { location.replace(p + (search || '')); }
+
+  function headOk(p) {
+    return fetch(p, { method: 'HEAD', credentials: 'same-origin' })
+      .then(function (r) { return r.ok ? p : null; })
+      .catch(function () { return null; });
+  }
+
+  function probeAll(list, done) {
+    var i = 0;
+    function step() {
+      if (i >= list.length) return done(null);
+      var p = list[i++];
+      headOk(p).then(function (ok) { if (ok) done(ok); else step(); });
+    }
+    step();
+  }
+
+  // Best-effort: read the authored VI counterpart off the source EN article.
+  function curatedFromSource(done) {
+    if (!enSource || typeof fetch !== 'function') return done(null);
+    fetch(enSource, { credentials: 'same-origin' })
+      .then(function (r) { return r.ok ? r.text() : null; })
+      .then(function (txt) {
+        if (!txt) return done(null);
+        var tags = txt.match(/<(?:a|link)\b[^>]*>/gi) || [];
+        for (var i = 0; i < tags.length; i++) {
+          if (!/hreflang=["']?vi["']?/i.test(tags[i])) continue;
+          var h = tags[i].match(/href\s*=\s*["']([^"']+)["']/i);
+          if (!h) continue;
+          try {
+            var p = new URL(h[1], location.origin + enSource).pathname;
+            if (p && p !== here) return headOk(p).then(done);
+          } catch (e) { /* malformed href: try the next tag */ }
+        }
+        done(null);
+      })
+      .catch(function () { done(null); });
+  }
+
+  var list = buildList();
+  // A plain missing English page with no language signal should stay an
+  // honest 404, not a soft redirect to the home page. Only the exact VI
+  // counterpart is worth trying in that case.
+  if (!fixed && !legacyMd && !isVi) {
+    list = list.filter(function (p) { return p === '/vi' + here; });
+  }
+
+  curatedFromSource(function (curated) {
+    if (curated) return go(curated);
+    probeAll(list, function (good) { if (good) go(good); });
+  });
+})();
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
@@ -28,7 +149,7 @@
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="/assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
@@ -50,7 +171,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
         <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -108,7 +229,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Đầu trang">
-    <a href="vi/" title="Tennis Unified Library" class="md-header__button md-logo" aria-label="Tennis Unified Library" data-md-component="logo">
+    <a href="/vi/" title="Tennis Unified Library" class="md-header__button md-logo" aria-label="Tennis Unified Library" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -149,13 +270,13 @@
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="tenniskb-legacy/" hreflang="en" class="md-select__link">
+            <a href="/tenniskb-legacy/" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="vi/tenniskb-legacy/" hreflang="vi" class="md-select__link">
+            <a href="/vi/tenniskb-legacy/" hreflang="vi" class="md-select__link">
               Tiếng Việt
             </a>
           </li>
@@ -197,7 +318,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Thanh điều hướng" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="vi/" title="Tennis Unified Library" class="md-nav__button md-logo" aria-label="Tennis Unified Library" data-md-component="logo">
+    <a href="/vi/" title="Tennis Unified Library" class="md-nav__button md-logo" aria-label="Tennis Unified Library" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -215,7 +336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="vi/" class="md-nav__link">
+      <a href="/vi/" class="md-nav__link">
         
   
   
@@ -318,7 +439,7 @@
   
   
   
-    <a href="vi/coach-video-library/" class="md-nav__link">
+    <a href="/vi/coach-video-library/" class="md-nav__link">
       
   
   
@@ -381,7 +502,10 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+  <h1>404 - Không tìm thấy trang / Page not found</h1>
+  <p>Đường dẫn này không còn tồn tại — thường là do liên kết chuyển ngôn ngữ cũ. Nếu trình duyệt không tự chuyển hướng, hãy dùng một trong các liên kết bên dưới.</p>
+  <p>This address no longer exists, usually because of an old language-switch link. If you are not redirected automatically, please use one of the links below.</p>
+  <p><a href="/">Trang chủ / English home</a> &nbsp;·&nbsp; <a href="/vi/">Trang chủ tiếng Việt</a> &nbsp;·&nbsp; <a href="/sitemap.xml">Sitemap</a></p>
 
               </article>
             </div>
@@ -425,9 +549,9 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.path", "navigation.expand", "navigation.indexes", "navigation.prune", "navigation.prev_next", "navigation.footer", "search.highlight", "search.suggest", "alternate"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0110\u00e3 sao ch\u00e9p", "clipboard.copy": "Sao ch\u00e9p v\u00e0o b\u1ed9 nh\u1edb t\u1ea1m", "search.result.more.one": "1 t\u1eeb kh\u00e1c trong trang", "search.result.more.other": "# t\u1eeb kh\u00e1c trong trang", "search.result.none": "Kh\u00f4ng t\u00ecm th\u1ea5y t\u00e0i li\u1ec7u li\u00ean quan", "search.result.one": "1 t\u00e0i li\u1ec7u li\u00ean quan", "search.result.other": "# t\u00e0i li\u1ec7u li\u00ean quan", "search.result.placeholder": "Nh\u1eadp \u0111\u1ec3 b\u1eaft \u0111\u1ea7u t\u00ecm ki\u1ebfm", "search.result.term.missing": "Kh\u00f4ng", "select.version": "Ch\u1ecdn phi\u00ean b\u1ea3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.path", "navigation.expand", "navigation.indexes", "navigation.prune", "navigation.prev_next", "navigation.footer", "search.highlight", "search.suggest", "alternate"], "search": "/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0110\u00e3 sao ch\u00e9p", "clipboard.copy": "Sao ch\u00e9p v\u00e0o b\u1ed9 nh\u1edb t\u1ea1m", "search.result.more.one": "1 t\u1eeb kh\u00e1c trong trang", "search.result.more.other": "# t\u1eeb kh\u00e1c trong trang", "search.result.none": "Kh\u00f4ng t\u00ecm th\u1ea5y t\u00e0i li\u1ec7u li\u00ean quan", "search.result.one": "1 t\u00e0i li\u1ec7u li\u00ean quan", "search.result.other": "# t\u00e0i li\u1ec7u li\u00ean quan", "search.result.placeholder": "Nh\u1eadp \u0111\u1ec3 b\u1eaft \u0111\u1ea7u t\u00ecm ki\u1ebfm", "search.result.term.missing": "Kh\u00f4ng", "select.version": "Ch\u1ecdn phi\u00ean b\u1ea3n"}, "version": null}</script>
       
-        <script src="assets/js/extra.js"></script>
+        <script src="/assets/js/extra.js"></script>
       
     
   
