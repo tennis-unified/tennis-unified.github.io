@@ -100,58 +100,58 @@
 
 
 <blockquote>
-<p><strong>CUE CHUYÊN GIA:</strong> Swinging vole = <strong>Drive vole</strong> (Swing có topspin). Punch vole = <strong>Traditional volley</strong> (Punch ngắn, Flat). Biên giới: <strong>Tốc độ bóng + Độ cao + Thời gian</strong>. Decision tree: Nhanh/Thấp → Punch. Trung bình/Cao → Swinging. Train "Volley Decision Matrix" = Chọn đúng vũ khí.</p>
+<p><strong>CUE CHUYÊN GIA:</strong> Chuột nhảy = <strong>Ổ chuột</strong> (Swing có topspin). Punch vole = <strong>bóng chuyền truyền thống</strong> (Punch ngắn, Flat). Biên giới: <strong>Tốc độ bóng + Độ cao + Thời gian</strong>. Decision tree: Nhanh/Thấp → Punch. Trung bình/Cao → Swinging. Train "Volley Decision Matrix" = Chọn đúng vũ khí.</p>
 </blockquote>
 
 <h2>1. Tóm Tắt Điều Hành & Ý Đồ Thể Thao</h2>
 
-<p>Vole có hai "engine" chính: <strong>Punch Vole</strong> (Vole đập/punch) và <strong>Swinging Vole</strong> (Drive vole). Nhiều VĐV chỉ dùng một loại, hoặc chọn sai lúc sai. Bài viết định nghĩa <strong>Volley Decision Boundary Model</strong>: (1) <strong>Incoming Ball Parameters</strong> (Tốc độ, Độ cao, Spin, Khoảng cách), (2) <strong>Time Budget</strong> (Thời gian từ nhận diện đến contact), (3) <strong>Mechanical Compatibility</strong> (Cơ học phù hợp), (4) <strong>Tactical Intent</strong> (Mục đích chiến thuật). Decision tree đơn giản: <strong>Tốc độ >80 km/h + Thời gian <250ms → PUNCH. Tốc độ <80 km/h + Độ cao ngực-đầu + Thời gian >250ms → SWINGING.</strong> Giao thức <strong>"Volley Engine Selector"</strong> tự động hóa lựa chọn đúng.</p>
+<p>Vole có hai "engine" chính: <strong>Cú đấm</strong> (Vole đập/punch) và <strong>Đu dây</strong> (Drive vole). Nhiều VĐV chỉ dùng một loại, hoặc chọn sai lúc sai. Bài viết định nghĩa <strong>Mô hình ranh giới quyết định bóng chuyền</strong>: (1) <strong>Thông số bóng đến</strong> (Tốc độ, Độ cao, Spin, Khoảng cách), (2) <strong>Ngân sách thời gian</strong> (Thời gian từ nhận diện đến contact), (3) <strong>Khả năng tương thích cơ học</strong> (Cơ học phù hợp), (4) <strong>Ý định chiến thuật</strong> (Mục đích chiến thuật). Decision tree đơn giản: <strong>Tốc độ >80 km/h + Thời gian <250ms → PUNCH. Tốc độ <80 km/h + Độ cao ngực-đầu + Thời gian >250ms → ĐANG XOAY.</strong> Giao thức <strong>"Bộ chọn động cơ bóng chuyền"</strong> tự động hóa lựa chọn đúng.</p>
 
-<p>Ý định thể thao ba khía cạnh: thứ nhất, định nghĩa <strong>Không có "Vole tốt hơn" — Chỉ có "Vole đúng hoàn cảnh"</strong>. Thứ hai, chỉ ra <strong>Biên giới không phải đường thẳng — Là vùng chuyển đổi (Gray zone)</strong> cần judgment. Thứ ba, cung cấp <strong>bộ bài tập "Decision Automation"</strong> xây dựng phản xạ chọn engine đúng.</p>
+<p>Ý định thể thao ba khía cạnh: thứ nhất, định nghĩa <strong>Không có "Vole tốt hơn" — Chỉ có "Vole đúng hoàn cảnh"</strong>. Thứ hai, chỉ ra <strong>Biên giới không phải đường thẳng — Là vùng chuyển đổi (Gray zone)</strong> cần phải phán xét. Thứ ba, cung cấp <strong>bộ bài tập "Decision Automation"</strong> xây dựng phản xạ chọn engine đúng.</p>
 
 <h2>2. Nền Tảng Cơ Sinh Học & Thần Kinh Học</h2>
 
-<h3>2.1 Mechanical Comparison: Punch vs Swinging</h3>
+<h3>2.1 So sánh cơ học: Đấm và vung</h3>
 
-<pre><code>MECHANICAL COMPARISON:
-┌─────────────────────────────────────────────────────────────────────────────┐
-│  PUNCH VOLE (Traditional Volley):                                           │
-│  ├── <strong>Time Budget</strong>: 150-250ms (Reactive)                                 │
-│  ├── <strong>Backswing</strong>: MINIMAL (Racket head không đi sau người)               │
-│  ├── <strong>Swing Path</strong>: STRAIGHT FORWARD (Push)                               │
-│  ├── <strong>Wrist</strong>: FIRM, LOCKED (Isometric)                                   │
-│  ├── <strong>Face</strong>: PERPENDICULAR to ball path                                  │
-│  ├── <strong>Power Source</strong>: BALL ENERGY + Body weight forward                   │
-│  ├── <strong>Contact</strong>: Compact, Front-foot weight                               │
-│  ├── <strong>Finish</strong>: Short, Racket up, Ready immediately                       │
-│  └── <strong>Spin</strong>: FLAT to slight underspin (Skid)                             │
-│                                                                             │
-│  SWINGING VOLE (Drive Volley - Bài 102):                                    │
-│  ├── <strong>Time Budget</strong>: 250-400ms (Proactive)                                │
-│  ├── <strong>Backswing</strong>: COMPACT UNIT TURN (30-40° torso)                       │
-│  ├── <strong>Swing Path</strong>: LOW-TO-HIGH (Brush up → Topspin)                      │
-│  ├── <strong>Wrist</strong>: RELAXED at start → LAG → RELEASE                           │
-│  ├── <strong>Face</strong>: CLOSED 5-15° at contact (Topspin)                           │
-│  ├── <strong>Power Source</strong>: KINETIC CHAIN (Legs → Hip → Torso → Arm)            │
-│  ├── <strong>Contact</strong>: 40-50cm forward, Chest-to-head height                    │
-│  ├── <strong>Finish</strong>: Across body, Compact, Racket face up                      │
-│  └── <strong>Spin</strong>: TOPSPIN 2000-4000 RPM (Dip control)                         │
-└─────────────────────────────────────────────────────────────────────────────┘</code></pre>
+<pre><code>SO SÁNH CƠ KHÍ:
+┌────────────────── ──────────────────── ──────────────────── ───────────────────┐
+│ PUNCH VOLE (Bóng chuyền truyền thống): │
+│ ├──<strong>Ngân sách thời gian</strong>: 150-250ms (Phản ứng) │
+│ ├──<strong>Quay lại</strong>: TỐI THIỂU (Đầu vợt không đi sau người) │
+│ ├──<strong>Đường xoay</strong>: TUYỆT VỜI (Đẩy) │
+│ ├──<strong>cổ tay</strong>: CHẮC CHẮN, KHÓA (Đẳng phương) │
+│ ├──<strong>Khuôn mặt</strong>: Vuông góc với đường bóng │
+│ ├──<strong>Nguồn điện</strong>: NĂNG LƯỢNG BÓNG + Trọng lượng cơ thể về phía trước │
+│ ├──<strong>Liên hệ</strong>: Nhỏ gọn, trọng lượng ở chân trước │
+│ ├──<strong>Hoàn thành</strong>: Ngắn, Vợt lên, Sẵn sàng ngay lập tức │
+│ └──<strong>Quay</strong>: FLAT đến xoáy xuống nhẹ (Trượt) │
+│ │
+│ ĐUÔI VÒI (Chuyển bóng - Bài 102): │
+│ ├──<strong>Ngân sách thời gian</strong>: 250-400ms (Chủ động) │
+│ ├──<strong>Quay lại</strong>: TURN ĐƠN VỊ NHỎ GỌN (30-40° thân) │
+│ ├──<strong>Đường xoay</strong>: THẤP ĐẾN CAO (Bóng lên → Xoáy lên) │
+│ ├──<strong>cổ tay</strong>: THƯ GIÃN khi bắt đầu → LAG → RELEASE │
+│ ├──<strong>Khuôn mặt</strong>: ĐÓNG 5-15° khi tiếp xúc (Topspin) │
+│ ├──<strong>Nguồn điện</strong>: CHUỖI ĐỘNG (Chân → Hông → Thân → Cánh tay) │
+│ ├──<strong>Liên hệ</strong>: 40-50cm về phía trước, cao ngang ngực │
+│ ├──<strong>Hoàn thành</strong>: Xuyên thân, Nhỏ gọn, Vợt ngửa │
+│ └──<strong>Quay</strong>: TOPSPIN 2000-4000 RPM (Điều khiển nhúng) │
+└────────────────── ──────────────────── ──────────────────── ───────────────────┘</code></pre>
 
-<h3>2.2 Decision Matrix: Incoming Ball Parameters</h3>
+<h3>2.2 Ma trận quyết định: Thông số bóng đến</h3>
 
 <table>
 <thead><tr>
 <th style="text-align: left;">Tham Số Bóng</th>
-<th style="text-align: left;"><strong>PUNCH VOLE</strong></th>
-<th style="text-align: left;"><strong>GRAY ZONE</strong></th>
-<th style="text-align: left;"><strong>SWINGING VOLE</strong></th>
+<th style="text-align: left;"><strong>cú đấm</strong></th>
+<th style="text-align: left;"><strong>KHU XÁM</strong></th>
+<th style="text-align: left;"><strong>VÒI ĐUỔI</strong></th>
 </tr></thead><tbody>
 <tr>
 <td style="text-align: left;"><strong>Tốc Độ</strong></td>
-<td style="text-align: left;"><strong>>80 km/h</strong> (Fast serve/Drive)</td>
+<td style="text-align: left;"><strong>&gt;80 km/h</strong> (Giao bóng nhanh/Lái xe)</td>
 <td style="text-align: left;">60-80 km/h</td>
-<td style="text-align: left;"><strong><60 km/h</strong> (Float/Sitter)</td>
+<td style="text-align: left;"><strong><60 km/h</strong> (Người nổi/Người trông nom)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Độ Cao Contact</strong></td>
@@ -160,10 +160,10 @@
 <td style="text-align: left;"><strong>Cao: Ngực-Đầu</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Spin</strong></td>
-<td style="text-align: left;">Heavy Topspin (Kick) / Flat fast</td>
-<td style="text-align: left;">Moderate Topspin</td>
-<td style="text-align: left;">Light Topspin / Float / Slice</td>
+<td style="text-align: left;"><strong>Quay</strong></td>
+<td style="text-align: left;">Topspin nặng (Cú đá) / Flat nhanh</td>
+<td style="text-align: left;">Xoáy lên vừa phải</td>
+<td style="text-align: left;">Xoáy nhẹ / Nổi / Cắt</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Khoảng Cách Lưới</strong></td>
@@ -175,38 +175,38 @@
 <td style="text-align: left;"><strong>Thời Gian Phản Ứng</strong></td>
 <td style="text-align: left;"><strong><250ms</strong></td>
 <td style="text-align: left;">250-300ms</td>
-<td style="text-align: left;"><strong>>300ms</strong></td>
+<td style="text-align: left;"><strong>&gt;300ms</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Vị Trí VĐV</strong></td>
 <td style="text-align: left;">Đã ở lưới, Cân bằng</td>
-<td style="text-align: left;">Transitioning</td>
+<td style="text-align: left;">Chuyển tiếp</td>
 <td style="text-align: left;">Có thời gian setup</td>
 </tr>
 </tbody></table>
 
 <h3>2.3 Gray Zone Handling (Xử Lý Vùng Chuyển Đổi)</h3>
 
-<pre><code>GRAY ZONE (60-80 km/h, 250-300ms, Hông-Ngực):
-┌─────────────────────────────────────────────────────────────────────────────┐
-│  TRONG GRAY ZONE — CẢ HAI CÓ THỂ DÙNG:                                      │
-│  ├── <strong>DEFAULT: PUNCH VOLE</strong> (An toàn hơn, Consistency cao hơn)            │
-│  │   └── Exception: Cần topspin để dip ngắn / Kéo đối thủ ra              │
-│  │                                                                         │
-│  ├── <strong>DECISION FACTORS cho SWINGING trong Gray Zone:</strong>                    │
-│  │   ├── Cần topspin để controllo độ sâu (Baseline target)                │
-│  │   ├── Bóng float (Không spin) → Dễ swing topspin                       │
-│  │   ├── Vị trí mid-court (Không quá gần lưới) → Có không gian swing      │
-│  │   ├── Opponent ở baseline sâu → Topspin dip hiệu quả                   │
-│  │   └── VĐV có swinging volley mechanics tốt (Trained)                   │
-│  │                                                                         │
-│  ├── <strong>HYBRID: &quot;PUNCH WITH TOPSPIN&quot;</strong> (Advanced)                          │
-│  │   ├── Punch mechanics (Minimal backswing)                              │
-│  │   ├── Face slight closed (5-10°) → Brush up slight                     │
-│  │   └── Best of both: Speed of punch + Control of topspin                │
-│  │                                                                         │
-│  └── <strong>RULE: When in doubt → PUNCH</strong> (Lower error rate)                   │
-└─────────────────────────────────────────────────────────────────────────────┘</code></pre>
+<pre><code>VÙNG XÁM (60-80 km/h, 250-300ms, Hông-Ngực):
+┌────────────────── ──────────────────── ──────────────────── ───────────────────┐
+│ TRONG KHU XÁM — CẢ HẢI CÓ THỂ DÙNG: │
+│ ├──<strong>MẶC ĐỊNH: PUNCH VOLE</strong>(Mức độ nhất quán cao toàn hơn, hơn) │
+│ │ └── Ngoại lệ: Cần xoáy lên để nhúng ngắn / Kéo đối thủ ra │
+│ │ │
+│ ├──<strong>YẾU TỐ QUYẾT ĐỊNH đối với SWINGING trong Vùng xám:</strong>│
+│ │ ├── Cần xoáy lên để controllo độ sâu (Mục tiêu cơ bản) │
+│ │ ├── Bóng float (Không spin) → Xoay topspin nhanh nhất │
+│ │ ├── Vị trí giữa sân (Không quá gần lưới) → Có không gian xoay │
+│ │ ├── Đối thủ ở đường biên sâu → Hiệu ứng giảm xoáy lên quả │
+│ │ └── VĐV có cơ khí vung bóng chuyền tốt (Đã được đào tạo) │
+│ │ │
+│ ├──<strong>HYBRID: &quot;PUNCH VỚI TOPSPIN&quot;</strong>(Nâng cao) │
+│ │ ├── Cơ chế cú đấm (Swing tối thiểu) │
+│ │ ├── Mặt khép nhẹ (5-10°) → Đánh nhẹ lên │
+│ │ └── Tốt nhất trong cả hai: Tốc độ cú đấm + Kiểm soát xoáy lên │
+│ │ │
+│ └──<strong>QUY TẮC: Khi nghi ngờ → Đấm</strong>(Tỷ lệ lỗi thấp hơn) │
+└────────────────── ──────────────────── ──────────────────── ───────────────────┘</code></pre>
 
 <h2>3. Trình Tự Thực Thi Kỹ Thuật (Checkpoints)</h2>
 
@@ -215,40 +215,40 @@
 <p>**Bài tập 1: "Pure Punch Volley - Wall Drill" (Punch Vole Thuần Túy - Tường Drill)"</p>
 <ul>
 <li>Đứng 3m từ tường. VĐV: <strong>Punch vole chỉ</strong> — Không backswing, Wrist locked, Face vuông góc.</li>
-<li>Focus: <strong>Absorb + Redirect</strong>, Ball rebounds to target zone.</li>
-<li>50 reps. KPI: Consistent depth/placement, Zero backswing, Wrist stable.</li>
+<li>Tập trung: <strong>Hấp thụ + Chuyển hướng</strong>, Bóng bật lại vùng mục tiêu.</li>
+<li>50 đại diện. KPI: Độ sâu/vị trí nhất quán, Không có xu hướng lùi, Cổ tay ổn định.</li>
 </ul>
 
 <p>**Bài tập 2: "Pure Swinging Volley - Mid-Court Feed" (Swinging Vole Thuần Túy - Feed Sân Giữa)"</p>
 <ul>
 <li>HLV feed từ baseline: Bóng float, tốc độ 50-60 km/h, độ cao ngực-đầu.</li>
-<li>VĐV: <strong>Full swinging volley</strong> — Unit turn, Low-to-high, Topspin, Finish compact.</li>
-<li>30 reps. KPI: Unit turn early, Topspin visible, Depth >baseline.</li>
+<li>VĐV: <strong>Cú vô lê hoàn toàn</strong> — Xoay đơn vị, Từ thấp đến cao, Topspin, Kết thúc gọn nhẹ.</li>
+<li>30 đại diện. KPI: Đơn vị quay đầu, Topspin có thể nhìn thấy, Độ sâu &gt;đường cơ sở.</li>
 </ul>
 
 <p>**Bài tập 3: "Hybrid Punch-Spin - Best of Both" (Punch-Spin Lai - Tốt Cả Hai)"</p>
 <ul>
 <li>Feed gray zone speed (70 km/h). VĐV: <strong>Punch mechanics + Face khép 5-10°</strong>.</li>
-<li>Minimal backswing, Slight brush up, Compact finish.</li>
-<li>20 reps. KPI: Punch speed + Topspin control, Consistency >85%.</li>
+<li>Xoay lưng tối thiểu, chải nhẹ, hoàn thiện nhỏ gọn.</li>
+<li>20 đại diện. KPI: Tốc độ cú đấm + Kiểm soát xoáy lên, Tính nhất quán &gt;85%.</li>
 </ul>
 
 <h3>Giai Đoạn 2: Decision Training (Huấn Luyện Quyết Định)</h3>
 
 <p>**Bài tập 4: "Feed Classification - Call the Engine" (Phân Loại Feed - Gọi Engine)"</p>
 <ul>
-<li>HLV feed random: Fast serve (100+), Drive (80), Float (50), Slice (60), Lob (40).</li>
+<li>Nguồn cấp dữ liệu huấn luyện viên ngẫu nhiên: Giao bóng nhanh (100+), Lái xe (80), Nổi (50), Cắt lát (60), Lob (40).</li>
 <li>VĐV: <strong>Gọi to "PUNCH" / "SWINGING" / "HYBRID" NGAY SAU KHI HLV CONTACT</strong>.</li>
-<li>Visual cues training: Speed estimation, Height, Spin, Distance.</li>
-<li>40 feeds. KPI: Classification accuracy >90%, Decision <200ms.</li>
+<li>Huấn luyện tín hiệu thị giác: Ước tính tốc độ, Chiều cao, Độ xoáy, Khoảng cách.</li>
+<li>Nguồn cấp dữ liệu 40. KPI: Độ chính xác phân loại &gt;90%, Quyết định <200ms.</li>
 </ul>
 
 <p>**Bài tập 5: "Time Budget Drill - Countdown" (Drill Ngân Sách Thời Gian - Đếm Ngược)"</p>
 <ul>
 <li>Ball machine: Feeds tại các tốc độ/độ cao khác nhau.</li>
 <li>VĐV: <strong>Đếm ngược (3-2-1) từ HLV contact đến VĐV contact</strong>.</li>
-<li>Map: <250ms = Punch, 250-300ms = Gray/Hybrid, >300ms = Swinging.</li>
-<li>30 reps. KPI: Time estimation accuracy ±50ms, Correct engine selection.</li>
+<li>Bản đồ: <250ms = Punch, 250-300ms = Gray/Hybrid, >300ms = Đung đưa.</li>
+<li>30 đại diện. KPI: Độ chính xác ước tính thời gian ±50ms, Lựa chọn động cơ chính xác.</li>
 </ul>
 
 <p>**Bài tập 6: "Position-Based Decision" (Quyết Định Dựa Trên Vị Trí)"</p>
@@ -263,24 +263,24 @@
 
 <p>**Bài tập 7: "Rapid Fire - Engine Switching" (Nhanh Chóng - Chuyển Đổi Engine)"</p>
 <ul>
-<li>Ball machine: Alternating fast (90 km/h) / slow (50 km/h) feeds random.</li>
-<li>VĐV: <strong>Punch fast balls, Swinging slow balls</strong> — Liên tục, Không pause.</li>
-<li>Focus: <strong>Engine switching speed</strong>, Mechanics separation clean.</li>
-<li>40 reps. KPI: Switch clean >90%, Mechanics pure each engine.</li>
+<li>Máy bóng: Nạp ngẫu nhiên nhanh (90 km/h) / chậm (50 km/h) luân phiên.</li>
+<li>VĐV: <strong>Đấm bóng nhanh, Đấm bóng chậm</strong> — Liên tục, Không pause.</li>
+<li>Tập trung: <strong>Tốc độ chuyển đổi động cơ</strong>, Cơ khí tách sạch.</li>
+<li>40 đại diện. KPI: Chuyển sạch &gt;90%, Cơ khí sạch từng động cơ.</li>
 </ul>
 
 <p>**Bài tập 8: "Approach → Volley Decision" (Tiến Công → Quyết Định Vole)"</p>
 <ul>
-<li>Pattern: Approach shot → Opponent return (Random: Fast drive / Float / Lob).</li>
+<li>Kiểu: Cú đánh tiếp cận → Đối thủ đánh trả (Ngẫu nhiên: Lái xe nhanh / Nổi / Lob).</li>
 <li>VĐV: <strong>Nhận diện → Chọn engine → Execute → Recover</strong>.</li>
-<li>20 patterns. KPI: Decision correct >85%, Execution quality >8/10.</li>
+<li>mẫu 20. KPI: Quyết định đúng &gt;85%, Chất lượng thực thi &gt;8/10.</li>
 </ul>
 
 <p>**Bài tập 9: "Volley Exchange - Mixed Engines" (Trao Đổi Vole - Engine Pha Trộn)"</p>
 <ul>
-<li>Hai VĐV tại lưới. Trao đổi: <strong>Mix punch, swinging, hybrid</strong>.</li>
-<li>HLV call: "Punch only", "Swinging only", "Free choice".</li>
-<li>Focus: Adaptability, Recognition partner's ball.</li>
+<li>Hai VĐV tại lưới. Trao đổi: <strong>Mix punch, swing, hybrid</strong>.</li>
+<li>Huấn luyện viên gọi: “Chỉ đấm”, “Chỉ vung”, “Tự do lựa chọn”.</li>
+<li>Tiêu điểm: Khả năng thích ứng, nhận biết bóng của đối tác.</li>
 <li>3 phút. KPI: Engine appropriateness, Rally sustainability.</li>
 </ul>
 
@@ -288,27 +288,27 @@
 
 <p>**Bài tập 10: "Decision Under Pressure - Score Simulation" (Quyết Định Dưới Áp Lực - Mô Phỏng Tỷ Số)"</p>
 <ul>
-<li>Simulate: 30-40, 40-30, Deuce, Advantage.</li>
-<li>HLV feed challenging balls (Gray zone heavy).</li>
-<li>VĐV: <strong>Routine, Breathing, Decision commit, Execute</strong>.</li>
-<li>15 pressure points. KPI: Decision accuracy maintained, No hesitation.</li>
+<li>Mô phỏng: 30-40, 40-30, Deuce, Advantage.</li>
+<li>Huấn luyện viên đưa bóng đầy thách thức (Vùng xám nặng).</li>
+<li>VĐV: <strong>Thường lệ, Hơi thở, Cam kết quyết định, Thực thi</strong>.</li>
+<li>15 điểm áp lực. KPI: Độ chính xác của quyết định được duy trì, Không do dự.</li>
 </ul>
 
 <p>**Bài tập 11: "Volley Target Game - Engine Specific" (Trò Chơi Mục Tiêu Vole - Engine Đặc Thù)"</p>
 <ul>
-<li>Game to 11. Target zones:</li>
-<li><strong>Punch target</strong>: Deep middle/cross (Control)</li>
-<li><strong>Swinging target</strong>: Deep corner with dip (Attack)</li>
+<li>Trò chơi tới 11. Các vùng mục tiêu:</li>
+<li><strong>Đấm mục tiêu</strong>: Giữa sâu/chéo (Điều khiển)</li>
+<li><strong>Mục tiêu xoay</strong>: Góc sâu có nhúng (Tấn công)</li>
 <li>VĐV must declare engine before point. Wrong engine = Lose point.</li>
-<li>3 games. KPI: Engine declaration accuracy, Placement quality.</li>
+<li>trò chơi 3. KPI: Độ chính xác khai báo động cơ, Chất lượng vị trí.</li>
 </ul>
 
 <p>**Bài tập 12: "Fatigue Decision Test" (Test Quyết Định Dưới Mỏi)"</p>
 <ul>
-<li>Sau 4' HIIT / 30 volleys mixed engines.</li>
-<li>Ngay: 20 decision feeds (Gray zone heavy).</li>
+<li>Sau 4' HIIT / 30 động cơ hỗn hợp.</li>
+<li>Ngay: 20 nguồn cấp dữ liệu quyết định (Vùng xám nặng).</li>
 <li>So sánh: Decision accuracy, Mechanics purity, Reaction time vs Fresh.</li>
-<li>Target: Decision >85% fresh, Mechanics clean, No default to one engine.</li>
+<li>Mục tiêu: Quyết định &gt;85% mới, Máy móc sạch sẽ, Không mặc định cho một động cơ.</li>
 </ul>
 
 <h2>4. Chỉ Số Hiệu Suất & Liều Lượng Huấn Luyện</h2>
@@ -322,78 +322,78 @@
 <th style="text-align: left;">Đẳng Cấp (Decision Master)</th>
 </tr></thead><tbody>
 <tr>
-<td style="text-align: left;">Classification Accuracy</td>
+<td style="text-align: left;">Độ chính xác phân loại</td>
 <td style="text-align: left;"><70%</td>
 <td style="text-align: left;">70-80%</td>
 <td style="text-align: left;">80-90%</td>
 <td style="text-align: left;"><strong>>95%</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Decision Speed</td>
-<td style="text-align: left;">>300ms</td>
+<td style="text-align: left;">Tốc độ quyết định</td>
+<td style="text-align: left;">&gt;300ms</td>
 <td style="text-align: left;">250-300ms</td>
 <td style="text-align: left;">200-250ms</td>
 <td style="text-align: left;"><strong><200ms</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Punch Mechanics Purity</td>
-<td style="text-align: left;">Backswing visible</td>
-<td style="text-align: left;">Minimal</td>
-<td style="text-align: left;">Clean</td>
-<td style="text-align: left;"><strong>Zero backswing</strong></td>
+<td style="text-align: left;">Cơ Khí Cú Đấm Độ Tinh Khiết</td>
+<td style="text-align: left;">Có thể nhìn thấy backswing</td>
+<td style="text-align: left;">Tối thiểu</td>
+<td style="text-align: left;">Lau dọn</td>
+<td style="text-align: left;"><strong>Không vung lùi</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Swinging Mechanics Purity</td>
-<td style="text-align: left;">Late turn/Arm only</td>
-<td style="text-align: left;">Partial turn</td>
-<td style="text-align: left;">Good turn</td>
-<td style="text-align: left;"><strong>Early turn + Chain</strong></td>
+<td style="text-align: left;">Cơ học đu dây</td>
+<td style="text-align: left;">Lượt muộn/Chỉ cánh tay</td>
+<td style="text-align: left;">rẽ một phần</td>
+<td style="text-align: left;">Tốt lắm</td>
+<td style="text-align: left;"><strong>Lượt sớm + Chuỗi</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Gray Zone Handling</td>
-<td style="text-align: left;">Random/One engine</td>
-<td style="text-align: left;">Default Punch</td>
-<td style="text-align: left;">Hybrid aware</td>
-<td style="text-align: left;"><strong>Contextual optimal</strong></td>
+<td style="text-align: left;">Xử lý vùng xám</td>
+<td style="text-align: left;">Ngẫu nhiên/Một động cơ</td>
+<td style="text-align: left;">Cú đấm mặc định</td>
+<td style="text-align: left;">Nhận thức lai</td>
+<td style="text-align: left;"><strong>Tối ưu theo ngữ cảnh</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Engine Switching Speed</td>
-<td style="text-align: left;">Slow/Clunky</td>
-<td style="text-align: left;">Adequate</td>
-<td style="text-align: left;">Fast</td>
-<td style="text-align: left;"><strong>Seamless instant</strong></td>
+<td style="text-align: left;">Tốc độ chuyển đổi động cơ</td>
+<td style="text-align: left;">Chậm/Lộn xộn</td>
+<td style="text-align: left;">Đủ</td>
+<td style="text-align: left;">Nhanh</td>
+<td style="text-align: left;"><strong>liền mạch ngay lập tức</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Position-Based Decision</td>
-<td style="text-align: left;">Ignores position</td>
-<td style="text-align: left;">Partial</td>
-<td style="text-align: left;">Good</td>
-<td style="text-align: left;"><strong>Automatic</strong></td>
+<td style="text-align: left;">Quyết định dựa trên vị trí</td>
+<td style="text-align: left;">Bỏ qua vị trí</td>
+<td style="text-align: left;">một phần</td>
+<td style="text-align: left;">Tốt</td>
+<td style="text-align: left;"><strong>Tự động</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Pressure Decision</td>
-<td style="text-align: left;">Breaks/Hesitates</td>
-<td style="text-align: left;">Inconsistent</td>
-<td style="text-align: left;">Solid</td>
-<td style="text-align: left;"><strong>Clutch decisive</strong></td>
+<td style="text-align: left;">Quyết định áp lực</td>
+<td style="text-align: left;">Nghỉ giải lao/ngập ngừng</td>
+<td style="text-align: left;">Không nhất quán</td>
+<td style="text-align: left;">Chất rắn</td>
+<td style="text-align: left;"><strong>Ly hợp quyết định</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Fatigue Decision</td>
-<td style="text-align: left;">Degrades >20%</td>
-<td style="text-align: left;">Degrades 10%</td>
-<td style="text-align: left;">Degrades <5%</td>
-<td style="text-align: left;"><strong>Maintained</strong></td>
+<td style="text-align: left;">Quyết định mệt mỏi</td>
+<td style="text-align: left;">Suy thoái &gt;20%</td>
+<td style="text-align: left;">Suy thoái 10%</td>
+<td style="text-align: left;">Suy thoái <5%</td>
+<td style="text-align: left;"><strong>Duy trì</strong></td>
 </tr>
 </tbody></table>
 
 <h3>Liều Lượng Tuần</h3>
 
 <ul>
-<li><strong>Engine Isolation:</strong> 2×/tuần, 20' (Bài 1-3).</li>
-<li><strong>Decision Training:</strong> 3×/tuần, 15' (Bài 4-6).</li>
-<li><strong>Transition/Integration:</strong> 2×/tuần, 20' (Bài 7-9).</li>
-<li><strong>Pressure/Competition:</strong> 2×/tuần, 15' (Bài 10-12).</li>
-<li><strong>Tổng:</strong> ~70'/tuần Volley Decision-specific.</li>
+<li><strong>Cách ly động cơ:</strong> 2×/tuần, 20' (Bài 1-3).</li>
+<li><strong>Đào tạo quyết định:</strong> 3×/tuần, 15' (Bài 4-6).</li>
+<li><strong>Chuyển tiếp/Hội nhập:</strong> 2×/tuần, 20' (Bài 7-9).</li>
+<li><strong>Áp lực/Cạnh tranh:</strong> 2×/tuần, 15' (Bài 10-12).</li>
+<li><strong>Tổng:</strong> ~70'/tuần Volley Quyết định cụ thể.</li>
 </ul>
 
 <h2>5. Lỗi Thường Gặp, Nguyên Nhân & Giao Thức Khắc Phục</h2>
@@ -407,7 +407,7 @@
 <tr>
 <td style="text-align: left;">"Luôn dùng Punch (Không bao giờ Swinging)"</td>
 <td style="text-align: left;">Thói quen, Không train swinging, Sợ topspin</td>
-<td style="text-align: left;">Swinging volley progression 500+ reps; "Float cao = Swinging"</td>
+<td style="text-align: left;">Tiến trình thực hiện cú vô lê xoay 500+ số lần; "Nổi cao = Đung đưa"</td>
 </tr>
 <tr>
 <td style="text-align: left;">"Luôn dùng Swinging (Over-swing nhanh)"</td>
@@ -415,9 +415,9 @@
 <td style="text-align: left;">Punch volley wall drill; "Nhanh = Punch — Hấp thụ — Đẩy"</td>
 </tr>
 <tr>
-<td style="text-align: left;">"Gray zone → Random choice"</td>
+<td style="text-align: left;">"Vùng xám → Lựa chọn ngẫu nhiên"</td>
 <td style="text-align: left;">Không có decision framework</td>
-<td style="text-align: left;">Decision matrix drill; Time budget training; "250ms = Boundary"</td>
+<td style="text-align: left;">Luyện tập ma trận quyết định; Đào tạo ngân sách thời gian; "250ms = Ranh giới"</td>
 </tr>
 <tr>
 <td style="text-align: left;">"Chọn sai → Error rate cao"</td>
@@ -425,9 +425,9 @@
 <td style="text-align: left;">Feed classification 1000+ reps; "Nhìn tốc độ — Nhìn độ cao — Quyết định"</td>
 </tr>
 <tr>
-<td style="text-align: left;">"Chuyển engine chậm → Mechanics mixed"</td>
+<td style="text-align: left;">"Chuyển động cơ chậm → Cơ khí hỗn hợp"</td>
 <td style="text-align: left;">Không tách biệt training</td>
-<td style="text-align: left;">Engine isolation blocks; "Punch block — Swinging block — Rồi mix"</td>
+<td style="text-align: left;">Khối cách ly động cơ; "Khối đấm - Khối xoay - Rồi trộn"</td>
 </tr>
 <tr>
 <td style="text-align: left;">"Vị trí gần lưới vẫn swing → Jammed"</td>
@@ -436,109 +436,109 @@
 </tr>
 <tr>
 <td style="text-align: left;">"Dưới áp lực → Default one engine"</td>
-<td style="text-align: left;">Neural narrowing, Habit takeover</td>
+<td style="text-align: left;">Thu hẹp thần kinh, tiếp quản thói quen</td>
 <td style="text-align: left;">Pressure routine; Engine declaration; "Thở — Nhìn — Chọn — Commit"</td>
 </tr>
 <tr>
 <td style="text-align: left;">"Mỏi → Decision degrading, Mechanics sloppy"</td>
-<td style="text-align: left;">Neural fatigue, Proprioception loss</td>
+<td style="text-align: left;">Mệt mỏi thần kinh, mất khả năng nhận cảm</td>
 <td style="text-align: left;">Decision conditioning; Micro-recovery; "Mỏi = Đơn giản hóa — Punch mặc định"</td>
 </tr>
 </tbody></table>
 
 <h2>6. Sơ Đồ Chẩn Đoán & Ra Quyết Định</h2>
 
-<p><strong>Với Punch Volley (Bài 100, 104, 105, 106, 107):</strong> Punch = <strong>Foundation volley</strong>. Tất cả volley types chia sẻ: Continental grip, Wrist firm (punch) / relaxed (swinging), Split step.</p>
+<p><strong>Với Punch Volley (Bài 100, 104, 105, 106, 107):</strong> Cú đấm = <strong>Bóng chuyền nền tảng</strong>. Tất cả volley types chia sẻ: Continental grip, Wrist firm (punch) / relaxed (swinging), Split step.</p>
 
-<p><strong>Với Swinging/Drive Volley (Bài 102):</strong> Swinging = <strong>Mid-court weapon</strong>. Cùng unit turn, low-to-high, topspin.</p>
+<p><strong>Với Swinging/Drive Volley (Bài 102):</strong> Đung đưa = <strong>Vũ khí giữa sân</strong>. Cùng unit turn, low-to-high, topspin.</p>
 
-<p><strong>Với Block Return (Bài 099):</strong> Block return = <strong>Punch volley tại baseline</strong>. Cùng absorb+redirect physics.</p>
+<p><strong>Với Block Return (Bài 099):</strong> Khối trả về = <strong>Punch volley tại baseline</strong>. Cùng absorb+redirect physics.</p>
 
-<p><strong>V với Tactical (Bài 123, 130):</strong> Volley engine selection = <strong>Tactical decision</strong>. Serve +1 volley, Return +1 volley, Approach volley.</p>
+<p><strong>V với Tactical (Bài 123, 130):</strong> Lựa chọn động cơ bóng chuyền = <strong>Quyết định chiến thuật</strong>. Giao bóng +1 cú vô lê, Trả lại +1 cú vô lê, Cú vô lê tiếp cận.</p>
 
-<p><strong>Với Video Analysis (Bài 128):</strong> Engine type, Contact point, Swing path = <strong>Key classification metrics</strong>.</p>
+<p><strong>Với Video Analysis (Bài 128):</strong> Loại động cơ, Điểm tiếp xúc, Đường xoay = <strong>Các chỉ số phân loại chính</strong>.</p>
 
-<p><strong>Với Doubles (Bài 140+):</strong> Punch = <strong>Default doubles volley</strong> (Speed, Control). Swinging = <strong>Put-away/Poach finish</strong>.</p>
+<p><strong>Với Doubles (Bài 140+):</strong> Cú đấm = <strong>Cú vô lê đôi mặc định</strong> (Tốc độ, Kiểm soát). Đung đưa = <strong>Bỏ đi/kết thúc săn trộm</strong>.</p>
 
 <h2>7. Video Minh Họa & Phân Tích Kỹ Thuật</h2>
 
 <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin: 1.5rem 0;">
   <iframe src="https://www.youtube-nocookie.com/embed/4vHqJC4JJVM" title="Continental Grip Mechanics Across All Net Operations" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
 </div>
-<p><p><em>Video: Continental Grip Mechanics Across All Net Operations (Feel Tennis).</em></p></p>
+<p><p><em>Video: Cơ chế cầm vợt lục địa trên tất cả các hoạt động trên lưới (Feel Tennis).</em></p></p>
 
 <h2>8. Ứng Dụng Liên Ngành & Phối Hợp Đa Trụ Cột</h2>
 
 <table>
 <thead><tr>
 <th style="text-align: left;">Điểm Kiểm</th>
-<th style="text-align: left;">Mức 1 (One Engine Only)</th>
-<th style="text-align: left;">Mức 2 (Random Choice)</th>
-<th style="text-align: left;">Mức 3 (Functional Selector)</th>
-<th style="text-align: left;">Mức 4 (Decision Master)</th>
+<th style="text-align: left;">Mức 1 (Chỉ một động cơ)</th>
+<th style="text-align: left;">Cấp độ 2 (Lựa chọn ngẫu nhiên)</th>
+<th style="text-align: left;">Mức 3 (Bộ chọn chức năng)</th>
+<th style="text-align: left;">Cấp độ 4 (Quyết định chính)</th>
 </tr></thead><tbody>
 <tr>
-<td style="text-align: left;">Classification</td>
+<td style="text-align: left;">Phân loại</td>
 <td style="text-align: left;"><70%</td>
 <td style="text-align: left;">70-80%</td>
 <td style="text-align: left;">80-90%</td>
 <td style="text-align: left;"><strong>>95%</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Decision Speed</td>
-<td style="text-align: left;">>300ms</td>
+<td style="text-align: left;">Tốc độ quyết định</td>
+<td style="text-align: left;">&gt;300ms</td>
 <td style="text-align: left;">250-300ms</td>
 <td style="text-align: left;">200-250ms</td>
 <td style="text-align: left;"><strong><200ms</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Punch Purity</td>
-<td style="text-align: left;">Backswing</td>
-<td style="text-align: left;">Minimal</td>
-<td style="text-align: left;">Clean</td>
-<td style="text-align: left;"><strong>Zero</strong></td>
+<td style="text-align: left;">cú đấm tinh khiết</td>
+<td style="text-align: left;">Quay lại</td>
+<td style="text-align: left;">Tối thiểu</td>
+<td style="text-align: left;">Lau dọn</td>
+<td style="text-align: left;"><strong>số không</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Swinging Purity</td>
-<td style="text-align: left;">Arm only</td>
-<td style="text-align: left;">Partial</td>
-<td style="text-align: left;">Good</td>
-<td style="text-align: left;"><strong>Full chain</strong></td>
+<td style="text-align: left;">Độ tinh khiết đong đưa</td>
+<td style="text-align: left;">Chỉ cánh tay</td>
+<td style="text-align: left;">một phần</td>
+<td style="text-align: left;">Tốt</td>
+<td style="text-align: left;"><strong>Chuỗi đầy đủ</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Gray Zone</td>
-<td style="text-align: left;">Random</td>
-<td style="text-align: left;">Default punch</td>
-<td style="text-align: left;">Hybrid aware</td>
-<td style="text-align: left;"><strong>Contextual</strong></td>
+<td style="text-align: left;">Vùng xám</td>
+<td style="text-align: left;">Ngẫu nhiên</td>
+<td style="text-align: left;">cú đấm mặc định</td>
+<td style="text-align: left;">Nhận thức lai</td>
+<td style="text-align: left;"><strong>Theo ngữ cảnh</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Switching</td>
-<td style="text-align: left;">Clunky</td>
-<td style="text-align: left;">Adequate</td>
-<td style="text-align: left;">Fast</td>
-<td style="text-align: left;"><strong>Seamless</strong></td>
+<td style="text-align: left;">Chuyển đổi</td>
+<td style="text-align: left;">vụng về</td>
+<td style="text-align: left;">Đủ</td>
+<td style="text-align: left;">Nhanh</td>
+<td style="text-align: left;"><strong>liền mạch</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Position Aware</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;">Partial</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;"><strong>Automatic</strong></td>
+<td style="text-align: left;">Nhận biết vị trí</td>
+<td style="text-align: left;">KHÔNG</td>
+<td style="text-align: left;">một phần</td>
+<td style="text-align: left;">Đúng</td>
+<td style="text-align: left;"><strong>Tự động</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Pressure</td>
-<td style="text-align: left;">Breaks</td>
-<td style="text-align: left;">Inconsistent</td>
-<td style="text-align: left;">Solid</td>
-<td style="text-align: left;"><strong>Clutch</strong></td>
+<td style="text-align: left;">Áp lực</td>
+<td style="text-align: left;">Giải lao</td>
+<td style="text-align: left;">Không nhất quán</td>
+<td style="text-align: left;">Chất rắn</td>
+<td style="text-align: left;"><strong>Ly hợp</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">Fatigue</td>
-<td style="text-align: left;">Degrades</td>
-<td style="text-align: left;">Degrades 10%</td>
-<td style="text-align: left;">Degrades <5%</td>
-<td style="text-align: left;"><strong>Maintained</strong></td>
+<td style="text-align: left;">Mệt mỏi</td>
+<td style="text-align: left;">Suy thoái</td>
+<td style="text-align: left;">Suy thoái 10%</td>
+<td style="text-align: left;">Suy thoái <5%</td>
+<td style="text-align: left;"><strong>Duy trì</strong></td>
 </tr>
 </tbody></table>
 
@@ -546,7 +546,7 @@
 
 <h2>9. Bảng Tự Đánh Giá (Rubric Đa Cấp Độ)</h2>
 
-<p><strong>MỤC TIÊU BUỔI:</strong> Classification >95%, Decision <200ms, Punch zero backswing, Swinging full chain, Gray zone contextual, Switching seamless, Position auto, Pressure clutch, Fatigue maintained.</p>
+<p><strong>MỤC TIÊU BUỔI:</strong> Phân loại &gt;95%, Quyết định <200ms, Punch zero backswing, Swinging full chain, Gray zone contextual, Switching seamless, Position auto, Pressure clutch, Fatigue maintained.</p>
 
 <table>
 <thead><tr>
@@ -557,40 +557,41 @@
 </tr></thead><tbody>
 <tr>
 <td style="text-align: left;">A — Khởi Động (5')</td>
-<td style="text-align: left;">Punch wall 50 + Swinging feed 30 + Hybrid 20</td>
+<td style="text-align: left;">Đục tường 50 + Đu đưa thức ăn 30 + Hybrid 20</td>
 <td style="text-align: left;">5 phút</td>
 <td style="text-align: left;">"Punch: Hấp thụ — Swinging: Kinetic chain — Hybrid: Cả hai"</td>
 </tr>
 <tr>
 <td style="text-align: left;">B — Mẫu Hình (15')</td>
 <td style="text-align: left;">Phân loại 40 feed + Time budget 30 + Vị trí 20 mỗi</td>
-<td style="text-align: left;">65 decisions</td>
+<td style="text-align: left;">65 quyết định</td>
 <td style="text-align: left;">"Nhanh = Punch — Trung bình = Gray — Chậm = Swinging — Vị trí quyết định"</td>
 </tr>
 <tr>
 <td style="text-align: left;">C — Chuyển Đổi (20')</td>
-<td style="text-align: left;">Rapid fire switch 40 + Approach→Vole 20 + Exchange 3'</td>
-<td style="text-align: left;">80 volleys</td>
+<td style="text-align: left;">Công tắc bắn nhanh 40 + Tiếp cận→Vole 20 + Trao đổi 3'</td>
+<td style="text-align: left;">cú vô lê 80</td>
 <td style="text-align: left;">"Chuyển engine mượt — Tiến công quyết định — Trao đổi thích ứng"</td>
 </tr>
 <tr>
 <td style="text-align: left;">D — Tích Hợp (10')</td>
 <td style="text-align: left;">Áp lực 15 + Target game engine-specific 3 games + Mỏi test 20</td>
-<td style="text-align: left;">1 log</td>
+<td style="text-align: left;">nhật ký 1</td>
 <td style="text-align: left;">"Điểm lớn commit — Khai báo engine — Mỏi vẫn quyết định đúng"</td>
 </tr>
 </tbody></table>
 
-<p><strong>Tần suất:</strong> 3×/tuần. <strong>Cổng:</strong> 3 tuần liên tiếp Classification >95%, Decision <200ms, Punch pure, Swinging pure, Gray zone contextual, Switching seamless.</p>
+<p><strong>Tần suất:</strong> 3×/ tuần. <strong>Cổng:</strong> 3 tuần liên tiếp Classification >95%, Decision <200ms, Punch pure, Swinging pure, Gray zone contextual, Switching seamless.</p>
 
 <hr />
 
 <p><em>Tham chiếu chéo: Bài 099, 100, 102, 104, 105, 106, 107, 123, 128, 130, 140. Trụ III: Cơ Học Cú Đánh & Kỹ Thuật Đánh Bóng — TennisKB 200 Bài.</em></p>
 
 <!-- TP-NAV-START -->
-<p class="article-nav" style="margin-top:2rem;font-size:0.95rem"><a href="/vi/articles/VI-tenniskb-drive-volley-execution-from-baseline-short-balls/">← Trước</a> &nbsp;|&nbsp; <a href="/vi/articles/">🏠 Trang chủ</a> &nbsp;|&nbsp; <a href="/vi/articles/VI-tenniskb-off-pace-ball-generation-creating-self-generated-energy/">Sau →</a></p>
+<p class="article-nav" style="margin-top:2rem;font-size:0.95rem"><a href="/vi/articles/VI-tenniskb-drive-volley-execution-from-baseline-short-balls/">← Trước</a> &nbsp;|&nbsp; <a href="/vi/articles/">🏠 Trang chủ</a> &nbsp;|&nbsp; <a href="/vi/articles/VI-tenniskb-off-pace-ball-generation-creating-self-generated-energy/">Sáu →</a></p>
 <!-- TP-NAV-END -->
 
+</article>
 </article>
 
 
@@ -636,5 +637,6 @@
 <footer class="tu-footer" style="background: var(--card); border-top: 1px solid var(--border); color: var(--ink-muted); padding: 1.5rem 1rem; text-align: center; font-size: 0.92rem; margin-top: 3rem;">
 <div style="font-size: 0.85rem; color: var(--accent-dark);">Trang web này được xây dựng với ❤️ cho cộng đồng quần vợt Việt Nam 🎾 by Henry Phạm</div>
 </footer>
+<div class="mt-notice" style="margin:1.5rem auto;padding:.55rem .9rem;max-width:1100px;font-size:.82rem;line-height:1.45;color:#666;border-top:1px solid #ddd;text-align:center">Nội dung được dịch tự động từ bản tiếng Anh; thuật ngữ chuyên môn có thể chưa chuẩn. Vui lòng đối chiếu với nguyên bản khi cần.</div>
 </body>
 </html>
