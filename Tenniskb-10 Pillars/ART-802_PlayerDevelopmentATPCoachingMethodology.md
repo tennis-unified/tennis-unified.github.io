@@ -97,3 +97,10 @@ This sequence prepares all physical systems without causing pre-match fatigue.
 | Fatigue in third set | Underdeveloped oxidative capacity and glycolytic recovery | Performance decline in extended matches | Implement repeated sprint ability training with incomplete recovery |
 | Recurring hamstring strains | Weak eccentric hamstring strength and poor deceleration mechanics | Time loss and reduced mobility | Add Nordic hamstring curls and deceleration landing drills |
 | Shoulder discomfort during serve | GIRD exceeding 15 degrees, poor thoracic mobility | Serve speed limitation and injury risk | Implement sleeper stretches, thoracic mobility drills, and posterior shoulder strengthening |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Energy systems for tennis conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

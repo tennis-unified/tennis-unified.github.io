@@ -58,3 +58,10 @@ Nguyên tắc cốt lõi là rèn luyện SSC phải đặc thù theo mô hình 
 ## Ứng Dụng Thực Tiễn: "Forehand Plyometric"
 
 Kết hợp các bài tập plyometric vào chương trình rèn luyện forehand: (1) jump squat trước buổi tập để kích hoạt SSC cơ thể dưới; (2) ném bóng y khoa xoay để kích hoạt SSC thân mình; (3) các bài tập gập/duỗi cổ tay có trở kháng để kích hoạt SSC chi trên. Các bài tập này làm cho chu trình giãn-rút sẵn sàng hơn, trở nên nhạy hơn trong quá trình thực hiện cú forehand thực tế.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Dự trữ và hồi phục năng lượng đàn hồi mô mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Cơ học co cơ: lệch tâm/đồng tâm và lực–vận tốc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

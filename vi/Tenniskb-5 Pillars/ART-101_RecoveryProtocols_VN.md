@@ -44,3 +44,9 @@ Giao thức phục hồi 90 phút là một cách nâng cao hơn để cải thi
 
 ## Ứng Dụng Thực Tế: "Nhà Sản Xuất Phục Hồi Hoàn Chỉnh"
 Vận động viên nên cảm nhận rằng họ là "hoàn chỉnh" và tích hợp với Hệ Thống 5 Cột Trụ. Vận động viên nên cảm nhận rằng các hệ thống sinh cơ học, thần kinh và chiến thuật đang hoạt động cùng nhau một cách hài hòa. Đây là mục tiêu cuối cùng của Hệ Thống 5 Cột Trụ: tạo ra một vận động viên hoàn chỉnh, tích hợp, thực hiện một cách không gắng sức ở tiềm năng đỉnh cao của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Phục hồi mô và thích ứng sau thi đấu*
+- [Chương 15: Chương 15: Phản Ứng Của Hệ Miễn Dịch Với Tập Luyện Cấp Tính và Mãn Tính — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch12.html) — *Kiểm soát phản ứng viêm sau vận động*
+<!-- TAICHIKB-CROSSREF-END -->

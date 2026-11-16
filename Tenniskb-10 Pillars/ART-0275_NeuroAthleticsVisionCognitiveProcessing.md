@@ -62,3 +62,10 @@ Sleep is the primary period for memory consolidation and cognitive recovery. Ade
 
 ## Practical Application: "The Recovery Routine"
 Develop a structured recovery routine for each time scale: (1) between points: three deep breaths, release tension, reset focus, (2) between games: hydrate, consume carbohydrates if needed, brief mental break, (3) between sets: stretch, adjust strategy, extended mental recovery, (4) between matches: prioritize sleep, eat balanced meals, engage in relaxation. This routine ensures that cognitive recovery is systematic and intentional rather than random, maximizing the restoration of mental function across all time scales.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

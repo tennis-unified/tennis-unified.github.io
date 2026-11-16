@@ -133,3 +133,10 @@ Perform a mental audit of your kinetic chain during a groundstroke:
 6. **Arm to racket**: Is your wrist firm at contact? (If not, you're losing energy here.)
 
 At each point where the answer is "no," you have an energy leak. Address each leak through targeted training, and your cumulative efficiency will improve dramatically. The goal is to make every transfer point as efficient as possible, so that the maximum amount of energy generated at the ground reaches the racket. Even small improvements at each point compound into large overall gains.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Myofascial force transmission across segments*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Muscular mechanics: eccentric/concentric & force-velocity*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -72,3 +72,10 @@ Huấn luyện bao gồm:
 ## Ứng Dụng Thực Tế: "Phản Hồi Tốc Độ Xoáy"
 
 Sử dụng thiết bị đo xoáy hoặc đánh giá của huấn luyện viên để theo dấu tốc độ xoáy trong lúc tập luyện. Đối với mỗi cú đánh, ghi chú tốc độ xoáy và chất lượng cú đánh kết quả. Phát triển nhận thức về cách các tốc độ xoáy khác nhau ảnh hưởng đến quỹ đạo bay và độ nảy của bóng, và thực hành điều chỉnh tốc độ xoáy dựa trên tình huống chiến thuật.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

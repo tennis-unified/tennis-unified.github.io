@@ -60,3 +60,10 @@ Các tay vợt nên kết hợp các bài tập này vào chương trình tập 
 
 ## Ứng Dụng Thực Tế: "Thực Hành Cú Chạm Bóng"
 Đứng tại vợt và yêu cầu đồng đội chuyền bóng về phía tay trái của bạn. Thực hành đánh mười cú chạm bóng tay trái, tập trung vào chuyển động vung vợt ngắn gọn, cổ tay cứng vững và điểm chạm bóng phía trước cơ thể. Đếm xem có bao nhiêu cú chạm bóng rơi trong sân và bao nhiêu cú xuyên thấu. Theo dõi tiến bộ qua các buổi tập để đảm bảo kỹ thuật chạm bóng phát triển đúng hướng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

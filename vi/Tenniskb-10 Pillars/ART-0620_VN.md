@@ -76,3 +76,10 @@ Volley thấp là bài kiểm tra cuối cùng của kỹ thuật lưới. Hạ 
 ## Ứng Dụng Thực Tế: "Chỗi, Đừng Chạm"
 
 Khi bóng thấp, bản năng của bạn là chạm xuống bằng tay. Chống lại điều này. Thay vào đó, khủy gối để toàn bộ cơ thể xuống đến độ cao của bóng. Mặt vợt gặp bóng ở độ cao của nó thay vì chạm xuống từ trên cao. Điều này duy trì thăng bằng, kiểm soát, và nhất quán.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -48,3 +48,10 @@ Chuẩn bị sớm là dấu hiệu đặc trưng của kỹ thuật forehand đ
 ## Ứng Dụng Thực Tế: "Vòng Xoay Gắn Kết"
 
 Thực hành xoay thân đơn vị như một vòng xoay gắn kết bằng cách giữ một chiếc khăn giữa tay không thống trị và cổ vợt trong suốt quá trình xoay. Phản hồi xúc giác này đảm bảo cánh tay và thân di chuyển như một đơn vị duy nhất, ngăn ngừa lỗi phổ biến của vợt bị trễ so với sự xoay của cơ thể. Bắt đầu ở tốc độ nửa, tập trung vào cảm giác cuộn thay vì tốc độ, và tăng dần tiết tấu trong khi duy trì sự kết nối.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

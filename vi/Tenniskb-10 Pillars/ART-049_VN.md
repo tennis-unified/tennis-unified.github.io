@@ -98,3 +98,10 @@ Va chạm vợt-bóng chỉ kéo dài 3-6 mili giây, trong đó cả bóng và 
 
 ## Ứng Dụng Thực Tế: "Cửa Sổ Mili Giây"
 Toàn bộ va chạm vợt-bóng xảy ra trong chưa đầy 6 mili giây — nhanh hơn nháy mắt. Trong cửa sổ ngắn này, bóng biến dạng, dây giãn, và năng lượng truyền. Nhiệm vụ của bạn là đảm bảo tương tác này xảy ra tại điểm ngọt, nơi truyền năng lượng được tối đa hóa. Luyện tập bằng cách tập trung vào đập sạch, trúng tâm. Khi bạn liên tục đánh trúng điểm ngọt, bạn sẽ nhận ra cảm giác "thud" thay vì "ping" — điều này cho thấy truyền năng lượng hiệu quả với rung động tối thiểu. Cửa sổ mili giây là nơi kỹ thuật gặp vật lý, và làm chủ nó là chìa khóa cho cú đánh mạnh mẽ, nhất quán.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Động lực học tuyến tính, GRF và xung lượng*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -66,3 +66,10 @@ Nhận thức bản thân cho phép người chơi nhận ra khi nào họ ở t
 Trong các lần đổi sân, thực hiện một "kiểm tra nhận thức" ngắn gọn: (1) mức độ tập trung của tôi là bao nhiêu (1-10)? (2) trạng thái cảm xúc của tôi như thế nào (bình tĩnh, lo âu, bực bội, tự tin)? (3) chất lượng quyết định của tôi ra sao (tốt, hỗn hợp, kém)? (4) trạng thái thể chất của tôi như thế nào (tươi mới, trung bình, mệt mỏi)? Dựa trên kiểm tra này, đặt một mục tiêu cụ thể cho game tiếp theo. Tự giám sát có cấu trúc này xây dựng nhận thức si nhận thức là nền tảng của cải thiện liên tục và hiệu suất tối ưu.
 
 (End of file)
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

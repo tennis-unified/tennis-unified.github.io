@@ -86,3 +86,10 @@ Hướng bóng được quyết định chủ yếu bởi định hướng mặt
 
 ## Ứng Dụng Thực Tế: "Cái Búa Và Cái Đinh"
 Hãy tưởng tượng đập đinh vào gỗ. Bạn không đẩy cái búa — bạn gia tốc nó và để xung lực của va chạm làm việc. Vợt của bạn là cái búa; bóng là cái đinh. Sâu sắc cốt lõi là xung lực truyền phụ thuộc vào cả tốc độ cái búa và hiệu quả va chạm truyền năng lượng. Nắm lỏng lúc chạm giống như cầm tay búa bằng sợi mì ướt — khối lượng hiệu quả giảm và năng lượng tỏa tán. Nắm vợt đủ chặt để vợt và tay hành động như một khối cứng tại thời khắc va chạm. Cảm nhận bóng nén vào dây và nảy ra — sự nảy lại đó là xung lực làm việc có lợi cho bạn. Càng gia tốc vợt mạnh và chạm càng vững, cái đinh đập càng sâu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Động lực học tuyến tính, GRF và xung lượng*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

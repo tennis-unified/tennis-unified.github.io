@@ -43,3 +43,10 @@ Né người hoặc quay mặt đi (đây là phản xạ tự nhiên nhưng khi
 ## Ứng Dụng Thực Tế: "Vợt Trước Người, Chặn Và Đổi Hướng"
 
 Khi đối phó với đường trả bóng từ cú giao bóng vào người: (1) giữ vợt trước người, (2) chặn bóng, (3) đổi hướng sang chéo sân. Cú volley chặn chính là vũ khí chủ lực của bạn trong tình huống này.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

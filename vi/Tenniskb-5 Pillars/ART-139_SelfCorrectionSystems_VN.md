@@ -58,3 +58,10 @@ Ghi chép sau buổi tập: 3 lỗi phạm phải, 1 nguyên nhân gốc mỗi l
 
 ## Ứng Dụng Thực Tế: Bài Kiểm Tra "Tự Động Hóa"
 Sự thành thạo thực sự là khi vòng lặp tự sửa lỗi chạy nhanh hơn suy nghĩ có ý thức. Vận động viên không *suy nghĩ* "sửa cổ tay"; cổ tay tự sửa chính nó vì hệ thống nhận diện được mẫu lỗi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

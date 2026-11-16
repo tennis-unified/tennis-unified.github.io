@@ -56,3 +56,10 @@ Thực hành các bài tập đòi hỏi chú ý thực thi: ra quyết định 
 
 ## Ứng Dụng Thực Tế: "Câu Châm Ngôn Chiến Thuật"
 Phát triển một câu châm ngôn chiến thuật ngắn gọn tóm gọn kế hoạch trận của bạn (ví dụ: "di chuyển họ, sau đó tấn công"). Lặp lại câu châm ngôn này trong nội tâm trong lúc đổi sân và giữa các điểm để giữ mục tiêu chiến thuật trong bộ nhớ làm việc. Khi sự phân tâm nảy sinh, quay lại câu châm ngôn. Kỹ thuật đơn giản này giữ chú ý thực thi của bạn tập trung vào mục tiêu thay vì bị thu hút bởi kích thích không liên quan, và nó cung cấp một công cụ tái tập trung nhanh chóng khi chú ý trôi lang.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+<!-- TAICHIKB-CROSSREF-END -->

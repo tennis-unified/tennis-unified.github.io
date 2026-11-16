@@ -68,3 +68,10 @@ The baseline overhead is the most powerful overhead in tennis, requiring a full 
 ## Practical Application: "Full Throw, Full Power"
 
 The baseline overhead is a throw. Use your entire body — legs, hips, shoulders, arm, wrist — to generate maximum power. Do not rush the setup, do not abbreviate the swing, and do not hold back. The baseline overhead is your most powerful weapon.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

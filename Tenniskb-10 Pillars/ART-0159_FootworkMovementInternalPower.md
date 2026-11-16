@@ -84,3 +84,10 @@ Players who fail to push out — who simply stop sliding and stand there — los
 ## Practical Application: "The Slide-and-Tap Drill"
 
 On a clay court, mark a start line and a slide-entry line 3 meters apart. The coach feeds a wide ball. The player sprints from the start line, initiates the slide at the slide-entry line, makes contact with the ball (slide-to-hit) or retrieves it (slide-to-recover), and immediately taps a recovery cone placed at the center mark. The coach times the sequence: sprint, slide, contact/hit, push-out, cone tap. Target: under 3.5 seconds for the full sequence. Players who exceed this time have a breakdown in one of the phases — the drill reveals which one.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+<!-- TAICHIKB-CROSSREF-END -->

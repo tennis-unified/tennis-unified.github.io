@@ -120,3 +120,10 @@ Tennis is an inherently asymmetrical sport, with players consistently using one 
 ## Practical Application: "Train the Other Side"
 
 Dedicate one practice session per week to training your non-dominant side: hit groundstrokes with your non-dominant hand, perform serving motions without a ball, and do single-leg exercises starting with your weaker leg. You do not need to become ambidextrous — but you do need to reduce the imbalance gap. Even 10 minutes per week of non-dominant training reduces injury risk and improves your overall movement quality.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

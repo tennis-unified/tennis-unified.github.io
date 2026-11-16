@@ -183,3 +183,10 @@ Bài khởi động có cấu trúc này giúp cơ thể sẵn sàng cho hiệu 
 | Đau lưng dưới kéo dài | Độ ổn định core kém, ưỡn lưng thắt lưng quá mức khi giao bóng | Vấn đề đĩa đệm, căng cơ | Chương trình ổn định core; xem xét lại kỹ thuật giao bóng; bài tập ổn định cột sống thắt lưng |
 | Thường xuyên trẹo mắt cá chân | Bản thể cảm giác kém, độ ổn định mắt cá không đủ | Trẹo mắt cá chân phía ngoài, mất ổn định kéo dài | Tập thăng bằng; tăng sức mạnh mắt cá chân; bài tập bản thể cảm giác |
 | Viêm gân bánh chè | Khối lượng nhảy/tiếp đất quá nhiều, cơ tứ đầu kém linh hoạt | Đau đầu gối, khó chịu khi giao bóng | Chương trình squat theo cơ chế kéo dãn; giãn cơ tứ đầu; quản lý tải trọng |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

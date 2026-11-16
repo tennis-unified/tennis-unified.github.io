@@ -43,3 +43,10 @@ Cú giao bóng trả lại tầm thấp đòi hỏi kỹ thuật volley thấp: 
 ## Ứng Dụng Thực Tế: "Hạ Thấp Người, Mở Mặt Vợt, Nâng Bóng Qua"
 
 Đối phó với cú giao bóng trả lại tầm thấp: (1) hạ thấp người, (2) mở mặt vợt, (3) nâng bóng qua lưới. Bạn hạ thấp người càng sâu, volley thấp của bạn càng tốt.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

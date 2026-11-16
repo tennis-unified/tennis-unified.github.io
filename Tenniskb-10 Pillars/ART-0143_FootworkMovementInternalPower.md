@@ -70,3 +70,10 @@ Under fatigue or stress, the arm-first player's racket face angle varies by 5-10
 ## Practical Application: "Pendulum Awareness Reps"
 
 At the next session, dedicate the first 10 minutes of hitting to pendulum awareness. Have the player hit 20 forehands at moderate pace with one instruction only: **do not let the arm move first.** If the arm moves before the hips have rotated at least 30°, the rep is failed. Count successful reps out of 20. Most players score 3-8 on their first attempt. After 3-5 sessions, the score should rise to 15-18. Then measure ball speed with a radar gun — the player will typically find that their "effortless" pendulum forehand produces equal or greater ball speed than their "hard" arm-driven forehand, with half the perceived effort. The awareness transfers automatically to the backhand (single-handed) and serve once the pattern is established on the forehand, because the initiation cue (hips before arms) is universal.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

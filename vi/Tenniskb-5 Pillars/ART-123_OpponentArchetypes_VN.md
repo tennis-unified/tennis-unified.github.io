@@ -42,3 +42,10 @@ Mỗi đối thủ là một hệ thống với dấu ấn riêng. Bài viết n
 
 ## Ứng Dụng Thực Tế: "Kẻ Phá Hệ Thống"
 Mỗi mô hình mạnh ở nơi họ luyện tập và yếu ở nơi không luyện. Nhiệm vụ của bạn: buộc các điểm chơi ở những vùng họ chưa bao giờ lập bản đồ. Cấu trúc thắng ngẫu hứng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

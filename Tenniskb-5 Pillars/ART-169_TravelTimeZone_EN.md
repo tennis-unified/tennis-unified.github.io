@@ -112,3 +112,10 @@ The tennis calendar is a relentless global circuit: 30+ weeks, 15+ countries, 10
 
 ## Practical Application: "The Professional Nomad"
 Amateurs complain about travel. Professionals *systemize* it. The tournament doesn't start Monday; it starts the moment you close your front door. The athlete who arrives Tuesday "ready to play" beats the athlete who arrives Tuesday "recovering from travel." Build the mobile fortress. The court is the same everywhere; the preparation must be too.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Athletic nutrition & energy balance*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery/arousal balance*
+<!-- TAICHIKB-CROSSREF-END -->

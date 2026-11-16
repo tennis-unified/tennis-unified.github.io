@@ -169,3 +169,10 @@ Tennis string technology has evolved from natural materials to sophisticated syn
 ## Practical Application: "The String Test"
 
 Try this experiment: string one racket with polyester at 48 lbs and another identical racket with multifilament nylon at 52 lbs. Play with each for a week. You will likely find the polyester gives you more spin and control but may bother your arm after long sessions. The nylon will feel more comfortable and powerful but may lack the bite you want on heavy topspin shots. Most competitive players compromise with a hybrid setup: polyester mains for spin and durability, nylon crosses for comfort and power. Find your ideal setup through experimentation, and do not be afraid to change as your game evolves.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

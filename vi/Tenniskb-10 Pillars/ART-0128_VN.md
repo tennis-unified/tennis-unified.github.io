@@ -73,3 +73,10 @@ Tận dụng có thể đo lường được như mối quan hệ giữa lực p
 ## Ứng Dụng Thực Tế: "Lòng Bàn Chân Đến Linh Hồn"
 
 Đưa cho người chơi một hình ảnh: **lòng bàn chân là gốc, và linh hồn của cú đánh sống trong kết nối đó.** Mỗi khi bàn chân trồng, người chơi nên cảm nhận đất qua lòng bàn chân — không phải như một nền tảng thụ động nhưng như một đối tác tích cực trong sản xuất lực. Ở buổi tập tiếp theo, hãy để người chơi thực hiện 10 groundstroke với chân trần (trên sân sạch hoặc thảm) để tối đa hóa phản hồi proprioceptive từ lòng bàn chân. Sau đó đeo giày lại và cố gắng duy trì cùng mức độ cảm nhận đất. Trải nghiệm chân trần tái hiệu chỉnh cảm giác tận dụng, và người chơi có thể cảm nhận đất qua giày giành được lợi thế đo lường được trong cả sức mạnh lẫn ổn định.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

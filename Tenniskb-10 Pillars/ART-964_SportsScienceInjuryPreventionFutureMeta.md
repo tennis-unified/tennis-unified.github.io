@@ -152,3 +152,10 @@ These chance factors are not distributed equally, and they significantly influen
 ## Practical Application: "Talent Is a Seed — Environment Is the Soil"
 
 Talent without opportunity is potential unrealized. The goal of talent identification and development is not to find genetically gifted children and push them as hard as possible, but to create environments where all players can discover and develop their potential. Focus on quality coaching, diversified physical development, supportive relationships, and appropriate challenge. The players who reach the highest levels are not always those with the greatest genetic gifts — they are those who received the right support at the right time and persisted through the inevitable challenges of long-term development.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

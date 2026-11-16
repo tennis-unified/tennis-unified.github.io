@@ -68,3 +68,10 @@ Drive volley thu hẹp khoảng cách giữa sức mạnh đường nền và s�
 ## Ứng Dụng Thực Tế: "Đánh Xuyên Qua Cửa Sổ"
 
 Trên drive volley, hình dung cú đánh đường nền được nén vào một không gian nhỏ hơn. Xoay đầy đủ, chuyển trọng lượng, và chuyển động tiếp theo của cú đánh đường nền đều áp dụng như nhau ở đây — khác biệt duy nhất là bạn chạm bóng trước khi nó nảy. Cam kết với cú đánh với đầy đủ sự tự tin.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

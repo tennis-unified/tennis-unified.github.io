@@ -34,3 +34,10 @@ Dừng từ 6 m/s đòi hỏi hấp thụ khoảng 1,260 joule năng lượng đ
 
 ## Ứng Dụng Thực Tế: "Biết Khoảng Cách Dừng Của Bạn"
 Trong phiên tiếp theo, đo khoảng cách dừng thực tế của mỗi người chời ở ba tốc độ: chạy thoải mái (khoảng 5 m/s), chạy nhanh (khoảng 6 m/s), và chạy tối đa (khoảng 7+ m/s). Dùng cọc đánh dấu điểm bắt đầu và điểm dừng cuối. Sau đó phủ các khoảng cách đó lên sơ đồ sân: ở mỗi tốc độ, khoảng cách dừng có thể vượt chiều rộng sân. Hình ảnh này biến đổi — người chời ngay lập tức hiểu tại sao "chạy nhanh nhất có thể" là công thức cho chấn thương và tại sao giảm tốc có kiểm soát là lợi thế cạnh tranh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Thăng bằng động và kiểm soát hướng*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -57,3 +57,10 @@ Cách theo dõi đơn giản bao gồm ghi chép thống kê nhận biết dấu
 ## Ứng Dụng Thực Tế: "Phát Hiện Mệt Mỏi Trước Khi Nó Tìm Đến Bạn"
 
 Bắt đầu theo dõi nhận biết dấu hiệu mệt mỏi qua số liệu thống kê trong năm trận đấu tiếp theo của bạn. Sử dụng hệ thống đếm đơn giản trên tấm thẻ ghi chú hoặc ứng dụng thống kê quần vợt. Sau mỗi trận đấu, tính phần trăm và so sánh với mục tiêu của bạn (thường là 60% trở lên cho hầu hết các chỉ số). Xác định các tình huống cụ thể mà chỉ số giảm (cuối set, sau các pha bóng dài, dưới áp lực tỷ số) và phát triển tập luyện mục tiêu cho các kịch bản đó. Trong mùa giải, theo dõi xem chỉ số có cải thiện và tương quan với chiến thắng trong trận đấu hay không.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

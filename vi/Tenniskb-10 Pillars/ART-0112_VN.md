@@ -64,3 +64,10 @@ Xây dựng thói quen bước nhảy tách riêng biệt cho giao bóng với b
 3. **Chuyển đổi ngẫu nhiên.** Người giao bóng luân phiên ngẫu nhiên giao bóng một và hai; người trả phải hiệu chỉnh cú nhảy mà không biết cái nào đến. Tính điểm mỗi cú trả: hình học cú nhảy đúng được một điểm bất chất kết quả.
 
 Người trả sở hữu hai hình học bước nhảy tách riệt biệt — một cho sinh tồn, một cho tấn công — biến sự biến đổi của chính giao bóng thành vũ khí.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

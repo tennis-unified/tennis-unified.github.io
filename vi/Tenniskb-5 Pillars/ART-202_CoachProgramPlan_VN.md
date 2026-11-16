@@ -105,3 +105,10 @@ HLV Trưởng là COO của doanh nghiệp sự nghiệp vận động viên. "K
 
 ## Ứng Dụng Thực Tế: "Bảng Ghi Của COO"
 Kế Hoạch Chương Trình HLV Không Phải Là Sổ Tay Trên Giá Sách. Đó Là **Bảng Ghi Hàng Ngày Của COO** — Số Hoá Hoặc Giấy. Nó Quy Định *Cái Gì* Xảy Ra Trong Mỗi Buổi Tập, *Cách* HLV Hành Động, Và *Khi Nào* HLV Tăng Trưởng. Kế Hoạch Sự Nghiệp VĐ (BÀI-191) Là Chiến Lược; Kế Hoạch Chương Trình HLV Là **Sổ Tay Vận Hành**. Chúng Phải Được Kiểm Soát Phiên Bản Cùng Nhau. **Nếu Kế Hoạch HLV Không Thay Đổi Khi Kế Hoạch VĐ Thay Đổi, Vận Hành Sẽ Gãy.**
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+<!-- TAICHIKB-CROSSREF-END -->

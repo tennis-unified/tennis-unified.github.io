@@ -56,3 +56,10 @@ Quần vợt trong nhà cung cấp điều kiện được kiểm soát kích th
 ## Ứng Dụng Thực Tế: "Tấn Công, Tấn Công, Tấn Công"
 
 Điều kiện trong nhà có lợi cho người chủ động tấn công. Môi trường được kiểm soát — không gió, mặt sân nhanh, bóng dễ đoán — khen thưởng những người chơi tiến lên lưới. Hãy chơi quyết liệt, đóng gần lưới, và kết thúc điểm bóng nhanh chóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

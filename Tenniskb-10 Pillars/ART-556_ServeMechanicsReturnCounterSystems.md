@@ -134,3 +134,10 @@ Where you stand to return serve significantly affects your ability to handle dif
 ## Practical Application: "The Three-Position Drill"
 
 Have a partner serve 10 balls while you stand deep, 10 while you stand at the baseline, and 10 while you stand inside. Note which position produces the best results against that particular server. Use this information to determine your default return position for that opponent. Repeat this drill with different servers to develop your ability to adjust positioning.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

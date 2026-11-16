@@ -77,3 +77,10 @@ Phát triển nhận thức đàn tiên đòi hỏi cả huấn luyện nhận t
 ## Ứng Dụng Thực Tế: "Di Chuyển Từ Bụng"
 
 Đưa cho người chơi một tín hiệu: **cú đánh bắt đầu ba rộng ngón tay dưới rốn.** Mỗi groundstroke, mỗi volley, mỗi serve bắt đầu với chậu dẫn di chuyển. Ở buổi tập tiếp theo, dành 10 phút đầu tiên cho shadow swing với mục tiêu duy nhất là khởi tạo chậu. Không bóng, không mục tiêu — chỉ cảm giác trung tâm dẫn xoay. Sau đó giới thiệu bóng đánh dễ và duy trì cùng sự tập trung. Sự biến đổi thường ngay lập tức: cú đánh cảm giác mạnh hơn, ổn định hơn, và ít nỗ lực hơn, vì các nhóm cơ lớn nhất của cơ thể cuối cùng đang làm việc.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

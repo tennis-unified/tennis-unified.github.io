@@ -59,3 +59,10 @@ View adversity as a challenge rather than a threat. "This is an opportunity to p
 
 ## Practical Application: "The Toughness Test"
 After each match, perform a "toughness test": (1) did I compete hard on every point? (2) did I recover quickly from errors? (3) did I maintain focus under pressure? (4) did I stay emotionally controlled? Rate each on a scale of 1-10. Identify the lowest-scoring component and design training to improve it. This regular self-assessment builds mental toughness by identifying specific areas for improvement and tracking progress over time.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -60,3 +60,10 @@ Người chơi gặp khó khăn với cú drive một tay thường được l�
 
 ## Ứng Dụng Thực Tế: "Bài Tập Xoay Một Tay"
 Đứng trước gương và tập luyện cú swing tay trái một tay chậm rãi. Tập trung vào việc xoay mông và vai ra xa lưới trong lúc kéo về, sau đó xoay về phía trước trong lúc swing. Kiểm tra xem tay không thống trị có duỗi ra phía sau trong lúc kéo về và di chuyển ngang qua cơ thể trong lúc swing về phía trước không. Lặp lại cho đến khi việc xoay cảm thấy tự nhiên.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

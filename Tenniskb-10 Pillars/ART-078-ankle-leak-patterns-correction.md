@@ -42,3 +42,10 @@ The ankle is the first link in the kinetic chain, where ground reaction forces e
 
 ## Practical Application: "The Ankle Check"
 During loading and leg drive, ensure your ankles are stable and pushing off forcefully. If your push-off is weak, work on calf strength and plyometrics. If your ankles feel unstable, work on balance and peroneal strength. If you can't flex your knees deeply, work on dorsiflexion mobility. The ankle is where the chain begins—a strong, stable ankle sets the foundation for everything above.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

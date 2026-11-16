@@ -62,3 +62,10 @@ Luyện tập xoay cẳng tay bao gồm:
 ## Ứng Dụng Thực Tiễn: "Trọng Tâm Xoay Cẳng Tay"
 
 Trong buổi luyện tập tiếp theo của bạn, tập trung vào cảm giác cẳng tay xoay vào trong trong quá trình vung về phía trước. Tưởng tượng bạn đang xoay nắm cửa khi vung qua điểm chạm bóng. Hình âm này giúp kích hoạt các cơ xoay và đảm bảo bạn sử dụng nguồn sức mạnh ẩn này trong mỗi cú forehand.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

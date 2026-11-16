@@ -55,3 +55,10 @@ Players transitioning to the Semi-Western grip often experience forearm soreness
 
 ## Practical Application: "The Topspin Brush Drill"
 Stand on the baseline and have a partner feed balls to your backhand side. Hit ten drives focusing on brushing up the back of the ball with the Semi-Western grip. Count how many clear the net by at least 1 meter and land within 3 meters of the baseline. Track progress over sessions to ensure the grip is producing consistent topspin.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+<!-- TAICHIKB-CROSSREF-END -->

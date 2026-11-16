@@ -105,3 +105,10 @@ Yêu cầu người chơi đứng tư thế sẵn sàng và thực hiện bóng 
 4. **Nhịp 4 — Phóng.** Tiếp xúc bóng tưởng tượng với hơi thở ra sắc và duỗi hoàn toàn.
 
 Chạy tốc độ tư cho 10 lần lặp, rồi nửa tốc, rồi tốc độ tối đa. Người chơi cảm nhận từng giai đoạn rõ ràng ở tốc độ tối đa đã tích hợp khung. Người chơi không thể có ít nhất một giai đoạn cần luyện tập biệt lập — và giờ họ biết là cái nào.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+<!-- TAICHIKB-CROSSREF-END -->

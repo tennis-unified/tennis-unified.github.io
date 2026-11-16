@@ -66,3 +66,10 @@ Người chơi sử dụng vợt nặng hơn cho sản sinh xoáy nên:
 ## Ứng Dụng Thực Tế: "Thí Nghiệm Khối Lượng"
 
 Thử nghiệm với các khối lượng vợt khác nhau bằng cách thêm hoặc bớt trọng lượng vào vợt hiện tại. Sử dụng thiết bị đo xoáy để theo dấu tốc độ xoáy với mỗi cấu hình. Tìm khối lượng tạo ra tốc độ xoáy cao nhất trong khi duy trì tốc độ vung và kiểm soát chấp nhận được. Khối lượng tối ưu này là khối lượng tối đa hóa tiềm năng sản sinh xoáy của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

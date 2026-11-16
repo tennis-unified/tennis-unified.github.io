@@ -72,3 +72,10 @@ Học tiềm ẩn và học không lỗi hoạt động tốt cùng nhau. Học 
 
 ## Ứng Dụng Thực Tế: "Luyện Tập Thầm Lặng"
 Định kỳ luyện tập với "học thầm lặng": đánh bóng mà không có bất kỳ chỉ dẫn bằng lời nào, từ huấn luyện viên hoặc từ chính bản thân. Tập trung hoàn toàn vào kết quả bên ngoài (quả bóng đi đâu) thay vì cơ chế bên trong (cơ thể bạn di chuyển như thế nào). Luyện tập thầm lặng này thúc đẩy học tiềm ẩn bằng cách loại bỏ sự giám sát có ý thức can thiệp vào quá trình xử lý tự động. Sau buổi tập, hãy phản tư về những gì bạn đã học mà không cần ai chỉ bảo. Điều này xây dựng hệ thống kỹ năng tiềm ẩn hoạt động dưới áp lực và tạo ra "cảm giác" đặc trưng cho thể hiện của chuyên gia.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

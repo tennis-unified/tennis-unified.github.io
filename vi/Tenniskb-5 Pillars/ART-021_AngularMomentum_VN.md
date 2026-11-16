@@ -37,3 +37,9 @@ Ngay trước khi tiếp xúc, cánh tay và cổ tay thực hiện một chuy�
 
 ## Ứng Dụng Thực Tế: Hiệu Ứng "Vũ Công Trượt Băng"
 Hãy nghĩ về một vũ công trượt băng khi đang xoay. Khi họ thu tay vào, họ xoay nhanh hơn. Một tay vợt tennis cũng làm điều tương tự với cây vợt: họ tích lũy động lượng với một cung rộng và "thu hẹp" bán kính để bùng nổ vào quả bóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Bảo toàn mô-men động lượng và mô-men quán tính*
+- [Phân Tích Động Học Vận Động Con Người — Chương 4 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/kinematic-analysis-human-movement/ch04.html) — *Động học góc trong chuyển động đa phân đoạn*
+<!-- TAICHIKB-CROSSREF-END -->

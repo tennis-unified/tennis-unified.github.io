@@ -68,3 +68,10 @@ Training involves:
 ## Practical Application: "The Whip Drill"
 
 Practice the wrist snap by holding your racquet at the set position with your wrist fully extended (cocked back). Swing forward, consciously maintaining this extension until the last moment, then snap your wrist forward as if you are cracking a whip. Focus on the feeling of the racquet head "catching up" to your hand at contact. This whipping sensation is the wrist snap that adds significant speed and spin to your forehand.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Elbow, forearm pronation & wrist mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+<!-- TAICHIKB-CROSSREF-END -->

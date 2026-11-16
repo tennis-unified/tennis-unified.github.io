@@ -210,3 +210,10 @@ Kiểm tra lại mỗi 8-12 tuần để theo dõi tiến bộ.
 | Xoay quá mức trong cú đánh | Kiểm soát chống xoay kém | Điểm chạm không nhất quán, lỗi | Huấn luyện chống xoay; Pallof press; single-arm farmer's carry |
 | Mệt mỏi core trong trận dài | Sức bền core không đủ | Giảm ổn định, lỗi cuối trận | Chu kỳ sức bền core; giữ thời gian dài hơn |
 | Khó duy trì tư thế trong rally | Sức bền và ổn định core kém | Lỗi liên quan mệt mỏi | Huấn luyện ổn định và sức bền core kết hợp |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Chương 9: Mặt Trước Sâu — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch09-mat-truoc-sau.html) — *Đường Mặt Trước Sâu: trục ổn định trọng tâm*
+<!-- TAICHIKB-CROSSREF-END -->

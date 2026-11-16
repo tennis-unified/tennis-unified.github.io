@@ -88,3 +88,10 @@ Hip rotation velocity correlates with ball exit speed:
 
 ## Practical Application: "The Hip Snap"
 The key to hip rotation velocity is the snap—the rapid, explosive rotation of the hips that initiates the kinetic chain. To develop this snap, practice standing with your feet planted and rapidly rotating your hips from a loaded position (trunk rotated away) to a forward position (trunk rotated toward target). Do this 20 times as fast as possible, feeling the snap of your hips rotating. Now add the ground contact: push off your rear foot as you rotate your hips, feeling how the ground reaction force adds to the snap. Finally, add the ball: have a partner feed you groundstrokes and focus on maximizing the snap of your hips during each stroke. The faster your hips snap, the more power your strokes will generate. This hip snap is the foundation of all tennis power.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+<!-- TAICHIKB-CROSSREF-END -->

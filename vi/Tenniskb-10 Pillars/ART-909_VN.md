@@ -136,3 +136,10 @@ Chương trình thăng bằng 10 phút mỗi ngày giảm tỷ lệ trật khớ
 ## Ứng Dụng Thực Tế: "Thăng Bằng Trước Khi Rally"
 
 Trước mỗi buổi tập, thực hiện 3 phút thăng bằng một chân: đứng mỗi chân 60 giây, trước với mắt mở, sau đó nhắm. Nếu bạn không thể duy trì thăng bằng 20 giây với mắt nhắm ở bất kỳ chân nào, hệ thống cảm giác vị trí của bạn cần chú ý. Thêm điều này vào thói quen hàng ngày — 3 phút huấn luyện thăng bằng ngăn ngừa nhiều chấn thương mắt cá hơn bất kỳ đai nào, và nó không đòi hỏi thiết bị.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -68,3 +68,10 @@ One session, one image: **the player backs into an invisible chair, and the chai
 4. **Live overhead conversion.** Full pattern: lob in, retreat, re-plant, smash — but the smash must land past the service line to count. Depth on the finish proves the axis survived the retreat.
 
 Players who master the axis do not backpedal faster — they simply arrive at the re-plant with their legs still under them, which is the only version of the overhead that ends the point.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

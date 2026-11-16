@@ -71,3 +71,10 @@ When the trunk rotates too early in the acceleration phase, the shoulder must wo
 ## Practical Application: "The Chain Reel"
 
 Practice serves at 60% effort with a deliberate focus on feeling each body segment contribute sequentially. Begin with leg drive (feel the floor), then hip rotation (feel the belt buckle turn), then trunk flexion (feel the chest drop), then shoulder rotation (feel the whip), then wrist snap (feel the acceleration). If any segment fires out of sequence, start over. This mindful approach rewires motor patterns faster than thousands of mindless repetitions.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

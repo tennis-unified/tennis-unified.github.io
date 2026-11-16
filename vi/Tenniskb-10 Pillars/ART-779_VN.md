@@ -57,3 +57,10 @@ Các phương pháp theo dõi đơn giản bao gồm ghi chép số liệu về 
 ## Ứng Dụng Thực Tế: "Đón Sóng Đà Thế Trận"
 
 Bắt đầu theo dõi chuyển hướng đà thế trận trong năm trận đấu tiếp theo của bạn. Sử dụng hệ thống đếm đơn giản trên tấm thẻ ghi chú hoặc một ứng dụng thống kê quần vợt. Sau mỗi trận, tính phần trăm và so sánh với mục tiêu của bạn (thường là 60% trở lên đối với hầu hết các chỉ số). Xác định những tình huống cụ thể mà chỉ số giảm sút (cuối set, sau các pha giao tranh dài, dưới áp lực của bảng điểm) và xây dựng bài tập nhắm thẳng vào những tình huống đó. Trong suốt một mùa giải, theo dõi xem chỉ số có được cải thiện và có tương quan với các chiến thắng hay không.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Động lực học tuyến tính, GRF và xung lượng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

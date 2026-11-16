@@ -64,3 +64,10 @@ Learn to weight cues based on their reliability. Practice with opponents who pro
 
 ## Practical Application: "The Cue Hierarchy"
 Develop a personal "cue hierarchy" a ranked list of the most reliable cues for different types of predictions. For example, for shot direction: (1) shoulder orientation, (2) foot position, (3) racket angle, (4) ball toss position. When multiple cues are available, prioritize the higher-ranked cues in your hierarchy. This structured approach to cue utilization prevents the confusion that occurs when multiple cues provide conflicting information and ensures that the most reliable information drives your predictions.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

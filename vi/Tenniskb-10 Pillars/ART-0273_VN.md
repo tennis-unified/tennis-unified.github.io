@@ -47,3 +47,10 @@ Thể trạng tốt hỗ trợ chức năng nhận thức. Sức bền tim mạc
 
 ## Ứng Dụng Thực Tế: "Sự Thích Ứng Của Người Cao Tuổi"
 Thích ứng trận đấu của bạn cho phù hợp với hồ sơ nhận thức của bạn. Nếu tốc độ xử lý đã giảm, hãy dự đoán sớm hơn và đánh bóng sớm hơn. Nếu bộ nhớ làm việc đã giảm, đơn giản hóa kế hoạch chiến thuật và dựa vào trực giác dựa trên kinh nghiệm. Nếu chức năng điều hành đã giảm, sử dụng các chiến lược rõ ràng, đơn giản thay vì các kế hoạch phức tạp nhiều bước. Những sự thích ứng này cho phép bạn duy trì hiệu suất cao bằng cách tối đa hóa các điểm mạnh nhận thức được bảo toàn (kinh nghiệm, bộ nhớ thủ tục) trong khi bù trừ cho các suy giảm do tuổi tác (tốc độ xử lý, bộ nhớ làm việc).
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

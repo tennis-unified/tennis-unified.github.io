@@ -180,3 +180,10 @@ The research suggests:
 | Player lacks movement quality and athleticism | Early specialization, insufficient physical literacy | Poor on-court movement, injury susceptibility | Introduce multi-sport activities; movement skills training |
 | Late starter struggling to catch up technically | Late specialization, insufficient technical foundation | Technical gaps, frustration | Intensive technical program; patient long-term approach |
 | Player narrowly focused on tennis with no other interests | Early specialization, identity fusion | Fragility when results decline; limited coping skills | Encourage hobbies and interests outside tennis; broaden identity |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

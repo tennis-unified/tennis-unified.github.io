@@ -90,3 +90,10 @@ Nếu vợt chậm lại tại chạm (phổ biến khi người chơi cố "nâ
 ## Ứng Dụng Thực Tế: "Chạm Trời"
 
 Giao 20 bóng kick với mục tiêu làm bóng nảy cao hơn ngang vai người trả bóng. Nhờ đối tác đứng ở đường giao bóng và giữ vợt ngang vai — nếu bóng nảy cao hơn vợt, giao bóng thành công. Bài tập này phát triển topspin nặng cần cho giao bóng kick hiệu quả. Theo dõi tỷ lệ thành công và hướng đến 70%+ theo thời gian.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

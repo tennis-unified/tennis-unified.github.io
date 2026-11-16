@@ -165,3 +165,10 @@ The Magnus force is proportional to spin rate and ball speed.
 ## Practical Application: "Know Your Ball"
 
 Before your next match, pay attention to the ball type being used. If you are playing at altitude, ensure Type 3 balls are used — the lower internal pressure compensates for reduced air density. If you are practicing with old balls but competing with new ones, spend at least 15 minutes hitting with new balls before your match to adjust. On cold days, warm the balls with several minutes of hitting before competition — the rubber needs to warm up for optimal bounce. These small adjustments, grounded in ball physics, can make a measurable difference in your performance.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+<!-- TAICHIKB-CROSSREF-END -->

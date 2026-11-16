@@ -66,3 +66,10 @@ Contacts above hip level are the most powerful and are used for attacking short 
 ## Practical Application: "The Hip Height Awareness"
 
 During practice, consciously monitor the height of each contact point relative to your hip. After each shot, note whether the contact was above, at, or below hip level, and how it affected the shot's quality. Develop the ability to adjust your knee flexion to position your hip at the optimal height for each incoming ball, ensuring consistent contact quality across varying ball heights.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 4: Các Nguyên Lý Cơ Học (Biomechanical Principles)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch04-cac-nguyen-ly-co-hoc.html) — *Neumann biomechanical lever & torque principles*
+<!-- TAICHIKB-CROSSREF-END -->

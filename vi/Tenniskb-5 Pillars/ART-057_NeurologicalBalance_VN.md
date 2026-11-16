@@ -53,3 +53,10 @@ Thăng bằng thần kinh và sinh cơ học phải được tích hợp để h
 
 ## Ứng Dụng Thực Tế: "Chuỗi Ổn Định"
 Vận động viên nên cảm nhận rằng chuỗi động học là "ổn định" và tích hợp với hệ thống thăng bằng thần kinh và sinh cơ học. Vận động viên nên cảm nhận năng lượng chảy từ mặt sân, qua vùng lõi và ra ngoài qua vợt. Đây là mục tiêu cuối cùng của Hệ Thống 5 Cột Trụ: tạo ra một vận động viên hoàn chỉnh, tích hợp, thực hiện một cách không gắng sức ở tiềm năng đỉnh cao của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Hệ tiền đình và cơ chế giữ thăng bằng*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Điều phối tiểu não và thăng bằng cảm thụ bản thể*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Thăng bằng động và kiểm soát tư thế khi di chuyển*
+<!-- TAICHIKB-CROSSREF-END -->

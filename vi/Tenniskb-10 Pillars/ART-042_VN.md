@@ -97,3 +97,10 @@ Tại lúc đập bóng, cốt:
 
 ## Ứng Dụng Thực Tế: "Cốt Vừa Chắc Vừa Mềm"
 Hãy tưởng tượng cốt của bạn như một cái xilanh vừa chắc vừa mềm: đủ chắc để truyền lực mà không rung lắc, đủ mềm để xoay tự do. Trong giai đoạn tải, xilanh chắc và đứng yên. Trong giai đoạn gia tốc, xilanh xoay mượt mà và mạnh mẽ. Tại lúc đập, xilanh lại chắc, cung cấp nền tảng ổn định. Luyện tập bằng cách thực hiện các cú đánh đáy sân trong khi cảm nhận cốt như một cái xilanh chắc-mềm. Nếu cảm thấy rung lắc (thiếu ổn định), tập trung kích hoạt cơ ổn định sâu. Nếu cảm thấy cứng (thiếu linh hoạt), tập trung cho phép xoay mượt. Mục tiêu là một cốt vừa ổn định vừa linh hoạt — chắc nhưng mềm.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 9: Mặt Trước Sâu — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch09-mat-truoc-sau.html) — *Đường Mặt Trước Sâu: trục ổn định trọng tâm*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+<!-- TAICHIKB-CROSSREF-END -->

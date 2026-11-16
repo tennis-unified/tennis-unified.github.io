@@ -233,3 +233,10 @@ Trước giải đấu chính thức đầu tiên, xác minh tất cả tiêu ch
 | Chấn thương ở giải đấu đầu tiên | Chuẩn bị thể lực trong tiền mùa giải không đủ | Mất thời gian, gián đoạn mùa giải | Đảm bảo đạt tiêu chuẩn thể lực trước khi thi đấu; tăng cường độ từ từ |
 | Kế hoạch chiến thuật không hiệu quả trong trận | Kiểm tra trận thực hành không đủ | Chiến thuật không hiệu quả, thất vọng | Tăng khối lượng trận thực hành; kiểm tra tất cả kế hoạch chiến thuật trước mùa giải |
 | Tự tin thấp khi bắt đầu mùa giải | Chuẩn bị không đủ, kết quả trận thực hành kém | Do dự, giảm tính tấn công | Xây dựng sự tự tin thông qua chất lượng chuẩn bị; nhấn mạnh cải thiện |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

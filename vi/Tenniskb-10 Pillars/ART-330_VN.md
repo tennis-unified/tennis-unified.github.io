@@ -58,3 +58,10 @@ Các vận động viên xuất sắc nhận thức vùng chạm như một th�
 ## Ứng Dụng Thực Tế: "Nhận Thức Ba Chiều"
 
 Trong lúc luyện tập, chủ ý theo dõi cả ba chiều của điểm chạm. Sau mỗi cú đánh, hãy tự hỏi: (1) Điểm chạm có đúng khoảng cách phía trước không? (2) Nó có đúng khoảng cách về phía bên không? (3) Nó có đúng chiều cao không? Nhận thức ba chiều này giúp bạn xác định chiều nào cần điều chỉnh và phát triển khả năng kiểm soát đồng thời cả ba.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

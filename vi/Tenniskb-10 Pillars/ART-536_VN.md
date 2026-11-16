@@ -116,3 +116,10 @@ Cam kết đánh ít nhất 50 giao bóng mỗi ngày, ngày cả ngày nghỉ. 
 - 15 giao bóng kick (5 mỗi mục tiêu)
 
 Việc này chỉ mất 10-15 phút nhưng duy trì bộ nhớ cơ bắp cần thiết cho sự nhất quán trong trận đấu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Cơ học co cơ: lệch tâm/đồng tâm và lực–vận tốc*
+<!-- TAICHIKB-CROSSREF-END -->

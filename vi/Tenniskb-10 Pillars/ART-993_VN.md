@@ -96,3 +96,10 @@ Một số tay vợt tennis nổi tiếng đã công khai trải qua các phươ
 ## Ứng Dụng Thực Tế: "Cây Quyết Định Tái Tạo"
 
 Tay vợt tennis đối mặt với chấn thương mãn tính nên tuân theo một cây quyết định có cấu trúc trước khi theo đuổi các phương pháp điều trị tái tạo: Thứ nhất, cạn kiệt 3-6 tháng phục hồi dựa trên bằng chứng (tải trọng ly tâm cho viêm gân, tăng cường tiến triển cho chấn thương cơ). Nếu phục hồi thất bại, thu hình ảnh tiên tiến (MRI hoặc siêu âm chẩn đoán) để đặc trưng bệnh lý mô. Đối với viêm gân với thay đổi cấu trúc được xác nhận, PRP là lựa chọn tái tạo đầu tiên — nó có cơ sở bằng chứng mạnh nhất, rủi ro thấp nhất và có sẵn rộng rãi. Đối với khiếm khuyết sụn hoặc PRP thất bại, cân nhắc BMAC dưới sự hướng dẫn siêu âm từ bác sĩ y học thể thao có kinh nghiệm về quy trình tái tạo. Luôn xác minh rằng cơ sở điều trị sử dụng các quy trình chế biến chuẩn hóa và đóng góp vào sổ đăng ký kết quả. Y học tái tạo không phải là lối tắt — đó là công cụ hoạt động tốt nhất khi được kết hợp với phục hồi và quản lý tải trọng thích hợp. Những người chơi được lợi ích nhất là những người xem các phương pháp điều trị này như một phần của kế hoạch phục hồi toàn diện chứ không phải là giải pháp độc lập.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Động học góc và chuỗi động học tuần tự*
+<!-- TAICHIKB-CROSSREF-END -->

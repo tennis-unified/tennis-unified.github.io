@@ -245,3 +245,10 @@ Coaching methodologies must be adapted to the developmental stage of the player.
 | Adolescent questioning coaching authority | Insufficient autonomy, poor communication | Resistance, relationship damage | Explain rationale; involve in decisions; respect independence |
 | Young adult plateauing professionally | Insufficient data analysis, poor tactical development | Stalled career progression | Implement data-driven coaching; tactical sophistication |
 | Mature player struggling with recovery | Insufficient recovery management, overtraining | Fatigue, injuries | Reduce training volume; prioritize recovery; adapt expectations |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+<!-- TAICHIKB-CROSSREF-END -->

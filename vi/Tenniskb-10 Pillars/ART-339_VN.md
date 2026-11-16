@@ -62,3 +62,10 @@ Người chơi có tiền sử chấn thương vai hoặc khuỷu tay nên cân 
 ## Ứng Dụng Thực Hành: "Kiểm Tra Tam Giác"
 
 Tại tư thế chuẩn bị và tại thời điểm va chạm, hãy ý thức kiểm tra cấu trúc hình học của tam giác va chạm. Khuỷu tay của bạn có ở góc uốn 90 đến 120 độ không? Điểm chạm có ở khoảng cách tối ưu so với vai không? Vai của bạn có nâng cao và ổn định không? Phát triển nhận thức này giúp bạn duy trì tam giác tối ưu và tránh những thỏa hiệp cơ khí làm giảm lực mạnh và làm tăng nguy cơ chấn thương.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

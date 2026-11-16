@@ -83,3 +83,10 @@ Set a metronome to 60 BPM. On beat 1, begin the toss and drop. On beat 2, reach 
 ## Practical Application: "The Simultaneous Start"
 
 Stand at the service line with a basket of balls. Before each serve, say aloud: "Together" — reminding yourself that the toss arm and the hitting arm must begin their downward/upward motions at exactly the same time. Hit 20 serves focusing only on this synchronization. When the arms move together, the entire serve rhythm naturally falls into place. This verbal cue prevents the common fault of starting the toss while the racket is still at the trophy pose.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

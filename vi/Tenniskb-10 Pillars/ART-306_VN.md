@@ -52,3 +52,10 @@ Thời gian xoay thân đơn vị hiệu quả tối thiểu là khoảng 0,15 �
 ## Ứng Dụng Thực Tế: "Bài Tập Khoảng Cách Hông-Vai"
 
 Đặt một cây vợt trên mặt đất chỉ về phía lưới (mục tiêu đường hông) và đứng vuông góc với nó. Thực hiện cú xoay thân đơn vị, có ý thức xoay vai vượt xa vợt trong khi giữ hông chỉ về phía hoặc hơi vượt qua vợt. Điểm tham chiếu bên ngoài này giúp bạn hình dung góc tách biệt. Tiến triển đến đánh bóng tượng (shadow swing), tập trung vào cảm giác vai "muốn đi xa hơn" trong khi hông kháng lại. Sự kháng lại này tạo ra căng đàn hồi thúc đẩy cú đánh về phía trước.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -49,3 +49,10 @@ If you are a competitive tennis player, ensure you have undergone pre-participat
 
 ## Practical Application: "Screen, Recognize, Respond"
 If you are a competitive tennis player, ensure you have undergone pre-participation cardiac screening that includes at minimum a thorough personal and family history. If you are a coach or facility manager, advocate for ECG-inclusive screening for all your athletes and ensure your facility has an AED on-site with trained personnel. Learn to recognize the signs of cardiac distress: chest pain, dizziness, or loss of consciousness during play are always reasons to stop immediately. In the event of a collapse, call 911, start CPR, and retrieve the AED. Every minute counts — your response could save a life.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Tai Chi principles applied to tennis*
+<!-- TAICHIKB-CROSSREF-END -->

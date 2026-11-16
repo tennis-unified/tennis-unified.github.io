@@ -34,3 +34,10 @@ Structural tensegrity assessment evaluates the balance between the body's compre
 
 ## Practical Application: "The Tensegrity Screen"
 Perform a simple tensegrity screen by evaluating: (1) Can the player maintain optimal posture under load? (2) Are forces transmitted efficiently through the kinetic chain? (3) Is there any pain or dysfunction during movement? Any "no" answers indicate a tensegrity imbalance that needs to be addressed.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Myofascial force transmission across segments*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

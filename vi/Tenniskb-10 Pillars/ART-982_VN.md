@@ -173,3 +173,10 @@ Mô hình cơ xương khớp có thể được cá nhân hóa cho từng ngư�
 ## Ứng Dụng Thực Tế: "Biết Tải Của Bạn"
 
 Trong khi hầu hết người chơi không có quyền cập chụp chuyển động và mô hình cơ xương khớp, các nguyên tắc là phổ quát áp dụng: Giao bóng của bạn nên cảm giác như chuyển động phối hợp toàn cơ thể, không phải chuyển động chiếm ưu thế cánh tay. Nếu bạn cảm thấy căng ở vai, khuỷu hoặc thắt lưng khi giao bóng, đó là tín hiệu rằng một phần nào đó của chuỗi động lực của bạn không đóng góp đủ. Tập trung vào đẩy mạnh hơn với mặt đất (dẫn chân), xoay thân mình mạnh mẽ hơn, và đảm bảo theo đuổi hoàn chỉnh. Các điều chỉnh này, dựa trên nghiên cứu mô hình cơ sinh học, sẽ giảm tải khớp của bạn trong khi tăng tốc độ giao bóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

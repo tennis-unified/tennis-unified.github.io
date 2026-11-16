@@ -180,3 +180,10 @@ Nghiên cứu cho thấy:
 | Vận động viên thiếu chất lượng vận động và thể thao | Chuyên môn sớm, năng lực thể chất không đủ | Vận động trên sân kém, dễ chấn thương | Giới thiệu hoạt động đa môn; huấn luyện kỹ năng vận động |
 | Người bắt đầu muộn gặp khó khăn bù đắp về mặt kỹ thuật | Chuyên môn muộn, nền tảng kỹ thuật không đủ | Khoảng trống kỹ thuật, thất vọng | Chương trình kỹ thuật chuyên sâu; phương pháp dài hạn kiên nhẫn |
 | Vận động viên chỉ tập trung vào quần vợt mà không có sở thích khác | Chuyên môn sớm, dung nhập bản sắc | Mỏng manh khi kết quả giảm; kỹ năng đối phó hạn chế | Khuyến khích sở thích và thú vui ngoài quần vợt; mở rộng bản sắc |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

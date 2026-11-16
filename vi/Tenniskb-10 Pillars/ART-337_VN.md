@@ -66,3 +66,10 @@ Cú chạm cao hơn mức hông là mạnh nhất và được sử dụng để
 ## Ứng Dụng Thực Tiễn: "Nhận Thức Độ Cao Hông"
 
 Trong luyện tập, cố ý theo dõi độ cao của mỗi điểm chạm tương đối với hông của bạn. Sau mỗi cú đánh, ghi nhận xem cú chạm là cao hơn, ngang hay thấp hơn mức hông, và điều đó ảnh hưởng thế nào đến chất lượng cú đánh. Phát triển khả năng điều chỉnh gập gối để đặt hông ở độ cao tối ưu cho mỗi bóng đến, đảm bảo chất lượng chạm nhất quán trên các độ cao bóng khác nhau.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 4: Các Nguyên Lý Cơ Học (Biomechanical Principles)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch04-cac-nguyen-ly-co-hoc.html) — *Nguyên lý đòn bẩy và mô-men xoắn (Neumann)*
+<!-- TAICHIKB-CROSSREF-END -->

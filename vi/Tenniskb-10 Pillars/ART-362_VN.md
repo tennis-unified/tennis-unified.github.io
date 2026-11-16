@@ -88,3 +88,10 @@ Cú đánh forehand inside-out mang rủi ro:
 ## Ứng Dụng Thực Tế: "Trò Chơi Kết Hợp"
 
 Luyện tập cú forehand inside-out kết hợp với các cú đánh khác. Nhờ đối tác ném bóng vào phía backhand của bạn, và luyện tập đánh inside-out tiếp theo là down-the-line hoặc cú tiến lên lưới. Tập trung vào nhận thức không gian cần thiết để thực hiện kết hợp và tư duy chiến thuật cần thiết để chọn kết hợp phù hợp cho từng tình huống.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

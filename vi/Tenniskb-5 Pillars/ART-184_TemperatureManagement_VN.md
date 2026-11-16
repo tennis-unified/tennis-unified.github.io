@@ -32,3 +32,10 @@ Nhiệt độ là biến số hiệu suất mà hầu hết vận động viên 
 
 ## Ứng Dụng Thực Tế: "Công Cụ Nhiệt Độ"
 Sử dụng lạnh cho phục hồi và nóng cho chuẩn bị. Làm chủ quản lý nhiệt độ và bạn sẽ phục hồi nhanh hơn và thể hiện tốt hơn trong bất kỳ điều kiện nào.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

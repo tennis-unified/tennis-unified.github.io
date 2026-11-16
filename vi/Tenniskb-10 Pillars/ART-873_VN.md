@@ -154,3 +154,10 @@ Khớp hông là trung tâm của hiệu suất quần vợt, đóng vai trò l�
 | Ức chế công mông | Ngồi lâu, kích hoạt kém | Giảm sức mạnh, bù trừ bằng cơ đùi sau/lưng dưới | Bài tập kích hoạt công mông; glute bridge; clamshell |
 | Đau hông khi xoay | Rách màng chêm, chèn ép | Đau, giảm phạm vi chuyển động | Đánh giá y khoa; tính cơ động hông; điều chỉnh kỹ thuật |
 | Di chuyển ngang hạn chế | Cơ với hông yếu, tính cơ động kém | Giảm bao phủ sân | Đi bước ngang với dây kháng lực; củng cố cơ với hông; công việc tính cơ động |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+<!-- TAICHIKB-CROSSREF-END -->

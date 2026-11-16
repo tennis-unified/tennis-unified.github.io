@@ -42,3 +42,10 @@ The core is the central link in the kinetic chain, connecting the lower and uppe
 
 ## Practical Application: "The Core Check"
 During strokes, focus on feeling your core rotate fully and in sequence with your hips and shoulders. If your rotation is limited, work on trunk mobility. If your core feels unstable, work on deep stabilizer training. If your timing is off, work on sequential activation drills. The core is the power transfer center—a strong, stable, well-timed core ensures efficient force transmission from ground to racket.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Chương 9: Mặt Trước Sâu — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch09-mat-truoc-sau.html) — *Deep Front Line: core postural axis*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+<!-- TAICHIKB-CROSSREF-END -->

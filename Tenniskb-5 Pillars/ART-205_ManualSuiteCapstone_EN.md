@@ -142,3 +142,10 @@ The Manual Suite is the **Constitution of the 5-Pillar Enterprise**. It is not f
 This capstone article (`195_Manual_Suite_Capstone`) serves as the **Index, Governance Charter, and Integration Protocol** for the Manual Suite. It must be present in every version release (`vX.Y/195_Manual_Suite_Capstone.md`) and updated with every version bump.
 
 **Next Action:** Initialize `v1.0_YYYY/` repository with all four manuals + this index. Set up SSOT Dashboard. Schedule First Quarterly Board Meeting. **System Go-Live.**
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+- [Chương 19: Thấu hiểu cơ học-thích-nghi của mô mạc: Ứng dụng vào y học thể thao — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch19-thau-hieu-co-hoc-thich-nghi-cua-mo-mac-ung-dung-vao-y-hoc-the-th.html) — *Adaptive mechanobiology & injury prevention*
+<!-- TAICHIKB-CROSSREF-END -->

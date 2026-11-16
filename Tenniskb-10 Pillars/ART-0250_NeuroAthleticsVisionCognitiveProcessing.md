@@ -70,3 +70,10 @@ Neurofeedback training has been shown to improve attention, emotional regulation
 
 ## Practical Application: "The Perceptual-Cognitive Circuit"
 Integrate perceptual-cognitive training into your regular practice with a weekly circuit: (1) 15 minutes of video occlusion training, (2) 10 minutes of multiple object tracking, (3) 15 minutes of decision-making drills, and (4) 10 minutes of neurofeedback or mindfulness training. This circuit targets all the major perceptual-cognitive skills and can be completed in a single session or spread across the week. Over time, this structured training produces measurable improvements in the mental skills that underpin tennis performance.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Myofascial force transmission across segments*
+<!-- TAICHIKB-CROSSREF-END -->

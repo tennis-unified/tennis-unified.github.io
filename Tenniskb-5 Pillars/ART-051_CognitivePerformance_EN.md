@@ -59,3 +59,10 @@ Performance follows an inverted U-curve relative to arousal (stress).
 
 ## Practical Application: The "Calm Mind, Fast Body" State
 The athlete must learn to maintain a calm, focused mental state while allowing the body to move at maximum speed. This is the state of Flow, where cognitive processing is optimized, and the kinetic chain operates automatically. The training goal is not to eliminate stress, but to calibrate the stress response so that the brain remains in the optimal arousal zone.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 14: Não và Các Dây Thần Kinh Sọ (The Brain and Cranial Nerves)](https://taichikb.github.io/vi/books/tortora_ap/ch14-nao-va-cac-day-than-kinh-so.html) — *Prefrontal cortex & executive decision-making under load*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic arousal & stress response modulation*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & cognitive performance*
+<!-- TAICHIKB-CROSSREF-END -->

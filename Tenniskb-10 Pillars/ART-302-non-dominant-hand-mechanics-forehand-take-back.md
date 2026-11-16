@@ -52,3 +52,10 @@ Conversely, "dumping" the non-dominant hand too early—releasing the throat bef
 ## Practical Application: "The Throat Guide"
 
 To internalize correct non-dominant hand mechanics, practice the take-back holding a small ball (like a pickleball) between the non-dominant hand's index finger and the racquet throat. This forces light contact pressure and prevents gripping too tightly. Progress to shadow swings where you consciously focus on the exact moment the left hand releases—it should coincide with the feeling of your front hip beginning to rotate toward the target.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

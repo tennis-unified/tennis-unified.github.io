@@ -45,3 +45,10 @@ Tham chiếu nhịp ngoài nhanh chóng khóa pha hơn. Ba giao thức, theo th�
 
 ## Ứng Dụng Thực Tế: "Tìm Nhịp, Rồi Phá Nhịp"
 Trong phiên tiếp theo, dành 15 phút cho nhịp trước khi chạm kỹ thuật. Thứ nhất, **tìm nhịp**: chơi một rally bình thường khi người chơi đếm khoảng cách to — hầu hết chưa bao giờ đo và ngạc nhiên nó gần 2 s. Thứ hai, **khóa nhịp**: 6 x 90 giây rally cho bóng với metronome ở nhịp đo được, split trên nhịp. Thứ ba, **phá nhịp**: rally đổi nhịp với tốc độ thay đổi mỗi vài bóng, chấm split trong cửa sổ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

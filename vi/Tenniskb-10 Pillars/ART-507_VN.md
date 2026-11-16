@@ -84,3 +84,10 @@ Giao 50 bóng mà không dừng bất kỳ điểm nào trong chuyển động. 
 ## Ứng Dụng Thực Tế: "Bắt Đầu Đồng Thời"
 
 Đứng ở đường giao bóng với một rỗ bóng. Trước mỗi lần giao, nói to: "Cùng nhau" — nhắc nhở rằng cán tay tung bóng và cán tay đánh phải bắt đầu chuyển động xuống/lên đúng cùng lúc. Giao 20 bóng tập trung chỉ vào sự đồng bộ này. Khi hai cán tay chuyển động cùng nhau, toàn bộ nhịp giao bóng tự nhiên sắp xếp đúng. Lời gợi ý bằng lời này ngăn lỗi phổ biến là bắt đầu tung bóng khi vợt vẫn ở tư thế chiếc cúp.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

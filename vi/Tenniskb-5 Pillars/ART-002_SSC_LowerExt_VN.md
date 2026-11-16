@@ -43,3 +43,11 @@ Trong cú thuận tay tư thế mở, vận động viên nạp lực vào chân
 1.  Bước xuống từ một chiếc hộp nhỏ (30cm).
 2.  Ngay khoảnh khắc chân chạm đất, bật mạnh lên trên và ngay lập tức thực hiện một cú thuận tay bóng ma (shadow-swing).
 3.  Tập trung vào việc giảm thiểu tối đa thời gian tiếp xúc với mặt đất.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Dự trữ và hồi phục năng lượng đàn hồi trong mô mạc*
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Tập luyện plyometric và chu kỳ kéo giãn – co rút (SSC)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Cơ chế co cơ: chu kỳ SSC và thành phần đàn hồi*
+- [Chương 10: Mô Cơ (Muscular Tissue)](https://taichikb.github.io/vi/books/tortora_ap/ch10-mo-co.html) — *Mô cơ: sinh lý co cơ lệch tâm và đồng tâm*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -44,3 +44,10 @@ Duy trì điều kiện thể chất để hỗ trợ chức năng nhận thức
 
 ## Ứng Dụng Thực Tế: "Lợi Thế Của Người Cao Tuổi"
 Tận dụng kinh nghiệm của bạn như một người chơi cao tuổi. Mặc dù đối thủ trẻ hơn có thể có phản xạ nhanh hơn và dung lượng bộ nhớ làm việc lớn hơn, bạn có cơ sở kiến thức chiến thuật sâu hơn, nhận diện mô hình tốt hơn, và kỹ năng thủ tục hiệu quả hơn. Thiết kế kế hoạch trận đấu để tối đa hóa những lợi thế này: sử dụng sự đa dạng chiến thuật để ép đối thủ trẻ rơi vào các quyết định phức tạp, dựa vào cú đánh tự động để duy trì sự nhất quán, và sử dụng kinh nghiệm để dự đoán và làm rối nhịp điệu của đối thủ. Cách tiếp cận chiến lược này cho việc già trong tennis biến những điểm yếu tiềm ẩn thành điểm mạnh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

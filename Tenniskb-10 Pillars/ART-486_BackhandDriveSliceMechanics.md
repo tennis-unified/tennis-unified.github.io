@@ -40,3 +40,10 @@ Players who struggle with core strength often benefit from working with a fitnes
 
 ## Practical Application: "The Core Routine"
 Perform a core workout 2-3 times per week, including planks, side planks, rotational medicine ball throws, cable twists, Russian twists, and bicycle crunches. Focus on quality over quantity, ensuring proper form for each exercise. Track your backhand power and stability over time to ensure the core program is producing the desired results.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 9: Mặt Trước Sâu — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch09-mat-truoc-sau.html) — *Deep Front Line: core postural axis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

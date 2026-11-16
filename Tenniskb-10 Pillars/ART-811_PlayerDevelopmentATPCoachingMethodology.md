@@ -157,3 +157,10 @@ Implement a standardized post-match recovery protocol:
 | Fatigue in third sets of consecutive-day matches | Insufficient sleep, poor hydration practices | Performance decline in later matches | Sleep hygiene education; hydration monitoring; strategic recovery sessions |
 | Slow recovery between tournaments | Limited regeneration practices, poor sleep quality | Reduced training quality, burnout risk | Introduce active recovery methods; sleep optimization; wellness monitoring |
 | Chronic low energy levels | Poor nutrition, overtraining, inadequate sleep | Reduced training capacity, motivation loss | Nutritional assessment; training load review; sleep quality intervention |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -58,3 +58,10 @@ The risk of simultaneous turn-and-step is that the unit turn begins from an unst
 ## Practical Application: "The Pressure Clock"
 
 Have a partner feed balls at progressively faster intervals, forcing you to compress your preparation. Start at a comfortable pace, then reduce the interval by 10 percent each round. Focus on maintaining the three essential elements (ground force, hip-shoulder separation, and wrist lag) even as you abbreviate the unit turn and backswing. This drill develops the ability to maintain shot quality under increasing time pressure.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

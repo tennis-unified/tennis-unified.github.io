@@ -65,3 +65,10 @@ Giá trị của ốc hoàn toàn nằm trong trình tự:
 ## Ứng Dụng Thực Tế: "Cuộn Hông, Không Phải Chân"
 
 Hãy cho người chơi một câu: **chân là đai Ốc, chậu là ốc — xoay ốc.** Ở buổi tập tiếp theo, dành năm phút cho bài tập cuộn tường: chân ngoài đổ gần tường, một tay trên tường để cân bằng, mười lần xoay chậu chậm ra khỏi chân đổ cho đến khi cảm giác kéo mông sâu là không thể nhầm lẫn. Sau đó cầm vợt: mười cú vung bóng forehand tư thế mở nửa tốc độ với huấn luyện viên chỉ theo dõi hai thứ — giày (yên) và đầu gối (xếp trên ngón chân). Chỉ sau đó đánh bóng ném bỏng, cảm nhận cảm giác hông được cuộn trước mỗi cú vung. Trong một buổi tập đơn, hầu hết người chơi báo cáo forehand "tự đi" — dấu hiệu của ốc cuối cùng được cuộn trước khi phát.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+<!-- TAICHIKB-CROSSREF-END -->

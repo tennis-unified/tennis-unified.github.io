@@ -140,3 +140,10 @@ HRV measures the variation in time between consecutive heartbeats (R-R intervals
 | HRV does not rebound after rest day | Insufficient recovery time, excessive load | Persistent fatigue | Additional rest day; reduce weekly load |
 | HRV varies widely day-to-day | Inconsistent measurement, lifestyle factors | Unreliable data | Standardize measurement protocol; control lifestyle factors |
 | HRV declining over weeks | Accumulating fatigue, approaching overtraining | Performance decline, injury risk | Reduce training load; build in recovery week |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -52,3 +52,10 @@ Once a stroke is learned, avoid thinking about its mechanics during play. Consci
 
 ## Practical Application: "The Automatization Check"
 Periodically assess the automation level of each stroke. Can you execute it while holding a conversation? Can you execute it while thinking about tactics? Can you execute it under pressure? If the answer to any of these is "no," that stroke needs more practice to reach full automation. Focus your practice on the strokes that fail the automatization check, and trust the ones that pass to perform without conscious attention.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+<!-- TAICHIKB-CROSSREF-END -->

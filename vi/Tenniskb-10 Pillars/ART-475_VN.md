@@ -52,3 +52,10 @@ Những người chơi gặp khó khăn trong nhà thường được lợi từ
 ## Ứng Dụng Thực Tế: "Buổi Tập Trong Nhà"
 
 Hãy tập backhand trên sân trong nhà, tập trung vào chuẩn bị nhanh, cú vung gọn và khả năng theo dõi bóng. Theo dõi số cú đánh đúng và số cú tạo ra kết quả tốt. Bài tập này phát triển các kỹ năng cần thiết cho việc chơi trong nhà hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

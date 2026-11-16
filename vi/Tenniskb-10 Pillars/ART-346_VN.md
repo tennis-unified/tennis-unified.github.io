@@ -50,3 +50,10 @@ Các vận động viên đỉnh cao điều chỉnh thời điểm xoay cẳng 
 ## Ứng Dụng Thực Tế: "Cảm Giác Xoay Cẳng Tay"
 
 Thực hành chuyển động xoay cẳng tay độc lập bằng cách cầm vợt bằng tay thuận và xoay cẳng tay từ lòng bàn tay hướng lên (đảo cẳng tay) sang lòng bàn tay hướng xuống (xoay cẳng tay trong). Chú ý cách mặt vợt thay đổi hướng trong quá trình xoay này. Trong cú vung tới của bạn, tập trung vào cảm giác xoay cẳng tay diễn ra tự nhiên khi cánh tay bạn tăng tốc qua vùng chạm. Mục tiêu là đồng bộ thời điểm đỉnh xoay cẳng tay tại điểm chạm để đạt lực và kiểm soát góc mặt vợt tối đa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

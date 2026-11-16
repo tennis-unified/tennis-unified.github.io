@@ -56,3 +56,10 @@ Tường tập luyện là một công cụ quý giá để phát triển kỹ t
 ## Ứng Dụng Thực Tế: "Mỗi Lần Lặp Lại Đều Quan Trọng"
 
 Khi tập luyện với tường, hãy coi mỗi cú volley như thể đó là một điểm quyết định. Tập trung vào kỹ thuật, tiếp xúc sạch và sự ổn định. Những lần lặp lại xây dựng sự nhớ cơ bắp được chuyển hóa lên sân.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

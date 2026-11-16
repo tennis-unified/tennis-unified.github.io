@@ -60,3 +60,10 @@ Người chơi gặp khó khăn với tư thế mở thường được lợi t�
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Xoay Hông"
 Trong lúc tập luyện, nhờ bạn đồng hành quan sát backhand tư thế mở của bạn từ phía sau. Họ cần kiểm tra xem hông bạn có xoay về phía lưới trong quá trình đánh về phía trước không. Nếu vai bạn xoay nhưng hông vẫn cố định, bạn đang không sử dụng thân hiệu quả. Tập cú đánh chậm rãi, tập trung vào xoay hông, cho đến khi nó trở thành bản năng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

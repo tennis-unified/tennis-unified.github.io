@@ -142,3 +142,10 @@ Trước trận đấu tiếp theo, hãy viết ra ba quy tắc nếu-thì đơn
 3. "Nếu tôi dưới áp lực, thì tôi sẽ đánh cao và sâu để reset pha bóng."
 
 Ba quy tắc này, được thực hành cho đến khi tự động, sẽ hướng dẫn việc ra quyết định của bạn mà không tiêu thụ bộ nhớ làm viểc quý giá. Khi áp lực gia tăng, hãy dựa vào những quy tắc đơn giản này thay vì cố gắng phân tích mọi lựa chọn. Sự đơn giản dưới áp lực không phải là sự đơn giản của tư duy — nó là kết quả của việc chuẩn bị kỹ lưỡng cho phép các quyết định tự động, chất lượng cao khi tài nguyên nhận thức bị giới hạn nhất.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

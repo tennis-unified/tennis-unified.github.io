@@ -68,3 +68,10 @@ Người chơi nên đưa các bài tập này vào buổi luyện tập thườ
 
 ## Ứng Dụng Thực Tế: "Cú Slice Hồi Phục"
 Nhờ đồng đội đánh những quả bóng tấn công dữ dội về phía backhand của bạn. Luyện tập đánh các cú slice phòng ngự và lập tức hồi phục về tư thế chuẩn bị. Tập trung tạo ra cú slice cao, lơ lửng nhằm giành thời gian hồi phục. Hãy đếm xem bạn đã kịp vào đúng vị trí bao nhiêu lần cho cú đánh tiếp theo. Theo dõi sự tiến bộ qua từng buổi tập để đảm bảo slice phòng ngự phát huy hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

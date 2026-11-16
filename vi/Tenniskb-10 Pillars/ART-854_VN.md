@@ -201,3 +201,10 @@ Chuyển tiếp từ quần vợt đại học sang chuyên nghiệp đại di�
 | Khó điều chỉnh với cạnh tranh cá nhân | Phụ thuộc quá nhiều vào hỗ trợ đội, tự quản lý kém | Cách ly, giảm thành tích | Phát triển kỹ năng tự huấn luyện; huấn luyện hiệu suất tâm lý; xây dựng mạng lưới hỗ trợ |
 | Căng thẳng tài chính ảnh hưởng thành tích | Thiếu tài trợ, ngân sách kém | Giảm tập trung, rút lui sớm | Tìm thêm nguồn tài trợ; tối ưu hóa chi tiêu; hỗ trợ từ liên đoàn quốc gia |
 | Không thể cạnh tranh ở cấp độ Challenger | Khoảng trống kỹ thuật hoặc thể lực bị lộ | Mất động lực, giảm xếp hạng | Chương trình phát triển có mục tiêu; quay lại Futures để xây dựng tự tin |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Hệ thống năng lượng cho thể lực quần vợt*
+- [Chương 10: Mô Cơ (Muscular Tissue)](https://taichikb.github.io/vi/books/tortora_ap/ch10-mo-co.html) — *Sinh lý mô cơ và cơ chế co cơ*
+<!-- TAICHIKB-CROSSREF-END -->

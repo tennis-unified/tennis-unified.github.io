@@ -244,3 +244,10 @@ Create a pocket-sized card with the pre-match routine:
 | Nerves affecting performance | Insufficient mental preparation, anxiety | Reduced performance, choking | Mental preparation techniques; breathing; visualization; confidence building |
 | Lack of focus at match start | Insufficient mental warm-up | Unforced errors, poor decision-making | Mental warm-up routine; focus cue development; present-moment training |
 | Inconsistent performance across matches | Inconsistent preparation, variable routines | Unpredictable results | Standardize the pre-match routine; practice consistently; track preparation quality |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

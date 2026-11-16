@@ -66,3 +66,10 @@ The diagnostic question for video: did the knees and hips do the yielding, or th
 ## Practical Application: "Bend the Joints, Not the Spine"
 
 Give the returner one sentence: **the ball pushes you back through your joints, never through your back.** At the next session, open with med-ball catch-and-cushion — ten firm throws caught and decelerated along the shot line, trunk still — until the sequenced give feels deliberate. Then run the pace ladder from 50% to full, every ball blocked to a deep target, the coach watching only the spine: tall through contact or not. End with the freeze-frame audit on three full-pace returns: the player sees their own knee flexion increasing while head height holds. The player who can absorb a heavy ball with a quiet spine has converted their opponent's greatest weapon into borrowed pace — the quietest form of counterattack in the sport.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

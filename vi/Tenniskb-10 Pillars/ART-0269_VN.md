@@ -49,3 +49,10 @@ Thực hành tín hiệu tập trung bên ngoài trong tình huống áp lực. 
 
 ## Ứng Dụng Thực Tế: "Tín Hiệu Bên Ngoài"
 Thay thế mọi tín hiệu kỹ thuật nội tại bằng tương đương bên ngoài. Thay vì "giữ khuỷu tay cao," hãy nghĩ "cọ lên trên bóng." Thay vì "follow-through về phía mục tiêu," hãy nghĩ "đánh bóng sâu." Thay vì "xoay vai," hãy nghĩ "đánh bóng chéo sân." Thực hành các tín hiệu bên ngoài này cho đến khi chúng trở nên tự động. Sự chuyển dịch đơn giản này trong sự chú ý chú ý tạo ra học tập vận động và hiệu suất vượt trội, cả trong thực hành lẫn dưới áp lực thi đấu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

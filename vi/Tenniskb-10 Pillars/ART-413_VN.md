@@ -60,3 +60,10 @@ Người chơi nên tập thay đổi cú xoay vai trong các bài tập, đánh
 
 ## Ứng Dụng Thực Tế: "Bài Tập Giữ Lực Cuộn"
 Tập kéo vợt lùi backhand và giữ tư thế cuộn trong hai giây. Cảm nhận sức căng trong cơ lõi và vai. Sau đó thực hiện cú vung vợt về phía trước, tập trung vào việc giải phóng lực cuộn một cách mượt mà. Bài tập này rèn luyện việc duy trì lực cuộn và truyền năng lượng mượt mà từ lúc kéo vợt lùi đến lúc vung vợt về phía trước.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+<!-- TAICHIKB-CROSSREF-END -->

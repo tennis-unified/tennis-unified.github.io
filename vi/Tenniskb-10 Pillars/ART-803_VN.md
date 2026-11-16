@@ -102,3 +102,10 @@ Tiến triển này đảm bảo nền tảng kỹ thuật vững chắc trướ
 | Tay trước suy giảm dưới áp lực | Chuẩn bị kém, điểm tiếp xúc muộn | Lỗi trên bóng nhanh hoặc trong các điểm quan trọng | Tập tín hiệu chuẩn bị sớm: xoay khi bóng qua lưới |
 | Không thể đánh bóng cao hiệu quả | Cách cầm quá cực (Western), hoặc thiếu tập trên bóng cao | Bỏ lỡ cơ hội trên bóng cao phòng thủ | Tập cấp bóng cao ngang vai; xem xét điều chỉnh cách cầm về Semi-Western |
 | Tay trước quá dễ đoán | Đường vung đơn nhất, không biến thể chiến thuật | Đối thủ có thể dự đoán và phản công | Phát triển 3 số tay trước: xoáy nặng, drive và flat |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

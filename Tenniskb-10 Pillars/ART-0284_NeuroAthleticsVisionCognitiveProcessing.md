@@ -64,3 +64,10 @@ Effective self-talk is short and simple: "watch the ball," "smooth," "come on." 
 
 ## Practical Application: "The Self-Talk Script"
 Develop a personal self-talk script for different situations: (1) before points: "smooth and aggressive," (2) during points: "watch the ball," (3) after errors: "next point, reset," (4) during changeovers: "I can do this." Practice this script during training until it becomes automatic. During matches, use these scripted self-talk phrases to maintain optimal internal dialogue, regardless of the situation. This scripted approach to self-talk prevents the negative, unproductive internal dialogue that undermines performance and ensures that your mind is always working for you, not against you.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+<!-- TAICHIKB-CROSSREF-END -->

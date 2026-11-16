@@ -46,3 +46,10 @@ Common footwork errors include arriving at the ball too late (poor anticipation)
 
 ## Practical Application: "Small Steps, Big Advantage"
 Dedicate 15 minutes of every practice session to footwork-specific drills. Begin with split-step practice: have a partner hit balls to either side while you focus on timing your split-step to land exactly when the racket meets the ball. Progress to crossover and side shuffle patterns, emphasizing quality over quantity. Film your footwork during practice sets and compare it to elite player footage. Count your steps per rally and look for opportunities to reduce unnecessary movement. The goal is not to move more, but to move better — fewer steps, better positioning, and earlier preparation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

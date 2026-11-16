@@ -211,3 +211,10 @@ Tổng thời gian: 15 phút. Thực hiện 3-4 lần mỗi tuần.
 | Đau lower back trong giao bóng | Ổn định core kém, duỗi thắt lưng quá | Đĩa đệm, căng cơ | Chương trình ổn định core; bài chống duỗi; xem xét kỹ thuật |
 | Đau đầu gối trong nhảy | Quadriceps yếu, cơ chế hạ cánh kém | Patellar tendinopathy | Tăng cường quad; chương trình squat eccentric; cơ chế hạ cánh |
 | Mắt cá chân không ổn định | Proprioception kém, ổn định yếu | Sprain mắt cá chân lặp lại | Huấn luyện thăng bằng; bài proprioceptive; tăng cường mắt cá chân |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

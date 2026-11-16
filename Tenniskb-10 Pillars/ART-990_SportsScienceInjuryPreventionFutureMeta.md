@@ -176,3 +176,10 @@ Nonlinear pedagogy is an approach that:
 ## Practical Application: "Learn by Playing"
 
 The next time you have a practice session, spend 80% of the time playing modified games and only 20% on isolated technical work. Create games with specific constraints: "You can only score if you approach the net," or "The court is only half-width — control the center." These games develop the same technical skills as basket drilling, but with perception, decision-making, and consequences included. You will learn faster, retain more, and transfer better to match play. The old saying is true: "The game is the best teacher" — but only when the practice environment truly represents the game.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

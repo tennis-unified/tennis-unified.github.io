@@ -44,3 +44,10 @@ Khoảng cách 90 giây là một cách nâng cao hơn để cải thiện đi�
 
 ## Ứng Dụng Thực Tế: "Điều Kiện Anaerobic Hoàn Chỉnh"
 Vận động viên nên cảm nhận rằng họ là "hoàn chỉnh" và tích hợp với Hệ Thống 5 Cột Trụ. Vận động viên nên cảm nhận rằng các hệ thống sinh cơ học, thần kinh và chiến thuật đang hoạt động cùng nhau một cách hài hòa. Đây là mục tiêu cuối cùng của Hệ Thống 5 Cột Trụ: tạo ra một vận động viên hoàn chỉnh, tích hợp, thực hiện một cách không gắng sức ở tiềm năng đỉnh cao của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Hệ ATP-PCr và đường phân kỵ khí cho loạt bóng cường độ cao*
+- [Chương 13: Chương 13: Khởi Phát và Mỏi Cơ – Hậu Quả của Việc Kích Hoạt Cơ Lặp Lại — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch10.html) — *Tích lũy lactate và mỏi cơ cường độ cao*
+- [Chương 10: Mô Cơ (Muscular Tissue)](https://taichikb.github.io/vi/books/tortora_ap/ch10-mo-co.html) — *Năng lượng học sợi cơ co nhanh (Type II)*
+<!-- TAICHIKB-CROSSREF-END -->

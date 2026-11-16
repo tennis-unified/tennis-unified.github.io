@@ -61,3 +61,10 @@ When an opponent realizes you have recognized their pattern, they may become sel
 
 ## Practical Application: "The Pattern Log"
 Keep a mental (or written) pattern log during matches. After each game, note any patterns you observed: "Opponent serves wide 80% on deuce court," "Always cross-courts after a deep ball," "Approaches net after short slice." Review this log during changeovers and adjust your strategy accordingly. This systematic approach to pattern recognition transforms vague opponent awareness into concrete tactical intelligence.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -184,3 +184,10 @@ Vận động viên trưởng thành muộn phải có chiến lược trong vi�
 | Tiến trình xếp hạng chậm | Chọn giải đấu kém, thi đấu không đủ | Thất vọng, mất động lực | Tối ưu hóa lựa chọn giải đấu; tăng số sự kiện; nhắm đối thủ yếu hơn |
 | Chấn thương do tăng huấn luyện nhanh | Huấn luyện quá sức, phục hồi không đủ | Mất thời gian, trở ngại | Tăng tải dần dần; ưu tiên phục hồi; tập trung phòng ngừa chấn thương |
 | Khó cạnh tranh với trẻ em có kinh nghiệm | Khoảng trống nhận dạng mẫu, thiếu trưởng thành chiến thuật | Lỗi chiến thuật, thất vọng | Giáo dục chiến thuật tăng tốc; thực hành phân tích đối thủ; mô phỏng trận đấu |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Hệ thống năng lượng cho thể lực quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

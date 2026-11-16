@@ -49,3 +49,10 @@ Incorporate 10 minutes of visual training into your daily routine. Begin with ba
 
 ## Practical Application: "Train Your Eyes, Transform Your Game"
 Incorporate 10 minutes of visual training into your daily routine. Begin with ball tracking exercises: have a partner throw a ball against a wall from various distances while you track it without moving your head. Progress to stroboscopic training if equipment is available. Practice the quiet eye by fixing your gaze on a specific point (such as the seam on a ball) for 2 seconds before hitting a groundstroke. During match play, consciously focus on reading your opponent's body position and racket angle rather than just watching the ball. Your eyes are your most important tennis tool, train them like you train your muscles.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Sensorimotor integration & motor control*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+<!-- TAICHIKB-CROSSREF-END -->

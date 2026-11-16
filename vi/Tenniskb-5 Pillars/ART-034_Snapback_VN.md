@@ -43,3 +43,9 @@ Lượng xoáy tạo ra phụ thuộc vào sự tương tác của ba yếu tố
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Lật Ngón"
 Cảm giác tạo ra độ xoáy không phải là một cú "đẩy" hay "quét", mà là một cú "lật" hoặc "giật" nhanh tại điểm tiếp xúc. Người chơi nên cảm nhận rằng dây "bắt" quả bóng trong một phần giây và sau đó "kéo" nó xuống dưới. Đây chính là biểu hiện vật lý của cơ chế bật trở lại.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Ma sát tiếp tuyến và lực tiếp xúc*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ chế tạo xoáy lên và ma sát tiếp tuyến*
+<!-- TAICHIKB-CROSSREF-END -->

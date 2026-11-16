@@ -82,3 +82,10 @@ Thực hành chuyển động giao bóng không bóng, tập trung vào cảm gi
 ## Ứng Dụng Thực Tế: "Cảm Giác Vung Khăn"
 
 Cuộn khăn thành hình trụ và thực hành chuyển động giao bóng, búng khăn tại điểm chạm. Khăn tự nhiên "lăn qua" thông qua pronation ở cuối vung. Cảm giác này — cảm giác mặt vợt xoay ra ngoài ở cuối cùng của chuyển động — là thời đo pronation đúng. Giao 20 bóng với vợt ngay sau bài tập khăn, tập trung vào sao chép cảm giác lăn đó tại điểm chạm.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

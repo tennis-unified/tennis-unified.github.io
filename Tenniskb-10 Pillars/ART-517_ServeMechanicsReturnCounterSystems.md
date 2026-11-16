@@ -94,3 +94,10 @@ Accept that some serves will be affected by gusts. Focus on controlling what you
 ## Practical Application: "The Wind Gauge Drill"
 
 During practice in windy conditions, hit 10 serves at your normal toss height and observe the results. Then hit 10 with a lower toss and 10 with a higher toss. Compare the consistency of each toss height. The toss height that produces the most consistent results becomes your default in those wind conditions. Repeat this drill each time you play in the wind until you develop an automatic feel for the correct toss adjustment.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

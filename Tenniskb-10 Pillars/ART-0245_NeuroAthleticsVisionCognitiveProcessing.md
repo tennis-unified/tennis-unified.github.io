@@ -50,3 +50,10 @@ Practice anticipating not just the shot direction but the opponent's movement af
 
 ## Practical Application: "The Geometric Read"
 Before each shot, perform a quick "geometric read": assess the spatial relationships between the ball, the opponent, and the court. Note the opponent's position relative to the baseline, the ball's position relative to the opponent, and the available angles. From these spatial relationships, predict the most likely shot direction. This geometric approach to anticipation uses the inherent structure of tennis to produce accurate predictions without relying on guesswork.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Sensorimotor integration & motor control*
+<!-- TAICHIKB-CROSSREF-END -->

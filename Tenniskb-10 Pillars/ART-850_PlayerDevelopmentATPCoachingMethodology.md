@@ -174,3 +174,10 @@ Hot weather significantly impacts tennis performance through increased core temp
 | Performance decline in heat | No heat preparation, dehydration | Fatigue, errors, potential withdrawal | Implement heat acclimatization; cooling strategies |
 | Heat exhaustion symptoms | Insufficient preparation, ignoring warning signs | Medical emergency, withdrawal | Recognize symptoms early; withdraw if necessary; medical support |
 | Slow recovery between points | Cardiovascular strain, dehydration | Cumulative fatigue | Hydration; cooling; tactical adjustments to shorten points |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Athletic nutrition & energy balance*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Tai Chi principles applied to tennis*
+<!-- TAICHIKB-CROSSREF-END -->

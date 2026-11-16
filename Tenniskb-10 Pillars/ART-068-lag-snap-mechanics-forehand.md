@@ -35,3 +35,10 @@ The lag position occurs when:
 
 ## Practical Application: "The Lag and Snap"
 To develop the lag and snap, practice the following drill: Start with your racket in the lag position (wrist extended, racket head behind your hand). Now swing forward, letting the racket head lag behind your hand for as long as possible. As your arm reaches full extension, allow the racket head to snap through, catching up to your hand and then passing it. The feeling should be of the racket head "whipping" through the ball. Practice this slowly at first, then gradually increase speed. The lag and snap are what give the modern forehand its explosive power.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Angular kinematics & sequential kinetic chain*
+<!-- TAICHIKB-CROSSREF-END -->

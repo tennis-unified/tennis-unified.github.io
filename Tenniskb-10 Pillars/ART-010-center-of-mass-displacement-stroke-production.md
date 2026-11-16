@@ -117,3 +117,10 @@ Exercises that train rapid COM re-centering after stroke production improve reco
 
 ## Practical Application: "The Pendulum Swing"
 Imagine your center of mass as a pendulum hanging from your shoulders. During the loading phase of a groundstroke, the pendulum swings backward and slightly downward—storing potential energy like a pendulum at the top of its arc. As you initiate the forward swing, the pendulum swings forward and upward—converting potential energy into kinetic energy. The key is that the pendulum swings in one smooth, continuous motion: back during loading, forward during the swing. Practice this without a ball: assume your ready position, then slowly load (feeling your COM shift back) and swing (feeling your COM shift forward). The motion should feel like a smooth pendulum arc, not a jerky, segmented movement. Once you can feel this continuous COM transfer, add the ball. Your groundstrokes will gain power not from muscular effort alone but from the momentum of your entire body swinging forward through the ball—just like a pendulum releasing its stored energy at the bottom of its arc.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

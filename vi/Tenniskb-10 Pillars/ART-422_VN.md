@@ -65,3 +65,10 @@ Cầm tay Continental cho phép chuyển đổi nhanh sang volley và overhead v
 
 ## Ứng Dụng Thực Tế: "Bài Kiểm Tra Lướt Trượt"
 Đánh mười cú slice backhand vượt lưới, tập trung vào việc tạo ra cú nả bắn, lướt trượt thấp. Sau mỗi cú đánh, ghi nhận xem bóng có ở dưới độ cao lưới sau khi nả không. Nếu bóng nả cao, mặt vợt hở quá hoặc đường swing quá dốc. Điều chỉnh cho đến khi ít nhất bảy trong số mười cú lướt thấp, xây dựng cảm giác cho cú slice tấn công.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

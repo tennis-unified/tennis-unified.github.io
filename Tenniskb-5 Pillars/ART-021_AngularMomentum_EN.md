@@ -37,3 +37,9 @@ Just before impact, the arm and wrist execute a precise "tucking" motion. The ra
 
 ## Practical Application: The "Figure-Skater" Effect
 Think of a figure skater spinning. When they pull their arms in, they spin faster. A tennis player does the same with the racket: they build momentum with a wide arc and "pull in" the radius to explode into the ball.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Conservation of angular momentum & moment of inertia*
+- [Phân Tích Động Học Vận Động Con Người — Chương 4 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/kinematic-analysis-human-movement/ch04.html) — *Angular kinematics of multi-segment motion*
+<!-- TAICHIKB-CROSSREF-END -->

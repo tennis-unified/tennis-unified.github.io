@@ -65,3 +65,10 @@ Thực hiện 3-4 lần mỗi tuần:
 | Bong gân cổ chân | Cảm giác vị trí kém, cơ ổn định yếu | Bong gân tái phát | Huấn luyện thăng bằng; củng cố cổ chân; bài tập cảm giác vị trí |
 | Gối valgus khi di chuyển | Công hạ yếu, kiểm soát kém | Chấn thương gối | Đi bước ngang với dây kháng lực; bài tập một chân; tái huấn luyện di chuyển |
 | Đau gân gót | Cơ bắp chân chắt, thiếu sức mạnh nghịch lực | Viêm gân gót | Hạ ngân nghịch lực; giãn cơ bắp chân; tăng tải từ từ |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

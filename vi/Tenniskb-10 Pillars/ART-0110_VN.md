@@ -84,3 +84,10 @@ Cho người chơi một hình ảnh: **bước đầu tiên là cuộc đua ch�
 3. **Bước đầu tiên trực tiếp.** Từ hạ chân bước phân chia, người chơi bùng nổ vào bước đầu tiên — không lắp bắp, không dịch, không xây dựng. Huấn luyện viên quay và chấm dòng thời gian: hạ chân đến tiếp xúc bước di chuyển đầu tiên phải 150-200 ms.
 
 Người chơi phá quán tính nhanh không chạy nhanh hơn — họ bắt đầu nhanh hơn, và khởi đầu là khoảng cách giữa cú tấn công và cú phòng thủ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Cơ học co cơ: lệch tâm/đồng tâm và lực–vận tốc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

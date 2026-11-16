@@ -125,3 +125,10 @@ Exercises that develop the timing of segmental deceleration and acceleration:
 
 ## Practical Application: "The Crack of the Whip"
 The crack of a whip occurs when the whip's tip exceeds the speed of sound, creating a sonic boom. This happens because the whip's angular momentum is conserved as its moment of inertia decreases—the whip's mass concentrates toward the handle as the wave travels down its length, and the tip's velocity increases dramatically. Your tennis stroke works the same way. Practice by holding a towel by the handle and cracking it: notice how the wave travels from your hand to the towel's tip, accelerating as it goes. Now perform a groundstroke with the same feeling: the wave starts in your legs, travels through your hips, trunk, shoulder, and arm, and "cracks" at the racket head. The key is that each segment must decelerate (transfer its momentum) as the next segment accelerates. If you try to maintain speed in your arm while your trunk is still accelerating, you'll waste the momentum transfer. Let the trunk decelerate to accelerate the arm; let the arm extend to accelerate the racket. The crack of the whip—that final snap of speed—is the reward for perfect timing.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Linear kinetics, GRF & impulse-momentum*
+<!-- TAICHIKB-CROSSREF-END -->

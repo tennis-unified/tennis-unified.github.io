@@ -68,3 +68,10 @@ Việc huấn luyện bao gồm:
 ## Ứng dụng Thực tiễn: "Bài tập Quất roi"
 
 Thực hành búng cổ tay bằng cách giữ vợt ở tư thế chuẩn bị với cổ tay hoàn toàn nong (cúi ra sau). Vung về phía trước, cố ý duy trì tư thế nong này cho đến khoảnh khắc cuối cùng, sau đó búng cổ tay về phía trước như bạn đang quất roi. Tập trung vào cảm nhận đầu vợt "bắt kịp" bàn tay tại điểm chạm. Cảm giác quất này chính là búng cổ tay — bổ sung tốc độ và xoáy đáng kể cho forehand của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

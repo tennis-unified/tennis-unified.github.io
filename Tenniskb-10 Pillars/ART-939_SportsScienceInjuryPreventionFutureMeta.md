@@ -139,3 +139,10 @@ Perform this routine daily (10-15 minutes) based on your FMS results. It address
 6. **Pallof press** (2 minutes): 10 repetitions per side, 10-second hold each repetition.
 
 This routine takes approximately 12 minutes and addresses the movement patterns most relevant to tennis. Perform it before training or as a standalone session on rest days. Re-test the FMS every 4-6 weeks to track your progress. When your scores improve, your movement quality improves — and with it, your performance and injury resilience.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -124,3 +124,10 @@ This means anti-inflammatory treatments (cortisone, NSAIDs) address symptoms but
 ## Practical Application: "Load the Tendon Wisely"
 
 Tendons respond to load — they need progressive stress to adapt and strengthen. If you've never experienced tennis elbow, begin a preventive eccentric loading program: hold a 2-pound weight, rest your forearm on a table with your wrist hanging over the edge, use your other hand to lift your hand into extension, then slowly lower it over 5 seconds. Three sets of 15 daily is enough to condition the ECRB against future overload. Prevention is infinitely easier than rehabilitation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Elbow, forearm pronation & wrist mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

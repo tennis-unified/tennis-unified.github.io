@@ -70,3 +70,10 @@ Hãy đưa người chơi một hình ảnh duy nhất: **split step là một c
 3. **Cú hạ người đã hiệu chỉnh.** Trong các bài cho bóng trực tiếp, người chơi hạ người trước mọi cú đánh của đối thủ và chỉ nhảy khi bóng nặng, cao hoặc chậm. Quay video ngang và chấm điểm: trọng tâm chỉ nên nhích lên không quá 5-10 cm, và cú đáp phải nhẹ nhàng.
 
 Người chơi hạ người thay vì nhảy không hề bước chân đầu tiên nhanh hơn — họ đơn giản là không bao giờ mất 100-150 ms mà những người thích nhảy bỏ phí trong mỗi pha bóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Tập luyện plyometric và chu kỳ SSC*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

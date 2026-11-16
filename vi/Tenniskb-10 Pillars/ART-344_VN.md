@@ -66,3 +66,10 @@ Việc luyện tập đầu vợt rơi bao gồm:
 ## Ứng Dụng Thực Tế: "Rơi Và Vươn"
 
 Thực hành đầu vợt rơi bằng cách giữ vợt ở tư thế chuẩn bị với đầu vợt cao hơn điểm chạm. Thả đầu vợt xuống mức đầu gối, sau đó tăng tốc vươn lên thông qua điểm chạm tưởng tượng. Động tác rơi-và-vươn phóng đại này phát triển mô thần kinh vận động cho quỹ đạo vung thấp lên cao. Dần dần giảm độ sâu rơi về phạm vi tối ưu 0,3 đến 0,8 mét khi cử động trở nên tự động.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

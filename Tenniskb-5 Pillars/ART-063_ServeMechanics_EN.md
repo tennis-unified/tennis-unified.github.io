@@ -44,3 +44,10 @@ The biomechanical sequence is the series of movements that allow for maximum pow
 
 ## Practical Application: The "Complete Serve"
 The athlete should feel that the serve is "complete" and integrated with the kinetic chain. The athlete should feel that the energy is flowing from the ground, through the core, and out through the racket. This is the ultimate goal of the 5-Pillar System: to create a complete, integrated athlete who performs effortlessly at their peak potential.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Serve biomechanics & trophy-to-pronation sequence*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Glenohumeral internal shoulder rotation (ISR) & scapular tilt*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Forearm pronation at the radioulnar joints*
+<!-- TAICHIKB-CROSSREF-END -->

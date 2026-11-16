@@ -73,3 +73,10 @@ Two rules keep transitions seamless. First, **soft commitment**: weight never fu
 ## Practical Application: "Own the Ladder"
 
 At the next session, film 20 forehands from behind and classify each by hip line. Most players discover a missing zone — usually semi-open. Spend 15 minutes on the three-lane drill with the missing lane fed twice as often, then finish with a stance-call rally in which the player self-reports the zone used on every ball. Re-film in two weeks. The target is not a perfect distribution; it is that no zone surprises the player, because a stance that must be manufactured under pressure has already cost the 200 ms it was meant to save.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Mindfulness & flow state in sport*
+<!-- TAICHIKB-CROSSREF-END -->

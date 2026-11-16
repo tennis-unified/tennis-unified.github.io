@@ -56,3 +56,10 @@ Elite players develop the ability to vary their backswing path within a single p
 ## Practical Application: "The Two Paths Drill"
 
 Practice alternating between loop and straight backswings on consecutive shots. Start with a slow ball and use the loop, focusing on the feeling of the racquet dropping below the contact height before rising to the set position. On the next ball, use the straight path, keeping the racquet at contact height throughout. This alternation develops the motor programs for both paths and the ability to select the appropriate one based on the situation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -52,3 +52,10 @@ Excessive grip pressure throughout the stroke—common among recreational player
 ## Practical Application: "The Hammer Fingers"
 
 To feel the correct semi-western grip and wrist loading, hold the racquet as if you are holding a hammer about to strike a nail, but with your hand shifted slightly behind the handle. The wrist should be able to cock freely back and forth without the racquet face changing orientation relative to your palm. Practice the stroke focusing on the sensation of the racquet head "catching up" to the hand at contact, like the head of a hammer arriving after the handle has begun its forward motion.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -40,3 +40,10 @@ Topspin generation requires a specific combination of racket path (low-to-high),
 
 ## Practical Application: "The Windshield Wiper"
 The windshield wiper motion—where the racket moves from low-to-high and the face rotates from closed to open—is the key to modern topspin. Practice this by holding your racket in front of you and moving it from your right hip (for a right-handed forehand) up to your left shoulder, rotating the face from closed to open as you go. This windshield wiper motion generates heavy topspin while maintaining forward momentum. The key is that the face starts closed and ends open, brushing up the back of the ball.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+<!-- TAICHIKB-CROSSREF-END -->

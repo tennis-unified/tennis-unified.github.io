@@ -58,3 +58,10 @@ Trở lại thói quen trước cú đánh. Sự quen thuộc của thói quen c
 
 ## Ứng Dụng Thực Tế: "Giao Thức Nghẹn Thở"
 Khi nhận ra dấu hiệu nghẹn thở (căng thẳng, suy nghĩ quá nhiều, lo âu), kích hoạt giao thức nghẹn thở: (1) thừa nhận lo âu không phán xét, (2) hít một hơi thở có ý thức để khôi phục nhận thức hiện tại, (3) đơn giản hóa kế hoạch trận cho cú đánh tiếp theo, (4) sử dụng thói quen trước cú đánh để khôi phục cấu trúc, (5) tập trung vào tín hiệu quá trình ("nhìn bóng") thay vì suy nghĩ kết quả. Giao thức này ngắt chu trình nghẹn thở và khôi phục xử lý tự động, cho phép bạn thực hiện ở trình độ đã tập luyện bất chấp áp lực.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

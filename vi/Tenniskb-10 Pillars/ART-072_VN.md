@@ -70,3 +70,10 @@ Rò rỉ năng lượng trong chuỗi động học tennis xảy ra ở các mô
 
 ## Ứng Dụng Thực Tế: "Phát Hiện Rò Rỉ"
 Quan sát người chơi thực hiện các cú đánh đáy sân và quét tâm trí từng khớp nối chuỗi động học để tìm các mô hình rò rỉ phổ biến được mô tả ở trên. Tại mỗi khớp, hãy hỏi: Đoạn này có đóng góp đầy đủ không? Thời điểm có đúng không? Bất kỳ câu trả lời " không " nào chỉ ra rò rỉ năng lượng cần giải quyết. Hãy bắt đầu từ mặt đất và làm việc lên trên — sửa rò rỉ kết nối mặt đất thường cải thiện toàn bộ chuỗi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

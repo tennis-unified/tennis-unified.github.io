@@ -60,3 +60,10 @@ Người chơi nên kết hợp các bài tập này vào lịch tập luyện t
 
 ## Ứng Dụng Thực Tế: "Bài Tập Bóng Cao"
 Hãy nhờ một người bạn ném bóng nảy cao vào phía tay ngược của bạn. Tập luyện lùi lại, hạ thấp người và đánh nhiều cú đánh khác nhau dựa trên độ cao và vị trí của bóng. Theo dõi xem bạn có thể đánh bao nhiêu cú vào sân và bao nhiêu cú tạo ra kết quả tốt. Bài tập này phát triển thế đứng và kỹ thuật cần thiết để chơi hiệu quả trước bóng bay cao.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

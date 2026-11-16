@@ -121,3 +121,10 @@ Sau trận đấu, phân tích dữ liệu nhịp tim của bạn:
 - Chất lượng chuyển động của bạn có suy giảm ở ván thứ ba không? (Nếu có, bạn cần thêm thể lực — hoặc thêm phục hồi giữa các trận.)
 
 Thực hiện bài tập này mỗi 2-3 tuần trong mùa giải. Đây là bài kiểm tra cuối cùng về thể lực tennis của bạn — và chuẩn bị tốt nhất cho nhu cầu thể chất và tinh thần của cạnh tranh. Người chơi có thể duy trì tốc độ, sức mạnh và ra quyết định ở ván thứ ba của trận đấu năm ván là người chiến thắng những trận sát nút.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Hệ thống năng lượng cho thể lực quần vợt*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -43,3 +43,10 @@ Sử dụng cách cầm vợt quá mềm (bóng trượt khỏi vợt). Sử d�
 ## Ứng Dụng Thực Tế: "Cầm Chặt, Chặn Bóng, Đặt Điểm"
 
 Trước đường trả bóng thẳng: (1) cầm vợt chắc, (2) chặn bóng, (3) tập trung vào điểm rơi. Quả bóng thẳng có thể kiểm soát được với mặt vợt ổn định và kỹ thuật gọn gàng, ngắn gọn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

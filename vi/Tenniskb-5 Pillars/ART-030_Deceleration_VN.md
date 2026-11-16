@@ -36,3 +36,10 @@ Có một sự khác biệt quan trọng giữa giảm tốc được kiểm so�
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Chậm Lại"
 Sau khi quả bóng đã được đánh, vận động viên nên cảm nhận một quá trình "chậm lại" dần dần bắt đầu từ hông và lan lên vai. Nếu chuyển động dừng đột ngột tại vai, quá trình giảm tốc đang thất bại.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Giảm tốc lệch tâm của nhóm cơ chóp xoay sau*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Nhóm cơ chuỗi sau hãm phanh (chóp xoay, gân kheo)*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Giảm tốc sau tiếp xúc bóng và phòng ngừa chấn thương*
+<!-- TAICHIKB-CROSSREF-END -->

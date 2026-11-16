@@ -55,3 +55,10 @@ Cho thấy hữu hạn hợp lý, sử dụng các quy tắc quyết định đ�
 Phát triển khung ra quyết định cá nhân cho lựa chọn cú đánh: (1) xác định các lựa chọn cú đánh có sẵn, (2) ước lượng xác suất thành công cho mỗi lựa chọn, (3) chọn lựa chọn có giá trị kỳ vọng cao nhất, (4) thực thi với sự cam kết. Luyện tập khung này trong đào tạo cho đến khi nó trở nên tự động. Cách tiếp cận có cấu trúc này cho việc ra quyết định ngăn chặn các quyết định cảm xúc, có thiên kiến làm giảm hiệu suất và đảm bảo lựa chọn cú đánh của bạn dựa trên phân tích hợp lý thay vì xung động hoặc thói quen.
 
 (End of file)
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -183,3 +183,10 @@ Dựa trên dữ liệu Hawk-Eye:
 | Vị trí đón giao bóng kém hiệu quả | Không phân tích vị trí đón giao bóng, đứng yên tại chỗ | Chất lượng đón giao bóng kém | Phân tích vị trí đón giao bóng; điều chỉnh vị trí dựa trên dữ liệu giao bóng |
 | Mẫu hình pha bóng thiếu ổn định | Không phân tích cú đánh, lựa chọn cú đánh ngẫu nhiên | Lỗi chiến thuật, bỏ lỡ cơ hội | Phân tích vị trí cú đánh; phát triển mẫu hình; huấn luyện chiến thuật |
 | Không khai thác được điểm yếu đối thủ | Không trinh sát đối thủ | Bỏ lỡ cơ hội | Phân tích đối thủ bằng Hawk-Eye; xây dựng kế hoạch thi đấu |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

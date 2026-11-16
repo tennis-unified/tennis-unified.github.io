@@ -57,3 +57,10 @@ Another effective drill is angle awareness training: place a cone at the interse
 ## Practical Application: "Diagonal Dominance"
 
 When facing a net rusher, default to cross-court passing shots as your primary option (70% of the time). The diagonal distance gives you the most margin over the net and the longest court to aim for. Reserve down-the-line passes for when the net player is leaning toward the cross-court side. Practice hitting cross-court passes from different court positions to build confidence in this high-percentage pattern.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

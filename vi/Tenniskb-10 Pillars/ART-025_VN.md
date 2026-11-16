@@ -165,3 +165,10 @@ Bài tập tăng phạm vi chuyển động hông cho xoay:
 
 ## Ứng Dụng Thực Tế: "Cái Cửa Ngăn"
 Hãy tưởng tượng hông bạn là một cánh cửa và thân bạn là khung cửa. Cánh cửa (hông) phải đẩy mở trước, rồi khung cửa (thân) mới theo. Nếu khung cố di chuyển trước khi cánh cửa mở, chuyển động giật gãy và không hiệu quả. Thực hành bằng cách đứng chân cố định và chỉ xoay hông (giữ vai ổn định) — cảm nhận cánh cửa đẩy mở. Bây giờ xoay vai trong khi giữ hông ổn định — cảm nhận khung cửa di chuyển. Bây giờ kết hợp: để hông đẩy mở trước (xoay về phía đích), sau đó để vai tự nhiên theo. Đây là trình tự thời gian đúng cho xoay hông. Trong cú đánh nền, hãy tập trung cảm nhận hông đẩy mở (xoay về phía đích) trước khi vai theo. Hông dẫn đầu, vai theo sau. Thời gian "cái cửa ngăn" này là gì tạo ra xoay mượt, mạnh đặc trưng cú đánh nền hàng đầu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

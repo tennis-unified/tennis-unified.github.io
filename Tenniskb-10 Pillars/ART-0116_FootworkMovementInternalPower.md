@@ -96,3 +96,10 @@ Implement a landing-adaptation drill:
 3. **Phase 3 (Random).** The coach randomly alternates central and wide feeds. The player must read the trajectory during the hop and adjust the landing geometry accordingly. The coach scores landing accuracy (correct width for the trajectory) independent of shot outcome.
 
 Over weeks, the player builds an automatic mapping between visual trajectory and landing geometry. The landing stops being a habit and becomes a response — calibrated to the specific ball that is about to arrive.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+<!-- TAICHIKB-CROSSREF-END -->

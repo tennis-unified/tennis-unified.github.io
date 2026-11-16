@@ -117,3 +117,10 @@ Tạo một mẫu xem xét sau trận tiêu chuẩn hóa:
 | Thiên vị cảm xúc trong tự đánh giá | Phân tích được thực hiện quá sớm sau trận | Đánh giá không chính xác | Trì hoãn phân tích chi tiết cho đến khi cảm xúc nguội bớt; sử dụng video để khách quan |
 | Phân tích mà không có hành động | Phân tích được thực hiện nhưng không tích hợp vào huấn luyện | Lỗi lặp lại, không cải thiện | Yêu cầu can thiệp huấn luyện cụ thể cho mỗi vấn đề được xác định |
 | Phân tích quá tải | Quá nhiều vấn đề được xác định cùng lúc | Nhầm lẫn, thiếu tập trung | Giới hạn 2-3 vấn đề chính; ưu tiên những vấn đề có tác động lớn nhất |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

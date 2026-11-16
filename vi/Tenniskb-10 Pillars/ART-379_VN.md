@@ -74,3 +74,10 @@ Dây có kết cấu (dây có bề mặt nhám hoặc có hình dáng đặc bi
 ## Ứng Dụng Thực Tế: "Thử Nghiệm Dây"
 
 Thử nghiệm với các loại dây và độ căng khác nhau để tìm thiết lập tạo ra nhiều xoáy nhất cho cơ học swing của bạn. Nhờ huấn luyện viên hoặc thiết bị đo xoáy đánh giá tốc độ xoáy của bạn với từng thiết lập. Thiết lập tối ưu là thiết lập tạo ra tốc độ xoáy cao nhất trong khi duy trì khả năng kiểm soát ở mức chấp nhận được.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên phân đoạn*
+<!-- TAICHIKB-CROSSREF-END -->

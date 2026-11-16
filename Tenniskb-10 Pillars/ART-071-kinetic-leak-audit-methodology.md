@@ -48,3 +48,10 @@ Use objective measures to confirm observations:
 
 ## Practical Application: "The Audit Process"
 Perform a kinetic leak audit on yourself or your players by following the four-phase framework. Start with observation, then analyze each segment, then assess timing, and finally confirm with objective testing. Document your findings and design targeted interventions to address each identified leak. Regular audits (every 4-6 weeks) allow you to track progress and ensure that interventions are effective.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Angular kinematics & sequential kinetic chain*
+<!-- TAICHIKB-CROSSREF-END -->

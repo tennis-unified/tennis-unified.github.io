@@ -64,3 +64,10 @@ Thay thế giãn cơ tĩnh trước trận bằng khởi động động 15 phú
 ## Ứng Dụng Thực Tế: "Khởi Động Bằng Động, Phục Hồi Bằng Tĩnh"
 
 Thay thế giãn cơ tĩnh trước trận bằng khởi động động 15 phút bao gồm hoạt động hiếu khí, giãn cơ động và các chuyển động đặc thù thể thao. Sau mỗi trận đấu và buổi tập luyện, dành 10 phút cho giãn cơ tĩnh, giữ mỗi động tác giãn trong 30-60 giây. Thêm giãn cơ PNF 2-3 lần mỗi tuần để cải thiện linh hoạt có mục tiêu. Kết hợp xơ tròn vào thói quen hàng ngày, tập trung vào các nhóm cơ bị ảnh hưởng nhiều nhất bởi quần vợt. Hãy nhớ: giãn cơ đúng cách vào đúng thời điểm là công cụ mạnh mẽ cho hiệu suất và phục hồi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Hệ cơ: nhóm cơ chủ vận và ổn định*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Cơ học co cơ: lệch tâm/đồng tâm và lực–vận tốc*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

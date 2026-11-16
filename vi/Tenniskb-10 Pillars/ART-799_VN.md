@@ -57,3 +57,10 @@ Phương pháp theo dõi đơn giản bao gồm ghi chép thống kê phân tíc
 ## Ứng Dụng Thực Tế: "Thói Quen Giữa Các Điểm Dự Đoán Hiệu Suất"
 
 Bắt đầu theo dõi phân tích thói quen giữa các điểm và mô hình phục hồi trong 5 trận đấu tiếp theo của bạn. Sử dụng hệ thống kiểm đếm đơn giản trên thẻ ghi nhớ hoặc ứng dụng thống kê quần vợt. Sau mỗi trận, tính phần trăm và so sánh với mục tiêu của bạn (thường là 60% trở lên cho hầu hết chỉ số). Xác định tình huống cụ thể mà chỉ số giảm (cuối set, sau pha bóng dài, dưới áp lực bảng điểm) và phát triển bài tập hướng đích cho những kịch bản đó. Qua một mùa giải, theo dõi xem chỉ số có cải thiện không và có tương quan với thắng trận hay không.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -156,3 +156,10 @@ Massage therapy and manual therapy are widely used recovery modalities in profes
 | Muscle imbalances | Asymmetrical loading, poor recovery | Compensatory movement, injury risk | Targeted soft tissue work; corrective exercises |
 | Trigger points causing pain | Insufficient myofascial release | Localized pain, referred symptoms | Trigger point therapy; foam rolling; ball work |
 | Reduced range of motion | Fascial restrictions, muscle tightness | Reduced stroke quality | Myofascial release; stretching; deep tissue massage |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+<!-- TAICHIKB-CROSSREF-END -->

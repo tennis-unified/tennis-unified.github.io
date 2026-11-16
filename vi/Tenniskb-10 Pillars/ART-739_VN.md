@@ -57,3 +57,10 @@ Người chơi nên luyện tập chiến thuật trên điểm break kết hợ
 ## Ứng Dụng Thực Tế: "Ăn Điểm Break Hay Sụp Đổ"
 
 Triển khai chiến thuật trên điểm break bằng cách cam kết dùng chiến thuật này suốt một set tập luyện. Theo dõi số điểm bạn giành được khi dùng khuôn mẫu này so với cách đánh mặc định. Nếu chiến thuật ăn được hơn 55% số điểm, hãy đưa nó vào kho chiến thuật thường xuyên của bạn. Nếu ít hơn, hãy phân tích lý do: là do sự thực thi của bạn, sự điều chỉnh của đối thủ, hay thời điểm chọn sai? Tinh chỉnh chiến thuật dựa trên phân tích này trước trận đấu tiếp theo.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

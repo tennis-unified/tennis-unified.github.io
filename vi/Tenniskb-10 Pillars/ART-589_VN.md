@@ -60,3 +60,10 @@ Trả bóng giao ở độ cao đòi hỏi điều chỉnh vì không khí loãn
 ## Ứng Dụng Thực Tế: "Điều Chỉnh Độ Cao"
 
 Khi trả bóng ở độ cao, đứng sâu hơn 2-3 feet bình thường, sử dụng trả bóng chặn trên giao bóng nhanh và tập trung vào nhất quán thay vì tấn công. Điều chỉnh định vị và kỹ thuật của bạn dựa trên vài giao bóng đầu tiên trong trận đấu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

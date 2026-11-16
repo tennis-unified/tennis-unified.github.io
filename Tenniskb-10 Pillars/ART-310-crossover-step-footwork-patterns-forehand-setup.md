@@ -54,3 +54,10 @@ Players who fail to recover after a crossover-step forehand are vulnerable to th
 ## Practical Application: "The Crossover and Plant"
 
 Practice the crossover step to the forehand side by having a partner feed balls progressively wider. Focus on the final crossover step landing firmly (planting) before initiating the unit turn. Count the steps: for a ball 3 meters away, it should take approximately 2 crossover steps plus a plant-and-turn. Time your recovery to be back at center by the time the ball would cross the net on the opponent's side.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

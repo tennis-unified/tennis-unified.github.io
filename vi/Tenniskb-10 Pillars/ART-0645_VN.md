@@ -60,3 +60,10 @@ Lối chơi lưới là một cuộc chiến tâm lý không kém gì một cu�
 ## Ứng Dụng Thực Tế: "Hãy Tin Vào Những Gì Bạn Đã Luyện Tập"
 
 Khi ở lưới, hãy tin vào những gì mình đã luyện tập. Đừng suy nghĩ quá nhiều về kỹ thuật — hãy để cơ thể tự thực hiện những gì bạn đã rèn giũa. Cuộc chiến tâm lý là về sự tự tin, không phải sự phân tích. Bước lên lưới với mục đích rõ ràng, thực hiện cú đánh với sự cam kết trọn vẹn, và buông bỏ kết quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

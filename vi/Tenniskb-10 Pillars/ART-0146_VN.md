@@ -86,3 +86,10 @@ Phân tích video người chơi đẳng cấp cho thấy các dấu tách rời
 ## Ứng Dụng Thực Tế: "Sự Chia Nặng-Nhẹ"
 
 Trong buổi tập tiếp theo, giới thiệu khái niệm tách rời với một hình ảnh đơn giản: **chân nặng, tay nhẹ.** Cho người chơi đứng trong thế cú nền và có ý thức ấn mu chân xuống sân như thể cố để lại dấu chân trên mặt đất — đây là chỉ dẫn "chân nặng". Sau đó cho họ treo tay cầm vợt như thể làm bằng sợi dây ướt — đây là chỉ dẫn "tay nhẹ". Bây giờ thực hiện 10 cú vung không bóng duy trì cả hai trạng thái đồng thời. Hầu hết người chơi sẽ thấy một trạng thái phá vỡ trạng thái kia: ấn chân xuống đất làm tay căng lên, hay lỏng tay làm chân mềm oặt. Đây chính là thách thức tách rời. Dành 5 phút cho vung không bóng, rồi 10 phút với bóng sống. Người chơi làm chủ sự chia này sẽ cải thiện rõ ở hai điểm: (1) cú nền của họ tạo nhiều nhịp hơn với ít sức lực thấy rõ (vì lực đẩy chân giờ được truyền trọn thay vì rò rỉ), và (2) tay và vai của họ thấy tươi hơn sau các buổi đánh dài (vì tay không còn tạo lực, chỉ dẫn hướng). Sự chia nặng-nhẹ là biểu hiện vật lý của sức mạnh nội bộ: kết cấu bên dưới, dẻo dai bên trên.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

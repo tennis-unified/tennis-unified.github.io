@@ -117,3 +117,10 @@ Create a standardized post-match review form:
 | Emotional bias in self-assessment | Analysis conducted too soon after match | Inaccurate assessment | Delay detailed analysis until emotions subside; use video for objectivity |
 | Analysis without action | Analysis conducted but not integrated into training | Repeated mistakes, no improvement | Require specific training interventions for each identified issue |
 | Overwhelming analysis | Too many issues identified at once | Confusion, lack of focus | Limit to 2-3 key issues; prioritize the most impactful |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -47,3 +47,10 @@ Câu chuyện chấn thương là câu chuyện vật liệu. Khung cứng hơn 
 ## Ứng Dụng Thực Tế: "Khớp Khung Với Cánh Tay"
 
 Lựa chọn vợt là phòng ngừa chấn thương, không chỉ tinh chỉnh hiệu suất. Khi đánh giá một khung, cân bốn con số cùng nhau: khối lượng (nặng hơn ổn định hơn, nhẹ hơn mệt hơn), độ cứng (thấp hơn tốt hơn cho cánh tay), kích thước đầu vợt (lớn hơn tha thứ hơn), và cân bằng/twistweight (ổn định trên cú đánh sai). Dùng thử trước khi mua, thay đổi một biến số tại một thời điểm, và cho bất kỳ thiết lập mới hai tuần trước khi đánh giá nó. Vợt tốt nhất không bao giờ là vợt tiên tiến nhất — đó là vợt mà kỹ thuật, sức mạnh và cánh tay của bạn có thể khai thác hôm nay, với không gian để phát triển.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

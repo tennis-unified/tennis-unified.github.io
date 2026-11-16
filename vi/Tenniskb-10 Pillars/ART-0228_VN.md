@@ -52,3 +52,10 @@ Người chơi phải học tin vào phản ứng trực giác của mình, đ�
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Cảm Giác"
 Trước mỗi cú đánh, thực hiện nhanh "kiểm tra cảm giác": nhận diện phản ứng trực giác của bạn trước tình huống. Nếu trực giác nói "chéo," hãy ghi nhận nó. Sau đó, nếu thời gian cho phép, xác minh bằng kiểm tra phân tích nhanh: "Chéo có phải là cú đánh tỷ lệ cao nhất ở đây không?" Nếu kiểm tra phân tích xác nhận cảm giác, hãy đánh với sự tự tin. Nếu nó mâu thuẫn, hãy dừng lại và quyết định tin ai. Kiểm tra cảm giác này tận dụng tốc độ của Hệ 1 trong khi duy trì sự giám sát của Hệ 2, tạo ra quyết định vừa nhanh lại chính xác.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+<!-- TAICHIKB-CROSSREF-END -->

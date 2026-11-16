@@ -64,3 +64,10 @@ Cú smash kéo chân là kỹ thuật smash nâng cao nhất, đòi hỏi cú nh
 ## Ứng Dụng Thực Tế: "Nhảy Đến Bóng"
 
 Cú smash kéo chân là về sự cam kết. Bạn phải nhảy với toàn bộ sức lực, tin rằng thân người sẽ xoay và vợt sẽ tìm được bóng. Sự do dự trong không trung là nguy hiểm — một khi bạn đã rời khỏi mặt đất, hãy cam kết hoàn toàn với cú đánh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Tập luyện plyometric và chu kỳ SSC*
+<!-- TAICHIKB-CROSSREF-END -->

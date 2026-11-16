@@ -73,3 +73,10 @@ For a player learning a new serve, use implicit learning (varied practice with a
 
 ## Practical Application: "The Silent Practice"
 Periodically practice with "silent learning": hit balls without any verbal instruction, either from a coach or from yourself. Focus entirely on the external outcome (where the ball goes) rather than the internal mechanics (how your body moves). This silent practice promotes implicit learning by removing the conscious monitoring that interferes with automatic processing. After the session, reflect on what you learned without having been told. This builds the implicit skill system that performs under pressure and produces the "feel" that characterizes expert performance.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

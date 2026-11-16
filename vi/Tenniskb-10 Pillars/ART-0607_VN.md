@@ -68,3 +68,10 @@ Bán volley là một trong những cú đánh đòi hỏi nhất trong tennis, 
 ## Ứng Dụng Thực Tế: "Hạ Thấp, Giữ Thế"
 
 Bán volley được thắng hay thua ở mức đầu gối. Cúi sâu hơn bạn nghĩ là cần thiết, giữ đầu thấp qua điểm tiếp xúc, và tin tưởng rằng lực cầm vợt và góc mặt vợt sẽ tạo ra độ cao cần thiết. Trọng tâm thấp càng tốt, bán volley của bạn sẽ tốt hơn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

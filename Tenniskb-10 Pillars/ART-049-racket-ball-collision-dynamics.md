@@ -89,3 +89,10 @@ The racket-ball collision lasts only 3-6 milliseconds, during which both the bal
 
 ## Practical Application: "The Millisecond Window"
 The entire racket-ball collision occurs in less than 6 milliseconds—faster than the blink of an eye. During this brief window, the ball deforms, the strings stretch, and the energy transfers. Your job is to ensure that this interaction happens at the sweet spot, where the energy transfer is maximized. Practice by focusing on clean, centered contact. When you consistently hit the sweet spot, you'll notice a "thud" feel rather than a "ping" feel—this indicates efficient energy transfer with minimal vibration. The millisecond window is where technique meets physics, and mastering it is the key to powerful, consistent strokes.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Linear kinetics, GRF & impulse-momentum*
+<!-- TAICHIKB-CROSSREF-END -->

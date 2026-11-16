@@ -145,3 +145,10 @@ Net approach statistics provide objective data on the effectiveness of transitio
 | Too few net approaches | Timidity, baseline dependency | Predictable play, missed opportunities | Confidence building; approach pattern practice |
 | Approaches only from one side | Predictable patterns | Opponent anticipates and counters | Develop approach patterns from both sides |
 | First volleys not effective | Poor first volley placement | Opponent retrieves and passes | First volley drills; deep volley practice; volley at feet |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+<!-- TAICHIKB-CROSSREF-END -->

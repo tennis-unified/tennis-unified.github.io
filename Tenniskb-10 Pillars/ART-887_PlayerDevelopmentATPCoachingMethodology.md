@@ -177,3 +177,10 @@ Shot quality metrics provide objective measurements of stroke effectiveness in t
 | Low spin rate | Poor swing path, insufficient brush | Less margin for error | Spin drills; swing path optimization |
 | Inconsistent placement | Poor contact point, weak targeting | Unforced errors, lost points | Target practice; contact point consistency |
 | Low sweet spot percentage | Poor contact point, late preparation | Mishits, reduced power | Preparation drills; contact point training |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+<!-- TAICHIKB-CROSSREF-END -->

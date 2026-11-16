@@ -39,3 +39,10 @@ Models are simplifications, and their errors are structured. Joint center locati
 
 ## Practical Application: "Simulate Before You Speculate"
 The deepest lesson of serve modeling is that technique is a load-distribution decision. Every serve spends its energy somewhere — through the legs and trunk, or through the elbow and shoulder. Coaches and players cannot all run OpenSim, but everyone can adopt the modeling mindset: when changing technique, reason about where the load goes, introduce one variable at a time, and let pain and ball speed together judge the outcome. The arm that serves 200 km/h at 25 is the same arm that must still function at 45; spend its torque budget like it matters.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

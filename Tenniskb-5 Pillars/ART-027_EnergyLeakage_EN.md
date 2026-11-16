@@ -47,3 +47,10 @@ To diagnose a leak, a coach looks for the **"Point of Disconnection."**
 
 ## Practical Application: The "Water-Tight" Chain
 The goal is to make the "buckets" water-tight. When a player fixes a leak, they often experience a "breakthrough" where their power increases significantly without any change in their muscular strength.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Hệ thống vận động chức năng và các mẫu vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch05-he-thong-van-dong-chuc-nang-va-cac-mau-van-dong.html) — *Functional movement patterns & kinetic energy leaks*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Sequential timing & energy transfer gaps*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Kinetic chain efficiency diagnostics*
+<!-- TAICHIKB-CROSSREF-END -->

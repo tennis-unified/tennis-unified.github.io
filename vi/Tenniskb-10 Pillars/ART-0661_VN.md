@@ -52,3 +52,10 @@ Luôn đánh volley mạnh (cho tay vợt phản công tốc độ để chuyể
 ## Ứng Dụng Thực Tế: "Đa Dạng Hóa, Che Giấu Ý Định, Kiên Nhẫn"
 
 Khi đối đầu với đối thủ phản công: (1) đa dạng hóa tốc độ (mạnh, nhẹ, thả nhẹ), (2) che giấu hướng đánh (cùng một cách chuẩn bị cho mọi cú đánh), (3) kiên nhẫn (có thể cần đánh nhiều volley). Tay vợt phản công muốn bạn có thể đoán trước — đừng cho họ sự hài lòng đó.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Tập luyện plyometric và chu kỳ SSC*
+<!-- TAICHIKB-CROSSREF-END -->

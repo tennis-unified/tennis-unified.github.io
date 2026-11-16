@@ -71,3 +71,10 @@ Quản lý nỗ lực thể chất qua trận đấu. Tránh tiêu tốn nỗ l�
 
 ## Ứng Dụng Thực Tế: "Màn Hình Theo Dõi Mệt Mỏi"
 Phát triển một "màn hình theo dõi mệt mỏi" nội tại theo dõi trạng thái thể chất và nhận thức của bạn trong trận đấu. Định kỳ đánh giá: (1) mệt mỏi thể chất (chân nặng, nhịp thở), (2) mệt mỏi nhận thức (chất lượng tập trung, tốc độ quyết định), và (3) trạng thái cảm xúc (tính dễ chọc, động lực). Khi bất kỳ chỉ báo nào đạt mức cao, thực hiện hành động ngay: uống nước, tiêu thụ carbohydrate, sử dụng thở phục hồi, hoặc điều chỉnh mức nỗ lực. Tự giám sát này ngăn chặn sự sụp đổ hiệu suất xảy ra khi người chơi bỏ qua mệt mỏi cho đến khi quá muộn để phục hồi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

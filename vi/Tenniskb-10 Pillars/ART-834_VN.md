@@ -216,3 +216,10 @@ Bài tập này phát triển kỹ năng quản lý áp lực:
 | Căng thể chất dưới áp lực | Điều chỉnh kích thích kém, lo âu quá mức | Giảm kiểm soát vận động tinh, sai lầm | Thư giãn cơ bậc thang; kỹ thuật thở; thực hành trung tâm |
 | Tự động viên tiêu cực trong tình huống áp lực | Đào tạo kỹ năng tâm lý không đủ, tự tin thấp | Vòng lặp lo âu, thành tích suy giảm | Tái cấu trúc tự động viên; phát triển tín hiệu tích cực; xây dựng sự tự tin |
 | Tránh né tình huống áp lực | Sợ thất bại, phản ứng đe dọa | Cơ hội giảm, tâm lý yếu | Liệu pháp tiếp xúc; định hình lại áp lực thành cơ hội; chiến lược chấp nhận |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

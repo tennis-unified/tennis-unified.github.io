@@ -138,3 +138,10 @@ To reduce lower back stress during serving:
 | Back pain during groundstrokes | Poor rotation mechanics, lumbar rotation | Muscle strains, disc issues | Rotational power training; core stability; technique review |
 | Stiffness in lower back | Poor thoracic mobility, sedentary posture | Compensatory lumbar stress | Thoracic mobility exercises; foam roller; posture awareness |
 | Pain after long matches | Core fatigue, poor endurance | Late-match errors, pain | Core endurance training; load management; recovery protocols |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+- [Chương 9: Mặt Trước Sâu — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch09-mat-truoc-sau.html) — *Deep Front Line: core postural axis*
+<!-- TAICHIKB-CROSSREF-END -->

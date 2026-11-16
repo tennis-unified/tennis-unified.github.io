@@ -56,3 +56,10 @@ Quỳng đạo liên tục này — từ lúc rơi xuống phía dưới điểm
 ## Ứng Dụng Thực Hành: "Bài Tập Mặt Đồng Hồ"
 
 Hãy hình dung bóng như mặt đồng hồ trước mỗi cú forehand. Khi vung, hãy tưởng tượng vợt của bạn đi vào từ vị trí 6 giờ và thoát ra ở 12 giờ, lăn qua cạnh phải của bóng. Sự hình dung này giúp bạn làm đường vung dốc đứng hơn và tạo ra xoáy trên mạnh — đặc trưng của cú forehand hiện đại. Hãy luyện tập sự hình dung này trong các cú vung tượng (shadow swings) cho đến khi nó trở thành phần tự động trong nhịp đánh của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+<!-- TAICHIKB-CROSSREF-END -->

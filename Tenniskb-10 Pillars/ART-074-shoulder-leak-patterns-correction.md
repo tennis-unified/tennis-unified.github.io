@@ -42,3 +42,10 @@ The shoulder is the most mobile joint in the body and a critical link in the ten
 
 ## Practical Application: "The Shoulder Check"
 During your strokes, focus on feeling your shoulder rotate fully and in sequence with your trunk and arm. If you feel your shoulder is "stuck" or not rotating enough, work on shoulder mobility and internal rotator strength. If you feel your shoulder is unstable or moving excessively, work on rotator cuff strengthening and scapular stabilization. If your shoulder is doing too much work, focus on improving your trunk rotation to reduce the load on your shoulder.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -76,3 +76,10 @@ Common errors in the windshield wiper follow-through include:
 ## Practical Application: "The Wiper Finish"
 
 Practice the windshield wiper follow-through by focusing on where your racquet finishes. After each shot, check that your racquet head is high on the opposite side of your body (near your left shoulder for right-handed players). If it finishes lower or on the same side, your swing path was not steep enough or your pronation was insufficient. Use this visual feedback to refine your mechanics.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

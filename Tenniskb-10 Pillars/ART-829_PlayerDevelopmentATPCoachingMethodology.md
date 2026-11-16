@@ -233,3 +233,10 @@ Create a 3-5 year transition plan:
 | Financial stress affecting performance | Poor financial planning, insufficient funding | Reduced focus, premature retirement | Financial planning; seek sponsorship; national federation support |
 | Homesickness and isolation | Insufficient support, poor lifestyle adaptation | Mental health issues, burnout | Build support network; mental coaching; regular home visits |
 | Inability to compete at Challenger level | Technical or physical gaps exposed at higher level | Demotivation, ranking decline | Targeted development program; return to Futures for confidence |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Energy systems for tennis conditioning*
+- [Chương 10: Mô Cơ (Muscular Tissue)](https://taichikb.github.io/vi/books/tortora_ap/ch10-mo-co.html) — *Muscular tissue physiology & contraction*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+<!-- TAICHIKB-CROSSREF-END -->

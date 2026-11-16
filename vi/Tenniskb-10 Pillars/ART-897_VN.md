@@ -184,3 +184,10 @@ Cấu trúc buổi tập luyện tập trung vào sức bền:
 | Ngôn ngữ cơ thể tiêu cực | Điều chỉnh cảm xúc kém, thiếu tự tin | Đối thủ tăng tự tin, tiên tri tự thực hiện | Huấn luyện ngôn ngữ cơ thể; tự nói tích cực; hình dung sức bền |
 | Không thể xử lý áp lực | Thiếu luyện áp lực, lo âu | Nghẽn ngào, hiệu suất giảm | Mô phỏng áp lực; luyện kỹ năng tâm lý; quy trình trước điểm |
 | Tư duy cố định về khả năng | Tin rằng tài năng là cố định | Tránh thách thức, dễ từ bỏ | Giáo dục tư duy trưởng thành; khen nỗ lực; khung lại thất bại |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

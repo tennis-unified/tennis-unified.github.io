@@ -45,3 +45,10 @@ Vận động viên gặp khó khăn với bước chẻ chân thường đượ
 
 ## Ứng Dụng Thực Tế: "Bài Tập Chẻ Chân"
 Trong lúc luyện tập, hãy tập trung thực hiện bước chẻ chân trước mỗi cú đánh. Nhờ đồng đội ném bóng về phía tay vợt trái của bạn, và luyện chẻ chân ngay trước khi họ đánh bóng. Đếm xem bạn đạt tư thế thăng bằng, sẵn sàng bao nhiêu lần khi bóng đến. Bài tập này giúp hình thành thói quen chẻ chân cần thiết để chuẩn bị tay vợt trái hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

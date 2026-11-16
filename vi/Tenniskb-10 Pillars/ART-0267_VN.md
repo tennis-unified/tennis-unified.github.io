@@ -55,3 +55,10 @@ HLV có thể quan sát kỹ năng được phát triển trong thực hành có
 
 ## Ứng Dụng Thực Tế: "Bài Kiểm Tra Chuyển Giao"
 Sau mỗi phiên thực hành, tự hỏi: "Hôm nay tôi có thực hành điều gì có thể dùng trong trận đấu không?" Nếu câu trả lời là không, thực hành đó thiếu chuyển giao. Để cải thiện chuyển giao, thêm điều kiện giống trận đấu vào thực hành: chơi điểm có ghi điểm, giới thiệu hậu quả, tập với đối thủ khác nhau, và bao gồm tình huống áp lực. Cách tiếp cận tập trung vào chuyển giao này cho thực hành đảm bảo rằng kỹ năng bạn phát triển trong thực hành thực sự xuất hiện trong thi đấu, tạo ra cải thiện hiệu suất là mục tiêu cuối cùng của thực hành.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên phân đoạn*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

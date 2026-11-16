@@ -44,3 +44,10 @@ The 90-second interval is a more advanced way to improve anaerobic conditioning.
 
 ## Practical Application: The "Complete Anaerobic Conditioner"
 The athlete should feel that they are "complete" and integrated with the 5-Pillar System. The athlete should feel that the biomechanical, neurological, and tactical systems are working together in harmony. This is the ultimate goal of the 5-Pillar System: to create a complete, integrated athlete who performs effortlessly at their peak potential.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *ATP-PCr & anaerobic glycolysis for high-intensity rallies*
+- [Chương 13: Chương 13: Khởi Phát và Mỏi Cơ – Hậu Quả của Việc Kích Hoạt Cơ Lặp Lại — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch10.html) — *Lactate accumulation & high-intensity muscle fatigue*
+- [Chương 10: Mô Cơ (Muscular Tissue)](https://taichikb.github.io/vi/books/tortora_ap/ch10-mo-co.html) — *Fast-twitch (Type II) muscle fiber energetics*
+<!-- TAICHIKB-CROSSREF-END -->

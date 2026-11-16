@@ -50,3 +50,10 @@ Những tay vợt gặp khó khăn với việc điều chỉnh theo mặt sân 
 
 ## Ứng Dụng Thực Tế: "Bài Tập Theo Mặt Sân"
 Hãy tập luyện kỹ thuật backhand trên các mặt sân khác nhau, điều chỉnh kỹ thuật phù hợp với từng loại sân. Trên sân cứng, tập trung vào tính linh hoạt. Trên sân đất, tập trung vào topspin nặng và sự kiên nhẫn. Trên sân cỏ, tập trung vào đánh cắt và đánh phẳng. Theo dõi hiệu suất của bạn trên từng loại mặt sân để đảmảo bạn đang phát triển khả năng thích ứng cần thiết để thành công trên bất kỳ sân nào.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

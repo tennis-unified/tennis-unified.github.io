@@ -131,3 +131,10 @@ Single-leg plyometrics—including single-leg bounds, single-leg box jumps, and 
 
 ## Practical Application: "Jump and Hit"
 The simplest way to develop leg drive awareness is to literally jump during your groundstrokes. Stand in your forehand ready position and perform a forehand while simultaneously jumping off both feet. You'll notice that the jump adds power to your stroke because you're converting vertical momentum into rotational force. Practice this with a partner feeding easy balls: jump slightly as you swing, feeling how the upward drive of your legs transfers through your body to the racket. Once you can feel this connection, reduce the jump until it becomes an imperceptible "push" rather than an actual jump—but maintain the feeling of driving upward through your legs. This drill teaches your nervous system to recruit the leg drive that elite players use unconsciously. The serve, too, is fundamentally a jump: the best servers push off the ground so forcefully that they land well inside the baseline. Practice your serve focusing on maximum upward drive, and you'll immediately feel the power increase.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Linear kinetics, GRF & impulse-momentum*
+<!-- TAICHIKB-CROSSREF-END -->

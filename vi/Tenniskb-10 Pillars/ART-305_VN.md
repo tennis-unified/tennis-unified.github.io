@@ -52,3 +52,10 @@ Cú forehand tư thế trung lập (bàn chân gần như song song với đư�
 ## Ứng Dụng Thực Tế: "Lò Xo Tải"
 
 Để cảm nhận tải hông chính xác, đứng ở vị trí chuẩn bị forehand và nhờ đối tác đặt tay lên hông phía trước, nhẹ nhàng ngăn nó xoay về phía trước. Cuộn vai về 90 độ trong khi hông chỉ xoay 45 độ, cảm nhận sự giãn trên phần trái cơ thể (đối với người thuận tay phải). Giữ tư thế này trong 2 giây, cảm nhận căng thẳng trong cơ obliques như một lò xo nén. Giải phóng bằng cách dẫn động hông phía trước bùng nổ, cho phép vai đi theo. Bài tập này cô lập cảm giác tải mà nên xảy ra trong mỗi cú forehand.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+<!-- TAICHIKB-CROSSREF-END -->

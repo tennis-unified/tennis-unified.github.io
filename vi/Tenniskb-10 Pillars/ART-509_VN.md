@@ -99,3 +99,10 @@ Xoắn giao bóng quá mức giảm tốc độ, làm dễ tấn công cho ngư�
 ## Ứng Dụng Thực Tế: "Kéo Nón"
 
 Đặt nón 2 foot ra ngoài đường biên đơn trong ô giao bóng. Giao 20 bóng cắt nhắm cong bóng qua nón và vào ô giao bóng. Nón cung cấp mục tiêu trực quan cho lượng cong cần thiết để kéo người trả bóng ra ngoài sân. Nếu bóng luôn lệch nón, tỷ lệ xoắn cắt cần cải thiện. Nếu bóng cong qua nón nhưng rơi ngoài ô giao bóng, hướng cần điều chỉnh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

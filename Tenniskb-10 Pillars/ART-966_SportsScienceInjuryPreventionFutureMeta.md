@@ -167,3 +167,10 @@ While some professional players did specialize early, many did not. Moreover, su
 ## Practical Application: "Build the Athlete First, the Tennis Player Second"
 
 The evidence is clear: children who sample multiple sports before specializing in tennis develop into more complete, more resilient, and ultimately more successful tennis players. Resist the pressure to specialize early. Instead, build a broad athletic foundation through varied physical activities, maintain the joy of movement and play, and allow specialization to emerge naturally in adolescence. The goal is not to produce the best 10-year-old tennis player — it is to produce the best 25-year-old tennis player. That requires patience, perspective, and a commitment to long-term development over short-term results.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+<!-- TAICHIKB-CROSSREF-END -->

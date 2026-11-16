@@ -43,3 +43,10 @@ Two aging processes run in parallel. Pressure loss steadily deadens the bounce, 
 
 ## Practical Application: "Respect the Can"
 The ball is the one piece of equipment your technique touches on every single stroke, and it changes character with pressure, fuzz, and weather. Build two habits: date your cans and retire them honestly, and when conditions shift — altitude, cold, humidity — adjust your margins and expectations before you adjust your technique. Champions do not fight the physics of the ball; they read it and exploit it.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+<!-- TAICHIKB-CROSSREF-END -->

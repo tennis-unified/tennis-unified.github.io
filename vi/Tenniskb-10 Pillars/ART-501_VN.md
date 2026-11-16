@@ -74,3 +74,10 @@ Phần lõng đóng vai trò cầu nối giữa thân dưới và thân trên. N
 ## Ứng Dụng Thực Tế: "Phép So Sánh Chiếc Roi"
 
 Hãy dạy giao bóng như bạn dạy ai đó vung roi. Cánh tay (chân) di chuyển đầu tiên, gửi một làn sóng dọc theo dây roi (thân và tay), cho đến khi đầu roi (đầu vợt) tăng tốc đến tốc độ siêu thanh. Cũng như một chiếc roi cứng không thể vang, một cú giao bóng kích hoạt tất cả các khớp cùng lúc không thể đạt tốc độ tối đa. Thực hành "dừng ở tư thế chiếc cúp" — đóng băng ở đỉnh chuyển động và ý thức cảm nhận những cơ nào đang tích tụ — trước khi bùng nổ qua chuỗi theo trình tự.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

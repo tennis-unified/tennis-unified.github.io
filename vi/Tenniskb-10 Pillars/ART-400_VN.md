@@ -102,3 +102,10 @@ Con đường đến làm chủ forehand hiện đại hoàn chỉnh tuân theo 
 ## Ứng Dụng Thực Tế: "Forehand Hoàn Chỉnh"
 
 Trong lúc tập luyện, thực hành có ý thức tất cả các yếu tố của forehand hiện đại hoàn chỉnh: xoáy (thay đổi quỹ đạo vung từ dốc đến phẳng), tốc độ (thay đổi tốc độ đầu vợt từ vừa đến tối đa) và kiểm soát (nhắm vào mục tiêu cụ thể với độ chính xác). Phát triển khả năng điều chỉnh động cả ba yếu tố dựa trên tình huống chiến thuật, và thực hành quá trình ra quyết định chọn kết hợp tối ưu cho mỗi cú đánh. Cách tiếp cận tích hợp này là đặc trưng của forehand hiện đại hoàn chỉnh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

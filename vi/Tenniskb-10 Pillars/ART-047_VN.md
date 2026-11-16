@@ -102,3 +102,10 @@ Khi bóng đập vào COP:
 
 ## Ứng Dụng Thực Tế: "Cảm Giác Điểm Ngọt"
 Phát triển nhận thức điểm ngọt bằng cách ném bóng lên vợt trong tập luyện. Chú ý vị trí bóng tạo ra tiếng "thud" sạch nhất với rung động tối thiểu — đó là điểm ngọt của bạn. Khi thi đấu, nhắm đập bóng tại điểm này luôn. Theo thời gian, bạn sẽ phát triển cảm giác trực giác cho điểm ngọt, và chất lượng đập bóng sẽ cải thiện mạnh mẽ. Điểm ngọt là vùng sức mạnh của bạn — đập bóng ở đó và bạn sẽ đập với sức mạnh tối đa và rung động tối thiểu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

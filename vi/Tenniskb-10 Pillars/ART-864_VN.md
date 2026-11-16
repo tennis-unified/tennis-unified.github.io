@@ -254,3 +254,10 @@ Kiểm tra lại mỗi 8-12 tuần để theo dõi tiến bộ.
 | Bước đầu tiên chậm | Sức mạnh phần thân dưới không đủ | Đến muộn, cú đánh phòng thủ | Nhảy xuống có độ; plyometric phản ứng; nhảy một chân |
 | Khiếm khuyết sức mạnh phần thân trên | Đóng góp vai và tay yếu | Giảm sức mạnh giao bóng và overhead | Push press; chống đẩy plyometric; chuyền bóng y tế ngực |
 | Sức mạnh giảm ở trận sau | Sức bền sức mạnh không đủ | Giảm bùng nổ | Chu kỳ sức bền sức mạnh; kết hợp sức mạnh và thể lực |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Tập luyện plyometric và chu kỳ SSC*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

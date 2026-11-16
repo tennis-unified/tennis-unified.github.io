@@ -148,3 +148,10 @@ This drill builds muscle memory, contact point consistency, and the rhythm essen
 | One-handed backhand lacks depth | Late contact, insufficient leg drive | Passive shots, opponent attacks | Shadow swings emphasizing step-in and follow-through extension |
 | Player struggles with high backhand returns | Grip or technique not suited for high balls | Lost service return games | Practice high feed drills; consider slice or two-handed conversion |
 | Backhand slice lacks bite | Weak wrist, insufficient forward drive | Floaters that sit up for attack | Forearm strengthening; drill with tape marker on racket face for feedback |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+<!-- TAICHIKB-CROSSREF-END -->

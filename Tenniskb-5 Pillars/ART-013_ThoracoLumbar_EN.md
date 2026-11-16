@@ -33,3 +33,10 @@ Axial separation is the angular difference between the hips and the shoulders.
 
 ## Practical Application: The "Torsional Spring"
 The feeling should be like twisting a towel. The more you can separate the top from the bottom without losing stability, the more "potential energy" you store for the hit.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk: thoraco-lumbar rotation*
+- [Chương 7: Hệ Xương: Bộ Xương Trục (The Skeletal System: The Axial Skeleton)](https://taichikb.github.io/vi/books/tortora_ap/ch07-he-xuong-bo-xuong-truc.html) — *Axial skeleton: vertebral column & thoracic cage*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Intervertebral joints & spinal range of motion*
+<!-- TAICHIKB-CROSSREF-END -->

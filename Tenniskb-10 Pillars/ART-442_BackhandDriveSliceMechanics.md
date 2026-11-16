@@ -60,3 +60,10 @@ Players should incorporate these drills into their regular practice routine, foc
 
 ## Practical Application: "The Whip Drill"
 Practice the backhand swing without a ball, focusing on the wrist lag and release. Start the swing slowly, allowing the racket head to lag behind the hand. Then release the wrist, accelerating the racket head through the contact zone. Repeat until the lag and release feel natural, then practice with a ball.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Angular kinematics & sequential kinetic chain*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Elbow, forearm pronation & wrist mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

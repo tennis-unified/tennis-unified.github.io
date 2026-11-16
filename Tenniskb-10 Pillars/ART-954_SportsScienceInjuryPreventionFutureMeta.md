@@ -138,3 +138,10 @@ Example cue hierarchy for an intermediate player:
 ## Practical Application: "Your Words Become Your Reality"
 
 The language you use internally during competition directly shapes your emotional state, attentional focus, and motor execution. Commit to recording your self-talk patterns for one week — write down every internal statement you notice during practice and competition. Categorize each statement as positive/negative and instructional/motivational. Then systematically replace the negative patterns with realistic, process-focused alternatives. Within weeks, the restructuring becomes automatic, and your inner dialogue shifts from an obstacle to an asset.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

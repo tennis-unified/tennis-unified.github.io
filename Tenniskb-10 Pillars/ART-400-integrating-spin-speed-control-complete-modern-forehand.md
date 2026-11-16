@@ -99,3 +99,10 @@ The path to mastering the complete modern forehand follows a progression:
 ## Practical Application: "The Complete Forehand"
 
 During practice, consciously practice all elements of the complete modern forehand: spin (vary the swing path from steep to flat), speed (vary the racquet head speed from moderate to maximum), and control (aim for specific targets with precision). Develop the ability to dynamically adjust all three elements based on the tactical situation, and practice the decision-making process that selects the optimal combination for each shot. This integrated approach is the hallmark of the complete modern forehand.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

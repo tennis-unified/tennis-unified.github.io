@@ -43,3 +43,10 @@ Cú trả bóng xoáy hỗn hợp đòi hỏi khả năng nhận diện sớm v�
 ## Ứng Dụng Thực Tế: "Đọc Sớm, Điều Chỉnh Nhanh, Thực Thi Dứt Điểm"
 
 Khi đối đầu với cú trả bóng xoáy hỗn hợp: (1) đọc bóng xoáy từ sớm, (2) điều chỉnh mặt vợt và kiểu volley, (3) thực thi với sự tự tin dứt khoát. Khả năng thích ứng chính là chìa khóa để làm chủ lối chơi lưới trước bóng xoáy hỗn hợp.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

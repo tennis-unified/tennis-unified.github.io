@@ -211,3 +211,10 @@ If the answer to any of these questions suggests excessive pressure, parents sho
 ## Practical Application: "Love the Child, Not the Score"
 
 The most powerful thing a tennis parent can offer is unconditional love and support. Your child's tennis performance — wins, losses, rankings, trophies — is temporary and ultimately insignificant compared to their psychological wellbeing and your relationship with them. Before every tournament, ask yourself: "Am I here to support my child, or to validate my investment?" If the answer is the latter, step back, seek support, and recommit to being the parent your child needs, not the manager your child's tennis career demands.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -56,3 +56,10 @@ Physical fitness supports cognitive function. Aerobic fitness, strength, and fle
 
 ## Practical Application: "The Veteran Adaptation"
 Adapt your game to match your cognitive profile. If processing speed has declined, anticipate earlier and take the ball sooner. If working memory has declined, simplify your tactical plans and rely on experience-based intuition. If executive function has declined, use clear, simple strategies rather than complex multi-step plans. These adaptations allow you to maintain high-level performance by maximizing your preserved cognitive strengths (experience, procedural memory) while compensating for age-related declines (processing speed, working memory).
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

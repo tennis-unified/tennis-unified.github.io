@@ -52,3 +52,10 @@ Lực siết tay cầm quá mạnh xuyên suốt cú đánh — phổ biến tro
 ## Ứng Dụng Thực Tế: "Ngón Tay Búa"
 
 �ể cảm nhận tay cầm bán Tây Âm và tải cổ tay chính xác, hãy giữ vợt như thể bạn đang cầm một chiếc búa chuẩn bị đinh một cây đinh, nhưng với bàn tay dời hơi lùi ra phía sau cán vợt. Cổ tay phải có thể lên dây lùi về trước và lùi về sau mà mặt vợt không thay đổi định hướng so với lòng bàn tay. Luyện cú đánh tập trung vào cảm giác đầu vợt "bắt kịp" bàn tay khi chạm bóng, giống như đầu búa đến sau khi cán búa đã bắt đầu chuyển động về phía trước.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

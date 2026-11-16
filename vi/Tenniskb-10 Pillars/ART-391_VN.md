@@ -94,3 +94,10 @@ Hiệu ứng Magnus có những ý nghĩa thực tế cho người chơi:
 ## Ứng Dụng Thực Tế: "Hình Dung Hiệu Ứng Magnus"
 
 Hình dung hiệu ứng Magnus trong các cú đánh của bạn: tưởng tượng không khí đẩy xuống cú forehand xoáy xuống (rơi), đẩy lên cú slice (bay lơ lửng), hoặc đẩy ngang cú đánh bay cong. Sự hình dung này giúp bạn hiểu và kiểm soát các hiệu ứng khí động học quyết định quỹ đạo bay của bóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

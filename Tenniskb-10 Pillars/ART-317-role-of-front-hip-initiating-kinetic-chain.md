@@ -52,3 +52,10 @@ Progress to integrated drills where the hip rotation is the conscious trigger fo
 ## Practical Application: "The Hip Trigger"
 
 To develop the front hip lead, practice shadow swings where you consciously pause at the set position, then say "hip" out loud as you begin rotating the front hip toward the target. The verbal cue helps establish the hip-first timing. Gradually eliminate the verbal cue as the motor program becomes automatic, but maintain the hip-first initiation in every swing.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+<!-- TAICHIKB-CROSSREF-END -->

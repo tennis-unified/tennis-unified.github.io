@@ -62,3 +62,10 @@ Nhận diện mẫu được liên kết với kích hoạt thần kinh-cơ. M�
 
 ## Ứng Dụng Thực Tế: Tư Duy "Dự Đoán"
 Vận động viên không nên nghĩ "quả bóng ở đâu?" mà là "quả bóng sẽ ở đâu?". Sự chuyển đổi từ tư duy phản ứng sang tư duy dự đoán này là chìa khóa cho hiệu suất đẳng cấp. Khi mô hình dự đoán được định chuẩn tốt, vận động viên cảm thấy như họ đang "đọc" được ý đồ của đối phương, cho phép phản ứng sớm hơn, mạnh mẽ hơn và chính xác hơn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Trích xuất tín hiệu thị giác và theo dõi quỹ đạo bóng*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và dự đoán tình huống*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung chú ý và dự đoán nhận thức*
+<!-- TAICHIKB-CROSSREF-END -->

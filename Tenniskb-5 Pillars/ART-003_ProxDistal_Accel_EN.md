@@ -47,3 +47,11 @@ To master this, players must train the brain to recognize the **Sensation of Ord
 *   **Level 1:** Exaggerate the sequence. Move legs → pause → move hips → pause → swing arm.
 *   **Level 2:** Smooth the transitions.
 *   **Level 3:** Integrate into full-speed strokes.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Coordination continuum & proximal-to-distal kinetic chain*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Angular kinematics & sequential segment acceleration*
+- [Chương 4: Các Nguyên Lý Cơ Học (Biomechanical Principles)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch04-cac-nguyen-ly-co-hoc.html) — *Biomechanical lever & sequential torque principles*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Internal martial kinetic chain: feet → thighs → waist → fingers*
+<!-- TAICHIKB-CROSSREF-END -->

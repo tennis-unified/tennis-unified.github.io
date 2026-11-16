@@ -84,3 +84,10 @@ v_bóng = (v_vợt × (1 + e) + v_bóng_tiếp_cận × (e - m_bóng/m_vợt_hi�
 
 ## Ứng Dụng Thực Tế: "Thử Thách Ném Bóng"
 Thả một quả tennis từ độ cao cố định lên vợt của bạn và đo độ cao ném lại. Độ ném cao hơn cho thấy COR cao hơn và truyền năng lượng hiệu quả hơn. Thử các căng dây khác nhau, vị trí đập khác nhau, và điều kiện bóng khác nhau để hiểu chúng ảnh hưởng COR như thế nào. Mục tiêu là tối đa hóa COR tại điểm ngọt bằng cách tối ưu căng dây, chất liệu dây, và tình trạng bóng. COR cao hơn nghĩa là tốc độ bóng cao hơn cho cùng tốc độ vợt — hiệu quả thuần túy.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Động lực học tuyến tính, GRF và xung lượng*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -133,3 +133,10 @@ The split step should occur at the exact moment the server's racket contacts the
 ## Practical Application: "The Grip Change Drill"
 
 Have a partner call out "forehand" or "backhand" randomly while you are in the ready position. Practice changing your grip as quickly as possible in response. Time how long it takes to get to the correct grip. Aim for under 0.5 seconds. This drill develops the quick grip changes needed for effective returning.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

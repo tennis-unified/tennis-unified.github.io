@@ -31,3 +31,10 @@ The shift must happen in a window of approximately 10-20 milliseconds before imp
 
 ## Practical Application: The "Rubber-to-Steel" Sensation
 The feeling should be like a piece of rubber that suddenly turns into steel at the moment of impact. You are a whip until the last micro-second, then you are a wall.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Mạc như một cơ quan cảm giác — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch04-mac-nhu-mot-co-quan-cam-giac.html) — *Fascia as a sensory organ & tonal regulation*
+- [Chương 10: Mô Cơ (Muscular Tissue)](https://taichikb.github.io/vi/books/tortora_ap/ch10-mo-co.html) — *Muscle tone & motor unit recruitment*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Fluid relaxation (Sung) to firm impact (Fa-jin)*
+<!-- TAICHIKB-CROSSREF-END -->

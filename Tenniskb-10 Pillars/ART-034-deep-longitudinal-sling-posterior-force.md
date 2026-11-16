@@ -80,3 +80,10 @@ The deep longitudinal sling contributes to leg drive by:
 
 ## Practical Application: "The Posterior Chain Wave"
 Imagine a wave traveling up your posterior chain: it starts at your foot, travels through your calf and hamstring, crosses your hip, and reaches your lower back. This wave of force is what the deep longitudinal sling transmits during leg drive. Practice this by performing a single-leg Romanian deadlift and feeling the connection from your standing foot through your hamstring to your lower back. This posterior chain connection is essential for transmitting ground reaction forces to the trunk during tennis strokes. When you feel this connection working smoothly, your leg drive will become more powerful and your strokes more consistent.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

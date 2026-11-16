@@ -209,3 +209,10 @@ Cấu trúc buổi luyện tập trình độ chuyên nghiệp 90 phút:
 | Kỹ năng không chuyển giao sang trận đấu | Bài tập quá biệt lập, thiếu thực hành giống trận đấu | Luyện tập tốt, thi đấu kém | Tăng hoạt động dựa trò chơi; giảm luyện tập biệt lập |
 | Vận động viên chán và mất hứng | Bài tập lặp lại, thiếu đa dạng | Giảm động lực, nguy cơ bỏ cuộc | Giới thiệu bài tập mới; đa dạng hoạt động; tăng chơi trò chơi |
 | Mệt mỏi trong buổi học sau của tuần | Phục hồi không đủ giữa các buổi học | Mệt mỏi tích lũy, giảm chất lượng luyện tập | Điều chỉnh lịch trình hàng tuần; xây dựng ngày nghỉ; theo dõi khối lượng luyện tập |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

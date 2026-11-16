@@ -60,3 +60,10 @@ Players should practice hitting to different targets using rotation as a directi
 
 ## Practical Application: "The Hip Lead Drill"
 Stand in front of a mirror and practice the backhand take-back. Focus on rotating your hips away from the net before your shoulders. Hold the coiled position for a moment, feeling the stretch in your core. Then rotate forward, leading with the hips. Repeat slowly until the hip lead becomes automatic, then accelerate to full speed.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

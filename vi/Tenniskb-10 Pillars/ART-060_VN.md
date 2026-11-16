@@ -45,3 +45,10 @@ Slice và backspin được tạo ra bởi đường vợt cao-đến-thấp k�
 
 ## Ứng Dụng Thực Tế: "Nghiêng Chặt"
 Slice về cơ bản là chuyển động chặt: vợt xuống bóng từ cao đến thấp, với mặt mở. Luyện tập bằng cách cầm vợt ở độ cao vai và chặt xuống qua bóng, chải phía sau bóng với mặt mở. Càng chặt xuống mạnh, càng tạo nhiều backspin. Dùng slice để giành thời gian khi phòng thủ, để lên lưới, hoặc đánh bóng nảy thấp khó để đối thủ tấn công.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -58,3 +58,10 @@ Huấn luyện dưới áp lực thời gian giảm dần phát triển khả n�
 ## Ứng Dụng Thực Hành: "Bài Tập Nhận Thức Vùng"
 
 Trước mỗi buổi luyện tập, hãy dành 5 phút để thiết lập vùng chạm của bạn: đứng ở vị trí forehand bình thường và nhận bóng từ đồng đội với các chiều cao và tốc độ khác nhau. Ghi nhận điểm va chạm nơi bạn cảm thấy có công suất và kiểm soát tối đa—đây là vùng tối ưu của bạn. Đánh dấu nó trong đầu (hoặc vật lý bằng nón đánh dấu), và trong phần còn lại của buổi luyện tập, tập trung vào việc định vị mình sao cho bóng đến trong vùng này.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

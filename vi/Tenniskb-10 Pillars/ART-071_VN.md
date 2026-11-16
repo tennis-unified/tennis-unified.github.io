@@ -57,3 +57,10 @@ Sử dụng các biện pháp khách quan để xác nhận quan sát:
 
 ## Ứng Dụng Thực Tế: "Quy Trình Kiểm Toán"
 Thực hiện kiểm toán rò rỉ động học trên bản thân hoặc người chơi của bạn bằng khung 4 giai đoạn. Bắt đầu bằng quan sát, sau đó phân tích từng đoạn, rồi đánh giá thời điểm, và cuối cùng xác nhận bằng kiểm tra khách quan. Ghi lại phát hiện và thiết kế can thiệp nhắm mục tiêu cho từng rò rỉ đã xác định. Kiểm toán định kỳ ( 4-6 tuần / lần ) cho phép theo dõi tiến độ và đảm bảo can thiệp có hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Động học góc và chuỗi động học tuần tự*
+<!-- TAICHIKB-CROSSREF-END -->

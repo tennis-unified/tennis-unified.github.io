@@ -120,3 +120,10 @@ Hit two serves to the same side to establish a pattern, then break the pattern w
 ## Practical Application: "The Target Rotation"
 
 Place three targets in the service box: one wide, one at the body, and one at the T. Hit 10 serves to each target in random order, calling out your target before each serve. This drill develops the ability to place serves precisely on demand, a skill that is far more valuable in matches than simply serving hard. Track your success rate for each placement and identify which targets need the most work.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

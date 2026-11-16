@@ -60,3 +60,10 @@ Người chơi gặp khó khăn với slice một tay thường được lợi t
 
 ## Ứng Dụng Thực Tế: "Bài Tập Slice Một Tay"
 Đứng ở vạch gốc và đánh mười cú backhand slice một tay, tập trung vào việc tạo ra cú nảy thấp, trượt trên sau khi chạm sân. Sau mỗi cú đánh, ghi nhận xem quả bóng có dưới độ cao lưới sau khi nảy không. Nếu bóng nảy cao, mặt vợt đang mở quá hoặc đường cong quá dốc. Điều chỉnh cho đến khi ít nhất bảy trong mười cú đánh trượt thấp, giúp xây dựng cảm giác cho một cú slice một tay tấn công.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

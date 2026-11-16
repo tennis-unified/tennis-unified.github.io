@@ -56,3 +56,10 @@ Kết hợp 10 phút rèn luyện thị giác vào thói quen hàng ngày. Bắt
 | Người chơi khó nhìn bóng trên một số nền | Độ nhạy tương phản giảm | Mất bóng; đánh giá sai | Rèn luyện độ nhạy tương phản; bài tập bóng màu; đánh giá điều chỉnh thị lực |
 | Người chơi mất tập trung trong điểm dài | Mệt mỏi nhận thức; tập trung thị giác kém | Lỗi quyết định; lỗi tự vương | Rèn luyện mắt tĩnh lặng; bài tập kiểm soát chú ý; quản lý mệt mỏi tinh thần |
 | Người chơi có tật khúc xạ không điều chỉnh | Suy giảm thị lực; khiếm khuyết thị lực có thể điều chỉnh | Giảm thành tích; rủi ro an toàn | Khám mắt toàn diện; điều chỉnh thị lực phù hợp; đeo kính áp tròng |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

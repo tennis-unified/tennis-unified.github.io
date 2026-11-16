@@ -64,3 +64,10 @@ This has a critical implication for training: players must develop the ability t
 ## Practical Application: "The Pre-Commit Focus"
 
 Since mid-contact adjustment is impossible, focus all your attention on establishing the correct parameters before contact. For each shot, commit to a specific face angle, swing path, and contact point before beginning the forward swing. Once the swing begins, trust your preparation and let the contact happen. This mental approach eliminates the temptation to adjust during contact and leads to more consistent shot quality.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+<!-- TAICHIKB-CROSSREF-END -->

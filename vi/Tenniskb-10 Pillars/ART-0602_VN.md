@@ -68,3 +68,10 @@ Volley tay khác thưởng cho kỹ thuật ngắn gọn, xoay vai và cầm v�
 ## Ứng Dụng Thực Tế: "Xoay Và Đảo Hướng"
 
 Tập trung vào xoay vai như động cơ của volley tay khác. Sự đảo hướng đến từ sự xoay của thân cơ thể tiếp xúc với tốc độ bóng đến — không phải từ sức mạnh cánh tay. Hãy nghĩ cơ thể bạn như một lò xo lưu trữ và giải phóng năng lượng thông qua xoay nhỏ gọn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

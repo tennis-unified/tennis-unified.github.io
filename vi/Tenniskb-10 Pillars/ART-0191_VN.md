@@ -34,3 +34,10 @@ Xây dựng thói quen một cú một, bốn bước mỗi khối:
 2. **Qua cổng.** HLV cho bóng tốc độ vừa; cổng hai cọc đứng 2 m hướng tọa độ phục hồi. Người chời phải qua cổng trước khi bóng đến dây vợt HLV.
 3. **Đếm tượng.** Trên video 120 fps, đếm khung hình đứng yên sau tiếp xúc cho 10 cú. Mục tiêu: dưới 3 khung (25 ms) đứng yên thật trên 7/10.
 4. **Gọi hướng ngẫu nhiên.** HLV gọi hướng phục hồi tại tiếp xúc, buộc chuyển hướng phải điều khiển được chứ không phải rãnh đã luyện.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Động lực học tuyến tính, GRF và xung lượng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -56,3 +56,10 @@ The COR varies slightly depending on the contact location on the string bed. Con
 ## Practical Application: "The Vector Feel"
 
 Practice hitting forehands with conscious awareness of the impulse vector's direction. For each shot, visualize the vector as an arrow extending from the racquet face through the ball. For heavy topspin, the arrow points up and forward. For a flat drive, the arrow points more forward. For a slice, the arrow points down and forward. This visualization helps you consciously control the force vector and develop the ability to vary it for different shot types.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Linear kinetics, GRF & impulse-momentum*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+<!-- TAICHIKB-CROSSREF-END -->

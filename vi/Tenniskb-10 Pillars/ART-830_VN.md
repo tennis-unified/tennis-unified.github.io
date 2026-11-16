@@ -188,3 +188,10 @@ Tạo một kế hoạch sự nghiệp hàng năm toàn diện:
 | Áp lực tài chính ảnh hưởng hiệu suất | Tài trợ không đủ, quản lý tài chính kém | Căng thẳng, giải nghệ sớm | Phát triển chiến lược tài trợ; lập kế hoạch tài chính với cố vấn |
 | Thi đấu quá nhiều và mệt mỏi | Không có thời gian nghỉ có cấu trúc, chạy theo điểm xếp hạng | Chấn thương, kiệt sức, hiệu suất giảm | Triển khai các tuần nghỉ; ưu tiên chất lượng hơn số lượng |
 | Phát triển tài trợ kém | Hiện diện truyền thông thấp, không có đại lý | Bỏ lỡ cơ hội doanh thu | Xây dựng hồ sơ truyền thông; thuê đại lý chuyên nghiệp |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

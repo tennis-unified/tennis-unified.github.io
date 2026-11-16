@@ -76,3 +76,10 @@ Huấn luyện sức mạnh bằng hông cho forehand tư thế mở bao gồm:
 ## Ứng Dụng Thực Tế: "Bật Hông"
 
 Thực hành sức mạnh bằng hông bằng cách đánh forehand ở tư thế mở với sự tập trung có ý thức vào xoay hông. Cảm nhận hông xoay mạnh hướng về mục tiêu, được dẫn dắt bởi chân sau đẩy vào mặt đất. Cảm giác "bật hông" này chính là cốt lõi của cơ chế sản sinh sức mạnh của forehand tư thế mở.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

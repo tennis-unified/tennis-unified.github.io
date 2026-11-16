@@ -133,3 +133,10 @@ Học Viện Là Nhà Máy Sản Xuất Ra Vận Động Viên 5 Cột Trụ. "K
 
 ## Ứng Dụng Thực Tế: "Bảng Ghi Của Quản Xí Nhà Máy"
 Kế Hoạch Hệ Thống Học Viện Là **Bảng Ghi Của Quản Xí Nhà Máy**. Nó Đảm Bảo Mọi Trạm (Sân, Gym, Lớp Học, Văn Phòng) Biết *Cái Gì* Cần Sản Xuất, *Cách* Sản Xuất, *Khi Nào* Kiểm Tra, Và *Ai* Chịu Trách Nhiệm. Kế Hoạch Sự Nghiệp VĐ (BÀI-191) Và Kế Hoạch Chương Trình HLV (BÀI-192) Là **Đơn Đặt Hàng** Chảy Qua Nhà Máy Này. **Nếu Bản Vẽ Nhà Máy Không Khớp Với Đơn Đặt Hàng, Bạn Sẽ Nhận Được Sản Phẩm Lỗi.** Căn Chỉnh Hệ Thống. Kiểm Toán Đầu Ra. Cải Tiến Quy Trình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -51,3 +51,10 @@ Optimal postural alignment is the foundation of efficient tennis movement and st
 
 ## Practical Application: "The Posture Check"
 Before each point, perform a quick posture check: feet shoulder-width, knees bent, weight forward, trunk tall, shoulders relaxed. This simple check ensures you're in the optimal ready position to move and stroke effectively.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Dynamic balance & directional control*
+<!-- TAICHIKB-CROSSREF-END -->

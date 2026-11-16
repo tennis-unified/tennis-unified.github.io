@@ -65,3 +65,10 @@ Các phương pháp huấn luyện khác nhau nhắm vào các giai đoạn khá
 ## Ứng Dụng Thực Tế: "Giải Phẫu Lỗi"
 
 Sau mỗi lỗi trong buổi tập hoặc thi đấu, hãy tiến hành một "giải phẫu lỗi" nhanh để xác định giai đoạn xử lý đã thất bại. Đó có phải là lỗi phát hiện (không nhìn rõ bóng)? Lỗi nhận diện (đọc sai chiều xoáy)? Lỗi lựa chọn (chọn sai cú đánh)? Lỗi lập trình (kỹ thuật kém)? Hay lỗi thực thi (hạn chế về thể chất)? Cách chẩn đoán có hệ thống này ngăn việc đưa ra những đánh giá chung chung kiểu "tôi chơi tệ" và cho phép huấn luyện khắc phục đúng vào giai đoạn cụ thể đã thất bại.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

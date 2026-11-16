@@ -84,3 +84,10 @@ Excessive or poorly directed GRFs contribute to common tennis injuries. High ver
 
 ## Practical Application: "Vector Awareness"
 Develop the court sense to feel not just that you push off, but the angle and direction of your push. Elite players unconsciously adjust their ground force vector for every situation—tilting forward to sprint, tilting backward to stop, tilting sideways to slide. Drill this awareness by practicing movement patterns on different court surfaces, paying attention to how your foot push-off angle changes with each direction. The court talks through your feet; learn its language.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Linear kinetics, GRF & impulse-momentum*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

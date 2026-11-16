@@ -72,3 +72,10 @@ The total cycle time for a quiet landing-rebound is 150-250 ms. For a loud landi
 ## Practical Application: "Land Like a Cat"
 
 The single most effective coaching image: **land like a cat dropping from a fence.** Cats land silently because they use their forelimbs to decelerate smoothly, absorb impact through multiple joints, and transition immediately into the next movement. The tennis equivalent is a forefoot-first landing with coordinated ankle-knee-hip flexion and an immediate transition to rebound. At the next session, have the player perform 10 split-steps with the sole goal of silence. No direction, no speed — just silence. Then add the directional push-off while maintaining the quiet landing. The player who lands silently gains 50-150 ms of free time on every step — time that was previously being wasted as sound.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Dynamic balance & directional control*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

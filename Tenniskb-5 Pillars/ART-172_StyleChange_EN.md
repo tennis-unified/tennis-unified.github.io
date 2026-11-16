@@ -89,3 +89,10 @@ Every elite player must evolve: adding a weapon, changing a grip, shifting game 
 
 ## Practical Application: "The Architect"
 You don't renovate a house by smashing walls while living in it. You build the new wing (Phase 1), stress-test it (Phase 2), then open the door (Phase 3). The athlete is the occupant; the coach is the architect. The blueprint is the 5-Pillar system. The permit is the Protection Window. Build it right, or the roof collapses.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+<!-- TAICHIKB-CROSSREF-END -->

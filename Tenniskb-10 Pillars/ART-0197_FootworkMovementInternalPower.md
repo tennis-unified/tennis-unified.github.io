@@ -71,3 +71,10 @@ Gym strength must meet the court. The bridge drill is **stop-on-the-coin**: spri
 ## Practical Application: "Build the Brakes Before You Need Them"
 
 Install a twice-weekly 30-minute brake block for the next six weeks: flywheel or heavy-slow squats, drop landings, single-leg eccentric step-downs, and two wall-sit finishes — in that order, 48 hours between blocks, no hard direction-change work the same day. Every fourth session, run the stop-on-the-coin test and record the smallest target hit cleanly at full speed. Players typically see controllable stopping distance shrink by 20-30% across the block — which translates, on court, to striking the ball from the position they chose rather than the position their brakes allowed.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Muscular mechanics: eccentric/concentric & force-velocity*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

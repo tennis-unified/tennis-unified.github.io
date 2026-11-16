@@ -78,3 +78,10 @@ Mục tiêu của huấn luyện vi căng không phải là loại bỏ kích đ
 ## Ứng Dụng Thực Tế: "Ngân Sách Căng Cơ"
 
 Trong buổi tập tiếp theo, giới thiệu khái niệm **ngân sách căng cơ**: người chơi có một lượng căng cơ hữu hạn mỗi set, và mỗi lần co không cần thiết đều chi tiêu từ ngân sách này. Cho người chơi tự đánh giá lực cầm trên thang 1-10 mỗi 5 điểm trong một set tập. Nếu lực cầm vượt 5/10 ở bất kỳ lúc nào, người chơi thực hiện một lần đặt lại 10 giây (lắc tay, thả hàm, hạ cơ thang, hơi thở đặt lại) trước khi tiếp tục. Theo dõi điểm cầm qua set — hầu hết người chơi bắt đầu ở 7-8/10 và dần học cách duy trì 3-4/10 mà không mất kiểm soát. Sau 2-3 tuần theo dõi, người chơi phát triển một đồng hồ đo nội tại cho mức căng và bắt đầu tự sửa không cần nhắc nhở bên ngoài. Kết quả là mức tăng đo được trong tầm xoay vai (5-15°), giảm mệt cẳng tay, và cải thiện cảm giác chạm ở các cú bóng tinh tế — tất cả đến từ việc giải phóng năng lượng vốn đã bị tiêu xài, nhưng không tạo ra công hữu ích nào.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

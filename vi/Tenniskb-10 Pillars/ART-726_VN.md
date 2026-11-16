@@ -49,3 +49,10 @@ Người chơi nên tập khuôn mẫu bóng thứ tư kiến tạo pha giao tra
 
 ## Ứng Dụng Thực Tế: "Bóng Thứ Tư Là Bóng Kết Liễu"
 Triển khai khuôn mẫu bóng thứ tư kiến tạo pha giao tranh chiến thuật bằng cách cam kết chiến thuật cho một set tập hoàn chỉnh. Theo dõi có bao nhiêu điểm bạn thắng bằng khuôn mẫu so với cách tiếp cận mặc định. Nếu chiến thuật thắng nhiều hơn 55% điểm, tích hợp nó vào kho chiến thuật thường xuyên. Nếu thắng ít hơn, phân tích tại sao: phải chăng do thực hiện của bạn, điều chỉnh của đối thủ hay thời điểm kém? Tinh chỉnh chiến thuật dựa trên phân tích này trước trận đấu tiếp theo.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

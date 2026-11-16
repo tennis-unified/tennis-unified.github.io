@@ -107,3 +107,10 @@ Nhu cầu gập hông-xoay ngoài lặp đi lặp lại của tải tư thế m�
 ## Ứng Dụng Thực Tế: "Mở Dòng Chảy, Đánh Xuyên Qua"
 
 Khi tập luyện cú forehand tiếp theo, có ý thức cho phép hai chân song song với đường cơ sở (tư thế mở hoàn toàn) ở một nửa số cú đánh. Cảm nhận cách hông bạn xoay tự do hơn và cách phục hồi về trung tâm diễn ra tự động. Chìa khóa là duy trì sự ổn định thân trong khi hông làm việc — phần thân trên nên tương đối yên trong khi phần thân dưới tạo ra sự xoay. Cảm giác "hông trước, tay sau" là tinh thần cốt lõi của việc tạo sức mạnh hiện đại.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+<!-- TAICHIKB-CROSSREF-END -->

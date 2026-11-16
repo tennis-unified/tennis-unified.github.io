@@ -38,3 +38,9 @@ As the ball travels, air resistance (drag) slows it down. The Magnus Effect also
 
 ## Practical Application: The "Safety Net"
 Topspin is the player's "safety net." It allows the athlete to swing as hard as physically possible, knowing that the Magnus Effect will pull the ball back into the court. Without spin, the athlete must hit lower over the net, reducing the margin for error.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Projectile aerodynamics & fluid forces*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Magnus effect & spin-driven ball flight*
+<!-- TAICHIKB-CROSSREF-END -->

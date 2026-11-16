@@ -49,3 +49,10 @@ Cài đặt mô hình với phiên ba trạm:
 1. **Ổ tiếp xúc.** Hai cọc cách nhau 1 m, 0.5 m trong đường cuối. Bóng tiập cận cho phải đánh khi cơ thể đang đi qua ổ — bất kỳ tiếp xúc nào được lấy dưới cọc vô hiệu lần lập.
 2. **Chảy bóng.** Sau mỗi tiếp xúc qua ổ, người chơi chảy đến lưới dọc đường dây khớp hướng cú đánh, đếm bước to. Mục tiêu 3-5 bước đến khu vực đường giao bóng, với không có thời điểm vận tốc zero trong chuỗi.
 3. **Điểm đến.** Trận trực tiếp trong đó điểm người chơi phụ thuộc vào vị trí họ tại tiếp xúc đối thủ: trong đường giao bóng gấp đôi điểm. Thắng từ đất không chủ gì điểm — mô hình, không phải kết quả, là mục tiêu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

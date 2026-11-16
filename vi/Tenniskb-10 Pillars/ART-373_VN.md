@@ -72,3 +72,10 @@ Huấn luyện bao gồm:
 ## Ứng Dụng Thực Tế: "Buổi Luyện Tập Bóng Cao"
 
 Luyện tập phòng thủ forehand cao bằng cách nhờ đồng đội cho những quả bóng topspin nặng nảy trên tầm vai. Thử nghiệm cả ba kỹ thuật (đón bóng sớm, lùi bước, tấn công) để phát triển kho kỹ thuật của bạn. Tập trung vào các kỹ thuật đã điều chỉnh: tư thế đứng thẳng, đưa vợt sau rút gọn, quỹ đạo vung ngang hoặc hướng xuống, và vung theo đà rút gọn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

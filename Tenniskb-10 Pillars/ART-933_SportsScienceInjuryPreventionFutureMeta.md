@@ -111,3 +111,10 @@ For time-crunched players, a focused 10-minute power primer performed 2-3 times 
 4. **Hang power clean** — 3 sets of 3 (50-60% of clean 1RM, maximum bar speed)
 
 Rest 90 seconds between sets. This session trains lower-body power, rotational power, reactive strength, and full-body explosive power in 10 minutes. Perform it before tennis practice on non-consecutive days, or as a standalone session in the pre-competition phase. Track your progress: note the medicine ball throw distance, the box jump height, and the bar speed. When the numbers stall, it is time to change the exercise or the load — not to add more volume. Power training rewards precision, not accumulation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Plyometric training & reactive SSC*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

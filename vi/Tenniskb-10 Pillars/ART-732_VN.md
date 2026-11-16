@@ -57,3 +57,10 @@ Người chơi nên luyện tập forehand inside-out kết hợp với ít nh�
 ## Ứng Dụng Thực Tế: "Chạy Vòng Qua, Vung Tay Dữ Dội"
 
 Triển khai forehand inside-out bằng cách cam kết dùng chiến thuật này suốt một set tập luyện. Theo dõi số điểm bạn giành được khi dùng khuôn mẫu này so với cách đánh mặc định. Nếu chiến thuật ăn được hơn 55% số điểm, hãy đưa nó vào kho chiến thuật thường xuyên của bạn. Nếu ít hơn, hãy phân tích lý do: là do sự thực thi của bạn, sự điều chỉnh của đối thủ, hay thời điểm chọn sai? Tinh chỉnh chiến thuật dựa trên phân tích này trước trận đấu tiếp theo.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -44,3 +44,10 @@ Truyền năng lượng là quá trình truyền năng lượng từ mặt sân 
 
 ## Ứng Dụng Thực Tế: "Trái Tay Hoàn Chỉnh"
 Vận động viên nên cảm nhận rằng trái tay là "hoàn chỉnh" và tích hợp với chuỗi động học. Vận động viên nên cảm nhận năng lượng chảy từ mặt sân, qua vùng lõi và ra ngoài qua vợt. Đây là mục tiêu cuối cùng của Hệ Thống 5 Cột Trụ: tạo ra một vận động viên hoàn chỉnh, tích hợp, thực hiện một cách không gắng sức ở tiềm năng đỉnh cao của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú trái tay hai tay và một tay*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng và lực nén ngực trong cú trái tay*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Cơ ngực lớn, cơ delta sau và nhóm cơ duỗi cẳng tay*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -121,3 +121,10 @@ Teach players the three-phase movement sequence:
 5. **Update in real time.** If the read changes during the first step, adjust. The pre-step is reversible; the full commitment is not.
 
 The goal is not to be right every time on the pre-step — it is to be early every time on the full first step. A player who moves early and adjusts will almost always beat a player who waits for certainty and then moves. The recognition window is not a problem to solve — it is a resource to exploit.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

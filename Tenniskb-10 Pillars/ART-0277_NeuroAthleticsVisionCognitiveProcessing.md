@@ -60,3 +60,10 @@ Track your arousal level and performance in different situations. Identify the a
 
 ## Practical Application: "The Arousal Dial"
 Develop an internal "arousal dial" that ranges from 1 (low arousal) to 10 (high arousal). Before and during matches, assess your arousal level. If you are below your optimal zone (typically 4-7), use energizing techniques: quick movements, energetic self-talk, and aggressive visualization. If you are above your optimal zone, use calming techniques: deep breathing, relaxation, and smooth self-talk. This dial allows you to fine-tune your arousal level for peak performance in any situation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Mindfulness & flow state in sport*
+<!-- TAICHIKB-CROSSREF-END -->

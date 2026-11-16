@@ -32,3 +32,10 @@ The brain must manage this sequence in roughly 0.2 seconds.
 
 ## Practical Application: The "Click" Sensation
 When the kinetic chain is perfectly timed, the player feels a "click"—a sensation of effortless power where the ball seems to launch itself off the racket. This is the feeling of Neuro-Kinetic Fusion.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 4 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch04.html) — *Neurologic considerations for movement timing*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Sensory, motor, and cerebellar timing integration*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Coordination continuum & kinetic fusion*
+<!-- TAICHIKB-CROSSREF-END -->

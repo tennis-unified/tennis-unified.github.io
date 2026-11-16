@@ -70,3 +70,10 @@ Rooting is measurable as the relationship between ground reaction force and body
 ## Practical Application: "Sole to Soul"
 
 Give the player one image: **the sole of the foot is the root, and the soul of the stroke lives in that connection.** Every time the foot plants, the player should feel the ground through the sole — not as a passive platform but as an active partner in force production. At the next session, have the player perform 10 groundstrokes with bare feet (on a clean court or mat) to maximize proprioceptive feedback from the soles. Then put shoes back on and try to maintain the same level of ground-feeling. The barefoot experience recalibrates the rooting sense, and the player who can feel the ground through their shoes gains a measurable advantage in both power and stability.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

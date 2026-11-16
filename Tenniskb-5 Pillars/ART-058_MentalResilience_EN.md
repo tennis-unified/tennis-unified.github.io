@@ -53,3 +53,10 @@ Mental resilience and pressure calibration must be integrated to support the tec
 
 ## Practical Application: The "Resilient Athlete"
 The athlete should feel that they are "resilient" and able to perform under pressure. The athlete should feel that they are in control of their emotions and able to manage stress effectively. This is the ultimate goal of the 5-Pillar System: to create a complete, integrated athlete who performs effortlessly at their peak potential.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 22: Chương 22: Tự Kiểm Soát Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch22.html) — *Self-control & emotional regulation in competitive sport*
+- [Chương 27: Chương 27: Hiệu Quả Bản Thân, Quan Hệ, và Tập Thể ở Vận Động Viên — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch27.html) — *Self-efficacy & confidence calibration under pressure*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Competitive stress management & performance resilience*
+<!-- TAICHIKB-CROSSREF-END -->

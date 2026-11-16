@@ -194,3 +194,10 @@ Tổ chức cuộc họp lập kế hoạch hàng năm (Tháng 10-11) với toà
 | Mệt mỏi và kiệt sức giữa mùa giải | Không đủ nghỉ ngơi, lịch thi đấu quá tải | Chấn thương, hiệu suất suy giảm | Thêm các tuần nghỉ ngơi; giảm khối lượng giải đấu; ưu tiến chất lượng hơn số lượng |
 | Chuyển đổi bề mặt sân kém | Thời gian chuyển đổi không đủ, không có chuẩn bị cụ thể theo bề mặt | Kết quả kém trong các tháng chuyển đổi | Kéo dài thời gian chuyển đổi; triển khai các khối huấn luyện cụ thể theo bề mặt sân |
 | Hiệu suất không nhất quán trong mùa giải | Không có khối huấn luyện có cấu trúc, lựa chọn giải đấu kém | Kết quả không thể dự đoán | Triển khai các khối huấn luyện có cấu trúc; tối ưu hóa việc lựa chọn giải đấu |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

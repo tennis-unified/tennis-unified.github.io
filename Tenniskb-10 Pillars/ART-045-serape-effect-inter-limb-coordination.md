@@ -91,3 +91,10 @@ Both limbs working together:
 
 ## Practical Application: "The Diagonal Dance"
 Imagine your body performing a diagonal dance: when your right arm swings forward, your left leg drives backward (and vice versa). This diagonal coordination is the essence of the serape effect. Practice this by performing a groundstroke and consciously feeling the diagonal connection between your hitting arm and your push-off leg. In a forehand, feel your right arm accelerating forward while your left leg drives backward. This diagonal dance is the secret behind the powerful, coordinated rotation of elite tennis players. The more you can feel and enhance this diagonal connection, the more powerful and efficient your strokes become.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

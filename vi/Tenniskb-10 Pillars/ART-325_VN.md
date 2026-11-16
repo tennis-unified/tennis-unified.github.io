@@ -70,3 +70,10 @@ Một bài tập hiệu quả khác là "tập shadow có dừng": thực hiện
 ## Ứng Dụng Thực Tiễn: "Bài Tập Nhịp Điệu"
 
 Tập forehand với một mô hình nhịp điệu có chủ đích: đếm "1" trong lúc xoay thân (mất 3 giây ở tốc độ chậm), "2" tại vị trí sẵn sàng (dừng 1 giây), và "3" trong lúc đà đánh về phía trước (tăng tốc 1 giây). Tỷ lệ 3:1:1 này thiết lập nhịp điệu chậm-nhanh tối đa hóa sức mạnh. Dần dầu tăng tốc độ đếm trong khi duy trì tỷ lệ, cho đến khi nhịp điệu cảm thấy tự nhiên ở tốc độ tối đa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

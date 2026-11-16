@@ -177,3 +177,10 @@ Cách tiếp cận có cấu trúc này đảm bảo buổi xem lại được t
 | Lỗi kỹ thuật dai dẳng dù đã huấn luyện bằng lời nói | Phản hồi thị giác không đủ, vận động viên không cảm nhận được lỗi | Phát triển kỹ thuật chững lại | Phân tích video với so sánh quay chậm đối với mô hình lý tưởng |
 | Các mẫu chiến thuật không được thực thi trong trận đấu | Huấn luyện chiến thuật dựa trên video không đủ | Lựa chọn cú đánh ngẫu nhiên, mất lợi thế | Phân tích video các mẫu chiến thuật; xem lại video trận đấu |
 | Vận động viên gạt bỏ phản hồi của huấn luyện viên | Truyền đạt phản hồi kém, phản ứng phòng thủ | Giảm hiệu quả huấn luyện | Tái cấu trúc cách truyền đạt phản hồi; đưa vận động viên tham gia vào quá trình phân tích |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

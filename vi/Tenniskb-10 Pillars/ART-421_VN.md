@@ -65,3 +65,10 @@ Cú slice tấn công, đôi khi được gọi là "drive slice" hoặc "cuttin
 
 ## Ứng Dụng Thực Tế: "Bài Kiểm Tra Trượt"
 Thực hiện mười cú slice tay lui vượt lưới tập trung vào việc tạo ra nảy bóng thấp và trượt. Sau mỗi cú đánh, ghi chú xem bóng có ở dưới độ cao lưới sau khi nảy hay không. Bóng nảy cao nghĩa là mặt vợt quá hở hoặc đường đi quá dốc. Điều chỉnh cho đến khi ít nhất bảy trong mười cú đánh trượt thấp, xây dựng cảm giác cho cú slice tấn công.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

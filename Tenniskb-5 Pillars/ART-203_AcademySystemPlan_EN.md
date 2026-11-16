@@ -133,3 +133,10 @@ The Academy is the factory that produces the 5-Pillar athlete. The "Academy Syst
 
 ## Practical Application: "The Factory Foreman's Clipboard"
 The Academy System Plan is the **Factory Foreman's Clipboard**. It ensures every station (court, gym, classroom, office) knows *what* to produce, *how* to produce it, *when* to inspect it, and *who* is accountable. The Athlete Career Plan (ART-191) and Coach Program Plan (ART-192) are the **Work Orders** flowing through this factory. **If the factory blueprint doesn't match the work orders, you get defective products.** Align the system. Audit the output. Improve the process.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

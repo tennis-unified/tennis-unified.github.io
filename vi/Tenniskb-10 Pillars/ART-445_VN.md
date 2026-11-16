@@ -60,3 +60,10 @@ Người chơi nên kết hợp các bài tập này vào lịch trình tập lu
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Follow-Through"
 Trong quá trình tập luyện, yêu cầu người đồng đội quan sát follow-through backhand của bạn. Đối với topspin drive, vợt nên kết thúc trên vai hoặc gần đầu bạn. Đối với slice, vợt nên kết thúc ở vị trí ngang thắt lưng. Đối với flat drive, vợt nên kết thúc ở vị trí ngang vai. Nếu follow-through của bạn quá ngắn hoặc không nhất quán, hãy điều chỉnh cho đến khi nó đầy đủ và kiểm soát tốt.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

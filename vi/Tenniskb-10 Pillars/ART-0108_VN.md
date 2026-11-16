@@ -84,3 +84,10 @@ Cho người chơi một hình ảnh: **hạ chân sẵn sàng đi, không phả
 3. **Lái.** Hạ chân là thực thi. Bước đầu tiên là cú lái dọc theo véc tơ đã thiết lập trước — không lắp bắp, không dịch, không xây dựng. Huấn luyện viên quan sát cú lái: chuyển động bùng nổ đơn từ khung hình đầu tiên.
 
 Người chơi hạ chân thiết lập trước không di chuyển nhanh hơn ở bước đầu tiên — họ đơn giản không bao giờ trả thuế 30-80 ms mà người hạ chân trung lập trả trên mỗi lần giao.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

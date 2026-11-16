@@ -68,3 +68,10 @@ Huấn luyện bao gồm:
 ## Ứng Dụng Thực Tế: "Quan Sát Độ Nảy"
 
 Trong lúc tập luyện, quan sát độ nảy của cú forehand topspin. Ghi chú chiều cao, góc và tiến lên của mỗi lần nảy. So sánh độ nảy của cú đánh xoáy cao (3000+ RPM) với cú đánh xoáy thấp (1000 RPM hoặc ít hơn) để hiểu cách tốc độ xoáy ảnh hưởng đến độ nảy. Sử dụng nhận thức này để điều chỉnh tốc độ xoáy dựa trên tình huống chiến thuật.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

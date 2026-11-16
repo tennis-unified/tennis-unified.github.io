@@ -36,3 +36,9 @@ The impact is not just about the ball; it is about the interaction between the b
 
 ## Practical Application: The "Pre-Impact" Rule
 The player should focus 100% of their mental energy on the 100 milliseconds *before* impact. Once the ball is within the contact window, the outcome is already determined. "Prepare for impact, then let it happen."
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Impulse-Momentum theorem (F·Δt = m·Δv)*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Impulsive force in ball-racket collision*
+<!-- TAICHIKB-CROSSREF-END -->

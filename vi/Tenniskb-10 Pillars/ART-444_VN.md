@@ -55,3 +55,10 @@ Những người chơi gặp khó khăn về cơ học khuỷu tay thường đ�
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Khuỷu Tay"
 Trong lúc tập luyện, hãy nhờ đồng đội quan sát cú vung backhand của bạn và kiểm tra vị trí khuỷu tay. Tại thời điểm tiếp bóng, khuỷu tay của bạn phải hơi gập chứ không bị khóa cứng. Trong giai đoạn vung theo đà (follow-through), khuỷu tay phải duỗi ra một cách mượt mà. Nếu khuỷu tay của bạn bị khóa cứng hoặc di chuyển tách rời khỏi cơ thể, hãy điều chỉnh cho đến khi vị trí đó cảm thấy tự nhiên và tạo ra những cú bóng ổn định.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

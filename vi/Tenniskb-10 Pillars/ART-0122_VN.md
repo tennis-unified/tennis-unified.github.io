@@ -75,3 +75,10 @@ Huấn luyện hiệu suất nhổ trọng đòi hỏi thay đổi môi hình n�
 ## Ứng Dụng Thực Tế: "Thả, Không Nhảy"
 
 Tín hiệu huấn luyện đơn biến đổi hiệu suất nhổ trọng: **thả vào bước nhảy, không nhảy vào nó.** Một lần thả là một sự giải phóng — đất ngừng hỗ trợ bạn và bạn rơi lên. Một lần nhảy là một cú đẩy — bạn lái chống lại đất và lãng phí thời gian và năng lượng. Ở buổi tập tiếp theo, hãy để người chơi thực hiện năm bước nhảy shadow tập trung chỉ vào khoảnh khắc ngay trước khi chân rời đất: "Buông đất. Đừng đẩy nó." Sau đó tích hợp cảm giác tương tự vào split-step thực tế đối diện bóng đánh. Sự khác biệt là ngay lập tức — bước nhảy trở nên nhỏ hơn, yên tĩnh hơn, và nhanh hơn, và bước đầu tiên sau khi hạ cánh giành được 20-40 ms thời gian sử dụng được.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Động lực học tuyến tính, GRF và xung lượng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

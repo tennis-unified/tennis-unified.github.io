@@ -124,3 +124,10 @@ Tiếp đất mất thăng bằng làm chậm chuyển động phục hồi và 
 ## Ứng Dụng Thực Tế: "Phục Hồi Nón"
 
 Đặt một nón ở vị trí phục hồi tối ưu cho mỗi loại giao bóng. Sau mỗi giao bóng, chạy nhanh đến nón và giả định vị trí sẵn sàng. Đo thời gian của bản thân — mục tiêu dưới 2 giây từ tiếp đất đến vị trí sẵn sàng. Bài tập này phát triển thói quen chuyển động phục hồi ngay lập tức và giúp bạn tìm vị trí tối ưu cho mỗi loại giao bóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

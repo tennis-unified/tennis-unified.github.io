@@ -154,3 +154,10 @@ Progression: Add movement before the approach, increase the difficulty of the pa
 | Volleys consistently go long | Excessive swing, open racket face | Errors, lost points | Shadow volleys with shortened motion; punch drill with target |
 | Poor approach shot quality | Weak approach shot technique, poor timing | Failed approaches, hit on the transition | Approach shot drills from various court positions |
 | Frequently lobbed | Predictable volley placement, poor positioning | Lost points, frustration | Disguise drills; practice varying net depth |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -59,3 +59,10 @@ Mất cân bằng khi vung vợt ra sau hoặc vung về phía trước cho th�
 
 ## Ứng Dụng Thực Tế: "Bài Tập Nhận Diện Thế Đứng"
 Nhờ một người bạn đánh mười quả bóng sang phía đánh bằng của bạn, thay đổi vị trí từ xa hai bên vào đến giữa sân. Với mỗi quả bóng, hãy hô rõ thế đứng dự định trước khi vung vợt: "đóng", "mở" hoặc "trung lập". Thực hiện cú đánh và đánh giá xem thế đứng đó có mang lại kết quả tốt hay không. Theo thời gian, bài tập này sẽ rèn cho bạn khả năng tự động chọn thế đứng dựa trên vị trí bóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

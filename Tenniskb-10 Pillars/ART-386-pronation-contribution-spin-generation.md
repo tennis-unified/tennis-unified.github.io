@@ -60,3 +60,10 @@ Training involves:
 ## Practical Application: "The Pronation and Spin Drill"
 
 Practice the pronation contribution to spin by hitting forehands with a conscious focus on the forearm rotation. Feel your forearm rotating inward as the racquet accelerates through contact, and notice how this rotation lifts the racquet head and increases the upward brush. Use a spin measurement device to verify that your pronation is contributing to higher spin rates.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Elbow, forearm pronation & wrist mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

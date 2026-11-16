@@ -39,3 +39,10 @@ The honest starting point: raw simple reaction time is largely fixed and barely 
 
 ## Practical Application: "Read the Body, Not the Ball"
 The ball is too late to be informative. Train your eyes on the server's toss, shoulders, and racket, and train your mind on their patterns — because the fastest returners are not the quickest reflexes but the earliest readers. Spend ten minutes a week on predict-and-verify drills, state your return plan before big points, and accept that a wrong read is the tuition for a thousand right ones. In tennis, being early is a skill; being surprised is a choice.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Sensorimotor integration & motor control*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

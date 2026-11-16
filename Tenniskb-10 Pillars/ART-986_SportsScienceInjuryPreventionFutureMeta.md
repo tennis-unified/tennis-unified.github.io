@@ -184,3 +184,10 @@ Research suggests both mechanisms can cause choking:
 ## Practical Application: "Embrace the Moment"
 
 The next time you face a break point or championship point, instead of trying not to think about the pressure, embrace it: "This is why I play tennis. This is the moment I've trained for." Take a deep breath, focus on your pre-point routine, and trust your training. Remember that your body knows how to hit a tennis ball — you've done it thousands of times. Your job is not to control every detail of the motion; it is to get out of your own way and let your automatic skills execute. Focus on the target, not the technique. Focus on the next point, not the outcome. The pressure is not your enemy — it is the stage on which you showcase your preparation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

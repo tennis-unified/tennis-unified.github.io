@@ -41,3 +41,10 @@ Huấn luyện liên môn phải được tích hợp với Hệ Thống 5 Cột
 
 ## Ứng Dụng Thực Tế: "Vận Động Viên Hoàn Chỉnh"
 Vận động viên nên cảm nhận rằng họ là "hoàn chỉnh" và có thể thi đấu dưới các yêu cầu của tennis. Vận động viên nên cảm nhận rằng họ được tích hợp với Hệ Thống 5 Cột Trụ và có thể thi đấu ở tiềm năng đỉnh cao của mình. Đây là mục tiêu cuối cùng của Hệ Thống 5 Cột Trụ: tạo ra một vận động viên hoàn chỉnh, tích hợp, thực hiện một cách không gắng sức ở tiềm năng đỉnh cao của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 21: Huấn luyện vận động viên — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch21-huan-luyen-van-dong-vien.html) — *Huấn luyện vận động viên đa phương thức*
+- [Chương 10: Anatomy Trains trong Vận Động — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch10-anatomy-trains-trong-van-dong.html) — *Đường gân cơ mạc trong vận động toàn thân*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Tập chéo Thái Cực cho thăng bằng và lực xoay*
+<!-- TAICHIKB-CROSSREF-END -->

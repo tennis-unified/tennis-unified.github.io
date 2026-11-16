@@ -84,3 +84,10 @@ Chiều rộng tư thế tối ưu tỷ lệ chủ yếu với chiều dài châ
 ## Ứng Dụng Thực Tế: "Đo Lực Đẩy Của Bạn"
 
 Ở buổi tập tiếp theo, hãy để người chơi đứng ở ba chiều rộng tư thế khác nhau — hẹp (ngang vai), trung bình (1.3 × chiều rộng vai), và rộng (1.6 × chiều rộng vai). Từ mỗi tư thế, thực hiện một bước nhảy ngang xa nhất có thể. Đo khoảng cách bao phủ. Tư thế tạo ra bước nhảy ngang dài nhất (không phải cao nhất) là chiều rộng đẩy tối ưu. Đánh dấu chiều rộng này bằng băng dính trên sân và thực hành hạ cánh ở chiều rộng này trong split-step. Trong một buổi tập, người chơi sẽ phát triển cảm giác cho chiều rộng chính xác, và bước đầu tiên sẽ giành được 15-25 cm tầm với mà không cần tăng nỗ lực.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

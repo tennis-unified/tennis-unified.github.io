@@ -45,3 +45,10 @@ Phát triển trẻ không phải là tennis chuyên nghiệp thu nhỏ. Đó l�
 
 ## Ứng Dụng Thực Tế: "Quy Tắc 10 Năm"
 Cần ~10 năm / 10,000 giờ *chơi và tập luyện có chủ đích* để đạt đẳng cấp. Quán quân U12 bỏ qua các giai đoạn thường là người bỏ cuộc U18. Xây dựng con người trước, xây dựng vận động viên sau.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 19: Thấu hiểu cơ học-thích-nghi của mô mạc: Ứng dụng vào y học thể thao — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch19-thau-hieu-co-hoc-thich-nghi-cua-mo-mac-ung-dung-vao-y-hoc-the-th.html) — *Cơ học thích nghi và phòng ngừa chấn thương*
+<!-- TAICHIKB-CROSSREF-END -->

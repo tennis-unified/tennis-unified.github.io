@@ -65,3 +65,10 @@ Phục hồi không chỉ là nghỉ ngơi; đó là chuẩn bị cho Trạng Th
 
 ## Ứng Dụng Thực Tế: "Lễ Phục Hồi"
 Vận động viên nên thiết lập một lễ phục hồi sau trận đấu bao gồm tất cả ba cấp độ: thể chất (làm mát, dinh dưỡng), tinh thần (hình dung, phản ánh) và cảm xúc (thư giãn, chánh niệm). Lễ phục hồi này đảm bảo vận động viên được phục hồi đầy đủ và sẵn sàng bước vào Trạng Thái Dòng Chảy cho phiên tiếp theo.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng cơ xương và tái tạo mô*
+- [Chương 5: Tải trọng ứng suất và tái cấu trúc ma trận trong gân và cơ xương: Kích thích cơ học tế bào và tái cấu trúc mô — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch05-tai-trong-ung-suat-va-tai-cau-truc-ma-tran-trong-gan-va-co-xuong.html) — *Tái cấu trúc ma trận gân và mô liên kết*
+- [Chương 18: Hệ Nội Tố (The Endocrine System)](https://taichikb.github.io/vi/books/tortora_ap/ch18-he-noi-to.html) — *Hệ nội tiết trong phục hồi và tái tạo mô*
+<!-- TAICHIKB-CROSSREF-END -->

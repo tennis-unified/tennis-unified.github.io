@@ -43,3 +43,10 @@ Cú cắt bóng tay khác đòi hỏi kỹ thuật volley thấp: cúi sâu đ�
 ## Ứng Dụng Thực Tế: "Hạ Thấp Người, Mở Mặt Vợt, Cắt Xuyên Qua Bóng"
 
 Đối phó với cú cắt bóng tay khác: (1) hạ thấp người với tư thế cúi sâu đầu gối, (2) mở mặt vợt, (3) cắt xuyên qua quả bóng với đường swing từ cao xuống thấp. Càng hạ thấp người, cú volley cắt bóng của bạn càng hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

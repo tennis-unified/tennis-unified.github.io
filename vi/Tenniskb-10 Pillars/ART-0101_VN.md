@@ -76,3 +76,10 @@ Hãy gieo vào người chơi một hình ảnh duy nhất: **bàn chân chạm 
 4. **Hiệp tập khi mệt.** Lặp lại phần chấm điểm sau 20 giây di chuyển chân cường độ cao. Thời điểm đáp chân vẫn vững khi cơ thể mệt mới là thời điểm sẵn sàng cho thi đấu.
 
 Người chơi đáp chân đúng lúc bóng rời dây vợt không hề phản xạ nhanh hơn bất kỳ ai — họ đơn giản là không bao giờ đánh mất quãng thời gian mà mọi người khác đang vô tình bỏ phí.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

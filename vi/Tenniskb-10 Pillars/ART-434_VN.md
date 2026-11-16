@@ -60,3 +60,10 @@ Người chơi gặp khó khăn với cú đánh drive hai tay thường đượ
 
 ## Ứng Dụng Thực Tế: "Bài Tập Vai Trò Hai Tay"
 Thực hành vung vợt bóng ma (shadow swings) backhand hai tay trước gương. Tập trung vào việc tay dưới khởi xướng đường lùi và tay trên dẫn dắt vung vợt về phía trước. Kiểm tra xem hai tay có làm việc cùng nhau, không đối kháng với nhau. Lặp lại cho đến khi vai trò hai tay trở nên tự động, sau đó thực hành với bóng thật.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

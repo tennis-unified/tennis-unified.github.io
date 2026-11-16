@@ -33,3 +33,10 @@ The height at which the ball is contacted relative to the body is a critical det
 
 ## Practical Application: "The Strike Zone"
 Aim to contact the ball in your optimal strike zone—between waist and shoulder height—where you have maximum shot options and power. If the ball is too high, take a step back to let it drop into your strike zone. If the ball is too low, bend your knees to lower your body rather than reaching down with your arm. Maintaining contact in your strike zone is key to consistent, powerful stroke production.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Mindfulness & flow state in sport*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

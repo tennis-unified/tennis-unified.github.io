@@ -83,3 +83,10 @@ Condensed for match use — ten seconds, six silent checks:
 ## Practical Application: "Run the Six"
 
 Give the player one ritual: **ten seconds, six points, before every serve and return — crown, waist, kua, foot, bowl, breath.** Install it in three stages. First, the coach reads the six points aloud until the order is memorized. Second, the player runs it silently before each serve from a basket, the coach spot-checking one point per serve. Third, it goes live: practice points where the checklist is mandatory, and any skipped check voids the point regardless of outcome. Within two sessions the ritual compresses to a breath, and the six principles — suspended head, released waist, folded kua, full foot, level bowl, coupled breath — become not something the player thinks about but something the forehand simply is.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+<!-- TAICHIKB-CROSSREF-END -->

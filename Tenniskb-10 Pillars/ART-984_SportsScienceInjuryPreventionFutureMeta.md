@@ -200,3 +200,10 @@ As you become more expert:
 ## Practical Application: "Train Your Brain, Not Just Your Body"
 
 The next time you practice, pay attention to how your brain feels during different activities. When serving, you should feel almost automatic — the ball toss, the swing, the contact should flow without conscious thought. This is your brain operating in the autonomous mode, which frees your prefrontal cortex for tactical thinking. If you find yourself thinking too much during basic shots, you need more repetition to automate the movement. Conversely, during tactical drills, you should feel fully engaged cognitively — this is your prefrontal cortex working on decision-making. The best training sessions develop both the automatic motor skills and the conscious tactical thinking that together create tennis expertise.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

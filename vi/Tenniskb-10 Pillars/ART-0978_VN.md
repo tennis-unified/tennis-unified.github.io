@@ -47,3 +47,10 @@ Phân tích thất bại theo những cách đặc trưng. Mẫu nhỏ được 
 ## Ứng Dụng Thực Tế: "Ba Con Số Thắng Lợi"
 
 Chọn ba con số định nghĩa bản sắc của bạn như một tay vợt — ví dụ, điểm thắng serve đầu, độ sâu trả bóng qua đường serve, và lỗi trên hai cú đánh đầu tiên của mỗi điểm — và theo dõi chúng mỗi trận đấu tập trong một tháng. Bạn sẽ học nhiều hơn từ ba xu hướng đó so với bất kỳ báo cáo trăm-thống kê nào, bởi vì phân tích không phải là thu thập dữ liệu; đó là biết ba sự thật nào sẽ thay đổi quyết định tiếp theo của bạn, và sau đó đo lường chính xác những thứ đó.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -72,3 +72,10 @@ Volley đấm là cú đánh tấn công tiêu chuẩn ở lưới — gọn gà
 ## Ứng Dụng Thực Tế: "Đấm Xuyên Qua Mục Tiêu"
 
 Hãy hình dung bạn đang đấm quả bóng xuyên qua một tấm mục tiêu đặt cách lưới khoảng 3 mét về phía sân đối phương. Cú đấm được dẫn dắt bởi đôi chân và phần thân trên, còn cánh tay chỉ đóng vai trò truyền lực. Điểm tiếp xúc diễn ra cách bạn khoảng 45 cm về phía trước, và động tác vung theo đà duỗi thẳng về phía mục tiêu. Ngắn gọn. Mạnh mẽ. Dứt khoát.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

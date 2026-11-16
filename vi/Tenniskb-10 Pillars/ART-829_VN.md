@@ -233,3 +233,10 @@ Tạo kế hoạch chuyển tiếp 3-5 năm:
 | Căng thẳng tài chính ảnh hưởng hiệu suất | Lập kế hoạch tài chính kém, kinh phí không đủ | Giảm tập trung, giải nghệ sớm | Lập kế hoạch tài chính; tìm kiếm tài trợ; hỗ trợ từ liên đoàn quốc gia |
 | Nhớ nhà và cô lập | Hỗ trợ không đủ, thích ứng lối sống kém | Vấn đề sức khỏe tinh thần, kiệt sức | Xây dựng mạng lưới hỗ trợ; huấn luyện tâm lý; về nhà thăm định kỳ |
 | Không thể cạnh tranh ở cấp Challenger | Khoảng trống kỹ thuật hoặc thể chất bị lộ ở cấp cao hơn | Mất động lực, giảm thứ hạng | Chương trình phát triển có mục tiêu; quay lại Futures lấy lại tự tin |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Hệ thống năng lượng cho thể lực quần vợt*
+- [Chương 10: Mô Cơ (Muscular Tissue)](https://taichikb.github.io/vi/books/tortora_ap/ch10-mo-co.html) — *Sinh lý mô cơ và cơ chế co cơ*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

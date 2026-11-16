@@ -32,3 +32,10 @@ Khác Với Xoay Đơn Thuần, AOS Truyền Lực **Chéo**. Đây Là Lý Do V
 
 ## Ứng Dụng Thực Tế: "Kéo Dãn Chéo"
 Cảm Giác Phải Là Căng Thẳng Chéo Từ Hông Phải Ra Vai Trái (Cho Tay Phải). Nếu Chỉ Cảm Nhận "Xoay" Ở Eo, Bạn Đang Xoay; Nếu Cảm Nhận "Kéo Dãn" Xuyên Qua Bụng, Bạn Đang Căng Thẳng AOS.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Đường Chức Năng Trước (Dây chéo trước AOS)*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Cơ chéo bụng, cơ khép đùi và cơ ngực lớn*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc qua dây chéo trước*
+<!-- TAICHIKB-CROSSREF-END -->

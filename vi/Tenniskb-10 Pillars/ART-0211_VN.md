@@ -71,3 +71,10 @@ Thực hiện các nhiệm vụ thời gian phản ứng trong khi đồng thờ
 
 ## Ứng Dụng Thực Tế: "Kích Hoạt Sẵn Sàng"
 Phát triển một "kích hoạt sẵn sàng" trước cú đánh - một hành động thể chất hoặc tinh thần cụ thể đặt hệ thống thần kinh của bạn vào trạng thái sẵn sàng cao hơn. Điều này có thể là nhảy sâu trước khi đối thủ đánh, một mô hình hơi thở cụ thể hoặc một từ khóa như "ngay". Kích hoạt này kích hoạt CNV và chuẩn bị đường dẫn thị giác-vận động, giảm SRT hiệu quả của bạn 20-50 ms. Tập kích hoạt này trong mỗi buổi tập cho đến khi nó trở thành một phần tự động của thói quen chuẩn bị của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

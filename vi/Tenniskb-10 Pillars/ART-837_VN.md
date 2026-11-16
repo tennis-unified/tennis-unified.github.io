@@ -200,3 +200,10 @@ Tưởng tượng có thể kiểm soát cho phép bạn:
 | Chỉ hình ảnh hóa kết quả tiêu cực | Tâm lý tiêu cực, lo âu, thiếu tự tin | Giảm sự tự tin; dự đoán thất bại | Huấn luyện hình ảnh hóa tích cực; dừng suy nghĩ; hình ảnh hóa xây dựng tự tin |
 | Tưởng tượng cảm thấy rời rạc với thành tích | Thiếu các yếu tố PETTLEP, thiếu tính thực tế | Tưởng tượng không chuyển hóa sang thành tích | Áp dụng mô hình PETTLEP; sử dụng thời gian thực; bao gồm các yếu tố cơ thể |
 | Không thể kiểm soát tưởng tượng | Thực hành không đủ, lo âu | Tưởng tượng trở nên không kiểm soát và tiêu cực | Huấn luyện khả năng kiểm soát; bắt đầu với hình ảnh đơn giản; thực hành hàng ngày |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

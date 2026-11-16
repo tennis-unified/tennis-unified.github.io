@@ -84,3 +84,10 @@ Make lasting changes to training volume, competition schedule, and recovery prac
 
 ## Practical Application: "The Burnout Monitor"
 Regularly assess your risk of burnout using a simple monitor: (1) motivation level (do you still enjoy tennis?), (2) energy level (do you feel physically and mentally refreshed?), (3) emotional state (do you feel connected to tennis?), (4) performance satisfaction (are you content with your progress?). If any of these indicators are consistently low, take immediate action: reduce training volume, take a break, seek social support, or consult a sports psychologist. Early detection and intervention prevent the full burnout syndrome and allow you to return to tennis with renewed energy and motivation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+<!-- TAICHIKB-CROSSREF-END -->

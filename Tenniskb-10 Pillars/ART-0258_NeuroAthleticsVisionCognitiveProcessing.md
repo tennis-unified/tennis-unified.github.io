@@ -53,3 +53,10 @@ Maintain physical conditioning to support cognitive function. Aerobic fitness, s
 
 ## Practical Application: "The Veteran Edge"
 Leverage your experience as a veteran player. While younger opponents may have faster reflexes and greater working memory capacity, you have a deeper tactical knowledge base, better pattern recognition, and more efficient procedural skills. Design your game plan to maximize these advantages: use tactical variety to force younger opponents into complex decisions, rely on your automated strokes to maintain consistency, and use your experience to anticipate and disrupt your opponent's rhythm. This strategic approach to aging in tennis transforms potential weaknesses into strengths.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

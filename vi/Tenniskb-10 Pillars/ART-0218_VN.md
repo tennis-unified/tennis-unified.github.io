@@ -63,3 +63,10 @@ Luyện tập dưới áp lực thời gian (ví dụ: máy ném bóng đặt �
 ## Ứng Dụng Thực Tế: "Nút Chuyển Số"
 
 Hãy phát triển khả năng chuyển đổi giữa ba cấp số: kiểm soát (ưu tiên chính xác), cân bằng (tốc độ và chính xác ở mức trung bình), và tấn công (ưu tiên tốc độ). Trước mỗi cú đánh, đánh giá tình huống chiến thuật và chọn cấp số phù hợp. Luyện tập việc chọn số này trong các điểm tập luyện, biến nó thành một quyết định có ý thức dần trở thành tự động theo thời gian. Nút chuyển số này biến sự đánh đổi giữa tốc độ và độ chính xác từ một đặc tính cố định thành một công cụ chiến thuật linh hoạt.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+<!-- TAICHIKB-CROSSREF-END -->

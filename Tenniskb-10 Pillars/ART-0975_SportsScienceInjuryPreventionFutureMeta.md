@@ -43,3 +43,10 @@ Strings should be changed by hours played, not by breakage. Polyester should be 
 
 ## Practical Application: "The Cheapest Upgrade in Tennis"
 Before buying a new racket, re-string the one you have with the right setup. A 300 g frame with a thoughtful hybrid at the correct tension will outperform a 400-dollar racket strung wrong every time. Test one variable per restring — material, tension, or pattern — and keep a short log of how each setup played. Your strings are consumable, tunable, and the fastest lever you have for spin, control, and arm health; treat them like the performance component they are.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -72,3 +72,10 @@ Fatigue behaves the same way: late in the third set, intention quality decays be
 ## Practical Application: "Decide Before the Bounce"
 
 Give the player one rule: **the target is chosen before the ball bounces on your side.** At the next session, run call-the-target feeding for ten minutes — every ball called in flight, every stroke accountable to its call. Expect the first minutes to be ugly: early commitment produces early errors. Within a set, most players find their strokes arriving with a new decisiveness, because the motor command was loaded before the ball landed rather than assembled after it. Then take the rule into points: one spoken intention sentence before each point, one target called per shot. The player is not reacting faster than before — they have simply stopped paying the choice tax on every ball.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 4 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch04.html) — *Neurologic considerations for movement*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

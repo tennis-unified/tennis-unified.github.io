@@ -126,3 +126,10 @@ Quay giao bóng từ phía sau và xem đường chuyển động hoàn thành. 
 ## Ứng Dụng Thực Tế: "Hoàn Thành Tường"
 
 Đứng cách tường 3 feet ở phía đánh. Thực hiện chuyển động giao bóng và để chuyển động hoàn thành tự nhiên đưa vợt về phía tường. Nếu vợt chạm tường, chuyển động hoàn thành của bạn quá mức. Nếu vợt dừng lại trước tường khá xa, chuyển động hoàn thành bị cắt ngắn. Vị trí hoàn thành lý tưởng là 6-12 inches từ tường — một chuyển động hoàn thành đầy đủ nhưng có kiểm soát cho phép phục hồi nhanh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

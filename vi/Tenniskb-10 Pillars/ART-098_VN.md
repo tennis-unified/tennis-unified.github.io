@@ -71,3 +71,10 @@ Phân tích video sinh cơ học là công cụ mạnh mẽ để nhận diện 
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Video"
 Quay lại các cú đánh của bạn hàng tháng và phân tích chúng sử dụng khung trên. So sánh cơ chế của bạn với mẫu cầu thủ đẳng cấp và nhận diện các lĩnh vực cụ thể cần cải thiện. ngay cả những sửa đổi kỹ thuật nhỏ — được nhận diện qua phân tích video — có thể dẫn đến cải thiện đáng kể về sức mạnh, sự nhất quán và phòng chống chấn thương.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

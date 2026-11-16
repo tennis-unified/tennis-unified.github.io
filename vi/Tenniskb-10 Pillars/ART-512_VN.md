@@ -109,3 +109,10 @@ Trước mỗi game giao bóng, thực hiện thao tác kiểm tra cầm vợt t
 4. Vung thử một nhịp để xác nhận mặt vợt cảm giác trung lập tại điểm chạm
 
 Thủ tục trước serve này bảo đảm cầm vợt của bạn đúng trước mỗi game, ngăn chặn hiện tượng trôi dần về cầm vợt sai thường xảy ra trong những trận đấu dài.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

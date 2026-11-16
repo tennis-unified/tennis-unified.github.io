@@ -138,3 +138,10 @@ As tennis players age, reaction times naturally slow, making it more difficult t
 ## Practical Application: "The Anticipation Drill"
 
 Have a partner serve while you focus only on reading their toss and body position. Do not try to hit the return — just call out the serve direction ("wide," "body," "T") before the ball reaches you. This drill develops the anticipation skills that compensate for slower reaction times. Once you can correctly call the direction 70%+ of the time, add hitting the return back.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Sensorimotor integration & motor control*
+<!-- TAICHIKB-CROSSREF-END -->

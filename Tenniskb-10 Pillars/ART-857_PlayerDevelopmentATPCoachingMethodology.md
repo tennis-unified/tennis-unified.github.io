@@ -175,3 +175,10 @@ Multi-sport participation is increasingly recognized as a foundation for elite t
 | Player shows signs of burnout | Excessive tennis focus, insufficient variety | Reduced motivation, dropout risk | Introduce other sports; reduce tennis volume; increase fun |
 | Player struggles with specific tennis skills | Limited transferable skill development | Technical gaps, slow progress | Identify complementary sports that develop target skills |
 | Player has recurring overuse injuries | Repetitive loading, insufficient variety | Time lost, chronic issues | Introduce other sports to vary loading; cross-training |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+<!-- TAICHIKB-CROSSREF-END -->

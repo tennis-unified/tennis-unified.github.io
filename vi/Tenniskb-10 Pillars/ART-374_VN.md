@@ -72,3 +72,10 @@ Chương trình luyện tập bao gồm:
 ## Ứng Dụng Thực Tế: "Drill Bóng Thấp"
 
 Luyện tập forehand thấp bằng cách nhờ người bạn cung cấp những cú slice nảy thấp hơn đầu gối. Tập trung vào nâng gối sâu, đường swing từ thấp lên cao dốc đứng và cảm giác chải lên qua bóng. Bắt đầu với những cú cung cấp chậm và dần tiến triển sang các tình huống nhanh hơn, thực tế hơn. Phát triển sức mạnh cơ đùi và độ linhoạt cần thiết để xử lý bóng thấp một cách nhất quán.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -140,3 +140,10 @@ Exercises that increase trunk rotator flexibility:
 
 ## Practical Application: "The Coiled Spring"
 Imagine each trunk rotator muscle as a coiled spring. During loading, you compress the spring (stretch the muscle), storing elastic energy. During the forward swing, you release the spring (the muscle recoils), adding to the rotational force. The more you compress the spring during loading (the greater the hip-trunk separation), the more energy you store—and the more forceful the release. Practice this by performing groundstrokes with exaggerated hip-trunk separation, feeling the stretch in your obliques and the snap of recoil during the swing. The coiled spring feeling should be unmistakable: a stretch during loading, a snap during the swing. If you can't feel the snap, you're either not separating enough (not compressing the spring far enough) or not releasing the stretch quickly enough (hesitating before the swing). Develop this coiled spring feeling through daily practice, and your strokes will gain power that comes not from muscular effort but from the elastic recoil of your trunk rotators.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Fascial elastic energy storage & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+<!-- TAICHIKB-CROSSREF-END -->

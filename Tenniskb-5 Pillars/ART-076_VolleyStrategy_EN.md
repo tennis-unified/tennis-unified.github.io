@@ -44,3 +44,10 @@ The break point volley is the most critical volley of the set. It sets the tone 
 
 ## Practical Application: The "Complete Volley Manager"
 The athlete should feel that they are "complete" and integrated with the 5-Pillar System. The athlete should feel that the biomechanical, neurological, and tactical systems are working together in harmony. This is the ultimate goal of the 5-Pillar System: to create a complete, integrated athlete who performs effortlessly at their peak potential.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Net approach geometry & volley angle mastery*
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Plyometric split-step priming at the net*
+- [Chương 13: Tủy Sống và Dây Thần Kinh Sống (The Spinal Cord and Spinal Nerves)](https://taichikb.github.io/vi/books/tortora_ap/ch13-tuy-song-va-day-than-kinh-song.html) — *Spinal stretch reflex for rapid net reactions*
+<!-- TAICHIKB-CROSSREF-END -->

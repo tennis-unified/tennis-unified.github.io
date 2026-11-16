@@ -84,3 +84,10 @@ Sự phát triển sức mạnh tinh thần hiệu quả nhất xảy ra khi hu�
 ## Ứng Dụng Thực Tế: "Huấn Luyện Tâm Trí Như Bạn Huấn Luyện Forehand"
 
 Phát triển sức mạnh tinh thần nên được lên lịch, đo lường và tinh chỉnh với độ đặc hiệu tương tự như phát triển kỹ năng kỹ thuật. Phân bổ thời gian chuyên dụng mỗi tuần cho kỹ năng tâm lý — hình dung, bài tập hơi thở, mô phỏng khó khăn và xem xét hiệu suất. Theo dõi các chỉ báo hiệu suất tâm lý (thời gian phục hồi lỗi, chất lượng ngôn ngữ cơ thể, thời gian tập trung) cùng với chỉ số chiến thuật và vật lý. Tâm trí là cơ bắp trong tennis; nó mạnh mẽ với huấn luyện có cấu trúc, tiến triển, không phải với suy nghĩ mong muốn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+<!-- TAICHIKB-CROSSREF-END -->

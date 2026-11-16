@@ -75,3 +75,10 @@ Thực hiện những thay đổi bền vững về thể tích tập luyện, l
 
 ## Ứng Dụng Thực Tế: "Màn Hình Theo Dõi Kiên Cường"
 Định kỳ đánh giá rủi ro kiệt sức của bạn bằng một màn hình đơn giản: (1) mức độ động lực (bạn vẫn tận hưởng tennis không?), (2) mức năng lượng (bạn có cảm thấy tươi mới về thể chất và tinh thần không?), (3) trạng thái cảm xúc (bạn có cảm thấy gắn kết với tennis không?), (4) sự hài lòng về hiệu suất (bạn có hài lòng với tiến độ của mình không?). Nếu bất kỳ chỉ báo nào luôn thấp, hãy hành động ngay: giảm thể tích tập, nghỉ ngơi, tìm kiếm hỗ trợ xã hội, hoặc tham khảo tâm lý học thể thao. Phát hiện và can thiệp sớm ngăn chặn hội chứng kiệt sức đầy đủ và cho phép bạn quay lại tennis với năng lượng và động lực mới.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

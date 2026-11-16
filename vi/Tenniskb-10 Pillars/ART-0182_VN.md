@@ -47,3 +47,10 @@ Người chời không thể tính góc thời gian thực, nhưng có thể hi�
 
 ## Ứng Dụng Thực Tế: "Cọc Góc"
 Đặt ba cọc mục tiêu phục hồi trên sân sau phiên đánh: một cho góc bước chéo đầu tiên tối ưu bóng hẹp (10-20°), một cho bóng vừa (25-40°), và một cho bóng cực đoan (35-50°). Đánh 30 bóng tổng — 10 mỗi độ rộng — và chấm bao nhiêu bước chéo đầu tiên đáp trong 30 cm cọc mục tiêu. Người chời chấm dưới 60% đang chọn sai góc cho chiều rộng. Sau ba phiên chấm cọc, góc đúng trở thành bản thân cảm giác hơn là tính toán, và phục hồi tự động thích ứng với chiều rộng cú đánh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

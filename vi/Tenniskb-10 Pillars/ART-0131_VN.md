@@ -76,3 +76,10 @@ Sự phân biệt truyền thống giữa mượn lực đất (kình lực) và
 ## Ứng Dụng Thực Tế: "Mặt Đất Là Đánh Quả Bóng"
 
 Hãy cho người chơi một tái khung lập trường căn bản: **mặt đất là đánh quả bóng, không phải tay.** Tay chỉ là mắt xích cuối cùng trong một chuỗi bắt đầu từ chân. Ở buổi tập tiếp theo, hãy cho người chơi đánh 20 cú đánh nền với sự tập trung duy nhất vào việc ấn xuống đất qua chân. Tay nên cảm thấy gần như thụ động — một phần mở rộng lỏng lẻo của thân thể xoay. Quả bóng nên rời khỏi vợt với tốc độ đáng kinh ngạc và nỗ lực tối thiểu. Đây là lộ trình kình lực đang hoạt động: mặt đất cung cấp lực, cơ thể truyền nó, và vợt chuyển nó. Người chơi học được cách thu hoạch lực mặt đất ngừng ép cơ quả bóng và bắt đầu đánh bằng chính mặt đất.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên phân đoạn*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -80,3 +80,10 @@ Giao bóng cúi là một thủ thuật ngày càng phổ biến, đặc biệt 
 
 ## Ứng Dụng Thực Tế: "Drill Trả Giao Bóng Cúi"
 Nhờ đối tác đánh giao bóng cúi trong khi bạn luyện chạy nhanh về phía trước để chạm bóng, sử dụng cú vung kiểm soát để drive bóng sâu, tiến lường sau khi trả bóng và kết thúc điểm bóng bằng volley hoặc overhead. Drill này phát triển các kỹ năng cụ thể cần thiết để trả giao bóng cúi và kết thúc điểm bóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

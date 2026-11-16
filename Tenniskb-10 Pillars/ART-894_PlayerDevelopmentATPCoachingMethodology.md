@@ -182,3 +182,10 @@ Write a one-page coaching philosophy statement that includes:
 | Player dependency | Directive-only approach, no player autonomy | Poor in-match adjustments | Introduce facilitative coaching; develop independence |
 | Lack of enjoyment | Overly serious, drill-heavy approach | Reduced motivation, dropout | Add variety, play-based learning; emphasize fun |
 | Poor sportsmanship | No emphasis on respect and integrity | Negative reputation, poor culture | Prioritize respect; model sportsmanship; enforce standards |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Chương 9: Mặt Trước Sâu — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch09-mat-truoc-sau.html) — *Deep Front Line: core postural axis*
+<!-- TAICHIKB-CROSSREF-END -->

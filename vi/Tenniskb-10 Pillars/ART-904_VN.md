@@ -111,3 +111,10 @@ Quyết định giữa backhand một tay và hai tay nên cân nhắc:
 ## Ứng Dụng Thực Tế: "Biết Cả Hai, Tinh Thông Một"
 
 Ngay cả khi bạn chuyên sâu một kỹ thuật, việc tập kỹ thuật kia cung cấp sự cân bằng thể chất và hiểu biết vô giá. Dành 10 phút mỗi buổi tập để đánh kỹ thuật không thuận (một tay nếu bạn thường chơi hai tay, hoặc ngược lại). Điều này phát triển sự phối hợp hai bên, giảm phát triển cơ không đối xứng, và cung cấp lựa chọn dự phòng khi backhand chính của bạn bị áp lực.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

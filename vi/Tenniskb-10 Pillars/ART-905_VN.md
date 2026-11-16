@@ -124,3 +124,10 @@ Tennis elbow không phải chủ yếu là tình trạng viêm — hậu tố "-
 ## Ứng Dụng Thực Tế: "Tải Trọng Gân Một Thông Minh"
 
 Gân phản ứng với tải trọng — chúng cần áp lực tăng dần để thích nghi và tăng sức mạnh. Nếu bạn chưa từng bị tennis elbow, hãy bắt đầu chương trình tải trọng lệch tâm phòng ngừa: cầm tạ 2 lbs, tựa cẳng tay trên bàn với cổ tay treo ra mép, dùng tay kia nâng tay lên mở rộng, sau đó từ từ hạ xuống trong 5 giây. Ba hiệp 15 lần mỗi ngày là đủ để điều kiện ECRB chống lại quá tải trong tương lai. Phòng ngừa luôn dễ dàng hơn phục hồi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

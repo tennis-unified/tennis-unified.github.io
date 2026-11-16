@@ -67,3 +67,10 @@ Trung tâm ở đâu khi đến quyết định loại cú đánh nào khả d�
 ## Ứng Dụng Thực Tế: "Nút Thắt Lưng Vượn Trước"
 
 Hãy cho người chơi một câu: **nút thắt lưng vượn đường trước khi vai làm.** Ở buổi tập tiếp theo, dành năm phút cho khởi đầu cổng nón — năm lần lặp chậu-trước sạch về phía forehand, năm về phía backhand — sau đó chạy ném bỏng trực tiếp nơi huấn luyện viên chỉ theo dõi bước đầu của mỗi chuyển động, gọi "trung tâm" hoặc "ngực" sau mỗi lần. Người chơi sẽ cảm nhận khác biệt trong một tá quả bóng: chuyển động dẫn trung tâm yên tĩnh hơn, thẳng hơn, và nhanh hơn một cách lừa dối, vì cơ thể dẫn bằng trung tâm đến nguyên vẹn, trong khi cơ thể dẫn bằng ngực đến tảng mảnh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

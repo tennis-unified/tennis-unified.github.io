@@ -106,3 +106,10 @@ Thực hiện kiểm tra kinh tế hàng ngày:
 4. **Tương quan với thời gian bước đầu tiên.** Bằng chứng của kinh tế không phải nhảy thấp — mà là bước đầu tiên nhanh. Nếu độ cao nhảy giảm và thời gian bước đầu tiên cải thiện, công việc kinh tế đang sinh lợi.
 
 Sân là bề mặt ngang. Người chơi nhanh nhất xử lý nó như vậy.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

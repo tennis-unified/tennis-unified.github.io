@@ -64,3 +64,10 @@ Thời gian chạm từ 3 đến 5 mili giây ngắn hơn nhiều so với thờ
 ## Ứng Dụng Thực Hành: "Tập Trung Vào Cam Kết Trước"
 
 Vì điều chỉnh giữa lúc chạm là bất khả thi, hãy tập trung toàn bộ sự chú ý vào việc thiết lập các thông số chính xác trước khi chạm. Đối với mỗi cú đánh, hãy cam kết với một góc mặt vợt, đường vung và điểm chạm cụ thể trước khi bắt đầu vung về phía trước. Khi vung bắt đầu, hãy tin tưởng vào sự chuẩn bị của bạn và để cú chạm xảy ra. Cách tiếp cận tinh thần này loại bỏ sự cám dỗ điều chỉnh trong khoảng thời gian chạm và dẫn đến chất lượng cú đánh nhất quán hơn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -114,3 +114,10 @@ Bài tập huấn luyện dây như một đơn vị:
 | Bật chéo đồng thời | Vai và hông co cùng lúc | Co lần lượt hoặc lệch pha | Ném bóng y tế xoay, cable chop/lift |
 | Đau lưng dưới khi xoay | Không đau | Đau khi xoay mạnh | Kiểm tra kích hoạt mông to, giãn cơ rộng lưng, TLF release |
 | Đối xứng lực hai bên | Chênh ≤ 10% | Chênh > 15% | Tập đơn phương bên yếu, Romanian deadlift một chân + kéo |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Hệ cơ: nhóm cơ chủ vận và ổn định*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+<!-- TAICHIKB-CROSSREF-END -->

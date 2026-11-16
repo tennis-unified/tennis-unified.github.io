@@ -52,3 +52,10 @@ Commit to a minimum of 8 hours of sleep per night, aiming for 9-10 hours during 
 
 ## Practical Application: "Sleep to Win"
 Commit to a minimum of 8 hours of sleep per night, aiming for 9-10 hours during heavy training periods. Establish a consistent sleep schedule that you maintain even on weekends. Create an optimal sleep environment: cool, dark, and quiet. Avoid screens for 60 minutes before bed and establish a relaxing pre-sleep routine. Monitor your sleep using a wearable device and track your performance metrics alongside sleep data. During tournaments, prioritize sleep over late-night activities and use strategic napping to supplement nighttime sleep. Remember: you cannot out-train poor sleep, but you can out-compete your rivals by prioritizing recovery.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+<!-- TAICHIKB-CROSSREF-END -->

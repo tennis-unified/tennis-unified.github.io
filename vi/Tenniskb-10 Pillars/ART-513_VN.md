@@ -107,3 +107,10 @@ Giải pháp là chủ động làm chậm nhịp độ trong các tình huống
 ## Ứng Dụng Thực Tế: "Đếm Số Lần Đập Bóng"
 
 Đập bóng một số lần nhất quán trước mỗi cú serve — ví dụ 3 lần. Nghi thức này thiết lập nhịp điệu trước serve kéo dài vào chính động tác serve. Việc đập bóng theo nhịp tạo ra một trạng thái tâm lý và thể chất chuyển hóa vào cú serve, thúc đẩy sự ổn định. Nhiều tay vợt chuyên nghiệp có thói quen đập bóng riêng (Rafael Nadal nổi tiếng với việc đập bóng rất nhiều lần) nhằm đúng mục đích này.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

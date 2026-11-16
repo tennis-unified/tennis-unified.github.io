@@ -40,3 +40,10 @@ Bước đầu tiên rời vị trí sẵn sàng ở khoảng 30-45° so với �
 1. **Phủ chữ V.** Từ điểm 1 m trong đường cuối, vẽ hai đường 1.2-1.8 m, mỗi đường khoảng 35° so với đường lưới, hội tụ tại đỉnh đánh dấu. Người chơi đi bộ, rồi chạy bộ, rồi chạy nước rút mô hình với vung bóng — mười lần mỗi bên.
 2. **Cho bóng chỉ-bàn-chân.** HLV cho bóng ngắn; người chơi chạy chữ V phủ mà không vợt, dậm đỉnh và gọi "bây giờ" tại thời điểm bước đánh sẽ đáp.
 3. **Yêu cầu tiếp xúc di chuyển.** Tay cầm vợt, quy tắc tuyệt đối: vung bắt đầu trong khi bước thứ hai vẫn trên không. Bất kỳ đáp kép nhìn thấy nào vô hiệu điểm.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+<!-- TAICHIKB-CROSSREF-END -->

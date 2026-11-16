@@ -66,3 +66,10 @@ Track both physical and cognitive indicators during practice: heart rate and foc
 
 ## Practical Application: "The Integrated Session"
 Design practice sessions that integrate physical and cognitive training: (1) start with physical warm-up, (2) progress to technical drills with cognitive components (e.g., hitting to targets while calling out numbers), (3) move to tactical drills with physical demands (e.g., making decisions while moving), (4) finish with integrated match simulation (e.g., playing points with scoring and consequences). This integrated approach develops the physical and cognitive systems as a unified whole, producing the seamless performance that characterizes expert tennis.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -56,3 +56,10 @@ Volley cao vai là kỹ thuật volley phổ biến và hiệu quả nhất ở 
 ## Ứng Dụng Thực Tế: "Đập Xuống Và Xuyên Qua"
 
 Khi đánh volley cao vai, hãy đập bóng xuống và xuyên qua mục tiêu. Góc đối xuống là đồng minh của bạn — nó khiến bóng khó trả lại hơn và tăng biên độ an toàn khi vượt qua lưới. Đừng chỉ đơn giản đổi hướng bóng; hãy đập bóng xuống sân một cách quyết liệt.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

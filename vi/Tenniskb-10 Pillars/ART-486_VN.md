@@ -40,3 +40,10 @@ Người chơi gặp khó khăn về sức mạnh cơ core thường được h�
 
 ## Ứng Dụng Thực Tế: "Chương Trình Tập Core"
 Tập luyện cơ core 2-3 lần mỗi tuần, bao gồm plank, side plank, ném bóng y tế xoay người, xoay cáp, Russian twist và bicycle crunch. Tập trung vào chất lượng hơn số lượng, đảm bảo tư thế chuẩn ở từng bài tập. Theo dõi sức mạnh và độ ổn định của cú đánh trái theo thời gian để chắc chắn chương trình core mang lại kết quả như mong đợi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 9: Mặt Trước Sâu — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch09-mat-truoc-sau.html) — *Đường Mặt Trước Sâu: trục ổn định trọng tâm*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

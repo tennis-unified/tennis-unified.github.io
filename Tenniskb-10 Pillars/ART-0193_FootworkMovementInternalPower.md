@@ -70,3 +70,10 @@ Position is only "correct" if it is reachable. The budget — ball flight time t
 ## Practical Application: "The Tape Triangle"
 
 Before the next practice session, place three strips of court tape (or flat cones) at that player's three most common recovery coordinates: the crosscourt bisector, the down-the-line bisector 2-3 m across center, and the defense-zone mark 2.5 m deep. Play live points in which the coach freezes the rally at random moments with the call "Position!" — the player's location is scored against the correct mark: 2 points for the correct zone, 1 for adjacent, 0 for wrong. Ten freezes per set. Within two weeks most players move from scoring 3-4 out of 10 to 7 or better — and the coach stops saying "middle" forever.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+<!-- TAICHIKB-CROSSREF-END -->

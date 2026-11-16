@@ -138,3 +138,10 @@ SSC capability improves with maturation and training. Pre-pubertal athletes show
 
 ## Practical Application: "The Rubber Band"
 Your muscles and tendons work like rubber bands: when you stretch them (loading), they store elastic energy; when you release them (forward swing), they snap back with enhanced force. The key is that the snap must happen immediately after the stretch—any delay allows the rubber band to lose its tension. Practice this with a simple drill: stand in your ready position and perform a quick knee bend (stretch the rubber band), then immediately extend your knees and push off the ground (release the rubber band). Time how long your feet stay on the ground during the stretch-release sequence. Elite players achieve ground contact times of less than 200 milliseconds. Try to make your stretch-release as quick as possible, minimizing the time between bending and extending. Once you can do this with a partner feeding balls, you'll feel how the pre-stretch of your legs adds a "snap" to your movement that isn't possible from a stationary start. This snap is the SSC working for you—and it's the secret behind the explosive movement of elite tennis players.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Fascial elastic energy storage & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Muscular mechanics: eccentric/concentric & force-velocity*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -56,3 +56,10 @@ Tennis ban đêm đòi hỏi những điều chỉnh: kỹ thuật theo dõi t�
 ## Ứng Dụng Thực Tế: "Theo Dõi Lâu, Vung Vợt Thông Minh"
 
 Ban đêm: (1) theo dõi bóng từ vợt của đối thủ, (2) dùng tay không thuận để che mắt, (3) vung vợt chỉ khi bạn có liên hệ thị giác rõ ràng. Nếu bạn không thấy bóng, không vung — chơi lob phòng ngự thay vì.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

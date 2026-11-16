@@ -68,3 +68,10 @@ Volley hai tay là một lựa chọn hợp lý cho người chơi sử dụng t
 ## Ứng Dụng Thực Tế: "Hai Tay Cho Sức Mạnh, Một Tay Cho Tầm Với"
 
 Sử dụng volley hai tay khi có thời gian và cần sự ổn định (cú xuyên lưới mạnh ở phía tay khác). Chuyển sang volley một tay khi cần tầm với (bóng rộng) hoặc cảm giác (volley thả nhẹ). Khả năng chuyển đổi giữa hai kiểu volley sẽ khiến bạn trở thành một tay vợt lưới linh hoạt hơn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

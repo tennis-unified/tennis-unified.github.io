@@ -45,3 +45,10 @@ Người chơi gặp khó khăn trong huấn luyện thể lực thường đư�
 
 ## Ứng Dụng Thực Tế: "Thói Quen Thể Dục"
 Xây dựng thói quen thể dục bao gồm huấn luyện sức mạnh (2-3 lần/tuần), huấn luyện sức bền (2-3 lần/tuần) và huấn luyện độ dẻo (hàng ngày). Tập trung vào các nhóm cơ tham gia vào backhand: chân, cơ bụng, vai và cánh tay. Theo dõi hiệu suất backhand theo thời gian để đảm bảo chương trình thể dục đang mang lại kết quả mong muốn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Hệ thống năng lượng cho thể lực quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

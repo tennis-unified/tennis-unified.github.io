@@ -113,3 +113,10 @@ Tập luyện không phải là "đánh bóng." Đó là một can thiệp có c
 
 ## Ứng Dụng Thực Tế: "Con Mổ Của Bác Sĩ Phẫu Thuật"
 Kẻ làm thịt hackphân. Bác sĩ phẫu thuật lên kế hoạch đường rạch, chọn dụng cụ, kiểm soát độ sâu, giám sát chỉ số sống, khâu chính xác, và xem lại ca phẫu thuật. **Buổi Tập Là Phẫu Thuật Trên Hệ Thần Kinh Của Vận Động Viên. Thiết Kế Nó. Thực Thi Nó. Kiểm Toán Nó. Buổi Tập Hoàn Hảo Để Lại Sẹo Của Học Tập, Không Phải Vết Thâm Của Mệt Mỏi.**
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 19: Thấu hiểu cơ học-thích-nghi của mô mạc: Ứng dụng vào y học thể thao — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch19-thau-hieu-co-hoc-thich-nghi-cua-mo-mac-ung-dung-vao-y-hoc-the-th.html) — *Cơ học thích nghi và phòng ngừa chấn thương*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

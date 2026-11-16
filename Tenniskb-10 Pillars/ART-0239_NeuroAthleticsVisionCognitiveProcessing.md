@@ -66,3 +66,10 @@ Accept that distractions are part of tennis. Fighting a distraction (e.g., being
 
 ## Practical Application: "The Distraction Drill"
 During practice, intentionally introduce distractions and practice maintaining focus. Have a coach make loud noises, create unfair calls, or introduce equipment issues. Practice your distraction management strategies (reframing, focus cues, acceptance) in this controlled environment. This deliberate exposure builds the resilience needed to handle distractions in competition, transforming potential disruptions into manageable challenges rather than performance-destroying events.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+<!-- TAICHIKB-CROSSREF-END -->

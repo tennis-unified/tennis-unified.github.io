@@ -61,3 +61,10 @@ Deliberately build chunks by associating related items. For example, associate "
 
 ## Practical Application: "The Pattern Library"
 Build a personal "pattern library" by studying video of tennis matches and identifying common patterns. For each pattern, create a chunk that encodes the sequence, the typical context, and the optimal response. Review this library regularly and add new patterns as you encounter them. Over time, this library becomes a powerful tool for rapid pattern recognition and tactical decision-making, allowing you to process complex situations with the efficiency of an expert.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

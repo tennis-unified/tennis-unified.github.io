@@ -98,3 +98,10 @@ Niềm tin được xây dựng từ:
 ## Ứng Dụng Thực Tế: "Điểm Hiệu Quả"
 
 Sau mỗi buổi tập, tính điểm hiệu quả serve của bạn: (tốc độ serve trung bình) × (tỷ lệ first serve vào). Theo dõi con số này theo thời gian. Khi kỹ thuật serve của bạn tiến bộ, điểm hiệu quả nên tăng lên — hoặc vì bạn serve nhanh hơn với cùng độ chính xác, hoặc chính xác hơn với cùng tốc độ, hoặc cả hai. Riêng con số này cho một bức tranh hoàn chỉnh hơn về chất lượng serve so với tốc độ hay độ chính xác đơn lẻ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

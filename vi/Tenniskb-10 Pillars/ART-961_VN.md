@@ -180,3 +180,10 @@ Các huấn luyện viên hiệu quả nhất hỗ trợ quyền tự chủ củ
 ## Ứng Dụng Thực Tế: "Những Mối Quan Hệ Đôi Tốt Nhất Được Xây Dựng, Không Phải Tìm Thấy"
 
 Các mối quan hệ đôi, môi trường nhóm và mối quan hệ huấn luyện viên - vận động viên không thành công ngẫu nhiên — chúng được xây dựng thông qua giao tiếp có chủ đích, định nghĩa vai trò rõ ràng và quản lý xung đột có hệ thống. Đầu tư vào các mối quan hệ tennis của bạn với cùng mức nghiêm túc như bạn đầu tư vào tập luyện thể lực. Thảo luận về vai trò trước trận, giao tiếp ngắn gọn trong trận, và làm rõ trung thực sau trận. Các đội giao tiếp tốt nhất sẽ thi đấu tốt nhất.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

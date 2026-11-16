@@ -87,3 +87,10 @@
 
 ## Ứng Dụng Thực Tế: "Cái Khiên & Cái Kiếm"
 Nam vận động viên là Cái Khiên (hấp thụ lực, giữ giữa, phòng thủ chủ động, smash). Nữ vận động viên là Cái Kiếm (độ chính xác, góc, ổn định, trả bóng). Khi Cái Khiên bảo vệ Cái Kiếm, và Cái Kiếm kéo dài pha bóng, phương trình đôi nam nữ tự giải quyết.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

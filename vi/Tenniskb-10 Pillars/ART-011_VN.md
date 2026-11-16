@@ -103,3 +103,10 @@ Bài tập thách thức thăng bằng trong vị trí tải — bao gồm tải
 
 ## Ứng Dụng Thực Tế: "Lò Xo Cuộn"
 Hãy tưởng tượng chân và thân bạn là một lò xo bạn nén trong tải và giải phóng trong vung. Để cảm nhận, đứng tư thế sẵn sàng cú đáy trước và từ từ cong gối xoay thân lại. Cảm nhận căng thẳng xây dựng trong chân (như nén lò xo) và trong thân (như vặn khăn). Giữ vị trí tải nén hoàn toàn hai giây, cảm nhận năng lượng lưu trữ. Bây giờ giải phóng: duỗi gối và xoay thân tiến như gỡ cuộn lò xo. Làm 10 lần chậm, rồi 10 lần tốc độ trận. Sâu sắc cốt lõi là lực đến từ giải phóng năng lượng lưu trữ, không chỉ nỗ lực cơ bắp. Khi thêm bóng, cú đáy trước sẽ cảm thấy nhẹ nhàng vì bạn dùng năng lượng đàn hồi cơ thể đã nén để gia tốc vợt, không chỉ cơ cánh tay. Càng tải sâu và kiểm soát, càng nhiều năng lượng để giải phóng — và cú đáy trước càng mạnh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

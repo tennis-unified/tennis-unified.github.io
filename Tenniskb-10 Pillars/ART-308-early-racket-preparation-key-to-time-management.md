@@ -52,3 +52,10 @@ A practical drill is the "first step" drill: from the ready position, begin your
 ## Practical Application: "The Earlier Turn"
 
 During your next practice session, challenge yourself to begin your unit turn one "count" earlier than feels comfortable. You will initially feel rushed and off-balance, but as your motor program adapts, you will discover that the extra time allows for a more complete rotation and a more relaxed swing. The goal is to find the earliest possible preparation point that still allows you to adjust if your anticipation is wrong.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

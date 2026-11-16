@@ -71,3 +71,10 @@ Sau khi xem một pha bóng, nhắm mắt và tái tạo vị trí của cả ha
 
 ## Ứng Dụng Thực Tế: "Quét Tam Giác"
 Trước mỗi cú đánh, tâm trí tạo ra một tam giác kết nối vị trí của bạn, vị trí đối thủ và điểm hạ cánh dự kiến của quả bóng. Tam giác này tiết lơ vị trí đặt bóng tối ưu (thường là sân mở đối diện vị trí phục hồi của đối thủ). Tập quét này trong mỗi cú đánh cho đến khi nó trở thành thói quen trước cú đánh tự động. Quét tam giác chuyển đổi nhận thức không gian trừu tượng thành công cụ chiến thuật cụ thể.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -50,3 +50,10 @@ Người chơi nên đưa các bài tập này vào chương trình luyện tậ
 
 ## Ứng Dụng Thực Tế: "Luyện Tập Cú Nửa Volley"
 Đứng ở khu vực gần lưới và nhờ đồng đội chuyền những quả bóng nảy ngay dưới chân. Tập đánh mười cú backhand nửa volley, tập trung vào việc hạ thấp người, mở mặt vợt và chạm bóng nhẹ nhàng. Đếm xem có bao nhiêu cú volley rơi vào trong sân và bao nhiêu cú đi thấp. Theo dõi sự tiến bộ qua các buổi tập để đảm bảo cú nửa volley đang được rèn luyện đúng cách.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

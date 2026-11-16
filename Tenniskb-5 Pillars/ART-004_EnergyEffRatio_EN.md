@@ -50,3 +50,10 @@ Increasing the "lag" (the distance the racket head trails the hand) increases th
 | Low eta (Low power vs high effort) | Arm-dominant striking | Heavy breathing, high muscle fatigue in arms. | Focus on Fz (vertical drive) and Pelvic Snap. |
 | Inconsistent eta | Poor timing/Coordination | Some shots are "bombs," others are "sitters." | Rhythm training (Metronome drills). |
 | Sudden eta drop | Core instability | Balance shifts during the swing. | Core bracing / Anti-rotation work. |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Work, power, and linear kinetic energy transfer*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Rotational kinetic energy and angular work*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Myofascial force transmission across segments*
+<!-- TAICHIKB-CROSSREF-END -->

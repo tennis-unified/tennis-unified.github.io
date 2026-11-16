@@ -91,3 +91,10 @@ Trả bóng giao trong tennis xe lăn đòi hỏi nhiều điều chỉnh đáng
 ## Ứng Dụng Thực Tế: "Bài Tập Định Vị Ghế"
 
 Thực hành định vị ghế cho các hướng giao bóng khác nhau. Đối tác gọi các hướng giao bóng ("rộng", "thân", "T") trong khi bạn định vị ghế tương ứng. Bài tập này phát triển khả năng định vị ghế nhanh cần thiết để trả bóng xe lăn hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

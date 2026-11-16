@@ -237,3 +237,10 @@ Xây dựng dinh dưỡng ngày thi đấu với thời điểm chính xác:
 | Phục hồi chậm giữa các ngày | Dinh dưỡng sau trận không đủ, giấc ngủ kém | Mệt mỏi tích lũy, chất lượng tập luyện giảm | Triển khai giao thức phục hồi sau trận; tối ưu hóa giấc ngủ |
 | Chuột rút cơ thường xuyên | Mất nước, mất cân bằng điện giải, thể lực kém | Chuột rút, mất thời gian thi đấu | Giao thức bù nước; bổ sung điện giải; cải thiện thể lực |
 | Giảm cân trong giải đấu | Lượng calo nạp vào không đủ, tiêu hao năng lượng cao | Mệt mỏi, phong độ giảm sút | Tăng lượng calo nạp vào; món ăn nhẹ giàu năng lượng dễ mang theo; lên kế hoạch bữa ăn |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Dinh dưỡng thể thao và cân bằng năng lượng*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

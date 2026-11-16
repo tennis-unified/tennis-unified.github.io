@@ -66,3 +66,10 @@ The combination of these effects produces a ball that feels "heavy" and difficul
 ## Practical Application: "The Magnus Awareness"
 
 Develop your awareness of the Magnus effect by observing the trajectory of your forehands. Notice how the ball dips more steeply when you increase topspin, and how it curves when you add a sidespin component. Use this awareness to adjust your spin rate and axis based on the tactical situation, maximizing the effectiveness of the Magnus effect.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+<!-- TAICHIKB-CROSSREF-END -->

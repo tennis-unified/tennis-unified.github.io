@@ -47,3 +47,10 @@ Hình ảnh cấu trúc qua các môn thể thao cho thấy khác biệt liên q
 ## Ứng Dụng Thực Tế: "Não Bạn Học Nơi Mắt Bạn Đi"
 
 Khoa học thần kinh của chuyên môn giảm xuống một sự thật hành động: não bộ quần vợt được xây dựng bởi những gì nó liên tục chú ý đến. Đặt các lần lặp lại chất lượng trước mắt — trực tiếp, đa dạng, không thể dự đoán — và để nghiên cứu video và hình ảnh thu hút cùng mạch từ ghế sofa. Bảo vệ não đang phát triển khỏi quá tải với nghỉ ngơi và đa dạng, và huấn luyện với tín hiệu đơn lẻ thay vì bài giảng. Não nhà vô địch không được sinh ra; nó được lắp ráp, một lần lặp lại được chú ý tại một thời điểm.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+<!-- TAICHIKB-CROSSREF-END -->

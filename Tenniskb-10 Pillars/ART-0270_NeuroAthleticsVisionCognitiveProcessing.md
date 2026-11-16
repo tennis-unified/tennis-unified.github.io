@@ -64,3 +64,10 @@ Skills learned through analogies transfer to match conditions more effectively b
 
 ## Practical Application: "The Analogy Library"
 Build a personal "analogy library" for each stroke. For your serve, your groundstrokes, your volleys, and your overheads, develop one or two analogies that capture the essence of the movement. Practice these analogies during training until they become automatic. During matches, use these analogies as your primary focus, replacing any technical thoughts with the simple, powerful image. This analogy-based approach to skill development produces robust, pressure-resistant skills that perform when it matters most.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -56,3 +56,10 @@ Người chơi lớn tuổi có thể tận hưởng lối chơi lưới cực k
 ## Ứng Dụng Thực Tế: "Chơi Lưới Thông Minh"
 
 Đối với người chơi lớn tuổi, lối chơi lưới là về sự thông minh, không phải thể lực. Đứng sâu hơn, đọc trước nhiều hơn, tiến lên lưới chọn lọc và sử dụng đặt bóng thay vì sức mạnh. Người chơi lưới thông minh nhất sẽ thắng — không phải người nhanh nhất.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -34,3 +34,10 @@ Lag xảy ra khi bàn tay di chuyển về phía trước, nhưng đầu vợt v
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Quất Roi"
 Cánh tay nên có cảm giác như một chiếc roi, không phải một tấm ván. Bàn tay là cán roi, và cây vợt là ngọn roi. Sức mạnh đến từ cú "giật" của ngọn roi, không phải cú đẩy của cán roi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc đa phân đoạn và mô-men khớp*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Động lực học các phân đoạn chi trên*
+- [Chương 4: Các Nguyên Lý Cơ Học (Biomechanical Principles)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch04-cac-nguyen-ly-co-hoc.html) — *Nguyên lý đòn bẩy và động lực học quay*
+<!-- TAICHIKB-CROSSREF-END -->

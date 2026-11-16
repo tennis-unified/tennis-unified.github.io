@@ -184,3 +184,10 @@ Structure a training session focused on resilience:
 | Negative body language | Poor emotional regulation, low confidence | Opponent gains confidence, self-fulfilling prophecy | Body language coaching; positive self-talk; resilience visualization |
 | Inability to handle pressure | Insufficient pressure training, anxiety | Choking, performance decline | Pressure simulation; mental skills training; pre-point routines |
 | Fixed mindset about abilities | Belief that talent is static | Avoids challenges, gives up easily | Growth mindset education; praise effort; reframe failure |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

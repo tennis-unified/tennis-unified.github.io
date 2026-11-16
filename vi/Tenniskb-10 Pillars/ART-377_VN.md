@@ -66,3 +66,10 @@ Tăng tốc độ đầu vợt có thể làm giảm kiểm soát, vì nhịp vu
 ## Ứng Dụng Thực Tế: "Bài Tập Tốc Độ"
 
 Tập tăng tốc độ đầu vợt bằng cách đánh forehand ở 50, 75 và 100 phần trăm tốc độ tối đa của bạn. Ghi nhận tốc độ xoáy ở mỗi cấp tốc độ (dùng thiết bị đo xoáy hoặc đánh giá của huấn luyện viên). Tập trung vào cảm giác tăng tốc xuyên qua chạm bóng và thời điểm gãy cổ tay tạo ra tốc độ cộng thêm cuối cùng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

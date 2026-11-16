@@ -50,3 +50,10 @@ Khi mệt mỏi tăng, hiệu quả chuỗi động học giảm.
 
 ## Ứng Dụng Thực Tế: "Chuỗi Bền Vững"
 Vận động viên nên cảm nhận rằng chuỗi động học của mình vẫn "chặt chẽ" và hiệu quả suốt toàn bộ trận đấu. Chương trình điều kiện không nên chỉ làm vận động viên "khỏe"; nó phải làm vận động viên "bền bỉ"—có khả năng duy trì sinh cơ học, thần kinh và kỹ thuật của Hệ Thống 5 Cột Trụ dưới áp lực thi đấu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Cung cấp năng lượng hiếu khí và kỵ khí bền bỉ*
+- [Chương 13: Chương 13: Khởi Phát và Mỏi Cơ – Hậu Quả của Việc Kích Hoạt Cơ Lặp Lại — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch10.html) — *Khởi phát mỏi cơ và duy trì chuỗi động học*
+- [Chương 20: Hệ Tuần Hoàn: Tim (The Cardiovascular System: The Heart)](https://taichikb.github.io/vi/books/tortora_ap/ch20-he-tuan-hoan-tim.html) — *Sức bền tim mạch và cung cấp oxy*
+<!-- TAICHIKB-CROSSREF-END -->

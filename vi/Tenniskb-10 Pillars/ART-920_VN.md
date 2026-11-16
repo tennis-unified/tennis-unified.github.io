@@ -56,3 +56,10 @@ Nếu bạn là tuyển thủ quần vợt thi đấu, hãy đảm bảo bạn �
 | Người chơi ngã xuống sau khi bóng đánh vào ngực | Chấn thương tim; rung thất | Ngừng tim; tử vong nếu không điều trị ngay | CPR tức thừ; triển khai AED; dịch vụ y tế khẩn cấp; làm mát trước, vận chuyển sau |
 | Cơ sở thiếu AED hoặc nhân viên được đào tạo | Chuẩn bị khẩn cấp không đủ | Giảm tỷ lệ sống sót trong ngừng tim | Mua AED; đào tạo CPR/AED nhân viên; phát triển kế hoạch hành động khẩn cấp; diễn tập thường xuyên |
 | Người chơi trải qua hồi hộp trong lúc tập luyện | Loạnh nhịp; bệnh lý tim tiềm ẩn | Hạn chế thành tích; nguy cơ SCD tiềm ẩn | Máy theo dõi Holter; máy theo dõi sự kiện; đánh giá điện lý sinh; điều chỉnh hoạt động |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

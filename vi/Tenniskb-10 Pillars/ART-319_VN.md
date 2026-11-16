@@ -58,3 +58,10 @@ Rủi ro của việc xoay và bước đồng thời là unit turn bắt đầu
 ## Ứng Dụng Thực Tế: "Đồng Hồ Áp Lực"
 
 Nhờ một bạn đồng hành feed bảng với khoảng cách ngày càng nhanh dần, buộc bạn phải nén thời gian chuẩn bị. Bắt đầu ở nhịp độ thoải mái, sau đó giảm khoảng cách đi 10 phần trăm mỗi vòng. Tập trung vào việc duy trì ba yếu tố thiết yếu (lực mặt đất, sự tách hông-vai, và độ trễ cổ tay) ngay cả khi bạn rút gọn unit turn và backswing. Bài tập này phát triển khả năng duy trì chất lượng cú đánh dưới áp lực thời gian ngày càng tăng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

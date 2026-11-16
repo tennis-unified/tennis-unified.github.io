@@ -73,3 +73,10 @@ Beyond the launch angle, three mechanical features distinguish an efficient firs
 ## Practical Application: "Cone the Angle"
 
 Set up three recovery target cones on the court after a hitting session: one at the optimal first-crossover landing for narrow-width balls (10-20°), one for moderate-width balls (25-40°), and one for extreme-width balls (35-50°). Hit 30 balls total — 10 at each width — and score how many first crossokes land within 30 cm of the target cone. Players who score below 60% are selecting the wrong angle for the width. After three sessions of cone scoring, the correct angles become proprioceptive rather than calculated, and the recovery automatically adapts to shot width.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+<!-- TAICHIKB-CROSSREF-END -->

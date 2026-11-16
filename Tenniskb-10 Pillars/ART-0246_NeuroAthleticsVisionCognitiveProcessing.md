@@ -53,3 +53,10 @@ When facing a deceptive opponent, maintain a slightly wider ready position that 
 
 ## Practical Application: "The Deception Check"
 When you notice that an opponent's preparation looks identical for multiple shots, perform a "deception check": actively look for the cues that distinguish one shot from another. Rather than accepting the ambiguous preparation, search for the subtle differences that reveal the true shot. This deliberate search for deception cues prevents the automatic anticipation that deceivers exploit and keeps you prepared for the unexpected.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

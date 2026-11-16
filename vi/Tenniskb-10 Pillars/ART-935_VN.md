@@ -98,3 +98,10 @@ Thực hiện chu trình này 2-3 lần mỗi tuần. Nó nhắm vào tất cả
 6. **Quay nồi** — 30 giây (chống võng lưng dưới chuyển động)
 
 Chu trình này mất khoảng 12 phút và đòi hỏi thiết bị tối thiểu (một cáp hoặc dâng, một con lăn bụng hoặc trượt, một quả tạ và một quả bóng y tế). Thực hiện nó sau khi tập tennis hoặc như bài tập kết thúc cho buổi tập phòng gym. Theo dõi tiến trình bằng cách ghi chú số lần Pallof press, phạm vi vận động của con lăn bụng và khoảng cách ném bóng y tế. Khi các số liệu này cải thiện, ổn định, sức mạnh và khả năng phục hồi trên sân của bạn sẽ cải thiện theo.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Chương 9: Mặt Trước Sâu — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch09-mat-truoc-sau.html) — *Đường Mặt Trước Sâu: trục ổn định trọng tâm*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+<!-- TAICHIKB-CROSSREF-END -->

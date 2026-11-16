@@ -45,3 +45,10 @@ Người mới bắt đầu gặp khó khăn với những lỗi này thường 
 
 ## Ứng Dụng Thực Tế: "Thói Quen Của Người Mới Bắt Đầu"
 Người mới bắt đầu nên thực hành bài tập đánh bóng bức tường, bài tập chuyền bóng và đánh và bài tập shadow swing thường xuyên, tập trung vào kỹ thuật đúng. Theo dõi tiến trình qua các buổi tập để đảm bảo các nền tảng đang phát triển đúng cách. Khi người chơi cải thiện, họ có thể thêm các bài tập nâng cao hơn vào thói quen của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

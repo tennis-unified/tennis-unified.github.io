@@ -71,3 +71,10 @@ Tập dịch chuyển nhìn gần-xa trong khi thực hiện bài tập nhẹ (v
 
 ## Ứng Dụng Thực Tế: "Neo Tiêu Điểm"
 Thiết lập một neo tiêu điểm chính trong mỗi pha rally: quả bóng. Thay vì dịch chuyển tiêu điểm giữa nhiều mục tiêu, hãy giữ mắt tập trung vào quả bóng lâu nhất có thể, sử dụng tầm nhìn ngoại vi cho các thông tin khác. Chỉ dịch chuyển tiêu điểm khi cần thiết (ví dụ: kiểm tra vị trí đối thủ). Điều này giảm thiểu chuyển động vergence, giảm mệt mỏi thị giác và duy trì nhận thức độ sâu ở nơi quan trọng nhất tại điểm tiếp xúc.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

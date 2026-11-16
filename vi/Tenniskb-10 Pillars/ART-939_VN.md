@@ -139,3 +139,10 @@ Thực hiện thói quen này hàng ngày (10-15 phút) dựa trên kết quả 
 6. **Pallof press** (2 phút): 10 lần mỗi bên, giữ 10 giây mỗi lần lặp.
 
 Thói quen này mất khoảng 12 phút và giải quyết các mô hình vận động liên quan nhất đến quần vợt. Thực hiện nó trước tập luyện hoặc như buổi tập độc lập vào ngày nghỉ. Kiểm tra lại FMS mỗi 4-6 tuần để theo dõi tiến trình của bạn. Khi điểm số cải thiện, chất lượng chuyển động của bạn cải thiện — và cùng với nó, hiệu suất và khả năng chống chấn thương của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

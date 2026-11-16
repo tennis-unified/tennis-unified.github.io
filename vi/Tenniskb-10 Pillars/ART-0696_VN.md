@@ -43,3 +43,10 @@ Cú giao bóng về góc biên đòi hỏi bước chéo, volley chặn và ph�
 ## Ứng Dụng Thực Tế: "Chéo Bước, Chặn Bóng, Phục Hồi"
 
 Trước cú giao bóng về góc biên: (1) bước chéo để với tới bóng, (2) chặn volley, (3) bước chéo phục hồi. Di chuyển ngang và phục hồi nhanh chóng là chìa khóa thành công.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

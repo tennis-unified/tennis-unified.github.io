@@ -28,3 +28,10 @@ Những người chơi nghiệp dư thường cố gắng xoay toàn bộ cơ th
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Quất Roi"
 Điểm khựng vi mô nên được cảm nhận như một "xung lực" ở vùng lõi. Đó là khoảnh khắc bạn cảm thấy độ căng ở ngực đạt mức tối đa ngay trước khi cánh tay được giải phóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Xung lực hãm phanh và động lực học giảm tốc*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch03.html) — *Động học giảm tốc và dừng bước*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Giảm tốc phân đoạn và hiệu ứng roi quất*
+<!-- TAICHIKB-CROSSREF-END -->

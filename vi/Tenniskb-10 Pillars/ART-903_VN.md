@@ -102,3 +102,10 @@ Tiếp tục xoay vai sau khi chạm bóng khiến cơ thể quay về phía lư
 ## Ứng Dụng Thực Tế: "Tìm Điểm Hạ Vợt Của Bạn"
 
 Đứng tường rào với vợt và tập hạ đầu vợt xuống dưới eo mà không dùng chân. Bây giờ thêm gập đầu gối và cảm nhận vợt hạ sâu hơn bao nhiêu. Cuối cùng, vung qua bóng tưởng tượng ở độ cao eo, tập trung vào cảm giác vợt di chuyển lên trên ít nhất 12 inch trước khi chạm bóng. "Hạ vợt" là bí mật — mọi thứ khác chỉ là giải phóng năng lượng đã lưu trữ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -72,3 +72,10 @@ Vùng đánh có thể được mở rộng thông qua:
 ## Ứng Dụng Thực Tiễn: "Nhận Thức Về Vùng Đánh"
 
 Trong quá trình luyện tập, hãy chủ động đánh giá xem mỗi quả bóng đến có nằm trong vùng đánh của bạn hay không trước khi quyết định thực hiện cú đánh. Nếu bóng nằm ngoài vùng, hãy đưa ra một quyết định chiến thuật: hoặc điều chỉnh di chuyển chân để đưa bóng vào vùng, hoặc chọn một cú đánh phòng thủ có tính đến sự thỏa hiệp kỹ thuật. Sự nhận thức này giúp bạn đưa ra những quyết định chiến thuật tốt hơn và tránh các lỗi cưỡng chế.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

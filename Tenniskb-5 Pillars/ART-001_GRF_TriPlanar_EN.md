@@ -38,3 +38,11 @@ To maximize terminal velocity, the athlete must not only generate high magnitude
 ## Practical Application & Drills
 *   **The Vector-Jump Drill:** Jump vertically (Fz), then laterally (Fx), then forward (Fy), focusing on the feeling of the ground "pushing back."
 *   **Outside-Leg Load:** In an open-stance forehand, consciously "crush" the outside heel into the court to feel the Fx vector before initiating the hip turn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Newton's Third Law & Ground Reaction Forces (Linear Kinetics)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch01.html) — *Tri-planar anatomical reference planes (sagittal, frontal, transverse)*
+- [Chương 1: Giới Thiệu Về Cơ Thể Người (An Introduction to the Human Body)](https://taichikb.github.io/vi/books/tortora_ap/ch01-gioi-thieu-ve-co-the-nguoi.html) — *Anatomical planes, axes, and directional terminology*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational GRF & force principles in tennis*
+<!-- TAICHIKB-CROSSREF-END -->

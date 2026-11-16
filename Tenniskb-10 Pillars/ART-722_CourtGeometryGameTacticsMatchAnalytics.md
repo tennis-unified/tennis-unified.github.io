@@ -57,3 +57,10 @@ Another effective drill is angle awareness training: place a cone at the interse
 ## Practical Application: "Slice It and Dice It on Grass"
 
 To apply The Slice Serve: Kick and Curve Geometry on Grass in your next match, begin by visualizing the court as a geometric grid before each point. Identify the largest angle available to your opponent and position yourself to minimize it. Practice one specific geometric pattern per practice session until it becomes instinctive. Film yourself playing and analyze whether your positioning matches the geometric ideal. Remember: court geometry is a skill that improves with deliberate practice, just like your strokes.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+<!-- TAICHIKB-CROSSREF-END -->

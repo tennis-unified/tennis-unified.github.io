@@ -75,3 +75,10 @@ Mệt mỏi hành xử giống hệt: muộn ở set thứ ba, chất lượng �
 ## Ứng Dụng Thực Tế: "Quyết Định Trước Khi Nảy"
 
 Hãy cho người chơi một quy tắc: **mục tiêu được chọn trước khi quả bóng nảy về phía bạn.** Ở buổi tập tiếp theo, chạy ném bỏng gọi mục tiêu trong mười phút — mỗi quả bóng gọi trên không, mỗi cú đánh chịu trách nhiệm với lời gọi của nó. Kỳ vọng phút đầu sẽ xấu: cam kết sớm sản sinh lỗi sớp. Trong một set, hầu hết người chơi thấy cú đánh của mình đến với sự quyết đoán mới, vì lệnh vận cơ được nạp trước khi quả bóng đổ thay vì lắp ráp sau đó. Sau đó đưa quy tắc vào điểm: một câu ý định nói trước mỗi điểm, một mục tiêu gọi mỗi cú. Người chơi không phản ứng nhanh hơn trước — họ chỉ ngừng trả thuế lựa chọn trên mỗi quả bóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 4 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch04.html) — *Cơ sở thần kinh cho vận động*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -185,3 +185,10 @@ Training must include:
 | Player burns out before reaching professional level | Excessive competition, insufficient fun and balance | Dropout, mental health issues | Reduce competitive pressure; reintroduce fun; psychological support |
 | Player physically unprepared for 3-set matches | Insufficient conditioning, late physical development | Performance decline in third sets | Implement comprehensive conditioning program; periodize training |
 | Player cannot handle pressure in tournaments | Insufficient mental skills training, no routines | Choking, poor tournament results | Mental performance coaching; pressure simulation training |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

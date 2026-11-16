@@ -68,3 +68,10 @@ Khi quả bóng di chuyển ngang qua sân trong pha bóng qua lại, người �
 ## Ứng Dụng Thực Tế: "Chia Đôi Góc Bóng"
 
 Trước mỗi cú volley, hãy nhanh chóng đánh giá những hướng đánh nhiều khả năng nhất của đối thủ và đặt mình trên đường phân giác chia đôi góc đó. Riêng một thói quen duy nhất này — được thực hiện tự động trước mỗi cú đánh — sẽ cải thiện rõ rệt khả năng che phủ lưới của bạn và thu hẹp đáng kể các lựa chọn xuyên lưới của đối thủ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

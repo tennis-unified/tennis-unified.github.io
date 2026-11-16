@@ -160,3 +160,10 @@ Thực hiện khởi động này trước mỗi buổi tập và trận đấu.
 **Tốc Độ (2 phút)**: Chạy nhanh với giảm tốc, chạy nhanh đổi hướng.
 
 Chương trình này mất 20 phút và không đòi hỏi thiết bị. Đây là khoản đầu tư tốt nhất tay vợt có thể làm cho sức khỏe đầu gối. Tay vợt di chuyển tự tin, cắt sắc nét và hạ cánh an toàn ở tuổi 35 là những người đã khởi động đúng cách ở tuổi 20. FIFA 11+ không chỉ là khởi động; đó là chính sách bảo hiểm dài hạn cho đầu gối của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Tập luyện plyometric và chu kỳ SSC*
+<!-- TAICHIKB-CROSSREF-END -->

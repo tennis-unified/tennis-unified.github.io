@@ -52,3 +52,10 @@ Khi đối đầu với tay trái ở lưới: (1) cú tiến lên lưới (poac
 ## Ứng Dụng Thực Tế: "Đảo Ngược Các Góc Đánh"
 
 Khi đối đầu với tay trái, hãy đảo ngược các góc đánh mà bạn đã quen trong đầu. Cú xuyên sân của họ là backhand của bạn; cú theo đường biên dưới của họ là forehand của bạn. Hãy điều chỉnh vị trí đứng, cú tiến lên lưới và hướng volley cho phù hợp.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

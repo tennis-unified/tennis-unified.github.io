@@ -187,3 +187,10 @@ Trong cú đánh quần vợt, khuỷu tay trải qua:
 | Đau cổ tay trong backhand | Wrist extensors yếu, dùng cổ tay quá | Wrist tendinopathy | Tăng cường extensor; xem xét kỹ thuật (ít cổ tay, xoay thân nhiều hơn) |
 | Sức mạnh nắm yếu | Sức mạnh forearm không đủ | Kiểm soát cú đánh giảm, ổn định vợt giảm | Ball squeezes; wrist curls; huấn luyện sức mạnh nắm |
 | Click hoặc bắt trong cổ tay | Chấn thương TFCC, tổn thương dây chằng | Đau, không ổn định | Đánh giá y tế; hỗ trợ cổ tay; thay đổi kỹ thuật |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

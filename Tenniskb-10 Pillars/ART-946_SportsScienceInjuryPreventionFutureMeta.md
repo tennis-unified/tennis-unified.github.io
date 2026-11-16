@@ -167,3 +167,10 @@ Perform this circuit 3-4 times per week, before training or as a standalone sess
 8. **Eccentric calf raise** — 2 × 12 per side (Achilles and ankle)
 
 This circuit requires minimal equipment (a resistance band and a mat) and can be performed anywhere. It is the most cost-effective injury prevention tool available. The players who perform it consistently are the ones who stay on court, week after week, month after month, year after year. Prehab is not glamorous, but it is the foundation of a long and successful tennis career.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+<!-- TAICHIKB-CROSSREF-END -->

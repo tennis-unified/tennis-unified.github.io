@@ -175,3 +175,10 @@ This charter provides a reference point for all team members and helps prevent m
 | Player receives mixed messages | Team members not aligned on approach | Reduced trust, inconsistent development | Establish shared vision; regular team alignment meetings |
 | Team member overstepping boundaries | Insufficient role definition, poor boundaries | Conflict, reduced team effectiveness | Reinforce role boundaries; address overstepping behavior |
 | Player feels overwhelmed by team | Too many voices, insufficient coordination | Reduced autonomy, increased stress | Streamline communication; empower player as decision-maker |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Athletic nutrition & energy balance*
+<!-- TAICHIKB-CROSSREF-END -->

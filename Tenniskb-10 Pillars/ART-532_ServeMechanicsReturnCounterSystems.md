@@ -125,3 +125,10 @@ Record your serve from behind and watch the follow-through path. Look for:
 ## Practical Application: "The Wall Finish"
 
 Stand 3 feet from a wall on your hitting side. Hit your serve motion and let the follow-through naturally bring the racket toward the wall. If the racket hits the wall, your follow-through is too extreme. If the racket stops well before the wall, your follow-through is too truncated. The ideal finish is 6-12 inches from the wall — a full but controlled follow-through that allows for quick recovery.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

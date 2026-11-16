@@ -59,3 +59,10 @@ Volley tay thuận rộng chạy bộ đòi hỏi khả năng di chuyển ngang 
 ## Ứng Dụng Thực Tế: "Bước Qua, Tiếp Xúc, Phục Hồi"
 
 Ba bước cho volley tay thuận rộng: (1) bước phân tầng để với đến bóng, (2) tiếp xúc phía trước với cổ tay vững chắc, (3) bước phân tầng còng để phục hồi. Cú đánh chỉ chiếm một phần ba của phương trình — phục hồi quan trọng như nhau.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

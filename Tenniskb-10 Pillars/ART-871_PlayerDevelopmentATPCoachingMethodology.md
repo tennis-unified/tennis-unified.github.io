@@ -65,3 +65,10 @@ Perform 3-4 times per week:
 | Ankle sprains | Poor proprioception, weak stabilizers | Recurrent sprains | Balance training; ankle strengthening; proprioceptive exercises |
 | Knee valgus during movement | Weak glute medius, poor control | Knee injuries | Lateral band walks; single-leg exercises; movement retraining |
 | Achilles pain | Tight calves, insufficient eccentric strength | Achilles tendinopathy | Eccentric calf lowering; calf stretching; gradual load increase |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+<!-- TAICHIKB-CROSSREF-END -->

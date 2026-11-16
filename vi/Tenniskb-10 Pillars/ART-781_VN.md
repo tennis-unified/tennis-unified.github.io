@@ -57,3 +57,10 @@ Cách theo dõi đơn giản bao gồm ghi chép thống kê phân tích tương
 ## Ứng Dụng Thực Tế: "Tốc Độ Sát Thương, Nhưng Xoáy Làm Chủ"
 
 Bắt đầu theo dõi phân tích tương quan giữa tốc độ và xoáy giao bóng trong năm trận đấu tiếp theo của bạn. Sử dụng hệ thống đếm đơn giản trên tấm thẻ ghi chú hoặc ứng dụng thống kê quần vợt. Sau mỗi trận đấu, tính phần trăm và so sánh với mục tiêu của bạn (thường là 60% trở lên cho hầu hết các chỉ số). Xác định các tình huống cụ thể mà chỉ số giảm (cuối set, sau các pha bóng dài, dưới áp lực tỷ số) và phát triển tập luyện mục tiêu cho các kịch bản đó. Trong mùa giải, theo dõi xem chỉ số có cải thiện và tương quan với chiến thắng trong trận đấu hay không.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -70,3 +70,10 @@ Người chơi gặp khó khăn với việc tạo topspin thường được l�
 ## Ứng Dụng Thực Tế: "Bài Tập Chùi Topspin"
 
 Đứng trên vạch giao bóng và nhờ đối thủ tạp bóng về phía vợt tay của bạn. Đánh mười cú vợt tập trung vào việc chùi lên mặt sau của bóng, không cần quan tâm đến hướng hoặc sức mạnh. Đếm số cú tạo ra topspin rõ ràng (bóng rơi dốc sau khi qua lưới). Theo dõi tiến trình qua các buổi tập để đảm bảo quỹ đạo vung tạo ra xoắn ổn định.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

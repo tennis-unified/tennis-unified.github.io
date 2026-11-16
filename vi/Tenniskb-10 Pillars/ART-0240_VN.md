@@ -56,3 +56,10 @@ Khi thực hiện điều chỉnh kỹ thuật, xử lý ý thức là cần thi
 
 ## Ứng Dụng Thực Tế: "Bước Tin Vỉa"
 Khi bạn nhận thấy mình đang suy nghĩ về kỹ thuật trong lúc chơi, hãy thực hiện một "bước tin vỉa": chủ động thả bỏ suy nghĩ kỹ thuật và thay thế nó bằng một sự tập trung kết quả đơn giản ("đánh sâu" hoặc "mượt"). Sự chuyển dịch có chủ đích này từ tập trung bên trong sang tập trung bên ngoài làm gián đoạn chu trình xử lý ý thức và khôi phục thực hiện tự động. Luyện tập bước tin vỉa trong tập luyện cho đến khi nó trở thành phản ứng tự động đối với dấu hiệu đầu tiên của suy nghĩ quá mức, cho phép bạn duy trì hiệu suất mượt mà, tự động tạo ra tennis tốt nhất của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -189,3 +189,10 @@ Tạo một thẻ quy trình du lịch nhỏ gọn:
 | Rối loạn giấc ngủ sau khi di chuyển | Không quản lý lệch giờ, vệ sinh giấc ngủ kém | Mệt mỏi, phục hồi giảm | Điều chỉnh giấc ngủ trước khi đi; melatonin; lịch trình nhất quán |
 | Mất nước trong chuyến đi | Uống nước không đủ, rượu | Thành tích giảm, mệt mỏi | Quy trình uống nước; tránh rượu; đồ uống điện giải |
 | Thích nghi chậm với múi giờ mới | Thiếu tiếp xúc ánh sáng, không dùng melatonin | Lệch giờ kéo dài | Quy trình tiếp xúc ánh sáng; bổ sung melatonin |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Động học góc và chuỗi động học tuần tự*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

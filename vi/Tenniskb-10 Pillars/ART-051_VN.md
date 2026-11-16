@@ -40,3 +40,10 @@ v_bóng ≈ v_vợt × (1 + COR) × (m_vợt_hiệu_dụng / (m_vợt_hiệu_d�
 
 ## Ứng Dụng Thực Tế: "Bộ Nhân Tốc Độ"
 Hãy tưởng tượng vợt của bạn như một bộ nhân tốc độ. Nếu bạn vung 30 m/s và bộ nhân là 1.5, bóng thoát 45 m/s (162 km/h). Để tăng tốc độ bóng, hoặc tăng tốc độ vợt (qua cơ học tốt hơn) hoặc tăng bộ nhân (qua trang bị tốt hơn). Cách hiệu quả nhất là cải thiện cả hai — cơ học TỐT HƠN VÀ trang bị TỐT HƠN.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

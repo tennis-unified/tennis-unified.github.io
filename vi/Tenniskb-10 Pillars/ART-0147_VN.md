@@ -72,3 +72,10 @@ Người chơi có thể phát triển ý thức véc tơ qua ba bài tập:
 ## Ứng Dụng Thực Tế: "Vẽ Bản Đồ Véc Tơ"
 
 Trong buổi tập tiếp theo, vẽ một tam giác đơn giản trên giấy với ba đỉnh ghi V (thẳng đứng), L (tuyến tính), và R (xoay). Cho người chơi xác định cú đánh nào trong trận vừa rồi dựa vào véc tơ nào: giao bóng (V cao + R cao), forehand từ đường nền (V vừa + L vừa + R cao), cú lên mạng (V thấp + L cao + R vừa), cú volley (V thấp + L vừa + R cao). Sau đó yêu cầu người chơi xác định véc tơ họ dùng thiếu: hầu hết người chơi giải trí dùng thiếu xoay (R) và dùng thừa dịch chuyển tuyến (L), tạo cú đánh nhanh theo một hướng nhưng thiếu thành phần xoay cần cho topspin và kiểm soát hướng. Dành 10 phút cho bài tập một thành phần (chỉ V, chỉ L, chỉ R) để cô lập từng véc tơ, rồi 10 phút cho tiến trình pha trộn (chỉnh tỉ lệ chủ ý). Trong một buổi, người chơi sẽ phát triển cảm nhận cho từng véc tơ và bắt đầu có ý thức chỉnh hỗn hợp — bước đầu tiên đến sản sinh lực chiến thuật.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

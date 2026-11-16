@@ -50,3 +50,10 @@ Người chơi hay gặp khó khăn dưới áp lực thường được lợi t
 
 ## Ứng Dụng Thực Tế: "Tập Luyện Áp Lực"
 Mô phỏng các tình huống áp lực cao trong tập luyện, chẳng hạn như điểm break, điểm set và điểm match. Tập trung vào những yếu tố cơ bản: cầm vợt đúng, xoay thân người, điểm chạm bóng và đà hoàn tấc. Theo dõi số điểm bạn giành được trong các tình huống áp lực. Bài tập này giúp phát triển sức mạnh tinh thần cần thiết để thi đấu hiệu quả dưới áp lực.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

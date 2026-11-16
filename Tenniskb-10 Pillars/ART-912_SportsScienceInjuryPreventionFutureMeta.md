@@ -45,3 +45,10 @@ Agility training should be performed when the nervous system is fresh, ideally a
 
 ## Practical Application: "Read, React, Explode"
 Incorporate reactive agility into every practice session. Set up a drill where your training partner stands at the baseline with a basket of balls and randomly hits to your forehand or backhand side. Your goal is to react to the ball's direction and sprint to the appropriate position. Start with slow feed and progressively increase the pace and unpredictability. Track your 5-10-5 shuttle time monthly, but equally important is tracking your ability to read and react to your partner's shot direction. Remember: in tennis, the best movers are not necessarily the fastest, but those who can anticipate and react most efficiently.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Dynamic balance & directional control*
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Plyometric training & reactive SSC*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

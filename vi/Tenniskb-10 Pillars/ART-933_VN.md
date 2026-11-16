@@ -110,3 +110,10 @@ Cho tay vợt bận rộn, khởi động sức mạnh bùng nổ tập trung 10
 4. **Hang power clean** — 3 hiệp 3 (50-60% clean 1RM, tốc độ thanh tạ tối đa)
 
 Nghỉ 90 giây giữa các hiệp. Buổi tập này huấn luyện sức mạnh bùng nổ chân, sức mạnh xoay trục, sức mạnh phản ứng và sức mạnh bùng nổ toàn thân trong 10 phút. Thực hiện trước buổi tập tennis vào ngày không liên tiếp, hoặc như buổi đơn trong giai đoạn tiền thi đấu. Theo dõi tiến bộ: ghi nhớ khoảng cách ném bóng y tế, chiều cao box jump và tốc độ thanh tạ. Khi số liệu đình trệ, đã đến lúc đổi bài hoặc đổi tải — không phải thêm khối lượng. Huấn luyện sức mạnh bùng nổ thưởng cho chính xác, không phải tích lũy.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Tập luyện plyometric và chu kỳ SSC*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

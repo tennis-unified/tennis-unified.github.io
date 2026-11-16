@@ -57,3 +57,10 @@ Phương pháp theo dõi đơn giản bao gồm ghi chép thống kê phân tíc
 ## Ứng Dụng Thực Tế: "Học Nhiều Hơn Từ Thất Bại So Với Thắng Lợi"
 
 Bắt đầu theo dõi phân tích sau trận nhằm rút ra bài học từ thất bại trong 5 trận đấu tiếp theo của bạn. Sử dụng hệ thống kiểm đếm đơn giản trên thẻ ghi nhớ hoặc ứng dụng thống kê quần vợt. Sau mỗi trận, tính phần trăm và so sánh với mục tiêu của bạn (thường là 60% trở lên cho hầu hết chỉ số). Xác định tình huống cụ thể mà chỉ số giảm (cuối set, sau pha bóng dài, dưới áp lực bảng điểm) và phát triển bài tập hướng đích cho những kịch bản đó. Qua một mùa giải, theo dõi xem chỉ số có cải thiện không và có tương quan với thắng trận hay không.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 10: Mô Cơ (Muscular Tissue)](https://taichikb.github.io/vi/books/tortora_ap/ch10-mo-co.html) — *Sinh lý mô cơ và cơ chế co cơ*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -31,3 +31,10 @@ Where:
 
 ## Practical Application: "The Lever Effect"
 Your arm and racket form a lever: the axis of rotation is your shoulder, the radius is your arm length plus racket length, and the linear velocity at the racket head is the product of angular velocity and radius. To maximize ball speed, maximize both angular velocity (through kinetic chain mechanics) and radius (through full arm extension at contact). The lever effect explains why taller players with longer arms have a natural advantage in generating ball speed—their longer radius converts the same angular velocity into higher linear velocity.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+<!-- TAICHIKB-CROSSREF-END -->

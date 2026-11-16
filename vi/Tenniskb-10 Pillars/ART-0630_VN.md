@@ -68,3 +68,10 @@ Sân cỏ khen thưởng lối chơi lưới tấn công: thế lực gần lư�
 ## Ứng Dụng Thực Tế: "Giữ Thấp, Giữ Gần"
 
 Trên sân cỏ, châm ngôn của tay vợt chơi lưới là "giữ thấp, giữ gần." Hãy tiệm cận lưới càng gần càng tốt và hạ thấp người cho mỗi volley. Bạn càng thấp, bạn càng xử lý tốt hơn bóng sân cỏ nảy thấp. Bạn càng gần, góc đánh càng sắc bén.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

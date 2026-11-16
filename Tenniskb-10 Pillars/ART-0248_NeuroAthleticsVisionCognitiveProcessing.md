@@ -47,3 +47,10 @@ Practice shifting your gaze to locations where information will become available
 
 ## Practical Application: "The Early Arrival"
 Train your eyes to arrive at the next location before the ball does. When the opponent is preparing to hit, shift your gaze to where you predict the ball will be, not where it currently is. This early arrival gives your visual system maximum time to process the incoming ball and reduces the rush that characterizes reactive gaze. Practice this in every rally until anticipatory eye movements become your default pattern.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Plyometric training & reactive SSC*
+<!-- TAICHIKB-CROSSREF-END -->

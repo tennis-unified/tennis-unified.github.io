@@ -49,3 +49,11 @@ In groundstrokes, triple extension is modified based on stance:
 2.  On a signal, explosively drive the body away from the wall, extending the ankle, knee, and hip simultaneously.
 3.  Immediately transition into a full-speed shadow swing.
 4.  Focus on the feeling of the three joints "firing" as one unit.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity (hip, knee, ankle)*
+- [Chương 8: Hệ Xương: Bộ Xương Phụ (The Skeletal System: The Appendicular Skeleton)](https://taichikb.github.io/vi/books/tortora_ap/ch08-he-xuong-bo-xuong-phu.html) — *Appendicular skeleton: lower limb bones*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Hip, knee, and ankle joint mechanics*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Lower extremity extensors (gluteals, quadriceps, triceps surae)*
+<!-- TAICHIKB-CROSSREF-END -->

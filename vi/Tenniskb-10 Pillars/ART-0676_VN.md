@@ -43,3 +43,10 @@ Các cú trả bóng dưới chân đòi hỏi kỹ thuật bán volley: hạ th
 ## Ứng Dụng Thực Tế: "Hạ Người, Mở Mặt, Đẩy Qua"
 
 Khi đối phó với cú trả bóng dưới chân: (1) hạ thấp người với cúi sâu đầu gối, (2) mở mặt vợt một chút, (3) đẩy qua bóng với cổ tay cứng. Giữ bóng đang chơi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

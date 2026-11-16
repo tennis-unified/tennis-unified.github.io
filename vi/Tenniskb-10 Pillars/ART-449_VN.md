@@ -70,3 +70,10 @@ Người chơi nên kết hợp các bài tập này vào lịch luyện thườ
 ## Ứng Dụng Thực Tế: "Kiểm Tra Vung Chuôi Gọn Ngắn"
 
 Trong lúc luyện tập, yêu cầu đối tác quan sát cú vung chuôi backhand và kiểm tra độ dài vung chuôi của bạn. Đầu vọt chày chỉ nên di chuyển đủ để đặt nó vào vị trí cho cú đánh tới, mà không có chuyển động rộng và vòng tròn. Nếu vung chuôi của bạn quá dài, hãy luyện tập rút ngắn nó trong khi vẫn duy trì sức mạnh thông qua xoay cơ thể và độ trễ cổ tay.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Động học góc và chuỗi động học tuần tự*
+<!-- TAICHIKB-CROSSREF-END -->

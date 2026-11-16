@@ -83,3 +83,10 @@ Record your serve from the side and compare your backscratch position to elite p
 ## Practical Application: "The Phone Drill"
 
 Hold a phone (or small object) between your hitting-side scapula and your trunk as you assume the trophy pose and backscratch position. If the phone drops during the motion, your shoulder is collapsing away from the trunk — a sign of poor scapular stability. If the phone stays in place throughout the backscratch and early acceleration, your shoulder is maintaining a stable, loaded position. This simple drill provides real-time feedback on scapular control during the serve.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

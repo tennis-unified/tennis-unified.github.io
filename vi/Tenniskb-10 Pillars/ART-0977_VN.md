@@ -47,3 +47,10 @@ Hành vi bề mặt không cố định; nó suy thoái. Sân cứng cần phủ
 ## Ứng Dụng Thực Tế: "Chuyển Đổi Như Chuyên Nghiệp"
 
 Xem lịch trình bề mặt như một tài liệu chuẩn bị thể chất, không phải lịch trình du lịch. Trước mỗi chuyển đổi bề mặt, chèn khối chuyển đổi xếp hạng: tiến triển trượt trước đất nện, bài độ nảy thấp và bước ngắn trước cỏ, và quản lý tải tác động trước các đoạn sân cứng dài. Những tay vợt ở khỏe qua mùa giải hiếm khi là những người có bài kiểm tra thể lực tốt nhất — họ là những người mà mô đã được chuẩn bị cho nhu cầu chính xác của bề mặt họ sắp chơi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

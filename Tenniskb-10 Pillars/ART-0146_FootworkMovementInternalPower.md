@@ -86,3 +86,10 @@ Video analysis of elite players reveals consistent dissociation signatures:
 ## Practical Application: "The Heavy-Light Split"
 
 At the next session, introduce the dissociation concept with a simple image: **heavy feet, light hands.** Have the player stand in their groundstroke stance and consciously press the balls of the feet into the court as if trying to leave footprints in the ground — this is the "heavy feet" instruction. Then have them hang the racket arm as if it were made of wet rope — this is the "light hands" instruction. Now hit 10 shadow swings maintaining both states simultaneously. Most players will find that one state disrupts the other: pressing the feet into the ground causes the arm to tighten, or loosening the arm causes the legs to go floppy. This is the dissociation challenge. Spend 5 minutes on shadow swings, then 10 minutes on live balls. The player who masters this split will visibly improve in two ways: (1) their groundstrokes will produce more pace with less visible effort (because the leg drive is now fully transmitted rather than leaked), and (2) their arm and shoulder will feel fresher after long hitting sessions (because the arm is no longer generating force, only guiding it). The heavy-light split is the physical manifestation of internal power: structure below, fluidity above.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

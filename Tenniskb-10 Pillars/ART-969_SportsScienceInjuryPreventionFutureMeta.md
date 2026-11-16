@@ -191,3 +191,10 @@ Coaches should:
 ## Practical Application: "See the Player, Not the Birthday"
 
 Every youth tennis player is on a unique biological timeline. The coach who recognizes this — who sees the late-maturing 12-year-old with exceptional coordination and fight, who sees the early-maturing 14-year-old who needs to be challenged technically — is the coach who develops champions. Track maturation, adjust expectations, create equitable environments, and remember: the player who is smallest today may be the strongest tomorrow. Your job is to ensure they are still playing when that day comes.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

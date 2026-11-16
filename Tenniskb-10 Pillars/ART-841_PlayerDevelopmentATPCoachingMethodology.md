@@ -194,3 +194,10 @@ Conduct an annual planning meeting (October-November) with the full support team
 | Fatigue and burnout mid-season | Insufficient rest, excessive tournament scheduling | Injuries, declining performance | Build in rest weeks; reduce tournament volume; prioritize quality over quantity |
 | Poor surface transitions | Insufficient transition time, no surface-specific preparation | Poor results during transition months | Extend transition periods; implement surface-specific training blocks |
 | Inconsistent performance throughout season | No structured training blocks, poor tournament selection | Unpredictable results | Implement structured training blocks; optimize tournament selection |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+<!-- TAICHIKB-CROSSREF-END -->

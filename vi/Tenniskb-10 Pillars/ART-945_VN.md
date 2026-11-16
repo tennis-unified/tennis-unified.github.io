@@ -120,3 +120,10 @@ Tích hợp kế hoạch phục hồi tâm lý này song song với quy trình p
 **Giai đoạn 4 — Trở Lại Thi Đấu (Tuần 12+)**: Bắt đầu với các set tập và trình diễn. Tập trung vào mục tiêu quá trình (chất lượng chuyển động, thực hiện chiến thuật) thay vì kết quả. Duy trì kỹ năng tâm lý (đặt mục tiêu, hình dung, thư giãn). Kiểm tra với nhà tâm lý thể thao nếu lo âu hoặc nỗi sợ kéo dài sau vài trận đấu đầu tiên.
 
 Khía cạnh tâm lý của phục hồi không phải xa xỉ; đó là điều cần thiết. Tay vợt trở lại được chữa lành vật lý nhưng bị sẹo tâm lý thường thể hiện kém, tái chấn thương hoặc từ bỏ môn thể thao hoàn toàn. Phục hồi chỉ giải quyết mô chứ không giải quyết tâm trí là phục hồi không hoàn chỉnh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+<!-- TAICHIKB-CROSSREF-END -->

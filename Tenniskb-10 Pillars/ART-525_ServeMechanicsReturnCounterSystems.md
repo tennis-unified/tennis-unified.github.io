@@ -139,3 +139,10 @@ Serving to the same location every time allows the returner to cheat and the net
 ## Practical Application: "The Middle-First Rule"
 
 In doubles, establish a rule: serve down the middle at least 60% of the time. This keeps the ball away from the returner's power zones, maximizes your partner's poaching opportunities, and reduces the risk of being passed. Once the returner starts cheating toward the middle to protect against the middle serve, you can begin mixing in more wide serves as a change-up.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -70,3 +70,10 @@ Hoạt động trả bóng tốt nhất là mô phỏng điều kiện trận đ
 ## Ứng Dụng Thực Tế: "Mô Phỏng Hàng Tuần"
 
 Mỗi tuần một lần, dành một buổi luyện tập hoàn toàn cho các bài tập mô phỏng trận đấu. Xoay qua năm bài tập, theo dõi điểm số theo thời gian. Điều này phát triển sức mạnh tinh thần và khả năng chịu đựng áp lực cần thiết để trả bóng hiệu quả trong trận đấu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

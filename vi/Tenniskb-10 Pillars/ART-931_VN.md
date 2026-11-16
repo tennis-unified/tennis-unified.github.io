@@ -95,3 +95,10 @@ Giảm tải (tapering) là giảm có chiến lược khối lượng tập (th
 Trước khi viết bất kỳ buổi tập nào, ngồi xuống với lịch thi đấu năm và làm việc ngược từ các giải đỉnh. Đánh dấu hai đến bốn giải ưu tiên bằng vòng tròn đỏ. Xung quanh mỗi giải, xây dựng cửa sổ giảm tải (7-10 ngày) và giai đoạn thi đấu (2-4 tuần). Sau đó điền vào các khối chuẩn bị và tiền thi đấu dẫn đến mỗi giải. Cuối cùng, lên lịch ngoài mùa — vâng, trước khi mùa giải bắt đầu, không phải sau khi kiệt sức.
 
 Lỗi phổ biến nhất huấn viên mắc là bắt đầu với chương trình gym và hy vọng lịch phù hợp. Đảo logic đó: lịch là chương trình, và gym, buổi sân và quy trình hồi phục đều phục vụ nó. Khi tay vợt hiểu tại sao mỗi tuần trông như vậy — tại sao tuần này nặng, tuần sau nhẹ, tuần trước giải là để cảm thấy tươi mới — sự tuân thủ cải thiện và lo lắng giảm. Chu kỳ hóa không chỉ là công cụ sinh lý; nó còn là công cụ tâm lý.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -60,3 +60,10 @@ Tập luyện để đạt sự nhất quán trong chạm điểm ngọt bao g�
 ## Ứng Dụng Thực Hành: "Kiểm Tra Âm Thanh"
 
 Chú ý đến âm thanh của mỗi cú chạm. Cú đánh chạm điểm ngọt tạo ra âm thanh "póc" trong và sắc nét, với rung động tối thiểu. Cú đánh lệch tâm tạo ra âm thanh trầm hơn, nhiều rung động và tiếng lạch cạch từ khung vợt. Sử dụng phản hồi thính giác này để tự sửa sự nhất quán vị trí chạm bóng trong quá trình tập luyện. Theo thời gian, bàn tay sẽ học cách nhận ra cảm giác của chạm điểm ngọt, cho phép bạn tự sửa lỗi trong thời gian thực trong các trận đấu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên phân đoạn*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

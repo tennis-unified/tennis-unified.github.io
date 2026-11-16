@@ -52,3 +52,10 @@ Người chơi giảm sớm sự tách biệt (bằng cách cho phép hông xoay
 ## Ứng Dụng Thực Tiễn: "Giữ Tách Biệt"
 
 Tại tư thế chuẩn bị, dừng lại và có ý thức đánh giá sự tách biệt hông-vai của bạn. Xoay vai xa nhất có thể thoải mái trong khi giữ hông tương đối vuông góc. Cảm nhận độ căng dọc theo sườn thân (bên trái cho người chơi thuận phải). Giữ tư thế này trong 1-2 giây, tập trung vào sức căng đàn hồi ở cơ chéo. Sau đó giải phóng bằng cách xoay hông trước về phía mục tiêu và cho phép độ căng tự nhiên duỗi xoắn vào vung vợt về trước. Bài tập này phát triển cả khả năng tạo ra sự tách biệt lẫn sự kiên nhẫn duy trì nó cho đến thời điểm giải phóng tối ưu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+<!-- TAICHIKB-CROSSREF-END -->

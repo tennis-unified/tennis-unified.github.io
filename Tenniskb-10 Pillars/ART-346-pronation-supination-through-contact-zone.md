@@ -50,3 +50,10 @@ Elite players time their pronation to peak at the moment of contact, with the ma
 ## Practical Application: "The Pronation Feel"
 
 Practice the pronation motion in isolation by holding your racquet with your dominant hand and rotating your forearm from palm-up (supination) to palm-down (pronation). Notice how the racquet face changes orientation during this rotation. During your forward swing, focus on the feeling of pronation occurring naturally as your arm accelerates through the contact zone. The goal is to time the pronation peak at contact for maximum power and face angle control.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Elbow, forearm pronation & wrist mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

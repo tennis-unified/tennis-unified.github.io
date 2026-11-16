@@ -89,3 +89,10 @@ Mọi vận động viên đẳng cấp đều phải tiến hóa: thêm vũ kh�
 
 ## Ứng Dụng Thực Tế: "Kiến Trúc Sư"
 Bạn không sửa nhà bằng cách đập tường khi vẫn đang ở trong đó. Bạn xây cánh mới (Giai Đoạn 1), kiểm tra áp lực (Giai Đoạn 2), rồi mở cửa (Giai Đoạn 3). Vận động viên là người ở; HLV là kiến trúc sư. Bản vẽ là hệ thống 5 Cột Trụ. Giấy phép là Cửa Sổ Bảo Vệ. Xây Đúng, Hoặc Mái Nhà Sập.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+<!-- TAICHIKB-CROSSREF-END -->

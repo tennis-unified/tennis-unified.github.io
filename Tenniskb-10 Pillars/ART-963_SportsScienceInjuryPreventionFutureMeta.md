@@ -174,3 +174,10 @@ Training should be structured in cycles (microcycles, mesocycles, macrocycles) t
 ## Practical Application: "Develop the Person, Not Just the Player"
 
 The LTAD model is not just about producing elite tennis players — it is about developing healthy, physically literate, lifelong athletes. At every stage, prioritize the child's overall development: their physical literacy, their love of movement, their social and emotional wellbeing, and their long-term potential. The players who reach the highest levels are not always those who trained the hardest the earliest — they are those who developed the most completely, most sustainably, and most joyfully.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Energy systems for tennis conditioning*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+<!-- TAICHIKB-CROSSREF-END -->

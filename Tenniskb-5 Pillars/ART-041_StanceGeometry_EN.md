@@ -41,3 +41,10 @@ The geometry of the forehand stance determines which Ground Reaction Force (GRF)
 
 ## Practical Application: The "Geometry Match"
 The athlete must match the stance to the tactical situation. A defensive high ball may require an open stance for rotational recovery; a deep approach shot requires a closed stance for linear penetration. The geometry of the feet determines the physics of the shot.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Forehand stance geometry & groundstroke mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Ground reaction vector alignment & linear kinetics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Lower extremity stance loading (hip, knee, ankle)*
+<!-- TAICHIKB-CROSSREF-END -->

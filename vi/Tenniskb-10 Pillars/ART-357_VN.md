@@ -74,3 +74,10 @@ Việc lựa chọn tay cầm phụ thuộc vào ba yếu tố:
 ## Ứng Dụng Thực Tiễn: "Quy Trình Lựa Chọn Tay Cầm"
 
 Thử nghiệm tất cả ba tay cầm trong luyện tập để cảm nhận sự khác biệt về góc mặt vợt, yêu cầu đường swing và kết quả shot. Dành 15 phút với mỗi tay cầm, đánh cùng loại shot, và ghi chú tay cầm nào cảm thấy tự nhiên nhất và cho kết quả tốt nhất cho phong cách chơi của bạn. Tay cầm tối ưu là tay cầm cho phép bạn tạo ra các shot mong muốn với sự thỏa hiệu cơ học ít nhất.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

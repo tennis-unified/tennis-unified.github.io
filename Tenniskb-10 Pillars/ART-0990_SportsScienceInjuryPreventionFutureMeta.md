@@ -39,3 +39,10 @@ The audit tool for any drill is representativeness: does this task look, feel, a
 
 ## Practical Application: "Set the Table, Let the Game Emerge"
 The ecological coach's secret is humility about design and confidence in the learner. Ask of every drill: what information is present, what decisions are demanded, and what does success cost? If the answers resemble a match, the practice will transfer; if they do not, no amount of repetition will bridge the gap. Set constraints that make good play the easiest path, ask questions that sharpen perception, and trust thousands of years of self-organizing motor systems to find the forehand. The game, properly arranged, coaches itself — the coach's art is arranging it.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

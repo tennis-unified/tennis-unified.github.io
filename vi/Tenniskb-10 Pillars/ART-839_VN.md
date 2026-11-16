@@ -219,3 +219,10 @@ Cấu trúc nghỉ giữa set để điều chỉnh chiến thuật:
 | Quá nhiều thay đổi, không nhất quán | Hoảng loạn, thiếu kiên nhẫn | Nhầm lẫn, mất bản sắc | Cam kết với điều chỉnh; cho chúng thời gian hiệu quả; giới hạn thay đổi 1-2 mỗi set |
 | Điều chỉnh không được thực hiện | Thực thi kém, thiếu tập trung | Điều chỉnh thất bại, bực tức | Thực hành các điều chỉnh cụ thể trong huấn luyện; tập trung vào thực thi |
 | Đối thủ điều chỉnh trước | Nhận ra chậm, quan sát kém | Luôn phía sau, phản ứng | Phát triển kỹ năng quan sát; dự đoán điều chỉnh đối thủ |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

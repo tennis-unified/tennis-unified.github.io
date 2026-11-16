@@ -99,3 +99,10 @@
 
 ## Ứng Dụng Thực Tế: "Người Chẩn Đoán, Không Phải Người Phán Xử"
 Khi một bệnh nhân đến với "đau ngực," bác sĩ không nói "Bạn đang khó tính." Họ làm ECG. Họ xét nghiệm máu. Họ chẩn đoán. Vận động viên "không thể huấn luyện" đang trình diễn một triệu chứng. **Chẩn Đoán Thất Bại Hệ Thống. Kê Đơn Giao Thức. Tái Đánh Giá.** Nhãn "không thể huấn luyện" là chẩn đoán của bác sĩ lười "tâm lý mà thôi." Hãy Làm Người Chẩn Đoán.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

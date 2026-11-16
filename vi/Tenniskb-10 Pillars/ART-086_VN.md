@@ -44,3 +44,10 @@ Khớp cổ xương bả vai (vai) đạt tốc độ góc cao nhất của bấ
 
 ## Ứng Dụng Thực Tế: "Bài Kiểm Tra Ổn Định Vai"
 Kiểm tra ổn định khớp cổ xương bả vai của bạn bằng cách thực hiện chuyển động xoay trong nhanh với tay ở 90° khép. Nếu bạn cảm thấy đau, kêu, hoặc cảm giác bất ổn, bạn có thể có bất ổn khớp cổ xương bả vai cần được xử lý qua củng cố cuff xoay và bài tập ổn định cái xương bả vai.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

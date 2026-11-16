@@ -47,3 +47,10 @@ Các biện pháp khắc phục tuận theo trực tiếp từ các cơ chế. T
 ## Ứng Dụng Thực Tế: "Áp Lực Là Kỹ Năng Bạn Tập Luyện"
 
 Không ai sinh ra giỏi ở điểm trận đấu — họ trở nên giỏi bằng cách diễn tập cược cho đến khi cược ngừng cảm giác như cược. Xây dựng hậu quả vào tập luyện hàng tuần, tự động hóa một thói quen trước serve và không bao giờ bỏ qua nó, và tập luyện bản thân để nhắm chú ý vào mục tiêu thay vì cơ thể của bạn. Và khi một nghẹn thỏi xảy ra, chẩn đoán cơ chế trước khi gán trách nhiệm: tâm trạch ở nơi khác (phân tâm) hay nó đang nhìn chằm chằm vào cổ tay (giám sát)? Sửa chữa khác nhau, và biết thất bại nào bạn vừa trải nghiệm là bước đầu tiên để làm cho nó là cái cuối cùng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

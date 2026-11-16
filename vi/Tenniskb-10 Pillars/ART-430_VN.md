@@ -74,3 +74,10 @@ Người chơi gặp khó khăn với backhand một tay thường hưởng lợ
 ## Ứng Dụng Thực Tế: Bài Tập Xoay Một Tay
 
 Đứng trước gương và tập swing backhand một tay chậm rãi. Tập trung vào việc xoay hông và vai ra xa lưng lưới trong quá trình take-back, sau đó xoay về phía trước trong swing. Kiểm tra rằng cánh tay không thống trị duỗi ra phía sau trong take-back và di chuyển qua cơ thể trong swing về phía trước. Lặp lại cho đến khi xoay cảm thấy tự nhiên.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

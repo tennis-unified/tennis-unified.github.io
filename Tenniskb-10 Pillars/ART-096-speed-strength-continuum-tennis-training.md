@@ -65,3 +65,10 @@ The speed-strength continuum describes the relationship between the force a musc
 
 ## Practical Application: "The Continuum Plan"
 Periodize your training across the speed-strength continuum: (1) Off-season: build maximum strength with heavy loads and low repetitions. (2) Pre-season: develop power with moderate loads and explosive repetitions. (3) In-season: maintain power and develop speed with light loads and maximum-speed repetitions. This periodized approach ensures you develop the full range of strength qualities that tennis demands.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

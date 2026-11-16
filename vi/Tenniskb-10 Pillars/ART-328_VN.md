@@ -66,3 +66,10 @@ Các vận động viên ưu tú thích nghi với chiều cao điểm chạm tr
 ## Ứng Dụng Thực Hành: "Bài Tập Chiều Cao"
 
 Yêu cầu một người tập cùng đưa bóng ở ba chiều cao khác biệt: thấp (tầm đầu gối), giữa (tầm thắt lưng) và cao (tầm vai). Với mỗi cú đánh, hãy điều chỉnh có ý thức độ cong đầu gối, quỹ đạo vung và điểm chạm để phù hợp với chiều cao của bóng. Bắt đầu chậm rãi để phát triển các mô hình vận động chính xác, sau đó tiến triển lên các chiều cao ngẫu nhiên buộc phải thích nghi nhanh chóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

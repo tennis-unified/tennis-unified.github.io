@@ -43,3 +43,11 @@ Hãy tưởng tượng một sợi dây thun khổng lồ kéo dài từ gót ch
 ### Bài Tập:
 *   **Nhảy Ngang sang Bóng Ma (Lateral Bound to Shadow):** Thực hiện một cú nhảy ngang mạnh sang chân ngoài, đặt chân vững chãi và ngay lập tức thực hiện một cú thuận tay bóng ma. Tập trung vào độ "nảy" từ chân.
 *   **Nạp Lực Với Dây Kháng Lực:** Buộc một sợi dây kháng lực quanh eo, neo vào một điểm bên cạnh. Bước vào tư thế mở; sợi dây sẽ kéo bạn lùi lại, buộc bạn phải chủ động đẩy mạnh vào chân ngoài để tạo sự ổn định và độ căng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Kéo giãn lệch tâm trước khi phát lực & quan hệ chiều dài–lực căng*
+- [Chương 10: Mô Cơ (Muscular Tissue)](https://taichikb.github.io/vi/books/tortora_ap/ch10-mo-co.html) — *Hoạt động cơ lệch tâm và cơ chế sợi cơ*
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Dự trữ năng lượng đàn hồi khi chịu tải lệch tâm*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học nạp lực thế đứng mở trong cú thuận tay*
+<!-- TAICHIKB-CROSSREF-END -->

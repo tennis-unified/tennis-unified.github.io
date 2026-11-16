@@ -174,3 +174,10 @@ Thời tiết nóng ảnh hưởng đáng kể đến hiệu suất tennis thôn
 | Suy giảm hiệu suất trong nóng | Không chuẩn bị nhiệt, mất nước | Mệt mỏi, lỗi, có thể rút lui | Triển khai thích nghi nhiệt; chiến lược làm mát |
 | Triệu chứng kiệt sức nhiệt | Chuẩn bị không đủ, bỏ qua dấu hiệu cảnh báo | Cấp cứu y tế, rút lui | Nhận diện sớm triệu chứng; rút lui nếu cần; hỗ trợ y tế |
 | Phục hồi chậm giữa các điểm | Áp lực tim mạch, mất nước | Mệt mỏi tích lũy | Bù nước; làm mát; điều chỉnh chiến thuật để rút ngắn điểm |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Dinh dưỡng thể thao và cân bằng năng lượng*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

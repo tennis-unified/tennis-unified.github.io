@@ -47,3 +47,10 @@ The whip-like motion of the tennis stroke is the visual manifestation of the kin
 
 ## Practical Application: "The Crack"
 Focus on the feeling of the whip cracking at contact. The stroke should feel effortless—like you're just guiding the racket and letting the kinetic chain do the work. If you feel like you're forcing the racket through the ball, you're disrupting the whip motion. Practice by performing shadow swings and focusing on the feeling of the wave traveling from your legs to your racket. When you can feel the crack—the explosive release of energy at the end of the swing—you've mastered the whip motion.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Angular kinematics & sequential kinetic chain*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

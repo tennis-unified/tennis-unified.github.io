@@ -177,3 +177,10 @@ Sư phạm phi tuyến tính là phương pháp:
 ## Ứng Dụng Thực Tế: "Học Bằng Cách Chơi"
 
 Lần tới khi bạn có buổi tập luyện, hãy dành 80% thời gian chơi các trò chơi điều chỉnh và chỉ 20% cho công việc kỹ thuật cô lập. Tạo trò chơi với các ràng buộc cụ thể: "Bạn chỉ có thể ghi điểm nếu bạn tấn công lưới," hoặc "Sân chỉ rộng một nửa — kiểm soát trung tâm." Những trò chơi này phát triển cùng kỹ thuật với tập luyện giỏ, nhưng với nhận thức, ra quyết định và hậu quả được bao gồm. Bạn sẽ học nhanh hơn, giữ lại nhiều hơn và chuyển giao tốt hơn sang thi đấu. Câu nói cũ là đúng: "Trò chơi là giáo viên tốt nhất" — nhưng chỉ khi môi trường thực hành thực sự đại diện cho trò chơi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

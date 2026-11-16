@@ -46,3 +46,10 @@ Raw tracking data is worthless without a question. The mature analytical workflo
 
 ## Practical Application: "Measure What Matters"
 You do not need a stadium system to think like an analyst. Pick the two numbers that define your game style — for a baseliner, perhaps first-serve percentage and return depth; for an attacker, first-strike conversion and net points won — and track them across every practice match for a month. Trends across twenty sessions beat any single match's story. Tracking technology's real gift is not the data itself but the end of arguing with yourself about what actually happened.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -116,3 +116,10 @@ Hãy hình dung cơ thể bạn là chữ X hình thành bởi hai đường ch�
 | Chéo trước | Ổn định bồn chậu, chuyển trọng | Bồn chậu dao động, đau cơ thêm, rối loạn khớp chậu | Cable chop bước, ném bóng y tế bước, cân bằng một chân xoay |
 | Dọc sâu | Truyền lực chân-người | Giảm đẩy chân, đau cơ gấu/lưng dưới | Romanian deadlift một chân, kettlebell swing, squat emphasis sau |
 | Ngang | Ổn định ngang, kiểm soát bồn chậu | Bồn chậu xuống, gối valgus, mất cân bằng | Bước dây ngang, single-leg squat, bound ngang, forehand mở cân bằng |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên phân đoạn*
+<!-- TAICHIKB-CROSSREF-END -->

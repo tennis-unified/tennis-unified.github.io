@@ -52,3 +52,10 @@ Develop a pre-point routine that includes a physical trigger and a mental cue to
 
 ## Practical Application: "Manage the Load, Preserve the Performance"
 Develop a pre-point routine that includes a physical trigger and a mental cue to automate decision-making. During changeovers, practice deep breathing (inhale for 4 counts, hold for 4, exhale for 4) to activate the parasympathetic nervous system and reduce cognitive load. Focus on controllable elements rather than uncontrollable factors. Between matches, prioritize sleep and mental recovery over additional practice. Incorporate 10 minutes of daily mindfulness meditation to build attentional control. Remember: your brain is your most important muscle, train it and protect it like you would any other part of your body.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

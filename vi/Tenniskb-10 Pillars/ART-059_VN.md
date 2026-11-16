@@ -50,3 +50,10 @@ Tạo topspin đòi hỏi sự kết hợp cụ thể của đường vợt (th�
 
 ## Ứng Dụng Thực Tế: "Cây Cưa Gió"
 Chuyển động cưa gió — nơi vợt di chuyển từ thấp-đến-cao và mặt xoay từ khép sang mở — là chìa khóa của topspin hiện đại. Luyện tập bằng cách cầm vợt trước mặt và di chuyển từ hông phải (cho forehand tay phải) lên vai trái, xoay mặt từ khép sang mở trong quá trình đó. Chuyển động cưa gió này tạo topspin nặng trong khi giữ động lượng tiến. Chìa khóa là mặt bắt đầu khép và kết thúc mở, chải lên phía sau bóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

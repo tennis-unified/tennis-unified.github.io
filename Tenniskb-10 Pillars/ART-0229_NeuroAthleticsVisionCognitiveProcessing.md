@@ -61,3 +61,10 @@ During practice, periodically pause and assess your cognitive state. "Am I focus
 
 ## Practical Application: "The Metacognitive Timeout"
 During changeovers, use a structured metacognitive timeout: (1) assess your focus level (1-10), (2) assess your emotional state (calm, anxious, frustrated, confident), (3) assess your decision quality (good, mixed, poor), and (4) set one specific cognitive goal for the next game (e.g., "maintain focus through long rallies" or "stay calm after errors"). This 30-second metacognitive routine keeps you aware of your cognitive state and provides a clear target for self-regulation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Mindfulness & flow state in sport*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

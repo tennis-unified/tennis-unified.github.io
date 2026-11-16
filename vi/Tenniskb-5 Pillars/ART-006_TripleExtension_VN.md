@@ -49,3 +49,11 @@ Trong các cú đánh cơ bản, duỗi ba khớp được điều chỉnh tùy 
 2.  Khi có tín hiệu, bùng nổ đẩy cơ thể ra xa tường, duỗi cổ chân, đầu gối và hông đồng thời.
 3.  Ngay lập tức chuyển sang cú vung vợt bóng ma tốc độ tối đa.
 4.  Tập trung vào cảm giác ba khớp "kích hỏa" như một đơn vị duy nhất.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới (hông, gối, cổ chân)*
+- [Chương 8: Hệ Xương: Bộ Xương Phụ (The Skeletal System: The Appendicular Skeleton)](https://taichikb.github.io/vi/books/tortora_ap/ch08-he-xuong-bo-xuong-phu.html) — *Bộ xương phụ: xương chi dưới*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Cấu trúc và cơ chế khớp hông, khớp gối, khớp cổ chân*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Nhóm cơ duỗi chi dưới (cơ mông, tứ đầu đùi, bắp chân)*
+<!-- TAICHIKB-CROSSREF-END -->

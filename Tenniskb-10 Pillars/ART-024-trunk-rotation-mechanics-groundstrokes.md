@@ -157,3 +157,10 @@ Exercises that increase trunk rotational range of motion:
 
 ## Practical Application: "The Rubber Band Twist"
 Hold a rubber band between both hands and twist it by rotating your shoulders while keeping your hips stable. Feel the tension building in the rubber band—this is the elastic energy stored during hip-trunk separation. Now release the rubber band and feel it snap back—this is the elastic recoil that powers trunk rotation. Practice this feeling during your groundstrokes: during loading, focus on twisting the rubber band (building tension in your trunk); during the forward swing, focus on releasing the rubber band (letting the tension snap your trunk forward). The more tension you build during loading, the more power you release during the swing. To develop this, perform 20 shadow swings daily with a focus on maximum hip-trunk separation during loading and explosive trunk rotation during the swing. Over time, this feeling will become automatic, and your groundstrokes will gain power without any increase in muscular effort.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+<!-- TAICHIKB-CROSSREF-END -->

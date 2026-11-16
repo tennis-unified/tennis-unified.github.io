@@ -46,3 +46,10 @@ Cú tay khác topspin đòi hỏi mặt vợt khép và cú volley đấm hướ
 ## Ứng Dụng Thực Tế: "Thả Bóng Xuống, Khép Mặt Vợt, Đấm Xuống"
 
 Khi đối đầu cú tay khác topspin: (1) để bóng rơi xuống tầm thoải mái, (2) khép mặt vợt, (3) đấm hướng xuống để khống chế cú bóng bật cao.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

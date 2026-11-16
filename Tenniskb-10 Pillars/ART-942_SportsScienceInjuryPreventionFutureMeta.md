@@ -133,3 +133,10 @@ Make sweat rate testing a regular part of your training routine. Weigh yourself 
 The math is simple: if you sweat 2.0 liters per hour and your match lasts 3 hours, you lose 6.0 liters of fluid. You cannot replace all of it during the match (your stomach can only absorb about 1.0-1.5 liters per hour), so you must start well-hydrated and drink aggressively at every changeover. Aim to replace 60-80% of your sweat losses during the match, and the remainder in the post-match recovery period.
 
 Players who know their sweat rate and follow a hydration plan consistently outlast their opponents in the heat. It is not glamorous, but it is decisive. The player who can think clearly and move fluidly in the third set of a 35°C match is the one who prepared — and hydration is preparation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Athletic nutrition & energy balance*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Tai Chi principles applied to tennis*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

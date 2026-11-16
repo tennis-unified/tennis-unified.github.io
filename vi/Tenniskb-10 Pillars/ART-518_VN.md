@@ -105,3 +105,10 @@ Sân cứng đóng vai trò mặt sân chuyển tiếp vì đặc tính của n�
 ## Ứng Dụng Thực Tế: "Mô Phỏng Mặt Sân"
 
 Hãy tập serve trên các mặt sân khác nhau trong cùng một tuần. Đánh 100 serve trên đất nện, 100 serve trên sân cứng và 100 serve trên cỏ (hoặc mô phỏng các mặt sân khác nhau bằng cách điều chỉnh chiến thuật). Ghi nhận cách kỹ thuật serve của bạn tự nhiên thích nghi với từng mặt sân. Sự nhạy bén bạn phát triển được từ việc tập luyện đa mặt sân này sẽ giúp bạn trở thành người giao bóng linh hoạt hơn, có thể thích nghi nhanh chóng khi lịch thi đấu đòi hỏi chuyển đổi mặt sân.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

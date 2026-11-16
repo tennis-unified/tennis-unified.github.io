@@ -198,3 +198,10 @@ Những tay vợt phát triển tốt trên đất nung thường sở hữu:
 | Mất kiên nhẫn trong rally dài | Sức bền không đủ, chọn cú kém | Lỗi không ép, mất điểm | Huấn luyện sức bền; bài tập kiên nhẫn chiến thuật; thực hành rally kéo dài |
 | Cú đánh mặt đất thiếu spin | Kỹ thuật topspin không đủ, đường vung kém | Cú đánh thụ động, dễ bị tấn công | Bài tập topspin nặng; huấn luyện tốc độ đầu vợt |
 | Mệt mỏi ở set ba | Phương pháp hiếu khí không đủ | Suy giảm hiệu suất trong trận dài | Xây dựng nền tảng hiếu khí; huấn luyện chạy nước rút lặp |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

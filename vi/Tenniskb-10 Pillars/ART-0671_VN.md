@@ -43,3 +43,10 @@ Cú trả bóng từ giao bóng xoay đòi hỏi di chuyển ngang và một cú
 ## Ứng Dụng Thực Tế: "Bước Chéo, Hạ Thấp, Điều Hướng"
 
 Đối phó cú trả bóng từ giao bóng xoay: (1) dùng bước chéo để với quả bóng rộng, (2) hạ thấp người cho cú cắt bóng, (3) điều hướng bằng cổ tay cứng. Di chuyển ngang nhanh chóng là chìa khóa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

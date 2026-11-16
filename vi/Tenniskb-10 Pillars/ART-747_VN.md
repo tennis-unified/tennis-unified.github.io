@@ -57,3 +57,10 @@ Người chơi nên tập vô hiệu giao bóng mạnh bằng trả sâu và kh�
 ## Ứng Dụng Thực Tế: "Đứng Vững Trước Giao Bóng Mạnh"
 
 Áp dụng vô hiệu giao bóng mạnh bằng trả sâu và khóa bóng bằng cách cam kết sử dụng chiến thuật này trong một hiệp tập hoàn chỉnh. Theo dõi số điểm bạn giành được bằng khuôn mẫu so với cách tiếp cận mặc định. Nếu chiến thuật giành thắng hơn 55% điểm bóng, hãy tích hợp nó vào kho chiến thuật thường xuyên. Nếu giành thắng ít hơn, hãy phân tích lý do: phải chăng do thực thi của bạn, sự thích ứng của đối thủ, hay thời điểm chọn lựa kém? Hoàn thiện chiến thuật dựa trên phân tích này trước trận đấu tiếp theo.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

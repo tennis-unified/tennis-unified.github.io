@@ -138,3 +138,10 @@ Một đồ uống thể thao tốt cho quần vợt nên chứa:
 | Nước tiểu đậm trước trận | Giữ nước trước trận không đủ | Giảm hiệu suất, nguy cơ sức khỏe | Giao thức giữ nước trước trận; theo dõi giữ nước hàng ngày |
 | Mất khối lượng trong trận >2% | Thay thế dịch không đủ | Suy giảm hiệu suất đáng kể | Tăng lượng dịch trong trận; cân trước/sau trận đấu |
 | Khó chịu tiêu hóa từ đồ uống | Quá cô, loại sai | Buồn nôn, chuột rút | Pha loãng đồ uống thể thao; thử thương hiệu khác; thực hành trong tập luyện |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Dinh dưỡng thể thao và cân bằng năng lượng*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

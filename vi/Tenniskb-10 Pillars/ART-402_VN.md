@@ -53,3 +53,10 @@ Tay cầm Phương Đông hoạt động hiệu quả với cả tư thế hở 
 
 ## Ứng Dụng Thực Tế: "Bài Tập Mặt Vợt Thẳng Đứng"
 Đứng cách tường 3 mét và đánh bóng backhand drive với tay cầm Phương Đông, tập trung việc giữ mặt vợt hoàn toàn thẳng đứng tại thời điểm chạm bóng. Đánh dấu một mục tiêu trên tường và nhắm vào sự nhất quán. Bài tập này xây dựng cảm giác cho vị trí mặt vợt trung tính và rèn luyện cán tay duy trì sự ổn định xuyên suốt va chạm.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

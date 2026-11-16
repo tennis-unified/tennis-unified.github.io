@@ -60,3 +60,10 @@ Việc rèn luyện bao gồm:
 ## Ứng Dụng Thực Tiễn: "Bài Tập Xoay Cẳng Tay Và Xoáy"
 
 Thực hành đóng góp xoáy của xoay cẳng tay bằng cách đánh các cú forehand với sự chú ý có ý thức vào chuyển động xoay cẳng tay. Cảm nhận cẳng tay mình xoay trong khi vợt tăng tốc qua điểm chạm, và nhận ra cách chuyển động xoay này nâng đầu vợt lên và làm tăng lượng chà lên trên (upward brush). Sử dụng thiết bị đo xoáy để kiểm chứng rằng xoay cẳng tay của bạn đang đóng góp vào tốc độ xoáy cao hơn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

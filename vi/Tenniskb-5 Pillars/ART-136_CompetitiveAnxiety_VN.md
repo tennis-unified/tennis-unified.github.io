@@ -49,3 +49,10 @@ Lo âu thi đấu là một phản ứng sinh học đối với mối đe dọa
 
 ## Ứng Dụng Thực Tế: "Đồng Hồ Đo Nhiệt Độ Kích Thích"
 Học cách cảm nhận mức độ kích thích của bạn trên thang 1-10. Nếu bạn ở mức 9 (hoảng loạn), sử dụng công cụ "làm mát". Nếu bạn ở mức 3 (uể oải), sử dụng công cụ "làm nóng". Nhắm đến "Tối Ưu 7".
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và bản lĩnh thời khắc quyết định*
+<!-- TAICHIKB-CROSSREF-END -->

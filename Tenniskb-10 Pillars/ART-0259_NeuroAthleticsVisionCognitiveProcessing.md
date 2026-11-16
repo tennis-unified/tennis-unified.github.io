@@ -64,3 +64,10 @@ Develop a pre-sleep routine that promotes relaxation: light stretching, reading,
 
 ## Practical Application: "The Sleep Priority"
 Treat sleep as a non-negotiable component of your training and competition schedule. Before tournaments, ensure you are well-rested by prioritizing sleep in the days leading up to competition. During tournaments, maintain a consistent sleep schedule despite the excitement and stress. After matches, use recovery sleep to consolidate the tactical and procedural memories formed during play. This prioritization of sleep transforms it from a passive recovery activity into an active performance enhancement tool.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

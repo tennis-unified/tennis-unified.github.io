@@ -107,3 +107,10 @@ Exercises that develop single-leg strength and stability—including single-leg 
 
 ## Practical Application: "The Bow and Arrow"
 Imagine your body as a bow and the ball as an arrow. During the serve loading phase, you draw the bow: bending your knees, rotating your trunk, and stretching your muscles like a bowstring being pulled back. The deeper you draw, the more energy you store—and the faster the arrow flies. Practice this by standing in your trophy position and slowly drawing the bow: bend your knees deeper, rotate your trunk further, feel the stretch in your legs and core. Hold the fully drawn position for three seconds, feeling the tension like a pulled bowstring. Now release: extend your knees, rotate your trunk forward, and accelerate your arm as if releasing the arrow. Do this 10 times without a ball, focusing on the feeling of stored energy being released. The serve is not about arm strength—it's about drawing the bow deeply and releasing it explosively. The deeper your draw (loading), the faster your arrow (ball) flies.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -135,3 +135,10 @@ Thực hiện thói quen này 3-5 lần mỗi tuần để duy trì ổn định
 6. **Kéo giãn bắp chân** — 30 giây mỗi bên (gastrocnemius và soleus)
 
 Thói quen này mất khoảng 10 phút và chỉ đòi hỏi băng kháng lực. Đây là công cụ phòng chấn thương mắt cá hiệu quả về chi phí nhất hiện có. Kết hợp với giày dép phù hợp và, khi chỉ định, hỗ trợ ngoại bộ, nó có thể phá vỡ chu kỳ bong gân mắt cá lặp đi lặp lại và giữ tay vợt trên sân, di chuyển tự tin và cạnh tranh ở mức tốt nhất. Mắt cá là nền tảng của mọi chuyển động trong tennis — bảo vệ nó, và nó sẽ mang bạn qua sự nghiệp dài và thành công.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

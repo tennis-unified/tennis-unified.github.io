@@ -218,3 +218,10 @@ Phát triển cách tiếp cận theo giai đoạn để tích hợp công ngh�
 | Các mẫu chiến thuật không được xác định | Chỉ quan sát thủ công, không phân tích dữ liệu | Bỏ lỡ các thông tin chiến thuật | Triển khai Hawk-Eye hoặc phân tích video để nhận dạng mẫu |
 | Vận động viên không thể tự đánh giá kỹ thuật | Không có phản hồi video, dựa vào cảm giác | Lỗi lặp lại, thất vọng | Giới thiệu các buổi phân tích video định kỳ; bài tập tự xem lại |
 | Trạng thái phục hồi không được theo dõi | Chỉ đánh giá chủ quan | Tập quá mức hoặc không đủ | Triển khai theo dõi HRV; bảng hỏi sức khỏe hàng ngày |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

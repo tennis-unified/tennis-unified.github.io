@@ -57,3 +57,10 @@ Kiểm tra lại 4-6 tuần bằng chính giao thức đó. Kỳ vọng cải th
 
 ## Ứng Dụng Thực Tế: "Cái Gương 25 Điểm"
 Tuần này, chạy kiểm toán một lần: quay 12 phút điểm trực tiếp cộng 2 phút cuối phiên tập khó, chấm năm hạng với các neo trên, và viết hồ sơ trên một thẻ — ví dụ, "4-2-2-3-4." Thẻ đó giờ là kế hoạch tập: bốn tuần tới thuộc về hai điểm thấp nhất, một mô-đun mỗi hai tuần đầu và sau, mọi thứ khác ở thể tích duy trì. Quay lại tuần năm dưới cùng điều kiện. Người chơi lặp chu kỳ này ba lần thường cộng 4-6 điểm tổng — nhưng đầu ra thực khác: họ ngừng mô tả chuyển động bằng cảm xúc và bắt đầu mô tả nó bằng một tập số có thể sửa được.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+<!-- TAICHIKB-CROSSREF-END -->

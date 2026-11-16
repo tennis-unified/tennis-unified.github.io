@@ -48,3 +48,10 @@ Không thực hiện split step hoặc thực hiện như một thói quen mà k
 3.  Ngay khoảnh khắc HLV *bắt đầu* chuyển động vung vợt về phía trước, người chơi thực hiện split step.
 4.  Người chơi phải tiếp đất đúng lúc bóng được đánh đi.
 5.  Ngay lập tức bùng nổ lao về phía một hình nón mục tiêu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Phản ứng plyometric và cửa sổ thời gian SSC*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Thời điểm split step và khởi phát di chuyển trên sân*
+- [Chương 13: Tủy Sống và Dây Thần Kinh Sống (The Spinal Cord and Spinal Nerves)](https://taichikb.github.io/vi/books/tortora_ap/ch13-tuy-song-va-day-than-kinh-song.html) — *Phản xạ căng cơ tủy sống và kích hoạt thần kinh–cơ*
+<!-- TAICHIKB-CROSSREF-END -->

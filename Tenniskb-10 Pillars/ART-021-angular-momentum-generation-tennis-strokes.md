@@ -124,3 +124,10 @@ The direction of the angular velocity vector determines:
 
 ## Practical Application: "The Spinning Top"
 Imagine your body as a spinning top that you set in motion from the ground. The initial spin comes from your legs pushing against the court—like twisting the top's handle. As the spin travels up through your hips and trunk, each segment adds to the rotation, just like a top spinning faster as its mass concentrates toward the center. By the time the rotation reaches your racket, the "top" is spinning at maximum speed. Practice this by performing slow-motion groundstrokes, feeling the rotation begin in your legs, accelerate through your trunk, and peak at your racket. The key insight is that angular momentum is conserved—once you create it with your legs, it travels through your body to the racket. Your job is not to create momentum at the racket (the arm) but to create it at the ground (the legs) and channel it efficiently to the racket. The more angular momentum you generate at the ground, the faster your racket spins—and the more powerful your strokes become.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Linear kinetics, GRF & impulse-momentum*
+<!-- TAICHIKB-CROSSREF-END -->

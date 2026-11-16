@@ -55,3 +55,10 @@ Trong các pha tập luyện rally, cố ý ghi nhận vị trí đối thủ tr
 
 ## Ứng Dụng Thực Tế: "Góc Nhìn Rộng"
 Trong các pha tập luyện rally, cố ý mở rộng sự chú ý của bạn để bao gồm toàn bộ sân trong tầm nhìn ngoại vi. Tưởng tượng sự chú ý của bạn như một ống kính góc rộng thay vì ống kính tele. Trước mỗi cú đánh, quan sát vị trí đối thủ, khu vực mở và vị trí của chính bạn trong một cái nhìn. Thói quen này, được phát triển trong tập luyện, trở nên tự động trong thi đấu và cung cấp nhận thức không gian mà phân biệt người chơi có trí thông minh chiến thuật với những người chỉ đánh bóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

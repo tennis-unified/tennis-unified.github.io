@@ -52,3 +52,10 @@ Training lateral flexion involves developing the flexibility and strength of the
 ## Practical Application: "The Side Lean"
 
 To develop the lateral flexion component, practice your unit turn while standing next to a wall or fence. Position yourself so that your rear shoulder is close to the wall, and perform the unit turn, consciously leaning your upper body away from the wall (toward your rear hip). Feel the stretch along the opposite side of your trunk. This exaggerated lean helps you develop the sensation of lateral flexion, which should then be moderated to the appropriate 15 to 25 degree range during normal strokes.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Lateral Line: lateral stability & mediolateral force*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+<!-- TAICHIKB-CROSSREF-END -->

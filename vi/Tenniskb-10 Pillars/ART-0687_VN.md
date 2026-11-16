@@ -43,3 +43,10 @@ Cú trả bóng sớm đòi hỏi phải đứng sâu hơn, dự đoán và sử
 ## Ứng Dụng Thực Tế: "Sâu Hơn, Dự Đoán, Cản Bóng"
 
 Đối phó với cú trả bóng sớm: (1) đứng sâu hơn, (2) dự đoán hướng bóng, (3) sử dụng cú volley cản. Bóng đến sớm đòi hỏi phản ứng nhanh hơn — hãy chuẩn bị sẵn sàng cho nó.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

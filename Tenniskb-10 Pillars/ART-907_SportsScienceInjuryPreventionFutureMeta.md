@@ -114,3 +114,10 @@ The quadriceps tendon, patella, and patellar tendon form the extensor mechanism.
 ## Practical Application: "Land Like a Cat"
 
 When you land from any overhead or lateral movement, think about absorbing force through your hips and knees simultaneously. Practice single-leg landings with a "soft" knee — land with your knee tracking over your second toe, hip and knee both flexed, and your weight centered over your landing foot. Hold the landing position for 3 seconds. If your knee collapses inward, you need more hip strengthening. This single drill prevents more knee injuries than any brace ever could.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

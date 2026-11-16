@@ -70,3 +70,10 @@ Những người chơi vội vã vung lùi thường không thực hiện đư�
 ## Ứng Dụng Thực Tế: "Vung Lùi Trước Gương"
 
 Đứng trước gương và tập vung lùi backhand chậm rãi. Quan sát quỹ đạo vợt, xoay cơ thể và vị trí thả thấp. Đảm bảo vợt di chuyển cùng cơ thể và hạ thấp xuống dưới bóng cho cú topspin drive. Lặp lại đến khi cú vung lùi trở nên tự nhiên và nhất quán, sau đó tập ở tốc độ tối đa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

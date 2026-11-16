@@ -64,3 +64,10 @@ Qua trận ba set, chi phí tích lũy của chuyển động rời rạc đáng
 ## Ứng Dụng Thực Tế: "Bài Tập Chai Nước Đầy"
 
 Đưa người chơi một chai nước nửa lít. Cho họ áp chai vào bụng dưới với lực tay nhẹ và thực hiện vung không bóng chậm — forehand, backhand, volley — trong khi giữ chai ép đủ chặt để nước không sóng sánh. Khoảnh khắc nước sóng sánh nghe được, thân đã mềm và cơ hoành đã thả. Đây là công cụ sinh phản hồi trực tiếp: nước im lặng = thân liền kết = khối nội đang di chuyển cùng xương. Chạy bài tập này hai phút đầu mỗi buổi tập di chuyển chân.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

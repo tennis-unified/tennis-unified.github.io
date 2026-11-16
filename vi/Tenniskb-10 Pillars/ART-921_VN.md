@@ -56,3 +56,10 @@ Nếu bạn là tuyển thủ quần vợt nữ, hãy theo dõi chu kỳ kinh ng
 | Người chơi biểu lộ hạn chế calo ám ảnh hoặc sợ tăng cân | Rối loạn ăn uống; RED-S | Rối loạn chức năng nội tiết; tổn thương tâm lý | Tư vấn tâm lý; giới thiệu chuyên gia dinh dưỡng đăng ký; đội ngũ điều trị đa ngành |
 | Người chơi cho thấy giảm thành tích mặc dù tập luyện tăng | Quá tập; khả năng cung cấp năng lượng thấp | Ức chế chuyển hóa; nguy cơ chấn thương | Đánh giá khả năng cung cấp năng lượng; can thiệp dinh dưỡng; giảm khối lượng tập luyện |
 | Người chơi có lịch sử nhiều gãy xương stress | Khả năng cung cấp năng lượng thấp mãn tính; tổn hại sức khỏe xương | Chấn thương giới hạn sự nghiệp | Đánh giá RED-S toàn diện; theo dõi sức khỏe xương dài hạn; phục hồi dinh dưỡng |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Dinh dưỡng thể thao và cân bằng năng lượng*
+<!-- TAICHIKB-CROSSREF-END -->

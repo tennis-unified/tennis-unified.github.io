@@ -104,3 +104,10 @@ HLV giỏi không phải sinh ra; họ được xây dựng qua thực hành có
 
 ## Ứng Dụng Thực Tế: "Mặt Nạ Oxy"
 Trên Máy Bay, Bạn Đeo Mặt Nạ Của Mình Trước. Một HLV Thiếu Oxy Không Thể Cứu VĐ Đang Bị Ngạt. **HLV Của HLV Là Hệ Thống Oxy.** Nó Giữ HLV Tỉnh Táo, Căn Chỉnh, Và Có Năng Lực. Đầu Tư Vào HLV Của HLV; Vận Động Viên Sẽ Thắng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+<!-- TAICHIKB-CROSSREF-END -->

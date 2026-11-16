@@ -90,3 +90,10 @@ Bộ nhớ làm việc giữ ~4 mục. Một cú đánh phức tạp có 50+ bi�
 
 ## Ứng Dụng Thực Tế: "Người Làm Vườn"
 Bạn không xây dựng bông hoa (vận động viên). Bạn chuẩn bị đất (môi trường), gieo hạt (nhiệm vụ), tưới nước (phản hồi), và đảm bảo ánh sáng (văn hóa). Bông hoa tự lớn. Thiết kế vườn; đừng bung héo cánh hoa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

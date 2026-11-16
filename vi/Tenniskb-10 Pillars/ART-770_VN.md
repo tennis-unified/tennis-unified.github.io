@@ -57,3 +57,10 @@ Phương pháp theo dõi đơn giản bao gồm ghi chép số liệu tỷ lệ 
 ## Ứng Dụng Thực Tế: "Bản Cân Đối Sự Quyết Tâm"
 
 Bắt đầu theo dõi tỷ lệ winner và lỗi không đáng có trong năm trận đấu tiếp theo của bạn. Sử dụng hệ thống ghi chép đơn giản trên thẻ nhớ hoặc ứng dụng thống kê quần vợt. Sau mỗi trận, tính phần trăm và so sánh với mục tiêu của bạn (thường là 60% hoặc cao hơn đối với hầu hết các chỉ số). Xác định các tình huống cụ thể khi chỉ số giảm (cuối set, sau các pha giao tranh dài, dưới áp lực bảng tỷ số) và phát triển bài tập mục tiêu cho những tình huống đó. Qua một mùa giải, theo dõi liệu chỉ số có cải thiện và tương quan với chiến thắng hay không.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

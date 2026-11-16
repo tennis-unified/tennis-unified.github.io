@@ -51,3 +51,10 @@ Advanced errors require a systematic approach to correction:
 
 ## Practical Application: The "Complete Chain"
 The athlete should feel that the kinetic chain is "complete" and integrated. The athlete should not feel that any part of the chain is working independently of the others. The athlete should feel that the energy is flowing from the ground, through the core, and out through the racket. This is the ultimate goal of the 5-Pillar System: to create a complete, integrated athlete who performs effortlessly at their peak potential.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Biomechanical error patterns & injury risk*
+- [Chương 3: Hiểu về vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch03-hieu-ve-van-dong.html) — *Understanding movement dysfunction vs. compensation*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Angular kinematic breakdown diagnostics*
+<!-- TAICHIKB-CROSSREF-END -->

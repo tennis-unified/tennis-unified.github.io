@@ -38,3 +38,11 @@ Ftotal = √ (Fx² + Fy² + Fz²)
 ## Ứng Dụng Thực Tế & Bài Tập
 *   **Bài tập Nhảy Vector (Vector-Jump Drill):** Nhảy thẳng đứng (Fz), sau đó nhảy ngang (Fx), rồi nhảy về phía trước (Fy), tập trung vào cảm giác mặt sân "đẩy ngược lại".
 *   **Nạp Lực Chân Ngoài:** Trong cú thuận tay tư thế mở, hãy chủ động "ép" gót chân ngoài xuống mặt sân để cảm nhận vector Fx trước khi bắt đầu xoay hông.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Định luật III Newton & Phản lực mặt đất (Động lực học tuyến tính)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch01.html) — *Ba mặt phẳng giải phẫu tham chiếu (đứng dọc, đứng ngang, ngang)*
+- [Chương 1: Giới Thiệu Về Cơ Thể Người (An Introduction to the Human Body)](https://taichikb.github.io/vi/books/tortora_ap/ch01-gioi-thieu-ve-co-the-nguoi.html) — *Các mặt phẳng, trục giải phẫu và thuật ngữ định hướng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý phản lực mặt đất và lực cơ bản trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

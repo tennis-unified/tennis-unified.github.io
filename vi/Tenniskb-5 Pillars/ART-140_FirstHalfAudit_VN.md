@@ -42,3 +42,10 @@ Dựa trên kiểm toán, Nửa Sau sẽ tập trung vào:
 
 ## Ứng Dụng Thực Tế: "Chiếc Gương"
 Cuộc kiểm toán này không phải là bài kiểm tra. Đó là một chiếc gương. Nếu hình phản chiếu cho thấy một vận động viên rời rạc, Nửa Sau sẽ xây dựng chất kết dính. Nếu nó cho thấy một vận động viên hoàn chỉnh, Nửa Sau sẽ mài giũa lưỡi dao.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và lõi*
+<!-- TAICHIKB-CROSSREF-END -->

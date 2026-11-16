@@ -91,3 +91,10 @@ Tỷ lệ chỉ số tấm lực đầu trận so với cuối trận chỉ ra k
 
 ## Ứng Dụng Thực Tế: "Bài Kiểm Tra Nhảy"
 Đánh giá tấm lực đơn giản có thể xấp xỉ mà không cần công nghệ đắt tiền. Thực hiện nhảy cưỡng đối và đo chiều cao nhảy bằng cách chạm cao nhất có thể lên tường. So sánh với chạm đứng yên. Chiều cao nhảy 30+ cm chỉ ra sức mạnh chi dưới tốt; 40+ cm chỉ ra độ bung nổ cấp đẳng cấp. Kiểm tra hàng tháng và theo dõi số liệu. Nếu chiều cao nhảy giảm quá 5%, bạn đang tích lũy mệt mỏi và cần phục hồi. Để đánh giá đặc thù tennis hơn, thực hiện nhảy một chân để khoảng cách và so sánh hai chân — chênh lệch nên dưới 10 cm. Các bài kiểm tra sân đơn giản này cung cấp cái nhìn có nghĩa về dung lượng tạo lực và hướng dẫn trọng tâm huấn luyện.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Động lực học tuyến tính, GRF và xung lượng*
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Tập luyện plyometric và chu kỳ SSC*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -58,3 +58,10 @@ Training under progressively reduced time pressure develops the ability to maint
 ## Practical Application: "The Zone Awareness Drill"
 
 Before each practice session, spend 5 minutes establishing your contact zone: stand in your normal forehand position and have a partner feed balls at varying heights and speeds. Note the contact point where you feel maximum power and control—this is your optimal zone. Mark it mentally (or physically with cones), and for the rest of the session, focus on positioning yourself so the ball arrives in this zone.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Mindfulness & flow state in sport*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+<!-- TAICHIKB-CROSSREF-END -->

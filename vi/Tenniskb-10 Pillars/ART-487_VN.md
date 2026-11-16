@@ -46,3 +46,10 @@ Người chơi gặp khó khăn về sức mạnh cẳng tay và cổ tay thư�
 ## Ứng Dụng Thực Tế: "Thói Quen Tập Luyện Cẳng Tay Và Cổ Tay"
 
 Thực hiện bài tập cẳng tay và cổ tay 2-3 lần mỗi tuần, bao gồm uốn cổ tay, uốn cổ tay ngược, các bài tập xoay trong/xoay ngoài và các bài tập bóp kẹp. Sử dụng tạ nhẹ đến trung bình, tập trung vào chất lượng hơn số lượng. Theo dõi khả năng kiểm soát và ổn định cú đánh vật gáy theo thời gian để đảm bảo chương trình mang lại kết quả mong muốn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

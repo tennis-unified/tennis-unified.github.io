@@ -63,3 +63,10 @@ Người chơi kiểm soát trục xoáy bằng cách điều chỉnh hướng c
 ## Ứng Dụng Thực Tế: "Kiểm Soát Trục Xoáy"
 
 Tập kiểm soát trục xoáy bằng cách đánh forehand với các hướng cọ khác nhau: cọ lên thuần túy (topspin), cọ xuống (backspin), và cọ ngang (sidespin). Lưu ý cách mỗi hướng cọ ảnh hưởng đến quỹ đạo bay và cách bật của bóng. Phát triển khả năng kiểm soát trục xoáy dựa trên tình huống chiến thuật.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -76,3 +76,10 @@ Drill nhấn mạnh phối hợp giữa đẩy chân và vung cánh tay bao gồ
 
 ## Ứng Dụng Thực Tế: "Đẩy Sân Xa Ra"
 Giao bóng không phải chuyển động cánh tay — nó là đẩy chân với cánh tay gắn kèm. Trước lần tập giao bóng tiếp theo, đứng ở tư thế trang trí và tập trung hoàn toàn vào chân. Hãy tưởng tượng sân là bệ bạn cố gắng đẩy xuống và đẩy ra xa. Đẩy cả hai chân vào sân như muốn rời khỏi mặt đất, với lực hơi nhiều hơn từ chân bên tay cầm vợt. Cảm nhận cơ thể nhấc lên và háng bắt đầu xoay trước khi cánh tay động. Cánh tay đơn giản lướt trên làn sóng năng lượng do chân tạo ra. Luyện swing chân khô 10 lần trước khi đánh bóng, tập trung vào cảm giác chân làm việc. Khi thêm bóng, giao bóng sẽ cảm thấy nhẹ nhàng vì bạn dùng cơ to, mạnh nhất cơ thể tạo lực.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

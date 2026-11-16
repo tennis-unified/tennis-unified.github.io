@@ -60,3 +60,10 @@ Players should incorporate these drills into their regular practice routine, foc
 
 ## Practical Application: "The Compact Swing Check"
 During practice, have a partner observe your backhand swing and check the length of your backswing. The racket should move back just enough to position it for the forward swing, without a wide, looping motion. If your backswing is too long, practice shortening it while maintaining power through body rotation and wrist lag.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Angular kinematics & sequential kinetic chain*
+<!-- TAICHIKB-CROSSREF-END -->

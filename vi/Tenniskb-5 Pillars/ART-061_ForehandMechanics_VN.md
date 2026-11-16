@@ -44,3 +44,10 @@ Truyền năng lượng là quá trình truyền năng lượng từ mặt sân 
 
 ## Ứng Dụng Thực Tế: "Thuận Tay Hoàn Chỉnh"
 Vận động viên nên cảm nhận rằng thuận tay là "hoàn chỉnh" và tích hợp với chuỗi động học. Vận động viên nên cảm nhận năng lượng chảy từ mặt sân, qua vùng lõi và ra ngoài qua vợt. Đây là mục tiêu cuối cùng của Hệ Thống 5 Cột Trụ: tạo ra một vận động viên hoàn chỉnh, tích hợp, thực hiện một cách không gắng sức ở tiềm năng đỉnh cao của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay, quỹ đạo vợt và tạo xoáy lên*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc trong tích trữ lực cú thuận tay*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai trong cú thuận tay*
+<!-- TAICHIKB-CROSSREF-END -->

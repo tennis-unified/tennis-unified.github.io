@@ -62,3 +62,10 @@ This relationship means that players who want to combine forward contact with he
 ## Practical Application: "The Timing Spectrum"
 
 Practice hitting forehands at three distinct timing points: early (on the rise, 0.1s after bounce), mid (at the apex, 0.2-0.3s after bounce), and late (on the descent, 0.4-0.5s after bounce). Note how each timing affects the ball's trajectory and pace. Develop the ability to choose the appropriate timing based on the tactical situation rather than defaulting to one timing for all shots.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+<!-- TAICHIKB-CROSSREF-END -->

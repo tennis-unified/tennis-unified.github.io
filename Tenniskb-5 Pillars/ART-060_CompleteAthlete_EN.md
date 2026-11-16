@@ -48,3 +48,11 @@ The 5-Pillar Integration Check should be performed before every training session
 
 ## Practical Application: The "Complete Athlete"
 The athlete should feel that they are "complete" and able to perform under the demands of tennis. The athlete should feel that they are integrated with the 5-Pillar System and able to perform at their peak potential. This is the ultimate goal of the 5-Pillar System: to create a complete, integrated athlete who performs effortlessly at their peak potential.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Integrated biomechanical principles of tennis*
+- [Chương 16: Chương 16: Các Yếu Tố Quyết Định Sinh Lý Học Của Thành Tích Thể Thao — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch13.html) — *Physiological integration for peak sport performance*
+- [Chương 19: Chương 19: Bước Ra Sân: Lời Giới Thiệu Về Lĩnh Vực Tâm Lý Học Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch19.html) — *Sport psychology integration for the complete athlete*
+- [Chương 19: Thấu hiểu cơ học-thích-nghi của mô mạc: Ứng dụng vào y học thể thao — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch19-thau-hieu-co-hoc-thich-nghi-cua-mo-mac-ung-dung-vao-y-hoc-the-th.html) — *Adaptive mechanobiology in sports medicine*
+<!-- TAICHIKB-CROSSREF-END -->

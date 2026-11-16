@@ -134,3 +134,10 @@ Thực hiện buổi tập này 2-3 lần mỗi tuần. Nó bao quát tăng tố
 - Giãn cơ tĩnh (đùi sau, đùi trước, cơ mông trước, bắp chân) × 30 giây mỗi cơ
 
 Theo dõi thời gian của bạn cho các pha chạy nhanh 30 mét và các lần lặp sức bền tốc độ. Khi thời gian cải thiện thêm 0,1-0,2 giây hoặc nhiều hơn, tốc độ trên sân của bạn đã tăng lên đo lường được. Tốc độ là một kỹ năng — nó cải thiện với thực hành, không chỉ thể lực. Những người chơi di chuyển tốt nhất trên sân không phải lúc nào cũng là nhanh nhất trên một đường thẳng; họ là những người có thể tăng tốc, giảm tốc và thay đổi hướng với độ chính xác và hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

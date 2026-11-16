@@ -67,3 +67,10 @@ Công nghệ đeo trên người — bao gồm đơn vị đo đạc quán tính
 
 ## Ứng Dụng Thực Tế: "Thói Quen Công Nghệ Đeo"
 Hợp nhất công nghệ đeo vào huấn luyện của bạn: (1) Sử dụng IMU trên vợt để theo dõi tốc độ đầu vợt trong các buổi tập. (2) Sử dụng bộ theo dõi GPS để giám sát tải chuyển động trong trận đấu. (3) Sử dụng lót giày cảm biến áp lực để phân tích mẫu bước chân của bạn. Dữ liệu từ các thiết bị này cung cấp phản hồi khách quan có thể dẫn dắt huấn luyện và 촉 tăng tốc độ phát triển của bạn. Công nghệ đeo dân chủ hóa quyền truy cập vào dữ liệu sinh cơ học từng chỉ có trong phòng thí nghiệm đẳng cấp.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

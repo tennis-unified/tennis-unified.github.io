@@ -35,3 +35,10 @@ Lựa chọn được đạt bởi hai câu hỏi, trả lời khi tiếp xúc:
 
 ## Ứng Dụng Thực Tế: "Đáp, Nhảy, Chéo, Split"
 Chạn trạm 15 phút: HLV cùng bên cho bóng duỗi rộng từ đường giao bóng bằng tay; người chời chặn chéo và thực hiện chuỗi đầy đủ — đáp, nhảy, chéo, split — trước bóng cho tiếp theo đến 2.5 s sau. Chấm 10 bóng: +1 cho đáp sạch một giây, +1 cho đáp vuông, +1 cho split hoàn thành trước bóng cho tiếp theo, và -2 cho bất kỳ ngã ra ngoài nào. Bảy điểm hoặc hơn nghĩa là phục hồi sẵn sàng trận.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

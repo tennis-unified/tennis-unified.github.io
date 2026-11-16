@@ -55,3 +55,10 @@ On the baseline, the Continental grip for slice pairs well with a drive grip for
 
 ## Practical Application: "The Skid Test"
 Hit ten slice backhands over the net focusing on producing a low, skidding bounce. After each shot, note whether the ball stays below net height after the bounce. If it bounces high, the racket face is too open or the path is too steep. Adjust until at least seven of ten shots skid low, building the feel for an offensive slice.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -42,3 +42,10 @@ Huấn luyện con lắc đòi hỏi các bài tập khiến mẫu tay trước 
 ## Ứng Dụng Thực Tế: "Số Lần Tập Nhận Thức Con Lắc"
 
 Trong buổi tập tiếp theo, dành 10 phút đầu tiên cho nhận thức con lắc. Cho người chơi đánh 20 forehand ở tốc độ vừa phải với chỉ một chỉ dẫn: **đừng để tay chuyển động trước.** Nếu tay chuyển động trước khi hông xoay ít nhất 30%, số lần đó thất bại. Đếm số lần thành công trong 20. Hầu hết người chơi ghi 3-8 trong lần đầu tiên. Sau 3-5 buổi tập, điểm số nên tăng lên 15-18. Sau đó đo tốc độ bóng bằng súng radar — người chơi thường thấy forehand con lắc "không nỗ lực" của họ tạo ra tốc độ bóng bằng hoặc lớn hơn forehard "hạng nặng" của họ, với một nửa nỗ lực cảm nhận.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

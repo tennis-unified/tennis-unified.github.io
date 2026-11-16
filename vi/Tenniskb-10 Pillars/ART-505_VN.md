@@ -87,3 +87,10 @@ Gắn băng kháng lực quanh thắt lưng và thực hành giao bóng chống 
 ## Ứng Dụng Thực Tế: "Giao Bóng Thầm Lặng"
 
 Giao 10 bóng mà không mang giày. Nếu không có nền tảng vững chắc của giày, bạn sẽ ngay lập tức cảm nhận liệu chân có thực sự đẩy vào mặt đất hay chỉ gập và duỗi mà không có lực. Người chơi không tạo đẩy chân đúng sẽ cảm thấy bàn chân trượt hoặc mắt cá lắc. Bài tập này cung cấp phản hồi tức thì về sản sinh lực mặt đất mà bạn có thể áp dụng khi mang giày.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

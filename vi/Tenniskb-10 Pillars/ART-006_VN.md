@@ -81,3 +81,10 @@ Bài tập plyometric nhấn mạnh cơ học hạ cánh — hạ cánh chiều 
 
 ## Ứng Dụng Thực Tế: "Cái Dừng Lặng"
 Cái giảm tốc tốt nhất là cái lặng. Khi bạn sprint đến bóng rộng, chân nên tạo tiếng động tối thiểu khi tiếp xúc sân lúc dừng — hấp thụ lực qua cong gối và háng kiểm soát thay vì đập vào mặt đất. Luyện bằng cách nhờ đối tác feed bóng rộng và tập trung làm bước chân dừng lặng. Càng dừng lặng, càng hiệu quả bạn hấp thụ lực qua cơ thay vì khớp. Kỹ thuật dừng lặng này không chỉ bảo vệ gối và cổ chân mà cũng cho phép bạn chuyển hướng vào chuyển động sau nhanh hơn. Cái dừng ồn nghĩa là bạn đang chống lại sân; cái dừng lặng nghĩa là bạn đang làm việc cùng nó.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Động lực học tuyến tính, GRF và xung lượng*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Thăng bằng động và kiểm soát hướng*
+<!-- TAICHIKB-CROSSREF-END -->

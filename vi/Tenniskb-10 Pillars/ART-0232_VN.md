@@ -49,3 +49,10 @@ Thiền chánh niệm huấn luyện sự tập trung bền vững và khả nă
 
 ## Ứng Dụng Thực Tế: "Mỏ Neo Tập Trung"
 Phát triển một "mỏ neo tập trung" cá nhân một tín hiệu cảm giác cụ thể mà bạn sử dụng để tái thiết lập tập trung khi nó trôi lang. Đối với một số người chơi, mỏ neo tập trung là tiếng bóng chạm vợt. Đối với những người khác, nó là cảm giác dây vợt. Khi bạn nhận ra sự tập trung của mình đang trôi lang, hãy quay lại mỏ neo của bạn. Kỹ thuật đơn giản này cung cấp một cách nhanh chóng, đáng tin cậy để khôi phục chú ý lọc trong thi đấu và ngăn chặn các đợt mất tập trung kéo dài dẫn đến lỗi không buộc.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

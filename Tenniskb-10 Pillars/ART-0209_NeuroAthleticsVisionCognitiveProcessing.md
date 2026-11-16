@@ -62,3 +62,10 @@ Practice near-far gaze shifts while performing light physical exercise (e.g., jo
 
 ## Practical Application: "The Focus Anchor"
 Establish a primary focus anchor during each rally: the ball. Rather than shifting focus between multiple targets, keep your eyes focused on the ball for as long as possible, using peripheral vision for other information. Only shift focus when necessary (e.g., to check the opponent's position). This minimizes vergence movements, reduces visual fatigue, and maintains depth perception where it matters most at the contact point.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

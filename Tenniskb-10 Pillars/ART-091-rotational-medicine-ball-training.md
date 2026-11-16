@@ -32,3 +32,10 @@ Medicine ball training is one of the most effective methods for developing rotat
 
 ## Practical Application: "The Medicine Ball Routine"
 Perform a medicine ball routine 2-3 times per week: (1) 10 standing rotational throws each side, (2) 10 split-stance rotational throws each side, (3) 10 overhead slams, (4) 10 rotational chest passes each side. This 10-minute routine develops the rotational power that directly transfers to your tennis strokes.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

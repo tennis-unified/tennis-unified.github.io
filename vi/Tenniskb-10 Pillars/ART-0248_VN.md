@@ -38,3 +38,10 @@ Thực hành dịch chuyển nhìn đến các vị trí thông tin sẽ có s�
 
 ## Ứng Dụng Thực Tế: "Đến Sớm"
 Huấn luyện mắt của bạn đến vị trí tiếp theo trước khi bóng đến. Khi đối thủ chuẩn bị đánh, dịch chuyển nhìn của bạn đến nơi bạn dự đoán bóng sẽ ở, không phải nơi nó hiện tại. Sự đến sớm này cho hệ thống thị giác của bạn thời gian tối đa để xử lý bóng đến và giảm sự vội vã đặc trưng của nhìn phản xạ. Thực hành điều này trong mọi rally cho đến khi chuyển động mắt dự đoán trở thành mô hình mặc định của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Tập luyện plyometric và chu kỳ SSC*
+<!-- TAICHIKB-CROSSREF-END -->

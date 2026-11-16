@@ -67,3 +67,10 @@ Where the center is on arrival decides what kind of stroke is possible:
 ## Practical Application: "The Belt Buckle Crosses First"
 
 Give the player one sentence: **the belt buckle crosses the line before the shoulders do.** At the next session, spend five minutes on cone-gate starts — five clean pelvis-first reps to the forehand side, five to the backhand side — then run live feeds where the coach watches only the first step of every movement, calling "center" or "chest" after each. The player will feel the difference within a dozen balls: center-led movement is quieter, straighter, and deceptively faster, because the body that leads with its center arrives whole, while the body that leads with its chest arrives in pieces.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+<!-- TAICHIKB-CROSSREF-END -->

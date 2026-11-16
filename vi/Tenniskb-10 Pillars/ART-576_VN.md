@@ -61,3 +61,10 @@ Trả bóng tạo ra những áp lực độc đáo lên cơ thể, đặc biệ
 
 ## Ứng Dụng Thực Tế: "Quy Tắc 10 Phút"
 Trước mỗi buổi luyện tập hoặc trận đấu, cam kết 10 phút khởi động cụ thể cho trả bóng: 3 phút khởi động chung, 4 phút bài tập cụ thể các khớp và 3 phút trả bóng tiến triển.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

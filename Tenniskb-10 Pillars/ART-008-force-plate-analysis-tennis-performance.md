@@ -91,3 +91,10 @@ The ratio of early-match to late-match force plate metrics indicates fatigue res
 
 ## Practical Application: "The Jump Test"
 Simple force plate assessments can be approximated without expensive technology. Perform a countermovement jump and measure your jump height by reaching as high as possible against a wall. Compare this to your reach from a standing position. A jump height of 30+ cm indicates good lower-extremity power; 40+ cm indicates elite-level explosiveness. Test yourself monthly and track the numbers. If your jump height drops by more than 5%, you're accumulating fatigue and need recovery. For a more tennis-specific assessment, perform a single-leg hop for distance and compare legs—the difference should be less than 10 cm. These simple field tests provide meaningful insights into your force production capacity and guide your training focus.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Linear kinetics, GRF & impulse-momentum*
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Plyometric training & reactive SSC*
+<!-- TAICHIKB-CROSSREF-END -->

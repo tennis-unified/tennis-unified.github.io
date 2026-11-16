@@ -126,3 +126,10 @@ Cơ quan tennis ngày càng quan tâm đến sự thống trị giao bóng:
 ## Ứng Dụng Thực Tế: "Nghiên Cứu Lịch Sử"
 
 Xem video giao bóng từ các thời đại khác nhau — giao bóng vợt gỗ thập niên 1970, giao bóng graphite thập niên 1980, Sampras thập niên 1990, Federer thập niên 2000, Alcaraz thập niên 2020. Ghi nhận cách kỹ thuật đã tiến hóa: điểm chạm cao hơn, đẩy chân nhiều hơn, xoay nhiều hơn, biến đổi chiến thuật nhiều hơn. Hiểu sự tiến hóa này giúp bạn thấy kỹ thuật của mình ở đâu và những yếu tố hiện đại nào nên tích hợp.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

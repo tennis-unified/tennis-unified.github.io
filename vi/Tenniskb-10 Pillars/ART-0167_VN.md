@@ -48,3 +48,10 @@ Một phiên xây dựng mô hình ở ba trạm:
 1. **Diễn tập thả (không bóng).** Người chơi đứng một chân, chìm 5-10 cm, và đẩy thẳng đứng thành cú nhảy về phía trước nhỏ dọc đường dán, mười lần mỗi chân. HLV theo dõi trục thẳng đứng — thả phải là chìm, không phải nghiêng.
 2. **Truyền medball.** Từ gối gập 30-40° trên chân ngoài, người chời ném medball 2-3 kg chéo về phía trước, bước qua cú ném. Đường bay của bóng là đường bay cú đánh. Hai set mười.
 3. **Bóng treo không-dừng.** HLV treo bóng vào vùng giữa sân đánh dấu bằng cọc. Quy tắc nhị phân: người chơi phải di chuyển về phía trước khi tiếp xúc — xác minh bằng bước cuối đáp tại hoặc sau điểm đánh — hoặc lần lập không tính.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

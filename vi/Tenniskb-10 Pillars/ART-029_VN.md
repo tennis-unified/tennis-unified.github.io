@@ -152,3 +152,10 @@ Hãy tưởng tượng xoay cổ chìa khóa — đó là xoay cán tay. Cánh t
 | Khoảng chuyển động xoay cân/ngược | 160-190° tổng | < 140° | Giãn cơ xoay cân/ngược hàng ngày |
 | Đau khuỷu tay trong khi xoay | Không đau | Đau khi xoay cân tay/uốn cổ tay | Giãn cơ uốn, tăng lực từ từ, kiểm tra kỹ thuật |
 | Đau khuỷu tay ngoài khi xoay ngược | Không đau | Đau khi xoay ngược | Cân bằng lực xoay cân/ngược, giãn cơ duỗi |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

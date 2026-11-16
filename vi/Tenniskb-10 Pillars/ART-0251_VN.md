@@ -69,3 +69,10 @@ Trong lúc ngủ, các ký ức khai báo được chuyển đến bộ nhớ d�
 
 ## Ứng Dụng Thực Tế: "Kiểm Toán Bộ Nhớ"
 Sau mỗi trận, thực hiện một "kiểm toán bộ nhớ" ngắn: (1) Kỹ năng thủ tục nào cảm thấy tự động? (2) Kiến thức khai báo nào tôi đã sử dụng? (3) Bộ nhớ làm việc bị quá tải ở đâu? Kiểm toán này xác định hệ thống bộ nhớ nào cần chú ý. Nếu kỹ năng thủ tục bị sụp đổ, tập trung vào huấn luyện áp lực. Nếu kiến thức khai báo thiếu hụt, học tập đối thủ. Nếu bộ nhớ làm việc bị quá tải, đơn giản hóa kế hoạch trận đấu. Cách tiếp cận nhắm mục tiêu này cho phát triển bộ nhớ đảm bảo mỗi hệ thống nhận được huấn luyện cụ thể nó cần.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+<!-- TAICHIKB-CROSSREF-END -->

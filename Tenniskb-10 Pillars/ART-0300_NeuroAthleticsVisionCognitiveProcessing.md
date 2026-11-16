@@ -68,3 +68,10 @@ The ultimate goal is integration: all cognitive systems working together seamles
 
 ## Practical Application: "The Holistic Assessment"
 Conduct a comprehensive assessment of all nine pillars of neuro-athletics: (1) visual perception, (2) reaction time, (3) decision-making, (4) attention, (5) anticipation, (6) memory, (7) neuroplasticity, (8) fatigue management, and (9) psychological skills. Rate your current level in each pillar (1-10) and identify the two weakest pillars. Design a training program that targets those weaknesses while maintaining your strengths. This holistic assessment ensures that your development is balanced and comprehensive, producing the integrated excellence that defines the complete tennis player.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Sensorimotor integration & motor control*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+<!-- TAICHIKB-CROSSREF-END -->

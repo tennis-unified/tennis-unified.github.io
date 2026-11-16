@@ -159,3 +159,10 @@ Chiến thuật đặc trưng của sân cỏ:
 | Thực thi giao bóng-volley kém | Huấn luyện không đủ, volley yếu | Mất cơ hội, lối chơi dự đoán được | Bài tập giao bóng-volley chuyên dụng; tập volley |
 | Quá phòng thủ trên sân cỏ | Thói quen sân đất nung, thiếu tấn công | Mất cơ hội đánh đầu tiên | Bài tập cấu trúc điểm tấn công; mẫu tiến cận và hoàn thành |
 | Trượt và vận động kém | Sai giày, tập sân cỏ không đủ | Giảm tự tin, lỗi | Giày chuyên sân cỏ; huấn luyện vận động sân cỏ từ từ |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

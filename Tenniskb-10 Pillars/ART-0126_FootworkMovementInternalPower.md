@@ -73,3 +73,10 @@ Developing dantian awareness requires both cognitive and physical training:
 ## Practical Application: "Move From Your Belly"
 
 Give the player one cue: **the shot starts three finger-widths below the navel.** Every groundstroke, every volley, every serve begins with the pelvis leading the movement. At the next session, spend the first 10 minutes on shadow swings with the sole focus on pelvic initiation. No ball, no target — just the feeling of the center leading the rotation. Then introduce easy fed balls and maintain the same focus. The transformation is often immediate: shots feel more powerful, more stable, and less effortful, because the body's largest muscle groups are finally doing the work.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -88,3 +88,10 @@ The adaptation is not binary — players do not switch from "crossover mode" to 
 ## Practical Application: "One Push, Then Coast"
 
 At the next clay-court (or low-friction) session, have the player perform 10 push-and-glide recoveries from a wide forehand position. Measure the glide distance for each. If the standard deviation exceeds 30 cm, run the glide distance calibration drill for 15 minutes, focusing on consistent shoe angle. Then run the slide-stop-hit integration drill: feed 10 wide balls and have the player execute the full push-glide-slide-hit sequence. Film from the side and check for the gap between the slide and the stroke. If the gap exceeds 50 ms, the player is stopping before hitting — cue "the slide IS your loading" and repeat. Players who master the push-and-glide report that clay-court movement feels "effortless" compared to the hard-court crossover — because the glide is genuinely more energy-efficient, and the efficiency gain is felt as reduced fatigue in later sets.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+<!-- TAICHIKB-CROSSREF-END -->

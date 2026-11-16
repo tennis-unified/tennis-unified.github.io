@@ -54,3 +54,10 @@ Gradually reduce the time available for decision-making during practice. Start w
 
 ## Practical Application: "The Two-Option Rule"
 Under time pressure, limit your shot selection to two pre-determined options. Before the ball arrives, quickly assess whether it will land in your "primary" zone (your preferred shot) or your "secondary" zone (your backup shot). This binary decision is faster than evaluating multiple options and prevents the paralysis that occurs when players try to choose from too many possibilities. The two-option rule converts a complex choice into a rapid discrimination task.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Sensorimotor integration & motor control*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

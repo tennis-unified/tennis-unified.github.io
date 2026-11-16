@@ -57,3 +57,10 @@ Người chơi nên luyện tập chiến thuật tiebreak kết hợp với ít
 ## Ứng Dụng Thực Tế: "Chân Lý Trong Tiebreak"
 
 Triển khai chiến thuật tiebreak bằng cách cam kết dùng chiến thuật này suốt một set tập luyện. Theo dõi số điểm bạn giành được khi dùng khuôn mẫu này so với cách đánh mặc định. Nếu chiến thuật ăn được hơn 55% số điểm, hãy đưa nó vào kho chiến thuật thường xuyên của bạn. Nếu ít hơn, hãy phân tích lý do: là do sự thực thi của bạn, sự điều chỉnh của đối thủ, hay thời điểm chọn sai? Tinh chỉnh chiến thuật dựa trên phân tích này trước trận đấu tiếp theo.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

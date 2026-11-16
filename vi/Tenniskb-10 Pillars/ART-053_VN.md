@@ -49,3 +49,10 @@ Khi bóng đập lệch tâm mặt dây:
 
 ## Ứng Dụng Thực Tế: "Vùng Ổn Định"
 Vợt với moment quán tính cực cao có "vùng ổn định" lớn hơn — vùng mà đập trượt vẫn cho kết quả chấp nhận được. Người hay đập trượt (người mới, người chơi phòng thủ)ได้ lợi từ vợt PMOI cao. Người luôn đánh trúng điểm ngọt (cao cấp) có thể thích PMOI thấp hơn để linh hoạt hơn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

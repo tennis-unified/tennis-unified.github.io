@@ -108,3 +108,10 @@ Hãy hình dung chữ X bởi hai đường chéo mặt trước cơ thể: mộ
 | Chuyển trọng chân sau-trước | Mượt, kiểm soát, về phía mục tiêu | Giật, lệch, mất cân bằng | Medicine ball throw bước, shadow swing chậm |
 | Đau cơ thêm/hông khi xoay | Không đau | Đau khi nạp/vung | Giãn cơ thêm, kiểm tra kích hoạt mông giữa, sửa kỹ thuật |
 | Đối xứng lực hai bên | Chênh ≤ 10% | Chênh > 15% | Tập đơn phương bên yếu, bài tập đơn phương |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+<!-- TAICHIKB-CROSSREF-END -->

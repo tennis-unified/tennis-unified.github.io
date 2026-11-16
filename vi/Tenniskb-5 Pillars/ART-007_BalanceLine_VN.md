@@ -38,3 +38,11 @@ Khi hông xoay mở, cơ thể chịu những lực xoay dữ dội. Neo giữ �
 2.  Thực hiện toàn bộ trình tự đánh bóng (Split step → Nạp lực → Đánh → Phục hồi) trong khi giữ cả hai chân trên hoặc dọc theo đường kẻ.
 3.  Tập trung giữ xương ức (đường dọi) nằm chính giữa đường kẻ.
 4.  Tăng tốc độ dần dần, đảm bảo "điểm neo" vẫn ổn định.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Trọng tâm (CoM), diện tích chân đế và kiểm soát thăng bằng*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Thăng bằng động và điều chỉnh tư thế*
+- [Chương 9: Mặt Trước Sâu — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch09-mat-truoc-sau.html) — *Đường Mặt Trước Sâu: trục ổn định trọng tâm cơ thể*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Cân bằng tĩnh so với cân bằng động và độ ổn định*
+<!-- TAICHIKB-CROSSREF-END -->

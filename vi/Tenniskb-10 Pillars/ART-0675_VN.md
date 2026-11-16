@@ -47,3 +47,10 @@ Các cú trả bóng chéo xuyên sân là cơ hội để bạn tấn công. S�
 ## Ứng Dụng Thực Tế: "Trượt Lưới, Đấm Mạnh, Đổi Hướng"
 
 Đối với các cú trả bóng chéo xuyên sân: (1) trượt lưới chặn bóng, (2) volley đấm mạnh, (3) đổi hướng xuống đường thẳng. Cú trả bóng chéo xuyên sân là cú bóng để bạn tấn công — hãy nắm lấy nó.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+<!-- TAICHIKB-CROSSREF-END -->

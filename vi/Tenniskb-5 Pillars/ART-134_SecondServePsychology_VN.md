@@ -42,3 +42,10 @@ Hội chứng "Yips" hoặc lo lắng giao bóng thứ hai không phải là th�
 
 ## Ứng Dụng Thực Tế: "Sự Bình An Của Người Giao Bóng"
 Giao bóng thứ hai là một bài kiểm tra về niềm tin. Tin vào vật lý của xoáy, tin vào sự nhất quán của cú ném, và tin vào khả năng huấn luyện của bạn. Giao bóng với tư duy "không có gì để mất".
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và bản lĩnh thời khắc quyết định*
+<!-- TAICHIKB-CROSSREF-END -->

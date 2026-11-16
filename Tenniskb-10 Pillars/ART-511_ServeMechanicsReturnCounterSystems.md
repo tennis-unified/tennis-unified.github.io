@@ -100,3 +100,10 @@ If the server changes their stance or motion noticeably before an underhand serv
 ## Practical Application: "The Shallow Target"
 
 Place a target towel 6 feet inside the service line in the service box. Practice 20 underhand serves aiming to land the ball on or just beyond the towel. This develops the feel for pace and trajectory needed to keep the underhand serve shallow enough to pull the returner forward without giving them an easy attack ball.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

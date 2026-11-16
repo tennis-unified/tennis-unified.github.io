@@ -72,3 +72,10 @@ Cú xuyên lưới là câu trả lời của người chơi đáy sân trước
 ## Ứng Dụng Thực Tế: "Đọc Và Phản Ứng"
 
 Trướh khi cú tiến lên lưới đến, hãy đánh giá vị trí của đối thủ ở lưới. Nếu họ đã lệch về phía chéo sân, hãy đánh đường thẳng. Nếu họ đứng giữa, hãy đánh chéo sân. Nếu họ đứng rất gần lưới, hãy dùng lob. Đưa ra quyết định trước khi bóng đến, sau đó thực thi với sự tự tin.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

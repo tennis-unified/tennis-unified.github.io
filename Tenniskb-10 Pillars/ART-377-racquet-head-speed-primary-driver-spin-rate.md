@@ -66,3 +66,10 @@ Increasing racquet head speed can reduce control, as the faster swing amplifies 
 ## Practical Application: "The Speed Drill"
 
 Practice increasing your racquet head speed by hitting forehands at 50, 75, and 100 percent of your maximum speed. Note the spin rate at each speed level (using a spin measurement device or a coach's assessment). Focus on the feeling of acceleration through contact and the timing of the wrist snap that adds the final increment of speed.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+<!-- TAICHIKB-CROSSREF-END -->

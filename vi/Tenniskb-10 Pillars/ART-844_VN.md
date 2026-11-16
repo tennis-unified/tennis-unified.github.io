@@ -215,3 +215,10 @@ Tạo hệ thống theo dõi tải hàng tuần đơn giản:
 | Chấn thương lặp lại giữa mùa giải | Tăng đột biến tải huấn luyện, ACWR vượt 1.5 | Chấn thương mô mềm, mất thời gian | Triển khai theo dõi ACWR; đảm bảo tăng tải từ từ |
 | Mệt mỏi tích lũy muộn trong mùa giải | Tuần phục hồi không đủ, quá nhiều giải đấu liên tiếp | Kiệt sức, suy giảm hiệu suất | Lên lịch tuần phục hồi; giảm khối lượng giải đấu; ưu tiên chất lượng |
 | Lệch múi giờ ảnh hưởng hiệu suất | Quản lý du lịch kém, không có quy trình lệch múi giờ | Khởi đầu chậm sau di chuyển | Triển khai quy trình lệch múi giờ; đến sớm hơn; điều chỉnh lịch ngủ |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+<!-- TAICHIKB-CROSSREF-END -->

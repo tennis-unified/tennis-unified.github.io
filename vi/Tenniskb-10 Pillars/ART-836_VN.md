@@ -190,3 +190,10 @@ Phát triển kiểm soát cảm xúc thông qua thực hành có cấu trúc:
 | Nghẹn ngào sau quyết định trọng tài sai | Điều tiết cảm xúc kém, tập trung bên ngoài | Sai lầm chồng chất, mất game | Kỹ thuật tái khung hình; chiến lược chấp nhận; bài tập thở |
 | Tự mãn khi dẫn trước | Điều tiết cảm xúc kém, mất cường độ | Lãng phí lợi thế dẫn trước, mất set | Duy trì quy trình; tập trung vào quá trình; quản lý cường độ |
 | Không thể khai thác cơn giận một cách xây dựng | Cảm xúc không được chuyển hướng, hành vi phá hoại | Lạm dụng vợt, mất tập trung, bị phạt | Kỹ thuật chuyển hướng; điều tiết kích thích; quản lý cơn giận xây dựng |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+<!-- TAICHIKB-CROSSREF-END -->

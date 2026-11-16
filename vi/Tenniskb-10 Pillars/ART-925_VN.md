@@ -56,3 +56,10 @@ Nếu bạn mắc tiểu đường loại 1, hãy kiểm tra đường huyết t
 | Người chơi trải qua tăng đường huyết trong trận đấu | Insulin không đủ; phản ứng stress | Mất nước; mệt mỏi; rủi ro ketone | Điều chỉnh insulin trước tập; bù nước; theo dõi ketone; hướng dẫn y tế |
 | Người chơi dùng bơm insulin và gặp vấn đề vị trí tiêm | Vị trí tiêm thất bại; gián đoạn mồ hôi hoặc tác động | Tăng đường huyết; sản xuất ketone | Gắn bơm chặt bằng túi; phương pháp tiêm dự phòng; kiểm tra vị trí; theo dõi CGM |
 | Người chơi tiểu đường loại 2 trải qua đường huyết giảm với chơi thường xuyên | Nhạy cảm insulin cải thiện; thuốc không khớp | Rủi ro hạ đường huyết; cần điều chỉnh thuốc | Tham vấn y tế để điều chỉnh thuốc; theo dõi glucose thường xuyên; tập luyện lộ trình |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 10: Mô Cơ (Muscular Tissue)](https://taichikb.github.io/vi/books/tortora_ap/ch10-mo-co.html) — *Sinh lý mô cơ và cơ chế co cơ*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

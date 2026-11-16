@@ -48,3 +48,11 @@ Kiểm Tra Tích Hợp 5 Cột Trụ nên được thực hiện trước mỗi 
 
 ## Ứng Dụng Thực Tế: "Vận Động Viên Hoàn Chỉnh"
 Vận động viên nên cảm nhận rằng họ là "hoàn chỉnh" và có thể thi đấu dưới các yêu cầu của tennis. Vận động viên nên cảm nhận rằng họ được tích hợp với Hệ Thống 5 Cột Trụ và có thể thi đấu ở tiềm năng đỉnh cao của mình. Đây là mục tiêu cuối cùng của Hệ Thống 5 Cột Trụ: tạo ra một vận động viên hoàn chỉnh, tích hợp, thực hiện một cách không gắng sức ở tiềm năng đỉnh cao của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Tổng hợp nguyên lý cơ sinh học quần vợt*
+- [Chương 16: Chương 16: Các Yếu Tố Quyết Định Sinh Lý Học Của Thành Tích Thể Thao — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch13.html) — *Tích hợp sinh lý học cho thành tích đỉnh cao*
+- [Chương 19: Chương 19: Bước Ra Sân: Lời Giới Thiệu Về Lĩnh Vực Tâm Lý Học Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch19.html) — *Tích hợp tâm lý học thể thao toàn diện*
+- [Chương 19: Thấu hiểu cơ học-thích-nghi của mô mạc: Ứng dụng vào y học thể thao — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch19-thau-hieu-co-hoc-thich-nghi-cua-mo-mac-ung-dung-vao-y-hoc-the-th.html) — *Cơ học thích nghi trong y học thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

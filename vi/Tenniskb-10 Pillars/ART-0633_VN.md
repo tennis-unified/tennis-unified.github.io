@@ -68,3 +68,10 @@ Smash bàn tay khác là cú smash khó nhất trong tennis, nhưng là kỹ nă
 ## Ứng Dụng Thực Tế: "Đặt Thấp Xuống, Ném Lên Trên"
 
 Ở cú smash bàn tay khác, nhiệm vụ của bạn là đặt thấp xuống dưới bóng và ném lên trên. Chuyển động này là mặt đối lập của smash tay thuận — hãy để tay không thuận khởi xướng sự xoay và tay thuận theo sau. Hãy tập chuyển động ném bóng cho đến khi nó trở nên tự nhiên.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -189,3 +189,10 @@ This structured check-in builds trust, ensures alignment, and provides a safe sp
 | Player defensive when receiving feedback | Feedback delivery too harsh or personal | Resistance to coaching, relationship damage | Restructure feedback using AID model; increase positive-to-corrective ratio |
 | Player hides problems and concerns | Lack of psychological safety, fear of judgment | Unaddressed issues worsen, trust erodes | Create safe communication space; use weekly check-ins; demonstrate empathy |
 | Misalignment on goals and approach | Insufficient goal-setting conversation | Wasted training time, frustration | Establish clear, shared goals; regular goal review sessions |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

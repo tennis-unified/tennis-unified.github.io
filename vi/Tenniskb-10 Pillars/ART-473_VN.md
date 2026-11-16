@@ -50,3 +50,10 @@ Người chơi gặp khó khăn trên sân cỏ thường được lợi từ c�
 
 ## Ứng Dụng Thực Tế: "Bài Tập Trên Sân Cỏ"
 Tập backhand trên sân cỏ, tập trung vào di chuyển lên trước, slice và đánh flat. Theo dõi xem bao nhiêu đòn bóng vào sân và bao nhiêu đòn tạo ra đòn xuyên thấp. Bài tập này phát triển kỹ năng cần thiết cho việc chơi hiệu quả trên sân cỏ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

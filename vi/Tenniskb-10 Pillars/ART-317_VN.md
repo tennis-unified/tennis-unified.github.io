@@ -52,3 +52,10 @@ Sau đó, chuyển sang các bài tập tích hợp, trong đó sự xoay hông 
 ## Ứng Dụng Thực Tế: "Cú Kích Hoạt Hông"
 
 Để phát triển độ dẫn trước của hông, hãy tập các cú vung tay không bóng (shadow swing) mà trong đó bạn cố ý dừng lại ở tư thế chuẩn bị, sau đó hô to chữ "hông" khi bắt đầu xoay hông trước về phía mục tiêu. Tín hiệu lời nhắc này giúp thiết lập nhịp "hông đi trước". Dần dần loại bỏ tín hiệu lời nói khi chương trình động tác đã trở nên tự động, nhưng vẫn duy trì việc khởi động bằng hông trước trong mọi cú vung.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+<!-- TAICHIKB-CROSSREF-END -->

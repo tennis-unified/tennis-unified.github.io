@@ -41,3 +41,10 @@ Chấm mỗi cú đánh 1-4 trực tiếp:
 
 ## Ứng Dụng Thực Tế: "Vòng Lặp Phản Hồi Bảng Điều Khiển"
 Theo dõi → Tìm chỗ rò rỉ → Huấn luyện cột trụ cụ thể → Đo lại trận kế tiếp. Phân tích mà không chuyển thành huấn luyện chỉ là chuyện phiếm.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+<!-- TAICHIKB-CROSSREF-END -->

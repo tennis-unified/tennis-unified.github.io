@@ -77,3 +77,10 @@ Hình dung hóa có thể hỗ trợ phục hồi chấn thương bằng các du
 
 ## Ứng Dụng Thực Tế: "Buổi Tượng Hình"
 Thực hiện buổi hình dung hóa 10 phút hàng ngày: (1) tìm nơi yên tĩnh và nhắm mắt, (2) hình dung hóa một trận đấu thành công từ góc nhìn của bạn, (3) bao gồm tất cả các giác quan (thị giác, thính giác, cảm giác vận động, cảm xúc), (4) tập trung vào thực thi thành công và kiểm soát cảm xúc, (5) kết thúc với kết quả tích cực. Thực hành buổi này hàng ngày, đặc biệt trước các trận đấu quan trọng. Cách tiếp cận có cấu trúc này về hình dung hóa tối đa hóa lợi ích thần kinh và tâm lý của thực hành tinh thần, tạo ra những cải thiện đo lường được trong thành tích.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

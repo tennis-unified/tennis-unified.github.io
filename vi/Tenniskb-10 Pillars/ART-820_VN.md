@@ -199,3 +199,10 @@ Những vận động viên ghi trên 100 điểm (trên tổng 130) thể hiệ
 | Vận động viên tài năng mất hứng thú | Quá nhấn mạnh vào kết quả, thiếu niềm vui | Bỏ chơi quần vợt | Đưa trở lại tập luyện dựa trên trò chơi; giảm áp lực thi đấu |
 | Vận động viên có thể chất xuất sắc nhưng kỹ thuật kém | Bắt đầu muộn, nền tảng kỹ thuật chưa đủ | Phát triển chững lại | Chương trình phát triển kỹ thuật chuyên sâu; cách tiếp cận dài hạn kiên nhẫn |
 | Vận động viên kỹ thuật xuất sắc nhưng khí chất thi đấu kém | Thiếu kinh nghiệm thi đấu, huấn luyện quá mức | Lo âu khi thi đấu, kết quả giải đấu kém | Tiếp cận thi đấu một cách dần dần; huấn luyện hiệu suất tâm lý |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+<!-- TAICHIKB-CROSSREF-END -->

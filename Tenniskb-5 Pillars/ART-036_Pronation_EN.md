@@ -31,3 +31,10 @@ Active flicking involves using the wrist flexor and extensor muscles to roll the
 
 ## Practical Application: The "Door Handle" Analogy
 The wrist should act like a door handle that is pushed by the arm's movement. It should not turn itself. The arm (the door) does the work; the wrist (the handle) just goes along for the ride. Feel the rotation coming from the shoulder, not from the wrist.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Elbow & radioulnar pronation/supination mechanics*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Proximal and distal radioulnar joints*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Forearm pronators (pronator teres, pronator quadratus)*
+<!-- TAICHIKB-CROSSREF-END -->

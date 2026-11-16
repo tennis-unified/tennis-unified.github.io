@@ -60,3 +60,10 @@ Người chơi nên tập đánh vào các mục tiêu khác nhau sử dụng xo
 
 ## Ứng Dụng Thực Tế: "Bài Tập Hông Dẫn Đầu"
 Đứng trước gương và tập rút về backhand. Tập trung vào việc xoay hông ra khỏi lưới trước khi xoay vai. Giữ tư thế siết trong một lúc, cảm nhận sự căng trong cơ lõm. Sau đó xoay về phía trước, hông dẫn đầu. Lặp lại chậm cho đến khi hông dẫn đầu trở nên tự động, sau đó tăng tốc đến tốc độ tối đa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

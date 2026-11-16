@@ -57,3 +57,10 @@ Người chơi nên tập khai thác điểm yếu bằng cách chọn cú đán
 ## Ứng Dụng Thực Tế: "Tấn Công Không Ngừng Vào Cánh Yếu"
 
 Áp dụng khai thác điểm yếu bằng cách chọn cú đánh vào cánh yếu bằng cách cam kết sử dụng chiến thuật này trong một hiệp tập hoàn chỉnh. Theo dõi số điểm bạn giành được bằng khuôn mẫu so với cách tiếp cận mặc định. Nếu chiến thuật giành thắng hơn 55% điểm bóng, hãy tích hợp nó vào kho chiến thuật thường xuyên. Nếu giành thắng ít hơn, hãy phân tích lý do: phải chăng do thực thi của bạn, sự thích ứng của đối thủ, hay thời điểm chọn lựa kém? Hoàn thiện chiến thuật dựa trên phân tích này trước trận đấu tiếp theo.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

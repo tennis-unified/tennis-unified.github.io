@@ -44,3 +44,9 @@ The 90-minute recovery protocol is a more advanced way to improve recovery. It a
 
 ## Practical Application: The "Complete Recovery Producer"
 The athlete should feel that they are "complete" and integrated with the 5-Pillar System. The athlete should feel that the biomechanical, neurological, and tactical systems are working together in harmony. This is the ultimate goal of the 5-Pillar System: to create a complete, integrated athlete who performs effortlessly at their peak potential.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Post-match tissue repair & adaptation protocols*
+- [Chương 15: Chương 15: Phản Ứng Của Hệ Miễn Dịch Với Tập Luyện Cấp Tính và Mãn Tính — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch12.html) — *Managing exercise-induced inflammation*
+<!-- TAICHIKB-CROSSREF-END -->

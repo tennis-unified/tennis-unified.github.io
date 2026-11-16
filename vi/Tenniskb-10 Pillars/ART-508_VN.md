@@ -94,3 +94,10 @@ Kẹp người trả bóng, ngăn họ duỗi tay vung đầy đủ. Hiệu qu�
 ## Ứng Dụng Thực Tế: "Quy Tắc 85%"
 
 Trong luyện tập, giao 20 bóng phắt ở 85% nỗ lực tối đa, tập trung vào hướng thay vì tốc độ. Sau đó giao 20 ở 95-100% nỗ lực. So sánh tỷ lệ giao bóng đầu thành công giữa hai bộ. Hầu hết người chơi thấy chính xác cải thiện đáng kể ở 85% nỗ lực, và chênh lệch tốc độ thực tế chỉ 5-10 mph. Trong thi đấu, giao bóng chính xác hơn thắng nhiều điểm hơn giao bóng nhanh hơn một chút.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

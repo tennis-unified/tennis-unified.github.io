@@ -44,3 +44,10 @@ The 90-second recovery protocol is a more advanced way to improve recovery. It a
 
 ## Practical Application: The "Complete Recovery Producer"
 The athlete should feel that they are "complete" and integrated with the 5-Pillar System. The athlete should feel that the biomechanical, neurological, and tactical systems are working together in harmony. This is the ultimate goal of the 5-Pillar System: to create a complete, integrated athlete who performs effortlessly at their peak potential.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Parasympathetic restoration & sleep-wake autonomic regulation*
+- [Chương 18: Hệ Nội Tố (The Endocrine System)](https://taichikb.github.io/vi/books/tortora_ap/ch18-he-noi-to.html) — *Endocrine recovery hormones (melatonin, GH, cortisol)*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Cellular & molecular regeneration during recovery*
+<!-- TAICHIKB-CROSSREF-END -->

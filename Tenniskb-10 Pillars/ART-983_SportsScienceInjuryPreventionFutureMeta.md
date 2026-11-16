@@ -172,3 +172,10 @@ Key question: Does VR training transfer to real-world tennis?
 ## Practical Application: "Train Your Brain Off Court"
 
 If you have access to VR technology, use it for 15-20 minutes, 2-3 times per week, focusing on tactical scenarios and serve return practice. While VR cannot replace hitting actual balls, it can sharpen your tactical thinking, improve your anticipation, and maintain your competitive edge when you cannot get on court. If VR is not available, you can achieve some of the same benefits through video-based training: watch match footage of your next opponent, pause before each shot, and predict where they will hit. This mental rehearsal, while not as immersive as VR, activates similar cognitive processes and improves on-court decision-making.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

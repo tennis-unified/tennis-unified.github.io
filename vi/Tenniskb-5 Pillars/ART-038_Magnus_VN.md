@@ -38,3 +38,9 @@ Khi quả bóng di chuyển, sức cản của không khí (lực cản) làm ch
 
 ## Ứng Dụng Thực Tế: "Lưới An Toàn"
 Xoáy lên là "lưới an toàn" của người chơi. Nó cho phép vận động viên vung vợt mạnh nhất có thể về mặt thể chất, vì biết rằng Hiệu Ứng Magnus sẽ kéo quả bóng trở lại sân. Nếu không có độ xoáy, vận động viên phải đánh thấp hơn qua lưới, giảm biên độ sai số.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Khí động học vật ném và lực chất lưu*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Hiệu ứng Magnus và quỹ đạo bóng xoáy*
+<!-- TAICHIKB-CROSSREF-END -->

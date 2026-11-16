@@ -87,3 +87,10 @@ Thực hiện nhật ký trôi trong trận tập:
 3. **Cuối set**, người chơi tổng điểm. Tổng dương có nghĩa quyết định trôi sinh lời; tổng âm có nghĩa trôi liều lĩnh.
 
 Qua thời gian, điều này xây dựng cảm giác trực quan cho khi trôi được biện minh và khi nó là đánh bạc. Mục tiêu không phải loại bỏ trôi — mà là làm trôi thành vũ khí chỉ bắn khi mục tiêu nhìn thấy.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -42,3 +42,10 @@ Follow-through không chỉ là động tác kết thúc đẹp mắt — nó c�
 
 ## Ứng Dụng Thực Tế: "Điểm Kết Thúc"
 Đừng cắt ngắn follow-through — hãy để nó kéo dài tự nhiên sau tiếp xúc. Follow-through đầy đủ, thư giãn bảo vệ cánh tay và cung cấp phản hồi về chất lượng cú đánh. Nếu follow-through cảm giác gượng ép hoặc đột ngột, bạn có thể đang giảm tốc quá nhanh, làm tăng nguy cơ chấn thương. Hãy tập bằng cách thực hiện các cú đánh đáy sân và tập trung vào follow-through mượt mà, thư giãn, tự nhiên kéo dài đến vị trí kết thúc.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Thăng bằng động và kiểm soát hướng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

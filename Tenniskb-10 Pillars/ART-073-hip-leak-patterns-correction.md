@@ -42,3 +42,10 @@ The hip joint is a critical link in the tennis kinetic chain, connecting the leg
 
 ## Practical Application: "The Hip Check"
 During groundstrokes, focus on feeling your hips rotate fully and at the right time. If you feel your hips are "stuck" or not rotating enough, work on hip mobility and rotator strength. If you feel your hips are rotating too early or too late, work on timing drills. If you feel your pelvis dropping or tilting during rotation, work on hip stabilizer strengthening. The hip is the power link—fix hip leaks and your entire kinetic chain becomes more powerful.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+<!-- TAICHIKB-CROSSREF-END -->

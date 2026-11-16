@@ -171,3 +171,10 @@ Các bài viết trong trụ này (801-900) đã bao quát toàn bộ phạm vi 
 | Phân tích dữ liệu không đủ | Huấn luyện chỉ trực giác | Bỏ lởi hiểu biết, tập luyện không hiệu quả | Luyện trình độ dữ liệu; đầu tư công cụ phân tích; thuê nhà phân tích dữ liệu |
 | Tích hợp đội ngũ hỗ trợ kém | Cách tiếp cận độc lập, lời khuyên mâu thuẫn | Nhầm lẫn, giảm hiệu quả | Họp đội ngũ thường xuyên; phân định vai trò rõ ràng; lập kế hoạch hợp tác |
 | Bỏ qua xu hướng mới nổi | Phương pháp huấn luyện trì trệ | Tụt hậu so với đối thủ | Giáo dục liên tục; tham dự hội nghị; kết nối với đồng nghiệp |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 10: Mô Cơ (Muscular Tissue)](https://taichikb.github.io/vi/books/tortora_ap/ch10-mo-co.html) — *Sinh lý mô cơ và cơ chế co cơ*
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Hệ thống năng lượng cho thể lực quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

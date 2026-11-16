@@ -81,3 +81,10 @@ Practice the serve motion without a ball, focusing on the feeling of the racket 
 ## Practical Application: "The Towel Snap Feel"
 
 Roll a towel into a cylinder and practice your serve motion, snapping the towel at contact. The towel naturally "rolls over" through pronation at the end of the swing. This sensation — the feeling of the racket face rotating outward at the very end of the motion — is the correct pronation timing. Hit 20 serves with a racket immediately after the towel drill, focusing on replicating that same rolling sensation at contact.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Elbow, forearm pronation & wrist mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

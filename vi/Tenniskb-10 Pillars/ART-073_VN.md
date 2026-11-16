@@ -51,3 +51,10 @@ Khớp hông là khớp nối quan trọng trong chuỗi động học tennis, l
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Hông"
 Trong cú đánh đáy sân, hãy tập trung cảm nhận hông xoay đầy đủ và đúng thời điểm. Nếu cảm thấy hông " bị kẹt " hoặc xoay không đủ, hãy làm việc về khả động và sức mạnh cơ xoay. Nếu cảm thấy hông xoay quá sớm hoặc quá trễ, hãy làm việc về drill thời điểm. Nếu cảm thấy chậu hông sụt hoặc nghiêng khi xoay, hãy làm việc về tăng cường cơ ổn định hông. Hông là khớp nối sức mạnh — sửa rò rỉ hông và toàn bộ chuỗi động học trở nên mạnh mẽ hơn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+<!-- TAICHIKB-CROSSREF-END -->

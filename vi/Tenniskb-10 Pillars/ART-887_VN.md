@@ -177,3 +177,10 @@ Các chỉ số chất lượng cú đánh cung cấp phép đo khách quan về
 | Tốc độ xoáy thấp | Quỹ đạo vung vợt kém, thiếu động tác quét bóng | Biên an toàn nhỏ hơn | Bài tập xoáy; tối ưu quỹ đạo vung vợt |
 | Vị trí cú đánh thiếu ổn định | Điểm tiếp xúc bóng kém, ngắm mục tiêu yếu | Lỗi không đáng có, mất điểm | Tập ngắm mục tiêu; tính nhất quán điểm tiếp xúc |
 | Tỷ lệ điểm ngọt thấp | Điểm tiếp xúc bóng kém, chuẩn bị muộn | Đánh hụt tâm vợt, giảm sức mạnh | Bài tập chuẩn bị; huấn luyện điểm tiếp xúc |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -182,3 +182,10 @@ Viết một tuyên bố triết lý huấn luyện một trang bao gồm:
 | Người chơi phụ thuộc | Cách tiếp cận chỉ chỉ đạo, không tự chủ người chơi | Điều chỉnh kém trong trận đấu | Giới thiệu huấn luyện tạo điều kiện; phát triển độc lập |
 | Thiếu niềm vui | Quá nghiêm túc, cách tiếp cận drill nặng | Động lực giảm, bỏ cuộc | Thêm sự đa dạng, học dựa trên trò chơi; nhấn mạnh vui vẻ |
 | Thể thao người kém | Không nhấn mạnh tôn trọng và chính trực | Danh tiêng tiêu cực, văn hóa xấu | Ưu tiên tôn trọng; làm gương thể thao người; thực thi tiêu chuẩn |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Chương 9: Mặt Trước Sâu — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch09-mat-truoc-sau.html) — *Đường Mặt Trước Sâu: trục ổn định trọng tâm*
+<!-- TAICHIKB-CROSSREF-END -->

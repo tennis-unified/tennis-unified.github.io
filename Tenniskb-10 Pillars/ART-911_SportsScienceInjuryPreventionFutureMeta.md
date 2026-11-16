@@ -108,3 +108,10 @@ The repetitive hip flexion-external rotation demand of open-stance loading can s
 ## Practical Application: "Flow Open, Hit Through"
 
 When practicing your next forehead, consciously allow your feet to align parallel to the baseline (full open stance) on half of your shots. Feel how your hips rotate more freely and how your recovery toward center is automatic. The key is to maintain your trunk stability while your hips do the work — your upper body should remain relatively still while your lower body generates the rotation. This feeling of "hips first, arms second" is the essence of modern power generation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+<!-- TAICHIKB-CROSSREF-END -->

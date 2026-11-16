@@ -64,3 +64,10 @@ Volley toss là một công cụ hồi phục cho người chơi lưới khi rơ
 ## Ứng Dụng Thực Tế: "Giành Thời Gian, Hồi Phục Vị Trí"
 
 Volley toss là về việc giành thời gian. Khi bạn rơi vào thế bị động tại lưới, hãy đánh một cú toss cao, sạn mang lại cho bạn 2-3 giây để hồi phục. Sau đó tiến lên lưới và tấn công cú đánh trả của đối phương. Cú toss không phải là điểm bóng — sự hồi phục mới là quan trọng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

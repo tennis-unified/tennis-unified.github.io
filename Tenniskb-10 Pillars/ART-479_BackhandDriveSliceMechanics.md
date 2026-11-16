@@ -40,3 +40,10 @@ Players who struggle with the crossover step often benefit from drills that emph
 
 ## Practical Application: "The Crossover Drill"
 Place cones on the court to mark wide backhand positions. Start at the center of the baseline and practice moving to each cone using the crossover step. Focus on balance, speed, and maintaining a low center of gravity. Track how many times you reach the cone in a balanced position. This drill develops the crossover step needed for effective lateral court coverage.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

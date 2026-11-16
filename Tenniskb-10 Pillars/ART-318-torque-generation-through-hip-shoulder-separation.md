@@ -52,3 +52,10 @@ Players who prematurely reduce the separation (by allowing the hips to rotate fo
 ## Practical Application: "The Separation Hold"
 
 At the set position, pause and consciously assess your hip-shoulder separation. Rotate your shoulders as far as comfortable while keeping your hips relatively square. Feel the stretch along the side of your trunk (the left side for right-sided players). Hold this position for 1-2 seconds, focusing on the elastic tension in your obliques. Then release by rotating your front hip toward the target and allowing the stretch to uncoil naturally into the forward swing. This drill develops both the ability to create separation and the patience to maintain it until the optimal release moment.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+<!-- TAICHIKB-CROSSREF-END -->

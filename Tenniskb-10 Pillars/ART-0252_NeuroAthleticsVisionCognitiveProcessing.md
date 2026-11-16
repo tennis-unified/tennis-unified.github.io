@@ -68,3 +68,10 @@ Mindfulness improves working memory capacity by reducing the intrusive thoughts 
 
 ## Practical Application: "The Cognitive Load Meter"
 Develop an internal "cognitive load meter" that ranges from 1 (minimal load) to 10 (overload). During play, periodically assess your cognitive load. If the meter reaches 7 or above, take immediate action: simplify your game plan, focus on a single tactical goal, or use a breathing exercise to reduce anxiety. This self-monitoring prevents the working memory overload that leads to poor decisions and unforced errors, and it ensures that you maintain cognitive function at a level that supports high-quality play.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

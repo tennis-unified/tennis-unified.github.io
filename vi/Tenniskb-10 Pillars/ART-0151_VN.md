@@ -83,3 +83,10 @@ Bốn cấp tiến bộ xây dung tích lệ tâm và kỹ năng kết cấu (2-
 Trong buổi tập tiếp theo, giới thiệu khái niệm giảm tốc với một phép thử đơn giản: cho người chơi chạy ngang từ dấu trung tâm đến biên đôi (khoảng 5,5 m) và dừng nhanh nhất có thể. Đo khoảng cách trượt — quãng người chơi tiếp tục di chuyển sau lần đặt chân đầu. Người giảm tốc bằng gối trượt 30-50 cm và cho valgus gối thấy rõ. Người chi phối hông trượt 10-20 cm và cho khớp hông sạch với gối giữ trên ngón chân.
 
 Sau đó dạy danh sách kiểm tra giảm tốc ba điểm: (1) **đặt rộng** — chân tiếp đất cách 1,5 lần vai, (2) **khớp hông** — mông ngồi lại 15 cm, (3) **hướng gối** — gối giữ trên ngón chân thứ hai. Cho người chơi tập 10 cú dừng kiểm soát mỗi bên, tập trung cả ba điểm. Sau mỗi cú dừng, người chơi đánh giá độ thoải mái gối trên thang 1-10. Dừng bằng gối điểm 6-8 (khó chịu); dừng bằng hông điểm 1-3 (thoải mái). Sự tương phản tức thì và tạo động lực. Trong những tuần sau, tiến qua bốn cấp huấn luyện, xây dung tích lệ tâm và kỹ năng kết cấu. Người chơi học cách giảm tốc bằng hông và chân sẽ chơi lâu hơn, đau ít hơn, và hồi phục nhanh hơn — vì khớp được bảo vệ bởi chính những cơ bắp được thiết kế để làm công việc đó.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Thăng bằng động và kiểm soát hướng*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

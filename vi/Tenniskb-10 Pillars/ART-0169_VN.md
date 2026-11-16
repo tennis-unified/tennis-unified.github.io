@@ -40,3 +40,10 @@ Xây dựng lối thoát trong một phiên phòng thủ:
 1. **Trường rơi.** Từ tư thế góc tải, người chời rơi và bắt 20 lần mỗi bên — không bóng, chỉ rơi, bắt rộng và mở hông. Tiêu chuẩn chất lượng: bắt đáp 40-80 cm hướng dòng phục hồi, gối đã gập.
 2. **Thoát bằng dây.** Dây đàn hồi quanh eo, cầm bởi HLV. HLV cho bóng góc sâu, rồi giải phóng căng dây ngay khi người chơi đáp từ cú phòng thủ — người chời rơi vào lỳ lột đột ngột và thoát.
 3. **Đếng hồi bóng.** Cho bóng góc với HLV đếm ngược từ 1.5 giây to. Phục hồi phải bắt đầu trước "một" — số ngoại hóa áp lực thời gian thường kích hoạt lựa chọn sai (đẩy).
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

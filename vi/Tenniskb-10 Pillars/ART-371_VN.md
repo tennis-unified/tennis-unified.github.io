@@ -72,3 +72,10 @@ Việc luyện tập bao gồm:
 ## Ứng Dụng Thực Hành: "Tiếp Cận Và Volley"
 
 Thực hành cú tiếp cận bằng cách nhờ đối tác chọi bóng ngắn từ vạch gôn. Đánh một cú tiếp cận sâu vào góc backhand, sau đó chuyển tiếp lên lưới và chuẩn bị cho cú volley. Tập trung vào độ sâu và vị trí đặt bóng của cú tiếp cận cũng như tốc độ chuyển tiếp lên lưới của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -61,3 +61,10 @@ Sử dụng lúc đổi sân và giữa các điểm để phục hồi nhận t
 
 ## Ứng Dụng Thực Tế: "Ngân Sách Nhận Thức"
 Đối xử năng lượng nhận thức như một ngân sách tài chính. Ở đầu trận, bạn có một lượng năng lượng tinh thần cố định để chi tiêu. Trong các khoảnh khắc ít áp lực (ví dụ: game giao bóng thông thường, giao bóng lần hai của đối thủ), chi tiêu tối thiểu bằng cách đơn giản hóa quyết định và bảo tồn tài nguyên. Trong các khoảnh khắc áp lực cao (ví dụ: break point, tiebreak), chi tiêu thoải mái bằng cách tham gia xử lý chiến thuật đầy đủ. Cách ngân sách này ngăn chặn sự phá sản nhận thức xảy ra khi người chơi tiêu tốn nỗ lực tối đa cho mọi điểm, không còn gì cho những khoảnh khắc quan trọng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

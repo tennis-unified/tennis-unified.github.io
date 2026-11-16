@@ -53,3 +53,10 @@ Trước khi bước vào trận đấu, vận động viên nên thực hiện 
 1.  **Thể Chất:** Chân có bùng nổ không? Vùng lõi có ổn định không? Vai có linh hoạt nhưng sẵn sàng không?
 2.  **Tinh Thần:** Tập trung có sắc nét không? Mô hình dự đoán có hoạt động không?
 Khi cả hai hệ thống đã sẵn sàng, vận động viên đang ở trong trạng thái Dòng Chảy, sẵn sàng thực hiện chuỗi động học với hiệu suất tối đa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Hệ thống năng lượng cho thể lực quần vợt*
+- [Chương 16: Chương 16: Các Yếu Tố Quyết Định Sinh Lý Học Của Thành Tích Thể Thao — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch13.html) — *Các yếu tố sinh lý quyết định thành tích thể thao*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và tích hợp trạng thái dòng chảy*
+<!-- TAICHIKB-CROSSREF-END -->

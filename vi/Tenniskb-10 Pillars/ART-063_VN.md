@@ -41,3 +41,10 @@ status: published
 
 ## Ứng Dụng Thực Tế: "Vùng Đánh"
 Nhắm va chạm bóng trong vùng đánh tối ưu của bạn — giữa eo và vai — nơi bạn có tối đa lựa chọn cú đánh và sức mạnh. Nếu bóng quá cao, lùi một bước để để nó rơi vào vùng đánh. Nếu bóng quá thấp, khوم gối hạ thấp cơ thể thay vì vươn tay xuống. Duy trì va chạm trong vùng đánh là chìa khóa sản xuất cú đánh nhất quán, mạnh mẽ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

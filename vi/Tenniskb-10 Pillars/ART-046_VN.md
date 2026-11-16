@@ -103,3 +103,10 @@ Tay và cổ tay thêm tốc độ cuối cùng:
 
 ## Ứng Dụng Thực Tế: "Chuỗi Nhân Tốc Độ"
 Hãy tưởng tượng cơ thể bạn như một chuỗi các bộ nhân tốc độ: mỗi đoạn lấy tốc độ từ đoạn trước và thêm vào. Chân tạo tốc độ cơ bản, hông nhân nó, thân người nhân thêm, vai nhân lại, và tay/cổ tay thêm lần nhân cuối cùng. Tổng tốc độ vợt là tích của tất cả các bộ nhân này. Nếu bất kỳ bộ nhân nào yếu (đoạn yếu), tổng tốc độ giảm mạnh. Luyện tập bằng cách thực hiện cú đáy sân và theo dõi tinh thần các đóng góp tốc độ: cảm nhận tốc độ cơ bản từ chân, sự nhân từ hông, nhân thêm từ thân người, và nhân cuối cùng từ tay/cổ tay. Bất kỳ điểm nào bạn cảm thấy tốc độ giảm là bộ nhân yếu cần tăng cường.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

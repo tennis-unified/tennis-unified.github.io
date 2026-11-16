@@ -55,3 +55,10 @@ Players who struggle with elbow mechanics often benefit from drills that emphasi
 
 ## Practical Application: "The Elbow Check"
 During practice, have a partner observe your backhand swing and check your elbow position. At contact, your elbow should be slightly bent, not locked. During the follow-through, your elbow should extend smoothly. If your elbow is locked or moving independently of your body, adjust until the position feels natural and produces consistent shots.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Elbow, forearm pronation & wrist mechanics*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

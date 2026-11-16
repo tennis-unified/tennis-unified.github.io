@@ -67,3 +67,10 @@ Tập chuyển đổi giữa nhiệm vụ vận động (đánh) và nhiệm v�
 
 ## Ứng Dụng Thực Tế: "Từ Chế Độ"
 Phát triển một từ duy nhất hoặc cụm từ ngắn kích hoạt mỗi chế độ chiến thuật. Ví dụ, "ấn" kích hoạt chế độ tấn công, "đều" kích hoạt chế độ trung lập, và "sống" kích hoạt chế độ phòng ngự. Khi bạn cần chuyển đổi chế độ, nói từ bên trong để kích hoạt bộ quy tắc mới và ức chế cái cũ. Tín hiệu bằng lời này cung cấp cơ chế chuyển đổi sạch, nhanh giảm thiểu chi phí nhận thức của việc chuyển đổi giữa các chế độ. Tập sử dụng các từ này trong các pha bóng tập luyện cho đến khi chúng trở thành kích hoạt tự động.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

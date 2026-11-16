@@ -237,3 +237,10 @@ Structure match day nutrition with precise timing:
 | Slow recovery between days | Inadequate post-match nutrition, poor sleep | Cumulative fatigue, reduced training quality | Implement post-match recovery protocol; sleep optimization |
 | Frequent muscle cramps | Dehydration, electrolyte imbalance, poor conditioning | Cramping, time loss | Hydration protocol; electrolyte supplementation; conditioning improvement |
 | Weight loss during tournament | Insufficient caloric intake, high energy expenditure | Fatigue, performance decline | Increase caloric intake; portable high-energy snacks; meal planning |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Athletic nutrition & energy balance*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

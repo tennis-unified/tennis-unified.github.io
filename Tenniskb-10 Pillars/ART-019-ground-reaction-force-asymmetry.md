@@ -149,3 +149,10 @@ Proactive measures to prevent maladaptive asymmetry:
 
 ## Practical Application: "The Balance Test"
 Stand on one foot and perform 10 small vertical hops, measuring how high you can jump. Repeat on the other foot. The difference in jump height between legs indicates your vertical GRF asymmetry. A difference of less than 10% is ideal; 10-20% is acceptable but worth monitoring; more than 20% suggests a significant imbalance that could affect your performance and injury risk. Now perform a single-leg hop for distance: stand on one foot and hop forward as far as you can, measuring the distance. Repeat on the other foot. The difference in distance indicates your horizontal GRF asymmetry. If either test reveals a significant imbalance (>15%), incorporate single-leg training for the weaker limb into your routine: single-leg squats, single-leg hops, and single-leg balance exercises. Over weeks and months, this targeted training will reduce the asymmetry and improve both your performance and your resilience. The goal is not perfect symmetry—some asymmetry is natural and beneficial—but rather keeping your asymmetry within the adaptive range where it helps rather than hinders your game.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Linear kinetics, GRF & impulse-momentum*
+<!-- TAICHIKB-CROSSREF-END -->

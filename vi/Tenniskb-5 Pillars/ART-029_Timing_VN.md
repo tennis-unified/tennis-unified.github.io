@@ -32,3 +32,10 @@ Não bộ phải quản lý trình tự này trong khoảng 0,2 giây.
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Khớp" (The Click)
 Khi chuỗi động học được căn thời gian hoàn hảo, người chơi cảm thấy một tiếng "click"—cảm giác về sức mạnh không gắng sức, nơi quả bóng dường như tự phóng ra khỏi vợt. Đây chính là cảm giác của Tích Hợp Thần Kinh-Động Học.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 4 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch04.html) — *Cơ sở thần kinh cho định thời chuyển động*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác – vận động và điều phối tiểu não*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Phối hợp liên tục và hợp nhất thần kinh–động học*
+<!-- TAICHIKB-CROSSREF-END -->

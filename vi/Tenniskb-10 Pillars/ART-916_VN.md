@@ -126,3 +126,10 @@ Cơ liên sườn căng và độ linh hoạt lồng ngực hạn chế giới h
 ## Ứng Dụng Thực Tế: "Mở Rộng Trước Khi Xoay"
 
 Trước mỗi buổi tập giao bóng, dành 3 phút cho mở rộng cột sống ngực: nằm trên cuộn mút ở giữa lưng, đầu bằng tay, và nhẹ nhàng mở rộng về phía sau. Sau đó thực hiện 10 lần xoay mở sách mỗi bên. Trong khi giao bóng, có ý thức tập trung vào vồng lưng trên (mở rộng cột sống ngực) trước khi xoay. Thói quen trước đơn giản này tăng tốc độ giao bóng đáng kể trong khi giảm căng thẳng lên thắt lưng dưới và vai. Cột sống ngực là cây cầu giữa hai chân mạnh mẽ và cánh tay như roi da — hãy đảm bảo nó hoàn toàn linh hoạt.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+<!-- TAICHIKB-CROSSREF-END -->

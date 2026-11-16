@@ -49,3 +49,10 @@ Nếu bất kỳ kiểm tra nào thất bại, vận động viên sử dụng m
 
 ## Ứng Dụng Thực Tế: Trạng Thái "Lái Tự Động"
 Trong Dòng Chảy, vận động viên nên cảm thấy như họ đang ở chế độ "lái tự động". Cơ thể biết phải làm gì; não chỉ xác nhận kết quả. Vận động viên không nghĩ về cơ học, chiến thuật hay điểm số. Họ chỉ tập trung vào quả bóng và cho phép chuỗi động học hoạt động. Đây là mục tiêu cuối cùng của Hệ Thống 5 Cột Trụ: tạo ra một vận động viên hoàn chỉnh, tích hợp, thực hiện một cách không gắng sức ở tiềm năng đỉnh cao của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy (Flow State)*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Cân bằng thần kinh tự chủ và vùng kích thích tối ưu*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Trạng thái vô vi – linh hoạt tối ưu trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -147,3 +147,10 @@ Nhận diện mẫu hình giao bóng là việc phân tích có hệ thống cá
 | Hiệu quả giao bóng thấp ở một số vùng | Giao bóng vào thế mạnh của đối thủ | Cú đón giao bóng mạnh, mất game giao bóng | Nhắm vào điểm yếu đối thủ; tập chuyên về từng vùng |
 | Giao bóng gặp khó ở điểm break | Thay đổi mẫu hình do áp lực | Lỗi giao bóng kép, giao bóng yếu | Bài tập giao bóng ở điểm break; tính nhất quán mẫu hình dưới áp lực |
 | Tính đa dạng giao bóng giảm khi thi đấu | Đa dạng khi tập không chuyển giao sang thi đấu | Giao bóng dễ đoán trong trận đấu | Tập giao bóng trong điều kiện cạnh tranh; mô phỏng trận đấu tập trung vào đa dạng |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy*
+<!-- TAICHIKB-CROSSREF-END -->

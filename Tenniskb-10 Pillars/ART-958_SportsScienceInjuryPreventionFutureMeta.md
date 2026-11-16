@@ -151,3 +151,10 @@ Identifying your IZOF involves:
 ## Practical Application: "Anxiety Is Information, Not an Enemy"
 
 Competition anxiety is not a sign of weakness — it is a sign that you care about your performance. The goal is not to eliminate anxiety but to manage it within your optimal functioning zone. Monitor your pre-match anxiety levels, identify your individual zone of optimal functioning, and use breathing, cognitive restructuring, and mindfulness to maintain that zone. When you feel nervous before a match, remind yourself: "This is my body preparing to perform. I've trained for this moment. Now let's compete."
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+<!-- TAICHIKB-CROSSREF-END -->

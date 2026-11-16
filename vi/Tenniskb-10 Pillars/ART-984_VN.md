@@ -200,3 +200,10 @@ Khi bạn trở nên chuyên nghiệp hơn:
 ## Ứng Dụng Thực Tế: "Rèn Luyện Não Bộ, Không Chỉ Cơ Thể"
 
 Lần tới khi bạn tập luyện, hãy chú ý đến cảm giác não bộ của bạn trong các hoạt động khác nhau. Khi giao bóng, bạn nên cảm thấy gần như tự động — ném bóng, vung vợt, tiếp xúc nên chảy mà không cần suy nghĩ có ý thức. Đây là não bộ của bạn hoạt động ở chế độ tự chủ, giải phóng vỏ trước trán cho tư duy chiến thuật. Nếu bạn thấy mình suy nghĩ quá nhiều trong các cú đánh cơ bản, bạn cần nhiều lặp lại hơn để tự động hóa chuyển động. Ngược lại, trong các bài tập chiến thuật, bạn nên cảm thấy hoàn toàn tham gia nhận thức — đây là vỏ trước trán làm việc trên việc ra quyết định. Buổi tập luyện tốt nhất phát triển cả kỹ năng vận động tự động và tư duy chiến thuật có ý thức — hai thứ cùng nhau tạo ra năng lực tennis.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

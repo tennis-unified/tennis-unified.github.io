@@ -58,3 +58,10 @@ Xem nghịch cảnh như thử thách thay vì mối đe dọa. "Đây là cơ h
 
 ## Ứng Dụng Thực Tế: "Bài Kiểm Tra Sức Bền"
 Sau mỗi trận đấu, thực hiện "bài kiểm tra sức bền": (1) tôi đã cạnh tranh gay gắt trên mỗi điểm? (2) tôi đã phục hồi nhanh chóng từ sai lầm? (3) tôi đã duy trì tập trong trong áp lực? (4) tôi đã duy trì kiểm soát cảm xúc? Đánh giá mỗi yếu tố trên thang điểm 1-10. Nhận diện thành phần điểm thấp nhất và thiết kế huấn luyện để cải thiện nó. Đánh giá bản thân thường xuyên này xây dựng sức bền tinh thần bằng cách nhận diện các lĩnh vực cụ thể cần cải thiện và theo dõi tiến độ theo thời gian.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

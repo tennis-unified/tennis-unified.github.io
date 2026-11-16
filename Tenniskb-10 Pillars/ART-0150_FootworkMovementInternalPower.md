@@ -91,3 +91,10 @@ Three progressive exercises build wave skill:
 ## Practical Application: "The Wave Count"
 
 At the next session, introduce the wave concept with a simple counting exercise. Have the player perform shadow forehands at slow speed while counting aloud: "feet" (initiate ground push), "knees" (extend legs), "hips" (rotate pelvis), "trunk" (rotate torso), "shoulder" (pull arm), "racket" (whip to contact). Each count should coincide with the segment's acceleration, with roughly 100-150 ms between counts. Most players will rush through the lower segments and reach "racket" too quickly — this reveals the wave break. Have the player repeat the count, deliberately slowing the lower segments so that each gets its full share of time. After 10 counted shadow swings, the player hits 10 live balls with the same internal count. The auditory cue of the count helps the player maintain the proximal-to-distal timing, and within a few sessions, the count becomes internalized as a felt sense of the wave. The player who can feel the wave can diagnose and repair it without a coach — the ultimate goal of internal power training.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+<!-- TAICHIKB-CROSSREF-END -->

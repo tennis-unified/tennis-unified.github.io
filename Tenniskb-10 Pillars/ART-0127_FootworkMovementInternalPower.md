@@ -72,3 +72,10 @@ Club-level players often break the spiral in predictable ways:
 ## Practical Application: "Wring the Towel"
 
 The most effective coaching image for silk-reeling force: **imagine wringing water from a wet towel.** The twisting motion — one hand turning clockwise, the other counterclockwise — is exactly the spiral that occurs in a groundstroke: the lower body unwinds in one direction while the upper body unwinds in the other, and the force flows through the connection between them. At the next session, have the player hold an actual towel and practice the wringing motion until the spiral feels natural. Then translate the same feeling into a shadow groundstroke. The racket becomes the extension of the spiral, and the ball is hit not by the arm but by the entire body unwinding through the chain.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

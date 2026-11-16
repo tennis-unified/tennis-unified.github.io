@@ -31,3 +31,10 @@ When the hips snap forward, the Spiral Line reaches its limit of elasticity and 
 
 ## Practical Application: The "Spring" Sensation
 Think of your torso as a large spring. The unit turn is the compressing of the spring. The hit is the release. If you feel only muscle effort, you are not utilizing the Spiral Line; if you feel a "bounce" from your core, you are using fascial recoil.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line (SPL) anatomy and elastic recoil*
+- [Chương 1: Mạc như một mạng lưới ứng suất lan khắp cơ thể: Giải phẫu, cơ sinh học và sinh lý học — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch01-mac-nhu-mot-mang-luoi-ung-suat-lan-khap-co-the-giai-phau-co-sinh.html) — *Fascia as a body-wide tensional network*
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Fascial elastic recoil in rotational sports*
+<!-- TAICHIKB-CROSSREF-END -->

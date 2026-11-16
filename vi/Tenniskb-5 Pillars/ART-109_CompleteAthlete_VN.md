@@ -42,3 +42,9 @@ Kiểm Tra Tích Hợp 5 Cột Trụ nên được thực hiện trước mỗi 
 
 ## Ứng Dụng Thực Tế: "Vận Động Viên Hoàn Chỉnh"
 Vận động viên nên cảm nhận rằng họ là "hoàn chỉnh" và tích hợp với Hệ Thống 5 Cột Trụ. Vận động viên nên cảm nhận rằng các hệ thống sinh cơ học, thần kinh và chiến thuật đang hoạt động cùng nhau một cách hài hòa. Đây là mục tiêu cuối cùng của Hệ Thống 5 Cột Trụ: tạo ra một vận động viên hoàn chỉnh, tích hợp, thực hiện một cách không gắng sức ở tiềm năng đỉnh cao của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Tổng hợp cơ sinh học và sinh lý học 5 Trụ cột*
+- [Chương 19: Chương 19: Bước Ra Sân: Lời Giới Thiệu Về Lĩnh Vực Tâm Lý Học Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch19.html) — *Tích hợp tâm lý học thể thao toàn diện*
+<!-- TAICHIKB-CROSSREF-END -->

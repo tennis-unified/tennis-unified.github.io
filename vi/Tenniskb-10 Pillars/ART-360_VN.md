@@ -90,3 +90,10 @@ Việc tập luyện forehand tư thế đóng bao gồm:
 ## Ứng Dụng Thực Tiễn: "Tư Thế Sức Mạnh"
 
 Sử dụng tư thế đóng một cách có chủ đích khi bạn muốn tạo ra sức mạnh tối đa trên một cú đánh cụ thể. Sắp xếp với chân trước bắt qua, đẩy chân sau xuống mặt đất, và cảm nhận động thăng về phía trước bị chặn và chuyển hướng thành lực hướng lên trên và lực xoay. "Tư thế sức mạnh" này nên được sử dụng một cách chọn lọc cho các cú đánh tấn công ở đó cần sức mạnh tối đa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+<!-- TAICHIKB-CROSSREF-END -->

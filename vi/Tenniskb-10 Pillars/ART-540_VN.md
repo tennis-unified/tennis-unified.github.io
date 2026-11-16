@@ -117,3 +117,10 @@ Nếu bạn không thể đến sớm:
 ## Ứng Dụng Thực Tế: "Hệ Số Điều Chỉnh Độ Cao"
 
 Khi giao bóng ở độ cao, sử dụng quy tắc ngón tay cái: trừ 5-10% tốc độ giao bóng bình thường để duy trì cùng chất lượng giao bóng hiệu quả. Ví dụ, nếu giao bóng đầu bình thường của bạn là 100 mph, nhắm 90-95 mph ở độ cao. Không khí mỏng sẽ cộng lại tốc độ còn thiếu trong khi cho bạn kiểm soát tốt hơn. Điều chỉnh dựa trên vài giao bóng đầu của bạn trong trận.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

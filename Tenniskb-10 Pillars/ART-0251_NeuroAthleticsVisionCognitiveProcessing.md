@@ -78,3 +78,10 @@ During sleep, declarative memories are transferred to long-term storage, and pro
 
 ## Practical Application: "The Memory Audit"
 After each match, perform a brief "memory audit": (1) What procedural skills felt automatic? (What declarative knowledge did I use? (3) Where did working memory feel overwhelmed? This audit identifies which memory system needs attention. If procedural skills broke down, focus on pressure training. If declarative knowledge was lacking, study opponents. If working memory was overwhelmed, simplify your game plan. This targeted approach to memory development ensures that each system receives the specific training it needs.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+<!-- TAICHIKB-CROSSREF-END -->

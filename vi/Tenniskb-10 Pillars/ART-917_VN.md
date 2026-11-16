@@ -119,3 +119,10 @@ Tennis vốn là một môn thể thao bất đối xứng, với người chơi
 ## Ứng Dụng Thực Tế: "Huấn Luyện Bên Kia"
 
 Dành một buổi tập mỗi tuần để huấn luyện bên không thống trị: đánh trở bóng bằng tay không thống trị, thực hiện chuyển động giao bóng không bóng, và làm bài tập một chân bắt đầu bằng chân yếu hơn. Bạn không cần trở nên thuận cả hai tay — nhưng bạn cần giảm khoảng cách mất cân bằng. Ngay cả 10 phút mỗi tuần huấn luyện bên không thống trị cũng giảm nguy cơ chấn thương và cải thiện chất lượng di chuyển tổng thể.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

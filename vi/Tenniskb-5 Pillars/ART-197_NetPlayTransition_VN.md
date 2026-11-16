@@ -38,3 +38,10 @@ Sau khi tiến sân dọc đường, các lựa chọn trả lời thực tế c
 
 ## Ứng Dụng Thực Tế: "Chiếm Lấy Lãnh Thổ"
 Lưới không phải là nơi bạn tình cờ ghé qua vì một cú lob bất đắc dĩ; nó là lãnh thổ bạn sáp nhập với cấu trúc. Tiến sân theo tiêu chí, bao phủ theo hình học, kết thúc với kỷ luật.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

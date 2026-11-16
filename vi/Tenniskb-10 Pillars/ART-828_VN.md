@@ -301,3 +301,10 @@ Sử dụng danh sách kiểm tra cột mốc để theo dõi sự phát triển
 | Chững kỹ thuật ở tuổi 14 | Khối lượng luyện tập không đủ trong các giai đoạn trước | Phát triển kỹ thuật bị đình trệ | Chương trình phát triển kỹ thuật chuyên sâu; xem lại lịch sử tập luyện |
 | Kiệt sức và mất động lực | Thi đấu quá mức, áp lực, thiếu vui vẻ | Bỏ tennis | Giảm áp lực thi đấu; đưa lại hoạt động vui vẻ; hỗ trợ tâm lý |
 | Thi đấu kém dù tập luyện tốt | Kinh nghiệm trận đấu không đủ, kỹ năng tâm lý kém | Lo âu thi đấu, kết quả giải đấu kém | Tăng cơ hội chơi trận đấu; huấn luyện thành tích tâm lý |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

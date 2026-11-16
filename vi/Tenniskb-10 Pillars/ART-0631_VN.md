@@ -63,3 +63,10 @@ Smash từ đường giao bóng là tình huống smash giữa sân phổ biến
 ## Ứng Dụng Thực Tế: "Định Vị, Sau Đó Trừng Phạt"
 
 Trước khi vung, hãy định vị. Smash từ đường giao bóng thưởng cho sự kiên nhẫn — hãy dành thêm nửa giây để đặt mình dưới bóng, chỉ cánh tay không thuận, và thực hiện với cú vung đầy đủ. Sức mạnh đến từ cơ thể bạn, không phải tay bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -60,3 +60,10 @@ Người chơi nên luyện tập chuyển đến tư thế trung lập từ tư
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Góc 45 Độ"
 Trong lúc luyện tập, hãy nhờ một đồng đội quan sát tư thế của bạn từ phía trước. Họ nên kiểm tra xem hai bàn chân của bạn có tạo thành góc khoảng 45 độ so với lưới hay không. Nếu hai bàn chân song song với lưới, bạn đang ở tư thế mở; nếu hoàn toàn nằm ngang, bạn đang ở tư thế kín. Điều chỉnh cho đến khi góc 45 độ cảm thấy tự nhiên và tạo ra những cầu cân bằng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -55,3 +55,10 @@ Người chơi gặp khó khăn với bước chân thường được lợi t�
 
 ## Ứng Dụng Thực Tế: "Bài Tập Di Chuyển Bước Chân"
 Luyện tập bước phân chân, bước điều chỉnh, bước băng ngang và bước hồi phục mà không có bóng, tập trung vào tốc độ và sự cân bằng. Để một người hỗ trợ ném bóng đến các vị trí khác nhau, và luyện tập di chuyển đến mỗi quả bóng với mô hình bước chân chính xác. Theo dõi số lần bạn đến bóng ở tư thế cân bằng. Bài tập này phát triển các kỹ năng bước chân cần thiết để bao quát sân hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -49,3 +49,10 @@ Các kinh văn Thái Cực được viết cho chiến đấu ở tốc độ đ
 ## Ứng Dụng Thực Tế: "Chạy Sáu Điểm"
 
 Cho người chơi một nghi thức: **mười giây, sáu điểm, trước mỗi giao bóng và trả lời — đỉnh đầu, thân, kua, chân, bát, hơi thở.** Cài đặt theo ba giai đoạn. Đầu tiên, huấn luyện viên đọc sáu điểm to cho đến khi thứ tự được ghi nhớ. Thứ hai, người chơi chạy âm thầm trước mỗi giao bóng từ một rổ bóng, huấn luyện viên kiểm tra ngẫu nhiên một điểm mỗi giao. Thứ ba, nó đi vào thực tế: các điểm thi đấu nơi danh sách kiểm tra là bắt buộc, và bất kỳ điểm nào bị bỏ qua đều vô hiệu hóa điểm đó bất kể kết quả. Trong hai buổi tập, nghi thức được nén thành một hơi thở, và sáu nguyên tắc trở thành không phải điều người chơi nghĩ về mà là điều forehand đơn giản là.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

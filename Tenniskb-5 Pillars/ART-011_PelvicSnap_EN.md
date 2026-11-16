@@ -31,3 +31,11 @@ GRF (Outside Leg) → Pelvic Acceleration → Micro-Stop → Torso Uncoiling
 
 ## Practical Application: The "Snap" Sensation
 The sensation should be like snapping a heavy rubber band. There is a moment of tension (the load) followed by an instantaneous, violent release (the snap).
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Hip joint & pelvic rotation mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Lumbopelvic rhythm and pelvic kinematics*
+- [Chương 8: Hệ Xương: Bộ Xương Phụ (The Skeletal System: The Appendicular Skeleton)](https://taichikb.github.io/vi/books/tortora_ap/ch08-he-xuong-bo-xuong-phu.html) — *Pelvic girdle anatomy*
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Lateral Line: lateral hip stabilization*
+<!-- TAICHIKB-CROSSREF-END -->

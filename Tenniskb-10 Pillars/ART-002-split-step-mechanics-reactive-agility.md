@@ -66,3 +66,10 @@ Apply split-step technique in competitive scenarios where the player receives se
 
 ## Practical Application: "Feel the Rhythm"
 The split-step is fundamentally a rhythm skill, not a strength skill. Practice by bouncing gently on the balls of your feet between points, maintaining a rhythmic oscillation. When your opponent begins their swing, let one of these bounces become a slightly wider split that lands as they contact the ball. The rhythm of the bounce carries you into the split naturally. Count it out: bounce-bounce-bounce-SPLIT. Your feet should kiss the court at the exact moment the ball leaves their strings. This rhythmic approach builds automaticity far more effectively than consciously thinking about the mechanics of each split.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

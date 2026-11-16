@@ -134,3 +134,10 @@ Bước chân chẻ ngang nên diễn ra đúng thời điểm vợt của ngư�
 ## Ứng Dụng Thực Tế: "Bài Tập Thay Đổi Cầm Vợt"
 
 Yêu cầu đối tác gọi "tay phải" hoặc "tay trái" ngẫu nhiên trong khi bạn ở tư thế sẵn sàng. Thực hành thay đổi cách cầm vợt nhanh chóng nhất có thể. Đo thời gian để đến cách cầm đúng. Mục tiêu dưới 0,5 giây. Bài tập này phát triển khả năng thay đổi cách cầm nhanh chóng cần thiết để trả bóng hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

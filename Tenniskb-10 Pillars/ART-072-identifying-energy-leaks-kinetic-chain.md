@@ -58,3 +58,10 @@ Energy leaks in the tennis kinetic chain occur at specific, recognizable pattern
 
 ## Practical Application: "The Leak Detection"
 Watch a player perform groundstrokes and mentally scan each kinetic chain link for the common leak patterns described above. At each link, ask: Is this segment contributing fully? Is the timing correct? Any "no" answers indicate an energy leak that needs to be addressed. Start from the ground and work up—fixing ground connection leaks often improves the entire chain.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

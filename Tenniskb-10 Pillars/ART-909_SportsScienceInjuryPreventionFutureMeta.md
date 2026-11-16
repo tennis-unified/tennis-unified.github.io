@@ -136,3 +136,10 @@ A 10-minute daily balance program reduces ankle sprain incidence by 35-50%:
 ## Practical Application: "Balance Before You Rally"
 
 Before every practice session, perform 3 minutes of single-leg balance work: stand on each leg for 60 seconds, first with eyes open, then closed. If you cannot maintain balance for 20 seconds with eyes closed on either leg, your proprioceptive system needs attention. Add this to your daily routine — 3 minutes of balance training prevents more ankle injuries than any brace, and it requires zero equipment.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+<!-- TAICHIKB-CROSSREF-END -->

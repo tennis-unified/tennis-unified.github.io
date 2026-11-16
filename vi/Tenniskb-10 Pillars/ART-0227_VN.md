@@ -57,3 +57,10 @@ Phát triển chiến thuật dựa trên mô hình đối thủ cụ thể. Ví
 
 ## Ứng Dụng Thực Tế: "Thẻ Hồ Sơ Đối Thủ"
 Trước mỗi trận, tạo một "thẻ hồ sơ đối thủ" tinh thần với ba phần: (1) Xu hướng (họ thường làm gì), (2) Kích hoạt (họ làm gì trong tình huống cụ thể), và (3) Điểm yếu (họ gặp khó khăn với điều gì). Xem lại thẻ này trong lúc đổi sân và cập nhật nó khi bạn thu thập thông tin mới. Cách tiếp cận có cấu trúc này cho mô hình hóa đối thủ đảm bảo rằng kế hoạch chiến thuật của bạn dựa trên bằng chứng chứ không phải giả định.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

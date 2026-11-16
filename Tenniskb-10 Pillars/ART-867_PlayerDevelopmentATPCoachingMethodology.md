@@ -210,3 +210,10 @@ Retest every 8-12 weeks to track improvement.
 | Backhand lacks power | Insufficient hip-shoulder separation, single-arm limitation | Passive, easily attacked | Rotational power training; separation drills; trunk strengthening |
 | Stroke power drops in later matches | Insufficient rotational endurance | Late-match errors | Rotational endurance circuits; combined power and conditioning |
 | Lower back pain during rotation | Poor core stability, excessive lumbar rotation | Disc issues, muscle strains | Core stability training; anti-rotation exercises; technique review |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

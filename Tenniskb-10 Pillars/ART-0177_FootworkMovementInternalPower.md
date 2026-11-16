@@ -57,3 +57,10 @@ The complete chain — server-read split, step-in return, two or three drives, m
 ## Practical Application: "One Chain, Four Links"
 
 Structure the next session as a single progression on one court: (1) 10 hand-fed step-in chips, scoring the hitting foot's landing inside the baseline; (2) 10 served balls with a moving split and shadow volley, scoring the split's timing frame; (3) live second-serve points where the returner must come in on every second serve, scored not by who wins the point but by where the first volley is struck — service line or better counts, no-man's land does not. Ten minutes of the live block beats an hour of separated return and volley drills, because the pattern's skill is not in any link — it is in the handoffs.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

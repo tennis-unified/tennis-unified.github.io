@@ -68,3 +68,10 @@ Talent identification is not guessing who wins U12 nationals. It is a probabilis
 
 ## Practical Application: "The Moneyball Approach"
 Don't scout the winner. Scout the *trajectory*. The U12 champion with perfect technique but no physical ceiling and a toxic parent is a bad investment. The U12 #3 seed with ugly strokes, elite anticipation, pre-PHV, and a growth-mindset family is the asset. Bet on the slope of the curve, not the height of the point.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Sensorimotor integration & motor control*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -50,3 +50,10 @@ As fatigue increases, kinetic chain efficiency decreases.
 
 ## Practical Application: The "Sustainable Chain"
 The athlete should feel that their kinetic chain remains "tight" and efficient throughout the entire match. The conditioning program should not just make the athlete "fit"; it should make the athlete "resilient"—capable of maintaining the biomechanics, neurology, and technique of the 5-Pillar System under the stress of competition.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Aerobic & anaerobic energy supply for sustained matches*
+- [Chương 13: Chương 13: Khởi Phát và Mỏi Cơ – Hậu Quả của Việc Kích Hoạt Cơ Lặp Lại — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch10.html) — *Muscle fatigue onset & kinetic chain sustainability*
+- [Chương 20: Hệ Tuần Hoàn: Tim (The Cardiovascular System: The Heart)](https://taichikb.github.io/vi/books/tortora_ap/ch20-he-tuan-hoan-tim.html) — *Cardiovascular endurance & oxygen delivery*
+<!-- TAICHIKB-CROSSREF-END -->

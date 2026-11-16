@@ -57,3 +57,10 @@ Trước mỗi buổi tập hoặc trận đấu, vận động viên nên thự
 4.  **Chiến Thuật:** Mô hình dự đoán có hoạt động không?
 5.  **Điều Kiện:** Cơ thể đã nghỉ ngơi và sẵn sàng chưa?
 Khi cả năm được xác nhận, vận động viên đã được tích hợp đầy đủ và sẵn sàng thi đấu ở mức cao nhất.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Cơ sở phân tử của thích ứng tập luyện*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Cân bằng hệ thần kinh tự chủ trong hồi phục và thi đấu*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Tích hợp thân–tâm Thái Cực Quyền trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -130,3 +130,10 @@ Develop tactical return awareness with this structured drill:
 | Cannot break serve | Weak second serve returns, predictable placement | Server holds comfortably | Second serve attack drills; target variation practice |
 | Returns lack depth against big servers | Late contact, insufficient body rotation | Returns sit up for server to attack | Block return drills with emphasis on forward weight transfer |
 | Predictable return placement | Habitual crosscourt returns | Server can anticipate and counter | Drill return direction variation; pattern disruption exercises |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

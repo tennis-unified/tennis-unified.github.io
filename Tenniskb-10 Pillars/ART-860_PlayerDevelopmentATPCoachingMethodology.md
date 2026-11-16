@@ -201,3 +201,10 @@ Create a standardized fitness testing report:
 | Poor change of direction | Insufficient agility training | Inefficient movement, injuries | Agility ladder drills; change of direction exercises |
 | Low serve speed | Insufficient rotational power and leg drive | Predictable, returnable serve | Olympic lifts; plyometrics; rotational power training |
 | Recurring injuries during matches | Poor movement quality, fatigue-related breakdown | Time loss, reduced performance | Movement screening; corrective exercises; load management |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Dynamic balance & directional control*
+<!-- TAICHIKB-CROSSREF-END -->

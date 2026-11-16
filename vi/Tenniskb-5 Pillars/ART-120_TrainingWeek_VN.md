@@ -38,3 +38,10 @@ Kiến thức không có cấu trúc vẫn chỉ là lý thuyết. Bài viết n
 
 ## Ứng Dụng Thực Tế: "Tư Duy Kiến Trúc"
 Các đợt bài tập rời rạc không tạo ra vận động viên; những tuần được kiến trúc mới tạo ra. Mỗi buổi tập có một hashtag: chủ đề hôm nay. Nếu bài tập không phục vụ chủ đề, nó không diễn ra hôm nay.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+<!-- TAICHIKB-CROSSREF-END -->

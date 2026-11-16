@@ -160,3 +160,10 @@ Record your serve and compare side-by-side with an elite player's serve. Look fo
 ## Practical Application: "The Monthly Video Check"
 
 Record your serve from the side view on the first day of each month. Use the same camera position, distance, and settings each time. Compare the new video with the previous month's to identify any changes — both improvements and regressions. This monthly check creates accountability and provides objective evidence of progress that feel alone cannot provide.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

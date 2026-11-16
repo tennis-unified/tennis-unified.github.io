@@ -157,3 +157,10 @@ Không phải phương pháp phục hồi nào cũng tạo ra như nhau. Khi th�
 7. **Lăn foam** (10-15 phút hàng ngày): Giải phóng fascia cơ tự thân thuận tiện để duy trì chất lượng mô.
 
 Thứ bậc phục hồi là đơn giản: ngủ trước, ăn thứ hai, vận động thứ ba, sau đó thêm các phương pháp khác khi có thời gian và nguồn lực. Tay vợt ngủ 9 giờ, ăn bữa phục hồi phù hợp và thực hiện 20 phút phục hồi tích cực sẽ phục hồi tốt hơn người dành một giờ trong bồn nước lạnh và ngủ 5 giờ. Phục hồi không phải về công nghệ đắt đỏ nhất; nó về nền tảng được thực hiện kiên định.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

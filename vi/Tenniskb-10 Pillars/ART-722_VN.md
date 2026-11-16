@@ -49,3 +49,10 @@ Một bài tập hiệu quả khác là tập nhận thức góc: đặt một c
 
 ## Ứng Dụng Thực Tế: "Slice Và Cắt Trên Sân Cỏ"
 Để áp dụng hình học đường vòng cung giao bóng slice trên sân cỏ trong trận đấu tiếp theo, bắt đầu bằng cách hình dung sân như một lưới hình học trước mỗi điểm. Xác định góc lớn nhất khả dụng cho đối thủ và chọn vị trí để tối thiểu hóa nó. Tập một khuôn mẫu hình học cụ thể mỗi buổi tập cho đến khi nó trở thành bản năng. Quay video báº£n thÃ¢n chơi và phân tích xem vị trí của bạn có khớp với lý tưởng hình học không. Hãy nhớ: hình học sân là một kỹ năng được cải thiện với tập luyện có chủ đích, giống như những cú đánh của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

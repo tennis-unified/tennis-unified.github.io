@@ -85,3 +85,10 @@ Xen kẽ bài tập lực nặng (80-90% 1RM) với chuyển động bùng nổ 
 
 ## Ứng Dụng Thực Tế: "Quy Tắc 100 Mili Giây"
 Huấn luyện bản thân tư duy theo khối 100 mili giây. Mỗi lần bạn đẩy khỏi sân, đếm "một-Mississippi" trong đầu — và bạn nên ở lực đỉnh trước khi kết thúc. Nếu bạn vẫn đang xây dựng lực ở 200 mili giây, bạn đã bỏ lỡ cửa sổ. Dùng drill đơn giản: đứng một chân và đẩy sang nhảy ngang nhanh nhất có thể, cố gắng giảm thiểu thời gian tiếp xúc mặt đất. Dùng thảm tiếp xúc hoặc nhờ đối tác quan sát chân. Mục tiêu là làm tiếp xúc mặt đất như chạm bề mặt nóng — tức thì. Tư duy "sân nóng" này tái kết nối hệ thần kinh cho tốc độ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Cơ học co cơ: lệch tâm/đồng tâm và lực–vận tốc*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

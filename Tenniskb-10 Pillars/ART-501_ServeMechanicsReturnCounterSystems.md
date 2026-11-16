@@ -74,3 +74,10 @@ The core acts as the bridge between the lower and upper body. Without adequate c
 ## Practical Application: "The Whip Analogy"
 
 Teach the serve as you would teach someone to crack a whip. The handle (legs) moves first, sending a wave along the thong (trunk and arm), until the tip (racket head) accelerates to supersonic speed. Just as a stiff whip cannot crack, a serve that fires all segments simultaneously cannot achieve maximum velocity. Practice the "pause at the trophy pose" — freeze at the top of the motion and consciously feel which muscles are loaded — before exploding through the chain in sequence.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

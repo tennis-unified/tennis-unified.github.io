@@ -74,3 +74,10 @@ Nhận thức không gian được huấn luyện thông qua:
 ## Ứng Dụng Thực Hành: "Thử Thách Nhất Quán"
 
 Thiết lập vùng mục tiêu trên sân (một ô vuông 1m x 1m) và cố gắng đánh 20 cú forehand liên tiếp rơi trong vùng mục tiêu. Đếm xem có bao nhiêu cú rơi trong vùng. Nếu bạn đánh ít hơn 15 cú, nhất quán điểm chạm cần được cải thiện. Sử dụng các phương pháp huấn luyện đã mô tả ở trên để tăng sự nhất quán và lặp lại thử thách để theo dõi sự tiến bộ. Vận động viên tinh hoa có thể đánh 18 đến 20 trên 20 cú vào mục tiêu 1m x 1m từ vạch dưới sân.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

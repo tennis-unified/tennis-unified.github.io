@@ -61,3 +61,10 @@ The most common coaching error is to cue the straight-arm extension while player
 ## Practical Application: "Test the Alignment at the Wall"
 
 Set up two meters from a solid wall. Have the player hit one-handed backhand drives focusing only on maintaining a roughly straight racket-arm line through contact. After 20 balls, measure consistency by counting how many balls land in a one-meter square at the base of the wall. Then switch to a deliberately bent 90° arm and repeat — consistency will drop measurably. The difference in structural transmission is not a theory; it is immediately countable in ball placement.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

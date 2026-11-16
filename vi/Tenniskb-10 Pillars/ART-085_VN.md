@@ -61,3 +61,10 @@ Cái xương bả vai (xương bả vai) đóng vai trò là nền tảng ổn �
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Cái Xương Bả Vai"
 Trước khi giao bóng, chủ động thiết lập cái xương bả vai: kéo nó về sau và xuống, cảm giác nó phẳng vào lồng ngực. Duy trì vị trí này trong giai đoạn nạp, và cho phép xoay lên tự nhiên trong giai đoạn gia tốc. Nếu bạn cảm thấy vai "lên cao" hoặc "ngả về trước", bạn có rối loạn cái xương bả vai cần khắc phục qua bài tập nhắm mục tiêu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

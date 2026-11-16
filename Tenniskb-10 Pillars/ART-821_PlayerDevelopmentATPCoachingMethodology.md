@@ -203,3 +203,10 @@ This approach develops the player's self-awareness and problem-solving ability.
 | Player lacks tactical understanding | Technique-only coaching, no game-based learning | Random shot selection | Introduce game-based learning; TGFU model |
 | Player bored and unmotivated | Excessive drilling, insufficient game play | Reduced practice quality, dropout risk | Increase game-based activities; introduce variety |
 | Player dependent on coach for all decisions | Athlete-centered approach too early, insufficient structure | Overwhelmed, unable to self-manage | Blend directive instruction with guided autonomy; gradual transition |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

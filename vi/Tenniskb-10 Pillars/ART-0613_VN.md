@@ -64,3 +64,10 @@ Volley lob là cú đánh lừa dối tối thượng tại lưới. Hiệu qu�
 ## Ứng Dụng Thực Tế: "Che Bầu Trời"
 
 Khi đánh volley lob, hãy tưởng tượng đang che bầu trời khỏi đối thủ. Mặt vợt mở và nâng bóng lên trên trong một phần giây cuối cùng, vô hình đối với đối thủ. Bông trông giống volley đấm cho đến khi nó lướt qua đầu đối thủ. Sự bất ngờ là vũ khí vĩ đại nhất của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

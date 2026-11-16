@@ -72,3 +72,10 @@ Record strokes in slow motion to:
 
 ## Practical Application: "The Accordion"
 Imagine your body as an accordion: during loading, you expand (extend your limbs), storing energy like a compressed spring. During the forward swing, you contract (retract your limbs), accelerating the rotation like an accordion squeezing shut. At contact, you extend again, releasing the stored energy into the ball. Practice this by performing a groundstroke and consciously feeling the expand-contract-expand pattern. The more you can feel this pattern, the more precisely you can time your peak racket velocity to coincide with ball contact.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+<!-- TAICHIKB-CROSSREF-END -->

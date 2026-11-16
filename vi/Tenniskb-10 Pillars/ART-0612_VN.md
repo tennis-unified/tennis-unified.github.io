@@ -72,3 +72,10 @@ Volley chặn là vũ khí phòng thủ của người chơi lưới chống l�
 ## Ứng Dụng Thực Tế: "Trở Thành Bức Tường"
 
 Hình dung vợt của bạn như một bức tường vững chắc. Quả bóng đến nhanh và nảy ra theo hướng mà bức tường đang đối diện. Công việc duy nhất của bạn là nghiêng bức tường đúng hướng — không vung vợt, không nỗ lực. Tin tưởng vào tốc độ bóng đến để làm công việc.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

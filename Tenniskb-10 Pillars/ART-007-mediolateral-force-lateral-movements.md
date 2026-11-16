@@ -76,3 +76,10 @@ Drills that require rapid lateral responses to visual or auditory cues develop t
 
 ## Practical Application: "Push the Floor Sideways"
 Lateral movement is fundamentally about pushing the floor in the opposite direction you want to go. To move right, push the floor to the left with your left foot. The harder and faster you push sideways, the faster you'll glide laterally. Practice this by standing with feet together and performing small lateral hops, focusing on the feeling of pushing the floor sideways with each hop. Progress to continuous lateral shuffling, concentrating on the sideways push-off with each step. When you reach a wide ball, your lead foot should plant and push the floor in the opposite direction to stop your momentum—like a lateral wall push. This "floor-pushing" mindset transforms lateral movement from a series of steps into a single continuous force application, making your court coverage smoother, faster, and more energy-efficient.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Lateral Line: lateral stability & mediolateral force*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

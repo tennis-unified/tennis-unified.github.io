@@ -60,3 +60,10 @@ Lối chơi lưới trên sân đất nét đòi hỏi điều chỉnh chiến t
 ## Ứng Dụng Thực Tế: "Độ Sâu Hơn Góc Đánh"
 
 Trên sân đất nét, volley sâu là người bạn tốt nhất của bạn. Góc nhọn cho đối thủ thời gian lướt và bắt lại — volley sâu đẩy họ lùi và hạn chế các lựa chọn của họ. Hãy nghĩ về volley sân đất nét như việc "đẩy" đối thủ ra sau đường biên dưới thay vì "đánh góc" bằng góc nhọn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

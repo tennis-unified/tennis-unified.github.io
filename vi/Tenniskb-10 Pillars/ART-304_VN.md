@@ -54,3 +54,10 @@ Huấn luyện chuỗi động năng nâng cao tập trung vào độ chính xá
 ## Ứng Dụng Thực Tế: "Cảm Nhận Roi"
 
 Để phát triển cảm nhận chuỗi động năng, hãy tập vung bóng bóng mờ với tốc độ cực kỳ chậm, tập trung vào cảm giác mỗi đoạn bắt đầu di chuyển chỉ sau khi đoạn trước đã bắt đầu. Bắt đầu với chân sau đẩy, sau đó hông xoay, rồi thân, rồi vai, rồi cánh tay, rồi cổ tay. Ở tốc độ tối đa, trình tự này trở thành một chuyển động nhịp nhàng duy nhất, nhưng bài tập rèn luyện khắc sâu trình tự kích hoạt đúng và cảm giác năng lượng dồn dập từ mặt đất lên đầu vợt.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Động học góc và chuỗi động học tuần tự*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên phân đoạn*
+<!-- TAICHIKB-CROSSREF-END -->

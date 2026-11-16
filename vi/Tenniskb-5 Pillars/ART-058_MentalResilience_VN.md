@@ -53,3 +53,10 @@ Sức khỏe tinh thần và định chuẩn áp lực phải được tích h�
 
 ## Ứng Dụng Thực Tế: "Vận Động Viên Bền Bỉ"
 Vận động viên nên cảm nhận rằng họ là "bền bỉ" và có thể thi đấu dưới áp lực. Vận động viên nên cảm nhận rằng họ đang kiểm soát cảm xúc và có thể quản lý căng thẳng một cách hiệu quả. Đây là mục tiêu cuối cùng của Hệ Thống 5 Cột Trụ: tạo ra một vận động viên hoàn chỉnh, tích hợp, thực hiện một cách không gắng sức ở tiềm năng đỉnh cao của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 22: Chương 22: Tự Kiểm Soát Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch22.html) — *Tự kiểm soát và điều hòa cảm xúc trong thi đấu*
+- [Chương 27: Chương 27: Hiệu Quả Bản Thân, Quan Hệ, và Tập Thể ở Vận Động Viên — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch27.html) — *Hiệu quả bản thân (Self-efficacy) dưới áp lực*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Quản lý căng thẳng thi đấu và bản lĩnh tâm lý*
+<!-- TAICHIKB-CROSSREF-END -->

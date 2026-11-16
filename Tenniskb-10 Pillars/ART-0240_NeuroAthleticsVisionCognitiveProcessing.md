@@ -65,3 +65,10 @@ When making a technical adjustment, conscious processing is required until the a
 
 ## Practical Application: "The Trust Drop"
 When you notice yourself thinking about technique during play, perform a "trust drop": consciously release the technical thought and replace it with a simple outcome focus ("hit it deep" or "smooth"). This deliberate shift from internal to external focus disrupts the conscious processing cycle and restores automatic execution. Practice the trust drop in training until it becomes an automatic response to the first sign of overthinking, allowing you to maintain the fluid, automatic performance that produces your best tennis.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

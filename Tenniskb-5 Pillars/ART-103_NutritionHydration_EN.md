@@ -44,3 +44,9 @@ The 90-minute nutrition and hydration protocol is a more advanced way to improve
 
 ## Practical Application: The "Complete Nutrition & Hydration Producer"
 The athlete should feel that they are "complete" and integrated with the 5-Pillar System. The athlete should feel that the biomechanical, neurological, and tactical systems are working together in harmony. This is the ultimate goal of the 5-Pillar System: to create a complete, integrated athlete who performs effortlessly at their peak potential.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Macronutrient timing & glycogen resynthesis*
+- [Chương 9: Chương 9: Cân Hằng Nội Môi và Những Rối Loạn Trong Quá Trình Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch08.html) — *Hydration, sodium balance & heat stress*
+<!-- TAICHIKB-CROSSREF-END -->

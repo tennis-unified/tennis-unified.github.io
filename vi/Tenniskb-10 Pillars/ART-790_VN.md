@@ -57,3 +57,10 @@ Cách theo dõi đơn giản bao gồm ghi chép thống kê mô hình đà th�
 ## Ứng Dụng Thực Tế: "Mô Hình Phát Triển Từng Set Trong Trận Đấu"
 
 Bắt đầu theo dõi mô hình đà thế trận và hồi phục từng set trong năm trận đấu tiếp theo của bạn. Sử dụng hệ thống đếm đơn giản trên tấm thẻ ghi chú hoặc ứng dụng thống kê quần vợt. Sau mỗi trận đấu, tính phần trăm và so sánh với mục tiêu của bạn (thường là 60% trở lên cho hầu hết các chỉ số). Xác định các tình huống cụ thể mà chỉ số giảm (cuối set, sau các pha bóng dài, dưới áp lực tỷ số) và phát triển tập luyện mục tiêu cho các kịch bản đó. Trong mùa giải, theo dõi xem chỉ số có cải thiện và tương quan với chiến thắng trong trận đấu hay không.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Động lực học tuyến tính, GRF và xung lượng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+<!-- TAICHIKB-CROSSREF-END -->

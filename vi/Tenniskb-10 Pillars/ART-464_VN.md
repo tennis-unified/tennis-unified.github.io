@@ -50,3 +50,10 @@ Người chơi nên kết hợp các bài tập này vào quy trình tập luy�
 
 ## Ứng Dụng Thực Tế: "Tập Luyện Volley Thấp"
 Đứng ở lưới và yêu cầu đối tác cung cấp quả bóng thấp vào phía bàn tay của bạn. Tập luyện đánh mười cú volley bàn tay dưới cao, tập trung vào việc hạ thấp người, mở mặt vợt, và sử dụng chạm nhẹ nhàng. Đếm số volley rào vào sân và số volley giữ thấp. Theo dõi tiến trình qua các buổi tập để đảm bảo volley thấp đang phát triển đúng cách.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

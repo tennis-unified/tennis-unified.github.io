@@ -52,3 +52,10 @@ If you have asthma, develop a written asthma action plan with your physician and
 
 ## Practical Application: "Breathe Easy, Play Strong"
 If you have asthma, develop a written asthma action plan with your physician and share it with your coach and training partners. Always carry your inhaler courtside and use it 15-20 minutes before match play as prescribed. Incorporate a high-intensity interval warm-up to induce the refractory period before competition. Be aware of environmental triggers and take precautions on cold, dry, or high-pollution days. Remember: asthma is a manageable condition, not a limitation. With proper management, you can compete at any level and achieve your full potential.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+<!-- TAICHIKB-CROSSREF-END -->

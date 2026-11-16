@@ -59,3 +59,10 @@ Moment quán tính quanh trục dọc đứng qua cán:
 
 ## Ứng Dụng Thực Tế: "Cân Bằng Vợt"
 Chọn vợt với trọng lượng vung phù hợp tốc độ vung của bạn. Nếu bạn có vung nhanh, tấn công, chọn trọng lượng vung thấp để tối đa tốc độ vợt. Nếu bạn có vung chậm, kiểm soát hơn, chọn trọng lượng vung cao để tối đa sức mạnh. Vợt lý tưởng là vợt bạn có thể vung tốc độ tối đa trong khi vẫn giữ kiểm soát và chiều thoáng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -215,3 +215,10 @@ Create a simple weekly load tracking system:
 | Recurring injuries mid-season | Training load spikes, ACWR exceeding 1.5 | Soft tissue injuries, time loss | Implement ACWR monitoring; ensure gradual load increases |
 | Cumulative fatigue late in season | Insufficient recovery weeks, too many consecutive tournaments | Burnout, declining performance | Schedule recovery weeks; reduce tournament volume; prioritize quality |
 | Jet lag affecting performance | Poor travel management, no jet lag protocol | Slow starts after travel | Implement jet lag protocol; arrive earlier; adjust sleep schedule |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+<!-- TAICHIKB-CROSSREF-END -->

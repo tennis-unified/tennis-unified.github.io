@@ -179,3 +179,10 @@ AI algorithms identify patterns in:
 ## Practical Application: "Let Data Drive Decisions"
 
 After your next match (or even practice session), seek out any available data: serve speed from the scoreboard, first serve percentage you counted yourself, or even just a rough count of winners and errors by shot type. The act of tracking and analyzing even basic data changes how you think about your game. You begin to see patterns you would otherwise miss: "I hit 80% of my second serves to the backhand, but won only 40% of those points." This kind of insight, grounded in data, is far more actionable than vague feelings about your game. The technology exists to provide this at every level — use it.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

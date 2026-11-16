@@ -58,3 +58,10 @@ Peak wrist activation occurs at 220 to 250 milliseconds, with the wrist flexion/
 ## Practical Application: "The Muscle Wave"
 
 Practice shadow swings with extreme slowness, consciously activating each muscle group in sequence. Begin by pushing your feet into the ground, feel your hips rotate, then your trunk, then your shoulder, then your arm, then your wrist. At full speed, this sequence occurs in 0.2 to 0.3 seconds, but the slow practice ingrains the correct activation order and the feeling of energy flowing from the ground through each segment to the racquet head.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Muscular system: prime movers & stabilizers*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Muscular mechanics: eccentric/concentric & force-velocity*
+<!-- TAICHIKB-CROSSREF-END -->

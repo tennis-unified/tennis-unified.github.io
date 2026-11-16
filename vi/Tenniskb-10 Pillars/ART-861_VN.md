@@ -171,3 +171,10 @@ Hoàn thành 3-4 vòng với 2 phút nghỉ giữa các vòng. Tổng thời gia
 | Phản ứng chậm với bóng đối thủ | Thiếu huấn luyện nhanh nhẩy phản ứng | Đến muộn, sai hướng | Bài nhanh nhẩy phản ứng; chạy vị trí ảo; phản ứng máy bóng |
 | Mệt mỏi tốc độ trong trận | Thiếu sức bền tốc độ | Giảm bao phủ sân ở set sau | Huấn luyện chạy lặp lại; chu kỳ sức bền tốc độ |
 | Giảm tốc kém hiệu quả | Thiếu huấn luyện giảm tốc | Mất thăng bằng, lỗi khi bóng rộng | Bài giảm tốc; huấn luyện sức mạnh lập thể |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Tập luyện plyometric và chu kỳ SSC*
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Đường Bên: ổn định ngang và lực sang bên*
+<!-- TAICHIKB-CROSSREF-END -->

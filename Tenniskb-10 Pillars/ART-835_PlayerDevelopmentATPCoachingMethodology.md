@@ -203,3 +203,10 @@ Have the player maintain a focus log during training and matches:
 | Distraction by crowd or opponent | Insufficient distraction training, emotional reactivity | Lost focus, reduced performance | Distraction training; emotional regulation techniques; focus routines |
 | Ruminating on past errors | Poor error recovery skills, internal focus | Compounding errors, lost points | Error recovery routine training; 15-second rule; present-moment focus |
 | Outcome-focused during crucial points | Insufficient process-focused training, pressure anxiety | Choking, performance decline | Process cue development; breathing techniques; pressure training |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -147,3 +147,10 @@ Vận động viên với nhiều chấn động não (3+) nên thảo luận s�
 ## Ứng Dụng Thực Tế: "Khi Nghi Ngờ, Hãy Cho Ngồi Ngoài"
 
 Quy tắc quan trọng nhất trong quản lý chấn động não là ra quyết định thận trọng. Nếu bạn nghi ngờ một vận động viên bị chấn động não — ngay cả khi triệu chứng có vẻ nhẹ — hãy loại họ khỏi thi đấu ngay lập tức. Không trận đấu, giải đấu hoặc buổi tập nào đáng để mạo hiểm sức khỏe não dài hạn. Hãy nhớ rằng vận động viên có thể báo cáo thiếu triệu chứng do áp lực cạnh tranh. Hãy là người ủng hộ an toàn: khi nghi ngờ, hãy cho ngồi ngoài. Hồi phục hoàn toàn luôn có thể với quản lý đúng cách, nhưng trở lại sớm có thể có hậu quả tàn khốc.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

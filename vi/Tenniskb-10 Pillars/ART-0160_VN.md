@@ -59,3 +59,10 @@ Trước khi cho phép người chơi trượt trong trận đất trên sân c�
 1. Bước 1 — Kiểm tra ma sát. Trượt có chủ đích ở tốc độ thấp (khoảng 1.5 m/s) và cảm nhận sức cản. Bề mắt nên cung cấp ma sát mượt mà, có thể dự đoán — không dính, không trơn.
 2. Bước 2 — Kiểm tra mắt cá. Trượt ở tốc độ vừa (2.5 m/s) và kiểm tra mắt cá nằm trong 5-10° trung suất. Bất kỳ valgus nào vượt quá điều này nghĩa là người chơi không đủ ổn định để trượt trên bề mắt này.
 3. Bước 3 — Kiểm tra tốc độ. Trượt ở tốc độ gần thi đấu (3.0-3.5 m/s) và xác minh trượt có kiểm soát và cú đẩy ra sạch sẽ. Bất kỳ mất kiểm soát nào nghĩa là tốc độ quá cao cho bề mắt này.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

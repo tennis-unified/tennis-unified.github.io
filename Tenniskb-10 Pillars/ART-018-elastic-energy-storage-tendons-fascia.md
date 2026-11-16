@@ -134,3 +134,10 @@ Asymmetric fascia stiffness can create movement imbalances and increase injury r
 
 ## Practical Application: "Feel the Rebound"
 Stand with your feet together and perform a small vertical jump. Notice that you naturally bend your knees before jumping—you're pre-stretching your tendons to store elastic energy. Now try jumping without bending your knees (from a completely straight-legged position). You'll notice the jump is much weaker because you're not storing elastic energy. This simple experiment demonstrates the power of elastic energy storage. In tennis, the same principle applies to every movement: the deeper and more controlled your loading (knee bend, trunk rotation), the more elastic energy you store—and the more powerful your movement becomes. Next time you practice, focus on the feeling of "loading the spring" during your loading phase and "releasing the spring" during your forward swing. The rebound you feel is your tendons and fascia returning the energy you stored during loading. The more you can feel this rebound, the more efficiently you're using your body's natural elastic energy systems.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Fascial elastic energy storage & recoil*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Myofascial force transmission across segments*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -68,3 +68,10 @@ During single-leg loading, the swing-side pelvis must be actively held level by 
 ## Practical Application: "Keep the Bowl Level, Point the Rim"
 
 Give the player one image: **the pelvis is a bowl of water — carry it level, and aim its rim where the ball is going.** At the next session, run the belt-line audit on ten open-stance forehands and count the spills; most players are surprised to find three or four. Then spend five minutes on single-leg turntable holds, feeling the crest line stay level while the pelvis rotates — the exact skill the stroke demands. Finish with shot-line squaring: ten shadow strokes frozen at the finish, navel on the rope and band level, then ten live balls with the coach calling "level" or "spill." The player whose bowl stays level delivers the full harvest of the legs to the racket — and discovers that shots which felt weak were never weak at the source, only spilled in transit.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

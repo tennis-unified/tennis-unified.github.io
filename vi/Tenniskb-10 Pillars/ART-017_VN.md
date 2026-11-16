@@ -138,3 +138,10 @@ Khả năng SSC cải thiện với sự trưởng thành và huấn luyện. V�
 
 ## Ứng Dụng Thực Tế: "Cái Dây Chun"
 Cơ và gân bạn hoạt động như dây chun: khi bạn kéo giãn chúng (nạp), chúng lưu trữ năng lượng đàn hồi; khi bạn thả chúng (vung về phía trước), chúng bật ngược với lực gia tăng. Chìa khóa là cú bật phải xảy ra ngay sau khi kéo giãn — bất kỳ độ trễ nào cho phép dây chun mất căng. Thực hành bài tập đơn giản này: đứng ở tư thế sẵn sàng và thực hiện cong gối nhanh (kéo giãn dây chun), sau đó ngay lập tức duỗi gối và đẩy ra khỏi đất (giải phóng dây chun). Đo thời gian bàn chân bạn ở trên đất trong trình tự kéo giãn-giải phóng. Vận động viên hàng đầu đạt thời gian tiếp xúc đất dưới 200 mili giây. Hãy cố gắng làm trình tự kéo giãn-giải phóng của bạn nhanh nhất có thể, giảm thiểu thời gian giữa cong và duỗi. Khi bạn làm được điều này với đối tác喂 bóng, bạn sẽ cảm nhận cách kéo giãn trước của chân thêm "sự bật ngược" cho chuyển động mà không thể có từ khởi động đứng yên. Sự bật ngược này là SSC làm việc cho bạn — và đó là bí mật đằng sau chuyển động bùng nổ của vận động viên tennis hàng đầu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Dự trữ và hồi phục năng lượng đàn hồi mô mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Cơ học co cơ: lệch tâm/đồng tâm và lực–vận tốc*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

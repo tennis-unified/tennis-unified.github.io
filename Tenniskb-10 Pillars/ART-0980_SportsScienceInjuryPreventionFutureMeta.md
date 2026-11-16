@@ -42,3 +42,10 @@ Selecting children for tennis by DNA would be wrong even if it worked — and it
 
 ## Practical Application: "Genes Load the Racket, Practice Swings It"
 Genetics deals the cards; training, coaching, and character play the hand. Every serious tennis program should treat DNA as irrelevant to selection and sacred as data — never collected casually, never used to sort children. The practical takeaway for players and parents is liberating: no test can tell you what you will become, which means the only variables fully in your control — the quality of your practice, your sleep, your resilience — are exactly the ones that matter most.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Energy systems for tennis conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

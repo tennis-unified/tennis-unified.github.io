@@ -52,3 +52,10 @@ Cú smash khó thực hiện hơn ở độ cao vì: (1) quả bóng di chuyển
 ## Ứng Dụng Thực Tế: "Sâu Hơn, Ngắn Hơn, Chặt Hơn"
 
 Ở độ cao: (1) đấu sâu hơn ở lưới để có nhiều thời gian phản xạ hơn, (2) sử dụng backswing ngắn hơn để phản ứng nhanh hơn, (3) duy trì lực cầm vợt chặt hơn để kiểm soát bóng. Quả bóng nhanh hơn đòi hỏi phản ứng nhanh hơn và đơn giản hơn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -37,3 +37,10 @@ Trình tự này đảm bảo năng lượng chảy từ khối lượng lớn n
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Khung Thép"
 Tại thời điểm va chạm, vận động viên nên cảm thấy như một khung thép. Không có sự "cho đi" hay "nảy" trong các khớp. Năng lượng của va chạm nên có cảm giác như đi thẳng qua cơ thể và vào quả bóng, thay vì bị cơ thể hấp thụ. Đây là mục tiêu cuối cùng của hiệu suất chuỗi động học.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Cấu Trúc và Chức Năng Cơ Bản của Các Khớp Người (Basic Structure and Function of Human Joints)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch02-cau-truc-va-chuc-nang-co-ban-cua-cac-khop.html) — *Vị thế khóa khớp (close-packed) và lỏng khớp*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Động học và thẳng hàng các khớp chi trên*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Tránh khóa khớp quá mức và chấn thương quá tải*
+<!-- TAICHIKB-CROSSREF-END -->

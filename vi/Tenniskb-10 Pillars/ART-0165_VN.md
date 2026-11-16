@@ -74,3 +74,10 @@ Chạy một buổi kiểm tra 20 phút thay thế ngưỡng sách giáo khoa b�
 4. **Kiểm tra chịu áp lực.** Bóng chuyền độ rộng ngẫu nhiên, sau đó trận đấu hạn chế, sau đó set mệt. Ngưỡng sống sót cả ba là ngưỡng thực của người chơi.
 
 Mục tiêu không phải là quy tắc đúng — mà là sự vắng mặt của sự cân nhắc. Người chơi đã tìm thấy hai mét của riêng mình không bao giờ suy nghĩ về số nữa; số đúng tự tham gia.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

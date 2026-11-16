@@ -108,3 +108,10 @@ Sân cứng là bề mặt phổ biến nhất trên tour ATP, tổ chức phầ
 | Lối chơi chuyển tiếp yếu | Huấn luyện lối chơi lưới không đủ | Mất cơ hội, dự đoán được | Bài tập chơi chuyển tiếp; tập cú đánh tiến cận |
 | Giao bóng thiếu đa dạng | Một loại giao bóng duy nhất | Đối thủ điều chỉnh và trả bóng hiệu quả | Phát triển tất cả loại giao bóng; tập vị trí |
 | Cú đánh mặt đất không nhất quán | Chuẩn bị kém, tiếp xúc muộn | Lỗi dưới áp lực | Bài tập chuẩn bị; nhất quán điểm tiếp xúc |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

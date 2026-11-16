@@ -78,3 +78,10 @@ Hãy đưa người chơi một hình ảnh duy nhất: **đáp chân với thâ
 3. **Bài tập đổi hướng.** Người chơi đáp chân lệch về một bên; HLV hô "bên kia" vào phút chót, và người chơi phải đổi hướng trong vòng 100-150 ms. Bài này rèn khả năng thu hồi — thứ làm cho sự nghiêng lệch trở nên an toàn.
 
 Người chơi đáp chân nghiêng lệch không phán đoán giỏi hơn — họ đơn giản là không bao giờ đóng khoản thuế 30-80 ms mà những người đáp đối xứng phải trả trong mọi bước chân đầu tiên.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

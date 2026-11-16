@@ -173,3 +173,10 @@ Tập luyện nên được cấu trúc theo chu kỳ (chu kỳ vi mô, chu kỳ
 ## Ứng Dụng Thực Tế: "Phát Triển Con Người, Không Chỉ Vận Động Viên"
 
 Mô hình LTAD không chỉ về việc tạo ra vận động viên tennis đỉnh cao — nó về việc phát triển các vận động viên suốt đời có sức khỏe, năng lực thể chất. Ở mỗi giai đoạn, ưu tiên sự phát triển tổng thể của trẻ: năng lực thể chất, tình yêu vận động, sức khỏe xã hội và cảm xúc, và tiềm năng dài hạn. Những vận động viên đạt đến trình độ cao nhất không phải lúc nào cũng là những người tập nhiều nhất từ sớm — họ là những người phát triển toàn diện nhất, bền vững nhất và vui vẻ nhất.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Hệ thống năng lượng cho thể lực quần vợt*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

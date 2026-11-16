@@ -145,3 +145,10 @@ Autonomy-supportive coaching addresses all three needs:
 ## Practical Application: "Feedback Is a Gift — Wrap It Well"
 
 Every feedback interaction is an opportunity to either build or undermine the player's development. Before delivering feedback, ask three questions: (1) Is this information the player needs right now? (2) Is my tone supportive and respectful? (3) Have I provided enough positive reinforcement to maintain confidence? The best coaches deliver feedback that is specific, actionable, and delivered with genuine care for the player's growth. Remember: the player is not a problem to be fixed — they are a person to be developed.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

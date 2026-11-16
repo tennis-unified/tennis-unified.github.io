@@ -154,3 +154,10 @@ The hip joint is central to tennis performance, serving as the primary link in t
 | Gluteal inhibition | Prolonged sitting, poor activation | Reduced power, hamstring/lower back compensation | Glute activation exercises; glute bridge; clamshell |
 | Hip pain during rotation | Labral tear, impingement | Pain, reduced range of motion | Medical assessment; hip mobility; technique modification |
 | Limited lateral movement | Hip abductor weakness, poor mobility | Reduced court coverage | Lateral band walk; hip abductor strengthening; mobility work |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+<!-- TAICHIKB-CROSSREF-END -->

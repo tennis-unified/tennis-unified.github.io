@@ -68,3 +68,10 @@ Người chơi nên kết hợp các bài tập này vào quình luyện tập t
 
 ## Ứng Dụng Thực Tế: "Đánh Dùi Tiến Lên"
 Yêu cầu một đối tác ném bóng vào phía backhand của bạn từ trong vạch gôn. Luyện tập đánh dùi tấn công và lập tức tiến về lưới. Tập trung vào việc tạo ra dùi lướt thấp xuyên sân, giúp bạn đến lưới trước khi đối thủ kịp phản ứng. Theo dõi tiến trình qua các buổi luyện để đảm bảo dùi tấn công đạt hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

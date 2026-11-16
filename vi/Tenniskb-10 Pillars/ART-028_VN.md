@@ -129,3 +129,10 @@ Bài tập duy trì phạm vi chuyển động vai:
 
 ## Ứng Dụng Thực Tế: "Cái Nứt Của Con Roi"
 Xoay trong vai trong serve giống như cái nứt của con roi — đó là chuyển động cuối cùng, nhanh nhất tạo ra hiệu ứng mạnh nhất. Cũng như đầu con roi vượt tốc độ âm thanh, xoay trong vai của bạn đạt tốc độ góc cao nhất trong toàn bộ cơ thể. Để tối đa hóa hiệu ứng này, hãy tập trung vào giai đoạn nạp: nạp vai tối đa trong tư thế trophy, cảm nhận căng ở ngực và vai trước. Sau đó, trong giai đoạn gia tốc, để vai bật về trước bung nổ — đừng cố kiểm soát nó, để năng lượng đàn hồi làm việc. Càng nhanh bạn thả (giải phóng năng lượng lưu trữ), vai bạn xoay càng nhanh — và tốc độ đầu vợt càng nhanh. Thực hành bằng cách thực hiện vung bóng serve có dừng với tập trung xoay ngoài tối đa khi nạp và xoay trong bung nổ, không kiểm soát khi gia tốc. Cảm giác nên giống như nứt con roi: căng đầy đủ theo sau bởi bật ngược mạnh mẽ. Cái bật ngược nứt roi này — đợt bật ngược cuối cùng của tốc độ — là đặc trưng của serve hàng đầu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

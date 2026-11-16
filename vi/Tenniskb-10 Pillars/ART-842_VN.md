@@ -229,3 +229,10 @@ Trước mùa nghỉ, xem xét:
 | Điểm yếu kỹ thuật vẫn tồn tại trong mùa giải | Huấn luyện kỹ thuật mùa nghỉ không đủ | Lỗi lặp lại dưới áp lực | Ưu tiên phát triển kỹ thuật trong mùa nghỉ; khối kỹ thuật chuyên dụng |
 | Tay vợt bước vào mùa giải không có chuẩn bị | Lập kế hoạch mùa nghỉ kém, trận thực hành không đủ | Khởi đầu chậm, thua sớm trong giải đấu | Triển khai chương trình mùa nghỉ có cấu trúc với cường độ tăng dần |
 | Kiệt sức từ mùa giải dài | Phục hồi mùa nghỉ không đủ | Giảm động lực, mệt mỏi tinh thần | Ưu tiên phục hồi tinh thần; bao gồm nghỉ ngơi và hoạt động ngoài tennis |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Hệ thống năng lượng cho thể lực quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

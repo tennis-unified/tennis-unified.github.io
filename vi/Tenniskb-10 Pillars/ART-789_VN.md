@@ -57,3 +57,10 @@ Cách theo dõi đơn giản bao gồm ghi chép thống kê phân tích tâm l�
 ## Ứng Dụng Thực Tế: "Đo Lường Tâm Lý Trận Đấu"
 
 Bắt đầu theo dõi phân tích tâm lý thi đấu qua chuỗi điểm thắng/thua trong năm trận đấu tiếp theo của bạn. Sử dụng hệ thống đếm đơn giản trên tấm thẻ ghi chú hoặc ứng dụng thống kê quần vợt. Sau mỗi trận đấu, tính phần trăm và so sánh với mục tiêu của bạn (thường là 60% trở lên cho hầu hết các chỉ số). Xác định các tình huống cụ thể mà chỉ số giảm (cuối set, sau các pha bóng dài, dưới áp lực tỷ số) và phát triển tập luyện mục tiêu cho các kịch bản đó. Trong mùa giải, theo dõi xem chỉ số có cải thiện và tương quan với chiến thắng trong trận đấu hay không.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+<!-- TAICHIKB-CROSSREF-END -->

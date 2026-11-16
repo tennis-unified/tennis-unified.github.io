@@ -61,3 +61,10 @@ Practice recovery from induced errors. Have a coach make unfair calls or create 
 
 ## Practical Application: "The Pause and Check"
 Before every shot, build in a micro-pause (50-100 ms) to verify that the shot you are about to execute is still the correct one. This pause allows the inhibitory system to veto a planned shot if new information (e.g., unexpected ball bounce, opponent movement) has arrived. The pause is so brief that it does not slow the swing but provides a critical checkpoint for adaptive decision-making. Practice this pause deliberately in training until it becomes an automatic part of your preparation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

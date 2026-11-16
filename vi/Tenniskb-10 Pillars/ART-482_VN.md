@@ -45,3 +45,10 @@ Người chơi gặp khó khăn khi đứng sau đường cơ thường được
 
 ## Ứng Dụng Thực Tế: "Bài Tập Phía Sau Đường Cơ"
 Yêu cầu một người bạn bóng sâu, nảy cao vào phía backhand của bạn. Tập luyện di chuyển ra sau, hạ thấp người và đánh các cú phòng thủ từ phía sau đường cơ. Theo dõi có bao nhiêu cú đánh rơi trong sân và có bao nhiêu cú giúp giành thời gian phục hồi. Bài tập này phát triển các kỹ năng cần thiết để chơi hiệu quả phía sau đường cơ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

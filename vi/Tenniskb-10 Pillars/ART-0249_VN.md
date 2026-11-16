@@ -44,3 +44,10 @@ Không phải thực hành nào cũng như nhau. Thực hành có chủ đích n
 
 ## Ứng Dụng Thực Tế: "Mô Hình Chuyên Gia"
 Nghiên cứu video của các tay vợt tennis đẳng cấp và phân tích hành vi nhận thức - nhận thức của họ. Chú ý khi nào họ khởi động chuyển động, họ hướng nhìn về đâu, và họ sử dụng thông tin ngữ cảnh như thế nào. Sau đó, so sánh hành vi của chính bạn với mô hình chuyên gia này. Xác định các khác biệt cụ thể và thiết kế huấn luyện để lấp đầy các khoảng trống. Cách tiếp cận phát triển dựa trên mô hình này đảm bảo rằng bạn đang tập luyện các kỹ năng cụ thể phân biệt trình độ chuyên gia thay vì các cải tiến chung chung.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

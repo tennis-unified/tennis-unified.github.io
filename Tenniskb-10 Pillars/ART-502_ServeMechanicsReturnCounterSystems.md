@@ -78,3 +78,10 @@ Many professional players use a modified platform stance where the back foot sli
 ## Practical Application: "The Stance Experiment"
 
 Spend one practice session hitting 50 serves with platform stance and 50 with pinpoint. Record serve speed, first-serve percentage, and self-assessed comfort for each. The data will reveal which stance produces better results for your specific body mechanics. Many players discover they have been using a stance that does not optimize their natural movement patterns. Let the data, not coaching dogma, drive your choice.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -118,3 +118,10 @@ Tự đánh giá (1-5) trên mỗi kỹ năng giao tiếp:
 | Người chơi thiếu động lực | Giao tiếp động lực hóa kém, quá chỉ trích | Nỗ lực giảm, rủi ro bỏ cuộc | Nhấn mạnh động lực nội tại; ăn mừng nỗ lực; kết nối với mục tiêu |
 | Người chơi không tin tưởng huấn luyện viên | Giao tiếp kém, không nhất quán | Giảm hiệu quả huấn luyện | Xây dựng tin tưởng thông qua tính nhất quán; lắng nghe tích cực; trung thực |
 | Rào cản văn hóa hoặc ngôn ngữ | Không đủ thích ứng | Hiểu lầm, thất vọng | Tìm hiểu về sự khác biệt văn hóa; thích ứng phong cách giao tiếp; sử dụng thông dịch viên nếu cần |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

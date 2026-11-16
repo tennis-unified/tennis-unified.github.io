@@ -55,3 +55,10 @@ Cần tích hợp các bài tập này vào quình huấn luyện thường xuy�
 
 ## Ứng Dụng Thực Tế: "Bài Tập Tấn Công"
 Nhờ đối tác chuyền bóng vào phía backhand của bạn, thay đổi độ sâu. Thực hành tấn công bất kỳ quả bóng nào cách baseline trong phạm vi 3 mét, tập trung vào việc tiến về phía trước và đánh tấn công. Đếm số điểm bạn giành được bằng cú tấn công backhand. Theo dõi tiến trình qua các buổi huấn luyện để đảm bảo cú tấn công đang phát triển đúng hướng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

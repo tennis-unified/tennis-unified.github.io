@@ -123,3 +123,10 @@ Landing off-balance delays recovery movement and leaves you vulnerable to any re
 ## Practical Application: "The Cone Recovery"
 
 Place a cone in the optimal recovery position for each serve type. After each serve, sprint to the cone and assume the ready position. Time yourself — aim for under 2 seconds from landing to ready position. This drill develops the habit of immediate recovery movement and helps you find the optimal position for each serve type.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

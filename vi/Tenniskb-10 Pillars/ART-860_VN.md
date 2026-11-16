@@ -201,3 +201,10 @@ Tạo báo cáo kiểm tra thể lực chuẩn:
 | Thay đổi hướng kém | Huấn luyện linh hoạt không đủ | Vận động không hiệu quả, chấn thương | Bài tập thang linh hoạt; bài tập thay đổi hướng |
 | Tốc độ giao bóng thấp | Sức bật xoay và đẩy chân không đủ | Giao bóng dễ đoán, dễ trả | Olympic lifts; plyometric; huấn luyện sức bật xoay |
 | Chấn thương tái phát trong trận | Chất lượng vận động kém, suy kiệt do mệt | Mất thời gian, giảm thành tích | Sàng lọc vận động; bài tập sửa chữa; quản lý tải |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Thăng bằng động và kiểm soát hướng*
+<!-- TAICHIKB-CROSSREF-END -->

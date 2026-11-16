@@ -58,3 +58,10 @@ Người chơi tạo ra xoáy trên nặng đặc biệt cần độ chính xác
 ## Ứng dụng thực hành: "Kiểm tra viền vợt"
 
 Tại tư thế chuẩn bị và tại thời điểm chạm bóng, ý thức kiểm tra định hướng viền dẫn hướng vợt của bạn. Nó có vuông góc với mục tiêu của bạn không? Sử dụng một điểm tham chiếu trực quan (một đường trên sân hoặc mục tiêu) để đánh giá căn góc của bạn. Theo thời gian, hình thành khả năng thụ cảm tư thế cho phép bạn cảm nhận được căn góc viền vợt mà không cần xác nhận bằng mắt, tự động thực hiện các điều chỉnh vi mô trước khi chạm bóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

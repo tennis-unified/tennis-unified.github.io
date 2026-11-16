@@ -164,3 +164,10 @@ Sự tiến hóa công nghệ vợt quần vợt — từ khung gỗ nặng sang
 ## Ứng Dụng Thực Tế: "Phù Hợp Vợt Với Tay Vợt"
 
 Ghé thăm cửa hàng chuyên quần vợt và dùng thử vợt trước khi mua. Hầu hết cửa hàng cung cấp chương trình dùng thử nơi bạn có thể thử các khung khác nhau trong vài ngày. Chú ý đến cảm giác cánh tay sau buổi tập với mỗi vợt — bất kỳ khó chịu nào ở khuỷu tay hoặc vai là dấu hiệu cảnh báo khung quá cứng. Vợt tốt nhất không phải là vợt được tay vợt chuyên nghiệp yêu thích sử dụng; đó là vợt cho phép bạn chơi tốt nhất mà không đau. Cơ thể bạn sẽ cho bạn biết vợt nào phù hợp — hãy lắng nghe nó.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

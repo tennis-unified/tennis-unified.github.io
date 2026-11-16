@@ -127,3 +127,10 @@ Tennis authorities are increasingly concerned about serve dominance:
 ## Practical Application: "The Historical Study"
 
 Watch videos of serves from different eras — 1970s wooden racket serves, 1980s graphite serves, 1990s Sampras, 2000s Federer, 2020s Alcaraz. Note how the technique has evolved: higher contact points, more leg drive, greater spin, more tactical variation. Understanding this evolution helps you see where your own technique fits and what modern elements you should incorporate.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

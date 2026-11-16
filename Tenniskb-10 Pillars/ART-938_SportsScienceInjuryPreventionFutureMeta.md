@@ -118,3 +118,10 @@ Arrive at the court 20 minutes before your match and perform this routine. It ta
 3. **Tennis-specific movement** (2 minutes): Split steps, lateral shuffles, and short accelerations at 70-80% effort.
 
 This routine increases blood flow, raises muscle temperature, activates the nervous system, and prepares the joints for the full range of motion required in a match. It is not optional. The players who move fluidly, serve freely, and recover well between points are almost always the ones who prepare their bodies properly before stepping on court.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Muscular system: prime movers & stabilizers*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

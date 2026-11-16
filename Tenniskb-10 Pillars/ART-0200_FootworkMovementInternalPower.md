@@ -85,3 +85,10 @@ Run the pillar as a six-week integration cycle. **Week 0:** film the scorecard a
 ## The Pillar's Thesis
 
 Across one hundred articles, Pillar 2 reduces to a single idea: **movement is a continuous energy conversation with the court.** Timing borrows information; internal power borrows the ground; geometry borrows the court's angles; and recovery repays every debt so the next stroke begins rich rather than poor. The player who internalizes this stops thinking of footwork as transportation between shots and starts treating it as the engine of the shots themselves — the ground is the racket's other face.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+<!-- TAICHIKB-CROSSREF-END -->

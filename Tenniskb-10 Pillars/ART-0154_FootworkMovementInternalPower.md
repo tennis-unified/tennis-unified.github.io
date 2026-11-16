@@ -75,3 +75,10 @@ Building Mushin for footwork requires a specific practice architecture:
 ## Practical Application: "The Silent Count"
 
 At the start of every footwork session, run three minutes of shadow movement with no ball, no coach, no verbal cues. The player moves laterally, forward, backward, through all the patterns they have learned, in complete silence. No self-talk. No correction. Just movement. If the player notices themselves thinking about mechanics, they redirect attention to the sound of their own feet on the court. This drill trains the transition from conscious monitoring to subcortical execution — the neural signature of Mushin. Over weeks, the player learns to access the state more quickly and reliably, and it begins to carry over into points.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

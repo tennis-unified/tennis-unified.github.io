@@ -72,3 +72,10 @@ Correction strategies for off-center hits include:
 ## Practical Application: "The Contact Awareness Drill"
 
 During practice, after each shot, identify where on the string bed the ball contacted based on the sound and feeling. Tip hits produce a high-pitched "tinny" sound; throat hits produce a "thudding" sound; edge hits produce a harsh "rattling" sound. Sweet spot hits produce a clean "pop." This awareness helps you self-correct your contact point consistency and reduce off-center hits.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -62,3 +62,10 @@ Tránh tuân thủ cứng nhắc vào các lối tắt. Người chơi giỏi nh
 ## Ứng Dụng Thực Tế: "Kiểm Toán Lối Tắt Tư Duy"
 
 Sau mỗi trận đấu, hãy tiến hành một kiểm toán lối tắt tư duy: xác định những phím tắt tinh thần bạn đã sử dụng trong trận và đánh giá hiệu quả của chúng. Lối tắt nào dẫn đến điểm ăn? Lối tắt nào dẫn đến lỗi? Tình huống nào đòi hỏi phải ghi đè lên lối tắt? Việc xem xét sau trận này tinh chỉnh thư viện lối tắt của bạn, đảm bảo các phím tắt tinh thần dựa trên bằng chứng thay vì thói quen hoặc thiên lệch. Theo thời gian, kiểm toán này tạo ra một bộ lối tắt cá nhân hóa phản ánh điểm mạnh của bạn và thực tế chiến thuật của lối chơi mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

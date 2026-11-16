@@ -112,3 +112,10 @@ Lịch thi đấu tennis là một vòng xoáy toàn cầu không ngừng: 30+ t
 
 ## Ứng Dụng Thực Tế: "Người Du Mục Chuyên Nghiệp"
 Người chơi hàn lâm phàn nàn du lịch. Chuyên nghiệp *hệ thống hóa* nó. Giải đấu không bắt đầu Thứ Hai; nó bắt đầu từ khoảnh khắc bạn đóng cửa nhà. Vận động viên đến Thứ Ba "sẵn sàng chơi" thắng vận động viên đến Thứ Ba "phục hồi sau du lịch". Xây dựng pháo đài di động. Sân đấu giống nhau mọi nơi; sự chuẩn bị cũng phải như vậy.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Dinh dưỡng thể thao và cân bằng năng lượng*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

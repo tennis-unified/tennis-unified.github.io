@@ -33,3 +33,10 @@ status: published
 
 ## Ứng Dụng Thực Tế: "Thói Quen Đúng Y"
 Thực hiện biến thể đúng y 2 lần mỗi tuần: (1) 3 loạt 3 hang power clean, (2) 3 loạt 3 hang power snatch, (3) 3 loạt 3 push press. Tập trung vào tốc độ ý chí tối đa trong giai đoạn ba duỗi. Sức mạnh bùng nổ phát triển qua các đúng này chuyển giao trực tiếp đến sức mạnh giao bóng và cú đánh nền của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

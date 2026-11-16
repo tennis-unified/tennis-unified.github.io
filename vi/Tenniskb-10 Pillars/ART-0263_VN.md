@@ -58,3 +58,10 @@ Mặc dù thực hành có chủ đích là tập trung, nó nên bao gồm đ�
 
 ## Ứng Dụng Thực Tế: "Kế Hoạch Thực Hành Có Chủ Đích"
 Trước mỗi phiên tập, viết một kế hoạch thực hành có chủ đích: (1) mục tiêu cụ thể cho phiên, (2) các nhiệm vụ được thiết kế để đạt mục tiêu, (3) cơ chế phản hồi, (4) tiêu chí thành công. Sau phiên, đánh giá xem bạn có đạt mục tiêu không và điều chỉnh kế hoạch cho phiên sau. Cách tiếp cận có cấu trúc này biến thực hành từ hoạt động ngẫu nhiên thành một chương trình có hệ thống cho sự cải thiện, đảm bảo rằng mỗi phiên đóng góp cho phát triển kỹ năng dài hạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -100,3 +100,10 @@ Cả hai chi làm việc cùng nhau:
 
 ## Ứng Dụng Thực Tế: "Vũ Điệu Chéo"
 Hãy tưởng tượng cơ thể bạn thực hiện một vũ điệu chéo: khi tay phải vung về trước, chân trái đẩy về sau (và ngược lại). Phối hợp chéo này là bản chất của hiệu ứng serape. Luyện tập bằng cách thực hiện cú đáy sân và cảm nhận kết nối chéo giữa tay đập và chân đẩy. Trong cú kiến, cảm nhận tay phải gia tốc về trước trong khi chân trái đẩy mạnh về sau. Vũ điệu chéo này là bí mật phía sau xoay phối hợp mạnh mẽ của các vận động viên tennis đẳng cấp. Càng cảm nhận và tăng cường kết nối chéo này, cú đánh của bạn càng mạnh mẽ và hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

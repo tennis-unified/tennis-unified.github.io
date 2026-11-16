@@ -57,3 +57,10 @@ Another effective drill is angle awareness training: place a cone at the interse
 ## Practical Application: "Clear the Net, Own the Court"
 
 To apply Net Clearance Geometry: Safe Margins and Attack Heights in your next match, begin by visualizing the court as a geometric grid before each point. Identify the largest angle available to your opponent and position yourself to minimize it. Practice one specific geometric pattern per practice session until it becomes instinctive. Film yourself playing and analyze whether your positioning matches the geometric ideal. Remember: court geometry is a skill that improves with deliberate practice, just like your strokes.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

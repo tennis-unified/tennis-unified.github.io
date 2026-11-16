@@ -44,3 +44,10 @@ The loading phase must be completed before rotation begins:
 
 ## Practical Application: "The Load-Before-Turn Drill"
 Practice loading completely before initiating rotation. Stand in your ready position and perform a slow-motion groundstroke: first, load deeply (bend your knees, rotate your trunk back), feeling the stretch in your legs and trunk. Hold this loaded position for one full second. Now rotate: first your hips, then your trunk, then your shoulder, then your arm. This drill teaches your nervous system to complete the loading phase before beginning rotation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+<!-- TAICHIKB-CROSSREF-END -->

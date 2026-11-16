@@ -43,3 +43,10 @@ Tập luyện mắt yên tĩnh đã được chứng minh cải thiện độ ch
 ## Ứng Dụng Thực Tế: "Ăn Cắp Ánh Nhìn Dài Hơn"
 
 Bạn không thể mua mắt yên tĩnh dài hơn, nhưng bạn có thể thực hành một cái, và sự thực hành là đẹp đẽ đơn giản: cố định sớm hơn, trên mục tiêu đúng, giữ lâu hơn. Trước mỗi serve, khóa mục tiêu, khóa bóng, và giữ đầu yên qua tiếp xúc. Trên mỗi trả bóng, cho bóng mắt của bạn từ thời điểm nó rời vợt. Ánh nhìn nhà vô địch không phải là món quà huyền bí — đó là thói quen chú ý, và như mọi thói quen trong kho này, nó nhượng bộ cho những lần lặp lại có chủ đích. Xem bóng — thực sự xem nó — và phần còn lại của cú đánh tuân theo.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

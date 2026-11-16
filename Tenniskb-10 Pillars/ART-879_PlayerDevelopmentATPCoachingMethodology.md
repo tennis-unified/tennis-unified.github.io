@@ -163,3 +163,10 @@ Contrast therapy alternates between hot and cold water exposure, combining the b
 | Slow recovery between matches | Insufficient recovery protocols | Cumulative fatigue | Contrast therapy; cold water immersion; heat therapy |
 | Muscle spasms | Electrolyte imbalance, overuse | Pain, reduced performance | Heat therapy; massage; electrolyte replacement |
 | Poor circulation | Sedentary lifestyle, insufficient recovery | Slow healing, stiffness | Contrast therapy; active recovery; movement |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+<!-- TAICHIKB-CROSSREF-END -->

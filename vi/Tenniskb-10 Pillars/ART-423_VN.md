@@ -76,3 +76,10 @@ Người chơi nên tập luyện sử dụng quỹ đạo từ cao xuống th�
 ## Ứng Dụng Thực Tế: "Bài Tập Chà Xát Đi Xuống"
 
 Đứng cách tường 3 mét và đánh slice backhand vào tường. Tập trung vào việc bắt đầu swing ở vị trí cao hơn điểm tiếp xúc và đi xuống qua quả bóng. Đánh dấu một mục tiêu trên tường và nhắm vào đó một cách nhất quán. Bài tập này giúp xây dựng bắt giác cho quỹ đạo từ cao xuống thấp và giúp phát triển một cú slice nhất quán, hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

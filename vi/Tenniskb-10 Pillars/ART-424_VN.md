@@ -65,3 +65,10 @@ Người chơi nên kết hợp các bài tập này vào quy trình thực hàn
 
 ## Ứng Dụng Thực Tế: "Bài Tập Đánh Dấu"
 Đặt một vật đánh dấu nhỏ (như bóng hoặc nón) trên mặt đất tại khoảng cách điểm chạm lý tưởng so với tư thế đứng của bạn. Thực hành đánh slice backhand, tập trung vào việc chạm bóng ngay phía trên vật đánh dấu. Bài tập này xây dựng nhận thức không gian cần thiết cho kiểm soát điểm chạm nhất quán.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

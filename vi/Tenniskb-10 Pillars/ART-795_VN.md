@@ -57,3 +57,10 @@ Phương pháp theo dõi đơn giản bao gồm ghi chép thống kê theo dõi 
 ## Ứng Dụng Thực Tế: "Theo Dõi Chất Lượng Vượt Việt Đếm Số Lượng"
 
 Bắt đầu theo dõi theo dõi chất lượng cú đánh theo kết quả trong 5 trận đấu tiếp theo của bạn. Sử dụng hệ thống kiểm đếm đơn giản trên thẻ ghi nhớ hoặc ứng dụng thống kê quần vợt. Sau mỗi trận, tính phần trăm và so sánh với mục tiêu của bạn (thường là 60% trở lên cho hầu hết chỉ số). Xác định tình huống cụ thể mà chỉ số giảm (cuối set, sau pha bóng dài, dưới áp lực bảng điểm) và phát triển bài tập hướng đích cho những kịch bản đó. Qua một mùa giải, theo dõi xem chỉ số có cải thiện không và có tương quan với thắng trận hay không.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+<!-- TAICHIKB-CROSSREF-END -->

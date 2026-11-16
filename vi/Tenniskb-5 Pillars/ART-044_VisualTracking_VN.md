@@ -40,3 +40,10 @@ Vận động viên chỉ cố gắng tập trung vào quả bóng trong 100 mil
 
 ## Ứng Dụng Thực Tế: Khái Niệm "Điểm Cố Định"
 Vận động viên nên coi điểm va chạm như một "điểm cố định" trong không gian. Bất kể tốc độ hay quỹ đạo của quả bóng, cơ thể phải được định chuẩn để đưa vợt đến điểm cụ thể đó tại thời điểm cụ thể đó. Công việc của hệ thị giác là xác nhận rằng quả bóng đang đến điểm đó, chứ không phải "đuổi theo" quả bóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Độ chính xác theo dõi thị giác và nhận thức chiều sâu*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác – vận động và đồng bộ tay–mắt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 4 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch04.html) — *Định thời thần kinh–cơ và phản hồi cảm giác*
+<!-- TAICHIKB-CROSSREF-END -->

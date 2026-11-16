@@ -168,3 +168,10 @@ Công nghệ dây vợt đã phát triển từ vật liệu tự nhiên đến 
 ## Ứng Dụng Thực Tế: "Bài Kiểm Tra Dây"
 
 Thử thích nghi này: căng một vợt với polyester ở 48 lbs và một vợt giống hệt với nylon đa sợi ở 52 lbs. Chơi với mỗi vợt trong một tuần. Bạn sẽ thấy polyester cho bạn nhiều xoay và kiểm soát hơn nhưng có thể làm khó cánh tay sau buổi tập dài. Nylon sẽ cảm thấy thoải mái và mạnh mẽ hơn nhưng có thể thiếu độ cắm bạn muốn trên cú topspin nặng. Hầu hết tay vợt cạnh tranh thỏa hiệp với bố trí lai: dây polyester chính cho xoay và độ bền, dây ngang nylon cho thoải mái và sức mạnh. Tìm thiết lập lý tưởng thông qua thử nghiệm, và đừng sợ thay đổi khi lối chơi bạn phát triển.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

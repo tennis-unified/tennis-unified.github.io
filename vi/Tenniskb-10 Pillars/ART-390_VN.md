@@ -66,3 +66,10 @@ Sự kết hợp của các hiệu ứng này tạo ra một quả bóng cảm t
 ## Ứng Dụng Thực Tiễn: "Nhận Thức Về Magnus"
 
 Phát triển nhận thức của bạn về hiệu ứng Magnus bằng cách quan sát quỹ đạo của các cú forehand. Để ý cách bóng chìm dốc hơn khi bạn tăng topspin, và cách nó cong khi bạn thêm thành phần sidespin. Sử dụng nhận thức này để điều chỉnh tốc độ xoay và trục xoay dựa trên tình huống chiến thuật, tối đa hóa hiệu quả của hiệu ứng Magnus.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

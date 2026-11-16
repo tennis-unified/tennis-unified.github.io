@@ -70,3 +70,10 @@ Người chơi điều chỉnh cơ tác động dựa trên bề mặt sân:
 ## Ứng Dụng Thực Hành: "Điều Chỉnh Theo Bề Mặt Sân"
 
 Tập luyện đánh forehand trên các bề mặt sân khác nhau (đất nung, cứng, cỏ) và ghi nhận cách mỗi bề mặt ảnh hưởng đến chiều cao điểm chạm, đường swing và tốc độ xoáy của bạn. Phát triển khả năng điều chỉnh cơ tác động tự động dựa trên bề mặt sân, tối ưu hóa sản sinh xoáy cho từng điều kiện.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

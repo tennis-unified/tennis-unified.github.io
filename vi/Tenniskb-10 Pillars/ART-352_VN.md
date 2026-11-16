@@ -78,3 +78,10 @@ Huấn luyện forehand hai khúm tập trung vào:
 ## Ứng Dụng Thực Hành: "Cong Và Búng"
 
 Tập luyện forehand hai khúm bằng cách duy trì một đường cong rõ ràng ở khuỷu tay xuyên suốt cú vung về phía trước. Khi thân bạn xoay về phía trước, hãy cảm nhận cẳng tay và đầu vợt bị trễ lại so với cán tay (đang nạp cơ chế nỏ). Sau đó búng cẳng tay về phía trước qua thời điểm tiếp xúc bóng, giải phóng trễ cổ tay để đạt tốc độ đầu vợt tối đa. Cảm giác "cong và búng" này chính là bản chất của forehand hai khúm.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

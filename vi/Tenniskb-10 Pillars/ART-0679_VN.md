@@ -43,3 +43,10 @@ Bóng lob sâu phía sau người chơi lưới đòi hỏi cú smash toàn ph�
 ## Ứng Dụng Thực Tế: "Bước Phân Tầng, Lùi Lại, Ném Toàn Phần"
 
 Đối phó với bóng lob sâu phía sau: (1) bước phân tầng, (2) lùi lại với các bước chéo, (3) đánh smash toàn phần với tư thế trophy sâu. Bóng lob sâu có thể kiểm soát được với kỹ thuật phù hợp.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

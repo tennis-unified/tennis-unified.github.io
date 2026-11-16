@@ -25,3 +25,11 @@ Một lỗi phổ biến là để cánh tay dẫn động vung quá rộng ho�
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Gọn Gàng" (Compact)
 Cú trái tay nên mang lại cảm giác "gọn gàng". Khoảng cách giữa cánh tay dẫn động và ngực gần như bằng không. Nếu bạn cảm thấy có một khoảng hở giữa cánh tay và xương sườn, bạn đang làm mất sức mạnh. Cảm giác "ép sát" tạo ra sự ổn định và sức mạnh to lớn, biến thân trên thành một khối duy nhất, mạnh mẽ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Mặt Trước Nông — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch04-mat-truoc-nong.html) — *Đường Mặt Trước Nông và cơ chế nén ngực*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng trong cú trái tay*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Cơ ngực lớn và cơ răng trước*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học thân mình và vai trong cú trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

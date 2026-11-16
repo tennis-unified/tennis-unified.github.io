@@ -72,3 +72,10 @@ Training the semi-open stance involves:
 ## Practical Application: "The Semi-Open Setup"
 
 Practice the semi-open stance by positioning your feet at 30 to 45 degrees to the baseline for mid-court forehands. Focus on the feeling of balanced power—you should feel both the rotational force from your hips and the linear force from your forward weight transfer. Use this stance for approach shots and mid-court transition shots where you need both power and directional control.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

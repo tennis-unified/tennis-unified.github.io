@@ -43,3 +43,10 @@ To verify that all leaks have been sealed, the athlete performs a maximum-effort
 4.  Shoulder Decoupling.
 5.  Wrist Stability.
 When all five elements are synchronized, the athlete will experience a sudden increase in power and a reduction in fatigue, confirming that the kinetic chain is operating at maximum efficiency.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Hệ thống vận động chức năng và các mẫu vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch05-he-thong-van-dong-chuc-nang-va-cac-mau-van-dong.html) — *Functional movement screening & energy leak diagnostics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Sequential kinetic chain timing & leak points*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Biomechanical error detection & correction*
+<!-- TAICHIKB-CROSSREF-END -->

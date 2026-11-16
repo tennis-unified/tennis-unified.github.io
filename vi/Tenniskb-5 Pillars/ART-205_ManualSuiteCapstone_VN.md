@@ -142,3 +142,10 @@ Bộ Sổ Tay Là **Hiến Chương Của Doanh Nghiệp 5 Cột Trụ**. Nó Kh
 Bài Tổng Kết Này (`195_Chi_Muc_Bo_So_Tay`) Phục Vụ Là **Chỉ Mục, Hiến Chương Quản Trị, Và Giao Thức Tích Hợp** Cho Bộ Sổ Tay. Nó Phải Có Mặt Trong Mọi Phiên Bản Phát Hành (`vX.Y/195_Chi_Muc_Bo_So_Tay.md`) Và Được Cập Nhật Mỗi Lúc Bump Phiên Bản.
 
 **Hành Động Tiếp Theo:** Khởi Tạo Kho `v1.0_YYYY/` Với Tất Cả Bốn Sổ Tay + Chỉ Mục Này. Thiết Lập Bảng Điều Khiển SSOT. Lên Lịch Hội Đồng Hàng Quý Đầu Tiên. **Hệ Thống Khởi Động.**
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Chương 19: Thấu hiểu cơ học-thích-nghi của mô mạc: Ứng dụng vào y học thể thao — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch19-thau-hieu-co-hoc-thich-nghi-cua-mo-mac-ung-dung-vao-y-hoc-the-th.html) — *Cơ học thích nghi và phòng ngừa chấn thương*
+<!-- TAICHIKB-CROSSREF-END -->

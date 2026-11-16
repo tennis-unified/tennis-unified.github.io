@@ -69,3 +69,10 @@ Luyện tập chải lên bao gồm:
 ## Ứng Dụng Thực Tiễn: "Hình Dung Chải Lên"
 
 Hình dung quả bóng là một quả cầu trái đất trước mỗi cú forehand. Khi vung, hình dung vợt của bạn chải lên dọc theo xích đạo của quả cầu, từ Cực Nam lên Cực Bắc. Cách hình dung này giúp bạn duy trì động tác chải hoàn toàn hướng lên và tạo trục xoáy nằm ngang với topspin thuần khiết.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

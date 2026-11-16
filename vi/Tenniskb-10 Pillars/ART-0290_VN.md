@@ -98,3 +98,10 @@ Thường xuyên đánh giá chương trình:
 
 ## Ứng Dụng Thực Tế: "Kế Hoạch Tâm Lý Hàng Tuần"
 Cấu trúc huấn luyện kỹ năng tâm lý của bạn với kế hoạch hàng tuần: (1) 10 phút xem lại đặt mục tiêu, (2) 10 phút thực hành hình dung hóa, (3) 10 phút huấn luyện thư giãn, (4) 10 phút thực hành lời nói với bản thân, (5) 10 phút huấn luyện tập trong. Cách tiếp cận có cấu trúc này đảm bảo rằng tất cả các kỹ năng tâm lý chính được thực hành thường xuyên và huấn luyện tinh thần trở thành một phần nhất quán trong sự phát triển tổng thể tennis của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -86,3 +86,10 @@ Topspin lob mang rủi ro:
 ## Ứng Dụng Thực Tế: "Thiết Lập Lob"
 
 Luyện tập topspin lob bằng cách nhờ đối tác tiến lên lưới. Khi họ di chuyển về phía trước, thực hiện topspin lob với đường vung dốc và topspin nặng. Tập trung vào bóng vòng cung vượt qua đối tác và hạ cố sâu trong sân. Bắt đầu với ném bóng chậm và tiến triển đến tốc độ nhanh, thực tế hơn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

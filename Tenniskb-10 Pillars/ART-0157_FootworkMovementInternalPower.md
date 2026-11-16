@@ -74,3 +74,10 @@ The crossover works differently on each surface:
 ## Practical Application: "The Crossover Gauntley"
 
 Set up two cones 5 meters apart. The player starts at one cone and must crossover back and forth as many times as possible in 10 seconds, touching each cone with the outside hand. Count the completed round trips. This drill builds crossover speed, hip rotation, and the rapid push-off-to-drive transition. Time it weekly — improvement is measurable and motivating. Elite juniors should complete 6-8 round trips in 10 seconds; recreational advanced players should target 4-5.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+<!-- TAICHIKB-CROSSREF-END -->

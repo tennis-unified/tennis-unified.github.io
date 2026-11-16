@@ -84,3 +84,10 @@ Practical implication: a player who eliminates 10 redundant strides per point ac
 ## Practical Application: "Count Your Strides"
 
 At the next session, film a player from the side during a 10-point rally at moderate pace. Count the total movement strides (excluding stroke contacts) and the estimated redundant strides. Give the player the numbers: "You took 48 strides to play those 10 points, and roughly 14 of them were redundant." Then run the "one-step" rule drill for 10 minutes — any extra shuffle after arrival restarts the point. Re-film another 10-point block. The stride count typically drops by 10-20% within the session. This is the most direct and measurable way to improve footwork economy, and players can feel the difference immediately — the same work output, less fatigue.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

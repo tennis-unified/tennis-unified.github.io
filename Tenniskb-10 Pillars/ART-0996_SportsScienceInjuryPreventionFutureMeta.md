@@ -107,3 +107,10 @@ Modern heat policies should incorporate:
 ## Practical Application: "The Heat-Ready Player"
 
 Preparing for tennis in a warming climate requires a comprehensive heat-readiness protocol: (1) **Acclimatization** — begin heat exposure training 10-14 days before competing in hot conditions, with 60-90 minutes of moderate exercise in heat (30-35°C) daily to trigger physiological adaptations (earlier sweating onset, increased sweat volume, reduced electrolyte concentration in sweat, expanded plasma volume); (2) **Pre-cooling routine** — on match day, consume 7.5 kg of ice slurry 30 minutes before play, wear a cooling vest during warm-up, and apply cold towels to the neck and wrists; (3) **During-match cooling** — use every changeover for active cooling (cold towels, misting fan, cold hydration), request extended changeovers in extreme heat, and use medical timeouts for ice vest application if available; (4) **Recovery** — after matches, use cold water immersion (10-15°C for 10-15 minutes) to accelerate core temperature normalization. Players who systematically implement these strategies can maintain performance in conditions that would otherwise cause 10-15% performance declines. Climate change is not a distant threat — it is already reshaping tennis, and players who adapt their heat management will gain a competitive edge while protecting their health.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+<!-- TAICHIKB-CROSSREF-END -->

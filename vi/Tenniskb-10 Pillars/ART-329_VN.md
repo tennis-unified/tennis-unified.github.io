@@ -64,3 +64,10 @@ Khả năng điều chỉnh khoảng cách chạm bóng đòi hỏi chương tr�
 ## Ứng Dụng Thực Hành: "Phổ Khoảng Cách"
 
 Tập đánh forehand ở ba khoảng cách chạm bóng riêng biệt: gọn lại (0,3m phía trước), tiêu chuẩn (0,55m phía trước) và dãn ra (0,75m phía trước). Sử dụng một điểm tham chiếu trực quan (một cái nón hoặc văn băng dán) để đảm bảo bạn đang đánh ở khoảng cách chính xác cho mỗi cú. Phát triển cảm giác về cách mỗi khoảng cách ảnh hưởng đến sức mạnh và kiểm soát, và tập chuyển đổi giữa chúng dựa trên tình huống chiến thuật.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

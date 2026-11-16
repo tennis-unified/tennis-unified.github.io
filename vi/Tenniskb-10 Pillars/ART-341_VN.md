@@ -72,3 +72,10 @@ Các chiến lược sửa lỗi cho đánh lệch tâm bao gồm:
 ## Ứng Dụng Thực Hành: "Bài Tập Nhận Thức Điểm Chạm"
 
 Trong lúc tập luyện, sau mỗi cú đánh, hãy xác định vị trí bóng chạm trên lưới vợt dựa trên âm thanh và cảm giác. Đánh đầu vợt tạo ra âm thanh "trong" chói tai; đánh cổ vợt tạo ra âm thanh "ùm" trầm; đánh viền vợt tạo ra âm thanh "lạch cạch" khó chịu. Cú đánh vào điểm ngọt tạo ra âm thanh "pop" sạch sẽ. Sự nhận thức này giúp bạn tự sửa sự nhất quán điểm chạm của mình và giảm thiểu đánh lệch tâm.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

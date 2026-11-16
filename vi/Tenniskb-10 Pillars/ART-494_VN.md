@@ -50,3 +50,10 @@ Nếu pha kết thúc cú đánh là nguyên nhân gây lỗi, hãy tập luyệ
 
 ## Ứng Dụng Thực Tế: "Phương Pháp Kiểm Tra Có Hệ Thống"
 Khi backhand của bạn không hoạt động tốt, hãy thực hiện phương pháp kiểm tra có hệ thống năm bước: tay cầm, tư thế và pha chân, pha xoay thân, điểm chạm bóng và pha kết thúc cú đánh. Xác định vấn đề và sử dụng bài tập phù hợp để khắc phục. Theo dõi tiến trình qua nhiều buổi tập để đảm bảo vấn đề đang được giải quyết.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

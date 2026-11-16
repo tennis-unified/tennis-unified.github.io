@@ -100,3 +100,10 @@
 
 ## Ứng Dụng Thực Tế: "Người Điều Dược"
 Bạn không cho thuốc an thần cho bệnh nhân suy tim (Sụp Đổ cần *bỏ ức chế* tự động hóa). Bạn không cho thuốc kích thích cho bệnh nhân loạn loạn (Hoảng Loạn cần *ức chế* giao cảm). **Chẩn Đoán Trạng Thái Thần Kinh Sinh Học. Kê Đơn Giao Thức Đúng. Cho Liều Đúng.** Vận Động Viên Là Bệnh Nhân. Trận Đấu Là Phòng Cấp Cứu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và bản lĩnh thời khắc quyết định*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+<!-- TAICHIKB-CROSSREF-END -->

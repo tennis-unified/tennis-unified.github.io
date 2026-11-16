@@ -83,3 +83,10 @@ Four progressive levels build eccentric capacity and structural skill (spend 2-3
 At the next session, introduce the deceleration concept with a simple test: have the player sprint laterally from the center mark to the doubles sideline (roughly 5.5 m) and stop as quickly as possible. Measure the slide distance — the distance the player continues moving after the initial plant. A knee-dominant decelerator slides 30-50 cm and shows visible knee valgus. A hip-dominator slides 10-20 cm and shows a clean hip hinge with the knee tracking over the toe.
 
 Then teach the three-point deceleration checklist: (1) **wide plant** — foot lands 1.5× shoulder width, (2) **hip hinge** — hips sit back 15 cm, (3) **knee track** — knee stays over the second toe. Have the player practice 10 controlled stops to each side, focusing on all three points. After each stop, the player rates their knee comfort on a 1-10 scale. Knee-dominant stops rate 6-8 (uncomfortable); hip-dominant stops rate 1-3 (comfortable). The contrast is immediate and motivating. Over the following weeks, progress through the four training levels, building eccentric capacity and structural skill. The player who learns to decelerate with the hips and feet will play longer, hurt less, and recover faster — because the joints are protected by the muscles that were designed to do the work.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Dynamic balance & directional control*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

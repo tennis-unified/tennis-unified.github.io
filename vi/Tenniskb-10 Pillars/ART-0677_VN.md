@@ -43,3 +43,10 @@ Quả lob vượt qua người chơi lưới đòi hỏi kỹ thuật smash: bư
 ## Ứng Dụng Thực Tế: "Bước Phân Tầng, Theo Dõi, Smash"
 
 Khi đối mặt với quả lob vượt qua người chơi lưới: (1) bước phân tầng, (2) theo dõi bóng bằng cánh tay không thuận, (3) thựhiện cú smash với chuyển động hoàn chỉnh. Nhận diện sớm và lùi lại hiệu quả là chìa khóa để thành công.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

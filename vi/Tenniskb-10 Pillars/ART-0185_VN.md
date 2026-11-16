@@ -37,3 +37,10 @@ Trong cả ba trường hợp, bỏ phục hồi hoàn chỉnh không phải th�
 
 ## Ứng Dụng Thực Tế: "Sẵn Sàng Trước Dây Wợt"
 Trong phiên tiếp theo, HLV đứng ở lưới và vỗ tay khi mô phỏng tiếp xúc đối thủ. Người chời phải sẵn sàng (cả hai chân xuống, split-step thực hiện) trước tiếng vỗ. Cho 20 bóng rally tốc độ vừa. Chấm: bao nhiêu lần người chời sẵn sàng trước tiếng vỗ? Mục tiêu: 15/20 trở lên.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+<!-- TAICHIKB-CROSSREF-END -->

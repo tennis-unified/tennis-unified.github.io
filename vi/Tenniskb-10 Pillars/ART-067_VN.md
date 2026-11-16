@@ -56,3 +56,10 @@ Chuyển động dạng cây cưa của cú đánh tennis là biểu hiện tr�
 
 ## Ứng Dụng Thực Tế: "Tiếng Crack"
 Tập trung vào cảm giác cây cưa gập khi va chạm. Cú đánh nên cảm thấy không tốn sức — như thể bạn chỉ dẫn dắt vợt và để chuỗi động học làm việc. Nếu bạn cảm thấy đang ép vợt qua bóng, bạn đang phá vỡ chuyển động cây cưa. Luyện tập bằng cách thực hiện shadow swing và tập trung vào cảm giác sóng truyền từ chân đến vợt. Khi bạn có thể cảm nhận được "crack" — sự giải phóng bùng nổ của năng lượng ở cuối cú vung — bạn đã làm chủ chuyển động dạng cây cưa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Động học góc và chuỗi động học tuần tự*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

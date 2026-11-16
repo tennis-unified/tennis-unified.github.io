@@ -43,3 +43,10 @@ Vận động viên đẳng cấp không chỉ chơi trên các mặt sân — h
 
 ## Ứng Dụng Thực Tế: "Người Phiên Dịch Mặt Sân"
 Đừng chiến đấu với mặt sân — hãy phiên dịch lối chơi của bạn. Cùng chuỗi động học, vật lý được tái hiệu chỉnh. Mặt sân thay đổi kịch bản; năm cột trụ của bạn cung cấp ngôn ngữ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

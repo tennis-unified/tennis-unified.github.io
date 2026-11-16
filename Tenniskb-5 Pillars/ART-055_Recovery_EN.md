@@ -65,3 +65,10 @@ Recovery is not just rest; it is the preparation for the next Flow State. A well
 
 ## Practical Application: The "Recovery Ritual"
 The athlete should establish a post-match recovery ritual that addresses all three levels: physical (cool-down, nutrition), mental (visualization, reflection), and emotional (relaxation, mindfulness). This ritual ensures that the athlete is fully restored and ready to enter the Flow State for the next session.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Skeletal muscle adaptation & tissue regeneration*
+- [Chương 5: Tải trọng ứng suất và tái cấu trúc ma trận trong gân và cơ xương: Kích thích cơ học tế bào và tái cấu trúc mô — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch05-tai-trong-ung-suat-va-tai-cau-truc-ma-tran-trong-gan-va-co-xuong.html) — *Stress loading & extracellular matrix remodeling in tendons*
+- [Chương 18: Hệ Nội Tố (The Endocrine System)](https://taichikb.github.io/vi/books/tortora_ap/ch18-he-noi-to.html) — *Endocrine recovery hormones (GH, cortisol, anabolic balance)*
+<!-- TAICHIKB-CROSSREF-END -->

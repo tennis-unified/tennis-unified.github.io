@@ -76,3 +76,10 @@ Cú tiến lên lưới là cánh cửa dẫn đến lối chơi lưới. Một 
 ## Ứng Dụng Thực Tế: "Tiến Lên Để Kết Thúc, Không Phải Để Sống Sót"
 
 Mọi cú tiến lên lưới nên được đánh với ý định kết thúc điểm tại mặt lưới — không chỉ để sốt sót qua giai đoạn chuyển tiếp. Đánh cú tiến lên sâu và vào điểm yếu, sau đó tiến lên lưới tấn công. Một cú tiến lên do dự tệ hơn là không tiến lên.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

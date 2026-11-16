@@ -72,3 +72,10 @@ Build the escape in one defensive session:
 4. **Escape-to-lob finish.** Every third rep ends with the emergency lob struck mid-escape, deep over the coach's head. The defender learns that the escape has two exits: full recovery, or a reset that buys the time the legs could not.
 
 The player who has trained the fall stops fearing the corner — the deepest pressure becomes, if not an opportunity, then at least a survivable geometry with a known exit.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+<!-- TAICHIKB-CROSSREF-END -->

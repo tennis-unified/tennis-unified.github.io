@@ -52,3 +52,10 @@ Ngược lại, "thả rơi" tay không thống trị quá sớm—rời cổ v�
 ## Ứng Dụng Thực Tế: "Hướng Dẫn Cổ Vợt"
 
 Để ghi nhớ cơ cấu tay không thống trị chuẩn xác, hãy tập quạt lưng giữ một quả bóng nhỏ (như bóng pickleball) giữa ngón trỏ của tay không thống trị và cổ vợt. Điều này ép lực tiếp xúc nhẹ và ngăn nắm quá chặt. Tiến tới quạt tập không bóng nơi bạn chú ý có ý thức vào đúng khoảnh khắc tay trái rời tay—nó nên trùng khớp với cảm giác hông trước bắt đầu xoay về phía mục tiêu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

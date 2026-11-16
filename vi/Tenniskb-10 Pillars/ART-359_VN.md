@@ -82,3 +82,10 @@ Huấn luyện forehand tư thế trung tính bao gồm:
 ## Ứng Dụng Thực hành: "Kiểm Tra Góc 45 Độ"
 
 Trước mỗi cú forehand, kiểm tra góc của hai chân so với vạch gôn. Đối với tư thế trung tính, nhắm đến góc khoảng 45 độ. Góc này cung cấp sự cân bằng tối ưu giữa quán tính xoay và dịch chuyển tuyến tính cho hầu hết các tình huống giữa sân và chuyển tiếp. Điều chỉnh góc về phía song song (tư thế mở) nếu ưu tiên phục hồi, hoặc về phía vuông góc (tư thế kín) nếu ưu tiên sức mạnh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

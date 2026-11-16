@@ -148,3 +148,10 @@ This drill builds placement consistency and simulates the pressure of serving to
 | Second serve easily attacked | Weak kick serve, low ball speed, short placement | Broken serve games regularly | Dedicated kick serve practice with upward brush drills; medicine ball overhead throws |
 | Serve speed plateau | Weak leg drive, poor kinetic chain sequencing | Serve becomes predictable and returnable | Plyometric leg training; video analysis of kinetic chain timing |
 | Inconsistent serve direction | Variable toss, body alignment changes | Serving into the net or long | Toss-only practice; alignment drills with front foot markers |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

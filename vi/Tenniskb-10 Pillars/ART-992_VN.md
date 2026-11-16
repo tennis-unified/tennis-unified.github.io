@@ -94,3 +94,10 @@ Cấy gen đặt ra những câu hỏi đạo đức sâu sắc vượt ra ngoà
 ## Ứng Dụng Thực Tế: "Khung Tính Toàn Vẹn Về Gen"
 
 Tennis phải chủ động giải quyết cấy gen thông qua khung ba trụ cột: (1) Đầu tư vào nghiên cứu phát hiện, đặc biệt là phương pháp transcriptomic và proteomic có khả năng xác định biểu hiện gen ngoại sinh; (2) Hồ sơ sinh học dài hạn của vận động viên theo dõi các dấu ấn gen và protein xuyên suốt sự nghiệp, thiết lập đường cơ sở cá nhân để phát hiện bất thường; và (3) Chương trình giáo dục toàn diện thông báo cho người chơi ở mọi cấp độ về rủi ro sức khỏe và hậu quả cạnh tranh của cấy gen. Tính toàn vẹn của môn thể thao phụ thuộc vào việc đi trước công nghệ — một khi cấy gen trở nên phổ biến, cửa sổ cho phát hiện hiệu quả có thể đã đóng lại. Các cơ quan quản lý tennis nên phân bổ ít nhất 15% ngân sách chống doping cho nghiên cứu và phát triển phát hiện cấy gen vào năm 2026.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Hệ cơ: nhóm cơ chủ vận và ổn định*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Cơ học co cơ: lệch tâm/đồng tâm và lực–vận tốc*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

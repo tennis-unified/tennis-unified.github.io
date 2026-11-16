@@ -57,3 +57,10 @@ Người chơi nên luyện tập backhand inside-in kết hợp với ít nhấ
 ## Ứng Dụng Thực Tế: "Gây Sốc Bằng Cú Inside-In"
 
 Triển khai backhand inside-in bằng cách cam kết dùng chiến thuật này suốt một set tập luyện. Theo dõi số điểm bạn giành được khi dùng khuôn mẫu này so với cách đánh mặc định. Nếu chiến thuật ăn được hơn 55% số điểm, hãy đưa nó vào kho chiến thuật thường xuyên của bạn. Nếu ít hơn, hãy phân tích lý do: là do sự thực thi của bạn, sự điều chỉnh của đối thủ, hay thời điểm chọn sai? Tinh chỉnh chiến thuật dựa trên phân tích này trước trận đấu tiếp theo.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

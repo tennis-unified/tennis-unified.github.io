@@ -58,3 +58,10 @@ Practice processing visual and auditory information simultaneously. For example,
 
 ## Practical Application: "The Scan Pattern"
 Develop a consistent scan pattern for each rally: opponent preparation to ball flight to contact zone to opponent recovery. Practice this scan during every shot in training until it becomes automatic. The scan pattern ensures that attention shifts occur in a predictable, efficient sequence rather than randomly, reducing switch costs and ensuring that no critical information is missed.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+<!-- TAICHIKB-CROSSREF-END -->

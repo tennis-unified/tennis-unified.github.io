@@ -64,3 +64,10 @@ The ability to modulate contact distance requires the motor programs for both ex
 ## Practical Application: "The Distance Spectrum"
 
 Practice hitting forehands at three distinct contact distances: compact (0.3m in front), standard (0.55m in front), and extended (0.75m in front). Use a visual reference (a cone or tape mark) to ensure you are hitting at the correct distance for each shot. Develop the feel for how each distance affects power and control, and practice switching between them based on the tactical situation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

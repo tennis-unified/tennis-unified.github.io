@@ -158,3 +158,10 @@ Tập trung ngân sách vào thực phẩm bổ sung Tầng 1 và dinh dưỡng 
 4. **Vitamin D** — 1,000-4,000 IU mỗi ngày, tùy thuộc vào mức máu (hỗ trợ sức khỏe xương và chức năng miễn dịch)
 
 Bốn thực phẩm bổ sung này, kết hợp với chế độ ăn được lên kế hoạch tốt và hydrat hóa phù hợp, bao quát nền tảng dinh dưỡng cho hiệu suất tennis. Mọi thứ khác — chất đốt mỡ, chất tăng test, hỗn hợp hồi phục — là tiếp thị. Hãy chi tiền cho thức ăn chất lượng, tập luyện chất lượng và bốn thực phẩm bổ sung có cơ sở khoa học này. Khoảng cách giữa thắng và thua hiếm khi được tìm thấy trong lọ thuốc.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Cơ học co cơ: lệch tâm/đồng tâm và lực–vận tốc*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Hệ cơ: nhóm cơ chủ vận và ổn định*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

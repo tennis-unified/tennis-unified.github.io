@@ -203,3 +203,10 @@ Tiếp cận này phát triển nhận thức bản thân và khả năng giải
 | Vận động viên thiếu hiểu biết chiến thuật | Huấn luyện chỉ kỹ thuật, không có học tập dựa trò chơi | Chọn cú đánh ngẫu nhiên | Giới thiệu học tập dựa trò chơi; mô hình TGFU |
 | Vận động viên chán và mất động lực | Luyện tập quá nhiều, không đủ chơi trò chơi | Giảm chất lượng luyện tập, nguy cơ bỏ cuộc | Tăng hoạt động dựa trò chơi; giới thiệu sự đa dạng |
 | Vận động viên phụ thuộc huấn luyện viên cho mọi quyết định | Tiếp cận lấy vận động viên làm trung tâm quá sớm, cấu trúc không đủ | Choáng ngợp, không thể tự quản lý | Pha trộn hướng dẫn chỉ đạo với tự chủ dẫn dắt; chuyển đổi dần dần |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

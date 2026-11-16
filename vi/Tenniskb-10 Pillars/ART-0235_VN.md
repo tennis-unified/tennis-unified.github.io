@@ -49,3 +49,10 @@ Thực hành xử lý thông tin thị giác và thính giác cùng lúc. Ví d�
 
 ## Ứng Dụng Thực Tế: "Mô Hình Quét"
 Phát triển một mô hình quét nhất quán cho mỗi rally: sự chuẩn bị của đối thủ đến đường bay bóng đến vùng tiếp xúc đến phục hồi của đối thủ. Thực hành mô hình quét này trong mọi cú đánh khi tập luyện cho đến khi nó trở thành tự động. Mô hình quét đảm bảo các chuyển dịch chú ý xảy ra theo một trình tự có thể dự đoán, hiệu quả thay vì ngẫu nhiên, giảm chi phí chuyển đổi và đảm bảo rằng không có thông tin quan trọng nào bị bỏ lỡ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+<!-- TAICHIKB-CROSSREF-END -->

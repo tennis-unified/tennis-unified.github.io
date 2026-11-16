@@ -122,3 +122,10 @@ The core stabilizers must activate before movement begins to provide segmental s
 ## Practical Application: "Brace Before You Rotate"
 
 Before any rotational movement — serving, groundstrokes, or even picking up a ball — gently draw your navel toward your spine and hold that contraction. This activates the transversus abdominis, creating an internal "corset" that stabilizes each lumbar segment. Practice this 10 times daily until it becomes automatic. Your core should fire before your limbs move, not after. This single neuromuscular retraining reduces lower back injury risk more than any external support.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

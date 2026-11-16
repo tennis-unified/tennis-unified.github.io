@@ -75,3 +75,10 @@ v_ball = (v_racket × (1 + e) + v_ball_approach × (e - m_ball/m_racket_effectiv
 
 ## Practical Application: "The Bounce Test"
 Drop a tennis ball from a fixed height onto your racket and measure how high it bounces. A higher bounce indicates a higher COR and more efficient energy transfer. Test different string tensions, different impact locations, and different ball conditions to understand how they affect the COR. The goal is to maximize the COR at the sweet spot by optimizing your string tension, string material, and ball condition. A higher COR means more ball speed for the same racket speed—pure efficiency.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Linear kinetics, GRF & impulse-momentum*
+<!-- TAICHIKB-CROSSREF-END -->

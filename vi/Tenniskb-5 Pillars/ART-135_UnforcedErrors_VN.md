@@ -45,3 +45,10 @@ Thay vì coi UE là "thất bại", hãy coi chúng là chẩn đoán hệ thố
 
 ## Ứng Dụng Thực Tế: "Ngân Sách Lỗi"
 Hãy chấp nhận rằng không ai chơi một trận đấu không có UE. Hãy phân bổ một "ngân sách lỗi" cho lối chơi tấn công. Nếu bạn còn dư ngân sách, hãy chấp nhận rủi ro hơn. Nếu vượt quá, hãy quay lại lối chơi tỷ lệ cao.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và bản lĩnh thời khắc quyết định*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Động lực học tuyến tính, GRF và xung lượng*
+<!-- TAICHIKB-CROSSREF-END -->

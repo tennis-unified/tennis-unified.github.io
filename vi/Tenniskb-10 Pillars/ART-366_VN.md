@@ -89,3 +89,10 @@ Huấn luyện drive phẳng bao gồm:
 ## Ứng Dụng Thực Tế: "Cú Kết Thúc Phẳng"
 
 Luyện tập drive phẳng như cú kết thúc: khi đối tác đánh ngắn, yếu, bước vào và đánh drive phẳng với tốc độ tối đa hướng sân mở. Tập trung vào đường vung ngang và cảm giác bóng "bắn" khỏi vợt với xoáy tối thiểu. Sử dụng cú đánh này có chừng mực để duy trì hiệu quả như vũ khí bất ngờ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

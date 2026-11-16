@@ -64,3 +64,10 @@ Skills developed through the CLA transfer to match conditions more effectively b
 
 ## Practical Application: "The Constraint Design"
 When designing practice, manipulate one constraint at a time to guide the player toward the desired skill. For example, to develop net play: (1) constrain the task by requiring the player to approach after every short ball, (2) constrain the environment by using a smaller court that favors net play, (3) constrain the performer by practicing with a partner who hits short balls frequently. This constraint design promotes the discovery of effective net play strategies without explicit technical instruction, building adaptable, transferable skills.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Myofascial force transmission across segments*
+<!-- TAICHIKB-CROSSREF-END -->

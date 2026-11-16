@@ -76,3 +76,10 @@ Several factors affect the compression and deformation dynamics:
 ## Practical Application: "The Feel of Compression"
 
 Develop your awareness of the compression-deformation dynamics by paying attention to the feeling of each contact. A high-quality contact feels crisp and powerful, with minimal vibration and a clean "pop." A low-quality contact feels mushy or harsh, with noticeable vibration and a dull sound. Use this feedback to assess your contact quality and make technique or equipment adjustments as needed.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

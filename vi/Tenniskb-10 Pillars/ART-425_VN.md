@@ -65,3 +65,10 @@ Người chơi nên kết hợp các bài tập này vào thói quen luyện t�
 
 ## Ứng Dụng Thực Tế: "Bài Tập Đếm Xoắn"
 Nhờ một người bạn chọn bóng vào backhand bạn. Đánh mười cú slice backhand và đếm số lần mỗi quả bóng quay trong không khí trước khi nảy. Mục tiêu ít nhất ba vòng quay trên mỗi cú đánh. Theo dõi tiến độ qua các buổi tập để đảm bảo quỹ đạo swing và mặt vợt đang tạo ra backspin ổn định.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

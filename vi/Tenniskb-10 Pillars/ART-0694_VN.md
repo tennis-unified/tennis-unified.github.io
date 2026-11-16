@@ -43,3 +43,10 @@ Cú trả bóng sâu cùng đường biên đòi hỏi kỹ thuật được đi
 ## Ứng Dụng Thực Tế: "Vị Trí Sâu Hơn, Đường Vung Dài Hơn, Volley Sâu"
 
 Đối mặt với cú trả bóng sâu cùng đường biên: (1) định vị sâu hơn, (2) sử dụng đường vung dài hơn, (3) nhắm sâu. Bóng sâu cho bạn thời gian — hãy tận dụng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

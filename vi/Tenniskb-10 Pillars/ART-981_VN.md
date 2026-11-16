@@ -143,3 +143,10 @@ Nghiên cứu mới nổi gợi ý rằng một số sửa đổi di truyền h�
 ## Ứng Dụng Thực Tế: "Gen Của Bạn Không Phải Số Mệnh Của Bạn"
 
 Hiểu biết trao quyền nhất từ di truyền họa là hồ sơ di truyền của bạn không cố định. Mỗi buổi tập tennis, mỗi bữa ăn bổ dưỡng, mỗi đêm ngủ chất lượng đều thay đổi biểu hiện gen của bạn theo những cách hỗ trợ thành trình và hồi phục tốt hơn. Bạn không phải tù nhân của DNA — bạn là người lập trình gen của mình. Tập luyện nhất quán, ăn tốt, ngủ đủ và quản lý căng thẳng, và gen của bạn sẽ phản hồi bằng cách hỗ trợ mục tiêu tennis của bạn. Những lựa chọn bạn đưa ra hôm nay thay đổi cách cơ thể bạn hoạt động ở mức độ phân tử.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

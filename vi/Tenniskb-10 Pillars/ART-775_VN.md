@@ -57,3 +57,10 @@ Phương pháp theo dõi đơn giản bao gồm ghi chép số liệu phân tíc
 ## Ứng Dụng Thực Tế: "Cú Trả Sâu Phá Vỡ Giao Bóng"
 
 Bắt đầu theo dõi phân tích độ sâu trả bóng trong năm trận đấu tiếp theo của bạn. Sử dụng hệ thống đếm đơn giản trên tấm thẻ ghi chú hoặc ứng dụng thống kê quần vợt. Sau mỗi trận, tính phần trăm và so sánh với mục tiêu (thường là 60% trở lên đối với hầu hết chỉ số). Xác định tình huống cụ thể nơi chỉ số giảm sút (cuối set, sau pha giao tranh dài, dưới áp lực bảng điểm) và phát triển bài tập trúng mục tiêu cho những tình huống đó. Trong một mùa giải, theo dõi xem chỉ số có cải thiện không và tương quan với chiến thắng trong trận đấu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -64,3 +64,10 @@ The coaching implication is a change of arithmetic. A player does not choose bet
 ## Practical Application: "One Root Per Step"
 
 Give the mover one counting task: **every footfall is a root, so a ten-step sprint contains ten roots.** At the next session, run the quiet-feet ladder for five minutes with the player counting roots rather than steps. Then play crosscourt points in which the only scored criterion is the quality of the final plant before each stroke — the coach calls "rooted" or "skidded" after every shot. A player who converts even 7 of 10 final plants from skidded to rooted will feel the difference at once: the same legs, the same speed, but a stroke that finally has something solid underneath it.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

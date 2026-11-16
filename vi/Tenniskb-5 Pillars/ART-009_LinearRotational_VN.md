@@ -40,3 +40,11 @@ Những người chơi đẳng cấp không chọn một trong hai động cơ; 
 2.  **Pha Xoay:** Ngay khi đặt chân, thực hiện một cú giật hông mãnh liệt và xoay thân trên.
 3.  **Tích Hợp:** Kết hợp cả hai: Bước tới → Đặt chân → Xoay → Vung vợt.
 4.  Tập trung vào cảm giác động lượng tuyến tính "tiếp nhiên liệu" cho chuyển động xoay.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: độ dời, vận tốc, gia tốc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Động học góc: vận tốc góc và chuyển động quay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc và mô-men xoắn quay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Cân bằng động lượng tuyến tính và động lượng góc*
+<!-- TAICHIKB-CROSSREF-END -->

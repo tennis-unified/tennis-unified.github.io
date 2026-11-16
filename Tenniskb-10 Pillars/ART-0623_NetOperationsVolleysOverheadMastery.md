@@ -68,3 +68,10 @@ The serve-and-volley is a complete aggressive system: strong serve, quick transi
 ## Practical Application: "Serve, Rush, Volley, Win"
 
 The serve-and-volley sequence is four steps: (1) hit a deep serve to the weakness, (2) rush the net with quick steps, (3) hit a deep first volley, (4) put away the second volley. Commit to the entire sequence — half-measures (approaching but not closing) leave you stranded in no man's land.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

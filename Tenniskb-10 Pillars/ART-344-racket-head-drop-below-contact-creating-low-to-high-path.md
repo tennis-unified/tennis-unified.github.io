@@ -66,3 +66,10 @@ Training the racquet head drop involves:
 ## Practical Application: "The Drop and Rise"
 
 Practice the racquet head drop by holding your racquet at the set position with the head above your contact point. Drop the head down to your knee level, then accelerate upward through an imaginary contact point. This exaggerated drop-and-rise motion develops the motor pattern for the low-to-high swing path. Gradually reduce the drop depth to the optimal 0.3 to 0.8m range as the movement becomes automatic.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+<!-- TAICHIKB-CROSSREF-END -->

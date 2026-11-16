@@ -155,3 +155,10 @@ Mục tiêu không tĩnh. Chúng nên được điều chỉnh dựa trên:
 ## Ứng Dụng Thực Tế: "Kiểm Soát Những Gì Kiểm Soát Được"
 
 Những tay tennis hiệu quả nhất tập trung năng lượng đặt mục tiêu vào các khía cạnh thành trình họ có thể kiểm soát. Đặt mục tiêu kết quả để cung cấp hướng đi, mục tiêu thành trình để đo lường tiến bộ, và mục tiêu quá trình để hướng dẫn hành vi hàng ngày. Mỗi sáng, xác định 2-3 mục tiêu quá trình hàng đầu cho buổi tập ngày hôm đó. Sau mỗi trận đấu, xem xét sự tuân thủ mục tiêu quá trình trước khi nhìn vào bảng điểm. Theo thời gian, xuất sắc mục tiêu quá trình tạo ra thành tích mục tiêu thành trình, mà tạo ra thực hiện mục tiêu kết quả. Kiểm soát những gì kiểm soát được, và kết quả tự lo liệu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

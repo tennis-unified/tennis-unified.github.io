@@ -206,3 +206,10 @@ Huấn luyện viên nên:
 ## Ứng Dụng Thực Tế: "Nhìn Vận Động Viên, Không Phải Ngày Sinh"
 
 Mọi vận động viên tennis trẻ em đều trên một lộ trình sinh học độc đáo. Huấn luyện viên nhận ra điều này — nhìn thấy trẻ 12 tuổi trưởng thành muộn với phối hợn đặc biệt và ý chí chiến đấu, nhìn thấy trẻ 14 tuổi trưởng thành sớm cần được thách thức về kỹ thuật — là huấn luyện viên phát triển các nhà vô địch. Theo dõi trưởng thành, điều chỉnh kỳ vọng, tạo môi trường công bằng và nhớ: vận động viên nhỏ nhất hôm nay có thể là mạnh nhất ngày mai. Công việc của bạn là đảm bảo họ vẫn đang chơi khi ngày đó đến.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

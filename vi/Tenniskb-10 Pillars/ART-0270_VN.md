@@ -55,3 +55,10 @@ Kỹ năng học qua so sánh chuyển giao đến điều kiện trận đấu 
 
 ## Ứng Dụng Thực Tế: "Thư Viện So Sánh"
 Xây dựng một "thư viện so sánh" cá nhân cho mỗi cú đánh. Với giao bóng, cú đáy đường cuối, volley, và smash của bạn, phát triển một hoặc hai so sánh nắm bắt bản chất của chuyển động. Thực hành các so sánh này trong tập luyện cho đến khi chúng trở nên tự động. Trong trận đấu, sử dụng các so sánh này làm trọng tâm chính, thay thế mọi suy nghĩ kỹ thuật bằng hình ảnh đơn giản, mạnh mẽ. Cách tiếp cận phát triển kỹ năng dựa trên so sánh này tạo ra kỹ năng kháng áp lực, vững chắc thực hiện khi quan trọng nhất.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

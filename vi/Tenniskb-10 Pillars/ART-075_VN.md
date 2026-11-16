@@ -44,3 +44,10 @@ Khủy tay là khớp nối quan trọng trong đoạn cánh tay của chuỗi �
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Khủy Tay"
 Trong cú đánh của bạn, hãy tập trung cảm nhận khủy tay duỗi hoàn toàn và theo trình tự với vai và cánh tay. Nếu khủy tay không duỗi hoàn toàn, hãy làm việc về sức mạnh cơ ba đầu và drill duỗi. Nếu bạn cảm thấy căng valgus tại khủy tay, hãy làm việc về sửa kỹ thuật và sức mạnh tay trước. Nếu khủy tay đang làm quá nhiều việc, hãy tập trung cải thiện xoay thân để giảm tải cho khủy tay.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

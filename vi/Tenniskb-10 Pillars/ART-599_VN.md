@@ -77,3 +77,10 @@ Phân tích video và dữ liệu là công cụ mạnh mẽ để cải thiện
 ## Ứng Dụng Thực Tế: "Phân Tích Hàng Tháng"
 
 Ghi lại cú giao của bạn vào ngày đầu tiên của mỗi tháng. Sử dụng cùng vị trí camera, khoảng cách và cài đặt. So sánh với tháng trước để xác định cải thiện và suy thoáo. Kiểm tra hàng tháng này tạo trách nhiệm và cung cấp bằng chứng khách quan về tiến trình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

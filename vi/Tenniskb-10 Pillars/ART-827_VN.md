@@ -198,3 +198,10 @@ Sử dụng danh sách kiểm tra cơ sinh học để phân tích giao bóng:
 | Đau vai khi giao bóng | GIRD, kiểm soát bả vai kém, tải trọng vai quá mức | Viêm gân cơ xoay vai | Chương trình độ linh hoạt vai; ổn định bả vai; xem lại kỹ thuật giao bóng |
 | Đau khuỷu tay khi đánh backhand | Duỗi cổ tay quá mức, kỹ thuật kém | Viêm lồi cầu ngoài | Sửa đổi kỹ thuật; tăng cường cẳng tay; điều chỉnh thiết bị |
 | Đau thắt lưng khi giao bóng | Duỗi lưng quá mức, độ ổn định lõi kém | Vấn đề đĩa đệm, căng cơ | Chương trình ổn định lõi; xem lại kỹ thuật giao bóng; ổn định thắt lưng |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

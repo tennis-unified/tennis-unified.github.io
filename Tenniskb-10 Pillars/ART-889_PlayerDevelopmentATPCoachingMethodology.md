@@ -147,3 +147,10 @@ Serve pattern recognition is the systematic analysis of serve placement tendenci
 | Low serve effectiveness in certain zones | Serving to opponent's strength | Weak returns, lost service games | Target opponent's weakness; zone-specific practice |
 | Break point serve struggles | Pressure-induced pattern changes | Double faults, weak serves | Break point serve drills; pattern consistency under pressure |
 | Serve variety decreases in competition | Training variety not transferring | Predictable match serving | Competitive serve practice; variety-focused match simulation |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Mindfulness & flow state in sport*
+<!-- TAICHIKB-CROSSREF-END -->

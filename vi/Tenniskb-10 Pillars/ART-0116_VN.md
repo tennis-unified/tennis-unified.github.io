@@ -99,3 +99,10 @@ Thực hiện bài tập thích ứng chạm đất:
 3. **Giai đoạn 3 (Ngẫu nhiên).** Huấn luyện viên luân phiên ngẫu nhiên cấp trung tâm và rộng. Người chơi phải đọc quỹ đạo trong nhảy và điều chỉnh hình học chạm đất phù hợp. Huấn luyện viên tính điểm chính xác chạm (bề ngang đúng cho quỹ đạo) độc lập với kết quả cú đánh.
 
 Qua các tuần, người chơi xây dựng bản đồ tự động giữa quỹ đạo thị giác và hình học chạm đất. Chạm đất ngừng là thói quen và trở thành phản ứng — hiệu chỉnh cho bóng xác định sắp đến.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

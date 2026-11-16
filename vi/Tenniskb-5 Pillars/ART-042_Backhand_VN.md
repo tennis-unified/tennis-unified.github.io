@@ -40,3 +40,10 @@ Xoay thân cho cú trái tay thường sâu hơn so với thuận tay.
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Gọn Gàng"
 Cú trái tay hai tay nên mang lại cảm giác "gọn gàng". Không có khoảng cách nào giữa cánh tay dẫn động và ngực. Độ gọn này tạo ra cảm giác về sức mạnh cấu trúc to lớn, biến thân trên thành một cột xoay cứng vững duy nhất.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú trái tay hai tay*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng trong lực đẩy trái tay*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Cơ ngực lớn, cơ chéo bụng và nén lồng ngực*
+<!-- TAICHIKB-CROSSREF-END -->

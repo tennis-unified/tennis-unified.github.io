@@ -40,3 +40,10 @@ The athlete attempts to focus on the ball only in the final 100 milliseconds bef
 
 ## Practical Application: The "Fixed Point" Concept
 The athlete should treat the impact point as a "fixed point" in space. Regardless of the ball's speed or trajectory, the body must be calibrated to deliver the racket to that specific point at the specific time. The visual system's job is to confirm that the ball is arriving at that point, not to "chase" the ball.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual tracking accuracy, accommodation & depth perception*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Sensorimotor integration & hand-eye synchronization*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 4 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch04.html) — *Neuromuscular timing & sensory feedback*
+<!-- TAICHIKB-CROSSREF-END -->

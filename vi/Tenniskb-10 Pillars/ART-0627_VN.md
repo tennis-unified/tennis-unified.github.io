@@ -68,3 +68,10 @@ Volley thả nhẹ là thành phần tinh tế của lối chơi lưới. Chúng
 ## Ứng Dụng Thực Tế: "Bắt Bóng Bằng Vợt"
 
 Hãy tưởng tượng diện mặt vợt như bàn tay bạn đang bắt bóng. Bàn tay bạn không đấm bóng đi — nó bắt bóng và chuyển hướng nhẹ nhàng. Hình tinh thần này thúc đẩy lực cầm mềm và giảm tốc cần thiết cho volley thả nhẹ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

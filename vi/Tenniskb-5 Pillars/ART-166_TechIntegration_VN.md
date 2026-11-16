@@ -102,3 +102,10 @@ Công nghệ không thay thế huấn luyện viên; đó là kính lúp phóng 
 
 ## Ứng Dụng Thực Tế: "Chiếc Áo Sắt (Iron Man Suit)"
 Công nghệ là chiếc áo. Vận Động Viên Là Tony Stark. Chiếc áo khuếch đại sức mạnh, tốc độ, tầm nhìn, và độ bền. Nhưng nếu thiếu trực giác, phán đoán, và lòng can đảm của người lái, chiếc áo chỉ là kim loại đắt tiền. Hãy mặc chiếc áo. Đừng để chiếc áo mặc bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 19: Thấu hiểu cơ học-thích-nghi của mô mạc: Ứng dụng vào y học thể thao — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch19-thau-hieu-co-hoc-thich-nghi-cua-mo-mac-ung-dung-vao-y-hoc-the-th.html) — *Cơ học thích nghi và phòng ngừa chấn thương*
+<!-- TAICHIKB-CROSSREF-END -->

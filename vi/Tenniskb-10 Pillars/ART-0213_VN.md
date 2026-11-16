@@ -71,3 +71,10 @@ Tập xử lý thông tin hình ảnh liên quan đến tennis trong khi thực 
 
 ## Ứng Dụng Thực Tế: "Đọc Nhanh"
 Tập trích xuất thông tin tối đa từ các phơi bày hình Ảnh ngắn. Yêu cầu đối tác đánh bóng và đóng băng swing ở các điểm khác nhau (ném, vung sau, tiếp xúc, theo sau). Từ mỗi vị trí đóng băng, cố gắng dự đoán đích đến của cú đanh. Điều này huấn luyện não bộ trích xuất thông tin dự đoán từ đầu vào hình ảnh tối thiểu, tăng tốc đường ống xử lý và cho bạn đọc sớm hơn về ý định của đối thủ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

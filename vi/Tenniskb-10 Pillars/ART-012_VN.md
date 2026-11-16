@@ -107,3 +107,10 @@ Bài tập phát triển sức mạnh và ổn định một chân — bao gồm
 
 ## Ứng Dụng Thực Tế: "Cái Cung Và Mũi Tên"
 Hãy tưởng tượng cơ thể bạn là một cái cung và bóng là mũi tên. Trong pha tải giao bóng, bạn kéo cung: cong gối, xoay thân, và kéo giãn cơ như dây cung bị kéo lại. Càng kéo sâu, càng nhiều năng lượng lưu trữ — và mũi tên bay càng nhanh. Luyện bằng cách đứng tư thế trang trí và từ từ kéo cung: cong gối sâu hơn, xoay thân thêm, cảm nhận căng thẳng trong chân và core. Giữ vị trí kéo hoàn toàn ba giây, cảm nhận căng thẳng như dây cung kéo. Bây giờ giải phóng: duỗi gối, xoay thân tiến, và gia tốc cánh tay như thả mũi tên. Làm 10 lần không bóng, tập trung cảm giác năng lượng lưu trữ được giải phóng. Giao bóng không phải về sức mạnh cánh tay — nó về kéo cung sâu và giải phóng bung nổ. Càng kéo sâu (tải), mũi tên (bóng) bay càng nhanh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

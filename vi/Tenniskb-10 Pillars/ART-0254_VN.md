@@ -52,3 +52,10 @@ Sau trận, cập nhật bộ nhớ khai báo của bạn với thông tin mới
 
 ## Ứng Dụng Thực Tế: "Nhật Ký Chiến Thuật"
 Giữ một nhật ký chiến thuật nơi bạn ghi: (1) hồ sơ đối thủ (xu hướng, điểm mạnh, điểm yếu), (2) trải nghiệm trận đấu (gì hiệu quả, gì không), (3) bài học chiến thuật (nguyên tắc chung học được), và (4) kế hoạch chiến lược (cho các trận sắp tới). Xem lại nhật ký này trước mỗi trận. Nhật ký đóng vai trò là bộ nhớ khai báo bên ngoài, bù đắp cho giới hạn của bộ nhớ sinh học và đảm bảo rằng kiến thức chiến thuật của bạn có thể truy cập khi bạn cần nó nhất.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

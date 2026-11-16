@@ -32,3 +32,10 @@ Unlike simple rotation, the AOS delivers power **diagonally**. This is why elite
 
 ## Practical Application: The "Diagonal Stretch"
 The sensation should be a diagonal tension stretching from the right hip to the left shoulder (for a right-hander). If you only feel the "twist" in your waist, you are rotating; if you feel the "stretch" across your stomach, you are tensioning the AOS.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Front Functional Line (Anterior Oblique Sling)*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Obliques, adductors, and pectoralis major*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Anterior oblique myofascial force transmission*
+<!-- TAICHIKB-CROSSREF-END -->

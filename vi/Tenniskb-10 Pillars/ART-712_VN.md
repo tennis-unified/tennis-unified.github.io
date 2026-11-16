@@ -57,3 +57,10 @@ Một bài tập hiệu quả khác là đào tạo nhận thức góc: đặt m
 ## Ứng Dụng Thực Tế: "Hình Học Chìm Và Xé"
 
 Để áp dụng Hình học vòng cung topspin: đánh đổi giữa khoảng rỗng qua lưới và biên an toàn trong trận đấu tiếp theo của bạn, hãy bắt đầu bằng việc hình dung sân như một lưới hình học trước mỗi điểm. Xác định góc lớn nhất dành cho đối thủ và chọn vị trí để tối thiểu hóa nó. Thực hành một khuôn mẫu hình học cụ thể mỗi buổi tập cho đến khi nó trở nên bản năng. Quay video báº£n thÃ¢n thi Ä‘áº¥u và phân tích xem việc chọn vị trí của bạn có phù hợp với lý tưởng hình học hay không. Hãy nhớ: hình học sân là một kỹ năng được cải thiện với sự thực hành có chủ đích, giống như những cú đánh của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

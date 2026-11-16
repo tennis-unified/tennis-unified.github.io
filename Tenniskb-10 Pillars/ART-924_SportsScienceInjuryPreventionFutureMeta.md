@@ -182,3 +182,10 @@ The American College of Obstetricians and Gynecologists recommends:
 ## Practical Application: "Train for Two, Rest for Two"
 
 The most important principle during pregnancy is listening to your body — it is training for two, and rest is as important as activity. Modify your expectations: you are not trying to maintain peak performance; you are trying to maintain fitness for a healthy pregnancy and an efficient return. Focus on how you feel rather than what you can achieve on the court. After delivery, be patient with your return — your body has accomplished something extraordinary, and tennis will be there when you are ready. The strongest postpartum athletes are those who respected their bodies during pregnancy.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

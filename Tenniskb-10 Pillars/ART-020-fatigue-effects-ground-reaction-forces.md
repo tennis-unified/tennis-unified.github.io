@@ -162,3 +162,10 @@ Training that mimics the work-rest patterns of tennis:
 
 ## Practical Application: "The Third-Set Test"
 Monitor your own fatigue by tracking your serve speed across sets. In the first set, note your average serve speed (you can estimate by counting aces and service winners, or use a radar gun if available). In the second set, pay attention to whether you feel the same leg drive behind your serves. By the third set, check again: has your serve speed dropped? Most players experience a 5-15% decline. To combat this, practice "third-set serves": after a hard practice set, immediately practice serving as if you were in a third set. Focus on maintaining the same knee bend depth, the same leg drive intensity, and the same push-off force regardless of how tired you feel. This mental discipline—maintaining technical quality under fatigue—is as important as physical conditioning. Additionally, train your repeated-sprint ability by performing 10 × 20-meter sprints with 30 seconds rest between each. Time each sprint and note how much your speed declines across the 10 efforts. If your last sprint is more than 15% slower than your first, you need more endurance-specific training. The ability to maintain GRF production under fatigue is what separates players who fade in third sets from those who finish strong.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Linear kinetics, GRF & impulse-momentum*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+<!-- TAICHIKB-CROSSREF-END -->

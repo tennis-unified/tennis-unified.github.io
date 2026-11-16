@@ -43,3 +43,11 @@ Imagine a giant rubber band stretched from the outside heel to the opposite shou
 ### Drills:
 *   **Lateral Bound to Shadow:** Perform a powerful lateral jump to the outside leg, plant firmly, and immediately execute a shadow-swing forehand. Focus on the "pop" from the leg.
 *   **Resistance Band Load:** Tie a resistance band around the waist, anchored to the side. Step into the open stance; the band will pull you back, forcing you to actively drive into the outside leg to create stability and tension.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Eccentric pre-stretch & length-tension relationship*
+- [Chương 10: Mô Cơ (Muscular Tissue)](https://taichikb.github.io/vi/books/tortora_ap/ch10-mo-co.html) — *Eccentric muscle action & sarcomere mechanics*
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Elastic energy storage under eccentric loading*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Open-stance forehand loading mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

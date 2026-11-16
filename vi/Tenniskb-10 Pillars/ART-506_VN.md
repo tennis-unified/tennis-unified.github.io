@@ -84,3 +84,10 @@ Quay giao bóng từ bên cạnh và so sánh tư thế cào lưng với cảnh 
 ## Ứng Dụng Thực Tế: "Bài Tập Điện Thoại"
 
 Giữ một điện thoại (hoặc vật nhỏ) giữa bả bên đánh và thân khi bạn giả lập tư thế chiếc cúp và cào lưng. Nếu điện thoại rơi trong chuyển động, vai đang sập ra xa thân — dấu hiệu sổ bả kém. Nếu điện thoại ở nguyên trong cào lưng và giai đoạn gia tốc đầu, vai đang duy trì tư thế ổn định, tích tụ. Bài tập đơn giản này cung cấp phản hồi thời gian thực về kiểm soát bả trong giao bóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

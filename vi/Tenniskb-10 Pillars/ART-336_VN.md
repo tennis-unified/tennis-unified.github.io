@@ -62,3 +62,10 @@ Mối quan hệ này có nghĩa là những tay vợt muốn kết hợp chạm 
 ## Ứng Dụng Thực Hành: "Quang Phổ Thời Gian"
 
 Tập đánh forehand ở ba thời điểm chạm riêng biệt: sớm (khi bóng bay lên, 0,1 giây sau nảy), giữa (tại độ cao tối đa, 0,2–0,3 giây sau nảy) và muộn (khi bóng rơi xuống, 0,4–0,5 giây sau nảy). Lưu ý cách mỗi thời điểm chạm ảnh hưởng đến quỹ đạo và nhịp độ của bóng. Phát triển khả năng lựa chọn thời điểm chạm phù hợp dựa trên tình huống chiến thuật thay vì mặc định một thời điểm cho tất cả các cú đánh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

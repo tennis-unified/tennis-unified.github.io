@@ -111,3 +111,10 @@ Thực hiện buổi tập này 2-3 lần mỗi tuần trong giai đoạn trư�
 4. **Xoay cáp với bước** — 3 set 8 lần mỗi bên
 
 Nghỉ 60-90 giây giữa các set. Buổi tập này mất khoảng 8 phút và tạo ra kích thích tập luyện xoay mạnh mẽ. Theo dõi tiến trình bằng cách đo khoảng cách ném bóng y tế của bạn (đánh dấu trên tường hoặc sử dụng thước đo). Khi khoảng cách ném tăng thêm 10% hoặc nhiều hơn, bạn đang sản xuất nhiều sức mạnh xoay hơn — và sức mạnh đó sẽ xuất hiện trên sân dưới dạng giao bóng nhanh hơn và cú đánh cơ bản sâu hơn. Chuyển giao không phải phép thuật; đó là sinh cơ học.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

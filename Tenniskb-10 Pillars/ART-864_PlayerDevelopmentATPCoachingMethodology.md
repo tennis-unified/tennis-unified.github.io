@@ -254,3 +254,10 @@ Retest every 8-12 weeks to track improvement.
 | Slow first step | Insufficient lower body power | Late arrivals, defensive strokes | Depth jumps; reactive plyometrics; single-leg hops |
 | Upper body power deficit | Weak shoulder and arm contribution | Reduced serve and overhead power | Push press; plyometric push-ups; medicine ball chest passes |
 | Power drops in later matches | Insufficient power endurance | Reduced explosiveness | Power endurance circuits; combined power and conditioning |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Plyometric training & reactive SSC*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

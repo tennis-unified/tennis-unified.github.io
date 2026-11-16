@@ -191,3 +191,10 @@ Nhật ký này xây dựng tinh thần trách nhiệm và cung cấp dữ liệ
 | Tự đối thoại tiêu cực trong trận đấu | Huấn luyện tâm lý thiếu cấu trúc, không nhận thức về tự đối thoại | Mất tự tin, lỗi chồng chéo | Tái cấu trúc tự đối thoại; kỹ thuật dừng suy nghĩ; phát triển tín hiệu tích cực |
 | Không thể phục hồi sau lỗi | Không có quy trình phục hồi sau lỗi, rối loạn điều hòa cảm xúc | Chuỗi lỗi liên tiếp, mất set | Huấn luyện quy trình phục hồi sau lỗi; quy tắc 15 giây; thực hành chánh niệm |
 | Tập trung không nhất quán trong suốt trận đấu | Thiếu huấn luyện chú ý, thói quen tập trung kém | Đứt đoạn sự tập trung, lỗi không cần thiết | Huấn luyện chánh niệm; phát triển tín hiệu tập trung; bài tập kiểm soát chú ý |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+<!-- TAICHIKB-CROSSREF-END -->

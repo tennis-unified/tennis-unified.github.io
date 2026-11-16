@@ -117,3 +117,10 @@ Bài tập huấn luyện tái định trung tâm COM nhanh sau sản xuất cú
 
 ## Ứng Dụng Thực Tế: "Cú Vung Con Lắc"
 Hãy tưởng tượng tâm khối của bạn như một con lắc treo từ vai. Trong pha tải cú đáy, con lắc vung lại và hơi xuống — lưu trữ thế năng như con lắc ở đỉnh cung. Khi bạn khởi động vung tiến, con lắc vung tiến và lên — chuyển thế năng thành động năng. Chìa khóa là con lắc vung trong một chuyển động mượt, liên tục: lại khi tải, tiến khi vung. Luyện không bóng: lấy tư thế sẵn sàng, rồi tải chậm (cảm nhận COM dịch lại) và vung (cảm nhận COM dịch tiến). Chuyển động nên cảm thấy như cung con lắc mượt, không phải chuyển động giật, phân đoạn. Khi bạn cảm nhận được chuyển COM liên tục này, thêm bóng. Cú đáy của bạn sẽ có lực không chỉ từ nỗ lực cơ bắp mà từ động lượng cả cơ thể vung tiến qua bóng — như con lắc giải phóng năng lượng lưu trữ tại đáy cung.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

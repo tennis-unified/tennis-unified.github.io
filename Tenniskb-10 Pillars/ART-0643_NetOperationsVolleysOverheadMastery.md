@@ -60,3 +60,10 @@ The volley against the serve is a high-pressure shot that requires a well-placed
 ## Practical Application: "Chip Low, Rush Fast, Split Step"
 
 The chip-and-charge sequence: (1) chip the return low to the server's feet, (2) rush the net as fast as possible, (3) split step at the service line, (4) volley the server's reply. The split step is the most commonly forgotten element — drill it until it is automatic.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

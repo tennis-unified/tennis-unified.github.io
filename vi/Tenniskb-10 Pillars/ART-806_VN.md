@@ -153,3 +153,10 @@ Tiến triển: Thêm vận động trước khi tiếp cận, tăng độ khó 
 | Vô lê luôn chạy xa | Vung quá nhiều, mặt vợt mở | Lỗi, mất điểm | Vô lê mô phỏng với chuyển động rút ngắn; bài tập đấm với mục tiêu |
 | Chất lượng cú tiếp cận kém | Kỹ thuật cú tiếp cận yếu, thời gian kém | Tiếp cận thất bại, đánh trong lúc chuyển đổi | Bài tập cú tiếp cận từ các vị trí sân khác nhau |
 | Thường xuyên bị lob | Đặt vô lê dễ đoán, vị trí kém | Mất điểm, nản lòng | Bài tập ngụy trang; tập đa dạng độ sâu lưới |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

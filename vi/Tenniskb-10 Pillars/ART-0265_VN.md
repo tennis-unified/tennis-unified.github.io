@@ -65,3 +65,10 @@ Sử dụng chủ yếu thực hành ngẫu nhiên với sự biến thiên gi�
 
 ## Ứng Dụng Thực Tế: "Tiến Trình Đa Dạng"
 Cấu trúc thực hành của bạn với một tiến trình đa dạng: bắt đầu mỗi kỹ năng mới bằng thực hành khối để xây dựng kế hoạch vận động ban đầu, sau đó dần dần giới thiệu sự đa dạng khi kỹ năng phát triển, và cuối cùng thực hành kỹ năng trong điều kiện ngẫu nhiên, giống trận đấu. Ví dụ, khi học một cú giao bóng mới: (1) tập động tác với các lần cho bóng đều đặn, (2) thay đổi mục tiêu và xoáy, (3) tập giao bóng dưới áp lực với hậu quả chiến thuật. Tiến trình này xây dựng kỹ năng linh hoạt, chuyển giao được thực hiện trong thi đấu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên phân đoạn*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -68,3 +68,10 @@ Một buổi tập, một hình ảnh: **người chơi lùi vào một chiếc 
 4. **Chuyển đổi cú đỡ trên đầu thực tế.** Mô hình hoàn chỉnh: bóng lob vào, lùi, đỡ lại, đập — nhưng cú đập phải rơi vào sau vạch serve để tính. Độ sâu ở kết thúc chứng minh trục sống sót qua cuộc rút lui.
 
 Những người chơi thành thạo trục không lùi bước nhanh hơn — họ chỉ đến nơi đỡ lại với chân vẫn dưới người, đó là phiên bản duy nhất của cú đỡ trên đầu kết thúc điểm bóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

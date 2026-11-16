@@ -63,3 +63,10 @@ Two ratios make this usable. **Meters per shot** — distance covered divided by
 ## Practical Application: "Run the Ledger"
 
 Before the next surface-specific block, audit one match on video: count shots per point, estimate distance per point from court geometry, and classify every deceleration as slide, step-brake, or chop-step. Compute the two ratios — meters per shot and decelerations per point — and compare them to the surface benchmarks above. Then build the block to the gap: if meters per shot is high but deceleration capacity is the limiter, load eccentric braking; if rallies are lost late, load repeated-effort circuits. Re-run the ledger after four weeks — the ratios, not the soreness, tell you whether the conditioning worked.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+<!-- TAICHIKB-CROSSREF-END -->

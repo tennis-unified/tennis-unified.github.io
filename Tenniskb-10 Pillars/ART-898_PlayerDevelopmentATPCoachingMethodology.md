@@ -118,3 +118,10 @@ Rate yourself (1-5) on each communication skill:
 | Player lacks motivation | Poor motivational communication, over-criticism | Reduced effort, dropout risk | Emphasize intrinsic motivation; celebrate effort; connect to goals |
 | Player does not trust coach | Poor communication, inconsistency | Reduced coaching effectiveness | Build trust through consistency; active listening; honesty |
 | Cultural or language barriers | Insufficient adaptation | Misunderstanding, frustration | Learn about cultural differences; adapt communication style; use translators if needed |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

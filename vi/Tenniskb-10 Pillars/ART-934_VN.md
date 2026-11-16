@@ -102,3 +102,10 @@ Bài sức bền tốt nhất cho tennis là mô phỏng yêu cầu của trận
 Chơi năm set đầy đủ với khoảng nghỉ quy định (25 giây giữa các điểm, 90 giây khi đổi bên). Duy trì cường độ cạnh tranh xuyên suốt — đây không phải đập nhẹ. Theo dõi nhịp tim trong mỗi set. Tay vợt có điều kiện tốt nên thấy đỉnh nhịp tim ở Vùng 4-5 trong phản kháng, với hồi phục xuống Vùng 2-3 khi đổi bên. Nếu nhịp tim không giảm khi đổi bên, nền tảng hiếu khí cần công việc. Nếu không thể duy trì cường độ phản kháng đến set ba, thể lực đặc thù thể thao cần chú ý.
 
 Thực hiện bài này mỗi 2-3 tuần trong mùa giải để đánh giá thể lực. Theo dõi hồi phục nhịp tim (tốc độ giảm trong 90 giây đổi bên) như chỉ số hiệu suất chính. Tay vợt có nhịp tim giảm 20-30 nhịp/phút trong đổi bên có động cơ hiếu khí phát triển tốt. Tay vợt có nhịp tim giữ cao đang mang mệt mỏi không cần thiến vào set tiếp theo. Đây là bài phân biệt kẻ ngoan nhường với người cạnh tranh thực sự.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Hệ thống năng lượng cho thể lực quần vợt*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy*
+<!-- TAICHIKB-CROSSREF-END -->

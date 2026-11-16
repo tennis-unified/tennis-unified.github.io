@@ -75,3 +75,10 @@ Trọng tài chính và hệ thống thách thức (Hawk-Eye) là một phần c
 
 ## Ứng Dụng Thực Tế: "Nhà Ngoại Giao"
 Bạn là CEO của hiệu suất mình. Trọng Tài là Cơ Quan Điều Chỉnh. Challenge là Công Cụ Kiểm Toán. Quản lý Cơ Quan Điều Chỉnh bằng sự tôn trọng. Sử dụng Công Cụ Kiểm Toán bằng độ chính xác. Không bao giờ để việc điều chỉnh làm gián đoạn công việc kinh doanh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

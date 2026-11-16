@@ -41,3 +41,10 @@ Thực hành dự đoán không chỉ hướng cú đánh mà còn chuyển đ�
 
 ## Ứng Dụng Thực Tế: "Đọc Hình Học"
 Trước mỗi cú đánh, thực hiện nhanh một "đọc hình học": đánh giá các mối quan hệ không gian giữa bóng, đối thủ, và sân. Ghi nhận vị trí đối thủ liên quan đến đường cuối, vị trí bóng liên quan đến đối thủ, và các góc có sẵn. Từ các mối quan hệ không gian này, dự đoán hướng cú đánh có khả năng nhất. Cách tiếp cận hình học này cho dự đoán sử dụng cấu trúc cố hữu của tennis để tạo ra dự đoán chính xác mà không cần dựa vào đoán mò.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -78,3 +78,10 @@ Give the player one image: **the landing is a reflex you prepare for, not an imp
 3. **The varied landing.** The player practices landings with varied loads and surfaces — flat, slightly unstable, with a light push — so the gamma gain becomes flexible. The pre-activation adjusts to the event, not a fixed setting.
 
 A player with a tuned gamma gain does not push harder — they push sooner, because the reflex is already primed when the foot touches the ground.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 4 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch04.html) — *Neurologic considerations for movement*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+<!-- TAICHIKB-CROSSREF-END -->

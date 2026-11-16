@@ -82,3 +82,10 @@ Luyện cú đánh theo dõi COP (qua nệp áp suất hoặc phản hồi video
 
 ## Ứng Dụng Thực Tế: "Cảm Nhận Chân Mình"
 Lần sau bạn tập, chú ý trọng lượng bạn đặt ở đâu trên bàn chân trong mỗi cú đánh. Trong pha tải cú đáy trước, bạn nên cảm thấy áp lực trên chân sau — cụ thể phần trước bàn chân, sẵn sàng đẩy. Khi vung tiến, áp lực nên chuyển mượt sang chân trước, kết thúc với trọng lượng trên hoặc hơi trước chân trước. Luyện chuyển trọng lượng này không bóng: đứng tư thế sẵn sàng, tải lên chân sau (cảm thấy áp lực đó), rồi chuyển tiến như đánh bóng (cảm thấy áp lực chuyển sang chân trước). Làm 20 lần chậm, rồi 20 lần tốc độ trận. Nhận biết bản thể áp lực bàn chân này là nền tảng thăng bằng trong tennis — khi bạn cảm nhận được, bạn kiểm soát được, và khi bạn kiểm soát được, cú đánh của bạn trở nên nhất quán đáng kể.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

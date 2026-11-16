@@ -62,3 +62,10 @@ The combination of vertical and horizontal face angles determines the ball's spi
 ## Practical Application: "The Face Control Drill"
 
 Practice hitting foreballs at a target while consciously controlling the face angle. For each shot, decide in advance whether you want a closed, neutral, or open face, and adjust your wrist and forearm accordingly. Use a launch angle monitor or a coach's feedback to verify the ball's trajectory matches your intended face angle. This drill develops the conscious control of face angle that is essential for shot type variation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Elbow, forearm pronation & wrist mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

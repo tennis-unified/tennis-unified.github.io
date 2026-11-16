@@ -57,3 +57,10 @@ Một bài tập hiệu quả khác là đào tạo nhận thức góc: đặt m
 ## Ứng Dụng Thực Tế: "Phòng Thủ Sâu Giành Chiến Thắng"
 
 Để áp dụng Hình học nền sân: chọn vị trí hồi phục sau cú đánh sâu trong trận đấu tiếp theo của bạn, hãy bắt đầu bằng việc hình dung sân như một lưới hình học trước mỗi điểm. Xác định góc lớn nhất dành cho đối thủ và chọn vị trí để tối thiểu hóa nó. Thực hành một khuôn mẫu hình học cụ thể mỗi buổi tập cho đến khi nó trở nên bản năng. Quay video báº£n thÃ¢n thi Ä‘áº¥u và phân tích xem việc chọn vị trí của bạn có phù hợp với lý tưởng hình học hay không. Hãy nhớ: hình học sân là một kỹ năng được cải thiện với sự thực hành có chủ đích, giống như những cú đánh của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

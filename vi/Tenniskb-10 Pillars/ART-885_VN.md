@@ -149,3 +149,10 @@ Công nghệ GPS và theo dõi đã làm thay đổi công tác huấn luyện t
 | Khối lượng tập luyện quá mức | Không giám sát tải, tập quá mức | Mệt mỏi, chấn thương | Giám sát GPS/tải; theo dõi ACWR; quản lý khối lượng |
 | Lựa chọn cú đánh dễ đoán | Không phân tích cú đánh, theo thói quen | Đối thủ đoán trước và phản công | Dữ liệu cảm biến vợt; huấn luyện lựa chọn cú đánh; bài tập biến hóa |
 | Tỷ lệ điểm ngọt thấp | Không phân tích tiếp xúc bóng, kỹ thuật kém | Cú đánh thiếu ổn định | Phản hồi từ cảm biến vợt; rà soát kỹ thuật; bài tập điểm tiếp xúc |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -65,3 +65,10 @@ Người chơi nên đưa các bài tập này vào quy trình tập luyện th�
 
 ## Ứng Dụng Thực Tế: "Thói Quen Phục Hồi"
 Trong quá trình tập luyện, sau mỗi cú backhand, phục hồi ngay lập tức về vị trí sẵn sàng và thực hiện bước nhảy tách chân. Đếm số lần bạn ở trong vị trí sẵn sàng trước khi đối thủ đánh bóng. Theo dõi tiến trình qua các buổi tập để đảm bảo phục hồi và chuẩn bị đang trở nên tự động.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

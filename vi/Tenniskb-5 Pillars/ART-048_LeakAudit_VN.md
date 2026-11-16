@@ -43,3 +43,10 @@ Việc khắc phục phải được áp dụng từ mặt sân lên trên.
 4.  Tách Rời Vai.
 5.  Ổn Định Cổ Tay.
 Khi cả năm yếu tố được đồng bộ, vận động viên sẽ trải qua một sự gia tăng đột ngột về sức mạnh và giảm mệt mỏi, xác nhận rằng chuỗi động học đang hoạt động ở hiệu suất tối đa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Hệ thống vận động chức năng và các mẫu vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch05-he-thong-van-dong-chuc-nang-va-cac-mau-van-dong.html) — *Sàng lọc vận động và chẩn đoán rò rỉ năng lượng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Định thời chuỗi động học và điểm thất thoát lực*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Phát hiện và hiệu chỉnh lỗi cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

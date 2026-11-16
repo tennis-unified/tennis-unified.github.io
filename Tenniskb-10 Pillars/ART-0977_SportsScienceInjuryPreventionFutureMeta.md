@@ -39,3 +39,10 @@ Surface behavior is not fixed; it decays. Hard courts need resurfacing every few
 
 ## Practical Application: "Transition Like a Pro"
 Treat the surface calendar as a physical-preparation document, not a travel itinerary. Before each surface switch, insert a graded transition block: sliding progressions before clay, low-bounce and short-step drills before grass, and impact-load management before long hard-court stretches. The players who stay healthy across the season are rarely the ones with the best fitness tests — they are the ones whose tissues were prepared for the exact demands of the surface they were about to play on.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -42,3 +42,10 @@ Thực hành dự đoán cú đánh dựa trên xác suất ngữ cảnh (ví d�
 
 ## Ứng Dụng Thực Tế: "Đọc Sớm"
 Huấn luyện bản thân để trích xuất thông tin dự đoán càng sớm càng tốt trong sự chuẩn bị của đối thủ. Tập trung vào các tín hiệu đầu tiên xuất hiện: vị trí bàn chân, định hướng vai, và sự chuẩn bị vợt. Thay vì đợi cú vung đầy đủ phát triển, hãy đưa ra phán đoán dự đoán từ các tín hiệu sớm nhất có sẵn. Việc đọc sớm này cho bạn thời gian chuẩn bị thêm và là nền tảng của dự đoán cấp độ chuyên nghiệp.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

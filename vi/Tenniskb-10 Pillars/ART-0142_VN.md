@@ -37,3 +37,10 @@ Trong một giải lượng 15 cú đánh, sự khác biệt hóa thông giữa 
 ## Ứng Dụng Thực Tế: "Quy Tắc 70%"
 
 Trong buổi tập tiếp theo, cho người chơi đánh 10 forehand ở mức nỗ lực họ cảm nhận là 70%. Đo tốc độ bóng (súng radar hoặc tương đương máy bóng). Sau đó cho họ đánh 10 forehand ở nỗ lực cảm nhận 100%. Tốc độ bóng thường tăng chỉ 10-15% trong khi nỗ lực cảm nhận và chi phí hóa thông tăng 40-60%. Sau đó hướng dẫn người chơi tìm mức nỗ lực 70% tạo ra 85-90% tốc độ bóng tối đa — đây là **vùng tốc độ cấu trúc**, nơi chuỗi động lực và hệ thống dây chuyền làm phần lớn công việc.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Cơ học co cơ: lệch tâm/đồng tâm và lực–vận tốc*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Hệ cơ: nhóm cơ chủ vận và ổn định*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên phân đoạn*
+<!-- TAICHIKB-CROSSREF-END -->

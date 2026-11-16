@@ -22,3 +22,10 @@ Bài viết này trình bày ma trận chẩn đoán chủ đạo liên kết t�
 
 ## Ứng Dụng Thực Tế: "Lăng Kính Thống Nhất"
 Đừng bao giờ xử lý một triệu chứng đơn lẻ. Một lỗi thuận tay hiếm khi chỉ là "lỗi thuận tay" — đó là đầu ra của hệ thống. Chẩn đoán hệ thống; kê đơn hệ thống.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+<!-- TAICHIKB-CROSSREF-END -->

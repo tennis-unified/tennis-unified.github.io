@@ -59,3 +59,10 @@ The depth decision must be made within the first 0.3-0.5 s of flight — after t
 ## Practical Application: "Read the Arc, Take the Meter"
 
 Run a 20-minute block: the coach feeds from the opposite baseline with a deliberately heavy forehand, mixing in flat drives at a 1:3 ratio. The player's only task is to call "back" or "hold" within the first third of the ball's flight and live with the call — one crossover retreat on "back," stance held on "hold." Score the block by contact height: every forehand contacted between hip and shoulder counts positive; every shoulder-plus contact counts negative, and so does every ball contacted from more than 3 m deep. A player who reads the arc correctly 8 times in 10 stops experiencing heavy topspin as a weapon — it becomes a geometry problem with a known answer.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+<!-- TAICHIKB-CROSSREF-END -->

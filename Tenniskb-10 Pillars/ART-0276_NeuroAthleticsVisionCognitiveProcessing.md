@@ -67,3 +67,10 @@ Fall back on your pre-shot routine. The familiarity of the routine can restore a
 
 ## Practical Application: "The Choke Protocol"
 When you recognize the signs of choking (tension, overthinking, anxiety), activate a choke protocol: (1) acknowledge the anxiety without judgment, (2) take one conscious breath to restore present-moment awareness, (3) simplify your game plan to the next shot only, (4) use your pre-shot routine to restore structure, (5) focus on process cues ("watch the ball") rather than outcome thoughts. This protocol interrupts the choking cycle and restores automatic processing, allowing you to perform at your trained level despite the pressure.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

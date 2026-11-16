@@ -34,3 +34,10 @@ Lag occurs when the hand moves forward, but the racket head remains behind.
 
 ## Practical Application: The "Flail" Sensation
 The arm should feel like a flail or a whip, not a board. The hand is the handle, and the racket is the lash. The power comes from the "snap" of the lash, not the push of the handle.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Multi-segment angular kinetics & joint torque*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Upper extremity segment dynamics*
+- [Chương 4: Các Nguyên Lý Cơ Học (Biomechanical Principles)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch04-cac-nguyen-ly-co-hoc.html) — *Biomechanical lever & rotational dynamics*
+<!-- TAICHIKB-CROSSREF-END -->

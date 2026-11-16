@@ -103,3 +103,10 @@ This progression ensures technical foundations are solid before introducing the 
 | Forehand breaks down under pressure | Poor preparation, late contact point | Errors on fast balls or during crucial points | Drill early preparation cues: turn as the ball crosses the net |
 | Inability to hit high-balls effectively | Grip too extreme (Western), or insufficient practice on high balls | Missed opportunities on defensive high balls | Practice shoulder-height feeds; consider grip adjustment toward semi-Western |
 | Forehand too predictable | Single swing path, no tactical variation | Opponent can anticipate and counter | Develop 3 forehand gears: heavy spin, drive, and flat options |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+<!-- TAICHIKB-CROSSREF-END -->

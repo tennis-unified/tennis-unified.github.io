@@ -54,3 +54,10 @@ Dinh dưỡng và nước uống phù hợp là thiết yếu để duy trì ch�
 
 ## Ứng Dụng Thực Tế: "Kế Hoạch Dinh Dưỡng"
 Tạo kế hoạch dinh dưỡng cá nhân cho các ngày thi đấu: 2-3 giờ trước (bữa ăn cân bằng), 30-60 phút trước (ăn nhẹ), trong trận đấu (uống nước từng ngụm giữa các điểm, ăn nhẹ trong changeover), và sau trận (bữa phục hồi trong vòng 30 phút).
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Dinh dưỡng thể thao và cân bằng năng lượng*
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Hệ thống năng lượng cho thể lực quần vợt*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

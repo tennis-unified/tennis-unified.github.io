@@ -134,3 +134,10 @@ Lưu trữ năng lượng đàn hồi quá mức hoặc lặp lại có thể qu
 
 ## Ứng Dụng Thực Tế: "Cảm Nhận Sự Bật Ngược"
 Hãy đứng hai chân khép lại và thực hiện một nhảy dọc nhỏ. Chú ý bạn tự nhiên cong gối trước khi nhảy — bạn đang kéo giãn trước gân để lưu trữ năng lượng đàn hồi. Bây giờ thử nhảy không cong gối (từ tư thế thẳng chân hoàn toàn). Bạn sẽ thấy nhảy yếu hơn nhiều vì bạn không lưu trữ năng lượng đàn hồi. Thí nghiệm đơn giản này chứng minh sức mạnh của lưu trữ năng lượng đàn hồi. Trong tennis, nguyên tắc giống nhau áp dụng cho mọi chuyển động: nạp càng sâu và có kiểm soát (cong gối, xoay thân), bạn càng lưu trữ nhiều năng lượng đàn hồi — và chuyển động của bạn càng mạnh. Lần tới tập luyện, hãy tập trung vào cảm giác "nạp lò xo" trong giai đoạn nạp và "giải phóng lò xo" trong vung về phía trước. Sự bật ngược bạn cảm thấy là gân và màng bọc trả lại năng lượng bạn đã lưu khi nạp. Càng cảm nhận rõ sự bật ngược này, bạn càng dùng hiệu quả hệ thống năng lượng đàn hồi tự nhiên của cơ thể.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Dự trữ và hồi phục năng lượng đàn hồi mô mạc*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên phân đoạn*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+<!-- TAICHIKB-CROSSREF-END -->

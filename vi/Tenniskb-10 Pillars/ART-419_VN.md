@@ -65,3 +65,10 @@ Người chơi nên kết hợp các bài tập này vào quá trình tập luy�
 
 ## Ứng Dụng Thực Tế: "Bài Tập Bước Và Giữ"
 Thực hành cú backhand tư thế đứng kín, bước vào bóng bằng chân trước. Sau khi vung kiếm, giữ tư thế kết thúc trong hai giờ, kiểm tra xem trọng lượng có đang nằm vững trên chân trước và chân trước có đang cố định không. Bài tập này giúp xây dựng bộ nhớ cơ bắp cho một chuyển cân hiệu quả và pha chống chân trước.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên phân đoạn*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+<!-- TAICHIKB-CROSSREF-END -->

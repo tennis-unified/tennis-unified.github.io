@@ -60,3 +60,10 @@ Người chơi nên đưa các bài tập này vào thói quen luyện tập th�
 
 ## Ứng Dụng Thực Tế: "Điểm Bóng Phòng Thủ"
 Bạn đồng hành đánh những cú tấn công mạnh vào phía tay vợt của bạn. Luyện tập phòng thủ bằng sự kết hợp của slice, topspin cao và lob, tập trung vào việc tồn tại trong điểm bóng và buộc đối thủ phải mắc lỗi. Đếm xem bạn giành được bao nhiêu điểm từ thế bị độ. Theo dõi tiến trình qua các buổi tập để đảm bảo kỹ năng phòng thủ đang phát triển.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

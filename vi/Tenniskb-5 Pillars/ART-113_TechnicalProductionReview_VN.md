@@ -44,3 +44,10 @@ Mọi cú đánh chia sẻ cùng trình tự chuỗi động học:
 
 ## Ứng Dụng Thực Tế: "Bản Vẽ Cú Đánh"
 Một chuỗi động học, bốn giải pháp tiếp xúc. Làm chủ trình tự; điều chỉnh các biến số.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp cẳng tay và cổ tay*
+<!-- TAICHIKB-CROSSREF-END -->

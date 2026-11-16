@@ -88,3 +88,10 @@ To minimize these risks, players should:
 ## Practical Application: "The Drop Shot Touch"
 
 Practice the drop shot by standing at the baseline and aiming for a target zone within 2 meters of the net. Focus on the soft contact and the feeling of the ball "dying" on the racquet. Start with slow-paced feeds and progress to faster, more realistic situations. Develop the touch to consistently land the ball in the target zone, and practice disguising the drop shot with the same preparation as your standard forehand.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

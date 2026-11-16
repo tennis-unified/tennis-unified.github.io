@@ -75,3 +75,10 @@ Gió ảnh hưởng đáng kể đến việc trả giao bóng, khiến việc �
 
 ## Ứng Dụng Thực Tế: "Drill Đo Gió"
 Trong luyện tập trong điều kiện gió, đánh 10 cú trả ở vị trí bình thường và quan sát kết quả. Sau đó đánh 10 cú với vị trí điều chỉnh (gần hơn cho gió ngược, sâu hơn cho gió xuôi, ngang cho gió ngang). So sánh sự ổn định của mỗi phương pháp.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

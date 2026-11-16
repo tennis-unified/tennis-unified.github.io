@@ -43,3 +43,10 @@ Tư thế lag xảy ra khi:
 
 ## Ứng Dụng Thực Tế: "Lag Và Snap"
 Để phát triển lag và snap, hãy tập drill sau: Bắt đầu với vợt ở tư thế lag (cổ tay duỗi, đầu vợt sau tay). Bây giờ vung về trước, để đầu vợt lag sau tay càng lâu càng tốt. Khi cánh tay duỗi hết, cho phép đầu vợt snap qua, đuổi kịp tay và vượt qua nó. Cảm giác nên là đầu vợt " roi " xuyên qua bóng. Tập chậm trước, sau đó tăng tốc dần. Lag và snap là những gì tạo ra sức mạnh bùng nổ cho forehand hiện đại.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Động học góc và chuỗi động học tuần tự*
+<!-- TAICHIKB-CROSSREF-END -->

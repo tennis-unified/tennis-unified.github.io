@@ -95,3 +95,10 @@ Hãy tưởng tượng có một bức tường mỗi bên cơ thể bạn khôn
 | Ổn định bồn chậu đứng mở | Bồn chậu bằng phẳng xuyên suốt | Bồn chậu xuống > 2-3cm | Single-leg balance, open-stance shadow, cable chop |
 | Kiểm soát lực ngang giảm tốc | Dừng mượt, không ngửa cổ chân | Mất cân bằng, ngửa cổ chân | Lateral bound, deceleration drill, agility ladder |
 | Đối xứng hai bên | Chênh ≤ 10% | Chênh > 15% | Tập đơn phương bên yếu, bước ngang đơn phương |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Đường Bên: ổn định ngang và lực sang bên*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

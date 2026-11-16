@@ -73,3 +73,10 @@ Adequate sleep before matches is essential for optimal cognitive function. Sleep
 
 ## Practical Application: "The Mental Energy Budget"
 Treat mental energy like a physical energy budget. At the start of a match, you have a fixed amount of cognitive resources to spend. During low-pressure moments, spend minimally by simplifying decisions and conserving resources. During high-pressure moments, spend freely by engaging full tactical processing. This budgeting approach prevents the mental bankruptcy that occurs when players expend maximum cognitive effort on every point, leaving nothing for the critical moments.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Athletic nutrition & energy balance*
+<!-- TAICHIKB-CROSSREF-END -->

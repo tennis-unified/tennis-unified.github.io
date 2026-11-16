@@ -151,3 +151,10 @@ Các yếu tố may rủi này không được phân bổ đều và ảnh hư�
 ## Ứng Dụng Thực Tế: "Năng Khiếu Là Hạt Giống — Môi Trường Là Đất"
 
 Năng khiếu không có cơ hội là tiềm năng không thực hiện được. Mục tiêu của nhận diện và phát triển năng khiếu không phải tìm trẻ em có năng khiếu di truyền và thúc đẩy họ càng mạnh càng tốt, mà là tạo ra môi trường nơi tất cả vận động viên có thể khám phá và phát triển tiềm năng của mình. Tập trung vào huấn luyện chất lượng, phát triển thể chất đa dạng, mối quan hệ hỗ trợ và thử thách phù hợp. Những vận động viên đạt đến trình độ cao nhất không phải lúc nào cũng là những người có năng khiếu di truyền lớn nhất — họ là những người nhận được hỗ trợ đúng lúc và kiên trì qua những thử thách không thể tránh khỏi của phát triển dài hạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

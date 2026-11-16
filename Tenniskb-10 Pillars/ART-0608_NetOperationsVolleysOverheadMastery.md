@@ -72,3 +72,10 @@ The overhead smash is the ultimate finishing shot in tennis, but it demands prec
 ## Practical Application: "Throw the Racket at the Ball"
 
 The overhead is a throw. Visualize throwing the racket head at the ball with the same motion you would use to throw a baseball. The kinetic chain — legs, hips, shoulders, elbow, wrist — transfers energy from the ground through your body and into the ball. Trust the throw.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

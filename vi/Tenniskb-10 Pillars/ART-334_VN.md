@@ -62,3 +62,10 @@ Sự kết hợp của góc mặt vợt dọc và ngang xác định quay quanh 
 ## Ứng Dụng Thực Tài: "Bài Tập Kiểm Soát Mặt Vợt"
 
 Thực hành đánh cú forehand vào mục tiêu trong khi kiểm soát góc mặt vợt một cách có ý thức. Với mỗi cú đánh, quyết định trước xem bạn muốn mặt vợt khép, trung tính hay mở, và điều chỉnh cổ tay và cánh tay cho phù hợp. Sử dụng thiết bị theo dõi góc bay hoặc phản hồi của huấn luyện viên để xác minh quỹ đạo bóng khớp với góc mặt vợt mong muốn. Bài tập này phát triển khả năng kiểm soát góc mặt vợt một cách có ý thức — điều cần thiết để thay đổi đa dạng các loại cú đánh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+<!-- TAICHIKB-CROSSREF-END -->

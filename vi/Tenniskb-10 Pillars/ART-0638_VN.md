@@ -64,3 +64,10 @@ Volley tay khác rộng khi di chuyển là một trong những cú đánh khó 
 ## Ứng Dụng Thực Tế: "Xoay Người, Không Phải Vươn Tay"
 
 Trên volley tay khác rộng, bản năng tự nhiên là vươn tay ra xa. Hãy chống lại bản năng này. Thay vào đó, hãy xoay vai và để cước chéo đưa bạn đến gần bóng. Việc xoay vai tạo ra lực và khả năng kiểm soát mà việc vươn tay không thể mang lại.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

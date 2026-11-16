@@ -80,3 +80,10 @@ Tennis players are not powerlifters. The goal is not to achieve the highest poss
 Design your gym week around four foundational lifts: a squat pattern, a hinge pattern (deadlift), a push pattern (bench press or overhead press), and a pull pattern (row or pull-up). Perform each once per week at minimum, ideally twice during the preparatory phase. Build every other exercise — lunges, core work, accessory movements — around this core.
 
 Track your numbers. A player who knows their squat, deadlift, bench, and row benchmarks has an objective measure of progress and a clear target for the next training block. If your numbers are going up but your serve speed is flat, the problem is not the gym — it is the transfer. Add jump squats, medicine ball throws, and sprint work to bridge the gap between the weight room and the court. Strength is the foundation, but power is the house.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -58,3 +58,10 @@ Phức hợp thắt lưng-chậu—ngõ giao giữa cột sống thắt lưng v�
 
 ## Ứng Dụng Thực Tế: "Bài Thực Hành Kiểm Soát Chậu"
 Thực hành kiểm soát vị trí chậu của bạn trong cú đánh nền. Tập trung giữ chậu cân bằng và ổn định trong lúc nạp, sau đó xoay nó mượt mà và đầy đủ trong giai đoạn vung về phía trước. Nếu bạn cảm thấy chậu rơi, nghiêng, hoặc xoay không đều, hãy luyện tập bài tập ổn định thắt lưng-chậu bao gồm cầu (bridge), bird-dog, và dead bug.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên phân đoạn*
+<!-- TAICHIKB-CROSSREF-END -->

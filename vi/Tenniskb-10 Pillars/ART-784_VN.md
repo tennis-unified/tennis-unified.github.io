@@ -57,3 +57,10 @@ Cách theo dõi đơn giản bao gồm ghi chép thống kê mô hình xác su�
 ## Ứng Dụng Thực Tế: "Xác Suất Thắng Là La Bàn Của Bạn"
 
 Bắt đầu theo dõi mô hình xác suất thắng trong năm trận đấu tiếp theo của bạn. Sử dụng hệ thống đếm đơn giản trên tấm thẻ ghi chú hoặc ứng dụng thống kê quần vợt. Sau mỗi trận đấu, tính phần trăm và so sánh với mục tiêu của bạn (thường là 60% trở lên cho hầu hết các chỉ số). Xác định các tình huống cụ thể mà chỉ số giảm (cuối set, sau các pha bóng dài, dưới áp lực tỷ số) và phát triển tập luyện mục tiêu cho các kịch bản đó. Trong mùa giải, theo dõi xem chỉ số có cải thiện và tương quan với chiến thắng trong trận đấu hay không.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

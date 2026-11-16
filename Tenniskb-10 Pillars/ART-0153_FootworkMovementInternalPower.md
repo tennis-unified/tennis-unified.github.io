@@ -64,3 +64,10 @@ Over a three-set match, the cumulative cost of disconnected movement is signific
 ## Practical Application: "The Filled Bottle Drill"
 
 Give the player a half-liter water bottle. Have them hold it against their lower abdomen with light hand pressure and perform slow shadow swings — forehand, backhand, volleys — while keeping the bottle pressed firmly enough that the water does not slosh. The moment the water sloshes audibly, the trunk has gone soft and the diaphragm has released. This is a direct biofeedback tool: silent water = connected trunk = the internal mass is moving with the skeleton. Run this drill for two minutes at the start of every footwork session.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+<!-- TAICHIKB-CROSSREF-END -->

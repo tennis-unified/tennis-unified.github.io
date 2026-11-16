@@ -60,3 +60,10 @@ Nếu bạn mang thai và muốn tiếp tục chơi quần vợt, trước tiên
 | Người chơi trải qua khó thở trong khi chơi | Dung tích phổi giảm; nhu cầu oxy tăng | Mệt mỏi; khó chịu | Giảm cường độ; buổi chơi ngắn hơn; theo dõi bài kiểm tra nói |
 | Người chơi báo cáo chảy máu âm đạo hoặc rò dịch | Biến chứng sản khoa tiềm ẩn | Biến chứng thai kỳ | Dừng ngay lập tức; đánh giá y tế; không tiếp tục nếu không có chấp thuận |
 | Người chơi sau sinh quay lại quá nhanh mà không phục hồi cơ lõi | Tách cơ bụng; suy cơ sàn chậu | Són tiểu; đau lưng; thoát vị | Vật lý trị liệu sàn chậu; phục hồi cơ lõi; quay lại lộ trình 4-6 tuần |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

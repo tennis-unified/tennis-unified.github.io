@@ -123,3 +123,10 @@ Exercises that develop the tension network's ability to maintain structural inte
 
 ## Practical Application: "The Spider Web"
 Imagine your body as a spider's web—a network of tension lines (muscles, tendons, fascia) connecting the bones (the anchor points). When you push off the ground, the force travels through the web like a vibration, reaching every part of the structure. If one strand of the web is broken (a weak muscle or restricted fascia), the vibration dissipates at that point, and the rest of the web doesn't receive the full force. Your job is to keep every strand of the web intact and tensioned. Practice this by performing a groundstroke and mentally scanning your body from feet to racket: Are your legs pushing effectively? Is your hip rotation complete? Is your trunk rotating fully? Is your shoulder rotating? Is your wrist firm? Any point where the answer is "no" is a broken strand in your web—a kinetic leak. Address each leak through targeted training, and your web will transmit forces with maximum efficiency, producing more power with less effort.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Myofascial force transmission across segments*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

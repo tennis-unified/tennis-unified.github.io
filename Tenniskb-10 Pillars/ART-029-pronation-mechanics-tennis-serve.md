@@ -141,3 +141,10 @@ Exercises that maintain forearm range of motion:
 
 ## Practical Application: "The Doorknob Turn"
 Imagine turning a doorknob—this is pronation. Your forearm rotates, turning the palm from facing up to facing down. In the serve, this doorknob turn happens explosively in the last 50 milliseconds before ball contact, adding crucial speed to the racket head. Practice this by holding your racket as if gripping a doorknob and rapidly turning your forearm from supination (palm up) to pronation (palm down). Do this 20 times, gradually increasing speed. Now incorporate this into your serve: from the trophy position, as your arm accelerates forward, add an explosive doorknob turn (pronation) just before ball contact. The racket face will snap closed slightly, adding speed and control to your serve. This doorknob turn is the final piece of the serving puzzle—the last bit of speed that separates a good serve from a great one. Practice it in isolation first, then integrate it into your full serve. The feeling should be like turning a doorknob quickly: a short, explosive rotation that adds speed without adding effort.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Elbow, forearm pronation & wrist mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -36,3 +36,10 @@ Quiet-eye training has been shown to improve accuracy in aiming tasks and has be
 
 ## Practical Application: "Steal a Longer Gaze"
 You cannot buy a longer quiet eye, but you can practice one, and the practice is beautifully simple: earlier fixation, on the right target, held longer. Before every serve, lock the target, lock the ball, and keep your head still through contact. On every return, give the ball your eyes from the moment it leaves the racket. The champions' gaze is not a mystical gift — it is a habit of attention, and like every habit in this vault, it yields to deliberate repetitions. Watch the ball — really watch it — and the rest of the stroke follows.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

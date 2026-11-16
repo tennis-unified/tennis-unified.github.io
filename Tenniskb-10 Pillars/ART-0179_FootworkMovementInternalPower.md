@@ -66,3 +66,10 @@ Under pace, players hold their breath — a pressure reflex that stiffens the tr
 ## Practical Application: "Keep the Beat"
 
 At the next session, run three tempo-shock rounds of 10 balls each. Before each round the player sets one cadence intention — short last two steps, shoulders on the first step, exhale on contact — never all three at once. After each round, one self-scored question per intention: were the last two steps quiet? Did the shoulders turn before travel ended? Did every strike get an exhale? Six of ten balls passing on each count is the target, and the count that fails most becomes the next session's only focus. Cadence is not a personality trait — it is a trained rhythm that survives pace because it was rehearsed under pace.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

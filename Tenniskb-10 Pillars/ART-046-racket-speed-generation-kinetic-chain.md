@@ -93,3 +93,10 @@ The arm and wrist add final speed:
 
 ## Practical Application: "The Speed Chain"
 Imagine your body as a chain of speed multipliers: each segment takes the speed from the previous segment and adds to it. Your legs generate the base speed, your hips multiply it, your trunk multiplies it further, your shoulder multiplies it again, and your arm and wrist add the final multiplication. The total racket speed is the product of all these multipliers. If any multiplier is weak (a weak segment), the total speed drops dramatically. Practice this by performing groundstrokes and mentally tracking the speed contributions: feel the base speed from your legs, the multiplication from your hips, the further multiplication from your trunk, and the final multiplication from your arm and wrist. Any point where you feel the speed dropping is a weak multiplier that needs strengthening.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

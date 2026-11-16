@@ -58,3 +58,10 @@ Tối thiểu hóa sự phân tâm bên ngoài (ví dụ: vấn đề trang thi�
 
 ## Ứng Dụng Thực Tế: "Danh Sách Kiểm Tra Flow"
 Trước mỗi trận, xem qua một danh sách kiểm tra flow ngắn: (1) Mục tiêu của tôi có rõ ràng cho trận này không? (2) Mức thử thách có phù hợp không? (3) Tôi đã tối thiểu hóa sự phân tâm chưa? (4) Tôi tập trung vào quy trình hay kết quả? Giải quyết bất kỳ câu trả lời "không" nào trước khi trận bắt đầu. Trong trận, nếu bạn nhận thấy flow trôi tuột, quay lại danh sách kiểm tra và xác định điều kiện nào đang thiếu. Cách tiếp cận có cấu trúc này cho việc tạo flow biến một trạng thái bí ẩn, khó nắm bắt thành điều kiện hiệu suất có thể tái tạo.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -99,3 +99,10 @@ Chấn thương cổ tay và bàn tay chiếm khoảng 10-15% các tình trạng
 ## Ứng Dụng Thực Tế: "Cầm Nhẹ Nhàng, Vung Tự Do"
 
 Cầm vợt quá chặt truyền mọi rung động và sốc trực tiếp vào cổ tay. Tập cầm vợt ở mức lực 3-10 trong khi rally — đủ chắc để kiểm soát vợt, đủ lỏng để hấp thụ sốc. Giữa các điểm, có ý thức nhả mọi lực cầm và lắc tay. Theo thời gian, sự thư giãn có ý thức này trở thành bản năng, giảm đáng kể áp lực cổ tay tích lũy. Cổ tay của bạn sẽ cảm ơn sau 10.000 cú vợt.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

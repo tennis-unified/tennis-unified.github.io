@@ -67,3 +67,10 @@ Trong tập luyện, cố ý thu thập thông tin chiến thuật trong những
 
 ## Ứng Dụng Thực Tế: "Hàng Đợi Ưu Tiên"
 Trong khi chơi, duy trì một hàng đợi ưu tiên tinh thần về các yêu cầu xử lý. Hàng đợi nên là: (1) theo dõi quả bóng, (2) thực thi cú đánh đã lên kế hoạch, (3) giám sát đối thủ, (4) điều chỉnh chiến thuật. Xử lý các mục theo thứ tự này, và kháng cảm giác nhảy sang các mục ưu tiên thấp hơn trong khi các mục ưu tiên cao hơn đang hoạt động. Cách tiếp cận có cấu trúc này ngăn chặn quá tải nút thắt xảy ra khi người chơi cố gắng xử lý mọi thứ đồng thời và đảm bảo rằng thông tin quan trọng nhất (theo dõi quả bóng) luôn được xử lý đầu tiên.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

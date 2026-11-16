@@ -52,3 +52,10 @@ Giảm tải ngoại lai bằng cách quản lý môi trường: giảm thiểu 
 
 ## Ứng Dụng Thực Tế: "Tập Trung Một Việc"
 Trong tập luyện và thi đấu, hạn chế sự tập trung ý thức vào một việc tại một thời điểm. Trước điểm, tập trung vào kế hoạch chiến thuật. Trong điểm, tập trung vào bóng. Sau điểm, tập trung vào điều chỉnh. Cách tiếp cận tập trung theo thứ tự một việc này ngăn chặn quá tải bộ nhớ làm việc xảy ra khi người chơi cố gắng giám sát nhiều khía cạnh hiệu suất cùng lúc. Tập trung một việc đảm bảo bộ nhớ làm việc không bao giờ bị quá tải và mỗi điểm nhận được tài nguyên nhận thức tối đa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

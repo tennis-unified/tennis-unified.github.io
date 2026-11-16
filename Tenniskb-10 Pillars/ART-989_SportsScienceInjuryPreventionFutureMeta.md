@@ -168,3 +168,10 @@ Decision training is practice that develops both motor skills and decision-makin
 ## Practical Application: "Randomize Your Practice"
 
 The next time you practice, eliminate basket drilling entirely. Instead, have your partner or coach feed balls randomly: short and wide, deep and down the middle, high and soft, low and fast. You must decide: attack or defend? Crosscourt or down-the-line? Topspin or slice? This random, decision-based practice will feel harder and less comfortable than repetitive basket drilling, but it will transfer far better to match play. You will make more errors in practice, but you will make fewer errors in matches. This is the paradox of effective practice: what feels worse in training produces better results in competition.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

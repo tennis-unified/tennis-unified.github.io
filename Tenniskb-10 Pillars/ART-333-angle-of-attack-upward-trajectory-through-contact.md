@@ -58,3 +58,10 @@ Elite players adjust these three variables based on the tactical situation and t
 ## Practical Application: "The Angle Ladder"
 
 Practice hitting forehands at three distinct angles of attack: shallow (15 degrees), medium (25 degrees), and steep (35 degrees). Use a launch angle monitor or have a coach assess the ball's trajectory. Focus on the feeling of each angle—the shallow angle feels more "through" the ball, while the steep angle feels more "up and over." Develop the ability to switch between angles based on the tactical situation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+<!-- TAICHIKB-CROSSREF-END -->

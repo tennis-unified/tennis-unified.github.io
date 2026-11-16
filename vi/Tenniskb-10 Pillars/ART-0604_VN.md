@@ -64,3 +64,10 @@ Cầm vợt kiểu lục địa là nền tảng của mọi lối chơi lưới
 ## Ứng Dụng Thực Tế: "Đặt Và Quên Đi"
 
 Một khi đã lên tới vị trí lưới, hãy đặt kiểu cầm lục địa và không bao giờ thay đổi. Hãy tin tưởng rằng một vị trí kiểu cầm duy nhất này đáp ứng mọi tình huống volley — bóng cao, bóng thấp, volley tay thuận, volley tay khác, cắt bóng hay đánh mạnh. Ít quyết định hơn tại lưới đồng nghĩa với phản xạ nhanh hơn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

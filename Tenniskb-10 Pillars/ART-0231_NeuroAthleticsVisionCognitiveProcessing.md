@@ -61,3 +61,10 @@ Reduce extraneous load by managing the environment: minimize distractions, provi
 
 ## Practical Application: "The One-Thing Focus"
 During practice and competition, limit conscious focus to one thing at a time. Before the point, focus on the tactical plan. During the point, focus on the ball. After the point, focus on the adjustment. This sequential single-focus approach prevents the working memory overload that occurs when players try to monitor multiple aspects of performance simultaneously. The one-thing focus ensures that working memory is never overwhelmed and that each point receives maximum cognitive resources.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

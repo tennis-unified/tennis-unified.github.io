@@ -130,3 +130,10 @@ Trước mỗi buổi tập hoặc trận đấu, cam kết 10 phút khởi đ�
 - 3 phút giao bóng tiến triển (từ 50% đến 80% công lực)
 
 Khoản đầu tư 10 phút này làm giảm đáng kể nguy cơ chấn thương và cải thiện chất lượng giao bóng. Người chơi bỏ qua khởi động để "tiết kiệm thời gian" thực chất đang mất thời gian qua chấn thương và hiệu suất không tối ưu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

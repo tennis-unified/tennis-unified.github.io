@@ -159,3 +159,10 @@ For most tennis players, four supplements cover the evidence-based basics:
 4. **Vitamin D** — 1,000-4,000 IU per day, depending on blood level (supports bone health and immune function)
 
 These four supplements, combined with a well-planned diet (Article 941) and proper hydration (Article 942), cover the nutritional foundations of tennis performance. Everything else — the fat burners, the test boosters, the recovery blends — is marketing. Spend your money on quality food, quality training, and these four evidence-based supplements. The margin between winning and losing is rarely found in a pill bottle.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Muscular mechanics: eccentric/concentric & force-velocity*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Muscular system: prime movers & stabilizers*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+<!-- TAICHIKB-CROSSREF-END -->

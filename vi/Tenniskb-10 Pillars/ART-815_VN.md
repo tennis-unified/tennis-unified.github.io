@@ -180,3 +180,10 @@ Buổi tập hiệu quả này bao quát tất cả các mẫu vận động ch�
 | Chấn thương vai thường xuyên | Nhóm cơ xoay vai yếu, mất cân bằng cơ | Viêm gân, hội chứng va chạm khoang vai | Tăng cường xoay ngoài; bài tập ổn định bả vai |
 | Mệt mỏi chân trong các trận đấu dài | Sức bền thân dưới không đủ | Giảm khả năng bao phủ sân | Tập sức bền với squat; tập dung nạp lactate |
 | Tốc độ vung đầu vợt hạn chế | Sức mạnh xoay người yếu, độ ổn định core kém | Cú đánh cuối sân bị động | Ném bóng y tế; woodchop với dây cáp; chương trình ổn định core |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+<!-- TAICHIKB-CROSSREF-END -->
