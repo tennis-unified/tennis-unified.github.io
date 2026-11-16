@@ -60,3 +60,10 @@ Não lưu ba loại kiến thức slice:
 
 ## Ứng Dụng Thực Tế: "La Bàn Thích Ứng Slice"
 Thích ứng slice là la bàn giữ bạn di chuyển đến đích. Không có thích ứng slice, bạn chỉ đang chạy vòng tròn; có thích ứng slice, bạn đang chạy để chiến thắng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+<!-- TAICHIKB-CROSSREF-END -->

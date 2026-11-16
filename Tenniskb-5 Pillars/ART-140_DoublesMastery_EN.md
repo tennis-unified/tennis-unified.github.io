@@ -60,3 +60,10 @@ The brain stores three types of doubles knowledge:
 
 ## Practical Application: "The Doubles Adaptation Compass"
 Doubles adaptation is the compass that keeps you moving toward the finish line. Without it, you're just running in circles; with it, you're running to win.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+<!-- TAICHIKB-CROSSREF-END -->

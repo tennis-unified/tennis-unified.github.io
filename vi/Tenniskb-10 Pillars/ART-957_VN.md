@@ -129,3 +129,10 @@ Phá vỡ chu kỳ tiêu cực đòi hỏi can thiệp tại bất kỳ điểm 
 ## Ứng Dụng Thực Tế: "Xây Dựng Danh Mục Tự Tin Của Bạn"
 
 Sự tự tin không phải cảm giác — nó là kết luận rút ra từ bằng chứng. Tạo "danh mục tự tin" ghi chép thành tích thực hiện của bạn: kết quả trận đấu, cải thiện thống kê, thành công chiến thuật, và cột mốc cạnh tranh. Xem lại danh mục này trước thi đấu để nhắc bản thân về bằng chứng hỗ trợ năng lực của bạn. Bổ sung với trải nghiệm gián tiếp (xem người chơi ở mức của bạn thành công), thuyết phục lời nói (phản hồi huấn luyện viên cụ thể) và điều hòa sinh lý (thở và đánh giá lại kích động). Tự tin xây dựng trên bằng chứng là tự tin kéo dài.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -104,3 +104,10 @@ After ball contact, the shoulder decelerates:
 
 ## Practical Application: "The Shoulder Whip"
 The shoulder internal rotation in the serve is like the crack of a whip—the final, fastest movement that produces the most dramatic effect. To maximize this whip, focus on maximum external rotation during loading (cock the shoulder back as far as possible) and explosive, uncontrolled internal rotation during acceleration (let the shoulder snap forward). Practice this by performing shadow serves with a focus on maximum cocking and explosive uncocking of the shoulder. The faster and more complete the cocking, the faster the uncocking—and the greater your racket head speed.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

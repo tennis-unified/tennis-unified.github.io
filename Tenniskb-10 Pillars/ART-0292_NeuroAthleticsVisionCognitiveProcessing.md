@@ -64,3 +64,10 @@ Future developments may include haptic feedback (feeling the ball), more realist
 
 ## Practical Application: "The VR Practice Session"
 Integrate VR training into your practice schedule with weekly sessions: (1) 15 minutes of perceptual-cognitive training (tracking virtual balls, reading virtual opponents), (2) 15 minutes of tactical training (making decisions in simulated match situations), (3) 10 minutes of pressure training (playing virtual points with consequences). This structured VR program provides targeted cognitive training that complements on-court practice and accelerates the development of the perceptual-cognitive skills that underpin elite tennis performance.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+<!-- TAICHIKB-CROSSREF-END -->

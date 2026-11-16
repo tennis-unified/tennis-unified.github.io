@@ -39,3 +39,10 @@ Bài viết này tổng hợp các nguyên lý sinh cơ học được trình b�
 
 ## Ứng Dụng Thực Tế: "Bản Vẽ Kỹ Thuật Sinh Cơ Học"
 Vận động viên nội hóa trình tự: **Mặt Sân → Hông → Vùng Lõi → Vai → Cánh Tay → Vợt**. Mọi cú đánh đều là một biến thể của mẫu chủ đạo này.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và lõi*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Động lực học tuyến tính, GRF và xung lượng*
+<!-- TAICHIKB-CROSSREF-END -->

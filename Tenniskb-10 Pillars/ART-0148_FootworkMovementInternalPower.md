@@ -73,3 +73,10 @@ However, even in these short-contact situations, the soft-over-hard principle ap
 ## Practical Application: "The Trampoline Drill"
 
 At the next session, introduce the absorption concept with a simple image: **the racket is a trampoline, not a wall.** Have the player stand at the baseline and the coach feed 10 balls at moderate pace (90 km/h). The player hits these normally, with no special instruction. Then the coach feeds 10 balls at heavy pace (120 km/h+). On these balls, the player's only instruction is: **let the ball push the racket back 15 cm, then redirect it.** Most players will initially resist — their instinct is to brace against the heavy ball. The coach should continue feeding heavy balls until the player stops resisting and allows the give. Once the player feels the reduced impact (the ball "lands" softly on the strings rather than slamming them), have them hit 20 more heavy balls, focusing on redirecting the absorbed energy into a controlled reply. Measure the player's perceived impact force on a 1-10 scale: rigid blocking rates 8-9, elastic deflection rates 3-4. The goal is to make the elastic deflection the default response to heavy pace, so that the player automatically absorbs and redirects without conscious decision. Over time, this reduces joint stress, improves control against big hitters, and allows the player to use the opponent's pace as a weapon rather than a threat.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Elbow, forearm pronation & wrist mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

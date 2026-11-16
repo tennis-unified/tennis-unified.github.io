@@ -111,3 +111,10 @@ Exercises that increase the range of moment of inertia manipulation:
 
 ## Practical Application: "The Figure Skater"
 Watch a figure skater spin: when their arms are extended, they spin slowly; when they pull their arms in, they spin rapidly. This is the conservation of angular momentum in action—and it's exactly what happens in your tennis strokes. During the loading phase, your arms extend behind you (like the skater with arms out), storing angular momentum. During the forward swing, your arms pull inward (like the skater pulling arms in), and your rotational speed increases dramatically. Practice this awareness by performing a forehand while consciously noting the feeling of your arms extending during loading and pulling inward during the swing. The more you can feel this "figure skater" effect, the more efficiently you'll convert your loading into racket speed. The key is that the arm pull-in must be timed to coincide with trunk rotation—not before, not after. When the timing is right, you'll feel a whip-like snap at the end of your swing that adds speed without adding effort.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

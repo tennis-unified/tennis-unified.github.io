@@ -42,3 +42,10 @@ Hành động cơ hướng ly tâm — nơi cơ kéo dài dưới căng thẳng 
 
 ## Ứng Dụng Thực Tế: "Giai Đoạn Hạ Chậm"
 Đối với mỗi bài tập lực trong lịch trình của bạn, hãy nhấn mạnh giai đoạn hướng ly tâm (hạ xuống) bằng cách dành 3-5 giây để hạ trọng lượng. Điều này phát triển lực hướng ly tâm thiết yếu cho việc tải an toàn, giảm tốc và hoàn cú trong tennis.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Cơ học co cơ: lệch tâm/đồng tâm và lực–vận tốc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

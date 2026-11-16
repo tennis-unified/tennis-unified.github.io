@@ -67,3 +67,10 @@ Practice with intentional distractions to build resistance to attentional lapses
 
 ## Practical Application: "The Concentration Anchor"
 Develop a personal "concentration anchor" a specific sensory cue that you use to re-establish focus when it drifts. For some players, the anchor is the sound of the ball hitting the racket. For others, it is the feel of the strings. When you notice your concentration wandering, return to your anchor. This simple technique provides a rapid, reliable way to restore concentration during competition and prevents the prolonged lapses that lead to unforced errors and performance decline.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

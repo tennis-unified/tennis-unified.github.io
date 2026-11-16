@@ -424,3 +424,10 @@ PRESCRIPTION = {
 
 ## Ứng Dụng Thực Tế: "Cái Ong Nghề"
 App Chẩn Đoán Là **Cái Ong Nghề Của Hệ Thống 5 Cột Trụ**. Nó Không Thay Thế Bác Sĩ (HLV/Y Tế) — Nó Khuếch Đại Thính Giác Của Họ. Nó Nghe Những Tiêu Âm (Trôi HRV, Quay Lùi Kỹ Thuật, Tải Nhận Thức) Trước Khi Chúng Trở Thành Vụ Sập. **Sử Dụng Hàng Ngày. Tin Cậy Chẩn Đoán Phân Biệt. Xác Minh Đơn Thuốc. Sự Nghiệp Của VĐ Là Bệnh Nhân.**
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và lõi*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

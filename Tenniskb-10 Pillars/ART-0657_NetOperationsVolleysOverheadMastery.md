@@ -56,3 +56,10 @@ Facing big serve returns at the net requires the block volley, body volley, and 
 ## Practical Application: "Block and Redirect"
 
 Against big serve returns: (1) block the ball with a stable racket face, (2) redirect it to the open court, (3) do not try to hit winners. Survival is the goal — keep the ball in play and trust your partner to finish the point.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

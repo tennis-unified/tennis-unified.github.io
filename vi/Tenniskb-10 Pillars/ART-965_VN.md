@@ -149,3 +149,10 @@ Những vận động viên này thành công dù tương đối trẻ trong nh�
 ## Ứng Dụng Thực Tế: "Năng Khiếu Không Có Sinh Nhật"
 
 Ảnh hưởng tuổi tương đối là một trong những nguồn bất công quan trọng nhất trong tennis trẻ em. Nó hệ thống tạo lợi thế cho vận động viên sinh sớm và bất lợi cho vận động viên sinh muộn dựa trên không gì ngoài ngày sinh. Huấn luyện viên, phụ huynh và người quản lý phải chủ động chống lại thiên lệch này thông qua đánh giá có nhận thức trưởng thành, bio-banding, lộ trình phát triển kéo dài và sự chú ý có chủ đích đến vận động viên sinh muộn. Federer, Nadal hoặc Serena tiếp theo có thể sinh vào tháng 12 — và chúng ta phải đảm bảo năng khiếu của họ được nhận ra và phát triển, không bị bỏ qua bởi một lịch trình tùy ý.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

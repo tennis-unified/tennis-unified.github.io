@@ -52,3 +52,10 @@ Các tay đẳng cấp sử dụng chu kỳ quyết định 4 bước:
 
 ## Ứng Dụng Thực Tế: "Trận Cờ Vua Chiến Lược"
 Tennis là cờ vua ở 200 km/h. Tay vận động viên nghĩ 3 nước đi phía trước và thích ứng nhanh nhất sẽ chiến thắng. Huấn luyện não chiến lược của bạn như bạn huấn luyện cơ thể.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+<!-- TAICHIKB-CROSSREF-END -->

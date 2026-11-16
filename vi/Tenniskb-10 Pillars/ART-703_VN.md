@@ -57,3 +57,10 @@ Một bài tập hiệu quả khác là huấn luyện nhận thức góc: đặ
 ## Ứng Dụng Thực Tế: "Thống Trị Đường Chéo"
 
 Khi đối mặt với đối thủ lên lưới, mặc định chọn passing chéo sân làm lựa chọn chính (70% thời gian). Khoảng cách đường chéo mang lại biên an toàn qua lưới lớn nhất và khoảng sân nhắm dài nhất. Chỉ dùng passing dọc biên khi người ở lưới đang nghiêng về phía chéo sân. Thực hành tạo cú passing chéo sân từ các vị trí sân khác nhau để xây dựng sự tự tin vào khuôn mẫu chiến thuật an toàn tỷ lệ cao này.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

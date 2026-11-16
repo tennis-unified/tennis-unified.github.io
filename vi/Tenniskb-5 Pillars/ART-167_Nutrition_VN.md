@@ -94,3 +94,10 @@ Dinh dưỡng không phải là "ăn uống khỏe mạnh"; đó là nền tản
 
 ## Ứng Dụng Thực Tế: "Động Cơ Không Chạy Bằng Khí"
 Bạn không bỏ xăng 87 Octane vào xe F1. Bạn không chạy marathon chỉ bằng nước. Cỗ máy 5 Cột Trụ yêu cầu các chất nền sinh hóa cụ thể tại các thời điểm cụ thể. Dinh dưỡng không phải lối sống; đó là **Thông Số Kỹ Thuật Thiết Bị**. Xác định nó. Test nó. Thực thi nó.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Dinh dưỡng thể thao và cân bằng năng lượng*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

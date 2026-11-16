@@ -170,3 +170,10 @@ status: published
 | Hiệu suất điểm phá và với giảm dưới áp lực | Lỗi do áp lực, căng thẳng | Mất điểm quan trọng | Luyện mô phỏng áp lực; kỹ năng tâm lý; quy trình trước điểm |
 | Hiệu suất điểm phá và với thay đổi theo sân | Vấn đề chiến thuật theo sân | Kết quả kém trên một số sân | Luyện điểm phá và với theo sân; thích ứng chiến thuật |
 | Double fault tại điểm phá và với | Sợ hãi, căng thẳng, giao bổng lần hai kém | Mất game giao bổng | Drill giao bổng lần hai; mô phỏng giao bổng điểm phá và với; chuẩn bị tâm lý |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -106,3 +106,10 @@ The solution is to consciously slow down the tempo in pressure situations, retur
 ## Practical Application: "The Bounce-Count"
 
 Bounce the ball a consistent number of times before each serve — for example, 3 bounces. This ritual establishes a pre-serve rhythm that carries into the serve motion itself. The rhythmic bouncing creates a mental and physical tempo that transfers to the serve, promoting consistency. Many professional players have specific bounce routines (Rafael Nadic famously bounces the ball numerous times) that serve this exact purpose.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Tai Chi principles applied to tennis*
+<!-- TAICHIKB-CROSSREF-END -->

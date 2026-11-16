@@ -50,3 +50,10 @@ Trước trận đấu, xây dựng hồ sơ chi tiết về xu hướng của �
 
 ## Ứng Dụng Thực Tế: "Quét Ngữ Cảnh"
 Trước mỗi điểm bóng, hãy thực hiện "quét ngữ cảnh" nhanh chóng: ghi nhận tỉ số, vị trí trên sân, quy luật trước đó và xu hướng đã biết của đối thủ. Từ ngữ cảnh này, tạo ra dự đoán về cú đánh có khả năng xảy ra cao nhất. Quét ngữ cảnh này bổ sung cho dự phóng thị giác bằng nhận thức chiến thuật, tạo ra dự đoán được thông báo bởi cả chiều kích vật lý và tâm lý của trò chơi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -50,3 +50,10 @@ Players should incorporate these drills into their regular practice routine, foc
 
 ## Practical Application: "The Direction Change"
 Have a partner feed balls to your backhand. Alternate between crosscourt and down-the-line shots, focusing on changing the direction and catching the opponent by surprise. Count how many points you win with the down-the-line. Track progress over sessions to ensure the shot is developing correctly.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -67,3 +67,10 @@ Volume discipline: high-intensity plants are a potent stressor — 20-40 quality
 ## Practical Application: "Earn the Reversal"
 
 Build the reversal in one session block, twice weekly: 10 minutes of Level 1-2 plants as a warm-up, 15 minutes at the highest level the player passes cleanly, and 5 minutes of drop-shot context at the end. Film ten plants from the front each week and score a single frame — peak absorption — for knee-over-toe alignment. The progression gate is mechanical, not chronological: no level advances until eight of ten filmed plants show a stacked trunk and a knee tracking over the little toe. A player who earns the reversal this way takes the drop shot away from the opponent without lending a knee to the highlight reel.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+<!-- TAICHIKB-CROSSREF-END -->

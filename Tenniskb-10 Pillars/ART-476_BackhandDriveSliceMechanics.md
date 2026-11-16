@@ -55,3 +55,10 @@ Players who struggle with footwork often benefit from drills that emphasize the 
 
 ## Practical Application: "The Footwork Drill"
 Practice the split step, adjustment steps, crossover steps, and recovery steps without a ball, focusing on speed and balance. Have a partner feed balls to different positions, and practice moving to each ball with the correct footwork pattern. Track how many times you reach the ball in a balanced position. This drill develops the footwork skills needed for effective court coverage.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

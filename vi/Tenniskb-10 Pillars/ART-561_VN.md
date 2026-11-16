@@ -128,3 +128,10 @@ Vác phát mạnh là một trong những thách thức khó nhất của tennis
 
 ## Ứng Dụng Thực Tế: "Bài Tập Trả Bóng Sâu"
 Đứng 10 feet sau giai đoạn phát. Một người bạn phát bóng với tốc độ trận đấu. Chỉ tập trung vào chặn bóng trả về sâu bên cắt sân. Không lo về winner — chỉ cần đưa bóng vào sân và sâu. Theo dõi tỷ lệ thành công. Mục tiêu 60%+ pha trả bóng chạm sân. Bài tập này phát triển kỹ năng cần thiết để trả bóng trước vác phát mạnh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

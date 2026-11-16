@@ -57,3 +57,10 @@ Một bài tập hiệu quả khác là huấn luyện nhận thức góc: đặ
 ## Ứng Dụng Thực Tế: "Tay Nhẹ, Toán Học Khó"
 
 Để áp dụng Hình học cú bỏ nhỏ vào trận đấu tiếp theo, hãy bắt đầu bằng cách hình dung sân như một lưới hình học trước mỗi điểm. Xác định góc lớn nhất đối thủ có thể sử dụng và chọn vị trí của mình để thu hẹp nó lại. Thực hành một khuôn mẫu hình học cụ thể mỗi buổi tập cho đến khi trở nên bản năng. Quay lại các trận đấu của mình và phân tích xem di chuyển chọn vị trí có đúng lý tưởng hình học không. Hãy nhớ: hình học sân là một kỹ năng được cải thiện qua luyện tập có chủ đích, giống như cú vung cơ bản của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

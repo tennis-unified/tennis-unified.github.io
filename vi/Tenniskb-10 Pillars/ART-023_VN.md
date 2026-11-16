@@ -125,3 +125,10 @@ Bài tập phát triển thời gian giảm tốc và gia tốc đoạn:
 
 ## Ứng Dụng Thực Tế: "Cái Nứt Của Con Roi"
 Nứt của con roi xảy ra khi đầu roi vượt tốc độ âm thanh, tạo sóng xung kích. Điều này xảy ra vì động lượng góc của roi được bảo toàn khi mô men quán tính giảm — khối lượng roi tập trung về tay cầm khi sóng chạy dọc chiều dài, và tốc độ đầu roi tăng mạnh. Cú đánh tennis của bạn hoạt động giống hệt vậy. Thực hành bằng cách cầm khăn bằng tay cầm và vung nó: chú ý sóng chạy từ tay bạn đến đầu khăn, gia tốc khi đi. Bây giờ thực hiện cú đánh nền với cùng cảm giác: sóng bắt đầu ở chân, đi qua hông, thân, vai, và tay, và "nứt" tại đầu vợt. Chìa khóa là mỗi đoạn phải giảm tốc (chuyển nhượng động lượng) khi đoạn kế tiếp gia tốc. Nếu bạn cố giữ tốc độ tay trong khi thân vẫn đang gia tốc, bạn sẽ lãng phí chuyển nhượng động lượng. Hãy để thân giảm tốc để gia tốc tay; hãy để tay duỗi để gia tốc vợt. Cái nứt của con roi — cái bật ngược cuối cùng của tốc độ — là phần thưởng cho thời gian hoàn hảo.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Động lực học tuyến tính, GRF và xung lượng*
+<!-- TAICHIKB-CROSSREF-END -->

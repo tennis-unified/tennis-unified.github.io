@@ -54,3 +54,10 @@ Người chơi không phục hồi sau forehand băng ngang dễ bị tổn thư
 ## Ứng Dụng Thực Tế: "Băng Ngang Và Đứng"
 
 Luyện tập bước băng ngang về phía forehand bằng cách nhờ một đối tác đánh bóng dần rộng hơn. Tập trung vào bước băng ngang cuối cùng tiếp đất vững chắc (đứng) trước khi khởi phát xoay thân đơn vị. Đếm các bước: cho một quả bóng cách 3 mét, cần khoảng 2 bước băng ngang cộng với một đứng-và-xoay. Sắp xếp thời gian phục hồi để trở lại trung tâm trong khoảng thời gian quả bóng qua mặt lưới về phía đối thủ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

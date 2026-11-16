@@ -165,3 +165,10 @@ The evolution of tennis racket technology — from heavy wooden frames to lightw
 ## Practical Application: "Fit the Racket to the Player"
 
 Visit a tennis specialty shop and demo rackets before purchasing. Most shops offer demo programs where you can try different frames for a few days. Pay attention to how your arm feels after a session with each racket — any discomfort in the elbow or shoulder is a warning sign that the frame is too stiff. The best racket is not the one used by your favorite professional; it is the one that allows you to play your best tennis without pain. Your body will tell you which racket is right — listen to it.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -243,3 +243,10 @@ Retest every 8-12 weeks to track improvement.
 | Cannot maintain intensity in long rallies | Insufficient anaerobic capacity | Lost extended points | Interval training; tempo runs; circuit training |
 | Slow recovery between points | Poor aerobic fitness, insufficient recovery training | Cumulative fatigue | RSA training; on-court endurance drills; recovery training |
 | Performance decline in consecutive-day matches | Insufficient match fitness, poor recovery | Reduced performance in later matches | Match simulation training; recovery protocols; load management |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Energy systems for tennis conditioning*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

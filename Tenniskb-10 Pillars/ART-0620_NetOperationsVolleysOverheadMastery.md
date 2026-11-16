@@ -76,3 +76,10 @@ The low volley is the ultimate test of net technique. Getting low, opening the f
 ## Practical Application: "Bend, Don't Reach"
 
 When the ball is low, your instinct is to reach down with your arm. Resist this. Instead, bend your knees to get your whole body to the ball's level. The racket face meets the ball at its height rather than reaching down from above. This maintains balance, control, and consistency.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

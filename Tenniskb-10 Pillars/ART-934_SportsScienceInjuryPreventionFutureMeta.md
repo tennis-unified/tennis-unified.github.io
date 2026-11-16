@@ -103,3 +103,10 @@ The single best endurance drill for tennis is one that replicates the demands of
 Play five full sets with regulation rest periods (25 seconds between points, 90 seconds at changeovers). Maintain a competitive intensity throughout — this is not a casual hit. Monitor your heart rate during each set. A well-conditioned player should see heart rate peaks in Zone 4-5 during rallies, with recovery to Zone 2-3 during changeovers. If your heart rate fails to drop during changeovers, your aerobic base needs work. If you cannot maintain rally intensity by the third set, your sport-specific conditioning needs attention.
 
 Perform this drill once every 2-3 weeks during the in-season to benchmark your conditioning. Track your heart rate recovery (how quickly it drops during the 90-second changeover) as a key performance indicator. A player whose heart rate drops 20-30 beats per minute during a changeover has a well-developed aerobic engine. One whose heart rate stays elevated is carrying unnecessary fatigue into the next set. This is the drill that separates the pretenders from the contenders.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Energy systems for tennis conditioning*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Mindfulness & flow state in sport*
+<!-- TAICHIKB-CROSSREF-END -->

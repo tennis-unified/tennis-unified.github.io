@@ -35,3 +35,10 @@ The racket face angle at the moment of ball contact is the primary determinant o
 
 ## Practical Application: "The Face Control"
 To control direction, control the face angle at contact. For a cross-court shot, angle the face slightly toward the target. For a down-the-line shot, angle the face slightly toward the target. Practice by aiming at specific targets and adjusting your face angle until you can consistently hit your target. The key is to maintain a stable face through contact—any wobbling or inconsistency in face angle leads to directional errors.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

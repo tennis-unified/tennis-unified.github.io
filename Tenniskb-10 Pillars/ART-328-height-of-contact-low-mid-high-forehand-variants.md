@@ -66,3 +66,10 @@ Elite players adapt to contact height within 100 to 200 milliseconds of recogniz
 ## Practical Application: "The Height Drill"
 
 Have a partner feed balls at three distinct heights: low (knee height), mid (waist height), and high (shoulder height). For each shot, consciously adjust your knee flexion, swing path, and contact point to match the ball's height. Start slowly to develop the correct motor patterns, then progress to random heights that force rapid adaptation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

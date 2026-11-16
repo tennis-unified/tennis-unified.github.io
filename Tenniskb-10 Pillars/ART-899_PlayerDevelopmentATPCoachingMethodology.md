@@ -214,3 +214,10 @@ ___
 | Goals too vague and unmeasurable | "Get better" goals with no targets | No clear direction, inability to track progress | Apply SMART framework; set specific, measurable targets |
 | Goals too ambitious or unrealistic | Unattainable targets | Frustration, demotivation | Set achievable goals; break into smaller milestones |
 | Goals not reviewed or adjusted | Set-and-forget approach, no monitoring | Stagnant goals, missed opportunities | Weekly progress review; adjust goals based on results |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

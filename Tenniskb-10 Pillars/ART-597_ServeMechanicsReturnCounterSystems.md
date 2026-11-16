@@ -82,3 +82,10 @@ Develop a mental routine for returning:
 3. After the point: Reset and refocus for the next point
 
 Practice this routine until it becomes automatic. The mental game improves with practice just like physical technique.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

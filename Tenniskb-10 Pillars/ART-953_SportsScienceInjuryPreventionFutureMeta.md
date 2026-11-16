@@ -115,3 +115,10 @@ This serve-breathing synchronization is particularly important for second serves
 ## Practical Application: "Breathe Before You Swing"
 
 Make breathing the first action in every between-point routine. Before processing the previous point, before planning the next one, take one conscious diaphragmatic breath. This single breath interrupts the sympathetic cascade, redirects attention from emotional reactivity to present-moment awareness, and prepares the nervous system for optimal performance. The best players in the world breathe deliberately — not because they have to, but because they understand that controlled breathing controls everything else.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

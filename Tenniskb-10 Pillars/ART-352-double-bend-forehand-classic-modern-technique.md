@@ -78,3 +78,10 @@ Training the double-bend forehand focuses on:
 ## Practical Application: "The Bend and Snap"
 
 Practice the double-bend forehand by maintaining a visible bend in your elbow throughout the forward swing. As your trunk rotates forward, feel your forearm and racquet lagging behind your upper arm (the catapult loading). Then snap your forearm forward through contact, releasing the wrist lag for maximum racquet head speed. This "bend and snap" feeling is the essence of the double-bend forehand.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Elbow, forearm pronation & wrist mechanics*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+<!-- TAICHIKB-CROSSREF-END -->

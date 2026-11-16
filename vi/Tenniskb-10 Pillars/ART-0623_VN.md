@@ -68,3 +68,10 @@ Giao bóng tiến lên lưới là một hệ thống tấn công hoàn chỉnh:
 ## Ứng Dụng Thực Tế: "Giao Bóng, Xông Lên, Volley, Thắng"
 
 Chuỗi giao bóng tiến lên lưới gồm bốn bước: (1) đánh giao bóng sâu vào điểm yếu của đối thủ, (2) xông lên lưới với các bước chân nhanh, (3) đánh volley đầu tiên sâu, (4) đánh ra ngoài bằng volley thứ hai. Cam kết thực hiện toàn bộ chuỗi — nửa vời (tiến lên nhưng không sát lưới) sẽ khiến bạn kẹt ở vùng cấm.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

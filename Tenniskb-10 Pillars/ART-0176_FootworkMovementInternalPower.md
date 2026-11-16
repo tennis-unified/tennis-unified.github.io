@@ -62,3 +62,10 @@ Hit-and-flow (see ART-0168) is the right answer only when the reply genuinely hu
 ## Practical Application: "Post, Hop, Cross, Split"
 
 Run a 15-minute station: a coach on the same side hand-feeds wide stretch balls from the service line; the player blocks crosscourt and executes the full chain — post, hop, cross, split — before the next feed arrives 2.5 s later. Score 10 balls: +1 for a clean one-second post, +1 for landing squared, +1 for a split completed before the next feed, and -2 for any tumble outward. Seven points or better means the recovery is match-ready; anything less sends the player back to post holds. The chain, trained as one movement instead of four decisions, is what turns a highlight-reel stretch from a lost point into a neutral one — and occasionally into the winner that follows it.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

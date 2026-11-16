@@ -32,3 +32,10 @@ Truyền cuối của đẩy là khớp metatarsophalangeal thứ nhất — ng�
 
 ## Ứng Dụng Thực Tế: "Tìm Cạnh"
 Cho người chời một mục tiêu giác quan: **đẩy qua cạnh trong và kết thúc trên ngón cái.** Rồi xác minh ba cách trong một phiên: tập mũi chân cạnh trên tường (có thể đứng ngọn 10 lần sạch?), lướp quay từ phía sau (gót đẩy có nghiêng khoảng 15° và giữ nó?), và kiểm tra mòn giày hiện tại (đế ngoài trong có mòn xuyên trước ngoài?). Bất kỳ kiểm tra thất bại nào trở thành trọng tâm phức hợp chân trong tuần.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Đường Bên: ổn định ngang và lực sang bên*
+<!-- TAICHIKB-CROSSREF-END -->

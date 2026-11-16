@@ -148,3 +148,10 @@ Players with multiple concussions (3+) should discuss long-term brain health wit
 ## Practical Application: "When in Doubt, Sit Them Out"
 
 The most important rule in concussion management is conservative decision-making. If you suspect a player has suffered a concussion — even if symptoms seem mild — remove them from play immediately. No match, tournament, or practice is worth risking long-term brain health. Remember that athletes may underreport symptoms due to competitive pressure. Be the advocate for safety: when in doubt, sit them out. Full recovery is always possible with proper management, but premature return can have devastating consequences.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

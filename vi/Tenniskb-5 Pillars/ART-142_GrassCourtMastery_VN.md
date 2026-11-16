@@ -49,3 +49,10 @@ Sân cỏ là lãnh thổ của đòn tấn công đầu tiên: độ nảy th�
 
 ## Ứng Dụng Thực Tế: "Tia Chớp Xanh"
 Sân cỏ không cho phép bạn "xử lý" pha bóng. Bạn phải "chiếm lấy" pha bóng. Đòn tấn công đầu tiên chiến thắng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

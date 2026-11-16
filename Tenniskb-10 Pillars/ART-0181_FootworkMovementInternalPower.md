@@ -86,3 +86,10 @@ The coupling is felt before it is understood. Three drill progressions develop t
 ## Practical Application: "The Follow-Through IS the First Step"
 
 At the next session, tell players: **the last third of your follow-through is not the end of the shot — it is the beginning of the recovery.** Film their recovery from the side at 120 fps. Measure the gap between ball contact and the first visible ground push in the recovery direction. If the gap exceeds 150 ms, they are stopping between phases. Use the shadow coupling drill for 10 minutes, then re-measure. Most players reduce the gap to under 80 ms within a single session, and the felt benefit — "I have more time" — is immediate.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+<!-- TAICHIKB-CROSSREF-END -->

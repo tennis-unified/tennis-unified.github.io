@@ -195,3 +195,10 @@ Phiên bản ngắn hơn cho các buổi tập:
 | Cơ cứng và đau sau trận | Hạ nhiệt không đủ, không kéo cơ | Phục hồi giảm, cứng vào ngày hôm sau | Áp dụng quy trình kéo cơ và lăn xốp sau trận |
 | Chuột rút trong trận đấu | Bù nước kém, khởi động không đủ | Mất thời gian, thành tích giảm | Giao thức bù nước trước trận; đảm bảo khởi động đầy đủ |
 | Chấn thương trong giai đoạn đầu trận | Khởi động không đủ, cơ lạnh | Chấn thương, mất thời gian | Kéo dài thời gian khởi động; đảm bảo tiến triển đầy đủ qua tất cả các giai đoạn |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Hệ cơ: nhóm cơ chủ vận và ổn định*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Cơ học co cơ: lệch tâm/đồng tâm và lực–vận tốc*
+<!-- TAICHIKB-CROSSREF-END -->

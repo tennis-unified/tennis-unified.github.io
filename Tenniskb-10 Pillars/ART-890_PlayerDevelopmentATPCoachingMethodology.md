@@ -133,3 +133,10 @@ Before each return, consider:
 | Second serves not attacked | Hesitation, poor positioning | Server holds comfortably | Move inside the baseline; attack second returns |
 | Returns lack depth | Poor contact, insufficient body rotation | Returns sit up for attack | Practice deep returns; focus on forward weight transfer |
 | Getting lobbed on chip-and-serve | Poor chip placement, slow recovery | Lost points | Improve chip placement; recover quickly; vary return strategy |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

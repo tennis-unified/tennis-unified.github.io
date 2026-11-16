@@ -99,3 +99,10 @@ Hoạt động MTHFR giảm làm suy chuyển hóa folate, có thể làm tăng 
 ## Ứng Dụng Thực Tế: "Bản Đồ Dinh Dưỡng Gen"
 
 Mọi tay vợt tennis thi đấu nên cân nhắc xét nghiệm gen như một phần của chiến lược tối ưu hóa dinh dưỡng. Bắt đầu với bảng phân tích toàn diện bao gồm CYP1A2 (caffeine), VDR (vitamin D), IL-6 (viêm), LCT (lactose) và MTHFR (folate). Làm việc với chuyên gia dinh dưỡng gen thể thao để dịch kết quả thành các can thiệp cụ thể, có thể đo lường được: nếu bạn là người chuyển hóa CYP1A2 chậm, loại bỏ caffeine sau 2 giờ chiều và giới hạn lượng trước trận ở 2 mg/kg; nếu bạn mang biến thể VDR, nhắm đến vitamin D huyết thanh 50-60 ng/mL với bổ sung thích hợp; nếu bạn là IL-6 GG, ưu tiên lượng omega-3 3-4 g/ngày trong các đợt giải đấu. Đánh giá lại các dấu ấn sinh học mỗi 3 tháng và điều chỉnh cho phù hợp. Kỷ nguyên dinh dưỡng tennis chung chắn đang kết thúc — những người chơi đón nhận cá nhân hóa gen sẽ đạt được lợi thế đo lường được trong phục hồi, quản lý năng lượng và sức khỏe dài hạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Dinh dưỡng thể thao và cân bằng năng lượng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

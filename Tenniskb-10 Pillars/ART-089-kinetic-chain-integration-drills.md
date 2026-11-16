@@ -46,3 +46,10 @@ Kinetic chain integration drills train the entire body to work as a coordinated 
 
 ## Practical Application: "The Integration Routine"
 Perform a daily integration routine: (1) 10 shadow swings focusing on sequential activation, (2) 10 resistance band swings, (3) 10 medicine ball throws, (4) 10 partner-resisted swings, (5) 20 ball-fed groundstrokes. This 10-minute routine develops the coordinated kinetic chain function that underlies all tennis strokes.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Angular kinematics & sequential kinetic chain*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

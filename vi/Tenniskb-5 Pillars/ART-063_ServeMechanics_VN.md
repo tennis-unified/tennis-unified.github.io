@@ -44,3 +44,10 @@ Trình tự sinh cơ học là chuỗi các chuyển động cho phép đạt đ
 
 ## Ứng Dụng Thực Tế: "Giao Bóng Hoàn Chỉnh"
 Vận động viên nên cảm nhận rằng giao bóng là "hoàn chỉnh" và tích hợp với chuỗi động học. Vận động viên nên cảm nhận năng lượng chảy từ mặt sân, qua vùng lõi và ra ngoài qua vợt. Đây là mục tiêu cuối cùng của Hệ Thống 5 Cột Trụ: tạo ra một vận động viên hoàn chỉnh, tích hợp, thực hiện một cách không gắng sức ở tiềm năng đỉnh cao của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và chuỗi động học*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Xoay trong khớp vai (ISR) và xương bả vai*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Sấp cẳng tay tại khớp quay–trụ*
+<!-- TAICHIKB-CROSSREF-END -->

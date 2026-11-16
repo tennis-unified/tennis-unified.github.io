@@ -50,3 +50,10 @@ Players who struggle with surface adjustments often benefit from practicing on d
 
 ## Practical Application: "The Surface Practice"
 Practice your backhand on different surfaces, adjusting the technique based on the court. On hard courts, focus on versatility. On clay, focus on heavy topspin and patience. On grass, focus on slice and flat drives. Track your performance on each surface to ensure you are developing the adaptability needed for success on any court.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

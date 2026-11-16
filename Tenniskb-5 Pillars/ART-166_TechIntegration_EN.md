@@ -102,3 +102,10 @@ Technology is not a replacement for coaching; it is a magnification lens for the
 
 ## Practical Application: "The Iron Man Suit"
 Technology is the suit. The Athlete is Tony Stark. The suit amplifies strength, speed, vision, and durability. But without the pilot's intuition, judgment, and courage, the suit is just expensive metal. Wear the suit. Don't let the suit wear you.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 19: Thấu hiểu cơ học-thích-nghi của mô mạc: Ứng dụng vào y học thể thao — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch19-thau-hieu-co-hoc-thich-nghi-cua-mo-mac-ung-dung-vao-y-hoc-the-th.html) — *Adaptive mechanobiology & injury prevention*
+<!-- TAICHIKB-CROSSREF-END -->

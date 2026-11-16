@@ -72,3 +72,10 @@ Players can develop vector awareness through three exercises:
 ## Practical Application: "Vector Mapping"
 
 At the next session, draw a simple triangle on a piece of paper with the three vertices labeled V (vertical), L (linear), and R (rotation). Have the player identify which shots from their last match relied on which vectors: the serve (high V + high R), the forehand from the baseline (moderate V + moderate L + high R), the approach shot (low V + high L + moderate R), the volley (low V + moderate L + high R). Then ask the player to identify which vector they underuse: most recreational players underuse rotation (R) and overuse linear shift (L), producing strokes that are fast in one direction but lack the rotational component needed for topspin and directional control. Spend 10 minutes on the one-component drill (hitting with only V, only L, only R) to isolate each vector, then 10 minutes on the blend progression (adjusting ratios deliberately). Within a single session, the player will develop a felt sense of each vector and begin to consciously adjust their blend — the first step toward tactical force production.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+<!-- TAICHIKB-CROSSREF-END -->

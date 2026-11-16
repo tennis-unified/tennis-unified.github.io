@@ -59,3 +59,10 @@ Loss of balance during the backswing or forward swing indicates poor footwork or
 
 ## Practical Application: "The Stance Recognition Drill"
 Have a partner feed ten balls to your backhand, varying the position from wide to central. For each ball, call out your intended stance before hitting: "closed," "open," or "neutral." Hit the shot and evaluate whether the stance produced a good result. Over time, this drill trains automatic stance selection based on ball position.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+<!-- TAICHIKB-CROSSREF-END -->

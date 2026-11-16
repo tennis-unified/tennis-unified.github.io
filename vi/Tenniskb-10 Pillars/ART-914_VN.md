@@ -55,3 +55,10 @@ Những lỗi bước chân phổ biến bao gồm đến bóng quá muộn (d�
 ## Ứng Dụng Thực Tế: "Bước Nhỏ, Lợi Thế Lớn"
 
 Dành 15 phút mỗi buổi tập cho các bài tập bước chân chuyên biệt. Bắt đầu với thực hành bước phân tách: để đối tác đánh bóng sang hai bên trong khi bạn tập trung vào thời gian bước phân tách hạ xuống đúng khi vợt chạm bóng. Tiến triển lên mô hình bước bắt chéo và chuyển ngang, nhấn mạnh chất lượng hơn số lượng. Quay video bước chân trong các set tập và so sánh với đoạn phim vận động viên xuất sắc. Đếm số bước mỗi vòng rally và tìm cơ hội để giảm di chuyển không cần thiết. Mục tiêu không phải là di chuyển nhiều hơn, mà là di chuyển tốt hơn — ít bước hơn, bố trí tư thế tốt hơn, và chuẩn bị sớm hơn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

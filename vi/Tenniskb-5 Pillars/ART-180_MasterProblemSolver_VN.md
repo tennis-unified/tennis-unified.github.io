@@ -99,3 +99,10 @@ Batch 17 trang bị cho HLV và VĐ bộ công cụ chẩn đoán cho các "Vấ
 
 ## Ứng Dụng Thực Tế: "Bác Sĩ Cấp Cứu"
 Bậc Thầy Giải Quyết Vấn Đề Là Bác Sĩ Cấp Cứu Của Hệ Thống 5 Cột Trụ. Sàng Lọc (Chẩn Đoán). Ổn Định (Điều Hòa Trạng Thái). Điều Trị (Giao Thức Khớp). Giám Sát (Cửa). Xuất Viện (Tự Chủ). Xem Lại (Học). **Họ không đoán. Họ đánh giá. Họ không hy vọng. Họ giám sát. Họ không lập tức giao thức. Họ thực thi giao thức khớp. Họ không sở hữu kết quả. Họ sở hữu quy trình.**
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

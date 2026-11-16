@@ -170,3 +170,10 @@ Thực hiện buổi này 3-4 lần mỗi tuần. Nó kết hợp bài tập Thr
 - Lăn foam cột sống ngực: 60 giây
 
 Buổi này mất khoảng 15 phút và chỉ đòi hỏi băng kháng lực và thảm. Đây là khoản đầu tư quan trọng nhất tay vợt có thể làm cho sức khỏe vai dài hạn. Tay vợt giao bóng tự do ở tuổi 35 là những người đã chăm sóc vai ở tuổi 20.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

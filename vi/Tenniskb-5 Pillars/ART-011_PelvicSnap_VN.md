@@ -31,3 +31,11 @@ GRF (Chân ngoài) → Gia tốc xương chậu → Điểm khựng vi mô → M
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Giật"
 Cảm giác nên giống như việc giật một sợi dây thun dày. Có một khoảnh khắc căng (nạp lực) theo sau là một sự giải phóng tức thì và mãnh liệt (cú giật).
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Cơ sinh học khớp hông và xoay khung chậu*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Nhịp điệu thắt lưng–chậu và động học khung chậu*
+- [Chương 8: Hệ Xương: Bộ Xương Phụ (The Skeletal System: The Appendicular Skeleton)](https://taichikb.github.io/vi/books/tortora_ap/ch08-he-xuong-bo-xuong-phu.html) — *Giải phẫu đai chậu*
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Đường Bên: ổn định khung chậu theo phương ngang*
+<!-- TAICHIKB-CROSSREF-END -->

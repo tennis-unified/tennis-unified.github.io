@@ -44,3 +44,9 @@ Tích hợp chiến thuật là quá trình căn chỉnh các kỹ năng chiến
 
 ## Ứng Dụng Thực Tế: "Nhà Sản Xuất Điều Kiện Hoàn Chỉnh"
 Vận động viên nên cảm nhận rằng họ là "hoàn chỉnh" và tích hợp với Hệ Thống 5 Cột Trụ. Vận động viên nên cảm nhận rằng các hệ thống sinh cơ học, thần kinh và chiến thuật đang hoạt động cùng nhau một cách hài hòa. Đây là mục tiêu cuối cùng của Hệ Thống 5 Cột Trụ: tạo ra một vận động viên hoàn chỉnh, tích hợp, thực hiện một cách không gắng sức ở tiềm năng đỉnh cao của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Bảo toàn lực chuỗi động học nhờ phục hồi*
+- [Chương 5: Tải trọng ứng suất và tái cấu trúc ma trận trong gân và cơ xương: Kích thích cơ học tế bào và tái cấu trúc mô — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch05-tai-trong-ung-suat-va-tai-cau-truc-ma-tran-trong-gan-va-co-xuong.html) — *Tái cấu trúc gân và ma trận ngoại bào*
+<!-- TAICHIKB-CROSSREF-END -->

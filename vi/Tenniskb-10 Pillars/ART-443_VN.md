@@ -60,3 +60,10 @@ Người chơi nên kết hợp các bài tập này vào thực hành thường
 
 ## Ứng Dụng Thực Tế: "Luyện Tập Xoay Cán Tay"
 Đức trước gương và luyện tập vung backhand, tập trung vào sự xoay của cán tay. Bắt đầu với lòng bàn hướng lên trên, sau đó xoay cán tay để xoay lòng bàn hướng xuống dưới qua vùng chạm bóng. Lặp lại cho đến khi xoay cán tay cảm thấy tự nhiên, sau đó thực hành với bông. Theo dõi tiến độ qua các buổi tập để đảm bảo xoay cán tay đang phát triển đúng hướng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

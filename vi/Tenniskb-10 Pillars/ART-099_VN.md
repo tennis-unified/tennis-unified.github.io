@@ -60,3 +60,10 @@ Chụp chuyển động ba chiều (3D) là tiêu chuẩn vàng cho phân tích 
 
 ## Ứng Dụng Thực Tế: "Đánh Giá Phòng Thí Nghiệm"
 Nếu bạn có quyền truy cập phòng thí nghiệm sinh cơ học, hãy trải qua đánh giá chụp chuyển động 3D để có dữ liệu khách quan về cơ chế cú đánh của bạn. Dữ liệu sẽ tiết lộ các lỗi kỹ thuật cụ thể — như xoay hông không đủ, lỗi thời gian, hoặc rò rỉ năng lượng — mà bạn có thể giải quyết qua huấn luyện nhắm mục tiêu. Ngay cả một lần đánh giá phòng thí nghiệm đơn lẻ cũng có thể cung cấp những hiểu lầm chuyển hóa chương trình huấn luyện của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

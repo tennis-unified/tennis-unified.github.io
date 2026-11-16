@@ -36,3 +36,10 @@ The elbow is a critical link in the arm segment of the tennis kinetic chain. Elb
 
 ## Practical Application: "The Elbow Check"
 During your strokes, focus on feeling your elbow extend fully and in sequence with your shoulder and arm. If your elbow is not extending fully, work on triceps strength and extension drills. If you feel valgus stress at your elbow, work on technique correction and forearm strength. If your elbow is doing too much work, focus on improving your trunk rotation to reduce the load on your elbow.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Elbow, forearm pronation & wrist mechanics*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+<!-- TAICHIKB-CROSSREF-END -->

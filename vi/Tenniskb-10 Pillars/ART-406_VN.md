@@ -60,3 +60,10 @@ Người chơi có tiền sử chấn thương cánh tay nên đặc biệt chú
 
 ## Ứng Dụng Thực Tế: "Núm Xoay Lực Cầm"
 Trong các lượt phản luyện, hãy tự đánh giá lực cầm vợt của bạn trên thang điểm 1-10 trong suốt mỗi cú vung. Mục tiêu là 3-4 trong giai đoạn kéo vợt, 7-8 tại điểm chạm bóng và 2-3 trong giai đoạn kết thúc. Việc điều chỉnh có ý thức này rèn luyện bàn tay chỉ áp dụng lực khi cần thiết, xây dựng khả năng kiểm soát năng động phân biệt người chơi trình độ cao.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

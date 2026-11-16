@@ -57,3 +57,10 @@ Simple tracking methods include noting Forehand-to-Backhand Ratio: Dominance Mea
 ## Practical Application: "Forehand/Backhand Ratio Tells Your Story"
 
 Begin tracking Forehand-to-Backhand Ratio: Dominance Measurement in your next five matches. Use a simple tally system on a notecard or a tennis statistics app. After each match, calculate the percentage and compare it to your target (typically 60% or above for most metrics). Identify specific situations where the metric drops (late in sets, after long rallies, under scoreboard pressure) and develop targeted practice for those scenarios. Over a season, track whether the metric improves and correlates with match wins.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

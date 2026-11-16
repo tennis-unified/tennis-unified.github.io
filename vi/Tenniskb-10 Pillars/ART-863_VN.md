@@ -243,3 +243,10 @@ Kiểm tra lại mỗi 8-12 tuần để theo dõi tiến bộ.
 | Không thể duy trì cường độ trong rally dài | Dung lực anaerobic không đủ | Mất điểm kéo dài | Chạy ngắt quãng; chạy tốc độ; chu kỳ huấn luyện |
 | Phục hồi chậm giữa các điểm | Thể lực aerobic kém, thiếu huấn luyện phục hồi | Mệt mỏi tích lũy | RSA; bài tập sức bền trên sân; huấn luyện phục hồi |
 | Suy giảm hiệu suất trong trận ngày liên tiếp | Thể lực thi đấu không đủ, phục hồi kém | Giảm hiệu suất ở trận sau | Huấn luyện mô phỏng thi đấu; quy trình phục hồi; quản lý tải |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Hệ thống năng lượng cho thể lực quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

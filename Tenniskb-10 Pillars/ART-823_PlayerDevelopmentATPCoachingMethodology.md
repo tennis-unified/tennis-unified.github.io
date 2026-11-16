@@ -209,3 +209,10 @@ Structure a 90-minute professional-level session:
 | Skills don't transfer to matches | Drills too isolated, insufficient game-like practice | Good practice, poor match performance | Increase game-based activities; reduce isolated drilling |
 | Player bored and disengaged | Repetitive drills, insufficient variety | Reduced motivation, dropout risk | Introduce new drills; vary activities; increase game play |
 | Fatigue in later sessions of the week | Insufficient recovery between sessions | Cumulative fatigue, reduced training quality | Adjust weekly schedule; build in rest days; monitor training load |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -81,3 +81,10 @@ The underhand serve is an increasingly common tactic, particularly against playe
 ## Practical Application: "The Underhand Return Drill"
 
 Have a partner hit underhand serves while you practice sprinting forward to reach the ball, using a controlled swing to drive the ball deep, closing the net after the return, and finishing the point with a volley or overhead. This drill develops the specific skills needed for returning underhand serves and finishing the point.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

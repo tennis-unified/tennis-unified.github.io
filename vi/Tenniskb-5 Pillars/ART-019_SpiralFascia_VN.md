@@ -31,3 +31,10 @@ Khi hông giật về phía trước, Đường Xoắn Ốc đạt đến giới
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Lò Xo"
 Hãy coi thân trên của bạn như một chiếc lò xo lớn. Việc xoay thân là nén lò xo. Cú đánh là giải phóng lò xo. Nếu bạn chỉ cảm thấy nỗ lực của cơ bắp, bạn không sử dụng Đường Xoắn Ốc; nếu bạn cảm thấy một cú "nảy" từ vùng lõi, bạn đang sử dụng sự bật đàn hồi của mạc.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Giải phẫu Đường Xoắn Ốc và độ bật đàn hồi*
+- [Chương 1: Mạc như một mạng lưới ứng suất lan khắp cơ thể: Giải phẫu, cơ sinh học và sinh lý học — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch01-mac-nhu-mot-mang-luoi-ung-suat-lan-khap-co-the-giai-phau-co-sinh.html) — *Mạc như mạng lưới ứng suất toàn thân*
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Hồi phục đàn hồi mô mạc trong vận động xoay*
+<!-- TAICHIKB-CROSSREF-END -->

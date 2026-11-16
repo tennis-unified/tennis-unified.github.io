@@ -90,3 +90,10 @@ Training the closed stance forehand involves:
 ## Practical Application: "The Power Stance"
 
 Use the closed stance deliberately when you want to generate maximum power on a specific shot. Set up with your front foot crossed over, drive your rear leg into the ground, and feel the forward momentum being blocked and redirected into upward and rotational force. This "power stance" should be used selectively for attacking shots where maximum power is required.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+<!-- TAICHIKB-CROSSREF-END -->

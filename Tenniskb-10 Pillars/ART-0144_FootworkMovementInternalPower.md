@@ -72,3 +72,10 @@ This cognitive offloading is not mystical — it is the same principle that allo
 ## Practical Application: "The Continuous Rally Protocol"
 
 At the next session, set up a rally drill with one non-negotiable rule: **the player's feet must never be fully still while the ball is in play.** The player can shuffle, tap, bounce, or drift — but both feet cannot be planted simultaneously for more than 0.3 seconds. The coach feeds balls at moderate pace, and the player must maintain continuous low-level movement between shots, arriving at each shot with residual momentum rather than from a standstill. Start with 5-shot rally targets and progress to 15-shot targets. If the player stops, the rally resets. After 3-4 sessions, measure the player's oxygen consumption (or perceived exertion) in a 20-shot rally — it should drop noticeably as the body learns to recover through motion rather than through stillness. The drill also improves anticipation, because a moving body gathers more information and responds more quickly than a stopped one. Over time, the continuous movement becomes automatic, and the player experiences the rally as a single flowing event rather than a sequence of discrete emergencies.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Tai Chi principles applied to tennis*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

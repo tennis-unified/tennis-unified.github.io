@@ -105,3 +105,10 @@ The Head Coach is the COO of the athlete's career enterprise. The "Coach Program
 
 ## Practical Application: "The COO's Clipboard"
 The Coach Program Plan is not a binder on a shelf. It is the **COO's daily clipboard** — digital or physical. It dictates *what* happens in every session, *how* the coach behaves, and *when* the coach grows. The Athlete Career Plan (ART-191) is the Strategy; the Coach Program Plan is the **Operations Manual**. They must be version-controlled together. **If the Coach Plan doesn't change when the Athlete Plan changes, the operation is broken.**
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+<!-- TAICHIKB-CROSSREF-END -->

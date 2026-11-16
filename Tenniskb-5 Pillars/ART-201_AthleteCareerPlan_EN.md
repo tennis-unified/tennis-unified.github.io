@@ -99,3 +99,10 @@ The athlete is the CEO of their career. The "Athlete Career Plan" is the strateg
 
 ## Practical Application: "The CEO's Desk"
 The Athlete Career Plan sits on the CEO's desk. It is not a PDF in a folder. It is a **living spreadsheet / Notion workspace / whiteboard** updated weekly. The CEO (Athlete) reads it every Monday. The COO (Coach) references it every session. The Board reviews it quarterly. **If it's not current, it's not a plan — it's a wish.**
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 19: Thấu hiểu cơ học-thích-nghi của mô mạc: Ứng dụng vào y học thể thao — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch19-thau-hieu-co-hoc-thich-nghi-cua-mo-mac-ung-dung-vao-y-hoc-the-th.html) — *Adaptive mechanobiology & injury prevention*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

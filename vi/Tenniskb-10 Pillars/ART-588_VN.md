@@ -72,3 +72,10 @@ Tennis thích ứng bao gồm nhiều khả năng vật lý và phân loại kh�
 ## Ứng Dụng Thực Tế: "Bài Tập Đặc Thù Phân Loại"
 
 Làm việc với huấn luyện viên để phát triển kỹ thuật trả bóng đặc thù cho phân loại và khả năng vật lý của bạn. Tập trung vào việc tối đa hóa điểm mạnh trong khi phát triển kỹ thuật bù đắp cho các giới hạn của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+<!-- TAICHIKB-CROSSREF-END -->

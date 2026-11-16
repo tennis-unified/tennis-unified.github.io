@@ -49,3 +49,10 @@ If you are a female tennis player, track your menstrual cycle and report any cha
 
 ## Practical Application: "Fuel to Win"
 If you are a female tennis player, track your menstrual cycle and report any changes to your healthcare provider. If your cycle becomes irregular or stops, do not ignore it — this is your body signaling that something is wrong. Aim to eat enough to fuel your training, with a focus on calcium (1,300-1,500 mg per day) and vitamin D (600-1,000 IU per day) for bone health. If you are a coach or parent, create an environment where players feel supported in eating adequately and where performance is prioritized over appearance. RED-S is preventable and treatable — but only if we recognize it.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Athletic nutrition & energy balance*
+<!-- TAICHIKB-CROSSREF-END -->

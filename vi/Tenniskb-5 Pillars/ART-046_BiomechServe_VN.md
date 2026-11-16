@@ -42,3 +42,10 @@ Toàn bộ trình tự xảy ra trong khoảng 0,5 đến 0,7 giây.
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Dòng Chảy"
 Cú giao bóng nên có cảm giác như một dòng chảy liên tục của năng lượng, không phải một chuỗi các chuyển động riêng lẻ. Vận động viên nên cảm nhận năng lượng di chuyển từ chân, qua vùng lõi và ra ngoài qua vợt. Bất kỳ "đứt gãy" nào trong dòng chảy này đều chỉ ra một thất bại trong chuỗi động học.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Chuỗi cơ sinh học cú giao bóng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Đạp duỗi ba khớp chi dưới (Triple Extension)*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và xoay trong vai khi giao bóng*
+<!-- TAICHIKB-CROSSREF-END -->

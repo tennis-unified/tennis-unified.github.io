@@ -188,3 +188,10 @@ Create a comprehensive annual career plan:
 | Financial pressure affecting performance | Insufficient sponsorship, poor financial management | Stress, premature retirement | Develop sponsorship strategy; financial planning with advisor |
 | Overplaying and fatigue | No structured rest, chasing ranking points | Injuries, burnout, declining performance | Implement rest weeks; prioritize quality over quantity |
 | Poor sponsorship development | Low media presence, no agent | Missed revenue opportunities | Build media profile; engage professional agent |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+<!-- TAICHIKB-CROSSREF-END -->

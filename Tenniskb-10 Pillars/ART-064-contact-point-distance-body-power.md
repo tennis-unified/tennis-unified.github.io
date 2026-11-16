@@ -28,3 +28,10 @@ The distance of ball contact from the body is a critical power variable. Contact
 
 ## Practical Application: "The Extension Point"
 Focus on contacting the ball at full arm extension—your arm should be straight (but not locked) at contact. This maximizes your moment arm and racket head speed. Practice by having a partner feed balls and consciously extend your arm fully at contact. If you find yourself reaching or contacting the ball too close to your body, adjust your positioning or timing to hit the ball at the optimal distance.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

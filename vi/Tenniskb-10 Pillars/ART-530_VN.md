@@ -116,3 +116,10 @@ Hãy nghĩ về giao bóng của bạn như sự cân bằng giữa xoay và t�
 - **Sân chậm (đất nện):** 70% xoay / 30% tốc độ — ưu tiên xoay vì độ nảy cao hiệu quả nhất
 
 Thử nghiệm với các tỷ lệ xoay/tốc độ khác nhau trên mỗi bề mặt sân để tìm sự cân bằng tối ưu của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

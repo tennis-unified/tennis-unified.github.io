@@ -32,3 +32,9 @@ The hand does not move in a simple circle; it moves in a complex vector.
 
 ## Practical Application: The "Hula-Hoop" Sensation
 Imagine you are swinging a hula-hoop. To make the hoop spin faster, you don't just push it forward; you pull the center toward you. The racket is the hoop, and your hand is the center. Feel the "pull" to create the "push."
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Centripetal force & rotational radius control*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Curvilinear & angular trajectory kinematics*
+<!-- TAICHIKB-CROSSREF-END -->

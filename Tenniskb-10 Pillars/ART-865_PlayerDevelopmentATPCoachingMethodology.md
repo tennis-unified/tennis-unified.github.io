@@ -218,3 +218,10 @@ If any area is below target, prioritize that area in the flexibility program.
 | Low ready position difficult to maintain | Poor ankle dorsiflexion, tight calves | Standing too upright, slow first step | Knee-to-wall drill; calf stretches; ankle CARs |
 | Lower back pain during serving | Poor thoracic mobility, excessive lumbar extension | Disc issues, muscle strains | Thoracic spine mobility; cat-cow; foam roller extension |
 | Forearm and wrist injuries | Poor forearm flexibility | Tendinopathy, TFCC tears | Forearm stretches; wrist CARs; grip strength balance |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+<!-- TAICHIKB-CROSSREF-END -->

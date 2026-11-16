@@ -264,3 +264,10 @@ Năm 4 (Củng Cố):     Nhất Quán → Hệ Thống Trường Tồn → Xây
 ---
 
 *Kết Thúc Tổng Hợp. Tennis Knowledgebase v1.0 Hoàn Chỉnh. 200 Bài Viết. 400 File. Một Lý Thuyết Thống Nhất. Không LaTeX. Vô Hạn Ứng Dụng.*
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+- [Chương 19: Thấu hiểu cơ học-thích-nghi của mô mạc: Ứng dụng vào y học thể thao — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch19-thau-hieu-co-hoc-thich-nghi-cua-mo-mac-ung-dung-vao-y-hoc-the-th.html) — *Cơ học thích nghi và phòng ngừa chấn thương*
+<!-- TAICHIKB-CROSSREF-END -->

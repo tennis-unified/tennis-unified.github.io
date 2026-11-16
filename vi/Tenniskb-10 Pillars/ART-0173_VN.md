@@ -49,3 +49,10 @@ Valgus động — gối gập vào trong và xoay vào trong dưới tải — 
 
 ## Ứng Dụng Thực Tế: "Kiếm Đảo"
 10 phút đáp Cấp 1-2 khởi động, 15 phút ở cấp cao nhất vượt sạch, 5 phút drop shot. Quay video mười đáp mỗi tuần từ phía trước và chấm đỉnh hấp thụ cho định hướng gối-trên-đỉa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -32,3 +32,10 @@ Trong cú trái tay hai tay, POS được sử dụng để ổn định thân t
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Chéo Sau"
 Cảm giác nên là một sự căng sâu chạy ngang lưng dưới và hông đối diện trong lúc nạp lực. Nếu bạn chỉ cảm thấy cánh tay di chuyển, POS không được kích hoạt.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Đường Chức Năng Sau (Dây chéo sau POS)*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Liên kết cơ lưng rộng và cơ mông lớn*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Dự trữ năng lượng ở mạc ngực–thắt lưng*
+<!-- TAICHIKB-CROSSREF-END -->

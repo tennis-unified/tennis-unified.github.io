@@ -55,3 +55,10 @@ Players should incorporate these drills into their regular practice routine, foc
 
 ## Practical Application: "The Mid-Court Practice"
 Have a partner feed balls to the mid-court, varying the height and depth. Practice hitting a variety of shots based on the situation, focusing on quick decision-making and forward movement. Track how many points you win from the mid-court position. This drill develops the tactical awareness needed for effective mid-court play.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+<!-- TAICHIKB-CROSSREF-END -->

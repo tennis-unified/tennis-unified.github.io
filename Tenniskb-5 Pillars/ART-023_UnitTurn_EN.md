@@ -31,3 +31,10 @@ The unit turn acts as a biological battery.
 
 ## Practical Application: The "Winding" Sensation
 The unit turn should feel like winding up a clock. You are not just moving your body; you are "charging" the system. The faster and more synchronized the wind-up, the more explosive the release.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Unit turn & backswing elastic preparation*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line coiling during the unit turn*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Trunk rotational velocity & coiling*
+<!-- TAICHIKB-CROSSREF-END -->

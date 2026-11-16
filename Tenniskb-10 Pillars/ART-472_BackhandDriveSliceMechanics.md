@@ -53,3 +53,10 @@ Players who struggle on clay often benefit from drills that emphasize positionin
 
 ## Practical Application: "The Clay Court Practice"
 Practice your backhand on a clay court, focusing on positioning, heavy topspin, and endurance. Track how many shots you can hit in a row without making an error and how many points you win from a defensive position. This drill develops the skills needed for effective clay court play.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

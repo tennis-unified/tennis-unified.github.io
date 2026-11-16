@@ -52,3 +52,10 @@ Mục tiêu không phải là ước mơ; chúng là bản vẽ cấu trúc. Bà
 
 ## Ứng Dụng Thực Tế: Tài Liệu "Kế Hoạch Chính"
 Mọi vận động viên đẳng cấp đều cần một tài liệu "sống": Tầm Nhìn → 3 Mục Tiêu Kết Quả → 5 Chuẩn Mực Hiệu Suất → 7 Mục Tiêu Quy Trình Tuần Này. Nếu không viết ra, đó là ước mơ, không phải mục tiêu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+<!-- TAICHIKB-CROSSREF-END -->

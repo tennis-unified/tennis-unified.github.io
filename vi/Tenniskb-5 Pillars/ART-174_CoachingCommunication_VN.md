@@ -50,3 +50,10 @@ Thay Vì Nói, Hãy Thiết Kế Môi Trường Buộc Hành Vi Mong Muốn:
 
 ## Ứng Dụng Thực Tế: Quy Tắc "Một Gợi Ý Một Lúc"
 Huấn Luyện Ràng Buộc, Không Phải Cơ Thể VĐ. Não Bộ Tự Tổ Chức Quanh Mục Tiêu Rõ Ràng; Quá Tải Sửa Lỗi Làm Nó Đóng Băng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

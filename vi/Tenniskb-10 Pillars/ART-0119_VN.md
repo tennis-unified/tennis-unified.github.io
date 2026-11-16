@@ -142,3 +142,10 @@ Triển khai khối kích thích phản xạ 6 tuần:
 4. **Đo lường.** Trước và sau khối 6 tuần, chạy bài kiểm tra bước đầu ngang và sprint sân phản ứng. Nếu thời gian bước đầu cải thiện 15% hoặc hơn, kích thích phản xạ đã hoạt động. Nếu không, đánh giá lại chất lượng tiếp đất và kỹ thuật bài tập trước khi lặp lại khối.
 
 Mục tiêu không phải trở thành người nhảy tốt hơn — mà là trở thành người bước đầu nhanh hơn. Phản xạ co giãn là cầu nối giữa tiếp đất và phóng ra. Hãy huấn luyện cái cầu nối đó.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Tập luyện plyometric và chu kỳ SSC*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -164,3 +164,10 @@ Những VĐV thắng các pha bóng kéo dài thường:
 | Mất nhiều điểm nhất trong 9+ cú đánh | Sức bền kém, mệt mỏi tinh thần | Mất các điểm dài | Tập sức bền; sức bền tinh thần; bài tập độ ổn định |
 | Quá nhiều điểm ngắn (thiên về phòng thủ) | Giao bóng yếu, chơi bị động | Mất game giao bóng, không break được | Phát triển giao bóng; tập cú +1 tấn công |
 | Quá nhiều điểm dài (không kết thúc được) | Do dự, thiếu khả năng kết thúc | Pha bóng kéo dài, lãng phí cơ hội | Bài tập kết thúc điểm; mẫu hình tiến lên; luyện drop shot |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

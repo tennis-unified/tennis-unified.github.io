@@ -150,3 +150,10 @@ After every return in practice, immediately move to the recovery position:
 - Short return → move inside baseline
 
 This drill develops the habit of immediate recovery movement and helps you find the optimal position after each type of return. Time yourself — aim for under 2 seconds from contact to ready position.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

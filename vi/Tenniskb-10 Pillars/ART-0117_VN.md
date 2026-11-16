@@ -101,3 +101,10 @@ Dạy người chơi quy tắc quyết định đổi hướng:
 3. **Nếu không chắc — giữ thấp và sẵn sàng.** Người chơi trong tư thế thấp, thăng bằng có thể đổi hướng hoặc phanh hiệu quả hơn người đứng thẳng và chạy nhanh.
 
 �ổi hướng không phải mẹo footwork — nó là nguyên lý cơ bản của vật lý áp dụng vào chuyển động. Động lượng là năng lượng. Dừng hẳn là lãng phí. Người chơi xuất sắc xử lý mỗi bước như một đầu tư cho bước tiếp theo.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Đường Bên: ổn định ngang và lực sang bên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

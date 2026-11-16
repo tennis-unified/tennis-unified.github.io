@@ -39,3 +39,10 @@ A rational distribution for a competitive player: new technical work begins with
 
 ## Practical Application: "Practice Ugly, Play Beautiful"
 Embrace the paradox on purpose. Make practice harder than the match — unpredictable feeds, real decisions, consequences on the line — and accept the errors as the tuition of durability. If your sessions look messy and your matches look clean, the balance is right. And when a coach resists the urge to correct every swing, they are not being lazy; they are letting the deeper learning mechanism do the work that a hundred perfect basket balls never will.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

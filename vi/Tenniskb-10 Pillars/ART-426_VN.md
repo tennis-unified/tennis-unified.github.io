@@ -68,3 +68,10 @@ Người chơi nên kết hợp các bài tập này vào thói quen luyện t�
 
 ## Ứng Dụng Thực Tế: "Bài Tập Ba Vùng"
 Chia sân thành ba vùng độ sâu: ngắn (service box), trung bình (giữa service box và vạch cuối sân), và sâu (vạch cuối sân). Luyện tập đánh mười cú slice đến mỗi vùng, tập trung vào việc tạo ra độ sâu chính xác. Theo dỏi độ chính xác qua các buổi tập để đảm bảo cú slice có thể được đặt vào vị trí chính xác.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

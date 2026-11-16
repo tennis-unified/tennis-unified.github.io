@@ -45,3 +45,10 @@ Người chơi nâng cao gặp khó khăn với những lỗi này thường đ�
 
 ## Ứng Dụng Thực Tế: "Quy Trình Tập Luyện Nâng Cao"
 Người chơi nâng cao nên thực hành bài tập áp lực, bài tập chiến thuật và bài tập mô phỏng trận đấu thường xuyên, tập trung vào sức mạnh tinh thần và nhận thức chiến thuật. Theo dõi tiến trình qua các buổi tập để đảm bảo các kỹ năng đang phát triển đúng hướng. Khi người chơi cải thiện, họ có thể thêm các bài tập phức tạp hơn vào quy trình tập luyện của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

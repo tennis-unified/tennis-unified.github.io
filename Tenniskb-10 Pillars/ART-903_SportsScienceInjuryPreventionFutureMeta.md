@@ -102,3 +102,10 @@ Continuing to rotate the shoulders after contact causes the body to face the net
 ## Practical Application: "Find Your Drop"
 
 Stand at the fence with your racket and practice dropping the racket head below your waist without using your legs. Now add a knee bend and feel how much deeper the racket can drop. Finally, swing through an imaginary ball at waist height, focusing on the feeling of the racket traveling upward for at least 12 inches before contact. The "drop" is the secret — everything else is just releasing the stored energy.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -52,3 +52,10 @@ Replace pre-match static stretching with a 15-minute dynamic warm-up that includ
 
 ## Practical Application: "Warm Up Dynamic, Cool Down Static"
 Replace pre-match static stretching with a 15-minute dynamic warm-up that includes aerobic activity, dynamic stretching, and sport-specific movements. After every match and practice session, spend 10 minutes on static stretching, holding each stretch for 30-60 seconds. Add PNF stretching 2-3 times per week for targeted flexibility improvements. Incorporate foam rolling into your daily routine, focusing on the muscle groups most affected by tennis. Remember: the right stretching at the right time is a powerful tool for performance and recovery.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Muscular system: prime movers & stabilizers*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Muscular mechanics: eccentric/concentric & force-velocity*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

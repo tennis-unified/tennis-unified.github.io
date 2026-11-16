@@ -44,3 +44,10 @@ The glenohumeral (shoulder) joint achieves the highest angular velocities of any
 
 ## Practical Application: "The Shoulder Stability Test"
 Test your glenohumeral stability by performing a rapid internal rotation movement with your arm at 90° abduction. If you feel pain, clicking, or a sense of instability, you may have glenohumeral instability that needs to be addressed through rotator cuff strengthening and scapular stabilization exercises.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+<!-- TAICHIKB-CROSSREF-END -->

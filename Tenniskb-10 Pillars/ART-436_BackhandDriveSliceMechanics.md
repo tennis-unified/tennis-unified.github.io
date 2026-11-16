@@ -60,3 +60,10 @@ Players who struggle with the two-handed slice often benefit from drills that em
 
 ## Practical Application: "The Two-Handed Slice Practice"
 Stand on the baseline and hit ten two-handed slice backhands, focusing on producing a low, skidding bounce. After each shot, note whether the ball stays below net height after the bounce. If it bounces high, the racket face is too open or the path is too steep. Adjust until at least seven of ten shots skid low, building the feel for an offensive two-handed slice.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

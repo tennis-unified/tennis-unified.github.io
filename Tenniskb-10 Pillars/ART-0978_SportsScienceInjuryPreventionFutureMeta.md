@@ -39,3 +39,10 @@ Analytics fails in characteristic ways. Small samples are quoted as gospel. Scor
 
 ## Practical Application: "Three Numbers That Win"
 Pick three numbers that define your identity as a player — for example, first-serve points won, return depth past the service line, and errors on the first two shots of each point — and track them every practice match for a month. You will learn more from those three trends than from any hundred-stat report, because analytics is not about collecting data; it is about knowing which three facts would change your next decision, and then measuring exactly those.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

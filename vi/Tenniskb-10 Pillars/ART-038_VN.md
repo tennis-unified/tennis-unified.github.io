@@ -116,3 +116,10 @@ Xoay trong vai khi giao bóng như tiếng vỗ roi — chuyển động cuối,
 | Lực cuff xoay ngoài | Xoay ngoài dây 15-20% BW | < 10% BW | Band external rotation, side-lying external rotation |
 | Đau vai sau khi xoay trong | Không đau | Đau khi giảm tốc theo dõi | Tăng lực infraspinatus/teres minor, kiểm tra kỹ thuật |
 | Đối xứng vai hai bên | Chênh ≤ 10% | Chênh > 15% | Tập đơn phương bên yếu, bài tập đơn phương |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

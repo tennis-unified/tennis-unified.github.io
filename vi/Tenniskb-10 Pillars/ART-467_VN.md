@@ -64,3 +64,10 @@ Người chơi nên kết hợp các bài tập này vào chương trình luyệ
 ## Ứng Dụng Thực Tế: "Bài Tập Giữa Sân"
 
 Yêu cầu một người bạn ném bóng vào giữa sân với độ cao và độ sâu khác nhau. Luyện tập đánh nhiều loại cú dựa trên tình huống, tập trung vào việc ra quyết định nhanh chóng và di chuyển về phía trước. Theo dõi số điểm bạn giành được từ vị trí giữa sân. Bài tập này phát triển nhận thức chiến thuật cần thiết cho lối chơi giữa sân hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

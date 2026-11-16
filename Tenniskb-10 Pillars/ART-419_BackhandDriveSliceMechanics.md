@@ -65,3 +65,10 @@ Players should incorporate these drills into their regular practice routine, foc
 
 ## Practical Application: "The Step-and-Hold Drill"
 Practice the closed stance backhand, stepping into the ball with your front foot. After the swing, hold the finish position for two seconds, checking that your weight is firmly on your front foot and your front foot is planted. This drill builds the muscle memory for an effective weight transfer and front foot brace.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Myofascial force transmission across segments*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+<!-- TAICHIKB-CROSSREF-END -->

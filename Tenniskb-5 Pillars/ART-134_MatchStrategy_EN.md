@@ -56,3 +56,10 @@ The brain stores three types of strategic knowledge:
 
 ## Practical Application: "The Strategic Compass"
 Strategy is the compass that keeps you moving toward the finish line. Without it, you're just running in circles; with it, you're running to win.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Tai Chi principles applied to tennis*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Sensorimotor integration & motor control*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -44,3 +44,9 @@ Thuận tay điểm quan trọng là cú thuận tay quan trọng nhất của s
 
 ## Ứng Dụng Thực Tế: "Quản Lý Thuận Tay Hoàn Chỉnh"
 Vận động viên nên cảm nhận rằng họ là "hoàn chỉnh" và tích hợp với Hệ Thống 5 Cột Trụ. Vận động viên nên cảm nhận rằng các hệ thống sinh cơ học, thần kinh và chiến thuật đang hoạt động cùng nhau một cách hài hòa. Đây là mục tiêu cuối cùng của Hệ Thống 5 Cột Trụ: tạo ra một vận động viên hoàn chỉnh, tích hợp, thực hiện một cách không gắng sức ở tiềm năng đỉnh cao của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Góc đánh, độ sâu và hình học xoáy cuối sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Mô-men xoắn góc và kiểm soát mặt vợt*
+<!-- TAICHIKB-CROSSREF-END -->

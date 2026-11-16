@@ -78,3 +78,10 @@ Players who cannot generate sufficient eccentric force in the outside leg will d
 ## Practical Application: "The One-Bounce Rule"
 
 Set up a drill where the player starts at the center mark and the coach feeds a wide ball. The rule: the outside foot may bounce only once. If it bounces twice, the player has failed to reverse in time — the second bounce represents the 200 ms delay that costs a point at the next shot. The coach counts bounces aloud. This simple rule trains the brain to treat the outside-leg plant as a spring, not a brake pad. Over a set of 10 repetitions, the player learns to make that single bounce the last one.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Linear kinetics, GRF & impulse-momentum*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Lateral Line: lateral stability & mediolateral force*
+<!-- TAICHIKB-CROSSREF-END -->

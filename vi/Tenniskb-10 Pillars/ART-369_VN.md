@@ -74,3 +74,10 @@ Huấn luyện phục hồi sau forehand chạy quan trọng như huấn luyện
 ## Ứng Dụng Thực Tế: "Drill Bóng Rộng"
 
 Luyện tập forehand chạy bằng cách nhờ đối tác ném bóng dần rộng hơn về phía forehand. Tập trung vào bước dừng: dừng chân trước chắc chắn trước khi bắt đầu đường vung về phía trước, và cảm nhận đà ngang được chuyển hướng thành lực xoáy. Sau mỗi cú đánh, luyện tập phục hồi về trung tâm sân nhanh nhất có thể.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

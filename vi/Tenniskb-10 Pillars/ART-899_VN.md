@@ -214,3 +214,10 @@ ___
 | Mục tiêu quá mơ hồ và không đo lường được | Mục tiêu "tốt hơn" không có mục tiêu | Không có hướng rõ ràng, không thể theo dõi tiến bộ | Áp dụng khung SMART; đặt mục tiêu cụ thể, đo lường được |
 | Mục tiêu quá tham vọng hoặc không thực tế | Mục tiêu không thể đạt được | Thất vọng, mất động lực | Đặt mục tiêu khả thi; chia thành các cột mốc nhỏ hơn |
 | Mục tiêu không được xem lại hoặc điều chỉnh | Cách tiếp cận đặt-và-quên, không theo dõi | Mục tiêu trì trệ, bỏ lỡ cơ hội | Xem lại tiến bộ hàng tuần; điều chỉnh mục tiêu dựa trên kết quả |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -43,3 +43,10 @@ Bài viết này tổng hợp các nguyên lý chiến thuật được trình b
 
 ## Ứng Dụng Thực Tế: "La Bàn Chiến Thuật"
 Mọi cú đánh trả lời: **Đối thủ ở đâu? Sân trống ở đâu? Biên độ an toàn của tôi là bao nhiêu?** Kim la bàn chỉ về cú đánh tỷ lệ cao nhất.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy*
+<!-- TAICHIKB-CROSSREF-END -->

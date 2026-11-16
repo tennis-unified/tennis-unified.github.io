@@ -53,3 +53,10 @@ Giấc ngủ là giai đoạn chính để củng cố ký ức và phục hồi
 
 ## Ứng Dụng Thực Tế: "Quy Trình Phục Hồi"
 Xây dựng một quy trình phục hồi có cấu trúc cho mỗi quy mô thời gian: (1) giữa các điểm: ba hít thở sâu, giải tỏa căng thẳng, đặt lại tập trung, (2) giữa các game: uống nước, tiêu thụ carbohydrate nếu cần, nghỉ ngơi tinh thần ngắn, (3) giữa các set: kéo giãn, điều chỉnh chiến thuật, phục hồi tinh thần mở rộng, (4) giữa các trận: ưu tiên ngủ, ăn bữa cân bằng, tham gia thư giãn. Quy trình này đảm bảo phục hồi nhận thức có hệ thống và có chủ đích thay vì ngẫu nhiên, tối đa hóa việc khôi phục chức năng tinh thần qua tất cả các quy mô thời gian.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

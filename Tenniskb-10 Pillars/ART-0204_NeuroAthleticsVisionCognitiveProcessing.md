@@ -61,3 +61,10 @@ Practice judging ball depth while moving at different speeds and directions. The
 
 ## Practical Application: "The Depth Check"
 Before each shot, perform a quick "depth check": note the ball's apparent size, its height in your visual field, and its expansion rate on your retina. Integrate these three cues to form a single judgment of distance. This conscious process, practiced repeatedly, becomes an automatic pre-shot routine that improves depth accuracy across all shots.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+<!-- TAICHIKB-CROSSREF-END -->

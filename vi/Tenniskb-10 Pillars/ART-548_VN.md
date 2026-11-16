@@ -131,3 +131,10 @@ Dựa trên các điểm này, phát triển chiến lược giao bóng cho set 
 - Điều chỉnh đặt bóng dựa trên vị trí trả về của họ
 
 Bài tập tâm lý đơn giản này đảm bảo bạn đang giao bóng với một kế hoạch, không chỉ đánh bóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

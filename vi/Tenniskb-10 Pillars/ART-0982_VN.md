@@ -47,3 +47,10 @@ Mô hình là sự đơn giản hóa, và sai số của chúng được cấu t
 ## Ứng Dụng Thực Tế: "Mô Phỏng Trước Khi Suy Đoán"
 
 Bài học sâu nhất của mô hình serve là kỹ thuật là quyết định phân phối tải. Mọi serve tiêu tốn năng lượng của nó ở đâu đó — qua chân và thân, hoặc qua khuỷu tay và vai. Huấn luyện viên và tay vợt không thể tất cả chạy OpenSim, nhưng mọi người có thể áp dụng tư duy mô hình: khi thay đổi kỹ thuật, lý luận về tải trọng đi đâu, giới thiệu một biến số tại một thời điểm, và để đau và tốc độ bóng cùng đánh giá kết quả. Cánh tay serve 200 km/h ở tuổi 25 là cùng cánh tay vẫn phải hoạt động ở tuổi 45; tiêu tốn ngân sách mô-men xoắn của nó như nó quan trọng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

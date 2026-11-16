@@ -218,3 +218,10 @@ Nếu bất kỳ vùng nào dưới mục tiêu, ưu tiên vùng đó trong chư
 | Tư thế sẵn sàng thấp khó duy trì | Dorsiflexion mắt cá kém, bắp chân căng | Đứng quá thẳng, bước đầu chậm | Knee-to-wall drill; giãn calf; ankle CARs |
 | Đau lower back khi giao bóng | Vận động cột sống ngực kém, duỗi thắt lưng quá | Đĩa đệm, căng cơ | Vận động cột sống ngực; cat-cow; foam roller extension |
 | Chấn thương cổ tay và cổ chân | Linh hoạt cổ tay kém | Tendinopathy, TFCC tears | Giãn cổ tay; wrist CARs; cân bằng sức mạnh nắm |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -52,3 +52,10 @@ Khi đối mặt đối thủ với xu hướng đã biết, kích hoạt trư�
 
 ## Ứng Dụng Thực Tế: "Quy Trình Kích Hoạt Trước"
 Phát triển một quy trình kích hoạt trước trận kích hoạt các ký ức ngầm liên quan đến hiệu suất thành công. Điều này có thể bao gồm: (1) xem lại video trận thắng tốt nhất của bạn, (2) hình dung các cú đánh thành công, (3) sử dụng một quy trình khởi động cụ thể kích hoạt sự tự tin, và (4) lặp lại một câu thần chú cá nhân. Quy trình này kích hoạt hệ thống bộ nhớ ngầm để hỗ trợ trạng thái hiệu suất mong muốn, cho phép bạn truy cập "cảm giác" và trực giác làm nền tảng cho trình độ chuyên gia.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

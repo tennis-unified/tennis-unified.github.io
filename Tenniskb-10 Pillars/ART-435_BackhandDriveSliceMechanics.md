@@ -60,3 +60,10 @@ Players who struggle with topspin production often benefit from drills that emph
 
 ## Practical Application: "The Topspin Brush Drill"
 Stand on the baseline and have a partner feed balls to your backhand. Hit ten two-handed drives focusing on brushing up the back of the ball with the top hand. Count how many produce visible topspin (the ball dips after crossing the net). Track progress over sessions to ensure the swing path is producing consistent spin.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

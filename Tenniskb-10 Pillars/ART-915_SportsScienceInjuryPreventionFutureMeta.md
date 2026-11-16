@@ -46,3 +46,10 @@ Begin every practice session with a 10-minute hip mobility routine. Start with f
 
 ## Practical Application: "Unlock Your Hip Power"
 Begin every practice session with a 10-minute hip mobility routine. Start with foam rolling the hip flexors and glutes for 2 minutes each. Perform the 90/90 hip switch for 2 minutes per side, focusing on controlled rotation. Hold the couch stretch for 90 seconds per side. Finish with 5 slow, deep squats, focusing on maintaining an upright torso and full depth. Track your progress by measuring hip internal rotation monthly. You should notice improvements in your ability to rotate into open stance forehands, reach wide balls without losing balance, and generate power without arm tension. The hips truly are the missing link in tennis power generation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+<!-- TAICHIKB-CROSSREF-END -->

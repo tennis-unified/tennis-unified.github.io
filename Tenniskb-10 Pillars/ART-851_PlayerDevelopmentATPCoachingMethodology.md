@@ -189,3 +189,10 @@ Create a pocket-sized travel protocol card:
 | Sleep disruption after travel | No jet lag management, poor sleep hygiene | Fatigue, reduced recovery | Sleep adjustment before travel; melatonin; consistent schedule |
 | Dehydration during travel | Insufficient fluid intake, alcohol | Reduced performance, fatigue | Hydration protocol; avoid alcohol; electrolyte drinks |
 | Slow adaptation to new time zone | Insufficient light exposure, no melatonin | Prolonged jet lag | Light exposure protocol; melatonin supplementation |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Angular kinematics & sequential kinetic chain*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Tai Chi principles applied to tennis*
+<!-- TAICHIKB-CROSSREF-END -->

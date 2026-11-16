@@ -40,3 +40,10 @@ Trong đó:
 
 ## Ứng Dụng Thực Tế: "Hiệu Ứng Đòn Bẩy"
 Cánh tay và vợt của bạn tạo thành một đòn bẩy: trục xoay là vai, bán kính là độ dài cánh tay cộng độ dài vợt, và vận tốc tuyến tính ở đầu vợt là tích của vận tốc góc và bán kính. Để tối đa hóa tốc độ bóng, hãy tối đa hóa cả vận tốc góc (qua cơ học chuỗi động học) và bán kính (qua duỗi tay hoàn toàn khi va chạm). Hiệu ứng đòn bẩy giải thích tại sao người chơi cao với tay dài có lợi thế tự nhiên trong tạo tốc độ bóng — bán kính dài hơn của họ chuyển đổi cùng vận tốc góc thành vận tốc tuyến tính cao hơn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

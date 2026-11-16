@@ -68,3 +68,10 @@ Reaction volleys are the product of trained reflexes, not conscious technique. T
 ## Practical Application: "See the Racket, React with the Hand"
 
 At the net, your eyes should lock onto the opponent's racket face at contact. Your hands react automatically to the ball's direction — no conscious thought, just trained reflex. Trust your training and let your hands do the work.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Sensorimotor integration & motor control*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -60,3 +60,10 @@ Não lưu ba loại kiến thức trạng thái dòng chảy:
 
 ## Ứng Dụng Thực Tế: "La Bàn Thích Ứng Trạng Thái Dòng Chảy"
 Thích ứng trạng thái dòng chảy là la bàn giữ bạn di chuyển đến đích. Không có thích ứng trạng thái dòng chảy, bạn chỉ đang chạy vòng tròn; có thích ứng trạng thái dòng chảy, bạn đang chạy để chiến thắng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

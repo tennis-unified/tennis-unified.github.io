@@ -147,3 +147,10 @@ Bài tập này xây dựng bộ nhớ cơ bắp, tính nhất quán điểm ti�
 | Tay sau một tay thiếu độ sâu | Tiếp xúc muộn, thiếu đẩy chân | Cú thụ động, đối thủ tấn công | Vung bóng mô phỏng nhấn mạnh bước vào và mở rộng kết thúc cú |
 | Người chơi khó khăn với trả bóng tay sau cao | Cách cầm hoặc kỹ thuật không phù hợp cho bóng cao | Mất các game trả bóng giao | Tập bài tập cấp bóng cao; xem xét slice hoặc chuyển đổi hai tay |
 | Slice tay sau thiếu sắc | Cổ tay yếu, thiếu đẩy về phía trước | Bóng nổi lên dễ bị tấn công | Tăng cường cán tay; tập với băng đánh dấu trên mặt vợt cho phản hồi |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -55,3 +55,10 @@ Một số vận động viên quấn tay trên quá xa trên đỉnh cán vợt
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Cú Vóng Bóng Ma"
 Thực hiện cú vung backhand hai tay trước gương. Quan sát hai tay trong toàn bộ quá trình vung. Tay dưới phải khởi xướng đường lùi, tay trên phải dẫn dắt cú vung tới, và cả hai đều phải thả ra tự nhiên trong đường follow-through. Tập luyện chậm cho đến khi vai trò của hai tay trở nên tự động, sau đó tăng tốc lên mức tối đa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

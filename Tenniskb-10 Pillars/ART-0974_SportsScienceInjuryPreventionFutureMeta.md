@@ -39,3 +39,10 @@ The injury story is a materials story. A stiffer frame (higher RA) deflects less
 
 ## Practical Application: "Fit the Frame to the Arm"
 Racket selection is injury prevention, not just performance tuning. When evaluating a frame, weigh four numbers together: mass (heavier stabilizes, lighter tires), stiffness (lower is kinder to the arm), head size (bigger forgives), and balance/twistweight (stability on mishits). Demo before buying, change one variable at a time, and give any new setup two weeks before judging it. The best racket is never the most advanced one — it is the one your technique, strength, and arm can exploit today, with room to grow.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -123,3 +123,10 @@ Thực hiện thói quen này 3-4 lần mỗi tuần để duy trì sức khỏe
 5. **Kéo giãn cẳng tay** — 30 giây mỗi bên (kéo giãn cơ gấp và mở rộng cổ tay)
 
 Thói quen này mất khoảng 10 phút và đòi hỏi thiết bị tối thiểu. Thực hiện sau buổi tập tennis hoặc như buổi tập độc lập. Bài tập mở rộng cổ tay lệch tâm là thành phần quan trọng nhất — đây là can thiệp có cơ sở khoa học nhất để phòng ngừa và điều trị tennis elbow. Kết hợp với thiết bị phù hợp, kỹ thuật và quản lý tải, thói quen này có thể giữ khuỷu tay khỏe mạnh trong nhiều năm thi đấu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

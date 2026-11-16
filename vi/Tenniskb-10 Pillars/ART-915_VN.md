@@ -55,3 +55,10 @@ Bắt đầu mỗi buổi tập với quy trình độ linh hoạt khuỷu háng
 ## Ứng Dụng Thực Tế: "Mở Khóa Sức Mạnh Khuỷu Háng"
 
 Bắt đầu mỗi buổi tập với quy trình độ linh hoạt khuỷu háng 10 phút. Bắt đầu với cuộn mút cơ gập háng và mông trong 2 phút mỗi nhóm. Thực hiện chuyển đổi háng 90/90 trong 2 phút mỗi bên, tập trung vào xoay có kiểm soát. Giữ giãn háng sờ kỳ trong 90 giây mỗi bên. Kết thúc với 5 lần xạp chậm, sâu, tập trung vào duy trì thân trên thẳng và độ đầy đủ. Theo dõi tiến trình bằng cách đo xoay trong khuỷu háng hàng tháng. Bạn nên nhận thấy sự cải thiện trong khả năng xoay vào forehand tư thế mở, tiếp cận bóng rộng mà không mất thăng bằng, và tạo sức mạnh mà không căng cánh tay. Khuỷu háng thực sự là mắt xích thiếu trong chuỗi sức mạnh tennis.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+<!-- TAICHIKB-CROSSREF-END -->

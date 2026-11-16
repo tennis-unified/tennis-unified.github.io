@@ -62,3 +62,10 @@ Effective kinetic chain training progresses from:
 ## Practical Application: "Feel the Floor, Fly the Racket"
 
 During your next practice session, focus on the sensation of pushing the ground away rather than pulling the racket through. Start with shadow swings in an open stance, consciously feeling pressure shift from the inside of your back foot through your front hip. Progress to ball feeds at 50% effort, maintaining awareness that every swing begins below your knees. The racket is merely the final expression of energy that started at your feet.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -44,3 +44,9 @@ Trong khoảng thời gian 4 mili giây tiếp xúc, động học năng lượn
 
 ## Ứng Dụng Thực Tế: Khái Niệm "Định Trước"
 Vì cửa sổ tiếp xúc 4 mili giây quá ngắn để kiểm soát có ý thức, vận động viên phải coi mặt vợt là một cơ chế "định trước". Việc định chuẩn (độ cứng, độ dày, độ căng) được chọn dựa trên khả năng tạo động năng của người chơi, chứ không phải dựa trên điều chỉnh trong lúc đánh. "Định chuẩn mặt vợt phù hợp với chuỗi động học, chứ không phải ngược lại."
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Thời gian tiếp xúc (Δt) và hiệu chỉnh xung lượng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Thời gian lưu bóng trên mặt lưới*
+<!-- TAICHIKB-CROSSREF-END -->

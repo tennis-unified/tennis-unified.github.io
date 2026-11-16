@@ -53,3 +53,10 @@ Neurological and biomechanical balance must be integrated to support the technic
 
 ## Practical Application: The "Stable Chain"
 The athlete should feel that the kinetic chain is "stable" and integrated with the neurological and biomechanical balance systems. The athlete should feel that the energy is flowing from the ground, through the core, and out through the racket. This is the ultimate goal of the 5-Pillar System: to create a complete, integrated athlete who performs effortlessly at their peak potential.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Vestibular system (semicircular canals, otoliths) & equilibrium*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Cerebellar coordination & proprioceptive balance*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Dynamic balance & postural control during locomotion*
+<!-- TAICHIKB-CROSSREF-END -->

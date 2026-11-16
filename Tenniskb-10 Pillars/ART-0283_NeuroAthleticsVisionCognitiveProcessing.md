@@ -67,3 +67,10 @@ Practice recovering from induced errors. Have a coach create unfair calls or fru
 
 ## Practical Application: "The Emotion Reset"
 When you notice negative emotions escalating during a match, perform an emotion reset: (1) acknowledge the emotion without judgment, (2) take three deep breaths to activate the parasympathetic nervous system, (3) reappraise the situation ("this is an opportunity, not a threat"), (4) focus on the process of the next shot rather than the outcome. This 30-second reset interrupts the emotional escalation cycle and restores the emotional control that underpins consistent performance.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

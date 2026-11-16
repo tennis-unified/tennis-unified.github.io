@@ -100,3 +100,10 @@ If access to a grass court is available, run this progression at the start of ev
 5. **Full rally.** Play out points on grass with the instruction: "Stay low, stay choppy, prepare early." The coach monitors center-of-mass height and step frequency, providing real-time feedback.
 
 If grass access is unavailable, simulate the conditions on hard court by placing small towels or markers at random positions to represent slippery patches and adjusting the drill accordingly.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

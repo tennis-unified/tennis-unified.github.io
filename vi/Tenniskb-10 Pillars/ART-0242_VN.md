@@ -52,3 +52,10 @@ Khi đối thủ nhận ra bạn đã nhận diện mô hình của họ, họ c
 
 ## Ứng Dụng Thực Tế: "Nhật Ký Mô Hình"
 Giữ một nhật ký mô hình trong đầu (hoặc viết ra) trong trận đấu. Sau mỗi game, ghi lại mọi mô hình bạn quan sát: "Đối thủ giao rộng 80% ở sân deuce," "Luôn chéo sau bóng sâu," "Tiến lưới sau slice ngắn." Xem lại nhật ký này trong lúc đổi sân và điều chỉnh chiến thuật cho phù hợp. Cách tiếp cận hệ thống này cho nhận diện mô hình biến nhận thức đối thủ mơ hồ thành thông tin chiến thuật cụ thể.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

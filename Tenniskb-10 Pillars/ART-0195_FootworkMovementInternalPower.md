@@ -69,3 +69,10 @@ In the internal-power language of this pillar, the slice reset is **yielding**: 
 ## Practical Application: "Spend the Second"
 
 Run a 20-ball station: the coach feeds a difficult wide ball; the player must slice high and deep, then recover to a marked zone (deep for wide balls, bisector for central ones) *before the coach's racket touches the counterattack feed*. The coach deliberately varies the counterattack — immediate drive, delayed attack, another float — so the player learns to spend the dividend on readiness rather than a fixed script. Score each ball: 2 points for arriving in the zone with live filler steps at the coach's contact, 1 for arriving static, 0 for late. Ten balls, three rounds. A player consistently scoring 15 or better has learned the point of the reset: it is not the ball you hit — it is the second you bought and how you spent it.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+<!-- TAICHIKB-CROSSREF-END -->

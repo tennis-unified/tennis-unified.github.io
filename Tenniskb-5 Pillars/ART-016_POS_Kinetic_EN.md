@@ -32,3 +32,10 @@ In a two-handed backhand, the POS is used to stabilize the torso against the for
 
 ## Practical Application: The "Back-Diagonal" Sensation
 The feeling should be a deep tension across the lower back and opposite hip during the load. If you only feel the arm moving, the POS is not engaged.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Back Functional Line (Posterior Oblique Sling)*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Latissimus dorsi & gluteus maximus coupling*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Thoracolumbar fascia kinetic energy storage*
+<!-- TAICHIKB-CROSSREF-END -->

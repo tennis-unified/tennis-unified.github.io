@@ -57,3 +57,10 @@ Simple tracking methods include noting Post-Match Analytics: Extracting Lessons 
 ## Practical Application: "Learn More From Losses Than Wins"
 
 Begin tracking Post-Match Analytics: Extracting Lessons from Losses in your next five matches. Use a simple tally system on a notecard or a tennis statistics app. After each match, calculate the percentage and compare it to your target (typically 60% or above for most metrics). Identify specific situations where the metric drops (late in sets, after long rallies, under scoreboard pressure) and develop targeted practice for those scenarios. Over a season, track whether the metric improves and correlates with match wins.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 10: Mô Cơ (Muscular Tissue)](https://taichikb.github.io/vi/books/tortora_ap/ch10-mo-co.html) — *Muscular tissue physiology & contraction*
+<!-- TAICHIKB-CROSSREF-END -->

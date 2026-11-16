@@ -41,3 +41,10 @@ Ngày nghỉ không phải là ngày lười biếng — chúng là ngày tập 
 
 ## Ứng Dụng Thực Tế: "Nhân Tố Phục Hồi"
 Đối xử với ngày nghỉ như ngày tập luyện để phục hồi. Các vận động viên giỏi nhất phục hồi mạnh hơn đối thủ của họ tập luyện.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Dinh dưỡng thể thao và cân bằng năng lượng*
+<!-- TAICHIKB-CROSSREF-END -->

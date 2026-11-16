@@ -160,3 +160,10 @@ Tự chủ người chơi là khả năng của người chơi tennis tự độ
 | Người chơi thiếu độc lập | Cách tiếp cận do huấn luyện viên chỉ đạo, không phát triển tự chủ | Phụ thuộc, tự quản lý kém | Chuyển giao trách nhiệm từ từ; tập luyện do người chơi dẫn đầu; nhật ký hiệu suất |
 | Người chơi không thể xử lý tình huống áp lực | Không đủ thực hành áp lực, kỹ năng tâm lý kém | Nghẽn ngào, hiệu suất giảm | Mô phỏng áp lực; luyện kỹ năng tâm lý; tự chủ trong tập luyện |
 | Người chơi không có động lực và không tham gia | Không có quyền sở hữu phát triển | Nỗ lực giảm, rủi ro bỏ cuộc | Đặt mục tiêu do người chơi dẫn đầu; tự chủ trong quyết định tập luyện; quyền sở hữu kết quả |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

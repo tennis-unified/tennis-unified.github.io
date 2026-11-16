@@ -44,3 +44,10 @@ Nhảy một chân là một cách nâng cao hơn để cải thiện tích hợ
 
 ## Ứng Dụng Thực Tế: "Nhà Tích Hợp Thần Kinh-Cơ Hoàn Chỉnh"
 Vận động viên nên cảm nhận rằng họ là "hoàn chỉnh" và tích hợp với Hệ Thống 5 Cột Trụ. Vận động viên nên cảm nhận rằng các hệ thống sinh cơ học, thần kinh và chiến thuật đang hoạt động cùng nhau một cách hài hòa. Đây là mục tiêu cuối cùng của Hệ Thống 5 Cột Trụ: tạo ra một vận động viên hoàn chỉnh, tích hợp, thực hiện một cách không gắng sức ở tiềm năng đỉnh cao của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Tập luyện plyometric và kích hoạt thần kinh–cơ SSC*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 4 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch04.html) — *Huy động thần kinh–cơ và đồng bộ đơn vị vận động*
+- [Chương 13: Tủy Sống và Dây Thần Kinh Sống (The Spinal Cord and Spinal Nerves)](https://taichikb.github.io/vi/books/tortora_ap/ch13-tuy-song-va-day-than-kinh-song.html) — *Phản xạ căng cơ tủy sống và sức mạnh phản ứng*
+<!-- TAICHIKB-CROSSREF-END -->

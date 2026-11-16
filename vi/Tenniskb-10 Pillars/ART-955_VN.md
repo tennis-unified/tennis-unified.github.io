@@ -147,3 +147,10 @@ Tập luyện cho tính linh hoạt quy trình bao gồm:
 ## Ứng Dụng Thực Tế: "Làm Chủ 25 Giây Của Bạn"
 
 25 giây giữa các point là của bạn — không đối thủ, không đám đông, không bảng điểm có thể lấy chúng khỏi bạn. Thiết kế một quy trình tận dụng những giây đó một cách có chủ đích: thiết lập lại thể lực, xử lý chiến thuật, chuẩn bị tinh thần, sau đó thực hiện với cam kết đầy đủ. Tập quy trình này trong mọi buổi tập cho đến khi trở thành tự động như cử chỉ giao bóng của bạn. Những người chơi kiểm soát thời gian giữa các point của họ kiểm soát trận đấu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

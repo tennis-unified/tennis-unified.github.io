@@ -21,3 +21,10 @@ Khái niệm chuỗi động học mô tả cơ thể như một chuỗi các ph
 
 ## Ứng Dụng Thực Tế: "Chuỗi Động Học Hoàn Chỉnh"
 Khởi tạo từ mặt đất lên đảm bảo sức mạnh được truyền hiệu quả từ chi dưới đến vợt. Mỗi phân đoạn xây dựng trên động lượng của phân đoạn trước, tạo ra hiệu ứng "whip" cuối cùng ở đầu vợt.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên phân đoạn*
+<!-- TAICHIKB-CROSSREF-END -->

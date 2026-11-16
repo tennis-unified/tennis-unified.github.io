@@ -88,3 +88,10 @@ Drop shot mang rủi ro:
 ## Ứng Dụng Thực Tế: "Nhạy Cảm Drop Shot"
 
 Luyện tập drop shot bằng cách đứng ở vạch gầm và nhắm vào khu vực mục tiêu trong phạm vi 2 mét lưới. Tập trung vào điểm chạm mềm và cảm giác bóng "hết hơi" trên vợt. Bắt đầu với ném bóng chậm và tiến triển đến tốc độ nhanh, thực tế hơn. Phát triển nhạy cảm để luôn hạ cố bóng trong khu vực mục tiêu, và luyện tập ngụy trang drop shot với phần chuẩn bị giống forehand tiêu chuẩn của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

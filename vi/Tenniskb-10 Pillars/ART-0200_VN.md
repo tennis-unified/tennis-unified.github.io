@@ -73,3 +73,10 @@ Chạy cột này như một chu kỳ tích hợp sáu tuần. **Tuần 0:** qua
 Qua một trăm bài, Cột 2 thu gọn thành một ý tưởng đơn lẻ: **chuyển động là một cuộc hội thoại năng lượng liên tục với sân.** Thời gian mượn thông tin; nội lực mượn mặt đất; hình học mượn góc sân; và phục hồi trả lại mọi nợ để cú đánh tiếp theo bắt đầu giàu thay vì nghèo. Người chơi nội hóa điều này ngừng nghĩ về bước chân như vận chuyển giữa các cú đánh và bắt đầu đối xử nó như động cơ của chính các cú đánh — mặt đất là mặt vợt còn lại.
 
 (End of file - total 87 lines)
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -50,3 +50,10 @@ Người chơi nên đưa các bài tập này vào quy trình tập luyện th�
 
 ## Ứng Dụng Thực Tế: "Bài Tập Volley Cao"
 Đứng tại lưới và yêu cầu đối tác ném bóng cao về phía tay trái của bạn. Tập luyện đánh mười cú volley tay trái cao, tập trung vào cổ tay vững chắc, mặt vợt hơi hướng vào trong và cú swing ngắn gọn. Đếm số volley rơi trong sân và số volley xuyên thấu sân. Theo dõi tiến trình qua các buổi tập để đảm bảo volley cao đang phát triển đúng hướng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

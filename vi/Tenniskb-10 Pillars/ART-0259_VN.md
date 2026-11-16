@@ -55,3 +55,10 @@ Phát triển thói quen trước ngủ thúc đẩy sự thư giãn: kéo giãn
 
 ## Ứng Dụng Thực Tế: "Ưu Tiên Giấc Ngủ"
 Coi giấc ngủ là một thành phần không thể thương lượng trong lịch tập luyện và thi đấu của bạn. Trước giải đấu, đảm bảo bạn ngủ tốt bằng cách ưu tiên ngủ trong các ngày trước thi đấu. Trong giải đấu, duy trì lịch trình ngủ nhất quán bất chấp sự hào hứng và căng thẳng. Sau trận đấu, sử dụng giấc ngủ phục hồi để củng cố ký ức chiến thuật và thủ tục hình thành trong lúc chơi. Việc ưu tiên giấc ngủ này biến nó từ một hoạt động phục hồi thụ động thành một công cụ tăng cường hiệu suất chủ động.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

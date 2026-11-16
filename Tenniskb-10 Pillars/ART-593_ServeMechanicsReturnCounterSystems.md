@@ -69,3 +69,10 @@ The right equipment can significantly improve your return performance. This arti
 ## Practical Application: "The Demo Protocol"
 
 Test at least 3 different racket setups over 2 weeks each. Track return reaction time, accuracy, and comfort. The optimal setup is the one that produces the highest combination of speed, accuracy, and comfort.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+<!-- TAICHIKB-CROSSREF-END -->

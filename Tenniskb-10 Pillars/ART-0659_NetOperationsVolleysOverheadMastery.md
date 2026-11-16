@@ -60,3 +60,10 @@ The moon ball is a defensive lob that requires patient tracking, efficient backw
 ## Practical Application: "Patience Over Power"
 
 The moon ball is designed to make you rush. Resist the urge to swing early. Wait for the ball to descend, set up perfectly, and then hit a full-power overhead. Patience is the key to defeating the moon ball.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

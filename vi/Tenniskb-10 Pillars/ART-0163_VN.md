@@ -39,3 +39,10 @@ Mô hình có ba nhịp:
 ## Ứng Dụng Thực Tế: "Lén, Ổn Định, Split"
 1. **Làm việc làn.** Dán ba đường ở 0.5, 1.0 và 2.0 m trong vị trí trả bóng. HLV bắ chước tung bóng; người chơi lén đến đường được gọi và đóng băng tại đỉnh tung bóng mô phỏng. Mười lần mỗi đường, luân phiên tư thế trả forehand và backhand.
 2. **Giao bóng lần hai trực tiếp.** HLV chỉ giao bóng lần hai. Người chơi gọi "lần hai" trước tung bóng, lén, ổn định, split, trả. Mỗi trả bóng được đánh với ý định nhận bóng trước khi nó đạt đỉnh cao.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

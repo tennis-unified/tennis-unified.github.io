@@ -52,3 +52,10 @@ A useful drill is the "pause and coil" drill: from the ready position, perform a
 ## Practical Application: "The Wind-Up Feel"
 
 Practice the counter-rotation by exaggerating it: rotate your shoulders 30 degrees in the opposite direction before each unit turn. This exaggerated wind-up makes the counter-rotation conscious and develops the motor pattern. Gradually reduce the amplitude to the optimal 10 to 20 degrees as the movement becomes automatic. The goal is to feel a slight "pull" along the side of your trunk at the end of the counter-rotation, indicating that the muscles are pre-stretched and ready to recoil.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -45,3 +45,10 @@ Vận động viên hay gặp khó khăn trong hiệp quyết thường được
 
 ## Ứng Dụng Thực Tế: "Bài Tập Hiệp Quyết"
 Mô phỏng tình huống hiệp quyết trong luyện tập, với tỷ số sát sao và áp lực lớn. Tập trung vào các nguyên tắc cơ bản: cách cầm vợt phù hợp, xoay thân người, điểm chạm bóng, và đà hoàn thành. Ghi lại số điểm bạn thắng trong tình huống hiệp quyết. Bài tập này giúp phát triển sức mạnh tinh thần và nhận thức chiến thuật cần thiết cho lối chơi hiệp quyết hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

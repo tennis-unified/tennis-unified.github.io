@@ -59,3 +59,10 @@ Hiệu suất tuân theo một đường cong U ngược so với kích thích (
 
 ## Ứng Dụng Thực Tế: Trạng Thái "Tâm Trí Bình Tĩnh, Cơ Thể Nhanh"
 Vận động viên phải học cách duy trì một trạng thái tinh thần bình tĩnh, tập trung trong khi cho phép cơ thể di chuyển ở tốc độ tối đa. Đây là trạng thái Dòng Chảy, nơi xử lý nhận thức được tối ưu hóa và chuỗi động học hoạt động tự động. Mục tiêu huấn luyện không phải là loại bỏ căng thẳng, mà là định chuẩn phản ứng căng thẳng sao cho não duy trì trong vùng kích thích tối ưu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 14: Não và Các Dây Thần Kinh Sọ (The Brain and Cranial Nerves)](https://taichikb.github.io/vi/books/tortora_ap/ch14-nao-va-cac-day-than-kinh-so.html) — *Vỏ não trước trán và tốc độ ra quyết định*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Điều hòa kích thích thần kinh tự chủ dưới áp lực*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và hiệu suất nhận thức*
+<!-- TAICHIKB-CROSSREF-END -->

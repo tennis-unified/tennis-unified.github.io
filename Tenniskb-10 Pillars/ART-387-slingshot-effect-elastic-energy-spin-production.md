@@ -58,3 +58,10 @@ Training involves:
 ## Practical Application: "The Slingshot Drill"
 
 Practice the slingshot effect by holding your racquet with your wrist fully extended (cocked back) and your arm relaxed. Swing your arm forward, maintaining the wrist extension until the last moment, then snap your wrist forward as if you are throwing a ball. Focus on the feeling of the racquet head "whipping" forward at the end of the motion. This whipping sensation is the slingshot effect that adds significant speed and spin to your forehand.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Elbow, forearm pronation & wrist mechanics*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

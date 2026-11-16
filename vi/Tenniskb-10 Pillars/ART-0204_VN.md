@@ -71,3 +71,10 @@ Tập đánh giá độ sâu quả bóng trong khi di chuyển ở các tốc đ
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Độ Sâu"
 Trước mỗi cú đánh, thực hiện một "kiểm tra độ sâu" nhanh: ghi nhận kích thước biểu kiến của quả bóng, chiều cao của nó trong trường thị giác và tốc độ mở rộng trên võng mạc. Tích hợp ba tín hiệu này để tạo ra một phán đoán khoảng cách duy nhất. Quá trình có ý thức này, được tập luyện nhiều lần, trở thành một thói quen trước cú đánh tự động cải thiện độ chính xác độ sâu trên tất cả các cú đánh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

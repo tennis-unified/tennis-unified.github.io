@@ -56,3 +56,10 @@ Chói lóa do ánh nắng là một thách thức có thể xử lý được �
 ## Ứng Dụng Thực Tế: "Che Mắt, Theo Dõi, Vung Vợt"
 
 Khi đối mặt với ánh nắng: (1) che mắt bằng quai mũ hoặc bàn tay, (2) theo dõi quả bóng bằng bóng đổ và âm thanh, (3) chỉ vung vợt khi bạn có liên lạc thị lực rõ ràng. Nếu bạn không thể nhìn thấy quả bóng, đừng vung vợt — hãy thực hiện lob phòng ngự và sống sót để tiếp tục thi đấu ở pha bóng tiếp theo.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

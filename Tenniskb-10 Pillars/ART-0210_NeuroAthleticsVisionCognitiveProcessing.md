@@ -64,3 +64,10 @@ Polarized sunglasses can reduce glare but may affect color perception and depth 
 
 ## Practical Application: "The Light Check"
 Before each match, perform a light check: note the sun position, identify areas of glare, and determine the dominant light direction. Adjust your serve and overhead strategy accordingly (e.g., serve from the side that minimizes sun exposure, use the hand shade for overheads). This 30-second assessment prevents the visual errors that occur when players are surprised by lighting conditions they failed to anticipate.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

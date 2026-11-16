@@ -73,3 +73,10 @@ The solution is to train the decision, not just the mechanics. A player should r
 ## Practical Application: "Land, Look, Decide"
 
 Give players a three-beat mantra: **land, look, decide.** The first split-step lands at contact (land). The first 30-50 ms after landing are spent resolving the read (look). If the read is clear, push off immediately. If the read is ambiguous, trigger the second micro-split and redirect. At the next session, start with the recognition drill: the coach feeds clear and disguised balls in random order, and the player practices the land-look-decide sequence. Score both the decision and the outcome. Within a few rounds, the dual-step becomes an automatic option rather than a panicked guess.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

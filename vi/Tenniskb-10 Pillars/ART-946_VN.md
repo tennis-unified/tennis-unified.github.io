@@ -166,3 +166,10 @@ Thực hiện chu kỳ này 3-4 lần mỗi tuần, trước tập luyện hoặ
 8. **Nâng bắp chân lệch tâm** — 2 × 12 mỗi bên (Achilles và mắt cá)
 
 Chu kỳ này đòi hỏi thiết bị tối thiểu (một băng kháng lực và một thảm) và có thể thực hiện ở bất kỳ đâu. Đây là công cụ phòng ngừa chấn thương hiệu quả về chi phí nhất hiện có. Tay vợt thực hiện nó kiên định là những người ở trên sân, tuần này qua tuần khác, tháng này qua tháng khác, năm này qua năm khác. Prehab không hào nhoáng, nhưng nó là nền tảng của sự nghiệp tennis dài và thành công.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+<!-- TAICHIKB-CROSSREF-END -->

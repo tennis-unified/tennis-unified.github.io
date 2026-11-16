@@ -60,3 +60,10 @@ Players should practice varying the shoulder turn during drills, hitting some sh
 
 ## Practical Application: "The Coil Hold Drill"
 Practice the backhand take-back and hold the coiled position for two seconds. Feel the stretch in your core and shoulders. Then execute the forward swing, focusing on releasing the coil smoothly. This drill trains the maintenance of the coil and the smooth transfer of energy from the take-back to the forward swing.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -41,3 +41,10 @@ Cross-training must be integrated with the 5-Pillar System to support the techni
 
 ## Practical Application: The "Complete Athlete"
 The athlete should feel that they are "complete" and able to perform under the demands of tennis. The athlete should feel that they are integrated with the 5-Pillar System and able to perform at their peak potential. This is the ultimate goal of the 5-Pillar System: to create a complete, integrated athlete who performs effortlessly at their peak potential.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 21: Huấn luyện vận động viên — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch21-huan-luyen-van-dong-vien.html) — *Multi-modal athlete conditioning & fascial cross-training*
+- [Chương 10: Anatomy Trains trong Vận Động — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch10-anatomy-trains-trong-van-dong.html) — *Anatomy Trains in whole-body athletic movement*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Tai Chi cross-training for balance, relaxation & rotational power*
+<!-- TAICHIKB-CROSSREF-END -->

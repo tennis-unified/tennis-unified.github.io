@@ -44,3 +44,10 @@ Giao thức phục hồi 90 giây là một cách nâng cao hơn để cải thi
 
 ## Ứng Dụng Thực Tế: "Nhà Sản Xuất Phục Hồi Hoàn Chỉnh"
 Vận động viên nên cảm nhận rằng họ là "hoàn chỉnh" và tích hợp với Hệ Thống 5 Cột Trụ. Vận động viên nên cảm nhận rằng các hệ thống sinh cơ học, thần kinh và chiến thuật đang hoạt động cùng nhau một cách hài hòa. Đây là mục tiêu cuối cùng của Hệ Thống 5 Cột Trụ: tạo ra một vận động viên hoàn chỉnh, tích hợp, thực hiện một cách không gắng sức ở tiềm năng đỉnh cao của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Phục hồi phó giao cảm và điều hòa giấc ngủ*
+- [Chương 18: Hệ Nội Tố (The Endocrine System)](https://taichikb.github.io/vi/books/tortora_ap/ch18-he-noi-to.html) — *Hệ nội tiết trong phục hồi và giấc ngủ*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Tái tạo tế bào và phân tử trong giai đoạn phục hồi*
+<!-- TAICHIKB-CROSSREF-END -->

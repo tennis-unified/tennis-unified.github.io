@@ -54,3 +54,10 @@ Vị trí chỉ "đúng" nếu nó đạt được. Ngân sách — thời gian 
 
 ## Ứng Dụng Thực Tế: "Tam Giác Dây Dán"
 Trước phiên tập tiếp theo, đặt ba dải băng sân (hoặc cọc phẳng) tại ba tọa độ phục hồi phổ biến nhất của người chơi: phân đoạn chéo, phân đoạn dọc đường 2-3 m qua trung tâm, và dấu vùng phòng thủ 2.5 m sâu. Chơi điểm trực tiếp trong đó HLV đóng băng rally tại các thời điểm ngẫu nhiên với lệnh "Vị trí!" — vị trí người chơi được chấm dựa trên dấu đúng: 2 điểm cho vùng đúng, 1 cho vùng lân cận, 0 cho sai. Mười lần đóng băng mỗi set. Trong hai tuần hầu hết người chơi chuyển từ chấm 3-4 trên 10 lên 7 trở lên — và HLV ngừng nói "giữa" mãi mãi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+<!-- TAICHIKB-CROSSREF-END -->

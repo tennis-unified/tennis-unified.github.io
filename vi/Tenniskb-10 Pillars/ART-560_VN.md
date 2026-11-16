@@ -139,3 +139,10 @@ Khi người chơi lớn tuổi, thời gian phản xạ tự nhiên chậm lạ
 ## Ứng Dụng Thực Tế: "Bài Tập Dự Đoán"
 
 Yêu cầu đối tác giao bóng trong khi bạn chỉ tập trung vào việc đọc động tác ném và tư thế của họ. Không cố gắng đánh trả — chỉ gọi hướng giao bóng ("rộng," "thân," "T") trước khi bóng đến bạn. Bài tập này phát triển kỹ năng dự đoán bù đắp cho thời gian phản xạ chậm. Khi bạn có thể gọi đúng hướng 70%+ thời gian, hãy thêm đánh trả bóng lại.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -75,3 +75,10 @@ Huấn luyện các kỹ thuật xoáy nâng cao bao gồm:
 ## Ứng Dụng Thực Tế: "Phòng Thí Nghiệm Xoáy Nâng Cao"
 
 Thử nghiệm các kỹ thuật xoáy nâng cao trong lúc tập luyện, tập trung vào một kỹ thuật tại một thời điểm. Bắt đầu với forehand ngược, thực hành follow-through đã sửa đổi. Sau đó thử forehand xoáy, tập trung vào độ dốc cực đoan của quỹ đạo vung. Cuối cùng, thực hành cong trong-ra, thêm thành phần chải ngang. Sử dụng thiết bị đo xoáy để theo dấu tốc độ xoáy và trục xoáy của mỗi kỹ thuật.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

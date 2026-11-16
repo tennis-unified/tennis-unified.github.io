@@ -47,3 +47,10 @@ Huấn luyện viên chưa thể đo lường hồ sơ metyl hóa của vận đ
 ## Ứng Dụng Thực Tế: "Tập Luyện Phản Ứng, Không Phải Kế Hoạch"
 
 Món cuả của cuộc cách mạng biển hiệu cho quần vợt là khiêm tốn với đồng hồ bấm giờ: kế hoạch chỉ là một giả thuyết, và phản ứng của vận động viên là dữ liệu quan trọng. Đo lường đường cơ sở, chạy khối xác định, đánh giá lại thành thật, và điều chỉnh liều cho con người trước mặt bạn. Khi một chương trình đình trệ, thay đổi kích thích hoặc phục hồi trước khi đổ lỗi cho tay vơn — bởi vì ở cấp độ phân tử, mọi vận động viên đang viết câu chuyện thích ứng riêng của họ, một phiên tại một thời điểm.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Cơ học co cơ: lệch tâm/đồng tâm và lực–vận tốc*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Hệ cơ: nhóm cơ chủ vận và ổn định*
+<!-- TAICHIKB-CROSSREF-END -->

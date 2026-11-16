@@ -147,3 +147,10 @@ Sau mỗi trận, tính bốn con số này:
 4. Tỷ lệ lỗi kép (mục tiêu: dưới 5%)
 
 Chấm điểm từng chỉ số là A (vượt mục tiêu), B (đạt mục tiêu), C (gần mục tiêu), hoặc D (dưới mục tiêu). Tập trung buổi tập tiếp theo vào chỉ số có điểm thấp nhất. Theo thời gian, theo dõi điểm số của bạn để thấy xu hướng cải thiện.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

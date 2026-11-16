@@ -55,3 +55,10 @@ Người chơi nên đưa các bài tập này vào thói quen luyện tập th�
 
 ## Ứng Dụng Thực Tế: "Bài Tập Tiến Về"
 Nhờ một người bạn cầu ném bóng ngắn về phía tay sau của bạn. Luyện tập đánh cú tiến về và lập tức di chuyển lên lưới. Tập trung vào việc tạo ra một cú đánh cho phép bạn đến lưới trước khi đối thủ có thể phản ứng. Theo dõi tiến độ qua nhiều phiên luyện tập để đảm bảo cú tiến về đang phát triển đúng hướng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -53,3 +53,10 @@ Chronic stress impairs neuroplasticity by elevating cortisol levels, which can d
 
 ## Practical Application: "The Plasticity Practice"
 Design your practice to maximize neuroplasticity: (1) practice with full attention and intention, (2) challenge yourself with tasks that are just beyond your current ability, (3) get adequate sleep after practice to consolidate learning, (4) maintain good nutrition and hydration, and (5) manage stress to keep cortisol levels in check. This structured approach to practice ensures that your brain is in the optimal state for neuroplasticity and that each practice session produces meaningful neural change.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Athletic nutrition & energy balance*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+<!-- TAICHIKB-CROSSREF-END -->

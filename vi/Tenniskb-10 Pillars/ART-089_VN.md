@@ -46,3 +46,10 @@ Bài thực hành tích hợp chuỗi động học huấn luyện toàn bộ c�
 
 ## Ứng Dụng Thực Tế: "Thói Quen Tích Hợp"
 Thực hiện thói quen tích hợp hàng ngày: (1) 10 cú đánh ảo tập trung kích hoạt tuần tự, (2) 10 cú đánh dây kháng cự, (3) 10 ném bóng Y, (4) 10 cú đánh kháng cự bạn đời, (5) 20 cú đánh nền cho bóng. Thói quen 10 phút này phát triển chức năng chuỗi động học phối hợp được phép tất cả cú đánh tennis.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Động học góc và chuỗi động học tuần tự*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

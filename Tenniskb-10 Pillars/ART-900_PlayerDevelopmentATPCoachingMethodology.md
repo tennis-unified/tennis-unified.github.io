@@ -171,3 +171,10 @@ The articles in this pillar (801-900) have covered the full spectrum of player d
 | Insufficient data analysis | Intuition-only coaching | Missed insights, inefficient training | Data literacy training; invest in analysis tools; hire data analyst |
 | Poor integration of support team | Siloed approach, conflicting advice | Confusion, reduced effectiveness | Regular team meetings; clear role delineation; collaborative planning |
 | Ignoring emerging trends | Stagnant coaching methods | Falling behind competitors | Continuous education; attend conferences; network with peers |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 10: Mô Cơ (Muscular Tissue)](https://taichikb.github.io/vi/books/tortora_ap/ch10-mo-co.html) — *Muscular tissue physiology & contraction*
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Energy systems for tennis conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

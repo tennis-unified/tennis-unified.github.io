@@ -133,3 +133,10 @@ Làm cho kiểm tra tốc độ đổ mồ hôi trở thành một phần thư�
 Toán học là đơn giản: nếu bạn đổ mồ hôi 2.0 lít mỗi giờ và trận đấu kéo dài 3 tiếng, bạn mất 6.0 lít chất lỏng. Bạn không thể thay thế tất cả trong trận đấu (dạ dày chỉ có thể hấp thụ khoảng 1.0-1.5 lít mỗi giờ), vì vậy bạn phải bắt đầu với tình trạng bù nước tốt và uống mạnh mẽ tại mỗi lần đổi sân. Nhắm đến việc thay thế 60-80% mồ hôi mất đi trong trận đấu, và phần còn lại trong khoảng phục hồi sau trận.
 
 Người chơi biết tốc độ đổ mồ hôi của mình và tuân theo kế hoạch bù nước nhất quán sẽ luôn chịu đựng được lâu hơn đối thủ trong cái nóng. Nó không hào nhoáng, nhưng quyết định. Người chơi có thể suy nghĩ rõ ràng và di chuyển trơn trong ở ván thứ ba của trận đấu 35°C là người đã chuẩn bị — và bù nước là sự chuẩn bị.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Dinh dưỡng thể thao và cân bằng năng lượng*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

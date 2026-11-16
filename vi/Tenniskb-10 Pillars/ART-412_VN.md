@@ -60,3 +60,10 @@ Người chơi nên đưa các bài tập tăng cường hông vào chương tr�
 
 ## Ứng Dụng Thực Tế: Bài Tập "Đẩy Hông"
 Đứng theo thế đứng backhand của bạn, với dây kháng lực (resistance band) quấn quanh hông và cố định phía sau lưng. Luyện tập cú vung backhand, tập trung đẩy hông về phía trước chống lại lực cản của dây. Bài tập này tăng cường các cơ tạo lực dẫn hông và rèn chuyển dịch về trước — yếu tố tạo nên những cú đánh xuyên thấu. Thực hiện ba hiệp, mỗi hiệp mười lần lặp lại.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

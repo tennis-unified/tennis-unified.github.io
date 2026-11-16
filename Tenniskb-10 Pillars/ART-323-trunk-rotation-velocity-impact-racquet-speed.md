@@ -68,3 +68,10 @@ Training to increase trunk rotation velocity targets the five influencing factor
 ## Practical Application: "The Trunk Snap"
 
 Practice trunk rotation in isolation by holding your racquet with both hands at the throat (no arm swing) and rotating your trunk rapidly toward a target. Focus on the feeling of your obliques contracting explosively and your trunk rotating at maximum speed. This isolated drill develops the specific muscle activation pattern for high-velocity trunk rotation, which you then integrate into the full forehand stroke.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+<!-- TAICHIKB-CROSSREF-END -->

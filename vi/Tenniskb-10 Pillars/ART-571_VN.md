@@ -71,3 +71,10 @@ Tại điểm quyết định trong tiebreaker:
 
 ## Ứng Dụng Thực Tế: "Drill Tiebreaker"
 Mô phỏng tiebreaker trong luyện tập bằng cách thiết lập tỷ số 6-6 trong tâm trí. Nhờ một đối tác giao bóng trong khi bạn luyện trả bóng như thể cả trận đấu phụ thuộc vào đó. Tập trung vào sự ổn định và đưa bóng trở lại sân. Theo dõi số điểm bạn giành được để đo lường sự tiến bộ theo thời gian.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -231,3 +231,10 @@ Kiểm tra lại mỗi 8-12 tuần để theo dõi tiến bộ.
 | Thường vấp trong thay đổi hướng | Thăng bằng kém, cảm nhận chậm | Ngã, chấn thương, trượt bóng | Huấn luyện thăng bằng; bài tập cảm nhận; bài tập một chân |
 | Phục hồi về trung tâm chậm sau bóng rộng | Thiếu huấn luyện chuyển động phục hồi | Đối thủ tìm khoảng trống | Bài chuyển động phục hồi; giáo dục trung tâm góc |
 | Không thể thay đổi hướng mượt mà | Cơ chế giảm tốc kém, mắt cá chân cứng | Chuyển động kém hiệu quả, lãng phí năng lượng | Bài giảm tốc; độ linh hoạt mắt cá; cơ chế thay đổi hướng |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Thăng bằng động và kiểm soát hướng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

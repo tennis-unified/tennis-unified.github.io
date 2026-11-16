@@ -35,3 +35,10 @@ Quy tắc làm việc:
 
 ## Ứng Dụng Thực Tế: "Hai Chéo Và Một Quyết Định"
 Thiết lập trạn bóng rộng: HLV cho bóng 3 m ngoài đường biên, người chời đánh trên đường chạy, và ba cổng thoát được đánh dấu — cổng chéo thứ ba ở 2 m, cổng đáp-split ở tọa độ phục hồi, và làn chạy vượt qua 4 m. Người chời chạy chuỗi và chấm điểm thoạt sạch. Mười bóng mỗi set, ba set.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

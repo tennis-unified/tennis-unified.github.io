@@ -43,3 +43,10 @@ Một phiên cài đặt cong giảm với băng dán và nhịp độ:
 2. **Nghe nhịp.** Metronome đặt tăng tốc ba nhịp rồi giảm tốc ba nhịp. Người chời chạy bóng rộp theo nhịp.
 3. **Bỏ băng dán.** Cùng bóng cho, không đánh dấu. HLV quay từ phía sau và dừng mỗi lần đặt chân: sự giảm tồn tại mà không cần nạo nhìn?
 4. **Thử thanh cuối.** Bóng cho xoáy ngẫu nhiên — topspin nặng, slice, phẳng — chỉ chấm chất lượng đáp cuối. Phễu tồn tại để phục vụ 0.25 m cuối, nơi trung thực của bóng quyết định.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

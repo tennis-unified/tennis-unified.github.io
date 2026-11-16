@@ -75,3 +75,10 @@ Thorough preparation (physical, tactical, mental) reduces uncertainty, which is 
 
 ## Practical Application: "The Stress Reframe"
 When you notice stress activating (racing heart, tension, anxiety), perform a stress reframe: (1) acknowledge the stress response without judgment, (2) reframe the situation as a challenge rather than a threat, (3) focus on what you can control (your effort, your routine) rather than what you cannot (the outcome, the opponent), (4) use a breathing exercise to activate the parasympathetic nervous system. This reframe transforms the stress response from a performance disruptor into a performance enhancer, using the energy of stress to fuel focused, aggressive play.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -104,3 +104,10 @@ Hard courts serve as a transition surface because their characteristics fall bet
 ## Practical Application: "The Surface Simulation"
 
 Practice serving on different surfaces in the same week. Hit 100 serves on clay, 100 on hard, and 100 on grass (or simulate different surfaces by adjusting your tactics). Note how your serve mechanics naturally adapt to each surface. The awareness you develop from this cross-surface practice will make you a more versatile server who can adapt quickly when tournament schedules require surface transitions.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

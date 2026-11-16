@@ -76,3 +76,10 @@ Một số yếu tố ảnh hưởng đến động lực học nén và biến 
 ## Ứng Dụng Thực Tế: "Cảm Giác Của Cú Nén"
 
 Phát triển khả năng nhận thức về động lực nén-biến dạng bằng cách chú ý đến cảm giác của mỗi cú tiếp xúc. Một tiếp xúc chất lượng cao mang cảm giác rõ ràng và mạnh mẽ, với độ rung tối thiểu và tiếng "bật" sạch sẽ. Một tiếp xúc chất lượng thấp mang cảm giác nhão hoặc gắt gỏng, với độ rung đáng chú ý và tiếng động ù ù. Sử dụng phản hồi này để đánh giá chất lượng tiếp xúc và điều chỉnh kỹ thuật hoặc thiết bị khi cần thiết.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

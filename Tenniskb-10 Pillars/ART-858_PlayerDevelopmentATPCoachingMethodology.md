@@ -316,3 +316,10 @@ Create a one-page player profile card:
 | Training not translating to match performance | Insufficient match-specific training | Good practice, poor match results | Increase match simulation; practice under pressure |
 | Player's weaknesses exposed in matches | Insufficient focus on weaknesses in training | Repeated errors, opponent exploitation | Prioritize weakness development; targeted training |
 | Player not improving in targeted areas | Insufficient training volume or quality for priorities | Slow progress, frustration | Increase training focus on priorities; adjust methods |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

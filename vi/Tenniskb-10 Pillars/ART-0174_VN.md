@@ -44,3 +44,10 @@ Tư thế không chọn khi tiếp xúc; nó được xây bởi hai bước cu�
 
 ## Ứng Dụng Thực Tế: "Sở Hữu Thang"
 Trong phiên tiếp theo, quay video 20 cú forehand từ phía sau và phân loại mỗi cú theo dòng hông. Hầu hết người chời phát hiện một vùng thiếu — thường là nửa mở. Dành 15 phút cho bài tập ba làn với làn thiếu được cho hai lần thường xuyên hơn, rồi kết thúc với rally gọi-tư-thế trong đó người chời tự báo cáo vùng sử dụng trên mỗi bóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy*
+<!-- TAICHIKB-CROSSREF-END -->

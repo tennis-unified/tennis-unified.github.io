@@ -187,3 +187,10 @@ During tennis strokes, the elbow experiences:
 | Wrist pain during backhand | Weak wrist extensors, excessive wrist use | Wrist tendinopathy | Extensor strengthening; technique review (less wrist, more body rotation) |
 | Weak grip strength | Insufficient forearm strength | Reduced stroke control, racket stability | Ball squeezes; wrist curls; grip strength training |
 | Clicking or catching in wrist | TFCC injury, ligament damage | Pain, instability | Medical assessment; wrist support; technique modification |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Elbow, forearm pronation & wrist mechanics*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

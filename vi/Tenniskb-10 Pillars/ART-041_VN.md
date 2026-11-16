@@ -83,3 +83,10 @@ Hãy hình dung cơ thể bạn như cái harmonica: khi nạp, bạn nở ra (d
 | Thời điểm tốc độ đỉnh | Trùng chạm bóng (±10ms) | Đỉnh sớm >20ms hoặc muộn >20ms | Video feedback, ball machine tập thời điểm |
 | Nhận thức mô-men quán tính | Cảm nhận rõ nở-bóp-nở | Không cảm nhận, chuyển động cứng | Shadow swing có nhận thức, biến thể trọng lượng vợt |
 | Đối xứng hai bên | Mẫu giống nhau trái/phải | Khác biệt rõ rệt | Tập đơn phương bên yếu, so sánh video hai bên |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

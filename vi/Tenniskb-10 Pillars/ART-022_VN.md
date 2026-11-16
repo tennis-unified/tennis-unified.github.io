@@ -111,3 +111,10 @@ Bài tập tăng phạm vi thao túng mô men quán tính:
 
 ## Ứng Dụng Thực Tế: "Người Trượt Băng Nghệ Thuật"
 Quan sát người trượt băng nghệ thuật quay: khi tay duỗi, họ quay chậm; khi rút tay vào, họ quay nhanh. Đây là bảo toàn động lượng góc hoạt động — và chính xác điều xảy ra trong cú đánh tennis của bạn. Trong giai đoạn nạp, tay bạn duỗi sau lưng (như người trượt băng tay duỗi), lưu trữ động lượng góc. Trong vung về phía trước, tay bạn kéo vào (như người trượt băng rút tay), và tốc độ xoay của bạn tăng mạnh. Thực hành nhận thức này bằng cách thực hiện forehand trong khi ý thức ghi nhận cảm giác tay duỗi khi nạp và kéo vào khi vung. Càng cảm nhận rõ hiệu ứng "người trượt băng" này, bạn càng hiệu quả chuyển nạp thành tốc độ vợt. Chìa khóa là kéo tay vào phải được định giờ trùng với xoay thân — không trước, không sau. Khi thời gian đúng, bạn sẽ cảm nhận cái bật ngược giống roi ở cuối vung thêm tốc độ không thêm nỗ lực.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

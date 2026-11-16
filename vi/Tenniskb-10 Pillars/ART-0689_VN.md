@@ -43,3 +43,10 @@ Bóng trả ngắn đòi hỏi lối chơi lưới tấn công. Di chuyển về
 ## Ứng Dụng Thực Tế: "Tiến Lên, Đón Sớm, Tấn Công"
 
 Đối với bóng trả ngắn: (1) di chuyển về phía trước nhanh chóng, (2) đón bóng sớm, (3) tấn công bằng volley đánh mạnh hoặc volley đâm. Bóng trả ngắn là một món quà — hãy phạt nó.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

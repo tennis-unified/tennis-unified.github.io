@@ -164,3 +164,10 @@ Dự đoán sử dụng các tín hiệu trước để dự đoán hành độn
 ## Ứng Dụng Thực Tế: "Đọc, Không Phản Ứng"
 
 Những người trả giao bóng giỏi nhất trong tennis không có phản xa nhanh hơn những người khác — họ có dự đoán tốt hơn. Thay vì phản ứng với hướng bóng đi, họ đọc hướng bóng sẽ đi và bắt đầu di chuyển trước khi vợt đối thủ tiếp xúc bóng. Huấn luyện kỹ năng này bằng cách xem footage trận đấu với âm thanh tắt: bạn có thể dự đoán hướng cú đánh từ tư thế cơ thể của đối thủ một mình không? Thực hành điều này trong trận đấu bằng cách tập trung vào hông, vai và mặt vợt đối thủ tại khoảnh khắc tiếp xúc. Theo thời gian, bạn sẽ bắt đầu đọc các tín hiệu này tự động, và phản ứng của bạn sẽ dường như siêu phàm — mặc dù thời gian phản ứng thô sơ của bạn không thay đổi gì cả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

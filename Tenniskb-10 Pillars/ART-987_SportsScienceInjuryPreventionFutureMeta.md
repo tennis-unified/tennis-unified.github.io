@@ -158,3 +158,10 @@ Quiet eye serves critical functions:
 ## Practical Application: "Fixate Before You Act"
 
 The next time you practice, focus on one thing: maintaining your gaze on the ball at the opponent's contact point for as long as possible before you begin your swing. This simple discipline — fixating before acting — can improve your contact quality more than any technical adjustment. Start with slow feedings, consciously holding your gaze through the contact zone. As this becomes automatic, progress to faster feeds and then live rallies. Under pressure, remind yourself: "Watch the ball, trust your body." This external focus on the ball, maintained through the critical moment, is the quiet eye of champions.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

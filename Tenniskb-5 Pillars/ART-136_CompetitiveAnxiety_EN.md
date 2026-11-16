@@ -49,3 +49,10 @@ Competitive anxiety is a biological response to threat. In tennis, this manifest
 
 ## Practical Application: The "Arousal Thermostat"
 Learn to sense your arousal level on a scale of 1-10. If you're at a 9 (panic), use the "cool down" tools. If you're at a 3 (lethargy), use the "heat up" tools. Aim for the "Optimal 7."
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery/arousal balance*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & clutch performance*
+<!-- TAICHIKB-CROSSREF-END -->

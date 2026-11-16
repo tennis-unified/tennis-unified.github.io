@@ -62,3 +62,10 @@ Huấn luyện chuỗi động lực hiệu quả tiến triển từ:
 ## Ứng Dụng Thực Tế: "Cảm Nhận Mặt Đất, Vợt Bay Xa"
 
 Trong buổi tập tiếp theo, hãy tập trung vào cảm giác đẩy mặt đất ra xa thay vì kéo vợt qua lại. Bắt đầu với cú vợt không lưng ở tư thế mở, có ý thức cảm nhận áp lực chuyển từ bên trong chân sau qua hông trước. Tiến tới đặt bóng ở 50% công lực, duy trì nhận thức rằng mọi cú vợt đều bắt đầu dưới đầu gối. Vợt chỉ là biểu hiện cuối cùng của năng lượng bắt nguồn từ bàn chân bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

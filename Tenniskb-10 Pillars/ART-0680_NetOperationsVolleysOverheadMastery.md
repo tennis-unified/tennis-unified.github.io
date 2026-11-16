@@ -43,3 +43,10 @@ Extreme topspin returns demand a closed racket face and downward punch volley. L
 ## Practical Application: "Let It Drop, Close the Face, Punch Down"
 
 Against extreme topspin returns: (1) let the ball drop, (2) close the racket face, (3) punch downward. The heavy spin is manageable with the right technique.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+<!-- TAICHIKB-CROSSREF-END -->

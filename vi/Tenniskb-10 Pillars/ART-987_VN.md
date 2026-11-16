@@ -158,3 +158,10 @@ Mắt tĩnh phục vụ các chức năng quan trọng:
 ## Ứng Dụng Thực Tế: "Tập Trung Trước Khi Hành Động"
 
 Lần tới khi bạn tập luyện, hãy tập trung vào một thứ: duy trì ánh nhìn của bạn trên bóng tại điểm tiếp xúc của đối thủ càng lâu càng tốt trước khi bạn bắt đầu vung vợt. Kỷ luật đơn giản này — tập trung trước khi hành động — có thể cải thiện chất lượng tiếp xúc của bạn nhiều hơn bất kỳ điều chỉnh kỹ thuật nào. Bắt đầu với ném bóng chậm, cố tình giữ ánh nhìn xuyên suốt vùng tiếp xúc. Khi điều này trở nên tự động, tiến triển lên ném bóng nhanh hơn và sau đó là pha bóng thực tế. Dưới áp lực, nhắc nhở bản thân: "Nhìn bóng, tin cậy cơ thể bạn." Tiêu điểm bên ngoài vào bóng này, được duy trì xuyên suốt khoảnh khắc quan trọng, chính là mắt tĩnh của nhà vô địch.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

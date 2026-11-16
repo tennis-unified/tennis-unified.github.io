@@ -52,3 +52,10 @@ Các tay vợt xuất sắc điều chỉnh độ cúi gối nhanh chóng trong 
 ## Ứng Dụng Thực Tế: "Lò Xo Chân"
 
 Thực hành chu trình cúi-duỗi gối bằng cách tích lũy vào tư thế ngồi xổm sâu (giữ vợt ở tư thế chuẩn bị) sau đó bùng nổ lên cao trong nhịp đánh về phía trước. Tập trung vào cảm giác hai chân đẩy xuống mặt đất trong lúc duỗi, và sự dâng trào năng lượng truyền qua hông lên vợt. Bài tập phóng đại này khắc sâu giác quan lực đẩy chân — thứ nên có trong mỗi cú forehand, điều chỉnh tỷ lệ cho phù hợp với mức cúi gối của từng tình huống cụ thể.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

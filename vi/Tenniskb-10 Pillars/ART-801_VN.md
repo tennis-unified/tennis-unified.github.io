@@ -94,3 +94,10 @@ Sau bất kỳ trận đấu hoặc buổi tập cường độ cao nào, cần 
 | Chấn thương tái phát giữa mùa giải | Tải huấn luyện tăng đột biến vượt 1,5 ACWR | Bệnh gân, căng cơ | Triển khai theo dõi tải trượt với các chu kỳ mô phục hồi bắt buộc |
 | Vận động viên không thể thích ứng với chuyển đổi mặt sân | Thời gian chu kỳ trung mô chuyển tiếp không đủ | Kết quả kém trong các tháng chuyển đổi | Xây dựng các khối mặt sân riêng biệt 2 tuần trong lịch hàng năm |
 | Mệt mỏi tinh thần cuối mùa giải | Thiếu chu kỳ mô phục hồi | Mất động lực, kiệt sức | Sắp xếp các tuần nghỉ có chủ đích và các khối huấn luyện đa dạng giữa mùa giải |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

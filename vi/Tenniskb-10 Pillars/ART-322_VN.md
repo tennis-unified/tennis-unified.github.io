@@ -52,3 +52,10 @@ Một bài tập hữu ích là bài tập "dừng và cuộn": từ tư thế s
 ## Ứng Dụng Thực Tế: "Cảm Giác Cuộn Dây"
 
 Tập xoay ngược bằng cách phóng đại nó: xoay vai 30 độ theo hướng ngược lại trước mỗi lần xoay đơn vị. Cuộn dây phóng đại này làm xoay ngược trở nên ý thức và phát triển mô hình vận động. Dần dần giảm biên độ xuống mức tối ưu 10 đến 20 độ khi chuyển động trở nên tự động. Mục tiêu là cảm nhận được một lực "kéo" nhẹ dọc theo bên thân ở cuối xoay ngược, báo hiệu rằng các cơ đã được kéo giãn trước và sẵn sàng phản đàn hồi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

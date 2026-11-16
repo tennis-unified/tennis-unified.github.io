@@ -68,3 +68,10 @@ Bóng vào thân là một trong những volley khó nhất trong tennis, đòi 
 ## Ứng Dụng Thực Tế: "Hãy Trở Thành Bức Tường"
 
 Đối với bóng vào thân, hãy trở thành một bức tường. Vợt là bức tường, và bóng bật ra khỏi nó. Không vung, không nỗ lực — chỉ cần trình bày một bề mặt ổn định và để tốc độ bóng làm việc. Nghiêng bức tường (mặt vợt) để điều hướng bóng đến nơi bạn muốn nó đi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

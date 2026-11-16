@@ -99,3 +99,10 @@ Implementing nutrigenomics in tennis involves several steps:
 ## Practical Application: "The Genetic Nutrition Blueprint"
 
 Every competitive tennis player should consider genetic testing as part of their nutritional optimization strategy. Start with a comprehensive panel covering CYP1A2 (caffeine), VDR (vitamin D), IL-6 (inflammation), LCT (lactose), and MTHFR (folate). Work with a sports nutrigenomics specialist to translate results into specific, measurable interventions: if you are a CYP1A2 slow metabolizer, eliminate caffeine after 2 PM and limit pre-match intake to 2 mg/kg; if you carry VDR variants, target serum vitamin D of 50-60 ng/mL with appropriate supplementation; if you are IL-6 GG, prioritize omega-3 intake at 3-4 g/day during tournament blocks. Reassess blood markers every 3 months and adjust accordingly. The era of generic tennis nutrition is ending — the players who embrace genetic personalization will gain measurable advantages in recovery, energy management, and long-term health.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Athletic nutrition & energy balance*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+<!-- TAICHIKB-CROSSREF-END -->

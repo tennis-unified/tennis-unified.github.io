@@ -60,3 +60,10 @@ The scoreboard changes the physics of the court. Leading tightens the body; trai
 
 ## Practical Application: "The Scoreboard is a Lie"
 The scoreboard tells you *what happened*. It does not tell you *what to do next*. Your routine tells you what to do next. Play the routine, not the score.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & core*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & clutch performance*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Mindfulness & flow state in sport*
+<!-- TAICHIKB-CROSSREF-END -->

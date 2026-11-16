@@ -75,3 +75,10 @@ Xây dựng Mushin cho bước chân đòi hỏi kiến trúc luyện tập cụ
 ## Ứng Dụng Thực Tế: "Số Đếm Thầm Lặng"
 
 Ở đầu mỗi buổi luyện tập bước chân, chạy ba phút chuyển động bóng tối không có bóng, không huấn luyện viên, không gợi ý bằng lời. Người chơi di chuyển ngang, về phía trước, về phía sau, qua tất cả các mẫu đã học, trong im lặng hoàn toàn. Không tự nói. Không sửa. Chỉ chuyển động. Nếu người chơi nhận ra mình đang nghĩ về cơ chế, họ chuyển hướng sự chú âm thanh của chân trên sân. Bài tập này luyện tập sự chuyển dịch từ giám sát ý thức sang thực thi tiểu sọ — dấu ấn thần kinh của Mushin. Qua các tuần, người chơi học tiếp cận trạng thái nhanh hơn và đáng tin cậy hơn, và nó bắt đầu chuyển dịch vào các điểm.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

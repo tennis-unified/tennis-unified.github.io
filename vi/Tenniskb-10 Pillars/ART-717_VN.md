@@ -57,3 +57,10 @@ Một bài tập hiệu quả khác là đào tạo nhận thức góc: đặt m
 ## Ứng Dụng Thực Tế: "Lợi Thế Bất Đối Xứng Của Tay Trái"
 
 Để áp dụng Hình học ô lợi điểm: vùng lợi thế của vận động viên trái trong trận đấu tiếp theo của bạn, hãy bắt đầu bằng việc hình dung sân như một lưới hình học trước mỗi điểm. Xác định góc lớn nhất dành cho đối thủ và chọn vị trí để tối thiểu hóa nó. Thực hành một khuôn mẫu hình học cụ thể mỗi buổi tập cho đến khi nó trở nên bản năng. Quay video báº£n thÃ¢n thi Ä‘áº¥u và phân tích xem việc chọn vị trí của bạn có phù hợp với lý tưởng hình học hay không. Hãy nhớ: hình học sân là một kỹ năng được cải thiện với sự thực hành có chủ đích, giống như những cú đánh của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy*
+<!-- TAICHIKB-CROSSREF-END -->

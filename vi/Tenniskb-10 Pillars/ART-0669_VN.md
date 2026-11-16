@@ -43,3 +43,10 @@ Cú đánh tay thuận bằng phẳng đòi hỏi volley chặn — hấp thụ 
 ## Ứng Dụng Thực Tế: "Chặn Và Chuyển Hướng"
 
 Đối phó với cú đánh tay thuận bằng phẳng: (1) chặn bóng bằng mặt vợt ổn định, (2) chuyển hướng bóng vào khu vực trống. Tốc độ của bóng chính là vũ khí của bạn — hãy sử dụng nó.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

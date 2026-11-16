@@ -178,3 +178,10 @@ Hiệu suất trong tình huống ép lực là khả năng thể hiện ở m�
 | Chiến thuật dễ đoán trong những điểm lớn | Mô hình thói quen dưới áp lực | Đối thủ dự đoán và phản công | Luyện đa dạng chiến thuật; ra quyết định dưới áp lực |
 | Căng thể chất trong những điểm lớn | Lo âu, kích thích quá mức | Cú đánh cứng, lỗi | Kỹ thuật thở; luyện thư giãn; điều chỉnh kích thích |
 | Ngôn ngữ cơ thể tiêu cực trong những điểm lớn | Thiếu tự tin, thất bại | Đối thủ tăng tự tin | Huấn luyện ngôn ngữ cơ thể; tư duy tích cực; xây dựng tự tin |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

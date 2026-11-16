@@ -62,3 +62,10 @@ Practice under time pressure (e.g., ball machine set to short intervals) to trai
 
 ## Practical Application: "The Gear Shift"
 Develop the ability to shift between three gears: control (accuracy-priority), balance (moderate speed and accuracy), and attack (speed-priority). Before each shot, assess the tactical situation and select the appropriate gear. Practice this gear selection during training points, making it a conscious decision that becomes automatic over time. The gear shift transforms the speed-accuracy tradeoff from a fixed characteristic into a tactical tool.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+<!-- TAICHIKB-CROSSREF-END -->

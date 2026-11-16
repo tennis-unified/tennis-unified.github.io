@@ -57,3 +57,10 @@ Tác động thần kinh-cơ của mệt mỏi trận không đồng đều — 
 
 ## Ứng Dụng Thực Tế: "Quay Video Mệt Mỏi"
 Trong trận tập tiếp theo, quay người chời từ cạnh 30 giây cuối set một và lại cuối set hai (hoặc sau 60 phút chơi). So sánh hai clip cạnh nhau. Sự khác biệt — chiều dài bước, chiều cao split, độ hoàn chỉnh follow-through, chiều cao tư thế — thường nhìn thấy được ngay cả bằng mắt thường.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

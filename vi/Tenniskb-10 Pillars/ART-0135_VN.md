@@ -78,3 +78,10 @@ Tập tạ nặng vẫn quan trọng — cơ thiết lập độ cứng mà lò 
 ## Ứng Dụng Thực Tế: "Là Cung, Không Phải Piston"
 
 Hãy cho người chơi một hình ảnh: **cơ thể là cung kéo, và quả bóng được giải phóng trên nó, không phải đẩy bởi nó.** Ở buổi tập tiếp theo, mở đầu với hai phút dao động metronome cho đến khi lò xo bắp chân cảm giác tự động. Sau đó loạt tường phản hồi: bắt và ném trong một chuyển động, quả bóng rời tay trước khi người chơi ổn định. Kết thúc với mười forehand mỗi bên nơi chỉ dẫn duy nhất là "nạp và giải phóng mà không dừng" — không dừng ở đỉnh cuộc, không ổn định vào đổ. Hầu hết người chơi cảm thấy cú đánh tốt ít hơn; huấn luyện viên thấy chuyển động chân nhanh hơn. Sự khác biệc đó — cùng đầu ra với giá chuyển hóa thấp hơn — là kình đàn hồi, đo bằng ATP không bao giờ chi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Dự trữ và hồi phục năng lượng đàn hồi mô mạc*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên phân đoạn*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

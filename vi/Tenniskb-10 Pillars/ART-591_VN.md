@@ -78,3 +78,10 @@ Cú giao đã phát triển đáng kể trong thế kỷ qua, từ những cú g
 ## Ứng Dụng Thực Tế: "Nghiên Cứu Lịch Sử"
 
 Xem video về cú giao từ các kỳ khác nhau để hiểu cách kỹ thuật đã phát triển. Lưu ý những thay đổi về tay cầm, tư thế, quỹ đạo quạt và sự tấn công. Kết hợp các yếu tố hiện đại vào kỹ thuật giao của riêng bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

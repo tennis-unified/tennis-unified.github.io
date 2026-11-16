@@ -178,3 +178,10 @@ Clutch performance is the ability to perform at or above one's normal level in h
 | Predictable tactics on big points | Habitual patterns under pressure | Opponent anticipates and counters | Tactical variety training; decision-making under pressure |
 | Physical tension on big points | Anxiety, over-arousal | Tight strokes, errors | Breathing techniques; relaxation training; arousal regulation |
 | Negative body language on big points | Low confidence, defeatism | Opponent gains confidence | Body language coaching; positive mindset; confidence building |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

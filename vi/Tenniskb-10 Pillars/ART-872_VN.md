@@ -138,3 +138,10 @@ Tính cơ động ngực kém buộc cột sống thắt lưng phải bù trừ 
 | Đau lưng khi đánh bóng | Cơ học xoay kém, xoay thắt lưng | Căng cơ, vấn đề đĩa đệm | Huấn luyện sức mạnh xoay; tính ơn định cơ lõi; xem lại kỹ thuật |
 | Cứng lưng dưới | Tính cơ động ngực kém, tư thế ngồi lâu | Áp lực thắt lưng bù trừ | Bài tập tính cơ động ngực; xe lăn bọt xốp; nhận thức tư thế |
 | Đau sau trận đài dài | Mệt mỏi cơ lõi, độ bền kém | Lỗi cuối trận, đau | Huấn luyện độ bền cơ lõi; quản lý tải trọng; giao thức phục hồi |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Chương 9: Mặt Trước Sâu — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch09-mat-truoc-sau.html) — *Đường Mặt Trước Sâu: trục ổn định trọng tâm*
+<!-- TAICHIKB-CROSSREF-END -->

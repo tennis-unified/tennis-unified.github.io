@@ -115,3 +115,10 @@ Mẫu giao bóng tạo áp lực tâm lý vì người nhận bắt đầu đoá
 ## Ứng Dụng Thực Tế: "Quy Tắc Ba Giao Bóng"
 
 Trước mỗi game giao bóng, quyết định một mẫu ba giao bóng để sử dụng (ví dụ: rộng-chữ T-rộng). Thực hiện mẫu này cho ba giao bóng đầu tiên, sau đó điều chỉnh dựa trên kết quả. Nếu mẫu hiệu quả, tiếp tục. Nếu người nhận điều chỉnh, chuyển sang mẫu khác. Cách tiếp cận này cho cấu trúc cho giao bóng của bạn trong khi vẫn cho phép linh hoạt để thích ứng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

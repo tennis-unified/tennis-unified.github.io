@@ -57,3 +57,10 @@ Players should practice Break Point Tactics: First Strike vs. Pressure Building 
 ## Practical Application: "Break Point or Break Down"
 
 Implement Break Point Tactics: First Strike vs. Pressure Building by committing to the tactic for an entire practice set. Track how many points you win using the pattern versus your default approach. If the tactic wins more than 55% of points, integrate it into your regular repertoire. If it wins less, analyze why: was it your execution, the opponent's adjustment, or poor timing? Refine the tactic based on this analysis before your next match.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Tai Chi principles applied to tennis*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

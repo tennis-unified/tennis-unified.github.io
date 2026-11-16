@@ -85,3 +85,10 @@ Players who try to recover in a straight line after a heavy topspin forehand mus
 ## Practical Application: "Curve Your Comeback"
 
 At the next session, use the painted-arc drill for 15 minutes. Mark the optimal arc paths for wide forehand and wide backhand recoveries. Feed balls to both sides and have the player recover along the arcs. Then remove the markings and feed 10 more balls — the player must self-select the arc shape. Video the session and compare the arc recoveries to straight-line recoveries from earlier in the session (or from previous sessions). The difference in hip orientation at the midpoint of the recovery is usually 20-40° — a visible and meaningful advantage. Players who adopt the arc recovery consistently report feeling "more prepared" on the next shot, which is exactly what the biomechanics predict: the arc is not a detour; it is the fastest route to readiness.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+<!-- TAICHIKB-CROSSREF-END -->

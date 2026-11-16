@@ -72,3 +72,10 @@ Training involves:
 ## Practical Application: "The Low Ball Drill"
 
 Practice the low forehand by having a partner feed slice shots that bounce below knee height. Focus on the deep knee flexion, the steep low-to-high swing path, and the feeling of brushing upward through the ball. Start with slow feeds and progress to faster, more realistic situations. Develop the quadriceps strength and flexibility needed to handle low balls consistently.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -73,3 +73,10 @@ Tuy vậy, ngay cả trong các tình huống tiếp xúc ngắn, nguyên lý m�
 ## Ứng Dụng Thực Tế: "Bài Tập Bạt Lò Xo"
 
 Trong buổi tập tiếp theo, giới thiệu khái niệm hấp thụ với một hình ảnh đơn giản: **vợt là một tấm bạt lò xo, không phải bức tường.** Cho người chơi đứng tại đường nền và huấn luyện viên đưa 10 quả bóng nhịp vừa (90 km/h). Người chơi đánh những bóng này bình thường, không chỉ dẫn đặc biệt. Sau đó huấn luyện viên đưa 10 quả bóng nhịp nặng (trên 120 km/h). Với những bóng này, chỉ dẫn duy nhất của người chơi là: **cho bóng đẩy vợt lùi 15 cm, rồi chuyển hướng nó.** Hầu hết người chơi ban đầu sẽ kháng — bản năng là chống lại bóng nặng. Huấn luyện viên nên tiếp tục đưa bóng nặng cho đến khi người chơi ngừng kháng và cho phép sự nhường. Khi người chơi cảm nhận được va chạm giảm (bóng "đáp" mềm lên dây thay vì đập mạnh), cho họ đánh thêm 20 bóng nặng, tập trung chuyển hướng năng lượng hấp thụ thành một cú trả kiểm soát. Đo lực va chạm cảm nhận của người chơi trên thang 1-10: chặn cứng điểm 8-9, lệch đàn hồi điểm 3-4. Mục tiêu là làm lệch đàn hồi thành phản ứng mặc định với nhịp nặng, để người chơi tự động hấp thụ và chuyển hướng không cần quyết định có ý thức. Theo thời gian, điều này giảm stress khớp, cải thiện kiểm soát trước người đánh mạnh, và cho phép người chơi dùng nhịp của đối thủ như vũ khí thay vì mối đe dọa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+<!-- TAICHIKB-CROSSREF-END -->

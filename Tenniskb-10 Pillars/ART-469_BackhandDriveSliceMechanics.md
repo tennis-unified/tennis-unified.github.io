@@ -60,3 +60,10 @@ Players should incorporate these drills into their regular practice routine, foc
 
 ## Practical Application: "The Topspin Defense Practice"
 Have a partner feed high topspin balls to your backhand side. Practice moving back, getting low, and hitting a variety of shots based on the ball's height and position. Track how many shots you can hit in the court and how many produce a good result. This drill develops the positioning and technique needed for effective play against high topspin.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+<!-- TAICHIKB-CROSSREF-END -->

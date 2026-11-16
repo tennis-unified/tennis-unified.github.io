@@ -165,3 +165,10 @@ Exercises that increase hip range of motion for pelvic rotation:
 
 ## Practical Application: "The Door Hinge"
 Imagine your pelvis is a door and your trunk is the door frame. The door (pelvis) must swing open first, then the frame (trunk) follows. If the frame tries to move before the door is open, the movement is jerky and inefficient. Practice this by standing with your feet planted and rotating only your pelvis (keeping your shoulders stable)—feel the door swing open. Now rotate your shoulders while keeping your pelvis stable—feel how the frame moves. Now combine them: let the pelvis swing open first, then let the shoulders follow naturally. This is the correct sequence for pelvic rotation timing. During your groundstrokes, focus on feeling the pelvis swing open (rotate toward the target) before the shoulders follow. The pelvis leads, the shoulders follow. This "door hinge" timing is what creates the smooth, powerful rotation that characterizes elite groundstrokes.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

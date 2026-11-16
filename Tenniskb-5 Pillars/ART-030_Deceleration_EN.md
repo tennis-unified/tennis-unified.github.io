@@ -36,3 +36,10 @@ There is a critical difference between a controlled deceleration and a "crash."
 
 ## Practical Application: The "Slow-Down" Sensation
 After the ball is struck, the athlete should feel a gradual "slow-down" that starts in the hips and moves up to the shoulder. If the movement stops suddenly at the shoulder, the deceleration is failing.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Posterior rotator cuff eccentric deceleration*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Posterior chain decelerators (rotator cuff, hamstrings)*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Follow-through deceleration & injury prevention*
+<!-- TAICHIKB-CROSSREF-END -->

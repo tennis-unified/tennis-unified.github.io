@@ -33,3 +33,10 @@ ISR is closely linked to forearm pronation.
 
 ## Practical Application: The "Snap" Sensation
 The feeling of ISR should be a sudden "snap" in the shoulder, not a continuous rotation. It is the moment when the kinetic chain "releases" its energy into the arm. Focus on the timing of the snap, not the strength of the rotation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Glenohumeral internal shoulder rotation (ISR)*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Internal rotators (subscapularis, pectoralis major, latissimus)*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *ISR acceleration in the tennis serve*
+<!-- TAICHIKB-CROSSREF-END -->

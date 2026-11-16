@@ -54,3 +54,10 @@ Advanced kinetic chain training focuses on timing precision: using high-speed vi
 ## Practical Application: "The Whip Feel"
 
 To develop the kinetic chain feel, practice shadow swings with extreme slowness, focusing on the sensation of each segment beginning to move only after the previous segment has started. Begin with the rear foot pushing, then the hip rotating, then the trunk, then the shoulder, then the arm, then the wrist. At full speed, this sequence becomes a single fluid motion, but the training ingrains the correct order of activation and the feeling of energy cascading from the ground to the racquet head.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Angular kinematics & sequential kinetic chain*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Myofascial force transmission across segments*
+<!-- TAICHIKB-CROSSREF-END -->

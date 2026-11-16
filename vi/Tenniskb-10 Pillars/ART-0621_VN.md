@@ -70,3 +70,10 @@ Sơ đồ Australian là một bất ngờ chiến thuật phá vỡ mô hình n
 ## Ứng Dụng Thực Tế: "Cùng Phía, Cùng Áp Lực"
 
 Sơ đồ Australian xoay quanh việc ngụy trang. Cả hai người chơi cùng phía ép người nhận giao bóng phải đoán. Tin tưởng vào sơ đồ, giao bóng về phía bỏ trống và ăn điểm trên lưới mạnh mẽ. Yếu tố bất ngút là vũ khí lớn nhất của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

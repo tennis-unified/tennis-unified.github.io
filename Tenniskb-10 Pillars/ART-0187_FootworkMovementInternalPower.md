@@ -80,3 +80,10 @@ When a player is visibly fatigued, generic cues ("move faster," "get ready") are
 ## Practical Application: "Film the Fatigue"
 
 At the next practice match, film the player from the side for 30 seconds at the end of the first set and again at the end of the second set (or after 60 minutes of play). Compare the two clips side by side. The differences — stride length, split height, follow-through completeness, stance height — are usually visible even to untrained eyes. Use the comparison to identify the player's dominant fatigue compensation pattern, then apply the specific corrective cue at the next session. Players who see their own fatigue compensations are far more responsive to coaching cues than players who are simply told to "try harder." The video does not lie, and the contrast between sets is the most honest assessment of fatigue resistance available.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+<!-- TAICHIKB-CROSSREF-END -->

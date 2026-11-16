@@ -65,3 +65,10 @@ Những người chơi gặp khó khăn trong việc duy trì vùng tiếp xúc 
 
 ## Ứng Dụng Thực Tế: "Bài Tập Nhận Thức Vùng Tiếp Xúc"
 Trong các đường bóng luyện tập, hãy phân loại từng quả bóng trong đầu khi bóng bay tới: "trong vùng" (nằm trong vùng tiếp xúc), "cao" (ở trên vùng), "thấp" (ở dưới vùng), "sát người" (ngay tại thân người), hoặc "xa" (vượt quá tầm với tay). Hãy thực hiện cú đánh và ghi nhận kết quả. Theo thời gian, bài tập này rèn luyện khả năng nhận thức cần thiết để định vị cơ thể sao cho bóng liên tục đi qua vùng tiếp xúc.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

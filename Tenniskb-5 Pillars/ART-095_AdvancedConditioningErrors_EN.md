@@ -51,3 +51,9 @@ Advanced conditioning errors require a systematic approach to correction:
 
 ## Practical Application: The "Complete Conditioning Producer"
 The athlete should feel that they are "complete" and integrated with the 5-Pillar System. The athlete should feel that the biomechanical, neurological, and tactical systems are working together in harmony. This is the ultimate goal of the 5-Pillar System: to create a complete, integrated athlete who performs effortlessly at their peak potential.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 28: Chương 28: Chẩn Đoán Vấn Đề, Đưa Ra Giải Pháp, và Thúc Tiến Nghiên Cứu Về Kiệt Sức Của Vận Động Viên — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch28.html) — *Overtraining, burnout & recovery breakdown*
+- [Chương 13: Chương 13: Khởi Phát và Mỏi Cơ – Hậu Quả của Việc Kích Hoạt Cơ Lặp Lại — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch10.html) — *Chronic fatigue & neuromuscular depletion*
+<!-- TAICHIKB-CROSSREF-END -->

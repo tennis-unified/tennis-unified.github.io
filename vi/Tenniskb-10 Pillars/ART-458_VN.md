@@ -55,3 +55,10 @@ Người chơi nên tích hợp các bài tập này vào quình tập luyện t
 
 ## Ứng Dụng Thực Tế: "Tập Trả Serve"
 Nhờ bạn serve về phía backhand của bạn. Tập trả mười cú serve, tập trung vào cú vung ngắn gọn, điểm gặp bóng phía trước và cú trả sâu, chéo sân. Đếm xem có bao nhiêu cú trả đánh vào sân và có bao nhiêu cú trả xuyên sân. Theo dõi tiến độ qua các buổi tập để đảm bảo cú trả đang phát triển đúng hướng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

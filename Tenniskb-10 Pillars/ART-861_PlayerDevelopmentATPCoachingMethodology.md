@@ -171,3 +171,10 @@ Complete 3-4 rounds with 2 minutes rest between rounds. Total time: 20-25 minute
 | Slow reactions to opponent shots | Insufficient reactive agility training | Late arrivals, wrong direction | Reactive agility drills; ghosting; ball machine react |
 | Fatigue in speed during matches | Insufficient speed endurance | Reduced court coverage in later sets | Repeated sprint training; speed endurance circuits |
 | Inefficient deceleration | Insufficient deceleration training | Poor balance, errors on wide balls | Deceleration drills; eccentric strength training |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Plyometric training & reactive SSC*
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Lateral Line: lateral stability & mediolateral force*
+<!-- TAICHIKB-CROSSREF-END -->

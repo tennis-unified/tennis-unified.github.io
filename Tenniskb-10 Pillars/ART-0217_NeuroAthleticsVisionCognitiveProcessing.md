@@ -58,3 +58,10 @@ During practice, consciously gather tactical information during low-demand momen
 
 ## Practical Application: "The Priority Queue"
 During play, maintain a mental priority queue of processing demands. The queue should be: (1) track the ball, (2) execute the planned shot, (3) monitor the opponent, (4) adjust tactics. Process items in this order, and resist the urge to jump to lower-priority items while higher-priority items are active. This structured approach prevents the bottleneck overload that occurs when players try to process everything simultaneously and ensures that the most critical information (ball tracking) is always processed first.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -54,3 +54,10 @@ Huấn luyện nhanh nhẹn nên được thực hiện khi hệ thần kinh cò
 ## Ứng Dụng Thực Tế: "Đọc, Phản ứng, Bùng Nổ"
 
 Kết hợp nhanh nhẹn phản ứng vào mọi buổi tập. Thiết lập một bài tập nơi đối tác đứng ở cơ sở với một rỗ bóng và đánh ngẫu nhiên về phía forehand hoặc backhand của bạn. Mục tiêu của bạn là phản ứng với hướng bóng và chạy nhanp đến vị trí phù hợp. Bắt đầu với tốc độ chậm và tăng dần tốc độ cùng khả năng dự đoán. Theo dõi thời gian 5-10-5 của bạn hàng tháng, nhưng điều quan trọng không kém là theo dõi khả năng đọc và phản ứng với hướng đánh của đối tác. Hãy nhớ: trong tennis, những người di chuyển giỏi nhất không nhất thiết là những người nhanh nhất, mà là những người có thể dự đoán và phản ứng hiệu quả nhất.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Thăng bằng động và kiểm soát hướng*
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Tập luyện plyometric và chu kỳ SSC*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

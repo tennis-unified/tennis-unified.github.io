@@ -39,3 +39,10 @@ Structural imaging across sports shows expert-related differences in the cerebel
 
 ## Practical Application: "Your Brain Learns Where Your Eyes Go"
 The neuroscience of expertise reduces to one actionable truth: the tennis brain is built by what it repeatedly attends to. Put quality repetitions in front of the eyes — live, varied, unpredictable — and let video study and imagery recruit the same circuits from the couch. Protect the developing brain from overload with rest and variety, and coach with single cues rather than lectures. The champion's brain is not born; it is assembled, one attended repetition at a time.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Sensorimotor integration & motor control*
+<!-- TAICHIKB-CROSSREF-END -->

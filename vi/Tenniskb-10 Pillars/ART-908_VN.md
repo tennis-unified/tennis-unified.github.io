@@ -122,3 +122,10 @@ Các ổn định lõi cơ phải kích hoạt trước khi chuyển động b�
 ## Ứng Dụng Thực Tế: "Giữ Lõi Trước Khi Xoay"
 
 Trước bất kỳ chuyển động xoay nào — serve, cú vợt mặt đất, hoặc thậm chí nhặt bóng — nhẹ nhàng kéo rốn về phía cột sống và giữ co đó. Điều này kích hoạt cơ chéo bụng, tạo ra một "corset" nội tại ổn định từng đoạn thắt lưng. Tập điều này 10 lần mỗi ngày cho đến khi trở thành bản năng. Lõi cơ của bạn nên phát trước khi chi thể chuyển động, không phải sau. Tái huấn luyện thần kinh cơ này giảm nguy cơ chấn thương lưng dưới hơn bất kỳ hỗ trợ ngoại tại nào.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

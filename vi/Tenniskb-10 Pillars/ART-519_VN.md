@@ -143,3 +143,10 @@ Serve tạo áp lực đáng kể lên vai và khuỷu tay. Tay vợt trẻ nên
 ## Ứng Dụng Thực Tế: "Danh Sách Kiểm Tra Phát Triển Serve"
 
 Hãy tạo một danh sách kiểm tra kỹ năng serve cho từng nhóm tuổi. Trước khi chuyển người chơi lên giai đoạn tiếp theo, hãy đảm bảo họ thể hiện được toàn bộ kỹ năng trong danh sách hiện tại. Điều này ngăn ngừa lỗ hổng phát triển và bảo đảm mỗi người chơi xây dựng được nền tảng kỹ thuật vững chắc. Ví dụ, danh sách của giai đoạn Bóng Cam có thể gồm: "Tung bóng đến độ cao nhất quán", "Serve vào ô giao bóng 6/10 lần", "Dùng cầm continental", "Nhận diện được vị trí backscratch".
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

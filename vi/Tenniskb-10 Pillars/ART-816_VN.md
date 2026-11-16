@@ -204,3 +204,10 @@ Kiểm tra vào đầu mùa nghỉ, giữa mùa nghỉ, cuối giai đoạn trư
 | Hồi phục chậm giữa các điểm | Thể lực hiếu khí kém, rèn luyện tim mạch không đầy đủ | Mệt mỏi tích lũy, phong độ giảm sút | Tập hiếu khí; theo dõi HRV; các giao thức phục hồi |
 | Không thể duy trì cường độ | Khả năng chạy nước rút lặp lại kém, tập yếm khí không đủ | Phong độ tụt giảm trong các trận đấu dài | Tập RSA; tập theo khoảng; các bài tập rèn luyện trên sân |
 | Chân nặng nề khi thi đấu | Rèn luyện thân dưới không đủ, hiệu quả di chuyển kém | Giảm khả năng bao phủ sân, bước chân đầu tiên chậm | Rèn luyện thân dưới; huấn luyện hiệu quả di chuyển |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Hệ thống năng lượng cho thể lực quần vợt*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

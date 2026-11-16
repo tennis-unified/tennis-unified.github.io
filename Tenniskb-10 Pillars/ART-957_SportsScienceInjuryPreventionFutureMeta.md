@@ -130,3 +130,10 @@ Breaking the negative cycle requires intervention at any point — typically thr
 ## Practical Application: "Build Your Confidence Portfolio"
 
 Confidence is not a feeling — it is a conclusion drawn from evidence. Create a "confidence portfolio" that documents your performance accomplishments: match results, statistical improvements, tactical successes, and competitive milestones. Review this portfolio before competition to remind yourself of the evidence supporting your capability. Supplement this with vicarious experience (watching players at your level succeed), verbal persuasion (specific coach feedback), and physiological regulation (breathing and arousal reappraisal). Confidence built on evidence is confidence that endures.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

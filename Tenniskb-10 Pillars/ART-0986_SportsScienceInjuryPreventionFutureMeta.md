@@ -39,3 +39,10 @@ The countermeasures follow directly from the mechanisms. Pressure acclimation: t
 
 ## Practical Application: "Pressure Is a Skill You Practice"
 Nobody is born good at match points — they become good at them by rehearsing stakes until stakes stop feeling like stakes. Build consequence into weekly practice, automate a pre-serve routine and never skip it, and train yourself to aim attention at targets rather than at your own body. And when a choke happens, diagnose the mechanism before assigning blame: was the mind elsewhere (distraction) or was it staring at the wrist (monitoring)? The fix differs, and knowing which failure you just experienced is the first step to making it the last.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

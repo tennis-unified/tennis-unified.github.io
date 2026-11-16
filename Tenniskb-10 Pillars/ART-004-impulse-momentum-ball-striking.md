@@ -86,3 +86,10 @@ Ball direction is determined primarily by the racket face orientation at contact
 
 ## Practical Application: "The Hammer and the Nail"
 Imagine driving a nail into wood. You don't push the hammer—you accelerate it and let the impulse of the collision do the work. Your racket is the hammer; the ball is the nail. The key insight is that the impulse delivered depends on both how fast the hammer is moving and how efficiently the collision transfers energy. A loose grip at contact is like holding the hammer handle with wet noodles—the effective mass drops and energy dissipates. Hold the racket firmly enough that the racket and hand act as one rigid body at the moment of impact. Feel the ball compress against the strings and spring off—that rebound is the impulse working in your favor. The harder you accelerate the racket and the firmer the contact, the deeper the nail goes.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Linear kinetics, GRF & impulse-momentum*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

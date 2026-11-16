@@ -70,3 +70,10 @@ Luyện tập chấp nhận những thất bại ngắn hạn từ các cú đá
 ## Ứng Dụng Thực Tế: "Kiểm Tra Tỷ Lệ Phần Trăm"
 
 Trước mỗi cú đánh, hãy thực hiện một "kiểm tra tỷ lệ phần trăm" nhanh: ước lượng xác suất thành công của cú đánh dự định. Nếu xác suất trên 50%, hãy đánh với sự tự tin. Nếu dưới 50%, hãy cân nhắc phương án khác. Lối tắt đơn giản này giữ cho việc ra quyết định của bạn bám sát vào xác suất thay vì cảm xúc. Theo thời gian, các ước lượng xác suất của bạn sẽ trở nên chính xác hơn, và việc lựa chọn cú đánh sẽ cải thiện tương ứng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+<!-- TAICHIKB-CROSSREF-END -->

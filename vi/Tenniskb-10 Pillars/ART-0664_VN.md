@@ -56,3 +56,10 @@ Xử lý bóng thả tại lưới đòi hỏi khả năng nhận biết nhanh, 
 ## Ứng Dụng Thực Tế: "Phát Triển Về Phía Trước, Hạ Thấp Người, Tác Thủ Nhẹ"
 
 Đối phó với bóng thả: (1) phát triển về phía trước bằng bước chân chéo, (2) hạ thấp người với đầu gối gập sâu, (3) sử dụng tác thủ nhẹ để xử lý bóng. Bóng thả được thiết kế để khiến bạn bỏ lỡ — không cho đối thủ sự thỏa mãn đó.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

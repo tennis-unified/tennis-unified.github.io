@@ -34,3 +34,9 @@ A heavier racket (higher m) delivers more force, but it takes more energy to acc
 
 ## Practical Application: The "Counter-Balance" Feeling
 The athlete must feel that the racket is an extension of the kinetic chain, not an external weight. If the racket feels "disconnected" or "too heavy," the kinetic chain is not generating enough energy to overcome the swingweight, leading to an arm-dominant, inefficient stroke.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Moment of inertia (I = Σmr²) & rotational resistance*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Racket mass, balance, and swingweight physics*
+<!-- TAICHIKB-CROSSREF-END -->

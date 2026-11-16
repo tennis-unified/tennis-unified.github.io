@@ -97,3 +97,10 @@ Cú giao được chi phối bởi các nguyên tắc sinh học cơ học cơ b
 ## Ứng Dụng Thưc Tế: "Phân Tích Sinh Học Cơ Học"
 
 Nhờ huấn luyện viên hoặc sử dụng phân tích video để đánh giá sinh học cơ học giao của bạn. Xác định bất kỳ lỗi nào trong đồng hóa bước chẻ, mô hình chuyển động hoặc cơ học cú đánh của bạn. Giải quyết từng lỗi một thông qua thực hành có mục tiêu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

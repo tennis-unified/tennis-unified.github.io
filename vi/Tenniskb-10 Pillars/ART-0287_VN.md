@@ -66,3 +66,10 @@ Thực hành với các phiên tán có chủ đích để xây dựng khả nă
 
 ## Ứng Dụng Thực Tế: "Điểm Neo Tập Trong"
 Phát triển một "điểm neo tập trong" cá nhân - một tín hiệu giác quan cụ thể mà bạn sử dụng để thiết lập lại sự tập trong khi nó lan man. Đối với một số người chơi, điểm neo là âm thanh quả bóng đập vào vợt. Đối với những người khác, đó là cảm giác của dây vợt. Khi bạn nhận ra sự tập trong lan man, hãy quay lại điểm neo của bạn. Kỹ thuật đơn giản này cung cấp một cách nhanh chóng, đáng tin cậy để khôi phục sự tập trong trong thi đấu và ngăn chặn sự suy giảm kéo dài dẫn đến sai lầm không cố ý và suy giảm thành tích.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

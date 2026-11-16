@@ -59,3 +59,10 @@ Trong các pha đấu bóng, mẫu tối ưu là mẫu mà đối thủ không t
 ## Ứng Dụng Thực Tế: "Quy Tắc 60-40"
 
 Hãy nhắm đến phân bổ 60-40 trong việc chọn cú đánh: 60% cho phương án có tỷ lệ thành công cao hơn, 40% cho phương án thấp hơn. Phân bổ này tạo đủ sự biến đổi để giữ tính khó đoán trong khi vẫn ưu tiên cú đánh hiệu quả hơn. Ví dụ, nếu thuận tay chéo sân của bạn thắng 65% số lần và dọc biên thắng 45%, hãy đánh khoảng 60% chéo sân và 40% dọc biên. Tỷ lệ đơn giản này xấp xỉ cân bằng lý thuyết trò chơi và ngăn đối thủ khai thác các xu hướng của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

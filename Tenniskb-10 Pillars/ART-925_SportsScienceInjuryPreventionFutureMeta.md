@@ -49,3 +49,10 @@ If you have Type 1 diabetes, check your blood glucose before every match and kee
 
 ## Practical Application: "Monitor, Fuel, Play"
 If you have Type 1 diabetes, check your blood glucose before every match and keep fast-acting carbohydrates court-side. During long matches or tournaments, check blood glucose during changeovers when possible. Learn how your body responds to tennis specifically — every athlete is different. Keep a log of your blood glucose patterns during play to identify trends and adjust your insulin and carbohydrate strategy. If you are a coach or training partner of a diabetic player, learn to recognize hypoglycemia and know how to assist. Diabetes should not prevent you from playing tennis — with proper management, you can compete at any level.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 10: Mô Cơ (Muscular Tissue)](https://taichikb.github.io/vi/books/tortora_ap/ch10-mo-co.html) — *Muscular tissue physiology & contraction*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

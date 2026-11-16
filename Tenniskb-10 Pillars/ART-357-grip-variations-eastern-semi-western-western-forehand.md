@@ -74,3 +74,10 @@ The choice of grip depends on three factors:
 ## Practical Application: "The Grip Selection Process"
 
 Experiment with all three grips during practice to feel the differences in face angle, swing path requirements, and shot outcomes. Spend 15 minutes with each grip, hitting the same types of shots, and note which grip feels most natural and produces the best results for your playing style. The optimal grip is the one that allows you to produce your desired shots with the least mechanical compromise.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+<!-- TAICHIKB-CROSSREF-END -->

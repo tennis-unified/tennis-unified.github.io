@@ -122,3 +122,10 @@ Cha Mẹ Là Các Cổ Đông Trong Doanh Nghiệp Sự Nghiệp Của Vận Đ�
 
 ## Ứng Dụng Thực Tế: "Danh Mục Đầu Tư Của Cổ Đông"
 Kế Hoạch Hỗ Trợ Cha Mẹ Là **Danh Mục Đầu Tư Của Cổ Đông**. Nó Định Nghĩa Vốn Đầu Tư (Tiền, Thời Gian, Cảm Xúc), Quản Trị (Quyền Biểu Quyết, Họp Hội Đồng, Báo Cáo), Quản Lý Rủi Ro (Ranh Giới, Leo Thang, Bảo Hiểm), Và Phúc Lợi Của Cổ Đông (Đa Dạng Hóa, Kiểm Tra Sức Khỏe). **Những Cha Mẹ Tennis Tốt Nhất Không Huấn Luyện Tennis; Họ Nuôi Dạy Con Người.** Họ Tài Trợ Cho Nhà Máy. Họ Tin Cậy COO. Họ Bảo Vệ CEO. Họ Tận Hưởng Trò Chơi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 19: Thấu hiểu cơ học-thích-nghi của mô mạc: Ứng dụng vào y học thể thao — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch19-thau-hieu-co-hoc-thich-nghi-cua-mo-mac-ung-dung-vao-y-hoc-the-th.html) — *Cơ học thích nghi và phòng ngừa chấn thương*
+<!-- TAICHIKB-CROSSREF-END -->

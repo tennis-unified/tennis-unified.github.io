@@ -95,3 +95,10 @@ Hãy chấp nhận rằng một số serve sẽ bị những cơn gió giật �
 ## Ứng Dụng Thực Tế: "Bài Tập Đo Gió"
 
 Trong buổi tập khi trời có gió, hãy đánh 10 serve ở độ cao toss bình thường và quan sát kết quả. Sau đó đánh 10 serve với toss thấp hơn và 10 serve với toss cao hơn. So sánh độ nhất quán của từng độ cao toss. Độ cao toss cho kết quả ổn định nhất sẽ trở thành lựa chọn mặc định của bạn trong điều kiện gió ấy. Lặp lại bài tập này mỗi lần chơi dưới gió cho đến khi bạn hình thành cảm giác tự động về mức điều chỉnh toss chính xác.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

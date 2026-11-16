@@ -42,3 +42,9 @@ Bài tổng kết này cho 100 bài viết đầu tiên tích hợp tất cả 5
 
 ## Ứng Dụng Thực Tế: "Trình Sản Xuất Điều Kiện"
 Trình sản xuất điều kiện hoàn chỉnh không chỉ huấn luyện một hệ năng lượng — họ phát triển điều kiện thể chất, kỹ thuật, chiến thuật và nhận thức cho phép hiệu suất đỉnh cao qua tất cả 5 Cột Trụ. Huấn luyện toàn bộ vận động viên, không chỉ động cơ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 16: Chương 16: Các Yếu Tố Quyết Định Sinh Lý Học Của Thành Tích Thể Thao — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch13.html) — *Làm chủ các yếu tố sinh lý quyết định thành tích*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Hợp nhất nội lực thư giãn và thể lực hiện đại*
+<!-- TAICHIKB-CROSSREF-END -->

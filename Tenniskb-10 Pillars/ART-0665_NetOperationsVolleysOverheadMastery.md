@@ -56,3 +56,10 @@ Handling the inside-out forehand at the net requires anticipation, positioning t
 ## Practical Application: "Block, Close, Redirect"
 
 Against the inside-out forehand: (1) block the ball with a stable racket face, (2) close the face slightly to handle the topspin, (3) redirect down-the-line or deep cross-court. The inside-out forehand is powerful, but with the right technique, you can neutralize it.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

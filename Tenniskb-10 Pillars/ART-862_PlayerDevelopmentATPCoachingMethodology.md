@@ -231,3 +231,10 @@ Retest every 8-12 weeks to track improvement.
 | Frequent stumbles during directional changes | Poor balance, weak proprioception | Falls, injuries, missed shots | Balance training; proprioception exercises; single-leg drills |
 | Slow recovery to center after wide balls | Insufficient recovery movement training | Opponent finds open court | Recovery movement drills; center-of-angles education |
 | Inability to change direction smoothly | Poor deceleration mechanics, stiff ankles | Inefficient movement, energy waste | Deceleration drills; ankle mobility; change of direction mechanics |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Dynamic balance & directional control*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+<!-- TAICHIKB-CROSSREF-END -->

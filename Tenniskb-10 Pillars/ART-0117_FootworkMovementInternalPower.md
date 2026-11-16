@@ -102,3 +102,10 @@ Teach players the redirect decision rule:
 3. **If you are not sure — stay low and ready.** A player in a low, balanced stance can redirect or brake more efficiently than a player who is upright and sprinting.
 
 The redirect is not a footwork trick — it is a fundamental principle of physics applied to movement. Momentum is energy. Stopping dead is waste. Elite movers treat every step as an investment in the next one.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Lateral Line: lateral stability & mediolateral force*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

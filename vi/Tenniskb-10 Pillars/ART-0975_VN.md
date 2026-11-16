@@ -51,3 +51,10 @@ Dây nên được thay theo giờ chơi, không phải theo đứt. Polyester n
 ## Ứng Dụng Thực Tế: "Nâng Cấp Rẻ Nhất Trong Quần Vợt"
 
 Trước khi mua vợt mới, căng lại vợt bạn có với thiết lập đúng. Khung 300 g với hybrid chu đáo ở độ căng chính xác sẽ vượt trội mọi vợt 400 đô la căng sai mỗi lần. Kiểm tra một biến số mỗi lần căng lại — vật liệu, độ căng, hoặc mô hình — và giữ nhật ký ngắn về mỗi thiết lập chơi thế nào. Dây của bạn là tiêu hao, tinh chỉnh được, và đòn bẩy nhanh nhất bạn có cho số vòng quay, kiểm soát và sức khỏe cánh tay; đối xử với chúng như thành phần hiệu suất chúng là.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

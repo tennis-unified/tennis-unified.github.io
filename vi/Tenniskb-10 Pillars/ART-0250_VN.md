@@ -60,3 +60,10 @@ Huấn luyện neurofeedback đã được chứng minh cải thiện chú ý, �
 
 ## Ứng Dụng Thực Tế: "Mạch Huấn Luyện Nhận Thức - Nhận Thức"
 Tích hợp huấn luyện nhận thức - nhận thức vào tập luyện thường xuyên với một mạch tuần: (1) 15 phút huấn luyện che khuất video, (2) 10 phút theo dõi nhiều vật thể, (3) 15 phút bài tập ra quyết định, và (4) 10 phút neurofeedback hoặc chánh niệm. Mạch này nhắm đến tất cả các kỹ năng nhận thức - nhận thức chính và có thể hoàn thành trong một phiên hoặc trải qua tuần. Theo thời gian, huấn luyện có cấu trúc này tạo ra cải thiện có thể đo lường được trong các kỹ năng tinh thần làm nền tảng cho hiệu suất tennis.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên phân đoạn*
+<!-- TAICHIKB-CROSSREF-END -->

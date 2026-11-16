@@ -35,3 +35,9 @@ The friction between the main strings and cross strings affects how quickly the 
 
 ## Practical Application: Matching the String to the Chain
 The stringbed is the final link in the energy transfer. If the player generates massive kinetic energy but uses a very soft, low-tension stringbed, the energy is "absorbed" by the strings rather than returned to the ball. Conversely, a hard hitter with stiff strings maximizes the return of their high input energy.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Elastic collision & coefficient of restitution*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Stringbed restitution & impact mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

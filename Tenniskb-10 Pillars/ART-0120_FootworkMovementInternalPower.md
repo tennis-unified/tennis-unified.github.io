@@ -134,3 +134,10 @@ Implement a late-set split-step protocol:
 5. **Track with video.** Film the player's split step in the first and third sets of practice matches. Measure hop height, landing timing, and first-step time. The data provides objective feedback on whether the fatigue protocols are working.
 
 The split step is the canary in the coal mine of tennis fitness. When it degrades, everything downstream degrades. Protect the hop — and you protect the entire movement system.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Plyometric training & reactive SSC*
+<!-- TAICHIKB-CROSSREF-END -->

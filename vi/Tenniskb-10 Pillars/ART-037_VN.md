@@ -100,3 +100,10 @@ Chìa khóa tốc độ xoay hông là sự bật — xoay nhanh, bùng nổ c�
 | Góc tách hông-người | 40-60° | < 30° | Xoay người chân cố định, tách hông-người drill |
 | Thời điểm khởi động hông | Trùng đỉnh đẩy chân | Hông xoay sớm/muộn > 30ms | Shadow swing chậm, video feedback, band drill |
 | Đối xứng xoay hai bên | Chênh ≤ 10% | Chênh > 15% | Tập đơn phương bên yếu, RDL một chân + xoay |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -86,3 +86,10 @@ Người chơi muốn phát triển forehand tay thẳng nên:
 ## Ứng Dụng Thực Tế: "Bài Tập Duỗi Thẳng Tay"
 
 Luyện tập forehand tay thẳng bằng cách giữ vợt ở tư thế chuẩn bị với khuỷu tay duỗi thẳng hoàn toàn. Vung vợt xuyên qua điểm tiếp bóng trong khi duy trì tư thế duỗi thẳng này, cảm nhận cánh tay đòn dài hơn và tốc độ đầu vợt cao hơn mà nó tạo ra. Sử dụng bài tập này với những quả bóng nảy cao — nơi kỹ thuật phát huy tự nhiên nhất — và so sánh tốc độ bóng với forehand double-bend thông thường của bạn để cảm nhận sự khác biệt về sức mạnh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

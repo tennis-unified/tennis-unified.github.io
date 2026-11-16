@@ -57,3 +57,10 @@ Người chơi nên tập chống tay trái với điều chỉnh chiến thuậ
 ## Ứng Dụng Thực Tế: "Giải Mã Câu Đố Tay Trái"
 
 Áp dụng chống tay trái với điều chỉnh chiến thuật xoáy ngược bằng cách cam kết sử dụng chiến thuật này trong một hiệp tập hoàn chỉnh. Theo dõi số điểm bạn giành được bằng khuôn mẫu so với cách tiếp cận mặc định. Nếu chiến thuật giành thắng hơn 55% điểm bóng, hãy tích hợp nó vào kho chiến thuật thường xuyên. Nếu giành thắng ít hơn, hãy phân tích lý do: phải chăng do thực thi của bạn, sự thích ứng của đối thủ, hay thời điểm chọn lựa kém? Hoàn thiện chiến thuật dựa trên phân tích này trước trận đấu tiếp theo.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

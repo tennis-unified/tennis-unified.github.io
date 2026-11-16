@@ -45,3 +45,10 @@ Players who struggle behind the baseline often benefit from drills that emphasiz
 
 ## Practical Application: "The Behind-the-Baseline Practice"
 Have a partner feed deep, high bouncing balls to your backhand side. Practice moving back, getting low, and hitting defensive shots from behind the baseline. Track how many shots you can hit in the court and how many buy time for recovery. This drill develops the skills needed for effective behind-the-baseline play.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -138,3 +138,10 @@ A good sports drink for tennis should contain:
 | Dark urine before matches | Insufficient pre-match hydration | Reduced performance, health risk | Pre-match hydration protocol; daily hydration monitoring |
 | Weight loss during matches >2% | Insufficient fluid replacement | Significant performance decline | Increase during-match fluid intake; weigh before/after matches |
 | Gastrointestinal discomfort from drinks | Too concentrated, wrong type | Nausea, cramping | Dilute sports drinks; try different brands; practice during training |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Athletic nutrition & energy balance*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Tai Chi principles applied to tennis*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

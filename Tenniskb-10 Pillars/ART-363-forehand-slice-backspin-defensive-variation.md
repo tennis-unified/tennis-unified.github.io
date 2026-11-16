@@ -78,3 +78,10 @@ Training the forehand slice involves:
 ## Practical Application: "The Slice and Approach"
 
 Practice the forehand slice as an approach shot: hit a deep slice to the opponent's backhand corner, then follow it to the net. Focus on the slice's low bounce and floating trajectory, which make it difficult for the opponent to hit an aggressive passing shot. This combination is effective on fast surfaces (grass, hard court) where the slice stays low after the bounce.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

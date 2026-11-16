@@ -32,3 +32,10 @@ Cú trái tay cắt sử dụng một quỹ đạo đi xuống và một trục 
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Quất Roi"
 Cú đánh một tay nên có cảm giác như một chiếc roi. Vai cung cấp cú "giật" ban đầu, và cổ tay cung cấp cú "giật" cuối cùng. Vận động viên nên cảm nhận tốc độ tăng theo cấp số nhân khi vợt di chuyển qua vùng tiếp xúc, thay vì duy trì một tốc độ không đổi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Tạo xoáy một tay và mô-men động lượng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Mở rộng mô-men động lượng và quán tính quay*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Gia tốc khớp vai và kiểm soát xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -175,3 +175,10 @@ Ghi chép thủ công hoặc tự động mỗi cú đánh trong trận:
 ## Ứng Dụng Thực Tế: "Bắt Đầu Với Một Con Số"
 
 Bạn không cần đội phân tích để hưởng lợi từ phân tích quần vợt. Bắt đầu theo dõi một con số trong các trận của bạn: tỷ lệ serve đầu. Sau năm trận, bạn sẽ nhận ra mô hình: tỷ lệ của bạn giảm ở set 3, hoặc thấp hơn trước một số đối thủ nhất định. Hiểu biết duy nhất này có thể dẫn đến thay đổi hành động: tung bóng nhất quán hơn, nhiều xoay hơn trên serve thứ hai, hoặc vị trí serve đầu tấn công hơn. Khi bạn thoải mái với một con số, thêm tỷ lệ winner-so-với-lỗi-không-ép, sau đó chuyển đổi break point. Thói quen phân tích nhỏ, nhất quán tích lũy thành cải thiện thành tích đáng kể theo thời gian.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

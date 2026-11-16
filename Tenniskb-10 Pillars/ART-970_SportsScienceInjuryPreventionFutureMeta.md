@@ -246,3 +246,10 @@ The world's most successful tennis development programs — the Rafa Nadal Acade
 ## Practical Application: "Environments Create Excellence"
 
 Talent alone does not produce champions — environments do. The world's best tennis players emerged from carefully constructed development ecosystems that integrated quality coaching, appropriate facilities, progressive competition, psychological support, and holistic personal development. Whether you are building a national federation program, a regional academy, or a local club development pathway, invest in all five dimensions of the talent development environment. The players who thrive are not just the most talented — they are the ones who develop in the most supportive, most complete, most thoughtfully designed environments.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

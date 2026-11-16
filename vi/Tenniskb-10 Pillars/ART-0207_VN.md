@@ -67,3 +67,10 @@ Tập dự đoán thời gian quả bóng đến dựa trên tín hiệu hình �
 
 ## Ứng Dụng Thực Tế: "Khóa Nhịp"
 Trong các pha tập luyện rally, cố ý khóa vào nhịp độ của pha rally. Để nhịp độ của cuộc trao đổi quyết định thời gian chuẩn bị của bạn thay vì áp đặt nhịp độ riêng. Khi bạn cảm thấy vội vã, cố ý làm chậm chuẩn bị của bạn bằng cách hít một hơi thở thêm trước khi bắt đầu vung vợt. Khi bạn cảm thấy chậm, rút ngắn chuẩn bị của bạn bằng cách loại bỏ các bước không cần thiết. Cách tiếp cận linh hoạt về canh thời gian, neo vào nhịp độ tự nhiên của pha rally, tạo ra tiếp xúc nhất quán hơn bất kỳ thói quen cố định nào.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -39,3 +39,10 @@ Four disciplines keep AI useful. Data hygiene: models are only as good as the ca
 
 ## Practical Application: "Hire the Machine as an Assistant Coach"
 Adopt AI tools the way a head coach adopts an assistant: give them specific, bounded jobs. Let computer vision count strokes and track contact-point consistency. Let load models run quietly in the background as an early-warning system. Let generative tools draft practice plans that you then edit with knowledge of the human in front of you. The future of coaching is not human versus machine — it is the coach who commands the measurement, the athlete who feels the difference, and the machine that never gets tired of counting.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Angular kinematics & sequential kinetic chain*
+<!-- TAICHIKB-CROSSREF-END -->

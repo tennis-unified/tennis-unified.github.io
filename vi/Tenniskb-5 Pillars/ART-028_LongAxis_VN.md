@@ -30,3 +30,10 @@ Những người giao bóng nghiệp dư thường cố gắng "đẩy" vợt l�
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Vặn Tua Vít"
 Xoay trục dài nên có cảm giác như vặn một chiếc tua vít thật nhanh. Cánh tay không di chuyển theo một vòng tròn rộng; nó xoay quanh trục của chính nó. Hãy cảm nhận sự "xoay" ở cánh tay trên để mở khóa tốc độ giao bóng đẳng cấp.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và xoay quanh trục dọc*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Cơ chế xoay trong/xoay ngoài khớp vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Chuyển động xoay trục dọc chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

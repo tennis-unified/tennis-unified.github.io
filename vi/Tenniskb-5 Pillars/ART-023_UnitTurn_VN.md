@@ -31,3 +31,10 @@ Unit turn hoạt động như một viên pin sinh học.
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Lên Cót"
 Unit turn nên có cảm giác như đang lên dây cót cho một chiếc đồng hồ. Bạn không chỉ di chuyển cơ thể; bạn đang "sạc" hệ thống. Cú vặn càng nhanh và đồng bộ, cú giải phóng càng bùng nổ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Xoay thân (Unit Turn) và chuẩn bị tích trữ năng lượng*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Xoắn Đường Xoắn Ốc khi thực hiện Unit Turn*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Vận tốc xoay thân và tích trữ lực*
+<!-- TAICHIKB-CROSSREF-END -->

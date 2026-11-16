@@ -107,3 +107,10 @@ Chính sách nhiệt hiện đại nên bao gồm:
 ## Ứng Dụng Thực Tế: "Người Chơi Sẵn Sàng Cho Nhiệt"
 
 Chuẩn bị cho tennis trong khí hậu ngày càng nóng đòi hỏi quy trình sẵn sàng nhiệt toàn diện: (1) **Thích ứng** — bắt đầu tiếp xúc nhiệt 10-14 ngày trước khi thi đấu trong điều kiện nóng, với 60-90 phút tập vừa phải trong nhiệt (30-35°C) hàng ngày để kích hoạt thích ứng sinh lý (đồ mồ hôi sớm hơn, tăng thể tích mồ hôi, giảm nồng độ điện giải trong mồ hôi, mở rộng thể tích huyết tương); (2) **Quy trình làm mát trước** — vào ngày thi đấu, tiêu thụ 7,5 kg sữa đá 30 phút trước khi chơi, mặc áo mát trong khởi động và đắp khăn lạnh lên cổ và cổ tay; (3) **Làm mát trong trận** — sử dụng mọi giờ nghỉ để làm mát chủ động (khăn lạnh, quạt phun sương, nước uống mát), yêu cầu giờ nghỉ dài hơn trong nhiệt cực đoan và sử dụng giờ nghỉ y tế để mặc áo mát nếu có sẵn; (4) **Phục hồi** — sau trận, sử dụng ngâm nước lạnh (10-15°C trong 10-15 phút) để tăng tốc bình thường hóa nhiệt độ thân. Người chơi triển khai có hệ thống các chiến lược này có thể duy trì hiệu suất trong điều kiện mà nếu không sẽ gây suy giảm 10-15%. Biến đổi khí hậu không phải là mối đe doda ở xa — nó đang định hình lại tennis, và người chơi thích ứng quản lý nhiệt của mình sẽ đạt lợi thế cạnh tranh trong khi bảo vệ sức khỏe.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+<!-- TAICHIKB-CROSSREF-END -->

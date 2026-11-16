@@ -49,3 +49,10 @@ Three-dimensional (3D) motion capture is the gold standard for biomechanical ana
 
 ## Practical Application: "The Lab Assessment"
 If you have access to a biomechanical laboratory, undergo a 3D motion capture assessment to obtain objective data on your stroke mechanics. The data will reveal specific technical faults—such as insufficient hip rotation, timing errors, or energy leaks—that you can address through targeted training. Even a single lab assessment can provide insights that transform your training program.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

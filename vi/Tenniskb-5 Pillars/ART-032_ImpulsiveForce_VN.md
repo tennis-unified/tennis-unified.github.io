@@ -36,3 +36,9 @@ Sự va chạm không chỉ liên quan đến quả bóng; nó liên quan đến
 
 ## Ứng Dụng Thực Tế: Quy Tắc "Trước Tiếp Xúc"
 Người chơi nên tập trung 100% năng lượng tinh thần vào 100 mili giây *trước* khi tiếp xúc. Khi quả bóng đã nằm trong cửa sổ tiếp xúc, kết quả đã được quyết định. "Chuẩn bị cho tiếp xúc, sau đó để nó xảy ra."
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Định lý Xung lượng – Động lượng (F·Δt = m·Δv)*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Lực xung trong va chạm vợt – bóng*
+<!-- TAICHIKB-CROSSREF-END -->

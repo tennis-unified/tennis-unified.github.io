@@ -60,3 +60,10 @@ Returning serve at high altitude requires adjustments because thinner air affect
 ## Practical Application: "The Altitude Adjustment"
 
 When returning at high altitude, stand 2-3 feet deeper than normal, use block returns on fast serves, and focus on consistency over aggression. Adjust your positioning and technique based on the first few serves in the match.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+<!-- TAICHIKB-CROSSREF-END -->

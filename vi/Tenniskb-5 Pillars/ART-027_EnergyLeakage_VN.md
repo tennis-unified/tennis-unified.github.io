@@ -47,3 +47,10 @@ Năng lượng bị mất ở mắt xích cuối cùng.
 
 ## Ứng Dụng Thực Tế: Chuỗi "Kín Nước"
 Mục tiêu là làm cho các "chiếc xô" kín nước hoàn toàn. Khi một người chơi khắc phục được một điểm rò rỉ, họ thường trải qua một sự "đột phá" nơi sức mạnh tăng lên đáng kể mà không cần thay đổi sức mạnh cơ bắp.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Hệ thống vận động chức năng và các mẫu vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch05-he-thong-van-dong-chuc-nang-va-cac-mau-van-dong.html) — *Mẫu vận động chức năng và chẩn đoán rò rỉ năng lượng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Thời điểm chuỗi động học và thất thoát năng lượng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Chẩn đoán hiệu suất chuỗi động học*
+<!-- TAICHIKB-CROSSREF-END -->

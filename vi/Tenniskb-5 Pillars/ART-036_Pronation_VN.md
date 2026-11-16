@@ -31,3 +31,10 @@ Bẻ chủ động liên quan đến việc sử dụng các cơ gấp và duỗ
 
 ## Ứng Dụng Thực Tế: Phép So Sánh "Tay Cửa"
 Cổ tay nên hoạt động như một tay nắm cửa được đẩy bởi chuyển động của cánh tay. Nó không nên tự xoay. Cánh tay (cánh cửa) thực hiện công việc; cổ tay (tay nắm) chỉ đi theo. Hãy cảm nhận sự xoay đến từ vai, không phải từ cổ tay.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Cơ chế sấp/ngửa cẳng tay ở khớp khuỷu–quay trụ*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Khớp quay–trụ trên và dưới*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Nhóm cơ sấp cẳng tay (cơ sấp tròn, cơ sấp vuông)*
+<!-- TAICHIKB-CROSSREF-END -->

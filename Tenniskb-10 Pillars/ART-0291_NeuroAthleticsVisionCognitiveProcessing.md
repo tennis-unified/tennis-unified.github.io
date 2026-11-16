@@ -61,3 +61,10 @@ Neurofeedback is most effective when combined with other mental skills training 
 
 ## Practical Application: "The Brain State Check"
 Before matches, use a portable EEG device or a simple self-assessment to check your brain state. Are you in a state of relaxed focus (optimal for tennis) or are you overaroused or underaroused? Based on your assessment, use neurofeedback or self-regulation techniques (breathing, visualization) to achieve the optimal brain state. This pre-match brain state check ensures that you are neurologically prepared for competition and maximizes your cognitive potential.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Tai Chi principles applied to tennis*
+<!-- TAICHIKB-CROSSREF-END -->

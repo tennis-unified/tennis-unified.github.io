@@ -52,3 +52,10 @@ Thực hành kỹ năng trong các bối cảnh đa dạng thay vì trong một 
 
 ## Ứng Dụng Thực Tế: "Lịch Duy Trì"
 Tạo một lịch duy trì cho kỹ năng tennis của bạn: (1) kỹ năng thủ tục: thực hành ít nhất hai lần mỗi tuần để duy trì tự động hóa, (2) kiến thức chiến thuật: xem lại nhật ký chiến thuật trước mỗi trận, (3) hồ sơ đối thủ: cập nhật sau mỗi trận gặp đối thủ mới, (4) trải nghiệm trận đấu: xem lại và suy ngẫm sau mỗi trận. Lịch này đảm bảo bộ nhớ dài hạn của bạn luôn cập nhật và kỹ năng, kiến thức không suy giảm trong các giai đoạn chơi ít.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên phân đoạn*
+<!-- TAICHIKB-CROSSREF-END -->

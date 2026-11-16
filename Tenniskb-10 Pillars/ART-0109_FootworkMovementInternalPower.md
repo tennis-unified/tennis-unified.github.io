@@ -87,3 +87,10 @@ Give the player one image: **when the ball pulls you wide, don't push — fall.*
 3. **The live drop.** During live feeds, the player uses the drop step for wide balls and defensive recoveries. The coach watches for the release — the relaxation that lets gravity do the work — and the catch — the controlled landing that becomes the drive.
 
 A player who drops does not run faster — they fall faster, and they arrive with the space and time that pushers never find.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

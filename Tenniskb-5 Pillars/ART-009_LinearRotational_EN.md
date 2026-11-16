@@ -40,3 +40,11 @@ Elite players do not choose one engine; they integrate both. Even in an open sta
 2.  **Rotational Phase:** Immediately upon the plant, execute a violent pelvic snap and rotate the torso.
 3.  **Integration:** Combine the two: Step forward → Plant → Rotate → Swing.
 4.  Focus on the feeling of the linear momentum "fueling" the rotation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: displacement, velocity, acceleration*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Angular kinematics: angular velocity & rotation*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics & rotational torque*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Linear vs. angular momentum balance in tennis*
+<!-- TAICHIKB-CROSSREF-END -->

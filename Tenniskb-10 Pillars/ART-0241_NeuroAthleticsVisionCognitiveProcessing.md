@@ -51,3 +51,10 @@ Practice anticipating shots based on contextual probabilities (e.g., "after a de
 
 ## Practical Application: "The Early Read"
 Train yourself to extract anticipatory information as early as possible in the opponent's preparation. Focus on the first cues to appear: foot position, shoulder orientation, and racket preparation. Rather than waiting for the full swing to develop, make your predictive judgment from the earliest available cues. This early read gives you extra preparation time and is the foundation of elite-level anticipation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Sensorimotor integration & motor control*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

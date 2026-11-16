@@ -83,3 +83,10 @@ Develop a consistent tempo by counting: "1" at the start of the toss, "2" at the
 ## Practical Application: "The Quarter-on-the-Ball Trick"
 
 Place a quarter on the baseline 6 feet behind your normal serving position. Stand on the quarter and hit 50 serves without looking down. The quarter forces you to maintain perfect balance and weight distribution, which in turn forces your tossing arm to find a consistent path. This simple constraint drill eliminates many common toss faults by addressing their root cause — poor lower-body mechanics.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

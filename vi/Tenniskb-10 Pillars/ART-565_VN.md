@@ -148,3 +148,10 @@ Sau mỗi pha trả bóng trong tập, lập tức di chuyển đến vị trí 
 - Trả bóng ngắn → di chuyển vào trong
 
 Bài tập này phát triển thói quen di chuyển phục hồi lập tức và giúp bạn tìm vị trí tối ưu sau mỗi loại trả bóng. Đếm gian — mục tiêu dưới 2 giây từ chạm bóng đến tư thế sẵn sàng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

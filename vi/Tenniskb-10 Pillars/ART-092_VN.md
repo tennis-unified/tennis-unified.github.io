@@ -34,3 +34,10 @@ Huấn luyện plyometric phát triển sức mạnh bùng nổ và sức mạnh
 
 ## Ứng Dụng Thực Tế: "Thói Quen Plyometric"
 Thực hiện thói quen plyometric 2 lần mỗi tuần: (1) 3 loạt 5 nhảy hộp, (2) 3 loạt 5 nhảy độ sâu, (3) 3 loạt 5 nhảy ngang mỗi bên, (4) 3 loạt 5 nhảy tư thế mở mỗi bên, (5) 3 loạt 5 ném xoay bóng Y mỗi bên. Tập trung vào thời gian tiếp xúc mặt đất tối thiểu và nỗ lực bùng nổ tối đa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Tập luyện plyometric và chu kỳ SSC*
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Đường Bên: ổn định ngang và lực sang bên*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

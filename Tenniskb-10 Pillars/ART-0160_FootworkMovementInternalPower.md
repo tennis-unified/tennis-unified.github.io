@@ -91,3 +91,10 @@ Before allowing a player to slide in a match on a hard court, run them through t
 3. **Step 3 — Test speed.** Slide at near-match speed (3.0-3.5 m/s) and verify that the slide is controlled and the push-out is clean. Any loss of control means the speed is too high for this surface.
 
 If the player passes all three steps, they can slide in the match. If they fail any step, the slide is off the table — they should shuffle instead.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

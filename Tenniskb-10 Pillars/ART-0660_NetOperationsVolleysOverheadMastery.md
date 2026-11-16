@@ -52,3 +52,10 @@ Beating pushers at the net requires patience, varied shot selection, and the abi
 ## Practical Application: "Punch, Drop, Lob — Repeat"
 
 Against pushers: (1) punch volleys to generate pace, (2) drop volleys to bring them in, (3) lob volleys to push them back. Vary your shot selection and be patient — the pusher wants you to make errors. Do not give them the satisfaction.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

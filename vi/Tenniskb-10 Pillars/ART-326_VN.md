@@ -56,3 +56,10 @@ Việc luyện tập để có điểm chạm ổn định bao gồm rèn luyệ
 ## Ứng Dụng Thực Tế: Bài Tập "Vùng Điểm Chạm"
 
 Đánh dấu một điểm trên sân cách 0,55 m trước vị trí hông phía trước của bạn ở thế đứng thông thường. Nhờ đồng đội ném bóng và luyện tập chạm từng quả bóng ngay phía trên dấu này. Sử dụng một mốc trực quan (nón hoặc vạch băng dính) để kiểm tra độ ổn định điểm chạm của mình. Theo thời gian, hãy phát triển khả năng chạm bóng tại cùng một vị trí không gian bất kể quỹ đạo của quả bóng đến.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

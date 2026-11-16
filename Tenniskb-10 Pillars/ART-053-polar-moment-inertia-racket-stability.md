@@ -40,3 +40,10 @@ When the ball strikes away from the center of the string bed:
 
 ## Practical Application: "The Stability Zone"
 A racket with a higher polar moment of inertia has a larger "stability zone"—the area where off-center hits still produce acceptable results. Players who frequently mis-hit (beginners, defensive players) benefit from higher PMOI rackets. Players who consistently hit the sweet spot (advanced players) may prefer lower PMOI rackets for greater maneuverability.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -56,3 +56,10 @@ Teaching volley technique to juniors requires age-appropriate modifications. Sta
 ## Practical Application: "Make It Fun, Make It Simple"
 
 For junior players, the volley should be fun and simple. Start with the bump volley, use games and rewards, and gradually introduce more complex technique. The goal is to build a lifelong love of net play, not to produce a perfect volley at age 8.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

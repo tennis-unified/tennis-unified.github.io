@@ -34,3 +34,10 @@ status: published
 
 ## Ứng Dụng Thực Tế: "Màn Lọc Tensegrity"
 Thực hiện màn lọc tensegrity đơn giản bằng cách đánh giá: (1) Vận động viên có thể duy trì tư thế tối ưu dưới tải trọng không? (2) Liệu lực có được truyền hiệu quả qua chuỗi động học không? (3) Có đau hoặc chức năng bất thường nào khi chuyển động không? Bất kỳ câu trả lời "không" nào chỉ ra mất cân bằng tensegrity cần được xử lý.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên phân đoạn*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

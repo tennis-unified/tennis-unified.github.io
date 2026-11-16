@@ -99,3 +99,10 @@ Batch 17 equipped the coach and athlete with the diagnostic toolkit for the "Eli
 
 ## Practical Application: "The ER Doctor"
 The Master Problem Solver is the ER Doctor of the 5-Pillar System. Triage (Diagnose). Stabilize (Regulate State). Treat (Matched Protocol). Monitor (Gates). Discharge (Autonomy). Debrief (Learn). **They don't guess. They assess. They don't hope. They monitor. They don't improvise protocols. They execute matched protocols. They don't own the outcome. They own the process.**
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

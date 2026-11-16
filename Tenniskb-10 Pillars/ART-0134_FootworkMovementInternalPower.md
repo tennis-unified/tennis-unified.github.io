@@ -65,3 +65,10 @@ The screw's value is entirely in its sequencing:
 ## Practical Application: "Wind the Hip, Not the Foot"
 
 Give the player one sentence: **the foot is the nut, the pelvis is the bolt — turn the bolt.** At the next session, spend five minutes on the winding wall drill: outside foot planted near a wall, one hand on the wall for balance, ten slow pelvis rotations away from the planted foot until the deep buttock stretch is unmistakable. Then take the racket: ten open-stance shadow forehands at half speed with the coach watching only two things — the shoe (still) and the kneecap (stacked over the toes). Only then hit fed balls, feeling for the sensation that the hip is wound before every swing. Within a single session, most players report the forehand "goes by itself" — the signature of a screw that is finally being wound before it is fired.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+<!-- TAICHIKB-CROSSREF-END -->

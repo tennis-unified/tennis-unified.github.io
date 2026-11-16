@@ -41,3 +41,10 @@ Three failure modes recur. Data anxiety: athletes who check recovery scores comp
 
 ## Practical Application: "The Data Is a Compass, Not a Coach"
 Wearables answer one question well — "how is this athlete responding?" — and one question poorly, namely "what should we do?" Let the morning readiness trend shape whether today is a hard or easy day, let the stroke counts shape how steeply you progress, and let the sleep log start conversations you would otherwise never have. But the plan itself still comes from coaching judgment. Act on trends, ignore single data points, and never let a wrist score overrule how the athlete actually feels, moves, and performs.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

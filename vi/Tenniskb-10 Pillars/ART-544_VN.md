@@ -117,3 +117,10 @@ Giao bóng nhanh nhất từng được ghi nhận trong bất kỳ bối cảnh
 - **Chuyên nghiệp:** Đạt 15+ ace trong trận; duy trì tỷ lệ giao bóng đầu 65%+
 
 Theo dõi tiến trình hướng tới các mốc này theo thời gian. Dù bạn có thể không đạt được kỷ lục của Isner hay Serena, nhưng việc đạt kỷ lục cá nhân cũng đầy thỏa mãn và cung cấp động lực để tiếp tục cải thiện.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

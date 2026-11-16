@@ -32,3 +32,10 @@ Huấn luyện bóng Y là một trong những phương pháp hiệu quả nhấ
 
 ## Ứng Dụng Thực Tế: "Thói Quen Bóng Y"
 Thực hiện thói quen bóng Y 2-3 lần mỗi tuần: (1) 10 ném xoay đứng mỗi bên, (2) 10 ném xoay tư thế mở mỗi bên, (3) 10 đập xuống trên đầu, (4) 10 đẩy ngực xoay mỗi bên. Thói quen 10 phút này phát triển sức mạnh xoay chuyển giao trực tiếp đến cú đánh tennis của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -57,3 +57,10 @@ Another effective drill is angle awareness training: place a cone at the interse
 ## Practical Application: "Stand Where the Math Says"
 
 Experiment with return positioning by standing three feet behind the baseline on first serves and two feet inside on second serves. Track which position allows you to make more returns in the court and produce deeper replies. Adjust based on your opponent's serve speed and spin. The geometric sweet spot is where you can reach both the wide and body serve without lunging.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

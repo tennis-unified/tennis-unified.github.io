@@ -162,3 +162,10 @@ Huấn luyện mô phỏng mẫu làm-nghỉ của tennis:
 
 ## Ứng Dụng Thực Tế: "Bài Kiểm Tra Set Ba"
 Theo dõi mệt mỏi của chính bạn bằng cách theo dõi tốc độ serve qua các set. Ở set đầu, ghi nhận tốc độ serve trung bình (bạn có thể ước lượng bằng cách đếm ace và điểm serve, hoặc dùng súng radar nếu có). Ở set hai, chú ý xem bạn có cảm thấy cùng đạp chân serve không. Đến set ba, kiểm tra lại: tốc độ serve có giảm không? Hầu hết vận động viên trải qua giảm 5-15%. Để chống lại điều này, hãy tập "serve set ba": sau một tập luyện chăm chỉ, ngay lập tức tập serve như thể bạn đang ở set ba. Tập trung duy trì cùng độ sâu cong gối, cùng cường độ đạp chân, và cùng lực đẩy ra bất kể bạn cảm thấy mệt mỏi đến đâu. Kỷ luật tinh thần này — duy trì chất lượng kỹ thuật dưới mệt mỏi — quan trọng không kém điều kiện hóa thể chất. Ngoài ra, huấn luyện khả năng sprint lặp bằng cách thực hiện 10 × 20 mét sprint với 30 giây nghỉ giữa mỗi lần. Đo thời gian mỗi sprint và ghi nhận tốc độ của bạn giảm bao nhiêu qua 10 nỗ lực. Nếu sprint cuối chậm hơn 15% sprint đầu, bạn cần thêm huấn luyện đặc thụ bền. Khả năng duy trì tạo GRF dưới mệt mỏi là gì phân biệt vận động viên mờ nhạt ở set ba với người kết thúc mạnh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Động lực học tuyến tính, GRF và xung lượng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

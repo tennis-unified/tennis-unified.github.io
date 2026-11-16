@@ -79,3 +79,10 @@ Người chơi cấp câu lạc bộ thường làm đứt xoắn ốc theo nh�
 ## Ứng Dụng Thực Tế: "Vắt Chiếc Khăn"
 
 Hình ảnh huấn luyện hiệu quả nhất cho lực thắt kình: **tưởng tượng vắt nước từ chiếc khăn ướt.** Chuyển động xoắn — một tay xoay chiều kim đồng hồ, tay kia xoay ngược chiều — chính xác là xoắn ốc xảy ra trong groundstroke: cơ thể dưới mở ra một hướng trong khi cơ thể trên mở ra hướng kia, và lực chảy qua kết nối giữa chúng. Ở buổi tập tiếp theo, hãy để người chơi cầm một chiếc khăn thực tế và thực hành chuyển động vắt cho đến khi xoắn ốc cảm giác tự nhiên. Sau đó dịch cảm giác tương tự vào shadow groundstroke. Vợt trở thành phần mở rộng của xoắn ốc, và quả bóng bị đánh không phải bởi tay nhưng bởi toàn bộ cơ thể mở ra qua chuỗi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

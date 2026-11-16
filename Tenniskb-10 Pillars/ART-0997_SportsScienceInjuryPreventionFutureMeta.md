@@ -119,3 +119,10 @@ The social component of tennis — regular social interaction, competitive engag
 ## Practical Application: "The 20-Year Career Plan"
 
 Tennis players should design their careers with longevity in mind from the outset. In the **early career phase** (ages 16-22): prioritize movement quality over competitive results, establish foundational strength and flexibility habits, and learn recovery basics. In the **prime phase** (ages 23-30): optimize nutrition for inflammation management, invest in recovery technologies, and develop mental performance skills. In the **veteran phase** (ages 31-38+): shift to selective scheduling, increase recovery-to-training ratio from 1:3 to 1:1, implement quarterly regenerative medicine treatments, and begin developing post-careen interests. For recreational players, the message is equally clear: tennis is one of the best investments in long-term health you can make. A lifelong tennis habit — even at moderate intensity — adds nearly a decade to life expectancy while preserving cognitive function, joint mobility, and social connection. The players extending their careers into their late 30s and 40s are not anomalies — they are pioneers demonstrating what is possible when sports science, nutrition, and recovery technology converge.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+<!-- TAICHIKB-CROSSREF-END -->

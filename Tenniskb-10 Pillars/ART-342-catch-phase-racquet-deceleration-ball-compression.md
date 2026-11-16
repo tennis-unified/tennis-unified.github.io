@@ -62,3 +62,10 @@ To minimize racquet deceleration during the catch phase:
 ## Practical Application: "The Catch Feel"
 
 Practice hitting foreballs with conscious awareness of the catch phase. Focus on the feeling of the ball "catching" on the strings—the brief compression and rebound. Try to minimize the deceleration you feel by maintaining your acceleration through contact. The goal is a feeling of the ball "jumping" off the racquet rather than being "caught" by it.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Dynamic balance & directional control*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

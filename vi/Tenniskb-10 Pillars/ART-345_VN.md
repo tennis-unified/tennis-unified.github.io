@@ -70,3 +70,10 @@ Người chơi ưu tiên xoáy (người dùng cầm tay western) thường ưa 
 ## Ứng Dụng Thực Tế: "Cảm Giác Dây Vợt"
 
 Chú ý đến cảm giác của bóng trên dây trong quá trình tiếp xúc. Vợt được căng dây tốt với độ căng phù hợp tạo ra cảm giác bóng "vào hệ thống lưới" và sau đó "phóng" ra ngoài. Vợt có dây chết tạo ra cảm giác bóng "chết" trên dây với bật về tối thiểu. Sử dụng phản hồi này để đánh giá thiết lập dây vợt của bạn và điều chỉnh khi cần.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

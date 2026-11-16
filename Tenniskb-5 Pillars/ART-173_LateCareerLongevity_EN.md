@@ -104,3 +104,10 @@ The "Veteran" is not a fading star; it is a distinct biological and strategic ph
 
 ## Practical Application: "The Vintage Car"
 You don't drive a 1960s Ferrari like a rental Toyota. You warm it up for 30 minutes. You shift with mechanical sympathy. You store it in a climate-controlled garage. You use the highest octane fuel. You accept it won't do 0-60 in 3 seconds anymore — but it corners with a precision the Toyota never will. **Respect the machine. Drive it with wisdom.**
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 19: Thấu hiểu cơ học-thích-nghi của mô mạc: Ứng dụng vào y học thể thao — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch19-thau-hieu-co-hoc-thich-nghi-cua-mo-mac-ung-dung-vao-y-hoc-the-th.html) — *Adaptive mechanobiology & injury prevention*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

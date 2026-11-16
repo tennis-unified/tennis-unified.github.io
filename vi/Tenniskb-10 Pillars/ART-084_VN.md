@@ -51,3 +51,10 @@ Căn chỉnh tư thế tối ưu là nền tảng của chuyển động tennis 
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Tư Thése"
 Trước mỗi điểm, thực hiện kiểm tra tư thế nhanh: chân ngang vai, gối khum, trọng lượng về trước, thân thẳng, vai thư giãn. Kiểm tra đơn giản này đảm bảo bạn ở tư thế sẵn sàng tối ưu để di chuyển và cú đánh hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Thăng bằng động và kiểm soát hướng*
+<!-- TAICHIKB-CROSSREF-END -->

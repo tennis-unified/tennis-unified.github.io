@@ -47,3 +47,10 @@ Công thức có trách nhiệm coi VR là 10-20% của tuần tập luyện, t�
 ## Ứng Dụng Thực Tế: "Thấy Trước Khi Chơi"
 
 Sử dụng thực tế ảo theo cách phi công sử dụng máy bay mô phỏng: không để thay thế bay, nhưng để làm cho giờ trên không rẻ hơn và thông minh hơn. Hai hoặc ba phiên VR ngắn mỗi tuần, mỗi phiên với một mục tiêu nhận thức hoặc chiến thuật, ứng dụng ngay lập tức trên sân chống lại người serve trực tiếp, sẽ làm nhiều cho trò chơi trả bóng hơn bất kỳ lượng xem video thụ động nào. Biên giới tiếp theo của tập luyện quần vợt không phải là máy swing vợt cho bạn — đó là máy dạy mắt và quyết định của bạn trong khi cơ thể phục hồi cho công việc mà chỉ sân thực tế mới có thể cung cấp.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -134,3 +134,10 @@ Hãy tưởng tượng cơ thể bạn như mạng nhện — mạng lưới dâ
 | Ổn định khớp dưới tải | Khớp căn chỉnh tốt | Khớp dao động/hụt | Tăng lực cơ ổn định, bản thể cảm giác |
 | Đối xứng lực hai bên | Cân bằng ±10% | Chênh > 15% | Tập đơn phương, sửa bất đối xứng |
 | Phản ứng cho perturbation | Khôi phục nhanh | Mất cân bằng lâu | Huấn luyện mặt không ổn định, bài tập phản xạ |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên phân đoạn*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

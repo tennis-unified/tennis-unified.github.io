@@ -60,3 +60,10 @@ Não lưu ba loại kiến thức mặt sân:
 
 ## Ứng Dụng Thực Tế: "La Bàn Thích Ứng Mặt Sân"
 Thích ứng mặt sân là la bàn giữ bạn di chuyển đến đích. Không có thích ứng mặt sân, bạn chỉ đang chạy vòng tròn; có thích ứng mặt sân, bạn đang chạy để chiến thắng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+<!-- TAICHIKB-CROSSREF-END -->

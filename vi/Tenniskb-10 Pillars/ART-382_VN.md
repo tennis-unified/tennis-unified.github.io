@@ -71,3 +71,10 @@ Việc luyện tập bao gồm:
 ## Ứng Dụng Thực Tiễn: "Cú Kết Thúc Phẳng"
 
 Thực hành forehand phẳng như một cú đánh kết thúc: khi đối tác đánh bóng ngắn và yếu, bước vào và đánh forehand phẳng với tốc độ tối đa về phía sân trống. Tập trung vào đường vung ngang và cảm nhận bóng "lao" ra khỏi vợt với lượng xoáy tối thiểu. Sử dụng cú đánh này một cách tiết kiệm để duy trì hiệu quả như một vũ khí bất ngờ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

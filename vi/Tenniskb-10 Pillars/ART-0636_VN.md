@@ -60,3 +60,10 @@ Volley đẩy bóng kiểu bóng chuyền là điểm khởi đầu lý tưởng
 ## Ứng Dụng Thực Tế: "Đẩy Bóng Về Đích"
 
 Volley đẩy bóng kiểu bóng chuyền giống như cách hứng bóng chuyền — đơn giản, đáng tin cậy và hiệu quả. Giữ vợt phía trước, bước về phía bóng và đẩy bóng ngang qua lưới. Đừng suy nghĩ quá nhiều. Cú đánh càng đơn giản, nó càng trở nên ổn định.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

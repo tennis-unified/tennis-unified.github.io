@@ -157,3 +157,10 @@ Cấu trúc buổi tập giao bóng hàng tuần của bạn theo hình tháp:
 - **Đỉnh (20% thời gian):** Mô phỏng áp lực và mẫu chiến lược
 
 Hình tháp này đảm bảo bạn xây dựng nền tảng vững chắc trước khi chuyển sang công việc nâng cao, và ngăn ngừa sai lầm phổ biến là chỉ tập luyện dưới áp lực mà không có kỹ năng cơ bản để thực hiện.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

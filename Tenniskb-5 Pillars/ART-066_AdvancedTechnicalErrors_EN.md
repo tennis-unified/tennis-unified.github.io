@@ -51,3 +51,10 @@ Advanced technical errors require a systematic approach to correction:
 
 ## Practical Application: The "Complete Technical Producer"
 The athlete should feel that they are "complete" and integrated with the 5-Pillar System. The athlete should feel that the biomechanical, neurological, and tactical systems are working together in harmony. This is the ultimate goal of the 5-Pillar System: to create a complete, integrated athlete who performs effortlessly at their peak potential.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Technical errors, overload & injury prevention*
+- [Chương 5: Hệ thống vận động chức năng và các mẫu vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch05-he-thong-van-dong-chuc-nang-va-cac-mau-van-dong.html) — *Movement pattern dysfunction & stroke compensation*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Elbow & wrist overload mechanics (tennis elbow)*
+<!-- TAICHIKB-CROSSREF-END -->

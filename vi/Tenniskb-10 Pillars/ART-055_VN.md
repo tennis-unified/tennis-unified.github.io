@@ -59,3 +59,10 @@ status: published
 
 ## Ứng Dụng Thực Tế: "Cảm Giác Cân Bằng"
 Cầm vợt ở cổ (nơi đầu vợt gặp thân) và để nó cân bằng ngang. Nếu tay cầm rơi trước, vợt của bạn nặng đầu. Nếu đầu vợt rơi trước, vợt của bạn nhẹ đầu. Điểm cân bằng ảnh hưởng đến cảm giác vợt khi vung: vợt nặng đầu cảm thấy mạnh nhưng chậm chạp; vợt nhẹ đầu cảm thấy nhanh nhưng kém chắc chắn. Chọn cân bằng phù hợp với lối chơi và sức mạnh tay của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

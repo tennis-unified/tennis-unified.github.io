@@ -147,3 +147,10 @@ Research shows:
 | Slow recovery after matches | Insufficient recovery protocols | Cumulative fatigue | Active recovery immediately post-match; between-match sessions |
 | Poor flexibility and range of motion | Insufficient mobility work | Reduced stroke quality, injury risk | Daily mobility routine; yoga; foam rolling |
 | Mental fatigue and stress | Insufficient psychological recovery | Reduced motivation, burnout | Yoga, meditation, light activities that promote relaxation |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+<!-- TAICHIKB-CROSSREF-END -->

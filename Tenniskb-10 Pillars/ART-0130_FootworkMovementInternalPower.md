@@ -74,3 +74,10 @@ Without motion-capture equipment, coaches can use two practical methods:
 ## Practical Application: "Spin Like a Drill, Not Like a Top"
 
 The coaching image: **rotate like a drill bit, not like a spinning top.** A drill bit spins around a fixed axis, cutting cleanly through the material. A spinning top wobbles as it slows, scattering energy in all directions. At the next session, have the player perform 10 shadow groundstrokes while focusing on one thing only: keeping the head perfectly still. Not the arms, not the hips — just the head. A still head means a stable axis, and a stable axis means all the rotational energy goes into the shot. Then introduce fed balls and maintain the same head-stillness. The player who spins like a drill hits harder, more consistently, and with better balance.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

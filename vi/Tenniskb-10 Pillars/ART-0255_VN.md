@@ -52,3 +52,10 @@ Xây dựng mẩu một cách có chủ đích bằng cách liên kết các m�
 
 ## Ứng Dụng Thực Tế: "Thư Viện Mô Hình"
 Xây dựng một "thư viện mô hình" cá nhân bằng cách nghiên cứu video các trận đấu tennis và xác định các mô hình phổ biến. Với mỗi mô hình, tạo một mẩu mã hóa chuỗi, bối cảnh điển hình, và phản ứng tối ưu. Xem lại thư viện này thường xuyên và thêm mô hình mới khi bạn gặp chúng. Theo thời gian, thư viện này trở thành công cụ mạnh mẽ để nhận diện mô hình nhanh chóng và ra quyết định chiến thuật, cho phép bạn xử lý các tình huống phức tạp với hiệu quả của chuyên gia.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -58,3 +58,10 @@ Elite players perceive the contact zone as an integrated volume rather than thre
 ## Practical Application: "The Three-Dimensional Awareness"
 
 During practice, consciously monitor all three dimensions of your contact point. After each shot, ask yourself: (1) Was the contact point the right distance in front? (2) Was it the right distance to the side? (3) Was it the right height? This three-dimensional awareness helps you identify which dimension needs adjustment and develop the ability to control all three simultaneously.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Mindfulness & flow state in sport*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

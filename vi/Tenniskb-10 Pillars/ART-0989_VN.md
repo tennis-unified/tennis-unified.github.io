@@ -47,3 +47,10 @@ Phân phối hợp lý cho tay vợt thi đấu: công việc kỹ thuật mới
 ## Ứng Dụng Thực Tế: "Thực Hành Xấu Xí, Chơi Đẹp Đẽ"
 
 Ôm nghịch lý có mục đích. Làm cho thực hành khó hơn trận đấu — nạp không thể dự đoán, quyết định thực, hậu quả trên dòng — và chấp nhận lỗi như học phí của sự bền. Nếu các phiên của bạn trông lộn xộn và trận đấu trông sạch sẽ, sự cân bằng là đúng. Và khi một huấn luyện viên chống lại cám dỗ sửa mỗi swing, họ không lười; họ để cơ chế học tập sâu hơn làm công việc mà một trăm quả bóng rổ hoàn hảo sẽ không bao giờ làm.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -211,3 +211,10 @@ Tạo lịch trình ngày thi đấu chi tiết:
 | Mệt mỏi ở các vòng sau | Quy trình phục hồi kém, không đủ ngủ | Giảm hiệu suất ở tứ kết và vòng sau | Triển khai quy trình phục hồi tiêu chuẩn; ưu tiên giấc ngủ |
 | Lo lắng và bồn chồng vào ngày thi đấu | Không có quy trình ngày thi đấu ổn định | Giảm hiệu suất, lỗi tinh thần | Phát triển và diễn tập quy trình ngày thi đấu nhất quán |
 | Vấn đề thiết bị trong giải đấu | Chuẩn bị kém, thiếu vật tư | Phiền nhiễu, giảm hiệu suất | Tạo và theo danh sách kiểm tra thiết bị toàn diện |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -51,3 +51,10 @@ Arm-dominant stroke patterns—where the arm generates most of the racket head s
 
 ## Practical Application: "The 70/30 Rule"
 In an optimal stroke, the lower body and trunk generate approximately 70% of the racket head speed, and the arm generates approximately 30%. If your arm is generating more than 30%, you are arm-dominant. Focus on increasing the contribution of your legs, hips, and trunk until the ratio approaches 70/30.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

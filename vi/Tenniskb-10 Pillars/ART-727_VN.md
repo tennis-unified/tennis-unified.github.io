@@ -49,3 +49,10 @@ Người chơi nên tập giao bóng lên lưới khi hình học đè lên an t
 
 ## Ứng Dụng Thực Tế: "Giao Và Lao Lưới Không Sợ"
 Triển khai giao bóng lên lưới khi hình học đè lên an toàn đường baseline bằng cách cam kết chiến thuật cho một set tập hoàn chỉnh. Theo dõi có bao nhiêu điểm bạn thắng bằng khuôn mẫu so với cách tiếp cận mặc định. Nếu chiến thuật thắng nhiều hơn 55% điểm, tích hợp nó vào kho chiến thuật thường xuyên. Nếu thắng ít hơn, phân tích tại sao: phải chăng do thực hiện của bạn, điều chỉnh của đối thủ hay thời điểm kém? Tinh chỉnh chiến thuật dựa trên phân tích này trước trận đấu tiếp theo.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

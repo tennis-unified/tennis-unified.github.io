@@ -30,3 +30,10 @@ Amateur servers often try to "push" the racket up and forward.
 
 ## Practical Application: The "Screwdriver" Sensation
 The long-axis rotation should feel like turning a screwdriver very quickly. The arm doesn't move in a wide circle; it spins on its own axis. Feel the "spin" in the upper arm to unlock the elite serve speed.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Serve biomechanics & long-axis rotation*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Glenohumeral internal/external rotation mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Upper extremity long-axis rotation*
+<!-- TAICHIKB-CROSSREF-END -->

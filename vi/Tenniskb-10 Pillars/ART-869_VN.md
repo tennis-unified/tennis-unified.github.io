@@ -207,3 +207,10 @@ Vận động ngực kém ép buộc vai và lower back bù đắp, tăng nguy c
 | Scapular dyskinesis | Mất cân bằng cơ scapular | Cơ chế vai thay đổi, giảm sức mạnh | Bài ổn định scapular (I-T-Y raises, wall slides, rows) |
 | Mất xoay trong | Thay đổi thích nghi từ giao bóng lặp lại | Đau vai, giảm phạm vi chuyển động | Chương trình quản lý GIRD; giãn sleeper; quy trình stretching |
 | Cứng ngực | Tư thế kém, vận động không đủ | Áp lực bù đắp vai và lower back | Bài vận động ngực; foam roller extension; bài xoay |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+<!-- TAICHIKB-CROSSREF-END -->

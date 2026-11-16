@@ -60,3 +60,10 @@ Players who struggle with racket head speed often benefit from drills that empha
 
 ## Practical Application: "The Speed Check"
 During practice, have a partner observe your backhand swing and rate your racket head speed on a scale of 1-10. Focus on generating speed through the kinetic chain, not just the arm. If your speed is below a 7, identify which segment of the chain is weak and drill it specifically. Track progress over sessions to ensure racket head speed is improving.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

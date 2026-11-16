@@ -28,3 +28,10 @@ Amateur players often try to rotate their whole body as a single unit (the "bloc
 
 ## Practical Application: The "Whip" Sensation
 The micro-stop should be felt as a "pulse" in the core. It is the moment where you feel the tension in your chest reach its maximum just before the arm is released.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Braking impulse & deceleration kinetics*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch03.html) — *Deceleration & stopping kinematics*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Segmental deceleration and distal whip lag*
+<!-- TAICHIKB-CROSSREF-END -->

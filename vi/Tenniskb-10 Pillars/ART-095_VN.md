@@ -49,3 +49,10 @@ Lực phản xạ — khả năng chuyển đổi nhanh chóng từ hành độn
 
 ## Ứng Dụng Thực Tế: "Thử Thách Thời Gian Tiếp Xúc"
 Đo thời gian tiếp xúc mặt đất trong các bài tập plyometric bằng đồng hồ bấm giờ hoặc tấm tiếp xúc. Nhắm đến thời gian tiếp xúc dưới 200 mili giây. Nếu thời gian tiếp xúc của bạn lâu hơn, bạn không tận dụng hiệu quả chu kỳ kéo - co. Hãy tập trung "bật" khỏi mặt đất thay vì "đẩy" khỏi mặt đất — sự khác biệt chính là lực phản xạ mà chu kỳ kéo - co cung cấp.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Tập luyện plyometric và chu kỳ SSC*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Cơ học co cơ: lệch tâm/đồng tâm và lực–vận tốc*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

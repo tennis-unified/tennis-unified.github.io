@@ -65,3 +65,10 @@ The player's interpretation of anxiety determines its impact. Players who interp
 
 ## Practical Application: "The Anxiety Reframe"
 When you notice competitive anxiety activating, perform an anxiety reframe: (1) acknowledge the physical sensations (racing heart, tension), (2) relabel the sensations as excitement rather than anxiety, (3) reinterpret the arousal as preparation for peak performance ("my body is getting ready to play"), (4) focus on the process of the next shot rather than the outcome. This reframe transforms the anxiety response from a performance disruptor into a performance enhancer, using the energy of arousal to fuel focused, aggressive play.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+<!-- TAICHIKB-CROSSREF-END -->

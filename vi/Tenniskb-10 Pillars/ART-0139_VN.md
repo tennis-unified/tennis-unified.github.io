@@ -58,3 +58,10 @@ Phân biệt mà mọi huấn luyện viên phải vẽ được:
 ## Ứng Dụng Thực Tế: "Gập Khớp, Không Gập Cột Sống"
 
 Cho người nhận một câu: **bóng đẩy bạn lại qua các khớp của bạn, không bao giờ qua lưng bạn.** Mở buổi tập bằng bóng y tế hứng-nhỏ giọt — mười lần ném chắc tay được hứng và giảm tốc theo hướng cú đánh, thân tĩnh — cho đến khi nhượng bước có trình tự trở nên có chủ đích. Sau đó chạy thang tốc độ từ 50% đến tối đa, mỗi bóng chặn vào mục tiêu sâu, huấn luyện viên chỉ quan sát cột sống: cao qua tiếp xúc hay không. Kết thúc bằng kiểm tra đóng băng trên ba cú trả lời tốc độ tối đa: người chơi thấy gối mình gập mà chiều cao đầu giữ nguyên. Người chơi có thể hấp thụ bóng nặng với cột sống yên tĩnh đã biến vũ khí lớn nhất của đối thủ thành tốc độ mượn — hình thức phản công thầm lặng nhất trong môn thể thao này.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -86,3 +86,10 @@ Trong buổi tập tiếp theo, dạy kỹ thuật neo trong ba bước:
 2. **Chuyển giao.** Cho người chơi đứng ở tư thế chuẩn bị và tái tạo cùng sự phồng bụng dưới. Tay vẫn đặt trên bụng dưới làm quy chiếu. Người chơi nên cảm nhận bụng dưới nở ra mọi hướng — không chỉ về trước, mà sang hai bên và về sau (vào cột sống thắt lưng). Tập 10 hơi thở đứng. Hầu hết ban đầu sẽ thở ngực khi đứng; tín hiệu tay-trên-bụng giúp họ tìm mẫu cơ hoành.
 
 3. **Tích hợp.** Người chơi thực hiện 10 cú giao bóng không bóng với trình tự neo: hít và phồng khi tung bóng, nín qua cú đẩy và tiếp xúc, thở ra ở cú vung theo. Rồi 10 cú giao bóng thật. Rồi 10 cú nền với neo pha bóng (phồng khi đối thủ vung ra sau, nín qua tiếp xúc, thả ở cú vung theo). Sau 2-3 buổi, neo trở thành tự động và người chơi không cần tín hiệu tay-trên-bụng. Kết quả là mức tăng đo được trong ổn định thắt lưng (người chơi báo cáo cảm thấy "vững hơn" khi giao bóng), giảm căng thắt lưng sau khi chơi, và một điểm quy chiếu vật lý cho tổ chức mọi chuyển động sức mạnh nội bộ — neo như nền của hệ nội bộ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

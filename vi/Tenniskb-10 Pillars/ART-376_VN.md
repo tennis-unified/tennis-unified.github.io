@@ -73,3 +73,10 @@ Tốc độ xoáy được đo bằng camera tốc độ cao theo dõi vòng qua
 ## Ứng Dụng Thực Tiễn: "Cảm Giác Xoáy"
 
 Phát triển nhận thức về sản sinh xoáy bằng cách chú ý đến cảm giác vợt chà lên qua điểm chạm. Một cú đánh xoáy cao tạo ra cảm giác "chà" rõ rệt, với lưới vợt bám vào bóng và truyền chuyển động quay. Thực hành thay đổi cường độ của động tác chà này để phát triển khả năng kiểm soát tốc độ xoáy.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -233,3 +233,10 @@ Before the first official tournament, verify all readiness criteria:
 | Injury in first tournament | Insufficient physical preparation during pre-season | Time lost, disrupted season | Ensure fitness benchmarks are met before competition; gradual intensity increase |
 | Tactical plans not working in matches | Insufficient practice match testing | Ineffective tactics, frustration | Increase practice match volume; test all tactical plans before season |
 | Low confidence at season start | Insufficient preparation, poor practice match results | Hesitation, reduced aggression | Build confidence through preparation quality; highlight improvements |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -56,3 +56,10 @@ Training for contact point consistency involves developing the footwork patterns
 ## Practical Application: "The Contact Zone Drill"
 
 Mark a spot on the court 0.55m in front of where your front hip would be in your normal stance. Have a partner feed balls and practice contacting each ball directly above this mark. Use a visual reference (a cone or tape mark) to check your contact point consistency. Over time, develop the ability to contact the ball in the same spatial location regardless of the incoming ball's trajectory.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+<!-- TAICHIKB-CROSSREF-END -->

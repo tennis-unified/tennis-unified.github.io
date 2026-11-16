@@ -84,3 +84,10 @@ During deceleration, the lateral sling:
 
 ## Practical Application: "The Lateral Wall"
 Imagine there is a wall on each side of your body that you must not touch during tennis movements. The lateral sling is what keeps you from falling into these walls. Practice this by performing single-leg balance exercises on your lateral movement side, feeling your gluteus medius working to keep your pelvis level. Then perform open-stance groundstrokes, focusing on maintaining pelvic height throughout the stroke. The feeling of lateral stability—of not collapsing toward the lateral side—is the lateral sling working. When this sling is strong and coordinated, your open-stance strokes become more powerful and your lateral movement more efficient.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Lateral Line: lateral stability & mediolateral force*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

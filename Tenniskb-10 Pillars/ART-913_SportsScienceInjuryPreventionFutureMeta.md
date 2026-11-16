@@ -45,3 +45,10 @@ During your next practice session, focus intensely on the feeling of pushing the
 
 ## Practical Application: "Push the Court Away"
 During your next practice session, focus intensely on the feeling of pushing the court away from you with every step. On your serve, exaggerate the feeling of driving your legs into the ground and imagine the court pushing you upward. During groundstrokes, consciously push hard through your front foot on open stance forehands. Track your vertical jump height as a proxy for lower body force production improvements. Incorporate heavy squats and Olympic lifts into your strength program, and include plyometric bounding exercises to develop rate of force development. The harder you can push against the ground, the faster and more powerfully you will move.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Linear kinetics, GRF & impulse-momentum*
+<!-- TAICHIKB-CROSSREF-END -->

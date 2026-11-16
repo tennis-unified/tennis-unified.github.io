@@ -44,3 +44,10 @@ Sử dụng điều chỉnh nhịp độ, dinh dưỡng, hydrat, và chiến lư
 
 ## Ứng Dụng Thực Tế: "Giao Thức Mệt Mỏi"
 Khi nhận ra mệt mỏi đang ảnh hưởng đến ra quyết định, kích hoạt giao thức mệt mỏi: (1) đơn giản hóa kế hoạch trận thành một chiến thuật rõ ràng, (2) mặc định dùng cú đánh tỷ lệ thành công cao nhất, (3) sử dụng thói quen trước điểm để cấu trúc mỗi điểm, (4) tập trung vào quá trình thay vì kết quả, và (5) dùng chiến lược phục hồi (uống nước, thở) giữa các điểm. Giao thức này bù trừ cho sự suy giảm ra quyết định do mệt mỏi gây ra và duy trì chất lượng hiệu suất ngay cả khi bạn mệt mỏi thể chất và tinh thần.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

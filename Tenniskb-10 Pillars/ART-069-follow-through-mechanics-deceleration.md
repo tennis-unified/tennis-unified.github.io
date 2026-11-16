@@ -34,3 +34,10 @@ The follow-through is not merely a cosmetic finish—it serves critical biomecha
 
 ## Practical Application: "The Finish"
 Don't cut your follow-through short—let it extend naturally after contact. A full, relaxed follow-through protects your arm and provides feedback on your stroke quality. If your follow-through feels forced or abrupt, you may be decelerating too quickly, which increases injury risk. Practice by performing groundstrokes and focusing on a smooth, relaxed follow-through that extends naturally to its finish position.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Dynamic balance & directional control*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -122,3 +122,10 @@ Theo dõi sự cải thiện tính linh hoạt hàng tháng:
 | Giảm sức mạnh sau giãn trước trận | Giãn cơ tĩnh trước hoạt động | Giảm tốc độ giao bóng | Chuyển giãn cơ tĩnh sang hạ nhiệt; sử dụng khởi động động trước hoạt động |
 | Căng cơ mãn tính | Hạ nhiệt không đủ, phục hồi kém | Cứng, đau, giảm tính linh hoạt | Giãn cơ tĩnh sau trận; xe lăn bọt xốp; massage |
 | Bình nguyên tính linh hoạt | Tần suất hoặc thời lượng giãn không đủ | Không cải thiện phạm vi chuyển động | Tăng tần suất giãn; giữ lâu hơn; thêm giãn PNF |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Hệ cơ: nhóm cơ chủ vận và ổn định*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

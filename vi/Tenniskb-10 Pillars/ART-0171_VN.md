@@ -43,3 +43,10 @@ Một phiên phủ tái mạch bản đồ phục hồi:
 1. **Vẽ ba phân đoạn.** Cho độ sâu sâu, đường giao bóng và giữa sân, phủ cung trả và phân đoạn của nó trên nửa sân người chời.
 2. **Ghép và kết thúc.** Cú đánh được gọi — chéo, dọc, ngắn — mỗi cú tiếp theo bằng phục hồi đến dòng đúng, đóng băng tiếng còi HLV.
 3. **Thang bóng tố.** Trò chơi một điểm nơi quy tắc duy nhất là nguyên lý bóng tố: phục hồi người chời phải phản chiếu hướng cú đánh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+<!-- TAICHIKB-CROSSREF-END -->

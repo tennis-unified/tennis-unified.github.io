@@ -56,3 +56,10 @@ Cơ chế windlass là việc siết chặt ligament bàn chân khi ngón chân 
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Bàn Chân"
 Kiểm tra vòng bàn chân bằng cách đứng trần chân và quan sát khoảng cách giữa vòng dọc nội và sàn. Độ cao vòng trung bình (1-2 cm khoảng cách) là lý tưởng. Nếu vòng của bạn phẳng (không có khoảng cách) hoặc rất cao (>2 cm), hãy xử lý rối loạn qua bài tập nhắm mục tiêu và giày phù hợp.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên phân đoạn*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

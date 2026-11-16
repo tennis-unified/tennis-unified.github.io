@@ -81,3 +81,10 @@ The cue: **"Pick a point and stay on it."** During recovery, the eyes are locked
 ## Practical Application: "Stay on the Strap"
 
 At the next session, give the player one instruction: **during every recovery, your eyes stay on the center strap of the net until the ball leaves the opponent's racket.** This single cue — gaze anchoring — improves head stability within minutes, because the fixed visual reference activates the VOR and VCR reflexes that stabilize the head. Film the player from the side before and after the cue. The difference is usually visible: less vertical bob, less lateral sway, and a more "gliding" movement quality. Players who adopt gaze anchoring consistently report "seeing the ball better" — which is exactly what the biomechanics predict: a stable visual platform produces a cleaner retinal image, and a cleaner image produces a faster, more accurate read.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+<!-- TAICHIKB-CROSSREF-END -->

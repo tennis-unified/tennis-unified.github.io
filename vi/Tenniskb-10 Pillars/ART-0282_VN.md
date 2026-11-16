@@ -66,3 +66,10 @@ Theo dõi tiến độ hướng tới mục tiêu. Tiến độ hữu hình duy 
 
 ## Ứng Dụng Thực Tế: "Hệ Thống Phân Cấp Mục Tiêu"
 Tạo hệ thống phân cấp mục tiêu với ba cấp độ: (1) mục tiêu dài hạn (ví dụ: "đạt xếp hạng top 100 vào cuối năm"), (2) mục tiêu ngắn hạn (ví dụ: "thắng 60% điểm giao bóng đầu tiên trong tháng này"), (3) mục tiêu quy trình (ví dụ: "duy trì thói quen trước cú đánh trên mỗi cú giao bóng"). Xem lại hệ thống phân cấp này hàng tuần và điều chỉnh dựa trên tiến độ. Cách tiếp cận có cấu trúc này để đặt mục tiêu cung cấp cả định hướng lẫn động lực, đảm bảo rằng mọi buổi thực hành và trận đấu đều đóng góp vào các mục tiêu có ý nghĩa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

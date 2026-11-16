@@ -109,3 +109,10 @@ Prebiotic là chất xơ không tiêu hóa được nuôi dưỡng vi khuẩn c�
 ## Ứng Dụng Thực Tế: "Quy Trình Hiệu Suất Đường Ruột"
 
 Tay vợt tennis muốn tối ưu hóa hệ vi sinh vật của mình nên áp dụng quy trình ba giai đoạn: (1) **Đánh giá** — sử dụng xét nghiệm hệ vi sinh vật đường ruột thương mại (Viome, Thryve hoặc tương tự) để thiết lập thành phần vi sinh vật cơ sở và xác định sự thiếu hụt; (2) **Can thiệp** — dựa trên kết quả, áp dụng bổ sung probiotic nhắm mục tiêu, tăng đa dạng chất xơ trong chế độ ăn (mục tiêu 30+ loại thực phẩm thực vật khác nhau mỗi tuần) và kết hợp thực phẩm lên men hàng ngày; (3) **Duy trì** — trong thời gian giải đấu, duy trì bổ sung probiotic, giảm sử dụng NSAID và ưu tiên giấc ngủ để hỗ trợ điều hòa nhịp sinh quyền chức năng ruột. Theo dõi các triệu chứng tiêu hóa, tần suất bệnh và tốc độ phục hồi làm chỉ số kết quả. Người chơi cam kết với việc tối ưu hóa sức khỏe đường ruột thường báo cáo ít bệnh hơn, phục hồi nhanh hơn và cải nhận thức rõ ràng hơn trong vòng 6-8 tuần. Hệ vi sinh vật đường ruột không phải là mối quan tâm ngoại vi — nó là một hệ thống hiệu suất trung tâm mà tay vợt tennis giờ đây không còn thể coi nhẹ được.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

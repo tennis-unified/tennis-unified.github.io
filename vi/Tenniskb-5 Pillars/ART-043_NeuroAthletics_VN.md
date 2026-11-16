@@ -34,3 +34,10 @@ Hệ tiền đình trong tai trong cung cấp cho não thông tin về vị trí
 
 ## Ứng Dụng Thực Tế: "Tâm Trí Dự Đoán"
 Vận động viên không nên nghĩ về việc "đánh quả bóng" mà là "giao cắt một quỹ đạo". Não phải được huấn luyện để dự đoán nơi quả bóng sẽ đến, không phải nơi nó đang ở. Sự tập trung dự đoán này cho phép chuỗi động học khởi động chuyển động sớm hơn, tạo ra một cú đánh mượt mà và mạnh mẽ hơn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Giác quan đặc biệt: thị giác và theo dõi chuyển động*
+- [Chương 14: Não và Các Dây Thần Kinh Sọ (The Brain and Cranial Nerves)](https://taichikb.github.io/vi/books/tortora_ap/ch14-nao-va-cac-day-than-kinh-so.html) — *Não bộ và dây thần kinh sọ điều khiển vận nhãn*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kiểm soát chú ý trong thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

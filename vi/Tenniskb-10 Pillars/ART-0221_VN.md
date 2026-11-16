@@ -51,3 +51,10 @@ Từng bước tiếp xúc với áp lực thi đấu trong luyện tập. Bắt
 ## Ứng Dụng Thực Tế: "Mặc Định Hai Phương Án"
 
 Dưới áp lực, hãy mặc định áp dụng khung quyết định hai phương án. Trước khi bóng đến, nhanh chóng xác định cú đánh tốt nhất và cú đánh an toàn nhất của bạn. Nếu bóng rơi vào vùng đánh lý tưởng, hãy đánh cú tốt nhất. Nếu bóng rơi ngoài vùng đó, hãy đánh cú an toàn nhất. Khung quyết định kép này giảm độ phức tạp khi ra quyết định dưới áp lực và ngăn chứng tê liệt vì phân tích - nguyên nhân dẫn đến việc chọn cú đánh kém khi tình huống trở nên quan trọng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

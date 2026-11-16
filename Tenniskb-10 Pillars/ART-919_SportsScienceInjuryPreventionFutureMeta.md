@@ -49,3 +49,10 @@ If you are traveling to a tournament in a hot climate, arrive at least 7-10 days
 
 ## Practical Application: "Beat the Heat Before It Beats You"
 If you are traveling to a tournament in a hot climate, arrive at least 7-10 days early to allow for heat acclimatization. During the first two days, reduce your training volume by 20-30% and train during cooler hours. Gradually increase volume by 10-15% per day. Drink a minimum of 500 ml of fluid 2 hours before match play and continue drinking during changeovers. Monitor your urine color and body weight to assess hydration status. If you experience headache, dizziness, or unusual fatigue during play, stop immediately, seek shade, and begin cooling. Heat stroke kills — respect the heat and listen to your body.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Athletic nutrition & energy balance*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Tai Chi principles applied to tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+<!-- TAICHIKB-CROSSREF-END -->

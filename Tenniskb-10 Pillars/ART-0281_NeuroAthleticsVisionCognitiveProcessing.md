@@ -79,3 +79,10 @@ Confident body language (head up, shoulders back) can actually increase confiden
 
 ## Practical Application: "The Confidence Journal"
 Keep a confidence journal where you record: (1) daily successes (no matter how small), (2) positive feedback from others, (3) moments when you performed well under pressure, (4) evidence of improvement. Review this journal before matches to remind yourself of your capabilities. This journal serves as a concrete record of mastery experiences that builds self-efficacy and provides a powerful counter to the self-doubt that inevitably arises in competitive sport.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+<!-- TAICHIKB-CROSSREF-END -->

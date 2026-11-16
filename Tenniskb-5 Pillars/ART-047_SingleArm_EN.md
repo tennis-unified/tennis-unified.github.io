@@ -32,3 +32,10 @@ The slice backhand uses a downward trajectory and a different rotational axis.
 
 ## Practical Application: The "Whip" Sensation
 The single-arm shot should feel like a whip. The shoulder provides the initial "crack," and the wrist provides the final "snap." The athlete should feel the speed increasing exponentially as the racket moves through the impact zone, rather than maintaining a constant speed.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Single-arm spin generation & angular momentum*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular momentum scaling & rotational inertia*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Glenohumeral acceleration & scapular control*
+<!-- TAICHIKB-CROSSREF-END -->

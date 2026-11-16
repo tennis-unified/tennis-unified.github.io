@@ -137,3 +137,10 @@ Ví dụ hệ thống phân cấp lời nhắc cho người chơi trung cấp:
 ## Ứng Dụng Thực Tế: "Lời Nói Của Bạn Trở Thành Thực Tại Của Bạn"
 
 Ngôn ngữ bạn sử dụng nội tâm trong thi đấu trực tiếp định hình trạng thái cảm xúc, sự chú ý và thực hiện vận động. Cam kết ghi lại các mô hình tự nói chuyện của bạn trong một tuần — viết ra mọi cân nói nội tâm bạn nhận thấy trong buổi tập và thi đấu. Phân loại mỗi câu nói là tích cực/tiêu cực và hướng dẫn/động viên. Sau đó hệ thống thay thế các mô hình tiêu cực bằng các phương án thay thế thực tế, tập trung vào quá trình. Trong vòng vài tuần, việc tái cấu trúc trở thành tự động, và cuộc đối thoại nội tâm của bạn chuyển từ trở ngại thành tài sản.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

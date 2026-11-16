@@ -136,3 +136,10 @@ Serve liên tiếp các ngày mà không có ít nhất một ngày phục hồi
 ## Ứng Dụng Thực Tế: "Chuẩn Bị Vai Trước Serve"
 
 Trước mỗi buổi serve, thực hiện 5 phút chuẩn bị vai: 20 vòng xoay cánh tay (tiến và lùi), 10 giãn ngủ mỗi bên, 10 xoay ra ngoài với dây kháng lực, và 10 trượt tường. Quy trình này kích hoạt đai cuốn, tăng cường màng khớp sau, và khởi động các ổn định xương bả vai — bảo hiểm hiệu quả nhất bạn có thể thực hiện chống chấn thương vai.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

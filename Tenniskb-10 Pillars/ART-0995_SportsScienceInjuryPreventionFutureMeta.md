@@ -109,3 +109,10 @@ Prebiotics are non-digestible fibers that feed beneficial bacteria. Tennis playe
 ## Practical Application: "The Gut-Performance Protocol"
 
 Tennis players seeking to optimize their microbiome should implement a three-phase protocol: (1) **Assessment** — use a commercial gut microbiome test (Viome, Thryve, or similar) to establish baseline microbial composition and identify deficiencies; (2) **Intervention** — based on results, implement targeted probiotic supplementation, increase dietary fiber diversity (aim for 30+ different plant foods per week), and incorporate daily fermented foods; (3) **Maintenance** — during tournament periods, maintain probiotic supplementation, minimize NSAID use, and prioritize sleep to support circadian regulation of gut function. Track GI symptoms, illness frequency, and recovery speed as outcome measures. Players who commit to gut health optimization typically report fewer illnesses, faster recovery, and improved mental clarity within 6-8 weeks. The gut microbiome is not a peripheral concern — it is a central performance system that tennis players can no longer afford to ignore.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

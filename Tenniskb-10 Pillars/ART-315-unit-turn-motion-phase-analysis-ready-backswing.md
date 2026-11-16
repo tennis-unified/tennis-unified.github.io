@@ -64,3 +64,10 @@ Elite players maintain turn quality across all time-pressure levels by adjusting
 ## Practical Application: "The Slow-Mo Turn"
 
 Practice the unit turn in extreme slow motion, spending 3 to 4 seconds on the full rotation. Focus on feeling each phase: the subtle initiation, the building acceleration, the deceleration as you approach the set position, and the brief pause before the forward swing. This exaggerated timing ingrains the phase structure, which you then progressively speed up while maintaining the same progression.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

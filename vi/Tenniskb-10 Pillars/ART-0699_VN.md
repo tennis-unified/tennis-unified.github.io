@@ -43,3 +43,10 @@ Cú trả bóng chuẩn xác là vũ khí mạnh nhất của người trả bó
 ## Ứng Dụng Thực Tế: "Cố Gắng Hết Sức, Chấp Nhận Giới Hạn"
 
 Đối phó với cú trả bóng chuẩn xác: (1) cố gắng hết sức để chạm tay đến bóng, (2) chấp nhận rằng một số cú trả bóng không thể trả lại được, (3) chuẩn bị lại cho điểm tiếp theo. Nỗ lực và chấp nhận là những chìa khóa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -57,3 +57,10 @@ Chấp nhận sự phân tâm là một phần của tennis. Đối đầu với
 
 ## Ứng Dụng Thực Tế: "Bài Tập Phân Tâm"
 Trong tập luyện, chủ động giới thiệu sự phân tâm và tập luyện duy trì tập trung. HLV tạo tiếng ồn lớn, tạo phán định bất công, hoặc giới thiệu vấn đề trang thiết bị. Thực hành các chiến lược quản lý phân tâm (khung hình lại, tín hiệu tập trung, chấp nhận) trong môi trường được kiểm soát này. Sự tiếp xúc có chủ đích này xây dựng sự đàn hồi cần thiết để xử lý sự phân tâm trong thi đấu, biến các sự gián đoạn tiềm ẩn thành thách thức có thể quản lý thay vì những sự kiện phá hủy hiệu suất.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+<!-- TAICHIKB-CROSSREF-END -->

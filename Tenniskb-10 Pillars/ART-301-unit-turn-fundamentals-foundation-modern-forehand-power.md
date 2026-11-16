@@ -48,3 +48,10 @@ Early preparation is the hallmark of elite forehand technique. Players who begin
 ## Practical Application: "The Connected Rotation"
 
 Practice the unit turn as a connected rotation by holding a towel between the non-dominant hand and the racquet throat throughout the entire turn. This tactile feedback ensures the arms and torso move as a single unit, preventing the common error of the racquet lagging behind the body's rotation. Begin at half speed, focusing on the sensation of coiling rather than speed, and progressively increase tempo while maintaining the connection.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

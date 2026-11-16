@@ -50,3 +50,10 @@ Tăng độ "trễ" (khoảng cách đầu vợt tụt lại phía sau bàn tay)
 | eta thấp (Ít lực dù nỗ lực cao) | Đánh bóng chủ yếu bằng tay | Thở dốc, mỏi cơ tay nhiều. | Tập trung vào Fz (lực đẩy dọc) và Giật Hông. |
 | eta không nhất quán | Sai thời điểm/Phối hợp kém | Lúc thì đánh cực mạnh, lúc lại hời hợt. | Tập luyện nhịp điệu (Bài tập máy đập nhịp - Metronome). |
 | eta sụt giảm đột ngột | Lõi không ổn định | Thăng bằng bị lệch trong khi vung vợt. | Tập khóa lõi / Bài tập chống xoay. |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Công, công suất và truyền năng lượng động học tuyến tính*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động năng quay và công góc*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên suốt các phân đoạn*
+<!-- TAICHIKB-CROSSREF-END -->

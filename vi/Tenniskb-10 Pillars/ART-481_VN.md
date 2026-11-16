@@ -45,3 +45,10 @@ Người chơi gặp khó khăn khi chơi trong vòng biên thường được l
 
 ## Ứng Dụng Thực Tế: "Bài Tập Trong Vòng Biên"
 Nhờ một người bạn ném bóng ngắn về phía backhand của bạn. Thực hành di chuyển về phía trước và đánh các cú đánh tấn công từ trong vòng biên, tập trung vào chuẩn bị nhanh chóng và cú đánh gọn nhẹ. Theo dõi số điểm bạn giành được từ vị trí này. Bài tập này giúp phát triển các kỹ năng cần thiết cho lối chơi hiệu quả trong vòng biên.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

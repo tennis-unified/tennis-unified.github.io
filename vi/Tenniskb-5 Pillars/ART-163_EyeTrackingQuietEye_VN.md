@@ -39,3 +39,10 @@ QE dài hơn = lựa chọn chương trình vận động tốt hơn = độ ch�
 
 ## Ứng Dụng Thực Tế: "Ánh Nhìn Của Nhà Vô Địch"
 Nhà vô địch không có mắt tốt hơn — họ kiểm soát tốt hơn nơi họ nhìn và trong bao lâu. Huấn luyện ánh nhìn, và các cú đánh sẽ theo sau.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

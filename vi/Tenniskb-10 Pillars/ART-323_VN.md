@@ -68,3 +68,10 @@ Huấn luyện tăng vận tốc xoay thân nhắm vào năm yếu tố ảnh h�
 ## Ứng Dụng Thực Tế: "Xoay Thân Bật Nhanh"
 
 Luyện xoay thân cô lập bằng cách cầm vợt bằng hai tay ở cổ vợt (không vung tay) và xoay thân nhanh về phía mục tiêu. Tập trung vào cảm giác cơ xiên co thật mạnh và thân xoay với tốc độ tối đa. Bài tập cô lập này phát triển mô hình kích hoạt cơ cụ thể cho vận tốc xoay thân cao, sau đó tích hợp vào quỹ đạo forehand hoàn chỉnh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+<!-- TAICHIKB-CROSSREF-END -->

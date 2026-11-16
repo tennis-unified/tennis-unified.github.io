@@ -57,3 +57,10 @@ Người chơi nên luyện tập chiến thuật sân cứng — mô hình tấ
 ## Ứng Dụng Thực Tế: "Cân Bằng Trên Sân Cứng Giành Chiến Thắng"
 
 Áp dụng chiến thuật sân cứng — mô hình tấn công cân bằng bằng cách cam kết áp dụng chiến thuật cho toàn bộ một set tập. Theo dõi số điểm bạn giành được bằng khuôn mẫu so với cách tiếp cận mặc định. Nếu chiến thuật giành chiến thắng trên 55% số điểm, tích hợp nó vào kho chiến thuật thường xuyên. Nếu ít hơn, hãy phân tích tại sao: phải vì thực thi của bạn, điều chỉnh của đối thủ, hay thời điểm kém? Tinh chỉnh chiến thuật dựa trên phân tích này trước trận đấu tiếp theo.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

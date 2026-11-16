@@ -34,3 +34,10 @@ Ngoài điều chỉnh, jab có ứng dụng chiến thuật như giả mạo. N
 
 ## Ứng Dụng Thực Tế: "Bài Tập Jab Và Đóng Băng"
 Huấn luyện viên đứng ở cọc lưới và ngẫu nhiên gọi hướng — "trái," "phải," "trái-trái," "phải-trái" — trong khi người chơi đứng ở vị trí sẵn sàng. Mỗi lần gọi đòi hỏi một bước jab theo hướng đó. Sau bước jab cuối, người chơi đóng băng và HLV kiểm tra: một chân phải trên mặt đất, ngực phẳng, trọng tâm trên nền tảng hỗ trợ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+<!-- TAICHIKB-CROSSREF-END -->

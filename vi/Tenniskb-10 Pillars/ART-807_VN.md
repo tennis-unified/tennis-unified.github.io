@@ -129,3 +129,10 @@ Phát triển nhận thức trả bóng chiến thuật với bài tập có c�
 | Không thể break serve | Trả bóng hai yếu, đặt dễ đoán | Người giao giữ nhàn tênh | Bài tập tấn công giao bóng hai; thực hành biến thể mục tiêu |
 | Trả bóng thiếu độ sâu chống lại giao lớn | Tiếp xúc muộn, thiếu xoay cơ thể | Trả bóng nổi lên dễ bị tấn công | Bài tập chặn trả bóng nhấn mạnh chuyển trọng lượng về phía trước |
 | Trả bóng dễ đoán | Trả bóng góc đối diện thói quen | Người giao có thể dự đoán và phản công | Tập biến thể hướng trả bóng; bài tập phá vỡ mẫu |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

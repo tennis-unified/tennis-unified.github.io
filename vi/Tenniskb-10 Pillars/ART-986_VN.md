@@ -184,3 +184,10 @@ Nghiên cứu cho thấy cả hai cơ chế đều có thể gây ra sụt giả
 ## Ứng Dụng Thực Tế: "Ón Lấy Khoảnh Khắc"
 
 Lần tới khi bạn đối mặt với điểm break hoặc điểm vô địch, thay vì cố gắng không nghĩ về áp lực, hãy ón lấy nó: "Đây là lý do tôi chơi tennis. Đây là khoảnh khắc tôi đã tập luyện để đạt được." Hít một hơi thở sâu, tập trung vào thói quen trước điểm của bạn, và tin tưởng vào quá trình tập luyện. Nhớ rằng cơ thể bạn biết cách đánh bóng tennis — bạn đã làm điều đó hàng ngàn lần. Nhiệm vụ của bạn không phải là kiểm soát mọi chi tiết của chuyển động; nó là tự thoát khỏi chính mình để các kỹ năng tự động thực hiện. Tập trung vào mục tiêu, không phải kỹ thuật. Tập trung vào điểm tiếp theo, không phải kết quả. Áp lực không phải là kẻ thù của bạn — nó là sân khấu để bạn phô diễn sự chuẩn bị của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

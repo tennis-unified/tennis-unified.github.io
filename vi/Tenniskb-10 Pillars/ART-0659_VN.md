@@ -60,3 +60,10 @@ Bóng lob cao là một cú lob phòng ngự đòi hỏi khả năng theo dõi k
 ## Ứng Dụng Thực Tế: "Kiên Nhẫn Hơn Sức Mạnh"
 
 Bóng lob cao được thiết kế để khiến bạn vội vã. Hãy chống lại cơn thôi thúc vung vợt sớm. Chờ bóng rơi xuống, thiết lập vị trí hoàn hảo, rồi mới đánh cú smash toàn lực. Sự kiên nhẫn là chìa khóa để đánh bại bóng lob cao.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

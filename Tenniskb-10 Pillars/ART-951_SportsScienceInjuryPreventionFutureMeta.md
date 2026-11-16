@@ -85,3 +85,10 @@ The most effective mental toughness development occurs when psychological traini
 ## Practical Application: "Train the Mind Like You Train the Forehand"
 
 Mental toughness development should be scheduled, measured, and refined with the same specificity as technical skill development. Allocate dedicated time each week to psychological skills — visualization, breathing exercises, adversity simulations, and performance review. Track mental performance indicators (error recovery time, body language quality, focus duration) alongside tactical and physical metrics. The mind is a muscle in tennis; it strengthens with structured, progressive training, not with wishful thinking.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+<!-- TAICHIKB-CROSSREF-END -->

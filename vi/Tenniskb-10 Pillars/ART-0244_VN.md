@@ -56,3 +56,10 @@ Huấn luyện che khuất thời gian chuyển giao ra trận trực tiếp b�
 
 ## Ứng Dụng Thực Tế: "Khung Hình Đóng Băng"
 Trong tập luyện, nhờ đối tác đánh cú và bạn gọi "đóng băng" ở các thời điểm ngẫu nhiên. Khi bạn gọi đóng băng, đối tác của bạn dừng cú vung tại điểm đó, và bạn dự đoán kết quả cú đánh từ vị trí đóng băng. Bài tập che khuất thời gian trực tiếp này huấn luyện não bộ trích xuất thông tin dự đoán từ chuyển động không hoàn chỉnh và xây dựng kỹ năng dự đoán chuyển giao trực tiếp đến thi đấu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

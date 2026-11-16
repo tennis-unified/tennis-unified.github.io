@@ -62,3 +62,10 @@ The lateral contact position interacts with shot direction: cross-court shots na
 ## Practical Application: "The Lateral Position Drill"
 
 Practice hitting forehands at three distinct lateral positions: directly in front of the centerline (for down-the-line), 0.2m in front (for standard rally balls), and 0.3m in front (for aggressive cross-court). Note how each position affects the shot's direction and power. Develop the ability to adjust your lateral position based on the intended shot direction.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Lateral Line: lateral stability & mediolateral force*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

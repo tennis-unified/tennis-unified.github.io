@@ -64,3 +64,10 @@ Ngụ ý huấn luyện là sự thay đổi số học. Người chơi không c
 ## Ứng Dụng Thực Tế: "Một Rễ Mỗi Bước"
 
 Hãy cho người di chuyển một nhiệm vụ đếm: **mỗi bước chân là một rễ, nên chạy mười bước chứa mười rễ.** Ở buổi tập tiếp theo, chạy thang chân im trong năm phút với người chơi đếm rễ thay vì bước. Sau đó chơi điểm crosscourt nơi tiêu chí tính điểm duy nhất là chất lượng đổ cuối cùng trước mỗi cú đánh — huấn luyện viên gọi "rễ" hoặc "trượt" sau mỗi cú. Người chơi chuyển đổi ngay cả 7 trên 10 đổ cuối cùng từ trượt sang rễ sẽ cảm nhận sự khác biệt ngay: đùi như nhau, tốc độ như nhau, nhưng một cú đánh cuối cùng có thứ gì đó chắc chắn bên dưới.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

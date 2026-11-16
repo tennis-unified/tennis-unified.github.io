@@ -45,3 +45,10 @@ Vận động viên gặp khó khăn với phương pháp shadow thường đư�
 
 ## Ứng Dụng Thực Tế: "Quy Trình Shadow"
 Tập luyện shadow swing trong 5-10 phút trước mỗi buổi tập, tập trung vào kỹ thuật đúng. Bắt đầu chậm rãi, dần dầng tăng tốc độ khi cú đánh trở nên tự nhiên hơn. Hình dung quả bóng và cú đánh mong muốn, và tập trung vào việc phát triển một cú đánh mượt mà, hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -68,3 +68,10 @@ Cú smash từ đường biên dưới là một công cụ phòng thủ quan tr
 ## Ứng Dụng Thực Tế: "Lùi Lại, Rồi Tấn Công"
 
 Trên cú smash từ đường biên dưới, trình tự là: (1) nhận diện cú lob sớm, (2) lùi lại với bước chéo, (3) di chuyển ra sau bóng, (4) tấn công bằng cú vung vợt smash đầy đủ. Việc lùi lại là phòng thủ; cú smash là tấn công. Thành thạo cả hai giai đoạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

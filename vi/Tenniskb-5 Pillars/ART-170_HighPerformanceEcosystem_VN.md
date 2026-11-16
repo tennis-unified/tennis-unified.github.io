@@ -115,3 +115,10 @@ Chỉ Mục 200 Bài, Logic App Chẩn Đoán, Tổng Hợp Cuối Cùng, Cải 
 
 ## Ứng Dụng Thực Tế: "Lịch Của Người Làm Vườn"
 Bạn không kéo cây để nó lớn. Bạn chuẩn bị đất (Hệ Sinh Thai), gieo hạt (Vận Động Viên), tưới nước (Nhịp Độ Hàng Ngày), bảo vệ khỏi sâu bệnh (Chế Độ Thất Bại), và gặt hái đúng mùa (Chu Kỳ Hóa). Hệ Sinh Thái *là* lợi thế cạnh tranh. Xây Dựng Một Lần. Chăm Sóc Hàng Ngày. Nó Sản Xuất Ra Nhà Vô Địch.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 19: Thấu hiểu cơ học-thích-nghi của mô mạc: Ứng dụng vào y học thể thao — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch19-thau-hieu-co-hoc-thich-nghi-cua-mo-mac-ung-dung-vao-y-hoc-the-th.html) — *Cơ học thích nghi và phòng ngừa chấn thương*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+<!-- TAICHIKB-CROSSREF-END -->

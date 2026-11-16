@@ -60,3 +60,10 @@ Người chơi gặp khó khăn trong việc tạo topspin thường được l�
 
 ## Ứng Dụng Thực Tế: "Bài Tập Vuốt Topspin"
 Đứng ở vạch nền và nhờ đối tác ném bóng về phía backhand của bạn. Đánh mười cú drive hai tay tập trung vào việc vuốt lên phía sau bóng bằng tay trên. Đếm số đòn tạo ra topspin nhìn thấy được (bóng sau khi qua lưới sẽ hạ xuống). Theo dõi tiến trình qua các buổi tập để đảm bảo đường vung tạo ra xoáy nhất quán.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

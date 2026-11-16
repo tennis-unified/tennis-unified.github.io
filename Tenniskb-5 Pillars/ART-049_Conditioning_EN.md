@@ -53,3 +53,10 @@ Before entering a match, the athlete should perform a quick physical and mental 
 1.  **Physical:** Are the legs explosive? Is the core stable? Are the shoulders loose but ready?
 2.  **Mental:** Is the focus sharp? Is the predictive model active?
 When both systems are ready, the athlete is in a state of Flow, ready to execute the kinetic chain with maximum efficiency.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Energy systems for tennis conditioning (ATP-PCr, glycolytic, aerobic)*
+- [Chương 16: Chương 16: Các Yếu Tố Quyết Định Sinh Lý Học Của Thành Tích Thể Thao — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch13.html) — *Physiological determinants of athletic performance*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Mindfulness & flow integration in physical activity*
+<!-- TAICHIKB-CROSSREF-END -->

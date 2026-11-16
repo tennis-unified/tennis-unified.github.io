@@ -98,3 +98,10 @@ Perform this circuit 2-3 times per week. It targets all three anti-movement func
 6. **Stir-the-pot** — 30 seconds (anti-extension under movement)
 
 This circuit takes approximately 12 minutes and requires minimal equipment (a cable or band, an ab wheel or sliders, a dumbbell, and a medicine ball). Perform it after tennis practice or as a finisher to a gym session. Track your progress by noting the number of Pallof press repetitions, the rollout range of motion, and the medicine ball throw distance. As these metrics improve, your on-court stability, power, and resilience will improve with them.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Chương 9: Mặt Trước Sâu — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch09-mat-truoc-sau.html) — *Deep Front Line: core postural axis*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+<!-- TAICHIKB-CROSSREF-END -->

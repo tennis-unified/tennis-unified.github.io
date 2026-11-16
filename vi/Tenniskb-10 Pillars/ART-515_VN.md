@@ -121,3 +121,10 @@ Xen kẽ giữa serve wide và serve T để người trả bóng phải liên t
 ## Ứng Dụng Thực Tế: "Xoay Vòng Mục Tiêu"
 
 Đặt ba mục tiêu trong ô giao bóng: một ở vùng biên wide, một ở hướng vào người và một ở vùng T. Đánh 10 serve vào mỗi mục tiêu theo thứ tự ngẫu nhiên, hô rõ mục tiêu trước mỗi cú serve. Bài tập này rèn khả năng định vị serve chính xác theo yêu cầu — một kỹ năng có giá trị trong trận đấu hơn nhiều so với việc chỉ đơn thuần serve mạnh. Theo dõi tỷ lệ thành công cho từng vị trí và xác định mục tiêu nào cần cải thiện nhiều nhất.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -210,3 +210,10 @@ Kiểm tra lại mỗi 8-12 tuần để theo dõi tiến bộ.
 | Backhand thiếu sức mạnh | Phân tách vai-hông không đủ, hạn chế tay đơn | Thụ động, dễ bị tấn công | Huấn luyện sức mạnh xoay; bài phân tách; tăng cường thân |
 | Sức mạnh cú đánh giảm ở trận sau | Sức bền xoay không đủ | Lỗi cuối trận | Chu kỳ sức bền xoay; kết hợp sức mạnh và thể lực |
 | Đau lower back khi xoay | Ổn định core kém, xoay thắt lưng quá | Đĩa đệm, căng cơ | Huấn luyện ổn định core; bài chống xoay; xem xét kỹ thuật |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

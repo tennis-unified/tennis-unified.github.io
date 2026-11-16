@@ -84,3 +84,10 @@ Một cú đẩy split-step có thể chia tương tự:
 ## Ứng Dụng Thực Tế: "Tay Nhẹ, Bóng Nặng"
 
 Đưa cho người chơi một nghịch lý: **tay nhẹ tạo ra bóng nặng.** Tay nên nhẹ đến mức trong tiếp cận và tải sao cho đầu vợt hơi rũ trong tay. Sau đó, tại khoảnh khắc tiếp xúc, tay siết chặt trong 100-200 ms, và đầu vợt gia tốc qua bóng. Sau tiếp xúc, tay giải phóng một lần nữa. Ở buổi tập tiếp theo, hãy để người chơi đánh 20 quả bóng với tay nhẹ nhất có thể — nhẹ đến mức vợt gần như bay ra khỏi tay trên backswing. Sau đó dần dần tăng áp lực cầm vợt cho đến khi người chơi tìm thấy mức siết tối thiểu vẫn tạo ra cú đánh tốt. Kết quả là một người chơi nhẹ 80% thời gian và bùng nổ 20% thời gian — và không bao giờ lãng phí năng lượng bị căng khi họ nên thả lỏng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

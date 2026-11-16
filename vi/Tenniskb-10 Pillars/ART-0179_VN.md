@@ -33,3 +33,10 @@ Khi tốc độ tăng, chuẩn bị phải di chuyển sớm hơn trong chuỗi,
 
 ## Ứng Dụng Thực Tế: "Giữ Nhịp"
 Trong phiên tiếp theo, chạy ba vòng shock-nhịp 10 bóng mỗi vòng. Trước mỗi vòng người chời đặt một ý định nhịp — hai bước cuối ngắn, vai trên bước đầu, thở ra khi tiếp xúc — không bao giờ cả ba cùng lúc. Sau mỗi vòng, một câu hỏi tự-chấm cho mỗi ý định: hai bước cuối có yên không? Vai có xoay trước khi di chuyển kết thúc? Mỗi cú đánh có thở ra không? Sáu trên mười bóng đạt cho mỗi đếm là mục tiêu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

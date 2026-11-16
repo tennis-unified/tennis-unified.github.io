@@ -189,3 +189,10 @@ COF thấp hơn = bám ít hơn = trượt giảm căng thẳng khớp nhưng t�
 ## Ứng Dụng Thực Tế: "Tôn Trọng Bề Mặt"
 
 Khi chuyển đổi giữa các bề mặt, cho phép ít nhất 1-2 tuần để cơ thể thích nghi. Mô hình chuyển động, lực tác động và yêu cầu thăng bằng khác nhau trên mỗi bề mặt. Nếu bạn chủ yếu chơi sân cứng và chuẩn bị đến giải đất nung, dành một tuần thực hành trên đất nung trước — tập trung vào kỹ thuật trượt và điểm dài hơn. Tương tự, nếu bạn là chuyên gia đất nung đi đến cỏ, thực hành trên cỏ một tuần để thích ứng với nảy thấp hơn và điều kiện nhanh hơn. Cơ thể bạn cần thời gian thích nghi với các yêu cầu sinh cơ học khác nhau, và vội vàng chuyển đổi là nguyên nhân thường gặp gây chấn thương.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

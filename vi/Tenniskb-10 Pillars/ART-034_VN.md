@@ -92,3 +92,10 @@ Hãy hình dung một sóng chạy lên chuỗi sau bạn: bắt đầu từ bà
 | Ổn định cột sống khi đẩy | Cột sống trung lập, không cong/lồi | Cong lưng dưới, lồi ngực | Core stability, bird-dog, dead bug |
 | Độ mờ cơ gấu | Chạm ngón tay đầu gối/gót chân | Không chạm được, cứng | Giãn động, PNF, foam rolling cơ gấu |
 | Đau lưng dưới/hông khi đẩy | Không đau | Đau khi deadlift, đẩy chân | Kiểm tra kỹ thuật, kích hoạt mông to, giãn TLF |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -83,3 +83,10 @@ Under pressure or after long breaks, skills can regress to earlier stages. A pla
 
 ## Practical Application: "The Stage Assessment"
 Regularly assess which stage each of your strokes is in. For strokes in the cognitive stage, focus on clear instruction and feedback. For strokes in the associative stage, focus on varied practice and error reduction. For strokes in the autonomous stage, focus on maintenance and pressure resistance. This stage-specific approach to training ensures that each stroke receives the type of practice it needs at its current level of development, producing more efficient progress toward full automation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

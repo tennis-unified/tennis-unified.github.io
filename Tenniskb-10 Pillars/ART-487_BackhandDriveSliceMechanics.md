@@ -40,3 +40,10 @@ Players who struggle with forearm and wrist strength often benefit from working 
 
 ## Practical Application: "The Forearm and Wrist Routine"
 Perform a forearm and wrist workout 2-3 times per week, including wrist curls, reverse wrist curls, pronation/supination exercises, and gripper exercises. Use light to moderate weights, focusing on quality over quantity. Track your backhand control and stability over time to ensure the program is producing the desired results.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Elbow, forearm pronation & wrist mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

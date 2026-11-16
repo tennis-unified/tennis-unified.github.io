@@ -74,3 +74,10 @@ Use primarily random practice with match-like variability. For example, practice
 
 ## Practical Application: "The Variability Progression"
 Structure your practice with a variability progression: start each new skill with blocked practice to build the initial motor plan, then gradually introduce variability as the skill develops, and finally practice the skill in random, match-like conditions. For example, when learning a new serve: (1) practice the motion with consistent feeds, (2) vary the target and spin, (3) practice serving under pressure with tactical consequences. This progression builds flexible, transferable skills that perform in competition.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Myofascial force transmission across segments*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

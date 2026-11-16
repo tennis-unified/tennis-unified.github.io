@@ -58,3 +58,10 @@ The key principle is that SSC training must be specific to the movement pattern 
 ## Practical Application: "The Plyometric Forehand"
 
 Incorporate plyometric exercises into your forehand training: (1) jump squats before practice to activate the lower-body SSC; (2) rotational medicine ball throws to activate the trunk SSC; (3) resisted wrist flexion/extension exercises to activate the upper-extremity SSC. These exercises prime the stretch-shortening cycle, making it more responsive during actual forehand strokes.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Fascial elastic energy storage & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Muscular mechanics: eccentric/concentric & force-velocity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

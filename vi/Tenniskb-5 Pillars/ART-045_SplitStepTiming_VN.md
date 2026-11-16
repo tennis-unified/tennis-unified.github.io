@@ -41,3 +41,10 @@ Vận động viên phải căn chỉnh split step phù hợp với tốc độ 
 
 ## Ứng Dụng Thực Tế: Phản Ứng "Tự Động"
 Split step nên có cảm giác tự động, không phải cưỡng ép. Đó là một phản xạ, không phải một lựa chọn. Vận động viên nên tập trung vào kích hoạt thị giác (vợt của đối phương) và cho phép cơ thể phản ứng một cách tự nhiên. Khi được định chuẩn đúng, vận động viên sẽ cảm thấy một cú "nảy" hoặc "bật" đẩy họ về phía quả bóng một cách không gắng sức.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Cửa sổ thời gian split step và khởi phát di chuyển*
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Kích hoạt plyometric thần kinh–cơ và SSC*
+- [Chương 13: Tủy Sống và Dây Thần Kinh Sống (The Spinal Cord and Spinal Nerves)](https://taichikb.github.io/vi/books/tortora_ap/ch13-tuy-song-va-day-than-kinh-song.html) — *Phản xạ căng cơ tủy sống và sẵn sàng vận động*
+<!-- TAICHIKB-CROSSREF-END -->

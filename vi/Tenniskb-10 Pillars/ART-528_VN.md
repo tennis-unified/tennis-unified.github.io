@@ -159,3 +159,10 @@ Quay giao bóng của bạn và so sánh song song với giao bóng của tay v�
 ## Ứng Dụng Thực Tế: "Kiểm Tra Video Hàng Tháng"
 
 Quay giao bóng của bạn từ góc bên vào ngày đầu tiên của mỗi tháng. Sử dụng cùng vị trí camera, khoảng cách và cài đặt mỗi lần. So sánh video mới với video tháng trước để xác định mọi thay đổi — cả cải thiện và tụt hồi. Việc kiểm tra hàng tháng tạo trách nhiệm và cung cấp bằng chứng khách quan về tiến trình mà cảm giác không thể cung cấp.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

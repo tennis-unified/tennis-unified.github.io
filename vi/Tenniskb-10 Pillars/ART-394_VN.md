@@ -60,3 +60,10 @@ Huấn luyện bao gồm:
 ## Ứng Dụng Thực Tế: "Drill Xoáy Bóng Thấp"
 
 Thực hành sinh xoáy trên bóng thấp bằng cách để đối tác cung cấp bóng slice nảy dưới đầu gối. Tập trung vào cúi đầu gối sâu, quỹ đạo vung thấp-lên cao phóng đại và cảm giác chải lên qua bóng. Sử dụng thiết bị đo xoáy để xác minh rằng bạn đang tạo ra 2000+ RPM ngay cả trên những cú đánh đầy thách thức này.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

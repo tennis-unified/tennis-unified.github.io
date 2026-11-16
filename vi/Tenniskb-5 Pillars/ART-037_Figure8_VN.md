@@ -38,3 +38,10 @@ Khi vợt rơi xuống, thế năng của nó (PE = m · g · h) giảm. Năng l
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Con Lắc"
 Cú vung nên có cảm giác như một con lắc đung về phía sau và sau đó tự nhiên rơi về phía trước. Nếu vận động viên cảm thấy mình đang "nâng" vợt trong quá trình mở vợt, họ đang làm việc chống lại trọng lực thay vì sử dụng nó.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Quỹ đạo cong và động học chuyển động*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Quỹ đạo góc và hạ đầu vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Quỹ đạo vòng số 8 và hạ đầu vợt*
+<!-- TAICHIKB-CROSSREF-END -->

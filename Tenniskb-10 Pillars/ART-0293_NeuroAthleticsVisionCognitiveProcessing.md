@@ -61,3 +61,10 @@ Genetic information should not be used to limit opportunities. Environmental fac
 
 ## Practical Application: "The Development Focus"
 Rather than focusing on genetic talent identification, focus on developing the potential in every player. Provide high-quality coaching, appropriate challenges, and a supportive environment that allows each player to reach their maximum potential, regardless of their genetic starting point. This development-focused approach maximizes the performance of all players and avoids the deterministic thinking that genetic information can produce. Remember that tennis success requires many cognitive and physical abilities, and the combination of training, motivation, and environment is more predictive of success than any genetic profile.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

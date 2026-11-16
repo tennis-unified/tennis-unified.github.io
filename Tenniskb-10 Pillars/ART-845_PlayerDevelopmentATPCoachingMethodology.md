@@ -198,3 +198,10 @@ Players who thrive on clay typically possess:
 | Losing patience in long rallies | Insufficient endurance, poor shot selection | Unforced errors, lost points | Endurance training; tactical patience drills; extended rally practice |
 | Groundstrokes lack spin | Insufficient topspin technique, poor swing path | Passive shots, easily attacked | Heavy topspin drills; racket head speed training |
 | Fatigue in third sets | Insufficient aerobic conditioning | Performance decline in extended matches | Aerobic base building; repeated sprint training |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

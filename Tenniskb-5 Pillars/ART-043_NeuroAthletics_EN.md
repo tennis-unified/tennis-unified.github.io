@@ -34,3 +34,10 @@ The vestibular system in the inner ear provides the brain with information about
 
 ## Practical Application: The "Predictive Mind"
 The athlete should not think of "hitting the ball" but of "intersecting a trajectory." The brain must be trained to predict where the ball will be, not where it is. This predictive focus allows the kinetic chain to initiate the movement earlier, creating a smoother, more powerful stroke.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Special senses: visual pathways, oculomotor tracking & retina*
+- [Chương 14: Não và Các Dây Thần Kinh Sọ (The Brain and Cranial Nerves)](https://taichikb.github.io/vi/books/tortora_ap/ch14-nao-va-cac-day-than-kinh-so.html) — *Brain & cranial nerves (CN II, III, IV, VI) for eye tracking*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & attentional control in sport*
+<!-- TAICHIKB-CROSSREF-END -->

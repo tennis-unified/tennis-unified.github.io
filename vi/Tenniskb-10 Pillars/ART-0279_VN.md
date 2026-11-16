@@ -44,3 +44,10 @@ Huấn luyện chánh niệm cải thiện khả năng nhận biết khi chú ý
 
 ## Ứng Dụng Thực Tế: "Mỏ Neo Chú Ý"
 Khi bạn nhận ra lo âu đang thu hẹp chú ý của bạn, hãy sử dụng một "mỏ neo chú ý": chọn một tín hiệu bên ngoài cụ thể (ví dụ: bóng, lưới, đường cuối sân) và tập trung vào nó mạnh mẽ trong 3-5 giây. Sự chú ý mạnh mẽ vào một tín hiệu bên ngoài đơn lẻ này ngắt quãng sự thu hẹp chú ý do lo âu gây ra và khôi phục sự tập trung rộng, linh hoạt. Thực hành mỏ neo này trong tập luyện dưới áp lực cho đến khi nó trở thành phản ứng tự động đối với lo âu, cho phép bạn duy trì kiểm soát chú ý là nền tảng của hiệu suất cao cấp.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

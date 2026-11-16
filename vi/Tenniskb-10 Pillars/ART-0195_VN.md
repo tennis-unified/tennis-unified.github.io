@@ -31,3 +31,10 @@ Hai hệ quả cho hình học phục hồi:
 
 ## Ứng Dụng Thực Tế: "Chi Tiêu Giây Đó"
 Chạn trạn 20 bóng: HLV cho bóng khó rộng; người chời phải slice cao và sâu, rồi phục hồi đến vùng đánh dấu (sâu cho bóng rộng, phân đoạn cho trung tâm) *trước khi vợt HLV chạm bóng phản công*. HLV cố ý biến đổi phản công — drive ngay, tấn công trễ, trôi lần nữa — để người chời học chi tiêu cổ tức cho sẵn sàng thay vị kịch bản cố định. Chấm mỗi bóng: 2 điểm cho đến vùng với bước filler sống động tại tiếp xúc HLV, 1 cho đến tĩnh, 0 cho muộn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -44,3 +44,10 @@ Tactical integration is the process of aligning the tactical skills with the tec
 
 ## Practical Application: The "Complete Technical Producer"
 The athlete should feel that they are "complete" and integrated with the 5-Pillar System. The athlete should feel that the biomechanical, neurological, and tactical systems are working together in harmony. This is the ultimate goal of the 5-Pillar System: to create a complete, integrated athlete who performs effortlessly at their peak potential.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual tracking & perceptual-motor synchronization*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 4 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch04.html) — *Neurologic control of stroke timing*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & cueing in technical execution*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -36,3 +36,10 @@ The knee is a critical link in the lower-extremity segment of the tennis kinetic
 
 ## Practical Application: "The Knee Check"
 During loading, ensure your knees bend sufficiently (at least 60°) and track over your toes (no valgus collapse). If your knees are too straight, work on loading depth drills. If your knees collapse inward, work on hip abductor strength and ankle mobility. If your knee timing is off, work on sequential activation drills. The knee is the power generator of the lower body—proper knee mechanics are essential for powerful stroke production.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Muscular system: prime movers & stabilizers*
+<!-- TAICHIKB-CROSSREF-END -->

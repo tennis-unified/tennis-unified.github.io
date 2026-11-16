@@ -55,3 +55,10 @@ Học cách gán trọng số cho tín hiệu dựa trên độ tin cậy. Thự
 
 ## Ứng Dụng Thực Tế: "Thứ Bậc Tín Hiệu"
 Phát triển một "thứ bậc tín hiệu" cá nhân - danh sách xếp hạng các tín hiệu tin cậy nhất cho các loại dự đoán khác nhau. Ví dụ, cho hướng cú đánh: (1) định hướng vai, (2) vị trí bàn chân, (3) góc vợt, (4) vị trí tung bóng. Khi nhiều tín hiệu có sẵn, ưu tiên các tín hiệu xếp hạng cao hơn trong thứ bậc của bạn. Cách tiếp cận có cấu trúc này cho việc sử dụng tín hiệu ngăn chặn sự nhầm lẫn xảy ra khi nhiều tín hiệu cung cấp thông tin mâu thuẫn và đảm bảo thông tin tin cậy nhất điều khiển dự đoán của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

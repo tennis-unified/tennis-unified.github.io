@@ -109,3 +109,10 @@ Gân đùi, xương đầu gối và gân xương đầu gối tạo thành cơ 
 ## Ứng Dụng Thực Tế: "Hạ Cánh Như Mèo"
 
 Khi hạ cánh từ bất kỳ cú overhead hoặc di chuyển ngang nào, hãy nghĩ về việc hấp thụ lực qua hông và đầu gối đồng thời. Tập hạ cánh một chân với đầu gối "mềm" — hạ cánh với đầu gối theo dõi ngón thứ hai, hông và đầu gối đều gập, và trọng lượng tập trung qua chân hạ cánh. Giữ tư thế hạ cánh trong 3 giây. Nếu đầu gối sập về trong, bạn cần tăng cường hông hơn. Bài tập đơn lẻ này ngăn ngừa nhiều chấn thương đầu gối hơn bất kỳ đai nào từng có.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

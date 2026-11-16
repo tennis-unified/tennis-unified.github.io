@@ -80,3 +80,10 @@ Việc huấn luyện bao gồm:
 ## Ứng Dụng Thực Hành: "Cảm Giác Từ Thấp Đến Cao"
 
 Thực hành quỹ đạo thẳng đức bằng cách phóng đại pha hạ: bắt đầu với đầu vợt ở ngang đầu gối và vung lên qua điểm chạm tưởng tượng ở ngang thắng lưng. Tập trung vào cảm giác đầu vợt tăng tốc đi lên qua vùng chạm. Dần dần giảm độ sâu hạ xuống mức tối ưu từ 0,3 đến 0,8 mét khi động tác trở nên tự động.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

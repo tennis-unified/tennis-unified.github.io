@@ -49,3 +49,10 @@ Thời tiết nóng bức đòi hỏi một chiến lược quản lý nhiệt t
 
 ## Ứng Dụng Thực Tế: "Uống Nước, Làm Mát, Giữ Sức"
 Trong nắng nóng: (1) uống nước trước và trong khi thi đấu, (2) dùng chiến lược làm mát trong các giờ nghỉ, (3) giữ gìn sức lực bằng cách lên lưới có chọn lọc và kết thúc điểm thật nhanh. Cái nóng là bài kiểm tra về sức bền và trí tuệ — người chơi thông minh nhất sẽ giành chiến thắng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Dinh dưỡng thể thao và cân bằng năng lượng*
+<!-- TAICHIKB-CROSSREF-END -->

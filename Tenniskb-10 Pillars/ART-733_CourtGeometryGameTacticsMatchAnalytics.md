@@ -57,3 +57,10 @@ Players should practice Inside-In Backhand: Surprise Direction Change in combina
 ## Practical Application: "Surprise with the Inside-In"
 
 Implement Inside-In Backhand: Surprise Direction Change by committing to the tactic for an entire practice set. Track how many points you win using the pattern versus your default approach. If the tactic wins more than 55% of points, integrate it into your regular repertoire. If it wins less, analyze why: was it your execution, the opponent's adjustment, or poor timing? Refine the tactic based on this analysis before your next match.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+<!-- TAICHIKB-CROSSREF-END -->

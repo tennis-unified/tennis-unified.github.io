@@ -124,3 +124,10 @@ Perform this routine 3-4 times per week to maintain elbow health and prevent ten
 5. **Forearm stretch** — 30 seconds per side (wrist flexor and extensor stretches)
 
 This routine takes approximately 10 minutes and requires minimal equipment. Perform it after tennis practice or as a standalone session. The eccentric wrist extension exercise is the most important component — it is the single most evidence-based intervention for preventing and treating tennis elbow. Combined with proper equipment, technique, and load management, this routine can keep your elbows healthy for years of competitive play.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Elbow, forearm pronation & wrist mechanics*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

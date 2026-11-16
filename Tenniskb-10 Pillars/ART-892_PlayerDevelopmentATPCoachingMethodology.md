@@ -170,3 +170,10 @@ Break points are among the most consequential moments in tennis, with the abilit
 | Break point performance declines under pressure | Pressure-induced errors, tightness | Lost crucial points | Pressure simulation training; mental skills; pre-point routines |
 | Break point performance varies by surface | Surface-specific tactical issues | Poor results on certain surfaces | Surface-specific break point training; tactical adaptation |
 | Double faults on break points | Fear, tightness, poor second serve | Lost service games | Second serve drills; break point serve simulation; mental preparation |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

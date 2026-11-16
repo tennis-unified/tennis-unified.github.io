@@ -47,3 +47,10 @@ Huấn luyện viên là biến số tải. Năm hướng dẫn truyền đạt 
 ## Ứng Dụng Thực Tế: "Quyết Định Trước Khi Điểm Bắt Đầu"
 
 Quần vợt điểm lớn không phải là suy nghĩ nhanh hơn — đó là đã quyết định sớm hơn. Xây dựng kế hoạch nếu-thì cho các tình huống áp lực phổ biến nhất, nén chúng thành cụm từ đơn lẻ, và diễn tập chúng cho đến khi chúng tự động kích hoạt. Bảo vệ bộ nhớ làm việc của bạn như nguồn lực khan hiếm nó là: một kế hoạch, một dấu hiệu, một hơi thở. Những tay vợt trông điềm tĩnh ở điểm trận đấu không phải là người điềm tĩnh hơn; họ đang chạy một hệ thống để lại không gian làm việc tinh thần của họ trống rỗng mọi thứ ngoài quả bóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

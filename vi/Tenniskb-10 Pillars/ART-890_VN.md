@@ -133,3 +133,10 @@ Trước mỗi lần đón giao bóng, cần cân nhắc:
 | Không tấn công các quả giao hạng hai | Do dự, vị trí đứng kém | Người giao bóng giữ game dễ dàng | Tiến vào trong đường biên cuối; tấn công các cú đón giao hạng hai |
 | Cú đón giao bóng thiếu độ sâu | Tiếp xúc bóng kém, xoay người không đủ | Bóng đón giao bật lên dễ bị tấn công | Luyện tập đón giao bóng sâu; tập trung chuyển trọng lượng cơ thể về trước |
 | Bị lob khi chip đón giao bóng | Vị trí chip kém, hồi phục chậm | Mất điểm | Cải thiện vị trí chip; hồi phục nhanh; biến hóa chiến lược đón giao bóng |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

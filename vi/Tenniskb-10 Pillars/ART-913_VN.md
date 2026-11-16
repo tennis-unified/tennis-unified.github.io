@@ -54,3 +54,10 @@ Trong buổi tập tiếp theo, tập trung mạnh mẽ vào cảm giác đẩy 
 ## Ứng Dụng Thực Tế: "Đẩy Mặt Sân Ra Xa"
 
 Trong buổi tập tiếp theo, tập trung mạnh mẽ vào cảm giác đẩy mặt sân ra xa khỏi bạn với mỗi bước chân. Khi giao bóng, phóng đại cảm giác đẩy chân vào mặt đất và tưởng tượng sân đẩy bạn lên trên. Trong khi trở bóng, có ý thức đẩy mạnh qua chân trước ở những cú forehand tư thế mở. Theo dõi chiều cao nhảy đứng như một đại diện cho sự cải thiện sản xuất lực phần dưới cơ thể. Kết hợp xạp nặng và nâng tạ Olympic vào chương trình sức mạnh, và bao gồm các bài tập nhảy plyometric để phát triển tốc độ phát triển lực. Bạn càng đẩy vào mặt đất mạnh, bạn càng di chuyển nhanh và mạnh mẽ hơn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Động lực học tuyến tính, GRF và xung lượng*
+<!-- TAICHIKB-CROSSREF-END -->

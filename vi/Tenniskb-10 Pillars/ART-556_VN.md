@@ -138,3 +138,10 @@ Vị trí bạn đứng để trả bóng ảnh hưởng đáng kể đến kh�
 ## Ứng Dụng Thực Tế: "Bài Tập Ba Vị Trí"
 
 Yêu cầu đối tác giao 10 quả khi bạn đứng sâu, 10 quả khi đứng ngang cơ sở và 10 quả khi đứng bên trong. Ghi nhận vị trí nào mang lại kết quả tốt nhất chống lại người giao đó. Sử dụng thông tin này để xác định vị trí trả bóng mặc định cho đối thủ đó. Lặp lại bài tập này với các người giao khác nhau để phát triển khả năng điều chỉnh định vị của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

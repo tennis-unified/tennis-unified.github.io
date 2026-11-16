@@ -92,3 +92,10 @@ Huấn luyện bao gồm:
 ## Ứng Dụng Thực Tế: "Lên Và Xé"
 
 Luyện tập forehand trên đà bóng bằng cách nhờ đối tác ném bóng nảy ở vạch giao công. Định vị bên trong vạch gầm và luyện tập chạm mỗi bóng khi nó lên, tập trung vào điểm chạm sớm và cảm giác lấy thời gian của đối thủ tưởng tượng. Bắt đầu với ném chậm và tiến triển đến tốc độ nhanh, thực tế hơn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

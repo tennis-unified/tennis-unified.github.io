@@ -39,3 +39,10 @@ Bài viết này tổng hợp các nguyên lý điều kiện được trình b�
 
 ## Ứng Dụng Thực Tế: "Động Cơ Điều Kiện"
 Sức mạnh thể chất đặt trần nhà; kỷ luật phục hồi quyết định bạn chơi gần trần nhà đến đâu. Huấn luyện các hệ thống; tin tưởng các quy trình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Hệ thống năng lượng cho thể lực quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

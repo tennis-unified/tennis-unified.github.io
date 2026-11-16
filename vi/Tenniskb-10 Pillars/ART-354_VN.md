@@ -70,3 +70,10 @@ Khoảng cách của khuỷu tay từ cơ thể tại điểm tiếp xúc bóng 
 ## Ứng Dụng Thực Hành: "Nhận Thức Khuỷu Tay"
 
 Trong quá trình luyện tập, ý thức theo dõi vị trí khuỷu tay của bạn tại ba thời điểm quan trọng: (1) tại vị trí chuẩn bị, (2) tại điểm tiếp xúc bóng, và (3) tại điểm kết thúc. Lưu ý chiều cao, khoảng cách từ cơ thể và góc co duỗi tại mỗi điểm. Nhận thức này giúp bạn phát triển một đường đi khuỷu tay nhất quán, tối ưu hóa sức mạnh và khả năng kiểm soát cho cơ cấu cơ học cá nhân của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

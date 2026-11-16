@@ -128,3 +128,10 @@ Hawk-Eye uses 10 high-speed cameras positioned around the court:
 ## Practical Application: "Know Your Numbers"
 
 Use Hawk-Eye data (available through tournament apps and broadcast overlays) to analyze your matches. After each match, review: average serve speed by set, first serve percentage by placement zone, and shot patterns by opponent type. Identify trends: Does your serve speed drop after 90 minutes? Do you hit 70% of backhands crosscourt? Are you positioning 2 feet behind the baseline on average? These insights, grounded in Hawk-Eye's 3.6mm-accurate data, allow you to make evidence-based adjustments to your game rather than relying on gut feeling alone.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+<!-- TAICHIKB-CROSSREF-END -->

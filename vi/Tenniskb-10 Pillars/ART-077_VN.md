@@ -44,3 +44,10 @@ status: published
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Đầu Gối"
 Khi tải, hãy đảm bảo đầu gối gấp đủ ( ít nhất 60° ) và di chuyển theo ngón chân ( không sụp valgus ). Nếu đầu gối quá thẳng, hãy làm việc về drill độ sâu tải. Nếu đầu gối sụp vào trong, hãy làm việc về sức mạnh cơ ngoại転 hông và khả động mắt cá chân. Nếu thời điểm đầu gối bị lệch, hãy làm việc về drill kích hoạt tuần tự. Đầu gối là bộ tạo sức mạnh của thân dưới — cơ học đầu gối đúng là thiết yếu cho sản xuất cú đánh mạnh mẽ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Hệ cơ: nhóm cơ chủ vận và ổn định*
+<!-- TAICHIKB-CROSSREF-END -->

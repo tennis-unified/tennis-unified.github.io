@@ -52,3 +52,10 @@ After each spin identification drill, verify your call against the actual bounce
 
 ## Practical Application: "The Seam Read"
 During practice returns, focus exclusively on the ball's seam pattern during the first half of its flight. Try to determine spin type and approximate rotation rate from seam motion alone, ignoring trajectory cues. This isolates and strengthens the primary spin perception channel. Once seam reading becomes reliable, add trajectory cues to build a redundant perception system that works even when one channel is degraded by speed or lighting.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+<!-- TAICHIKB-CROSSREF-END -->

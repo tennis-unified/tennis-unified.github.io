@@ -57,3 +57,10 @@ Một bài tập hiệu quả khác là huấn luyện nhận thức góc: đặ
 ## Ứng Dụng Thực Tế: "Đứng Đúng Chỗ Con Số Chỉ Ra"
 
 Thử nghiệm với chọn vị trí trả bóng bằng cách đứng ba bước phía sau đường baseline khi trả giao bóng một và đứng hai bước phía trong khi trả giao bóng hai. Theo dõi vị trí nào cho phép bạn trả bóng vào sân nhiều hơn và tạo phản công sâu hơn. Điều chỉnh dựa trên tốc độ và xoáy giao bóng của đối thủ. Điểm hoàn hảo hình học là nơi bạn có thể tới được cả giao bóng rộng và giao bóng body mà không cần lao mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

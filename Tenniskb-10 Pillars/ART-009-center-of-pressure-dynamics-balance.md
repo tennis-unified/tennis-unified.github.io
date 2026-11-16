@@ -82,3 +82,10 @@ Practicing strokes while monitoring COP (via pressure insoles or video feedback)
 
 ## Practical Application: "Feel Your Feet"
 The next time you practice, pay attention to where your weight sits on your feet during each stroke. During the loading phase of a forehand, you should feel pressure on your rear foot—specifically on the ball of the foot, ready to push off. As you swing forward, the pressure should smoothly transition to your front foot, finishing with your weight over or slightly ahead of the front foot. Practice this weight transfer without a ball: stand in your ready position, load onto your rear foot (feeling the pressure there), then transfer forward as if hitting a ball (feeling the pressure shift to your front foot). Do this 20 times slowly, then 20 times at match speed. This proprioceptive awareness of foot pressure is the foundation of balance in tennis—once you can feel it, you can control it, and once you can control it, your strokes become dramatically more consistent.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

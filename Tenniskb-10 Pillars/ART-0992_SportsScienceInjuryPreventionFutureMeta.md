@@ -94,3 +94,10 @@ Gene doping raises profound ethical questions that extend beyond competitive fai
 ## Practical Application: "The Genetic Integrity Framework"
 
 Tennis must proactively address gene doping through a three-pillar framework: (1) Investment in detection research, particularly transcriptomic and proteomic methods capable of identifying exogenous gene expression; (2) Longitudinal athlete biological passports that track genetic and protein markers over careers, establishing individual baselines that make anomalies detectable; and (3) Comprehensive education programs that inform players at all levels about the health risks and competitive consequences of gene doping. The sport's integrity depends on staying ahead of the technology — once gene doping becomes widespread, the window for effective detection may have already closed. Tennis governing bodies should allocate at least 15% of anti-doping budgets to gene doping research and detection development by 2026.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Muscular system: prime movers & stabilizers*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Muscular mechanics: eccentric/concentric & force-velocity*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

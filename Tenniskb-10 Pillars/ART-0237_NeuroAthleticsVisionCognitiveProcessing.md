@@ -67,3 +67,10 @@ Minimize external distractions (e.g., equipment problems, court conditions) and 
 
 ## Practical Application: "The Flow Checklist"
 Before each match, review a brief flow checklist: (1) Are my goals clear for this match? (2) Is my challenge level appropriate? (3) Have I minimized distractions? (4) Am I focused on process or outcome? Address any "no" answers before the match begins. During the match, if you notice flow slipping, return to the checklist and identify which condition is missing. This structured approach to flow creation transforms a mysterious, elusive state into a reproducible performance condition.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Tai Chi principles applied to tennis*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Mindfulness & flow state in sport*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+<!-- TAICHIKB-CROSSREF-END -->

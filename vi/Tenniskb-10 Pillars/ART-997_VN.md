@@ -119,3 +119,10 @@ Thành phần xã hội của tennis — tương tác xã hội thường xuyên
 ## Ứng Dụng Thực Tế: "Kế Hoạch Sự Nghiệp 20 Năm"
 
 Tay vợt tennis nên thiết kế sự nghiệp với tầm nhìn trường thọ ngay từ đầu. Trong **giai đoạn sự nghiệp sớm** (16-22 tuổi): ưu tiên chất lượng vận động hơn kết quả cạnh tranh, thiết lập thói quen sức mạnh và tính linh hoạt nền tảng, và học những điều cơ bản về phục hồi. Trong **giai đoạn đỉnh cao** (23-30 tuổi): tối ưu hóa dinh dưỡng cho quản lý viêm, đầu tư vào công nghệ phục hồi và phát triển kỹ năng hiệu suất tâm thần. Trong **giai đoạn cựu binh** (31-38+ tuổi): chuyển sang lịch trình chọn lọc, tăng tỷ lệ phục hồi/tập từ 1:3 lên 1:1, thực hiện điều trị tái tạo hàng quý và bắt đầu phát triển sở thích sau sự nghiệp. Đối với người chơi nghiệp dư, thông điệp cũng rõ ràng: tennis là một trong những khoản đầu tư tốt nhất vào sức khỏe lâu dài mà bạn có thể thực hiện. Thói quen tennis suốt đời — ngay cả ở cường độ vừa phải — thêm gần một thập kỷ vào tuổi thọ trong khi bảo tồn chức năng nhận thức, vận động khớp và kết nối xã hội. Những người chơi kéo dài sự nghiệp vào cuối độ tuổi 30 và 40 không phải là ngoại lệ — họ là những người tiên phong chứng minh điều gì có thể khi khoa học thể thao, dinh dưỡng và công nghệ phục hồi hội tụ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

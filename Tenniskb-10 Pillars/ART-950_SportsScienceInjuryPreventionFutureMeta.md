@@ -136,3 +136,10 @@ Perform this routine 3-5 times per week to maintain ankle stability and prevent 
 6. **Calf stretch** — 30 seconds per side (gastrocnemius and soleus)
 
 This routine takes approximately 10 minutes and requires only a resistance band. It is the most cost-effective ankle injury prevention tool available. Combined with proper footwear and, when indicated, external support, it can break the cycle of recurrent ankle sprains and keep players on court, moving confidently, and competing at their best. The ankle is the foundation of every movement in tennis — protect it, and it will carry you through a long and successful career.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+<!-- TAICHIKB-CROSSREF-END -->

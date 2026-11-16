@@ -38,3 +38,11 @@ Tưởng tượng khung chậu của bạn là một bát đầy nước.
 *   **PPT:** Nước tràn ra phía sau.
 *   **Trung Lập:** Nước giữ ở mức.
 Mục tiêu trong tennis là giữ "bát" càng bằng phẳng càng tốt trong khi nạp, sau đó nghiêng nó chính xác trong khi xoay.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Hệ Xương: Bộ Xương Phụ (The Skeletal System: The Appendicular Skeleton)](https://taichikb.github.io/vi/books/tortora_ap/ch08-he-xuong-bo-xuong-phu.html) — *Đai chậu và xương cùng*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Cấu trúc và độ ổn định khớp cùng–chậu*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Nghiêng khung chậu và mô-men xoắn thắt lưng–chậu*
+- [Chương 2: Cấu Trúc và Chức Năng Cơ Bản của Các Khớp Người (Basic Structure and Function of Human Joints)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch02-cau-truc-va-chuc-nang-co-ban-cua-cac-khop.html) — *Động học khớp và truyền tải lực qua khung chậu*
+<!-- TAICHIKB-CROSSREF-END -->

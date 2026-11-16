@@ -74,3 +74,10 @@ Spatial awareness is trained through:
 ## Practical Application: "The Consistency Challenge"
 
 Set up a target zone on the court (a 1m x 1m square) and attempt to land 20 consecutive forehands within the target. Count how many land in the zone. If you hit fewer than 15, your contact point consistency needs improvement. Use the training methods described above to increase your consistency, and repeat the challenge to track your improvement. Elite players can hit 18 to 20 out of 20 into a 1m x 1m target from the baseline.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+<!-- TAICHIKB-CROSSREF-END -->

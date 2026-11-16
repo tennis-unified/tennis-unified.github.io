@@ -215,3 +215,10 @@ Thực hiện liên tục trong 30 giây, nghỉ 30 giây, lặp lại 6-8 lần
 | Bao phủ sân kém | Huấn luyện di chuyển không đủ, các mẫu di chuyển kém hiệu quả | Đối thủ khai thác khoảng trống trên sân | Bài tập mẫu bao phủ sân; huấn luyện hiệu quả di chuyển |
 | Thường xuyên trượt chân hoặc vấp | Thăng bằng kém, bản thể cảm giác yếu | Ngã, chấn thương, đánh hụt bóng | Tập thăng bằng; bài tập bản thể cảm giác; bài tập ổn định mắt cá chân |
 | Hồi phục về giữa sân chậm | Di chuyển hồi phục kém, thiếu tính khẩn trương | Đối thủ đánh vào khoảng trống | Bài tập hồi phục; giáo dục về tâm các góc đánh; tập thể lực |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

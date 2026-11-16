@@ -31,3 +31,10 @@ Sức mạnh không chỉ nằm ở *mức độ* tách trục, mà còn ở *th
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Sling" (Súng Cao Su)
 X-Factor động nên có cảm giác như một chiếc súng cao su. Hông "kéo" vai, và trong một tích tắc, bạn cảm thấy một đỉnh căng ở vùng giữa thân trước khi vợt được phóng đi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc: xoắn chéo hông–vai (X-Factor)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Phân tách trục hông–vai và mô-men xoắn thân mình*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Phân tách hông–vai trong cú đánh cuối sân*
+<!-- TAICHIKB-CROSSREF-END -->

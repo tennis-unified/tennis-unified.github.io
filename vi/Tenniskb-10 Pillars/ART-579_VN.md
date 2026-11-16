@@ -84,3 +84,10 @@ Block liên quan đến việc sử dụng cú vung ngắn, gọn để đẩy b
 
 ## Ứng Dụng Thực Tế: "Drill Hệ Thống"
 Luyện tập cả ba hệ thống theo trình tự: Block 10 giao bóng lần một nhanh, Drive 10 giao bóng lần hai, Chip-and-charge 10 giao bóng lần hai. Điều này phát triển khả năng chuyển đổi giữa các hệ thống dựa trên tình huống.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

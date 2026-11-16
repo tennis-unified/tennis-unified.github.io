@@ -116,3 +116,10 @@ If you cannot arrive early:
 ## Practical Application: "The Altitude Adjustment Factor"
 
 When serving at altitude, use this rule of thumb: subtract 5-10% from your normal serve pace to maintain the same effective serve quality. For example, if your normal first serve is 100 mph, aim for 90-95 mph at altitude. The thinner air will add back the missing speed while giving you better control. Adjust based on your first few serves in the match.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+<!-- TAICHIKB-CROSSREF-END -->

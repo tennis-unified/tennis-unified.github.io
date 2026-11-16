@@ -74,3 +74,10 @@ Không có thiết bị bắt chuyển động, huấn luyện viên có thể s
 ## Ứng Dụng Thực Tế: "Xoay Như Khoan, Không Như Quay"
 
 Hình ảnh huấn luyện: **xoay như mũi khoan, không phải như con quay.** Mũi khoan xoay quanh một trục cố định, cắt sạch qua vật liệu. Con quay lắc khi nó chậm lại, phân tán năng lượng mọi hướng. Ở buổi tập tiếp theo, hãy để người chơi thực hiện 10 shadow groundstroke trong khi tập trung vào một thứ duy nhất: giữ đầu hoàn toàn yên. Không phải tay, không phải hông — chỉ đầu. Đầu yên có nghĩa trục ổn định, và trục ổn định có nghĩa tất cả năng lượng xoay đi vào cú đánh. Sau đó giới thiệu bóng đánh và duy trì cùng sự yên tĩnh đầu. Người chơi xoay như khoan đánh mạnh hơn, nhất quán hơn, và với thăng bằng tốt hơn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

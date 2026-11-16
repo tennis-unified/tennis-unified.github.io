@@ -139,3 +139,10 @@ For a player competing in a tournament with one match per day, here is a sample 
 **Dinner (evening)**: Salmon (150 g), sweet potato (200 g), salad with olive oil dressing, and a bowl of fruit.
 
 This plan provides approximately 400-500 grams of carbohydrate and 120-140 grams of protein on a match day, meeting the elevated demands of competition. Adjust portions based on body weight (target 6-8 g/kg carbohydrate and 1.4-1.7 g/kg protein). The key is consistency — eat the same way before every match so your body adapts and your glycogen stores are reliably topped off.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Athletic nutrition & energy balance*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+<!-- TAICHIKB-CROSSREF-END -->

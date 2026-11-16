@@ -96,3 +96,10 @@ For tennis, a 7-10 day taper is common. Volume drops progressively: 60% of norma
 Before writing a single training session, sit down with your annual tournament calendar and work backward from your peak events. Mark your two to four priority tournaments with a red circle. Around each one, build a taper window (7-10 days) and a competition phase (2-4 weeks). Then fill in the preparatory and pre-competition blocks leading up to each. Finally, schedule the off-season — yes, before the season starts, not after you are exhausted.
 
 The most common error coaches make is starting with the gym program and hoping the calendar fits around it. Flip that logic: the calendar is the program, and the gym, the on-court sessions, and the recovery protocols all serve it. When a player understands why each week looks the way it does — why this week is heavy, why next week is light, why the week before the tournament is all about feeling fresh — adherence improves and anxiety drops. Periodization is not just a physiological tool; it is a psychological one.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

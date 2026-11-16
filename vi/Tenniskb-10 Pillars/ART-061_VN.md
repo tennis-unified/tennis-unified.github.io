@@ -38,3 +38,10 @@ status: published
 
 ## Ứng Dụng Thực Tế: "Đẩy Qua"
 Để đánh drive phẳng, tập trung đẩy thẳng qua bóng với đường vợt ngang và mặt vuông góc. Hãy tưởng tượng đánh qua bóng theo đường thẳng từ đưa vợt sau đến follow-through. Càng phẳng đường vợt, cú đánh càng phẳng và nhanh. Dùng drive phẳng cho cú thắng và cú tiến lên khi cần tốc độ tối đa, nhưng nhận ra biên độ qua lưới thấp hơn cú đánh có xoáy.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

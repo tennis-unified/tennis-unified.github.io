@@ -44,3 +44,9 @@ The 90-minute sleep optimization protocol is a more advanced way to improve slee
 
 ## Practical Application: The "Complete Sleep Optimization Producer"
 The athlete should feel that they are "complete" and integrated with the 5-Pillar System. The athlete should feel that the biomechanical, neurological, and tactical systems are working together in harmony. This is the ultimate goal of the 5-Pillar System: to create a complete, integrated athlete who performs effortlessly at their peak potential.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 18: Hệ Nội Tố (The Endocrine System)](https://taichikb.github.io/vi/books/tortora_ap/ch18-he-noi-to.html) — *Circadian endocrine rhythms (cortisol, melatonin, GH)*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system recovery during deep sleep*
+<!-- TAICHIKB-CROSSREF-END -->

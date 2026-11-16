@@ -52,3 +52,10 @@ If you are pregnant and want to continue playing tennis, first obtain clearance 
 
 ## Practical Application: "Play Smart, Not Hard"
 If you are pregnant and want to continue playing tennis, first obtain clearance from your obstetrician. Modify your play by reducing volume and intensity, avoiding overheating, and listening to your body. Use the talk test to monitor intensity — if you cannot hold a conversation, you are working too hard. Stay hydrated, wear supportive clothing, and take frequent breaks. As your pregnancy progresses, shift your focus from competition to social enjoyment. After delivery, obtain medical clearance before returning to play and invest time in core and pelvic floor rehabilitation before resuming full tennis. Your health and your baby's health come first.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

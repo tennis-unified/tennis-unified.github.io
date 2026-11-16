@@ -88,3 +88,10 @@ The transition from the commitment zone to the deceleration zone is the most cri
 ## Practical Application: "Know Your Stopping Distance"
 
 At the next session, measure each player's practical stopping distance at three speeds: comfortable sprint (roughly 5 m/s), fast sprint (roughly 6 m/s), and maximal sprint (roughly 7+ m/s). Use cones to mark the start and the final stopping point. Then overlay those distances on a court diagram: for each speed, the stopping distance may exceed the available court width. This visual is transformative — players immediately understand why "run as fast as you can" is a recipe for injury and why controlled deceleration is a competitive advantage. Have them sprint to wide balls at 5 m/s and at 7 m/s and compare the quality of the resulting stroke. The 5 m/s version will produce a better shot, arrived at in control.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Dynamic balance & directional control*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -42,3 +42,10 @@ Sự đổi hướng của đà là không thể tránh khỏi — nhưng bị k
 
 ## Ứng Dụng Thực Tế: "Người Lướt Sóng Đà"
 Bạn không thể dừng con sóng — nhưng bạn có thể học cách lướt nó. Các tay vận động viên giỏi nhất lướt sóng đổi hướng của đà mà không bị nó cuốn đi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Động lực học tuyến tính, GRF và xung lượng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

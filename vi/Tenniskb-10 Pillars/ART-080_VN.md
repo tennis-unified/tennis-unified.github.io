@@ -137,3 +137,10 @@ Thực hiện vung ảo trong khi ý thức cảm nhận từng đoạn:
 
 ## Ứng Dụng Thực Tế: "Drill Metronome"
 Hãy tưởng tượng một metronome tick theo nhịp chuỗi động học của bạn: tick ( chân ) → tick ( hông ) → tick ( thân ) → tick ( vai ) → tick ( cánh tay ) → tick ( vợt ). Mỗi đoạn bắn trên tick của nó, theo trình tự. Hãy tập điều này bằng cách thực hiện vung ảo trong khi đếm to: " Chân — hông — thân — vai — cánh tay — vợt! " Mỗi từ tương ứng với một kích hoạt đoạn. Bắt đầu chậm, sau đó tăng tốc dần trong khi giữ trình tự. Khi bạn có thể thực hiện trình tự tự động ở tốc độ đầy đủ, thời điểm của bạn là đúng. Nếu bạn mất trình tự, hãy chậm lại và xây dựng lại. Drill metronome này là một trong những cách hiệu quả nhất để phát triển thời điểm chuỗi động học đúng đắn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -150,3 +150,10 @@ Xác định IZOF của bạn bao gồm:
 ## Ứng Dụng Thực Tế: "Lo Âu Là Thông Tin, Không Phải Kẻ Thù"
 
 Lo âu thi đấu không phải dấu hiệu của sự yếu đuối — đó là dấu hiệu bạn quan tâm đến thành trình của mình. Mục tiêu không phải xóa bỏ lo âu mà quản lý nó trong vùng chức năng tối ưu của bạn. Theo dõi mức lo âu trước trận của bạn, xác định vùng chức năng tối ưu cá nhân, và sử dụng thở, tái cấu trúc nhận thức và chánh niệm để duy trì vùng đó. Khi bạn cảm thấy căng thẳng trước trận đấu, nhắc bản thân: "Đây là cơ thể tôi đang chuẩn bị thực hiện. Tôi đã tập luyện cho khoảnh khắc này. Bây giờ hãy thi đấu."
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

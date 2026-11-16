@@ -68,3 +68,10 @@ Việc chọn cách trả bóng cần là một quyết định có chủ đích
 ## Ứng Dụng Thực Tế: "Khoảnh Khắc Dừng Trước Trả Bóng"
 
 Trước mỗi cú trả bóng, dành 3 giây để đánh giá tình huống: Chất lượng giao bóng là gì? Tỷ số là gì? Xu hướng của đối thủ là gì? Dựa trên đánh giá nhanh này, chọn cách trả bông của bạn sử dụng ma trận.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

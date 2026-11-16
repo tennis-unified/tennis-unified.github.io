@@ -51,3 +51,10 @@ Lỗi nâng cao đòi hỏi một phương pháp hệ thống để khắc phụ
 
 ## Ứng Dụng Thực Tế: "Chuỗi Hoàn Chỉnh"
 Vận động viên nên cảm nhận rằng chuỗi động học là "hoàn chỉnh" và tích hợp. Vận động viên không nên cảm thấy bất kỳ phần nào của chuỗi đang hoạt động độc lập với nhau. Vận động viên nên cảm nhận năng lượng chảy từ mặt sân, qua vùng lõi và ra ngoài qua vợt. Đây là mục tiêu cuối cùng của Hệ Thống 5 Cột Trụ: tạo ra một vận động viên hoàn chỉnh, tích hợp, thực hiện một cách không gắng sức ở tiềm năng đỉnh cao của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Lỗi cơ sinh học nâng cao và nguy cơ chấn thương*
+- [Chương 3: Hiểu về vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch03-hieu-ve-van-dong.html) — *Hiểu rối loạn vận động và cơ chế bù trừ*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Chẩn đoán đứt gãy động học góc*
+<!-- TAICHIKB-CROSSREF-END -->

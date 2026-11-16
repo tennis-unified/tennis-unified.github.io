@@ -61,3 +61,10 @@ Avoid rigid adherence to heuristics. The best players use heuristics as defaults
 
 ## Practical Application: "The Heuristic Audit"
 After each match, conduct a heuristic audit: identify the mental shortcuts you used during play and evaluate their effectiveness. Which heuristics led to winners? Which led to errors? Which situations called for a heuristic override? This post-match review refines your heuristic library, ensuring that your mental shortcuts are based on evidence rather than habit or bias. Over time, this audit produces a personalized set of heuristics that reflect your strengths and the tactical realities of your game.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

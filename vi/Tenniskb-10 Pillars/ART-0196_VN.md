@@ -41,3 +41,10 @@ Ba chiến lược quản lý:
 
 ## Ứng Dụng Thực Tế: "Thang Đàn Hồi"
 Cam kết thang bậc bậc qua khối tập: hai phiên đàn hồi mỗi tuần, 48 giờ cách nhau, mỗi phiên tối đa 25 phút công việc thực. Kiểm tra đầu và cuối khối với chạy zíc-zắc 6 cọc có thời gian và kiểm tra âm thanh — cùng cùng tốc độ phải im hơn tuần sáu so với tuần một. Chân to hơn nghĩa là đáp cứng hơn nghĩa là năng lượng rò rỉ; chân im hơn cùng tốc độ là bằng chứng trực tiếp nhất.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Dự trữ và hồi phục năng lượng đàn hồi mô mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -61,3 +61,10 @@ After watching a point, close your eyes and reconstruct the positions of both pl
 
 ## Practical Application: "The Triangle Scan"
 Before each shot, mentally construct a triangle connecting your position, the opponent's position, and the ball's projected landing point. This triangle reveals the optimal shot placement (typically the open court opposite the opponent's recovery position). Practice this scan during every shot in practice until it becomes an automatic pre-shot habit. The triangle scan transforms abstract spatial awareness into a concrete tactical tool.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+<!-- TAICHIKB-CROSSREF-END -->

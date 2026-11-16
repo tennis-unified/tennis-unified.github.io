@@ -68,3 +68,10 @@ Volley cắt bóng là công cụ chính xác của người chơi lưới cho b
 ## Ứng Dụng Thực Tế: "Chà Xuống Và Xuyên Qua"
 
 Tưởng tượng bạn chà mặt vợt xuống mặt sau quả bóng như một cú chặt trong bóng bàn. Đường vung từ trên xuống dưới với mặt vợt mở tạo ra xoắc ngược giữ bóng sát sân sau khi nảy. Tin tưởng vào xoắc — đừng cố gắng thêm lực. Hãy để xoắc ngược làm công việc.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

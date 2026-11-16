@@ -39,3 +39,10 @@ Quyết định độ sâu phải được đạt trong 0.3-0.5 s đầu của �
 
 ## Ứng Dụng Thực Tế: "Đọc Cung, Lấy Mét"
 Chạy khối 20 phút: HLV cho từ đường cuối đối diện với forehand nặng có chủ đích, pha với đường phẳng tỷ lệ 1:3. Nhiệm vụ duy nhất của người chời là gọi "lùi" hoặc "giữ" trong phần đường bay đầu tiên và sống với lời gọi — một bước chéo lùi trên "lùi", tư thế giữ trên "giữ". Chấm khốc bằng chiều cao tiếp xúc: mỗi forehand tiếp xúc giữa hông và vai tính dương; mỗi tiếp xúc trên vai tính âm.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

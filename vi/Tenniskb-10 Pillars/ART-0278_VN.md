@@ -66,3 +66,10 @@ Chuẩn bị kỹ lưỡng (thể chất, chiến thuật, tinh thần) giảm s
 
 ## Ứng Dụng Thực Tế: "Khung Hình Lại Căng Thẳng"
 Khi bạn nhận ra căng thẳng đang kích hoạt (nhịp tim nhanh, căng thẳng, lo âu), thực hiện tái khung hình căng thẳng: (1) thừa nhận phản ứng căng thẳng không phán xét, (2) khung hình lại tình huống như thách thức thay vì mối đe dọa, (3) tập trung vào những gì bạn có thể kiểm soát (nỗ lực của bạn, thói quen của bạn) thay vì những gì bạn không thể (kết quả, đối thủ), (4) sử dụng bài tập hít thở để kích hoạt hệ thần kinh phó giao cảm. Khung hình lại này biến đổi phản ứng căng thẳng từ một công cụ phá vỡ hiệu suất thành một công cụ tăng cường hiệu suất, sử dụng năng lượng của căng thẳng để nuôi dưỡng chơi tập trung, tấn công.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

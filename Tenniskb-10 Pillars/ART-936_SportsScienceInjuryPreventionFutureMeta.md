@@ -111,3 +111,10 @@ Perform this session 2-3 times per week during the pre-competition phase. It com
 4. **Cable rotation with step** — 3 sets of 8 per side
 
 Rest 60-90 seconds between sets. This session takes approximately 8 minutes and produces a powerful rotational training stimulus. Track your progress by measuring the distance of your medicine ball throws (mark the wall or use a measuring tape). When your throw distance increases by 10% or more, you are producing more rotational power — and that power will show up on the court as faster serves and deeper groundstrokes. The transfer is not magic; it is biomechanics.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

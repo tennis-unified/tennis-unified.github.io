@@ -129,3 +129,10 @@ Exercises that maintain shoulder range of motion:
 
 ## Practical Application: "The Cracking Whip"
 The shoulder internal rotation in the serve is like the crack of a whip—it's the final, fastest movement that produces the most dramatic effect. Just as the whip's tip exceeds the speed of sound, your shoulder's internal rotation achieves the highest angular velocity in your entire body. To maximize this effect, focus on the loading phase: cock your shoulder back as far as possible during the trophy position, feeling the stretch in your chest and front shoulder. Then, during the acceleration phase, let the shoulder snap forward explosively—don't try to control it, let the elastic energy do the work. The faster you can let go (release the stored energy), the faster your shoulder rotates—and the faster your racket head speed. Practice this by performing shadow serves with a focus on maximum external rotation during loading and explosive, uncontrolled internal rotation during acceleration. The feeling should be like cracking a whip: a full stretch followed by a violent snap. This whip-crack feeling is the hallmark of elite serving.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

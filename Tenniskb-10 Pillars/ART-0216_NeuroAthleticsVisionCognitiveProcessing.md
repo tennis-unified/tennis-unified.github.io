@@ -58,3 +58,10 @@ Practice switching between a motor task (hitting) and a cognitive task (calling 
 
 ## Practical Application: "The Mode Word"
 Develop a single word or short phrase that triggers each tactical mode. For example, "press" triggers offensive mode, "steady" triggers neutral mode, and "survive" triggers defensive mode. When you need to switch modes, say the word internally to activate the new rule set and inhibit the old one. This verbal cue provides a clean, rapid switch mechanism that minimizes the cognitive cost of transitioning between modes. Practice using these words during training points until they become automatic triggers.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

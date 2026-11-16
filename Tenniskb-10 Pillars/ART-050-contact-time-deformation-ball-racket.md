@@ -47,3 +47,10 @@ When the racket moves vertically across the ball:
 
 ## Practical Application: "The Spin Window"
 To increase spin, increase contact time by using lower string tension, brushing the ball more vertically, and ensuring the ball stays on the strings longer. To decrease spin for flatter shots, use higher string tension and drive through the ball more linearly. Understanding the spin window—the brief moment when the ball is on the strings—allows you to manipulate spin through technique and equipment choices.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

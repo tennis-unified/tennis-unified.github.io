@@ -57,3 +57,10 @@ Người chơi nên luyện tập hai người sau hay một người lưới �
 ## Ứng Dụng Thực Tế: "Chọn Đội Hình Theo Bảng Điểm"
 
 Áp dụng hai người sau hay một người lưới — chọn đội hình theo tình thế bảng điểm bằng cách cam kết áp dụng chiến thuật cho toàn bộ một set tập. Theo dõi số điểm bạn giành được bằng khuôn mẫu so với cách tiếp cận mặc định. Nếu chiến thuật giành chiến thắng trên 55% số điểm, tích hợp nó vào kho chiến thuật thường xuyên. Nếu ít hơn, hãy phân tích tại sao: phải vì thực thi của bạn, điều chỉnh của đối thủ, hay thời điểm kém? Tinh chỉnh chiến thuật dựa trên phân tích này trước trận đấu tiếp theo.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Chương 9: Mặt Trước Sâu — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch09-mat-truoc-sau.html) — *Đường Mặt Trước Sâu: trục ổn định trọng tâm*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -81,3 +81,10 @@ Plyometric exercises that emphasize landing mechanics—depth landings, single-l
 
 ## Practical Application: "The Quiet Stop"
 The best decelerations are quiet ones. When you sprint to a wide ball, your feet should make minimal noise as they contact the court during the stop—absorbing force through controlled knee and hip flexion rather than slamming into the ground. Practice by having a partner feed balls wide and concentrate on making your stopping footwork silent. The quieter your stop, the more efficiently you're absorbing force through your muscles rather than through your joints. This quiet-stop technique not only protects your knees and ankles but also allows you to redirect into your next movement more quickly. A loud stop means you're fighting the court; a quiet stop means you're working with it.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Linear kinetics, GRF & impulse-momentum*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Dynamic balance & directional control*
+<!-- TAICHIKB-CROSSREF-END -->

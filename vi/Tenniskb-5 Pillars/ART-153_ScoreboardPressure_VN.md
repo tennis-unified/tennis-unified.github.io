@@ -60,3 +60,10 @@ Bảng tỷ số thay đổi vật lý của sân đấu. Đang dẫn làm cơ t
 
 ## Ứng Dụng Thực Tế: "Bảng Tỷ Số Là Sự Dối Trá"
 Bảng tỷ số cho bạn biết *đã xảy ra gì*. Nó không cho bạn biết *làm gì tiếp theo*. Nghi thức của bạn mới cho biết điều đó. Hãy chơi theo nghi thức, không phải bảng tỷ số.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và lõi*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và bản lĩnh thời khắc quyết định*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy*
+<!-- TAICHIKB-CROSSREF-END -->

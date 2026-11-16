@@ -68,3 +68,10 @@ Chân kiểm tra — lơ lửng ở mức cam kết 40-60%, sẵn sàng bỏ ch�
 ## Ứng Dụng Thực Tế: "Bàn Chân Đầy Đủ Hoặc Không Vung"
 
 Cho người chơi một quy tắc: **trừ khi bàn chân bên ngoài được gọc đầy đủ, không thể vung.** Trong buổi tập tiếp theo, cho bóng huấn luyện gọc cam kết trong mười phút — bóng rộng được đưa vào với độ khó tăng dần, huấn luyện viên gọi "chân đầy" hoặc "kiểm tra" mỗi lần đến, và người chơi cố tình để những bóng gọc kiểm tra đi qua mà không chạm vào. Để bóng đi qua là điểm mấu chốt: nó đặt giá trị gọc cam kết cao hơn cả khao khát vung. Sau đó dùng vung bóng hai cân để cảm giác có một con số. Trong một buổi tập, hầu hết người chơi ngừng kiểm tra — và gọc cam kết đầu tiên thường tạo ra bóng nặng nhất trong ngày, vì lần đầu tiên mặt đất được phép đánh nó.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

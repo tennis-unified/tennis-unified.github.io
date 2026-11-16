@@ -37,3 +37,10 @@ This sequence ensures that the energy flows from the largest mass to the smalles
 
 ## Practical Application: The "Steel Frame" Sensation
 At the moment of impact, the athlete should feel like a steel frame. There should be no "give" or "bounce" in the joints. The energy of the impact should feel like it is passing straight through the body and into the ball, rather than being absorbed by the body. This is the ultimate goal of kinetic chain efficiency.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Cấu Trúc và Chức Năng Cơ Bản của Các Khớp Người (Basic Structure and Function of Human Joints)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch02-cau-truc-va-chuc-nang-co-ban-cua-cac-khop.html) — *Close-packed vs. loose-packed joint positions*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Upper extremity joint kinematics & alignment*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Avoiding joint hyperextension & overload injuries*
+<!-- TAICHIKB-CROSSREF-END -->

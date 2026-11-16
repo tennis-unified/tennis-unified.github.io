@@ -86,3 +86,10 @@ Attach a resistance band around the waist and practice the serve against resista
 ## Practical Application: "The Silent Serve"
 
 Hit 10 serves with your shoes off. Without the firm platform of a shoe, you will immediately feel whether your legs are truly driving into the ground or just bending and extending without force. Players who are not generating proper leg drive will feel their feet sliding or their ankles rolling. This drill provides instant feedback about ground force production that you can then apply when wearing shoes.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

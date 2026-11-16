@@ -134,3 +134,10 @@ Perform this session 2-3 times per week. It covers acceleration, maximum velocit
 - Static stretching (hamstrings, quads, hip flexors, calves) × 30 seconds each
 
 Track your times for the 30-meter sprints and the speed endurance repetitions. When your times improve by 0.1-0.2 seconds or more, your on-court speed has measurably increased. Speed is a skill — it improves with practice, not just physical conditioning. The players who move best on court are not always the fastest in a straight line; they are the ones who can accelerate, decelerate, and change direction with precision and efficiency.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+<!-- TAICHIKB-CROSSREF-END -->

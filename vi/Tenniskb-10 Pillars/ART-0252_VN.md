@@ -59,3 +59,10 @@ Chánh niệm cải thiện dung lượng bộ nhớ làm việc bằng cách gi
 
 ## Ứng Dụng Thực Tế: "Đồng Hồ Tải Nhận Thức"
 Phát triển một "đồng hồ tải nhận thức" nội tại từ 1 (tải tối thiểu) đến 10 (quá tải). Trong lúc chơi, định kỳ đánh giá tải nhận thức của bạn. Nếu đồng hồ đạt 7 trở lên, thực hiện hành động ngay: đơn giản hóa kế hoạch trận, tập trung vào một mục tiêu chiến thuật duy nhất, hoặc sử dụng bài tập thở để giảm lo âu. Tự giám sát này ngăn chặn quá tải bộ nhớ làm việc dẫn đến quyết định kém và lỗi không buộc, và nó đảm bảo rằng bạn duy trì chức năng nhận thức ở mức hỗ trợ chơi chất lượng cao.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

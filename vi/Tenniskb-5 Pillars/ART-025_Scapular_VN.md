@@ -31,3 +31,11 @@ Tổng của ba sự trễ này là những gì tạo ra "cú quất" đẳng c�
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Dây Đàn Hồng"
 Cảm giác phải là cánh tay của bạn là một dây đàn hồng gắn vào ngực bạn. Khi bạn xoay, dây đàn hồng giãn ra. Khi bạn đánh, dây đàn hồng bật lại. Nếu cánh tay cảm thấy "gắn" như một mảnh gỗ, bạn đang ghai.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và nhịp điệu xương bả vai–lồng ngực*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Động học xương bả vai và độ linh hoạt cột sống ngực*
+- [Chương 8: Hệ Xương: Bộ Xương Phụ (The Skeletal System: The Appendicular Skeleton)](https://taichikb.github.io/vi/books/tortora_ap/ch08-he-xuong-bo-xuong-phu.html) — *Giải phẫu xương bả vai và xương đòn*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Nhóm cơ ổn định xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

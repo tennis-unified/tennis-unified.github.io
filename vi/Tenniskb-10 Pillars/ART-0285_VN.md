@@ -74,3 +74,10 @@ Thới quen nên cảm thấy tự nhiên và thoải mái. Điều hiệu quả
 
 ## Ứng Dụng Thực Tế: "Thới Quen Giao Bóng"
 Phát triển một thới quen giao bóng nhất quán: (1) đứng sau đường cơ sở, (2) hít một hơi thở sâu, (3) hình dung giao bóng rơi vào mục tiêu, (4) nảy bóng ba lần, (5) sử dụng từ khóa của bạn ("nhẹ nhàng"), (6) thực hiện giao bóng. Thực hành thới quen này trong mọi buổi thực hành cho đến khi nó trở nên tự động. Trong thi đấu, sử dụng thới quen này để tạo ra một quy trình quen thuộc, kiểm soát được nâng cao sự tập trung và niềm tin. Thới quen giao bóng là thới quen trước trình diễn quan trọng nhất trong tennis vì mọi điểm đều bắt đầu bằng giao bóng của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

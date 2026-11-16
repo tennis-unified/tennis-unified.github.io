@@ -71,3 +71,10 @@ Khi thân mình xoay quá sớm trong giai đoạn tăng tốc, vai phải hoạ
 ## Ứng Dụng Thực Tế: "Cuộn Chuỗi Như Lưới"
 
 Tập serve ở 60% công lực với sự tập trung có chủ đích vào việc cảm nhận từng phần cơ thể đóng góp tuần tự. Bắt đầu với lực đẩy chân (cảm nhận mặt đất), sau đó xoay hông (cảm nhận khóa đai xoay), rồi gập thân mình (cảm nhận ngực hạ xuống), sau đó xoay vai (cảm nhận như roi), rồi búng cổ tay (cảm nhận tăng tốc). Nếu bất kỳ phần nào bắn ra ngoài trình tự, hãy bắt đầu lại. Phương pháp tỉnh thần này viết lại mô hình vận động nhanh hơn hàng nghìn lầp lặp lại vô thức.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

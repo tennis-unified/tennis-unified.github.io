@@ -148,3 +148,10 @@ Giao phẳng giữ thấp sau khi nảy:
 ## Ứng Dụng Thực Tế: "Bức Tường Chặn Bóng"
 
 Đứng ở vạch giao bóng với đối tác ở phía bên kia. Yêu cầu đối tác nạp bóng vào bạn với tốc độ ngày càng tăng, tập trung vào việc chặn bóng lại với backswing tối thiểu. Bắt đầu ở tốc độ vừa phải và tăng dần. Bài tập này phát triển kỹ thuật chặn bóng cần thiết để trả bóng giao phẳng nhanh. Mục tiêu là phát triển một "bức tường" với vợt của bạn để chệch hướng bóng mà không cần vung vợt lớn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+<!-- TAICHIKB-CROSSREF-END -->

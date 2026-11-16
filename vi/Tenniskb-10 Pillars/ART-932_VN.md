@@ -79,3 +79,10 @@ Tay vợt không phải powerlifter. Mục tiêu không phải đạt số cao n
 Thiết kế tuần gym quanh bài tập nền tảng: mô hình squat, mô hình bản lề (deadlift), mô hình ấn (bench press hoặc overhead press) và mô hình kéo (row hoặc pull-up). Thực hiện mỗi bài ít nhất một lần mỗi tuần, lý tưởng hai lần trong giai đoạn chuẩn bị. Xây dựng mọi bài khác — lunges, công việc trung tâm, bài phụ — quanh cốt lõi này.
 
 Theo dõi số liệu. Tay vợt biết benchmark squat, deadlift, bench và row có thước đo khách quan về tiến bộ và mục tiêu rõ cho khối tập tiếp theo. Nếu số liệu tăng nhưng tốc độ giao bằng phẳng, vấn đề không phải gym — nó là chuyển. Thêm jump squat, ném bóng y tế và tập sprint để nối khoảng cách giữa phòng tập và sân. Sức mạnh là nền tảng, nhưng sức mạnh bùng nổ là ngôi nhà.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -53,3 +53,10 @@ Quá trình tập:
 2. **Cặp chặn, rồe tung xúc xắc.** Mười chu kỳ vòng lặp-slice dự đoán, rồi tung xúc xắc trước mỗi bóng: lẻ nghĩa là vòng lặp, chẵn nghĩa là slice.
 3. **Cổng độ cao.** Dây ở 1.6 m sau đường cuối và 0.7 m trong đó. Tiếp xúc vòng lặp phải xảy ra trên dây cao, tiếp xúc slice dưới dây thấp.
 4. **Chấm điểm chuyển đổi, không cú đánh.** Trong trận cuối, điểm được thưởng cho tư thế chuẩn bị đúng khi tiếp xúc bất kể bóng đi đâu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

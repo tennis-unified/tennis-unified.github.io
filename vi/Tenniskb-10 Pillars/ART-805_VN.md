@@ -147,3 +147,10 @@ Bài tập này xây dựng tính nhất quán đặt bóng và mô phỏng áp 
 | Giao bóng hai dễ bị tấn công | Giao bóng kick yếu, tốc độ bóng thấp, đặt ngắn | Thường xuyên bị break game giao bóng | Tập giao bóng kick chuyên dụng với bài tập chải lên; ném bóng y tê overhead |
 | Tốc độ giao bóng đình trệ | Đẩy chân yếu, trình tự chuỗi động lực kém | Giao bóng trở nên dễ đoán và dễ trả | Huấn luyện plyometric chân; phân tích video thời gian chuỗi động lực |
 | Hướng giao bóng không nhất quán | Ném bóng thay đổi, thay đổi thân người | Giao bóng trúng lưới hoặc chạy xa | Thực hành chỉ ném bóng; bài tập căn chỉnh với dấu chân trước |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

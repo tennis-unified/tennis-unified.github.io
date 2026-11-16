@@ -39,3 +39,10 @@ Coaches cannot yet measure an athlete's methylation profile on court, and they d
 
 ## Practical Application: "Train the Response, Not the Plan"
 The epigenetic revolution's gift to tennis is humility with a stopwatch: the plan is only a hypothesis, and the athlete's response is the data that matters. Measure baselines, run defined blocks, reassess honestly, and adjust the dose for the human in front of you. When a program stalls, change the stimulus or the recovery before blaming the player — because at the molecular level, every athlete is writing their own adaptation story, one session at a time.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Muscular mechanics: eccentric/concentric & force-velocity*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Muscular system: prime movers & stabilizers*
+<!-- TAICHIKB-CROSSREF-END -->

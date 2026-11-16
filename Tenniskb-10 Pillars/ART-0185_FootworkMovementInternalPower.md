@@ -85,3 +85,10 @@ Total required: 450-1000 ms. The window is tight, and any inefficiency in the re
 ## Practical Application: "Set Before the Strings"
 
 At the next session, use a simple accountability measure: the coach stands at the net and claps at the moment they simulate the opponent's contact. The player must be set (both feet down, split-step executed) before the clap. Feed 20 rally balls at moderate pace. Score: how many times is the player set before the clap? Target: 15/20 or better. If the score is below 12/20, the recovery system — not the strokes — is the bottleneck. Run the hit-recovery coupling drill (ART-0181) for 10 minutes and re-score. The improvement is usually immediate and measurable, because the player is eliminating dead time rather than moving faster.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+<!-- TAICHIKB-CROSSREF-END -->

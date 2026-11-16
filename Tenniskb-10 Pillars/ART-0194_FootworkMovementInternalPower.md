@@ -73,3 +73,10 @@ In both protocols apply the **one-look rule**: by the middle of the second cross
 ## Practical Application: "Two Crosses and a Decision"
 
 Set up a wide-ball station: the coach feeds 3 m outside the sideline, the player strikes on the run, and three exit gates are marked — a third-crossover gate at 2 m, a split-arrival gate at the recovery coordinate, and a sprint lane beyond 4 m. The player runs the sequence (strike → double crossover → chosen exit) and scores one point for a clean exit, zero for a standstill, minus one for an exit chosen after the movement stopped. Ten balls per set, three sets. The station looks simple; it is quietly training the three hardest things in extreme recovery — momentum entry, threshold judgment, and pre-committed exits — in a single repetition.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

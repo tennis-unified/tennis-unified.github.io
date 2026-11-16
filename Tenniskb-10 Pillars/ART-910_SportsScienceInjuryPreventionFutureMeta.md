@@ -99,3 +99,10 @@ Wrist and hand injuries account for approximately 10-15% of tennis-related condi
 ## Practical Application: "Grip Lightly, Swing Freely"
 
 A death grip on the racket transmits every ounce of vibration and shock directly to your wrist. Practice holding your racket at only 3-10 grip pressure during rallies — firm enough to control the racket, loose enough to absorb shock. Between points, consciously release all grip pressure and shake your hand. Over time, this conscious relaxation becomes automatic, reducing cumulative wrist stress dramatically. Your wrist will thank you after 10,000 swings.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Elbow, forearm pronation & wrist mechanics*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -62,3 +62,10 @@ Vị trí chạm ngang có tương tác với hướng đánh: các cú cross-co
 ## Ứng Dụng Thực Tiễn: "Bài Tập Định Vị Ngang"
 
 Thực hành đánh forehand ở ba vị trí ngang khác nhau: ngay phía trước đường trung tuyến (cho cú down-the-line), 0,2m phía trước (cho các bóng rally tiêu chuẩn), và 0,3m phía trước (cho cross-court tấn công). Lưu ý cách mỗi vị trí ảnh hưởng đến hướng và mức năng lượng của cú đánh. Phát triển khả năng điều chỉnh vị trí ngang dựa trên hướng đánh dự kiến.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Đường Bên: ổn định ngang và lực sang bên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -57,3 +57,10 @@ Một bài tập hiệu quả khác là đào tạo nhận thức góc: đặt m
 ## Ứng Dụng Thực Tế: "Slice Xuyên Không Khí"
 
 Để áp dụng Hình học quỹ đạo slice: mô hình trượt, chìm và lướt trong trận đấu tiếp theo của bạn, hãy bắt đầu bằng việc hình dung sân như một lưới hình học trước mỗi điểm. Xác định góc lớn nhất dành cho đối thủ và chọn vị trí để tối thiểu hóa nó. Thực hành một khuôn mẫu hình học cụ thể mỗi buổi tập cho đến khi nó trở nên bản năng. Quay video bản thân thi đấu và phân tích xem việc chọn vị trí của bạn có phù hợp với lý tưởng hình học hay không. Hãy nhớ: hình học sân là một kỹ năng được cải thiện với sự thực hành có chủ đích, giống như những cú đánh của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

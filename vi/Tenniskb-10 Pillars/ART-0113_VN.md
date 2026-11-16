@@ -84,3 +84,10 @@ Thực hiện kiểm toán độ cứng hàng tuần:
 4. **Đo lại.** Sau 3-4 tuần làm việc có mục tiêu, kiểm tra lại. Mục tiêu không phải độ cứng tối đa — mà là độ cứng tối ưu cho khối lượng cơ thể, sức khỏe gân, và nhu cầu chuyển động của từng người.
 
 Người chơi chạm đất với độ cứng đúng không cảm thấy mình đang làm việc vật để di chuyển — họ cảm thấy như sân đẩy họ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Dự trữ và hồi phục năng lượng đàn hồi mô mạc*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -106,3 +106,10 @@ Exercises that integrate the entire kinetic chain—including medicine ball thro
 
 ## Practical Application: "The Wave"
 Imagine a wave traveling through your body: it starts at your feet, rises through your legs, swells through your trunk, crests at your shoulder, and crashes at your racket. The wave must travel in one continuous motion—no segment should move before the segment below it has begun. Practice this by performing a slow-motion groundstroke: first, feel your legs drive into the ground; then feel your hips begin to rotate; then feel your trunk follow; then feel your shoulder accelerate; finally, feel your arm and racket whip through contact. Do this 10 times slowly, feeling the wave travel through your body. Then gradually increase speed while maintaining the sequential pattern. When you add the ball, your strokes will feel effortless because you're using your entire body in a coordinated sequence rather than just your arm. The wave is always there—you just need to learn to ride it.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Myofascial force transmission across segments*
+<!-- TAICHIKB-CROSSREF-END -->

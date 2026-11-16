@@ -32,3 +32,9 @@ Bàn tay không di chuyển theo một đường tròn đơn giản; nó di chuy
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Vòng Hula-Hoop"
 Hãy tưởng tượng bạn đang quay một chiếc vòng hula-hoop. Để làm vòng xoay nhanh hơn, bạn không chỉ đẩy nó về phía trước; bạn kéo tâm của nó về phía mình. Cây vợt là chiếc vòng, và bàn tay bạn là tâm. Hãy cảm nhận lực "kéo" để tạo ra lực "đẩy".
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Lực hướng tâm và kiểm soát bán kính quay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Động học quỹ đạo cong và chuyển động góc*
+<!-- TAICHIKB-CROSSREF-END -->

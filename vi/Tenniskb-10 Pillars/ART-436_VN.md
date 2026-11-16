@@ -60,3 +60,10 @@ Vận động viên gặp khó khăn với slice hai tay thường được lợ
 
 ## Ứng Dụng Thực Tế: "Thực Hành Slice Hai Tay"
 Đứng trên vạch gốc và đánh mười cú slice backhand hai tay, tập trung vào việc tạo ra cú nảy thấp và trượt nhanh. Sau mỗi cú đánh, ghi chú xem bóng có nảy dưới độ cao lưới hay không. Nếu bóng nảy cao, mặt vợt đang mở quá hoặc quỹ đạo dốc quá. Điều chỉnh cho đến khi ít nhất bảy trong mười cú đánh trượt thấp, giúp hình thành cảm giác cho cú slice hai tay tấn công.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

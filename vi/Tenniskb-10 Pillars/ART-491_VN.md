@@ -45,3 +45,10 @@ Người chơi gặp khó khăn với thực hành đàm ma thường được l
 
 ## Ứng Dụng Thực Tế: "Quy Trình Đàm Ma"
 Thực hành đàm ma trong 5–10 phút trước mỗi buổi luyện tập, tập trung vào kỹ thuật đúng. Bắt đầu chậm rãi, dần dần tăng tốc độ khi đàm trở nên tự nhiên hơn. Hình dung bóng và nhát đánh mong muốn, và tập trung phát triển một đàm mượt mà và hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -50,3 +50,10 @@ Người chơi nào đón lấy quá trình phát triển, tìm kiếm phản h�
 
 ## Ứng Dụng Thực Tế: "Kế Hoạch Phát Triển"
 Tạo một kế hoạch phát triển cá nhân dựa trên trình độ và mục tiêu hiện tại của bạn. Xác định các khu vực cụ thể cần cải thiện và các bài tập để giải quyết chúng. Theo dõi tiến triển theo thời gian, điều chỉnh kế hoạch khi bạn tiến bộ. Với luyện tập kiên trì, có chủ đích, bạn sẽ phát triển một backhand đáng tin cậy, linh hoạt phục vụ tốt cho bạn ở bất kỳ trình độ nào.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

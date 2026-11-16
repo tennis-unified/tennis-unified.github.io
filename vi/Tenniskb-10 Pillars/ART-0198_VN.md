@@ -32,3 +32,10 @@ Quy tắc chung: **vì một bước lén sai tốn gấp đôi một bước l�
 
 ## Ứng Dụng Thực Tế: "Lập Biểu, Tô Bóng, Rời Khỏi"
 Chạy một phiên dự đoán 45 phút mỗi tuần. **Lập biểu** (10 phút): trong điểm trực tiếp, đếm 20 trả lời đối thủ theo tình huống — góc, thăng bằng, điểm số — và tính phần trăm thực tế. **Tô bóng** (15 phút): rally cho bóng trong đó mọi split phải đáp thiên lệch 30-60 cm về phía xác suất cao theo biểu; bóng cho sai phía kiểm tra sửa lỗi. **Rời khỏi** (15 phút): HLV cho bóng bị ép, duỗi cực độ; người chời chỉ được cam kết toàn bộ *sau khi* nói to tín hiệu to ("duỗi — bóng giữa yếu") — và một trong bốn bóng cho cố ý phản tín hiệu, buộc thang máy thoát. Chấm phiên bằng mét: khoảng cách tiết kiệm khi đọc đúng trừ khoảng cách mất khi đọc sai. Tổng mét dương mỗi tuần, duy trì qua một tháng, nghĩa là người chơi đã ngừng đoán và bắt đầu mượn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

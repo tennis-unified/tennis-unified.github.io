@@ -55,3 +55,10 @@ Những người chơi gặp khó khăn từ tuyến cuối thường được h
 
 ## Ứng Dụng Thực Tế: "Luyện Tập Mẫu Đối Công"
 Nhờ một bạn tập đứng từ tuyến cuối đưa bóng liên tục vào phía trái tay của bạn. Luyện tập ba mẫu đối công: đánh chéo sân vào khoảng trống, đánh dọc biên để thay đổi hướng bóng, và đánh inside-out vào phía trái tay của đối thủ. Hãy ghi lại số điểm bạn giành được với từng mẫu đánh. Bài tập này giúp hình thành tư duy chiến thuật cần thiết để chơi hiệu quả từ tuyến cuối.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

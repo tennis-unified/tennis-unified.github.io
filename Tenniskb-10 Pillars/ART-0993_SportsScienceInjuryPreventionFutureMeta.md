@@ -96,3 +96,10 @@ Several high-profile tennis players have publicly undergone regenerative treatme
 ## Practical Application: "The Regeneration Decision Tree"
 
 Tennis players facing chronic injuries should follow a structured decision tree before pursuing regenerative treatments: First, exhaust 3-6 months of evidence-based rehabilitation (eccentric loading for tendinopathy, progressive strengthening for muscle injuries). If rehabilitation fails, obtain advanced imaging (MRI or diagnostic ultrasound) to characterize the tissue pathology. For tendinopathy with confirmed structural changes, PRP is the first-line regenerative option — it has the strongest evidence base, lowest risk, and is widely available. For cartilage defects or failed PRP, consider BMAC under ultrasound guidance from a sports medicine physician experienced in regenerative procedures. Always verify that the treating facility uses standardized preparation protocols and contributes to outcome registries. Regenerative medicine is not a shortcut — it is a tool that works best when combined with appropriate rehabilitation and load management. The players who benefit most are those who view these treatments as part of a comprehensive recovery plan rather than a standalone solution.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Angular kinematics & sequential kinetic chain*
+<!-- TAICHIKB-CROSSREF-END -->

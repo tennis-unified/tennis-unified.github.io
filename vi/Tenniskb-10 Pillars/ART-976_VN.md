@@ -164,3 +164,10 @@ Lực Magnus tỷ lệ thuận với tốc độ xoay và tốc độ bóng.
 ## Ứng Dụng Thực Tế: "Hiểu Rõ Quả Bóng Của Bạn"
 
 Trước trận đấu tiếp theo, chú ý đến loại bóng được sử dụng. Nếu bạn đang thi đấu ở độ cao, đảm bảo dùng bóng loại 3 — áp suất nội bộ thấp hơn bù đắp cho giảm mật độ không khí. Nếu bạn đang tập với bóng cũ nhưng thi đấu với bóng mới, dành ít nhất 15 phút đánh bóng mới trước trận để thích ứng. Vào ngày lạnh, làm ấm bóng với vài phút đánh trước thi đấu — cao su cần làm ấm cho nảy tối ưu. Những điều chỉnh nhỏ này, dựa trên vật lý bóng, có thể tạo sự khác biệt đo được trong thành tích của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -52,3 +52,10 @@ Force plate studies show that elite forehands generate vertical ground reaction 
 ## Practical Application: "The Push and Spin"
 
 Practice the combined linear and rotational weight transfer by standing in a closed stance and pushing off your rear foot while simultaneously rotating your hips toward the target. Feel the forward push and the hip rotation happening together, not sequentially. Imagine your body as a spring that is both compressing forward and uncoiling simultaneously. This dual-action produces the explosive power characteristic of the modern forehand.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Myofascial force transmission across segments*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -244,3 +244,10 @@ Tạo một thẻ cỡ túi áo với thói quen trước trận:
 | Lo lắng ảnh hưởng thành tích | Chuẩn bị tâm lý không đủ, lo âu | Thành tích giảm, nghẹn ngào | Kỹ thuật chuẩn bị tâm lý; thở; hình ảnh hóa; xây dựng tự tin |
 | Thiếu tập trung khi bắt đầu trận | Khởi động tâm lý không đủ | Sai lầm không cố ý, ra quyết định kém | Quy trình khởi động tâm lý; phát triển tín hiệu tập trung; huấn luyện hiện tại |
 | Thành tích không nhất quán giữa các trận | Chuẩn bị không nhất quán, thói quen biến đổi | Kết quả khó đoán | Tiêu chuẩn hóa thói quen trước trận; thực hành nhất quán; theo dõi chất lượng chuẩn bị |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

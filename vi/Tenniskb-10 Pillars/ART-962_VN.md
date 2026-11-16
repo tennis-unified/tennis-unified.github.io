@@ -147,3 +147,10 @@ Huấn luyện hỗ trợ quyền tự chủ đáp ứng cả ba nhu cầu:
 ## Ứng Dụng Thực Tế: "Phản Hồi Là Món Quà — Gói Nó Thật Đẹp"
 
 Mọi tương tác phản hồi đều là cơ hội để hoặc xây dựng hoặc phá hoại sự phát triển của vận động viên. Trước khi đưa ra phản hồi, hỏi ba câu hỏi: (1) Đây có phải là thông tin vận động viên cần ngay bây giờ không? (2) Giọng điệu của tôi có hỗ trợ và tôn trọng không? (3) Tôi đã cung cấp đủ khích lệ tích cực để duy trì sự tự tin chưa? Các huấn luyện viên giỏi nhất đưa ra phản hồi cụ thể, khả thi và được gửi với sự quan tâm chân thành cho sự phát triển của vận động viên. Hãy nhớ: vận động viên không phải là vấn đề cần sửa — họ là con người cần được phát triển.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

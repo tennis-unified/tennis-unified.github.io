@@ -123,3 +123,10 @@ Nâng chân cao hơn mức tim giúp:
 | Đau nhức cơ kéo dài | Hồi phục thụ động không đủ, vận động quá nhiều | Giảm phong độ ngày hôm sau | Tăng hồi phục thụ động; nghỉ ngơi; nén |
 | Đau không thuyên giảm với hồi phục tích cực | Thiếu các phương pháp thụ động | Đau mãn tính, giảm phong độ | TENS, liệu pháp vi điện; đánh giá y khoa |
 | Mệt mỏi không hết dù đã ngủ | Phương pháp hồi phục chưa đủ | Mệt mỏi tích lũy | Liệu pháp nén; EMS; quản lý khối lượng tập |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+<!-- TAICHIKB-CROSSREF-END -->

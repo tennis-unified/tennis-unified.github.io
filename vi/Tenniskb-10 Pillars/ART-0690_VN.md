@@ -43,3 +43,10 @@ Cú trả bóng tầm ngực là tình huống volley chặn tiêu chuẩn. Hãy
 ## Ứng Dụng Thực Tế: "Vợt Phía Trước, Chặn Bóng, Chuyển Hướng"
 
 Khi đối mặt với cú trả bóng tầm ngực: (1) giữ vợt phía trước, (2) chặn bóng, (3) chuyển hướng bóng sang khoảng sân trống. Đây chính là volley chặn tiêu chuẩn — hãy làm chủ nó.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

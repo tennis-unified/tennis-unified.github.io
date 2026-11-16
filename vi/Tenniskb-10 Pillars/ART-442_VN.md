@@ -60,3 +60,10 @@ Người chơi nên kết hợp các bài tập này vào quình gình huấn lu
 
 ## Ứng Dụng Thực Tế: "Bài Tập Roi"
 Thực hành cú backhand mà không cần bóng, tập trung vào trễ và giải phóng cổ tay. Bắt đầu cú swing chậm rãi, cho phép mũi vợt trễ lại phía sau bàn tay. Sau đó giải phóng cổ tay, đẩy mũi vợt tăng tốc qua vùng chạm bóng. Lặp lại cho đến khi trễ và giải phóng cảm thấy tự nhiên, sau đó thực hành với bóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Động học góc và chuỗi động học tuần tự*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+<!-- TAICHIKB-CROSSREF-END -->

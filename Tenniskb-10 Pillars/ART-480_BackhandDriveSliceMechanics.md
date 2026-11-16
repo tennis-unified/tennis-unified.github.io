@@ -45,3 +45,10 @@ Players who struggle with court positioning often benefit from drills that empha
 
 ## Practical Application: "The Positioning Practice"
 During practice, focus on positioning after each shot. After a baseline shot, recover to the center of the baseline. After a short ball, move forward to the mid-court. After an approach shot, move forward to the net. Track how many times you are in the correct position for the next shot. This drill develops the strategic awareness needed for effective court positioning.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

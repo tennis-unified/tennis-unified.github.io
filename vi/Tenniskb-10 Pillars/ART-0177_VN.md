@@ -27,3 +27,10 @@ Tiếp cận bao phủ 5-7 m trong 1.0-1.4 s giữa tiếp xúc trả và trả 
 
 ## Ứng Dụng Thực Tế: "Một Chuỗi, Bốn Mối"
 Cấu trúc phiên tiếp theo như tiến trình đơn trên một sân: (1) 10 chip bước vào cho bằng tay, chấm đáp chân đánh trong đường cuối; (2) 10 bóng giao với split di chuyến và volley bóng, chấm khung thời gian split; (3) điểm giao bóng lần hai trực tiếp nơi trả bời phải vào trên mỗi giao bóng lần hai, chấm không bởi ai thắng điểm mà bởi volley đầu tiên được đánh ở đâu — đường giao bóng hoặc hơn tính, đất không chủ không tính.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

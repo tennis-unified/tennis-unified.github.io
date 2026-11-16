@@ -51,3 +51,10 @@ Cái gì được đo lường sẽ được cải thiện. Bài viết này đ�
 
 ## Ứng Dụng Thực Tế: "Bảng Điều Khiển"
 Xây dựng bảng điều khiển vận động viên: năm điểm cột trụ (0-100) theo xu hướng thời gian. Ưu tiên huấn luyện bắt nguồn từ góc phần tư thấp nhất — bạn không đoán, bạn đo lường.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

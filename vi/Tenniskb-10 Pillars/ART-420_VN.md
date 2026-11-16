@@ -70,3 +70,10 @@ Người chơi nên kết hợp các bài tập này vào thói quen tập luy�
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Cân Bằng"
 Trong lúc tập, sau mỗi cú vợt tay ngược, giữ tư thế kết thúc trong hai giây và kiểm tra sự cân bằng. Bạn có vỮng chắc trên chân trước không? Đầu có ngang bằng không? Bạn có sẵn sàng di chuyển theo bất kỳ hướng nào không? Nếu không, hãy xác định nguyên nhân và điều chỉnh. Theo thời gian, kiểm tra này trở nên tự động, đảm bảo rằng mọi cú đánh đều được thực hiện từ một tư thế cân bằng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

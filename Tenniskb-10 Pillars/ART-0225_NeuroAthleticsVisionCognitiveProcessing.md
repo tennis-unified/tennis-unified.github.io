@@ -67,3 +67,10 @@ Gradually increase your comfort with risk by taking controlled risks in practice
 
 ## Practical Application: "The Risk Thermometer"
 Develop an internal "risk thermometer" that ranges from 1 (maximum safety) to 10 (maximum aggression). Before each shot, assess the situation and set the thermometer to the appropriate level. For example, serving at 30-30 might be a 5 (moderate risk), while serving at break point down might be a 3 (lower risk). This explicit risk assessment prevents the emotional or habitual shot selection that ignores the match context and ensures that your aggression level is always calibrated to the situation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+<!-- TAICHIKB-CROSSREF-END -->

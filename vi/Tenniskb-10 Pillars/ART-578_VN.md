@@ -58,3 +58,10 @@ Chạm bóng yếu xảy ra khi người trả bóng không tạo ra chạm bón
 
 ## Ứng Dụng Thực Tế: "Drill Sửa Lỗi"
 Xác định lỗi trả bóng thường gặp nhất của bạn và luyện tập bài tập sửa lỗi phù hợp mỗi ngày trong 2 tuần. Theo dõi tiến trình của bạn và hướng đến sự cải thiện đáng kể vào cuối tuần thứ hai.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

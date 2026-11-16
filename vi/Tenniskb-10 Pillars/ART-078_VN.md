@@ -51,3 +51,10 @@ Mắt cá chân là khớp nối đầu tiên trong chuỗi động học, nơi 
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Mắt Cá Chân"
 Khi tải và đẩy chân, hãy đảm bảo mắt cá chân ổn định và đẩy mạnh. Nếu đẩy yếu, hãy làm việc về sức mạnh cẳng chân và nhảy. Nếu mắt cá chân cảm thấy không ổn định, hãy làm việc về cân bằng và sức mạnh cơ xương bả chân. Nếu bạn không thể gấp đầu gối sâu, hãy làm việc về khả động gấp bàn chân. Mắt cá chân là nơi chuỗi bắt đầu — một mắt cá chân mạnh, ổn định đặt nền tảng cho mọi thứ phía trên.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

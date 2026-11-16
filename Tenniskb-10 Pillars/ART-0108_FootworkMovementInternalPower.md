@@ -84,3 +84,10 @@ Give the player one image: **land ready to go, not ready to decide.** Then build
 3. **The drive.** The landing is the execution. The first step is a drive along the pre-set vector — no stutter, no shift, no construction. The coach watches for the drive: a single, explosive movement from the first frame.
 
 A player who lands pre-set does not move faster in the first step — they simply never pay the 30-80 ms tax that neutral landers pay on every exchange.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

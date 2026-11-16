@@ -30,3 +30,10 @@ Năm mô hình cụ thể chiếm phần lớn bước không cần thiết:
 
 ## Ứng Dụng Thực Tế: "Đếm Bước Của Bạn"
 Trong phiên tiếp theo, quay người chời từ cạnh trong rally 10 point tốc độ vừa. Đếm tổng số bước chuyển động (trừ tiếp xúc cú đánh) và ước lượng bước dư thừa. Cho người chời con số: "Bạn đã đi 48 bước chơi 10 point, và khoảng 14 trong số đó là dư thừa." Sau đó chạy bài tập quy tắc "một bước" 10 phút — bất kỳ lướt thêm sau khi đến nơi khởi động lại point. Quay lại 10 point khác. Số bước thường giảm 10-20% trong phiên.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

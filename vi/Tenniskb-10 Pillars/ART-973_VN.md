@@ -199,3 +199,10 @@ Công nghệ đeo được đã chuyển từ sự mới lạ sang nhu cầu thi
 ## Ứng Dụng Thực Tế: "Theo Dõi Điều Quan Trọng"
 
 Bạn không cần thiết bị đắt nhất để hưởng lợi từ việc theo dõi. Bắt đầu với một chỉ số: nhịp tim buổi sáng của bạn. Đo nó mỗi sáng trong hai tuần để thiết lập chuẩn. Sau đó, khi thấy nó cao hơn 5+ nhịp/phút so với chuẩn, coi đó là dấu hiệu giảm cường độ huấn luyện trong ngày. Chỉ số đơn miễn phí này (sử dụng bất kỳ máy đo nhịp tim nào hoặc thậm chí kiểm tra mạch thủ công) có thể ngăn ngừa quá tải và giữ cho bạn khỏe mạnh. Khi bạn tinh vi hơn, thêm theo dõi giấc ngủ và cuối cùng là cảm biến vợt thông minh. Chìa khóa không phải là công nghệ mà là sự sử dụng nhất quán dữ liệu để đưa ra quyết định tốt hơn về cơ thể.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

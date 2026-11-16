@@ -44,3 +44,10 @@ Giai đoạn nạp phải hoàn tất trước khi xoay bắt đầu:
 
 ## Ứng Dụng Thực Tế: "Bài Thực Hành Nạp Trước - Xoay Sau"
 Thực hành nạp hoàn toàn trước khi bắt đầu xoay. Đứng ở tư thế sẵn sàng và thực hiện cú đánh nền chậm: trước tiên, nạp sâu (cong gối, xoay thân về sau), cảm giác căng ở chân và thân. Giữ tư thế nạp này trong một giây đầy đủ. Bây giờ xoay: trước hông, rồi thân, rồi vai, rồi tay. Bài tập này dạy hệ thần kinh hoàn tất giai đoạn nạp trước khi bắt đầu xoay.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+<!-- TAICHIKB-CROSSREF-END -->

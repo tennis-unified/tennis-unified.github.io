@@ -64,3 +64,10 @@ Người chơi nên tích hợp các bài tập này vào thói quen luyện t�
 ## Ứng Dụng Thực Tế: "Cú Tiếp Cầu Slice"
 
 Nhờ một người bạn ném bóng ngắn về phía trái của bạn. Luyện đánh cú slice tiếp cầu ngắn và ngay lập tức di chuyển về phía lưới. Tập trung vào việc tạo ra một cú slice thấp, trượt, rơi vào vùng giao bóng và buộc đối thủ phải đánh bóng lên trên. Theo dõi tiến trình qua các buổi tập để đảm bảo cú tiếp cầu đang phát triển đúng hướng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

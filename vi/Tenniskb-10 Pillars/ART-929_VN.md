@@ -64,3 +64,10 @@ Phát triển thói quen trước điểm bao gồm kích hoạt thể lực và
 ## Ứng Dụng Thực Tế: "Quản Lý Tải, Bảo Tồn Hiệu Suất"
 
 Phát triển thói quen trước điểm bao gồm kích hoạt thể lực và gợi ý tinh thần để tự động hóa việc ra quyết định. Trong các lần đổi sân, thực hành hít thở sâu (hít vào 4 nhịp, giữ 4 nhịp, thở ra 4 nhịp) để kích hoạt hệ thần kinh phó giao cảm và giảm tải nhận thức. Tập trung vào các yếu tố có thể kiểm soát thay vì các yếu tố không thể kiểm soát. Giữa các trận đấu, ưu tiên giấc ngủ và phục hồi tinh thần hơn tập luyện thêm. Kết hợp 10 phút thiền chánh niệm mỗi ngày để xây dựng khả năng kiểm soát chú ý. Hãy nhớ: não bộ của bạn là cơ bắp quan trọng nhất, hãy tập luyện và bảo vệ nó như bạn với bất kỳ bộ phận nào khác trong cơ thể.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

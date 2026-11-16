@@ -58,3 +58,10 @@ The lumbo-pelvic complex—the junction between the lumbar spine and the pelvis�
 
 ## Practical Application: "The Pelvic Control Drill"
 Practice controlling your pelvic position during groundstrokes. Focus on keeping your pelvis level and stable during loading, then rotating it smoothly and fully during the forward swing. If you feel your pelvis dropping, tilting, or rotating unevenly, work on lumbo-pelvic stability exercises including bridges, bird-dogs, and dead bugs.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Myofascial force transmission across segments*
+<!-- TAICHIKB-CROSSREF-END -->

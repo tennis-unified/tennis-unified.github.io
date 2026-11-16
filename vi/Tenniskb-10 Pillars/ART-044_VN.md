@@ -108,3 +108,10 @@ Chuyển động bất đối xứng giữa hai bên:
 
 ## Ứng Dụng Thực Tế: "Điểm Nối Chắc Chắn"
 Hãy tưởng tượng phức hợp thắt lưng-chậu của bạn như một điểm nối giữa hai đường cao tốc: đường cao tốc chi dưới và đường cao tốc thân trên. Điểm nối phải đủ chắc để truyền giao thông (lực) hiệu quả mà không tắc nghẽn (mất năng lượng), nhưng đủ linh hoạt để cho phép chuyển động xoay tạo ra sức mạnh. Luyện tập bằng cách thực hiện cú đáy sân trong khi cảm nhận vùng thắt lưng-chậu như một điểm nối chắc chắn giữa thân dưới và thân trên. Nếu cảm thấy mất năng lượng ("tắc nghẽn"), tập trung ổn định chậu và cột thắt lưng. Nếu cảm thấy cứng, tập trung cho phép xoay mượt mà. Mục tiêu là một điểm nối chắc truyền lực hiệu quả trong khi cho phép tự do xoay điều khiển cú đánh của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+<!-- TAICHIKB-CROSSREF-END -->

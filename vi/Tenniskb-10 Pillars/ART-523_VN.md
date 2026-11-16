@@ -157,3 +157,10 @@ Sau mỗi trận đấu, ghi lại năm con số này trong sổ hoặc ứng d�
 5. Số lượng double fault
 
 Theo dõi qua 10-20 trận để xác định xu hướng và điểm cần cải thiện. Nhật ký đơn giản này cung cấp thông tin hành động nhiều hơn bất kỳ lượng tập luyện chung nào vì nó tập trung huấn luyện vào các điểm yếu cụ thể.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

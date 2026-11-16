@@ -149,3 +149,10 @@ Biện pháp chủ động ngăn ngừa bất đối xứng không thích nghi:
 
 ## Ứng Dụng Thực Tế: "Bài Kiểm Tra Cân Bằng"
 Hãy đứng trên một chân và thực hiện 10 nhảy dọc nhỏ, đo chiều cao bạn nhảy được. Lặp lại trên chân kia. Chênh lệch chiều cao nhảy giữa hai chân chỉ ra bất đối xứng GRF thẳng đứng của bạn. Chênh lệch dưới 10% là lý tưởng; 10-20% chấp nhận được nhưng cần theo dõi; hơn 20% gợi ý mất cân bằng đáng kể có thể ảnh hưởng hiệu suất và nguy cơ chấn thương. Bây giờ thực hiện nhảy xa một chân: đứng trên một chân và nhảy về phía trước xa nhất có thể, đo khoảng cách. Lặp lại trên chân kia. Chênh lệch khoảng cách chỉ ra bất đối xứng GRF ngang của bạn. Nếu bất kỳ bài kiểm tra nào tiết lộ mất cân bằng đáng kể (>15%), hãy đưa huấn luyện một chân cho chân yếu vào thói quen: gù một chân, nhảy một chân, và bài tập cân bằng một chân. Qua nhiều tuần và tháng, huấn luyện nhắm mục tiêu này sẽ giảm bất đối xứng và cải thiện cả hiệu suất và khả năng phục hồi. Mục tiêu không phải đối xứng hoàn hảo — một số bất đối xứng là tự nhiên và có lợi — mà là giữ bất đối xứng trong phạm vi thích nghi nơi nó giúp chứ không cản trở trò chơi của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Động lực học tuyến tính, GRF và xung lượng*
+<!-- TAICHIKB-CROSSREF-END -->

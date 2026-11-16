@@ -57,3 +57,10 @@ Dần dần giảm thời gian khả dụng cho việc ra quyết định trong 
 
 ## Ứng Dụng Thực Tế: "Quy Tắc Hai Tùy Chọn"
 Dưới áp lực thời gian, giới hạn lựa chọn cú đánh của bạn vào hai tùy chọn được xác định trước. Trước khi quả bóng đến, nhanh chóng đánh giá xem nó sẽ rơi vào vùng "chính" (cú đánh ưa thích) hay vùng "phụ" (cú đánh dự phòng) của bạn. Quyết định nhị phân này nhanh hơn đánh giá nhiều tùy chọn và ngăn chặn sự tê liệt xảy ra khi người chơi cố gắng chọn từ quá nhiều khả năng. Quy tắc hai tùy chọn chuyển đổi một lựa chọn phức tạp thành nhiệm vụ phân biệt nhanh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

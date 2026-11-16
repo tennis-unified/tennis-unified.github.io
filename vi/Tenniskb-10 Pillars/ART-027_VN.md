@@ -140,3 +140,10 @@ Bài tập tăng linh hoạt cơ xoay:
 
 ## Ứng Dụng Thực Tế: "Cái Lò Xo Cuộn"
 Hãy tưởng tượng mỗi cơ xoay thân là một cái lò xo cuộn. Khi nạp, bạn nén lò xo (kéo giãn cơ), lưu trữ năng lượng đàn hồi. Khi vung về phía trước, bạn thả lò xo (cơ hồi ph), thêm vào lực xoay. Càng nén lò xo sâu khi nạp (càng lớn tách biệt hông-thân), bạn càng lưu trữ nhiều năng lượng — và giải phóng càng mạnh mẽ. Thực hành bằng cách thực hiện cú đánh nền với tách biệt hông-thân phóng đại, cảm nhận căng ở cơ vi và bật ngược hồi ph khi vung. Cảm giác lò xo cuộn nên rõ ràng: căng khi nạp, bật khi vung. Nếu bạn không cảm nhận được cái bật, bạn hoặc không tách biệt đủ (không nén lò xo đủ sâu) hoặc không giải phóng kéo giãn đủ nhanh (do dự trước vung). Phát triển cảm giác lò xo cuộn này qua luyện tập hàng ngày, và cú đánh của bạn sẽ tăng sức mạnh không từ nỗ lực cơ bắp mà từ hồi ph đàn hồi cơ xoay thân.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Dự trữ và hồi phục năng lượng đàn hồi mô mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+<!-- TAICHIKB-CROSSREF-END -->

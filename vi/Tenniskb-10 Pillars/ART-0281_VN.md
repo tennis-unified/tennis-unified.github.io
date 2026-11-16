@@ -78,3 +78,10 @@ Ngôn ngữ cơ thể tự tin (ngẩng đầu, vai ngả ra) thực sự có th
 
 ## Ứng Dụng Thực Tế: "Nhật Ký Niềm Tin"
 Giữ một nhật ký niềm tin nơi bạn ghi lại: (1) thành công hàng ngày (dù nhỏ nhất), (2) phản hồi tích cực từ người khác, (3) những khoảnh khắc bạn thi đấu tốt trong áp lực, (4) bằng chứng cải thiện. Xem lại nhật ký này trước các trận đấu để nhắc nhở bản thân về khả năng của mình. Nhật ký này phục vụ như một hồ sơ cụ thể về trải nghiệm làm chủ xây dựng hiệu quả bản thân và cung cấp một đòn bẩy mạnh mẽ chống lại sự nghi ngờ bản thân không thể tránh khỏi trong thể thao cạnh tranh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

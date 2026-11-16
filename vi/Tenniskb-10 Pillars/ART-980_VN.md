@@ -155,3 +155,10 @@ Tập thể dục thường xuyên gây thay đổi epigenetic:
 ## Ứng Dụng Thực Tế: "Di Truyền Nạp Đạn, Huấn Luyện Bóp Cò"
 
 Hồ sơ di truyền của bạn có thể ảnh hưởng tiềm năng thể thao, nhưng nó không quyết định số phận quần vợt của bạn. Những gen bạn sinh ra đặt một phạm vi kết quả có thể, nhưng bạn rơi đâu trong phạm vi đó được xác định bởi huấn luyện, dinh dưỡng, giấc ngủ, tâm lý và cống hiến của bạn. Xét nghiệm di truyền có thể cung cấp hiểu biết thú vị và giúp bạn tối ưu hóa cách tiếp cận huấn luyện, nhưng nó không bao giờ nên được sử dụng để giới hạn khát vọng của bạn. Những tay vợt thành công nhất không nhất thiết là những người có di truyền tốt nhất — họ là những người tối đa hóa bất cứ lá bài di truyền nào họ được chia thông qua huấn luyện thông minh, nhất quán và cam không lay chuyển.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Hệ thống năng lượng cho thể lực quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

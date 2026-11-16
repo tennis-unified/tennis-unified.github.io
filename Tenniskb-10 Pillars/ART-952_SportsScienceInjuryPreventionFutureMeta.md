@@ -110,3 +110,10 @@ Adversity rehearsal is particularly critical. Players who visualize recovering f
 ## Practical Application: "10 Minutes of Mental Reps Equals 3 Physical Reps"
 
 Incorporate structured visualization into every training day. After physical practice, spend 10 minutes mentally rehearsing the session's key learnings. Before sleep, visualize tomorrow's tactical emphases. Before competition, rehearse the match plan and adversity scenarios. The brain does not fully distinguish between vividly imagined and physically executed movements — use this to your advantage by making every mental repetition count.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

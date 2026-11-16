@@ -64,3 +64,10 @@ Người chơi nên kết hợp các bài tập này vào lịch luyện tập t
 ## Ứng Dụng Thực Tế: "Bài Tập Luyện Rally Điều Hòa"
 
 Yêu cầu đối tác rally với bạn từ sau đường cầu. Tập trung vào sự nhất quán, độ sâu và sự đa dạng. Theo dõi số lượng cú đánh liên tiếp bạn có thể thực hiện mà không mắc lỗi. Mục tiêu ban đầu là ít nhất mười cú đánh liên tiếp, tăng dần mục tiêu lên cao hơn. Bài tập này giúp xây dựng sự nhất quán cần thiết cho việc thi đấu rally điều hòa hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

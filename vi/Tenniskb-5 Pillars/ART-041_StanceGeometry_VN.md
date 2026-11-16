@@ -41,3 +41,10 @@ Hình học của tư thế cú thuận tay quyết định các vector Lực Ph
 
 ## Ứng Dụng Thực Tế: Sự "Kết Hợp Hình Học"
 Vận động viên phải kết hợp tư thế với tình huống chiến thuật. Một quả bóng phòng thủ cao có thể đòi hỏi tư thế mở để phục hồi xoay; một cú đánh tiếp cận sâu đòi hỏi tư thế đóng để xuyên thấu tuyến tính. Hình học của bàn chân quyết định vật lý của cú đánh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Hình học thế đứng và cơ sinh học cú thuận tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Căn chỉnh vector phản lực mặt đất (GRF)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Tải trọng chi dưới theo thế đứng*
+<!-- TAICHIKB-CROSSREF-END -->

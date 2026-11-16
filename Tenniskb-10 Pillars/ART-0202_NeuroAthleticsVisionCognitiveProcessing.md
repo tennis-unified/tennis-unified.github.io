@@ -52,3 +52,10 @@ During practice rallies, consciously note the opponent's position in your periph
 
 ## Practical Application: "The Wide View"
 During practice rallies, consciously expand your attention to include the entire court in your peripheral vision. Imagine your attention as a wide-angle lens rather than a telephoto lens. Before each shot, take in the opponent's position, the open court, and your own position in a single glance. This habit, developed in practice, becomes automatic in competition and provides the spatial awareness that separates tactically intelligent players from mere ball-strikers.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

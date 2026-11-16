@@ -69,3 +69,10 @@ Technology should complement, not replace, traditional training. Use technology 
 
 ## Practical Application: "The Tech Toolkit"
 Build a personal cognitive enhancement toolkit: (1) a wearable device to monitor HRV and sleep, (2) a reaction time training app for daily practice, (3) a decision-making app for tactical training, (4) a sleep tracking app for recovery optimization. Use these technologies to gather data, track progress, and target specific cognitive skills. This technology-enhanced approach to cognitive training provides objective feedback and targeted practice that accelerates the development of the mental skills that underpin tennis performance.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Sensorimotor integration & motor control*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -68,3 +68,10 @@ Cắt bóng lưới là tinh túy của lối chơi lưới tấn công trong đ
 ## Ứng Dụng Thực Tế: "Đọc Và Phản Ứng"
 
 Cú cắt bóng lưới bắt đầu bằng việc đọc mặt vợt của người trả bóng vào thời điểm tiếp xúc bóng. Ngay khi bạn nhìn thấy hướng bóng chéo sân, hãy bùng nổ di chuyển ngang. Tin tưởng vào sự đọc của bạn — sự chần chừ là kẻ thù của một cú cắt bóng lưới thành công. Nếu bạn đọc được, hãy cam kết hoàn toàn vào sự di chuyển.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

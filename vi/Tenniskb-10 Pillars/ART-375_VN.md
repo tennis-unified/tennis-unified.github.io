@@ -82,3 +82,10 @@ Luyện tập bao gồm:
 ## Ứng Dụng Thực Tế: "Quyết Định Giữa Sân"
 
 Luyện tập forehand chuyển tiếp bằng cách để đối tác cung cấp bóng trong khi bạn đứng ở vạch giao bóng. Với mỗi quả bóng, nhanh chóng quyết định giữa trung hòa (đánh bóng sâu với topspin nặng về vạch góc) hoặc tấn công (đánh bóng bằng phắng hơn, xuyên thấu hơn và tiến về lưới). Tập trung vào việc ra quyết định chiến thuật và các điều chỉnh cơ chế cần thiết cho mỗi lựa chọn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

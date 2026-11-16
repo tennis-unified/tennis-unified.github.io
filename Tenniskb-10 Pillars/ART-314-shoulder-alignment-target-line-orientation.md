@@ -52,3 +52,10 @@ Conversely, if the shoulders are still closed at contact (pointing left of targe
 ## Practical Application: "The Shoulder Clock"
 
 Visualize your shoulders as the hands of a clock viewed from above. At the set position, your shoulders should point to 9 o'clock (for right-handed players hitting cross-court). During the forward swing, they rotate through 10, 11, and 12 o'clock, arriving at approximately 12:30 at contact. This clock-face visualization helps you monitor your shoulder rotation and ensures you neither under-rotate (arriving before 12) nor over-rotate (arriving after 1 o'clock) at contact.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+<!-- TAICHIKB-CROSSREF-END -->

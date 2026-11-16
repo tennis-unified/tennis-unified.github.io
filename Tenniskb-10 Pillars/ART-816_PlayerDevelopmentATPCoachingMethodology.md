@@ -204,3 +204,10 @@ Test at the start of off-season, mid off-season, end of pre-season, and mid-seas
 | Slow recovery between points | Poor aerobic fitness, inadequate cardiovascular conditioning | Cumulative fatigue, reduced performance | Aerobic training; HRV monitoring; recovery protocols |
 | Inability to maintain intensity | Poor repeated sprint ability, insufficient anaerobic conditioning | Performance drop in long matches | RSA training; interval training; on-court conditioning drills |
 | Heavy legs in matches | Insufficient lower body conditioning, poor movement efficiency | Reduced court coverage, slower first step | Lower body conditioning; movement efficiency training |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Energy systems for tennis conditioning*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+<!-- TAICHIKB-CROSSREF-END -->

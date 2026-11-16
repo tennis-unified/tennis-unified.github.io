@@ -52,3 +52,10 @@ Một bài tập thực tiễn là bài tập "bước đầu tiên" (first step
 ## Ứng Dụng Thực Tế: "Xoay Sớm Hơn"
 
 Trong buổi tập tiếp theo, thử thách bản thân bắt đầu xoay đơn vị sớm hơn một "nhịp" so với cảm giác thoải mái. Ban đầu bạn sẽ cảm thấy vội vàng và mất thăng bằng, nhưng khi chương trình vận động thích nghi, bạn sẽ khám phá ra rằng thời gian bổ sung cho phép xoay trọn vẹn hơn và cú swing thư giãn hơn. Mục tiêu là tìm ra điểm chuẩn bị sớm nhất có thế vẫn cho phép điều chỉnh khi dự đoán sai.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

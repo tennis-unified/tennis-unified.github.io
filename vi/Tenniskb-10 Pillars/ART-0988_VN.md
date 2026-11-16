@@ -47,3 +47,10 @@ Nghiên cứu sử dụng che khuất phim — dừng video tại các khoảnh 
 ## Ứng Dụng Thực Tế: "Đọc Cơ Thể, Không Phải Bóng"
 
 Bóng quá muộn để có thông tin. Tập luyện mắt của bạn trên tung, vai và vợt của người serve, và tập luyện tâm trí của bạn trên mô hình của họ — bởi vì người trả bóng nhanh nhất không phải là phản xạ nhanh nhất mà là người đọc sớm nhất. Dành mười phút một tuần cho bài tập dự đoán-và-xác minh, nêu kế hoạch trả bóng của bạn trước điểm lớn, và chấp nhận rằng một đọc sai là học phí cho một ngàn cái đúng. Trong quần vợt, việc sớm là một kỹ năng; việc ngạc nhiên là một lựa chọn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

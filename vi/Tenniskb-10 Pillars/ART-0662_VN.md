@@ -52,3 +52,10 @@ Cố gắng đánh mạnh hơn bóng (tốc độ bóng từ phía tay đánh t�
 ## Ứng Dụng Thực Tế: "Hấp Thụ Và Chuyển Hướng"
 
 Khi đối đầu tay đánh tấn công từ đường biên dưới: (1) hấp thụ lực bóng của họ bằng volley chặn, (2) chuyển hướng bóng sang khoảng trống trên sân, (3) tuyệt đối không cố đè bẹp trái bóng. Sức mạnh của họ chính là vũ khí của bạn — hãy dùng nó để chống lại chính họ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -159,3 +159,10 @@ The signature grass court tactic:
 | Poor serve-and-volley execution | Insufficient practice, weak volleys | Lost opportunities, predictable play | Dedicated serve-and-volley drills; volley practice |
 | Overly defensive on grass | Clay court habits, lack of aggression | Lost first-strike opportunities | Aggressive point construction drills; approach-and-finish patterns |
 | Slipping and poor movement | Wrong footwear, insufficient grass practice | Reduced confidence, errors | Grass-specific shoes; progressive grass movement training |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

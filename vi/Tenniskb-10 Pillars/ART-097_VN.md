@@ -49,3 +49,10 @@ Cú giao bóng tennis đòi hỏi đầu ra sức mạnh cao nhất trong mọi 
 
 ## Ứng Dụng Thực Tế: "Chương Trình Sức Mạnh Giao Bóng"
 Thực hiện chương trình sức mạnh chuyên biệt giao bóng 2-3 lần/tuần: (1) 3 loạt 3 lần power clean, (2) 3 loạt 5 lần nhảy bục, (3) 3 loạt 5 lần ném bóng y tế xoay mỗi bên, (4) 3 loạt 5 lần ném bóng y tế từ tư thế giao bóng, (5) 3 loạt 10 lần bài tập quay trong nhanh. Chương trình 15 phút này phát triển các phẩm chất sức mạnh chuyên biệt chuyển hóa trực tiếp thành tăng tốc độ giao bóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+<!-- TAICHIKB-CROSSREF-END -->

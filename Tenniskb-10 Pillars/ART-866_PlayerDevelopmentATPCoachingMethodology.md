@@ -210,3 +210,10 @@ Retest every 8-12 weeks to track improvement.
 | Excessive rotation during strokes | Poor anti-rotation control | Inconsistent contact, errors | Anti-rotation training; Pallof press; single-arm farmer's carry |
 | Fatigue in core during long matches | Insufficient core endurance | Reduced stability, late-match errors | Core endurance circuits; longer-duration holds |
 | Difficulty maintaining posture during rallies | Poor core endurance and stability | Fatigue-related errors | Combined core stability and endurance training |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Chương 9: Mặt Trước Sâu — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch09-mat-truoc-sau.html) — *Deep Front Line: core postural axis*
+<!-- TAICHIKB-CROSSREF-END -->

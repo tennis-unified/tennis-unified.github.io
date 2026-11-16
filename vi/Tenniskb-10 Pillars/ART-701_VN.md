@@ -57,3 +57,10 @@ Một bài tập hiệu quả khác là huấn luyện nhận thức góc: đặ
 ## Ứng Dụng Thực Tế: "Luyện Tập Bắn Đích Tạo Nên Sự Hoàn Hảo"
 
 Trong buổi tập tiếp theo, hãy chia mỗi ô giao bóng thành ba vùng: rộng, body và điểm T. Giao 20 bóng vào mỗi vùng và theo dõi tỷ lệ thành công. Ghi nhận vùng nào tạo ra phản công yếu nhất và ưu tiên chọn điểm đó trong thi đấu. Hãy nhớ: giao bóng rộng mở sân, giao bóng body khóa người trả bóng, và giao bóng điểm T giảm góc trả bóng. Sử dụng chúng kết hợp để giữ cho người trả giao bóng luôn phải đoán.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

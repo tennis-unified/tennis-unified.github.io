@@ -58,3 +58,10 @@ Các tuyển thử ưu tú điều chỉnh ba biến số này dựa trên tình
 ## Ứng Dụng Thực Hành: "Thang Góc"
 
 Luyện đánh forehand ở ba góc tấn công khác nhau rõ rệt: thoải (15 độ), trung bình (25 độ), và dốc (35 độ). Sử dụng máy theo dõi góc bay hoặc có huấn luyện viên đánh giá quỹ đạo bóng. Tập trung vào cảm giác của từng góc — góc thoải cảm giác đánh "xuyên qua" bóng, còn góc dốc cảm giác đánh "đi lên và vòng lên trên." Phát triển khả năng chuyển đổi giữa các góc dựa trên tình thế chiến thuật.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -93,3 +93,10 @@ Jams the returner, preventing them from extending their arms for a full swing. M
 ## Practical Application: "The 85% Rule"
 
 During practice, hit 20 flat serves at 85% of your maximum effort, focusing on direction rather than speed. Then hit 20 at 95-100% effort. Compare your first-serve percentage between the two sets. Most players find their accuracy improves significantly at 85% effort, and the actual serve speed difference is only 5-10 mph. In match play, the more accurate serve wins more points than the marginally faster one.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

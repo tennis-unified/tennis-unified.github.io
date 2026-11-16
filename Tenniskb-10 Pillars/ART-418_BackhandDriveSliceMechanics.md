@@ -65,3 +65,10 @@ Players who struggle with maintaining the contact zone often benefit from drills
 
 ## Practical Application: "The Zone Awareness Drill"
 During practice rallies, mentally categorize each ball as it approaches: "zone" (within the contact zone), "high" (above), "low" (below), "close" (at the body), or "far" (beyond arm's length). Hit the shot and note the result. Over time, this drill trains the awareness needed to position the body so that balls pass through the contact zone consistently.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Mindfulness & flow state in sport*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

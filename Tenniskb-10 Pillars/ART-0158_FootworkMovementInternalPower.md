@@ -83,3 +83,10 @@ A player who jabs instead of split-stepping against a server is not preparing co
 ## Practical Application: "The Jab-and-Freeze Drill"
 
 The coach stands at the net post and randomly calls out directions — "left," "right," "left-left," "right-left" — while the player stands in ready position at the baseline. Each call requires a jab in that direction. After the final jab, the player freezes and the coach checks: one foot must be on the ground, the chest must be level, and the center of mass must be over the base of support. If any of these conditions fails, the repetition does not count. Run 20 calls in a row; target 15 or more clean freezes. This drill builds the jab as a pressure-preserving adjustment, not a nervous hop.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+<!-- TAICHIKB-CROSSREF-END -->

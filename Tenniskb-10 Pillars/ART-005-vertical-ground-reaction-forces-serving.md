@@ -76,3 +76,10 @@ Drills that emphasize the coordination between leg drive and arm swing include s
 
 ## Practical Application: "Push the Court Away"
 The serve is not an arm motion—it's a leg drive with arm attachment. Before your next practice serve, stand in your trophy position and focus entirely on your legs. Imagine the court is a platform you're trying to push downward and away from you. Drive both feet into the court as if trying to leave the ground, with slightly more force from your dominant-side foot. Feel your body rise and your hips begin to rotate before your arm even moves. The arm simply rides the wave of energy created by your legs. Practice this leg-dry swing 10 times before hitting any balls, focusing on the feeling of your legs doing the work. When you add the ball, the serve will feel effortless because you're using the biggest, strongest muscles in your body to create power.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

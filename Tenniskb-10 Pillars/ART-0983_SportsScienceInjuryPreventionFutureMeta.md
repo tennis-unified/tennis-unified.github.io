@@ -39,3 +39,10 @@ The responsible formula treats VR as 10-20% of a training week, concentrated on 
 
 ## Practical Application: "See It Before You Play It"
 Use virtual reality the way a pilot uses a flight simulator: not to replace flying, but to make the hours in the air cheaper and smarter. Two or three short VR sessions a week, each with one perceptual or tactical objective, immediately applied on court against live servers, will do more for a return game than any amount of passive video watching. The next frontier of tennis training is not a machine that swings the racket for you — it is a machine that teaches your eyes and your decisions while your body recovers for the work only a real court can give.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

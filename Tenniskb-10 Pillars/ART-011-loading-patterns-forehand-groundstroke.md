@@ -103,3 +103,10 @@ Exercises that challenge balance during loading positions—including single-leg
 
 ## Practical Application: "The Spring Coil"
 Think of your legs and trunk as a spring that you compress during loading and release during the swing. To feel this, stand in your forehand ready position and slowly bend your knees while rotating your trunk back. Feel the tension building in your legs (like compressing a spring) and in your trunk (like twisting a towel). Hold this loaded position for two seconds, feeling the stored energy. Now release: extend your knees and rotate your trunk forward as if uncoiling the spring. Do this 10 times slowly, then 10 times at match speed. The key insight is that the power comes from the release of stored energy, not from muscular effort alone. When you add the ball, your forehand will feel effortless because you're using the elastic energy of your loaded body to accelerate the racket, not just your arm muscles. The deeper and more controlled your loading, the more energy you have to release—and the more powerful your forehand becomes.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

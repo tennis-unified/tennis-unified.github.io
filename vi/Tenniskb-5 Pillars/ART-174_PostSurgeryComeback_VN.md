@@ -113,3 +113,10 @@ Phẫu thuật không phải là kết thúc sự nghiệp; đó là một sự 
 
 ## Ứng Dụng Thực Tế: "Giao Thức Phượng Hoàng"
 Cái Lửa (Phẫu Thuật) Thiêu Hủy Hình Dáng Cũ. Tro Tàn (Phục Hồi) Là Giường Din Hưỡng. Con Chim Mới (Trở Lại) Không Giống Cũ — Nó Là *Đã Thích Ứng*. Nó Bay Khác. Nó Biết Gió. Nó Tôn Trọng Lửa. **Đừng Chỉ Trở Lại. Hãy Trở Lại Tốt Hơn.**
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 19: Thấu hiểu cơ học-thích-nghi của mô mạc: Ứng dụng vào y học thể thao — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch19-thau-hieu-co-hoc-thich-nghi-cua-mo-mac-ung-dung-vao-y-hoc-the-th.html) — *Cơ học thích nghi và phòng ngừa chấn thương*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

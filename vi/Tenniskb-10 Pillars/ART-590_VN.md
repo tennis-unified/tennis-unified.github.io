@@ -77,3 +77,10 @@ Trận đấu ban đêm đặt ra thách thức độc đáo cho người trả 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Ánh Sáng"
 
 Trong khởi động trước trận đấu ban đêm, đứng ở vạch giao bóng và theo dõi 20 giao bóng, tập trung vào việc theo bóng từ vợt của người giao đến nảy. Ghi chú cách bóng trông trước các nền khác nhau. Việc hiệu chỉnh thị giác này giúp não bạn điều chỉnh đến điều kiện ánh sáng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -95,3 +95,10 @@ Giải pháp là:
 ## Ứng Dụng Thực Tế: "Thử Thách 100 Bóng"
 
 Mỗi buổi tập, đánh 100 second serve với mục tiêu vào sân ít nhất 85 quả. Theo dõi tỷ lệ thành công theo thời gian. Nếu bạn luôn đạt từ 85% trở lên, hãy bắt đầu tăng tốc độ second serve thêm 5% mỗi tuần cho đến khi tìm ra ngưỡng tốc độ mà tỷ lệ vào sân của bạn giảm xuống dưới 80%. Tốc độ second serve tối ưu của bạn nằm ngay dưới ngưỡng đó — đủ nhanh để thử thách người trả bóng nhưng đủ tin cậy để tránh double fault.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -182,3 +182,10 @@ Học viện Sản phụ khoa Mỹ khuyến nghị:
 ## Ứng Dụng Thực Tế: "Tập Cho Hai, Nghỉ Cho Hai"
 
 Nguyên tắc quan trọng nhất trong thai kỳ là lắng nghe cơ thể bạn — nó đang tập cho hai, và nghỉ ngơi cũng quan trọng như hoạt động. Điều chỉnh kỳ vọng của bạn: bạn không cố gắng duy trì thành tích đỉnh cao; bạn đang cố gắng duy trì thể lực cho một thai kỳ lành mạnh và quay lại hiệu quả. Tập trung vào cách bạn cảm thấy thay vì những gì bạn có thể đạt được trên sân. Sau sinh, hãy kiên nhẫn với sự quay lại — cơ thể bạn đã hoàn thành điều gì đó phi thường, và quần vợt sẽ có đó khi bạn sẵn sàng. Các vận động viên sau sinh mạnh mẽ nhất là những người đã tôn trọng cơ thể của họ trong thai kỳ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

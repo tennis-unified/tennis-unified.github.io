@@ -142,3 +142,10 @@ Exercises that develop the TLF's elastic energy storage:
 
 ## Practical Application: "The Slingshot"
 Imagine the thoracolumbar fascia as a slingshot's elastic band. During loading, you pull the band back (stretch the TLF), storing elastic energy. During the forward swing, you release the band (the TLF recoils), launching the ball with the stored energy. The farther you pull the band back (the greater the hip-trunk separation), the more energy you store—and the faster the ball flies. Practice this by performing groundstrokes with exaggerated hip-trunk separation, feeling the stretch in your lower back and the snap of recoil during the swing. The slingshot feeling should be unmistakable: a stretch during loading, a snap during the swing. If you can't feel the snap, you're either not separating enough (not pulling the band back far enough) or not releasing the stretch quickly enough (hesitating before the swing). Develop this slingshot feeling through daily practice, and your strokes will gain power that comes not from muscular effort but from the elastic recoil of your thoracolumbar fascia.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Fascial elastic energy storage & recoil*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+<!-- TAICHIKB-CROSSREF-END -->

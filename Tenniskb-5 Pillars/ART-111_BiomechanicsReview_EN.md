@@ -39,3 +39,10 @@ This article synthesizes the biomechanical principles covered in Pillar I (Artic
 
 ## Practical Application: The "Biomechanical Blueprint"
 The athlete internalizes the sequence: **Ground → Hips → Core → Shoulder → Arm → Racket**. Every stroke is a variation of this master pattern.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & core*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Linear kinetics, GRF & impulse-momentum*
+<!-- TAICHIKB-CROSSREF-END -->

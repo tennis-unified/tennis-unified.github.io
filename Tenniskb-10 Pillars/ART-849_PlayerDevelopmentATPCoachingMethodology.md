@@ -131,3 +131,10 @@ At altitude, air density is reduced, resulting in:
 | Groundstrokes flying long | Not adjusting stroke path for altitude | Unforced errors | More topspin; adjust contact point |
 | Breathing heavily, fatigue | Insufficient acclimatization | Reduced performance | Arrive early; reduce intensity; hydrate |
 | Sleep disturbances | Altitude effect on sleep | Poor recovery, fatigue | Allow adaptation time; consider sleep aids |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+<!-- TAICHIKB-CROSSREF-END -->

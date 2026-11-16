@@ -183,3 +183,10 @@ Cuộc kiểm tra có cấu trúc này bình thường hóa các cuộc thảo l
 | Lo âu thành tích ảnh hưởng kết quả | Đào tạo kỹ năng tâm lý không đủ, quản lý lo âu | Chết máy dưới áp lực, mất trận | Giới thiệu chuyên gia tâm lý thể thao; kỹ thuật quản lý lo âu |
 | Dấu hiệu kiệt sức (kiệt quệ, hoài nghi) | Áp lực quá mức, phục hồi không đủ, mất động lực | Nguy cơ bỏ cuộc, tổn thương dài hạn | Thời gian nghỉ ngơi và phục hồi; đánh giá lại mục tiêu và giá trị; hỗ trợ chuyên nghiệp |
 | Ngôn ngữ cơ thể và tự động viên tiêu cực | Tự tin thấp, có thể trầm cảm | Thành tích giảm, rút lui xã hội | Sàng lọc sức khỏe tâm thần; giới thiệu chuyên nghiệp; huấn luyện hỗ trợ |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

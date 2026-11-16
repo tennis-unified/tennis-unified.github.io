@@ -117,3 +117,10 @@ Các đặc điểm này không huyền bí — chúng là kết quả tự nhi�
 ## Ứng Dụng Thực Tế: "Tạo Điều Kiện, Buông Kết Quả"
 
 Dòng chảy không phải công tắc bạn bật — nó là vườn bạn nuôi dưỡng. Chuẩn bị cơ thể thông qua rèn luyện, chuẩn bị tâm trí thông qua hình dung, chuẩn bị chiến thuật thông qua lập kế hoạch, và sau đó buông sự gắn kết vào kết quả. Tập trung hoàn toàn vào point hiện tại, tin tưởng tập luyện, và để thành trình trổ hoa. Khi các điều kiện phù hợp — thử thách khớp kỹ năng, mục tiêu rõ ràng, chú ý hiện tại — dòng chảy đến khời mời. Nhiệm vụ của bạn là sẵn sàng khi nó xuất hiện.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

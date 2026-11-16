@@ -34,3 +34,10 @@ Plyometric training develops the explosive power and reactive strength that are 
 
 ## Practical Application: "The Plyometric Routine"
 Perform a plyometric routine 2 times per week: (1) 3 sets of 5 box jumps, (2) 3 sets of 5 depth jumps, (3) 3 sets of 5 lateral bounds each side, (4) 3 sets of 5 split-stance jumps each side, (5) 3 sets of 5 medicine ball rotational throws each side. Focus on minimal ground contact time and maximum explosive effort.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Plyometric training & reactive SSC*
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Lateral Line: lateral stability & mediolateral force*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

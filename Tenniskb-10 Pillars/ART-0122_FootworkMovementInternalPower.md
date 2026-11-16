@@ -73,3 +73,10 @@ Training unweighting efficiency requires shifting the player's internal model fr
 ## Practical Application: "Drop, Don't Jump"
 
 The single coaching cue that transforms unweighting efficiency: **drop into the hop, don't jump into it.** A drop is a release — the ground stops supporting you and you fall upward. A jump is a push — you drive against the ground and waste time and energy. At the next session, have the player perform five shadow hops focusing only on the moment just before toe-off: "Let go of the ground. Don't push it." Then integrate the same feel into live split-steps against fed balls. The difference is immediate — the hop becomes smaller, quieter, and faster, and the first step off the landing gains 20-40 ms of usable time.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Linear kinetics, GRF & impulse-momentum*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -51,3 +51,10 @@ Theo dõi mức độ tỉnh táo và hiệu suất của bạn trong các tình
 
 ## Ứng Dụng Thực Tế: "Đồng Hồ Điều Chỉnh Trạng Thái Tỉnh Táo"
 Phát triển một "đồng hồ điều chỉnh trạng thái tỉnh táo" nội tại từ 1 (tỉnh táo thấp) đến 10 (tỉnh táo cao). Trước và trong trận đấu, đánh giá mức độ tỉnh táo của bạn. Nếu bạn dưới vùng tối ưu (thường 4-7), sử dụng kỹ thuật kích thích: chuyển động nhanh, tự đối thoại năng lượng, và hình dung tấn công. Nếu bạn trên vùng tối ưu, sử dụng kỹ thuật bình an: hít thở sâu, thư giãn, và tự đối thoại mượt mà. Đồng hồ này cho phép bạn tinh chỉnh mức độ tỉnh táo của bạn cho hiệu suất đỉnh cao trong mọi tình huống.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy*
+<!-- TAICHIKB-CROSSREF-END -->

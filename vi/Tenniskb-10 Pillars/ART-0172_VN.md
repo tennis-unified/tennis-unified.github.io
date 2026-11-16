@@ -41,3 +41,10 @@ Mỗi thay đổi hướng phải tháo năng lượng động học ½mv². Ng�
 
 ## Ứng Dụng Thực Tế: "Chạy Sổ Cái"
 Trước khối bề mặt tiếp theo, kiểm toán một trận trên video: đếm cú mỗi point, ước tính khoảng cách mỗi point từ hình học sân, và phân loại mỗi giảm tốc là trượt, phanh-bước hoặc bước-cắt. Tính hai tỷ lệ — mét mỗi cú và giảm tốc mỗi point — và so sánh với các điểm chuẩn bề mặt ở trên. Rồi xây dựng khối đến khoảng cách: nếu mét mỗi cú cao nhưng công suất giảm tốc là giới hạn, tải phanh ly tâm; nếu rally bị mất muộn, tải mạch nỗ lực lặp lại.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

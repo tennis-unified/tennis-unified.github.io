@@ -175,3 +175,10 @@ Tạo một điều lệ đội ngũ chính thức bao gồm:
 | Vận động viên nhận thông điệp trái chiều | Các thành viên đội ngũ không thống nhất cách tiếp cận | Niềm tin giảm, phát triển thiếu nhất quán | Thiết lập tầm nhìn chung; các cuộc họp thống nhất đội ngũ định kỳ |
 | Thành viên đội ngũ vượt ranh giới | Định nghĩa vai trò không đủ, ranh giới kém | Xung đột, hiệu quả đội ngũ giảm | Củng cố ranh giới vai trò; xử lý hành vi vượt ranh giới |
 | Vận động viên cảm thấy choáng ngợp bởi đội ngũ | Quá nhiều tiếng nói, điều phối không đủ | Giảm quyền tự chủ, tăng căng thẳng | Đơn giản hóa giao tiếp; trao quyền cho vận động viên là người ra quyết định |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Dinh dưỡng thể thao và cân bằng năng lượng*
+<!-- TAICHIKB-CROSSREF-END -->

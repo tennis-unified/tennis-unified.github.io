@@ -104,3 +104,10 @@
 
 ## Ứng Dụng Thực Tế: "Chiếc Xe Cổ Điển"
 Bạn không lái chiếc Ferrari thập niên 1960 như xe Toyota thuê. Bạn làm nóng máy 30 phút. Bạn chuyển số với sự đồng cảm cơ học. Bạn đỗ nó trong gara điều khiển khí hậu. Bạn dùng xăng octane cao nhất. Bạn chấp nhận nó không làm 0-100 trong 3 giây nữa — nhưng nó góc cua với độ chính xác mà Toyota không bao giờ có. **Tôn Trọng Cỗ Máy. Lái Nó Với Trí Tuệ.**
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 19: Thấu hiểu cơ học-thích-nghi của mô mạc: Ứng dụng vào y học thể thao — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch19-thau-hieu-co-hoc-thich-nghi-cua-mo-mac-ung-dung-vao-y-hoc-the-th.html) — *Cơ học thích nghi và phòng ngừa chấn thương*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

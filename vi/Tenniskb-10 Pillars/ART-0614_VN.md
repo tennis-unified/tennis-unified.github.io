@@ -64,3 +64,10 @@ Di chuyển chân khi volley ở lưới đòi hỏi một bộ kỹ năng hoàn
 ## Ứng Dụng Thực Tế: "Luôn Đứng Trên Đầu Ngón Chân"
 
 Khi ở lưới, trọng lượng cơ thể của bạn phải luôn dồn về trước trên đầu ngón chân, với đầu gối hơi khuỵu. "Tư thế sẵn sàng" này cho phép bạn di chuyển tức thì theo bất kỳ hướng nào. Ngay khoảnh khắc trọng lượng dồn xuống gót chân, bạn sẽ bị "tê liệt" tại chỗ — hoàn toàn không kịp phản ứng với những pha đổi volley thần tốc.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

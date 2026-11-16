@@ -52,3 +52,10 @@ Ngược lại, nếu vai vẫn ở trạng thái đóng tại điểm tiếp x�
 ## Ứng Dụng Thực Tế: "Đồng Hồ Vai"
 
 Hình dung vai như kim đồng hồ nhìn từ trên xuống. Ở thế chuẩn bị, vai nên chỉ về 9 giờ (đối với người đánh tay phải đánh chéo sân). Trong pha vung về phía trước, vai xoay qua 10, 11 và 12 giờ, đạt đến khoảng 12:30 tại điểm tiếp xúc. Hình dung mặt đồng hồ này giúp bạn theo dõi vòng xoay của vai và đảm bảo bạn không xoay thiếu (đạt trước 12 giờ) cũng không xoay quá (đạt sau 1 giờ) tại điểm tiếp xúc.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+<!-- TAICHIKB-CROSSREF-END -->

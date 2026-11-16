@@ -83,3 +83,10 @@ Tennis đội tuyển (Đại học, Davis Cup, Billie Jean King Cup) đảo ng�
 
 ## Ứng Dụng Thực Tế: "Ban Nhạc"
 Một vận động viên cá nhân là độc tấu gia — tự viết bản nhạc. Một đội là dàn nhạc — Người Đánh Trống (Trưởng Đội/HLV) viết bản nhạc, đặt nhịp, và đảm bảo mọi nhạc cụ (vận động viên) đỉnh điểm cho buổi biểu diễn (Cuối Tuần Tie). Bản nhạc là 5 Cột Trụ; bản phác thảo là Kế Hoạch Chu Kỳ Hóa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

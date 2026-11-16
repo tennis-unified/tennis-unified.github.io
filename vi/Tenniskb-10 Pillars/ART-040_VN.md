@@ -145,3 +145,10 @@ Tại mỗi điểm trả lời "không", bạn có rò rỉ năng lượng. Kh�
 | Vai → Cánh tay | 70-80% | Cánh tay vung sớm, yếu ba đầu | Duỗi ba đầu, uốn cổ tay, band gia tốc |
 | Cánh tay → Vợt | 75-85% | Cổ tay lái, nắm kém, mất tốc độ | Cổ tay isometric, tập nắm, shadow swing chậm |
 | Hiệu suất tích lũy | Đẳng cấp: 30-35% | Giải trí: 10-20% | Huấn luyện tích hợp toàn chuỗi, Olympic lift, plyometric |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên phân đoạn*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Cơ học co cơ: lệch tâm/đồng tâm và lực–vận tốc*
+<!-- TAICHIKB-CROSSREF-END -->

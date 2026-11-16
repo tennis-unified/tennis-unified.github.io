@@ -70,3 +70,10 @@ Những người chơi vội vã phục hồi sau cú đánh tư thế dong thư
 ## Ứng Dụng Thực Tế: "Bài Tập Bước Sâu"
 
 Đặt một quả bóng trên mặt đất cách vị trí baseline của bạn 1 mét về phía trước. Thực hành bước chân tư thế dong: xoay người sang bên, bước về phía bóng bằng chân trước và mô phỏng cú đánh backhand tấn công. Tập trung vào việc bước sâu vào bóng và chuyển trọng lượng sang chân trước. Lặp lại mười lần, kiểm tra rằng chân trước hạ xuống gần với điểm đánh dấu quả bóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

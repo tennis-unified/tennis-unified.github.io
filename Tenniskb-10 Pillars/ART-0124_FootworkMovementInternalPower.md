@@ -78,3 +78,10 @@ The optimal stance width scales primarily with leg length and hip structure:
 ## Practical Application: "Measure Your Push"
 
 At the next session, have the player stand in three different stance widths — narrow (shoulder width), medium (1.3 × shoulder width), and wide (1.6 × shoulder width). From each stance, perform a single lateral hop as far as possible. Measure the distance covered. The stance that produces the longest lateral hop (not the highest) is the optimal push-off width. Mark this width with tape on the court and practice landing in this width during split-steps. Within a session, the player will develop a feel for the correct width, and the first step will gain 15-25 cm of reach without any increase in effort.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

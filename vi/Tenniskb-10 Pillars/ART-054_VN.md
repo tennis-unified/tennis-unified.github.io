@@ -53,3 +53,10 @@ Vận động viên phải chọn vị trí trên liên tục:
 
 ## Ứng Dụng Thực Tế: "Thử Thách Cảm Giác"
 Cầm vợt ở tư thế sẵn sàng và vung nhanh qua lại hai bên. Nếu cảm thấy sluggish, khó thay đổi hướng, trọng lượng vung có thể quá cao. Nếu cảm thấy quá nhẹ, không ổn định khi đập, trọng lượng vung có thể quá thấp. Trọng lượng vung lý tưởng cảm thấy có chất lượng khi đập nhưng linh hoạt khi chuẩn bị. Thử các vợt khác nhau để tìm cân bằng tối ưu của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

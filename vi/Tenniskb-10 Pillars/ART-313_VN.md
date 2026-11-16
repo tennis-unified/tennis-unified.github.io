@@ -52,3 +52,10 @@ Việc huấn luyện dốc ngang bao gồm phát triển sự linh hoạt và s
 ## Ứng Dụng Thực Tế: "Nghiêng Và Giải Phóng"
 
 Để phát triển thành phần dốc ngang, hãy thực hành xoay đơn vị khi đứng cạnh tường hoặc hàng rào. Định vị bản thân sao cho vai sau gần tường, và thực hiện xoay đơn vị, cố ý nghiêng thân trên ra xa tường (về phía hông sau). Cảm nhận sự kéo căng dọc theo phần đối diện của thân. Sự nghiêng này phóng đại giúp bạn phát triển cảm giác về dốc ngang, sau đó cần được điều chỉnh về phạm vi thích hợp từ 15 đến 25 độ trong các cú đánh bình thường.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Đường Bên: ổn định ngang và lực sang bên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+<!-- TAICHIKB-CROSSREF-END -->

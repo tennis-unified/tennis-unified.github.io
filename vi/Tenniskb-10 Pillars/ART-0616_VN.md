@@ -68,3 +68,10 @@ Volley vung mang tốc độ đánh sân sau vào lối chơi lưới. Quỹ đ�
 ## Ứng Dục Thực Tế: "Cú Đánh Sân Sau Không Cần Bóng Nảy"
 
 Volley vung là một cú đánh sân sau mà bạn thực hiện trước khi bóng nảy. Tất cả các cơ chế — phần quay toàn thân, chuyển trọng lượng, chuyển động theo sau — đều giống hệt. Điểm khác biệt duy nhất là thời điểm: bạn gặp bóng trong không thay vì sau khi bóng nảy.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

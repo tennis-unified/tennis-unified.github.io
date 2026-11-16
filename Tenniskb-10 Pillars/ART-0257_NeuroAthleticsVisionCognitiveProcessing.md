@@ -61,3 +61,10 @@ When facing an opponent with known tendencies, prime yourself for their most lik
 
 ## Practical Application: "The Prime Routine"
 Develop a pre-match prime routine that activates the implicit memories associated with successful performance. This might include: (1) reviewing a video of your best match, (2) visualizing successful shots, (3) using a specific warm-up routine that primes confidence, and (4) repeating a personal mantra. This routine primes the implicit memory system to support your desired performance state, allowing you to access the "feel" and intuition that underpin expert play.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

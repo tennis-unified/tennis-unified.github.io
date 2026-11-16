@@ -76,3 +76,10 @@ The traditional distinction between borrowing the earth's force (kình lực) an
 ## Practical Application: "The Ground Hits the Ball"
 
 Give the player one radical reframe: **the ground hits the ball, not the arm.** The arm is only the last link in a chain that starts at the feet. At the next session, have the player hit 20 groundstrokes with the sole focus on pressing into the ground through the legs. The arm should feel almost passive — a loose extension of the rotating body. The ball should come off the racket with surprising speed and minimal effort. This is the kình lực pathway in action: the ground provides the force, the body transmits it, and the racket delivers it. The player who learns to harvest ground force stops muscling the ball and starts hitting with the earth itself.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Myofascial force transmission across segments*
+<!-- TAICHIKB-CROSSREF-END -->

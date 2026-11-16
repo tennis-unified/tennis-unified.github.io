@@ -38,3 +38,11 @@ As the hips uncoil, the body undergoes intense rotational forces. Dynamic anchor
 2.  Perform the entire stroke sequence (Split step → Load → Hit → Recovery) while keeping both feet on or flanking the line.
 3.  Focus on keeping the sternum (the plumb line) centered over the line.
 4.  Increase speed gradually, ensuring the "anchor" remains stable.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Center of Mass (CoM), Base of Support, and balance control*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Dynamic balance & postural adjustments*
+- [Chương 9: Mặt Trước Sâu — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch09-mat-truoc-sau.html) — *Deep Front Line: core axial balance line*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Static vs. dynamic equilibrium and stability*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -80,3 +80,10 @@ Manage physical effort across the match. Avoid expending maximum effort on every
 
 ## Practical Application: "The Fatigue Monitor"
 Develop an internal "fatigue monitor" that tracks your physical and cognitive state during matches. Periodically assess: (1) physical fatigue (muscle heaviness, breathing rate), (2) cognitive fatigue (focus quality, decision speed), and (3) emotional state (irritability, motivation). When any of these indicators reach a high level, take immediate action: hydrate, consume carbohydrates, use recovery breathing, or adjust your effort level. This self-monitoring prevents the performance collapse that occurs when players ignore fatigue until it is too late to recover.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+<!-- TAICHIKB-CROSSREF-END -->

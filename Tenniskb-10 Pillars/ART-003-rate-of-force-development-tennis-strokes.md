@@ -85,3 +85,10 @@ Alternating heavy strength exercises (80-90% 1RM) with explosive movements of si
 
 ## Practical Application: "The 100-Millisecond Rule"
 Train yourself to think in 100-millisecond blocks. Every time you push off the court, count "one-Mississippi" mentally—and you should be at peak force before you finish. If you're still building force at 200 milliseconds, you've already missed the window. Use a simple drill: stand on one foot and push off into a lateral bound as fast as possible, trying to minimize ground contact time. Use a contact mat or have a partner watch your feet. The goal is to make ground contact feel like touching a hot surface—instantaneous. This "hot court" mentality rewires your nervous system for speed.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Muscular mechanics: eccentric/concentric & force-velocity*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

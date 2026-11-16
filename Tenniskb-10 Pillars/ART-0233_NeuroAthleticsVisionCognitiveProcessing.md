@@ -65,3 +65,10 @@ When demands exceed capacity, prioritize. Ball tracking is always the highest pr
 
 ## Practical Application: "The Attention Budget"
 Allocate your attentional resources deliberately during each point. Before the point, spend attention on tactical planning. During the point, spend attention on ball tracking and stroke execution. After the point, spend attention on assessment and adjustment. This budgeting approach prevents the attentional free-for-all that occurs when players try to process everything simultaneously and ensures that each phase of the point receives the attention it requires.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+<!-- TAICHIKB-CROSSREF-END -->

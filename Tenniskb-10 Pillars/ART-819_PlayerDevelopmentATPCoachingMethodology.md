@@ -177,3 +177,10 @@ This structured approach ensures the review is focused, actionable, and time-eff
 | Technical errors persist despite verbal coaching | Insufficient visual feedback, player cannot feel the error | Plateau in technical development | Video analysis with slow-motion comparison to ideal model |
 | Tactical patterns not executed in matches | Insufficient video-based tactical training | Random shot selection, lost advantages | Video analysis of tactical patterns; match video review |
 | Player dismisses coach feedback | Poor feedback delivery, defensive response | Reduced coaching effectiveness | Restructure feedback delivery; involve player in analysis process |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

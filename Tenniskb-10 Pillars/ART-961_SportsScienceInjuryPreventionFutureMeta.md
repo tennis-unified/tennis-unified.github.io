@@ -165,3 +165,10 @@ The most effective coaches support player autonomy — the player's sense of own
 ## Practical Application: "The Best Partnerships Are Built, Not Found"
 
 Doubles partnerships, team environments, and coach-player relationships do not succeed by accident — they are built through intentional communication, clear role definition, and systematic conflict management. Invest in your tennis relationships with the same rigor you invest in your physical training. Discuss roles before the match, communicate with brevity during the match, and debrief with honesty after the match. The teams that communicate best perform best.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

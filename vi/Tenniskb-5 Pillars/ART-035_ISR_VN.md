@@ -33,3 +33,10 @@ ISR có mối liên hệ chặt chẽ với động tác sấp cẳng tay (forea
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Giật"
 Cảm giác của ISR nên là một cú "giật" đột ngột ở vai, không phải một chuyển động xoay liên tục. Đó là khoảnh khắc khi chuỗi động học "giải phóng" năng lượng vào cánh tay. Hãy tập trung vào thời điểm của cú giật, không phải sức mạnh của vòng xoay.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Xoay trong khớp vai (ISR) ở phức hợp vai*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Nhóm cơ xoay trong vai (dưới vai, ngực lớn, lưng rộng)*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Gia tốc xoay trong vai trong cú giao bóng*
+<!-- TAICHIKB-CROSSREF-END -->

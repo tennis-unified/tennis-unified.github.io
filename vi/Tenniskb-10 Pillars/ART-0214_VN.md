@@ -71,3 +71,10 @@ Tập dự đoán cú đánh dựa trên xác suất ngữ cảnh (ví dụ: "sa
 
 ## Ứng Dụng Thực Tế: "Đọc Ba Tín Hiệu"
 Trước cú đánh của đối thủ, nhanh chóng quét ba nguồn tín hiệu: (1) vị trí và hướng cơ thể, (2) góc vợt và đường vung vợt, và (3) xác suất ngữ cảnh dựa trên mô hình pha rally. Tích hợp ba nguồn này thành một phán đoán dự đoán duy nhất. Đọc tín hiệu có cấu trúc này ngăn chặn tầm nhìn đường hầm xảy ra khi người chơi tập trung vào một tín hiệu duy nhất và cung cấp hệ thống dự đoán mạnh mẽ hoạt động ngay cả khi một nguồn tín hiệu sai lệch.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

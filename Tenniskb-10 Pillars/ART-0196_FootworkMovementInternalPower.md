@@ -71,3 +71,10 @@ In the internal-power language of this pillar, the trained series spring is **st
 ## Practical Application: "The Ping-Pong Ladder"
 
 Commit to the four-rung ladder across a training block: two elastic sessions per week, 48 hours apart, each capped at 25 minutes of true work. Test at the start and end of the block with a standard 6-cone zig-zag timed run and an audible check — the same circuit at the same speed should sound quieter at week six than week one. Louder feet mean harder landings mean leaked energy; quieter feet at equal speed are the most direct evidence a player can feel that the series spring is rolling energy from plant to plant the way the best scramblers in the sport do it.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Fascial elastic energy storage & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -64,3 +64,10 @@ Different training methods target different stages. Video analysis improves patt
 
 ## Practical Application: "The Error Autopsy"
 After each error in practice or match play, conduct a quick "error autopsy" to identify the processing stage that failed. Was it a detection error (didn't see the ball clearly)? A recognition error (misread the spin)? A selection error (chose the wrong shot)? A programming error (poor technique)? Or an execution error (physical limitation)? This systematic diagnosis prevents generic "I played badly" assessments and enables targeted corrective training for the specific stage that failed.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

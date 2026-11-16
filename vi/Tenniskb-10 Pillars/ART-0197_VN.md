@@ -40,3 +40,10 @@ Năm phương pháp, theo thứ tự ưu tiên:
 
 ## Ứng Dụng Thực Tế: "Xây Phanh Trước Khi Cần"
 Cài đặt khối phanh hàng tuần hai lần, 30 phút cho sáu tuần tới: gập flywheel hoặc gập nặng-chậm, đáp rơi, bước xuống một chân ly tâm đơn, và hai lần ngồi tường kết thúc — theo thứ tự đó, 48 giờ giữa các khối, không công việc thay đổi hướng cứng cùng ngày.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Cơ học co cơ: lệch tâm/đồng tâm và lực–vận tốc*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

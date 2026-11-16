@@ -74,3 +74,10 @@ A fourth, low-tech option: the player counts the rally aloud — "one-two, one-t
 ## Practical Application: "Find the Beat, Then Break It"
 
 At the next session, spend 15 minutes on rhythm before touching technique. First, **find the beat**: play one normal rally while the player counts the interval aloud — most players have never measured it and are surprised it is nearly 2 s. Second, **lock the beat**: 6 × 90-second fed rallies with the metronome at the measured tempo, splitting on the beat. Third, **break the beat**: tempo-change rallies with pace varied every few balls, scoring in-window splits. The player who owns the beat can also steal it — one slow, high ball to stretch the opponent's cycle, then a flat one to compress it — tempo used as a weapon rather than a trap.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Tai Chi principles applied to tennis*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+<!-- TAICHIKB-CROSSREF-END -->

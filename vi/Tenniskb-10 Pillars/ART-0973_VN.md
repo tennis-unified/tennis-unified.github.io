@@ -49,3 +49,10 @@ Ba chế độ thất bại lặp lại. Lo lắng dữ liệu: vận động vi
 ## Ứng Dụng Thực Tế: "Dữ Liệu La Bàn, Không Phải Huấn Luyện Viên"
 
 Các thiết bị đeo trả lời tốt một câu hỏi — "vận động viên này phản ứng như thế nào?" — và trả lời kém một câu hỏi, cụ thể là "chúng ta nên làm gì?" Để xu hướng sẵn sáng buổi sáng định hình xem hôm nay là ngày khó hay ngày dễ, để số cú đánh định hình mức độ bạn tiến bộ, và để nhật ký giấc ngủ bắt đầu cuộc trò chuyện mà bạn sẽ không bao giờ có. Nhưng chính kế hoạch vẫn đến từ phán đoán huấn luyện. Hành động dựa trên xu hướng, phớt lờ các điểm dữ liệu đơn lẻ, và không bao giờ để điểm cổ tay ghi đè cách vận động viên thực sự cảm thấy, di chuyển và thể hiện.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -63,3 +63,10 @@ Players who struggle with the one-handed backhand often benefit from drills that
 
 ## Practical Application: "The One-Handed Rotation Drill"
 Stand in front of a mirror and practice the one-handed backhand swing slowly. Focus on rotating your hips and shoulders away from the net during the take-back, then rotating forward during the swing. Check that your non-dominant arm extends backward during the take-back and moves across your body during the forward swing. Repeat until the rotation feels natural.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+<!-- TAICHIKB-CROSSREF-END -->

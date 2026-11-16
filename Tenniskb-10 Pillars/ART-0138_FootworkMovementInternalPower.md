@@ -68,3 +68,10 @@ The checking foot — hovering at 40-60% commitment, ready to bail — is the si
 ## Practical Application: "Full Foot or No Swing"
 
 Give the player one rule: **unless the outside foot is fully planted, the swing does not happen.** At the next session, run committed-plant feeds for ten minutes — wide balls fed at rising difficulty, the coach calling "full foot" or "check" on every arrival, and the player deliberately letting check-plant balls go by untouched. Letting balls go is the point: it prices the committed plant above the urge to swing. Follow with two-scale shadow strokes to give the feeling a number. Inside one session, most players stop checking — and the first fully committed plant usually produces the heaviest ball of the day, because for the first time the ground was actually allowed to hit it.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

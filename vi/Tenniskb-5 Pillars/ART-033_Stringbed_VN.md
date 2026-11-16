@@ -35,3 +35,9 @@ Ma sát giữa dây dọc và dây ngang ảnh hưởng đến tốc độ phụ
 
 ## Ứng Dụng Thực Tế: Kết Hợp Dây Với Chuỗi Động Học
 Mặt vợt là mắt xích cuối cùng trong việc truyền năng lượng. Nếu người chơi tạo ra động năng khổng lồ nhưng sử dụng mặt vợt rất mềm, căng thấp, năng lượng sẽ bị "hấp thụ" bởi dây thay vì được trả lại cho quả bóng. Ngược lại, một người đánh mạnh với dây cứng sẽ tối đa hóa việc trả lại năng lượng đầu vào cao của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Va chạm đàn hồi và hệ số phục hồi*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Độ đàn hồi mặt lưới và cơ học va chạm*
+<!-- TAICHIKB-CROSSREF-END -->

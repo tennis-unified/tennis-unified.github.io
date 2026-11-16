@@ -99,3 +99,10 @@ Vận động viên là CEO của sự nghiệp mình. "Kế Hoạch Sự Nghi�
 
 ## Ứng Dụng Thực Tế: "Bàn Làm Việc Của CEO"
 Kế Hoạch Sự Nghiệp Vận Động Viên Nằm Trên Bàn Làm Việc Của CEO. Nó Không Phải File PDF Trong Thư Mục. Nó Là **Bảng Tính Sống / Notion Workspace / Bảng Trắng** Được Cập Nhật Hàng Tuần. CEO (VĐ) Đọc Nó Mỗi Thứ Hai. COO (HLV) Tham Khảo Mỗi Buổi Tập. Hội Đồng Xem Xét Hàng Quý. **Nếu Nó Không Mới, Nó Không Phải Kế Hoạch — Đó Là Ước Mơ.**
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 19: Thấu hiểu cơ học-thích-nghi của mô mạc: Ứng dụng vào y học thể thao — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch19-thau-hieu-co-hoc-thich-nghi-cua-mo-mac-ung-dung-vao-y-hoc-the-th.html) — *Cơ học thích nghi và phòng ngừa chấn thương*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

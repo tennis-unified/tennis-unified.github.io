@@ -53,3 +53,10 @@ Khi đối mặt với đối thủ lừa dối, hãy duy trì tư thế sẵn s
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Lừa Dối"
 Khi bạn nhận thấy chuẩn bị của đối thủ trông giống hệt nhau cho nhiều cú đánh, hãy thực hiện "kiểm tra lừa dối": chủ động tìm kiếm các tín hiệu phân biệt một cú đánh với cú đánh khác. Thay vì chấp nhận sự chuẩn bị mơ hồ, hãy tìm kiếm những khác biệt tinh tế bộc lộ cú đánh thực sự. Việc tìm kiếm có chủ đích các tín hiệu lừa dối này ngăn chặn sự dự phóng tự động mà kẻ lừa dối lợi dụng và giữ cho bạn luôn sẵn sàng cho những điều bất ngờ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

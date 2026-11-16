@@ -123,3 +123,10 @@ Dạy người chơi trình tự di chuyển ba giai đoạn:
 5. **Cập nhật theo thời gian thực.** Nếu bản đọc thay đổi trong bước đầu tiên, điều chỉnh. Bước trước có thể đảo ngược; cam kết đầy đủ thì không.
 
 Mục tiêu không phải luôn đúng với bước trước — mà là luôn sớm với bước đầu tiên đầy đủ. Một người chơi di chuyển sớm và điều chỉnh gần như luôn đánh bại một người chờ sự chắc chắn rồi mới di chuyển. Cửa sổ nhận thức không phải vấn đề để giải quyết — đó là nguồn lực để khai thác.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

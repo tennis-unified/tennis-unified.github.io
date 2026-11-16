@@ -78,3 +78,10 @@ Heavy lifting still matters — muscles set the stiffness the springs depend on 
 ## Practical Application: "Be a Bow, Not a Piston"
 
 Give the player one image: **the body is a drawn bow, and the ball is released off it, not pushed by it.** At the next session, open with two minutes of metronome oscillations until the calf spring feels automatic. Then the rebound wall series: catch and throw in one motion, the ball leaving the hands before the player has settled. Finish with ten forehands per side where the only instruction is "load and release without stopping" — no pause at the top of the coil, no settling into the plant. Most players feel the shots cost less; the coach sees the footwork quicken. That difference — the same output at a lower metabolic price — is kình đàn hồi, measured in ATP never spent.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Fascial elastic energy storage & recoil*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Myofascial force transmission across segments*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

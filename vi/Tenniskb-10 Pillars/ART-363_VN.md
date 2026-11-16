@@ -78,3 +78,10 @@ Huấn luyện forehand slice bao gồm:
 ## Ứng Dụng Thực Tế: "Cú Slice Và Tiến Lên"
 
 Luyện tập cú forehand slice như cú tiến lên lưới: đánh slice sâu vào góc backhand của đối thủ, sau đó đi theo nó đến lưới. Tập trung vào nảy thấp và quỹ đạo lơ lửng của slice, làm cho đối thủ khó đánh cú passing tấn công. Kết hợp này hiệu quả trên mặt sân nhanh (cỏ, sàn cứng) nơi slice giữ thấp sau nảy.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

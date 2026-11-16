@@ -39,3 +39,10 @@ Coaches are a load variable. Five instructions delivered before a match are five
 
 ## Practical Application: "Decide Before the Point Starts"
 Big-point tennis is not about thinking faster — it is about having decided earlier. Build if-then plans for your most common pressure situations, compress them into single phrases, and rehearse them until they fire automatically. Protect your working memory like the scarce resource it is: one plan, one cue, one breath. The players who look calm at match point down are not calmer people; they are running a system that leaves their mental workspace empty of everything except the ball.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

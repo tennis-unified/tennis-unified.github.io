@@ -50,3 +50,10 @@ The moment of inertia about a vertical axis through the handle:
 
 ## Practical Application: "The Racket Balance"
 Choose a racket with a swing weight that matches your swing speed. If you have a fast, aggressive swing, choose a lower swing weight for maximum racket speed. If you have a slower, more controlled swing, choose a higher swing weight for maximum power. The ideal racket is one that you can swing at maximum speed while still maintaining control and forgiveness.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+<!-- TAICHIKB-CROSSREF-END -->

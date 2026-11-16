@@ -53,3 +53,10 @@ Người chơi gặp khó khăn trên sân đất nung thường được lợi 
 
 ## Ứng Dụng Thực Tế: "Bài Tập Sân Đất Nung"
 Tập luyện backhand của bạn trên sân đất nung, tập trung vào tư thế, topspin nặng và sức bền. Theo dõi số cú đánh liên tiếp bạn có thể thực hiện mà không mắc lỗi và số điểm bạn giành được từ tư thế phòng thủ. Bài tập này phát triển những kỹ năng cần thiết cho lối chơi hiệu quả trên sân đất nung.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -57,3 +57,10 @@ Another effective drill is angle awareness training: place a cone at the interse
 ## Practical Application: "Target Practice Makes Perfect"
 
 In your next practice session, divide each service box into three zones: wide, body, and T. Hit 20 serves to each zone and track your success rate. Note which zone produces the weakest returns and prioritize that placement in matches. Remember: the wide serve opens the court, the body serve jams the returner, and the T serve minimizes return angle. Use them in combination to keep the returner guessing.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

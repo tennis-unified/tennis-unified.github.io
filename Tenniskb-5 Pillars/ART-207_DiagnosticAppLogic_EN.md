@@ -424,3 +424,10 @@ OUTPUT: Personalized Masters Protocol Document
 
 ## Practical Application: "The Stethoscope"
 The Diagnostic App is the **Stethoscope of the 5-Pillar System**. It doesn't replace the doctor (Coach/Medic) — it amplifies their hearing. It hears the murmurs (HRV drift, technical regression, cognitive load) before they become crashes. **Use it daily. Trust its differentials. Verify its prescriptions. The athlete's career is the patient.**
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & core*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

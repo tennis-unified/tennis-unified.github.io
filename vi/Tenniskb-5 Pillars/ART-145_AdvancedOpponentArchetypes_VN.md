@@ -61,3 +61,10 @@ Bài 123 giới thiệu sáu mô hình. Bài viết này đi sâu vào hồ sơ:
 
 ## Ứng Dụng Thực Tế: "Hồ Sơ"
 Kế hoạch trận đấu không có dữ liệu là ước mơ. Kế hoạch trận đấu có dữ liệu là chiến thuật. Xây dựng hồ sơ. Thực thi kế hoạch. Chỉ điều chỉnh khi dữ liệu yêu cầu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

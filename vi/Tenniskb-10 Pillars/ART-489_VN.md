@@ -52,3 +52,10 @@ Người chơi trung cấp gặp khó khăn với các lỗi này thường hư�
 ## Ứng Dụng Thực Tế: "Thói Quen Của Người Chơi Trung Cấp"
 
 Người chơi trung cấp nên thực hành bài tập Topspin có mục tiêu, bài tập Slice tiến về mạng và bài tập Kiểm soát Hướng đánh thường xuyên, tập trung vào đa dạng cú đánh và kiểm soát hướng đánh. Theo dõi tiến độ qua các buổi tập để đảm bảo kỹ năng đang phát triển đúng hướng. Khi người chơi cải thiện, họ có thể thêm các bài tập nâng cao hơn vào thói quen tập luyện.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

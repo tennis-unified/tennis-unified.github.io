@@ -73,3 +73,10 @@ Giải pháp là huấn luyện quyết định, không chỉ cơ học. Ngườ
 ## Ứng Dụng Thực Tế: "Hạ Cánh, Nhìn, Quyết Định"
 
 Đưa cho người chời một câu thần chú ba nhịp: **hạ cánh, nhìn, quyết định.** Split-step đầu tiên hạ cánh tại thời điểm chạm (hạ cánh). 30-50 ms đầu tiên sau khi hạ cánh được dùng để giải quyết bản đọc (nhìn). Nếu bản đọc rõ ràng, đẩy ngay lập tức. Nếu bản đọc mơ hồ, kích hoạt micro-split thứ hai và chuyển hướng. Ở buổi tập tiếp theo, bắt đầu với bài tập nhận dạng: huấn luyện viên đánh thức ăn bóng rõ ràng và ngụy trang theo thứ tự ngẫu nhiên, và người chơi thực hành trình tự hạ cánh-nhìn-quyết định. Tính cả quyết định và kết quả. Trong vài vòng, bước hai trở thành lựa chọn tự động thay vì phán đoản hoảng loạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

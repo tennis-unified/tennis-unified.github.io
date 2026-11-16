@@ -221,3 +221,10 @@ Overtraining syndrome is a state of chronic maladaptation to training characteri
 ## Practical Application: "The Best Training Is the Training the Body Can Recover From"
 
 In youth tennis, more training is not always better. The goal is to prescribe the optimal training load — enough to stimulate adaptation, not so much as to overwhelm recovery capacity. Monitor your young player's training load, growth velocity, sleep, mood, and motivation with the same attention you give to their stroke technique. Reduce training proactively during growth spurts, enforce mandatory rest periods, and remember that the player who trains sustainably for 10 years will outperform the player who trains maximally for 3 years before burning out or breaking down.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+<!-- TAICHIKB-CROSSREF-END -->

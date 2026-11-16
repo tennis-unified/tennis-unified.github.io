@@ -75,3 +75,10 @@ The routine should feel natural and comfortable. What works for one player may n
 
 ## Practical Application: "The Serve Routine"
 Develop a consistent serve routine: (1) stand behind the baseline, (2) take one deep breath, (3) visualize the serve landing in the target, (4) bounce the ball three times, (5) use your cue word ("smooth"), (6) execute the serve. Practice this routine in every practice session until it becomes automatic. During matches, use this routine to create a familiar, controllable process that enhances focus and confidence. The serve routine is the most important pre-performance routine in tennis because every point begins with your serve.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

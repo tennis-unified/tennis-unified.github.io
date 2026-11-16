@@ -147,3 +147,10 @@ Nghiên cứu cho thấy:
 | Hồi phục chậm sau trận đấu | Quy trình hồi phục không đủ | Mệt mỏi tích lũy | Hồi phục tích cực ngay sau trận đấu; các buổi tập giữa các trận |
 | Tính dẻo dai và biên độ vận động kém | Thiếu bài tập vận động khớp | Giảm chất lượng kỹ thuật, nguy cơ chấn thương | Bài tập vận động khớp hàng ngày; yoga; lăn foam roller |
 | Mệt mỏi tinh thần và căng thẳng | Thiếu hồi phục tâm lý | Giảm động lực, kiệt sức | Yoga, thiền, các hoạt động nhẹ nhàng thúc đẩy thư giãn |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+<!-- TAICHIKB-CROSSREF-END -->

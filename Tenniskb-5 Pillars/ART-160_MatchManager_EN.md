@@ -85,3 +85,10 @@ Athlete Career Plan, Coach Program Plan, Academy System Plan, Parent Support Pla
 
 ## Practical Application: "The Pilot"
 You are not the passenger in the match. You are the Pilot. The Match Manager is your instrument panel. The 5 Pillars are your engines. The Routine is your autopilot. The Conditions Map is your radar. The Scoreboard is just the destination — you fly the plane.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & core*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

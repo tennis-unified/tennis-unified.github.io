@@ -93,3 +93,10 @@ After any high-intensity competition or training session, allow a minimum of 48 
 | Recurring injuries mid-season | Training load spikes exceeding 1.5 ACWR | Tendonopathies, muscle strains | Implement rolling load monitoring with mandatory recovery microcycles |
 | Player unable to adapt to surface transitions | Insufficient transition mesocycle duration | Poor results during transition months | Build dedicated 2-week surface blocks in annual calendar |
 | Mental fatigue late in season | Insufficient recovery microcycles | Loss of motivation, burnout | Schedule deliberate off-weeks and variety training blocks mid-season |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -64,3 +64,10 @@ Cách diễn giải của người chơi về lo lắng quyết định tác đ�
 
 ## Ứng Dụng Thực Tế: "Khung Hình Lo Lắng"
 Khi bạn nhận ra lo lắng cạnh tranh kích hoạt, thực hiện khung hình lo lắng: (1) thừa nhận các cảm giác thể chất (nhịp tim nhanh, căng thẳng), (2) dán nhãn lại các cảm giác như hào hứng thay vì lo lắng, (3) diễn giải lại kích thích như chuẩn bị cho thành tích đỉnh cao ("cơ thể tôi đang sẵn sàng chơi"), (4) tập trong vào quy trình của cú đánh tiếp theo thay vì kết quả. Khung hình này biến phản ứng lo lắng từ một yếu tố làm gián đoạn thành tích thành một yếu tố nâng cao thành tích, sử dụng năng lượng của kích thích để nuôi dưỡng lối chơi tập trung, tích cực.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

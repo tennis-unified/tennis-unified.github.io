@@ -164,3 +164,10 @@ Anticipation uses advance cues to predict the opponent's action before it occurs
 ## Practical Application: "Read, Don't React"
 
 The best returners in tennis do not have faster reflexes than other players — they have better anticipation. Instead of reacting to where the ball goes, they read where it will go and begin moving before the opponent's racket contacts the ball. Train this skill by watching match footage with the sound off: can you predict the shot direction from the opponent's body position alone? Practice this during matches by focusing on your opponent's hips, shoulders, and racket face at the moment of contact. Over time, you will begin to read these cues automatically, and your reactions will seem superhuman — even though your raw reaction time has not changed at all.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Sensorimotor integration & motor control*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+<!-- TAICHIKB-CROSSREF-END -->

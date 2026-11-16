@@ -316,3 +316,10 @@ Tạo thẻ hồ sơ vận động viên một trang:
 | Huấn luyện không chuyển thành thành tích trận đấu | Thiếu huấn luyện riêng cho trận đấu | Tập tốt, kết quả trận kém | Tăng mô phỏng trận đấu; thực hành dưới áp lực |
 | Điểm yếu của vận động viên bị lộ trong trận | Không tập trung đủ vào điểm yếu trong huấn luyện | Lỗi lặp lại, bị đối thủ khai thác | Ưu tiên phát triển điểm yếu; huấn luyện có mục tiêu |
 | Vận động viên không cải thiện ở các khu vực được nhắm | Khối lượng hoặc chất lượng huấn luyện không đủ cho ưu tiên | Tiến triển chậm, thất vọng | Tăng tập trung huấn luyện vào ưu tiên; điều chỉnh phương pháp |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -86,3 +86,10 @@ Mỗi vận động viên mang một thẻ:
 
 ## Ứng Dụng Thực Tế: "Nhà Máy"
 Bài học riêng là xưởng may — thủ công, chậm, đắt. Học viện là nhà máy — quy trình chuẩn, kiểm soát chất lượng, sản xuất quy mô. Nhưng *nguyên liệu* (vận động viên) khác nhau. Hệ thống phải đủ cứng để đảm bảo chất lượng, đủ mềm để vừa cá nhân. Thiết kế dây chuyền; giám sát sản phẩm.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

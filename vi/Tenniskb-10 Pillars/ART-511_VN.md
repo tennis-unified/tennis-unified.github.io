@@ -101,3 +101,10 @@ Nếu người giao bóng thay đổi tư thế hoặc động tác quá rõ tr�
 ## Ứng Dụng Thực Tế: "Mục Tiêu Nông"
 
 Đặt một chiếc khăn làm mục tiêu cách vạch giao bóng 6 feet về phía trong, nằm trong ô giao bóng. Tập 20 serve dưới tay với mục tiêu cho bóng rơi lên hoặc chỉ hơi vượt qua chiếc khăn. Bài tập này rèn cảm giác về tốc độ và quỹ đạo cần thiết để giữ serve dưới tay đủ nông, kéo người trả bóng về phía trước mà không tặng họ quả bóng dễ tấn công.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

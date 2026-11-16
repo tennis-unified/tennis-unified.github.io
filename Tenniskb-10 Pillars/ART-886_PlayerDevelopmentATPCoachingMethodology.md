@@ -183,3 +183,10 @@ Based on Hawk-Eye data:
 | Ineffective return positioning | No return position analysis, static positioning | Poor return quality | Return position analysis; adjust position based on serve data |
 | Inconsistent rally patterns | No shot analysis, random shot selection | Tactical errors, wasted opportunities | Shot placement analysis; pattern development; tactical coaching |
 | Inability to exploit opponent weaknesses | No opponent scouting | Missed opportunities | Hawk-Eye opponent analysis; game plan development |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

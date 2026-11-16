@@ -245,3 +245,10 @@ Phương pháp huấn luyện phải được thích ứng với giai đoạn ph
 | Thanh thiếu niên chất vấn quyền lực huấn luyện viên | Thiếu tự chủ, giao tiếp kém | Kháng cự, tổn thương mối quan hệ | Giải thích lý do; cho phép tham gia quyết định; tôn trọng sự độc lập |
 | Người trẻ trưởng thành đình trệ ở mức chuyên nghiệp | Thiếu phân tích dữ liệu, phát triển chiến thuật kém | Sự nghiệp trì trệ | Áp dụng huấn luyện dựa trên dữ liệu; tinh tế chiến thuật |
 | Vận động viên lớn tuổi gặp khó khăn với phục hồi | Quản lý phục hồi không đủ, huấn luyện quá sức | Mệt mỏi, chấn thương | Giảm khối lượng huấn luyện; ưu tiên phục hồi; thích ứng kỳ vọng |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+<!-- TAICHIKB-CROSSREF-END -->

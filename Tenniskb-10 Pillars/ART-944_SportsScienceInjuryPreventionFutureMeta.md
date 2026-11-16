@@ -158,3 +158,10 @@ Not all recovery modalities are created equal. When time and resources are limit
 7. **Foam rolling** (10-15 minutes daily): Convenient self-myofascial release for maintaining tissue quality.
 
 The recovery hierarchy is simple: sleep first, eat second, move third, and then add the other modalities as time and resources allow. Players who sleep 9 hours, eat a proper recovery meal, and do 20 minutes of active recovery will recover better than players who spend an hour in an ice bath and sleep 5 hours. Recovery is not about the most expensive technology; it is about the fundamentals done consistently.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

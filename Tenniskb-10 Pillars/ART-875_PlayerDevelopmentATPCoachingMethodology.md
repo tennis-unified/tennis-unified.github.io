@@ -122,3 +122,10 @@ Track flexibility improvements monthly:
 | Reduced power after pre-match stretching | Static stretching before activity | Decreased serve speed | Move static stretching to cool-down; use dynamic warm-up before activity |
 | Chronic muscle tension | Insufficient cool-down, poor recovery | Stiffness, pain, reduced flexibility | Post-match static stretching; foam rolling; massage |
 | Flexibility plateau | Insufficient stretching frequency or duration | No improvement in range of motion | Increase stretching frequency; hold longer; add PNF stretching |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Muscular system: prime movers & stabilizers*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

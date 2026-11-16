@@ -52,3 +52,10 @@ Neutral stance forehands (feet roughly parallel to the baseline) offer moderate 
 ## Practical Application: "The Loaded Spring"
 
 To feel correct hip loading, stand in your forehand preparation position and have a partner place a hand on your front hip, gently preventing it from rotating forward. Coil your shoulders to 90 degrees while your hips rotate only 45 degrees, feeling the stretch across your left side (for right-handed players). Hold this position for 2 seconds, feeling the tension in your obliques like a compressed spring. Release by driving the front hip forward explosively, allowing your shoulders to follow. This drill isolates the loading sensation that should occur during every forehand.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+<!-- TAICHIKB-CROSSREF-END -->

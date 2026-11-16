@@ -62,3 +62,10 @@ Players with a history of shoulder or elbow injuries should consider using a mor
 ## Practical Application: "The Triangle Check"
 
 At the set position and at contact, consciously check the geometry of your impact triangle. Is your elbow at 90 to 120 degrees of flexion? Is the contact point at the optimal distance from your shoulder? Is your shoulder elevated and stable? Developing this awareness helps you maintain the optimal triangle and avoid the mechanical compromises that reduce power and increase injury risk.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Elbow, forearm pronation & wrist mechanics*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

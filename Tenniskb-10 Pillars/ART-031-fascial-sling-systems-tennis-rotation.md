@@ -107,3 +107,10 @@ Weakness in the gluteus medius or IT band complex reduces lateral stability:
 
 ## Practical Application: "The X-Pattern"
 Visualize your body as an X formed by two diagonal lines: one from your right shoulder to your left hip (posterior oblique sling), and one from your left shoulder to your right hip (anterior oblique sling). During the loading phase, you stretch both diagonals like rubber bands. During the forward swing, you release both diagonals simultaneously, creating a powerful rotational force. Practice this by standing in your ready position and consciously feeling the stretch from your right shoulder to left hip during loading, then the snap from left shoulder to right hip during the swing. This X-pattern of diagonal tension and release is the essence of fascial sling function in tennis.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Myofascial force transmission across segments*
+<!-- TAICHIKB-CROSSREF-END -->

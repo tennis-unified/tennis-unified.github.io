@@ -68,3 +68,10 @@ Nhận diện tài năng không phải là đoán ai thắng U12. Đó là đán
 
 ## Ứng Dụng Thực Tế: "Cách Tiếp Cận Moneyball"
 Đừng trinh sát người thắng. Hãy trinh sát *quỹ đạo*. Quán quân U12 có kỹ thuật hoàn hảo nhưng không trần thể chất và cha mẹ độc hại là khoản đầu tư tồi. Vận động viên hạt 3 U12 với cú đánh xấu, dự đoán đẳng cấp, tiền PHV, và gia đình tư duy tăng trưởng mới là tài sản. Cá cược vào độ dốc của đường cong, không phải độ cao của điểm.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

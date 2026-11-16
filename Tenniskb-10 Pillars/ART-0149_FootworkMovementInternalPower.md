@@ -86,3 +86,10 @@ At the next session, teach the anchoring technique in three steps:
 2. **Transfer.** Have the player stand in their ready position and reproduce the same lower-belly inflation. The hand remains on the lower belly as a reference. The player should feel the lower abdomen expand outward in all directions — not just forward, but laterally and posteriorly (into the lumbar spine). Practice 10 standing breaths. Most players will initially chest-breathe when standing; the hand-on-belly cue helps them find the diaphragmatic pattern.
 
 3. **Integration.** The player hits 10 shadow serves with the anchoring sequence: inhale and inflate on the toss, hold through the drive and contact, exhale on the follow-through. Then 10 live serves. Then 10 groundstrokes with the rally anchor (inflate on opponent's backswing, hold through contact, release on follow-through). After 2-3 sessions, the anchor becomes automatic and the player no longer needs the hand-on-belly cue. The result is a measurable increase in lumbar stability (the player reports feeling "more solid" on the serve), reduced low-back tightness after play, and a physical reference point for organizing all internal power movements — the anchor as the foundation of the internal system.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+<!-- TAICHIKB-CROSSREF-END -->

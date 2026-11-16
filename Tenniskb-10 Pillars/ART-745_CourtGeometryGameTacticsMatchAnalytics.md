@@ -57,3 +57,10 @@ Players should practice Pattern Disruption: Breaking Opponent's Comfort Zone in 
 ## Practical Application: "Break Your Own Patterns"
 
 Implement Pattern Disruption: Breaking Opponent's Comfort Zone by committing to the tactic for an entire practice set. Track how many points you win using the pattern versus your default approach. If the tactic wins more than 55% of points, integrate it into your regular repertoire. If it wins less, analyze why: was it your execution, the opponent's adjustment, or poor timing? Refine the tactic based on this analysis before your next match.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Mindfulness & flow state in sport*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -52,3 +52,10 @@ Trong khi tải một chân, vùng chậu phía vung phải được giữ ngang
 ## Ứng Dụng Thực Tế: "Giữ Bát Ngang, Hướng Mép Về Phía Bóng"
 
 Cho người chơi một hình ảnh: **vùng chậu là một bát nước — mang nó ngang, và hướng mép của nó về phía bóng đang đi.** Trong buổi tập tiếp theo, chạy kiểm tra đường đai trên mười cú forehand mở và đếm số lần đổ; hầu hết người chơi ngạc nhiên khi thấy ba hoặc bốn lần. Sau đó dành năm phút cho giữ bàn xoay một chân, cảm nhận đường chậu giữ ngang trong khi vùng chậu xoay — kỹ năng chính xác mà cú đánh đòi hỏi. Kết thúc bằng vuông hướng đường bóng: mười cú vung bóng đóng băng ở kết thúc, rốn trên dây và đai ngang, rồi mười bóng thật với huấn luyện viên gọi "ngang" hoặc "đổ".
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -184,3 +184,10 @@ Late bloomers must be strategic about ranking progression:
 | Slow ranking progression | Poor tournament selection, insufficient match play | Frustration, demotivation | Optimize tournament selection; increase event volume; target weaker fields |
 | Injuries from rapid training increase | Overtraining, insufficient recovery | Time lost, setbacks | Gradual load increase; prioritize recovery; injury prevention focus |
 | Difficulty competing against experienced juniors | Pattern recognition gap, tactical immaturity | Tactical errors, frustration | Accelerated tactical education; opponent analysis practice; match simulation |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Energy systems for tennis conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

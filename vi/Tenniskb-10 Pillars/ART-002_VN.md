@@ -21,3 +21,10 @@ Split-step đóng vai trò như căng trước nhanh của cơ duỗi chi dướ
 
 ## Ứng Dụng Thực Tế: "Đếm Nhịp Split-Step"
 Split-step đòi hỏi thời gian chính xác: bắt đầu cú nhảy khi đối thủ bắt đầu vung vợt về phía trước, chạm đất khi bóng rời vợt. Đếm nhịp "1-2" — "1" là cú nhảy, "2" là chạm đất và đẩy — để đồng bộ hóa chuỗi phản ứng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

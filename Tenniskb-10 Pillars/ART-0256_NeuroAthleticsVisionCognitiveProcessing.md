@@ -61,3 +61,10 @@ Prioritize sleep after practice and matches. Sleep is the primary period for mem
 
 ## Practical Application: "The Maintenance Schedule"
 Create a maintenance schedule for your tennis skills: (1) procedural skills: practice at least twice per week to maintain automation, (2) tactical knowledge: review your tactical journal before each match, (3) opponent profiles: update after each match against a new opponent, (4) match experiences: review and reflect after each match. This schedule ensures that your long-term memory remains current and that skills and knowledge do not decay during periods of reduced play.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Myofascial force transmission across segments*
+<!-- TAICHIKB-CROSSREF-END -->

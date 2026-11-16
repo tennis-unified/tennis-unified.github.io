@@ -54,3 +54,10 @@ This transition should feel effortless and explosive, like releasing a compresse
 ## Practical Application: "The Power Position Hold"
 
 Hold the power position for 3-5 seconds before each forward swing, consciously checking all five characteristics. Feel the elastic tension in your legs, trunk, and wrist. This deliberate hold ingrains the correct position and develops the proprioceptive awareness needed to self-assess the power position during normal-speed strokes. Over time, the hold duration decreases as the correct position becomes automatic.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

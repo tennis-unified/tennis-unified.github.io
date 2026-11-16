@@ -70,3 +70,10 @@ Người chơi không thể tạo đủ lực eccentric ở chân bên ngoài s�
 ## Ứng Dụng Thực Tế: "Quy Tắc Một Lần Nảy"
 
 Thiết lập bài tập người chơi bắt đầu ở dấu trung tâm và huấn luyện viên cung cấp bóng rộng. Quy tắc: chân bên ngoài chỉ được nảy một lần. Nếu nảy hai lần, người chơi chưa đảo ngược kịp — nảy thứ hai đại diện cho 200 ms chậm trễ tốn một điểm ở cú tiếp theo. Huấn luyện viên đếm nảy to. Quy tắc đơn giản này luyện não coi đổ chân bên ngoài như lò xo, không phải phanh. Qua 10 lần lặp, người chơi học làm nảy đơn nhất thành cuối cùng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Động lực học tuyến tính, GRF và xung lượng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Đường Bên: ổn định ngang và lực sang bên*
+<!-- TAICHIKB-CROSSREF-END -->

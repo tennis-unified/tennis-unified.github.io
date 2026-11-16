@@ -60,3 +60,10 @@ Mưa đòi hỏi các điều chỉnh: bước nhỏ hơn, tâm trọng lực th
 ## Ứng Dụng Thực Tế: "Bước Nhỏ, Cầm Chắc, Cú Đánh Thông Minh"
 
 Khi trời mưa: (1) đi bước nhỏ, có kiểm soát để duy trì thăng bẳng, (2) duy trì cầm vợt chắc với bàn tay khô ráo, (3) sử dụng lựa chọn cú đánh thông minh — volley đấm phẳng và volley thả nhẹ thay vì cú đánh xoáy. An toàn là ưu tiên hàng đầu, luôn luôn vậy.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

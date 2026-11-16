@@ -63,3 +63,10 @@ Khi một quả bóng xoáy bay qua không khí:
 
 ## Ứng Dụng Thực Tế: "Đường Cong Xoáy"
 Để tối đa hóa topspin, chải lên phía sau bóng với đường vợt thấp-đến-cao. Để tối đa hóa slice, chải xuống phía sau bóng với đường vợt cao-đến-thấp. Để tối đa hóa sidespin, chải ngang qua bóng. Càng chải mạnh vào bóng (càng lớn thành phần tiếp tuyến của đường vợt), càng tạo nhiều xoáy. Tận dụng hiệu ứng Magnus: topspin nặng cho cú đánh an toàn, tấn công; slice cho cú đánh phòng thủ, nảy thấp; sidespin cho góc rộng và gây rối.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

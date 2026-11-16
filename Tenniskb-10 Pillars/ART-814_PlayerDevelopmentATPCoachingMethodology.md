@@ -215,3 +215,10 @@ Execute continuously for 30 seconds, rest 30 seconds, repeat 6-8 times. This dri
 | Poor court coverage | Insufficient movement training, inefficient patterns | Opponent finds open court | Court coverage pattern drills; movement efficiency training |
 | Frequent missteps or stumbles | Poor balance, weak proprioception | Falls, injuries, missed shots | Balance training; proprioceptive exercises; ankle stability work |
 | Slow recovery to center | Poor recovery movement, lack of urgency | Opponent hits to open court | Recovery drills; center-of-angles education; fitness training |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+<!-- TAICHIKB-CROSSREF-END -->

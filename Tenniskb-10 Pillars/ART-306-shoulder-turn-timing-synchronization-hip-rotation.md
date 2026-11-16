@@ -52,3 +52,10 @@ The minimum effective unit turn time is approximately 0.15 to 0.20 seconds for a
 ## Practical Application: "The Hip-Shoulder Gap Drill"
 
 Place a racquet on the ground pointing toward the net (your hip line target) and stand perpendicular to it. Perform your unit turn, consciously rotating your shoulders well past the racquet while keeping your hips pointing toward or slightly past it. This external reference helps you visualize the separation angle. Progress to shadow swings, focusing on the feeling of your shoulders "wanting to go further" while your hips resist. This resistance creates the elastic tension that powers the forward swing.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

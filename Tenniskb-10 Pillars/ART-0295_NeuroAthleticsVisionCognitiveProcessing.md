@@ -67,3 +67,10 @@ Monitor data over time to track progress and identify trends.
 
 ## Practical Application: "The Performance Dashboard"
 Create a personal performance dashboard that integrates data from multiple sources: (1) match statistics, (2) tracking data, (3) physiological data, and (4) cognitive assessments. Review this dashboard weekly to identify trends, track progress, and make informed training decisions. This data-driven approach to performance optimization ensures that your training is based on evidence rather than intuition, maximizing the effectiveness of your practice and producing measurable improvements in cognitive performance.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+<!-- TAICHIKB-CROSSREF-END -->

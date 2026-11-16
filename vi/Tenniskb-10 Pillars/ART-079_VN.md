@@ -51,3 +51,10 @@ Thân là khớp nối trung tâm trong chuỗi động học, liên kết thân
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Thân"
 Trong cú đánh, hãy tập trung cảm nhận thân xoay đầy đủ và theo trình tự với hông và vai. Nếu xoay bị hạn chế, hãy làm việc về khả động thân. Nếu thân cảm thấy không ổn định, hãy làm việc về tập cơ ổn định sâu. Nếu thời điểm bị lệch, hãy làm việc về drill kích hoạt tuần tự. Thân là trung tâm truyền lực — một thân mạnh, ổn định, thời điểm tốt đảm bảo truyền lực hiệu quả từ mặt đất đến vợt.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Chương 9: Mặt Trước Sâu — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch09-mat-truoc-sau.html) — *Đường Mặt Trước Sâu: trục ổn định trọng tâm*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+<!-- TAICHIKB-CROSSREF-END -->

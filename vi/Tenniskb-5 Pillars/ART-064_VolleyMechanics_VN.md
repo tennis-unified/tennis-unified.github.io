@@ -44,3 +44,10 @@ Truyền năng lượng là quá trình truyền năng lượng từ mặt sân 
 
 ## Ứng Dụng Thực Tế: "Vô Lê Hoàn Chỉnh"
 Vận động viên nên cảm nhận rằng vô lê là "hoàn chỉnh" và tích hợp với chuỗi động học. Vận động viên nên cảm nhận năng lượng chảy từ mặt sân, qua vùng lõi và ra ngoài qua vợt. Đây là mục tiêu cuối cùng của Hệ Thống 5 Cột Trụ: tạo ra một vận động viên hoàn chỉnh, tích hợp, thực hiện một cách không gắng sức ở tiềm năng đỉnh cao của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Cơ sinh học cú vô-lê gọn và di chuyển trên lưới*
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Kích hoạt plyometric split step khi lên lưới*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Phản xạ cảm giác–vận động nhanh khi bắt vô-lê*
+<!-- TAICHIKB-CROSSREF-END -->

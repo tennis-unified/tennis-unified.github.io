@@ -44,3 +44,9 @@ Tactical integration is the process of aligning the tactical skills with the con
 
 ## Practical Application: The "Complete Conditioning Producer"
 The athlete should feel that they are "complete" and integrated with the 5-Pillar System. The athlete should feel that the biomechanical, neurological, and tactical systems are working together in harmony. This is the ultimate goal of the 5-Pillar System: to create a complete, integrated athlete who performs effortlessly at their peak potential.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Protecting kinetic chain force output through recovery*
+- [Chương 5: Tải trọng ứng suất và tái cấu trúc ma trận trong gân và cơ xương: Kích thích cơ học tế bào và tái cấu trúc mô — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch05-tai-trong-ung-suat-va-tai-cau-truc-ma-tran-trong-gan-va-co-xuong.html) — *Tendon & extracellular matrix remodeling*
+<!-- TAICHIKB-CROSSREF-END -->

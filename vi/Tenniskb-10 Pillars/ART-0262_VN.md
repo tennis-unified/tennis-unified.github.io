@@ -74,3 +74,10 @@ Dưới áp lực hoặc sau nghỉ dài, kỹ năng có thể lùi về giai đ
 
 ## Ứng Dụng Thực Tế: "Đánh Giá Giai Đoạn"
 Định kỳ đánh giá mỗi cú đánh của bạn đang ở giai đoạn nào. Với cú đánh ở giai đoạn nhận thức, tập trung vào hướng dẫn rõ ràng và phản hồi. Với cú đánh ở giai đoạn liên kết, tập trung vào thực hành đa dạng và giảm lỗi. Với cú đánh ở giai đoạn tự động, tập trung vào bảo trì và kháng cự áp lực. Cách tiếp cận theo giai đoạn cụ thể cho huấn luyện đảm bảo rằng mỗi cú đánh nhận được loại thực hành nó cần ở cấp độ phát triển hiện tại, tạo ra tiến bộ hiệu quả hơn về phía tự động hóa hoàn toàn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

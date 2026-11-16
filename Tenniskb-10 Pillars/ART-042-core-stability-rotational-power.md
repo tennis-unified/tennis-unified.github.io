@@ -88,3 +88,10 @@ At ball contact, the core:
 
 ## Practical Application: "The Firm but Fluid Core"
 Imagine your core as a firm but fluid cylinder: firm enough to transmit forces without wobbling, fluid enough to rotate freely. During the loading phase, the cylinder is firm and still. During the acceleration phase, the cylinder rotates smoothly and powerfully. At contact, the cylinder is firm again, providing a stable platform. Practice this by performing groundstrokes while consciously feeling your core as a firm-but-fluid cylinder. If you feel wobbling (insufficient stability), focus on activating your deep stabilizers. If you feel stiffness (insufficient mobility), focus on allowing smooth rotation. The goal is a core that is simultaneously stable and mobile—firm but fluid.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 9: Mặt Trước Sâu — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch09-mat-truoc-sau.html) — *Deep Front Line: core postural axis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+<!-- TAICHIKB-CROSSREF-END -->

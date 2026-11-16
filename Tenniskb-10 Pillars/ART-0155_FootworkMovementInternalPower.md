@@ -105,3 +105,10 @@ Have the player stand in ready position and perform a shadow forehand on a four-
 4. **Count 4 — Release.** Contact the imaginary ball with a sharp exhale and full extension.
 
 Run this at quarter speed for 10 repetitions, then half speed, then full speed. The player who can feel each phase distinctly at full speed has integrated the framework. The player who cannot has at least one phase that needs isolation work — and now they know which one.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+<!-- TAICHIKB-CROSSREF-END -->

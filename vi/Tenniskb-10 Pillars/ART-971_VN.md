@@ -127,3 +127,10 @@ Hawk-Eye sử dụng 10 camera tốc độ cao được đặt xung quanh sân:
 ## Ứng Dụng Thực Tế: "Hiểu Rõ Con Số Của Bạn"
 
 Sử dụng dữ liệu Hawk-Eye (có sẵn qua ứng dụng giải đấu và lớp phủ phát sóng) để phân tích các trận đấu của bạn. Sau mỗi trận, xem xét: tốc độ serve trung bình theo set, tỷ lệ serve đầu theo vực vị trí, và mô hình đánh bóng theo loại đối thủ. Xác định xu hướng: Tốc độ serve của bạn có giảm sau 90 phút không? Bạn có đánh 70% backhand xuyên sân không? Bạn có đóng quân trung bình 2 feet phía sau đường biên không? Những hiểu biết này, dựa trên dữ liệu chính xác 3.6mm của Hawk-Eye, cho phép bạn đưa ra điều chỉnh dựa trên bằng chứng cho lối chơi thay vì chỉ dựa trên cảm tính.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

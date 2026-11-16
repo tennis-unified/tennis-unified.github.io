@@ -65,3 +65,10 @@ Caffeine có thể tăng lo âu, làm gián đoạn giấc ngủ, và gây rối
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Nhiên Liệu"
 Trước và trong trận, thực hiện "kiểm tra nhiên liệu" định kỳ: (1) đánh giá trạng thái hydrat (màu nước tiểu, khát), (2) đánh giá mức năng lượng (tập trung, tỉnh táo), và (3) đánh giá nỗ lực cảm nhận (trận đấu có cảm thấy khó hơn nên không?). Nếu bất kỳ chỉ báo nào chỉ ra vấn đề, hãy hành động ngay: uống nước, tiêu thụ carbohydrate, hoặc điều chỉnh mức nỗ lực. Kiểm tra đơn giản này ngăn chặn sự suy giảm nhận thức xảy ra khi người chơi bỏ qua nhu cầu dinh dưỡng của mình cho đến khi hiệu suất đã bị ảnh hưởng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Dinh dưỡng thể thao và cân bằng năng lượng*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

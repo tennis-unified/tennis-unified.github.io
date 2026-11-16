@@ -100,3 +100,10 @@
 
 ## Practical Application: "The Pharmacist"
 You don't give a sedative to a patient in cardiac arrest (Choking needs *disinhibition* of automaticity). You don't give a stimulant to a patient in manic psychosis (Panicking needs *inhibition* of sympathetic drive). **Diagnose the neurophysiological state. Prescribe the correct protocol. Administer the dose.** The athlete is the patient. The match is the ER.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & clutch performance*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+<!-- TAICHIKB-CROSSREF-END -->

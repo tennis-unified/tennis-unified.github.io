@@ -48,3 +48,10 @@ Cú trả giao bóng được chơi trong 50% số điểm nhưng nhận đượ
 
 ## Ứng Dụng Thực Tế: Quy Tắc "Nửa Trận Đấu"
 Bạn trả giao bóng trong một nửa số điểm. Cải thiện 10% chất lượng trả bóng thay đổi kết quả trận đấu nhiều hơn cải thiện 30% bất kỳ cú đánh nào khác. Tập luyện nó như thể nó quan trọng — vì nó chính là trận đấu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

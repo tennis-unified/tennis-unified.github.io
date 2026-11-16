@@ -124,3 +124,10 @@ Hướng vectơ tốc độ góc xác định:
 
 ## Ứng Dụng Thực Tế: "Cái Vòng Quay"
 Hãy tưởng tượng cơ thể bạn là một cái vòng quay bạn quay chuyển động từ mặt đất. Xoay ban đầu đến từ chân đẩy sân — như vặn tay cầm vòng quay. Khi xoay di chuyển lên qua hông và thân, mỗi đoạn thêm vào xoay, giống như vòng quay quay nhanh hơn khi khối lượng tập trung về trung tâm. Khi xoay đến vợt, "vòng quay" đang quay ở tốc độ tối đa. Thực hành bằng cách thực hiện cú đánh nền chậm, cảm nhận xoay bắt đầu ở chân, gia tốc qua thân, và đỉnh tại vợt. Thông tin quan trọng là động lượng góc được bảo toàn — một khi bạn tạo nó bằng chân, nó đi qua cơ thể đến vợt. Việc của bạn không phải tạo động lượng ở vợt (tay) mà tạo nó ở mặt đất (chân) và dẫn nó hiệu quả đến vợt. Càng nhiều động lượng góc bạn tạo ở mặt đất, vợt của bạn quay càng nhanh — và cú đánh của bạn càng mạnh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Động lực học tuyến tính, GRF và xung lượng*
+<!-- TAICHIKB-CROSSREF-END -->

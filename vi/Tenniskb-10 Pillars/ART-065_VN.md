@@ -44,3 +44,10 @@ Góc mặt vợt tại khoảnh khắc va chạm bóng là yếu tố quyết đ
 
 ## Ứng Dụng Thực Tế: "Kiểm Soát Mặt"
 Để kiểm soát hướng, hãy kiểm soát góc mặt khi va chạm. Cho cú chéo sân, nghiêng mặt hơi về phía mục tiêu. Cho cú dọc sân, nghiêng mặt hơi về phía mục tiêu. Luyện tập bằng cách nhắm vào mục tiêu cụ thể và điều chỉnh góc mặt cho đến khi bạn có thể liên tục trúng mục tiêu. Chìa khóa là giữ mặt ổn định qua va chạm — bất kỳ dao động hay thiếu nhất quán nào về góc mặt đều dẫn đến sai lệch hướng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

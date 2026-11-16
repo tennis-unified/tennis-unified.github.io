@@ -95,3 +95,10 @@ Thể thao hiệu suất cao nằm ở giao điểm của tiềm năng con ngư�
 
 ## Ứng Dụng Thực Tế: "Ngôi Sao Bắc"
 Trong Sương Mù Của Cạnh Tranh, Mệt Mỏi, Và Áp Lực, Bảng Tỷ Số Nói Dối. Xếp Hạng Nói Dối. Nhà Tài Trợ Nói Dối. Cơ Thể Nói Dối. **La Bàn Đạo Đức Là Dụng Cụ Duy Nhất Chỉ Thẳng.** Hiệu Chuẩn Nó Hàng Ngày. Công Khai Nó. Bảo Vệ Nó. Đó Là Di Sản Duy Nhất Sống Sót Sau Buổi Phím Nhận Nghỉ Hưu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+<!-- TAICHIKB-CROSSREF-END -->

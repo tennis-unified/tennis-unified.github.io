@@ -58,3 +58,10 @@ Players who generate heavy topspin must be particularly precise with edge alignm
 ## Practical Application: "The Edge Check"
 
 At the set position and at contact, consciously check the orientation of your racquet's leading edge. Is it perpendicular to your target? Use a visual reference (a line on the court or a target) to assess your alignment. Over time, develop the proprioceptive awareness that allows you to sense the edge alignment without visual confirmation, making micro-adjustments automatically before contact.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+<!-- TAICHIKB-CROSSREF-END -->

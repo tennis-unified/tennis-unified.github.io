@@ -91,3 +91,10 @@ Ba bài tập tiến bộ xây kỹ năng sóng:
 ## Ứng Dụng Thực Tế: "Đếm Sóng"
 
 Trong buổi tập tiếp theo, giới thiệu khái niệm sóng với một bài tập đếm đơn giản. Cho người chơi thực hiện forehand không bóng ở tốc độ chậm trong khi đếm to: "chân" (khởi động đẩy đất), "gối" (duỗi chân), "hông" (xoay chậu), "thân" (xoay thân trên), "vai" (kéo tay), "vợt" (roi vào tiếp xúc). Mỗi tiếng đếm nên trùng với tăng tốc của phân đoạn, với khoảng 100-150 ms giữa các tiếng. Hầu hết sẽ vội qua các phân đoạn dưới và đến "vợt" quá nhanh — điều này lộ chỗ sóng gãy. Cho người chơi lặp lại tiếng đếm, cố tình làm chậm phân đoạn dưới để mỗi phân đoạn có đủ phần thời gian. Sau 10 cú vung có đếm, người chơi đánh 10 bóng thật với cùng tiếng đếm nội bộ. Âm tín hiệu của tiếng đếm giúp duy trì thời điểm gần-đến-xa, và trong vài buổi, tiếng đếm được nội hóa thành cảm nhận con sóng. Người chơi cảm nhận được sóng có thể chẩn đoán và sửa nó không cần huấn luyện viên — mục tiêu tối thượng của huấn luyện sức mạnh nội bộ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -70,3 +70,10 @@ Another effective drill is the "shadow swing with pause" drill: perform your uni
 ## Practical Application: "The Rhythm Drill"
 
 Practice your forehand with a deliberate rhythm pattern: count "1" during your unit turn (taking 3 seconds at slow speed), "2" at the set position (1 second pause), and "3" during your forward swing (1 second acceleration). This 3:1:1 ratio establishes the slow-fast rhythm that maximizes power. Gradually speed up the counts while maintaining the ratio, until the rhythm feels natural at full speed.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Tai Chi principles applied to tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

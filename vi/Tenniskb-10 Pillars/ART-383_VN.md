@@ -70,3 +70,10 @@ Việc tập luyện bao gồm:
 ## Ứng Dụng Thực Tiễn: "Bài Tập Tỷ Lệ"
 
 Tập thay đổi tỷ lệ xoáy và tốc độ bằng cách đánh forehand ở ba tỷ lệ khác nhau: xoáy cao (đường vung dốc), xoáy vừa (đường vung tiêu chuẩn) và xoáy thấp (đường vung phẳng). Sử dụng thiết bị đo xoáy và súng radar để kiểm chứng tỷ lệ của bạn. Phát triển khả năng lựa chọn tỷ lệ phù hợp dựa trên tình huống chiến thuật.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -172,3 +172,10 @@ Trước khi trở lại thi đấu, hãy xác nhận tất cả các tiêu chí
 | Suy giảm thành tích sau chấn thương | Phục hồi chuyên môn chưa đủ | Giảm sự tự tin, vấn đề kỹ thuật | Mở rộng giai đoạn luyện tập chuyên môn; trở lại thi đấu từ từ |
 | Nỗi sợ tái phát chấn thương trong thi đấu | Chuẩn bị tâm lý chưa đủ | Giảm thành tích, hành vi tránh né | Hỗ trợ tâm lý; tiếp xúc tăng dần; bài tập xây dựng sự tự tin |
 | Vấn đề chấn thương mạn tính | Phục hồi ban đầu chưa hoàn chỉnh, phòng ngừa kém | Chấn thương tái phát, giảm tuổi thọ sự nghiệp | Phục hồi toàn diện; chương trình phòng ngừa chấn thương thường xuyên |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

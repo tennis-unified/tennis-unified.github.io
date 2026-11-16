@@ -56,3 +56,10 @@ This continuous arc—from the drop below contact, through contact, to the high 
 ## Practical Application: "The Clock Face Drill"
 
 Visualize the ball as a clock face before each forehand. As you swing, imagine your racquet entering at 6 o'clock and exiting at 12 o'clock, rolling over the right side of the ball. This visualization helps you steepen your swing path and generate the heavy topspin that characterizes the modern forehand. Practice this visualization during shadow swings until it becomes an automatic part of your stroke.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+<!-- TAICHIKB-CROSSREF-END -->

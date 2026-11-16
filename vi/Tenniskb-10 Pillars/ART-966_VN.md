@@ -169,3 +169,10 @@ Trong khi một số vận động viên chuyên nghiệp chuyên sớm, nhiều
 ## Ứng Dụng Thực Tế: "Xây Dựng Vận Động Viên Trước, Người Chơi Tennis Sau"
 
 Bằng chứng rõ ràng: trẻ em lấy mẫu nhiều môn trước khi chuyên môn hóa tennis phát triển thành vận động viên tennis toàn diện hơn, bền bỉ hơn và cuối cùng thành công hơn. Kháng lực áp lực chuyên sớm. Thay vào đó, xây dựng nền tảng thể chất rộng thông qua các hoạt động thể chất đa dạng, duy trì niềm vui vận động và chơi, và cho phép chuyên môn hóa xuất hiện tự nhiên trong tuổi thanh thiếu niên. Mục tiêu không phải tạo ra vận động viên tennis 10 tuổi tốt nhất — mà là tạo ra vận động viên tennis 25 tuổi tốt nhất. Điều đó đòi hỏi sự kiên nhẫn, góc nhìn và cam kết phát triển dài hạn hơn kết quả ngắn hạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+<!-- TAICHIKB-CROSSREF-END -->

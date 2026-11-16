@@ -111,3 +111,10 @@ The decision between one-handed and two-handed backhands should consider:
 ## Practical Application: "Know Both, Master One"
 
 Even if you specialize in one technique, practicing the other provides invaluable physical balance and understanding. Spend 10 minutes per practice session hitting your non-dominant technique (one-handed if you normally play two-handed, or vice versa). This develops bilateral coordination, reduces asymmetrical muscle development, and provides a backup option when your primary backhand is under pressure.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

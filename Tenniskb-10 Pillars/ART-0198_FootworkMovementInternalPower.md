@@ -72,3 +72,10 @@ In the internal-power vocabulary of this pillar, anticipation is **listening ene
 ## Practical Application: "Chart, Shade, Leave"
 
 Run one 45-minute anticipation session per week. **Chart** (10 minutes): during live points, tally 20 opponent replies by situation — corner, balance, score — and compute the actual percentages. **Shade** (15 minutes): fed rallies in which every split must land biased 30-60 cm toward the charted high-probability side; wrong-side feeds test the correction. **Leave** (15 minutes): the coach feeds compromised, stretched contacts; the player may commit fully *only* after naming the cue aloud ("stretched — central weak ball") — and one feed in four deliberately betrays the cue, forcing the bail-out ladder. Score the session in meters: saved distance on right reads minus lost distance on wrong ones. A positive weekly meter total, sustained across a month, means the player has stopped guessing and started borrowing.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

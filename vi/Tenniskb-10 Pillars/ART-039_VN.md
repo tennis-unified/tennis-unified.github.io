@@ -153,3 +153,10 @@ Hãy hình dung dãy xương domino ngã: xương đầu (chân) đập xương 
 | Viễn sớm | Cánh tay/vợt đạt đỉnh trước hông/người | 20-40% | Shadow swing giữ vững, dây kháng kéo chậm |
 | Thời điểm tối ưu | Mỗi đoạn đỉnh khi đoạn trước đỉnh | Cơ sở (0% mất) | Tích hợp toàn chuỗi, Olympic lift, plyometric xoay |
 | Tách đoạn (segment separation) | Góc tách 40-60° hông-người, vai-người | Tăng 15-25% | Xoay người chân cố định, separation drill |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

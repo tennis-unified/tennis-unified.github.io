@@ -55,3 +55,10 @@ Công cơ Continental cho phép chuyển đổi nhanh sang cú chặn bóng và 
 
 ## Ứng Dụng Thực Tế: "Bài Kiểm Tra Trượt"
 Đánh mười cú slice backhand qua lưới tập trung vào việc tạo cú nảy trượt thấp. Sau mỗi cú đánh, ghi chú xem bóng có dưới độ cao lưới sau khi nảy không. Nếu bóng nảy cao, mặt vợt quá hở hoặc đường vung quá dốc. Điều chỉnh cho đến khi ít nhất bảy trong mười cú trượt thấp, xây dựng cảm giác cho cú slice tấn công.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

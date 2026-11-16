@@ -76,3 +76,10 @@ Drill đòi hỏi phản ứng ngang nhanh theo tín hiệu thị giác hoặc t
 
 ## Ứng Dụng Thực Tế: "Đẩy Sàn Sang Bên"
 Chuyển động ngang cơ bản là đẩy sàn hướng ngược lại hướng bạn muốn đi. Để sang phải, đẩy sàn sang trái bằng chân trái. Càng đẩy ngang mạnh và nhanh, bạn càng trượt ngang nhanh. Luyện bằng cách đứng hai chân cùng nhau và thực hiện nhảy ngang nhỏ, tập trung vào cảm giác đẩy sàn sang bên mỗi nhảy. Tiến triển sang trượt ngang liên tục, tập trung vào đẩy chân ngang mỗi bước. Khi đến bóng rộng, chân trước nên cắm và đẩy sàn ngược hướng để dừng động lượng — như đẩy tường ngang. Tư duy "đẩy sàn" này biến chuyển động ngang từ chuỗi bước thành một ứng dụng lực liên tục đơn lẻ, làm bao phủ sân trơn tru, nhanh hơn, và tiết kiệm năng lượng hơn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Đường Bên: ổn định ngang và lực sang bên*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

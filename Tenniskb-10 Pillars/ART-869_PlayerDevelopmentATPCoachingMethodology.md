@@ -207,3 +207,10 @@ Poor thoracic mobility forces the shoulder and lower back to compensate, increas
 | Scapular dyskinesis | Poor scapular muscle balance | Altered shoulder mechanics, reduced power | Scapular stability exercises (I-T-Y raises, wall slides, rows) |
 | Loss of internal rotation | Adaptive changes from repetitive serving | Shoulder pain, reduced range of motion | GIRD management program; sleeper stretch; stretching routine |
 | Thoracic stiffness | Poor posture, insufficient mobility | Compensatory shoulder and lower back stress | Thoracic mobility exercises; foam roller extension; rotation drills |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+<!-- TAICHIKB-CROSSREF-END -->

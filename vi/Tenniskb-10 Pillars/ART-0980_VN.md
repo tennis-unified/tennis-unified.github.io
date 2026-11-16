@@ -51,3 +51,10 @@ Lựa chọn trẻ em cho quần vợt bằng DNA sẽ sai ngay cả khi nó ho�
 ## Ứng Dụng Thực Tế: "Gen Nạp Vợt, Thực Hành Swing"
 
 Di truyền phát bài; tập luyện, huấn luyện và tính cách chơi bài. Mọi chương trình quần vợt nghiêm túc nên coi DNA là không liên quan đến lựa chọn và thiêng liêng như dữ liệu — không bao giờ thu thập bất cẩn, không bao giờ sử dụng để sắp xếp trẻ em. Bài học thực tế cho tay vợt và phụ huynh là giải phóng: không xét nghiệm nào có thể nói cho bạn bạn sẽ trở thành gì, điều này có nghĩa là các biến số duy trong tầm kiểm soát của bạn — chất lượng thực hành, giấc ngủ, sức bền — chính xác là những thứ quan trọng nhất.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Hệ thống năng lượng cho thể lực quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

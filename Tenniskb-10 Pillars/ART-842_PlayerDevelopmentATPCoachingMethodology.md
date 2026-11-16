@@ -229,3 +229,10 @@ Before the off-season, review:
 | Technical weaknesses persist into season | Insufficient off-season technical work | Recurring errors under pressure | Prioritize technical development in off-season; dedicated technical blocks |
 | Player arrives at season unprepared | Poor off-season planning, insufficient practice matches | Slow starts, early tournament losses | Implement structured off-season program with progressive intensity |
 | Burnout from long season | Insufficient off-season recovery | Reduced motivation, mental fatigue | Prioritize mental recovery; build in rest and non-tennis activities |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Energy systems for tennis conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

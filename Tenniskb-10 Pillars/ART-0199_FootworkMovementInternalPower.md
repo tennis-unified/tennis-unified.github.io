@@ -84,3 +84,10 @@ Re-test every 4-6 weeks with the identical protocol. Expect 1-2 points of improv
 ## Practical Application: "The 25-Point Mirror"
 
 This week, run the audit once: film 12 minutes of live points plus 2 minutes at the end of a hard session, score the five categories with the anchors above, and write the profile on a card — for example, "4-2-2-3-4." That card is now the training plan: the next four weeks belong to the two lowest scores, one module each for the first and second fortnight, everything else at maintenance volume. Re-film in week five under identical conditions. Players who repeat this cycle three times typically add 4-6 points to their total — but the real output is different: they stop describing their movement as a feeling and start describing it as a set of fixable numbers.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+<!-- TAICHIKB-CROSSREF-END -->

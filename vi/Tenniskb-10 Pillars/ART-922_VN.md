@@ -60,3 +60,10 @@ Nếu bạn là tuyển thủ quần vợt trẻ, hãy lên tiếng khi có đi�
 | Người chơi báo cáo đau vai khi giao bóng | Chấn thương vai tương đương Little League; viêm màng phát triển xương cánh tay gần | Giảm tốc độ giao bóng; thay đổi cơ học | Giảm tải lượng giao bóng; sửa cơ học; tăng cường cơ quay vai |
 | Người chơi trải qua phát triển nhanh và đau khớp mới | Dễ bị tổn thương liên quan đến phát triển | Nguy cơ chấn thương tăng | Giảm khối lượng tập; tăng ngày nghỉ; theo dõi chặt chẽ |
 | Người chơi tập luyện quá mức với nghỉ ngơi không đủ | Lạm dụng; phục hồi không đủ | Nhiều chấn thương phát triển xương | Hạn mức khối lượng tập; ngày nghỉ bắt buộc; tham gia đa môn thể thao |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

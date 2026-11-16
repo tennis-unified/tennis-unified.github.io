@@ -79,3 +79,10 @@ Give the player one image: **the landing is the spark, the tendon is the fuel.**
 3. **The live split.** During live feeds, the player focuses on the landing quality: forefoot-first, 20-30° knee flexion, "soft but active." The coach watches for the bounce — the sign that the spring is charged and the ignition is lit.
 
 A player with a live landing does not push harder — they push sooner, because the spring is already loaded when the foot touches the ground.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Fascial elastic energy storage & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

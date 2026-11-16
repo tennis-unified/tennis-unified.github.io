@@ -145,3 +145,10 @@ Người chơi có thể đánh giá khuynh hướng chú Ý sử dụng bảng 
 ## Ứng Dụng Thực Tế: "Biết Chú Ý Của Bạn Ở Đâu Trong Mỗi Khoảnh Khắc"
 
 Chất lượng thành trình tennis của bạn tỷ lệ thuận với chất lượng chú ý của bạn. Phát triển khả năng nhận ra trạng thái chú Ý hiện tại và chuyển nó một cách có chủ đích để khớp với nhu cầu của mỗi khoảnh khắc. Trong pha bóng, hãy tập trung ngoại tâm vào bóng và sân. Trong các point, hãy tập trung ngoại tâm hẹp vào mục tiêu. Giữa các point, hãy tập trung nội tâm rộng vào phân tích chiến thuật. Trong lúc thay bóng, hãy tập trung nội tâm rộng vào chiến lược. Làm chủ những chuyển đổi chú ý này, và bạn làm chủ trò chơi tinh thần của tennis.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

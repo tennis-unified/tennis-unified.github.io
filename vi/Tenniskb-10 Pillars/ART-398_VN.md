@@ -64,3 +64,10 @@ Phát triển nhất quán xoáy cũng đòi hỏi cách tiếp cận tâm lý:
 ## Ứng Dụng Thực Tế: "Drill Nhất Quán"
 
 Thực hành đánh 20 quả forehand ở tốc độ xoáy mục tiêu (ví dụ: 3000 RPM). Sử dụng thiết bị đo xoáy để theo dấu mỗi cú đánh và ghi chú sự biến thiên. Nhắm đến độ lệch chuẩn dưới 15 phần trăm. Nếu biến thiên cao hơn, tập trung vào cơ chế cụ thể không nhất quán (quỹ đạo vung, tốc độ vợt, điểm chạm, thời gian cổ tay) và giải quyết chúng qua drill mục tiêu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -66,3 +66,10 @@ Các phát triển trong tương lai có thể bao gồm phản hồi xúc giác
 Tích hợp huấn luyện VR vào lịch thực hành của bạn với các phiên hàng tuần: (1) 15 phút huấn luyện cảm giác-nhận thức (theo dõi bóng ảo, đọc đối thủ ảo), (2) 15 phút huấn luyện chiến thuật (ra quyết định trong tình huống trận đấu được mô phỏng), (3) 10 phút huấn luyện áp lực (chơi các điểm ảo với hậu quả). Chương trình VR có cấu trúc này cung cấp đào tạo nhận thức có mục tiêu bổ sung cho thực hành trên sân và tăng tốc phát triển các kỹ năng cảm giác-nhận thức là nền tảng của thành tích tennis đỉnh cao.
 
 (End of file)
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+<!-- TAICHIKB-CROSSREF-END -->

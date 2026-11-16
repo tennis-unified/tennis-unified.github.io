@@ -203,3 +203,10 @@ Yêu cầu vận động viên duy trì nhật ký tập trung trong tập luy�
 | Phân tâm bởi khán giả hoặc đối thủ | Huấn luyện phân tâm không đủ, phản ứng cảm xúc | Mất tập trung, thành tích giảm | Huấn luyện phân tâm; kỹ thuật điều chỉnh cảm xúc; quy trình tập trung |
 | Suy tư về sai lầm quá khứ | Kỹ năng phục hồi sai lầm kém, tập trung nội tại | Lỗi tích tụ, mất điểm | Huấn luyện quy trình phục hồi sai lầm; quy tắc 15 giây; tập trung hiện tại |
 | Tập trung vào kết quả ở các điểm quan trọng | Huấn luyện tập trung vào quá trình không đủ, lo âu áp lực | Chết máy, thành tích suy giảm | Phát triển tín hiệu quá trình; kỹ thuật thở; huấn luyện áp lực |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+<!-- TAICHIKB-CROSSREF-END -->

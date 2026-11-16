@@ -38,3 +38,10 @@ As the racket drops, its potential energy (PE = m · g · h) decreases. This ene
 
 ## Practical Application: The "Pendulum" Sensation
 The swing should feel like a pendulum that swings back and then naturally falls forward. If the athlete feels they are "lifting" the racket during the backswing, they are working against gravity rather than using it.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Curvilinear trajectory & projectile kinematics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Angular path & racket-head drop*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Loop swing & figure-8 racket trajectory*
+<!-- TAICHIKB-CROSSREF-END -->

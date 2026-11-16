@@ -60,3 +60,10 @@ Volley phản công là mộc cú bóng áp lực cao đòi hỏi một cú tr�
 ## Ứng Dụng Thực Tế: "Chip Thấp, Chạy Nhanh, Phân Tầng"
 
 Chuỗi chip-and-charge: (1) chip bóng trả về thấp vào chân đối thủ, (2) tiến lưới càng nhanh càng tốt, (3) thực hiện bước phân tầng tại đường giao bóng, (4) volley cú trả lời của đối thủ. Bước phân tầng là yếu tố thường bị quên nhất — hãy tập đến khi nó trở thành phản xạ tự động.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

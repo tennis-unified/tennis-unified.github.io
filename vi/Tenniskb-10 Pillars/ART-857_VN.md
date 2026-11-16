@@ -175,3 +175,10 @@ Tham gia đa môn thể thao ngày càng được công nhận là nền tảng 
 | Vận động viên có dấu hiệu kiệt sức | Tập trung quần vợt quá nhiều, thiếu đa dạng | Giảm động lực, nguy cơ bỏ cuộc | Giới thiệu các môn thể thao khác; giảm khối lượng quần vợt; tăng niềm vui |
 | Vận động viên gặp khó khăn với kỹ năng quần vợt cụ thể | Phát triển kỹ năng chuyển đổi hạn chế | Khoảng trống kỹ thuật, tiến triển chậm | Nhận diện môn thể thao bổ sung phát triển kỹ năng mục tiêu |
 | Vận động viên có chấn thương sử dụng quá mức tái phát | Tải lặp lại, thiếu đa dạng | Mất thời gian, vấn đề mãn tính | Giới thiệu các môn khác để đa dạng hóa tải; huấn luyện chéo |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

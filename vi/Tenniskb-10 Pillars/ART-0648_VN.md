@@ -49,3 +49,10 @@ Lối chơi lưới trong tennis xe lăn đòi hỏi những điều chỉnh cho
 
 ## Ứng Dụng Thực Tế: "Định Vị Trước, Sau Đó Mới Volley"
 Trong tennis xe lăn, định vị là tất cả. Vì khả năng di chuyển ngang bị hạn chế, bạn phải ở đúng vị trí trước khi đối thủ đánh. Hãy đoán trước sớm, định vị thông minh, và tin tưởng vào kỹ thuật volley của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+<!-- TAICHIKB-CROSSREF-END -->

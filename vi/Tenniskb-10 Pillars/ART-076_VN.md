@@ -44,3 +44,10 @@ Cổ tay là khớp nối cuối cùng trong chuỗi động học tennis, và s
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Cổ Tay"
 Tại lúc tiếp xúc, cổ tay của bạn nên vững chắc và ổn định — không lỏng lẻo hay sụp. Nếu cổ tay không ổn định, hãy làm việc về sức nắm và bài tập ổn định cổ tay. Nếu cổ tay di chuyển quá nhiều, hãy tập trung sử dụng các đoạn gần ( chân, hông, thân, vai ) để tạo ra sức mạnh thay vì phụ thuộc vào cổ tay. Việc của cổ tay là truyền năng lượng được tạo ra bởi phần còn lại của chuỗi, không phải tự tạo ra năng lượng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+<!-- TAICHIKB-CROSSREF-END -->

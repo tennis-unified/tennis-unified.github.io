@@ -95,3 +95,10 @@ Suy thoái (slump) không phải là chuỗi thất bại; đó là một vòng 
 
 ## Ứng Dụng Thực Tế: "Bác Sĩ Phẫu Thuật, Không Phải Người Hoảng Loạn"
 Đừng thay đổi mọi thứ. Chẩn đoán *vết thương chính*. Phẫu Thuật Chính Xác Trên Hệ Thống Đó. Hỗ Trợ Các Hệ Còn Lại. Giám Sát Chỉ Số Sống. Suy Thoái Kết Thúc Khi Hệ Thống Ổn Định — Không Phải Khi Bạn Thắng Một Trận.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -51,3 +51,10 @@ Vai là khớp di động nhất trong cơ thể và là khớp nối quan trọ
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Vai"
 Trong cú đánh của bạn, hãy tập trung cảm nhận vai xoay đầy đủ và theo trình tự với thân và cánh tay. Nếu cảm thấy vai " bị kẹt " hoặc xoay không đủ, hãy làm việc về khả động vai và sức mạnh cơ xoay trong. Nếu cảm thấy vai không ổn định hoặc chuyển động quá mức, hãy làm việc về tăng cường cơ xoay khóa và ổn định xương bả vai. Nếu vai đang làm quá nhiều việc, hãy tập trung cải thiện xoay thân để giảm tải cho vai.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -76,3 +76,10 @@ Những lỗi thường gặp trong follow-through cần gạt nước bao gồm
 ## Ứng Dụng Thực Hành: "Tư Thế Kết Thúc Cần Gạt"
 
 Thực hành follow-through cần gạt nước bằng cách tập trung vào vị trí kết thúc của vợt. Sau mỗi cú đánh, kiểm tra xem đầu vợt có ở vị trí cao phía bên đối diện (gần vai trái ở người thuận tay phải) hay không. Nếu vợt kết thúc thấp hơn hoặc cùng bên, quỹ đạo swing của bạn chưa đủ dốc hoặc pronation chưa đủ. Sử dụng phản hồi trực quan này để tinh chỉnh cơ học động tác.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

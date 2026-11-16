@@ -38,3 +38,10 @@ Trước một tay tấn công vượt trội, thắng điểm thường không 
 
 ## Ứng Dụng Thực Tế: "Kẻ Ăn Cắp, Không Phải Nạn Nhân"
 Phòng thủ không phải là không thua điểm; mà là cướp nó. Mỗi cú reset đều mang theo một câu hỏi đối thủ phải trả lời. Hỏi đủ câu hỏi và họ sẽ trả lời sai một câu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

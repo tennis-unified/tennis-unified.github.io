@@ -57,3 +57,10 @@ Simple tracking methods include noting Lateral Movement Analytics: Court Coverag
 ## Practical Application: "Movement Analytics Reveal Coverage"
 
 Begin tracking Lateral Movement Analytics: Court Coverage Efficiency in your next five matches. Use a simple tally system on a notecard or a tennis statistics app. After each match, calculate the percentage and compare it to your target (typically 60% or above for most metrics). Identify specific situations where the metric drops (late in sets, after long rallies, under scoreboard pressure) and develop targeted practice for those scenarios. Over a season, track whether the metric improves and correlates with match wins.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Lateral Line: lateral stability & mediolateral force*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+<!-- TAICHIKB-CROSSREF-END -->

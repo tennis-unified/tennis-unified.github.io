@@ -47,3 +47,10 @@ Công cụ kiểm toán cho bất kỳ bài tập nào là tính đại diện: 
 ## Ứng Dụng Thực Tế: "Thiết Lập Bàn, Để Trò Chơi Nổi Lên"
 
 Bí mật của huấn luyện viên sinh thái là khiêm tốn về thiết kế và tự tin về người học. Hỏi mọi bài tập: thông tin gì có sẵn, quyết định gì được đòi hỏi, và thành công tốn bao nhiêu? Nếu câu trả lời giống một trận đấu, thực hành sẽ chuyển giao; nếu không, không số lượng lặp lại nào sẽ nối khoảng cách. Đặt ràng buộc làm cho lối chơi tốt trở thành con đường dễ nhất, đặt câu hỏi làm sắc nhận thức, và tin hàng nghìn năm hệ thống vận động tự tổ chức tìm forehand. Trò chơi, được sắp xếp đúng, tự huấn luyện — nghệ thuật của huấn luyện viên là sắp xếp nó.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

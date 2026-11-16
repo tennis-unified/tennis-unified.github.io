@@ -164,3 +164,10 @@ Players who win extended rallies typically:
 | Losing most points in 9+ shots | Poor endurance, mental fatigue | Lost long points | Endurance training; mental resilience; consistency drills |
 | Too many short points (defensive) | Weak serve, passive play | Lost service games, no breaks | Serve development; aggressive +1 training |
 | Too many long points (no finish) | Hesitation, no finishing ability | Extended rallies, wasted opportunities | Finishing drills; approach patterns; drop shot practice |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

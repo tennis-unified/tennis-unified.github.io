@@ -76,3 +76,10 @@ Sự lựa chọn lưới vợt phụ thuộc vào:
 ## Ứng Dụng Thực Tế: "Thử Nghiệm Lưới"
 
 Thử nghiệm các lưới vợt khác nhau bằng cách căng vợt hiện tại với lưới mở (nếu có thể) hoặc thử nghiệm vợt có lưới khác. Sử dụng thiết bị đo xoáy để so sánh tốc độ xoáy. Chọn lưới tạo ra tốc độ xoáy cao nhất trong khi duy trì kiểm soát và độ bền chấp nhận được.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

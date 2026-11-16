@@ -160,3 +160,10 @@ Assess the player's current level of autonomy:
 | Player lacks independence | Coach-directed approach, no autonomy development | Dependency, poor self-management | Gradual transfer of responsibility; player-led training; performance journals |
 | Player cannot handle pressure situations | Insufficient pressure practice, poor mental skills | Choking, performance decline | Pressure simulation; mental skills training; autonomy in practice |
 | Player unmotivated and disengaged | No ownership of development | Reduced effort, dropout risk | Player-led goal setting; autonomy in training decisions; ownership of results |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

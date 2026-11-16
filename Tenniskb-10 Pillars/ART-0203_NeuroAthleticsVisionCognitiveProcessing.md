@@ -50,3 +50,10 @@ While performing a simple motor task (e.g., tapping your foot), practice making 
 
 ## Practical Application: "The Two-Glance Rule"
 Limit yourself to two visual glances per shot: one to track the ball, one to check the opponent's position. This constraint forces efficiency in visual search and prevents the aimless eye movements that characterize novice players. During practice, consciously restrict your saccades to these two glances. Over time, your brain learns to extract maximum information from each glance, and your visual search becomes both faster and more purposeful.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

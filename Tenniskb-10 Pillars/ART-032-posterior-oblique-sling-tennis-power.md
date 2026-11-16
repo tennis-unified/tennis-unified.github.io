@@ -103,3 +103,10 @@ Exercises that train the sling as a unit:
 
 ## Practical Application: "The Cross-Body Pull"
 Stand with your feet shoulder-width apart and hold a resistance band in your right hand at shoulder height. Anchor the band to your left side at hip height. Pull the band diagonally from your left hip to your right shoulder—this is the posterior oblique sling pattern. Feel the stretch from your right shoulder to your left hip during the loading phase, then feel the snap from left hip to right shoulder during the pull. This cross-body pull is the exact pattern your posterior oblique sling uses during groundstrokes. Practice this 20 times on each side, then perform groundstrokes with the same feeling: load by stretching diagonally, release by snapping diagonally. This diagonal power is the secret behind the explosive rotation of elite tennis players.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Muscular system: prime movers & stabilizers*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+<!-- TAICHIKB-CROSSREF-END -->

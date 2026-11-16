@@ -53,3 +53,10 @@ Dữ liệu theo dô thô giá trị không nếu không có câu hỏi. Quy tr�
 ## Ứng Dụng Thực Tế: "Đo Lường Những Gì Quan Trọng"
 
 Bạn không cần hệ thống sân vận động để suy nghĩ như một nhà phân tích. Chọn hai con số định nghĩa phong cách chơi của bạn — cho người chơi baseline, có thể là tỷ lệ serve đầu và độ sâu trả bóng; cho người tấn công, tỷ lệ chuyển đổi cú đánh đầu và điểm thắng ở lưới — và theo dõi chúng qua mỗi trận đấu tập trong một tháng. Xu hướng qua hai phiên tập luyện đánh bại câu chuyện của bất kỳ trận đấu đơn nào. Món quà thực sự của công nghệ theo dõi không phải là dữ liệu mà là sự kết thúc của việc tranh luận với chính mình về những gì thực sự đã xảy ra.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

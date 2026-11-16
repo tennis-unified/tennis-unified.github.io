@@ -122,3 +122,10 @@ Trước mỗi giao bóng, dành 3 giây để đánh giá tình huống:
 3. **Bản thân:** Tôi giao bóng như thế nào?
 
 Dựa trên đánh giá nhanh này, chọn giao bóng của bạn bằng ma trận. Với thực hành, quyết định này trở nên tự động, cho phép bạn giao bóng với kế hoạch rõ ràng mà không động đến nhịp điệu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -127,3 +127,10 @@ Tight intercostal muscles and restricted rib cage mobility limit thoracic rotati
 ## Practical Application: "Extend Before You Rotate"
 
 Before every serving session, spend 3 minutes on thoracic extension: lie over a foam roller at mid-back, support your head, and gently extend backward. Then perform 10 open book rotations each side. During serving, consciously focus on arching your upper back (thoracic extension) before you rotate. This simple pre-habit dramatically increases serve speed while reducing stress on your lower back and shoulder. The thoracic spine is the bridge between your powerful legs and your whip-like arm — make sure it is fully mobile.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+<!-- TAICHIKB-CROSSREF-END -->

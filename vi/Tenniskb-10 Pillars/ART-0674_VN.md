@@ -43,3 +43,10 @@ Các cú trả bóng dọc đường biên đòi hỏi volley chặn: hấp th�
 ## Ứng Dụng Thực Tế: "Chặn Và Chuyển Hướng Chéo Quần Vợt"
 
 Trước các cú trả bóng dọc đường biên: (1) chặn bóng, (2) chuyển hướng chéo quần vợt. Volley chặn và chuyển hướng chéo quần vợt là những lựa chọn an toàn nhất, có tỷ lệ thành công cao nhất.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+<!-- TAICHIKB-CROSSREF-END -->

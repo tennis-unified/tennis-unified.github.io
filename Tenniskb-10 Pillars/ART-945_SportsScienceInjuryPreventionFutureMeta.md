@@ -121,3 +121,10 @@ Integrate this mental rehabilitation plan alongside the physical rehabilitation 
 **Stage 4 — Return to Competition (Weeks 12+)**: Begin with practice sets and exhibition matches. Focus on process goals (movement quality, tactical execution) rather than outcome. Maintain psychological skills (goal-setting, imagery, relaxation). Check in with a sports psychologist if anxiety or fear persists beyond the first few matches.
 
 The mental side of rehabilitation is not a luxury; it is a necessity. Players who return physically healed but psychologically scarred often underperform, re-injure, or abandon the sport entirely. The rehabilitation that addresses only the tissue and not the mind is incomplete rehabilitation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+<!-- TAICHIKB-CROSSREF-END -->

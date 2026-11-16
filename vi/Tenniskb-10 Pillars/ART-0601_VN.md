@@ -64,3 +64,10 @@ Volley tay thuận vẫn là trụ cột của lối chơi lưới. Cầm vợt 
 ## Ứng Dụng Thực Tế: "Múc Xuyên Qua Cửa Sổ"
 
 Hình dung múc bóng xuyên qua một khung cửa sổ tưởng tượng nằm ngay phía trước điểm chạm của bạn. Hình ảnh này củng cố việc chạm bóng về phía trước, vung vợt gọn ghề và kiểm soát hướng đánh — ba trụ cột của một cú volley tay thuận hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

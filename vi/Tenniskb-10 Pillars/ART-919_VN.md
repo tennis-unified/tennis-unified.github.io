@@ -56,3 +56,10 @@ Nếu bạn đến một giải đấu ở vùng khí hậu nóng, hãy đến s
 | Người chơi mất đáng kể trọng lượng cơ thể trong trận đấu | Mất nước; uống nước không đủ | Giảm thành tích; nguy cơ bệnh nhiệt | Kiểm tra tỷ lệ đổ mồ hôi cá nhân; kế hoạch bù nước cá nhân; uống đồ uống thể thao |
 | Người chơi tập luyện trong điều kiện nóng mà không thích nghi lộ trình | Chuẩn bị không đủ; nguy cơ bệnh nhiệt | Kiệt nhiệt; thành tích kém | Áp dụng quy tắc 15%; phơi nhiễm lộ trình; buổi tập được theo dõi |
 | Người chơi có thành tích giảm trong điều kiện nóng | Căng thẳng nhiệt; trôi tim mạch | Mệt mỏi; chuột rút; kiệt nhiệt | Chiến lược làm mát trước; khăn đá; tìm bóng râm trong giờ nghỉ; tối ưu hóa bù nước |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Dinh dưỡng thể thao và cân bằng năng lượng*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+<!-- TAICHIKB-CROSSREF-END -->

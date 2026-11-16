@@ -73,3 +73,10 @@ Rank faults by **frequency × cost**. A split landing 150 ms late on 70% of back
 ## Practical Application: "The 45-Minute Audit"
 
 Film 15 minutes of points from side-on and behind at 120 fps, elevated if available. Code ten strokes per situation — seven frames, five metrics — into a spreadsheet. Produce exactly three ranked faults with their numbers attached ("split +180 ms on 7/10 backhands" beats "moves late"). Assign one corrective block to the top fault, schedule the re-audit for week five on the same angles, and file the other two faults untouched. The discipline of the audit is not the filming — it is refusing to fix everything at once and insisting that the second measurement prove the first block right or wrong.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+<!-- TAICHIKB-CROSSREF-END -->

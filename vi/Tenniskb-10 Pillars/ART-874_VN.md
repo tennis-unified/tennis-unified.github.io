@@ -126,3 +126,10 @@ Tạo một thẻ nhỏ túi với chuỗi khởi động:
 | Căng cơ trong trận đấu | Khởi động không đủ, cơ lạnh | Chấn thương, mất thời gian | Kéo dài thời gian khởi động; đảm bảo tiến triển đầy đủ |
 | Giảm sức mạnh đầu ra | Giãn cơ tĩnh trước hoạt động | Giảm tốc độ giao bóng, giảm sức mạnh | Thay thế giãn cơ tĩnh bằng khởi động động |
 | Chất lượng di chuyển kém | Kích hoạt thần kinh không đủ | Di chuyển không hiệu quả, lỗi | Thêm giai đoạn kích hoạt thần kinh; bài tập cảm giác vị trí |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

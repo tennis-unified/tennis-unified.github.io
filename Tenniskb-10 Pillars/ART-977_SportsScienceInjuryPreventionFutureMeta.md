@@ -190,3 +190,10 @@ Lower COF = less grip = sliding reduces joint stress but increases fall risk.
 ## Practical Application: "Respect the Surface"
 
 When transitioning between surfaces, allow at least 1-2 weeks for your body to adapt. The movement patterns, impact forces, and balance demands are different on each surface. If you primarily play hard courts and are heading to a clay tournament, spend a week practicing on clay first — focusing on sliding technique and longer points. Similarly, if you are a clay-court specialist heading to grass, practice on grass for a week to adjust to the lower bounce and faster conditions. Your body needs time to adapt to the different biomechanical demands, and rushing the transition is a common cause of injury.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

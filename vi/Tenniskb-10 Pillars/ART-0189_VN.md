@@ -36,3 +36,10 @@ Hiệu quả trượt phụ thuộc vào việc quản lý hệ số ma sát gi�
 
 ## Ứng Dụng Thực Tế: "Một Đẩy, Rồi Trôi"
 Trong phiên đất nung (hoặc bề mặt ma sát thấp) tiếp theo, yêu cầu người chơi thực hiện 10 phục hồi đẩy-và-trượt từ vị trí forehand rộng. Đo khoảng cách trượt mỗi lần. Nếu độ lệch chuẩn vượt quá 30 cm, chạy bài tập hiệu chỉnh khoảng cách trượt 15 phút, tập trung vào góc giày nhất quán.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+<!-- TAICHIKB-CROSSREF-END -->

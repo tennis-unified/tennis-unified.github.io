@@ -119,3 +119,10 @@ Giao bóng, sau đó di chuyển ngay lập tức đến vị trí mục tiêu (
 ## Ứng Dụng Thực Tế: "Bài Tập Xu Phần Tư"
 
 Đặt một đồng xu lên sân 1 foot bên trong vạch công (vị trí tiếp đất mục tiêu). Giao 20 bóng và cố gắng tiếp đất trên hoặc gần đồng xu. Bài tập này phát triển cảm giác về vị trí tiếp đất đúng và đà về phía trước. Nếu bạn luôn tiếp đất phía sau đồng xu, bạn cần nhiều lực đẩy chân hơn. Nếu bạn luôn tiếp đất vượt qua nó, bạn đang nghiêng quá về phía trước.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

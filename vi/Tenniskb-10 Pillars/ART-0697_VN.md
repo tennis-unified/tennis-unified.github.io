@@ -43,3 +43,10 @@ Cú trả tốc độ kèm xoáy đòi hỏi volley chặn kết hợp với đi
 ## Ứng Dụng Thực Tế: "Chặn Bóng, Điều Chỉnh Mặt Vợt, Đổi Hướng"
 
 Khi đối mặt cú trả tốc độ kèm xoáy: (1) chặn bóng, (2) điều chỉnh mặt vợt theo loại xoáy, (3) đổi hướng bóng sang khoảng sân trống. Cú trả tốc độ kèm xoáy là bài kiểm tra tối thượng — hãy làm chủ nó.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

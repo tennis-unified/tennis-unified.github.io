@@ -64,3 +64,10 @@ Minimize extrinsic feedback and rely primarily on intrinsic feedback. Provide fe
 
 ## Practical Application: "The Feedback Ladder"
 Climb the feedback ladder as your skills develop: (1) start with frequent extrinsic feedback to learn the movement, (2) gradually reduce feedback frequency as you develop intrinsic feedback, (3) use bandwidth feedback to promote self-correction, and (4) rely primarily on intrinsic feedback for well-practiced skills. This progression builds the ability to self-correct and adapt without external input, which is essential for autonomous performance under match conditions.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

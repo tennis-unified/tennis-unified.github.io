@@ -56,3 +56,10 @@ COR thay đổi nhẹ tùy thuộc vào vị trí chạm trên mặt dây vợt.
 ## Ứng Dụng Thực Hành: "Cảm Nhận Véc Tơ"
 
 Luyện tập đánh forehand với sự nhận thức có ý thức về hướng của véc tơ xung lực. Đối với mỗi cú đánh, hình dung véc tơ như một mũi tên kéo dài từ mặt vợt xuyên qua bóng. Đối với topspin nặng, mũi tên chỉ lên và về phía trước. Đối với đánh phẳng, mũi tên chỉ nhiều về phía trước hơn. Đối với slice, mũi tên chỉ xuống và về phía trước. Việc hình dung này giúp bạn kiểm soát có ý thức véc tơ lực và phát triển khả năng thay đổi véc tơ cho các loại cú đánh khác nhau.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Động lực học tuyến tính, GRF và xung lượng*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

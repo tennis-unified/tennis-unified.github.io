@@ -55,3 +55,10 @@ Tối thiểu hóa phản hồi ngoại lai và chủ yếu dựa vào phản h�
 
 ## Ứng Dụng Thực Tế: "Thang Phản Hồi"
 Leo lên thang phản hồi khi kỹ năng của bạn phát triển: (1) bắt đầu với phản hồi ngoại lai thường xuyên để học chuyển động, (2) dần giảm tần suất phản hồi khi bạn phát triển phản hồi nội tại, (3) sử dụng phản hồi dải để thúc đẩy tự sửa lỗi, và (4) chủ yếu dựa vào phản hồi nội tại cho các kỹ năng đã luyện tốt. Sự tiến triển này xây dựng khả năng tự sửa lỗi và thích ứng mà không cần đầu vào bên ngoài, điều cần thiết cho hiệu suất tự chủ trong điều kiện trận đấu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

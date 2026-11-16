@@ -69,3 +69,10 @@ Người chơi nên kết hợp các bài tập này vào quy trình tập luy�
 ## Ứng Dụng Thực Tế: "Kiểm Tra Vị Trí Kết Thúc"
 
 Trong quá trình tập luyện, sau mỗi cú đánh backhand, giữ vị trí kết thúc trong hai giây. Kiểm tra xem vợt có ở đúng vị trí cho loại cú đánh không: qua vai cho topspin, quanh eo cho slice, quanh vai cho cú bằng phẳng. Nếu vị trí kết thúc không đúng, điều chỉnh vung vợt cho đến khi trở nên tự động.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

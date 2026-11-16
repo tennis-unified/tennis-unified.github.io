@@ -147,3 +147,10 @@ Flat serves stay low after the bounce:
 ## Practical Application: "The Blocking Wall"
 
 Stand at the service line with a partner on the other side. Have the partner feed balls at you at increasing speeds, focusing on blocking them back with minimal backswing. Start at moderate speed and gradually increase. This drill develops the blocking technique needed for returning fast flat serves. The goal is to develop a "wall" with your racket that deflects the ball back without a big swing.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Sensorimotor integration & motor control*
+<!-- TAICHIKB-CROSSREF-END -->

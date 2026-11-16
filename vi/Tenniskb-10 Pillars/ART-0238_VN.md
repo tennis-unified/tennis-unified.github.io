@@ -52,3 +52,10 @@ Trước trận, thực hiện một bài tập chánh niệm ngắn (3-5 phút 
 
 ## Ứng Dụng Thực Tế: "Mỏ Neo Hơi Thở"
 Sử dụng hơi thở của bạn như một mỏ neo chánh niệm trong trận đấu. Trước mỗi điểm, hít một hơi thở có ý thức, chú ý cảm giác không khí đi vào và ra khỏi cơ thể. Hơi thở đơn giản này đưa bạn vào khoảnh khắc hiện tại và ngắt quãng sự suy nghĩ lặp lại hoặc lo âu có thể hiện diện. Mỏ neo hơi thở đủ tinh tế để sử dụng trong thi đấu mà không làm gián đoạn thói quen của bạn, và nó cung cấp một cách nhanh chóng, đáng tin cậy để khôi phục nhận thức hiện tại bất cứ khi nào bạn nhận ra tâm trí của mình trôi về quá khứ hoặc tương lai.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+<!-- TAICHIKB-CROSSREF-END -->

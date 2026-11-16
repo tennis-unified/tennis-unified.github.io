@@ -70,3 +70,10 @@ Vận động viên gặp khó khăn với tốc độ đầu vợt thường h�
 ## Ứng Dụng Thực Tế: "Bài Kiểm Tra Tốc Độ"
 
 Trong lúc luyện tập, nhờ một người đồng đội quan sát cú vung backhand của bạn và đánh giá tốc độ đầu vợt trên thang điểm 1-10. Tập trung tạo tốc độ thông qua chuỗi động học, không chỉ bằng cánh tay. Nếu tốc độ của bạn dưới 7, xác định phần nào trong chuỗi đó đang yếu và luyện tập đặc biệt phần đó. Theo dõi tiến trình qua các buổi luyện tập để đảm bảo tốc độ đầu vợt đang cải thiện.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

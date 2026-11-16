@@ -31,3 +31,10 @@ v_ball ≈ v_racket × (1 + COR) × (m_racket_effective / (m_racket_effective + 
 
 ## Practical Application: "The Speed Multiplier"
 Think of your racket as a speed multiplier. If you swing at 30 m/s and the multiplier is 1.5, your ball exits at 45 m/s (100 mph). To increase ball speed, either increase racket speed (through better mechanics) or increase the multiplier (through better equipment). The most effective approach is to improve both—better mechanics AND better equipment.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

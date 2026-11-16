@@ -78,3 +78,10 @@ The goal of micro-tension training is not to eliminate arousal — it is to **de
 ## Practical Application: "The Tension Budget"
 
 At the next session, introduce the concept of a **tension budget**: the player has a finite amount of muscular tension available per set, and every unnecessary contraction spends from this budget. Have the player rate their grip pressure on a 1-10 scale every 5 points during a practice set. If the grip exceeds 5/10 at any point, the player performs a 10-second reset (shake-out, jaw release, trap drop, reset breath) before continuing. Track the grip rating across the set — most players start at 7-8/10 and gradually learn to maintain 3-4/10 without losing control. After 2-3 weeks of tracking, the player develops an internal gauge for tension levels and begins to self-correct without external prompts. The result is a measurable increase in shoulder rotation range (5-15°), a reduction in forearm fatigue, and improved touch on finesse shots — all from releasing energy that was already being spent, but was not producing any useful work.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -72,3 +72,10 @@ Hãy cho người chơi một chỉ dẫn: **một tiếng xì nghe thấy bắt
 3. **Lắp đặt nhịp thở phục hồi.** Giữa các khối ném bỏng, người chơi chạy mô hình hít 3-4 giây / thở ra 6 giây. Phiên bản ngày thi đấu nằm trong thói quen trước giao và trước nhận bóng.
 
 Người chơi xì khi vung mang một cột áp suất đến mỗi điểm chạm — cứng 5 ms một lần, thư giãn cho mọi thứ khác, và vẫn thở tự do ở set thứ ba.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

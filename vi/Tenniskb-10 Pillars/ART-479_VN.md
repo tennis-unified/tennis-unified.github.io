@@ -40,3 +40,10 @@ Người chơi gặp khó khăn với bước bắc chéo thường được l�
 
 ## Ứng Dụng Thực Tế: "Bài Tập Bắc Chéo"
 Đặt cọc trên sân để đánh dấu các vị trí hậu bên tay khiêng rộng. Bắt đầu từ giữa vỏ sân và tập di chuyển đến mỗi cọc bằng bước bắc chéo. Tập trung vào thăng bằng, tốc độ và duy trì trọng tâm thấp. Theo dõi số lần bạn đến cọc trong tư thế thăng bằng. Bài tập này phát triển bước bắc chéo cần thiết để bao phủ sân ngang một cách hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

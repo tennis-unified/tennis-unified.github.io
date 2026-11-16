@@ -73,3 +73,10 @@ Thiên nhiên là đối thủ bạn không thể thương lượng. Gió, nắn
 
 ## Ứng Dụng Thực Tế: "Người Dự Báo Thời Tiết"
 Kiểm tra dự báo 48h / 24h / 1h trước. Chuẩn bị balo cho *ba* điều kiện (gió, nắng, nóng). Vận động viên thích ứng nhanh nhất trong 4 game đầu sẽ thắng trận.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -81,3 +81,10 @@ When all three conditions are met, the player is ready to move again within 30-5
 ## Practical Application: "Arrive Rooted"
 
 Use the target-zone landing drill at the start of the next session. Mark a 30 cm zone at the recovery target. Hit 10 balls with moderate-width feeds and score how many recoveries end with both feet in the zone on the first landing. If the score is below 5/10, the player's COM control is the limiting factor — not their speed, not their fitness, but their ability to arrive still. Run the deceleration cue drill for 10 minutes, then re-score. Players who improve to 7/10 or higher within a session feel the immediate benefit: more time, less chaos, and the sense that recovery is under control rather than a scramble.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Training adaptation & tissue regeneration*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -58,3 +58,10 @@ Việc rèn luyện bao gồm:
 ## Ứng Dụng Thực Hành: "Bài Tập Ná"
 
 Luyện tập hiệu ứng ná bằng cách cầm vợt với cổ tay hoàn toàn duỗi (ná lùi) và cán tay thã lỏng. Vung cán tay về phía trước, duy trì trạng thái duỗi cổ tay cho đến khoảnh khắc cuối cùng, sau đó đẩy cổ tay về phía trước nhanh chóng cũng như bạn đang ném một quả bóng. Tập trung vào cảm giác đầu vợt "quất" về phía trước ở cuối chuyển động. Cảm giác quất này chính là hiệu ứng ná bổ sung tốc độ và xoáy đáng kể cho đường forehand của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

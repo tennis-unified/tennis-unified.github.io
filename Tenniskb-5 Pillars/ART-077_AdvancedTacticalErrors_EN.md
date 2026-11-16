@@ -51,3 +51,10 @@ Advanced tactical errors require a systematic approach to correction:
 
 ## Practical Application: The "Complete Tactical Producer"
 The athlete should feel that they are "complete" and integrated with the 5-Pillar System. The athlete should feel that the biomechanical, neurological, and tactical systems are working together in harmony. This is the ultimate goal of the 5-Pillar System: to create a complete, integrated athlete who performs effortlessly at their peak potential.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Performance pressure & tactical decision errors*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Biomechanical strain from poor court positioning*
+- [Chương 5: Hệ thống vận động chức năng và các mẫu vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch05-he-thong-van-dong-chuc-nang-va-cac-mau-van-dong.html) — *Movement compensation under tactical fatigue*
+<!-- TAICHIKB-CROSSREF-END -->

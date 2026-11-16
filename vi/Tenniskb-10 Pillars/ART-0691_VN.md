@@ -43,3 +43,10 @@ Bóng trả cao đòi hỏi mặt vợt khép và cú volley đấm xuống dư�
 ## Ứng Dụng Thực Tế: "Để Bóng Rơi, Khép Mặt Vợt, Đấm Xuống"
 
 Khi đối phó với bóng trả cao: (1) để bóng rơi xuống, (2) khép mặt vợt, (3) đấm bóng xuống dưới. Quả bóng cao hoàn toàn có thể chế ngự được với kỹ thuật đúng đắn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

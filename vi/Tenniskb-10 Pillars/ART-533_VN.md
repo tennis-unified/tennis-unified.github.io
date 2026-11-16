@@ -110,3 +110,10 @@ Nhịp điệu là mẫu nhịp trên toàn bộ chuyển động giao bóng. Nh
 ## Ứng Dụng Thực Tế: "Đếm Số Nảy"
 
 Trước mỗi giao bóng, nảy bóng một số lần cụ thể (ví dụ: 3 lần nảy). Điều này tạo nhịp trước giao bóng nhất quán được truyền vào chuyển động giao bóng. Việc đếm cũng cho tâm trí bạn thứ gì đó để tập trung ngoài áp lực của khoảnh khắc. Nhiều tuyể thủ chuyên nghiệp sử dụng kỹ thuật này — số lần nảy cụ thể không quan trọng bằng sự nhất quán thực hiện mỗi lần.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

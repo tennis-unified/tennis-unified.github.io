@@ -110,3 +110,10 @@ Dạy người chơi phép so sánh mèo: mèo thả từ độ cao chạm im l�
 3. **Chuyển giao.** Tập chạm mu chân trong điều kiện giống trận — cấp ngẫu nhiên, kịch bản áp lực, trạng thái mệt. Chất lượng chạm sống sót các điều kiện này là chất lượng chạm sẽ xuất hiện trong trận.
 
 Người chơi chạm trên mu chân không chỉ di chuyển nhanh hơn — họ di chuyển với chất lượng khác. Bước đầu tiên cảm thấy như một sự giải phóng, không phải quyết định. Sân cảm thấy như bàn nảy, không phải bề mặt phải chiến đấu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Dự trữ và hồi phục năng lượng đàn hồi mô mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Cơ học co cơ: lệch tâm/đồng tâm và lực–vận tốc*
+<!-- TAICHIKB-CROSSREF-END -->

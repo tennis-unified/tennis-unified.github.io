@@ -67,3 +67,10 @@ Tập với đối tác cố ý thay đổi nhịp độ mà không có mô hìn
 
 ## Ứng Dụng Thực Tế: "Đồng Hồ Nhịp Độ"
 Phát triển một "đồng hồ nhịp độ" nội tại được hiệu chỉnh theo tốc độ vung vợt của chính bạn. Trước mỗi cú đánh, ước lượng xem quả bóng đang tới sẽ đến "sớm," "đúng giờ" hay "trễ" so với nhịp vung vợt bình thường của bạn. Phán đoán tương đối này đáng tin cậy hơn ước lượng tốc độ tuyệt đối và trực tiếp thông báo thời gian chuẩn bị của bạn. Tập đồng hồ này với nhiều đối thủ khác nhau cho đến khi nó trở thành đánh giá tự động, tiền ý thức.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -55,3 +55,10 @@ Người chơi nên kết hợp các bài tập này vào chương trình tập 
 
 ## Ứng Dụng Thực Tế: "Bài Tập Inside-Out"
 Yêu cầu đối tác đỡ cầu với bạn từ vạch giao cầu. Thực hành đánh cầu về phía backhand của đối thủ, tập trung vào kiến tạo pha cầu và tìm cơ hội tấn công. Theo dõi số điểm bạn giành được bằng chiến lược inside-out. Bài tập này giúp phát triển nhận thức chiến thuật cần thiết để chơi inside-out hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

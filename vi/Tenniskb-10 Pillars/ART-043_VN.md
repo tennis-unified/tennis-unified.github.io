@@ -80,3 +80,10 @@ Chống xoay duy trì cân bằng trong:
 
 ## Ứng Dụng Thực Tế: "Chiếc Tàu Ổn Định"
 Hãy tưởng tượng cơ thể bạn như một chiếc tàu trên biển động: sóng (lực xoay) cố gắng lật bạn, nhưng bóng Last (sức mạnh chống xoay) giữ bạn thẳng đứng. Trong cú đánh đáy sân, lực xoay cố gắng kéo bạn mất cân bằng, nhưng cơ chống xoay giữ bạn vững. Luyện tập bằng cách thực hiện cú đánh đáy sân tư thế mở trong khi cảm nhận cơ chống xoay làm việc để giữ bạn cân bằng. Nếu cảm thấy mình bị nghiêng hoặc mất cân bằng, tập trung kích hoạt cơ chống xoay (cơ xiên, cơ thắt lưng vuông). Càng giữ được vững trong xoay, bạn càng định hướng bóng chính xác.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

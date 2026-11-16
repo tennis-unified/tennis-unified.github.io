@@ -84,3 +84,10 @@ A split-step push-off can be divided similarly:
 ## Practical Application: "Loose Hands, Heavy Ball"
 
 Give the player one paradox: **loose hands produce a heavy ball.** The hands should be so loose during the approach and loading that the racket head flops slightly in the grip. Then, at the moment of contact, the hands tighten for 100-200 ms, and the racket head accelerates through the ball. After contact, the hands release again. At the next session, have the player hit 20 balls with the lightest possible grip — so light that the racket nearly flies out of the hand on the backswing. Then gradually increase grip pressure until the player finds the minimum tightness that still produces good shots. The result is a player who is loose 80% of the time and explosive 20% of the time — and who never wastes energy being tight when they should be relaxed.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Tai Chi principles applied to tennis*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

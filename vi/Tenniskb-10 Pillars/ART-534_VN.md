@@ -107,3 +107,10 @@ Dựa trên những quan sát này, phát triển mẫu giao bóng:
 - Mẫu chính: Giao bóng vào người + giao bóng T (tránh giao bóng rộng deuce)
 - Mẫu phụ: Giao bóng rộng ad vào lưng tay họ
 - Cú bất ngờ: Giao bóng rộng deuce thỉnh thoảng khi họ lừa bảo vệ lưng tay
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -57,3 +57,10 @@ Phương pháp theo dõi đơn giản bao gồm ghi chép thống kê phân tíc
 ## Ứng Dụng Thực Tế: "Phân Tích Di Chuyển Bộc Lộ Phạm Vi Bao Phủ"
 
 Bắt đầu theo dõi phân tích di chuyển ngang để đánh giá hiệu suất bao phủ sân trong 5 trận đấu tiếp theo của bạn. Sử dụng hệ thống kiểm đếm đơn giản trên thẻ ghi nhớ hoặc ứng dụng thống kê quần vợt. Sau mỗi trận, tính phần trăm và so sánh với mục tiêu của bạn (thường là 60% trở lên cho hầu hết chỉ số). Xác định tình huống cụ thể mà chỉ số giảm (cuối set, sau pha bóng dài, dưới áp lực bảng điểm) và phát triển bài tập hướng đích cho những kịch bản đó. Qua một mùa giải, theo dõi xem chỉ số có cải thiện không và có tương quan với thắng trận hay không.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Đường Bên: ổn định ngang và lực sang bên*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+<!-- TAICHIKB-CROSSREF-END -->

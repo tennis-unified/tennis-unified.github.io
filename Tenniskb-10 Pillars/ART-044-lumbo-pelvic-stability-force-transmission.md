@@ -99,3 +99,10 @@ Asymmetric movement between the left and right sides:
 
 ## Practical Application: "The Firm Junction"
 Imagine your lumbo-pelvic complex as a junction between two highways: the lower-extremity highway and the upper-body highway. The junction must be firm enough to transmit traffic (forces) efficiently without bottlenecks (energy loss), but flexible enough to allow the rotational movement that generates power. Practice this by performing groundstrokes while consciously feeling your lumbo-pelvic region as a firm junction between your lower and upper body. If you feel energy loss (a "bottleneck"), focus on stabilizing your pelvis and lumbar spine. If you feel stiffness, focus on allowing smooth rotational movement. The goal is a firm junction that transmits forces efficiently while allowing the rotational freedom that powers your strokes.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+<!-- TAICHIKB-CROSSREF-END -->

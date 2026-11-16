@@ -60,3 +60,10 @@ Những người chơi lúng túng trong việc chọn cú đánh thường đư
 
 ## Ứng Dụng Thực Tế: "Bài Tập Biến Hóa Cú Đánh"
 Nhờ bạn đồng hành cho 10 quả bóng về phía cú trái của bạn. Luân phiên giữa drive topspin và drive phẳng, tập trung thay đổi quỹ đạo vung vợt và góc nghiêng mặt vợt. Theo dõi xem bao nhiêu cú đánh vào sân và bao nhiêu cú phá vỡ nhịp độ của đối thủ. Bài tập này xây dựng sự đa năng cần thiết để đối thủ phải liên tục đoán mò.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

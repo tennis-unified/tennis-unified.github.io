@@ -198,3 +198,10 @@ Use a biomechanical checklist for serve analysis:
 | Shoulder pain during serving | GIRD, poor scapular control, excessive shoulder load | Rotator cuff tendinopathy | Shoulder mobility program; scapular stabilization; serve mechanics review |
 | Elbow pain during backhand | Excessive wrist extension, poor technique | Lateral epicondylitis | Technique modification; forearm strengthening; equipment adjustment |
 | Lower back pain during serving | Excessive lumbar hyperextension, poor core stability | Disc issues, muscle strains | Core stability program; serve mechanics review; lumbar stabilization |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

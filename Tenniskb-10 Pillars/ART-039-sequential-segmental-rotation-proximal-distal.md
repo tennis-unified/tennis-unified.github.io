@@ -142,3 +142,10 @@ Perform medicine ball throws from a ground-up position:
 
 ## Practical Application: "The Domino Effect"
 Imagine a line of dominoes falling: the first domino (legs) knocks over the second (hips), which knocks over the third (trunk), which knocks over the fourth (shoulder), which knocks over the fifth (arm), which knocks over the sixth (racket). Each domino falls because the previous domino pushed it. If you try to push the sixth domino directly (swinging the arm without the rest of the chain), it falls much more slowly. But if you let the first domino start the chain, the sixth domino falls with tremendous speed. Practice your strokes with this domino mindset: let your legs start the chain, then let each segment fall in sequence. Don't try to make the racket move fast—let the dominoes fall naturally, and the racket speed will take care of itself.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+<!-- TAICHIKB-CROSSREF-END -->

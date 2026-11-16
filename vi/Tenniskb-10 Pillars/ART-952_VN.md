@@ -109,3 +109,10 @@ Diễn tập khó khăn đặc biệt quan trọng. Tay vợt hình dung phục 
 ## Ứng Dụng Thực Tế: "10 Phút Lặp Lại Tâm Lý Bằng 3 Lặp Lại Vật Lý"
 
 Tích hợp hình dung có cấu trúc vào mỗi ngày tập luyện. Sau tập luyện vật lý, dành 10 phút diễn tập tâm lý những bài học chính của buổi. Trước khi ngủ, hình dung trọng tâm chiến thuật của ngày mai. Trước thi đấu, diễn tập kế hoạch trận đấu và kịch bản khó khăn. Não không phân biệt hoàn toàn giữa chuyển động được tưởng tượng sinh động và thực hiện vật lý — hãy tận dụng điều này bằng cách làm cho mỗi lặp lại tâm lý đều có giá trị.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

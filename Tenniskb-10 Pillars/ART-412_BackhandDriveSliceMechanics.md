@@ -60,3 +60,10 @@ Players should incorporate hip strengthening into their regular fitness routine,
 
 ## Practical Application: "The Hip Push Drill"
 Stand in your backhand stance with a resistance band looped around your hips and anchored behind you. Practice the backhand swing, focusing on pushing the hips forward against the band's resistance. This drill strengthens the hip drive muscles and trains the forward shift that produces penetrating shots. Perform three sets of ten repetitions.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

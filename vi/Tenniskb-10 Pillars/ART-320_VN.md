@@ -54,3 +54,10 @@ Sự chuyển tiếp này cần cảm giác dễ dàng và bùng nổ, như th�
 ## Ứng Dụng Thực Tế: "Giữ Vị Trí Sức Mạnh"
 
 Giữ vị trí sức mạnh trong 3-5 giây trước mỗi lần quạt tới, kiểm tra có ý thức cả năm đặc điểm. Cảm nhận sự căng đàn hồi ở chân, thân mình và cổ tay. Việc giữ có chủ đích này ghi nhớ vị trí đúng và phát triển nhận thức cảm giác thể chất cần thiết để tự đánh giá vị trí sức mạnh trong các cú đánh tốc độ bình thường. Theo thời gian, thời gian giữ giảm dần khi vị trí đúng trở nên tự động.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

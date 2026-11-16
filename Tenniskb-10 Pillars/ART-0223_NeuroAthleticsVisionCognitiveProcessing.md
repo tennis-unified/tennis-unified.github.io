@@ -69,3 +69,10 @@ Practice accepting short-term losses from positive-EV shots. When a well-planned
 
 ## Practical Application: "The Percentage Check"
 Before each shot, perform a quick "percentage check": estimate the probability of success for your planned shot. If the probability is above 50%, hit it with confidence. If below 50%, consider an alternative. This simple heuristic keeps your decision-making grounded in probability rather than emotion. Over time, your probability estimates will become more accurate, and your shot selection will improve accordingly.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+<!-- TAICHIKB-CROSSREF-END -->

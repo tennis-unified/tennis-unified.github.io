@@ -56,3 +56,10 @@ Dạy kỹ thuật volley cho vận động viên nhí đòi hỏi những đi�
 ## Ứng Dụng Thực Tế: "Hãy Làm Cho Vui, Hãy Làm Cho Đơn Giản"
 
 Đối với vận động viên nhí, volley cần vui và đơn giản. Bắt đầu với volley đẩy, sử dụng trò chơi và phần thưởng, sau đó dần dần giới thiệu các kỹ thuật phức tạp hơn. Mục tiêu là xây dựng tình yêu cả đời đối với lối chơi lưới, chứ không phải tạo ra một cú volley hoàn hảo ở tuổi 8.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

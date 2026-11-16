@@ -75,3 +75,10 @@ Liên tục tốc độ - lực mô tả mối quan hệ giữa lực cơ bắp 
 
 ## Ứng Dụng Thực Tế: "Kế Hoạch Liên Tục"
 Kỳ hoạch hóa huấn luyện của bạn qua liên tục tốc độ - lực: (1) Mùa nghỉ: xây dựng lực tối đa với tải trọng nặng và số lần lặp thấp. (2) Trước mùa: phát triển sức mạnh với tải trọng vừa và lặp bùng nổ. (3) Trong mùa: duy trì sức mạnh và phát triển tốc độ với tải trọng nhẹ và lặp tốc độ tối đa. Cách tiếp cận kỳ hoạch hóa này đảm bảo bạn phát triển đầy đủ các phẩm chất lực mà tennis đòi hỏi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

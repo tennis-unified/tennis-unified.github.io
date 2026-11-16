@@ -30,3 +30,10 @@ Một sai lầm phổ biến là giữ trạng thái "căng" trong suốt toàn 
 
 ## Ứng Dụng Thực Tế: "Thở Ra - Giật"
 Cách hiệu quả nhất để kích hoạt xung lực tiếp xúc là thông qua một tiếng thở ra mạnh, dứt khoát (tiếng hét/grunt) tại thời điểm tiếp xúc. Điều này tự nhiên kích hoạt các cơ lõi sâu và tạo ra độ cứng đẳng tích cần thiết.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Hệ cơ lõi (cơ ngang bụng, cơ chéo bụng)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Gồng lõi (core bracing) và ổn định cột sống*
+- [Chương 9: Mặt Trước Sâu — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch09-mat-truoc-sau.html) — *Đường Mặt Trước Sâu: ổn định lõi sâu*
+<!-- TAICHIKB-CROSSREF-END -->

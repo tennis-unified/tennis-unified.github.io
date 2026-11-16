@@ -199,3 +199,10 @@ Players scoring above 100 (out of 130) show strong potential for elite developme
 | Talented player losing interest | Overemphasis on results, insufficient fun | Dropout from tennis | Reintroduce play-based training; reduce competitive pressure |
 | Player with excellent physical traits but poor technique | Late start, insufficient technical foundation | Plateau in development | Intensive technical development program; patient long-term approach |
 | Player with excellent technique but poor competitive temperament | Insufficient match experience, over-coaching | Competitive anxiety, poor tournament results | Gradual competitive exposure; mental performance coaching |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+<!-- TAICHIKB-CROSSREF-END -->

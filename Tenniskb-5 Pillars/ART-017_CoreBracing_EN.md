@@ -30,3 +30,10 @@ A common mistake is staying "tight" throughout the entire swing.
 
 ## Practical Application: The "Exhale-Snap"
 The most effective way to trigger the contact pulse is through a sharp, forced exhale (the "grunt") at the moment of impact. This naturally engages the deep core muscles and creates the necessary isometric stiffness.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Core musculature (transversus abdominis, obliques)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Core bracing & spinal stabilization*
+- [Chương 9: Mặt Trước Sâu — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch09-mat-truoc-sau.html) — *Deep Front Line: intrinsic core stability*
+<!-- TAICHIKB-CROSSREF-END -->

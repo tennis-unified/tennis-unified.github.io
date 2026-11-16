@@ -50,3 +50,10 @@ The balance point of a tennis racket is the point along its length where the rac
 
 ## Practical Application: "The Balance Feel"
 Hold your racket by the throat (where the head meets the shaft) and let it balance horizontally. If the handle drops first, your racket is head-heavy. If the head drops first, your racket is head-light. The balance point affects how the racket feels during the swing: head-heavy rackets feel powerful but sluggish; head-light rackets feel quick but less substantial. Choose the balance that matches your playing style and arm strength.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

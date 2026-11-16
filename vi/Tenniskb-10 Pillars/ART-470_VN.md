@@ -55,3 +55,10 @@ Người chơi nên đưa các bài tập này vào thói quen luyện tập th�
 
 ## Ứng Dụng Thực Tế: "Bài Tập Luyện Slice Đối Phó Với Topspin"
 Để đối tác ném bóng topsspin về phía backhand của bạn. Luyện tập đánh backhand slice, tập trung vào đường bay thấp và backspin. Theo dõi số cú đánh vào sân và số cú đánh làm gián đoạn nhịp điệu của đối thủ. Bài tập này giúp phát triển kỹ thuật cần thiết cho lối chơi slice hiệu quả đối phó với topspin.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

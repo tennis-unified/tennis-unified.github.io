@@ -122,3 +122,10 @@ Parents are the shareholders in the athlete's career enterprise. The "Parent Sup
 
 ## Practical Application: "The Shareholder's Portfolio"
 The Parent Support Plan is the **Shareholder's Portfolio**. It defines the investment (money, time, emotion), the governance (voting rights, board meetings, reporting), the risk management (boundaries, escalation, insurance), and the shareholder's own wellbeing (diversification, health checks). **The best tennis parents don't coach tennis; they parent the human.** They fund the factory. They trust the COO. They protect the CEO. They enjoy the game.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 19: Thấu hiểu cơ học-thích-nghi của mô mạc: Ứng dụng vào y học thể thao — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch19-thau-hieu-co-hoc-thich-nghi-cua-mo-mac-ung-dung-vao-y-hoc-the-th.html) — *Adaptive mechanobiology & injury prevention*
+<!-- TAICHIKB-CROSSREF-END -->

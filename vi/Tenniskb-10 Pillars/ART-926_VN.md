@@ -60,3 +60,10 @@ Nếu bạn mắc hen suyễn, hãy phát triển kế hoạch hành động hen
 | Người chơi trải qua triệu chứng chỉ trong điều kiện lạnh, khô | Nhạy cảm yếu tố môi trường kích hoạt | Thành tích phụ thuộc thời tiết | Mặt nạ hoặc khăn choàng; lựa chọn trong nhà; hẹn giờ thuốc giãn phế quản trước tập |
 | Người chơi không mang bơm hít trong trận đấu | Chuẩn bị khẩn cấp không đủ | Rủi ro căng cấp nghiêm trọng | Bắt buộc mang bơm hít; nhận thức huấn luyện viên; kế hoạch hành động khẩn cấp |
 | Thành tích người chơi giảm ở set thứ hai | EIB trong chơi kéo dài; liều trước tập không đủ | Giảm sức bền; thành tích kém | Chia liều; khởi động giai đoạn refractory; xem lại chế độ thuốc |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+<!-- TAICHIKB-CROSSREF-END -->

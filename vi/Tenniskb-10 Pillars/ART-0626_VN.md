@@ -68,3 +68,10 @@ Volley phản xạ là sản phẩm của phản xạ được rèn luyện, kh�
 ## Ứng Dụng Thực Tế: "Nhìn Vợt, Phản ứng Bằng Tay"
 
 Tại lưới, mắt của bạn nên chặt chẽ vào mặt vợt của đối thủ tại thời điểm chạm. Tay bạn tự động phản ứng với hướng bóng — không có suy nghĩ có ý thức, chỉ là phản xạ đã được rèn luyện. Tin tưởng vào sự rèn luyện của bạn và để tay bạn làm việc.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -185,3 +185,10 @@ Huấn luyện phải bao gồm:
 | Vận động viên kiệt sức trước khi đạt trình độ chuyên nghiệp | Thi đấu quá nhiều, thiếu niềm vui và cân bằng | Bỏ cuộc, vấn đề sức khỏe tâm thần | Giảm áp lực cạnh tranh; giới thiệu lại niềm vui; hỗ trợ tâm lý |
 | Vận động viên không có đủ thể lực cho trận 3 set | Thể lực không đủ, phát triển thể lực muộn | Giảm thành tích ở set thứ ba | Áp dụng chương trình thể lực toàn diện; chia giai đoạn huấn luyện |
 | Vận động viên không xử lý được áp lực trong giải đấu | Không đủ huấn luyện kỹ năng tâm lý, không có quy trình | Choking, kết quả giải đấu kém | Huấn luyện hiệu suất tâm lý; huấn luyện mô phỏng áp lực |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

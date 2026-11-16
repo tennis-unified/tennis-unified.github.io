@@ -57,3 +57,10 @@ Players should practice Two-Back vs. One-Up: Formation Choice by Scoreboard in c
 ## Practical Application: "Choose Formation by Scoreboard"
 
 Implement Two-Back vs. One-Up: Formation Choice by Scoreboard by committing to the tactic for an entire practice set. Track how many points you win using the pattern versus your default approach. If the tactic wins more than 55% of points, integrate it into your regular repertoire. If it wins less, analyze why: was it your execution, the opponent's adjustment, or poor timing? Refine the tactic based on this analysis before your next match.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Chương 9: Mặt Trước Sâu — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch09-mat-truoc-sau.html) — *Deep Front Line: core postural axis*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

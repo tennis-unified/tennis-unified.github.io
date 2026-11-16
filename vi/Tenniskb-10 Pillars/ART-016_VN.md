@@ -108,3 +108,10 @@ Bài tập nhấn mạnh tách biệt hông-vai — bao gồm vung bóng có d�
 
 ## Ứng Dụng Thực Tế: "Cái Khăn Quăn Xoắn"
 Hãy tưởng tượng thân mình bạn là một cái khăn quăn mà bạn xoắn trong giai đoạn nạp và bóc xoắn trong vung về phía trước. Để cảm nhận điều này, hãy đứng với hai chân rộng bằng vai và cầm một cái khăn nhẹ trước người với hai tay. Xoay vai sang một bên trong khi giữ hông hướng về phía trước — cảm nhận cái khăn (thân mình bạn) bị xoắn và lưu trữ năng lượng đàn hồi. Bây giờ xoay vai về giữa trong khi giữ hông ổn định — cảm nhận cái khăn bóc xoắn và giải phóng năng lượng đã lưu. Điều này chính xác là chuyện xảy ra trong thân mình bạn khi tách biệt hông-vai: giai đoạn nạp xoắn thân mình (lưu trữ năng lượng), và vung về phía trước bóc xoắn nó (giải phóng năng lượng). Thực hành với một cái khăn thật 20 lần, sau đó không khăn nhưng với cùng cảm giác. Khi thêm bóng, hãy tập trung vào cảm giác xoắn-bóc xoắn trong thân mình. Càng xoắn nhiều khi nạp, bạn càng có nhiều năng lượng để bóc xoắn khi vung — và cú đánh của bạn càng mạnh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

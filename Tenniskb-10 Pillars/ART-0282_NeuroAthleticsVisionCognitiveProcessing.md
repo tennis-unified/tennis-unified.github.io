@@ -67,3 +67,10 @@ Track progress toward goals. Visible progress sustains motivation; lack of progr
 
 ## Practical Application: "The Goal Hierarchy"
 Create a goal hierarchy with three levels: (1) long-term goal (e.g., "achieve a top-100 ranking by year-end"), (2) short-term goals (e.g., "win 60% of first-serve points this month"), (3) process goals (e.g., "maintain my pre-shot routine on every serve"). Review this hierarchy weekly and adjust based on progress. This structured approach to goal setting provides both direction and motivation, ensuring that every practice session and match contributes to meaningful objectives.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

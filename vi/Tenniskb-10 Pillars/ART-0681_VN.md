@@ -43,3 +43,10 @@ Cú trả bóng xoáy mạnh đòi hỏi kỹ thuật volley thấp: khuỵu g�
 ## Ứng Dụng Thực Tế: "Hạ Thấp Người, Mở Mặt Vợt, Cắt Bóng Xuyên Qua"
 
 Đối đầu với cú trả bóng xoáy mạnh: (1) hạ thấp người với khuỵu gối sâu, (2) mở mặt vợt ra, (3) cắt bóng xuyên qua quả bóng với đường đánh từ cao xuống thấp. Bạn càng hạ thấp trọng tâm, volley cắt bóng của bạn càng hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -43,3 +43,10 @@ Không sử dụng bước phân tầng (bước trượt không bao phủ đư�
 ## Ứng Dụng Thực Tế: "Bước Phân Tầng, Khống Chế, Phục Hồi"
 
 Khi đối phó với đường trả bóng góc rộng: (1) bước phân tầng để với tới bóng, (2) khống chế volley, (3) bước gạt chéo để phục hồi. Di chuyển ngang nhanh chóng và phục hồi là chìa khóa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

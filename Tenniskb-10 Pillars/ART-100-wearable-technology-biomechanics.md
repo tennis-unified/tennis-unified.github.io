@@ -56,3 +56,10 @@ Wearable technology—including inertial measurement units (IMUs), GPS trackers,
 
 ## Practical Application: "The Wearable Routine"
 Incorporate wearable technology into your training: (1) Use an IMU on your racket to track your racket head speed during practice sessions. (2) Use a GPS tracker to monitor your movement load during matches. (3) Use pressure-sensing insoles to analyze your footwork patterns. The data from these devices provides objective feedback that can guide your training and accelerate your development. Wearable technology democratizes access to biomechanical data that was once available only in elite laboratories.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+<!-- TAICHIKB-CROSSREF-END -->

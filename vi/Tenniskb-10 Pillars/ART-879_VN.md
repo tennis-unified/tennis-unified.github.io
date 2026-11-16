@@ -166,3 +166,10 @@ Liệu pháp chênh lệch luân phiên giữa nước nóng và nước lạnh,
 | Phục hồi chậm giữa các trận | Giao thức phục hồi không đủ | Mệt mỏi tích lũy | Liệu pháp chênh lệch; ngâm nước lạnh; liệu pháp nhiệt |
 | Co thắt cơ | Mất cân bằng điện giải, sử dụng quá mức | Đau, giảm hiệu suất | Liệu pháp nhiệt; massage; thay thế điện giải |
 | Lưu thông kém | Lối sống ít vận động, phục hồi không đủ | Lành chậm, cứng | Liệu pháp chênh lệch; phục hồi tích cực; di chuyển |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+<!-- TAICHIKB-CROSSREF-END -->

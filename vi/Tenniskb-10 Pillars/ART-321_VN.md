@@ -58,3 +58,10 @@ Kích hoạt cổ tay đỉnh điểm xảy ra ở khoảng 220 đến 250 mili-
 ## Ứng Dụng Thực Tiễn: "Sóng Cơ Bắp"
 
 Luyện tập đánh bóng bóng ma với tốc độ chậm cực độ, chủ động kích hoạt từng nhóm cơ theo trình tự. Bắt đầu bằng cách đẩy bàn tay xuống mặt đất, cảm nhận hông xoay, rồi thân, rồi vai, rồi cánh tay, rồi cổ tay. Ở tốc độ tối đa, trình tự này diễn ra trong 0,2 đến 0,3 giây, nhưng luyện tập chận giúp ghi nhớ đúng thứ tự kích hoạt và cảm giác năng lượng chảy từ mặt đất qua từng bộ phận đến đầu vợt.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Hệ cơ: nhóm cơ chủ vận và ổn định*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Cơ học co cơ: lệch tâm/đồng tâm và lực–vận tốc*
+<!-- TAICHIKB-CROSSREF-END -->

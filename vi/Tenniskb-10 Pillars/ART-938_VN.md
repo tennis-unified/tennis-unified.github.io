@@ -118,3 +118,10 @@ Giãn cơ PNF (kích thích thần kinh cơ tiếp nhận thụ cảm) là phư�
 3. **Chuyển động đặc thù tennis** (2 phút): Bước chạy, bước ngang và tăng tốc ngắn ở mức 70-80% nỗ lực.
 
 Thói quen này tăng lưu thông máu, nâng nhiệt độ cơ, kích hoạt hệ thần kinh và chuẩn bị các khớp cho toàn bộ phạm vi vận động cần thiết trong một trận đấu. Nó không phải là tùy chọn. Những người chơi di chuyển trơn tru, giao bóng tự do và phục hồi tốt giữa các điểm gần như luôn là những người chuẩn bị cơ thể đúng cách trước khi bước lên sân.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Hệ cơ: nhóm cơ chủ vận và ổn định*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -98,3 +98,10 @@ Some players lose confidence in their serve at night because they cannot see the
 ## Practical Application: "The Light Check"
 
 During the warm-up before a night match, stand at the service line and toss the ball 20 times, focusing on tracking it against the background where serves will land. Note how the ball appears against the stands, the sky, and any other backgrounds. This visual calibration helps your brain adjust to the lighting conditions and improves toss tracking accuracy during the match.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -211,3 +211,10 @@ Total time: 15 minutes. Perform 3-4 times per week.
 | Lower back pain during serving | Poor core stability, excessive lumbar extension | Disc issues, muscle strains | Core stability program; anti-extension exercises; technique review |
 | Knee pain during jumping | Weak quadriceps, poor landing mechanics | Patellar tendinopathy | Quad strengthening; eccentric squat program; landing mechanics |
 | Ankle instability | Poor proprioception, weak stabilizers | Recurrent ankle sprains | Balance training; proprioceptive exercises; ankle strengthening |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

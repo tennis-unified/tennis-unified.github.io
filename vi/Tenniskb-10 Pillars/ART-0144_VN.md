@@ -72,3 +72,10 @@ Sự giảm tải nhận thức này không huyền bí — đó là cùng nguy�
 ## Ứng Dụng Thực Tế: "Quy Trình Pha Bóng Liên Tục"
 
 Trong buổi tập tiếp theo, thiết lập bài tập pha bóng với một quy tắc không thể thương lượng: **chân của người chơi không bao giờ được đứng im hoàn toàn khi bóng đang trong cuộc.** Người chơi có thể trượt, gõ, nhấp nhô, hoặc trôi — nhưng hai chân không thể cùng đặt xuống quá 0,3 giây. Huấn luyện viên đưa bóng ở nhịp độ vừa phải, và người chơi phải duy trì chuyển động cường độ thấp liên tục giữa các cú đánh, đến từng cú bóng với động lượng còn lại thay vì từ trạng thái đứng. Bắt đầu với mục tiêu pha bóng 5 cú và tiến lên mục tiêu 15 cú. Nếu người chơi dừng, pha bóng tính lại từ đầu. Sau 3-4 buổi, đo mức tiêu thụ oxy (hay cảm nhận sức lực) của người chơi trong pha bóng 20 cú — nó nên giảm rõ rệt khi cơ thể học cách hồi phục qua chuyển động thay vì qua đứng yên. Bài tập cũng cải thiện khả năng dự đoán, vì một cơ thể chuyển động thu thập nhiều thông tin hơn và phản ứng nhanh hơn cơ thể đứng yên. Theo thời gian, chuyển động liên tục trở thành tự động, và người chơi trải nghiệm pha bóng như một sự kiện chảy liền mạch duy nhất thay vì chuỗi các tình huống khẩn cấp rời rạc.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

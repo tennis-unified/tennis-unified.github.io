@@ -108,3 +108,10 @@ Hard courts are the most common surface on the ATP tour, hosting the majority of
 | Weak transition game | Insufficient net play practice | Lost opportunities, predictable | Transition game drills; approach shot practice |
 | Serve lacks variety | Single serve type | Opponent adjusts and returns effectively | Develop all serve types; placement practice |
 | Inconsistent groundstrokes | Poor preparation, late contact | Errors under pressure | Preparation drills; contact point consistency |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+<!-- TAICHIKB-CROSSREF-END -->

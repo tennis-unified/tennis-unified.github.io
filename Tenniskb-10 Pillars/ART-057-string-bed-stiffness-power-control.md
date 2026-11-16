@@ -43,3 +43,10 @@ String bed stiffness—the resistance of the string bed to deformation upon ball
 
 ## Practical Application: "The Tension Sweet Spot"
 Find your optimal string tension by testing different tensions in 2-3 kg increments. Start with the manufacturer's recommended tension and adjust based on your results. If you hit too long, increase tension; if you hit too short, decrease tension. If you experience arm discomfort, decrease tension or switch to a softer string material. Your tension sweet spot is where you get the best combination of power, control, and comfort for your game.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+<!-- TAICHIKB-CROSSREF-END -->

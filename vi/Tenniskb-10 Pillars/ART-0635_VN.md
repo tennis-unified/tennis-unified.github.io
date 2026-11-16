@@ -60,3 +60,10 @@ Thể lực cho lối chơi lưới là một lĩnh vực chuyên biệt, kết 
 ## Ứng Dụng Thực Tế: "Huấn Luyện Cho Những Pha Bùng Nổ"
 
 Thể lực cho lối chơi lưới là về những đợt bùng nổ ngắn — chứ không phải sức bền đường dài. Hãy luyện tập với các bài tập kiểu giãn cách mô phỏng đúng những đòi hỏi của lối chơi lưới: chuyển động bùng nổ theo sau là giai đoạn hồi phục ngắn. Bạn càng có thể lực tốt cho những đợt bùng nổ này, bạn càng có thể chơi tấn công quyết liệt hơn tại lưới.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Tập luyện plyometric và chu kỳ SSC*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -112,3 +112,10 @@ Trả bóng diễn ra quá nhanh để mắt thường nhìn thấy tất cả c
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Trả Bóng Hàng Tháng"
 Ghi hình trả bóng của bạn từ góc nhìn bên vào ngày đầu tiên của mỗi tháng. Sử dụng cùng vị trí máy, khoảng cách và cài đặt mỗi lần. So sánh video mới với video tháng trước để xác định mọi thay đổi — cả cải thiện lẫn thời hồi. Kiểm tra hàng tháng này tạo trách nhiệm và cung cấp bằng chứng khách quan về tiến trình mà cảm giác không thể cung cấp.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

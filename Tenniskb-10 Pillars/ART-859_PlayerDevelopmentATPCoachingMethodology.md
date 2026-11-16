@@ -272,3 +272,10 @@ Structure a training session to develop the player's style:
 | Player's style is easily countered | Insufficient tactical flexibility | Opponent exploits style weaknesses | Develop secondary tactical options; practice adaptation |
 | Player's strengths not maximized | Insufficient weapon development | Wasted potential, passive play | Dedicated weapon development; confidence building |
 | Player struggles against specific styles | Insufficient tactical preparation for different opponents | Lost matches to specific styles | Opponent-specific preparation; tactical flexibility training |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

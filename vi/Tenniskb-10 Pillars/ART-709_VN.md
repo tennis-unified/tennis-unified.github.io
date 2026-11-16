@@ -57,3 +57,10 @@ Một bài tập hiệu quả khác là huấn luyện nhận thức góc: đặ
 ## Ứng Dụng Thực Tế: "Vươn Lên Trên Người Lên Lưới"
 
 Để áp dụng Hình học cú lob vào trận đấu tiếp theo, hãy bắt đầu bằng cách hình dung sân như một lưới hình học trước mỗi điểm. Xác định góc lớn nhất đối thủ có thể sử dụng và chọn vị trí của mình để thu hẹp nó lại. Thực hành một khuôn mẫu hình học cụ thể mỗi buổi tập cho đến khi trở nên bản năng. Quay lại các trận đấu của mình và phân tích xem di chuyển chọn vị trí có đúng lý tưởng hình học không. Hãy nhớ: hình học sân là một kỹ năng được cải thiện qua luyện tập có chủ đích, giống như cú vung cơ bản của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

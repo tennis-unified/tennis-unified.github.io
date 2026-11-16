@@ -43,3 +43,9 @@ The amount of spin generated depends on the interaction of three factors:
 
 ## Practical Application: The "Flick" Sensation
 The feeling of generating spin is not a "push" or a "brush," but a rapid "flick" or "snap" at the point of contact. The player should feel the strings "grabbing" the ball for a fraction of a second and then "pulling" it downward. This is the physical manifestation of the snapback mechanism.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Tangential friction & contact forces*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Topspin mechanics & tangential racket-ball friction*
+<!-- TAICHIKB-CROSSREF-END -->

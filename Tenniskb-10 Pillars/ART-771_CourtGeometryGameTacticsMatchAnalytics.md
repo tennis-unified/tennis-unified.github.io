@@ -57,3 +57,10 @@ Simple tracking methods include noting Net Points Won: Measuring Transition Game
 ## Practical Application: "Net Points Win Matches"
 
 Begin tracking Net Points Won: Measuring Transition Game Success in your next five matches. Use a simple tally system on a notecard or a tennis statistics app. After each match, calculate the percentage and compare it to your target (typically 60% or above for most metrics). Identify specific situations where the metric drops (late in sets, after long rallies, under scoreboard pressure) and develop targeted practice for those scenarios. Over a season, track whether the metric improves and correlates with match wins.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+<!-- TAICHIKB-CROSSREF-END -->

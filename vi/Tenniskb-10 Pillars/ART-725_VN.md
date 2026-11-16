@@ -49,3 +49,10 @@ Một bài tập hiệu quả khác là tập nhận thức góc: đặt một c
 
 ## Ứng Dụng Thực Tế: "Sáu Hướng, Một Nhà Vô Địch"
 Để áp dụng vận động hình lục giác phủ sân tối ưu trong trận đấu tiếp theo, bắt đầu bằng cách hình dung sân như một lưới hình học trước mỗi điểm. Xác định góc lớn nhất khả dụng cho đối thủ và chọn vị trí để tối thiểu hóa nó. Tập một khuôn mẫu hình học cụ thể mỗi buổi tập cho đến khi nó trở thành bản năng. Quay video báº£n thÃ¢n chơi và phân tích xem vị trí của bạn có khớp với lý tưởng hình học không. Hãy nhớ: hình học sân là một kỹ năng được cải thiện với tập luyện có chủ đích, giống như những cú đánh của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

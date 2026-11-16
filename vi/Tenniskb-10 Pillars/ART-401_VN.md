@@ -50,3 +50,10 @@ Quần vợt hiện đại đòi hỏi chuyển đổi tay cầm nhanh chóng. N
 
 ## Ứng Dụng Thực Tế: "Thói Quen Kiểm Tra Mặt Cầm"
 Trước mỗi buổi tập, hãy dành hai phút cầm vợt trong từng tay cầm backhand trong khi nhìn vào vị trí các mặt cầm. Nhắm mắt lại và tái tạo lại từng tay cầm từ trí nhớ. Thói quen này xây dựng bản đồ xúc giác của cán vợt, cho phép thay đổi tay cầm nhanh chóng, tự tin trong thi đấu mà không cần xác nhận bằng mắt.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

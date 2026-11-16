@@ -76,3 +76,10 @@ Tổng thời gian chu kỳ cho hạ cánh-phản động yên tĩnh là 150-250
 ## Ứng Dụng Thực Tế: "Hạ Cánh Như Mèo"
 
 Hình ảnh huấn luyện hiệu quả nhất đơn: **hạ cánh như con mèo nhảy xuống từ hàng rào.** Mèo hạ cánh im lặng vì chúng sử dụng chi trước để giảm tốc mượt mà, hấp thụ va chạm qua nhiều khớp, và chuyển đổi ngay lập tức vào chuyển động tiếp theo. Tương đương trong tennis là hạ cánh lòng bàn chân trước với co mắt cá chân-gối-hông phối hợp và chuyển đổi ngay lập tức sang phản động. Ở buổi tập tiếp theo, hãy để người chơi thực hiện 10 split-step với mục tiêu duy nhất là im lặng. Không hướng, không tốc độ — chỉ im lặng. Sau đó thêm đẩy hướng trong khi duy trì hạ cánh yên tĩnh. Người chơi hạ cánh im lặng giành được 50-150 ms thời gian miễn phí trên mỗi bước — thời gian trước đó đang bị lãng phí dưới dạng âm thanh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Thăng bằng động và kiểm soát hướng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

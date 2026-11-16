@@ -162,3 +162,10 @@ Nhật ký này cung cấp một hồ sơ về hành trình đến bậc thầy 
 ## Kết Luận
 
 Bậc thầy cú giao là một hành trình, không phải điểm đến. Nó đòi hỏi tích hợp kỹ thuật, chiến thuật, kỹ năng tâm lý và thể lực thành một hệ thống thống nhất. Bằng cách theo khuôn khổ được phác thảo trong bài viết này, cầu thủ ở mọi cấp độ đều có thể phát triển các kỹ năng và tư duy cần thiết cho hiệu suất giao đỉnh cao. Cú giao là cú đánh quyết định ai kiểm soát điểm — làm chủ nó, và bạn làm chủ trận đấu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+<!-- TAICHIKB-CROSSREF-END -->

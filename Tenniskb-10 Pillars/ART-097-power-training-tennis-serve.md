@@ -38,3 +38,10 @@ The tennis serve demands the highest power output of any tennis stroke, requirin
 
 ## Practical Application: "The Serve Power Routine"
 Perform a serve-specific power routine 2-3 times per week: (1) 3 sets of 3 power cleans, (2) 3 sets of 5 box jumps, (3) 3 sets of 5 rotational medicine ball throws each side, (4) 3 sets of 5 medicine ball throws from a serve position, (5) 3 sets of 10 rapid pronation exercises. This 15-minute routine develops the specific power qualities that translate directly to increased serve velocity.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -70,3 +70,10 @@ Tập phục hồi từ lỗi cố ý. Yêu cầu huấn luyện viên đưa ra 
 
 ## Ứng Dụng Thực Tế: "Tạm Và Và Kiểm Tra"
 Trước mỗi cú đân, xây dựng một tạm dừng vi mô (50-100 ms) để xác minh rằng cú đánh bạn sắp thực hiện vẫn là cú đánh đúng. Tạm dừng này cho phép hệ thống ức chế phủ quyết một cú đánh đã lên kế hoạch nếu thông tin mới (ví dụ: quả bóng nảy bất ngờ, chuyển động đối thủ) đã đến. Tạm dừng ngắn đến mức nó không làm chậm vung vợt nhưng cung cất điểm kiểm tra quan trọng cho ra quyết định thích ứng. Tập tạm dừng này một cách có ý thức trong tập luyện cho đến khi nó trở thành một phần tự động của chuẩn bị.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -131,3 +131,10 @@ status: published
 | Cú đánh mặt đất bay xa | Không điều chỉnh đường vung cho độ cao | Lỗi không ép | Thêm topspin; điều chỉnh điểm tiếp xúc |
 | Thở nặng, mệt mỏi | Thích nghi không đủ | Giảm hiệu suất | Đến sớm; giảm cường độ; bù nước |
 | Rối loạn giấc ngủ | Ảnh hưởng độ cao đến giấc ngủ | Phục hồi kém, mệt mỏi | Cho phép thời gian thích nghi; cân nhắc hỗ trợ ngủ |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

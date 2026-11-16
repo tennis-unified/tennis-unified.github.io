@@ -44,3 +44,10 @@ The energy transfer is the process of transmitting energy from the ground to the
 
 ## Practical Application: The "Complete Forehand"
 The athlete should feel that the forehand is "complete" and integrated with the kinetic chain. The athlete should feel that the energy is flowing from the ground, through the core, and out through the racket. This is the ultimate goal of the 5-Pillar System: to create a complete, integrated athlete who performs effortlessly at their peak potential.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Forehand mechanics, racket path & topspin generation*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line elastic coiling in forehand drive*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex external-to-internal rotation in forehand*
+<!-- TAICHIKB-CROSSREF-END -->

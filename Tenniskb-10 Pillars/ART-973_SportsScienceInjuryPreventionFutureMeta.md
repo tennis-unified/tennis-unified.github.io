@@ -200,3 +200,10 @@ Wearable technology has moved from novelty to necessity in tennis, with devices 
 ## Practical Application: "Track What Matters"
 
 You do not need the most expensive wearable to benefit from tracking. Start with one metric: your morning heart rate. Measure it every morning for two weeks to establish your baseline. Then, when you see it elevated by 5+ bpm above baseline, take it as a sign to reduce training intensity that day. This single, free metric (using any heart rate monitor or even manual pulse check) can prevent overtraining and keep you healthy. As you become more sophisticated, add sleep tracking and eventually a smart racket sensor. The key is not the technology itself, but the consistent use of data to make better decisions about your body.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

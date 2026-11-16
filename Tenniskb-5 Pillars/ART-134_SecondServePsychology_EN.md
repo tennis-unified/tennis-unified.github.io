@@ -42,3 +42,10 @@ The "Yips" or second-serve anxiety is not a mechanical failure, but a neurologic
 
 ## Practical Application: "The Servant's Peace"
 The second serve is a test of trust. Trust the physics of the spin, trust the consistency of the toss, and trust the capacity of your training. Serve with a "nothing to lose" mindset.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & clutch performance*
+<!-- TAICHIKB-CROSSREF-END -->

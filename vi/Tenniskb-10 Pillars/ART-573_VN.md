@@ -90,3 +90,10 @@ Giao bóng lần hai là cơ hội tốt nhất của người trả bóng để
 
 ## Ứng Dụng Thực Tế: "Drill Tấn Công Giao Lần Hai"
 Nhờ đối tác chỉ đánh giao bóng lần hai trong khi bạn luyện tập di chuyển vào bên trong đường căn để trả bóng, sử dụng cú vung đầy đủ để đánh drive bóng, nhắm vào phía yếu của người giao bóng và nhắm sâu để giữ người giao bóng ở sâu. Theo dõi tỷ lệ thành công và hướng đến 60%+ trả bóng giao lần hai rơi trong sân.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

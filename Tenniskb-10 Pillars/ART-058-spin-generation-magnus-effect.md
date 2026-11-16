@@ -53,3 +53,10 @@ When a ball spins through the air:
 
 ## Practical Application: "The Spin Curve"
 To maximize topspin, brush up the back of the ball with a low-to-high racket path. To maximize slice, brush down the back of the ball with a high-to-low racket path. To maximize sidespin, brush across the ball laterally. The more you brush the ball (the greater the tangential component of the racket path), the more spin you generate. Use the Magnus effect to your advantage: heavy topspin for high-margin, aggressive shots; slice for defensive, low-bouncing shots; sidespin for wide angles and disruption.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -157,3 +157,10 @@ Bài tập tăng phạm vi xoay thân:
 
 ## Ứng Dụng Thực Tế: "Cái Dây Chun Xoắn"
 Cầm một dây chun giữa hai tay và xoắn nó bằng cách xoay vai trong khi giữ hông ổn định. Cảm nhận căng thẳng tăng trong dây chun — đây là năng lượng đàn hồi lưu trữ khi tách biệt hông-thân. Bây giờ thả dây chun và cảm nhận nó bật ngược — đây là hồi ph đàn hồi thúc đẩy xoay thân. Thực hành cảm giác này trong cú đánh nền: khi nạp, tập trung vào xoắn dây chun (tạo căng thẳng trong thân); khi vung về phía trước, tập trung vào thả dây chun (để căng thẳng bật ngược thân về trước). Càng nhiều căng thẳng bạn tạo khi nạp, bạn càng giải phóng nhiều sức mạnh khi vung. Để phát triển điều này, thực hiện 20 vung bóng hàng ngày tập trung vào tách biệt hông-thân tối đa khi nạp và xoay thân bung nổ khi vung. Qua thời gian, cảm giác này sẽ trở nên tự động, và cú đánh nền của bạn sẽ tăng sức mạnh mà không tăng nỗ lực cơ bắp.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và khung chậu*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

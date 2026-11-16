@@ -79,3 +79,10 @@ Nhiều vận động viên chuyên nghiệp sử dụng tư thế platform cả
 ## Ứng Dụng Thực Tế: "Thí Nghiệm Tư Thế"
 
 Dành một buổi tập giao 50 bóng bằng tư thế platform và 50 bằng pinpoint. Ghi lại tốc độ giao bóng, tỷ lệ giao bóng đầu thành công và mức thoải mái tự đánh giá cho mỗi tư thế. Dữ liệu sẽ tiết lộ tư thế nào cho kết quả tốt hơn cho cơ cấu cơ thể cụ thể của bạn. Nhiều người chơi phát hiện họ đang sử dụng một tư thế không tối ưu hóa mô hình chuyển động tự nhiên. Hãy để dữ liệu, không phải giáo điều huấn luyện, dẫn dắt sự lựa chọn của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

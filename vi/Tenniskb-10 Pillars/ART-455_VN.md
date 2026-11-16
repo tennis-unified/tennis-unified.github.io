@@ -58,3 +58,10 @@ Người chơi nên tích hợp các bài tập này vào quy trình luyện t�
 ## Ứng Dụng Thực Tế: "Đổi Hướng"
 
 Nhờ một người bạn ném bóng vào backhand của bạn. Luân phiên giữa cú vợt chéo sân và dọc sân, tập trung vào việc đổi hướng và bất ngờ đối thủ. Đếm xem bạn thắng bao nhiêu điểm với cú vợt dọc sân. Theo dõi tiến độ qua các buổi tập để đảm bảo cú vợt đang phát triển đúng hướng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

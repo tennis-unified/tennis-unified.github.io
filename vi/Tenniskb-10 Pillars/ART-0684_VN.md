@@ -43,3 +43,10 @@ Cú return tốc độ cực cao đòi hỏi volley chặn: giữ vợt phía tr
 ## Ứng Dụng Thực Tế: "Vợt Phía Trước, Chặn Bóng, Chuyển Hướng An Toàn"
 
 Khi đối mặt với cú return tốc độ cực cao: (1) giữ vợt phía trước, (2) chặn bóng, (3) chuyển hướng đến vị trí an toàn. Volley chặn là lựa chọn duy nhất của bạn trước sức mạnh tối đa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

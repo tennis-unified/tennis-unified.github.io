@@ -52,3 +52,10 @@ Trong tập luyện, thỉnh thoảng dừng lại và đánh giá trạng thái
 
 ## Ứng Dụng Thực Tế: "Thời Gian Nghỉ Si Tri Thức"
 Trong lúc đổi sân, sử dụng thời gian nghỉ si tri thức có cấu trúc: (1) đánh giá mức độ tập trung (1-10), (2) đánh giá trạng thái cảm xúc (bình tĩnh, lo lắng, thất vọng, tự tin), (3) đánh giá chất lượng quyết định (tốt, hỗn hợp, kém), và (4) đặt một mục tiêu nhận thức cụ thể cho game tiếp theo (ví dụ: "duy trì tập trung qua các rally dài" hoặc "bình tĩnh sau lỗi"). Thói quen 30 giây này giữ bạn nhận thức được trạng thái nhận thức của mình và cung cấp mục tiêu rõ ràng cho tự điều chỉnh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Chánh niệm và trạng thái dòng chảy*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

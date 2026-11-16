@@ -55,3 +55,10 @@ Người chơi nên kết hợp các bài tập này vào quy trình tập luy�
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Độ Sâu"
 Nhờ một đồng đội giao bóng về phía cánh tay đơn của bạn. Tập trả mười quả bóng giao, tập trung vào độ sâu và kiểm soát. Sau mỗi cú trả, ghi nhận xem bóng có rơi trong phạm vi 3 mét từ vạch baseline hay không. Theo dõi tiến trình qua các buổi tập để đảm bảo cú trả bóng đang phát triển độ sâu cần thiết nhằm triệt tiêu lợi thế của người giao bóng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

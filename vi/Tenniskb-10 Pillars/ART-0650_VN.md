@@ -68,3 +68,10 @@ Cú smash từ đường biên là smash mạnh nhất trong tennis, đòi hỏi
 ## Ứng Dụng Thực Tế: "Ném Toàn Phần, Quyền Lực Tối Đa"
 
 Cú smash từ đường biên là một cú ném. Sử dụng toàn bộ cơ thể — chân, hông, vai, tay, cổ tay — để tạo ra sức mạnh tối đa. Đừng vội vàng thiết lập, đừng cắt ngắn swing, và đừng kìm nén. Cú smash tũ biên là vũ khí mạnh nhất của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -44,3 +44,9 @@ Giao thức tối ưu hóa ngủ 90 phút là một cách nâng cao hơn để c
 
 ## Ứng Dụng Thực Tế: "Nhà Sản Xuất Tối Ưu Hóa Ngủ Hoàn Chỉnh"
 Vận động viên nên cảm nhận rằng họ là "hoàn chỉnh" và tích hợp với Hệ Thống 5 Cột Trụ. Vận động viên nên cảm nhận rằng các hệ thống sinh cơ học, thần kinh và chiến thuật đang hoạt động cùng nhau một cách hài hòa. Đây là mục tiêu cuối cùng của Hệ Thống 5 Cột Trụ: tạo ra một vận động viên hoàn chỉnh, tích hợp, thực hiện một cách không gắng sức ở tiềm năng đỉnh cao của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 18: Hệ Nội Tố (The Endocrine System)](https://taichikb.github.io/vi/books/tortora_ap/ch18-he-noi-to.html) — *Nhịp sinh học nội tiết (cortisol, melatonin, GH)*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Phục hồi hệ thần kinh tự chủ trong giấc ngủ sâu*
+<!-- TAICHIKB-CROSSREF-END -->

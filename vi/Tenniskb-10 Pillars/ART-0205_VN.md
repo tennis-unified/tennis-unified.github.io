@@ -59,3 +59,10 @@ Sau mỗi bài tập xác định xoáy, xác minh lời hô của bạn so vớ
 
 ## Ứng Dụng Thực Tế: "Đọc Đường May"
 Trong cú trả bóng tập luyện, tập trung duy nhất vào mô hình đường may của quả bóng trong nửa đầu quỹ đạo. Cố gắng xác định loại xoáy và tốc độ xoay gần đúng chỉ từ chuyển động đường may, bỏ qua tín hiệu quỹ đạo. Điều này cô lập và củng cố kênh nhận thức xoáy chính. Khi đọc đường may trở nên đáng tin cậy, thêm tín hiệu quỹ đạo để xây dựng hệ thống nhận thức dư thừa hoạt động ngay cả khi một kênh bị giảm bởi tốc độ hoặc ánh sáng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

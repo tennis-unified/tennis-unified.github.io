@@ -72,3 +72,10 @@ Huấn luyện tư thế bán mở bao gồm:
 ## Ứng Dụng Thực Tế: "Thiết Lập Bán Mở"
 
 Luyện tập tư thế bán mở bằng cách định vị chân ở góc 30 đến 45 độ so với vạch gầm cho forehand giữa sân. Tập trung vào cảm giác sức mạnh cân bằng — bạn cảm nhận cả lực xoáy từ hông lẫn lực tuyến tính từ truyền trọng lượng về phía trước. Sử dụng tư thế này cho cú tiến lên lưới và cú đánh chuyển tiếp giữa sân nơi bạn cần cả sức mạnh lẫn kiểm soát hướng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

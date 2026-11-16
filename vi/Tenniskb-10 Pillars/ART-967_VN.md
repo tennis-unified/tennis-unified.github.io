@@ -223,3 +223,10 @@ Nếu câu trả lời cho bất kỳ câu hỏi nào gợi ý áp lực quá m�
 ## Ứng Dụng Thực Tế: "Yêu Đứa Trẻ, Không Phải Điểm Số"
 
 Điều mạnh mẽ nhất mà phụ huynh tennis có thể cung cấp là tình yêu và hỗ trợ vô điều kiện. Hiệu suất tennis của con bạn — trận thắng, trận thua, xếp hạng, cúp — là tạm thời và cuối cùng không quan trọng so với sức khỏe tâm lý và mối quan hệ của bạn với chúng. Trước mỗi giải đấu, tự hỏi: "Tôi ở đây để hỗ trợ con mình, hay để xác nhận khoản đầu tư của mình?" Nếu câu trả lời là cái sau, hãy lùi lại, tìm hỗ trợ và tái cam kết trở thành cha mẹ mà con bạn cần, không phải người quản lý mà sự nghiệp tennis của con bạn đòi hỏi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+<!-- TAICHIKB-CROSSREF-END -->

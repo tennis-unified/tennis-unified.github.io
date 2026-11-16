@@ -78,3 +78,10 @@ Cho người chơi một hình ảnh: **hạ chân là phản xạ bạn chuẩn
 3. **Hạ chân biến hóa.** Người chơi thực hành hạ chân với tải và bề mặt biến hóa — phẳng, hơi không ổn định, với cú đẩy nhẹ — để độ lợi gamma trở nên linh hoạt. Kích hoạt trước điều chỉnh theo sự kiện, không phải thiết lập cố định.
 
 Người chơi với độ lợi gamma được điều chỉnh không đẩy mạnh hơn — họ đẩy sớm hơn, vì phản xạ đã được làm sẵn khi bàn chân chạm đất.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 4 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch04.html) — *Cơ sở thần kinh cho vận động*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

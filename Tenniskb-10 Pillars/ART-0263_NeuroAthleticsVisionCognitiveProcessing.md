@@ -67,3 +67,10 @@ While deliberate practice is focused, it should include enough variety to build 
 
 ## Practical Application: "The Deliberate Practice Plan"
 Before each practice session, write a deliberate practice plan: (1) specific goal for the session, (2) tasks designed to achieve the goal, (3) feedback mechanism, (4) success criteria. After the session, evaluate whether you achieved the goal and adjust the plan for the next session. This structured approach transforms practice from a random activity into a systematic program for improvement, ensuring that every session contributes to long-term skill development.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

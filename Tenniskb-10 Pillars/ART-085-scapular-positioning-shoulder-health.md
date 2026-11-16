@@ -61,3 +61,10 @@ The scapula (shoulder blade) serves as the stable platform from which the arm mo
 
 ## Practical Application: "The Scapular Check"
 Before serving, consciously set your scapula: pull it back and down, feeling it flatten against your ribcage. Maintain this position during the loading phase, and allow natural upward rotation during acceleration. If you feel your shoulder "riding up" or "tipping forward," you have scapular dysfunction that needs correction through targeted exercises.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+<!-- TAICHIKB-CROSSREF-END -->

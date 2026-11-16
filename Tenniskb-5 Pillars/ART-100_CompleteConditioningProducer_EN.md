@@ -42,3 +42,9 @@ This capstone article for the first 100 articles integrates all 5 Pillars into a
 
 ## Practical Application: "The Conditioning Producer"
 The complete conditioning producer doesn't just train one energy system — they develop the physical, technical, tactical, and cognitive conditioning that enables peak performance across all 5 Pillars. Train the whole athlete, not just the engine.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 16: Chương 16: Các Yếu Tố Quyết Định Sinh Lý Học Của Thành Tích Thể Thao — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch13.html) — *Mastery of physiological performance determinants*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Integrating internal energy (Qi/relaxation) with physical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

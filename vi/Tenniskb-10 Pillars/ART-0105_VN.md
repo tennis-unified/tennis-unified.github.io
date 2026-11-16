@@ -76,3 +76,10 @@ Hãy đưa người chơi một hình ảnh duy nhất: **phản xạ bắt đ�
 3. **Đầu ra nạp sẵn.** Người chơi tiền kích hoạt "lò xo" chân trong lúc split step còn trên không (xem ART-0103), để đầu ra sẵn sàng ngay khi quyết định đến. Trạng thái vận động đã "ấm" trước cả khi bóng được đánh.
 
 Người chơi bấm đồng hồ sớm không phản xạ nhanh hơn bất kỳ ai — họ đơn giản là không bao giờ mất 200 ms mà những người chờ theo bóng đang bỏ phí.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

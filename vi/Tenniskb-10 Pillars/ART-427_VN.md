@@ -65,3 +65,10 @@ Người chơi nên kết hợp các bài tập này vào quình tập luyện t
 
 ## Ứng Dụng Thực Tế: "Thang Độ Cao"
 Tập đánh slice với độ cao tăng dần: cú slice đầu tiên nên đánh trong vòng gầm lưới, cú thứ hai trong vòng gầm lưới sâu, cú thứ ba ngay trong vạch cuối sân, cú thứ tư gần vạch cuối sân. Tập trung vào kiểm soát độ cao thông qua góc mặt vợt và góc hạ xuống. Theo dõi độ chính xác qua các buổi tập để đảm bảo slice có thể được đặt chính xác.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

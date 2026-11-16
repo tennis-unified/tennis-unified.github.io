@@ -121,3 +121,10 @@ Practicing loading in different stance positions develops the ability to adapt l
 
 ## Practical Application: "The Cross-Body Load"
 The backhand loading pattern is fundamentally about creating a cross-body stretch. For a right-handed backhand, the loading phase stretches the left side of the trunk (the side that will pull the racket forward) by rotating the trunk to the right. To feel this, stand in your backhand ready position and rotate your trunk to the right as if preparing to hit. Feel the stretch along the left side of your abdomen and ribcage—this is the cross-body stretch that stores elastic energy for the forward swing. Now rotate to the left as if hitting the ball, feeling the stored energy release. Do this 10 times slowly, then 10 times at match speed. The key insight is that the backhand power comes from the cross-body stretch and its release—not from arm strength. The deeper the stretch during loading, the more powerful the release during the swing. This cross-body pattern is what gives the backhand its distinctive whip-like quality.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -38,3 +38,11 @@ Imagine your pelvis is a bowl filled with water.
 *   **PPT:** Water spills out the back.
 *   **Neutral:** The water stays level.
 The goal in tennis is to keep the "bowl" as level as possible during the load, then tilt it precisely during the snap.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 8: Hệ Xương: Bộ Xương Phụ (The Skeletal System: The Appendicular Skeleton)](https://taichikb.github.io/vi/books/tortora_ap/ch08-he-xuong-bo-xuong-phu.html) — *Pelvic girdle & sacrum*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Sacroiliac joint structure & stability*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Pelvic tilt & lumbopelvic torque*
+- [Chương 2: Cấu Trúc và Chức Năng Cơ Bản của Các Khớp Người (Basic Structure and Function of Human Joints)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch02-cau-truc-va-chuc-nang-co-ban-cua-cac-khop.html) — *Joint arthrokinematics & pelvic load transfer*
+<!-- TAICHIKB-CROSSREF-END -->

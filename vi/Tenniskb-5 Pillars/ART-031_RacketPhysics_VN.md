@@ -34,3 +34,9 @@ Một cây vợt nặng hơn (m cao hơn) truyền nhiều lực hơn, nhưng đ
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Đối Trọng" (Counter-Balance)
 Vận động viên phải cảm nhận rằng vợt là một phần kéo dài của chuỗi động học, không phải một trọng lượng bên ngoài. Nếu vợt cảm thấy "ngắt kết nối" hoặc "quá nặng", chuỗi động học không tạo ra đủ năng lượng để vượt qua swingweight, dẫn đến một cú đánh chủ yếu bằng tay và kém hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Mô-men quán tính (I = Σmr²) và lực cản quay*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Khối lượng vợt, điểm cân bằng và swingweight*
+<!-- TAICHIKB-CROSSREF-END -->

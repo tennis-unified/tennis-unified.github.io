@@ -189,3 +189,10 @@ Buổi trò chuyện có cấu trúc này xây dựng niềm tin, đảm bảo s
 | Vận động viên phòng thủ khi nhận phản hồi | Truyền đạt phản hồi quá khắc nghiệt hoặc mang tính cá nhân | Kháng cự với việc huấn luyện, tổn hại mối quan hệ | Tái cấu trúc phản hồi bằng mô hình AID; tăng tỷ lệ tích cực-so với-sửa lỗi |
 | Vận động viên che giấu vấn đề và lo lắng | Thiếu an toàn tâm lý, sợ bị phán xét | Các vấn đề không được giải quyết trở nên tồi tệ, niềm tin xói mòn | Tạo không gian giao tiếp an toàn; sử dụng buổi trò chuyện hàng tuần; thể hiện sự đồng cảm |
 | Lệch hướng về mục tiêu và cách tiếp cận | Cuộc trò chuyện đặt mục tiêu không đủ | Lãng phí thời gian tập luyện, thất vọng | Thiết lập mục tiêu rõ ràng, chung; các buổi xem lại mục tiêu định kỳ |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+<!-- TAICHIKB-CROSSREF-END -->

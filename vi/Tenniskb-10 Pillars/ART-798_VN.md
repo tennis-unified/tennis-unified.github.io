@@ -57,3 +57,10 @@ Phương pháp theo dõi đơn giản bao gồm ghi chép thống kê tỷ lệ 
 ## Ứng Dụng Thực Tế: "Tỷ Lệ Forehand/Backhand Kể Câu Chuyện Của Bạn"
 
 Bắt đầu theo dõi tỷ lệ sử dụng forehand-backhand để đo lường sự thống trị trong 5 trận đấu tiếp theo của bạn. Sử dụng hệ thống kiểm đếm đơn giản trên thẻ ghi nhớ hoặc ứng dụng thống kê quần vợt. Sau mỗi trận, tính phần trăm và so sánh với mục tiêu của bạn (thường là 60% trở lên cho hầu hết chỉ số). Xác định tình huống cụ thể mà chỉ số giảm (cuối set, sau pha bóng dài, dưới áp lực bảng điểm) và phát triển bài tập hướng đích cho những kịch bản đó. Qua một mùa giải, theo dõi xem chỉ số có cải thiện không và có tương quan với thắng trận hay không.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

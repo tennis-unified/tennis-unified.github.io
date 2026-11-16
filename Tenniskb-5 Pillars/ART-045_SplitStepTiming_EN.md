@@ -41,3 +41,10 @@ The athlete must calibrate the split step to the speed and rhythm of the opponen
 
 ## Practical Application: The "Automatic" Response
 The split step should feel automatic, not forced. It is a reflex, not a choice. The athlete should focus on the visual trigger (the opponent's racket) and allow the body to respond naturally. When calibrated correctly, the athlete will feel a "bounce" or "spring" that launches them toward the ball effortlessly.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Split-step timing window & court movement initiation*
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Plyometric neuromuscular priming & SSC*
+- [Chương 13: Tủy Sống và Dây Thần Kinh Sống (The Spinal Cord and Spinal Nerves)](https://taichikb.github.io/vi/books/tortora_ap/ch13-tuy-song-va-day-than-kinh-song.html) — *Spinal stretch reflex & rapid motor priming*
+<!-- TAICHIKB-CROSSREF-END -->

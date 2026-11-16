@@ -53,3 +53,10 @@ Use pacing, nutrition, hydration, and recovery strategies to prevent severe fati
 
 ## Practical Application: "The Fatigue Protocol"
 When you recognize that fatigue is affecting your decision-making, activate a fatigue protocol: (1) simplify your game plan to one clear tactic, (2) default to your highest-percentage shots, (3) use your pre-point routine to structure each point, (4) focus on process rather than outcome, and (5) use recovery strategies (hydration, breathing) between points. This protocol compensates for the decision-making decline that fatigue produces and maintains performance quality even when you are physically and mentally tired.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+<!-- TAICHIKB-CROSSREF-END -->

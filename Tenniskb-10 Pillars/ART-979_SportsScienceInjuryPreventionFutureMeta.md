@@ -167,3 +167,10 @@ AI-powered coaching assistants that:
 ## Practical Application: "AI as Your Assistant, Not Your Coach"
 
 Start using one AI tool to augment your tennis development. The simplest starting point is video analysis: record your practice sessions and use an app like SwingVision to track your shot count, placement, and consistency. Review the data after each session and identify one area for improvement. As you become more comfortable, add a wearable device to track recovery and readiness. Remember that AI is a tool — it provides data and insights, but the motivation, creativity, and feel for the game still come from you. Use AI to inform your decisions, not make them for you.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+<!-- TAICHIKB-CROSSREF-END -->

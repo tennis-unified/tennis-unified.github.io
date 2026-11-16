@@ -50,3 +50,10 @@ Khi đầu gối gập quá 90° dưới tải trọng nặng (đặc biệt là
 2.  Người chơi thực hiện vung vợt bóng ma.
 3.  HLV đảm bảo rằng tại đỉnh của pha nạp lực, đầu gối nằm ở góc mục tiêu (ví dụ: 30° cho cú thuận tay).
 4.  Lặp lại với các mốc khác nhau để "cảm nhận" sự khác biệt giữa 30°, 45° và 60°.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Cơ sinh học khớp gối và tải trọng bánh chè–đùi*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp gối*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Cơ tứ đầu đùi và gân kheo trong hấp thu – bật nhảy*
+<!-- TAICHIKB-CROSSREF-END -->

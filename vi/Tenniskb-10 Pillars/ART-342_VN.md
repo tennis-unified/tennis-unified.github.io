@@ -62,3 +62,10 @@ Ba yếu tố ảnh hưởng đến chất lượng của pha bắt:
 ## Ứng Dụng Thực Hành: "Cảm Giác Pha Bắt"
 
 Thực hành đánh forehand với nhận thức có ý thức về pha bắt. Tập trung vào cảm giác bóng "bị bắt" trên mắt vợt — sự nén và bật ngược ngắn ngủi. Cố gắng giảm thiểu sự giảm tốc bạn cảm nhận được bằng cách duy trì sự tăng tốc qua điểm tiếp xúc. Mục tiêu là cảm giác bóng "nhảy" khỏi vợt thay vì bị vợt "bắt" lại.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 2 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch02.html) — *Thăng bằng động và kiểm soát hướng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

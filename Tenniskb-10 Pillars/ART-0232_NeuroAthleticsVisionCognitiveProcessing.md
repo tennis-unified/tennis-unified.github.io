@@ -58,3 +58,10 @@ Mindfulness meditation trains sustained attention and the ability to notice when
 
 ## Practical Application: "The Focus Anchor"
 Develop a personal "focus anchor" a specific sensory cue that you use to re-establish focus when it drifts. For some players, the focus anchor is the sound of the ball hitting the racket. For others, it is the feel of the strings. When you notice your focus wandering, return to your anchor. This simple technique provides a rapid, reliable way to restore selective attention during competition and prevents the prolonged lapses that lead to unforced errors.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -50,3 +50,10 @@ Players should incorporate these drills into their regular practice routine, foc
 
 ## Practical Application: "The High Volley Practice"
 Stand at the net and have a partner feed high balls to your backhand side. Practice hitting ten high backhand volleys, focusing on a firm wrist, a slightly closed racket face, and a compact swing. Count how many volleys land in the court and how many penetrate the court. Track progress over sessions to ensure the high volley is developing correctly.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -150,3 +150,10 @@ These players succeeded despite being relatively young in their age groups, sugg
 ## Practical Application: "Talent Has No Birthday"
 
 The relative age effect is one of the most significant sources of inequity in youth tennis. It systematically advantages early-born players and disadvantages late-born players based on nothing more than birth date. Coaches, parents, and administrators must actively counteract this bias through maturation-aware assessment, bio-banding, extended development pathways, and deliberate attention to late-born players. The next Federer, Nadal, or Serena might be born in December — and we must ensure that their talent is recognized and developed, not overlooked by an arbitrary calendar.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -178,3 +178,10 @@ Assess the current team culture:
 | Unhealthy competition | Bullying, belittling, resentment | Toxic environment, reduced performance | Establish guidelines for healthy competition; respect emphasis |
 | No accountability | Low standards, poor effort | Reduced performance, frustration | Peer accountability; self-accountability; clear expectations |
 | Poor communication | Silence, conflict, misunderstanding | Reduced trust, team dysfunction | Open communication channels; team meetings; conflict resolution |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+<!-- TAICHIKB-CROSSREF-END -->

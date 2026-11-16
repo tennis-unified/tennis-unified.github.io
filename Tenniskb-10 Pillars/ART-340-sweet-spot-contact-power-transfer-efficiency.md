@@ -60,3 +60,10 @@ Training for sweet spot consistency involves:
 ## Practical Application: "The Sound Check"
 
 Pay attention to the sound of each contact. A sweet spot hit produces a clean, crisp "pop" with minimal vibration. An off-center hit produces a duller sound with more vibration and frame rattle. Use this auditory feedback to self-correct your contact point consistency during practice. Over time, your hand will learn to recognize the feel of sweet spot contact, allowing you to self-correct in real-time during matches.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Myofascial force transmission across segments*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -178,3 +178,10 @@ Trách nhiệm giải trình có nghĩa là mọi người đều chịu trách 
 | Cạnh tranh không lành mạnh | Bắt nạt, hạ thấy, oán giận | Môi trường độc độc, hiệu suất giảm | Thiết lập hướng dẫn cạnh tranh lành mạnh; nhấn mạnh tôn trọng |
 | Không có trách nhiệm giải trình | Tiêu chuẩn thấp, nỗ lực kém | Hiệu suất giảm, thất vọng | Trách nhiệm giải trình đồng cấp; trách nhiệm giải trình bản thân; kỳ vọng rõ ràng |
 | Giao tiếp kém | Im lặng, xung đột, hiểu lầm | Giảm tin tưởng, chức năng độc độc | Kênh giao tiếp mở; họp đội; giải quyết xung đột |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

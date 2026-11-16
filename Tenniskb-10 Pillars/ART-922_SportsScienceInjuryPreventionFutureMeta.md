@@ -52,3 +52,10 @@ If you are a young tennis player, speak up when something hurts — pain is not 
 
 ## Practical Application: "Protect the Growth, Preserve the Future"
 If you are a young tennis player, speak up when something hurts — pain is not normal and pushing through it can cause long-term damage. If you are a coach or parent, monitor training volume carefully and ensure young players have adequate rest. Limit organized tennis to 16 hours per week with at least 2 rest days. Encourage participation in multiple sports until age 14. Remember: the goal is not just winning junior tournaments but developing a healthy, durable athlete who can compete for decades. Growth plate injuries are temporary, but poor management can have lasting consequences.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

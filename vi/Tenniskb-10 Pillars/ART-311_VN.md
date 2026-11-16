@@ -52,3 +52,10 @@ Các nghiên cứu bằng tấm lực cho thấy các cú forehand đỉnh cao t
 ## Ứng Dụng Thực Tế: "Cảm Năng Lực Đẩy"
 
 Thực hành truyền trọng lượng tuyến tính và xoay kết hợp bằng cách đứng trong tư thế khép và đẩy ra từ chân sau đồng thời xoay hông hướng về mục tiêu. Cảm nhận sức đẩy về phía trước và vòng xoay hông diễn ra cùng lúc, không phải tuần tự. Tưởng tượng cơ thể như một lò xo vừa nén về phía trước và vừa mở xoắn cùng một lúc. Thao tác kép này tạo ra sức mạnh bùng nổ đặc trưng của forehand hiện đại.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên phân đoạn*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -71,3 +71,10 @@ Anti-rotation maintains balance during:
 
 ## Practical Application: "The Steady Ship"
 Imagine your body as a ship in rough seas: the waves (rotational forces) are trying to tip you over, but your ballast (anti-rotation strength) keeps you upright. During a groundstroke, the rotational forces are trying to pull you off balance, but your anti-rotation muscles keep you steady. Practice this by performing open-stance groundstrokes while consciously feeling your anti-rotation muscles working to keep you balanced. If you feel yourself tipping or losing balance, focus on activating your anti-rotation muscles (obliques, quadratus lumborum). The steadier you remain during rotation, the more accurately you'll direct the ball.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -50,3 +50,10 @@ Các vận động viên gặp khó khăn trên sân cứng thường được l
 
 ## Ứng Dụng Thực Tế: "Bài Tập Trên Sân Cứng"
 Hãy luyện tập backhand trên sân cứng, tập trung vào sự linh hoạt và lựa chọn cú đánh. Theo dõi xem bạn có thể đánh bao nhiêu loại cú đánh khác nhau và bạn được bao nhiêu điểm với mỗi loại cú. Bài tập này giúp phát triển các kỹ năng cần thiết cho việc thi đấu hiệu quả trên sân cứng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

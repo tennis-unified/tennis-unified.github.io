@@ -39,3 +39,10 @@ Kết nối mặt đất—khả năng đẩy hiệu quả vào mặt đất đ�
 
 ## Ứng Dụng Thực Tế: "Cảm Giác Mặt Đất"
 Thực hành kết nối mặt đất bằng cách thực hiện cú đánh ảo trần chân trên bề mặt cứng. Tập trung cảm nhận mặt đất qua bàn chân khi bạn nạp và đẩy. Càng cảm nhận tốt mặt đất, càng hiệu quả bạn có thể đẩy chống nó. Theo thời gian, cảm giác mặt đất này chuyển hóa thành chuyển động mạnh mẽ hơn và sản xuất cú đánh tốt hơn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Tập luyện plyometric và chu kỳ SSC*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Đường Bên: ổn định ngang và lực sang bên*
+<!-- TAICHIKB-CROSSREF-END -->

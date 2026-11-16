@@ -61,3 +61,10 @@ Players must learn to trust their intuitive responses, especially under pressure
 
 ## Practical Application: "The Gut Check"
 Before each shot, perform a quick "gut check": notice your intuitive response to the situation. If your gut says "cross-court," note it. Then, if time permits, verify with a brief analytical check: "Is cross-court the highest-percentage shot here?" If the analytical check confirms the gut, hit with confidence. If it contradicts, pause and decide which to trust. This gut check leverages the speed of System 1 while maintaining the oversight of System 2, producing decisions that are both fast and accurate.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+<!-- TAICHIKB-CROSSREF-END -->

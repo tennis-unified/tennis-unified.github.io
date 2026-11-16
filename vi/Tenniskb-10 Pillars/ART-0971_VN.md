@@ -53,3 +53,10 @@ Cùng cơ sở hạ tầng camera hiện đang cấp dữ liệu cho hệ sinh t
 ## Ứng Dụng Thực Tế: "Thách Thức Có Mục Đích"
 
 Xem mọi lần xem xét — và mọi phản hồi theo dõi — là một tài sản thông tin, không phải sự giải phóng cảm xúc. Trong thi đấu, thách thức khi bạn có thông tin thực sự: bạn thấy dấu bóng, nghe phán đoán muộn, hoặc chuyến bay bóng thực sự mâu thuẫn với phán đoán. Trong tập luyện, sử dụng công nghệ phán đoán đường biên và bản đồ điểm chạm như gương khách quan: chúng không quan tâm đến ý định của bạn, chỉ đến biên độ của bạn. Những tay vợt hưởng lợi nhiều nhất từ công nghệ điều hành là những người sử dụng nó để hiệu chỉn nhận thức của mình, không phải để thuê ngoài trách nhiệm của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

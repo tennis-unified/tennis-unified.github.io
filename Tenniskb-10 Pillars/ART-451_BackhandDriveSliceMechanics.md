@@ -55,3 +55,10 @@ Players who struggle from the baseline often benefit from drills that emphasize 
 
 ## Practical Application: "The Rally Pattern Practice"
 Have a partner feed balls to your backhand from the baseline. Practice three rally patterns: crosscourt to the open court, down the line to change direction, and inside-out to the opponent's backhand. Track how many points you win with each pattern. This drill develops the tactical awareness needed for effective baseline play.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

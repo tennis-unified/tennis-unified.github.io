@@ -96,3 +96,10 @@ Trình tự này chuẩn bị tất cả hệ thống thể chất mà không g�
 | Mệt mỏi ở set ba | Hiếu khoá chưa phát triển và phục hồi glycolytic kém | Giảm hiệu suất trong trận dài | Áp dụng huấn luyện khả năng lặp lại sprint với phục hồi không đủ |
 | Căng hamstring tái phát | Sức mạnh hamstring eccentric yếu và cơ chế giảm tốc kém | Thời gian nghỉ và giảm khả năng vận động | Thêm Nordic hamstring curls và bài tập hạ cánh giảm tốc |
 | Khó chịu vai khi giao bóng | GIRD vượt 15 độ, vận động ngực kém | Giới hạn tốc độ giao bóng và nguy cơ chấn thương | Áp dụng kéo giãn sleeper, bài tập vận động ngực và tăng cường phía sau vai |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Hệ thống năng lượng cho thể lực quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

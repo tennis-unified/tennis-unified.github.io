@@ -68,3 +68,10 @@ Việc rèn luyện bao gồm:
 ## Ứng Dụng Thực Tiễn: "Kết Nối Xoáy"
 
 Tập gác bóng xoáy và forehand topspin nặng liên tiếp (back-to-back), tập trung vào chuyển động chà xát lên trên chung của cả hai cú đánh. Lưu ý cách đường vung vợt dốc và giật cổ tay cảm giác tương đồng nhau trong cả hai cú đánh. Sử dụng gác bóng xoáy để củng cơ cơ chế xoáy, sau đó áp dụng vào forehand của bạn, tạo ra sự chuyển giao tích cực giữa hai cú đánh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

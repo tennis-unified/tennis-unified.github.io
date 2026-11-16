@@ -53,3 +53,10 @@ Trong khi thực hiện một nhiệm vộ cơ bản (ví dụ: gõ chân), tậ
 
 ## Ứng Dụng Thực Tế: "Quy Tắc Hai Cái Nhìn"
 Giới hạn bản thân chỉ với hai cái nhìn hình ảnh mỗi cú đánh: một để theo dõi quả bóng, một để kiểm tra vị trí đối thủ. Ràng buộc này ép buộc hiệu quả trong tìm kiếm hình ảnh và ngăn chặn các chuyển động mắt vô mục đích đặc trưng của người chơi mới. Trong tập luyện, cố ý hạn chế saccade của bạn vào hai cái nhìn này. Theo thời gian, não bộ của bạn học cách trích xuất thông tin tối đa từ mỗi cái nhìn, và tìm kiếm hình ảnh của bạn trở nên nhanh hơn và có mục đích hơn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -51,3 +51,10 @@ Hai quá trình lão hóa chạy song song. Mất áp suất làm giảm độ n
 ## Ứng Dụng Thực Tế: "Tôn Trọng Lon"
 
 Bóng là thiết bị duy nhất mà kỹ thuật của bạn chạm vào trên mỗi cú đánh, và nó thay đổi tính chất với áp suất, lớp nhung và thời tiết. Xây dựng hai thói quen: ghi ngày lên lon và loại bỏ chúng thành thật, và khi điều kiện thay đổi — độ cao, lạnh, độ ẩm — điều chỉnh biên độ và kỳ vọng trước khi điều chỉnh kỹ thuật. Nhà vô địch không chiến đấu với vật lý của bóng; họ đọc nó và khai thác nó.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+<!-- TAICHIKB-CROSSREF-END -->

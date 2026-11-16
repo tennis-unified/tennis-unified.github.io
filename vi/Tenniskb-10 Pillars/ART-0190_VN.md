@@ -30,3 +30,10 @@ Ba mô hình chuyển động đầu cụ thể làm giảm chất lượng chuy
 
 ## Ứng Dụng Thực Tế: "Giữ Trên Dây Giữa"
 Trong phiên tiếp theo, cho người chơi một chỉ thị: **trong mọi phục hồi, mắt bạn ở trên dây giữa lưới cho đến khi bóng rời vợt đối thủ.** Cue đơn giản này — neo nhìn — cải thiện ổn định đầu trong vài phút, vì tham chiếu thị giác cố định kích hoạt phản xạ VOR và VCR ổn định đầu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

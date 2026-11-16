@@ -52,3 +52,10 @@ However, excessive asymmetry in the split step compromises the ability to react 
 ## Practical Application: "The Bounce and Turn"
 
 Practice the split step-to-unit-turn transition by having a partner call out "go" or toss a ball at varying intervals. Each time, perform a small hop landing, and immediately begin your unit turn. Focus on the sensation of the landing energy being absorbed by your knees and then redirected into the rotational movement. Over time, you should feel no pause between landing and turning—they become a single, fluid motion.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+<!-- TAICHIKB-CROSSREF-END -->

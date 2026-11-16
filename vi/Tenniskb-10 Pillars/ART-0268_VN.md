@@ -55,3 +55,10 @@ Kỹ năng được phát triển qua CLA chuyển giao đến điều kiện tr
 
 ## Ứng Dụng Thực Tế: "Thiết Kế Ràng Buộc"
 Khi thiết kế thực hành, thao túng một ràng buộc tại một thời điểm để hướng dẫn người chơi đến kỹ năng mong muốn. Ví dụ, để phát triển chơi lưới: (1) ràng buộc nhiệm vụ bằng cách yêu cầu người chơi tiến lưới sau mỗi bóng ngắn, (2) ràng buộc môi trường bằng cách sử dụng sân nhỏ hơn thuận lợi cho chơi lưới, (3) ràng buộc người thực hiện bằng cách thực hành với đối tác thường đánh bóng ngắn. Thiết kế ràng buộc này thúc đẩy khám phá các chiến lược chơi lưới hiệu quả mà không cần hướng dẫn kỹ thuật tường minh, xây dựng kỹ năng thích ứng, có thể chuyển giao.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Truyền lực cơ–mạc xuyên phân đoạn*
+<!-- TAICHIKB-CROSSREF-END -->

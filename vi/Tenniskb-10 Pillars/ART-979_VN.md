@@ -166,3 +166,10 @@ Trợ lý huấn luyện bằng AI:
 ## Ứng Dụng Thực Tế: "AI Là Trợ Lý, Không Phải Huấn Luyện Viên Của Bạn"
 
 Bắt đầu sử dụng một công cụ AI để bổ sung phát triển quần vợt của bạn. Điểm khởi đần đơn giản nhất là phân tích video: ghi lại buổi tập của bạn và sử dụng ứng dụng như SwingVision để theo dõi số cú đánh, vị trí và tính nhất quán. Xem lại dữ liệu sau mỗi buổi tập và xác định một lĩnh vực cần cải thiện. Khi bạn thoải mái hơn, thêm thiết bị đeo để theo dõi phục hồi và sẵn sàng. Hãy nhớ rằng AI là công cụ — nó cung cấp dữ liệu và hiểu biết, nhưng động lực, sự sáng tạo và cảm giác trận vẫn đến từ bạn. Sử dụng AI để thông tin cho quyết định, không để đưa ra chúng cho bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

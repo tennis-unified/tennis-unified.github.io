@@ -36,3 +36,10 @@ Khoảng cách va chạm bóng từ cơ thể là biến số sức mạnh quan 
 
 ## Ứng Dụng Thực Tế: "Điểm Duỗi"
 Tập trung va chạm bóng ở duỗi tay hoàn toàn — tay bạn nên thẳng (nhưng không khóa) khi va chạm. Điều này tối đa hóa tay đòn và tốc độ đầu vợt. Luyện tập bằng cách nhờ đối tác đựng bóng và có ý thức duỗi tay hoàn toàn khi va chạm. Nếu bạn thấy mình vươn hoặc va chạm quá gần cơ thể, điều chỉnh vị trí hoặc timing để đánh bóng ở khoảng cách tối ưu.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Giải phẫu khớp và cơ chế vận động khớp*
+<!-- TAICHIKB-CROSSREF-END -->

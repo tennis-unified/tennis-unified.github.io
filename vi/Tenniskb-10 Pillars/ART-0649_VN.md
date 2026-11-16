@@ -64,3 +64,10 @@ Smash trong đánh đôi là nỗ lực đồng đội: một đồng đội đ�
 ## Ứng Dụng Thực Tế: "Smash Và Che Phủ"
 
 Khi đồng đội đánh smash, nhiệm vụ của bạn là che phủ. Di chuyển đến hướng trả bóng có khả năng xảy ra nhất, tiến lại gần lưới, và sẵn sàng volley bóng trả yếu. Smash chỉ là một nửa điểm — việc che phủ là một nửa còn lại.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

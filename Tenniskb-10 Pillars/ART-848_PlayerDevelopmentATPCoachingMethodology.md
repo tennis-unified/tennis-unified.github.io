@@ -97,3 +97,10 @@ Indoor tennis presents unique environmental conditions that affect ball flight, 
 | Slow reactions to fast balls | Insufficient reaction training | Late arrivals, defensive shots | Reaction drills; progressive speed increase |
 | Lobbing too often | Outdoor habits, ceiling limitation | Lost points, wasted shots | Reduce lob frequency; use as surprise only |
 | Serve too conservative | Fear of missing, tight conditions | Weak serves, opponent attacks | Aggressive serving; trust preparation |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

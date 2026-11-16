@@ -47,3 +47,10 @@ Xếp hạng lỗi theo **tần số × chi phí**. Quy tắc cho danh sách:
 
 ## Ứng Dụng Thực Tế: "Kiểm Toán 45 Phút"
 Quay 15 phút điểm từ cạnh và phía sau ở 120 fps, nâng nếu có. Mã mười cú mỗi tình huống — bảy khung, năm số liệu — vào bảng tính. Sản xuất đúng ba lỗi xếp hạng với số liệu đi kèm ("split +180 ms trên 7/10 backhand" đánh bại "di chuyển muộn"). Gán một khối sửa chữa cho lỗi hàng đầu, lên lịch kiểm toán lại cho tuần năm trên cùng góc.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -44,3 +44,9 @@ During the 4-millisecond contact, the energy dynamics are critical:
 
 ## Practical Application: The "Pre-Set" Concept
 Because the 4-millisecond contact window is too short for conscious control, the athlete must treat the stringbed as a "pre-set" mechanism. The calibration (stiffness, gauge, tension) is selected based on the player's kinetic output, not on in-the-moment adjustments. "Calibrate the stringbed to the chain, not the other way around."
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Impact duration (Δt) & impulse calibration*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Ball-stringbed dwell time mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

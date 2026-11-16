@@ -61,3 +61,10 @@ After matches, update your declarative memory with new information. What did you
 
 ## Practical Application: "The Tactical Journal"
 Keep a tactical journal where you record: (1) opponent profiles (tendencies, strengths, weaknesses), (2) match experiences (what worked, what didn't), (3) tactical lessons (general principles learned), and (4) strategic plans (for upcoming matches). Review this journal before each match. The journal serves as an external declarative memory store, compensating for the limitations of biological memory and ensuring that your tactical knowledge is accessible when you need it most.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Tai Chi principles applied to tennis*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

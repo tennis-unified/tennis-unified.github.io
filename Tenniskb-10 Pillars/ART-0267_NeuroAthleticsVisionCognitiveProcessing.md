@@ -64,3 +64,10 @@ Coaches can observe whether skills developed in practice appear in matches. The 
 
 ## Practical Application: "The Transfer Test"
 After each practice session, ask yourself: "Did I practice anything today that I can use in a match?" If the answer is no, the practice lacked transfer. To improve transfer, add match-like conditions to your practice: play points with scoring, introduce consequences, practice against different opponents, and include pressure situations. This transfer-focused approach to practice ensures that the skills you develop in training actually appear in competition, producing the performance improvements that are the ultimate goal of practice.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Myofascial force transmission across segments*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

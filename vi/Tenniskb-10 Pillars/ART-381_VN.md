@@ -74,3 +74,10 @@ Tập huấn bao gồm:
 ## Ứng Dụng Thực Tiễn: "Thử Thách 3000 RPM"
 
 Đặt mục tiêu sản sinh 3000+ RPM trên các forehand của bạn. Sử dụng thiết bị đo spin hoặc đánh giá của huấn luyện viên để theo dõi tốc độ spin của bạn. Tập trung vào đường swing dốc, tốc độ đầu vợt cao, và phát hành lag tay hiệu quả. Khi bạn đạt 3000+ RPM một cách nhất quán, bạn đã phát triển forehand topspin nặng tương đương sản sinh cấp độ tinh hoa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

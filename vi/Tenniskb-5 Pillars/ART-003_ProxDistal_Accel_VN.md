@@ -47,3 +47,11 @@ Không tách rời được chuyển động của vai khỏi chuyển động x
 *   **Cấp độ 1:** Phóng đại trình tự. Di chuyển chân → dừng → di chuyển hông → dừng → vung tay.
 *   **Cấp độ 2:** Làm mượt các bước chuyển tiếp.
 *   **Cấp độ 3:** Tích hợp vào các cú đánh ở tốc độ thực tế.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Chuỗi động học từ gốc tới ngọn (Proximal-to-Distal)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Động học góc và gia tốc tuần tự các phân đoạn*
+- [Chương 4: Các Nguyên Lý Cơ Học (Biomechanical Principles)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch04-cac-nguyen-ly-co-hoc.html) — *Các nguyên lý cơ học và truyền mô-men xoắn*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Chuỗi động học Thái Cực: phát lực từ chân → đùi → eo → tay*
+<!-- TAICHIKB-CROSSREF-END -->

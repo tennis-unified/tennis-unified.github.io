@@ -149,3 +149,10 @@ GPS and tracking technology have transformed tennis coaching by providing object
 | Excessive training load | No load monitoring, overtraining | Fatigue, injury | GPS/load monitoring; ACWR tracking; load management |
 | Predictable shot selection | No shot analysis, habitual patterns | Opponent anticipates and counters | Racket sensor data; shot selection coaching; variation drills |
 | Low sweet spot percentage | No contact analysis, poor technique | Inconsistent shots | Racket sensor feedback; technique review; contact point drills |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+<!-- TAICHIKB-CROSSREF-END -->

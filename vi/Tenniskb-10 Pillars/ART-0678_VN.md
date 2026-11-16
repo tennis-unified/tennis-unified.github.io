@@ -43,3 +43,10 @@ Cú trả bóng drop shot đòi hỏi khả năng phục hồi nhanh chóng và 
 ## Ứng Dụng Thực Tế: "Lao Về Phía Trước Bùng Nổ, Hạ Thấp Trọng Tâm, Chạm Nhẹ Nhàng"
 
 Khi đối mặt với cú trả bóng drop shot: (1) lao về phía trước một cách bùng nổ, (2) hạ thấp trọng tâm, (3) sử dụng chạm nhẹ nhàng. Phục hồi nhanh chóng và đôi tay mềm mại là những yếu tố cốt lõi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

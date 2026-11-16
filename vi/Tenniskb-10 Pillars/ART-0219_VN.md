@@ -59,3 +59,10 @@ Tránh phân tích kỹ thuật quá mức trong khi thi đấu. Hãy tin tưở
 ## Ứng Dụng Thực Tế: "Tâm Trí Yên Tĩnh"
 
 Trong khi thi đấu, hãy nuôi dưỡng một "tâm trí yên tĩnh" - trạng thái nhận thức tập trung không kèm theo việc theo dõi kỹ thuật một cách có ý thức. Khi nhận ra bản thân đang suy nghĩ về kỹ thuật, hãy chuyển hướng chú ý sang tình huống chiến thuật hoặc chính quả bóng. Trạng thái tâm trí yên tĩnh này phản ánh hiệu quả thần kinh của trình độ chuyên môn và cho phép các kỹ năng tự động của bạn được thực thi mà không bị cản trở. Hãy luyện tập đi vào trạng thái này trong buổi tập bằng cách tập trung vào các tín hiệu bên ngoài (bóng, đối thủ, mục tiêu) thay vì các cơ chế vận động bên trong cơ thể.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Nguyên lý Thái Cực Quyền ứng dụng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

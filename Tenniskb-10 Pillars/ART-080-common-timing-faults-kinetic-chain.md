@@ -137,3 +137,10 @@ Perform shadow swings while consciously feeling each segment:
 
 ## Practical Application: "The Metronome Drill"
 Imagine a metronome ticking at the rhythm of your kinetic chain: tick (legs) → tick (hips) → tick (trunk) → tick (shoulder) → tick (arm) → tick (racket). Each segment fires on its tick, in sequence. Practice this by performing a shadow swing while counting aloud: "Legs—hips—trunk—shoulder—arm—racket!" Each word corresponds to a segment activation. Start slowly, then gradually increase speed while maintaining the sequence. When you can perform the sequence automatically at full speed, your timing is correct. If you lose the sequence, slow down and rebuild it. This metronome drill is one of the most effective ways to develop proper kinetic chain timing.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->

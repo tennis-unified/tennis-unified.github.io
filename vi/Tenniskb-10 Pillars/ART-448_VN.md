@@ -64,3 +64,10 @@ Người chơi nên kết hợp các bài tập này vào quy trình tập luy�
 ## Ứng Dụng Thực Tế: "Bài Tập Đón Bóng Sớm"
 
 Nhờ đối tác feed bóng vào phía backhand của bạn từ trong vạch baseline. Thực hành đón mỗi quả bóng sớm nhất có thể, tập trung vào việc di chuyển về phía trước và sử dụng vung vợt gọn gàng. Đếm số cú đánh khi bóng đang bật lên bạn có thể đánh trúng sân. Theo dõi tiến trình qua các buổi tập để đảm bảo kỹ thuật đang phát triển.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

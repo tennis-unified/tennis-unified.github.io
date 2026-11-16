@@ -50,3 +50,10 @@ Hitting the ball with almost straight legs.
 2.  The player performs a shadow swing.
 3.  The coach ensures that at the peak of the load, the knee is positioned at the target angle (e.g., 30° for FH).
 4.  Repeat with different targets to "feel" the difference between 30°, 45°, and 60°.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Knee joint biomechanics & patellofemoral loading*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Knee joint (tibiofemoral & patellofemoral) anatomy*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Quadriceps and hamstring force-absorption muscles*
+<!-- TAICHIKB-CROSSREF-END -->

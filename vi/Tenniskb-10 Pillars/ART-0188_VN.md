@@ -47,3 +47,10 @@ Cung nhanh 100-300 ms đến trạng thái sẵn sàng đầy đủ dù bao ph�
 
 ## Ứng Dụng Thực Tế: "Cong Phục Hồi Của Bạn"
 Trong phiên tiếp theo, dùng bài tập cung sơn 15 phút. Đánh dấu cung tối ưu cho phục hồi forehand rộng và backhand rộng. Cho bóng hai bên và yêu cầu người chơi phục hồi dọc cung. Rồi bỏ đánh dấu và cho 10 bóng nữa — người chời tự chọn hình cung. Video phiên và so sánh cung phục hồi với đường thẳng. Sự khác biệt về định hướng hông tại giữa phục hồi thường 20-40° — ưu thế nhìn thấy được và có nghĩa.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+<!-- TAICHIKB-CROSSREF-END -->

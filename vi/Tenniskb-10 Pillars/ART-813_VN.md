@@ -205,3 +205,10 @@ Lịch tập này phát triển kỹ năng quần vợt đồng thời xây dự
 | Phát triển kỹ thuật đi vào ngõ cụt | Khối lượng tập luyện không phù hợp, chất lượng huấn luyện kém | Phát triển chững lại, nản lòng | Xem xét lại chất lượng huấn luyện; điều chỉnh khối lượng tập luyện; đảm bảo hướng dẫn phù hợp độ tuổi |
 | Kiệt sức và mất động lực | Thi đấu quá nhiều, áp lực cao, thiếu niềm vui | Bỏ chơi quần vợt | Giảm áp lực thi đấu; đưa trở lại các hoạt động vui vẻ; hỗ trợ tâm lý |
 | Lo âu khi thi đấu | Thiếu kinh nghiệm thi đấu, chỉ tập trung vào kết quả | Phong độ giải đấu kém | Tăng cơ hội đánh trận; huấn luyện tập trung vào quá trình; tập luyện kỹ năng tâm lý |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

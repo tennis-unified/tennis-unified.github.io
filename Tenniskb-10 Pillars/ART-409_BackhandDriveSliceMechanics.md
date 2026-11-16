@@ -60,3 +60,10 @@ Players who rush their recovery after a closed stance shot often find themselves
 
 ## Practical Application: "The Step-In Drill"
 Place a ball on the ground 1 meter in front of your baseline position. Practice the closed stance footwork: turn sideways, step toward the ball with your front foot, and simulate hitting a backhand drive. Focus on stepping into the ball and transferring weight to the front foot. Repeat ten times, checking that your front foot lands near the ball marker.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

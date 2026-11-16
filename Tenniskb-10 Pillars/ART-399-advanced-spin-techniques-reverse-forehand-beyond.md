@@ -75,3 +75,10 @@ Training advanced spin techniques involves:
 ## Practical Application: "The Advanced Spin Lab"
 
 Experiment with advanced spin techniques during practice, focusing on one technique at a time. Start with the reverse forehand, practicing the modified follow-through. Then try the kick forehand, focusing on the extreme steepness of the swing path. Finally, practice the inside-out curve, adding the lateral brush component. Use a spin measurement device to track the spin rates and spin axes of each technique.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+<!-- TAICHIKB-CROSSREF-END -->

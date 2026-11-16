@@ -70,3 +70,10 @@ Prioritize sleep before and during tournaments. Sleep deprivation significantly 
 
 ## Practical Application: "The Cognitive Budget"
 Treat cognitive energy like a financial budget. At the start of a match, you have a fixed amount of mental energy to spend. During low-pressure moments (e.g., routine service games, opponent's second serves), spend minimally by simplifying decisions and conserving resources. During high-pressure moments (e.g., break points, tiebreaks), spend freely by engaging full tactical processing. This budgeting approach prevents the cognitive bankruptcy that occurs when players expend maximum effort on every point, leaving nothing for the critical moments.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

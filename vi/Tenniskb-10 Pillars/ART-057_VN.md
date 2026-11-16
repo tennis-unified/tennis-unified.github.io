@@ -53,3 +53,10 @@ status: published
 
 ## Ứng Dụng Thực Tế: "Điểm Ngọt Căng Dây"
 Tìm căng dây tối ưu của bạn bằng cách thử các mức căng khác nhau cách nhau 2-3 kg. Bắt đầu từ căng dây khuyến nghị của nhà sản xuất và điều chỉnh dựa trên kết quả. Nếu bóng bay quá dài, tăng căng; nếu bóng rơi quá ngắn, giảm căng. Nếu tay khó chịu, giảm căng hoặc chuyển sang vật liệu dây mềm hơn. Điểm ngọt căng dây của bạn là nơi bạn đạt được sự kết hợp tốt nhất giữa sức mạnh, kiểm soát và thoải mái cho lối chơi của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Động lực học góc, mô-men xoắn và quán tính quay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+<!-- TAICHIKB-CROSSREF-END -->

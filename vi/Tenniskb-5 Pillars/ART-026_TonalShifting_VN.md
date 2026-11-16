@@ -31,3 +31,10 @@ Sự chuyển đổi phải xảy ra trong một cửa sổ thời gian khoảng
 
 ## Ứng Dụng Thực Tế: Cảm Giác "Cao Su Sang Thép"
 Cảm giác nên giống như một miếng cao su đột ngột biến thành thép tại thời điểm tiếp xúc. Bạn là một chiếc roi cho đến micro-giây cuối cùng, sau đó bạn trở thành một bức tường.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Mạc như một cơ quan cảm giác — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch04-mac-nhu-mot-co-quan-cam-giac.html) — *Mạc như cơ quan cảm giác và điều hòa trương lực*
+- [Chương 10: Mô Cơ (Muscular Tissue)](https://taichikb.github.io/vi/books/tortora_ap/ch10-mo-co.html) — *Trương lực cơ và huy động đơn vị vận động*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Chuyển trạng thái từ thả lỏng (Tùng) sang phát lực chắc*
+<!-- TAICHIKB-CROSSREF-END -->

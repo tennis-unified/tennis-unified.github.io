@@ -106,3 +106,10 @@ Teach players the cat analogy: a cat dropped from a height lands silently on its
 3. **Transfer.** Practice ball-of-foot landings under match-like conditions — random feeds, pressure scenarios, fatigued states. The landing quality that survives these conditions is the landing quality that will show up in matches.
 
 A player who lands on the ball of the foot does not just move faster — they move with a different quality. The first step feels like a release, not a decision. The court feels like a springboard, not a surface to fight against.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Fascial elastic energy storage & recoil*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Muscular mechanics: eccentric/concentric & force-velocity*
+<!-- TAICHIKB-CROSSREF-END -->

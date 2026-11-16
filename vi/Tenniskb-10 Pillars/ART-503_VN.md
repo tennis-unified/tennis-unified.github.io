@@ -84,3 +84,10 @@ Phát triển nhịp điệu nhất quán bằng cách đếm: "1" khi bắt đ�
 ## Ứng Dụng Thực Tế: "Mẹo Xu Đặt Lên Bóng"
 
 Đặt một đồng xu lên đường cơ sở 6 feet phía sau vị trí giao bóng thông thường của bạn. Đứng lên đồng xu và giao 50 bóng mà không nhìn xuống. Đồng xu bắt bạn phải duy trì cân bằng hoàn hảo và phân phối trọng lượng, điều này lại bắt cán tay tung bóng tìm đường nhất quán. Bài tập ràng buộc đơn giản này loại bỏ nhiều lỗi tung bóng phổ biến bằng cách giải quyết nguyên nhân gốc — cơ học thân dưới kém.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

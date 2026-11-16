@@ -139,3 +139,10 @@ Cho một người chơi thi đấu trong giải đấu với một trận mỗi
 **Bữa tối (tối)**: Cá hồi (150 g), khoai lang (200 g), salad với dầu ô liu và một bát trái cây.
 
 Kế hoạch này cung cấp khoảng 400-500 gram carbohydrate và 120-140 gram protein vào ngày thi đấu, đáp ứng nhu cầu tăng của cạnh tranh. Điều chỉnh khẩu phần dựa trên trọng lượng cơ thể (mục tiêu 6-8 g/kg carbohydrate và 1.4-1.7 g/kg protein). Chìa khóa là nhất quán — ăn cùng một cách trước mỗi trận để cơ thể thích nghi và các kho glycogen được bổ sung đáng tin cậy.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 11: Chương 11: Dinh Dưỡng và Cân Bằng Năng Lượng ở Người Vận Động — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch09.html) — *Dinh dưỡng thể thao và cân bằng năng lượng*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -72,3 +72,10 @@ Trận 3 set thắng 2 (Grand Slam, Davis Cup, Olympic) là một môn thể tha
 
 ## Ứng Dụng Thực Tế: "Vận Động Viên 4 Giờ"
 Huấn luyện cho giờ thứ 4. Phiên đánh dài (3h+). Ngày thi đấu liên tiếp. Phòng nóng. Set 5 không được thắng bởi tài năng; nó được thắng bởi sự chuẩn bị bắt đầu từ 6 tháng trước.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 16: Các Hệ Cảm Giới, Vận Động và Hợp Nhất (Sensory, Motor, and Integrative Systems)](https://taichikb.github.io/vi/books/tortora_ap/ch16-cac-he-cam-gioi-van-dong-va-hop-nhat.html) — *Tích hợp cảm giác–vận động và điều phối*
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Hệ thống năng lượng cho thể lực quần vợt*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

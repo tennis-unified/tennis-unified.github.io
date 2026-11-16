@@ -194,3 +194,10 @@ Sử dụng mẫu rà soát sau trận tiêu chuẩn để đảm bảo phân t�
 | Tỷ lệ chuyển đổi điểm break dưới 30% | Hung dũng trả bóng kém, trả bóng hai yếu | Mất game trả bóng giao | Bài tập tấn công giao bóng hai; mô phỏng điểm break |
 | Lỗi không ép cao trong lập điểm dài | Lựa chọn cú kém dưới mệt mỏi, thể lực không đủ | Mất điểm kéo dài | Thể lực độ dài lập điểm; bài tập lựa chọn cú |
 | Hiệu quả chơi lưới dưới 55% | Cú tiếp cận yếu, kỹ thuật vô lê kém | Tiếp cận lưới thất bại, cơ hội lãng phí | Bài tập cú tiếp cận; thực hành vô lê; công việc chuyển đổi lưới |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

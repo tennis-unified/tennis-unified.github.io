@@ -31,3 +31,11 @@ The sum of these three lags is what creates the world-class "whip" seen in the p
 
 ## Practical Application: The "Elastic Band" Sensation
 The feeling should be that your arm is an elastic band attached to your chest. As you turn, the band stretches. When you hit, the band snaps. If the arm feels "attached" like a piece of wood, you are coupled.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic rhythm*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Scapular kinematics & thoracic mobility*
+- [Chương 8: Hệ Xương: Bộ Xương Phụ (The Skeletal System: The Appendicular Skeleton)](https://taichikb.github.io/vi/books/tortora_ap/ch08-he-xuong-bo-xuong-phu.html) — *Scapula & clavicle anatomy*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Scapular stabilizers (trapezius, serratus anterior, rhomboids)*
+<!-- TAICHIKB-CROSSREF-END -->

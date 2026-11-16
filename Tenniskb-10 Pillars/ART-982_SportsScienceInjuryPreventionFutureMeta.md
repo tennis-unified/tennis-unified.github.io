@@ -174,3 +174,10 @@ Musculoskeletal models can be personalized to individual players:
 ## Practical Application: "Know Your Load"
 
 While most players do not have access to motion capture and musculoskeletal modeling, the principles are universally applicable: Your serve should feel like a coordinated whole-body movement, not an arm-dominant motion. If you feel stress in your shoulder, elbow, or back during serving, it is a signal that some part of your kinetic chain is not contributing adequately. Focus on pushing harder with the ground (leg drive), rotating your trunk more aggressively, and ensuring a complete follow-through. These adjustments, grounded in biomechanical modeling research, will reduce your joint loads while increasing your serve speed.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

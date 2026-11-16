@@ -63,3 +63,10 @@ Lời nói với bản thân hiệu quả ngắn gọn và đơn giản: "quan s
 
 ## Ứng Dụng Thực Tế: "Kịch Bản Lời Nói Với Bản Thân"
 Phát triển một kịch bản lời nói với bản thân cá nhân cho các tình huống khác nhau: (1) trước điểm: "nhẹ nhàng và tích cực," (2) trong điểm: "quan sát bóng," (3) sau sai lầm: "điểm tiếp theo, thiết lập lại," (4) trong giờ nghỉ: "tôi có thể làm được." Thực hành kịch bản này trong huấn luyện cho đến khi nó trở nên tự động. Trong thi đấu, sử dụng các câu lời nói kịch bản này để duy trì đối thoại nội tâm tối ưu, bất kể tình huống. Cách tiếp cận kịch bản này về lời nói với bản thân ngăn đối thoại nội tâm tiêu cực, không hiệu quả làm suy yếu thành tích và đảm bảo tâm trí bạn luôn làm việc cho bạn, không chống lại bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

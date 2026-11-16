@@ -72,3 +72,10 @@ Smash trên đầu là cú đánh kết thúc tối thượng trong tennis, như
 ## Ứng Dụng Thực Tế: "Quăng Vợt Vào Bóng"
 
 Smash là một cú ném. Hãy hình dung việc quăng đầu vợt vào bóng với cùng chuyển động bạn sẽ dùng để ném một quả bóng chày. Chuỗi động học — chân, hông, vai, khuỷu tay, cổ tay — truyền năng lượng từ mặt đất qua cơ thể và vào trong bóng. Hãy tin tưởng vào cú ném.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

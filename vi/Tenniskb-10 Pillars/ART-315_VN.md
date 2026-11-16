@@ -64,3 +64,10 @@ Người chơi đỉnh cao duy trì chất lượng chuyển động ở mọi m
 ## Ứng dụng Thực tiễn: "Cú Xoay Chậm"
 
 Luyện tập xoay thân đơn vị với chuyển động chậm cực độ, dành 3 đến 4 giây cho toàn bộ vòng xoay. Tập trung vào việc cảm nhận từng giai đoạn: sự khởi phát tinh tế, sự tăng tốc đang xây dựng, sự giảm tốc khi tiếp cận tư thế set, và khoảng dừng ngắn ngủi trước khi quạt tới. Thời gian kéo dài này ghi sâu cấu trúc giai đoạn, từ đó bạn dần tăng tốc trong khi vẫn duy trì cùng một sự tiến triển.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Đường Xoắn Ốc và độ bật đàn hồi cơ–mạc*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

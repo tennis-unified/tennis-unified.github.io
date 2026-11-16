@@ -201,3 +201,10 @@ The collegiate-to-professional transition in tennis represents a unique pathway 
 | Difficulty adjusting to individual competition | Over-reliance on team support, poor self-management | Isolation, reduced performance | Develop self-coaching skills; mental performance coaching; build support network |
 | Financial stress affecting performance | Insufficient funding, poor budgeting | Reduced focus, premature exit | Seek additional funding; optimize spending; national federation support |
 | Inability to compete at Challenger level | Technical or physical gaps exposed | Demotivation, ranking decline | Targeted development program; return to Futures for confidence |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 6A: Chương 6A: Nguồn Cung Cấp Năng Lượng Cho Hoạt Động Tập Luyện — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch06.html) — *Energy systems for tennis conditioning*
+- [Chương 10: Mô Cơ (Muscular Tissue)](https://taichikb.github.io/vi/books/tortora_ap/ch10-mo-co.html) — *Muscular tissue physiology & contraction*
+<!-- TAICHIKB-CROSSREF-END -->

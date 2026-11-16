@@ -31,3 +31,10 @@ Power is not just about the *amount* of separation, but the *timing* of the clos
 
 ## Practical Application: The "Sling" Sensation
 The dynamic X-Factor should feel like a sling. The hips "pull" the shoulders, and for a split second, you feel a peak of tension across your midsection before the racket is launched.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line: diagonal hip-to-shoulder coiling*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Trunk axial separation & rotational torque*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Hip-shoulder separation in groundstrokes*
+<!-- TAICHIKB-CROSSREF-END -->

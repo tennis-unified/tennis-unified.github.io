@@ -116,3 +116,10 @@ Exercises that improve inter-segmental timing:
 
 ## Practical Application: "The Power Chain"
 Visualize your body as a chain with seven links: feet → ankles → knees → hips → trunk → shoulders → arm → racket. Each link must transfer force to the next link in sequence. If any link is weak or poorly timed, the chain breaks at that point, and the links after it receive less force. Practice this by performing a groundstroke and mentally scanning each link: Are my legs driving? Are my hips rotating? Is my trunk following? Is my shoulder rotating? Is my arm accelerating? Is my wrist firm? Any link that feels weak or out of sequence is a point of energy loss. Strengthen that link through targeted training, and the entire chain becomes more powerful. The goal is a smooth, continuous transfer of force from ground to racket, with no weak links and no timing errors. When the entire chain works in harmony, your strokes will generate maximum power with minimum effort.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+<!-- TAICHIKB-CROSSREF-END -->

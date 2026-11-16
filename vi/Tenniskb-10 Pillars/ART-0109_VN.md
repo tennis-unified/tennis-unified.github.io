@@ -87,3 +87,10 @@ Cho người chơi một hình ảnh: **khi bóng kéo bạn ra rộng, đừng 
 3. **Sự thả trực tiếp.** Trong đổ bóng trực tiếp, người chơi dùng bước thả cho bóng rộng và phục hồi phòng thủ. Huấn luyện viên quan sát nhả — thư giãn để trọng lực làm việc — và bắt — hạ chân có kiểm soát trở thành lái.
 
 Người chơi thả không chạy nhanh hơn — họ rơi nhanh hơn, và họ đến với không gian và thời gian mà người đẩy không bao giờ tìm thấy.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -39,3 +39,10 @@ Chuyển đổi từ trẻ sang chuyên nghiệp là tỷ lệ hao hụt cao nh�
 
 ## Ứng Dụng Thực Tế: "Kế Hoạch Kinh Doanh"
 Đối xử với sự nghiệp chuyên nghiệp như một startup. Vốn (tài trợ), R&D (huấn luyện), Vận Hành (lịch thi đấu/logistics), HR (đội ngũ), KPIs (xếp hạng/chỉ số). Nếu con số không khớp ở cấp ITF, chúng sẽ không khớp ở cấp Tour. Hãy sửa nền tảng.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

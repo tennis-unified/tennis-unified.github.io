@@ -99,3 +99,10 @@ Một số người chơi mất tự tin vào giao bóng vào ban đêm vì khô
 ## Ứng Dụng Thực Tế: "Kiểm Tra Ánh Sáng"
 
 Trong lúc khởi động trước trận đêm, đứng ở vạch giao bóng và tung bóng 20 lần, tập trung vào việc theo dõi bóng trước nền nơi giao bóng sẽ rơi. Ghi nhận cách bóng xuất hiện trước khán đài, bầu trời và các nền khác. Sự hiệu chỉnh thị giác này giúp não bạn thích nghi với điều kiện ánh sáng và cải thiện độ chính xác theo dõi bóng tung trong trận.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+<!-- TAICHIKB-CROSSREF-END -->

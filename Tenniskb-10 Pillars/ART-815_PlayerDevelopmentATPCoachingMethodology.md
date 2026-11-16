@@ -180,3 +180,10 @@ This efficient session covers all major movement patterns in 45 minutes.
 | Frequent shoulder injuries | Weak rotator cuff, muscle imbalances | Tendinopathy, impingement | External rotation strengthening; scapular stabilization |
 | Leg fatigue in long matches | Insufficient lower body endurance | Reduced court coverage | Squat endurance work; lactate tolerance training |
 | Limited racket head speed | Weak rotational strength, poor core stability | Passive groundstrokes | Medicine ball throws; cable woodchops; core stability program |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 6: Đường Xoắn Ốc — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch06-duong-xoan-oc.html) — *Spiral Line myofascial coiling & recoil*
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Functional movement screening & assessment*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -272,3 +272,10 @@ Cấu trúc buổi tập để phát triển lối chơi của vận động vi�
 | Lối chơi của vận động viên dễ bị đối phó | Tính linh hoạt chiến thuật không đủ | Đối thủ khai thác điểm yếu của lối chơi | Phát triển tùy chọn chiến thuật thứ hai; thực hành thích ứng |
 | Điểm mạnh của vận động viên không được tối đa hóa | Phát triển vũ khí không đủ | Tiềm năng bị lãng phí, thi đấu thụ động | Phát triển vũ khí chuyên dụng; xây dựng sự tự tin |
 | Vận động viên gặp khó khăn với lối chơi cụ thể | Chuẩn bị chiến thuật không đủ cho đối thủ khác nhau | Thua trận trước lối chơi cụ thể | Chuẩn bị riêng cho đối thủ; huấn luyện tính linh hoạt chiến thuật |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

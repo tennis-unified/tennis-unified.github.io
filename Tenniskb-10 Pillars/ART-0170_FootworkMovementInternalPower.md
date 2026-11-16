@@ -70,3 +70,10 @@ One session installs the decay curve with tape and tempo:
 4. **Stress the last rung.** Random-spin feeds — heavy topspin, slice, flat — scored only on the quality of the final plant. The funnel exists to serve that last 0.25 m, where the ball's honesty is decided.
 
 Within two or three weeks the funnel stops being a drill and becomes a habit: long where the court is empty, short where the ball is honest, and smooth everywhere in between.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Locomotion, CoM & base of support*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

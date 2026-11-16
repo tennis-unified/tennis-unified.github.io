@@ -123,3 +123,10 @@ This drill develops mental toughness under simulated competitive pressure:
 | Long error streaks after initial mistakes | Poor emotional regulation, no reset mechanism | 3-4 point losing streaks, lost sets | 15-second rule training; pre-point routine reinforcement |
 | Negative body language | Low confidence, poor self-talk | Opponent gains confidence, self-fulfilling prophecy | Body language coaching; self-talk restructuring |
 | Inability to close out matches | Outcome focus, fear of winning | Squandered leads, third-set losses | Process-focused goal setting; match-closing visualization |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+<!-- TAICHIKB-CROSSREF-END -->

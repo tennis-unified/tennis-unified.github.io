@@ -142,3 +142,10 @@ Implement a 6-week reflex priming block:
 4. **Measure.** Before and after the 6-week block, run the lateral first-step test and reactive court sprint. If first-step time has improved by 15% or more, the reflex priming has worked. If not, reassess landing quality and exercise technique before repeating the block.
 
 The goal is not to become a better jumper — it is to become a faster first stepper. The stretch reflex is the bridge between landing and launch. Train the bridge.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Plyometric training & reactive SSC*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

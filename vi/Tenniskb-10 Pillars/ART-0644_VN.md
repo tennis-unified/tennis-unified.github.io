@@ -64,3 +64,10 @@ Gió đòi hỏi sự điều chỉnh về kỹ thuật volley, vị trí đứn
 ## Ứng Dụng Thực Tế: "Tôn Trọng Cơn Gió"
 
 Trong điều kiện gió, hãy tôn trọng ảnh hưởng của gió lên quả bóng. Điều chỉnh kỹ thuật, vị trí đứng và lựa chọn cú đánh cho phù hợp. Gió khuếch đại cả những cú đánh tốt lẫn những cú đánh kém — những cú volley thận trọng và đặt điểm chính xác sẽ hiệu quả hơn những cú volley quá quyết liệt.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

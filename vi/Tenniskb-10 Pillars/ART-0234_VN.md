@@ -52,3 +52,10 @@ Thực hành các bài tập tập trung cụ thể, như đếm số cú đánh
 
 ## Ứng Dụng Thực Tế: "Nút Đặt Lại"
 Phát triển một "nút đặt lại" cá nhân một hành động cụ thể mà bạn sử dụng để khôi phục sự chú ý khi nó trôi lang. Điều này có thể là điều chỉnh dây vợt, hít thở sâu, hoặc nói một từ cụ thể. Khi bạn nhận ra sự tập trung của mình đang trôi lang, hãy kích hoạt nút đặt lại. Điều này tạo ra một phản ứng có điều kiện khôi phục nhanh chóng chú ý bền vững và ngăn chặn các đợt mất tập trung kéo dài dẫn đến suy giảm trình độ.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

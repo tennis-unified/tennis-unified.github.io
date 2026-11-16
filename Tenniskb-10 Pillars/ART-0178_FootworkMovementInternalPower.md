@@ -65,3 +65,10 @@ A daily 10-minute foot complex outperforms a weekly gym session for this tissue:
 ## Practical Application: "Find the Edge"
 
 Give the player one sensory target: **push through the inside edge and finish on the big toe.** Then verify it three ways in one session: barefoot edge calf raises against a wall (can they rise on the big-toe side 10 times cleanly?), a filmed shuffle from behind (does the pushing heel invert about 15° and hold it?), and a wear check of their current shoes (is the medial forefoot outsole worn through before the lateral?). Any failed check becomes the week's foot-complex emphasis. Players routinely find 10-20% more usable push not from stronger legs but from a foot that finally transmits the legs they already have.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 5: Đường Bên — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch05-duong-ben.html) — *Lateral Line: lateral stability & mediolateral force*
+<!-- TAICHIKB-CROSSREF-END -->

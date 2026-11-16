@@ -60,3 +60,10 @@ By contrast, the structure-dominant player maintains a relatively flat metabolic
 ## Practical Application: "The 70% Rule"
 
 At the next session, have the player hit 10 forehands at what they perceive as 70% effort. Measure the ball speed (radar gun or ball machine equivalent). Then have them hit 10 forehands at perceived 100% effort. The ball speed typically increases by only 10-15% while perceived effort and metabolic cost increase by 40-60%. This demonstration reveals the efficiency gap. Then instruct the player to find the 70% effort that produces 85-90% of maximum ball speed — this is their **structural pace zone**, where the kinetic chain and fascial system do the majority of the work. Train all rally balls from this zone, reserving 90-100% muscular effort for finishing shots only. Over weeks, the structural pace zone expands as the body learns to harvest more elastic energy, and the player's sustainable rally pace rises without any increase in muscular effort.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Muscular mechanics: eccentric/concentric & force-velocity*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Muscular system: prime movers & stabilizers*
+- [Chương 2: Truyền lực cơ–mạc — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch02-truyen-luc-co-mac.html) — *Myofascial force transmission across segments*
+<!-- TAICHIKB-CROSSREF-END -->

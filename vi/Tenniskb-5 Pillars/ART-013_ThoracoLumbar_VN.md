@@ -33,3 +33,10 @@ Khác với cột sống ngực, cột sống thắt lưng được thiết kế
 
 ## Ứng Dụng Thực Tế: "Lò Xo Xoắn"
 Cảm giác nên giống như việc vắt một chiếc khăn mặt. Bạn càng có thể tách biệt phần trên khỏi phần dưới mà không làm mất ổn định, bạn càng tích trữ được nhiều "thế năng" cho cú đánh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình: xoay ngực–thắt lưng*
+- [Chương 7: Hệ Xương: Bộ Xương Trục (The Skeletal System: The Axial Skeleton)](https://taichikb.github.io/vi/books/tortora_ap/ch07-he-xuong-bo-xuong-truc.html) — *Bộ xương trục: cột sống và lồng ngực*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Khớp gian đốt sống và biên độ xoay cột sống*
+<!-- TAICHIKB-CROSSREF-END -->

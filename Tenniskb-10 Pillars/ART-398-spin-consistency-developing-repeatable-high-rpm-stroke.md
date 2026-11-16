@@ -64,3 +64,10 @@ Developing spin consistency also requires a mental approach:
 ## Practical Application: "The Consistency Drill"
 
 Practice hitting 20 foreballs at a target spin rate (e.g., 3000 RPM). Use a spin measurement device to track each shot and note the variability. Aim for a standard deviation of less than 15 percent. If your variability is higher, focus on the specific mechanics that are inconsistent (swing path, racquet speed, contact point, wrist timing) and address them through targeted drills.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 11 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch11.html) — *Angular kinetics, torque & rotational inertia*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

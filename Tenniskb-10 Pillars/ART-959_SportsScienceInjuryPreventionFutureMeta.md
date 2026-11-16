@@ -156,3 +156,10 @@ Goals are not static. They should be adjusted based on:
 ## Practical Application: "Control the Controllables"
 
 The most effective tennis players focus their goal-setting energy on the aspects of performance they can control. Set outcome goals to provide direction, performance goals to measure progress, and process goals to guide daily behavior. Every morning, identify your top 2-3 process goals for that day's practice. After every match, review your process goal adherence before looking at the scoreline. Over time, process goal excellence produces performance goal achievement, which produces outcome goal realization. Control the controllables, and the results take care of themselves.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

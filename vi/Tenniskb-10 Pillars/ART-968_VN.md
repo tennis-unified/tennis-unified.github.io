@@ -220,3 +220,10 @@ Hội chứng quá tải là trạng thái không thích ứng mãn tính với 
 ## Ứng Dụng Thực Tế: "Tập Luyện Tốt Nhất Là Tập Luyện Mà Cơ Thể Có Thể Phục Hồi"
 
 Trong tennis trẻ em, tập luyện nhiều hơn không phải lúc nào cũng tốt hơn. Mục tiêu là kê đơn khối lượng tập luyện tối ưu — đủ để kích thích thích ứng, không quá nhiều đến mức quá tải khả năng phục hồi. Giám sát khối lượng tập luyện, tốc độ tăng trưởng, giấc ngủ, tâm trạng và động lực của vận động viên trẻ với cùng mức chú ý bạn dành cho kỹ thuật cú đánh của họ. Giảm tập luyện chủ động trong đợt tăng trưởng, thực hiện thời gian nghỉ bắt buộc và nhớ rằng vận động viên tập luyện bền vững trong 10 năm sẽ vượt trội hơn vận động viên tập luyện tối đa trong 3 năm trước khi kiệt sức hoặc suy sụp.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+<!-- TAICHIKB-CROSSREF-END -->

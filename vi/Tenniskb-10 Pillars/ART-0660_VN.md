@@ -52,3 +52,10 @@ Trước đấu thủ đẩy bóng: (1) tiến lên lưới thường xuyên —
 ## Ứng Dụng Thực Tế: "Đập, Thả, Lob — Lặp Lại"
 
 Trước đấu thủ đẩy bóng: (1) volley đập để tạo tốc độ, (2) volley thả nhẹ để kéo họ tiến lên, (3) volley lob để đẩy họ lùi về. Hãy đa dạng lựa chọn cú đánh và kiên nhẫn — đấu thủ đẩy bóng muốn bạn đánh lỗi. Đừng cho họ thỏa mãn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+<!-- TAICHIKB-CROSSREF-END -->

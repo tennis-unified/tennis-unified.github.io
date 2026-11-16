@@ -52,3 +52,10 @@ Elite players adjust knee flexion rapidly during their approach to the ball, arr
 ## Practical Application: "The Squat and Spring"
 
 Practice the knee flexion-extension cycle by loading into a deep squat position (holding your racquet in the set position) and then exploding upward into a forward swing. Focus on the feeling of your legs driving into the ground as you extend, and the upward surge of energy that transfers through your hips to your racquet. This exaggerated drill ingrains the leg drive sensation that should occur in every forehand, scaled to the appropriate flexion depth for the specific situation.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Biomechanics of groundstrokes (forehand & backhand)*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

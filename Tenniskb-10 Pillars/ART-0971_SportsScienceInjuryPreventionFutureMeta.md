@@ -45,3 +45,10 @@ The same camera infrastructure now feeds the broadcast and analytics ecosystem. 
 
 ## Practical Application: "Challenge With a Purpose"
 Treat every review — and every piece of tracking feedback — as an information asset, not an emotional release. In match play, challenge when you have real information: you saw the mark, heard the call late, or the ball's flight genuinely contradicts the call. In training, use line-call technology and landing-point maps as objective mirrors: they do not care about your intentions, only your margins. The players who benefit most from officiating technology are those who use it to calibrate their perception, not to outsource their accountability.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 9: Các Khớp (Joints)](https://taichikb.github.io/vi/books/tortora_ap/ch09-cac-khop.html) — *Joint anatomy & articulation mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

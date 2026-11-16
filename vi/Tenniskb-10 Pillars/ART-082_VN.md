@@ -51,3 +51,10 @@ Mô hình cú đánh ưu tiên tay—nơi tay tạo ra hầu hết tốc độ �
 
 ## Ứng Dụng Thực Tế: "Quy Tắc 70/30"
 Trong cú đánh tối ưu, phần dưới cơ thể và thân tạo ra khoảng 70% tốc độ đầu vợt, và tay tạo ra khoảng 30%. Nếu tay của bạn tạo ra hơn 30%, bạn đang ưu tiên tay. Tập trung tăng cường đóng góp của chân, hông và thân cho đến khi tỷ lệ tiến gần 70/30.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

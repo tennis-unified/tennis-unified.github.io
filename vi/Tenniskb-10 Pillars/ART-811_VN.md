@@ -157,3 +157,10 @@ Triển khai một giao thức phục hồi sau trận đấu được chuẩn h
 | Mệt mỏi ở set thứ ba trong các trận đấu diễn ra liên tiếp ngày | Ngủ không đủ, thói quen bù nước kém | Phong độ giảm sút ở những trận đấu sau | Giáo dục về vệ sinh giấc ngủ; theo dõi việc bù nước; các buổi phục hồi mang tính chiến lược |
 | Phục hồi chậm giữa các giải đấu | Thiếu các biện pháp tái tạo, chất lượng giấc ngủ kém | Chất lượng tập luyện giảm, nguy cơ kiệt sức | Giới thiệu các phương pháp phục hồi chủ động; tối ưu hóa giấc ngủ; theo dõi sức khỏe tổng thể |
 | Mức năng lượng thấp kéo dài | Dinh dưỡng kém, tập luyện quá tải, ngủ không đủ | Năng lực tập luyện giảm, mất động lực | Đánh giá dinh dưỡng; xem xét lại khối lượng tập luyện; can thiệp cải thiện chất lượng giấc ngủ |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương và thể lực cơ sinh học*
+<!-- TAICHIKB-CROSSREF-END -->

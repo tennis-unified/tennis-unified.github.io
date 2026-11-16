@@ -97,3 +97,10 @@ Exercises that train the sling as a unit:
 
 ## Practical Application: "The Front X"
 Visualize an X formed by two diagonal lines across the front of your body: one from your right shoulder to your left hip (anterior oblique sling), and one from your left shoulder to your right hip (anterior oblique sling). During the loading phase, you stretch both diagonals. During the forward swing, you release both diagonals simultaneously, stabilizing your pelvis and transferring forces to your front foot. Practice this by performing a groundstroke while consciously feeling the tension from your right shoulder to your left hip during loading, then the release from left hip to right shoulder during the swing. This front X of diagonal tension and stabilization is the essence of anterior oblique sling function in tennis.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -72,3 +72,10 @@ Sau khi đã được xác định, cửa sổ sức mạnh phải được tái
 ## Ứng Dụng Thực Tế: "Bài Tập Cửa Sổ Sức Mạnh"
 
 Dành 15 phút trong mỗi buổi tập để đánh forehand vào cửa sổ sức mạnh đã được xác định của bạn. Sử dụng một điểm quy chiếu trực quan trên sân để đánh dấu vị trí của cửa sổ. Tập trung vào cảm giác sức mạnh tối đa với sức lực tối thiểu — cảm giác bóng như "bật" ra khỏi mặt vợt. Cảm giác này chính là tín hiệu phản hồi cho biết bạn đang ở trong cửa sổ sức mạnh.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Động học tuyến tính: vận tốc, gia tốc và quỹ đạo*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+<!-- TAICHIKB-CROSSREF-END -->

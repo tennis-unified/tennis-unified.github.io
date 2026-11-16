@@ -76,3 +76,10 @@ Bài tập "Giao bình I" tập luyện giao bóng và phủ sóng với đội 
 ## Ứng Dụng Thực Tế: "Trung Tâm Đến Góc Trong Chớp Mắt"
 
 Đội hình I là về tốc độ và sự che giấu. Bắt đầu từ trung tâm, đợi cú giao bóng tiếp xúc, sau đó bùng nổ về phía của bạn. Người trả bóng không có thời gian để đọc chuyển động của bạn. Tin tưởng tín hiệu, tin tưởng đối tác, và di chuyển với sự quyết tâm.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

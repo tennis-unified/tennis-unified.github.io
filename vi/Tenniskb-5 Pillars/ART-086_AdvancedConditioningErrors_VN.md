@@ -51,3 +51,10 @@ Lỗi điều kiện nâng cao đòi hỏi một phương pháp hệ thống đ�
 
 ## Ứng Dụng Thực Tế: "Nhà Sản Xuất Điều Kiện Hoàn Chỉnh"
 Vận động viên nên cảm nhận rằng họ là "hoàn chỉnh" và tích hợp với Hệ Thống 5 Cột Trụ. Vận động viên nên cảm nhận rằng các hệ thống sinh cơ học, thần kinh và chiến thuật đang hoạt động cùng nhau một cách hài hòa. Đây là mục tiêu cuối cùng của Hệ Thống 5 Cột Trụ: tạo ra một vận động viên hoàn chỉnh, tích hợp, thực hiện một cách không gắng sức ở tiềm năng đỉnh cao của mình.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Phòng ngừa chấn thương quá tải và lỗi thể lực*
+- [Chương 28: Chương 28: Chẩn Đoán Vấn Đề, Đưa Ra Giải Pháp, và Thúc Tiến Nghiên Cứu Về Kiệt Sức Của Vận Động Viên — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch28.html) — *Chẩn đoán kiệt sức và quá tải vận động viên*
+- [Chương 5: Hệ thống vận động chức năng và các mẫu vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch05-he-thong-van-dong-chuc-nang-va-cac-mau-van-dong.html) — *Rối loạn mẫu vận động khi mệt mỏi thể lực*
+<!-- TAICHIKB-CROSSREF-END -->

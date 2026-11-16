@@ -57,3 +57,10 @@ Simple tracking methods include noting Momentum Shifts: Identifying Turning Poin
 ## Practical Application: "Catch the Wave of Momentum"
 
 Begin tracking Momentum Shifts: Identifying Turning Points in Matches in your next five matches. Use a simple tally system on a notecard or a tennis statistics app. After each match, calculate the percentage and compare it to your target (typically 60% or above for most metrics). Identify specific situations where the metric drops (late in sets, after long rallies, under scoreboard pressure) and develop targeted practice for those scenarios. Over a season, track whether the metric improves and correlates with match wins.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 10 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch10.html) — *Linear kinetics, GRF & impulse-momentum*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+<!-- TAICHIKB-CROSSREF-END -->

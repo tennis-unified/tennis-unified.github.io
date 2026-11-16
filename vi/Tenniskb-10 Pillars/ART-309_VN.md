@@ -58,3 +58,10 @@ Quá trình chuyển đổi từ bất kỳ tư thế nào sang tư thế mở n
 ## Ứng Dụng Thực Tế: "Menu Tư Thế"
 
 Trong quá trình tập luyện, cố ý chọn một tư thế cụ thể trước mỗi cú forehand. Gọi tên "mở", "trung tính" hoặc "đóng" khi bạn chuẩn bị, và thực hiện cú đánh theo tư thế đó bất kể sự thuận tiện. Việc lựa chọn có chủ đích này huấn luyện các chương trình vận động cho từng tư thế và phát triển khả năng chọn tư thế tối ưu dựa trên tình huống chiến thuật thay vì thói quen.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

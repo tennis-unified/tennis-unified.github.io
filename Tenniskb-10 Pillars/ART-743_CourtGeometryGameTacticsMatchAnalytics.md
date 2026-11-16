@@ -57,3 +57,10 @@ Players should practice Closing Tactics: Serving Out Sets and Matches in combina
 ## Practical Application: "Close It Out, Don't Blow It Out"
 
 Implement Closing Tactics: Serving Out Sets and Matches by committing to the tactic for an entire practice set. Track how many points you win using the pattern versus your default approach. If the tactic wins more than 55% of points, integrate it into your regular repertoire. If it wins less, analyze why: was it your execution, the opponent's adjustment, or poor timing? Refine the tactic based on this analysis before your next match.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Tai Chi principles applied to tennis*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines (Anterior/Posterior Oblique Slings)*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

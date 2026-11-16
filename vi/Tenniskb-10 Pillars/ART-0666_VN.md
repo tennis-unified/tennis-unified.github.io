@@ -47,3 +47,10 @@ Cú đánh tay thuận vào trong là một đường bóng bất ngờ nhắm v
 ## Ứng Dụng Thực Tế: "Giữ Thăng Bằng, Phản Ứng Nhanh"
 
 Trước cú đánh vào trong: (1) không nên dự đoán quá mức hướng bóng xuyên sân, (2) giữ thăng bằng ở vị trí trung tâm, (3) phản ứng theo hướng bóng thực tế bằng cách di chuyển ngang nhanh chóng và thực hiện volley ngắn gọn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+<!-- TAICHIKB-CROSSREF-END -->

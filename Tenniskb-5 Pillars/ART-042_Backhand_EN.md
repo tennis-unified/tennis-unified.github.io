@@ -40,3 +40,10 @@ The backhand unit turn is often deeper than the forehand turn.
 
 ## Practical Application: The "Compact" Sensation
 The two-handed backhand should feel "compact." There should be no space between the lead arm and the chest. This compactness creates a feeling of immense structural power, turning the upper body into a rigid, rotating pillar.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Two-handed backhand mechanics & trunk coiling*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines in cross-body backhand drive*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Pectoralis major, obliques & chest compression musculature*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -107,3 +107,10 @@ Sau mỗi trận đấu, ghi lại năm con số này trong sổ tay hoặc ứn
 5. Tỷ lệ phần trăm pha trả bóng hướng cắt sân
 
 Theo dõi qua 10-20 trận đấu để xác định xu hướng và điểm cần cải thiện. Sổ đơn giản này cung cấp hiểu biết hành động nhiều hơn bất kỳ lượng tập luyện chung nào vì nó tập trung huấn luyện của bạn vào điểm yếu cụ thể.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

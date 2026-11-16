@@ -195,3 +195,10 @@ A shorter version for training sessions:
 | Muscle tightness and soreness post-match | Insufficient cool-down, no stretching | Reduced recovery, next-day stiffness | Implement post-match stretching and foam rolling routine |
 | Cramping during matches | Poor hydration, insufficient warm-up | Time loss, performance decline | Pre-match hydration protocol; ensure adequate warm-up |
 | Injury during early stages of match | Insufficient warm-up, cold muscles | Injury, time loss | Extend warm-up duration; ensure full progression through all phases |
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Muscular system: prime movers & stabilizers*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 3 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch03.html) — *Muscular mechanics: eccentric/concentric & force-velocity*
+<!-- TAICHIKB-CROSSREF-END -->

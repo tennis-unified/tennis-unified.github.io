@@ -43,3 +43,10 @@ Một khi cú đánh đã được học, tránh suy nghĩ về cơ học của 
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Tự Động Hóa"
 Định kỳ đánh giá mức độ tự động hóa của từng cú đánh. Bạn có thể thực hiện nó trong khi trò chuyện không? Bạn có thể thực hiện nó trong khi nghĩ về chiến thuật không? Bạn có thể thực hiện nó dưới áp lực không? Nếu câu trả lời cho bất kỳ cái nào là "không," cú đánh đó cần thực hành thêm để đạt tự động hóa hoàn toàn. Tập trung thực hành của bạn vào các cú đánh không vượt qua kiểm tra tự động hóa, và tin tưởng vào những cái vượt qua để thực hiện mà không cần chú ý có ý thức.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+<!-- TAICHIKB-CROSSREF-END -->

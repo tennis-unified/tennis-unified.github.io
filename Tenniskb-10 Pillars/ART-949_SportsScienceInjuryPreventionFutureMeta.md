@@ -161,3 +161,10 @@ Perform this warm-up before every training session and match. It is the most evi
 **Speed (2 minutes)**: Sprint with deceleration, change of direction sprint.
 
 This program takes 20 minutes and requires no equipment. It is the single best investment a tennis player can make in their knee health. The players who move confidently, cut sharply, and land safely at 35 are the ones who warmed up properly at 20. The FIFA 11+ is not just a warm-up; it is a long-term insurance policy for your knees.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+- [Chương 22: Tập luyện plyometric: Nguyên lý cơ bản cho vận động viên thi đấu và những chiến binh Ninja hiện đại — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch22-tap-luyen-plyometric-nguyen-ly-co-ban-cho-van-dong-vien-thi-dau.html) — *Plyometric training & reactive SSC*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -52,3 +52,10 @@ Tuy nhiên, sự bất đối xứng quá mức trong bước chắn làm giảm
 ## Ứng Dụng Thực Tế: "Bật Nảy Và Xoay"
 
 Thực hành chuyển tiếp từ bước chắn sang xoay thân đơn vị bằng cách nhờ đối tác gọi "đi" hoặc ném bóng với khoảng thời gian thay đổi. Mỗi lần, thực hiện cú nhảy nhỏ đáp xuống và ngay lập tức bắt đầu xoay thân đơn vị. Tập trung vào cảm giác năng lượng đáp được hấp thụ bởi đối gối rồi được chuyển hướng sang chuyển động xoay. Theo thời gian, bạn sẽ không cảm thấy có khoảng dừng giữa lúc đáp và xoay — chúng trở thành một chuyển động đơn nhất, trong suốt.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Giải phẫu chức năng chi dưới*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

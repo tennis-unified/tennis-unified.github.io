@@ -114,3 +114,10 @@ Nghiên cứu chỉ ra mối quan hệ cụ thể giai đoạn thở và độ c
 ## Ứng Dụng Thực Tế: "Hãy Thở Trước Khi Vung Vợt"
 
 Biến việc thở thành hành động đầu tiên trong mọi quy trình giữa các point. Trước khi xử lý point trước đó, trước kên lên kế hoạch cho point tiếp theo, hãy một nhịp thở chén chủ ý. Nhịp thở đơn lẻ nắt đứt chuỗi giao cảm, chuyển hướng sự chú ý từ phản ứng cảm xúc sang nhận thức hiện tại, và chuẩn bị hệ thần kinh cho thành trình tối ưu. Những người chơi xuất sắc nhất thế giới thở có chủ đích — không phải vì họ bắt buộc, mà vì họ hiểu rằng thở có kiểm soát kiểm soát tất cả những thứ khác.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Hệ thần kinh tự chủ và cân bằng hồi phục*
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

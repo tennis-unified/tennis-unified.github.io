@@ -113,3 +113,10 @@ Tennis clubs and leagues create communities of shared interest. Research on soci
 ## Practical Application: "The Tennis Health Prescription"
 
 For maximum health benefits, follow this evidence-based tennis prescription: **Frequency** — play 3-5 times per week (mix of singles and doubles); **Intensity** — maintain heart rate at 70-85% of maximum during rallies; **Duration** — 60-90 minutes per session including warm-up and cool-down; **Variety** — include singles (higher intensity), doubles (social/cognitive), and technical practice (skill development); **Progression** — gradually increase competitive level while maintaining enjoyment. For non-players, the ideal entry point is group tennis classes at a local club — the social environment accelerates skill acquisition and establishes the community connection that sustains long-term participation. The research is unambiguous: no other common physical activity provides the combined cardiovascular, cognitive, mental, and social benefits of tennis. Whether you are 15 or 75, picking up a racket is one of the most powerful investments in your long-term health. Tennis is not just a sport — it is a medicine, and the prescription is play.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Mental focus & psychological skills in sport*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Psychological stress & competitive performance*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+<!-- TAICHIKB-CROSSREF-END -->

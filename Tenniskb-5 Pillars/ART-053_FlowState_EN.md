@@ -49,3 +49,10 @@ If any of these checks fail, the athlete uses a quick reset technique (e.g., dee
 
 ## Practical Application: The "Automatic Pilot" State
 In Flow, the athlete should feel like they are on "automatic pilot." The body knows what to do; the brain just confirms the outcome. The athlete does not think about the mechanics, the tactics, or the score. They simply focus on the ball and allow the kinetic chain to operate. This is the ultimate goal of the 5-Pillar System: to create a complete, integrated athlete who performs effortlessly at their peak potential.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 14: Chương 14: Chánh Niệm trong Hoạt Động Thể Chất — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch14.html) — *Mindfulness & flow state in athletic performance*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic equilibrium & optimal arousal zone*
+- [Thái Cực Quyền Trong Quần Vợt — Nghệ Thuật Của Sự Linh Hoạt](https://taichikb.github.io/vi/books/Thai-Cuc-Quyen-Trong-Quan-Vot/Thái%20Cực%20Quyền%20Trong%20Quần%20Vợt%20—%20Nghệ%20Thuật%20Của%20Sự%20Linh%20Hoạt.html) — *Wu-wei / effortless flow in high-level tennis*
+<!-- TAICHIKB-CROSSREF-END -->

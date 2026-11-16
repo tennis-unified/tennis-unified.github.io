@@ -144,3 +144,10 @@ Emerging research suggests that some epigenetic modifications can be passed to o
 ## Practical Application: "Your Genes Are Not Your Destiny"
 
 The most empowering insight from epigenetics is that your genetic profile is not fixed. Every tennis practice, every nutritious meal, every night of quality sleep modifies your gene expression in ways that support better performance and recovery. You are not a prisoner of your DNA — you are the programmer of your genes. Train consistently, eat well, sleep adequately, and manage stress, and your genes will respond by supporting your tennis goals. The choices you make today literally change how your body functions at the molecular level.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Volleys, net play & court movement mechanics*
+- [Chương 15: Hệ Thần Kinh Tự Chủ (The Autonomic Nervous System)](https://taichikb.github.io/vi/books/tortora_ap/ch15-he-than-kinh-tu-chu.html) — *Autonomic nervous system & recovery balance*
+- [Chương 5: Injury Prevention and Biomechanical Conditioning](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch05-injury-prevention-and-conditioning.html) — *Injury prevention & biomechanical conditioning*
+<!-- TAICHIKB-CROSSREF-END -->

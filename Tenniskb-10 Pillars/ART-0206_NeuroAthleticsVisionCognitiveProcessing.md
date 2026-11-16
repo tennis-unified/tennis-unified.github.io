@@ -58,3 +58,10 @@ Practice with a partner who deliberately varies pace without pattern. Call out "
 
 ## Practical Application: "The Pace Gauge"
 Develop an internal "pace gauge" calibrated to your own swing speed. Before each shot, estimate whether the incoming ball will arrive "early," "on time," or "late" relative to your normal swing tempo. This relative judgment is more reliable than absolute speed estimation and directly informs your preparation timing. Practice this gauge with a variety of opponents until it becomes an automatic, pre-conscious assessment.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 8 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch08.html) — *Linear kinematics: velocity, acceleration & projectile motion*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Visual pathways & vestibular equilibrium*
+<!-- TAICHIKB-CROSSREF-END -->

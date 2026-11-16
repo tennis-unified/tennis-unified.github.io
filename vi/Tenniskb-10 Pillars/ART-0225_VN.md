@@ -58,3 +58,10 @@ Tăng dần sự thoải mái với rủi ro bằng cách chấp nhận rủi ro
 
 ## Ứng Dụng Thực Tế: "Cây Nhiệt Độ Rủi Ro"
 Phát triển một "cây nhiệt độ rủi ro" nội tại từ 1 (an toàn tối đa) đến 10 (tấn công tối đa). Trước mỗi cú đánh, đánh giá tình huống và đặt nhiệt độ ở mức phù hợp. Ví dụ: giao bóng ở 30-30 có thể là 5 (rủi ro vừa), trong khi giao bóng bị break point có thể là 3 (rủi ro thấp hơn). Đánh giá rủi ro rõ ràng này ngăn chặn lựa chọn cú đánh dựa trên cảm xúc hoặc thói quen bỏ qua bối cảnh trận đấu và đảm bảo mức độ tấn công của bạn luôn được hiệu chuẩn theo tình huống.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Sàng lọc vận động — Vận Động · Hệ Thống Vận Động Chức Năng | TaichiNOW](https://taichikb.github.io/vi/books/movement_functional_movement_systems/ch04-sang-loc-van-dong.html) — *Sàng lọc và đánh giá vận động chức năng*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 29: Chương 29: Căng Thẳng Tâm Lý Và Thành Tích — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch29.html) — *Căng thẳng tâm lý và thành tích thi đấu*
+<!-- TAICHIKB-CROSSREF-END -->

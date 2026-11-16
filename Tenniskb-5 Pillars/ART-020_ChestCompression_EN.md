@@ -25,3 +25,11 @@ A common error is allowing the lead arm to swing wide or "fly away" from the bod
 
 ## Practical Application: The "Compact" Feeling
 The backhand should feel "compact." The distance between the lead arm and the chest should be near zero. If you feel a gap between your arm and your ribs, you are losing power. The feeling of "pinning" creates a sense of immense stability and power, turning the upper body into a single, powerful unit.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 4: Mặt Trước Nông — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch04-mat-truoc-nong.html) — *Superficial Front Line & anterior chest mechanics*
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Functional Lines in cross-body backhand drive*
+- [Chương 11: Hệ Cơ (The Muscular System)](https://taichikb.github.io/vi/books/tortora_ap/ch11-he-co.html) — *Pectoralis major & serratus anterior*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Backhand trunk & shoulder mechanics*
+<!-- TAICHIKB-CROSSREF-END -->

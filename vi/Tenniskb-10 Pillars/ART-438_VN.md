@@ -65,3 +65,10 @@ Người chơi nên kết hợp các bài tập này vào quy trình tập luy�
 
 ## Ứng Dụng Thực Tế: "Bài Tập Độ Thọc"
 Đặt một mục tiêu gần đường cơ sở ở phía đối thủ. Tập luyện đánh mười cú backhand đẳng cấp, tập trung tạo ra cú đánh thấy độ thọc đạt đến mục tiêu. Theo dõi có bao nhiêu cú đánh rơi vào vùng mục tiêu. Bài tập này xây dựng độ chính xác và tốc độ cần thiết cho cú backhand đẳng cấp hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -93,3 +93,10 @@ When the ball strikes the COP:
 
 ## Practical Application: "The Sweet Spot Feel"
 Develop your sweet spot awareness by bouncing balls on your racket in practice. Notice where the ball produces the cleanest "thud" with minimal vibration—that's your sweet spot. During play, aim to contact the ball at this point consistently. Over time, you'll develop an intuitive feel for the sweet spot, and your contact quality will improve dramatically. The sweet spot is your power zone—contact the ball there and you'll hit with maximum power and minimum vibration.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Arm Lines: myofascial continuity to the racket*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+<!-- TAICHIKB-CROSSREF-END -->

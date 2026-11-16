@@ -75,3 +75,10 @@ Kính râm phân cực có thể giảm chói loá nhưng có thể ảnh hưở
 
 ## Ứng Dụng Thực Tế: "Kiểm Tra Ánh Sáng"
 Trước mỗi trận đấu, thực hiện kiểm tra ánh sáng: ghi nhận vị trí mặt trời, xác định các khu vực chói loá và xác định hướng ánh sáng chủ đạo. Điều chỉnh chiến lược serve và overhead cho phù hợp (ví dụ: serve từ phía giảm thiểu phơi nắng, sử dụng tay che cho overhead). Đánh giá 30 giây này ngăn chặn các lỗi hình ảnh xảy ra khi người chơi bị ngạc nhiên bởi điều kiện ánh sáng mà họ không dự đoán trước.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Chương 14: Chương 14: Cơ Sở Phân Tử của Sự Thích Ứng Tập Luyện Trong Cơ Xương — Sách Giáo Khoa Mở Sinh Lý Học Tập Luyện | TaichiNOW](https://taichikb.github.io/vi/kinesiology/open-textbook-exercise-physiology/ch11.html) — *Thích ứng tập luyện và tái tạo mô*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

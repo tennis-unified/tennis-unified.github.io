@@ -50,3 +50,10 @@ Các bài tập nhấn mạnh việc điều chỉnh lực cầm vợt, như bà
 
 ## Ứng Dụng Thực Tế: "Nhận Diện Lỗi"
 Trong buổi tập, hãy nhờ đồng đội hoặc huấn luyện viên quan sát cú chéo tay của bạn và nhận diện bất kỳ lỗi phổ biến nào. Tập trung vào một lỗi mỗi lần, sử dụng các bài tập khắc phục để sửa lỗi đó. Theo dõi tiến độ qua các buổi tập để đảm bảo các lỗi đang được khắc phục hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 7: Đường Cánh Tay — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch07-duong-canh-tay.html) — *Các Đường Cánh Tay: liên kết cơ–mạc tới vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

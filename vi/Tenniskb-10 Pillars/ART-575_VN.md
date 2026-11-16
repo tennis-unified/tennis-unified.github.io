@@ -66,3 +66,10 @@ Tennis nam đặt ra những thách thức trả bóng độc đáo do tốc đ�
 
 ## Ứng Dụng Thực Tế: "Drill Trả Bóng Nam"
 Luyện tập trả bóng với các đặc điểm cụ thể của tennis nam: trả bóng block trên giao bóng lần một nhanh, trả bóng drive tích cực trên giao bóng lần hai, trả bóng sâu để giữ người giao bóng ở sâu và trả bóng crosscourt vào backhand. Drill này phát triển các kỹ năng cụ thể cần thiết để trả bóng trong tennis nam.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

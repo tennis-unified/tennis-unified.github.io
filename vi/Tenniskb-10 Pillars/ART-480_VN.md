@@ -45,3 +45,10 @@ Người chơi gặp khó khăn với việc chọn vị trí đứng thường 
 
 ## Ứng Dụng Thực Tế: "Bài Tập Chọn Vị Trí"
 Trong lúc tập luyện, tập trung vào việc chọn vị trí sau mỗi cú đánh. Sau cú đánh ở vạch cuối, hồi phục về trung tâm vạch cuối. Sau cú bóng ngắn, tiến lên khu vực giữa sân. Sau cú đánh tiến lên, tiến lên lưới. Theo dõi xem bạn đúng vị trí cho cú đánh tiếp theo bao nhiêu lần. Bài tập này phát triển ý thức chiến lược cần thiết cho việc chọn vị trí đứng hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+<!-- TAICHIKB-CROSSREF-END -->

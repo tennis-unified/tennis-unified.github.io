@@ -77,3 +77,10 @@ Cho người chơi một hình ảnh: **mắt tìm tín hiệu, chân đáp lạ
 3. **Kích hoạt ngẫu nhiên.** Huấn luyện viên cung cấp tín hiệu ngẫu nhiên — cú vung, cú tung, xoay vai — và người chơi đáp lại bằng bước nhảy tách. Việc ngẫu nhiên hóa ngăn dự đoán và rèn liên kết tự động.
 
 Người chơi có liên kết được rèn không phản ứng nhanh hơn — họ đơn giản không bao giờ mất 200 mà người kích hoạt trên bóng bỏ đi.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 20: Chương 20: Tập Trung Tinh Thần: Khảo Sát Việc Sử Dụng Các Kỹ Năng Tâm Lý Trong Thể Thao — Cơ Bản Về Tâm Lý Học Vận Động Và Thể Thao | TaichiNOW](https://taichikb.github.io/vi/kinesiology/essentials-exercise-sport-psychology/ch20.html) — *Tập trung tinh thần và kỹ năng tâm lý thể thao*
+- [Chương 17: Các Giác Quan Đặc Biệt (The Special Senses)](https://taichikb.github.io/vi/books/tortora_ap/ch17-cac-giac-quan-dac-biet.html) — *Thị giác và hệ tiền đình giữ thăng bằng*
+- [Cơ Sinh Học và Điều Khiển Vận Động của Dáng Đi Con Người — Chương 1 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanics-motor-control-gait/ch01.html) — *Động học bước chạy, trọng tâm và chân đế*
+<!-- TAICHIKB-CROSSREF-END -->

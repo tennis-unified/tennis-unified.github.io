@@ -102,3 +102,10 @@ Tập trả bóng từ người bạn tay trái. Tập trung vào:
 4. Sử dụng trả bóng T để triệt tiêu lợi thế cú vợt trước
 
 Sau 20-30 phút tập luyện, bạn nên cảm thấy thoải mái hơn khi trả bóng trước người phát tay trái. Tập luyện thường xuyên với người chơi tay trái phát triển kỹ năng chuyên biệt cần thiết cho những tình huống này.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Cơ sinh học cú giao bóng và đập bóng*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Phức hợp vai và cơ chế xương bả vai*
+<!-- TAICHIKB-CROSSREF-END -->

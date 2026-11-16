@@ -64,3 +64,10 @@ Người chơi nên kết hợp các bài tập này vào thói quen luyện t�
 ## Ứng Dụng Thực Tế: "Bài Tập Xéo Sân"
 
 Nhờ một đối tác đỡ – bóng cùng từ vạch baseline. Luyện đánh xéo sân với nhiều kiểu xoắn và quỹ đạo khác nhau, tập trung vào việc kiểm soát đỡ – bóng và tạo ra cơ hội. Theo dõi số điểm bạn giành được bằng các mô hình xéo sân. Bài tập này phát triển nhận thức chiến thuật cần thiết cho lối chơi xéo sân hiệu quả.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+- [Chương 10: Mô mạc trong vận động: Động lực dự trữ và hồi phục đàn hồi — Fascia in Sport and Movement | TaichiNOW](https://taichikb.github.io/vi/books/fascia_in_sport_and_movement/ch10-mo-mac-trong-van-dong-dong-luc-du-tru-va-hoi-phuc-dan-hoi.html) — *Dự trữ và hồi phục năng lượng đàn hồi mô mạc*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

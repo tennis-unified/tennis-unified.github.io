@@ -56,3 +56,10 @@ Người chơi thành thạo phát triển khả năng biến đổi quỹ đạ
 ## Ứng Dụng Thực Tiễn: "Bài Tập Hai Quỹ Đạo"
 
 Tập luyện thay phiên nhau giữa backswing vòng lặn và thẳng qua các cú đánh liên tiếp. Bắt đầu với quả bóng chậm và sử dụng vòng lặn, tập trung vào cảm giác đầu vợt chìm xuống dưới độ cao chạm trước khi nâng lên tư thế chuẩn bị. Với quả bóng tiếp theo, sử dụng quỹ đạo thẳng, giữ đầu vợt ở độ cao chạm trong suốt quỹ đạo. Sự thay phiên này phát triển các chương trình vận động cho cả hai quỹ đạo và khả năng chọn lựa quỹ đạo phù hợp dựa trên tình huống.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 8: Các Đường Chức Năng — Anatomy Trains | TaichiNOW](https://taichikb.github.io/vi/books/anatomy_trains/ch08-cac-duong-chuc-nang.html) — *Các Đường Chức Năng (Dây chéo trước/sau)*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Chương 3: Biomechanics of Groundstrokes: Modern Forehand and Backhand](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch03-groundstrokes-forehand-and-backhand.html) — *Cơ sinh học cú thuận tay và trái tay*
+<!-- TAICHIKB-CROSSREF-END -->

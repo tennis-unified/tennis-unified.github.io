@@ -68,3 +68,10 @@ Rèn luyện trễ cổ tay bao gồm:
 ## Ứng Dụng Thực Hành: "Cảm Nhận Trễ Cổ Tay"
 
 Rèn luyện trễ cổ tay bằng cách cầm vợt ở vị trí sẵn sàng với cổ tay duỗi hoàn toàn (cong ngược ra sau). Vung vợt về phía trước, cố tình duy trì sự duỗi này cho đến khoảnh khắc cuối cùng, rồi nắn cổ tay về phía trước như thể bạn đang quất một cây roi. Tập trung vào cảm nhận đầu vợt "bắt kịp" bàn tay tại thời điểm tiếp xúc. Cảm giác quật này chính là hiệu ứng bắn nỏ giúp bổ sung tốc độ đáng kể cho cú đánh forehand của bạn.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Giải phẫu chức năng chi trên*
+- [Chương 6: Khuỷu Tay Và Cẳng Tay (Elbow and Forearm)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch06-elbow-and-forearm.html) — *Khuỷu tay, sấp/ngửa cẳng tay và cổ tay*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 9 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch09.html) — *Động học góc và chuỗi động học tuần tự*
+<!-- TAICHIKB-CROSSREF-END -->

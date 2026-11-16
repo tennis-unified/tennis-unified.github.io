@@ -85,3 +85,10 @@ Chỉ Mục 200 Bài, Logic App Chẩn Đoán, Tổng Hợp Cuối Cùng, Giao T
 
 ## Ứng Dụng Thực Tế: "Người Lái Máy Bay"
 Bạn không phải hành khách trên chuyến bay trận đấu. Bạn là Người Lái. Người Quản Lý Trận Đấu là bảng đồng hồ của bạn. 5 Cột Trụ là động cơ. Nghi Thức là autopilot (tự động lái). Bản Đồ Điều Kiện là radar. Bảng Tỷ Số chỉ là đích đến — bạn lái máy bay.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Kiến Thức Liên Quan Trong TaichiKB
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Nguyên lý cơ sinh học nền tảng trong quần vợt*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Giải phẫu chức năng thân mình và lõi*
+- [Chương 4: Volleys, Net Play, and Movement Mechanics](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch04-volleys-and-movement-mechanics.html) — *Kỹ thuật lưới và cơ chế di chuyển trên sân*
+<!-- TAICHIKB-CROSSREF-END -->

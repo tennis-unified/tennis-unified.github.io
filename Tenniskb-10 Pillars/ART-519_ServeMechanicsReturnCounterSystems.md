@@ -142,3 +142,10 @@ The serve places significant stress on the shoulder and elbow. Young players sho
 ## Practical Application: "The Serve Development Checklist"
 
 Create a checklist of serve skills for each age group. Before moving a player to the next stage, ensure they can demonstrate all skills on the current checklist. This prevents gaps in development and ensures each player builds a solid mechanical foundation. For example, the Orange Ball checklist might include: "Can toss to consistent height," "Can hit serve into service box 6/10 times," "Uses continental grip," "Can identify the backscratch position."
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Chương 2: Biomechanics of the Serve and Overhead](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch02-the-serve-and-overhead.html) — *Biomechanics of the serve and overhead*
+- [Chương 5: Phức Hợp Vai (Shoulder Complex)](https://taichikb.github.io/vi/books/neumann_kinesiology/ch05-shoulder-complex.html) — *Shoulder complex & scapulothoracic mechanics*
+- [Chương 1: Foundational Biomechanical Principles in Tennis & Movement](https://taichikb.github.io/books/biomechanical_principles_of_tennis_technique/ch01-foundational-biomechanical-principles.html) — *Foundational biomechanical principles of tennis*
+<!-- TAICHIKB-CROSSREF-END -->

@@ -108,3 +108,10 @@ Drills that emphasize hip-shoulder separation—including shadow swings with a p
 
 ## Practical Application: "The Twisted Towel"
 Imagine your trunk is a towel that you twist during the loading phase and untwist during the forward swing. To feel this, stand with your feet shoulder-width apart and hold a light towel in front of you with both hands. Rotate your shoulders to one side while keeping your hips facing forward—feel the towel (your trunk) twisting and storing elastic energy. Now rotate your shoulders back to center while keeping your hips stable—feel the towel untwisting and releasing its stored energy. This is exactly what happens in your trunk during hip-shoulder separation: the loading phase twists the trunk (storing energy), and the forward swing untwists it (releasing energy). Practice this with a real towel 20 times, then without the towel but with the same feeling. When you add the ball, focus on the twisting-untwisting sensation in your trunk. The more you can twist during loading, the more energy you have to untwist during the swing—and the more powerful your strokes become.
+
+<!-- TAICHIKB-CROSSREF-START -->
+## Related Knowledge in TaichiKB
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 7 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch07.html) — *Functional anatomy of the trunk & pelvis*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 5 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch05.html) — *Functional anatomy of the upper extremity*
+- [Cơ Sở Cơ Sinh Học của Vận Động Con Người — Chương 6 | TaichiNOW](https://taichikb.github.io/vi/kinesiology/biomechanical-basis-human-movement/ch06.html) — *Functional anatomy of the lower extremity*
+<!-- TAICHIKB-CROSSREF-END -->
