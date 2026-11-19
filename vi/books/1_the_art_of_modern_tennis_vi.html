@@ -283,6 +283,8 @@ h4,.tcq-book h4{font-size:18px;margin:30px 0 8px;font-weight:600;color:var(--tcq
 .bilingual-block p.glue-caption{font-style:italic;color:var(--ink-faint);letter-spacing:.02em;}
 </style>
 <style>
+.en-heading{display:none}
+body.show-en .en-heading{display:block;font-size:.95rem;color:var(--gold);font-style:italic;margin-top:.3em}
 /* Legacy shelf compatibility: map numbered-shelf classes to the canonical tokens */
 .reader-toc{max-width:880px;margin:0 auto 44px;background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:26px 32px}
 .reader-toc .toc-title{font-size:.95rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 0 .9em;font-weight:600}
@@ -1122,7 +1124,10 @@ h2.chapter-title{font-family:var(--serif);font-size:2rem;line-height:1.25;text-a
   var links=[];
   heads.forEach(function(h){
     var a=document.createElement('a');
-    a.href='#'+h.id; a.textContent=h.textContent.trim();
+    a.href='#'+h.id;
+    var lbl=h.cloneNode(true);
+    [].slice.call(lbl.querySelectorAll('.en-heading,.lang-en')).forEach(function(e){e.remove();});
+    a.textContent=lbl.textContent.trim();
     a.addEventListener('click',function(){drawer.classList.remove('open');backdrop.classList.remove('open');});
     list.appendChild(a); links.push(a);
   });
