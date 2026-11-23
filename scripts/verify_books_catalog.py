@@ -111,8 +111,20 @@ check("mind-map work count", len(data["books"]), int(claim.group(1)) if claim el
 
 # Informational: title drift and bilingual pairing anomalies in materialised readers.
 # These are warnings, not failures -- they need editorial judgement, not a build break.
+def numeric_sequence(fragment):
+    """Extract numeric literals, normalising Vietnamese decimal commas to dots."""
+    out = []
+    for token in re.findall(r"\b\d[\d.,]*\b", fragment):
+        token = token.replace(",", ".")
+        try:
+            out.append(f"{float(token):g}")
+        except ValueError:
+            pass
+    return out
+
 title_drift = []
 pairing = []
+drift = []
 for card in vi_cards:
     reader = next((h for h in card["links"] if h.endswith("_vi.html")), None)
     if not reader:
@@ -135,12 +147,34 @@ for card in vi_cards:
         if en_blocks > 0 and unpaired > 3:
             pairing.append((reader, unpaired))
 
+        # Independent signal: in a correctly aligned pair, numeric literals on the
+        # Vietnamese and English sides normally match. Persistent disagreement is
+        # evidence of re-chunked paragraph boundaries even when every block is paired.
+        tested = identical = 0
+        for b in blocks:
+            vi_p = re.search(r'class="lang-vi"[^>]*>(.*?)</p>', b, re.S)
+            en_p = re.search(r'class="lang-en"[^>]*>(.*?)</p>', b, re.S)
+            if not (vi_p and en_p):
+                continue
+            strip = lambda s: re.sub(r"<[^>]+>", "", s)
+            vn = numeric_sequence(strip(vi_p.group(1)))
+            en = numeric_sequence(strip(en_p.group(1)))
+            if vn and en:
+                tested += 1
+                if vn == en:
+                    identical += 1
+        if tested >= 20 and identical / tested < 0.10:
+            drift.append((reader, identical, tested))
+
 print(f"INFO  reader title drift (materialised pages only): {len(title_drift)}")
 for name in title_drift[:10]:
     print("      ", name)
 print(f"INFO  readers with >3 unpaired bilingual blocks: {len(pairing)}")
 for name, count in pairing[:10]:
     print(f"       {name}: {count}")
+print(f"INFO  readers with <10% paired-number agreement: {len(drift)}")
+for name, identical, tested in drift[:10]:
+    print(f"       {name}: {identical}/{tested}")
 
 if errors:
     print(f"\n{len(errors)} FAILURES: {errors}")
