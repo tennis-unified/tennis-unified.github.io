@@ -6,6 +6,7 @@ Exits 1 on any broken local link, duplicate anchor ID, orphan cluster or count d
 Standard library only, so it can run in CI without extra dependencies.
 """
 
+import html
 import json
 import os
 import posixpath
@@ -136,6 +137,14 @@ def numeric_sequence(fragment):
             pass
     return out
 
+def title_core(value):
+    """Normalise cosmetic title differences (HTML entities, subtitles, authors)."""
+    text = html.unescape(re.sub(r"<[^>]+>", "", value))
+    text = re.sub(r"\([^)]*\)", "", text)  # catalog's English subtitle
+    text = re.split(r"[:\-–—·]", text)[0]  # subtitle/author after the first separator
+    return re.sub(r"\s+", " ", text).strip().casefold()
+
+
 title_drift = []
 pairing = []
 drift = []
@@ -150,8 +159,7 @@ for card in vi_cards:
     card_title = re.search(r"class=\"book-card-title\"[^>]*>(.*?)</h3>", card["body"], re.S)
     h1 = re.search(r"<h1\b[^>]*>(.*?)</h1>", page, re.S)
     if card_title and h1:
-        clean = lambda s: re.sub(r"<[^>]+>", "", s).replace("&amp;", "&").strip()
-        if clean(card_title.group(1)) != clean(h1.group(1)):
+        if title_core(card_title.group(1)) != title_core(h1.group(1)):
             title_drift.append(reader)
     blocks = re.findall(r"<div[^>]*class=\"[^\"]*bilingual-block[^\"]*\"[^>]*>(.*?)</div>", page, re.S)
     if blocks:
