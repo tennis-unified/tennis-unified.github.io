@@ -1,0 +1,33 @@
+name: Book Catalog Verify
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'books/**'
+      - 'vi/books/**'
+      - 'scripts/verify_books_catalog.py'
+      - '.github/workflows/book-catalog-verify.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'books/**'
+      - 'vi/books/**'
+      - 'scripts/verify_books_catalog.py'
+      - '.github/workflows/book-catalog-verify.yml'
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Verify catalog counts, anchors and local links
+        run: python scripts/verify_books_catalog.py
