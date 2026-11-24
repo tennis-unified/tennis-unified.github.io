@@ -6,6 +6,7 @@ Exits 1 on any broken local link, duplicate anchor ID, orphan cluster or count d
 Standard library only, so it can run in CI without extra dependencies.
 """
 
+import gzip
 import html
 import json
 import os
@@ -103,6 +104,10 @@ expected_locs = {
     for link in reader_links
 }
 check("VI readers missing from sitemap", len(expected_locs - set(locs)), 0)
+gz_path = os.path.join(ROOT, "vi", "sitemap.xml.gz")
+if os.path.isfile(gz_path):
+    with gzip.open(gz_path, "rt", encoding="utf-8") as f:
+        check("sitemap gzip matches XML", f.read() == sitemap, True)
 
 # --- Glossary ---
 gl_html = read(os.path.join(VI, "glossary.html"))
@@ -148,6 +153,7 @@ def title_core(value):
 title_drift = []
 pairing = []
 drift = []
+canonical_errors = []
 for card in vi_cards:
     reader = next((h for h in card["links"] if h.endswith("_vi.html")), None)
     if not reader:
@@ -156,6 +162,12 @@ for card in vi_cards:
     if not os.path.isfile(path):
         continue
     page = read(path)
+    canonical = re.search(r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']+)', page, re.I)
+    expected_canonical = "/vi/" + posixpath.normpath(posixpath.join("books", reader))
+    if not canonical:
+        canonical_errors.append((reader, "missing"))
+    elif canonical.group(1) != expected_canonical:
+        canonical_errors.append((reader, canonical.group(1)))
     card_title = re.search(r"class=\"book-card-title\"[^>]*>(.*?)</h3>", card["body"], re.S)
     h1 = re.search(r"<h1\b[^>]*>(.*?)</h1>", page, re.S)
     if card_title and h1:
@@ -187,6 +199,11 @@ for card in vi_cards:
                     identical += 1
         if tested >= 20 and identical / tested < 0.10:
             drift.append((reader, identical, tested))
+
+check("wrong or missing reader canonicals", len(canonical_errors), 0)
+if canonical_errors:
+    for name, value in canonical_errors[:10]:
+        print(f"       {name}: {value}")
 
 print(f"INFO  reader title drift (materialised pages only): {len(title_drift)}")
 for name in title_drift[:10]:
