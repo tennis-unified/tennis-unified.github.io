@@ -6,6 +6,7 @@ Exits 1 on any broken local link, duplicate anchor ID, orphan cluster or count d
 Standard library only, so it can run in CI without extra dependencies.
 """
 
+import glob
 import gzip
 import html
 import json
@@ -53,7 +54,11 @@ def local_exists(href, base=None):
     else:
         full = os.path.join(base or ROOT, path)
     if os.path.isdir(full):
-        return os.path.isfile(os.path.join(full, "index.html"))
+        index = os.path.join(full, "index.html")
+        if os.path.isfile(index):
+            return True
+        rel = os.path.relpath(index, ROOT).replace("\\", "/")
+        return rel in TRACKED
     if os.path.isfile(full):
         return True
     rel = os.path.relpath(full, ROOT).replace("\\", "/")
@@ -204,6 +209,23 @@ check("wrong or missing reader canonicals", len(canonical_errors), 0)
 if canonical_errors:
     for name, value in canonical_errors[:10]:
         print(f"       {name}: {value}")
+
+# --- Links inside readers (not just the catalog cards) ---
+reader_pages = glob.glob(os.path.join(VI, "*_vi.html"))
+reader_pages += glob.glob(os.path.join(os.path.dirname(VI), "doubles", "*_vi.html"))
+broken_reader_links = []
+for page_path in reader_pages:
+    base = os.path.dirname(page_path)
+    for url in re.findall(r'(?:href|src)="([^"]+)"', read(page_path)):
+        if not url or url.startswith(("#", "http://", "https://", "mailto:", "data:", "javascript:", "tel:")):
+            continue
+        path = url.split("#", 1)[0].split("?", 1)[0]
+        if path and not local_exists(path, base):
+            broken_reader_links.append((os.path.relpath(page_path, ROOT), url))
+check("broken links in VI readers", len(broken_reader_links), 0)
+if broken_reader_links:
+    for name, url in broken_reader_links[:10]:
+        print(f"       {name}: {url}")
 
 print(f"INFO  reader title drift (materialised pages only): {len(title_drift)}")
 for name in title_drift[:10]:
