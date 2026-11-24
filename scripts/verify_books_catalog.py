@@ -8,6 +8,7 @@ Standard library only, so it can run in CI without extra dependencies.
 
 import json
 import os
+import posixpath
 import re
 import subprocess
 import sys
@@ -88,6 +89,19 @@ check("duplicate anchor IDs on EN catalog", sum(n - 1 for n in Counter(ids).valu
 check("path-like anchor IDs on EN catalog", len([i for i in ids if "/" in i or ".." in i]), 0)
 anchors = [h.split("#", 1)[1] for c in vi_cards for h in c["links"] if h.startswith("/books/#")]
 check("dead VI -> EN anchors", len([a for a in anchors if a not in ids]), 0)
+
+# --- Vietnamese sitemap ---
+# Every catalog reader must be discoverable. Links are relative to vi/books/;
+# normalise '../doubles/...' to '/vi/doubles/...' before comparing with <loc>.
+sitemap = read(os.path.join(ROOT, "vi", "sitemap.xml"))
+locs = re.findall(r"<loc>(.*?)</loc>", sitemap)
+check("duplicate URLs in VI sitemap", len(locs) - len(set(locs)), 0)
+reader_links = {h for c in vi_cards for h in c["links"] if h.endswith("_vi.html")}
+expected_locs = {
+    "https://tenniskb.github.io/vi/" + posixpath.normpath(posixpath.join("books", link))
+    for link in reader_links
+}
+check("VI readers missing from sitemap", len(expected_locs - set(locs)), 0)
 
 # --- Glossary ---
 gl_html = read(os.path.join(VI, "glossary.html"))
