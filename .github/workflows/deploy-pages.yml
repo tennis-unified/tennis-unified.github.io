@@ -32,21 +32,33 @@ jobs:
         run: |
           echo "=== Before prune ==="
           du -sh .
-          du -sh * 2>/dev/null | sort -hr | head -n 20
-          # Remove non-web source/raw folders and nested /tenniskb/ mirror (3.3 GB)
+          du -sh assets/* 2>/dev/null | sort -hr | head -n 10
           rm -rf raw-intel workspace docs_src synthesis-log reports research \
             "Tenniskb-5 Pillars" "Tenniskb-10 Pillars" scripts tenniskb \
-            _batch_*.json *.py *.php
-          echo "=== After prune ==="
-          du -sh .
-          # GitHub Pages artifact limit is 10 GB; if still >= 9.5 GB, prune large media/archive extras
+            hi-tech-tennis-archive gemini-notebooks _batch_*.json *.py *.php
           BYTES=$(du -sb --exclude=.git . | awk '{print $1}')
-          if [ "$BYTES" -ge 9500000000 ]; then
-            echo "Still >= 9.5 GB ($BYTES bytes), pruning *.mp4 *.zip *.wav *.mov and hi-tech-tennis-archive..."
-            find . -maxdepth 5 \( -name '*.mp4' -o -name '*.zip' -o -name '*.wav' -o -name '*.mov' \) -delete
-            rm -rf hi-tech-tennis-archive gemini-notebooks
-            du -sh .
+          echo "After non-site prune: $BYTES bytes"
+          if [ "$BYTES" -ge 9000000000 ]; then
+            echo "Pruning assets/pdfs, vi/books/*.pdf, and media archives..."
+            rm -rf assets/pdfs
+            rm -f vi/books/*.pdf books/*.pdf
+            find . -maxdepth 6 \( -name '*.mp4' -o -name '*.zip' -o -name '*.wav' -o -name '*.mov' \) -delete
+            BYTES=$(du -sb --exclude=.git . | awk '{print $1}')
+            echo "After PDF/media prune: $BYTES bytes"
           fi
+          if [ "$BYTES" -ge 9000000000 ]; then
+            echo "Pruning files > 2MB in assets/images to stay under 9GB..."
+            find assets/images -type f -size +2M -delete 2>/dev/null || true
+            BYTES=$(du -sb --exclude=.git . | awk '{print $1}')
+            echo "After >2MB assets/images prune: $BYTES bytes"
+          fi
+          if [ "$BYTES" -ge 9000000000 ]; then
+            echo "Pruning files > 500k in assets/images to stay under 9GB..."
+            find assets/images -type f -size +500k -delete 2>/dev/null || true
+            BYTES=$(du -sb --exclude=.git . | awk '{print $1}')
+            echo "Final staged size: $BYTES bytes"
+          fi
+          du -sh .
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -60,7 +72,5 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          # The site tree is ~5-7 GB; Pages syncing routinely takes 5-15 min.
-          # The action's default 600000 ms (10 min) abort kills healthy deploys.
           timeout: 1800000
           error_count: 30
