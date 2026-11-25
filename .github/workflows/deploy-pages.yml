@@ -28,6 +28,26 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Prune non-site and oversized files from Pages staging
+        run: |
+          echo "=== Before prune ==="
+          du -sh .
+          du -sh * 2>/dev/null | sort -hr | head -n 20
+          # Remove non-web source/raw folders and nested /tenniskb/ mirror (3.3 GB)
+          rm -rf raw-intel workspace docs_src synthesis-log reports research \
+            "Tenniskb-5 Pillars" "Tenniskb-10 Pillars" scripts tenniskb \
+            _batch_*.json *.py *.php
+          echo "=== After prune ==="
+          du -sh .
+          # GitHub Pages artifact limit is 10 GB; if still >= 9.5 GB, prune large media/archive extras
+          BYTES=$(du -sb --exclude=.git . | awk '{print $1}')
+          if [ "$BYTES" -ge 9500000000 ]; then
+            echo "Still >= 9.5 GB ($BYTES bytes), pruning *.mp4 *.zip *.wav *.mov and hi-tech-tennis-archive..."
+            find . -maxdepth 5 \( -name '*.mp4' -o -name '*.zip' -o -name '*.wav' -o -name '*.mov' \) -delete
+            rm -rf hi-tech-tennis-archive gemini-notebooks
+            du -sh .
+          fi
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
