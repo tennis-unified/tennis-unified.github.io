@@ -231,9 +231,12 @@ if broken_reader_links:
 en_pages = glob.glob(os.path.join(EN, "*_en.html"))
 en_errors = []
 en_broken = []
+en_missing_desc = []
 for page_path in en_pages:
     name = os.path.basename(page_path)
     page = read(page_path)
+    if not re.search(r'<meta[^>]+name=["\']description["\'][^>]+content=["\'][^"\']+', page, re.I):
+        en_missing_desc.append(name)
     canonical = re.search(r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']+)', page, re.I)
     expected = "/books/" + name
     if not canonical:
@@ -248,6 +251,7 @@ for page_path in en_pages:
             en_broken.append((name, url))
 check("wrong or missing EN reader canonicals", len(en_errors), 0)
 check("broken links in EN readers", len(en_broken), 0)
+check("EN readers missing meta description", len(en_missing_desc), 0)
 if en_errors:
     for name, value in en_errors[:10]:
         print(f"       {name}: {value}")
