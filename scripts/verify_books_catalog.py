@@ -167,12 +167,17 @@ for card in vi_cards:
     if not os.path.isfile(path):
         continue
     page = read(path)
-    canonical = re.search(r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']+)', page, re.I)
-    expected_canonical = "/vi/" + posixpath.normpath(posixpath.join("books", reader))
-    if not canonical:
-        canonical_errors.append((reader, "missing"))
-    elif canonical.group(1) != expected_canonical:
-        canonical_errors.append((reader, canonical.group(1)))
+    is_redirect = bool(
+        re.search(r'<meta[^>]+http-equiv=["\']refresh["\']', page, re.I)
+        or re.search(r"window\.location\.replace", page, re.I)
+    )
+    if not is_redirect:
+        canonical = re.search(r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']+)', page, re.I)
+        expected_canonical = "/vi/" + posixpath.normpath(posixpath.join("books", reader))
+        if not canonical:
+            canonical_errors.append((reader, "missing"))
+        elif canonical.group(1) != expected_canonical:
+            canonical_errors.append((reader, canonical.group(1)))
     card_title = re.search(r"class=\"book-card-title\"[^>]*>(.*?)</h3>", card["body"], re.S)
     h1 = re.search(r"<h1\b[^>]*>(.*?)</h1>", page, re.S)
     if card_title and h1:
@@ -235,14 +240,19 @@ en_missing_desc = []
 for page_path in en_pages:
     name = os.path.basename(page_path)
     page = read(page_path)
-    if not re.search(r'<meta[^>]+name=["\']description["\'][^>]+content=["\'][^"\']+', page, re.I):
-        en_missing_desc.append(name)
-    canonical = re.search(r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']+)', page, re.I)
-    expected = "/books/" + name
-    if not canonical:
-        en_errors.append((name, "missing"))
-    elif canonical.group(1) != expected:
-        en_errors.append((name, canonical.group(1)))
+    is_redirect = bool(
+        re.search(r'<meta[^>]+http-equiv=["\']refresh["\']', page, re.I)
+        or re.search(r"window\.location\.replace", page, re.I)
+    )
+    if not is_redirect:
+        if not re.search(r'<meta[^>]+name=["\']description["\'][^>]+content=["\'][^"\']+', page, re.I):
+            en_missing_desc.append(name)
+        canonical = re.search(r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']+)', page, re.I)
+        expected = "/books/" + name
+        if not canonical:
+            en_errors.append((name, "missing"))
+        elif canonical.group(1) != expected:
+            en_errors.append((name, canonical.group(1)))
     for url in re.findall(r'(?:href|src)="([^"]+)"', page):
         if not url or url.startswith(("#", "http://", "https://", "mailto:", "data:", "javascript:", "tel:")):
             continue
