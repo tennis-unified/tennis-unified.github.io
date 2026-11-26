@@ -159,6 +159,8 @@ title_drift = []
 pairing = []
 drift = []
 canonical_errors = []
+vi_missing_desc = []
+vi_descriptions = {}
 for card in vi_cards:
     reader = next((h for h in card["links"] if h.endswith("_vi.html")), None)
     if not reader:
@@ -172,6 +174,11 @@ for card in vi_cards:
         or re.search(r"window\.location\.replace", page, re.I)
     )
     if not is_redirect:
+        desc = re.search(r'<meta[^>]+name=["\']description["\'][^>]+content=["\']([^"\']+)', page, re.I)
+        if not desc:
+            vi_missing_desc.append(reader)
+        else:
+            vi_descriptions.setdefault(desc.group(1).strip(), []).append(reader)
         canonical = re.search(r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']+)', page, re.I)
         expected_canonical = "/vi/" + posixpath.normpath(posixpath.join("books", reader))
         if not canonical:
@@ -211,6 +218,9 @@ for card in vi_cards:
             drift.append((reader, identical, tested))
 
 check("wrong or missing reader canonicals", len(canonical_errors), 0)
+check("VI readers missing meta description", len(vi_missing_desc), 0)
+vi_duplicate_desc = [names for names in vi_descriptions.values() if len(names) > 1]
+check("duplicate VI meta descriptions", len(vi_duplicate_desc), 0)
 if canonical_errors:
     for name, value in canonical_errors[:10]:
         print(f"       {name}: {value}")
