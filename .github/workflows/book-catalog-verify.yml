@@ -6,6 +6,8 @@ on:
     paths:
       - 'books/**'
       - 'vi/books/**'
+      - 'vi/sitemap.xml'
+      - 'vi/sitemap.xml.gz'
       - 'scripts/verify_books_catalog.py'
       - '.github/workflows/book-catalog-verify.yml'
   pull_request:
@@ -13,6 +15,8 @@ on:
     paths:
       - 'books/**'
       - 'vi/books/**'
+      - 'vi/sitemap.xml'
+      - 'vi/sitemap.xml.gz'
       - 'scripts/verify_books_catalog.py'
       - '.github/workflows/book-catalog-verify.yml'
   workflow_dispatch:
@@ -22,12 +26,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: '3.11'
 
-      - name: Verify catalog counts, anchors and local links
+      - name: Verify catalog counts, anchors, sitemap and local links
         run: python scripts/verify_books_catalog.py

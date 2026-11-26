@@ -6,8 +6,12 @@ Exits 1 on any broken local link, duplicate anchor ID, orphan cluster or count d
 Standard library only, so it can run in CI without extra dependencies.
 """
 
+import glob
+import gzip
+import html
 import json
 import os
+import posixpath
 import re
 import subprocess
 import sys
@@ -50,7 +54,11 @@ def local_exists(href, base=None):
     else:
         full = os.path.join(base or ROOT, path)
     if os.path.isdir(full):
-        return os.path.isfile(os.path.join(full, "index.html"))
+        index = os.path.join(full, "index.html")
+        if os.path.isfile(index):
+            return True
+        rel = os.path.relpath(index, ROOT).replace("\\", "/")
+        return rel in TRACKED
     if os.path.isfile(full):
         return True
     rel = os.path.relpath(full, ROOT).replace("\\", "/")
@@ -89,6 +97,23 @@ check("path-like anchor IDs on EN catalog", len([i for i in ids if "/" in i or "
 anchors = [h.split("#", 1)[1] for c in vi_cards for h in c["links"] if h.startswith("/books/#")]
 check("dead VI -> EN anchors", len([a for a in anchors if a not in ids]), 0)
 
+# --- Vietnamese sitemap ---
+# Every catalog reader must be discoverable. Links are relative to vi/books/;
+# normalise '../doubles/...' to '/vi/doubles/...' before comparing with <loc>.
+sitemap = read(os.path.join(ROOT, "vi", "sitemap.xml"))
+locs = re.findall(r"<loc>(.*?)</loc>", sitemap)
+check("duplicate URLs in VI sitemap", len(locs) - len(set(locs)), 0)
+reader_links = {h for c in vi_cards for h in c["links"] if h.endswith("_vi.html")}
+expected_locs = {
+    "https://tenniskb.github.io/vi/" + posixpath.normpath(posixpath.join("books", link))
+    for link in reader_links
+}
+check("VI readers missing from sitemap", len(expected_locs - set(locs)), 0)
+gz_path = os.path.join(ROOT, "vi", "sitemap.xml.gz")
+if os.path.isfile(gz_path):
+    with gzip.open(gz_path, "rt", encoding="utf-8") as f:
+        check("sitemap gzip matches XML", f.read() == sitemap, True)
+
 # --- Glossary ---
 gl_html = read(os.path.join(VI, "glossary.html"))
 terms = json.loads(re.search(r"const ALL_TERMS = (\[.*?\]);", gl_html, re.S).group(1))
@@ -122,9 +147,18 @@ def numeric_sequence(fragment):
             pass
     return out
 
+def title_core(value):
+    """Normalise cosmetic title differences (HTML entities, subtitles, authors)."""
+    text = html.unescape(re.sub(r"<[^>]+>", "", value))
+    text = re.sub(r"\([^)]*\)", "", text)  # catalog's English subtitle
+    text = re.split(r"[:\-–—·]", text)[0]  # subtitle/author after the first separator
+    return re.sub(r"\s+", " ", text).strip().casefold()
+
+
 title_drift = []
 pairing = []
 drift = []
+canonical_errors = []
 for card in vi_cards:
     reader = next((h for h in card["links"] if h.endswith("_vi.html")), None)
     if not reader:
@@ -133,11 +167,21 @@ for card in vi_cards:
     if not os.path.isfile(path):
         continue
     page = read(path)
+    is_redirect = bool(
+        re.search(r'<meta[^>]+http-equiv=["\']refresh["\']', page, re.I)
+        or re.search(r"window\.location\.replace", page, re.I)
+    )
+    if not is_redirect:
+        canonical = re.search(r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']+)', page, re.I)
+        expected_canonical = "/vi/" + posixpath.normpath(posixpath.join("books", reader))
+        if not canonical:
+            canonical_errors.append((reader, "missing"))
+        elif canonical.group(1) != expected_canonical:
+            canonical_errors.append((reader, canonical.group(1)))
     card_title = re.search(r"class=\"book-card-title\"[^>]*>(.*?)</h3>", card["body"], re.S)
     h1 = re.search(r"<h1\b[^>]*>(.*?)</h1>", page, re.S)
     if card_title and h1:
-        clean = lambda s: re.sub(r"<[^>]+>", "", s).replace("&amp;", "&").strip()
-        if clean(card_title.group(1)) != clean(h1.group(1)):
+        if title_core(card_title.group(1)) != title_core(h1.group(1)):
             title_drift.append(reader)
     blocks = re.findall(r"<div[^>]*class=\"[^\"]*bilingual-block[^\"]*\"[^>]*>(.*?)</div>", page, re.S)
     if blocks:
@@ -165,6 +209,65 @@ for card in vi_cards:
                     identical += 1
         if tested >= 20 and identical / tested < 0.10:
             drift.append((reader, identical, tested))
+
+check("wrong or missing reader canonicals", len(canonical_errors), 0)
+if canonical_errors:
+    for name, value in canonical_errors[:10]:
+        print(f"       {name}: {value}")
+
+# --- Links inside readers (not just the catalog cards) ---
+reader_pages = glob.glob(os.path.join(VI, "*_vi.html"))
+reader_pages += glob.glob(os.path.join(os.path.dirname(VI), "doubles", "*_vi.html"))
+broken_reader_links = []
+for page_path in reader_pages:
+    base = os.path.dirname(page_path)
+    for url in re.findall(r'(?:href|src)="([^"]+)"', read(page_path)):
+        if not url or url.startswith(("#", "http://", "https://", "mailto:", "data:", "javascript:", "tel:")):
+            continue
+        path = url.split("#", 1)[0].split("?", 1)[0]
+        if path and not local_exists(path, base):
+            broken_reader_links.append((os.path.relpath(page_path, ROOT), url))
+check("broken links in VI readers", len(broken_reader_links), 0)
+if broken_reader_links:
+    for name, url in broken_reader_links[:10]:
+        print(f"       {name}: {url}")
+
+# --- English readers ---
+en_pages = glob.glob(os.path.join(EN, "*_en.html"))
+en_errors = []
+en_broken = []
+en_missing_desc = []
+for page_path in en_pages:
+    name = os.path.basename(page_path)
+    page = read(page_path)
+    is_redirect = bool(
+        re.search(r'<meta[^>]+http-equiv=["\']refresh["\']', page, re.I)
+        or re.search(r"window\.location\.replace", page, re.I)
+    )
+    if not is_redirect:
+        if not re.search(r'<meta[^>]+name=["\']description["\'][^>]+content=["\'][^"\']+', page, re.I):
+            en_missing_desc.append(name)
+        canonical = re.search(r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']+)', page, re.I)
+        expected = "/books/" + name
+        if not canonical:
+            en_errors.append((name, "missing"))
+        elif canonical.group(1) != expected:
+            en_errors.append((name, canonical.group(1)))
+    for url in re.findall(r'(?:href|src)="([^"]+)"', page):
+        if not url or url.startswith(("#", "http://", "https://", "mailto:", "data:", "javascript:", "tel:")):
+            continue
+        path = url.split("#", 1)[0].split("?", 1)[0]
+        if path and not local_exists(path, os.path.dirname(page_path)):
+            en_broken.append((name, url))
+check("wrong or missing EN reader canonicals", len(en_errors), 0)
+check("broken links in EN readers", len(en_broken), 0)
+check("EN readers missing meta description", len(en_missing_desc), 0)
+if en_errors:
+    for name, value in en_errors[:10]:
+        print(f"       {name}: {value}")
+if en_broken:
+    for name, url in en_broken[:10]:
+        print(f"       {name}: {url}")
 
 print(f"INFO  reader title drift (materialised pages only): {len(title_drift)}")
 for name in title_drift[:10]:
