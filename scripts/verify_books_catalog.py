@@ -227,6 +227,34 @@ if broken_reader_links:
     for name, url in broken_reader_links[:10]:
         print(f"       {name}: {url}")
 
+# --- English readers ---
+en_pages = glob.glob(os.path.join(EN, "*_en.html"))
+en_errors = []
+en_broken = []
+for page_path in en_pages:
+    name = os.path.basename(page_path)
+    page = read(page_path)
+    canonical = re.search(r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']+)', page, re.I)
+    expected = "/books/" + name
+    if not canonical:
+        en_errors.append((name, "missing"))
+    elif canonical.group(1) != expected:
+        en_errors.append((name, canonical.group(1)))
+    for url in re.findall(r'(?:href|src)="([^"]+)"', page):
+        if not url or url.startswith(("#", "http://", "https://", "mailto:", "data:", "javascript:", "tel:")):
+            continue
+        path = url.split("#", 1)[0].split("?", 1)[0]
+        if path and not local_exists(path, os.path.dirname(page_path)):
+            en_broken.append((name, url))
+check("wrong or missing EN reader canonicals", len(en_errors), 0)
+check("broken links in EN readers", len(en_broken), 0)
+if en_errors:
+    for name, value in en_errors[:10]:
+        print(f"       {name}: {value}")
+if en_broken:
+    for name, url in en_broken[:10]:
+        print(f"       {name}: {url}")
+
 print(f"INFO  reader title drift (materialised pages only): {len(title_drift)}")
 for name in title_drift[:10]:
     print("      ", name)
