@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<meta name="color-scheme" content="light dark"/>
+<link rel="icon" href="data:,"/>
+<title>Alcaraz Footwork Research — ATP Finals, Turin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f6f1; --surface:#ffffff; --surface2:#eaf0e6; --ink:#14211a; --muted:#5a6b60; --line:#d3ddd0;
+  --court:#0f4d2e; --court2:#0a3520; --lime:#c8e64a; --lime-ink:#243300; --blue:#1e4fd8; --blue-soft:#e3eaff;
+  --amber:#b7791f; --amber-bg:#fdf3d7; --red:#b42318; --red-bg:#fdecea;
+  --radius:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0c1410; --surface:#15211a; --surface2:#1a2b20; --ink:#e8f0e8; --muted:#9db3a4; --line:#2a3d30; --blue-soft:#1b2a5e; --amber-bg:#3a2f0e; --red-bg:#3a1714; }
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:"Be Vietnam Pro",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;font-size:16px}
+a{color:var(--blue)} img{max-width:100%;display:block}
+button,[role="button"],select,summary,input:not([type="checkbox"],[type="radio"]){min-height:2.25rem}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.15;margin:0}
+h2{font-size:clamp(1.55rem,3.4vw,2.3rem);font-weight:800;letter-spacing:-.02em;margin-bottom:10px}
+h3{font-size:1.08rem;font-weight:700}
+.sec{padding:52px 0 8px}
+.sec-head p{color:var(--muted);max-width:72ch;margin:0}
+.kicker{font-family:"JetBrains Mono",monospace;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--court);margin-bottom:10px}
+@media(prefers-color-scheme:dark){.kicker{color:var(--lime)}}
+.mono{font-family:"JetBrains Mono",monospace}
+/* HERO */
+.hero{background:var(--court2);color:#eef6ee;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;background:rgba(255,255,255,.14)}
+.hero-inner{position:relative;z-index:1;padding:44px 20px 0}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:32px;align-items:end}
+@media(max-width:820px){.hero-grid{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(2rem,5.2vw,3.4rem);font-weight:900;letter-spacing:-.03em}
+.hero h1 em{font-style:normal;color:var(--lime)}
+.hero .lead{color:#cfe3d2;font-size:1.06rem;max-width:56ch;margin:16px 0 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+.chip{border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:7px 13px;font-size:.8rem;font-weight:600;background:rgba(255,255,255,.06)}
+.chip b{color:var(--lime)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--lime);color:var(--lime-ink);font-weight:800;text-decoration:none;padding:12px 20px;border-radius:10px;border:0;cursor:pointer;font-family:inherit;font-size:.95rem;min-height:44px}
+.btn.ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5)}
+.hero-img{border-radius:16px 16px 0 0;overflow:hidden;border:1px solid rgba(255,255,255,.2);border-bottom:0}
+.hero-img img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3.4}
+.figcap{font-size:.78rem;color:var(--muted);margin-top:8px}
+.hero .figcap{color:#9fc2a8;padding-bottom:14px}
+.verify{background:var(--amber-bg);border:1px solid #e5cf8a;color:var(--ink);border-radius:var(--radius);padding:16px 18px;margin:22px 0 0;font-size:.92rem}
+.verify strong{color:var(--amber)}
+/* summary */
+.sum-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+@media(max-width:760px){.sum-list{grid-template-columns:1fr}}
+.sum-item{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;display:flex;gap:14px}
+.sum-num{flex:0 0 38px;width:38px;height:38px;border-radius:50%;background:var(--court);color:#fff;display:grid;place-items:center;font-weight:800;font-family:"JetBrains Mono",monospace;font-size:.9rem}
+@media(prefers-color-scheme:dark){.sum-num{background:var(--lime);color:var(--lime-ink)}}
+.sum-item p{margin:4px 0 0;color:var(--muted);font-size:.93rem}
+.sum-item h3{font-size:.99rem}
+/* cycle */
+.cycle-box{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:22px}
+.cycle-btns{display:flex;flex-wrap:wrap;gap:8px}
+.cyc-btn{border:1.5px solid var(--line);background:var(--surface2);color:var(--ink);border-radius:999px;padding:10px 16px;font-weight:700;cursor:pointer;font-family:inherit;font-size:.9rem;min-height:44px}
+.cyc-btn[aria-pressed="true"]{background:var(--court);color:#fff;border-color:var(--court)}
+.cycle-detail{margin-top:18px;background:var(--surface2);border-radius:12px;padding:20px}
+.cycle-detail h3{font-size:1.2rem;margin-bottom:6px}
+.cycle-detail p{margin:0 0 8px;color:var(--muted)}
+.cycle-detail p:last-of-type{margin-bottom:0}
+.cycle-detail .cue{margin-top:12px;background:var(--surface);border-radius:8px;padding:10px 14px;font-size:.9rem;color:var(--ink)}
+.cycle-detail .cue b{color:var(--court)} @media(prefers-color-scheme:dark){.cycle-detail .cue b{color:var(--lime)}}
+.evtag{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:999px;background:var(--blue-soft);color:var(--blue);margin-bottom:10px}
+.evtag.obs{background:#e2f0d9;color:#2f6b1e}.evtag.warn{background:var(--amber-bg);color:var(--amber)}
+@media(prefers-color-scheme:dark){.evtag.obs{background:#1e3a16;color:#a8d98a}}
+/* phase table */
+.phase-table{width:100%;border-collapse:collapse;margin-top:20px;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.phase-table th{background:var(--court);color:#fff;text-align:left;padding:12px 14px;font-size:.85rem}
+.phase-table td{padding:13px 14px;border-top:1px solid var(--line);vertical-align:top;font-size:.93rem}
+.phase-table td:first-child{font-weight:700;white-space:nowrap}
+@media(max-width:700px){.phase-table thead{display:none}.phase-table tr{display:block;border-top:1px solid var(--line);padding:8px 0}.phase-table td{display:block;border:0;padding:4px 14px}.phase-table td:first-child{color:var(--court)}}
+.note{font-size:.88rem;color:var(--muted);margin-top:12px}
+/* timing */
+.timing-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:22px}
+.tbar{display:grid;grid-template-columns:230px 1fr 84px;gap:12px;align-items:center;margin:12px 0;font-size:.9rem}
+@media(max-width:600px){.tbar{grid-template-columns:1fr;gap:4px}.tbar .val{text-align:left}}
+.tbar .track{height:22px;background:var(--surface2);border-radius:6px;position:relative}
+.tbar .fill{position:absolute;inset:0 auto 0 0;border-radius:6px;background:var(--court)}
+.tbar .fill.lime{background:#9db82e}.tbar .fill.blue{background:var(--blue)}.tbar .fill.grey{background:#8a9a8f}
+.tbar .val{font-family:"JetBrains Mono",monospace;font-weight:700;text-align:right}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+@media(max-width:760px){.grid2{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.card p{color:var(--muted);font-size:.94rem;margin:8px 0 0}
+.card ul{margin:8px 0 0;padding-left:18px;color:var(--muted);font-size:.94rem}
+.tag{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:999px;background:var(--blue-soft);color:var(--blue);margin-bottom:8px}
+.tag.peer{background:#e2f0d9;color:#2f6b1e}.tag.opinion{background:var(--amber-bg);color:var(--amber)}
+@media(prefers-color-scheme:dark){.tag.peer{background:#1e3a16;color:#a8d98a}}
+/* decision tool */
+.tool{background:var(--court);color:#eef6ee;border-radius:18px;padding:24px;margin-top:22px}
+.tool h3{color:#fff;font-size:1.25rem}
+.tool label{font-weight:600;font-size:.92rem;display:block;margin:16px 0 6px}
+.tool input[type=range]{width:100%;accent-color:var(--lime);height:36px}
+.dist-val{font-family:"JetBrains Mono",monospace;color:var(--lime);font-weight:700;font-size:1.3rem}
+.tool-out{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:18px;margin-top:18px}
+.tool-out h4{margin:0 0 6px;font-size:1.1rem;color:var(--lime)}
+.tool-out p{margin:0;color:#d5e7d8;font-size:.94rem}
+/* benchmarks */
+.bench{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+@media(max-width:760px){.bench{grid-template-columns:1fr}}
+.big{font-family:"JetBrains Mono",monospace;font-size:2rem;font-weight:700;color:var(--court);line-height:1}
+@media(prefers-color-scheme:dark){.big{color:var(--lime)}}
+.bench .card p{margin-top:8px}
+/* data table */
+.data-table{width:100%;border-collapse:collapse;margin-top:20px;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.data-table th{background:var(--court);color:#fff;text-align:left;padding:12px 14px;font-size:.85rem}
+.data-table td{padding:13px 14px;border-top:1px solid var(--line);vertical-align:top;font-size:.93rem}
+.data-table td.num{font-family:"JetBrains Mono",monospace;font-weight:700;white-space:nowrap}
+@media(max-width:700px){.data-table thead{display:none}.data-table tr{display:block;border-top:1px solid var(--line);padding:8px 0}.data-table td{display:block;border:0;padding:4px 14px}}
+/* drills */
+.drill-layout{display:grid;grid-template-columns:250px 1fr;gap:16px;margin-top:20px}
+@media(max-width:760px){.drill-layout{grid-template-columns:1fr}}
+.drill-nav{display:flex;flex-direction:column;gap:8px}
+@media(max-width:760px){.drill-nav{flex-direction:row;flex-wrap:wrap}}
+.drill-btn{text-align:left;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;padding:12px 14px;font-weight:700;cursor:pointer;font-family:inherit;font-size:.9rem;min-height:44px}
+.drill-btn small{display:block;font-weight:500;color:var(--muted)}
+.drill-btn[aria-selected="true"]{background:var(--court);color:#fff;border-color:var(--court)}
+.drill-btn[aria-selected="true"] small{color:#bcd8c2}
+.drill-panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.drill-panel ul{padding-left:18px;color:var(--muted);font-size:.94rem;margin:8px 0 0}
+.drill-panel li{margin-bottom:6px}
+.drill-panel .err{background:var(--red-bg);border-radius:8px;padding:10px 14px;font-size:.9rem;margin-top:12px}
+.drill-panel .err b{color:var(--red)}
+.hc{display:inline-block;background:var(--amber-bg);color:var(--amber);font-weight:700;font-size:.72rem;padding:2px 8px;border-radius:6px;margin-left:6px}
+/* checklist */
+.check{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:10px}
+.check li{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px 14px 46px;position:relative;font-size:.95rem}
+.check li::before{content:"✕";position:absolute;left:14px;top:12px;width:22px;height:22px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-size:.75rem;font-weight:800}
+.check li span{color:var(--muted);display:block;font-size:.88rem}
+/* frames strip */
+.frame-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+@media(max-width:760px){.frame-strip{grid-template-columns:1fr}}
+.frame-strip figure{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.frame-strip img{width:100%;aspect-ratio:9/13;object-fit:cover}
+.frame-strip figcaption{padding:12px 14px;font-size:.87rem;color:var(--muted)}
+.frame-strip figcaption b{color:var(--ink)}
+/* duo */
+.duo{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:start;margin-top:20px}
+@media(max-width:820px){.duo{grid-template-columns:1fr}}
+.duo img{border-radius:14px;aspect-ratio:4/3;object-fit:cover;width:100%}
+/* open questions */
+.openq{background:var(--surface);border:1px dashed var(--muted);border-radius:14px;padding:20px;margin-top:20px}
+.openq li{margin-bottom:10px;color:var(--muted);font-size:.94rem}
+.openq li b{color:var(--ink)}
+/* sources */
+.sources{columns:2;column-gap:28px;margin-top:18px;font-size:.88rem;padding-left:18px}
+@media(max-width:700px){.sources{columns:1}}
+.sources li{break-inside:avoid;margin-bottom:9px}
+footer{margin-top:56px;background:var(--court2);color:#bcd8c2;padding:28px 0;font-size:.88rem}
+footer a{color:var(--lime)}
+/* video */
+.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+@media(max-width:900px){.video-grid{grid-template-columns:1fr}}
+.vid-card{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.vid-card video{width:100%;aspect-ratio:9/12;max-height:480px;object-fit:contain;background:#000;display:block}
+.vid-card.crop video{aspect-ratio:9/8}
+.vid-card figcaption{padding:14px 16px;font-size:.92rem}
+.vid-card figcaption span{display:block;color:var(--muted);font-size:.87rem;margin-top:4px}
+.dl{display:inline-flex;align-items:center;margin-top:10px;background:var(--court);color:#fff !important;text-decoration:none;font-weight:700;padding:10px 16px;border-radius:9px;min-height:44px;font-size:.88rem}
+@media(prefers-color-scheme:dark){.dl{background:var(--lime);color:var(--lime-ink) !important}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-grid">
+      <div>
+        <div class="kicker" style="color:var(--lime)">Deep research · Footwork only · ATP Finals, Turin</div>
+        <h1>Alcaraz's feet: <em>dancing</em> — but the dance is a timing system</h1>
+        <p class="lead">A footwork-only analysis of Tennis Channel's 28.2-second ATP Finals reel of Carlos Alcaraz — split-step, first step, crossover vs shuffle, adjustment steps, the airborne forehand, and braking vs sliding on indoor hard court. Stroke technique and tactics are out of scope except where the feet make the shot possible. Every claim is labelled: observed in the reel, coaching consensus, peer-reviewed benchmark, or verified tracking data.</p>
+        <div class="chips">
+          <span class="chip">Reel <b>28.2 s</b> · 720×1280 · 30 fps</span>
+          <span class="chip">Surface <b>indoor hard court</b></span>
+          <span class="chip">On-screen text <b>“CARLOS DANCING IN THE NIKES”</b></span>
+          <span class="chip">Posted <b>20 Nov 2026</b> · Tennis Channel</span>
+        </div>
+        <p style="display:flex;gap:10px;flex-wrap:wrap;margin:0 0 22px">
+          <a class="btn" href="https://www.facebook.com/reel/1087874634298510" target="_blank" rel="noopener">▶ Watch the original reel on Facebook</a>
+          <a class="btn ghost" href="#drills">Go to the drills ↓</a>
+        </p>
+      </div>
+      <figure style="margin:0">
+        <div class="hero-img"><img src="assets/hero.jpg" alt="Carlos Alcaraz from behind in a wide, low split-step base at the ATP Finals in Turin, purple shirt and neon yellow shorts, on-screen text reading Carlos Dancing in the Nikes"/></div>
+        <figcaption class="figcap">Frame extracted from the downloaded reel itself (≈1 s): wide, low base on the forefoot, heels up, at the ATP Finals in Turin. Not a press photo — a frame of the clip analysed below.</figcaption>
+      </figure>
+    </div>
+    <div class="verify"><strong>Evidence levels — read first:</strong> The reel was downloaded and checked at 1 fps on 27 Nov 2026. It is an <b>edited highlight</b> — cuts and mixed camera angles — so step counts and timings are <b>not frame-verified</b>, and most frames show no opponent contact, so split-step timing cannot be measured from this clip. There is also <b>no peer-reviewed study of Alcaraz's own biomechanics</b>: no source measures his split-step timing, leg stiffness, ground-reaction force, top speed, or slide distance. Everything Alcaraz-specific below is either qualitative coaching observation or match-aggregate tracking, labelled as such; the hard numbers are <b>general elite benchmarks</b> from the cited studies, never Alcaraz measurements. The downloaded videos are embedded right below so you can check the footage yourself.</div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- VIDEO -->
+  <section class="sec" id="video">
+    <div class="sec-head"><div class="kicker">The downloaded reel</div><h2>Watch the reel here — original, lower-body crop, slow motion</h2><p>Downloaded from the Tennis Channel reel: <b>720×1280, 30 fps, 28.2 seconds</b>. The edit alternates wide rally shots with tight lower-body close-ups — a “dancing feet” cut, not one continuous rally. All three versions play inline and can be downloaded.</p></div>
+    <div class="video-grid">
+      <figure class="vid-card">
+        <video controls preload="none" playsinline poster="assets/contact-sheet.jpg" aria-label="Original Alcaraz footwork reel, 28.2 seconds"><source src="assets/reel-original.mp4" type="video/mp4"/></video>
+        <figcaption><b>Original — 28.2 s</b><span>The full reel: wide rally shots alternating with legs-only close-ups, ATP Finals indoor hard court.</span><a class="dl" href="assets/reel-original.mp4" download>⬇ Download original (MP4, ~4.2 MB)</a></figcaption>
+      </figure>
+      <figure class="vid-card crop">
+        <video controls preload="none" playsinline aria-label="Lower-body crop of the Alcaraz footwork reel"><source src="assets/reel-footwork-crop.mp4" type="video/mp4"/></video>
+        <figcaption><b>Lower-body crop — 28.2 s</b><span>Frame cropped to the legs and feet (720×640) to isolate the split-step bounce, crossover recovery and adjustment steps.</span><a class="dl" href="assets/reel-footwork-crop.mp4" download>⬇ Download crop (MP4, ~3.1 MB)</a></figcaption>
+      </figure>
+      <figure class="vid-card">
+        <video controls preload="none" playsinline aria-label="Slow-motion version of the Alcaraz footwork reel at half speed"><source src="assets/reel-slowmotion.mp4" type="video/mp4"/></video>
+        <figcaption><b>Slow motion 0.5× — 56.4 s</b><span>The full reel at half speed, no audio — for watching the forefoot bounce, the wide stretched base and the airborne forehand.</span><a class="dl" href="assets/reel-slowmotion.mp4" download>⬇ Download slow motion (MP4, ~11.4 MB)</a></figcaption>
+      </figure>
+    </div>
+    <figure style="margin:20px 0 0"><img src="assets/contact-sheet.jpg" alt="Contact sheet of frames taken every two seconds from the Alcaraz reel, showing wide rally shots and tight lower-body close-ups" style="border-radius:14px;width:100%"/><figcaption class="figcap">Contact sheet — frames every 2 seconds from the download. From the 1 fps frame notes (observed, not frame-measured): a constant split-step bounce on the forefoot between shots; a wide, low base when stretched; crossover steps on recovery; one airborne forehand; a black knee support/tape on the left knee visible in several frames; and several frames with heels clearly off the ground mid-movement. Turin signage (iren, NTT DATA, Haier, Emirates) confirms the ATP Finals setting.</figcaption></figure>
+  </section>
+
+  <!-- EXEC TAKEAWAYS -->
+  <section class="sec" id="takeaways">
+    <div class="sec-head"><div class="kicker">Executive summary</div><h2>7 takeaways — feet only</h2></div>
+    <div class="sum-list">
+      <div class="sum-item"><div class="sum-num">1</div><div><h3>The split-step is timed to contact — but landed after it</h3><p>Coaching sources agree Alcaraz starts his split as the ball leaves the opponent's racket. Measured elite returners, though, take off around contact and <b>land 131–160 ms after it</b>, once early ball-flight information exists. The popular cue “land as the opponent hits” is a simplification that conflicts with the measurements if taken literally. <span class="mono">[DW Tennis; Navia et al. 2022; Mecheri et al. 2019]</span></p></div></div>
+      <div class="sum-item"><div class="sum-num">2</div><div><h3>First step: explosive, low, off the outside foot</h3><p>Every coaching breakdown describes the same picture — hips drop, hard push off the outside foot, no hesitation after the read. But <b>no source identifies his dominant first-step type</b> (gravity, pivot or jab), and the general literature is split by task: gravity wins for reactive wide balls, jab wins short planned sprints. <span class="mono">[HoopsKing; DW Tennis; Bragg &amp; Andriacchi 2001; Vuong et al.]</span></p></div></div>
+      <div class="sum-item"><div class="sum-num">3</div><div><h3>Crossover in defence — not “crabbing”</h3><p>The most specific Alcaraz source: in backhand-corner defence against approach shots he rotates the hips and steps the outside leg across the body line, where most players side-shuffle with chest to net. Claimed effects: faster to the ball, rotation preserved, balance kept to explode forward after a low slice. The general pattern is crossover out, shuffle back. <span class="mono">[Tennis Whisperer; DW Tennis]</span></p></div></div>
+      <div class="sum-item"><div class="sum-num">4</div><div><h3>Micro adjustment steps buy the contact point</h3><p>“Rapid adjustment steps… precise small steps ensure he's always perfectly positioned” (DW Tennis); on clay, “one micro adjustment, a half-inch stutter step before contact” gives the racket face time (SportsOrca). All qualitative — <b>no step count for Alcaraz exists</b> in any source found. <span class="mono">[DW Tennis; SportsOrca; LetsPlayTennis UK]</span></p></div></div>
+      <div class="sum-item"><div class="sum-num">5</div><div><h3>The airborne forehand is an outcome, not a jump</h3><p>On clay and hard courts, wide forehands are hit open-stance with the right leg driving so hard that he leaves the ground as he uncoils, landing on the same right foot; on grass he uses a quieter step-over variant. The lift is a summation of leg drive and rotation — not a deliberate jump. <span class="mono">[Hugh Clarke 2025; Robson/Yandell — general mechanism]</span></p></div></div>
+      <div class="sum-item"><div class="sum-num">6</div><div><h3>Hard court means brake; clay means slide</h3><p>Biomechanics: on hard courts players brake with <b>greater knee flexion</b>; less flexion facilitates the clay slide. Alcaraz can slide on hard courts — commentators praise it — but no source quantifies how often, and analysts disagree on whether sliding is central to his hard-court system at all. <span class="mono">[Damm et al. 2013]</span></p></div></div>
+      <div class="sum-item"><div class="sum-num">7</div><div><h3>His only hard numbers are distances and return outcomes</h3><p>Verified match aggregates: 1,884.9 m and 2,325.0 m at the US Open 2026; 3,376.6 m in the Wimbledon 2025 final. Against Zverev's first serve, matched Infosys data has just 34.6% unreturned vs Alcaraz against 44.4% vs the tour. Top speed, acceleration, COD count, split-step timing measured on Alcaraz: <b>do not exist in published sources</b>. <span class="mono">[IBM SlamTracker; Infosys via Willis]</span></p></div></div>
+      <div class="sum-item"><div class="sum-num">!</div><div><h3>Ignore the viral numbers</h3><p>Social posts credit Alcaraz with a “45 km/h” top speed and a “0.38 s reaction, faster than 92% of the ATP.” Neither has a primary source; 45 km/h is implausible against measured velocity distributions (pros spend 0.3% of match time at 18–24 km/h), and the reaction claim contradicts peer-reviewed timing data. Full list in <a href="#unverified">Could not verify</a>. <span class="mono">[Pereira et al. 2016; Navia et al. 2022]</span></p></div></div>
+    </div>
+  </section>
+
+  <!-- FOOTWORK LOOP -->
+  <section class="sec" id="loop">
+    <div class="sec-head"><div class="kicker">The rally loop</div><h2>One point, six footwork phases</h2><p>The reel is an edit, so the phases below follow the movement cycle the coaching sources describe — in phase order, not as a frame-by-frame timeline of this clip. Tap a phase for what the sources say, what the reel shows, and the cue to steal.</p></div>
+    <div class="cycle-box">
+      <div class="cycle-btns" role="group" aria-label="Footwork phases">
+        <button class="cyc-btn" data-phase="0" aria-pressed="true">1 · Split-step</button>
+        <button class="cyc-btn" data-phase="1" aria-pressed="false">2 · First step</button>
+        <button class="cyc-btn" data-phase="2" aria-pressed="false">3 · Travel</button>
+        <button class="cyc-btn" data-phase="3" aria-pressed="false">4 · Adjustment steps</button>
+        <button class="cyc-btn" data-phase="4" aria-pressed="false">5 · Contact</button>
+        <button class="cyc-btn" data-phase="5" aria-pressed="false">6 · Recovery</button>
+      </div>
+      <div class="cycle-detail" id="cycleDetail"></div>
+    </div>
+    <table class="phase-table">
+      <thead><tr><th>Phase</th><th>What happens</th><th>Evidence level</th></tr></thead>
+      <tbody>
+        <tr><td>Split-step</td><td>Light hop timed to opponent contact; land on the forefoot, wide and low, already reading.</td><td>Observed in reel · coaching consensus · peer-reviewed timing</td></tr>
+        <tr><td>First step</td><td>Explosive, low push off the outside foot in the direction read during the hop.</td><td>Coaching consensus (type not identified for Alcaraz)</td></tr>
+        <tr><td>Travel</td><td>Shuffle for 1–3 steps; crossover for 4+ steps and wide balls, hips turned.</td><td>Observed in reel (recovery) · coaching consensus</td></tr>
+        <tr><td>Adjustment steps</td><td>Rapid micro steps in the last 1–2 m to set distance and contact height.</td><td>Coaching consensus (no counts published)</td></tr>
+        <tr><td>Contact</td><td>Open-stance forehand; on wide balls the leg drive can lift him off the ground; load the outside foot.</td><td>Observed in reel (one airborne frame) · analyst breakdown</td></tr>
+        <tr><td>Recovery</td><td>Crossover back toward the bisector of the opponent's angles, flowing straight into the next split.</td><td>Observed in reel · coaching consensus</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Vocabulary follows the Kovacs / iTPA movement language (mogul step, front/back crossover recovery, defensive 180° recovery). Beyond “crossover recovery,” applying specific Kovacs labels to Alcaraz would be inference, not sourced fact — so this page doesn't.</p>
+  </section>
+
+  <!-- SPLIT-STEP TIMING -->
+  <section class="sec" id="split-timing">
+    <div class="sec-head"><div class="kicker">Benchmark 1 · Split-step timing</div><h2>Land after contact, when the ball has told you something</h2><p>The return of serve is the best-measured case in tennis movement science. Three studies, three methods — and one consistent picture: elite returners take off around the server's contact and land roughly <b>130–160 ms after it</b>, then start moving sideways at ~160–180 ms, once early ball flight can be read. Landing “at” contact, as many coaching cues phrase it, would mean moving before the information exists.</p></div>
+    <div class="timing-card">
+      <h3>Milliseconds after opponent contact (return of serve)</h3>
+      <div class="tbar"><span>Navia 2022 — first foot lands</span><div class="track"><div class="fill" style="width:41%"></div></div><span class="val">131 ms</span></div>
+      <div class="tbar"><span>Mecheri 2019 — split landing (mean)</span><div class="track"><div class="fill" style="width:47.5%"></div></div><span class="val">+152 ms</span></div>
+      <div class="tbar"><span>Navia 2022 — second foot lands</span><div class="track"><div class="fill lime" style="width:48.8%"></div></div><span class="val">156 ms</span></div>
+      <div class="tbar"><span>Navia 2022 — lateral movement starts</span><div class="track"><div class="fill lime" style="width:55.3%"></div></div><span class="val">~177 ms</span></div>
+      <div class="tbar"><span>Nieminen 2014 (lab) — landing with split-step</span><div class="track"><div class="fill blue" style="width:65%"></div></div><span class="val">208 ms</span></div>
+      <div class="tbar"><span>Filipcic 2017 — “response time,” 1st serve*</span><div class="track"><div class="fill grey" style="width:93.8%"></div></div><span class="val">0.300 s</span></div>
+      <p class="note">*Not a contradiction: Filipcic timed a different event — split-step occurrence in 25 fps match video across all stroke types — not first-foot landing at 300 Hz on returns. Mecheri's take-off averaged +9 ms relative to contact (earlier studies: Avilès 2002 −40 ms take-off / +160 ms landing); split duration 142 ms. Nieminen's lab split-step landing was 13.1% faster to target than no split-step; Uzu 2009 found landing ~180 ms after the signal quickest with reliable direction. Time pressure context: roughly 500–600 ms is available against a 200 km/h serve.</p>
+    </div>
+    <div class="grid2">
+      <div class="card"><span class="tag peer">Peer-reviewed</span><h3>What Alcaraz's coaches' cues get right — and simplify</h3><p>DW Tennis: he “initiates his split step exactly as the ball leaves his opponent's racket.” Essential Tennis (Ian Westermann) breaks it into three steps — <b>lift before contact, read in the air, pivot the outside foot on landing</b> — and notes Alcaraz sometimes changes direction mid-air, planting one foot and pivoting the other. The initiation cue matches the measured take-off (~contact); the landing happens after, by design.</p></div>
+      <div class="card"><span class="tag peer">Peer-reviewed</span><h3>Stiffer legs, later step — on purpose</h3><p>Mecheri et al. found leg stiffness rises with expertise, and in world-class males (n=10) stiffness correlated with initial foot-movement timing at <b>r² = 0.54</b>: stiffer players step <i>later</i>, maximising information time. Anticipatory sideways movement before the opponent's stroke occurred in only <b>6–13%</b> of match situations (Triolet et al. 2013). Elite movement is mostly patience, then violence.</p></div>
+    </div>
+    <table class="phase-table">
+      <thead><tr><th>Study</th><th>Sample / method</th><th>Key numbers</th></tr></thead>
+      <tbody>
+        <tr><td>Navia et al. 2022, J Sports Sci 40(1)</td><td>12 male experts (ITN 1–2, incl. 6 ATP), hard court, 300 Hz, 600 trials</td><td>Landings 133 ms after server contact (abstract); first foot 131 ms, second foot 156 ms; lateral initiation ~177 ms, no response errors when after contact</td></tr>
+        <tr><td>Mecheri et al. 2019, J Sports Sci 37(17)</td><td>22 world-class players returning same-level serves, hard court; leg-stiffness experiment</td><td>Take-off +9 ms, landing +152 ms vs contact; split duration 142 ms; stiffness–timing r² = 0.54 in world-class males</td></tr>
+        <tr><td>Filipcic et al. 2017, J Hum Kinet</td><td>28 players (7 ATP men), 15 matches, 25 Hz video, 8,545 strokes</td><td>“Response time” 0.300 s (1st serve), 0.334 s (2nd serve); ATP total 0.306 s; volleys shortest (FH 0.242 s); each player has their own timing</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- FIRST STEP -->
+  <section class="sec" id="first-step">
+    <div class="sec-head"><div class="kicker">Benchmark 2 · The first step</div><h2>Gravity, pivot or jab? The honest answer: it depends on the task</h2><p>Three first steps are taught. <b>Jab</b> — step first with the near (lead) foot toward the ball. <b>Pivot</b> — pivot on the lead foot, turn the hips, step with the opposite leg. <b>Gravity / drop</b> — draw the lead foot inward so the centre of mass falls outside the base of support and gravity starts the move. Two research lines point in opposite directions — because they test different tasks.</p></div>
+    <div class="timing-card">
+      <h3>Bragg &amp; Andriacchi 2001 (Stanford) — reactive wide balls, ball machine, 10 club players</h3>
+      <div class="tbar"><span>Gravity step — reached the ball</span><div class="track"><div class="fill" style="width:52%"></div></div><span class="val">52%</span></div>
+      <div class="tbar"><span>Pivot step — reached the ball</span><div class="track"><div class="fill lime" style="width:49%"></div></div><span class="val">49%</span></div>
+      <div class="tbar"><span>Jab step — reached the ball</span><div class="track"><div class="fill blue" style="width:34%"></div></div><span class="val">34%</span></div>
+      <p class="note">Controlled returns: gravity 40% vs jab 20%. Motion-lab timing (n=1): centre of mass outside the base at ~0.15 s (gravity) vs ~0.3 s (pivot) vs ~0.5 s (jab). From the baseline the step hardly mattered (96/100 controlled) — the differences appeared on quick-start balls. Authors' own limits: players self-selected their step, all were pre-coached in the gravity step, “in control” was judged ad hoc. A strong hint for wide reactive balls — not proof.</p>
+    </div>
+    <div class="grid2">
+      <div class="card"><span class="tag peer">Peer-reviewed</span><h3>Vuong et al. — the counter-result</h3><p>22 male competitive athletes, <i>planned</i> lateral sprints (direction known in advance, no reaction component): no significant difference at 25 cm; at 50 and 100 cm the <b>jab was faster</b> than gravity; over 5 m, counter-steps beat both gravity and pivot in both directions. Different task, different winner.</p></div>
+      <div class="card"><span class="tag opinion">What this means for Alcaraz</span><h3>No label exists — and none should be invented</h3><p>Coaching sources describe Alcaraz's first step only as explosive and low, pushing off the outside foot (HoopsKing, DW Tennis); LetsPlayTennis UK calls his acceleration from a standstill “among the best on tour” — qualitative. Essential Tennis's “pivot the outside foot on landing” echoes Kovacs's pivot language but is never labelled or counted. Anyone who tells you Alcaraz is “a gravity-step player” is guessing.</p></div>
+    </div>
+    <div class="tool" id="tool">
+      <h3>Try the coaching rule: distance picks the pattern</h3>
+      <label for="distRange">How many steps is the ball away? <span class="dist-val" id="distVal">2 steps</span></label>
+      <input type="range" id="distRange" min="1" max="6" step="1" value="2" aria-describedby="toolOut"/>
+      <div class="tool-out" id="toolOut"><h4 id="toolTitle"></h4><p id="toolText"></p></div>
+      <p class="note" style="color:#bcd8c2">Rule as taught by Play-Rally and LetsPlayTennis: shuffle for 1–3 steps (stay facing the net), crossover for 4+ steps and wide balls, then transition back to shuffle / adjustment steps for the last 2–3 steps before contact, loading the outside foot on arrival. Coaching consensus — not a measured law.</p>
+    </div>
+  </section>
+
+  <!-- MOVEMENT VOLUME -->
+  <section class="sec" id="volume">
+    <div class="sec-head"><div class="kicker">Benchmark 3 · Rally movement volume</div><h2>How much movement is a point, really?</h2><p>Two famous numbers seem to contradict each other — 1.6 vs 3–7 changes of direction per point. Both are correct under their definitions: Giles counts only medium/high-intensity CODs detected by a velocity/angle algorithm in Hawk-Eye data; Kovacs-era counts include every directional change, small adjustment and recovery steps included. Always ask which definition a number uses.</p></div>
+    <div class="bench">
+      <div class="card"><div class="big">1.6</div><p><b>CODs per point</b> — Giles, Peeling &amp; Reid 2024: 182 Australian Open matches, Hawk-Eye, &gt;120,000 CODs. 4.8 m per COD; 1.3–1.4 shots per COD; men change direction every 2.7 s (women 3.1 s); ~2 in 3 CODs exceed 105°; high-intensity CODs: men 1 every 5 points.</p></div>
+      <div class="card"><div class="big">3–7</div><p><b>Direction changes per point</b> — Kovacs classic reviews (2006–2009), counting all changes. Points average ~6 s, most under 10 s; work-to-rest 1:2 to 1:5; players rarely run more than 30 yards in one direction. Other reviews cite 4–6 per player per point.</p></div>
+      <div class="card"><div class="big">3,160 m</div><p><b>Per match (± 880 m)</b> — Pereira et al. 2016, 8 pros in Futures matches on outdoor clay, automatic tracking. Per rally: median 5.2 m serving vs 6.2 m returning; ~5.5 m overall; &gt;75% of movement lateral; 79% of time at 0–7 km/h, only 0.3% at 18–24 km/h.</p></div>
+    </div>
+    <div class="grid2">
+      <div class="card"><h3>The shape of tennis movement</h3><ul><li><b>70% lateral, 20% forward, &lt;10% backward</b> (Weber et al. 2006; Kovacs 2009)</li><li>Typical running lengths: <b>3–4 m</b></li><li>Split steps were the initial movement in <b>66.59%</b> of cases (Hughes &amp; Meyers 2005, Wimbledon 2002)</li><li>Recovery: side steps <b>42.01%</b> of recoveries in the same study</li><li>Shuffle covers ~30% less distance than reverse crossover (Nadal case study, iTPA) — a Nadal data point, not Alcaraz</li></ul></div>
+      <div class="card"><h3>Why Alcaraz's per-point distances look bigger</h3><p>Grand Slam tracking (IBM/Hawk-Eye) counts <i>all</i> movement during the point — recovery, repositioning, between-shot drift — over longer rallies at a higher level. Pereira's ~5–6 m is a rally median from Futures clay with different inclusion rules. Comparing the two directly, or averaging Alcaraz's matches into one number, mixes definitions. Next section keeps them separate.</p></div>
+    </div>
+  </section>
+
+  <!-- ALCARAZ DATA -->
+  <section class="sec" id="alcaraz-data">
+    <div class="sec-head"><div class="kicker">Alcaraz-specific data</div><h2>The numbers that actually exist for Alcaraz</h2><p>No biomechanics lab has published on him. What exists is match-aggregate tracking — distance covered — and return outcomes derived from Infosys Court Vision by analyst Matthew Willis. That is the entire Alcaraz-specific quantitative record found.</p></div>
+    <table class="data-table">
+      <thead><tr><th>Match</th><th>Alcaraz distance</th><th>Per point</th><th>Opponent</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td>US Open 2026 R1 vs Safiullin (6-4 6-4 6-4, 2:22)</td><td class="num">1,884.9 m</td><td class="num">9.9 m/pt</td><td>Safiullin 1,820.9 m · 9.6 m/pt</td><td>IBM SlamTracker (primary)</td></tr>
+        <tr><td>US Open 2026 R4 vs Paul (6-4 6-3 6-4, 2:21)</td><td class="num">2,325.0 m</td><td class="num">13.4 m/pt</td><td>Paul 2,332.8 m · 13.5 m/pt</td><td>IBM SlamTracker (primary)</td></tr>
+        <tr><td>Wimbledon 2025 final vs Sinner (4 sets, &gt;3 h)</td><td class="num">3,376.6 m</td><td class="num">14.2 m/pt</td><td>Sinner 3,330.4 m · 14.0 m/pt</td><td>UIS Journal, reporting official final data (secondary)</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Per-point distance swings from 9.9 to 14.2 m depending on opponent, surface and rally length — it is a match property, not a fixed Alcaraz trait. Do not average these into “Alcaraz covers X metres.”</p>
+    <div class="grid2">
+      <div class="card"><span class="tag">Tracking · secondary reporting</span><h3>The return numbers: where the footwork shows up in data</h3><p>Zverev first serves across 7 hard-court meetings (2023–2026), <b>483 serves</b> matched on direction, speed (±3 mph), depth (±30 cm) and placement (±5 cm): unreturned <b>34.6% vs Alcaraz vs 44.4% vs the tour</b>. Within 25 cm of a line, Alcaraz got <b>40.0%</b> back vs the field's 20.3% — nearly double; the edge largely disappears beyond 75 cm (24.0% vs 21.9%). At the ATP Finals 2026 final, Zverev's unreturned rate fell from 57% in earlier rounds to <b>26%</b> against Alcaraz. Reported by Tennis Tonic and Last Word on Sports (Nov 2026); the primary Infosys dataset is not public.</p></div>
+      <div class="card"><span class="tag">Tracking · secondary reporting</span><h3>Serve-plus-one conversion — context, not footwork</h3><p>On hard courts 2024–2026 (Willis via Second Serve Aces), short returns (&gt;5.1 m from baseline) were converted at <b>Alcaraz 50%</b>, Sinner 51%, Zverev 43%, Medvedev 37%; medium returns: Alcaraz 31%, Sinner 31%. This measures tactical conversion after the return — relevant to forward movement and recovery, but it is <b>not</b> a speed or footwork metric, and this page doesn't treat it as one.</p></div>
+    </div>
+  </section>
+
+  <!-- BRAKING VS SLIDING -->
+  <section class="sec" id="braking">
+    <div class="sec-head"><div class="kicker">Benchmark 4 · Braking vs sliding</div><h2>On hard courts the knee bends to brake — the slide is a clay tool</h2><p>Damm et al. 2013 put 8 players on force plates with 3D kinematics, hitting side jumps and running forehands on clay (low friction) and cushioned acrylic hard court (high friction). The surfaces demand opposite strategies — and the reel above is on the high-friction one.</p></div>
+    <div class="bench">
+      <div class="card"><div class="big">−5.6°</div><p><b>Knee flexion at impact, clay vs hard</b> (± 10.2°) in the running forehand — the knee is <i>less</i> flexed on clay. At peak flexion the gap grows to <b>−13.1°</b> (± 12.0°).</p></div>
+      <div class="card"><div class="big">0.5–0.7</div><p><b>Clay traction coefficient</b>, vs <b>0.8–1.2</b> for other surfaces (Nigg 2003, via Clarke et al. 2012). Peak utilised friction was greater on clay — players exploit what the surface offers, differently on each.</p></div>
+      <div class="card"><div class="big">Brake</div><p><b>The hard-court default.</b> Damm's conclusion: “Less knee flexion facilitates sliding on clay, whereas greater knee flexion contributes to braking on the hard court.” Hard-court sliding is physically possible, but shoe research (Monnet et al.) shows the same slide length needs a higher approach velocity — it is mechanically costly, a situational defence, not a default.</p></div>
+    </div>
+    <div class="grid2">
+      <div class="card"><h3>Alcaraz on clay: the slide-brake</h3><p>SportsOrca's narrative account of his Parisian clay footwork: the outside foot bites the dirt, the knee bends, the hip stays loaded through the slide, the chest avoids turning fully away — brake on the outside leg, hit open-stance, explode forward without a full reset. Consistent with Damm's clay mechanics, but SportsOrca provides no measurements.</p></div>
+      <div class="card"><span class="tag opinion">Disagreement — unresolved</span><h3>Alcaraz on hard courts: celebrated, but how central?</h3><p>Broadcast commentary from the Australian Open 2025 praised a full-length sliding dive on hard court as “a skill learned on clay.” Forum analysis (Talk Tennis, low authority) argues the opposite emphasis: for Djokovic and Sinner hard-court sliding is foundational, while Alcaraz “can slide on hard court for the nonce, but it isn't a foundational feature of his system.” No quantitative source resolves this — no slide frequency or distance for Alcaraz exists on any surface.</p></div>
+    </div>
+  </section>
+
+  <!-- AIRBORNE FOREHAND -->
+  <section class="sec" id="airborne">
+    <div class="sec-head"><div class="kicker">Signature pattern</div><h2>The airborne forehand: lift is a result, not a technique</h2></div>
+    <div class="duo">
+      <div>
+        <div class="card" style="margin-bottom:16px"><span class="tag">Analyst breakdown</span><h3>What Hugh Clarke saw at Queen's (2025)</h3><p>Recapping the Queen's final (23 Jun 2025): on clay and hard courts, Alcaraz's wide forehands are often open-stance, where “the right leg is pushed on with such force that they jump as they uncoil to create angular momentum, landing on the same right foot first.” On grass he switches to a final <b>step-over</b> — quieter upper body, better balanced recovery. Same player, surface-specific feet.</p></div>
+        <div class="card" style="margin-bottom:16px"><span class="tag opinion">Expert opinion · one clip</span><h3>Mouratoglou's “never happened before”</h3><p>Patrick Mouratoglou observed that Alcaraz starts one forehand pattern “really on the back leg, body weight leaning backwards,” yet transfers forward to finish inside the baseline, where “99.9% of players would finish moving back.” Striking — but it is expert opinion on a single clip, not biomechanics, and is labelled that way here.</p></div>
+        <div class="card"><span class="tag peer">General mechanism</span><h3>Why players leave the ground at all</h3><p>John Yandell and Eli Ellenbecker (via Douglas Robson, using Nadal/Murray examples — <b>not Alcaraz</b>): the lift is “not so much a jump as a summation of lower- and upper-body forces”; rotation sends the player airborne, they land on the same leg and push off into the next split-step. Kovacs/iTPA call the pattern “Forward Hit &amp; Hop”: the body travels forward through the air because of the power produced, back leg kicking up behind. Use this to explain Alcaraz's air time — not as measurements of it.</p></div>
+      </div>
+      <figure style="margin:0"><img src="assets/frame-airborne.jpg" alt="Frame from the reel showing Alcaraz fully airborne during a forehand at the ATP Finals, both feet off the court"/><figcaption class="figcap">Frame from the downloaded reel: both feet off the court mid-forehand — the airborne pattern the analysts describe. One frame in an edited highlight; air time and jump height were not and cannot be measured from this clip.</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- DRILLS -->
+  <section class="sec" id="drills">
+    <div class="sec-head"><div class="kicker">Club player takeaway · 3.0–5.0 NTRP</div><h2>Train the loop, not the ladder</h2><p>Reputable coaching sources converge on training the whole cycle — split → first step → adjustment → hit → recovery → split — rather than isolated ladder speed. Dosages are as published by each source. Honest evidence note: footwork RCTs are few and small (Uzu's lab study n=10; Bragg n=10), and <b>no source validates a specific drill programme for 3.0–5.0 players with controlled outcomes</b> — treat these as practice recommendations mapped to the benchmarks above, not proven interventions.</p></div>
+    <div class="drill-layout">
+      <div class="drill-nav" role="tablist" aria-label="Drill categories">
+        <button class="drill-btn" role="tab" data-drill="0" aria-selected="true">Split-step timing<small>Land on the word “hit”</small></button>
+        <button class="drill-btn" role="tab" data-drill="1" aria-selected="false">First step<small>Test gravity vs jab — keep your winner</small></button>
+        <button class="drill-btn" role="tab" data-drill="2" aria-selected="false">Shuffle, crossover &amp; adjustment<small>Distance picks the pattern</small></button>
+        <button class="drill-btn" role="tab" data-drill="3" aria-selected="false">Recovery &amp; COD volume<small>Hit, cross back, split again</small></button>
+      </div>
+      <div class="drill-panel" id="drillPanel" role="tabpanel"></div>
+    </div>
+    <div class="card" style="margin-top:16px"><h3>Dosage guardrails (across sources)</h3><ul><li>Warm up first; keep efforts under ~8–10 s — points average ~6 s, with work-to-rest of 1:2 to 1:5.</li><li>Stop the rep when balance or recovery quality degrades — sloppy reps train sloppy feet.</li><li>Split-step on <b>every</b> ball: baseline, return and net play alike.</li><li>Recover to the <b>bisector</b> of the opponent's possible angles, not always to the centre mark.</li></ul></div>
+    <h3 style="margin-top:26px">What not to copy from Alcaraz</h3>
+    <ul class="check">
+      <li><b>Don't drill the airborne forehand as a jump.</b><span>Sources agree the lift is the result of leg drive plus rotation. Deliberately jumping at the ball costs club players stability and power.</span></li>
+      <li><b>Don't make hard-court sliding a default.</b><span>Damm et al.: hard courts reward braking with knee flexion. Deliberate sliding on a high-friction surface raises sticking and injury risk.</span></li>
+      <li><b>Don't guess direction before contact.</b><span>Elite data shows players wait for early ball flight — pre-contact sideways movement appears in only 6–13% of situations, and an early sideways split increases wrong-direction errors (Navia et al.).</span></li>
+    </ul>
+  </section>
+
+  <!-- FRAMES & LIMITS -->
+  <section class="sec" id="frames">
+    <div class="sec-head"><div class="kicker">Reading the footage</div><h2>What to look for in the frames — and the limits of a highlight reel</h2><p>Three frames from the 1 fps extraction, matched to the patterns the coaching sources describe. These are observations from the frame notes — the reel's cuts and mixed angles mean nothing here is a measurement.</p></div>
+    <div class="frame-strip">
+      <figure><img src="assets/frame-split.jpg" alt="Alcaraz from behind in a ready position, weight on the forefoot with heels raised, black support on the left knee"/><figcaption><b>The ready bounce.</b> Weight on the forefoot, heels raised, knees soft — the “constant activity on the toes” DW Tennis and HoopsKing describe. The black support on the left knee appears across the reel.</figcaption></figure>
+      <figure><img src="assets/frame-bounce.jpg" alt="Tight close-up of Alcaraz's legs mid-movement, one foot leaving the ground, neon green shoe soles visible"/><figcaption><b>Light on the balls of the feet.</b> The legs-only close-ups are the reel's signature shot: one foot already leaving the ground as the other lands — the split-step cycle running continuously between shots.</figcaption></figure>
+      <figure><img src="assets/frame-crossover.jpg" alt="Close-up of Alcaraz's feet off the ground mid-stride on the blue ATP Finals court"/><figcaption><b>Airborne between steps.</b> Both feet clear of the court mid-movement. In an edited highlight this shows the explosiveness coaches describe — it cannot tell you step counts, timings or forces.</figcaption></figure>
+    </div>
+    <div class="grid2">
+      <div class="card"><h3>What the frames do show</h3><ul><li>Constant split-step bounce on the forefoot between shots</li><li>Wide, low base when stretched</li><li>Crossover steps on recovery</li><li>One airborne forehand</li><li>Heels clearly off the ground mid-movement in several frames</li><li>Black knee support/tape on the left knee in several frames</li></ul></div>
+      <div class="card"><h3>What they cannot show</h3><ul><li>Step counts or timings — the edit cuts between rallies and angles</li><li>Split-step timing — most frames have no opponent-contact reference</li><li>Forces, stiffness, jump height or slide distance — no instrumented data exists in a broadcast clip</li><li>Whether any pattern is typical — a 28-second highlight is a selection, not a sample</li></ul></div>
+    </div>
+  </section>
+
+  <!-- COULD NOT VERIFY -->
+  <section class="sec" id="unverified">
+    <div class="sec-head"><div class="kicker">Open questions</div><h2>Could not verify</h2><p>Searched for and not found, or found only in unsourced form. These stay open — nothing on this page depends on them.</p></div>
+    <div class="openq"><ul style="margin:0;padding-left:18px">
+      <li><b>Any Alcaraz-specific biomechanics at all:</b> split-step timing or height, leg stiffness, ground-reaction force, first-step type frequency, adjustment-step counts, recovery-step frequencies, airborne height or air time, slide distance/frequency/velocity on any surface. No source found — the Alcaraz sections of this page are qualitative coaching observation.</li>
+      <li><b>Alcaraz top speed, acceleration or COD count</b> from ATP, Infosys, Hawk-Eye, Wimbledon or the US Open. Only distance aggregates and return / serve-plus-one outcomes are published.</li>
+      <li><b>“Covers 1.5 m more per point than the tour average; reaction 0.38 s, faster than 92% of the ATP”</b> (LetsPlayTennis UK) — no primary citation, dataset or date; could not be corroborated, and the reaction claim conflicts with peer-reviewed data.</li>
+      <li><b>“430–470 ms reaction, 40% reduction when timed perfectly”</b> (Fabian Donsbach social reel) — no cited study could be verified. These numbers measure different events (or none) versus Navia's 177 ms lateral initiation; none is Alcaraz-measured, so they are never charted together.</li>
+      <li><b>“45 km/h” top speed</b> (Facebook highlight graphic) — social only, no method; implausible against Pereira's velocity distribution (0.3% of match time at 18–24 km/h) and court dimensions.</li>
+      <li><b>The primary Infosys Court Vision dataset</b> behind the Willis return and serve-plus-one numbers — secondary reporting is consistent, but raw data and methods beyond the matching criteria are not publicly accessible.</li>
+      <li><b>Wimbledon 2025 final distances from a primary Wimbledon sheet</b> — relied on secondary reporting of official data. The US Open figures were verified on primary IBM SlamTracker pages.</li>
+      <li><b>Drill efficacy for 3.0–5.0 NTRP specifically</b> — no RCTs found; the drills are expert consensus plus small lab studies in collegiate/club samples.</li>
+    </ul></div>
+  </section>
+
+  <!-- SOURCES -->
+  <section class="sec" id="sources">
+    <div class="sec-head"><div class="kicker">Sources</div><h2>Everything cited, with links</h2><p>Research read 27 Nov 2026. Peer-reviewed papers first, then Alcaraz coaching analysis, tracking data, and benchmark/drill sources.</p></div>
+    <h3 style="margin-top:18px">Primary / peer-reviewed</h3>
+    <ul class="sources">
+      <li>Mecheri et al. 2019, J Sports Sci — <a href="https://pure.port.ac.uk/ws/portalfiles/portal/13666713/Mecheri_et_al._Accepted.pdf" target="_blank" rel="noopener">pure.port.ac.uk (PDF)</a></li>
+      <li>Navia et al. 2022, J Sports Sci — <a href="https://pure.port.ac.uk/ws/portalfiles/portal/42805036/Navia_et_al._2021.pdf" target="_blank" rel="noopener">pure.port.ac.uk (PDF)</a></li>
+      <li>Filipcic et al. 2017, J Hum Kinet — <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5304278/" target="_blank" rel="noopener">PMC5304278</a></li>
+      <li>Damm et al. 2013, Sports Biomechanics — <a href="https://pubmed.ncbi.nlm.nih.gov/24466651/" target="_blank" rel="noopener">PubMed 24466651</a></li>
+      <li>Giles, Peeling &amp; Reid 2024, J Strength Cond Res — <a href="https://pubmed.ncbi.nlm.nih.gov/38320234/" target="_blank" rel="noopener">PubMed 38320234</a></li>
+      <li>Pereira et al. 2016, J Sports Sci — <a href="https://www.researchgate.net/publication/295546097_Analysis_of_the_distances_covered_and_technical_actions_performed_by_professional_tennis_players_during_official_matches" target="_blank" rel="noopener">ResearchGate</a></li>
+      <li>Kovacs / iTPA Movement &amp; Footwork Language — <a href="https://tenniskb.github.io/assets/pdfs/kovacs-itpa-movement-and-footwork-language.pdf" target="_blank" rel="noopener">tenniskb.github.io (PDF)</a></li>
+    </ul>
+    <h3 style="margin-top:18px">Alcaraz coaching / analysis</h3>
+    <ul class="sources">
+      <li>DW Tennis — footwork lessons from Alcaraz, Federer &amp; Sinner — <a href="https://www.dwtennis.sg/post/improving-tennis-footwork-lessons-from-alcaraz-federer-and-sinner" target="_blank" rel="noopener">dwtennis.sg</a></li>
+      <li>Tennis Whisperer — the science behind turning defence into attack — <a href="https://www.tenniswhisperer.com/2025/06/30/alcaraz-the-science-behind-turning-defense-into-attack/" target="_blank" rel="noopener">tenniswhisperer.com</a></li>
+      <li>Essential Tennis — how to move like the pros (Djokovic, Alcaraz) — <a href="https://www.essentialtennis.com/how-to-move-like-the-pros-djokovic-alcaraz/" target="_blank" rel="noopener">essentialtennis.com</a></li>
+      <li>Hugh Clarke — Alcaraz vs Lehecka, Queen's final recap — <a href="https://hughclarke.substack.com/p/alcaraz-vs-lehecka-queens-final-recap" target="_blank" rel="noopener">hughclarke.substack.com</a></li>
+      <li>HoopsKing — move faster like Carlos Alcaraz — <a href="https://hoopsking.com/blogs/default-blog/how-to-move-faster-on-the-tennis-court-like-carlos-alcaraz" target="_blank" rel="noopener">hoopsking.com</a></li>
+      <li>SportsOrca — Alcaraz's Parisian clay footwork — <a href="https://sportsorca.com/tennis/alcaraz-parisian-clay-footwork/" target="_blank" rel="noopener">sportsorca.com</a></li>
+      <li>Mouratoglou via The Tennis Gazette — the forehand nobody has done before — <a href="https://www.thetennisgazette.com/news/what-carlos-alcaraz-does-on-his-forehand-which-is-being-said-to-have-never-happened-in-tennis-before/" target="_blank" rel="noopener">thetennisgazette.com</a></li>
+      <li>Robson — the airborne groundstroke (general mechanism) — <a href="https://www.douglasrobson.com/new-blog/2015/4/26/airborne" target="_blank" rel="noopener">douglasrobson.com</a></li>
+    </ul>
+    <h3 style="margin-top:18px">Tracking data</h3>
+    <ul class="sources">
+      <li>US Open IBM SlamTracker — Alcaraz vs Paul (match 1408) — <a href="https://www.usopen.org/en_US/scores/stats/1408.html" target="_blank" rel="noopener">usopen.org</a></li>
+      <li>US Open IBM SlamTracker — Alcaraz vs Safiullin (match 1164) — <a href="https://www.usopen.org/en_US/scores/stats/1164.html" target="_blank" rel="noopener">usopen.org</a></li>
+      <li>UIS Journal — Wimbledon 2025 final technical analysis — <a href="https://uisjournal.com/sinner-is-the-first-italian-tennis-player-in-history-to-win-wimbledon-the-technical-analysis-of-the-final/" target="_blank" rel="noopener">uisjournal.com</a></li>
+      <li>Tennis Tonic — Alcaraz neutralises Zverev's serve (Willis / Infosys) — <a href="https://tennistonic.com/tennis-news/1083847/stats-carlos-alcaraz-neutralizes-alexander-zverevs-biggest-weapon-data-shows/" target="_blank" rel="noopener">tennistonic.com</a></li>
+      <li>Last Word on Sports — how Alcaraz neutralised Zverev — <a href="https://lastwordonsports.com/tennis/2026/11/23/alcaraz-neutralised-zverev/?referrer=hitc.com_in_the_news" target="_blank" rel="noopener">lastwordonsports.com</a></li>
+      <li>Second Serve Aces — serve-plus-one tactical analysis — <a href="https://secondserveaces.com/articles/alexander-zverev-carlos-alcaraz-serve-plus-one-tactical-analysis" target="_blank" rel="noopener">secondserveaces.com</a></li>
+      <li>Source reel — Tennis Channel, Facebook — <a href="https://www.facebook.com/reel/1087874634298510" target="_blank" rel="noopener">facebook.com/reel/1087874634298510</a></li>
+    </ul>
+    <h3 style="margin-top:18px">Benchmarks &amp; drills (secondary)</h3>
+    <ul class="sources">
+      <li>MyTennis — the first step (Bragg &amp; Andriacchi summary) — <a href="https://mytennis.uk/tactics/footwork/first-step/" target="_blank" rel="noopener">mytennis.uk</a></li>
+      <li>Dominating Tennis — first step (Vuong et al. summary) — <a href="https://www.dominatingtennis.com/learn/first-step" target="_blank" rel="noopener">dominatingtennis.com</a></li>
+      <li>SimpliFaster — agility &amp; change of direction (Pereira summary) — <a href="https://simplifaster.com/articles/agility-change-of-direction/" target="_blank" rel="noopener">simplifaster.com</a></li>
+      <li>LetsPlayTennis — footwork basics: split-step &amp; recovery — <a href="https://www.letsplaytennis.com/blog/tennis-footwork-basics-split-step-recovery?language=en" target="_blank" rel="noopener">letsplaytennis.com</a></li>
+      <li>Play-Rally — tennis footwork movement patterns — <a href="https://www.play-rally.com/blog/tennis-footwork-movement-patterns/" target="_blank" rel="noopener">play-rally.com</a></li>
+      <li>LetsPlayTennis UK — Alcaraz speed &amp; anticipation <i>(contains claims flagged as unverified on this page)</i> — <a href="https://www.letsplaytennis.co.uk/speed-movement-anticipation-alcaraz-and-the-art-of-court-positioning" target="_blank" rel="noopener">letsplaytennis.co.uk</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p style="margin:0">Tennis Knowledgebase · Footwork Research series — companion to the Musetti Footwork Research page. Sources read 27 November 2026. Benchmarks are general elite data; no Alcaraz-specific biomechanics measurements exist in the published sources found — see <a href="#unverified">Could not verify</a>. Reel: <a href="https://www.facebook.com/reel/1087874634298510" target="_blank" rel="noopener">Tennis Channel on Facebook</a>.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  /* ---- Footwork loop ---- */
+  var phases = [
+    { t:"1 · Split-step — lift, read, land loaded",
+      ev:"Observed in reel · Coaching consensus", evc:"obs",
+      body:"<p><b>In the reel:</b> a constant, light bounce on the forefoot between shots, heels off the ground — visible in every close-up sequence.</p><p><b>What sources say:</b> DW Tennis has Alcaraz initiating the split exactly as the ball leaves the opponent's racket. Essential Tennis's three-step version: lift <i>before</i> contact, read the direction in the air, pivot the outside foot on landing. Measured elites land 131–160 ms <i>after</i> contact (Navia, Mecheri) — the hop buys information, not just readiness.</p>",
+      cue:"Cue: “Lift–read–flow.” Be airborne as they strike; land on the forefoot, wide and low; move off the landing, never from a standstill." },
+    { t:"2 · First step — explode off the outside foot",
+      ev:"Coaching consensus · Type not identified", evc:"warn",
+      body:"<p><b>In the reel:</b> the close-ups show a violent first push out of the split — observed, but an edited clip cannot tell you which step type it is.</p><p><b>What sources say:</b> HoopsKing and DW Tennis agree on the picture — hips drop, hard push off the outside foot, and it “looks like he reacts a half second earlier.” No source labels his first step gravity, pivot or jab, and the lab literature is task-split (Bragg vs Vuong, Benchmark 2). Claiming a type for Alcaraz would be invention.</p>",
+      cue:"Cue: drop the hips and push off the outside foot. On wide balls, don't reach with the near foot first — that's the jab, the slowest option in the reactive test." },
+    { t:"3 · Travel — shuffle short, crossover wide",
+      ev:"Observed in reel · Coaching consensus", evc:"obs",
+      body:"<p><b>In the reel:</b> crossover steps appear on recovery and in the wide defensive frames; the base stays wide and low when he's stretched.</p><p><b>What sources say:</b> Tennis Whisperer's key Alcaraz claim: in backhand-corner defence he crosses the outside leg over the body line instead of “crabbing” sideways — faster to the ball, rotation preserved, balance kept to attack after a low slice. Ferrero's Equelite academy reportedly overtrained the first crossover from the split because juniors shuffle too much on wide balls.</p>",
+      cue:"Cue: 1–3 steps = shuffle, stay facing the net. 4+ steps or a wide ball = turn the hips and cross over." },
+    { t:"4 · Adjustment steps — the last metres are small steps",
+      ev:"Coaching consensus · No counts published", evc:"warn",
+      body:"<p><b>In the reel:</b> rapid small steps before contact in the close-up sequences — observed as a pattern, not counted (the edit forbids counting).</p><p><b>What sources say:</b> DW Tennis: “rapid adjustment steps… precise small steps ensure he's always perfectly positioned.” SportsOrca describes “one micro adjustment, a half-inch stutter step before contact” that gives the racket face time. No source publishes an adjustment-step count for Alcaraz.</p>",
+      cue:"Cue: arrive early on purpose, then spend the final steps on small corrections. Never take your last step as a lunge." },
+    { t:"5 · Contact — open stance, outside foot loaded, sometimes airborne",
+      ev:"Observed in reel · Analyst breakdown", evc:"obs",
+      body:"<p><b>In the reel:</b> one frame catches him fully airborne during a forehand; others show the wide open-stance base on stretched balls.</p><p><b>What sources say:</b> Hugh Clarke: on clay and hard, the right leg drives so hard he jumps as he uncoils, landing on the same right foot; on grass, a step-over variant instead. The general mechanism (Yandell/Ellenbecker): the lift is a summation of leg drive and rotation — an outcome of force, not a chosen jump.</p>",
+      cue:"Cue: load the outside foot, drive up and rotate. If you leave the ground, let it happen — never jump at the ball." },
+    { t:"6 · Recovery — cross back to the bisector, straight into the next split",
+      ev:"Observed in reel · Coaching consensus", evc:"obs",
+      body:"<p><b>In the reel:</b> crossover steps carry him back toward the middle after wide balls; the bounce never switches off between shots.</p><p><b>What sources say:</b> DW Tennis: crossover steps get him “back in position swiftly.” SportsOrca (clay): he “hits, then snaps back toward the middle instead of watching the ball.” Essential Tennis: recovery is continuous with the next split-step — there is no stop, set, decide. Kovacs's taxonomy (mogul step, front/back crossover recovery) names the options; only “crossover recovery” is sourced for Alcaraz.</p>",
+      cue:"Cue: hit, cross back toward the bisector of their angles, and be bouncing again before their backswing ends." }
+  ];
+  var detail = document.getElementById("cycleDetail");
+  var cycBtns = Array.prototype.slice.call(document.querySelectorAll(".cyc-btn"));
+  function showPhase(i){
+    var p = phases[i];
+    detail.innerHTML = "<span class=\"evtag " + p.evc + "\">" + p.ev + "</span><h3>" + p.t + "</h3>" + p.body + "<div class=\"cue\"><b>Steal this:</b> " + p.cue + "</div>";
+    cycBtns.forEach(function(b, j){ b.setAttribute("aria-pressed", j === i ? "true" : "false"); });
+  }
+  cycBtns.forEach(function(b, i){ b.addEventListener("click", function(){ showPhase(i); }); });
+  showPhase(0);
+
+  /* ---- Distance tool ---- */
+  var range = document.getElementById("distRange"), dval = document.getElementById("distVal"),
+      tTitle = document.getElementById("toolTitle"), tText = document.getElementById("toolText");
+  function showDist(){
+    var n = parseInt(range.value, 10);
+    dval.textContent = n + (n === 1 ? " step" : " steps");
+    if (n <= 3) {
+      tTitle.textContent = "Shuffle — stay facing the net";
+      tText.textContent = "Short distance: side-shuffle with the chest to the net, feet never crossing or touching. You stay balanced and ready to change direction, and you can still hit while moving. Finish with small adjustment steps and load the outside foot at arrival.";
+    } else {
+      tTitle.textContent = "Crossover — turn the hips and go";
+      tText.textContent = "Wide ball: rotate the hips and cross the outside leg over the body line — the pattern Alcaraz uses in backhand-corner defence instead of “crabbing.” It covers ground faster and keeps your rotation for the shot. With " + n + " steps of travel, switch back to shuffle / adjustment steps for the last 2–3 steps before contact, and load the outside foot on arrival.";
+    }
+  }
+  range.addEventListener("input", showDist);
+  showDist();
+
+  /* ---- Drills ---- */
+  var drills = [
+    { h:"Split-step timing — land on the word “hit”",
+      items:[
+        "<b>Say “hit” on contact (LetsPlayTennis).</b> Call “hit” at the moment your practice partner strikes the ball and land your split-step on the word. Start the hop on their forward swing; land at or just after contact — matching the measured elite pattern, not before it.",
+        "<b>Shadow cycle.</b> From the centre mark: split → shadow forehand → recover → split → shadow backhand, continuously. <b>3 × 30 s</b>. The split happens on every rep, including the easy ones.",
+        "<b>Split-step reactions (HoopsKing).</b> Partner points left or right as you land the split; sprint 4 steps that way. Move on the signal, not before it. <b>2–3 sessions per week</b>, short and sharp, with full rest between efforts.",
+        "<b>Point-and-go score (Dominating Tennis).</b> 10 mixed feeds (5 per side, unannounced). Count balanced arrivals with room to swing plus a controlled recovery; target <b>9/10</b>. Film from behind. <span class='hc'>Authored score — a practice target, not a validated speed test</span>"
+      ],
+      err:"<b>Common error:</b> landing flat-footed or before the feeder's contact — you have split too early and given up the information the hop exists to buy. If you can guess the direction comfortably, you're landing too soon." },
+    { h:"First step — test both, keep your winner",
+      items:[
+        "<b>Freeze after one step (MyTennis).</b> Partner points left or right; take exactly one step and freeze. Check honestly: has your weight actually moved toward the target, or did you just reach a foot out? Repeat with the gravity/drop step — lead foot drawn in, hips turned, weight falling toward the ball.",
+        "<b>Jab vs gravity, scored (MyTennis / Bragg protocol).</b> 10 wide feeds stepping jab, 10 stepping gravity. Count reached + controlled returns for each. Keep the higher scorer as your wide-ball step — the same test that produced gravity 52% vs jab 34% in the Stanford study. Start at half speed.",
+        "<b>Resisted first step (HoopsKing).</b> Band around the thighs; explode 3 hard steps sideways, staying low. <b>6 reps per direction</b>. Add lateral band shuffles, 5 steps each way, hips down throughout."
+      ],
+      err:"<b>Common error:</b> treating one study as dogma. Bragg's gravity advantage came in reactive wide-ball reaching with pre-coached players; Vuong's jab advantage came in planned sprints. Your scored test on your own feet outranks both." },
+    { h:"Shuffle, crossover &amp; adjustment — distance picks the pattern",
+      items:[
+        "<b>Cone shuttle (LetsPlayTennis).</b> Two cones a few steps either side of centre: shuffle out, touch, shuffle back, split, go the other way. <b>3 × 20–30 s</b>.",
+        "<b>Cone shuffle (Play-Rally).</b> 4 cones 6 ft apart; shuffle along them touching each with the outside hand. <b>8 reps, 15 s rest</b>. Feet never come together; stay low the whole way.",
+        "<b>The rule, drilled.</b> Shuffle for 1–3 steps facing the net; crossover for 4+ steps and wide balls; shuffle / adjust for the last 2–3 steps; load the outside foot on arrival (Play-Rally, LetsPlayTennis).",
+        "<b>Feed-and-recover.</b> Partner alternates forehand and backhand feeds. Ignore the quality of your shot — score only two things: split on the feed, and recovery toward the bisector before the next feed."
+      ],
+      err:"<b>Common error:</b> “crabbing” to wide balls — shuffling sideways with the chest to the net, the exact habit Tennis Whisperer contrasts with Alcaraz's crossover. Wide means hips turned and legs crossing." },
+    { h:"Recovery &amp; change-of-direction volume",
+      items:[
+        "<b>Spider drill.</b> Sprint from centre to each line and corner and back to centre (LetsPlayTennis: time it weekly). Play-Rally version: 5 balls placed around the court, retrieve each to centre, <b>rest 60 s, × 3</b>. <span class='hc'>“Pros finish under 30 s” is an unsourced claim — not a benchmark</span>",
+        "<b>Plant-and-recover (HoopsKing).</b> Sprint to a wide cone, plant hard on the outside foot — brake with a bent knee, hard-court style — then shuffle back to centre. Both wings.",
+        "<b>Shadow swings with movement (Play-Rally).</b> Partner calls “forehand” or “backhand”; move, set, shadow the swing, recover. <b>30 s on / 15 s off</b>.",
+        "<b>Ball-drop reaction.</b> Partner drops a ball at the service line; sprint and catch it before the second bounce. Progress the starting distance. Trains the forward gravity-drop first step.",
+        "<b>Figure-8 net touches (Play-Rally).</b> Two cones 10 ft apart on the service line; run figure-8s around them, touching the net midpoint each pass. <b>6 figure-8s, rest 30 s, × 3</b> — curved change of direction for net exchanges."
+      ],
+      err:"<b>Common error:</b> watching your shot. The elite loop has no pause — recovery starts as the swing finishes and flows into the next split-step. If you're standing still admiring a good ball, the drill has already failed." }
+  ];
+  var panel = document.getElementById("drillPanel");
+  var drillBtns = Array.prototype.slice.call(document.querySelectorAll(".drill-btn"));
+  function showDrill(i){
+    var d = drills[i];
+    panel.innerHTML = "<h3>" + d.h + "</h3><ul>" + d.items.map(function(x){ return "<li>" + x + "</li>"; }).join("") + "</ul><div class=\"err\">" + d.err + "</div>";
+    drillBtns.forEach(function(b, j){ b.setAttribute("aria-selected", j === i ? "true" : "false"); });
+  }
+  drillBtns.forEach(function(b, i){ b.addEventListener("click", function(){ showDrill(i); }); });
+  showDrill(0);
+})();
+</script>
+</body>
+</html>
