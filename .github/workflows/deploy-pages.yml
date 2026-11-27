@@ -42,7 +42,7 @@ jobs:
             echo "Pruning assets/pdfs, vi/books/*.pdf, and media archives..."
             rm -rf assets/pdfs
             rm -f vi/books/*.pdf books/*.pdf
-            find . -maxdepth 6 \( -name '*.mp4' -o -name '*.zip' -o -name '*.wav' -o -name '*.mov' \) -delete
+            find . -maxdepth 6 \( -name '*.mp4' -o -name '*.zip' -o -name '*.wav' -o -name '*.mov' \) -not -path './fundamentals/footwork/musetti-footwork-research/*' -delete
             BYTES=$(du -sb --exclude=.git . | awk '{print $1}')
             echo "After PDF/media prune: $BYTES bytes"
           fi
