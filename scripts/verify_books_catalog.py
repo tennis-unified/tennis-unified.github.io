@@ -80,7 +80,7 @@ def cards(html):
 # --- Vietnamese catalog ---
 vi_html = read(os.path.join(VI, "index.html"))
 vi_cards = cards(vi_html)
-check("VI catalog card count", len(vi_cards), 96)
+check("VI catalog card count", len(vi_cards), 97)
 bad_vi = [h for c in vi_cards for h in c["links"] if not local_exists(h, VI)]
 check("broken links in VI catalog", len(bad_vi), 0)
 counter = re.search(r"id=\"tuSearchCounter\"[^>]*>(\d+)\s*/\s*(\d+)", vi_html)
