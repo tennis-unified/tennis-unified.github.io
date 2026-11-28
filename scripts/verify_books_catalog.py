@@ -122,6 +122,31 @@ if os.path.isfile(gz_path):
     with gzip.open(gz_path, "rt", encoding="utf-8") as f:
         check("sitemap gzip matches XML", f.read() == sitemap, True)
 
+# --- Root sitemap (English readers) ---
+root_sitemap = read(os.path.join(ROOT, "sitemap.xml"))
+root_locs = re.findall(r"<loc>(.*?)</loc>", root_sitemap)
+check("duplicate URLs in root sitemap", len(root_locs) - len(set(root_locs)), 0)
+en_expected = set()
+for name in (n for n in os.listdir(EN) if n.endswith("_en.html")):
+    page = read(os.path.join(EN, name))
+    if not re.search(r'<meta[^>]+http-equiv=["\']refresh["\']', page, re.I):
+        en_expected.add("https://tenniskb.github.io/books/" + name)
+check("EN readers missing from root sitemap", len(en_expected - set(root_locs)), 0)
+check(
+    "HTML sitemap URLs with trailing slash",
+    len([u for u in root_locs + locs if u.endswith(".html/")]),
+    0,
+)
+check(
+    "redirect stub listed in VI sitemap",
+    int("https://tenniskb.github.io/vi/books/total_health_tennis_vi.html" in locs),
+    0,
+)
+root_gz = os.path.join(ROOT, "sitemap.xml.gz")
+if os.path.isfile(root_gz):
+    with gzip.open(root_gz, "rt", encoding="utf-8") as f:
+        check("root sitemap gzip matches XML", f.read() == root_sitemap, True)
+
 # --- Glossary ---
 gl_html = read(os.path.join(VI, "glossary.html"))
 terms = json.loads(re.search(r"const ALL_TERMS = (\[.*?\]);", gl_html, re.S).group(1))

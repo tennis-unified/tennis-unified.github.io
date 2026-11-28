@@ -103,7 +103,11 @@ def walk_pages(root):
 
 def url_for(path_key):
     enc = urllib.parse.quote(path_key, safe="/()'!*._~-")
-    return HOST + enc + ("/" if not enc.endswith("/") else "")
+    # File URLs must not gain a trailing slash; GitHub Pages returns 404 for
+    # /books/reader.html/ even though the directory-style pages need one.
+    if enc.endswith((".html", ".htm", ".pdf", ".xml", ".txt")):
+        return HOST + enc
+    return HOST + enc + ("" if enc.endswith("/") else "/")
 
 
 def entry(path_key, changefreq="monthly", priority="0.6"):
