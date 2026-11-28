@@ -15,6 +15,7 @@ import posixpath
 import re
 import subprocess
 import sys
+import urllib.parse
 from collections import Counter
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -24,9 +25,10 @@ CARD_RE = re.compile(r"<article\s+class=\"book-card-horizontal\"(.*?)>(.*?)</art
 
 # A sparse checkout may not materialise every linked file, so also trust the git tree.
 try:
+    # core.quotePath=false keeps non-ASCII filenames comparable to decoded URL paths.
     TRACKED = set(subprocess.check_output(
-        ["git", "ls-tree", "-r", "--name-only", "HEAD"], cwd=ROOT, text=True,
-        encoding="utf-8", stderr=subprocess.DEVNULL).splitlines())
+        ["git", "-c", "core.quotePath=false", "ls-tree", "-r", "--name-only", "HEAD"],
+        cwd=ROOT, text=True, encoding="utf-8", stderr=subprocess.DEVNULL).splitlines())
 except Exception:
     TRACKED = set()
 
@@ -71,6 +73,25 @@ def local_exists(href, base=None):
         return True
     rel = os.path.relpath(full, ROOT).replace("\\", "/")
     return rel in TRACKED or rel + "/index.html" in TRACKED
+
+
+def sitemap_target_exists(loc):
+    """Does a sitemap <loc> resolve to a tracked file or directory index?
+
+    The checkout is sparse, so the git tree is authoritative here. XML entities
+    and percent escapes are decoded before comparing with raw UTF-8 git paths.
+    """
+    raw = html.unescape(loc)
+    path = urllib.parse.unquote(urllib.parse.urlsplit(raw).path or "/")
+    path = posixpath.normpath("/" + path).lstrip("/")
+    if not path:
+        candidates = ("index.html",)
+    elif path.endswith("/"):
+        base = path.rstrip("/")
+        candidates = (base + "/index.html", base + ".html", base)
+    else:
+        candidates = (path, path + ".html", path + "/index.html")
+    return any(candidate in TRACKED for candidate in candidates)
 
 
 def cards(html):
@@ -150,6 +171,18 @@ check(
     int("https://tenniskb.github.io/vi/books/total_health_tennis_vi.html" in locs),
     0,
 )
+dead_sitemap_urls = [
+    u for u in root_locs + locs
+    if not sitemap_target_exists(u)
+    and not any(
+        u.split("tenniskb.github.io", 1)[-1].startswith("/" + d + "/")
+        for d in pruned_dirs
+    )
+]
+check("sitemap URLs with no tracked target", len(dead_sitemap_urls), 0)
+if dead_sitemap_urls:
+    for u in dead_sitemap_urls[:10]:
+        print(f"       {u}")
 root_gz = os.path.join(ROOT, "sitemap.xml.gz")
 if os.path.isfile(root_gz):
     with gzip.open(root_gz, "rt", encoding="utf-8") as f:
