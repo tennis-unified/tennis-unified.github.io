@@ -149,12 +149,21 @@ root_locs = re.findall(r"<loc>(.*?)</loc>", root_sitemap)
 check("duplicate URLs in root sitemap", len(root_locs) - len(set(root_locs)), 0)
 # deploy-pages.yml deliberately prunes these top-level directories, so any
 # sitemap entry below them is a guaranteed 404. /vi/... equivalents are fine.
-pruned_dirs = ("raw-intel", "workspace", "docs_src", "synthesis-log", "reports", "research")
+pruned_dirs = (
+    "raw-intel", "workspace", "docs_src", "synthesis-log", "reports", "research",
+    "tenniskb", "hi-tech-tennis-archive", "gemini-notebooks", "scripts",
+)
 pruned_locs = [
     u for u in root_locs
     if any(u.split("tenniskb.github.io", 1)[-1].startswith("/" + d + "/") for d in pruned_dirs)
 ]
 check("sitemap URLs in pruned directories", len(pruned_locs), 0)
+pruned_file_locs = [
+    u for u in root_locs
+    if re.search(r"(?:\.py|\.php|_batch_[^/]*\.json)$",
+                 urllib.parse.urlsplit(html.unescape(u)).path)
+]
+check("sitemap URLs to pruned script files", len(pruned_file_locs), 0)
 en_expected = set()
 for name in (n for n in os.listdir(EN) if n.endswith("_en.html")):
     page = read(os.path.join(EN, name))
