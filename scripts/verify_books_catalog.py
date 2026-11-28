@@ -40,6 +40,14 @@ def check(label, actual, expected):
         errors.append(label)
 
 
+def tag_attr(tag, name):
+    """Read a tag attribute with either quote style (values may contain apostrophes)."""
+    m = re.search(r"\b" + re.escape(name) + r"\s*=\s*\"([^\"]*)\"", tag, re.I)
+    if not m:
+        m = re.search(r"\b" + re.escape(name) + r"\s*=\s*'([^']*)'", tag, re.I)
+    return html.unescape(m.group(1)) if m else None
+
+
 def read(path):
     with open(path, "r", encoding="utf-8") as f:
         return f.read()
@@ -284,6 +292,87 @@ if en_errors:
 if en_broken:
     for name, url in en_broken[:10]:
         print(f"       {name}: {url}")
+
+# --- Social metadata and bilingual hreflang on all readers ---
+social_paths = (
+    glob.glob(os.path.join(EN, "*_en.html"))
+    + glob.glob(os.path.join(VI, "*_vi.html"))
+    + glob.glob(os.path.join(ROOT, "vi", "doubles", "*_vi.html"))
+)
+social_missing = []
+social_bad = []
+hreflang_bad = []
+social_pages = {}
+for page_path in social_paths:
+    name = os.path.basename(page_path)
+    page = read(page_path)
+    head_end = page.lower().find("</head>")
+    head = page[:head_end] if head_end > 0 else page
+    if re.search(r'<meta[^>]+http-equiv=["\']refresh["\']', head, re.I):
+        continue
+    title = re.search(r"<title>(.*?)</title>", head, re.S | re.I)
+    desc_tag = next(
+        (t for t in re.findall(r"<meta[^>]+>", head, re.I) if tag_attr(t, "name") == "description"),
+        None,
+    )
+    canonical_tag = next(
+        (t for t in re.findall(r"<link[^>]+>", head, re.I) if tag_attr(t, "rel") == "canonical"),
+        None,
+    )
+    if not (title and desc_tag and canonical_tag):
+        social_missing.append((name, "title/description/canonical"))
+        continue
+    canonical_url = tag_attr(canonical_tag, "href")
+    desc_value = tag_attr(desc_tag, "content")
+    expected = {
+        "og:title": title.group(1).strip(),
+        "og:description": desc_value,
+        "og:url": canonical_url,
+        "twitter:title": title.group(1).strip(),
+        "twitter:description": desc_value,
+    }
+    meta_tags = re.findall(r"<meta[^>]+>", head, re.I)
+    for key, value in expected.items():
+        vals = [
+            tag_attr(t, "content")
+            for t in meta_tags
+            if tag_attr(t, "property") == key or tag_attr(t, "name") == key
+        ]
+        if len(vals) != 1:
+            social_missing.append((name, key))
+        elif html.unescape(vals[0]) != html.unescape(value):
+            social_bad.append((name, key, vals[0][:60]))
+    for key in ("og:type", "og:site_name", "og:image", "og:locale", "twitter:card", "twitter:image"):
+        if not any(tag_attr(t, "property") == key or tag_attr(t, "name") == key for t in meta_tags):
+            social_missing.append((name, key))
+
+    links = dict(re.findall(r'<link[^>]+hreflang=["\']([^"\']+)["\'][^>]+href=["\']([^"\']+)', head, re.I))
+    if len(links) != len(re.findall(r'<link[^>]+hreflang=', head, re.I)):
+        hreflang_bad.append((name, "duplicate hreflang"))
+    self_lang = "vi" if canonical_url.startswith("/vi/") else "en"
+    if links.get(self_lang) != canonical_url:
+        hreflang_bad.append((name, "wrong self hreflang"))
+    social_pages[canonical_url] = links
+
+for canonical_url, links in social_pages.items():
+    en_page = canonical_url.startswith("/books/")
+    other = links.get("vi" if en_page else "en")
+    if not other:
+        continue
+    back = social_pages.get(other, {})
+    if back.get("en" if en_page else "vi") != canonical_url:
+        hreflang_bad.append((canonical_url, "non-reciprocal", other))
+    x_default = canonical_url if en_page else other
+    if links.get("x-default") != x_default:
+        hreflang_bad.append((canonical_url, "wrong x-default", links.get("x-default")))
+
+check("readers missing social metadata", len(social_missing), 0)
+check("inconsistent social metadata", len(social_bad), 0)
+check("broken or non-reciprocal hreflang alternates", len(hreflang_bad), 0)
+for name, key in social_missing[:10]:
+    print(f"       {name}: missing {key}")
+for name, key, value in social_bad[:10]:
+    print(f"       {name}: {key} = {value}")
 
 print(f"INFO  reader title drift (materialised pages only): {len(title_drift)}")
 for name in title_drift[:10]:
