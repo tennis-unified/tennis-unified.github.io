@@ -301,6 +301,7 @@ social_paths = (
 )
 social_missing = []
 social_bad = []
+long_descriptions = []
 hreflang_bad = []
 social_pages = {}
 for page_path in social_paths:
@@ -324,6 +325,8 @@ for page_path in social_paths:
         continue
     canonical_url = tag_attr(canonical_tag, "href")
     desc_value = tag_attr(desc_tag, "content")
+    if len(desc_value) > 160:
+        long_descriptions.append((name, len(desc_value)))
     expected = {
         "og:title": title.group(1).strip(),
         "og:description": desc_value,
@@ -366,8 +369,26 @@ for canonical_url, links in social_pages.items():
     if links.get("x-default") != x_default:
         hreflang_bad.append((canonical_url, "wrong x-default", links.get("x-default")))
 
+# Catalog index pages must advertise each other as language alternates too.
+catalog_links = {}
+for rel in ("books/index.html", "vi/books/index.html"):
+    page = read(os.path.join(ROOT, *rel.split("/")))
+    catalog_links["/" + rel.rsplit("/", 1)[0] + "/"] = dict(
+        re.findall(r'<link[^>]+hreflang=["\']([^"\']+)["\'][^>]+href=["\']([^"\']+)', page, re.I)
+    )
+for en_url, vi_url in (("/books/", "/vi/books/"),):
+    if catalog_links.get(en_url, {}).get("vi") != vi_url:
+        hreflang_bad.append((en_url, "missing VI catalog alternate"))
+    if catalog_links.get(vi_url, {}).get("en") != en_url:
+        hreflang_bad.append((vi_url, "missing EN catalog alternate"))
+    if catalog_links.get(en_url, {}).get("x-default") != en_url:
+        hreflang_bad.append((en_url, "wrong x-default"))
+    if catalog_links.get(vi_url, {}).get("x-default") != en_url:
+        hreflang_bad.append((vi_url, "wrong x-default"))
+
 check("readers missing social metadata", len(social_missing), 0)
 check("inconsistent social metadata", len(social_bad), 0)
+check("reader meta descriptions over 160 characters", len(long_descriptions), 0)
 check("broken or non-reciprocal hreflang alternates", len(hreflang_bad), 0)
 for name, key in social_missing[:10]:
     print(f"       {name}: missing {key}")
