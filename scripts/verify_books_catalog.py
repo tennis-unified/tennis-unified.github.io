@@ -429,6 +429,52 @@ for en_url, vi_url in (("/books/", "/vi/books/"),):
     if catalog_links.get(vi_url, {}).get("x-default") != en_url:
         hreflang_bad.append((vi_url, "wrong x-default"))
 
+# Book-stream index/glossary pages must follow the same social conventions.
+book_page_issues = []
+for rel, expected_locale in (
+    ("books/index.html", "en_US"),
+    ("vi/books/index.html", "vi_VN"),
+    ("vi/books/glossary.html", "vi_VN"),
+):
+    page = read(os.path.join(ROOT, *rel.split("/")))
+    tags = re.findall(r"<meta[^>]+>", page, re.I)
+    self_hreflang = "vi" if rel.startswith("vi/") else "en"
+    canonical_tag = next(
+        (t for t in re.findall(r"<link[^>]+>", page, re.I) if tag_attr(t, "rel") == "canonical"),
+        None,
+    )
+    title_tag = re.search(r"<title>(.*?)</title>", page, re.S | re.I)
+    desc_tag = next((t for t in tags if tag_attr(t, "name") == "description"), None)
+    if not (canonical_tag and title_tag and desc_tag):
+        book_page_issues.append((rel, "title/description/canonical"))
+        continue
+    canonical_url = tag_attr(canonical_tag, "href")
+    desc_value = tag_attr(desc_tag, "content")
+    expected = {
+        "og:title": title_tag.group(1).strip(),
+        "og:description": desc_value,
+        "og:url": canonical_url,
+        "twitter:title": title_tag.group(1).strip(),
+        "twitter:description": desc_value,
+    }
+    for key, value in expected.items():
+        vals = [tag_attr(t, "content") for t in tags if tag_attr(t, "property") == key or tag_attr(t, "name") == key]
+        if vals != [value]:
+            book_page_issues.append((rel, key))
+    if len(desc_value) > 160:
+        book_page_issues.append((rel, "description over 160 chars"))
+    for key in ("og:type", "og:site_name", "og:image", "og:locale", "twitter:card", "twitter:image"):
+        if not any(tag_attr(t, "property") == key or tag_attr(t, "name") == key for t in tags):
+            book_page_issues.append((rel, "missing " + key))
+    if tag_attr(next((t for t in tags if tag_attr(t, "property") == "og:locale"), ""), "content") != expected_locale:
+        book_page_issues.append((rel, "og:locale"))
+    if not re.search(r'<link[^>]+hreflang=["\']' + self_hreflang + r'["\']', page, re.I):
+        book_page_issues.append((rel, "missing self hreflang"))
+
+check("book-stream page social metadata", len(book_page_issues), 0)
+for rel, key in book_page_issues[:10]:
+    print(f"       {rel}: {key}")
+
 check("readers missing social metadata", len(social_missing), 0)
 check("inconsistent social metadata", len(social_bad), 0)
 check("reader meta descriptions over 160 characters", len(long_descriptions), 0)
