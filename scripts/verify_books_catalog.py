@@ -293,6 +293,24 @@ if en_broken:
     for name, url in en_broken[:10]:
         print(f"       {name}: {url}")
 
+# --- Leftover template/OCR artifacts in reader text ---
+artifact_tokens = ("%%", "{0}}", "%s3", "%£", "%&amp;", "10%(or", "Federer’sside")
+text_artifacts = []
+artifact_paths = (
+    glob.glob(os.path.join(EN, "*_en.html"))
+    + glob.glob(os.path.join(VI, "*_vi.html"))
+    + glob.glob(os.path.join(ROOT, "vi", "doubles", "*_vi.html"))
+)
+for page_path in artifact_paths:
+    page = read(page_path)
+    for token in artifact_tokens:
+        if token in page:
+            text_artifacts.append((os.path.relpath(page_path, ROOT), token))
+
+check("template artifacts in reader text", len(text_artifacts), 0)
+for name, token in text_artifacts[:10]:
+    print(f"       {name}: {token}")
+
 # --- Social metadata and bilingual hreflang on all readers ---
 social_paths = (
     glob.glob(os.path.join(EN, "*_en.html"))
