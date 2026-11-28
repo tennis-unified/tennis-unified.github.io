@@ -326,6 +326,33 @@ if en_broken:
     for name, url in en_broken[:10]:
         print(f"       {name}: {url}")
 
+# --- Duplicate canonical tags on book pages ---
+canonical_duplicate_pages = []
+book_page_paths = (
+    glob.glob(os.path.join(VI, "*_vi.html"))
+    + glob.glob(os.path.join(os.path.dirname(VI), "doubles", "*_vi.html"))
+    + glob.glob(os.path.join(EN, "*_en.html"))
+    + [
+        os.path.join(ROOT, "books", "index.html"),
+        os.path.join(ROOT, "vi", "books", "index.html"),
+        os.path.join(ROOT, "vi", "books", "glossary.html"),
+    ]
+)
+for page_path in book_page_paths:
+    if not os.path.isfile(page_path):
+        continue
+    count = sum(
+        1
+        for tag in re.findall(r"<link\b[^>]*>", read(page_path), re.I)
+        if (tag_attr(tag, "rel") or "").split() == ["canonical"]
+    )
+    if count > 1:
+        canonical_duplicate_pages.append((os.path.relpath(page_path, ROOT), count))
+check("duplicate canonical tags on book pages", len(canonical_duplicate_pages), 0)
+if canonical_duplicate_pages:
+    for name, count in canonical_duplicate_pages[:10]:
+        print(f"       {name}: {count} canonical tags")
+
 # --- Leftover template/OCR artifacts in reader text ---
 artifact_tokens = ("%%", "{0}}", "%s3", "%£", "%&amp;", "10%(or", "Federer’sside")
 text_artifacts = []
